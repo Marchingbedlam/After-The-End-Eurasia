@@ -22,12 +22,7 @@ character_event = {
 		NOT = { has_character_flag = awaiting_initiation_trial }
 		FROM = { 
 			leader = { 
-				AND = {
-					is_member_of_any_warrior_lodge_trigger = yes 
-					NOT = { 
-						society_member_of = warrior_lodge_mexican 
-					} 
-				}
+				is_member_of_any_warrior_lodge_trigger = yes 
 			} 
 		}
 	}
@@ -44,13 +39,6 @@ character_event = {
 					leader = { 
 						prisoner = yes 
 					} 
-				}
-				NOT = {
-					FROM = {
-						leader = {
-							society_member_of = warrior_lodge_mexican
-						}
-					}
 				}
 			}
 
@@ -628,47 +616,12 @@ letter_event = { #SUCCESS: Welcome to the society!
 		if = { # Give Sympathy trait if appropriate...
 			limit = {
 				OR = {
-					society_member_of = warrior_lodge_norse 
-					society_member_of = warrior_lodge_celtic
-					society_member_of = warrior_lodge_occultist
-					society_member_of = warrior_lodge_revelationist
-					society_member_of = warrior_lodge_trailwalker
+					society_member_of = warrior_lodge_glorian
 				}
 				NOT = { religion_group = pagan_group }
 			}
 			#Give Sympathy trait
 			add_trait = sympathy_pagans
-		}
-		
-		if = { # Give Sympathy trait if appropriate...
-			limit = {
-				society_member_of = warrior_lodge_raven_tales
-				NOT = { religion_group = american_native }
-			}
-			#Give Sympathy trait
-			add_trait = sympathy_american_native
-		}
-		
-		if = { # Give Sympathy trait if appropriate...
-			limit = {
-				society_member_of = warrior_lodge_peyotist
-				NOT = { religion_group = amero_syncretic }
-			}
-			#Give Sympathy trait
-			add_trait = sympathy_amero_syncretic
-		}
-		
-		if = { # Give Sympathy trait if appropriate...
-			limit = {
-				OR = {
-					society_member_of = warrior_lodge_atomicist
-					society_member_of = warrior_lodge_americanist
-					society_member_of = warrior_lodge_rust_cultist
-				}
-				NOT = { religion_group = oldworld }
-			}
-			#Give Sympathy trait
-			add_trait = sympathy_oldworld
 		}
 
 		hidden_effect = {
@@ -2165,7 +2118,7 @@ character_event = {
 				10 = {
 					any_society_member = { #event_target:fellow_member (could be anyone in your society)
 						limit = { 
-							society_member_of = warrior_lodge_norse
+							society_member_of = warrior_lodge_glorian
 							NOT = { character = ROOT }
 							ai = yes
 							prisoner = no
@@ -2954,10 +2907,10 @@ character_event = {
 	immediate = {
 		if = {
 			limit = {
-				religion_openly_norse_or_reformed_trigger = yes
-				can_join_society = warrior_lodge_norse
+				religion_openly_glorian_trigger = yes
+				can_join_society = warrior_lodge_glorian
 			}
-			join_society = warrior_lodge_norse
+			join_society = warrior_lodge_glorian
 		}
 		else_if = {
 			limit = {
