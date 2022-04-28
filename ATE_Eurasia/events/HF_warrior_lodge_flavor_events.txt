@@ -2347,7 +2347,21 @@ character_event = {
 	}
 	desc = {
 		text = EVTDESC_HF_14001_ambition
-		trigger = { has_character_flag = teaching_ambition@event_target:student }
+		trigger = { 
+			AND = {
+				has_character_flag = teaching_ambition@event_target:student
+				government = tribal_government
+			} 
+		}
+	}
+	desc = {
+		text = EVTDESC_HF_14001_ambition_B
+		trigger = { 
+			AND = {
+				has_character_flag = teaching_ambition@event_target:student
+				NOT = {government = tribal_government}
+			} 
+		}
 	}
 	desc = {
 		text = EVTDESC_HF_14001_patience
