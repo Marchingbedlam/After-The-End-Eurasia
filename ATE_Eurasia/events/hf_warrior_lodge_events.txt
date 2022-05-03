@@ -1,10 +1,10 @@
 ###########################################
-#										#
-# Warrior Lodge events					#
-# Fired from all overrun				#
-#										#
-# ID HF.10100-HF.10200 				#
-#										#
+#										  #
+# Warrior Lodge events					  #
+# Fired from all overrun				  #
+#										  #
+# ID HF.10100-HF.10200 					  #
+#										  #
 ###########################################
 
 namespace = HF
@@ -22,7 +22,12 @@ character_event = {
 		NOT = { has_character_flag = awaiting_initiation_trial }
 		FROM = { 
 			leader = { 
-				is_member_of_any_warrior_lodge_trigger = yes 
+				AND = {
+					is_member_of_any_warrior_lodge_trigger = yes 
+					NOT = { 
+						society_member_of = warrior_lodge_mexican 
+					} 
+				}
 			} 
 		}
 	}
@@ -39,6 +44,13 @@ character_event = {
 					leader = { 
 						prisoner = yes 
 					} 
+				}
+				NOT = {
+					FROM = {
+						leader = {
+							society_member_of = warrior_lodge_mexican
+						}
+					}
 				}
 			}
 

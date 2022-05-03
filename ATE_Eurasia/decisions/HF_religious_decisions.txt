@@ -1637,6 +1637,57 @@ title_decisions = {
 			}
 		}
 	}
+	cursing_provinces_turkish = {
+		filter = sub_realm_owned
+		ai_target_filter = vassal_owned
+		is_high_prio = yes
+		ai_check_interval = 120 #check only once every 120 months.
+		
+		from_potential = {
+			has_dlc = "Holy Fury"
+			is_playable = yes
+			higher_real_tier_than = DUKE
+			culture_group = turkic_oghuz
+			NOR = {
+				is_tribal = yes
+				is_nomadic = yes
+				has_character_flag = cursed_province
+			}
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		allow = {
+			FROM = { prestige = 100 }
+			has_siege = no
+			custom_tooltip = { 
+				text = tooltip_cursing_provinces
+				hidden_tooltip = { 
+					FROM = { 
+						NOT = { 
+							has_character_modifier = recently_cursed_province_cooldown
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			FROM = { 
+				hidden_tooltip = { 
+					set_character_flag = cursed_province 
+					add_character_modifier = { name = recently_cursed_province_cooldown years = 10 }
+				}
+				add_province_modifier = { name = turkish_cursed_province years = 10 }
+				add_character_modifier = { name = laying_curses years = 10 }
+			}
+
+		}
+		revoke_allowed = {
+			always = no
+		}
+	}
 }
 
 settlement_decisions = {

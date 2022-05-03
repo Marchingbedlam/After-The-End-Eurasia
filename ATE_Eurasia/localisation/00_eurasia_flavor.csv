@@ -71,17 +71,24 @@ custom_hetmanate;Noble Republic Range;;;;;;;;;;;;;x
 
 #Societies
 warrior_lodge_glorian;The Knights of the Round Table;;;;;;;;;;;;;x
-warrior_lodge_glorian_desc;In the service of her majesty the queen, The Venerable Knights of the Round Table....;;;;;;;;;;;;;x
+warrior_lodge_glorian_desc;In the service of Her Majesty the Queen, the Venerable Knights of the Round Table prepare themselves with questing and combat for the return of Her Majesty. For when the Queen returns to claim her Throne of Albion, she will have need of her noble Knights again. And only the mostly noble, valiant and strong will be allowed to serve her.;;;;;;;;;;;;;x
 warrior_lodge_glorian_rank_1_female;Page;;;;;;;;;;;;;x
 warrior_lodge_glorian_rank_2_female;Air-Squire;;;;;;;;;;;;;x
 warrior_lodge_glorian_rank_3_female;Lady Sergeant;;;;;;;;;;;;;x
-warrior_lodge_glorian_rank_4_female;Knight-Officer;;;;;;;;;;;;;x
+warrior_lodge_glorian_rank_4_female;Lady Marshal;;;;;;;;;;;;;x
 warrior_lodge_glorian_rank_1_male;Page;;;;;;;;;;;;;x
 warrior_lodge_glorian_rank_2_male;Air-Squire;;;;;;;;;;;;;x
 warrior_lodge_glorian_rank_3_male;Lord Sergeant;;;;;;;;;;;;;x
-warrior_lodge_glorian_rank_4_male;Knight-Officer;;;;;;;;;;;;;x
+warrior_lodge_glorian_rank_4_male;Lord Marshal;;;;;;;;;;;;;x
 
 currency_name_warrior_lodge_glorian;Chivalry;;;;;;;;;;;;;x
 
 religion_openly_glorian_trigger;Openly Follows the [GetName.glorian] Faith;;;;;;;;;;;;;x
 religion_openly_glorian_trigger_tooltip;Openly Follows the [GetName.glorian] Faith;;;;;;;;;;;;;x
+
+recently_cursed_province_cooldown;Recently Cursed a Province;;;;;;;;;;;;;x
+
+cursing_provinces_turkish;Cursing this title;;;;;;;;;;;;;x
+cursing_provinces_turkish_desc;As you expand your power many believe your scornful words may actually damn whole provinces if one were to look at you the wrong way.;;;;;;;;;;;;;x
+turkish_cursed_province;Cursed Province;;;;;;;;;;;;;x
+laying_curses;Laying Foul Curses;;;;;;;;;;;;;x

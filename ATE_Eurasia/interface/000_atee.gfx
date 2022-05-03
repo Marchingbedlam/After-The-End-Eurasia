@@ -1049,4 +1049,9 @@ spriteTypes = {
 		name = "GFX_society_main_background_warrior_lodge_glorian"
 		texturefile = "gfx\\interface\\societies\\society_bg_knights_of_the_round_table.dds"
 	}
+	spriteType = {
+		name = "GFX_icon_small_warrior_lodge_glorian"
+		texturefile = "gfx\\interface\\societies\\symbol_small_warrior_lodge_glorian.dds"
+		noOfFrames = 2
+	}
 }
