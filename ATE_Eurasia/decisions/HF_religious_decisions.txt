@@ -1646,8 +1646,10 @@ title_decisions = {
 		from_potential = {
 			has_dlc = "Holy Fury"
 			is_playable = yes
-			higher_real_tier_than = DUKE
-			culture_group = turkic_oghuz
+			AND = {
+				higher_real_tier_than = DUKE
+				culture_group = turkic_oghuz
+			}
 			NOR = {
 				is_tribal = yes
 				is_nomadic = yes
@@ -1682,7 +1684,7 @@ title_decisions = {
 				}
 				add_character_modifier = { name = laying_curses years = 10 }
 			}
-			ROOT  = {
+			location  = {
 				add_province_modifier = { name = turkish_cursed_province years = 10 }
 			}
 		}
