@@ -1665,8 +1665,9 @@ title_decisions = {
 				text = tooltip_cursing_provinces
 				hidden_tooltip = { 
 					FROM = { 
-						NOT = { 
+						NOR = { 
 							has_character_modifier = recently_cursed_province_cooldown
+							has_character_flag = cursed_province
 						}
 					}
 				}
@@ -1679,10 +1680,11 @@ title_decisions = {
 					set_character_flag = cursed_province 
 					add_character_modifier = { name = recently_cursed_province_cooldown years = 10 }
 				}
-				add_province_modifier = { name = turkish_cursed_province years = 10 }
 				add_character_modifier = { name = laying_curses years = 10 }
 			}
-
+			ROOT  = {
+				add_province_modifier = { name = turkish_cursed_province years = 10 }
+			}
 		}
 		revoke_allowed = {
 			always = no
