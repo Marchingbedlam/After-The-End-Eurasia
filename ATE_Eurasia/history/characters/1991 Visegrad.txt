@@ -5390,3 +5390,111 @@
 	2600.5.21={birth=yes}
 	2649.5.28={death=yes}
 }
+212601={
+	name="Artur"
+	dynasty=2126121 #Antol
+	culture=goral
+	religion=mariavite
+	trait=elusive_shadow
+	trait=charitable
+	trait=wroth
+	trait=authoritative
+	trait=cynical
+	trait=gregarious
+	2638.4.5={birth=yes}
+	2700.1.1={death=yes}
+}
+212602={
+	name="Stanislawa"
+	female=yes
+	dynasty=2126122 #Kostka-Napierski
+	culture=goral
+	religion=mariavite
+	trait=skilled_tactician
+	trait=ambitious
+	trait=chaste
+	trait=authoritative
+	trait=deceitful
+	trait=charitable
+	2637.2.4={birth=yes}
+	2665.3.1={add_spouse=212601}
+	2700.1.1={death=yes}
+}
+212603={
+	name="Milos"
+	dynasty=2126121 #Antol
+	father=212601
+	culture=goral
+	religion=mariavite
+	trait=quick
+	trait=legit_bastard
+	2660.10.3={birth=yes}
+}
+212604={
+	name="Pius"
+	dynasty=2126121 #Mosoro
+	culture=goral
+	religion=mariavite
+	trait=tough_soldier
+	trait=zealous
+	trait=cruel
+	trait=stubborn
+	trait=greedy
+	2610.10.3={birth=yes}
+	2640.5.4={add_spouse=212605}
+	2664.1.1={death = {
+        death_reason = death_battle
+        killer = 212602
+		}
+	}
+}
+212605={
+	name="Maria"
+	culture=goral
+	religion=mariavite
+	2638.3.3={birth=yes}
+	2656.4.1={death=yes}
+}
+212605={
+	name="Edgar"
+	dynasty=2126121 #Mosoro
+	culture=goral
+	religion=mariavite
+	trait=tough_soldier
+	trait=adventurer
+	trait=wroth
+	trait=stubborn
+	trait=cynical
+	2641.3.1={birth=yes
+	add_claim=c_przemysl}
+	2664.1.1={add_rival=212602}
+}
+212606={
+	name="Ihnatij"
+	dynasty=2921008 #Savka
+	culture=rusyn
+	religion=mariavite
+	trait=fortune_builder
+	trait=trusting
+	trait=zealous
+	trait=diligent
+	trait=gregarious
+	2638.6.3={birth=yes}
+	2663.3.1={add_spouse=212607}
+	2664.1.1={add_friend=212602}
+}
+212607={
+	name="Helena"
+	female=yes
+	dynasty=0 #Lowborn
+	culture=rusyn
+	religion=mariavite
+	trait=grey_eminence
+	trait=fair
+	trait=groomed
+	trait=trusting
+	trait=envious
+	trait=patient
+	trait=brave
+	2640.1.1={birth=yes}
+}

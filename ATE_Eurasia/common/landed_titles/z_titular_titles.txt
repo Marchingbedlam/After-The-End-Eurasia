@@ -512,7 +512,7 @@ d_cagliari = {
 		piedmontese="Càliari"
 }
 d_tricity = {
-	color={ 254 61 87 }
+	color={ 55 4 0.6 }
 	color2={ 255 255 255 }
 	
 	capital = 803 # Trojmiasto
@@ -537,6 +537,15 @@ d_tricity = {
 		czech="Trojmesti"
 		lithuanian="Trejybe"
 		latvian="Trisvieniba"
+		
+d_gorals = {
+	color={ 96 74 91 }
+	color2={ 255 255 255 }
+	capital = 803 # Sandezerland
+	dignity = 10 # Counted as having this many more counties than it does
+	allow = {
+		culture = goral
+	}
 }
 ### Titular counties ###
 
