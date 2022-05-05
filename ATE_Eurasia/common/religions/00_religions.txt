@@ -2010,6 +2010,40 @@ vernacular = {
 		intermarry = fornsed
 		intermarry = nysed
 	}
+	nekromante = {
+		graphical_culture = westerngfx
+
+		icon = 57
+		heresy_icon = 58
+		
+		color = { 1 0.70 0 }
+		
+		parent = orthodox
+		
+		crusade_name = CRUSADE
+		use_new_crusade = yes
+		crusade_cb = new_crusade
+		
+		scripture_name = THE_BIBLE
+		priest_title = PRIEST
+		
+		high_god_name = KYRIOS
+		
+		god_names = {
+			KYRIOS CYPRIAN_JUSTINA THE_VILY SAINT_GERMANOS GEORGE_OF_LYDDA SAINT_NICHOLAS_SOFIA
+		}
+		
+		evil_god_names = {
+			SATAN SHTRIGA KALLIKANTZAROI LAMIA
+		}
+		
+		can_retire_to_monastery = yes
+		priests_can_inherit = no
+		allow_rivermovement = yes
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+		intermarry = orthodox
+	}
 }
 
 scholastic = {
