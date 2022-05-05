@@ -442,3 +442,384 @@
 	trait= gregarious
 	2602.1.1 = { birth = yes }
 }
+2072202 = {
+	name = "Staurakios"
+	dynasty = 2073073 #Ioannidis
+	religion = orthodox
+	culture = makedonian
+	trait = elusive_shadow
+	trait = ambitious
+	trait = schemer
+	trait = patient
+	trait = paranoid
+	father = 2072207
+	mother = 2072208
+	disallow_random_traits = yes
+	2630.1.1 = { birth = yes }
+}
+2072203 = {
+	name = "Thomas"
+	dynasty = 2073073 #Ioannidis
+	religion = orthodox
+	culture = makedonian
+	trait = brilliant_strategist
+	trait = brave
+	trait = wroth
+	trait = duelist
+	trait = severely_injured 
+	trait = mangled #died of battle injury
+	trait = trusting
+	disallow_random_traits = yes
+	father = 2072207
+	mother = 2072208
+	2628.1.1 = { birth = yes }
+	2640.1.1 = { add_spouse = 2072204}
+	2664.1.1 = { death = {death_reason = death_trait} }
+}
+2072204 = {
+	name = "Sophia"
+	dynasty = 2073037
+	female = yes
+	religion = orthodox
+	culture = makedonian
+	2630.1.1 = { birth = yes }
+}
+2072205 = {
+	name = "Eleftherios"
+	dynasty = 2073073 #Ioannidis
+	religion = orthodox
+	culture = makedonian
+	father = 2072203
+	mother = 2072204
+	2655.1.1 = {birth = yes}
+	2665.1.1 = {death = {death_reason = death_murder_unknown}}
+}
+2072206 = {
+	name = "Vyron"
+	dynasty = 2073073 #Ioannidis
+	religion = orthodox
+	culture = makedonian
+	father = 2072203
+	mother = 2072204
+	2658.1.1 = {birth = yes}
+}
+2072207 = {
+	name = "Alexandros"
+	dynasty = 2073073
+	religion = orthodox
+	culture = makedonian
+	father = 2072209
+	2600.1.1 = {birth = yes}
+	2620.1.1 = { add_spouse = 2072208}
+	2660.1.1 = {death = yes}
+}
+2072208 = {
+	name "Theodora"
+	female = yes
+	religion = orthodox
+	culture = makedonian
+	2605.1.1 = {birth = yes}
+}
+2072209 = {
+	name = "Theodoros"
+	dynasty = 2073073
+	religion = orthodox
+	culture = makedonian
+	2580.1.1 = {birth = yes}
+	2630.1.1 = {death = yes}
+}
+2072210 = {
+	name = "Dimitrios"
+	dynasty = 2138127
+	religion = orthodox
+	culture = aromanian
+	2620.4.4 = {birth = yes}
+}
+2072211 = {
+	name = "Mykon" #insert Sparta reference here lol
+	dynasty = 2072084
+	religion = orthodox
+	culture = greek
+	trait = brilliant_strategist
+	trait = brave
+	trait = wroth
+	trait = duelist
+	trait = strong
+	trait = deceitful
+	disallow_random_traits = yes
+	2630.1.1 = {birth = yes}
+}
+2072212 = {
+	name = "Markos" #Tyrant of Euboiea
+	dynasty = 2072083#Belisarios
+	religion = orthodox #Nekromante coming soon
+	culture = greek
+	trait = brilliant_strategist
+	trait = brave
+	trait = ambitious
+	trait = wroth
+	trait = peasant_leader
+	trait = one_handed
+	disallow_random_traits = yes
+	2640.1.1 = {birth = yes}
+}
+2072213 = {
+	name = "Glauketis"
+	dynasty = 2072082 #Glafketis
+	religion = orthodox
+	culture = greek
+	2635.1.1 = {birth = yes}
+}
+
+2072214 = {
+	name = "Leon"
+	dynasty = 2072077
+	religion = orthodox
+	culture = greek
+	trait = brilliant_strategist
+	trait = organizer
+	trait = scarred_mid
+	trait = dull
+	trait = chaste
+	trait = temperate
+	trait = ambitious
+	trait = legendary
+	occluded = yes
+	disallow_random_traits = yes
+	2044.3.8 = {birth = yes}
+	2114.1.1 = {death = yes}
+}
+2072215 = {
+	name = "Leon"
+	dynasty = 2072077
+	religion = orthodox
+	culture = greek
+	trait = legendary
+	occluded = yes
+	father = 2072214
+	2065.1.1 = {birth = yes}
+	2125.1.1 = {death = yes}
+}
+2072216 = {
+	name = "Kostas"
+	dynasty = 2072077
+	religion = orthodox
+	culture = greek
+	trait = legendary
+	occluded = yes
+	father = 2072214
+	2068.1.1 = {birth = yes}
+	2110.1.1 = {death = yes}
+}
+2072217 = {
+	name = "Christoforos"
+	dynasty = 2072077
+	religion = orthodox
+	culture = greek
+	trait = legendary
+	occluded = yes
+	father = 2072215
+	2088.1.1 = {birth = yes}
+	2129.1.1 = {
+		death = {
+			death_reason = death_murder
+			killer = 2072218
+		}
+	}
+}
+2072218 = {
+	name = "Nikos"
+	dynasty = 2073074
+	religion = orthodox
+	culture = makedonian
+	trait = peasant_leader
+	trait = legendary
+	occluded = yes
+	2098.1.1 = {birth = yes}
+	2129.1.1 = {
+		death = {
+			death_reason = death_execution_hanging
+			killer = 2072219
+		}
+	}
+}
+2072219 = {
+	name = "Leon"
+	dynasty = 2072077
+	religion = orthodox
+	culture = greek
+	father = 2072215
+	trait = legendary
+	2090.1.1 = {birth = yes}
+	2164.1.1 = {death = yes}
+}
+2072220 = {
+	name = "Soteres"
+	dynasty = 2072077
+	religion = orthodox
+	culture = greek
+	father = 2072219
+	2120.1.1 = {birth = yes}
+	2160.1.1 = {death = yes}
+}
+2072221 = {
+	name = "Pavlos"
+	dynasty = 2072077
+	religion = orthodox
+	culture = greek
+	father = 2072219
+	2121.1.1 = {birth = yes}
+	2180.1.1 = {death = yes}
+}
+2072222 = {
+	name = "Daniíl"
+	dynasty = 2072077
+	religion = orthodox
+	culture = greek
+	father = 2072221
+	2151.1.1 = {birth = yes}
+	2192.1.1 = {death = yes}
+}
+2072223 = {
+	name = "Perikles"
+	dynasty = 2072077
+	religion = orthodox
+	culture = greek
+	trait = stressed
+	father = 2072222
+	2175.1.1 = {birth = yes}
+	2202.1.1 = {
+		death = {
+		death_reason = death_trait
+		}
+	}
+}
+2072224 = {
+	name = "Photios"
+	dynasty = 2072077
+	religion = orthodox
+	culture = greek
+	father = 2072219
+	2122.1.1 = {birth = yes}
+	2170.1.1 = {death = yes}
+}
+2072225 = {
+	name = "Apostolos"
+	dynasty = 2072077
+	religion = orthodox
+	culture = greek
+	father = 2072224
+	2147.1.1 = {birth = yes}
+	2200.1.1 = {death = yes}
+}
+2072226 = {
+	name = "Pavlos"
+	dynasty = 2072077
+	religion = orthodox
+	culture = greek
+	father = 2072225
+	2170.1.1 = {birth = yes}
+	2220.1.1 = {death = yes}
+}
+2072227 = {
+	name = "Dimos"
+	dynasty = 2073075
+	religion = orthodox
+	culture = makedonian
+	2180.1.1 = {birth = yes}
+	2225.1.1 = {death = yes}
+}
+2072228 = {
+	name = "Otto"
+	dynasty = 2072086
+	religion = catholic
+	culture = bavarian
+	trait = legendary
+	occluded = yes
+	disallow_random_traits = yes
+	1815.6.1 = {birth = yes}
+	1867.7.26 = {death = yes}
+}
+2072229 = {
+	name = "George"
+	dynasty = 2072087
+	religion = lutheran
+	culture = danish
+	trait = legendary
+	occluded = yes
+	disallow_random_traits = yes
+	1845.12.24 = {birth = yes}
+	1913.3.18 = {
+		death = {
+		death_reason = death_murder
+		}
+	}
+}
+2072230 = {
+	name = "Konstantinos"
+	dynasty = 2072087
+	religion = orthodox
+	culture = danish
+	trait = legendary
+	occluded = yes
+	disallow_random_traits = yes
+	father = 2072229
+	1868.8.2 = {
+		birth = yes
+		culture = greek
+	}
+	1923.1.11 = {death = yes}
+}
+2072231 = {
+	name = "Georgios"
+	dynasty = 2072087
+	religion = orthodox
+	culture = greek
+	trait = legendary
+	occluded = yes
+	disallow_random_traits = yes
+	father = 2072230
+	1890.7.19 = {birth = yes}
+	1947.4.1 = {death = yes}
+}
+2072232 = {
+	name = "Alexandros"
+	dynasty = 2072087
+	religion = orthodox
+	culture = greek
+	trait = legendary
+	trait = infection
+	occluded = yes
+	disallow_random_traits = yes
+	father = 2072230
+	1893.8.1 = {birth = yes}
+	1920.10.25 = {
+		death = {
+			death_reason = death_trait
+		}
+	}
+}
+2072233 = {
+	name = "Pavlos"
+	dynasty = 2072087
+	religion = orthodox
+	culture = greek
+	trait = legendary
+	occluded = yes
+	disallow_random_traits = yes
+	father = 2072230
+	1901.12.14 = {birth = yes}
+	1947.3.6 = {death = yes}
+}
+2072234 = {
+	name = "Konstantinos"
+	dynasty = 2072087
+	religion = orthodox
+	culture = greek
+	trait = legendary
+	occluded = yes
+	disallow_random_traits = yes
+	father = 2072233
+	1940.6.2 = {birth = yes}
+	2040.1.1 = {death = yes}
+}
