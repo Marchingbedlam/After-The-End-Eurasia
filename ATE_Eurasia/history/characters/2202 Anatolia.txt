@@ -5236,3 +5236,84 @@
 	dynasty=2055008 #Kanter
 	2642.9.29={birth=yes}
 }
+2202451={ 
+	name="Lefter"
+	culture=romioi
+	religion=naqshbandi
+	dynasty=2056070 #Küçükrumlar
+	trait=quick
+	trait=skilled_tactician
+	trait=proud
+	trait=aggressive_leader
+	2633.12.22={birth=yes}
+}
+2202452={ 
+	name="Athanasios"
+	culture=romioi
+	religion=orthodox
+	father=2202454
+	2628.2.9={birth=yes}
+	2665.1.1={effect={add_friend=2202451}}
+}
+2202453={ 
+	name="Stavriani"
+	female=yes
+	culture=romioi
+	religion=orthodox
+	father=2202454
+	2636.9.24={birth=yes}
+	2660.1.1={add_spouse=2202451}
+	2665.1.1={effect={add_lover=2202451}}
+}
+2202454={ 
+	name="Petros"
+	culture=romioi
+	religion=orthodox
+	2601.2.5={birth=yes}
+	2664.4.24={death=yes}
+}
+2202455={ 
+	name="Gündüz"
+	culture=rumelian
+	religion=naqshbandi
+	2642.6.16={birth=yes}
+}
+2202456={ 
+	name="Ayetullah"
+	culture=rumelian
+	religion=naqshbandi
+	2614.5.27={birth=yes}
+}
+2202457={ 
+	name="Celal"
+	culture=west_anatolian
+	religion=ruhi
+	2643.10.10={birth=yes}
+}
+2202458={ 
+	name="Eren"
+	culture=toros_mountain
+	religion=alevi
+	give_nickname=nick_the_lesser
+	2619.8.20={birth=yes}
+}
+2202459={ 
+	name="Selim"
+	dynasty=2056071
+	culture=romioi
+	religion=naqshbandi
+	2624.8.25={birth=yes}
+}
+2202460={ 
+	name="Burhan"
+	dynasty=2055212
+	culture=west_anatolian
+	religion=ruhi
+	2611.10.1={birth=yes}
+}
+2202461={ 
+	name="Aslan"
+	culture=central_anatolian
+	religion=ruhi
+	2630.5.20={birth=yes}
+}

@@ -1147,3 +1147,210 @@ d_brotherhood_of_the_spider = {
 	
 	mercenary_type = d_south_city_fanatics_composition
 }
+d_asenalar = {
+	
+	color = { 255 20 20 }
+	color2 = { 255 255 255 }
+	
+	capital = 290 # Adana
+	
+	short_name = yes
+	
+	culture = toros_mountain
+	religion = ruhi
+	
+	title = "BABA"
+	foa = "BABA_FOA"
+	
+	mercenary = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_hajduks_composition
+}
+d_kara_cete = {
+	
+	color = { 255 20 20 }
+	color2 = { 255 255 255 }
+	
+	capital = 2116 # Kars
+	
+	short_name = yes
+	
+	culture = black_sea
+	religion = ruhi
+	
+	title = "BABA"
+	foa = "BABA_FOA"
+	
+	mercenary = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_franjirrojos_composition
+}
+d_aslanlar = {
+	
+	color = { 255 20 20 }
+	color2 = { 255 255 255 }
+	
+	capital = 143 # Istanbul
+	
+	short_name = yes
+	
+	culture = rumeli
+	religion = naqshbandi
+	
+	title = "BABA"
+	foa = "BABA_FOA"
+	
+	mercenary = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_aslanlar_composition
+}
+d_fener = {
+	
+	color = { 255 20 20 }
+	color2 = { 255 255 255 }
+	
+	capital = 144 # Kocaeli
+	
+	short_name = yes
+	
+	culture = rumeli
+	religion = naqshbandi
+	
+	title = "BABA"
+	foa = "BABA_FOA"
+	
+	mercenary = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_fener_composition
+}
+d_brothers_of_the_great_altay = {
+	
+	color = { 255 20 20 }
+	color2 = { 255 255 255 }
+	
+	capital = 174 # Izmir
+	
+	short_name = yes
+	
+	culture = west_anatolian
+	religion = ruhi
+	
+	title = "BABA"
+	foa = "BABA_FOA"
+	
+	mercenary = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_brothers_of_the_great_altay_composition
+}
+d_malatya_guard = {
+	
+	color = { 255 20 20 }
+	color2 = { 255 255 255 }
+	
+	capital = 1991 # Malatya
+	
+	short_name = yes
+	
+	culture = toros_mountain
+	religion = alevi
+	
+	title = "BABA"
+	foa = "BABA_FOA"
+	
+	mercenary = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_malatya_guard_composition
+}
+d_cepni_raiders = {
+	
+	color = { 255 20 20 }
+	color2 = { 255 255 255 }
+	
+	capital = 2104 # Trabzon
+	
+	short_name = yes
+	
+	culture = romioi
+	religion = naqshbandi
+	
+	title = "BABA"
+	foa = "BABA_FOA"
+	
+	mercenary = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_cepni_raiders_composition
+}
+d_yuz = {
+	
+	color = { 255 20 20 }
+	color2 = { 255 255 255 }
+	
+	capital = 183 # Antalya
+	
+	short_name = yes
+	
+	culture = west_anatolian
+	religion = ruhi
+	
+	title = "BABA"
+	foa = "BABA_FOA"
+	
+	mercenary = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_band_of_halesowen_composition
+}
+d_seymen_of_ankara = {
+	
+	color = { 255 20 20 }
+	color2 = { 255 255 255 }
+	
+	capital = 2080 # Ankara
+	
+	short_name = yes
+	
+	culture = central_anatolian
+	religion = ruhi
+	
+	title = "BABA"
+	foa = "BABA_FOA"
+	
+	mercenary = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_seymen_of_ankara_composition
+}
