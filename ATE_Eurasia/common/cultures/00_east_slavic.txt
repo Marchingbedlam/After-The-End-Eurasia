@@ -70,7 +70,7 @@ slavic_east = {
 		color = {0.8 0.1 0.3 }
 
 		male_names = {
-			Adam Ademar Aleksandr_Alexander Aleksey_Alexis Alfred Ali_Ali Alikhan Alinur Amir Anatoliy Andrey_Andrew Anton_Anthony Arkadiy_Arcadius Arkhip Arseniy_Arsenius Artyom_Artemius Artur_Arthur Aryeh Avraam_Abraham 
+			Adam Ademar Aleksandr_Alexander Aleksey_Alexis Alfred Ali_Ali Alikhan Alinur Amir Anatoliy Andrey_Andrew Anfim_Anthemios Anton_Anthony Arkadiy_Arcadius Arkhip Arseniy_Arsenius Artyom_Artemius Artur_Arthur Aryeh Avraam_Abraham 
 			Bilal_Bilal Bogdan Boris Bruno 
 			Damir Daniil_Daniel David_David Demid Demyan Denis_Dionysus Dmitriy_Demetrius
 			Egor_Igor Elisey Emanuel_Emmanuel Emelyan_Aemilian Emil_Emil Emin Ermak Evgeniy_Eugene 
@@ -88,7 +88,7 @@ slavic_east = {
 			Tasoltan Teodor_Theodore Tikhon Timofey_Timothy Timur 
 			Umar_Umar 
 			Vadim Valentin_Valentine Valeriy_Valerius Vasiliy_Basil Viktor_Victor Vitaliy Vladilen Vladimir Vladislav Vsevolod Vyacheslav 
-			Yakov_James Yan Yaroslav Yuriy_George Yusuf_Joseph 
+			Yakov_James Yan Yaroslav Yuliy_Julius Yuriy_George Yusuf_Joseph 
 			Zakhar_Zachary Zhores 
 		}
 
@@ -518,33 +518,39 @@ slavic_east = {
 		color = { 0.6 0.8 1.0 }
 
 		male_names = {
-			Adryjan_Adrian Aleksandr_Alexander Aleksyj_Alexis Andryj_Andrew Antonyj_Anthony Avhustyn_Augustine
+			Adryjan_Adrian Aleksander_Alexander Aleksyj_Alexis Anatolij_Anatolius Andrij_Andrew Anton_Anthony Antonij_Anthony Arsenij_Arsenius Avhustyn_Augustine
 			Bohdan_Bogdan
-			Damyjan_Damian Denys_Dionysus Dmytro_Demetrius
-			Eduard_Edward Emelyan_Aemilian
-			Epyfanyj_Epiphanius
-			Fedor_Theodore
-			Havryl_Gabriel Hennadyj_Gennadius Hryhoryj_Gregory
-			Ihor_Ingvar Ivan_John
-			Jakyv_Jacob Jaroslav Jevhen_Eugene Josyf_Joseph
-			Konstantyn_Constantine
-			Leonyd_Leonidas
-			Maksym_Maximus Marko_Mark Matvyj_Matthew Metodyj_Methodius Mykhayl_Michael Mykola_Nicholas Mylan_Milan Myron Myroslav_Miroslav
-			Nazaryj Nestor Nykyfor
-			Oleh_Helgi
-			Pavlo_Paul Petro_Peter
-			Roman Rostyslav_Rostislav
-			Seman_Simon Serhyj_Sergius Stanyslav_Stanislav Stefan_Stephen
-			Taras Tyberyj_Tiberius Tymofej_Timothy
-			Valeryj_Valerius Vasyly_Basil Vladyslav_Vladislav Volodymyr_Vladimir Vyacheslav_Wenceslaus Vyktor_Victor
-			Yulyan_Julian Yuryj_George
+			Damyjan_Damian Denys_Dionysus Dezyderyj_Desiderius Dionizij_Dionysus Djura Dmytro_Demetrius Dymytrij_Demetrius 
+			Edvard_Edward Emylyan_Aemilian Emyl_Emil Epyfanyj_Epiphanius Ernest_Ernest Evhenij_Eugene 
+			Fedor_Theodore Frantjišek_Francis 
+			Grigorij_Gregory 
+			Havryyl_Gabriel Hennadyj_Gennadius Heorhij_George Hyador 
+			Ieronym'_Hieronymus Ihnatij_Ignatius Ihor_Ingvar Ivan_John 
+			Jakyv_Jacob Jan_John Jaroslav_Jaroslav Jevmenij_Eumenius Joakym_Joachim Joann_John Josyf_Joseph Julian_Julian Julij_Jules Juryj_George
+			Kalman Konstantyn_Constantine Kyryl_Cyril 
+			Laslov_Ladislaus Leonyd_Leonidas Luka_Luke 
+			Maksym_Maximus Manuil_Emmanuel Marko_Mark Matvij_Matthew Metodyj_Methodius Mychal_Michael Mychayl_Michael Mykola_Nicholas Mylan_Milan Myron Myroslav_Miroslav
+			Nazaryj Nestor Nykolaj_Nicholas Nykyfor_Nikephoros 
+			Oleh_Helgi Orest_Orestes Osyf_Joseph 
+			Pavel_Paul Petro_Peter
+			Robert_Robert Roman_Roman Rostyslav_Rostislav
+			Serhyj_Sergius Simeon_Simon Stanjislav_Stanislav Štefan_Stephen
+			Taras Teodozij_Theodosius Teofil'_Theophilius Tomas_Thomas Tyberyj_Tiberius Tymofej_Timothy
+			Valerij_Valerius Vasyl'_Basil Vasylyj_Basil Vladymyr_Vladimir Vladyslav_Vladislav Vojtech_Vojtek Vyacheslav_Wenceslaus Vyktor_Victor
+			Yrynej_Ireneus Yzydor_Isidore 
+			Zoltan Zvonymyr_Zvonimir 
 		}
 		female_names = {
-			Aleksandra_Alexandra Anna_Anne
+			Adriana Ahneta Aleksandra_Alexandra Anna_Anne
 			Elyzaveta_Elizabeth
-			Hanna_Hannah
-			Khrystyna_Christine Kyra
-			Maryja_Mary 
+			Hanna_Hannah Helena_Helen 
+			Iryna_Irene 
+			Jolana Justyna_Justine 
+			Kataryna_Catherine Khrystyna_Christine Kvetoslava Kyra 
+			Ljubka 
+			Marharyta_Margaret Marianna_Mary-Anne Marta_Martha Maryja_Mary Myroslava 
+			Natalka 
+			Olena_Helen Olha_Olga 
 			Valeryja_Valeria Vytalyna
 		}
 		
@@ -994,37 +1000,40 @@ slavic_east = {
 		color = { 0.8 0.2 0.04 }
 
 		male_names = {
-			Aleksandr_Alexander Aleksei_Alexis Anatoliy_Anatolius Andrei_Andrew Anton_Anthony Arkadiy_Arcadius Avgust_Augustus
-			Boris 
-			Daniil_Daniel Denis_Dionysus Dmitry_Demetrius
-			Fyodor_Theodore 
-			Gennnadiy German_Herman
+			Albert_Albert Aleksandr_Alexander Aleksei_Alexis Alfons_Alfonso Anatoliy_Anatolius Andrey_Andrew Anton_Anthony Arkadiy_Arcadius Avgust_Augustus
+			Boris_Boris 
+			Daniil_Daniel David_David Denis_Dionysus Dmitriy_Demetrius 
+			Eduard_Edward Evdokim_Eudocimus Evgeniy_Eugene Evgraf 
+			Feliks_Felix Fridrikh_Frederick Fyodor_Theodore 
+			Gavriil_Gabriel Gennnadiy Georgiy_George Gerasim_Gerasimos German_Herman 
 			Igor_Ingvar Ilya_Elijah Ivan_John 
-			Kirill_Cyril Kolya_Nicholas Konstantin_Constantine Ksyusha
-			Leonid_Leonidas Lev_Leon Lyosha_Alexis 
-			Maksim_Maximus Mikhail_Michael
-			Nikita Nikolai_Nicholas 
+			Karl_Charles Khariton Kirill_Cyril Kolya_Nicholas Konstantin_Constantine Ksyusha Kuzma_Cosmas 
+			Leonid_Leonidas Lev_Leon Lyosha_Alexis Lyutsian_Lucian 
+			Maksim_Maximus Martin_Martin Mikhail_Michael
+			Nikita_Niketas Nikolay_Nicholas 
 			Oleg_Helgi 
 			Pavel_Paul Pyotr_Peter 
 			Roman 
-			Semyon_Simon Sergei_Sergius Stanislav
-			Vasiliy_Basil Viktor_Victor Vitaliy Vladimir Vladislav Vsevolod Vitovt_Vytautas
-			Yevgeni_Eugene Yury_George
+			Semyon_Simon Sergey_Sergius Stanislav_Stanislaus Stefan_Stephen 
+			Valentin_Valentine Vasiliy_Basil Viktor_Victor Viloriy Vitaliy Vladimir Vladislav Vsevolod Vitovt_Vytautas Vyacheslav_Wenceslaus 
+			Yakov_James Yuriy_George 
+			Zinoviy_Zenobius 
 		}
 
 		female_names = {
-			Adelle Aleksandra_Alexandra Alisa_Alice Alla Alyona Anastasia Anna_Anne Asya 
+			Adelle Agafonika Aleksandra_Alexandra Alisa_Alice Alla Alyona Anastasia Anna_Anne Asya 
 			Dasha Dina 
-			Evgenia_Eugenia 
+			Elena_Helen Evgenia_Eugenia 
 			Galina 
 			Irina_Irene 
-			Ksenia_Xenia
-			Lada Lena Liza Lyudmila
-			Natasha Nastya 
+			Kira Ksenia_Xenia
+			Lada Lena Liza Lyudmila Lyudviga_Louise 
+			Nadezhda Nataliya_Natalie Natasha Nastya 
+			Pavlina_Paulina 
 			Sveta Svetlana 
 			Tania Tatiyana_Tatiana 
 			Valentina Valya Varvara_Barbara Vasilisa Vera Veronika_Veronica Victoria 
-			Yelena_Helen Yulia_Julia 
+			Yulia_Julia 
 		}
 		
 		from_dynasty_prefix = "of "

@@ -355,8 +355,42 @@ assamese = {
 		color = { 0.10 0.37 0.15 }
 
 		male_names = {
+			Abajit Abos Ajesh Amvit Anup Aprash Arnob Ashish Azon 
+			Baoringdao Bimal Biroman 
+			Chandra 
+			Debojeet Debolal Deepanjay Dilip Dityajit 
+			Faisring 
+			Galao Gobinda 
+			Heman Humcindra 
+			Jeling Jibon Joring 
+			Kailen Kanta Kharmindao Khushal Kirtimaan 
+			Laisonjit 
+			Magaindao Manphan Mithunjoy Muhru 
+			Naisodao Nhathasa Nirmal Nit Nityalal Nojit 
+			Pairing Parashar Phaiham Phraso Prabendra Prithamjit Probanto Promud Pronup 
+			Ramsen Rangwin Ranjan Ranjit Ringjana Rohne Romonjit Rongsling Ruponjit 
+			Sachin Sanjeevan Saranjit Shankalp Sorontush Sumanto 
+			Trineet Tysondao 
+			Usmita Uttam 
+			Vishal 
+			Yathong 
 		}
 		female_names = { 
+			Adita Aleeni Alisha Amai Amisha Anita Anjana Annapurna Arpita Arvita Arsoni Arushi 
+			Baishali Bebina Bhijuni Bibini Binashree Bipola Borna Bulbuli 
+			Deringdi Deviya Dimpi Dishrudi Dismai 
+			Hamjana Hamsaindi Helbini Hemidi Hena 
+			Janalee Jaoli Jasmini Jasmita Jayshree Jenireltha Jhanadi Jina Jonaki Josain Josaindi Joypana Joyshree Jyotica 
+			Khimlikdi Kimjondi 
+			Lairingdi Lakshmi 
+			Madhumita Maimola Maiphal Mairingdi Malobika Mampi Marmi Maydhami Minali Molina Monita Mridika Munjuli Musomi Myra 
+			Nandee Nandita Neeha Nijontha Nijula Nilibi Nilitha Nisha 
+			Panchali Parboli Phulduni Preeti Priya Priyanka Probina Purnima 
+			Ranjita Ranu Rejuni Renali Reshina Ringbali Ringhamdi Ripa Risha Ronali Rosema Roshni Rupa 
+			Salitha Sanjani Shabnam Shreeta Shromika Shylee Silbina Silpi Sonam Sruti Suhi Sujata Sumanta Sumi Sunali Supali Susmi 
+			Tamanna Thairingdi Tribeni Trishna 
+			Ushmi 
+			Waisodi 
 		}
 
 		from_dynasty_prefix = "of "
@@ -413,28 +447,6 @@ assamese = {
 			Sanathi Saroj Sayarani Sharmila Sona Sonali Sudem Sulekha Sumanti Sumati Sunjita Swagata Swarna Swrangmani Swrjima 
 			Thaoni Thuntri 
 			Uttara 
-		}
-
-		from_dynasty_prefix = "of "
-
-		pat_grf_name_chance = 50
-		mat_grf_name_chance = 40
-		father_name_chance = 0
-		
-		pat_grm_name_chance = 30
-		mat_grm_name_chance = 30
-		mother_name_chance = 0
-
-		modifier = default_culture_modifier
-	}
-	rajbongshi = {
-		graphical_cultures = { bodpagfx }
-		
-		color = { 0.30 0.67 0.55 }
-
-		male_names = {
-		}
-		female_names = { 
 		}
 
 		from_dynasty_prefix = "of "

@@ -25,20 +25,20 @@ indo_aryan_east = {
 		male_names = { 
 			Abbas "Abbas Uddin" "Abdul Awal" "Abdul Aziz" "Abdul Bari" "Abdul Halim" "Abdul Hamid" "Abdul Haqim" "Abdul Haque" "Abdul Jalil" "Abdul Kadir" "Abdul Kayum" "Abdul Kuddus" Abdullah_Abdullah "Abdul Majid" "Abdul Malik" "Abdul Mannan" "Abdur Rahman" "Abdur Razzak" "Abdur Rouf" "Abdus Salam" "Abdus Samad" "Abdus Sattar" "Abdus Sobhan" "Abu Bakar" "Abul Hassan" "Abul Hossain" "Abul Kalam" "Abul Kashem" "Abu Tahir" "Abu Talib" "Adelur Rahman" Afzal Ahmed_Ahmad "Ahmedul Kabir" Ahsan "Ahsanul Haque" Akbar Akhtaruzzaman Alamgir "Ala Uddin" "Alim Uddin" "Aminul Islam" "Anisul Haque" "Anwarul Kabir" Arif "Ariful Haque" "Asadul Habib" "Asadur Rahman" "Ashraful Alam" Asghar "Ashequr Rahman" Asif "Ataur Rahman" "Azharul Islam" "Azim Uddin" Aziz "Azizur Rahman" 
 			Badiuzzaman Badol 
-			"Dabirul Islam" Dhiman 
+			"Dabirul Islam"  
 			"Ehsanul Karim" "Emdadul Haque" "Enayet Ullah"
 			"Faizur Rahman" "Fakhrul Islam" "Fakhruz Zaman" Faruque "Fazle Rabbi" "Fazlul Karim" 
 			Golam_Ghulam 
-			Habib_Habib "Habibur Rahman" Hafiz "Hafizur Rahman" Harendra Haider_Haydar "Harij Uddin" Hasan_Hasan Hasanuzzaman Hossain_Hussain Humayun 
+			Habib_Habib "Habibur Rahman" Hafiz "Hafizur Rahman" Haider_Haydar "Harij Uddin" Hasan_Hasan Hasanuzzaman Hossain_Hussain Humayun 
 			Ibrahim_Abraham Ibtesham Ilias_Elijah Imam Ishaque_Isaac Ishtiaque Iskandar_Alexander Ismail_Ismail 
 			Jahangir Jahid Jalal "Jalal Uddin" "Jamir Uddin" "Jannatul Ferdus" Javed_Jawad 
-			Kaisar Kalyan Kamal "Kamal Uddin" "Kamruzzaman" Kanai "Karim Uddin" "Kasim Uddin" "Khabir Uddin" "Khairul Islam" Khalil "Khalilur Rahman" Kumar 
-			Litu "Lutfur Rahman" 
+			Kamal "Kamal Uddin" "Kamruzzaman" Kanai "Karim Uddin" "Kasim Uddin" "Khabir Uddin" "Khairul Islam" Khalil "Khalilur Rahman"  
+			"Lutfur Rahman" 
 			"Mahbubur Rahman" Mahfuz Mahmud_Mahmud "Mahmudul Hasan" "Mahmudul Islam" "Manjurul Islam" Mansur Maqbul "Mashiur Rahman" "Matiar Rahman" "Mizanur Rahman" "Mohi Uddin" "Moin Uddin" "Mojibur Rahman" "Mominul Islam" "Momtaj Uddin" "Monajat Uddin" Motahar Muhammad_Muhammad Muhsin "Mujibur Rahman" "Mukhlesur Rahman" "Mukidur Islam" "Munir Uddin" Murad_Murad Musa_Moses Mustafa_Mustafa "Mustafizur Rahman" 
 			"Naeem Islam" "Nahid Islam" Najib "Nazrul Haque" "Najrul Islam" Nasir "Nur Muhammad" "Nurul Alam" "Nurul Islam" Nuruzzaman 
 			Qais 
 			"Rabiul Haque" "Rafiqul Bari" "Rafiqul Islam" Rafiqullah "Rahim Uddin" Rakin Rashek Rashid Rashiduzzaman Rauf Razin "Reaz Uddin" Reza_Riza "Rezaul Haque" "Rezaur Rahman" Rokanuddaula Rubaiyat "Rezwanul Haque" "Ruhul Amin" "Ruhul Islam" Rustam 
-			Sadakat Saddam Sadique Saif Sajeeb "Sajidul Islam" Sakhawat "Saif Uddin" "Saiful Alam" "Saifur Rahman" "Salah Uddin" Salamat "Sanaul Haque" Sanjit Saymon Shafi "Shafiqul Ghani" Shahadat "Shah Alam" Shahin "Shah Jahan" Shahriar Shahrin Shamim "Shams Uddin" "Shamsul Ajam" "Shamsul Alam" "Shamsul Hossain" Shamsuzzaman "Sharaf Uddin" "Shariful Alam" Shawkat Shibli "Shiraz Islam" Siddique Sikander_Alexander "Sirajul Haque" Soliman_Solomon Suhrawadi 
+			Sadakat Saddam Sadique Saif Sajeeb "Sajidul Islam" Sakhawat "Saif Uddin" "Saiful Alam" "Saifur Rahman" "Salah Uddin" Salamat "Sanaul Haque" Shafi "Shafiqul Ghani" Shahadat "Shah Alam" Shahin "Shah Jahan" Shahriar Shahrin Shamim "Shams Uddin" "Shamsul Ajam" "Shamsul Alam" "Shamsul Hossain" Shamsuzzaman "Sharaf Uddin" "Shariful Alam" Shawkat Shibli "Shiraz Islam" Siddique Sikander_Alexander "Sirajul Haque" Soliman_Solomon  
 			Tahir "Tajul Islam" "Tajul Kabir" Tanbir Tarique_Tarik Taslim Tipu "Tofazzal Hossain" 
 			Umar_Umar 
 			"Waliur Rahman" Wazed 
@@ -65,6 +65,58 @@ indo_aryan_east = {
 			Yanur Yasmin_Yasmin Yeshim 
 			Zahida Zaima Zakia Zohra Zubaida 
 		}
+	}
+	rajbongshi = {
+		graphical_cultures = { indiangfx }
+		
+		color = { 0.30 0.67 0.55 }
+
+		male_names = {
+			Amrik Ananta Arjun Ashok Aswani 
+			Badol Basanta Bhumi "Bhumi Prasad" Biranarayan Birendra Bishwanath Brajen 
+			Chandra 
+			Debesh Devraj Dhanjyoti Dhiman Dhiren Dinesh Dipak Domalal Dulal 
+			Golak Gorelal Govinda Gunjan Gyaneshwor 
+			Harendra Harka Hirakjyoti 
+			Indra Indramohan 
+			Jagadish Jagannath Jayaram 
+			Kaisar Kalyan Kamal Kanthi Kartick Keshab Khadag "Khadag Prasad" Khoshal Krishnara Kumar "Kumar Shanu" 
+			Lakhidhar Lakshman Lalit Litu 
+			Madhab Madhusudan Mahadev Mahendra Manoj Manoranjan Mukunda 
+			Nagendra Nanigopal Narayan Naren Nisith Nituparna Nupur 
+			Panchanan Paramananda Partha Prabhu Pradipta Prakash Prakritish Pranab Pranjal Prasad Purna "Purna Prasad" 
+			Ramesh Ramkumar Ripon "Ripon Kumar" 
+			Sambhu Sanjay Sanjit Sarat Saymon Siddhiram Suhrawadi Sukumar Suraj Sushanto 
+			"Tara Nath" Tilak "Top Lal" Tuluram Tushar 
+			Upendra Upendranath 
+		}
+		female_names = { 
+			Baby Bacchia 
+			Champala 
+			Debaree 
+			Hrishita 
+			Indu 
+			Juriti 
+			Kamala Kshirodebala 
+			Lakshmi Leela 
+			Mailani Maram Maya "Maya Rani" Minu 
+			Nanduri Neelam Nimsari 
+			Phulti Pranami Pratima
+			Rajasree Rajbanshi Ratna 
+			Smriti Soma Swapna 
+		}
+
+		from_dynasty_prefix = "of "
+
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 40
+		father_name_chance = 0
+		
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
 	}
 	varendri = {
 		graphical_cultures = { indiangfx }
