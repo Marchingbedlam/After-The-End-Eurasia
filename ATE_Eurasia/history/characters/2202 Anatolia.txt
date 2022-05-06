@@ -1658,7 +1658,7 @@
 	trait=ismailagha
 	father=2202129
 	2079.5.21={birth=yes}
-	2113.12.19={death={death_reason=death_battle}}
+	2113.12.19={death={death_reason=death_battle killer=2072214}}
 }
 2202135={
 	name="Ammar"
@@ -1668,7 +1668,7 @@
 	trait=ismailagha
 	father=2202129
 	2080.11.20={birth=yes}
-	2113.12.19={death={death_reason=death_battle}}
+	2113.12.19={death={death_reason=death_battle killer=2072214}}
 }
 2202136={
 	name="Kubra"
@@ -5316,4 +5316,10 @@
 	culture=central_anatolian
 	religion=ruhi
 	2630.5.20={birth=yes}
+}
+2202462={ 
+	name="Cahit"
+	culture=kurdish
+	religion=sunni
+	2635.1.21={birth=yes}
 }

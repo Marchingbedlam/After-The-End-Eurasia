@@ -1354,3 +1354,23 @@ d_seymen_of_ankara = {
 	
 	mercenary_type = d_seymen_of_ankara_composition
 }
+d_bakran_brotherhood = {
+	
+	color = { 255 20 20 }
+	color2 = { 255 255 255 }
+	
+	capital = 303 # Shirnek
+	
+	short_name = yes
+	
+	culture = kurdish
+	religion = sunni
+	
+	mercenary = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_bakran_brotherhood_composition
+}
