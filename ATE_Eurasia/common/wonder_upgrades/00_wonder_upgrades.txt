@@ -4134,3 +4134,156 @@ upgrade_earthquake_damage_large = {
 		monthly_character_prestige = -0.30
 	}
 }
+
+####UNIQUE EURASIAN UPGRADES
+upgrade_ayasofya = {
+	picture = GFX_upgrade_icon_key
+	potential = { religion_group = muslim }
+	allow = {
+		trigger_if = {
+			limit = { NOT = { religion_group = muslim } }
+			religion_group = muslim
+		}
+	}
+	active = { religion_group = muslim }
+
+	flags = {
+		is_singular
+		unlocks_minor_title
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	local_modifier = {
+		
+	}
+	owner_modifier = {
+		custom_modifier_text = custodian_of_mosque_custom_modifier_tt
+	}
+}
+upgrade_blue_mosque = { 
+	picture = GFX_upgrade_icon_book_red
+
+	potential = { religion_group = muslim }
+	allow = {
+		trigger_if = {
+			limit = { NOT = { religion_group = muslim } }
+			religion_group = muslim
+		}
+	}
+	active = { religion_group = muslim }
+
+	flags = {
+		culture_conversion_faster
+		inspires_learning
+		is_singular
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	local_modifier = {
+		local_revolt_risk = -0.01
+	}
+	owner_modifier = {
+		scholar_opinion = 5
+		custom_modifier_text = culture_convertion_custom_modifier_tt
+		same_religion_opinion = 2
+		custom_modifier_text = religious_spread_custom_modifier_tt
+	}
+}
+upgrade_galata_tower = {
+	picture = GFX_upgrade_icon_stones
+
+	potential = { }
+	allow = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		towering
+		is_singular
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	local_modifier = {
+		siege_defence = 0.05
+		levy_size = 0.1
+	}
+	owner_modifier = {
+		monthly_character_prestige = 0.02
+	}
+}
+upgrade_topkapi_palace = {
+	picture = GFX_upgrade_icon_key
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		room
+		is_singular
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	local_modifier = {
+		land_organisation = 0.1
+		disease_defence = 0.05
+		monthly_character_prestige = 0.05
+		defensive_plot_power_modifier = 0.05
+	}
+	owner_modifier = {
+		monthly_character_prestige = 0.05
+		custom_modifier_text = private_talk_possible_modifier_tt
+	}
+}
+upgrade_sultanahmet_garden = {
+	picture = GFX_upgrade_icon_decorative
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		entertainment
+		is_singular
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	owner_modifier = {
+		command_modifier = {
+			cavalry = 0.05
+		}
+		monthly_character_prestige = 0.05
+		poet_opinion = 5
+		monthly_character_prestige = 0.1
+		gardener_opinion = 5
+	}
+}
+upgrade_istanbul_university = {
+	picture = GFX_upgrade_icon_written_paper
+
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		great_lecture_decision
+		is_plural
+	}
+	build_time = 24
+	gold_cost_flat = 500
+	gold_cost_ticking = 1
+	owner_modifier = {
+		scholar_opinion = 5
+		town_opinion = 3
+		tech_growth_modifier = 0.35
+		diplomacy = 1
+		stewardship = 1
+	}
+	local_modifier = {
+		culture_techpoints = 0.05
+		economy_techpoints = 0.05
+	}
+}
