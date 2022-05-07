@@ -19,8 +19,20 @@ character_event = {
 
 	option = {
 		
+		156 = {
+			add_province_modifier = { name = landmark_gallipoli duration = -1 }
+			}
+		180 = {
+			add_province_modifier = { name = landmark_bodrum_castle duration = -1 }
+			}
+		183 = {
+			add_province_modifier = { name = landmark_necropolis_of_myra duration = -1 }
+			}
 		232 = {
 			add_province_modifier = { name = landmark_cap_de_creus duration = -1 }
+			}
+		289 = {
+			add_province_modifier = { name = landmark_denizili duration = -1 }
 			}
 		323 = {
 			add_province_modifier = { name = landmark_gravensteen duration = -1 }
@@ -140,6 +152,12 @@ character_event = {
 		1548 = {
 			add_province_modifier = { name = landmark_iroise_sea duration = -1 }
 			}
+		1961 = {
+			add_province_modifier = { name = landmark_walls_of_diyarbakir duration = -1 }
+			}
+		1977 = {
+			add_province_modifier = { name = landmark_mount_nemrut duration = -1 }
+			}
 		2003 = {
 			add_province_modifier = { name = landmark_aleppo_citadel duration = -1 }
 			}
@@ -148,6 +166,18 @@ character_event = {
 			}
 		2040 = {
 			add_province_modifier = { name = landmark_erbil_citadel duration = -1 }
+			}
+		2085 = {
+			add_province_modifier = { name = landmark_lake_tuz duration = -1 }
+			}
+		2080 = {
+			add_province_modifier = { name = landmark_anitkabir duration = -1 }
+			}
+		2090 = {
+			add_province_modifier = { name = landmark_goreme duration = -1 }
+			}
+		2117 = {
+			add_province_modifier = { name = landmark_mount_ararat duration = -1 }
 			}
 			set_global_flag = landmarks_set
 	}

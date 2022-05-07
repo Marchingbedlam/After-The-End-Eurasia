@@ -512,11 +512,23 @@
 	2605.8.19={birth=yes}
 }
 1804048={
-	name="Alain"
+	name="Alan"
 	dynasty=2010154 #Prigent 
-	culture=gallo
+	culture=breton
 	religion=sun_king_cultist 
+	trait=humble
+	trait=envious
+	trait=ambitious
+	trait=deceitful
+	trait=just
+	trait=rude
+	trait=fortune_builder
+	trait=musician
+	trait=poet
+	give_nickname=nick_the_culture
+	father=1804232
 	2612.1.6={birth=yes}
+	2663.01.01={capital=c_vannes}
 }
 1804049={
 	name="Robèrt"
@@ -524,6 +536,7 @@
 	culture=gallo
 	religion=sun_king_cultist 
 	2652.12.2={birth=yes}
+	2663.01.01={capital=c_saint_malo}
 }
 
 1804050={
@@ -767,7 +780,7 @@
 		trait=brilliant_strategist
 		trait=quick
 		trait=duelist
- 	trait=lustful
+		trait=lustful
 		trait=gregarious
 		2629.9.28={birth=yes}
 	2665.5.1={capital=c_vendee}
@@ -1658,6 +1671,7 @@
 	trait=patient
 	trait=gluttonous
 	trait=honest
+	father=1804226
 	2630.6.6={birth=yes}
 	2656.9.8={
 		add_spouse=1804108
@@ -2516,7 +2530,7 @@
 	name="Katell"
 	female=yes
 	dynasty=2010045 #Evenou
-	culture=gallo
+	culture=breton
 	religion=sun_king_cultist
 	diplomacy=4
 	martial=7
@@ -2644,6 +2658,7 @@
 	trait=rude
 	trait=gladiator
 	trait=sang_capetien
+	father=1804217
 	2594.9.27={birth=yes}
 	2620.1.1={
 		add_spouse=1804159
@@ -2655,10 +2670,10 @@
 	}
 }
 1804159={
-	name="Barbara"
+	name="Bárbara"
 	female=yes
 	dynasty=2009094 #Rey
-	culture=parisian
+	culture=castilian
 	religion=sun_king_cultist
 	diplomacy=7
 	martial=4
@@ -3099,6 +3114,7 @@
 	trait=wroth
 	trait=possessed
 	trait=sang_capetien
+	father=1804224
 	2441.7.14={birth=yes}
 	2485.7.14={death=yes}
 }
@@ -3527,4 +3543,263 @@
 	trait=distractible
 	2628.9.10={birth=yes}
 	2648.1.1={add_spouse=1804208}
+}
+1804210={
+	name="Jili"
+	dynasty=2010154 #Prigent 
+	culture=breton
+	religion=sun_king_cultist 
+	father=1804215
+	trait=musician
+	trait=poet
+	trait=just
+	trait=proud
+	trait=kind
+	give_nickname=nick_the_white_ermine
+	2519.2.1={birth=yes}
+	2577.11.18={death=yes}
+}
+1804211={
+	name="Yann-Baol"
+	dynasty=2010154 #Prigent 
+	culture=breton
+	religion=sun_king_cultist 
+	father=1804210
+	trait=musician
+	trait=poet
+	2545.8.26={birth=yes}
+	2609.3.17={death=yes}
+}
+1804212={
+	name="Yann"
+	dynasty=2010154 #Prigent 
+	culture=breton
+	religion=sun_king_cultist 
+	father=1804210
+	trait=musician
+	trait=poet
+	2541.12.13={birth=yes}
+	2592.9.11={death=yes}
+}
+1804213={
+	name="Yann-Loïc"
+	dynasty=2010154 #Prigent 
+	culture=breton
+	religion=sun_king_cultist 
+	father=1804210
+	trait=musician
+	trait=poet
+	2538.7.15={birth=yes}
+	2579.3.28={death=yes}
+}
+1804214={
+	name="Yann-Fañch"
+	dynasty=2010154 #Prigent 
+	culture=breton
+	religion=sun_king_cultist 
+	father=1804215
+	trait=musician
+	trait=poet
+	trait=homosexual
+	2515.4.7={birth=yes}
+	2555.3.16={death=yes}
+}
+1804215={
+	name="Loïc"
+	dynasty=2010154 #Prigent 
+	culture=breton
+	religion=sun_king_cultist 
+	father=1804216
+	trait=musician
+	trait=poet
+	trait=strong
+	trait=skilled_tactician
+	give_nickname=nick_the_soldier
+	2490.11.16={birth=yes}
+	2531.1.10={death=yes}
+}
+1804216={
+	name="Gweltaz"
+	dynasty=2010154 #Prigent 
+	culture=breton
+	religion=sun_king_cultist 
+	trait=musician
+	trait=poet
+	trait=ambitious
+	trait=shrewd
+	give_nickname=nick_the_wise
+	2451.4.25={birth=yes}
+	2525.7.19={death=yes}
+}
+1804217={
+	name="Thomas"
+	dynasty=2009036 #Chevalier
+	culture=parisian
+	religion=sun_king_cultist
+	father=1804218
+	trait=sang_capetien
+	2569.8.11={birth=yes}
+	2611.12.6={death=yes}
+}
+1804218={
+	name="Julien"
+	dynasty=2009036 #Chevalier
+	culture=parisian
+	religion=sun_king_cultist
+	father=1804219
+	trait=sang_capetien
+	2544.2.11={birth=yes}
+	2596.4.13={death=yes}
+}
+1804219={
+	name="Romain"
+	dynasty=2009036 #Chevalier
+	culture=parisian
+	religion=sun_king_cultist
+	father=1804220
+	trait=sang_capetien
+	2518.3.4={birth=yes}
+	2547.10.6={death=yes}
+}
+1804220={
+	name="Jean-Pierre"
+	dynasty=2009036 #Chevalier
+	culture=parisian
+	religion=sun_king_cultist
+	father=1804221
+	trait=sang_capetien
+	2497.6.7={birth=yes}
+	2560.11.14={death=yes}
+}
+1804221={
+	name="Louis"
+	dynasty=2009036 #Chevalier
+	culture=parisian
+	religion=sun_king_cultist
+	father=1804222
+	mother=1804223
+	trait=sang_capetien
+	2473.7.7={birth=yes}
+	2537.1.24={death=yes}
+}
+1804222={
+	name="Roland"
+	dynasty=2009036 #Chevalier
+	culture=parisian
+	religion=sun_king_cultist
+	father=1804219
+	trait=just
+	trait=fair
+	trait=honest
+	trait=brave
+	trait=honorable
+	2444.1.29={birth=yes}
+	2499.4.1={death=yes}
+}
+1804223={
+	name="Apollònio"
+	female=yes
+	dynasty=2007666 #Laflamme
+	culture=provencal
+	religion=sun_king_cultist
+	trait=brave
+	trait=proud
+	trait=wroth
+	trait=sang_capetien
+	father=1804224
+	2439.8.11={birth=yes}
+	2464.1.1={add_spouse=1804222}
+	2499.9.5={death=yes}
+}
+1804224={
+	name="Charloun"
+	dynasty=2007666 #Laflamme
+	culture=provencal
+	religion=catholic
+	2404.1.8={birth=yes}
+	2459.3.1={death=yes}
+}
+1804225={
+	name="Lucìo"
+	female=yes
+	dynasty=2007666 #Laflamme
+	culture=provencal
+	religion=sun_king_cultist
+	trait=brave
+	trait=sang_capetien
+	trait=bastard
+	father=1804
+	2467.6.7={birth=yes}
+	2531.4.7={death=yes}
+}
+1804226={
+	name="Casimir"
+	dynasty=2009228 #Outreterre
+	culture=parisian
+	religion=sun_king_cultist
+	trait=sang_capetien
+	father=1804227
+	2601.7.3={birth=yes}
+	2630.6.7={death=yes}
+}
+1804227={
+	name="Dimitri"
+	dynasty=2009228 #Outreterre
+	culture=parisian
+	religion=sun_king_cultist
+	trait=sang_capetien
+	father=1804228
+	2574.1.15={birth=yes}
+	2618.11.26={death=yes}
+}
+1804228={
+	name="Casimir"
+	dynasty=2009228 #Outreterre
+	culture=parisian
+	religion=sun_king_cultist
+	trait=sang_capetien
+	father=1804229
+	2542.10.29={birth=yes}
+	2607.6.4={death=yes}
+}
+1804229={
+	name="Stanislas"
+	dynasty=2009228 #Outreterre
+	culture=parisian
+	religion=sun_king_cultist
+	trait=sang_capetien
+	father=1804230
+	2511.3.21={birth=yes}
+	2559.12.5={death=yes}
+}
+1804230={
+	name="Casimir"
+	dynasty=2009228 #Outreterre
+	culture=parisian
+	religion=sun_king_cultist
+	trait=sang_capetien
+	father=1804231
+	2487.8.6={birth=yes}
+	2531.7.14={death=yes}
+}
+1804231={
+	name="Dimitri"
+	dynasty=2009228 #Outreterre
+	culture=parisian
+	religion=sun_king_cultist
+	2470.11.14={birth=yes}
+	2486.6.28={add_spouse=1804225}
+	2526.2.7={death=yes}
+}
+1804232={
+	name="Loïc"
+	dynasty=2010154 #Prigent 
+	culture=breton
+	religion=sun_king_cultist 
+	father=1804211
+	trait=musician
+	trait=poet
+	give_nickname=nick_the_senan
+	2576.8.31={birth=yes}
+	2629.11.23={death=yes}
 }

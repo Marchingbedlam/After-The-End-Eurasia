@@ -626,12 +626,11 @@
 	dynasty=7100163 #Zenci
 	culture=amhara
 	religion=naqshbandi
-	2610.4.20 = {birth=yes}
-	2635.1.1 = {
-		culture=toros_mountain
-	}
+	father=2202480
+	2610.4.20={birth=yes}
 	2632.1.1={add_spouse=2202054}
-	2658.11.6 = {death=yes}
+	2635.1.1={culture=toros_mountain}
+	2658.11.6={death=yes}
 }
 
 ######2666 Characters######
@@ -786,6 +785,9 @@
 	trait=familyperson
 	trait=wroth
 	2628.7.25={ birth=yes }
+	2655.7.2={effect={
+		add_rival=2202291
+		add_friend=2202068}}
 }
 2202064={#Izmir Patrician
 	name="Ibrahim"
@@ -1029,6 +1031,7 @@
 	trait=faqih
 	trait=content
 	2594.5.5={birth=yes}
+	2634.1.1={add_spouse=3601540}
 }
 2202081={#Kurdish Vassal to Antakya King
 	name="Elemût"
@@ -1079,7 +1082,7 @@
 	2610.8.7={birth=yes}
 	2664.5.22={death=yes}
 }
-2202085={#Marriage Alliance with Kurdish Van dude
+2202085={
 	name="Nesrîn"
 	dynasty=2066000 #Kezêban
 	culture=kurdish
@@ -1088,6 +1091,7 @@
 	mother=2202083
 	religion=sunni
 	2638.11.6={ birth=yes }
+	2657.1.1={add_spouse=2202081}
 }
 2202086={#Kurdish Duke of Van
 	name="Ferîd"
@@ -2997,6 +3001,8 @@
 	culture=black_sea
 	religion=alevi
 	female=yes
+	father=2202464
+	mother=2202467
 	trait=proud
 	trait=musician
 	trait=charitable
@@ -3136,7 +3142,7 @@
 	2649.9.8={death={death_reason=death_duel killer=2202258}}
 }
 2202262={
-	name="Hülya"
+	name="Ferahengiz"
 	female=yes
 	dynasty=2060206 #Akdagh
 	culture=black_sea
@@ -3445,6 +3451,12 @@
 	trait=possessed
 	2626.8.3={birth=yes
 		culture=west_anatolian}
+	2660.1.1={effect={
+		add_rival=2202068
+		add_claim=d_aydin
+		add_claim=c_aydin
+		add_claim=c_mugla
+		add_claim=c_denizli}}
 }
 2202292={ 
 	name="Ertughrul"
@@ -4591,6 +4603,7 @@
 	culture=greek
 	religion=ruhi
 	father=2202291
+	mother=2202463
 	2645.3.12={birth=yes
 		culture=west_anatolian}
 }
@@ -4601,6 +4614,7 @@
 	culture=greek
 	religion=ruhi
 	father=2202291
+	mother=2202463
 	2647.11.18={birth=yes
 		culture=west_anatolian}
 }
@@ -4610,6 +4624,7 @@
 	culture=greek
 	religion=ruhi
 	father=2202291
+	mother=2202463
 	2647.11.18={birth=yes
 		culture=west_anatolian}
 	2655.7.2={death={death_reason=death_murder killer=2202291}}
@@ -5241,6 +5256,7 @@
 	culture=romioi
 	religion=naqshbandi
 	dynasty=2056070 #Küçükrumlar
+	father=2202465
 	trait=quick
 	trait=skilled_tactician
 	trait=proud
@@ -5322,4 +5338,210 @@
 	culture=kurdish
 	religion=sunni
 	2635.1.21={birth=yes}
+}
+2202463={
+	name="Ashkin"
+	female=yes
+	father=2202114
+	dynasty=2055001 #Shahenk
+	culture=west_anatolian
+	religion=ruhi
+	2627.4.7={birth=yes}
+	2648.1.1={add_spouse=2202291}
+	2655.7.2={effect={add_rival=2202291}}
+}
+2202464={
+	name="Rustem"
+	dynasty=2060206 #Akdagh
+	culture=black_sea
+	religion=alevi
+	father=2202469
+	mother=2202474
+	2603.9.3={birth=yes}
+	2645.12.14={death=yes}
+}
+2202465={ 
+	name="Minas"
+	culture=romioi
+	religion=naqshbandi
+	dynasty=2056070 #Küçükrumlar
+	father=2202476
+	2602.4.18={birth=yes}
+	2645.3.21={death=yes}
+}
+2202466={ 
+	name="Moustafa"
+	culture=romioi
+	religion=naqshbandi
+	dynasty=2056070 #Küçükrumlar
+	father=2202475
+	2575.2.27={birth=yes}
+	2636.4.19={death=yes}
+}
+2202467={ 
+	name="Adile"
+	culture=romioi
+	religion=naqshbandi
+	female=yes
+	dynasty=2056070 #Küçükrumlar
+	father=2202466
+	2608.8.3={birth=yes}
+	2627.1.1={add_spouse=2202464}
+}
+2202468={
+	name="Gülistan"
+	dynasty=2060206 #Akdagh
+	culture=black_sea
+	religion=alevi
+	female=yes
+	father=2202464
+	mother=2202467
+	2631.1.17={birth=yes}
+	2632.1.1={add_spouse=2070024}
+}
+2202469={
+	name="Bahtiyar"
+	dynasty=2060206 #Akdagh
+	culture=black_sea
+	religion=alevi
+	father=2202471
+	mother=2202479
+	2579.3.21={birth=yes}
+	2629.3.18={death=yes}
+}
+2202470={
+	name="Nazenin"
+	female=yes
+	dynasty=2060206 #Akdagh
+	culture=black_sea
+	religion=alevi
+	father=2202469
+	mother=2202474
+	2605.1.29={birth=yes}
+	2630.1.1={add_spouse=2070026}
+	2657.8.9={death=yes}
+}
+2202471={
+	name="Cemshid"
+	dynasty=2060206 #Akdagh
+	culture=black_sea
+	religion=alevi
+	father=2202472
+	2552.10.13={birth=yes}
+	2611.7.29={death=yes}
+}
+2202472={
+	name="Cihangir"
+	dynasty=2060206 #Akdagh
+	culture=black_sea
+	religion=alevi
+	2530.3.19={birth=yes}
+	2609.4.14={death=yes}
+}
+2202473={
+	name="Pehlivan"
+	dynasty=2060206 #Akdagh
+	culture=black_sea
+	religion=alevi
+	father=2202472
+	2554.12.6={birth=yes}
+	2595.9.18={death=yes}
+}
+2202474={
+	name="Cihangül"
+	female=yes
+	dynasty=2060206 #Akdagh
+	culture=black_sea
+	religion=alevi
+	father=2202473
+	2582.8.3={birth=yes}
+	2600.1.1={add_spouse=2202469}
+	2641.4.28={death=yes}
+}
+2202475={ 
+	name="Minas"
+	culture=romioi
+	religion=naqshbandi
+	father=2202477
+	dynasty=2056070 #Küçükrumlar
+	2551.7.27={birth=yes}
+	2601.4.26={death=yes}
+}
+2202476={ 
+	name="Alexandros"
+	culture=romioi
+	religion=naqshbandi
+	dynasty=2056070 #Küçükrumlar
+	father=2202475
+	2578.4.28={birth=yes}
+	2632.10.21={death=yes}
+}
+2202477={ 
+	name="Lefter"
+	culture=romioi
+	religion=naqshbandi
+	father=2202478
+	dynasty=2056070 #Küçükrumlar
+	2536.12.16={birth=yes}
+	2589.3.5={death=yes}
+}
+2202478={ 
+	name="Minas"
+	culture=romioi
+	religion=naqshbandi
+	dynasty=2056070 #Küçükrumlar
+	2510.8.5={birth=yes}
+	2562.3.20={death=yes}
+}
+2202479={ 
+	name="Irini"
+	female=yes
+	culture=romioi
+	religion=naqshbandi
+	father=2202478
+	dynasty=2056070 #Küçükrumlar
+	2548.5.17={birth=yes}
+	2575.1.1={add_spouse=2202471}
+	2591.7.26={death=yes}
+}
+2202480={
+	name="Eshref"
+	dynasty=7100163 #Zenci
+	culture=amhara
+	religion=naqshbandi
+	2573.11.6={birth=yes}
+	2574.1.1={culture=toros_mountain}
+	2640.6.3={death=yes}
+}
+2202481={
+	name="Tughçe"
+	female=yes
+	dynasty=7100163 #Zenci
+	culture=amhara
+	religion=naqshbandi
+	father=2202480
+	2596.12.1={birth=yes}
+	2616.1.1={culture=toros_mountain}
+	2616.1.1={add_spouse=2202080}
+	2645.3.13={death=yes}
+}
+2202482={
+	name="Ayshe"
+	female=yes
+	dynasty=2052005 #Karaca
+	culture=toros_mountain
+	religion=naqshbandi
+	father=2202080
+	mother=2202481
+	2625.11.2={birth=yes}
+	2644.1.1={add_spouse=2202081}
+}
+2202483={
+	name="Cenab"
+	dynasty=2052005 #Karaca
+	culture=toros_mountain
+	religion=naqshbandi
+	father=2202080
+	mother=3601540
+	2636.9.7={birth=yes}
 }

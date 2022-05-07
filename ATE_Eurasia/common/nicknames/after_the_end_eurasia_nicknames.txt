@@ -42,6 +42,7 @@ nick_the_black_ram = {}
 nick_alaton = {}
 nick_ghazi = {}
 nick_the_lesser = {}
+nick_the_senan = {}
 nick_malizia = {
 	allow = {
 		culture = ligurian
@@ -99,7 +100,7 @@ nick_the_silk_stocking = {
 		intrigue = 8
 	}
 	chance = {
-		factor = 1
+		factor = 2
 	}
 }
 nick_the_cat = {
@@ -151,6 +152,36 @@ nick_melac = {
 	}
 	chance = {
 		factor = 1
+	}
+}
+nick_the_soldier = {
+	allow = {
+		age = 30
+		martial = 12
+		OR = {
+			trait = strong
+			trait = robust
+		}
+	}
+	chance = {
+		factor = 2
+	}
+}
+nick_the_white_ermine = {
+	allow = {
+		age = 30
+		OR = {
+			culture=breton
+			culture=gallo
+		}
+		OR = {
+			trait = proud
+			trait = brave
+		}
+		prestige = 500
+	}
+	chance = {
+		factor = 2
 	}
 }
 nick_gaon = {}

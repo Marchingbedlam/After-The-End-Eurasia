@@ -262,7 +262,7 @@
 	2618.11.2={birth=yes}
 }
 2070022={
-	name="Hüseynäli"
+	name="Sultanäli"
 	dynasty=2054000 #Ismayil
 	culture=azeri
 	religion=shiite
@@ -276,6 +276,7 @@
 	trait=drunkard
 	trait=brave
 	father=2070024
+	mother=2202468
 	2649.7.14={birth=yes}
 	2660.12.1={
 		effect={
@@ -291,15 +292,16 @@
 	culture=azeri
 	religion=shiite
 	father=2070024
+	mother=2202468
 	2654.11.6={birth=yes}
 }
 2070024={
-	name="Mämmädhüseyn"
+	name="Äliheydär"
 	dynasty=2054000 #Ismayil
 	culture=azeri
 	religion=shiite
 	father=2070026
-	mother=2070033
+	mother=2202470
 	2633.7.16={birth=yes}
 	2665.7.9={death={
 			death_reason=death_battle
@@ -308,7 +310,7 @@
 	}
 }
 2070025={
-	name="Amirhüseyn"
+	name="Äliabbas"
 	dynasty=2054000 #Ismayil
 	culture=azeri
 	religion=shiite
@@ -317,7 +319,7 @@
 	trait=proud
 	trait=brave
 	father=2070026
-	mother=2070033
+	mother=2202470
 	2636.10.5={birth=yes}
 	2659.1.1={add_spouse=1802103}
 }
@@ -379,7 +381,7 @@
 	religion=sunni
 	father=2070032
 	2605.10.4={birth=yes}
-	2630.1.1={add_spouse=2070026}
+	2620.1.1={add_spouse=2070035}
 }
 2070034={
 	name="Mestûre"
@@ -408,6 +410,7 @@
 	culture=azeri
 	religion=shiite
 	father=2070035
+	mother=2070033
 	2621.2.2={birth=yes}
 }
 2070037={
@@ -416,6 +419,7 @@
 	culture=azeri
 	religion=shiite
 	father=2070035
+	mother=2070033
 	2623.10.6={birth=yes}
 }
 2070038={
@@ -424,6 +428,7 @@
 	culture=azeri
 	religion=shiite
 	father=2070035
+	mother=2070033
 	2626.10.21={birth=yes}
 }
 2070039={
@@ -433,6 +438,7 @@
 	culture=azeri
 	religion=shiite
 	father=2070037
+	mother=2070071
 	2649.12.4={birth=yes}
 }
 2070040={
@@ -779,4 +785,15 @@
 	trait=midas_touched
 	trait=inspiring_leader
 	2629.8.4={birth=yes}
+}
+2070071={
+	name="Gülcahan"
+	female=yes
+	dynasty=2054000 #Ismayil
+	culture=azeri
+	religion=shiite
+	father=2070026
+	mother=2202470
+	2631.3.2={birth=yes}
+	2648.1.1={add_spouse=2070037}
 }

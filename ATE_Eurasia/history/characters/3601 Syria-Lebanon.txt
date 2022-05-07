@@ -1,48 +1,48 @@
 #######################Syrian Characters######################
 
-3601000 = { #King of North Syria
-	name = "Khalaf" 
-	dynasty = 2103002 #Ujayli
-	culture = suriyi
-	religion = sunni
-	father = 3601001
-	trait = scholarly_theologian
-	trait = organizer
-	trait = poet
-	trait = feeble
-	trait = quick
-	trait = honest
-	trait = stubborn
-	trait = gregarious
-	trait = erudite
-	trait = trusting
-	2638.1.1 = { birth = yes }	
+3601000={ #King of North Syria
+	name="Khalaf"
+	dynasty=2103002 #Ujayli
+	culture=suriyi
+	religion=sunni
+	father=3601001
+	trait=scholarly_theologian
+	trait=organizer
+	trait=poet
+	trait=feeble
+	trait=quick
+	trait=honest
+	trait=stubborn
+	trait=gregarious
+	trait=erudite
+	trait=trusting
+	2638.1.1={birth=yes}	
 }
-3601001 = { 
-	name = "Umar" 
-	dynasty = 2103002 #Ujayli
-	culture = suriyi
-	religion = sunni
-	father = 3601002
-	2610.1.1 = { birth = yes }
-	2660.1.1 = { death = yes }
+3601001={
+	name="Umar"
+	dynasty=2103002 #Ujayli
+	culture=suriyi
+	religion=sunni
+	father=3601002
+	2610.1.1={birth=yes}
+	2660.1.1={death=yes}
 }
-3601002 = { 
-	name = "Hafez" 
-	dynasty = 2103002 #Ujayli
-	culture = suriyi
-	religion = sunni
-	2579.1.1 = { birth = yes }
-	2660.1.1 = { death = yes }
+3601002={
+	name="Hafez"
+	dynasty=2103002#Ujayli
+	culture=suriyi
+	religion=sunni
+	2579.1.1={birth=yes}
+	2660.1.1={death=yes}
 }
-3601003 = { 
-	name = "Yasser" 
-	dynasty = 2103002 #Ujayli
-	culture = suriyi
-	religion = sunni
-	father = 3601002
-	2612.1.1 = { birth = yes }
-	2660.1.1 = { death = yes }
+3601003={
+	name="Yasser"
+	dynasty=2103002 #Ujayli
+	culture=suriyi
+	religion=sunni
+	father=3601002
+	2612.1.1={birth=yes}
+	2660.1.1={death=yes}
 }
 3601004 = { #Count of Manbij
 	name = "Muhammad" 
@@ -904,4 +904,13 @@
 			set_special_character_title = DESERT_FATHER_TITLE
 		}
 	}
+}
+3601540={
+	name="Khawla"
+	female=yes
+	dynasty=2103002 #Ujayli
+	culture=suriyi
+	religion=sunni
+	father=3601002
+	2615.11.11={birth=yes}
 }
