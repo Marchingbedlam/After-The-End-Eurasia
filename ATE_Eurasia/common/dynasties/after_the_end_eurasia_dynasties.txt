@@ -1643,6 +1643,7 @@
 1442071 = { name="Tunguz-Zawislak" culture=lipka }
 1442072 = { name="Korotkin" culture=lipka }
 1442073 = { name="Aksak" culture=lipka }
+1442074 = { name="Sofijew" culture=lipka }
 
 1443000 = { name="Petrioglu" culture=gagauz }
 1443001 = { name="Gaydarzhi" culture=gagauz }
@@ -3156,6 +3157,7 @@
 1727108 = { name="Kachan" culture=belarusian}
 1727109 = { name="Jermakovich" culture=belarusian}
 1727110 = { name="Paliakou" culture=belarusian}
+1727111 = { name="Shatochin" culture=belarusian}
 
 1729000 = { name="Thirummukhathu-Varma" culture=malayali used_for_random = no
             coat_of_arms = { 
@@ -9603,123 +9605,154 @@ coat_of_arms = {
 2002198 = { name="Šarec" culture=slovene}
 2002199 = { name="Rop" culture=slovene}
 2002200 = { name="Jagodic" culture=slovene}
-2002201 = { name="Grafenauer" culture=slovene}
 
-2003000 = { name="Argun" culture=abkhazian}
-2003001 = { name="Khutaba" culture=abkhazian}
-2003002 = { name="Pilia" culture=abkhazian}
-2003003 = { name="Tarba" culture=abkhazian}
-2003004 = { name="Tsveiba" culture=abkhazian}
-2003005 = { name="Zuhbaia" culture=abkhazian}
-2003006 = { name="Abukbaia" culture=abkhazian}
-2003007 = { name="Adzinbaia" culture=abkhazian}
-2003008 = { name="Bagbaia" culture=abkhazian}
-2003009 = { name="Kvatsabaia" culture=abkhazian}
-2003010 = { name="Ashbaia" culture=abkhazian}
-2003011 = { name="Agrba" culture=abkhazian}
-2003012 = { name="Adlejba" culture=abkhazian}
-2003013 = { name="Cejba" culture=abkhazian}
-2003014 = { name="Hašba" culture=abkhazian}
-2003015 = { name="Zäxba" culture=abkhazian}
+2002201 = { name="Grafenauer" culture=slovene}
+2003000 = { name="Bagapsh" culture=abkhazian}
+2003001 = { name="Ashwba" culture=abkhazian}
+2003002 = { name="Bzhania" culture=abkhazian}
+2003003 = { name="Bganba" culture=abkhazian}
+2003004 = { name="Arshba" culture=abkhazian}
+2003005 = { name="Bartsÿts" culture=abkhazian}
+2003006 = { name="Gagwÿlia" culture=abkhazian}
+2003007 = { name="Adzÿnba" culture=abkhazian}
+2003008 = { name="Amkwab" culture=abkhazian}
+2003009 = { name="Bÿtwba" culture=abkhazian}
+2003010 = { name="Delba" culture=abkhazian}
+2003011 = { name="Xashba" culture=abkhazian}
+2003012 = { name="Jergyenia" culture=abkhazian}
+2003013 = { name="Ajÿnjal" culture=abkhazian}
+2003014 = { name="Zarandia" culture=abkhazian}
+2003015 = { name="Ankwab" culture=abkhazian}
 2003016 = { name="Inal-Ipa" culture=abkhazian}
-2003017 = { name="Pate-Ipa" culture=abkhazian}
-2003018 = { name="Šat-Ipa" culture=abkhazian}
-2003019 = { name="Agxawa" culture=abkhazian}
-2003020 = { name="Andarbwa" culture=abkhazian}
-2003021 = { name="Anäwa" culture=abkhazian}
-2003022 = { name="Abghadzaa" culture=abkhazian}
-2003023 = { name="Akärtaa" culture=abkhazian}
-2003024 = { name="Agämaa" culture=abkhazian}
-2003025 = { name="Aräjtaa" culture=abkhazian}
-2003026 = { name="Arstaa" culture=abkhazian}
-2003027 = { name="Bargandzäja" culture=abkhazian}
-2003028 = { name="Garamäja" culture=abkhazian}
-2003029 = { name="Kakaläja" culture=abkhazian}
-2003030 = { name="Pläja" culture=abkhazian}
-2003031 = { name="Lakerbaja" culture=abkhazian}
-2003032 = { name="Zvanbaja" culture=abkhazian}
-2003033 = { name="Dzanba" culture=abkhazian}
-2003034 = { name="Šxvacabaja" culture=abkhazian}
-2003035 = { name="Barcäc" culture=abkhazian}
-2003036 = { name="Baalow" culture=abkhazian}
-2003037 = { name="Baras" culture=abkhazian}
-2003038 = { name="Dbar" culture=abkhazian}
-2003039 = { name="Hašäg" culture=abkhazian}
-2003040 = { name="Käwät" culture=abkhazian}
-2003041 = { name="Maan" culture=abkhazian}
-2003042 = { name="Maršan" culture=abkhazian}
-2003043 = { name="Pkän" culture=abkhazian}
-2003044 = { name="Sämsäm" culture=abkhazian}
-2003045 = { name="Smär" culture=abkhazian}
-2003046 = { name="Šaqräl" culture=abkhazian}
-2003047 = { name="Trapš" culture=abkhazian}
-2003048 = { name="Chachba" culture=abkhazian}
-2003049 = { name="Achba" culture=abkhazian}
-2003050 = { name="Ajämxaa" culture=abkhazian}
-2003051 = { name="Chaabalärxa" culture=abkhazian}
-2003052 = { name="Chxotua" culture=abkhazian}
-2003053 = { name="Gachba" culture=abkhazian}
-2003054 = { name="Ašxacaa" culture=abkhazian}
-2003055 = { name="Cäšba" culture=abkhazian}
-2003056 = { name="Jašba" culture=abkhazian}
-2003057 = { name="Dzanba" culture=abkhazian}
-2003058 = { name="Axba" culture=abkhazian}
-2003059 = { name="Bganba" culture=abkhazian}
-2003060 = { name="Cägba" culture=abkhazian}
-2003061 = { name="Kabaxäja" culture=abkhazian}
-2003062 = { name="Lakaba" culture=abkhazian}
-2003063 = { name="Adamia" culture=abkhazian}
-2003063 = { name="Adzynba" culture=abkhazian}
-2003064 = { name="Agumava" culture=abkhazian}
-2003065 = { name="Ajinjal" culture=abkhazian}
-2003066 = { name="Akishbaia" culture=abkhazian}
-2003067 = { name="Alamia" culture=abkhazian}
-2003068 = { name="Alasania" culture=abkhazian}
-2003069 = { name="Ampar" culture=abkhazian}
-2003070 = { name="Ardzinba" culture=abkhazian}
-2003071 = { name="Arsalia" culture=abkhazian}
-2003072 = { name="Avidzba" culture=abkhazian}
-2003073 = { name="Bgazhba" culture=abkhazian}
-2003074 = { name="Chitanava" culture=abkhazian}
-2003075 = { name="Delba" culture=abkhazian}
-2003076 = { name="Ešba" culture=abkhazian}
-2003077 = { name="Gartskia" culture=abkhazian}
-2003078 = { name="Gogia" culture=abkhazian}
-2003079 = { name="Gezerdaa" culture=abkhazian}
-2003080 = { name="Gubaz" culture=abkhazian}
-2003081 = { name="Gunba" culture=abkhazian}
-2003082 = { name="Jinjolia" culture=abkhazian}
-2003083 = { name="Kakoba" culture=abkhazian}
-2003084 = { name="Kerselyan" culture=abkhazian}
-2003085 = { name="Xagba" culture=abkhazian}
-2003086 = { name="Kchach" culture=abkhazian}
-2003087 = { name="Xarazia" culture=abkhazian}
-2003088 = { name="Xojašvili" culture=abkhazian}
-2003089 = { name="Kišmaria" culture=abkhazian}
-2003090 = { name="Kobaxia" culture=abkhazian}
-2003091 = { name="Kove" culture=abkhazian}
-2003092 = { name="Kvaratsxelia" culture=abkhazian}
-2003093 = { name="Kvitsinia" culture=abkhazian}
-2003094 = { name="Lolua" culture=abkhazian}
-2003095 = { name="Margania" culture=abkhazian}
-2003096 = { name="Matosyan" culture=abkhazian}
-2003097 = { name="Mikvabia" culture=abkhazian}
-2003098 = { name="Mzhavia" culture=abkhazian}
-2003099 = { name="Nachkebia" culture=abkhazian}
-2003100 = { name="Otyrba" culture=abkhazian}
-2003101 = { name="Pachkoria" culture=abkhazian}
-2003102 = { name="Pipia" culture=abkhazian}
-2003103 = { name="Rštuni" culture=abkhazian}
-2003104 = { name="Saakian" culture=abkhazian}
-2003105 = { name="Šamatava" culture=abkhazian}
-2003106 = { name="Serikov" culture=abkhazian}
-2003107 = { name="Šinkuba" culture=abkhazian}
-2003108 = { name="Sichinava" culture=abkhazian}
-2003109 = { name="Tabagua" culture=abkhazian}
-2003110 = { name="Tania" culture=abkhazian}
-2003111 = { name="Tsimtsba" culture=abkhazian}
-2003112 = { name="Zantaria" culture=abkhazian}
-2003113 = { name="Zarandia" culture=abkhazian}
+2003017 = { name="Tsÿgwba" culture=abkhazian}
+2003018 = { name="Lakerbaia" culture=abkhazian}
+2003019 = { name="Shamba" culture=abkhazian}
+2003020 = { name="Adzÿnba" culture=abkhazian}
+2003021 = { name="Ozgan" culture=abkhazian}
+2003022 = { name="Lakoba" culture=abkhazian}
+2003023 = { name="Rapava" culture=abkhazian}
+2003024 = { name="Agrba" culture=abkhazian}
+2003025 = { name="Dzapshba" culture=abkhazian}
+2003026 = { name="Kishmaria" culture=abkhazian}
+2003027 = { name="Mkanba" culture=abkhazian}
+2003028 = { name="Axba" culture=abkhazian}
+2003029 = { name="Akaba" culture=abkhazian}
+2003030 = { name="Gwÿnjia" culture=abkhazian}
+2003031 = { name="Akaywba" culture=abkhazian}
+2003032 = { name="Ardzÿnba" culture=abkhazian}
+2003033 = { name="Gabnia" culture=abkhazian}
+2003034 = { name="Tarba" culture=abkhazian}
+2003035 = { name="Tsÿmtsba" culture=abkhazian}
+2003036 = { name="Zantaria" culture=abkhazian}
+2003037 = { name="Harazia" culture=abkhazian}
+2003038 = { name="Adleiba" culture=abkhazian}
+2003039 = { name="Labaxwa" culture=abkhazian}
+2003040 = { name="Gwagwua" culture=abkhazian}
+2003041 = { name="Akshba" culture=abkhazian}
+2003042 = { name="Onishenko" culture=abkhazian}
+2003043 = { name="Tabaghwua" culture=abkhazian}
+2003044 = { name="Ampar" culture=abkhazian}
+2003045 = { name="Stranichkin" culture=abkhazian}
+2003046 = { name="Gartskwaa" culture=abkhazian}
+2003047 = { name="Agwmaa" culture=abkhazian}
+2003048 = { name="Alamia" culture=abkhazian}
+2003049 = { name="Kapba" culture=abkhazian}
+2003050 = { name="Kyetsba" culture=abkhazian}
+2003051 = { name="Smÿr" culture=abkhazian}
+2003052 = { name="Aywdzba" culture=abkhazian}
+2003053 = { name="Kwarchia" culture=abkhazian}
+2003054 = { name="Japua" culture=abkhazian}
+2003055 = { name="Dbar" culture=abkhazian}
+2003056 = { name="Aiba" culture=abkhazian}
+2003057 = { name="Ashba" culture=abkhazian}
+2003058 = { name="Gwlia" culture=abkhazian}
+2003059 = { name="Kakalia" culture=abkhazian}
+2003060 = { name="Kwÿbraa" culture=abkhazian}
+2003061 = { name="Kwÿtsnia" culture=abkhazian}
+2003062 = { name="Logwua" culture=abkhazian}
+2003063 = { name="Salaqaia" culture=abkhazian}
+2003063 = { name="Tsanba" culture=abkhazian}
+2003064 = { name="Shÿnkwba" culture=abkhazian}
+2003065 = { name="Gwaramia" culture=abkhazian}
+2003066 = { name="Gÿtsba" culture=abkhazian}
+2003067 = { name="Chachba" culture=abkhazian}
+2003068 = { name="Iskander" culture=abkhazian}
+2003069 = { name="Agÿndia" culture=abkhazian}
+2003070 = { name="Azhÿba" culture=abkhazian}
+2003071 = { name="Aphazou" culture=abkhazian}
+2003072 = { name="Ahashba" culture=abkhazian}
+2003073 = { name="Amarshan" culture=abkhazian}
+2003074 = { name="Kogonia" culture=abkhazian}
+2003075 = { name="Koghonia" culture=abkhazian}
+2003076 = { name="Ladariaba" culture=abkhazian}
+2003077 = { name="Lashÿria" culture=abkhazian}
+2003078 = { name="Papaskyÿr" culture=abkhazian}
+2003079 = { name="Plia" culture=abkhazian}
+2003080 = { name="Sangwlia" culture=abkhazian}
+2003081 = { name="Tarkyÿl" culture=abkhazian}
+2003082 = { name="Thaitsÿkwtsha" culture=abkhazian}
+2003083 = { name="Tÿzhwba" culture=abkhazian}
+2003084 = { name="Xwartskia" culture=abkhazian}
+2003085 = { name="Chuaz" culture=abkhazian}
+2003086 = { name="Chania" culture=abkhazian}
+2003087 = { name="Alteiba" culture=abkhazian}
+2003088 = { name="Gerzmaa" culture=abkhazian}
+2003089 = { name="Ablotia" culture=abkhazian}
+2003090 = { name="Mÿkwba" culture=abkhazian}
+2003091 = { name="Tsÿtanaa" culture=abkhazian}
+2003092 = { name="Jopua" culture=abkhazian}
+2003093 = { name="Dzidzaria" culture=abkhazian}
+2003094 = { name="Chkadua" culture=abkhazian}
+2003095 = { name="Kobaxyia" culture=abkhazian}
+2003096 = { name="Marxolia" culture=abkhazian}
+2003097 = { name="Ketia" culture=abkhazian}
+2003098 = { name="Jurgyelia" culture=abkhazian}
+2003099 = { name="Abÿxwba" culture=abkhazian}
+2003100 = { name="Amchba" culture=abkhazian}
+2003101 = { name="Kwÿpraa" culture=abkhazian}
+2003102 = { name="Chachxalia" culture=abkhazian}
+2003103 = { name="Argwÿn" culture=abkhazian}
+2003104 = { name="Axyiba" culture=abkhazian}
+2003105 = { name="Ahÿba" culture=abkhazian}
+2003106 = { name="Atsnaria" culture=abkhazian}
+2003107 = { name="Achba" culture=abkhazian}
+2003108 = { name="Ashxarÿua" culture=abkhazian}
+2003109 = { name="Ajba" culture=abkhazian}
+2003110 = { name="Bagatelia" culture=abkhazian}
+2003111 = { name="Bebia" culture=abkhazian}
+2003112 = { name="Gerxyelia" culture=abkhazian}
+2003113 = { name="Gorÿua" culture=abkhazian}
+2003114 = { name="Gochua" culture=abkhazian }
+2003115 = { name="Gwÿblia" culture=abkhazian }
+2003116 = { name="Dautia" culture=abkhazian }
+2003117 = { name="Demerj" culture=abkhazian }
+2003118 = { name="Zardania" culture=abkhazian }
+2003119 = { name="Kaslandzia" culture=abkhazian }
+2003120 = { name="Kyilasonia" culture=abkhazian }
+2003121 = { name="Kwaghwania" culture=abkhazian }
+2003122 = { name="Kwÿchberia" culture=abkhazian }
+2003123 = { name="Lagwlaa" culture=abkhazian }
+2003124 = { name="Lakrba" culture=abkhazian }
+2003125 = { name="Lashwria" culture=abkhazian }
+2003126 = { name="Lomia" culture=abkhazian }
+2003127 = { name="Makachaba" culture=abkhazian }
+2003128 = { name="Mikaia" culture=abkhazian }
+2003129 = { name="Naraskwua" culture=abkhazian }
+2003130 = { name="Nodia" culture=abkhazian }
+2003131 = { name="Papba" culture=abkhazian }
+2003132 = { name="Pkyÿn" culture=abkhazian }
+2003133 = { name="Sabekiaba" culture=abkhazian }
+2003134 = { name="Sakaniaba" culture=abkhazian }
+2003135 = { name="Tapagwua" culture=abkhazian }
+2003136 = { name="Twanba" culture=abkhazian }
+2003137 = { name="Toria" culture=abkhazian }
+2003138 = { name="Xokerba" culture=abkhazian }
+2003139 = { name="Xwÿrtslaa" culture=abkhazian }
+2003140 = { name="Hashÿg" culture=abkhazian }
+2003141 = { name="Tsabria" culture=abkhazian }
+2003142 = { name="Tswÿjba" culture=abkhazian }
+2003143 = { name="Chÿtanaa" culture=abkhazian }
+2003144 = { name="Jenia" culture=abkhazian }
 
 2007001 = { name="Durero" culture=provencal }
 2007002 = { name="Voulant" culture=provencal }
@@ -22671,60 +22704,60 @@ coat_of_arms = {
 2067054 = { name="Roermond" culture=limburgish }
 2067055 = { name="Regout" culture=limburgish }
 
-2068000 = { name="Haydarov" culture=avar }
-2068001 = { name="Abakarov" culture=avar }
-2068002 = { name="Hajbulaev" culture=avar }
-2068003 = { name="'Abdulaev" culture=avar }
-2068004 = { name="Akhmadnabiev" culture=avar }
-2068005 = { name="'Umakhanov" culture=avar }
-2068006 = { name="'Isakhazhiev" culture=avar }
-2068007 = { name="'Aliev" culture=avar }
-2068008 = { name="Nurmukhamadov" culture=avar }
-2068009 = { name="Qebeqov" culture=avar }
-2068010 = { name="Kazbekov" culture=avar }
-2068011 = { name="'Abdulatipov" culture=avar }
-2068012 = { name="Khazhimukhamadov" culture=avar }
-2068013 = { name="Omarov" culture=avar }
-2068014 = { name="Mukhamadov" culture=avar }
-2068015 = { name="Batirov" culture=avar }
-2068016 = { name="Khusejniev" culture=avar }
-2068017 = { name="Gube" culture=avar }
-2068018 = { name="Danijalov" culture=avar }
-2068019 = { name="Kudijav" culture=avar }
-2068020 = { name="Qurban'aliev" culture=avar }
-2068021 = { name="Labazanov" culture=avar }
-2068022 = { name="Murtaz'aliev" culture=avar }
-2068023 = { name="Sadulaev" culture=avar }
-2068024 = { name="Sulajmanov" culture=avar }
-2068025 = { name="Khadisov" culture=avar }
-2068026 = { name="Khamzatov" culture=avar }
-2068027 = { name="Shikhsa'idov" culture=avar }
-2068028 = { name="Shamkhalov" culture=avar }
-2068029 = { name="Ibragimov" culture=avar }
-2068030 = { name="Khajbulaev" culture=avar }
-2068031 = { name="Lakhijalov" culture=avar }
-2068032 = { name="Mukhamadtagirov" culture=avar }
-2068033 = { name="Mustafaev" culture=avar }
-2068034 = { name="Musaev" culture=avar }
-2068035 = { name="Murtaz'aliev" culture=avar }
-2068036 = { name="Tolboev" culture=avar }
-2068037 = { name="Kamalov" culture=avar }
-2068038 = { name="Ganiyev" culture=avar }
-2068039 = { name="Abdulbekov" culture=avar }
-2068040 = { name="Mukhamadsharip" culture=avar }
-2068041 = { name="Ismailov" culture=avar }
-2068042 = { name="Khamzatkhanov" culture=avar }
-2068043 = { name="Abdurakhmanov" culture=avar }
-2068044 = { name="Khazhimuradov" culture=avar }
-2068045 = { name="Isaev" culture=avar }
-2068046 = { name="Khajbulaev" culture=avar }
-2068047 = { name="Kuramukhamadov" culture=avar }
-2068048 = { name="Makhachev" culture=avar }
-2068049 = { name="Umarov" culture=avar }
-2068050 = { name="Sa'idov" culture=avar }
-2068051 = { name="Yusupov" culture=avar }
-2068052 = { name="Aliyev" culture=avar used_for_random=no}
-2068053 = { name="Yusupov" culture=avar used_for_random=no}
+2068000 = { name="Hamzatil" culture=avar }
+2068001 = { name="Ts'adasa" culture=avar }
+2068002 = { name="Ibrahimow" culture=avar }
+2068003 = { name="Haybulayew" culture=avar }
+2068004 = { name="Hamidow" culture=avar }
+2068005 = { name="G'umarow" culture=avar }
+2068006 = { name="Batirow" culture=avar }
+2068007 = { name="Nutsalxanow" culture=avar }
+2068008 = { name="Mirzayew" culture=avar }
+2068009 = { name="G'umaxanow" culture=avar }
+2068010 = { name="Murtazg'aliyew" culture=avar }
+2068011 = { name="Mirzoyew" culture=avar }
+2068012 = { name="Huseynow" culture=avar }
+2068013 = { name="G'abdulayew" culture=avar }
+2068014 = { name="G'abdulat'ipow" culture=avar }
+2068015 = { name="Muhamadow" culture=avar }
+2068016 = { name="G'aliyew" culture=avar }
+2068017 = { name="Muhamadg'aliyew" culture=avar }
+2068018 = { name="Ch'ik'asa" culture=avar }
+2068019 = { name="G'abdusalamow" culture=avar }
+2068020 = { name="Hadisow" culture=avar }
+2068021 = { name="Haydarow" culture=avar }
+2068022 = { name="Hazhiyew" culture=avar }
+2068023 = { name="Hazhimuhamadow" culture=avar }
+2068024 = { name="Islamow" culture=avar }
+2068025 = { name="Asiyalaw" culture=avar }
+2068026 = { name="Sulaymanow" culture=avar }
+2068027 = { name="Taziyew" culture=avar }
+2068028 = { name="G'abdullayew" culture=avar }
+2068029 = { name="Harak'unisa" culture=avar }
+2068030 = { name="Hihalha" culture=avar }
+2068031 = { name="Haymakisa" culture=avar }
+2068032 = { name="Inxelosa" culture=avar }
+2068033 = { name="T'eletl'a" culture=avar }
+2068034 = { name="Kudalisa" culture=avar }
+2068035 = { name="Tl'oqa" culture=avar }
+2068036 = { name="Rughzhasa" culture=avar }
+2068037 = { name="Khargabisa" culture=avar }
+2068038 = { name="Ch'ik'asa" culture=avar }
+2068039 = { name="Xaytaq'asa" culture=avar }
+2068040 = { name="G'isahazhiyew" culture=avar }
+2068041 = { name="Dibirow" culture=avar }
+2068042 = { name="Rasulow" culture=avar }
+2068043 = { name="Sag'idnurow" culture=avar }
+2068044 = { name="Daniyalow" culture=avar }
+2068045 = { name="Aydinbekow" culture=avar }
+2068046 = { name="Shamxalow" culture=avar }
+2068047 = { name="Q'urbang'aliyew" culture=avar }
+2068048 = { name="Rashidow" culture=avar }
+2068049 = { name="Labazanow" culture=avar }
+2068050 = { name="Nurmuahamadow" culture=avar }
+2068051 = { name="Sasiqa" culture=avar }
+2068052 = { name="G'aliyew" culture=avar used_for_random=no}
+2068053 = { name="Yusupow" culture=avar used_for_random=no}
 
 2069000 = { name="Choriev" culture=tajik }
 2069001 = { name="Abdusalom" culture=tajik }
@@ -35304,6 +35337,8 @@ coat_of_arms = {
 2941003 = { name="Zamana" culture=warmzur }
 2941004 = { name="Samsel" culture=warmzur }
 2941005 = { name="Ziedro" culture=warmzur }
+2941006 = { name="Aweje" culture=warmzur }
+2941007 = { name="Suchodola" culture=warmzur }
 
 3000000 = { name="Adiviyar" culture=tamil }
 3000001 = { name="Agamudayar" culture=tamil }

@@ -1,23 +1,20 @@
 1996000={
-	name="Ibrahim"
+	name="Churszeja"
+	female=yes
 	dynasty=1442001 #Ulanowicz
 	culture=lipka
 	religion=ruhi
-	martial=6
-	diplomacy=9
-	stewardship=8
-	intrigue=6
-	learning=5
 	father=1996017
-	trait=zealous
-	trait=brave
-	trait=just
-	trait=diligent
-	trait=deceitful
-	trait=proud
 	trait=elusive_shadow
-	2641.6.3={birth=yes}
-	2700.1.1={death=yes}
+	trait=strong
+	trait=brave
+	trait=proud
+	trait=temperate
+	trait=sympathy_christendom
+	trait=falconer
+	trait=aggressive_leader
+	trait=flanker
+	2641.6.27={birth=yes}
 }
 1996001={
 	name="Modris"
@@ -1221,4 +1218,220 @@
 	religion=mariavite
 	2594.6.5={birth=yes}
 	2627.5.5={death=yes}
+}
+1996086={
+	name="Ibrahim"
+	dynasty=1442001 #Ulanowicz
+	culture=lipka
+	religion=ruhi
+	martial=6
+	diplomacy=9
+	stewardship=8
+	intrigue=6
+	learning=5
+	father=1996017
+	trait=zealous
+	trait=brave
+	trait=just
+	trait=diligent
+	trait=deceitful
+	trait=proud
+	trait=skilled_tactician
+	trait=cavalry_leader
+	trait=unyielding_leader
+	2643.8.13={birth=yes}
+}
+1996087={
+	name="Mikalaj"
+	dynasty=1727111 #Shatochin
+	culture=belarusian
+	religion=orthodox
+	trait=martial_cleric
+	trait=fair
+	trait=shy
+	trait=feeble
+	trait=temperate
+	trait=humble
+	trait=poet
+	father=1996097
+	mother=1996098
+	2644.5.29={birth=yes}
+	2665.1.1={add_matrilineal_spouse=1996000}
+	2665.1.1={effect={add_lover=1996000}}
+}
+1996088={
+	name="Kulibek Dariusz"
+	dynasty=1442074 #Sofijew
+	culture=lipka
+	religion=ruhi
+	secret_religion=shiite
+	trait=fortune_builder
+	trait=ruthless
+	trait=quick
+	trait=patient
+	trait=trusting
+	trait=winter_soldier
+	2609.7.22={birth=yes}
+}
+1996089={
+	name="Chaszajar"
+	dynasty=1442074 #Sofijew
+	culture=lipka
+	religion=ruhi
+	secret_religion=shiite
+	father=1996088
+	mother=2070072
+	trait=amateurish_plotter
+	trait=authoritative
+	trait=stutter
+	trait=trickster
+	2630.3.19={birth=yes}
+}
+1996090={
+	name="Gulsana"
+	female=yes
+	dynasty=1442074 #Sofijew
+	culture=lipka
+	religion=ruhi
+	secret_religion=shiite
+	father=1996088
+	mother=2070072
+	2633.12.5={birth=yes}
+}
+1996091={
+	name="Galiena"
+	female=yes
+	dynasty=1442074 #Sofijew
+	culture=lipka
+	religion=ruhi
+	secret_religion=shiite
+	father=1996088
+	mother=2070072
+	trait=twin
+	2637.2.7={birth=yes}
+}
+1996092={
+	name="Szemira"
+	female=yes
+	dynasty=1442074 #Sofijew
+	culture=lipka
+	religion=ruhi
+	secret_religion=shiite
+	father=1996088
+	mother=2070072
+	trait=twin
+	2637.2.7={birth=yes}
+}
+1996093={
+	name="Anserianna"
+	female=yes
+	dynasty=1442074 #Sofijew
+	culture=lipka
+	religion=ruhi
+	secret_religion=shiite
+	father=1996088
+	mother=2070072
+	2640.12.15={birth=yes}
+}
+1996094={
+	name="Klaudia"
+	female=yes
+	dynasty=2941006 #Aweje
+	culture=warmzur
+	religion=mariavite
+	trait=tough_soldier
+	trait=sturdy
+	trait=groomed
+	trait=freckles
+	trait=falconer
+	trait=light_foot_leader
+	2632.12.3={birth=yes}
+	2659.1.1={add_matrilineal_spouse=1996095}
+	2657.12.29={add_spouse=1996088}
+	2657.9.23={effect={add_rival=1996089}}
+	2665.1.1={effect={add_friend=1996000}}
+}
+1996095={
+	name="Artur"
+	dynasty=2941007 #Suchodola
+	culture=warmzur
+	religion=mariavite
+	trait=flamboyant_schemer
+	trait=musician
+	trait=brave
+	trait=inspiring_leader
+	2629.7.11={birth=yes}
+	2657.9.23={death={death_reason=death_duel killer=1996089}}
+}
+1996096={
+	name="Oskar"
+	dynasty=2941006 #Aweje
+	culture=warmzur
+	religion=mariavite
+	trait=misguided_warrior
+	trait=robust
+	trait=groomed
+	father=1996095
+	mother=1996094
+	2659.5.2={birth=yes}
+}
+1996097={
+	name="Mikita"
+	dynasty=1727111 #Shatochin
+	culture=belarusian
+	religion=orthodox
+	trait=charismatic_negotiator
+	trait=strong
+	trait=familyperson
+	trait=honorable
+	trait=one_handed
+	trait=defensive_leader
+	trait=falconer
+	2605.4.18={birth=yes}
+}
+1996098={
+	name="Anzhelika"
+	female=yes
+	culture=poleshuk
+	religion=orthodox
+	2616.9.3={birth=yes}
+	2636.1.1={add_spouse=1996097}
+}
+1996099={
+	name="Yauhen"
+	dynasty=1727111 #Shatochin
+	culture=belarusian
+	religion=orthodox
+	trait=charismatic_negotiator
+	trait=painter
+	trait=diligent
+	trait=content
+	trait=pious
+	father=1996097
+	2624.3.28={birth=yes}
+}
+1996100={
+	name="Barys"
+	dynasty=1727111 #Shatochin
+	culture=belarusian
+	religion=orthodox
+	secret_religion=pravoslavie
+	trait=tough_soldier
+	trait=strong
+	trait=ambitious
+	trait=envious
+	trait=chaste
+	trait=trickster
+	father=1996097
+	2628.12.5={birth=yes}
+}
+1996101={
+	name="Tamara"
+	female=yes
+	dynasty=1727111 #Shatochin
+	culture=poleshuk
+	religion=orthodox
+	father=1996097
+	mother=1996098
+	2641.12.22={birth=yes}
 }

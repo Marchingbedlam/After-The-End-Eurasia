@@ -5090,15 +5090,6 @@
 	trait=hunter
 	2606.1.24={birth=yes}
 }
-1991354={
-	name="Henryk"
-	dynasty=2124005
-	culture=odrzan
-	religion=mariavite
-	father=1991352
-	mother=1991353
-	2660.3.27={birth=yes}
-}
 1991355={ #William I of Silesia
 	name="Wilem"
 	dynasty=2129221 #Szeja-Bibersztajn
@@ -5244,6 +5235,8 @@
 	trait=charismatic_negotiator
 	trait=musician
 	trait=poet
+	father=1991351
+	mother=1991368
 	2621.4.19={birth=yes}
 }
 1991370={
@@ -5255,6 +5248,8 @@
 	trait=intricate_webweaver
 	trait=musician
 	trait=poet
+	father=1991351
+	mother=1991368
 	2621.4.19={birth=yes}
 }
 1991371={
@@ -5276,6 +5271,7 @@
 }
 1991372={
 	name="Eva"
+	female=yes
 	dynasty=2150001 #Nohavica
 	culture=moravian
 	religion=lutheran
@@ -5284,6 +5280,8 @@
 	trait=strong
 	trait=poet
 	trait=mystic
+	father=1991369
+	mother=1991371
 	2646.1.5={birth=yes}
 }
 1991373={
@@ -5340,6 +5338,8 @@
 	trait=poet
 	trait=gregarious
 	trait=gamer
+	father=1991352
+	mother=1991376
 	2615.2.10={birth=yes}
 }
 1991378={

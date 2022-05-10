@@ -1374,3 +1374,36 @@ d_bakran_brotherhood = {
 	
 	mercenary_type = d_bakran_brotherhood_composition
 }
+### VASSAL MERCENARIES
+
+d_lipka_guard = {
+	color={ 180 180 180 }
+	color2={ 255 255 255 }
+	
+	graphical_culture = holygfx
+
+	capital = 685 #Riga
+	
+	# Parent Religion 
+	religion = ruhi
+	
+	culture = lipka
+	
+	mercenary = yes
+	
+	short_name = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+	title_female = "CAPTAIN_FEMALE"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	strength_growth_per_century = 1.00
+	
+	mercenary_type = lipka_guard_composition
+}

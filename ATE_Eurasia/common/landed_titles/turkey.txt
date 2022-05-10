@@ -1277,10 +1277,19 @@ e_turkey = {
 				color={ 32 172 201 }
 				color2={ 255 255 255 }
 				
-				b_cihanbeyli = {}
-				b_kulu = {}
+				kurdish="Canbeg"
+				gorani="Canbeg"
+				
+				b_cihanbeyli = {
+					kurdish="Canbeg"
+					gorani="Canbeg"}
+				b_kulu = {
+					kurdish="Qulek"
+					gorani="Qulek"}
 				b_kadinhani = {}
-				b_sarayoenue = {}
+				b_sarayoenue = {
+					kurdish="Canbeg"
+					gorani="Canbeg"}
 				b_yunak = {}
 				b_celtik = {}
 				b_tuzlukcu = {}

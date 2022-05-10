@@ -262,7 +262,7 @@
 	2618.11.2={birth=yes}
 }
 2070022={
-	name="Sultanäli"
+	name="Xätai"
 	dynasty=2054000 #Ismayil
 	culture=azeri
 	religion=shiite
@@ -796,4 +796,22 @@
 	mother=2202470
 	2631.3.2={birth=yes}
 	2648.1.1={add_spouse=2070037}
+}
+2070072={ 
+    name="Dilarä"
+	female=yes
+	dynasty=2054000 #Ismayil
+	culture=azeri
+	religion=shiite
+	father=2070026
+	mother=2202470
+	trait=mastermind_theologian
+	trait=mystic
+	trait=groomed
+	trait=zealous
+	trait=poet
+	trait=flu
+	2612.10.7={birth=yes}
+	2629.1.1={add_spouse=1996088}
+	2654.12.18={death={death_reason=death_trait}}
 }
