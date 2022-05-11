@@ -77,55 +77,60 @@ turkic_west = {
 		color = { 0.5 0.7 0.4 }
 
 		male_names = {
-			Abdulla_Abdullah Äbüsöghüd Ähtär Albert_Albert Alfrid_Alfred Alikber_Ali-Akbar Alim Almas Altynbay Amazat Amerhan_Amirkhan Ämir_Amir Ansar Anvar_Anwar Arslan Artur_Arthur Asad Awhadí Äxät Äxmät_Ahmad Ayaz Aydar_Aydar Aynur Ayrat_Ayrat Azamat Azat Azgar 
-			Bikbay Bikbulat_Bekbulat Biktimer Bulat 
-			Carulla Çayan Cihansha_Jahanshah Çiñghiz_Genghis 
-			Daler Damir Deniz 
-			Eduard_Edward Elbrus_Elbruz Eldar_Eldar Engel Erik_Eric 
-			Fanir Fanis Farhat_Farhat Färit_Farid Fatix_Fatih Fätxulla_Fathullah Fäyzulla_Fayzullah Ferdinant_Ferdinand 
-			Ghäbdelbarí Ghäbdelxalik Ghäbdennasír_Abdulnasir Ghabdulla_Abdullah Ghabdullacan Ghädel Ghädelsa Ghäliäkbär_Ali-Akbar Ghäliäsghar Ghäskär Ghata Ghayaz Ghaziz_Aziz Ghizzätulla_Izzatullah Ghömär_Omar 
-			Ibragim_Abraham Idris_Idris Ildar_Eldar Ildus Ilgiz Ilgizar Ilham_Ilham Ilfat Ilnar Ilnaz Ilnur Ilshat Ilsur Ilyas_Elijah Imil_Emil Irek Ishbulat Iskändär_Alexander Isxak_Isaac 
-			Kälimulla Kamil_Kamil Kärim_Karim Kazbek_Kazbek 
-			Linar 
-			Mäjit_Majid Mansur_Mansur Mahmud_Mahmud Marat Marsel_Marcel Mintimer Mirghäziän Mirsäyet Möbin Mödärris Mostafa_Mustafa Möxämmät_Muhammad Möxämmätfatix Möxämmätghärif Möxämmathadi Möxämmäsadíq Möxämmätsha Möxämmätzakir Möxämmätzarif Mullacan Mullanur Musa_Moses 
-			Näcip_Najib Nail Näqi Narat Niaz Nizametdin_Nizamuddin Nurislam Nurmöxämmät 
-			Radion Radiq Radmir Rafail_Raphael Rail Ramil Räshit_Rashid Rasim_Rasim Rawil Razil Rinat Rishat_Richard Robert_Robert Röstäm_Rostam Rudolf_Rudolf Rushan_Rowshan Ruslan_Ruslan 
-			Sabircan Sadretdin_Sadreddin Sadri Safa Salix_Salih Säyet_Sayyid Shähit_Shahid Shamil_Shamil Shärif_Sharif Shihabetdin_Shihabuddin Síracetdin_Sirajuddin Söläyman_Solomon Soltan Soltanghäli 
-			Tahir_Tahir Tajmas_Tajmas Talgat_Talaat Timur_Timur Timurxan_Timurkhan Toktamish_Toktamish Tulpar 
-			Ural Uraz Ütämesh 
-			Vaghiz Vilen Vildan 
-			Xäbib_Habib Xäbibulla_Habibullah Xäbir Xäliulla Xämit_Hamid Xämzä_Hamza Xasan_Hasan Xäydär_Haydar Xäydärghäli Xäyrulla_Khayrullah 
-			Yaxya_John Yasher Yosyf_Joseph Yuldash_Yuldash Yuri_George Yusuf_Joseph 
-			Zagip Zahit Zainutdin_Zainuddin Zäki_Zaki Zakir Zarif Zinetula_Zaynatullah Zölfät Zöfär_Zufar 
+			Abdulla_Abdullah Äbri Ädhäm_Adam Afzaletdin Aghagardash Äkbär_Akbar Älämetdin Albert_Albert Ali_Ali Almaz Änäs_Anas Ändär Änwär_Anwar Artem_Artemius Artur_Arthur Äsfändiär_Asfandiyar Äsghat Äshräf_Ashraf Äshräfcan Äskär_Askar Atlas Äxät_Ahad Äxmädulla Äxmät_Ahmad Äxmätcan Äxmätgäräy Äxrar Äxsän Ayrat Aysä Aytughan Äyüp_Ayyub Ayzil Azan Äznär 
+			Bädretdin_Badruddin Bahawetdin Bäkil Bäli Bäliäxmät Bariy Batir_Bahadur Batirgäräy Batirshäyex Bayazit_Bayazid Bäzim Borhan_Burhan Bulat Burçin 
+			Cäläleddin_Jalaluddin Cämil_Jamil Cäwdät_Jawdat Cihangir_Jahangir Cihansha_Jahanshah Çiñgiz_Genghis 
+			Dälir Dämin Damir_Timur Daniil_Daniel Daut_David Däwlät_Dawlat Däwlätsha Dilfas Dilüs Dinar 
+			Eduard_Edward Elbrus Emil_Emil Ernest_Ernest 
+			Fähim_Fahim Faik_Faiq Fändäs Fänis Fännür Färit_Farid Farux_Farrukh Färxäd_Farhad Fatix_Fatih Fatqulla_Fathullah Fäxretdin_Fakhruddin Fäyzeraxman Fäyzi Fäyzulla_Fayzullah Fazil Fazilcan Feliks_Felix Fidail Firshat Fuat_Fuad 
+			Gäräy Ghabdeläxät_Abdulahad Ghabdelbariy Ghabdelgäräy Ghabdelkärim_Abdulkarim Ghabdellatiyf_Abdullatif Ghabdelwäli_Abdulwali Ghabdelwaxit_Abdulwahid Ghabdelxäy_Abdulhai Ghabderasul_Abdulrasul Ghabdräshit_Abdulrashid Ghabdräwf_Abdulrauf Ghabdraxman_Abdulrahman Ghabdulla_Abdullah Ghabelghani_Abdulghani Ghabid_Abid Ghadelsha Ghafur Ghali_Ali Ghaliäkbär_Ali-Akbar Ghaliäsghar Ghalim_Alim Ghalimcan Ghaliulla Ghalläm Ghamil Ghani Gharif_Arif Gharifcan Ghasiym Ghata_Ata Ghataulla_Ataullah Ghayaz_Ayaz Ghayfulla Ghaynazar Ghaysä_Jesus Ghazinur Ghaziz_Aziz Ghiläcetdin Ghilemxan Ghirfan_Irfan Ghizzatulla_Izzatullah Ghobäydulla_Ubaydullah Ghomär_Umar Ghosman_Uthman Ghulam_Ghulam 
+			Hadi Hidiat Hidiätulla_Hidayatullah 
+			Ibätulla_Ibadullah Ibrahim_Abraham Ibrahimbäk Idel Idiät Idris_Idris Ildar Ildus Ilfat Ilgiz Ilgizär Ilnur Ilshat Ilyas_Elijah Insaf Irek Irek Iskändär_Alexander Ismäghil_Ismail Isxak_Isaac Ixsan_Ihsan Ixtiyar 
+			Kälimulla Kamaletdin_Kamaluddin Kamil_Kamil Kärim_Karim Kazbek 
+			Lenar_Leonard Lotfulla_Lutfullah 
+			Malik_Malik Mansur_Mansur Marat Märdixan Mars Marsel_Marcel Mäxmut_Mahmud Midxät Miftax Miftaxetdin Mikdät Minbäli Miñgäräy Minhac Miñnegäräy Minshäyex Mintimer Mirac_Miraj Mirfatiyx Mirsäyet Mixail_Michael Möcip Mödäris Mönäwär_Munawwar Mortaza_Murtaza Mostafa_Mustafa Motiyghulla Möxämmät_Muhammad Möxämmätcan Möxämmätghali_Muhammad-Ali Möxämmätshakir Möxämmätxan_Muhammadkhan Möxetdin_Muhyiuddin Möxit Mullacan Mullanur Murat_Murad Musa_Moses 
+			Näbiulla Näcip_Najib Näcmican Nail Nariman Nasiyr_Nasir Nigmätcan Nizam_Nizam Nizametdin_Nizamuddin Nosratulla_Nosratullah Nuretdin_Nuruddin Nurghaziz Nuri Nuriäxmät Nurislam 
+			Oleg_Helgi 
+			Qadiyr_Qadir Qasiym_Qasim Qayum_Kayyum 
+			Radik Rafail_Raphael Rafil Rafis Räfis Räfiyq_Rafiq Räfqat Rail Räis Ralif Ramazan_Ramadan Ramil Rämzi_Ramzi Rashat_Rashad Räshid_Rashid Räwf_Rauf Rawil Räxip Raxman_Rahman Räxmätulla_Rahmatullah Razil Raziyx_Razih Rif Rinat_Renatus Rishad_Richard Rizwan_Ridwan Roman_Roman Röstäm_Rustam Rudolf_Rudolf Rushat Ruslan_Ruslan 
+			Sadretdin_Sadruddin Sadri Safa Saghidulla Säghidulla Saif Salawat Säläx_Salah Säläxetdin_Salahuddin Sälim_Salim Salix_Salih Salixcan Sayfetdin_Sayfuddin Sayfulla_Sayfullah Säyfulla_Sayfullah Säyyär Sergey_Sergius Shahbaz_Shahbaz Shahbazgäräy Shahi Shahiäxmät Shahishärif Shahwäli Shakir Shakircan Shamil_Shamil Shämsemöxämmät Shämsi Shärifcan Shärip_Sharif Shäwkät_Shawkat Shäyäxmät Shäyghardan Shäymärdän Shäymöxämmät Shäyxulla Sherzoda Shihabetdin_Shihabuddin Sibghat Sibghatulla Sitdiyq_Siddiq Söläyman_Sulayman Soltanghali_Sultan-Ali 
+			Tacetdin_Tajuddin Taci Tahir_Tahir Tälghat_Talaat Timerghali Timershäyex Timerxan Timur_Timur Töxfätulla 
+			Ural 
+			Valeriy_Valerius Vasiliy_Basil Vitaliy_Vitalius 
+			Wäghiz Wäliulla 
+			Xäbib_Habib Xäbibrahman Xäbir Xaci_Haji Xafiz_Hafiz Xafizulla_Hafizullah Xäkim_Hakim Xäläf_Khalaf Xälil_Khalil Xämidulla_Hamidullah Xämis Xämit_Hamid Xämzä_Hamza Xaris Xäsän_Hasan Xäydär_Haydar Xäydärghali Xäyrulla_Khayrullah Xörmät Xösäyen_Hussein Xösnetdin Xuca_Khoja 
+			Yarulla_Yarullah Yigor_Igor Yosif_Joseph Yunis_Jonah 
+			Zahidulla Zäki_Zaki Zakir Zäytün_Zaytun Zinnur Ziräk Ziya Zöfär 
 		}
 
 		female_names = {
-			Adelina_Adelina Albinä_Albina Aleksandra_Alexandra Älfiä Alfiya Aliä Alinä_Alina Alisä_Alice Alsu Altynçürä Äminä_Amina Änisä_Anisa Asiä Aslanbika Aybanu Aygöl_Aygul Ayninur Aysilu Aznagul 
-			Baghazat Bella Bibigäyshä Bikä 
-			Çaçak Çulpan 
-			Dana Damira Diana_Diana Dilbar Dinara 
-			Elina Elvirä_Elvira Elza_Elsa 
-			Fäniya Färidä_Farida Fatima_Fatima Fäwziä_Fawzia Firaya Firdausa_Firdausa Firüzä_Firuza Flyura_Flora 
-			Galima Ghäliä Ghäyshä_Aisha Ghäyshäbikä Gölçäçäk_Gulcicek Gölnara_Gulnara Gölnaz_Gölnaz Gölsem Gölzada Güzäl_Gözel 
-			Ilnara Ilnura Ilsiya Ilsura Ilzira Indira Irina_Irene Iririya 
-			Kamila_Kamila Kamilla_Camilla 
-			Lälä Läysän_Laysan Leniza Liä Liana  
-			Mädinä_Madina Maftuxa Mälikä_Malika Mämdüdä Märyäm_Mary Märziya Mavzida Miläwshä_Milawsha 
-			Nailya Nurbanu Nurdjamal 
-			Rauza Regina Renata Rezidä Roza_Rosa 
-			Säkinä Shamsinisa Söyembikä_Süyümbike Svetlana 
-			Tañsilu 
-			Urazbikä 
-			Väsilä 
-			Xäbirä Xäliulla 
-			Yana_Joan Yanina Yulduz_Yildiz Yuliä_Julia 
-			Zahidä Zäynäp_Zaynab Zemfira Zifa Zilya Zinara Zöhrä_Zohra Zöläyxä_Zulaykha Zulfia_Zulfia 
+			Adelyä Adilä Albina Älfiä Alinä Alisä_Alice Alsinä Alsu Äminä_Amina Anjela_Angela Äshräf Asiä Äsma Aygöl Ayzilä Ayziräk 
+			Bibighayshä Bibinur 
+			Cäwhäriä_Jawhariyya Çulpan 
+			Damirä Daniä Dilärä Dilbär 
+			Elina Elmira Ence 
+			Fähimä_Fahima Fänünä Fänzilä Fäwziä Fäxrenisa_Fakhrunissa Fäxriä_Fahria Fäyzä Finä Firayä Firdaniä Firdäwes 
+			Gäwhär_Gawhar Ghaliä Ghalimä_Alima Ghayniamal Ghazizä_Aziza Ghazizäbanu Ghizzenas Gölçäçäk_Gülçiçek Gölcännät Gölnara_Gulnara Gölnaz_Gulnaz Gölnur Gölsem Gölsinä Güzäl_Gözel Güzäliä 
+			Hacär 
+			Ilsöyä Ilüsä Irkä Islamiä 
+			Kamilä_Kamila Käshifä 
+			Lälä Landish Läysän Lena Lidiä_Lydia Liliä Lilian Luiza_Louise Lyütsiä_Lucia 
+			Mahipärwäz Mariä_Mary Marina_Marina Märziä Mäwghizä Mäxfüzä_Mahfuza Mörshidä Möslimä 
+			Naciä Näfisä Näghimä Nagima Nailä Näsimä Nurdidä 
+			Ömmegölsem 
+			Rabigha Räbigha_Rabia Räfiyka_Rafika Ramilä Rämziä Räsimä_Rasima Räyxan Räzilä Razia Renata_Renata Rezedä Rimma Rizida Roza Rozaliä Ruzanna Ruziä Ruziä 
+			Saimä Säkinä Saniä Sara_Sarah Säxibcamal Sevil Shämsiä Shäxsänäm Silu Sirinä Sömbel Söyembikä Sufiä 
+			Täklimä Täslimä 
+			Väsilä Venera Vera 
+			Wäkilä 
+			Xäbibä_Habiba Xädiçä_Khadija Xälimä_Halima 
+			Zahidä Zäkiä Zälfirä Zäynäb_Zaynab Zifa Zöläyxa_Zulaykha Zölfiä_Zulfiya 
 		}
 		
 		from_dynasty_prefix = "of "
 		
-		male_patronym = " uly"
-		female_patronym = " qyzy"
+		male_patronym = " uli"
+		female_patronym = " qizi"
 		prefix = no
 
 		pat_grf_name_chance = 50
