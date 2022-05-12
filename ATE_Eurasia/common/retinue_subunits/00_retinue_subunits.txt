@@ -355,16 +355,15 @@ RETTYPE_CUL_REDSHANK =
 		OR = {
 			culture = irish
 			culture = ulsterman
-			culture = scouse
 			culture = manx
 		}
 	}
 	
 	modifier = {
-		light_infantry_offensive = 0.5
+		light_infantry_offensive = 0.3
 		light_infantry_morale = 0.3
-		archers_offensive = 0.2
-		archers_morale = 0.2
+		archers_offensive = 0.1
+		archers_morale = 0.1
 	}
 }
 
@@ -431,7 +430,7 @@ RETTYPE_CUL_ANDALUSIAN =
 RETTYPE_CUL_GEWALTHAUFEN = 
 {
 	first_type = 2
-	first_amount = 350
+	first_amount = 300
 	second_type = 4
 	second_amount = 25
 
@@ -465,13 +464,12 @@ RETTYPE_CUL_SAPEURS =
 	potential = {
 		is_nomadic = no
 		OR = {
-			culture_group = french
-		}
-		NOT = {
-			culture = gallo
-			culture = walloon
-			culture = arpitan
-			culture = corsican
+			culture = gascon
+			culture = provencal
+			culture = occitan
+			culture = parisian
+			culture = chti
+			culture = norman
 		}
 	}
 
