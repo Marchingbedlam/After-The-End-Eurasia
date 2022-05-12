@@ -387,59 +387,6 @@ RETTYPE_CUL_BALT =
 	}
 }
 
-RETTYPE_CUL_ALTAIC = 
-{
-	first_type = 6
-	first_amount = 130
-	
-	second_type = 3
-	second_amount = 120
-
-	special_troops = horse_archers
-	
-	potential = {
-		is_nomadic = no
-		OR = {
-			culture_group = altaic
-			culture_group = iranian
-		}
-		NOT = {
-			culture = jurchen
-		}
-	}
-	
-	modifier = {
-		horse_archers_offensive = 0.2
-		horse_archers_morale = 0.12
-	}
-}
-
-RETTYPE_CUL_FRANK_NOR_GER = 
-{
-	first_type = 4
-	first_amount = 150
-	
-	second_type = 3
-	second_amount = 100
-	
-	potential = {
-		is_nomadic = no
-		OR = {
-			culture = frankish
-			culture = occitan
-			culture = norman
-			culture = german
-			culture = breton
-		}
-	}
-	
-	modifier = {
-		knights_offensive = 0.1
-		knights_defensive = 0.1
-		knights_morale = 0.2
-	}
-}
-
 RETTYPE_CUL_HISP = 
 {
 	first_type = 1
@@ -462,45 +409,99 @@ RETTYPE_CUL_HISP =
 	}
 }
 
-RETTYPE_CUL_ITA = 
+RETTYPE_CUL_ANDALUSIAN = 
 {
-	first_type = 2
+	first_type = 3
 	first_amount = 400
-	
+
 	potential = {
 		is_nomadic = no
 		OR = {
-			culture = italian
-			culture = dalmatian
+			culture = andalusian
 		}
 	}
-	
+
 	modifier = {
-		pikemen_offensive = 0.2
-		pikemen_defensive = 0.2
-		pikemen_morale = 0.4
+		light_cavalry_defensive = 0.4
+		light_cavalry_offensive = 0.2
+		light_cavalry_morale = 0.2
 	}
 }
 
-RETTYPE_CUL_ROMAN = 
+RETTYPE_CUL_GEWALTHAUFEN = 
 {
 	first_type = 2
-	first_amount = 400
-	second_type = 1
-	second_amount = 150
-	
+	first_amount = 350
+	second_type = 4
+	second_amount = 25
+
 	potential = {
 		is_nomadic = no
-		culture = roman
+		OR = {
+			culture = alsatian
+			culture = swabian
+			culture = bavarian
+			culture = austrian
+			culture = schwyzer
+			culture = palatinate
+			culture = romansh
+			culture = arpitan
+		}
 	}
-	
+
 	modifier = {
-		pikemen_offensive = 0.2
-		pikemen_defensive = 0.2
-		pikemen_morale = 0.4
-		heavy_infantry_offensive = 0.25
-		heavy_infantry_defensive = 0.25
-		heavy_infantry_morale = 0.2
+		pikemen_offensive = 0.25
+		pikemen_defensive = 0.25
+		pikemen_morale = 0.3
+		knights_morale = 0.1
+	}
+}
+
+RETTYPE_CUL_SAPEURS = 
+{
+	first_type = 1
+	first_amount = 300
+
+	potential = {
+		is_nomadic = no
+		OR = {
+			culture_group = french
+		}
+		NOT = {
+			culture = gallo
+			culture = walloon
+			culture = arpitan
+			culture = corsican
+		}
+	}
+
+	modifier = {
+		heavy_infantry_offensive = 0.1
+		heavy_infantry_defensive = 0.3
+		heavy_infantry_morale = 0.15
+	}
+}
+
+RETTYPE_CUL_BRETON = 
+{
+	first_type = 0
+	first_amount = 375
+	second_type = 1
+	second_amount = 125
+
+	potential = {
+		is_nomadic = no
+		OR = {
+			culture = breton
+			culture = gallo
+		}
+	}
+
+	modifier = {
+		light_infantry_offensive = 0.4
+		light_infantry_morale = 0.2
+		heavy_infantry_offensive = 0.2
+		heavy_infantry_morale = 0.1
 	}
 }
 
@@ -521,257 +522,58 @@ RETTYPE_CUL_RUS =
 	}
 }
 
-RETTYPE_CUL_NORTHGER = 
+RETTYPE_CUL_HAN =
 {
-	first_type = 1
-	first_amount = 200
-	
-	potential = {
-		is_nomadic = no
-		OR = {
-			culture_group = north_germanic
-			culture = saxon
-			culture = old_saxon
-			culture = frisian
-		}
-	}
-	
-	modifier = {
-		heavy_infantry_offensive = 0.4
-		heavy_infantry_morale = 0.2
-	}
-}
-
-RETTYPE_CUL_HUNG = 
-{
-	first_type = 3
-	first_amount = 300
-	
-	potential = {
-		is_nomadic = no
-		OR = {
-			culture = hungarian
-			culture_group = west_slavic
-		}
-	}
-	
-	modifier = {
-		light_cavalry_defensive = 0.6
-		light_cavalry_morale = 0.2
-	}
-}
-
-RETTYPE_CUL_ARAB = 
-{
-	first_type = 6
+	first_type = 5
 	first_amount = 250
-	
-	special_troops = camel_cavalry
-	
-	potential = {
-		is_nomadic = no
-		culture_group = arabic
-		NOT = { culture = andalusian_arabic }
-		NOT = { culture = maghreb_arabic }
-	}
-	
-	modifier = {
-		camel_cavalry_offensive = 0.2
-		camel_cavalry_defensive = 0.2
-		camel_cavalry_morale = 0.2
-	}
-}
-
-RETTYPE_CUL_ANDALUSIAN = 
-{
-	first_type = 3
-	first_amount = 400
-
-	potential = {
-		is_nomadic = no
-		OR = {
-			culture = andalusian_arabic
-			culture = andalusian
-		}
-	}
-
-	modifier = {
-		light_cavalry_defensive = 0.4
-		light_cavalry_offensive = 0.2
-		light_cavalry_morale = 0.2
-	}
-}
-
-RETTYPE_CUL_BERBER = 
-{
-	first_type = 3
-	first_amount = 400
-
-	potential = {
-		is_nomadic = no
-		culture = maghreb_arabic
-	}
-
-	modifier = {
-		light_cavalry_offensive = 0.5
-		light_cavalry_morale = 0.3
-	}
-}
-
-RETTYPE_CUL_BYZ = 
-{
-	first_type = 4
-	first_amount = 150
-	
-	second_type = 6
-	second_amount = 100
-
-	special_troops = horse_archers
-	
-	potential = {
-		is_nomadic = no
-		culture_group = byzantine
-		NOT = { culture = coptic }
-		NOT = { culture = alan }
-		NOT = { culture = assyrian }
-		NOT = { culture = arberian }
-	}
-	
-	modifier = {
-		knights_offensive = 0.1
-		knights_defensive = 0.1
-		knights_morale = 0.2
-	}
-}
-
-RETTYPE_CUL_ETHIO = 
-{
-	first_type = 0
-	first_amount = 400
-	
-	potential = {
-		is_nomadic = no
-		culture = ethiopian
-	}
-	
-	modifier = {
-		light_infantry_offensive = 0.5
-		light_infantry_defensive = 0.3
-	}
-}
-
-RETTYPE_CUL_SOMALI = 
-{
-	first_type = 0
-	first_amount = 400
-	
-	potential = {
-		is_nomadic = no
-		culture = somali
-	}
-	
-	modifier = {
-		light_infantry_offensive = 0.4
-		light_infantry_defensive = 0.4
-	}
-}
-
-RETTYPE_CUL_W_AFR = 
-{
-	first_type = 0
-	first_amount = 400
-	
-	second_type = 5
-	second_amount = 100
-	
-	potential = {
-		is_nomadic = no
-		OR = {
-			culture_group = west_african
-			culture_group = central_african
-			culture = daju
-		}
-	}
-	
-	modifier = {
-		light_infantry_offensive = 0.6
-		light_infantry_defensive = 0.1
-		light_infantry_morale = 0.1
-	}
-}
-
-RETTYPE_CUL_SOUTH_SLA = 
-{
-	first_type = 4
-	first_amount = 100
-	
-	second_type = 3
-	second_amount = 150
-	
-	potential = {
-		is_nomadic = no
-		culture_group = south_slavic
-	}
-	
-	modifier = {
-		knights_defensive = 0.1
-		knights_morale = 0.1
-		light_cavalry_defensive = 0.2
-		light_cavalry_offensive = 0.2
-	}
-}
-
-RETTYPE_CUL_DUTCH = 
-{
-	first_type = 0
-	first_amount = 300
-	
 	second_type = 2
 	second_amount = 100
 	
 	potential = {
 		is_nomadic = no
-		culture = dutch
+		culture = han
 	}
 	
 	modifier = {
-		light_infantry_offensive = 0.2
-		light_infantry_defensive = 0.2
-		light_infantry_morale = 0.1
-		pikemen_offensive = 0.3
-		pikemen_defensive = 0.2
+		archers_offensive = 0.3
+		archers_defensive = 0.1
+		pikemen_offensive = 0.2
+		pikemen_defensive = 0.3
 		pikemen_morale = 0.1
 	}
 }
 
-RETTYPE_CUL_NAHUA = 
+RETTYPE_CUL_TIBET = 
 {
 	first_type = 0
-	first_amount = 375
-	second_type = 1
-	second_amount = 125
+	first_amount = 300
+	
+	second_type = 3
+	second_amount = 100
 	
 	potential = {
 		is_nomadic = no
-		culture = nahuatl
+		culture_group = tibetan_group
 	}
 	
 	modifier = {
-		light_infantry_offensive = 0.4
-		light_infantry_morale = 0.2
-		heavy_infantry_offensive = 0.2
-		heavy_infantry_morale = 0.1
+		light_infantry_offensive = 0.5
+		light_infantry_defensive = 0.3
+		light_infantry_morale = 0.1
+		light_cavalry_offensive = 0.2
+		light_cavalry_defensive = 0.2
+		light_cavalry_morale = 0.1
 	}
 }
 
-RETTYPE_CUL_JEWISH = 
+RETTYPE_CUL_ASSYRIAN = 
 {
 	first_type = 1
 	first_amount = 200
 	
 	potential = {
 		is_nomadic = no
-		culture_group = israelite
+		culture = assyrian
 	}
 	
 	modifier = {
@@ -780,115 +582,43 @@ RETTYPE_CUL_JEWISH =
 	}
 }
 
-RETTYPE_CUL_INDIAN = 
+RETTYPE_CUL_SAR = 
+{
+	first_type = 2
+	first_amount = 200
+	second_type = 5
+	second_amount = 200
+	
+	potential = {
+		is_nomadic = no
+		culture = sardinian
+		culture = corsican
+	}
+	
+	modifier = {
+		archers_defensive = 0.2
+		pikemen_defensive = 0.2
+		pikemen_offensive = 0.2
+		pikemen_morale = 0.4
+	}
+}
+
+RETTYPE_CUL_POR = 
 {
 	first_type = 5
-	first_amount = 200
-	second_type = 6
-	second_amount = 20
-	
-	special_troops = war_elephants
+	first_amount = 300
 	
 	potential = {
 		is_nomadic = no
 		OR = {
-			culture_group = indo_aryan_group
-			culture_group = dravidian_group
+			culture = portuguese
+			culture = azorean
+			culture = madeiran
 		}
 	}
 	
 	modifier = {
-		archers_offensive = 0.1
-		archers_defensive = 0.3
-	}
-}
-
-RETTYPE_CUL_NUBIAN = 
-{
-	first_type = 5
-	first_amount = 300
-
-	potential = {
-		is_nomadic = no
-		culture = nubian
-	}
-	
-	modifier = {
-		archers_offensive = 0.2
 		archers_defensive = 0.2
-	}
-}
-
-RETTYPE_CUL_FRA = 
-{
-	first_type = 1
-	first_amount = 200
-	
-	potential = {
-		is_nomadic = no
-		culture = old_frankish
-	}
-	
-	modifier = {
-		heavy_infantry_offensive = 0.2
-		heavy_infantry_defensive = 0.1
-		heavy_infantry_morale = 0.1
-	}
-}
-
-RETTYPE_CUL_LOM = 
-{
-	first_type = 1
-	first_amount = 300
-	
-	potential = {
-		is_nomadic = no
-		culture = lombard
-	}
-	
-	modifier = {
-		heavy_infantry_offensive = 0.1
-		heavy_infantry_morale = 0.1
-	}
-}
-
-RETTYPE_CUL_SUEBI = 
-{
-	first_type = 0
-	first_amount = 200
-	
-	second_type = 2
-	second_amount = 150
-	
-	potential = {
-		is_nomadic = no
-		culture = suebi
-	}
-	
-	modifier = {
-		light_infantry_defensive = 0.3
-		light_infantry_morale = 0.2
-		pikemen_defensive = 0.3
-		pikemen_morale = 0.2
-	}
-}
-
-RETTYPE_CUL_PICTISH = 
-{
-	first_type = 0
-	first_amount = 375
-	second_type = 5
-	second_amount = 125
-	
-	potential = {
-		is_nomadic = no
-		culture = pictish
-	}
-	
-	modifier = {
-		light_infantry_offensive = 0.3
-		light_infantry_defensive = 0.1
-		light_infantry_morale = 0.2
 		archers_offensive = 0.1
 		archers_morale = 0.1
 	}
@@ -1304,104 +1034,6 @@ HORDE_RETTYPE_EUROPE = {
 	}
 }
 
-RETTYPE_CUL_HAN =
-{
-	first_type = 5
-	first_amount = 250
-	second_type = 2
-	second_amount = 100
-	
-	potential = {
-		is_nomadic = no
-		culture = han
-	}
-	
-	modifier = {
-		archers_offensive = 0.3
-		archers_defensive = 0.1
-		pikemen_offensive = 0.2
-		pikemen_defensive = 0.3
-		pikemen_morale = 0.1
-	}
-}
-
-RETTYPE_CUL_TIBET = 
-{
-	first_type = 0
-	first_amount = 300
-	
-	second_type = 3
-	second_amount = 100
-	
-	potential = {
-		is_nomadic = no
-		culture_group = tibetan_group
-	}
-	
-	modifier = {
-		light_infantry_offensive = 0.5
-		light_infantry_defensive = 0.3
-		light_infantry_morale = 0.1
-		light_cavalry_offensive = 0.2
-		light_cavalry_defensive = 0.2
-		light_cavalry_morale = 0.1
-	}
-}
-
-RETTYPE_CUL_JURCHEN =
-{
-	first_type = 4
-	first_amount = 75
-	second_type = 3
-	second_amount = 175
-
-	potential = {
-		is_nomadic = no
-		culture = jurchen
-	}
-	
-	modifier = {
-		light_cavalry_offensive = 0.1
-		light_cavalry_morale = 0.1
-		knights_offensive = 0.1
-		knights_defensive = 0.1
-	}
-}
-
-RETTYPE_CUL_ASSYRIAN = 
-{
-	first_type = 1
-	first_amount = 200
-	
-	potential = {
-		is_nomadic = no
-		culture = assyrian
-	}
-	
-	modifier = {
-		heavy_infantry_defensive = 0.2
-		heavy_infantry_morale = 0.1
-	}
-}
-
-RETTYPE_CUL_COPTIC = 
-{
-	first_type = 2
-	first_amount = 200
-	second_type = 5
-	second_amount = 100
-
-	potential = {
-		is_nomadic = no
-		culture = coptic
-	}
-	
-	modifier = {
-		archers_defensive = 0.3
-		pikemen_defensive = 0.2
-	}
-}
-
 RETTYPE_CUL_HORSE = 
 {
 	first_type = 3
@@ -1533,29 +1165,6 @@ RETTYPE_CUL_DRAGON =
 	}
 }
 
-RETTYPE_CUL_OUTREMER = 
-{
-	first_type = 4
-	first_amount = 100
-	
-	second_type = 6
-	second_amount = 150
-	
-	special_troops = camel_cavalry
-	
-	potential = {
-		is_nomadic = no
-		culture = outremer
-	}
-	
-	modifier = {
-		camel_cavalry_offensive = 0.2
-		camel_cavalry_morale = 0.1
-		knights_offensive = 0.1
-		knights_morale = 0.1
-	}
-}
-
 RETTYPE_CUL_ARBERIAN = 
 {
 	first_type = 3
@@ -1570,46 +1179,5 @@ RETTYPE_CUL_ARBERIAN =
 		light_cavalry_defensive = 0.2
 		light_cavalry_offensive = 0.2
 		light_cavalry_morale = 0.4
-	}
-}
-
-RETTYPE_CUL_SAR = 
-{
-	first_type = 2
-	first_amount = 200
-	second_type = 5
-	second_amount = 200
-	
-	potential = {
-		is_nomadic = no
-		culture = sardinian
-	}
-	
-	modifier = {
-		archers_defensive = 0.2
-		pikemen_defensive = 0.2
-		pikemen_offensive = 0.2
-		pikemen_morale = 0.4
-	}
-}
-
-RETTYPE_CUL_POR = 
-{
-	first_type = 5
-	first_amount = 300
-	
-	potential = {
-		is_nomadic = no
-		OR = {
-			culture = portuguese
-			culture = azorean
-			culture = madeiran
-		}
-	}
-	
-	modifier = {
-		archers_defensive = 0.2
-		archers_offensive = 0.1
-		archers_morale = 0.1
 	}
 }
