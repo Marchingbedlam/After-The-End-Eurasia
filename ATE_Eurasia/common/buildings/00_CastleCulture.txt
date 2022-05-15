@@ -621,6 +621,567 @@ castle = {
 		extra_tech_building_start = 0.8
 	}
 	
+	# panzerreiter Barracks
+	ca_culture_panzerreiter_1 = {
+		desc = ca_culture_panzerreiter_1_desc
+		potential = {
+			OR = {
+				culture = low_saxon
+				culture = ossi
+				culture = upper_saxon
+				culture = sorbian
+				culture = rhenish
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+			OR = {
+				culture = low_saxon
+				culture = ossi
+				culture = upper_saxon
+				culture = sorbian
+				culture = rhenish
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0
+			ROOT = {
+			OR = {
+				culture = low_saxon
+				culture = ossi
+				culture = upper_saxon
+				culture = sorbian
+				culture = rhenish
+				}
+			}
+		}
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		knights = 15
+		knights_defensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_panzerreiter_2 = {
+		desc = ca_culture_panzerreiter_1_desc
+		potential = {
+			OR = {
+				culture = low_saxon
+				culture = ossi
+				culture = upper_saxon
+				culture = sorbian
+				culture = rhenish
+			}
+				has_building = ca_culture_panzerreiter_1
+		}
+		is_active_trigger = {
+			ROOT = {
+			OR = {
+				culture = low_saxon
+				culture = ossi
+				culture = upper_saxon
+				culture = sorbian
+				culture = rhenish
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+			OR = {
+				culture = low_saxon
+				culture = ossi
+				culture = upper_saxon
+				culture = sorbian
+				culture = rhenish
+				}
+			}
+		}
+		upgrades_from = ca_culture_panzerreiter_1
+		gold_cost = 300
+		build_time = 1095
+		knights = 20
+		knights_defensive = 0.15
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_panzerreiter_3 = {
+		desc = ca_culture_panzerreiter_1_desc
+		potential = {
+			OR = {
+				culture = low_saxon
+				culture = ossi
+				culture = upper_saxon
+				culture = sorbian
+				culture = rhenish
+			}
+				has_building = ca_culture_panzerreiter_1
+				has_building = ca_culture_panzerreiter_2
+		}
+		is_active_trigger = {
+			ROOT = {
+			OR = {
+				culture = low_saxon
+				culture = ossi
+				culture = upper_saxon
+				culture = sorbian
+				culture = rhenish
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+			OR = {
+				culture = low_saxon
+				culture = ossi
+				culture = upper_saxon
+				culture = sorbian
+				culture = rhenish
+				}
+			}
+		}
+		upgrades_from = ca_culture_panzerreiter_2
+		gold_cost = 400
+		build_time = 2190
+		knights = 25
+		knights_defensive = 0.15
+		ai_creation_factor = 99
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_panzerreiter_4 = {
+		desc = ca_culture_panzerreiter_1_desc
+		potential = {
+			OR = {
+				culture = low_saxon
+				culture = ossi
+				culture = upper_saxon
+				culture = sorbian
+				culture = rhenish
+			}
+				has_building = ca_culture_panzerreiter_1
+				has_building = ca_culture_panzerreiter_2
+				has_building = ca_culture_panzerreiter_3
+		}
+		is_active_trigger = {
+			ROOT = {
+			OR = {
+				culture = low_saxon
+				culture = ossi
+				culture = upper_saxon
+				culture = sorbian
+				culture = rhenish
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+			OR = {
+				culture = low_saxon
+				culture = ossi
+				culture = upper_saxon
+				culture = sorbian
+				culture = rhenish
+				}
+			}
+		}
+		upgrades_from = ca_culture_panzerreiter_3
+		gold_cost = 500
+		build_time = 2190
+		knights = 30
+		knights_defensive = 0.15
+		ai_creation_factor = 98
+		
+		extra_tech_building_start = 0.8
+	}
+	
+	# carabinieri Barracks
+	ca_culture_carabinieri_1 = {
+		desc = ca_culture_carabinieri_1_desc
+		potential = {
+			OR = {
+				culture = friulian
+				culture = venetian
+				culture = lombard
+				culture = piedmontese
+				culture = ligurian
+				culture = tuscan
+				culture = romagnol
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+			OR = {
+				culture = friulian
+				culture = venetian
+				culture = lombard
+				culture = piedmontese
+				culture = ligurian
+				culture = tuscan
+				culture = romagnol
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0
+			ROOT = {
+			OR = {
+				culture = friulian
+				culture = venetian
+				culture = lombard
+				culture = piedmontese
+				culture = ligurian
+				culture = tuscan
+				culture = romagnol
+				}
+			}
+		}
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		knights = 15
+		knights_offensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_carabinieri_2 = {
+		desc = ca_culture_carabinieri_1_desc
+		potential = {
+			OR = {
+				culture = friulian
+				culture = venetian
+				culture = lombard
+				culture = piedmontese
+				culture = ligurian
+				culture = tuscan
+				culture = romagnol
+			}
+				has_building = ca_culture_carabinieri_1
+		}
+		is_active_trigger = {
+			ROOT = {
+			OR = {
+				culture = friulian
+				culture = venetian
+				culture = lombard
+				culture = piedmontese
+				culture = ligurian
+				culture = tuscan
+				culture = romagnol
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+			OR = {
+				culture = friulian
+				culture = venetian
+				culture = lombard
+				culture = piedmontese
+				culture = ligurian
+				culture = tuscan
+				culture = romagnol
+				}
+			}
+		}
+		upgrades_from = ca_culture_carabinieri_1
+		gold_cost = 300
+		build_time = 1095
+		knights = 20
+		knights_offensive = 0.15
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_carabinieri_3 = {
+		desc = ca_culture_carabinieri_1_desc
+		potential = {
+			OR = {
+				culture = friulian
+				culture = venetian
+				culture = lombard
+				culture = piedmontese
+				culture = ligurian
+				culture = tuscan
+				culture = romagnol
+			}
+				has_building = ca_culture_carabinieri_1
+				has_building = ca_culture_carabinieri_2
+		}
+		is_active_trigger = {
+			ROOT = {
+			OR = {
+				culture = friulian
+				culture = venetian
+				culture = lombard
+				culture = piedmontese
+				culture = ligurian
+				culture = tuscan
+				culture = romagnol
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+			OR = {
+				culture = friulian
+				culture = venetian
+				culture = lombard
+				culture = piedmontese
+				culture = ligurian
+				culture = tuscan
+				culture = romagnol
+				}
+			}
+		}
+		upgrades_from = ca_culture_carabinieri_2
+		gold_cost = 400
+		build_time = 2190
+		knights = 25
+		knights_offensive = 0.15
+		ai_creation_factor = 99
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_carabinieri_4 = {
+		desc = ca_culture_carabinieri_1_desc
+		potential = {
+			OR = {
+				culture = friulian
+				culture = venetian
+				culture = lombard
+				culture = piedmontese
+				culture = ligurian
+				culture = tuscan
+				culture = romagnol
+			}
+				has_building = ca_culture_carabinieri_1
+				has_building = ca_culture_carabinieri_2
+				has_building = ca_culture_carabinieri_3
+		}
+		is_active_trigger = {
+			ROOT = {
+			OR = {
+				culture = friulian
+				culture = venetian
+				culture = lombard
+				culture = piedmontese
+				culture = ligurian
+				culture = tuscan
+				culture = romagnol
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+			OR = {
+				culture = friulian
+				culture = venetian
+				culture = lombard
+				culture = piedmontese
+				culture = ligurian
+				culture = tuscan
+				culture = romagnol
+				}
+			}
+		}
+		upgrades_from = ca_culture_carabinieri_3
+		gold_cost = 500
+		build_time = 2190
+		knights = 30
+		knights_offensive = 0.15
+		ai_creation_factor = 98
+		
+		extra_tech_building_start = 0.8
+	}
+	
+	# carabinieri Barracks
+	ca_culture_carabinieri_1 = {
+		desc = ca_culture_carabinieri_1_desc
+		potential = {
+			OR = {
+				culture = umbrian
+				culture = neapolitan
+				culture = sardinian
+				culture = sicilian
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+			OR = {
+				culture = umbrian
+				culture = neapolitan
+				culture = sardinian
+				culture = sicilian
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0
+			ROOT = {
+			OR = {
+				culture = umbrian
+				culture = neapolitan
+				culture = sardinian
+				culture = sicilian
+				}
+			}
+		}
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		pikemen = 15
+		light_infantry = 30
+		light_infantry_offensive = 0.075
+		pikemen_offensive = 0.075
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_carabinieri_2 = {
+		desc = ca_culture_carabinieri_1_desc
+		potential = {
+			OR = {
+				culture = umbrian
+				culture = neapolitan
+				culture = sardinian
+				culture = sicilian
+			}
+				has_building = ca_culture_carabinieri_1
+		}
+		is_active_trigger = {
+			ROOT = {
+			OR = {
+				culture = umbrian
+				culture = neapolitan
+				culture = sardinian
+				culture = sicilian
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+			OR = {
+				culture = umbrian
+				culture = neapolitan
+				culture = sardinian
+				culture = sicilian
+				}
+			}
+		}
+		upgrades_from = ca_culture_carabinieri_1
+		gold_cost = 300
+		build_time = 1095
+		pikemen = 20
+		light_infantry = 40
+		light_infantry_offensive = 0.075
+		pikemen_offensive = 0.075
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_carabinieri_3 = {
+		desc = ca_culture_carabinieri_1_desc
+		potential = {
+			OR = {
+				culture = umbrian
+				culture = neapolitan
+				culture = sardinian
+				culture = sicilian
+			}
+				has_building = ca_culture_carabinieri_1
+				has_building = ca_culture_carabinieri_2
+		}
+		is_active_trigger = {
+			ROOT = {
+			OR = {
+				culture = umbrian
+				culture = neapolitan
+				culture = sardinian
+				culture = sicilian
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+			OR = {
+				culture = umbrian
+				culture = neapolitan
+				culture = sardinian
+				culture = sicilian
+				}
+			}
+		}
+		upgrades_from = ca_culture_carabinieri_2
+		gold_cost = 400
+		build_time = 2190
+		pikemen = 25
+		light_infantry = 50
+		light_infantry_offensive = 0.075
+		pikemen_offensive = 0.075
+		ai_creation_factor = 99
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_carabinieri_4 = {
+		desc = ca_culture_carabinieri_1_desc
+		potential = {
+			OR = {
+				culture = umbrian
+				culture = neapolitan
+				culture = sardinian
+				culture = sicilian
+			}
+				has_building = ca_culture_carabinieri_1
+				has_building = ca_culture_carabinieri_2
+				has_building = ca_culture_carabinieri_3
+		}
+		is_active_trigger = {
+			ROOT = {
+			OR = {
+				culture = umbrian
+				culture = neapolitan
+				culture = sardinian
+				culture = sicilian
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+			OR = {
+				culture = umbrian
+				culture = neapolitan
+				culture = sardinian
+				culture = sicilian
+				}
+			}
+		}
+		upgrades_from = ca_culture_carabinieri_3
+		gold_cost = 500
+		build_time = 2190
+		pikemen = 30
+		light_infantry = 60
+		light_infantry_offensive = 0.075
+		pikemen_offensive = 0.075
+		
+		ai_creation_factor = 98
+		
+		extra_tech_building_start = 0.8
+	}
+	
 	# Gewalthaufen Barracks
 	ca_culture_gewalthaufen_1 = {
 		desc = ca_culture_gewalthaufen_1_desc
@@ -1805,6 +2366,381 @@ castle = {
 		heavy_infantry = 60
 		heavy_infantry_offensive = 0.1
 		heavy_infantry_defensive = 0.1
+		ai_creation_factor = 98
+		
+		extra_tech_building_start = 0.8
+	}
+	
+	# sipahi Barracks
+	ca_culture_sipahi_1 = {
+		desc = ca_culture_sipahi_1_desc
+		potential = {
+			OR = {
+				culture = rumelian
+				culture = west_anatolian
+				culture = central_anatolian
+				culture = toros_mountain
+				culture = black_sea
+				culture = gagauz
+				culture = romioi
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+			OR = {
+				culture = rumelian
+				culture = west_anatolian
+				culture = central_anatolian
+				culture = toros_mountain
+				culture = black_sea
+				culture = gagauz
+				culture = romioi
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0
+			ROOT = {
+			OR = {
+				culture = rumelian
+				culture = west_anatolian
+				culture = central_anatolian
+				culture = toros_mountain
+				culture = black_sea
+				culture = gagauz
+				culture = romioi
+				}
+			}
+		}
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		light_cavalry = 15
+		horse_archers = 15
+		light_cavalry_offensive = 0.1
+		light_cavalry_defensive = 0.1
+		light_cavalry_morale = 0.1
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_sipahi_2 = {
+		desc = ca_culture_sipahi_1_desc
+		potential = {
+			OR = {
+				culture = rumelian
+				culture = west_anatolian
+				culture = central_anatolian
+				culture = toros_mountain
+				culture = black_sea
+				culture = gagauz
+				culture = romioi
+			}
+				has_building = ca_culture_sipahi_1
+		}
+		is_active_trigger = {
+			ROOT = {
+			OR = {
+				culture = rumelian
+				culture = west_anatolian
+				culture = central_anatolian
+				culture = toros_mountain
+				culture = black_sea
+				culture = gagauz
+				culture = romioi
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+			OR = {
+				culture = rumelian
+				culture = west_anatolian
+				culture = central_anatolian
+				culture = toros_mountain
+				culture = black_sea
+				culture = gagauz
+				culture = romioi
+				}
+			}
+		}
+		upgrades_from = ca_culture_sipahi_1
+		gold_cost = 300
+		build_time = 1095
+		light_cavalry = 20
+		horse_archers = 20
+		light_cavalry_offensive = 0.1
+		light_cavalry_defensive = 0.1
+		light_cavalry_morale = 0.1
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_sipahi_3 = {
+		desc = ca_culture_sipahi_1_desc
+		potential = {
+			OR = {
+				culture = rumelian
+				culture = west_anatolian
+				culture = central_anatolian
+				culture = toros_mountain
+				culture = black_sea
+				culture = gagauz
+				culture = romioi
+			}
+				has_building = ca_culture_sipahi_1
+				has_building = ca_culture_sipahi_2
+		}
+		is_active_trigger = {
+			ROOT = {
+			OR = {
+				culture = rumelian
+				culture = west_anatolian
+				culture = central_anatolian
+				culture = toros_mountain
+				culture = black_sea
+				culture = gagauz
+				culture = romioi
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+			OR = {
+				culture = rumelian
+				culture = west_anatolian
+				culture = central_anatolian
+				culture = toros_mountain
+				culture = black_sea
+				culture = gagauz
+				culture = romioi
+				}
+			}
+		}
+		upgrades_from = ca_culture_sipahi_2
+		gold_cost = 400
+		build_time = 2190
+		light_cavalry = 25
+		horse_archers = 25
+		light_cavalry_offensive = 0.1
+		light_cavalry_defensive = 0.1
+		light_cavalry_morale = 0.1
+		ai_creation_factor = 99
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_sipahi_4 = {
+		desc = ca_culture_sipahi_1_desc
+		potential = {
+			OR = {
+				culture = rumelian
+				culture = west_anatolian
+				culture = central_anatolian
+				culture = toros_mountain
+				culture = black_sea
+				culture = gagauz
+				culture = romioi
+			}
+				has_building = ca_culture_sipahi_1
+				has_building = ca_culture_sipahi_2
+				has_building = ca_culture_sipahi_3
+		}
+		is_active_trigger = {
+			ROOT = {
+			OR = {
+				culture = rumelian
+				culture = west_anatolian
+				culture = central_anatolian
+				culture = toros_mountain
+				culture = black_sea
+				culture = gagauz
+				culture = romioi
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+			OR = {
+				culture = rumelian
+				culture = west_anatolian
+				culture = central_anatolian
+				culture = toros_mountain
+				culture = black_sea
+				culture = gagauz
+				culture = romioi
+				}
+			}
+		}
+		upgrades_from = ca_culture_sipahi_3
+		gold_cost = 500
+		build_time = 2190
+		light_cavalry = 30
+		horse_archers = 30
+		light_cavalry_offensive = 0.1
+		light_cavalry_defensive = 0.1
+		light_cavalry_morale = 0.1
+		
+		ai_creation_factor = 98
+		
+		extra_tech_building_start = 0.8
+	}
+	
+	# peshmerga Barracks
+	ca_culture_peshmerga_1 = {
+		desc = ca_culture_peshmerga_1_desc
+		potential = {
+			OR = {
+				culture = kurdish
+				culture = zaza
+				culture = gorani
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+			OR = {
+				culture = kurdish
+				culture = zaza
+				culture = gorani
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0
+			ROOT = {
+			OR = {
+				culture = kurdish
+				culture = zaza
+				culture = gorani
+				}
+			}
+		}
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		light_infantry = 30
+		heavy_infantry = 15
+		light_infantry_morale = 0.15
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_peshmerga_2 = {
+		desc = ca_culture_peshmerga_1_desc
+		potential = {
+			OR = {
+				culture = kurdish
+				culture = zaza
+				culture = gorani
+			}
+				has_building = ca_culture_peshmerga_1
+		}
+		is_active_trigger = {
+			ROOT = {
+			OR = {
+				culture = kurdish
+				culture = zaza
+				culture = gorani
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+			OR = {
+				culture = kurdish
+				culture = zaza
+				culture = gorani
+				}
+			}
+		}
+		upgrades_from = ca_culture_peshmerga_1
+		gold_cost = 300
+		build_time = 1095
+		light_infantry = 40
+		heavy_infantry = 20
+		light_infantry_morale = 0.15
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_peshmerga_3 = {
+		desc = ca_culture_peshmerga_1_desc
+		potential = {
+			OR = {
+				culture = kurdish
+				culture = zaza
+				culture = gorani
+			}
+				has_building = ca_culture_peshmerga_1
+				has_building = ca_culture_peshmerga_2
+		}
+		is_active_trigger = {
+			ROOT = {
+			OR = {
+				culture = kurdish
+				culture = zaza
+				culture = gorani
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+			OR = {
+				culture = kurdish
+				culture = zaza
+				culture = gorani
+				}
+			}
+		}
+		upgrades_from = ca_culture_peshmerga_2
+		gold_cost = 400
+		build_time = 2190
+		light_infantry = 50
+		heavy_infantry = 25
+		light_infantry_morale = 0.15
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_peshmerga_4 = {
+		desc = ca_culture_peshmerga_1_desc
+		potential = {
+			OR = {
+				culture = kurdish
+				culture = zaza
+				culture = gorani
+			}
+				has_building = ca_culture_peshmerga_1
+				has_building = ca_culture_peshmerga_2
+				has_building = ca_culture_peshmerga_3
+		}
+		is_active_trigger = {
+			ROOT = {
+			OR = {
+				culture = kurdish
+				culture = zaza
+				culture = gorani
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+			OR = {
+				culture = kurdish
+				culture = zaza
+				culture = gorani
+				}
+			}
+		}
+		upgrades_from = ca_culture_peshmerga_3
+		gold_cost = 500
+		build_time = 2190
+		light_infantry = 60
+		heavy_infantry = 30
+		light_infantry_morale = 0.15
+		
 		ai_creation_factor = 98
 		
 		extra_tech_building_start = 0.8

@@ -456,6 +456,114 @@ RETTYPE_CUL_GEWALTHAUFEN =
 	}
 }
 
+RETTYPE_CUL_PANZERREITER = 
+{
+	first_type = 4
+	first_amount = 150
+
+	potential = {
+		is_nomadic = no
+		OR = {
+			culture = low_saxon
+			culture = ossi
+			culture = upper_saxon
+			culture = sorbian
+			culture = rhenish
+		}
+	}
+
+	modifier = {
+		knights_morale = 0.25
+		knights_offensive = 0.1
+		knights_defensive = 0.15
+	}
+}
+
+RETTYPE_CUL_CARABINIERI = 
+{
+	first_type = 4
+	first_amount = 100
+	second_type = 3
+	second_amount = 25
+
+	potential = {
+		is_nomadic = no
+		OR = {
+			culture = friulian
+			culture = venetian
+			culture = lombard
+			culture = piedmontese
+			culture = ligurian
+			culture = tuscan
+			culture = romagnol
+		}
+	}
+
+	modifier = {
+		knights_morale = 0.25
+		knights_offensive = 0.15
+		knights_defensive = 0.1
+	}
+}
+
+RETTYPE_CUL_BERSAGLIERI = 
+{
+	first_type = 0
+	first_amount = 200
+	second_type = 2
+	second_amount = 100
+
+	potential = {
+		is_nomadic = no
+		OR = {
+			culture = umbrian
+			culture = neapolitan
+			culture = sardinian
+			culture = sicilian
+		}
+	}
+
+	modifier = {
+		light_infantry_defensive = 0.1
+		light_infantry_offensive = 0.3
+		light_infantry_morale = 0.25
+		pikemen_defensive = 0.05
+		pikemen_offensive = 0.3
+		pikemen_morale = 0.25
+	}
+}
+
+RETTYPE_CUL_SIPAHI = 
+{
+	first_type = 3
+	first_amount = 200
+	second_type = 6
+	second_amount = 75
+
+	special_troops = horse_archers
+
+	potential = {
+		is_nomadic = no
+		OR = {
+			culture = rumelian
+			culture = west_anatolian
+			culture = central_anatolian
+			culture = toros_mountain
+			culture = black_sea
+			culture = gagauz
+			culture = romioi
+		}
+	}
+
+	modifier = {
+		light_cavalry_defensive = 0.1
+		light_cavalry_offensive = 0.3
+		light_cavalry_morale = 0.1
+		horse_archers_offensive = 0.1
+		horse_archers_morale = 0.1
+	}
+}
+
 RETTYPE_CUL_SAPEURS = 
 {
 	first_type = 1
@@ -500,6 +608,31 @@ RETTYPE_CUL_BRETON =
 		light_infantry_morale = 0.2
 		heavy_infantry_offensive = 0.2
 		heavy_infantry_morale = 0.1
+	}
+}
+
+RETTYPE_CUL_PESHMERGA = 
+{
+	first_type = 0
+	first_amount = 375
+	second_type = 5
+	second_amount = 125
+
+	potential = {
+		is_nomadic = no
+		OR = {
+			culture = kurdish
+			culture = zaza
+			culture = gorani
+		}
+	}
+
+	modifier = {
+		light_infantry_offensive = 0.1
+		light_infantry_defensive = 0.2
+		light_infantry_morale = 0.3
+		archers_offensive = 0.1
+		archers_morale = 0.1
 	}
 }
 

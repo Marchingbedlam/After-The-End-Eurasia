@@ -20359,43 +20359,245 @@ coat_of_arms = {
 	}
 }
 
-2053000 = { name="Tseberte" culture=ossetian}
-2053001 = { name="Æbati" culture=ossetian}
-2053002 = { name="Æguyzarty" culture=ossetian}
-2053003 = { name="Abajty" culture=ossetian}
-2053004 = { name="Bitarty" culture=ossetian}
-2053005 = { name="Berojty" culture=ossetian}
-2053006 = { name="Cherchesty" culture=ossetian}
-2053007 = { name="Džanajty" culture=ossetian}
-2053008 = { name="Dzægojty" culture=ossetian}
-2053009 = { name="Dudaraty" culture=ossetian}
-2053010 = { name="Gassity" culture=ossetian}
-2053011 = { name="Gæbulty" culture=ossetian}
-2053012 = { name="Gozymty" culture=ossetian}
-2053013 = { name="Gæzdænty" culture=ossetian}
-2053014 = { name="Gætæhty" culture=ossetian}
-2053015 = { name="Gassity" culture=ossetian}
-2053016 = { name="Guriaty" culture=ossetian}
-2053017 = { name="Gergity" culture=ossetian}
-2053018 = { name="Gæzzaty" culture=ossetian}
-2053019 = { name="Haraty" culture=ossetian}
-2053020 = { name="Kaloty" culture=ossetian}
-2053021 = { name="Kocojty" culture=ossetian}
-2053022 = { name="Košty" culture=ossetian}
-2053023 = { name="Hetægkaty" culture=ossetian}
-2053024 = { name="Huylymbegty" culture=ossetian}
-2053025 = { name="Kuduhty" culture=ossetian}
-2053026 = { name="Mamsyraty" culture=ossetian}
-2053027 = { name="Plity" culture=ossetian}
-2053028 = { name="Tedety" culture=ossetian}
-2053029 = { name="Tajmazty" culture=ossetian}
-2053030 = { name="Tokaty" culture=ossetian}
-2053031 = { name="Tybylty" culture=ossetian}
-2053032 = { name="Tughanty" culture=ossetian}
-2053033 = { name="Cærikhaty" culture=ossetian}
-2053034 = { name="Zændžiaty" culture=ossetian}
-2053035 = { name="Laliev" culture=ossetian used_for_random=no}
-2053036 = { name="Yukio" culture=ossetian used_for_random=no}
+2053000 = { name="Ælborty" culture=ossetian }
+2053001 = { name="Bagin" culture=ossetian }
+2053002 = { name="Fadzayty" culture=ossetian }
+2053003 = { name="Khædartsaty" culture=ossetian }
+2053004 = { name="Abayty" culture=ossetian }
+2053005 = { name="Vitarty" culture=ossetian }
+2053006 = { name="Dawyraty" culture=ossetian }
+2053007 = { name="Zassety" culture=ossetian }
+2053008 = { name="Kasaty" culture=ossetian } 
+2053009 = { name="Legkoyty" culture=ossetian }
+2053010 = { name="Mamsyraty" culture=ossetian }
+2053011 = { name="Takhoyty" culture=ossetian }
+2053012 = { name="Tusk'aty" culture=ossetian }
+2053013 = { name="Tykhostaty" culture=ossetian }
+2053014 = { name="Wyrtaty" culture=ossetian }
+2053015 = { name="Khæbælaty" culture=ossetian }
+2053016 = { name="Khwybiaty" culture=ossetian }
+2053017 = { name="Khody" culture=ossetian }
+2053018 = { name="Khabytsy" culture=ossetian } 
+2053019 = { name="Qæbysty" culture=ossetian }
+2053020 = { name="Khetægkaty" culture=ossetian }
+2053021 = { name="Ælbegaty" culture=ossetian }
+2053022 = { name="Khosty" culture=ossetian }
+2053023 = { name="Æbaty" culture=ossetian }
+2053024 = { name="Ægayty" culture=ossetian }
+2053025 = { name="Æghwyzarty" culture=ossetian }
+2053026 = { name="Æmbalty" culture=ossetian }
+2053027 = { name="Abatsiaty" culture=ossetian }
+2053028 = { name="Aghnaty" culture=ossetian } 
+2053029 = { name="Adyrkhaty" culture=ossetian }
+2053030 = { name="Aydarty" culture=ossetian }
+2053031 = { name="Aylarty" culture=ossetian }
+2053032 = { name="Ak'waty" culture=ossetian }
+2053033 = { name="Bædoaty" culture=ossetian }
+2053034 = { name="Andiaty" culture=ossetian }
+2053035 = { name="Ardasenty" culture=ossetian used_for_random=no}
+2053036 = { name="Bæzzaty" culture=ossetian used_for_random=no}
+2053037 = { name="Bæroyty" culture=ossetian }
+2053038 = { name="Babochity" culture=ossetian } 
+2053039 = { name="Bagaty" culture=ossetian }
+2053040 = { name="Baghæraty" culture=ossetian }
+2053041 = { name="Bayaty" culture=ossetian }
+2053042 = { name="Baraqty" culture=ossetian }
+2053043 = { name="Basity" culture=ossetian }
+2053044 = { name="Baqaty" culture=ossetian }
+2053045 = { name="Bzarty" culture=ossetian }
+2053046 = { name="Bestawty" culture=ossetian }
+2053047 = { name="Bek'oyty" culture=ossetian }
+2053048 = { name="Bekkwyzarty" culture=ossetian } 
+2053049 = { name="Bedoyty" culture=ossetian }
+2053050 = { name="Biazyrty" culture=ossetian }
+2053051 = { name="Bibylty" culture=ossetian }
+2053052 = { name="Bilaonty" culture=ossetian }
+2053053 = { name="Bicherakhty" culture=ossetian }
+2053054 = { name="Bitsaty" culture=ossetian }
+2053055 = { name="Blity" culture=ossetian }
+2053056 = { name="Bryt'iaty" culture=ossetian }
+2053057 = { name="Bulatsaty" culture=ossetian }
+2053058 = { name="Bulk'aty" culture=ossetian } 
+2053059 = { name="Buraty" culture=ossetian }
+2053060 = { name="Butaty" culture=ossetian }
+2053061 = { name="Byghwylty" culture=ossetian }
+2053062 = { name="Gæbæraty" culture=ossetian }
+2053063 = { name="Gæbulty" culture=ossetian }
+2053064 = { name="Gæjity" culture=ossetian }
+2053065 = { name="Gædiaty" culture=ossetian }
+2053066 = { name="Gæzdænty" culture=ossetian }
+2053067 = { name="Gæzzaty" culture=ossetian }
+2053068 = { name="Gætægty" culture=ossetian } 
+2053069 = { name="Gabety" culture=ossetian }
+2053070 = { name="Gabysaty" culture=ossetian }
+2053071 = { name="Gagloyty" culture=ossetian }
+2053072 = { name="Gadaty" culture=ossetian }
+2053073 = { name="Galaty" culture=ossetian }
+2053074 = { name="Galwanty" culture=ossetian }
+2053075 = { name="Gassety" culture=ossetian }
+2053076 = { name="Gassity" culture=ossetian }
+2053077 = { name="Gatety" culture=ossetian }
+2053078 = { name="Gatuty" culture=ossetian } 
+2053079 = { name="Gergity" culture=ossetian }
+2053080 = { name="Gogunity" culture=ossetian }
+2053081 = { name="Gojysaty" culture=ossetian }
+2053082 = { name="Gozymty" culture=ossetian }
+2053083 = { name="Goloty" culture=ossetian }
+2053084 = { name="Gwydiaty" culture=ossetian }
+2053085 = { name="Gusalty" culture=ossetian }
+2053086 = { name="Gulaty" culture=ossetian }
+2053087 = { name="Gulkaty" culture=ossetian }
+2053088 = { name="Gwætsælty" culture=ossetian } 
+2053089 = { name="Gwyriaty" culture=ossetian }
+2053090 = { name="Gwyrts'yty" culture=ossetian }
+2053091 = { name="Darchity" culture=ossetian }
+2053092 = { name="Gwytsmæzty" culture=ossetian }
+2053093 = { name="Jigolaty" culture=ossetian }
+2053094 = { name="Jioty" culture=ossetian }
+2053095 = { name="Jusoyty" culture=ossetian }
+2053096 = { name="Jykkayty" culture=ossetian }
+2053097 = { name="Dzæghoyty" culture=ossetian }
+2053098 = { name="Dzabolaty" culture=ossetian } 
+2053099 = { name="Dzarasaty" culture=ossetian }
+2053100 = { name="Dzasokhty" culture=ossetian }
+2053101 = { name="Dzattiaty" culture=ossetian }
+2053102 = { name="Dzakhaty" culture=ossetian }
+2053103 = { name="Dzesty" culture=ossetian }
+2053104 = { name="Dzioyty" culture=ossetian }
+2053105 = { name="Dzitstsoyty" culture=ossetian }
+2053106 = { name="Dzobelaty" culture=ossetian }
+2053107 = { name="Dzugaty" culture=ossetian }
+2053108 = { name="Dzuqaty" culture=ossetian }
+2053109 = { name="Dzuttægaty" culture=ossetian }
+2053110 = { name="Dzutstsaty" culture=ossetian }
+2053111 = { name="Didarty" culture=ossetian }
+2053112 = { name="Doyyaty" culture=ossetian }
+2053113 = { name="Dudaraty" culture=ossetian }
+2053114 = { name="Dudiaty" culture=ossetian }
+2053115 = { name="Dyghwyzty" culture=ossetian }
+2053116 = { name="Edzity" culture=ossetian }
+2053117 = { name="Zænjiaty" culture=ossetian }
+2053118 = { name="Kaloty" culture=ossetian }
+2053119 = { name="Kobesty" culture=ossetian }
+2053120 = { name="Kodzyrty" culture=ossetian }
+2053121 = { name="Kozaty" culture=ossetian }
+2053122 = { name="Kokoyty" culture=ossetian }
+2053123 = { name="Kolyty" culture=ossetian }
+2053124 = { name="Kotsoyty" culture=ossetian }
+2053125 = { name="Kotsty" culture=ossetian }
+2053126 = { name="Kochysaty" culture=ossetian }
+2053127 = { name="Kwchity" culture=ossetian }
+2053128 = { name="Ktsoyty" culture=ossetian }
+2053129 = { name="K'oniaty" culture=ossetian }
+2053130 = { name="K'abolaty" culture=ossetian }
+2053131 = { name="K'arjiaty" culture=ossetian }
+2053132 = { name="K'ozonty" culture=ossetian }
+2053133 = { name="K'wbalty" culture=ossetian }
+2053134 = { name="K'wdukty" culture=ossetian }
+2053135 = { name="K'wsraty" culture=ossetian }
+2053136 = { name="Lokhty" culture=ossetian }
+2053137 = { name="Mærghity" culture=ossetian }
+2053138 = { name="Mækhæmætty" culture=ossetian }
+2053139 = { name="Magkæty" culture=ossetian }
+2053140 = { name="Maqoty" culture=ossetian }
+2053141 = { name="Medoyty" culture=ossetian }
+2053142 = { name="Mildzykhty" culture=ossetian }
+2053143 = { name="Morgwaty" culture=ossetian }
+2053144 = { name="Myrzaganty" culture=ossetian }
+2053145 = { name="Mysykaty" culture=ossetian }
+2053146 = { name="Nayfonty" culture=ossetian }
+2053147 = { name="Nanity" culture=ossetian }
+2053148 = { name="Oghwaty" culture=ossetian }
+2053149 = { name="Pagæty" culture=ossetian }
+2053150 = { name="Plity" culture=ossetian }
+2053151 = { name="Pukhaty" culture=ossetian }
+2053152 = { name="Ræmonaty" culture=ossetian }
+2053153 = { name="Sælbity" culture=ossetian }
+2053154 = { name="Sabanty" culture=ossetian }
+2053155 = { name="Sagkaty" culture=ossetian }
+2053156 = { name="Salamty" culture=ossetian }
+2053157 = { name="Salqazanty" culture=ossetian }
+2053158 = { name="Sanaty" culture=ossetian }
+2053159 = { name="Sanaqoty" culture=ossetian }
+2053160 = { name="Sawlokhty" culture=ossetian }
+2053161 = { name="Sech'ynaty" culture=ossetian }
+2053162 = { name="Sidaqaty" culture=ossetian }
+2053163 = { name="Siwk'aty" culture=ossetian }
+2053164 = { name="Sottity" culture=ossetian }
+2053165 = { name="Sokhity" culture=ossetian }
+2053166 = { name="Tadtaty" culture=ossetian }
+2053167 = { name="Taymazty" culture=ossetian }
+2053168 = { name="Tamaty" culture=ossetian }
+2053169 = { name="Tawtiaty" culture=ossetian }
+2053170 = { name="Taqazty" culture=ossetian }
+2053171 = { name="Tedety" culture=ossetian }
+2053171 = { name="Temyrkhanty" culture=ossetian }
+2053172 = { name="Tmenaty" culture=ossetian }
+2053173 = { name="Togyzty" culture=ossetian }
+2053174 = { name="Tokaty" culture=ossetian }
+2053175 = { name="Tomayty" culture=ossetian }
+2053176 = { name="Torchynaty" culture=ossetian }
+2053177 = { name="Totraty" culture=ossetian }
+2053178 = { name="Tokhty" culture=ossetian }
+2053179 = { name="Twaty" culture=ossetian }
+2053180 = { name="Tughanty" culture=ossetian }
+2053181 = { name="T'ekhty" culture=ossetian }
+2053182 = { name="Tybylty" culture=ossetian }
+2053183 = { name="Tylattaty" culture=ossetian }
+2053184 = { name="Walyty" culture=ossetian }
+2053185 = { name="Wanety" culture=ossetian }
+2053186 = { name="Warziaty" culture=ossetian }
+2053187 = { name="Wataty" culture=ossetian }
+2053188 = { name="Færniaty" culture=ossetian }
+2053189 = { name="Fidaraty" culture=ossetian }
+2053190 = { name="Friaty" culture=ossetian }
+2053191 = { name="Khæmytsaty" culture=ossetian }
+2053192 = { name="Khabæty" culture=ossetian }
+2053193 = { name="Khayty" culture=ossetian }
+2053194 = { name="Khakhanty" culture=ossetian }
+2053195 = { name="Khatsyrty" culture=ossetian }
+2053196 = { name="Khozity" culture=ossetian }
+2053197 = { name="Khosity" culture=ossetian }
+2053198 = { name="Khosonty" culture=ossetian }
+2053199 = { name="Khostyk'oty" culture=ossetian }
+2053200 = { name="Khwydiaty" culture=ossetian }
+2053201 = { name="Qætsmæzty" culture=ossetian }
+2053202 = { name="Qabanty" culture=ossetian }
+2053203 = { name="Qazity" culture=ossetian }
+2053204 = { name="Qaytmazty" culture=ossetian }
+2053205 = { name="Qayttaty" culture=ossetian }
+2053206 = { name="Qaytyqty" culture=ossetian }
+2053207 = { name="Qamberdiaty" culture=ossetian }
+2053208 = { name="Qambolty" culture=ossetian }
+2053209 = { name="Qantemyraty" culture=ossetian }
+2053210 = { name="Qanyqwaty" culture=ossetian }
+2053211 = { name="Qaratsaty" culture=ossetian }
+2053212 = { name="Qodzaty" culture=ossetian }
+2053213 = { name="Qoroty" culture=ossetian }
+2053214 = { name="Qotayty" culture=ossetian }
+2053215 = { name="Qwysaty" culture=ossetian }
+2053216 = { name="Qwylaty" culture=ossetian }
+2053217 = { name="Tsæbolty" culture=ossetian }
+2053218 = { name="Tsægæraty" culture=ossetian }
+2053219 = { name="Tsægolty" culture=ossetian }
+2053220 = { name="Tsækulaty" culture=ossetian }
+2053221 = { name="Tsælykkaty" culture=ossetian }
+2053222 = { name="Tsæraty" culture=ossetian }
+2053223 = { name="Tsærgæsty" culture=ossetian }
+2053224 = { name="Tsærik'aty" culture=ossetian }
+2053225 = { name="Tsæruk'aty" culture=ossetian }
+2053226 = { name="Tsghoty" culture=ossetian }
+2053227 = { name="Tsomartaty" culture=ossetian }
+2053228 = { name="Tsopanaty" culture=ossetian }
+2053229 = { name="Tsotsity" culture=ossetian }
+2053230 = { name="Ts'ækhilty" culture=ossetian }
+2053231 = { name="Tsybyrty" culture=ossetian }
+2053232 = { name="Tsykhwyrbaty" culture=ossetian }
+2053233 = { name="Chejemty" culture=ossetian }
+2053234 = { name="Chelækhsaty" culture=ossetian }
+2053235 = { name="Cheldyty" culture=ossetian }
+2053236 = { name="Cherchesty" culture=ossetian }
+2053237 = { name="Chekhoyty" culture=ossetian }
 
 2054000 = { name="Ismayil" culture=azeri}
 2054001 = { name="Kärim" culture=azeri}
@@ -23666,6 +23868,34 @@ coat_of_arms = {
 2076043 = { name="Maciev" culture=nakh }
 2076044 = { name="Özdemiry" culture=nakh used_for_random=no}
 2076045 = { name="Gendargenoevsky" culture=nakh used_for_random=no}
+2076046 = { name="Jabduraxmaniyn" culture=nakh }
+2076047 = { name="Mamakayev" culture=nakh }
+2076048 = { name="Xasin" culture=nakh }
+2076049 = { name="Axmadov" culture=nakh }
+2076050 = { name="Xaraçoyn" culture=nakh }
+2076051 = { name="Shelara" culture=nakh }
+2076052 = { name="Çeçenski" culture=nakh }
+2076053 = { name="Benoyn" culture=nakh }
+2076054 = { name="Borça" culture=nakh }
+2076055 = { name="Garsiyev" culture=nakh }
+2076056 = { name="Aydamirov" culture=nakh }
+2076057 = { name="Dzhambulatin" culture=nakh }
+2076058 = { name="Bakayev" culture=nakh } 
+2076059 = { name="Israilan" culture=nakh }
+2076060 = { name="Bersankhant" culture=nakh }
+2076061 = { name="Bachki" culture=nakh }
+2076062 = { name="Sagayn" culture=nakh }
+2076063 = { name="Özdarbin" culture=nakh }
+2076064 = { name="Nuradilan" culture=nakh }
+2076065 = { name="Idigan" culture=nakh }
+2076066 = { name="Dzhandaran" culture=nakh }
+2076067 = { name="Alimsultanov" culture=nakh }
+2076068 = { name="Ovxadov" culture=nakh } 
+2076069 = { name="Jumari" culture=nakh }
+2076070 = { name="Xazhimuradan" culture=nakh }
+2076071 = { name="Visitan" culture=nakh }
+2076072 = { name="Mazayev" culture=nakh }
+2076073 = { name="Vagapgeran" culture=nakh }
 
 2077000 = { name="Popa" culture=moldovan }
 2077001 = { name="Popescu" culture=moldovan }
