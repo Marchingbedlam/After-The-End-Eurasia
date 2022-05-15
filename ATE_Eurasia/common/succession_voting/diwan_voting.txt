@@ -11,8 +11,13 @@ familial_elective = {
 			value = 20
 			age = 16
 			FROMFROM = { holder_scope = { is_parent_of = ROOT } }
-			NOT = {
+			if = {
 				is_female = yes
+				religion = ruhi
+			}
+			else_if = {
+				NOT = { religion = ruhi }
+				NOT = { is_female = yes }
 			}
 		}
 		additive_modifier = { #Relatives of the Current Sultan
@@ -20,8 +25,13 @@ familial_elective = {
 			FROMFROM = {
 				holder_scope = { dynasty = ROOT } 
 				NOT = {holder_scope = { is_parent_of = ROOT } }
-				NOT = {
+				if = {
 					is_female = yes
+					religion = ruhi
+				}
+				else_if = {
+					NOT = { religion = ruhi }
+					NOT = { is_female = yes }
 				}
 			}
 		}
