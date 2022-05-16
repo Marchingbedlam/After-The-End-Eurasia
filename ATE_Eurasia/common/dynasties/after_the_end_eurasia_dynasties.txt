@@ -32766,7 +32766,19 @@ coat_of_arms = {
 2220050 = { name="Møller" culture="ostlending" }
 2220051 = { name="Nordraak" culture="ostlending" }
 2220052 = { name="Skaugum" culture="ostlending" }
-2220053 = { name="Prøysen" culture="ostlending" }
+2220053 = { name="Prøysen" culture="ostlending" 
+	coat_of_arms = { 
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 16
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2220054 = { name="Krag-Jørgensen" culture="ostlending" }
 2220055 = { name="Bjørneboe" culture="ostlending" }
 2220056 = { name="Tretelgja" culture="ostlending" }
@@ -32827,7 +32839,19 @@ coat_of_arms = {
 2335101 = { name="Godwinson" culture="ostlending" used_for_random = no }
 2335102 = { name="Bonde" culture="ostlending" used_for_random = no }
 2335103 = { name="Gamle" culture="ostlending" used_for_random = no }
-2335104 = { name="Rosensverd" culture="ostlending" }
+2335104 = { name="Rosensverd" culture="ostlending" 
+	coat_of_arms = { 
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 14
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 2220060 = { name="Luva" culture="vestlending" 
 	coat_of_arms = { 
@@ -32842,7 +32866,19 @@ coat_of_arms = {
 		}
 	}
 }
-2220061 = { name="Linge" culture="vestlending" }
+2220061 = { name="Linge" culture="vestlending" 
+	coat_of_arms = { 
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 15
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2220062 = { name="Huitfeldt" culture="vestlending" }
 2220063 = { name="Ylvisåker" culture="vestlending" }
 2220064 = { name="Manus" culture="vestlending" }
@@ -33003,9 +33039,33 @@ coat_of_arms = {
 2220176 = { name="Lindbäck" culture="scanian" }
 2220177 = { name="Ewerlund" culture="scanian" }
 2220178 = { name="Richthoff" culture="scanian" }
-2220179 = { name="Persson" culture="scanian" }
+2220179 = { name="Persson" culture="scanian" 
+	coat_of_arms = { 
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 8
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2220180 = { name="Kristensson" culture="scanian" }
-2220181 = { name="Nilsson" culture="scanian" }
+2220181 = { name="Nilsson" culture="scanian" 
+	coat_of_arms = { 
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 9
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2220182 = { name="Larsson" culture="scanian" }
 2220183 = { name="Svahn" culture="scanian" }
 2220184 = { name="Tapper" culture="scanian" }
@@ -33145,7 +33205,19 @@ coat_of_arms = {
 2220300 = { name="Brandtzæg" culture="tronder" }
 2220301 = { name="Ramstad" culture="tronder" }
 2220302 = { name="Blikra" culture="tronder" }
-2220303 = { name="Lademoen" culture="tronder" }
+2220303 = { name="Lademoen" culture="tronder" 
+	coat_of_arms = { 
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 17
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 2220304 = { name="Grip" culture="jamta" }
 2220305 = { name="Almestad" culture="jamta" }
@@ -33153,7 +33225,19 @@ coat_of_arms = {
 2220307 = { name="Norrman" culture="jamta" }
 2220308 = { name="Skoog" culture="jamta" }
 2220309 = { name="Trollsås" culture="jamta" }
-2220310 = { name="Hornbrytare" culture="jamta" }
+2220310 = { name="Hornbrytare" culture="jamta" 
+	coat_of_arms = { 
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 13
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2220311 = { name="Gelline" culture="jamta" }
 2220312 = { name="Föllinger" culture="jamta" }
 2220313 = { name="Persa" culture="jamta" }
@@ -33231,8 +33315,32 @@ coat_of_arms = {
 
 2220344 = { name="Wolgers" culture="svealander" }
 2220345 = { name="Vasa" culture="svealander" }
-2220346 = { name="Swedenborg" culture="svealander" }
-2220347 = { name="Stenhammar" culture="svealander" }
+2220346 = { name="Swedenborg" culture="svealander" 
+	coat_of_arms = { 
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 10
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2220347 = { name="Stenhammar" culture="svealander" 
+	coat_of_arms = { 
+		template = 0
+		layer = {
+			texture = 21
+			texture_internal = 2
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2220348 = { name="Bernadotte" culture="svealander" }
 2220349 = { name="Ekland" culture="svealander" }
 2220350 = { name="Alfvén" culture="svealander" }
@@ -33295,9 +33403,33 @@ coat_of_arms = {
 2220407 = { name="Anger" culture="svealander" }
 2220408 = { name="Fridh" culture="svealander" }
 2220409 = { name="Allén" culture="svealander" }
-2220410 = { name="Wållgren" culture="svealander" }
+2220410 = { name="Wållgren" culture="svealander" 
+	coat_of_arms = { 
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 12
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2220411 = { name="Anderberg" culture="svealander" }
-2220412 = { name="Hasselblad" culture="svealander" }
+2220412 = { name="Hasselblad" culture="svealander" 
+	coat_of_arms = { 
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 11
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2220413 = { name="Skarsgård" culture="svealander" }
 2220414 = { name="Holm" culture="svealander" }
 2220415 = { name="Bergman" culture="svealander" }
@@ -33352,7 +33484,19 @@ coat_of_arms = {
 2220464 = { name="Vigfors" culture="svealander" }
 2220465 = { name="Vasa-Bernadotte" culture="svealander" }
 2220466 = { name="af Uppsala" culture="svealander" used_for_random = no}
-2220467 = { name="af Lönneberg" culture="svealander" }
+2220467 = { name="af Lönneberg" culture="svealander" 
+	coat_of_arms = { 
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 7
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2220468 = { name="Rödros" culture="svealander" }
 2220469 = { name="de Gothia" culture="svealander" used_for_random = no }
 2220470 = { name="Kamprad" culture="svealander"
@@ -34011,7 +34155,19 @@ coat_of_arms = {
 	}
 }
 2220814 = { name="Mannerheim" culture="finnish" }
-2220815 = { name="Innanen" culture="finnish" }
+2220815 = { name="Innanen" culture="finnish" 
+	coat_of_arms = { 
+		template = 0
+		layer = {
+			texture = 21
+			texture_internal = 4
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2220816 = { name="Nenonen" culture="finnish" }
 2220817 = { name="Siilausvuo" culture="finnish" }
 2220818 = { name="Ylppö" culture="finnish" }
@@ -34137,7 +34293,19 @@ coat_of_arms = {
 2220965 = { name="Saimo" culture="karelian" }
 2220966 = { name="Santapukki" culture="karelian" }
 2220967 = { name="Sallinen" culture="karelian" }
-2220968 = { name="Shemeikka" culture="karelian" }
+2220968 = { name="Shemeikka" culture="karelian" 
+	coat_of_arms = { 
+		template = 0
+		layer = {
+			texture = 21
+			texture_internal = 3
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2220969 = { name="Tallus" culture="karelian" }
 2220970 = { name="Talvela" culture="karelian" }
 2220971 = { name="Suurkonka" culture="karelian" }
@@ -34251,7 +34419,19 @@ coat_of_arms = {
 2501081 = { name="Salberg" culture=icelander }
 2501082 = { name="Sandhólm" culture=icelander }
 2501083 = { name="Seljan" culture=icelander }
-2501084 = { name="Sigurhólm" culture=icelander }
+2501084 = { name="Sigurhólm" culture=icelander 
+	coat_of_arms = { 
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 18
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2501085 = { name="Skíðdal" culture=icelander }
 2501086 = { name="Sæberg" culture=icelander }
 2501087 = { name="Sólan" culture=icelander }
