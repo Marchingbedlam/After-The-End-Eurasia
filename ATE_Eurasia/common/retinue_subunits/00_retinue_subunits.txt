@@ -519,6 +519,7 @@ RETTYPE_CUL_BERSAGLIERI =
 			culture = umbrian
 			culture = neapolitan
 			culture = sardinian
+			culture = corsican
 			culture = sicilian
 		}
 	}
@@ -710,27 +711,6 @@ RETTYPE_CUL_ASSYRIAN =
 	modifier = {
 		heavy_infantry_defensive = 0.2
 		heavy_infantry_morale = 0.1
-	}
-}
-
-RETTYPE_CUL_SAR = 
-{
-	first_type = 2
-	first_amount = 200
-	second_type = 5
-	second_amount = 200
-	
-	potential = {
-		is_nomadic = no
-		culture = sardinian
-		culture = corsican
-	}
-	
-	modifier = {
-		archers_defensive = 0.2
-		pikemen_defensive = 0.2
-		pikemen_offensive = 0.2
-		pikemen_morale = 0.4
 	}
 }
 

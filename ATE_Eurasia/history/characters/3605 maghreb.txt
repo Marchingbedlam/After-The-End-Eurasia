@@ -24,15 +24,20 @@
 	2640.11.2={birth=yes}
 }
 3605002={
-	name="Brahim"
-	dynasty=2094135 #Gargouri
+	name="Rami"
+	dynasty=2094175 #ben Ahmed
 	culture=tunisian
 	religion=ruhi
-	trait=skilled_tactician
-	trait=brave
+	trait=lustful
+	trait=fair
+	trait=stubborn
+	trait=robust
+	trait=proud
+	trait=kind
 	trait=ambitious
-	trait=wroth
-	2640.11.2={birth=yes}
+	dna=djcckcdddbk
+	properties=cc0cld00000
+	2647.9.21={birth=yes}
 }
 3605003={
 	name="Abdelkader"
@@ -209,7 +214,7 @@
 	}
 }
 3605017={
-	name="Nourredine"
+	name="Karim"
 	dynasty=1956002
 	father=3605018
 	culture=moroccan
@@ -234,7 +239,7 @@
 	}
 }
 3605018={
-	name="Badreddine"
+	name="Salim"
 	dynasty=1956002
 	culture=moroccan
 	religion=ruhi
@@ -439,4 +444,194 @@
 	religion=ivri
 	father=3605000
 	2658.9.30={birth=yes}
+}
+3605038={
+	name="Mohamed Al Rashid"
+	dynasty=2094165 #Al Husseini
+	culture=tunisian
+	religion=ruhi
+	trait=ambitious
+	trait=just
+	trait=cynical
+	2621.3.20={birth=yes}
+}
+3605039={
+	name="Abdelhamid"
+	dynasty=2094166 #ben Arfa
+	culture=tunisian
+	religion=ruhi
+	2640.5.20={birth=yes}
+}
+3605040={
+	name="Wassila"
+	female=yes
+	dynasty=2094167 #ben Ammar
+	culture=tunisian
+	religion=ruhi
+	trit=ambitious
+	trait=ruthless
+	trait=deceitful
+	trait=cruel
+	trait=greedy
+	trait=envious
+	trait=intricate_webweaver
+	2634.6.22={birth=yes}
+	2661.1.1={add_spouse=3605038}
+}
+3605041={
+	name="Rachida"
+	female=yes
+	dynasty=2094055 #ben Ammar
+	culture=tunisian
+	religion=ruhi
+	mother=3605040
+	2650.10.23={birth=yes}
+}
+3605042={
+	name="Habib"
+	dynasty=2094165 #Al Husseini
+	culture=tunisian
+	religion=ruhi
+	father=3605038
+	2645.7.2={birth=yes}
+	2666.1.1={add_spouse=3605041}
+}
+3605043={
+	name="Mourad"
+	dynasty=2094165 #Al Husseini
+	culture=tunisian
+	religion=ruhi
+	father=3605038
+	2648.4.24={birth=yes}
+}
+3605044={
+	name="Sameh"
+	dynasty=2094055 #ben Ammar
+	culture=tunisian
+	religion=ruhi
+	mother=3605040
+	2658.3.25={birth=yes}
+}
+3605045={
+	name="Hammouda"
+	dynasty=2094165 #Al Husseini
+	culture=tunisian
+	religion=ruhi
+	father=3605038
+	mother=3605040
+	2664.3.19={birth=yes}
+}
+3605046={
+	name="Taoufik"
+	dynasty=2094133 #Youssef
+	culture=tunisian
+	religion=ruhi
+	father=3605047
+	2599.5.5={birth=yes}
+}
+3605047={
+	name="Ibrahim"
+	dynasty=2094133 #Youssef
+	culture=tunisian
+	religion=ruhi
+	2572.3.20={birth=yes}
+	2622.1.10={death=yes}
+}
+3605048={
+	name="Olfa"
+	female=yes
+	dynasty=2094133 #Youssef
+	culture=tunisian
+	religion=ruhi
+	trait=scholar
+	father=3605047
+	2615.6.19={birth=yes}
+}
+3605049={
+	name="Hamza"
+	dynasty=2094167 #Mnari
+	culture=tunisian
+	religion=ruhi
+	trait=scholar
+	2635.3.17={birth=yes}
+}
+3605050={
+	name="Khaled"
+	dynasty=2094168 #Jamoussi
+	culture=tunisian
+	religion=ruhi
+	trait=musician
+	2618.9.23={birth=yes}
+}
+3605051={
+	name="Rayen"
+	dynasty=2094169 #Vossargia
+	culture=tunisian
+	religion=ruhi
+	trait=musician
+	2611.2.1={birth=yes}
+}
+3605052={
+	name="Mohamed"
+	dynasty=2094170 #Fourati
+	culture=tunisian
+	religion=sunni
+	trait=mastermind_theologian
+	trait=physician
+	trait=quick
+	trait=gardener
+	2617.7.6={birth=yes}
+}
+3605053={
+	name="Hervé"
+	dynasty=2094171 #Azria
+	culture=sefardi
+	religion=ivri
+	2598.10.21={birth=yes}
+}
+3605054={
+	name="Ahmed"
+	dynasty=2094172 #Hached
+	culture=tunisian
+	religion=shiite
+	2638.6.11={birth=yes}
+}
+3605055={
+	name="Sahnoun"
+	dynasty=2094173 #Galhia
+	culture=tunisian
+	religion=sunni
+	trait=hafiz
+	trait=faqih
+	trait=just
+	trait=maliki
+	2633.2.1={birth=yes}
+}
+3605056={
+	name="Amine"
+	dynasty=2094174 #Cillium
+	culture=tunisian
+	religion=ruhi
+	2605.1.1={birth=yes}
+}
+3605057={
+	name="Oussama"
+	dynasty=2094040 #Mabrouk
+	culture=tunisian
+	religion=ruhi
+	2628.7.28={birth=yes}
+}
+3605058={
+	name="Karim"
+	dynasty=2094069 #ben Ayed
+	culture=tunisian
+	religion=sunni
+	2640.8.14={birth=yes}
+}
+3605059={
+	name="Youssef"
+	dynasty=2094082 #ben Romdhane
+	culture=tunisian
+	religion=sunni
+	2629.1.17={birth=yes}
 }

@@ -44,7 +44,10 @@ feudal_governments = {
 				NOT = {religion_group = muslim}
 				AND = {
 						religion = ruhi
-						capital_scope = {region = custom_europe}
+						OR = {
+							capital_scope = {region = custom_europe}
+							capital_scope = {region = custom_tunisia}
+						}
 				}
 			}
 			NOT = { is_government_potential = diwan_government }
@@ -645,6 +648,7 @@ feudal_governments = {
 						title = d_szekelyfold
 						title = d_hercegovina
 						title = k_iron_mountains
+						title = d_al_wasat
 					}
 				}
 				AND = {
@@ -795,7 +799,10 @@ feudal_governments = {
 					religion_group = muslim
 					NAND = {
 						religion = ruhi
-						capital_scope = {region = custom_europe}
+						OR = {
+							capital_scope = {region = custom_europe}
+							capital_scope = {region = custom_tunisia}
+						}
 					}
 					NOT = { religion = ibadi }
 					NOT = { religion_group = christian }

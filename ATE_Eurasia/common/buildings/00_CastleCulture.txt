@@ -1005,14 +1005,16 @@ castle = {
 		extra_tech_building_start = 0.8
 	}
 	
-	# carabinieri Barracks
-	ca_culture_carabinieri_1 = {
-		desc = ca_culture_carabinieri_1_desc
+	# bersaglieri Barracks
+	ca_culture_bersaglieri_1 = {
+		desc = ca_culture_bersaglieri_1_desc
 		potential = {
 			OR = {
 				culture = umbrian
 				culture = neapolitan
 				culture = sardinian
+				culture = maltese
+				culture = corsican
 				culture = sicilian
 			}
 		}
@@ -1022,6 +1024,8 @@ castle = {
 				culture = umbrian
 				culture = neapolitan
 				culture = sardinian
+				culture = maltese
+				culture = corsican
 				culture = sicilian
 				}
 			}
@@ -1033,6 +1037,8 @@ castle = {
 				culture = umbrian
 				culture = neapolitan
 				culture = sardinian
+				culture = maltese
+				culture = corsican
 				culture = sicilian
 				}
 			}
@@ -1048,16 +1054,18 @@ castle = {
 		
 		extra_tech_building_start = 0.8
 	}
-	ca_culture_carabinieri_2 = {
-		desc = ca_culture_carabinieri_1_desc
+	ca_culture_bersaglieri_2 = {
+		desc = ca_culture_bersaglieri_1_desc
 		potential = {
 			OR = {
 				culture = umbrian
 				culture = neapolitan
 				culture = sardinian
+				culture = maltese
+				culture = corsican
 				culture = sicilian
 			}
-				has_building = ca_culture_carabinieri_1
+				has_building = ca_culture_bersaglieri_1
 		}
 		is_active_trigger = {
 			ROOT = {
@@ -1065,6 +1073,8 @@ castle = {
 				culture = umbrian
 				culture = neapolitan
 				culture = sardinian
+				culture = maltese
+				culture = corsican
 				culture = sicilian
 				}
 			}
@@ -1076,11 +1086,13 @@ castle = {
 				culture = umbrian
 				culture = neapolitan
 				culture = sardinian
+				culture = maltese
+				culture = corsican
 				culture = sicilian
 				}
 			}
 		}
-		upgrades_from = ca_culture_carabinieri_1
+		upgrades_from = ca_culture_bersaglieri_1
 		gold_cost = 300
 		build_time = 1095
 		pikemen = 20
@@ -1091,17 +1103,19 @@ castle = {
 		
 		extra_tech_building_start = 0.8
 	}
-	ca_culture_carabinieri_3 = {
-		desc = ca_culture_carabinieri_1_desc
+	ca_culture_bersaglieri_3 = {
+		desc = ca_culture_bersaglieri_1_desc
 		potential = {
 			OR = {
 				culture = umbrian
 				culture = neapolitan
 				culture = sardinian
+				culture = maltese
+				culture = corsican
 				culture = sicilian
 			}
-				has_building = ca_culture_carabinieri_1
-				has_building = ca_culture_carabinieri_2
+				has_building = ca_culture_bersaglieri_1
+				has_building = ca_culture_bersaglieri_2
 		}
 		is_active_trigger = {
 			ROOT = {
@@ -1109,6 +1123,8 @@ castle = {
 				culture = umbrian
 				culture = neapolitan
 				culture = sardinian
+				culture = maltese
+				culture = corsican
 				culture = sicilian
 				}
 			}
@@ -1120,11 +1136,13 @@ castle = {
 				culture = umbrian
 				culture = neapolitan
 				culture = sardinian
+				culture = maltese
+				culture = corsican
 				culture = sicilian
 				}
 			}
 		}
-		upgrades_from = ca_culture_carabinieri_2
+		upgrades_from = ca_culture_bersaglieri_2
 		gold_cost = 400
 		build_time = 2190
 		pikemen = 25
@@ -1135,18 +1153,20 @@ castle = {
 		
 		extra_tech_building_start = 0.8
 	}
-	ca_culture_carabinieri_4 = {
-		desc = ca_culture_carabinieri_1_desc
+	ca_culture_bersaglieri_4 = {
+		desc = ca_culture_bersaglieri_1_desc
 		potential = {
 			OR = {
 				culture = umbrian
 				culture = neapolitan
 				culture = sardinian
+				culture = maltese
+				culture = corsican
 				culture = sicilian
 			}
-				has_building = ca_culture_carabinieri_1
-				has_building = ca_culture_carabinieri_2
-				has_building = ca_culture_carabinieri_3
+				has_building = ca_culture_bersaglieri_1
+				has_building = ca_culture_bersaglieri_2
+				has_building = ca_culture_bersaglieri_3
 		}
 		is_active_trigger = {
 			ROOT = {
@@ -1154,6 +1174,8 @@ castle = {
 				culture = umbrian
 				culture = neapolitan
 				culture = sardinian
+				culture = maltese
+				culture = corsican
 				culture = sicilian
 				}
 			}
@@ -1165,11 +1187,13 @@ castle = {
 				culture = umbrian
 				culture = neapolitan
 				culture = sardinian
+				culture = maltese
+				culture = corsican
 				culture = sicilian
 				}
 			}
 		}
-		upgrades_from = ca_culture_carabinieri_3
+		upgrades_from = ca_culture_bersaglieri_3
 		gold_cost = 500
 		build_time = 2190
 		pikemen = 30

@@ -488,15 +488,15 @@ b_samson={
 
 ###Jirba###
 
-b_jirba1 = {
+b_pallache = {
 	culture = sefardi
 	religion = ivri
 }
 b_jirba2 = {
 	culture = tunisian
-	religion = naqshbandi
+	religion = sunni
 }
-b_jirba3 = {
+b_ben_ahmed = {
 	culture = tunisian
 	religion = ruhi
 }
@@ -686,4 +686,25 @@ b_fortes = {
 b_silva = {
 	culture = verdean
 	religion = catholic
+}
+##Sahel republic
+b_jamoussi = {
+	culture = tunisian
+	religion = ruhi
+}
+b_vossargia = {
+	culture = tunisian
+	religion = ruhi
+}
+b_fourati = {
+	culture = tunisian
+	religion = sunni
+}
+b_azria = {
+	culture = sefardi
+	religion = ivri
+}
+b_hached = {
+	culture = tunisian
+	religion = shiite
 }

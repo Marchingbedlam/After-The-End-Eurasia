@@ -77,7 +77,7 @@ custom_algeria = {
 
 custom_tunisia = {
 	duchies = { 
-		d_tunis d_al_sahil
+		d_tunis d_al_sahil d_al_wasat
 	}
 }
 
@@ -370,7 +370,7 @@ custom_eastern_europe = {
 }
 custom_europe = {
 	regions = {
-		custom_western_europe world_scandinavia custom_pannorian_basin custom_balkans custom_eastern_europe
+		custom_western_europe world_scandinavia custom_pannorian_basin custom_balkans custom_eastern_europe custom_tunisia
 	}
 }
 ###########################################################################

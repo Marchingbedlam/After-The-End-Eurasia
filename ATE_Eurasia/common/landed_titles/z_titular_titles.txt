@@ -363,6 +363,17 @@ k_iron_mountains = {
 		always = no 
 	}
 }
+k_tunis = { 
+	color = { 116 12 48 }
+	color2 = { 255 255 255 }
+
+	capital = 420 #Tunis
+	dignity = 10 
+
+	allow = {
+		always = no 
+	}
+}
 ### titular duchies ###
 
 d_sligo = {
@@ -537,7 +548,7 @@ d_tricity = {
 		czech="Trojmesti"
 		lithuanian="Trejybe"
 		latvian="Trisvieniba"
-		
+}
 d_gorals = {
 	color={ 96 74 91 }
 	color2={ 255 255 255 }
@@ -545,6 +556,15 @@ d_gorals = {
 	dignity = 10 # Counted as having this many more counties than it does
 	allow = {
 		culture = goral
+	}
+}
+d_tunisia = {
+	color={ 96 24 31 }
+	color2={ 255 255 255 }
+	capital = 420 #Tunis
+	dignity = 10 # Counted as having this many more counties than it does
+	allow = {
+		always = no 
 	}
 }
 ### Titular counties ###
