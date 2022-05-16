@@ -1011,6 +1011,15 @@ spriteTypes = {
 		name = "GFX_commission_tawiz"
 		texturefile = "gfx\\interface\\commission_tawiz.dds"
 	}
+	spriteType = {
+		name = "GFX_reestablish_carthage"
+		texturefile = "gfx\\interface\\decision_reestablish_carthage.dds"
+	}
+	spriteType = {
+		name = "GFX_reestablish_phoenicia"
+		texturefile = "gfx\\interface\\decision_reestablish_phoenicia.dds"
+	}
+	
 	#ATEO Stuff
 	spriteType = {
 		name = "GFX_reciting_sutras"

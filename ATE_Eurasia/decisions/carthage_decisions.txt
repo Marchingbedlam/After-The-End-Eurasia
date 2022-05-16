@@ -1,7 +1,7 @@
 decisions = {
 
 ###################Phoenicia#######################################
-	reform_carthage = {
+	reestablish_carthage = {
 		is_high_prio = yes
 		only_playable = yes
 		ai = no
@@ -147,6 +147,121 @@ decisions = {
 				limit = {
 					tier = EMPEROR
 					NOT = { title = e_carthage }
+				}
+				destroy_landed_title = THIS
+			}
+		}
+	}
+	
+	reestablish_phoenicia = {
+		is_high_prio = yes
+		only_playable = yes
+		ai = no
+		
+		potential = {
+			culture = lebneni
+			is_alternate_start = no
+			NOT = {
+				has_game_rule = {
+					name = empire_decisions
+					value = off
+				}
+			}
+			has_global_flag = carthage_reborn
+			NOT = { has_global_flag = phoenicia_restablish }
+			independent = yes
+			OR = { #emperors outside of carthage can't do this
+				tier = COUNT
+				tier = DUKE
+				tier = KING
+				has_landed_title = e_carthage
+			}
+		}
+		
+		allow = {
+			is_adult = yes
+			war = no
+			prestige = 1000
+			wealth = 500
+			completely_controls = k_lebanon
+			completely_controls = d_al_ladhqiyah
+			completely_controls = d_galil
+		}
+		
+		effect = {
+			wealth = -500
+			activate_title = { title = k_phoenicia status = yes }
+			primary_title = {
+				k_phoenicia = {
+					grant_title = ROOT
+					copy_title_laws = PREV
+				}
+			}
+			custom_tooltip = { text = form_phoenicia_TT }
+			set_global_flag = phoenicia_restablish
+			
+			hidden_tooltip = {
+				d_as_shamal = {
+					de_jure_liege = k_phoenicia
+				}
+				d_beirut = {
+					de_jure_liege = k_phoenicia
+				}
+				d_al_jnoub = {
+					de_jure_liege = k_phoenicia
+				}
+				d_al_ladhqiyah = {
+					de_jure_liege = k_phoenicia
+				}
+				d_galil = {
+					de_jure_liege = k_phoenicia
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = {
+						completely_controls = d_dimashq
+					}
+					d_dimashq = {
+						de_jure_liege = k_phoenicia
+					}
+				}
+				if = {
+					limit = {
+						completely_controls = d_hims
+					}
+					d_hims = {
+						de_jure_liege = k_phoenicia
+					}
+				}
+				if = {
+					limit = {
+						completely_controls = d_halab
+					}
+					d_halab = {
+						de_jure_liege = k_phoenicia
+					}
+				}
+				if = {
+					limit = {
+						completely_controls = d_raqqa
+					}
+					d_raqqa = {
+						de_jure_liege = k_phoenicia
+					}
+				}
+			}
+			hidden_tooltip = {
+				k_phoenicia = {
+					de_jure_liege = e_carthage
+				}
+			}
+			any_demesne_title = {
+				limit = {
+					tier = KING
+					NOT = {
+						title = k_phoenicia
+					}
 				}
 				destroy_landed_title = THIS
 			}
