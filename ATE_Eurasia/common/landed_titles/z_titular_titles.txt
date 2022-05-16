@@ -115,6 +115,74 @@ e_kazakhstan = {
 	}
 }
 
+e_carthage = {
+	color={ 102 2 60 }
+	color2={ 220 220 20 }
+	
+#	title = shopet
+
+	capital = 420 # c_tunis
+	
+	dignity = 20 # Counted as having this many more counties than it does
+	
+	tunisian="Qartaj"
+	algerian="Qartaj"
+	sahrawi="Qartaj"
+	moroccan="Qartaj"
+	libyan="Qartaj"
+	lebneni="Qart-Hadast"
+	sudani="Qartaj"
+	masri="Qartaj"
+	umani="Qartaj"
+	dhofari="Qartaj"
+	furataini="Qartaj"
+	suriyi="Qartaj"
+	yemeni="Qartaj"
+	hadhrami="Qartaj"
+	teimani="Qartaj"
+	filastini="Qartaj"
+	najdi="Qartaj"
+	bahrayni="Qartaj"
+	hijazi="Qartaj"
+	badawi="Qartaj"
+	sabra="Karthego"
+	yiddish="Karthego"
+	sefardi="Karthego"
+	castilian="Cartago"
+	leonese="Cartago"
+	asturian="Cartago"
+	aragonese="Cartago"
+	catalan="Cartago"
+	andalusian="Cartago"
+	galician="Cartago"
+	portuguese="Cartago"
+	canarian="Cartago"
+	azorean="Cartago"
+	madeiran="Cartago"
+	romansh="Cartagine"
+	sardinian="Cartagine"
+	sicilian="Cartagine"
+	neapolitan="Cartagine"
+	maltese="Cartagine"
+	umbrian="Cartagine"
+	tuscan="Cartagine"
+	ligurian="Cartagine"
+	piedmontese="Cartagine"
+	lombard="Cartagine"
+	romagnol="Cartagine"
+	venetian="Cartagine"
+	friulian="Cartagine"	
+	greek="Karchidóna"
+	makedonian="Karchidóna"
+	kypriot="Karchidóna"
+	romioi="Karchidóna"
+	romaniote="Karchidóna"
+	
+	allow = {
+		always = no # Only created through special event
+	}
+}
+
 ### titular kingdoms ###
 
 k_britain = {
@@ -372,6 +440,70 @@ k_tunis = {
 
 	allow = {
 		always = no 
+	}
+}
+k_phoenicia = {
+	color={ 168 100 168 } #146 39 143
+	color2={ 220 220 20 }
+	
+	capital = 1974 # c_sur
+	dignity = 10 # Counted as having this many more counties than it does
+	
+	tunisian="Kanean"
+	algerian="Kanean"
+	sahrawi="Kanean"
+	moroccan="Kanean"
+	libyan="Kanean"
+	lebneni="Kena'n"
+	sudani="Kanean"
+	masri="Kanean"
+	umani="Kanean"
+	dhofari="Kanean"
+	furataini="Kanean"
+	suriyi="Kanean"
+	yemeni="Kanean"
+	hadhrami="Kanean"
+	teimani="Kanean"
+	filastini="Kanean"
+	najdi="Kanean"
+	bahrayni="Kanean"
+	hijazi="Kanean"
+	badawi="Kanean"
+	sabra="Kená'an"
+	yiddish="Kená'an"
+	sefardi="Kená'an"
+	castilian="Fenicia"
+	leonese="Fenicia"
+	asturian="Fenicia"
+	aragonese="Fenicia"
+	catalan="Fenicia"
+	andalusian="Fenicia"
+	galician="Fenicia"
+	portuguese="Fenicia"
+	canarian="Fenicia"
+	azorean="Fenicia"
+	madeiran="Fenicia"
+	romansh="Fenicia"
+	sardinian="Fenicia"
+	sicilian="Fenicia"
+	neapolitan="Fenicia"
+	maltese="Fenicia"
+	umbrian="Fenicia"
+	tuscan="Fenicia"
+	ligurian="Fenicia"
+	piedmontese="Fenicia"
+	lombard="Fenicia"
+	romagnol="Fenicia"
+	venetian="Fenicia"
+	friulian="Fenicia"	
+	greek="Foiníki"
+	makedonian="Foiníki"
+	kypriot="Foiníki"
+	romioi="Foiníki"
+	romaniote="Foiníki"
+	
+	allow = {
+		always = no # Only created through special event
 	}
 }
 ### titular duchies ###

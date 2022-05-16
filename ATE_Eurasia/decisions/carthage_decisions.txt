@@ -1,0 +1,155 @@
+decisions = {
+
+###################Phoenicia#######################################
+	reform_carthage = {
+		is_high_prio = yes
+		only_playable = yes
+		ai = no
+
+		potential = {
+			is_alternate_start = no
+			OR = {
+				culture = tunisian
+				AND = {
+					culture = lebneni
+					capital_scope = { region = custom_tunisia }
+				}
+			}
+			NOT = {
+				has_game_rule = {
+					name = empire_decisions
+					value = off
+				}
+			}
+			NOT = { has_global_flag = carthage_reborn }
+			independent = yes
+		}
+
+		allow = {
+			is_adult = yes
+			war = no
+			prestige = 1000
+			scaled_wealth = 2
+			completely_controls = k_tunisia
+			completely_controls = k_sicily
+			completely_controls = k_sardinia
+			completely_controls = c_murcia
+		}
+
+		effect = {
+			scaled_wealth = -2
+			if = {
+				limit = { has_nickname = no }
+				give_nickname = nick_the_shophet
+			}
+			activate_title = { title = e_carthage status = yes }
+			primary_title = {
+				e_carthage = {
+					grant_title = ROOT
+					copy_title_laws = PREV
+				}
+			}
+			
+			custom_tooltip = { text = form_carthage_TT }
+
+			set_global_flag = carthage_reborn
+			
+			hidden_tooltip = {
+				k_tunisia = {
+					de_jure_liege = e_carthage
+				}
+				k_sardinia = {
+					de_jure_liege = e_carthage
+				}
+				k_sicily = {
+					de_jure_liege = e_carthage
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = { 
+						AND = {
+							completely_controls = d_awras
+							NOT = {
+								OR = {
+									has_landed_title = k_algeria
+									completely_controls = k_algeria
+								}
+							}
+						}
+					}
+					d_awras = {
+						de_jure_liege = k_tunisia
+					}
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = { 
+						AND = {
+							completely_controls = d_qusantinah
+							NOT = {
+								OR = {
+									has_landed_title = k_algeria
+									completely_controls = k_algeria
+								}
+							}
+						}
+					}
+					d_qusantinah = {
+						de_jure_liege = k_tunisia
+					}
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = { 
+						AND = {
+							completely_controls = d_annaba
+							NOT = {
+								OR = {
+									has_landed_title = k_algeria
+									completely_controls = k_algeria
+								}
+							}
+						}
+					}
+					d_annaba = {
+						de_jure_liege = k_tunisia
+					}
+				}
+			}
+			any_demesne_title = {
+				limit = { tier = KING }
+				de_jure_liege = e_carthage
+			}
+			hidden_tooltip = {
+				primary_title = {
+					if = {
+						limit = { tier = EMPEROR }
+						any_direct_de_jure_vassal_title = {
+							de_jure_liege = e_carthage
+						}
+					}
+				}
+			}
+			any_demesne_title = {
+				limit = {
+					tier = KING
+					NOR = {
+						title = k_tunisia
+						title = k_phoenicia
+					}
+				}
+				destroy_landed_title = THIS
+			}
+			any_demesne_title = {
+				limit = {
+					tier = EMPEROR
+					NOT = { title = e_carthage }
+				}
+				destroy_landed_title = THIS
+			}
+		}
+	}
+}
