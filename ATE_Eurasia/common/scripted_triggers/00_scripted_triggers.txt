@@ -9253,6 +9253,19 @@ varangian_guard_events_default_trigger = {
 	has_dlc = "The Old Gods"
 }
 
+lipka_guard_events_default_trigger = {
+	ai = yes
+	age = 16
+	is_incapable = no
+	prisoner = no
+	OR = {
+		culture_group = turkic_east
+		culture_group = turkic_west
+	}
+	has_character_flag = serving_lipka
+	has_dlc = "The Old Gods"
+}
+
 
 ere_elective_politician_titles_trigger = { #Used in Imperial Elective to determine AI behavior.
 	OR = {

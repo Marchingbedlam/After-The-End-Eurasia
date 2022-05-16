@@ -20,6 +20,9 @@ on_yearly_pulse = {
 		150 = jedinstvo.8 # Booming saint tomb burial site
 		150 = jedinstvo.9 # Inspired by Local hero
 		150 = jedinstvo.10 # Pillage Local Hero Burial
+		
+		##lipka guard events
+		100 = lipka.3109 # Child wants to join the Varangians (Son) - Formerly 200 month MTTH
 	}
 }
 on_bi_yearly_pulse = {
@@ -53,6 +56,9 @@ on_death = {
 		jedinstvo.1
 		islamate.46 #Tawiz "Goes Missing"
 		#adding shiva events
+		
+		###lipka guard events
+		lipka.19101 # lipka guards return home upon becoming players
 	}
 }
 # Character converts religion, for whatever reason. ROOT is the character after conversion and the FROM scope has the old religion.
@@ -111,6 +117,7 @@ on_new_holder = {
 		titlegiving.006 #PING_PRIMAS
 		titlegiving.007 #PING_GRAND_MUFTI
 		titlegiving.008 #PING_CATHOLICOS_PATRIARCH
+		lipka.19100 #Make sure the lipka guard handles its inheritance if not male-lead
 	}
 }
 
@@ -122,6 +129,7 @@ on_new_holder_inheritance = {
 		titlegiving.006 #PING_PRIMAS
 		titlegiving.007 #PING_GRAND_MUFTI
 		titlegiving.008 #PING_CATHOLICOS_PATRIARCH
+		lipka.19100 #Make sure the lipka guard handles its inheritance if not male-lead
 	}
 
 }
@@ -134,6 +142,7 @@ on_new_holder_usurpation = {
 		titlegiving.006 #PING_PRIMAS
 		titlegiving.007 #PING_GRAND_MUFTI
 		titlegiving.008 #PING_CATHOLICOS_PATRIARCH
+		lipka.19100 #Make sure the lipka guard handles its inheritance if not male-lead
 	}
 }
 
