@@ -356,6 +356,7 @@ RETTYPE_CUL_REDSHANK =
 			culture = irish
 			culture = ulsterman
 			culture = manx
+			culture = pavee
 		}
 	}
 	
@@ -364,6 +365,72 @@ RETTYPE_CUL_REDSHANK =
 		light_infantry_morale = 0.3
 		archers_offensive = 0.1
 		archers_morale = 0.1
+	}
+}
+
+RETTYPE_CUL_EVZONES = 
+{
+	first_type = 0
+	first_amount = 300
+	
+	potential = {
+		is_nomadic = no
+		OR = {
+			culture = greek
+			culture = makedonian
+			culture = kypriot
+			culture = aromanian
+		}
+	}
+	
+	modifier = {
+		light_infantry_offensive = 0.5
+		light_infantry_defensive = 0.1
+		light_infantry_morale = 0.25
+	}
+}
+
+RETTYPE_CUL_HUNG = 
+{
+	first_type = 3
+	first_amount = 250
+	
+	potential = {
+		is_nomadic = no
+		OR = {
+			culture = hungarian
+		}
+	}
+	
+	modifier = {
+		light_cavalry_offensive = 0.35
+		light_cavalry_defensive = 0.1
+		light_cavalry_morale = 0.15
+	}
+}
+
+RETTYPE_CUL_CARPATHIANS = 
+{
+	first_type = 0
+	first_amount = 200
+	second_type = 1
+	second_amount = 100
+	
+	potential = {
+		is_nomadic = no
+		OR = {
+			culture = slovak
+			culture = goral
+			culture = szekely
+			culture = rusyn
+		}
+	}
+	
+	modifier = {
+		light_infantry_offensive = 0.4
+		light_infantry_morale = 0.2
+		heavy_infantry_offensive = 0.2
+		heavy_infantry_morale = 0.1
 	}
 }
 
@@ -476,6 +543,34 @@ RETTYPE_CUL_PANZERREITER =
 		knights_morale = 0.25
 		knights_offensive = 0.1
 		knights_defensive = 0.15
+	}
+}
+
+RETTYPE_CUL_DUTCH = 
+{
+	first_type = 0
+	first_amount = 300
+	
+	second_type = 2
+	second_amount = 100
+	
+	potential = {
+		is_nomadic = no
+		OR = {
+			culture = dutch
+			culture = flemish
+			culture = frisian
+			culture = limburgish
+		}
+	}
+	
+	modifier = {
+		light_infantry_offensive = 0.2
+		light_infantry_defensive = 0.2
+		light_infantry_morale = 0.1
+		pikemen_offensive = 0.3
+		pikemen_defensive = 0.2
+		pikemen_morale = 0.1
 	}
 }
 
@@ -732,6 +827,49 @@ RETTYPE_CUL_POR =
 		archers_defensive = 0.2
 		archers_offensive = 0.1
 		archers_morale = 0.1
+	}
+}
+
+RETTYPE_CUL_CAUCASUS = 
+{
+	first_type = 0
+	first_amount = 375
+	second_type = 1
+	second_amount = 125
+	
+	potential = {
+		is_nomadic = no
+		culture_group = caucasian
+		NOT = {
+			culture = armenian
+			culture = georgian
+			}
+	}
+	
+	modifier = {
+		light_infantry_offensive = 0.2
+		light_infantry_morale = 0.4
+		heavy_infantry_defensive = 0.2
+		heavy_infantry_morale = 0.1
+	}
+}
+
+RETTYPE_CUL_FALX = 
+{
+	first_type = 1
+	first_amount = 200
+	
+	potential = {
+		is_nomadic = no
+		culture = romanian
+		culture = transylvanian
+		culture = moldovan
+	}
+	
+	modifier = {
+		heavy_infantry_offensive = 0.3
+		heavy_infantry_defensive = 0.05
+		heavy_infantry_morale = 0.15
 	}
 }
 

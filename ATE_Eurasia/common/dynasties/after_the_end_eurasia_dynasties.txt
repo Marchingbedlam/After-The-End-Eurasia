@@ -6239,7 +6239,23 @@
 1913109 = { name="al-Tawrghi" culture=libyan }
 1913110 = { name="al-Haraish" culture=libyan }
 1913111 = { name="al-Warfali" culture=libyan }
-
+1913112 = { name="Almishri" culture=libyan }
+1913113 = { name="Terbil" culture=libyan 
+	coat_of_arms = { 
+		religion = sunni
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 12
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1913114 = { name="Othman" culture=libyan }
+1913115 = { name="Salim" culture=libyan }
 
 
 1915000 = {name="Qasim" culture=sudani }
@@ -6465,6 +6481,20 @@
 1917049 = { name="Musa" culture=eastern_berber }
 1917050 = { name="Suag" culture=eastern_berber }
 1917051 = { name="Azuza" culture=eastern_berber }
+1917052 = { name="Menguellet" culture=francarabe 
+	coat_of_arms = { 
+		religion = sunni
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 13
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 1945000 = {name="Nikelov" culture=pomor }
 1945001 = {name="Semenov" culture=pomor }
