@@ -815,13 +815,13 @@ feudal_governments = {
 						has_law = muslim_government_slider_4
 					}
 				}
-				top_liege = {
-					government = diwan_government
-					OR = {
-					tier = COUNT
-					tier = DUKE
-					tier = KING
-					tier = EMPEROR
+				AND = {
+					top_liege = {
+						government = diwan_government
+					}
+					NOR = {
+						capital_scope = {region = custom_europe}
+						capital_scope = {region = custom_tunisia}
 					}
 				}
 			}
