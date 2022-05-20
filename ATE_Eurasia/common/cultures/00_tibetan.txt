@@ -23,6 +23,28 @@ tibetan = {
 		
 		modifier = default_culture_modifier
 	}
+	
+	balti = {
+		graphical_cultures = { bodpagfx chinesegfx mongolgfx indiangfx muslimgfx }
+		secondary_event_pictures = bedouin_arabic
+		
+		dynasty_name_first = yes
+		
+		color = { 0.22 0.87 0.33 }
+
+		male_names = {
+			
+		}
+		female_names = {
+			
+		}
+		
+		dynasty_title_names = no
+		
+		from_dynasty_prefix = ""
+		
+		modifier = default_culture_modifier
+	}
 	yolmo = {
 		graphical_cultures = { bodpagfx chinesegfx mongolgfx indiangfx muslimgfx }
 		secondary_event_pictures = bedouin_arabic
