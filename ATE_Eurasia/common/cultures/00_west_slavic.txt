@@ -424,7 +424,7 @@ west_slavic_group = {
 		male_names = {
 			Adam_Adam Albin_Albinus Aleksander_Alexander Aleksy_Alexis Alfons_Alfonso Ambrožy_Ambrosius Anastazy_Anastasius Andrzej_Andrew Apolinary_Apollinarius Arnold_Arnold Atanazy_Athanasius Antoni_Anthony Augustyn_Augustine 
 			Baltazar_Balthazar Bartlomiej_Bartholomew Benedekyt_Benedict Blažej_Blasius Boguslaw_Boguslav Bonawentura_Bonaventura Boromeusz 
-			Chryzostom Cyprian_Cyprian Czeslaw 
+			Chryzostom Cyprian_Cyprian Czeslaw_Ceslaus 
 			Daniel_Daniel Dawid_David Decjusz_Decius Dobrogost Dominik_Dominic 
 			Eliasz_Elias Erazm_Erasmus 
 			Fabian_Fabian Faustyn Felicjan_Felician Feliks_Felix Filip_Philip Florian_Florian Franciszek_Francis Frumencjusz_Frumentius Fryderyk_Frederick Fryc_Frederick 
@@ -487,7 +487,7 @@ west_slavic_group = {
 		color = { 0.86 0.5 0.1 }
 
 		male_names = {
-			Czeslaw 
+			Czeslaw_Ceslaus 
 			Jacek_Hyacinth Jeszko 
 			Marian_Marianus 
 			Pawel_Paul Piotr_Peter 
@@ -619,14 +619,32 @@ west_slavic_group = {
 		color = { 0.74 0.27 0.73 }
 
 		male_names = {
-			Adam 
-			Ferdynand_Ferdinand Frideryk_Frederick 
-			Gustlik_Gustav 
-			Wilem_William Woldemar_Vladimir 
+			Adam_Adam Achim_Joachim Albert_Albert Alfrid_Alfred Alfun_Alphons Alojz_Aloysius Antón_Anthony Anzelm_Anselm Arnold_Arnold August_Augustus 
+			Bernat_Bernard Bert_Bert Bolko_Boleslav Bolyslaw_Boleslav Bruno_Bruno 
+			Czechol_Ceslaus 
+			Ditmar_Dietmar Detlef_Detlef Dominik_Dominic 
+			Edward_Edward Eforyn Erich_Eric Ernest_Ernest 
+			Feliks_Felix Ferdynand_Ferdinand Franc_Francis Fric_Fritz Frideryk_Frederick 
+			Gabriel_Gabriel Gerad_Gerard Gielo_Gregory Ginter_Gunther Gwido_Guido Gustaw_Gustav Gustlik_Gustel 
+			Hajnel_Henry Hanys_John Helmut_Helmut Hubert_Hubert Hugo_Hugh 
+			Ignac_Ignatius
+			Jakub_Jacob Jorg_George Jozef_Joseph Jyndrys_Andrew 
+			Karel_Charles Kasper_Kaspar Kazimjyrz_Casimir Kazmir_Casimir Kóndrad_Conrad Kristof_Cristopher 
+			Luc_Lucian Ludwas_Louis Lukasz_Luke Lyjonard_Leonard Lyjopold_Leopold 
+			Maksymiljan_Maximilian Makes_Maximilian Manik Michol_Michael Mikoloj_Nicholas Mjyszko_Mieszko Moric_Maurice Morcin_Martin 
+			Niklaus_Nicholas Nobul_Norbert 
+			Ojgen_Eugene Otto_Otto 
+			Paul_Paul Pawol_Paul Pyjter_Peter 
+			Rajmar_Reinmar Rajnold_Reynold Richad_Richard Rudolf_Rudoplh Rufin_Rufin 
+			Stan_Stanislav Szczepon_Stephen Szymón_Szymon 
+			Tijodor_Theodore Tomasz_Thomas 
+			Wach Waclaw_Vaclav Walter_Walter Wawrzin_Lawrence Wichtór_Victor Wicynt_Vincent Wilem_William Woldemar_Vladimir 
+			Ymil_Emil Yrwin_Erwin Ywald_Ewald 
+			Zefyl_Joseph Zigmund_Sigismund 
 		}
 		female_names = {
 			Barbora_Barbara 
-			Greta_Margaret  
+			Greta_Margaret 
 			Maria_Mary Mina 
 		}
 		from_dynasty_prefix = "of "
