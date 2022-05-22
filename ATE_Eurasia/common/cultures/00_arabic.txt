@@ -390,6 +390,66 @@ arabic = {
 		female_patronym = "bint "
 		prefix = yes 
 	}
+	akhdam = {
+		graphical_cultures = { arabicgfx muslimgfx egyptiangfx }
+		
+		color = { 0.25 0.17 0.41 }
+		
+		male_names = {
+			Abbas Abdrabbuh Abdu Abdulaziz Abdulbari Abdulfattah Abdulhakim Abduljalil Abdulkarim Abdulkhalek Abdullah_Abdallah Abdullatif Abdullilah Abdulmajid Abdulmalik Abdulqadir Abdulrab Abdulrahman Abdulrazzaq Abdulsalam Abdulwahhab Abdulwali Adib Adil Adnan Ageel Ahmad Ahman Aidarus Akram "Ala ad-Din" Alawi Ali Alyan Amin Ammar Anwar Aref Asad Asim Atag Awadh Ayman Ayyub Aziz 
+			Bader "Badr ad-Din" Bandar Baraa Bashir Bassam 
+			Daghr Daifallah Dhu'ayb Dirgham 
+			Ehab 
+			Fahd Fahim Fahmi Faisal Faraj Fares Farhan Farid Faruk Fathi Fawaz Fayiz Fekri Fuad 
+			Ghalib Ghazi 
+			Habib Hadi Hafiz Haidar Hail Haitham Hamdan Hamid Hamis Hammoud Hamza Hanzala Harith Hars Hasan Hashid Hatim Hilal Husayn Hussein 
+			Ibrahim_Abraham Idris Imad Ishaq_Isaac Ismail_Ismail Issam "Izz ad-Din"
+			Jaafar Jaber Jalal Jamal Jamil Jarallah Junaid 
+			Kamal Karam Khalid Khamis 
+			Lutf 
+			Mabruk Maeen Mahdi_Mahdi Mahfuz Mahmud_Mahmud Majid Makhdum Mansur_Mansur Marwan Mashur Mayfa' Mokhtar Mu'aadh Mubarak Mudir Muhammad_Muhammad Muhsin Mukhtar Munir Muqbil Murad Murshid Musa_Moses Musab Mustafa_Mustafa Mutaher Muthanna 
+			Nabil Naji Najib Nashir Nashwan Nasim Nasser Nayef 
+			Oras 
+			Qadhi Qaed Qahtan Qasim 
+			Radwan Raed Rajab Ramzi Rashad Rashid Rasul Riad 
+			Saad Sabri Sadiq Sahim Said Salah "Salah ad-Din" Salih Salim Salman Sam Sami Samir Sanad Saud Sayf Shaher Shamlan "Shams ad-Din" Sharaf "Sharaf ad-Din" Shawqi Shihab Siddiq Sinan Sulayman_Solomon Sultan 
+			Taha Talal Tamim Tariq Tawfiq Thabit Thahit Turki 
+			Umar_Umar Urwa Uthman_Uthman 
+			Wahhas Wajdan Waqas Wahid Walid Wissam 
+			Yahya_John Yaqub_James Yasin Yasir Yusuf_Joseph 
+			Zahir Zain Zayd Ziyad Zuhail 
+		}
+		female_names = {
+			Abda Afrah Ahlam Aisha_Aisha Alaa Amal Amat Amina Anisah Arwa Asma Ashwaq Ayesha Azizah 
+			Balqis Baraka Bushra 
+			Dahma 
+			Elham Entesar Eshraq 
+			Fadia Fatima_Fatima 
+			Hakimah Hana Hanan Heba Hind Hoda Huria 
+			Ibtisam Iman Isra 
+			Ja'da Jamala Jamila 
+			Karama Khadija_Khadija  
+			Laila Lola 
+			Maha Mahia Mai Manal Maymuna Maysun Muna 
+			Nabila Nada Nadia Najat Najla Nawal Nawar Nihal Nooran Nour Nourieh Nujood 
+			Rabia'a Raja Ramziya Rashida Raufa Reem 
+			Saba Safa Sahar Salwa Samah Samia Samira Sara_Sarah Sawsan Shada Siham Sumaya 
+			Tahani Tawakkul Taysir 
+			Uma 
+			Wahiba Wasilah 
+			Yasmin_Jasmin 
+			Zahra Zana 
+		}
+		
+		dukes_called_kings=yes
+		
+		from_dynasty_suffix = "i"
+		
+
+		male_patronym = "ibn "
+		female_patronym = "bint "
+		prefix = yes 
+	}
 	hadhrami = {
 		graphical_cultures = { arabicgfx muslimgfx egyptiangfx }
 		

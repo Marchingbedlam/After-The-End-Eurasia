@@ -1239,7 +1239,9 @@
 	trait=skilled_tactician
 	trait=cavalry_leader
 	trait=unyielding_leader
+	trait=lipka
 	2643.8.13={birth=yes}
+	2660.1.1={employer=1996102}
 }
 1996087={
 	name="Mikalaj"
@@ -1434,4 +1436,12 @@
 	father=1996097
 	mother=1996098
 	2641.12.22={birth=yes}
+}
+1996102={
+	name="Ismail"
+	dynasty=0
+	culture=lipka
+	religion=ruhi
+	father=1996016
+	2612.7.15={birth=yes}
 }
