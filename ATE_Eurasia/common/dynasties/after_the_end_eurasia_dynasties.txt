@@ -6481,7 +6481,7 @@
 1917049 = { name="Musa" culture=eastern_berber }
 1917050 = { name="Suag" culture=eastern_berber }
 1917051 = { name="Azuza" culture=eastern_berber }
-1917052 = { name="Menguellet" culture=francarabe 
+1917052 = { name="Menguellet" culture=eastern_berber used_for_random=no
 	coat_of_arms = { 
 		religion = sunni
 		template = 0
@@ -19072,6 +19072,21 @@ coat_of_arms = {
 2043066 = { name="Budjenit" culture=chaoui }
 2043067 = { name="At Zoltan" culture=chaoui }
 2043068 = { name="At Sellam" culture=chaoui }
+2043069 = { name="Mezaguer" culture=chaoui 
+	coat_of_arms = { 
+		religion = sunni
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 15
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2043070 = { name="Ouettar" culture=chaoui }
 
 2044000 = { name="Amrouche" culture=kabyle }
 2044001 = { name="Hammache" culture=kabyle }
@@ -19125,6 +19140,35 @@ coat_of_arms = {
 2044049 = { name="Belhocine" culture=kabyle }
 2044050 = { name="Bedjaoui" culture=kabyle }
 2044051 = { name="Boudjelid" culture=kabyle }
+2044052 = { name="Lhasnawi" culture=kabyle 
+	coat_of_arms = { 
+		religion = sunni
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 16
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2044053 = { name="Tabti" culture=kabyle }
+2044054 = { name="Khenniche" culture=kabyle 
+	coat_of_arms = { 
+		religion = sunni
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 21
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 2045000 = { name="Szilágyi" culture=hungarian }
 2045001 = { name="Török" culture=hungarian }
@@ -28909,7 +28953,20 @@ coat_of_arms = {
 2122122 = { name="Shutukov" culture=nogai }
 2122123 = { name="Ebzeev" culture=nogai }
 
-2123000 = { name="Saidi" culture=algerian }
+2123000 = { name="Saidi" culture=algerian 
+	coat_of_arms = { 
+		religion = sunni
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 14
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2123001 = { name="Slimani" culture=algerian }
 2123002 = { name="Touati" culture=algerian }
 2123003 = { name="Mansouri" culture=algerian }
@@ -29110,6 +29167,97 @@ coat_of_arms = {
 2123198 = { name="Kaci" culture=algerian }
 2123199 = { name="Sahli" culture=algerian }
 2123200 = { name="Cheriet" culture=algerian }
+2123201 = { name="Benikhlef" culture=algerian 
+	coat_of_arms = { 
+		religion = sunni
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 17
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2123202 = { name="Ouahab" culture=algerian }
+2123203 = { name="Zitouni" culture=algerian 
+	coat_of_arms = { 
+		religion = sunni
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 18
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2123204 = { name="Bessaïh" culture=algerian }
+2123205 = { name="Bahari" culture=algerian }
+2123206 = { name="Hasni" culture=algerian 
+	coat_of_arms = { 
+		religion = sunni
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 19
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2123207 = { name="M'rabet" culture=algerian }
+2123208 = { name="Ben Badis" culture=algerian 
+	coat_of_arms = { 
+		religion = sunni
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 20
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2123209 = { name="Belhocine" culture=algerian }
+2123210 = { name="Jadid" culture=algerian 
+	coat_of_arms = { 
+		religion = sunni
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 22
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2123211 = { name="Cherifi" culture=algerian }
+2123212 = { name="Belfodil" culture=algerian }
+2123213 = { name="Hethat" culture=algerian 
+	coat_of_arms = { 
+		religion = sunni
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 23
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 2124000 = { name="Puttkamer" culture=odrzan }
 2124001 = { name="Laskowik" culture=odrzan }
