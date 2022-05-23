@@ -1234,3 +1234,42 @@ d_kozachina = {
 
 
 }
+
+d_nizari = {
+	color={ 110 120 230 }
+	color2={ 220 220 0 }
+	
+	capital = 3032 # Hyderabad
+	creation_requires_capital = no 
+	
+	landless = no 
+	
+	allow = {
+		OR = {
+			trait=sayyid
+			trait=mirza
+		}
+		religion = ismaili
+		num_of_holy_sites = 3
+		piety = 500
+		prestige = 1000 
+		wealth = 250
+	}
+	
+	short_name = yes
+	
+	caliphate = yes 
+	
+	title = "AGA_KHAN"
+	title_female = "AGA_KHANUM"
+	foa = "CALIPH_FOA"
+	
+	dignity = 500 # Counted as having this many more counties than it does
+	
+	# Controls a religion
+	controls_religion =ismailisunnah
+	
+	religion = ismaili
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}

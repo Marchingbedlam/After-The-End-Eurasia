@@ -1,0 +1,208 @@
+3200000={
+	name="Abdullah Ali Shah" #Aga Khan X
+	dynasty=2158116 #Hussaini
+	culture=muhajir
+	religion=ismaili
+	trait=sayyid
+	2202.5.12={birth=yes}
+	2266.5.27={death=yes}
+}
+3200001={
+	name="Hamid Karim" #Aga Khan XI
+	dynasty=2158116 #Hussaini
+	culture=muhajir
+	religion=ismaili
+	father=3200000
+	trait=sayyid
+	2238.10.27={birth=yes}
+	2295.12.31={death=yes}
+}
+3200002={
+	name="Fazil Shah" #Aga Khan XII
+	dynasty=2158116 #Hussaini
+	culture=muhajir
+	religion=ismaili
+	father=3200001
+	trait=sayyid
+	2276.4.14={birth=yes}
+	2351.2.3={death=yes}
+}
+3200003={
+	name="Karim Ali" #Aga Khan XIII
+	dynasty=2158116 #Hussaini
+	culture=muhajir
+	religion=ismaili
+	father=3200002
+	trait=sayyid
+	2329.10.11={birth=yes}
+	2393.11.20={death={death_reason=death_battle}}
+}
+3200004={
+	name="Ghulam Ali" 
+	dynasty=2158116 #Hussaini
+	culture=muhajir
+	religion=ismaili
+	father=3200002
+	trait=sayyid
+	2323.11.10={birth=yes}
+	2372.12.11={death=yes}
+}
+3200005={
+	name="Javed Ali"
+	dynasty=2158116 #Hussaini
+	culture=muhajir
+	religion=ismaili
+	father=3200002
+	trait=sayyid
+	2318.5.3={birth=yes}
+	2379.7.27={death=yes}
+}
+3200006={
+	name="Wajid" #Aga Khan XIV
+	dynasty=2158116 #Hussaini
+	culture=muhajir
+	religion=ismaili
+	father=3200003
+	trait=sayyid
+	2357.12.30={birth=yes}
+	2408.2.19={death=yes}
+}
+3200007={
+	name="Maqsud" #Aga Khan XV
+	dynasty=2158116 #Hussaini
+	culture=muhajir
+	religion=ismaili
+	father=3200006
+	trait=sayyid
+	2391.6.25={birth=yes}
+	2458.12.22={death=yes}
+}
+3200008={
+	name="Atif" #Aga Khan XVI
+	dynasty=2158116 #Hussaini
+	culture=muhajir
+	religion=ismaili
+	father=3200007
+	trait=sayyid
+	2429.12.7={birth=yes}
+	2499.8.17={death=yes}
+}
+3200009={
+	name="Shaukat"
+	dynasty=2158116 #Hussaini
+	culture=muhajir
+	religion=ismaili
+	father=3200008
+	trait=sayyid
+	2458.6.29={birth=yes}
+	2499.3.29={death=yes}
+}
+3200010={
+	name="Shaukat" #Aga Khan XVII
+	dynasty=2158116 #Hussaini
+	culture=muhajir
+	religion=ismaili
+	father=3200009
+	trait=sayyid
+	2485.4.9={birth=yes}
+	2558.10.8={death=yes}
+}
+3200011={
+	name="Akhtar"
+	dynasty=2158116 #Hussaini
+	culture=muhajir
+	religion=ismaili
+	father=3200010
+	trait=sayyid
+	2518.8.29={birth=yes}
+	2555.6.10={death=yes}
+}
+3200012={
+	name="Muhammad" #Aga Khan XVIII
+	dynasty=2158116 #Hussaini
+	culture=muhajir
+	religion=ismaili
+	father=3200011
+	trait=sayyid
+	2542.1.17={birth=yes}
+	2619.3.31={death=yes}
+}
+3200013={
+	name="Idris" #Aga Khan XIX
+	dynasty=2158116 #Hussaini
+	culture=muhajir
+	religion=ismaili
+	father=3200012
+	trait=sayyid
+	2583.3.10={birth=yes}
+	2662.2.11={death=yes}
+}
+3200014={
+	name="Alamgir" #Aga Khan XX
+	dynasty=2158116 #Hussaini
+	culture=muhajir
+	religion=ismaili
+	father=3200013
+	trait=wroth
+	trait=ambitious
+	trait=just
+	trait=proud
+	trait=intricate_webweaver
+	trait=sayyid
+	2619.9.7={birth=yes}
+}
+3200015={
+	name="Abdullah" #Abdullah Raham of Sindh
+	dynasty=2158117 #Raham
+	culture=sindhi
+	religion=deobandi
+	trait=zealous
+	trait=ambitious
+	trait=just
+	trait=skilled_tactician
+	2623.4.9={birth=yes}
+}
+3200016={
+	name="Hassan" #Hassan Harun of Sindh
+	dynasty=2158118 #Harun
+	culture=muhajir
+	religion=deobandi
+	2217.8.27={birth=yes}
+	2274.3.15={death=yes}
+}
+3200017={
+	name="Muslim" #Muslim Harun of Sindh
+	dynasty=2158118 #Harun
+	culture=muhajir
+	religion=deobandi
+	father=3200016
+	2239.9.6={birth=yes}
+	2301.9.10={death=yes}
+}
+3200018={
+	name="Yusuf" #Yusuf Harun of Sindh
+	dynasty=2158118 #Harun
+	culture=muhajir
+	religion=deobandi
+	father=3200017
+	2263.12.10={birth=yes}
+	2318.8.27={death=yes}
+}
+3200019={
+	name="Zakaria" #Zakaria Harun of Sindh
+	dynasty=2158118 #Harun
+	culture=muhajir
+	religion=deobandi
+	father=3200018
+	2292.3.27={birth=yes}
+	2339.3.15={death=yes}
+}
+3200020={
+	name="Hassan" #Hassan II Harun of Sindh
+	dynasty=2158118 #Harun
+	culture=muhajir
+	religion=deobandi
+	father=3200019
+	2321.2.12={birth=yes}
+	2346.5.7={death={death_reason=death_battle}}
+}
