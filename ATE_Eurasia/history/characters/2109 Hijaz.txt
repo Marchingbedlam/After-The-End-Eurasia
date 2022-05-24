@@ -1,0 +1,162 @@
+2109000={ #Duke of Tabuk (Jordanian Tribute)
+	name="Muhammad"
+	dynasty=2109000 #Ali
+	culture=hijazi
+	religion=sunni
+	2638.1.1={birth=yes}
+}
+2109001={ #Count of Duba
+	name="Mansur"
+	dynasty=2109001 #Al-Shaykh
+	culture=hijazi
+	religion=ahl_as_salaf
+	2639.7.29={birth=yes}
+}
+2109002={ #Count of Tayma
+	name="Nasir"
+	dynasty=2109002 #Zahrani
+	culture=hijazi
+	religion=ahl_as_salaf
+	2638.1.1={birth=yes}
+}
+2109003={ #Duke of Madinah
+	name="Ahmad"
+	dynasty=2109003 #Al-Dawud
+	culture=hijazi
+	religion=ahl_as_salaf
+	2632.9.18={birth=yes}
+}
+2109004={ #Duke of Rabigh
+	name="Muhammad"
+	dynasty=2109004 #Ali
+	culture=hijazi
+	religion=sunni
+	2638.1.1={birth=yes}
+}
+2109005={ #Count of al-Mahd
+	name="Muhammad"
+	dynasty=2109005 #Ali
+	culture=hijazi
+	religion=sunni
+	2638.1.1={birth=yes}
+}
+2109006={ #Duke of Makkah
+	name="Turki"
+	dynasty=2109006 #Al-Khaldi
+	culture=hijazi
+	religion=ahl_as_salaf
+	father=2109017
+	2622.2.9={birth=yes}
+}
+2109007={ #Count of Turubah
+	name="Muhammad"
+	dynasty=2109007 #Ali
+	culture=hijazi
+	religion=sunni
+	2638.1.1={birth=yes}
+}
+2109008={ #Count of Ranyah
+	name="Muhammad"
+	dynasty=2109008 #Ali
+	culture=hijazi
+	religion=sunni
+	2638.1.1={birth=yes}
+}
+2109009={ #Count of al-Qunfudhah
+	name="Muhammad"
+	dynasty=2109009 #Ali
+	culture=hijazi
+	religion=shiite
+	2638.1.1={birth=yes}
+}
+2109010={ #Count of al-Bahah
+	name="Muhammad"
+	dynasty=2109010 #Ali
+	culture=hijazi
+	religion=sunni
+	2638.1.1={birth=yes}
+}
+2109011={ #Northern Asir Lord (Asir Vassal)
+	name="Muhammad"
+	dynasty=2109011 #Ali
+	culture=hijazi
+	religion=shiite
+	2638.1.1={birth=yes}
+}
+2109012={ #Duke of Asir
+	name="Jalal"
+	dynasty=2109012 #Al-Khazan
+	culture=yemeni
+	religion=ismaili
+	2628.8.2={birth=yes}
+}
+2109013={
+	name="Tawfik"
+	dynasty=2109173 #Al-Qahtani
+	culture=hijazi
+	religion=ahl_as_salaf
+	2540.8.17={birth=yes}
+	2607.3.9={death=yes}
+}
+2109014={
+	name="Abdullah"
+	dynasty=2109173 #Al-Qahtani
+	culture=hijazi
+	religion=ahl_as_salaf
+	father=2109013
+	2569.1.18={birth=yes}
+	2624.8.29={death=yes}
+}
+2109015={
+	name="Lutfi"
+	dynasty=2109173 #Al-Qahtani
+	culture=hijazi
+	religion=ahl_as_salaf
+	father=2109014
+	2593.12.14={birth=yes}
+	2631.4.27={death={death_reason=death_battle killer=2109016}}
+}
+2109016={
+	name="Ayman"
+	dynasty=2109006 #Al-Khaldi
+	culture=hijazi
+	religion=ahl_as_salaf
+	2566.12.20={birth=yes}
+	2611.2.2={death=yes}
+}
+2109017={
+	name="Nawaf"
+	dynasty=2109006 #Al-Khaldi
+	culture=hijazi
+	religion=ahl_as_salaf
+	father=2109016
+	2592.10.17={birth=yes}
+	2642.6.16={death={death_reason=death_murder killer=2109018}}
+}
+2109018={
+	name="Ayyub"
+	dynasty=2109006 #Al-Khaldi
+	culture=hijazi
+	religion=ahl_as_salaf
+	father=2109016
+	2587.4.9={birth=yes}
+	2656.1.9={death={death_reason=death_murder killer=2109006}}
+}
+2109019={
+	name="Ayman"
+	dynasty=2109006 #Al-Khaldi
+	culture=hijazi
+	religion=ahl_as_salaf
+	father=2109018
+	2610.9.20={birth=yes}
+	2656.6.4={death={death_reason=death_battler killer=2109006}}
+}
+2109020={
+	name="Adnan"
+	dynasty=2109006 #Al-Khaldi
+	culture=hijazi
+	religion=ahl_as_salaf
+	father=2109018
+	2613.4.14={birth=yes}
+	2656.6.4={death={death_reason=death_battler killer=2109006}}
+}

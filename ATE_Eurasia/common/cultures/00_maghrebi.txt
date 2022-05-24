@@ -4,7 +4,7 @@ maghrebi = {
 	graphical_cultures = { muslimgfx }
 	
 	algerian = {
-		graphical_cultures = { muslimgfx arabicgfx }
+		graphical_cultures = { maghrebigfx muslimgfx arabicgfx }
 
 		color = { 0.0 0.38 0.2 }
 
@@ -57,7 +57,7 @@ maghrebi = {
 		from_dynasty_prefix = "mn "
 		
 		male_patronym = "ben "
-		female_patronym = "bint "
+		female_patronym = "bent "
 		prefix = yes
 
 		pat_grf_name_chance = 30
@@ -71,7 +71,7 @@ maghrebi = {
 		modifier = default_culture_modifier
 	}	
 	sahrawi = {
-		graphical_cultures = { berbergfx arabicgfx muslimgfx }
+		graphical_cultures = { maghrebigfx berbergfx arabicgfx muslimgfx }
 		
 		color = { 0.7 0.2 0.2 }
 		
@@ -125,7 +125,7 @@ maghrebi = {
 	}
 	
 	moroccan = {
-		graphical_cultures = { muslimgfx arabicgfx }
+		graphical_cultures = { maghrebigfx muslimgfx arabicgfx }
 
 		color = { 0.76 0.15 0.18 }
 
@@ -177,7 +177,7 @@ maghrebi = {
 		from_dynasty_prefix = "mn "
 		
 		male_patronym = "ben "
-		female_patronym = "bint "
+		female_patronym = "bent "
 		prefix = yes
 
 		pat_grf_name_chance = 30
@@ -192,7 +192,7 @@ maghrebi = {
 	}	
 	
 	tunisian = {
-		graphical_cultures = { muslimgfx arabicgfx }
+		graphical_cultures = { maghrebigfx muslimgfx arabicgfx }
 
 		color = { 0.92 0.77 0.25 }
 
@@ -259,7 +259,7 @@ maghrebi = {
 		modifier = default_culture_modifier
 	}	
 	libyan = {
-		graphical_cultures = { muslimgfx arabicgfx }
+		graphical_cultures = { maghrebigfx muslimgfx arabicgfx }
 
 		color = { 0.7 0.5 0.2 }
 

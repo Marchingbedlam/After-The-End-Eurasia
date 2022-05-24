@@ -1,4 +1,19 @@
 spriteTypes = {
+	spriteType = {
+		name = "PORTRAIT_swabiangfx_child_male"
+		texturefile = "gfx\\characters\\default_son.tga"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	
+	spriteType = {
+		name = "PORTRAIT_swabiangfx_child_female"
+		texturefile = "gfx\\characters\\default_daughter.tga"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
 
 	spriteType = {
 		name = "GFX_swabian_male_clothes_behind"

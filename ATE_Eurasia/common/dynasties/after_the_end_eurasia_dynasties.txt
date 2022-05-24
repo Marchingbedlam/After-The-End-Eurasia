@@ -2041,10 +2041,34 @@
 1479078 = { name="Olkhonud" culture=khalkha }
 1479079 = { name="Erdenebileg" culture=khalkha }
 
-1501000 = { name="Ó Fearghail"culture=irish used_for_random=no }
+1501000 = { name="Ó Fearghail"culture=irish used_for_random=no 
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 15
+			texture_internal = 30
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1501001 = { name="Lí"culture=irish }
 1501002 = { name="Thaíli-Raith"culture=irish }
-1501003 = { name="Ó Deaghaidh"culture=irish }
+1501003 = { name="Ó Deaghaidh"culture=irish 
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 15
+			texture_internal = 29
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1501004 = { name="Branáin"culture=irish }
 1501005 = { name="Mac an Bháird"culture=irish }
 1501006 = { name="Barrett"culture=irish }
@@ -2052,8 +2076,32 @@
 1501008 = { name="Chulainn"culture=irish }
 1501009 = { name="Tanúir"culture=irish }
 1501010 = { name="Mac Muireadhaigh"culture=irish }
-1501011 = { name="Ó Fathaigh"culture=irish }
-1501012 = { name="Burke"culture=irish }
+1501011 = { name="Ó Fathaigh"culture=irish 
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 15
+			texture_internal = 31
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1501012 = { name="Burke"culture=irish 
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 15
+			texture_internal = 26
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1501013 = { name="Fitzgerald"culture=irish }
 1501014 = { name="Ó Domhnaill"culture=irish }
 1501015 = { name="Yin"culture=irish used_for_random = no }
@@ -2064,7 +2112,19 @@
 1501020 = { name="West"culture=irish }
 1501021 = { name="White"culture=irish }
 1501022 = { name="Ó Donnobháin"culture=irish }
-1501023 = { name="Joyce"culture=irish }
+1501023 = { name="Joyce"culture=irish 
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 15
+			texture_internal = 28
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1501024 = { name="Ó Cathasaigh"culture=irish }
 1501025 = { name="Ó Dubhghaill"culture=irish }
 1501026 = { name="Beckett"culture=irish}
@@ -2652,7 +2712,19 @@
 	}
 }
 
-1607000 = { name="Morrison" culture=ulsterman }
+1607000 = { name="Morrison" culture=ulsterman 
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 15
+			texture_internal = 26
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1607001 = { name="Mitchelburn" culture=ulsterman }
 1607002 = { name="Murray" culture=ulsterman }
 1607003 = { name="Hood" culture=ulsterman }
@@ -27118,9 +27190,9 @@ coat_of_arms = {
 2106158 = { name="Khlaifawi" culture=furataini }
 2106159 = { name="al-Lami" culture=furataini }
 
-2107000 = { name="Ali" culture=najdi }
-2107001 = { name="Ali" culture=najdi }
-2107002 = { name="Ali" culture=najdi }
+2107000 = { name="Al-Saud" culture=najdi }
+2107001 = { name="Dukkak" culture=najdi }
+2107002 = { name="Siddiqi" culture=najdi }
 2107003 = { name="Ali" culture=najdi }
 2107004 = { name="Ali" culture=najdi }
 2107005 = { name="Ali" culture=najdi }
@@ -27246,12 +27318,12 @@ coat_of_arms = {
 2107125 = { name="Al-Thunayyan" culture=najdi }
 2107126 = { name="Al-Zori" culture=najdi }
 
-2108000 = { name="Ali" culture=bahrayni }
-2108001 = { name="Ali" culture=bahrayni }
-2108002 = { name="Ali" culture=bahrayni }
-2108003 = { name="Ali" culture=bahrayni }
-2108004 = { name="Ali" culture=bahrayni }
-2108005 = { name="Ali" culture=bahrayni }
+2108000 = { name="Al-Dabbagh" culture=bahrayni }
+2108001 = { name="Ansari" culture=bahrayni }
+2108002 = { name="Al-Khawaja" culture=bahrayni }
+2108003 = { name="Al-Jamri" culture=bahrayni }
+2108004 = { name="Al-Samahiji" culture=bahrayni }
+2108005 = { name="Al-Sulaiti" culture=bahrayni }
 2108006 = { name="Ali" culture=bahrayni }
 2108007 = { name="Ali" culture=bahrayni }
 2108008 = { name="Ali" culture=bahrayni }
@@ -27489,18 +27561,18 @@ coat_of_arms = {
 2108240 = { name="Jabbareh" culture="bahrayni" }
 
 2109000 = { name="Ali" culture=hijazi }
-2109001 = { name="Ali" culture=hijazi }
-2109002 = { name="Ali" culture=hijazi }
-2109003 = { name="Ali" culture=hijazi }
+2109001 = { name="Al-Shaykh" culture=hijazi }
+2109002 = { name="Zahrani" culture=hijazi }
+2109003 = { name="Al-Dawud" culture=hijazi }
 2109004 = { name="Ali" culture=hijazi }
 2109005 = { name="Ali" culture=hijazi }
-2109006 = { name="Ali" culture=hijazi }
+2109006 = { name="Al-Khaldi" culture=hijazi }
 2109007 = { name="Ali" culture=hijazi }
 2109008 = { name="Ali" culture=hijazi }
 2109009 = { name="Ali" culture=hijazi }
 2109010 = { name="Ali" culture=hijazi }
 2109011 = { name="Ali" culture=hijazi }
-2109012 = { name="Ali" culture=hijazi }
+2109012 = { name="Al-Khazan" culture=hijazi }
 2109013 = { name="Al-Hashemi" culture=hijazi }
 2109014 = { name="Siraj" culture=hijazi }
 2109015 = { name="Al-Ahmadi" culture=hijazi }
@@ -27662,7 +27734,7 @@ coat_of_arms = {
 2109171 = { name="Al-Shihri" culture=hijazi }
 2109171 = { name="Zubrumawi" culture=hijazi }
 2109172 = { name="Al-Mutairi" culture=hijazi }
-
+2109173 = { name="Al-Qahtani" culture=hijazi }
 
 2110000 = {name="Al-Makki" culture=umani }
 2110001 = {name="Al-Zubayr" culture=umani }
@@ -27735,18 +27807,18 @@ coat_of_arms = {
 2110068 = {name="Al-Zawawi" culture=umani }
 
 2111000 = { name="Ali" culture=yemeni }
-2111001 = { name="Ali" culture=yemeni }
+2111001 = { name="Al-Hamdani" culture=yemeni }
 2111002 = { name="Ali" culture=yemeni }
 2111003 = { name="Ali" culture=yemeni }
 2111004 = { name="Ali" culture=yemeni }
-2111005 = { name="Ali" culture=yemeni }
+2111005 = { name="Rajeh" culture=yemeni }
 2111006 = { name="Ali" culture=yemeni }
 2111007 = { name="Ali" culture=yemeni }
 2111008 = { name="Ali" culture=yemeni }
 2111009 = { name="Ali" culture=yemeni }
-2111010 = { name="Ali" culture=yemeni }
+2111010 = { name="Massud" culture=yemeni }
 2111011 = { name="Ali" culture=yemeni }
-2111012 = { name="Ali" culture=yemeni }
+2111012 = { name="Al-Huthayfi" culture=yemeni }
 2111013 = { name="Muhammad" culture=yemeni }
 2111014 = { name="Shukri" culture=yemeni }
 2111015 = { name="Hassan" culture=yemeni }
@@ -33111,6 +33183,106 @@ coat_of_arms = {
 2158116 = { name="Hussaini" culture=sindhi used_for_random=no }
 2158117 = { name="Raham" culture=sindhi used_for_random=no }
 2158118 = { name="Harun" culture=sindhi used_for_random=no }
+
+2159000 = { name="Al-Salimi" culture=akhdam }
+2159001 = { name="Al-Omqi" culture=akhdam }
+2159002 = { name="Dahyah" culture=akhdam }
+2159003 = { name="Al-Hakimi" culture=akhdam }
+2159004 = { name="Gehamah" culture=akhdam }
+2159005 = { name="Ghurabah" culture=akhdam }
+2159006 = { name="Hamsan" culture=akhdam }
+2159007 = { name="Al-Ghamri" culture=akhdam }
+2159008 = { name="Al-Shaibani" culture=akhdam }
+2159009 = { name="Sasaah" culture=akhdam }
+2159010 = { name="Al-Shamsi" culture=akhdam }
+2159011 = { name="Al-Sharif" culture=akhdam }
+2159012 = { name="Abdulkarim" culture=akhdam }
+2159013 = { name="Muhammad" culture=akhdam }
+2159014 = { name="Shukri" culture=akhdam }
+2159015 = { name="Hassan" culture=akhdam }
+2159016 = { name="Al-Maqtri" culture=akhdam }
+2159017 = { name="Mansur" culture=akhdam }
+2159018 = { name="Faisal" culture=akhdam }
+2159019 = { name="Al-Mezjaji" culture=akhdam }
+2159020 = { name="Al-Weshah" culture=akhdam }
+2159021 = { name="Zaidan" culture=akhdam }
+2159022 = { name="Ba-Abud" culture=akhdam }
+2159023 = { name="Al-Dali" culture=akhdam }
+2159024 = { name="Al-Dughish" culture=akhdam }
+2159025 = { name="Thabit" culture=akhdam }
+2159026 = { name="Al-Hamdani" culture=akhdam }
+2159027 = { name="Al-Dhahiri" culture=akhdam }
+2159028 = { name="Al-Matari" culture=akhdam }
+2159029 = { name="Al-Kubati" culture=akhdam }
+2159030 = { name="Al-Sayadi" culture=akhdam }
+2159031 = { name="Al-Manifi" culture=akhdam }
+2159032 = { name="Al-Areqi" culture=akhdam }
+2159033 = { name="Al-Bukhaiti" culture=akhdam }
+2159034 = { name="Al-Hubaishi" culture=akhdam }
+2159035 = { name="Al-Sabahi" culture=akhdam }
+2159036 = { name="Al-Dhaibani" culture=akhdam }
+2159037 = { name="Al-Gabr" culture=akhdam }
+2159038 = { name="Farea" culture=akhdam }
+2159039 = { name="Abduljabbar" culture=akhdam }
+2159040 = { name="Al-Haggam" culture=akhdam }
+2159041 = { name="Al-Hetar" culture=akhdam }
+2159042 = { name="Amin" culture=akhdam }
+2159043 = { name="Al-Jabryi" culture=akhdam }
+2159044 = { name="Al-Rassas" culture=akhdam }
+2159045 = { name="Elayah" culture=akhdam }
+2159046 = { name="Al-Baadani" culture=akhdam }
+2159047 = { name="Al-Ghurbani" culture=akhdam }
+2159048 = { name="Al-Safi" culture=akhdam }
+2159049 = { name="Basuhai" culture=akhdam }
+2159050 = { name="Al-Wadi" culture=akhdam }
+2159051 = { name="Banaja" culture=akhdam }
+2159052 = { name="Nfaiei" culture=akhdam }
+2159053 = { name="Al-Sasi" culture=akhdam }
+2159054 = { name="Al-Nono" culture=akhdam }
+2159055 = { name="Al-Dhrab" culture=akhdam }
+2159056 = { name="Al-Hadi" culture=akhdam }
+2159057 = { name="Al-Nash" culture=akhdam }
+2159058 = { name="Al-Sanini" culture=akhdam }
+2159059 = { name="Salih" culture=akhdam }
+2159060 = { name="Ayash" culture=akhdam }
+2159061 = { name="Al-Harsh" culture=akhdam }
+2159062 = { name="Khairalah" culture=akhdam }
+2159063 = { name="Mutran" culture=akhdam }
+2159064 = { name="Al-Jarshi" culture=akhdam }
+2159065 = { name="Wahid" culture=akhdam }
+2159066 = { name="Jamal" culture=akhdam }
+2159067 = { name="Al-Wajiha" culture=akhdam }
+2159068 = { name="Ahmad" culture=akhdam }
+2159069 = { name="Al-Dahi" culture=akhdam }
+2159070 = { name="Maher" culture=akhdam }
+2159071 = { name="Al-Radaei" culture=akhdam }
+2159072 = { name="Mahdi" culture=akhdam }
+2159073 = { name="Boqshan" culture=akhdam }
+2159074 = { name="Al-Gahwashi" culture=akhdam }
+2159075 = { name="Al-Sarori" culture=akhdam }
+2159076 = { name="Qarawi" culture=akhdam }
+2159077 = { name="Hafiz" culture=akhdam }
+2159078 = { name="Al-Sawadi" culture=akhdam }
+2159079 = { name="Nasser" culture=akhdam }
+2159080 = { name="Abdurboh" culture=akhdam }
+2159081 = { name="Al-Sadiq" culture=akhdam }
+2159082 = { name="Hezam" culture=akhdam }
+2159083 = { name="Farid" culture=akhdam }
+2159084 = { name="Al-Juma'i" culture=akhdam }
+2159085 = { name="Msaad" culture=akhdam }
+2159086 = { name="Ba Haj" culture=akhdam }
+2159087 = { name="Baroies" culture=akhdam }
+2159088 = { name="Al-Abidi" culture=akhdam }
+2159089 = { name="Ghazi" culture=akhdam }
+2159090 = { name="Hazza'a" culture=akhdam }
+2159091 = { name="Al-Khyat" culture=akhdam }
+2159092 = { name="Hanash" culture=akhdam }
+2159093 = { name="Baleid" culture=akhdam }
+2159094 = { name="Al-Worafi" culture=akhdam }
+2159095 = { name="Al-Hagri" culture=akhdam }
+2159096 = { name="Al-Selwi" culture=akhdam }
+2159097 = { name="Ba Suhai" culture=akhdam }
+2159098 = { name="Al-Ariki" culture=akhdam }
 
 2201000 = { name="Lewis" culture=welsh 
 	coat_of_arms = {
