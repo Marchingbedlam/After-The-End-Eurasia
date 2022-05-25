@@ -210,9 +210,8 @@ targeted_decisions = {
 				
 				d_kozachina = {
 					save_event_target_as = target_title
-				}
-				
-				event_target:combatant_1 = { set_character_flag = wants_HOF_title_from@event_target:combatant_2 }			
+					event_target:combatant_1 = { set_character_flag = wants_HOF_title_from@event_target:combatant_2 }
+				}			
 			
 			FROM = {
 				set_character_flag = hof_claim_duel@ROOT
