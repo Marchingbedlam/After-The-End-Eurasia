@@ -13,12 +13,8 @@ cenobitic_elective = {
 			value = 10
 			vassal_of = FROMFROM 
 			OR = { 
-				has_job_title = job_chancellor
-				has_job_title = job_marshal
 				has_job_title = job_treasurer
-				has_job_title = job_spymaster
-				has_minor_title = title_councilmember_king #Generic advisors
-				has_minor_title = title_councilmember_emperor			
+				has_job_title = job_chancellor
 				has_minor_title = title_illuminist
 				has_minor_title = title_bee_keeper
 				has_minor_title = title_cellarer
@@ -1418,50 +1414,6 @@ cenobitic_elective = {
 			localisation_key = tooltip_feudal_elector_vote_heathen
 			NOT = { has_religion_feature = religion_cosmopolitan }
 			NOT = { has_religion_feature = religion_dogmatic }
-			NOR = { 
-				AND = { 
-					trait = sympathy_afro_syncretic
-					FROM = { religion_group = afro_syncretic } 
-				} 
-				AND = { 
-					trait = sympathy_american_native
-					FROM = { religion_group = american_native } 
-				}
-				AND = { 
-					trait = sympathy_amero_syncretic
-					FROM = { religion_group = amero_syncretic } 
-				}
-				AND = { 
-					trait = sympathy_pacific
-					FROM = { religion_group = pacific } 
-				} 
-				AND = { 
-					trait = sympathy_judaism
-					FROM = { religion_group = jewish_group } 
-				} 
-				AND = { 
-					trait = sympathy_indian
-					FROM = { religion_group = indian_group } 
-				} 
-				AND = { 
-					trait = sympathy_nautical
-					FROM = { religion_group = nautical } 
-				} 
-				AND = { 
-					trait = sympathy_cult_of_saints
-					FROM = { religion_group = cult_of_saints } 
-				} 
-				AND = { 
-					trait = sympathy_pagans
-					FROM = { religion_group = pagan_group } 
-				} 
-				AND = { 
-					trait = sympathy_oldworld
-					FROM = { religion_group = oldworld } 
-				} 
-
-
-			}
 			FROM = { 
 				NOT = { religion_group = ROOT } 
 				NOT = { is_heresy_of = ROOT } 
@@ -3813,9 +3765,7 @@ pachomial_elective = {
 			vassal_of = FROMFROM 
 			OR = { 
 				has_job_title = job_chancellor
-				has_job_title = job_marshal
 				has_job_title = job_treasurer
-				has_job_title = job_spymaster
 				has_minor_title = title_councilmember_king #Generic advisors
 				has_minor_title = title_councilmember_emperor			
 				has_minor_title = title_illuminist

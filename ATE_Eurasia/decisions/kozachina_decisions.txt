@@ -1,0 +1,272 @@
+#KOZACHINA EVENTS
+#by Ekanner
+
+decisions = {
+	claim_hetmanate_title = {
+		
+		potential = {
+			religion = kozachina
+			age = 16
+			is_playable = yes
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+			NOT = { has_character_flag = claimedhetmanatetitle }
+			NOT = { has_character_flag = victorioushetman }
+			NOT = { has_landed_title = d_kozachina }
+			NOT = { has_character_modifier = failedclaimhetman }
+		}
+		
+		allow = {
+			religion = kozachina
+			martial >= 15
+			prestige >=500
+			is_playable = yes
+			NOT = { has_character_flag = claimedhetmanatetitle }
+		}
+		
+		effect = {
+			custom_tooltip = { text = TXT_claim_hetmanate_title }
+			set_character_flag = claimedhetmanatetitle #Clear this when attempting to duel for title
+			prestige = -500
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.1
+				trait = slothful
+			}
+			modifier = {
+				factor = 0.1
+				trait = cynical
+			}
+			modifier = {
+				factor = 0.1
+				trait = craven
+			}
+			modifier = {
+				factor = 0
+				war = yes
+			}
+			modifier = { factor = 1	martial >= 15 }
+			modifier = { factor = 2	trait = zealous }
+			modifier = { factor = 2	trait = devout }
+			modifier = { factor = 2	martial >= 20 }
+			modifier = { factor = 5	trait = ambitious }
+			modifier = { factor = 5	martial >= 25 }
+		}			
+		
+		revoke_allowed = {
+			always = no
+		}
+	}
+}
+
+
+targeted_decisions = {
+
+	#####################################
+	# 		KOZACHINA CLAIM DUEL 		#
+	#####################################
+	claim_duel_decision = {
+		only_playable = yes
+		is_high_prio = yes
+		diplomacy_icon = GFX_duel_decision
+
+		ai_check_interval = 10
+		
+		from_potential = {
+			is_playable = yes
+			is_adult = yes
+			prisoner = no
+			religion = kozachina
+			has_character_flag = claimedhetmanatetitle
+			NOT = { has_character_flag = victorioushetman }
+			NOT = { has_character_modifier = failedclaimhetman }
+
+			has_regent = no
+			is_inaccessible_trigger = no
+
+			OR = {
+				ai = no	
+				is_female = no
+				AND = {
+				
+				}
+				AND = {
+					is_female = yes
+					OR = {
+						trait = brave
+						martial >= 25
+					}
+				}
+			}
+		}
+		
+		potential = {
+			OR = {
+					independent = yes	
+					liege = {
+						any_vassal = {
+							character = FROM
+						}
+					}
+			}
+			OR = {
+				AND = {
+					is_adult = yes
+					FROM = { is_adult = yes }
+				}
+				AND = {
+					is_adult = no
+					FROM = { is_adult = no }
+				}
+			}
+
+			prisoner = no
+			NOT = { character = FROM }
+			is_inaccessible_trigger = no
+		}
+		
+		allow = {
+			ROOT = { has_landed_title = d_kozachina }
+
+			custom_tooltip = {
+				text = duel_tooltip_sickness
+				FROM = {
+					NOR = { #Not in sickly in bed, but sick if well treated is okay
+						has_character_modifier = bedridden_illness
+						has_character_modifier = severe_illness
+						is_incapable = yes
+					}
+				}
+				ROOT = {
+					NOR = { #Not in sickly in bed, but sick if well treated is okay
+						has_character_modifier = bedridden_illness
+						has_character_modifier = severe_illness
+						is_incapable = yes
+					}
+				}
+			}
+
+			custom_tooltip = {
+				text = duel_tooltip_recent_duel
+				hidden_tooltip = {
+					FROM = { NOT = { has_character_modifier = recent_duel_timer } }
+				}
+			}
+
+			custom_tooltip = {
+				text = duel_tooltip_recent_duel
+				hidden_tooltip = {
+					FROM = { NOT = { has_character_modifier = recent_duel_timer } }
+					NOT = { has_character_modifier = recent_duel_timer }
+				}
+			}
+
+			custom_tooltip = {
+				text = duel_tooltip_recent_failure_tt
+				hidden_tooltip = {
+					FROM = { NOT = { has_character_modifier = failedclaimhetman } }
+				}	
+			}
+
+			custom_tooltip = {
+				#text = duel_tooltip_busy
+				text = duel_tooltip_no_war
+				hidden_tooltip = {
+					FROM = {
+						#NOT = { has_character_flag = do_not_disturb }
+						NOT = { war = yes }
+					}
+					#NOT = { has_character_flag = do_not_disturb }
+					NOT = { war = yes }
+				}
+			}
+
+			is_within_diplo_range = FROM # CPU HEAVY!
+
+			trigger_if = {
+				limit = {
+					has_character_modifier = has_recently_declined_duel_cooldown
+				}
+				custom_tooltip = {
+					text = opinion_duel_decline_cooldown_tt
+					NOT = { 
+						has_character_modifier = has_recently_declined_duel_cooldown
+					}
+				}
+			}
+		}
+
+		effect = {
+			#REQUIRED event targets for setting up duel evaluation!
+			FROM = { save_event_target_as = combatant_1 } #the person issuing the duel...
+			save_event_target_as = combatant_2 #the target of the duel...
+			
+			apply_degree_of_dishonorable_duel_effect = yes #checks a bunch of age and health statuses...
+			apply_any_applicable_harsh_penalties_effect = yes
+				
+				d_kozachina = {
+					limit = { event_target:combatant_1 = { has_character_flag = claimedhetmanatetitle } }
+					save_event_target_as = target_title
+				}
+				event_target:combatant_1 = { set_character_flag = wants_HOF_title_from@event_target:combatant_2 }			
+			
+			FROM = {
+				set_character_flag = hof_claim_duel@ROOT
+				pacifists_lose_piety_effect = yes
+				add_character_modifier = {
+					modifier = recent_duel_timer
+					duration = 90
+					hidden = yes
+				}
+			}
+
+			FROM = {
+				show_scope_change = no
+				increase_troublemaker_status_effect = yes
+			}
+
+			hidden_effect = {
+				FROM = {
+					add_character_modifier = {
+						modifier = recently_challenged_rule_timer
+						duration = 90
+						hidden = yes
+					}
+				}
+			}
+			hidden_tooltip = {
+				character_event = { id = HFP.10095 days = 1 } #Duel evaluation (for HOF duel) + result event as follow-up.
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_character_modifier = declined_prestige_duel_timer #if the target has already declined a duel, AI's won't attempt to duel them while the timer is still
+			}
+			modifier = {
+				factor = 0.1
+			}
+			modifier = {
+				factor = 1.1
+				trait = brave
+			}
+			modifier = {
+				factor = 1.5
+				trait = ambitious
+			}
+			title_tier_reduction_score = yes
+		}
+	}
+
+	########################################
+
+}
