@@ -603,6 +603,11 @@ d_finistere = {
 d_lipkastan = {
 	color={ 40 40 80 }
 	color2={ 225 225 225 }
+	
+	allow = {
+		culture = lipka
+		religion_group = muslim
+	}
 
 	capital = 856 # Lida
 	

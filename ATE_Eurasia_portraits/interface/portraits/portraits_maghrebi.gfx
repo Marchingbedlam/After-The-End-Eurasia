@@ -51,6 +51,14 @@ spriteTypes = {
 		can_be_lowres = yes
 	}
 	
+	spriteType = {
+		name = "GFX_maghrebi_male_headgear_mid"
+		texturefile = "gfx\\characters\\maghrebi_male\\maghrebi_male_headgear_mid.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	
 	
 ############## EGYPTIAN ##########################
 
@@ -96,7 +104,8 @@ spriteTypes = {
 			"GFX_character_harelip_muslim:p24"
 			"GFX_character_blinded_eyes:p10"
 			"GFX_character_possessed:p30"       
-			"GFX_maghrebi_male_clothes:p3:c2"											#10
+			"GFX_maghrebi_male_clothes:p3:c2"											
+			"GFX_maghrebi_male_headgear_mid:p5:c3"											#10
 			"GFX_egyptian_male_beard:p4:y"
 			"GFX_frankish_male_overlayer_mid:p31"
 			"GFX_character_eyepatch:p13:y:o32x63"							#15
@@ -172,7 +181,8 @@ spriteTypes = {
 			"GFX_character_harelip_muslim:p24"
 			"GFX_character_blinded_eyes:p10"
 			"GFX_character_possessed:p30"       
-			"GFX_maghrebi_male_clothes:p3:c2"
+			"GFX_maghrebi_male_clothes:p3:c2"		
+			"GFX_maghrebi_male_headgear_mid:p5:c3"											
 			"GFX_frankish_male_overlayer_mid:p31"
 			"GFX_egyptian_male_beard_midage:p4:y"
 			"GFX_frankish_male_overlayer_mid:p31"
@@ -250,6 +260,7 @@ spriteTypes = {
 			"GFX_character_blinded_eyes:p10"
 			"GFX_character_possessed:p30"       
 			"GFX_maghrebi_male_clothes:p3:c2"
+			"GFX_maghrebi_male_headgear_mid:p5:c3"	
 			"GFX_frankish_male_overlayer_mid:p31"
 			"GFX_egyptian_male_beard_oldage:p4:y"
 			"GFX_frankish_male_overlayer_mid:p31"

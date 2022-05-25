@@ -1063,67 +1063,6 @@ feudal_governments = {
 		min_vassal_tax = 0.1
 		aggression = -2
 	}
-	hereditary_theocracy_government = {
-		preferred_holdings = { TEMPLE CASTLE }
-		allowed_holdings = {
-			TEMPLE
-			CASTLE
-			FORT
-			HOSPITAL
-		}
-		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
-			TRIBAL
-		}
-		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
-			tribal_government
-		}
-		accepts_liege_governments = {
-			feudal_government
-			muslim_government
-			republic_government
-			merchant_republic_government
-			theocratic_feudal_government
-			chinese_imperial_government
-		}
-		frame_suffix = "_hereditarytheocracy"
-		title_prefix = "hereditarytheocracy_"
-		potential = {
-			NOT = { government = theocracy_government }
-			NOT = { is_government_potential = theocracy_government }
-			NOT = { capital_scope = { region = custom_hetmanate } }
-			holy_order = no
-			is_patrician = no
-			higher_real_tier_than = baron
-			OR = {
-				religion = shiite
-				religion = haredi
-				religion = hindu
-				religion = mantramarga
-				religion = yazidi
-				religion = vaishnava
-				religion = shaktah
-			}
-			OR = {
-				is_female = no
-				religion_allows_female_temple_holders = yes
-			}
-			OR = {
-				is_female = yes
-				religion_allows_male_temple_holders = yes
-			}
-		}
-		
-		color = { 220 220 240 }
-		
-		can_create_kingdoms = no
-		has_heir_designation = yes
-		have_gender_laws = no
-		can_be_granted_kingdoms_and_empires_by_other_government = no
-
-		can_build_tribal = no
-		
-		capital_move_delay = 600
-	}
 	swaraj_government = {
 		preferred_holdings = { CASTLE CITY }
 		allowed_holdings = {
