@@ -69,7 +69,7 @@ targeted_decisions = {
 	#####################################
 	# 		KOZACHINA CLAIM DUEL 		#
 	#####################################
-	claim_duel_decision = {
+	claim_HOF_duel_decision = {
 		only_playable = yes
 		is_high_prio = yes
 		diplomacy_icon = GFX_duel_decision
@@ -209,9 +209,9 @@ targeted_decisions = {
 			apply_any_applicable_harsh_penalties_effect = yes
 				
 				d_kozachina = {
-					limit = { event_target:combatant_1 = { has_character_flag = claimedhetmanatetitle } }
 					save_event_target_as = target_title
 				}
+				
 				event_target:combatant_1 = { set_character_flag = wants_HOF_title_from@event_target:combatant_2 }			
 			
 			FROM = {
