@@ -244,7 +244,7 @@ character_event = {
 		if = {
 			limit = {
 				religion = kozachina
-				has_strong_claim = FROM # if attacker has strong claim on target
+				has_landed_title = d_kozachina
 				FROM = { religion = kozachina }
 			}
 			custom_tooltip = { text = EVTOPTA_HFP_10096_CLAIM_DUEL_TT } # "This might affect the fate of <title>..."
