@@ -241,7 +241,14 @@ character_event = {
 			}
 			custom_tooltip = { text = EVTOPTA_HFP_10096_CLAIM_DUEL_TT } # "This might affect the fate of <title>..."
 		}
-
+		if = {
+			limit = {
+				religion = kozachina
+				has_strong_claim = FROM # if attacker has strong claim on target
+				FROM = { religion = kozachina }
+			}
+			custom_tooltip = { text = EVTOPTA_HFP_10096_CLAIM_DUEL_TT } # "This might affect the fate of <title>..."
+		}
 		if = {
 			limit = { #Warriors like a warrior who acts like one...
 				is_member_of_any_warrior_lodge_trigger = yes
@@ -323,7 +330,7 @@ character_event = {
 }
 
 
-### "REGULAR" duels start here... #Dave
+### "REGULAR" duels start here...
 # Get challenged (sent from duel_decision )
 character_event = {
 	id = HFP.10095
@@ -975,6 +982,7 @@ character_event = {
 			}
 			NOT = { has_character_flag = mock_duel }
 			NOT = { has_character_flag = claim_duel@event_target:combatant_2 }
+			NOT = { has_character_flag = hof_claim_duel@event_target:combatant_2 }
 		}
 	}
 	option = {
@@ -984,8 +992,10 @@ character_event = {
 		clr_character_flag = likely_to_succeed
 		clr_character_flag = likely_to_fail
 		clr_character_flag = claim_duel@event_target:combatant_2
+		clr_character_flag = hof_claim_duel@event_target:combatant_2
 		clr_character_flag = wants_multiple_titles_from@event_target:combatant_2
 		clr_character_flag = wants_single_title_from@event_target:combatant_2
+		clr_character_flag = wants_HOF_title@event_target:combatant_2
 	}
 }
 
@@ -1431,10 +1441,27 @@ character_event = {
 		}
 	}
 	desc = {
+		text = EVTDESC_HF_10103_intrigue_default #I used intrigue and won
+		trigger = {
+			is_using_intrigue_trigger = yes
+			NOT = {
+				event_target:combatant_1 = { has_character_flag = hof_claim_duel@event_target:combatant_2 }
+			}
+		}
+	}
+	desc = {
 		text = EVTDESC_HFP_10103_A
 		trigger = {
 			has_character_flag = desc_A
 			NOT = { event_target:combatant_1 = { has_character_flag = claim_duel@event_target:combatant_2 } }
+			is_using_intrigue_trigger = no
+		}
+	}
+	desc = {
+		text = EVTDESC_HFP_10103_A
+		trigger = {
+			has_character_flag = desc_A
+			NOT = { event_target:combatant_1 = { has_character_flag = hof_claim_duel@event_target:combatant_2 } }
 			is_using_intrigue_trigger = no
 		}
 	}
@@ -1447,10 +1474,26 @@ character_event = {
 		}
 	}
 	desc = {
+		text = EVTDESC_HFP_10103_B
+		trigger = {
+			has_character_flag = desc_B
+			NOT = { event_target:combatant_1 = { has_character_flag = hof_claim_duel@event_target:combatant_2 } }
+			is_using_intrigue_trigger = no
+		}
+	}
+	desc = {
 		text = EVTDESC_HFP_10103_C
 		trigger = {
 			has_character_flag = desc_C
 			NOT = { event_target:combatant_1 = { has_character_flag = claim_duel@event_target:combatant_2 } }
+			is_using_intrigue_trigger = no
+		}
+	}
+	desc = {
+		text = EVTDESC_HFP_10103_C
+		trigger = {
+			has_character_flag = desc_C
+			NOT = { event_target:combatant_1 = { has_character_flag = hof_claim_duel@event_target:combatant_2 } }
 			is_using_intrigue_trigger = no
 		}
 	}
@@ -1466,9 +1509,39 @@ character_event = {
 		}
 	}
 	desc = {
+		text = EVTDESC_HF_10103_A
+		trigger = {
+			has_character_flag = desc_A
+			event_target:combatant_1 = {
+				has_character_flag = hof_claim_duel@event_target:combatant_2
+				NOT = { has_character_flag = attacker_using_poison@event_target:combatant_2 }
+			}
+		}
+	}
+	desc = {
 		text = EVTDESC_HF_10103_B
 		trigger = {
 			has_character_flag = desc_B
+			event_target:combatant_1 = {
+				has_character_flag = claim_duel@event_target:combatant_2
+				NOT = { has_character_flag = attacker_using_poison@event_target:combatant_2 }
+			}
+		}
+	}
+	desc = {
+		text = EVTDESC_HF_10103_B
+		trigger = {
+			has_character_flag = desc_B
+			event_target:combatant_1 = {
+				has_character_flag = hof_claim_duel@event_target:combatant_2
+				NOT = { has_character_flag = attacker_using_poison@event_target:combatant_2 }
+			}
+		}
+	}
+	desc = {
+		text = EVTDESC_HF_10103_C
+		trigger = {
+			has_character_flag = desc_C
 			event_target:combatant_1 = {
 				has_character_flag = claim_duel@event_target:combatant_2
 				NOT = { has_character_flag = attacker_using_poison@event_target:combatant_2 }
@@ -1480,7 +1553,7 @@ character_event = {
 		trigger = {
 			has_character_flag = desc_C
 			event_target:combatant_1 = {
-				has_character_flag = claim_duel@event_target:combatant_2
+				has_character_flag = hof_claim_duel@event_target:combatant_2
 				NOT = { has_character_flag = attacker_using_poison@event_target:combatant_2 }
 			}
 		}
@@ -1592,6 +1665,7 @@ character_event = {
 		}
 		trigger = {
 			NOT = { event_target:combatant_1 = { has_character_flag = claim_duel@event_target:combatant_2 } }
+			NOT = { event_target:combatant_1 = { has_character_flag = hof_claim_duel@event_target:combatant_2 } }			
 		}
 	}
 	
@@ -1668,7 +1742,10 @@ character_event = {
 			}
 		}
 		trigger = {
+			OR = {
 			event_target:combatant_1 = { has_character_flag = claim_duel@event_target:combatant_2 }
+			event_target:combatant_1 = { has_character_flag = hof_claim_duel@event_target:combatant_2 }
+			}	
 		}
 	}
 	option = { #If KIND/CHARITABLE/ETC: spare their life?
@@ -1715,7 +1792,10 @@ character_event = {
 		}
 
 		trigger = {
+			OR = {
 			event_target:combatant_1 = { has_character_flag = claim_duel@event_target:combatant_2 }
+			event_target:combatant_1 = { has_character_flag = hof_claim_duel@event_target:combatant_2 }
+			}
 			OR = {
 				trait = kind
 				trait = charitable
@@ -1758,7 +1838,10 @@ character_event = {
 		if = {
 			limit = {
 				multiplayer = yes
+				OR = {
 				NOT = { event_target:combatant_1 = { has_character_flag = claim_duel@event_target:combatant_2 } }
+				NOT = { event_target:combatant_1 = { has_character_flag = hof_claim_duel@event_target:combatant_2 } }
+				}
 			}
 			debug_battle_death_counter_effect = yes #for debug purposes
 			send_notifications_after_champion_stand_in_effect = yes
@@ -1804,10 +1887,26 @@ character_event = {
 		}
 	}
 	desc = {
+		text = EVTDESC_HFP_10104_A
+		trigger = {
+			has_character_flag = desc_A
+			NOT = { event_target:combatant_1 = { has_character_flag = hof_claim_duel@event_target:combatant_2 } }
+			is_using_intrigue_trigger = no
+		}
+	}
+	desc = {
 		text = EVTDESC_HFP_10104_B
 		trigger = {
 			has_character_flag = desc_B
 			NOT = { event_target:combatant_1 = { has_character_flag = claim_duel@event_target:combatant_2 } }
+			is_using_intrigue_trigger = no
+		}
+	}
+	desc = {
+		text = EVTDESC_HFP_10104_B
+		trigger = {
+			has_character_flag = desc_B
+			NOT = { event_target:combatant_1 = { has_character_flag = hof_claim_duel@event_target:combatant_2 } }
 			is_using_intrigue_trigger = no
 		}
 	}
@@ -1820,6 +1919,14 @@ character_event = {
 		}
 	}
 	desc = {
+		text = EVTDESC_HFP_10104_C
+		trigger = {
+			has_character_flag = desc_C
+			NOT = { event_target:combatant_1 = { has_character_flag = hof_claim_duel@event_target:combatant_2 } }
+			is_using_intrigue_trigger = no
+		}
+	}
+	desc = {
 		text = EVTDESC_HF_10104_intrigue_default # They used intrigue and I lost (die)
 		trigger = {
 			event_target:other_combatant = { is_using_intrigue_trigger = yes }
@@ -1828,7 +1935,16 @@ character_event = {
 			}
 		}
 	}
-
+	desc = {
+		text = EVTDESC_HF_10104_intrigue_default # They used intrigue and I lost (die)
+		trigger = {
+			event_target:other_combatant = { is_using_intrigue_trigger = yes }
+			NOT = {
+				event_target:combatant_1 = { has_character_flag = hof_claim_duel@event_target:combatant_2 }
+			}
+		}
+	}
+	
 	# CLAIM DUELS...
 	desc = {
 		text = EVTDESC_HFP_10104_D
@@ -1836,6 +1952,16 @@ character_event = {
 			has_character_flag = desc_A
 			event_target:combatant_1 = {
 				has_character_flag = claim_duel@event_target:combatant_2
+				NOT = { has_character_flag = attacker_using_poison@event_target:combatant_2 }
+			}
+		}
+	}
+	desc = {
+		text = EVTDESC_HFP_10104_D
+		trigger = {
+			has_character_flag = desc_A
+			event_target:combatant_1 = {
+				has_character_flag = hof_claim_duel@event_target:combatant_2
 				NOT = { has_character_flag = attacker_using_poison@event_target:combatant_2 }
 			}
 		}
@@ -1851,6 +1977,16 @@ character_event = {
 		}
 	}
 	desc = {
+		text = EVTDESC_HFP_10104_E
+		trigger = {
+			has_character_flag = desc_B
+			event_target:combatant_1 = {
+				has_character_flag = hof_claim_duel@event_target:combatant_2
+				NOT = { has_character_flag = attacker_using_poison@event_target:combatant_2 }
+			}
+		}
+	}
+	desc = {
 		text = EVTDESC_HFP_10104_F
 		trigger = {
 			has_character_flag = desc_C
@@ -1860,7 +1996,16 @@ character_event = {
 			}
 		}
 	}
-
+	desc = {
+		text = EVTDESC_HFP_10104_F
+		trigger = {
+			has_character_flag = desc_C
+			event_target:combatant_1 = {
+				has_character_flag = hof_claim_duel@event_target:combatant_2
+				NOT = { has_character_flag = attacker_using_poison@event_target:combatant_2 }
+			}
+		}
+	}
 	desc = { # Can happen both in regular duels and claim duels
 		text = EVTDESC_HF_10104_intrigue_A_attacker #I used poison and lost
 		trigger = {
@@ -1895,7 +2040,10 @@ character_event = {
 			limit = {
 				event_target:combatant_1 = {
 					character = ROOT
+					OR = {
 					has_character_flag = claim_duel@event_target:combatant_2
+					has_character_flag = hof_claim_duel@event_target:combatant_2
+					}
 					has_character_flag = attacker_using_poison@event_target:combatant_2
 					event_target:other_combatant = {
 						job_spymaster = {
@@ -1919,6 +2067,7 @@ character_event = {
 				OR = {
 					multiplayer = no
 					event_target:combatant_1 = { has_character_flag = claim_duel@event_target:combatant_2 }
+					event_target:combatant_1 = { has_character_flag = hof_claim_duel@event_target:combatant_2 }
 				}
 			}
 			debug_battle_death_counter_effect = yes #for debug purposes
@@ -1948,7 +2097,12 @@ character_event = {
 				}
 			}
 			else_if = {
-				limit = { event_target:combatant_1 = { has_character_flag = claim_duel@event_target:combatant_2 } }
+				limit = { 
+				OR = {
+				event_target:combatant_1 = { has_character_flag = claim_duel@event_target:combatant_2 }
+				event_target:combatant_1 = { has_character_flag = hof_claim_duel@event_target:combatant_2 }
+					}
+				}
 				if = {
 					limit = { character = event_target:combatant_1 } 
 					death = {
@@ -2009,7 +2163,10 @@ character_event = {
 		set_player_character = event_target:other_combatant #take control of the winner...
 
 		trigger = {
+			OR = {
 			event_target:combatant_1 = { has_character_flag = claim_duel@event_target:combatant_2 }
+			event_target:combatant_1 = { has_character_flag = hof_claim_duel@event_target:combatant_2 }
+			}
 			ai = no
 			event_target:other_combatant = {
 				ai = yes
@@ -2192,9 +2349,11 @@ character_event = {
 		set_player_character = event_target:other_combatant #take control of the winner...
 
 		FROM = { character_event = { id = HF.10106 days = 1 } } #follow-up
-
 		trigger = {
-			event_target:combatant_1 = { has_character_flag = claim_duel@event_target:combatant_2 }
+			OR = {
+			event_target:combatant_1 = { has_character_flag = claim_duel@event_target:combatant_2 }	
+			event_target:combatant_1 = { has_character_flag = hof_claim_duel@event_target:combatant_2 }	
+				}
 			ai = no
 			event_target:other_combatant = {
 				ai = yes

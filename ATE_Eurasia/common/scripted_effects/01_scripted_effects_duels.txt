@@ -2194,10 +2194,15 @@ apply_generic_duel_defeat_effect = { #Is this even needed? Might be handled by a
 		##something
 	}
 }
-#Dave
+
 handle_claim_duel_result_effect = {
 	if = { # Only for CLAIM duels...
-		limit = { event_target:combatant_1 = { has_character_flag = claim_duel@event_target:combatant_2 } }
+		limit = { 
+		OR = {
+		event_target:combatant_1 = { has_character_flag = hof_claim_duel@event_target:combatant_2 }
+		event_target:combatant_1 = { has_character_flag = claim_duel@event_target:combatant_2 }
+				}
+		}
 		if = { # if you are the *attacker* ...
 			limit = { event_target:combatant_1 = { character = PREV } }
 			if = {
@@ -2240,7 +2245,7 @@ handle_claim_duel_result_effect = {
 						}
 					}
 				}
-				else_if = { # If it's only a matter of ONE title, usurp that one...
+				else_if = { # If it's only a matter of ONE title, that matters, usurp that one...
 					limit = { has_character_flag = wants_single_title_from@event_target:combatant_2 }
 					custom_tooltip = {
 						text = you_take_their_title_and_all_under_it_attacker_tt
@@ -2253,6 +2258,20 @@ handle_claim_duel_result_effect = {
 								vassalize_or_take_under_title = {
 									title = PREV
 									enemy = event_target:combatant_2
+									type = duel
+								}
+							}
+						}
+					}
+				}
+				else_if = { # If it's only a matter of ONE title, usurp that one...
+					limit = { has_character_flag = wants_HOF_title_from@event_target:combatant_2 }
+					custom_tooltip = {
+						text = you_take_their_title_and_all_under_it_attacker_tt
+						event_target:target_title = {
+							event_target:combatant_1 = {
+								usurp_title = {
+									target = event_target:target_title # Grab this one title...!
 									type = duel
 								}
 							}
@@ -3060,6 +3079,7 @@ clr_duel_flags_effect = {
 		clr_character_flag = defender_using_poison@event_target:combatant_1
 		clr_character_flag = poison_can_fail_against@event_target:combatant_1
 		clr_character_flag = use_tribal_victory_pic
+		clr_character_flag = claimedhetmanatetitle
 	}
 }
 
