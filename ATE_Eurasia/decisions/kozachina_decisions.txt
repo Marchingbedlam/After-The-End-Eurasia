@@ -30,7 +30,7 @@ decisions = {
 			set_character_flag = claimedhetmanatetitle #Clear this when attempting to duel for title
 			prestige = -500
 		}
-		
+					
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -258,11 +258,12 @@ targeted_decisions = {
 				factor = 1.1
 				trait = brave
 			}
-			modifier = {
-				factor = 1.5
-				trait = ambitious
-			}
-			title_tier_reduction_score = yes
+			modifier = { factor = 1	martial >= 15 }
+			modifier = { factor = 2	trait = zealous }
+			modifier = { factor = 2	trait = devout }
+			modifier = { factor = 2	martial >= 20 }
+			modifier = { factor = 5	trait = ambitious }
+			modifier = { factor = 5	martial >= 25 }
 		}
 	}
 

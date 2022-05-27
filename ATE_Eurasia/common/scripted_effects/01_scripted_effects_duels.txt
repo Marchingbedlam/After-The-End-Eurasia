@@ -2277,6 +2277,18 @@ handle_claim_duel_result_effect = {
 							}
 						}
 					}
+							event_target:combatant_1 = {
+							effect = {
+								set_character_flag = victorioushetman
+								prestige = -500
+								}
+							}
+							event_target:combatant_2 = {
+							effect = {
+								clr_character_flag = victorioushetman								
+								prestige = -500
+								}
+							}
 				}
 				if = {
 					limit = { ai = no }
@@ -2293,6 +2305,16 @@ handle_claim_duel_result_effect = {
 							add_weak_pressed_claim = PREV
 						}
 					}
+				}
+				else_if = {
+					limit = { has_character_flag = wants_HOF_title_from@event_target:combatant_2 }
+							event_target:combatant_1 = {
+		        	add_character_modifier = {
+		        		modifier = failedclaimhetman
+		                duration = 90
+		                hidden = yes
+								}
+							}
 				}
 				else = {
 					custom_tooltip = {
