@@ -57,9 +57,11 @@ succession_laws = {
 		feudal_opinion = -5
 		potential = {
 			holder_scope = {
-				government = ghazi_government
+				OR = {
+					government = ghazi_government
+					government = diwan_government
+				}
 			}
-			NOT = { holder_scope = { government = diwan_government } }
 			NOT = { holder_scope = { government = confucian_bureaucracy } }
 			NOT = { holder_scope = { government = chinese_imperial_government } }
 
@@ -67,7 +69,6 @@ succession_laws = {
 		allow = {
 			AND = {
 				religion_group = muslim
-				NOT = { holder_scope = { government = diwan_government } }
 				NOT = {religion = ibadi}
 			}
 			custom_tooltip = {
@@ -92,10 +93,6 @@ succession_laws = {
 		child_opinion = 5
 		dynasty_opinion = 5
 		potential = {
-			holder_scope = {
-				government = diwan_government
-				tier = KING
-			}
 			NOT = { holder_scope = { government = ghazi_government } }
 			NOT = { holder_scope = { government = confucian_bureaucracy } }
 			NOT = { holder_scope = { government = chinese_imperial_government } }

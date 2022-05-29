@@ -407,7 +407,7 @@ character_event = {
 	
 	trigger = {
 		ai = yes
-		lower_tier_than = KING
+		lower_real_tier_than = KING
 		government = diwan_government
 	}
 	
@@ -430,7 +430,7 @@ character_event = {
 		OR = {
 			AND = {
 				government = diwan_government
-				NOT = { has_law = succ_familial_elective }
+				NOT = { has_law = succ_ghazi_elective }
 			}
 			AND = {
 				government = ghazi_government
@@ -446,7 +446,7 @@ character_event = {
 	immediate = {
 		if = {
 			limit = { government = diwan_government }
-			primary_title = { add_law = { law = succ_familial_elective opinion_effect = no } }
+			primary_title = { add_law = { law = succ_ghazi_elective opinion_effect = no } }
 		}
 		if = {
 			limit = { government = ghazi_government }
