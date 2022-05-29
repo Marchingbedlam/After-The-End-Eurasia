@@ -98,7 +98,7 @@
 	2499.3.29={death=yes}
 }
 3200010={
-	name="Shaukat" #Aga Khan XVII
+	name="Ghulam Muhammad" #Aga Khan XVII
 	dynasty=2158116 #Hussaini
 	culture=muhajir
 	religion=ismaili
@@ -150,6 +150,7 @@
 	trait=intricate_webweaver
 	trait=sayyid
 	2619.9.7={birth=yes}
+	2639.1.1={add_spouse=2071204}
 }
 3200015={
 	name="Abdullah" #Abdullah Raham of Sindh
@@ -208,7 +209,7 @@
 }
 3200021={
 	name="Salahuddin"
-	dynasty=3200023 #Khosa
+	dynasty=2086002 #Khosa
 	culture=baloch
 	religion=deobandi
 	trait=mastermind_theologian
@@ -220,7 +221,7 @@
 	2618.11.2={birth=yes}
 }
 3200022={
-	name="Abdulhamid"
+	name="Abdul Hamid"
 	dynasty=2086101 #Dehbani
 	culture=baloch
 	religion=deobandi
@@ -237,11 +238,60 @@
 3200024={
 	name="Akhtar"
 	dynasty=2116006 #Jakhrani
-	culture=baloch
-	religion=shiite
+	culture=brahui
+	religion=barelvi
 	trait=adventurer
 	trait=familyperson
 	trait=kind
 	trait=wroth
 	2644.10.17={birth=yes}
+}
+3200025={
+	name="Jahangir"
+	dynasty=2158116 #Hussaini
+	culture=muhajir
+	religion=ismaili
+	father=3200013
+	trait=sayyid
+	2625.12.23={birth=yes}
+}
+3200026={
+	name="Nur Muhammad"
+	dynasty=2158116 #Hussaini
+	culture=muhajir
+	religion=ismaili
+	father=3200014
+	mother=2071204
+	trait=sayyid
+	2642.5.3={birth=yes}
+}
+3200027={
+	name="Muhammad Ali"
+	dynasty=2158116 #Hussaini
+	culture=muhajir
+	religion=ismaili
+	father=3200014
+	mother=2071204
+	trait=sayyid
+	2646.7.20={birth=yes}
+}
+3200028={
+	name="Asma"
+	female=yes
+	dynasty=2158116 #Hussaini
+	culture=muhajir
+	religion=ismaili
+	father=3200014
+	mother=2071204
+	trait=sayyid
+	2643.11.1={birth=yes}
+}
+3200029={
+	name="Latif"
+	dynasty=2158116 #Hussaini
+	culture=muhajir
+	religion=ismaili
+	father=3200025
+	trait=sayyid
+	2648.8.28={birth=yes}
 }
