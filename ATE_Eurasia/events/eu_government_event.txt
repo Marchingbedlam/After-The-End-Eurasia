@@ -446,6 +446,10 @@ character_event = {
 	immediate = {
 		if = {
 			limit = { government = diwan_government }
+			primary_title = { add_law = { law = succ_ghazi_elective opinion_effect = no } }
+		}
+		if = {
+			limit = { AND = {government = diwan_government is_female = yes} }
 			primary_title = { add_law = { law = succ_familial_elective opinion_effect = no } }
 		}
 		if = {

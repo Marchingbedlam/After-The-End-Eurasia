@@ -94,12 +94,24 @@ succession_laws = {
 		potential = {
 			holder_scope = {
 				government = diwan_government
-				tier = KING
 			}
 			NOT = { holder_scope = { government = ghazi_government } }
 			NOT = { holder_scope = { government = confucian_bureaucracy } }
 			NOT = { holder_scope = { government = chinese_imperial_government } }
 
+		}
+		default_selection = {
+			factor = 1
+			
+			modifier = {
+				factor = 100
+				holder_scope = {
+					AND = {
+						religion = ruhi
+						is_female = yes
+					}
+				}
+			}
 		}
 		allow = {
 			AND = {
