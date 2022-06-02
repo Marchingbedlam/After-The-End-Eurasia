@@ -1072,75 +1072,6 @@ christian = {
 		intermarry = mariavite
 		intermarry = coronite
 	}	
-	high_church = {
-		graphical_culture = westerngfx
-
-		icon = 49
-		heresy_icon = 50
-
-		color = { 0.6 0.65 0.8 }
-
-		crusade_name = CRUSADE
-		scripture_name = THE_BIBLE
-		priest_title = PRIEST
-		
-		high_god_name = GOD_GOD
-		
-		god_names = {
-			GOD_GOD GOD_THE_LORD GOD_JESUS GOD_THE_BLESSED_VIRGIN
-		}
-		
-		evil_god_names = {
-			SATAN LUCIFER THE_DEVIL
-		}
-
-		investiture = yes
-		can_have_antipopes = yes
-		can_excommunicate = yes
-		can_grant_divorce = yes
-		can_grant_invasion_cb = invasion
-		can_grant_claim = yes
-		can_call_crusade = no #yes
-		can_retire_to_monastery = yes
-		priests_can_inherit = no
-		allow_rivermovement = yes
-		
-		religious_clothing_head = 0
-		religious_clothing_priest = 1
-		
-		intermarry = lutheran
-		intermarry = nonconformist
-	}
-	
-	free_church = {
-		graphical_culture = westerngfx
-		
-		icon = 49
-		heresy_icon = 50
-		
-		color = { 0.5 0.55 0.75 }
-		
-		parent = high_church
-		
-		pacifist = yes # Makes the AI less likely to start wars, plots and factions
-		crusade_name = CRUSADE
-		can_grant_divorce = yes
-		can_call_crusade = no
-		female_temple_holders = yes
-		priests_can_marry = yes
-		priests_can_inherit = yes
-		feminist = yes
-		allow_rivermovement = yes
-		peace_piety_gain = 1.0 #Gains 1 extra piety per month while at peace
-		aggression = 0.5 # AI aggression factor
-		
-		religious_clothing_head = 0
-		religious_clothing_priest = 1
-		
-		intermarry = lutheran
-		intermarry = high_church
-		intermarry = insular
-	}
 	insular = {
 		graphical_culture = westerngfx
 
@@ -1176,9 +1107,7 @@ christian = {
 
 		intermarry = lutheran
 		intermarry = nonconformist
-		intermarry = high_church
 	}
-	
 	lutheran = {
 		graphical_culture = westerngfx
 
@@ -1264,7 +1193,7 @@ christian = {
 		icon = 55
 		heresy_icon = 56
 		
-		color = { 0.6 0.6 0.25 }
+		color = { 135 206 235 }
 		
 		crusade_name = CRUSADE
 		scripture_name = THE_BIBLE
@@ -1298,7 +1227,34 @@ christian = {
 		religious_clothing_priest = 20
 
 	}
-
+	free_church = {
+		graphical_culture = westerngfx
+		
+		icon = 55
+		heresy_icon = 56
+		
+		color = { 0.5 0.55 0.75 }
+		
+		parent = calvinist
+		
+		pacifist = yes # Makes the AI less likely to start wars, plots and factions
+		crusade_name = CRUSADE
+		can_grant_divorce = yes
+		can_call_crusade = no
+		female_temple_holders = yes
+		priests_can_marry = yes
+		priests_can_inherit = yes
+		feminist = yes
+		allow_rivermovement = yes
+		peace_piety_gain = 1.0 #Gains 1 extra piety per month while at peace
+		aggression = 0.5 # AI aggression factor
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+		
+		intermarry = lutheran
+		intermarry = insular
+	}
 	apparitionist = {
 		graphical_culture = westerngfx
 
@@ -1339,7 +1295,6 @@ christian = {
 
 		intermarry = lutheran
 		intermarry = nonconformist
-		intermarry = high_church
 	}
 	orthodox = {
 		graphical_culture = westerngfx
@@ -2136,7 +2091,6 @@ scholastic = {
 		religious_clothing_priest = 3
 		
 		intermarry = thelema
-		intermarry = high_church
 		intermarry = nonconformist
 		intermarry = valinorist
 	}

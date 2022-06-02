@@ -9982,22 +9982,6 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 					NOT = {
 						has_character_was_religion_flag_trigger = yes
 					}
-					religion = high_church
-				}
-				has_character_flag = character_was_high_church
-			}
-		}
-		set_secret_religion = high_church
-		clr_character_flag = character_was_high_church
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
 					religion = nonconformist
 				}
 				has_character_flag = character_was_nonconformist
@@ -11167,10 +11151,6 @@ add_religion_char_flag_effect = {
 		set_character_flag = character_was_wormwoodist
 	}
 	if = {
-		limit = { religion = high_church }
-		set_character_flag = character_was_high_church
-	}
-	if = {
 		limit = { religion = nonconformist }
 		set_character_flag = character_was_nonconformist
 	}
@@ -11465,7 +11445,6 @@ clr_religion_char_flag_effect = {
 	clr_character_flag = character_was_falling_star
 	clr_character_flag = character_was_moravian
 	clr_character_flag = character_was_wormwoodist
-	clr_character_flag = character_was_high_church
 	clr_character_flag = character_was_nonconformist
 	clr_character_flag = character_was_apostolic
 	clr_character_flag = character_was_celeste
@@ -11715,13 +11694,6 @@ event_target_old_religion_from_flag_effect = {
 		limit = { has_character_flag = character_was_wormwoodist }
 		random_character = {
 			limit = { religion = wormwoodist }
-			save_event_target_as = old_religion
-		}
-	}
-	if = {
-		limit = { has_character_flag = character_was_high_church }
-		random_character = {
-			limit = { religion = high_church }
 			save_event_target_as = old_religion
 		}
 	}
@@ -12316,7 +12288,6 @@ increase_visibility_minor_effect = {
 						religion = catholic
 						religion = ursuline
 						religion = evangelical
-						religion = high_church
 						religion = mormon
 						religion = americanist
 						religion = libertarian
@@ -13943,17 +13914,6 @@ flip_secret_religious_community_provinces = {
 					}
 					religion = wormwoodist
 					remove_province_modifier = secret_wormwoodist_community
-				}
-			}
-		}
-		secret_religious_society_high_church = {
-			ROOT = {
-				any_demesne_province = {
-					limit = {
-						has_province_modifier = secret_high_church_community
-					}
-					religion = high_church
-					remove_province_modifier = secret_high_church_community
 				}
 			}
 		}
@@ -18662,17 +18622,6 @@ root_secret_religion_provinces_convert_effect = {
 						}
 						religion = wormwoodist
 						remove_province_modifier = secret_wormwoodist_community
-					}
-				}
-			}
-			secret_religious_society_high_church = {
-				PREV = {
-					any_demesne_province = {
-						limit = {
-							has_province_modifier = secret_high_church_community
-						}
-						religion = high_church
-						remove_province_modifier = secret_high_church_community
 					}
 				}
 			}
@@ -31220,11 +31169,11 @@ abdicate_holy_order_if_religion_changes_effect = { #why. why did you add this ef
 		if = {
 			limit = {
 				is_title_active = d_st_pats
-				religion = high_church
+				religion = free_church
 				owner = { 
 					ai = yes
 					holy_order = yes 
-					NOT = { religion = high_church } 
+					NOT = { religion = free_church } 
 				}
 			}
 			log = "[d_st_pats.owner.GetTitledFirstName] was found to be unfit to lead the [d_st_pats.GetName] and therefore removed by the abdicate holy order effect!"

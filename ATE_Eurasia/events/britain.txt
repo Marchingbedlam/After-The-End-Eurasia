@@ -1,65 +1,13 @@
-# High Church, Glorian, and other British events
+# Free Church, Glorian, and other British events
 namespace = britain
 
-character_event = {
-	id = britain.1	
-	desc = EVTDESC_britain_1
-	picture = GFX_evt_bishop
-	religion = high_church
-	is_triggered_only = yes
-
-	trigger = {
-		NOT = {
-			has_alternate_start_parameter = { key = religion_names value = random }
-		}
-	}
-	
-	option = {
-		name = EVTOPTA_britain_1
-		hidden_tooltip = {
-			remove_trait = broad_anglican
-			remove_trait = low_anglican
-		}
-		add_trait = high_anglican
-		ai_chance = {
-			factor = 10
-			modifier = { factor = 2	learning = 10 }
-		}
-	}
-
-	option = {
-		name = EVTOPTB_britain_1
-		hidden_tooltip = {
-			remove_trait = high_anglican
-			remove_trait = low_anglican
-		}
-		add_trait = broad_anglican
-		ai_chance = {
-			factor = 10
-			modifier = { factor = 2	learning = 5 }
-			modifier = { factor = 2	diplomacy = 5 }
-		}
-	}
-	
-	option = {
-		name = EVTOPTC_britain_1
-		hidden_tooltip = {
-			remove_trait = broad_anglican
-			remove_trait = high_anglican
-		}
-		add_trait = low_anglican
-		ai_chance = {
-			factor = 10
-			modifier = { factor = 1.5 diplomacy = 10 }
-		}
-	}
-}
+#id = britain.1 used to be the Anglican Event (Anglican were removed)
 
 character_event = {
 	id = britain.2	
 	desc = EVTDESC_britain_2
 	picture = GFX_evt_bishop
-	religion = high_church
+	religion = free_church
 	is_triggered_only = yes
 
 	trigger = {
@@ -73,6 +21,7 @@ character_event = {
 		hidden_tooltip = {
 			remove_trait = quaker
 			remove_trait = baptist
+			remove_trait = low_anglican
 		}
 		add_trait = methodist
 		ai_chance = {
@@ -86,6 +35,7 @@ character_event = {
 		hidden_tooltip = {
 			remove_trait = methodist
 			remove_trait = baptist
+			remove_trait = low_anglican
 		}
 		add_trait = quaker
 		ai_chance = {
@@ -99,12 +49,26 @@ character_event = {
 		hidden_tooltip = {
 			remove_trait = quaker
 			remove_trait = methodist
+			remove_trait = low_anglican
 		}
 		add_trait = baptist
 		ai_chance = {
 			factor = 10
 			modifier = { factor = 2	learning = 5 }
 			modifier = { factor = 2	diplomacy = 5 }
+		}
+	}
+	option = {
+		name = EVTOPTD_britain_2
+		hidden_tooltip = {
+			remove_trait = quaker
+			remove_trait = methodist
+			remove_trait = baptist
+		}
+		add_trait = low_anglican
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 1.5 diplomacy = 10 }
 		}
 	}
 }
