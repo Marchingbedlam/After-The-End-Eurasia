@@ -1,0 +1,13 @@
+###ÄNSI###
+
+adult_baptism_event;Become Baptized;;;;;;;;;;;;;x
+adult_baptism_event_desc;Become baptized in the faith.;;;;;;;;;;;;;x
+TXT_baptism_events;Become baptized in the faith.;;;;;;;;;;;;;x
+
+EVTDESCbaptism_events.1;Every believer should be baptized, but only when they are able to make a conscious profession of faith. As is customary for those of the Religion.GetName, you may now be baptized in the name of Jesus Christ. Do you accept Him as your Lord and Savior?;;;;;;;;;;;;;x
+EVTOPTAbaptism_events.1;I accept Jesus as my Lord and Savior.;;;;;;;;;;;;;x
+EVTOPTBbaptism_events.1;Yes.;;;;;;;;;;;;;x
+EVTOPTCbaptism_events.1;No.;;;;;;;;;;;;;x
+
+adult_baptized;Baptized as a Believer;;;;;;;;;;;;;x
+adult_baptized_desc;This character has received a believer’s baptism.;;;;;;;;;;;;;x
