@@ -87,3 +87,11 @@ government_flavor = {
 		government = swaraj_government
 	}
 }
+government_flavor = {
+	name = gov_hetmanate
+	graphics = GFX_cossacks
+	priority = 5
+	trigger = {
+		government = hetmanate_government
+	}
+}
