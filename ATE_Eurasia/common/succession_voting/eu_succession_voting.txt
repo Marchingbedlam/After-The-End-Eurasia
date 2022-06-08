@@ -1,7 +1,7 @@
 confederation_elective = {
 	elector_selection = {
 		days = -5 		
-		additive_modifier = { #Liege
+		additive_modifier = { #Liege is always an Elector.
 			value = 30
 			FROMFROM = { 
 				holder_scope = { character = ROOT }
@@ -13,11 +13,32 @@ confederation_elective = {
 			has_minor_title = title_confederation_diet_member
 		}
 	}
-	elector_vote_strength = {
-		days = 1
+	elector_vote_strength = { 
+		days = 5 # 1 elector = 5 votes.
+		
+		additive_modifier = { 
+			value = 10
+			localisation_key = tooltip_feudal_elector_vote_myself
+			FROMFROM = { 
+				holder_scope = { character = ROOT }
+			}
+		}
+		
+		additive_modifier = {
+			value = -4
+			localisation_key = tooltip_vassal_relative_strength_lesser_than
+			lower_real_tier_than = COUNT
+		}
+		additive_modifier = {
+			value = 7
+			localisation_key = tooltip_vassal_relative_strength_greater_than
+			higher_real_tier_than = COUNT
+		
+		}
 	}
 	candidate_vote_score = {
 		days = 0
+		
 		########################## Elector voting himself ##########################
 		additive_modifier = {
 			value = 15

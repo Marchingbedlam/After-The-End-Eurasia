@@ -331,6 +331,10 @@ spriteTypes = {
 		name = "GFX_cossacks"
 		texturefile = "gfx/event_pictures/cossacks.dds"
 	}
+	spriteType = {	
+		name = "GFX_evt_eucharist_adoration"
+		texturefile = "gfx/event_pictures/eucharist_adoration.dds"
+	}
 #Imported from Orientalis
 	spriteType = {
 		name = "GFX_evt_buddha_teaching"
@@ -343,9 +347,5 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_evt_buddhist_contemplation"
 		texturefile = "gfx/event_pictures/buddhist_contemplation.dds"
-	}
-	spriteType = {	
-		name = "GFX_evt_eucharist_adoration"
-		texturefile = "gfx/event_pictures/eucharist_adoration.dds"
 	}
 }
