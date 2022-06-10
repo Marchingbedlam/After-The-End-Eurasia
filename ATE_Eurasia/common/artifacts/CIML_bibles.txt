@@ -833,8 +833,8 @@ illustrated_german_bible = {
 	
 	active = { 
 		OR = {
-			culture = old_saxon
-			culture = german
+			culture_group = central_germanic
+			culture_group = benelux
 			learning = 15
 		}
 		NOR = {
@@ -874,6 +874,70 @@ german_bible = {
 	stacking = no		
 	quality = 2
 	picture = "GFX_german_bible"
+	
+	slot = library
+	
+}
+
+##### Polish
+illustrated_polish_bible = {
+	learning = 4
+	
+	active = { 
+		OR = {
+			culture = odrzan
+			culture = wielkopolan
+			culture = malopolan
+			culture = mazovian
+			culture = warmzur
+			culture = silesian
+			culture = goral
+			culture = kashubian
+			learning = 15
+		}
+		NOR = {
+			trait = blinded
+			religion = iconoclast
+			religion_group = muslim
+		}
+	}
+	
+	allowed_gift = {	
+	}
+	
+	stacking = no		
+	quality = 3
+	picture = "GFX_illustrated_polish_bible"
+	
+	slot = library	
+}
+
+german_bible = {
+	learning = 3
+	
+	active = { 
+		OR = {
+			culture = odrzan
+			culture = wielkopolan
+			culture = malopolan
+			culture = mazovian
+			culture = warmzur
+			culture = silesian
+			culture = goral
+			culture = kashubian
+			learning = 20
+		}
+		NOT = {
+			trait = blinded
+		}
+	}
+	
+	allowed_gift = {	
+	}
+	
+	stacking = no		
+	quality = 2
+	picture = "GFX_polish_bible"
 	
 	slot = library
 	

@@ -813,6 +813,101 @@ order_german_bible = {
  }
 }
 
+#### Polish
+order_polish_bible = { 
+ ai_check_interval = 300 # Determines how seldom the AI checks whether they can and should do the decision, in months. By default 1 (every month).
+ potential = {
+	religion_group = christian
+	is_landed = yes
+	OR = {
+		culture = odrzan
+		culture = wielkopolan
+		culture = malopolan
+		culture = mazovian
+		culture = warmzur
+		culture = silesian
+		culture = goral
+		culture = kashubian
+		AND = {
+			ai = no
+			any_realm_province = {
+			culture = odrzan
+			}
+		}
+		AND = {
+			ai = no
+			any_realm_province = {
+			culture = wielkopolan
+			}
+		}
+		AND = {
+			ai = no
+			any_realm_province = {
+			culture = malopolan
+			}
+		}
+		AND = {
+			ai = no
+			any_realm_province = {
+			culture = mazovian
+			}
+		}
+		AND = {
+			ai = no
+			any_realm_province = {
+			culture = warmzur
+			}
+		}
+		AND = {
+			ai = no
+			any_realm_province = {
+			culture = silesian
+			}
+		}
+		AND = {
+			ai = no
+			any_realm_province = {
+			culture = goral
+			}
+		}
+		AND = {
+			ai = no
+			any_realm_province = {
+			culture = kashubian
+			}
+		}
+	}
+	NOT = { religion = mandean }
+	NOR = {
+		has_artifact = illustrated_polish_bible
+		has_artifact = polish_bible
+		has_character_flag = ciml_hide_bible_decisions
+	}
+ }
+ 
+ allow = {
+	wealth = 500
+	NOT = { has_character_modifier = ordered_bible }
+	OR = {
+		has_focus = focus_scholarship
+		has_focus = focus_theology
+		has_ambition = obj_become_paragon_of_virtue 
+		AND = {
+			ai = no
+			NOT = { has_dlc = "Way of Life" }
+		}
+	}
+ }
+ 
+ effect = {
+	character_event = { id = CIML.446 }
+	add_character_modifier = { 
+		name = ordered_bible
+		months = 60
+	}
+ }
+}
+
 
 #### French
 order_french_bible = { 

@@ -10,29 +10,41 @@ uralic_west = {
 		color = { 0.4 0.7 0.8 }
 
 		male_names = {
-			Aleksandr_Alexander Aleksei_Alexis Alvali Ambal Andrei_Andrew Anton_Anthony Aptya Artem Artur_Arthur Ayi Aypokh 
-			Evgeny_Eugene 
-			Igor 
-			Kanta Kirill_Cyril Kuchum Kulkatli Kushcha 
-			Nyarokh 
+			Alybert_Albert Alyvali Andron Aptya Asytapan_Stephen Aydar Ayi "Ay poh" 
+			German_Herman Gulyay 
+			Iuda 
+			Kanta Kêsyta_Constantine Khyntyp Kolmozer Kirkêr_Gregory Kuchum Kulykatli Kusya Kusyma_Cosme Kynlabaz Kyrnysh 
+			Lonchak Losar_Lazarus Loyda Lyutya_Vladimir 
+			Maksyum_Maximus Meldes Mikay_Niceta Mikêla_Nicholas Mikipur_Nicephorus Mitri_Demetrius Mikuv_Michael Mongolyey Murynka 
+			Nikkan_Nicanor Nirymko Nyarokh 
 			Oloko Oyka 
-			Pèrki Poti 
-			Semyon Sertushiki Shchuny Sotr 
-			Ulyaiki Unkhu 
-			Viktor 
-			Yaroslav Yiny 
+			Patrakey Payal_Paul Pèrki Petr_Peter Poti Potyka Purkop_Procopius Pylyya_Philip Pystymin 
+			Rondom 
+			Samoil Sanka_Alexander Saska_Alexander Savka_Sabeliy Sotr Stanislav_Stanislaus Sultanko Syeman_Simon Syenyka_Simon Syerki_Sergius "Syertush iki" Syryanko Syuny 
+			Tanyla_Daniel Tikên_Tikhon Tyomkigi_Timothy 
+			"Ulya iki" Unkhu  
+			Vanho Vanyka_John Vasyka_Basil Vêlaksyi_Alexis Vêlyashka_Alexis Vêntar_Andrew Vêntên_Anthony Vêsyup_Joseph Vlas_Blasius Vyacheslav_Wenceslaus 
+			Yarasy_Gerasimos Yekêr_Igor Yelgoza Yemelyyan_Emil Yep'yum_Euthymius Yerkimko Yetin_Eugene Yevtin_Eugene Yiny Yurlymko Yuvan_John Yuzor 
 		}
 		female_names = {
-			Èvi 
-			Inessa 
-			Katharina Khoromkatya 
-			Matrena Miroslava Mosnè 
-			Taskuv 
-			Uengimi Unapelkiimi 
-			Yelena 
+			Alybina_Albina Alyva Anyang Appolinariya 
+			Domna 
+			Êkêp_Agatha Enny Evi Evlampiya 
+			Fekla 
+			"Khorom Katya" 
+			Litta_Lydia Luli Lusya_Lyudmila 
+			Marpa_Martha Mar'ya_Mary Matra "Mosy ne" 
+			Nasta_Anastasia Neny Neonila Nyarma 
+			Oktyabrina Otyuty 
+			Palashka_Pelagia Parasy'ya_Praskovia Parkuv Petêsy_Theodosia 
+			Samar_Tamara Sandra_Alexandra Sekletinyya Solomeya_Salomea Soya_Zoe Sura 
+			Tarasy'ya_Praskovia Taskuv Tatyya_Tatiana Tutyya 
+			"Uyeng imi" "Una sang imi" Urne_Irene 
+			Valya_Valentina Vasyka_Basilia Vul'ya_Juliana Vusyta_Justina 
+			Yenya_Eugenia Yenyko Yev'ya 
 		}
 		
-		from_dynasty_prefix = "of "
+		from_dynasty_suffix = "skiy"
 
 		modifier = default_culture_modifier
 	}
@@ -40,16 +52,47 @@ uralic_west = {
 	nenet = {
 		graphical_cultures = { ugricgfx }
 		
-		color = { 0.4 0.5 0.6 }
+		color = { 0.21 0.35 0.86 }
 
 		male_names = {
-			Tyko Konstantin Yuri Leonid Ervko Igney_Ignatius Iriko Khasavako Myusena Koka_Nicholas Natena Neleyko_Alexis Noley_Alexis Nolyako Osi_Joseph Petrako_Peter Serakone Sevtya Vavlya Vesako
+			Achu Anton_Anthony Antyam Alybert_Albert Apitsa 
+			Boris_Boris 
+			Gyennadiy_Gennadius 
+			Heimale 
+			Ignyey_Ignatius Ilko Iriko Ivanko_John Iyko 
+			Khadko Khanzera Khasavako Khasavato Khasyevko Khasyo Khatko Khedoko Khetanzi Khoyko Khurts Khylyey Koka_Nicholas 
+			Labtayater Lamdo Latasya Limbyako Lyeonid_Leonidas 
+			Malndyo Marako Matvey_Matthew Mavso Mayko Mikhail_Michael Myatsi Myusyena 
+			Nanyko Nar''yana Natyena Ngadan Ngarka Ngatsyeketsya Ngatyena Ngenko Ngolyako Ngolyeri Nokho Noyko Noley_Alexius Nolyako Nyakotsya Nyenetsiyeko Nyudena Nyudqma Nyuktsya Nyulyako 
+			Osi_Joseph 
+			Paniko Papako Papalya Pariko Pedava Peti Pevko Pirtsyako Poyko Prokopiy_Procopius Pubta Pudako Puyko Pyetrako_Peter Pyyari 
+			Samo Sanggeryav Sata Satako Savlyo Savanya Savuti Serako Sevtya Syarati Syunzi Syunzko 
+			Tadako Takhana Talyey Tangg Taypari Tekhebiq Tekhebtiq Tetako Timur_Timur Tindiri Tyko 
+			Vadyo Vaqlyoy Varuchi Vasiliy_Basil Vata Vavlya Vavlyo Vesa Vesako Vladimir_Vladimir Vylka 
+			Weha 
+			Yabko Yablya Yabta Yabtako Yabtso Yabtsoko Yakhalya Yakli_James Yalya Yalyenko Yasavey Yebtsota Yedeykhasava Yekher_Igor Yervko Yevtsota Yeyko Yiko Yonko Yuriy_George 
 		}
 		female_names = {
-			Anna Anastasia Edeyne Evane Khadako Khadne Khoni Matryo_Matryona Neko Nolyako Parako_Paraskeve Pukhutsya Savane Syvne Varuk_Barbara Yalyane Yedeyne
+			Anna_Anne 
+			Daryya_Darya Dinda 
+			Edeynye 
+			Galina_Galina 
+			Khadako Khadnye Khandnye Khartako Khoynye 
+			Lida Lidakonye_Lydia Lukeryya Lyubov' 
+			Maryya_Mary Matryo_Matryona Mayanye Mayya Myati Myeyakonye 
+			Ngarkanye Ngotsqma Nina Noyko Noynye Nunye Nyedko Nyeko Nyembyoy Nyengatseketsya Nyengatseky Nyenya Nyenyako Nyeqnye Nyeyko Nyudnyanye Nyutskhe 
+			Oktyabrina Olinye_Olga 
+			Padarqnye Papakonye Papanye Para_Praskovia Pedavanye Piribtya Pirtsyanye Ponganye Pukhochanye Pukhutsya Pukhutsyako Puynye 
+			Rita 
+			Salyeyko Sandra_Alexandra Satanye Savanye Serakonye Serqnye Sinye Svyetlana_Svetlana Syelya_Stephanie Syerynye Syvnye 
+			Tadanye Taina Tanye Terinye Tetanye 
+			Umy 
+			Valyentina_Valentina Varka_Barbara Varnyetsya Varyeta Vasilika_Basilica Vasilina Vatanye 
+			Yabnye Yabtako Yabtanye Yabyanye Yalyanye Yangganye Yankhanye Yanoti Yantanye Yaqavlada Yarunye Yebtsotanye Yedeynye Yekaterina_Catherine Yelena_Helen Yelizaveta_Elizabeth Yelya Yevanye 
+			Zoya_Zoe 
 		}
 		
-		from_dynasty_prefix = "of "
+		from_dynasty_suffix = "skiy"
 
 		modifier = default_culture_modifier
 	}
@@ -59,13 +102,43 @@ uralic_west = {
 		color = { 0.4 0.5 0.6 }
 
 		male_names = {
-			Tyko Konstantin Yuri Leonid Ervko Igney_Ignatius Iriko Khasavako Myusena Koka_Nicholas Natena Neleyko_Alexis Noley_Alexis Nolyako Osi_Joseph Petrako_Peter Serakone Sevtya Vavlya Vesako
+			Alybert_Albert Alyvali Andrian Andron Antun_Anthony Aptya Aydar Ayi "Ay poh" 
+			Denis_Dionysus 
+			German_Herman Gulyay 
+			Iuda 
+			Kanta Khyntyp Kolmozer Kuchum Kulykatli Kurok Kusya Kusyma_Cosme Kusyta_Constantine Kynlabaz Kyrnysh 
+			Lonchak Losar_Lazarus Loyda Lyutya_Vladimir 
+			Maksyim_Maximus Meldes Mikipur_Nicephorus Mikit_Nicetas Mikul_Nicholas Mitri_Demetrius Mikuv_Michael Mongolyey Murynka 
+			Nikkan_Nicanor Nyarokh 
+			Oloko Osip_Joseph Oyka 
+			Pavlin_Paul Payal_Paul Pèrki Poruny_Procopius Poti Potyka Pylyya_Philip Pyotra_Peter Pystymin 
+			Rondom 
+			Samoil Sanka_Alexander Saska_Alexander Savka_Sabeliy Sotr Stanislav_Stanislaus Syeman_Simon Syerki_Sergius "Syertush iki" Syuny 
+			Tanyla_Daniel Tepan_Stephen Tyomkigi_Timothy 
+			"Ulya iki" Unkhu Untary_Andrew 
+			Vanho Vanyka_John Vasyka_Basil Velaksyi_Alexis Vlas_Blasius Vyacheslav_Wenceslaus 
+			Yakur_Igor Yarasy_Gerasimos Yelgoza Yemelyyan_Emil Yepkur_Euthymius Yerkimko Yetin_Eugene Yevtin_Eugene Yiny Yosyka_Joseph Yukhur_Igor Yurlymko Yuvan_John Yuzor 
+			Zakhar_Zachary 
 		}
 		female_names = {
-			Anna Anastasia Edeyne Evane Khadako Khadne Khoni Matryo_Matryona Neko Nolyako Parako_Paraskeve Pukhutsya Savane Syvne Varuk_Barbara Yalyane Yedeyne
+			Akas_Agatha Akulina Alybina Alyva Anyang Appolinariya 
+			Domna 
+			Enny Evi Evlampiya 
+			Fekla 
+			"Khorom Katya" 
+			Litta_Lydia Luli Lusya_Lyudmila 
+			Marpa_Martha Mar'ya_Mary Matra "Mosy ne" 
+			Nattya_Anastasia Neny Neonila Nyarma 
+			Oktyabrina Otyuty 
+			Palashka_Pelagia Parasy'ya_Praskovia Parkuv Petusy_Theodosia 
+			Samar_Tamara Sandra_Alexandra Sekletinyya Solomeya_Salomea Sura 
+			Tarasy'ya_Praskovia Taskuv Tatyya_Tatiana Tutyya 
+			"Uyeng imi" "Una sang imi" Urne_Irene 
+			Vulyga_Juliana Vusyta_Justina 
+			Yenya_Eugenia Yenyko Yev'ya 
 		}
 		
-		from_dynasty_prefix = "of "
+		from_dynasty_suffix = "skiy"
 
 		modifier = default_culture_modifier
 	}
@@ -95,7 +168,8 @@ uralic_west = {
 		female_names = {
 			Alyona Anelina Anka Arguma Artana Ashava Ashnaza Baigusha Bazhata Bazhuta Cheymarina Chipanya Elyuva Erekay Eryana Eyzyural Ganya Inzhanya Istarta Kastusha Kelgan Kemelte Ketsyata Kevganya Kichat Kilyava Kirdyava Kizor Kvedo Lada Lamzur Laymar Laymarina Likshanya Liyana Marjo Markva Mastorava Mazania Mazanya Mazava Mazyargo Miyanza Narusha Nasta Nayana Normal' Nuya Oksya Olday Paksyaltya Paranza Selema Senezha Siyana Solana Syrnezha Telena Teshtela Valdasya Valdonya Valguzha Vechkana Velmata Verki Virineya Vitova Zekhel 
 		}
-		from_dynasty_prefix = "of "
+		
+		from_dynasty_suffix = "skiy"
 
 		modifier = default_culture_modifier
 	}

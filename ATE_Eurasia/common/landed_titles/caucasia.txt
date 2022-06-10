@@ -7,21 +7,60 @@ e_caucasia = {
 	
 	capital = 2119 # c_tbilisi
 	
+	georgian="K'avk'asia"
+	kurdish="Qefqasya"
+	
 	k_azerbaijan = {
 		color={ 105 173 166 }
 		color2={ 255 255 255 }
 		
 		capital = 916 # c_baku
 		
+		azeri="Azärbaycan"
+		armenian="Adrbejan"
+		georgian="Azerbaijani"
+		ossetian="Azerbayjan"
+		abkhazian="Azerbaijan"
+		circassian="Azerbayjan"
+		kabardian="Azerbiyjan"
+		karachay="Azerbaycan"
+		nakh="Azerbaydzhan"
+		avar="Azarbizhan"
+		nogai="Äzerbajzhan"
+		kumyk="Azerbajzhan"
+		lezgin="Azerbajzhan"
+		dargin="Azirbizhan"
+		kurdish="Azerbaycan"
+		
 		d_baku = {
 			color={ 125 153 176 }
 			color2={ 255 255 255 }
 			
 			capital = 916 # c_baku
+		
+			azeri="Baki"
+			armenian="Baqow"
+			georgian="Bako"
+			ossetian="Bakw"
+			abkhazian="Bakwa"
+			circassian="Bakw"
+			kabardian="Bakw"
+			nakh="Bakox"
+			kurdish="Bakû"
 			
 			c_baku = { # 916
 				color={ 135 143 181 }
 				color2={ 255 255 255 }
+		
+				azeri="Baki"
+				armenian="Baqow"
+				georgian="Bako"
+				ossetian="Bakw"
+				abkhazian="Bakwa"
+				circassian="Bakw"
+				kabardian="Bakw"
+				nakh="Bakox"
+				kurdish="Bakû"
 				
 				b_icaerisaehaer = {}
 				b_xaetai = {}
@@ -204,6 +243,10 @@ e_caucasia = {
 		color2={ 255 255 255 }
 		
 		capital = 908 #Krasnodar
+		
+		circassian="Pshyzhä"
+		kabardian="Pshizhe"
+		georgian="Q'ubani"
 						
 		d_krasnodar = {
 			color={ 223 135 221 }
@@ -504,29 +547,119 @@ e_caucasia = {
 		
 		capital = 906 #Makhachkala
 		
+		azeri="Qafqaz"
+		armenian="Kovkas"
+		georgian="K'avk'as"
+		ossetian="Kavkaz"
+		circassian="Q'auq'az"
+		kabardian="Qauqaz"
+		avar="Kawkaz"
+		lezgin="Qavqaz"
+		kurdish="Qefqas"
+		
 		d_dagestan = {
 			color={ 220 195 181 }
 			color2={ 255 255 255 }
 		
 			capital = 906 #Makhachkala
 			
+			azeri="Daghistan"
+			armenian="Daghstan"
+			georgian="Daghest'ani"
+			ossetian="Daghistan"
+			circassian="Daghystän"
+			kabardian="Daghisten"
+			karachay="Daghistan"
+			nakh="Deghestan"
+			avar="Daghistan"
+			nogai="Daghistan"
+			kumyk="Daghistan"
+			lezgin="Daghustan"
+			dargin="Daghistan"
+			kurdish="Daxistan"
+			tat="Doghistu"
+			
 			c_makhachkala = {
 				color={ 198 200 135 }
 				color2={ 255 255 255 }
 				
-				b_makhachkala = {}
-				b_buynaksk = {}
-				b_khasavyurt = {}
-				b_kizilyurt = {}
-				b_kaspiysk = {}
-				b_izberbash = {}
+				azeri="Mahaçqala"
+				armenian="Maxachkala"
+				georgian="Mahachq'ala"
+				circassian="Makhachq'alä"
+				kabardian="Maxachqale"
+				karachay="Maxaçqala"
+				nakh="Hinzha-Ghala"
+				avar="Mahaçqala"
+				nogai="Maxackala"
+				kumyk="Anji"
+				lezgin="Mahachqala"
+				dargin="Gänzhi-Qala"
+				
+				b_makhachkala = {
+					azeri="Mahaçqala"
+					armenian="Maxachkala"
+					georgian="Mahachq'ala"
+					circassian="Makhachq'alä"
+					kabardian="Maxachqale"
+					karachay="Maxaçqala"
+					nakh="Hinzha-Ghala"
+					avar="Mahaçqala"
+					nogai="Maxackala"
+					kumyk="Anji"
+					lezgin="Mahachqala"
+					dargin="Gänzhi-Qala"}
+				b_buynaksk = {
+					georgian="Buinaksk'i"
+					karachay="Temirkhan-Shura"
+					nakh="Shuri-Gala"
+					avar="Shura"
+					nogai="Temirkhan-Shura"
+					kumyk="Temirkhan-Shura"
+					lezgin="Bujnaksk"}
+				b_khasavyurt = {
+					azeri="Xasavyurt"
+					armenian="Xasavyowrt"
+					karachay="Khasav'-yurt"
+					nakh="Xasi-Evl"
+					avar="Xasavqala"
+					nogai="Khasav'-yurt"
+					kumyk="Khasav'-yurt"
+					lezgin="Xasavjurt"}
+				b_kizilyurt = {
+					azeri="Qizilyurd"
+					karachay="Qizilyurt"
+					avar="Ghizilyurt"
+					nogai="Qizilyurt"
+					kumyk="Qizilyurt"
+					kurdish="Azerbaycan"}
+				b_kaspiysk = {
+					georgian="K'asp'iisk'i"
+					avar="Kaspiyalhuq"}
+				b_izberbash = {
+					karachay="Yizbirbash"
+					nogai="Yizbirbash"
+					kumyk="Yizbirbash"}
 				b_semender = {}
 			}
 			c_derbent = {
 				color={ 154 152 121 }
 				color2={ 255 255 255 }
 				
-				b_derbent = {}
+				azeri="Därbänd"
+				armenian="Derbend"
+				georgian="Derbent'i"
+				kabardian="Deirbeint"
+				avar="Derbend"
+				lezgin="Q'vevar"
+				
+				b_derbent = {
+					azeri="Därbänd"
+					armenian="Derbend"
+					georgian="Derbent'i"
+					kabardian="Deirbeint"
+					avar="Derbend"
+					lezgin="Q'vevar"}
 				b_dagestanskie_ogni = {}
 				b_mamedkala = {}
 				b_magaramkent = {}
@@ -537,8 +670,25 @@ e_caucasia = {
 			c_kizlyar = {
 				color={ 167 142 139 }
 				color2={ 255 255 255 }
+
+				azeri="Qizilyar"
+				georgian="Q'izlari"
+				ossetian="Qyzlar"
+				nakh="Gizlar"
+				avar="Bagarqala"
+				nogai="Qizil-yar"
+				kumyk="Qizil-yar"
+				lezgin="Kizljar"
 				
-				b_kizlyar = {}
+				b_kizlyar = {
+					azeri="Qizilyar"
+					georgian="Q'izlari"
+					ossetian="Qyzlar"
+					nakh="Gizlar"
+					avar="Bagarqala"
+					nogai="Qizil-yar"
+					kumyk="Qizil-yar"
+					lezgin="Kizljar"}
 				b_yuzhno_sukhokumsk = {}
 				b_tarumovka = {}
 				b_babaiurt = {}
@@ -549,6 +699,16 @@ e_caucasia = {
 			c_nogay = {
 				color={ 224 133 139 }
 				color2={ 255 255 255 }
+
+				azeri="Noqay"
+				armenian="Noghay"
+				ossetian="Noghay"
+				circassian="Näghwey"
+				kabardian="Neghwey"
+				karachay="Noghay"
+				nakh="Nogiy"
+				avar="Nughay"
+				lezgin="Nughay"
 				
 				b_terekli_mekteb = {}
 				b_nariman_2 = {}
@@ -561,8 +721,11 @@ e_caucasia = {
 			c_levashi = {
 				color={ 138 116 41 }
 				color2={ 255 255 255 }
+
+				dargin="Lawasha"
 				
-				b_levashi = {}
+				b_levashi = {
+					dargin="Lawasha"}
 				b_akusha = {}
 				b_kumukh = {}
 				b_urkarakh = {}
@@ -573,8 +736,15 @@ e_caucasia = {
 			c_khebda = {
 				color={ 155 113 86 }
 				color2={ 255 255 255 }
+
+				armenian="Xebda"
+				nakh="Xebda"
+				avar="Hebda"
 				
-				b_khebda = {}
+				b_khebda = {
+					armenian="Xebda"
+					nakh="Xebda"
+					avar="Hebda"}
 				b_agvali = {}
 				b_karata = {}
 				b_tlyarata = {}
@@ -589,11 +759,52 @@ e_caucasia = {
 		
 			capital = 903 #Grozny
 			
+			azeri="Çeçenistan"
+			armenian="Chechnia"
+			georgian="Chechneti"
+			ossetian="Tsætsæn"
+			abkhazian="Chechentw'ÿla"
+			circassian="Chächäney"
+			kabardian="Checheney"
+			karachay="Chechenistan"
+			nakh="Noxçiyçö"
+			avar="Chachan"
+			nogai="Sheshenstan"
+			kumyk="Sheshenstan"
+			lezgin="Chechnja"
+			dargin="Naxchubee"
+			kurdish="Çeçenistan"
+			
 			c_grozny = {
 				color={ 113 154 114 }
 				color2={ 255 255 255 }
+
+				azeri="Qrozni"
+				armenian="Grozni"
+				georgian="Grozno"
+				ossetian="Grozna"
+				circassian="Groznä"
+				kabardian="Grozne"
+				karachay="Süyünç-Qala"
+				nakh="Sölzha-Gala"
+				avar="Sunzh-qala"
+				nogai="Süyünç-Qala"
+				kumyk="Süyünç-Qala"
+				kurdish="Grosnî"
 				
-				b_grozny = {}
+				b_grozny = {
+					azeri="Qrozni"
+					armenian="Grozni"
+					georgian="Grozno"
+					ossetian="Grozna"
+					circassian="Groznä"
+					kabardian="Grozne"
+					karachay="Süyünç-Qala"
+					nakh="Sölzha-Gala"
+					avar="Sunzh-qala"
+					nogai="Süyünç-Qala"
+					kumyk="Süyünç-Qala"
+					kurdish="Grosnî"}
 				b_gudermes = {}
 				b_argun = {}
 				b_shelkovskaya = {}
@@ -604,8 +815,11 @@ e_caucasia = {
 			c_urus_martan = {
 				color={ 129 198 85 }
 				color2={ 255 255 255 }
+
+				nakh="Xalxa-Marta"
 				
-				b_urus_martan = {}
+				b_urus_martan = {
+					nakh="Xalxa-Marta"}
 				b_shali = {}
 				b_kurchaloy = {}
 				b_goyty = {}
@@ -619,10 +833,34 @@ e_caucasia = {
 			color2={ 255 255 255 }
 		
 			capital = 914 #Vladikavkaz
+		
+			azeri="Qafqaz"
+			armenian="Kovkas"
+			georgian="K'avk'as"
+			ossetian="Kavkaz"
+			circassian="Q'auq'az"
+			kabardian="Qauqaz"
+			avar="Kawkaz"
+			lezgin="Qavqaz"
+			kurdish="Qefqas"
 			
 			c_ingushetia = {
 				color={ 151 149 87 }
 				color2={ 255 255 255 }
+
+				azeri="Inqushetiya"
+				armenian="Ingowshet'ia"
+				georgian="Ingusheti"
+				ossetian="Mæqqæl"
+				abkhazian="Ingwÿshtw'ÿla"
+				circassian="Ingwshey"
+				kabardian="Ingwshey"
+				karachay="Üngüsh"
+				nakh="Galgayçö"
+				avar="Ghalghay"
+				nogai="Üngüsh"
+				kumyk="Üngüsh"
+				lezgin="Ingushetija"
 				
 				b_nazran = {}
 				b_karabulak = {}
@@ -635,11 +873,28 @@ e_caucasia = {
 			c_vladikavkaz = {
 				color={ 164 188 82 }
 				color2={ 255 255 255 }
+
+				azeri="Vladiqafqaz"
+				georgian="Vladik'avk'azi"
+				ossetian="Dzæwdzhyqæw"
+				circassian="Tärchq'alä"
+				kabardian="Terchqale"
+				nakh="Burithe"
+				avar="Wladikawkaz"
+				lezgin="Vladiqavqaz"
 				
 				holy_site = nartist
 				holy_site = nartist_reformed
 				
-				b_vladikavkaz = {}
+				b_vladikavkaz = {
+					azeri="Vladiqafqaz"
+					georgian="Vladik'avk'azi"
+					ossetian="Dzæwdzhyqæw"
+					circassian="Tärchq'alä"
+					kabardian="Terchqale"
+					nakh="Burithe"
+					avar="Wladikawkaz"
+					lezgin="Vladiqavqaz"}
 				b_ardon = {}
 				b_oktyabrskoye_2 = {}
 				b_beslan = {}
@@ -650,8 +905,29 @@ e_caucasia = {
 			c_nalchik = {
 				color={ 135 123 79 }
 				color2={ 255 255 255 }
+
+				azeri="Nalçik"
+				georgian="Nalchik'i"
+				ossetian="Naltsykk"
+				circassian="Nalshyk"
+				kabardian="Nalsch'ech"
+				karachay="Nalçik"
+				nakh="Nalçik"
+				avar="Nalhchik"
+				nogai="Nalçik"
+				kumyk="Nalçik"
 				
-				b_nalchik = {}
+				b_nalchik = {
+					azeri="Nalçik"
+					georgian="Nalchik'i"
+					ossetian="Naltsykk"
+					circassian="Nalshyk"
+					kabardian="Nalsch'ech"
+					karachay="Nalçik"
+					nakh="Nalçik"
+					avar="Nalhchik"
+					nogai="Nalçik"
+					kumyk="Nalçik"}
 				b_prokhladny = {}
 				b_nartkala = {}
 				b_baksan = {}
@@ -662,8 +938,27 @@ e_caucasia = {
 			c_cherkessk = {
 				color={ 125 159 125 }
 				color2={ 255 255 255 }
+
+				azeri="Çerkessk"
+				armenian="Cherkesk"
+				georgian="Cherk'esk'i"
+				circassian="Cherkes-q'alä"
+				kabardian="Sherjes qale"
+				karachay="Çerkessk"
+				nakh="Çerkessk"
+				nogai="Çerkessk"
+				kumyk="Çerkessk"
 				
-				b_cherkessk = {}
+				b_cherkessk = {
+					azeri="Çerkessk"
+					armenian="Cherkesk"
+					georgian="Cherk'esk'i"
+					circassian="Cherkes-q'alä"
+					kabardian="Sherjes qale"
+					karachay="Çerkessk"
+					nakh="Çerkessk"
+					nogai="Çerkessk"
+					kumyk="Çerkessk"}
 				b_karachayevsk = {}
 				b_ust_dzheguta = {}
 				b_uchkeken = {}
@@ -679,6 +974,20 @@ e_caucasia = {
 		color2={ 255 255 255 }
 		
 		capital = 2134 # c_yerevan
+		
+		azeri="Ermänistan"
+		armenian="Hayastan"
+		georgian="Somkheti"
+		ossetian="Somikh"
+		abkhazian="Ermantw'ÿla"
+		circassian="Armenie"
+		kabardian="Armeiniye"
+		karachay="Ermeniya"
+		nakh="Ermaloyçö"
+		avar="Ts'amuq"
+		lezgin="Ermenistan"
+		dargin="Armantee"
+		kurdish="Ermenistan"
 		
 		d_yerevan = {
 			color={ 179 129 71 }
@@ -818,15 +1127,26 @@ e_caucasia = {
 		
 		capital = 2119 # c_tbilisi
 		
+		azeri="Gürcüstan"
+		armenian="Vrastan"
 		georgian="Sakartvelo"
+		ossetian="Gwyrdzy"
+		abkhazian="Kÿrttw'ÿla"
+		circassian="Xyrtsye"
+		kabardian="X'irtsey"
+		karachay="Gürcü"
+		nakh="Gürzhiyçö"
+		avar="Qiziq"
+		nogai="Ghurzhistan"
+		kumyk="Ghurzhistan"
+		lezgin="Gurzhistan"
+		kurdish="Gurcistan"
 		rumelian="Gürcistan"
 		west_anatolian="Gürcistan"
 		central_anatolian="Gürcistan"
 		black_sea="Gürcistan"
 		toros_mountain="Gürcistan"
-		azeri="Gürcüstan"
 		laz="Kortustan"
-		armenian="Vrastan"
 		
 		d_kartli = {
 			color={ 210 159 214 }
