@@ -595,7 +595,6 @@ d_russian_patriarch = {
 	
 	culture = muscovite
 	religion = orthodox
-	pentarchy = orthodox
 	
 	# Cannot be held as a secondary title
 	primary = yes
@@ -614,7 +613,7 @@ d_russian_patriarch = {
 		Theophanes Theophylaktos Tryphon Zacharias
 	}
 }
-d_antioch_patriarch = {
+d_kyivan_patriarch = {
 	color={ 236 59 55 }
 	color2={ 220 220 0 }
 	
@@ -625,9 +624,8 @@ d_antioch_patriarch = {
 	# Always exists
 	landless = yes
 	
-	culture = suriyi
+	culture = ukrainian
 	religion = orthodox
-	pentarchy = orthodox
 	
 	# Cannot be held as a secondary title
 	primary = yes
@@ -660,7 +658,6 @@ d_georgian_patriarch = {
 	
 	culture = georgian
 	religion = orthodox
-	pentarchy = orthodox
 	
 	# Cannot be held as a secondary title
 	primary = yes
@@ -692,7 +689,6 @@ d_jerusalem_patriarch = {
 	
 	culture = filastini
 	religion = orthodox
-	pentarchy = orthodox
 	
 	# Cannot be held as a secondary title
 	primary = yes
@@ -880,7 +876,6 @@ d_tewahedo = {
 	
 	culture = tigrinya
 	religion = miaphysite
-	pentarchy = miaphysite
 	
 	# Cannot be held as a secondary title
 	primary = yes
