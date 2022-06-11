@@ -423,6 +423,7 @@
 	trait = sympathy_islam
 	trait = sympathy_islamosyncretic
 	2610.1.1 = { birth = yes }
+	2641.3.14={add_spouse=3601502}
 	2660.1.1 = { death = yes }
 }
 3601502 = {
@@ -448,21 +449,22 @@
 	trait = cynical
 	2638.1.1 = { birth = yes }
 	2660.1.1 = {
-		add_spouse = 3601504
+		add_spouse = 3600545
 	}
 }
 3601504 = { 
-	name = "Mariam" 
-	dynasty = 2105001 #Sarkesian
+	name = "Yahya" 
 	culture = lebneni
-	trait = school_thaddeus
-	religion = miaphysite
-	female = yes
+	religion = catholic
+	trait = maronite_rite
+	dynasty = 2105000 #Jibran
 	trait = underhanded_rogue
 	trait = chaste
 	trait = temperate
 	trait = humble
-	2640.1.1 = { birth = yes }
+	father = 3601501
+	mother = 3601502
+	2648.1.1 = { birth = yes }
 }
 3601505 = { 
 	name = "Alisa" 
@@ -470,6 +472,8 @@
 	culture = lebneni
 	trait = school_thaddeus
 	religion = miaphysite
+	father=3601503
+	mother=3600545
 	female = yes
 	2661.1.1 = { birth = yes }
 }
@@ -477,6 +481,7 @@
 	name = "Vardan" 
 	dynasty = 2105001 #Sarkesian
 	father=3601503
+	mother=3600545
 	trait = school_thaddeus
 	culture = lebneni
 	religion = miaphysite
@@ -791,7 +796,6 @@
 }
 3601532 = { 
 	name = "Jamila"
-	dynasty = 2105009 #Karami
 	culture = lebneni
 	religion = sunni
 	female = yes
@@ -835,12 +839,15 @@
 }
 3601535 = { 
 	name = "Niveen"
-	culture = lebneni
+	father = 3601006
+	dynasty = 2103006 #Sahyouni
+	culture = suriyi
 	religion = sunni
 	female = yes
 	trait = thrifty_clerk
 	trait = temperate
 	trait = trusting
+	2625.1.1 = { birth = yes }
 }
 3601536 = { 
 	name = "Nabil"

@@ -587,7 +587,7 @@
 	name = "Leon"
 	dynasty = 2072077
 	religion = orthodox
-	culture = greek
+	culture = makedonian
 	trait = brilliant_strategist
 	trait = organizer
 	trait = scarred_mid
@@ -605,7 +605,7 @@
 	name = "Leon"
 	dynasty = 2072077
 	religion = orthodox
-	culture = greek
+	culture = makedonian
 	trait = legendary
 	occluded = yes
 	father = 2072214
@@ -616,7 +616,7 @@
 	name = "Kostas"
 	dynasty = 2072077
 	religion = orthodox
-	culture = greek
+	culture = makedonian
 	trait = legendary
 	occluded = yes
 	father = 2072214
@@ -627,7 +627,7 @@
 	name = "Christoforos"
 	dynasty = 2072077
 	religion = orthodox
-	culture = greek
+	culture = makedonian
 	trait = legendary
 	occluded = yes
 	father = 2072215
@@ -642,8 +642,9 @@
 2072218 = {
 	name = "Nikos"
 	dynasty = 2073074
-	religion = orthodox
-	culture = makedonian
+	religion = pagan
+	culture = greek
+	trait = sympathy_scholastic
 	trait = peasant_leader
 	trait = legendary
 	occluded = yes
@@ -659,7 +660,7 @@
 	name = "Leon"
 	dynasty = 2072077
 	religion = orthodox
-	culture = greek
+	culture = makedonian
 	father = 2072215
 	trait = legendary
 	2090.1.1 = {birth = yes}
@@ -669,7 +670,7 @@
 	name = "Soteres"
 	dynasty = 2072077
 	religion = orthodox
-	culture = greek
+	culture = makedonian
 	father = 2072219
 	2120.1.1 = {birth = yes}
 	2160.1.1 = {death = yes}
@@ -678,7 +679,7 @@
 	name = "Pavlos"
 	dynasty = 2072077
 	religion = orthodox
-	culture = greek
+	culture = makedonian
 	father = 2072219
 	2121.1.1 = {birth = yes}
 	2180.1.1 = {death = yes}
@@ -687,7 +688,7 @@
 	name = "Daniíl"
 	dynasty = 2072077
 	religion = orthodox
-	culture = greek
+	culture = makedonian
 	father = 2072221
 	2151.1.1 = {birth = yes}
 	2192.1.1 = {death = yes}
@@ -696,7 +697,7 @@
 	name = "Perikles"
 	dynasty = 2072077
 	religion = orthodox
-	culture = greek
+	culture = makedonian
 	trait = stressed
 	father = 2072222
 	2175.1.1 = {birth = yes}
@@ -707,19 +708,19 @@
 	}
 }
 2072224 = {
-	name = "Photios"
+	name = "Fotios"
 	dynasty = 2072077
 	religion = orthodox
-	culture = greek
+	culture = makedonian
 	father = 2072219
 	2122.1.1 = {birth = yes}
 	2170.1.1 = {death = yes}
 }
 2072225 = {
-	name = "Apostolos"
+	name = "Apostolis"
 	dynasty = 2072077
 	religion = orthodox
-	culture = greek
+	culture = makedonian
 	father = 2072224
 	2147.1.1 = {birth = yes}
 	2200.1.1 = {death = yes}
@@ -728,16 +729,16 @@
 	name = "Pavlos"
 	dynasty = 2072077
 	religion = orthodox
-	culture = greek
+	culture = makedonian
 	father = 2072225
 	2170.1.1 = {birth = yes}
 	2220.1.1 = {death = yes}
 }
 2072227 = {
-	name = "Dimos"
+	name = "Demos"
 	dynasty = 2073075
 	religion = orthodox
-	culture = makedonian
+	culture = greek
 	2180.1.1 = {birth = yes}
 	2225.1.1 = {death = yes}
 }
