@@ -263,7 +263,7 @@ character_event = {
 		set_character_flag = celebrating_naheere 
 		set_character_flag = do_not_disturb
 		hidden_tooltip = { character_event = { id = newnestorian.10 days = 8 } }
-		hidden_tooltip = { character_event = { id = SoA.599 days = 20 } } # Safety catch flag clearing
+		hidden_tooltip = { character_event = { id = newnestorian.13 days = 20 } } # Safety catch flag clearing
 	}
 	option = {
 		name = EVTOPTB_newnestorian_8
@@ -301,7 +301,7 @@ character_event = {
 	}
 }
 
-# Passover Seder Begins
+# Naheere Begins
 character_event = {
 	id = newnestorian.10
 	desc = EVTDESC_newnestorian_10
@@ -317,7 +317,7 @@ character_event = {
 	}
 }
 
-# Passover Seder Ends (Host)
+# Naheere Ends (Host)
 character_event = {
 	id = newnestorian.11
 	desc = EVTDESC_newnestorian_11
@@ -357,7 +357,7 @@ character_event = {
 	}
 }
 
-# Passover Sedar Ends (Guest)
+# Naheere Ends (Guest)
 character_event = {
 	id = newnestorian.12
 	desc = EVTDESC_newnestorian_12
@@ -372,5 +372,24 @@ character_event = {
 		}
 		clr_character_flag = celebrating_naheere 
 		clr_character_flag = do_not_disturb
+	}
+}
+
+###########################################
+# Flag management						 #
+###########################################
+
+# Safety catch - clears character flags and modifiers
+character_event = {
+	id = newnestorian.13
+
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		clr_character_flag = do_not_disturb
+		clr_character_flag = holding_naheere
+		clr_character_flag = celebrating_naheere
 	}
 }
