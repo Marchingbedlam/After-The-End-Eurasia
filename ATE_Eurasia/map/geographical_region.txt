@@ -48,7 +48,19 @@ custom_libya = {
 
 custom_old_egypt = {
 	duchies = { 
-		d_al_qahirah d_kufra d_al_bahr_al_ahmar d_al_wadi_al_jadid d_as_suways d_delta_an_nil d_matruh d_shamal_as_said d_sinai
+		d_al_qahirah d_kufra d_al_bahr_al_ahmar d_al_wadi_al_jadid d_as_suways d_delta_an_nil d_matruh d_shamal_as_said d_sinai d_asyut d_al_uqsur d_buhayra_nasr
+	}
+	counties = { 
+		c_masra_alam c_halayib
+	}
+}
+
+custom_sudan = {
+	duchies = { 
+		d_dongola d_nile d_black_nile d_al_mogran d_white_nile d_blue_nile d_kordofan
+	}
+	counties = { 
+		c_port_sudan c_tokar
 	}
 }
 
@@ -233,6 +245,21 @@ custom_finland = {
 		d_turku d_aland d_uusimaa d_tavastia d_savonia d_ostrobothnia d_lapland
 	}
 }
+custom_finland = {
+	duchies = {
+		d_turku d_aland d_uusimaa d_tavastia d_savonia d_ostrobothnia d_lapland
+	}
+}
+custom_ethiopia = {
+	duchies = {
+		d_gojjam d_wollo d_gondar d_tigray d_afar d_eritrea d_keyih_bahri
+	}
+}
+custom_somalia = {
+	duchies = {
+		d_puntland d_sanaag d_somaliland
+	}
+}
 custom_fertile_crescent = {
 	duchies = {
 		d_baghdad d_anbar d_al_jazira d_kurdistan d_sawad d_dimashq d_al_ladhqiyah d_halab d_hims d_raqqa d_amman d_karak d_beirut d_al_jnoub d_as_shamal d_jerusalem d_galil d_mishor_hahof d_negev d_west_bank d_cyprus d_al_qahirah d_cyrenaica d_kufra d_al_bahr_al_ahmar d_al_uqsur d_asyut d_al_wadi_al_jadid d_as_suways d_buhayra_nasr d_delta_an_nil d_matruh d_shamal_as_said d_sinai d_kuwait
@@ -264,7 +291,15 @@ custom_pale = {
 
 custom_north_africa = {
 	regions = {
-		custom_morocco custom_sahara custom_algeria custom_tunisia custom_libya custom_old_egypt
+		custom_morocco custom_sahara custom_algeria custom_tunisia custom_libya custom_old_egypt custom_sudan
+	}
+}
+custom_east_africa = {
+	regions = {
+		custom_ethiopia custom_somalia
+	}
+	duchies = {
+		d_djibouti
 	}
 }
 custom_arabian_pennisula = {

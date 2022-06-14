@@ -2194,10 +2194,11 @@ offmap_ethiopia = {
 							}
 						}
 					}
-					any_realm_province = { #Is within reach of the silk road
+					any_realm_province = { #Is within reach of the Ethiopian Empire
 						OR = {
-							trade_route = silk_road
 							region = world_north_africa
+							region = custom_east_africa
+							region = custom_arabian_pennisula
 						}
 					}
 				}
@@ -2216,9 +2217,12 @@ offmap_ethiopia = {
 					any_neighbor_independent_ruler = {
 						has_landed_title = e_ethiopia
 					}
-					any_realm_province = { #Is within the Chinese region of influence
+					any_realm_province = { #Is within the Ethiopian region of influence
 						OR = {
-							region = world_north_africa
+							region = custom_east_africa
+							region = custom_sudan
+							region = custom_yemen
+							region = custom_old_egypt
 						}
 					}
 				}			 
