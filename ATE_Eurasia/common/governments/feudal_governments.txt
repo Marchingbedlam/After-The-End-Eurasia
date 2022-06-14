@@ -1192,10 +1192,14 @@ feudal_governments = {
 			theocratic_feudal_government
 
 		}
-		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
-			tribal_government
-			nomadic_tribal_government
+		free_revoke_on_governments_culture = { 
+		tribal_government​
+		feudal_government
+		ghazi_government
+		diwan_government
+		swaraj_government
 		}
+		free_revoke_on_tiers = { baron }
 		frame_suffix = "_hetmanate"
 		potential = {
 			OR = {
