@@ -1062,13 +1062,14 @@ offmap_china = {
 							}
 						}
 					}
-					any_realm_province = { #Is within reach of the silk road
+					any_realm_province = { #Is within reach of the Sinic Influence
 						OR = {
-							trade_route = silk_road
-							region = world_steppe_east
+							region = world_great_steppe
+							region = world_siberia
+							region = custom_xinjiang
 							region = world_himalayas
 							region = world_india
-							region = world_persia
+							region = world_greater_iran
 						}
 					}
 				}
@@ -1089,10 +1090,10 @@ offmap_china = {
 					}
 					any_realm_province = { #Is within the Chinese region of influence
 						OR = {
-							region = world_steppe_tarim
-							region = world_steppe_east
+							region = custom_xinjiang
+							region = custom_mongolia
 							region = world_himalayas
-							region = world_india
+							region = custom_northern_india
 						}
 					}
 				}			 
