@@ -2,7 +2,7 @@
 #                                         #
 # Ethiopia Status, Policy & News Events	  #
 #                                         #
-# ID JD.50000-JD.51000    	              #
+# ID ED.50000-ED.51000    	              #
 #                                         #
 ###########################################
 
@@ -12,10 +12,10 @@ namespace = EL
 # Derrick
 # Revised from Vanilla
 
-# New Chinese Emperor. Pick a new Policy and send a News Event!
+# New Ethiopian Emperor. Pick a new Policy and send a News Event!
 # Hidden. Fired from on_offmap_ruler_changed.
 character_event = {
-	id = JD.50000
+	id = ED.50000
 	offmap = only
 
 	has_dlc = "Jade Dragon"
@@ -133,7 +133,7 @@ character_event = {
 					has_offmap_news_enabled = FROMFROM
 					is_within_diplo_range = ROOT
 				}
-				narrative_event = { id = JD.50001 }
+				narrative_event = { id = ED.50001 }
 			}
 		}
 		
@@ -146,7 +146,7 @@ character_event = {
 
 # News from Ethiopia: A new Emperor
 narrative_event = {
- 	id = JD.50001
+ 	id = ED.50001
 	title = NEWS_FROM_CHINA
 	picture = GFX_evt_ethiopia_golden_age
 	portrait = offmap_ethiopia
@@ -185,7 +185,7 @@ narrative_event = {
 				}
 			}
 		}
-		text = EVTDESC_JD_50001
+		text = EVTDESC_ED_50001
 	}
 	desc = {
 		trigger = {
@@ -209,7 +209,7 @@ narrative_event = {
 				}
 			}
 		}
-		text = EVTDESC_JD_50001_NEW_DYN
+		text = EVTDESC_ED_50001_NEW_DYN
 	}
 	desc = {
 		trigger = {
@@ -233,7 +233,7 @@ narrative_event = {
 				}
 			}
 		}
-		text = EVTDESC_JD_50001_NEW_POLICY
+		text = EVTDESC_ED_50001_NEW_POLICY
 	}
 	desc = {
 		trigger = {
@@ -257,7 +257,7 @@ narrative_event = {
 				}
 			}
 		}
-		text = EVTDESC_JD_50001_NEW_DYN_NEW_POLICY
+		text = EVTDESC_ED_50001_NEW_DYN_NEW_POLICY
 	}
 
 	has_dlc = "Jade Dragon"
@@ -265,7 +265,7 @@ narrative_event = {
     is_triggered_only = yes
 	
 	option = {
-		name = EVTOPT_JD_50001_OPEN
+		name = EVTOPT_ED_50001_OPEN
 		trigger = {
 			FROM = { has_policy = ethiopia_open }
 			OR = {
@@ -274,7 +274,7 @@ narrative_event = {
 			}
 		}
 		if = {
-			limit = { has_character_flag = was_tributary_of_china }
+			limit = { has_character_flag = was_tributary_of_ethiopia }
 			tooltip = {
 				FROM = {
 					show_scope_change = no
@@ -283,11 +283,11 @@ narrative_event = {
 					}
 				}
 			}
-			clr_character_flag = was_tributary_of_china
+			clr_character_flag = was_tributary_of_ethiopia
 		}
 	}
 	option = {
-		name = EVTOPT_JD_50001_ISO
+		name = EVTOPT_ED_50001_ISO
 		trigger = {
 			FROM = { has_policy = ethiopia_isolationist }
 			OR = {
@@ -296,7 +296,7 @@ narrative_event = {
 			}
 		}
 		if = {
-			limit = { has_character_flag = was_tributary_of_china }
+			limit = { has_character_flag = was_tributary_of_ethiopia }
 			tooltip = {
 				FROM = {
 					show_scope_change = no
@@ -305,11 +305,11 @@ narrative_event = {
 					}
 				}
 			}
-			clr_character_flag = was_tributary_of_china
+			clr_character_flag = was_tributary_of_ethiopia
 		}
 	}
 	option = {
-		name = EVTOPT_JD_50001_EXP
+		name = EVTOPT_ED_50001_EXP
 		trigger = {
 			FROM = { has_policy = ethiopia_expansionist }
 			OR = {
@@ -318,7 +318,7 @@ narrative_event = {
 			}
 		}
 		if = {
-			limit = { has_character_flag = was_tributary_of_china }
+			limit = { has_character_flag = was_tributary_of_ethiopia }
 			tooltip = {
 				FROM = {
 					show_scope_change = no
@@ -327,18 +327,18 @@ narrative_event = {
 					}
 				}
 			}
-			clr_character_flag = was_tributary_of_china
+			clr_character_flag = was_tributary_of_ethiopia
 		}
 	}
 	
 	option = {
-		name = EVTOPT_JD_50302_BROKEN_PEACE_DEAL
+		name = EVTOPT_ED_50302_BROKEN_PEACE_DEAL
 		trigger = {
 			has_character_modifier = peace_deal_with_ethiopia
 			FROM = { FROM = { NOT  = { dynasty = PREV } } }
 		}
 		if = {
-			limit = { has_character_flag = was_tributary_of_china }
+			limit = { has_character_flag = was_tributary_of_ethiopia }
 			tooltip = {
 				FROM = {
 					show_scope_change = no
@@ -347,7 +347,7 @@ narrative_event = {
 					}
 				}
 			}
-			clr_character_flag = was_tributary_of_china
+			clr_character_flag = was_tributary_of_ethiopia
 		}
 		remove_character_modifier = peace_deal_with_ethiopia
 	}
@@ -358,7 +358,7 @@ narrative_event = {
 # Root = Governor
 # From = Offmap
 character_event = {
-    id = JD.50020
+    id = ED.50020
 
     has_dlc = "Jade Dragon"
 
@@ -378,14 +378,14 @@ character_event = {
 				has_offmap_news_enabled = FROM
 				is_within_diplo_range = ROOT
 			}
-			narrative_event = { id = JD.50021 }
+			narrative_event = { id = ED.50021 }
 		}
 	}
 }
 
 # News from Ethiopia: New Policy Picked
 narrative_event = {
-	id = JD.50021
+	id = ED.50021
 	title = NEWS_FROM_CHINA
 	portrait = offmap_ethiopia
 	window = EventWindowOffmap
@@ -394,17 +394,17 @@ narrative_event = {
 	desc = {
 		trigger = { FROMFROM = { has_policy = ethiopia_open } }
 		picture = GFX_evt_ethiopia_open
-		text = EVTDESC_JD_50021_OPEN
+		text = EVTDESC_ED_50021_OPEN
 	}
 	desc = {
 		trigger = { FROMFROM = { has_policy = ethiopia_isolationist } }
 		picture = GFX_evt_ethiopia_isolationist
-		text = EVTDESC_JD_50021_ISO
+		text = EVTDESC_ED_50021_ISO
 	}
 	desc = {
 		trigger = { FROMFROM = { has_policy = ethiopia_expansionist } }
 		picture = GFX_evt_ethiopia_expansionist
-		text = EVTDESC_JD_50021_EXP
+		text = EVTDESC_ED_50021_EXP
 	}
 
 	has_dlc = "Jade Dragon"
@@ -423,15 +423,15 @@ narrative_event = {
 	
 	
 	option = {
-		name = EVTOPT_JD_50001_OPEN
+		name = EVTOPT_ED_50001_OPEN
 		trigger = { FROMFROM = { has_policy = ethiopia_open } }
 	}
 	option = {
-		name = EVTOPT_JD_50021_ISO
+		name = EVTOPT_ED_50021_ISO
 		trigger = { FROMFROM = { has_policy = ethiopia_isolationist } }
 	}
 	option = {
-		name = EVTOPT_JD_50001_EXP
+		name = EVTOPT_ED_50001_EXP
 		trigger = { FROMFROM = { has_policy = ethiopia_expansionist } }
 	}
 }
@@ -442,7 +442,7 @@ narrative_event = {
 # Root = Governor
 # From = Offmap
 character_event = {
-	id = JD.50030
+	id = ED.50030
 
 	has_dlc = "Jade Dragon"
 
@@ -468,7 +468,7 @@ character_event = {
 					has_offmap_news_enabled = FROM
 					is_within_diplo_range = ROOT
 				}
-				narrative_event = { id = JD.50031 }
+				narrative_event = { id = ED.50031 }
 			}
 		}
 	}
@@ -476,7 +476,7 @@ character_event = {
 
 # News from Ethiopia: New Status
 narrative_event = {
-	id = JD.50031
+	id = ED.50031
 	title = NEWS_FROM_ETHIOPIA
 	portrait = offmap_ethiopia
 	window = EventWindowOffmap
@@ -485,42 +485,42 @@ narrative_event = {
 	desc = {
 		trigger = { FROMFROM = { has_status = ethiopia_stable } }
 		picture = GFX_evt_ethiopia_stable
-		text = EVTDESC_JD_50031_STABLE
+		text = EVTDESC_ED_50031_STABLE
 	}
 	desc = {
 		trigger = { FROMFROM = { has_status = ethiopia_unrest } }
 		picture = GFX_evt_ethiopia_unrest
-		text = EVTDESC_JD_50031_UNREST
+		text = EVTDESC_ED_50031_UNREST
 	}
 	desc = {
 		trigger = { FROMFROM = { has_status = ethiopia_famine } }
 		picture = GFX_evt_ethiopia_famine
-		text = EVTDESC_JD_50031_FAMINE
+		text = EVTDESC_ED_50031_FAMINE
 	}
 	desc = {
 		trigger = { FROMFROM = { has_status = ethiopia_plague } }
 		picture = GFX_evt_ethiopia_devastating_plague
-		text = EVTDESC_JD_50031_PLAGUE
+		text = EVTDESC_ED_50031_PLAGUE
 	}
 	desc = {
 		trigger = { FROMFROM = { has_status = ethiopia_east_african_invasion } }
 		picture = GFX_evt_ethiopia_somalis_invade
-		text = EVTDESC_JD_50031_MONGOLS
+		text = EVTDESC_ED_50031_MONGOLS
 	}
 	desc = {
 		trigger = { FROMFROM = { has_status = ethiopia_west_african_invasion } }
 		picture = GFX_evt_ethiopia_somalis_invade
-		text = EVTDESC_JD_50031_JURCHENS
+		text = EVTDESC_ED_50031_JURCHENS
 	}
 	desc = {
 		trigger = { FROMFROM = { has_status = ethiopia_civil_war } }
 		picture = GFX_evt_ethiopia_civil_war
-		text = EVTDESC_JD_50031_CW
+		text = EVTDESC_ED_50031_CW
 	}
 	desc = {
 		trigger = { FROMFROM = { has_status = ethiopia_golden_age } }
 		picture = GFX_evt_ethiopia_golden_age
-		text = EVTDESC_JD_50031_GOLDEN
+		text = EVTDESC_ED_50031_GOLDEN
 	}
 
 	has_dlc = "Jade Dragon"
@@ -548,7 +548,7 @@ narrative_event = {
 # Root = Governor
 # From = Offmap
 character_event = {
-	id = JD.50100
+	id = ED.50100
 
 	has_dlc = "Jade Dragon"
 
@@ -560,9 +560,9 @@ character_event = {
 			is_offmap_tag = offmap_ethiopia
 			NOR = {
 				has_status = ethiopia_stable
-				has_status = ethiopia_east_african_invasion # Resolution handled by JD.50160
-				has_status = ethiopia_west_african_invasion # Resolution handled by JD.50200
-				has_status = ethiopia_civil_war # Resolution handled by JD.50300
+				has_status = ethiopia_east_african_invasion # Resolution handled by ED.50160
+				has_status = ethiopia_west_african_invasion # Resolution handled by ED.50200
+				has_status = ethiopia_civil_war # Resolution handled by ED.50300
 			}
 		}
 	}
@@ -725,7 +725,7 @@ character_event = {
     
 	immediate = {
 		FROM = {
-			set_status = ethiopia_stable # Players will be notified by JD.50030
+			set_status = ethiopia_stable # Players will be notified by ED.50030
 		}
 	}
 }
@@ -735,7 +735,7 @@ character_event = {
 # Root = Governor
 # From = Offmap
 character_event = {
-	id = JD.50120
+	id = ED.50120
 
 	has_dlc = "Jade Dragon"
 
@@ -747,9 +747,9 @@ character_event = {
 			is_offmap_tag = offmap_ethiopia
 			NOR = {
 				has_status = ethiopia_unrest
-				has_status = ethiopia_east_african_invasion # Resolution handled by JD.50160
-				has_status = ethiopia_west_african_invasion # Resolution handled by JD.50200
-				has_status = ethiopia_civil_war # Resolution handled by JD.50300
+				has_status = ethiopia_east_african_invasion # Resolution handled by ED.50160
+				has_status = ethiopia_west_african_invasion # Resolution handled by ED.50200
+				has_status = ethiopia_civil_war # Resolution handled by ED.50300
 			}
 		}
 	}
@@ -847,7 +847,7 @@ character_event = {
 	immediate = {
 		FROM = {
 			set_offmap_flag = ethiopia_had_unrest
-			set_status = ethiopia_unrest # Players will be notified by JD.50030
+			set_status = ethiopia_unrest # Players will be notified by ED.50030
 		}
 	}
 }
@@ -857,7 +857,7 @@ character_event = {
 # Root = Governor
 # From = Offmap
 character_event = {
-	id = JD.50140
+	id = ED.50140
 
 	has_dlc = "Jade Dragon"
 
@@ -868,9 +868,9 @@ character_event = {
 		FROM = {
 			is_offmap_tag = offmap_ethiopia
 			NOR = {
-				has_status = ethiopia_east_african_invasion # Resolution handled by JD.50160
-				has_status = ethiopia_west_african_invasion # Resolution handled by JD.50200
-				has_status = ethiopia_civil_war # Resolution handled by JD.50300
+				has_status = ethiopia_east_african_invasion # Resolution handled by ED.50160
+				has_status = ethiopia_west_african_invasion # Resolution handled by ED.50200
+				has_status = ethiopia_civil_war # Resolution handled by ED.50300
 			}
 			OR = {
 				NOT = { has_offmap_flag = ethiopia_invaded_player_dynasty }
@@ -1011,14 +1011,14 @@ character_event = {
 				has_offmap_news_enabled = FROM
 				is_within_diplo_range = ROOT
 			}
-			narrative_event = { id = JD.50141 }
+			narrative_event = { id = ED.50141 }
 		}
 	}
 }
 
 # News from Ethiopia: East African
 narrative_event = {
-	id = JD.50141
+	id = ED.50141
 	title = NEWS_FROM_CHINA
 	picture = GFX_evt_mongols
 	portrait = offmap_ethiopia
@@ -1035,7 +1035,7 @@ narrative_event = {
 				}
 			}
 		}
-		text = EVTDESC_JD_50141_BOOST
+		text = EVTDESC_ED_50141_BOOST
 	}
 	desc = {
 		trigger = {
@@ -1043,7 +1043,7 @@ narrative_event = {
 				prev_status = ethiopia_golden_age
 			}
 		}
-		text = EVTDESC_JD_50141_PENALTY
+		text = EVTDESC_ED_50141_PENALTY
 	}
 	desc = {
 		trigger = {
@@ -1056,7 +1056,7 @@ narrative_event = {
 				}
 			}
 		}
-		text = EVTDESC_JD_50031_MONGOLS # Can be the same as the standard status change notification
+		text = EVTDESC_ED_50031_MONGOLS # Can be the same as the standard status change notification
 	}
 
 	has_dlc = "Jade Dragon"
@@ -1075,7 +1075,7 @@ narrative_event = {
 	
 	
 	option = {
-		name = EVTOPT_JD_50141
+		name = EVTOPT_ED_50141
 	}
 }
 
@@ -1084,7 +1084,7 @@ narrative_event = {
 # Root = Governor
 # From = Offmap
 character_event = {
-	id = JD.50160
+	id = ED.50160
 
 	has_dlc = "Jade Dragon"
 
@@ -1154,7 +1154,7 @@ character_event = {
 						has_offmap_news_enabled = FROM
 						is_within_diplo_range = ROOT
 					}
-					narrative_event = { id = JD.50161 }
+					narrative_event = { id = ED.50161 }
 				}
 			}
 			100 = { # Mongols won!
@@ -1210,7 +1210,7 @@ character_event = {
 					set_offmap_flag = no_succession_news
 				}
 				
-				# A new ruler ascends to the Lion Throne. The fallout is handled by JD.10005 and JD.50000 (from 'on_offmap_ruler_changed')
+				# A new ruler ascends to the Lion Throne. The fallout is handled by ED.10005 and ED.50000 (from 'on_offmap_ruler_changed')
 				random_list = {
 					100 = {
 						modifier = {
@@ -1527,7 +1527,7 @@ character_event = {
 						has_offmap_news_enabled = FROM
 						is_within_diplo_range = ROOT
 					}
-					narrative_event = { id = JD.50162 }
+					narrative_event = { id = ED.50162 }
 				}
 
 				random_list = {
@@ -1539,10 +1539,10 @@ character_event = {
 								value = none
 							}
 						}
-						character_event = { id = JD.10113 days = 15 } #Spawns a Displaced Prince adventurer...
+						character_event = { id = ED.10113 days = 15 } #Spawns a Displaced Prince adventurer...
 						set_character_flag = spawning_a_displaced_royal
 						log = "Ethiopia Logging:"
-						log = "Attempting to spawn a Displaced Prince, as aftermath to event JD.50160 (end of Being Invaded by Mongols). Character should spawn in 15 days."
+						log = "Attempting to spawn a Displaced Prince, as aftermath to event ED.50160 (end of Being Invaded by Mongols). Character should spawn in 15 days."
 					}
 					50 = {
 						modifier = {
@@ -1552,10 +1552,10 @@ character_event = {
 								value = none
 							}
 						}
-						character_event = { id =  JD.10109 days = 15 } #Spawns a West African  leader...
+						character_event = { id =  ED.10109 days = 15 } #Spawns a West African  leader...
 						set_character_flag = spawning_a_jurchen_invader
 						log = "Ethiopia Logging:"
-						log = "Attempting to spawn a West African Invader, as aftermath to event JD.50160 (end of Being Invaded by Mongols). Character should spawn in 15 days."
+						log = "Attempting to spawn a West African Invader, as aftermath to event ED.50160 (end of Being Invaded by Mongols). Character should spawn in 15 days."
 					}
 				}
 			}
@@ -1565,11 +1565,11 @@ character_event = {
 
 # News from Ethiopia: East African Fails
 narrative_event = {
-	id = JD.50161
+	id = ED.50161
 	title = NEWS_FROM_CHINA
 	picture = GFX_evt_ethiopia_somalis_invade
 	portrait = offmap_ethiopia
-	desc = EVTDESC_JD_50161
+	desc = EVTDESC_ED_50161
 	window = EventWindowOffmap
 	background = GFX_event_window_news_from_china
 
@@ -1589,17 +1589,17 @@ narrative_event = {
 	
 	
 	option = {
-		name = EVTOPT_JD_50161
+		name = EVTOPT_ED_50161
 	}
 }
 
 # News from Ethiopia: East African Succeeds
 narrative_event = {
-	id = JD.50162
+	id = ED.50162
 	title = NEWS_FROM_CHINA
 	picture = GFX_evt_tengri_throneroom_oldgods
 	portrait = offmap_ethiopia
-	desc = EVTDESC_JD_50162
+	desc = EVTDESC_ED_50162
 	window = EventWindowOffmap
 	background = GFX_event_window_news_from_china
 
@@ -1622,14 +1622,14 @@ narrative_event = {
 		trigger = {
 			NOT = { has_character_modifier = peace_deal_with_ethiopia }
 		}
-		name = EVTOPT_JD_50162
+		name = EVTOPT_ED_50162
 	}
 	
 	option = {
 		trigger = {
 			has_character_modifier = peace_deal_with_ethiopia
 		}
-		name = EVTOPT_JD_50302_BROKEN_PEACE_DEAL
+		name = EVTOPT_ED_50302_BROKEN_PEACE_DEAL
 		
 		remove_character_modifier = peace_deal_with_ethiopia
 	}
@@ -1640,7 +1640,7 @@ narrative_event = {
 # Root = Governor
 # From = Offmap
 character_event = {
-	id = JD.50180
+	id = ED.50180
 
 	has_dlc = "Jade Dragon"
 
@@ -1651,9 +1651,9 @@ character_event = {
 		FROM = {
 			is_offmap_tag = offmap_ethiopia
 			NOR = {
-				has_status = ethiopia_east_african_invasion # Resolution handled by JD.50160
-				has_status = ethiopia_west_african_invasion # Resolution handled by JD.50200
-				has_status = ethiopia_civil_war # Resolution handled by JD.50300
+				has_status = ethiopia_east_african_invasion # Resolution handled by ED.50160
+				has_status = ethiopia_west_african_invasion # Resolution handled by ED.50200
+				has_status = ethiopia_civil_war # Resolution handled by ED.50300
 			}
 			OR = {
 				NOT = { has_offmap_flag = ethiopia_invaded_player_dynasty }
@@ -1794,14 +1794,14 @@ character_event = {
 				has_offmap_news_enabled = FROM
 				is_within_diplo_range = ROOT
 			}
-			narrative_event = { id = JD.50181 }
+			narrative_event = { id = ED.50181 }
 		}
 	}
 }
 
 # News from Ethiopia: West African
 narrative_event = {
-	id = JD.50181
+	id = ED.50181
 	title = NEWS_FROM_CHINA
 	picture = GFX_evt_ethiopia_somalis_invade
 	portrait = offmap_ethiopia
@@ -1818,7 +1818,7 @@ narrative_event = {
 				}
 			}
 		}
-		text = EVTDESC_JD_50181_BOOST
+		text = EVTDESC_ED_50181_BOOST
 	}
 	desc = {
 		trigger = {
@@ -1826,7 +1826,7 @@ narrative_event = {
 				prev_status = ethiopia_golden_age
 			}
 		}
-		text = EVTDESC_JD_50181_PENALTY
+		text = EVTDESC_ED_50181_PENALTY
 	}
 	desc = {
 		trigger = {
@@ -1839,7 +1839,7 @@ narrative_event = {
 				}
 			}
 		}
-		text = EVTDESC_JD_50031_JURCHENS # Can be the same as the standard status change notification
+		text = EVTDESC_ED_50031_JURCHENS # Can be the same as the standard status change notification
 	}
 
 	has_dlc = "Jade Dragon"
@@ -1857,7 +1857,7 @@ narrative_event = {
 	portrait = event_target:portrait_target
 	
 	option = {
-		name = EVTOPT_JD_50141
+		name = EVTOPT_ED_50141
 	}
 }
 
@@ -1866,7 +1866,7 @@ narrative_event = {
 # Root = Governor
 # From = Offmap
 character_event = {
-	id = JD.50200
+	id = ED.50200
 
 	has_dlc = "Jade Dragon"
 
@@ -1937,7 +1937,7 @@ character_event = {
 						has_offmap_news_enabled = FROM
 						is_within_diplo_range = ROOT
 					}
-					narrative_event = { id = JD.50201 }
+					narrative_event = { id = ED.50201 }
 				}
 			}
 			100 = { # West African won!
@@ -1992,7 +1992,7 @@ character_event = {
 					set_offmap_flag = no_succession_news
 				}
 				
-				# A new ruler ascends to the Dragon Throne. The fallout is handled by JD.10005 and JD.50000 (from 'on_offmap_ruler_changed')
+				# A new ruler ascends to the Dragon Throne. The fallout is handled by ED.10005 and ED.50000 (from 'on_offmap_ruler_changed')
 				create_character = { #The father
 					age = 60
 					random_traits = yes
@@ -2079,7 +2079,7 @@ character_event = {
 						has_offmap_news_enabled = FROM
 						is_within_diplo_range = ROOT
 					}
-					narrative_event = { id = JD.50202 }
+					narrative_event = { id = ED.50202 }
 				}
 				
 				random_list = {
@@ -2091,10 +2091,10 @@ character_event = {
 								value = none
 							}
 						}
-						character_event = { id = JD.10113 days = 15 } #Spawns a Displaced Prince adventurer...
+						character_event = { id = ED.10113 days = 15 } #Spawns a Displaced Prince adventurer...
 						set_character_flag = spawning_a_displaced_royal
 						log = "Ethiopia Logging:"
-						log = "Attempting to spawn a Displaced Prince, as aftermath to event JD.50200 (end of Being Invaded by West Africans). Character should spawn in 15 days."
+						log = "Attempting to spawn a Displaced Prince, as aftermath to event ED.50200 (end of Being Invaded by West Africans). Character should spawn in 15 days."
 					}
 					50 = {
 						modifier = {
@@ -2104,10 +2104,10 @@ character_event = {
 								value = none
 							}
 						}
-						character_event = { id =  JD.10109 days = 15 } #Spawns a West African leader...
+						character_event = { id =  ED.10109 days = 15 } #Spawns a West African leader...
 						set_character_flag = spawning_a_jurchen_invader
 						log = "Ethiopia Logging:"
-						log = "Attempting to spawn a West African Invader, as aftermath to event JD.50200 (end of Being Invaded by Mongols). Character should spawn in 15 days."
+						log = "Attempting to spawn a West African Invader, as aftermath to event ED.50200 (end of Being Invaded by Mongols). Character should spawn in 15 days."
 					}
 				}
 			}
@@ -2117,11 +2117,11 @@ character_event = {
 
 # News from Ethiopia: West African Fails
 narrative_event = {
-	id = JD.50201
+	id = ED.50201
 	title = NEWS_FROM_CHINA
 	picture = GFX_evt_ethiopia_somalis_invade
 	portrait = offmap_ethiopia
-	desc = EVTDESC_JD_50201
+	desc = EVTDESC_ED_50201
 	window = EventWindowOffmap
 	background = GFX_event_window_news_from_china
 
@@ -2140,17 +2140,17 @@ narrative_event = {
 	portrait = event_target:portrait_target
 	
 	option = {
-		name = EVTOPT_JD_50201
+		name = EVTOPT_ED_50201
 	}
 }
 
 # News from Ethiopia: West African Succeeds
 narrative_event = {
-	id = JD.50202
+	id = ED.50202
 	title = NEWS_FROM_CHINA
 	picture = GFX_evt_tengri_throneroom_oldgods
 	portrait = offmap_ethiopia
-	desc = EVTDESC_JD_50202
+	desc = EVTDESC_ED_50202
 	window = EventWindowOffmap
 	background = GFX_event_window_news_from_china
 
@@ -2172,14 +2172,14 @@ narrative_event = {
 		trigger = {
 			NOT = { has_character_modifier = peace_deal_with_ethiopia }
 		}
-		name = EVTOPT_JD_50202
+		name = EVTOPT_ED_50202
 	}
 	
 	option = {
 		trigger = {
 			has_character_modifier = peace_deal_with_ethiopia
 		}
-		name = EVTOPT_JD_50302_BROKEN_PEACE_DEAL
+		name = EVTOPT_ED_50302_BROKEN_PEACE_DEAL
 		
 		remove_character_modifier = peace_deal_with_ethiopia
 	}
@@ -2190,7 +2190,7 @@ narrative_event = {
 # Root = Governor
 # From = Offmap
 character_event = {
-	id = JD.50220
+	id = ED.50220
 
 	has_dlc = "Jade Dragon"
 
@@ -2202,9 +2202,9 @@ character_event = {
 			is_offmap_tag = offmap_ethiopia
 			NOR = {
 				has_status = ethiopia_famine
-				has_status = ethiopia_east_african_invasion # Resolution handled by JD.50160
-				has_status = ethiopia_west_african_invasion # Resolution handled by JD.50200
-				has_status = ethiopia_civil_war # Resolution handled by JD.50300
+				has_status = ethiopia_east_african_invasion # Resolution handled by ED.50160
+				has_status = ethiopia_west_african_invasion # Resolution handled by ED.50200
+				has_status = ethiopia_civil_war # Resolution handled by ED.50300
 			}
 		}
 	}
@@ -2244,7 +2244,7 @@ character_event = {
 	immediate = {
 		FROM = {
 			set_offmap_flag = ethiopia_had_famine
-			set_status = ethiopia_famine # Players will be notified by JD.50030
+			set_status = ethiopia_famine # Players will be notified by ED.50030
 		}
 	}
 }
@@ -2254,7 +2254,7 @@ character_event = {
 # Root = Governor
 # From = Offmap
 character_event = {
-	id = JD.50240
+	id = ED.50240
 
 	has_dlc = "Jade Dragon"
 
@@ -2266,9 +2266,9 @@ character_event = {
 			is_offmap_tag = offmap_ethiopia
 			NOR = {
 				has_status = ethiopia_plague
-				has_status = ethiopia_east_african_invasion # Resolution handled by JD.50160
-				has_status = ethiopia_west_african_invasion # Resolution handled by JD.50200
-				has_status = ethiopia_civil_war # Resolution handled by JD.50300
+				has_status = ethiopia_east_african_invasion # Resolution handled by ED.50160
+				has_status = ethiopia_west_african_invasion # Resolution handled by ED.50200
+				has_status = ethiopia_civil_war # Resolution handled by ED.50300
 			}
 		}
 	}
@@ -2308,7 +2308,7 @@ character_event = {
 	immediate = {
 		FROM = {
 			set_offmap_flag = ethiopia_had_plague
-			set_status = ethiopia_plague # Players will be notified by JD.50030
+			set_status = ethiopia_plague # Players will be notified by ED.50030
 		}
 	}
 }
@@ -2318,7 +2318,7 @@ character_event = {
 # Root = Governor
 # From = Offmap
 character_event = {
-	id = JD.50260
+	id = ED.50260
 
 	has_dlc = "Jade Dragon"
 
@@ -2355,7 +2355,7 @@ character_event = {
 	immediate = {
 		FROM = {
 			set_offmap_flag = china_had_golden_age
-			set_status = ethiopia_golden_age # Players will be notified by JD.50030
+			set_status = ethiopia_golden_age # Players will be notified by ED.50030
 		}
 	}
 }
@@ -2365,7 +2365,7 @@ character_event = {
 # Root = Governor
 # From = Offmap
 character_event = {
-	id = JD.50280
+	id = ED.50280
 
 	has_dlc = "Jade Dragon"
 
@@ -2376,9 +2376,9 @@ character_event = {
 		FROM = {
 			is_offmap_tag = offmap_ethiopia
 			NOR = {
-				has_status = ethiopia_east_african_invasion # Resolution handled by JD.50160
-				has_status = ethiopia_west_african_invasion # Resolution handled by JD.50200
-				has_status = ethiopia_civil_war # Resolution handled by JD.50300
+				has_status = ethiopia_east_african_invasion # Resolution handled by ED.50160
+				has_status = ethiopia_west_african_invasion # Resolution handled by ED.50200
+				has_status = ethiopia_civil_war # Resolution handled by ED.50300
 			}
 			OR = {
 				NOT = { has_offmap_flag = ethiopia_invaded_player_dynasty }
@@ -2425,14 +2425,14 @@ character_event = {
 				has_offmap_news_enabled = FROM
 				is_within_diplo_range = ROOT
 			}
-			narrative_event = { id = JD.50281 }
+			narrative_event = { id = ED.50281 }
 		}
 	}
 }
 
 # News from Ethiopia: Civil War
 narrative_event = {
-	id = JD.50281
+	id = ED.50281
 	title = NEWS_FROM_CHINA
 	picture = GFX_evt_ethiopia_civil_war
 	portrait = offmap_ethiopia
@@ -2445,7 +2445,7 @@ narrative_event = {
 				prev_status = ethiopia_unrest
 			}
 		}
-		text = EVTDESC_JD_50281_UNREST
+		text = EVTDESC_ED_50281_UNREST
 	}
 	desc = {
 		trigger = {
@@ -2453,7 +2453,7 @@ narrative_event = {
 				NOT = { prev_status = ethiopia_unrest }
 			}
 		}
-		text = EVTDESC_JD_50031_CW # Can use the default description
+		text = EVTDESC_ED_50031_CW # Can use the default description
 	}
 
 	has_dlc = "Jade Dragon"
@@ -2471,7 +2471,7 @@ narrative_event = {
 	portrait = event_target:portrait_target
 	
 	option = {
-		name = EVTOPT_JD_50281
+		name = EVTOPT_ED_50281
 	}
 }
 
@@ -2480,7 +2480,7 @@ narrative_event = {
 # Root = Governor
 # From = Offmap
 character_event = {
-	id = JD.50300
+	id = ED.50300
 
 	has_dlc = "Jade Dragon"
 
@@ -2537,7 +2537,7 @@ character_event = {
 						has_offmap_news_enabled = FROM
 						is_within_diplo_range = ROOT
 					}
-					narrative_event = { id = JD.50301 }
+					narrative_event = { id = ED.50301 }
 				}
 				random_list = {
 					50 = {
@@ -2548,10 +2548,10 @@ character_event = {
 								value = none
 							}
 						}
-						character_event = { id =  JD.10109 days = 15 } #Spawns a West African  leader...
+						character_event = { id =  ED.10109 days = 15 } #Spawns a West African  leader...
 						set_character_flag = spawning_a_jurchen_invader
 						log = "Ethiopia Logging:"
-						log = "Attempting to spawn a West African Invader, as aftermath to event JD.50300 (end of Civil War - the loyalists won). Character should spawn in 15 days."
+						log = "Attempting to spawn a West African Invader, as aftermath to event ED.50300 (end of Civil War - the loyalists won). Character should spawn in 15 days."
 					}
 					50 = {
 						trigger = {
@@ -2567,10 +2567,10 @@ character_event = {
 								value = none
 							}
 						}
-						character_event = { id = JD.60200 days = 15 } #Spawns a Rebel General
+						character_event = { id = ED.60200 days = 15 } #Spawns a Rebel General
 						set_character_flag = spawning_a_rebel_general
 						log = "Ethiopia Logging:"
-						log = "Attempting to spawn a Rebel General, as aftermath to event JD.50300 (end of Civil War - the loyalists won). Character should spawn in 15 days."
+						log = "Attempting to spawn a Rebel General, as aftermath to event ED.50300 (end of Civil War - the loyalists won). Character should spawn in 15 days."
 					}
 				}
 			}
@@ -2604,7 +2604,7 @@ character_event = {
 					}
 				}
 				
-				# A new ruler ascends to the Dragon Throne. The fallout is handled by JD.10005 and JD.50000 (from 'on_offmap_ruler_changed')
+				# A new ruler ascends to the Dragon Throne. The fallout is handled by ED.10005 and ED.50000 (from 'on_offmap_ruler_changed')
 				random_list = {
 					0 = {
 						additive_modifier = {
@@ -2662,7 +2662,7 @@ character_event = {
 						has_offmap_news_enabled = FROM
 						is_within_diplo_range = ROOT
 					}
-					narrative_event = { id = JD.50302 }
+					narrative_event = { id = ED.50302 }
 				}
 				
 				FROM = { clr_offmap_flag = foreign_dynasty_ousted }
@@ -2676,10 +2676,10 @@ character_event = {
 								value = none
 							}
 						}
-						character_event = { id = JD.10113 days = 15 } #Spawns a Displaced Prince adventurer...
+						character_event = { id = ED.10113 days = 15 } #Spawns a Displaced Prince adventurer...
 						set_character_flag = spawning_a_displaced_royal
 						log = "Ethiopia Logging:"
-						log = "Attempting to spawn a Displaced Prince, as aftermath to event JD.50300 (end of Civil War - the rebels won). Character should spawn in 15 days."
+						log = "Attempting to spawn a Displaced Prince, as aftermath to event ED.50300 (end of Civil War - the rebels won). Character should spawn in 15 days."
 					}
 					50 = {
 						modifier = {
@@ -2689,10 +2689,10 @@ character_event = {
 								value = none
 							}
 						}
-						character_event = { id = JD.10109 days = 15 } #Spawns a West African  leader...
+						character_event = { id = ED.10109 days = 15 } #Spawns a West African  leader...
 						set_character_flag = spawning_a_jurchen_invader
 						log = "Ethiopia Logging:"
-						log = "Attempting to spawn a West African Invader, as aftermath to event JD.50300 (end of Civil War - the rebels won). Character should spawn in 15 days."
+						log = "Attempting to spawn a West African Invader, as aftermath to event ED.50300 (end of Civil War - the rebels won). Character should spawn in 15 days."
 					}
 				}
 			}
@@ -2724,7 +2724,7 @@ character_event = {
 						has_offmap_news_enabled = FROM
 						is_within_diplo_range = ROOT
 					}
-					narrative_event = { id = JD.50303 days = 1 }
+					narrative_event = { id = ED.50303 days = 1 }
 				}
 				random_list = {
 					90 = {
@@ -2735,10 +2735,10 @@ character_event = {
 								value = none
 							}
 						}
-						character_event = { id =  JD.10109 days = 15 } #Spawns a West African  leader...
+						character_event = { id =  ED.10109 days = 15 } #Spawns a West African  leader...
 						set_character_flag = spawning_a_jurchen_invader
 						log = "Ethiopia Logging:"
-						log = "Attempting to spawn a West African Invader, as aftermath to event JD.50300 (end of Civil War - the rebels won (old dynasty pretender)). Character should spawn in 15 days."
+						log = "Attempting to spawn a West African Invader, as aftermath to event ED.50300 (end of Civil War - the rebels won (old dynasty pretender)). Character should spawn in 15 days."
 					}
 					10 = {
 						#nothing happens...
@@ -2751,11 +2751,11 @@ character_event = {
 
 # News from Ethiopia: Civil War Ends - Loyalists Win!
 narrative_event = {
-	id = JD.50301
+	id = ED.50301
 	title = NEWS_FROM_CHINA
 	picture = GFX_evt_ethiopia_civil_war
 	portrait = offmap_ethiopia
-	desc = EVTDESC_JD_50301
+	desc = EVTDESC_ED_50301
 	window = EventWindowOffmap
 	background = GFX_event_window_news_from_china
 
@@ -2774,13 +2774,13 @@ narrative_event = {
 	portrait = event_target:portrait_target
 	
 	option = {
-		name = EVTOPT_JD_50301
+		name = EVTOPT_ED_50301
 	}
 }
 
 # News from Ethiopia: Civil War Ends - Rebels Win, New Dynasty!
 narrative_event = {
-	id = JD.50302
+	id = ED.50302
 	title = NEWS_FROM_CHINA
 	picture = GFX_evt_ethiopia_civil_war
 	portrait = offmap_ethiopia
@@ -2793,7 +2793,7 @@ narrative_event = {
 				has_offmap_flag = foreign_dynasty_ousted
 			}
 		}
-		text = EVTDESC_JD_50302_HAN_DYNASTY
+		text = EVTDESC_ED_50302_HAN_DYNASTY
 	}
 	desc = {
 		trigger = {
@@ -2801,7 +2801,7 @@ narrative_event = {
 				NOT = { has_offmap_flag = foreign_dynasty_ousted }
 			}
 		}
-		text = EVTDESC_JD_50302_NEW_DYNASTY
+		text = EVTDESC_ED_50302_NEW_DYNASTY
 	}
 
 	has_dlc = "Jade Dragon"
@@ -2823,14 +2823,14 @@ narrative_event = {
 		trigger = {
 			NOT = { has_character_modifier = peace_deal_with_ethiopia }
 		}
-		name = EVTOPT_JD_50301
+		name = EVTOPT_ED_50301
 	}
 	
 	option = {
 		trigger = {
 			has_character_modifier = peace_deal_with_ethiopia
 		}
-		name = EVTOPT_JD_50302_BROKEN_PEACE_DEAL
+		name = EVTOPT_ED_50302_BROKEN_PEACE_DEAL
 		
 		remove_character_modifier = peace_deal_with_ethiopia
 	}
@@ -2838,11 +2838,11 @@ narrative_event = {
 
 # News from Ethiopia: Civil War Ends - Rebels Win but Old Dynasty stays in power
 narrative_event = {
-	id = JD.50303
+	id = ED.50303
 	title = NEWS_FROM_CHINA
 	picture = GFX_evt_ethiopia_civil_war
 	portrait = offmap_ethiopia
-	desc = EVTDESC_JD_50303
+	desc = EVTDESC_ED_50303
 	window = EventWindowOffmap
 	background = GFX_event_window_news_from_china
 
@@ -2861,12 +2861,12 @@ narrative_event = {
 	portrait = event_target:portrait_target
 	
 	option = {
-		name = EVTOPT_JD_50301
+		name = EVTOPT_ED_50301
 	}
 }
 
 character_event = { # Update Silk Road values
-	id = JD.50400
+	id = ED.50400
 
 	has_dlc = "Jade Dragon"
 
@@ -2958,7 +2958,7 @@ character_event = { # Update Silk Road values
 }
 
 character_event = { # Update Silk Road values on startup
-	id = JD.50401
+	id = ED.50401
 
 	has_dlc = "Jade Dragon"
 
@@ -3053,7 +3053,7 @@ character_event = { # Update Silk Road values on startup
 }
 
 character_event = {
-	id = JD.30500
+	id = ED.30500
 	
 	hide_window = yes
 	is_triggered_only = yes
@@ -3073,7 +3073,7 @@ character_event = {
 }
 
 character_event = {
-	id = JD.30501
+	id = ED.30501
 	
 	hide_window = yes
 	is_triggered_only = yes
@@ -3088,7 +3088,7 @@ character_event = {
 }
 
 character_event = {
-	id = JD.30502
+	id = ED.30502
 	
 	hide_window = yes
 	is_triggered_only = yes
@@ -3103,7 +3103,7 @@ character_event = {
 }
 
 character_event =  {
-	id = JD.30503
+	id = ED.30503
 	
 	hide_window = yes
 	is_triggered_only = yes
@@ -3116,7 +3116,7 @@ character_event =  {
 }
 
 character_event =  { # Clean up living members of the chinese dynasty
-	id = JD.30504
+	id = ED.30504
 	
 	hide_window = yes
 	is_triggered_only = yes

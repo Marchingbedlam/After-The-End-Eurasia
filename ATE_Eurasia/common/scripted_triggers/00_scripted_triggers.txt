@@ -6179,10 +6179,7 @@ china_diplo_interaction_trigger = {
 			NOT = { war_with = PREVPREV } 
 			is_within_diplo_range = PREVPREV
 		}
-		OR = {
-			NOT = { has_policy = china_isolationist }
-			NOT = { has_policy = ethiopia_isolationist }
-		}
+		NOT = { has_policy = china_isolationist }
 	}
 	conditional_tooltip = { 
 		trigger = { government = chinese_imperial_government }
@@ -6190,6 +6187,15 @@ china_diplo_interaction_trigger = {
 			text = china_offmap_decisions_pretender_emperor_tt
 			always = no
 		}
+	}
+}
+ethiopia_diplo_interaction_trigger = { 
+	offmap_ethiopia = {
+		governor = { 
+			NOT = { war_with = PREVPREV } 
+			is_within_diplo_range = PREVPREV
+		}
+		NOT = { has_policy = ethiopia_isolationist }
 	}
 	conditional_tooltip = { 
 		trigger = { government = ethiopian_imperial_government }

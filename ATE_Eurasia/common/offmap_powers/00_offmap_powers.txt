@@ -1113,7 +1113,7 @@ offmap_ethiopia = {
 	governor_title = e_northern_provinces
 	tier = emperor
 	non_aggression_modifier = peace_deal_with_china
-	coa_religion = apostolic
+	coa_religion = miaphysite
 	government = ethiopian_bureaucracy
 	beginning_of_history = 2666.01.01
 	sound = china_interaction_interface
@@ -1422,7 +1422,7 @@ offmap_ethiopia = {
 		}
 
 		religion = {
-			apostolic = { # default religion for new emperor
+			miaphysite = { # default religion for new emperor
 				value = 99 # if any other value reaches 100, it will be picked instead (unless equal, then it will randomize)
 			}
 			FROM = {
@@ -2172,12 +2172,12 @@ offmap_ethiopia = {
 	diplomatic_range = { #Already includes the western governor's "normal" diplo range
 		OR = {
 			has_game_rule = {
-				name = chinese_interactions
+				name = ethiopian_interactions
 				value = all
 			}
 			AND = {
 				has_game_rule = {
-					name = chinese_interactions
+					name = ethiopian_interactions
 					value = within_range
 				}
 				OR = {
@@ -2205,7 +2205,7 @@ offmap_ethiopia = {
 			}
 			AND = {
 				has_game_rule = {
-					name = chinese_interactions
+					name = ethiopian_interactions
 					value = restricted
 				}
 				OR = {

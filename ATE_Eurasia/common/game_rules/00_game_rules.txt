@@ -226,7 +226,28 @@ chinese_interactions = {
 		desc = "RULE_ANYONE_DESC"
 	}
 }
-
+ethiopian_interactions = {
+	name = "RULE_ETHIOPIAN_INTERACTIONS"
+	dlc = "Jade Dragon"
+	group = "RULE_GROUP_VARIOUS"
+	group = "RULE_GROUP_JD"
+	option = {
+		name = within_range
+		text = "RULE_OPTION_WITHIN_RANGE"
+		desc = "RULE_WITHIN_RANGE_E_DESC"
+	}
+	option = {
+		name = restricted
+		text = "RULE_OPTION_RESTRICTED"
+		desc = "RULE_RESTRICTED_E_DESC"
+	}
+	option = {
+		name = all
+		achievements = no
+		text = "RULE_OPTION_ANYONE"
+		desc = "RULE_ANYONE_DESC"
+	}
+}
 unjustified_wars = {
 	name = "RULE_UNJUSTIFIED_WARS"
 	dlc = "Jade Dragon"
