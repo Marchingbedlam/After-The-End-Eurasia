@@ -190,9 +190,8 @@ k_pravoslavie = {
 	capital = 652 # Moscow
 	
 	title = "PATRIARCH_RUSSIAN"
+	title_prefix = "METROPOLITAN_OF"
 	
-	
-	short_name = yes
 	#location_ruler_title = yes
 
 	# Always exists
@@ -589,6 +588,7 @@ d_russian_patriarch = {
 	capital = 652 # Moscow
 	
 	title = "PATRIARCH"
+	title_prefix = "PATRIARCHATE_OF"
 
 	# Always exists
 	landless = yes
@@ -620,6 +620,7 @@ d_kyivan_patriarch = {
 	capital = 819 # Kyiv
 	
 	title = "PATRIARCH"
+	title_prefix = "PATRIARCHATE_OF"
 
 	# Always exists
 	landless = yes
@@ -652,7 +653,8 @@ d_georgian_patriarch = {
 	
 	title = "CATHOLICOS_PATRIARCH"
 	foa = "CATHOLICOS_PATRIARCH_FOA"
-
+	title_prefix = "PATRIARCHATE_OF"
+	
 	# Always exists
 	landless = yes
 	
@@ -683,6 +685,7 @@ d_jerusalem_patriarch = {
 	capital = 1959 # al-Quds
 	
 	title = "PATRIARCH"
+	title_prefix = "PATRIARCHATE_OF"
 
 	# Always exists
 	landless = yes
@@ -750,8 +753,8 @@ d_miaphysite_alexandria = {
 	
 	title = "PAPA_PRESBYTEROS"
 	foa = "PAPA_PRESBYTEROS_FOA"
+	title_prefix = "PRESBYTERATE_OF"
 	
-	short_name = yes
 	
 	#Controls a religion
 	controls_religion = miaphysite
@@ -782,7 +785,7 @@ d_etchmiadzin = {
 	
 	title = "PRESBYTEROS"
 	foa = "PRESBYTEROS_FOA"
-	
+	title_prefix = "PRESBYTERATE_OF"
 
 	# Always exists
 	landless = yes
@@ -810,7 +813,7 @@ d_miaphysite_antioch  = {
 	
 	title = "PRESBYTEROS"
 	foa = "PRESBYTEROS_FOA"
-	
+	title_prefix = "PRESBYTERATE_OF"
 
 	# Always exists
 	landless = yes
@@ -838,7 +841,7 @@ d_miaphysite_marseille = {
 	
 	title = "PRESBYTEROS"
 	foa = "PRESBYTEROS_FOA"
-	
+	title_prefix = "PRESBYTERATE_OF"
 
 	# Always exists
 	landless = yes
@@ -866,6 +869,7 @@ d_tewahedo = {
 	
 	title = "PRESBYTEROS"
 	foa = "PRESBYTEROS_FOA"
+	title_prefix = "PRESBYTERATE_OF"
 	
 
 	# Always exists
