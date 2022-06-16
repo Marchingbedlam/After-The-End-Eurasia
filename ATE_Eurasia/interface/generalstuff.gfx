@@ -1230,7 +1230,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_icon_chinese_imperial_government"
-		texturefile = "gfx\\interface\\government_icon_chinese_imperial.dds"
+		texturefile = "gfx\\interface\\government_icon_chinese_imperial_government.dds"
 	}
 	spriteType = {
 		name = "GFX_icon_confucian_bureaucracy"
@@ -1288,7 +1288,14 @@ spriteTypes = {
 		name = "GFX_icon_swaraj_government"
 		texturefile = "gfx/interface/government_icon_swaraj.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_icon_ethiopian_imperial_government"
+		texturefile = "gfx/interface/government_icon_ethiopian_imperial_government.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_ethiopian_bureaucracy"
+		texturefile = "gfx/interface/government_icon_ethiopian_bureaucracy.dds"
+	}
 	# Roman Imperial Government
 	spriteType = {
 		name = "GFX_icon_roman_imperial_government"
