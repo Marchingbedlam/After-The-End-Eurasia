@@ -73,6 +73,13 @@ e_caucasia = {
 			c_absheron = { # 2143
 				color={ 81 155 154 }
 				color2={ 255 255 255 }
+
+				armenian="At'shi"
+				georgian="Apsheroni"
+				ossetian="Apsheron"
+				nakh="Apsheron"
+				avar="Apsheron"
+				lezgin="Apsheron"
 				
 				b_xirdalan = {}
 				b_sumqayit = {}
@@ -85,8 +92,17 @@ e_caucasia = {
 			c_quba = { # 917
 				color={ 216 195 162 }
 				color2={ 255 255 255 }
+
+				tat="Guba"
+				armenian="Ghowba"
+				georgian="Q'uba"
+				ossetian="Guba"
 				
-				b_quba = {}
+				b_quba = {
+					tat="Guba"
+					armenian="Ghowba"
+					georgian="Q'uba"
+					ossetian="Guba"}
 				b_xacmaz = {}
 				b_qusar = {}
 				b_shabran = {}

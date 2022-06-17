@@ -2,7 +2,7 @@ baltic = {
 	graphical_cultures = { westerngfx }
 	
 	lithuanian = {
-		graphical_cultures = { westernslavicgfx }
+		graphical_cultures = { balticgfx westernslavicgfx }
 		
 		color = { 0.3 0.7 0.6 }
 
@@ -65,7 +65,7 @@ baltic = {
 		modifier = default_culture_modifier
 	}
 	latvian = {
-		graphical_cultures = { westernslavicgfx }
+		graphical_cultures = { balticgfx westernslavicgfx }
 		
 		color = { 0.3 0.6 0.9 }
 
@@ -123,7 +123,7 @@ baltic = {
 		modifier = default_culture_modifier
 	}
 	krievi = {
-		graphical_cultures = { westernslavicgfx }
+		graphical_cultures = { easternslavicgfx }
 		
 		color = { 0.27 0.27 0.9 }
 
@@ -165,7 +165,7 @@ baltic = {
 		modifier = default_culture_modifier
 	}
 	venelased = {
-		graphical_cultures = { westernslavicgfx }
+		graphical_cultures = { easternslavicgfx }
 		
 		color = { 0.84 0.27 0.29 }
 
