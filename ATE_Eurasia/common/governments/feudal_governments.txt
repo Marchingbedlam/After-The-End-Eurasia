@@ -32,7 +32,6 @@ feudal_governments = {
 				#	has_religion_features = no # Old saves, and campaigns without HF, need the Fylkirate to continue working
 				#}
 			}
-			NOT = {religion_group = islamosyncretic}
 			NOT = {culture_group = rom}
 			NOT = {
 				OR = {
@@ -41,13 +40,29 @@ feudal_governments = {
 				}
 			}
 			OR = {
-				NOT = {religion_group = muslim}
+				NOR = {
+					religion_group = muslim
+					religion_group = islamosyncretic 
+				}
 				AND = {
-						religion = ruhi
-						OR = {
-							capital_scope = {region = custom_europe}
-							capital_scope = {region = custom_tunisia}
-						}
+					religion_group = muslim
+					AND = {
+							religion = ruhi
+							OR = {
+								capital_scope = {region = custom_europe}
+								capital_scope = {region = custom_tunisia}
+							}
+					}
+				}
+				AND = {
+					religion_group = islamosyncretic
+					AND = {
+							religion = alevi
+							OR = {
+								capital_scope = {region = custom_europe}
+								capital_scope = {region = custom_tunisia}
+							}
+					}
 				}
 			}
 			NOT = { is_government_potential = diwan_government }
@@ -404,7 +419,13 @@ feudal_governments = {
 		title_prefix = "ghazi_government_"
 		potential = {
 			OR = {
-				religion_group = islamosyncretic 
+				AND = {
+					religion_group = islamosyncretic
+					NOR = {
+						capital_scope = {region = custom_europe}
+						capital_scope = {region = custom_tunisia}
+					}
+				}
 				AND = { 
 					religion_group = muslim
 					NOT = { religion = ruhi }
@@ -655,7 +676,16 @@ feudal_governments = {
 		title_prefix = "diwan_government_"
 		potential = {
 			OR = {
-				religion_group = islamosyncretic 
+				AND = { 
+					religion_group = islamosyncretic
+					NAND = {
+						religion = alevi
+						OR = {
+							capital_scope = {region = custom_europe}
+							capital_scope = {region = custom_tunisia}
+						}
+					}
+				}
 				AND = { 
 					religion_group = muslim
 					NAND = {
