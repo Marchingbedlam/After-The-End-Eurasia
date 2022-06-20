@@ -40,10 +40,7 @@ feudal_governments = {
 				}
 			}
 			OR = {
-				NOR = {
-					religion_group = muslim
-					religion_group = islamosyncretic 
-				}
+				NOT = {religion_group = muslim}
 				AND = {
 					religion_group = muslim
 					AND = {
