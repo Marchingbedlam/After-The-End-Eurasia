@@ -128,6 +128,7 @@ feudal_governments = {
 			NOT = { government = merchant_republic_government }
 			NOT = { is_government_potential = merchant_republic_government }
 			NOT = { is_government_potential = pirate_government }
+			NOT = { is_government_potential = confederation_government }
 			top_liege = {
 				higher_tier_than = COUNT#if the title is a county or a duchy, the titular counties system won't work
 			}
@@ -491,13 +492,16 @@ feudal_governments = {
 	confederation_government = {
 		preferred_holdings = { CASTLE CITY }
 		allowed_holdings = {
-			CASTLE
 			CITY
+			CASTLE
 			FORT
 			HOSPITAL
 		}
 		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
 			TRIBAL
+		}
+		accepts_liege_governments = { # Gets the wrong religion modifier instead
+			merchant_republic_government
 		}
 		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
 			tribal_government
@@ -506,77 +510,53 @@ feudal_governments = {
 		frame_suffix = "_merchantrepublic"
 		title_prefix = "confederation_"
 		potential = {
+			higher_tier_than = BARON
 			OR = {
-				primary_title = {
-					has_law = succ_confederation_elective
-				}
-				top_liege = {
-					government = confederation_government
-					OR = {
-					tier = COUNT
-					tier = DUKE
-					tier = KING
-					tier = EMPEROR
+				AND = {
+					capital_holding = {
+						holding_type = city
 					}
-				}
-				primary_title = {
 					OR = {
-						title = k_switzerland
-						title = k_sicily
-						title = k_san_marino
-						title = k_slovenia
-						title = k_north_syria
-						title = k_kerala
-						title = d_szekelyfold
-						title = d_hercegovina
-						title = k_iron_mountains
-						title = d_al_wasat
+						has_game_started = no
+						AND = {
+							is_feudal = no
+							is_tribal = no
+						}
 					}
 				}
 				AND = {
-					title = k_transylvania
-					culture = szekely
+					government = confederation_government
+					has_game_started = yes
+				}
+				top_liege = {
+					government = confederation_government
 				}
 			}
-			primary_title = { NOT = { title = d_liechtenstein } }
+			NOT = {
+				controls_religion = yes
+			}
+			holy_order = no
 			is_patrician = no
 		}
-		vassal_call_to_arms = {
-			burgher_republic_government
-			feudal_government
-		}
-		
+
 		color = { 255 75 75 }
+		
+		barons_need_dynasty = no
 
-		barons_need_dynasty = yes
-
+		gets_religion_opinion_penalties = no
+		gives_religion_opinion_penalties = no 
+		can_demand_religious_conversion = no
+		marriage_ignore_religion = no
+	
 		can_build_tribal = no
 		
 		ignore_in_vassal_limit_calculation = {
 			tribal_government
 		}
-		capital_move_delay = 12
-		
-		can_imprison_without_reason = no
-		can_revoke_without_reason = no
-		free_retract_vassalage = no
-		
-		can_create_empires = no
-		vassal_government_opinion_penalties = no
-		can_grant_kingdoms_and_empires_to_other_government_group = no
-		can_be_granted_kingdoms_and_empires_by_other_government = no
-		
-		gets_religion_opinion_penalties = no
-		gives_religion_opinion_penalties = no
-		can_demand_religious_conversion = no
-		marriage_ignore_religion = yes
+		capital_move_delay = 1200
 		
 		## Modifiers
-		court_size_modifier = 15
-		vassal_limit = 15
-		aggression = -0.5
-		max_liege_levy = -0.5
-		max_liege_tax = -0.5
+		court_size_modifier = 10
 	}
 	bureaucratic_government = {
 		preferred_holdings = { CASTLE }
@@ -723,6 +703,7 @@ feudal_governments = {
 			NOT = { is_government_potential = order_government }
 			NOT = { is_government_potential = military_governorate }
 			NOT = { is_government_potential = hetmanate_government }
+			NOT = { is_government_potential = confederation_government }
 			NAND = {
 				controls_religion = yes
 				OR = {
@@ -1042,6 +1023,7 @@ feudal_governments = {
 			}
 			NOT = { is_government_potential = roman_imperial_government }
 			NOT = { is_government_potential = order_government }
+			NOT = { is_government_potential = confederation_government }
 			is_patrician = no
 		}
 		
@@ -1084,11 +1066,11 @@ feudal_governments = {
 
 		}
 		free_revoke_on_governments_culture = { 
-		tribal_government​
-		feudal_government
-		ghazi_government
-		diwan_government
-		swaraj_government
+			tribal_government​
+			feudal_government
+			ghazi_government
+			diwan_government
+			swaraj_government
 		}
 		free_revoke_on_tiers = { baron }
 		frame_suffix = "_hetmanate"
