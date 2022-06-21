@@ -589,6 +589,14 @@ e_al_mashriq = {
 			
 			assyrian="Darmswq"
 			kurdish="Sham"
+			zaza="Sham"
+			gorani="Sham"
+			rumelian="Sham"
+			west_anatolian="Sham"
+			central_anatolian="Sham"
+			black_sea="Sham"
+			toros_mountain="Sham"
+			suriyi="ash-Sham"
 			
 			c_damascus = { # 1997
 				color={ 206 89 40 }
@@ -598,6 +606,29 @@ e_al_mashriq = {
 				
 				assyrian="Darmswq"
 				kurdish="Sham"
+				zaza="Sham"
+				gorani="Sham"
+				suriyi="ash-Sham"
+				libyan="Dimashq"
+				masri="Dimashq"
+				sudani="Dimashq"
+				hijazi="Dimashq"
+				najdi="Dimashq"
+				yemeni="Dimashq"
+				hadhrami="Dimashq"
+				umani="Dimashq"
+				dhofari="Dimashq"
+				bahrayni="Dimashq"
+				lebneni="Dimashq"
+				furataini="Dimashq"
+				filastini="Dimashq"
+				badawi="Dimashq"
+				kurdish="Sham"
+				rumelian="Sham"
+				west_anatolian="Sham"
+				central_anatolian="Sham"
+				black_sea="Sham"
+				toros_mountain="Sham"
 				
 				b_mezzeh = {}
 				b_qanawat = {}
@@ -664,13 +695,30 @@ e_al_mashriq = {
 			
 			capital = 2001 # c_al_ladhqiyah
 			
+			rumelian="Lazkiye"
+			west_anatolian="Lazkiye"
+			central_anatolian="Lazkiye"
+			black_sea="Lazkiye"
+			toros_mountain="Lazkiye"
+			
 			c_al_ladhqiyah = { # 2001
 				color={ 209 189 170 }
 				color2={ 255 255 255 }
 				
 				holy_site = alawi
+			
+				rumelian="Lazkiye"
+				west_anatolian="Lazkiye"
+				central_anatolian="Lazkiye"
+				black_sea="Lazkiye"
+				toros_mountain="Lazkiye"
 				
-				b_al_ladhqiyah = {}
+				b_al_ladhqiyah = {
+					rumelian="Lazkiye"
+					west_anatolian="Lazkiye"
+					central_anatolian="Lazkiye"
+					black_sea="Lazkiye"
+					toros_mountain="Lazkiye"}
 				b_jablah = {}
 				b_qardahah = {}
 				b_al_haffah = {}
@@ -695,9 +743,17 @@ e_al_mashriq = {
 			color={ 125 41 24 }
 			color2={ 255 255 255 }
 			
-			kurdish="Heleb"
 			
 			capital = 2003 # c_aleppo
+			
+			rumelian="Halep"
+			west_anatolian="Halep"
+			central_anatolian="Halep"
+			black_sea="Halep"
+			toros_mountain="Halep"
+			kurdish="Heleb"
+			gorani="Heleb"
+			zaza="Heleb"
 			
 			c_aleppo = { # 2003
 				color={ 115 51 19 }
@@ -716,9 +772,24 @@ e_al_mashriq = {
 				hijazi="Halab"
 				yemeni="Halab"
 				umani="Halab"
+				rumelian="Halep"
+				west_anatolian="Halep"
+				central_anatolian="Halep"
+				black_sea="Halep"
+				toros_mountain="Halep"
 				kurdish="Heleb"
+				gorani="Heleb"
+				zaza="Heleb"
 				
-				b_halab = {}
+				b_halab = {
+					rumelian="Halep"
+					west_anatolian="Halep"
+					central_anatolian="Halep"
+					black_sea="Halep"
+					toros_mountain="Halep"
+					kurdish="Heleb"
+					gorani="Heleb"
+					zaza="Heleb"}
 				b_azaz = {}
 				b_atarib = {}
 				b_haritan = {}
@@ -764,11 +835,73 @@ e_al_mashriq = {
 			
 			capital = 2007 # c_homs
 			
+			kurdish="Hims"
+			zaza="Hims"
+			gorani="Hims"
+			libyan="Hims"
+			masri="Hims"
+			sudani="Hims"
+			hijazi="Hims"
+			najdi="Hims"
+			yemeni="Hims"
+			hadhrami="Hims"
+			umani="Hims"
+			dhofari="Hims"
+			bahrayni="Hims"
+			furataini="Hims"
+			badawi="Hims"
+			rumelian="Humus"
+			west_anatolian="Humus"
+			central_anatolian="Humus"
+			black_sea="Humus"
+			toros_mountain="Humus"
+			
 			c_homs = { # 2007
 				color={ 102 76 52 }
 				color2={ 255 255 255 }
 				
-				b_hims = {}
+				kurdish="Hims"
+				zaza="Hims"
+				gorani="Hims"
+				libyan="Hims"
+				masri="Hims"
+				sudani="Hims"
+				hijazi="Hims"
+				najdi="Hims"
+				yemeni="Hims"
+				hadhrami="Hims"
+				umani="Hims"
+				dhofari="Hims"
+				bahrayni="Hims"
+				furataini="Hims"
+				badawi="Hims"
+				rumelian="Humus"
+				west_anatolian="Humus"
+				central_anatolian="Humus"
+				black_sea="Humus"
+				toros_mountain="Humus"
+				
+				b_hims = {
+					kurdish="Hims"
+					zaza="Hims"
+					gorani="Hims"
+					libyan="Hims"
+					masri="Hims"
+					sudani="Hims"
+					hijazi="Hims"
+					najdi="Hims"
+					yemeni="Hims"
+					hadhrami="Hims"
+					umani="Hims"
+					dhofari="Hims"
+					bahrayni="Hims"
+					furataini="Hims"
+					badawi="Hims"
+					rumelian="Humus"
+					west_anatolian="Humus"
+					central_anatolian="Humus"
+					black_sea="Humus"
+					toros_mountain="Humus"}
 				b_talkalah = {}
 				b_taldu = {}
 				b_al_qusayr = {}
@@ -820,6 +953,13 @@ e_al_mashriq = {
 			capital = 2011 # c_raqqa
 			
 			kurdish="Reqa"
+			zaza="Reqa"
+			gorani="Reqa"
+			toros_mountain="Rakka"
+			rumelian="Rakka"
+			west_anatolian="Rakka"
+			central_anatolian="Rakka"
+			black_sea="Rakka"
 			
 			c_raqqa = { # 2011
 				color={ 202 114 21 }
@@ -828,13 +968,31 @@ e_al_mashriq = {
 				holy_site = yazidi
 				
 				kurdish="Reqa"
+				zaza="Reqa"
+				gorani="Reqa"
+				toros_mountain="Rakka"
+				rumelian="Rakka"
+				west_anatolian="Rakka"
+				central_anatolian="Rakka"
+				black_sea="Rakka"
 				
 				b_ar_raqqah = {
-					kurdish="Reqa"}
+					kurdish="Reqa"
+				zaza="Reqa"
+				gorani="Reqa"
+				toros_mountain="Rakka"
+				rumelian="Rakka"
+				west_anatolian="Rakka"
+				central_anatolian="Rakka"
+				black_sea="Rakka"}
 				b_at_tawra = {
-					kurdish="Tebqa"}
+					kurdish="Tebqa"
+					zaza="Tebqa"
+					gorani="Tebqa"}
 				b_tell_abyad = {
-					kurdish="Girê Spî"}
+					kurdish="Girê Spî"
+					zaza="Girê Spî"
+					gorani="Girê Spî"}
 				b_as_sabkhah = {}
 				b_al_karamah = {}
 				b_maadan = {}
@@ -979,11 +1137,28 @@ e_al_mashriq = {
 			
 			capital = 1990 # c_karak
 			
+			rumelian="Kerek"
+			west_anatolian="Kerek"
+			central_anatolian="Kerek"
+			black_sea="Kerek"
+			toros_mountain="Kerek"
+			
 			c_karak = { # 1990
 				color={ 77 31 113 }
 				color2={ 255 255 255 }
+			
+				rumelian="Kerek"
+				west_anatolian="Kerek"
+				central_anatolian="Kerek"
+				black_sea="Kerek"
+				toros_mountain="Kerek"
 				
-				b_al_karak = {}
+				b_al_karak = {
+					rumelian="Kerek"
+					west_anatolian="Kerek"
+					central_anatolian="Kerek"
+					black_sea="Kerek"
+					toros_mountain="Kerek"}
 				b_mutah = {}
 				b_tafilah = {}
 				b_safi_JOR = {}
@@ -1039,9 +1214,27 @@ e_al_mashriq = {
 			
 			capital = 1973 # c_beirut
 			
+			kurdish="Bêrût"
+			zaza="Bêrût"
+			gorani="Bêrût"
+			rumelian="Beyrut"
+			west_anatolian="Beyrut"
+			central_anatolian="Beyrut"
+			black_sea="Beyrut"
+			toros_mountain="Beyrut"
+			
 			c_beirut = { # 1973
 				color={ 166 86 85 }
 				color2={ 255 255 255 }
+			
+				kurdish="Bêrût"
+				zaza="Bêrût"
+				gorani="Bêrût"
+				rumelian="Beyrut"
+				west_anatolian="Beyrut"
+				central_anatolian="Beyrut"
+				black_sea="Beyrut"
+				toros_mountain="Beyrut"
 				
 				holy_site = nekromante
 				
@@ -1057,6 +1250,12 @@ e_al_mashriq = {
 		d_as_shamal = {
 			color={ 189 113 96 }
 			color2={ 255 255 255 }
+			
+			rumelian="Shimal"
+			west_anatolian="Shimal"
+			central_anatolian="Shimal"
+			black_sea="Shimal"
+			toros_mountain="Shimal"
 			
 			capital = 1979 # c_tarabulus
 			
@@ -1094,6 +1293,12 @@ e_al_mashriq = {
 			color2={ 255 255 255 }
 			
 			capital = 1974 # c_sur
+			
+			rumelian="Güney"
+			west_anatolian="Güney"
+			central_anatolian="Güney"
+			black_sea="Güney"
+			toros_mountain="Güney"
 			
 			c_sur_lb = { # 1974
 				color={ 215 117 115 }
@@ -1223,6 +1428,28 @@ e_al_mashriq = {
 			
 			capital = 1970 # c_carmel
 			
+			suriyi="al-Jalil"
+			libyan="al-Jalil"
+			hijazi="al-Jalil"
+			najdi="al-Jalil"
+			yemeni="al-Jalil"
+			hadhrami="al-Jalil"
+			umani="al-Jalil"
+			dhofari="al-Jalil"
+			bahrayni="al-Jalil"
+			lebneni="al-Jalil"
+			furataini="al-Jalil"
+			filastini="al-Jalil"
+			badawi="al-Jalil"
+			kurdish="Celîle"
+			zaza="Celîle"
+			gorani="Celîle"
+			toros_mountain="Celile"
+			rumelian="Celile"
+			west_anatolian="Celile"
+			central_anatolian="Celile"
+			black_sea="Celile"
+			
 			c_carmel = { # 1970
 				color={ 194 201 61 }
 				color2={ 255 255 255 }
@@ -1343,13 +1570,22 @@ e_al_mashriq = {
 			west_anatolian="Cisürdün"
 			central_anatolian="Cisürdün"
 			black_sea="Cisürdün"
+			kurdish="Urduna Rojava"
+			gorani="Urduna Rojava"
+			zaza="Urduna Rojava"
 			filastini="ad-Diffah al-Garbiyyah"
 			suriyi="ad-Diffah al-Garbiyyah"
-			masri="ad-Diffah al-Garbiyyah"
 			lebneni="ad-Diffah al-Garbiyyah"
+			masri="ad-Diffah al-Garbiyyah"
+			sudani="ad-Diffah al-Garbiyyah"
+			furataini="ad-Diffah al-Garbiyyah"
 			hijazi="ad-Diffah al-Garbiyyah"
 			najdi="ad-Diffah al-Garbiyyah"
 			badawi="ad-Diffah al-Garbiyyah"
+			yemeni="ad-Diffah al-Garbiyyah"
+			hadhrami="ad-Diffah al-Garbiyyah"
+			dhofari="ad-Diffah al-Garbiyyah"
+			umani="ad-Diffah al-Garbiyyah"
 			
 			c_hebron = { # 1963
 				color={ 167 168 127 }

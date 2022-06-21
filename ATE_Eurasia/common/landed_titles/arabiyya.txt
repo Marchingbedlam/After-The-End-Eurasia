@@ -12,15 +12,42 @@ e_arabiyya = {
 		
 		capital = 139 # c_kuwait
 		
+		kurdish="Kuweyt"
+		zaza="Kuweyt"
+		gorani="Kuweyt"
+		toros_mountain="Kuveyt"
+		rumelian="Kuveyt"
+		west_anatolian="Kuveyt"
+		central_anatolian="Kuveyt"
+		black_sea="Kuveyt"
+		
 		d_kuwait = {
 			color={ 115 82 80 }
 			color2={ 255 255 255 }
 			
 			capital = 139 # c_kuwait
+		
+			kurdish="Kuweyt"
+			zaza="Kuweyt"
+			gorani="Kuweyt"
+			toros_mountain="Kuveyt"
+			rumelian="Kuveyt"
+			west_anatolian="Kuveyt"
+			central_anatolian="Kuveyt"
+			black_sea="Kuveyt"
 			
 			c_kuwait = { # 139
 				color={ 125 147 145 }
 				color2={ 255 255 255 }
+		
+				kurdish="Kuweyt"
+				zaza="Kuweyt"
+				gorani="Kuweyt"
+				toros_mountain="Kuveyt"
+				rumelian="Kuveyt"
+				west_anatolian="Kuveyt"
+				central_anatolian="Kuveyt"
+				black_sea="Kuveyt"
 				
 				b_al_asimah = {}
 				b_farwaniyah = {}
@@ -1365,6 +1392,8 @@ e_arabiyya = {
 			c_suqutra = { # 1468
 				color={ 159 187 172 }
 				color2={ 255 255 255 }
+				
+				somali="Suqadara"
 				
 				b_hadibu = {}
 				b_qadu = {}

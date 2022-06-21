@@ -2580,9 +2580,22 @@ e_ruthenia = {
 		donskoy="Belorussiya"
 		chernyan="Belorussiya"
 		kaliningradyets="Belorussiya"
-		polish="Bialorus"
+		mazovian="Bialorus"
+		wielkopolan="Bialorus"
+		malopolan="Bialorus"
+		warmzur="Bialorus"
+		odrzan="Bialorus"
+		goral="Bialorus"
+		silesian="Bjolorus"
 		lithuanian="Baltarusija"
 		latvian="Baltkrievija"
+		belarusian="Bielarus'"
+		ukrainian="Bilorus"
+		donskoy="Bilorus"
+		poleshuk="Bilorus"
+		halychian="Bilorus"
+		lipka="Belarusija"
+		tatar="Belarusiya"
 
 		d_viciebsk = {
 			color={ 100 201 180 }
@@ -3664,18 +3677,32 @@ e_ruthenia = {
 		
 			capital = 887 #Lutsk
 			
-			polish = "Wolyn"
+			wielkopolan = "Wolyn"
+			malopolan = "Wolyn"
+			mazovian = "Wolyn"
+			goral = "Wolyn"
+			odrzan = "Wolyn"
+			warmzur = "Wolyn"
 				
 			c_lutsk = {
 				color={ 221 225 142 }
 				color2={ 255 255 255 }
 				
-				polish = "Luck"
+				wielkopolan = "Luck"
+				malopolan = "Luck"
+				mazovian = "Luck"
+				goral = "Luck"
+				odrzan = "Luck"
+				warmzur = "Luck"
 			
 				b_volodymyr_volynsky = {}
 				b_lutsk = {
-					polish = "Luck"
-				}
+					wielkopolan = "Luck"
+					malopolan = "Luck"
+					mazovian = "Luck"
+					goral = "Luck"
+					odrzan = "Luck"
+					warmzur = "Luck"}
 				b_novovolynsk = {}
 				b_kivertsi = {}
 				b_rozhyshche = {}
@@ -3686,12 +3713,21 @@ e_ruthenia = {
 				color={ 200 180 54 }
 				color2={ 255 255 255 }
 				
-				polish = "Równe"
+				wielkopolan = "Równe"
+				malopolan = "Równe"
+				mazovian = "Równe"
+				goral = "Równe"
+				odrzan = "Równe"
+				warmzur = "Równe"
 				
 				b_dubno = {}
 				b_rivne = {
-					polish = "Równe"
-				}
+					wielkopolan = "Równe"
+					malopolan = "Równe"
+					mazovian = "Równe"
+					goral = "Równe"
+					odrzan = "Równe"
+					warmzur = "Równe"}
 				b_ostroh = {}
 				b_zdolbuniv = {}
 				b_radyvyliv = {}
