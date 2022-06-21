@@ -1,0 +1,46 @@
+west_african = {
+	alternate_start = { NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } } }
+	graphical_cultures = { muslimgfx }
+
+	kru = {
+		color = { 0.6 0.8 0.6 }
+		
+		graphical_cultures = { westafricangfx africangfx }
+			
+		male_names = {
+			Abraham Allen
+			Boakai Bernard Beyan Borforh Boryee
+			Cadmael Charles
+			Didwho Dorley Dwe 
+			Ernest
+			Forkay 
+			Garmuyu Gblayee Gbwe George Gesue Gyude
+			Harris Henry
+			Jlakon Job Joshua
+			Kaboo Kanyon Konmla
+			Manneh Monon-Konmlan 
+			Nimene Nyennoh 
+			Oppong 
+			Paul Pennon 
+			Saigbe Samuel Soeh-Tehpoe 
+			Tagbedi Teh Togar Togba
+			Wadeh Wesley William Wlateh Wuling
+			Yenseloh 
+		}
+		
+		female_names = {
+			Arway
+			Donyen 
+			Ellen 
+			Gloria
+			Janjay Jayplo 
+			Krayonor
+			Mardea Mary Maya Monji
+			Nyonweh 
+			Poady 
+			Sorntee
+			Tanyonoh Tarloh Tomah 
+			Wleji Wloh Wreh
+		}
+	}
+}

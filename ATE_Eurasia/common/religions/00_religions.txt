@@ -1741,7 +1741,88 @@ christian = {
 		intermarry = barelvi
 		intermarry = nestorian
 	}
-
+	apostolic = { #Brazilian Christianity
+		graphical_culture = westerngfx
+		
+		icon = 39
+		heresy_icon = 40
+		
+		color = { 0.7 0.7 0.1 }
+		
+		high_god_name = GOD_DEUS
+		
+		god_names = {
+			GOD_DEUS GOD_THE_LORD GOD_JESUS GOD_THE_BLESSED_VIRGIN GOD_THE_SAINTS
+		}
+		
+		evil_god_names = {
+			THE_DEVIL SATAN LUCIFER 
+		}
+		
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_grant_invasion_cb = invasion
+		can_grant_claim = yes
+		priests_can_inherit = no
+		priests_can_marry = yes
+		allow_rivermovement = yes
+		can_retire_to_monastery = yes
+		aggression = 0.5 # not as likely to expand
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+		
+		crusade_name = CRUSADE
+		scripture_name = THE_BIBLE
+		priest_title = PADRE
+		
+		intermarry = catholic
+		intermarry = reformed
+		intermarry = free_church
+		intermarry = lutheran
+		intermarry = celeste
+	}
+	celeste = { #Gaucho Christianity (Heresy for Brazilian Apostolic)
+		graphical_culture = westerngfx
+		
+		icon = 39
+		heresy_icon = 40
+		
+		color = { 0.65 0.7 0.1 }
+		
+		parent = apostolic
+		
+		high_god_name = GOD_DEUS
+		
+		god_names = {
+			GOD_DEUS GOD_JESUS GOD_CRISTO_MOCA THE_MONGES GOD_THE_BLESSED_VIRGIN
+		}
+		
+		evil_god_names = {
+			THE_DEVIL SATAN LUCIFER
+		}
+		
+		piety_name = PURITY
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		priests_can_inherit = yes
+		priests_can_marry = yes
+		allow_rivermovement = yes
+		female_temple_holders = yes
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+		
+		crusade_name = CRUSADE
+		scripture_name = THE_BIBLE
+		priest_title = MONGE
+		
+		intermarry = catholic
+		intermarry = reformed
+		intermarry = free_church
+		intermarry = lutheran
+		intermarry = apostolic
+	}
 }
 
 vernacular = {
@@ -2108,6 +2189,39 @@ vernacular = {
 		religious_clothing_head = 2
 		religious_clothing_priest = 2
 		intermarry = orthodox
+	}
+	rastafarian = {
+		graphical_culture = africangfx
+
+		
+		icon = 50
+		heresy_icon = 50
+		
+		color = { 0.8 0.4 0.0 }
+
+		#uses default interface to reflect its Christian roots
+
+		scripture_name = THE_PROMISED_KEY
+		#priest_title = SHAMAN
+		
+		high_god_name = GOD_JAH
+		
+		god_names = {
+			GOD_JAH GOD_RASTAFARI PROPHET_GARVEY
+		}
+		evil_god_names = {
+			BABYLON
+		}
+		
+		priests_can_marry = yes
+		female_temple_holders = no
+		allow_looting = yes
+		#can_hold_temples = yes
+		allow_rivermovement = yes
+		can_demand_religious_conversion = no
+		
+		religious_clothing_head = 19
+		religious_clothing_priest = 19
 	}
 }
 
@@ -3520,6 +3634,50 @@ old_world_cultist_group = {
 		
 		religious_clothing_head = 10
 		religious_clothing_priest = 10
+	}
+	americanist = {
+		graphical_culture = hellenicgfx
+		
+		icon = 49
+		heresy_icon = 49
+		
+		color = { 0.3 0.3 0.8 }
+		
+		interface_skin = { americanist_interface oldworld_interface }
+
+		scripture_name = THE_PAPERS
+		priest_title = JUDGE
+		piety_name = PATRIOTISM
+		
+		high_god_name = GOD_THE_FOUNDERS
+		
+		god_names = { # having both "the founding fathers" and "the founders" seemed highly redundant
+			GOD_THE_FOUNDERS GOD_WASHINGTON GOD_JEFFERSON GOD_THE_FLAG
+			GOD_ADAMS GOD_MADISON GOD_HAMILTON GOD_LINCOLN GOD_UNCLE_SAM
+		}
+		evil_god_names = { # replaced references to 90s conspiracies with good old fashioned Revolutionary War-inspired ones
+			THE_REDCOATS THE_TRAITOR THE_ILLUMINATI FASCISM COMMUNISM
+		}
+		
+		#investiture = yes
+		can_excommunicate = yes
+		can_grant_claim = yes
+		can_grant_divorce = yes
+		#allow_viking_invasion = yes
+		can_call_crusade = yes
+		can_grant_invasion_cb = invasion
+		allow_rivermovement = yes
+		#female_temple_holders = yes
+		#feminist = yes
+		
+		priests_can_marry = yes
+		
+		religious_clothing_head = 11
+		religious_clothing_priest = 11
+		
+		intermarry = jacobin
+		intermarry = thelema
+		intermarry = glorian
 	}
 }
 
