@@ -1,6 +1,6 @@
-1802000={ #King Nazar I Ghazaryan
-    name="Nazar"
-    dynasty=1802101 
+1802000={ #King Hrachik I Ghazaryan
+    name="Hrachik"
+    dynasty=1802109 #Mehruni 
     culture=armenian
     religion=miaphysite
     martial=14
@@ -12,11 +12,12 @@
 	trait=brilliant_strategist
 	trait=genius
 	trait=brave
-	trait=regularis	
 	trait=pious
 	trait=ambitious
 	trait=temperate
 	trait=diligent
+	father=1802108
+	give_nickname=nick_the_caucasian_hammer
     2398.6.25={birth=yes}
 	2461.9.15={death=yes}
 }
@@ -32,8 +33,7 @@
     intrigue=5
     learning=5
 	trait=school_thaddeus
-    trait=grey_eminence
-	trait=regulara
+    trait=charismatic_negotiator
     trait=fair
     trait=familyperson
     trait=trusting
@@ -43,9 +43,9 @@
 	2469.8.20={death=yes}
 }
  
- 1802002={ #King Spartak I Nazari Ghazaryan
+ 1802002={ #King Spartak I Hrachiki Ghazaryan
     name="Spartak"
-    dynasty=1802101 
+    dynasty=1802109 #Mehruni 
     culture=armenian
     religion=miaphysite
     martial=13
@@ -94,9 +94,9 @@
 	2490.6.16={death=yes}
 }
 
- 1802003={ #King Sahag I Nazari Ghazaryan
+ 1802003={ #King Sahag I Hrachiki Ghazaryan
     name="Sahag"
-    dynasty=1802101 
+    dynasty=1802109 #Mehruni 
     culture=armenian
     religion=miaphysite
     martial=8
@@ -137,8 +137,8 @@
 	2497.10.10={death=yes}
 }
 
- 1802005={ #King Sahag II Sahagi Ghazaryan
-    name="Sahag"
+ 1802005={ #King Nazar I Ghazari Ghazaryan
+    name="Nazar"
     dynasty=1802101 
     culture=armenian
     religion=miaphysite
@@ -154,13 +154,12 @@
 	trait=honest	
 	trait=patient
 	trait=diligent
-	father=1802003
-	mother=1802004
-    2462.8.4={birth=yes}
+	father=1802110
+    2475.8.4={birth=yes}
 	2523.7.18={death=yes}
 }
 
-1802006={ #Patil wife of King Sahag II Ghazaryan
+1802006={ #Patil wife of King Nazar I Ghazaryan
     name="Patil"
 	female=yes
     culture=armenian
@@ -171,12 +170,14 @@
     intrigue=4
     learning=7
 	trait=charismatic_negotiator
+	trait=school_thaddeus
+	trait=regulara
 	trait=gregarious
 	trait=charitable
 	trait=kind
 	trait=groomed
-    2464.2.13={birth=yes}
-	2488.4.20={add_spouse=1802005}
+    2476.2.13={birth=yes}
+	2493.4.20={add_spouse=1802005}
 	2527.6.8={death=yes}
 }
 
@@ -197,7 +198,7 @@
 	trait=charismatic_negotiator 
 	father=1802005
 	mother=1802006
-    2492.4.14={birth=yes}
+    2494.4.14={birth=yes}
 	2555.6.7={death=yes}
 }
 
@@ -464,7 +465,7 @@
 }
 
 
-1802014={ #King Sahag IV Paylagi Ghazaryan
+1802014={ #King Sahag III Paylagi Ghazaryan
     name="Sahag"
     dynasty=1802101 
     culture=armenian
@@ -487,7 +488,7 @@
     2622.6.13={birth=yes}
 }
 
-1802021={ #Yelena wife of King Sahag IV Ghazaryan
+1802021={ #Yelena wife of King Sahag III Ghazaryan
     name="Yelena"
 	female=yes
     dynasty=1802102 
@@ -2081,34 +2082,77 @@
 #communication between the Capital and the easternmost part of the empire became impossible due to
 #the war, Armenia only remained to resist against the Mahdi claimant. In 2436
 
-1802105={ #Duke Davit I Mehruni of Yerevan
+1802108={ #Duke Davit I Mehruni of Yerevan
     name="Davit"
     dynasty=1802109 #Mehruni 
     culture=armenian
     religion=miaphysite
-    martial=14
-    diplomacy=8
-    stewardship=8
-    intrigue=11
-    learning=8
 	trait=school_thaddeus
-	trait=brilliant_strategist
-	trait=genius
-	trait=brave
-	trait=regularis	
-	trait=pious
-	trait=ambitious
-	trait=temperate
-	trait=diligent
-    2398.6.25={birth=yes}
-	2461.9.15={death=yes}
+	trait=fortune_builder
+	trait=humble	
+	trait=shy
+	trait=content
+    2368.6.10={birth=yes}
+	2427.1.11={death=yes}
+}
+
+1802109={ #Duke Ghazar I Mehruni of Lori
+    name="Ghazar"
+    dynasty=1802109 #Mehruni 
+    culture=armenian
+    religion=miaphysite
+	trait=school_thaddeus
+	trait=bastard
+	trait=skilled_tactician
+	trait=ambitious	
+	trait=envious
+	trait=patient
+	father=1802000
+    2435.5.5={birth=yes
+	give_nickname=nick_the_black_bastard}
+	2485.2.1={death=yes}
+}
+
+1802110={ #Duke Sisag I Mehruni of Lori
+    name="Sisag"
+    dynasty=1802101 
+    culture=armenian
+    religion=miaphysite
+	trait=school_thaddeus
+	trait=tough_soldier
+	trait=wroth	
+	trait=humble
+	trait=gregarious
+	father=1802109
+    2457.2.3={birth=yes}
+	2488.3.10={death={
+			death_reason=death_battle
+		}
+	}
+}
+
+1802111={ #Duke Ekanner I Mehruni of Lori
+    name="Ekanner"
+    dynasty=1802109 #Mehruni 
+    culture=armenian
+    religion=miaphysite
+	trait=school_thaddeus
+	trait=canon
+	trait=martial_cleric
+	trait=hedonist
+	trait=charitable
+	trait=cynical
+	trait=gregarious
+	trait=uncouth
+	father=1802003
+	mother=1802004
+    2458.4.15={birth=yes}
+	2507.6.21={death=yes}
 }
 
 
-
-
 #Azimzade 2054212
-#Mehruni 1802109
+#Mehruni 1802109 ge
 
 #Davit Mehruni c_yerevan
 #Hrachik I Mehruni e_caucasia
@@ -2120,11 +2164,11 @@
 
 
 #Chancellors of Caucasua 2435 to 2521
-#Hrachick I Merduni 2435 to 2447
+#Nazar I Merduni 2435 to 2447
 #Alasgar Azimzade 2447 to 2456
 #Antimoz Bolkazde 2456 to 2470 
 #Allahshükür Azimzade 2470 to 2478 
-#Hrachick II Merduni 2478 to 2485 
+#Sahag II Merduni 2478 to 2485 
 #Niko Bagrationi 2485 to 2491 
 #Säfiäddin Ismayil 2491 to 2500 
 #Antimoz II Bolkazde 2500 to 2511 

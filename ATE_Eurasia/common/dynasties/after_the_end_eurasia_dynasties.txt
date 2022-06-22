@@ -5005,7 +5005,20 @@
 1802106 = { name="Raza" culture=armenian used_for_random=no }
 1802107 = { name="Bogosian" culture=armenian used_for_random=no }
 1802108 = { name="Margosyan" culture=armenian }
-1802109 = { name="Mehruni" culture=armenian }
+1802109 = { name="Mehruni" culture=armenian 
+	coat_of_arms = { 
+		religion = miaphysite
+		template = 0
+		layer = {
+			texture = 24
+			texture_internal = 0
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 1803000 = { name="Hizir" culture=dom 
 	coat_of_arms = { 
@@ -22465,7 +22478,20 @@ coat_of_arms = {
 2054209 = { name="Shahbazi" culture=azeri }
 2054210 = { name="Bärshadli" culture=azeri }
 2054211 = { name="Çätin" culture=azeri }
-2054212 = { name="Azimzade" culture=azeri }
+2054212 = { name="Azimzade" culture=azeri 
+	coat_of_arms = {
+		religion = sunni
+		template = 0
+		layer = {
+			texture = 7
+			texture_internal = 0
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 2055000 = { name="Özdemir" culture=west_anatolian 
 	coat_of_arms = {
@@ -28267,7 +28293,20 @@ coat_of_arms = {
 2104042 = { name="Warda" culture=assyrian }
 2104043 = { name="Bulos" culture=assyrian }
 2104044 = { name="Hariri" culture=assyrian }
-2104045 = { name="Noohra" culture=assyrian }
+2104045 = { name="Noohra" culture=assyrian 
+	coat_of_arms = { 
+		religion = miaphysite
+		template = 0
+		layer = {
+			texture = 23
+			texture_internal = 7
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 
 2105000 = { name="Jibran" culture=lebneni 
