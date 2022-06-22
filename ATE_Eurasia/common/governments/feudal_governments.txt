@@ -47,29 +47,7 @@ feudal_governments = {
 				religion_group = buddhist_group
 				higher_tier_than = BARON
 			}
-			OR = { #Is a Muslim or Alevi Located in Tunisia or Europe
-				NOT = {religion_group = muslim}
-				AND = {
-					religion_group = muslim
-					AND = {
-							religion = ruhi
-							OR = {
-								capital_scope = {region = custom_europe}
-								capital_scope = {region = custom_tunisia}
-							}
-					}
-				}
-				AND = {
-					religion_group = islamosyncretic
-					AND = {
-							religion = alevi
-							OR = {
-								capital_scope = {region = custom_europe}
-								capital_scope = {region = custom_tunisia}
-							}
-					}
-				}
-			}
+			#
 			is_patrician = no #is not a Republican Eligible Government
 			
 			NOT = { is_government_potential = diwan_government }
@@ -656,22 +634,16 @@ feudal_governments = {
 		title_prefix = "diwan_government_"
 		potential = {
 			OR = {
-				AND = { 
-					religion_group = islamosyncretic
-					has_game_started = no
-					NAND = {
-						religion = alevi
-						OR = {
-							capital_scope = {region = custom_europe}
-							capital_scope = {region = custom_tunisia}
-						}
+				AND = {
+					OR = {
+						religion_group = islamosyncretic
+						religion_group = muslim
 					}
-				}
-				AND = { 
-					religion_group = muslim
-					has_game_started = no
 					NAND = {
-						religion = ruhi
+						OR = {
+							religion = alevi
+							religion = ruhi
+						}
 						OR = {
 							capital_scope = {region = custom_europe}
 							capital_scope = {region = custom_tunisia}
@@ -696,10 +668,6 @@ feudal_governments = {
 						capital_scope = {region = custom_europe}
 						capital_scope = {region = custom_tunisia}
 					}
-				}
-				AND = {
-					government = diwan_government
-					has_game_started = yes
 				}
 			}
 			
