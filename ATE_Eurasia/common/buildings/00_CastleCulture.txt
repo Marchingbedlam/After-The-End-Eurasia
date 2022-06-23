@@ -3837,4 +3837,175 @@ castle = {
 		
 		extra_tech_building_start = 0.8
 	}
+	# Caucasian Mountain Infantry
+	ca_culture_mountaincaucasian_1 = {
+		desc = ca_culture_mountaincaucasian_1_desc
+		potential = {
+			OR = {
+				terrain = hills
+				terrain = mountain
+			}
+			OR = {
+						culture = armenian
+						culture = georgian
+				has_building = ca_culture_mountaincaucasian_1
+			}
+		}
+		is_active_trigger = {
+				ROOT = {
+					OR = {
+						culture = armenian
+						culture = georgian
+					}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0
+				ROOT = {
+					OR = {
+						culture = armenian
+						culture = georgian
+					}
+			}
+		}
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		light_infantry = 30
+		archers = 15
+		light_infantry_defensive = 0.1
+		archers_offensive = 0.05
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_mountaincaucasian_2 = {
+		desc = ca_culture_mountaincaucasian_1_desc
+		potential = {
+			OR = {
+				terrain = hills
+				terrain = mountain
+			}
+			OR = {
+						culture = armenian
+						culture = georgiann
+				has_building = ca_culture_mountaincaucasian_1
+				has_building = ca_culture_mountaincaucasian_2
+			}
+		}
+		is_active_trigger = {
+				ROOT = {
+					OR = {
+						culture = armenian
+						culture = georgian
+					}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+				ROOT = {
+					OR = {
+						culture = armenian
+						culture = georgian
+					}
+			}
+		}
+		upgrades_from = ca_culture_mountaincaucasian_1
+		gold_cost = 300
+		build_time = 1095
+		light_infantry = 40
+		archers = 20
+		light_infantry_defensive = 0.1
+		archers_offensive = 0.05
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_mountaincaucasian_3 = {
+		desc = ca_culture_mountaincaucasian_1_desc
+		potential = {
+			OR = {
+				terrain = hills
+				terrain = mountain
+			}
+			OR = {
+						culture = armenian
+						culture = georgian
+				has_building = ca_culture_mountaincaucasian_1
+				has_building = ca_culture_mountaincaucasian_2
+				has_building = ca_culture_mountaincaucasian_3
+			}
+		}
+		is_active_trigger = {
+				ROOT = {
+					OR = {
+						culture = armenian
+						culture = georgian
+					}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+				ROOT = {
+					OR = {
+						culture = armenian
+						culture = georgian
+					}
+			}
+		}
+		upgrades_from = ca_culture_mountaincaucasian_2
+		gold_cost = 400
+		build_time = 2190
+		light_infantry = 50
+		archers = 30
+		light_infantry_defensive = 0.1
+		archers_offensive = 0.05
+		ai_creation_factor = 99
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_mountaincaucasian_4 = {
+		desc = ca_culture_mountaincaucasian_1_desc
+		potential = {
+			OR = {
+				terrain = hills
+				terrain = mountain
+			}
+			OR = {
+						culture = armenian
+						culture = georgian
+				has_building = ca_culture_mountaincaucasian_1
+				has_building = ca_culture_mountaincaucasian_2
+				has_building = ca_culture_mountaincaucasian_3
+				has_building = ca_culture_mountaincaucasian_4
+			}
+		}
+		is_active_trigger = {
+				ROOT = {
+					OR = {
+						culture = armenian
+						culture = georgian
+					}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+				ROOT = {
+					OR = {
+						culture = armenian
+						culture = georgian
+					}
+			}
+		}
+		upgrades_from = ca_culture_mountaincaucasian_3
+		gold_cost = 500
+		build_time = 2190
+		light_infantry = 60
+		archers = 40
+		light_infantry_defensive = 0.1
+		archers_offensive = 0.05
+		ai_creation_factor = 98
+		
+		extra_tech_building_start = 0.8
+	}		
 }
