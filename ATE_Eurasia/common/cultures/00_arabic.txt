@@ -868,6 +868,65 @@ arabic = {
 		female_patronym = "bint "
 		prefix = yes 
 	}
+	Sabir = {
+		graphical_cultures = { arabicgfx muslimgfx egyptiangfx }
+		
+		color = { 0.61 0.2 0.28 }
+		
+		male_names = {
+			Aagat Aashima Abbas Abdulaziz Abdulghafur Abdullah Abdullatif Abdulmajid Abdulmajid Abdulmuhsin Abdulqadir Abdulreza Abdulwahhab Abdurrahim Abdurrahman_Abdulrahman Abdurrazaq Abdussalam Adesh Adil Adnan Agam Aghustus Ahmad_Ahmad Ahmidu Ajit Albir Ali Amar Amr Anba, Andiru Antun Anupam Anwar Anwaruddin Aqil Arijit Arman Awana Ayman Ayman Ayyub_Job 
+			Badr Baghat Bakhit Bakhtiar Balaram Bandar Barman Bashir Batist Behruz Bharath Bijay Bilal Bishal Brandun
+			Dakila Danyal Dariush Debdas Dilip Dipak
+			Fabris Fahd Fakhr Faraj Faris Fawzi Fayiz Faysal Fazlullah Filip Firdus Frank 
+			Ghanim Ghazi Gopal 
+			Habush Hakimullah Harshal Hayat Haytham Hazza Hilal Hormoz Hussam Hussayn 
+			Idris Imran Indrajit Isa Iskandar Ismail Issam 
+			Jagdish Jak Jamshid Jiluwi Johar Juma’a Jun Jurji Jushua 
+			Kali Khalfan Khalifah Khalil Khamis Kidlat Kishor Klud Kristufar Kumar 
+			Lahej Latif Luk 
+			Mahdi Mahesh Mahir Mahmadu Mahmud_Mahmud Mahtab Mahvash Majid Maktum Malallah Mamduh Manish Manoj Mansur_Mansur Marwan Marzuq Mashur Masud Matar Mayed Mirza Mishari Misha’al Muammar Mubarak Muftah Muhain Muhammad_Muhammad Muhannad Muhsin Mumtaz Munther Muqrin Murad Murgan Muris Musa_Moses Musabah Musallam Musa’id Mutaib Mutani Mu’tazz 
+			Nasser Nawaf Nawaz Nawazuddin Nimr Nini Niraj Nirmal Nuhayan Nur 
+			Pankaj Parviz Piruz Prabhakar Pradib Prakash Prasanjit Prashant Priyanshu Pujan Pusparaj 
+			Qasim Qudus
+			Rahmatullah Rajesh Rakan Ramadan Rami Ramprasad Ramzan Rashid Rasul Rayan Riazuddin Rizwan Rotit 
+			Sahrab Said Salim Salman Samar Sandip Sanjiv Sardar Sa’ad Shahib Shahid Shahjahan Shahrukh Shahzad Shamsuddin Sikandar Simran Sitaram Srinivas Subhash Sulayman Sultan Sunil Suraj Surur
+			Talal Talib Thani Theyab Thunayan Turki Tushar 
+			Ubayd Umar Umran Uthman
+			Vishal
+			Wahid Walid Yahya Yaqub Yasin Yaslam Yasser Yazid Yunus Yusuf 
+			Zahid Zahir Zahran Zaman Zawar Zayd Zuhair
+		}
+		female_names = { 
+			Aashika Abir Abta Adila Afia Aisha Alaa Alays Albatal Alia Aliksa Alimazi Almaz Alzain Amara Ambelu Amina Amina Aminata Amita Amna Amsha Anjali Ankita Anuradha Anushka April Arij Arika Avani Aya Ayana Azza
+			Bahiya Bashair Basmah Bazza
+			Daad Dafni Dakila Dalal Dalila Dalisay Dipika Divina Diwata Dubai
+			Fahda Farzana Fatima_Fatima Fazia Firduzi Firuzi Futaim
+			Gajalakshmi Ghana Gohar Golnar Golshan Gowri Gulbadan
+			Habiba Haifa Hajar Hanan Hassa Haya Hilin Hind Huda Humaira Huzza
+			Ilham Iman Izara
+			Jalila Jamuna Jannat Jawhara Jothi Joy Joyce
+			Kalpana Kamali Kanchana Karima Karla Karthika Kasandira Kenza Khadija_Khadija Kloe
+			Lajvati Lakshmi Latifa Latika Lucy Luluwah
+			Madawi Madelin Madhula Madina Maha Mahra Maitha Manal Manjula Marjani Maryam_Mary,May Mazda Misrak Mojgan Mubaraka Muhdi Munira
+			Nada Nadia Nadin Namrata Nilufar Nisha Nuf Nura Nusha Nuwair
+			Priyanka Puja
+			Rahwa Rajani Rajkumari Raksha Rawya Reema Richa Rizwana Ruqaya
+			Sahab Saida Sakina Salamah Salwa Samira Sara_Sarah Shabana Shahad Shahida Shaikha Shamma Shams Shamsa Sharifa Shima Shiril Sita Sora Sultana Suman Sumaya
+			Tahmina Tala Tarfa
+			Vimala 
+			Wadhah Wijdan
+			Yamuna
+			Zahab Zahra Zala Zoya Zubash Zuri
+		}
+		
+		dukes_called_kings=yes
+		
+		from_dynasty_suffix = "i"
+
+		male_patronym = "bin "
+		female_patronym = "bint "
+		prefix = yes 
+	}
 	hijazi = {
 		graphical_cultures = { arabicgfx muslimgfx egyptiangfx }
 		
