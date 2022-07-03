@@ -11,3 +11,47 @@ EVTOPTCbaptism_events.1;No.;;;;;;;;;;;;;x
 
 adult_baptized;Baptized as a Believer;;;;;;;;;;;;;x
 adult_baptized_desc;This character has received a believer’s baptism.;;;;;;;;;;;;;x
+
+###########Event Modifiers########### 
+ 
+flagellant_tier_one;Flagellant;;;;;;;;;x
+flagellant_tier_two;Pious Flagellant;;;;;;;;;x
+flagellant_tier_three;Most Pious Flagellant;;;;;;;;;x
+bad_penitente;Bad Capirote;;;;;;;;;x
+flagellation_ritual;Mortification of the Flesh;;;;;;;;;x
+flagellation_ritual_desc;Sanctify thyself through an act to mortify your sins.;;;;;;;;;x
+RECENT_FLAGELLATION;Has not recently partaken in mortification of the flesh;;;;;;;;;x
+
+#####FLAGELLANT EVENTS#####
+
+EVTDESC_flagellation_1;Mortification of the Flesh is an act undertaken in order to repent for sins or as a way to share and imitate the Passion of Christ. While the tradition long predates the event, it was only after it that it took the more extreme form practiced by contemporary Penitentes, as instruments of mortification were made bloodier. Penitente Rulers are expected to practice mortification regularly..;;;;;;;;;;;;;x
+EVTOPTA_flagellation_1;I will walk barefoot and wear the Cilice.;;;;;;;;;;;;;x
+TXT_EVTOPTA_flagellation_1;This is the most common and riskless form of Penance.;;;;;;;;;;;;;x
+EVTOPTB_flagellation_1;I will publically whip myself using the discipline.;;;;;;;;;;;;;x
+TXT_EVTOPTB_flagellation_1;Self-flagellation is seen as very pious, however it also carries more risk than simply wearing the Cilice.;;;;;;;;;;;;;x
+EVTOPTC_flagellation_1;I will imitate His Passion and ask to be put in a Cross.;;;;;;;;;;;;;x
+TXT_EVTOPTC_flagellation_1;This is the most extraordinary form of mortification of the flesh, however it also carries higher risk compared to all others.;;;;;;;;;;;;;x
+
+EVTDESC_flagellation_2;You spent a long time wearing the Cilice in public, as an act repent and Reparation. It was a painful but rewarding experience.;;;;;;;;;;;;;x
+EVTOPTA_flagellation_2;Pecador Contempla.;;;;;;;;;;;;;x
+EVTDESC_flagellation_3;Although the original Cilice used in the pre-event world was only meant to cause some discomfort, the ones worn by contemporary Penitentes are meant to cause actual pain and often occasionate bleeding. As you spent a long time wearing the cilice you ended up developing an infection from the wounds it caused. May God take this as an act of repent and Reparation.;;;;;;;;;;;;;x
+EVTOPTA_flagellation_3;Pecador Contempla.;;;;;;;;;;;;;x
+EVTDESC_flagellation_4;In addition to the chain Cilice, you also had to wear a sackcloth and walk barefoot. While walking through somewhat rough terrain, you ended up wounding your feet, and it later developed into a swollen ankle.;;;;;;;;;;;;;x
+EVTOPTA_flagellation_4;Pecador Contempla.;;;;;;;;;;;;;x
+
+EVTDESC_flagellation_5;You practiced mortification through the use of the Penance, a small whip containing seven cords, each representing one of the seven deadly sins as an act repent and Reparation. It was a painful but rewarding experience.;;;;;;;;;;;;;x
+EVTDESC_flagellation_6;You practiced mortification through the use of the Penance, a small whip containing seven cords, each representing one of the seven deadly sins. The constant self-flagellation opened a wound, and occasionated an infection. May God take this as an act of repent and Reparation.;;;;;;;;;;;;;x
+EVTDESC_flagellation_7;You practiced mortification through the use of the Penance, a small whip containing seven cords, each representing one of the seven deadly sins. The constant self-flagellation ended leaving you badly bruised. May God take this as an act of repent and Reparation.;;;;;;;;;;;;;x
+
+EVTDESC_flagellation_8;You asked to be publically crucified for a few minutes, a form of mortification considered by the Penitentes to be both the most pious and risky. Although it was painful, you did not sustain any serious injuries and it left you with new insight over the Passion of Christ.;;;;;;;;;;;;;x
+EVTDESC_flagellation_9;You asked to be publically crucified for a few minutes, a form of mortification considered by the Penitentes to be both the most pious and risky. It was a very painful experience as it left you severely injured, but it also gave you new insight over the Passion of Christ.;;;;;;;;;;;;;x
+EVTOPTA_flagellation_9;He underwent all that pain, only to give us a second chance...;;;;;;;;;;;;;x
+EVTDESC_flagellation_10;You asked to be publically crucified for a few minutes, a form of mortification considered by the Penitentes to be both the most pious and risky. It was a very painful experience as staying in such a painful position lead to you breaking your ribs, but it also gave you new insight over the Passion of Christ.;;;;;;;;;;;;;x
+
+EVTDESC_flagellation_15;Your recent mortification of the flesh was a transforming experience for you. Your discipline toughened in response to your physical trauma and you learned to better resist the temptations of the flesh.;;;;;;;;;;;;;x
+EVTOPTA_flagellation_15;I am becoming a better Christian;;;;;;;;;;;;;x
+
+EVTDESC_flagellation_21;Penitente rulers are expected to serve as an example to their people and regularly practice Mortification of the Flesh as penance for both his sins and the sins of his people. You however have went too long without performing mortification, which has earned you the disaproval of the clergy.;;;;;;;;;;;;;x
+EVTOPTA_flagellation_21;I should have seen this coming.;;;;;;;;;;;;;x
+
+big_brother_sad;Your lack of faith §Rdisturbs§! the Hermano Mayor.;;;;;;;;;;;;;x

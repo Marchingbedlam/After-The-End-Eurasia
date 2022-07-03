@@ -65,4 +65,91 @@ decisions = {
 		}		
 		
 	}
+	
+	flagellation_ritual = { #what it says
+		only_independent = yes
+		ai_check_interval = 120
+		is_high_prio = yes
+		
+		potential = {
+			religion = capirote	
+			is_playable = yes
+			#independent = yes
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+			#NOT = { trait = bloodlet }
+		}
+		allow = {
+			war = no
+			in_command = no
+			scaled_wealth = 0.5
+			prestige = 25
+			custom_tooltip = {
+				text = UNOCCUPIED_DEMESNE_TITLE
+				hidden_tooltip = {
+					any_demesne_title = {
+						NOT = { higher_tier_than = count }
+						is_occupied = no
+					}
+				}
+			}
+			prisoner = no
+			custom_tooltip = {
+				text = RECENT_FLAGELLATION
+				hidden_tooltip = {
+					NOT = { has_character_flag = flagellation_ritual }
+					NOT = { has_character_modifier = flagellant_tier_one }
+					NOT = {	has_character_modifier = flagellant_tier_two }
+					NOT = {	has_character_modifier = flagellant_tier_three }
+				}
+			}
+			NOT = { is_inaccessible_trigger = yes }
+			NOT = {	is_incapable = yes }
+			is_adult = yes
+		}
+		effect = {
+			set_character_flag = flagellation_ritual
+			hidden_tooltip = { 
+				character_event = { id = capiroteiberia.100 } 
+				clr_character_flag = flagellation_timer
+				clr_character_flag = bad_penitente
+			}
+			if = {
+				limit = {
+					has_dlc = "Reapers"
+				}
+				custom_tooltip = {
+					text = capital_prospers_custom_tooltip
+					hidden_tooltip = {
+						capital_scope = {
+							change_variable = { which = prosperity_value value = 8 }
+						}
+					}
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 2
+				OR = {
+					tier = KING
+					tier = EMPEROR
+				}
+			}
+			modifier = {
+				factor = 0.5
+				trait = cynical
+			}
+			modifier = {
+				factor = 4
+				has_character_flag = bad_penitente
+			}
+		}
+	}	
+	
 }

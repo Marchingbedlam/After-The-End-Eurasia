@@ -1,0 +1,27 @@
+flagellant_tier_one = {
+	monthly_character_piety = 0.5
+	church_opinion = 5
+	icon = 17
+}
+
+flagellant_tier_two = {
+	monthly_character_piety = 1
+	church_opinion = 15
+	icon = 17
+}
+
+flagellant_tier_three = {
+	monthly_character_piety = 2
+	local_revolt_risk = -0.1
+	church_opinion = 30
+	vassal_opinion = 5
+	icon = 17
+}
+
+bad_penitente = {
+	monthly_character_piety = -1
+	local_revolt_risk = 0.1
+	church_opinion = -10
+	vassal_opinion = -5
+	icon = 35
+}
