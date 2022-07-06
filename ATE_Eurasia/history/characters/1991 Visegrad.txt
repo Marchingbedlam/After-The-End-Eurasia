@@ -4995,6 +4995,7 @@
 	trait=greedy
 	trait=content
 	trait=gregarious
+	trait=selfish
 	2631.1.30={birth=yes}
 	2650.4.12={add_spouse=1991343}
 }
@@ -5397,6 +5398,50 @@
 	religion=mariavite
 	2600.5.21={birth=yes}
 	2649.5.28={death=yes}
+}
+1991382={
+	name="Arnold"
+	dynasty=2129224 #Hajbura
+	culture=silesian
+	religion=mariavite
+	trait=martial_cleric
+	trait=bisexual
+	trait=is_fat
+	trait=poet
+	trait=diligent
+	trait=kind
+	trait=humble
+	trait=gluttonous
+	trait=erudite
+	trait=shy
+	trait=monk
+	2613.7.26={birth=yes}
+	dna=bcdfiredaap
+	properties=ae00ma000000
+	2664.1.1={add_friend=1991343}
+	2664.1.1={add_friend=1991344}
+	2664.1.1={add_friend=1991352}
+}
+1991343={
+	name="Maryla"
+	female=yes
+	dynasty=2129221 #Szeja-Bibersztajn
+	culture=silesian
+	religion=oasite
+	father=1991344
+	mother=1991345
+	disallow_random_traits=yes
+	trait=detached_priest
+	trait=groomed
+	trait=quick
+	trait=diligent
+	trait=charitable
+	trait=gregarious
+	trait=socializer
+	trait=ambitious
+	trait=stubborn
+	trait=pious
+	2632.3.18={birth=yes}
 }
 212601={
 	name="Artur"
