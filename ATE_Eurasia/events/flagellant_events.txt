@@ -1,6 +1,4 @@
 ##flagellation Events##
-namespace = capiroteiberia
-
 character_event = {
 	id = capiroteiberia.100
 	desc = EVTDESC_flagellation_1
@@ -990,19 +988,19 @@ character_event = { #Event to check if character should receive the fla
 				NOT = { is_inaccessible_trigger = yes }
 				NOT = {	is_incapable = yes }
 				is_adult = yes
-				religion = penitents
+				religion = capirote
 			}
 			character_event = { id = capiroteiberia.121 }
 		}
 		else_if = {
 			limit = {
-				religion = penitents
+				religion = capirote
 			}
 			character_event = { id = capiroteiberia.120 months = 6 }
 		}
 		else_if = {
 			limit = {
-				NOT = { religion = penitents }
+				NOT = { religion = capirote }
 			}
 			clr_character_flag = flagellation_timer
 		}
@@ -1025,14 +1023,14 @@ character_event = { #bad penitente event
 	option = {
 		name = EVTOPTA_flagellation_21
 		if = { #If the Hermano Mayor exists he will get mad at you
-			limit = {
-				religion_head = {
+			limit = { 
+				religion_head = { 
 					is_alive = yes 
 					has_landed_title = d_capirote	 
 				}
 			}
 			custom_tooltip = { text = big_brother_sad }
-			hidden_tooltip = {
+			hidden_tooltip = { 
 				religion_head = { 		
 					show_scope_change = no	
 					opinion = {
@@ -1060,7 +1058,7 @@ character_event = { #gives penitente rulers their timer at start
 	trigger = {
 		is_playable = yes
 		is_adult = yes
-		religion = penitents
+		religion = capirote
 		NOT = {
 			has_character_flag = flagellation_timer
 		}
