@@ -1,15 +1,16 @@
-3603000 = {
-	name = "Gamal"
-	dynasty = 1912020
-	culture = masri
-	religion = sunni
-	trait = mastermind_theologian
-	trait = theologian
-	trait = patient
-	trait = gregarious
-	trait = ambitious
-	trait = erudite
-	2618.11.2 = { birth=yes }
+3603000={
+	name="Gamal"
+	dynasty=1912020 #Mustagab
+	culture=masri
+	religion=sunni
+	trait=mastermind_theologian
+	trait=theologian
+	trait=patient
+	trait=gregarious
+	trait=ambitious
+	trait=erudite
+	father=3603253
+	2618.11.2={birth=yes}
 }
 3603001 = {
 	name = "Ilia"
@@ -322,32 +323,33 @@
 	mother = 3603026
 	2662.11.2 = { birth=yes }
 }
-3603028 = { #Alexandria General
-	name = "Baligh"
-	dynasty = 1912020 #Mustagab
-	culture = masri
-	religion = sunni
-	father = 3603031
-	mother = 3603032
-	trait = amateurish_plotter
-	trait = greedy
-	trait = shrewd
-	trait = lustful
-	trait = ambitious
-	2638.11.2 = { birth=yes }
-	2650.11.1 = { 
-		add_claim = k_egypt
-		add_claim = d_al_qahirah
+3603028={ #Alexandria General
+	name="Baligh"
+	dynasty=1912020 #Mustagab
+	culture=masri
+	religion=sunni
+	father=3603031
+	mother=3603032
+	trait=amateurish_plotter
+	trait=greedy
+	trait=shrewd
+	trait=lustful
+	trait=ambitious
+	father=3603253
+	2638.11.2={birth=yes}
+	2650.11.1={
+		add_claim=k_egypt
+		add_claim=d_al_qahirah
 	}
 	2662.1.1={
 		effect={
 			spawn_unit={
-				province=1405 #al-Iskandariyya
+				province=1405#al-Iskandariyya
 				owner=ROOT
 				troops={
-					archers={250 250}
-					heavy_infantry={250 750}
-					light_infantry={500 500}
+					archers={250250}
+					heavy_infantry={250750}
+					light_infantry={500500}
 				}
 				attrition=0.5
 			}
@@ -1045,53 +1047,53 @@
 	mother = 3603085
 	2648.11.2 = { birth=yes }
 }
-3603088 = { 
-	name = "Abdel Halim"
-	dynasty = 1912098 # Shabana
-	culture = masri
-	religion = sunni
-	trait = charismatic_negotiator
-	trait = musician
-	trait = gregarious
-	trait = kind
-	trait = patient
-	trait = temperate
+3603088={
+	name="Abdel Halim"
+	dynasty=1912098 #Shabana
+	culture=masri
+	religion=sunni
+	trait=charismatic_negotiator
+	trait=musician
+	trait=gregarious
+	trait=kind
+	trait=patient
+	trait=temperate
 	father=3603092
-	2610.8.10 = { birth = yes }
-	2630.1.1 = { add_spouse = 3603089 }
-	2665.5.12 = { death = yes }
+	2610.8.10={birth=yes}
+	2630.1.1={add_spouse=3603089}
+	2665.5.12={death=yes}
 }
-3603089 = { 
-	name = "Ibtihal"
-	culture = masri
-	religion = sunni
-	female = yes
-	2610.1.1 = { birth = yes }
+3603089={
+	name="Ibtihal"
+	culture=masri
+	religion=sunni
+	female=yes
+	2610.1.1={birth=yes}
 }
-3603090 = { # count of al-Sharqiyya
-	name = "Hafez"
-	dynasty = 1912098 # Shabana
-	culture = masri
-	religion = sunni
-	father = 3603088
-	mother = 3603089
-	trait = charismatic_negotiator
-	trait = musician
-	trait = gregarious
-	trait = kind
-	trait = patient
-	trait = temperate
-	2644.11.2 = { birth=yes }
+3603090={ #count of al-Sharqiyya
+	name="Hafez"
+	dynasty=1912098 #Shabana
+	culture=masri
+	religion=sunni
+	father=3603088
+	mother=3603089
+	trait=charismatic_negotiator
+	trait=musician
+	trait=gregarious
+	trait=kind
+	trait=patient
+	trait=temperate
+	2644.11.2={birth=yes}
 }
-3603091 = { 
-	name = "Ahdaf"
-	dynasty = 1912098 # Shabana
-	culture = masri
-	religion = sunni
-	female = yes
-	father = 3603084
-	mother = 3603085
-	2648.11.2 = { birth=yes }
+3603091={
+	name="Ahdaf"
+	dynasty=1912098 #Shabana
+	culture=masri
+	religion=sunni
+	female=yes
+	father=3603088
+	mother=3603089
+	2648.11.2={birth=yes}
 }
 3603092={
 	name="Saad"
@@ -1178,4 +1180,12 @@
 	intrigue=4
 	learning=6
 	2631.12.6={birth=yes}
+}
+3603253={
+	name="Mostafa"
+	dynasty=1912020 #Mustagab
+	culture=masri
+	religion=sunni
+	2584.3.18={birth=yes}
+	2639.7.13={death=yes}
 }

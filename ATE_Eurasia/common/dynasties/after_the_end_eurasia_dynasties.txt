@@ -61,10 +61,9 @@
 1001059 = { name="Faudel-Philips" culture=southerner }
 1001060 = { name="Woolf" culture=southerner }
 1001061 = { name="Hoare" culture=southerner 
-	coat_of_arms = {
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 15
+			texture = 0
 			texture_internal = 25
 			emblem = 0
 			color = 0
@@ -84,11 +83,11 @@
 1001070 = { name="Evershed" culture=southerner }
 1001071 = { name="Meserole" culture=southerner 
 	coat_of_arms = { 
-		religion = glorian
+		religion = pagan
 		template = 0
 		layer = {
 			texture = 0
-			texture_internal = 13
+			texture_internal = 0
 			emblem = 0
 			color = 0
 			color = 0
@@ -477,11 +476,11 @@
 1101000 = { name="Constable" culture=westerner }
 1101001 = { name="Ross" culture=westerner 
 	coat_of_arms = { 
-		religion = glorian
+		religion = pagan
 		template = 0
 		layer = {
 			texture = 0
-			texture_internal = 8
+			texture_internal = 1
 			emblem = 0
 			color = 0
 			color = 0
@@ -495,11 +494,11 @@
 1101005 = { name="Brown" culture=westerner }
 1101006 = { name="Anadûni" culture=westerner
 	coat_of_arms = { 
-		religion = valinorist
+		religion = pagan
 		template = 0
 		layer = {
 			texture = 0
-			texture_internal = 4
+			texture_internal = 2
 			emblem = 0
 			color = 0
 			color = 0
@@ -511,11 +510,11 @@
 1101008 = { name="Gimileth" culture=westerner used_for_random = no }
 1101009 = { name="Gurthang" culture=westerner used_for_random = no 
 	coat_of_arms = { 
-		religion = valinorist
+		religion = pagan
 		template = 0
 		layer = {
 			texture = 0
-			texture_internal = 17
+			texture_internal = 3
 			emblem = 0
 			color = 0
 			color = 0
@@ -526,11 +525,11 @@
 1101010 = { name="Theta" culture=westerner used_for_random = no }
 1101011 = { name="Carne" culture=westerner 
 	coat_of_arms = { 
-		religion = valinorist
+		religion = pagan
 		template = 0
 		layer = {
 			texture = 0
-			texture_internal = 7
+			texture_internal = 4
 			emblem = 0
 			color = 0
 			color = 0
@@ -587,11 +586,11 @@
 1101058 = { name="Killigrew" culture=westerner }
 1101059 = { name="Hornblower" culture=westerner 
 	coat_of_arms = { 
-		religion = valinorist
+		religion = pagan
 		template = 0
 		layer = {
 			texture = 0
-			texture_internal = 6
+			texture_internal = 5
 			emblem = 0
 			color = 0
 			color = 0
@@ -640,10 +639,9 @@
 1101099 = { name="Burthogge" culture=westerner }
 1101100 = { name="Wimbush" culture=westerner }
 1101101 = { name="Kelly" culture=westerner
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 15
+			texture = 0
 			texture_internal = 0
 			emblem = 0
 			color = 0
@@ -1007,10 +1005,9 @@
 1200000 = { name="Bonvilain" culture=british }
 1200001 = { name="Broekhart" culture=british }
 1200002 = { name="Windsor" culture=british 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 15
+			texture = 0
 			texture_internal = 1
 			emblem = 0
 			color = 0
@@ -1354,7 +1351,7 @@
 
 1282000 = { name="Topaloghlu" culture=laz 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
 			texture = 0
@@ -1580,10 +1577,9 @@
 1401006 = { name="Cannell" culture=manx }
 1401007 = { name="Kewish" culture=manx }
 1401008 = { name="Faragher" culture=manx 
-	coat_of_arms = {
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 15
+			texture = 0
 			texture_internal = 20
 			emblem = 0
 			color = 0
@@ -1780,11 +1776,11 @@
 1442000 = { name="Gembarzewski" culture=lipka }
 1442001 = { name="Ulanowicz" culture=lipka
 	coat_of_arms = { 
-		religion=ruhi
+		religion=nondescript_muslim
 		template = 0
 		layer = {
-			texture = 2
-			texture_internal = 0
+			texture = 0
+			texture_internal = 36
 			emblem = 0
 			color = 0
 			color = 0
@@ -2127,11 +2123,10 @@
 1479078 = { name="Olkhonud" culture=khalkha }
 1479079 = { name="Erdenebileg" culture=khalkha }
 
-1501000 = { name="Ó Fearghail"culture=irish used_for_random=no 
-	coat_of_arms = {
-		template = 0
+1501000 = { name="Ó Fearghail" culture=irish used_for_random=no 
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 15
+			texture = 0
 			texture_internal = 30
 			emblem = 0
 			color = 0
@@ -2140,13 +2135,12 @@
 		}
 	}
 }
-1501001 = { name="Lí"culture=irish }
-1501002 = { name="Thaíli-Raith"culture=irish }
-1501003 = { name="Ó Deaghaidh"culture=irish 
-	coat_of_arms = {
-		template = 0
+1501001 = { name="Lí" culture=irish }
+1501002 = { name="Thaíli-Raith" culture=irish }
+1501003 = { name="Ó Deaghaidh" culture=irish 
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 15
+			texture = 0
 			texture_internal = 29
 			emblem = 0
 			color = 0
@@ -2155,18 +2149,17 @@
 		}
 	}
 }
-1501004 = { name="Branáin"culture=irish }
-1501005 = { name="Mac an Bháird"culture=irish }
-1501006 = { name="Barrett"culture=irish }
-1501007 = { name="Ó Muireadhaigh"culture=irish }
-1501008 = { name="Chulainn"culture=irish }
-1501009 = { name="Tanúir"culture=irish }
-1501010 = { name="Mac Muireadhaigh"culture=irish }
-1501011 = { name="Ó Fathaigh"culture=irish 
-	coat_of_arms = {
-		template = 0
+1501004 = { name="Branáin" culture=irish }
+1501005 = { name="Mac an Bháird" culture=irish }
+1501006 = { name="Barrett" culture=irish }
+1501007 = { name="Ó Muireadhaigh" culture=irish }
+1501008 = { name="Chulainn" culture=irish }
+1501009 = { name="Tanúir" culture=irish }
+1501010 = { name="Mac Muireadhaigh" culture=irish }
+1501011 = { name="Ó Fathaigh" culture=irish 
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 15
+			texture = 0
 			texture_internal = 31
 			emblem = 0
 			color = 0
@@ -2175,12 +2168,11 @@
 		}
 	}
 }
-1501012 = { name="Burke"culture=irish 
-	coat_of_arms = {
-		template = 0
+1501012 = { name="Burke" culture=irish 
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 15
-			texture_internal = 26
+			texture = 0
+			texture_internal = 27
 			emblem = 0
 			color = 0
 			color = 0
@@ -2188,21 +2180,20 @@
 		}
 	}
 }
-1501013 = { name="Fitzgerald"culture=irish }
-1501014 = { name="Ó Domhnaill"culture=irish }
-1501015 = { name="Yin"culture=irish used_for_random = no }
-1501016 = { name="Ó hÓgáin"culture=irish }
-1501017 = { name="Ó Síocháin"culture=irish }
-1501018 = { name="Ó hAodha"culture=irish }
-1501019 = { name="Dunlap"culture=irish }
-1501020 = { name="West"culture=irish }
-1501021 = { name="White"culture=irish }
-1501022 = { name="Ó Donnobháin"culture=irish }
-1501023 = { name="Joyce"culture=irish 
-	coat_of_arms = {
-		template = 0
+1501013 = { name="Fitzgerald" culture=irish }
+1501014 = { name="Ó Domhnaill" culture=irish }
+1501015 = { name="Yin" culture=irish used_for_random = no }
+1501016 = { name="Ó hÓgáin" culture=irish }
+1501017 = { name="Ó Síocháin" culture=irish }
+1501018 = { name="Ó hAodha" culture=irish }
+1501019 = { name="Dunlap" culture=irish }
+1501020 = { name="West" culture=irish }
+1501021 = { name="White" culture=irish }
+1501022 = { name="Ó Donnobháin" culture=irish }
+1501023 = { name="Joyce" culture=irish 
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 15
+			texture = 0
 			texture_internal = 28
 			emblem = 0
 			color = 0
@@ -2211,103 +2202,103 @@
 		}
 	}
 }
-1501024 = { name="Ó Cathasaigh"culture=irish }
-1501025 = { name="Ó Dubhghaill"culture=irish }
-1501026 = { name="Beckett"culture=irish}
-1501027 = { name="Ó Broin"culture=irish}
-1501028 = { name="Ó Ciarán"culture=irish }
-1501028 = { name="Ó Cearbhalláin"culture=irish }
-1501029 = { name="Ó Murchadha"culture=irish }
-1501030 = { name="Ó Ceallaigh"culture=irish }
-1501031 = { name="Ó Súilleabháin"culture=irish }
-1501032 = { name="Breathnach"culture=irish }
-1501033 = { name="Smith"culture=irish }
-1501034 = { name="Mac Gabhann"culture=irish }
-1501035 = { name="Ó Briain"culture=irish }
-1501036 = { name="Ó Maoilriain"culture=irish }
-1501037 = { name="Ó Conchobhair"culture=irish }
-1501038 = { name="Ó Néill"culture=irish } 
-1501039 = { name="Ó Raghallaigh"culture=irish }
-1501040 = { name="Mac Carthaigh"culture=irish }
-1501041 = { name="Ó Gallchobhair"culture=irish }
-1501042 = { name="Ó Dochartaigh"culture=irish }
-1501043 = { name="Ó Cinnéide"culture=irish }
-1501044 = { name="Ó Loinsigh"culture=irish }
-1501045 = { name="Ó Cuinn"culture=irish }
-1501046 = { name="Ó Mordha"culture=irish }
-1501047 = { name="Mac Lochlainn"culture=irish }
-1501048 = { name="Ó Conghaile"culture=irish } 
-1501049 = { name="Ó Dálaigh"culture=irish }
-1501050 = { name="Ó Conaill"culture=irish }
-1501051 = { name="Mac Liam"culture=irish }
-1501052 = { name="Wilson"culture=irish }
-1501053 = { name="Ó Duinn"culture=irish }
-1501054 = { name="Ó Braonáin"culture=irish }
-1501055 = { name="Ó Coileáin"culture=irish }
-1501056 = { name="Mac Cathmhaoil"culture=irish }
-1501057 = { name="Ó Cléirigh"culture=irish }
-1501058 = { name="Mac Seáin"culture=irish } 
-1501059 = { name="Mac Gearailt"culture=irish }
-1501060 = { name="Mac an Bhreithiún"culture=irish }
-1501061 = { name="Brown"culture=irish }
-1501062 = { name="Mac Giolla Bháin"culture=irish }
-1501063 = { name="Mac Giolla Mháirtín"culture=irish }
-1501064 = { name="Hadaszczok"culture=irish }
-1501065 = { name="Mag Uidhir"culture=irish }
-1501066 = { name="Ó Nualláin"culture=irish }
-1501067 = { name="Ó Floinn"culture=irish }
-1501068 = { name="Mac Tomáis"culture=irish } 
-1501069 = { name="Ó Ceallacháin"culture=irish }
-1501070 = { name="Ó Dufaigh"culture=irish }
-1501071 = { name="Ó Mathúna"culture=irish }
-1501072 = { name="Ó Baoill"culture=irish }
-1501073 = { name="Ó hÉalaighthe"culture=irish }
-1501074 = { name="Mac Giolla Bháin"culture=irish }
-1501075 = { name="Mac Suibhne"culture=irish }
-1501076 = { name="Caomhánach"culture=irish }
-1501077 = { name="Power"culture=irish }
-1501078 = { name="Mac Craith"culture=irish } 
-1501079 = { name="Ó Móráin"culture=irish }
-1501080 = { name="Mac Brádaigh"culture=irish }
-1501081 = { name="Stiobhard"culture=irish }
-1501082 = { name="Ó Cathasaigh"culture=irish }
-1501083 = { name="Ó Foghladh"culture=irish }
-1501084 = { name="Fitzpatrick"culture=irish }
-1501085 = { name="Mac Giolla Phádraig"culture=irish }
-1501086 = { name="Ó Laoghaire"culture=irish }
-1501087 = { name="Mac Domhnaill"culture=irish }
-1501088 = { name="Mac Mathúna"culture=irish } 
-1501089 = { name="Ó Donnghaile"culture=irish }
-1501090 = { name="Ó Riagáin"culture=irish }
-1501091 = { name="Ó Donnabháin"culture=irish }
-1501092 = { name="Burns"culture=irish }
-1501093 = { name="Ó Flannagáin"culture=irish }
-1501094 = { name="Ó Maoláin"culture=irish }
-1501095 = { name="Barry"culture=irish }
-1501096 = { name="Ó Catháin"culture=irish }
-1501097 = { name="Robinson"culture=irish }
-1501098 = { name="Cunningham"culture=irish } 
-1501099 = { name="Ó Gríofa"culture=irish }
-1501100 = { name="Ó Cionaoith"culture=irish }
-1501101 = { name="Ó Faoláin"culture=irish }
-1501102 = { name="Ó Laighin"culture=irish }
-1501103 = { name="Reid"culture=irish }
-1501104 = { name="Graham"culture=irish }
-1501105 = { name="Ó hUiginn"culture=irish }
-1501106 = { name="Ó Cuilinn"culture=irish }
-1501107 = { name="Mac Catháin"culture=irish }
-1501108 = { name="Ó Cionga"culture=irish }
-1501109 = { name="Meagher"culture=irish }
-1501110 = { name="Mac Cionaoith"culture=irish }
-1501111 = { name="Scott"culture=irish }
-1501112 = { name="Mac Giolla Mhaoil"culture=irish }
-1501113 = { name="Ó Caoimh"culture=irish }
-1501114 = { name="Mac Conmara"culture=irish }
-1501115 = { name="Mac Diarmada"culture=irish }
-1501116 = { name="Ó Maolomhnaigh"culture=irish }
-1501117 = { name="Ó Ruairc"culture=irish }
-1501118 = { name="Ó Buachalla"culture=irish }
-1501119 = { name="Ó Dubhuir"culture=irish }
+1501024 = { name="Ó Cathasaigh" culture=irish }
+1501025 = { name="Ó Dubhghaill" culture=irish }
+1501026 = { name="Beckett" culture=irish}
+1501027 = { name="Ó Broin" culture=irish}
+1501028 = { name="Ó Ciarán" culture=irish }
+1501028 = { name="Ó Cearbhalláin" culture=irish }
+1501029 = { name="Ó Murchadha" culture=irish }
+1501030 = { name="Ó Ceallaigh" culture=irish }
+1501031 = { name="Ó Súilleabháin" culture=irish }
+1501032 = { name="Breathnach" culture=irish }
+1501033 = { name="Smith" culture=irish }
+1501034 = { name="Mac Gabhann" culture=irish }
+1501035 = { name="Ó Briain" culture=irish }
+1501036 = { name="Ó Maoilriain" culture=irish }
+1501037 = { name="Ó Conchobhair" culture=irish }
+1501038 = { name="Ó Néill" culture=irish } 
+1501039 = { name="Ó Raghallaigh" culture=irish }
+1501040 = { name="Mac Carthaigh" culture=irish }
+1501041 = { name="Ó Gallchobhair" culture=irish }
+1501042 = { name="Ó Dochartaigh" culture=irish }
+1501043 = { name="Ó Cinnéide" culture=irish }
+1501044 = { name="Ó Loinsigh" culture=irish }
+1501045 = { name="Ó Cuinn" culture=irish }
+1501046 = { name="Ó Mordha" culture=irish }
+1501047 = { name="Mac Lochlainn" culture=irish }
+1501048 = { name="Ó Conghaile" culture=irish } 
+1501049 = { name="Ó Dálaigh" culture=irish }
+1501050 = { name="Ó Conaill" culture=irish }
+1501051 = { name="Mac Liam" culture=irish }
+1501052 = { name="Wilson" culture=irish }
+1501053 = { name="Ó Duinn" culture=irish }
+1501054 = { name="Ó Braonáin" culture=irish }
+1501055 = { name="Ó Coileáin" culture=irish }
+1501056 = { name="Mac Cathmhaoil" culture=irish }
+1501057 = { name="Ó Cléirigh" culture=irish }
+1501058 = { name="Mac Seáin" culture=irish } 
+1501059 = { name="Mac Gearailt" culture=irish }
+1501060 = { name="Mac an Bhreithiún" culture=irish }
+1501061 = { name="Brown" culture=irish }
+1501062 = { name="Mac Giolla Bháin" culture=irish }
+1501063 = { name="Mac Giolla Mháirtín" culture=irish }
+1501064 = { name="Hadaszczok" culture=irish }
+1501065 = { name="Mag Uidhir" culture=irish }
+1501066 = { name="Ó Nualláin" culture=irish }
+1501067 = { name="Ó Floinn" culture=irish }
+1501068 = { name="Mac Tomáis" culture=irish } 
+1501069 = { name="Ó Ceallacháin" culture=irish }
+1501070 = { name="Ó Dufaigh" culture=irish }
+1501071 = { name="Ó Mathúna" culture=irish }
+1501072 = { name="Ó Baoill" culture=irish }
+1501073 = { name="Ó hÉalaighthe" culture=irish }
+1501074 = { name="Mac Giolla Bháin" culture=irish }
+1501075 = { name="Mac Suibhne" culture=irish }
+1501076 = { name="Caomhánach" culture=irish }
+1501077 = { name="Power" culture=irish }
+1501078 = { name="Mac Craith" culture=irish } 
+1501079 = { name="Ó Móráin" culture=irish }
+1501080 = { name="Mac Brádaigh" culture=irish }
+1501081 = { name="Stiobhard" culture=irish }
+1501082 = { name="Ó Cathasaigh" culture=irish }
+1501083 = { name="Ó Foghladh" culture=irish }
+1501084 = { name="Fitzpatrick" culture=irish }
+1501085 = { name="Mac Giolla Phádraig" culture=irish }
+1501086 = { name="Ó Laoghaire" culture=irish }
+1501087 = { name="Mac Domhnaill" culture=irish }
+1501088 = { name="Mac Mathúna" culture=irish } 
+1501089 = { name="Ó Donnghaile" culture=irish }
+1501090 = { name="Ó Riagáin" culture=irish }
+1501091 = { name="Ó Donnabháin" culture=irish }
+1501092 = { name="Burns" culture=irish }
+1501093 = { name="Ó Flannagáin" culture=irish }
+1501094 = { name="Ó Maoláin" culture=irish }
+1501095 = { name="Barry" culture=irish }
+1501096 = { name="Ó Catháin" culture=irish }
+1501097 = { name="Robinson" culture=irish }
+1501098 = { name="Cunningham" culture=irish } 
+1501099 = { name="Ó Gríofa" culture=irish }
+1501100 = { name="Ó Cionaoith" culture=irish }
+1501101 = { name="Ó Faoláin" culture=irish }
+1501102 = { name="Ó Laighin" culture=irish }
+1501103 = { name="Reid" culture=irish }
+1501104 = { name="Graham" culture=irish }
+1501105 = { name="Ó hUiginn" culture=irish }
+1501106 = { name="Ó Cuilinn" culture=irish }
+1501107 = { name="Mac Catháin" culture=irish }
+1501108 = { name="Ó Cionga" culture=irish }
+1501109 = { name="Meagher" culture=irish }
+1501110 = { name="Mac Cionaoith" culture=irish }
+1501111 = { name="Scott" culture=irish }
+1501112 = { name="Mac Giolla Mhaoil" culture=irish }
+1501113 = { name="Ó Caoimh" culture=irish }
+1501114 = { name="Mac Conmara" culture=irish }
+1501115 = { name="Mac Diarmada" culture=irish }
+1501116 = { name="Ó Maolomhnaigh" culture=irish }
+1501117 = { name="Ó Ruairc" culture=irish }
+1501118 = { name="Ó Buachalla" culture=irish }
+1501119 = { name="Ó Dubhuir" culture=irish }
 
 1534000 = { name="Marathe" culture=quebecois }
 1534001 = { name="Fortier" culture=quebecois }
@@ -3052,10 +3043,9 @@
 
 
 1601000 = { name="Rendower" culture=northerner
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 15
+			texture = 0
 			texture_internal = 9
 			emblem = 0
 			color = 0
@@ -3166,11 +3156,11 @@
 1601100 = { name="Davison" culture=northerner }
 1601101 = { name="Rainwood" culture=northerner
 	coat_of_arms = { 
-		religion = glorian
+		religion = pagan
 		template = 0
 		layer = {
 			texture = 0
-			texture_internal = 15
+			texture_internal = 7
 			emblem = 0
 			color = 0
 			color = 0
@@ -3180,10 +3170,9 @@
 }
 
 1607000 = { name="Morrison" culture=ulsterman 
-	coat_of_arms = {
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 15
+			texture = 0
 			texture_internal = 26
 			emblem = 0
 			color = 0
@@ -3460,11 +3449,11 @@
 
 1701000 = { name="Boulton" culture=midlander 
 	coat_of_arms = { 
-		religion = glorian
+		religion = pagan
 		template = 0
 		layer = {
 			texture = 0
-			texture_internal = 14
+			texture_internal = 7
 			emblem = 0
 			color = 0
 			color = 0
@@ -3476,11 +3465,11 @@
 1701002 = { name="Babwin" culture=midlander }
 1701003 = { name="FitzSpatstone" culture=midlander 
 	coat_of_arms = { 
-		religion = glorian
+		religion = pagan
 		template = 0
 		layer = {
 			texture = 0
-			texture_internal = 2
+			texture_internal = 8
 			emblem = 0
 			color = 0
 			color = 0
@@ -3834,45 +3823,46 @@
 1727111 = { name="Shatochin" culture=belarusian}
 
 1729000 = { name="Thirummukhathu-Varma" culture=malayali used_for_random = no
-            coat_of_arms = { 
-			religion = hindu
-		    template = 0
-		    layer = {
-			texture = 2
+	coat_of_arms = { 
+		religion = nondescript_eastern
+		template = 0
+		layer = {
+			texture = 0
 			texture_internal = 2
 			emblem = 0
 			color = 0
 			color = 0
 			color = 0
 		}
-	}}
+	}
+}
 1729001 = { name="Chmbaksserry" culture=malayali used_for_random = no}
 1729002 = { name="Panikkar" culture=malayali used_for_random = no
-            coat_of_arms = { 
-			religion = hindu
-		    template = 0
-		    layer = {
-			texture = 2
+	coat_of_arms = { 
+		religion = nondescript_eastern
+		template = 0
+		layer = {
+			texture = 0
 			texture_internal = 3
 			emblem = 0
 			color = 0
 			color = 0
 			color = 0
-		}}
+		}
 	}
+}
 1729003 = { name="Plakkiya" culture=malayali used_for_random = no
-            coat_of_arms = { 
-			religion = hindu
-		    template = 0
-		    layer = {
-			texture = 2
-			texture_internal = 4
+	coat_of_arms = {		religion=nondescript_christian		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 2
 			emblem = 0
 			color = 0
 			color = 0
 			color = 0
-		}}
+		}
 	}
+}
 1729004 = { name="Nambuthiri" culture=malayali used_for_random = no}
 1729005 = { name="Nayer" culture=malayali used_for_random = no}
 1729006 = { name="Pukkaya" culture=malayali used_for_random = no}
@@ -4681,10 +4671,9 @@
 
 1801000 = { name="Byron-Englesea" culture=scouse }
 1801001 = { name="Harrison" culture=scouse 
-	coat_of_arms = {
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 15
+			texture = 0
 			texture_internal = 23
 			emblem = 0
 			color = 0
@@ -4695,11 +4684,11 @@
 }
 1801002 = { name="Ganumaga" culture=scouse used_for_random = no
 	coat_of_arms = { 
-		religion = glorian
+		religion = pagan
 		template = 0
 		layer = {
 			texture = 0
-			texture_internal = 16
+			texture_internal = 9
 			emblem = 0
 			color = 0
 			color = 0
@@ -4708,10 +4697,9 @@
 	}
 }
 1801003 = { name="Baker" culture=scouse
-	coat_of_arms = {
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 15
+			texture = 0
 			texture_internal = 21
 			emblem = 0
 			color = 0
@@ -4722,10 +4710,9 @@
 }
 1801004 = { name="Shaffer" culture=scouse}
 1801005 = { name="Ableson" culture=scouse
-	coat_of_arms = {
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 15
+			texture = 0
 			texture_internal = 22
 			emblem = 0
 			color = 0
@@ -4735,12 +4722,11 @@
 	}
 }
 1801006 = { name="Lees" culture=scouse 
-	coat_of_arms = {
-		template = 0
-		religion = glorian
+	coat_of_arms = {		religion=nondescript_christian		template = 0
+		religion = pagan
 		layer = {
-			texture = 15
-			texture_internal = 24
+			texture = 0
+			texture_internal = 10
 			emblem = 0
 			color = 0
 			color = 0
@@ -4946,12 +4932,10 @@
 1802099 = { name="Melkumyan" culture=armenian }
 1802100 = { name="Atoyan" culture=armenian }
 1802101 = { name="Ghazaryan" culture=armenian 
-	coat_of_arms = { 
-		religion = miaphysite
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 23
-			texture_internal = 1
+			texture = 0
+			texture_internal = 14
 			emblem = 0
 			color = 0
 			color = 0
@@ -4960,12 +4944,10 @@
 	}
 }
 1802102 = { name="Sparapet" culture=armenian 
-	coat_of_arms = { 
-		religion = miaphysite
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 23
-			texture_internal = 2
+			texture = 0
+			texture_internal = 15
 			emblem = 0
 			color = 0
 			color = 0
@@ -4975,12 +4957,10 @@
 }
 1802103 = { name="Aziz" culture=armenian }
 1802104 = { name="Shiraz" culture=armenian 
-	coat_of_arms = { 
-		religion = miaphysite
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 23
-			texture_internal = 6
+			texture = 0
+			texture_internal = 16
 			emblem = 0
 			color = 0
 			color = 0
@@ -4989,12 +4969,10 @@
 	}
 }
 1802105 = { name="Hamazguni" culture=armenian 
-	coat_of_arms = { 
-		religion = miaphysite
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 23
-			texture_internal = 3
+			texture = 0
+			texture_internal = 4
 			emblem = 0
 			color = 0
 			color = 0
@@ -5006,11 +4984,9 @@
 1802107 = { name="Bogosian" culture=armenian used_for_random=no }
 1802108 = { name="Margosyan" culture=armenian }
 1802109 = { name="Mehruni" culture=armenian 
-	coat_of_arms = { 
-		religion = miaphysite
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 24
+			texture = 04
 			texture_internal = 0
 			emblem = 0
 			color = 0
@@ -5022,7 +4998,7 @@
 
 1803000 = { name="Hizir" culture=dom 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
 			texture = 0
@@ -5398,12 +5374,10 @@
 
 1818000 = { name="Shemesh" culture=sabra }
 1818001 = { name="Biton" culture=sabra 
-	coat_of_arms = { 
-		religion = ivri
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 2
-			texture_internal = 5
+			texture = 0
+			texture_internal = 37
 			emblem = 0
 			color = 0
 			color = 0
@@ -5434,12 +5408,10 @@
 1818022 = { name="Aynaw" culture=sabra }
 1818023 = { name="Shibru-Sivan" culture=sabra }
 1818024 = { name="Alamo" culture=sabra 
-	coat_of_arms = { 
-		religion = ivri
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 2
-			texture_internal = 1
+			texture = 0
+			texture_internal = 33
 			emblem = 0
 			color = 0
 			color = 0
@@ -5473,12 +5445,10 @@
 1818048 = { name="Azulay" culture=sabra } 
 1818049 = { name="Nesher" culture=sabra }
 1818050 = { name="Ben-Yehuda" culture=sabra
-	coat_of_arms = { 
-		religion = ivri
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 2
-			texture_internal = 2
+			texture = 0
+			texture_internal = 34
 			emblem = 0
 			color = 0
 			color = 0
@@ -5510,12 +5480,10 @@
 1818072 = { name="Rosenberg" culture=sabra }
 1818073 = { name="Abuhatzeira" culture=sabra }
 1818074 = { name="Ben-Avi" culture=sabra 
-	coat_of_arms = { 
-		religion = ivri
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 2
-			texture_internal = 3
+			texture = 0
+			texture_internal = 35
 			emblem = 0
 			color = 0
 			color = 0
@@ -6166,12 +6134,10 @@
 
 1822000 = { name="Soloveitchik" culture=yiddish }
 1822001 = { name="Odesser" culture=yiddish 
-	coat_of_arms = { 
-		religion = ivri
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 2
-			texture_internal = 4
+			texture = 0
+			texture_internal = 36
 			emblem = 0
 			color = 0
 			color = 0
@@ -6190,12 +6156,10 @@
 1822010 = { name="Teitelbaum" culture=yiddish }
 1822011 = { name="Kohn" culture=yiddish }
 1822012 = { name="Rapoport" culture=yiddish
-	coat_of_arms = { 
-		religion = haredi
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 2
-			texture_internal = 0
+			texture = 0
+			texture_internal = 32
 			emblem = 0
 			color = 0
 			color = 0
@@ -6294,11 +6258,11 @@
 1824005 = { name="Al-Shuqayri" culture=filastini }
 1824006 = { name="Nusaybah" culture=filastini 
 	coat_of_arms = { 
-		religion=sunni
+		religion=nondescript_muslim
 		template = 0
 		layer = {
-			texture = 1
-			texture_internal = 11
+			texture = 0
+			texture_internal = 50
 			emblem = 0
 			color = 0
 			color = 0
@@ -6313,14 +6277,13 @@
 1824011 = { name="Darwish" culture=filastini }
 1824012 = { name="Said" culture=filastini }
 1824013 = { name="Tarif" culture=filastini	religion=druze }
-#The Hashemites of Jordan
-1824014 = { name="Al-Ahmar" culture=filastini
+1824014 = { name="Al-Ahmar" culture=filastini #The Hashemites of Jordan
 	coat_of_arms = { 
-		religion=ruhi
+		religion=nondescript_muslim
 		template = 0
 		layer = {
-			texture = 1
-			texture_internal = 0
+			texture = 0
+			texture_internal = 40
 			emblem = 0
 			color = 0
 			color = 0
@@ -6401,7 +6364,7 @@
 1824085 = { name="Nasrallah" culture=filastini }
 1824086 = { name="Anabtawi" culture=filastini 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
 			texture = 0
@@ -6417,11 +6380,11 @@
 1825000 = { name="al-Huwaytat" culture=badawi }
 1825001 = { name="al-Dulaymi" culture=badawi 
 	coat_of_arms = { 
-		religion=sunni
+		religion=nondescript_muslim
 		template = 0
 		layer = {
-			texture = 1
-			texture_internal = 13
+			texture = 0
+			texture_internal = 52
 			emblem = 0
 			color = 0
 			color = 0
@@ -6431,11 +6394,11 @@
 }
 1825002 = { name="al-Tirabin" culture=badawi used_for_random=no
 	coat_of_arms = { 
-		religion=sunni
+		religion=nondescript_muslim
 		template = 0
 		layer = {
-			texture = 1
-			texture_internal = 23
+			texture = 0
+			texture_internal = 61
 			emblem = 0
 			color = 0
 			color = 0
@@ -6539,11 +6502,10 @@
 
 1848000 = { name="Klein" culture=rhenish}
 1848001 = { name="Geyer" culture=rhenish
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 1
+			texture = 0
+			texture_internal = 47
 			emblem = 0
 			color = 0
 			color = 0
@@ -6552,11 +6514,10 @@
 	}
 }
 1848002 = { name="Hoffmann" culture=rhenish used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 63
+			texture = 0
+			texture_internal = 48
 			emblem = 0
 			color = 0
 			color = 0
@@ -6630,11 +6591,10 @@
 1848066 = { name="Stahl" culture=rhenish}
 1848067 = { name="Diehl" culture=rhenish}
 1848068 = { name="Knyphausen" culture=rhenish
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 24
+			texture = 0
+			texture_internal = 49
 			emblem = 0
 			color = 0
 			color = 0
@@ -6647,11 +6607,10 @@
 1848071 = { name="Kramer" culture=rhenish}
 1848072 = { name="Hoch" culture=rhenish}
 1848073 = { name="Becker" culture=rhenish
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 3
+			texture = 0
+			texture_internal = 50
 			emblem = 0
 			color = 0
 			color = 0
@@ -6671,8 +6630,8 @@
 		religion = ivri
 		template = 0
 		layer = {
-			texture = 2
-			texture_internal = 6
+			texture = 0
+			texture_internal = 46
 			emblem = 0
 			color = 0
 			color = 0
@@ -6734,11 +6693,10 @@
 1848133 = { name="Noether" culture=rhenish used_for_random=no }
 1848134 = { name="Büchner" culture=rhenish used_for_random=no }
 1848135 = { name="Dilthey" culture=rhenish used_for_random=no 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 28
+			texture = 0
+			texture_internal = 51
 			emblem = 0
 			color = 0
 			color = 0
@@ -6747,11 +6705,10 @@
 	}
 }
 1848136 = { name="von Liebig" culture=rhenish used_for_random=no 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 39
+			texture = 0
+			texture_internal = 52
 			emblem = 0
 			color = 0
 			color = 0
@@ -7331,10 +7288,9 @@
 1901003 = { name="Scott" culture=lowlander }
 1901004 = { name="Carpenter" culture=lowlander }
 1901005 = { name="Stewart" culture=lowlander 
-	coat_of_arms = {
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 15
+			texture = 0
 			texture_internal = 18
 			emblem = 0
 			color = 0
@@ -7404,6 +7360,18 @@
 1901064 = { name="McEachern" culture=lowlander }
 1901065 = { name="McPherson" culture=lowlander }
 1901066 = { name="Lawlor" culture=lowlander used_for_random=no }
+1901067 = { name="Stewart" culture=lowlander 
+	coat_of_arms = {		religion=nondescript_christian		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 9
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 1911000 = { name= "Saryglar" culture=tuvan }
 1911001 = { name= "Oorzhak" culture=tuvan }
@@ -7490,12 +7458,10 @@
 1912006 = {name ="Hussein" culture=masri }
 1912007 = {name ="El Tawil" culture=masri }
 1912008 = {name ="Mahfouz" culture=masri  used_for_random=no
-	coat_of_arms = { 
-		religion = miaphysite
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 23
-			texture_internal = 4
+			texture = 0
+			texture_internal = 7
 			emblem = 0
 			color = 0
 			color = 0
@@ -7516,11 +7482,11 @@
 1912019 = {name ="Negm" culture=masri }
 1912020 = {name ="Mustagab" culture=masri   used_for_random=no
 	coat_of_arms = { 
-		religion=sunni
+		religion=nondescript_muslim
 		template = 0
 		layer = {
-			texture = 1
-			texture_internal = 27
+			texture = 0
+			texture_internal = 33
 			emblem = 0
 			color = 0
 			color = 0
@@ -7533,11 +7499,11 @@
 1912023 = {name ="Ghalioungui" culture=masri }
 1912024 = {name ="Hawass" culture=masri used_for_random=no
 	coat_of_arms = { 
-		religion=sunni
+		religion=nondescript_muslim
 		template = 0
 		layer = {
-			texture = 1
-			texture_internal = 19
+			texture = 0
+			texture_internal = 57
 			emblem = 0
 			color = 0
 			color = 0
@@ -7553,13 +7519,13 @@
 1912030 = {name ="El Katatney" culture=masri }
 1912031 = {name ="Chirine" culture=masri }
 1912032 = {name ="Zaghloul" culture=masri }
-1912033 = {name ="Hegazi" culture=masri   used_for_random=no
+1912033 = {name ="Hegazi" culture=masri used_for_random=no
 	coat_of_arms = { 
-		religion=sunni
+		religion=nondescript_muslim
 		template = 0
 		layer = {
-			texture = 1
-			texture_internal = 26
+			texture = 0
+			texture_internal = 36
 			emblem = 0
 			color = 0
 			color = 0
@@ -7616,13 +7582,13 @@
 1912080 = {name ="Shalan" culture=masri }
 1912081 = {name ="el-Dassouki" culture=masri }
 1912082 = {name ="al-Imam" culture=masri }
-1912083 = {name ="al-Sharqi" culture=masri   used_for_random=no
+1912083 = {name ="al-Sharqi" culture=masri used_for_random=no
 	coat_of_arms = { 
-		religion=sunni
+		religion=nondescript_muslim
 		template = 0
 		layer = {
-			texture = 1
-			texture_internal = 24
+			texture = 0
+			texture_internal = 62
 			emblem = 0
 			color = 0
 			color = 0
@@ -7636,13 +7602,13 @@
 1912087 = {name ="Malek" culture=masri }
 1912088 = {name ="El Minshawy" culture=masri }
 1912089 = {name ="Ali" culture=masri }
-1912090 = {name ="Ghaly" culture=masri  used_for_random=no
+1912090 = {name ="Ghaly" culture=masri used_for_random=no
 	coat_of_arms = { 
-		religion=sunni
+		religion=nondescript_muslim
 		template = 0
 		layer = {
-			texture = 1
-			texture_internal = 22
+			texture = 0
+			texture_internal = 60
 			emblem = 0
 			color = 0
 			color = 0
@@ -7651,13 +7617,13 @@
 	}
 }
 1912091 = {name ="el-Hakim" culture=masri }
-1912092 = {name ="el-Tawfik" culture=masri  used_for_random=no
+1912092 = {name ="el-Tawfik" culture=masri used_for_random=no
 	coat_of_arms = { 
-		religion=sunni
+		religion=nondescript_muslim
 		template = 0
 		layer = {
-			texture = 1
-			texture_internal = 20
+			texture = 0
+			texture_internal = 58
 			emblem = 0
 			color = 0
 			color = 0
@@ -7667,11 +7633,11 @@
 }
 1912093 = {name ="el-Gamal" culture=masri 
 	coat_of_arms = { 
-		religion=sunni
+		religion=nondescript_muslim
 		template = 0
 		layer = {
-			texture = 1
-			texture_internal = 29
+			texture = 0
+			texture_internal = 35
 			emblem = 0
 			color = 0
 			color = 0
@@ -7685,11 +7651,11 @@
 1912097 = {name ="Fathy" culture=masri }
 1912098 = {name ="Shabana" culture=masri 
 	coat_of_arms = { 
-		religion=sunni
+		religion=nondescript_muslim
 		template = 0
 		layer = {
-			texture = 1
-			texture_internal = 30
+			texture = 0
+			texture_internal = 39
 			emblem = 0
 			color = 0
 			color = 0
@@ -7701,11 +7667,11 @@
 
 1913000 = {name ="al-Sanussi" culture=libyan   used_for_random=no
 	coat_of_arms = { 
-		religion=sunni
+		religion=nondescript_muslim
 		template = 0
 		layer = {
-			texture = 1
-			texture_internal = 25
+			texture = 0
+			texture_internal = 47
 			emblem = 0
 			color = 0
 			color = 0
@@ -7827,11 +7793,11 @@
 1913112 = { name="Almishri" culture=libyan }
 1913113 = { name="Terbil" culture=libyan 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 6
-			texture_internal = 12
+			texture = 0
+			texture_internal = 55
 			emblem = 0
 			color = 0
 			color = 0
@@ -8068,11 +8034,11 @@
 1917051 = { name="Azuza" culture=eastern_berber }
 1917052 = { name="Menguellet" culture=eastern_berber used_for_random=no
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 6
-			texture_internal = 13
+			texture = 0
+			texture_internal = 56
 			emblem = 0
 			color = 0
 			color = 0
@@ -8170,11 +8136,10 @@
 
 1946000 = { name="Claas" culture=low_saxon}
 1946001 = { name="Altum" culture=low_saxon
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 18
+			texture = 0
+			texture_internal = 47
 			emblem = 0
 			color = 0
 			color = 0
@@ -8201,11 +8166,10 @@
 1946018 = { name="Uhde" culture=low_saxon}
 1946019 = { name="Röwekamp" culture=low_saxon}
 1946020 = { name="Böhrnsen" culture=low_saxon
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 19
+			texture = 0
+			texture_internal = 46
 			emblem = 0
 			color = 0
 			color = 0
@@ -8244,11 +8208,10 @@
 1946049 = { name="Groscurth" culture=low_saxon}
 1946050 = { name="Wobbe" culture=low_saxon}
 1946051 = { name="Eikemeier" culture=low_saxon used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 59
+			texture = 0
+			texture_internal = 45
 			emblem = 0
 			color = 0
 			color = 0
@@ -8377,10 +8340,11 @@
 1946170 = { name="Willenborg" culture=low_saxon}
 1946171 = { name="Ghülam" culture=low_saxon used_for_random = no
 	coat_of_arms = { 
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 16
+			texture = 0
+			texture_internal = 59
 			emblem = 0
 			color = 0
 			color = 0
@@ -8396,11 +8360,10 @@
 1947001 = { name="Nagel" culture=swabian}
 1947002 = { name="von Hohenheim" culture=swabian}
 1947003 = { name="Weissbronner" culture=swabian
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 5
+			texture = 0
+			texture_internal = 48
 			emblem = 0
 			color = 0
 			color = 0
@@ -8413,11 +8376,10 @@
 1947006 = { name="Straub" culture=swabian}
 1947007 = { name="Schopper" culture=swabian}
 1947008 = { name="von Hohenzollern" culture=swabian
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 7
+			texture = 0
+			texture_internal = 49
 			emblem = 0
 			color = 0
 			color = 0
@@ -8431,11 +8393,10 @@
 1947012 = { name="Daimler" culture=swabian}
 1947013 = { name="Schiller" culture=swabian}
 1947014 = { name="Fugger" culture=swabian used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 56
+			texture = 0
+			texture_internal = 50
 			emblem = 0
 			color = 0
 			color = 0
@@ -8477,11 +8438,10 @@
 1947046 = { name="Eckener" culture=swabian}
 1947047 = { name="Scholl" culture=swabian}
 1947048 = { name="Dornier" culture=swabian used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 58
+			texture = 0
+			texture_internal = 51
 			emblem = 0
 			color = 0
 			color = 0
@@ -8562,11 +8522,10 @@
 1947119 = { name="Weller" culture=swabian}
 1947120 = { name="Schmieder" culture=swabian}
 1947121 = { name="von Lechge" culture=swabian used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 8
+			texture = 0
+			texture_internal = 52
 			emblem = 0
 			color = 0
 			color = 0
@@ -8575,11 +8534,10 @@
 	}
 }
 1947122 = { name="Wendlenger" culture=swabian used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 9
+			texture = 0
+			texture_internal = 53
 			emblem = 0
 			color = 0
 			color = 0
@@ -8588,11 +8546,10 @@
 	}
 }
 1947123 = { name="Brüderle" culture=swabian
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 10
+			texture = 0
+			texture_internal = 55
 			emblem = 0
 			color = 0
 			color = 0
@@ -8601,11 +8558,10 @@
 	}
 }
 1947124 = { name="Pfeiffer" culture=swabian
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 11
+			texture = 0
+			texture_internal = 54
 			emblem = 0
 			color = 0
 			color = 0
@@ -8640,11 +8596,10 @@
 1947149 = { name="von Württemberg" culture=swabian}
 
 1948000 = { name="Wulf" culture=ossi
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 6
+			texture = 0
+			texture_internal = 56
 			emblem = 0
 			color = 0
 			color = 0
@@ -8653,11 +8608,10 @@
 	}
 }
 1948001 = { name="Ampelmann" culture=ossi
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 2
+			texture = 1
+			texture_internal = 0
 			emblem = 0
 			color = 0
 			color = 0
@@ -8675,11 +8629,10 @@
 1948009 = { name="Tarnow" culture=ossi}
 1948010 = { name="Kübeck" culture=ossi}
 1948011 = { name="Müller" culture=ossi
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 18
-			texture_internal = 1
+			texture = 0
+			texture_internal = 58
 			emblem = 0
 			color = 0
 			color = 0
@@ -8800,11 +8753,10 @@
 1948122 = { name="Helmholtz" culture=ossi}
 1948123 = { name="Ibrahim" culture=ossi}
 1948124 = { name="von Bülow" culture=ossi
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 25
+			texture = 1
+			texture_internal = 1
 			emblem = 0
 			color = 0
 			color = 0
@@ -8819,11 +8771,10 @@
 1948129 = { name="von Jagow" culture=ossi}
 1948130 = { name="Stoph" culture=ossi}
 1948131 = { name="Jarohs" culture=ossi used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 17
+			texture = 1
+			texture_internal = 2
 			emblem = 0
 			color = 0
 			color = 0
@@ -8834,11 +8785,10 @@
 1948132 = { name="von Thadden" culture=ossi }
 1948133 = { name="Bredel" culture=ossi }
 1948134 = { name="Nipkow" culture=ossi 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 17
-			texture_internal = 27
+			texture = 1
+			texture_internal = 35
 			emblem = 0
 			color = 0
 			color = 0
@@ -8856,11 +8806,10 @@
 1948142 = { name="Stirlitz" culture=ossi }
 
 1949000 = { name="Lahm" culture=bavarian used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 57
+			texture = 1
+			texture_internal = 7
 			emblem = 0
 			color = 0
 			color = 0
@@ -8896,11 +8845,10 @@
 1949026 = { name="von Lindwurm" culture=bavarian}
 1949027 = { name="Dürer" culture=bavarian}
 1949028 = { name="Lochner" culture=bavarian used_for_random=no
-coat_of_arms = { 
-		template = 0
+coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 55
+			texture = 1
+			texture_internal = 6
 			emblem = 0
 			color = 0
 			color = 0
@@ -8911,11 +8859,10 @@ coat_of_arms = {
 1949029 = { name="Händel" culture=bavarian}
 1949030 = { name="Stuhlfauth" culture=bavarian}
 1949031 = { name="Stromer" culture=bavarian used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 4
+			texture = 1
+			texture_internal = 5
 			emblem = 0
 			color = 0
 			color = 0
@@ -8925,11 +8872,10 @@ coat_of_arms = {
 }
 1949032 = { name="Waldman" culture=bavarian}
 1949033 = { name="Mästlin" culture=bavarian used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 64
+			texture = 1
+			texture_internal = 40
 			emblem = 0
 			color = 0
 			color = 0
@@ -8996,11 +8942,10 @@ coat_of_arms = {
 1949090 = { name="Grieser" culture=bavarian}
 1949091 = { name="Mayr" culture=bavarian}
 1949092 = { name="Kraus" culture=bavarian
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 65
+			texture = 1
+			texture_internal = 41
 			emblem = 0
 			color = 0
 			color = 0
@@ -9057,11 +9002,10 @@ coat_of_arms = {
 1949139 = { name="von Mörsbach" culture=bavarian}
 1949140 = { name="Treimer" culture=bavarian}
 1949141 = { name="Kreile" culture=bavarian used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 15
+			texture = 1
+			texture_internal = 42
 			emblem = 0
 			color = 0
 			color = 0
@@ -9070,11 +9014,10 @@ coat_of_arms = {
 	}
 }
 1949142 = { name="von Vohburg" culture=bavarian used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 47
+			texture = 1
+			texture_internal = 43
 			emblem = 0
 			color = 0
 			color = 0
@@ -9083,11 +9026,10 @@ coat_of_arms = {
 	}
 }
 1949143 = { name="Burkhardinger" culture=bavarian used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 48
+			texture = 1
+			texture_internal = 44
 			emblem = 0
 			color = 0
 			color = 0
@@ -9096,11 +9038,10 @@ coat_of_arms = {
 	}
 }
 1949144 = { name="Eichstätter" culture=bavarian used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 51
+			texture = 1
+			texture_internal = 45
 			emblem = 0
 			color = 0
 			color = 0
@@ -9109,11 +9050,10 @@ coat_of_arms = {
 	}
 }
 1949145 = { name="Sonntag" culture=bavarian used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 52
+			texture = 1
+			texture_internal = 46
 			emblem = 0
 			color = 0
 			color = 0
@@ -9122,11 +9062,10 @@ coat_of_arms = {
 	}
 }
 1949146 = { name="Hofer" culture=bavarian used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 22
+			texture = 1
+			texture_internal = 47
 			emblem = 0
 			color = 0
 			color = 0
@@ -9147,11 +9086,10 @@ coat_of_arms = {
 1950009 = { name="von den Driesch" culture=upper_saxon}
 1950010 = { name="Oehme" culture=upper_saxon}
 1950011 = { name="Kimmich" culture=upper_saxon
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 23
+			texture = 1
+			texture_internal = 48
 			emblem = 0
 			color = 0
 			color = 0
@@ -9279,11 +9217,10 @@ coat_of_arms = {
 1950129 = { name="Jahn" culture=upper_saxon}
 1950130 = { name="Kluge" culture=upper_saxon}
 1950131 = { name="Dötzel" culture=upper_saxon
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 20
+			texture = 1
+			texture_internal = 49
 			emblem = 0
 			color = 0
 			color = 0
@@ -9292,11 +9229,10 @@ coat_of_arms = {
 	}
 }
 1950132 = { name="Buchholz" culture=upper_saxon
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 38
+			texture = 1
+			texture_internal = 50
 			emblem = 0
 			color = 0
 			color = 0
@@ -9389,11 +9325,10 @@ coat_of_arms = {
 1951079 = { name="Steiner" culture=austrian}
 1951080 = { name="Heilig" culture=austrian}
 1951081 = { name="Leitner" culture=austrian used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 14
+			texture = 1
+			texture_internal = 51
 			emblem = 0
 			color = 0
 			color = 0
@@ -9402,11 +9337,10 @@ coat_of_arms = {
 	}
 }
 1951082 = { name="Dworschak" culture=austrian
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 21
+			texture = 1
+			texture_internal = 52
 			emblem = 0
 			color = 0
 			color = 0
@@ -9415,11 +9349,10 @@ coat_of_arms = {
 	}
 } 
 1951083 = { name="Gruber" culture=austrian
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 26
+			texture = 1
+			texture_internal = 53
 			emblem = 0
 			color = 0
 			color = 0
@@ -9430,10 +9363,9 @@ coat_of_arms = {
 1951084 = { name="Werndl" culture=austrian }
 1951085 = { name="Winkler" culture=austrian }
 1951086 = { name="Zichy" culture=austrian used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
+			texture = 1
 			texture_internal = 54
 			emblem = 0
 			color = 0
@@ -9443,11 +9375,10 @@ coat_of_arms = {
 	}
 }
 1951087 = { name="von Liechtenstein" culture=austrian used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 12
+			texture = 1
+			texture_internal = 55
 			emblem = 0
 			color = 0
 			color = 0
@@ -9480,11 +9411,10 @@ coat_of_arms = {
 1951110 = { name="Schuster" culture=austrian}
 1951111 = { name="von Melk" culture=austrian used_for_random=no }
 1951112 = { name="Vigauner" culture=austrian used_for_random=no 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 49
+			texture = 1
+			texture_internal = 56
 			emblem = 0
 			color = 0
 			color = 0
@@ -9493,11 +9423,10 @@ coat_of_arms = {
 	}
 }
 1951113 = { name="Bludenzer" culture=austrian used_for_random=no 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 50
+			texture = 1
+			texture_internal = 57
 			emblem = 0
 			color = 0
 			color = 0
@@ -9510,11 +9439,10 @@ coat_of_arms = {
 1952000 = { name="Willmar" culture=luxembourger}
 1952001 = { name="Dupong" culture=luxembourger}
 1952002 = { name="Eyschen" culture=luxembourger used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 62
+			texture = 1
+			texture_internal = 58
 			emblem = 0
 			color = 0
 			color = 0
@@ -9682,10 +9610,9 @@ coat_of_arms = {
 1952160 = { name="Alwé" culture=luxembourger}
 
 1953000 = { name="Barth" culture=schwyzer used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 22
+			texture = 2
 			texture_internal = 0
 			emblem = 0
 			color = 0
@@ -9695,10 +9622,9 @@ coat_of_arms = {
 	}
 }
 1953001 = { name="von Hertenstein" culture=schwyzer used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 22
+			texture = 2
 			texture_internal = 5
 			emblem = 0
 			color = 0
@@ -9708,10 +9634,9 @@ coat_of_arms = {
 	}
 }
 1953002 = { name="Ganz" culture=schwyzer used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 22
+			texture = 2
 			texture_internal = 1
 			emblem = 0
 			color = 0
@@ -9721,11 +9646,10 @@ coat_of_arms = {
 	}
 }
 1953003 = { name="Locher" culture=schwyzer used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 22
-			texture_internal = 8
+			texture = 1
+			texture_internal = 59
 			emblem = 0
 			color = 0
 			color = 0
@@ -9790,10 +9714,9 @@ coat_of_arms = {
 1953058 = { name="Zwyssig" culture=schwyzer}
 1953059 = { name="Indermaur" culture=schwyzer}
 1953060 = { name="Küng" culture=schwyzer used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 22
+			texture = 2
 			texture_internal = 6
 			emblem = 0
 			color = 0
@@ -9843,11 +9766,10 @@ coat_of_arms = {
 1953099 = { name="Hächler" culture=schwyzer}
 1953100 = { name="Zumsteg" culture=schwyzer}
 1953101 = { name="von Graffenried" culture=schwyzer
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 13
+			texture = 1
+			texture_internal = 61
 			emblem = 0
 			color = 0
 			color = 0
@@ -9856,11 +9778,10 @@ coat_of_arms = {
 	}
 }
 1953102 = { name="Nestlé" culture=schwyzer
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 53
+			texture = 1
+			texture_internal = 62
 			emblem = 0
 			color = 0
 			color = 0
@@ -10013,19 +9934,19 @@ coat_of_arms = {
 1956138 = { name="Ghouirgate" culture=moroccan }
 
 1965000 = { name="Thulusdhoo" culture=maldivian used_for_random = no
-            coat_of_arms = { 
-			religion = hindu
-		    template = 0
-		    layer = {
-			texture = 2
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
 			texture_internal = 0
 			emblem = 0
 			color = 0
 			color = 0
 			color = 0
-		}}
+		}
 	}
-
+}
 1968000 = { name="Novák" culture=czech}
 1968001 = { name="Svoboda" culture=czech}
 1968002 = { name="Novotný" culture=czech}
@@ -10055,11 +9976,10 @@ coat_of_arms = {
 1968026 = { name="Toman" culture=czech}
 1968027 = { name="Knotek" culture=czech}
 1968028 = { name="Hašek" culture=czech
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 17
-			texture_internal = 0
+			texture = 1
+			texture_internal = 8
 			emblem = 0
 			color = 0
 			color = 0
@@ -10093,11 +10013,10 @@ coat_of_arms = {
 1968052 = { name="Jebavý" culture=czech}
 1968053 = { name="Terešov" culture=czech}
 1968054 = { name="Krtek" culture=czech
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 17
-			texture_internal = 9
+			texture = 1
+			texture_internal = 17
 			emblem = 0
 			color = 0
 			color = 0
@@ -10129,11 +10048,10 @@ coat_of_arms = {
 1969014 = { name="Malár" culture=slovak}
 1969015 = { name="Czunderlik" culture=slovak}
 1969016 = { name="Škultéty" culture=slovak
-	coat_of_arms = {
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 17
-			texture_internal = 25
+			texture = 1
+			texture_internal = 33
 			emblem = 0
 			color = 0
 			color = 0
@@ -10167,11 +10085,10 @@ coat_of_arms = {
 1969040 = { name="Chrobák" culture=slovak}
 1969041 = { name="Otczenáš" culture=slovak}
 1969042 = { name="Holub" culture=slovak
-	coat_of_arms = {
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 17
-			texture_internal = 26
+			texture = 1
+			texture_internal = 34
 			emblem = 0
 			color = 0
 			color = 0
@@ -10370,11 +10287,10 @@ coat_of_arms = {
 1970178 = { name="Seibel" culture=palatinate }
 1970179 = { name="Siegel" culture=palatinate }
 1970180 = { name="von Slevogt" culture=palatinate used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 40
+			texture = 1
+			texture_internal = 63
 			emblem = 0
 			color = 0
 			color = 0
@@ -10595,11 +10511,10 @@ coat_of_arms = {
 
 
 1998000 = { name="Šturm" culture=sorbian
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 17
-			texture_internal = 2
+			texture = 1
+			texture_internal = 10
 			emblem = 0
 			color = 0
 			color = 0
@@ -10641,11 +10556,10 @@ coat_of_arms = {
 1998032 = { name="Dobrucki" culture=sorbian}
 1998033 = { name="Domašcyn" culture=sorbian}
 1998034 = { name="Ducman" culture=sorbian
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 17
-			texture_internal = 1
+			texture = 1
+			texture_internal = 9
 			emblem = 0
 			color = 0
 			color = 0
@@ -10771,10 +10685,9 @@ coat_of_arms = {
 1998150 = { name="Kobjela" culture=sorbian}
 
 1999000 = { name="Davaz" culture=romansh used_for_random = no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 22
+			texture = 2
 			texture_internal = 2
 			emblem = 0
 			color = 0
@@ -11012,11 +10925,10 @@ coat_of_arms = {
 2000074 = { name="Kowalsczi" culture=kashubian}
 2000075 = { name="Struk" culture=kashubian}
 2000076 = { name="Walãsa" culture=kashubian 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 17
-			texture_internal = 30
+			texture = 1
+			texture_internal = 38
 			emblem = 0
 			color = 0
 			color = 0
@@ -11035,11 +10947,10 @@ coat_of_arms = {
 2000085 = { name="Badziag" culture=kashubian}
 2000086 = { name="Wejer" culture=kashubian}
 2000087 = { name="Barta" culture=kashubian
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 17
-			texture_internal = 28
+			texture = 1
+			texture_internal = 36
 			emblem = 0
 			color = 0
 			color = 0
@@ -11048,11 +10959,10 @@ coat_of_arms = {
 	}
 }
 2000088 = { name="Wenta" culture=kashubian
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 17
-			texture_internal = 31
+			texture = 1
+			texture_internal = 39
 			emblem = 0
 			color = 0
 			color = 0
@@ -11062,11 +10972,10 @@ coat_of_arms = {
 }
 2000089 = { name="Grugel" culture=kashubian}
 2000090 = { name="Kwiatkowsczi" culture=kashubian
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 17
-			texture_internal = 32
+			texture = 1
+			texture_internal = 3
 			emblem = 0
 			color = 0
 			color = 0
@@ -11076,10 +10985,9 @@ coat_of_arms = {
 }
 
 2001000 = { name="Gordon" culture=highlander 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 15
+			texture = 0
 			texture_internal = 11
 			emblem = 0
 			color = 0
@@ -11090,11 +10998,11 @@ coat_of_arms = {
 }
 2001001 = { name="Summerisle" culture=highlander used_for_random = no
 	coat_of_arms = { 
-		religion = glorian
+		religion = pagan
 		template = 0
 		layer = {
 			texture = 0
-			texture_internal = 19
+			texture_internal = 11
 			emblem = 0
 			color = 0
 			color = 0
@@ -11729,11 +11637,10 @@ coat_of_arms = {
 2007223 = { name="Gubernatis" culture=provencal }
 2007224 = { name="Borsalino" culture=provencal }
 2007225 = { name="Pagnol" culture=provencal used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 13
-			texture_internal = 18
+			texture = 2
+			texture_internal = 24
 			emblem = 0
 			color = 0
 			color = 0
@@ -11747,11 +11654,10 @@ coat_of_arms = {
 2007229 = { name="Lepic" culture=provencal }
 2007230 = { name="de Segonzac" culture=provencal }
 2007231 = { name="Romanin" culture=provencal used_for_random = no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 13
-			texture_internal = 28
+			texture = 2
+			texture_internal = 33
 			emblem = 0
 			color = 0
 			color = 0
@@ -11763,11 +11669,10 @@ coat_of_arms = {
 2007233 = { name="Absalem" culture=provencal used_for_random=no }
 2007234 = { name="Des Goudes" culture=provencal used_for_random=no }
 2007235 = { name="Estièni" culture=provencal used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 13
-			texture_internal = 30
+			texture = 2
+			texture_internal = 35
 			emblem = 0
 			color = 0
 			color = 0
@@ -11780,11 +11685,10 @@ coat_of_arms = {
 2007238 = { name="Eyraú" culture=provencal used_for_random=no }
 2007239 = { name="Thran-Boyer" culture=provencal used_for_random=no }
 2007240 = { name="Mari" culture=provencal used_for_random=no 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 13
-			texture_internal = 19
+			texture = 2
+			texture_internal = 25
 			emblem = 0
 			color = 0
 			color = 0
@@ -11799,11 +11703,10 @@ coat_of_arms = {
 2007245 = { name="Zakarian" culture=provencal }
 2007246 = { name="Kassapian" culture=provencal }
 2007666 = { name="Laflamme" culture=provencal used_for_random=no  
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 13
-			texture_internal = 20
+			texture = 2
+			texture_internal = 26
 			emblem = 0
 			color = 0
 			color = 0
@@ -12066,11 +11969,10 @@ coat_of_arms = {
 2008241 = { name="Orcibal" culture=occitan }
 2008242 = { name="Guibal" culture=occitan }
 2008243 = { name="Cariacum" culture=occitan used_for_random = no 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 13
-			texture_internal = 6
+			texture = 2
+			texture_internal = 14
 			emblem = 0
 			color = 0
 			color = 0
@@ -12082,11 +11984,10 @@ coat_of_arms = {
 2008245 = { name="Comte" culture=occitan }
 2008246 = { name="Lautrec" culture=occitan }
 2008247 = { name="Flores" culture = occitan used_for_random = no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 13
-			texture_internal = 26
+			texture = 2
+			texture_internal = 36
 			emblem = 0
 			color = 0
 			color = 0
@@ -12098,11 +11999,10 @@ coat_of_arms = {
 2008249 = { name="Arvioù" culture=occitan }
 2008250 = { name="Cabrilhac" culture=occitan }
 2008251 = { name="Fauré" culture=occitan used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 13
-			texture_internal = 29
+			texture = 2
+			texture_internal = 34
 			emblem = 0
 			color = 0
 			color = 0
@@ -12114,11 +12014,10 @@ coat_of_arms = {
 2008253 = { name="Gautièr" culture=occitan }
 2008254 = { name="Saùbiroux" culture=occitan }
 2008255 = { name="Maíchelùn" culture=occitan
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 13
-			texture_internal = 12
+			texture = 2
+			texture_internal = 19
 			emblem = 0
 			color = 0
 			color = 0
@@ -12127,12 +12026,11 @@ coat_of_arms = {
 	}
 }
 2008256 = { name="Amouroux" culture=occitan }
-2008257 = { name="Lacomár"culture=occitan
-	coat_of_arms = { 
-		template = 0
+2008257 = { name="Lacomár" culture=occitan
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 13
-			texture_internal = 15
+			texture = 2
+			texture_internal = 32
 			emblem = 0
 			color = 0
 			color = 0
@@ -12187,11 +12085,10 @@ coat_of_arms = {
 2009034 = { name="Boyer" culture=parisian }
 2009035 = { name="Garnier" culture=parisian }
 2009036 = { name="Chevalier" culture=parisian used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 13
-			texture_internal = 0
+			texture = 2
+			texture_internal = 8
 			emblem = 0
 			color = 0
 			color = 0
@@ -12379,11 +12276,10 @@ coat_of_arms = {
 2009213 = { name="de Wendel" culture=parisian }
 2009214 = { name="Benaïm" culture=parisian }
 2009215 = { name="Colonna-Walewski" culture=parisian used_for_random = no 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 13
-			texture_internal = 3
+			texture = 2
+			texture_internal = 11
 			emblem = 0
 			color = 0
 			color = 0
@@ -12392,11 +12288,10 @@ coat_of_arms = {
 	}
 }
 2009216 = { name="Georgoceau" culture=parisian used_for_random = no 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 13
-			texture_internal = 1
+			texture = 2
+			texture_internal = 9
 			emblem = 0
 			color = 0
 			color = 0
@@ -12405,11 +12300,10 @@ coat_of_arms = {
 	}
 }
 2009217 = { name="Carrépoint" culture=parisian used_for_random = no 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 13
-			texture_internal = 22
+			texture = 2
+			texture_internal = 28
 			emblem = 0
 			color = 0
 			color = 0
@@ -12419,11 +12313,10 @@ coat_of_arms = {
 }
 2009218 = { name="Picquard" culture=parisian used_for_random = no }
 2009219 = { name="Arbalèste" culture=parisian used_for_random = no 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 13
-			texture_internal = 5
+			texture = 2
+			texture_internal = 13
 			emblem = 0
 			color = 0
 			color = 0
@@ -12436,11 +12329,10 @@ coat_of_arms = {
 2009222 = { name="Dubain" culture=parisian } 
 2009223 = { name="Belloubet" culture=parisian }
 2009224 = { name="Rohmer" culture=parisian
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 13
-			texture_internal = 14
+			texture = 2
+			texture_internal = 21
 			emblem = 0
 			color = 0
 			color = 0
@@ -12450,11 +12342,10 @@ coat_of_arms = {
 }
 2009225 = { name="Burnel" culture=parisian }
 2009226 = { name="Hauteroute" culture=parisian
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 13
-			texture_internal = 11
+			texture = 2
+			texture_internal = 18
 			emblem = 0
 			color = 0
 			color = 0
@@ -12464,11 +12355,10 @@ coat_of_arms = {
 }
 2009227 = { name="Duras" culture=parisian }
 2009228 = { name="Outreterre" culture=parisian used_for_random = no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 13
-			texture_internal = 27
+			texture = 2
+			texture_internal = 32
 			emblem = 0
 			color = 0
 			color = 0
@@ -12478,11 +12368,10 @@ coat_of_arms = {
 }
 2009229 = { name="Dubellay" culture=parisian }
 2009230 = { name="Larchère" culture=parisian used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 13
-			texture_internal = 9
+			texture = 2
+			texture_internal = 16
 			emblem = 0
 			color = 0
 			color = 0
@@ -12500,11 +12389,10 @@ coat_of_arms = {
 2009238 = { name="Larcher" culture=parisian }
 2009239 = { name="Douville" culture=parisian }
 2009240 = { name="Aiglefin" culture=parisian used_for_random=no 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 13
-			texture_internal = 7
+			texture = 2
+			texture_internal = 15
 			emblem = 0
 			color = 0
 			color = 0
@@ -12667,11 +12555,10 @@ coat_of_arms = {
 2010152 = { name="Pouliquen" culture=breton }
 2010153 = { name="Prado" culture=breton }
 2010154 = { name="Prigent" culture=breton
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 13
-			texture_internal = 10
+			texture = 2
+			texture_internal = 17
 			emblem = 0
 			color = 0
 			color = 0
@@ -12743,15 +12630,25 @@ coat_of_arms = {
 2010217 = { name="du Guesclin" culture=breton }
 2010218 = { name="du Plessis d'Argentré" culture=breton }
 2010219 = { name="de Lannarstêr" culture=breton }
-2010220 = { name="Sant-Jakez" culture=breton }
+2010220 = { name="Sant-Jakez" culture=breton 
+	coat_of_arms = {		religion=nondescript_christian		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 13
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2010221 = { name="Karadeg" culture=breton }
 2010222 = { name="Gabriel" culture=breton }
 2010223 = { name="Kozh-Stivelloù" culture=breton used_for_random = no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 13
-			texture_internal = 24
+			texture = 2
+			texture_internal = 30
 			emblem = 0
 			color = 0
 			color = 0
@@ -12762,10 +12659,9 @@ coat_of_arms = {
 2010224 = { name="Yaouank" culture=breton }
 
 2011001 = { name="Zurbriggen" culture=arpitan used_for_random = no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 22
+			texture = 2
 			texture_internal = 7
 			emblem = 0
 			color = 0
@@ -12775,11 +12671,10 @@ coat_of_arms = {
 	}
 }
 2011002 = { name="Eberhardt" culture=arpitan used_for_random = no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 22
-			texture_internal = 9
+			texture = 1
+			texture_internal = 60
 			emblem = 0
 			color = 0
 			color = 0
@@ -12788,10 +12683,9 @@ coat_of_arms = {
 	}
 }
 2011003 = { name="Bavaud" culture=arpitan used_for_random = no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 22
+			texture = 2
 			texture_internal = 3
 			emblem = 0
 			color = 0
@@ -13002,11 +12896,10 @@ coat_of_arms = {
 2011203 = { name="de Varax" culture=arpitan }
 2011204 = { name="de Verboz" culture=arpitan }
 2011205 = { name="Luxière" culture=arpitan
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 13
-			texture_internal = 13
+			texture = 2
+			texture_internal = 20
 			emblem = 0
 			color = 0
 			color = 0
@@ -13016,11 +12909,10 @@ coat_of_arms = {
 }
 2011206 = { name="Aulas" culture=arpitan used_for_random = no }
 2011207 = { name="Vizille" culture=arpitan
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 13
-			texture_internal = 16
+			texture = 2
+			texture_internal = 23
 			emblem = 0
 			color = 0
 			color = 0
@@ -13248,11 +13140,10 @@ coat_of_arms = {
 2012208 = { name="Hamidou" culture=chti }
 2012209 = { name="Boon" culture=chti }
 2012210 = { name="Rivière" culture=chti
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 18
-			texture_internal = 5
+			texture = 0
+			texture_internal = 62
 			emblem = 0
 			color = 0
 			color = 0
@@ -13260,19 +13151,7 @@ coat_of_arms = {
 		}
 	}
 }
-2008211 = { name="Aupetit" culture=chti used_for_random=no
-	coat_of_arms = { 
-		template = 0
-		layer = {
-			texture = 13
-			texture_internal = 4
-			emblem = 0
-			color = 0
-			color = 0
-			color = 0
-		}
-	}
-}
+2008211 = { name="Aupetit" culture=chti used_for_random=no }
 
 2013001 = { name="Albitreccia" culture=corsican }
 2013002 = { name="Borgo" culture=corsican }
@@ -13511,11 +13390,10 @@ coat_of_arms = {
 2013235 = { name="Buttafuoco" culture=corsican }
 2013236 = { name="Sistrières-Murato" culture=corsican }
 2013237 = { name="Bozzi" culture=corsican used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 40
+			texture = 3
+			texture_internal = 12
 			emblem = 0
 			color = 0
 			color = 0
@@ -13585,11 +13463,10 @@ coat_of_arms = {
 2014059 = { name="Elizondo" culture=basque }
 2014060 = { name="Esguerra" culture=basque }
 2014061 = { name="Elorza" culture=basque 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 20
-			texture_internal = 0
+			texture = 3
+			texture_internal = 16
 			emblem = 0
 			color = 0
 			color = 0
@@ -13825,11 +13702,10 @@ coat_of_arms = {
 2015042 = { name="Sanclemente" culture=aragonese }
 2015043 = { name="Buenafuente" culture=aragonese }
 2015044 = { name="Ezquerra" culture=aragonese
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 20
-			texture_internal = 4
+			texture = 3
+			texture_internal = 20
 			emblem = 0
 			color = 0
 			color = 0
@@ -14355,11 +14231,10 @@ coat_of_arms = {
 2016218 = { name="du Plessis d'Argentré" culture=gallo }
 2016219 = { name="de Lannarstêr" culture=gallo }
 2016220 = { name="Vourc'h de la Rochejaquelein" culture=gallo used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 13
-			texture_internal = 2
+			texture = 2
+			texture_internal = 10
 			emblem = 0
 			color = 0
 			color = 0
@@ -14369,11 +14244,10 @@ coat_of_arms = {
 }
 2016221 = { name="Santiano" culture=gallo }
 2016222 = { name="Damasio" culture=gallo used_for_random = no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 13
-			texture_internal = 25
+			texture = 2
+			texture_internal = 31
 			emblem = 0
 			color = 0
 			color = 0
@@ -14443,11 +14317,10 @@ coat_of_arms = {
 2017058 = { name="Monreal" culture=catalan }
 2017059 = { name="Moya" culture=catalan }
 2017060 = { name="Cadafalch" culture=catalan
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 20
-			texture_internal = 9
+			texture = 3
+			texture_internal = 24
 			emblem = 0
 			color = 0
 			color = 0
@@ -14685,11 +14558,10 @@ coat_of_arms = {
 2018035 = { name="Castro" culture=castilian }
 2018036 = { name="Ortiz" culture=castilian }
 2018037 = { name="Blázquez" culture=castilian
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 20
-			texture_internal = 5
+			texture = 3
+			texture_internal = 21
 			emblem = 0
 			color = 0
 			color = 0
@@ -14720,11 +14592,10 @@ coat_of_arms = {
 2018058 = { name="Herrera" culture=castilian }
 2018059 = { name="Peña" culture=castilian }
 2018060 = { name="Carrasco" culture=castilian
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 20
-			texture_internal = 2
+			texture = 3
+			texture_internal = 18
 			emblem = 0
 			color = 0
 			color = 0
@@ -14925,11 +14796,10 @@ coat_of_arms = {
 2019047 = { name="Navas" culture=andalusian }
 2019048 = { name="Alba" culture=andalusian }
 2019049 = { name="Baena" culture=andalusian
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 20
-			texture_internal = 3
+			texture = 3
+			texture_internal = 19
 			emblem = 0
 			color = 0
 			color = 0
@@ -14950,7 +14820,18 @@ coat_of_arms = {
 2019060 = { name="Vela" culture=andalusian }
 2019061 = { name="Espejo" culture=andalusian }
 2019062 = { name="Pineda" culture=andalusian }
-2019063 = { name="Linares" culture=andalusian }
+2019063 = { name="Linares" culture=andalusian 
+	coat_of_arms = {		religion=nondescript_christian		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 26
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2019064 = { name="Villegas" culture=andalusian }
 2019065 = { name="Guerrero" culture=andalusian }
 2019066 = { name="Cortés" culture=andalusian }
@@ -14987,11 +14868,10 @@ coat_of_arms = {
 2019099 = { name="Ávila" culture=andalusian }
 2019100 = { name="Galán" culture=andalusian }
 2019101 = { name="Tenorio" culture=andalusian
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 20
-			texture_internal = 7
+			texture = 3
+			texture_internal = 23
 			emblem = 0
 			color = 0
 			color = 0
@@ -15035,11 +14915,10 @@ coat_of_arms = {
 2020032 = { name="Santamaría" culture=leonese }
 2020033 = { name="Merino" culture=leonese }
 2020034 = { name="Benito" culture=leonese
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 20
-			texture_internal = 10
+			texture = 3
+			texture_internal = 25
 			emblem = 0
 			color = 0
 			color = 0
@@ -15124,11 +15003,10 @@ coat_of_arms = {
 2020109 = { name="Hernando" culture=leonese }
 2020110 = { name="Mateos" culture=leonese }
 2020111 = { name="Moctezuma" culture=leonese
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 20
-			texture_internal = 6
+			texture = 3
+			texture_internal = 22
 			emblem = 0
 			color = 0
 			color = 0
@@ -15752,19 +15630,7 @@ coat_of_arms = {
 2023012 = { name="Baglietto" culture=llanito }
 2023013 = { name="Reyes" culture=llanito }
 2023014 = { name="Parody" culture=llanito }
-2023015 = { name="Linares" culture=llanito
-	coat_of_arms = { 
-		template = 0
-		layer = {
-			texture = 20
-			texture_internal = 8
-			emblem = 0
-			color = 0
-			color = 0
-			color = 0
-		}
-	}
-}
+2023015 = { name="Linares" culture=llanito }
 2023016 = { name="Robba" culture=llanito }
 2023022 = { name="Perera" culture=llanito }
 2023018 = { name="Sanchez" culture=llanito }
@@ -16140,11 +16006,10 @@ coat_of_arms = {
 2024228 = { name="Távora" culture=portuguese }
 2024229 = { name="Teles" culture=portuguese }
 2024230 = { name="Teixeira" culture=portuguese
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 20
-			texture_internal = 1
+			texture = 3
+			texture_internal = 17
 			emblem = 0
 			color = 0
 			color = 0
@@ -16491,11 +16356,10 @@ coat_of_arms = {
 2026170 = { name="di Monfrà" culture=piedmontese }
 2026171 = { name="Morera" culture=piedmontese }
 2026172 = { name="Villafranca-Soissons" culture=piedmontese 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 43
+			texture = 3
+			texture_internal = 15
 			emblem = 0
 			color = 0
 			color = 0
@@ -16764,11 +16628,10 @@ coat_of_arms = {
 2027257 = { name="Passanante" culture=sicilian }
 2027258 = { name="D'Utràntu" culture=sicilian used_for_random = no}
 2027259 = { name="di Giovanni" culture=sicilian used_for_random = no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 21
+			texture = 2
+			texture_internal = 59
 			emblem = 0
 			color = 0
 			color = 0
@@ -16778,10 +16641,11 @@ coat_of_arms = {
 }
 2027260 = { name="Bordonaro" culture=sicilian used_for_random = no
 	coat_of_arms = { 
+		religion = pagan
 		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 26
+			texture = 0
+			texture_internal = 12
 			emblem = 0
 			color = 0
 			color = 0
@@ -16790,11 +16654,10 @@ coat_of_arms = {
 	}
 }
 2027261 = { name="Meis" culture=sicilian used_for_random = no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 22
+			texture = 2
+			texture_internal = 60
 			emblem = 0
 			color = 0
 			color = 0
@@ -16803,11 +16666,10 @@ coat_of_arms = {
 	}
 }
 2027262 = { name="Liotru" culture=sicilian used_for_random = no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 17
+			texture = 2
+			texture_internal = 38
 			emblem = 0
 			color = 0
 			color = 0
@@ -16816,11 +16678,10 @@ coat_of_arms = {
 	}
 }
 2027263 = { name="Scipio" culture=sicilian used_for_random = no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 25
+			texture = 2
+			texture_internal = 63
 			emblem = 0
 			color = 0
 			color = 0
@@ -16829,11 +16690,10 @@ coat_of_arms = {
 	}
 }
 2027264 = { name="del Ponte" culture=sicilian used_for_random = no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 19
+			texture = 2
+			texture_internal = 57
 			emblem = 0
 			color = 0
 			color = 0
@@ -17064,11 +16924,10 @@ coat_of_arms = {
 2028220 = { name="Di Nola" culture=neapolitan used_for_random = no }
 2028221 = { name="Scalzone" culture=neapolitan }
 2028222 = { name="Capodiferro" culture=neapolitan used_for_random = no 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 1
+			texture = 2
+			texture_internal = 41
 			emblem = 0
 			color = 0
 			color = 0
@@ -17077,11 +16936,10 @@ coat_of_arms = {
 	}
 }
 2028223 = { name="di Gioia" culture=neapolitan used_for_random = no 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 16
+			texture = 2
+			texture_internal = 55
 			emblem = 0
 			color = 0
 			color = 0
@@ -17090,11 +16948,10 @@ coat_of_arms = {
 	}
 }
 2028224 = { name="Sanseverino" culture=neapolitan used_for_random = no 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 18
+			texture = 2
+			texture_internal = 56
 			emblem = 0
 			color = 0
 			color = 0
@@ -17103,11 +16960,10 @@ coat_of_arms = {
 	}
 }
 2028225 = { name="Burbone" culture=neapolitan used_for_random = no 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 15
+			texture = 2
+			texture_internal = 54
 			emblem = 0
 			color = 0
 			color = 0
@@ -17116,11 +16972,10 @@ coat_of_arms = {
 	}
 }
 2028226 = { name="Marsicani" culture=neapolitan used_for_random = no 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 3
+			texture = 2
+			texture_internal = 43
 			emblem = 0
 			color = 0
 			color = 0
@@ -17332,11 +17187,10 @@ coat_of_arms = {
 2029200 = { name="di Grottaferrata" culture=umbrian }
 2029201 = { name="di Tivoli" culture=umbrian used_for_random = no}
 2029202 = { name="Chigi" culture=umbrian
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 39
+			texture = 3
+			texture_internal = 11
 			emblem = 0
 			color = 0
 			color = 0
@@ -17346,11 +17200,10 @@ coat_of_arms = {
 }
 2029203 = { name="Bergamasco" culture=umbrian }
 2029204 = { name="Carlioni" culture=umbrian
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 11
+			texture = 2
+			texture_internal = 50
 			emblem = 0
 			color = 0
 			color = 0
@@ -17359,11 +17212,10 @@ coat_of_arms = {
 	}
 }
 2029205 = { name="della Breccia" culture=umbrian
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 12
+			texture = 2
+			texture_internal = 51
 			emblem = 0
 			color = 0
 			color = 0
@@ -17372,11 +17224,10 @@ coat_of_arms = {
 	}
 }
 2029206 = { name="Massimo" culture=umbrian
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 38
+			texture = 3
+			texture_internal = 10
 			emblem = 0
 			color = 0
 			color = 0
@@ -17385,11 +17236,10 @@ coat_of_arms = {
 	}
 }
 2029207 = { name="del Grillo" culture=umbrian
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 37
+			texture = 3
+			texture_internal = 9
 			emblem = 0
 			color = 0
 			color = 0
@@ -17445,11 +17295,10 @@ coat_of_arms = {
 2030045 = { name="Vannucci" culture=tuscan }
 2030046 = { name="Dati" culture=tuscan }
 2030047 = { name="di Comi" culture=tuscan
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 6
+			texture = 2
+			texture_internal = 46
 			emblem = 0
 			color = 0
 			color = 0
@@ -17492,11 +17341,10 @@ coat_of_arms = {
 2030080 = { name="Massai" culture=tuscan }
 2030081 = { name="Panerai" culture=tuscan }
 2030082 = { name="della Leopolda" culture=tuscan
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 2
+			texture = 2
+			texture_internal = 42
 			emblem = 0
 			color = 0
 			color = 0
@@ -17599,11 +17447,10 @@ coat_of_arms = {
 2030175 = { name="Ardinghelli" culture=tuscan }
 2030176 = { name="Barberini" culture=tuscan }
 2030177 = { name="de Paschi" culture=tuscan used_for_random = no 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 20
+			texture = 2
+			texture_internal = 58
 			emblem = 0
 			color = 0
 			color = 0
@@ -17649,11 +17496,10 @@ coat_of_arms = {
 2030213 = { name="Valori" culture=tuscan }
 2030214 = { name="Vettori" culture=tuscan }
 2030215 = { name="Brin" culture=tuscan
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 14
+			texture = 2
+			texture_internal = 53
 			emblem = 0
 			color = 0
 			color = 0
@@ -17729,11 +17575,10 @@ coat_of_arms = {
 2031058 = { name="Garavaglia" culture=lombard }
 2031059 = { name="Mariani" culture=lombard }
 2031060 = { name="Beretta" culture=lombard
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 9
+			texture = 2
+			texture_internal = 48
 			emblem = 0
 			color = 0
 			color = 0
@@ -17774,10 +17619,9 @@ coat_of_arms = {
 2031091 = { name="Galbiati" culture=lombard }
 2031092 = { name="Mentasti" culture=lombard }
 2031093 = { name="Castelli" culture=lombard used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 22
+			texture = 2
 			texture_internal = 4
 			emblem = 0
 			color = 0
@@ -17927,11 +17771,10 @@ coat_of_arms = {
 2031232 = { name="Terzi" culture=lombard }
 2031233 = { name="Marmondi" culture=lombard }
 2031234 = { name="Agnesi" culture=lombard
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 0
+			texture = 2
+			texture_internal = 40
 			emblem = 0
 			color = 0
 			color = 0
@@ -18057,11 +17900,10 @@ coat_of_arms = {
 2032113 = { name="Corradini" culture=romagnol }
 2032114 = { name="Piccinini" culture=romagnol }
 2032115 = { name="di Classe" culture=romagnol used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 41
+			texture = 3
+			texture_internal = 13
 			emblem = 0
 			color = 0
 			color = 0
@@ -18213,11 +18055,10 @@ coat_of_arms = {
 2032257 = { name="Giolfino" culture=romagnol }
 2032258 = { name="di Rimini" culture=romagnol used_for_random = no}
 2032259 = { name="Alberoni" culture=romagnol
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 8
+			texture = 2
+			texture_internal = 39
 			emblem = 0
 			color = 0
 			color = 0
@@ -18226,11 +18067,10 @@ coat_of_arms = {
 	}
 }
 2032260 = { name="Guareschi" culture=romagnol
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 4
+			texture = 2
+			texture_internal = 44
 			emblem = 0
 			color = 0
 			color = 0
@@ -18467,11 +18307,10 @@ coat_of_arms = {
 2033224 = { name="Giuffra" culture=ligurian }
 2033225 = { name="Rovegno" culture=ligurian }
 2033226 = { name="Grimaldi" culture=ligurian 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 7
+			texture = 2
+			texture_internal = 47
 			emblem = 0
 			color = 0
 			color = 0
@@ -18482,11 +18321,10 @@ coat_of_arms = {
 2033227 = { name="da Varazze" culture=ligurian used_for_random = no}
 2033228 = { name="Delle Piane" culture=ligurian used_for_random = no}
 2033229 = { name="Crêuza" culture=ligurian used_for_random = no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 27
+			texture = 3
+			texture_internal = 0
 			emblem = 0
 			color = 0
 			color = 0
@@ -18495,11 +18333,10 @@ coat_of_arms = {
 	}
 }
 2033230 = { name="Fracchia" culture=ligurian 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 28
+			texture = 3
+			texture_internal = 1
 			emblem = 0
 			color = 0
 			color = 0
@@ -18509,11 +18346,10 @@ coat_of_arms = {
 }
 2033231 = { name="Mameli" culture=ligurian }
 2033232 = { name="Usodimare" culture=ligurian 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 35
+			texture = 2
+			texture_internal = 37
 			emblem = 0
 			color = 0
 			color = 0
@@ -18522,11 +18358,10 @@ coat_of_arms = {
 	}
 }
 2033233 = { name="Embriaco-García" culture=ligurian 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 34
+			texture = 3
+			texture_internal = 7
 			emblem = 0
 			color = 0
 			color = 0
@@ -18535,11 +18370,10 @@ coat_of_arms = {
 	}
 }
 2033234 = { name="d'Oneglia" culture=ligurian 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 36
+			texture = 3
+			texture_internal = 8
 			emblem = 0
 			color = 0
 			color = 0
@@ -18577,11 +18411,10 @@ coat_of_arms = {
 2034027 = { name="Zanirato" culture=venetian }
 2034028 = { name="Vianello" culture=venetian }
 2034029 = { name="Freska-Zozabumba" culture=venetian used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 23
+			texture = 2
+			texture_internal = 61
 			emblem = 0
 			color = 0
 			color = 0
@@ -18787,11 +18620,10 @@ coat_of_arms = {
 2034225 = { name="Ziani" culture=venetian }
 2034226 = { name="Zorzi" culture=venetian }
 2034227 = { name="Morosini" culture=venetian
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 10
+			texture = 2
+			texture_internal = 49
 			emblem = 0
 			color = 0
 			color = 0
@@ -18800,11 +18632,10 @@ coat_of_arms = {
 	}
 }
 2034228 = { name="Mazzuran" culture=venetian
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 13
+			texture = 2
+			texture_internal = 52
 			emblem = 0
 			color = 0
 			color = 0
@@ -18816,11 +18647,10 @@ coat_of_arms = {
 2034230 = { name="Tesei" culture=venetian used_for_random=no}
 2034231 = { name="Florian" culture=venetian used_for_random=no}
 2034232 = { name="Marciani" culture=venetian used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 24
+			texture = 2
+			texture_internal = 62
 			emblem = 0
 			color = 0
 			color = 0
@@ -19021,11 +18851,10 @@ coat_of_arms = {
 2035189 = { name="Scanu" culture=sardinian }
 2035190 = { name="Saragat" culture=sardinian }
 2035191 = { name="Dimonios" culture=sardinian
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 5
+			texture = 2
+			texture_internal = 45
 			emblem = 0
 			color = 0
 			color = 0
@@ -19034,11 +18863,10 @@ coat_of_arms = {
 	}
 }
 2035192 = { name="Maimone" culture=sardinian used_for_random=no 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 30
+			texture = 3
+			texture_internal = 3
 			emblem = 0
 			color = 0
 			color = 0
@@ -19047,11 +18875,10 @@ coat_of_arms = {
 	}
 }
 2035193 = { name="Arba" culture=sardinian used_for_random=no 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 29
+			texture = 3
+			texture_internal = 2
 			emblem = 0
 			color = 0
 			color = 0
@@ -19060,11 +18887,10 @@ coat_of_arms = {
 	}
 }
 2035194 = { name="Cavalcata" culture=sardinian used_for_random=no 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 32
+			texture = 3
+			texture_internal = 5
 			emblem = 0
 			color = 0
 			color = 0
@@ -19073,11 +18899,10 @@ coat_of_arms = {
 	}
 }
 2035195 = { name="Ampsicora" culture=sardinian used_for_random=no 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 31
+			texture = 3
+			texture_internal = 4
 			emblem = 0
 			color = 0
 			color = 0
@@ -19086,11 +18911,10 @@ coat_of_arms = {
 	}
 }
 2035196 = { name="Piras" culture=sardinian used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 33
+			texture = 3
+			texture_internal = 6
 			emblem = 0
 			color = 0
 			color = 0
@@ -19329,11 +19153,10 @@ coat_of_arms = {
 2036227 = { name="Agostinis" culture=friulian }
 2036228 = { name="Cimenti" culture=friulian }
 2036229 = { name="Leschiutta" culture=friulian used_for_random = no 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 19
-			texture_internal = 42
+			texture = 3
+			texture_internal = 14
 			emblem = 0
 			color = 0
 			color = 0
@@ -19589,11 +19412,10 @@ coat_of_arms = {
 2037235 = { name="Tesson" culture=norman }
 2037236 = { name="Wac" culture=norman }
 2037237 = { name="Bovary" culture=norman used_for_random = no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 13
-			texture_internal = 23
+			texture = 2
+			texture_internal = 29
 			emblem = 0
 			color = 0
 			color = 0
@@ -19825,10 +19647,11 @@ coat_of_arms = {
 2038219 = { name="Zribi" culture=francarabe }
 2038220 = { name="Benyazid" culture=francarabe used_for_random = no
 	coat_of_arms = { 
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 13
-			texture_internal = 17
+			texture = 1
+			texture_internal = 1
 			emblem = 0
 			color = 0
 			color = 0
@@ -20170,11 +19993,10 @@ coat_of_arms = {
 2039199 = { name="Spiehler" culture=alsatian }
 2039200 = { name="Billiger" culture=alsatian }
 2039201 = { name="Nguyen-Bloch" culture=alsatian used_for_random = no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 13
-			texture_internal = 8
+			texture = 0
+			texture_internal = 19
 			emblem = 0
 			color = 0
 			color = 0
@@ -20299,11 +20121,11 @@ coat_of_arms = {
 2040113 = { name="Aytmuhambetov" culture=kazakh }
 2040114 = { name="Aiymbetov" culture=kazakh 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 5
-			texture_internal = 12
+			texture = 1
+			texture_internal = 6
 			emblem = 0
 			color = 0
 			color = 0
@@ -20492,11 +20314,11 @@ coat_of_arms = {
 2041134 = { name="Khaddam" culture=turkmen }
 2041135 = { name="Serdar" culture=turkmen used_for_random=no
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 5
-			texture_internal = 9
+			texture = 1
+			texture_internal = 3
 			emblem = 0
 			color = 0
 			color = 0
@@ -20507,11 +20329,11 @@ coat_of_arms = {
 2041136 = { name="Abdylla" culture=turkmen }
 2041137 = { name="Azady" culture=turkmen 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 5
-			texture_internal = 10
+			texture = 1
+			texture_internal = 4
 			emblem = 0
 			color = 0
 			color = 0
@@ -20521,11 +20343,11 @@ coat_of_arms = {
 }
 2041138 = { name="Myradow" culture=turkmen 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 5
-			texture_internal = 11
+			texture = 1
+			texture_internal = 5
 			emblem = 0
 			color = 0
 			color = 0
@@ -20659,11 +20481,11 @@ coat_of_arms = {
 2043068 = { name="At Sellam" culture=chaoui }
 2043069 = { name="Mezaguer" culture=chaoui 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 6
-			texture_internal = 15
+			texture = 1
+			texture_internal = 7
 			emblem = 0
 			color = 0
 			color = 0
@@ -20727,10 +20549,10 @@ coat_of_arms = {
 2044051 = { name="Boudjelid" culture=kabyle }
 2044052 = { name="Lhasnawi" culture=kabyle 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 6
+			texture = 1
 			texture_internal = 16
 			emblem = 0
 			color = 0
@@ -20742,11 +20564,11 @@ coat_of_arms = {
 2044053 = { name="Tabti" culture=kabyle }
 2044054 = { name="Khenniche" culture=kabyle 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 6
-			texture_internal = 21
+			texture = 1
+			texture_internal = 17
 			emblem = 0
 			color = 0
 			color = 0
@@ -20864,11 +20686,10 @@ coat_of_arms = {
 2045107 = { name="Nagysándor" culture=hungarian }
 2045108 = { name="Vécsey" culture=hungarian }
 2045109 = { name="Polgár" culture=hungarian
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 17
-			texture_internal = 4
+			texture = 1
+			texture_internal = 12
 			emblem = 0
 			color = 0
 			color = 0
@@ -20877,11 +20698,10 @@ coat_of_arms = {
 	}
 }
 2045110 = { name="Fehérlófi" culture=hungarian used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 17
-			texture_internal = 3
+			texture = 1
+			texture_internal = 11
 			emblem = 0
 			color = 0
 			color = 0
@@ -20891,11 +20711,10 @@ coat_of_arms = {
 }
 2045111 = { name="Zsemlye" culture=hungarian }
 2045112 = { name="Bálinth" culture=hungarian
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 17
-			texture_internal = 5
+			texture = 1
+			texture_internal = 13
 			emblem = 0
 			color = 0
 			color = 0
@@ -20904,11 +20723,10 @@ coat_of_arms = {
 	}
 }
 2045113 = { name="Bábel" culture=hungarian used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 17
-			texture_internal = 6
+			texture = 1
+			texture_internal = 14
 			emblem = 0
 			color = 0
 			color = 0
@@ -20917,11 +20735,10 @@ coat_of_arms = {
 	}
 }
 2045114 = { name="Toldi" culture=hungarian used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 17
-			texture_internal = 7
+			texture = 1
+			texture_internal = 15
 			emblem = 0
 			color = 0
 			color = 0
@@ -20930,11 +20747,10 @@ coat_of_arms = {
 	}
 }
 2045115 = { name="Bem" culture=hungarian used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 17
-			texture_internal = 8
+			texture = 1
+			texture_internal = 16
 			emblem = 0
 			color = 0
 			color = 0
@@ -20943,11 +20759,10 @@ coat_of_arms = {
 	}
 }
 2045116 = { name="Kinizsi" culture=hungarian used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 17
-			texture_internal = 10
+			texture = 1
+			texture_internal = 18
 			emblem = 0
 			color = 0
 			color = 0
@@ -20956,11 +20771,10 @@ coat_of_arms = {
 	}
 }
 2045117 = { name="Lencsi" culture=hungarian used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 17
-			texture_internal = 11
+			texture = 1
+			texture_internal = 19
 			emblem = 0
 			color = 0
 			color = 0
@@ -21074,11 +20888,10 @@ coat_of_arms = {
 2046101 = { name="Romanescu" culture=romanian }
 2046102 = { name="din Timisoara" culture=romanian used_for_random=no}
 2046103 = { name="Dragescu" culture=romanian 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 17
-			texture_internal = 18
+			texture = 1
+			texture_internal = 26
 			emblem = 0
 			color = 0
 			color = 0
@@ -21087,11 +20900,10 @@ coat_of_arms = {
 	}
 }
 2046104 = { name="Cantacuzino" culture=romanian used_for_random=no
-	coat_of_arms = {
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 17
-			texture_internal = 21
+			texture = 1
+			texture_internal = 29
 			emblem = 0
 			color = 0
 			color = 0
@@ -21716,7 +21528,7 @@ coat_of_arms = {
 
 2052000 = { name="Osmanoghlu" culture=central_anatolian #The Actual Osmanoghlu
 	coat_of_arms = { 
-		religion = naqshbandi
+		religion = nondescript_muslim
 		template = 0
 		layer = {
 			texture = 0
@@ -21730,7 +21542,7 @@ coat_of_arms = {
 }
 2052001 = { name="Demir" culture=central_anatolian 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
 			texture = 0
@@ -21744,7 +21556,7 @@ coat_of_arms = {
 }
 2052002 = { name="Günesh" culture=central_anatolian 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
 			texture = 0
@@ -21759,7 +21571,7 @@ coat_of_arms = {
 2052003 = { name="Sabanci" culture=central_anatolian }
 2052004 = { name="Baylan" culture=central_anatolian 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
 			texture = 0
@@ -21773,7 +21585,7 @@ coat_of_arms = {
 }
 2052005 = { name="Karaca" culture=central_anatolian 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
 			texture = 0
@@ -21787,7 +21599,7 @@ coat_of_arms = {
 }
 2052006 = { name="Tanriverdi" culture=central_anatolian used_for_random=no
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
 			texture = 0
@@ -21801,7 +21613,7 @@ coat_of_arms = {
 }
 2052007 = { name="Yilmaz" culture=central_anatolian 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
 			texture = 0
@@ -22013,7 +21825,7 @@ coat_of_arms = {
 2052205 = { name="Kekilli" culture=central_anatolian }
 2052206 = { name="Varil" culture=central_anatolian used_for_random=no 
 	coat_of_arms = {
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
 			texture = 0
@@ -22480,10 +22292,10 @@ coat_of_arms = {
 2054211 = { name="Çätin" culture=azeri }
 2054212 = { name="Azimzade" culture=azeri 
 	coat_of_arms = {
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 7
+			texture = 0
 			texture_internal = 0
 			emblem = 0
 			color = 0
@@ -22495,7 +22307,7 @@ coat_of_arms = {
 
 2055000 = { name="Özdemir" culture=west_anatolian 
 	coat_of_arms = {
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
 			texture = 0
@@ -22509,7 +22321,7 @@ coat_of_arms = {
 }
 2055001 = { name="Shahenk" culture=west_anatolian 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
 			texture = 0
@@ -22523,7 +22335,7 @@ coat_of_arms = {
 }
 2055002 = { name="Ulukaya" culture=west_anatolian 
 	coat_of_arms = {
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
 			texture = 0
@@ -22538,7 +22350,7 @@ coat_of_arms = {
 2055003 = { name="Polat" culture=west_anatolian }
 2055004 = { name="Atçali" culture=west_anatolian 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
 			texture = 0
@@ -22552,7 +22364,7 @@ coat_of_arms = {
 }
 2055005 = { name="Kemal" culture=west_anatolian 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
 			texture = 0
@@ -22638,7 +22450,7 @@ coat_of_arms = {
 2055077 = { name="Akin" culture=west_anatolian }
 2055078 = { name="Gül" culture=west_anatolian 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
 			texture = 0
@@ -22666,7 +22478,7 @@ coat_of_arms = {
 2055092 = { name="Türk" culture=west_anatolian }
 2055093 = { name="Sarikaya" culture=west_anatolian 
 	coat_of_arms = {
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
 			texture = 0
@@ -22797,7 +22609,7 @@ coat_of_arms = {
 2055210 = { name="Tantal" culture=west_anatolian used_for_random=no }
 2055211 = { name="Gündoghdu" culture=west_anatolian used_for_random=no 
 	coat_of_arms = {
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
 			texture = 0
@@ -22888,7 +22700,7 @@ coat_of_arms = {
 2057002 = { name="Namik" culture=rumelian }
 2057003 = { name="Mehmetçik" culture=rumelian 
 	coat_of_arms = {
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
 			texture = 0
@@ -22907,7 +22719,7 @@ coat_of_arms = {
 2057008 = { name="Namik" culture=rumelian }
 2057009 = { name="Osmanoghlu" culture=rumelian #The 2666 Ones
 	coat_of_arms = { 
-		religion = naqshbandi
+		religion = nondescript_muslim
 		template = 0
 		layer = {
 			texture = 0
@@ -23124,11 +22936,10 @@ coat_of_arms = {
 2057212 = { name="Telli" culture=rumelian }
 
 2058000 = { name="Coudenhove" culture=flemish
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 18
-			texture_internal = 0
+			texture = 0
+			texture_internal = 57
 			emblem = 0
 			color = 0
 			color = 0
@@ -23341,11 +23152,10 @@ coat_of_arms = {
 2059001 = { name="van Zuylen" culture=dutch}
 2059002 = { name="Zahavi" culture=dutch used_for_random = no}
 2059003 = { name="van Voorst" culture=dutch used_for_random = no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 61
+			texture = 3
+			texture_internal = 27
 			emblem = 0
 			color = 0
 			color = 0
@@ -23370,11 +23180,10 @@ coat_of_arms = {
 2059018 = { name="Sleeking" culture=dutch}
 2059019 = { name="Burggraaf" culture=dutch}
 2059020 = { name="Dekker" culture=dutch
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 18
-			texture_internal = 4
+			texture = 0
+			texture_internal = 61
 			emblem = 0
 			color = 0
 			color = 0
@@ -23389,11 +23198,10 @@ coat_of_arms = {
 2059025 = { name="de Moor" culture=dutch}
 2059026 = { name="van Ewijk" culture=dutch}
 2059027 = { name="Janssen" culture=dutch
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 18
-			texture_internal = 6
+			texture = 0
+			texture_internal = 63
 			emblem = 0
 			color = 0
 			color = 0
@@ -23440,11 +23248,10 @@ coat_of_arms = {
 2059064 = { name="Kamerlingh Onnes" culture=dutch}
 2059065 = { name="Middelkoop" culture=dutch}
 2059066 = { name="van Doorn" culture=dutch
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 18
-			texture_internal = 2
+			texture = 0
+			texture_internal = 59
 			emblem = 0
 			color = 0
 			color = 0
@@ -23592,7 +23399,7 @@ coat_of_arms = {
 2060002 = { name="Tartar" culture=black_sea }
 2060003 = { name="Tercanij" culture=black_sea used_for_random=no 
 	coat_of_arms = {
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
 			texture = 0
@@ -23807,7 +23614,7 @@ coat_of_arms = {
 2060204 = { name="Karaduman" culture=black_sea }
 2060205 = { name="Köksal" culture=black_sea 
 	coat_of_arms = {
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
 			texture = 0
@@ -23821,7 +23628,7 @@ coat_of_arms = {
 }
 2060206 = { name="Akdagh" culture=black_sea 
 	coat_of_arms = {
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
 			texture = 0
@@ -23835,11 +23642,10 @@ coat_of_arms = {
 }
 
 2061000 = { name="Defacqz" culture=walloon
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 18
-			texture_internal = 3
+			texture = 0
+			texture_internal = 60
 			emblem = 0
 			color = 0
 			color = 0
@@ -24054,11 +23860,10 @@ coat_of_arms = {
 
 2062000 = { name="Dijkstra" culture=frisian}
 2062001 = { name="ten Brok" culture=frisian used_for_random=no
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 60
+			texture = 3
+			texture_internal = 28
 			emblem = 0
 			color = 0
 			color = 0
@@ -24312,7 +24117,7 @@ coat_of_arms = {
 
 2065000 = { name="Arap" culture=turcoman 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
 			texture = 0
@@ -24326,7 +24131,7 @@ coat_of_arms = {
 }
 2065001 = { name="Turkmehmet" culture=turcoman 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
 			texture = 0
@@ -24372,7 +24177,7 @@ coat_of_arms = {
 
 2066000 = { name="Kezêban" culture=kurdish 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
 			texture = 0
@@ -24386,7 +24191,7 @@ coat_of_arms = {
 }
 2066001 = { name="Seyvan" culture=kurdish 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
 			texture = 0
@@ -24420,11 +24225,11 @@ coat_of_arms = {
 2066021 = { name="Mirkan" culture=kurdish }
 2066022 = { name="Hajo" culture=kurdish 
 	coat_of_arms = { 
-		religion=sunni
+		religion=nondescript_muslim
 		template = 0
 		layer = {
-			texture = 1
-			texture_internal = 12
+			texture = 0
+			texture_internal = 51
 			emblem = 0
 			color = 0
 			color = 0
@@ -24435,11 +24240,11 @@ coat_of_arms = {
 2066023 = { name="Mihemed" culture=kurdish }
 2066024 = { name="Sa'id" culture=kurdish
 	coat_of_arms = { 
-		religion=sunni
+		religion=nondescript_muslim
 		template = 0
 		layer = {
-			texture = 1
-			texture_internal = 14
+			texture = 0
+			texture_internal = 53
 			emblem = 0
 			color = 0
 			color = 0
@@ -24451,11 +24256,11 @@ coat_of_arms = {
 2066026 = { name="Al-Hubbi" culture=kurdish	religion = yazidi }
 2066027 = { name="Barzanî" culture=kurdish	
 	coat_of_arms = { 
-		religion=sunni
+		religion=nondescript_muslim
 		template = 0
 		layer = {
-			texture = 1
-			texture_internal = 2
+			texture = 0
+			texture_internal = 42
 			emblem = 0
 			color = 0
 			color = 0
@@ -24541,7 +24346,7 @@ coat_of_arms = {
 2066103 = { name="Emre" culture=kurdish }
 2066104 = { name="Yamûlkî" culture=kurdish 
 	coat_of_arms = {
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
 			texture = 0
@@ -24561,10 +24366,10 @@ coat_of_arms = {
 2067002 = { name="Nijsten" culture=limburgish }
 2067003 = { name="Oomen" culture=limburgish }
 2067004 = { name="Leers" culture=limburgish }
-2067005 = { name="Beerenbrouck"culture=limburgish }
-2067006 = { name="Minckeleers"culture=limburgish }
+2067005 = { name="Beerenbrouck" culture=limburgish }
+2067006 = { name="Minckeleers" culture=limburgish }
 2067007 = { name="Drielsma" culture=limburgish }
-2067008 = { name="Wilms"culture=limburgish }
+2067008 = { name="Wilms" culture=limburgish }
 2067009 = { name="Smeets" culture=limburgish }
 2067010 = { name="Lambriks" culture=limburgish }
 2067011 = { name="Schalken" culture=limburgish }
@@ -24710,11 +24515,11 @@ coat_of_arms = {
 2069038 = { name="Aziziyon" culture=tajik }
 2069039 = { name="Iskandarzoda" culture=tajik 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 5
-			texture_internal = 5
+			texture = 1
+			texture_internal = 13
 			emblem = 0
 			color = 0
 			color = 0
@@ -24762,11 +24567,11 @@ coat_of_arms = {
 2069077 = { name="Kabir" culture=tajik used_for_random=no  }
 2069078 = { name="Siistoni" culture=tajik used_for_random=no  
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 5
-			texture_internal = 0
+			texture = 1
+			texture_internal = 8
 			emblem = 0
 			color = 0
 			color = 0
@@ -24799,11 +24604,11 @@ coat_of_arms = {
 2069101 = { name="Yaghmoi" culture=tajik }
 2069102 = { name="Sinopur" culture=tajik 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 5
-			texture_internal = 7
+			texture = 1
+			texture_internal = 15
 			emblem = 0
 			color = 0
 			color = 0
@@ -25357,7 +25162,7 @@ coat_of_arms = {
 2074066 = { name="Zenonos" culture=kypriot }
 2074067 = { name="Türkkan" culture=kypriot used_for_random=no 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
 			texture = 0
@@ -25771,11 +25576,10 @@ coat_of_arms = {
 2077098 = { name="Zaharia" culture=moldovan }
 2077099 = { name="Stanescu" culture=moldovan }
 2077100 = { name="din Tei" culture=moldovan 
-	coat_of_arms = {
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 17
-			texture_internal = 19
+			texture = 1
+			texture_internal = 27
 			emblem = 0
 			color = 0
 			color = 0
@@ -25787,11 +25591,10 @@ coat_of_arms = {
 2077102 = { name="Adamachi" culture=moldovan used_for_random=no}
 2077103 = { name="Birladeanu" culture=moldovan used_for_random=no}
 2077104 = { name="Castor" culture=moldovan used_for_random=no
-	coat_of_arms = {
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 17
-			texture_internal = 24
+			texture = 1
+			texture_internal = 32
 			emblem = 0
 			color = 0
 			color = 0
@@ -25799,10 +25602,8 @@ coat_of_arms = {
 		}
 	}
 }
-2077105 = { name="Safran" culture=moldovan used_for_random=no
-}
-2077106 = { name="Stepanov" culture=moldovan used_for_random=no
-}
+2077105 = { name="Safran" culture=moldovan used_for_random=no }
+2077106 = { name="Stepanov" culture=moldovan used_for_random=no }
 
 2078000 = { name="Jovanovic" culture=serbian }
 2078001 = { name="Petrovic" culture=serbian }
@@ -26537,11 +26338,11 @@ coat_of_arms = {
 2085100 = { name="Stanikzai" culture=pashtun }
 2085101 = { name="Baryalai" culture=pashtun 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 5
-			texture_internal = 2
+			texture = 1
+			texture_internal = 10
 			emblem = 0
 			color = 0
 			color = 0
@@ -26551,11 +26352,11 @@ coat_of_arms = {
 }
 2085102 = { name="Durrani" culture=pashtun 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 5
-			texture_internal = 3
+			texture = 1
+			texture_internal = 11
 			emblem = 0
 			color = 0
 			color = 0
@@ -26667,11 +26468,11 @@ coat_of_arms = {
 2086101 = { name="Dehbani" culture=baloch }
 2086102 = { name="Khwakhuzhi" culture=baloch 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 5
-			texture_internal = 4
+			texture = 1
+			texture_internal = 12
 			emblem = 0
 			color = 0
 			color = 0
@@ -26798,11 +26599,11 @@ coat_of_arms = {
 2089020 = { name="Bolaghichi" culture=hazara}
 2089021 = { name="Borjigai" culture=hazara
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 5
-			texture_internal = 8
+			texture = 1
+			texture_internal = 2
 			emblem = 0
 			color = 0
 			color = 0
@@ -27402,11 +27203,11 @@ coat_of_arms = {
 2094132 = { name="Charfi" culture=tunisian }
 2094133 = { name="Youssef" culture=tunisian  used_for_random = no
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 6
-			texture_internal = 4
+			texture = 1
+			texture_internal = 18
 			emblem = 0
 			color = 0
 			color = 0
@@ -27447,11 +27248,11 @@ coat_of_arms = {
 2094164 = { name="Shikhrohou" culture=tunisian }
 2094165 = { name="Al Husseini" culture=tunisian used_for_random = no
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 6
-			texture_internal = 1
+			texture = 1
+			texture_internal = 19
 			emblem = 0
 			color = 0
 			color = 0
@@ -27463,11 +27264,11 @@ coat_of_arms = {
 2094167 = { name="Mnari" culture=tunisian }
 2094168 = { name="Jamoussi" culture=tunisian  used_for_random = no
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 6
-			texture_internal = 5
+			texture = 1
+			texture_internal = 20
 			emblem = 0
 			color = 0
 			color = 0
@@ -27477,11 +27278,11 @@ coat_of_arms = {
 }
 2094169 = { name="Vossargia" culture=tunisian  used_for_random = no
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 6
-			texture_internal = 6
+			texture = 1
+			texture_internal = 21
 			emblem = 0
 			color = 0
 			color = 0
@@ -27491,11 +27292,11 @@ coat_of_arms = {
 }
 2094170 = { name="Fourati" culture=tunisian  used_for_random = no
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 6
-			texture_internal = 7
+			texture = 1
+			texture_internal = 22
 			emblem = 0
 			color = 0
 			color = 0
@@ -27504,12 +27305,10 @@ coat_of_arms = {
 	}
 }
 2094171 = { name="Azria" culture=tunisian  used_for_random = no
-	coat_of_arms = { 
-		religion = sunni
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 6
-			texture_internal = 8
+			texture = 3
+			texture_internal = 29
 			emblem = 0
 			color = 0
 			color = 0
@@ -27519,11 +27318,11 @@ coat_of_arms = {
 }
 2094172 = { name="Hached" culture=tunisian  used_for_random = no
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 6
-			texture_internal = 9
+			texture = 1
+			texture_internal = 23
 			emblem = 0
 			color = 0
 			color = 0
@@ -27533,11 +27332,11 @@ coat_of_arms = {
 }
 2094173 = { name="Galhia" culture=tunisian  used_for_random = no
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 6
-			texture_internal = 10
+			texture = 1
+			texture_internal = 24
 			emblem = 0
 			color = 0
 			color = 0
@@ -27547,11 +27346,11 @@ coat_of_arms = {
 }
 2094174 = { name="Cillium" culture=tunisian used_for_random = no
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 6
-			texture_internal = 11
+			texture = 1
+			texture_internal = 25
 			emblem = 0
 			color = 0
 			color = 0
@@ -27561,11 +27360,11 @@ coat_of_arms = {
 }
 2094175 = { name="ben Ahmed" culture=tunisian used_for_random = no
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 6
-			texture_internal = 0
+			texture = 1
+			texture_internal = 26
 			emblem = 0
 			color = 0
 			color = 0
@@ -27575,11 +27374,10 @@ coat_of_arms = {
 }
 
 2095000 = { name="Manitas" culture=calo used_for_random = no 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 13
-			texture_internal = 21
+			texture = 2
+			texture_internal = 27
 			emblem = 0
 			color = 0
 			color = 0
@@ -28023,11 +27821,11 @@ coat_of_arms = {
 
 2103000 = { name="Al-Asaad" culture=suriyi 
 	coat_of_arms = { 
-		religion=sunni
+		religion=nondescript_muslim
 		template = 0
 		layer = {
-			texture = 1
-			texture_internal = 8
+			texture = 0
+			texture_internal = 37
 			emblem = 0
 			color = 0
 			color = 0
@@ -28037,11 +27835,11 @@ coat_of_arms = {
 }
 2103001 = { name="Qabbani" culture=suriyi 
 	coat_of_arms = { 
-		religion=sunni
+		religion=nondescript_muslim
 		template = 0
 		layer = {
-			texture = 1
-			texture_internal = 9
+			texture = 0
+			texture_internal = 48
 			emblem = 0
 			color = 0
 			color = 0
@@ -28051,11 +27849,11 @@ coat_of_arms = {
 }
 2103002 = { name="Ujayli'" culture=suriyi
 	coat_of_arms = { 
-		religion=sunni
+		religion=nondescript_muslim
 		template = 0
 		layer = {
-			texture = 1
-			texture_internal = 3
+			texture = 0
+			texture_internal = 43
 			emblem = 0
 			color = 0
 			color = 0
@@ -28065,11 +27863,11 @@ coat_of_arms = {
 }
 2103003 = { name="Jandali" culture=suriyi 
 	coat_of_arms = { 
-		religion=sunni
+		religion=nondescript_muslim
 		template = 0
 		layer = {
-			texture = 1
-			texture_internal = 6
+			texture = 0
+			texture_internal = 46
 			emblem = 0
 			color = 0
 			color = 0
@@ -28079,11 +27877,11 @@ coat_of_arms = {
 }
 2103004 = { name="Faris" culture=suriyi 
 	coat_of_arms = { 
-		religion=sunni
+		religion=nondescript_muslim
 		template = 0
 		layer = {
-			texture = 1
-			texture_internal = 7
+			texture = 0
+			texture_internal = 47
 			emblem = 0
 			color = 0
 			color = 0
@@ -28093,11 +27891,11 @@ coat_of_arms = {
 }
 2103005 = { name="Al-Ali" culture=suriyi 
 	coat_of_arms = { 
-		religion=sunni
+		religion=nondescript_muslim
 		template = 0
 		layer = {
-			texture = 1
-			texture_internal = 4
+			texture = 0
+			texture_internal = 44
 			emblem = 0
 			color = 0
 			color = 0
@@ -28238,12 +28036,10 @@ coat_of_arms = {
 2104000 = { name="Yonadam" culture=assyrian }
 2104001 = { name="Agassi" culture=assyrian }
 2104002 = { name="Malek" culture=assyrian 
-	coat_of_arms = { 
-		religion = nestorian
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 23
-			texture_internal = 0
+			texture = 0
+			texture_internal = 13
 			emblem = 0
 			color = 0
 			color = 0
@@ -28294,12 +28090,10 @@ coat_of_arms = {
 2104043 = { name="Bulos" culture=assyrian }
 2104044 = { name="Hariri" culture=assyrian }
 2104045 = { name="Noohra" culture=assyrian 
-	coat_of_arms = { 
-		religion = miaphysite
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 23
-			texture_internal = 7
+			texture = 0
+			texture_internal = 17
 			emblem = 0
 			color = 0
 			color = 0
@@ -28310,12 +28104,10 @@ coat_of_arms = {
 
 
 2105000 = { name="Jibran" culture=lebneni 
-	coat_of_arms = { 
-		religion = catholic
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 23
-			texture_internal = 5
+			texture = 0
+			texture_internal = 8
 			emblem = 0
 			color = 0
 			color = 0
@@ -28330,11 +28122,11 @@ coat_of_arms = {
 2105005 = { name="Sharafeddine" culture=lebneni }
 2105006 = { name="Arslan" culture=lebneni 
 	coat_of_arms = { 
-		religion=sunni
+		religion=nondescript_muslim
 		template = 0
 		layer = {
-			texture = 1
-			texture_internal = 17
+			texture = 0
+			texture_internal = 38
 			emblem = 0
 			color = 0
 			color = 0
@@ -28631,11 +28423,11 @@ coat_of_arms = {
 
 2106000 = { name="al-Jalili" culture=furataini 
 	coat_of_arms = { 
-		religion=sunni
+		religion=nondescript_muslim
 		template = 0
 		layer = {
-			texture = 1
-			texture_internal = 5
+			texture = 0
+			texture_internal = 45
 			emblem = 0
 			color = 0
 			color = 0
@@ -28646,11 +28438,11 @@ coat_of_arms = {
 2106001 = { name="al-Abu Nasir" culture=furataini }
 2106002 = { name="al-Muntadhar" culture=furataini   used_for_random=no
 	coat_of_arms = { 
-		religion=sunni
+		religion=nondescript_muslim
 		template = 0
 		layer = {
-			texture = 1
-			texture_internal = 28
+			texture = 0
+			texture_internal = 34
 			emblem = 0
 			color = 0
 			color = 0
@@ -28660,11 +28452,11 @@ coat_of_arms = {
 }
 2106003 = { name="al-Hakim" culture=furataini 
 	coat_of_arms = { 
-		religion=sunni
+		religion=nondescript_muslim
 		template = 0
 		layer = {
-			texture = 1
-			texture_internal = 10
+			texture = 0
+			texture_internal = 49
 			emblem = 0
 			color = 0
 			color = 0
@@ -28685,13 +28477,13 @@ coat_of_arms = {
 2106014 = { name="al-Ajwad" culture=furataini }
 2106015 = { name="Sistani" culture=furataini }
 2106016 = { name="al-Samawi" culture=furataini }
-2106017 = { name="Youssef" culture=furataini 
+2106017 = { name="Yusuf" culture=furataini 
 	coat_of_arms = { 
-		religion=sunni
+		religion=nondescript_muslim
 		template = 0
 		layer = {
-			texture = 1
-			texture_internal = 15
+			texture = 0
+			texture_internal = 54
 			emblem = 0
 			color = 0
 			color = 0
@@ -29704,11 +29496,11 @@ coat_of_arms = {
 2112132 = { name="Abdulaziz" culture=uzbek }
 2112133 = { name="Farg'oniy" culture=uzbek 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 5
-			texture_internal = 6
+			texture = 1
+			texture_internal = 14
 			emblem = 0
 			color = 0
 			color = 0
@@ -29718,11 +29510,11 @@ coat_of_arms = {
 }
 2112134 = { name="Shayboniy" culture=uzbek 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 5
-			texture_internal = 1
+			texture = 1
+			texture_internal = 8
 			emblem = 0
 			color = 0
 			color = 0
@@ -30679,11 +30471,11 @@ coat_of_arms = {
 
 2123000 = { name="Saidi" culture=algerian 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 6
-			texture_internal = 14
+			texture = 1
+			texture_internal = 27
 			emblem = 0
 			color = 0
 			color = 0
@@ -30893,11 +30685,11 @@ coat_of_arms = {
 2123200 = { name="Cheriet" culture=algerian }
 2123201 = { name="Benikhlef" culture=algerian 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 6
-			texture_internal = 17
+			texture = 1
+			texture_internal = 28
 			emblem = 0
 			color = 0
 			color = 0
@@ -30908,11 +30700,11 @@ coat_of_arms = {
 2123202 = { name="Ouahab" culture=algerian }
 2123203 = { name="Zitouni" culture=algerian 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 6
-			texture_internal = 18
+			texture = 1
+			texture_internal = 29
 			emblem = 0
 			color = 0
 			color = 0
@@ -30924,11 +30716,11 @@ coat_of_arms = {
 2123205 = { name="Bahari" culture=algerian }
 2123206 = { name="Hasni" culture=algerian 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 6
-			texture_internal = 19
+			texture = 1
+			texture_internal = 30
 			emblem = 0
 			color = 0
 			color = 0
@@ -30939,11 +30731,11 @@ coat_of_arms = {
 2123207 = { name="M'rabet" culture=algerian }
 2123208 = { name="Ben Badis" culture=algerian 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 6
-			texture_internal = 20
+			texture = 1
+			texture_internal = 31
 			emblem = 0
 			color = 0
 			color = 0
@@ -30954,11 +30746,11 @@ coat_of_arms = {
 2123209 = { name="Belhocine" culture=algerian }
 2123210 = { name="Jadid" culture=algerian 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 6
-			texture_internal = 22
+			texture = 1
+			texture_internal = 32
 			emblem = 0
 			color = 0
 			color = 0
@@ -30970,11 +30762,11 @@ coat_of_arms = {
 2123212 = { name="Belfodil" culture=algerian }
 2123213 = { name="Hethat" culture=algerian 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
-			texture = 6
-			texture_internal = 23
+			texture = 1
+			texture_internal = 33
 			emblem = 0
 			color = 0
 			color = 0
@@ -30986,11 +30778,10 @@ coat_of_arms = {
 2124000 = { name="Puttkamer" culture=odrzan }
 2124001 = { name="Laskowik" culture=odrzan }
 2124002 = { name="Kosmalski" culture=odrzan 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 17
-			texture_internal = 29
+			texture = 1
+			texture_internal = 37
 			emblem = 0
 			color = 0
 			color = 0
@@ -31239,11 +31030,10 @@ coat_of_arms = {
 2125234 = { name="Michalski" culture=mazovian }
 2125235 = { name="Rutkowski" culture=mazovian}
 2125236 = { name="Ciolek" culture=mazovian 
-	coat_of_arms = {
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 17
-			texture_internal = 33
+			texture = 1
+			texture_internal = 4
 			emblem = 0
 			color = 0
 			color = 0
@@ -34342,11 +34132,10 @@ coat_of_arms = {
 2155050 = { name="Petre" culture=transylvanian }
 2155051 = { name="Voicu" culture=transylvanian }
 2155052 = { name="Lupu" culture=transylvanian
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 17
-			texture_internal = 16
+			texture = 1
+			texture_internal = 24
 			emblem = 0
 			color = 0
 			color = 0
@@ -34453,11 +34242,10 @@ coat_of_arms = {
 2155150 = { name="Sandru" culture=transylvanian }
 2155151 = { name="Taut" culture=transylvanian }
 2155152 = { name="Varadeanu" culture=transylvanian
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 17
-			texture_internal = 14
+			texture = 1
+			texture_internal = 22
 			emblem = 0
 			color = 0
 			color = 0
@@ -35911,10 +35699,9 @@ coat_of_arms = {
 2171147 = { name="Al-Mansuri" culture=sabir }
 
 2201000 = { name="Lewis" culture=welsh 
-	coat_of_arms = {
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 15
+			texture = 0
 			texture_internal = 12
 			emblem = 0
 			color = 0
@@ -35927,11 +35714,11 @@ coat_of_arms = {
 2201002 = { name="Williams-Wynn" culture=welsh }
 2201003 = { name="Owen" culture=welsh 
 	coat_of_arms = { 
-		religion = valinorist
+		religion = pagan
 		template = 0
 		layer = {
 			texture = 0
-			texture_internal = 5
+			texture_internal = 13
 			emblem = 0
 			color = 0
 			color = 0
@@ -36091,11 +35878,10 @@ coat_of_arms = {
 2220051 = { name="Nordraak" culture="ostlending" }
 2220052 = { name="Skaugum" culture="ostlending" }
 2220053 = { name="Prøysen" culture="ostlending" 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 12
-			texture_internal = 16
+			texture = 3
+			texture_internal = 30
 			emblem = 0
 			color = 0
 			color = 0
@@ -36164,11 +35950,10 @@ coat_of_arms = {
 2335102 = { name="Bonde" culture="ostlending" used_for_random = no }
 2335103 = { name="Gamle" culture="ostlending" used_for_random = no }
 2335104 = { name="Rosensverd" culture="ostlending" 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 12
-			texture_internal = 14
+			texture = 3
+			texture_internal = 46
 			emblem = 0
 			color = 0
 			color = 0
@@ -36178,11 +35963,10 @@ coat_of_arms = {
 }
 
 2220060 = { name="Luva" culture="vestlending" 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 12
-			texture_internal = 2
+			texture = 3
+			texture_internal = 34
 			emblem = 0
 			color = 0
 			color = 0
@@ -36192,10 +35976,11 @@ coat_of_arms = {
 }
 2220061 = { name="Linge" culture="vestlending" 
 	coat_of_arms = { 
+		religion = pagan
 		template = 0
 		layer = {
-			texture = 12
-			texture_internal = 15
+			texture = 0
+			texture_internal = 14
 			emblem = 0
 			color = 0
 			color = 0
@@ -36364,11 +36149,10 @@ coat_of_arms = {
 2220177 = { name="Ewerlund" culture="scanian" }
 2220178 = { name="Richthoff" culture="scanian" }
 2220179 = { name="Persson" culture="scanian" 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 12
-			texture_internal = 8
+			texture = 3
+			texture_internal = 40
 			emblem = 0
 			color = 0
 			color = 0
@@ -36378,11 +36162,10 @@ coat_of_arms = {
 }
 2220180 = { name="Kristensson" culture="scanian" }
 2220181 = { name="Nilsson" culture="scanian" 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 12
-			texture_internal = 9
+			texture = 3
+			texture_internal = 41
 			emblem = 0
 			color = 0
 			color = 0
@@ -36426,6 +36209,7 @@ coat_of_arms = {
 2220215 = { name="Lönnqvist" culture="scanian" }
 2220216 = { name="Fallenius" culture="scanian" }
 2220217 = { name="Hagströmer" culture="scanian" }
+2220218 = { name="Fritjofsson" culture="scanian" }
 
 2220201 = { name="Solem" culture="tronder" }
 2220202 = { name="Birch" culture="tronder" }
@@ -36530,11 +36314,10 @@ coat_of_arms = {
 2220301 = { name="Ramstad" culture="tronder" }
 2220302 = { name="Blikra" culture="tronder" }
 2220303 = { name="Lademoen" culture="tronder" 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 12
-			texture_internal = 17
+			texture = 3
+			texture_internal = 31
 			emblem = 0
 			color = 0
 			color = 0
@@ -36550,11 +36333,10 @@ coat_of_arms = {
 2220308 = { name="Skoog" culture="jamta" }
 2220309 = { name="Trollsås" culture="jamta" }
 2220310 = { name="Hornbrytare" culture="jamta" 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 12
-			texture_internal = 13
+			texture = 3
+			texture_internal = 45
 			emblem = 0
 			color = 0
 			color = 0
@@ -36640,11 +36422,10 @@ coat_of_arms = {
 2220344 = { name="Wolgers" culture="svealander" }
 2220345 = { name="Vasa" culture="svealander" }
 2220346 = { name="Swedenborg" culture="svealander" 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 12
-			texture_internal = 10
+			texture = 3
+			texture_internal = 42
 			emblem = 0
 			color = 0
 			color = 0
@@ -36653,11 +36434,10 @@ coat_of_arms = {
 	}
 }
 2220347 = { name="Stenhammar" culture="svealander" 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 21
-			texture_internal = 2
+			texture = 3
+			texture_internal = 47
 			emblem = 0
 			color = 0
 			color = 0
@@ -36728,11 +36508,10 @@ coat_of_arms = {
 2220408 = { name="Fridh" culture="svealander" }
 2220409 = { name="Allén" culture="svealander" }
 2220410 = { name="Wållgren" culture="svealander" 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 12
-			texture_internal = 12
+			texture = 3
+			texture_internal = 44
 			emblem = 0
 			color = 0
 			color = 0
@@ -36742,11 +36521,10 @@ coat_of_arms = {
 }
 2220411 = { name="Anderberg" culture="svealander" }
 2220412 = { name="Hasselblad" culture="svealander" 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 12
-			texture_internal = 11
+			texture = 3
+			texture_internal = 43
 			emblem = 0
 			color = 0
 			color = 0
@@ -36809,11 +36587,10 @@ coat_of_arms = {
 2220465 = { name="Vasa-Bernadotte" culture="svealander" }
 2220466 = { name="af Uppsala" culture="svealander" used_for_random = no}
 2220467 = { name="af Lönneberg" culture="svealander" 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 12
-			texture_internal = 7
+			texture = 3
+			texture_internal = 39
 			emblem = 0
 			color = 0
 			color = 0
@@ -36824,11 +36601,10 @@ coat_of_arms = {
 2220468 = { name="Rödros" culture="svealander" }
 2220469 = { name="de Gothia" culture="svealander" used_for_random = no }
 2220470 = { name="Kamprad" culture="svealander"
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 12
-			texture_internal = 3
+			texture = 3
+			texture_internal = 35
 			emblem = 0
 			color = 0
 			color = 0
@@ -36837,11 +36613,10 @@ coat_of_arms = {
 	}
 }
 2220471 = { name="Johannsen" culture="svealander"
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 12
-			texture_internal = 4
+			texture = 3
+			texture_internal = 36
 			emblem = 0
 			color = 0
 			color = 0
@@ -37167,10 +36942,11 @@ coat_of_arms = {
 2220640 = { name="Jakobsen" culture="kalaaleq" }
 2220641 = { name="Qarsoq" culture="kalaaleq" used_for_random = no
 	coat_of_arms = { 
+		religion=pagan
 		template = 0
 		layer = {
-			texture = 12
-			texture_internal = 5
+			texture = 0
+			texture_internal = 15
 			emblem = 0
 			color = 0
 			color = 0
@@ -37180,10 +36956,11 @@ coat_of_arms = {
 }
 2220642 = { name="Eeriksen" culture="kalaaleq" used_for_random = no
 	coat_of_arms = { 
+		religion=pagan
 		template = 0
 		layer = {
-			texture = 12
-			texture_internal = 6
+			texture = 0
+			texture_internal = 16
 			emblem = 0
 			color = 0
 			color = 0
@@ -37194,11 +36971,10 @@ coat_of_arms = {
 
 2223000 = { name="Stavad" culture="danish" }
 2223001 = { name="Sønderborg" culture="danish" 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 12
-			texture_internal = 1
+			texture = 3
+			texture_internal = 33
 			emblem = 0
 			color = 0
 			color = 0
@@ -37327,11 +37103,10 @@ coat_of_arms = {
 2223122 = { name="Blom" culture="danish" }
 
 2220700 = { name="Báltu" culture="sami" 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 12
-			texture_internal = 0
+			texture = 3
+			texture_internal = 32
 			emblem = 0
 			color = 0
 			color = 0
@@ -37380,11 +37155,10 @@ coat_of_arms = {
 2220739 = { name="Wirkola" culture="sami" }
 2220740 = { name="Sparrok" culture="sami" }
 2220741 = { name="Morottaja" culture="sami"
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 21
-			texture_internal = 0
+			texture = 3
+			texture_internal = 37
 			emblem = 0
 			color = 0
 			color = 0
@@ -37466,11 +37240,10 @@ coat_of_arms = {
 2220811 = { name="Ehrnrooth" culture="finnish" }
 2220812 = { name="Häyhä" culture="finnish" }
 2220813 = { name="Karhunen" culture="finnish"
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 21
-			texture_internal = 1
+			texture = 3
+			texture_internal = 38
 			emblem = 0
 			color = 0
 			color = 0
@@ -37480,11 +37253,10 @@ coat_of_arms = {
 }
 2220814 = { name="Mannerheim" culture="finnish" }
 2220815 = { name="Innanen" culture="finnish" 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 21
-			texture_internal = 4
+			texture = 0
+			texture_internal = 5
 			emblem = 0
 			color = 0
 			color = 0
@@ -37618,11 +37390,10 @@ coat_of_arms = {
 2220966 = { name="Santapukki" culture="karelian" }
 2220967 = { name="Sallinen" culture="karelian" }
 2220968 = { name="Shemeikka" culture="karelian" 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 21
-			texture_internal = 3
+			texture = 0
+			texture_internal = 24
 			emblem = 0
 			color = 0
 			color = 0
@@ -37745,10 +37516,11 @@ coat_of_arms = {
 2501083 = { name="Seljan" culture=icelander }
 2501084 = { name="Sigurhólm" culture=icelander 
 	coat_of_arms = { 
+		religion=pagan
 		template = 0
 		layer = {
-			texture = 12
-			texture_internal = 18
+			texture = 0
+			texture_internal = 17
 			emblem = 0
 			color = 0
 			color = 0
@@ -37955,11 +37727,10 @@ coat_of_arms = {
 2916015 = { name="Balciunas" culture=lithuanian }
 2916016 = { name="Savickas" culture=lithuanian }
 2916017 = { name="Žilinskas" culture=lithuanian
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 16
-			texture_internal = 1
+			texture = 3
+			texture_internal = 49
 			emblem = 0
 			color = 0
 			color = 0
@@ -38058,11 +37829,10 @@ coat_of_arms = {
 2917002 = { name="Ozolinš" culture=latvian }
 2917003 = { name="Jansons" culture=latvian }
 2917004 = { name="Ozols" culture=latvian
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 16
-			texture_internal = 0
+			texture = 3
+			texture_internal = 48
 			emblem = 0
 			color = 0
 			color = 0
@@ -38271,11 +38041,10 @@ coat_of_arms = {
 2918098 = { name="Klavan" culture=estonian }
 2918099 = { name="Kreek" culture=estonian }
 2918100 = { name="Loo" culture=estonian
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 16
-			texture_internal = 2
+			texture = 3
+			texture_internal = 50
 			emblem = 0
 			color = 0
 			color = 0
@@ -38563,11 +38332,10 @@ coat_of_arms = {
 2920054 = { name="Tjapkin" culture=venelased }
 2920055 = { name="Janchenko" culture=venelased }
 2920056 = { name="Tsõganov" culture=venelased
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 16
-			texture_internal = 3
+			texture = 3
+			texture_internal = 51
 			emblem = 0
 			color = 0
 			color = 0
@@ -39220,11 +38988,10 @@ coat_of_arms = {
 2924159 = { name="Holovchenko" culture=halychian }
 2924160 = { name="Poltoratskiy" culture=halychian }
 2924161 = { name="Kossak" culture=halychian 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 17
-			texture_internal = 23
+			texture = 1
+			texture_internal = 31
 			emblem = 0
 			color = 0
 			color = 0
@@ -39304,7 +39071,6 @@ coat_of_arms = {
 2925068 = { name="Diószegi" culture=szekely }
 2925069 = { name="Ady" culture=szekely }
 2925070 = { name="Dobai" culture=szekely }
-2925070 = { name="Duka" culture=szekely }
 2925071 = { name="Enyed" culture=szekely }
 2925072 = { name="Enyedi" culture=szekely }
 2925073 = { name="Erös" culture=szekely }
@@ -39336,11 +39102,10 @@ coat_of_arms = {
 2925099 = { name="Nemes" culture=szekely }
 2925100 = { name="Puskás" culture=szekely }
 2925101 = { name="Dózsa" culture=szekely
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 17
-			texture_internal = 12
+			texture = 1
+			texture_internal = 20
 			emblem = 0
 			color = 0
 			color = 0
@@ -39388,11 +39153,10 @@ coat_of_arms = {
 2925139 = { name="Kósa" culture=szekely }
 2925140 = { name="Köhalmi" culture=szekely }
 2925141 = { name="Kömíves" culture=szekely
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 17
-			texture_internal = 13
+			texture = 1
+			texture_internal = 21
 			emblem = 0
 			color = 0
 			color = 0
@@ -39400,14 +39164,14 @@ coat_of_arms = {
 		}
 	}
 }
+2925142 = { name="Duka" culture=szekely }
 
 2926000 = { name="Dudumeshtyi" culture=romani }
 2926001 = { name="Bango" culture=romani
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 17
-			texture_internal = 15
+			texture = 1
+			texture_internal = 23
 			emblem = 0
 			color = 0
 			color = 0
@@ -39464,18 +39228,16 @@ coat_of_arms = {
 2926048 = { name="Roshtash" culture=romani }
 2926049 = { name="Bogdan" culture=romani }
 2926050 = { name="More" culture=romani }
-2926050 = { name="Bashdale" culture=romani }
 2926051 = { name="Churara" culture=romani }
 2926052 = { name="Lungo" culture=romani }
 2926053 = { name="More" culture=romani }
 2926054 = { name="Makri" culture=romani }
 2926055 = { name="Mashari" culture=romani }
 2926056 = { name="Baxtalo" culture=romani
-	coat_of_arms = {
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 17
-			texture_internal = 17
+			texture = 1
+			texture_internal = 25
 			emblem = 0
 			color = 0
 			color = 0
@@ -39500,11 +39262,10 @@ coat_of_arms = {
 2926071 = { name="Shoshojeshtyi" culture=romani }
 2926072 = { name="Orshosh" culture=romani }
 2926073 = { name="Puci" culture=romani
-	coat_of_arms = {
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 17
-			texture_internal = 20
+			texture = 1
+			texture_internal = 28
 			emblem = 0
 			color = 0
 			color = 0
@@ -39514,11 +39275,10 @@ coat_of_arms = {
 }
 2926074 = { name="Kalanyosh" culture=romani }
 2926075 = { name="Choaba" culture=romani 
-	coat_of_arms = { 
-		template = 0
+	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
-			texture = 17
-			texture_internal = 22
+			texture = 1
+			texture_internal = 30
 			emblem = 0
 			color = 0
 			color = 0
@@ -39528,6 +39288,7 @@ coat_of_arms = {
 }
 2926076 = { name="Šarišský" culture=romani }
 2926077 = { name="Bitto" culture=romani used_for_random=no }
+2926078 = { name="Bashdale" culture=romani }
 
 2941000 = { name="Swiat-Jajek" culture=warmzur used_for_random=no }
 2941001 = { name="Pilejczyk" culture=warmzur }
@@ -39568,18 +39329,19 @@ coat_of_arms = {
 3000036 = { name="Adigal" culture=tamil }
 3000037 = { name="Chandra" culture=tamil }
 3000038 = { name="Chola" culture=tamil used_for_random = no
-            coat_of_arms = { 
-			religion = hindu
-		    template = 0
-		    layer = {
-			texture = 2
+	coat_of_arms = { 
+		religion=nondescript_eastern
+		template = 0
+		layer = {
+			texture = 0
 			texture_internal = 1
 			emblem = 0
 			color = 0
 			color = 0
 			color = 0
-		}}
-    }
+		}
+	}
+}
 3000039 = { name="Chidambaram Pillai" culture=tamil }
 3000040 = { name="Chinnamalai" culture=tamil }
 3000041 = { name="Chandrasekhar" culture=tamil }
@@ -39623,7 +39385,6 @@ coat_of_arms = {
 3000079 = { name="Uppara" culture=tamil }
 3000080 = { name="Vadama" culture=tamil }
 3000081 = { name="Vathima" culture=tamil }
-3000081 = { name="Narayan" culture=tamil }
 3000082 = { name="Ranganatha" culture=tamil }
 3000083 = { name="Kandasami" culture=tamil }
 3000084 = { name="Kalam" culture=tamil }
@@ -39645,6 +39406,7 @@ coat_of_arms = {
 3000100 = { name="Kuudr" culture=tamil }
 3000101 = { name="Verada" culture=tamil }
 3000102 = { name="Kannan" culture=tamil }
+3000103 = { name="Narayan" culture=tamil }
 
 3020000 = { name="Kyasamballi" culture=kannadiga }
 3020001 = { name="Acharya" culture=kannadiga }
@@ -40163,18 +39925,19 @@ coat_of_arms = {
 3080198 = { name="Zoysa" culture=sinhala }
 
 3090000 = { name="Morane" culture=vedda used_for_random = no
-            coat_of_arms = { 
-			religion = hindu
-		    template = 0
-		    layer = {
-			texture = 2
+	coat_of_arms = { 
+		religion=nondescript_eastern
+		template = 0
+		layer = {
+			texture = 0
 			texture_internal = 5
 			emblem = 0
 			color = 0
 			color = 0
 			color = 0
-		}}
+		}
 	}
+}
 3090006 = { name="Gunasekara" culture=vedda }
 3090007 = { name="Jaya" culture=vedda }
 3090008 = { name="Bandiya" culture=vedda }
@@ -40324,86 +40087,86 @@ coat_of_arms = {
 7000052 = { name="Borojevic" culture=croatian }
 7000130 = { name="Kružic" culture=croatian }
 
-7000053 = { name="Betancourt" culture=azorean used_for_random = no }
-7000054 = { name="Arriaga" culture=azorean }
-7000055 = { name="Berquó" culture=azorean }
-7000056 = { name="Bom Dia" culture=azorean }
-7000057 = { name="Brum" culture=azorean }
-7000058 = { name="Silveira" culture=azorean }
-7000059 = { name="Dutra" culture=azorean }
-7000060 = { name="Rosa" culture=azorean }
-7000061 = { name="Silveira" culture=azorean }
-7000062 = { name="Resende" culture=azorean }
-7000063 = { name="Madruga" culture=azorean }
-7000064 = { name="Férin" culture=azorean }
-7000065 = { name="Pacheco" culture=azorean }
-7000066 = { name="Homem da Costa" culture=azorean }
-7000067 = { name="Supico" culture=azorean }
-7000068 = { name="Cabral" culture=azorean }
-7000069 = { name="Moderno" culture=azorean }
-7000070 = { name="Silveira" culture=azorean }
-7000071 = { name="Corte Real" culture=azorean }
-7000072 = { name="Ramalho" culture=azorean }
-7000073 = { name="de Teive" culture=azorean }
-7000074 = { name="Estaço" culture=azorean }
-7000075 = { name="Camões" culture=azorean }
-7000076 = { name="Terra" culture=azorean }
-7000077 = { name="Carrengueiro" culture=azorean }
-7000078 = { name="Tavares" culture=azorean }
-7000079 = { name="Sieuve de Meneses" culture=azorean }
-7000080 = { name="Martins" culture=azorean }
-7000081 = { name="Aguiar" culture=azorean }
-7000082 = { name="Melo" culture=azorean }
-7000083 = { name="Barbosa" culture=azorean }
-7000084 = { name="Ferreira" culture=azorean }
-7000085 = { name="Magalhães" culture=azorean }
-7000086 = { name="Aviz" culture=azorean }
-7000087 = { name="Abril" culture=azorean used_for_random=no }
-7000088 = { name="Henriques" culture=azorean }
-7000089 = { name="Monjardino" culture=azorean }
-7000088 = { name="Drumond" culture=azorean }
-7000089 = { name="Brum" culture=azorean }
+7001000 = { name="Rosa" culture=azorean }
+7001001 = { name="Silveira" culture=azorean }
+7001002 = { name="Resende" culture=azorean }
+7001003 = { name="Madruga" culture=azorean }
+7001004 = { name="Férin" culture=azorean }
+7001005 = { name="Pacheco" culture=azorean }
+7001006 = { name="Homem da Costa" culture=azorean }
+7001007 = { name="Supico" culture=azorean }
+7001008 = { name="Cabral" culture=azorean }
+7001009 = { name="Moderno" culture=azorean }
+7001010 = { name="Silveira" culture=azorean }
+7001011 = { name="Corte Real" culture=azorean }
+7001012 = { name="Ramalho" culture=azorean }
+7001013 = { name="de Teive" culture=azorean }
+7001014 = { name="Estaço" culture=azorean }
+7001015 = { name="Camões" culture=azorean }
+7001016 = { name="Terra" culture=azorean }
+7001017 = { name="Carrengueiro" culture=azorean }
+7001018 = { name="Tavares" culture=azorean }
+7001019 = { name="Sieuve de Meneses" culture=azorean }
+7001020 = { name="Martins" culture=azorean }
+7001021 = { name="Aguiar" culture=azorean }
+7001022 = { name="Melo" culture=azorean }
+7001023 = { name="Barbosa" culture=azorean }
+7001024 = { name="Ferreira" culture=azorean }
+7001025 = { name="Magalhães" culture=azorean }
+7001026 = { name="Aviz" culture=azorean }
+7001027 = { name="Abril" culture=azorean used_for_random=no }
+7001028 = { name="Henriques" culture=azorean }
+7001029 = { name="Monjardino" culture=azorean }
+7001030 = { name="Drumond" culture=azorean }
+7001031 = { name="Brum" culture=azorean }
+7001032 = { name="Dutra" culture=azorean }
+7001033 = { name="Betancourt" culture=azorean used_for_random = no }
+7001034 = { name="Arriaga" culture=azorean }
+7001035 = { name="Berquó" culture=azorean }
+7001036 = { name="Bom Dia" culture=azorean }
+7001037 = { name="Brum" culture=azorean }
+7001038 = { name="Silveira" culture=azorean }
 
-7000090 = { name="Lancastre" culture=madeiran used_for_random = no }
-7000091 = { name="Santos-Aveiro" culture=madeiran used_for_random = no }
-7000092 = { name="Mendonça" culture=madeiran }
-7000093 = { name="Tolentino" culture=madeiran }
-7000094 = { name="Matos" culture=madeiran }
-7000095 = { name="Martins" culture=madeiran }
-7000096 = { name="Sena" culture=madeiran } 
-7000097 = { name="Sauvayre" culture=madeiran }
-7000098 = { name="Câmara" culture=madeiran }
-7000099 = { name="Pestana" culture=madeiran }
-7000100 = { name="Andrade" culture=madeiran }
-7000101 = { name="Mendes" culture=madeiran }
-7000102 = { name="Aciaioli" culture=madeiran }
-7000103 = { name="Quintal" culture=madeiran }
-7000104 = { name="Jardim" culture=madeiran }
-7000105 = { name="Nóbrega" culture=madeiran }
-7000106 = { name="Aguiar" culture=madeiran }
-7000107 = { name="Gouveia" culture=madeiran }
-7000108 = { name="Garcês" culture=madeiran }
-7000109 = { name="Rodrigues" culture=madeiran }
-7000110 = { name="Pita" culture=madeiran }
-7000111 = { name="Cerdas" culture=madeiran }
-7000112 = { name="Freitas" culture=madeiran }
-7000113 = { name="Pereira" culture=madeiran }
-7000114 = { name="Ferraz" culture=madeiran }
-7000115 = { name="Guerreiro" culture=madeiran }
-7000116 = { name="Moniz" culture=madeiran }
-7000117 = { name="Cafôfo" culture=madeiran }
-7000118 = { name="Caetano" culture=madeiran }
-7000119 = { name="Franco" culture=madeiran }
-7000120 = { name="Nascimento" culture=madeiran }
-7000121 = { name="Castro" culture=madeiran }
-7000122 = { name="Ornelas" culture=madeiran }
-7000123 = { name="Vasconcelos" culture=madeiran }
-7000124 = { name="Gois" culture=madeiran }
-7000125 = { name="Araújo" culture=madeiran }
-7000126 = { name="Silva" culture=madeiran }
-7000127 = { name="Velosa" culture=madeiran }
-7000128 = { name="Tranquada" culture=madeiran }
-7000129 = { name="Nepomuceno" culture=madeiran }
+7002000 = { name="Lancastre" culture=madeiran used_for_random = no }
+7002001 = { name="Santos-Aveiro" culture=madeiran used_for_random = no }
+7002002 = { name="Mendonça" culture=madeiran }
+7002003 = { name="Tolentino" culture=madeiran }
+7002004 = { name="Matos" culture=madeiran }
+7002005 = { name="Martins" culture=madeiran }
+7002006 = { name="Sena" culture=madeiran } 
+7002007 = { name="Sauvayre" culture=madeiran }
+7002008 = { name="Câmara" culture=madeiran }
+7002009 = { name="Pestana" culture=madeiran }
+7002010 = { name="Andrade" culture=madeiran }
+7002011 = { name="Mendes" culture=madeiran }
+7002012 = { name="Aciaioli" culture=madeiran }
+7002013 = { name="Quintal" culture=madeiran }
+7002014 = { name="Jardim" culture=madeiran }
+7002015 = { name="Nóbrega" culture=madeiran }
+7002016 = { name="Aguiar" culture=madeiran }
+7002017 = { name="Gouveia" culture=madeiran }
+7002018 = { name="Garcês" culture=madeiran }
+7002019 = { name="Rodrigues" culture=madeiran }
+7002020 = { name="Pita" culture=madeiran }
+7002021 = { name="Cerdas" culture=madeiran }
+7002022 = { name="Freitas" culture=madeiran }
+7002023 = { name="Pereira" culture=madeiran }
+7002024 = { name="Ferraz" culture=madeiran }
+7002025 = { name="Guerreiro" culture=madeiran }
+7002026 = { name="Moniz" culture=madeiran }
+7002027 = { name="Cafôfo" culture=madeiran }
+7002028 = { name="Caetano" culture=madeiran }
+7002029 = { name="Franco" culture=madeiran }
+7002030 = { name="Nascimento" culture=madeiran }
+7002031 = { name="Castro" culture=madeiran }
+7002032 = { name="Ornelas" culture=madeiran }
+7002033 = { name="Vasconcelos" culture=madeiran }
+7002034 = { name="Gois" culture=madeiran }
+7002035 = { name="Araújo" culture=madeiran }
+7002036 = { name="Silva" culture=madeiran }
+7002037 = { name="Velosa" culture=madeiran }
+7002038 = { name="Tranquada" culture=madeiran }
+7002039 = { name="Nepomuceno" culture=madeiran }
 
 7020000 = { name="Nur" culture=tat used_for_random=no}
 7020001 = { name="Balaxana" culture=tat}
@@ -40575,7 +40338,7 @@ coat_of_arms = {
 7100162 = { name="Basmaz" culture=toros_mountain }
 7100163 = { name="Zenci" culture=toros_mountain 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
 			texture = 0
@@ -40590,7 +40353,7 @@ coat_of_arms = {
 7100164 = { name="Yashar" culture=toros_mountain }
 7100165 = { name="Ibrahim" culture=toros_mountain 
 	coat_of_arms = { 
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
 			texture = 0
@@ -40604,7 +40367,7 @@ coat_of_arms = {
 }
 7100166 = { name="Dolapli" culture=toros_mountain 
 	coat_of_arms = {
-		religion = sunni
+		religion = nondescript_muslim
 		template = 0
 		layer = {
 			texture = 0

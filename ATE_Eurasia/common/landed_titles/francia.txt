@@ -2754,6 +2754,50 @@ e_france = {
 					provencal = "Plasença deu Toish"
 				}
 			}
+			c_ariege = { # 1523
+				color={ 154 79 193 }
+				color2={ 255 255 255 }
+	
+				catalan = "Arieja"
+				arpitan = "Ariége"
+				occitan = "Arièja"
+				provencal = "Arièja"
+				
+				b_foix = {
+					occitan = "Fois"
+					provencal = "Fois"
+				}
+				b_pamiers = {
+					catalan = "Pàmies"
+					occitan = "Pàmias"
+					provencal = "Pàmias"
+				}
+				b_saint_girons = {
+					catalan = "Sent Gironç"
+					occitan = "Sent Gironç"
+					provencal = "Sant Guironç"
+				}
+				b_lavelanet = {
+					catalan = "L'Avelhanet"
+					occitan = "L'Avelhanet"
+					provencal = "L'Avelhanet"
+				}
+				b_saverdun = {
+					catalan = "Savardun"
+					occitan = "Savardun"
+					provencal = "Savardun"
+				}
+				b_mazeres = {
+					catalan = "Maseras"
+					occitan = "Maseras"
+					provencal = "Maseras"
+				}
+				b_varilhes = {
+					catalan = "Varilhas"
+					occitan = "Varilhas"
+					provencal = "Varilhas"
+				}
+			}
 			c_quercy = { # 1515
 				color={ 146 51 164 }
 				color2={ 255 255 255 }
@@ -3477,6 +3521,112 @@ e_france = {
 					provencal = "Yuransoû"
 				}
 			}
+			c_bigorre = { # 1522
+				color={ 64 78 162 }
+				color2={ 255 255 255 }
+	
+				catalan = "Bigorra"
+				basque = "Bigorra"
+				occitan = "Bigòrra"
+				gascon = "Bigòrra"
+				provencal = "Bigòrra"
+				
+				holy_site = apparitionist
+				
+				b_bagneres_de_bigorre = {
+					catalan = "Banhèras de Bigòrra"
+					occitan = "Banhèras de Bigòrra"
+					gascon = "Banhèras de Bigòrra"
+					provencal = "Banhèras de Bigòrra"
+				}
+				b_tarbes = {
+					catalan = "Tarba"
+					basque = "Tarbe"
+					occitan = "Tarba"
+					gascon = "Tarba"
+					provencal = "Tarba"
+				}
+				b_lourdes = {
+					catalan = "Lorda"
+					basque = "Lurda"
+					occitan = "Lorda"
+					gascon = "Lorda"
+					provencal = "Lorda"
+					
+					holy_site = catholic
+					holy_site = penitant
+				}
+				b_cauterets = {
+					catalan = "Cauterets"
+					basque = "Cauterets"
+					occitan = "Cauterets"
+					gascon = "Cauterets"
+					provencal = "Cauterets"
+				}
+				b_argeles_gazost = {
+					catalan = "Argilèrs de Gasòst"
+					basque = "Argelèrs de Gasòst"
+					occitan = "Argelèrs de Gasòst"
+					gascon = "Argelèrs de Gasòst"
+					provencal = "Argelèrs de Gasòst"
+				}
+				b_lannemezan = {
+					catalan = "Lanamesa"
+					basque = "Lanamesa"
+					occitan = "Lanamesa"
+					gascon = "Lanamesa"
+					provencal = "Lanamesa"
+				}
+				b_pierrefitte_nestalas = {
+					catalan = "Pèirafita Nestalàs"
+					occitan = "Pèirafita Nestalàs"
+					gascon = "Pèirafita Nestalàs"
+					provencal = "Pèirafita Nestalàs"
+				}
+				b_muret = {
+					occitan = "Murèth"
+					gascon = "Murèth"
+					provencal = "Murèl"
+				}
+				b_saint_gaudens = {
+					catalan = "Sent Gaudenç"
+					occitan = "Sent Gaudenç"
+					gascon = "Sent Gaudenç"
+					provencal = "Sent Gaudenç"
+				}
+				b_saint_beat = {
+					catalan = "Sent Beat"
+					occitan = "Sent Béat"
+					gascon = "Sent Béat"
+					provencal = "Sent Béat"
+				}
+				b_saint_lys = {
+					catalan = "Sent Lis"
+					occitan = "Sent Lis"
+					gascon = "Sent Lis"
+					provencal = "Sent Lis"
+				}
+				b_boussens = {
+					catalan = "Bossens"
+					basque = "Bossens"
+					occitan = "Bossens"
+					gascon = "Bossens"
+					provencal = "Bossens"
+				}
+				b_aspet = {
+					catalan = "Aspèth"
+					basque = "Aspèth"
+					occitan = "Aspèth"
+					gascon = "Aspèth"
+					provencal = "Aspèth"
+				}
+				b_bagneres_de_luchon = {
+					catalan = "Banhèras de Luishon"
+					occitan = "Banhèras de Luishon"
+					gascon = "Banhèras de Luishon"
+					provencal = "Banhèras de Luishon"
+				}
+			}
 			c_landes = { # 1525
 				color={ 118 28 156 }
 				color2={ 255 255 255 }
@@ -3815,174 +3965,6 @@ e_france = {
 				b_les_herbiers = {}
 				b_fontenay_le_comte = {}
 				b_saint_hilaire_de_riez = {}
-			}
-		}
-		d_pyrenees = {
-			color={ 60 76 253 }
-			color2={ 255 255 255 }
-			
-			capital = 1523 # c_ariege
-	
-			breton = "Pireneoù"
-			catalan = "Pirineus"
-			basque = "Pirinioak"
-			arpitan = "Dôfenât"
-			occitan = "Pirenèus"
-			provencal = "Pireneas"
-			parisian = "Pyrénées"
-			chti = "Pyrénées"
-			walloon = "Pirenêyes"
-			palatinate = "Pyrenäen"
-			
-			c_ariege = { # 1523
-				color={ 154 79 193 }
-				color2={ 255 255 255 }
-	
-				catalan = "Arieja"
-				arpitan = "Ariége"
-				occitan = "Arièja"
-				provencal = "Arièja"
-				
-				b_foix = {
-					occitan = "Fois"
-					provencal = "Fois"
-				}
-				b_pamiers = {
-					catalan = "Pàmies"
-					occitan = "Pàmias"
-					provencal = "Pàmias"
-				}
-				b_saint_girons = {
-					catalan = "Sent Gironç"
-					occitan = "Sent Gironç"
-					provencal = "Sant Guironç"
-				}
-				b_lavelanet = {
-					catalan = "L'Avelhanet"
-					occitan = "L'Avelhanet"
-					provencal = "L'Avelhanet"
-				}
-				b_saverdun = {
-					catalan = "Savardun"
-					occitan = "Savardun"
-					provencal = "Savardun"
-				}
-				b_mazeres = {
-					catalan = "Maseras"
-					occitan = "Maseras"
-					provencal = "Maseras"
-				}
-				b_varilhes = {
-					catalan = "Varilhas"
-					occitan = "Varilhas"
-					provencal = "Varilhas"
-				}
-			}
-			c_bigorre = { # 1522
-				color={ 64 78 162 }
-				color2={ 255 255 255 }
-	
-				catalan = "Bigorra"
-				basque = "Bigorra"
-				occitan = "Bigòrra"
-				gascon = "Bigòrra"
-				provencal = "Bigòrra"
-				
-				holy_site = apparitionist
-				
-				b_bagneres_de_bigorre = {
-					catalan = "Banhèras de Bigòrra"
-					occitan = "Banhèras de Bigòrra"
-					gascon = "Banhèras de Bigòrra"
-					provencal = "Banhèras de Bigòrra"
-				}
-				b_tarbes = {
-					catalan = "Tarba"
-					basque = "Tarbe"
-					occitan = "Tarba"
-					gascon = "Tarba"
-					provencal = "Tarba"
-				}
-				b_lourdes = {
-					catalan = "Lorda"
-					basque = "Lurda"
-					occitan = "Lorda"
-					gascon = "Lorda"
-					provencal = "Lorda"
-					
-					holy_site = catholic
-					holy_site = penitant
-				}
-				b_cauterets = {
-					catalan = "Cauterets"
-					basque = "Cauterets"
-					occitan = "Cauterets"
-					gascon = "Cauterets"
-					provencal = "Cauterets"
-				}
-				b_argeles_gazost = {
-					catalan = "Argilèrs de Gasòst"
-					basque = "Argelèrs de Gasòst"
-					occitan = "Argelèrs de Gasòst"
-					gascon = "Argelèrs de Gasòst"
-					provencal = "Argelèrs de Gasòst"
-				}
-				b_lannemezan = {
-					catalan = "Lanamesa"
-					basque = "Lanamesa"
-					occitan = "Lanamesa"
-					gascon = "Lanamesa"
-					provencal = "Lanamesa"
-				}
-				b_pierrefitte_nestalas = {
-					catalan = "Pèirafita Nestalàs"
-					occitan = "Pèirafita Nestalàs"
-					gascon = "Pèirafita Nestalàs"
-					provencal = "Pèirafita Nestalàs"
-				}
-				b_muret = {
-					occitan = "Murèth"
-					gascon = "Murèth"
-					provencal = "Murèl"
-				}
-				b_saint_gaudens = {
-					catalan = "Sent Gaudenç"
-					occitan = "Sent Gaudenç"
-					gascon = "Sent Gaudenç"
-					provencal = "Sent Gaudenç"
-				}
-				b_saint_beat = {
-					catalan = "Sent Beat"
-					occitan = "Sent Béat"
-					gascon = "Sent Béat"
-					provencal = "Sent Béat"
-				}
-				b_saint_lys = {
-					catalan = "Sent Lis"
-					occitan = "Sent Lis"
-					gascon = "Sent Lis"
-					provencal = "Sent Lis"
-				}
-				b_boussens = {
-					catalan = "Bossens"
-					basque = "Bossens"
-					occitan = "Bossens"
-					gascon = "Bossens"
-					provencal = "Bossens"
-				}
-				b_aspet = {
-					catalan = "Aspèth"
-					basque = "Aspèth"
-					occitan = "Aspèth"
-					gascon = "Aspèth"
-					provencal = "Aspèth"
-				}
-				b_bagneres_de_luchon = {
-					catalan = "Banhèras de Luishon"
-					occitan = "Banhèras de Luishon"
-					gascon = "Banhèras de Luishon"
-					provencal = "Banhèras de Luishon"
-				}
 			}
 		}
 	}
