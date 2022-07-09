@@ -150,7 +150,7 @@ character_event = { # Notification event that a holding is destroyed
 		}
 	}
 	desc = {
-		text = EVTDESC_onanopenfield_4814_NON_NOMAD
+		text = EVTDESC_onanopenfield_4814_NON_NOMAD #In case something goes wrong
 		trigger = {
 			owner = {
 				NOT = { government = hetmanate_government }
@@ -158,7 +158,7 @@ character_event = { # Notification event that a holding is destroyed
 		}
 	}
 	
-	picture = GFX_evt_mongols_pillage_oldgods
+	picture = GFX_evt_steppe_mercenaries
 	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes

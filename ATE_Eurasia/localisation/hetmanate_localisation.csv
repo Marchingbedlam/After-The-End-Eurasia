@@ -33,3 +33,9 @@ throne_of_nobles;Painful Transition;;;;;;;;;x
 desc_throne_of_nobles;The transition from settled land to open farmland was not easy on the people of this county.;;;;;;;;;x
 stop_reprivatization_settlement;Stop Reprivatization;;;;;;;;;x
 stop_reprivatization_settlement_desc;You can choose to stop reprivatizing this Holding.\n\nYou will not be able to resume reprivatization for one year;;;;;;;;;x
+
+EVTDESC_onanopenfield_4814;Your nobles have reprivatized [target_location.GetName] and a holding in the county has been completely transformed into farmland.;;;;;;;;;x
+EVTOPTA_onanopenfield_4814;We will use fresh manure to fertilize the fields!;;;;;;;;;x
+EVTOPTB_onanopenfield_4814;The transition into unsettled farmland has not being comfortable for the peasantry.;;;;;;;;;x
+EVTOPTC_onanopenfield_4814;We shall feast and sacrifice whoever is left in the name of [Root.Religion.GetHighGodNameCap]!
+EVTDESC_onanopenfield_4814_NON_NOMAD;Your nobles have reprivatized [target_location.GetName] and a holding in the county has been completely transformed into farmland.;;;;;;;;;x
