@@ -1,0 +1,280 @@
+namespace = onanopenfield
+
+character_event = { # Pillaging Repeating Event
+	id = onanopenfield.4800
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_realm_province = {
+			any_province_holding = {
+				owner = { character = ROOT }
+				has_holding_modifier = recently_cleared_the_land
+				NOT = { has_holding_modifier = stop_reprivatizing_land }
+			}
+		}
+	}
+	
+	immediate = {
+		character_event = { id = onanopenfield.4800 days = 180 }
+		add_character_modifier = {
+			modifier = clearing_land_cooldown
+			hidden = yes
+			months = 6
+		}
+		any_realm_province = {
+			any_province_holding = {
+				limit = {
+					owner = { character = ROOT }
+					has_holding_modifier = recently_cleared_the_land
+					NOT = { has_holding_modifier = stop_reprivatizing_land }
+				}
+				add_holding_modifier = {
+					modifier = recently_cleared_the_land
+					months = 7
+				}
+			}
+			any_province_holding = {
+				limit = {
+					owner = { character = ROOT }
+					has_holding_modifier = recently_cleared_the_land
+					NOT = { has_holding_modifier = stop_reprivatizing_land }
+					has_siege = no
+				}
+	
+				if = {
+					limit = { NOT = { holding_type = tribal } }
+					ROOT = {
+						wealth = 50
+					}
+					custom_tooltip = {
+						text = gain_tech_custom_tooltip
+						hidden_tooltip = {
+							ROOT = {
+								random_list = {
+									10 = { military_techpoints = 5 }
+									10 = { economy_techpoints = 5 }
+									10 = { culture_techpoints = 5 }
+								}
+							}
+						}
+					}
+				}
+	
+				if = {
+					limit = { holding_type = tribal }
+					ROOT = { 
+						wealth = 25 
+					}
+				}
+	
+				destroy_random_building = THIS
+				destroy_random_building = THIS
+	
+				location = {
+					add_province_modifier = {
+						modifier = reprivatizing_nobles
+						years = 10
+					}
+				}
+
+				location = {
+					add_province_modifier = {
+						modifier = reprivatized_land
+						years = 10
+					}
+				}
+	
+				if = {
+					limit = {
+						NOT = { has_any_building = yes }
+						owner = {
+							character = ROOT
+						}
+					}
+					location = {
+						province_event = { id = onanopenfield.4810 days = 1 }
+						save_event_target_as = target_location
+						ROOT = { character_event = { id = onanopenfield.4814 days = 2 random = 2 } }
+					}
+					destroy_settlement = THIS	
+				}
+			}
+		}
+	}
+}
+
+province_event = { # Clear the 'Rampaging Nomads'-Modifier when province is empty, also prosperity mods
+	id = onanopenfield.4810
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				NOT = { is_capital = yes }
+				NOT = {
+					any_province_holding = {
+						OR = {
+							holding_type = city
+							holding_type = temple
+							holding_type = castle
+							holding_type = tribal
+						}
+					}
+				}
+			}
+			remove_province_modifier = reprivatizing_nobles
+			remove_province_modifier = prosperity_modifier_1
+			remove_province_modifier = prosperity_modifier_2
+			remove_province_modifier = prosperity_modifier_3
+			remove_province_modifier = depopulated_1
+			remove_province_modifier = depopulated_2
+			remove_province_modifier = depopulated_3
+		}
+	}
+
+}
+
+character_event = { # Notification event that a holding is destroyed
+	id = onanopenfield.4814
+	
+	desc = {
+		text = EVTDESC_onanopenfield_4814
+		trigger = {
+			owner = {
+				government = hetmanate_government
+			}
+		}
+	}
+	desc = {
+		text = EVTDESC_onanopenfield_4814_NON_NOMAD
+		trigger = {
+			owner = {
+				NOT = { government = hetmanate_government }
+			}
+		}
+	}
+	
+	picture = GFX_evt_mongols_pillage_oldgods
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		event_target:target_location = {
+			OR = {
+				NOT = {
+					has_province_flag = destroyed_by_nobles
+				}
+				had_province_flag = { flag = destroyed_by_nobles days = 365 }
+			}
+		}
+	}
+	
+	immediate = {
+		event_target:target_location = {
+			set_province_flag = destroyed_by_nobles
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_onanopenfield_4814
+		trigger = {
+			OR = {
+				trait = gardener
+				trait = diligent
+			}
+			event_target:target_location = {
+				NOT = { is_capital = yes }
+				NOT = {
+					any_province_holding = {
+						OR = {
+							holding_type = city
+							holding_type = temple
+							holding_type = castle
+							holding_type = tribal
+						}
+					}
+				}
+			}
+		}
+		ai_chance = {
+			factor = 95
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_onanopenfield_4814
+		trigger = {
+			OR = {
+				trait = impaler
+				trait = cruel
+			}
+			event_target:target_location = {
+				NOT = { is_capital = yes }
+				NOT = {
+					any_province_holding = {
+						OR = {
+							holding_type = city
+							holding_type = temple
+							holding_type = castle
+							holding_type = tribal
+						}
+					}
+				}
+			}
+		}
+		ai_chance = {
+			factor = 95
+		}
+		event_target:target_location = {
+			add_province_modifier = {
+				name = throne_of_skulls
+				years = 10
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTC_onanopenfield_4814
+		trigger = {
+			OR = {
+				trait = zealous
+				trait = possessed
+			}
+			event_target:target_location = {
+				NOT = { is_capital = yes }
+				NOT = {
+					any_province_holding = {
+						OR = {
+							holding_type = city
+							holding_type = temple
+							holding_type = castle
+							holding_type = tribal
+						}
+					}
+				}
+			}
+		}
+		ai_chance = {
+			factor = 95
+		}
+		event_target:target_location = {
+			add_province_modifier = {
+				name = nomadic_rites
+				years = 10
+			}
+		}
+	}
+	
+	option = {
+		name = EXCELLENT
+		ai_chance = {
+			factor = 5
+		}
+		owner = { prestige = 5 }
+	}
+}

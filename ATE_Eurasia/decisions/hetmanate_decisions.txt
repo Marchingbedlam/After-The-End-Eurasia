@@ -106,7 +106,7 @@
 							}
 						}
 					}
-					FROM = { character_event = { id = HL.4800 days = 180 } }
+					FROM = { character_event = { id = onanopenfield.4800 days = 180 } }
 					FROM = {
 						add_character_modifier = {
 							modifier = clearing_land_cooldown
@@ -126,8 +126,8 @@
 				}
 				hidden_tooltip = {
 					location = {
-						province_event = { id = HL.4810 days = 1 }
-						province_event = { id = HL.4814 days = 2 random = 2 }
+						province_event = { id = onanopenfield.4810 days = 1 }
+						province_event = { id = onanopenfield.4814 days = 2 random = 2 }
 					}
 				}
 				destroy_settlement = THIS
