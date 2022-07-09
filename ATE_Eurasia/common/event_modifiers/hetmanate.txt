@@ -2,3 +2,33 @@ failedclaimhetman = {
 	icon = 17
 	prestige = -0.5
 }
+
+recently_cleared_the_land = {
+	garrison_size = 3
+	icon = 57	
+}
+
+reprivatizing_nobles = {
+	local_revolt_risk = 0.30
+	levy_reinforce_rate = -1
+	icon = 57	
+}
+
+recently_cleared_the_land_not_owner = {
+	levy_size = -0.025
+	local_tax_modifier = -0.05
+	icon = 19
+}
+
+reprivatized_land = {
+	levy_size = -0.25
+	local_tax_modifier = -0.5
+	icon = 19	
+}
+
+stop_reprivatizing_land = {
+	icon = 57	
+}
+clearing_land_cooldown = {
+	icon = 57	
+}

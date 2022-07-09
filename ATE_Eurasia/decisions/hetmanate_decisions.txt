@@ -1,0 +1,191 @@
+	clear_land_for_grazing = {
+		only_independent = yes
+		filter = owned
+		ai_target_filter = owned
+		is_high_prio = yes
+		ai_check_interval = 3
+		
+		from_potential = {
+			is_playable = yes
+			government = hetmanate_government
+		}
+		
+		potential = {
+			NOT = { holding_type = nomad }
+			owner = { character = FROM }
+			is_capital = no
+		}
+		
+		allow = {
+			NOT = { has_holding_modifier = recently_cleared_the_land }
+			owner = { independent = yes }
+			has_siege = no
+			custom_tooltip = {
+				text = stop_pillaging_custom_tooltip
+				hidden_tooltip = {
+					NOT = { has_holding_modifier = stop_reprivatizing_land }
+				}
+			}
+		}
+		
+		effect = {
+
+			if = {
+				limit = { NOT = { holding_type = tribal } }
+				FROM = {
+					wealth = 50
+				}
+				custom_tooltip = {
+					text = gain_tech_custom_tooltip
+					hidden_tooltip = {
+						FROM = {
+							random_list = {
+								10 = { military_techpoints = 5 }
+								10 = { economy_techpoints = 5 }
+								10 = { culture_techpoints = 5 }
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = { holding_type = tribal }
+						FROM = {
+							random_list = {
+								5 = { military_techpoints = 5 }
+								5 = { economy_techpoints = 5 }
+								5 = { culture_techpoints = 5 }
+							}
+						}
+					}
+
+			custom_tooltip = {
+				text = "CLEAR_BUILDINGS"
+				hidden_tooltip = {
+					destroy_random_building = THIS
+					destroy_random_building = THIS
+					add_holding_modifier = {
+						modifier = recently_cleared_the_land
+						months = 7
+					}
+				}
+			}
+
+			hidden_tooltip = {
+
+				location = {
+					add_province_modifier = {
+						modifier = reprivatizing_nobles
+						years = 10
+					}
+				}
+
+				location = {
+					add_province_modifier = {
+						modifier = reprivatized_land
+						years = 10
+					}
+				}
+
+				if = {
+					limit = {
+						OR = {
+							FROM = { 
+								NOT = { has_character_modifier = clearing_land_cooldown } 
+							}
+							FROM = {
+								NOT = {
+									any_realm_province = {
+										any_province_holding = {
+											owner = { character = FROM }
+											has_holding_modifier = recently_cleared_the_land
+											NOT = { has_holding_modifier = stop_reprivatizing_land }
+										}
+									}
+								}
+							}
+						}
+					}
+					FROM = { character_event = { id = HL.4800 days = 180 } }
+					FROM = {
+						add_character_modifier = {
+							modifier = clearing_land_cooldown
+							hidden = yes
+							months = 6
+						}
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					NOT = { has_any_building = yes }
+					owner = {
+						character = FROM
+					}
+				}
+				hidden_tooltip = {
+					location = {
+						province_event = { id = HL.4810 days = 1 }
+						province_event = { id = HL.4814 days = 2 random = 2 }
+					}
+				}
+				destroy_settlement = THIS
+			}
+
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #Keep holy sites alone!
+				factor = 0.1
+				NOT = { holding_type = temple }
+			}
+		}
+	}
+	
+	stop_pillage_settlement = {
+		only_playable = yes
+		filter = owned
+		ai_target_filter = owned
+		
+		from_potential = {
+			is_playable = yes
+			government = hetmanate_government
+		}
+		
+		potential = {
+			has_holding_modifier = recently_cleared_the_land
+			NOT = { has_holding_modifier = stop_reprivatizing_land }
+			NOT = { holding_type = nomad }
+			owner = { character = FROM }
+		}
+		
+		allow = {
+			has_holding_modifier = recently_cleared_the_land
+			hidden_tooltip = {
+				NOT = { has_holding_modifier = stop_reprivatizing_land }
+			}
+		}
+		
+		effect = {
+
+			hidden_tooltip = {
+				add_holding_modifier = {
+					modifier = stop_reprivatizing_land
+					hidden = yes
+					years = 1
+				}
+			}
+
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}

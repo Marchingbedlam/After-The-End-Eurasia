@@ -15,10 +15,16 @@ claim_HOF_duel_decision;Claim the Hetmanate;;;;;;;;;x
 claim_HOF_duel_decision_desc;Might makes right! Prove your claim to the Hetmanate through force and take your rightful spot as the head of the Kozachina Host.;;;;;;;;;x
 
 gov_hetmanate;Hetmanate;;;;;;;;;x
-CLEAR_BUILDINGS;Clearing this land will result in buildings being destroyed! Those currently living in those lands will not be happy.;;;;;;;;;x
-clear_land_for_grazing;Clear Land;;;;;;;;;x
+CLEAR_BUILDINGS;Reprivatizing this land will result in buildings being destroyed! Those currently living in those lands will not be happy.;;;;;;;;;x
+clear_land_for_grazing;Reprivatize Land;;;;;;;;;x
 clear_land_for_grazing_desc;Clear Land for Farming.;;;;;;;;;x
-recently_cleared_the_land;Land cleared for farming.;;;;;;;;;x
-desc_recently_cleared_the_land;The sovereign has recently deconstructed this Holding for farmland. The peasants are arming themselves, hell-bent on reversing this decision.;;;;;;;;;x
-clear_land_for_grazing_desc;Clear Land for Farming.;;;;;;;;;x
-clear_land_for_grazing_desc;Clear Land for Farming.;;;;;;;;;x
+recently_cleared_the_land;Reprivatized land.;;;;;;;;;x
+desc_recently_cleared_the_land;The sovereign has recently reprivatized this Holding for farmland. The evicted inhabitants are arming themselves, hell-bent on reversing this decision.;;;;;;;;;x
+reprivatizing_nobles;Reprivatizing Nobles;;;;;;;;;x
+reprivatizing_nobles_desc;Groups of nobles are reprivatizing the land of this county. If this county is conquered by a character who is not Noble Republic, the nobles will cease their activities.;;;;;;;;;x
+recently_cleared_the_land_not_owner;Reprivatized by Nobles;;;;;;;;;x
+recently_cleared_the_land_not_owner_desc;This county has been reprivatized recently by nobles. For as long as this modifier remains, the county cannot be plundered or raided.;;;;;;;;;x
+reprivatized_land;Reprivatized Land;;;;;;;;;x
+desc_reprivatized_land;Reprivatization by nobles has left this land in a deopopulated state.;;;;;;;;;x
+
+#HL.4800
