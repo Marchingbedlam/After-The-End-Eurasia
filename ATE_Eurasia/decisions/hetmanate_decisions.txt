@@ -148,7 +148,7 @@ settlement_decisions = {
 		}
 	}
 	
-	stop_pillage_settlement = {
+	stop_reprivatization_settlement = {
 		only_playable = yes
 		filter = owned
 		ai_target_filter = owned
