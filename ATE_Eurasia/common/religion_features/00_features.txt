@@ -721,6 +721,8 @@ religion_doctrine = {
 		potential = {
 			NOT = { religion = hellenic_pagan } #Core feature of the religion itself.
 			NOT = { religion = hellenic_pagan_reformed } #Core feature of the religion itself.
+			NOT = { religion = ak_jeng } #Core feature of the religion itself.
+			NOT = { religion = ak_jeng_reformed } #Core feature of the religion itself.
 		}
 
 		effect = {
@@ -929,9 +931,10 @@ religion_doctrine = {
 	religion_adventuring = {
 		picture = GFX_religion_feature_adventuring
 		trigger = {
-			NOT = {
+			NOR = {
 				has_selected_religion_feature = religion_peaceful
 				has_selected_religion_feature = religion_feature_norse
+				has_selected_religion_feature = religion_feature_khanist
 			}
 		}
 		effect = {
@@ -1035,6 +1038,7 @@ religion_doctrine = {
 				has_selected_religion_feature = religion_defensive
 				has_selected_religion_feature = religion_feature_aztec #Redundant
 				has_selected_religion_feature = religion_feature_tengri
+				has_selected_religion_feature = religion_feature_khanist
 			}
 		}
 		effect = {
@@ -1115,6 +1119,7 @@ religion_doctrine = {
 		trigger = {
 			NOR = {
 				has_selected_religion_feature = religion_no_leader
+				has_selected_religion_feature = religion_feature_ak_jeng
 				religion_group = christian #Random World redundancy.
 			}
 		}
@@ -1519,6 +1524,83 @@ religion_doctrine = {
 		}
 		ai_will_do = {
 			factor = 50
+		}
+	}
+	religion_feature_khanist = {
+		picture = GFX_religion_feature_khanist
+		potential = {
+			has_game_started = yes
+			religion = khanist_reformed
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		trigger = {
+			religion = khanist_reformed
+			NOR = { 
+				has_selected_religion_feature = religion_relentless
+				has_selected_religion_feature = religion_adventuring
+			}
+		}
+		effect = {
+			custom_tooltip = { text = tooltip_religion_feature_anti_attrition }
+			custom_tooltip = { text = tooltip_religion_feature_offensive }
+			hidden_tooltip = { 
+				set_ignores_defensive_attrition = yes
+				set_unit_modifier = { 
+					light_infantry_offensive = 0.1
+					heavy_infantry_offensive = 0.1
+					light_cavalry_offensive = 0.1 
+					knights_offensive = 0.1 
+					pikemen_offensive = 0.1 
+					archers_offensive = 0.1
+					horse_archers_offensive = 0.1
+					camel_cavalry_offensive = 0.1
+					war_elephants_offensive = 0.1
+					key = "RELENTLESS_RELIGION"
+				}
+			}
+			custom_tooltip = { text = tooltip_religion_feature_adventuring }
+			custom_tooltip = { text = tooltip_religion_feature_pirating }
+			hidden_tooltip = { enable_prepared_invasion = ROOT }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = { #Handles feature randomization in AltStart to make unreformed pagans still have "paganish" features.
+				factor = 0
+				has_game_started = no
+				religion_group = pagan_group
+			}
+		}
+	}
+	religion_feature_ak_jeng = {
+		picture = GFX_religion_feature_ak_jeng
+		potential = {
+			has_game_started = yes
+			religion = ak_jeng_reformed
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		trigger = {
+			religion = ak_jeng_reformed
+			NOR = { 
+				has_selected_religion_feature = religion_haruspicy
+				has_selected_religion_feature = religion_beatification
+			}
+		}
+		effect = {
+			custom_tooltip = { text = tooltip_religion_feature_beatification }
+			custom_tooltip = { text = tooltip_religion_feature_eldership }
+			custom_tooltip = { text = tooltip_religion_feature_haruspicy }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = { #Handles feature randomization in AltStart to make unreformed pagans still have "paganish" features.
+				factor = 0
+				has_game_started = no
+				religion_group = pagan_group
+			}
 		}
 	}
 }
