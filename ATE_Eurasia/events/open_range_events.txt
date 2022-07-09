@@ -232,7 +232,7 @@ character_event = { # Notification event that a holding is destroyed
 		}
 		event_target:target_location = {
 			add_province_modifier = {
-				name = throne_of_skulls
+				name = throne_of_nobles
 				years = 10
 			}
 		}
@@ -264,7 +264,7 @@ character_event = { # Notification event that a holding is destroyed
 		}
 		event_target:target_location = {
 			add_province_modifier = {
-				name = nomadic_rites
+				name = nobles_rites
 				years = 10
 			}
 		}
