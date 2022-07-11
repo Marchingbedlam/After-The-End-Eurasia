@@ -1780,7 +1780,7 @@
 		template = 0
 		layer = {
 			texture = 0
-			texture_internal = 36
+			texture_internal = 32
 			emblem = 0
 			color = 0
 			color = 0
@@ -2122,6 +2122,20 @@
 1479077 = { name="Hatagin" culture=khalkha }
 1479078 = { name="Olkhonud" culture=khalkha }
 1479079 = { name="Erdenebileg" culture=khalkha }
+1479080 = { name="Hu" culture=khalkha used_for_random=no
+	coat_of_arms = { 
+		religion=pagan
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 23
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 1501000 = { name="Ó Fearghail" culture=irish used_for_random=no 
 	coat_of_arms = {		religion=nondescript_christian		template = 0
@@ -3375,7 +3389,8 @@
 1624060 = { name="Chuluunbat" culture=khorchin }
 1624061 = { name="Naranbaatar" culture=khorchin }
 1624062 = { name="Gonchig" culture=khorchin }
-
+1624063 = { name="Tsendiin" culture=khalkha used_for_random=no religion=gelugpa}
+1624064 = { name="Uudam" culture=khalkha used_for_random=no religion=gelugpa}
 
 
 
@@ -6517,7 +6532,7 @@
 	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
 			texture = 0
-			texture_internal = 48
+			texture_internal = 40
 			emblem = 0
 			color = 0
 			color = 0

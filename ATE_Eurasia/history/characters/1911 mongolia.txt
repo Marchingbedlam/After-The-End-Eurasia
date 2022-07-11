@@ -102,11 +102,10 @@
 	trait=cruel
 	father=1911005
 	mother=1911003
-	2661.7.21={ birth=yes }
-	2700.1.1={ death=yes }
+	2661.7.21={birth=yes}
+	2700.1.1={death=yes}
 }
-
-1911007 = {
+1911007={
 	name="Borbak-xüreñ"
 	dynasty=1911052
 	culture=tuvan
@@ -116,6 +115,214 @@
 	trait=ambitious
 	trait=cruel
 	trait=strong
-	2633.4.27={ birth=yes }
-	2700.1.1={ death=yes }
+	2633.4.27={birth=yes}
+	2700.1.1={death=yes}
+}
+1911008={
+	name="Mönkhbat"
+	dynasty=1479080 #Hu
+	culture=khalkha
+	religion=khanist
+	trait=brilliant_strategist
+	trait=musician
+	trait=altan_urag
+	trait=scarred_high
+	trait=one_eyed
+	trait=strong
+	trait=robust
+	trait=shrewd
+	trait=hunter
+	trait=charitable
+	trait=brave
+	trait=cavalry_leader
+	trait=sympathy_eastern
+	give_nickname=nick_khunnu
+	father=1911015
+	2607.9.24={birth=yes}
+}
+1911009={
+	name="Badar-Uugan"
+	dynasty=1479080 #Hu
+	culture=khalkha
+	religion=gelugpa
+	trait=altan_urag
+	father=1911010
+	2619.4.23={birth=yes}
+	2648.1.12={death={death_reason=death_murder killer=1911008}}
+}
+1911010={
+	name="Ivaan"
+	dynasty=1479080 #Hu
+	culture=khalkha
+	religion=gelugpa
+	trait=altan_urag
+	father=1911011
+	2594.11.9={birth=yes}
+	2646.3.2={death=yes}
+}
+1911011={
+	name="Amarsaikhan"
+	dynasty=1479080 #Hu
+	culture=khalkha
+	religion=gelugpa
+	trait=altan_urag
+	father=1911012
+	2562.2.7={birth=yes}
+	2625.7.9={death=yes}
+}
+1911012={
+	name="Mendbayar"
+	dynasty=1479080 #Hu
+	culture=khalkha
+	religion=gelugpa
+	trait=altan_urag
+	father=1911013
+	2536.7.3={birth=yes}
+	2582.12.15={death=yes}
+}
+1911013={
+	name="Chimedregzen"
+	dynasty=1479080 #Hu
+	culture=khalkha
+	religion=gelugpa
+	trait=altan_urag
+	2517.5.10={birth=yes}
+	2567.10.14={death=yes}
+}
+1911014={
+	name="Badrakh"
+	dynasty=1479080 #Hu
+	culture=khalkha
+	religion=gelugpa
+	trait=altan_urag
+	father=1911013
+	2539.12.13={birth=yes}
+	2597.11.17={death=yes}
+}
+1911015={
+	name="Luvsannorov"
+	dynasty=1479080 #Hu
+	culture=khalkha
+	religion=khanist
+	trait=altan_urag
+	father=1911014
+	2574.11.12={birth=yes}
+	2632.12.27={death=yes}
+}
+1911016={
+	name="Dashbalbar"
+	dynasty=1479080 #Hu
+	culture=khalkha
+	religion=gelugpa
+	trait=legit_bastard
+	trait=altan_urag
+	father=1911008
+	2631.1.26={birth=yes}
+}
+1911017={
+	name="Amar"
+	dynasty=1479080 #Hu
+	culture=khalkha
+	religion=khanist
+	trait=legit_bastard
+	trait=altan_urag
+	father=1911008
+	2639.6.5={birth=yes}
+}
+1911018={
+	name="Rinchen"
+	dynasty=1479080 #Hu
+	culture=khalkha
+	religion=khanist
+	trait=quick
+	trait=altan_urag
+	father=1911008
+	mother=1911021
+	2651.6.5={birth=yes}
+}
+1911019={
+	name="Noyan"
+	dynasty=1624063 #Tsendiin
+	culture=khorchin
+	religion=gelugpa
+	trait=poet
+	trait=familyperson
+	trait=just
+	trait=scholar
+	trait=musician
+	trait=quick
+	trait=temperate
+	trait=gregarious
+	father=1911020
+	2630.1.22={birth=yes}
+}
+1911020={
+	name="Rinchen"
+	dynasty=1624063 #Tsendiin
+	culture=khorchin
+	religion=gelugpa
+	2601.2.5={birth=yes}
+	2655.3.7={death=yes}
+}
+1911021={
+	name="Möngöntuul"
+	female=yes
+	dynasty=1624063 #Tsendiin
+	culture=khorchin
+	religion=gelugpa
+	trait=familyperson
+	trait=quick
+	father=1911020
+	2627.11.1={birth=yes}
+	2644.1.1={add_spouse=1911009}
+	2648.3.1={add_spouse=1911008}
+}
+1911022={
+	name="Ankhtsetseg"
+	female=yes
+	dynasty=1479080 #Hu
+	culture=khalkha
+	religion=khanist
+	trait=legit_bastard
+	trait=altan_urag
+	father=1911008
+	2634.6.3={birth=yes}
+}
+1911023={
+	name="Tsedevsüren"
+	female=yes
+	dynasty=1479080 #Hu
+	culture=khalkha
+	religion=khanist
+	trait=altan_urag
+	father=1911008
+	mother=1911021
+	2655.8.20={birth=yes}
+}
+1911024={
+	name="Kyevin"
+	dynasty=1624064 #Uudam
+	culture=khorchin
+	religion=gelugpa
+	trait=musician
+	trait=adopted_child
+	trait=sympathy_old_world_cults
+	trait=humble
+	trait=ambitious
+	2642.2.2={birth=yes}
+}
+1911025={
+	name="Otgontsetseg"
+	female=yes
+	dynasty=1479080 #Hu
+	culture=khalkha
+	religion=gelugpa
+	trait=altan_urag
+	trait=chaste
+	trait=elusive_shadow
+	father=1911009
+	mother=1911021
+	2646.10.27={birth=yes}
+	2665.1.1={add_spouse=1911016}
+	2665.1.1={effect={add_rival=1911008}}
 }

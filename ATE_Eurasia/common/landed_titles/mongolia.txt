@@ -115,27 +115,47 @@ e_mongolia = {
 			color2={ 255 255 255 }
 		
 			capital = 2568 #Hulunbuir
+			
+			khalkha="Khölönbuir"
+			khorchin="Kölün buyir"
 		
 			c_hulunbuir = {
 				color={ 179 144 102 }
 				color2={ 255 255 255 }
 				
-				b_hulunbuir = {}
+				khalkha="Khölönbuir"
+				khorchin="Kölün buyir"
+				
+				b_hulunbuir = {
+					khalkha="Khölönbuir"
+					khorchin="Kölün buyir"}
 				b_bayanhada = {}
 				b_labudalin = {}
-				b_yakeshi = {}
+				b_yakeshi = {
+					khalkha="Yagshi"
+					khorchin="Yagshi"}
 				b_shengli = {}
-				b_bayankuren = {}
+				b_bayankuren = {
+					khalkha="Bayankhüree"}
 				b_xinbaolige = {}
 			}
 			c_barag = {
 				color={ 225 105 49 }
 				color2={ 255 255 255 }
 				
-				b_manzhouli = {}
-				b_jalainur = {}
+				khalkha="Barga"
+				khorchin="Bargu"
+				
+				b_manzhouli = {
+					khalkha="Manjuur"
+					khorchin="Manjuur"}
+				b_jalainur = {
+					khalkha="Jalainaur"
+					khorchin="Zalaidanuur"}
 				b_amugulang = {}
-				b_alatan_emole = {}
+				b_alatan_emole = {
+					khalkha="Altan-Emeel"
+					khorchin="Altan-Emeel"}
 				b_arihasat = {}
 				b_ciaogang = {}
 			}
@@ -143,12 +163,13 @@ e_mongolia = {
 				color={ 211 175 95 }
 				color2={ 255 255 255 }
 				
+				khalkha="Üzemchin"
+				khorchin="Ujumuchin"
+				
 				b_uriastai = {
-				khalkha="Uliastai"
-					}
+					khalkha="Uliastai"}
 				b_balagar_gol = {
-				khalkha="Balgargol"
-					}
+					khalkha="Balgargol"}
 				b_dautnur = {}
 				b_bayanhua = {}
 				b_jirengol = {}

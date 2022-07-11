@@ -335,7 +335,6 @@
 	trait=shrewd
 	trait=lustful
 	trait=ambitious
-	father=3603253
 	2638.11.2={birth=yes}
 	2650.11.1={
 		add_claim=k_egypt
@@ -344,100 +343,101 @@
 	2662.1.1={
 		effect={
 			spawn_unit={
-				province=1405#al-Iskandariyya
+				province=1405 #al-Iskandariyya
 				owner=ROOT
 				troops={
-					archers={250250}
-					heavy_infantry={250750}
-					light_infantry={500500}
+					archers={250 250}
+					heavy_infantry={250 750}
+					light_infantry={500 500}
 				}
 				attrition=0.5
 			}
 		}
 	}
 }
-3603029 = { 
-	name = "Kamal"
-	dynasty = 1912020 #Mustagab
-	culture = masri
-	religion = sunni
-	father = 3603031
-	mother = 3603032
-	trait = thrifty_clerk
-	trait = just
-	trait = envious
-	trait = ambitious
-	trait = erudite
-	2644.11.2 = { birth=yes }
-	2650.11.1 = { 
-		add_claim = k_egypt
-		add_claim = d_al_qahirah
+3603029={
+	name="Kamal"
+	dynasty=1912020 #Mustagab
+	culture=masri
+	religion=sunni
+	father=3603031
+	mother=3603032
+	trait=thrifty_clerk
+	trait=just
+	trait=envious
+	trait=ambitious
+	trait=erudite
+	2644.11.2={birth=yes}
+	2650.11.1={
+		add_claim=k_egypt
+		add_claim=d_al_qahirah
 	}
 }
-3603030 = { 
-	name = "Nabila"
-	dynasty = 1912020 #Mustagab
-	culture = masri
-	religion = sunni
-	father = 3603031
-	mother = 3603032
-	female = yes
-	trait = charismatic_negotiator
-	trait = charitable
-	trait = shy
-	trait = groomed
-	trait = kind
-	2647.11.2 = { birth=yes }
+3603030={
+	name="Nabila"
+	dynasty=1912020 #Mustagab
+	culture=masri
+	religion=sunni
+	father=3603031
+	mother=3603032
+	female=yes
+	trait=charismatic_negotiator
+	trait=charitable
+	trait=shy
+	trait=groomed
+	trait=kind
+	2647.11.2={birth=yes}
 }
-3603031 = { 
-	name = "Fakhruddin"
-	dynasty = 1912020 #Mustagab
-	culture = masri
-	religion = sunni
-	trait = thrifty_clerk
-	trait = just
-	trait = gluttonous
-	trait = patient
-	trait = ambitious
-	trait = brave
-	2610.11.2 = { birth=yes }
-	2635.11.2 = { add_spouse=3603032 }
-	2650.11.1 = { 
-		add_claim = k_egypt
-		add_claim = d_al_qahirah
+3603031={
+	name="Fakhruddin"
+	dynasty=1912020 #Mustagab
+	culture=masri
+	religion=sunni
+	trait=thrifty_clerk
+	trait=just
+	trait=gluttonous
+	trait=patient
+	trait=ambitious
+	trait=brave
+	father=3603253
+	2610.11.2={birth=yes}
+	2635.11.2={add_spouse=3603032}
+	2650.11.1={
+		add_claim=k_egypt
+		add_claim=d_al_qahirah
 	}
-	2662.11.2 = { death=yes }
+	2662.11.2={death=yes}
 }
-3603032 = { 
-	name = "Salma"
-	culture = masri
-	religion = sunni
-	female = yes
-	trait = intricate_webweaver
-	trait = deceitful
-	trait = shrewd
-	trait = ambitious
-	trait = envious
-	2615.11.2 = { birth=yes }
+3603032={
+	name="Salma"
+	culture=masri
+	religion=sunni
+	female=yes
+	trait=intricate_webweaver
+	trait=deceitful
+	trait=shrewd
+	trait=ambitious
+	trait=envious
+	2615.11.2={birth=yes}
 }
 
-3603033 = { #General of Egypt
-	name = "Barquq"
-	dynasty = 1912092 #el-Tawfik
-	culture = masri
-	religion = sunni
-	trait = skilled_tactician
-	trait = brave
-	trait = gregarious
-	trait = just
-	trait = temperate
-	2625.11.2 = { birth=yes }
-	2640.11.1 = { effect = { add_friend = 3603053 } }
-	2650.1.1 = { 
-		add_claim = d_delta_an_nil
-		add_claim = d_al_qahirah
+3603033={ #General of Egypt
+	name="Barquq"
+	dynasty=1912092 #el-Tawfik
+	culture=masri
+	religion=sunni
+	trait=skilled_tactician
+	trait=brave
+	trait=gregarious
+	trait=just
+	trait=temperate
+	2625.11.2={birth=yes}
+	2640.11.1={effect={add_friend=3603053}}
+	2650.1.1={
+		add_claim=d_delta_an_nil
+		add_claim=d_al_qahirah
 	}
-	2646.11.5 = { add_spouse = 3603034 }	
+	2646.11.5={add_spouse=3603034}	
 }
 3603034 = { 
 	name = "Heba"
