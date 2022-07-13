@@ -1,66 +1,21 @@
-#####CUSTOM COAS
+#####GENERATED COAS
 
-culture = {
+
+culture = {  ##christians and vernacs that aren't cath, prot, orthodox or folketro 
 	religion = {
-		"pagan"
-	}
-	
-	templates = { 
-		"coa_plain_pagan:1"
-	}
-
-	color = {
-		{ 252 219 0 }	#0		Yellow 1
-		{ 255 231 0 }	#1		Yellow 2 
-		{ 255 215 0 }	#2		Yellow 3 
-		{ 240 181 16 }	#3		Yellow 4 
-		{ 27 26 28 }	#4		Black 1 
-		{ 0 0 0 }		#5		Black 2 
-		{ 0 51 158 }	#6		Blue 1 
-		{ 0 123 218 }	#7		Blue 2 
-		{ 0 76 147 }	#8		Blue 3 
-		{ 15 71 175 }	#9		Blue 4
-		{ 174 16 31 }	#10		Red 1
-		{ 218 18 26 }	#11		Red 2 
-		{ 190 0 0 }		#12		Red 3 
-		{ 7 137 48 }	#13		Green 1
-		{ 0 107 60 }	#14		Green 2
-		{ 18 53 36 }	#15		Green 3 
-		{ 84 44 93 }	#16		Purple 
-		{ 255 255 255 }	#17		White
-	}
-	
-	rebel_colors = { }
-
-	banned_colors = 
-	{ 
-	}
-	
-	emblem = {
-		file = "gfx\\coats_of_arms\\emblem.tga"
-		noOfFrames = 25
-	}
-
-	# WHEN ADDING NEW, ALWAYS ADD AT THE END !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11111
-	textures = {
-		texture = {
-			file = "gfx\\coats_of_arms\\CoAs_Pagan.tga"
-			size = { x = 8 y = 3 }
-			noOfFrames = 24
-			color = 0
-			emblem = no
-			random = no # Do not use for random CoAs
-		}
-	}
-}
-
-culture = {
-	religion = {
-		"nondescript_christian"
+		"nestorian"
+		"miaphysite"
+		"pentay"
+		"nasrani"
+		"ezharapallikal"
 	}
 	
 	templates = { 
 		"coa_plain:1"
+		"coa_party_per_fess:2"
+		"coa_party_per_pale:2"
+		"coa_party_per_cross:4"
+		"coa_party_triangle:3"
 	}
 
 	color = {
@@ -84,10 +39,27 @@ culture = {
 		{ 255 255 255 }	#17		White
 	}
 	
-	rebel_colors = { }
+	rebel_colors = { 3 5 7 }
 
 	banned_colors = 
 	{ 
+		{ 0 1 2 3 }					#0		
+		{ 0 1 2 3 }					#1		
+		{ 0 1 2 3 }					#2		
+		{ 0 1 2 3	}				#3		
+		{ 4 5 6 7 8 9 1 2 3 16 }	#4		
+		{ 4 5 6 7 8 9 1 2 3 16 }	#5		
+		{ 4 5 6 7 8 9 16 }			#6		
+		{ 4 5 6 7 8 9 16 }			#7		
+		{ 4 5 6 7 8 9 16 }			#8		
+		{ 4 5 6 7 8 9 16 }			#9		
+		{ 10 11 12 16 }				#10		
+		{ 10 11 12 16 }				#11
+		{ 10 11 12 16 }				#12
+		{ 4 5 13 14 15 16 }			#13
+		{ 4 5 13 14 15 16 }			#14
+		{ 4 5 13 14 15 16 }			#15
+		{ 4 5 6 7 8 9 10 11 12 13 14 15 16 }	#16
 	}
 	
 	emblem = {
@@ -98,47 +70,49 @@ culture = {
 	# WHEN ADDING NEW, ALWAYS ADD AT THE END !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11111
 	textures = {
 		texture = {
-			file = "gfx\\coats_of_arms\\CoAs_Christian.tga"
-			size = { x = 8 y = 8 }
-			noOfFrames = 64
-			color = 0
+			file = "gfx\\coats_of_arms\\pattern_christian.tga"
+			size = { x = 10 y = 10 }
+			noOfFrames = 100
+			color = 3
 			emblem = no
-			random = no # Do not use for random CoAs
 		}
 		texture = {
-			file = "gfx\\coats_of_arms\\CoAs_Christian_2.tga"
-			size = { x = 8 y = 8 }
-			noOfFrames = 64
-			color = 0
+			file = "gfx\\coats_of_arms\\pattern_christian_2.tga"
+			size = { x = 10 y = 8 }
+			noOfFrames = 72
+			color = 3
 			emblem = no
-			random = no # Do not use for random CoAs
-		}
-		texture = {
-			file = "gfx\\coats_of_arms\\CoAs_Christian_3.tga"
-			size = { x = 8 y = 8 }
-			noOfFrames = 64
-			color = 0
-			emblem = no
-			random = no # Do not use for random CoAs
-		}
-		texture = {
-			file = "gfx\\coats_of_arms\\CoAs_Christian_4.tga"
-			size = { x = 8 y = 8 }
-			noOfFrames = 64
-			color = 0
-			emblem = no
-			random = no # Do not use for random CoAs
 		}
 	}
 }
-
-culture = {
+culture = {  ##caths and cath adjacent
 	religion = {
-		"nondescript_muslim"
+		"apostolic"
+		"celeste"
+		"catholic"
+		"apparitionist"
+		"penitant"
+		"memento_mori"
+		"mariavite"
+		"coronite"
+		"oasite"
+		"insular"
+		"free_church"
+		"lutheran"
+		"seperatist"
+		"calvinist"
+		"iconoclast"
+		"quinto"
+		"sun_king_cultist"
+		"chevalier"
 	}
 	
 	templates = { 
-		"coa_plain_muslim:1"
+		"coa_plain:1"
+		"coa_party_per_fess:2"
+		"coa_party_per_pale:2"
+		"coa_party_per_cross:4"
+		"coa_party_triangle:3"
 	}
 
 	color = {
@@ -162,10 +136,27 @@ culture = {
 		{ 255 255 255 }	#17		White
 	}
 	
-	rebel_colors = { }
+	rebel_colors = { 3 5 7 }
 
 	banned_colors = 
 	{ 
+		{ 0 1 2 3 }					#0		
+		{ 0 1 2 3 }					#1		
+		{ 0 1 2 3 }					#2		
+		{ 0 1 2 3	}				#3		
+		{ 4 5 6 7 8 9 1 2 3 16 }	#4		
+		{ 4 5 6 7 8 9 1 2 3 16 }	#5		
+		{ 4 5 6 7 8 9 16 }			#6		
+		{ 4 5 6 7 8 9 16 }			#7		
+		{ 4 5 6 7 8 9 16 }			#8		
+		{ 4 5 6 7 8 9 16 }			#9		
+		{ 10 11 12 16 }				#10		
+		{ 10 11 12 16 }				#11
+		{ 10 11 12 16 }				#12
+		{ 4 5 13 14 15 16 }			#13
+		{ 4 5 13 14 15 16 }			#14
+		{ 4 5 13 14 15 16 }			#15
+		{ 4 5 6 7 8 9 10 11 12 13 14 15 16 }	#16
 	}
 	
 	emblem = {
@@ -176,31 +167,47 @@ culture = {
 	# WHEN ADDING NEW, ALWAYS ADD AT THE END !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11111
 	textures = {
 		texture = {
-			file = "gfx\\coats_of_arms\\CoAs_Muslim.tga"
-			size = { x = 8 y = 8 }
-			noOfFrames = 64
-			color = 0
+			file = "gfx\\coats_of_arms\\pattern_christian.tga"
+			size = { x = 10 y = 10 }
+			noOfFrames = 100
+			color = 3
 			emblem = no
-			random = no # Do not use for random CoAs
 		}
 		texture = {
-			file = "gfx\\coats_of_arms\\CoAs_Muslim_2.tga"
-			size = { x = 8 y = 8 }
-			noOfFrames = 64
-			color = 0
+			file = "gfx\\coats_of_arms\\pattern_christian_2.tga"
+			size = { x = 10 y = 8 }
+			noOfFrames = 72
+			color = 3
 			emblem = no
-			random = no # Do not use for random CoAs
+		}
+		texture = {
+			file = "gfx\\coats_of_arms\\pattern_catholic.tga"
+			size = { x = 10 y = 3 }
+			noOfFrames = 25
+			color = 3
+			emblem = no
 		}
 	}
 }
 
-culture = {
+culture = {  ##orthos and ortho adjacent
 	religion = {
-		"nondescript_eastern"
+		"orthodox"
+		"nekromante"
+		"old_believer"
+		"dukhovnye"
+		"dove"
+		"pravoslavie"
+		"dvoeverie"
+		"kozachina"
 	}
 	
 	templates = { 
-		"coa_plain_indian:1"
+		"coa_plain:1"
+		"coa_party_per_fess:2"
+		"coa_party_per_pale:2"
+		"coa_party_per_cross:4"
+		"coa_party_triangle:3"
 	}
 
 	color = {
@@ -224,10 +231,27 @@ culture = {
 		{ 255 255 255 }	#17		White
 	}
 	
-	rebel_colors = { }
+	rebel_colors = { 3 5 7 }
 
 	banned_colors = 
 	{ 
+		{ 0 1 2 3 }					#0		
+		{ 0 1 2 3 }					#1		
+		{ 0 1 2 3 }					#2		
+		{ 0 1 2 3	}				#3		
+		{ 4 5 6 7 8 9 1 2 3 16 }	#4		
+		{ 4 5 6 7 8 9 1 2 3 16 }	#5		
+		{ 4 5 6 7 8 9 16 }			#6		
+		{ 4 5 6 7 8 9 16 }			#7		
+		{ 4 5 6 7 8 9 16 }			#8		
+		{ 4 5 6 7 8 9 16 }			#9		
+		{ 10 11 12 16 }				#10		
+		{ 10 11 12 16 }				#11
+		{ 10 11 12 16 }				#12
+		{ 4 5 13 14 15 16 }			#13
+		{ 4 5 13 14 15 16 }			#14
+		{ 4 5 13 14 15 16 }			#15
+		{ 4 5 6 7 8 9 10 11 12 13 14 15 16 }	#16
 	}
 	
 	emblem = {
@@ -238,17 +262,28 @@ culture = {
 	# WHEN ADDING NEW, ALWAYS ADD AT THE END !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11111
 	textures = {
 		texture = {
-			file = "gfx\\coats_of_arms\\CoAs_Eastern.tga"
-			size = { x = 8 y = 2 }
-			noOfFrames = 16
-			color = 0
+			file = "gfx\\coats_of_arms\\pattern_christian.tga"
+			size = { x = 10 y = 10 }
+			noOfFrames = 100
+			color = 3
 			emblem = no
-			random = no # Do not use for random CoAs
+		}
+		texture = {
+			file = "gfx\\coats_of_arms\\pattern_christian_2.tga"
+			size = { x = 10 y = 8 }
+			noOfFrames = 72
+			color = 3
+			emblem = no
+		}
+		texture = {
+			file = "gfx\\coats_of_arms\\pattern_orthodox.tga"
+			size = { x = 10 y = 4 }
+			noOfFrames = 37
+			color = 3
+			emblem = no
 		}
 	}
 }
-
-#####GENERATED COAS
 
 culture = {
 	religion = {
@@ -658,291 +693,6 @@ culture = {
 		}
 	}
 		# WHEN ADDING NEW, ALWAYS ADD AT THE END !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11111
-}
-
-culture = {  ##caths and cath adjacent
-	religion = {
-		"apostolic"
-		"celeste"
-		"catholic"
-		"apparitionist"
-		"penitant"
-		"memento_mori"
-		"mariavite"
-		"coronite"
-		"oasite"
-		"insular"
-		"free_church"
-		"lutheran"
-		"seperatist"
-		"calvinist"
-		"iconoclast"
-		"quinto"
-		"sun_king_cultist"
-		"chevalier"
-	}
-	
-	templates = { 
-		"coa_plain:1"
-		"coa_party_per_fess:2"
-		"coa_party_per_pale:2"
-		"coa_party_per_cross:4"
-		"coa_party_triangle:3"
-	}
-
-	color = {
-		{ 252 219 0 }	#0		Yellow 1
-		{ 255 231 0 }	#1		Yellow 2 
-		{ 255 215 0 }	#2		Yellow 3 
-		{ 240 181 16 }	#3		Yellow 4 
-		{ 27 26 28 }	#4		Black 1 
-		{ 0 0 0 }		#5		Black 2 
-		{ 0 51 158 }	#6		Blue 1 
-		{ 0 123 218 }	#7		Blue 2 
-		{ 0 76 147 }	#8		Blue 3 
-		{ 15 71 175 }	#9		Blue 4
-		{ 174 16 31 }	#10		Red 1
-		{ 218 18 26 }	#11		Red 2 
-		{ 190 0 0 }		#12		Red 3 
-		{ 7 137 48 }	#13		Green 1
-		{ 0 107 60 }	#14		Green 2
-		{ 18 53 36 }	#15		Green 3 
-		{ 84 44 93 }	#16		Purple 
-		{ 255 255 255 }	#17		White
-	}
-	
-	rebel_colors = { 3 5 7 }
-
-	banned_colors = 
-	{ 
-		{ 0 1 2 3 }					#0		
-		{ 0 1 2 3 }					#1		
-		{ 0 1 2 3 }					#2		
-		{ 0 1 2 3	}				#3		
-		{ 4 5 6 7 8 9 1 2 3 16 }	#4		
-		{ 4 5 6 7 8 9 1 2 3 16 }	#5		
-		{ 4 5 6 7 8 9 16 }			#6		
-		{ 4 5 6 7 8 9 16 }			#7		
-		{ 4 5 6 7 8 9 16 }			#8		
-		{ 4 5 6 7 8 9 16 }			#9		
-		{ 10 11 12 16 }				#10		
-		{ 10 11 12 16 }				#11
-		{ 10 11 12 16 }				#12
-		{ 4 5 13 14 15 16 }			#13
-		{ 4 5 13 14 15 16 }			#14
-		{ 4 5 13 14 15 16 }			#15
-		{ 4 5 6 7 8 9 10 11 12 13 14 15 16 }	#16
-	}
-	
-	emblem = {
-		file = "gfx\\coats_of_arms\\emblem.tga"
-		noOfFrames = 25
-	}
-
-	# WHEN ADDING NEW, ALWAYS ADD AT THE END !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11111
-	textures = {
-		texture = {
-			file = "gfx\\coats_of_arms\\pattern_christian.tga"
-			size = { x = 10 y = 10 }
-			noOfFrames = 100
-			color = 3
-			emblem = no
-		}
-		texture = {
-			file = "gfx\\coats_of_arms\\pattern_christian_2.tga"
-			size = { x = 10 y = 8 }
-			noOfFrames = 72
-			color = 3
-			emblem = no
-		}
-		texture = {
-			file = "gfx\\coats_of_arms\\pattern_catholic.tga"
-			size = { x = 10 y = 3 }
-			noOfFrames = 25
-			color = 3
-			emblem = no
-		}
-	}
-}
-
-culture = {  ##orthos and ortho adjacent
-	religion = {
-		"orthodox"
-		"nekromante"
-		"old_believer"
-		"dukhovnye"
-		"dove"
-		"pravoslavie"
-		"dvoeverie"
-		"kozachina"
-	}
-	
-	templates = { 
-		"coa_plain:1"
-		"coa_party_per_fess:2"
-		"coa_party_per_pale:2"
-		"coa_party_per_cross:4"
-		"coa_party_triangle:3"
-	}
-
-	color = {
-		{ 252 219 0 }	#0		Yellow 1
-		{ 255 231 0 }	#1		Yellow 2 
-		{ 255 215 0 }	#2		Yellow 3 
-		{ 240 181 16 }	#3		Yellow 4 
-		{ 27 26 28 }	#4		Black 1 
-		{ 0 0 0 }		#5		Black 2 
-		{ 0 51 158 }	#6		Blue 1 
-		{ 0 123 218 }	#7		Blue 2 
-		{ 0 76 147 }	#8		Blue 3 
-		{ 15 71 175 }	#9		Blue 4
-		{ 174 16 31 }	#10		Red 1
-		{ 218 18 26 }	#11		Red 2 
-		{ 190 0 0 }		#12		Red 3 
-		{ 7 137 48 }	#13		Green 1
-		{ 0 107 60 }	#14		Green 2
-		{ 18 53 36 }	#15		Green 3 
-		{ 84 44 93 }	#16		Purple 
-		{ 255 255 255 }	#17		White
-	}
-	
-	rebel_colors = { 3 5 7 }
-
-	banned_colors = 
-	{ 
-		{ 0 1 2 3 }					#0		
-		{ 0 1 2 3 }					#1		
-		{ 0 1 2 3 }					#2		
-		{ 0 1 2 3	}				#3		
-		{ 4 5 6 7 8 9 1 2 3 16 }	#4		
-		{ 4 5 6 7 8 9 1 2 3 16 }	#5		
-		{ 4 5 6 7 8 9 16 }			#6		
-		{ 4 5 6 7 8 9 16 }			#7		
-		{ 4 5 6 7 8 9 16 }			#8		
-		{ 4 5 6 7 8 9 16 }			#9		
-		{ 10 11 12 16 }				#10		
-		{ 10 11 12 16 }				#11
-		{ 10 11 12 16 }				#12
-		{ 4 5 13 14 15 16 }			#13
-		{ 4 5 13 14 15 16 }			#14
-		{ 4 5 13 14 15 16 }			#15
-		{ 4 5 6 7 8 9 10 11 12 13 14 15 16 }	#16
-	}
-	
-	emblem = {
-		file = "gfx\\coats_of_arms\\emblem.tga"
-		noOfFrames = 25
-	}
-
-	# WHEN ADDING NEW, ALWAYS ADD AT THE END !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11111
-	textures = {
-		texture = {
-			file = "gfx\\coats_of_arms\\pattern_christian.tga"
-			size = { x = 10 y = 10 }
-			noOfFrames = 100
-			color = 3
-			emblem = no
-		}
-		texture = {
-			file = "gfx\\coats_of_arms\\pattern_christian_2.tga"
-			size = { x = 10 y = 8 }
-			noOfFrames = 72
-			color = 3
-			emblem = no
-		}
-		texture = {
-			file = "gfx\\coats_of_arms\\pattern_orthodox.tga"
-			size = { x = 10 y = 4 }
-			noOfFrames = 37
-			color = 3
-			emblem = no
-		}
-	}
-}
-
-culture = {  ##christians and vernacs that aren't cath, prot, orthodox or folketro 
-	religion = {
-		"nestorian"
-		"miaphysite"
-		"pentay"
-		"nasrani"
-		"ezharapallikal"
-	}
-	
-	templates = { 
-		"coa_plain:1"
-		"coa_party_per_fess:2"
-		"coa_party_per_pale:2"
-		"coa_party_per_cross:4"
-		"coa_party_triangle:3"
-	}
-
-	color = {
-		{ 252 219 0 }	#0		Yellow 1
-		{ 255 231 0 }	#1		Yellow 2 
-		{ 255 215 0 }	#2		Yellow 3 
-		{ 240 181 16 }	#3		Yellow 4 
-		{ 27 26 28 }	#4		Black 1 
-		{ 0 0 0 }		#5		Black 2 
-		{ 0 51 158 }	#6		Blue 1 
-		{ 0 123 218 }	#7		Blue 2 
-		{ 0 76 147 }	#8		Blue 3 
-		{ 15 71 175 }	#9		Blue 4
-		{ 174 16 31 }	#10		Red 1
-		{ 218 18 26 }	#11		Red 2 
-		{ 190 0 0 }		#12		Red 3 
-		{ 7 137 48 }	#13		Green 1
-		{ 0 107 60 }	#14		Green 2
-		{ 18 53 36 }	#15		Green 3 
-		{ 84 44 93 }	#16		Purple 
-		{ 255 255 255 }	#17		White
-	}
-	
-	rebel_colors = { 3 5 7 }
-
-	banned_colors = 
-	{ 
-		{ 0 1 2 3 }					#0		
-		{ 0 1 2 3 }					#1		
-		{ 0 1 2 3 }					#2		
-		{ 0 1 2 3	}				#3		
-		{ 4 5 6 7 8 9 1 2 3 16 }	#4		
-		{ 4 5 6 7 8 9 1 2 3 16 }	#5		
-		{ 4 5 6 7 8 9 16 }			#6		
-		{ 4 5 6 7 8 9 16 }			#7		
-		{ 4 5 6 7 8 9 16 }			#8		
-		{ 4 5 6 7 8 9 16 }			#9		
-		{ 10 11 12 16 }				#10		
-		{ 10 11 12 16 }				#11
-		{ 10 11 12 16 }				#12
-		{ 4 5 13 14 15 16 }			#13
-		{ 4 5 13 14 15 16 }			#14
-		{ 4 5 13 14 15 16 }			#15
-		{ 4 5 6 7 8 9 10 11 12 13 14 15 16 }	#16
-	}
-	
-	emblem = {
-		file = "gfx\\coats_of_arms\\emblem.tga"
-		noOfFrames = 25
-	}
-
-	# WHEN ADDING NEW, ALWAYS ADD AT THE END !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11111
-	textures = {
-		texture = {
-			file = "gfx\\coats_of_arms\\pattern_christian.tga"
-			size = { x = 10 y = 10 }
-			noOfFrames = 100
-			color = 3
-			emblem = no
-		}
-		texture = {
-			file = "gfx\\coats_of_arms\\pattern_christian_2.tga"
-			size = { x = 10 y = 8 }
-			noOfFrames = 72
-			color = 3
-			emblem = no
-		}
-	}
 }
 
 culture = {
@@ -2045,3 +1795,253 @@ culture = {
 		}
 	}
 }
+#####CUSTOM COAS
+
+culture = {
+	religion = {
+		"pagan"
+	}
+	
+	templates = { 
+		"coa_plain_pagan:1"
+	}
+
+	color = {
+		{ 252 219 0 }	#0		Yellow 1
+		{ 255 231 0 }	#1		Yellow 2 
+		{ 255 215 0 }	#2		Yellow 3 
+		{ 240 181 16 }	#3		Yellow 4 
+		{ 27 26 28 }	#4		Black 1 
+		{ 0 0 0 }		#5		Black 2 
+		{ 0 51 158 }	#6		Blue 1 
+		{ 0 123 218 }	#7		Blue 2 
+		{ 0 76 147 }	#8		Blue 3 
+		{ 15 71 175 }	#9		Blue 4
+		{ 174 16 31 }	#10		Red 1
+		{ 218 18 26 }	#11		Red 2 
+		{ 190 0 0 }		#12		Red 3 
+		{ 7 137 48 }	#13		Green 1
+		{ 0 107 60 }	#14		Green 2
+		{ 18 53 36 }	#15		Green 3 
+		{ 84 44 93 }	#16		Purple 
+		{ 255 255 255 }	#17		White
+	}
+	
+	rebel_colors = { }
+
+	banned_colors = 
+	{ 
+	}
+	
+	emblem = {
+		file = "gfx\\coats_of_arms\\emblem.tga"
+		noOfFrames = 25
+	}
+
+	# WHEN ADDING NEW, ALWAYS ADD AT THE END !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11111
+	textures = {
+		texture = {
+			file = "gfx\\coats_of_arms\\CoAs_Pagan.tga"
+			size = { x = 8 y = 3 }
+			noOfFrames = 24
+			color = 0
+			emblem = no
+			random = no # Do not use for random CoAs
+		}
+	}
+}
+
+culture = {
+	religion = {
+		"nondescript_christian"
+	}
+	
+	templates = { 
+		"coa_plain:1"
+	}
+
+	color = {
+		{ 252 219 0 }	#0		Yellow 1
+		{ 255 231 0 }	#1		Yellow 2 
+		{ 255 215 0 }	#2		Yellow 3 
+		{ 240 181 16 }	#3		Yellow 4 
+		{ 27 26 28 }	#4		Black 1 
+		{ 0 0 0 }		#5		Black 2 
+		{ 0 51 158 }	#6		Blue 1 
+		{ 0 123 218 }	#7		Blue 2 
+		{ 0 76 147 }	#8		Blue 3 
+		{ 15 71 175 }	#9		Blue 4
+		{ 174 16 31 }	#10		Red 1
+		{ 218 18 26 }	#11		Red 2 
+		{ 190 0 0 }		#12		Red 3 
+		{ 7 137 48 }	#13		Green 1
+		{ 0 107 60 }	#14		Green 2
+		{ 18 53 36 }	#15		Green 3 
+		{ 84 44 93 }	#16		Purple 
+		{ 255 255 255 }	#17		White
+	}
+	
+	rebel_colors = { }
+
+	banned_colors = 
+	{ 
+	}
+	
+	emblem = {
+		file = "gfx\\coats_of_arms\\emblem.tga"
+		noOfFrames = 25
+	}
+
+	# WHEN ADDING NEW, ALWAYS ADD AT THE END !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11111
+	textures = {
+		texture = {
+			file = "gfx\\coats_of_arms\\CoAs_Christian.tga"
+			size = { x = 8 y = 8 }
+			noOfFrames = 64
+			color = 0
+			emblem = no
+			random = no # Do not use for random CoAs
+		}
+		texture = {
+			file = "gfx\\coats_of_arms\\CoAs_Christian_2.tga"
+			size = { x = 8 y = 8 }
+			noOfFrames = 64
+			color = 0
+			emblem = no
+			random = no # Do not use for random CoAs
+		}
+		texture = {
+			file = "gfx\\coats_of_arms\\CoAs_Christian_3.tga"
+			size = { x = 8 y = 8 }
+			noOfFrames = 64
+			color = 0
+			emblem = no
+			random = no # Do not use for random CoAs
+		}
+		texture = {
+			file = "gfx\\coats_of_arms\\CoAs_Christian_4.tga"
+			size = { x = 8 y = 8 }
+			noOfFrames = 64
+			color = 0
+			emblem = no
+			random = no # Do not use for random CoAs
+		}
+	}
+}
+
+culture = {
+	religion = {
+		"nondescript_muslim"
+	}
+	
+	templates = { 
+		"coa_plain_muslim:1"
+	}
+
+	color = {
+		{ 252 219 0 }	#0		Yellow 1
+		{ 255 231 0 }	#1		Yellow 2 
+		{ 255 215 0 }	#2		Yellow 3 
+		{ 240 181 16 }	#3		Yellow 4 
+		{ 27 26 28 }	#4		Black 1 
+		{ 0 0 0 }		#5		Black 2 
+		{ 0 51 158 }	#6		Blue 1 
+		{ 0 123 218 }	#7		Blue 2 
+		{ 0 76 147 }	#8		Blue 3 
+		{ 15 71 175 }	#9		Blue 4
+		{ 174 16 31 }	#10		Red 1
+		{ 218 18 26 }	#11		Red 2 
+		{ 190 0 0 }		#12		Red 3 
+		{ 7 137 48 }	#13		Green 1
+		{ 0 107 60 }	#14		Green 2
+		{ 18 53 36 }	#15		Green 3 
+		{ 84 44 93 }	#16		Purple 
+		{ 255 255 255 }	#17		White
+	}
+	
+	rebel_colors = { }
+
+	banned_colors = 
+	{ 
+	}
+	
+	emblem = {
+		file = "gfx\\coats_of_arms\\emblem.tga"
+		noOfFrames = 25
+	}
+
+	# WHEN ADDING NEW, ALWAYS ADD AT THE END !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11111
+	textures = {
+		texture = {
+			file = "gfx\\coats_of_arms\\CoAs_Muslim.tga"
+			size = { x = 8 y = 8 }
+			noOfFrames = 64
+			color = 0
+			emblem = no
+			random = no # Do not use for random CoAs
+		}
+		texture = {
+			file = "gfx\\coats_of_arms\\CoAs_Muslim_2.tga"
+			size = { x = 8 y = 8 }
+			noOfFrames = 64
+			color = 0
+			emblem = no
+			random = no # Do not use for random CoAs
+		}
+	}
+}
+
+culture = {
+	religion = {
+		"nondescript_eastern"
+	}
+	
+	templates = { 
+		"coa_plain_indian:1"
+	}
+
+	color = {
+		{ 252 219 0 }	#0		Yellow 1
+		{ 255 231 0 }	#1		Yellow 2 
+		{ 255 215 0 }	#2		Yellow 3 
+		{ 240 181 16 }	#3		Yellow 4 
+		{ 27 26 28 }	#4		Black 1 
+		{ 0 0 0 }		#5		Black 2 
+		{ 0 51 158 }	#6		Blue 1 
+		{ 0 123 218 }	#7		Blue 2 
+		{ 0 76 147 }	#8		Blue 3 
+		{ 15 71 175 }	#9		Blue 4
+		{ 174 16 31 }	#10		Red 1
+		{ 218 18 26 }	#11		Red 2 
+		{ 190 0 0 }		#12		Red 3 
+		{ 7 137 48 }	#13		Green 1
+		{ 0 107 60 }	#14		Green 2
+		{ 18 53 36 }	#15		Green 3 
+		{ 84 44 93 }	#16		Purple 
+		{ 255 255 255 }	#17		White
+	}
+	
+	rebel_colors = { }
+
+	banned_colors = 
+	{ 
+	}
+	
+	emblem = {
+		file = "gfx\\coats_of_arms\\emblem.tga"
+		noOfFrames = 25
+	}
+
+	# WHEN ADDING NEW, ALWAYS ADD AT THE END !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11111
+	textures = {
+		texture = {
+			file = "gfx\\coats_of_arms\\CoAs_Eastern.tga"
+			size = { x = 8 y = 2 }
+			noOfFrames = 16
+			color = 0
+			emblem = no
+			random = no # Do not use for random CoAs
+		}
+	}
+}
+

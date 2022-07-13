@@ -1077,57 +1077,101 @@ e_mongolia = {
 		color2 = { 255 255 255 }
 		
 		capital = 1200 #Ulan-Ude
+			
+		buryat="Buryaad"
+		khalkha="Buriad"
 		
 		d_ulan_ude = {
 			color={ 75 152 232 }
 			color2={ 255 255 255 }
 		
 			capital = 1200 #Ulan-Ude
+			
+			buryat="Ulaan-Üde"
+			khalkha="Ulaan-Üd"
 		
 			c_ulan_ude = {
 				color={ 59 85 189 }
 				color2={ 255 255 255 }
 				
+				buryat="Ulaan-Üde"
+				khalkha="Ulaan-Üd"
+				
 				holy_site = proletcult
 				
-				b_ulan_ude = {}
-				b_selenginsk = {}
-				b_tarbagatay = {}
+				b_ulan_ude = {
+					buryat="Ulaan-Üde"
+					khalkha="Ulaan-Üd"}
+				b_selenginsk = {
+					buryat="Selengyn"
+					khalkha="Selenge"}
+				b_tarbagatay = {
+					buryat="Tarbagatai"
+					khalkha="Tarbagatai"}
 				b_onokhoi = {}
-				b_kamensk = {}
-				b_zaigraevo = {}
-				b_turuntayevo = {}
+				b_kamensk = {
+					buryat="Khaamin"}
+				b_zaigraevo = {
+					buryat="Zagarai"}
+				b_turuntayevo = {
+					buryat="Turantai"}
 			}
 			c_barguzin = {
 				color={ 45 166 202 }
 				color2={ 255 255 255 }
 				
-				b_barguzin = {}
-				b_kurumkan = {}
-				b_ust_barguzin = {}
-				b_baragkhan = {}
+				buryat="Bargajan"
+				khalkha="Bargajin"
+				
+				b_barguzin = {
+					buryat="Bargajan"
+					khalkha="Bargajin"}
+				b_kurumkan = {
+					buryat="Khuramkhaan"
+					khalkha="Khuramkhaan"}
+				b_ust_barguzin = {
+					buryat="Bargajanai Adag"
+					khalkha="Bargajinai Adag"}
+				b_baragkhan = {
+					buryat="Barkhan"
+					khalkha="Barkhan"}
 				b_ulyun = {}
 				b_uro = {}
-				b_alla = {}
+				b_alla = {
+					buryat="Dereen"
+					khalkha="Dereen"}
 			}
 			c_zakamensk = {
 				color={ 88 125 198 }
 				color2={ 255 255 255 }
 				
-				b_zakamensk = {}
-				b_petropavlovka_3 = {}
-				b_tsakir = {}
+				buryat="Zakhaamin"
+				khalkha="Zakhaamin"
+				
+				b_zakamensk = {
+					buryat="Zakhaamin"
+					khalkha="Zakhaamin"}
+				b_petropavlovka_3 = {
+					buryat="Shivee"
+					khalkha="Shivee"}
+				b_tsakir = {
+					buryat="Sakhir"}
 				b_beloozorsk = {}
-				b_nizhniy_torey = {}
-				b_kharatsay = {}
-				b_borgoy = {}
+				b_nizhniy_torey = {
+					buryat="Doodo Tori"}
+				b_kharatsay = {
+					buryat="Kharasaa"}
+				b_borgoy = {
+					buryat="Boriyooi"}
 			}
 			c_petrovsk_zabaykalsky = {
 				color={ 69 109 224 }
 				color2={ 255 255 255 }
 				
 				b_petrovsk_zabaykalsky = {}
-				b_khilok = {}
+				b_khilok = {
+					khalkha="Khilgo"
+					buryat="Khyolgo"}
 				b_bada_2 = {}
 				b_mogzon = {}
 				b_kharagun = {}
@@ -1140,30 +1184,49 @@ e_mongolia = {
 			color2={ 255 255 255 }
 		
 			capital = 1246 #Chita
+				
+			buryat="Über Baigal"
+			khalkha="Övör Baigal"
 		
 			c_chita = {
 				color={ 58 154 241 }
 				color2={ 255 255 255 }
 				
-				b_chita = {}
+				buryat="Shete"
+				khalkha="Chit"
+				
+				b_chita = {
+					buryat="Shete"
+					khalkha="Chit"}
 				b_ulety = {}
-				b_darasun = {}
+				b_darasun = {
+					buryat="Darahan"}
 				b_novokruchininskiy = {}
 				b_makkaveyevo = {}
-				b_domna = {}
+				b_domna = {
+					buryat="Domno"}
 				b_biofabrika = {}
 			}
 			c_agin_buryat = {
 				color={ 48 112 195 }
 				color2={ 255 255 255 }
 				
-				b_aginskoe = {}
-				b_duldurga = {}
+				buryat="Agyn Buryaad"
+				khalkha="Agyn Buriad"
+				
+				b_aginskoe = {
+					buryat="Aga"
+					khalkha="Ag"}
+				b_duldurga = {
+					buryat="Duldarga"}
 				b_nizhniy_tsasuchey = {}
 				b_ust_ilya = {}
 				b_aksha = {}
-				b_chindaley = {}
-				b_mogoitui = {}
+				b_chindaley = {
+					buryat="Shindalu"}
+				b_mogoitui = {
+					buryat="Mogoito"
+					khalkha="Mogoit"}
 			}
 			c_chernyshevsk = {
 				color={ 68 76 196 }
@@ -1181,11 +1244,18 @@ e_mongolia = {
 				color={ 23 96 159 }
 				color2={ 255 255 255 }
 				
-				b_borzya = {}
+				buryat="Boorjo"
+				khalkha="Boorj"
+				
+				b_borzya = {
+					buryat="Boorjo"
+					khalkha="Boorj"}
 				b_bezrechnaya = {}
 				b_krasnokamensk = {}
 				b_sherlovaya_gora = {}
-				b_zabaikalsk = {}
+				b_zabaikalsk = {
+					buryat="Über Baigal"
+					khalkha="Övör Baigal"}
 				b_aleksandrovskiy_zavod = {}
 				b_dosatui = {}
 			}
@@ -1205,12 +1275,18 @@ e_mongolia = {
 		d_severo_baykalsky = {
 			color={ 82 117 245 }
 			color2={ 255 255 255 }
+				
+			buryat="Khoito-Baigal"
+			khalkha="Khoidbaigal"
 		
 			capital = 1275 #Severobaykalsk
 		
 			c_bauntovsky = {
 				color={ 92 136 221 }
 				color2={ 255 255 255 }
+				
+				buryat="Babanta"
+				khalkha="Babant"
 				
 				b_bagdarin = {}
 				b_malovskiy = {}
@@ -1224,11 +1300,22 @@ e_mongolia = {
 				color={ 46 116 246 }
 				color2={ 255 255 255 }
 				
-				b_severobaykalsk = {}
-				b_severomuysk = {}
-				b_nizhneangarsk = {}
+				buryat="Khoito-Baigal"
+				khalkha="Khoidbaigal"
+				
+				b_severobaykalsk = {
+					buryat="Khoito-Baigal"
+					khalkha="Khoidbaigal"}
+				b_severomuysk = {
+					buryat="Khoito-Muyayn"
+					khalkha="Khoidmuya"}
+				b_nizhneangarsk = {
+					buryat="Doodo-Angar"
+					khalkha="Door Angar"}
 				b_kichera = {}
-				b_novy_uoyan = {}
+				b_novy_uoyan = {
+					buryat="Shene-Uoyan"
+					khalkha="Shine-Uoyan"}
 				b_kumora = {}
 				b_kunerminskoye = {}
 			}
@@ -1236,7 +1323,9 @@ e_mongolia = {
 				color={ 36 143 234 }
 				color2={ 255 255 255 }
 				
-				b_ust_muya = {}
+				b_ust_muya = {
+					buryat="Muyayn Adag"
+					khalkha="Muyayn Adag"}
 				b_taksimo = {}
 				b_chara = {}
 				b_kuanda = {}

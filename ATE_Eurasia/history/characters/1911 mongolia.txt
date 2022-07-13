@@ -135,7 +135,7 @@
 	trait=charitable
 	trait=brave
 	trait=cavalry_leader
-	trait=sympathy_eastern
+	trait=sympathy_dharmic
 	give_nickname=nick_khunnu
 	father=1911015
 	2607.9.24={birth=yes}
@@ -325,4 +325,199 @@
 	2646.10.27={birth=yes}
 	2665.1.1={add_spouse=1911016}
 	2665.1.1={effect={add_rival=1911008}}
+}
+1911026={
+	name="Maria"
+	female=yes
+	dynasty=1240175 #Krasnikov
+	culture=buryat
+	religion=dove
+	trait=tough_soldier
+	trait=strong
+	trait=lefthanded
+	trait=giant
+	trait=robust
+	trait=kind
+	trait=wroth
+	trait=ambitious
+	trait=aggressive_leader
+	2644.10.9={birth=yes}
+}
+1911027={
+	name="Tüden"
+	dynasty=1240103 #Narmin
+	culture=buryat
+	religion=dove
+	trait=stutter
+	trait=proud
+	trait=kind
+	trait=socializer
+	trait=stubborn
+	2599.10.9={birth=yes}
+}
+1911028={
+	name="Annakha"
+	dynasty=1240176 #Volkogonov
+	culture=buryat
+	religion=dvoeverie
+	2622.2.17={birth=yes}
+}
+1911029={
+	name="Bidia"
+	dynasty=0 
+	culture=buryat
+	religion=gelugpa
+	trait=mastermind_theologian
+	trait=sympathy_scholastic
+	trait=theologian
+	trait=temperate
+	trait=gregarious
+	2601.9.6={birth=yes}
+}
+1911030={
+	name="Gelia"
+	female=yes
+	dynasty=1240177 #Tseveniin
+	culture=buryat
+	religion=gelugpa
+	trait=altan_urag
+	2637.11.7={birth=yes}
+}
+1911031={
+	name="Tsyrendashi"
+	dynasty=1240178 #Belogorskii
+	culture=buryat
+	religion=gelugpa
+	2613.12.16={birth=yes}
+}
+1911032={
+	name="Dashinima"
+	dynasty=1240179 #Ukurik
+	culture=buryat
+	religion=gelugpa
+	father=1911033
+	2610.12.13={birth=yes}
+}
+1911033={
+	name="Lodon-Jamsa"
+	dynasty=1240179 #Ukurik
+	culture=buryat
+	religion=gelugpa
+	2584.11.26={birth=yes}
+	2624.7.18={death=yes}
+}
+1911034={
+	name="Chemed"
+	female=yes
+	dynasty=1240179 #Ukurik
+	culture=buryat
+	religion=gelugpa
+	father=1911033
+	2615.4.25={birth=yes}
+	2635.1.1={add_spouse=1911031}
+}
+1911035={
+	name="Otgonbayar"
+	dynasty=1624065 #Sönöd
+	culture=khorchin
+	religion=khanist
+	2608.9.28={birth=yes}
+}
+1911036={
+	name="Inli"
+	female=yes
+	dynasty=1624042 #Jargal
+	culture=khorchin
+	religion=khanist
+	trait=sturdy
+	trait=skilled_tactician
+	trait=wroth
+	trait=lefthanded
+	trait=ambitious
+	trait=zealous
+	father=1911037
+	2649.7.30={birth=yes}
+}
+1911037={
+	name="Gonchigsumlaa"
+	dynasty=1624042 #Jargal
+	culture=khorchin
+	religion=khanist
+	father=1911040
+	2618.11.28={birth=yes}
+	2665.12.27={death=yes}
+}
+1911038={
+	name="Yeshin-Khorlo"
+	dynasty=1240180 #Inkijinov
+	culture=buryat
+	religion=dvoeverie
+	trait=charismatic_negotiator
+	trait=adventurer
+	trait=sympathy_scholastic
+	trait=sympathy_old_world_cults
+	trait=fair
+	trait=shrewd
+	trait=diligent
+	trait=ambitious
+	2644.12.10={birth=yes}
+}
+1911039={
+	name="Valérie"
+	female=yes
+	dynasty=2009063 #Giraud
+	culture=parisian
+	religion=catholic
+	trait=fair
+	2645.7.14={birth=yes}
+	2665.1.1={add_spouse=1911038}
+	2665.1.1={effect={add_lover=1911038}}*
+	2665.1.1={culture=buryat}
+}
+1911040={
+	name="Mart"
+	dynasty=1624042 #Jargal
+	culture=khorchin
+	religion=khanist
+	2593.5.20={birth=yes}
+	2648.2.1={death=yes}
+}
+1911041={
+	name="Battögs"
+	female=yes
+	dynasty=1624042 #Jargal
+	culture=khorchin
+	religion=khanist
+	father=1911040
+	2616.9.8={birth=yes}
+}
+1911042={
+	name="Shianrong"
+	female=yes
+	dynasty=1624066 #Yunden
+	culture=khalkha
+	religion=khanist
+	trait=skilled_tactician
+	trait=scarred
+	trait=strong
+	trait=shrewd
+	trait=groomed
+	trait=strategist
+	trait=envious
+	trait=wroth
+	trait=brave
+	trait=cavalry_leader
+	mother=1911041
+	father=1911043
+	2644.8.25={birth=yes}
+}
+1911043={
+	name="Jambal"
+	female=yes
+	dynasty=1624066 #Yunden
+	culture=khalkha
+	religion=khanist
+	2613.12.18={birth=yes}
+	2638.1.1={add_spouse=1911041}
+	2661.11.26={death=yes}
 }

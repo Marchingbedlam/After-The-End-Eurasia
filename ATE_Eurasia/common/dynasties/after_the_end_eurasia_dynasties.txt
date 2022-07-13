@@ -1175,7 +1175,7 @@
 1240100 = { name="Erdniin" culture=buryat }
 1240101 = { name="Dawaan" culture=buryat }
 1240102 = { name="Badmin" culture=buryat }
-1240103 = { name="Narmin" culture=buryat }
+1240103 = { name="Narmin" culture=buryat religion=dove }
 1240104 = { name="Burlain" culture=buryat }
 1240105 = { name="Naguslai" culture=buryat }
 1240106 = { name="Yadamsüren" culture=buryat }
@@ -1247,6 +1247,38 @@
 1240172 = { name="Gombosüren" culture=buryat }
 1240173 = { name="Bayanmönkh" culture=buryat }
 1240174 = { name="Batbileg" culture=buryat }
+1240175 = { name="Krasnikov" culture=buryat used_for_random=no religion=dove }
+1240176 = { name="Volkogonov" culture=buryat used_for_random=no religion=dvoeverie }
+1240177 = { name="Tseveeniin" culture=buryat used_for_random=no religion=gelugpa 
+	coat_of_arms = { 
+		religion=nondescript_eastern
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 6
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1240178 = { name="Belogorskii" culture=buryat used_for_random=no religion=gelugpa }
+1240179 = { name="Ukurik" culture=buryat used_for_random=no religion=gelugpa }
+1240180 = { name="Inkijinov" culture=buryat used_for_random=no religion=dvoeverie 
+	coat_of_arms = {
+		religion=nondescript_christian
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 52
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 1258000 = { name="Agafonov" culture=akmolensk }
 1258001 = { name="Akhtsiger" culture=akmolensk }
@@ -3368,7 +3400,7 @@
 1624039 = { name="Erdenechuluun" culture=khorchin }
 1624040 = { name="Sükhbat" culture=khorchin }
 1624041 = { name="Lkhamsüren" culture=khorchin }
-1624042 = { name="Jargal" culture=khorchin }
+1624042 = { name="Jargal" culture=khorchin religion=khanist}
 1624043 = { name="Batsaikhan" culture=khorchin }
 1624044 = { name="Altantsetseg" culture=khorchin }
 1624045 = { name="Ganchimeg" culture=khorchin }
@@ -3389,8 +3421,36 @@
 1624060 = { name="Chuluunbat" culture=khorchin }
 1624061 = { name="Naranbaatar" culture=khorchin }
 1624062 = { name="Gonchig" culture=khorchin }
-1624063 = { name="Tsendiin" culture=khalkha used_for_random=no religion=gelugpa}
-1624064 = { name="Uudam" culture=khalkha used_for_random=no religion=gelugpa}
+1624063 = { name="Tsendiin" culture=khalkha used_for_random=no religion=gelugpa
+	coat_of_arms = { 
+		religion=nondescript_eastern
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 0
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1624064 = { name="Uudam" culture=khalkha used_for_random=no religion=gelugpa
+	coat_of_arms = { 
+		religion=nondescript_eastern
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 7
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1624065 = { name="Sönöd" culture=khorchin religion=khanist }
+1624066 = { name="Yunden" culture=khorchin religion=khanist }
 
 
 
@@ -7400,7 +7460,7 @@
 1911009 = { name= "Dupchur" culture=tuvan }
 1911010 = { name= "Chulydum" culture=tuvan }
 1911011 = { name= "Bapa" culture=tuvan }
-1911012 = { name= "Oidupaa" culture=tuvan }
+1911012 = { name= "Oidupaa" culture=tuvan religion=gelugpa }
 1911013 = { name= "Nimachap" culture=tuvan }
 1911014 = { name= "Skripaltschchikov" culture=tuvan }
 1911015 = { name= "Balkhyr" culture=tuvan }
@@ -7440,7 +7500,7 @@
 1911049 = { name= "Bayyr" culture=tuvan }
 1911050 = { name= "Sedip" culture=tuvan }
 1911051 = { name= "Chymba" culture=tuvan }
-1911052 = { name= "Shagdyrzhap" culture=tuvan }
+1911052 = { name= "Shagdyrzhap" culture=tuvan religion=gelugpa }
 1911053 = { name= "Toka" culture=tuvan }
 1911054 = { name= "Anchimaa-Toka" culture=tuvan }
 1911055 = { name= "Shirizhik" culture=tuvan }
@@ -15594,7 +15654,7 @@ coat_of_arms = {		religion=nondescript_christian		template = 0
 2022174 = { name="Rodríguez" culture=galician }
 2022175 = { name="Romai" culture=galician }
 2022176 = { name="Romarís" culture=galician }
-2022177 = { name="Romariz" culture=galician }
+2022177 = { name="Romariz" culture=galician religion=quinto }
 2022178 = { name="Saa" culture=galician }
 2022179 = { name="Saavedra" culture=galician }
 2022180 = { name="Sabarís" culture=galician }
@@ -15899,7 +15959,7 @@ coat_of_arms = {		religion=nondescript_christian		template = 0
 2024105 = { name="Gomes" culture=portuguese }
 2024106 = { name="Gonçalves" culture=portuguese }
 2024107 = { name="Gonsalves" culture=portuguese }
-2024109 = { name="Gouveia" culture=portuguese }
+2024109 = { name="Gouveia" culture=portuguese religion=quinto}
 2024110 = { name="Guardado" culture=portuguese }
 2024111 = { name="Guedes" culture=portuguese }
 2024012 = { name="Guerra" culture=portuguese }
@@ -15971,7 +16031,7 @@ coat_of_arms = {		religion=nondescript_christian		template = 0
 2024178 = { name="Parra" culture=portuguese }
 2024179 = { name="Passig" culture=portuguese }
 2024180 = { name="Passos" culture=portuguese }
-2024181 = { name="Pereira" culture=portuguese }
+2024181 = { name="Pereira" culture=portuguese religion=quinto}
 2024182 = { name="Pereira da Silva" culture=portuguese }
 2024183 = { name="Peres" culture=portuguese }
 2024184 = { name="Pilar" culture=portuguese }
@@ -16039,7 +16099,7 @@ coat_of_arms = {		religion=nondescript_christian		template = 0
 2024235 = { name="Varejão" culture=portuguese }
 2024236 = { name="Varela" culture=portuguese }
 2024237 = { name="Vasconcelos" culture=portuguese }
-2024238 = { name="Vaz" culture=portuguese }
+2024238 = { name="Vaz" culture=portuguese religion=quinto}
 2024239 = { name="Velga" culture=portuguese }
 2024240 = { name="Venancio" culture=portuguese }
 2024241 = { name="Vidal" culture=portuguese }
@@ -16059,10 +16119,10 @@ coat_of_arms = {		religion=nondescript_christian		template = 0
 2024255 = { name="Pinho" culture=portuguese }
 2024256 = { name="Valente" culture=portuguese }
 2024257 = { name="Vicente" culture=portuguese }
-2024258 = { name="Guimarães" culture=portuguese }
-2024259 = { name="da Veiga" culture=portuguese }
-2024260 = { name="de Almeida" culture=portuguese }
-2024261 = { name="Curvelo" culture=portuguese }
+2024258 = { name="Guimarães" culture=portuguese religion=quinto}
+2024259 = { name="da Veiga" culture=portuguese religion=quinto}
+2024260 = { name="de Almeida" culture=portuguese religion=quinto}
+2024261 = { name="Curvelo" culture=portuguese religion=quinto}
 
 2025000 = { name="Quintana" culture=canarian }
 2025001 = { name="Betancor" culture=canarian }
