@@ -471,7 +471,7 @@
 	trait=fair
 	2645.7.14={birth=yes}
 	2665.1.1={add_spouse=1911038}
-	2665.1.1={effect={add_lover=1911038}}*
+	2665.1.1={effect={add_lover=1911038}}
 	2665.1.1={culture=buryat}
 }
 1911040={
@@ -513,11 +513,173 @@
 }
 1911043={
 	name="Jambal"
-	female=yes
 	dynasty=1624066 #Yunden
 	culture=khalkha
 	religion=khanist
 	2613.12.18={birth=yes}
 	2638.1.1={add_spouse=1911041}
 	2661.11.26={death=yes}
+}
+1911044={
+	name="Naranbaatar"
+	dynasty=1624043 #Batsaikhan
+	culture=khalkha
+	religion=khanist
+	2624.6.1={birth=yes}
+}
+1911045={
+	name="Baatar"
+	dynasty=1479081 #Rinchen
+	culture=khalkha
+	religion=khanist
+	trait=skilled_tactician
+	trait=cavalry_leader
+	trait=altan_urag
+	trait=familyperson
+	trait=trickster
+	trait=ambitious
+	trait=adventurer
+	trait=brave
+	trait=temperate
+	trait=shrewd
+	trait=sturdy
+	trait=quick
+	trait=scarred
+	father=1911046
+	mother=1911047
+	2645.10.4={birth=yes} ###Meant to be a posthumous child
+	2666.1.1={
+		prestige=500
+		effect={
+			spawn_unit={
+				province=1247 #Govi-Altai
+				owner=ROOT
+				troops={
+					archers={250 250}
+					heavy_infantry={250 750}
+					light_infantry={500 500}
+				}
+				attrition=0.5
+			}
+			spawn_unit={
+				province=1247 #Govi-Altai
+				owner=ROOT
+				troops={
+					archers={250 250}
+					heavy_infantry={250 750}
+					light_infantry={500 500}
+				}
+				attrition=0.5
+			}
+		}
+	}
+}
+1911046={
+	name="Mönkh-Ochir"
+	dynasty=1479081 #Rinchen
+	culture=khalkha
+	religion=khanist
+	trait=altan_urag
+	father=1911048
+	2623.11.30={birth=yes}
+	2644.1.1={add_spouse=1911047}
+	2645.3.7={death={death_reason=death_murder killer=1911055}}
+}
+1911047={
+	name="Dariga"
+	female=yes
+	dynasty=0
+	culture=kazakh
+	religion=ak_jeng
+	2620.1.22={birth=yes}
+}
+1911048={
+	name="Tsedevsüren"
+	dynasty=1479081 #Rinchen
+	culture=khalkha
+	religion=khanist
+	trait=altan_urag
+	father=1911049
+	2595.10.6={birth=yes}
+	2637.3.31={death=yes}
+}
+1911049={
+	name="Mendbayar"
+	dynasty=1479081 #Rinchen
+	culture=khalkha
+	religion=khanist
+	trait=altan_urag
+	father=1911049
+	2571.8.16={birth=yes}
+	2634.1.21={death=yes}
+}
+1911050={
+	name="Gaadan"
+	dynasty=1479081 #Rinchen
+	culture=khalkha
+	religion=khanist
+	trait=altan_urag
+	father=1911049
+	2598.4.15={birth=yes}
+	2645.3.7={death={death_reason=death_murder killer=1911055}}
+}
+1911051={
+	name="Batgerel"
+	dynasty=1479081 #Rinchen
+	culture=khalkha
+	religion=khanist
+	trait=altan_urag
+	father=1911049
+	2603.12.21={birth=yes}
+	2639.12.2={death=yes}
+}
+1911052={
+	name="Jigjidjav"
+	dynasty=1479081 #Rinchen
+	culture=khalkha
+	religion=khanist
+	trait=altan_urag
+	father=1911049
+	2607.8.26={birth=yes}
+	2645.3.7={death={death_reason=death_murder killer=1911055}}
+}
+1911053={
+	name="Sharav"
+	dynasty=1479081 #Rinchen
+	culture=khalkha
+	religion=khanist
+	father=1911050
+	trait=twin
+	trait=altan_urag
+	2620.2.15={birth=yes}
+	2645.3.7={death={death_reason=death_murder killer=1911055}}
+}
+1911054={
+	name="Luvsannorov"
+	dynasty=1479081 #Rinchen
+	culture=khalkha
+	religion=khanist
+	father=1911050
+	trait=twin
+	trait=altan_urag
+	2620.2.15={birth=yes}
+	2645.3.7={death={death_reason=death_murder killer=1911055}}
+}
+1911055={
+	name="Jargalsaikhan"
+	dynasty=1479081 #Rinchen
+	culture=khalkha
+	religion=khanist
+	father=1911051
+	trait=skilled_tactician
+	trait=authoritative
+	trait=stressed
+	trait=fair
+	trait=groomed
+	trait=hunter
+	trait=lustful
+	trait=patient
+	trait=arbitrary
+	trait=altan_urag
+	2623.11.24={birth=yes}
 }

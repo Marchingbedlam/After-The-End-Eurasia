@@ -2168,6 +2168,20 @@
 		}
 	}
 }
+1479081 = { name="Rinchen" culture=khalkha 
+	coat_of_arms = { 
+		religion=pagan
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 20
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 1501000 = { name="Ó Fearghail" culture=irish used_for_random=no 
 	coat_of_arms = {		religion=nondescript_christian		template = 0
@@ -3401,7 +3415,7 @@
 1624040 = { name="Sükhbat" culture=khorchin }
 1624041 = { name="Lkhamsüren" culture=khorchin }
 1624042 = { name="Jargal" culture=khorchin religion=khanist}
-1624043 = { name="Batsaikhan" culture=khorchin }
+1624043 = { name="Batsaikhan" culture=khorchin religion=khanist}
 1624044 = { name="Altantsetseg" culture=khorchin }
 1624045 = { name="Ganchimeg" culture=khorchin }
 1624046 = { name="Tsogtbaatar" culture=khorchin }
@@ -3421,7 +3435,7 @@
 1624060 = { name="Chuluunbat" culture=khorchin }
 1624061 = { name="Naranbaatar" culture=khorchin }
 1624062 = { name="Gonchig" culture=khorchin }
-1624063 = { name="Tsendiin" culture=khalkha used_for_random=no religion=gelugpa
+1624063 = { name="Tsendiin" culture=khorchin used_for_random=no religion=gelugpa
 	coat_of_arms = { 
 		religion=nondescript_eastern
 		template = 0
@@ -3435,7 +3449,7 @@
 		}
 	}
 }
-1624064 = { name="Uudam" culture=khalkha used_for_random=no religion=gelugpa
+1624064 = { name="Uudam" culture=khorchin used_for_random=no religion=gelugpa
 	coat_of_arms = { 
 		religion=nondescript_eastern
 		template = 0
@@ -3449,8 +3463,34 @@
 		}
 	}
 }
-1624065 = { name="Sönöd" culture=khorchin religion=khanist }
-1624066 = { name="Yunden" culture=khorchin religion=khanist }
+1624065 = { name="Sönöd" culture=khorchin religion=khanist 
+	coat_of_arms = { 
+		religion=pagan
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 19
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1624066 = { name="Yunden" culture=khorchin religion=khanist used_for_random=no
+	coat_of_arms = { 
+		religion=pagan
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 18
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 
 
@@ -8720,7 +8760,20 @@
 1948014 = { name="von Seeckt" culture=ossi}
 1948015 = { name="Ebert" culture=ossi}
 1948016 = { name="Löbe" culture=ossi}
-1948017 = { name="von Tresckow" culture=ossi}
+1948017 = { name="von Tresckow" culture=ossi
+	coat_of_arms = {
+		religion=nondescript_christian
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 56
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1948018 = { name="Bielschowsky" culture=ossi}
 1948019 = { name="Furtwängler" culture=ossi}
 1948020 = { name="Dragendorff" culture=ossi}
@@ -30866,7 +30919,20 @@ coat_of_arms = {		religion=nondescript_christian		template = 0
 }
 2124003 = { name="Klauzunik" culture=odrzan }
 2124004 = { name="Szpan" culture=odrzan }
-2124005 = { name="Chabior" culture=odrzan }
+2124005 = { name="Chabior" culture=odrzan 
+	coat_of_arms = {
+		religion=nondescript_christian
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 53
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2124006 = { name="Herbut" culture=odrzan }
 
 2125000 = { name="Archacki" culture=mazovian}
@@ -31118,7 +31184,20 @@ coat_of_arms = {		religion=nondescript_christian		template = 0
 }
 2125237 = { name="Kur" culture=mazovian }
 2125238 = { name="Wysocki" culture=mazovian }
-2125239 = { name="Rawicki" culture=mazovian }
+2125239 = { name="Rawicki" culture=mazovian 
+	coat_of_arms = {
+		religion=nondescript_christian
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 57
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 2126000 = { name="Gasienica" culture=goral}
 2126001 = { name="Gasienica-Daniel" culture=goral}
@@ -31641,10 +31720,49 @@ coat_of_arms = {		religion=nondescript_christian		template = 0
 2129218 = { name="Ziwczok" culture=silesian }
 2129219 = { name="Zyblikiewicz" culture=silesian }
 2129220 = { name="Luc" culture=silesian }
-2129221 = { name="Szeja-Bibersztajn" culture=silesian }
-2129222 = { name="Blacha" culture=silesian }
+2129221 = { name="Szeja-Bibersztajn" culture=silesian 
+	coat_of_arms = {
+		religion=nondescript_christian
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 58
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2129222 = { name="Blacha" culture=silesian 
+	coat_of_arms = {
+		religion=nondescript_christian
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 54
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2129223 = { name="Sordyl" culture=silesian }
-2129224 = { name="Hajbura" culture=silesian }
+2129224 = { name="Hajbura" culture=silesian 
+	coat_of_arms = {
+		religion=nondescript_christian
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 60
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 2130000 = { name="Belecki" culture=wielkopolan }
 2130001 = { name="Bielinski" culture=wielkopolan }
@@ -31858,14 +31976,66 @@ coat_of_arms = {		religion=nondescript_christian		template = 0
 2130208 = { name="Dziecmiarowski" culture=wielkopolan }
 2130209 = { name="Dzierzbinski" culture=wielkopolan }
 2130210 = { name="Chodowiecki" culture=wielkopolan }
-2130211 = { name="Taczak" culture=wielkopolan }
+2130211 = { name="Taczak" culture=wielkopolan 
+	coat_of_arms = {
+		religion=nondescript_christian
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 55
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2130212 = { name="Bamber" culture=wielkopolan }
 2130213 = { name="Biziel" culture=wielkopolan }
 2130214 = { name="Bagdasarian" culture=wielkopolan used_for_random=no }
-2130215 = { name="Lejszys" culture=wielkopolan }
-2130216 = { name="Boniek" culture=wielkopolan }
+2130215 = { name="Lejszys" culture=wielkopolan 
+	coat_of_arms = {
+		religion=nondescript_christian
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 61
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2130216 = { name="Boniek" culture=wielkopolan 
+	coat_of_arms = {
+		religion=nondescript_christian
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 59
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2130217 = { name="Rygielski" culture=wielkopolan }
-2130218 = { name="Asnyk" culture=wielkopolan }
+2130218 = { name="Asnyk" culture=wielkopolan 
+	coat_of_arms = {
+		religion=nondescript_christian
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 62
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 2131000 = { name="Glazer" culture=malopolan }
 2131001 = { name="Ngujen" culture=malopolan }

@@ -3806,6 +3806,18 @@ e_visegrad = {
 		schwyzer="Pole"
 		alsatian="Pole"
 		
+		allow = {
+			war = no
+			NOT = { tier = emperor }
+			calc_true_if = {
+				amount = 4
+				completely_controls = d_pomerania
+				completely_controls = d_mazovia
+				completely_controls = d_lesser_poland
+				completely_controls = d_greater_poland
+			}
+		}
+		
 		d_pomerania = {
 			color={ 233 62 59 }
 			color2={ 255 255 255 }

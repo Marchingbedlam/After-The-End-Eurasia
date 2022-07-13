@@ -366,7 +366,12 @@ e_mongolia = {
 				color={ 148 109 13 }
 				color2={ 255 255 255 }
 				
-				b_dalaihubu = {}
+				khorchin="Ejene"
+				khalkha="Eznee"
+				
+				b_dalaihubu = {
+					khorchin="Dalaikhöb"
+					khalkha="Dalaikhöb"}
 				b_hangkong = {}
 				b_dongfeng = {}
 				b_saihan_taolai = {}
@@ -378,11 +383,22 @@ e_mongolia = {
 				color={ 190 110 52 }
 				color2={ 255 255 255 }
 				
-				b_badain_jaran = {}
-				b_bayanhot = {}
+				khorchin="Alasha"
+				khalkha="Alshaa"
+				beifanghua="Alashan"
+				
+				b_badain_jaran = {
+					beifanghua="Badanjilin"
+					khorchin="Badanjilin"}
+				b_bayanhot = {
+					khalkha="Bayankhot"}
 				b_yabulai = {}
-				b_alateng_obao = {}
-				b_bayingole = {}
+				b_alateng_obao = {
+					khorchin="Altan Uubo"
+					khalkha="Altan Uubo"}
+				b_bayingole = {
+					khorchin="Bayanguul"
+					khalkha="Bayanguul"}
 				b_barunbieli = {}
 				b_erkhashhasum = {}
 			}
