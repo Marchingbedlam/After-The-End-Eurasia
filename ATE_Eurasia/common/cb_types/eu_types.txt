@@ -1336,7 +1336,27 @@ interdynasty_war = {
 	
 	sort_priority = 2000
 	
+	can_use = {
+		has_character_flag = interdynasty_war
+	}
+	
 	on_add = {
+		ROOT = {
+			show_scope_change = no
+			any_claim = {
+				show_scope_change = no
+				limit = {
+					holder_scope = {
+						OR = {
+							character = FROM
+							is_liege_or_above = FROM
+						}
+					}
+					ROOT = { has_strong_claim = PREV }
+				}
+				press_claim = ROOT
+			}
+		}
 		hidden_tooltip = { fire_haruspicy_event_effect = yes }
 		if = {
 			limit = { defender = { is_offmap_governor = offmap_china } }
@@ -1349,112 +1369,199 @@ interdynasty_war = {
 
 	on_success = {
 		ROOT = {
-			piety = 100
+			show_scope_change = no
+			hidden_tooltip = {
+				if = {
+					limit = {
+						ROOT = { is_landed = no }
+						FROM = { government = nomadic_tribal_government }
+					}
+					ROOT = { set_character_flag = fr_adventurer_nomad_check }
+				}
+			}
+			any_claim = {
+				show_scope_change = no
+				limit = {
+					holder_scope = {
+						OR = {
+							character = FROM
+							is_liege_or_above = FROM
+						}
+					}
+					ROOT = { has_strong_claim = PREV }
+				}
+				usurp_title_plus_barony_if_unlanded = { target = ROOT type = claim }
+				if = {
+					limit = {
+						higher_tier_than = BARON
+						NOT = { culture = ROOT }
+					}
+					hidden_tooltip = { conquest_culture = ROOT }
+				}
+			}
+			FROM = {
+				imprison = ROOT
+				any_vassal = {
+					set_defacto_liege = ROOT
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = {
+						ROOT = { has_character_flag = fr_adventurer_nomad_check }
+					}
+					if = {
+						limit = { ROOT = { is_nomadic_tribal_culture = yes } }
+						ROOT = { set_government_type = nomadic_tribal_government }
+						ROOT = { character_event = { id = nomadtribalmaint.2 } }
+						ROOT = { character_event = { id = nomadtribalmaint.13 } }
+						ROOT = { character_event = { id = nomadtribalmaint.7 } }
+					}
+				}
+				ROOT= { clr_character_flag = fr_adventurer_nomad_check }
+			}
+			if = { China with no land calculates what to do with nomad provinces
+				limit = { 
+					is_offmap_governor = yes
+					offmap_power = { is_offmap_tag = offmap_china }
+					offmap_china = { has_offmap_tmp_flag = WP_is_not_on_map }
+					NOT = { wealth = 2500 } #unless already rich from tributes
+				}
+				set_variable = { which = "WP_nomad_provinces" value = 0 }
+				any_realm_province = {
+					limit = { 
+						has_province_modifier = nomad_agitation
+						NOT = { has_settlement_construction = yes }
+					}
+					province_event = { id = JD.60100 } #increase counter for each nomad province
+				}
+				character_event = { id = JD.60101 days = 1 } #calculate gold sent from china for building holdings
+			}
+			if = { #Ethiopia with no land calculates what to do with nomad provinces
+				limit = { 
+					is_offmap_governor = yes
+					offmap_power = { is_offmap_tag = offmap_ethiopia }
+					offmap_ethiopia = { has_offmap_tmp_flag = NG_is_not_on_map }
+					NOT = { wealth = 2500 } #unless already rich from tributes
+				}
+				set_variable = { which = "WP_nomad_provinces" value = 0 }
+				any_realm_province = {
+					limit = { 
+						has_province_modifier = nomad_agitation
+						NOT = { has_settlement_construction = yes }
+					}
+					province_event = { id = JD.60100 } increase counter for each nomad province
+				}
+				character_event = { id = JD.60101 days = 1 } #calculate gold sent from china for building holdings
+			}
+		}
+		hidden_tooltip = {
+			ROOT = {
+				if = {
+					limit = {
+						has_dlc = "Legacy of Rome"
+						OR = { 
+							has_landed_title = e_byzantium
+							has_landed_title = e_roman_empire
+						}
+						OR = { 
+							religion_group = christian
+							religion = hellenic_pagan
+							religion = hellenic_pagan_reformed
+						}
+					}
+					character_event = { id = LoR.30 days = 12 }
+				}
+			}
+		}
+		ROOT = {
+			show_scope_change = no
 			participation_scaled_prestige = 100
 		}
 		any_attacker = {
 			limit = { NOT = { character = ROOT } }
 			hidden_tooltip = { participation_scaled_prestige = 100 }
 		}
-		FROM = {
-			piety = -100
-			prestige = -100
-			
+
+		hidden_tooltip = {
+			check_if_reconquista_finished_effect = yes
+			FROM = {
+				landless_pope_effect = yes
+			}
 			if = {
 				limit = {
-					is_reformed_religion = ROOT
-					controls_religion = no
-				}
-				religion = ROOT # Reformed pagans are forced to convert back
-			}
-			
-			custom_tooltip = {
-				text = tribal_subjugation_tip
-			}
-				
-			hidden_tooltip = {
-				opinion = {
-					modifier = opinion_subjugated 
-					who = ROOT
-				}
-				any_vassal = {
-					opinion = {
-						modifier = opinion_subjugated 
-						who = ROOT
+					has_character_flag = is_otto
+					FROM = {
+						has_character_flag = is_giselbert
 					}
-				}				
-				any_demesne_title = {
-					limit = {
-						higher_tier_than = ROOT
-					}
-					ROOT = { usurp_title = { target = PREV type = invasion } }
-					add_pressed_claim = PREV
 				}
-				any_demesne_title = {
-					limit = {
-						tier = ROOT
-					}
-					ROOT = { usurp_title = { target = PREV type = invasion } }
-					add_pressed_claim = PREV
-				}
-				set_defacto_liege = ROOT
+				reverse_imprison = FROM
 			}
 		}
 	}
-	
+
 	on_fail = {
+		ROOT = {
+			show_scope_change = no
+			prestige = -150
+		}
 		FROM = {
-			prestige = 50
-			participation_scaled_prestige = 50
+			show_scope_change = no
+			participation_scaled_prestige = 75
 		}
 		any_defender = {
 			limit = { NOT = { character = FROM } }
-			hidden_tooltip = { participation_scaled_prestige = 50 }
-		}
-		ROOT = {
-			prestige = -100
-			imprison = FROM
+			hidden_tooltip = { participation_scaled_prestige = 75 }
 		}
 	}
 
 	on_reverse_demand = {
 		ROOT = {
+			show_scope_change = no
 			prestige = -200
 			transfer_scaled_wealth = {
 				to = FROM
-				value = 2.0
+				value = 4.0
+			}
+			any_claim = {
+				show_scope_change = no
+				limit = {
+					holder_scope = {
+						OR = {
+							character = FROM
+							is_liege_or_above = FROM
+						}
+					}
+					ROOT = { has_strong_claim = PREV }
+				}
+				ROOT = { show_scope_change = no remove_claim = PREV }
+			}
+			hidden_effect = {
+				if = { Makes China have a chance of leaving Expanionist policy...
+					limit = {
+						has_landed_title = e_china_west_governor
+						offmap_china = {
+							has_policy = china_expansionist
+						}
+					}
+					random = {
+						chance = 50
+						offmap_china = {
+							set_policy = china_open
+							log = "-------------------------------------"
+							log = "China Policy Logging:"
+							log = "Chinas new Policy is now OPEN"
+							log = "-------------------------------------"
+						}
+					}
+					log = "China War Logging: China lost a claim all war against [From.GetBestName]"
+				}
 			}
 			imprison = FROM
-			hidden_tooltip = {
-				opinion = {
-					modifier = opinion_subjugated 
-					who = ROOT
-				}
-				any_vassal = {
-					opinion = {
-						modifier = opinion_subjugated 
-						who = ROOT
-					}
-				}				
-				any_demesne_title = {
-					limit = {
-						higher_tier_than = FROM
-					}
-					FROM = { usurp_title = { target = PREV type = invasion } }
-					add_pressed_claim = PREV
-				}
-				any_demesne_title = {
-					limit = {
-						tier = FROM
-					}
-					FROM = { usurp_title = { target = PREV type = invasion } }
-					add_pressed_claim = PREV
-				}
-				set_defacto_liege = FROM
-			}
 		}
 		FROM = {
-			prestige = 100
+			show_scope_change = no
+			participation_scaled_prestige = 200
 			if = {
 				limit = { 
 					has_dlc = "Legacy of Rome"
@@ -1462,55 +1569,24 @@ interdynasty_war = {
 						has_landed_title = e_byzantium
 						has_landed_title = e_roman_empire
 					}
-						OR = { 
-							religion_group = christian
-							religion = hellenic_pagan
-							religion = hellenic_pagan_reformed
-						}
+					OR = { 
+						religion_group = christian
+						religion = hellenic_pagan
+						religion = hellenic_pagan_reformed
+					}
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
-			custom_tooltip = {
-				text = tribal_subjugation_tip
-			}
-			hidden_tooltip = {
-				opinion = {
-					modifier = opinion_subjugated 
-					who = FROM
-				}
-				any_vassal = {
-					opinion = {
-						modifier = opinion_subjugated 
-						who = FROM
-					}
-				}				
-				any_demesne_title = {
-					limit = {
-						higher_tier_than = ROOT
-					}
-					FROM = { usurp_title = { target = PREV type = invasion } }
-					add_pressed_claim = PREV
-				}
-				any_demesne_title = {
-					limit = {
-						tier = ROOT
-					}
-					FROM = { usurp_title = { target = PREV type = invasion } }
-					add_pressed_claim = PREV
-				}
-				set_defacto_liege = ROOT
-			}
-			imprison = FROM
-			participation_scaled_prestige = 100
 		}
 		any_defender = {
 			limit = { NOT = { character = FROM } }
-			hidden_tooltip = { participation_scaled_prestige = 100 }
+			hidden_tooltip = { participation_scaled_prestige = 200 }
 		}
+
 	}
 
 	attacker_ai_victory_worth = {
-		factor = -1 # always accept
+		factor = -1  #always accept
 	}
 	
 	attacker_ai_defeat_worth = {
@@ -1523,27 +1599,6 @@ interdynasty_war = {
 	
 	defender_ai_defeat_worth = {
 		factor = 100
-	}
-	
-	ai_will_do = { 
-		factor = 1
-		modifier = { #Focus on Coronation first.
-			factor = 0.1
-			has_dlc = "Holy Fury"
-			ROOT = {
-				is_feudal = yes
-				OR = {
-					religion = catholic
-					religion = fraticelli
-				}
-				NOR = {
-					trait = crowned_by_priest
-					trait = crowned_by_bishop
-					trait = crowned_by_pope
-					trait = crowned_by_myself
-				}
-			}
-		}
 	}
 }
 
