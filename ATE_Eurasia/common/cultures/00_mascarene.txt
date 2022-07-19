@@ -36,7 +36,7 @@ mascarene = {
 			BÈatrice BÈrÈnice Brigitte
 			Camille Chantal Charlène Cheryl ChloÈ Christine Claire Coeur Coralie Coraline CÈline Cynthia
 			Daliana Dora Dorothy
-			Edwige Eileen Elia Elise Estelle
+			Edwige Eileen Elia Elise Émeline Estelle
 			Fabienne Flora
 			GaÎlle Georgette Ginette Gwen Gwendoline GÈraldine
 			Harmony Honorine Huguette HÈlène
@@ -53,7 +53,6 @@ mascarene = {
 			Tanya
 			Vanessa ValÈrie VÈronique Virginie
 			Wendy
-			…meline 
 		}
 		
 		dynasty_title_names = no
@@ -61,6 +60,133 @@ mascarene = {
 		from_dynasty_prefix = ""
 		
 		modifier = default_culture_modifier
+	}
+
+}
+	
+	reunionnese = {
+			graphical_cultures = { egyptiangfx africangfx }
+		
+		color = { 0.2 1.0 0.2 }
+
+		male_names = {
+			Abdoulhadi Adnan Adrien Aimane Ajagane Alain Alex Alexandre Alexis Allan Amine Amédée Anas André Andréas Andy Anthony Arnaud Arthur Avinash
+			Baptiste Basile Benjamin Benoit Bernard Bertin Brayan Bruno
+			Camille Casimir Chakir Chanemougam Charlemagne Claude Clément Cyril Cédric Césaire
+			Damien Daniel David Dharmaradjee Didier Dimitri Djabir Djalil Dominique Dyvan
+			Edouard Elie Eliot Emmanuel Emrick Enzo Epiphane Evane Expédit Élouan
+			Fabien Fabrice Farhane Firmin Francis Franck
+			Hamid Hamza Hassène Hicham Houzaifah Hugo
+			Idriss Imrhane Ismael
+			Jackson Jacquelin Jacques Jason Jayanti Jayram Jean Jean-Bernard Jean-Claude Jean-Emmanuel Jean-Hugues Jean-Laurent Jean-Renée,Jean-Régis Jérome Jérémy Jordane Joseph Joël Judicaël Jules Juliano Julien
+			Kainoa Karim Kasim Kichagane Krishna Kumaran Kîrthivarsen 
+			Laurent Lenny Lionel Lorys Louis Louis-Casimir Louis-Georges Loïc Loïs Lucas Lucien Ludovic Ludovic 
+			Magadeva Maleck Martin Marvin Matthias Maxime Maël Médéric Michel Mickaël Mohammad Mondésir Mouniamane Moïse
+			Narcisse Nassim Nazir Naïme Nestor Nicolas Noah Novane Noé 
+			Octave Olivier Omar Othman Ousman 
+			Pacha Pascale Patrice Paul Philidor Philippe Pierrick Prakash
+			Samuel Sandjivi Sarasvady Saturnin Sebastien Shankarène Sirangom Sivane Sofiane Sollajagane Sormalygam Stéphane Sullyvan Sylvestre
+			Tandabârny Thibaut Thierry Thimothée Théo Tristan 
+			Ulrick Ulysses 
+			Victor Vidjay Vincent Virgile 
+			Waliyyoullah William Wilson
+			Xavier
+			Yacoub Yanick Yann Yannis Yashine Yavann Yves Yves-Henri
+			Zayyan Zaïne
+
+		}
+		female_names = {
+			Aditee Adèle Agathe Agnès Ajanee Alice Alimah Alison Amalia Amandine Ambre Anathalie Anaël Anaïs Ange Angélique Anjali Anna Anne-gaëlle Anésie Arielle Arlette Artémis Athéna Audrey Aycha Azimah Aïda Aïmma
+			Benjamine Binda Blandine Brigitte Brunella Béatrice Bérénice
+			Camille Capucine Catherine Chantal Charlène Chiva Chloé Christine Chrystel Claire Coeur Coralie Coraline Cybille Cédrine Céliane Céline
+			Daivy Delphine Deviah Dineshwari Djeya Dora Dorine Duesha Dylaine 
+			Elia Elise Eléonor Émeline Emilie Emma Emmanuelle Espèrance Estelle Eugènie Euphrasie Eveline Expédite 
+			Fabienne Fannie Farida Fatima Faïda Fleur Flora Florelle Florine
+			Gaëlle Georgette Gracette Gwendoline Généreuse Géraldine
+			Harmony Hazatha Henriette Honorine Huguette
+			Indira Iris
+			Jade Jodie Josiane Joséphine Julia Julianne Julie Juliette Justine Jôdishwari 
+			Kalyanie Kamila Karine Kashmira Krishna
+			Laura Laure Laurence Laurine Laëtitia Leslie Leïla Lilie Linda Lindsay Loréna Louanne Lucida Lucine Ludivine Lydie
+			Magalie Mahëva Manon Marceline Marguerite Marianne Marie Marie-Josée Marie-Lyne Marie-Léana Marie-Marguerite Marie-Paul,Marie-Rose Marina Marine Matéa Maël Maëlys Maëva Meileen Michele Morgane Morgane Murah Muriel Mylène Mélanie Mélia Mélina Mélinda Mélodie Mérédith
+			Nadine Nadège Naoline Naomé Nasrine Nassima Nina Noa Nour Noëlle
+			Océane Odette Olympiade Ophélie Orianne Oumadévi Oumarani
+			Papillon Pauline Philogène Pricile Péroundévy
+			Rachida Raïssa Reyana Roselyne Rubie Régine Réhana
+			Sabine Sabrina Sakina Salomé Sandjana Sandrine Sandéhéswâri Sarasvati Shamila Shiva Solène Sophie Soubamane Stella Stéphane
+			Tahera Thalie Thérèse Vanina Vimala Virginie Vivienne
+			Wendy
+			Yasmine Yolande
+			Zohra Zélie Zïa
+		}
+		
+		dynasty_title_names = no
+		
+		from_dynasty_prefix = ""
+		
+		modifier = default_culture_modifier
+	}
+
+}
+}
+	
+	morisien = {
+			graphical_cultures = { southindiangfx indiangfx }
+		
+		color = { 0.2 1.0 0.2 }
+
+			male_names = {
+			Aartee Adarsh Ahad Ahmad Ajay Ajmal Akash Akhilesh Akram Ali Amarnath Ameer Amiroudine Amit Amuratlal Amédée Andry Aniket Anil Anju Anwar Archagar Arvin Ashik Ashok Ashish Ashvin Ashok Ashraf Asraf Avinash
+			Bajrang Bashir Beelal
+			Callychurn Chiranjeev Clyde Curtis
+			Dhanraj Deepak
+			Ehsaan
+			Fabrice Gilbert Goofran
+			Harish Hashveer Hussain Irfaan Ismael Ivan
+			Jairaj James Jayraj Jogesh Jonathan,
+			Kanand Kavin Keshav Khemraj Kiran Kivaraj Koosham Kumar Kushesh
+			Lenine Louis
+			Mahen Mahendra Michael Moonish
+			Nagen Naresh Naveeta Nayat Nirmal Nissar Niveda
+			Octave,Oudesh,Oumesh,
+			Parmanand Pavan Prasad Prashant Pravesh Preetam Prince
+			Raj Rajen Rajesh Rajeshwar Rajkumar Rajnish Ramesh Randhir Rattan Ravi Ridwaan Rohan Roshan Ruben
+			Saabir Sachin Sailesh Sanjay Sanjeet Sanjiv Sardar Satar Satish Sawan Shashi Shaun Shoghi Showkut Sooraj Sudh
+			Tariq Tawfiq Trilok,
+			Umesh Varun Vashisht Vikash Vikram Vinay Vinod Viraj Virshwarnath Vishal
+			Yaasir Yadhav Yasir Yaswant Yoven Yuvraj 
+			Zahair Zeeshaan Zulfeekar
+		
+		}
+			female_names = {
+			Aasha Adila Aditee Ameerah Anand Anaïs Aneshta Angel Anisah Anjali Anjanee Anjoo Annaruby Anousha Anshi Anusha Ashwinee Avista 
+			Brinda
+			Catherine Chandni Charlène Chitrasha Christiane
+			Darshitah Deena Devi Deviah Devianee Dhamika Dinasha
+			Emilie Eyleen Eugenie Euphrosine
+			Farah Farzana Feiza
+			Indira Indranee
+			Jennifer Jenny Jordana Juliette
+			Kamila Kirun Krisni
+			Lakshana Lakshmi Lakshmibai Lalisha Love
+			Madvi Manjaree Manju Marie-France Marie-Noelle Maya Meeraj Menkah Minakshi
+			Nandinee Nashia Nashreen Natasha Nayyara Neetoo Nirekha Nirila Nirmala Noorjahan
+			Odile
+			Paviola Philomene Praneel Praveena Priscilla
+			Rajcoomaree Rajwantee Reena Rekha Renoushah Reshma Rookminee Rouma Rukhsaar
+			Saberah Saguna Sandy Sangeetha Saniah Sanjana Savitri Seeta Sheila Shivani Sulakshna Sultana Sumaiyah Sunita
+			Tina
+			Usha
+			Varsha Varshini Vendana Vida Vidya Vijayta Vimalai
+			Youvena 
+			Zanisha
+			}
+		
+			dynasty_title_names = no
+		
+			from_dynasty_prefix = ""
+		
+			modifier = default_culture_modifier
 	}
 
 }
