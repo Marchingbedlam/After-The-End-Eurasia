@@ -14,7 +14,7 @@ e_turkestan = {
 		
 		capital = 978 #Akmola
 		
-		kazakh="Orta Júz"
+		kazakh="Orta Jüz"
 		turkmen="Orta Ýüz"
 		kyrgyz="Orto Jüz"
 		turkmen="Akmolla"
@@ -24,7 +24,7 @@ e_turkestan = {
 			color2={ 255 255 255 }
 		
 			kazakh="Aqmola"
-			kyrgyz="Akmolo"
+			kyrgyz="Aqmolo"
 			turkmen="Akmolla"
 			
 			capital = 978 #Akmola
@@ -34,12 +34,12 @@ e_turkestan = {
 				color2={ 255 255 255 }
 		
 				kazakh="Aqmola"
-				kyrgyz="Akmolo"
+				kyrgyz="Aqmolo"
 				turkmen="Akmolla"
 				
 				b_akmola = {
 					kazakh="Aqmola"
-					kyrgyz="Akmolo"
+					kyrgyz="Aqmolo"
 					turkmen="Akmolla"}
 				b_koschi = {}
 				b_vishnevka = {}
@@ -60,12 +60,17 @@ e_turkestan = {
 					karakalpak="Qorg'aljin"
 					kazakh="Qorghaljyn"
 					uzbek="Qo'rg'aljin"}
-				b_zhanteke = {}
+				b_zhanteke = {
+					kazakh="Janteke"}
 				b_sabyndy = {}
-				b_urkendeu = {}
-				b_zhumai = {}
-				b_uyaly = {}
-				b_shalkar_2 = {}
+				b_urkendeu = {
+					kazakh="Örkendeu"}
+				b_zhumai = {
+					kazakh="Jumai"}
+				b_uyaly = {
+					kazakh="Uialy"}
+				b_shalkar_2 = {
+					kazakh="Shalqar"}
 			}
 			c_esil = {
 				color={ 91 168 100 }
@@ -76,30 +81,39 @@ e_turkestan = {
 				b_esil = {
 					uzbek="Yesil"}
 				b_atbasar = {}
-				b_derzhavinsk = {}
-				b_zhaksy = {}
-				b_pyatigorsky = {}
-				b_ishimka = {}
-				b_krasiviye = {}
+				b_derzhavinsk = {
+					kazakh="Derjavinsk"}
+				b_zhaksy = {
+					kazakh="Jaqsy"}
+				b_pyatigorsky = {
+					kazakh="Piatigorskoe"}
+				b_ishimka = {
+					kazakh="Ishimskoe"}
+				b_krasiviye = {
+					kazakh="Krasivoe"}
 			}
 			c_kokshetau = {
 				color={ 165 192 103 }
 				color2={ 255 255 255 }
 				
-				kazakh="Kókshetaý"
-				kyrgyz="Kökçö-Too"
+				kazakh="Kökshetau"
+				kyrgyz="Kökchö-Too"
 				uzbek="Ko'kshetau"
 				karakalpak="Ko'kshetaiw"
 				
 				b_kokshetau = {
-					kazakh="Kókshetaý"
-					kyrgyz="Kökçö-Too"
+					kazakh="Kökshetau"
+					kyrgyz="Kökchö-Too"
 					uzbek="Ko'kshetau"
 					karakalpak="Ko'kshetaiw"}
-				b_zerenda = {}
-				b_yelenovka = {}
-				b_akkol = {}
-				b_krasnyl_yar = {}
+				b_zerenda = {
+					kazakh="Zerendi"}
+				b_yelenovka = {
+					kazakh="Elenovka"}
+				b_akkol = {
+					kazakh="Aqköl"}
+				b_krasnyl_yar = {
+					kazakh="Qyzyl jar"}
 				b_kenesary = {}
 				b_alekseevka = {}
 			}
@@ -107,18 +121,23 @@ e_turkestan = {
 				color={ 104 154 96 }
 				color2={ 255 255 255 }
 				
-				kazakh="Shchýchinsk"
+				kazakh="Shchuchinsk"
 				uzbek="Shuchinsk"
 				
 				b_shchuchinsk = {
-					kazakh="Shchýchinsk"
+					kazakh="Shchuchinsk"
 					uzbek="Shuchinsk"}
 				b_makinsk = {}
-				b_burabay = {}
-				b_stepnyak = {}
-				b_zhanalyk = {}
-				b_katarkol = {}
-				b_saule = {}
+				b_burabay = {
+					kazakh="Burabai"}
+				b_stepnyak = {
+					kazakh="Stepniak"}
+				b_zhanalyk = {
+					kazakh="Jañalyk"}
+				b_katarkol = {
+					kazakh="Qatarköl"}
+				b_saule = {
+					kazakh="Säule"}
 			}
 		}
 		d_karagandy = {
@@ -147,11 +166,15 @@ e_turkestan = {
 					tajik="Qaraghandi"
 					turkmen="Garaganda"}
 				b_temirtau = {}
-				b_shakhtinsk = {}
-				b_abay = {}
-				b_botakara = {}
+				b_shakhtinsk = {
+					kazakh="Shahtinsk"}
+				b_abay = {
+					kazakh="Abai"}
+				b_botakara = {
+					kazakh="Botaqara"}
 				b_rostovka = {}
-				b_kokpekty_2 = {}
+				b_kokpekty_2 = {
+					kazakh="Kökpekti"}
 			}
 			c_balkhash = {
 				color={ 63 100 198 }
@@ -159,29 +182,40 @@ e_turkestan = {
 				
 				kazakh="Balqash"
 				uzbek="Balxash"
-				kyrgyz="Balkash"
+				kyrgyz="Balqash"
 				
 				b_balkhash = {
 					kazakh="Balqash"
 					uzbek="Balxash"
-					kyrgyz="Balkash"}
+					kyrgyz="Balqash"}
 				b_saryshagan = {}
-				b_gulshat = {}
-				b_zhanaortalyk = {}
-				b_konyrat = {}
-				b_kounradskiy = {}
-				b_shashubay = {}
+				b_gulshat = {
+					kazakh="Gülshat"}
+				b_zhanaortalyk = {
+					kazakh="Janaortalyk"}
+				b_konyrat = {
+					kazakh="Qoñyrat"}
+				b_kounradskiy = {
+					kazakh="Kounradskii"}
+				b_shashubay = {
+					kazakh="Shashubai"}
 			}
 			c_shet = {
 				color={ 50 163 245 }
 				color2={ 255 255 255 }
 				
-				b_aksu_ayuly = {}
-				b_akadyr = {}
-				b_akshatau = {}
-				b_moyynty = {}
-				b_zhambul = {}
-				b_koktenkol = {}
+				b_aksu_ayuly = {
+					kazakh="Aqsu-Aiuly"}
+				b_akadyr = {
+					kazakh="Aqadyr"}
+				b_akshatau = {
+					kazakh="Aqshatau"}
+				b_moyynty = {
+					kazakh="Moiynty"}
+				b_zhambul = {
+					kazakh="Jambyl"}
+				b_koktenkol = {
+					kazakh="Köktiñköli"}
 				b_burma = {}
 			}
 			c_karkaraly = {
@@ -194,12 +228,18 @@ e_turkestan = {
 				b_karkaraly = {
 					kazakh="Qarqaraly"
 					uzbek="Qarqarali"}
-				b_egindybulak = {}
-				b_karbushevka = {}
-				b_bakty = {}
-				b_aktasty = {}
-				b_zharly = {}
-				b_koyandy = {}
+				b_egindybulak = {
+					kazakh="Egindibulaq"}
+				b_karbushevka = {
+					kazakh="Köktas"}
+				b_bakty = {
+					kazakh="Baqty"}
+				b_aktasty = {
+					kazakh="Aqtasty"}
+				b_zharly = {
+					kazakh="Jarly"}
+				b_koyandy = {
+					kazakh="Qoiandy"}
 			}
 		}
 		d_zhezqazghan = {
@@ -209,7 +249,7 @@ e_turkestan = {
 			capital = 551 #Zhezqazghan
 			
 			kazakh="Jezqazghan"
-			kyrgyz="Jezkazgan"
+			kyrgyz="Jezqazgan"
 			uzbek="Jezqazg'an"
 			
 			c_zhezqazghan = {
@@ -217,33 +257,39 @@ e_turkestan = {
 				color2={ 255 255 255 }
 			
 				kazakh="Jezqazghan"
-				kyrgyz="Jezkazgan"
+				kyrgyz="Jezqazgan"
 				uzbek="Jezqazg'an"
 				
 				b_zhezqazghan = {
 					kazakh="Jezqazghan"
-					kyrgyz="Jezkazgan"
+					kyrgyz="Jezqazgan"
 					uzbek="Jezqazg'an"}
-				b_satpayev = {}
-				b_kengir = {}
-				b_terekty = {}
+				b_satpayev = {
+					kazakh="Sätbaev"}
+				b_kengir = {
+					kazakh="Keñgir"}
+				b_terekty = {
+					kazakh="Terekti"}
 				b_nikolskiy = {}
-				b_geologicheski = {}
+				b_geologicheski = {
+					kazakh="Geologicheskii"}
 				b_mybulak = {}
 			}
 			c_ulytau = {
 				color={ 82 125 186 }
 				color2={ 255 255 255 }
 				
-				kazakh="Ulytaý"
-				
-				b_ulytau = {
-					kazakh="Ulytaý"}
-				b_karsakbay = {}
-				b_zhezdy = {}
-				b_sarlyk = {}
-				b_baykonur = {}
-				b_koskol = {}
+				b_ulytau = {}
+				b_karsakbay = {
+					kazakh="Qarsaqpai"}
+				b_zhezdy = {
+					kazakh="Jezdi"}
+				b_sarlyk = {
+					kazakh="Sarlyq"}
+				b_baykonur = {
+					kazakh="Baiqoñyr"}
+				b_koskol = {
+					kazakh="Qosköl"}
 				b_poselok_severnyy = {}
 			}
 			c_nura = {
@@ -252,11 +298,15 @@ e_turkestan = {
 				
 				b_nura = {}
 				b_kievka = {}
-				b_kazagorodok = {}
-				b_baitugan = {}
-				b_shakhterskoe = {}
+				b_kazagorodok = {
+					kazakh="Kazgorodok"}
+				b_baitugan = {
+					kazakh="Baitughan"}
+				b_shakhterskoe = {
+					kazakh="Shahter"}
 				b_zarechnoe = {}
-				b_kulanotpes = {}
+				b_kulanotpes = {
+					kazakh="Kulanötpes"}
 			}
 			c_zhanaarka = {
 				color={ 120 198 241 }
@@ -265,12 +315,18 @@ e_turkestan = {
 				kazakh="Jañaarqa"
 				
 				b_atasu = {}
-				b_karamola = {}
-				b_karazhal = {}
-				b_zhairem = {}
-				b_qyzylzhar = {}
-				b_shalginskiy = {}
-				b_aktau_2 = {}
+				b_karamola = {
+					kazakh="Qaramola"}
+				b_karazhal = {
+					kazakh="Qarajal"}
+				b_zhairem = {
+					kazakh="Jäirem"}
+				b_qyzylzhar = {
+					kazakh="Qyzyljar"}
+				b_shalginskiy = {
+					kazakh="Shalginskii"}
+				b_aktau_2 = {
+					kazakh="Aqtau"}
 			}
 		}
 		d_kostanay = {
@@ -298,12 +354,17 @@ e_turkestan = {
 					uzbek="Qo'stanay"
 					tajik="Qustanay"
 					karakalpak="Qostanay"}
-				b_zatobolsk = {}
-				b_rudny = {}
-				b_borovskoy = {}
-				b_fyodorovka = {}
+				b_zatobolsk = {
+					kazakh="Zatobol"}
+				b_rudny = {
+					kazakh="Rudnyi"}
+				b_borovskoy = {
+					kazakh="Borovskoi"}
+				b_fyodorovka = {
+					kazakh="Fiodorovka"}
 				b_arshaly = {}
-				b_karabalyk = {}
+				b_karabalyk = {
+					kazakh="Qarabalyq"}
 			}
 			c_arkalyk = {
 				color={ 84 176 182 }
@@ -315,12 +376,15 @@ e_turkestan = {
 				b_arkalyk = {
 					uzbek="Orqaliq"
 					kazakh="Arqalyq"}
-				b_furmanovka = {}
+				b_furmanovka = {
+					kazakh="Furmanovo"}
 				b_tasty_2 = {}
 				b_amangeldi = {}
-				b_turgay = {}
+				b_turgay = {
+					kazakh="Torghai"}
 				b_shoptykol = {}
-				b_gornyak = {}
+				b_gornyak = {
+					kazakh="Gorniak"}
 			}
 			c_zhetikara = {
 				color={ 100 146 125 }
@@ -332,12 +396,16 @@ e_turkestan = {
 				b_zhetikara = {
 					kazakh="Jitiqara"
 					uzbek="Jitiqara"}
-				b_zhailma = {}
+				b_zhailma = {
+					kazakh="Jaiylma"}
 				b_denisovka = {}
-				b_bestobye = {}
-				b_lisakovsk = {}
+				b_bestobye = {
+					kazakh="Bestöbe"}
+				b_lisakovsk = {
+					kazakh="Lisakovsk"}
 				b_pushkino_2 = {}
-				b_kamyshnoye = {}
+				b_kamyshnoye = {
+					kazakh="Kamyshnoe"}
 			}
 			c_karasu = {
 				color={ 43 144 139 }
@@ -349,12 +417,16 @@ e_turkestan = {
 				b_karasu = {
 					kazakh="Qarasu"
 					uzbek="Qorasuv"}
-				b_sarykol = {}
-				b_sholaksay = {}
+				b_sarykol = {
+					kazakh="Saryköl"}
+				b_sholaksay = {
+					kazakh="Sholaqsay"}
 				b_shili = {}
 				b_kushmurun = {}
-				b_auliekol = {}
-				b_zapadnoye = {}
+				b_auliekol = {
+					kazakh="Äulieköl"}
+				b_zapadnoye = {
+					kazakh="Zapadnoe"}
 			}
 		}
 		d_shygys_saryarqa = {
@@ -362,8 +434,6 @@ e_turkestan = {
 			color2={ 255 255 255 }
 			
 			capital = 804 #Urzhar
-			
-			kazakh="Shyghys-Saryarqa"
 
 			c_urzhar = {
 				color={ 143 205 154 }
@@ -374,28 +444,38 @@ e_turkestan = {
 				b_urzhar = {
 					kazakh="Úrjar"}
 				b_taskesken = {}
-				b_makanchi = {}
-				b_karabulak_3 = {}
-				b_zharbulak = {}
-				b_zhalanashkol = {}
+				b_makanchi = {
+					kazakh="Maqanshy"}
+				b_karabulak_3 = {
+					kazakh="Qarabulaq"
+					uzbek="Qorabuloq"}
+				b_zharbulak = {
+					kazakh="Jarbulak"}
+				b_zhalanashkol = {
+					kazakh="Jalañashköl"}
 				b_naualy = {}
 			}
 			c_ayagoz = {
 				color={ 90 185 196 }
 				color2={ 255 255 255 }
 				
-				kazakh="Aiagóz"
+				kazakh="Aiagöz"
 				uzbek="Ayag'uz"
 				
 				b_ayagoz = {
-					kazakh="Aiagóz"
+					kazakh="Aiagöz"
 					uzbek="Ayag'uz"}
-				b_aktogay = {}
-				b_tansyk = {}
+				b_aktogay = {
+					kazakh="Aqtoghai"}
+				b_tansyk = {
+					kazakh="Tañsyq"}
 				b_shumakan = {}
-				b_aygyz = {}
-				b_shagray = {}
-				b_karagash = {}
+				b_aygyz = {
+					kazakh="Aighyz"}
+				b_shagray = {
+					kazakh="Shaghrai"}
+				b_karagash = {
+					kazakh="Qaraghash"}
 			}
 			c_abay = {
 				color={ 135 205 195 }
@@ -404,12 +484,18 @@ e_turkestan = {
 				kazakh="Abai"
 				
 				b_karauyl = {}
-				b_kyzyltas = {}
-				b_zhurekadyr = {}
-				b_kaskabulak = {}
-				b_olzhabay = {}
-				b_koryk = {}
-				b_kosagosh = {}
+				b_kyzyltas = {
+					kazakh="Qyzyltash"}
+				b_zhurekadyr = {
+					kazakh="Jürekadyr"}
+				b_kaskabulak = {
+					kazakh="Qasqabulaq"}
+				b_olzhabay = {
+					kazakh="Oljabai"}
+				b_koryk = {
+					kazakh="Koryk"}
+				b_kosagosh = {
+					kazakh="Qosaghash"}
 			}
 		}
 	}
@@ -424,7 +510,7 @@ e_turkestan = {
 		uzbek="Olmaota"
 		karakalpak="Alpati"
 		tajik="Olmoty"
-		kazakh="Uly Júz"
+		kazakh="Uly Jüz"
 		
 		d_almaty = {
 			color={ 10 216 223 }
@@ -451,28 +537,41 @@ e_turkestan = {
 					uzbek="Olmaota"
 					karakalpak="Alpati"
 					tajik="Olmoty"}
-				b_kapchagay = {}
-				b_kaskelen = {}
-				b_talgar = {}
-				b_uzynagash = {}
-				b_kurty = {}
-				b_kargaly = {}
+				b_kapchagay = {
+					kazakh="Qapchaghay"}
+				b_kaskelen = {
+					kazakh="Qaskeleñ"}
+				b_talgar = {
+					kazakh="Talghar"}
+				b_uzynagash = {
+					kazakh="Uzynaghash"}
+				b_kurty = {
+					kazakh="Qürti"}
+				b_kargaly = {
+					kazakh="Qarghaly"}
 			}
 			c_alakol = {
 				color={ 49 185 168 }
 				color2={ 255 255 255 }
 				
-				kazakh="Alakól"
+				kazakh="Alaköl"
 				uzbek="Alako'l"
 				tajik="Alokul"
 				
-				b_usharal = {}
-				b_sarkand = {}
-				b_beskol = {}
-				b_kabanbay = {}
-				b_zhanama = {}
-				b_alakol = {}
-				b_lepsy = {}
+				b_usharal = {
+					kazakh="Üsharal"}
+				b_sarkand = {
+					kazakh="Sarqan"}
+				b_beskol = {
+					kazakh="Besköl"}
+				b_kabanbay = {
+					kazakh="Qabanbay"}
+				b_zhanama = {
+					kazakh="Janama"}
+				b_alakol = {
+					kazakh="Alaköl"}
+				b_lepsy = {
+					kazakh="Lepsi"}
 			}
 			c_bakanas = {
 				color={ 71 206 197 }
@@ -488,31 +587,41 @@ e_turkestan = {
 					tajik="Baqanas"}
 				b_topar = {}
 				b_balatopar = {}
-				b_zhideli = {}
-				b_araltobe_2 = {}
-				b_akzhar_2 = {}
-				b_karaoy = {}
+				b_zhideli = {
+					kazakh="Jideli"}
+				b_araltobe_2 = {
+					kazakh="Araltöbe"}
+				b_akzhar_2 = {
+					kazakh="Aqjar"}
+				b_karaoy = {
+					kazakh="Qaraoi"}
 			}
 			c_taldykorgan = {
 				color={ 35 246 188 }
 				color2={ 255 255 255 }
 				
 				kazakh="Taldyqorghan"
-				kyrgyz="Taldy-Korgon"
+				kyrgyz="Taldy-Qorghon"
 				uzbek="Taldiqo'rg'an"
 				karakalpak="Taldiqorg'an"
 				
 				b_taldykorgan = {
 					kazakh="Taldyqorghan"
-					kyrgyz="Taldy-Korgon"
+					kyrgyz="Taldy-Qorghon"
 					uzbek="Taldiqo'rg'an"
 					karakalpak="Taldiqorg'an"}
-				b_zhansugirov = {}
-				b_aksu_3 = {}
-				b_balpyk_bi = {}
-				b_ushtobe = {}
-				b_kalpe = {}
-				b_kuraksu = {}
+				b_zhansugirov = {
+					kazakh="Jansügirov"}
+				b_aksu_3 = {
+					kazakh="Aqsu"}
+				b_balpyk_bi = {
+					kazakh="Balpyq Bi"}
+				b_ushtobe = {
+					kazakh="Üshtöbe"}
+				b_kalpe = {
+					kazakh="Kälpe"}
+				b_kuraksu = {
+					kazakh="Quraqsu"}
 			}
 		}
 		d_ili = {
@@ -533,22 +642,23 @@ e_turkestan = {
 				
 				beifanghua = "Yining"
 				kazakh="Qulja"
-				kyrgyz="Kulja"
+				kyrgyz="Qulja"
 				uzbek="G'ulja"
 				
 				b_ghulja = {
 					beifanghua = "Yining"
 					kazakh="Qulja"
-					kyrgyz="Kulja"
+					kyrgyz="Qulja"
 					uzbek="G'ulja"
 				}
-				b_jelilyuzi = {}
-				b_qorghas = {
-					beifanghua = "Huocheng"
-				}
-				b_chapchal_shibe = {}
+				b_jelilyuzi = {
+					uighur="Jélilyüzi"}
+				b_qorghas = {}
+				b_chapchal_shibe = {
+					kazakh="Shabshal-Sibe"}
 				b_gongliu = {}
-				b_toqquztara = {}
+				b_toqquztara = {
+					kazakh="Toghyztarau"}
 				b_yengitam = {}
 			}
 			c_kunes = {
@@ -557,12 +667,12 @@ e_turkestan = {
 								
 				beifanghua = "Xinyuan"
 				uighur="Künas"
-				kazakh="Kúnes"
+				kazakh="Künes"
 				
 				b_kunes = {
 					beifanghua = "Xinyuan"
 					uighur="Künas"
-					kazakh="Kúnes"
+					kazakh="Künes"
 				}
 				b_qarabora = {}
 				b_narat = {}
@@ -624,7 +734,8 @@ e_turkestan = {
 			
 			capital = 1278 #Kyzylorda
 			
-			kyrgyz="Kyzylordo"
+			kazakh="Qyzylorda"
+			kyrgyz="Qyzylordo"
 			uzbek="Qizilo'rda"
 			karakalpak="Qizilorda"
 			tajik="Qyzylurda"
@@ -634,24 +745,31 @@ e_turkestan = {
 				color={ 95 203 184 }
 				color2={ 255 255 255 }
 			
-				kyrgyz="Kyzylordo"
+				kazakh="Qyzylorda"
+				kyrgyz="Qyzylordo"
 				uzbek="Qizilo'rda"
 				karakalpak="Qizilorda"
 				tajik="Qyzylurda"
 				turkmen="Gyzyl-ordy"
 				
 				b_kyzylorda = {
-					kyrgyz="Kyzylordo"
+					kazakh="Qyzylorda"
+					kyrgyz="Qyzylordo"
 					uzbek="Qizilo'rda"
 					karakalpak="Qizilorda"
 					tajik="Qyzylurda"
 					turkmen="Gyzyl-ordy"}
-				b_tasbuget = {}
+				b_tasbuget = {
+					kazakh="Tasböget"}
 				b_akkum_2 = {}
-				b_chagan = {}
-				b_terenozek = {}
-				b_karaozek = {}
-				b_irkol = {}
+				b_chagan = {
+					kazakh="Chagan"}
+				b_terenozek = {
+					kazakh="Tereñözek"}
+				b_karaozek = {
+					kazakh="Qaraözek"}
+				b_irkol = {
+					kazakh="Iirköl"}
 			}
 			c_baikonur = {
 				color={ 19 241 149 }
@@ -665,12 +783,17 @@ e_turkestan = {
 				b_baikonur = {
 					kazakh="Baiqoñyr"
 					uzbek="Boyqo'ng'ir"}
-				b_korkyt = {}
+				b_korkyt = {
+					kazakh="Qorqyt"}
 				b_engels_2 = {}
-				b_dzhusaly = {}
-				b_akzhar = {}
+				b_dzhusaly = {
+					kazakh="Josaly"
+					kyrgyz="Josholu"}
+				b_akzhar = {
+					kazakh="Aqjar"}
 				b_lenino_2 = {}
-				b_toretam = {}
+				b_toretam = {
+					kazakh="Töretam"}
 			}
 			c_zhanakorgan = {
 				color={ 45 203 176 }
@@ -682,9 +805,12 @@ e_turkestan = {
 					kazakh="Jañaqorghan"}
 				b_bestam = {}
 				b_shieli = {}
-				b_sunakata = {}
-				b_zhayylma = {}
-				b_chiliyskiy = {}
+				b_sunakata = {
+					kazakh="Sunaqata"}
+				b_zhayylma = {
+					kazakh="Jaiylma"}
+				b_chiliyskiy = {
+					kazakh="Chiiliiskii"}
 				b_talaptan = {}
 			}
 		}
@@ -704,27 +830,33 @@ e_turkestan = {
 				b_taraz = {}
 				b_aisha_bibi = {}
 				b_asa = {}
-				b_mikhaylovka_2 = {}
-				b_myrzatay = {}
-				b_zhambul_2 = {}
-				b_zhalpaktobe = {}
+				b_mikhaylovka_2 = {
+					kazakh="Mihailovka"}
+				b_myrzatay = {
+					kazakh="Myrzatai"}
+				b_zhambul_2 = {
+					kazakh="Jambul"}
+				b_zhalpaktobe = {
+					kazakh="Jalpaqtöbe"}
 			}
 			c_shu = {
 				color={ 79 195 196 }
 				color2={ 255 255 255 }
 				
-				kazakh="Shý"
 				uzbek="Chu"
-				kyrgyz="Çüy"
+				kyrgyz="Chüy"
 				
 				b_shu = {
-					kazakh="Shý"
 					uzbek="Chu"
-					kyrgyz="Çüy"}
-				b_novyy_put = {}
-				b_tatti = {}
-				b_tole_bi = {}
-				b_kulan = {}
+					kyrgyz="Chüy"}
+				b_novyy_put = {
+					kazakh="Jañajol"}
+				b_tatti = {
+					kazakh="Tätti"}
+				b_tole_bi = {
+					kazakh="Töle Bi"}
+				b_kulan = {
+					kazakh="Qulan"}
 				b_merki = {}
 				b_aspara = {}
 			}
@@ -736,12 +868,18 @@ e_turkestan = {
 				
 				b_moiynkum = {
 					kazakh="Moiynqum"}
-				b_zhasulam = {}
-				b_mirnyy = {}
-				b_shyganak_2 = {}
-				b_mynaral = {}
-				b_kashkanteniz = {}
-				b_karaboget = {}
+				b_zhasulam = {
+					kazakh="Jasulan"}
+				b_mirnyy = {
+					kazakh="Mirnyi"}
+				b_shyganak_2 = {
+					kazakh="Shyganaq"}
+				b_mynaral = {
+					kazakh="Myngaral"}
+				b_kashkanteniz = {
+					kazakh="Qashqantengiz"}
+				b_karaboget = {
+					kazakh="Qaraböget"}
 			}
 		}
 		d_turkistan = {
@@ -750,7 +888,7 @@ e_turkestan = {
 			
 			capital = 1277 #Turkistan
 			
-			kazakh="Túrkistan"
+			kazakh="Türkistan"
 			kyrgyz="Türkstan"
 			uzbek="Turkiston"
 			tajik="Turkiston"
@@ -761,45 +899,51 @@ e_turkestan = {
 				
 				holy_site = zimiran
 			
-				kazakh="Túrkistan"
+				kazakh="Türkistan"
 				kyrgyz="Türkstan"
 				uzbek="Turkiston"
 				tajik="Turkiston"
 				
 				b_turkistan = {
-					kazakh="Túrkistan"
+					kazakh="Türkistan"
 					kyrgyz="Türkstan"
 					uzbek="Turkiston"
 					tajik="Turkiston"}
 				b_kentau = {}
-				b_karnak = {}
+				b_karnak = {
+					kazakh="Qarnaq"}
 				b_teke = {}
 				b_sauran = {}
-				b_tortkol = {}
-				b_timur = {}
+				b_tortkol = {
+					kazakh="Törtköl"}
+				b_timur = {
+					kazakh="Temir"}
 			}
 			c_shymkent = {
 				color={ 105 176 232 }
 				color2={ 255 255 255 }
 				
-				kyrgyz="Çymkent"
+				kyrgyz="Chymkent"
 				uzbek="Chimkent"
 				karakalpak="Shi'mkent"
 				tajik="Chimkand"
 				turkmen="Çimkent"
 				
 				b_shymkent = {
-					kyrgyz="Çymkent"
+					kyrgyz="Chymkent"
 					uzbek="Chimkent"
 					karakalpak="Shi'mkent"
 					tajik="Chimkand"
 					turkmen="Çimkent"}
-				b_karabulak_2 = {}
-				b_aksukent = {}
+				b_karabulak_2 = {
+					kazakh="Qarabulaq"}
+				b_aksukent = {
+					kazakh="Aqsukent"}
 				b_temirlan = {}
 				b_turar_rysqulov = {}
 				b_lenger = {}
-				b_sayram = {}
+				b_sayram = {
+					kazakh="Sairam"}
 			}
 			c_sozak = {
 				color={ 76 216 187 }
@@ -811,13 +955,18 @@ e_turkestan = {
 				b_sozak = {
 					kazakh="Sozaq"
 					uzbek="So'zoq"}
-				b_zhaylaukol = {}
-				b_shyganak = {}
+				b_zhaylaukol = {
+					kazakh="Jaylauköl"}
+				b_shyganak = {
+					kazakh="Shyganaq"}
 				b_tasty = {}
-				b_zhuantobe = {}
+				b_zhuantobe = {
+					kazakh="Juantöbe"}
 				b_ulanbel = {}
-				b_baytal = {}
-				b_talaski = {}
+				b_baytal = {
+					kazakh="Baital"}
+				b_talaski = {
+					kazakh="Talasskii"}
 			}
 			c_shardara = {
 				color={ 110 206 143 }
@@ -827,11 +976,16 @@ e_turkestan = {
 				
 				b_shardara = {
 					uzbek="Chordara"}
-				b_baiyrkum = {}
-				b_kara_seryak = {}
-				b_kyzylasker = {}
-				b_saryagash = {}
-				b_kominteri = {}
+				b_baiyrkum = {
+					kazakh="Baiyrqum"}
+				b_kara_seryak = {
+					kazakh="Qara-Seryak"}
+				b_kyzylasker = {
+					kazakh="Qyzyläsker"}
+				b_saryagash = {
+					kazakh="Saryaghash"}
+				b_kominteri = {
+					kazakh="Bereke"}
 				b_akkum = {}
 			}
 			c_otyrar = {
@@ -840,13 +994,19 @@ e_turkestan = {
 				
 				uzbek="O'tror"
 				
-				b_shauildir = {}
-				b_mayakum = {}
-				b_baltakol = {}
+				b_shauildir = {
+					kazakh="Shäuildir"}
+				b_mayakum = {
+					kazakh="Maiaqum"}
+				b_baltakol = {
+					kazakh="Baltaköl"}
 				b_arys = {}
-				b_koksaray = {}
-				b_karakonyr = {}
-				b_syr_darya = {}
+				b_koksaray = {
+					kazakh="Köksarai"}
+				b_karakonyr = {
+					kazakh="Qaraqoñyr"}
+				b_syr_darya = {
+					kazakh="Syrdariia"}
 			}
 		}
 	}
@@ -858,7 +1018,7 @@ e_turkestan = {
 			
 		uzbek="Orol"
 		kyrgyz="Kichi Jüz"
-		kazakh="Kishi Júz"
+		kazakh="Kishi Jüz"
 		turkmen="Kiçi Ýüz"
 		
 		d_karakalpakstan = {
@@ -904,7 +1064,7 @@ e_turkestan = {
 				turkmen="Göngurat"
 				tajik="Qunghirot"
 				kazakh="Qoñyrat"
-				kyrgyz="Konyrat"
+				kyrgyz="Qonyrat"
 				
 				b_kungirot = {
 					uzbek="Qo'ng'irot"
@@ -912,7 +1072,7 @@ e_turkestan = {
 					turkmen="Göngurat"
 					tajik="Qunghirot"
 					kazakh="Qoñyrat"
-					kyrgyz="Konyrat"}
+					kyrgyz="Qonyrat"}
 				b_kyrkkyz = {}
 				b_kunkhodzha = {}
 				b_jasliq = {}
@@ -924,12 +1084,12 @@ e_turkestan = {
 				color={ 42 149 196 }
 				color2={ 255 255 255 }
 				
-				kazakh="Núkis"
+				kazakh="Nükis"
 				karakalpak="Nókis"
 				turkmen="Nökis"
 				
 				b_nukus = {
-					kazakh="Núkis"
+					kazakh="Nükis"
 					karakalpak="Nókis"
 					turkmen="Nökis"}
 				b_khojayli = {}
@@ -985,12 +1145,17 @@ e_turkestan = {
 					karakalpak="Atiraw"
 					tajik="Atirau"
 					turkmen="Atyraw"}
-				b_yerkinkala = {}
+				b_yerkinkala = {
+					kazakh="Erkinqala"}
 				b_almaly = {}
-				b_taldykol = {}
-				b_tanday = {}
-				b_zhalgansay = {}
-				b_makhambet = {}
+				b_taldykol = {
+					kazakh="Taldyköl"}
+				b_tanday = {
+					kazakh="Tañdai"}
+				b_zhalgansay = {
+					kazakh="Jalghansai"}
+				b_makhambet = {
+					kazakh="Mahambet"}
 			}
 			c_zhanbay = {
 				color={ 43 200 213 }
@@ -1000,12 +1165,18 @@ e_turkestan = {
 				
 				b_zhanbay = {
 					kazakh="Janbai"}
-				b_ganyushkino = {}
-				b_isatay = {}
-				b_akkol_2 = {}
-				b_akkystau = {}
-				b_utery = {}
-				b_shortanbay = {}
+				b_ganyushkino = {
+					kazakh="Ganiushkin"}
+				b_isatay = {
+					kazakh="Isatai"}
+				b_akkol_2 = {
+					kazakh="Aqköl"}
+				b_akkystau = {
+					kazakh="Aqqystau"}
+				b_utery = {
+					kazakh="Üteri"}
+				b_shortanbay = {
+					kazakh="Shortanbai"}
 			}
 			c_zhylyoi = {
 				color={ 68 165 195 }
@@ -1020,12 +1191,14 @@ e_turkestan = {
 					uzbek="Qulsari"
 					karakalpak="Kulsari"
 					tajik="Kulsari"}
-				b_turgyzba = {}
-				b_koschagyl = {}
+				b_turgyzba = {
+					kazakh="Turghyzba"}
 				b_tengiz = {}
 				b_komsomolskiy_2 = {}
-				b_nova_karaton = {}
-				b_qaraton = {}
+				b_nova_karaton = {
+					kazakh="Nova Qaraton"}
+				b_qaraton = {
+					kazakh="Qulsary"}
 			}
 			c_kyzylkoga = {
 				color={ 34 162 149 }
@@ -1037,12 +1210,17 @@ e_turkestan = {
 				b_miyaly = {
 					kazakh="Miialy"
 					uzbek="Miyali"}
-				b_mukur = {}
-				b_makat = {}
+				b_mukur = {
+					kazakh="Muqyr"}
+				b_makat = {
+					kazakh="Maqat"}
 				b_dossor = {}
-				b_koshkar = {}
-				b_karabau = {}
-				b_konystanu = {}
+				b_koshkar = {
+					kazakh="Qoshqar"}
+				b_karabau = {
+					kazakh="Qarabau"}
+				b_konystanu = {
+					kazakh="Qonystanu"}
 			}
 		}
 		d_uralsk = {
@@ -1051,30 +1229,35 @@ e_turkestan = {
 			
 			capital = 926 #Uralsk
 
-			kazakh = "Oral"
-			bashkir = "Oral"
+			kazakh="Oral"
+			bashkir="Oral"
+			uzbek="O'ral"
+			karakalpak="O'ral"
 
 			c_uralsk = {
 				color={ 102 100 168 }
 				color2={ 255 255 255 }
 				
-				kazakh = "Oral"
-				bashkir = "Oral"
+				kazakh="Oral"
+				bashkir="Oral"
 				uzbek="O'ral"
 				karakalpak="O'ral"
 				
 				b_uralsk = {
-					kazakh = "Oral"
-					bashkir = "Oral"
+					kazakh="Oral"
+					bashkir="Oral"
 					uzbek="O'ral"
-					karakalpak="O'ral"
-				}
+					karakalpak="O'ral"}
 				b_tasqala = {}
-				b_yanvartsevo = {}
+				b_yanvartsevo = {
+					kazakh="Ianbartsev"}
 				b_novenskoye = {}
-				b_darinskoye = {}
-				b_saryumir = {}
-				b_peremetnoye = {}
+				b_darinskoye = {
+					kazakh="Darinskoe"}
+				b_saryumir = {
+					kazakh="Saryömir"}
+				b_peremetnoye = {
+					kazakh="Peremetnoe"}
 			}
 			c_zhanaqala = {
 				color={ 111 126 163 }
@@ -1084,27 +1267,34 @@ e_turkestan = {
 				
 				b_zhalaqala = {
 					kazakh="Jañaqala"}
-				b_novaya_kazanka = {}
+				b_novaya_kazanka = {
+					kazakh="Jañaqazan"}
 				b_burli = {}
 				b_bisen = {}
-				b_zhyra = {}
-				b_saykhin = {}
-				b_zhuldyz = {}
+				b_zhyra = {
+					kazakh="Jyra"}
+				b_saykhin = {
+					kazakh="Saiqyn"}
+				b_zhuldyz = {
+					kazakh="Juldyz"}
 			}
 			c_kaztalovka = {
 				color={ 120 140 199 }
 				color2={ 255 255 255 }
 				
-				kazakh="Qaztal"
-				
-				b_kaztalovka = {
-					kazakh="Qaztal"}
-				b_zhalpaqtal = {}
-				b_kuygenkol = {}
-				b_taygara = {}
-				b_zhanybek = {}
-				b_kaiyndy = {}
-				b_borsi = {}
+				b_kaztalovka = {}
+				b_zhalpaqtal = {
+					kazakh="Jalpaqtal"}
+				b_kuygenkol = {
+					kazakh="Kuigenkol"}
+				b_taygara = {
+					kazakh="Taighara"}
+				b_zhanybek = {
+					kazakh="Jänibek"}
+				b_kaiyndy = {
+					kazakh="Qaiyñdy"}
+				b_borsi = {
+					kazakh="Borsy"}
 			}
 			c_akzhaik = {
 				color={ 77 75 110 }
@@ -1114,12 +1304,17 @@ e_turkestan = {
 				
 				b_akzhaik = {
 					kazakh="Aqjaiyq"}
-				b_chapaev = {}
+				b_chapaev = {
+					kazakh="Chapai"}
 				b_mergenevo = {}
-				b_oyan = {}
-				b_chizha_2 = {}
-				b_shagatay = {}
-				b_lbishenskoe = {}
+				b_oyan = {
+					kazakh="Oian"}
+				b_chizha_2 = {
+					kazakh="Chija"}
+				b_shagatay = {
+					kazakh="Shaghatai"}
+				b_lbishenskoe = {
+					kazakh="Ilbishin"}
 			}
 			c_syrym = {
 				color={ 104 152 196 }
@@ -1127,10 +1322,13 @@ e_turkestan = {
 				
 				b_zhympity = {
 					kazakh="Jympity"}
-				b_aksay_3 = {}
-				b_shyngyrlau = {}
+				b_aksay_3 = {
+					kazakh="Aqsai"}
+				b_shyngyrlau = {
+					kazakh="Shyñghyrlau"}
 				b_amangeldy = {}
-				b_borili = {}
+				b_borili = {
+					kazakh="Börili"}
 				b_kirovo = {}
 				b_komintern = {}
 			}
@@ -1141,8 +1339,8 @@ e_turkestan = {
 			
 			capital = 930 #Aktobe
 			
-			kazakh="Aqtóbe"
-			kyrgyz="Aktöbö"
+			kazakh="Aqtöbe"
+			kyrgyz="Aqtöbö"
 			uzbek="Aqto'be"
 			karakalpak="Aqto'be"
 			turkmen="Aqtöbe"
@@ -1152,16 +1350,16 @@ e_turkestan = {
 				color={ 56 146 102 }
 				color2={ 255 255 255 }
 				
-				kazakh="Aqtóbe"
-				kyrgyz="Aktöbö"
+				kazakh="Aqtöbe"
+				kyrgyz="Aqtöbö"
 				uzbek="Aqto'be"
 				karakalpak="Aqto'be"
 				turkmen="Aqtöbe"
 				tajik="Oqteppa"
 			
 				b_aktyubinsk = {
-					kazakh="Aqtóbe"
-					kyrgyz="Aktöbö"
+					kazakh="Aqtöbe"
+					kyrgyz="Aqtöbö"
 					uzbek="Aqto'be"
 					karakalpak="Aqto'be"
 					turkmen="Aqtöbe"
@@ -1169,21 +1367,29 @@ e_turkestan = {
 				b_martuk = {}
 				b_chernovodsk = {}
 				b_petropavlovka_2 = {}
-				b_alga = {}
-				b_karatogay = {}
-				b_akzhar_3 = {}
+				b_alga = {
+					kazakh="Algha"}
+				b_karatogay = {
+					kazakh="Qaratoghai"}
+				b_akzhar_3 = {
+					kazakh="Aqjar"}
 			}
 			c_temir = {
 				color={ 79 172 169 }
 				color2={ 255 255 255 }
 				
 				b_temir = {}
-				b_shubarkuduk = {}
-				b_kobda = {}
+				b_shubarkuduk = {
+					kazakh="Shubarqudyq"}
+				b_kobda = {
+					kazakh="Qobda"}
 				b_kemaly = {}
-				b_karatal_2 = {}
-				b_zhekendy = {}
-				b_koptogay = {}
+				b_karatal_2 = {
+					kazakh="Qaratal"}
+				b_zhekendy = {
+					kazakh="Jekendy"}
+				b_koptogay = {
+					kazakh="Köptoghai"}
 			}
 			c_mugalzhar = {
 				color={ 123 199 120 }
@@ -1192,30 +1398,42 @@ e_turkestan = {
 				kazakh="Mughaljar"
 				uzbek="Mug'aljar"
 				karakalpak="Mug'aljar"
-				kyrgyz="Mugaljar"
+				kyrgyz="Mughaljar"
 				
-				b_kandyagash = {}
+				b_kandyagash = {
+					kazakh="Qandyaghash"}
 				b_embi = {}
-				b_zhem = {}
-				b_kuduk = {}
-				b_dzhurun = {}
-				b_saga = {}
-				b_kumsay = {}
+				b_zhem = {
+					kazakh="Jem"}
+				b_kuduk = {
+					kazakh="Kuduk"}
+				b_dzhurun = {
+					kazakh="Juryn"}
+				b_saga = {
+					kazakh="Sagha"}
+				b_kumsay = {
+					kazakh="Qumsay"}
 			}
 			c_ayteke_bi = {
 				color={ 100 205 136 }
 				color2={ 255 255 255 }
 				
-				kazakh="Áiteke Bi"
+				kazakh="Äiteke Bi"
 				uzbek="Ayteke Biy"
 				
 				b_komsomol = {}
-				b_araltobe = {}
-				b_karabutak = {}
-				b_kumkuduk = {}
-				b_terensay = {}
-				b_severnoye_2 = {}
-				b_komsomolskoye_2 = {}
+				b_araltobe = {
+					kazakh="Araltöbe"}
+				b_karabutak = {
+					kazakh="Qarabutaq"}
+				b_kumkuduk = {
+					kazakh="Qumqudyq"}
+				b_terensay = {
+					kazakh="Terensai"}
+				b_severnoye_2 = {
+					kazakh="Severnoe"}
+				b_komsomolskoye_2 = {
+					kazakh="Komsomol"}
 			}
 			c_bayganin = {
 				color={ 123 192 71 }
@@ -1228,10 +1446,14 @@ e_turkestan = {
 				b_bayganin = {
 					kazakh="Baighanin"
 					uzbek="Bayg'anin"}
-				b_nogayty = {}
-				b_zharly_2 = {}
-				b_sagiz = {}
-				b_dongeleksor = {}
+				b_nogayty = {
+					kazakh="Noghaity"}
+				b_zharly_2 = {
+					kazakh="Jarly"}
+				b_sagiz = {
+					kazakh="Saghyz"}
+				b_dongeleksor = {
+					kazakh="Döñgeleksor"}
 				b_imeni_amangeldy = {}
 			}
 		}
@@ -1253,11 +1475,14 @@ e_turkestan = {
 				b_shalkar = {
 					kazakh="Shalqar"
 					uzbek="Shalqar"}
-				b_monke_bi = {}
-				b_baykadam = {}
+				b_monke_bi = {
+					kazakh="Möñke Bi"}
+				b_baykadam = {
+					kazakh="Baiqadam"}
 				b_ulpan = {}
 				b_azaktan = {}
-				b_bozoy = {}
+				b_bozoy = {
+					kazakh="Bozoi"}
 				b_begimbet = {}
 			}
 			c_kazaly = {
@@ -1275,9 +1500,11 @@ e_turkestan = {
 					uzbek="G'azali"}
 				b_irok = {}
 				b_kubek = {}
-				b_kaukey = {}
+				b_kaukey = {
+					kazakh="Käukei"}
 				b_birlik = {}
-				b_wodokachka = {}
+				b_wodokachka = {
+					kazakh="Vodokacha"}
 			}
 			c_aralsk = {
 				color={ 68 146 138 }
@@ -1295,12 +1522,17 @@ e_turkestan = {
 					kazakh="Aral"
 					kyrgyz="Aral"
 					karakalpak="Aral"}
-				b_saksaulskiy = {}
-				b_zhalanash = {}
-				b_tastubek = {}
+				b_saksaulskiy = {
+					kazakh="Saksaulskii"}
+				b_zhalanash = {
+					kazakh="Jalanash"}
+				b_tastubek = {
+					kazakh="Tastübek"}
 				b_aralsulfut = {}
-				b_tokabay = {}
-				b_zhiger = {}
+				b_tokabay = {
+					kazakh="Toqabai"}
+				b_zhiger = {
+					kazakh="Jiger"}
 			}
 		}
 		d_mangystau = {
@@ -1309,8 +1541,8 @@ e_turkestan = {
 			
 			capital = 940 #Mangystau
 			
-			kazakh="Mañghystaý"
-			kyrgyz="Manggystoo"
+			kazakh="Mañghystau"
+			kyrgyz="Mangqyshtoo"
 			uzbek="Mang'istau"
 			karakalpak="Man'g'istaw"
 			tajik="Manghistov"
@@ -1319,30 +1551,37 @@ e_turkestan = {
 				color={ 100 195 240 }
 				color2={ 255 255 255 }
 			
-				kazakh="Mañghystaý"
-				kyrgyz="Manggystoo"
+				kazakh="Mañghystau"
+				kyrgyz="Mangqyshtoo"
 				uzbek="Mang'istau"
 				karakalpak="Man'g'istaw"
 				tajik="Manghistov"
 				
-				b_aktau = {}
+				b_aktau = {
+					kazakh="Aqtau"}
 				b_shepte = {}
 				b_beki = {}
-				b_ondy = {}
-				b_say_otes = {}
-				b_tauchik = {}
-				b_kiyakty = {}
+				b_ondy = {
+					kazakh="Oñdy"}
+				b_say_otes = {
+					kazakh="Sai Ötes"}
+				b_tauchik = {
+					kazakh="Taushyq"}
+				b_kiyakty = {
+					kazakh="Qiiaqty"}
 			}
 			c_beynau = {
 				color={ 72 146 174 }
 				color2={ 255 255 255 }
 				
 				b_beynau = {}
-				b_usturt = {}
+				b_usturt = {
+					kazakh="Üstirt"}
 				b_opornyy = {}
 				b_boranqul = {}
 				b_kok_bekti = {}
-				b_korkembay = {}
+				b_korkembay = {
+					kazakh="Korkembai"}
 				b_beket_ata = {}
 			}
 			c_karakiya = {
@@ -1353,13 +1592,17 @@ e_turkestan = {
 				karakalpak="Qaraqiya"
 				kazakh="Qaraqiia"
 				
-				b_kuryk = {}
+				b_kuryk = {
+					kazakh="Quryq"}
 				b_bekdash = {}
-				b_zhanaozen = {}
+				b_zhanaozen = {
+					kazakh="Jañaözen"}
 				b_tenga = {}
-				b_uzen = {}
+				b_uzen = {
+					kazakh="Özen"}
 				b_kulandy = {}
-				b_munayshi = {}
+				b_munayshi = {
+					kazakh="Munaishy"}
 			}
 		}
 	}
@@ -1372,8 +1615,8 @@ e_turkestan = {
 		
 		uzbek="Qirg'iziston"
 		tajik="Kirghiziston"
-		kazakh="Kyrghyzstan"
-		kyrgyz="Kyrgyzia"
+		kazakh="Qyrghyzstan"
+		kyrgyz="Qyrghyzia"
 		turkmen="Gyrgyzystan"
 		
 		d_bishkek = {
@@ -1387,12 +1630,18 @@ e_turkestan = {
 				color2={ 255 255 255 }
 				
 				b_bishkek = {}
-				b_tokmok = {}
-				b_kara_balta = {}
-				b_belovodskoe = {}
-				b_kant = {}
-				b_sokuluk = {}
-				b_kalinovka = {}
+				b_tokmok = {
+					kyrgyz="Toqmoq"}
+				b_kara_balta = {
+					kyrgyz="Qara-Balta"}
+				b_belovodskoe = {
+					kyrgyz="Belovodsk"}
+				b_kant = {
+					kyrgyz="Qant"}
+				b_sokuluk = {
+					kyrgyz="Soquluq"}
+				b_kalinovka = {
+					kyrgyz="Qalinovqa"}
 			}
 			c_issyk_kul = {
 				color={ 19 158 135 }
@@ -1405,35 +1654,50 @@ e_turkestan = {
 				karakalpak="Issiq-ko'l"
 				
 				b_cholpon_ata = {}
-				b_ottuk = {}
-				b_bokonbayevo = {}
-				b_balykchy = {}
-				b_ananyevo = {}
+				b_ottuk = {
+					kyrgyz="Ottuq"}
+				b_bokonbayevo = {
+					kyrgyz="Bökönbaev"}
+				b_balykchy = {
+					kyrgyz="Balyqchy"}
+				b_ananyevo = {
+					kyrgyz="Ananev"}
 				b_tamchy = {}
-				b_chok_tal = {}
-				b_dolinka = {}
+				b_chok_tal = {
+					kyrgyz="Choq-Tal"}
+				b_dolinka = {
+					kyrgyz="Dolinqa"}
 			}
 			c_karakol = {
 				color={ 164 200 103 }
 				color2={ 255 255 255 }
 				
 				kazakh="Qaraqol"
+				kyrgyz="Qaraqol"
 				uzbek="Qoraqo'l"
 				tajik="Qarokul"
 				karakalpak="Qarako'l"
 				
 				b_karakol = {
 					kazakh="Qaraqol"
+					kyrgyz="Qaraqol"
 					uzbek="Qoraqo'l"
 					tajik="Qarokul"
 					karakalpak="Qarako'l"}
-				b_korumdy = {}
-				b_tyup = {}
-				b_jeti_oguz = {}
-				b_kyzyl_suu = {}
-				b_kaji_say = {}
-				b_jergalan = {}
-				b_ak_terek = {}
+				b_korumdy = {
+					kyrgyz="Qorumdy"}
+				b_tyup = {
+					kyrgyz="Tüp"}
+				b_jeti_oguz = {
+					kyrgyz="Jeti-Ögüz"}
+				b_kyzyl_suu = {
+					kyrgyz="Qyzyl-Soo"}
+				b_kaji_say = {
+					kyrgyz="Qajy-Say"}
+				b_jergalan = {
+					kyrgyz="Jyrghalang"}
+				b_ak_terek = {
+					kyrgyz="Aq-Terek"}
 			}
 		}
 		d_naryn = {
@@ -1454,12 +1718,18 @@ e_turkestan = {
 				color2={ 255 255 255 }
 				
 				b_talas = {}
-				b_taldy_bulak = {}
-				b_klyuchevka = {}
-				b_kalba_2 = {}
-				b_kopuro_bazar = {}
-				b_bakai_ata = {}
-				b_kepyure = {}
+				b_taldy_bulak = {
+					kyrgyz="Taldybulaq"}
+				b_klyuchevka = {
+					kyrgyz="Boo-Terek"}
+				b_kalba_2 = {
+					kyrgyz="Qalba"}
+				b_kopuro_bazar = {
+					kyrgyz="Köpürö-Bazar"}
+				b_bakai_ata = {
+					kyrgyz="Bakay-Ata"}
+				b_kepyure = {
+					kyrgyz="Köpürö"}
 			}
 			c_naryn = {
 				color={ 154 213 167 }
@@ -1479,27 +1749,33 @@ e_turkestan = {
 					uzbek="Norin"
 					tajik="Norin"
 					karakalpak="Na'rin"}
-				b_ak_muz = {}
+				b_ak_muz = {
+					kyrgyz="Aq-Muz"}
 				b_tash_bashat = {}
 				b_baetov = {}
-				b_bash_karakain = {}
-				b_kosh_dobo = {}
+				b_bash_karakain = {
+					kyrgyz="Bash-Qaraqain"}
+				b_kosh_dobo = {
+					kyrgyz="Qosh-Döbö"}
 				b_jerge_tal = {}
 			}
 			c_kochkor = {
 				color={ 113 195 202 }
 				color2={ 255 255 255 }
 				
-				kyrgyz="Koçkor"
+				kyrgyz="Qochqor"
 				uzbek="Qo'chqor"
 				
 				b_kochkor = {
-					kyrgyz="Koçkor"
+					kyrgyz="Qochqor"
 					uzbek="Qo'chqor"}
 				b_epkin = {}
-				b_kum_dobo = {}
-				b_kyzart = {}
-				b_bashkaingdy = {}
+				b_kum_dobo = {
+					kyrgyz="Qum-Döbö"}
+				b_kyzart = {
+					kyrgyz="Qyzart"}
+				b_bashkaingdy = {
+					kyrgyz="Bash-Quughandy"}
 				b_chaek = {}
 				b_suusamyr = {}
 			}
@@ -1507,21 +1783,27 @@ e_turkestan = {
 				color={ 56 146 153 }
 				color2={ 255 255 255 }
 				
+				kyrgyz="Toqtoghul"
 				kazakh="Toqtoghul"
 				uzbek="To'qtag'ul"
 				tajik="Toqtughul"
 				
 				b_toktogul = {
+					kyrgyz="Toqtoghul"
 					kazakh="Toqtoghul"
 					uzbek="To'qtag'ul"
 					tajik="Toqtughul"}
-				b_karakol_2 = {}
-				b_kazarman = {}
+				b_karakol_2 = {
+					kyrgyz="Qaraqol"}
+				b_kazarman = {
+					kyrgyz="Qazarman"}
 				b_torkent = {}
-				b_toluk = {}
+				b_toluk = {
+					kyrgyz="Toluq"}
 				b_uch_terek = {}
 				b_beshtash = {}
-				b_kara_jygach = {}
+				b_kara_jygach = {
+					kyrgyz="Qara-Jyghach"}
 			}
 		}
 	}
@@ -1529,7 +1811,7 @@ e_turkestan = {
 		color={ 229 90 18 }
 		color2={ 225 225 225 }
 		
-		kyrgyz="Samarkan"
+		kyrgyz="Samarqan"
 		kazakh="Samarqan"
 		tajik="Samarqand"
 		pamiri="Samarqand"
@@ -1546,7 +1828,7 @@ e_turkestan = {
 			
 			capital = 952 #Samarkand
 			
-			kyrgyz="Samarkan"
+			kyrgyz="Samarqan"
 			kazakh="Samarqan"
 			tajik="Samarqand"
 			pamiri="Samarqand"
@@ -1559,7 +1841,7 @@ e_turkestan = {
 				
 				holy_site = zimiran
 					
-				kyrgyz="Samarkan"
+				kyrgyz="Samarqan"
 				kazakh="Samarqan"
 				tajik="Samarqand"
 				pamiri="Samarqand"
@@ -1567,7 +1849,7 @@ e_turkestan = {
 				karakalpak="Samarqand"
 				
 				b_samarkand = {
-					kyrgyz="Samarkan"
+					kyrgyz="Samarqan"
 					kazakh="Samarqan"
 					tajik="Samarqand"
 					pamiri="Samarqand"
@@ -1599,8 +1881,7 @@ e_turkestan = {
 					tajik="Tirmiz"}
 				b_denau = {
 					uzbek="Denov"
-					tajik="Dehnav"
-					kazakh="Denaý"}
+					tajik="Dehnav"}
 				b_sherabad = {
 					uzbek="Sherobod"
 					tajik="Sherobod"}
@@ -1683,13 +1964,13 @@ e_turkestan = {
 				color2={ 255 255 255 }
 				
 				kazakh="Jyzaq"
-				kyrgyz="Jyzak"
+				kyrgyz="Jyzaq"
 				uzbek="Jizzax"
 				karakalpak="Jizzaq"
 				
 				b_jizzakh = {
 					kazakh="Jyzaq"
-					kyrgyz="Jyzak"
+					kyrgyz="Jyzaq"
 					uzbek="Jizzax"
 					karakalpak="Jizzaq"}
 				b_zafarabad = {
@@ -1743,7 +2024,8 @@ e_turkestan = {
 			
 			capital = 951 #Bukhara
 
-			kyrgyz="Bukar"
+			kazakh="Buhara"
+			kyrgyz="Buqar"
 			uzbek="Buxoro"
 			karakalpak="Buxara"
 			tajik="Bukhoro"
@@ -1753,7 +2035,8 @@ e_turkestan = {
 				color={ 200 51 95 }
 				color2={ 255 255 255 }
 
-				kyrgyz="Bukar"
+				kazakh="Buhara"
+				kyrgyz="Buqar"
 				uzbek="Buxoro"
 				karakalpak="Buxara"
 				tajik="Bukhoro"
@@ -1762,7 +2045,8 @@ e_turkestan = {
 				holy_site = naqshbandi
 				
 				b_bukhara = {
-					kyrgyz="Bukar"
+					kazakh="Buhara"
+					kyrgyz="Buqar"
 					uzbek="Buxoro"
 					karakalpak="Buxara"
 					tajik="Bukhoro"
@@ -1771,10 +2055,11 @@ e_turkestan = {
 					kazakh="Qaghan"}
 				b_qorakol = {
 					tajik="Qarakul"
-					kazakh="Qarakól"
+					kazakh="Qaraköl"
 					turkmen="Garagöl"}
 				b_vobkent = {
-					tajik="Vobkand"}
+					tajik="Vobkand"
+					kazakh="Vabkent"}
 				b_gazli = {}
 				b_karaulbazar = {
 					uzbek="Qorovulbozor"
@@ -1787,15 +2072,15 @@ e_turkestan = {
 				color={ 215 46 16 }
 				color2={ 255 255 255 }
 				
-				kazakh="Úrgenish"
-				kyrgyz="Ürgönç"
+				kazakh="Ürgenish"
+				kyrgyz="Ürgönch"
 				uzbek="Urganch"
 				karakalpak="Úrgenish"
 				tajik="Urganj"
 				
 				b_urgench = {
-					kazakh="Úrgenish"
-					kyrgyz="Ürgönç"
+					kazakh="Ürgenish"
+					kyrgyz="Ürgönch"
 					uzbek="Urganch"
 					karakalpak="Úrgenish"
 					tajik="Urganj"}
@@ -1803,7 +2088,7 @@ e_turkestan = {
 					uzbek="Xiva"
 					kyrgyz="Hiva"
 					tajik="Kheva"
-					kazakh="Hiýa"
+					kazakh="Hiua"
 					turkmen="Hywa"
 					karakalpak="Xiywa"}
 				b_khanka = {
@@ -1849,12 +2134,12 @@ e_turkestan = {
 				color2={ 255 255 255 }
 				
 				kazakh="Qarshy"
-				kyrgyz="Karshy"
+				kyrgyz="Qarshy"
 				persian="Nakhshab"
 				
 				b_qarshi = {
 					kazakh="Qarshy"
-					kyrgyz="Karshy"
+					kyrgyz="Qarshy"
 					persian="Nakhshab"}
 				b_yangi_nishon = {}
 				b_kasan = {
@@ -1869,12 +2154,12 @@ e_turkestan = {
 				color={ 171 84 32 }
 				color2={ 255 255 255 }
 				
-				kazakh="Naýai"
+				kazakh="Nauai"
 				uzbek="Navoiy"
 				karakalpak="Nawayi"
 				
 				b_navoi = {
-					kazakh="Naýai"
+					kazakh="Nauai"
 					uzbek="Navoiy"
 					karakalpak="Nawayi"}
 				b_safirkon = {
@@ -1899,7 +2184,7 @@ e_turkestan = {
 		
 		capital = 1270 #Andijan
 		
-		kyrgyz="Bargana"
+		kyrgyz="Barghana"
 		kazakh="Ferghana"
 		tajik="Farghona"
 		pamiri="Farghona"
@@ -1912,7 +2197,7 @@ e_turkestan = {
 			
 			capital = 1270 #Andijan
 			
-			kazakh="Ándijan"
+			kazakh="Ändijan"
 			kyrgyz="Anjyyan"
 			uzbek="Andijon"
 			karakalpak="A'ndijan"
@@ -1922,20 +2207,20 @@ e_turkestan = {
 				color={ 58 200 136 }
 				color2={ 255 255 255 }
 			
-				kazakh="Ándijan"
+				kazakh="Ändijan"
 				kyrgyz="Anjyyan"
 				uzbek="Andijon"
 				karakalpak="A'ndijan"
 				tajik="Andijon"
 				
 				b_andijan = {
-					kazakh="Ándijan"
+					kazakh="Ändijan"
 					kyrgyz="Anjyyan"
 					uzbek="Andijon"
 					karakalpak="A'ndijan"
 					tajik="Andijon"}
 				b_kyzyl_kiya = {
-					kyrgyz="Kyzyl-Kyya"
+					kyrgyz="Qyzyl-Qyya"
 					tajik="Qizil-Kiya"
 					kazakh="Qyzyl-Qiia"
 					uzbek="Qizilqiya"}
@@ -1974,7 +2259,7 @@ e_turkestan = {
 					uzbek="Novqat"}
 				b_ishkavan = {}
 				b_gulcha = {
-					kyrgyz="Gülçö"}
+					kyrgyz="Gülchö"}
 				b_kurshab = {
 					uzbek="Qurshob"}
 				b_kommunizm = {}
@@ -1984,12 +2269,10 @@ e_turkestan = {
 				color2={ 255 255 255 }
 				
 				kazakh="Jalalabat"
-				kyrgyz="Jalal-Abat"
 				uzbek="Jalolobod"
 				tajik="Jalolobod"
 				
 				b_jalal_abad = {
-					kazakh="Jalalabat"
 					kyrgyz="Jalal-Abat"
 					uzbek="Jalolobod"
 					tajik="Jalolobod"}
@@ -2001,7 +2284,7 @@ e_turkestan = {
 				b_bazar_korgon = {
 					uzbek="Bozorqo'rg'on"}
 				b_kara_kuldja = {
-					kyrgyz="Kara-Kulja"
+					kyrgyz="Qara-Qulja"
 					uzbek="Qorakulcha"
 					kazakh="Qara-Qulja"}
 				b_arslanbob = {
@@ -2042,7 +2325,7 @@ e_turkestan = {
 			
 			capital = 956 #Fergana
 		
-			kyrgyz="Bargana"
+			kyrgyz="Barghana"
 			kazakh="Ferghana"
 			tajik="Farghona"
 			pamiri="Farghona"
@@ -2053,7 +2336,7 @@ e_turkestan = {
 				color={ 35 243 143 }
 				color2={ 255 255 255 }
 		
-				kyrgyz="Bargana"
+				kyrgyz="Barghana"
 				kazakh="Ferghana"
 				tajik="Farghona"
 				pamiri="Farghona"
@@ -2061,14 +2344,14 @@ e_turkestan = {
 				karakalpak="Ferg'ana"
 				
 				b_fergana = {
-					kyrgyz="Bargana"
+					kyrgyz="Barghana"
 					kazakh="Ferghana"
 					tajik="Farghona"
 					pamiri="Farghona"
 					uzbek="Farg'ona"
 					karakalpak="Ferg'ana"}
 				b_margilan = {
-					kyrgyz="Margalang"
+					kyrgyz="Marghalang"
 					uzbek="Marg'ilon"
 					tajik="Marghilon"
 					kazakh="Marghylan"
@@ -2092,15 +2375,15 @@ e_turkestan = {
 				color2={ 255 255 255 }
 				
 				kazakh="Hojant"
-				kyrgyz="Hudjand"
+				kyrgyz="Qojent"
 				uzbek="Xo'jand"
 				
 				b_khujand = {
 					kazakh="Hojant"
-					kyrgyz="Hudjand"
+					kyrgyz="Qojent"
 					uzbek="Xo'jand"}
 				b_konibodom = {
-					kyrgyz="Kanibadam"
+					kyrgyz="Qanibadam"
 					kazakh="Kanibadam"}
 				b_isfana = {}
 				b_nov = {}
@@ -2115,13 +2398,13 @@ e_turkestan = {
 				color2={ 255 255 255 }
 				
 				kazakh="Qoqan"
-				kyrgyz="Kokon"
+				kyrgyz="Qoqon"
 				uzbek="Qo'qon"
 				tajik="Quqand"
 				
 				b_kokand = {
 					kazakh="Qoqan"
-					kyrgyz="Kokon"
+					kyrgyz="Qoqon"
 					uzbek="Qo'qon"
 					tajik="Quqand"}
 				b_rishtan = {
@@ -2161,7 +2444,7 @@ e_turkestan = {
 			
 			uighur="Qeshqer"
 			kazakh="Qashqar"
-			kyrgyz="Kashkar"
+			kyrgyz="Qashqar"
 			uzbek="Qashqar"
 			tajik="Qoshghar"
 			
@@ -2171,7 +2454,7 @@ e_turkestan = {
 			
 				uighur="Qeshqer"
 				kazakh="Qashqar"
-				kyrgyz="Kashkar"
+				kyrgyz="Qashqar"
 				uzbek="Qashqar"
 				tajik="Qoshghar"
 				
@@ -2192,7 +2475,7 @@ e_turkestan = {
 				color={ 175 168 49 }
 				color2={ 255 255 255 }
 				
-				kyrgyz="Kyzyl-Suu"
+				kyrgyz="Qyzyl-Suu"
 				
 				b_artush = {}
 				b_ustun_atush = {}

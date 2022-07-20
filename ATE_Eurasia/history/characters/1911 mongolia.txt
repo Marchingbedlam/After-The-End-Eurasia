@@ -141,7 +141,7 @@
 	2607.9.24={birth=yes}
 }
 1911009={
-	name="Badar-Uugan"
+	name="Bürentögs"
 	dynasty=1479080 #Hu
 	culture=khalkha
 	religion=gelugpa
@@ -151,7 +151,7 @@
 	2648.1.12={death={death_reason=death_murder killer=1911008}}
 }
 1911010={
-	name="Ivaan"
+	name="Oyuunbileg"
 	dynasty=1479080 #Hu
 	culture=khalkha
 	religion=gelugpa
@@ -161,7 +161,7 @@
 	2646.3.2={death=yes}
 }
 1911011={
-	name="Amarsaikhan"
+	name="Gangaa"
 	dynasty=1479080 #Hu
 	culture=khalkha
 	religion=gelugpa
@@ -171,7 +171,7 @@
 	2625.7.9={death=yes}
 }
 1911012={
-	name="Mendbayar"
+	name="Chimedtogtokh"
 	dynasty=1479080 #Hu
 	culture=khalkha
 	religion=gelugpa
@@ -181,7 +181,7 @@
 	2582.12.15={death=yes}
 }
 1911013={
-	name="Chimedregzen"
+	name="Erdenebat"
 	dynasty=1479080 #Hu
 	culture=khalkha
 	religion=gelugpa
@@ -190,7 +190,7 @@
 	2567.10.14={death=yes}
 }
 1911014={
-	name="Badrakh"
+	name="Batbayar"
 	dynasty=1479080 #Hu
 	culture=khalkha
 	religion=gelugpa
@@ -200,7 +200,7 @@
 	2597.11.17={death=yes}
 }
 1911015={
-	name="Luvsannorov"
+	name="Enkhbaatar"
 	dynasty=1479080 #Hu
 	culture=khalkha
 	religion=khanist
@@ -210,7 +210,7 @@
 	2632.12.27={death=yes}
 }
 1911016={
-	name="Dashbalbar"
+	name="Galbadrakh"
 	dynasty=1479080 #Hu
 	culture=khalkha
 	religion=gelugpa
@@ -220,7 +220,7 @@
 	2631.1.26={birth=yes}
 }
 1911017={
-	name="Amar"
+	name="Nyamjantsan"
 	dynasty=1479080 #Hu
 	culture=khalkha
 	religion=khanist
@@ -230,7 +230,7 @@
 	2639.6.5={birth=yes}
 }
 1911018={
-	name="Rinchen"
+	name="Temüülen"
 	dynasty=1479080 #Hu
 	culture=khalkha
 	religion=khanist
@@ -265,7 +265,7 @@
 	2655.3.7={death=yes}
 }
 1911021={
-	name="Möngöntuul"
+	name="Bolortungalag"
 	female=yes
 	dynasty=1624063 #Tsendiin
 	culture=khorchin
@@ -312,7 +312,7 @@
 	2642.2.2={birth=yes}
 }
 1911025={
-	name="Otgontsetseg"
+	name="Erdenetsetseg"
 	female=yes
 	dynasty=1479080 #Hu
 	culture=khalkha
@@ -594,7 +594,7 @@
 	2645.3.7={death={death_reason=death_murder killer=1911055}}
 }
 1911047={
-	name="Dariga"
+	name="Darigha"
 	female=yes
 	dynasty=0
 	culture=kazakh
@@ -696,4 +696,56 @@
 		add_claim = c_govi_altai
 		set_character_flag = interdynasty_war
 	}
+}
+1911056={
+	name="Narmandakh"
+	dynasty=1479082 #Gelenkhüü
+	culture=khalkha
+	religion=khanist
+	trait=brave
+	trait=kind
+	trait=diligent
+	trait=sympathy_dharmic
+	trait=falconer
+	trait=content
+	2599.11.2={birth=yes}
+}
+1911057={
+	name="Enkhsaikhan"
+	dynasty=1479080 #Hu
+	culture=khalkha
+	religion=khanist
+	trait=altan_urag
+	father=1911008
+	mother=1911021
+	2657.3.5={birth=yes}
+}
+1911058={
+	name="Uranchimeg"
+	dynasty=1479083 #Mönkh-Erdene
+	culture=khalkha
+	religion=dvoeverie
+	secret_religion=gelugpa
+	trait=robust
+	trait=wroth
+	trait=ambitious
+	trait=skilled_tactician
+	2632.9.19={birth=yes}
+}
+1911059={
+	name="Arystanbek"
+	dynasty=2040159 #Husäin
+	culture=kazakh
+	religion=ak_jeng
+	2620.8.29={birth=yes}
+}
+1911060={
+	name="Koyon"
+	female=yes
+	dynasty=2168081 #Gurkin
+	culture=altay
+	religion=ak_jeng
+	trait=painter
+	trait=devout
+	2629.10.10={birth=yes}
 }

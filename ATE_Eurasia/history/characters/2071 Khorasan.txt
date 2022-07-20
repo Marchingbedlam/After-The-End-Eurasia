@@ -716,7 +716,7 @@
 	2537.3.1={death=yes}
 }
 2071061={
-	name="Nasrullah"
+	name="Mehrab"
 	dynasty=2085101 #Baryalai
 	culture=pashtun
 	religion=naqshbandi
@@ -752,7 +752,7 @@
 	2642.1.1={add_spouse=2071001}
 }
 2071065={
-	name="Rudoba"
+	name="Arnavoz"
 	female=yes
 	dynasty=2069078 #Siistoni
 	culture=tajik
@@ -803,13 +803,12 @@
 	2665.6.14={birth=yes}
 }
 2071070={
-	name="Mehriniso"
+	name="Rudaba"
 	female=yes
-	dynasty=2112134 #Shayboniy
-	culture=uzbek
-	religion=ruhi
-	trait=altan_urag
-	father=2071012
+	dynasty=2085101 #Baryalai
+	culture=pashtun
+	religion=naqshbandi
+	father=2071061
 	2617.4.21={birth=yes}
 	2635.1.1={add_spouse=2071024}
 	2664.10.14={death=yes}
@@ -2016,7 +2015,7 @@
 	2660.1.1={employer=2071000}
 }
 2071183={
-	name="Ysakbek"
+	name="Ysaqbek"
 	dynasty=2069083 #Makhan
 	culture=kyrgyz
 	religion=naqshbandi
@@ -2024,7 +2023,7 @@
 	2665.2.25={death=yes}
 }
 2071184={
-	name="Belek"
+	name="Inara"
 	female=yes
 	dynasty=2069083 #Makhan
 	culture=kyrgyz
@@ -2095,7 +2094,7 @@
 	2661.12.15={birth=yes}
 }
 2071191={
-	name="Gulaiym"
+	name="Ghulayym"
 	female=yes
 	dynasty=2069083 #Makhan
 	culture=kyrgyz
@@ -2170,7 +2169,7 @@
 	2643.1.4={birth=yes}
 }
 2071199={
-	name="Abdykadyr"
+	name="Abdyqadyr"
 	dynasty=2069083 #Makhan
 	culture=kyrgyz
 	religion=naqshbandi
@@ -2180,7 +2179,7 @@
 	2644.3.13={birth=yes}
 }
 2071200={
-	name="Shakirbek"
+	name="Shaqirbek"
 	dynasty=2069083 #Makhan
 	culture=kyrgyz
 	religion=naqshbandi
@@ -2190,7 +2189,7 @@
 	2629.9.18={birth=yes}
 }
 2071201={
-	name="Edil"
+	name="Kökötöy"
 	dynasty=2069083 #Makhan
 	culture=kyrgyz
 	religion=naqshbandi
@@ -2226,4 +2225,16 @@
 	religion=ismaili
 	father=2071075
 	2620.8.16={birth=yes}
+}
+2071205={
+	name="Tahmina"
+	female=yes
+	dynasty=2089091 #Kayani
+	culture=hazara
+	religion=ismaili
+	father=2071021
+	mother=2071074
+	2640.4.11={birth=yes}
+	2660.11.20={add_spouse=2071007}
+	2660.11.20={effect={add_lover=2071007}}
 }

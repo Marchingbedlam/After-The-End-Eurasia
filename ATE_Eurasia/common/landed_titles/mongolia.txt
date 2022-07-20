@@ -803,19 +803,28 @@ e_mongolia = {
 			color={ 150 70 45 }
 			color2={ 255 255 255 }
 		
-			capital = 1248 #Bayankhongor
+			capital = 1241 #Ulaangom
 		
 			c_bayan_olgii = {
 				color={ 168 81 85 }
 				color2={ 255 255 255 }
 				
-				b_olgii = {}
-				b_sagsai = {}
-				b_deluun = {}
-				b_bayannuur = {}
-				b_ulaankhus = {}
-				b_tsengel_2 = {}
-				b_nogoonnuur = {}
+				kazakh="Bai-Ölke"
+				
+				b_olgii = {
+					kazakh="Ölke"}
+				b_sagsai = {
+					kazakh="Sagsai"}
+				b_deluun = {
+					kazakh="Delüün"}
+				b_bayannuur = {
+					kazakh="Baiannuur"}
+				b_ulaankhus = {
+					kazakh="Ulaanhus"}
+				b_tsengel_2 = {
+					kazakh="Tsengel"}
+				b_nogoonnuur = {
+					kazakh="Nogoonnuur"}
 			}
 			c_ulaangom = {
 				color={ 146 52 20 }

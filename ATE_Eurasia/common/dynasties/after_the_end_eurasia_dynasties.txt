@@ -1279,6 +1279,20 @@
 		}
 	}
 }
+1240181 = { name="Klyonov" culture=buryat used_for_random=no religion=dvoeverie 
+	coat_of_arms = {
+		religion=nondescript_christian
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 63
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 1258000 = { name="Agafonov" culture=akmolensk }
 1258001 = { name="Akhtsiger" culture=akmolensk }
@@ -1380,6 +1394,7 @@
 1258097 = { name="Kriger" culture=akmolensk }
 1258098 = { name="Sobchenko" culture=akmolensk }
 1258099 = { name="Demidov" culture=akmolensk }
+1258100 = { name="Schultz" culture=akmolensk }
 
 1282000 = { name="Topaloghlu" culture=laz 
 	coat_of_arms = { 
@@ -2182,6 +2197,21 @@
 		}
 	}
 }
+1479082 = { name="Gelenkhüü" culture=khalkha 
+	coat_of_arms = { 
+		religion=pagan
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 21
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1479083 = { name="Mönkh-Erdene" culture=khalkha }
 
 1501000 = { name="Ó Fearghail" culture=irish used_for_random=no 
 	coat_of_arms = {		religion=nondescript_christian		template = 0
@@ -3415,7 +3445,20 @@
 1624040 = { name="Sükhbat" culture=khorchin }
 1624041 = { name="Lkhamsüren" culture=khorchin }
 1624042 = { name="Jargal" culture=khorchin religion=khanist}
-1624043 = { name="Batsaikhan" culture=khorchin religion=khanist}
+1624043 = { name="Batsaikhan" culture=khorchin religion=khanist
+	coat_of_arms = { 
+		religion=pagan
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 24
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1624044 = { name="Altantsetseg" culture=khorchin }
 1624045 = { name="Ganchimeg" culture=khorchin }
 1624046 = { name="Tsogtbaatar" culture=khorchin }
@@ -20134,90 +20177,90 @@ coat_of_arms = {		religion=nondescript_christian		template = 0
 }
 2039202 = { name="Barthold" culture=alsatian }
 
-2040001 = { name="Qanapiianov" culture=kazakh }
-2040002 = { name="Shahanov" culture=kazakh }
-2040003 = { name="Súleimenov" culture=kazakh }
-2040004 = { name="Tórehanov" culture=kazakh }
-2040005 = { name="Maqataev" culture=kazakh }
-2040006 = { name="Músirepov" culture=kazakh }
-2040007 = { name="Muqanov" culture=kazakh }
-2040008 = { name="Áýezov" culture=kazakh }
-2040009 = { name="Bókeihanov" culture=kazakh }
+2040001 = { name="Baighurin" culture=kazakh }
+2040002 = { name="Älimhanuly" culture=kazakh }
+2040003 = { name="Jarmaqin" culture=kazakh }
+2040004 = { name="Äbdimälik" culture=kazakh }
+2040005 = { name="Dias" culture=kazakh }
+2040006 = { name="Äbdildauly" culture=kazakh }
+2040007 = { name="Musin" culture=kazakh }
+2040008 = { name="Mamin" culture=kazakh }
+2040009 = { name="Mämi" culture=kazakh }
 2040010 = { name="Altynsarin" culture=kazakh }
-2040011 = { name="Ýálihan" culture=kazakh }
-2040012 = { name="Júsipov" culture=kazakh }
-2040013 = { name="Munaitpasov" culture=kazakh }
-2040014 = { name="Ábdimálik" culture=kazakh }
-2040015 = { name="Qonaqbaev" culture=kazakh }
-2040016 = { name="Sársembaev" culture=kazakh }
-2040017 = { name="Kembaev" culture=kazakh }
-2040018 = { name="Amanjolov" culture=kazakh }
-2040019 = { name="Jumadildaev" culture=kazakh }
-2040020 = { name="Álibekov" culture=kazakh }
-2040021 = { name="Sátbaev" culture=kazakh }
-2040022 = { name="Shókin" culture=kazakh }
-2040023 = { name="Qoshqarbaev" culture=kazakh }
-2040024 = { name="Musabaev" culture=kazakh }
-2040025 = { name="Mámetov" culture=kazakh }
-2040026 = { name="Ábdirov" culture=kazakh }
-2040027 = { name="Tóleev" culture=kazakh }
-2040028 = { name="Túimebaev" culture=kazakh }
-2040029 = { name="Tájin" culture=kazakh }
-2040030 = { name="Shiahmetov" culture=kazakh }
-2040031 = { name="Saýdabaev" culture=kazakh }
-2040032 = { name="Nurgaliev" culture=kazakh }
-2040033 = { name="Qaragusov" culture=kazakh }
-2040034 = { name="Áitimov" culture=kazakh }
-2040035 = { name="Tasmagambetov" culture=kazakh }
-2040036 = { name="Másimov" culture=kazakh }
-2040037 = { name="Toqaev" culture=kazakh }
-2040038 = { name="Súleimenov" culture=kazakh }
-2040039 = { name="Dýlatbekov" culture=kazakh }
-2040040 = { name="Qonaev" culture=kazakh }
+2040011 = { name="Qul-Muhammed" culture=kazakh }
+2040012 = { name="Tileuberdi" culture=kazakh }
+2040013 = { name="Qabyldin" culture=kazakh }
+2040014 = { name="Dosjan" culture=kazakh }
+2040015 = { name="Baibek" culture=kazakh }
+2040016 = { name="Aryn" culture=kazakh }
+2040017 = { name="Äbdik" culture=kazakh }
+2040018 = { name="Böltekuly" culture=kazakh }
+2040019 = { name="Tötenai" culture=kazakh }
+2040020 = { name="Japparqul" culture=kazakh }
+2040021 = { name="Chinshanlo" culture=kazakh }
+2040022 = { name="Harki" culture=kazakh }
+2040023 = { name="Myrzabolatuly" culture=kazakh }
+2040024 = { name="Elubaiuly" culture=kazakh }
+2040025 = { name="Nurybaiuly" culture=kazakh }
+2040026 = { name="Muñaitpasuly" culture=kazakh }
+2040027 = { name="Qyzaibai" culture=kazakh }
+2040028 = { name="Amanqul" culture=kazakh }
+2040029 = { name="Täjin" culture=kazakh }
+2040030 = { name="Islam" culture=kazakh }
+2040031 = { name="Karimi" culture=kazakh }
+2040032 = { name="Baimuhambet" culture=kazakh }
+2040033 = { name="Nurghazin" culture=kazakh }
+2040034 = { name="Berdalin" culture=kazakh }
+2040035 = { name="Janalin" culture=kazakh }
+2040036 = { name="Nurghali" culture=kazakh }
+2040037 = { name="Jañbyrbai" culture=kazakh }
+2040038 = { name="Bimurzin" culture=kazakh }
+2040039 = { name="Hatip" culture=kazakh }
+2040040 = { name="Dulatuly" culture=kazakh }
 2040041 = { name="Qudaibergen" culture=kazakh }
-2040042 = { name="Aidarbekov" culture=kazakh }
-2040043 = { name="Bóribaev" culture=kazakh }
-2040044 = { name="Zabirov" culture=kazakh }
-2040045 = { name="Bisengaliev" culture=kazakh }
-2040046 = { name="Rymbaev" culture=kazakh }
-2040047 = { name="Qaldaiaqov" culture=kazakh }
-2040048 = { name="Baglanov" culture=kazakh }
-2040049 = { name="Sársenov" culture=kazakh }
-2040050 = { name="Qulybaev" culture=kazakh }
-2040051 = { name="Qasteev" culture=kazakh }
-2040052 = { name="Shalqarqyzy" culture=kazakh }
-2040053 = { name="Asylmuratov" culture=kazakh }
-2040054 = { name="Aitjanov" culture=kazakh }
-2040055 = { name="Ómarov" culture=kazakh }
-2040056 = { name="Bekmambetov" culture=kazakh }
-2040057 = { name="Aimanov" culture=kazakh }
-2040058 = { name="Jaqypov" culture=kazakh }
-2040059 = { name="Esentaev" culture=kazakh }
-2040060 = { name="Muhitdenov" culture=kazakh }
-2040061 = { name="Shókeev" culture=kazakh }
-2040062 = { name="Jarmuhamedov" culture=kazakh }
-2040063 = { name="Júsipov" culture=kazakh }
-2040064 = { name="Ermekbaev" culture=kazakh }
-2040065 = { name="Nöserbayev" culture=kazakh }
-2040066 = { name="Jumabaev" culture=kazakh }
-2040067 = { name="Qaldaiaqov" culture=kazakh }
-2040068 = { name="Tuiaqbai" culture=kazakh }
-2040069 = { name="Aimanov" culture=kazakh }
-2040070 = { name="Ahmetov" culture=kazakh }
-2040071 = { name="Qonaqbaev" culture=kazakh }
-2040072 = { name="Shamsýtdinov" culture=kazakh }
-2040073 = { name="Mamin" culture=kazakh }
-2040074 = { name="Dosmuhanbetov" culture=kazakh }
-2040075 = { name="Tasmagambetov" culture=kazakh }
-2040076 = { name="Jaqsybekov" culture=kazakh }
-2040077 = { name="Isekeshev" culture=kazakh }
-2040078 = { name="Sultanov" culture=kazakh }
-2040079 = { name="Muqanov" culture=kazakh }
-2040080 = { name="Sapargaliev" culture=kazakh }
-2040081 = { name="Qosanov" culture=kazakh }
-2040082 = { name="Aimahanov" culture=kazakh }
-2040083 = { name="Ábdiqalyqov" culture=kazakh }
-2040084 = { name="Dugalov" culture=kazakh }
+2040042 = { name="Öztürik" culture=kazakh }
+2040043 = { name="Äbdirahman" culture=kazakh }
+2040044 = { name="Aqjigit" culture=kazakh }
+2040045 = { name="Äbiken" culture=kazakh }
+2040046 = { name="Taghybergen" culture=kazakh }
+2040047 = { name="Turysbek" culture=kazakh }
+2040048 = { name="Baitana" culture=kazakh }
+2040049 = { name="Islamhan" culture=kazakh }
+2040050 = { name="Shaizada" culture=kazakh }
+2040051 = { name="Jalmuqan" culture=kazakh }
+2040052 = { name="Qyrybai" culture=kazakh }
+2040053 = { name="Seidahmet" culture=kazakh }
+2040054 = { name="Amanjol" culture=kazakh }
+2040055 = { name="Pairuz" culture=kazakh }
+2040056 = { name="Qojamberdi" culture=kazakh }
+2040057 = { name="Quat" culture=kazakh }
+2040058 = { name="Tölebek" culture=kazakh }
+2040059 = { name="Seisen" culture=kazakh }
+2040060 = { name="Älip" culture=kazakh }
+2040061 = { name="Orynbasar" culture=kazakh }
+2040062 = { name="Aslan" culture=kazakh }
+2040063 = { name="Uäliullin" culture=kazakh }
+2040064 = { name="Jumaghali" culture=kazakh }
+2040065 = { name="Tursynbai" culture=kazakh }
+2040066 = { name="Sovet" culture=kazakh }
+2040067 = { name="Äbilghazy" culture=kazakh }
+2040068 = { name="Janqylyshbai" culture=kazakh }
+2040069 = { name="Kenjebek" culture=kazakh }
+2040070 = { name="Qasym" culture=kazakh }
+2040071 = { name="Sülei" culture=kazakh }
+2040072 = { name="Nögerbek" culture=kazakh }
+2040073 = { name="Jüsip" culture=kazakh }
+2040074 = { name="Chaikin" culture=kazakh }
+2040075 = { name="Shashkin" culture=kazakh }
+2040076 = { name="Käden" culture=kazakh }
+2040077 = { name="Beknazar-Haninga" culture=kazakh }
+2040078 = { name="Omar" culture=kazakh }
+2040079 = { name="Abdullin" culture=kazakh }
+2040080 = { name="Qarabalin" culture=kazakh }
+2040081 = { name="Qosanov" culture=kazakh used_for_random=no }
+2040082 = { name="Qalioldin" culture=kazakh }
+2040083 = { name="Suiinshalin" culture=kazakh }
+2040084 = { name="Nyghmatulin" culture=kazakh }
 2040085 = { name="Shúkenov" culture=kazakh }
 2040086 = { name="Ýmarov" culture=kazakh }
 2040087 = { name="Dónenbaev" culture=kazakh }
@@ -20229,25 +20272,25 @@ coat_of_arms = {		religion=nondescript_christian		template = 0
 2040093 = { name="Altynbaev" culture=kazakh }
 2040094 = { name="Säkirov" culture=kazakh }
 2040095 = { name="Nygmatwlin" culture=kazakh }
-2040096 = { name="Álimbekov" culture=kazakh }
-2040097 = { name="Beknazarov" culture=kazakh }
-2040098 = { name="Bóltirikov" culture=kazakh }
-2040099 = { name="Qoigeldiev" culture=kazakh }
-2040100 = { name="Mämi" culture=kazakh }
-2040101 = { name="Sagyntaev" culture=kazakh }
-2040102 = { name="Niiazbekov" culture=kazakh }
+2040096 = { name="Hairullin" culture=kazakh }
+2040097 = { name="Qaraghoishin" culture=kazakh }
+2040098 = { name="Satybaldy" culture=kazakh }
+2040099 = { name="Boranbai" culture=kazakh }
+2040100 = { name="Ötepbergen" culture=kazakh }
+2040101 = { name="Äshim" culture=kazakh }
+2040102 = { name="Seiitmamytuly" culture=kazakh }
 2040103 = { name="Ogai" culture=kazakh }
-2040104 = { name="Berqaliev" culture=kazakh }
-2040105 = { name="Amankul" culture=kazakh }
-2040106 = { name="Ábdildin" culture=kazakh }
-2040107 = { name="Tólegenov" culture=kazakh }
-2040108 = { name="Dospanov" culture=kazakh }
-2040109 = { name="Ongarsynov" culture=kazakh }
-2040110 = { name="Isçanov" culture=kazakh }
-2040111 = { name="Qasymov" culture=kazakh }
-2040012 = { name="Balgymbaev" culture=kazakh }
-2040113 = { name="Aytmuhambetov" culture=kazakh }
-2040114 = { name="Aiymbetov" culture=kazakh 
+2040104 = { name="Qaptaghai" culture=kazakh }
+2040105 = { name="Qoja" culture=kazakh }
+2040106 = { name="Äbdildin" culture=kazakh }
+2040107 = { name="Turys" culture=kazakh }
+2040108 = { name="Aqmolda" culture=kazakh }
+2040109 = { name="Serghazin" culture=kazakh }
+2040110 = { name="Myrzabek" culture=kazakh }
+2040111 = { name="Biläl" culture=kazakh }
+2040012 = { name="Tolghanbai" culture=kazakh }
+2040113 = { name="Jylqyshyuly" culture=kazakh }
+2040114 = { name="Aiymbetov" culture=kazakh used_for_random=no 
 	coat_of_arms = { 
 		religion = nondescript_muslim
 		template = 0
@@ -20261,50 +20304,61 @@ coat_of_arms = {		religion=nondescript_christian		template = 0
 		}
 	}
 }
-2040115 = { name="Balaev" culture=kazakh }
-2040116 = { name="Esqaliev" culture=kazakh }
-2040117 = { name="Isabekov" culture=kazakh }
+2040115 = { name="Slambek" culture=kazakh }
+2040116 = { name="Bisembin" culture=kazakh }
+2040117 = { name="Begalin" culture=kazakh }
 2040118 = { name="Mamai" culture=kazakh }
-2040119 = { name="Kujamyarov" culture=kazakh }
-2040120 = { name="Nurqadilov" culture=kazakh }
-2040121 = { name="Nurlybaev" culture=kazakh }
-2040122 = { name="Riskulov" culture=kazakh }
-2040123 = { name="Nárikbaev" culture=kazakh }
-2040124 = { name="Ábdiraiymov" culture=kazakh }
-2040125 = { name="Abjahanov" culture=kazakh }
-2040126 = { name="Ahmadiev" culture=kazakh }
-2040127 = { name="Arystanbekov" culture=kazakh }
-2040128 = { name="Arystanov" culture=kazakh }
-2040129 = { name="Ázimbaev" culture=kazakh }
+2040119 = { name="Jubatqan" culture=kazakh }
+2040120 = { name="Jantörin" culture=kazakh }
+2040121 = { name="Jaqypbai" culture=kazakh }
+2040122 = { name="Qydyralin" culture=kazakh }
+2040123 = { name="Böribaiuly" culture=kazakh }
+2040124 = { name="Merekeuly" culture=kazakh }
+2040125 = { name="Asylhan" culture=kazakh }
+2040126 = { name="Aralbai" culture=kazakh }
+2040127 = { name="Jünis" culture=kazakh }
+2040128 = { name="Baighazin" culture=kazakh }
+2040129 = { name="Nurtas" culture=kazakh }
 2040130 = { name="Baitailaq" culture=kazakh }
-2040131 = { name="Kárimov" culture=kazakh }
-2040132 = { name="Nygmatýlin" culture=kazakh }
-2040133 = { name="Niiazov" culture=kazakh }
-2040134 = { name="Sádýaqasov" culture=kazakh }
-2040135 = { name="Jámishev" culture=kazakh }
-2040136 = { name="Esimov" culture=kazakh }
-2040137 = { name="Qulmahanov" culture=kazakh }
-2040138 = { name="Kartanbayev" culture=kazakh }
-2040139 = { name="Moldagulov" culture=kazakh }
-2040140 = { name="Ábiev" culture=kazakh }
-2040141 = { name="Jubanov" culture=kazakh }
+2040131 = { name="Atabek" culture=kazakh }
+2040132 = { name="Tinälin" culture=kazakh }
+2040133 = { name="Egemberdi" culture=kazakh }
+2040134 = { name="Janghojin" culture=kazakh }
+2040135 = { name="Dostaiuly" culture=kazakh }
+2040136 = { name="Aisin" culture=kazakh }
+2040137 = { name="Ötemisuly" culture=kazakh }
+2040138 = { name="Tynyshbaiuly" culture=kazakh }
+2040139 = { name="Seifullin" culture=kazakh }
+2040140 = { name="Isabek" culture=kazakh }
+2040141 = { name="Qajygeldin" culture=kazakh }
 2040142 = { name="Orazalin" culture=kazakh }
-2040143 = { name="Nurmagambetov" culture=kazakh }
-2040144 = { name="Syzdyqov" culture=kazakh }
-2040145 = { name="Derbisáli" culture=kazakh }
-2040146 = { name="Kemel" culture=kazakh }
-2040147 = { name="Gaisa" culture=kazakh }
-2040148 = { name="Ábilqaiyruly" culture=kazakh }
-2040149 = { name="Nýrkin" culture=kazakh }
-2040150 = { name="Sátbaev" culture=kazakh }
-2040151 = { name="Qarakesek" culture=kazakh }
-2040152 = { name="Kenesaryuly" culture=kazakh }
-2040153 = { name="Töre" culture=kazakh }
-2040154 = { name="Asabiev" culture=kazakh }
-2040155 = { name="Baighanin" culture=kazakh }
-2040156 = { name="Arghyn" culture=kazakh }
-2040157 = { name="Qajyghumaruly" culture=kazakh }
-2040158 = { name="Tursyn" culture=kazakh }
+2040143 = { name="Biqojauly" culture=kazakh }
+2040144 = { name="Baitursynuly" culture=kazakh }
+2040145 = { name="Derbisäli" culture=kazakh used_for_random=no }
+2040146 = { name="Kemel" culture=kazakh used_for_random=no }
+2040147 = { name="Baisultanuly" culture=kazakh }
+2040148 = { name="Äbilqaiyruly" culture=kazakh used_for_random=no }
+2040149 = { name="Nurkin" culture=kazakh used_for_random=no }
+2040150 = { name="Sätbaev" culture=kazakh used_for_random=no }
+2040151 = { name="Qarakesek" culture=kazakh used_for_random=no }
+2040152 = { name="Kenesaryuly" culture=kazakh used_for_random=no }
+2040153 = { name="Töre" culture=kazakh used_for_random=no }
+2040154 = { name="Asanbiev" culture=kazakh used_for_random=no }
+2040155 = { name="Baighanin" culture=kazakh used_for_random=no }
+2040156 = { name="Arghyn" culture=kazakh used_for_random=no }
+2040157 = { name="Qajyghumaruly" culture=kazakh used_for_random=no }
+2040158 = { name="Tursyn" culture=kazakh culture=kazakh used_for_random=no }
+2040159 = { name="Husäin" culture=kazakh religion=ak_jeng }
+2040160 = { name="Küderin" culture=kazakh }
+2040161 = { name="Jumabai" culture=kazakh }
+2040162 = { name="Shoqai" culture=kazakh }
+2040163 = { name="Saryghojin" culture=kazakh }
+2040164 = { name="Kenebaiuly" culture=kazakh }
+2040165 = { name="Qosshyghululy" culture=kazakh }
+2040166 = { name="Nurmuhameduly" culture=kazakh }
+2040167 = { name="Qoñyratbaiuly" culture=kazakh }
+2040168 = { name="Baidildin" culture=kazakh }
+2040169 = { name="Bökeihan" culture=kazakh }
 
 2041001 = { name="Kürräýew" culture=turkmen }
 2041002 = { name="Gapurow" culture=turkmen }
@@ -24302,6 +24356,12 @@ coat_of_arms = {		religion=nondescript_christian		template = 0
 2065028 = { name="Shakelî" culture=turcoman }
 2065029 = { name="Ghassani" culture=turcoman }
 2065030 = { name="Erbil" culture=turcoman }
+2065031 = { name="Salihi" culture=turcoman }
+2065032 = { name="al-Hindawi" culture=turcoman }
+2065033 = { name="Lutfi" culture=turcoman }
+2065034 = { name="Mahmud" culture=turcoman }
+2065035 = { name="Tuzlu" culture=turcoman }
+2065036 = { name="Sirmali" culture=turcoman }
 
 2066000 = { name="Kezêban" culture=kurdish 
 	coat_of_arms = { 
@@ -24759,7 +24819,7 @@ coat_of_arms = {		religion=nondescript_christian		template = 0
 2070004 = { name="Ali" culture=persian }
 2070005 = { name="Ali" culture=persian }
 2070006 = { name="Ali" culture=persian }
-2070007 = { name="Kuchakzadeh" culture=persian }
+2070007 = { name="Kuchakzadeh" culture=persian religion=shiite }
 2070008 = { name="Jamalzadeh" culture=persian }
 2070009 = { name="Ali" culture=persian }
 2070010 = { name="Ali" culture=persian }
@@ -24962,90 +25022,109 @@ coat_of_arms = {		religion=nondescript_christian		template = 0
 2070207 = { name="Khorram" culture=persian }
 2070208 = { name="Keikhosravi" culture=persian }
 
-2071001 = { name="Abdyldayev" culture=kyrgyz }
-2071002 = { name="Alymkojoev" culture=kyrgyz }
-2071003 = { name="Aynakulov" culture=kyrgyz }
-2071004 = { name="Beyshenaliev" culture=kyrgyz }
-2071005 = { name="Begaliev" culture=kyrgyz }
-2071006 = { name="Çokmorov" culture=kyrgyz }
-2071007 = { name="Jumagulov" culture=kyrgyz }
-2071008 = { name="Jumakmatov" culture=kyrgyz }
-2071009 = { name="Kaynazarov" culture=kyrgyz }
-2071010 = { name="Konduçalov" culture=kyrgyz }
-2071011 = { name="Nazarov" culture=kyrgyz }
-2071012 = { name="Maldybaev" culture=kyrgyz }
-2071013 = { name="Osmonov" culture=kyrgyz }
-2071014 = { name="Osmonaliev" culture=kyrgyz }
-2071015 = { name="Terdikbaev" culture=kyrgyz }
-2071016 = { name="Tarançiev" culture=kyrgyz }
-2071017 = { name="Shopokov" culture=kyrgyz }
-2071018 = { name="Sariev" culture=kyrgyz }
-2071019 = { name="Umetaliev" culture=kyrgyz }
+2071001 = { name="Madakim" culture=kyrgyz }
+2071002 = { name="Moldo" culture=kyrgyz }
+2071003 = { name="Mamay" culture=kyrgyz }
+2071004 = { name="Baatyr" culture=kyrgyz }
+2071005 = { name="Jyrghalbek" culture=kyrgyz }
+2071006 = { name="Borosh" culture=kyrgyz }
+2071007 = { name="Balqa" culture=kyrgyz }
+2071008 = { name="Qarach" culture=kyrgyz }
+2071009 = { name="Abdul" culture=kyrgyz }
+2071010 = { name="Jetimish" culture=kyrgyz }
+2071011 = { name="Valiulin" culture=kyrgyz }
+2071012 = { name="Hikmet" culture=kyrgyz }
+2071013 = { name="Quqen" culture=kyrgyz }
+2071014 = { name="Sultan" culture=kyrgyz }
+2071015 = { name="Balqa" culture=kyrgyz }
+2071016 = { name="Qarim" culture=kyrgyz }
+2071017 = { name="Manaschy" culture=kyrgyz }
+2071018 = { name="Japyy" culture=kyrgyz }
+2071019 = { name="Fuytqo" culture=kyrgyz }
 2071020 = { name="Sher-Niyaz" culture=kyrgyz }
-2071021 = { name="Jumanazarov" culture=kyrgyz }
-2071022 = { name="Masaliev" culture=kyrgyz }
-2071023 = { name="Matubraimov" culture=kyrgyz }
-2071024 = { name="Sharipov" culture=kyrgyz }
-2071025 = { name="Jutanov" culture=kyrgyz }
-2071026 = { name="Joldoshev" culture=kyrgyz }
-2071027 = { name="Kudayberdiev" culture=kyrgyz }
-2071028 = { name="Isakov" culture=kyrgyz }
-2071029 = { name="Isanov" culture=kyrgyz }
-2071030 = { name="Israilov" culture=kyrgyz }
-2071031 = { name="Artykbaev" culture=kyrgyz }
-2071032 = { name="Aydarov" culture=kyrgyz }
-2071033 = { name="Boronov" culture=kyrgyz }
-2071034 = { name="Alimbekov" culture=kyrgyz }
-2071035 = { name="Arapbaev" culture=kyrgyz }
-2071036 = { name="Amankulov" culture=kyrgyz }
-2071037 = { name="Orozobekov" culture=kyrgyz }
-2071038 = { name="Çorotegin" culture=kyrgyz }
-2071039 = { name="Tursunbaev" culture=kyrgyz }
-2071040 = { name="Jumakunov" culture=kyrgyz }
-2071041 = { name="Kulmambetov" culture=kyrgyz }
-2071042 = { name="Abdyrakmanov" culture=kyrgyz }
-2071043 = { name="Abilgazyev" culture=kyrgyz }
-2071044 = { name="Akmatov" culture=kyrgyz }
-2071045 = { name="Asanov" culture=kyrgyz }
-2071046 = { name="Çyngyshev" culture=kyrgyz }
-2071047 = { name="Salyanov" culture=kyrgyz }
-2071048 = { name="Karybekov" culture=kyrgyz }
-2071049 = { name="Kadyrbekov" culture=kyrgyz }
-2071050 = { name="Jumaliev" culture=kyrgyz }
-2071051 = { name="Kaparov" culture=kyrgyz }
-2071052 = { name="Tekebaev" culture=kyrgyz }
-2071053 = { name="Töröbaev" culture=kyrgyz }
-2071054 = { name="Aydaraliev" culture=kyrgyz }
-2071055 = { name="Altynbekov" culture=kyrgyz }
-2071056 = { name="Duyshenbiev" culture=kyrgyz }
-2071057 = { name="Sydykbekov" culture=kyrgyz }
-2071058 = { name="Tynystanov" culture=kyrgyz }
-2071059 = { name="Çolponbaev" culture=kyrgyz }
-2071060 = { name="Üsönov" culture=kyrgyz }
-2071061 = { name="Sarbaev" culture=kyrgyz }
-2071062 = { name="Sydykov" culture=kyrgyz }
-2071063 = { name="Kümüshaliev" culture=kyrgyz }
-2071064 = { name="Satybaldiev" culture=kyrgyz }
-2071065 = { name="Jekshenkulov" culture=kyrgyz }
-2071066 = { name="Aitmatov" culture=kyrgyz }
-2071067 = { name="Botobekov" culture=kyrgyz }
-2071068 = { name="Tüleev" culture=kyrgyz }
-2071069 = { name="Kerimkulov" culture=kyrgyz }
+2071021 = { name="Jaqypbek" culture=kyrgyz }
+2071022 = { name="Janghazy" culture=kyrgyz }
+2071023 = { name="Jarqynbay" culture=kyrgyz }
+2071024 = { name="Sarpek" culture=kyrgyz }
+2071025 = { name="Altay" culture=kyrgyz }
+2071026 = { name="Chorotegin" culture=kyrgyz }
+2071027 = { name="Özgön" culture=kyrgyz }
+2071028 = { name="Avat" culture=kyrgyz }
+2071029 = { name="Adyghine" culture=kyrgyz }
+2071030 = { name="Azyq" culture=kyrgyz }
+2071031 = { name="Baaryn" culture=kyrgyz }
+2071032 = { name="Baghysh" culture=kyrgyz }
+2071033 = { name="Barghy" culture=kyrgyz }
+2071034 = { name="Basyz" culture=kyrgyz }
+2071035 = { name="Boston" culture=kyrgyz }
+2071036 = { name="Bughy" culture=kyrgyz }
+2071037 = { name="Döölös" culture=kyrgyz }
+2071038 = { name="Jediger" culture=kyrgyz }
+2071039 = { name="Jetigen" culture=kyrgyz }
+2071040 = { name="Jooqesek" culture=kyrgyz }
+2071041 = { name="Joru" culture=kyrgyz }
+2071042 = { name="Ichkilik" culture=kyrgyz }
+2071043 = { name="Qarabaghysh" culture=kyrgyz }
+2071044 = { name="Qangdy" culture=kyrgyz }
+2071045 = { name="Kesek" culture=kyrgyz }
+2071046 = { name="Qongurat" culture=kyrgyz }
+2071047 = { name="Qydyrshaa" culture=kyrgyz }
+2071048 = { name="Qytay" culture=kyrgyz }
+2071049 = { name="Mongoldor" culture=kyrgyz }
+2071050 = { name="Munduz" culture=kyrgyz }
+2071051 = { name="Nayman" culture=kyrgyz }
+2071052 = { name="Noyghut" culture=kyrgyz }
+2071053 = { name="Orghu" culture=kyrgyz }
+2071054 = { name="Saruu" culture=kyrgyz }
+2071055 = { name="Sarybaghysh" culture=kyrgyz }
+2071056 = { name="Sayaq" culture=kyrgyz }
+2071057 = { name="Solto" culture=kyrgyz }
+2071058 = { name="Teyit" culture=kyrgyz }
+2071059 = { name="Cherik" culture=kyrgyz }
+2071060 = { name="Baytur" culture=kyrgyz }
+2071061 = { name="Mambetaqun" culture=kyrgyz }
+2071062 = { name="Japarqul" culture=kyrgyz }
+2071063 = { name="Salk" culture=kyrgyz }
+2071064 = { name="Tursun" culture=kyrgyz }
+2071065 = { name="Jekshenqulov" culture=kyrgyz used_for_random=no }
+2071066 = { name="Aytmatov" culture=kyrgyz }
+2071067 = { name="Ysaq" culture=kyrgyz }
+2071068 = { name="Aydarqul" culture=kyrgyz }
+2071069 = { name="Beyshebay" culture=kyrgyz }
 2071070 = { name="Abduraim" culture=kyrgyz }
-2071071 = { name="Jusupbekov" culture=kyrgyz }
-2071072 = { name="Düyshöbaev" culture=kyrgyz }
-2071073 = { name="Duvanaev" culture=kyrgyz }
-2071074 = { name="Duldaev" culture=kyrgyz }
-2071075 = { name="Galiakbarov" culture=kyrgyz }
-2071076 = { name="Ismailov" culture=kyrgyz }
-2071077 = { name="Mursalimov" culture=kyrgyz }
-2071078 = { name="Tynybekov" culture=kyrgyz }
-2071079 = { name="Sadykov" culture=kyrgyz }
-2071080 = { name="Orozbekov" culture=kyrgyz }
-2071081 = { name="Karimov" culture=kyrgyz }
-2069082 = { name="Çynggyzov" culture=kyrgyz }
+2071071 = { name="Ömürbay" culture=kyrgyz }
+2071072 = { name="Baybolot" culture=kyrgyz }
+2071073 = { name="Samat" culture=kyrgyz }
+2071074 = { name="Junus" culture=kyrgyz }
+2071075 = { name="Samighullin" culture=kyrgyz }
+2071076 = { name="Muratbek" culture=kyrgyz }
+2071077 = { name="Adilbek" culture=kyrgyz }
+2071078 = { name="Baymurat" culture=kyrgyz }
+2071079 = { name="Qarybek" culture=kyrgyz }
+2071080 = { name="Toqtosun" culture=kyrgyz }
+2071081 = { name="Daanyshman" culture=kyrgyz }
+2069082 = { name="Chyngghyz" culture=kyrgyz used_for_random=no }
 2069083 = { name="Makhan" culture=kyrgyz }
-2069084 = { name="Datka" culture=kyrgyz }
+2069084 = { name="Datqa" culture=kyrgyz }
+2071085 = { name="Ayti" culture=kyrgyz }
+2071086 = { name="Qorghonbay" culture=kyrgyz }
+2071087 = { name="Jusupaqmat" culture=kyrgyz }
+2071088 = { name="Bazarbek" culture=kyrgyz }
+2071089 = { name="Saghyndyq" culture=kyrgyz }
+2071090 = { name="Nishanbay" culture=kyrgyz }
+2071091 = { name="Aspek" culture=kyrgyz }
+2071092 = { name="Baqtybek" culture=kyrgyz }
+2071093 = { name="Ularbek" culture=kyrgyz }
+2071094 = { name="Esenbay" culture=kyrgyz }
+2071095 = { name="Qanatbek" culture=kyrgyz }
+2071096 = { name="Aqjol" culture=kyrgyz }
+2071097 = { name="Abdanbek" culture=kyrgyz }
+2071098 = { name="Muqtasar" culture=kyrgyz }
+2071099 = { name="Abdilaqim" culture=kyrgyz }
+20710100 = { name="Joldoshbek" culture=kyrgyz }
+20710101 = { name="Almazbek" culture=kyrgyz }
+20710102 = { name="Abdimalik" culture=kyrgyz }
+20710103 = { name="Talantbek" culture=kyrgyz }
 
 2072001 = { name="Adamos" culture=greek }
 2072002 = { name="Aetós" culture=greek }
@@ -32671,6 +32750,49 @@ coat_of_arms = {		religion=nondescript_christian		template = 0
 2136095 = { name="Mukharev" culture=siberian }
 2136096 = { name="Pyanzin" culture=siberian }
 2136097 = { name="Prokhorenko" culture=siberian }
+2136098 = { name="Vorobjov" culture=siberian }
+2136099 = { name="Lesokhimik" culture=siberian 
+	coat_of_arms = {
+		religion=nondescript_christian
+		template = 0
+		layer = {
+			texture = 4
+			texture_internal = 0
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2136100 = { name="Chudinov" culture=siberian 
+	coat_of_arms = {
+		religion=nondescript_christian
+		template = 0
+		layer = {
+			texture = 4
+			texture_internal = 1
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2136101 = { name="Yevtushenko" culture=siberian 
+	coat_of_arms = {
+		religion=nondescript_christian
+		template = 0
+		layer = {
+			texture = 4
+			texture_internal = 3
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 2137000 = { name="Belyakov" culture=uralic }
 2137001 = { name="Burtsev" culture=uralic }
@@ -35622,6 +35744,23 @@ coat_of_arms = {		religion=nondescript_christian		template = 0
 2168078 = { name="Fefelov" culture=altay }
 2168079 = { name="Shatunov" culture=altay }
 2168080 = { name="Shelegin" culture=altay }
+2168081 = { name="Gurkin" culture=altay used_for_random=no 
+	coat_of_arms = { 
+		religion=pagan
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 22
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2168082 = { name="Pïrïev" culture=altay used_for_random=no religion=ak_jeng }
+2168083 = { name="Samyk" culture=altay used_for_random=no religion=ak_jeng }
+2168084 = { name="Kuroskanov" culture=altay used_for_random=no religion=ak_jeng }
 
 2169000 = { name="Agayev" culture=udmurt}
 2169001 = { name="Buzmakov" culture=udmurt}

@@ -1,0 +1,151 @@
+1912000={
+	name="Erjene Maria"
+	female=yes
+	dynasty=1240181 #Klyonov
+	culture=buryat
+	religion=dvoeverie
+	trait=scholar
+	trait=patient
+	trait=scholarly_theologian
+	trait=erudite
+	learning=8
+	father=1912003
+	2631.8.12={birth=yes}
+	2660.1.1={add_claim=k_irkutsk}
+}
+1912001={
+	name="Baljamaa Irina"
+	female=yes
+	dynasty=1240181 #Klyonov
+	father=1912002
+	culture=buryat
+	religion=dvoeverie
+	2600.3.10={birth=yes}
+	2649.2.26={death={death_reason=death_battle killer=1911056}}
+}
+1912002={
+	name="Babaasan Petr"
+	dynasty=1240181 #Klyonov
+	culture=buryat
+	religion=dvoeverie
+	2576.11.5={birth=yes}
+	2641.10.10={death=yes}
+}
+1912003={
+	name="Bukhanai Grigorii"
+	dynasty=1240181 #Klyonov
+	father=1912002
+	culture=buryat
+	religion=dvoeverie
+	trait=weak
+	2603.12.21={birth=yes}
+	2631.9.24={death={death_reason=death_trait}}
+}
+1912004={
+	name="Pavel"
+	dynasty=2136098 #Vorobjov
+	culture=siberian
+	religion=orthodox
+	2651.7.30={birth=yes}
+}
+1912005={
+	name="Ëkinek"
+	dynasty=2168082 #Pïrïev
+	culture=altay
+	religion=ak_jeng
+	2614.2.26={birth=yes}
+}
+1912006={
+	name="Pasley"
+	dynasty=2168083 #Samyk
+	culture=altay
+	religion=ak_jeng
+	trait=poet
+	2637.2.26={birth=yes}
+}
+1912007={
+	name="Temene"
+	female=yes
+	dynasty=2168084 #Kuroskanov
+	culture=altay
+	religion=ak_jeng
+	2614.12.15={birth=yes}
+}
+1912008={
+	name="Elena"
+	female=yes
+	dynasty=2136099 #Lesokhimik
+	culture=siberian
+	religion=dvoeverie
+	2638.11.6={birth=yes}
+}
+1912009={
+	name="Evgeniy"
+	dynasty=2136100 #Chudinov
+	culture=siberian
+	religion=orthodox
+	trait=deceitful
+	trait=cruel
+	trait=intricate_webweaver
+	trait=envious
+	trait=ambitious
+	give_nickname=nick_the_young
+	father=1912010
+	2604.1.25={birth=yes}
+}
+1912010={
+	name="Evgeniy"
+	dynasty=2136100 #Chudinov
+	culture=siberian
+	religion=orthodox
+	give_nickname=nick_the_old
+	2575.2.27={birth=yes}
+	2629.12.30={death=yes}
+}
+1912011={
+	name="Evgeniy"
+	dynasty=2136100 #Chudinov
+	culture=siberian
+	religion=orthodox
+	father=1912009
+	trait=hunter
+	2628.1.26={birth=yes}
+	2663.7.26={death={death_reason=death_accident_fall}}
+}
+1912012={
+	name="Denis"
+	dynasty=2136100 #Chudinov
+	culture=siberian
+	religion=orthodox
+	father=1912009
+	trait=hunter
+	trait=incapable
+	2631.9.19={birth=yes}
+}
+1912013={
+	name="Anton"
+	dynasty=2136100 #Chudinov
+	culture=siberian
+	religion=orthodox
+	father=1912009
+	trait=monk
+	2634.11.13={birth=yes}
+}
+1912014={
+	name="Evgeniy"
+	dynasty=2136100 #Chudinov
+	culture=siberian
+	religion=orthodox
+	father=1912011
+	2665.4.5={birth=yes}
+}
+1912015={
+	name="Rudolf"
+	dynasty=2136101 #Yevtushenko
+	culture=siberian
+	religion=orthodox
+	trait=poet
+	trait=scholar
+	trait=erudite
+	2628.2.28={birth=yes}
+}
