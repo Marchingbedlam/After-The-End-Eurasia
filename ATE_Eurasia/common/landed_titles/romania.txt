@@ -202,9 +202,11 @@ e_romania = {
 			c_brasov = { # 1180
 				color={ 195 121 107 }
 				color2={ 255 255 255 }
+				
 				yiddish = "Kroynshtot" 
 				hungarian = "Brassó"
 				szekely = "Brassó"
+				
 				b_ghimbav = {
 					hungarian = "Vidombák"
 					szekely = "Vidombák"
@@ -214,14 +216,8 @@ e_romania = {
 					hungarian = "Brassó"
 					szekely = "Brassó"
 				}
-				b_sibiu = {
-					hungarian = "Nagyszeben"
-					szekely = "Nagyszeben"
-				}
-				b_medias = {
-					hungarian = "Meggyes"
-					szekely = "Meggyes"
-				}
+				b_bran = {}
+				b_sinca = {}
 				b_sacele = {
 					hungarian = "Torda"
 					szekely = "Torda"
@@ -233,6 +229,37 @@ e_romania = {
 				b_codlea = {
 					hungarian = "Feketehalom"
 					szekely = "Feketehalom"
+				}
+			}
+			c_sibiu = {
+				color={ 112 100 86 }
+				color2={ 255 255 255 }
+				
+				hungarian = "Nagyszeben"
+				szekely = "Nagyszeben"
+					
+				b_sibiu = {
+					hungarian = "Nagyszeben"
+					szekely = "Nagyszeben"
+				}
+				b_alba_iulia = {
+					hungarian = "Gyulafehérvár"
+					szekely = "Gyulafehérvár"
+				}
+				b_medias = {
+					hungarian = "Meggyes"
+					szekely = "Meggyes"
+				}
+				b_blaj = {}
+				b_sebes = {
+					hungarian = "Sebes"
+					szekely = "Sebes"
+				}
+				b_selimbar = {}
+				b_avrig = {}
+				b_aiud = {
+					hungarian = "Nagyenyed"
+					szekely = "Nagyenyed"
 				}
 			}
 			c_harghita = { # 1179
@@ -276,6 +303,7 @@ e_romania = {
 			c_hunedoara = { # 1181
 				color={ 210 145 252 }
 				color2={ 255 255 255 }
+				
 				hungarian = "Hunyad"
 				szekely = "Hunyad"
 				
@@ -287,22 +315,13 @@ e_romania = {
 					hungarian = "Déva"
 					szekely = "Déva"
 				}
-				b_alba_iulia = {
-					hungarian = "Gyulafehérvár"
-					szekely = "Gyulafehérvár"
-				}
+				b_hateg = {}
 				b_petrosani = {
 					hungarian = "Petrozsény"
 					szekely = "Petrozsény"
 				}
-				b_sebes = {
-					hungarian = "Sebes"
-					szekely = "Sebes"
-				}
-				b_aiud = {
-					hungarian = "Nagyenyed"
-					szekely = "Nagyenyed"
-				}
+				b_lupeni = {}
+				b_dobra = {}
 				b_vulcan = {
 					hungarian = "Vulkán"
 					szekely = "Vulkán"
