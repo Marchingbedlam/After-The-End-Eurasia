@@ -1,6 +1,136 @@
 silk_road = {
 	wealth = 100			# Total base wealth of silk route
-
+	
+	trade_post_display_trigger = {
+		OR = {
+			province_id = 1200 # Ulan-Ude
+			province_id = 2783 # Hohhot
+			province_id = 1254 # Ulaanbaatar
+			province_id = 1092 # Mogocha
+			province_id = 994 # Krasnoyarsk
+			province_id = 722 # Nizhnevartovsk
+			province_id = 996 # Novosibirsk
+			province_id = 639 # Kazan
+			province_id = 726 # Tyumen
+			province_id = 725 # Sverdlovsk
+			province_id = 1220 # Omsk
+			province_id = 643 # Samara
+			province_id = 635 # Perm
+			province_id = 652 # Moskva
+			province_id = 629 # Nizhny Novgorod
+			province_id = 664 # Petrograd
+			province_id = 970 # Almaty
+			province_id = 2721 # Dunhuang
+			province_id = 1279 # Baikonur
+			province_id = 952 # Samarkand
+			province_id = 2729 # Baxoi
+			province_id = 951 # Bukhara
+			province_id = 991 # Nizhneudinsk
+			province_id = 458 # Nuremberg
+			province_id = 752 # Kirov
+			province_id = 589 # Vienna
+			province_id = 659 # Vyshny Volochyok
+			province_id = 2272 # Surat
+			province_id = 2201 # Koppal
+			province_id = 3040 # Adilabad
+			province_id = 1002 # Herat
+			province_id = 2054 # Vasco da Gama
+			province_id = 988 # Irkutsk
+			province_id = 1455 # Lanzhou
+			province_id = 1361 # Charklik
+			province_id = 956 # Fergana
+			province_id = 3042 # Kokand
+			province_id = 1276 # Shymkent
+			province_id = 1266 # Urumqi
+			province_id = 965 # Shalkar
+			province_id = 616 # Volgograd
+			province_id = 897 # Astrakhan
+			province_id = 607 # Rostov-na-Donu
+			province_id = 2322 # Tehran
+			province_id = 2556 # Torbat-e Jam
+			province_id = 1292 # Kabul
+			province_id = 2609 # Islamabad
+			province_id = 2798 # Agra
+			province_id = 2800 # Delhi
+			province_id = 2620 # Lahore
+			province_id = 3115 # Gujrat
+			province_id = 2699 # Gonggar
+			province_id = 2959 # Munger
+			province_id = 2791 # Ilahabad
+			province_id = 2785 # Arrah
+			province_id = 2969 # Pabna
+			province_id = 2652 # Malda
+			province_id = 3019 # Karachi
+			province_id = 257 # Nadia
+			province_id = 2638 # Kolkata
+			province_id = 2623 # Multan
+			province_id = 307 # Hatay
+			province_id = 2023 # Baghdad
+			province_id = 2104 # Trabzon
+			province_id = 2134 # Yerevan
+			province_id = 1469 # Masqat
+			province_id = 2590 # Kech
+			province_id = 2516 # Bandar Abbas
+			province_id = 2020 # Abha
+			province_id = 1445 # al-Hudaydah
+			province_id = 1454 # Aden
+			province_id = 118 # Jeddah
+			province_id = 1429 # Marsa Alam
+			province_id = 1405 # al-Iskandariyya
+			province_id = 2878 # Indore
+			province_id = 1399 # al-Qahirah
+			province_id = 2247 # Kannur
+			province_id = 2061 # Mumbai
+			province_id = 2216 # Cuddalore
+			province_id = 2249 # Jaffna
+			province_id = 2241 # Ernakulam
+			province_id = 2210 # Chennai
+			province_id = 2179 # Guntur
+			province_id = 2151 # Vizianagaram
+			province_id = 2263 # Hyderabad
+			province_id = 3024 # Sukkur
+			province_id = 2813 # Cuttack
+			province_id = 876 # Constanta
+			province_id = 2305 # Kermanshah
+			province_id = 937 # Izmail
+			province_id = 787 # Odessa
+			province_id = 600 # Sevastopol
+			province_id = 604 # Novorossiysk
+			province_id = 2231 # Coimbatore
+			province_id = 1261 # Khotan
+			province_id = 3016 # Khargone
+			province_id = 2011 # Raqqa
+			province_id = 2881 # Guna
+			province_id = 2282 # Tabriz
+			province_id = 2491 # Hamadan
+			province_id = 2047 # Basrah
+			province_id = 2562 # Sabzevar
+			province_id = 930 # Aktyubinsk
+			province_id = 1263 # Aksu
+			province_id = 2765 # Sikkim
+			province_id = 2689 # Samzhubze
+			province_id = 3121 # Kathmandu
+			province_id = 1411 # Bur Said
+			province_id = 143 # Istanbul
+			province_id = 294 # Sinop
+			province_id = 1188 # Olt
+			province_id = 1390 # Belgrade
+			province_id = 1473 # Zufar
+			province_id = 1170 # Pest
+			province_id = 2235 # Kanyakumari
+			province_id = 1482 # Dubai
+			province_id = 110 # Gilgit
+			province_id = 3119 # Muzaffarpur
+			province_id = 1489 # al-Awal
+			province_id = 1464 # al-Mukalla
+			province_id = 3107 # Port Sudan
+			province_id = 261 # Kurigram
+			province_id = 2773 # Siang
+			province_id = 2772 # Nagaon
+			province_id = 1422 # Asyut
+		}
+	}
+	
 	modifier = {			# How the trade route modifies the provinces it passes
 		castle_tax_modifier = 0.10
 		city_tax_modifier = 0.10
@@ -209,9 +339,13 @@ silk_road = {
 	path = {
 		2689 2692 2691 2693 2741 3121 3018 3132 3119 3122 2655
 	}
-	#Samzhubze to Bogura
+	#Samzhubze to Kurigram
 	path = {
-		2689 2696 2765 2920 261 2656 2635
+		2689 2696 2765 2920 261
+	}
+	#Kurigram to Bogura
+	path = {
+		261 2656 2635
 	}
 	#Bogura to Pabna
 	path = {
@@ -253,8 +387,8 @@ silk_road = {
 	path = {
 		2061 1630 1780 1779 3019
 	}
-	#Gonggar to Siang
+	#Gonggar to Kurigram
 	path = {
-		2699 2697 2708 2709 2773
+		2699 2697 2708 2709 2773 2922 2745 2772 2921 2996 261
 	}
 }

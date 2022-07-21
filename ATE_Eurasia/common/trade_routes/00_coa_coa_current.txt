@@ -1,8 +1,14 @@
-co_co_current = { # West African trade route via water
+coa_coa_current = { # West African trade route via water
 	wealth = 100			# Total base wealth of silk route
 	
 	trade_post_display_trigger = {
 		OR = {
+			province_id = 173 # Santiago
+			province_id = 2543 # Dakhla
+			province_id = 89 # Nouakchott
+			province_id = 2524 # Laayoune
+			province_id = 163 # Tenerife
+			province_id = 1049 # Tanja
 			province_id = 263
 			province_id = 160
 			province_id = 166
@@ -34,38 +40,55 @@ co_co_current = { # West African trade route via water
 	}
 
 	start = { # Start provinces of trade route
-		1641
+		173 89
 	}	
-	# Tenerife-Madeira-Lisbon
+	# Santiago-Dakhla
 	path = {
-		1641 1717 163 1784 166 1716 1715 167
+		173 1718 1641 2543
+	}
+	# Dakhla-Canarias
+	path = {
+		2543 1717
+	}
+	# Nouakchott-Dakhla
+	path = {
+		89 1641 2543
+	}
+	# Canarias-Tenerife-Madeira-Anfa
+	path = {
+		1717 163 1784 166 1716 1042
+	}
+	# Anfa-Lisbon
+	path = {
+		1042 1715 167
 	}
 	#Lisbon to Barcelona route
 	# Lisbon-Caceres-Toledo
 		path = {
-		167 177 176 196 197 191 190
+		167 176 177 196 197 191 190
 	}
 	# Toledo-Madrid-Zaragoza-Barcelona
 	path = {
 		190 187 188 236 235 234 231
 	}
 	#Northern route
-	# Lisbon-Porto-A Coruna
+	# Lisbon-Porto-A Coruna-Biscay
 	path = {
-		167 1714 182 1712 211
-	}
-	# A Coruna-Biscay
-	path = {
-		211 1710 1709 216
+		167 1714 182 1712 211 1710 1709 216
 	}
 	#Eastern Route
-	#Gran Canaria-Aghadir-Gibraltar
+	#Canarias-Aghadir
 	path = {
-		1641 160 1624 1069 1716 1042 1644 225
+		1717 160 2524 1624 1069 1716 1042
 	}
-	# Gibraltar-Almeria-Alicant-Valencia
+	#Eastern Route
+	#Aghadir-Gibraltar
 	path = {
-		225 1644 228 1723 242 239
+		1042 1049 1644 225
+	}
+	# Gibraltar-Almeria-Alicant-Valencia-Barcelona
+	path = {
+		225 1644 228 1723 242 239 1725 231
 	}
 	#Gibraltar to Toledo
 	#Gibraltar-Cadiz-Seville-Cordoba-Ciudad Real-Toledo
