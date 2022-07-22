@@ -114,37 +114,40 @@ e_mongolia = {
 			color={ 211 142 67 }
 			color2={ 255 255 255 }
 		
-			capital = 2568 #Hulunbuir
+			capital = 2568 #Hailar
 			
 			khalkha="Khölönbuir"
 			khorchin="Kölün buyir"
 		
-			c_hulunbuir = {
+			c_hailar = {
 				color={ 179 144 102 }
 				color2={ 255 255 255 }
 				
-				khalkha="Khölönbuir"
-				khorchin="Kölün buyir"
+				khalkha="Qayilar"
+				khorchin="Qayilar"
 				
-				b_hulunbuir = {
-					khalkha="Khölönbuir"
-					khorchin="Kölün buyir"}
+				b_hailar = {
+					khalkha="Qayilar"
+					khorchin="Qayilar"
+				}
 				b_bayanhada = {}
 				b_labudalin = {}
 				b_yakeshi = {
 					khalkha="Yagshi"
-					khorchin="Yagshi"}
+					khorchin="Yagshi"
+					}
 				b_shengli = {}
 				b_bayankuren = {
-					khalkha="Bayankhüree"}
+					khalkha="Bayankhüree"
+					}
 				b_xinbaolige = {}
 			}
-			c_barag = {
+			c_manzhouli = {
 				color={ 225 105 49 }
 				color2={ 255 255 255 }
 				
-				khalkha="Barga"
-				khorchin="Bargu"
+				khalkha="Manjuur"
+				khorchin="Manjuur"
 				
 				b_manzhouli = {
 					khalkha="Manjuur"
