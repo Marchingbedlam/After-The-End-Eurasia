@@ -5443,6 +5443,31 @@
 	trait=pious
 	2632.3.18={birth=yes}
 }
+1991384={
+	name="Shimon"
+	dynasty=1822095 #Alfus
+	culture=yiddish
+	religion=haskalah
+	trait=skilled_tactician
+	trait=administrator
+	trait=aggressive_leader
+	trait=flanker
+	trait=light_foot_leader
+	2622.6.6={birth=yes}
+	2650.1.2={employer=1991350}
+	2650.1.2={effect={add_friend=1991350}}
+}
+1991385={
+	name="David"
+	dynasty=1822095 #Alfus
+	culture=yiddish
+	religion=haskalah
+	trait=quick
+	trait=curious
+	father=1991384
+	2653.10.28={birth=yes}
+	2660.1.2={employer=1991350}
+}
 212601={
 	name="Artur"
 	dynasty=2126121 #Antol

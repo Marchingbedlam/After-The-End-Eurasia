@@ -64,6 +64,15 @@ character_event = {
 		399 = {
 			add_province_modifier = { name = landmark_kyffhauser duration = -1 }
 			}
+		396 = {
+			add_province_modifier = { name = landmark_the_tomb duration = -1 }
+			}
+		407 = {
+			add_province_modifier = { name = landmark_volkerschlachtdenkmal duration = -1 }
+			}
+		412 = {
+			add_province_modifier = { name = landmark_brandenburg_gate duration = -1 }
+			}
 		449 = {
 			add_province_modifier = { name = landmark_vosges_massif duration = -1 }
 			}
@@ -115,6 +124,9 @@ character_event = {
 			}
 		534 = { 
 			add_province_modifier = { name = landmark_blautopf duration = -1 }
+			}
+		697 = { 
+			add_province_modifier = { name = landmark_the_giant duration = -1 }
 			}
 		701 = { 
 			add_province_modifier = { name = landmark_superdeep_borehole duration = -1 }
@@ -178,6 +190,9 @@ character_event = {
 			}
 		2117 = {
 			add_province_modifier = { name = landmark_mount_ararat duration = -1 }
+			}
+		2660 = {
+			add_province_modifier = { name = landmark_christ_the_king duration = -1 }
 			}
 			set_global_flag = landmarks_set
 	}

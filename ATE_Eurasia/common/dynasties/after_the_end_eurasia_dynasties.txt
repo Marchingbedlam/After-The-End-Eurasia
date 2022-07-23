@@ -6407,6 +6407,20 @@
 1822092 = { name="Rabow" culture=yiddish }
 1822093 = { name="Tuwim" culture=yiddish }
 1822094 = { name="Peretz" culture=yiddish }
+1822095 = { name="Alfus" culture=yiddish 
+	coat_of_arms = {
+		religion=nondescript_christian
+		template = 0
+		layer = {
+			texture = 4
+			texture_internal = 2
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 1824000 = { name="Hamoudeh" culture=filastini }
 1824001 = { name="Rifa'i" culture=filastini }
@@ -6663,7 +6677,7 @@
 	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
 			texture = 0
-			texture_internal = 47
+			texture_internal = 39
 			emblem = 0
 			color = 0
 			color = 0
@@ -30982,8 +30996,34 @@ coat_of_arms = {		religion=nondescript_christian		template = 0
 	}
 }
 
-2124000 = { name="Puttkamer" culture=odrzan }
-2124001 = { name="Laskowik" culture=odrzan }
+2124000 = { name="Puttkamer" culture=odrzan 
+	coat_of_arms = {
+		religion=nondescript_christian
+		template = 0
+		layer = {
+			texture = 4
+			texture_internal = 6
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2124001 = { name="Laskowik" culture=odrzan 
+	coat_of_arms = {
+		religion=nondescript_christian
+		template = 0
+		layer = {
+			texture = 4
+			texture_internal = 5
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2124002 = { name="Kosmalski" culture=odrzan 
 	coat_of_arms = {		religion=nondescript_christian		template = 0
 		layer = {
@@ -30996,7 +31036,20 @@ coat_of_arms = {		religion=nondescript_christian		template = 0
 		}
 	}
 }
-2124003 = { name="Klauzunik" culture=odrzan }
+2124003 = { name="Klauzunik" culture=odrzan 
+	coat_of_arms = {
+		religion=nondescript_christian
+		template = 0
+		layer = {
+			texture = 4
+			texture_internal = 4
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2124004 = { name="Szpan" culture=odrzan }
 2124005 = { name="Chabior" culture=odrzan 
 	coat_of_arms = {

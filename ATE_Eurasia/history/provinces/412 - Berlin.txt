@@ -3,7 +3,7 @@ title=c_berlin
 
 # Settlements
 max_settlements=7
-b_pankow=castle
+b_mitte=castle
 b_berlin=city
 b_potsdam=temple
 b_spandau=castle
@@ -14,3 +14,5 @@ culture=ossi
 religion=neuhumanist
 
 # History
+900.1.1={b_mitte=ca_reichstag}
+900.1.1={b_mitte=ca_bellevue}

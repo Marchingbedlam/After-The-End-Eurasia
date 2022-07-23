@@ -1,0 +1,44 @@
+castle = {
+	# Reichstag
+	ca_reichstag = {
+		desc = reichstag_desc
+		potential = {
+			FROMFROM = { title = b_mitte }
+		}
+		gold_cost = 0
+		build_time = 0
+		fort_level = 1
+		retinuesize = 100
+		liege_prestige = 0.1
+		
+		add_number_to_name = no
+	}
+	# Bellevue palace
+	ca_bellevue = {
+		desc = bellevue_desc
+		potential = {
+			FROMFROM = { title = b_mitte }
+		}
+		gold_cost = 0
+		build_time = 0
+		liege_prestige = 0.1
+		land_morale = 0.1
+		garrison_size = 0.1
+		
+		add_number_to_name = no
+	}
+	#Kurfürstendamm
+	ca_kurfurstendamm = {
+		desc = kurfurstendamm_desc
+		potential = {
+			FROMFROM = { title = b_mitte }
+		}
+		gold_cost = 500
+		build_time = 1095
+		tradevalue = 15
+		economy_techpoints = 0.1
+		tech_growth_modifier = 0.2
+		
+		add_number_to_name = no
+	}
+}
