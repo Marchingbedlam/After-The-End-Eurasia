@@ -1,13 +1,13 @@
 ###ÄNSI###
 
 e_mongolia = {
-	color={ 231 89 51 }
+	color={ 231 59 51 }
 	color2={ 255 255 255 }
 	
 	capital = 1254 #Ulaanbaatar
 	
 	k_khangai = {
-		color={ 242 197 72 }
+		color={ 242 217 52 }
 		color2 = { 255 255 255 }
 		
 		capital = 1254 #Ulaanbaatar
@@ -109,6 +109,18 @@ e_mongolia = {
 				b_dariganga = {}
 				b_bayandelger = {}
 			}
+			c_matad = {
+				color={ 205 210 41 }
+				color2={ 255 255 255 }
+				
+				b_matad = {}
+				b_khalkhgol = {}
+				b_erdenetsagaan_2 = {}
+				b_hushuu_sume = {}
+				b_sumber_2 = {}
+				b_arachzhargalanta_khid = {}
+				b_dzotol = {}
+			}
 		}
 		d_hulunbuir = {
 			color={ 211 142 67 }
@@ -132,11 +144,8 @@ e_mongolia = {
 				}
 				b_bayanhada = {}
 				b_labudalin = {}
-				b_yakeshi = {
-					khalkha="Yagshi"
-					khorchin="Yagshi"
-					}
-				b_shengli = {}
+				b_kaoshan = {}
+				b_ewenki = {}
 				b_bayankuren = {
 					khalkha="Bayankhüree"
 					}
@@ -162,33 +171,21 @@ e_mongolia = {
 				b_arihasat = {}
 				b_ciaogang = {}
 			}
-			c_ujimqin = {
-				color={ 211 175 95 }
+			c_yakeshi = {
+				color={ 201 159 99 }
 				color2={ 255 255 255 }
 				
-				khalkha="Üzemchin"
-				khorchin="Ujumuchin"
+				khalkha="Yagshi"
+				khorchin="Yagshi"
 				
-				b_uriastai = {
-					khalkha="Uliastai"}
-				b_balagar_gol = {
-					khalkha="Balgargol"}
-				b_dautnur = {}
-				b_bayanhua = {}
-				b_jirengol = {}
-				b_gadabuqi = {}
-			}
-			c_matad = {
-				color={ 205 210 41 }
-				color2={ 255 255 255 }
-				
-				b_matad = {}
-				b_khalkhgol = {}
-				b_erdenetsagaan_2 = {}
-				b_hushuu_sume = {}
-				b_sumber_2 = {}
-				b_arachzhargalanta_khid = {}
-				b_dzotol = {}
+				b_xingong = {}
+				b_ergun = {}
+				b_shengli = {}
+				b_hongqi = {}
+				b_yongxing = {}
+				b_jianshe_2 = {}
+				b_nuanquan = {}
+				b_tulihe = {}
 			}
 		}
 		d_khovsgol = {
@@ -279,7 +276,7 @@ e_mongolia = {
 		}
 	}
 	k_hexi = {
-		color={ 221 51 65 }
+		color={ 221 91 65 }
 		color2 = { 255 255 255 }
 		
 		capital = 1455 #Lanzhou
@@ -584,6 +581,18 @@ e_mongolia = {
 				b_adaatsag = {}
 				b_deren = {}
 			}
+			c_dornogovi = {
+				color={ 120 120 25 }
+				color2={ 255 255 255 }
+				
+				b_sainshand = {}
+				b_zamyn_uud = {}
+				b_khatanbulag = {}
+				b_airag = {}
+				b_irhkhet = {}
+				b_erdene_3 = {}
+				b_dalanjargalan = {}
+			}
 			c_govi_altai = {
 				color={ 125 127 56 }
 				color2={ 255 255 255 }
@@ -633,23 +642,51 @@ e_mongolia = {
 				b_mandal_ovoo = {}
 			}
 		}
-		d_dornogovi = {
+		d_xilingol = {
 			color={ 124 113 42 }
 			color2={ 255 255 255 }
 		
-			capital = 2754 #Baotou
+			capital = 2755 #c_xilinhot
 		
-			c_dornogovi = {
-				color={ 120 120 25 }
+			khorchin="Sili-yin Gool"
+			khalkha="Sili-yin Gool"
+				
+			c_xilinhot = {
+				color={ 142 215 13 }
 				color2={ 255 255 255 }
 				
-				b_sainshand = {}
-				b_zamyn_uud = {}
-				b_khatanbulag = {}
-				b_airag = {}
-				b_irhkhet = {}
-				b_erdene_3 = {}
-				b_dalanjargalan = {}
+				khorchin="Sili-yin hota"
+				khalkha="Shiliin Khot"
+				
+				b_xilinhot = {
+					khorchin="Sili-yin hota"
+					khalkha="Shiliin Khot"}
+				b_bieli_gutai = {
+					khalkha="Belgütei"}
+				b_xiritala = {
+					khalkha="Shiritara"}
+				b_chugulan = {}
+				b_baoligen = {
+					khalkha="Boligan"}
+				b_honggel_gol = {}
+				b_xido = {}
+			}
+			c_ujimqin = {
+				color={ 211 175 95 }
+				color2={ 255 255 255 }
+				
+				khalkha="Üzemchin"
+				khorchin="Ujumuchin"
+				
+				b_uriastai = {
+					khalkha="Uliastai"}
+				b_balagar_gol = {
+					khalkha="Balgargol"}
+				b_dautnur = {}
+				b_bayanhua = {}
+				b_jirengol = {}
+				b_gadabuqi = {}
+				b_mandubaoligezhen = {}
 			}
 			c_sonid = {
 				color={ 184 176 86 }
@@ -674,42 +711,23 @@ e_mongolia = {
 				b_zhurihe = {
 					khalkha="Jurikhe"}
 			}
-			c_xilinhot = {
-				color={ 142 215 13 }
-				color2={ 255 255 255 }
-				
-				khorchin="Sili-yin hota"
-				khalkha="Shiliin Khot"
-				
-				b_xilinhot = {
-					khorchin="Sili-yin hota"
-					khalkha="Shiliin Khot"}
-				b_bieli_gutai = {
-					khalkha="Belgütei"}
-				b_xiritala = {
-					khalkha="Shiritara"}
-				b_chugulan = {}
-				b_baoligen = {
-					khalkha="Boligan"}
-				b_honggel_gol = {}
-			}
 		}
 	}
 	
 	k_altay_sayan = {
-		color={ 220 114 114 }
+		color={ 40 194 214 }
 		color2 = { 255 255 255 }
 		
 		capital = 1233 #Gorno-Altaysk
 		
 		d_gorny_altay = {
-			color={ 180 122 114 }
+			color={ 80 122 214 }
 			color2={ 255 255 255 }
 		
 			capital = 1233 #Gorno-Altaysk
 		
 			c_gorno_altaysk = {
-				color={ 159 103 85 }
+				color={ 59 103 185 }
 				color2={ 255 255 255 }
 				
 				holy_site = ak_jeng
@@ -723,7 +741,7 @@ e_mongolia = {
 				b_chemal = {}
 			}
 			c_onguday = {
-				color={ 211 123 100 }
+				color={ 11 123 200 }
 				color2={ 255 255 255 }
 				
 				b_onguday = {}
@@ -735,7 +753,7 @@ e_mongolia = {
 				b_yakonur = {}
 			}
 			c_kosh_agach = {
-				color={ 241 169 125 }
+				color={ 41 169 225 }
 				color2={ 255 255 255 }
 				
 				b_kosh_agach = {}
@@ -748,13 +766,13 @@ e_mongolia = {
 			}
 		}
 		d_tuva = {
-			color={ 240 82 114 }
+			color={ 40 82 214 }
 			color2={ 255 255 255 }
 		
 			capital = 1236 #Kyzyl
 		
 			c_kyzyl = {
-				color={ 241 100 163 }
+				color={ 41 100 163 }
 				color2={ 255 255 255 }
 				
 				b_kyzyl = {}
@@ -766,7 +784,7 @@ e_mongolia = {
 				b_ust_elegest = {}
 			}
 			c_todzha = {
-				color={ 205 86 125 }
+				color={ 105 86 225 }
 				color2={ 255 255 255 }
 				
 				b_toora_khem = {}
@@ -778,7 +796,7 @@ e_mongolia = {
 				b_saldam = {}
 			}
 			c_ak_dovurak = {
-				color={ 211 109 132 }
+				color={ 11 109 232 }
 				color2={ 255 255 255 }
 				
 				b_ak_dovurak = {}
@@ -790,7 +808,7 @@ e_mongolia = {
 				b_sagly = {}
 			}
 			c_shagonar = {
-				color={ 175 84 165 }
+				color={ 75 84 165 }
 				color2={ 255 255 255 }
 				
 				b_shagonar = {}
@@ -803,13 +821,13 @@ e_mongolia = {
 			}
 		}
 		d_altain_nuruu = {
-			color={ 150 70 45 }
+			color={ 50 70 245 }
 			color2={ 255 255 255 }
 		
 			capital = 1241 #Ulaangom
 		
 			c_bayan_olgii = {
-				color={ 168 81 85 }
+				color={ 68 81 185 }
 				color2={ 255 255 255 }
 				
 				kazakh="Bai-Ölke"
@@ -830,7 +848,7 @@ e_mongolia = {
 					kazakh="Nogoonnuur"}
 			}
 			c_ulaangom = {
-				color={ 146 52 20 }
+				color={ 46 52 220 }
 				color2={ 255 255 255 }
 				
 				b_ulaangom = {}
@@ -842,7 +860,7 @@ e_mongolia = {
 				b_davst = {}
 			}
 			c_khovd = {
-				color={ 164 59 89 }
+				color={ 64 59 189 }
 				color2={ 255 255 255 }
 				
 				b_khovd = {}
@@ -854,7 +872,7 @@ e_mongolia = {
 				b_mankhan_2 = {}
 			}
 			c_baruunturuun = {
-				color={ 120 75 21 }
+				color={ 20 75 151 }
 				color2={ 255 255 255 }
 				
 				b_baruunturuun = {}
@@ -1122,7 +1140,7 @@ e_mongolia = {
 		khalkha="Buriad"
 		
 		d_ulan_ude = {
-			color={ 75 152 232 }
+			color={ 55 132 232 }
 			color2={ 255 255 255 }
 		
 			capital = 1200 #Ulan-Ude
@@ -1313,7 +1331,7 @@ e_mongolia = {
 			}
 		}
 		d_severo_baykalsky = {
-			color={ 82 117 245 }
+			color={ 82 167 245 }
 			color2={ 255 255 255 }
 				
 			buryat="Khoito-Baigal"

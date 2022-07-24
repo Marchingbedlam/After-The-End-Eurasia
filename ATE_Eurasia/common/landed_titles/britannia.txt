@@ -208,6 +208,49 @@ e_britannia = {
 				b_hoddesdon = {}
 			}
 		}
+		d_east_anglia = {
+			color={ 180 50 20 }
+			color2={ 255 255 255 }
+			
+			capital = 34 # Norfolk
+			
+			c_norfolk = {
+				color={ 0 210 35 }
+				color2={ 255 255 255 }
+			
+				b_thorpe_st_andrew = {}
+				b_norwich = {}
+				b_yarmouth = {}
+				b_lynn = {}
+				b_thetford = {}
+				b_dereham = {}
+				b_taverham = {}
+			}
+			c_suffolk = {
+				color={ 42 0 163 }
+				color2={ 255 255 255 }
+			
+				b_ipswich = {}
+				b_bury = {}
+				b_lowestoft = {}
+				b_felixstowe = {}
+				b_haverhill = {}
+				b_sudbury = {}
+				b_stow = {}
+			}
+			c_cambridgeshire = {
+				color={ 126 204 34 }
+				color2={ 255 255 255 }
+				
+				b_wisbech = {}
+				b_peterborough = {}
+				b_cambridge = {}
+				b_st_neots = {}
+				b_huntingdon = {}
+				b_ely = {}
+				b_march = {}
+			}
+		}
 		d_sussex = {
 			color={ 241 142 35 }
 			color2={ 255 255 255 }
@@ -373,49 +416,6 @@ e_britannia = {
 				b_cirencester = {}
 				b_dursley = {}
 				b_bourton_on_the_water = {}
-			}
-		}
-		d_norfolk = {
-			color={ 200 90 0 }
-			color2={ 255 255 255 }
-			
-			capital = 34 # Norfolk
-			
-			c_norfolk = {
-				color={ 0 210 35 }
-				color2={ 255 255 255 }
-			
-				b_thorpe_st_andrew = {}
-				b_norwich = {}
-				b_yarmouth = {}
-				b_lynn = {}
-				b_thetford = {}
-				b_dereham = {}
-				b_taverham = {}
-			}
-			c_suffolk = {
-				color={ 42 0 163 }
-				color2={ 255 255 255 }
-			
-				b_ipswich = {}
-				b_bury = {}
-				b_lowestoft = {}
-				b_felixstowe = {}
-				b_haverhill = {}
-				b_sudbury = {}
-				b_stow = {}
-			}
-			c_cambridgeshire = {
-				color={ 126 204 34 }
-				color2={ 255 255 255 }
-				
-				b_wisbech = {}
-				b_peterborough = {}
-				b_cambridge = {}
-				b_st_neots = {}
-				b_huntingdon = {}
-				b_ely = {}
-				b_march = {}
 			}
 		}
 		d_cornwall = {

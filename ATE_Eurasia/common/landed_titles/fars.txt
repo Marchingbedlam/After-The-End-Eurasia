@@ -7,7 +7,7 @@ e_fars = {
 	capital = 2322 # c_tehran
 	
 	k_fars = {
-		color={ 254 17 62 }
+		color={ 204 17 62 }
 		color2={ 255 255 255 }
 		
 		capital = 2504 # c_shiraz
@@ -816,13 +816,13 @@ e_fars = {
 	}
 	
 	k_iran_e_gharbi = {
-		color={ 197 207 245 }
+		color={ 247 210 20 }
 		color2={ 255 255 255 }
 		
 		capital = 2305 # c_kermanshah
 		
 		d_kermanshah = {
-			color={ 217 187 255 }
+			color={ 217 187 55 }
 			color2={ 255 255 255 }
 			
 			capital = 2305 # c_kermanshah
@@ -865,7 +865,7 @@ e_fars = {
 				}
 			}
 			c_sarpol_e_zahab = { # 2307
-				color={ 214 194 122 }
+				color={ 214 194 22 }
 				color2={ 255 255 255 }
 
 				azeri="Särpol Zähab"
@@ -1054,7 +1054,7 @@ e_fars = {
 				}
 			}
 			c_behbahan = { # 2310
-				color={ 186 209 94 }
+				color={ 186 209 9 }
 				color2={ 255 255 255 }
 
 				kurdish="Behbehan"
@@ -1164,7 +1164,7 @@ e_fars = {
 			}
 		}
 		d_lorestan = {
-			color={ 191 231 136 }
+			color={ 191 191 136 }
 			color2={ 255 255 255 }
 			
 			capital = 2316 # c_khorramabad
@@ -1174,7 +1174,7 @@ e_fars = {
 			lurs="Lûrrisu"
 			
 			c_khorramabad = { # 2316
-				color={ 201 221 141 }
+				color={ 241 221 41 }
 				color2={ 255 255 255 }
 				
 				holy_site = ahl_e_haqq
@@ -1265,7 +1265,7 @@ e_fars = {
 			}
 		}
 		d_sanandaj = {
-			color={ 238 1 152 }
+			color={ 238 151 52 }
 			color2={ 255 255 255 }
 			
 			capital = 2319 # c_sanandaj
