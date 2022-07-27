@@ -19,6 +19,9 @@ character_event = {
 
 	option = {
 		
+		117 = {
+			add_province_modifier = { name = landmark_abraj_al_bait duration = -1 }
+			}
 		156 = {
 			add_province_modifier = { name = landmark_gallipoli duration = -1 }
 			}
@@ -149,6 +152,15 @@ character_event = {
 		1310 = { 
 			add_province_modifier = { name = landmark_small_idol_mountain duration = -1 }
 			}
+		1482 = {
+			add_province_modifier = { name = landmark_rotting_spires duration = -1 }
+			}
+		1482 = {
+			add_province_modifier = { name = landmark_palm_islands duration = -1 }
+			}
+		1482 = {
+			add_province_modifier = { name = landmark_burj_khalifa duration = -1 }
+			}
 		1496 = {
 			add_province_modifier = { name = landmark_la_bonne_mere duration = -1 }
 			}
@@ -193,6 +205,9 @@ character_event = {
 			}
 		2660 = {
 			add_province_modifier = { name = landmark_christ_the_king duration = -1 }
+			}
+		2679 = {
+			add_province_modifier = { name = landmark_the_line duration = -1 }
 			}
 			set_global_flag = landmarks_set
 	}
