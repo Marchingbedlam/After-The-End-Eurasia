@@ -3,6 +3,11 @@
 	dynasty=2924161 # Kossak
 	culture=halychian
 	religion=orthodox
+	martial=2
+	diplomacy=4
+	stewardship=2
+	intrigue=5
+	learning=3
 	trait=brilliant_strategist
 	trait=pious
 	trait=scarred_mid
@@ -17,7 +22,12 @@
 	dynasty=2924161 # Kossak
 	culture=halychian
 	religion=orthodox
-	trait=brilliant_strategist
+	martial=5
+	diplomacy=3
+	stewardship=4
+	intrigue=2
+	learning=5
+	trait=skilled_tactician
 	trait=pious
 	trait=freckles_5
 	trait=charitable
@@ -33,7 +43,12 @@
 	dynasty=1441111 #Geray
 	culture=qirimlar
 	religion=ruhi
-	trait=brilliant_strategist
+	martial=3
+	diplomacy=4
+	stewardship=6
+	intrigue=3
+	learning=3
+	trait=tough_soldier
 	trait=genius
 	trait=strategist
 	trait=brave
@@ -48,6 +63,11 @@
 	dynasty=1822001 # Odesser
 	culture=yiddish
 	religion=haredi
+	martial=4
+	diplomacy=5
+	stewardship=3
+	intrigue=7
+	learning=4
 	trait=charismatic_negotiator
 	trait=haredi_breslov
 	trait=peasant_leader
@@ -77,11 +97,390 @@
 	name= "Nazariy"
 	culture = ukrainian
 	religion = orthodox
-	trait = mastermind_theologian
+	martial=3
+	diplomacy=3
+	stewardship=6
+	intrigue=4
+	learning=4
+	trait = scholarly_theologian
 	trait = pious
 	trait = gregarious
 	trait = selfish
 	trait = trusting
 	disallow_random_traits = yes
 	2632.10.16={birth=yes}
+}
+
+1993182={
+	name="Kateryna" #girlboss of ukrain
+	dynasty=2922031 #Kharchenko
+	female=yes
+	culture=ukrainian
+	religion=orthodox
+	father=1993189
+	mother=1993190
+	martial=5
+	diplomacy=4
+	stewardship=4
+	intrigue=4
+	learning=6
+	trait=quick
+	trait=thrifty_clerk
+	trait=brave
+	trait=charitable
+	trait=hunter
+	trait=wroth
+	trait=tall
+	trait=just
+	2631.10.5={birth=yes}
+	2650.2.11={effect={add_lover=1993183}}
+	2652.9.25={add_matrilineal_spouse=1993183}
+	2681.4.22={death=yes}
+}
+1993183={
+	name="Viktor" #he's a wife guy
+	dynasty=2922011 #Bondar
+	culture=ukrainian
+	religion=orthodox
+	martial=2
+	diplomacy=4
+	stewardship=4
+	intrigue=5
+	learning=3
+	trait=kind
+	trait=arbitrary
+	trait=lustful
+	2633.5.19={birth=yes}
+	2674.8.11={death=yes}
+}
+1993184={
+	name="Emiliya"
+	dynasty=2922031 #Kharchenko
+	female=yes
+	culture=ukrainian
+	religion=orthodox
+	martial=4
+	diplomacy=3
+	stewardship=6
+	intrigue=3
+	learning=2
+	trait=twin
+	trait=brave
+	mother=1993182
+	father=1993183
+	2653.8.15={birth=yes}
+	2699.1.30={death=yes}
+}
+1993185={
+	name="Eduard"
+	dynasty=2922031 #Kharchenko
+	culture=ukrainian
+	religion=orthodox
+	martial=5
+	diplomacy=2
+	stewardship=3
+	intrigue=3
+	learning=1
+	trait=twin
+	trait=brave
+	mother=1993182
+	father=1993183
+	2653.8.15={birth=yes}
+	2719.5.19={death=yes}
+}
+1993186={
+	name="Petro"
+	dynasty=2922031 #Kharchenko
+	culture=ukrainian
+	religion=orthodox
+	martial=3
+	diplomacy=4
+	stewardship=2
+	intrigue=5
+	learning=2
+	mother=1993182
+	father=1993183
+	2656.5.4={birth=yes}
+	2664.11.15={death=yes}
+}
+1993187={
+	name="Illya"
+	dynasty=2922031 #Kharchenko
+	culture=ukrainian
+	religion=orthodox
+	martial=3
+	diplomacy=2
+	stewardship=3
+	intrigue=4
+	learning=4
+	mother=1993182
+	father=1993183
+	2663.8.11={birth=yes}
+	2702.1.6={death=yes}
+}
+1993188={
+	name="Nadiya"
+	dynasty=2922031 #Kharchenko
+	female=yes
+	culture=ukrainian
+	religion=orthodox
+	martial=1
+	diplomacy=1
+	stewardship=3
+	intrigue=2
+	learning=6
+	mother=1993182
+	father=1993183
+	2665.6.14={birth=yes}
+	2725.9.24={death=yes}
+}
+
+1993189={
+	name="Valentyn"
+	dynasty=2922031 #Kharchenko
+	culture=ukrainian
+	religion=orthodox
+	father=1993194
+	martial=4
+	diplomacy=5
+	stewardship=6
+	intrigue=4
+	learning=3
+	trait=quick
+	trait=tough_soldier
+	trait=brave
+	trait=tall
+	trait=diligent
+	2601.11.15={birth=yes}
+	2623.6.16={add_spouse=1993190}
+	2656.3.5={death=yes}
+}
+1993190={
+	name="Alla"
+	dynasty=2922037 #Litvinenko
+	female=yes
+	culture=ukrainian
+	religion=orthodox
+	martial=3
+	diplomacy=4
+	stewardship=6
+	intrigue=4
+	learning=4
+	trait=intricate_webweaver
+	trait=cynical
+	trait=diligent
+	trait=stubborn
+	2600.9.20={birth=yes}
+	2676.10.21={death=yes}
+}
+
+1993191={
+	name="Oksana"
+	dynasty=2922031 #Kharchenko
+	female=yes
+	culture=ukrainian
+	religion=orthodox
+	father=1993189
+	mother=1993190
+	martial=5
+	diplomacy=3
+	stewardship=2
+	intrigue=3
+	learning=6
+	trait=charismatic_negotiator
+	trait=brave
+	trait=charitable
+	trait=gamer
+	trait=patient
+	trait=just
+	2627.1.10={birth=yes}
+	2649.6.2={death=yes}
+}
+
+1993192={
+	name="Leonid"
+	dynasty=2922031 #Kharchenko
+	culture=ukrainian
+	religion=orthodox
+	father=1993189
+	mother=1993190
+	martial=4
+	diplomacy=6
+	stewardship=4
+	intrigue=2
+	learning=2
+	trait=tough_soldier
+	trait=wroth
+	trait=charitable
+	trait=gamer
+	trait=patient
+	trait=just
+	2635.5.19={birth=yes}
+	2696.10.22={death=yes}
+}
+
+1993193={
+	name="Valentyn"
+	dynasty=2922031 #Kharchenko
+	culture=ukrainian
+	religion=orthodox
+	father=1993189
+	mother=1993190
+	martial=4
+	diplomacy=6
+	stewardship=4
+	intrigue=2
+	learning=2
+	trait=underhanded_rogue
+	trait=wroth
+	trait=charitable
+	trait=cynical
+	trait=ambitious
+	trait=tall
+	2639.7.17={birth=yes}
+	2685.11.3={death=yes}
+}
+
+1993194={
+	name="Valentyn"
+	dynasty=2922031 #Kharchenko
+	culture=ukrainian
+	religion=orthodox
+	martial=5
+	diplomacy=3
+	stewardship=6
+	intrigue=4
+	learning=5
+	trait=sturdy
+	trait=charismatic_negotiator
+	trait=legit_bastard
+	trait=stutter
+	trait=gardener
+	trait=tall
+	trait=diligent
+	2575.8.1={birth=yes}
+	2624.6.29={death=yes}
+}
+
+1993195={
+	name="Solomiya"
+	dynasty=2922062 #Romanenko
+	female=yes
+	culture=ukrainian
+	religion=orthodox
+	martial=6
+	diplomacy=5
+	stewardship=2
+	intrigue=4
+	learning=6
+	trait=underhanded_rogue
+	trait=temperate
+	trait=humble
+	trait=charitable
+	2629.12.10={birth=yes}
+	2699.2.12={death=yes}
+}
+
+1993196={
+	name="Yakiv"
+	dynasty=2924017 #Kachmar
+	culture=halychian
+	religion=orthodox
+	martial=3
+	diplomacy=2
+	stewardship=6
+	intrigue=5
+	learning=4
+	trait=amateurish_plotter
+	trait=kind
+	trait=deceitful
+	trait=cynical
+	2621.2.3={birth=yes}
+	2679.5.15={death=yes}
+}
+1993197={
+	name="Bohdan"
+	dynasty=2924011 #Plavyuk
+	culture=halychian
+	religion=orthodox
+	martial=3
+	diplomacy=4
+	stewardship=5
+	intrigue=3
+	learning=4
+	trait=martial_cleric
+	trait=drunkard
+	trait=shrewd
+	trait=diligent
+	2635.4.9={birth=yes}
+	2675.1.16={death=yes}
+}
+
+1993198={
+	name="Serhiy"
+	dynasty=2922100 #Soroka
+	culture=ukrainian
+	religion=orthodox
+	martial=5
+	diplomacy=4
+	stewardship=3
+	intrigue=5
+	learning=2
+	trait=thrifty_clerk
+	trait=slothful
+	trait=chaste
+	trait=humble
+	2635.4.9={birth=yes}
+	2675.1.16={death=yes}
+}
+
+1993199={
+	name="Rodion"
+	dynasty=1853019 #Goncharov
+	culture=chornomorsky
+	religion=orthodox
+	martial=4
+	diplomacy=5
+	stewardship=5
+	intrigue=4
+	learning=3
+	trait=martial_cleric
+	trait=diligent
+	trait=lustful
+	trait=cynical
+	2629.3.10={birth=yes}
+	2681.10.12={death=yes}
+}
+
+1993200={
+	name="Hennadiy"
+	dynasty=2922034 #Shvets
+	culture=ukrainian
+	religion=orthodox
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=3
+	learning=6
+	trait=fortune_builder
+	trait=slothful
+	trait=charitable
+	trait=trusting
+	2622.6.17={birth=yes}
+	2696.3.8={death=yes}
+}
+1993201={
+	name="Tymofiy"
+	dynasty=2924031 #Stefurak
+	culture=halychian
+	religion=orthodox
+	martial=4
+	diplomacy=5
+	stewardship=3
+	intrigue=5
+	learning=3
+	trait=indulgent_wastrel
+	trait=trusting
+	2619.9.10={birth=yes}
+	2669.5.26={death=yes}
 }
