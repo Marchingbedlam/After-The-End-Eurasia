@@ -1677,3 +1677,108 @@ adult_baptized = {
 	religious = yes
 	ruler_designer_cost = 0
 }
+
+aniconist= {
+	potential = {
+		OR = {
+			religion = seperatist
+			religion = neotondrakian
+			}
+	}
+	opposites = {
+		freebooter
+		pirate
+		viking
+		seaking
+		sea_queen
+		buccaneer
+		corsair
+		#aniconist
+		image_breaker
+		arch_iconoclast
+	}
+	martial = 1
+	combat_rating = 10 #old value: 1
+	monthly_character_piety = 0.25
+	same_religion_opinion = 15
+	
+	same_opinion = 5
+	religious = yes
+	
+	male_insult = COMPL_PIRATE
+	female_insult = COMPL_PIRATE
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+	
+}
+
+image_breaker = {
+	potential = {
+		OR = {
+			religion = seperatist
+			religion = neotondrakian
+			}
+	}
+	opposites = {
+		freebooter
+		pirate
+		viking
+		seaking
+		sea_queen
+		buccaneer
+		corsair
+		aniconist
+		#image_breaker
+		arch_iconoclast
+	}
+	martial = 2
+	combat_rating = 20 #old value: 2
+	monthly_character_piety = 0.5
+	same_religion_opinion = 20
+	
+	same_opinion = 5
+	religious = yes
+	
+	male_insult = COMPL_PIRATE
+	female_insult = COMPL_PIRATE
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}
+
+arch_iconoclast = {
+	potential = {
+		OR = {
+			religion = seperatist
+			religion = neotondrakian
+			}
+	}
+	opposites = {
+		freebooter
+		pirate
+		viking
+		seaking
+		sea_queen
+		buccaneer
+		corsair
+		aniconist
+		image_breaker
+		#arch_iconoclast
+	}
+	martial = 3
+	combat_rating = 30 #old value: 3
+	monthly_character_piety = 1
+	same_religion_opinion = 25
+	
+	religious = yes
+	
+	male_insult = COMPL_PIRATE
+	female_insult = COMPL_PIRATE
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}
