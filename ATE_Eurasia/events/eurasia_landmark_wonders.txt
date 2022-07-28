@@ -152,14 +152,20 @@ character_event = {
 		1310 = { 
 			add_province_modifier = { name = landmark_small_idol_mountain duration = -1 }
 			}
-		1482 = {
-			add_province_modifier = { name = landmark_rotting_spires duration = -1 }
+		1399 = { 
+			add_province_modifier = { name = landmark_lost_city duration = -1 }
+			}
+		1411 = {
+			add_province_modifier = { name = landmark_suez_canal duration = -1 }
 			}
 		1482 = {
-			add_province_modifier = { name = landmark_palm_islands duration = -1 }
+			add_province_modifier = { name = landmark_sheikhs_road duration = -1 }
 			}
 		1482 = {
-			add_province_modifier = { name = landmark_burj_khalifa duration = -1 }
+			add_province_modifier = { name = landmark_port_of_jebel_ali duration = -1 }
+			}
+		1482 = {
+			add_province_modifier = { name = landmark_burj_al_muluk duration = -1 }
 			}
 		1496 = {
 			add_province_modifier = { name = landmark_la_bonne_mere duration = -1 }
@@ -207,7 +213,7 @@ character_event = {
 			add_province_modifier = { name = landmark_christ_the_king duration = -1 }
 			}
 		2679 = {
-			add_province_modifier = { name = landmark_the_line duration = -1 }
+			add_province_modifier = { name = landmark_neom_line duration = -1 }
 			}
 			set_global_flag = landmarks_set
 	}
