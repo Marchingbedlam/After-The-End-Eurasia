@@ -419,6 +419,240 @@
 	religion=old_believer
 	female=yes
 	father=1703007
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=3
+	learning=3
+	trait=trusting
+	trait=brave
+	trait=cynical
 	2644.2.12={birth=yes}
 	2697.12.25={death=yes}
+}
+
+1703030={
+	name="Yuriy"
+	dynasty=1589034 #Antonov
+	culture=volgan
+	religion=proletcult
+	martial=4
+	diplomacy=5
+	stewardship=6
+	intrigue=3
+	learning=4
+	trait=charismatic_negotiator
+	trait=weak
+	trait=groomed
+	trait=ambitious
+	trait=zealous
+	trait=depressed
+	2621.3.23={birth=yes}
+	2672.2.27={death=yes}
+}
+
+1703031={
+	name="Roman"
+	dynasty=1589044 #Pilyutin
+	culture=volgan
+	religion=proletcult
+	martial=4
+	diplomacy=7
+	stewardship=3
+	intrigue=3
+	learning=2
+	trait=skilled_tactician
+	trait=trusting
+	trait=strong
+	trait=humble
+	trait=shy
+	trait=honest
+	2615.8.27={birth=yes}
+	2671.11.3={death=yes}
+}
+
+1703032={
+	name="Maria"
+	dynasty=1589057 #Yumashev
+	female=yes
+	culture=volgan
+	religion=proletcult
+	martial=2
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=scholarly_theologian
+	trait=robust
+	trait=gregarious
+	trait=cynical
+	trait=kind
+	trait=patient
+	2626.4.15={birth=yes}
+	2672.4.8={death=yes}
+}
+
+1703033={
+	name="Boris"
+	dynasty=1589051 #Eytenmyuller
+	culture=volgan
+	religion=proletcult
+	martial=1
+	diplomacy=2
+	stewardship=4
+	intrigue=6
+	learning=3
+	trait=detached_priest
+	trait=proud
+	trait=hunter
+	trait=fair
+	trait=diligent
+	trait=envious
+	2619.4.8={birth=yes}
+	2668.9.17={death=yes}
+}
+
+1703034={
+	name="Grigoriy"
+	dynasty=1589025 #Semenov
+	culture=volgan
+	religion=proletcult
+	martial=2
+	diplomacy=4
+	stewardship=4
+	intrigue=6
+	learning=2
+	trait=amateurish_plotter
+	trait=lustful
+	trait=patient
+	trait=hedonist
+	trait=drunkard
+	trait=humble
+	2635.10.25={birth=yes}
+	2699.8.19={death=yes}
+}
+
+1703035={
+	name="Pyotr"
+	dynasty=1589008 #Volkov
+	culture=volgan
+	religion=proletcult
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=3
+	learning=6
+	trait=thrifty_clerk
+	trait=craven
+	trait=gluttonous
+	trait=quick
+	trait=chaste
+	trait=socializer
+	2662.11.30={birth=yes}
+	2685.5.15={death=yes}
+}
+
+1703036={
+	name="Irina"
+	dynasty=1589007 #Morozov
+	female=yes
+	culture=volgan
+	religion=proletcult
+	martial=4
+	diplomacy=1
+	stewardship=4
+	intrigue=7
+	learning=4
+	trait=charismatic_negotiator
+	trait=hunchback
+	trait=cruel
+	trait=lustful
+	trait=content
+	trait=honest
+	2622.12.1={birth=yes}
+	2668.3.5={death=yes}
+}
+
+1703037={
+	name="Lev"
+	dynasty=1589017 #Frolov
+	culture=volgan
+	religion=proletcult
+	martial=6
+	diplomacy=5
+	stewardship=4
+	intrigue=2
+	learning=3
+	trait=tough_soldier
+	trait=cynical
+	trait=ambitious
+	trait=temperate
+	trait=patient
+	trait=duelist
+	2627.10.10={birth=yes}
+	2674.5.18={death=yes}
+}
+
+1703038={
+	name="Agrippina"
+	dynasty=1589020 #Nikitin
+	female=yes
+	culture=volgan
+	religion=proletcult
+	martial=4
+	diplomacy=3
+	stewardship=7
+	intrigue=5
+	learning=3
+	trait=fortune_builder
+	trait=cynical
+	trait=quick
+	trait=lefthanded
+	trait=patient
+	trait=gardener
+	trait=honest
+	trait=stressed
+	2637.12.11={birth=yes}
+	2688.9.12={death=yes}
+}
+
+1703039={
+	name="Fäyzä"
+	dynasty=1005029 #Abashev
+	female=yes
+	culture=tatar
+	religion=proletcult
+	martial=2
+	diplomacy=4
+	stewardship=5
+	intrigue=4
+	learning=4
+	trait=flamboyant_schemer
+	trait=shy
+	trait=charitable
+	trait=architect
+	trait=honest
+	trait=erudite
+	trait=gluttonous
+	2630.4.9={birth=yes}
+	2675.10.22={death=yes}
+}
+
+1703040={
+	name="Xäkim"
+	dynasty=1005023 #Äxtämov
+	culture=tatar
+	religion=ruhi
+	martial=4
+	diplomacy=3
+	stewardship=6
+	intrigue=5
+	learning=2
+	trait=skilled_tactician
+	trait=gregarious
+	trait=wroth
+	trait=ambitious
+	trait=arbitrary
+	2625.6.1={birth=yes}
+	2671.5.27={death=yes}
 }
