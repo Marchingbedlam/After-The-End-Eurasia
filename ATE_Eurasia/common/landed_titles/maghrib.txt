@@ -81,6 +81,73 @@ e_maghrib = {
 				b_al_qawalish = {}
 			}
 		}
+		d_fezzan = {
+			color={ 178 194 113 }
+			color2={ 255 255 255 }
+			
+			capital = 1076 # c_sabha
+			
+			c_sabha = { # 1076
+				color={ 168 224 88 }
+				color2={ 255 255 255 }
+				
+				b_elena = {}
+				b_sabha = {}
+				b_ghadduwah = {}
+				b_al_hijarat = {}
+				b_jadid = {}
+				b_umm_al_ahrar = {}
+				b_al_nssria = {}
+			}
+			c_murzuq = {
+				color={ 112 151 98 }
+				color2={ 255 255 255 }
+				
+				b_murzuq = {}
+				b_zizau = {}
+				b_taraghin = {}
+				b_funqul = {}
+				b_gauate = {}
+				b_umm_al_aranib = {}
+				b_zawilah = {}
+			}
+			c_al_jufrah = { # 1078
+				color={ 68 150 30 }
+				color2={ 255 255 255 }
+				
+				b_hun = {}
+				b_waddan = {}
+				b_az_zallah = {}
+				b_sukanat = {}
+				b_al_faquha = {}
+				b_haruj = {}
+				b_garet_es_sebaa = {}
+			}
+			c_ashati = { # 1077
+				color={ 170 187 133 }
+				color2={ 255 255 255 }
+				
+				b_biraq = {}
+				b_adri = {}
+				b_qira = {}
+				b_az_zawia = {}
+				b_al_hashmi = {}
+				b_zalwaz = {}
+				b_tamzawa = {}
+			}
+			c_ghat = {
+				color={ 101 198 89 }
+				color2={ 255 255 255 }
+				
+				b_ghat = {}
+				b_al_gurayfah = {}
+				b_al_birkah = {}
+				b_alawenat = {}
+				b_awbari = {}
+				b_al_hatiyah = {}
+				b_burik = {}
+			}
+		}
 		d_misratah = {
 			color={ 83 204 41 }
 			color2={ 255 255 255 }
@@ -3222,75 +3289,8 @@ e_maghrib = {
 		color={ 191 182 86 }
 		color2={ 255 255 255 }
 		
-		capital = 1076 # c_sabha
+		capital = 2525 # Bechar
 
-		d_fezzan = {
-			color={ 178 164 113 }
-			color2={ 255 255 255 }
-			
-			capital = 1076 # c_sabha
-			
-			c_sabha = { # 1076
-				color={ 168 124 88 }
-				color2={ 255 255 255 }
-				
-				b_elena = {}
-				b_sabha = {}
-				b_ghadduwah = {}
-				b_al_hijarat = {}
-				b_jadid = {}
-				b_umm_al_ahrar = {}
-				b_al_nssria = {}
-			}
-			c_murzuq = {
-				color={ 172 151 98 }
-				color2={ 255 255 255 }
-				
-				b_murzuq = {}
-				b_zizau = {}
-				b_taraghin = {}
-				b_funqul = {}
-				b_gauate = {}
-				b_umm_al_aranib = {}
-				b_zawilah = {}
-			}
-			c_al_jufrah = { # 1078
-				color={ 168 150 30 }
-				color2={ 255 255 255 }
-				
-				b_hun = {}
-				b_waddan = {}
-				b_az_zallah = {}
-				b_sukanat = {}
-				b_al_faquha = {}
-				b_haruj = {}
-				b_garet_es_sebaa = {}
-			}
-			c_ashati = { # 1077
-				color={ 170 87 133 }
-				color2={ 255 255 255 }
-				
-				b_biraq = {}
-				b_adri = {}
-				b_qira = {}
-				b_az_zawia = {}
-				b_al_hashmi = {}
-				b_zalwaz = {}
-				b_tamzawa = {}
-			}
-			c_ghat = {
-				color={ 201 98 89 }
-				color2={ 255 255 255 }
-				
-				b_ghat = {}
-				b_al_gurayfah = {}
-				b_al_birkah = {}
-				b_alawenat = {}
-				b_awbari = {}
-				b_al_hatiyah = {}
-				b_burik = {}
-			}
-		}
 		d_adrar = {
 			color={ 220 192 124 }
 			color2={ 255 255 255 }

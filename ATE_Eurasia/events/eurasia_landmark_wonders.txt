@@ -19,6 +19,9 @@ character_event = {
 
 	option = {
 		
+		37 = {
+			add_province_modifier = { name = landmark_white_sea_canal duration = -1 }
+			}
 		117 = {
 			add_province_modifier = { name = landmark_abraj_al_bait duration = -1 }
 			}
@@ -30,6 +33,9 @@ character_event = {
 			}
 		183 = {
 			add_province_modifier = { name = landmark_necropolis_of_myra duration = -1 }
+			}
+		225 = {
+			add_province_modifier = { name = landmark_rock_of_gibraltar duration = -1 }
 			}
 		232 = {
 			add_province_modifier = { name = landmark_cap_de_creus duration = -1 }
@@ -45,6 +51,9 @@ character_event = {
 			}
 		333 = { 
 			add_province_modifier = { name = landmark_keukenhof duration = -1 }
+			}
+		337 = { 
+			add_province_modifier = { name = landmark_ijsselmeer duration = -1 }
 			}
 		349 = {
 			add_province_modifier = { name = landmark_altona_cemetery duration = -1 }
@@ -131,6 +140,12 @@ character_event = {
 		534 = { 
 			add_province_modifier = { name = landmark_blautopf duration = -1 }
 			}
+		552 = { 
+			add_province_modifier = { name = landmark_qinngua_valley duration = -1 }
+			}
+		616 = { 
+			add_province_modifier = { name = landmark_volga_don_canal duration = -1 }
+			}
 		697 = { 
 			add_province_modifier = { name = landmark_the_giant duration = -1 }
 			}
@@ -161,6 +176,15 @@ character_event = {
 		1411 = {
 			add_province_modifier = { name = landmark_suez_canal duration = -1 }
 			}
+		1415 = {
+			add_province_modifier = { name = landmark_qarun_lake duration = -1 }
+			}
+		1424 = {
+			add_province_modifier = { name = landmark_aswan_dam duration = -1 }
+			}
+		1425 = {
+			add_province_modifier = { name = landmark_toshka_canals duration = -1 }
+			}
 		1482 = {
 			add_province_modifier = { name = landmark_sheikhs_road duration = -1 }
 			}
@@ -179,6 +203,9 @@ character_event = {
 		1525 = {
 			add_province_modifier = { name = landmark_capbreton_gouf duration = -1 }
 			}
+		1545 = {
+			add_province_modifier = { name = landmark_oxagon duration = -1 }
+			}
 		1546 = {
 			add_province_modifier = { name = landmark_notre_dame_des_landes duration = -1 }
 			}
@@ -190,6 +217,9 @@ character_event = {
 			}
 		1977 = {
 			add_province_modifier = { name = landmark_mount_nemrut duration = -1 }
+			}
+		1953 = {
+			add_province_modifier = { name = landmark_trojena duration = -1 }
 			}
 		2003 = {
 			add_province_modifier = { name = landmark_aleppo_citadel duration = -1 }
@@ -211,6 +241,9 @@ character_event = {
 			}
 		2117 = {
 			add_province_modifier = { name = landmark_mount_ararat duration = -1 }
+			}
+		2173 = {
+			add_province_modifier = { name = landmark_rann_of_kutch duration = -1 }
 			}
 		2660 = {
 			add_province_modifier = { name = landmark_christ_the_king duration = -1 }

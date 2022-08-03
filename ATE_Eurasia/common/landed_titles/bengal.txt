@@ -154,44 +154,68 @@ e_bengal = {
 			}
 		}
 	}
-	k_purvottar_pradesh = {
-		color={ 60 200 16 }
+	k_assam = {
+		color={ 155 150 87 }
 		color2={ 255 255 255 }
 		
-		capital = 3143 # c_agartala
-		culture = tripuri
+		capital = 2921 # c_guwahati
 		
-		d_tripura = {
-			color={ 50 224 6 }
+		d_guwahati = {
+			color={ 128 157 22 }
 			color2={ 255 255 255 }
 			
-			capital = 3143 # c_agartala
+			capital = 2921 # c_guwahati
 			
-			c_agartala = { # 3143
-				color={ 40 214 5 }
+			c_guwahati = { # 2921
+				color={ 158 167 17 }
 				color2={ 255 255 255 }
 				
-				b_agartala = {}
-				b_bishalgarh = {}
-				b_belonia = {}
-				b_mohanpur = {}
-				b_bishramganj = {}
-				b_santirbazar = {}
-				b_ranirbazar = {}
+				b_dispur = {}
+				b_guwahati = {}
+				b_goalpara = {}
+				b_palashbari = {}
+				b_lakhipur = {}
+				b_kahikuchi = {}
+				b_dudhnoi = {}
 			}
-			c_dharmanagar = { # 2650
-				color={ 55 237 130 }
+			c_bongaigaon = { # 2996
+				color={ 195 229 60 }
 				color2={ 255 255 255 }
 				
-				b_udaipur = {}
-				b_dharmanagar = {}
-				b_ambassa = {}
-				b_khowai = {}
-				b_kailashahar = {}
-				b_amarpur = {}
-				b_panisagar = {}
+				b_bongaigaon = {}
+				b_dhubri = {}
+				b_kokrajhar = {}
+				b_bilasipara = {}
+				b_abhayapuri = {}
+				b_gossaigaon = {}
+				b_gauripur = {}
+			}
+			c_bodoland = { # 3142
+				color={ 187 176 87 }
+				color2={ 255 255 255 }
+				
+				b_mushalpur = {}
+				b_kajalgaon = {}
+				b_salbari = {}
+				b_odalguri = {}
+				b_basugaon = {}
+				b_bijni = {}
+				b_goreswar = {}
+			}
+			c_nalbari = { # 2748
+				color={ 150 194 122 }
+				color2={ 255 255 255 }
+				
+				b_nalbari = {}
+				b_barpeta = {}
+				b_pathsala = {}
+				b_tihu = {}
+				b_howli = {}
+				b_sarthebari = {}
+				b_sarbhog = {}
 			}
 		}
+		
 		d_nagaland = {
 			color={ 126 223 44 }
 			color2={ 255 255 255 }
@@ -285,70 +309,6 @@ e_bengal = {
 				b_tuipang = {}
 			}
 		}
-	}
-	
-	k_assam = {
-		color={ 155 150 87 }
-		color2={ 255 255 255 }
-		
-		capital = 2921 # c_guwahati
-		
-		d_guwahati = {
-			color={ 128 157 22 }
-			color2={ 255 255 255 }
-			
-			capital = 2921 # c_guwahati
-			
-			c_guwahati = { # 2921
-				color={ 158 167 17 }
-				color2={ 255 255 255 }
-				
-				b_dispur = {}
-				b_guwahati = {}
-				b_goalpara = {}
-				b_palashbari = {}
-				b_lakhipur = {}
-				b_kahikuchi = {}
-				b_dudhnoi = {}
-			}
-			c_bongaigaon = { # 2996
-				color={ 195 229 60 }
-				color2={ 255 255 255 }
-				
-				b_bongaigaon = {}
-				b_dhubri = {}
-				b_kokrajhar = {}
-				b_bilasipara = {}
-				b_abhayapuri = {}
-				b_gossaigaon = {}
-				b_gauripur = {}
-			}
-			c_bodoland = { # 3142
-				color={ 187 176 87 }
-				color2={ 255 255 255 }
-				
-				b_mushalpur = {}
-				b_kajalgaon = {}
-				b_salbari = {}
-				b_odalguri = {}
-				b_basugaon = {}
-				b_bijni = {}
-				b_goreswar = {}
-			}
-			c_nalbari = { # 2748
-				color={ 150 194 122 }
-				color2={ 255 255 255 }
-				
-				b_nalbari = {}
-				b_barpeta = {}
-				b_pathsala = {}
-				b_tihu = {}
-				b_howli = {}
-				b_sarthebari = {}
-				b_sarbhog = {}
-			}
-		}
-		
 		d_meghalaya = {
 			color={ 208 153 182 }
 			color2={ 255 255 255 }
@@ -607,6 +567,37 @@ e_bengal = {
 				b_hossainpur = {}
 			}
 		}
+		d_tripura = {
+			color={ 50 124 226 }
+			color2={ 255 255 255 }
+			
+			capital = 3143 # c_agartala
+			
+			c_agartala = { # 3143
+				color={ 40 64 215 }
+				color2={ 255 255 255 }
+				
+				b_agartala = {}
+				b_bishalgarh = {}
+				b_belonia = {}
+				b_mohanpur = {}
+				b_bishramganj = {}
+				b_santirbazar = {}
+				b_ranirbazar = {}
+			}
+			c_dharmanagar = { # 2650
+				color={ 55 27 130 }
+				color2={ 255 255 255 }
+				
+				b_udaipur = {}
+				b_dharmanagar = {}
+				b_ambassa = {}
+				b_khowai = {}
+				b_kailashahar = {}
+				b_amarpur = {}
+				b_panisagar = {}
+			}
+		}
 		d_barishal = {
 			color={ 10 143 228 }
 			color2={ 255 255 255 }
@@ -831,7 +822,7 @@ e_bengal = {
 			}
 		}
 	}
-	k_rarth = {
+	k_rarh = {
 		color={ 218 80 78 }
 		color2={ 255 255 255 }
 		

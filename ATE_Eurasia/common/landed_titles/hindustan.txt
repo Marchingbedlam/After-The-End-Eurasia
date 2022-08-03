@@ -5,217 +5,7 @@ e_hindustan = {
 	color2={ 255 255 255 }
 		
 	capital = 2800 #Delhi
-	k_mahakoshal = {
-		color={ 221 175 120 }
-		color2={ 255 255 255 }
-		
-		capital = 2884 #Jabalpur
-		
-		d_jabalpur = {
-			color={ 180 86 59 }
-			color2={ 255 255 255 }
-			
-			capital = 2884 #Jabalpur
-			
-			c_jabalpur = {
-				color={ 225 131 132 }
-				color2={ 255 255 255 }
-				
-				b_jabalpur = {}
-				b_raksha = {}
-				b_napier = {}
-				b_kundam = {}
-				b_shahpura = {}
-				b_sihora = {}
-				b_katangi = {}
-			}
-			c_katni = {
-				color={ 198 158 12 }
-				color2={ 255 255 255 }
-				
-				b_katni = {}
-				b_sleemanabad = {}
-				b_rithi = {}
-				b_badwara_kalan = {}
-				b_vijayraghavgarh = {}
-				b_dhemarkheda = {}
-				b_barhi_2 = {}
-			}
-			c_narsinghpur = {
-				color={ 228 169 105 }
-				color2={ 255 255 255 }
-				
-				b_narsinghpur = {}
-				b_gadarwara = {}
-				b_gotegaon = {}
-				b_mungwani = {}
-				b_barmaan = {}
-				b_saikheda = {}
-				b_singhpur = {}
-			}
-			c_mandla = {
-				color={ 223 189 57 }
-				color2={ 255 255 255 }
-				
-				b_mandla = {}
-				b_dindori = {}
-				b_shahpura_2 = {}
-				b_nainpur = {}
-				b_mohgaon = {}
-				b_gadasarai = {}
-				b_mehadwani = {}
-			}
-		}
-		d_sagar = {
-			color={ 223 180 180 }
-			color2={ 255 255 255 }
-			
-			capital = 2882 #Sagar
-			
-			c_sagar = {
-				color={ 226 187 184 }
-				color2={ 255 255 255 }
-				
-				b_sagar = {}
-				b_khurai = {}
-				b_bina = {}
-				b_deori = {}
-				b_garhakota = {}
-				b_banda = {}
-				b_malthone = {}
-			}
-			c_damoh = {
-				color={ 196 181 153 }
-				color2={ 255 255 255 }
-				
-				b_damoh = {}
-				b_tejgarh = {}
-				b_hatta = {}
-				b_kundalpur = {}
-				b_batiyagarh = {}
-				b_hindoria = {}
-				b_kumeriya = {}
-			}
-			c_chhatarpur = {
-				color={ 220 224 201 }
-				color2={ 255 255 255 }
-				
-				b_chhatarpur = {}
-				b_bada_malhera = {}
-				b_ghuwara = {}
-				b_buxwaha = {}
-				b_khajuraho = {}
-				b_nowgong = {}
-				b_bhimkund = {}
-			}
-			c_panna = {
-				color={ 192 178 179 }
-				color2={ 255 255 255 }
-				
-				b_panna = {}
-				b_pawai = {}
-				b_amanganj = {}
-				b_ajaigarh = {}
-				b_devendra_nagar = {}
-				b_manjha = {}
-				b_raipura = {}
-			}
-		}
-	}
-	k_bagelkhand = {
-		color={ 52 182 69 }
-		color2={ 255 255 255 }
-		
-		capital = 2862 #Nagpur
-		
-		d_rewa = {
-			color={ 120 181 101 }
-			color2={ 255 255 255 }
-			
-			capital = 2989 #Rewa
 	
-			c_sidhi = {
-				color={ 59 156 12 }
-				color2={ 255 255 255 }
-				
-				b_sidhi = {}
-				b_surhat = {}
-				b_marwas = {}
-				b_majhauli = {}
-				b_kusmi_2 = {}
-				b_jhujhari_ghatiya = {}
-				b_karwahi = {}
-			}
-			c_satna = {
-				color={ 100 198 69 }
-				color2={ 255 255 255 }
-				
-				b_satna = {}
-				b_maihar = {}
-				b_nagod = {}
-				b_amarpatan = {}
-				b_rampur_2 = {}
-				b_kothi = {}
-				b_majhgawa = {}
-			}
-			c_rewa = {
-				color={ 89 142 68 }
-				color2={ 255 255 255 }
-				
-				b_rewa = {}
-				b_deotalab = {}
-				b_mangawan = {}
-				b_baikanthpur = {}
-				b_mauganj = {}
-				b_sirmaur = {}
-				b_nai_garhi = {}
-			}
-			c_singrauli = {
-				color={ 52 168 31 }
-				color2={ 255 255 255 }
-				
-				b_singrauli = {}
-				b_renukoot = {}
-				b_waidhan = {}
-				b_dudhingar = {}
-				b_obra = {}
-				b_mada = {}
-				b_shakti_nagar = {}
-			}
-		}
-		d_shahdol = {
-			color={ 99 185 120 }
-			color2={ 255 255 255 }
-			
-			capital = 2842 #Shahdol
-	
-			c_umaria = {
-				color={ 125 199 101 }
-				color2={ 255 255 255 }
-				
-				b_umaria = {}
-				b_pali_birsinghpur = {}
-				b_ujan = {}
-				b_tala_3 = {}
-				b_chandia = {}
-				b_dhamokhar = {}
-				b_badagaon = {}
-				
-			}
-			c_shahdol = {
-				color={ 85 206 153 }
-				color2={ 255 255 255 }
-				
-				b_shahdol = {}
-				b_anuppur = {}
-				b_burhar = {}
-				b_beohari = {}
-				b_rajendragram = {}
-				b_jaisinghnagar = {}
-				b_gohparu = {}
-			}
-		}
-	}
 	k_delhi = {
 		color={ 82 208 72 }
 		color2={ 255 255 255 }
@@ -1068,164 +858,305 @@ e_hindustan = {
 			}
 		}
 	}
-	k_bundelkhand = {
-		color={ 215 203 200 }
+	
+	k_bihar = {
+		color={ 201 185 86 }
 		color2={ 255 255 255 }
 		
-		capital = 2817 #Jhansi
+		capital = 2657 # c_patna
 		
-		d_jhansi = {
-			color={ 200 196 185 }
+		d_patna = {
+			color={ 221 221 36 }
 			color2={ 255 255 255 }
 			
-			capital = 2817 #Jhansi
+			capital = 2657 # c_patna
 			
-			c_jhansi = {
-				color={ 201 200 195 }
+			c_patna = { # 2657
+				color={ 211 231 31 }
 				color2={ 255 255 255 }
 				
-				b_jhansi = {}
-				b_datia = {}
-				b_chirgaon = {}
-				b_babina = {}
-				b_jhansi_khas = {}
-				b_badonkalan = {}
-				b_orchha = {}
+				b_patna_sahib = {}
+				b_bihar_sharif = {}
+				b_jehanabad = {}
+				b_arwal = {}
+				b_danapur = {}
+				b_hilsa = {}
+				b_makhdumpur = {}
 			}
-			c_jalaun = {
-				color={ 195 185 189 }
+			c_arrah = { # 2785
+				color={ 205 158 66 }
 				color2={ 255 255 255 }
 				
-				b_jalaun = {}
-				b_orai = {}
-				b_kuthond = {}
-				b_konch = {}
-				b_kadaura = {}
-				b_madaripur_2 = {}
-				b_bangra = {}
+				b_arrah = {}
+				b_buxar = {}
+				b_piro = {}
+				b_dumraon = {}
+				b_jagdishpur = {}
+				b_sarimpur = {}
+				b_behea = {}
 			}
-			c_tikamgarh = {
-				color={ 185 185 176 }
+			c_rohtas = { # 3003
+				color={ 247 243 50 }
 				color2={ 255 255 255 }
 				
-				b_tikamgarh = {}
-				b_baldevgarh = {}
-				b_prithvipur = {}
-				b_jatara = {}
-				b_niwari = {}
-				b_samarra_2 = {}
-				b_digoda = {}
+				b_sasaram = {}
+				b_bhabua = {}
+				b_dehri = {}
+				b_garh_nokha = {}
+				b_bikramganj = {}
+				b_anwari = {}
+				b_nokha = {}
 			}
-			c_lalitpur = {
-				color={ 198 208 231 }
+			c_saran = { # 2784
+				color={ 191 225 101 }
 				color2={ 255 255 255 }
 				
-				b_lalitpur_2 = {}
-				b_kalyanpura_2 = {}
-				b_harshpur = {}
-				b_khura_2 = {}
-				b_birdha = {}
-				b_pali_2 = {}
-				b_banpur = {}
+				b_chhapra = {}
+				b_siwan = {}
+				b_gopalganj = {}
+				b_revelganj = {}
+				b_maharajganj = {}
+				b_barauli = {}
+				b_sonepur = {}
 			}
 		}
-		d_gird = {
-			color={ 206 215 236 }
+		d_darbhanga = {
+			color={ 184 184 59 }
 			color2={ 255 255 255 }
 			
-			capital = 2816 #Gwalior
+			capital = 2823 # c_darbhanga
 			
-			c_gwalior = {
-				color={ 239 196 240 }
+			c_darbhanga = { # 2823
+				color={ 224 194 54 }
 				color2={ 255 255 255 }
 				
-				b_gwalior = {}
-				b_bhind = {}
-				b_tekanpur = {}
-				b_mehgaon = {}
-				b_gohad = {}
-				b_mohana = {}
-				b_mau = {}
+				b_darbhanga = {}
+				b_samastipur = {}
+				b_benipur = {}
+				b_rosera = {}
+				b_padri = {}
+				b_dalsinghsarai = {}
+				b_bahadurpur = {}
 			}
-			c_shivpuri = {
-				color={ 100 175 220 }
+			c_madhepura = { # 2654
+				color={ 190 196 184 }
 				color2={ 255 255 255 }
 				
-				b_shivpuri = {}
-				b_karera = {}
-				b_pichhore = {}
-				b_khorghar = {}
-				b_padora = {}
-				b_khaniadhana = {}
-				b_badarwas = {}
+				b_madhepura = {}
+				b_supaul = {}
+				b_saharsa = {}
+				b_nirmali = {}
+				b_murliganj = {}
+				b_singhesar_asthan = {}
+				b_birpur = {}
 			}
-			c_sheopur = {
-				color={ 132 150 150 }
+			c_madhubani = { # 2787
+				color={ 186 174 136 }
 				color2={ 255 255 255 }
 				
-				b_sheopur = {}
-				b_baroda = {}
-				b_karahal = {}
-				b_pehla = {}
-				b_ochha = {}
-				b_bijeypur = {}
-				b_kanwarpura = {}
-			}
-			c_baran = {
-				color={ 173 202 185 }
-				color2={ 255 255 255 }
-				
-				b_baran_2 = {}
-				b_kelwara = {}
-				b_kawai = {}
-				b_shahabad_3 = {}
-				b_chhabra = {}
-				b_chhipa_barod = {}
-				b_anta = {}
-			}
-			c_guna = {
-				color={ 129 169 175 }
-				color2={ 255 255 255 }
-				
-				b_guna = {}
-				b_ashoknagar = {}
-				b_aron = {}
-				b_chanderi = {}
-				b_miana_2 = {}
-				b_piprai = {}
-				b_shadora = {}
+				b_madhubani = {}
+				b_jhanjharpur = {}
+				b_jainagar = {}
+				b_ghoghardiha = {}
+				b_satghara = {}
+				b_benipatti = {}
+				b_phulparas = {}
 			}
 		}
-		d_chitrakoot = {
-			color={ 190 162 166 }
+		d_magadh = {
+			color={ 179 166 115 }
 			color2={ 255 255 255 }
 			
-			capital = 2792 #Chitrakoot
+			capital = 2659 # c_gaya
 			
-			c_chitrakoot = {
-				color={ 195 215 215 }
+			c_gaya = { # 2659
+				color={ 199 156 120 }
 				color2={ 255 255 255 }
 				
-				b_chitrakoot = {}
-				b_chitrakoot_dham = {}
-				b_banda_2 = {}
-				b_atarra = {}
-				b_baberu = {}
-				b_rajapur = {}
-				b_tindwari = {}
-				b_manikpur = {}
+				b_gaya = {}
+				b_sherghati = {}
+				b_bodh_gaya = {}
+				b_tikari = {}
+				b_bara = {}
+				b_paharpur = {}
+				b_wazirganj_2 = {}
 			}
-			c_hamirpur_2 = {
-				color={ 210 192 192 }
+			c_aurangabad = { # 2956
+				color={ 203 186 30 }
 				color2={ 255 255 255 }
 				
-				b_rath = {}
-				b_mahoba = {}
-				b_panwari = {}
-				b_gursarai = {}
-				b_muskara = {}
-				b_maudaha = {}
-				b_kulpahar = {}
+				b_aurangabad = {}
+				b_daudnagar = {}
+				b_rafiganj = {}
+				b_nabinagar = {}
+				b_obra_2 = {}
+				b_hanspura = {}
+				b_deo = {}
+			}
+			c_nawada = { # 2990
+				color={ 184 167 102 }
+				color2={ 255 255 255 }
+				
+				b_nawada = {}
+				b_warisaliganj = {}
+				b_hisua = {}
+				b_rajauli = {}
+				b_bhadauni = {}
+				b_kawakol = {}
+				b_nardiganj = {}
+			}
+		}
+		d_munger = {
+			color={ 209 190 22 }
+			color2={ 255 255 255 }
+			
+			capital = 2959 # c_munger
+			
+			c_munger = { # 2959
+				color={ 252 200 17 }
+				color2={ 255 255 255 }
+				
+				b_munger = {}
+				b_lakhisarai = {}
+				b_sheikhpura = {}
+				b_jamalpur_2 = {}
+				b_barahiya = {}
+				b_barbigha = {}
+				b_kharagpur_2 = {}
+			}
+			c_begusarai = { # 2655
+				color={ 240 225 101 }
+				color2={ 255 255 255 }
+				
+				b_begusarai = {}
+				b_khagaria = {}
+				b_naugachhia = {}
+				b_barauni = {}
+				b_gogri_jamalpur = {}
+				b_bihat = {}
+				b_teghra = {}
+			}
+			c_bhagalpur = { # 2658
+				color={ 221 226 89 }
+				color2={ 255 255 255 }
+				
+				b_bhagalpur = {}
+				b_banka = {}
+				b_jamui = {}
+				b_sultanganj = {}
+				b_amarpur_2 = {}
+				b_jhajha = {}
+				b_kahalgaon = {}
+			}
+		}
+		d_purnia = {
+			color={ 234 252 89 }
+			color2={ 255 255 255 }
+			
+			capital = 2653 # c_purnia
+			
+			c_purnia = { # 2653
+				color={ 244 242 94 }
+				color2={ 255 255 255 }
+				
+				b_purnia = {}
+				b_araria = {}
+				b_maranga = {}
+				b_forbesganj = {}
+				b_banmankhi = {}
+				b_jogbani = {}
+				b_jalalgarh = {}
+			}
+			c_katihar = { # 3139
+				color={ 254 194 86 }
+				color2={ 255 255 255 }
+				
+				b_katihar = {}
+				b_manihari = {}
+				b_raghunathpur = {}
+				b_kadwa = {}
+				b_balrampur_2 = {}
+				b_pranpur = {}
+				b_barari = {}
+			}
+			c_kishanganj = { # 3136
+				color={ 207 219 131 }
+				color2={ 255 255 255 }
+				
+				b_kishanganj = {}
+				b_bahadurganj = {}
+				b_thakurganj = {}
+				b_kochadhaman = {}
+				b_dighalbank = {}
+				b_pothia = {}
+				b_terhagachha = {}
+			}
+		}
+		d_tirhut = {
+			color={ 197 105 43 }
+			color2={ 255 255 255 }
+			
+			capital = 3119 # c_muzaffarpur
+			
+			c_muzaffarpur = { # 3119
+				color={ 187 115 38 }
+				color2={ 255 255 255 }
+				
+				b_muzaffarpur = {}
+				b_motipur = {}
+				b_kanti = {}
+				b_sahebganj = {}
+				b_damodarpur = {}
+				b_shekhpura = {}
+				b_majhauli_khetal = {}
+			}
+			c_bettiah = { # 2786
+				color={ 237 197 170 }
+				color2={ 255 255 255 }
+				
+				b_bettiah = {}
+				b_bagaha = {}
+				b_narkatiaganj = {}
+				b_ramnagar = {}
+				b_chanpatia = {}
+				b_kargahia_purab = {}
+				b_hat_saraiya = {}
+			}
+			c_motihari = { # 3132
+				color={ 243 199 173 }
+				color2={ 255 255 255 }
+				
+				b_motihari = {}
+				b_raxaul = {}
+				b_dhaka_2 = {}
+				b_sugauli = {}
+				b_pakri_dayal = {}
+				b_areraj = {}
+				b_mehsi = {}
+			}
+			c_sitamarhi = { # 3123
+				color={ 251 229 192 }
+				color2={ 255 255 255 }
+				
+				b_dumra = {}
+				b_sitamarhi = {}
+				b_sheohar = {}
+				b_bairgania = {}
+				b_belsand = {}
+				b_janakpur_road = {}
+				b_rajopatti = {}
+			}
+			c_vaishali = { # 3122
+				color={ 241 100 49 }
+				color2={ 255 255 255 }
+				
+				b_hajipur = {}
+				b_mahnar_bazar = {}
+				b_lalganj = {}
+				b_bhagwanpur = {}
+				b_mahua = {}
+				b_raja_pakar = {}
+				b_raghopur = {}
 			}
 		}
 	}

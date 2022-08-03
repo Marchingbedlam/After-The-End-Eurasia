@@ -2567,13 +2567,14 @@ e_turkestan = {
 			
 				uighur="Aqsu"
 				
-				b_aksu = {}
+				b_aksu = {
+					uighur="Aqsu"}
 				b_awat = {}
 				b_alar = {}
-				b_uqturpan = {}
-				b_qizil = {}
+				b_topluq = {}
+				b_beztugman = {}
 				b_xayar = {}
-				b_onsu_2 = {}
+				b_tuokayi = {}
 			}
 			c_toqsu = {
 				color={ 159 121 76 }
@@ -2583,12 +2584,24 @@ e_turkestan = {
 				b_icheriq = {}
 				b_yultuzbag = {}
 				b_tasheriq = {}
-				b_kuqa = {}
+				b_payxambabazar = {}
 				b_reste = {}
 				b_saqsaq = {}
 			}
-			c_onsu = {
+			c_kuqa = {
 				color={ 105 50 72 }
+				color2={ 255 255 255 }
+								
+				b_kuqa = {}
+				b_uchar = {}
+				b_tirek = {}
+				b_bai = {}
+				b_qarqi = {}
+				b_chimen = {}
+				b_sairam = {}
+			}
+			c_onsu = {
+				color={ 155 20 59 }
 				color2={ 255 255 255 }
 				
 				beifanghua = "Wensu"
@@ -2596,9 +2609,9 @@ e_turkestan = {
 				b_onsu = {
 					beifanghua = "Wensu"
 				}
-				b_tumshuq = {}
+				b_qizil = {}
 				b_uchturpan = {}
-				b_jiamsu = {}
+				b_tumshuq = {}
 				b_aheya = {}
 				b_tuofuhan = {}
 				b_imam = {}
@@ -2655,6 +2668,18 @@ e_turkestan = {
 				b_andir = {}
 				b_yawatongguzi = {}
 			}
+			c_khotan_daria = {
+				color={ 110 102 99 }
+				color2={ 255 255 255 }
+				
+				b_akyakma = {}
+				b_tavekkei = {}
+				b_kuyundelik = {}
+				b_masartag = {}
+				b_galchilik = {}
+				b_hanairike = {}
+				b_aqike = {}
+			}
 		}
 		d_bayingholin = {
 			color={ 150 162 53 }
@@ -2670,13 +2695,13 @@ e_turkestan = {
 				color={ 157 195 84 }
 				color2={ 255 255 255 }
 				
-				b_korla = {}
-				b_yenji_xuyzu = {}
-				b_tirek = {}
-				b_qarqi = {}
-				b_sairam = {}
-				b_qeyir = {}
-				b_kizil = {}
+				b_minsheng = {}
+				b_tashidian = {}
+				b_qiaerbage = {}
+				b_shanghu = {}
+				b_yingxia = {}
+				b_xinier = {}
+				b_tiekqi = {}
 			}
 			c_xejing = {
 				color={ 176 143 125 }
