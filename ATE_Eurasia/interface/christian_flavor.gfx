@@ -47,4 +47,28 @@ spriteTypes = {
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate_linear.lua"
 	}
+	spriteType = {
+		name = "GFX_orthodox_icon_jesus_christ_small"
+		texturefile = "gfx/interface/artifacts/inventory/orthodox_icon_jesus_christ_small.dds"
+	}
+	spriteType = {
+		name = "GFX_orthodox_icon_jesus_christ"
+		texturefile = "gfx/interface/artifacts/inventory/orthodox_icon_jesus_christ.dds"
+	}	
+	spriteType = {
+		name = "GFX_orthodox_icon_blessed_virgin_small"
+		texturefile = "gfx/interface/artifacts/inventory/orthodox_icon_blessed_virgin_small.dds"
+	}
+	spriteType = {
+		name = "GFX_orthodox_icon_blessed_virgin"
+		texturefile = "gfx/interface/artifacts/inventory/orthodox_icon_blessed_virgin.dds"
+	}
+	spriteType = {
+		name = "GFX_orthodox_icon_saint_michael_small"
+		texturefile = "gfx/interface/artifacts/inventory/orthodox_icon_saint_michael_small.dds"
+	}
+	spriteType = {
+		name = "GFX_orthodox_icon_saint_michael"
+		texturefile = "gfx/interface/artifacts/inventory/orthodox_icon_saint_michael.dds"
+	}
 }

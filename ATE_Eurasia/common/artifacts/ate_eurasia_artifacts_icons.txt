@@ -1,0 +1,79 @@
+orthodox_icon_jesus_christ = {
+    monthly_character_prestige = 0.25
+    monthly_character_piety = 0.5
+    active = { 
+        OR = {
+            religion_group = christian
+            religion_group = vernacular
+        }
+    }
+    allowed_gift = {
+        OR = {
+            religion_group = christian
+            religion_group = vernacular
+        }
+    }
+    quality = 3
+    flags = { religious }
+    picture = "GFX_orthodox_icon_jesus_christ"
+}
+
+orthodox_icon_blessed_virgin = {
+    monthly_character_prestige = 0.25
+    monthly_character_piety = 0.5
+    active = { 
+        OR = {
+            religion_group = christian
+            religion_group = vernacular
+        }
+    }
+    allowed_gift = {
+        OR = {
+            religion_group = christian
+            religion_group = vernacular
+        }
+    }
+    quality = 3
+    flags = { religious }
+    picture = "GFX_orthodox_icon_blessed_virgin"
+}
+
+orthodox_icon_saint_michael = {
+    monthly_character_prestige = 0.25
+    monthly_character_piety = 0.5
+    active = { 
+        OR = {
+            religion_group = christian
+            religion_group = vernacular
+        }
+    }
+    allowed_gift = {
+        OR = {
+            religion_group = christian
+            religion_group = vernacular
+        }
+    }
+    quality = 3
+    flags = { religious }
+    picture = "GFX_orthodox_icon_saint_michael"
+}
+
+orthodox_icon_saint_matthew = {
+    monthly_character_prestige = 0.25
+    monthly_character_piety = 0.5
+    active = { 
+        OR = {
+            religion_group = christian
+            religion_group = vernacular
+        }
+    }
+    allowed_gift = {
+        OR = {
+            religion_group = christian
+            religion_group = vernacular
+        }
+    }
+    quality = 3
+    flags = { religious }
+    picture = "GFX_orthodox_icon_saint_matthew"
+}
