@@ -267,6 +267,8 @@ major_liberation = {
 				religion = kozachina
 				religion = angelchina
 			}
+			OR = {
+			AND = {
 			NOR = {
 			trait = hedonist
 			trait = impaler
@@ -277,9 +279,11 @@ major_liberation = {
 			has_character_modifier = known_satanist
 			any_vassal = {
 				has_opinion_modifier = { who = ROOT modifier = opinion_evil_tyrant }
+					}
 				}
+			piety = 150
 			}
-			NAND = {
+			AND = {
 				piety > 425
 				OR = {
 				trait = cruel
@@ -289,11 +293,11 @@ major_liberation = {
 					OR = {
 					has_opinion_modifier = { who = FROM modifier = opinion_tyrant }
 					has_opinion_modifier = { who = FROM modifier = opinion_ruthless }
+							}
 						}
 					}
 				}
 			}
-			piety = 150
 		}
 	}
 	
@@ -435,67 +439,30 @@ major_liberation = {
 	}
 
 	on_success_title = {
-		if = { # If the attacker is a duke, and the target is a one-county ruler, vassalize them
-			limit = {
-				ROOT = {
-					tier = DUKE
-				}
-				holder_scope = {
-					tier = COUNT
-					is_patrician = no
-					NOT = { num_of_count_titles = 2 }
-					lower_tier_than = ROOT
-				}
-			}
-
-			holder_scope = {
-				set_defacto_liege = ROOT
-			}
-		}
-
-		if = {
-			limit = {
-				holder_scope = {
-					OR = {
-						ROOT = {
-							tier = COUNT
-						}
-						higher_tier_than = COUNT
-						num_of_count_titles = 2
-						is_patrician = yes
+		check_holy_order_donation_effect = yes
+		FROM = {
+				any_vassal = {
+					set_defacto_liege = ROOT
+						opinion = {
+							modifier = opinion_liberated_from_tyrant 
+							multiplier = 2
+							who = ROOT
+							}
 					}
-				}
 			}
-
-			usurp_title_plus_barony_if_unlanded = { target = ROOT type = claim }
-			any_de_jure_vassal_title = { # take all baronies under the one we're fighting for
-				limit = {
-					has_holder = yes
-					NOT = {
-						de_facto_liege = PREV
-					}
-					holder_scope = {
-						OR = {
-							character = FROM
-							is_liege_or_above = FROM
+			custom_tooltip = {
+				text = liberate_nomad_cb_succ_tip
+				hidden_tooltip = {
+					ROOT = {
+						vassalize_or_take_under_title = {
+							title = PREV
+							enemy = FROM
+							is_religious = yes
+							type = holy_war
 						}
 					}
 				}
-
-				usurp_title_plus_barony_if_unlanded = { target = ROOT type = claim }
 			}
-		}
-		any_attacker = {
-			limit = { NOT = { character = ROOT } }
-			hidden_tooltip = { participation_scaled_prestige = 100 }
-		}
-
-		hidden_tooltip = {
-			check_war_effect = yes
-			FROM = {
-				landless_pope_effect = yes
-			}
-		}
 	}
 
 	on_fail = {
