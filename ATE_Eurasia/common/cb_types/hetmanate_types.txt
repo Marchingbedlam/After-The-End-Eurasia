@@ -267,6 +267,7 @@ major_liberation = {
 				religion = kozachina
 				religion = angelchina
 			}
+			NOT = { has_character_modifier = major_liberation_cooldown }
 			OR = {
 			AND = {
 			NOR = {
