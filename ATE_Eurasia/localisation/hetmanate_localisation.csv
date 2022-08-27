@@ -39,3 +39,13 @@ EVTOPTA_onanopenfield_4814;We will use fresh manure to fertilize the fields!;;;;
 EVTOPTB_onanopenfield_4814;The transition into unsettled farmland has not being comfortable for the peasantry.;;;;;;;;;x
 EVTOPTC_onanopenfield_4814;We shall feast and sacrifice whoever is left in the name of [Root.Religion.GetHighGodNameCap]!;;;;;;;;;x
 EVTDESC_onanopenfield_4814_NON_NOMAD;Your nobles have reprivatized [target_location.GetName] and a holding in the county has been completely transformed into farmland.;;;;;;;;;x
+
+CB_NAME_MAJOR_LIBERATION;Liberation War for [This.GetFullBaseName];;;;;;;;;;;;x
+major_liberation_desc;§Y$TARGET$§! is held by a tyrant, its people are suffering. It is your duty to liberate them!;;;;;;;;;;;;x
+WAR_NAME_MAJOR_LIBERATION;$ORDER$$FIRST_ADJ$-$SECOND_ADJ$ War to Liberate the people of [Title.GetBaseName];;;;;;;;;x
+major_liberation_cb_succ_tip;§Y[Root.GetTitledFirstName]§! liberates vassal lords and takes all other titles in the §Y[This.GetFullBaseName]§!;;;;;;;;;;;;;x 
+
+CB_NAME_MINOR_LIBERATION;Minor Conquest for [This.GetFullBaseName];;;;;;;;;;;;x
+minor_liberation_desc;Kozachina can conquer single border counties without specific reasons at the cost of §Y50§! Piety;;;;;;;;;;;;x
+WAR_NAME_MINOR_LIBERATION;$ORDER$$FIRST_ADJ$ Conquest of $OTHER_TITLE$;;;;;;;;;x
+#minor_liberation_cb_succ_tip;§Y[Root.GetTitledFirstName]§! liberates vassal lords and takes all other titles in the §Y[This.GetFullBaseName]§!;;;;;;;;;;;;;x 

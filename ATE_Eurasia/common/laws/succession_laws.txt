@@ -101,7 +101,7 @@ succession_laws = {
 				}
 				NOT = { religion_group = muslim }
 				NOT = { religion = kozachina }
-				#NOT = { religion = angelsina }
+				NOT = { religion = angelchina }
 				is_merchant_republic = no
 				is_patrician = no
 				OR = {
@@ -156,6 +156,7 @@ succession_laws = {
 								religion = sjotru
 								religion = jumic
 								religion = kozachina
+								religion = angelchina
 								religion = nartist
 								religion = nenets
 								religion = ak_jeng
@@ -261,7 +262,7 @@ succession_laws = {
 					}
 				}
 				NOT = { religion = kozachina }
-				#NOT = { religion = angelsina }
+				NOT = { religion = angelchina }
 			}
 			OR = {
 				is_landless_type_title = no
@@ -520,7 +521,7 @@ succession_laws = {
 					independent = no
 				}
 				NOT = { religion = kozachina }
-				#NOT = { religion = angelsina }
+				NOT = { religion = angelchina }
 			}
 			OR = {
 				is_landless_type_title = no
@@ -708,7 +709,7 @@ succession_laws = {
 			NOT = { holder_scope = { government = confederation_government } }
 			NOT = { holder_scope = { government = cenobitic_government }}
 			NOT = { religion = kozachina }
-			#NOT = { religion = angelsina }
+			NOT = { religion = angelchina }
 		}
 		allow = {
 			conditional_tooltip = {
@@ -877,7 +878,7 @@ succession_laws = {
 					religion = insular
 				}
 				NOT = { religion = kozachina }
-				#NOT = { religion = angelsina }
+				NOT = { religion = angelchina }
 			}
 			OR = {
 				is_landless_type_title = no
@@ -1634,7 +1635,7 @@ succession_laws = {
 				OR = {
 				is_nomadic = yes
 				religion = kozachina
-				#religion = angelsina
+				religion = angelchina
 				}
 			}
 		}

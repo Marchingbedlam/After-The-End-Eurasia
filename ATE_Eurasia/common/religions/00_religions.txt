@@ -194,6 +194,8 @@ pagan_group = {
 		intermarry = quinto
 		intermarry = nysed
 		intermarry = folketro
+		intermarry = kozachina
+		intermarry = angelchina
 		
 	}
 	jumic_reformed = {
@@ -521,6 +523,8 @@ pagan_group = {
 		evil_god_names = {
 			GOD_ELIYE
 		}
+		
+		intermarry = angelchina
 		
 		scripture_name = THE_LEGENDS
 		priest_title = SHAMAN
@@ -1392,6 +1396,9 @@ christian = {
 		
 		can_retire_to_monastery = yes
 		
+		intermarry = kozachina
+		intermarry = angelchina
+		
 		religious_clothing_head = 2
 		religious_clothing_priest = 2
 	}
@@ -2072,6 +2079,8 @@ vernacular = {
 		intermarry = fornsed
 		intermarry = nysed
 		intermarry = sun_king_cultist
+		intermarry = angelchina
+		intermarry = kozachina
 		
 	}
 	
@@ -2108,6 +2117,47 @@ vernacular = {
 		intermarry = quinto
 		intermarry = sjotru
 		intermarry = orthodox
+		intermarry = angelchina
+	}
+	
+	angelchina = {
+		graphical_culture = norsegfx
+
+		icon = 12
+		heresy_icon = 13
+		
+		parent = kozachina
+		
+		color = { 0.751 0.758 0.024 }
+
+		high_god_name = GOD_GOSPODAR
+
+		god_names = {
+			GOD_ARKHISTRATEG GOD_IISUS_NAZARIY GOD_THEOTOKOS GOD_SVYATIYE_JOHN GOD_SVYATIYE_GEORGE GOD_SVYATIYE_DEMETRIUS
+		}
+		evil_god_names = {
+			GOD_THE_DECIEVER
+		}
+		
+		scripture_name = THE_REPLY
+		priest_title = PRIEST
+		priests_can_marry = yes
+		
+		
+		allow_looting = yes 
+		allow_rivermovement = yes 
+		max_consorts = 3 
+		feminist = yes
+		can_demand_religious_conversion = no
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		intermarry = quinto
+		intermarry = sjotru
+		intermarry = orthodox
+		intermarry = kozachina
+		intermarry = khanist
 	}
 	
 	sun_king_cultist = {

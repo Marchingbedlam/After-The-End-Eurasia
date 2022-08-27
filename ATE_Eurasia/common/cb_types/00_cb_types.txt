@@ -5959,6 +5959,8 @@ religious = {
 				religion = bahai
 				religion = haskalah
 				religion = jedinstvo
+				religion = kozachina
+				religion = angelchina
 				AND = {
 					religion = folketro
 					trait = hiddenfolk_cult
@@ -5983,6 +5985,8 @@ religious = {
 					religion = ruhi
 					religion = bahai
 					religion = haskalah
+					religion = kozachina
+					religion = angelchina
 				}
 				piety = -250
 			}
@@ -6021,6 +6025,8 @@ religious = {
 			NOT = { religion = bahai }
 			NOT = { religion = haskalah }
 			NOT = { religion = jedinstvo }
+			NOT = { religion = kozachina }
+			NOT = { religion = angelchina }
 			NOT = { has_law = religion_tolerance_0 }
 		#	NAND = {
 		#		OR = {
@@ -6187,6 +6193,8 @@ religious = {
 			NOT = { religion = neuhumanist }
 			NOT = { religion = ruhi }
 			NOT = { religion = haskalah }
+			NOT = { religion = kozachina }
+			NOT = { religion = angelchina }
 			NOT = { religion_group = pagan_group }
 			NOT = { pacifist = yes }
 			NOT = { same_realm = FROM }
