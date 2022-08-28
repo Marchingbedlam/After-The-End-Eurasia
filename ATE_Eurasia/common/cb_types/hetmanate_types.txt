@@ -440,17 +440,24 @@ major_liberation = {
 	}
 
 	on_success_title = {
-		check_holy_order_donation_effect = yes
 		FROM = {
+			piety = -100
+			prestige = -100
+			
+			hidden_tooltip = {
+				opinion = {
+					modifier = opinion_usurped_by_liberator 
+					who = ROOT
+				}
 				any_vassal = {
-					set_defacto_liege = ROOT
-						opinion = {
-							modifier = opinion_liberated_from_tyrant 
-							multiplier = 2
-							who = ROOT
-							}
+					opinion = {
+						modifier = opinion_liberated_from_tyrant 
+						who = ROOT
 					}
+				}				
 			}
+		}
+		check_holy_order_donation_effect = yes
 			custom_tooltip = {
 				text = liberate_nomad_cb_succ_tip
 				hidden_tooltip = {
@@ -463,7 +470,7 @@ major_liberation = {
 						}
 					}
 				}
-			}
+		}
 	}
 
 	on_fail = {
