@@ -278,7 +278,7 @@ major_liberation = {
 			trait = possessed
 			trait = lunatic
 			has_character_modifier = known_satanist
-			any_vassal = {
+			any_de_jure_vassal = {
 				has_opinion_modifier = { who = ROOT modifier = opinion_evil_tyrant }
 					}
 				}
@@ -290,7 +290,7 @@ major_liberation = {
 				trait = cruel
 				trait = craven
 				has_character_modifier = known_murderer
-				any_vassal = {
+				any_de_jure_vassal = {
 					OR = {
 					has_opinion_modifier = { who = FROM modifier = opinion_tyrant }
 					has_opinion_modifier = { who = FROM modifier = opinion_ruthless }
@@ -341,7 +341,7 @@ major_liberation = {
 			trait = cannibal_trait
 			trait = possessed
 			trait = lunatic
-			any_vassal = {
+			any_de_jure_vassal = {
 				OR = {
 					has_opinion_modifier = { who = FROM modifier = opinion_tyrant }
 					has_opinion_modifier = { who = FROM modifier = opinion_evil_tyrant }
@@ -449,7 +449,7 @@ major_liberation = {
 					modifier = opinion_usurped_by_liberator 
 					who = ROOT
 				}
-				any_vassal = {
+				any_de_jure_vassal = {
 					opinion = {
 						modifier = opinion_liberated_from_tyrant 
 						who = ROOT
