@@ -1045,13 +1045,25 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_old_world_shades"
-		texturefile = "gfx\\interface\\inventory\\artifacts\\old_world_shades.dds"
+		texturefile = "gfx\\interface\\artifacts\\inventory\\old_world_shades.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_favorite_shades"
+		texturefile = "gfx\\interface\\artifacts\\inventory\\favorite_shades.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_favorite_shades_small"
+		texturefile = "gfx\\interface\\artifacts\\inventory\\favorite_shades_small.dds"
 		noOfFrames = 1
 		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_old_world_shades_small"
-		texturefile = "gfx\\interface\\inventory\\artifacts\\old_world_shades_small.dds"
+		texturefile = "gfx\\interface\\artifacts\\inventory\\old_world_shades_small.dds"
 		noOfFrames = 1
 		norefcount = yes
 	}

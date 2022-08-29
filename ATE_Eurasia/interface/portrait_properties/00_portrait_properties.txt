@@ -4470,6 +4470,7 @@
 				trait = dead_crown_zun_fylkir
 				trait = dead_crown_west_african_fylkir
 				trait = dead_crown_aztec_fylkir
+				trait = dead_shades
 				trait = augustus # Laurels
 			}
 		}
@@ -4497,6 +4498,7 @@
 					artifact_type = crown_aztec_fylkir
 					artifact_type = iron_crown_of_lombardy
 					artifact_type = cursed_diamond_crown
+					artifact_type = favorite_shades
 				}
 				is_artifact_equipped = yes 
 			}
@@ -4804,6 +4806,20 @@
 			NOR = {
 				has_minor_title = title_cardinal
 				has_minor_title = title_fraticelli_cardinal
+			}
+		}
+	}
+	16 = { 
+		factor = 100
+		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
+		modifier = { #Favorite Shades (Chloe Insert)
+			factor = 0
+			NOR = { 
+				any_artifact = {
+					artifact_type = favorite_shades
+					is_artifact_equipped = yes 
+				}
+				trait = dead_shades
 			}
 		}
 	}
