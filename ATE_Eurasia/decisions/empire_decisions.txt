@@ -258,6 +258,68 @@ decisions = {
             factor = 100
         }
     }
+	form_nenets = {
+        is_high_priority = yes
+        potential = {
+            is_alternate_start = no
+            NOT = { has_global_flag = nenets_formed }
+            independent = yes
+            culture = nenet
+            date >= 2666.5.21
+        }
+        allow = {
+            is_adult = yes
+            prisoner = no
+            NOT = { trait = incapable }
+            war = no
+            has_landed_title = c_naryan_mar
+        }
+        effect = {
+            activate_title = { title = k_nenets status = yes }
+            primary_title = {
+                k_nenets = {
+                    grant_title = ROOT
+                    copy_title_laws = PREV
+                }
+            }
+            d_nenets = {
+                de_jure_liege = k_nenets 
+            }
+            d_barents = {
+                de_jure_liege = k_nenets 
+            }
+            d_pechora = {
+                de_jure_liege = k_nenets 
+            }
+            d_kirov = {
+                de_jure_liege = k_nenets 
+            }
+            k_nenets  = {
+                de_jure_liege = e_ural
+            }
+            set_global_flag = nenets_formed
+            spawn_unit = {
+                owner = ROOT
+                province = ROOT
+                home = ROOT
+              
+                troops = {
+                    archers = { 300 300 }
+                    light_cavalry = { 200 200 }
+                }
+
+                attrition = 0
+                disband_on_peace = no
+                maintenance_multiplier = 0
+            }
+        }
+        revoke_allowed = {
+            always = no
+        }
+        ai_will_do = {
+            factor = 100
+        }
+    }
 	form_sicilia = {
         is_high_priority = yes
         potential = {

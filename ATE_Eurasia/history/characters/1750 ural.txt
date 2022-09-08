@@ -43,3 +43,95 @@
 	2647.5.16={birth=yes}
 	2690.12.25={death=yes}
 }
+
+1750033={
+	name="Khasavako"
+	dynasty=2165029
+	culture=nenet
+	religion=nenets
+	trait=tough_soldier
+	trait=authoritative
+	trait=duelist
+	trait=rough_terrain_leader
+	trait=greedy
+	trait=patient
+	disallow_random_traits = yes
+	2645.5.16={birth=yes}
+	2690.12.25={death=yes}
+}
+
+1750035={
+	name="Varuk"
+	dynasty=2165070
+	culture=nenet
+	religion=nenets
+	female=yes
+	2639.5.16={birth=yes}
+	2690.12.25={death=yes}
+}
+1750036={
+	name="Grigoriy"
+	dynasty=2165071
+	culture=nenet
+	religion=nenets
+	2600.5.16={birth=yes}
+	2650.1.1={death=yes}
+}
+1750037={
+	name="Ondriyan"
+	dynasty=2165071
+	father=1750036
+	culture=nenet
+	religion=nenets
+	trait=indulgent_wastrel
+	trait=brave
+	trait=hunter
+	trait=devout
+	trait=patient
+	trait=gregarious
+	disallow_random_traits = yes
+	2621.5.16={birth=yes}
+	2690.12.25={death=yes}
+}
+1750038={
+	name="Ivan"
+	dynasty=2165071
+	father=1750036
+	culture=nenet
+	religion=nenets
+	2623.5.16={birth=yes}
+	2690.12.25={death=yes}
+}
+1750039={
+	name="Urne"
+	dynasty=2165072
+	culture=jumic
+	religion=nenets
+	female=yes
+	2609.5.16={birth=yes}
+	2690.12.25={death=yes}
+}
+1750040={
+	name="Yarashch"
+	dynasty=2165073
+	culture=khanty
+	religion=jumic
+	trait=indulgent_wastrel
+	trait=strong
+	trait=hunter
+	trait=diligent
+	trait=kind
+	trait=envious
+	disallow_random_traits = yes
+	2634.5.16={birth=yes}
+	2690.12.25={death=yes}
+}
+1750041={
+	name="Seranoke"
+	dynasty=2165029
+	culture=nenet
+	religion=nenets
+	female=yes
+	2631.5.16={birth=yes}
+	2690.12.25={death=yes}
+}
