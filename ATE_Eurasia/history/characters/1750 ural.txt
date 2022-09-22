@@ -6,6 +6,7 @@
 	culture=uralic
 	religion=dvoeverie
 	2606.6.29={birth=yes}
+	2660.1.1={death=yes}
 }
 
 1750030={
@@ -134,4 +135,106 @@
 	female=yes
 	2631.5.16={birth=yes}
 	2690.12.25={death=yes}
+}
+1750042={
+	name="Lushcha"
+	dynasty=2164068
+	culture=khanty
+	religion=jumic
+	female=yes
+	2641.4.12={birth=yes}
+}
+1750043={
+	name="Semyon Mikhailovich"
+	dynasty=2137198 #Klimov
+	culture=uralic
+	religion=dvoeverie
+	trait=charismatic_negotiator
+	trait=strong
+	trait=kind
+	trait=ambitious
+	trait=stubborn
+	trait=temperate
+	trait=hunter
+	diplomacy=14
+	martial=15
+	stewardship=9
+	intrigue=8
+	learning=10
+	disallow_random_traits=yes
+	2624.2.5={birth=yes}
+}
+1750044={
+	name="Konstantin Nikloaevich"
+	dynasty=2137199 #Kolokolnikov
+	culture=uralic
+	religion=dvoeverie
+	trait=fortune_builder
+	trait=charitable
+	trait=kind
+	trait=gregarious
+	trait=lustful
+	trait=administrator
+	diplomacy=15
+	martial=6
+	stewardship=17
+	intrigue=7
+	learning=7
+	disallow_random_traits=yes
+	2620.4.10={birth= yes}
+}
+1750045={
+	name="Kristina"
+	dynasty=2137120 #Smirnov
+	culture=uralic
+	religion=dvoeverie
+	female=yes
+	2646.5.12={birth=yes}
+}
+1750046={
+	name="Alla"
+	dynasty=2137121 #Balashov
+	culture=uralic
+	religion=dvoeverie
+	trait=gamer
+	trait=strong
+	2634.2.12={birth=yes}
+}
+1750047={
+	name="Evgeniya"
+	dynasty=1258103
+	culture=akmolensk
+	religion=dvoeverie
+	female=yes
+	trait=just
+	trait=peasant_leader
+	trait=quick
+	trait=scholar
+	trait=sympathy_pagans
+	2622.4.1={birth=yes}
+}
+1750048={
+	name="Artyom"
+	dynasty=1258104
+	culture=akmolensk
+	religion=dvoeverie
+	2652.5.1={birth=yes}
+}
+1750049={
+	name="Amosa"
+	dynasty=2137122
+	culture=uralic
+	religion=dvoeverie
+	trait=mystic
+	trait=adventurer
+	2594.2.1={birth=yes}
+}
+1750050={
+	name="Mascha"
+	dynasty=2137123
+	culture=uralic
+	religion=dvoeverie
+	female=yes
+	trait=musician
+	2630.1.31={birth=yes}
 }
