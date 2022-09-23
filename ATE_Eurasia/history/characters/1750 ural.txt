@@ -215,14 +215,14 @@
 }
 1750048={
 	name="Artyom"
-	dynasty=1258104
+	dynasty=1258104 #Yakunin
 	culture=akmolensk
 	religion=dvoeverie
 	2652.5.1={birth=yes}
 }
 1750049={
 	name="Amosa"
-	dynasty=2137122
+	dynasty=2137122 #Kosvinsky
 	culture=uralic
 	religion=dvoeverie
 	trait=mystic
@@ -231,10 +231,128 @@
 }
 1750050={
 	name="Mascha"
-	dynasty=2137123
+	dynasty=2137123 #Krylatov
 	culture=uralic
 	religion=dvoeverie
 	female=yes
 	trait=musician
 	2630.1.31={birth=yes}
+}
+1750051={
+	name="Pavel"
+	dynasty=2137125 #Mayak
+	culture=uralic
+	religion=dvoeverie
+	secret_religion=chronicler
+	trait=adventurer
+	2613.2.1={birth=yes}
+}
+1750052={
+	name="Alisher"
+	dynasty=2079159 #Karim
+	culture=bashkir
+	religion=ruhi
+	trait=skilled_tactician
+	trait=duelist
+	trait=falconer
+	trait=proud
+	trait=ambitious
+	trait=familyperson
+	trait=flat_terrain_leader
+	disallow_random_traits=yes
+	2635.1.20={birth=yes}
+}
+1750053={
+	name="Minigali"
+	dynasty=2079158 #Babich
+	culture=bashkir
+	religion=ruhi
+	2620.2.28={birth=yes}
+}
+1750054={
+	name="Minigali"
+	dynasty=2079160 #Kusimov
+	culture=bashkir
+	religion=ruhi
+	2625.3.14={birth=yes}
+}
+1750055={
+	name="Taymaç"
+	dynasty=2079161 #Schulgen
+	culture=bashkir
+	religion=ruhi
+	trait=flamboyant_schemer
+	trait=adventurer
+	trait=possessed
+	trait=impaler
+	trait=ambitious
+	trait=deceitful
+	trait=trickster
+	disallow_random_traits=yes
+	2633.2.4={birth=yes}
+}
+1750056={
+	name="Varish"
+	dynasty=2169102 #Oki
+	culture=udmurt
+	religion=jumic
+	trait=dutiful_cleric
+	trait=renowned_physician
+	trait=poet
+	trait=brave
+	trait=just
+	trait=ambitious
+	female=yes
+	2635.1.20={birth=yes}
+}
+1750057={
+	name="Paladdya"
+	dynasty=2169103 #Razin
+	culture=udmurt
+	religion=jumic
+	female=yes
+	2635.4.20={birth=yes}
+}
+1750058={
+	name="Pyotr Pavlovich"
+	dynasty=2137124 #Biryukov
+	culture=uralic
+	religion=jumic
+	secret_religion=dvoeverie
+	trait=scholarly_theolgian
+	trait=shrewd
+	trait=temperate
+	trait=stubborn
+	trait=deceitful
+	trait=gregarious
+	trait=scholar
+	diplomacy=8
+	martial=7
+	stewardship=9
+	intrigue=11
+	learning=15
+	disallow_random_traits=yes
+	2634.5.1={birth=yes}
+	2660.1.1={add_spouse=170059}
+}
+170059={
+	name="Ulyana"
+	culture=udmurt
+	religion=jumic
+	female=yes
+	trait=charismatic_negotiator
+	trait=pious
+	trait=familyperson
+	trait=proud
+	trait=diligent
+	female=yes
+	disallow_random_traits=yes
+	2640.6.2={birth=yes}
+}
+170060={
+	name="Shukay"
+	dynasty=2169104 #Kez
+	culture=udmurt
+	religion=jumic
+	2568.3.1={birth=yes}
 }

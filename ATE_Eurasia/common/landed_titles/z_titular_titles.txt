@@ -527,6 +527,17 @@ k_tomsk = {
 		always = no # Only created through special event
 	}
 }
+k_udmurtia = {
+	color={ 159 200 170 }
+	color2={ 220 220 20 }
+	
+	capital = 637 # c_izhevsk
+	dignity = 10 # Counted as having this many more counties than it does
+	
+	allow = {
+		always = no # Only created through special event
+	}
+}
 
 ### titular duchies ###
 
