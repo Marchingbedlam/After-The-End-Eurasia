@@ -3569,20 +3569,21 @@ old_world_cultist_group = {
 		
 		color = { 237 27 36 }
 		
-		high_god_name = GOD_NAHDA
+		high_god_name = GOD_ALLAH
 		
 		god_names = {
-			THE_PROPHET THE_POET THE_WARRIOR THE_SCHOLAR
+			GOD_ALLAH GOD_SAYYID GOD_NAZIRA GOD_YUSUF GOD_MUHAMMAD GOD_ISA GOD_DHU
 		}
 		evil_god_names = {
-			THE_DIVIDER THE_FALSE_KINGS THE_WESTWARD_EAGLE
+			GOD_JAHILIYYAH GOD_ABU_BAKR GOD_BULUS
 		}
 		
 		scripture_name = THE_QURAN
 		priest_title = IMAM
 		crusade_name = JIHAD
 		uses_decadence = no
-		max_wives = 4
+		max_wives = 1
+		feminist = yes
 		can_call_crusade = yes
 		can_grant_invasion_cb = yes
 		
