@@ -516,6 +516,29 @@ k_phoenicia = {
 		always = no # Only created through special event
 	}
 }
+k_tomsk = {
+	color={ 114 185 171 }
+	color2={ 220 220 20 }
+	
+	capital = 997 # c_tomsk
+	dignity = 10 # Counted as having this many more counties than it does
+	
+	allow = {
+		always = no # Only created through special event
+	}
+}
+k_udmurtia = {
+	color={ 159 200 170 }
+	color2={ 220 220 20 }
+	
+	capital = 637 # c_izhevsk
+	dignity = 10 # Counted as having this many more counties than it does
+	
+	allow = {
+		always = no # Only created through special event
+	}
+}
+
 ### titular duchies ###
 
 d_sligo = {

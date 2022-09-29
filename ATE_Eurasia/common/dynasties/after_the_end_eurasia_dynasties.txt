@@ -1512,6 +1512,11 @@
 1258098 = { name="Sobchenko" culture=akmolensk }
 1258099 = { name="Demidov" culture=akmolensk }
 1258100 = { name="Schultz" culture=akmolensk }
+1258101 = { name="Ivanov" culture=akmolensk used_for_random=no}
+1258102 = { name="Schumabaev" culture=akmolensk used_for_random=no}
+1258103 = { name="Starovoytov" culture=akmolensk used_for_random=no}
+1258104 = { name="Yakunin" culture=akmolensk used_for_random=no}
+
 
 1282000 = { name="Topaloghlu" culture=laz 
 	coat_of_arms = { 
@@ -5297,8 +5302,8 @@
 		religion=nondescript_christian
 		template = 0
 		layer = {
-			texture = 04
-			texture_internal = 0
+			texture = 0
+			texture_internal = 64
 			emblem = 0
 			color = 0
 			color = 0
@@ -22308,11 +22313,37 @@ coat_of_arms = {
 2051119 = { name="Kochakidze" culture=georgian }
 2051120 = { name="Kipiani" culture=georgian }
 2051121 = { name="Lionidze" culture=georgian }
-2051122 = { name="Bagrationi" culture=georgian used_for_random=no}
+2051122 = { name="Bagrationi" culture=georgian used_for_random=no
+	coat_of_arms = {
+		religion=nondescript_christian
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 65
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2051123 = { name="Modrekili" culture=georgian used_for_random=no }
 2051124 = { name="Gelovani" culture=georgian used_for_random=no }
 2051125 = { name="Bolkvadze" culture=georgian used_for_random=no }
-2051126 = { name="Bagrationi" culture=georgian}
+2051126 = { name="Bagrationi" culture=georgian
+	coat_of_arms = {
+		religion=nondescript_christian
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 65
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 2052000 = { name="Osmanoghlu" culture=central_anatolian #The Actual Osmanoghlu
 	coat_of_arms = { 
@@ -23069,9 +23100,48 @@ coat_of_arms = {
 2054200 = { name="Çingizoghlu " culture=azeri used_for_random = no}
 2054201 = { name="Ibrahimoghlu" culture=azeri used_for_random = no}
 2054202 = { name="Meyxana" culture=azeri used_for_random = no}
-2054203 = { name="Häsäni" culture=azeri used_for_random = no}
-2054204 = { name="Kabiboghlu" culture=azeri used_for_random = no}
-2054205 = { name="Qüdsi" culture=azeri used_for_random = no}
+2054203 = { name="Häsäni" culture=azeri used_for_random = no
+	coat_of_arms = { 
+		religion=nondescript_muslim
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 65
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2054204 = { name="Kabiboghlu" culture=azeri used_for_random = no
+	coat_of_arms = { 
+		religion=nondescript_muslim
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 67
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2054205 = { name="Qüdsi" culture=azeri used_for_random = no
+	coat_of_arms = { 
+		religion=nondescript_muslim
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 66
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2054206 = { name="Aydoghdu" culture=azeri used_for_random = no}
 2054207 = { name="Sezgin" culture=azeri used_for_random = no}
 2054208 = { name="Diqqäti" culture=azeri used_for_random = no}
@@ -23079,12 +23149,12 @@ coat_of_arms = {
 2054210 = { name="Bärshadli" culture=azeri }
 2054211 = { name="Çätin" culture=azeri }
 2054212 = { name="Azimzade" culture=azeri 
-	coat_of_arms = {
-		religion = nondescript_muslim
+	coat_of_arms = { 
+		religion=nondescript_muslim
 		template = 0
 		layer = {
 			texture = 0
-			texture_internal = 0
+			texture_internal = 64
 			emblem = 0
 			color = 0
 			color = 0
@@ -26695,6 +26765,10 @@ coat_of_arms = {
 2079155 = { name="Älibaev" culture=bashkir }
 2079156 = { name="Äsänov" culture=bashkir }
 2079157 = { name="Äxmätshin" culture=bashkir }
+2079158 = { name="Babich" culture=bashkir used_for_random=no}
+2079159 = { name="Karim" culture=bashkir used_for_random=no}
+2079160 = { name="Kusimov" culture=bashkir used_for_random=no}
+2079161 = { name="Schulgen" culture=bashkir used_for_random=no}
 
 2080000 = { name="Abdukerim" culture=uighur }
 2080001 = { name="Abdurëhim" culture=uighur }
@@ -27898,6 +27972,9 @@ coat_of_arms = {
 2093103 = { name="Çïlçïgastar" culture=khakas }
 2093104 = { name="Çïpastar" culture=khakas }
 2093105 = { name="Çïstannar" culture=khakas }
+2093106 = { name="Katanov" culture=khanty used_for_random=no}
+2093107 = { name="Mukhin" culture=khanty used_for_random=no}
+
 
 2094000 = { name="Trabelsi" culture=tunisian}
 2094001 = { name="Gharbi" culture=tunisian}
@@ -33470,6 +33547,19 @@ coat_of_arms = {
 		}
 	}
 }
+2136102 = { name="Kharitonov" culture=siberian used_for_random=no}
+2136103 = { name="Vrubel" culture=siberian used_for_random=no}
+2136104 = { name="Ulyanov" culture=siberian used_for_random=no}
+2136105 = { name="Korastylev" culture=siberian used_for_random=no}
+2136106 = { name="Butusov" culture=siberian used_for_random=no}
+2136107 = { name="Leonov" culture=siberian used_for_random=no}
+2136108 = { name="Chivilikhin" culture=siberian used_for_random=no}
+2136109 = { name="Bochkarev" culture=siberian used_for_random=no}
+2136110 = { name="Kolpashnikov" culture=siberian used_for_random=no}
+2136111 = { name="Lehmann" culture=siberian used_for_random=no}
+2136112 = { name="Ovechkin" culture=siberian used_for_random=no}
+2136113 = { name="Kharitonov" culture=siberian used_for_random=no}
+
 
 2137000 = { name="Belyakov" culture=uralic }
 2137001 = { name="Burtsev" culture=uralic }
@@ -33669,6 +33759,15 @@ coat_of_arms = {
 2137194 = { name="Shirokalov" culture=uralic }
 2137195 = { name="Shamseev" culture=uralic }
 2137196 = { name="Torsunov" culture=uralic }
+2137197 = { name="Rodin" culture=uralic used_for_random=no}
+2137198 = { name="Klimov" culture=uralic used_for_random=no}
+2137199 = { name="Kolokolnikov" culture=uralic used_for_random=no}
+2137120 = { name="Smirnov" culture=uralic used_for_random=no}
+2137121 = { name="Balashov" culture=uralic used_for_random=no}
+2137122 = { name="Kosvinsky" culture=uralic used_for_random=no}
+2137123 = { name="Krylatov" culture=uralic used_for_random=no}
+2137124 = { name="Biryukov" culture=uralic used_for_random=no}
+
 
 2138000 = { name="Papahagi" culture=aromanian }
 2138001 = { name="Caragiu" culture=aromanian }
@@ -35987,6 +36086,8 @@ coat_of_arms = {
 2162111 = { name="Tyrlin" culture=mansi }
 2162012 = { name="Otsyamov" culture=mansi }
 2162113 = { name="Tylyzin" culture=mansi }
+2162120 = { name="Shestalov" culture=mansi used_for_random=no}
+2162121 = { name="Krapivin" culture=mansi used_for_random=no}
 
 2163000 = { name="Abräg'" culture=circassian }
 2163001 = { name="Atswmyzh" culture=circassian }
@@ -36162,6 +36263,9 @@ coat_of_arms = {
 2164064 = { name="Zmanovskiy" culture=khanty }
 2164065 = { name="Kaylovskiy" culture=khanty }
 2164066 = { name="Terimskiy" culture=khanty }
+2164067 = { name="Wvedenski" culture=khanty used_for_random=no}
+2164068 = { name="Bekeshkin" culture=khanty used_for_random=no}
+
 
 2165000 = { name="Vanuyta" culture=nenet }
 2165001 = { name="Ladukyey" culture=nenet }
@@ -36237,6 +36341,12 @@ coat_of_arms = {
 2165071 = { name="Lichutin" culture=nenet used_for_random=no}
 2165072 = { name="Belys" culture=nenet used_for_random=no}
 2165073 = { name="Iyrcae" culture=nenet used_for_random=no}
+2165074 = { name="Nerkagi" culture=nenet used_for_random=no}
+2165075 = { name="Fraynd" culture=nenet used_for_random=no}
+2165076 = { name="Tarkovsky" culture=nenet used_for_random=no}
+2165077 = { name="Pankov" culture=nenet used_for_random=no}
+2165078 = { name="Vychu" culture=nenet used_for_random=no}
+2165079 = { name="Vylka" culture=nenet used_for_random=no}
 
 2166000 = {name="Qasim" culture=nubian }
 2166001 = {name="al-Azhari" culture=nubian }
@@ -36617,6 +36727,9 @@ coat_of_arms = {
 2169099 = { name="Belykh" culture=udmurt }
 2169100 = { name="Dobrovol'skiy" culture=udmurt }
 2169101 = { name="Kapachinskiy" culture=udmurt }
+2169102 = { name="Oki" culture=udmurt used_for_random=no religion=jumic }
+2169103 = { name="Razin" culture=udmurt used_for_random=no religion=jumic }
+2169103 = { name="Kez" culture=udmurt used_for_random=no religion=jumic }
 
 2170000 = { name="Kuratov" culture=komi }
 2170001 = { name="Njobdinsa" culture=komi }
@@ -36684,6 +36797,10 @@ coat_of_arms = {
 2170063 = { name="Jurkin" culture=komi }
 2170064 = { name="Jagovkin" culture=komi }
 2170065 = { name="Jakovkin" culture=komi }
+2170066 = { name="Vityazev" culture=komi used_for_random=no}
+2170067 = { name="Leontiev" culture=komi used_for_random=no}
+2170068 = { name="Vonnèzlö" culture=komi used_for_random=no}
+2170069 = { name="Abadijev" culture=komi used_for_random=no}
 
 2171000 = { name="Al-Dabbagh" culture=sabir }
 2171001 = { name="Ansari" culture=sabir }
