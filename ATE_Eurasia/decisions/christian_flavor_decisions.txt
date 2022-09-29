@@ -150,6 +150,43 @@ decisions = {
 				has_character_modifier = bad_penitente
 			}
 		}
+	}
+
+	cristero_peasant_army = {
+		is_high_prio = yes
+		ai_check_interval = 12
+		potential = {
+			OR = {
+				religion =  muntzeran
+				religion = neotondrakian
+			}
+			is_adult = yes
+			NOT = { 
+				trait = incapable 
+			}
+			prisoner = no
+		}
+		allow = {
+			piety = 150
+			NOT = {
+				has_character_modifier = christian_raised_peasants
+			}
+			war = yes 
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5 
+				OR = {
+					trait = zealous
+				}
+			}
+		}
+		effect = {
+			piety = -150
+			add_character_modifier = { modifier = christian_raised_peasants duration = 1825 }
+			hidden_tooltip = { character_event = { id = CIML.37 }}
+		}
 	}	
 	
 }

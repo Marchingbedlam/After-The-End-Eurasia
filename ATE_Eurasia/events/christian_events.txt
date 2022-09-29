@@ -647,3 +647,28 @@ character_event = {
 		custom_tooltip = { text = TXT_st_patricks_end }
 	}
 }
+
+character_event = {
+	id = CIML.37
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		capital_scope = {
+		ROOT = {
+		spawn_unit = {
+			province = PREV
+			home = PREV
+			owner = THIS
+			troops ={
+				light_infantry = { 300 300 }
+				archers = { 300 300 }
+				light_cavalry = { 100 100 }
+			}
+			earmark = christian_raised_peasants
+			attrition = 0.50
+			reinforces = yes
+			disband_on_peace = yes
+		}}}
+	}
+}
