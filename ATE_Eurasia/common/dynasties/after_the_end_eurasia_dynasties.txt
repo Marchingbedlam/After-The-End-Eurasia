@@ -5302,8 +5302,8 @@
 		religion=nondescript_christian
 		template = 0
 		layer = {
-			texture = 04
-			texture_internal = 0
+			texture = 0
+			texture_internal = 64
 			emblem = 0
 			color = 0
 			color = 0
@@ -22218,11 +22218,37 @@ coat_of_arms = {
 2051119 = { name="Kochakidze" culture=georgian }
 2051120 = { name="Kipiani" culture=georgian }
 2051121 = { name="Lionidze" culture=georgian }
-2051122 = { name="Bagrationi" culture=georgian used_for_random=no}
+2051122 = { name="Bagrationi" culture=georgian used_for_random=no
+	coat_of_arms = {
+		religion=nondescript_christian
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 65
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2051123 = { name="Modrekili" culture=georgian used_for_random=no }
 2051124 = { name="Gelovani" culture=georgian used_for_random=no }
 2051125 = { name="Bolkvadze" culture=georgian used_for_random=no }
-2051126 = { name="Bagrationi" culture=georgian}
+2051126 = { name="Bagrationi" culture=georgian
+	coat_of_arms = {
+		religion=nondescript_christian
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 65
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 2052000 = { name="Osmanoghlu" culture=central_anatolian #The Actual Osmanoghlu
 	coat_of_arms = { 
@@ -22979,9 +23005,48 @@ coat_of_arms = {
 2054200 = { name="Çingizoghlu " culture=azeri used_for_random = no}
 2054201 = { name="Ibrahimoghlu" culture=azeri used_for_random = no}
 2054202 = { name="Meyxana" culture=azeri used_for_random = no}
-2054203 = { name="Häsäni" culture=azeri used_for_random = no}
-2054204 = { name="Kabiboghlu" culture=azeri used_for_random = no}
-2054205 = { name="Qüdsi" culture=azeri used_for_random = no}
+2054203 = { name="Häsäni" culture=azeri used_for_random = no
+	coat_of_arms = { 
+		religion=nondescript_muslim
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 65
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2054204 = { name="Kabiboghlu" culture=azeri used_for_random = no
+	coat_of_arms = { 
+		religion=nondescript_muslim
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 67
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2054205 = { name="Qüdsi" culture=azeri used_for_random = no
+	coat_of_arms = { 
+		religion=nondescript_muslim
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 66
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2054206 = { name="Aydoghdu" culture=azeri used_for_random = no}
 2054207 = { name="Sezgin" culture=azeri used_for_random = no}
 2054208 = { name="Diqqäti" culture=azeri used_for_random = no}
@@ -22989,12 +23054,12 @@ coat_of_arms = {
 2054210 = { name="Bärshadli" culture=azeri }
 2054211 = { name="Çätin" culture=azeri }
 2054212 = { name="Azimzade" culture=azeri 
-	coat_of_arms = {
-		religion = nondescript_muslim
+	coat_of_arms = { 
+		religion=nondescript_muslim
 		template = 0
 		layer = {
 			texture = 0
-			texture_internal = 0
+			texture_internal = 64
 			emblem = 0
 			color = 0
 			color = 0
