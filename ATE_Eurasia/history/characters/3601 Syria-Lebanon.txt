@@ -921,3 +921,139 @@
 	father=3601002
 	2615.11.11={birth=yes}
 }
+3601541={
+	name="Mukarram"
+	dynasty=2103135 #al-Razzaq
+	culture=suriyi
+	religion=sunni
+	trait=brilliant_strategist
+	trait=honest
+	trait=content
+	trait=humble
+	2098.9.15={birth=yes}
+	2165.9.28={death=yes}
+}
+3601542={
+	name="Ammar"
+	dynasty=2103135 #al-Razzaq
+	culture=suriyi
+	religion=sunni
+	trait=skilled_tactician
+	trait=honest
+	trait=humble
+	father=3601541
+	2121.6.5={birth=yes}
+	2187.3.19={death=yes}
+}
+3601543={
+	name="Muhammad"
+	dynasty=2103135 #al-Razzaq
+	culture=suriyi
+	religion=sunni
+	trait=charismatic_negotiator
+	trait=honest
+	trait=humble
+	trait=hajjaj
+	father=3601542
+	2146.10.31={birth=yes}
+	2214.3.21={death=yes}
+}
+3601544={
+	name="Mustafa"
+	dynasty=2103135 #al-Razzaq
+	culture=suriyi
+	religion=sunni
+	trait=fortune_builder
+	trait=envious
+	father=3601542
+	2168.10.31={birth=yes}
+	2220.3.21={death=yes}
+}
+3601545={
+	name="Muhammad"
+	dynasty=2103135 #al-Razzaq
+	culture=suriyi
+	religion=sunni
+	trait=underhanded_rogue
+	trait=envious
+	trait=zealous
+	father=3601544
+	2193.5.28={birth=yes}
+	2113.1.1={add_spouse=2202484}
+	2260.10.27={death=yes}
+}
+3601546={
+	name="Muhammad"
+	dynasty=2103135 #al-Razzaq
+	culture=suriyi
+	religion=sunni
+	father=3601545
+	mother=2202484
+	2216.3.30={birth=yes}
+	2255.8.8={death=yes}
+}
+3601547={
+	name="Yusuf"
+	dynasty=2103135 #al-Razzaq
+	culture=suriyi
+	religion=sunni
+	father=3601545
+	mother=2202484
+	2218.1.22={birth=yes}
+	2255.8.8={death=yes}
+}
+3601548={
+	name="Najib"
+	dynasty=2103135 #al-Razzaq
+	culture=suriyi
+	religion=sunni
+	father=3601545
+	mother=2202484
+	2220.8.3={birth=yes}
+	2257.3.19={death=yes}
+}
+3601549={
+	name="Jihad"
+	dynasty=2103135 #al-Razzaq
+	culture=suriyi
+	religion=sunni
+	father=3601545
+	mother=2202484
+	2224.1.28={birth=yes}
+	2257.6.4={death=yes}
+}
+3601550={
+	name="Yasser"
+	dynasty=2103135 #al-Razzaq
+	culture=suriyi
+	religion=sunni
+	father=3601545
+	mother=2202484
+	2229.9.17={birth=yes}
+	2256.9.1={death=yes}
+}
+3601551={
+	name="Abdulqadir"
+	dynasty=2103135 #al-Razzaq
+	culture=suriyi
+	religion=sunni
+	father=3601547
+	trait=cruel
+	trait=depressed
+	trait=wroth
+	trait=content
+	trait=brilliant_strategist
+	2238.1.5={birth=yes}
+	2261.3.3={add_spouse=2202485}
+	2311.10.20={death=yes}
+}
+3601552={ 
+	name="Valentina"
+	dynasty=2074067 #Türkkan
+	culture=kypriot
+	religion=naqshbandi
+	father=2202314
+	trait=ismailagha
+	2244.2.24={birth=yes}
+	2295.1.14={death=yes}
+}
