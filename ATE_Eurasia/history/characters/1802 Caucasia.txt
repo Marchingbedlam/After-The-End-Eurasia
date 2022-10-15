@@ -1384,8 +1384,8 @@
 	2632.12.25={add_spouse=1802088}
 	2633.12.23={add_spouse=1802087}
 }
-1802067={ #Duke Muhamad of the Caucasian Imamate
-    name="Muhamad"
+1802067={ #Duke Nurmuhamad of the Caucasian Imamate
+    name="Nurmuhamad"
     dynasty=2068052 #Aliyev
     culture=avar
     religion=taharur
@@ -1545,14 +1545,18 @@
     culture=azeri
     religion=zimiran
 	female=yes
+	father=1802117
+	dynasty=2054074
     martial=5
     diplomacy=5
     stewardship=5
     intrigue=5
     learning=5
     trait=underhanded_rogue
+	trait=sympathy_islam
     trait=rude
     trait=shy
+	trait=zealous
     trait=temperate
 	2615.9.2={birth=yes}
 	2635.9.10={add_spouse=1802074}
@@ -2075,12 +2079,35 @@
 	2660.1.1={employer=1802014}
 }
 
-#As Kaan?s army continued to suffer defeats and Emin?s army
-#continued to grow, in 2435 a general revolt of the Alevis, Kurds, Zazas further tore Eastern Anatolia to
-#pieces, fighting both Emin and Turkey, the domino effect leading the Iraqi parts of the empire to
-#simply declare independence without resistance. By the end of 2435 Turkey most of the Caucasus as
-#communication between the Capital and the easternmost part of the empire became impossible due to
-#the war, Armenia only remained to resist against the Mahdi claimant. In 2436
+1802106={ #Duke Luka IV of Kakheti
+    name="Luka"
+    dynasty=2051125 #Bolkvadze
+    culture=georgian
+    religion=orthodox
+    martial=11
+    diplomacy=10
+    stewardship=5
+    intrigue=7
+    learning=4
+	trait=skilled_tactician
+	trait=fair
+	trait=hunter
+	trait=brave
+	trait=diligent
+	trait=proud
+	2587.5.2={birth=yes}
+	2617.1.1={add_spouse=1802107}
+	2648.9.12={death=yes}
+}
+
+1802107={ #Nestant wife of Luka IV of Kakheti
+    name="Nestan"
+    culture=georgian
+    religion=orthodox
+	female=yes
+	2593.11.21={birth=yes}
+	2656.12.12={death=yes}
+}
 
 1802108={ #Duke Davit I Mehruni of Yerevan
     name="Davit"
@@ -2151,26 +2178,104 @@
 }
 
 
-#Azimzade 2054212
-
-1802106={ #Duke Luka IV of Kakheti
-    name="Luka"
-    dynasty=2051125 #Bolkvadze
-    culture=georgian
-    religion=orthodox
-    martial=11
-    diplomacy=10
-    stewardship=5
-    intrigue=7
-    learning=4
-	trait=skilled_tactician
-	trait=fair
-	trait=hunter
-	trait=brave
-	trait=diligent
-	trait=proud
+1802112={ #King Alasgar I Azimzade of Azerbaijan
+    name="Alasgar"
+    dynasty=2054212 #Azimzade 
+    culture=azeri
+    religion=shiite
+	trait=grey_eminence
+	trait=sufi_zahid
 	trait=pious
+	trait=temperate
 	trait=humble
-	2587.5.2={birth=yes}
-	2648.9.12={death=yes}
+    2376.1.1={birth=yes}
+	2456.1.1={death=yes}
+}
+
+1802113={ #King Allahshükür I Azimzade of Azerbaijan
+    name="Allahshükür"
+    dynasty=2054212 #Azimzade 
+    culture=azeri
+    religion=shiite
+	father=1802112
+	trait=fortune_builder
+	trait=selfish
+	trait=greedy
+	trait=ambitious
+    2401.1.1={birth=yes}
+	2478.1.1={death=yes}
+}
+
+
+1802114={ #King Allahshükür II Azimzade of Azerbaijan
+    name="Allahshükür"
+    dynasty=2054212 #Azimzade 
+    culture=azeri
+    religion=shiite
+	father=1802113
+    2439.1.1={birth=yes}
+	2504.1.1={death=yes}
+}
+
+1802115={ #King Cäbrayil I Azimzade of Azerbaijan
+    name="Cäbrayil"
+    dynasty=2054212 #Azimzade 
+    culture=azeri
+    religion=shiite
+	father=1802118
+	give_nickname=nick_the_unready
+    2540.1.1={birth=yes}
+	2599.1.1= {death = {
+			death_reason = death_battle
+			killer = 1802037
+		}
+	}
+}
+
+1802116={ #King Alasgar III Azimzade of Azerbaijan
+    name="Alasgar"
+    dynasty=2054212 #Azimzade 
+    culture=azeri
+    religion=shiite
+	father=1802115
+	give_nickname=nick_the_lame
+	trait=detached_priest
+	trait=imbecile
+	trait=celibate
+	trait=familyperson
+	trait=kind
+	trait=gluttonous
+    2586.1.1={birth=yes}
+	2604.3.14= {death = {
+			death_reason = death_murder_unknown_poison
+			killer = 1802117
+		}
+	}
+}
+
+1802117={ #King Ildirim I of Azerbaijan
+    name="Ildirim"
+    dynasty=2054074
+    culture=azeri
+    religion=shiite
+	trait=elusive_shadow
+	trait=deceitful
+	trait=ambitious
+	trait=cynical
+    2566.1.1={birth=yes}
+	2634.8.10= {death = {
+			death_reason = death_battle
+			killer = 1802084
+		}
+	}
+}
+
+1802118={ #King Tofiq I Azimzade of Azerbaijan
+    name="Tofiq"
+    dynasty=2054212 #Azimzade 
+    culture=azeri
+    religion=shiite
+	father=1802114
+    2479.1.1={birth=yes}
+	2551.1.1={death=yes}
 }
