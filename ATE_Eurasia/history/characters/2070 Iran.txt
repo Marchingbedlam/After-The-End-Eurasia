@@ -1,15 +1,15 @@
 2070001={
-	name="Muhammad"
+	name="Hossein-Montazer"
 	dynasty=2070001
 	culture=persian
 	religion=shiite
 	trait=mastermind_theologian
 	trait=theologian
-	trait=patient
-	trait=gregarious
-	trait=ambitious
+	trait=qomi
+	trait=charitable
+	trait=pious
 	trait=erudite
-	2618.11.2={birth=yes}
+	2606.9.24={birth=yes}
 }
 2070002={
 	name="Muhammad"
@@ -25,45 +25,44 @@
 	2618.11.2={birth=yes}
 }
 2070003={
-	name="Muhammad"
+	name="Makwan"
 	dynasty=2070003
-	culture=persian
+	culture=gorani
 	religion=ahl_e_haqq
-	trait=mastermind_theologian
-	trait=theologian
-	trait=patient
+	trait=sympathy_old_world_cults
+	trait=scholar
+	trait=just
+	trait=quick
 	trait=gregarious
-	trait=ambitious
-	trait=erudite
-	2600.11.2={birth=yes}
+	trait=diligent
+	2600.3.25={birth=yes}
 }
 2070004={
-	name="Muhammad"
+	name="Ashkan"
 	dynasty=2070003
-	culture=persian
+	culture=gorani
 	religion=ahl_e_haqq
 	father=2070003
-	trait=mastermind_theologian
-	trait=theologian
-	trait=patient
-	trait=gregarious
-	trait=ambitious
-	trait=erudite
-	2630.11.2={birth=yes}
+	trait=skilled_tactician
+	trait=proud
+	trait=wroth
+	trait=zealous
+	trait=trickster
+	trait=twin
+	2630.9.27={birth=yes}
 }
 2070005={
-	name="Muhammad"
+	name="Kazem"
 	dynasty=2070003
 	culture=persian
 	religion=ahl_e_haqq
 	father=2070003
-	trait=mastermind_theologian
-	trait=theologian
-	trait=patient
+	trait=charismatic_negotiator
+	trait=quick
+	trait=honest
 	trait=gregarious
-	trait=ambitious
-	trait=erudite
-	2630.11.2={birth=yes}
+	trait=twin
+	2630.9.27={birth=yes}
 }
 2070006={
 	name="Mistafa"
@@ -814,4 +813,15 @@
 	2612.10.7={birth=yes}
 	2629.1.1={add_spouse=1996088}
 	2654.12.18={death={death_reason=death_trait}}
+}
+2070073={ 
+    name="Elî"
+	dynasty=2133123 #Boochanî
+	culture=gorani
+	religion=ahl_e_haqq
+	trait=brave
+	trait=depressed
+	trait=humble
+	trait=adventurer
+	2642.7.23={birth=yes}
 }
