@@ -4021,13 +4021,50 @@ indian_group = { #Religions primarily from the Indian Subcontinent which don't f
 		secret_religion = no
 	}
 	
-	hindu = { #making this Shrauta
+	hindu = { #Sanatan Dharma
 		graphical_culture = hindugfx
 
 		icon = 145
 		heresy_icon = 145
 		
 		color = { 1.0 0.0 0.0 }
+		
+		high_god_name = GOD_PRAJAPATI
+		
+		god_names = {
+			GOD_SHIVA GOD_SHAKTI GOD_VISHNU GOD_RAMA GOD_KRISHNA GOD_KALI GOD_DURGA GOD_RADHA GOD_LAKSHMI GOD_MURUGAN GOD_MARIAMMAN
+		}
+		
+		evil_god_names = {
+			RAKSHASAS
+		}
+		
+		can_grant_divorce = yes
+		priests_can_inherit = no
+		priests_can_marry = yes
+		max_consorts = 3
+		caste_opinions = yes
+		castes = yes
+		
+		
+		religious_clothing_head = 8
+		religious_clothing_priest = 8
+
+		scripture_name = THE_VEDAS
+		priest_title = PUJARI
+		piety_name = KARMA
+		
+		intermarry = jain
+		intermarry = zoroastrian
+		
+	}
+	shrauta = { 
+		graphical_culture = hindugfx
+
+		icon = 145
+		heresy_icon = 145
+		
+		color = { 192 192 192 }
 		
 		high_god_name = GOD_PRAJAPATI
 		
