@@ -409,6 +409,25 @@ spriteTypes = {
 		noOfFrames = 5
 	}
 	
+	#Mausoleum of Genghis Khan District
+	spriteType = {
+		name = "GFX_wonder_strip_mausoleum_of_genghis_khan_large"
+		texturefile = "gfx\\interface\\wonder_interface\\wonder_strips\\wonder_stages_mausoleum_of_genghis_khan_large.dds"
+		noOfFrames = 5
+	}
+
+	spriteType = {
+		name = "GFX_wonder_strip_mausoleum_of_genghis_khan_medium"
+		texturefile = "gfx\\interface\\wonder_interface\\wonder_strips\\wonder_stages_mausoleum_of_genghis_khan_medium.dds"
+		noOfFrames = 5
+	}
+
+	spriteType = {
+		name = "GFX_wonder_strip_mausoleum_of_genghis_khan_small"
+		texturefile = "gfx\\interface\\wonder_interface\\wonder_strips\\wonder_stages_mausoleum_of_genghis_khan_small.dds"
+		noOfFrames = 5
+	}
+	
 	#Cathedral
 	spriteType = {
 		name = "GFX_wonder_strip_cathedral_large"

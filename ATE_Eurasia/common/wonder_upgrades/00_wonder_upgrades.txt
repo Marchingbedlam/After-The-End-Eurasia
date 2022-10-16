@@ -4287,3 +4287,76 @@ upgrade_istanbul_university = {
 		economy_techpoints = 0.05
 	}
 }
+###UNIQUE UPGRADES
+upgrade_genghis_khan_statue = { # Statues of the Dead
+	#.... 
+	picture = GFX_upgrade_icon_book_blue
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		statues
+		is_plural
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	owner_modifier = {
+		dynasty_opinion = 3
+		khanist_opinion = 10
+		khanist_reformed_opinion = 10
+		monthly_character_piety = 0.5
+		monthly_character_prestige = 0.5
+	}
+}
+
+upgrade_altar_of_heaven = { #Eternal flame
+	#.... 
+	picture = GFX_upgrade_icon_brazier
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		is_singular
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	local_modifier = {
+		local_revolt_risk = -0.05
+	}
+	owner_modifier = {
+		khanist_opinion = 10
+		khanist_reformed_opinion = 10
+		monthly_character_piety = 0.25
+	}
+}
+
+upgrade_ovoo = { #Sacred Stones
+	picture = GFX_upgrade_icon_roses_white
+
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		holy
+		decorative
+		nature
+		is_singular
+		secluded
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	local_modifier = {
+		local_revolt_risk = -0.04
+	}
+	owner_modifier = {
+		same_religion_opinion = 2
+		monthly_character_piety = 0.25
+		custom_modifier_text = private_talk_possible_modifier_tt
+	}
+}
