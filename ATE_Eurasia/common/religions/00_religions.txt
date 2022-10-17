@@ -1868,7 +1868,7 @@ christian = {
 		icon = 67
 		heresy_icon = 68
 		
-		color = { 0.7 0.7 0.1 }
+		color = { 28 78 157 }
 		
 		crusade_name = CRUSADE
 		scripture_name = THE_BIBLE
@@ -1881,33 +1881,38 @@ christian = {
 		}
 		
 		evil_god_names = {
-			SATAN  THE_DEVIL LUCIFER
+			SATAN LUCIFER THE_DEVIL
 		}
 		
-		can_excommunicate = no
-		can_grant_divorce = no
+		pentarchy = yes
+		can_excommunicate = yes
+		can_grant_divorce = yes
 		can_grant_invasion_cb = invasion
-		can_call_crusade = no
-		can_retire_to_monastery = no
+		can_call_crusade = yes
+		can_retire_to_monastery = yes
 		priests_can_inherit = yes
 		priests_can_marry = yes
 		
 		religious_clothing_head = 2
 		religious_clothing_priest = 2
 		
+		intermarry = hindu
+		intermarry = barelvi
+		intermarry = nestorian
 	}
 	kohhran_thianghlim = {
 		graphical_culture = westerngfx
-		parent = baptist
 		
 		icon = 67
 		heresy_icon = 68
 		
-		color = { 0.7 0.7 0.1 }
+		color = { 200 8 157 }
 		
 		crusade_name = CRUSADE
 		scripture_name = THE_BIBLE
 		priest_title = PRIEST
+		
+		parent = baptist
 		
 		high_god_name = GOD_GOD
 		
@@ -1916,7 +1921,7 @@ christian = {
 		}
 		
 		evil_god_names = {
-			SATAN  THE_DEVIL LUCIFER
+			SATAN LUCIFER THE_DEVIL
 		}
 		
 		autocephaly = yes
@@ -1931,6 +1936,9 @@ christian = {
 		religious_clothing_head = 2
 		religious_clothing_priest = 2
 		
+		intermarry = hindu
+		intermarry = barelvi
+		intermarry = nestorian
 	}
 }
 
