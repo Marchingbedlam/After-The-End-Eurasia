@@ -1291,3 +1291,104 @@ d_nasrani={
 		Theodosius Thomas
 	}
 }
+k_gelugpa = {
+	color={ 255 152 0 }
+	color2={ 220 220 0 }
+	
+	capital = 2702 #Lhasa
+	
+	landless = yes
+	
+	dignity = 500 # Counted as having this many more counties than it does
+	
+	title = "DALAI_LAMA"
+	foa = "POPE_FOA"
+	title_prefix = "DALAI_LAMA_OF"
+	
+	controls_religion = gelugpa
+	
+	religion = gelugpa
+	pentarchy = gelugpa
+	
+	dynasty_title_names = no
+}
+d_gelugpa_mongolia = {
+	color={ 242 217 52 }
+	color2={ 220 220 0 }
+	
+	capital = 1254 #Ulaanbaatar
+	
+	landless = yes
+	
+	dignity = 500 # Counted as having this many more counties than it does
+	
+	title = "KHAMBO_LAMA"
+	foa = "POPE_FOA"
+	title = "KHAMBO_LAMA_OF"
+	
+	culture = khalkha
+	religion = gelugpa
+	pentarchy = gelugpa
+	
+	dynasty_title_names = no
+}
+d_gelugpa_buryatia = {
+	color={ 31 146 182 }
+	color2={ 220 220 0 }
+	
+	capital = 1200 #Ulan-Ude
+	
+	landless = yes
+	
+	dignity = 500 # Counted as having this many more counties than it does
+	
+	title = "HAMBO_LAMA"
+	foa = "POPE_FOA"
+	title_prefix = "HAMBO_LAMA_OF"
+	
+	culture = buryat
+	religion = gelugpa
+	pentarchy = gelugpa
+	
+	dynasty_title_names = no
+}
+d_gelugpa_tuva = {
+	color={ 40 194 214 }
+	color2={ 220 220 0 }
+	
+	capital = 1236 #Kyzyl
+	
+	landless = yes
+	
+	dignity = 500 # Counted as having this many more counties than it does
+	
+	title = "KHABA_LAMA"
+	foa = "POPE_FOA"
+	title_prefix = "KHABA_LAMA_OF"
+	
+	culture = tuvan
+	religion = gelugpa
+	pentarchy = gelugpa
+	
+	dynasty_title_names = no
+}
+d_gelugpa_kalmykia = {
+	color={ 125 145 204 }
+	color2={ 220 220 0 }
+	
+	capital = 898 #Elista
+	
+	landless = yes
+	
+	dignity = 500 # Counted as having this many more counties than it does
+	
+	title = "SAJIN_LAMAZ"
+	foa = "POPE_FOA"
+	title_prefix = "SAJIN_LAMAZ_OF"
+	
+	culture = kalmyk
+	religion = gelugpa
+	pentarchy = gelugpa
+	
+	dynasty_title_names = no
+}
