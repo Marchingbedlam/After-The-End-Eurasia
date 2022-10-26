@@ -138,14 +138,14 @@
 	trait = gregarious
 	2644.1.1 = { birth = yes }
 }
-3601011 = { #Count of Tell Tamer
-	name = "Adwar" 
-	dynasty = 2104000 #Yonadam
-	culture = assyrian
-	religion = nestorian
-	trait = honorable
-	trait = humble
-	2638.1.1 = { birth = yes }
+3601011={ #Count of Tell Tamer
+	name="Adwar"
+	dynasty=2104000 #Yonadam
+	culture=assyrian
+	religion=nestorian
+	trait=honorable
+	trait=humble
+	2638.1.1={birth=yes}
 }
 3601012 = { #Duke of Tadmur an-Nahar Cult
 	name = "Khalid" 
@@ -1043,17 +1043,415 @@
 	trait=wroth
 	trait=content
 	trait=brilliant_strategist
+	trait=hajjaj
 	2238.1.5={birth=yes}
-	2261.3.3={add_spouse=2202485}
 	2311.10.20={death=yes}
 }
 3601552={ 
 	name="Valentina"
+	female=yes
 	dynasty=2074067 #Türkkan
 	culture=kypriot
 	religion=naqshbandi
 	father=2202314
 	trait=ismailagha
-	2244.2.24={birth=yes}
-	2295.1.14={death=yes}
+	2262.2.24={birth=yes}
+	2315.1.14={death=yes}
+}
+3601553={
+	name="Iman"
+	female=yes
+	culture=suriyi
+	religion=sunni
+	2240.8.30={birth=yes}
+	2258.10.10={add_spouse=3601551}
+	2309.3.23={death=yes}
+}
+3601554={
+	name="Yusuf"
+	dynasty=2103135 #al-Razzaq
+	culture=suriyi
+	religion=sunni
+	father=3601551
+	mother=3601553
+	trait=ruthless
+	trait=deceitful
+	trait=intricate_webweaver
+	trait=ambitious
+	2260.8.27={birth=yes}
+	2278.1.1={add_spouse=3601552}
+	2330.8.25={death={death_reason=death_battle killer=3601572}}
+}
+3601555={
+	name="Izzat"
+	dynasty=2103135 #al-Razzaq
+	culture=suriyi
+	religion=sunni
+	father=3601551
+	mother=3601553
+	2262.3.17={birth=yes}
+	2333.4.12={death={death_battle killer=3601572}}
+}
+3601556={
+	name="Mustafa"
+	dynasty=2103135 #al-Razzaq
+	culture=suriyi
+	religion=sunni
+	father=3601551
+	mother=3601553
+	2265.6.26={birth=yes}
+}
+3601557={
+	name="Hasan"
+	dynasty=2103135 #al-Razzaq
+	culture=suriyi
+	religion=sunni
+	father=3601551
+	mother=3601553
+	2274.8.1={birth=yes}
+	2332.11.28={death={death_battle killer=3601572}}
+}
+3601558={
+	name="Fadwa"
+	female=yes
+	dynasty=2103136 #al-Qudsi
+	father=3601568
+	culture=suriyi
+	religion=sunni
+	2248.12.25={birth=yes}
+	2664.4.4={add_spouse=3601551}
+	2301.8.7={death=yes}
+}
+3601559={
+	name="Ali"
+	dynasty=2103135 #al-Razzaq
+	culture=suriyi
+	religion=sunni
+	trait=grey_eminence
+	trait=familyperson
+	trait=gregarious
+	father=3601551
+	mother=3601558
+	2265.11.26={birth=yes}
+	2328.8.27={death=yes}
+}
+3601560={
+	name="Ayman"
+	dynasty=2103135 #al-Razzaq
+	culture=suriyi
+	religion=sunni
+	trait=deceitful
+	trait=greedy
+	trait=indulgent_wastrel
+	trait=selfish
+	father=3601551
+	mother=3601558
+	2270.2.16={birth=yes}
+	2329.7.18={death={death_reason=death_murder killer=3601554}}
+}
+3601561={
+	name="Qasim"
+	dynasty=2103135 #al-Razzaq
+	culture=suriyi
+	religion=sunni
+	trait=ambitious
+	trait=cruel
+	trait=wroth
+	trait=pious
+	trait=deceitful
+	trait=gregarious
+	trait=charismatic_negotiator
+	trait=infirm
+	trait=craven
+	father=3601551
+	mother=3601558
+	2273.11.16={birth=yes}
+	2330.1.20={death={death_reason=death_murder killer=3601574}}
+}
+3601562={
+	name="Samira"
+	female=yes
+	culture=suriyi
+	religion=sunni
+	2257.10.23={birth=yes}
+	2274.1.1={add_spouse=3601551}
+	2276.8.12={death={death_reason=death_childbirth}}
+}
+3601563={
+	name="Abdullah"
+	dynasty=2103135 #al-Razzaq
+	culture=suriyi
+	religion=sunni
+	father=3601551
+	mother=3601562
+	trait=has_tuberculosis
+	2276.8.12={birth=yes}
+	2279.9.10={death={death_reason=death_trait}}
+}
+3601564={
+	name="Khawa"
+	female=yes
+	dynasty=2104000 #Yonadam
+	culture=assyrian
+	religion=nestorian
+	2258.1.28={birth=yes}
+	2276.1.1={add_spouse=3601551}
+	2311.1.23={death=yes}
+}
+3601565={
+	name="Fadlallah"
+	dynasty=2103135 #al-Razzaq
+	culture=suriyi
+	religion=sunni
+	trait=feeble
+	trait=is_malnourished
+	trait=kind
+	trait=shy
+	trait=intricate_webweaver
+	trait=familyperson
+	father=3601551
+	mother=3601564
+	2278.3.20={birth=yes}
+	2313.5.30={add_spouse=3601588}
+}
+3601566={
+	name="Muhammad"
+	dynasty=2103135 #al-Razzaq
+	culture=suriyi
+	religion=sunni
+	trait=charismatic_negotiator
+	father=3601559
+	2314.2.1={birth=yes}
+	2337.2.23={death={death_reason=death_battle killer=3601574}}
+}
+3601567={
+	name="Samar"
+	dynasty=2103137 #Sattuf
+	culture=suriyi
+	religion=sunni
+	father=3601575
+	female=yes
+	2275.12.21={birth=yes}
+	2292.1.1={add_spouse=3601561}
+	2328.10.10={add_spouse=0}
+}
+3601568={
+	name="Musa"
+	dynasty=2103136 #al-Qudsi
+	culture=suriyi
+	religion=sunni
+	2221.11.10={birth=yes}
+	2267.2.23={death=yes}
+}
+3601569={
+	name="Hattem"
+	dynasty=2103136 #al-Qudsi
+	culture=suriyi
+	religion=sunni
+	father=3601568
+	2245.7.7={birth=yes}
+	2296.6.8={death=yes}
+}
+3601570={
+	name="Abbas"
+	dynasty=2103136 #al-Qudsi
+	culture=suriyi
+	religion=sunni
+	father=3601569
+	2268.12.22={birth=yes}
+	2328.10.2={death={death_reason=death_murder killer=3601581}}
+}
+3601571={
+	name="Fatima"
+	female=yes
+	dynasty=2103138 #Jazairi
+	culture=suriyi
+	religion=sunni
+	trait=fair
+	father=3601577
+	2308.7.16={birth=yes}
+	2328.10.10={add_spouse=3601561}
+	2337.9.18={death={death_execution_garrotting killer=3601572}}
+}
+3601572={
+	name="Zaki"
+	dynasty=2103136 #al-Qudsi
+	culture=suriyi
+	religion=sunni
+	father=3601570
+	trait=familyperson
+	trait=ruthless
+	trait=brilliant_strategist
+	2302.12.30={birth=yes}
+}
+3601574={
+	name="Faysal"
+	dynasty=2103135 #al-Razzaq
+	culture=suriyi
+	religion=sunni
+	trait=ruthless
+	trait=familyperson
+	father=3601561
+	mother=3601567
+	2297.11.16={birth=yes}
+	2337.8.19={death={death_reason=death_murder killer=3601572}}
+}
+3601575={
+	name="Imad"
+	dynasty=2103137 #Sattuf
+	culture=suriyi
+	religion=sunni
+	2233.4.11={birth=yes}
+	2307.6.19={death=yes}
+}
+3601576={
+	name="Abdulkarim"
+	dynasty=2103137 #Sattuf
+	culture=suriyi
+	religion=sunni
+	trait=has_cancer
+	father=3601575
+	2262.4.23={birth=yes}
+	2336.3.16={death={death_reason=death_trait}}
+}
+3601577={
+	name="Izz ad-Din"
+	dynasty=2103138 #Jazairi
+	culture=suriyi
+	religion=sunni
+	father=3601579
+	2253.2.19={birth=yes}
+	2331.8.19={death=yes}
+}
+3601578={
+	name="Salah ad-Din"
+	dynasty=2103138 #Jazairi
+	culture=suriyi
+	religion=sunni
+	father=3601579
+	2269.12.1={birth=yes}
+	2317.9.30={death=yes}
+}
+3601579={
+	name="Muayad"
+	dynasty=2103138 #Jazairi
+	culture=suriyi
+	religion=sunni
+	2231.6.21={birth=yes}
+	2288.11.10={death=yes}
+}
+3601580={
+	name="Abdulqadir"
+	dynasty=2103138 #Jazairi
+	culture=suriyi
+	religion=sunni
+	father=3601577
+	2300.11.1={birth=yes}
+	2335.3.8={death={death_battle killer=3601576}}
+}
+3601581={
+	name="Samir"
+	dynasty=2103138 #Jazairi
+	culture=suriyi
+	religion=sunni
+	father=3601578
+	2297.11.1={birth=yes}
+	2335.3.8={death={death_reason=death_execution_impaling killer=3601561}}
+}
+3601582={
+	name="Hashim"
+	dynasty=2103136 #al-Qudsi
+	culture=suriyi
+	religion=sunni
+	father=3601570
+	trait=chest_pain
+	2304.12.21={birth=yes}
+	2335.1.11={death={death_reason=death_trait}}
+}
+3601583={
+	name="Marwan"
+	dynasty=2103136 #al-Qudsi
+	culture=suriyi
+	religion=sunni
+	father=3601570
+	2306.1.25={birth=yes}
+}
+3601584={
+	name="Azad"
+	dynasty=2103137 #Sattuf
+	culture=suriyi
+	religion=sunni
+	father=3601576
+	2299.4.23={birth=yes}
+	2337.8.19={death={death_reason=death_murder killer=3601572}}
+}
+3601585={
+	name="Jawdat"
+	dynasty=2103138 #Jazairi
+	culture=suriyi
+	religion=sunni
+	father=3601577
+	2303.11.1={birth=yes}
+	2337.9.18={death={death_execution_garrotting killer=3601572}}
+}
+3601586={
+	name="Saif ad-Din"
+	dynasty=2103138 #Jazairi
+	culture=suriyi
+	religion=sunni
+	father=3601585
+	2328.1.19={birth=yes}
+	2337.9.18={death={death_execution_garrotting killer=3601572}}
+}
+3601587={
+	name="Samir"
+	dynasty=2103138 #Jazairi
+	culture=suriyi
+	religion=sunni
+	father=3601585
+	2332.12.4={birth=yes}
+	2337.9.18={death={death_execution_garrotting killer=3601572}}
+}
+3601588={
+	name="Kariman"
+	female=yes
+	dynasty=2103139 #Eid
+	culture=suriyi
+	religion=sunni
+	trait=lustful
+	trait=depressed
+	2292.12.21={birth=yes}
+	2327.6.16={death={death_reason=death_suicide}}
+}
+3601589={
+	name="Fadlallah"
+	dynasty=2103140 #al-Qadiri
+	culture=suriyi
+	religion=sunni
+	trait=adopted_child
+	trait=skilled_tactician
+	trait=familyperson
+	father=3601565
+	mother=3601588
+	2313.8.11={birth=yes}
+}
+3601590={
+	name="Nasrin"
+	female=yes
+	dynasty=2103140 #al-Qadiri
+	culture=suriyi
+	religion=sunni
+	father=3601565
+	mother=3601588
+	2314.11.12={birth=yes}
+	2331.3.2={add_spouse=3601572}
+}
+3601591={
+	name="Ali"
+	dynasty=2103140 #al-Qadiri
+	culture=suriyi
+	religion=sunni
+	father=3601565
+	mother=3601588
+	2318.5.6={birth=yes}
 }
