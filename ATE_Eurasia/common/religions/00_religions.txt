@@ -3733,6 +3733,86 @@ old_world_cultist_group = {
 		intermarry = zoroastrian
 		
 	}
+	gandhist = { 
+		graphical_culture = hindugfx
+
+		icon = 168
+		heresy_icon = 168
+		
+		color = { 1.0 0.0 0.5 }
+		
+		high_god_name = GOD_BHARAT
+		
+		god_names = {
+			GOD_BABASAHEB GOD_GANDHI GOD_NEHRU GOD_SARVODAYA GOD_SHAHEED GOD_VIGYAN
+		}
+		
+		evil_god_names = {
+			GOD_APAATA GOD_GODSE GOD_SUBH GOD_ISI
+		}
+		
+		character_modifier = {
+			indian_group_opinion = 15
+		}
+		
+		can_grant_divorce = yes
+		priests_can_inherit = no
+		priests_can_marry = yes
+		max_consorts = 3
+		caste_opinions = yes
+		castes = yes
+		
+		religious_clothing_head = 8
+		religious_clothing_priest = 8
+
+		scripture_name = BOOK_BHARAT
+		priest_title = PUJARI
+		piety_name = KARMA
+		
+		intermarry = indian_group
+		intermarry = buddhist_group
+		
+	}
+	sangh = { 
+		graphical_culture = hindugfx
+
+		icon = 169
+		heresy_icon = 169
+		
+		color = { 1.0 0.0 0.5 }
+		
+		high_god_name = GOD_BHARAT2
+		
+		god_names = {
+			GOD_BRAHMA GOD_DOCTORIND GOD_RAMA GOD_SAVARKAR GOD_SARVODAYA GOD_SHAHEED GOD_SHIVA GOD_VIKRAMADITYA GOD_VISHNU
+		}
+		
+		evil_god_names = {
+			GOD_SHAHEED GOD_SATYABHAKTA GOD_GHAZWA GOD_ISI GOD_SUBH GOD_QAISAR
+		}
+		
+		character_modifier = {
+			indian_group_opinion = 15
+		}
+		
+		can_grant_divorce = yes
+		priests_can_inherit = no
+		priests_can_marry = yes
+		max_consorts = 3
+		caste_opinions = yes
+		castes = yes
+		
+		religious_clothing_head = 8
+		religious_clothing_priest = 8
+
+		scripture_name = BOOK_BHARAT
+		priest_title = PUJARI
+		piety_name = KARMA
+		
+		intermarry = indian_group
+		intermarry = buddhist_group
+		
+	}
 	zimiran = {
 		graphical_culture = muslimgfx
 		
