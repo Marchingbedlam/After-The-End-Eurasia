@@ -25505,15 +25505,63 @@ coat_of_arms = {
 2070000 = { name="Amini" culture=persian }
 2070001 = { name="Najafabadi" culture=persian }
 2070002 = { name="Azarnoush" culture=persian }
-2070003 = { name="Ali" culture=persian }
+2070003 = { name="Azarnoush" culture=persian 
+	coat_of_arms = { 
+		religion=nondescript_muslim
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 68
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}}
 2070004 = { name="Ali" culture=persian }
-2070005 = { name="Ali" culture=persian }
+2070005 = { name="Mahmoud" culture=persian 
+	coat_of_arms = { 
+		religion=nondescript_muslim
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 69
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}}
 2070006 = { name="Ali" culture=persian }
 2070007 = { name="Kuchakzadeh" culture=persian religion=shiite }
 2070008 = { name="Jamalzadeh" culture=persian }
 2070009 = { name="Ali" culture=persian }
-2070010 = { name="Ali" culture=persian }
-2070011 = { name="Ali" culture=persian }
+2070010 = { name="Bakhtiar" culture=persian 
+	coat_of_arms = { 
+		religion=nondescript_muslim
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 70
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}}
+2070011 = { name="Shamaizadeh" culture=persian 
+	coat_of_arms = { 
+		religion=nondescript_muslim
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 75
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}}
 2070012 = { name="Ali" culture=persian }
 2070013 = { name="Jazayeri" culture=persian }
 2070014 = { name="Ali" culture=persian }
@@ -31045,6 +31093,8 @@ coat_of_arms = {
 2119148 = { name="Dikvandi" culture=lurs }
 2119149 = { name="Valipour" culture=lurs }
 2119150 = { name="Dinarvand" culture=lurs }
+2119151 = { name="Aghasi" culture=lurs }
+2119152 = { name="Pezeshkzad" culture=lurs }
 
 2120000 = { name="Kilan Adawand" culture=gilaki }
 2120001 = { name="Shahanshahvand" culture=gilaki }

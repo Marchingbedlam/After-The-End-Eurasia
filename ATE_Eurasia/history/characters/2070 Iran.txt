@@ -63,6 +63,7 @@
 	trait=gregarious
 	trait=twin
 	2630.9.27={birth=yes}
+	2660.5.4={add_spouse=3602026}
 }
 2070006={
 	name="Mistafa"
@@ -77,17 +78,16 @@
 	2636.10.1={birth=yes}
 }
 2070007={
-	name="Muhammad"
+	name="Parviz"
 	dynasty=2070005
 	culture=persian
 	religion=shiite
-	trait=mastermind_theologian
-	trait=theologian
-	trait=patient
-	trait=gregarious
-	trait=ambitious
+	trait=peasant_leader
+	trait=just
 	trait=erudite
-	2618.11.2={birth=yes}
+	trait=honest
+	trait=sturdy
+	2622.12.25={birth=yes}
 }
 2070008={
 	name="Muhammad"
@@ -126,30 +126,28 @@
 	2618.11.2={birth=yes}
 }
 2070012={
-	name="Muhammad"
-	dynasty=2070010
+	name="Iman"
+	dynasty=2070010 #Bakhtiar
 	culture=persian
 	religion=shiite
-	trait=mastermind_theologian
-	trait=theologian
-	trait=patient
-	trait=gregarious
-	trait=ambitious
-	trait=erudite
-	2618.11.2={birth=yes}
+	trait=quick
+	trait=shrewd
+	trait=gamer
+	trait=falconer
+	trait=mountain_terrain_leader
+	trait=content
+	trait=humble
+	give_nickname=nick_the_fox
+	2642.1.8={birth=yes}
 }
 2070013={
-	name="Muhammad"
+	name="Yousef"
 	dynasty=2070011
 	culture=persian
 	religion=shiite
 	trait=mastermind_theologian
-	trait=theologian
-	trait=patient
-	trait=gregarious
-	trait=ambitious
-	trait=erudite
-	2618.11.2={birth=yes}
+	trait=musician
+	2613.1.15={birth=yes}
 }
 2070014={
 	name="Ashkan"
@@ -824,4 +822,87 @@
 	trait=humble
 	trait=adventurer
 	2642.7.23={birth=yes}
+}
+2070074={ 
+    name="Abdolkarim"
+	dynasty=2119151 #Aghasi
+	culture=lurs
+	religion=shiite
+	trait=musician
+	trait=strong
+	trait=fair
+	trait=honest
+	trait=patient
+	father=2070076
+	2630.7.7={birth=yes}
+}
+2070075={ 
+    name="Ali-Reza"
+	dynasty=2119152 #Pezeshkzad
+	culture=lurs
+	religion=shiite
+	trait=sympathy_scholastic
+	trait=socializer
+	trait=erudite
+	trait=brave
+	trait=gregarious
+	2615.1.29={birth=yes}
+}
+2070076={ 
+    name="Ali-Qoli"
+	dynasty=2119151 #Aghasi
+	culture=lurs
+	religion=shiite
+	trait=brave
+	2609.1.14={birth=yes}
+	2657.1.11={death={death_reason=death_battle killer=2070007}}
+}
+2070077={ 
+    name="Samireh"
+	dynasty=2119151 #Aghasi
+	culture=lurs
+	religion=shiite
+	female=yes
+	trait=strong
+	father=2070080
+	2634.6.23={birth=yes}
+	2654.9.30={add_spouse=2070004}
+	2654.9.30={effect={add_rival=2070004}}
+}
+2070078={ 
+    name="Golandam"
+	dynasty=2070003 #Azarnoush
+	culture=gorani
+	religion=ahl_e_haqq
+	female=yes
+	trait=strong
+	father=2070004
+	mother=2070077
+	2656.3.16={birth=yes}
+}
+2070079={ 
+    name="Behram"
+	dynasty=2070003 #Azarnoush
+	culture=gorani
+	religion=ahl_e_haqq
+	father=2070004
+	mother=2070077
+	2659.12.23={birth=yes}
+}
+2070080={ 
+    name="Vahid"
+	dynasty=2070096 #Goudarzi
+	culture=lurs
+	religion=shiite
+	2601.3.21={birth=yes}
+	2654.9.30={death={death_reason=death_battle killer=2070004}}
+}
+2070081={ 
+    name="Parviz"
+	dynasty=2070096 #Goudarzi
+	culture=lurs
+	religion=shiite
+	father=2070080
+	2636.3.21={birth=yes}
+	2654.9.30={death={death_reason=death_execution_beheading killer=2070004}}
 }
