@@ -25147,7 +25147,20 @@ coat_of_arms = {
 	}
 }
 2066028 = { name="Talabanî" culture=kurdish	}
-2066029 = { name="Elî" culture=kurdish	}
+2066029 = { name="E'tesami" culture=kurdish	
+	coat_of_arms = { 
+		religion=nondescript_muslim
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 73
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2066030 = { name="Laçîn" culture=kurdish }
 2066031 = { name="Kahraman" culture=kurdish }
 2066032 = { name="Bonni" culture=kurdish }
@@ -25504,8 +25517,8 @@ coat_of_arms = {
 
 2070000 = { name="Amini" culture=persian }
 2070001 = { name="Najafabadi" culture=persian }
-2070002 = { name="Azarnoush" culture=persian }
-2070003 = { name="Azarnoush" culture=persian 
+2070002 = { name="Alirezaei" culture=persian }
+2070003 = { name="Torkashvand" culture=persian 
 	coat_of_arms = { 
 		religion=nondescript_muslim
 		template = 0
@@ -25532,10 +25545,35 @@ coat_of_arms = {
 			color = 0
 		}
 	}}
-2070006 = { name="Ali" culture=persian }
+2070006 = { name="Borumand" culture=persian 
+	coat_of_arms = { 
+		religion=nondescript_muslim
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 74
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2070007 = { name="Kuchakzadeh" culture=persian religion=shiite }
 2070008 = { name="Jamalzadeh" culture=persian }
-2070009 = { name="Ali" culture=persian }
+2070009 = { name="Golpayegani" culture=persian 
+	coat_of_arms = { 
+		religion=nondescript_muslim
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 71
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}}
 2070010 = { name="Bakhtiar" culture=persian 
 	coat_of_arms = { 
 		religion=nondescript_muslim
@@ -25759,6 +25797,7 @@ coat_of_arms = {
 2070206 = { name="Akbarabadi" culture=persian }
 2070207 = { name="Khorram" culture=persian }
 2070208 = { name="Keikhosravi" culture=persian }
+2070209 = { name="Amirkhani" culture=persian }
 
 2071001 = { name="Madakim" culture=kyrgyz }
 2071002 = { name="Moldo" culture=kyrgyz }
@@ -28993,11 +29032,15 @@ coat_of_arms = {
 2103133 = { name="Zaqrit" culture=suriyi }
 2103134 = { name="Mungan" culture=suriyi }
 2103135 = { name="al-Razzaq" culture=suriyi }
-2103136 = { name="al-Qudsi" culture=sabir }
-2103137 = { name="Sattuf" culture=sabir }
-2103138 = { name="Jazairi" culture=sabir }
-2103139 = { name="Eid" culture=sabir }
-2103140 = { name="al-Qadiri" culture=sabir }
+2103136 = { name="al-Qudsi" culture=suriyi }
+2103137 = { name="Sattuf" culture=suriyi }
+2103138 = { name="Jazairi" culture=suriyi }
+2103139 = { name="Eid" culture=suriyi }
+2103140 = { name="al-Qadiri" culture=suriyi }
+2103141 = { name="Umran" culture=suriyi }
+2103142 = { name="Hawrani" culture=suriyi }
+2103143 = { name="al-Asali" culture=suriyi }
+2103144 = { name="Ghadban" culture=suriyi }
 
 2104000 = { name="Yonadam" culture=assyrian }
 2104001 = { name="Agassi" culture=assyrian }
@@ -33405,6 +33448,7 @@ coat_of_arms = {
 2134148 = { name="Izadi" culture=mazandarani }
 2134149 = { name="Rastegar" culture=mazandarani }
 2134150 = { name="Kalbadinejad" culture=mazandarani }
+2134151 = { name="Gharib" culture=mazandarani }
 
 2135000 = { name="Bagirif" culture=hadhrami }
 2135001 = { name="Balala" culture=hadhrami }

@@ -12,17 +12,17 @@
 	2606.9.24={birth=yes}
 }
 2070002={
-	name="Muhammad"
-	dynasty=2070002
+	name="Jahanshah"
+	dynasty=2070002 #Alirezaei
 	culture=persian
 	religion=shiite
-	trait=mastermind_theologian
-	trait=theologian
-	trait=patient
-	trait=gregarious
-	trait=ambitious
-	trait=erudite
-	2618.11.2={birth=yes}
+	trait=strong
+	trait=brilliant_strategist
+	trait=proud
+	trait=content
+	trait=familyperson
+	trait=aggressive_leader
+	2637.8.11={birth=yes}
 }
 2070003={
 	name="Makwan"
@@ -90,17 +90,18 @@
 	2622.12.25={birth=yes}
 }
 2070008={
-	name="Muhammad"
-	dynasty=2070006
+	name="Mohammad"
+	dynasty=2070006 #Borumand
 	culture=persian
 	religion=shiite
-	trait=mastermind_theologian
-	trait=theologian
+	trait=musician
+	trait=quick
+	trait=strong
+	trait=groomed
 	trait=patient
-	trait=gregarious
-	trait=ambitious
-	trait=erudite
-	2618.11.2={birth=yes}
+	trait=kind
+	trait=just
+	2610.10.17={birth=yes}
 }
 2070010={
 	name="Jamaloddin"
@@ -113,17 +114,18 @@
 	2612.1.13={birth=yes}
 }
 2070011={
-	name="Muhammad"
+	name="Abdollah"
 	dynasty=2070009
 	culture=persian
 	religion=shiite
-	trait=mastermind_theologian
-	trait=theologian
-	trait=patient
-	trait=gregarious
-	trait=ambitious
-	trait=erudite
-	2618.11.2={birth=yes}
+	trait=sayyid
+	trait=hafiz
+	trait=paranoid
+	trait=pious
+	trait=envious
+	trait=temperate
+	trait=rough_terrain_leader
+	2612.9.11={birth=yes}
 }
 2070012={
 	name="Iman"
@@ -246,17 +248,16 @@
 	2618.11.2={birth=yes}
 }
 2070021={
-	name="Muhammad"
+	name="Aferin"
+	female=yes
 	dynasty=2066029
-	culture=kurdish
+	culture=persian
 	religion=shiite
-	trait=mastermind_theologian
-	trait=theologian
-	trait=patient
-	trait=gregarious
-	trait=ambitious
-	trait=erudite
-	2618.11.2={birth=yes}
+	trait=poet
+	trait=midas_touched
+	trait=just
+	trait=genius
+	2637.3.6={birth=yes}
 }
 2070022={
 	name="Xätai"
@@ -905,4 +906,28 @@
 	father=2070080
 	2636.3.21={birth=yes}
 	2654.9.30={death={death_reason=death_execution_beheading killer=2070004}}
+}
+2070082={ 
+    name="Parviz"
+	dynasty=2070096 #Goudarzi
+	culture=lurs
+	religion=shiite
+	father=2070080
+	2636.3.21={birth=yes}
+	2654.9.30={death={death_reason=death_execution_beheading killer=2070004}}
+}
+2070083={ 
+    name="Bahman"
+	dynasty=2070209 #Amirkhani
+	culture=persian
+	religion=shiite
+	trait=sayyid
+	2629.5.18={birth=yes}
+}
+2070084={ 
+    name="Nosratollah"
+	dynasty=2134151 #Gharib
+	culture=mazandarani
+	religion=shiite
+	2624.4.27={birth=yes}
 }
