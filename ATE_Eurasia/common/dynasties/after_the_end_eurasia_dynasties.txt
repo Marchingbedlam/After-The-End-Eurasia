@@ -25251,6 +25251,7 @@ coat_of_arms = {
 }
 2066105 = { name="Paçmêlkî" culture=kurdish }
 2066106 = { name="Matur" culture=kurdish }
+2066107 = { name="Berazî" culture=kurdish }
 
 2067000 = { name="Beel" culture=limburgish }
 2067001 = { name="Cals" culture=limburgish }
@@ -25798,6 +25799,19 @@ coat_of_arms = {
 2070207 = { name="Khorram" culture=persian }
 2070208 = { name="Keikhosravi" culture=persian }
 2070209 = { name="Amirkhani" culture=persian }
+2070210 = { name="Ghasemi" culture=persian 
+	coat_of_arms = { 
+		religion=nondescript_muslim
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 72
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}}
 
 2071001 = { name="Madakim" culture=kyrgyz }
 2071002 = { name="Moldo" culture=kyrgyz }
@@ -29041,6 +29055,11 @@ coat_of_arms = {
 2103142 = { name="Hawrani" culture=suriyi }
 2103143 = { name="al-Asali" culture=suriyi }
 2103144 = { name="Ghadban" culture=suriyi }
+2103145 = { name="Tarif" culture=suriyi }
+2103146 = { name="al-Aghawani" culture=suriyi }
+2103147 = { name="Ra'ad" culture=suriyi }
+2103148 = { name="Mujais" culture=suriyi }
+2103149 = { name="Hawwa" culture=suriyi }
 
 2104000 = { name="Yonadam" culture=assyrian }
 2104001 = { name="Agassi" culture=assyrian }
