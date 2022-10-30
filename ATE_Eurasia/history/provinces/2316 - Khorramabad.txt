@@ -20,3 +20,11 @@ religion = shiite
 terrain = mountain
 
 #History
+651.1.1 = {
+	build_wonder = wonder_shapurs_castle
+	set_wonder_stage = 2
+	build_wonder_upgrade = upgrade_armory
+	build_wonder_upgrade = upgrade_golden_throne
+	build_wonder_upgrade = upgrade_watchtower_network
+	build_wonder_upgrade = upgrade_historical_mural
+}
