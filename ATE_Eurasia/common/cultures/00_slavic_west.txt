@@ -36,14 +36,14 @@ west_slavic_group = {
 			Bernadet_Bernadette Betina Bjanka_Blanche Bjedruška_Frederica Bogna Borbora_Barbara 
 			Carolina_Caroline Cecilija_Cecilia Chrystina_Christina 
 			Dana Dobyslawa 
-			Elka_Adelaide Elžbjeta_Elizabeth Ewelin 
+			Elka_Adelaide Elžbjeta_Elizabeth Ewelin_Evelyn 
 			Gerša_Gertrude Gizela_Giselle Gretka_Greta 
 			Hana_Hannah Hanaliza_Anneliese Handrijka Hanelora Hanka Helena_Helen Herta Horteja_Dorothy 
 			Ilza Irmgard
-			Jadza_Hedwig Jagata_Agatha Janka_Joan Jewa_Eva Jewa-Marja Jewelin Judith Juljana_Juliana 
+			Jadza_Hedwig Jagata_Agatha Janka_Joan Jewa_Eva Jewa-Marja Jewelin_Evelyn Judit_Judith Juljana_Juliana 
 			Kantorka Katarina_Catherine Katyržinka_Catherine Klawdija_Claudia Konstanca_Constance  
 			Lawra_Laura Lubina Ludmila Ludwiga_Louise Lydija 
-			Madlena_Magdalene Majka Marhata_Margaret Marja_Mary Merana Meroslawa Mina Mjecislawa 
+			Madlena_Magdalene Majka Marhata_Margaret Marja_Mary Merana Meroslawa Mina_Wilhelmina Mjecislawa 
 			Pawlina_Pauline Plonka_Apollonia 
 			Rejza_Theresa Rodzislawa Róža_Rose Róžamarja_Rosemary Ruzalka 
 			Salomeja Susann_Susan Sybila_Sybil Sylwija_Sylvia 
@@ -143,7 +143,7 @@ west_slavic_group = {
 			Marek_Mark Martin Matej_Matthew Matouš_Matthew Michal_Michael Mikuláš_Nicholas Milan Miloš_Milo Miloslav Miroslav
 			Neklan Nezamysl Norbert 
 			Ondrej_Andrew Osvald_Oswald Otakar
-			Patrik_Patrick Pavel_Paul Petr_Peter Premysl_Premysl Prokop 
+			Patrik_Patrick Pavel_Paul Petr_Peter Premysl_Premysl Prokop_Procopius 
 			Radim Radoslav Richard_Richard Roman_Roman Rostislav Rudolf_Rudolf 
 			Samuel Šebestián_Sebastian Slávek_Slavek Slavoj Slavomír_Slavomir Sobeslav Štepán_Stephen Svatopluk Svatoslav
 			Teodor_Theodore Tomáš_Thomas
@@ -339,7 +339,7 @@ west_slavic_group = {
 			Henryk_Henry Hubert 
 			Ignacy_Ignatius Igor 
 			Jacek_Hyacinth Jakub_James Jan_John Jan Pawel_John-Paul Józef_Joseph Julian_Julian 
-			Kacper_Caspar Kajetan_Cajetan Kamil_Camille Karol_Charles Konrad_Conrad Krystian_Christian Krzysztof_Christopher Ksawery_Xavier Kuba  
+			Kacper_Caspar Kajetan_Cajetan Kamil_Camille Karol_Charles Konrad_Conrad Krystian_Christian Krzysztof_Christopher Ksawery_Xavier Kuba_James 
 			Leon_Leo Lukasz_Luke 
 			Maciej_Matthew Maksymilian_Maximilian Marcel Marcin_Martin Mateusz_Matthew Michal_Michael Mikolaj_Nicholas Milosz 
 			Natan_Nathan Nikodem 
@@ -460,10 +460,10 @@ west_slavic_group = {
 			Magdalena_Magdalene Maja_Maya Malgorzata_Margaret Marcjanna Maria_Mary Maria Anna_Marianne Matylda_Matilda Melania Melchiora Michalina_Michelle Monika_Monica 
 			Nepomucena 
 			Oliwia_Olivia 
-			Paulina_Pauline Pelagia Petronela_Petronilla Placyda  
+			Paulina_Pauline Pelagia_Pelagia Petronela_Petronilla Placyda  
 			Regina Róža_Rose Rozalia_Rosalia 
 			Sabina Salomea_Salome Scholastyka Serafina Stanislawa Seweryna_Severina 
-			Tekla Teodora_Theodora Teofila_Theophila Teresa_Theresa 
+			Tekla_Tekla Teodora_Theodora Teofila_Theophila Teresa_Theresa 
 			Urszula_Ursula 
 			Waleria_Valeria Wanda Weronika_Veronica Wiktoria_Victoria Wirydianna Wladyslawa 
 			Zofia_Sophia Zuzanna_Susan 
@@ -555,49 +555,50 @@ west_slavic_group = {
 		color = { 0.55 0.4 0.6 }
 
 		male_names = {
-			Adam_Adam Albin_Albinus Aleksander_Alexander Alojzy_Aloysius Andrzej_Andrew Antoni_Anthony Arkadius_Arcadius Artur_Arthur Augustyn_Augustine 
-			Bartlomiej_Bartholomew Blazej_Blasius Bogdan Boleslaw_Boleslav Bronislaw_Bronislav 
+			Adam_Adam Albin_Albinus Aleksander_Alexander Alojzy_Aloysius Andrus_Andrew Arkadius_Arcadius Artur_Arthur Augustyn_Augustine 
+			Bartek_Bartholomew Blazej_Blasius Bogdan Bolec_Boleslav Bronislaw_Bronislav 
 			Ceslaw 
-			Daniel_Daniel Darius_Darius Dawid_David Dionizy_Denis 
-			Edgar_Edgar Edmund_Edmund Edward_Edward Emanuel_Emmanuel Emil_Aemilius Ernest_Ernest Eugenius_Eugene 
+			Dandys_Daniel Darius_Darius Dawid_David Dionizy_Denis Dymek_Demetrius 
+			Edzio_Edgar Edmund_Edmund Edward_Edward Elias_Elias Emanuel_Emmanuel Emil_Aemilius Ernest_Ernest Eugenius_Eugene 
 			Feliks_Felix Ferdynand_Ferdinand Filip_Philip Francisek_Francis  
-			Gabriel_Gabriel Grzegorz_Gregory Gustaw_Gustav 
-			Henryk_Henry Hieronim_Jerome Hipolit_Hippolyte 
+			Gabrys_Gabriel Giewont Gustaw_Gustav 
+			Henryk_Henry Hieronim_Jerome Hipolit_Hippolyte Hryc_Gregory 
 			Ignacy_Ignatius Ireneus_Ireneus Izydor_Isidore 
-			Jacek_Hyacinth Jakub_James Jan_John "Jan Kanty" Janus Jaroslaw_Jaroslav Jedrzej_Andrew Jeremi_Jeremy Jerzy_George Józef_Joseph Julian_Julian Julius_Julius Justyn_Justin 
-			Kacper_Caspar Kamil_Camille Karol_Charles Kazimierz_Casimir Klemens_Clement Konrad_Conrad Konstanty_Constantine Kornel_Cornelius Krystian_Christian Krzystof_Christopher Ksawery_Xavier 
-			Lech Leon_Leo Lesek Lucjan_Lucian Ludomil Ludwik_Louis Lukas_Luke 
-			Maciej_Matthew Maksymilian_Maximilian Marceli_Marcel Marcin_Martin Marek Marian_Marianus Mateus_Matthew Michal_Michael Miecyslaw Mikolaj_Nicholas Milos Miroslaw_Miroslav 
-			Olgierd_Algirdas Oskar_Oscar 
-			Pawel_Paul Patryk_Patrick Piotr_Peter Pius_Pius Przemyslaw_Premysl 
+			Jacek_Hyacinth Jano_John Janus Jalu Jaroslaw_Jaroslav Jeremi_Jeremy Jontek_Anthony Jochym_Joachim Jura_George Józef_Joseph Julian_Julian Julius_Julius Justyn_Justin Jyndrek_Andrew 
+			Kacper_Caspar Kamil_Camille Karol_Charles Kazimierz_Casimir Klimek_Clement Konrad_Conrad Konstanty_Constantine Kornel_Cornelius Kosma_Cosmas Kuba_James Krystian_Christian Krzystof_Christopher Ksawery_Xavier 
+			Lach_Lech Lesko_Lestek Leon_Leo Lejbus_Leib Lucjan_Lucian Ludomil Ludwik_Louis Lukas_Luke 
+			Madej_Matthew Maksymilian_Maximilian Marceli_Marcel Marcin_Martin Marko_Mark Marian_Marianus Mateus_Matthew Michal_Michael Miecyslaw Mikolaj_Nicholas Milos Miroslaw_Miroslav 
+			Nikifor_Nikephoros 
+			Olgierd_Algirdas Omelan_Aemilian Onufer_Onufry Oskar_Oscar 
+			Pawel_Paul Patryk_Patrick Piotr_Peter Pius_Pius Prokop_Procopius Przemek_Premysl 
 			Rafal_Raphael Robert_Robert Roman_Roman Rysard_Richard 
-			Samuel_Samuel Sebastian_Sebastian Slawomir Stanislaw_Stanislav Stefan_Stephen Symon_Simon 
-			Tadeus_Thaddeus Tomas_Thomas Tytus_Titus  
-			Waclaw_Wenceslaus Walenty_Valentin Walery_Walerius Wieslaw Wiktor_Victor Wincenty_Vincent Wit_Guy Witold_Vytautas Wladyslaw_Vladislav Wlodzimierz_Vladimir Wojciech_Vojtech 
-			Zbigniew_Zbynek Zdzislaw Zefiryn_Zephyrinus Zenon_Zenon Zygmunt_Sigismund 
+			Samuel_Samuel Sobu_Sebastian Slawomir Stasek_Stanislav Stefan_Stephen Symek_Simon 
+			Tadeus_Thaddeus Tomas_Thomas Tytus_Titus 
+			Waclaw_Wenceslaus Walenty_Valentin Walery_Walerius Wieslaw Wiktor_Victor Wilam_William Wincenty_Vincent Wit_Guy Witold_Vytautas Wladyslaw_Vladislav Wlodek_Vladimir Wojtek_Vojtech 
+			Zbigniew_Zbynek Zdzislaw Zefir_Zephyrinus Zenon_Zenon Zygmunt_Sigismund 
 		}
 		female_names = {
-			Agnieska_Agnes Aleksandra_Alexandra Alicja_Alice Aniela_Angela Anna_Anne Antonina_Antonia Augustyna_Augustina 
-			Barbara_Barbara Basia Beata Boleslawa Bozena Bronislawa 
+			Agnieska_Agnes Alicja_Alice Anna_Anne Antonina_Antonia Augustyna_Augustina 
+			Basia_Barbara Beata Boleslawa Bozena Bronislawa 
 			Ceslawa 
 			Danuta Dorota_Dorothy 
-			Elzbieta_Elizabeth Ewa_Eve Ewelina 
-			Feliksa Franciska_Frances 
+			Elzbieta_Elizabeth Ewa_Eve Ewdocia_Eudokia Ewelina_Evelyn 
+			Feliksa Fenna Franciska_Frances 
 			Grazyna_Grace 
 			Halina Hanna Helena_Helen 
 			Irena_Irene 
-			Jadwiga_Hedwig Jagna_Agnes Janina Joanna_Joan Jolanta_Yolanda Józefa_Josepha Józefina_Josepha Julia_Julia Justyna_Justina 
-			Kamila_Camilla Karolina_Caroline Katarzyna_Catherine Kinga Krystyna_Christina 
+			Jadwiga_Hedwig Janiela_Angela Jagna_Agnes Janina Joanna_Joan Jolanta_Yolanda Józefa_Josepha Józefina_Josepha Julia_Julia Justyna_Justina 
+			Kamila_Camilla Karolina_Caroline Kasia_Catherine Kinga Krystyna_Christina 
 			Lida Lidia Luiza_Louise 
-			Magdalena_Magdalene Malgorzata_Margaret Maria_Mary Martyna_Martina Maryna_Marina Marzena_Margaret Michalina_Michelle 
+			Magdalena_Magdalene Malgorzata_Margaret Maria_Mary Martyna_Martina Maryna_Marina Marzena_Margaret Michalina_Michelle Monika_Monica 
 			Natalia_Nathalie 
-			Olga_Olga 
-			Paulina_Pauline 
-			Renata_Renata Róza_Rose 
+			Olga_Olga Ola_Alexandra 
+			Pajza_Pelagia Paulina_Pauline Paraska_Paraskeva 
+			Rynata_Renata Róza_Rose 
 			Stanislawa Stefania_Stephanie 
-			Teresa_Theresa 
+			Tekla_Tekla Teresa_Theresa 
 			Ursula_Ursula 
-			Wanda Weronika_Veronica Wiktoria_Victoria Wladyslawa 
+			Wanda Weronika_Veronica Wikta_Victoria Wladyslawa 
 			Zofia_Sophia 
 		}
 		from_dynasty_prefix = "of "
@@ -629,14 +630,14 @@ west_slavic_group = {
 			Hajnel_Henry Hanys_John Helmut_Helmut Hubert_Hubert Hugo_Hugh 
 			Ignac_Ignatius
 			Jakub_James Jorg_George Jozef_Joseph Jyndrys_Andrew 
-			Karel_Charles Kasper_Caspar Kazimjyrz_Casimir Kazmir_Casimir Kóndrad_Conrad Kristof_Christopher 
+			Karel_Charles Kaspela_Kaspar Kasper_Caspar Kazimjyrz_Casimir Kazmir_Casimir Kóndrad_Conrad Kristof_Christopher 
 			Luc_Lucian Ludwas_Louis Lukasz_Luke Lyjonard_Leonard Lyjopold_Leopold 
-			Maksymiljan_Maximilian Makes_Maximilian Manik Michol_Michael Mikoloj_Nicholas Mjyszko_Mieszko Moric_Maurice Morcin_Martin 
+			Maksymiljan_Maximilian Makes_Maximilian Manik Mateja_Matthew Michol_Michael Mikoloj_Nicholas Mjyszko_Mieszko Moric_Maurice Morcin_Martin 
 			Niklaus_Nicholas Nobul_Norbert 
 			Ojgen_Eugene Otto_Otto 
 			Paul_Paul Pawol_Paul Pyjter_Peter 
 			Rajmar_Reinmar Rajnold_Reinhold Richad_Richard Rudolf_Rudolf Rufin_Rufin 
-			Stan_Stanislav Szczepon_Stephen Szymón_Szymon 
+			Seba_Sebastian Silwester_Silvester Stan_Stanislav Szczepon_Stephen Szymón_Szymon 
 			Tijodor_Theodore Tomasz_Thomas 
 			Wach Waclaw_Wenceslaus Walter_Walter Wawrzin_Lawrence Wichtór_Victor Wicynt_Vincent Wilem_William Woldemar_Vladimir 
 			Ymil_Emil Yrwin_Erwin Ywald_Ewald 
@@ -645,7 +646,7 @@ west_slavic_group = {
 		female_names = {
 			Barbora_Barbara 
 			Greta_Margaret 
-			Maria_Mary Mina 
+			Maria_Mary Mina_Wilhelmina 
 		}
 		from_dynasty_prefix = "of "
 
