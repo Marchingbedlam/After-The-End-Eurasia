@@ -25,9 +25,11 @@
 	2637.8.11={birth=yes}
 }
 2070003={
-	name="Makwan"
+	name="Kazem"
 	dynasty=2070003
 	culture=gorani
+	father=2070094
+	mother=2070082
 	religion=ahl_e_haqq
 	trait=sympathy_old_world_cults
 	trait=scholar
@@ -35,25 +37,30 @@
 	trait=quick
 	trait=gregarious
 	trait=diligent
-	2600.3.25={birth=yes}
+	trait=shy
+	trait=mystic
+	2601.3.25={birth=yes}
 }
 2070004={
-	name="Ashkan"
+	name="Îsa"
 	dynasty=2070003
 	culture=gorani
 	religion=ahl_e_haqq
 	father=2070003
+	mother=2070101
 	trait=skilled_tactician
 	trait=proud
 	trait=wroth
 	trait=zealous
 	trait=trickster
 	trait=twin
+	trait=giant
 	2630.9.27={birth=yes}
 }
 2070005={
-	name="Kazem"
+	name="Omêd"
 	dynasty=2070003
+	mother=2070101
 	culture=persian
 	religion=ahl_e_haqq
 	father=2070003
@@ -62,6 +69,7 @@
 	trait=honest
 	trait=gregarious
 	trait=twin
+	trait=giant
 	2630.9.27={birth=yes}
 	2660.5.4={add_spouse=3602026}
 }
@@ -908,13 +916,13 @@
 	2654.9.30={death={death_reason=death_execution_beheading killer=2070004}}
 }
 2070082={ 
-    name="Parviz"
-	dynasty=2070096 #Goudarzi
-	culture=lurs
-	religion=shiite
-	father=2070080
-	2636.3.21={birth=yes}
-	2654.9.30={death={death_reason=death_execution_beheading killer=2070004}}
+    name="Nebîla"
+	female=yes
+	culture=gorani
+	religion=ahl_e_haqq
+	2571.5.2={birth=yes}
+	2589.1.1={add_spouse=2070094}
+	2611.2.7={death={death_reason=death_execution_beheading killer=2070094}}
 }
 2070083={ 
     name="Bahman"
@@ -942,4 +950,243 @@
 	trait=gregarious
 	trait=stubborn
 	2634.3.12={birth=yes}
+}
+2070086={ 
+    name="Hossein"
+	dynasty=2070211 #Afshari
+	culture=persian
+	religion=shiite
+	trait=cruel
+	2513.1.12={birth=yes}
+	2557.8.12={death={death_reason=death_battle killer=2070088}}
+}
+2070087={ 
+    name="Shapour"
+	dynasty=2070211 #Afshari
+	culture=persian
+	religion=shiite
+	trait=groomed
+	trait=fair
+	trait=duelist
+	trait=brilliant_strategist
+	trait=proud
+	trait=brave
+	trait=adventurer
+	father=2070086
+	2534.9.2={birth=yes}
+	2572.3.20={death={death_reason=death_duel killer=2070089}}
+}
+2070088={ 
+    name="Ferhad"
+	dynasty=2070003 #Torkashvand
+	culture=gorani
+	religion=ahl_e_haqq
+	trait=brave
+	trait=giant
+	trait=just
+	trait=peasant_leader
+	give_nickname=nick_the_liberator
+	2525.6.5={birth=yes}
+	2566.7.22={death={death_reason=death_trait}}
+}
+2070089={ 
+    name="Muzefer"
+	dynasty=2070003 #Torkashvand
+	culture=gorani
+	religion=ahl_e_haqq
+	father=2070088
+	trait=giant
+	trait=just
+	trait=strong
+	trait=fortune_builder
+	give_nickname=nick_the_beast_of_kermanshah
+	2550.4.21={birth=yes}
+	2596.5.9={death={death_reason=death_trait}}
+}
+2070090={ 
+    name="Sana"
+	female=yes
+	dynasty=2070003 #Torkashvand
+	culture=gorani
+	religion=ahl_e_haqq
+	father=2070088
+	trait=giant
+	2547.7.6={birth=yes}
+	2599.1.10={death=yes}
+}
+2070091={ 
+    name="Parvane"
+	female=yes
+	dynasty=2070003 #Torkashvand
+	culture=gorani
+	religion=ahl_e_haqq
+	father=2070088
+	trait=giant
+	2552.3.18={birth=yes}
+	2604.6.5={death=yes}
+}
+2070092={ 
+    name="Hapsa"
+	female=yes
+	dynasty=2070003 #Torkashvand
+	culture=gorani
+	religion=ahl_e_haqq
+	father=2070088
+	trait=giant
+	2553.8.21={birth=yes}
+	2598.3.20={death=yes}
+}
+2070093={ 
+    name="Allahmûradî"
+	dynasty=2070003 #Torkashvand
+	culture=gorani
+	religion=ahl_e_haqq
+	father=2070089
+	trait=giant
+	trait=twin
+	trait=depressed
+	trait=drunkard
+	trait=duelist
+	trait=thrifty_clerk
+	2568.4.21={birth=yes}
+	2605.6.8={death={death_reason=death_suicide}}
+}
+2070094={ 
+    name="Xolamhusên"
+	dynasty=2070003 #Torkashvand
+	culture=gorani
+	religion=ahl_e_haqq
+	father=2070089
+	trait=giant
+	trait=twin
+	trait=ambitious
+	trait=authoritative
+	trait=skilled_tactician
+	trait=mystic
+	trait=wroth
+	trait=paranoid
+	2568.4.21={birth=yes}
+	2638.11.4={death={death_reason=death_trait}}
+}
+2070095={ 
+    name="Adile"
+	female=yes
+	dynasty=2070003 #Torkashvand
+	culture=gorani
+	religion=ahl_e_haqq
+	father=2070089
+	trait=giant
+	2572.10.15={birth=yes}
+	2607.6.1={death={death_reason=death_trait}}
+}
+2070096={ 
+    name="Xolamhusên"
+	dynasty=2070003 #Torkashvand
+	culture=gorani
+	religion=ahl_e_haqq
+	father=2070094
+	mother=2070082
+	trait=giant
+	2590.10.15={birth=yes}
+	2611.2.7={death={death_reason=death_execution_beheading killer=2070094}}
+}
+2070097={ 
+    name="Remezan"
+	dynasty=2070003 #Torkashvand
+	culture=gorani
+	religion=ahl_e_haqq
+	father=2070094
+	mother=2070082
+	trait=giant
+	trait=lustful
+	trait=flamboyant_schemer
+	trait=seducer
+	trait=deceitful
+	2604.10.29={birth=yes}
+	2650.9.14={death={death_reason=death_execution_garrotting killer=2070003}}
+}
+2070098={ 
+    name="Shirin"
+	female=yes
+	dynasty=2070003 #Torkashvand
+	culture=gorani
+	religion=ahl_e_haqq
+	father=2070094
+	mother=2070082
+	2594.7.16={birth=yes}
+	2640.9.3={death=yes}
+}
+2070099={ 
+    name="Narges"
+	female=yes
+	dynasty=2070003 #Torkashvand
+	culture=gorani
+	religion=ahl_e_haqq
+	father=2070094
+	mother=2070082
+	2606.12.9={birth=yes}
+	2661.6.19={death=yes}
+}
+2070100={ 
+    name="Wajiha"
+	female=yes
+	dynasty=2070003 #Torkashvand
+	culture=gorani
+	religion=ahl_e_haqq
+	father=2070094
+	mother=2070082
+	2608.3.29={birth=yes}
+}
+2070101={ 
+    name="Emîne"
+	female=yes
+	dynasty=2070003 #Torkashvand
+	culture=gorani
+	religion=ahl_e_haqq
+	father=2070096
+	trait=giant
+	2604.6.21={birth=yes}
+	2623.1.1={add_spouse=2070003}
+}
+2070102={
+	name="Emîne"
+	female=yes
+	dynasty=2070003
+	culture=gorani
+	religion=ahl_e_haqq
+	father=2070003
+	mother=2070101
+	trait=giant
+	2625.12.12={birth=yes}
+}
+2070103={
+	name="Adile"
+	female=yes
+	dynasty=2070003
+	culture=gorani
+	religion=ahl_e_haqq
+	father=2070003
+	mother=2070101
+	2628.3.23={birth=yes}
+}
+2070104={
+	name="Minu"
+	female=yes
+	dynasty=2070003
+	culture=gorani
+	religion=ahl_e_haqq
+	father=2070003
+	mother=2070101
+	trait=giant
+	2634.3.2={birth=yes}
+}
+2070105={
+	name="Jîla"
+	female=yes
+	dynasty=2070003
+	culture=gorani
+	religion=ahl_e_haqq
+	father=2070003
+	mother=2070101
+	2639.1.24={birth=yes}
 }

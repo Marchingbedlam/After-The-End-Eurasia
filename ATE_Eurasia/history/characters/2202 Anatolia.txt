@@ -4048,6 +4048,7 @@
 	culture=west_anatolian
 	religion=ruhi
 	father=2202341
+	mother=2202485
 	2448.8.28={birth=yes}
 	2499.10.21={death=yes}
 }
@@ -4840,7 +4841,7 @@
 	religion=ruhi
 	father=2202414
 	2397.10.25={birth=yes}
-	2449.12.14={death={death_reason=death_accident_fall}}
+	2446.12.14={death={death_reason=death_accident_fall}}
 }
 2202417={
 	name="Muratcan"
@@ -5553,4 +5554,15 @@
 	trait=ismailagha
 	2190.3.29={birth=yes}
 	2253.5.31={death=yes}
+}
+2202485={
+	name="Tülay"
+	dynasty=2057212 #Telli
+	culture=rumelian
+	religion=ruhi
+	father=2202416
+	mother=3601678
+	2426.11.22={birth=yes}
+	2445.1.1={add_spouse=2202341}
+	2482.3.23={death=yes}
 }

@@ -22897,7 +22897,19 @@ coat_of_arms = {
 2053236 = { name="Cherchesty" culture=ossetian }
 2053237 = { name="Chekhoyty" culture=ossetian }
 
-2054000 = { name="Ismayil" culture=azeri}
+2054000 = { name="Ismayil" culture=azeri
+	coat_of_arms = { 
+		religion=nondescript_muslim
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 79
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}}
 2054001 = { name="Kärim" culture=azeri}
 2054002 = { name="Abdulla" culture=azeri}
 2054003 = { name="Adigözäl" culture=azeri}
@@ -25200,7 +25212,19 @@ coat_of_arms = {
 2066066 = { name="Duran" culture=kurdish }
 2066067 = { name="Zozanî" culture=kurdish }
 2066068 = { name="Gernas" culture=kurdish }
-2066069 = { name="Bîrkar" culture=kurdish }
+2066069 = { name="Bîrkar" culture=kurdish 
+	coat_of_arms = { 
+		religion=nondescript_muslim
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 78
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}}
 2066070 = { name="Ferîqî" culture=kurdish }
 2066071 = { name="Pehlevanlî" culture=kurdish }
 2066072 = { name="Hesenpûr" culture=kurdish }
@@ -25517,7 +25541,19 @@ coat_of_arms = {
 2069109 = { name="Khurshed" culture=tajik }
 
 2070000 = { name="Amini" culture=persian }
-2070001 = { name="Najafabadi" culture=persian }
+2070001 = { name="Najafabadi" culture=persian 
+	coat_of_arms = { 
+		religion=nondescript_muslim
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 77
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}}
 2070002 = { name="Alirezaei" culture=persian }
 2070003 = { name="Torkashvand" culture=persian 
 	coat_of_arms = { 
@@ -25561,7 +25597,19 @@ coat_of_arms = {
 	}
 }
 2070007 = { name="Kuchakzadeh" culture=persian religion=shiite }
-2070008 = { name="Jamalzadeh" culture=persian }
+2070008 = { name="Jamalzadeh" culture=persian 
+	coat_of_arms = { 
+		religion=nondescript_muslim
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 76
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}}
 2070009 = { name="Golpayegani" culture=persian 
 	coat_of_arms = { 
 		religion=nondescript_muslim
@@ -25791,10 +25839,58 @@ coat_of_arms = {
 2070199 = { name="Mehrabi" culture=persian }
 2070200 = { name="Mahdizadeh" culture=persian }
 2070201 = { name="Sokhanvar" culture=persian }
-2070202 = { name="Shanbehzadeh" culture=persian }
-2070203 = { name="Darvishi" culture=persian }
-2070204 = { name="Nakhjavani" culture=persian }
-2070205 = { name="Irahestani" culture=persian }
+2070202 = { name="Shanbehzadeh" culture=persian 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 34
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}}
+2070203 = { name="Darvishi" culture=persian 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 37
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}}
+2070204 = { name="Nakhjavani" culture=persian 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 39
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}}
+2070205 = { name="Irahestani" culture=persian 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 36
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}}
 2070206 = { name="Akbarabadi" culture=persian }
 2070207 = { name="Khorram" culture=persian }
 2070208 = { name="Keikhosravi" culture=persian }
@@ -25812,6 +25908,7 @@ coat_of_arms = {
 			color = 0
 		}
 	}}
+2070211 = { name="Afshari" culture=persian}
 
 2071001 = { name="Madakim" culture=kyrgyz }
 2071002 = { name="Moldo" culture=kyrgyz }
@@ -27486,7 +27583,19 @@ coat_of_arms = {
 		}
 	}
 }
-2086103 = { name="Surizehi" culture=baloch }
+2086103 = { name="Surizehi" culture=baloch 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 40
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}}
 
 2087000 = { name="Pârtta" culture=chuvash }
 2087001 = { name="Ajhi" culture=chuvash }
@@ -28597,7 +28706,19 @@ coat_of_arms = {
 2099022 = { name="Qaracha" culture=qashqai }
 2099023 = { name="Rahimli" culture=qashqai }
 2099024 = { name="Safi-Khanli" culture=qashqai }
-2099025 = { name="Tavallali" culture=qashqai }
+2099025 = { name="Tavallali" culture=qashqai 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 35
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}}
 2099026 = { name="Shiri" culture=qashqai }
 2099027 = { name="Daneshian" culture=qashqai }
 2099028 = { name="Beigi" culture=qashqai }
@@ -30282,7 +30403,19 @@ coat_of_arms = {
 2110065 = {name="Zigdali" culture=umani }
 2110066 = {name="Al-Balushi" culture=umani }
 2110067 = {name="Al-Kalbani" culture=umani }
-2110068 = {name="Al-Zawawi" culture=umani }
+2110068 = {name="Al-Zawawi" culture=umani 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 38
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}}
 
 2111000 = { name="Ali" culture=yemeni }
 2111001 = { name="Al-Hamdani" culture=yemeni }
