@@ -408,6 +408,7 @@ feudal_governments = {
 					religion_group = muslim
 					NOT = { religion = ruhi }
 					NOT = { religion = ibadi }
+					NOT = { religion = ahmadi }
 				}
 			}
 			OR = {
@@ -642,6 +643,7 @@ feudal_governments = {
 						OR = {
 							religion = alevi
 							religion = ruhi
+							religion = ahmadi
 						}
 						OR = {
 							capital_scope = {region = custom_europe}

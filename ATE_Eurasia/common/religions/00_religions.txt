@@ -3183,6 +3183,23 @@ muslim = {
 			GOD_SHAYTAN GOD_IBLIS
 		}
 		
+		character_modifier = {
+			ruhi_opinion = -25
+			naqshbandi_opinion = -25
+			ibadi_opinion = -25
+			shiite_opinion = -25
+			revivalist_opinion = -25
+			ahl_as_salaf_opinion = -25
+			deobandi_opinion = -25
+			barelvi_opinion = -25
+			sunnah_opinion = -25
+			sunni_opinion = -25
+			zaydi_opinion = -25
+			ismaili_opinion = -25
+			taharur_opinion = -25
+			hui_opinion = -25
+		}
+
 		scripture_name = THE_QURAN
 		priest_title = IMAM
 		crusade_name = JIHAD
