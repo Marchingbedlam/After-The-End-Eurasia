@@ -285,9 +285,32 @@
 	mother=2202468
 	2649.7.14={birth=yes}
 	2660.12.1={
+		wealth=500 
 		effect={
 			add_rival=2070025
-			add_claim=d_ardabil
+			add_claim=d_tabriz
+		}
+		effect={
+			spawn_unit={
+				province=2291 #Ardabil
+				owner=ROOT
+				troops={
+					archers={125 125}
+					heavy_infantry={125 125}
+					light_infantry={250 250}
+				}
+				attrition=0.5
+			}
+			spawn_unit={
+				province=2291 #Ardabil
+				owner=ROOT
+				troops={
+					archers={125 125}
+					heavy_infantry={125 125}
+					light_infantry={250 250}
+				}
+				attrition=0.5
+			}
 		}
 	}
 	2666.1.1={add_spouse=1802017}
@@ -328,6 +351,11 @@
 	mother=2202470
 	2636.10.5={birth=yes}
 	2659.1.1={add_spouse=1802103}
+	2660.12.1={
+		effect={
+			add_claim=d_ardabil
+		}
+	}
 }
 2070026={
 	name="Cüneyd"
