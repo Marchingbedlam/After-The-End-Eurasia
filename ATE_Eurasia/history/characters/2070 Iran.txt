@@ -987,6 +987,12 @@
 	trait=peasant_leader
 	give_nickname=nick_the_liberator
 	2525.6.5={birth=yes}
+	2557.8.12={
+		create_bloodline = {
+			type = torkashvand_bloodline
+			has_dlc = "Holy Fury"
+		}
+	}
 	2566.7.22={death={death_reason=death_trait}}
 }
 2070089={ 
@@ -1143,7 +1149,7 @@
 	dynasty=2070003 #Torkashvand
 	culture=gorani
 	religion=ahl_e_haqq
-	father=2070096
+	father=2070093
 	trait=giant
 	2604.6.21={birth=yes}
 	2623.1.1={add_spouse=2070003}
