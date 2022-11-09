@@ -146,11 +146,21 @@ character_event = {
 		616 = { 
 			add_province_modifier = { name = landmark_volga_don_canal duration = -1 }
 			}
+		652 = { 
+			add_province_modifier = { name = landmark_kremlin duration = -1 }
+			}
 		697 = { 
 			add_province_modifier = { name = landmark_the_giant duration = -1 }
 			}
 		701 = { 
 			add_province_modifier = { name = landmark_superdeep_borehole duration = -1 }
+			}
+		725 = { 
+			add_province_modifier = { name = landmark_copper_mt duration = -1 }
+			add_province_modifier = { name = landmark_ganina_yama duration = -1 }
+			}
+		734 = { 
+			add_province_modifier = { name = landmark_kitezh duration = -1 }
 			}
 		770 = { 
 			add_province_modifier = { name = landmark_m_salavat_yulaev duration = -1 }
@@ -158,17 +168,50 @@ character_event = {
 		777 = { 
 			add_province_modifier = { name = landmark_arkaim duration = -1 }
 			}
+		813 = { 
+			add_province_modifier = { name = landmark_kursk_anomaly duration = -1 }
+			}
 		853 = { 
 			add_province_modifier = { name = landmark_brest_fortress duration = -1 }
 			}
+		859 = { 
+			add_province_modifier = { name = landmark_khatyn_memorial duration = -1 }
+			}
 		898 = { 
 			add_province_modifier = { name = landmark_the_golden_abode duration = -1 }
+			}
+		913 = { 
+			add_province_modifier = { name = landmark_mt_elbrus duration = -1 }
+			}
+		914 = { 
+			add_province_modifier = { name = landmark_city_of_the_dead duration = -1 }
+			}
+		944 = { 
+			add_province_modifier = { name = landmark_ship_graveyard duration = -1 }
+			}
+		949 = { 
+			add_province_modifier = { name = landmark_white_city duration = -1 }
+			}
+		968 = { 
+			add_province_modifier = { name = landmark_baikonur_cosmodrome duration = -1 }
+			}
+		986 = { 
+			add_province_modifier = { name = landmark_rearfront_memorial duration = -1 }
+			}
+		995 = { 
+			add_province_modifier = { name = landmark_big_dam duration = -1 }
+			}
+		1087 = { 
+			add_province_modifier = { name = landmark_shaman_rock duration = -1 }
 			}
 		1174 = { 
 			add_province_modifier = { name = landmark_hortobagy duration = -1 }
 			}
 		1310 = { 
 			add_province_modifier = { name = landmark_small_idol_mountain duration = -1 }
+			}
+		1314 = { 
+			add_province_modifier = { name = landmark_vasyugan_swamp duration = -1 }
 			}
 		1399 = { 
 			add_province_modifier = { name = landmark_lost_city duration = -1 }
@@ -247,6 +290,9 @@ character_event = {
 			}
 		2270 = {
 			add_province_modifier = { name = landmark_alang_yard duration = -1 }
+			}
+		2549 = {
+			add_province_modifier = { name = landmark_chara_sands duration = -1 }
 			}
 		2660 = {
 			add_province_modifier = { name = landmark_christ_the_king duration = -1 }
