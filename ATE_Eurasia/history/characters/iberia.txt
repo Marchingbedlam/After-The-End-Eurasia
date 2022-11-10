@@ -80,7 +80,7 @@
 	name="Ricardo"
 	dynasty=2015044 #Ezquerra
 	culture=aragonese
-	religion=catholic
+	religion=penitant
 	martial=5
 	diplomacy=8
 	stewardship=4
@@ -101,7 +101,7 @@
 	name="Lluís"
 	dynasty=2017060 #Cadafalch
 	culture=catalan
-	religion=penitant
+	religion=catholic
 	martial=5
 	diplomacy=8
 	stewardship=8
@@ -153,6 +153,47 @@
 	trait=scholarly_theologian
 	father=1992300
 	2640.7.9={birth=yes}
+}
+1992302={
+	name="Marco Antonio"
+	dynasty=2018108 #Rivera
+	culture=castilian
+	religion=catholic
+	trait=underhanded_rogue
+	trait=genius
+	trait=kind
+	trait=temperate
+	trait=humble
+	trait=shy
+	2640.3.16={birth=yes}
+}
+1992303={
+	name="Hector"
+	dynasty=2018108 #Rivera
+	culture=castilian
+	religion=penitant
+	trait=tough_soldier
+	trait=mystic
+	trait=chaste
+	trait=honest
+	trait=content
+	trait=zealous
+	2638.3.19={birth=yes}
+}
+1992304={
+	name="Ignacio"
+	dynasty=2018108 #Rivera
+	culture=castilian
+	religion=chevalier
+	trait=tough_soldier
+	trait=fair
+	trait=duelist
+	trait=mystic
+	trait=lustful
+	trait=brave
+	trait=kind
+	trait=charitable
+	2629.3.18={birth=yes}
 }
 # PORTUGAL #
 1992400={
@@ -258,7 +299,7 @@
 	name="Ramón"
 	dynasty=2019101 #Tenorio
 	culture=andalusian
-	religion=catholic
+	religion=penitant
 	martial=6
 	diplomacy=9
 	stewardship=6
@@ -278,7 +319,7 @@
 	name="Isidoro"
 	dynasty=2019049 #Baena
 	culture=andalusian
-	religion=catholic
+	religion=penitant
 	martial=8
 	diplomacy=4
 	stewardship=4
@@ -297,7 +338,7 @@
 	name="Sebastián"
 	dynasty=2019063 #Linares
 	culture=andalusian
-	religion=catholic
+	religion=penitant
 	martial=6
 	diplomacy=5
 	stewardship=8
@@ -315,36 +356,60 @@
 1992800={
 	name="Alexandre"
 	dynasty=2022177 #Romariz
+	father=1992811
 	culture=galician
 	religion=quinto
+	trait=underhanded_rogue
+	trait=authoritative
+	trait=infirm
+	trait=just
+	trait=patient
+	trait=wroth
+	trait=proud
+	
 	2612.5.9={birth=yes}
 }
 1992801={
 	name="Delmiro"
 	dynasty=2021029 #Armayor
 	culture=asturian
-	religion=penitant
+	religion=catholic
+	trait=detached_priest
+	trait=craven
+	trait=patient
+	trait=pious
+	trait=kind
 	2641.12.2={birth=yes}
 }
 1992802={
 	name="Etelvino"
 	dynasty=2021052 #Bercial
 	culture=asturian
-	religion=penitant
+	religion=catholic
+	trait=elusive_shadow
+	trait=charitable
+	trait=honest
+	trait=honorable
+	trait=wroth
 	2626.2.27={birth=yes}
 }
 1992803={
 	name="Teodeberto"
 	dynasty=2021107 #Corrales
 	culture=asturian
-	religion=penitant
+	religion=catholic
+	trait=midas_touched
+	trait=trusting
+	trait=ambitious
+	trait=diligent
+	trait=brave
 	2638.6.16={birth=yes}
 }
 1992804={
 	name="Fernando"
 	dynasty=2020034 #Benito
 	culture=castilian
-	religion=catholic
+	religion=quinto
 	martial=8
 	diplomacy=5
 	stewardship=7
@@ -396,6 +461,128 @@
 	trait=charismatic_negotiator
 	2638.5.26={birth=yes}
 }
+1992807={
+	name="Federico"
+	dynasty=2022177 #Romariz
+	culture=galician
+	father=1992811
+	religion=quinto
+	trait=skilled_tactician
+	trait=authoritative
+	trait=just
+	trait=kind
+	trait=paranoid
+	trait=wroth
+	trait=proud
+	
+	2622.5.9={birth=yes}
+	2641.2.3={add_spouse=1992808}
+}
+1992808={
+	name="Arianna"
+	female=yes
+	dynasty=2022085 #Ferro
+	culture=galician
+	trait=grey_eminence
+	religion=quinto
+	trait=just
+	trait=kind
+	trait=proud
+	trait=patient
+	trait=charitable
+	
+	2630.3.2={birth=yes}
+}
+1992809={
+	name="Romina"
+	female=yes
+	dynasty=2022177 #Romariz
+	father=1992807
+	mother=1992808
+	culture=galician
+	religion=quinto
+	trait=grey_eminence
+	trait=quick
+	trait=fair
+	trait=just
+	trait=kind
+	trait=humble
+	trait=gregarious
+	trait=charitable
+	
+	2648.5.9={birth=yes}
+	2665.4.1={add_lover=19928010}
+	2666.1.1={add_spouse=19928010}
+}
+19928010={
+	name="Eugenio"
+	dynasty=2024230 #Teixeira
+	father=1992404
+	culture=portuguese
+	religion=quinto
+	trait=underhanded_rogue
+	trait=adventurer
+	trait=bastard 
+	trait=quick
+	trait=fair
+	trait=duelist
+	trait=slothful
+	trait=kind
+	trait=proud
+	trait=gregarious
+	trait=deceitful
+	
+	2642.5.9={birth=yes}
+}
+1992811={
+	name="Federico"
+	dynasty=2022177 #Romariz
+	culture=galician
+	religion=quinto
+	trait=skilled_tactician
+	trait=authoritative
+	trait=just
+	
+	2581.1.1={birth=yes}
+	2638.4.15={death=yes}
+}
+19928012={
+	name="Anxo"
+	dynasty=2022055 #Carro
+	culture=galician
+	religion=quinto
+	trait=fortune_builder
+	trait=fair
+	trait=gregarious
+	trait=charitable
+	trait=gluttonous
+	trait=honest
+	
+	2639.1.2={ birth=yes}
+}
+19928013={
+	name="Casandra"
+	female=yes
+	dynasty=0 #Lowborn
+	culture=galician
+	religion=quinto
+	trait=brilliant_strategist
+	trait=strong
+	trait=homosexual
+	trait=duelist
+	trait=proud
+	trait=envious
+	trait=brave
+	trait=deceitful
+	2644.3.1={birth=yes}
+	2664.1.1={
+	employer=1992809
+	effect = { add_friend = 1992809 }
+	}
+	2666.1.1={
+		effect={add_rival=19928010}
+	}
+}	
 1992900={
 	name="Marcel"
 	dynasty=2017067 #Pons
@@ -960,7 +1147,7 @@
 	name="Arnau"
 	dynasty=2015339 #Uson
 	culture=aragonese
-	religion=catholic
+	religion=penitant
 	martial=4
 	diplomacy=6
 	stewardship=4
@@ -979,7 +1166,7 @@
 	name="Carlos"
 	dynasty=2019008 #Perez
 	culture=andalusian
-	religion=catholic
+	religion=penitant
 	martial=12
 	diplomacy=12
 	stewardship=5
@@ -1000,7 +1187,7 @@
 	name="Raimon"
 	dynasty=2017202 #Belloch
 	culture=catalan
-	religion=penitant
+	religion=catholic
 	martial=4
 	diplomacy=8
 	stewardship=5
@@ -1020,7 +1207,7 @@
 	name="Domènec"
 	dynasty=2017017 #Bosch
 	culture=calo
-	religion=penitant
+	religion=chevalier
 	martial=0
 	diplomacy=8
 	stewardship=4
@@ -1039,7 +1226,7 @@
 	name="Xabier"
 	dynasty=2014064 #Unamuno
 	culture=basque
-	religion=penitant
+	religion=catholic
 	trait=skilled_tactician
 	trait=brave
 	2633.2.5={birth=yes}
@@ -1069,9 +1256,9 @@
 1713035={
 	name="Juana Cruz"
 	female=yes
-	dynasty=2095052 #Moctezuma
+	dynasty=2095052 #Camaron
 	culture=calo
-	religion=catholic
+	religion=penitant
 	trait=diligent
 	trait=poet
 	trait=musician

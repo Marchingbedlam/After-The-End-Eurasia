@@ -438,8 +438,6 @@ e_iberia = {
 		color2={ 255 255 255 }
 		
 		capital = 198 # c_valladolid
-		
-		catholic = 4000 # Santiago
 	
 		basque = "Gaztela eta Leon"
 		parisian = "Castille-et-León"
@@ -632,101 +630,6 @@ e_iberia = {
 				b_llanes = {}
 			}
 		}
-		d_galicia = {
-			color={ 222 43 19 }
-			color2={ 255 255 255 }
-			
-			capital = 211 # c_a_coruna
-		
-			basque = "Galizia"
-			catalan = "Galícia"
-			portuguese = "Galiza"
-			occitan = "Galícia"
-			provencal = "Galícia"
-			galician = "Galiza"
-			
-			c_a_coruna = { # 211
-				color={ 212 53 44 }
-				color2={ 255 255 255 }
-				
-				portuguese = "Corunha"
-				castilian = "La Coruña"
-				andalusian = "La Coruña"
-				
-				b_santiago = {
-					holy_site = catholic
-					holy_site = penitant
-				}
-				b_a_coruna = {
-					portuguese = "Corunha"
-					castilian = "La Coruña"
-					andalusian = "La Coruña"}
-				b_ferrol = {}
-				b_naron = {}
-				b_carballo = {}
-				b_oleiros = {}
-				b_ribeira = {
-					castilian = "Riveira"
-					andalusian = "Riveira"}
-			}
-			c_lugo = { # 212
-				color={ 227 77 95 }
-				color2={ 255 255 255 }
-				
-				b_lugo = {}
-				b_monforte_de_lemos = {}
-				b_vilalba = {
-					castilian = "Villalba"
-					andalusian = "Villalba"}
-				b_viveiro = {
-					castilian = "Vivero"
-					andalusian = "Vivero"}
-				b_sarria = {}
-				b_chantada = {}
-				b_foz = {}
-			}
-			c_ourense = { # 213
-				color={ 172 153 81 }
-				color2={ 255 255 255 }
-				
-				castilian = "Orense"
-				andalusian = "Orense"
-				
-				b_miraflor = {}
-				b_ourense = {
-					castilian = "Orense"
-					andalusian = "Orense"}
-				b_verin = {}
-				b_o_barco_de_valdeorras = {
-					castilian = "El Barco de Valdeorras"
-					andalusian = "El Barco de Valdeorras"}
-				b_o_carballino = {
-					castilian = "Carballino"
-					andalusian = "Carballino"
-					portuguese = "Carvalhinho"}
-				b_xinzo_de_limia = {
-					castilian = "Ginzo de Limia"
-					andalusian = "Ginzo de Limia"
-					portuguese = "Ginço de Lima"}
-				b_barbadas = {}
-			}
-			c_pontevedra = { # 214
-				color={ 193 82 11 }
-				color2={ 255 255 255 }
-				
-				b_pontevedra = {}
-				b_vigo = {}
-				b_vilagarcia_de_arousa = {
-					castilian = "Villagarcía de Arosa"
-					andalusian = "Villagarcía de Arosa"}
-				b_redondela = {}
-				b_cangas = {}
-				b_marin_2 = {}
-				b_ponteareas = {
-					castilian = "Puenteareas"
-					andalusian = "Puenteareas"}
-			}
-		}
 		d_leon = {
 			color={ 214 23 5 }
 			color2={ 255 255 255 }
@@ -821,6 +724,117 @@ e_iberia = {
 				b_villaralbo = {}
 				b_moraleja_del_vino = {}
 				b_fuentesauco = {}
+			}
+		}
+	}
+k_galicia = {
+		color={ 222 44 19 }
+		color2={ 255 255 255 }
+			
+		capital = 211 # c_a_coruna	
+		
+		catholic = 4000 # Santiago
+		
+		basque = "Galizia"
+		catalan = "Galícia"
+		portuguese = "Galiza"
+		occitan = "Galícia"
+		provencal = "Galícia"
+		galician = "Galiza"
+	
+	d_galicia = {
+			color={ 222 43 19 }
+			color2={ 255 255 255 }
+			
+			capital = 211 # c_a_coruna
+		
+			basque = "Galizia"
+			catalan = "Galícia"
+			portuguese = "Galiza"
+			occitan = "Galícia"
+			provencal = "Galícia"
+			galician = "Galiza"
+			
+			c_a_coruna = { # 211
+				color={ 212 53 44 }
+				color2={ 255 255 255 }
+				
+				portuguese = "Corunha"
+				castilian = "La Coruña"
+				andalusian = "La Coruña"
+				
+				b_santiago = {
+					holy_site = catholic
+					holy_site = penitant
+				}
+				b_a_coruna = {
+					portuguese = "Corunha"
+					castilian = "La Coruña"
+					andalusian = "La Coruña"}
+				b_ferrol = {}
+				b_naron = {}
+				b_carballo = {}
+				b_oleiros = {}
+				b_ribeira = {
+					castilian = "Riveira"
+					andalusian = "Riveira"}
+			}
+			c_lugo = { # 212
+				color={ 227 77 95 }
+				color2={ 255 255 255 }
+				
+				b_lugo = {}
+				b_monforte_de_lemos = {}
+				b_vilalba = {
+					castilian = "Villalba"
+					andalusian = "Villalba"}
+				b_viveiro = {
+					castilian = "Vivero"
+					andalusian = "Vivero"}
+				b_sarria = {}
+				b_chantada = {}
+				b_foz = {}
+			}
+			c_ourense = { # 213
+				color={ 172 153 81 }
+				color2={ 255 255 255 }
+				
+				castilian = "Orense"
+				andalusian = "Orense"
+				
+				b_miraflor = {}
+				b_ourense = {
+					castilian = "Orense"
+					andalusian = "Orense"}
+				b_verin = {}
+				b_o_barco_de_valdeorras = {
+					castilian = "El Barco de Valdeorras"
+					andalusian = "El Barco de Valdeorras"}
+				b_o_carballino = {
+					castilian = "Carballino"
+					andalusian = "Carballino"
+					portuguese = "Carvalhinho"}
+				b_xinzo_de_limia = {
+					castilian = "Ginzo de Limia"
+					andalusian = "Ginzo de Limia"
+					portuguese = "Ginço de Lima"}
+				b_barbadas = {}
+			}
+			c_pontevedra = { # 214
+				color={ 193 82 11 }
+				color2={ 255 255 255 }
+				
+				b_pontevedra = {}
+				b_vigo = {}
+				b_vilagarcia_de_arousa = {
+					castilian = "Villagarcía de Arosa"
+					andalusian = "Villagarcía de Arosa"}
+				b_redondela = {}
+				b_cangas = {}
+				b_marin_2 = {}
+				b_ponteareas = {
+					castilian = "Puenteareas"
+					andalusian = "Puenteareas"}
 			}
 		}
 	}
