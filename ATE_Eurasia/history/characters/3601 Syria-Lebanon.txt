@@ -234,6 +234,7 @@
 	trait=humble
 	trait=pious
 	trait=brave
+	father=3601713
 	2645.1.10={birth=yes}
 }
 3601019={ #count of Duma
@@ -1467,6 +1468,9 @@
 	dynasty=2103137 #Sattuf
 	culture=suriyi
 	religion=sunni
+	trait=deceitful
+	trait=proud
+	trait=ambitious
 	father=3601576
 	2305.10.3={birth=yes}
 	2371.1.21={death=yes}
@@ -2473,4 +2477,123 @@
 	father=3601700
 	2597.2.13={birth=yes}
 	2661.7.23={death=yes}
+}
+3601702={ 
+	name="Ismail"
+	dynasty=2103009 #Al-Atrash
+	culture=suriyi
+	religion=druze
+	father=3601601
+	2350.1.29={birth=yes}
+	2414.3.5={death=yes}
+}
+3601703={ 
+	name="Abdurrazaq"
+	dynasty=2103009 #Al-Atrash
+	culture=suriyi
+	religion=druze
+	father=3601702
+	2375.9.2={birth=yes}
+	2395.10.23={death=yes}
+}
+3601704={ 
+	name="Izzat"
+	dynasty=2103009 #Al-Atrash
+	culture=suriyi
+	religion=druze
+	father=3601702
+	2381.5.17={birth=yes}
+	2443.5.9={death=yes}
+}
+3601705={ 
+	name="Hasan"
+	dynasty=2103009 #Al-Atrash
+	culture=suriyi
+	religion=druze
+	father=3601704
+	2432.12.22={birth=yes}
+	2494.5.30={death=yes}
+}
+3601706={ 
+	name="Abdulkarim"
+	dynasty=2103009 #Al-Atrash
+	culture=suriyi
+	religion=druze
+	father=3601705
+	2476.4.8={birth=yes}
+	2523.4.25={death=yes}
+}
+3601707={ 
+	name="Radwan"
+	dynasty=2103009 #Al-Atrash
+	culture=suriyi
+	religion=druze
+	father=3601705
+	2490.2.18={birth=yes}
+	2533.3.23={death=yes}
+}
+3601708={ 
+	name="Khalaf"
+	dynasty=2103009 #Al-Atrash
+	culture=suriyi
+	religion=druze
+	father=3601707
+	2522.6.5={birth=yes}
+	2579.1.25={death=yes}
+}
+3601709={ 
+	name="Ismail"
+	dynasty=2103009 #Al-Atrash
+	culture=suriyi
+	religion=druze
+	father=3601708
+	2541.1.22={birth=yes}
+	2595.3.27={death=yes}
+}
+3601710={ 
+	name="Orwa"
+	dynasty=2103009 #Al-Atrash
+	culture=suriyi
+	religion=druze
+	father=3601709
+	2561.6.1={birth=yes}
+	2581.7.19={death=yes}
+}
+3601711={ 
+	name="Jamal"
+	dynasty=2103009 #Al-Atrash
+	culture=suriyi
+	religion=druze
+	father=3601709
+	2589.6.25={birth=yes}
+	2622.4.11={death=yes}
+}
+3601712={ 
+	name="Abdulhalim"
+	dynasty=2103009 #Al-Atrash
+	culture=suriyi
+	religion=druze
+	father=3601711
+	2616.4.2={birth=yes}
+	2640.3.28={death=yes}
+}
+3601713={ 
+	name="Taj ad-Din"
+	dynasty=2103009 #Al-Atrash
+	culture=suriyi
+	religion=druze
+	father=3601711
+	2618.3.16={birth=yes}
+	2659.6.27={death=yes}
+}
+3601714={
+	name="Widad"
+	dynasty=2103137 #Sattuf
+	female=yes
+	culture=suriyi
+	religion=sunni
+	father=3601592
+	2342.2.5={birth=yes}
+	2360.4.6={add_spouse=2202415}
+	2388.10.29={death=yes}
 }

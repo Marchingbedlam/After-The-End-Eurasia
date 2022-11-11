@@ -362,8 +362,11 @@
 	dynasty=2054000 #Ismayil
 	culture=azeri
 	religion=shiite
+	trait=shrewd
+	trait=midas_touched
 	father=2070027
-	2594.11.15={birth=yes}
+	mother=2070112
+	2606.8.3={birth=yes}
 	2660.11.15={death=yes}
 }
 2070027={
@@ -371,17 +374,29 @@
 	dynasty=2054000 #Ismayil
 	culture=azeri
 	religion=shiite
+	trait=cruel
+	trait=ambitious
+	trait=skilled_tactician
+	trait=wroth
+	trait=lunatic
 	father=2070028
+	mother=2070106
 	2571.2.9={birth=yes}
-	2609.5.13={death=yes}
+	2609.5.13={death={death_reason=death_murder killer=2070108}}
 }
 2070028={
 	name="Säfiäddin"
 	dynasty=2054000 #Ismayil
 	culture=azeri
 	religion=shiite
+	trait=ambitious
+	trait=deceitful
+	trait=midas_touched
+	trait=shrewd
+	trait=administrator
+	trait=just
 	2542.1.1={birth=yes}
-	2600.8.4={death=yes}
+	2600.8.4={death={death_reason=death_murder killer=2070027}}
 }
 2070029={
 	name="Boris"
@@ -434,7 +449,8 @@
 	culture=azeri
 	religion=shiite
 	father=2070027
-	2596.8.3={birth=yes}
+	mother=2070112
+	2608.11.15={birth=yes}
 	2649.4.18={death=yes}
 }
 2070036={
@@ -445,7 +461,7 @@
 	religion=shiite
 	father=2070035
 	mother=2070033
-	2621.2.2={birth=yes}
+	2631.2.2={birth=yes}
 }
 2070037={
 	name="Süleyman"
@@ -454,7 +470,7 @@
 	religion=shiite
 	father=2070035
 	mother=2070033
-	2623.10.6={birth=yes}
+	2625.10.6={birth=yes}
 }
 2070038={
 	name="Sam"
@@ -463,7 +479,7 @@
 	religion=shiite
 	father=2070035
 	mother=2070033
-	2626.10.21={birth=yes}
+	2636.10.21={birth=yes}
 }
 2070039={
 	name="Näsibä"
@@ -837,15 +853,15 @@
 	dynasty=2054000 #Ismayil
 	culture=azeri
 	religion=shiite
-	father=2070026
-	mother=2202470
+	father=2070027
+	mother=2070112
 	trait=mastermind_theologian
 	trait=mystic
 	trait=groomed
 	trait=zealous
 	trait=poet
 	trait=flu
-	2612.10.7={birth=yes}
+	2607.10.7={birth=yes}
 	2629.1.1={add_spouse=1996088}
 	2654.12.18={death={death_reason=death_trait}}
 }
@@ -956,8 +972,12 @@
     name="Bahman"
 	dynasty=2070209 #Amirkhani
 	culture=persian
-	religion=shiite
-	trait=sayyid
+	religion=bahai
+	trait=midas_touched
+	trait=shrewd
+	trait=honest
+	trait=proud
+	trait=shy
 	2629.5.18={birth=yes}
 }
 2070084={ 
@@ -965,6 +985,7 @@
 	dynasty=2134151 #Gharib
 	culture=mazandarani
 	religion=shiite
+	father=2070123
 	2624.4.27={birth=yes}
 }
 2070085={ 
@@ -1223,4 +1244,211 @@
 	father=2070003
 	mother=2070101
 	2639.1.24={birth=yes}
+}
+2070106={
+	name="Nadia"
+	female=yes
+	dynasty=0
+	culture=azeri
+	religion=shiite
+	2551.8.19={birth=yes}
+	2570.1.1={add_spouse=2070028}
+	2585.1.1={add_spouse=2070107}
+	2619.6.14={death=yes}
+}
+2070107={
+	name="Sardar"
+	dynasty=2134019 #Alizadeh
+	culture=mazandarani
+	religion=shiite
+	2554.3.13={birth=yes}
+	2585.1.1={add_spouse=2070106}
+	2607.12.8={death={death_reason=death_execution_disembowelment killer=2070027}}
+}
+2070108={
+	name="Daryush"
+	dynasty=2120034 #Akbari
+	culture=gilaki
+	religion=shiite
+	2567.3.11={birth=yes}
+	2621.4.15={death=yes}
+}
+2070109={
+	name="Noam"
+	dynasty=1820066 #Halevi
+	culture=sefardi
+	religion=ivri
+	trait=midas_touched
+	trait=shrewd
+	father=2202486
+	2544.1.6={birth=yes}
+	2597.3.2={death=yes}
+}
+2070110={
+	name="Avraham"
+	dynasty=1820066 #Halevi
+	culture=sefardi
+	religion=ivri
+	trait=erudite
+	trait=mastermind_theologian
+	trait=deceitful
+	trait=scholar
+	trait=poet
+	trait=gregarious
+	trait=honest
+	father=2070109
+	2563.6.4={birth=yes}
+	2597.1.1={culture=azeri}
+}
+2070111={
+	name="Bähram"
+	dynasty=1820066 #Halevi
+	culture=azeri
+	religion=ivri
+	trait=skilled_tactician
+	trait=brave
+	father=2070110
+	2586.6.4={birth=yes}
+	2605.1.3={death={death_reason=death_battle killer=2070113}}
+}
+2070112={
+	name="Räfiqä"
+	dynasty=2054127 #Müfidzadä
+	culture=azeri
+	religion=shiite
+	female=yes
+	father=2070113
+	2588.9.1={birth=yes}
+	2605.10.7={add_spouse=2070027}
+	2644.11.19={death=yes}
+}
+2070113={
+	name="Salamulla"
+	dynasty=2054127 #Müfidzadä
+	culture=azeri
+	religion=shiite
+	trait=brave
+	2553.6.17={birth=yes}
+	2605.10.7={death={death_reason=death_battle killer=2070027}}
+}
+2070114={
+	name="Cämilä"
+	dynasty=1820066 #Halevi
+	culture=azeri
+	religion=ivri
+	father=2070110
+	female=yes
+	2587.9.2={birth=yes}
+	2603.1.1={add_spouse=2071130}
+}
+2070115={
+	name="Eldar"
+	dynasty=1820066 #Halevi
+	culture=azeri
+	religion=ivri
+	father=2070110
+	2589.9.21={birth=yes}
+	2607.12.8={death={death_reason=death_execution_flaying killer=2070027}}
+}
+2070116={
+	name="Orhan"
+	dynasty=1820066 #Halevi
+	culture=azeri
+	religion=ivri
+	father=2070115
+	2605.12.20={birth=yes}
+}
+2070117={
+	name="Nigar"
+	dynasty=1820066 #Halevi
+	culture=azeri
+	religion=ivri
+	father=2070115
+	trait=twin
+	female=yes
+	2607.8.31={birth=yes}
+}
+2070118={
+	name="Nahidä"
+	dynasty=1820066 #Halevi
+	culture=azeri
+	religion=ivri
+	father=2070115
+	trait=twin
+	female=yes
+	2607.8.31={birth=yes}
+}
+2070119={
+	name="Teymur"
+	dynasty=1820066 #Halevi
+	culture=azeri
+	religion=ivri
+	trait=mastermind_theologian
+	trait=quick
+	trait=physician
+	trait=erudite
+	father=2070110
+	2607.11.12={birth=yes}
+}
+2070120={
+	name="Pärviz"
+	dynasty=1820066 #Halevi
+	culture=azeri
+	religion=ivri
+	father=2070119
+	2630.3.24={birth=yes}
+}
+2070121={
+	name="Aslan"
+	dynasty=1820066 #Halevi
+	culture=azeri
+	religion=ivri
+	father=2070119
+	2633.11.28={birth=yes}
+}
+2070122={
+	name="Cämil"
+	dynasty=1820066 #Halevi
+	culture=azeri
+	religion=ivri
+	father=2070119
+	2635.5.21={birth=yes}
+}
+2070123={ 
+    name="Omid"
+	dynasty=2134151 #Gharib
+	culture=mazandarani
+	religion=shiite
+	father=2070124
+	2591.12.13={birth=yes}
+	2644.8.8={death=yes}
+}
+2070124={ 
+    name="Abdolmoghim"
+	dynasty=2134151 #Gharib
+	culture=mazandarani
+	religion=shiite
+	2553.7.26={birth=yes}
+	2606.8.3={death=yes}
+}
+2070125={ 
+    name="Tayebeh"
+	dynasty=2134151 #Gharib
+	culture=mazandarani
+	religion=shiite
+	female=yes
+	father=2070124
+	2581.11.5={birth=yes}
+	2620.1.1={add_spouse=2071112}
+	2638.7.26={death=yes}
+}
+2070126={ 
+    name="Nazila"
+	dynasty=2134151 #Gharib
+	culture=mazandarani
+	religion=shiite
+	female=yes
+	father=2070124
+	2588.3.8={birth=yes}
+	2620.1.1={add_spouse=2071162}
 }

@@ -552,7 +552,7 @@
 #Claims descent from the Pre-Event Osmanoghlu (not actually)
 2202048={
 	name="Emre"
-	dynasty=2057009 #Post-Event Osmanoghlu
+	dynasty=2057009 #Post-EventOsmanoghlu
 	culture=rumelian
 	religion=naqshbandi
 	trait=ambitious
@@ -564,14 +564,13 @@
 	2562.5.21={name="Osman"}
 	2580.10.13={death=yes}
 }
-
 2202049={
 	name="Yahya"
 	dynasty=2055005 #Kemal
 	culture=west_anatolian
 	religion=ruhi
-	2575.12.24 = {birth=yes}
-	2630.10.23 = {death=yes}
+	2575.12.24={birth=yes}
+	2630.10.23={death=yes}
 }
 2202050={
 	name="Mehmet"
@@ -579,28 +578,29 @@
 	dynasty=2057009
 	culture=rumelian
 	religion=naqshbandi
-	2578.10.13 = {birth=yes}
-	2630.12.4 = {death=yes}
+	2578.10.13={birth=yes}
+	2630.12.4={death=yes}
 }
 2202051={
 	name="Beyazit"
 	father=2202050
+	mother=2202494
 	dynasty=2057009
 	culture=rumelian
 	religion=naqshbandi
-	2610.12.30 = {birth=yes}
-	2635.1.1 = {
-		add_spouse = 2202052
-	}
-	2660.10.12 = {death=yes}
+	2610.12.30={birth=yes}
+	2635.1.1={add_spouse=2202052}
+	2660.10.12={death=yes}
 }
 2202052={
 	name="Zeynep"
 	female=yes
 	culture=rumelian
 	religion=naqshbandi
-	2610.7.28= {birth=yes}
-	2660.1.21 = {death=yes}
+	dynasty=2057005 #Boghazkesen
+	father=2202492
+	2610.7.28={birth=yes}
+	2660.1.21={death=yes}
 }
 2202053={
 	name="Selim"
@@ -608,8 +608,8 @@
 	dynasty=2057009
 	culture=rumelian
 	religion=naqshbandi
-	2579.5.23 = {birth=yes}
-	2630.3.11 = {death=yes}
+	2579.5.23={birth=yes}
+	2630.3.11={death=yes}
 }
 2202054={
 	name="Hatice"
@@ -618,8 +618,8 @@
 	dynasty=2057009
 	culture=rumelian
 	religion=naqshbandi
-	2610.7.14 = {birth=yes}
-	2660.11.28 = {death=yes}
+	2610.7.14={birth=yes}
+	2660.11.28={death=yes}
 }
 2202055={
 	name="Ahmet"
@@ -1111,9 +1111,10 @@
 	trait=ambitious
 	give_nickname=nick_the_black_ram
 	father=2202263
+	mother=2202489
 	2612.8.20={birth=yes}
 }
-2202087={#Count of Kars
+2202087={ #Count of Kars
 	name="Pamuk"
 	dynasty=2060004 #Orhanoghlu
 	culture=black_sea
@@ -1123,9 +1124,10 @@
 	trait=pious
 	trait=shy
 	trait=poet
-	2613.11.30={ birth=yes }
+	father=2202487
+	2613.11.30={birth=yes}
 }
-2202088={#Kurdish count of tunceli
+2202088={ #Kurdish count of tunceli
 	name="Kamer"
 	dynasty=2066002 #Diyap
 	culture=zaza
@@ -1167,76 +1169,74 @@
 	father=2202257
 	2615.10.27={ birth=yes }
 }
-2202091 = { #Most Recent Seyh ul-Islam
-	name = "Fatih"
-	culture = west_anatolian
-	religion = naqshbandi
-	trait = scholarly_theologian
-	trait = quick
-	trait = pious
-	trait = erudite
-	trait = proud
-	2638.11.6={ birth=yes }
+2202091={ #Most Recent Shaykh al-Islam
+	name="Fatih"
+	culture=west_anatolian
+	religion=naqshbandi
+	trait=scholarly_theologian
+	trait=quick
+	trait=pious
+	trait=erudite
+	trait=proud
+	2638.11.6={birth=yes}
 }
-2202092 = { #Patriarch of Antioch
-	name = "Dawid" 
-	culture = suriyi
-	religion = orthodox
+2202092={ #Patriarch of Antioch
+	name="Dawid"
+	culture=suriyi
+	religion=orthodox
 	martial=3
 	diplomacy=7
 	stewardship=7
 	intrigue=3
 	learning=8
-	trait = mastermind_theologian
-	trait = musician
-	trait = mystic
-	trait = charitable
-	2620.11.2 = { birth = yes }
+	trait=mastermind_theologian
+	trait=musician
+	trait=mystic
+	trait=charitable
+	2620.7.9={birth=yes}
 }
-2202093 = { # Countess of Kirklareli
-	name = "Ayshenur" 
-	dynasty = 1803000 #Hizir
-	culture = dom
-	religion = ruhi
-	female = yes
-	trait = tough_soldier
-	trait = strong
-	trait = stubborn
-	trait = content
-	trait = trusting
-	trait = brave
-	2649.11.2 = { birth = yes }
+2202093={ #Countess of Kirklareli
+	name="Ayshenur"
+	dynasty=1803000 #Hizir
+	culture=dom
+	religion=ruhi
+	female=yes
+	trait=tough_soldier
+	trait=strong
+	trait=stubborn
+	trait=content
+	trait=trusting
+	trait=brave
+	2649.6.24={birth=yes}
 }
-2202094 = { # Count of Tekirdag
-	name = "Islam" 
-	culture = rumelian
-	religion = ruhi
-	dynasty = 2057002 #Namik
-	trait = thrifty_clerk
-	trait = just
-	trait = kind
-	trait = charitable
-	trait = ambitious
-	2639.11.2 = { birth = yes }
-	2660.1.2 = {
-		add_spouse = 2202095
-	}
+2202094={ 
+	name="Islam"
+	culture=rumelian
+	religion=ruhi
+	dynasty=2057002 #Namik
+	trait=thrifty_clerk
+	trait=just
+	trait=kind
+	trait=charitable
+	trait=ambitious
+	2639.11.6={birth=yes}
+	2660.1.2={add_spouse=2202095}
 }
-2202095 = {
-	name = "Zekiye" 
-	culture = rumelian
-	religion = ruhi
-	female = yes
-	2639.11.2 = { birth = yes }
+2202095={
+	name="Zekiye"
+	culture=rumelian
+	religion=ruhi
+	female=yes
+	2639.6.1={birth=yes}
 }
-2202096 = { 
-	name = "Adem" 
-	culture = rumelian
-	religion = ruhi
-	dynasty = 2057002 #Namik
-	father = 2202094
-	mother = 2202095
-	2661.11.2 = { birth = yes }
+2202096={
+	name="Adem"
+	culture=rumelian
+	religion=ruhi
+	dynasty=2057002 #Namik
+	father=2202094
+	mother=2202095
+	2661.6.29={birth=yes}
 }
 2202097={ #Count of Cannakale
 	name="Ali"
@@ -1251,87 +1251,89 @@
 	trait=strong
 	father=2202442
 	mother=2202443
-	2620.11.2={birth=yes}
-	2660.01.2={
-		add_spouse=2202098
-	}
+	2620.11.16={birth=yes}
+	2660.01.2={add_spouse=2202098}
 }
-2202098 = {
-	name = "Evrem" 
-	culture = rumelian
-	religion = ruhi
-	female = yes
-	2621.11.2 = { birth = yes }
+2202098={
+	name="Evrem"
+	culture=rumelian
+	religion=ruhi
+	female=yes
+	2621.4.8={birth=yes}
 }
-2202099 = { 
-	name = "Ömer" 
-	culture = rumelian
-	religion = naqshbandi
-	dynasty = 2057003 #Mehmetçik
-	father = 2202097
-	mother = 2202098
-	2646.11.2 ={birth=yes}
+2202099={
+	name="Ömer"
+	culture=rumelian
+	religion=naqshbandi
+	dynasty=2057003 #Mehmetçik
+	father=2202097
+	mother=2202098
+	2646.5.5={birth=yes}
 }
-2202100 = {
-	name = "Shevket" 
-	culture = rumelian
-	religion = naqshbandi
-	dynasty = 2057003 #Mehmetçik
-	father = 2202097
-	mother = 2202098
-	2648.11.2 = { birth = yes }
+2202100={
+	name="Shevket"
+	culture=rumelian
+	religion=naqshbandi
+	dynasty=2057003 #Mehmetçik
+	father=2202097
+	mother=2202098
+	2648.10.27={birth=yes}
 }
-2202101 = { # Count of Balikesir
-	name = "Kurtdereli" 
-	culture = rumelian
-	religion = naqshbandi
-	dynasty = 2057004 #Mehmet
-	trait = tough_soldier
-	trait = giant
-	trait = robust
-	trait = dull
-	trait = proud
-	trait = cruel
-	2640.11.2 = { birth = yes }
+2202101={
+	name="Kurtdereli"
+	culture=rumelian
+	religion=naqshbandi
+	dynasty=2057005 #Boghazkesen
+	father=2202493
+	trait=tough_soldier
+	trait=giant
+	trait=robust
+	trait=dull
+	trait=proud
+	trait=cruel
+	trait=twin
+	2640.4.27={birth=yes}
 }
-2202102 = { # Count of Bolu
-	name = "Shemsettin" 
-	culture = rumelian
-	religion = naqshbandi
-	dynasty = 2057004 #Bogazkesen
-	trait = scholarly_theologian
-	trait = mystic
-	trait = feeble
-	trait = temperate 
-	trait = pious
-	trait = diligent
-	2640.11.2 = { birth = yes }
+2202102={ #Count of Bolu
+	name="Shemsettin"
+	culture=rumelian
+	religion=naqshbandi
+	dynasty=2057005 #Boghazkesen
+	father=2202493
+	trait=scholarly_theologian
+	trait=mystic
+	trait=feeble
+	trait=temperate
+	trait=pious
+	trait=diligent
+	trait=twin
+	2640.4.27={birth=yes}
 }
-2202103 = { # Count of Kutahya
-	name = "Mehmet" 
-	culture = west_anatolian
-	religion = naqshbandi
-	dynasty = 2055006 #Evliya
-	trait = scholarly_theologian
-	trait = ambitious
-	trait = brave
-	trait = pious
-	trait = scholar
-	trait = diligent
-	2640.11.2 = { birth = yes }
+2202103={ #Count of Kutahya
+	name="Mehmet"
+	culture=west_anatolian
+	religion=naqshbandi
+	dynasty=2055006 #Evliya
+	trait=scholarly_theologian
+	trait=ambitious
+	trait=brave
+	trait=pious
+	trait=scholar
+	trait=diligent
+	2624.3.19={birth=yes}
 }
-2202104 = { # Count of Eskishehir
-	name = "Fahrettin" 
-	culture = west_anatolian
-	religion = ruhi
-	dynasty = 2055007 #Cüneyt
-	trait = tough_soldier
-	trait = strong
-	trait = brave
-	trait = robust
-	trait = just
-	trait = humble
-	2640.11.2 = { birth = yes }
+2202104={ #Count of Eskishehir
+	name="Fahrettin"
+	culture=west_anatolian
+	religion=ruhi
+	dynasty=2055007 #Cüneyt
+	trait=tough_soldier
+	trait=strong
+	trait=brave
+	trait=robust
+	trait=just
+	trait=humble
+	2619.5.18={birth=yes}
 }
 2202105={ # Count of Bursa
 	name="Kerim Enes"
@@ -1346,11 +1348,11 @@
 	father=2202448
 	2637.5.20={birth=yes}
 }
-2202109 = { 
-	name = "Yumurcak" 
-	culture = rumelian
-	religion = naqshbandi
-	dynasty = 2057211 #Mehmetoghlu
+2202109={
+	name="Yumurcak"
+	culture=rumelian
+	religion=naqshbandi
+	dynasty=2057211 #Mehmetoghlu
 	father=2202111
 	trait=intricate_webweaver
 	trait=deceitful
@@ -1360,23 +1362,23 @@
 	trait=greedy
 	trait=possessed
 	trait=scarred
-	2640.4.16 = { birth = yes }
+	2640.4.16={birth=yes}
 	2660.1.1={employer=2202056}
 }
-2202110 = { 
-	name = "Arslan" 
-	culture = rumelian
-	religion = naqshbandi
-	dynasty = 2057211 #Mehmetoghlu
+2202110={
+	name="Arslan"
+	culture=rumelian
+	religion=naqshbandi
+	dynasty=2057211 #Mehmetoghlu
 	father=2202111
-	2638.7.12 = { birth = yes }
+	2638.7.12={birth=yes}
 }
-2202111 = { 
-	name = "Muhammet" 
-	culture = rumelian
-	religion = naqshbandi
-	dynasty = 2057211 #Mehmetoghlu
-	2617.9.23 = { birth = yes }
+2202111={
+	name="Muhammet"
+	culture=rumelian
+	religion=naqshbandi
+	dynasty=2057211 #Mehmetoghlu
+	2617.9.23={birth=yes}
 }
 2202112 = { 
 	name="Eyûb" 
@@ -2717,6 +2719,7 @@
 	dynasty=1820066 #Halevi
 	culture=sefardi
 	religion=ivri
+	father=2202486
 	2529.6.16={birth=yes}
 	2586.6.20={death=yes}
 }
@@ -4822,7 +4825,8 @@
 	culture=rumelian
 	religion=ruhi
 	father=2202415
-	2370.9.4={birth=yes}
+	mother=3601714
+	2360.9.4={birth=yes}
 	2414.3.25={death={death_reason=death_battle}}
 }
 2202415={
@@ -4832,7 +4836,7 @@
 	religion=ruhi
 	father=2202413
 	2335.10.28={birth=yes}
-	2366.11.24={death={death_reason=death_battle}}
+	2363.11.24={death={death_reason=death_battle killer=2202212}}
 }
 2202416={
 	name="Cihangir"
@@ -5396,7 +5400,7 @@
 	father=2202464
 	mother=2202467
 	2631.1.17={birth=yes}
-	2632.1.1={add_spouse=2070024}
+	2647.1.1={add_spouse=2070024}
 }
 2202469={
 	name="Bahtiyar"
@@ -5416,8 +5420,8 @@
 	religion=alevi
 	father=2202469
 	mother=2202474
-	2595.1.29={birth=yes}
-	2611.1.1={add_spouse=2070026}
+	2605.1.29={birth=yes}
+	2625.1.1={add_spouse=2070026}
 	2657.8.9={death=yes}
 }
 2202471={
@@ -5426,6 +5430,7 @@
 	culture=black_sea
 	religion=alevi
 	father=2202472
+	mother=2202491
 	2552.10.13={birth=yes}
 	2611.7.29={death=yes}
 }
@@ -5434,8 +5439,8 @@
 	dynasty=2060206 #Akdagh
 	culture=black_sea
 	religion=alevi
-	2530.3.19={birth=yes}
-	2609.4.14={death=yes}
+	2515.3.19={birth=yes}
+	2589.4.14={death=yes}
 }
 2202473={
 	name="Pehlivan"
@@ -5443,6 +5448,7 @@
 	culture=black_sea
 	religion=alevi
 	father=2202472
+	mother=2202491
 	2554.12.6={birth=yes}
 	2595.9.18={death=yes}
 }
@@ -5488,6 +5494,7 @@
 	name="Minas"
 	culture=romioi
 	religion=naqshbandi
+	father=2202490
 	dynasty=2056070 #Küçükrumlar
 	2510.8.5={birth=yes}
 	2562.3.20={death=yes}
@@ -5557,6 +5564,7 @@
 }
 2202485={
 	name="Tülay"
+	female=yes
 	dynasty=2057212 #Telli
 	culture=rumelian
 	religion=ruhi
@@ -5565,4 +5573,87 @@
 	2426.11.22={birth=yes}
 	2445.1.1={add_spouse=2202341}
 	2482.3.23={death=yes}
+}
+2202486={
+	name="Shabtai"
+	dynasty=1820066 #Halevi
+	culture=sefardi
+	religion=ivri
+	2509.10.30={birth=yes}
+	2564.3.30={death=yes}
+}
+2202487={
+	name="Shevket"
+	dynasty=2060004 #Orhanoghlu
+	culture=black_sea
+	religion=ruhi
+	father=2202488
+	2582.9.26={birth=yes}
+	2628.3.16={death=yes}
+}
+2202488={
+	name="Cevdet"
+	dynasty=2060004 #Orhanoghlu
+	culture=black_sea
+	religion=ruhi
+	2555.7.10={birth=yes}
+	2612.7.20={death=yes}
+}
+2202489={
+	name="Asli"
+	female=yes
+	dynasty=2060004 #Orhanoghlu
+	culture=black_sea
+	religion=ruhi
+	father=2202488
+	2584.2.26={birth=yes}
+	2605.1.1={add_spouse=2202263}
+	2640.4.20={death=yes}
+}
+2202490={ 
+	name="Vasil"
+	culture=romioi
+	religion=naqshbandi
+	dynasty=2056070 #Küçükrumlar
+	2487.3.23={birth=yes}
+	2512.4.6={death=yes}
+}
+2202491={ 
+	name="Maria"
+	female=yes
+	culture=romioi
+	religion=naqshbandi
+	father=2202490
+	dynasty=2056070 #Küçükrumlar
+	2511.8.20={birth=yes}
+	2535.1.1={add_spouse=2202472}
+	2562.3.20={death=yes}
+}
+2202492={ 
+	name="Sabri"
+	culture=rumelian
+	religion=naqshbandi
+	dynasty=2057005 #Bogazkesen
+	2581.9.13={birth=yes}
+	2611.5.6={death=yes}
+}
+2202493={ 
+	name="Gazi"
+	culture=rumelian
+	religion=naqshbandi
+	father=2202492
+	dynasty=2057005 #Bogazkesen
+	2599.11.27={birth=yes}
+	2656.1.26={death=yes}
+}
+2202494={
+	name="Ecem"
+	female=yes
+	dynasty=2055002 #Ulukaya
+	culture=west_anatolian
+	religion=naqshbandi
+	father=2202250
+	2586.6.1={birth=yes}
+	2606.1.1={add_spouse=2202050}
+	2626.11.24={death=yes}
 }
