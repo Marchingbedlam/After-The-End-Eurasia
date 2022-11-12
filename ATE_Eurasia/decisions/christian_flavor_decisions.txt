@@ -192,5 +192,43 @@ decisions = {
 			hidden_tooltip = { character_event = { id = CIML.37 }}
 		}
 	}	
+
+	build_kohhran_thianghlim = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 24
+		
+		potential = {
+			has_dlc = "Sons of Abraham"
+			is_playable = yes
+			religion = kohhran_thianghlim
+			NOT = { has_global_flag = third_temple_built }
+			NOT = { has_global_flag = building_third_temple }
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		allow = {
+			completely_controls = c_west_jerusalem
+			1958 = {
+				religion = ROOT
+			}
+			wealth = 1500
+			piety = 1500
+		}
+		effect = {
+			hidden_tooltip = {
+				character_event = { id = SoA.100 }
+				1958 = {	province_event = { id = SoA.10199 days = 1460 random = 50 }	}
+			}
+			set_global_flag = building_third_temple
+			wealth = -1500
+			prestige = 500
+			piety = 500
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
 	
 }
