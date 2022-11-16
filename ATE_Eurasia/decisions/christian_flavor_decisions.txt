@@ -209,17 +209,21 @@ decisions = {
 			}
 		}
 		allow = {
-			completely_controls = c_west_jerusalem
-			1958 = {
+			completely_controls = c_aizawl
+			2775 = {
 				religion = ROOT
 			}
+			OR = {
+				tier = EMPEROR
+				tier = KING
+			}		
 			wealth = 1500
 			piety = 1500
 		}
 		effect = {
 			hidden_tooltip = {
 				character_event = { id = SoA.100 }
-				1958 = {	province_event = { id = SoA.10199 days = 1460 random = 50 }	}
+				2775 = {	province_event = { id = SoA.10199 days = 1460 random = 50 }	}
 			}
 			set_global_flag = building_third_temple
 			wealth = -1500
