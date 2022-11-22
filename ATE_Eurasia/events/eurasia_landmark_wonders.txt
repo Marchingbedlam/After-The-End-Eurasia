@@ -19,11 +19,17 @@ character_event = {
 
 	option = {
 		
+		25 = {
+			add_province_modifier = { name = landmark_giants_causeway duration = -1 }
+			}
 		37 = {
 			add_province_modifier = { name = landmark_white_sea_canal duration = -1 }
 			}
 		117 = {
 			add_province_modifier = { name = landmark_abraj_al_bait duration = -1 }
+			}
+		155 = {
+			add_province_modifier = { name = landmark_asbyrgi_canyon duration = -1 }
 			}
 		156 = {
 			add_province_modifier = { name = landmark_gallipoli duration = -1 }
@@ -54,6 +60,9 @@ character_event = {
 			}
 		337 = { 
 			add_province_modifier = { name = landmark_ijsselmeer duration = -1 }
+			}
+		346 = {
+			add_province_modifier = { name = landmark_eye_of_the_sahara duration = -1 }
 			}
 		349 = {
 			add_province_modifier = { name = landmark_altona_cemetery duration = -1 }
@@ -207,11 +216,23 @@ character_event = {
 		1174 = { 
 			add_province_modifier = { name = landmark_hortobagy duration = -1 }
 			}
+		1250 = { 
+			add_province_modifier = { name = landmark_erdene_zuu_monastery duration = -1 }
+			}
+		1254 = { 
+			add_province_modifier = { name = landmark_genghis_khan_statue duration = -1 }
+			}
+		1254 = { 
+			add_province_modifier = { name = landmark_zaisan_hill duration = -1 }
+			}
 		1310 = { 
 			add_province_modifier = { name = landmark_small_idol_mountain duration = -1 }
 			}
 		1314 = { 
 			add_province_modifier = { name = landmark_vasyugan_swamp duration = -1 }
+			}
+		1362 = { 
+			add_province_modifier = { name = landmark_jiayu_pass duration = -1 }
 			}
 		1399 = { 
 			add_province_modifier = { name = landmark_lost_city duration = -1 }
@@ -227,6 +248,9 @@ character_event = {
 			}
 		1425 = {
 			add_province_modifier = { name = landmark_toshka_canals duration = -1 }
+			}
+		1468 = {
+			add_province_modifier = { name = landmark_socotra_wilderness duration = -1 }
 			}
 		1482 = {
 			add_province_modifier = { name = landmark_sheikhs_road duration = -1 }
@@ -291,6 +315,9 @@ character_event = {
 		2270 = {
 			add_province_modifier = { name = landmark_alang_yard duration = -1 }
 			}
+		2301 = {
+			add_province_modifier = { name = landmark_norilsk duration = -1 }
+			}
 		2549 = {
 			add_province_modifier = { name = landmark_chara_sands duration = -1 }
 			}
@@ -300,6 +327,9 @@ character_event = {
 		2679 = {
 			add_province_modifier = { name = landmark_neom_line duration = -1 }
 			}
-			set_global_flag = landmarks_set
+		2721 = {
+			add_province_modifier = { name = landmark_yumen_pass duration = -1 }
+			}
+		set_global_flag = landmarks_set
 	}
 }
