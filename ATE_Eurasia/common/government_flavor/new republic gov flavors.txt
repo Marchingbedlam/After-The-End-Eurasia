@@ -1,0 +1,218 @@
+#MILITARY DICTATORSHIPS
+#####################################
+government_flavor = {
+	name = gov_aristocratic_republic_mil
+	graphics = GFX_evt_mounted_combat_day_hf
+	priority = 2
+	trigger = {
+		government = merchant_republic_government
+		has_character_modifier = lawful_dictator
+		calc_true_if = {
+			amount = 6
+			has_law = law_voting_power_1
+			has_law = banish_voting_power_1
+			has_law = execution_voting_power_1
+			has_law = revoke_title_voting_power_1
+			has_law = grant_title_voting_power_1
+			has_law = imprison_voting_power_1
+			has_law = war_voting_power_1
+		}
+	}
+}
+
+government_flavor = {
+	name = gov_plutocratic_republic_mil
+	graphics = GFX_evt_mounted_combat_day_hf
+	priority = 2
+	trigger = {
+		government = merchant_republic_government
+		has_character_modifier = lawful_dictator
+		OR = {
+			NOT = { has_dlc = "Conclave" }
+			calc_true_if = {
+				amount = 2
+				has_law = banish_voting_power_0
+				has_law = execution_voting_power_0
+				has_law = revoke_title_voting_power_0
+				has_law = grant_title_voting_power_0
+				has_law = imprison_voting_power_0
+				has_law = war_voting_power_0
+			}
+		}
+		NOT = {
+			calc_true_if = {
+				amount = 7
+				has_law = law_voting_power_0
+				has_law = banish_voting_power_0
+				has_law = execution_voting_power_0
+				has_law = revoke_title_voting_power_0
+				has_law = grant_title_voting_power_0
+				has_law = imprison_voting_power_0
+				has_law = war_voting_power_0
+			}
+		}
+	}	
+}
+
+government_flavor = {
+	name = gov_oligarchic_republic_mil
+	graphics = GFX_evt_mounted_combat_day_hf
+	priority = 2
+	trigger = {
+		government = merchant_republic_government
+		has_character_modifier = lawful_dictator
+		has_law = law_voting_power_0
+		has_law = banish_voting_power_0
+		has_law = execution_voting_power_0
+		has_law = revoke_title_voting_power_0
+		has_law = grant_title_voting_power_0
+		has_law = imprison_voting_power_0
+		has_law = war_voting_power_0
+	}
+}
+
+#UNLAWFUL DICTATORSHIPS
+#####################################
+government_flavor = {
+	name = gov_aristocratic_republic_unl
+	graphics = GFX_evt_impalement
+	priority = 2
+	trigger = {
+		government = merchant_republic_government
+		has_character_modifier = unlawfully_elected
+		calc_true_if = {
+			amount = 6
+			has_law = law_voting_power_1
+			has_law = banish_voting_power_1
+			has_law = execution_voting_power_1
+			has_law = revoke_title_voting_power_1
+			has_law = grant_title_voting_power_1
+			has_law = imprison_voting_power_1
+			has_law = war_voting_power_1
+		}
+	}
+}
+
+government_flavor = {
+	name = gov_plutocratic_republic_unl
+	graphics = GFX_evt_impalement
+	priority = 2
+	trigger = {
+		government = merchant_republic_government
+		has_character_modifier = unlawfully_elected
+		OR = {
+			NOT = { has_dlc = "Conclave" }
+			calc_true_if = {
+				amount = 2
+				has_law = banish_voting_power_0
+				has_law = execution_voting_power_0
+				has_law = revoke_title_voting_power_0
+				has_law = grant_title_voting_power_0
+				has_law = imprison_voting_power_0
+				has_law = war_voting_power_0
+			}
+		}
+		NOT = {
+			calc_true_if = {
+				amount = 7
+				has_law = law_voting_power_0
+				has_law = banish_voting_power_0
+				has_law = execution_voting_power_0
+				has_law = revoke_title_voting_power_0
+				has_law = grant_title_voting_power_0
+				has_law = imprison_voting_power_0
+				has_law = war_voting_power_0
+			}
+		}
+	}	
+}
+
+government_flavor = {
+	name = gov_oligarchic_republic_unl
+	graphics = GFX_evt_impalement
+	priority = 2
+	trigger = {
+		government = merchant_republic_government
+		has_character_modifier = unlawfully_elected
+		has_law = law_voting_power_0
+		has_law = banish_voting_power_0
+		has_law = execution_voting_power_0
+		has_law = revoke_title_voting_power_0
+		has_law = grant_title_voting_power_0
+		has_law = imprison_voting_power_0
+		has_law = war_voting_power_0
+	}
+}
+
+#IMPERIAL DICTATORSHIPS
+#####################################
+government_flavor = {
+	name = gov_aristocratic_republic_imp
+	graphics = GFX_evt_market_byzantine
+	priority = 2
+	trigger = {
+		government = merchant_republic_government
+		has_law = ze_administration_laws_rep_2
+		calc_true_if = {
+			amount = 6
+			has_law = law_voting_power_1
+			has_law = banish_voting_power_1
+			has_law = execution_voting_power_1
+			has_law = revoke_title_voting_power_1
+			has_law = grant_title_voting_power_1
+			has_law = imprison_voting_power_1
+			has_law = war_voting_power_1
+		}
+	}
+}
+
+government_flavor = {
+	name = gov_plutocratic_republic_imp
+	graphics = GFX_evt_market_byzantine
+	priority = 2
+	trigger = {
+		government = merchant_republic_government
+		has_law = ze_administration_laws_rep_2
+		OR = {
+			NOT = { has_dlc = "Conclave" }
+			calc_true_if = {
+				amount = 2
+				has_law = banish_voting_power_0
+				has_law = execution_voting_power_0
+				has_law = revoke_title_voting_power_0
+				has_law = grant_title_voting_power_0
+				has_law = imprison_voting_power_0
+				has_law = war_voting_power_0
+			}
+		}
+		NOT = {
+			calc_true_if = {
+				amount = 7
+				has_law = law_voting_power_0
+				has_law = banish_voting_power_0
+				has_law = execution_voting_power_0
+				has_law = revoke_title_voting_power_0
+				has_law = grant_title_voting_power_0
+				has_law = imprison_voting_power_0
+				has_law = war_voting_power_0
+			}
+		}
+	}	
+}
+
+government_flavor = {
+	name = gov_oligarchic_republic_imp
+	graphics = GFX_evt_market_byzantine
+	priority = 2
+	trigger = {
+		government = merchant_republic_government
+		has_law = ze_administration_laws_rep_2
+		has_law = law_voting_power_0
+		has_law = banish_voting_power_0
+		has_law = execution_voting_power_0
+		has_law = revoke_title_voting_power_0
+		has_law = grant_title_voting_power_0
+		has_law = imprison_voting_power_0
+		has_law = war_voting_power_0
+	}
+}
