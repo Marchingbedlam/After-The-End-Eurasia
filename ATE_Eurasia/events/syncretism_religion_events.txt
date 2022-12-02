@@ -1,7 +1,7 @@
 # Syncretic rulers can pick a random sympathy.
 character_event = {
 	id = sync.1
-	desc = EVTDESSYNC1
+	desc = EVTDESCSYNC1
 	
 	picture = GFX_evt_library
 	border = GFX_event_normal_frame_religion
@@ -13,6 +13,12 @@ character_event = {
 		    text = EVTOPTASYNC1
 			trigger = {
 				is_alternate_start = no
+			}
+		}
+		name = {
+			text = EVTOPTASYNC1_ALT
+			trigger = {
+				is_alternate_start = yes
 			}
 		}
 		hidden_tooltip = { character_event = { id = sync.2 } }
@@ -208,7 +214,7 @@ character_event = {
 				factor = 0 
 				liege = { 
 					OR = { 
-						trait = sympathy_old_world_cultist
+						trait = sympathy_old_world_cults
 						trait = sympathy_scholastic
 						trait = sympathy_vernacular
 						trait = sympathy_universalist
@@ -219,7 +225,7 @@ character_event = {
 				factor = 0 
 				top_liege = { 
 					OR = { 
-						trait = sympathy_old_world_cultist
+						trait = sympathy_old_world_cults
 						trait = sympathy_scholastic
 						trait = sympathy_vernacular
 						trait = sympathy_universalist
@@ -230,7 +236,7 @@ character_event = {
 				factor = 0.25
 				spouse = { 
 					OR = { 
-						trait = sympathy_old_world_cultist
+						trait = sympathy_old_world_cults
 						trait = sympathy_scholastic
 						trait = sympathy_vernacular
 						trait = sympathy_universalist
@@ -891,7 +897,7 @@ character_event = {
 		trigger = {
 			NOT = { religion_group = old_world_cultist_group } #Random World safety check.
 		}
-		add_trait = sympathy_old_world_cultist
+		add_trait = sympathy_old_world_cults
 		clr_character_flag = flag_picking_sympathy
 		ai_chance = { 
 			factor = 25 
@@ -986,19 +992,19 @@ character_event = {
 			modifier = { 
 				factor = 0 
 				liege = { 
-					trait = sympathy_old_world_cultist 
+					trait = sympathy_old_world_cults 
 				}
 			}
 			modifier = { 
 				factor = 0 
 				top_liege = { 
-					trait = sympathy_old_world_cultist  
+					trait = sympathy_old_world_cults  
 				}
 			}
 			modifier = { 
 				factor = 0.25
 				spouse = { 
-					trait = sympathy_old_world_cultist 
+					trait = sympathy_old_world_cults 
 				}
 			}
 			modifier = { 
@@ -1092,19 +1098,19 @@ character_event = {
 			modifier = { 
 				factor = 0 
 				liege = { 
-					trait = sympathy_old_world_cultist 
+					trait = sympathy_old_world_cults 
 				}
 			}
 			modifier = { 
 				factor = 0 
 				top_liege = { 
-					trait = sympathy_old_world_cultist  
+					trait = sympathy_old_world_cults  
 				}
 			}
 			modifier = { 
 				factor = 0.25
 				spouse = { 
-					trait = sympathy_old_world_cultist 
+					trait = sympathy_old_world_cults 
 				}
 			}
 			modifier = { 
@@ -1198,19 +1204,19 @@ character_event = {
 			modifier = { 
 				factor = 0 
 				liege = { 
-					trait = sympathy_old_world_cultist 
+					trait = sympathy_old_world_cults 
 				}
 			}
 			modifier = { 
 				factor = 0 
 				top_liege = { 
-					trait = sympathy_old_world_cultist  
+					trait = sympathy_old_world_cults  
 				}
 			}
 			modifier = { 
 				factor = 0.25
 				spouse = { 
-					trait = sympathy_old_world_cultist 
+					trait = sympathy_old_world_cults 
 				}
 			}
 			modifier = { 
