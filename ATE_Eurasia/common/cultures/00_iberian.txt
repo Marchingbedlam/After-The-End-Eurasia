@@ -144,74 +144,7 @@ iberian = {
 		
 		modifier = default_culture_modifier
 	}
-	leonese = {
-		graphical_cultures = { southerngfx }
-		
-		color = { 0.67 0.22 0.17 }
-		
-		male_names = {
-			Aarón_Aaron Abel Abraham Adán_Adam Adrián_Adrian Adolfo_Adolf Agustín_Augustine Ahmed Alberto_Albert Alejandro_Alexander Alex_Alexis Alfonso Alfredo_Alfred Ali Alonso_Alfonso Álvaro_Oliver Andrés_Andrew Ángel_Angel "Ángel Luis" Antonio_Anthony "Antonio Jesús" "Antonio José" "Antonio Manuel" Armando_Hermann Arturo_Arthur Aurelio_Aurelius 
-			Bartolomé_Bartholomew Benito_Benedict Benjamín_Benjamin Bernardo_Bernard Blas_Blaise Borja Bruno 
-			Cándido Carlos_Charles "Carlos Alberto" "Carlos Javier" Carmelo César_Caesar Cristian_Christian Cristóbal_Christopher 
-			Damián_Damian Daniel Dario_Darius David Diego_James Dionisio_Denis Domingo_Dominic 
-			Edgar Eduardo_Edward Elías_Elijah Emiliano_Emil Emilio_Emil Enrique_Henry Enzo Eric Ernesto_Ernest Esteban_Stephen Eugenio_Eugene Eusebio_Eusebius 
-			Federico_Frederick Felipe_Philip Félix_Felix Fermín Fernando_Ferdinand Florencio_Florent Francisco_Francis "Francisco Antonio" "Francisco Javier" "Francisco Jesús" "Francisco José" "Francisco Manuel"
-			Gabriel Gerardo_Gerard Germán_German Ginés Gonzalo Gregorio_Gregory Guillermo_William Gustavo_Gustav 
-			Hector Hugo_Hugh 
-			Ian_John Ignacio_Ignatius Íñigo_Inigo Isaac Isidoro_Isidore Ismael Israel Ivan_John 
-			Jacinto_Hyacinth Jaime_James Jairo Javier_Xavier Jerónimo_Hieronymus Jesús_Jesus "Jesús Manuel" "Jesús María" Joan_John Joaquín_Joachim Joel Jonathan Jordi_George Jorge_George José_Joseph "José Alberto" "José Ángel" "José Antonio" "José Carlos" "José David" "José Enrique" "José Francisco" "José Ignacio" "José Javier" "José Joaquín" "José Juan" "José Luis" "José Manuel" "José María" "José Miguel" "José Vicente" Juan_John "Juan Antonio" "Juan Bautista" "Juan Carlos" "Juan Francisco" "Juan Ignacio" "Juan Jesús" "Juan José" "Juan Luis" "Juan Manuel" "Juan María" "Juan Miguel" "Juan Pablo" "Juan Pedro" "Juan Ramón" Julián_Julian Julio_Jules "Julio Cesar" Justo_Justus 
-			Kevin 
-			León_Leo Leonardo_Leonard Lorenzo_Lawrence Lucas_Luke Luis_Louis "Luis Alberto" "Luis Fernando" "Luis Manuel" "Luis Miguel" 
-			Manuel_Emmanuel "Manuel Ángel" "Manuel Jesús" Marc_Mark Marcelino Marco_Mark "Marco Antonio" Marcos_Mark Mariano Mario_Marius Martín_Martin Mateo_Matthew Matías_Matthew Miguel_Michael "Miguel Angel" Mohamed_Muhammad Moisés_Moses 
-			Omar Óscar_Oscar 
-			Pablo_Paul Pascual_Pascal Pedro_Peter "Pedro Antonio" "Pedro José" "Pedro Luis" 
-			Rachid_Rashid Rafael_Raphael Ramón_Raymond Raúl_Rudolf Ricardo_Richard Roberto_Robert Rodrigo_Roderick Roger Román_Roman Rubén_Robin 
-			Said Salvador Samuel Santiago_James Santos Saúl_Saul Sebastián_Sebastian Sergio_Sergius Sergi_Sergius 
-			Teodoro_Theodore Tomás_Thomas 
-			Valentín_Valentine Vicente_Vicent Víctor_Victor Víctoriano_Victor "Víctor Manuel" 
-			Xavier 
-			Youssef_Joseph 
-		}
-		female_names = {
-			Abril_April Adela Adoración Adriana África Águeda_Agatha Aída Ainara Aitana Agustina_Augusta Alba Alejandra_Alexandra Alicia_Alice Almudena Amalia_Amelia Amanda Amelia Amparo Ana_Anne "Ana Belén" "Ana Isabel" "Ana María" Andrea Ángela_Angela Ángeles_Angela Anna_Anne Antonia Araceli Aránzazu Ariadna_Ariane Asunción Aurora 
-			Bárbara_Barbara Beatriz_Beatrice Begoña_Begonia Belén Berta_Bertha Blanca_Blanche 
-			Candela Carla Carlota_Charlotte Carmen "Carmen María" Carolina_Caroline Catalina_Catherine Cecilia Celia Clara Claudia Concepción Consuelo Cristina_Christina 
-			Daniela Diana Dolores 
-			Elena_Helen Elisa_Elizabeth Elisabeth_Elizabeth Elsa Elvira Emilia_Emily Emma Encarnación Enriqueta_Henriette Erika Esperanza Estefanía_Stephania Estela_Stella Ester_Esther Estrella_Stella Eugenia Eulalia Eva_Eve "Eva María" 
-			Fátima_Fatima Felisa Florentina_Florence Francisca_Frances 
-			Gabriela Gema_Gemma Gemma Gloria Guadalupe 
-			Herminia 
-			Inés_Agnes Inmaculada Irene Iria Iris Isabel_Elizabeth "Isabel María"
-			Jennifer Jessica Jimena Joaquina Josefa_Josepha Josefina_Josepha Juana_Joan "Juana María" Judit_Judith Julia Juliana 
-			Khadija 
-			Laia Lara Laura Leire Leonor_Eleanor Leticia_Laetitia Lidia_Lydia Lola Lorena Lourdes Lucía Luisa 
-			Macarena Magdalena_Magdalene Manuela Mar Margarita_Margaret María_Mary "María Amparo" "María Ángeles" "María Antonia" "María Aránzazu" "María Asunción" "María Begoña" "María Belén" "María Carmen" "María Concepción" "María Consuelo" "María Cristina" "María Cruz" "María Dolores" "María Elena" "María Encarnación" "María Esperanza" "María Esther" "María Eugenia" "María Francisca" "María Gloria" "María Inmaculada" "María Isabel" "María Jesús" "María José" "María Josefa" "María Lourdes" "María Luisa" "María Luz" "María Magdalena" "María Mar" "María Mercedes" "María Milagros" "María Montserrat" Mariana_Mary-Ann "María Nieves" "María Paz" "María Pilar" "María Remedios" "María Reyes" "María Rocío" "María Rosa" "María Rosario" "María Soledad" "María Teresa" "María Trinidad" "María Victoria" "María Yolanda" Marina Marta_Martha Martina Matilde_Matilda Mercedes_Mercy Milagros Mireia_Mireille Miriam_Mary Mirian Mónica_Monica Montserrat 
-			Nadia Natalia Natividad Nerea Nieves Noa Noelia Noemi Nora Nuria_Núria 
-			Ofelia_Ophelia Olga Olivia 
-			Paloma Patricia Paula Piedad_Piety Pilar Purificación 
-			Rafaela Raquel_Rachel Rebeca_Rebecca Remedios Rocío Rosa_Rose Rosalía_Rosalie "Rosa María" Rosario Ruth 
-			Sandra_Alexandra Sara_Sarah Saray Sheila Silvia Sofía_Sophia Soledad Sonia Soraya Susana_Susan 
-			Tamara Tatiana Tania Teodora_Theodora Teresa_Theresa Trinidad_Trinity 
-			Valeria Valentina Vanesa_Vanessa Vera Verónica_Veronica Vicenta Victoria Virginia 
-			Yaiza Yolanda 
-		}
-		
-		from_dynasty_prefix = "de "
-		male_patronym = "ez"
-		female_patronym = "ez"
-		grammar_transform = spanish
-		
-		pat_grf_name_chance = 45
-		mat_grf_name_chance = 15
-		father_name_chance = 30
-		
-		pat_grm_name_chance = 40
-		mat_grm_name_chance = 10
-		mother_name_chance = 40
-		
-		modifier = default_culture_modifier
-	}
-	asturian = {
+	asturleonese = {
 		graphical_cultures = { southerngfx }
 		
 		color = { 0 0.6 0.7 }
