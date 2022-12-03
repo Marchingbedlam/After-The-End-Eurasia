@@ -244,24 +244,78 @@ castle = {
 		potential = {
 			OR = {
 				has_building = ca_government_monastery_1
-				AND = {
-					culture_group = tibetic
-					religion_group = buddhist_group
+				OR = {
+					AND = {
+						culture_group = tibetic
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture = nepali
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture = kashmiri
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture_group = mongolian_group
+						religion = gelugpa
+					}
+					AND = {
+						culture = tuvan
+						religion = gelugpa
+					}
 				}
 			}
 		}
 		is_active_trigger = {
-			AND = {
-				culture_group = tibetic
-				religion_group = buddhist_group
+			OR = {
+					AND = {
+						culture_group = tibetic
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture = nepali
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture = kashmiri
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture_group = mongolian_group
+						religion = gelugpa
+					}
+					AND = {
+						culture = tuvan
+						religion = gelugpa
+					}
 			}
 		}
 		trigger = {
 			TECH_CITY_CONSTRUCTION = 0
-			AND = {
-					culture_group = tibetic
-					religion_group = buddhist_group
-			}
+			OR = {
+					AND = {
+						culture_group = tibetic
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture = nepali
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture = kashmiri
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture_group = mongolian_group
+						religion = gelugpa
+					}
+					AND = {
+						culture = tuvan
+						religion = gelugpa
+					}
+				}
 		}
 		gold_cost = 150
 		build_time = 547
@@ -281,24 +335,78 @@ castle = {
 			OR = {
 				has_building = ca_government_monastery_1
 				has_building = ca_government_monastery_2
-				AND = {
-					culture_group = tibetic
-					religion_group = buddhist_group
+				OR = {
+					AND = {
+						culture_group = tibetic
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture = nepali
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture = kashmiri
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture_group = mongolian_group
+						religion = gelugpa
+					}
+					AND = {
+						culture = tuvan
+						religion = gelugpa
+					}
 				}
 			}
 		}
 		is_active_trigger = {
-			AND = {
-				culture_group = tibetic
-				religion_group = buddhist_group
-			}
+			OR = {
+					AND = {
+						culture_group = tibetic
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture = nepali
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture = kashmiri
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture_group = mongolian_group
+						religion = gelugpa
+					}
+					AND = {
+						culture = tuvan
+						religion = gelugpa
+					}
+				}
 		}
 		trigger = {
 			TECH_CITY_CONSTRUCTION = 1
-			AND = {
-				culture_group = tibetic
-				religion_group = buddhist_group
-			}
+			OR = {
+					AND = {
+						culture_group = tibetic
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture = nepali
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture = kashmiri
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture_group = mongolian_group
+						religion = gelugpa
+					}
+					AND = {
+						culture = tuvan
+						religion = gelugpa
+					}
+				}
 		}
 		prerequisites = { ca_wall_1 }
 		upgrades_from = ca_government_monastery_1
@@ -321,24 +429,78 @@ castle = {
 				has_building = ca_government_monastery_1
 				has_building = ca_government_monastery_2
 				has_building = ca_government_monastery_3
-				AND = {
-					culture_group = tibetic
-					religion_group = buddhist_group
+				OR = {
+					AND = {
+						culture_group = tibetic
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture = nepali
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture = kashmiri
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture_group = mongolian_group
+						religion_group = gelugpa
+					}
+					AND = {
+						culture = tuvan
+						religion = gelugpa
+					}
 				}
 			}
 		}
 		is_active_trigger = {
-			AND = {
-				culture_group = tibetic
-				religion_group = buddhist_group
-			}
+			OR = {
+					AND = {
+						culture_group = tibetic
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture = nepali
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture = kashmiri
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture_group = mongolian_group
+						religion_group = gelugpa
+					}
+					AND = {
+						culture = tuvan
+						religion = gelugpa
+					}
+				}
 		}
 		trigger = {
 			TECH_CITY_CONSTRUCTION = 2
-			AND = {
-				culture_group = tibetic
-				religion_group = buddhist_group
-			}
+			OR = {
+					AND = {
+						culture_group = tibetic
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture = nepali
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture = kashmiri
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture_group = mongolian_group
+						religion_group = gelugpa
+					}
+					AND = {
+						culture = tuvan
+						religion = gelugpa
+					}
+				}
 		}
 		upgrades_from = ca_government_monastery_2
 		gold_cost = 300
@@ -361,24 +523,78 @@ castle = {
 				has_building = ca_government_monastery_2
 				has_building = ca_government_monastery_3
 				has_building = ca_government_monastery_4
-				AND = {
-					culture_group = tibetic
-					religion_group = buddhist_group
+				OR = {
+					AND = {
+						culture_group = tibetic
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture = nepali
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture = kashmiri
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture_group = mongolian_group
+						religion = gelugpa
+					}
+					AND = {
+						culture = tuvan
+						religion = gelugpa
+					}
 				}
 			}
 		}
 		is_active_trigger = {
-			AND = {
-				culture_group = tibetic
-				religion_group = buddhist_group
-			}
+			OR = {
+					AND = {
+						culture_group = tibetic
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture = nepali
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture = kashmiri
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture_group = mongolian_group
+						religion = gelugpa
+					}
+					AND = {
+						culture = tuvan
+						religion = gelugpa
+					}
+				}
 		}
 		trigger = {
 			TECH_CITY_CONSTRUCTION = 4
-			AND = {
-				culture_group = tibetic
-				religion_group = buddhist_group
-			}
+			OR = {
+					AND = {
+						culture_group = tibetic
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture = nepali
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture = kashmiri
+						religion_group = buddhist_group
+					}
+					AND = {
+						culture_group = mongolian_group
+						religion = gelugpa
+					}
+					AND = {
+						culture = tuvan
+						religion = gelugpa
+					}
+				}
 		}
 		upgrades_from = ca_government_monastery_3
 		gold_cost = 400
