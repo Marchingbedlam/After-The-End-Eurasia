@@ -170,7 +170,7 @@ feudal_governments = {
 			NOT = { is_government_potential = order_government }
 			OR = {
 				AND = { 
-					culture_group = tibetan
+					culture_group = tibetic
 					religion_group = buddhist_group
 					higher_tier_than = BARON
 				}
