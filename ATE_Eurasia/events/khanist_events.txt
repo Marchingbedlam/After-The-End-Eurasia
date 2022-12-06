@@ -1,0 +1,2302 @@
+###################################
+#
+# Khanist stuffs
+# - OvO Events
+#
+###################################
+
+# Stolen from Henrik Eklund
+
+namespace = OVO
+
+# You commission an ovoo
+character_event = {
+	id = OVO.500
+	desc = EVTDESC_OVO_500
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = { # Based on one of your traits
+		name = EVTOPTA_OVO_500
+		
+		custom_tooltip = {
+			text = runestone_traits
+			hidden_tooltip = { 
+				character_event = { id = OVO.501 }
+			}
+		}
+	}
+	option = { # In memory of father
+		name = EVTOPTB_OVO_500
+		trigger = {
+			father_even_if_dead = {
+				is_alive = no
+			}
+		}
+		if = {
+			limit = { father_even_if_dead = { death_reason = death_natural } }
+			hidden_tooltip = { narrative_event = { id = OVO.510 days = 60 random = 10 } }
+		}
+		if = {
+			limit = { father_even_if_dead = { death_reason = death_battle } }
+			hidden_tooltip = { narrative_event = { id = OVO.511 days = 60 random = 10 } }
+		}
+		if = {
+			limit = { 
+				father_even_if_dead = {
+					death_execution_trigger = yes
+					NOT = { killer = { character = ROOT } }
+				} 
+			}
+			hidden_tooltip = { narrative_event = { id = OVO.512 days = 60 random = 10 } }
+		}
+		if = {
+			limit = { 
+				father_even_if_dead = { 
+					death_murder_known_trigger = yes
+					NOT = { killer = { character = ROOT } }
+				}
+			}
+			hidden_tooltip = { narrative_event = { id = OVO.513 days = 60 random = 10 } }
+		}
+		if = {
+			limit = { 
+				father_even_if_dead = { 
+					OR = {
+						death_accident_trigger = yes
+						death_murder_unknown_trigger = yes
+					} 
+				}
+			}
+			hidden_tooltip = { narrative_event = { id = OVO.515 days = 60 random = 10 } }
+		}
+		if = {
+			limit = { 
+				father_even_if_dead = {
+					death_reason = death_dungeon
+					NOT = { killer = { character = ROOT } }
+				} 
+			}
+			hidden_tooltip = { narrative_event = { id = OVO.516 days = 60 random = 10 } }
+		}
+		if = {
+			limit = { 
+				father_even_if_dead = {
+					death_sacrificed_trigger = yes
+					NOT = { killer = { character = ROOT } }
+				} 
+			}
+			hidden_tooltip = { narrative_event = { id = OVO.517 days = 60 random = 10 } }
+		}
+		if = {
+			limit = { father_even_if_dead = { death_reason = death_duel } }
+			hidden_tooltip = { narrative_event = { id = OVO.518 days = 60 random = 10 } }
+		}
+		if = {
+			limit = { father_even_if_dead = { death_suicide_trigger = yes } }
+			hidden_tooltip = { narrative_event = { id = OVO.519 days = 60 random = 10 } }
+		}
+		if = {
+			limit = { 
+				father_even_if_dead = { 
+					OR = {
+						and = {
+							death_murder_known_trigger = yes
+							killer = { character = ROOT }
+						}
+						and = {
+							death_execution_trigger = yes
+							killer = { character = ROOT }
+						}
+						and = {
+							death_reason = death_dungeon 
+							killer = { character = ROOT }
+						}
+						and = {
+							death_sacrificed_trigger = yes
+							killer = { character = ROOT }
+						}
+					}
+				} 
+			}
+			hidden_tooltip = { narrative_event = { id = OVO.520 days = 60 random = 10 } }
+		}
+		if = {
+			limit = {
+				NOT = {
+					father_even_if_dead = {
+						OR = {
+							death_reason = death_natural
+							death_reason = death_battle
+							death_execution_trigger = yes
+							death_murder_known_trigger = yes
+							death_murder_unknown_trigger = yes
+							death_accident_trigger = yes
+							death_reason = death_dungeon
+							death_sacrificed_trigger = yes
+							death_reason = death_duel
+							death_suicide_trigger = yes
+						}
+					}
+				}
+			}
+			hidden_tooltip = { narrative_event = { id = OVO.521 days = 60 random = 10 } }
+		}
+		custom_tooltip = { text = runestone_carved }
+	}
+	option = { # In memory of mother
+		name = EVTOPTC_OVO_500
+		trigger = {
+			mother_even_if_dead = {
+				is_alive = no
+			}
+		}
+		if = {
+			limit = { mother_even_if_dead = { death_reason = death_natural } }
+			hidden_tooltip = { narrative_event = { id = OVO.530 days = 60 random = 10 } }
+		}
+		if = {
+			limit = { 
+				mother_even_if_dead = {
+					death_execution_trigger = yes
+					NOT = { killer = { character = ROOT } }
+				} 
+			}
+			hidden_tooltip = { narrative_event = { id = OVO.531 days = 60 random = 10 } }
+		}
+		if = {
+			limit = { 
+				mother_even_if_dead = { 
+					death_murder_known_trigger = yes
+					NOT = { killer = { character = ROOT } }
+				}
+			}
+			hidden_tooltip = { narrative_event = { id = OVO.532 days = 60 random = 10 } }
+		}
+		if = {
+			limit = { 
+				mother_even_if_dead = { 
+					OR = {
+						death_accident_trigger = yes
+						death_murder_unknown_trigger = yes
+					}
+				}
+			}
+			hidden_tooltip = { narrative_event = { id = OVO.534 days = 60 random = 10 } }
+		}
+		if = {
+			limit = { 
+				mother_even_if_dead = { 
+					death_reason = death_dungeon
+					NOT = { killer = { character = ROOT } }
+				} 
+			}
+			hidden_tooltip = { narrative_event = { id = OVO.535 days = 60 random = 10 } }
+		}
+		if = {
+			limit = { 
+				mother_even_if_dead = {
+					death_sacrificed_trigger = yes
+					NOT = { killer = { character = ROOT } }
+				} 
+			}
+			hidden_tooltip = { narrative_event = { id = OVO.536 days = 60 random = 10 } }
+		}
+		if = {
+			limit = { mother_even_if_dead = { death_suicide_trigger = yes } }
+			hidden_tooltip = { narrative_event = { id = OVO.537 days = 60 random = 10 } }
+		}
+		if = {
+			limit = { 
+				mother_even_if_dead = { 
+					OR = {
+						and = {
+							death_murder_known_trigger = yes
+							killer = { character = ROOT }
+						}
+						and = {
+							death_execution_trigger = yes
+							killer = { character = ROOT }
+						}
+						and = {
+							death_reason = death_dungeon 
+							killer = { character = ROOT }
+						}
+						and = {
+							death_sacrificed_trigger = yes
+							killer = { character = ROOT }
+						}
+					}
+				} 
+			}
+			hidden_tooltip = { narrative_event = { id = OVO.538 days = 60 random = 10 } }
+		}
+		if = {
+			limit = {
+				NOT = {
+					mother_even_if_dead = { 
+						OR = {
+							death_reason = death_natural
+							death_execution_trigger = yes
+							death_murder_known_trigger = yes
+							death_murder_unknown_trigger = yes
+							death_accident_trigger = yes
+							death_reason = death_dungeon
+							death_sacrificed_trigger = yes
+							death_suicide_trigger = yes
+						}
+					}
+				}
+			}
+			hidden_tooltip = { narrative_event = { id = OVO.539 days = 60 random = 10 } }
+		}
+		custom_tooltip = { text = runestone_carved }
+	}
+}
+
+# Based on one of your traits
+character_event = {
+	id = OVO.501
+	desc = EVTDESC_OVO_501
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = { # Generic
+		name = EVTOPTA_OVO_501
+		trigger = {
+			is_smart_trigger = no
+			is_dumb_trigger = no
+			is_strong_trigger = no
+			NOT = {
+				trait = lunatic
+				trait = drunkard
+				trait = fair
+				trait = dwarf
+				trait = scholar
+				trait = impaler
+				trait = poet
+				trait = lustful
+				trait = gluttonous
+				trait = charitable
+				trait = kind
+				trait = proud
+				trait = humble
+				trait = brave
+				trait = just
+				trait = zealous
+				trait = cruel
+				trait = possessed
+			}
+		}
+		
+		custom_tooltip = {
+			text = runestone_carved
+			hidden_tooltip = { narrative_event = { id = OVO.550 days = 60 random = 10 } }
+		}
+	}
+	option = {
+		name = EVTOPTB_OVO_501
+		tooltip_info = lunatic
+		trigger = {
+			trait = lunatic
+		}
+		
+		custom_tooltip = {
+			text = runestone_carved
+			hidden_tooltip = { narrative_event = { id = OVO.551 days = 60 random = 10 } }
+		}
+	}
+	option = {
+		name = EVTOPTC_OVO_501
+		tooltip_info = drunkard
+		trigger = {
+			trait = drunkard
+			NOT = {
+				trait = lunatic
+				trait = possessed
+				is_dumb_trigger = yes
+			}
+		}
+		
+		custom_tooltip = { 
+			text = runestone_carved
+			hidden_tooltip = { narrative_event = { id = OVO.552 days = 60 random = 10 } }
+		}
+	}
+	option = {
+		name = EVTOPTD_OVO_501
+		tooltip_info = fair
+		trigger = {
+			trait = fair
+			NOT = {
+				trait = lunatic
+				trait = possessed
+				is_dumb_trigger = yes
+			}
+		}
+		
+		custom_tooltip = {
+			text = runestone_carved
+			hidden_tooltip = { narrative_event = { id = OVO.553 days = 60 random = 10 } }
+		}
+	}
+	option = {
+		name = EVTOPTE_OVO_501
+		tooltip_info = dwarf
+		trigger = {
+			trait = dwarf
+			NOT = {
+				trait = lunatic
+				trait = possessed
+				is_dumb_trigger = yes
+			}
+		}
+		
+		custom_tooltip = {
+			text = runestone_carved
+			hidden_tooltip = { narrative_event = { id = OVO.554 days = 60 random = 10 } }
+		}
+	}
+	option = {
+		name = EVTOPTF_OVO_501
+		tooltip_info_custom = available_due_to_smart
+		trigger = {
+			is_smart_trigger = yes
+			NOT = {
+				trait = lunatic
+				trait = possessed
+				is_dumb_trigger = yes
+			}
+		}
+		
+		custom_tooltip = {
+			text = runestone_carved
+			hidden_tooltip = { narrative_event = { id = OVO.555 days = 60 random = 10 } }
+		}
+	}
+	option = {
+		name = EVTOPTI_OVO_501
+		tooltip_info = imbecile
+		trigger = {
+			is_dumb_trigger = yes
+		}
+		
+		custom_tooltip = { 
+			text = runestone_carved
+			hidden_tooltip = { narrative_event = { id = OVO.556 days = 60 random = 10 } }
+		}
+	}
+	option = {
+		name = EVTOPTJ_OVO_501
+		tooltip_info = strong
+		trigger = {
+			is_strong_trigger = yes
+			NOT = {
+				trait = lunatic
+				trait = possessed
+				is_dumb_trigger = yes
+			}
+		}
+		
+		custom_tooltip = {
+			text = runestone_carved
+			hidden_tooltip = { narrative_event = { id = OVO.557 days = 60 random = 10 } }
+		}
+	}
+	option = {
+		name = EVTOPTK_OVO_501
+		tooltip_info = scholar
+		trigger = {
+			trait = scholar
+			NOT = {
+				trait = lunatic
+				trait = possessed
+				is_dumb_trigger = yes
+			}
+		}
+		
+		custom_tooltip = {
+			text = runestone_carved
+			hidden_tooltip = { narrative_event = { id = OVO.558 days = 60 random = 10 } }
+		}
+	}
+	option = {
+		name = EVTOPTL_OVO_501
+		tooltip_info = impaler
+		trigger = {
+			trait = impaler
+			NOT = {
+				trait = lunatic
+				trait = possessed
+				is_dumb_trigger = yes
+			}
+		}
+		
+		custom_tooltip = {
+			text = runestone_carved
+			hidden_tooltip = { narrative_event = { id = OVO.559 days = 60 random = 10 } }
+		}
+	}
+	option = {
+		name = EVTOPTM_OVO_501
+		tooltip_info = poet
+		trigger = {
+			trait = poet
+			NOT = {
+				trait = lunatic
+				trait = possessed
+				is_dumb_trigger = yes
+			}
+		}
+		
+		custom_tooltip = {
+			text = runestone_carved
+			hidden_tooltip = { narrative_event = { id = OVO.560 days = 60 random = 10 } }
+		}
+	}
+	option = {
+		name = EVTOPTN_OVO_501
+		tooltip_info = lustful
+		trigger = {
+			trait = lustful
+			NOT = {
+				trait = lunatic
+				trait = possessed
+				is_dumb_trigger = yes
+			}
+		}
+		
+		custom_tooltip = {
+			text = runestone_carved
+			hidden_tooltip = { narrative_event = { id = OVO.561 days = 60 random = 10 } }
+		}
+	}
+	option = {
+		name = EVTOPTO_OVO_501
+		tooltip_info = gluttonous
+		trigger = {
+			trait = gluttonous
+			NOT = {
+				trait = lunatic
+				trait = possessed
+				is_dumb_trigger = yes
+			}
+		}
+		
+		custom_tooltip = {
+			text = runestone_carved
+			hidden_tooltip = { narrative_event = { id = OVO.562 days = 60 random = 10 } }
+		}
+	}
+	option = {
+		name = EVTOPTP_OVO_501
+		tooltip_info = charitable
+		trigger = {
+			trait = charitable
+			NOT = {
+				trait = lunatic
+				trait = possessed
+				is_dumb_trigger = yes
+			}
+		}
+		
+		custom_tooltip = {
+			text = runestone_carved
+			hidden_tooltip = { narrative_event = { id = OVO.563 days = 60 random = 10 } }
+		}
+	}
+	option = {
+		name = EVTOPTQ_OVO_501
+		tooltip_info = kind
+		trigger = {
+			trait = kind
+			NOT = {
+				trait = lunatic
+				trait = possessed
+				is_dumb_trigger = yes
+			}
+		}
+		
+		custom_tooltip = {
+			text = runestone_carved
+			hidden_tooltip = { narrative_event = { id = OVO.564 days = 60 random = 10 } }
+		}
+	}
+	option = {
+		name = EVTOPTR_OVO_501
+		tooltip_info = proud
+		trigger = {
+			trait = proud
+			NOT = {
+				trait = lunatic
+				trait = possessed
+				is_dumb_trigger = yes
+			}
+		}
+		
+		custom_tooltip = {
+			text = runestone_carved
+			hidden_tooltip = { narrative_event = { id = OVO.565 days = 60 random = 10 } }
+		}
+	}
+	option = {
+		name = EVTOPTS_OVO_501
+		tooltip_info = humble
+		trigger = {
+			trait = humble
+			NOT = {
+				trait = lunatic
+				trait = possessed
+				is_dumb_trigger = yes
+			}
+		}
+		
+		custom_tooltip = { 
+			text = runestone_carved
+			hidden_tooltip = { narrative_event = { id = OVO.566 days = 60 random = 10 } }
+		}
+	}
+	option = {
+		name = EVTOPTT_OVO_501
+		tooltip_info = brave
+		trigger = {
+			trait = brave
+			NOT = {
+				trait = lunatic
+				trait = possessed
+				is_dumb_trigger = yes
+			}
+		}
+		
+		custom_tooltip = {
+			text = runestone_carved
+			hidden_tooltip = { narrative_event = { id = OVO.567 days = 60 random = 10 } }
+		}
+	}
+	option = {
+		name = EVTOPTU_OVO_501
+		tooltip_info = just
+		trigger = {
+			trait = just
+			NOT = {
+				trait = lunatic
+				trait = possessed
+				is_dumb_trigger = yes
+			}
+		}
+		
+		custom_tooltip = { 
+			text = runestone_carved
+			hidden_tooltip = { narrative_event = { id = OVO.568 days = 60 random = 10 } }
+		}
+	}
+	option = {
+		name = EVTOPTV_OVO_501
+		tooltip_info = zealous
+		trigger = {
+			trait = zealous
+			OR = {
+				religion = khanist
+				religion = khanist_reformed
+			}
+			NOT = {
+				trait = lunatic
+				trait = possessed
+				is_dumb_trigger = yes
+			}
+		}
+
+		custom_tooltip = {
+			text = runestone_carved
+			hidden_tooltip = { narrative_event = { id = OVO.569 days = 60 random = 10 } }
+		}
+	}
+	option = {
+		name = EVTOPTX_OVO_501
+		tooltip_info = cruel
+		trigger = {
+			trait = cruel
+			NOT = {
+				trait = lunatic
+				trait = possessed
+				is_dumb_trigger = yes
+			}
+		}
+		custom_tooltip = { 
+			text = runestone_carved
+			hidden_tooltip = { narrative_event = { id = OVO.571 days = 60 random = 10 } }
+		}
+	}
+	option = {
+		name = EVTOPTY_OVO_501
+		tooltip_info = possessed
+		trigger = {
+			trait = possessed
+		}
+
+		custom_tooltip = { 
+			text = runestone_carved
+			hidden_tooltip = { narrative_event = { id = OVO.572 days = 60 random = 10 } }
+		}
+	}
+	option = {
+		name = EVTOPTZ_OVO_501
+		tooltip_info = zealous
+		trigger = {
+			trait = zealous
+			religion_group = christian
+			NOT = {
+				trait = lunatic
+				trait = possessed
+				is_dumb_trigger = yes
+			}
+		}
+		
+		custom_tooltip = {
+			text = runestone_carved
+			hidden_tooltip = { narrative_event = { id = OVO.570 days = 60 random = 10 } }
+		}
+			
+	}
+}
+
+# Father (Death by Natural Causes)
+narrative_event = {
+	id = OVO.510
+	title = EVTNAME_OVO_510
+	desc = EVTDESC_OVO_510
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 200
+		piety = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_FATHER
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Father (Death by Battle)
+narrative_event = {
+	id = OVO.511
+	title = EVTNAME_OVO_510
+	desc = EVTDESC_OVO_511
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 300
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_FATHER
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Father (Death by Execution)
+narrative_event = {
+	id = OVO.512
+	title = EVTNAME_OVO_510
+	desc = EVTDESC_OVO_512
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 200
+		piety = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_FATHER
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Father (Death by Murder)
+narrative_event = {
+	id = OVO.513
+	title = EVTNAME_OVO_510
+	desc = EVTDESC_OVO_513
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 200
+		piety = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_FATHER
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Father (Death by Accident)
+narrative_event = {
+	id = OVO.515
+	title = EVTNAME_OVO_510
+	desc = EVTDESC_OVO_515
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 200
+		piety = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_FATHER
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Father (Death by Dungeon)
+narrative_event = {
+	id = OVO.516
+	title = EVTNAME_OVO_510
+	desc = EVTDESC_OVO_516
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 200
+		piety = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_FATHER
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Father (Death by Sacrifice)
+narrative_event = {
+	id = OVO.517
+	title = EVTNAME_OVO_510
+	desc = EVTDESC_OVO_517
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 200
+		piety = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_FATHER
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Father (Death by Duel)
+narrative_event = {
+	id = OVO.518
+	title = EVTNAME_OVO_510
+	desc = EVTDESC_OVO_518
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 250
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_FATHER
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Father (Death by Suicide)
+narrative_event = {
+	id = OVO.519
+	title = EVTNAME_OVO_510
+	desc = EVTDESC_OVO_519
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_FATHER
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Father (Death by Murder - YOU are the killer)
+narrative_event = {
+	id = OVO.520
+	title = EVTNAME_OVO_510
+	desc = EVTDESC_OVO_520
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_FATHER
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Father (Death by Other Reasons)
+narrative_event = {
+	id = OVO.521
+	title = EVTNAME_OVO_510
+	desc = EVTDESC_OVO_521
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 200
+		piety = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_FATHER
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Mother (Death by Natural Causes)
+narrative_event = {
+	id = OVO.530
+	title = EVTNAME_OVO_530
+	desc = EVTDESC_OVO_530
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 200
+		piety = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_MOTHER
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Mother (Death by Execution)
+narrative_event = {
+	id = OVO.531
+	title = EVTNAME_OVO_530
+	desc = EVTDESC_OVO_531
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 200
+		piety = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_MOTHER
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Mother (Death by Murder)
+narrative_event = {
+	id = OVO.532
+	title = EVTNAME_OVO_530
+	desc = EVTDESC_OVO_532
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 200
+		piety = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_MOTHER
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Mother (Death by Accident)
+narrative_event = {
+	id = OVO.534
+	title = EVTNAME_OVO_530
+	desc = EVTDESC_OVO_534
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 200
+		piety = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_MOTHER
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Mother (Death by Dungeon)
+narrative_event = {
+	id = OVO.535
+	title = EVTNAME_OVO_530
+	desc = EVTDESC_OVO_535
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 200
+		piety = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_MOTHER
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Mother (Death by Sacrifice)
+narrative_event = {
+	id = OVO.536
+	title = EVTNAME_OVO_530
+	desc = EVTDESC_OVO_536
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 200
+		piety = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_MOTHER
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Mother (Death by Suicide)
+narrative_event = {
+	id = OVO.537
+	title = EVTNAME_OVO_530
+	desc = EVTDESC_OVO_537
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_MOTHER
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Mother (Death by Murder - YOU are the killer)
+narrative_event = {
+	id = OVO.538
+	title = EVTNAME_OVO_530
+	desc = EVTDESC_OVO_538
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_MOTHER
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Mother (Death by Other Reasons)
+narrative_event = {
+	id = OVO.539
+	title = EVTNAME_OVO_530
+	desc = EVTDESC_OVO_539
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 200
+		piety = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_MOTHER
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Generic
+narrative_event = {
+	id = OVO.550
+	title = EVTNAME_OVO_550
+	desc = {
+		text = EVTDESC_OVO_550
+		trigger = {
+			mother_even_if_dead = { always = yes }
+			father_even_if_dead = { always = yes }
+		}
+	}
+	desc = {
+		text = EVTDESC_OVO_550B
+		trigger = {
+			NOT = {
+				AND = {
+					mother_even_if_dead = { always = yes }
+					father_even_if_dead = { always = yes }
+				}
+			}
+		}
+	}
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 200
+		piety = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_GENERIC
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Lunatic
+narrative_event = {
+	id = OVO.551
+	title = EVTNAME_OVO_550
+	desc = EVTDESC_OVO_551
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_LUNATIC
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Drunkard
+narrative_event = {
+	id = OVO.552
+	title = EVTNAME_OVO_550
+	desc = {
+		trigger = {
+			mother_even_if_dead = { always = yes }
+			father_even_if_dead = { always = yes }
+		}
+		text = EVTDESC_OVO_552
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				AND = {
+					mother_even_if_dead = { always = yes }
+					father_even_if_dead = { always = yes }
+				}
+			}
+		}
+		text = EVTDESC_OVO_552B
+	}
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 200
+		piety = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_DRUNKARD
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Fair
+narrative_event = {
+	id = OVO.553
+	title = EVTNAME_OVO_550
+	desc = {
+		trigger = {
+			mother_even_if_dead = { always = yes }
+			father_even_if_dead = { always = yes }
+		}
+		text = EVTDESC_OVO_553
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				AND = {
+					mother_even_if_dead = { always = yes }
+					father_even_if_dead = { always = yes }
+				}
+			}
+		}
+		text = EVTDESC_OVO_553B
+	}
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 300
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_FAIR
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Dwarf
+narrative_event = {
+	id = OVO.554
+	title = EVTNAME_OVO_550
+	desc = {
+		trigger = {
+			mother_even_if_dead = { always = yes }
+			father_even_if_dead = { always = yes }
+		}
+		text = EVTDESC_OVO_554
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				AND = {
+					mother_even_if_dead = { always = yes }
+					father_even_if_dead = { always = yes }
+				}
+			}
+		}
+		text = EVTDESC_OVO_554B
+	}
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 200
+		piety = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_DWARF
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Genius
+narrative_event = {
+	id = OVO.555
+	title = EVTNAME_OVO_550
+	desc = {
+		trigger = {
+			mother_even_if_dead = { always = yes }
+			father_even_if_dead = { always = yes }
+		}
+		text = EVTDESC_OVO_555
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				AND = {
+					mother_even_if_dead = { always = yes }
+					father_even_if_dead = { always = yes }
+				}
+			}
+		}
+		text = EVTDESC_OVO_555B
+	}
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 300
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_GENIUS
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Imbecile
+narrative_event = {
+	id = OVO.556
+	title = EVTNAME_OVO_550
+	desc = {
+		trigger = {
+			mother_even_if_dead = { always = yes }
+			father_even_if_dead = { always = yes }
+		}
+		text = EVTDESC_OVO_556
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				AND = {
+					mother_even_if_dead = { always = yes }
+					father_even_if_dead = { always = yes }
+				}
+			}
+		}
+		text = EVTDESC_OVO_556B
+	}
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_IMBECILE
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Strong
+narrative_event = {
+	id = OVO.557
+	title = EVTNAME_OVO_550
+	desc = {
+		trigger = {
+			mother_even_if_dead = { always = yes }
+			father_even_if_dead = { always = yes }
+		}
+		text = EVTDESC_OVO_557
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				AND = {
+					mother_even_if_dead = { always = yes }
+					father_even_if_dead = { always = yes }
+				}
+			}
+		}
+		text = EVTDESC_OVO_557B
+	}
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 300
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_STRONG
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Scholar
+narrative_event = {
+	id = OVO.558
+	title = EVTNAME_OVO_550
+	desc = {
+		trigger = {
+			mother_even_if_dead = { always = yes }
+			father_even_if_dead = { always = yes }
+		}
+		text = EVTDESC_OVO_558
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				AND = {
+					mother_even_if_dead = { always = yes }
+					father_even_if_dead = { always = yes }
+				}
+			}
+		}
+		text = EVTDESC_OVO_558B
+	}
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 200
+		piety = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_SCHOLAR
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Impaler
+narrative_event = {
+	id = OVO.559
+	title = EVTNAME_OVO_550
+	desc = {
+		trigger = {
+			mother_even_if_dead = { always = yes }
+			father_even_if_dead = { always = yes }
+		}
+		text = EVTDESC_OVO_559
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				AND = {
+					mother_even_if_dead = { always = yes }
+					father_even_if_dead = { always = yes }
+				}
+			}
+		}
+		text = EVTDESC_OVO_559B
+	}
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 200
+		piety = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_IMPALER
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Poet
+narrative_event = {
+	id = OVO.560
+	title = EVTNAME_OVO_550
+	desc = {
+		trigger = {
+			mother_even_if_dead = { always = yes }
+			father_even_if_dead = { always = yes }
+		}
+		text = EVTDESC_OVO_560
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				AND = {
+					mother_even_if_dead = { always = yes }
+					father_even_if_dead = { always = yes }
+				}
+			}
+		}
+		text = EVTDESC_OVO_560B
+	}
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 200
+		piety = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_POET
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Lustful
+narrative_event = {
+	id = OVO.561
+	title = EVTNAME_OVO_550
+	desc = {
+		trigger = {
+			mother_even_if_dead = { always = yes }
+			father_even_if_dead = { always = yes }
+		}
+		text = EVTDESC_OVO_561
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				AND = {
+					mother_even_if_dead = { always = yes }
+					father_even_if_dead = { always = yes }
+				}
+			}
+		}
+		text = EVTDESC_OVO_561B
+	}
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 200
+		piety = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_LUSTFUL
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Gluttonous
+narrative_event = {
+	id = OVO.562
+	title = EVTNAME_OVO_550
+	desc = {
+		trigger = {
+			mother_even_if_dead = { always = yes }
+			father_even_if_dead = { always = yes }
+		}
+		text = EVTDESC_OVO_562
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				AND = {
+					mother_even_if_dead = { always = yes }
+					father_even_if_dead = { always = yes }
+				}
+			}
+		}
+		text = EVTDESC_OVO_562B
+	}
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 200
+		piety = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_GLUTTONOUS
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Charitable
+narrative_event = {
+	id = OVO.563
+	title = EVTNAME_OVO_550
+	desc = {
+		trigger = {
+			mother_even_if_dead = { always = yes }
+			father_even_if_dead = { always = yes }
+		}
+		text = EVTDESC_OVO_563
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				AND = {
+					mother_even_if_dead = { always = yes }
+					father_even_if_dead = { always = yes }
+				}
+			}
+		}
+		text = EVTDESC_OVO_563B
+	}
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 200
+		piety = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_CHARITABLE
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Kind
+narrative_event = {
+	id = OVO.564
+	title = EVTNAME_OVO_550
+	desc = {
+		trigger = {
+			mother_even_if_dead = { always = yes }
+			father_even_if_dead = { always = yes }
+		}
+		text = EVTDESC_OVO_564
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				AND = {
+					mother_even_if_dead = { always = yes }
+					father_even_if_dead = { always = yes }
+				}
+			}
+		}
+		text = EVTDESC_OVO_564B
+	}
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 200
+		piety = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_KIND
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Proud
+narrative_event = {
+	id = OVO.565
+	title = EVTNAME_OVO_550
+	desc = {
+		trigger = {
+			mother_even_if_dead = { always = yes }
+			father_even_if_dead = { always = yes }
+		}
+		text = EVTDESC_OVO_565
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				AND = {
+					mother_even_if_dead = { always = yes }
+					father_even_if_dead = { always = yes }
+				}
+			}
+		}
+		text = EVTDESC_OVO_565B
+	}
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 300
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_PROUD
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Humble
+narrative_event = {
+	id = OVO.566
+	title = EVTNAME_OVO_550
+	desc = {
+		trigger = {
+			mother_even_if_dead = { always = yes }
+			father_even_if_dead = { always = yes }
+		}
+		text = EVTDESC_OVO_566
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				AND = {
+					mother_even_if_dead = { always = yes }
+					father_even_if_dead = { always = yes }
+				}
+			}
+		}
+		text = EVTDESC_OVO_566B
+	}
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 200
+		piety = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_HUMBLE
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Brave
+narrative_event = {
+	id = OVO.567
+	title = EVTNAME_OVO_550
+	desc = {
+		trigger = {
+			mother_even_if_dead = { always = yes }
+			father_even_if_dead = { always = yes }
+		}
+		text = EVTDESC_OVO_567
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				AND = {
+					mother_even_if_dead = { always = yes }
+					father_even_if_dead = { always = yes }
+				}
+			}
+		}
+		text = EVTDESC_OVO_567B
+	}
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 300
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_BRAVE
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Just
+narrative_event = {
+	id = OVO.568
+	title = EVTNAME_OVO_550
+	desc = {
+		trigger = {
+			mother_even_if_dead = { always = yes }
+			father_even_if_dead = { always = yes }
+		}
+		text = EVTDESC_OVO_568
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				AND = {
+					mother_even_if_dead = { always = yes }
+					father_even_if_dead = { always = yes }
+				}
+			}
+		}
+		text = EVTDESC_OVO_568B
+	}
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 200
+		piety = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_JUST
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Zealous (Norse Pagan)
+narrative_event = {
+	id = OVO.569
+	title = EVTNAME_OVO_550
+	desc = {
+		trigger = {
+			mother_even_if_dead = { always = yes }
+			father_even_if_dead = { always = yes }
+		}
+		text = EVTDESC_OVO_569
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				AND = {
+					mother_even_if_dead = { always = yes }
+					father_even_if_dead = { always = yes }
+				}
+			}
+		}
+		text = EVTDESC_OVO_569B
+	}
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 200
+		piety = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_ZEALOUS_KHANIST
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Zealous (Christian)
+narrative_event = {
+	id = OVO.570
+	title = EVTNAME_OVO_550
+	desc = {
+		trigger = {
+			mother_even_if_dead = { always = yes }
+			father_even_if_dead = { always = yes }
+		}
+		text = EVTDESC_OVO_570
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				AND = {
+					mother_even_if_dead = { always = yes }
+					father_even_if_dead = { always = yes }
+				}
+			}
+		}
+		text = EVTDESC_OVO_570B
+	}
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 200
+		piety = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_ZEALOUS_NOTKHANIST
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Cruel
+narrative_event = {
+	id = OVO.571
+	title = EVTNAME_OVO_550
+	desc = {
+		trigger = {
+			mother_even_if_dead = { always = yes }
+			father_even_if_dead = { always = yes }
+		}
+		text = EVTDESC_OVO_571
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				AND = {
+					mother_even_if_dead = { always = yes }
+					father_even_if_dead = { always = yes }
+				}
+			}
+		}
+		text = EVTDESC_OVO_571B
+	}
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 200
+		piety = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_CRUEL
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
+
+# Possessed
+narrative_event = {
+	id = OVO.572
+	title = EVTNAME_OVO_550
+	desc = EVTDESC_OVO_572
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_OVO_550
+		prestige = 100
+		add_character_modifier = {
+			name = raised_runestone
+			duration = 730
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_RUNESTONE_POSSESSED
+				picture = GFX_evt_runestone_raising_oldgods
+			}
+		}
+	}
+}
