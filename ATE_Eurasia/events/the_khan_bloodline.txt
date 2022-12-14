@@ -1,0 +1,1387 @@
+namespace = khan
+
+###########################################################
+
+# Forging Claim on the legacy of the Khan.
+
+#Opportunity arises.
+narrative_event = {
+	id = khan.1
+	title = khan_title_1 
+	desc = khan_desc_1
+	picture = GFX_the_khan
+	border = GFX_event_narrative_frame_war
+	
+	is_triggered_only = yes
+
+	ai = no
+	capable_only = yes
+	prisoner = no
+
+	trigger = { 
+		prestige = 15000
+		is_adult = yes
+		ai = no
+		is_alternate_start = no
+		NOT = { trait = content }
+		NOT = { has_character_flag = flag_chance_to_find_tomb } #Opportunity only once per character.
+		NOT = { has_global_flag = flag_genghis_tomb_found } #Tomb has been Discovered unlocked only once per playthrough.
+		capital_scope = { 
+			OR = { 
+				region = custom_greater_tibet
+				region = world_great_steppe
+				region = world_siberia
+			}
+		}
+	}
+
+	weight_multiplier = { 
+		days = 1
+		
+		modifier = {
+			factor = 0.35
+			NOR = { 
+				culture_group = latin
+				culture_group = byzantine
+				culture_group = arabic
+			}
+		}
+		modifier = {
+			factor = 0.35
+			NOR = {
+				religion = gelugpa
+				religion = khanist
+				religion = khanist_reformed
+			}
+		}
+		modifier = {
+			factor = 3
+			trait = ambitious
+		}
+		modifier = {
+			factor = 3
+			religion = khanist_reformed
+		}
+		modifier = {
+			factor = 2
+			religion = khanist
+		}
+		modifier = {
+			factor = 3
+			culture = greek
+		}
+		modifier = {
+			factor = 1.5
+			culture_group = latin
+		}
+		modifier = {
+			factor = 0.5
+			age = 50
+		}
+		modifier = {
+			factor = 2
+			trait = brave
+		}
+		modifier = {
+			factor = 2
+			has_education_martial_trigger = yes
+		}
+		modifier = {
+			factor = 2
+			has_lifestyle_martial_trigger = yes
+		}
+		modifier = {
+			factor = 2
+			capital_scope = { region = custom_mongolia }
+		}
+		modifier = {
+			factor = 2
+			trait = scholar
+		}
+		modifier = {
+			factor = 2
+			has_ambition = obj_forge_bloodline
+		}
+		modifier = {
+			factor = 2
+			learning = 8
+		}
+		modifier = {
+			factor = 2
+			learning = 10
+		}
+		modifier = {
+			factor = 2
+			learning = 12
+		}
+		modifier = {
+			factor = 2
+			learning = 14
+		}
+		modifier = {
+			factor = 2
+			learning = 16
+		}
+		modifier = {
+			factor = 2
+			learning = 18
+		}
+		modifier = {
+			factor = 2
+			learning = 20
+		}
+		modifier = {
+			factor = 2
+			learning = 22
+		}
+		modifier = {
+			factor = 2
+			learning = 24
+		}
+		modifier = {
+			factor = 2
+			learning = 26
+		}
+		modifier = {
+			factor = 2
+			learning = 28
+		}
+		modifier = {
+			factor = 2
+			learning = 30
+		}
+		modifier = {
+			factor = 1.5
+			prestige = 22000
+		}
+		modifier = {
+			factor = 1.5
+			prestige = 24000
+		}
+		modifier = {
+			factor = 1.5
+			prestige = 26000
+		}
+		modifier = {
+			factor = 1.5
+			prestige = 28000
+		}
+		modifier = {
+			factor = 1.5
+			prestige = 30000
+		}
+		modifier = {
+			factor = 1.5
+			prestige = 40000
+		}
+		modifier = {
+			factor = 1.5
+			prestige = 50000
+		}
+		modifier = {
+			factor = 1.5
+			piety = 1000
+			OR = {
+				religion = khanist
+				religion = khanist_reformed
+			}
+		}
+		modifier = {
+			factor = 1.5
+			piety = 1500
+			OR = {
+				religion = khanist
+				religion = khanist_reformed
+			}
+		}
+		modifier = {
+			factor = 1.75
+			piety = 2000
+			OR = {
+				religion = khanist
+				religion = khanist_reformed
+			}
+		}
+		modifier = {
+			factor = 1.75
+			check_variable = { which = bloodline_won_wars value = 5 }
+		}
+		modifier = {
+			factor = 1.75
+			check_variable = { which = bloodline_won_wars value = 10 }
+		}
+	}
+
+	immediate = { 
+		set_character_flag = flag_chance_to_find_tomb
+	}
+
+	option = { #Pursue.
+		name = EVTOPTA_khan_1
+		custom_tooltip = { text = TT_EVTOPTAHF1 }
+		hidden_tooltip = { narrative_event = { id = khan.2 days = 25 random = 25 } }
+	}
+	option = { #Abandon.
+		name = EVTOPTB_khan_1
+	}
+}
+
+
+#The Tomb of Genghis Khan.
+narrative_event = {
+	id = khan.2
+	title = khan_title_2 
+	desc = { 
+		trigger = { 
+			OR = { 
+				religion = khanist
+				religion = gelugpa
+			}
+		} 
+		text = khan_desc_2A
+	}
+	desc = { 
+		trigger = { 
+			NOR = { 
+				religion = khanist
+				religion = gelugpa
+			}
+		} 
+		text = khan_desc_2B
+	}
+	picture = GFX_evt_death
+	border = GFX_event_narrative_frame_war
+	
+	is_triggered_only = yes
+	immediate = { 
+		clr_character_flag = flag_genghis_tomb_search_high
+		clr_character_flag = flag_genghis_tomb_search_medium
+		clr_character_flag = flag_genghis_tomb_search_low
+		clr_character_flag = flag_genghis_tomb_search_cheap
+		clr_character_flag = flag_secret_history_search_high
+		clr_character_flag = flag_secret_history_search_medium
+		clr_character_flag = flag_secret_history_search_low
+		clr_character_flag = flag_secret_history_search_cheap
+	}
+
+	#Search for the Tomb. (Intrigue-based)
+	#Forsake search, hire scholars instead. (Learning-based)
+
+	option = { #Intrigue search.
+		name = EVTOPTAHF2
+		custom_tooltip = { text = TT_EVTOPTAHF2 }
+		hidden_tooltip = { narrative_event = { id = khan.3 } } #Decide budget.
+	}
+	option = { #Learning search.
+		name = EVTOPTBHF2
+		custom_tooltip = { text = TT_EVTOPTBHF2 }
+		hidden_tooltip = { narrative_event = { id = khan.4 } } #Decide budget.
+	}
+	option = { #Abandon search.
+		name = EVTOPTCHF2
+		custom_tooltip = { text = TT_EVTOPTCHF2 }
+		if = { 
+			limit = { 
+				trait = ambitious
+			}
+			remove_trait = ambitious
+			if = { 
+				limit = { 
+					NOT = { trait = depressed }
+				}
+				add_trait = depressed
+			}
+		}
+		prestige = -3000
+	}
+}
+
+#Decide budget when searching Genghis's tomb.
+narrative_event = {
+	id = khan.3
+	title = EVTTITLEHF2
+	desc  = EVTDESCAHF3
+	picture = GFX_evt_death
+	border = GFX_event_narrative_frame_war
+	
+	is_triggered_only = yes
+
+	immediate = { 
+		clr_character_flag = flag_genghis_tomb_search_high
+		clr_character_flag = flag_genghis_tomb_search_medium
+		clr_character_flag = flag_genghis_tomb_search_low
+		clr_character_flag = flag_genghis_tomb_search_cheap
+	}
+
+	option = { 
+		name = EVTOPTAHF3
+		custom_tooltip = { text = TT_EVTOPTAHF3 }
+		scaled_wealth = { value = -4 min = -1000 max = -2000 }
+		set_character_flag = flag_genghis_tomb_search_high
+	}
+	option = { 
+		name = EVTOPTBHF3
+		custom_tooltip = { text = TT_EVTOPTBHF3 }
+		scaled_wealth = { value = -3 min = -750 max = -1500 }
+		set_character_flag = flag_genghis_tomb_search_medium
+	}
+	option = { 
+		name = EVTOPTCHF3
+		custom_tooltip = { text = TT_EVTOPTCHF3 }
+		scaled_wealth = { value = -2 min = -500 max = -1000 }
+		set_character_flag = flag_genghis_tomb_search_low
+	}
+	option = { 
+		name = EVTOPTDHF3
+		custom_tooltip = { text = TT_EVTOPTDHF3 }
+		scaled_wealth = { value = -1 min = -250 max = -500 }
+		set_character_flag = flag_genghis_tomb_search_cheap
+	}
+	after = { 
+		hidden_tooltip = { 
+			random_list = {
+				#Success. - Tomb "found"
+				#Failure. - Retry or change approach.
+				40 = { #Success
+					modifier = {
+						factor = 0.1
+						has_character_flag = flag_genghis_tomb_search_cheap
+					}
+					modifier = {
+						factor = 0.35
+						has_character_flag = flag_genghis_tomb_search_low
+					}
+					modifier = {
+						factor = 0.75
+						has_character_flag = flag_genghis_tomb_search_medium
+					}
+					modifier = {
+						factor = 1.25
+						trait = schemer
+					}
+					modifier = {
+						factor = 1.25
+						intrigue = 10
+					}
+					modifier = {
+						factor = 1.25
+						intrigue = 12
+					}
+					modifier = {
+						factor = 1.25
+						intrigue = 14
+					}
+					modifier = {
+						factor = 1.25
+						intrigue = 16
+					}
+					modifier = {
+						factor = 1.25
+						intrigue = 18
+					}
+					modifier = {
+						factor = 1.5
+						intrigue = 20
+					}
+					modifier = {
+						factor = 1.5
+						intrigue = 22
+					}
+					modifier = {
+						factor = 1.5
+						intrigue = 24
+					}
+					modifier = {
+						factor = 1.5
+						intrigue = 26
+					}
+					modifier = {
+						factor = 1.5
+						intrigue = 28
+					}
+					modifier = {
+						factor = 1.5
+						intrigue = 30
+					}
+					modifier = {
+						factor = 1.75
+						trait = genius
+					}
+					modifier = {
+						factor = 1.5
+						trait = quick
+					}
+					modifier = {
+						factor = 1.5
+						any_courtier_or_vassal = {
+							has_job_title = job_spymaster
+							intrigue = 8
+						}
+					}
+					modifier = {
+						factor = 1.5
+						any_courtier_or_vassal = {
+							has_job_title = job_spymaster
+							intrigue = 10
+						}
+					}
+					modifier = {
+						factor = 1.5
+						any_courtier_or_vassal = {
+							has_job_title = job_spymaster
+							intrigue = 12
+						}
+					}
+					modifier = {
+						factor = 1.5
+						any_courtier_or_vassal = {
+							has_job_title = job_spymaster
+							intrigue = 14
+						}
+					}
+					modifier = {
+						factor = 1.5
+						any_courtier_or_vassal = {
+							has_job_title = job_spymaster
+							intrigue = 16
+						}
+					}
+					modifier = {
+						factor = 1.5
+						any_courtier_or_vassal = {
+							has_job_title = job_spymaster
+							intrigue = 18
+						}
+					}
+					modifier = {
+						factor = 1.5
+						any_courtier_or_vassal = {
+							has_job_title = job_spymaster
+							intrigue = 20
+						}
+					}
+					narrative_event = { id = khan.5 days = 150 random = 250 }
+				}
+				60 = { #Failure
+
+					narrative_event = { id = khan.6 days = 150 random = 250 }
+				}
+			}
+		}
+	}
+}
+
+#Decide for budget when searching for scholars to forge claim.
+narrative_event = {
+	id = khan.4
+	title = EVTTITLEHF4
+	desc = EVTDESCAHF4
+	picture = GFX_evt_library
+	border = GFX_event_narrative_frame_war
+	
+	is_triggered_only = yes
+
+	immediate = { 
+		clr_character_flag = flag_secret_history_search_high
+		clr_character_flag = flag_secret_history_search_medium
+		clr_character_flag = flag_secret_history_search_low
+		clr_character_flag = flag_secret_history_search_cheap
+	}
+
+	option = { 
+		name = EVTOPTAHF4
+		custom_tooltip = { text = TT_EVTOPTAHF3 }
+		scaled_wealth = { value = -4 min = -1000 max = -2000 }
+		set_character_flag = flag_secret_history_search_high
+	}
+	option = { 
+		name = EVTOPTBHF4
+		custom_tooltip = { text = TT_EVTOPTBHF3 }
+		scaled_wealth = { value = -3 min = -750 max = -1500 }
+		set_character_flag = flag_secret_history_search_medium
+	}
+	option = { 
+		name = EVTOPTCHF4
+		custom_tooltip = { text = TT_EVTOPTCHF3 }
+		scaled_wealth = { value = -2 min = -500 max = -1000 }
+		set_character_flag = flag_secret_history_search_low
+	}
+	option = { 
+		name = EVTOPTDHF4
+		custom_tooltip = { text = TT_EVTOPTDHF3 }
+		scaled_wealth = { value = -1 min = -250 max = -500 }
+		set_character_flag = flag_secret_history_search_cheap
+	}
+	after = { 
+		hidden_tooltip = { 
+			random_list = {
+				#Success. - Claim fabricated.
+				#Failure. - Retry or change approach.
+				40 = { #Success
+					modifier = {
+						factor = 0.1
+						has_character_flag = flag_secret_history_search_cheap
+					}
+					modifier = {
+						factor = 0.35
+						has_character_flag = flag_secret_history_search_low
+					}
+					modifier = {
+						factor = 0.75
+						has_character_flag = flag_secret_history_search_medium
+					}
+					modifier = {
+						factor = 1.25
+						trait = scholar
+					}
+					modifier = {
+						factor = 1.25
+						learning = 10
+					}
+					modifier = {
+						factor = 1.25
+						learning = 12
+					}
+					modifier = {
+						factor = 1.25
+						learning = 14
+					}
+					modifier = {
+						factor = 1.25
+						learning = 16
+					}
+					modifier = {
+						factor = 1.25
+						learning = 18
+					}
+					modifier = {
+						factor = 1.5
+						learning = 20
+					}
+					modifier = {
+						factor = 1.5
+						learning = 22
+					}
+					modifier = {
+						factor = 1.5
+						learning = 24
+					}
+					modifier = {
+						factor = 1.5
+						learning = 26
+					}
+					modifier = {
+						factor = 1.5
+						learning = 28
+					}
+					modifier = {
+						factor = 1.5
+						learning = 30
+					}
+					modifier = {
+						factor = 1.75
+						trait = genius
+					}
+					modifier = {
+						factor = 1.5
+						trait = quick
+					}
+					modifier = {
+						factor = 1.5
+						any_courtier_or_vassal = {
+							has_job_title = job_spiritual
+							learning = 8
+						}
+					}
+					modifier = {
+						factor = 1.5
+						any_courtier_or_vassal = {
+							has_job_title = job_spiritual
+							learning = 10
+						}
+					}
+					modifier = {
+						factor = 1.5
+						any_courtier_or_vassal = {
+							has_job_title = job_spiritual
+							learning = 12
+						}
+					}
+					modifier = {
+						factor = 1.5
+						any_courtier_or_vassal = {
+							has_job_title = job_spiritual
+							learning = 14
+						}
+					}
+					modifier = {
+						factor = 1.5
+						any_courtier_or_vassal = {
+							has_job_title = job_spiritual
+							learning = 16
+						}
+					}
+					modifier = {
+						factor = 1.5
+						any_courtier_or_vassal = {
+							has_job_title = job_spiritual
+							learning = 18
+						}
+					}
+					modifier = {
+						factor = 1.5
+						any_courtier_or_vassal = {
+							has_job_title = job_spiritual
+							learning = 20
+						}
+					}
+					modifier = {
+						factor = 1.5
+						culture = greek
+					}
+					narrative_event = { id = khan.7 days = 150 random = 250 }
+				}
+				60 = { #Failure
+
+					narrative_event = { id = khan.8 days = 150 random = 250 }
+				}
+			}
+		}
+	}
+}
+
+#The search for Genghis's Tomb was successful. - Establish claim.
+narrative_event = {
+	id = khan.5
+	title = EVTTITLEHF2
+	desc = EVTDESCAHF5
+	picture = GFX_evt_death
+	border = GFX_event_narrative_frame_war
+	
+	is_triggered_only = yes
+
+	immediate = { 
+		clr_character_flag = flag_genghis_tomb_search_high
+		clr_character_flag = flag_genghis_tomb_search_medium
+		clr_character_flag = flag_genghis_tomb_search_low
+		clr_character_flag = flag_genghis_tomb_search_cheap
+		clr_character_flag = flag_khan_lineage_search_high
+		clr_character_flag = flag_khan_lineage_search_medium
+		clr_character_flag = flag_khan_lineage_search_low
+		clr_character_flag = flag_khan_lineage_search_cheap
+	}
+
+	option = { 
+		name = EVTOPTAHF5
+		custom_tooltip = { text = TT_EVTOPTAHF3 }
+		prestige = -10000
+		set_character_flag = flag_khan_lineage_search_high
+	}
+	option = { 
+		name = EVTOPTBHF5
+		custom_tooltip = { text = TT_EVTOPTBHF3 }
+		prestige = -7500
+		set_character_flag = flag_khan_lineage_search_medium
+	}
+	option = { 
+		name = EVTOPTCHF5
+		custom_tooltip = { text = TT_EVTOPTCHF3 }
+		prestige = -5000
+		set_character_flag = flag_khan_lineage_search_low
+	}
+	option = { 
+		name = EVTOPTDHF5
+		custom_tooltip = { text = TT_EVTOPTDHF3 }
+		prestige = -2500
+		set_character_flag = flag_khan_lineage_search_cheap
+	}
+	after = { 
+		hidden_tooltip = { 
+			random_list = {
+				#Success. - Bloodline created.
+				#Failure. - Retry or change approach.
+				60 = { #Success
+					modifier = {
+						factor = 0.1
+						has_character_flag = flag_khan_lineage_search_cheap
+					}
+					modifier = {
+						factor = 0.35
+						has_character_flag = flag_khan_lineage_search_low
+					}
+					modifier = {
+						factor = 0.75
+						has_character_flag = flag_khan_lineage_search_medium
+					}
+					modifier = {
+						factor = 1.25
+						trait = socializer
+					}
+					modifier = {
+						factor = 1.25
+						diplomacy = 10
+					}
+					modifier = {
+						factor = 1.25
+						diplomacy = 12
+					}
+					modifier = {
+						factor = 1.25
+						diplomacy = 14
+					}
+					modifier = {
+						factor = 1.25
+						diplomacy = 16
+					}
+					modifier = {
+						factor = 1.25
+						diplomacy = 18
+					}
+					modifier = {
+						factor = 1.5
+						diplomacy = 20
+					}
+					modifier = {
+						factor = 1.5
+						diplomacy = 22
+					}
+					modifier = {
+						factor = 1.5
+						diplomacy = 24
+					}
+					modifier = {
+						factor = 1.5
+						diplomacy = 26
+					}
+					modifier = {
+						factor = 1.5
+						diplomacy = 28
+					}
+					modifier = {
+						factor = 1.5
+						diplomacy = 30
+					}
+					modifier = {
+						factor = 1.75
+						trait = genius
+					}
+					modifier = {
+						factor = 1.5
+						trait = quick
+					}
+					modifier = {
+						factor = 1.5
+						any_courtier_or_vassal = {
+							has_job_title = job_chancellor
+							diplomacy = 8
+						}
+					}
+					modifier = {
+						factor = 1.5
+						any_courtier_or_vassal = {
+							has_job_title = job_chancellor
+							diplomacy = 10
+						}
+					}
+					modifier = {
+						factor = 1.5
+						any_courtier_or_vassal = {
+							has_job_title = job_chancellor
+							diplomacy = 12
+						}
+					}
+					modifier = {
+						factor = 1.5
+						any_courtier_or_vassal = {
+							has_job_title = job_chancellor
+							diplomacy = 14
+						}
+					}
+					modifier = {
+						factor = 1.5
+						any_courtier_or_vassal = {
+							has_job_title = job_chancellor
+							diplomacy = 16
+						}
+					}
+					modifier = {
+						factor = 1.5
+						any_courtier_or_vassal = {
+							has_job_title = job_chancellor
+							diplomacy = 18
+						}
+					}
+					modifier = {
+						factor = 1.5
+						any_courtier_or_vassal = {
+							has_job_title = job_chancellor
+							diplomacy = 20
+						}
+					}
+					narrative_event = { id = khan.9 days = 350 random = 450 }
+				}
+				40 = { #Failure
+
+					narrative_event = { id = khan.10 days = 350 random = 450 }
+				}
+			}
+		}
+	}
+}
+
+#The search for Genghis's Tomb was unsuccessful. - Try again, change approach, or abandon quest.
+narrative_event = {
+	id = khan.6
+	title = EVTTITLEHF2
+	desc = EVTDESCAHF6
+	picture = GFX_evt_death
+	border = GFX_event_narrative_frame_war
+	
+	is_triggered_only = yes
+
+	immediate = { 
+		clr_character_flag = flag_genghis_tomb_search_high
+		clr_character_flag = flag_genghis_tomb_search_medium
+		clr_character_flag = flag_genghis_tomb_search_low
+		clr_character_flag = flag_genghis_tomb_search_cheap
+		clr_character_flag = flag_khan_lineage_search_high
+		clr_character_flag = flag_khan_lineage_search_medium
+		clr_character_flag = flag_khan_lineage_search_low
+		clr_character_flag = flag_khan_lineage_search_cheap
+	}
+
+	option = { #Intrigue search.
+		name = EVTOPTAHF6
+		custom_tooltip = { text = TT_EVTOPTAHF2 }
+		hidden_tooltip = { narrative_event = { id = khan.3 } } #Decide budget.
+	}
+	option = { #Learning search.
+		name = EVTOPTBHF6
+		custom_tooltip = { text = TT_EVTOPTBHF2 }
+		hidden_tooltip = { narrative_event = { id = khan.4 } } #Decide budget.
+	}
+	option = { #Abandon search.
+		name = EVTOPTCHF6
+		custom_tooltip = { text = TT_EVTOPTCHF2 }
+		if = { 
+			limit = { 
+				trait = ambitious
+			}
+			remove_trait = ambitious
+			if = { 
+				limit = { 
+					NOT = { trait = depressed }
+				}
+				add_trait = depressed
+			}
+		}
+		prestige = -3000
+	}
+}
+
+#The scholars have established a lineage. - Establish claim.
+narrative_event = {
+	id = khan.7
+	title = EVTTITLEHF4
+	desc = EVTDESCAHF7
+	picture = GFX_evt_library
+	border = GFX_event_narrative_frame_war
+	
+	is_triggered_only = yes
+
+	immediate = { 
+		clr_character_flag = flag_secret_history_search_high
+		clr_character_flag = flag_secret_history_search_medium
+		clr_character_flag = flag_secret_history_search_low
+		clr_character_flag = flag_secret_history_search_cheap
+		clr_character_flag = flag_khan_lineage_search_high
+		clr_character_flag = flag_khan_lineage_search_medium
+		clr_character_flag = flag_khan_lineage_search_low
+		clr_character_flag = flag_khan_lineage_search_cheap
+	}
+
+	option = { 
+		name = EVTOPTAHF5
+		custom_tooltip = { text = TT_EVTOPTAHF3 }
+		prestige = -10000
+		set_character_flag = flag_khan_lineage_search_high
+	}
+	option = { 
+		name = EVTOPTBHF5
+		custom_tooltip = { text = TT_EVTOPTBHF3 }
+		prestige = -7500
+		set_character_flag = flag_khan_lineage_search_medium
+	}
+	option = { 
+		name = EVTOPTCHF5
+		custom_tooltip = { text = TT_EVTOPTCHF3 }
+		prestige = -5000
+		set_character_flag = flag_khan_lineage_search_low
+	}
+	option = { 
+		name = EVTOPTDHF5
+		custom_tooltip = { text = TT_EVTOPTDHF3 }
+		prestige = -2500
+		set_character_flag = flag_khan_lineage_search_cheap
+	}
+	after = { 
+		hidden_tooltip = { 
+			random_list = { #Basic lower chance if tomb was not found.
+				#Success. - Bloodline created.
+				#Failure. - Retry or change approach.
+				40 = { #Success
+					modifier = {
+						factor = 0.1
+						has_character_flag = flag_khan_lineage_search_cheap
+					}
+					modifier = {
+						factor = 0.35
+						has_character_flag = flag_khan_lineage_search_low
+					}
+					modifier = {
+						factor = 0.75
+						has_character_flag = flag_khan_lineage_search_medium
+					}
+					modifier = {
+						factor = 1.25
+						trait = socializer
+					}
+					modifier = {
+						factor = 1.25
+						diplomacy = 10
+					}
+					modifier = {
+						factor = 1.25
+						diplomacy = 12
+					}
+					modifier = {
+						factor = 1.25
+						diplomacy = 14
+					}
+					modifier = {
+						factor = 1.25
+						diplomacy = 16
+					}
+					modifier = {
+						factor = 1.25
+						diplomacy = 18
+					}
+					modifier = {
+						factor = 1.5
+						diplomacy = 20
+					}
+					modifier = {
+						factor = 1.5
+						diplomacy = 22
+					}
+					modifier = {
+						factor = 1.5
+						diplomacy = 24
+					}
+					modifier = {
+						factor = 1.5
+						diplomacy = 26
+					}
+					modifier = {
+						factor = 1.5
+						diplomacy = 28
+					}
+					modifier = {
+						factor = 1.5
+						diplomacy = 30
+					}
+					modifier = {
+						factor = 1.75
+						trait = genius
+					}
+					modifier = {
+						factor = 1.5
+						trait = quick
+					}
+					modifier = {
+						factor = 1.5
+						any_courtier_or_vassal = {
+							has_job_title = job_chancellor
+							diplomacy = 8
+						}
+					}
+					modifier = {
+						factor = 1.5
+						any_courtier_or_vassal = {
+							has_job_title = job_chancellor
+							diplomacy = 10
+						}
+					}
+					modifier = {
+						factor = 1.5
+						any_courtier_or_vassal = {
+							has_job_title = job_chancellor
+							diplomacy = 12
+						}
+					}
+					modifier = {
+						factor = 1.5
+						any_courtier_or_vassal = {
+							has_job_title = job_chancellor
+							diplomacy = 14
+						}
+					}
+					modifier = {
+						factor = 1.5
+						any_courtier_or_vassal = {
+							has_job_title = job_chancellor
+							diplomacy = 16
+						}
+					}
+					modifier = {
+						factor = 1.5
+						any_courtier_or_vassal = {
+							has_job_title = job_chancellor
+							diplomacy = 18
+						}
+					}
+					modifier = {
+						factor = 1.5
+						any_courtier_or_vassal = {
+							has_job_title = job_chancellor
+							diplomacy = 20
+						}
+					}
+					narrative_event = { id = khan.9 days = 350 random = 450 }
+				}
+				60 = { #Failure
+
+					narrative_event = { id = khan.10 days = 350 random = 450 }
+				}
+			}
+		}
+	}
+}
+
+#The scholars' search was unsuccessful. - Try again, change approach, or abandon quest.
+narrative_event = {
+	id = khan.8
+	title = EVTTITLEHF4
+	desc = EVTDESCAHF8
+	picture = GFX_evt_death
+	border = GFX_event_narrative_frame_war
+	
+	is_triggered_only = yes
+
+	immediate = { 
+		clr_character_flag = flag_secret_history_search_high
+		clr_character_flag = flag_secret_history_search_medium
+		clr_character_flag = flag_secret_history_search_low
+		clr_character_flag = flag_secret_history_search_cheap
+		clr_character_flag = flag_khan_lineage_search_high
+		clr_character_flag = flag_khan_lineage_search_medium
+		clr_character_flag = flag_khan_lineage_search_low
+		clr_character_flag = flag_khan_lineage_search_cheap
+	}
+
+	option = { #Learning search.
+		name = EVTOPTBHF8
+		custom_tooltip = { text = TT_EVTOPTBHF2 }
+		hidden_tooltip = { narrative_event = { id = khan.4 } } #Decide budget.
+	}
+	option = { #Intrigue search.
+		name = EVTOPTAHF8
+		custom_tooltip = { text = TT_EVTOPTAHF2 }
+		hidden_tooltip = { narrative_event = { id = khan.3 } } #Decide budget.
+	}
+	option = { #Abandon search.
+		name = EVTOPTCHF8
+		custom_tooltip = { text = TT_EVTOPTCHF2 }
+		if = { 
+			limit = { 
+				trait = ambitious
+			}
+			remove_trait = ambitious
+			if = { 
+				limit = { 
+					NOT = { trait = depressed }
+				}
+				add_trait = depressed
+			}
+		}
+		prestige = -3000
+	}
+}
+
+#Genghis Bloodline gained.
+narrative_event = {
+	id = khan.9
+	title = EVTTITLEHF9
+	desc = EVTDESCAHF9
+	picture = GFX_the_khan
+	border = GFX_event_narrative_frame_war
+	
+	is_triggered_only = yes
+
+	immediate = { 
+		clr_character_flag = flag_genghis_tomb_search_high
+		clr_character_flag = flag_genghis_tomb_search_medium
+		clr_character_flag = flag_genghis_tomb_search_low
+		clr_character_flag = flag_genghis_tomb_search_cheap
+		clr_character_flag = flag_secret_history_search_high
+		clr_character_flag = flag_secret_history_search_medium
+		clr_character_flag = flag_secret_history_search_low
+		clr_character_flag = flag_secret_history_search_cheap
+		clr_character_flag = flag_khan_lineage_search_high
+		clr_character_flag = flag_khan_lineage_search_medium
+		clr_character_flag = flag_khan_lineage_search_low
+		clr_character_flag = flag_khan_lineage_search_cheap
+		set_global_flag = flag_genghis_tomb_found
+	}
+
+	option = { 
+		name = EVTOPTAHF9
+		if = { 
+			limit = { has_nickname = no }
+			ROOT = { give_nickname = nick_the_great }
+		}
+		if = { 
+			limit = { is_female = no }
+			create_bloodline = {
+				type = genghis_khan
+			}
+		}
+		if = { 
+			limit = { is_female = yes }
+			create_bloodline = {
+				type = genghis_khan
+				inheritance = matrilineal
+			}		
+		}
+		any_playable_ruler = {  
+			limit = { 
+				ai = no 
+				is_within_diplo_range = ROOT
+			}
+			narrative_event = { id = khan.11 }
+		}
+	}
+}
+
+#Failed to establish claim. Try again, or abandon quest.
+narrative_event = {
+	id = khan.10
+	title = EVTTITLEHF9
+	desc = EVTDESCAHF10
+	picture = GFX_evt_library
+	border = GFX_event_narrative_frame_war
+	
+	is_triggered_only = yes
+
+	immediate = { 
+		clr_character_flag = flag_genghis_tomb_search_high
+		clr_character_flag = flag_genghis_tomb_search_medium
+		clr_character_flag = flag_genghis_tomb_search_low
+		clr_character_flag = flag_genghis_tomb_search_cheap
+		clr_character_flag = flag_secret_history_search_high
+		clr_character_flag = flag_secret_history_search_medium
+		clr_character_flag = flag_secret_history_search_low
+		clr_character_flag = flag_secret_history_search_cheap
+		clr_character_flag = flag_khan_lineage_search_high
+		clr_character_flag = flag_khan_lineage_search_medium
+		clr_character_flag = flag_khan_lineage_search_low
+		clr_character_flag = flag_khan_lineage_search_cheap
+	}
+
+	option = { 
+		name = EVTOPTAHF10
+		custom_tooltip = { text = TT_EVTOPTAHF3 }
+		prestige = -10000
+		set_character_flag = flag_khan_lineage_search_high
+	}
+	option = { 
+		name = EVTOPTBHF10
+		custom_tooltip = { text = TT_EVTOPTBHF3 }
+		prestige = -7500
+		set_character_flag = flag_khan_lineage_search_medium
+	}
+	option = { 
+		name = EVTOPTCHF10
+		custom_tooltip = { text = TT_EVTOPTCHF3 }
+		prestige = -5000
+		set_character_flag = flag_khan_lineage_search_low
+	}
+	option = { #Abandon search.
+		name = EVTOPTDHF10
+		custom_tooltip = { text = TT_EVTOPTCHF2 }
+		if = { 
+			limit = { 
+				trait = ambitious
+			}
+			remove_trait = ambitious
+			if = { 
+				limit = { 
+					NOT = { trait = depressed }
+				}
+				add_trait = depressed
+			}
+		}
+		prestige = -3000
+		break = yes
+	}
+	after = { 
+		hidden_tooltip = { 
+			random_list = { #Basic lower chance if tomb was not found.
+				#Success. - Bloodline created.
+				#Failure. - Retry or change approach.
+				40 = { #Success
+					modifier = {
+						factor = 0.1
+						has_character_flag = flag_khan_lineage_search_cheap
+					}
+					modifier = {
+						factor = 0.35
+						has_character_flag = flag_khan_lineage_search_low
+					}
+					modifier = {
+						factor = 0.75
+						has_character_flag = flag_khan_lineage_search_medium
+					}
+					modifier = {
+						factor = 1.25
+						trait = socializer
+					}
+					modifier = {
+						factor = 1.25
+						diplomacy = 10
+					}
+					modifier = {
+						factor = 1.25
+						diplomacy = 12
+					}
+					modifier = {
+						factor = 1.25
+						diplomacy = 14
+					}
+					modifier = {
+						factor = 1.25
+						diplomacy = 16
+					}
+					modifier = {
+						factor = 1.25
+						diplomacy = 18
+					}
+					modifier = {
+						factor = 1.5
+						diplomacy = 20
+					}
+					modifier = {
+						factor = 1.5
+						diplomacy = 22
+					}
+					modifier = {
+						factor = 1.5
+						diplomacy = 24
+					}
+					modifier = {
+						factor = 1.5
+						diplomacy = 26
+					}
+					modifier = {
+						factor = 1.5
+						diplomacy = 28
+					}
+					modifier = {
+						factor = 1.5
+						diplomacy = 30
+					}
+					modifier = {
+						factor = 1.75
+						trait = genius
+					}
+					modifier = {
+						factor = 1.5
+						trait = quick
+					}
+					modifier = {
+						factor = 1.5
+						any_courtier_or_vassal = {
+							has_job_title = job_chancellor
+							diplomacy = 8
+						}
+					}
+					modifier = {
+						factor = 1.5
+						any_courtier_or_vassal = {
+							has_job_title = job_chancellor
+							diplomacy = 10
+						}
+					}
+					modifier = {
+						factor = 1.5
+						any_courtier_or_vassal = {
+							has_job_title = job_chancellor
+							diplomacy = 12
+						}
+					}
+					modifier = {
+						factor = 1.5
+						any_courtier_or_vassal = {
+							has_job_title = job_chancellor
+							diplomacy = 14
+						}
+					}
+					modifier = {
+						factor = 1.5
+						any_courtier_or_vassal = {
+							has_job_title = job_chancellor
+							diplomacy = 16
+						}
+					}
+					modifier = {
+						factor = 1.5
+						any_courtier_or_vassal = {
+							has_job_title = job_chancellor
+							diplomacy = 18
+						}
+					}
+					modifier = {
+						factor = 1.5
+						any_courtier_or_vassal = {
+							has_job_title = job_chancellor
+							diplomacy = 20
+						}
+					}
+					narrative_event = { id = khan.9 days = 350 random = 450 }
+				}
+				60 = { #Failure
+
+					narrative_event = { id = khan.10 days = 350 random = 450 }
+				}
+			}
+		}
+	}
+}
+
+#Players notified of accomplishment.
+narrative_event = {
+	id = khan.11
+	title = EVTTITLEHF11
+	desc = EVTDESCAHF11
+	picture = GFX_the_khan
+	border = GFX_event_narrative_frame_war
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = {
+			text = EVTOPTAHF11
+			trigger = {
+				NOT = { dynasty = FROM }
+			}
+		}
+		name = {
+			text = EVTOPTBHF11
+			trigger = {
+				dynasty = FROM
+			}
+		}
+	}
+}
+
+###########################################################

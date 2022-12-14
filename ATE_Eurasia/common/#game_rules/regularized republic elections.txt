@@ -1,0 +1,13 @@
+periodic_republic_elections = {
+	name = periodicelections
+	option = {
+		name = periodicelectionsenabled
+		text = "periodicelectionsenabled_text"
+		desc = "periodicelectionsenabled_desc"
+	}
+	option = {
+		name = periodicelectionsdisabled
+		text = "periodicelectionsdisabled_text"
+		desc = "periodicelectionsdisabled_desc"
+	}
+}

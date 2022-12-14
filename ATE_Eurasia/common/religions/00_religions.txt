@@ -3106,9 +3106,8 @@ muslim = {
 	deobandi = {
 		graphical_culture = muslimgfx
 		
-		
 		icon = 117
-		heresy_icon = 118
+		heresy_icon = 117
 		
 		color = { 192 192 192 }
 		
@@ -3138,8 +3137,8 @@ muslim = {
 	barelvi = {
 		graphical_culture = muslimgfx
 
-		icon = 119
-		heresy_icon = 120
+		icon = 117
+		heresy_icon = 117
 		
 		color = { 179 232 56 }
 		
@@ -4658,10 +4657,12 @@ buddhist_group = {
 		
 		autocephaly = yes
 		pentarchy = yes
+		can_grant_claim = yes
 		can_grant_divorce = yes
 		castes = yes
 		priests_can_inherit = no
 		can_retire_to_monastery = yes 
+		defensive_attrition = yes
 		
 		religious_clothing_head = 10
 		religious_clothing_priest = 10

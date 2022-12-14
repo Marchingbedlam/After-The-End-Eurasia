@@ -6606,7 +6606,7 @@ likes_dravidians = {
 	culture_group = dravidian_group
 }
 likes_tibetans = {
-	culture_group = tibetan_group
+	culture_group = tibetic
 }
 likes_central_europeans = {
 	OR = {
@@ -6764,7 +6764,6 @@ silk_road_trade_post_trigger = {
 				province_id = 728
 				province_id = 774
 				province_id = 620
-				province_id = 1794
 				province_id = 775
 				province_id = 633
 				province_id = 664
@@ -8818,6 +8817,10 @@ has_any_sympathy_trait_trigger = {
 		trait = sympathy_zoroastrianism
 		trait = sympathy_judaism
 		trait = sympathy_indian
+		trait = sympathy_islamosyncretic
+		trait = sympathy_scholastic
+		trait = sympathy_universalist
+		trait = sympathy_vernacular
 	}
 }
 

@@ -1,0 +1,722 @@
+namespace = palatine
+
+#### REVOLT EVENTS ####
+
+narrative_event = { #revolt starts
+	id = palatine.1 
+	title = EVTTITLE_palatine_1
+	desc = EVTDESC_palatine_1
+	picture = GFX_evt_feast
+	
+	major = yes
+	
+	only_independent = yes 
+	only_playable = yes
+
+	trigger = {
+		NOT = {
+			has_global_flag = palatine_revolt_spawned
+		}
+		NOR = {
+			religion = catholic
+			religion = lutheran
+			religion = calvinist
+		}
+		OR = {
+			has_landed_title = e_europa
+			any_realm_character = { has_landed_title = e_europa }
+		}
+		primary_title = { tier = EMPEROR }
+		date >= 2726.1.1
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	immediate = {
+		set_global_flag = palatine_revolt_spawned
+		29 = {
+			hidden_tooltip = { 
+				province_event = { id = palatine.2 } 
+			}
+		}
+		375 = {
+			hidden_tooltip = {
+				province_event = { id = palatine.3 }
+			}
+		}
+	}
+	option = {#locs for christoids
+		name = EVTOPTA_palatine_1
+		trigger = {
+			OR = {
+				religion = catholic
+				religion = lutheran
+				religion = calvinist
+			}
+		}
+	}
+	option = {#locs for neuhumanists
+		name = EVTOPTB_palatine_1
+		trigger = {
+			religion = neuhumanist
+		}
+	}
+}
+
+province_event = { #creates first army
+	id = palatine.2
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		create_character = {
+			random_traits = no
+			religion = ROOT
+			name = "Jeanne"
+			dynasty = 2009230 #Larchère
+			culture = palatinate
+			age = 25
+			female = yes
+			trait = brilliant_strategist
+			trait = holy_warrior
+			trait = shrewd
+			trait = mystic
+			trait = chaste
+			trait = wroth
+			trait = zealous
+			trait = humble
+			trait = possessed
+			trait = is_malnourished
+			attributes = {
+				diplomacy = 6
+				martial = 9
+				stewardship = 5
+				intrigue = 7
+				learning = 9
+			}
+		}
+		new_character = {
+			character_event = { id = maintenance.4 } #diversity
+			set_character_flag = is_palatine_leader
+			set_defacto_liege = THIS
+			prestige = 100
+			piety = 50
+			add_claim = k_rhineland
+			random_list = {
+				65 = {
+					religion = calvinist
+				}
+				25 = {
+					religion = lutheran
+				}
+				10 = {
+					religion = catholic
+				}
+				100 = {	
+					trigger = {
+						OR = {
+							religion = calvinist 
+							religion = lutheran
+							religion = catholic
+						}
+					}
+					religion = THIS #doesn't change her religion
+				}
+			}
+			create_title = {
+				tier = DUKE
+				landless = yes
+				temporary = yes
+				culture = palatinate
+				name = PALATINE_ARMY
+				holder = THIS
+			}
+			
+			##unit size may be adjusted later
+			spawn_unit = {
+				province = ROOT
+				home = ROOT
+				owner = THIS
+				leader = THIS
+				match_character = FROM
+				match_mult = 0.25
+				match_min = 300
+				match_max = 5000
+				attrition = 0.5
+				cannot_inherit = yes
+			}
+			spawn_unit = {
+				province = ROOT
+				home = ROOT
+				owner = THIS
+				leader = THIS
+				match_character = FROM
+				match_mult = 0.25
+				match_min = 300
+				match_max = 5000
+				attrition = 0.5
+				cannot_inherit = yes
+			}
+			spawn_unit = {
+				province = ROOT
+				home = ROOT
+				owner = THIS
+				leader = THIS
+				match_character = FROM
+				match_mult = 0.25
+				match_min = 300
+				match_max = 5000
+				attrition = 0.5
+				cannot_inherit = yes
+			}
+			spawn_unit = {
+				province = ROOT
+				home = ROOT
+				owner = THIS
+				leader = THIS
+				match_character = FROM
+				match_mult = 0.25
+				match_min = 300
+				match_max = 5000
+				attrition = 0.5
+				cannot_inherit = yes
+			}
+			if = {
+				limit = {
+					FROM = { any_realm_title = { title = d_ile_de_france } }
+				}
+				d_ile_de_france = {
+					FROM = {
+						reverse_war = {
+							target = PREVPREV
+							casus_belli = joan_revolt
+							thirdparty_title = PREV
+						}
+					}
+				}
+			}
+			character_event = {id = palatine.4 days = 3}
+		}	
+	}
+}
+
+character_event = {#Ping event so that the revolt leader is the FROM in palatine.5, no one sees it.
+	id = palatine.4
+	hide_window = yes #we can repurpose it into a visible event for a little better explanation
+	is_triggered_only = yes
+	immediate = {
+		any_independent_ruler = {
+			limit = {
+				religion = PREV
+				war = no
+			}
+			letter_event = { id = palatine.5 }
+		}
+	}
+}
+
+letter_event = { #Good ol' Jeanne wants yo troops
+	id = palatine.5
+	desc = EVTDESC_palatine_5
+
+	is_triggered_only = yes
+
+	trigger = { 
+		OR = {
+			religion = catholic
+			religion = lutheran
+			religion = calvinist
+		}
+	}
+	option = { #yes, money & troops
+		name = EVTOPTA_palatine_5
+		join_attacker_wars = FROM
+		
+		prestige = 150
+		piety = 75
+		gold = -100
+
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 2
+				trait = brave
+			}
+			modifier = {
+				factor = 2
+				trait = zealous
+			}
+			modifier = {
+				factor = 1.5
+				trait = wroth
+			}
+			modifier = {
+				factor = 0.1
+				trait = craven
+			}
+			modifier = {
+				factor = 0.6
+				trait = cynical
+			}
+			modifier = {
+				factor = 0.8
+				trait = kind
+			}
+		}
+	}
+
+	option = { #no
+		name = EVTOPTB_palatine_5
+		prestige = -25
+		piety = -50
+
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				trait = brave
+			}
+			modifier = {
+				factor = 0
+				trait = zealous
+			}
+			modifier = {
+				factor = 3
+				trait = craven
+			}
+			modifier = {
+				factor = 2
+				trait = cynical
+			}
+			modifier = {
+				factor = 1.5
+				trait = kind
+			}
+		}
+	}
+
+	option = { #yes, money only
+		name = EVTOPTC_palatine_5
+		
+		prestige = 150
+		gold = -200
+
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 2
+				trait = brave
+			}
+			modifier = {
+				factor = 2 
+				trait = charitable
+			}
+			modifier = {
+				factor = 2
+				trait = administrator
+			}
+			modifier = {
+				factor = 2
+				trait = zealous
+			}
+			modifier = {
+				factor = 1.5
+				trait = wroth
+			}
+			modifier = {
+				factor = 0.1
+				trait = craven
+			}
+			modifier = {
+				factor = 0.6
+				trait = cynical
+			}
+			modifier = {
+				factor = 0.8
+				trait = kind
+			}
+		}
+	}
+}
+
+character_event = { #revolt succeeds 
+	id = palatine.5
+	desc = EVTDESC_joan_5
+	picture = GFX_evt_feast
+	#border = GFX_event_narrative_frame
+	#Conditions 
+	has_character_flag = is_palatine_leader
+	is_triggered_only = yes
+	immediate = {
+		set_government_type = feudal_government #temporary measure until pirate gov gets reworked
+	}
+	option = {
+		name = EVTOPTA_joan_5
+		prestige = 500
+		piety = 300
+		grant_title = k_rhenish_circle
+	}
+}
+
+#### PRE EVENTS ####
+
+narrative_event = { #football riot
+	id = palatine.101
+	title = EVTTITLE_palatine_101
+	desc = EVTDESC_palatine_101
+	picture = GFX_evt_feast
+	major = yes
+
+	trigger = {
+		date >= 2700.1.1 
+	}
+	mean_time_to_happen = {
+		months = 12 
+	}
+	
+	immediate = {
+		326 = {
+			hidden_tooltip = {
+				add_province_modifier = looted_modifier
+			}
+		}
+	}
+	
+	option = {#locs for christoids
+		name = EVTOPTA_palatine_101
+		trigger = {
+			OR = {
+				religion = catholic
+				religion = lutheran
+				religion = calvinist
+			}
+		}
+	}
+	option = {#locs for neuhumanists
+		name = EVTOPTB_palatine_101
+		trigger = {
+			religion = neuhumanist
+		}
+	}
+}
+
+narrative_event = { #nobles returning to their wine estates
+	id = palatine.102
+	title = EVTTITLE_palatine_102
+	desc = EVTDESC_palatine_102
+	picture = GFX_evt_feast
+	major = yes
+
+	trigger = {
+		date >= 2702.1.1 
+	}
+	mean_time_to_happen = {
+		months = 12 
+	}
+
+	option = {#locs for christoids
+		name = EVTOPTA_palatine_102
+		trigger = {
+			OR = {
+				religion = catholic
+				religion = lutheran
+				religion = calvinist
+			}
+		}
+	}
+	option = {#locs for neuhumanists
+		name = EVTOPTB_palatine_102
+		trigger = {
+			religion = neuhumanist
+		}
+	}
+}
+
+narrative_event = { #confrontations between locals and noble soldiers, the latter disrupt a lutheran
+	id = palatine.103
+	title = EVTTITLE_palatine_103
+	desc = EVTDESC_palatine_103
+	picture = GFX_evt_feast
+	major = yes
+
+	trigger = {
+		date >= 2707.1.1 
+	}
+	mean_time_to_happen = {
+		months = 12 
+	}
+
+	option = {#locs for christoids
+		name = EVTOPTA_palatine_103
+		trigger = {
+			OR = {
+				religion = catholic
+				religion = lutheran
+				religion = calvinist
+			}
+		}
+	}
+	option = {#locs for neuhumanists
+		name = EVTOPTB_palatine_103
+		trigger = {
+			religion = neuhumanist
+		}
+	}
+}
+
+narrative_event = { #soldiers try to steal a barrel of wine from an inn, shit goes wrong
+	id = palatine.104
+	title = EVTTITLE_palatine_104
+	desc = EVTDESC_palatine_104
+	picture = GFX_evt_feast
+	major = yes
+
+	trigger = {
+		date >= 2710.1.1 
+	}
+	mean_time_to_happen = {
+		months = 12 
+	}
+
+	option = {#locs for christoids
+		name = EVTOPTA_palatine_104
+		trigger = {
+			OR = {
+				religion = catholic
+				religion = lutheran
+				religion = calvinist
+			}
+		}
+	}
+	option = {#locs for neuhumanists
+		name = EVTOPTB_palatine_104
+		trigger = {
+			religion = neuhumanist
+		}
+	}
+}
+
+narrative_event = { #delegations of different christian groups and various social groups meet and decide for their fate
+	id = palatine.105
+	title = EVTTITLE_palatine_105
+	desc = EVTDESC_palatine_105
+	picture = GFX_evt_feast
+	major = yes
+
+	trigger = {
+		date >= 2712.1.1 
+	}
+	mean_time_to_happen = {
+		months = 12 
+	}
+
+	option = {#locs for christoids
+		name = EVTOPTA_palatine_105
+		trigger = {
+			OR = {
+				religion = catholic
+				religion = lutheran
+				religion = calvinist
+			}
+		}
+	}
+	option = {#locs for neuhumanists
+		name = EVTOPTB_palatine_105
+		trigger = {
+			religion = neuhumanist
+		}
+	}
+}
+
+narrative_event = { #rumors of local asking for support from foreign christian powers while assembling an army in the palatinate forest
+	id = palatine.106
+	title = EVTTITLE_palatine_106
+	desc = EVTDESC_palatine_106
+	picture = GFX_evt_feast
+	major = yes
+
+	trigger = {
+		date >= 2718.1.1 
+	}
+	mean_time_to_happen = {
+		months = 12 
+	}
+
+	option = {#locs for christoids
+		name = EVTOPTA_palatine_106
+		trigger = {
+			OR = {
+				religion = catholic
+				religion = lutheran
+				religion = calvinist
+			}
+		}
+	}
+	option = {#locs for neuhumanists
+		name = EVTOPTB_palatine_106
+		trigger = {
+			religion = neuhumanist
+		}
+	}
+}
+
+narrative_event = { #europan soldiers get ambushed and killed, equipment is stolen
+	id = palatine.107
+	title = EVTTITLE_palatine_107
+	desc = EVTDESC_palatine_107
+	picture = GFX_evt_feast
+	major = yes
+
+	trigger = {
+		date >= 2720.1.1 
+	}
+	mean_time_to_happen = {
+		months = 12 
+	}
+	
+	immediate = { #neuhumanist heartland is hearing of the attack, levy members are thinking those attacks could become frequent and are fearing for their lives
+		326 = {
+			levy_reinforce_rate = -0.25
+			levy_size = -0.1 
+		}
+	}
+
+	option = {#locs for christoids
+		name = EVTOPTA_palatine_107
+		trigger = {
+			OR = {
+				religion = catholic
+				religion = lutheran
+				religion = calvinist
+			}
+		}
+	}
+	option = {#locs for neuhumanists
+		name = EVTOPTB_palatine_107
+		trigger = {
+			religion = neuhumanist
+		}
+	}
+}
+
+character_event = { #emperor tells delegation to fuck off
+	id  palatinate.108
+	desc = EVTDESC_palatine_108
+	picture = GFX_evt_feast
+
+	trigger = {
+		AND = {
+			OR = {
+				has_landed_title = e_europa
+				any_realm_character = { has_landed_title = e_europa }
+			}
+			primary_title = { tier = EMPEROR }
+		}
+		date >= 2722.1.1 
+	}
+	mean_time_to_happen = {
+		months = 
+	}
+
+	option = { #fuck off peasants
+		name = EVTOPTA_palatine_108
+		
+		christian_opinion = -50 
+		city_opinion = -25 
+		global_tax_modifier = -0.2
+		
+		hidden_tooltip = {
+			random_list = {
+				100 = { id = palatine.109 days = 30 }
+			}
+		}
+	}
+		
+narrative_event = { #delegation sent to brussels, demanding total independence, emperor has told them to fuck off
+	id = palatine.109
+	title = EVTTITLE_palatine_109
+	desc = EVTDESC_palatine_109
+	picture = GFX_evt_feast
+	major = yes
+	is_triggered_only = yes
+
+	option = {#locs for christoids
+		name = EVTOPTA_palatine_109
+		trigger = {
+			OR = {
+				religion = catholic
+				religion = lutheran
+				religion = calvinist
+			}
+		}
+	}
+	option = {#locs for neuhumanists
+		name = EVTOPTB_palatine_109
+		trigger = {
+			religion = neuhumanist
+		}
+	}
+}
+
+character_event = {
+	id = palatine.110
+	desc = EVTDESC_palatine_110
+	picture = GFX_evt_feast
+
+	trigger = {
+		AND = {
+			OR = { 
+				religion = catholic
+				religion = lutheran
+				religion = calvinist
+			}
+			ai = no
+			independent = yes
+			primary_title = {
+				higher_tier_than = DUKE
+			}
+		}
+		date >= 2723.1.1
+	}
+	mean_time_to_happen = {
+		months = 6 
+	}
+
+	option = {
+		name = EVTOPTA_palatine_110
+		
+		hidden_tooltip = {
+			random_list = {
+				100 = { id = palatine.111 months = 12 }
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTB_palatine_110
+		
+		prestige = -100
+		piety = -75
+	}
+}
+
+character_event = {
+	id = palatine.111
+	desc = EVTDESC_palatine_111
+	picture = GFX_evt_feast
+	is_triggered_only = yes 
+	
+	option = {
+		name = EVTOPTA_palatine_111
+		
+		prestige = 200
+		piety = 125
+		set_character_flag = is_palatine_leader
+	}
+
+	option = {
+		name = EVTOPTB_palatine_111
+
+		prestige = -100
+		piety = -75
+	}
+}

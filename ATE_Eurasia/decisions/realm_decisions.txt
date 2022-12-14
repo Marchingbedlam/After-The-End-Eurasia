@@ -2315,7 +2315,7 @@ decisions = {
 				limit = {
 					NOT = { religion_group = muslim }
 					NAND = {
-						culture_group = tibetan_group
+						culture_group = tibetic
 						OR = {
 							religion = bon
 							religion = bon_reformed
@@ -2356,7 +2356,7 @@ decisions = {
 			
 			if = {
 				limit = {
-					culture_group = tibetan_group
+					culture_group = tibetic
 					OR = {
 						religion = bon
 						religion = bon_reformed
@@ -2529,7 +2529,7 @@ decisions = {
 				limit = {
 					NOT = { religion_group = muslim }
 					NAND = {
-						culture_group = tibetan_group
+						culture_group = tibetic
 						OR = {
 							religion = bon
 							religion = bon_reformed
@@ -2570,7 +2570,7 @@ decisions = {
 			
 			if = {
 				limit = {
-					culture_group = tibetan_group
+					culture_group = tibetic
 					OR = {
 						religion = bon
 						religion = bon_reformed

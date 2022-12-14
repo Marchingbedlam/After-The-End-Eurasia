@@ -152,9 +152,9 @@
 	2700.1.1={death=yes}
 }
 1996013={
-	name="Tihhon"
-	dynasty=2920056 #Tsoganov
-	culture=venelased
+	name="Tikhon"
+	dynasty=1703172 #Tsoganov
+	culture=severyane
 	religion=pravoslavie
 	2574.3.19={birth=yes}
 	2629.7.12={death=yes}
@@ -211,8 +211,8 @@
 }
 1996019={
 	name="Denis"
-	dynasty=2920056 #Tsoganov
-	culture=venelased
+	dynasty=1703172 #Tsoganov
+	culture=severyane
 	religion=pravoslavie
 	father=1996067
 	trait=charismatic_negotiator
@@ -221,7 +221,6 @@
 	trait=gregarious
 	trait=proud
 	trait=wroth
-	
 	2636.3.18={birth=yes}
 	2700.1.1={death=yes}
 }
@@ -462,40 +461,38 @@
 	2700.1.1={death=yes}
 }
 1996035={
-	name="Vasilijs"
-	dynasty=2919075 #Tarasovs
-	culture=krievi
+	name="Vasiliy"
+	dynasty=1703172 #Tarasov
+	culture=severyane
 	religion=mariavite
 	trait=fortune_builder
 	trait=gregarious
 	trait=diligent
 	trait=honest
 	trait=honorable
-	
 	2633.12.28={birth=yes}
 	2700.1.1={death=yes}
 }
 1996036={
-	name="Vadims"
-	dynasty=2919075 #Tarasovs
-	culture=krievi
+	name="Vadim"
+	dynasty=1703172 #Tarasov
+	culture=severyane
 	religion=mariavite
 	trait=charismatic_negotiator
 	trait=temperate
 	trait=patient
 	trait=diligent
 	trait=greedy
-	
 	2640.2.1={birth=yes}
 	2663.3.12={effect={add_lover=1996037}}
 	2665.4.14={add_spouse=1996037}
 	2700.1.1={death=yes}
 }
 1996037={
-	name="Jevgenija"
+	name="Evgenia"
 	female=yes
 	dynasty=0 #Lowborn
-	culture=krievi
+	culture=severyane
 	religion=mariavite
 	trait=thrifty_clerk
 	trait=fair
@@ -503,7 +500,6 @@
 	trait=humble
 	trait=familyperson
 	trait=charitable
-	
 	2641.2.1={birth=yes}
 	2700.1.1={death=yes}
 }
@@ -980,12 +976,11 @@
 	2664.8.6={death=yes}
 }
 1996067={
-	name="Jegor"
-	dynasty=2920056 #Tsoganov
-	culture=venelased
+	name="Igor"
+	dynasty=1703172 #Tsoganov
+	culture=severyane
 	religion=pravoslavie
 	father=1996013
-	
 	2601.9.18={birth=yes}
 	2653.2.6={death=yes}
 }

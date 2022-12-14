@@ -3197,7 +3197,7 @@ mountain_ambush_tactic = {
 		flank_has_leader = yes
 		leader = {
 			martial = 9
-			culture_group = tibetan_group
+			culture_group = tibetic
 			NOR = {
 				any_current_enemy = { has_opinion_modifier = { who = PREV modifier = opinion_honorable_combat } }
 				AND = { 

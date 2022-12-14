@@ -191,6 +191,49 @@ e_maghrib = {
 				b_ras_al_unuf = {}
 			}
 		}
+		d_tibesti = {
+			color={ 154 154 12 }
+			color2={ 255 255 255 }
+			
+			capital = 1076 # c_bardai
+			
+			c_bardai = { # 
+				color={ 175 174 40 }
+				color2={ 255 255 255 }
+				
+				b_bardai = {}
+				b_aozou = {}
+				b_toudoufou = {}
+				b_youryour = {}
+				b_wath = {}
+				b_omchi = {}
+				b_zoumri = {}
+			}
+			c_zouar = { # 
+				color={ 165 154 54 }
+				color2={ 255 255 255 }
+				
+				b_zouar = {}
+				b_wour = {}
+				b_forte_de_sherda = {}
+				b_buerkie = {}
+				b_yonouge = {}
+				b_toutous = {}
+				b_gouake = {}
+			}
+			c_tibesti_est = { # 
+				color={ 102 125 1 }
+				color2={ 255 255 255 }
+				
+				b_yebbibou = {}
+				b_goumeur = {}
+				b_bini_erde = {}
+				b_bini_erda = {}
+				b_ouri = {}
+				b_yougou = {}
+				b_forte_de_gouro = {}
+			}
+		}
 	}
 	
 	k_tunisia = {
@@ -2328,8 +2371,7 @@ e_maghrib = {
 				aragonese="Casablanca"
 				castilian="Casablanca"
 				andalusian="Casablanca"
-				leonese="Casablanca"
-				asturian="Casablanca"
+				asturleonese="Casablanca"
 				llanito="Casablanca"
 				portuguese="Casa Branca"
 				galician="Casa Branca"
@@ -3568,18 +3610,6 @@ e_maghrib = {
 				b_rhoud_ennous = {}
 				b_hassi_tamenkort = {}
 			}
-			c_tamanrasset = {
-				color={ 125 125 82 }
-				color2={ 255 255 255 }
-				
-				b_tamanrasset = {}
-				b_tahifet = {}
-				b_abalessa = {}
-				b_idles = {}
-				b_tazrouk = {}
-				b_hirhafok = {}
-				b_in_amguel = {}
-			}
 			c_djanet = {
 				color={ 189 151 55 }
 				color2={ 255 255 255 }
@@ -3591,6 +3621,37 @@ e_maghrib = {
 				b_azelouaz = {}
 				b_zferi = {}
 				b_tabakat = {}
+			}
+		}
+		d_ahaggar = {
+			color={ 125 111 12 }
+			color2={ 255 255 255 }
+			
+			capital = 2534 # c_tamanrasset
+			
+			c_tamanrasset = {
+				color={ 125 125 82 }
+				color2={ 255 255 255 }
+				
+				b_tamanrasset = {}
+				b_tahifet = {}
+				b_abalessa = {}
+				b_tarhaouhaout = {}
+				b_amsel = {}
+				b_in_dalag = {}
+				b_outoul = {}
+			}
+			c_tazrouk = {
+				color={ 168 175 111 }
+				color2={ 255 255 255 }
+				
+				b_tazrouk = {}
+				b_in_amguel = {}
+				b_idles = {}
+				b_hirhafok = {}
+				b_i_n_tifar = {}
+				b_tin_tarabine = {}
+				b_serkout = {}
 			}
 		}
 	}
