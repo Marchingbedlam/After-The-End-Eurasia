@@ -992,3 +992,19 @@
 	2641.3.12={birth=yes}
 	2700.1.1={death=yes}
 }
+1501052={
+	name="Conchobhar"
+	dynasty=1607131 #Uí Failghe
+	culture=ulsterman
+	religion=insular
+	martial=6
+	diplomacy=6
+	stewardship=6
+	intrigue=6
+	learning=6
+	2641.3.12={birth=yes}
+	2660.1.1={
+		employer=1501000
+	}
+	2700.1.1={death=yes}
+}

@@ -3539,6 +3539,20 @@
 1607128 = { name="Orr" culture=ulsterman }
 1607129 = { name="Taggart" culture=ulsterman }
 1607130 = { name="Traynor" culture=ulsterman }
+1607131 = { name="Uí Failghe" culture=ulsterman
+	coat_of_arms = {
+		religion=nondescript_christian
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 64
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 1624000 = { name="Oidov" culture=khorchin }
 1624001 = { name="Urtnasan" culture=khorchin }
