@@ -122,10 +122,10 @@ narrative_event = {
 
 		FROM = {
 			save_event_target_as = eternal_life_reincarnation_source
+			grant_title = ROOT
 		}
 
 		ROOT = {
-
 			#Add traits of reincarnation source
 			copy_random_personality_trait = event_target:eternal_life_reincarnation_source
 			copy_random_personality_trait = event_target:eternal_life_reincarnation_source
