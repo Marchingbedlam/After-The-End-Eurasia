@@ -245,11 +245,6 @@ custom_finland = {
 		d_turku d_aland d_uusimaa d_tavastia d_savonia d_ostrobothnia d_lapland
 	}
 }
-custom_finland = {
-	duchies = {
-		d_turku d_aland d_uusimaa d_tavastia d_savonia d_ostrobothnia d_lapland
-	}
-}
 custom_ethiopia = {
 	duchies = {
 		d_gojjam d_wollo d_gondar d_tigray d_afar d_eritrea d_keyih_bahri
@@ -459,7 +454,7 @@ custom_eastern_europe = {
 
 world_scandinavia = {
 	regions = {
-		region_iceland region_faroe region_south_greenland custom_norway custom_sweden custom_denmark
+		custom_norway custom_sweden custom_denmark
 	}
 }
 custom_europe = {
