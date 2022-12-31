@@ -1420,7 +1420,7 @@ interdynasty_war = {
 				}
 				ROOT= { clr_character_flag = fr_adventurer_nomad_check }
 			}
-			if = { China with no land calculates what to do with nomad provinces
+			if = { # China with no land calculates what to do with nomad provinces
 				limit = { 
 					is_offmap_governor = yes
 					offmap_power = { is_offmap_tag = offmap_china }

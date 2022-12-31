@@ -14964,11 +14964,26 @@ buddhist_holy_war = {
 			OR = {
 				religion_group = buddhist_group
 				#religion = neuhumanist
+			}
+		}
+		NOT = { same_realm = FROM }
+		OR = {
+			NOT = { religion_group = FROM }
+			FROM = { religion = taoist }
+			AND = {
+				religion_group = FROM
+				FROM = {
+					has_character_modifier = known_satanist
+				}
+				NOT = {
+					has_character_modifier = known_satanist
 				}
 			}
-			NOT = { same_realm = FROM }
+		}
+		top_liege = {
+			religion_group = ROOT
 			OR = {
-				NOT = { religion_group = FROM }
+				NOT = { religion = FROM }
 				FROM = { religion = taoist }
 				AND = {
 					religion_group = FROM
@@ -14978,32 +14993,16 @@ buddhist_holy_war = {
 					NOT = {
 						has_character_modifier = known_satanist
 					}
-				}
-			}
-			top_liege = {
-				religion_group = ROOT
-				OR = {
-					NOT = { religion = FROM }
-					FROM = { religion = taoist }
-					AND = {
-						religion_group = FROM
-						FROM = {
-							has_character_modifier = known_satanist
-						}
+					ROOT = {
 						NOT = {
 							has_character_modifier = known_satanist
-						}
-						ROOT = {
-							NOT = {
-								has_character_modifier = known_satanist
-							}
 						}
 					}
 				}
 			}
-			mercenary = no
-			is_nomadic = no
 		}
+		mercenary = no
+		is_nomadic = no
 	}
 	can_use_gui = {
 		ROOT = {
