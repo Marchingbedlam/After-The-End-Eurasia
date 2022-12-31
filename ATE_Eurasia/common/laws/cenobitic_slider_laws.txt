@@ -310,13 +310,10 @@ laws = {
 			factor = 0
 			additive_modifier = { 
 				value = 100			
-				holder_scope = { 
-					OR { 
+				holder_scope = {
 					religion = insular
-					#religion = insular heresy
-					}
-				higher_tier_than = BARON
-				}	
+					higher_tier_than = BARON
+				}
 			}
 		}
 		potential = {
@@ -334,13 +331,13 @@ laws = {
 						government = theocratic_feudal_government
 					}
 					higher_tier_than = BARON	
+				}
+			}
+			NOT = {
+				title = e_northern_provinces  #if thats the correct speeling
+				has_title_flag = contested_ethiopian_empire 
 			}
 		}
-			NOT = {
-			title = e_northern_provinces  #if thats the correct speeling
-			has_title_flag = contested_ethiopian_empire 
-		}
-	}
 		
 		allow = {	
 			OR = {
