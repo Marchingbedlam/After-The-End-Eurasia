@@ -599,7 +599,7 @@ narrative_event = { #europan soldiers get ambushed and killed, equipment is stol
 }
 
 character_event = { #emperor tells delegation to fuck off
-	id  palatinate.108
+	id = palatinate.108
 	desc = EVTDESC_palatine_108
 	picture = GFX_evt_feast
 
@@ -630,7 +630,7 @@ character_event = { #emperor tells delegation to fuck off
 			}
 		}
 	}
-		
+}
 narrative_event = { #delegation sent to brussels, demanding total independence, emperor has told them to fuck off
 	id = palatine.109
 	title = EVTTITLE_palatine_109
