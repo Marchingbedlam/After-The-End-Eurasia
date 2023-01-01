@@ -11,23 +11,19 @@ targeted_decisions = {
 			government = feudal_government
 			NOT = { tier = BARON }
 		}
-		allow = {
-		}
 		effect = {
-				set_player_character = THIS
-				FROM = {
-					any_demesne_title = {
-						grant_title = THIS
-					}
-					death = {
-						death_reason = DEATH_BY_NATURE
-					}
+			set_player_character = THIS
+			FROM = {
+				any_demesne_title = {
+					grant_title = THIS
 				}
+				death = {
+					death_reason = DEATH_BY_NATURE
 				}
 			}
 		}
 		ai_will_do = {
-		factor = 0
+			factor = 0
 		}
 	}
 }

@@ -23,7 +23,7 @@ e_scandinavia = {
 		hidden_tooltip = {
 			OR = {
 				ai = no
-				culture_group = north_germanic
+				culture_group = scandinavian
 				culture = finnish
 			}
 		}
@@ -1404,7 +1404,7 @@ e_scandinavia = {
 			color={ 199 45 81 }
 			color2={ 255 255 255 }
 			
-			capital = 508 #Oslo
+			capital = 524 #Helgeland
 			
 			danish = "Nordlandene"
 			icelander = "Hálogaland"

@@ -58,7 +58,7 @@ character_event = { #some weird ass old man offers you hash
 			character_event = { id = misc.2 days = 5 }
 		}
 	}
-	option = { you politely decline because you are unbased
+	option = { # you politely decline because you are unbased
 		name = EVTOPTB_MISC_1
 		piety = 10
 		random_list = {
