@@ -1450,7 +1450,7 @@ interdynasty_war = {
 						has_province_modifier = nomad_agitation
 						NOT = { has_settlement_construction = yes }
 					}
-					province_event = { id = JD.60100 } increase counter for each nomad province
+					province_event = { id = JD.60100 } # increase counter for each nomad province
 				}
 				character_event = { id = JD.60101 days = 1 } #calculate gold sent from china for building holdings
 			}
@@ -1537,7 +1537,7 @@ interdynasty_war = {
 				ROOT = { show_scope_change = no remove_claim = PREV }
 			}
 			hidden_effect = {
-				if = { Makes China have a chance of leaving Expanionist policy...
+				if = { # Makes China have a chance of leaving Expanionist policy...
 					limit = {
 						has_landed_title = e_china_west_governor
 						offmap_china = {

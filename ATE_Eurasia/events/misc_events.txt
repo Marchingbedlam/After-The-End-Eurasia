@@ -110,7 +110,7 @@ character_event = { #your trip is really cool, you're on the beach, it's sunny a
 	
 	is_triggered_only = yes
 	
-	option = { damn son lemme swim for a while
+	option = { # damn son lemme swim for a while
 		name = EVTOPTA_MISC_3
 		hidden_tooltip = {
 			random_list = {
@@ -195,11 +195,11 @@ character_event = { #your trip is alright, you're not out there feeling like a g
 	}
 }
 
-character_event = { #you're totally fucked and it seems the hash is bad
-	id = misc.5
-	desc = EVTDESC_MISC_5
-	picture = GFX_
-	
-	is_triggered_only = yes
+#character_event = { #you're totally fucked and it seems the hash is bad
+#	id = misc.5
+#	desc = EVTDESC_MISC_5
+#	picture = GFX_
+#	
+#	is_triggered_only = yes
 	
 	
