@@ -833,7 +833,6 @@ e_france = {
 			walloon = "Hôte-Burtaegne"
 			chti = "Haute-Bertanne"
 			norman = "Haute-Brétangne"
-			arpitan = "Hyôt-Breutanye"
 			
 			capital = 1542 # c_rennes
 			
@@ -991,7 +990,6 @@ e_france = {
 			walloon = "Basse-Burtaegne"
 			chti = "Basse-Bertanne"
 			norman = "Basse-Brétangne"
-			arpitan = "Davà-Breutanye"
 			
 			capital = 1547 # c_vannes
 			
@@ -1004,7 +1002,7 @@ e_france = {
 				
 				b_vannes = {
 					breton = "Gwened"
-					breton = "Vann"
+					gallo = "Vann"
 				}
 				b_lorient = {
 					breton = "An Oriant"
@@ -1155,7 +1153,6 @@ e_france = {
 	
 			occitan = "Illa de França"
 			provencal = "Illa de Franço"
-			arpitan = "Ila-de-France"
 			catalan = "Illa de França"
 			breton = "Enez-Frañs"
 			parisian = "Île-de-France"
@@ -1610,11 +1607,6 @@ e_france = {
 			dutch="Normandië"
 			flemish="Normandië"
 			frisian="Normandje"
-			breton = "Normandi"
-			catalan = "Normandia"
-			basque = "Normandia"
-			occitan = "Normandia"
-			provencal = "Normandia"
 			norman = "Normaundie"
 			arpitan = "Normàndi"
 			palatinate = "Normandie"
@@ -1802,7 +1794,6 @@ e_france = {
 			basque = "Pikardia"
 			arpitan = "Pecardia"
 			occitan = "Picardia"
-			provencal = "Picardia"
 			parisian = "Picardie"
 			chti = "Picardie"
 			walloon = "Picårdeye"		
@@ -2424,7 +2415,6 @@ e_france = {
 				flemish="Moas"
 				dutch="Maas"
 				frisian="Maas"
-				schwyzer="Maas"
 				arpitan = "Môsa"
 				walloon = "Moûze"
 				palatinate="Maas"
@@ -3505,7 +3495,6 @@ e_france = {
 				b_orthez = {
 					catalan = "Ortès"
 					basque = "Ortheze"
-					occitan = "Ortès"
 					occitan = "Ortès"
 					gascon = "Ortès"
 				}

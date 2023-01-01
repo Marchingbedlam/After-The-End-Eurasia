@@ -816,19 +816,14 @@ e_europa = {
 				color2={ 255 255 255 }
 				holy_site = calvinist
 
-				walloon="Hollande"
-				chti="Hollande"
-				parisian="Hollande"
-
 				walloon="Holande"
 				chti="Hollinde"
 				parisian="Hollande"
 				frisian="Hollân"
 
-				b_the_hague = {
-				
-					holy_site = neuhumanist
+				holy_site = neuhumanist
 					
+				b_the_hague = {
 					dutch="Den Haag"
 					flemish="Den Haag"
 					walloon="La Haye"
@@ -963,6 +958,8 @@ e_europa = {
 			color={ 208 109 21 }
 			color2={ 255 255 255 }
 
+			capital = 338 #c_north_brabant
+			
 			rhenish="Nordbrabant"
 			low_saxon="Noord-Brabant"
 			ossi="Nordbrabant"
@@ -981,7 +978,6 @@ e_europa = {
 			limburgish="Noord-Braobant"
 			palatinate="Nordbrabant"
 			
-			capital = 78
 						
 			c_north_brabant = {
 				color={ 217 195 62 }
@@ -2871,8 +2867,9 @@ e_europa = {
 				sorbian="Hala"
 				
 				b_dessau = {}
-				b_halle = {}
+				b_halle = {
 					sorbian="Hala"
+				}
 				b_bitterfeld_wolfen = {}
 				b_merseburg = {}
 				b_naumburg = {}
@@ -2972,8 +2969,9 @@ e_europa = {
 				
 				low_saxon="Iesenack"
 
-				b_eisenach = {}
+				b_eisenach = {
 					low_saxon="Iesenack"
+				}
 				b_suhl = {}
 				b_meiningen = {}
 				b_sonneburg = {}

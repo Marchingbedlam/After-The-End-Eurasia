@@ -1945,6 +1945,8 @@ e_italy = {
 		d_milan = {
 			color={ 252 238 227 }
 			color2={ 255 255 255 }
+		
+			capital = 1144 # Milan
 
 			rhenish="Mailand"
 			low_saxon="Mailand"
@@ -2730,6 +2732,8 @@ e_italy = {
 			color={ 2 78 163 }
 			color2={ 255 255 255 }
 
+			capital = 1104 # Calabria
+		
 			rhenish="Kalabrien"
 			low_saxon="Kalabrien"
 			ossi="Kalabrien"
@@ -2839,6 +2843,8 @@ e_italy = {
 		d_apulia = {
 			color={ 67 172 163 }
 			color2={ 255 255 255 }
+
+			capital = 1108 # Bari
 			
 			rhenish="Apulien"
 			low_saxon="Apulien"
@@ -3316,6 +3322,8 @@ e_italy = {
 			color={ 219 183 16 }
 			color2={ 255 255 255 }
 
+			capital = 590 #	Palermo
+		
 			sicilian="Palermu"
 			romagnol="Palèrum"
 			piedmontese="Palerm"
@@ -3476,6 +3484,8 @@ e_italy = {
 		d_syracuse = {
 			color={ 229 206 137 }
 			color2={ 255 255 255 }
+
+			capital = 593 #	Syracuse
 
 			rhenish="Syrakus"
 			low_saxon="Syrakus"

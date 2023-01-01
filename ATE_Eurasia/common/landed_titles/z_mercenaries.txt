@@ -260,7 +260,7 @@ d_loksche = {
 	
 	short_name = yes
 	
-	culture = saxon
+	culture = upper_saxon
 	religion = chronicler
 
 	title = "CAPTAIN"
@@ -574,8 +574,8 @@ d_kalari_sangham = {
 }
 d_valencia_navegantes = {
 	
-	color = { 235 227 0 }
-	color = { 255 255 255 }
+	color = { 235 227 5 }
+	color2 = { 255 255 255 }
 	
 	capital = 239 #Valencia
 	
@@ -1202,7 +1202,7 @@ d_aslanlar = {
 	
 	short_name = yes
 	
-	culture = rumeli
+	culture = rumelian
 	religion = naqshbandi
 	
 	title = "BABA"
@@ -1225,7 +1225,7 @@ d_fener = {
 	
 	short_name = yes
 	
-	culture = rumeli
+	culture = rumelian
 	religion = naqshbandi
 	
 	title = "BABA"

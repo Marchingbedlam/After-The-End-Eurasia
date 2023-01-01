@@ -454,35 +454,6 @@ e_balkans = {
 				}
 				b_kriva_palanka = {}
 				b_kratovo = {}
-			}
-			c_vardar = { # 382
-				color={ 233 205 93 }
-				color2={ 255 255 255 }
-				
-				b_veles = {}
-				b_prilep = {}
-				b_poloshki = {}
-				b_sveti_nikole = {}
-				b_kavadarci = {}
-				b_negotino = {}
-				b_chashka = {}
-			}
-			c_strumica = { # 417
-				color={ 239 218 141 }
-				color2={ 255 255 255 }
-				
-				b_strumica = {}
-				b_shtip = {}
-				b_fitija = {}
-				b_vinica = {}
-				b_kochani = {}
-				b_gevgelija = {}
-				b_delchevo = {}
-			}
-			c_polog = { #1596
-				color={ 212 196 160 }
-				color2= { 255 255 255 }
-				
 				b_tetovo = {
 					albanian = "Tetovë"
 					west_anatolian = "Kalkandelen"
@@ -515,6 +486,30 @@ e_balkans = {
 					black_sea = "Harabati Baba Tekkesi"
 					toros_mountain = "Harabati Baba Tekkesi"
 				}
+			}
+			c_vardar = { # 382
+				color={ 233 205 93 }
+				color2={ 255 255 255 }
+				
+				b_veles = {}
+				b_prilep = {}
+				b_poloshki = {}
+				b_sveti_nikole = {}
+				b_kavadarci = {}
+				b_negotino = {}
+				b_chashka = {}
+			}
+			c_strumica = { # 417
+				color={ 239 218 141 }
+				color2={ 255 255 255 }
+				
+				b_strumica = {}
+				b_shtip = {}
+				b_fitija = {}
+				b_vinica = {}
+				b_kochani = {}
+				b_gevgelija = {}
+				b_delchevo = {}
 			}
 			c_ohrid = { #2133
 				color={ 235 224 5 }
@@ -584,11 +579,6 @@ e_balkans = {
 				b_rreshen = {}
 				b_milot = {}
 				b_vau_i_dejes = {}
-			}
-			c_kukes = { # 1595
-				color={ 212 44 61 }
-				color2={ 255 255 255 }
-				
 				b_kukes = {}
 				b_krume = {}
 				b_bajram_curri = {}

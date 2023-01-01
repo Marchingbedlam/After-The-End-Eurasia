@@ -3747,14 +3747,14 @@ e_baltic = {
 			color={ 5 23 226 }
 			color2={ 255 255 255 }
 			
-			capital = 508 #Turku
+			capital = 559 #c_turku
 			
 			c_turku = {
 				color={ 95 103 226 }
 				color2={ 255 255 255 }
+				
 				holy_site = lutheran
 				holy_site = folketro
-				
 				
 				b_turunlinna = {}
 				b_turku = {}
@@ -3843,7 +3843,7 @@ e_baltic = {
 			color={ 53 94 199 }
 			color2={ 255 255 255 }
 			
-			capital = 508 #Turku
+			capital = 568 #c_kanta_hame
 			
 			c_kanta_hame = {
 				color={ 93 94 199 }
@@ -3953,7 +3953,7 @@ e_baltic = {
 			color={ 65 70 190 }
 			color2={ 255 255 255 }
 			
-			capital = 508 #Turku
+			capital = 561 #c_ostrobothnia
 			
 			c_ostrobothnia = {
 				color={ 65 70 190 }
@@ -3995,6 +3995,8 @@ e_baltic = {
 		d_lapland = {
 			color={ 35 41 159 }
 			color2={ 255 255 255 }
+			
+			capital = 566 #lapland
 			
 			c_kemi = {
 				color={ 35 41 159 }

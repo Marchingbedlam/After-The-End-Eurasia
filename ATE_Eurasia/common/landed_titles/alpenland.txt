@@ -134,6 +134,9 @@ e_alpenland = {
 			}
 		}
 		d_wurttemberg = {
+		
+			color={ 55 164 144 }
+			color2={ 255 255 255 }
 
 			capital = 451 #Stuttgart
 			
@@ -277,7 +280,6 @@ e_alpenland = {
 				swabian="Unterelsàss"
 				alsatian="'s Unterlànd"
 				austrian="Unterelsass"
-				luxembourger="Unterelsass"
 				schwyzer="Underrhin"
 				arpitan="Rin-d’Avâl"
 				occitan="Baish Ren"
@@ -2594,7 +2596,6 @@ e_alpenland = {
 				sicilian="Carinzia"
 				venetian="Carinzia"
 				slovene="Koroška"
-				slovene="Korutany"
 				dutch="Karinthië"
 				flemish="Karinthië"
 				sorbian="Korutanska"
@@ -2885,7 +2886,7 @@ e_alpenland = {
 					parisian="Saint-Hippolyte"
 					chti="Saint-Polite"
 					walloon="Sint-Hippolyte"
-					bavarian="Sankt Pödn"
+					austrian="Sankt Pödn"
 				}
 				b_waidhofen_an_der_ybbs = {
 					czech="Bejdov nad Jivici"

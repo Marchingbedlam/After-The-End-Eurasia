@@ -11,7 +11,6 @@ e_khorasan = {
 	kurdish="Xorasan"
 	kazakh="Horasan"
 	turkmen="Horasan"
-	uzbek="Xuroson"
 	
 	k_khorasan = {
 		color={ 236 216 56 }
@@ -791,6 +790,8 @@ e_khorasan = {
 		d_loy_kandahar = {
 			color={ 124 90 126 }
 			color2={ 255 255 255 }
+		
+			capital = 1295 #c_kandahar
 			
 			kyrgyz="Çong Kandagar"
 			uzbek="Katta Qondahor"

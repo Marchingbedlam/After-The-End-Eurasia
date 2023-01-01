@@ -205,7 +205,6 @@ e_himalaya = {
 		color2={ 255 255 255 }
 		
 		capital = 2765 # c_sikkim
-		culture = sikkimese
 		
 		d_sikkim = {
 			color={ 213 102 159 }
@@ -244,7 +243,6 @@ e_himalaya = {
 		color2={ 255 255 255 }
 		
 		capital = 2743 # c_thimphu
-		culture = ngalop
 		
 		d_bhutan = {
 			color={ 243 146 25 }
@@ -492,6 +490,13 @@ e_himalaya = {
 				b_rohru = {}
 				b_chopal = {}
 				b_kasauli = {}
+				b_nahan = {}
+				b_paonta_sahib = {}
+				b_renuka = {}
+				b_dadahu = {}
+				b_shillai = {}
+				b_rajgarh = {}
+				b_pachhad = {}
 			}
 			c_hamirpur = {
 				color={ 53 33 183 }
@@ -504,18 +509,6 @@ e_himalaya = {
 				b_sujanpur = {}
 				b_jhandutta = {}
 				b_badsar = {}
-			}
-			c_sirmaur = {
-				color={ 119 57 229 }
-				color2={ 255 255 255 }
-				
-				b_nahan = {}
-				b_paonta_sahib = {}
-				b_renuka = {}
-				b_dadahu = {}
-				b_shillai = {}
-				b_rajgarh = {}
-				b_pachhad = {}
 			}
 			c_kangra = {
 				color={ 72 198 176 }
@@ -558,7 +551,7 @@ e_himalaya = {
 			color={ 70 120 181 }
 			color2={ 255 255 255 }
 			
-			capital = 2759 #Shimla
+			capital = 2761 #c_dehradun
 			
 			c_uttarkashi = {
 				color={ 46 132 153 }
