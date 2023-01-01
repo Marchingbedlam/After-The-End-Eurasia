@@ -1,7 +1,7 @@
 ###ÄNSI##
 
 hellenic = {
-	graphical_cultures = { byzantinegfx }
+	graphical_cultures = { byzantinegfx westerngfx }
 	
 	greek = {
 		graphical_cultures = { byzantinegfx }
@@ -68,11 +68,11 @@ hellenic = {
 	}
 	
 	makedonian = {
-		graphical_cultures = { byzantinefx }
+		graphical_cultures = { byzantinegfx }
 		
 		color = { 0.25 0.4 0.75 }
 
-		male_names = { Achilleas_Achilles Agapios Agapitos Akakios Alex Alekos Alexandros_Alexander Alexis Anagyros Aniketos Antonis_Athony Anastasios_Anastasius Andreas_Andrew Angelos_Angelus Aniketos Apostolis_Apostolos Agyris Aristeidis Aristotelis_Aristotle Athanasios Charalampos Christoforos_Christopher Chrysanthos
+		male_names = { Achilleas_Achilles Agapios Agapitos Akakios Alex Alekos Alexandros_Alexander Alexis Anagyros Aniketos Antonis_Athony Anastasios_Anastasius Andreas_Andrew Angelos_Angelus Apostolis_Apostolos Agyris Aristeidis Aristotelis_Aristotle Athanasios Charalampos Christoforos_Christopher Chrysanthos
 		Daniíl_Daniel Dimitrios_Dimitri Dimos_Demos Dimosthenis_Demosthenes Diomidis_Diomedes Dionysios Dorotheos_Dorotheos Efthymios Elias_Elijah Emilios_Emil Emmanouil_Emmanuel Ermis Evangelos Evgenios_Eugene Evripidis_Euripides Filippos_Philip Fotios_Photios Fotis Gavriíl_Gabriel Georgios_George Gerasimos Giannis_John Giorgos_George Grigorios_Gregory Chares Iakovos_James Iason_Jason Ilias_Elijah
 		Inatios_Ignatius Ioannis_John Iosif_Joseph Iraklis_Hercules Karolos_Charles Konstantinos_Constantine Kostas_Constantine Lavrentios_Laurence Lazaros_Lazarus Leonidas Loukas_Luke Marios_Marius Markos_Mark Matthaios_Matthew Michalis_Michael Nikolaos_Nicholas Nikos_Nick Omiros_Homer Panagiotis Petros_Peter Platon_Plato Prokopis_Prokopios Savvas_Sebas Sarafim_Seraphim Silas_Saul 
 		Sofokles_Sophocles Sokrates_Socrates Soteres Spiros_Spyro Spiridon Stamatis_Stamatios Stavros Stefanos_Stephen Thomas Vasileios Vasil_Basil Veniamin_Benjamin Yanis Zinon_Zeno
@@ -99,12 +99,12 @@ hellenic = {
 	}
 	
 	kypriot = {
-		graphical_cultures = { byzantinefx }
+		graphical_cultures = { byzantinegfx }
 		
 		color = { 0.15 0.25 0.75 }
 
 		male_names = { 
-			Abbas_Abbas Abçar Abdurrahman_Abdulrahman Achilleas_Achilles Agapios Agapitos Akakios Alex Alekos Alexandros_Alexander Alexis Anagyros Aniketos Antonis_Athony Anastasios_Anastasius Andreas_Andrew Angelos_Angelus Aniketos Apostolis_Apostolos Agyris Aristeidis Aristotelis_Aristotle Athanasios 
+			Abbas_Abbas Abçar Abdurrahman_Abdulrahman Achilleas_Achilles Agapios Agapitos Akakios Alex Alekos Alexandros_Alexander Alexis Anagyros Aniketos Antonis_Athony Anastasios_Anastasius Andreas_Andrew Angelos_Angelus Apostolis_Apostolos Agyris Aristeidis Aristotelis_Aristotle Athanasios 
 			Charalampos Chares Cemal Christoforos_Christopher Chrysanthos
 			Daniíl_Daniel Dimitrios_Dimitri Dimos_Demos Dimosthenis_Demosthenes Diomidis_Diomedes Dionysios Dorotheos_Dorotheos 
 			Efthymios Elias_Elijah Emilios_Emil Emmanouil_Emmanuel Ermis Evangelos Evgenios_Eugene Evripidis_Euripides 
@@ -142,7 +142,7 @@ hellenic = {
 			Sara_Sarah Selini_Selene Sofia_Sophia Sotiria Styliani 
 			Tatiana Thalia Thekla_Thecla Theodora Theodosia Theofania_Theophania Timothea Tomris
 			Ulviye Umman Urza
-			Vavara_Barbara Valentina Vassiliki_Basiliki Viktoria_Victoria Vaso_Basso Venetia_Venice Viktoria_Victoria Virginia 
+			Vavara_Barbara Valentina Vassiliki_Basiliki Viktoria_Victoria Vaso_Basso Venetia_Venice Virginia 
 			Xanthi_Xanthe Xenia
 			Yusra
 			Zarafet Zenovia_Zenobia Zeyneb Zeyyal Zoi_Zoe Zumra Zumrut
@@ -164,7 +164,7 @@ hellenic = {
 	
 	
 	romaniote = {
-		graphical_cultures = { byzantinegfx arabgfx egyptiangfx }
+		graphical_cultures = { byzantinegfx arabiangfx egyptiangfx }
 		
 		color = { 0.4 0.8 0.7 }
 
@@ -186,7 +186,7 @@ hellenic = {
 			Pesah Peres Pinhas
 			Rabenu Rafael_Rafael Rahamim Rami Romanos_Roman Ruben 
 			Saadia Sabbatai Sadok Salamo Salomon_Solomon Samouel_Samuel Savas Semah Sevi Sabetai Shalev Shalom Shaul Shaya
-			Savas Shemaria Shemaya Simon Shimshon Shlomo_Solomon "Shem Tov" Silvan Simhon 
+			Shemaria Shemaya Simon Shimshon Shlomo_Solomon "Shem Tov" Silvan Simhon 
 			Tobiah Tsadik Tsemah Tsion
 			Ulad Uriel Uziel
 			Veissi Vital
