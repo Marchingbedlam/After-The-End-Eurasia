@@ -52,9 +52,7 @@ e_scandinavia = {
 			hidden_tooltip = {
 				OR = {
 					ai = no
-					AND = {
-						culture = icelander
-					}
+					culture = icelander
 				}
 			}
 		}
@@ -213,9 +211,7 @@ e_scandinavia = {
 			hidden_tooltip = {
 				OR = {
 					ai = no
-					AND = {
-						culture = kalaaleq
-					}
+					culture = kalaaleq
 				}
 			}
 		}
@@ -517,7 +513,7 @@ e_scandinavia = {
 			color={ 50 180 195 }
 			color2={ 255 255 255 }
 		
-			capital = 482 # Skåne
+			capital = 489 # c_ostergotland
 			
 			c_varend = {
 				color={ 126 242 249 }
@@ -1295,7 +1291,7 @@ e_scandinavia = {
 			color={ 243 162 184 }
 			color2={ 255 255 255 }
 			
-			capital = 508 #Oslo
+			capital = 517 #c_trondheim
 			
 			swedish = "Tröndelag"
 			jamta = "Tröndelag"
@@ -1581,7 +1577,7 @@ e_scandinavia = {
 			color={ 252 20 32 }
 			color2={ 255 255 255 }
 			
-			capital = 508 #Oslo
+			capital = 527 #c_osterdalen
 			
 			danish = "Oplandene"
 			ostlending = "Opplanda"

@@ -217,7 +217,6 @@ k_pomerania = {
 			wielkopolan="Pomorze"
 			mazovian="Pomorze"
 			goral="Pomorze"
-			silesian="Pomorze"
 			kashubian="Pòmòrskô"
 			czech="Pomoransko"
 			moravian="Pomoransko"
@@ -291,7 +290,6 @@ k_gotaland = {
 		midlander = "Gothia"
 		southerner = "Gothia"
 		northerner = "Gothia"
-		scouse = "Gothia"
 }
 k_hatay = {
 	color={ 74 141 74 }
@@ -691,7 +689,7 @@ d_cagliari = {
 		piedmontese="Càliari"
 }
 d_tricity = {
-	color={ 55 4 0.6 }
+	color={ 55 4 150 }
 	color2={ 255 255 255 }
 	
 	capital = 803 # Trojmiasto
@@ -712,7 +710,6 @@ d_tricity = {
 		austrian="Dreistadt"
 		schwyzer="Dreistadt"
 		palatinate="Dreistadt"
-		kashubian="Trzëgard"
 		czech="Trojmesti"
 		lithuanian="Trejybe"
 		latvian="Trisvieniba"
@@ -742,14 +739,14 @@ c_roman_patriarch = {
 	
 	capital = 1117 # Rome
 	
-		dignity = 1000 # Counted as having this many more counties than it does
+	dignity = 1000 # Counted as having this many more counties than it does
 	
 	allow = {
 		always = no
 	}
 
-	title = "Testo"
-	title_female = "Testo"
+	title = TESTO
+	title_female = TESTO
 	landless = yes
 	primary = yes
 	can_be_claimed = no

@@ -26,7 +26,6 @@ k_glorian = {
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 
-
 }
 
 k_papal_state = {
@@ -245,9 +244,7 @@ d_folketro = {
 	short_name = yes 
 	
 	primary = yes 
-	
-	short_name = yes
-		
+			
 	dignity = 200 # Counted as having this many more counties than it does
 	
 	male_names = { 
@@ -1065,9 +1062,7 @@ d_esztergom_primacy = {
 	
 	# Regnal names
 	male_names = {
-		Agapetus Alexander Aloisius Anastasius Anscharius Antonius Benedictus Bonifatius Caelestinus Carolus Callixtus Clemens Damasus Damianus Dominicus Eduardus Engelmarus Eugenius 
-		Felix Franciscus Franciscus Frumentius Gelasius Gregorius Hadrianus Hyppolitus Honorius Iannus Ianuarius Ignatius Iustinianus Innocentius Ioannes "Ioannes Paulus" Iosephus Julius 
-		Leo Lucius Laurentius Ladislaus Marcellus Marinus Martinus Macarius Maximilianus Nicolaus Paschalis Paulus Pelagius Petrus Pius Sarbelus Sebastianus Seraphinus Sergius Silvester Sixtus Stephanus Theodorus Thomas Titus Urbanus Victor Xavierus
+		Agapetus Alexander Aloisius Anastasius Anscharius Antonius Benedictus Bonifatius Caelestinus Carolus Callixtus Clemens Damasus Damianus Dominicus Eduardus Engelmarus Eugenius Felix Franciscus Frumentius Gelasius Gregorius Hadrianus Hyppolitus Honorius Iannus Ianuarius Ignatius Iustinianus Innocentius Ioannes "Ioannes Paulus" Iosephus Julius Leo Lucius Laurentius Ladislaus Marcellus Marinus Martinus Macarius Maximilianus Nicolaus Paschalis Paulus Pelagius Petrus Pius Sarbelus Sebastianus Seraphinus Sergius Silvester Sixtus Stephanus Theodorus Thomas Titus Urbanus Victor Xavierus
 	}
 }
 
@@ -1077,8 +1072,8 @@ d_capirote = {
 	
 	capital = 223 # Seville
 	
-	title = "PREGONERO"
-	foa = "PREGONERO_FOA"
+	title = PREGONERO
+	foa = PREGONERO_FOA
 	
 	dignity = 1000
 	
@@ -1109,8 +1104,8 @@ d_nestorian = {
 	
 	capital = 2023 # Baghdad
 	
-	title = "PATRIARCH_IN_THE_EAST"
-	foa = "ECUMENICAL_PATRIARCH_FOA"
+	title = PATRIARCH_IN_THE_EAST
+	foa = ECUMENICAL_PATRIARCH_FOA
 	
 	short_name = yes
 
@@ -1143,9 +1138,9 @@ d_quinto = {
 	
 	landless = no
 	
-	title = "NAVEGADOR"
-	foa = "NAVEGADOR_FOA"
-	title_prefix = "NAVEGADOR_DA"
+	title = NAVEGADOR
+	foa = NAVEGADOR_FOA
+	title_prefix = NAVEGADOR_DA
 	short_name = yes
 	
 	caliphate = yes

@@ -3802,7 +3802,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 0.2
-				culture_group = north_germanic # Vikings do like their alcohol
+				culture_group = scandinavian # Vikings do like their alcohol
 				FROM = {
 					religion_group = muslim
 				}
@@ -4441,7 +4441,7 @@ letter_event = {
 			}
 			modifier = {
 				factor = 0.2
-				culture_group = north_germanic # Vikings do like their alcohol
+				culture_group = scandinavian # Vikings do like their alcohol
 				FROM = {
 					religion_group = muslim
 				}

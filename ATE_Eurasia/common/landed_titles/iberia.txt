@@ -520,8 +520,9 @@ e_iberia = {
 				basque = "Palentzia"
 				
 				b_paredes_de_monte = {}
-				b_palencia = {}
+				b_palencia = {
 					basque = "Palentzia"
+				}
 				b_cristo_del_otero = {}
 				b_guardo = {}
 				b_aguilar_de_campoo = {}
@@ -1859,7 +1860,7 @@ k_galicia = {
 				aragonese = "Lisbona"
 				galician = "Lisboa"
 			
-				b_lisbon = {}
+				b_lisbon = {
 					basque = "Lisboa"
 					catalan = "Lisbona"
 					portuguese = "Lisboa"
@@ -1870,6 +1871,7 @@ k_galicia = {
 					asturleonese = "Lisboa"
 					aragonese = "Lisbona"
 					galician = "Lisboa"
+				}
 				b_sintra = {}
 				b_cascais = {
 					holy_site = quinto
@@ -2060,11 +2062,11 @@ k_galicia = {
 				castilian = "Oporto"
 				andalusian = "Oporto"
 			
+				holy_site = quinto
+					
 				b_porto = {}
 				b_vila_nova_de_gaia = {}
-				b_braga = {
-					holy_site = quinto
-				}	
+				b_braga = {}	
 				b_vila_nova_de_famalicao = {}
 				b_valongo = {}
 				b_maia = {}
@@ -2090,10 +2092,11 @@ k_galicia = {
 				andalusian = "Braganza"
 				galician = "Braganza"
 			
-				b_braganca = {}
+				b_braganca = {
 					castilian = "Braganza"
 					andalusian = "Braganza"
 					galician = "Braganza"
+				}
 				b_macedo_de_cavaleiros = {}
 				b_mirandela = {}
 				b_mogadouro = {}

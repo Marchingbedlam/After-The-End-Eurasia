@@ -14,7 +14,7 @@ e_yugoslavia = {
 		hidden_tooltip = {
 			OR = {
 				ai = no
-				culture = south_slavic
+				culture_group = south_slavic
 			}
 		}
 	}
@@ -25,8 +25,8 @@ e_yugoslavia = {
 		
 		catholic = 400 # Bring Catholicism to Yugoslavia
 		
-		bavarian = "Krowozien" 
-		austrian = "Krowozien" 
+		bavarian = "Krowozien"
+		austrian = "Krowozien"
 		
 		dignity = 2 # Counted as having this many more counties than it does
 		
@@ -34,7 +34,7 @@ e_yugoslavia = {
 			color={ 234 75 56 }
 			color2={ 255 255 255 }
 			
-			capital = 1006 # Zadar
+			capital = 1005 # c_karlovac
 		
 			bavarian = "Krowozien" 
 			austrian = "Krowozien" 

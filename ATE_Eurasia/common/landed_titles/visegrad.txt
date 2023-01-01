@@ -65,6 +65,7 @@ e_visegrad = {
 			belarusian="Budapiešt"
 			rusyn="Budapešt"
 			
+			
 			c_buda = { # 1169
 				color={ 224 84 179 }
 				color2={ 255 255 255 }
@@ -84,10 +85,10 @@ e_visegrad = {
 				moravian="Budín"
 				slovak="Budín"
 				
-				b_varkeruelet = {
-					holy_site = nepmese
-					holy_site = nepmese_reformed
-				}
+				holy_site = nepmese
+				holy_site = nepmese_reformed
+				
+				b_varkeruelet = {}
 				b_szekesfehervar = {
 					rhenish="Stuhlweißenburg"
 					low_saxon="Stuhlweißenburg"
@@ -113,7 +114,8 @@ e_visegrad = {
 					halychian="Sekeshfehervar"
 					donskoy="Sekeshfehervar"
 					poleshuk="Sekeshfehervar"
-					belarusian="Siekiešfechiervar"}
+					belarusian="Siekiešfechiervar"
+				}
 				b_visegrad_2 = {
 					rhenish="Plintenburg"
 					low_saxon="Plintenburg"
@@ -138,7 +140,8 @@ e_visegrad = {
 					odrzan="Wyszehrad"
 					warmzur="Wyszehrad"
 					mazovian="Wysehrad"
-					goral="Wysehrad"}
+					goral="Wysehrad"
+				}
 				b_ujbuda = {
 					rhenish="Neu-Ofen"
 					low_saxon="Neu-Ofen"
@@ -149,7 +152,8 @@ e_visegrad = {
 					austrian="Neu-Ofen"
 					palatinate="Neu-Ofen"
 					schwyzer="Neu-Ofen"
-					alsatian="Neu-Ofen"}
+					alsatian="Neu-Ofen"
+				}
 				b_obuda_bekasmegyer = {
 					rhenish="Alt-Ofen"
 					low_saxon="Alt-Ofen"
@@ -160,7 +164,8 @@ e_visegrad = {
 					austrian="Alt-Ofen"
 					palatinate="Alt-Ofen"
 					schwyzer="Alt-Ofen"
-					alsatian="Alt-Ofen"}
+					alsatian="Alt-Ofen"
+				}
 				b_dunaujvaros = {
 					rhenish="Neustadt an der Donau"
 					low_saxon="Neustadt an der Donau"
@@ -180,7 +185,8 @@ e_visegrad = {
 					belarusian="Dunaujvaraš"
 					slovak="Dunajské Nové Mesto"
 					czech="Dunajské Nové Mesto"
-					moravian="Dunajské Nové Mesto"}
+					moravian="Dunajské Nové Mesto"
+				}
 				b_hegyvidek = {
 					rhenish="Bergland"
 					low_saxon="Bergland"
@@ -191,7 +197,8 @@ e_visegrad = {
 					austrian="Bergland"
 					palatinate="Bergland"
 					schwyzer="Bergland"
-					alsatian="Bergland"}
+					alsatian="Bergland"
+				}
 				b_budafok_teteny = {
 					rhenish="Promontor-Großteting"
 					low_saxon="Promontor-Großteting"
@@ -202,7 +209,8 @@ e_visegrad = {
 					austrian="Promontor-Großteting"
 					palatinate="Promontor-Großteting"
 					schwyzer="Promontor-Großteting"
-					alsatian="Promontor-Großteting"}
+					alsatian="Promontor-Großteting"
+				}
 			}
 			c_pest = { # 1170
 				color={ 234 64 129 }
@@ -234,7 +242,8 @@ e_visegrad = {
 					alsatian="Innenstadt-Leopoldstadt"
 					slovak="Vnitrní Mesto-Leopoldovo Mesto"
 					czech="Vnitrní Mesto-Leopoldovo Mesto"
-					moravian="Vnitrní Mesto-Leopoldovo Mesto"}
+					moravian="Vnitrní Mesto-Leopoldovo Mesto"
+				}
 				b_zuglo = {
 					rhenish="Lerchenfeld"
 					low_saxon="Lerchenfeld"
@@ -245,7 +254,8 @@ e_visegrad = {
 					austrian="Lerchenfeld"
 					palatinate="Lerchenfeld"
 					schwyzer="Lerchenfeld"
-					alsatian="Lerchenfeld"}
+					alsatian="Lerchenfeld"
+				}
 				b_goedoello = {
 					rhenish="Getterle"
 					low_saxon="Getterle"
@@ -270,7 +280,8 @@ e_visegrad = {
 					odrzan="Wyszehrad"
 					warmzur="Wyszehrad"
 					mazovian="Wyszehrad"
-					goral="Wyszehrad"}
+					goral="Wyszehrad"
+				}
 				b_angyalfoeld_ujlipotvaros_vizafogo = {
 					rhenish="Engelsfeld-Neuleopoldstadt-Hausenfang"
 					low_saxon="Engelsfeld-Neuleopoldstadt-Hausenfang"
@@ -281,7 +292,8 @@ e_visegrad = {
 					austrian="Engelsfeld-Neuleopoldstadt-Hausenfang"
 					palatinate="Engelsfeld-Neuleopoldstadt-Hausenfang"
 					schwyzer="Engelsfeld-Neuleopoldstadt-Hausenfang"
-					alsatian="Engelsfeld-Neuleopoldstadt-Hausenfang"}
+					alsatian="Engelsfeld-Neuleopoldstadt-Hausenfang"
+				}
 				b_erd = {
 					rhenish="Hanselbeck"
 					low_saxon="Hanselbeck"
@@ -294,7 +306,8 @@ e_visegrad = {
 					schwyzer="Hanselbeck"
 					alsatian="Hanselbeck"
 					belarusian="Erd"
-					croatian="Andzabeg"}
+					croatian="Andzabeg"
+				}
 				b_szigetszentmiklos = {
 					rhenish="Nigglau"
 					low_saxon="Nigglau"
@@ -312,7 +325,8 @@ e_visegrad = {
 					poleshuk="Sihetsentmikloš"
 					czech="Ostrov Svatý Mikuláš"
 					moravian="Ostrov Svatý Mikuláš"
-					slovak="Ostrov Svatý Mikuláš"}
+					slovak="Ostrov Svatý Mikuláš"
+				}
 				b_pestszentlorinc_pestszentimre = {
 					rhenish="Sankt Lorenz-Sankt Emmerich"
 					low_saxon="Sankt Lorenz-Sankt Emmerich"
@@ -323,7 +337,8 @@ e_visegrad = {
 					austrian="Sankt Lorenz-Sankt Emmerich"
 					palatinate="Sankt Lorenz-Sankt Emmerich"
 					schwyzer="Sankt Lorenz-Sankt Emmerich"
-					alsatian="Sankt Lorenz-Sankt Emmerich"}
+					alsatian="Sankt Lorenz-Sankt Emmerich"
+				}
 			}
 			c_komarom_esztergom = {
 				color={ 52 102 161 }
@@ -842,7 +857,8 @@ e_visegrad = {
 					austrian="Poppa"
 					palatinate="Poppa"
 					schwyzer="Poppa"
-					alsatian="Poppa"}
+					alsatian="Poppa"
+				}
 				b_ajka = {
 					rhenish="Eikau"
 					low_saxon="Eikau"
@@ -853,7 +869,8 @@ e_visegrad = {
 					austrian="Eikau"
 					palatinate="Eikau"
 					schwyzer="Eikau"
-					alsatian="Eikau"}
+					alsatian="Eikau"
+				}
 				b_balatonfured = {
 					rhenish="Bad Plattensee"
 					low_saxon="Bad Plattensee"
@@ -870,7 +887,8 @@ e_visegrad = {
 					donskoy="Balatonfiured"
 					poleshuk="Balatonfiured"
 					belarusian="Balatanfiured"
-					slovak="Blatenské Teplice"}
+					slovak="Blatenské Teplice"
+				}
 				b_balatonkenese = {}
 				b_varpalota = {
 					rhenish="Burgschloß"
@@ -882,7 +900,8 @@ e_visegrad = {
 					austrian="Burgschloß"
 					palatinate="Burgschloß"
 					schwyzer="Burgschloß"
-					alsatian="Burgschloß"}
+					alsatian="Burgschloß"
+				}
 				b_tapolca = {
 					rhenish="Toppoltz"
 					low_saxon="Toppoltz"
@@ -898,7 +917,8 @@ e_visegrad = {
 					halychian="Tapoltsia"
 					donskoy="Tapoltsia"
 					poleshuk="Tapoltsia"
-					slovak="Topolca"}
+					slovak="Topolca"
+				}
 			}
 			c_somogy = { # 1166
 				color={ 129 85 99 }
@@ -3841,7 +3861,6 @@ e_visegrad = {
 			wielkopolan="Pomorze"
 			mazovian="Pomorze"
 			goral="Pomorze"
-			silesian="Pomorze"
 			kashubian="Pòmòrskô"
 			czech="Pomoransko"
 			moravian="Pomoransko"
@@ -4554,7 +4573,6 @@ e_visegrad = {
 					wielkopolan="Žary"
 					odrzan="Žary"
 					silesian="Žary"
-					goral="Žary"
 					warmzur="Žary"
 					rhenish="Sorau"
 					low_saxon="Sorau"
@@ -4563,7 +4581,6 @@ e_visegrad = {
 					bavarian="Sorau"
 					swabian="Sorau"
 					austrian="Sorau"
-					schwyzer="Sorau"
 					schwyzer="Sorau"
 					palatinate="Sorau"
 					latvian="Žari"
@@ -4964,7 +4981,7 @@ e_visegrad = {
 			donskoy="Kuiaviia-Pomeraniia"
 			belarusian="Kujavija-Pamieranija"
 			
-			capital = 805 #Elblag
+			capital = 1325 #Tuchola
 
 			c_tuchola = {
 				color={ 189 111 65 }
@@ -4982,7 +4999,8 @@ e_visegrad = {
 					austrian="Tuchel"
 					schwyzer="Tuchel"
 					palatinate="Tuchel"
-					alsatian="Tuchel"}
+					alsatian="Tuchel"
+				}
 				b_chojnice = {
 					kashubian="Chònice"
 					rhenish="Konitz"
@@ -4994,9 +5012,11 @@ e_visegrad = {
 					austrian="Konitz"
 					schwyzer="Konitz"
 					palatinate="Konitz"
-					alsatian="Konitz"}
+					alsatian="Konitz"
+				}
 				b_pelplin = {
-					kashubian="Pôlplëno"}
+					kashubian="Pôlplëno"
+				}
 				b_swiecie = {
 					rhenish="Schwetz"
 					low_saxon="Schwetz"
@@ -5007,7 +5027,8 @@ e_visegrad = {
 					austrian="Schwetz"
 					schwyzer="Schwetz"
 					palatinate="Schwetz"
-					alsatian="Schwetz"}
+					alsatian="Schwetz"
+				}
 				b_koscierzyna = {
 					kashubian="Kòscérzëna"
 					rhenish="Berent"
@@ -5019,9 +5040,11 @@ e_visegrad = {
 					austrian="Berent"
 					schwyzer="Berent"
 					palatinate="Berent"
-					alsatian="Berent"}
+					alsatian="Berent"
+				}
 				b_czersk = {
-					kashubian="Czérskò"}
+					kashubian="Czérskò"
+				}
 			}
 			c_bydgoszcz = {
 				color={ 200 29 33 }
@@ -5626,7 +5649,8 @@ e_visegrad = {
 					donskoy="Mislenytsi"
 					halychian="Mislenytsi"
 					poleshuk="Mislenytsi"
-					belarusian="Myslianicy"}
+					belarusian="Myslianicy"
+				}
 			}
 			c_swietokrzyskie = {
 				color={ 147 72 78 }
@@ -5826,7 +5850,6 @@ e_visegrad = {
 					donskoy="Perevors'k"
 					chornomorsky="Perevors'k"
 					yiddish="Prshevorsk"
-					rusyn="Perezor'sk"
 					czech="Prevorsk"
 					moravian="Prevorsk"
 					belarusian="Pžievarsk"}
@@ -5867,7 +5890,8 @@ e_visegrad = {
 					halychian="Lisko"
 					donskoy="Lisko"
 					chornomorsky="Lisko"
-					yiddish="Linsk"}
+					yiddish="Linsk"
+				}
 				b_strzyzow = {}
 			}
 			c_sandezerland = {
@@ -6873,12 +6897,14 @@ e_visegrad = {
 					austrian="Eulenburg"
 					schwyzer="Eulenburg"
 					palatinate="Eulenburg"
-					alsatian="Eulenburg"}
+					alsatian="Eulenburg"
+				}
 				b_mistek = {
 					moravian="Místek"
 					czech="Místek"
 					slovak="Místek"
-					belarusian="Mistak"}
+					belarusian="Mistak"
+				}
 				b_krnov = {
 					rhenish="Jägerndorf"
 					low_saxon="Jägerndorf"
@@ -6895,7 +6921,8 @@ e_visegrad = {
 					goral="Karniów"
 					warmzur="Karniów"
 					odrzan="Karniów"
-					silesian="Karniow"}
+					silesian="Karniow"
+				}
 				b_jesenik_nad_odrou = {
 					rhenish="Deutsch-Jaßnik"
 					low_saxon="Deutsch-Jaßnik"
@@ -6906,7 +6933,8 @@ e_visegrad = {
 					austrian="Deutsch-Jaßnik"
 					schwyzer="Deutsch-Jaßnik"
 					palatinate="Deutsch-Jaßnik"
-					alsatian="Deutsch-Jaßnik"}
+					alsatian="Deutsch-Jaßnik"
+				}
 			}
 			c_beskidenland = { #1345
 				color={ 233 210 90 }
@@ -6937,7 +6965,8 @@ e_visegrad = {
 					mazovian="Ciesyn"
 					goral="Ciesyn"
 					czech="Tešín"
-					moravian="Tešín"}
+					moravian="Tešín"
+				}
 				b_bielskobiala = {
 					rhenish="Bielitz-Biala"
 					low_saxon="Bielitz-Biala"
@@ -6950,7 +6979,8 @@ e_visegrad = {
 					palatinate="Bielitz-Biala"
 					alsatian="Bielitz-Biala"
 					czech="Bílsko-Belá"
-					moravian="Bílsko-Belá"}
+					moravian="Bílsko-Belá"
+				}
 				b_karvina = {
 					rhenish="Karwin"
 					low_saxon="Karwin"
@@ -6967,7 +6997,8 @@ e_visegrad = {
 					odrzan="Karwina"
 					warmzur="Karwina"
 					mazovian="Karwina"
-					goral="Karwina"}
+					goral="Karwina"
+				}
 				b_oswiecim = {
 					rhenish="Auschwitz"
 					low_saxon="Auschwitz"
@@ -6986,7 +7017,7 @@ e_visegrad = {
 					lithuanian="Osvencima"
 					silesian="Ôswjyncim"
 					yiddish="Oshpitizin"
-					}
+				}
 				b_wadowice = {
 					rhenish="Wadowitz"
 					low_saxon="Wadowitz"
@@ -6997,7 +7028,8 @@ e_visegrad = {
 					austrian="Wadowitz"
 					schwyzer="Wadowitz"
 					palatinate="Wadowitz"
-					alsatian="Wadowitz"}
+					alsatian="Wadowitz"
+				}
 				b_zywiec = {
 					rhenish="Saybusch"
 					low_saxon="Saybusch"
@@ -7008,7 +7040,8 @@ e_visegrad = {
 					austrian="Saybusch"
 					schwyzer="Saybusch"
 					palatinate="Saybusch"
-					alsatian="Saybusch"}
+					alsatian="Saybusch"
+				}
 				b_bohumin = {
 					rhenish="Oderberg"
 					low_saxon="Oderberg"
@@ -7025,7 +7058,8 @@ e_visegrad = {
 					odrzan="Bogumin"
 					warmzur="Bogumin"
 					mazovian="Bogumin"
-					goral="Bogumin"}
+					goral="Bogumin"
+				}
 			}
 		}
 	}

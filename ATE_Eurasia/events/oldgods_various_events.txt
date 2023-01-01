@@ -23,7 +23,7 @@ character_event = {
 	
 	trigger = {
 		has_dlc = "The Old Gods"
-		culture_group = north_germanic
+		culture_group = scandinavian
 		OR = {
 			religion = norse_pagan
 			religion = norse_pagan_reformed
@@ -378,7 +378,7 @@ narrative_event = {
 			any_playable_ruler = {
 				limit = {
 					ai = no
-					culture_group = north_germanic
+					culture_group = scandinavian
 				}
 				narrative_event = { id = TOG.3101 }
 			}
@@ -546,7 +546,7 @@ character_event = {
 	max_age = 40
 	capable_only = yes
 	prisoner = no
-	culture_group = north_germanic
+	culture_group = scandinavian
 	has_global_flag = varangian_guard_founded
 	has_dlc = "The Old Gods"
 	
@@ -584,7 +584,7 @@ character_event = {
 			OR = { # Regardless, they might ask either parent...
 				father = {
 					is_alive = yes
-					culture_group = north_germanic
+					culture_group = scandinavian
 					is_ruler = yes
 					is_liege_of = ROOT
 					prisoner = no
@@ -593,7 +593,7 @@ character_event = {
 				}
 				mother = {
 					is_alive = yes
-					culture_group = north_germanic
+					culture_group = scandinavian
 					is_ruler = yes
 					is_liege_of = ROOT
 					prisoner = no
@@ -653,7 +653,7 @@ character_event = {
 				trigger = {
 					father = {
 						is_alive = yes
-						culture_group = north_germanic
+						culture_group = scandinavian
 						is_ruler = yes
 						is_liege_of = ROOT
 						prisoner = no
@@ -667,7 +667,7 @@ character_event = {
 				trigger = {
 					mother = {
 						is_alive = yes
-						culture_group = north_germanic
+						culture_group = scandinavian
 						is_ruler = yes
 						is_liege_of = ROOT
 						prisoner = no
