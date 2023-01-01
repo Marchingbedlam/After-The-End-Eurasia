@@ -318,7 +318,6 @@
 1005169 = { name="Äwxädiev" culture=tatar }
 1005170 = { name="Xalitov" culture=tatar }
 1005171 = { name="Talipov" culture=tatar }
-1005171 = { name="Tarxanov" culture=tatar }
 1005172 = { name="Ghiläcev" culture=tatar }
 1005173 = { name="Tahirov" culture=tatar }
 1005174 = { name="Timerxanov" culture=tatar }
@@ -359,6 +358,7 @@
 1005209 = { name="Äshräpov" culture=tatar }
 1005210 = { name="Ghosmanov" culture=tatar }
 1005211 = { name="Gäräyev" culture=tatar }
+1005212 = { name="Tarxanov" culture=tatar }
 
 1020000 = { name="Wasawo" culture=luo }
 1020001 = { name="Lagum" culture=luo }
@@ -1060,7 +1060,6 @@
 1147169 = { name="Khokhlov" culture=muscovite }
 1147170 = { name="Eremin" culture=muscovite }
 1147171 = { name="Lukyanov" culture=muscovite }
-1147171 = { name="Evdokimov" culture=muscovite }
 1147172 = { name="Ryabov" culture=muscovite }
 1147173 = { name="Panov" culture=muscovite }
 1147174 = { name="Skvortsov" culture=muscovite }
@@ -1116,6 +1115,7 @@
 1147224 = { name="Nefedov" culture=muscovite }
 1147225 = { name="Kudryashov" culture=muscovite }
 1147226 = { name="Chistyakov" culture=muscovite }
+1147227 = { name="Evdokimov" culture=muscovite }
 
 1200000 = { name="Bonvilain" culture=british }
 1200001 = { name="Broekhart" culture=british }
@@ -2431,7 +2431,6 @@
 1501026 = { name="Beckett" culture=irish}
 1501027 = { name="Ó Broin" culture=irish}
 1501028 = { name="Ó Ciarán" culture=irish }
-1501028 = { name="Ó Cearbhalláin" culture=irish }
 1501029 = { name="Ó Murchadha" culture=irish }
 1501030 = { name="Ó Ceallaigh" culture=irish }
 1501031 = { name="Ó Súilleabháin" culture=irish }
@@ -2523,6 +2522,7 @@
 1501117 = { name="Ó Ruairc" culture=irish }
 1501118 = { name="Ó Buachalla" culture=irish }
 1501119 = { name="Ó Dubhuir" culture=irish }
+1501120 = { name="Ó Cearbhalláin" culture=irish }
 
 1534000 = { name="Marathe" culture=quebecois }
 1534001 = { name="Fortier" culture=quebecois }
@@ -3077,8 +3077,8 @@
 1585169 = { name="Alekseev" culture=chernyan }
 1585170 = { name="Brusanov" culture=chernyan }
 1585171 = { name="Gusakov" culture=chernyan }
-1585171 = { name="Dolgikh" culture=chernyan }
-1585172 = { name="Kmokin" culture=chernyan }
+1585172 = { name="Dolgikh" culture=chernyan }
+1585173 = { name="Kmokin" culture=chernyan }
 
 1589001 = { name="Tsoi" culture=volgan }
 1589002 = { name="Petrov" culture=volgan }
@@ -3251,7 +3251,6 @@
 1589169 = { name="Fafin" culture=volgan }
 1589170 = { name="Fedotov" culture=volgan }
 1589171 = { name="Fomin" culture=volgan }
-1589171 = { name="Khaynov" culture=volgan }
 1589172 = { name="Khitrin" culture=volgan }
 1589173 = { name="Khlopin" culture=volgan }
 1589174 = { name="Churkov" culture=volgan }
@@ -3264,6 +3263,7 @@
 1589181 = { name="Yusupov" culture=volgan }
 1589182 = { name="Yakunin" culture=volgan }
 1589183 = { name="Li" culture=volgan }
+1589184 = { name="Khaynov" culture=volgan }
 
 
 1601000 = { name="Rendower" culture=northerner
@@ -5165,26 +5165,6 @@
 1802017 = { name="Margaryan" culture=armenian }
 1802018 = { name="Arakelyan" culture=armenian }
 1802019 = { name="Davtyan" culture=armenian }
-1802010 = { name="Mkrtchyan" culture=armenian }
-1802011 = { name="Manukyan" culture=armenian }
-1802012 = { name="Ghazaryan" culture=armenian }
-1802013 = { name="Avestisyan" culture=armenian }
-1802014 = { name="Martirosyan" culture=armenian }
-1802015 = { name="Poghosyan" culture=armenian }
-1802016 = { name="Sahakyan" culture=armenian }
-1802017 = { name="Margaryan" culture=armenian }
-1802018 = { name="Arakelyan" culture=armenian }
-1802019 = { name="Davtyan" culture=armenian }
-1802010 = { name="Mkrtchyan" culture=armenian }
-1802011 = { name="Manukyan" culture=armenian }
-1802012 = { name="Ghazaryan" culture=armenian }
-1802013 = { name="Avestisyan" culture=armenian }
-1802014 = { name="Martirosyan" culture=armenian }
-1802015 = { name="Poghosyan" culture=armenian }
-1802016 = { name="Sahakyan" culture=armenian }
-1802017 = { name="Margaryan" culture=armenian }
-1802018 = { name="Arakelyan" culture=armenian }
-1802019 = { name="Davtyan" culture=armenian }
 1802020 = { name="Simonyan" culture=armenian }
 1802021 = { name="Stepanyan" culture=armenian }
 1802022 = { name="Galstyan" culture=armenian }
@@ -5941,7 +5921,6 @@
 1818169 = { name="Mazoz" culture=sabra }
 1818170 = { name="Dascalu" culture=sabra }
 1818171 = { name="Geffen" culture=sabra }
-1818171 = { name="Karkashon" culture=sabra }
 1818172 = { name="Zuberi" culture=sabra }
 1818173 = { name="Nagar" culture=sabra }
 1818174 = { name="Nehema" culture=sabra }
@@ -6031,6 +6010,7 @@
 1818258 = { name="Zitouna" culture=sabra }
 1818259 = { name="Shattah" culture=sabra }
 1818260 = { name="Bar Zamir" culture=sabra }
+1818261 = { name="Karkashon" culture=sabra }
 
 1819000 = { name="Shabazi" culture=teimani }
 1819001 = { name="Sharabi" culture=teimani }
@@ -7831,9 +7811,9 @@
 1911068 = { name= "Mannay-ool" culture=tuvan }
 1911069 = { name= "Orus-ool" culture=tuvan }
 1911070 = { name= "Tulush" culture=tuvan }
-1911070 = { name= "Urud" culture=tuvan }
-1911070 = { name= "Ak-irgit" culture=tuvan }
-1911070 = { name= "Kizil-soyon" culture=tuvan }
+1911071 = { name= "Urud" culture=tuvan }
+1911072 = { name= "Ak-irgit" culture=tuvan }
+1911073 = { name= "Kizil-soyon" culture=tuvan }
 
 
 1912000 = {name ="Fergany" culture=masri }
@@ -8283,13 +8263,13 @@
 1915082 = {name="Tibin" culture=sudani }
 1915083 = {name="Almahi" culture=sudani }
 1915084 = {name="Abdelsalam" culture=sudani }
-1915084 = {name="Dunqas" culture=sudani }
 1915085 = {name="Nawwar" culture=sudani }
 1915086 = {name="Unsa" culture=sudani }
 1915087 = {name="Awkal" culture=sudani }
 1915088 = {name="Dawra" culture=sudani }
 1915089 = {name="Abu Issa" culture=sudani }
 1915090 = {name="Al Kashif" culture=sudani }
+1915091 = {name="Dunqas" culture=sudani }
 
 1916000 = {name ="Daddach" culture=sahrawi }
 1916001 = {name ="Amidane" culture=sahrawi }
@@ -11849,7 +11829,6 @@ coat_of_arms = {
 2003061 = { name="Kwÿtsnia" culture=abkhazian}
 2003062 = { name="Logwua" culture=abkhazian}
 2003063 = { name="Salaqaia" culture=abkhazian}
-2003063 = { name="Tsanba" culture=abkhazian}
 2003064 = { name="Shÿnkwba" culture=abkhazian}
 2003065 = { name="Gwaramia" culture=abkhazian}
 2003066 = { name="Gÿtsba" culture=abkhazian}
@@ -11931,6 +11910,7 @@ coat_of_arms = {
 2003142 = { name="Tswÿjba" culture=abkhazian }
 2003143 = { name="Chÿtanaa" culture=abkhazian }
 2003144 = { name="Jenia" culture=abkhazian }
+2003145 = { name="Tsanba" culture=abkhazian}
 
 2007001 = { name="Durero" culture=provencal }
 2007002 = { name="Voulant" culture=provencal }
@@ -12381,7 +12361,6 @@ coat_of_arms = {
 2008124 = { name="Vidal" culture=occitan }
 2008125 = { name="Sanchez" culture=occitan }
 2008126 = { name="Fabre" culture=occitan }
-2008126 = { name="Lopez" culture=occitan }
 2008127 = { name="Martinez" culture=occitan }
 2008128 = { name="Fernandez" culture=occitan }
 2008129 = { name="Faure" culture=occitan }
@@ -12588,6 +12567,7 @@ coat_of_arms = {
 2008265 = { name="Ardussoùn" culture=occitan used_for_random=no }
 2008266 = { name="Loustalan" culture=occitan used_for_random=no }
 2008267 = { name="Loti" culture=occitan }
+2008268 = { name="Lopez" culture=occitan }
 
 2009001 = { name="Martin" culture=parisian }
 2009002 = { name="Bernard" culture=parisian }
@@ -12815,7 +12795,6 @@ coat_of_arms = {
 2009211 = { name="Nguyen" culture=parisian }
 2009212 = { name="Zidane" culture=parisian }
 2009213 = { name="Mbappé" culture=parisian }
-2009213 = { name="de Wendel" culture=parisian }
 2009214 = { name="Benaïm" culture=parisian }
 2009215 = { name="Colonna-Walewski" culture=parisian used_for_random = no 
 	coat_of_arms = {
@@ -13055,6 +13034,7 @@ coat_of_arms = {
 		}
 	}
 }
+2009336 = { name="de Wendel" culture=parisian }
 
 2010001 = { name="Abgrall" culture=breton }
 2010002 = { name="Abjean" culture=breton }
@@ -13167,7 +13147,7 @@ coat_of_arms = {
 2010109 = { name="Ar Gourrierec" culture=breton }
 2010110 = { name="Ar Guen" culture=breton }
 2010111 = { name="Ar Guillou" culture=breton }
-2010012 = { name="Ar Hénaff" culture=breton }
+2010112 = { name="Ar Hénaff" culture=breton }
 2010113 = { name="Ar Houérou" culture=breton }
 2010114 = { name="Ar Hyaric" culture=breton }
 2010115 = { name="Ar Marrec" culture=breton }
@@ -13824,7 +13804,7 @@ coat_of_arms = {
 		}
 	}
 }
-2008211 = { name="Aupetit" culture=chti used_for_random=no }
+2012211 = { name="Aupetit" culture=chti used_for_random=no }
 
 2013001 = { name="Albitreccia" culture=corsican }
 2013002 = { name="Borgo" culture=corsican }
@@ -14303,7 +14283,6 @@ coat_of_arms = {
 2014211 = { name="Arrigorriagakoa" culture=basque }
 2014212 = { name="Bidarte" culture=basque }
 2014213 = { name="Bolibar" culture=basque }
-2014213 = { name="Elkano" culture=basque }
 2014214 = { name="Etxandi" culture=basque }
 2014215 = { name="Etxarte" culture=basque }
 2014216 = { name="Goikoetxea" culture=basque }
@@ -14334,6 +14313,7 @@ coat_of_arms = {
 2014241 = { name="Etchegoyen" culture=basque }
 2014242 = { name="Solagurenbeascoa" culture=basque }
 2014243 = { name="De Jasso" culture=basque used_for_random=no }
+2014244 = { name="Elkano" culture=basque }
 
 2015001 = { name="García" culture=aragonese }
 2015002 = { name="Pérez" culture=aragonese }
@@ -14561,7 +14541,6 @@ coat_of_arms = {
 2015211 = { name="Legaz" culture=aragonese }
 2015212 = { name="León" culture=aragonese }
 2015213 = { name="Lleixá" culture=aragonese }
-2015213 = { name="Llop" culture=aragonese }
 2015214 = { name="Lozano" culture=aragonese }
 2015215 = { name="Luis" culture=aragonese }
 2015216 = { name="Luna" culture=aragonese }
@@ -14662,7 +14641,6 @@ coat_of_arms = {
 2015311 = { name="Tabuenca" culture=aragonese }
 2015312 = { name="Tadeo" culture=aragonese }
 2015313 = { name="Tejero" culture=aragonese }
-2015313 = { name="Tello" culture=aragonese }
 2015314 = { name="Temprado" culture=aragonese }
 2015315 = { name="Tomás" culture=aragonese }
 2015316 = { name="Torralba" culture=aragonese }
@@ -14690,6 +14668,8 @@ coat_of_arms = {
 2015338 = { name="Zuleta" culture=aragonese }
 2015339 = { name="Usón" culture=aragonese }
 2015340 = { name="Lascorz" culture=aragonese }
+2015341 = { name="Tello" culture=aragonese }
+2015342 = { name="Llop" culture=aragonese }
 
 2016001 = { name="Abgrall" culture=gallo }
 2016002 = { name="Abjean" culture=gallo }
@@ -14802,7 +14782,7 @@ coat_of_arms = {
 2016109 = { name="Le Gourriérec" culture=gallo }
 2016110 = { name="Le Guen" culture=gallo }
 2016111 = { name="Le Guillou" culture=gallo }
-2016012 = { name="Le Hénaff" culture=gallo }
+2016112 = { name="Le Hénaff" culture=gallo }
 2016113 = { name="Le Houérou" culture=gallo }
 2016114 = { name="Le Hyaric" culture=gallo }
 2016115 = { name="Le Marrec" culture=gallo }
@@ -15064,7 +15044,7 @@ coat_of_arms = {
 2017109 = { name="Porras" culture=catalan }
 2017110 = { name="Quintana" culture=catalan }
 2017111 = { name="Rey" culture=catalan }
-2017012 = { name="Romà" culture=catalan }
+2017112 = { name="Romà" culture=catalan }
 2017113 = { name="Rosa" culture=catalan }
 2017114 = { name="Sala" culture=catalan }
 2017115 = { name="Soler" culture=catalan }
@@ -15343,7 +15323,7 @@ coat_of_arms = {
 2018109 = { name="Casado" culture=castilian }
 2018110 = { name="Arroyo" culture=castilian }
 2018111 = { name="Redondo" culture=castilian }
-2018012 = { name="Camacho" culture=castilian }
+2018112 = { name="Camacho" culture=castilian }
 2018113 = { name="Rubio" culture=castilian }
 2018114 = { name="Silva" culture=castilian }
 2018115 = { name="Rey" culture=castilian }
@@ -15716,391 +15696,391 @@ coat_of_arms = {
 2020112 = { name="Almendárez" culture=asturleonese }
 2020113 = { name="Covarrubias" culture=asturleonese }
 
-2021001 = { name="Abad" culture=asturian }
-2021002 = { name="Abascal" culture=asturian }
-2021003 = { name="Abella" culture=asturian }
-2021004 = { name="Acebal" culture=asturian }
-2021005 = { name="Acebedo" culture=asturian }
-2021006 = { name="Acero" culture=asturian }
-2021007 = { name="Aladro" culture=asturian }
-2021008 = { name="Alas" culture=asturian }
-2021009 = { name="Alba" culture=asturian }
-2021010 = { name="Albalá" culture=asturian }
-2021011 = { name="Albuerne" culture=asturian }
-2021012 = { name="Alperi" culture=asturian }
-2021013 = { name="Álvarez" culture=asturian }
-2021014 = { name="Ampudia" culture=asturian }
-2021015 = { name="Angulo" culture=asturian }
-2021016 = { name="Antón" culture=asturian }
-2021017 = { name="Antuña" culture=asturian }
-2021018 = { name="Arango" culture=asturian }
-2021019 = { name="Aralla" culture=asturian }
-2021020 = { name="Arbesú" culture=asturian }
-2021021 = { name="Arboleya" culture=asturian }
-2021022 = { name="Arce" culture=asturian }
-2021023 = { name="Ardura" culture=asturian }
-2021024 = { name="Areces" culture=asturian }
-2021025 = { name="Argentina" culture=asturian }
-2021026 = { name="Gentina" culture=asturian }
-2021027 = { name="Argüelles" culture=asturian }
-2021028 = { name="Arias" culture=asturian }
-2021029 = { name="Armayor" culture=asturian }
-2021030 = { name="Almayor" culture=asturian }
-2021031 = { name="Arnaldo" culture=asturian }
-2021032 = { name="Arruñada" culture=asturian }
-2021033 = { name="Arruza" culture=asturian }
-2021034 = { name="Ruza" culture=asturian }
-2021035 = { name="Artime" culture=asturian }
-2021036 = { name="Avellaneda" culture=asturian }
-2021037 = { name="Avello" culture=asturian }
-2021038 = { name="Aza" culture=asturian }
-2021039 = { name="Baizán" culture=asturian }
-2021040 = { name="Bances" culture=asturian }
-2021041 = { name="Barbado" culture=asturian }
-2021042 = { name="Barbón" culture=asturian }
-2021043 = { name="Barcia" culture=asturian }
-2021044 = { name="Bardales" culture=asturian }
-2021045 = { name="Bardo" culture=asturian }
-2021046 = { name="Bardasco" culture=asturian }
-2021047 = { name="Verdasco" culture=asturian }
-2021048 = { name="Barte" culture=asturian }
-2021049 = { name="Bayón" culture=asturian }
-2021050 = { name="Bedia" culture=asturian }
-2021051 = { name="Benavides" culture=asturian }
-2021052 = { name="Bercial" culture=asturian }
-2021053 = { name="Berdasco" culture=asturian }
-2021054 = { name="Bermúdez" culture=asturian }
-2021055 = { name="Bernal" culture=asturian }
-2021056 = { name="Bernardo" culture=asturian }
-2021057 = { name="Berrocal" culture=asturian }
-2021058 = { name="Blanco" culture=asturian }
-2021059 = { name="Blasón" culture=asturian }
-2021060 = { name="Bobes" culture=asturian }
-2021061 = { name="Borbolla" culture=asturian }
-2021062 = { name="Bousoño" culture=asturian }
-2021063 = { name="Bouza" culture=asturian }
-2021064 = { name="Braña" culture=asturian }
-2021065 = { name="Bruno" culture=asturian }
-2021066 = { name="Buelna" culture=asturian }
-2021067 = { name="Busto" culture=asturian }
-2021068 = { name="Bustillo" culture=asturian }
-2021069 = { name="Bustelo" culture=asturian }
-2021070 = { name="Buylla" culture=asturian }
-2021071 = { name="Cabo" culture=asturian }
-2021072 = { name="Cachero" culture=asturian }
-2021073 = { name="Cagigal" culture=asturian }
-2021074 = { name="Caicoya" culture=asturian }
-2021075 = { name="Calleja" culture=asturian }
-2021076 = { name="Calzón" culture=asturian }
-2021077 = { name="Campillo" culture=asturian }
-2021078 = { name="Campoamor" culture=asturian }
-2021079 = { name="Canellada" culture=asturian }
-2021080 = { name="Canga" culture=asturian }
-2021081 = { name="Cano" culture=asturian }
-2021082 = { name="Canseco" culture=asturian }
-2021083 = { name="Canteli" culture=asturian }
-2021084 = { name="Cantero" culture=asturian }
-2021085 = { name="Carbajal" culture=asturian }
-2021086 = { name="Carcedo" culture=asturian }
-2021087 = { name="Carreño" culture=asturian }
-2021088 = { name="Casariego" culture=asturian }
-2021089 = { name="Casielles" culture=asturian }
-2021090 = { name="Caso" culture=asturian }
-2021091 = { name="Castro" culture=asturian }
-2021092 = { name="Catuxo" culture=asturian }
-2021093 = { name="Caunedo" culture=asturian }
-2021094 = { name="Ceña" culture=asturian }
-2021095 = { name="Ceñal" culture=asturian }
-2021096 = { name="Cernuda" culture=asturian }
-2021097 = { name="Cienfuegos" culture=asturian }
-2021098 = { name="Cienfuentes" culture=asturian }
-2021099 = { name="Cifuentes" culture=asturian }
-2021100 = { name="Cima" culture=asturian }
-2021101 = { name="Coalla" culture=asturian }
-2021102 = { name="Cuaya" culture=asturian }
-2021103 = { name="Collado" culture=asturian }
-2021104 = { name="Colunga" culture=asturian }
-2021105 = { name="Concepción" culture=asturian }
-2021106 = { name="Corral" culture=asturian }
-2021107 = { name="Corrales" culture=asturian }
-2021108 = { name="Corripio" culture=asturian }
-2021109 = { name="del Corro" culture=asturian }
-2021110 = { name="Cortina" culture=asturian }
-2021111 = { name="Corveiras" culture=asturian }
-2021012 = { name="Cosmen" culture=asturian }
-2021113 = { name="Cotarelo" culture=asturian }
-2021114 = { name="Coto" culture=asturian }
-2021115 = { name="Covián" culture=asturian }
-2021116 = { name="Coviella" culture=asturian }
-2021117 = { name="Cuadrado" culture=asturian }
-2021118 = { name="Cueli" culture=asturian }
-2021119 = { name="Cuendias" culture=asturian }
-2021120 = { name="Cuervo" culture=asturian }
-2021121 = { name="Cueto" culture=asturian }
-2021122 = { name="Cuetos" culture=asturian }
-2021123 = { name="Delgado" culture=asturian }
-2021124 = { name="Diego" culture=asturian }
-2021125 = { name="Durán" culture=asturian }
-2021126 = { name="Escalada" culture=asturian }
-2021127 = { name="Escanlar" culture=asturian }
-2021128 = { name="Escribano" culture=asturian }
-2021129 = { name="Escudero" culture=asturian }
-2021130 = { name="Esteban" culture=asturian }
-2021131 = { name="Estrada" culture=asturian }
-2021132 = { name="Evia" culture=asturian }
-2021133 = { name="Hevia" culture=asturian }
-2021134 = { name="Fabián" culture=asturian }
-2021135 = { name="Faes" culture=asturian }
-2021136 = { name="Falcón" culture=asturian }
-2021137 = { name="Fanjul" culture=asturian }
-2021138 = { name="Fano" culture=asturian }
-2021139 = { name="Farpón" culture=asturian }
-2021140 = { name="Favila" culture=asturian }
-2021141 = { name="Faza" culture=asturian }
-2021142 = { name="Feito" culture=asturian }
-2021143 = { name="Felgueroso" culture=asturian }
-2021144 = { name="Fernández" culture=asturian }
-2021145 = { name="Ferreira" culture=asturian }
-2021146 = { name="Ferreiría" culture=asturian }
-2021147 = { name="Ferreiro" culture=asturian }
-2021148 = { name="Ferrero" culture=asturian }
-2021149 = { name="Fidalgo" culture=asturian }
-2021210 = { name="Fierro" culture=asturian }
-2021211 = { name="Figar" culture=asturian }
-2021212 = { name="Folguerón" culture=asturian }
-2021213 = { name="Fonseca" culture=asturian }
-2021214 = { name="Friera" culture=asturian }
-2021215 = { name="Fruela" culture=asturian }
-2021216 = { name="Fueyo" culture=asturian }
-2021217 = { name="Gadea" culture=asturian }
-2021218 = { name="Gamoneda" culture=asturian }
-2021219 = { name="Gancedo" culture=asturian }
-2021160 = { name="Gándara" culture=asturian }
-2021161 = { name="Garcerán" culture=asturian }
-2021162 = { name="Galcerán" culture=asturian }
-2021163 = { name="García" culture=asturian }
-2021164 = { name="Garrido" culture=asturian }
-2021165 = { name="Gayo" culture=asturian }
-2021166 = { name="Gayoso" culture=asturian }
-2021167 = { name="Granda" culture=asturian }
-2021168 = { name="Graña" culture=asturian }
-2021169 = { name="Humara" culture=asturian }
-2021170 = { name="Bermúdez" culture=asturian }
-2021171 = { name="Umara" culture=asturian }
-2021172 = { name="Inclán" culture=asturian }
-2021173 = { name="Izquierdo" culture=asturian }
-2021174 = { name="Jove" culture=asturian }
-2021175 = { name="Jovellanos" culture=asturian }
-2021176 = { name="Junceda" culture=asturian }
-2021177 = { name="Junco" culture=asturian }
-2021178 = { name="Junquera" culture=asturian }
-2021179 = { name="Laiguarda" culture=asturian }
-2021180 = { name="Leiguarda" culture=asturian }
-2021181 = { name="Liguarda" culture=asturian }
-2021182 = { name="Lamadriz" culture=asturian }
-2021183 = { name="Lamuño" culture=asturian }
-2021184 = { name="Llamuño" culture=asturian }
-2021185 = { name="Lantero" culture=asturian }
-2021186 = { name="Lastra" culture=asturian }
-2021187 = { name="Laudelina" culture=asturian }
-2021188 = { name="Lavandera" culture=asturian }
-2021189 = { name="Legazpi" culture=asturian }
-2021190 = { name="Llaca" culture=asturian }
-2021191 = { name="Llamas" culture=asturian }
-2021192 = { name="Llamazares" culture=asturian }
-2021193 = { name="Llamedo" culture=asturian }
-2021194 = { name="Llaneza" culture=asturian }
-2021195 = { name="Llenín" culture=asturian }
-2021196 = { name="Llera" culture=asturian }
-2021197 = { name="Llerandi" culture=asturian }
-2021198 = { name="Lombardero" culture=asturian }
-2021199 = { name="Lombardía" culture=asturian }
-2021200 = { name="Longo" culture=asturian }
-2021201 = { name="Longoria" culture=catalan }
-2021202 = { name="López" culture=catalan }
-2021203 = { name="Lozano" culture=catalan }
-2021204 = { name="Luengo" culture=catalan }
-2021205 = { name="Madalena" culture=catalan }
-2021206 = { name="Malena" culture=catalan }
-2021207 = { name="Magadán" culture=catalan }
-2021208 = { name="Mallada" culture=asturian }
-2021209 = { name="Masavéu" culture=asturian }
-2021210 = { name="Mayor" culture=asturian }
-2021211 = { name="Mayora" culture=asturian }
-2021212 = { name="Meana" culture=asturian }
-2021213 = { name="Medio" culture=asturian }
-2021213 = { name="Mejido" culture=asturian }
-2021214 = { name="Megido" culture=asturian }
-2021215 = { name="Melendi" culture=asturian }
-2021216 = { name="Melendre" culture=asturian }
-2021217 = { name="Melendreras" culture=asturian }
-2021218 = { name="Méndez" culture=asturian }
-2021219 = { name="Mencía" culture=asturian }
-2021220 = { name="Menende" culture=asturian }
-2021221 = { name="Menéndez" culture=asturian }
-2021222 = { name="Mera" culture=asturian }
-2021223 = { name="Merchán" culture=asturian }
-2021224 = { name="Mier" culture=asturian }
-2021225 = { name="Migoyo" culture=asturian }
-2021226 = { name="Migoya" culture=asturian }
-2021227 = { name="Miranda" culture=asturian }
-2021228 = { name="Miyares" culture=asturian }
-2021229 = { name="Montero" culture=asturian }
-2021230 = { name="Monteserín" culture=asturian }
-2021231 = { name="Montoto" culture=asturian }
-2021232 = { name="Moradiellos" culture=asturian }
-2021233 = { name="Moral" culture=asturian }
-2021234 = { name="Morales" culture=asturian }
-2021235 = { name="Morís" culture=asturian }
-2021236 = { name="Muñiz" culture=asturian }
-2021237 = { name="Muñoz" culture=asturian }
-2021238 = { name="Naredo" culture=asturian }
-2021239 = { name="Naveiras" culture=asturian }
-2021240 = { name="Naves" culture=asturian }
-2021241 = { name="Naya" culture=asturian }
-2021242 = { name="Anaya" culture=asturian }
-2021243 = { name="Nicieza" culture=asturian }
-2021244 = { name="Nieda" culture=asturian }
-2021245 = { name="Noriega" culture=asturian }
-2021246 = { name="Noval" culture=asturian }
-2021247 = { name="Obaya" culture=asturian }
-2021248 = { name="Obeso" culture=asturian }
-2021249 = { name="Oblanca" culture=asturian }
-2021250 = { name="Ondina" culture=asturian }
-2021251 = { name="Ordiales" culture=asturian }
-2021252 = { name="Ordiz" culture=asturian }
-2021253 = { name="Ordóñez" culture=asturian }
-2021254 = { name="Ortea" culture=asturian }
-2021255 = { name="Ortega" culture=asturian }
-2021256 = { name="Ortiz" culture=asturian }
-2021257 = { name="Orviz" culture=asturian }
-2021258 = { name="Otero" culture=asturian }
-2021259 = { name="Pandiella" culture=asturian }
-2021260 = { name="Pando" culture=asturian }
-2021261 = { name="Pañeda" culture=asturian }
-2021262 = { name="Paredes" culture=asturian }
-2021263 = { name="Parrondo" culture=asturian }
-2021264 = { name="Pastur" culture=asturian }
-2021265 = { name="Patallo" culture=asturian }
-2021266 = { name="Pedrayes" culture=asturian }
-2021267 = { name="Peláez" culture=asturian }
-2021268 = { name="Pendás" culture=asturian }
-2021269 = { name="Pellicero" culture=asturian }
-2021270 = { name="Peón" culture=asturian }
-2021271 = { name="Pereda" culture=asturian }
-2021272 = { name="Pereira" culture=asturian }
-2021273 = { name="Pérez" culture=asturian }
-2021274 = { name="Pertierra" culture=asturian }
-2021275 = { name="Pevida" culture=asturian }
-2021276 = { name="Pidal" culture=asturian }
-2021277 = { name="Pis" culture=asturian }
-2021278 = { name="Ponce" culture=asturian }
-2021279 = { name="Poncela" culture=asturian }
-2021280 = { name="Ponte" culture=asturian }
-2021281 = { name="Posada" culture=asturian }
-2021282 = { name="Prendes" culture=asturian }
-2021283 = { name="Pruneda" culture=asturian }
-2021284 = { name="Prieto" culture=asturian }
-2021285 = { name="Puelo" culture=asturian }
-2021286 = { name="Pulgar" culture=asturian }
-2021287 = { name="Pumarino" culture=asturian }
-2021288 = { name="Queipo" culture=asturian }
-2021289 = { name="Quesada" culture=asturian }
-2021290 = { name="Quintana" culture=asturian }
-2021291 = { name="Quintanal" culture=asturian }
-2021292 = { name="Quiñones" culture=asturian }
-2021293 = { name="Quirós" culture=asturian }
-2021294 = { name="Rebustiello" culture=asturian }
-2021295 = { name="Robustiello" culture=asturian }
-2021296 = { name="Recio" culture=asturian }
-2021297 = { name="Redondo" culture=asturian }
-2021298 = { name="Regueral" culture=asturian }
-2021299 = { name="Remis" culture=asturian }
-2021300 = { name="Requejo" culture=asturian }
-2021301 = { name="Rionda" culture=asturian }
-2021302 = { name="Ribaya" culture=asturian }
-2021303 = { name="Ribero" culture=asturian }
-2021304 = { name="Rico" culture=asturian }
-2021305 = { name="Riestra" culture=asturian }
-2021306 = { name="Rivas" culture=asturian }
-2021307 = { name="Rodriguez" culture=asturian }
-2021308 = { name="Rotella" culture=asturian }
-2021309 = { name="de la Roza" culture=asturian }
-2021310 = { name="Rozada" culture=asturian }
-2021311 = { name="Rubiera" culture=asturian }
-2021312 = { name="Rubio" culture=asturian }
-2021313 = { name="Ruiz" culture=asturian }
-2021313 = { name="Salas" culture=asturian }
-2021314 = { name="Samaniego" culture=asturian }
-2021315 = { name="Sánchez" culture=asturian }
-2021316 = { name="Sandoval" culture=asturian }
-2021317 = { name="Sanjurjo" culture=asturian }
-2021318 = { name="Santarrúa" culture=asturian }
-2021319 = { name="Santoveña" culture=asturian }
-2021320 = { name="Seijas" culture=asturian }
-2021321 = { name="Seijo" culture=asturian }
-2021322 = { name="Sela" culture=asturian }
-2021323 = { name="Silva" culture=asturian }
-2021324 = { name="Silveira" culture=asturian }
-2021325 = { name="Siñeriz" culture=asturian }
-2021326 = { name="Sirgo" culture=asturian }
-2021327 = { name="Soberado" culture=asturian }
-2021328 = { name="Solís" culture=asturian }
-2021329 = { name="Somoano" culture=asturian }
-2021330 = { name="Somoza" culture=asturian }
-2021331 = { name="Sopena" culture=asturian }
-2021332 = { name="Sordo" culture=asturian }
-2021333 = { name="Soto" culture=asturian }
-2021334 = { name="Suárez" culture=asturian }
-2021335 = { name="Sueiras" culture=asturian }
-2021336 = { name="Susacasa" culture=asturian }
-2021337 = { name="Suero" culture=asturian }
-2021338 = { name="Tamargo" culture=asturian }
-2021339 = { name="Tejedor" culture=asturian }
-2021340 = { name="Terradillos" culture=asturian }
-2021341 = { name="Terreros" culture=asturian }
-2021342 = { name="Toba" culture=asturian }
-2021343 = { name="Tobar" culture=asturian }
-2021344 = { name="Tomillo" culture=asturian }
-2021345 = { name="Tolivar" culture=asturian }
-2021346 = { name="Toribiu" culture=asturian }
-2021347 = { name="Toral" culture=asturian }
-2021348 = { name="Toribión" culture=asturian }
-2021349 = { name="Trapiello" culture=asturian }
-2021350 = { name="Tuero" culture=asturian }
-2021351 = { name="Tuñón" culture=asturian }
-2021352 = { name="Umara" culture=asturian }
-2021353 = { name="Urdiales" culture=asturian }
-2021354 = { name="Uría" culture=asturian }
-2021355 = { name="Valares" culture=asturian }
-2021356 = { name="Valbona" culture=asturian }
-2021357 = { name="Valdés" culture=asturian }
-2021358 = { name="Valledor" culture=asturian }
-2021359 = { name="Vallina" culture=asturian }
-2021360 = { name="Valverde" culture=asturian }
-2021361 = { name="Vaquero" culture=asturian }
-2021362 = { name="Varela" culture=asturian }
-2021363 = { name="Vázquez" culture=asturian }
-2021364 = { name="Velarde" culture=asturian }
-2021365 = { name="Velasco" culture=asturian }
-2021366 = { name="Vélez" culture=asturian }
-2021367 = { name="Venancio" culture=asturian }
-2021368 = { name="Vidal" culture=asturian }
-2021369 = { name="Viejo" culture=asturian }
-2021370 = { name="Viesca" culture=asturian }
-2021371 = { name="Vigil" culture=asturian }
-2021372 = { name="Vixil" culture=asturian }
-2021373 = { name="Vigón" culture=asturian }
-2021374 = { name="Villabrille" culture=asturian }
-2021375 = { name="Vitsabritse" culture=asturian }
-2021376 = { name="Villadevelle" culture=asturian }
-2021377 = { name="Vilumbrales" culture=asturian }
-2021378 = { name="Vital" culture=asturian }
-2021379 = { name="Yagüe" culture=asturian }
-2021380 = { name="Zapico" culture=asturian }
-2021381 = { name="Zaloña" culture=asturian }
-2021382 = { name="Zarabozo" culture=asturian }
-2021383 = { name="Zarracina" culture=asturian }
+2021001 = { name="Abad" culture=asturleonese }
+2021002 = { name="Abascal" culture=asturleonese }
+2021003 = { name="Abella" culture=asturleonese }
+2021004 = { name="Acebal" culture=asturleonese }
+2021005 = { name="Acebedo" culture=asturleonese }
+2021006 = { name="Acero" culture=asturleonese }
+2021007 = { name="Aladro" culture=asturleonese }
+2021008 = { name="Alas" culture=asturleonese }
+2021009 = { name="Alba" culture=asturleonese }
+2021010 = { name="Albalá" culture=asturleonese }
+2021011 = { name="Albuerne" culture=asturleonese }
+2021012 = { name="Alperi" culture=asturleonese }
+2021013 = { name="Álvarez" culture=asturleonese }
+2021014 = { name="Ampudia" culture=asturleonese }
+2021015 = { name="Angulo" culture=asturleonese }
+2021016 = { name="Antón" culture=asturleonese }
+2021017 = { name="Antuña" culture=asturleonese }
+2021018 = { name="Arango" culture=asturleonese }
+2021019 = { name="Aralla" culture=asturleonese }
+2021020 = { name="Arbesú" culture=asturleonese }
+2021021 = { name="Arboleya" culture=asturleonese }
+2021022 = { name="Arce" culture=asturleonese }
+2021023 = { name="Ardura" culture=asturleonese }
+2021024 = { name="Areces" culture=asturleonese }
+2021025 = { name="Argentina" culture=asturleonese }
+2021026 = { name="Gentina" culture=asturleonese }
+2021027 = { name="Argüelles" culture=asturleonese }
+2021028 = { name="Arias" culture=asturleonese }
+2021029 = { name="Armayor" culture=asturleonese }
+2021030 = { name="Almayor" culture=asturleonese }
+2021031 = { name="Arnaldo" culture=asturleonese }
+2021032 = { name="Arruñada" culture=asturleonese }
+2021033 = { name="Arruza" culture=asturleonese }
+2021034 = { name="Ruza" culture=asturleonese }
+2021035 = { name="Artime" culture=asturleonese }
+2021036 = { name="Avellaneda" culture=asturleonese }
+2021037 = { name="Avello" culture=asturleonese }
+2021038 = { name="Aza" culture=asturleonese }
+2021039 = { name="Baizán" culture=asturleonese }
+2021040 = { name="Bances" culture=asturleonese }
+2021041 = { name="Barbado" culture=asturleonese }
+2021042 = { name="Barbón" culture=asturleonese }
+2021043 = { name="Barcia" culture=asturleonese }
+2021044 = { name="Bardales" culture=asturleonese }
+2021045 = { name="Bardo" culture=asturleonese }
+2021046 = { name="Bardasco" culture=asturleonese }
+2021047 = { name="Verdasco" culture=asturleonese }
+2021048 = { name="Barte" culture=asturleonese }
+2021049 = { name="Bayón" culture=asturleonese }
+2021050 = { name="Bedia" culture=asturleonese }
+2021051 = { name="Benavides" culture=asturleonese }
+2021052 = { name="Bercial" culture=asturleonese }
+2021053 = { name="Berdasco" culture=asturleonese }
+2021054 = { name="Bermúdez" culture=asturleonese }
+2021055 = { name="Bernal" culture=asturleonese }
+2021056 = { name="Bernardo" culture=asturleonese }
+2021057 = { name="Berrocal" culture=asturleonese }
+2021058 = { name="Blanco" culture=asturleonese }
+2021059 = { name="Blasón" culture=asturleonese }
+2021060 = { name="Bobes" culture=asturleonese }
+2021061 = { name="Borbolla" culture=asturleonese }
+2021062 = { name="Bousoño" culture=asturleonese }
+2021063 = { name="Bouza" culture=asturleonese }
+2021064 = { name="Braña" culture=asturleonese }
+2021065 = { name="Bruno" culture=asturleonese }
+2021066 = { name="Buelna" culture=asturleonese }
+2021067 = { name="Busto" culture=asturleonese }
+2021068 = { name="Bustillo" culture=asturleonese }
+2021069 = { name="Bustelo" culture=asturleonese }
+2021070 = { name="Buylla" culture=asturleonese }
+2021071 = { name="Cabo" culture=asturleonese }
+2021072 = { name="Cachero" culture=asturleonese }
+2021073 = { name="Cagigal" culture=asturleonese }
+2021074 = { name="Caicoya" culture=asturleonese }
+2021075 = { name="Calleja" culture=asturleonese }
+2021076 = { name="Calzón" culture=asturleonese }
+2021077 = { name="Campillo" culture=asturleonese }
+2021078 = { name="Campoamor" culture=asturleonese }
+2021079 = { name="Canellada" culture=asturleonese }
+2021080 = { name="Canga" culture=asturleonese }
+2021081 = { name="Cano" culture=asturleonese }
+2021082 = { name="Canseco" culture=asturleonese }
+2021083 = { name="Canteli" culture=asturleonese }
+2021084 = { name="Cantero" culture=asturleonese }
+2021085 = { name="Carbajal" culture=asturleonese }
+2021086 = { name="Carcedo" culture=asturleonese }
+2021087 = { name="Carreño" culture=asturleonese }
+2021088 = { name="Casariego" culture=asturleonese }
+2021089 = { name="Casielles" culture=asturleonese }
+2021090 = { name="Caso" culture=asturleonese }
+2021091 = { name="Castro" culture=asturleonese }
+2021092 = { name="Catuxo" culture=asturleonese }
+2021093 = { name="Caunedo" culture=asturleonese }
+2021094 = { name="Ceña" culture=asturleonese }
+2021095 = { name="Ceñal" culture=asturleonese }
+2021096 = { name="Cernuda" culture=asturleonese }
+2021097 = { name="Cienfuegos" culture=asturleonese }
+2021098 = { name="Cienfuentes" culture=asturleonese }
+2021099 = { name="Cifuentes" culture=asturleonese }
+2021100 = { name="Cima" culture=asturleonese }
+2021101 = { name="Coalla" culture=asturleonese }
+2021102 = { name="Cuaya" culture=asturleonese }
+2021103 = { name="Collado" culture=asturleonese }
+2021104 = { name="Colunga" culture=asturleonese }
+2021105 = { name="Concepción" culture=asturleonese }
+2021106 = { name="Corral" culture=asturleonese }
+2021107 = { name="Corrales" culture=asturleonese }
+2021108 = { name="Corripio" culture=asturleonese }
+2021109 = { name="del Corro" culture=asturleonese }
+2021110 = { name="Cortina" culture=asturleonese }
+2021111 = { name="Corveiras" culture=asturleonese }
+2021112 = { name="Cosmen" culture=asturleonese }
+2021113 = { name="Cotarelo" culture=asturleonese }
+2021114 = { name="Coto" culture=asturleonese }
+2021115 = { name="Covián" culture=asturleonese }
+2021116 = { name="Coviella" culture=asturleonese }
+2021117 = { name="Cuadrado" culture=asturleonese }
+2021118 = { name="Cueli" culture=asturleonese }
+2021119 = { name="Cuendias" culture=asturleonese }
+2021120 = { name="Cuervo" culture=asturleonese }
+2021121 = { name="Cueto" culture=asturleonese }
+2021122 = { name="Cuetos" culture=asturleonese }
+2021123 = { name="Delgado" culture=asturleonese }
+2021124 = { name="Diego" culture=asturleonese }
+2021125 = { name="Durán" culture=asturleonese }
+2021126 = { name="Escalada" culture=asturleonese }
+2021127 = { name="Escanlar" culture=asturleonese }
+2021128 = { name="Escribano" culture=asturleonese }
+2021129 = { name="Escudero" culture=asturleonese }
+2021130 = { name="Esteban" culture=asturleonese }
+2021131 = { name="Estrada" culture=asturleonese }
+2021132 = { name="Evia" culture=asturleonese }
+2021133 = { name="Hevia" culture=asturleonese }
+2021134 = { name="Fabián" culture=asturleonese }
+2021135 = { name="Faes" culture=asturleonese }
+2021136 = { name="Falcón" culture=asturleonese }
+2021137 = { name="Fanjul" culture=asturleonese }
+2021138 = { name="Fano" culture=asturleonese }
+2021139 = { name="Farpón" culture=asturleonese }
+2021140 = { name="Favila" culture=asturleonese }
+2021141 = { name="Faza" culture=asturleonese }
+2021142 = { name="Feito" culture=asturleonese }
+2021143 = { name="Felgueroso" culture=asturleonese }
+2021144 = { name="Fernández" culture=asturleonese }
+2021145 = { name="Ferreira" culture=asturleonese }
+2021146 = { name="Ferreiría" culture=asturleonese }
+2021147 = { name="Ferreiro" culture=asturleonese }
+2021148 = { name="Ferrero" culture=asturleonese }
+2021149 = { name="Fidalgo" culture=asturleonese }
+2021150 = { name="Fierro" culture=asturleonese }
+2021151 = { name="Figar" culture=asturleonese }
+2021152 = { name="Folguerón" culture=asturleonese }
+2021153 = { name="Fonseca" culture=asturleonese }
+2021154 = { name="Friera" culture=asturleonese }
+2021155 = { name="Fruela" culture=asturleonese }
+2021156 = { name="Fueyo" culture=asturleonese }
+2021157 = { name="Gadea" culture=asturleonese }
+2021158 = { name="Gamoneda" culture=asturleonese }
+2021159 = { name="Gancedo" culture=asturleonese }
+2021160 = { name="Gándara" culture=asturleonese }
+2021161 = { name="Garcerán" culture=asturleonese }
+2021162 = { name="Galcerán" culture=asturleonese }
+2021163 = { name="García" culture=asturleonese }
+2021164 = { name="Garrido" culture=asturleonese }
+2021165 = { name="Gayo" culture=asturleonese }
+2021166 = { name="Gayoso" culture=asturleonese }
+2021167 = { name="Granda" culture=asturleonese }
+2021168 = { name="Graña" culture=asturleonese }
+2021169 = { name="Humara" culture=asturleonese }
+2021170 = { name="Bermúdez" culture=asturleonese }
+2021171 = { name="Umara" culture=asturleonese }
+2021172 = { name="Inclán" culture=asturleonese }
+2021173 = { name="Izquierdo" culture=asturleonese }
+2021174 = { name="Jove" culture=asturleonese }
+2021175 = { name="Jovellanos" culture=asturleonese }
+2021176 = { name="Junceda" culture=asturleonese }
+2021177 = { name="Junco" culture=asturleonese }
+2021178 = { name="Junquera" culture=asturleonese }
+2021179 = { name="Laiguarda" culture=asturleonese }
+2021180 = { name="Leiguarda" culture=asturleonese }
+2021181 = { name="Liguarda" culture=asturleonese }
+2021182 = { name="Lamadriz" culture=asturleonese }
+2021183 = { name="Lamuño" culture=asturleonese }
+2021184 = { name="Llamuño" culture=asturleonese }
+2021185 = { name="Lantero" culture=asturleonese }
+2021186 = { name="Lastra" culture=asturleonese }
+2021187 = { name="Laudelina" culture=asturleonese }
+2021188 = { name="Lavandera" culture=asturleonese }
+2021189 = { name="Legazpi" culture=asturleonese }
+2021190 = { name="Llaca" culture=asturleonese }
+2021191 = { name="Llamas" culture=asturleonese }
+2021192 = { name="Llamazares" culture=asturleonese }
+2021193 = { name="Llamedo" culture=asturleonese }
+2021194 = { name="Llaneza" culture=asturleonese }
+2021195 = { name="Llenín" culture=asturleonese }
+2021196 = { name="Llera" culture=asturleonese }
+2021197 = { name="Llerandi" culture=asturleonese }
+2021198 = { name="Lombardero" culture=asturleonese }
+2021199 = { name="Lombardía" culture=asturleonese }
+2021200 = { name="Longo" culture=asturleonese }
+2021201 = { name="Longoria" culture=asturleonese }
+2021202 = { name="López" culture=asturleonese }
+2021203 = { name="Lozano" culture=asturleonese }
+2021204 = { name="Luengo" culture=asturleonese }
+2021205 = { name="Madalena" culture=asturleonese }
+2021206 = { name="Malena" culture=asturleonese }
+2021207 = { name="Magadán" culture=asturleonese }
+2021208 = { name="Mallada" culture=asturleonese }
+2021209 = { name="Masavéu" culture=asturleonese }
+2021210 = { name="Mayor" culture=asturleonese }
+2021211 = { name="Mayora" culture=asturleonese }
+2021212 = { name="Meana" culture=asturleonese }
+2021213 = { name="Medio" culture=asturleonese }
+2021214 = { name="Megido" culture=asturleonese }
+2021215 = { name="Melendi" culture=asturleonese }
+2021216 = { name="Melendre" culture=asturleonese }
+2021217 = { name="Melendreras" culture=asturleonese }
+2021218 = { name="Méndez" culture=asturleonese }
+2021219 = { name="Mencía" culture=asturleonese }
+2021220 = { name="Menende" culture=asturleonese }
+2021221 = { name="Menéndez" culture=asturleonese }
+2021222 = { name="Mera" culture=asturleonese }
+2021223 = { name="Merchán" culture=asturleonese }
+2021224 = { name="Mier" culture=asturleonese }
+2021225 = { name="Migoyo" culture=asturleonese }
+2021226 = { name="Migoya" culture=asturleonese }
+2021227 = { name="Miranda" culture=asturleonese }
+2021228 = { name="Miyares" culture=asturleonese }
+2021229 = { name="Montero" culture=asturleonese }
+2021230 = { name="Monteserín" culture=asturleonese }
+2021231 = { name="Montoto" culture=asturleonese }
+2021232 = { name="Moradiellos" culture=asturleonese }
+2021233 = { name="Moral" culture=asturleonese }
+2021234 = { name="Morales" culture=asturleonese }
+2021235 = { name="Morís" culture=asturleonese }
+2021236 = { name="Muñiz" culture=asturleonese }
+2021237 = { name="Muñoz" culture=asturleonese }
+2021238 = { name="Naredo" culture=asturleonese }
+2021239 = { name="Naveiras" culture=asturleonese }
+2021240 = { name="Naves" culture=asturleonese }
+2021241 = { name="Naya" culture=asturleonese }
+2021242 = { name="Anaya" culture=asturleonese }
+2021243 = { name="Nicieza" culture=asturleonese }
+2021244 = { name="Nieda" culture=asturleonese }
+2021245 = { name="Noriega" culture=asturleonese }
+2021246 = { name="Noval" culture=asturleonese }
+2021247 = { name="Obaya" culture=asturleonese }
+2021248 = { name="Obeso" culture=asturleonese }
+2021249 = { name="Oblanca" culture=asturleonese }
+2021250 = { name="Ondina" culture=asturleonese }
+2021251 = { name="Ordiales" culture=asturleonese }
+2021252 = { name="Ordiz" culture=asturleonese }
+2021253 = { name="Ordóñez" culture=asturleonese }
+2021254 = { name="Ortea" culture=asturleonese }
+2021255 = { name="Ortega" culture=asturleonese }
+2021256 = { name="Ortiz" culture=asturleonese }
+2021257 = { name="Orviz" culture=asturleonese }
+2021258 = { name="Otero" culture=asturleonese }
+2021259 = { name="Pandiella" culture=asturleonese }
+2021260 = { name="Pando" culture=asturleonese }
+2021261 = { name="Pañeda" culture=asturleonese }
+2021262 = { name="Paredes" culture=asturleonese }
+2021263 = { name="Parrondo" culture=asturleonese }
+2021264 = { name="Pastur" culture=asturleonese }
+2021265 = { name="Patallo" culture=asturleonese }
+2021266 = { name="Pedrayes" culture=asturleonese }
+2021267 = { name="Peláez" culture=asturleonese }
+2021268 = { name="Pendás" culture=asturleonese }
+2021269 = { name="Pellicero" culture=asturleonese }
+2021270 = { name="Peón" culture=asturleonese }
+2021271 = { name="Pereda" culture=asturleonese }
+2021272 = { name="Pereira" culture=asturleonese }
+2021273 = { name="Pérez" culture=asturleonese }
+2021274 = { name="Pertierra" culture=asturleonese }
+2021275 = { name="Pevida" culture=asturleonese }
+2021276 = { name="Pidal" culture=asturleonese }
+2021277 = { name="Pis" culture=asturleonese }
+2021278 = { name="Ponce" culture=asturleonese }
+2021279 = { name="Poncela" culture=asturleonese }
+2021280 = { name="Ponte" culture=asturleonese }
+2021281 = { name="Posada" culture=asturleonese }
+2021282 = { name="Prendes" culture=asturleonese }
+2021283 = { name="Pruneda" culture=asturleonese }
+2021284 = { name="Prieto" culture=asturleonese }
+2021285 = { name="Puelo" culture=asturleonese }
+2021286 = { name="Pulgar" culture=asturleonese }
+2021287 = { name="Pumarino" culture=asturleonese }
+2021288 = { name="Queipo" culture=asturleonese }
+2021289 = { name="Quesada" culture=asturleonese }
+2021290 = { name="Quintana" culture=asturleonese }
+2021291 = { name="Quintanal" culture=asturleonese }
+2021292 = { name="Quiñones" culture=asturleonese }
+2021293 = { name="Quirós" culture=asturleonese }
+2021294 = { name="Rebustiello" culture=asturleonese }
+2021295 = { name="Robustiello" culture=asturleonese }
+2021296 = { name="Recio" culture=asturleonese }
+2021297 = { name="Redondo" culture=asturleonese }
+2021298 = { name="Regueral" culture=asturleonese }
+2021299 = { name="Remis" culture=asturleonese }
+2021300 = { name="Requejo" culture=asturleonese }
+2021301 = { name="Rionda" culture=asturleonese }
+2021302 = { name="Ribaya" culture=asturleonese }
+2021303 = { name="Ribero" culture=asturleonese }
+2021304 = { name="Rico" culture=asturleonese }
+2021305 = { name="Riestra" culture=asturleonese }
+2021306 = { name="Rivas" culture=asturleonese }
+2021307 = { name="Rodriguez" culture=asturleonese }
+2021308 = { name="Rotella" culture=asturleonese }
+2021309 = { name="de la Roza" culture=asturleonese }
+2021310 = { name="Rozada" culture=asturleonese }
+2021311 = { name="Rubiera" culture=asturleonese }
+2021312 = { name="Rubio" culture=asturleonese }
+2021313 = { name="Ruiz" culture=asturleonese }
+2021314 = { name="Samaniego" culture=asturleonese }
+2021315 = { name="Sánchez" culture=asturleonese }
+2021316 = { name="Sandoval" culture=asturleonese }
+2021317 = { name="Sanjurjo" culture=asturleonese }
+2021318 = { name="Santarrúa" culture=asturleonese }
+2021319 = { name="Santoveña" culture=asturleonese }
+2021320 = { name="Seijas" culture=asturleonese }
+2021321 = { name="Seijo" culture=asturleonese }
+2021322 = { name="Sela" culture=asturleonese }
+2021323 = { name="Silva" culture=asturleonese }
+2021324 = { name="Silveira" culture=asturleonese }
+2021325 = { name="Siñeriz" culture=asturleonese }
+2021326 = { name="Sirgo" culture=asturleonese }
+2021327 = { name="Soberado" culture=asturleonese }
+2021328 = { name="Solís" culture=asturleonese }
+2021329 = { name="Somoano" culture=asturleonese }
+2021330 = { name="Somoza" culture=asturleonese }
+2021331 = { name="Sopena" culture=asturleonese }
+2021332 = { name="Sordo" culture=asturleonese }
+2021333 = { name="Soto" culture=asturleonese }
+2021334 = { name="Suárez" culture=asturleonese }
+2021335 = { name="Sueiras" culture=asturleonese }
+2021336 = { name="Susacasa" culture=asturleonese }
+2021337 = { name="Suero" culture=asturleonese }
+2021338 = { name="Tamargo" culture=asturleonese }
+2021339 = { name="Tejedor" culture=asturleonese }
+2021340 = { name="Terradillos" culture=asturleonese }
+2021341 = { name="Terreros" culture=asturleonese }
+2021342 = { name="Toba" culture=asturleonese }
+2021343 = { name="Tobar" culture=asturleonese }
+2021344 = { name="Tomillo" culture=asturleonese }
+2021345 = { name="Tolivar" culture=asturleonese }
+2021346 = { name="Toribiu" culture=asturleonese }
+2021347 = { name="Toral" culture=asturleonese }
+2021348 = { name="Toribión" culture=asturleonese }
+2021349 = { name="Trapiello" culture=asturleonese }
+2021350 = { name="Tuero" culture=asturleonese }
+2021351 = { name="Tuñón" culture=asturleonese }
+2021352 = { name="Umara" culture=asturleonese }
+2021353 = { name="Urdiales" culture=asturleonese }
+2021354 = { name="Uría" culture=asturleonese }
+2021355 = { name="Valares" culture=asturleonese }
+2021356 = { name="Valbona" culture=asturleonese }
+2021357 = { name="Valdés" culture=asturleonese }
+2021358 = { name="Valledor" culture=asturleonese }
+2021359 = { name="Vallina" culture=asturleonese }
+2021360 = { name="Valverde" culture=asturleonese }
+2021361 = { name="Vaquero" culture=asturleonese }
+2021362 = { name="Varela" culture=asturleonese }
+2021363 = { name="Vázquez" culture=asturleonese }
+2021364 = { name="Velarde" culture=asturleonese }
+2021365 = { name="Velasco" culture=asturleonese }
+2021366 = { name="Vélez" culture=asturleonese }
+2021367 = { name="Venancio" culture=asturleonese }
+2021368 = { name="Vidal" culture=asturleonese }
+2021369 = { name="Viejo" culture=asturleonese }
+2021370 = { name="Viesca" culture=asturleonese }
+2021371 = { name="Vigil" culture=asturleonese }
+2021372 = { name="Vixil" culture=asturleonese }
+2021373 = { name="Vigón" culture=asturleonese }
+2021374 = { name="Villabrille" culture=asturleonese }
+2021375 = { name="Vitsabritse" culture=asturleonese }
+2021376 = { name="Villadevelle" culture=asturleonese }
+2021377 = { name="Vilumbrales" culture=asturleonese }
+2021378 = { name="Vital" culture=asturleonese }
+2021379 = { name="Yagüe" culture=asturleonese }
+2021380 = { name="Zapico" culture=asturleonese }
+2021381 = { name="Zaloña" culture=asturleonese }
+2021382 = { name="Zarabozo" culture=asturleonese }
+2021383 = { name="Zarracina" culture=asturleonese }
+2021384 = { name="Salas" culture=asturleonese }
+2021385 = { name="Mejido" culture=asturleonese }
 
 2022001 = { name="Albor" culture=galician }
 2022002 = { name="Alcobre" culture=galician }
@@ -16118,7 +16098,7 @@ coat_of_arms = {
 2022014 = { name="Baamonde" culture=galician }
 2022015 = { name="Balboa" culture=galician }
 2022016 = { name="Baldomar" culture=galician }
-2022022 = { name="Baldomir" culture=galician }
+2022017 = { name="Baldomir" culture=galician }
 2022018 = { name="Balea" culture=galician }
 2022019 = { name="Baleato" culture=galician }
 2022020 = { name="Baltar" culture=galician }
@@ -16213,7 +16193,7 @@ coat_of_arms = {
 2022109 = { name="Landriz" culture=galician }
 2022110 = { name="Lemos" culture=galician }
 2022111 = { name="Lesende" culture=galician }
-2022012 = { name="Lindín" culture=galician }
+2022112 = { name="Lindín" culture=galician }
 2022113 = { name="Longo" culture=galician }
 2022114 = { name="Louredo" culture=galician }
 2022115 = { name="Louzán" culture=galician }
@@ -16250,17 +16230,17 @@ coat_of_arms = {
 2022146 = { name="Pardal" culture=galician }
 2022147 = { name="Paz" culture=galician }
 2022148 = { name="Pazó" culture=galician }
-2022210 = { name="Peres" culture=galician }
 2022149 = { name="Pereira" culture=galician }
-2022211 = { name="Peres" culture=galician }
-2022212 = { name="Pesqueira" culture=galician }
-2022213 = { name="Pichel" culture=galician }
-2022214 = { name="Piñeiro" culture=galician }
-2022215 = { name="Poceiro" culture=galician }
-2022216 = { name="Pombo" culture=galician }
-2022217 = { name="Portela" culture=galician }
-2022218 = { name="Porto" culture=galician }
-2022219 = { name="Pose" culture=galician }
+2022150 = { name="Peres" culture=galician }
+2022151 = { name="Peres" culture=galician }
+2022152 = { name="Pesqueira" culture=galician }
+2022153 = { name="Pichel" culture=galician }
+2022154 = { name="Piñeiro" culture=galician }
+2022155 = { name="Poceiro" culture=galician }
+2022156 = { name="Pombo" culture=galician }
+2022157 = { name="Portela" culture=galician }
+2022158 = { name="Porto" culture=galician }
+2022159 = { name="Pose" culture=galician }
 2022160 = { name="Poseiro" culture=galician }
 2022161 = { name="Posse" culture=galician }
 2022162 = { name="Prol" culture=galician }
@@ -16331,7 +16311,7 @@ coat_of_arms = {
 2023014 = { name="Parody" culture=llanito }
 2023015 = { name="Linares" culture=llanito }
 2023016 = { name="Robba" culture=llanito }
-2023022 = { name="Perera" culture=llanito }
+2023017 = { name="Perera" culture=llanito }
 2023018 = { name="Sanchez" culture=llanito }
 2023019 = { name="Asquez" culture=llanito }
 2023020 = { name="Mifsud" culture=llanito }
@@ -16426,7 +16406,7 @@ coat_of_arms = {
 2023109 = { name="Vinent" culture=llanito }
 2023110 = { name="Hernandez" culture=llanito }
 2023111 = { name="Sevilla" culture=llanito }
-2023012 = { name="Diaz" culture=llanito }
+2023112 = { name="Diaz" culture=llanito }
 2023113 = { name="Romero" culture=llanito }
 2023114 = { name="Navarro" culture=llanito }
 2023115 = { name="Torres" culture=llanito }
@@ -16492,7 +16472,7 @@ coat_of_arms = {
 2024014 = { name="Alves" culture=portuguese }
 2024015 = { name="Alves da Silva" culture=portuguese }
 2024016 = { name="Alvim" culture=portuguese }
-2024022 = { name="Amaral" culture=portuguese }
+2024017 = { name="Amaral" culture=portuguese }
 2024018 = { name="Amorim" culture=portuguese }
 2024019 = { name="Andrade" culture=portuguese }
 2024020 = { name="Antunes" culture=portuguese }
@@ -16586,7 +16566,7 @@ coat_of_arms = {
 2024109 = { name="Gouveia" culture=portuguese religion=quinto}
 2024110 = { name="Guardado" culture=portuguese }
 2024111 = { name="Guedes" culture=portuguese }
-2024012 = { name="Guerra" culture=portuguese }
+2024112 = { name="Guerra" culture=portuguese }
 2024113 = { name="Guerreiro" culture=portuguese }
 2024114 = { name="Gusmão" culture=portuguese }
 2024115 = { name="Henriques" culture=portuguese }
@@ -16730,7 +16710,7 @@ coat_of_arms = {
 2024240 = { name="Venancio" culture=portuguese }
 2024241 = { name="Vidal" culture=portuguese }
 2024242 = { name="Vieira" culture=portuguese }
-2021243 = { name="Vila" culture=portuguese }
+2024243 = { name="Vila" culture=portuguese }
 2024244 = { name="Anjos" culture=portuguese }
 2024245 = { name="Domingues" culture=portuguese }
 2024246 = { name="Garcia" culture=portuguese }
@@ -16996,7 +16976,7 @@ coat_of_arms = {
 2026109 = { name="Marone Cinzano" culture=piedmontese }
 2026110 = { name="Ongran" culture=piedmontese }
 2026111 = { name="Pascale" culture=piedmontese }
-2026012 = { name="di Pombia" culture=piedmontese }
+2026112 = { name="di Pombia" culture=piedmontese }
 2026113 = { name="Prasca" culture=piedmontese }
 2026114 = { name="Provana" culture=piedmontese }
 2026115 = { name="Ribotti" culture=piedmontese }
@@ -17183,7 +17163,7 @@ coat_of_arms = {
 2027109 = { name="Serraino" culture=sicilian }
 2027110 = { name="Tripodo" culture=sicilian }
 2027111 = { name="Zindato" culture=sicilian }
-2027012 = { name="Iamonte" culture=sicilian }
+2027112 = { name="Iamonte" culture=sicilian }
 2027113 = { name="Araniti" culture=sicilian }
 2027114 = { name="Imerti" culture=sicilian }
 2027115 = { name="Mammoliti" culture=sicilian }
@@ -17314,7 +17294,7 @@ coat_of_arms = {
 2027240 = { name="Schittone" culture=sicilian }
 2027241 = { name="Ascia" culture=sicilian }
 2027242 = { name="Comandatore" culture=sicilian }
-2021243 = { name="Pernaci" culture=sicilian }
+2027243 = { name="Pernaci" culture=sicilian }
 2027244 = { name="Duchetta" culture=sicilian }
 2027245 = { name="Curvà" culture=sicilian }
 2027246 = { name="Livrizzi" culture=sicilian }
@@ -17526,7 +17506,7 @@ coat_of_arms = {
 2028109 = { name="Cicero" culture=neapolitan }
 2028110 = { name="Lanzino" culture=neapolitan }
 2028111 = { name="Perna" culture=neapolitan }
-2028012 = { name="Pino" culture=neapolitan }
+2028112 = { name="Pino" culture=neapolitan }
 2028113 = { name="Acri" culture=neapolitan }
 2028114 = { name="Farao" culture=neapolitan }
 2028115 = { name="Vrenna" culture=neapolitan }
@@ -17819,7 +17799,7 @@ coat_of_arms = {
 2029109 = { name="Agostinelli" culture=umbrian }
 2029110 = { name="Marconi" culture=umbrian }
 2029111 = { name="Carloni" culture=umbrian }
-2029012 = { name="Santoni" culture=umbrian }
+2029112 = { name="Santoni" culture=umbrian }
 2029113 = { name="Pascucci" culture=umbrian }
 2029114 = { name="Bartolucci" culture=umbrian }
 2029115 = { name="Balducci" culture=umbrian }
@@ -18118,7 +18098,7 @@ coat_of_arms = {
 2030109 = { name="Onesti" culture=tuscan }
 2030110 = { name="Bolognesi" culture=tuscan }
 2030111 = { name="Bulgari" culture=tuscan }
-2030012 = { name="Ungaro" culture=tuscan }
+2030112 = { name="Ungaro" culture=tuscan }
 2030113 = { name="Di Chiara" culture=tuscan }
 2030114 = { name="Di Maria" culture=tuscan }
 2030115 = { name="Del Giudice" culture=tuscan }
@@ -18393,7 +18373,7 @@ coat_of_arms = {
 2031109 = { name="Carlone" culture=lombard }
 2031110 = { name="Cicogna-Mozzoni" culture=lombard }
 2031111 = { name="Corradidi" culture=lombard }
-2031012 = { name="Curti" culture=lombard }
+2031112 = { name="Curti" culture=lombard }
 2031113 = { name="Feltrinelli" culture=lombard }
 2031114 = { name="Gavazzi" culture=lombard }
 2031115 = { name="Gallarati" culture=lombard }
@@ -18643,7 +18623,7 @@ coat_of_arms = {
 2032109 = { name="Graziani" culture=romagnol }
 2032110 = { name="Tassinari" culture=romagnol }
 2032111 = { name="Sala" culture=romagnol }
-2032012 = { name="Morselli" culture=romagnol }
+2032112 = { name="Morselli" culture=romagnol }
 2032113 = { name="Corradini" culture=romagnol }
 2032114 = { name="Piccinini" culture=romagnol }
 2032115 = { name="di Classe" culture=romagnol used_for_random=no
@@ -18787,7 +18767,7 @@ coat_of_arms = {
 2032240 = { name="Carandini" culture=romagnol }
 2032241 = { name="Castelvetri" culture=romagnol }
 2032242 = { name="Della Rosa" culture=romagnol }
-2021243 = { name="Tassoni" culture=romagnol }
+2032243 = { name="Tassoni" culture=romagnol }
 2032244 = { name="Formiggini" culture=romagnol }
 2032245 = { name="Aldighieri" culture=romagnol }
 2032246 = { name="Buonvisi" culture=romagnol }
@@ -18945,7 +18925,7 @@ coat_of_arms = {
 2033109 = { name="Boitano" culture=ligurian }
 2033110 = { name="Colombo" culture=ligurian }
 2033111 = { name="Cordano" culture=ligurian }
-2033012 = { name="Roccatagliata" culture=ligurian }
+2033112 = { name="Roccatagliata" culture=ligurian }
 2033113 = { name="Schiaffino" culture=ligurian }
 2033114 = { name="Olivari" culture=ligurian }
 2033115 = { name="Figari" culture=ligurian }
@@ -19271,7 +19251,7 @@ coat_of_arms = {
 2034109 = { name="Zampier" culture=venetian }
 2034110 = { name="Zulian" culture=venetian }
 2034111 = { name="Furlanin" culture=venetian }
-2034012 = { name="Cazzaro" culture=venetian }
+2034112 = { name="Cazzaro" culture=venetian }
 2034113 = { name="Borsato" culture=venetian }
 2034114 = { name="Busato" culture=venetian }
 2034115 = { name="Carestiato" culture=venetian }
@@ -19820,7 +19800,7 @@ coat_of_arms = {
 2036109 = { name="Paulon" culture=friulian }
 2036110 = { name="Tinor" culture=friulian }
 2036111 = { name="Traina" culture=friulian }
-2036012 = { name="Cozzi" culture=friulian }
+2036112 = { name="Cozzi" culture=friulian }
 2036113 = { name="Bortolussi" culture=friulian }
 2036114 = { name="Cesca" culture=friulian }
 2036115 = { name="Franz" culture=friulian }
@@ -20073,7 +20053,7 @@ coat_of_arms = {
 2037109 = { name="Lemaître" culture=norman }
 2037110 = { name="Maillard" culture=norman }
 2037111 = { name="Duboc" culture=norman }
-2037012 = { name="Masson" culture=norman }
+2037112 = { name="Masson" culture=norman }
 2037113 = { name="Vallée" culture=norman }
 2037114 = { name="Avenel" culture=norman }
 2037115 = { name="Dupuis" culture=norman }
@@ -20326,7 +20306,7 @@ coat_of_arms = {
 2038109 = { name="Kateb" culture=francarabe }
 2038110 = { name="Khechna" culture=francarabe }
 2038111 = { name="Khemis" culture=francarabe }
-2038012 = { name="Khider" culture=francarabe }
+2038112 = { name="Khider" culture=francarabe }
 2038113 = { name="Klifa" culture=francarabe }
 2038114 = { name="Lamari" culture=francarabe }
 2038115 = { name="Lelouch" culture=francarabe }
@@ -20692,7 +20672,7 @@ coat_of_arms = {
 2039109 = { name="Schibeny" culture=alsatian }
 2039110 = { name="Duminger" culture=alsatian }
 2039111 = { name="Fahrlaender" culture=alsatian }
-2039012 = { name="Lavenn" culture=alsatian }
+2039112 = { name="Lavenn" culture=alsatian }
 2039113 = { name="Stempflin" culture=alsatian }
 2039114 = { name="Pflimlin" culture=alsatian }
 2039115 = { name="Guhring" culture=alsatian }
@@ -20908,7 +20888,7 @@ coat_of_arms = {
 2040109 = { name="Serghazin" culture=kazakh }
 2040110 = { name="Myrzabek" culture=kazakh }
 2040111 = { name="Biläl" culture=kazakh }
-2040012 = { name="Tolghanbai" culture=kazakh }
+2040112 = { name="Tolghanbai" culture=kazakh }
 2040113 = { name="Jylqyshyuly" culture=kazakh }
 2040114 = { name="Aiymbetov" culture=kazakh used_for_random=no 
 	coat_of_arms = { 
@@ -21091,7 +21071,7 @@ coat_of_arms = {
 2041109 = { name="Hamraýew" culture=turkmen }
 2041110 = { name="Hangeldiýew" culture=turkmen }
 2041111 = { name="Haýdarow" culture=turkmen }
-2041012 = { name="Hojaahmedow" culture=turkmen }
+2041112 = { name="Hojaahmedow" culture=turkmen }
 2041113 = { name="Hojaýew" culture=turkmen }
 2041114 = { name="Mirsultanow" culture=turkmen }
 2041115 = { name="Menzeleýew" culture=turkmen }
@@ -21168,7 +21148,6 @@ coat_of_arms = {
 2042007 = { name="Awsar" culture=riffian }
 2042008 = { name="Boulahrouz" culture=riffian }
 2042009 = { name="Tigdwini" culture=riffian }
-2042009 = { name="Belhadj" culture=riffian }
 2042010 = { name="El Hachmi" culture=riffian }
 2042011 = { name="Fachtali" culture=riffian }
 2042012 = { name="Ouaraghli" culture=riffian }
@@ -21211,6 +21190,7 @@ coat_of_arms = {
 2042049 = { name="Bouyeri" culture=riffian }
 2042050 = { name="Achahbar" culture=riffian }
 2042051 = { name="Axettab" culture=riffian }
+2042052 = { name="Belhadj" culture=riffian }
 
 2043000 = { name="Tazeggwaght" culture=chaoui }
 2043001 = { name="Jermuni" culture=chaoui }
@@ -21751,7 +21731,7 @@ coat_of_arms = {
 2047014 = { name="Samardzhiev" culture=bulgarian }
 2047015 = { name="Soymirov" culture=bulgarian }
 2047016 = { name="Stanimirov" culture=bulgarian }
-2047022 = { name="Stanislavov" culture=bulgarian }
+2047017 = { name="Stanislavov" culture=bulgarian }
 2047018 = { name="Tomagionov" culture=bulgarian }
 2047019 = { name="Toshkov" culture=bulgarian }
 2047020 = { name="Hadzhivalchev" culture=bulgarian }
@@ -21846,7 +21826,7 @@ coat_of_arms = {
 2047109 = { name="Ivkov" culture=bulgarian }
 2047110 = { name="Indzhov" culture=bulgarian }
 2047111 = { name="Ignatov" culture=bulgarian }
-2047012 = { name="Yordanov" culture=bulgarian }
+2047112 = { name="Yordanov" culture=bulgarian }
 2047113 = { name="Kamenov" culture=bulgarian }
 2047114 = { name="Kantardzhiev" culture=bulgarian }
 2047115 = { name="Karavelov" culture=bulgarian }
@@ -21951,7 +21931,7 @@ coat_of_arms = {
 2048014 = { name="Churovic" culture=montenegrin }
 2048015 = { name="Damjanac" culture=montenegrin }
 2048016 = { name="Delic" culture=montenegrin }
-2048022 = { name="Demirovic" culture=montenegrin }
+2048017 = { name="Demirovic" culture=montenegrin }
 2048018 = { name="Djakonovic" culture=montenegrin }
 2048019 = { name="Djikanovic" culture=montenegrin }
 2048020 = { name="Djokovic" culture=montenegrin }
@@ -22858,7 +22838,6 @@ coat_of_arms = {
 2053169 = { name="Tawtiaty" culture=ossetian }
 2053170 = { name="Taqazty" culture=ossetian }
 2053171 = { name="Tedety" culture=ossetian }
-2053171 = { name="Temyrkhanty" culture=ossetian }
 2053172 = { name="Tmenaty" culture=ossetian }
 2053173 = { name="Togyzty" culture=ossetian }
 2053174 = { name="Tokaty" culture=ossetian }
@@ -22925,6 +22904,7 @@ coat_of_arms = {
 2053235 = { name="Cheldyty" culture=ossetian }
 2053236 = { name="Cherchesty" culture=ossetian }
 2053237 = { name="Chekhoyty" culture=ossetian }
+2053238 = { name="Temyrkhanty" culture=ossetian }
 
 2054000 = { name="Ismayil" culture=azeri
 	coat_of_arms = { 
@@ -25074,8 +25054,6 @@ coat_of_arms = {
 2065017 = { name="Aref" culture=turcoman }
 2065018 = { name="Tozlo" culture=turcoman }
 2065019 = { name="Köprölü" culture=turcoman }
-2065019 = { name="Kirdar" culture=turcoman }
-2065019 = { name="Abdullah" culture=turcoman }
 2065020 = { name="Askari" culture=turcoman }
 2065021 = { name="Hashimi" culture=turcoman }
 2065022 = { name="Bayati" culture=turcoman }
@@ -25093,6 +25071,8 @@ coat_of_arms = {
 2065034 = { name="Mahmud" culture=turcoman }
 2065035 = { name="Tuzlu" culture=turcoman }
 2065036 = { name="Sirmali" culture=turcoman }
+2065037 = { name="Kirdar" culture=turcoman }
+2065038 = { name="Abdullah" culture=turcoman }
 
 2066000 = { name="Kezêban" culture=kurdish 
 	coat_of_arms = { 
@@ -25328,7 +25308,6 @@ coat_of_arms = {
 2067018 = { name="Zenden" culture=limburgish }
 2067019 = { name="Debye" culture=limburgish }
 2067020 = { name="Eurlings" culture=limburgish }
-2067020 = { name="Vliers" culture=limburgish }
 2067021 = { name="Geboers" culture=limburgish }
 2067022 = { name="Vanderaerden" culture=limburgish }
 2067023 = { name="Claes" culture=limburgish }
@@ -25364,6 +25343,7 @@ coat_of_arms = {
 2067053 = { name="Boels" culture=limburgish }
 2067054 = { name="Roermond" culture=limburgish }
 2067055 = { name="Regout" culture=limburgish }
+2067056 = { name="Vliers" culture=limburgish }
 
 2068000 = { name="Hamzatil" culture=avar }
 2068001 = { name="Ts'adasa" culture=avar }
@@ -26021,9 +26001,9 @@ coat_of_arms = {
 2071079 = { name="Qarybek" culture=kyrgyz }
 2071080 = { name="Toqtosun" culture=kyrgyz }
 2071081 = { name="Daanyshman" culture=kyrgyz }
-2069082 = { name="Chyngghyz" culture=kyrgyz used_for_random=no }
-2069083 = { name="Makhan" culture=kyrgyz }
-2069084 = { name="Datqa" culture=kyrgyz }
+2071082 = { name="Chyngghyz" culture=kyrgyz used_for_random=no }
+2071083 = { name="Makhan" culture=kyrgyz }
+2071084 = { name="Datqa" culture=kyrgyz }
 2071085 = { name="Ayti" culture=kyrgyz }
 2071086 = { name="Qorghonbay" culture=kyrgyz }
 2071087 = { name="Jusupaqmat" culture=kyrgyz }
@@ -26370,16 +26350,6 @@ coat_of_arms = {
 20740136 = { name="Karayaprak" culture=kypriot }
 20740137 = { name="Erguven" culture=kypriot }
 20740138 = { name="Ergoren" culture=kypriot }
-20740129 = { name="Miltiadou" culture=kypriot }
-20740130 = { name="Kallitheotis" culture=kypriot }
-20740131 = { name="Anastassiou" culture=kypriot }
-20740132 = { name="Xenophontos" culture=kypriot }
-20740133 = { name="Heracleous" culture=kypriot }
-20740134 = { name="Sophocleous" culture=kypriot }
-20740135 = { name="Nicolaides" culture=kypriot }
-20740136 = { name="Cleanthous" culture=kypriot }
-20740137 = { name="Antoniades" culture=kypriot }
-20740138 = { name="Kyriakou" culture=kypriot }
 20740139 = { name="Karvounaris" culture=kypriot }
 20740140 = { name="Mouzouris" culture=kypriot }
 20740141 = { name="Sfoggaras" culture=kypriot }
@@ -26443,6 +26413,16 @@ coat_of_arms = {
 20740199 = { name="Qedahyan" culture=kypriot }
 20740200 = { name="Boukris " culture=kypriot }
 20740201 = { name="Günsel" culture=kypriot }
+20740202 = { name="Miltiadou" culture=kypriot }
+20740203 = { name="Kallitheotis" culture=kypriot }
+20740204 = { name="Anastassiou" culture=kypriot }
+20740205 = { name="Xenophontos" culture=kypriot }
+20740206 = { name="Heracleous" culture=kypriot }
+20740207 = { name="Sophocleous" culture=kypriot }
+20740208 = { name="Nicolaides" culture=kypriot }
+20740209 = { name="Cleanthous" culture=kypriot }
+20740210 = { name="Antoniades" culture=kypriot }
+20740211 = { name="Kyriakou" culture=kypriot }
 
 2075001 = { name="Yusupov" culture=karakalpak }
 2075002 = { name="Sayekeev" culture=karakalpak }
@@ -27303,10 +27283,10 @@ coat_of_arms = {
 2083047 = { name="Zinun" culture=soussi }
 2083048 = { name="Hindi" culture=soussi }
 2083049 = { name="Wahruc" culture=soussi }
-2083049 = { name="Lâutmani" culture=soussi }
-2083050 = { name="Ahrdan" culture=soussi }
-2083051 = { name="Id Blqasm" culture=soussi }
-2083052 = { name="Abaaqil" culture=soussi }
+2083050 = { name="Lâutmani" culture=soussi }
+2083051 = { name="Ahrdan" culture=soussi }
+2083052 = { name="Id Blqasm" culture=soussi }
+2083053 = { name="Abaaqil" culture=soussi }
 
 2084000 = { name="Lccixi" culture=atlas }
 2084001 = { name="Azellal" culture=atlas }
@@ -27828,7 +27808,6 @@ coat_of_arms = {
 2089091 = { name="Kayani" culture=hazara}
 2089092 = { name="Hassani" culture=hazara}
 2089093 = { name="Hamdard" culture=hazara}
-2089094 = { name="Kawsari" culture=hazara}
 2089094 = { name="Kawsari" culture=hazara}
 2089095 = { name="Sarkhosh" culture=hazara}
 2089096 = { name="Tawakoli" culture=hazara}
@@ -30072,7 +30051,7 @@ coat_of_arms = {
 2108122 = { name="Nasib" culture=bahrayni }
 2108123 = { name="Al-Qadumi" culture=bahrayni }
 2108124 = { name="Al-Mazmi" culture=bahrayni }
-2108128 = { name="Masud" culture=bahrayni }
+2108125 = { name="Masud" culture=bahrayni }
 2108126 = { name="Al-Nasseri" culture=bahrayni }
 2108127 = { name="Al-Amiri" culture=bahrayni }
 2108128 = { name="Al-Shehi" culture=bahrayni }
@@ -30361,9 +30340,9 @@ coat_of_arms = {
 2109169 = { name="Sharahili" culture=hijazi }
 2109170 = { name="Shawin" culture=hijazi }
 2109171 = { name="Al-Shihri" culture=hijazi }
-2109171 = { name="Zubrumawi" culture=hijazi }
-2109172 = { name="Al-Mutairi" culture=hijazi }
-2109173 = { name="Al-Qahtani" culture=hijazi }
+2109172 = { name="Zubrumawi" culture=hijazi }
+2109173 = { name="Al-Mutairi" culture=hijazi }
+2109174 = { name="Al-Qahtani" culture=hijazi }
 
 2110000 = {name="Al-Makki" culture=umani }
 2110001 = {name="Al-Zubayr" culture=umani }
@@ -30619,7 +30598,7 @@ coat_of_arms = {
 2112058 = { name="Ermat" culture=uzbek }
 2112059 = { name="Qosim" culture=uzbek }
 2112060 = { name="Abdujapar" culture=uzbek }
-2112112 = { name="Jepar" culture=uzbek }
+2112061 = { name="Jepar" culture=uzbek }
 2112062 = { name="Amanmurad" culture=uzbek }
 2112063 = { name="Yoqub" culture=uzbek }
 2112064 = { name="Mamat" culture=uzbek }
@@ -32784,7 +32763,6 @@ coat_of_arms = {
 2129169 = { name="Sprzeczek" culture=silesian }
 2129170 = { name="Sztwiertnia" culture=silesian }
 2129171 = { name="Stöchr" culture=silesian }
-2129171 = { name="Schwan" culture=silesian }
 2129172 = { name="Strumienski" culture=silesian }
 2129173 = { name="Schmidt" culture=silesian }
 2129174 = { name="Stanislawski" culture=silesian }
@@ -32877,6 +32855,7 @@ coat_of_arms = {
 		}
 	}
 }
+2129225 = { name="Schwan" culture=silesian }
 
 2130000 = { name="Belecki" culture=wielkopolan }
 2130001 = { name="Bielinski" culture=wielkopolan }
@@ -33050,7 +33029,6 @@ coat_of_arms = {
 2130169 = { name="Luboradzki" culture=wielkopolan }
 2130170 = { name="Lutomski" culture=wielkopolan }
 2130171 = { name="Latalski" culture=wielkopolan }
-2130171 = { name="Lossow" culture=wielkopolan }
 2130172 = { name="Jablkowski" culture=wielkopolan }
 2130173 = { name="Jaszczult" culture=wielkopolan }
 2130174 = { name="Jaraczewski" culture=wielkopolan }
@@ -33150,6 +33128,7 @@ coat_of_arms = {
 		}
 	}
 }
+2130219 = { name="Lossow" culture=wielkopolan }
 
 2131000 = { name="Glazer" culture=malopolan }
 2131001 = { name="Ngujen" culture=malopolan }
@@ -33227,7 +33206,7 @@ coat_of_arms = {
 2132067 = { name="Gedik" culture=zaza }
 2132068 = { name="Espar" culture=zaza }
 2132069 = { name="Canpolat" culture=zaza }
-2132132 = { name="Koca" culture=zaza }
+2132070 = { name="Koca" culture=zaza }
 2132071 = { name="Altinçagh" culture=zaza }
 2132072 = { name="Erdoghan" culture=zaza }
 2132073 = { name="Arslan" culture=zaza }
@@ -34016,7 +33995,6 @@ coat_of_arms = {
 2137169 = { name="Bykov" culture=uralic }
 2137170 = { name="Gorbachevskiy" culture=uralic }
 2137171 = { name="Gorodetskiy" culture=uralic }
-2137171 = { name="Guryanov" culture=uralic }
 2137172 = { name="Darvin" culture=uralic }
 2137173 = { name="Zimin" culture=uralic }
 2137174 = { name="Zubarev" culture=uralic }
@@ -34045,12 +34023,12 @@ coat_of_arms = {
 2137197 = { name="Rodin" culture=uralic used_for_random=no}
 2137198 = { name="Klimov" culture=uralic used_for_random=no}
 2137199 = { name="Kolokolnikov" culture=uralic used_for_random=no}
-2137120 = { name="Smirnov" culture=uralic used_for_random=no}
-2137121 = { name="Balashov" culture=uralic used_for_random=no}
-2137122 = { name="Kosvinsky" culture=uralic used_for_random=no}
-2137123 = { name="Krylatov" culture=uralic used_for_random=no}
-2137124 = { name="Biryukov" culture=uralic used_for_random=no}
-
+2137200 = { name="Smirnov" culture=uralic used_for_random=no}
+2137201 = { name="Balashov" culture=uralic used_for_random=no}
+2137202 = { name="Kosvinsky" culture=uralic used_for_random=no}
+2137203 = { name="Krylatov" culture=uralic used_for_random=no}
+2137204 = { name="Biryukov" culture=uralic used_for_random=no}
+2137205 = { name="Guryanov" culture=uralic }
 
 2138000 = { name="Papahagi" culture=aromanian }
 2138001 = { name="Caragiu" culture=aromanian }
@@ -34174,14 +34152,14 @@ coat_of_arms = {
 2138119 = { name="Verria" culture=aromanian }
 2138120 = { name="Zoraqi" culture=aromanian }
 2138121 = { name="Fara" culture=aromanian }
-2138121 = { name="Simaku" culture=aromanian }
 2138122 = { name="Mima" culture=aromanian }
 2138123 = { name="Shaguna" culture=aromanian }
 2138124 = { name="Ballamaçi" culture=aromanian }
 2138125 = { name="Hebën" culture=aromanian }
 2138126 = { name="Tzimas" culture=aromanian }
-2138127 = { name ="Ioannou" culture=aromanian }
+2138127 = { name="Ioannou" culture=aromanian }
 2138128 = { name="Fundo" culture=aromanian}
+2138129 = { name="Simaku" culture=aromanian }
 
 
 2139000 = { name="Ahmed" culture=sylheti }
@@ -35180,7 +35158,7 @@ coat_of_arms = {
 2151014 = { name="Samardzhiev" culture=pomak }
 2151015 = { name="Soymirov" culture=pomak }
 2151016 = { name="Stanimirov" culture=pomak }
-2151022 = { name="Stanislavov" culture=pomak }
+2151017 = { name="Stanislavov" culture=pomak }
 2151018 = { name="Tomagionov" culture=pomak }
 2151019 = { name="Toshkov" culture=pomak }
 2151020 = { name="Hadzhivalchev" culture=pomak }
@@ -35275,7 +35253,7 @@ coat_of_arms = {
 2151109 = { name="Ivkov" culture=pomak }
 2151110 = { name="Indzhov" culture=pomak }
 2151111 = { name="Ignatov" culture=pomak }
-2151012 = { name="Yordanov" culture=pomak }
+2151112 = { name="Yordanov" culture=pomak }
 2151113 = { name="Kamenov" culture=pomak }
 2151114 = { name="Kantardzhiev" culture=pomak }
 2151115 = { name="Karavelov" culture=pomak }
@@ -36428,7 +36406,7 @@ coat_of_arms = {
 2162109 = { name="Muratov" culture=mansi }
 2162110 = { name="Togolmachev" culture=mansi }
 2162111 = { name="Tyrlin" culture=mansi }
-2162012 = { name="Otsyamov" culture=mansi }
+2162112 = { name="Otsyamov" culture=mansi }
 2162113 = { name="Tylyzin" culture=mansi }
 2162120 = { name="Shestalov" culture=mansi used_for_random=no}
 2162121 = { name="Krapivin" culture=mansi used_for_random=no}
@@ -36471,74 +36449,6 @@ coat_of_arms = {
 2163035 = { name="Shapsygh" culture=circassian }
 2163036 = { name="Zuaby" culture=circassian }
 2163037 = { name="Mäscharq'a" culture=circassian }
-
-2164000 = { name="Vagatov" culture=khanty }
-2164001 = { name="Vandymov" culture=khanty }
-2164002 = { name="Voldin" culture=khanty }
-2164003 = { name="Yernykhov" culture=khanty }
-2164004 = { name="Kaksin" culture=khanty }
-2164005 = { name="Lozyamov" culture=khanty }
-2164006 = { name="Moldanov" culture=khanty }
-2164007 = { name="Randymov" culture=khanty }
-2164008 = { name="Rusmilenko" culture=khanty }
-2164009 = { name="Syengepov" culture=khanty }
-2164010 = { name="Tarlin" culture=khanty }
-2164011 = { name="Togolmazov" culture=khanty }
-2164012 = { name="Yuzorin" culture=khanty }
-2164013 = { name="Aydarov" culture=khanty }
-2164014 = { name="Kyrnyshov" culture=khanty }
-2164015 = { name="Yelgozin" culture=khanty }
-2164016 = { name="Kynlabazov" culture=khanty }
-2164017 = { name="Ostyerov" culture=khanty }
-2164018 = { name="Toyarov" culture=khanty }
-2164019 = { name="Taymanov" culture=khanty }
-2164020 = { name="Taratov" culture=khanty }
-2164021 = { name="Mondanov" culture=khanty }
-2164022 = { name="Angishupov" culture=khanty }
-2164023 = { name="Sigil'yetov" culture=khanty }
-2164024 = { name="Kolmakov" culture=khanty }
-2164025 = { name="Tushev" culture=khanty }
-2164026 = { name="Sabeyev" culture=khanty }
-2164027 = { name="Artanzeyev" culture=khanty }
-2164028 = { name="Rombandeyev" culture=khanty } 
-2164029 = { name="Tomyspayev" culture=khanty }
-2164030 = { name="Alachev" culture=khanty }
-2164031 = { name="Taligin" culture=khanty }
-2164032 = { name="Pakin" culture=khanty }
-2164033 = { name="Sheshkin" culture=khanty }
-2164034 = { name="Prasin" culture=khanty }
-2164035 = { name="Rogin" culture=khanty }
-2164036 = { name="Kostin" culture=khanty }
-2164037 = { name="Sinarpin" culture=khanty }
-2164038 = { name="Tsymbitsyn" culture=khanty } 
-2164039 = { name="Rantsyn" culture=khanty }
-2164040 = { name="Pantsyn" culture=khanty }
-2164041 = { name="Syttsyn" culture=khanty }
-2164042 = { name="Saynakhov" culture=khanty }
-2164043 = { name="Poslankhov" culture=khanty }
-2164044 = { name="Aypokhov" culture=khanty }
-2164045 = { name="Zhizhimkhov" culture=khanty }
-2164046 = { name="Kurokov" culture=khanty }
-2164047 = { name="Pelikov" culture=khanty }
-2164048 = { name="Yerdakov" culture=khanty } 
-2164049 = { name="Yezekov" culture=khanty }
-2164050 = { name="Yershikov" culture=khanty }
-2164051 = { name="Vogalkhov" culture=khanty }
-2164052 = { name="Rusmelikhov" culture=khanty }
-2164053 = { name="Votyekumko" culture=khanty }
-2164054 = { name="Katkumkov" culture=khanty }
-2164055 = { name="Chukhla" culture=khanty }
-2164056 = { name="Pugunya" culture=khanty }
-2164057 = { name="Vogaly" culture=khanty }
-2164058 = { name="Litva" culture=khanty } 
-2164059 = { name="Tregupta" culture=khanty }
-2164060 = { name="Taragupta" culture=khanty }
-2164061 = { name="Balytskiy" culture=khanty }
-2164062 = { name="Yuganskiy" culture=khanty }
-2164063 = { name="Tsynginskoy" culture=khanty }
-2164064 = { name="Zmanovskiy" culture=khanty }
-2164065 = { name="Kaylovskiy" culture=khanty }
-2164066 = { name="Terimskiy" culture=khanty }
 
 2164000 = { name="Vagatov" culture=khanty }
 2164001 = { name="Vandymov" culture=khanty }
@@ -36777,13 +36687,13 @@ coat_of_arms = {
 2166082 = {name="Tibin" culture=nubian }
 2166083 = {name="Almahi" culture=nubian }
 2166084 = {name="Abdelsalam" culture=nubian }
-2166084 = {name="Dunqas" culture=nubian }
 2166085 = {name="Nawwar" culture=nubian }
 2166086 = {name="Unsa" culture=nubian }
 2166087 = {name="Awkal" culture=nubian }
 2166088 = {name="Dawra" culture=nubian }
 2166089 = {name="Abu Issa" culture=nubian }
 2166090 = {name="Al Kashif" culture=nubian }
+2166091 = {name="Dunqas" culture=nubian }
 
 2167000 = { name="Sapin" culture=mari }
 2167001 = { name="Safin" culture=mari }
@@ -37073,7 +36983,7 @@ coat_of_arms = {
 2169101 = { name="Kapachinskiy" culture=udmurt }
 2169102 = { name="Oki" culture=udmurt used_for_random=no religion=jumic }
 2169103 = { name="Razin" culture=udmurt used_for_random=no religion=jumic }
-2169103 = { name="Kez" culture=udmurt used_for_random=no religion=jumic }
+2169104 = { name="Kez" culture=udmurt used_for_random=no religion=jumic }
 
 2170000 = { name="Kuratov" culture=komi }
 2170001 = { name="Njobdinsa" culture=komi }
@@ -37206,7 +37116,6 @@ coat_of_arms = {
 2171057 = { name="Al-Firansi" culture=sabir }
 2171058 = { name="Al-Almani" culture=sabir }
 2171059 = { name="Al-Kanadi" culture=sabir }
-2171059 = { name="Al-Maghrebi" culture=sabir }
 2171060 = { name="Al-Britani" culture=sabir }
 2171061 = { name="Al-Andalusi" culture=sabir }
 2171062 = { name="Al-Rumi" culture=sabir }
@@ -37295,6 +37204,7 @@ coat_of_arms = {
 2171145 = { name="Salam" culture=sabir }
 2171146 = { name="Untirmair" culture=sabir }
 2171147 = { name="Al-Mansuri" culture=sabir }
+2171148 = { name="Al-Maghrebi" culture=sabir }
 
 2201000 = { name="Lewis" culture=welsh 
 	coat_of_arms = {
@@ -37821,24 +37731,6 @@ coat_of_arms = {
 2220217 = { name="Hagströmer" culture="scanian" }
 2220218 = { name="Fritjofsson" culture="scanian" }
 
-2220201 = { name="Solem" culture="tronder" }
-2220202 = { name="Birch" culture="tronder" }
-2220203 = { name="Stene" culture="tronder" }
-2220204 = { name="Einersen" culture="tronder" }
-2220205 = { name="Udhaug" culture="tronder" }
-2220206 = { name="Gilberg" culture="tronder" }
-2220207 = { name="Eicholz" culture="tronder" }
-2220208 = { name="Werness" culture="tronder" }
-2220209 = { name="Haave" culture="tronder" }
-2220210 = { name="Bask" culture="tronder" }
-2220211 = { name="Malberg" culture="tronder" }
-2220212 = { name="Vatn" culture="tronder" }
-2220213 = { name="Thingstad" culture="tronder" }
-2220214 = { name="Solligaard" culture="tronder" }
-2220215 = { name="Gjedebo" culture="tronder" }
-2220216 = { name="Krogstad" culture="tronder" }
-2220217 = { name="Zahl" culture="tronder" }
-2220218 = { name="Undhjem" culture="tronder" }
 2220219 = { name="Ulseth" culture="tronder" }
 2220220 = { name="Malmo" culture="tronder" }
 2220221 = { name="Wangsmoe" culture="tronder" }
@@ -37937,6 +37829,24 @@ coat_of_arms = {
 		}
 	}
 }
+2230201 = { name="Solem" culture="tronder" }
+2230202 = { name="Birch" culture="tronder" }
+2230203 = { name="Stene" culture="tronder" }
+2230204 = { name="Einersen" culture="tronder" }
+2230205 = { name="Udhaug" culture="tronder" }
+2230206 = { name="Gilberg" culture="tronder" }
+2230207 = { name="Eicholz" culture="tronder" }
+2230208 = { name="Werness" culture="tronder" }
+2230209 = { name="Haave" culture="tronder" }
+2230210 = { name="Bask" culture="tronder" }
+2230211 = { name="Malberg" culture="tronder" }
+2230212 = { name="Vatn" culture="tronder" }
+2230213 = { name="Thingstad" culture="tronder" }
+2230214 = { name="Solligaard" culture="tronder" }
+2230215 = { name="Gjedebo" culture="tronder" }
+2230216 = { name="Krogstad" culture="tronder" }
+2230217 = { name="Zahl" culture="tronder" }
+2230218 = { name="Undhjem" culture="tronder" }
 
 2220304 = { name="Grip" culture="jamta" }
 2220305 = { name="Almestad" culture="jamta" }
@@ -38817,7 +38727,6 @@ coat_of_arms = {
 2220756 = { name="Jælker" culture="sami" }
 2220757 = { name="Joks" culture="sami" }
 
-2220757 = { name="Aalberg" culture="finnish" }
 2220758 = { name="Ahola" culture="finnish" }
 2220759 = { name="Ahonen" culture="finnish" }
 2220760 = { name="Haapsalo" culture="finnish" }
@@ -38932,7 +38841,6 @@ coat_of_arms = {
 2220843 = { name="Rantanen" culture="finnish" }
 2220844 = { name="Rolig" culture="finnish" }
 2220845 = { name="Ryynänen" culture="finnish" }
-2220845 = { name="Agricola" culture="finnish" }
 2220846 = { name="Læstadius" culture="finnish" }
 2220847 = { name="Paarma" culture="finnish" }
 2220848 = { name="Eskola" culture="finnish" }
@@ -38958,6 +38866,8 @@ coat_of_arms = {
 2220868 = { name="Turkki" culture="finnish" }
 2220869 = { name="Rantala" culture="finnish" }
 2220870 = { name="Milonoff" culture="finnish" }
+2220871 = { name="Aalberg" culture="finnish" }
+2220872 = { name="Agricola" culture="finnish" }
 
 2220900 = { name="Aalto" culture="karelian" }
 2220901 = { name="Aarnio" culture="karelian" }
@@ -39051,8 +38961,6 @@ coat_of_arms = {
 2220976 = { name="Valve" culture="karelian" }
 2220977 = { name="Vainio" culture="karelian" }
 2220978 = { name="Vainikka" culture="karelian" }
-2220978 = { name="Afansjeff" culture="karelian" }
-2220979 = { name="Ahava" culture="karelian" }
 2220980 = { name="Antipin" culture="karelian" }
 2220981 = { name="Dobrin" culture="karelian" }
 2220982 = { name="Garmujeff" culture="karelian" }
@@ -39069,6 +38977,8 @@ coat_of_arms = {
 2220993 = { name="Kuzmin" culture="karelian" }
 2220994 = { name="Lahelma" culture="karelian" }
 2220995 = { name="Laukkanen" culture="karelian" }
+2220996 = { name="Ahava" culture="karelian" }
+2220997 = { name="Afansjeff" culture="karelian" }
 
 2501000 = { name="Aðaldal" culture=icelander }
 2501001 = { name="Aldan" culture=icelander }
