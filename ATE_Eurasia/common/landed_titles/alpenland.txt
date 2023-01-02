@@ -822,6 +822,9 @@ e_alpenland = {
 				romansh="Minca"
 				palatinate="Minsche"
 
+				holy_site = catholic
+				holy_site = penitant
+					
 				b_dachau = {}
 				b_munich = {
 					rhenish="Minche"
@@ -843,10 +846,7 @@ e_alpenland = {
 					romansh="Minca"
 					palatinate="Minsche"
 				}
-				b_erding = {
-					holy_site = catholic
-					holy_site = penitant
-				}
+				b_erding = {}
 				b_freising = {}
 				b_ebersberg = {}
 				b_garching = {}
@@ -1058,11 +1058,10 @@ e_alpenland = {
 				lombard="Ginevra"
 				palatinate="Genf"
 
+				holy_site = neuhumanist
+					
 				b_saint_gervais = {}
-				b_geneva = {
-				
-					holy_site = neuhumanist
-				
+				b_geneva = {				
 					rhenish="Genf"
 					low_saxon="Genf"
 					ossi="Genf"

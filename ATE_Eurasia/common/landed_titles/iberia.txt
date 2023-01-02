@@ -742,10 +742,10 @@ k_galicia = {
 				castilian = "La Coruña"
 				andalusian = "La Coruña"
 				
-				b_santiago = {
-					holy_site = catholic
-					holy_site = penitant
-				}
+				holy_site = catholic
+				holy_site = penitant
+					
+				b_santiago = {}
 				b_a_coruna = {
 					portuguese = "Corunha"
 					castilian = "La Coruña"
@@ -1763,6 +1763,7 @@ k_galicia = {
 			c_terceira = {
 				color={ 236 229 96 }
 				color2={ 255 255 255 }
+				
 				holy_site = quinto
 			
 				b_angra_do_heroismo = {}
@@ -1860,6 +1861,9 @@ k_galicia = {
 				aragonese = "Lisbona"
 				galician = "Lisboa"
 			
+				holy_site = quinto
+				holy_site = thelema
+					
 				b_lisbon = {
 					basque = "Lisboa"
 					catalan = "Lisbona"
@@ -1873,10 +1877,7 @@ k_galicia = {
 					galician = "Lisboa"
 				}
 				b_sintra = {}
-				b_cascais = {
-					holy_site = quinto
-					holy_site = thelema
-				}
+				b_cascais = {}
 				b_loures = {}
 				b_amadora = {}
 				b_oeiras = {}

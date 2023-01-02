@@ -1769,9 +1769,10 @@ e_visegrad = {
 				moravian="Heveš"
 				slovak="Heveš"
 				
+				holy_site = nepmese
+				holy_site = nepmese_reformed
+					
 				b_eger = {
-					holy_site = nepmese
-					holy_site = nepmese_reformed
 					rhenish="Erlau"
 					low_saxon="Erlau"
 					ossi="Erlau"
@@ -3785,10 +3786,11 @@ e_visegrad = {
 				color2={ 255 255 255 }
 				hungarian = "Trencsén"
 
+				holy_site = nepmese
+				holy_site = nepmese_reformed
+					
 				b_trencin = {
 					hungarian = "Trencsén"
-					holy_site = nepmese
-					holy_site = nepmese_reformed
 				}
 				b_myjava = {}
 				b_nove_mesto_nad_vahom = {

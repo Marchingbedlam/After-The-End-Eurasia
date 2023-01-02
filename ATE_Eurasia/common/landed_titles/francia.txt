@@ -2419,6 +2419,8 @@ e_france = {
 				walloon = "Moûze"
 				palatinate="Maas"
 				
+				holy_site = chronicler
+					
 				b_bar_le_duc = {
 					rhenish="Herzogenbar"
 					low_saxon="Herzogenbar"
@@ -2429,7 +2431,6 @@ e_france = {
 					austrian="Herzogenbar"
 					schwyzer="Herzogenbar"
 					palatinate="Herzogenbar"
-					holy_site=chronicler
 				}
 				b_verdun = {
 					rhenish="Verden an der Maas"
@@ -2878,11 +2879,12 @@ e_france = {
 				
 				arpitan = "Tarnà"
 				
+				holy_site=chronicler
+					
 				b_albi = {}
 				b_castres = {
 					occitan = "Castras"
 					provencal = "Castras"
-					holy_site=chronicler
 				}
 				b_sainte_cecile = {
 					catalan = "Santa Ceselha"
@@ -3521,6 +3523,8 @@ e_france = {
 				provencal = "Bigòrra"
 				
 				holy_site = apparitionist
+				holy_site = catholic
+				holy_site = penitant
 				
 				b_bagneres_de_bigorre = {
 					catalan = "Banhèras de Bigòrra"
@@ -3541,9 +3545,6 @@ e_france = {
 					occitan = "Lorda"
 					gascon = "Lorda"
 					provencal = "Lorda"
-					
-					holy_site = catholic
-					holy_site = penitant
 				}
 				b_cauterets = {
 					catalan = "Cauterets"
