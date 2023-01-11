@@ -1,6 +1,6 @@
 1960000 = {
 	name="1960000"
-	dynasty=0 #
+	dynasty=0 #blank
 	culture=odia
 	religion=hindu
 	martial=3
@@ -19,7 +19,7 @@
 }
 1960001 = {
 	name="1960001"
-	dynasty=0 #
+	dynasty=0 #blank
 	culture=odia
 	religion=hindu
 	martial=4
@@ -37,7 +37,7 @@
 }
 1960002 = {
 	name="1960002"
-	dynasty=0 #
+	dynasty=0 #blank
 	culture=odia
 	religion=hindu
 	martial=3
@@ -55,7 +55,7 @@
 }
 1960003 = {
 	name="1960003"
-	dynasty=0 #
+	dynasty=0 #blank
 	female=yes
 	culture=chhattisgarhi
 	religion=hindu
@@ -75,7 +75,7 @@
 }
 1960004 = {
 	name="1960004"
-	dynasty=0 #
+	dynasty=0 #blank
 	culture=chhattisgarhi
 	religion=hindu
 	martial=3
@@ -93,7 +93,7 @@
 }
 1960005 = {
 	name="1960005"
-	dynasty=0 #
+	dynasty=0 #blank
 	culture=odia
 	religion=hindu
 	martial=3
@@ -111,7 +111,7 @@
 }
 1960006 = {
 	name="1960006"
-	dynasty=0 #
+	dynasty=0 #blank
 	culture=odia
 	religion=hindu
 	martial=5
@@ -130,7 +130,7 @@
 }
 1960007 = {
 	name="1960007"
-	dynasty=0 #
+	dynasty=0 #blank
 	culture=odia
 	religion=hindu
 	martial=3
@@ -150,7 +150,7 @@
 }
 1960008 = {
 	name="1960008"
-	dynasty=0 #
+	dynasty=0 #blank
 	culture=odia
 	religion=hindu
 	martial=4
@@ -169,7 +169,7 @@
 }
 1960009 = {
 	name="1960009"
-	dynasty=0 #
+	dynasty=0 #blank
 	female=yes
 	culture=odia
 	religion=hindu
@@ -189,7 +189,7 @@
 }
 1960010 = {
 	name="1960010"
-	dynasty=0 #
+	dynasty=0 #blank
 	culture=odia
 	religion=hindu
 	martial=5
@@ -208,7 +208,7 @@
 }
 1960011 = {
 	name="1960011"
-	dynasty=0 #
+	dynasty=0 #blank
 	culture=gondi
 	religion=hindu
 	martial=5
@@ -227,7 +227,7 @@
 
 1960012 = {
 	name="1960012"
-	dynasty=0 #
+	dynasty=0 #blank
 	culture=odia
 	religion=hindu
 	martial=3
@@ -247,7 +247,7 @@
 
 1960013 = {
 	name="1960013"
-	dynasty=0 #
+	dynasty=0 #blank
 	culture=odia
 	religion=hindu
 	martial=2
@@ -267,7 +267,7 @@
 
 1960014 = {
 	name="1960014"
-	dynasty=0 #
+	dynasty=0 #blank
 	culture=odia
 	religion=hindu
 	martial=3
@@ -289,7 +289,7 @@
 
 1960015 = {
 	name="1960015"
-	dynasty=0 #
+	dynasty=0 #blank
 	female=yes
 	culture=odia
 	religion=hindu
@@ -310,7 +310,7 @@
 }
 1960016 = {
 	name="1960016"
-	dynasty=0 #
+	dynasty=0 #blank
 	female=yes
 	culture=odia
 	religion=hindu
@@ -326,4 +326,77 @@
 	trait=proud
 	2631.3.11={ birth=yes }
 	2685.12.13={ death=yes }
+}
+
+1960017={
+	name="1960017"
+	dynasty=0 #blank
+	culture=odia
+	religion=hindu
+	trait=misguided_warrior
+	trait=sturdy
+	trait=patient
+	trait=brave
+	trait=strong
+	2641.1.1={birth=yes}
+	2691.1.1={death=yes}
+}
+
+1960018={
+	name="1960018"
+	dynasty=0 #blank
+	culture=gondi
+	religion=hindu
+	trait=indulgent_wastrel
+	trait=robust
+	trait=proud
+	trait=paranoid
+	trait=envious
+	2635.1.1={birth=yes}
+	2691.1.1={death=yes}
+}
+
+1960019={
+	name="1960019"
+	dynasty=0 #blank
+	culture=ho
+	religion=hindu
+	trait=dutiful_cleric
+	trait=diligent
+	trait=humble
+	trait=craven
+	trait=fair
+	trait=sturdy
+	2622.1.1={birth=yes}
+	2691.1.1={death=yes}
+}
+
+1960020={
+	name="1960020"
+	dynasty=0 #blank
+	culture=gondi
+	religion=hindu
+	trait=brilliant_strategist
+	trait=slothful
+	trait=proud
+	trait=brave
+	trait=ugly
+	trait=feeble
+	2636.1.1={birth=yes}
+	2691.1.1={death=yes}
+}
+
+1960021={
+	name="1960021"
+	dynasty=0 #blank
+	culture=gondi
+	religion=hindu
+	trait=tough_soldier
+	trait=gregarious
+	trait=envious
+	trait=groomed
+	trait=brave
+	trait=envious
+	2634.1.1={birth=yes}
+	2691.1.1={death=yes}
 }
