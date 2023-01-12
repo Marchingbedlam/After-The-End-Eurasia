@@ -364,7 +364,7 @@
 	trait=gardener
 	trait=gregarious
 	2633.7.14={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1501018={
 	name="Ciarán"
@@ -388,7 +388,7 @@
 	trait=cruel
 	trait=arbitrary
 	2622.5.24={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1501019={
 	name="Eala"
@@ -969,9 +969,7 @@
 	trait=depressed
 	2603.12.15={birth=yes}
 	2620.27.5={add_spouse=1501049}
-	2647.1.1={
-		death={death_reason=death_trait}
-	}
+	2647.1.1={death={death_reason=death_trait}}
 }
 1501051={
 	name="Nedward"
@@ -990,7 +988,7 @@
 	trait=trusting
 	trait=brave
 	2641.3.12={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1501052={
 	name="Conchobhar"
@@ -1003,8 +1001,6 @@
 	intrigue=6
 	learning=6
 	2641.3.12={birth=yes}
-	2660.1.1={
-		employer=1501000
-	}
-	2700.1.1={death=yes}
+	2660.1.1={employer=1501000}
+	2680.1.1={death=yes}
 }

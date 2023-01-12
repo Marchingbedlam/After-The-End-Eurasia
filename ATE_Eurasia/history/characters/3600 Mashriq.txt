@@ -21,7 +21,7 @@
 	2608.11.2={culture=sabra}
 	2629.5.2={add_spouse=3600001
 	}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 3600001={
@@ -39,7 +39,7 @@
 	mother=3600066	
 	trait=gregarious
 	2610.4.2={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 	
 }
 3600002={
@@ -59,7 +59,7 @@
 	mother=3600001
 	2638.4.4={birth=yes}
 	2638.4.8={culture=sabra}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 
 }
 3600003={
@@ -82,7 +82,7 @@
 	mother=3600001	
 	2640.4.4={birth=yes}
 	2640.4.9={culture=sabra}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600004={
 	name="Adina"
@@ -104,7 +104,7 @@
 	mother=3600001	
 	2642.4.4={birth=yes}
 	2642.4.9={culture=sabra}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600005={
 	name="Uzi"
@@ -125,7 +125,7 @@
 	2636.4.4={birth=yes}
 	2664.4.5={add_spouse=3600004
 	}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600006={
 	name="Erran"
@@ -147,7 +147,7 @@
 	2636.4.4={birth=yes}
 	2657.4.4={add_spouse=3600007
 	}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600007={
 	name="Tikvah"
@@ -166,7 +166,7 @@
 			add_rival=3600006
 		}
 	}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600008={
 	name="Tomer"
@@ -187,7 +187,7 @@
 			killer=3600006
 		}
 	}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600009=	{
 	name="Nehorai"
@@ -206,7 +206,7 @@
 	2628.11.2={birth=yes}	
 	2660.11.1={add_spouse=3600010
 	}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }	
 3600010={
 	name="Tali"
@@ -219,7 +219,7 @@
 	intrigue=7
 	learning=4
 	2640.4.4={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 3600011={
@@ -241,7 +241,7 @@
 	2623.11.2={birth=yes}	
 	2645.11.2={add_spouse=3600012
 	}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600012={
 	name="Malka"
@@ -256,7 +256,7 @@
 	trait=naive_appeaser
 	trait=kind
 	2623.4.4={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 
 }
 3600013={
@@ -273,7 +273,7 @@
 	mother=3600012
 	trait=fortune_builder
 	2645.11.2={birth=yes}
-	2700.1.1={death=yes}	
+	2680.1.1={death=yes}	
 }
 3600014={
 	name="Chaimke"
@@ -289,7 +289,7 @@
 	mother=3600012
 	trait=underhanded_rogue
 	2647.6.2={birth=yes}
-	2700.1.1={death=yes}	
+	2680.1.1={death=yes}	
 }
 3600015={
 	name="Batya"
@@ -308,7 +308,7 @@
 	trait=quick
 	trait=groomed
 	2648.11.2={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600016={
 	name="Ilak"
@@ -325,7 +325,7 @@
 	trait=musician
 	2640.11.2={birth=yes}
 	2640.11.3={culture=sabra}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600017={
 	name="Musa"
@@ -343,7 +343,7 @@
 	trait=gregarious
 	trait=painter
 	2640.11.2={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600018={
 	name="Yusuf"
@@ -361,7 +361,7 @@
 	2625.11.2={birth=yes}
 	2645.11.3={add_spouse=3600019
 	}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600019={
 	name="Amal"
@@ -377,7 +377,7 @@
 	trait=honest
 	trait=kind
 	2625.11.2={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600020={
 	name="Fadwa"
@@ -397,7 +397,7 @@
 	father=3600018
 	mother=3600019
 	2648.11.2={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 	
 }
 3600021={
@@ -418,7 +418,7 @@
 	mother=3600019
 	2648.11.2={birth=yes}
 	2665.1.1={add_spouse=3603030}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600022={
 	name="Fariborz"
@@ -436,7 +436,7 @@
 	trait=patient
 	trait=proud
 	2627.7.2={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600023={
 	name="Abdullah"
@@ -453,7 +453,7 @@
 	trait=sympathy_judaism
 	trait=patient
 	2644.11.2={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600024={
 	name="Hazeem"
@@ -472,7 +472,7 @@
 	trait=stressed
 	trait=patient
 	2642.01.2={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 3600025={
@@ -498,7 +498,7 @@
 	2660.3.22={
 		capital=c_hebron
 	}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600026={
 	name="Ghada"
@@ -512,7 +512,7 @@
 	learning=5
 	trait=flamboyant_schemer
 	2635.11.2={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600027={
 	name="Muhammed"
@@ -527,7 +527,7 @@
 	father=3600025
 	mother=3600026
 	2656.11.2={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600028={
 	name="Haitham"
@@ -543,7 +543,7 @@
 	trait=patient
 	trait=just
 	2649.11.2={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600029={
 	name="Ohad"
@@ -561,7 +561,7 @@
 	trait=one_eyed
 	2645.11.2={birth=yes}
 	2645.11.8={culture=sabra}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600030={
 	name="Mordechai"
@@ -578,7 +578,7 @@
 	trait=hakham
 	trait=theologian
 	2600.2.22={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600031={ #hello
 	name="Yoni"
@@ -599,7 +599,7 @@
 	trait=content
 	trait=gregarious
 	2640.7.15={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600032={ #descendantofthemainreligiousleaderofDruzeinGalilandIsraelingeneral
 	name="Toufik"
@@ -615,7 +615,7 @@
 	trait=patient
 	trait=just
 	2630.11.2={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600033={
 	name="Ehud"
@@ -630,7 +630,7 @@
 	trait=thrifty_clerk
 	trait=scholar
 	2630.11.2={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600034={
 	name="Barukh"
@@ -650,7 +650,7 @@
 	2630.12.1={culture=sabra}
 	2647.12.1={add_spouse=3600035
 	}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600035={
 	name="Yehudit"
@@ -668,7 +668,7 @@
 	trait=patient
 	2630.11.2={birth=yes}
 	2630.12.1={culture=sabra}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600036={
 	name="Shalom"
@@ -688,7 +688,7 @@
 	mother=3600035
 	2648.11.2={birth=yes}
 	2648.12.1={culture=sabra}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600037={
 	name="Amram"
@@ -708,7 +708,7 @@
 	mother=3600035
 	2649.11.2={birth=yes}
 	2649.12.1={culture=sabra}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600038={
 	name="Dov"
@@ -731,7 +731,7 @@
 			add_rival=3600037
 		}
 	}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600039={
 	name="Tziporah"
@@ -750,7 +750,7 @@
 	trait=patient
 	2654.11.2={birth=yes}
 	2654.12.1={culture=sabra}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600040={
 	name="Bat El"
@@ -763,7 +763,7 @@
 	trait=haredi_yashvai
 	2656.11.2={birth=yes}
 	2656.12.1={culture=sabra}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600041={
 	name="Simcha"
@@ -775,7 +775,7 @@
 	trait=haredi_yashvai
 	2658.11.2={birth=yes}
 	2658.12.1={culture=sabra}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600042={
 	name="Yeruham"
@@ -787,7 +787,7 @@
 	trait=haredi_yashvai
 	2660.11.2={birth=yes}
 	2660.12.1={culture=sabra}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600043={
 	name="Ben-Tzion"
@@ -799,7 +799,7 @@
 	trait=haredi_yashvai
 	2662.11.2={birth=yes}
 	2662.12.1={culture=sabra}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600044={
 	name="Eliyahu"
@@ -874,7 +874,7 @@
 			death_reason=death_rabble
 		}
 	}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600047={
 	name="Adi"
@@ -889,7 +889,7 @@
 			death_reason=death_childbirth
 		}
 	}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600048={
 	name="Amir"
@@ -1680,7 +1680,7 @@
 	learning=5
 	trait=naive_appeaser
 	2618.11.2={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600093={
 	name="Edward"
@@ -1701,7 +1701,7 @@
 	2665.1.1={
 		employer=3600025
 	}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600094={
 	name="Theophilos"
@@ -1717,7 +1717,7 @@
 	trait=mystic
 	trait=charitable
 	2620.11.2={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 3600095={
 	name="Dror"
@@ -1745,7 +1745,7 @@
 	father=3600096
 	2611.2.27={birth=yes}
 	2630.1.1={add_spouse=2202066}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #Jordan Characters # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
@@ -1763,7 +1763,7 @@
 	2625.1.1={birth=yes}
 	2650.1.7={add_spouse=3600501
 	}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 3600501={ #Queen of Jordan
@@ -1773,7 +1773,7 @@
 	religion=ruhi
 	female=yes
 	2630.1.1={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 
@@ -1795,7 +1795,7 @@
 	religion=ruhi
 	female=yes
 	2590.1.1={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 3600504={ #King of Jordan
@@ -1820,7 +1820,7 @@
 	trait=diligent
 	trait=shrewd
 	2640.1.1={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 3600506={ #Powerful Jordanian Badawi Vassal
@@ -1833,7 +1833,7 @@
 	trait=honorable
 	trait=familyperson
 	2620.1.1={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 3600507={ #Count of Aqaba
@@ -1847,7 +1847,7 @@
 	trait=honest
 	trait=brave
 	2640.1.1={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 3600508={ #Count of Al Betra
@@ -1859,7 +1859,7 @@
 	trait=poet
 	trait=diligent
 	2630.1.1={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 
@@ -1919,7 +1919,7 @@
 	trait=diligent
 	father=3600511
 	2647.1.10={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 3600513={ #Vaso of Limassol
@@ -1936,7 +1936,7 @@
 	trait=erudite
 	father=3600511
 	2654.4.2={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 3600514={ #Admiral Silas of Cyprus
@@ -1967,7 +1967,7 @@
 	father=3600510
 	2618.1.15={birth=yes}
 	2637.2.8={add_spouse=3600514}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 3600516={ #Admiral Dionysios of Cyprus
@@ -1988,7 +1988,7 @@
 	father=3600514
 	mother=3600515
 	2639.2.6={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 3600517={ #Glykeria of Cyprus
@@ -2001,7 +2001,7 @@
 	trait=bastard
 	father=3600516
 	2662.4.5={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 3600518={ #Loukas of Cyprus
@@ -2021,7 +2021,7 @@
 	father=3600514
 	mother=3600515
 	2641.1.8={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 3600519={ #Nikos of Cyprus
@@ -2042,7 +2042,7 @@
 	father=3600514
 	mother=3600515
 	2644.4.12={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 3600520={ #Elmaz of Cyprus
@@ -2063,7 +2063,7 @@
 	father=3600514
 	mother=3600515
 	2647.10.9={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 3600521={ #Lord Pirate Dimos of Cyprus
@@ -2091,7 +2091,7 @@
 	trait=honest
 	2608.1.15={birth=yes}
 	2629.1.16={add_spouse=3600521}	
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 
@@ -2111,7 +2111,7 @@
 	mother=3600522
 	2635.4.4={birth=yes}
 	2655.2.12={add_spouse=3600524}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 3600524={ #Olympia of Limassol
@@ -2127,7 +2127,7 @@
 	trait=familyperson
 	2637.1.8={birth=yes}
 	2655.2.12={add_spouse=3600523}	
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 3600525={ #Panagiotis of Cyprus
@@ -2140,7 +2140,7 @@
 	father=3600523
 	mother=3600524
 	2662.12.3={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 3600526={ #Pinelopi of Cyprus
@@ -2155,7 +2155,7 @@
 	father=3600523
 	mother=3600524
 	2656.9.10={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 3600527={ #Admiral Andreas of Cyprus
@@ -2206,7 +2206,7 @@
 	father=3600537
 	2612.1.2={birth=yes}
 	2631.2.7={add_spouse=3600528}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 3600530={ #Lord Pirate Pilartos of Cyprus
@@ -2226,7 +2226,7 @@
 	mother=3600529
 	2640.10.17={birth=yes}
 	2659.12.24={add_spouse=3600531}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 3600531={ #Poyraz of Cyprus
@@ -2247,7 +2247,7 @@
 	culture=kypriot
 	}
 	2659.12.24={add_spouse=3600530}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 3600532={ #Alkmene of Cyprus
@@ -2268,7 +2268,7 @@
 	mother=3600529
 	2642.11.5={birth=yes}
 	2660.2.14={add_spouse=3600546}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 3600533={ #Grigorios of Cyprus
@@ -2283,7 +2283,7 @@
 	father=3600530
 	mother=3600531
 	2660.5.1={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
  
 3600534={ #Nomiki of Cyprus
@@ -2298,7 +2298,7 @@
 	2664.4.10={birth=yes
 	culture=kypriot
 	}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 3600535={ #Lady Admiral Zarafet of Cyprus
@@ -2376,7 +2376,7 @@
     trait=chaste
 	2626.6.14={birth=yes}
 	2644.5.20={add_spouse=3600537}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 3600539={ #Lord Pirate Mahmud of Cyprus
@@ -2395,7 +2395,7 @@
 	father=3600537
 	mother=3600538
 	2647.4.18={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 3600540={ #Cemal of Cyprus
@@ -2411,7 +2411,7 @@
 	father=3600537
 	mother=3600538
 	2651.8.23={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 3600541={ #Agni of Cyprus
@@ -2429,7 +2429,7 @@
 	father=3600537
 	mother=3600538
 	2652.10.11={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }	
 		
 3600542={ #Lord Pirate Emilios of Cyprus
@@ -2490,7 +2490,7 @@
 		prestige=500
 		wealth=100
 	}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }	
 
 3600545={ #Pelagia of Cyprus
@@ -2512,7 +2512,7 @@
 	2642.8.12={birth=yes
 	culture=kypriot
 	}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }			
 		
 3600546={ #Silas of Cyprus
@@ -2536,7 +2536,7 @@
 	culture=kypriot
 	}
 	2660.2.14={add_spouse=3600532}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 3600547={ #Agathi of Cyprus
@@ -2552,7 +2552,7 @@
 	2665.6.29={birth=yes
 	culture=kypriot
 	}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 3600548={ #Vassiliki of Cyprus
@@ -2570,7 +2570,7 @@
 	2646.8.10={birth=yes
 	culture=kypriot
 	}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 3600549={ #Prokopis of Cyprus
@@ -2588,7 +2588,7 @@
 	2648.1.20={birth=yes
 	culture=kypriot
 	}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 #c_nicosia

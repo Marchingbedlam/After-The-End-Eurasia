@@ -255,7 +255,7 @@
 	2623.6.14={birth=yes}
 	2640.2.1={add_spouse=1804072}
 	2666.1.1={effect={add_artifact=ethics_boenhoeffer}}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1805021={
 	name="Friedhelm"
@@ -278,7 +278,7 @@
 	trait=cruel
 	trait=twin
 	2644.12.6={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1805022={
 	name="Dietrich"
@@ -303,7 +303,7 @@
 	trait=twin
 	2644.12.6={birth=yes}
 	2666.3.12={add_spouse=1805031}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1805023={
 	name="Fritz"
@@ -319,7 +319,7 @@
 	trait=lustful
 	trait=proud
 	2637.1.5={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1805024={
 	name="Erwin"
@@ -334,7 +334,7 @@
 	trait=zealous
 	trait=honest
 	2632.4.4={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1805025={
 	name="Otto"
@@ -349,7 +349,7 @@
 	trait=diligent
 	trait=patient
 	2628.9.16={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1805026={
 	name="Jürgen"
@@ -366,7 +366,7 @@
 	trait=shrewd
 	trait=erudite
 	2640.10.7={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1805028={
 	name="Josef"
@@ -398,7 +398,7 @@
 	intrigue=5
 	learning=4
 	2619.2.6={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1805030={
 	name="Albrecht"
@@ -437,7 +437,7 @@
 	trait=drunkard
 	trait=ambitious
 	2638.9.2={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1805032={
 	name="Hannes"
@@ -1198,7 +1198,7 @@
 	religion=lutheran
 	father=1805091
 	2628.5.5={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1805101={
 	name="Eiges"
@@ -1207,7 +1207,7 @@
 	religion=lutheran
 	mother=1805100
 	2651.8.26={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1805102={
 	name="Anna"
@@ -1217,7 +1217,7 @@
 	religion=lutheran
 	mother=1805100
 	2653.10.5={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1805103={
 	name="Lydia"
@@ -1227,7 +1227,7 @@
 	religion=lutheran
 	mother=1805100
 	2653.7.2={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1805104={
 	name="Maria"
@@ -1237,7 +1237,7 @@
 	religion=lutheran
 	mother=1805100
 	2653.6.3={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1805105={
 	name="Felix"
@@ -1885,9 +1885,7 @@
 	culture=bavarian
 	religion=neuhumanist
 	2595.9.28={birth=yes}
-	2615.3.2={
-			add_spouse=1805162
-		}
+	2615.3.2={add_spouse=1805162}
 	2648.12.16={death=yes}
 }
 1805164	={
@@ -1898,6 +1896,7 @@
 	religion=lutheran
 	2638.12.21={birth=yes
 		add_claim=k_bavaria}
+	2680.1.1={death=yes}
 }
 1805165	={
 	name="Benedikt"
@@ -1920,9 +1919,7 @@
 	culture=bavarian
 	religion=catholic
 	2391.10.16={birth=yes}
-	2415.3.2={
-			add_spouse=1805134
-		}
+	2415.3.2={add_spouse=1805134}
 	2438.1.22={death=yes}
 }
 1805167	={
@@ -1954,7 +1951,7 @@
 	intrigue=6
 	learning=3
 	2628.8.27={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1805169={
 	name="Wilhelm"
@@ -1973,6 +1970,7 @@
 	2643.12.16={birth=yes
 		culture=rhenish}
 	2660.1.1={employer=1805025}
+	2680.1.1={death=yes}
 }
 1805170={
     name="Eberhard"

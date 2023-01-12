@@ -39,8 +39,8 @@
 	2645.1.1={birth=yes}
 	2648.8.11={effect={
 		add_claim=c_male
-		add_claim=c_thiladhunmathi}
-		}
+		add_claim=c_thiladhunmathi}}
+	2680.1.1={death=yes}
 }
 1965003={
 	name="Mohamed"
@@ -57,8 +57,8 @@
 	2645.1.1={birth=yes}
 	2648.8.11={effect={
 		add_claim=c_huvadhu
-		add_claim=c_nilandhe}
-		}
+		add_claim=c_nilandhe}}
+	2680.1.1={death=yes}
 }
 ###1965100 SRI LANKA
 1965100={
@@ -66,50 +66,54 @@
 	dynasty=3050000 #Kumaraswami
 	culture=ilankai
 	religion=mantramarga
+	trait=just
+	trait=groomed
+    trait=proud
+    trait=skilled_tactician
 	2629.12.21={birth=yes}
-	trait="just"
-	trait="groomed"
-    trait="proud"
-    trait="skilled_tactician"
+	2680.1.1={death=yes}
 }
 1965101={
 	name="Muhammad Casim"
 	dynasty=3050001 #Murrakar
 	culture=ilankai
 	religion=sunni
+	trait=thrifty_clerk
+	trait=charitable
+	trait=shafii
 	2641.2.18={birth=yes}
 	2650.6.18={effect={add_friend=1965100}}
-	trait="thrifty_clerk"
-	trait="charitable"
-	trait=shafii
 }
 1965102={
 	name="Appapillai"
 	dynasty=3050002 #Ravindranath
 	culture=ilankai
 	religion=thirumatam
+	trait=shrewd
 	2619.8.8={birth=yes}
-	trait="shrewd"
+	2680.1.1={death=yes}
 }
 1965103={
 	name="Donald"
 	dynasty=3080000 #Ranjith
 	culture=sinhala
 	religion=nasrani
+	trait=greedy
+	trait=kind
+	trait=martial_cleric
 	2639.7.5={birth=yes}
-	trait="greedy"
-	trait="kind"
-	trait="martial_cleric"
+	2680.1.1={death=yes}
 }
 1965104={
 	name="Wimal"
 	dynasty=3080001 #Navagattegama 
 	culture=sinhala
 	religion=theravada
+	trait=grey_eminence
+	trait=shrewd
+	trait=cynical
 	2626.6.9={birth=yes}
-	trait="grey_eminence"
-	trait="shrewd"
-	trait="cynical"
+	2680.1.1={death=yes}
 }
 1965105={
 	name="Manik"
@@ -117,6 +121,7 @@
 	culture=sinhala
 	religion=theravada
 	2613.5.19={birth=yes}
+	2680.1.1={death=yes}
 }
 1965106={
 	name="Gananath"
@@ -124,17 +129,19 @@
 	culture=sinhala
 	religion=theravada
 	2649.4.1={birth=yes}
+	2680.1.1={death=yes}
 }
 1965107={
 	name="Tissahamy"
 	dynasty=3090000 #Morane
 	culture=vedda
 	religion=theravada
+	trait=fortune_builder
+	trait=sympathy_indian
+	trait=sympathy_pagans
+	trait=just
 	2597.3.12={birth=yes}
-	trait="fortune_builder"
-	trait="sympathy_indian"
-	trait="sympathy_pagans"
-	trait="just"
+	2680.1.1={death=yes}
 }
 ###1965200 TAMIL NADU
 1965200={
@@ -142,30 +149,33 @@
 	dynasty=3000087 #Bharathi
 	culture=tamil
 	religion=mantramarga
+	trait=charismatic_negotiator
+	trait=siddhanta
+	trait=strong
+	trait=lustful
 	2624.1.2={birth=yes}
-	trait="charismatic_negotiator"
-	trait="siddhanta"
-	trait="strong"
-	trait="lustful"
+	2680.1.1={death=yes}
 }
 1965201={
 	name="Devadas"
 	dynasty=3000088 #Ramanathan
 	culture=tamil
 	religion=thirumatam
+	trait=tough_soldier
 	2645.12.12={birth=yes}
-	trait="tough_soldier"
+	2680.1.1={death=yes}
 }
 1965202={
 	name="Ram"
 	dynasty=3000089 #Nayaka
 	culture=tamil
 	religion=vaishnava
+	trait=brilliant_strategist
+	trait=wroth
+	trait=diligent
+	trait=kshatriya
 	2630.9.19={birth=yes}
-	trait="brilliant_strategist"
-	trait="wroth"
-	trait="diligent"
-	trait="kshatriya"
+	2680.1.1={death=yes}
 }
 1965203={
 	name="Devi"
@@ -175,6 +185,7 @@
 	religion=vaishnava
 	2639.2.18={birth=yes}
 	2663.1.1={add_spouse=1965202}
+	2680.1.1={death=yes}
 }
 1965204={
 	name="Viruthachalam"
@@ -186,6 +197,7 @@
 	trait=kshatriya
 	trait=just
 	2650.1.14={birth=yes}
+	2680.1.1={death=yes}
 }
 1965205={
 	name="Krishnadas"
@@ -197,6 +209,7 @@
 	trait=paranoid
 	trait=cynical
 	2585.3.16={birth=yes}
+	2680.1.1={death=yes}
 }
 1965206={
 	name="Mithail"
@@ -206,6 +219,7 @@
 	religion=mantramarga
 	2587.2.19={birth=yes}
 	2597.1.1={add_spouse=1965205}
+	2680.1.1={death=yes}
 }
 1965207={
 	name="Gopala"
@@ -218,6 +232,7 @@
 	father=1965205
 	mother=1965206
 	2609.11.18={birth=yes}
+	2680.1.1={death=yes}
 }
 1965208={
 	name="Vishwanathan"
@@ -226,6 +241,7 @@
 	religion=mantramarga
 	father=1965207
 	2641.1.13={birth=yes}
+	2680.1.1={death=yes}
 }
 1965209={
 	name="Nirupadma"
@@ -236,6 +252,7 @@
 	father=1965205
 	mother=1965206
 	2613.8.17={birth=yes}
+	2680.1.1={death=yes}
 }
 1965210={
 	name="Sivalingam"
@@ -243,6 +260,7 @@
 	culture=tamil
 	religion=thirumatam
 	2632.4.7={birth=yes}
+	2680.1.1={death=yes}
 }
 1965211={
 	name="Venbakam"
@@ -253,6 +271,7 @@
 	trait=wroth
 	trait=kind
 	2623.2.18={birth=yes}
+	2680.1.1={death=yes}
 }
 1965212={
 	name="Mahadevan"
@@ -260,6 +279,7 @@
 	religion=mantramarga
 	2613.8.17={birth=yes}
 	2650.1.1={add_matrilineal_spouse=1965209}
+	2680.1.1={death=yes}
 }
 1965213={
 	name="Rukmini"
@@ -274,6 +294,7 @@
 	trait=erudite
 	2623.2.7={birth=yes}
 	2650.1.1={add_matrilineal_spouse=1965214}
+	2680.1.1={death=yes}
 }
 1965214={
 	name="Anand"
@@ -281,6 +302,7 @@
 	culture=tamil
 	religion=vaishnava
 	2623.11.5={birth=yes}
+	2680.1.1={death=yes}
 }
 1965215={
 	name="Lakshmi"
@@ -292,6 +314,7 @@
 	father=1965214
 	mother=1965213
 	2646.2.15={birth=yes}
+	2680.1.1={death=yes}
 }
 1965216={
 	name="Ethiraj"
@@ -302,6 +325,7 @@
 	trait=robust
 	trait=arbitrary
 	2635.9.5={birth=yes}
+	2680.1.1={death=yes}
 }
 1965217={
 	name="Anand"
@@ -309,6 +333,7 @@
 	culture=tamil
 	religion=thirumatam
 	2630.8.16={birth=yes}
+	2680.1.1={death=yes}
 }
 1965218={
 	name="Ilgevan"
@@ -316,6 +341,7 @@
 	culture=tamil
 	religion=thirumatam
 	2644.7.6={birth=yes}
+	2680.1.1={death=yes}
 }
 1965219={
 	name="Chidambaram"
@@ -328,6 +354,7 @@
 	trait=shy
 	trait=pious
 	2633.4.16={birth=yes}
+	2680.1.1={death=yes}
 }
 1965220={
 	name="Kavita"
@@ -339,6 +366,7 @@
 	father=1965214
 	mother=1965213
 	2646.2.15={birth=yes}
+	2680.1.1={death=yes}
 }
 1965221={
 	name="Nallasivam"
@@ -351,6 +379,7 @@
 	trait=brave
 	trait=gregarious
 	2635.2.15={birth=yes}
+	2680.1.1={death=yes}
 }
 1965222={
 	name="Anbarasu"
@@ -362,6 +391,7 @@
 	trait=diligent
 	trait=charitable
 	2636.1.18={birth=yes}
+	2680.1.1={death=yes}
 }
 1965223={
 	name="Balasarawati"
@@ -375,6 +405,7 @@
 	trait=stressed
 	2644.4.8={birth=yes}
 	2650.1.1={add_spouse=1965222}
+	2680.1.1={death=yes}
 }
 1965224={
 	name="Kumar"
@@ -389,6 +420,7 @@
 	trait=sympathy_indian
 	2610.9.16={birth=yes}
 	2650.1.1={add_spouse=1965225}
+	2680.1.1={death=yes}
 }
 1965225={
 	name="Fatima"
@@ -396,6 +428,7 @@
 	culture=tamil
 	religion=sunni
 	2611.12.6={birth=yes}
+	2680.1.1={death=yes}
 }
 1965226={
 	name="Abubakir"
@@ -405,6 +438,7 @@
 	father=1965224
 	mother=1965225
 	2641.4.6={birth=yes}
+	2680.1.1={death=yes}
 }
 1965227={
 	name="Arjun"
@@ -417,6 +451,7 @@
 	trait=paranoid
 	trait=brahmin
 	2624.8.28={birth=yes}
+	2680.1.1={death=yes}
 }
 1965228={
 	name="Indra"
@@ -426,6 +461,7 @@
 	religion=vaishnava
 	2633.9.26={birth=yes}
 	2650.1.1={add_spouse=1965227}
+	2680.1.1={death=yes}
 }
 1965229={
 	name="Ram"
@@ -436,6 +472,7 @@
 	father=1965227
 	mother=1965228
 	2655.1.29={birth=yes}
+	2680.1.1={death=yes}
 }
 1965230={
 	name="Kamal"
@@ -445,6 +482,7 @@
 	father=1965224
 	mother=1965225
 	2644.9.16={birth=yes}
+	2680.1.1={death=yes}
 }
 1965231={
 	name="Tamara"
@@ -455,6 +493,7 @@
 	father=1965224
 	mother=1965225
 	2653.3.12={birth=yes}
+	2680.1.1={death=yes}
 }
 1965232={
 	name="Hari"
@@ -464,6 +503,7 @@
 	trait=intricate_webweaver
 	trait=musician
 	2635.9.22={birth=yes}
+	2680.1.1={death=yes}
 }
 
 ###1965300 KERALA
@@ -479,7 +519,7 @@
 	trait=experimenter
 	2641.6.4={birth=yes}
 	2663.1.1={add_spouse=1965327}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1965327={
 	name="Parukutta"
@@ -493,7 +533,7 @@
 	trait=shrewd
 	trait=trusting
 	2642.4.1={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1965328={
 	name="Kunnikuttan"
@@ -545,7 +585,7 @@
 	trait=charitable
 
 	2624.7.1={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1965332={
 	name="Antony"
@@ -557,7 +597,7 @@
 	mother=1965331
 
 	2660.1.1={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1965333={
 	name="Paul"
@@ -568,7 +608,7 @@
 	mother=1965331
 
 	2663.1.1={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1965334={
 	name="Mani"
@@ -580,7 +620,7 @@
 	mother=1965331
 
 	2663.1.1={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1965335={
 	name="Dhana"
@@ -674,7 +714,7 @@
 
 	2639.4.3={birth=yes}
 	2658.1.1={add_spouse=1965342}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1965342={
 	name="Amina"
@@ -688,7 +728,7 @@
 	trait=stressed
 
 	2639.4.3={birth=yes}
-	2700.1.1={death=yes} 
+	2680.1.1={death=yes} 
 }
 1965343={
 	name="Mulla"
@@ -725,5 +765,5 @@
 	trait=feeble
 
 	2634.12.13={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }

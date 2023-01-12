@@ -16,7 +16,7 @@
 			add_claim=c_euboea
 			}
 		}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 	}
 2072002={
 	name="Medon"
@@ -30,7 +30,7 @@
 	trait=proud
 	trait=ambitious
 		2648.6.9={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 	}
 2072003={
 	name="Mardochaios"
@@ -45,7 +45,7 @@
 	trait=theologian
 	2606.4.12={birth=yes}
 	2628.6.23={add_spouse=2072004}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 2072004={
 	name="Iohana"
@@ -56,6 +56,7 @@
 	father=2202222
 	mother=2202252
 	2612.5.20={birth=yes}
+	2680.1.1={death=yes}
 }
 2072005={
 	name="Ioseph"
@@ -65,6 +66,7 @@
 	father=2072003
 	mother=2072004
 		2630.11.9={birth=yes}
+	2680.1.1={death=yes}
 	}
 2072006={
 	name="Isaak"
@@ -73,15 +75,19 @@
 	culture=romaniote
 	father=2072003
 	mother=2072004
-		2640.3.8={birth=yes}
-	}
+	2640.3.8={birth=yes}
+	2680.1.1={death=yes}
+}
+	
 2072007={
 	name="Cevat"
 	dynasty=2057001
 	religion=ruhi
 	culture=rumelian
-		2636.8.7={birth=yes}
-	}
+	2636.8.7={birth=yes}
+	2680.1.1={death=yes}
+}
+
 2072008={
 	name="Georgios"
 	dynasty=2072068
@@ -96,8 +102,9 @@
 	trait=hedonist
 	trait=lustful
 	trait=charitable
-		2636.4.19={birth=yes}
-	}
+	2636.4.19={birth=yes}
+	2680.1.1={death=yes}
+}
 2072009={
 	name="Dimitris"
 	dynasty=2072071
@@ -106,8 +113,9 @@
 	trait=poet
 	trait=scholarly_theologian
 	trait=mystic
-		2640.1.16={birth=yes}
-	}
+	2640.1.16={birth=yes}
+	2680.1.1={death=yes}
+}
 2072010={
 	name="Kostas"
 	dynasty=2072073 #Rodios
@@ -254,6 +262,7 @@
 	culture=greek
 	trait=mystic
 	2634.1.2={birth=yes}
+	2680.1.1={death=yes}
 }
 2072101={
 	name="Tomica"
@@ -264,6 +273,7 @@
 	2629.1.1={birth=yes 
 		give_nickname=nick_the_liberator
 	}
+	2680.1.1={death=yes}
 }
 2072102={
 	name="Marko"
@@ -271,6 +281,7 @@
 	religion=jedinstvo
 	culture=croatian
 	2642.1.1={birth=yes}
+	2680.1.1={death=yes}
 }
 2072103={
 	name="Kenan"
@@ -278,6 +289,7 @@
 	religion=jedinstvo
 	culture=bosniak
 	2642.1.1={birth=yes}
+	2680.1.1={death=yes}
 }
 2072104={
 	name="Zlatko"
@@ -285,6 +297,7 @@
 	religion=jedinstvo
 	culture=bosniak
 	2609.1.1={birth=yes}
+	2680.1.1={death=yes}
 }
 2072105={
 	name="Slobodanka"
@@ -293,6 +306,7 @@
 	culture=croatian
 	female=yes
 	2649.1.1={birth=yes}
+	2680.1.1={death=yes}
 }
 2072106={
 	name="Fabijan"
@@ -301,6 +315,7 @@
 	culture=croatian
 	trait=sympathy_old_world_cults
 	2641.1.1={birth=yes}
+	2680.1.1={death=yes}
 }
 2072107={
 	name="Irnes"
@@ -309,6 +324,7 @@
 	secret_religion=orthodox
 	culture=montenegrin
 	2638.1.1={birth=yes}
+	2680.1.1={death=yes}
 }
 2072108={
 	name="Šahbaz"
@@ -316,6 +332,7 @@
 	religion=jedinstvo
 	culture=bosniak
 	2626.1.1={birth=yes}
+	2680.1.1={death=yes}
 }
 2072109={
 	name="Suada"
@@ -324,6 +341,7 @@
 	religion=ruhi
 	culture=bosniak
 	2647.1.1={birth=yes}
+	2680.1.1={death=yes}
 }
 2072110={
 	name="Saša"
@@ -331,6 +349,7 @@
 	religion=orthodox
 	culture=serbian
 	2631.1.1={birth=yes}
+	2680.1.1={death=yes}
 }
 2072111={
 	name="Jelena"
@@ -341,6 +360,7 @@
 	culture=serbian
 	father=2072113
 	2623.1.1={birth=yes}
+	2680.1.1={death=yes}
 }
 2072112={
 	name="Ostoje"
@@ -350,6 +370,7 @@
 	culture=serbian
 	father=2072113
 	2623.1.1={birth=yes}
+	2680.1.1={death=yes}
 }
 2072113={
 	name="Nikolaj"
@@ -365,8 +386,9 @@
 	religion=catholic
 	culture=croatian
 	2635.1.1={birth=yes 
-	add_claim=d_dalmatia
+		add_claim=d_dalmatia
 	}
+	2680.1.1={death=yes}
 }
 2072115={
 	name="Tripo"
@@ -374,6 +396,7 @@
 	religion=jedinstvo
 	culture=montenegrin
 	2638.1.1={birth=yes}
+	2680.1.1={death=yes}
 }
 2072116={
 	name="Krile"
@@ -381,6 +404,7 @@
 	religion=jedinstvo
 	culture=montenegrin
 	2638.1.1={birth=yes}
+	2680.1.1={death=yes}
 }
 2072117={
 	name="Lekso"
@@ -388,6 +412,7 @@
 	religion=orthodox
 	culture=serbian
 	2638.1.1={birth=yes}
+	2680.1.1={death=yes}
 }
 2072118={
 	name="Muhamet"
@@ -395,6 +420,7 @@
 	religion=ruhi
 	culture=albanian
 	2638.1.1={birth=yes}
+	2680.1.1={death=yes}
 }
 2072119={
 	name="Petar"
@@ -402,6 +428,7 @@
 	religion=catholic
 	culture=croatian
 	2638.1.1={birth=yes}
+	2680.1.1={death=yes}
 }
 2072120={
 	name="Slobodo"
@@ -409,6 +436,7 @@
 	religion=ruhi
 	culture=romani
 	2638.5.12={birth=yes}
+	2680.1.1={death=yes}
 }
 2072121={
 	name="Faruk"
@@ -428,6 +456,7 @@
 	trait=gregarious
 	trait=honest
 	2605.6.2={birth=yes}
+	2680.1.1={death=yes}
 }
 2072200={
 	name="Simona"  #placeholder as fuck
@@ -443,6 +472,7 @@
 	trait=humble
 	trait=placeholder_char_trait
 	2634.1.1={birth=yes}
+	2680.1.1={death=yes}
 }
 2072201={
 	name="Qasim"
@@ -451,6 +481,7 @@
 	culture=albanian	
 	trait=gregarious
 	2602.1.1={birth=yes}
+	2680.1.1={death=yes}
 }
 2072202={
 	name="Staurakios"
@@ -466,11 +497,8 @@
 	mother=2072208
 	disallow_random_traits=yes
 	2630.1.1={birth=yes}
-		2660.1.1={
-		effect={
-			add_claim=c_euboea
-				}
-			}
+	2660.1.1={effect={add_claim=c_euboea}}
+	2680.1.1={death=yes}
 }
 2072203={
 	name="Thomas"
@@ -498,6 +526,7 @@
 	religion=orthodox
 	culture=makedonian
 	2630.1.1={birth=yes}
+	2680.1.1={death=yes}
 }
 2072205={
 	name="Eleftherios"
@@ -517,6 +546,7 @@
 	father=2072203
 	mother=2072204
 	2658.1.1={birth=yes}
+	2680.1.1={death=yes}
 }
 2072207={
 	name="Alexandros"
@@ -534,6 +564,7 @@
 	religion=orthodox
 	culture=makedonian
 	2605.1.1={birth=yes}
+	2680.1.1={death=yes}
 }
 2072209={
 	name="Theodoros"
@@ -549,6 +580,7 @@
 	religion=orthodox
 	culture=aromanian
 	2620.4.4={birth=yes}
+	2680.1.1={death=yes}
 }
 2072211={
 	name="Mykon" #insert Sparta reference here lol
@@ -563,6 +595,7 @@
 	trait=deceitful
 	disallow_random_traits=yes
 	2630.1.1={birth=yes}
+	2680.1.1={death=yes}
 }
 2072212={
 	name="Markos" #Tyrant of Euboiea
@@ -577,6 +610,7 @@
 	trait=one_handed
 	disallow_random_traits=yes
 	2640.1.1={birth=yes}
+	2680.1.1={death=yes}
 }
 2072213={
 	name="Glauketis"
@@ -584,6 +618,7 @@
 	religion=orthodox
 	culture=greek
 	2635.1.1={birth=yes}
+	2680.1.1={death=yes}
 }
 
 2072214={
@@ -704,11 +739,7 @@
 	trait=stressed
 	father=2072222
 	2175.1.1={birth=yes}
-	2202.1.1={
-		death={
-		death_reason=death_trait
-		}
-	}
+	2202.1.1={death={death_reason=death_trait}}
 }
 2072224={
 	name="Fotios"
@@ -765,11 +796,7 @@
 	occluded=yes
 	disallow_random_traits=yes
 	1845.12.24={birth=yes}
-	1913.3.18={
-		death={
-		death_reason=death_murder
-		}
-	}
+	1913.3.18={death={death_reason=death_murder}}
 }
 2072230={
 	name="Konstantinos"
@@ -809,11 +836,7 @@
 	disallow_random_traits=yes
 	father=2072230
 	1893.8.1={birth=yes}
-	1920.10.25={
-		death={
-			death_reason=death_trait
-		}
-	}
+	1920.10.25={death={death_reason=death_trait}}
 }
 2072233={
 	name="Pavlos"
@@ -853,6 +876,7 @@
 	disallow_random_traits=yes
 	2630.12.4={birth=yes}
 	2649.11.2={add_spouse=2072236}
+	2680.1.1={death=yes}
 }
 2072236={
 	name="Filipa"
@@ -866,6 +890,7 @@
 	trait=temperate
 	disallow_random_traits=yes
 	2635.11.2={birth=yes}
+	2680.1.1={death=yes}
 }
 2072237={
 	name="Aleksandar"
@@ -881,6 +906,7 @@
 	father=2072235
 	mother=2072236
 	2650.2.1={birth=yes}
+	2680.1.1={death=yes}
 }
 2072238={
 	name="Blazhe"
@@ -893,6 +919,7 @@
 	trait=humble
 	disallow_random_traits=yes
 	2600.3.24={birth=yes}
+	2680.1.1={death=yes}
 }
 2072239={
 	name="Filip"
@@ -907,6 +934,7 @@
 	trait=just
 	disallow_random_traits=yes
 	2625.2.12={birth=yes}
+	2680.1.1={death=yes}
 }
 2072240={
 	name="Mihali"
@@ -920,6 +948,7 @@
 	trait=brave
 	disallow_random_traits=yes
 	2635.4.1={birth=yes}
+	2680.1.1={death=yes}
 }
 2072241={
 	name="Hussein"
@@ -933,6 +962,7 @@
 	trait=cynical
 	disallow_random_traits=yes
 	2633.5.25={birth=yes}
+	2680.1.1={death=yes}
 }
 2072242={
 	name="Skendër"
@@ -946,6 +976,7 @@
 	trait=gregarious
 	disallow_random_traits=yes
 	2637.1.29={birth=yes}
+	2680.1.1={death=yes}
 }
 2072243={
 	name="Rustem"
@@ -960,6 +991,7 @@
 	trait=proud
 	disallow_random_traits=yes
 	2630.3.12={birth=yes}
+	2680.1.1={death=yes}
 }
 2072244={
 	name="Kostandin"
@@ -974,4 +1006,5 @@
 	trait=deceitful
 	disallow_random_traits=yes
 	2640.1.20={birth=yes}
+	2680.1.1={death=yes}
 }

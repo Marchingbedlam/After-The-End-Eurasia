@@ -80,7 +80,7 @@
 	religion=neuhumanist
 	mother=1804015
 	2648.1.1={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804007={
 	name="Annabelle"
@@ -93,7 +93,7 @@
 	trait=strong
 	trait=greedy
 	2642.1.1={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804008={
 	name="Kilian"
@@ -120,7 +120,7 @@
 	religion=neuhumanist
 	mother=1804015
 	2645.1.1={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804011={
 	name="Titisse"
@@ -186,7 +186,7 @@
 	trait=brave
 	trait=authoritative
 	2628.11.22={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804017={
 	name="Hendrik"
@@ -202,20 +202,18 @@
 	culture=chti
 	religion=jacobin
 	2638.5.22={birth=yes}
-	2658.1.1={add_spouse=1804016 #Karel van de Walle 
-	}
-	2700.1.1={death=yes}
+	2658.1.1={add_spouse=1804016} #Karel van de Walle 
+	2680.1.1={death=yes}
 }
 1804019={
 	name="Filip"
 	dynasty=2058052 #van de Walle
 	culture=flemish
-	father=1804017
 	religion=jacobin
 	father=1804016
 	mother=1804018
 	2659.12.28={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804020={
 	name="Elisabeth"
@@ -227,7 +225,7 @@
 	father=1804016
 	mother=1804018
 	2662.5.15={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804021={
 	name="Crestian"
@@ -248,7 +246,7 @@
 	religion=catholic
 	father=1804071
 	2615.9.10={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804023={
 	name="Marius"
@@ -258,7 +256,7 @@
 	religion=catholic
 	2643.10.25={birth=yes}
 	2665.1.1={effect={add_lover=1804025}}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804024={
 	name="Cesàri"
@@ -269,7 +267,7 @@
 	religion=catholic
 	trait=bastard
 	2665.9.4={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804025={
 	name="Fanny"
@@ -279,7 +277,7 @@
 	religion=catholic
 	mother=1804026
 	2647.7.31={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804026={
 	name="Ounourino"
@@ -289,7 +287,7 @@
 	religion=catholic
 	father=1804027
 	2620.1.1={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804027={
 	name="Benezet"
@@ -307,7 +305,7 @@
 	religion=catholic
 	father=1804027
 	2634.1.1={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804029={
 	name="Rainiè"
@@ -340,7 +338,7 @@
 	trait=lustful
 	trait=gregarious
 	2621.11.29={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804031={
 	name="Zinédine"
@@ -352,7 +350,7 @@
 	trait=wroth
 	trait=ambitious
 	2632.6.23={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804032={
 	name="Georges"
@@ -364,7 +362,7 @@
 	trait=ambitious
 	trait=bastard
 	2628.5.4={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804033={
 	name="Dënis"
@@ -376,7 +374,7 @@
 	trait=erudite
 	trait=zealous
 	2622.3.23={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804034={
 	name="Anri"
@@ -388,7 +386,7 @@
 	trait=zealous
 	trait=proud
 	2644.8.30={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804035={
 	name="Guustave"
@@ -401,7 +399,7 @@
 	2630.5.8={birth=yes}
 	2658.1.1={add_spouse=1804036 
 	}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804036={
 	name="Emma"
@@ -415,7 +413,7 @@
 	2637.12.9={birth=yes}
 	2658.1.1={add_spouse=1804035 
 	}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804037={
 	name="Charles"
@@ -425,7 +423,7 @@
 	father=1804035
 	mother=1804036
 	2661.3.4={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804038={
 	name="Guy"
@@ -436,7 +434,7 @@
 	trait=lunatic
 	trait=depressed
 	2624.8.5={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804039={
 	name="Tristan"
@@ -448,7 +446,7 @@
 	trait=dull
 	trait=brave
 	2648.4.1={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804040={
 	name="Dylan"
@@ -456,7 +454,7 @@
 	culture=chti
 	religion=jacobin
 	2638.12.21={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804041={
 	name="Stanislas"
@@ -467,7 +465,7 @@
 	2632.10.20={birth=yes}
 	2657.1.1={add_spouse=1804043 
 	}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804042={
 	name="Robert"
@@ -477,7 +475,7 @@
 	father=1804041
 	mother=1804043
 	2661.4.2={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804043={
 	name="Marie"
@@ -485,9 +483,8 @@
 	culture=parisian
 	religion=jacobin
 	2630.1.19={birth=yes}
-	2657.1.1={add_spouse=1804041 
-	}
-	2700.1.1={death=yes}
+	2657.1.1={add_spouse=1804041}
+	2680.1.1={death=yes}
 }
 1804044={
 	name="Patrice"
@@ -495,9 +492,9 @@
 	father=1804060
 	culture=parisian
 	religion=jacobin
-	2619.7.13={birth=yes}
-	2700.1.1={death=yes}
 	properties=co0c0k000000
+	2619.7.13={birth=yes}
+	2680.1.1={death=yes}
 }
 1804045={
 	name="Jeanne"
@@ -517,7 +514,7 @@
 	intrigue=6
 	learning=5
 	2647.5.9={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804046={
 	name="Albert-René"
@@ -526,7 +523,7 @@
 	religion=jacobin
 	trait=poet 
 	2627.8.25={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804047={
 	name="Maurice"
@@ -535,7 +532,7 @@
 	religion=jacobin
 	trait=zealous 
 	2605.8.19={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804048={
 	name="Alan"
@@ -555,7 +552,7 @@
 	father=1804232
 	2612.1.6={birth=yes}
 	2663.01.01={capital=c_vannes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804049={
 	name="Robèrt"
@@ -564,7 +561,7 @@
 	religion=sun_king_cultist 
 	2652.12.2={birth=yes}
 	2663.01.01={capital=c_saint_malo}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 
 1804050={
@@ -573,26 +570,22 @@
 	culture=parisian
 	religion=neuhumanist
 	father=1804051
-	2305.7.13={birth=yes}
-	2375.4.13={
-		death={
-			death_reason=death_poor_health
-			}
+	properties=co0c0k000000
 	martial=8
 	diplomacy=10
 	stewardship=5
 	intrigue=5
 	learning=10
-	add_trait="grey_eminence"
-	add_trait="proud"
-	add_trait="chaste"
-	add_trait="genius"
-	add_trait="scholar"
-	add_trait="patient"
-	add_trait="just"
-	add_trait="legendary"
-	properties=co0c0k000000
-		}
+	add_trait=grey_eminence
+	add_trait=proud
+	add_trait=chaste
+	add_trait=genius
+	add_trait=scholar
+	add_trait=patient
+	add_trait=just
+	add_trait=legendary
+	2305.7.13={birth=yes}
+	2375.4.13={death={death_reason=death_poor_health}}
 	}
 
 1804051={
@@ -600,20 +593,16 @@
 	dynasty=2008218 #Picquard
 	culture=parisian
 	religion=neuhumanist
-	2280.12.5={birth=yes}
-	2360.1.1={
-		death={
-			death_reason=death_poor_health
-			}
 	martial=4
 	diplomacy=4
 	stewardship=4
 	intrigue=4
 	learning=4
-	add_trait="thrifty_clerk"
-	add_trait="proud"
-	add_trait="legendary"
-		}
+	add_trait=thrifty_clerk
+	add_trait=proud
+	add_trait=legendary
+	2280.12.5={birth=yes}
+	2360.1.1={death={death_reason=death_poor_health}}
 	}
 
 1804052={
@@ -622,17 +611,13 @@
 	culture=parisian
 	religion=neuhumanist
 	father=1804051
-	2300.12.5={birth=yes}
-	2371.12.25={
-		death={
-			death_reason=death_natural
-			}
-			}
 	martial=4
 	diplomacy=4
 	stewardship=4
 	intrigue=4
 	learning=4
+	2300.12.5={birth=yes}
+	2371.12.25={death={death_reason=death_natural}}
 }
 
 1804053={
@@ -641,17 +626,13 @@
 	culture=parisian
 	religion=neuhumanist
 	father=1804052
-	2360.12.5={birth=yes}
-	2399.12.25={
-		death={
-			death_reason=death_accident_fire
-			}
-		}
 	martial=4
 	diplomacy=4
 	stewardship=4
 	intrigue=4
 	learning=4
+	2360.12.5={birth=yes}
+	2399.12.25={death={death_reason=death_accident_fire}}
 }
 
 1804054={
@@ -660,17 +641,13 @@
 	culture=parisian
 	religion=neuhumanist
 	father=1804053
-	2381.12.5={birth=yes}
-	2450.7.13={
-		death={
-			death_reason=death_natural
-			}
-		}
 	martial=4
 	diplomacy=4
 	stewardship=4
 	intrigue=4
 	learning=4
+	2381.12.5={birth=yes}
+	2450.7.13={death={death_reason=death_natural}}
 }
 
 1804055={
@@ -680,11 +657,7 @@
 	religion=neuhumanist
 	father=1804054
 	2404.3.21={birth=yes}
-	2480.1.30={
-		death={
-			death_reason=death_natural
-			}
-		}
+	2480.1.30={death={death_reason=death_natural}}
 	}
 
 1804056={
@@ -694,11 +667,7 @@
 	religion=neuhumanist
 	father=1804055
 	2423.3.21={birth=yes}
-	2478.6.22={
-		death={
-			death_reason=death_natural
-			}
-		}
+	2478.6.22={death={death_reason=death_natural}}
 	}
 
 1804057={
@@ -708,11 +677,7 @@
 	religion=neuhumanist
 	father=1804056
 	2452.9.5={birth=yes}
-	2510.2.11={
-		death={
-			death_reason=death_natural
-			}
-		}
+	2510.2.11={death={death_reason=death_natural}}
 	}
 
 1804058={
@@ -722,11 +687,7 @@
 	religion=neuhumanist
 	father=1804057
 	2490.8.1={birth=yes}
-	2544.4.7={
-		death={
-			death_reason=death_natural
-			}
-		}
+	2544.4.7={death={death_reason=death_natural}}
 	}
 
 1804059={
@@ -736,11 +697,7 @@
 	religion=neuhumanist
 	father=1804058
 	2510.4.11={birth=yes}
-	2567.5.7={
-		death={
-			death_reason=death_natural
-			}
-		}
+	2567.5.7={death={death_reason=death_natural}}
 	}
 
 1804060={
@@ -750,11 +707,7 @@
 	religion=neuhumanist
 	father=1804059
 	2564.6.3={birth=yes}
-	2650.1.20={
-		death={
-			death_reason=death_natural
-			}
-		}
+	2650.1.20={death={death_reason=death_natural}}
 	}
 
 1804061={
@@ -783,16 +736,10 @@
 		mother=1804159
 		2621.1.25={birth=yes}
 		2655.12.2={give_nickname=nick_the_sungazer}
-		2659.1.1={
-			effect={add_lover=1804152}
-		}
-		2660.1.1={
-			effect={add_lover=1804153}
-		}
-		2663.1.1={
-			effect={add_lover=1804151}
-		}
-		2700.1.1={death=yes}
+		2659.1.1={effect={add_lover=1804152}}
+		2660.1.1={effect={add_lover=1804153}}
+		2663.1.1={effect={add_lover=1804151}}
+		2680.1.1={death=yes}
 }
 
 1804062={
@@ -811,8 +758,8 @@
 		trait=lustful
 		trait=gregarious
 		2629.9.28={birth=yes}
-	2665.5.1={capital=c_vendee}
-		2700.1.1={death=yes}
+		2665.5.1={capital=c_vendee}
+		2680.1.1={death=yes}
 }
 
 1804063={
@@ -831,7 +778,7 @@
 		trait=chaste
 		trait=honorable
 		2640.1.30={birth=yes}
-		2700.1.1={death=yes}
+		2680.1.1={death=yes}
 }
 
 1804064={
@@ -852,7 +799,7 @@
 		trait=authoritative		
 		trait=shy
 		2640.1.30={birth=yes}
-		2700.1.1={death=yes}
+		2680.1.1={death=yes}
 }
 
 1804065={
@@ -893,8 +840,7 @@
 	trait=patient
 	trait=cruel
 	2631.11.18={birth=yes}
-	2660.1.1={add_spouse=1804067
-	}
+	2660.1.1={add_spouse=1804067}
 	2715.1.1={death=yes}
 }
 
@@ -933,7 +879,7 @@
 	father=1804066
 	mother=1804067
 	2662.2.9={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804069={
 	name="Nicòla"
@@ -949,7 +895,7 @@
 	father=1804066
 	mother=1804067
 	2665.1.2={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804070={
 	name="Henri"
@@ -971,12 +917,9 @@
 	trait=craven
 	trait=zealous
 	2605.12.29={birth=yes}
-	2651.9.9={add_spouse=1804073
-	}
-	2660.1.2={
-		add_claim=d_haut_languedoc
-	}
-	2700.1.1={death=yes}
+	2651.9.9={add_spouse=1804073}
+	2660.1.2={add_claim=d_haut_languedoc}
+	2680.1.1={death=yes}
 }	
 1804071={
 	name="Marcèu"
@@ -994,7 +937,7 @@
 	religion=catholic
 	father=1804071
 	2618.4.28={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804073={
 	name="Raimonda"
@@ -1012,7 +955,7 @@
 	trait=gluttonous
 	trait=charitable
 	2633.7.4={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804074={
 	name="Jeremias"
@@ -1031,15 +974,10 @@
 	trait=impaler
 	trait=wroth
 	2636.5.19={birth=yes}
-	2636.5.21={
-		give_nickname=nick_the_surfer
-	}
-	2656.6.6={add_spouse=1804075
-	}
-	2660.1.1={
-		add_claim=c_labourd
-	}
-	2700.1.1={death=yes}
+	2636.5.21={give_nickname=nick_the_surfer}
+	2656.6.6={add_spouse=1804075}
+	2660.1.1={add_claim=c_labourd}
+	2680.1.1={death=yes}
 }
 1804075={
 	name="Adèla"
@@ -1060,7 +998,7 @@
 	trait=stubborn
 	trait=content
 	2634.10.31={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804076={
 	name="Camila"
@@ -1078,7 +1016,7 @@
 	father=1804074
 	mother=1804075
 	2658.4.13={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804077={
 	name="Mirèlha"
@@ -1096,7 +1034,7 @@
 	father=1804074
 	mother=1804075
 	2662.2.25={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804078={
 	name="Chemtoub"
@@ -1118,9 +1056,8 @@
 	trait=lustful
 	trait=scarred
 	2621.12.31={birth=yes}
-	2638.7.21={add_spouse=1804079
-	}
-	2700.1.1={death=yes}
+	2638.7.21={add_spouse=1804079}
+	2680.1.1={death=yes}
 }
 1804079={
 	name="Émilie"
@@ -1141,7 +1078,7 @@
 	trait=proud
 	trait=possessed
 	2620.9.20={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804080={
 	name="Akiba"
@@ -1164,7 +1101,7 @@
 	father=1804078
 	mother=1804079
 	2640.4.4={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804081={
 	name="Yehudit"
@@ -1187,7 +1124,7 @@
 	father=1804078
 	mother=1804079
 	2640.4.4={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804082={
 	name="Shalom"
@@ -1202,11 +1139,7 @@
 	father=1804078
 	mother=1804079
 	2650.10.12={birth=yes}
-	2665.12.30={
-		death={
-			death_reason=death_accident
-		}
-	}
+	2665.12.30={death={death_reason=death_accident}}
 }
 1804083={
 	name="Règis"
@@ -1226,8 +1159,7 @@
 	trait=just
 	trait=trusting
 	2635.6.20={birth=yes}
-	2656.11.11={add_spouse=1804084
-	}
+	2656.11.11={add_spouse=1804084}
 }
 1804084={
 	name="Margarido"
@@ -1246,7 +1178,7 @@
 	trait=kind
 	trait=greedy
 	2636.12.14={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804085={
 	name="Lea"
@@ -1264,7 +1196,7 @@
 	father=1804083
 	mother=1804084
 	2657.10.8={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804086={
 	name="Pascal"
@@ -1281,7 +1213,7 @@
 	father=1804083
 	mother=1804084
 	2660.4.20={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804087={
 	name="Gilabèrt"
@@ -1302,9 +1234,8 @@
 	trait=envious
 	trait=shy
 	2614.5.1={birth=yes}
-	2642.12.24={add_spouse=1804088
-	}
-	2700.1.1={death=yes}
+	2642.12.24={add_spouse=1804088}
+	2680.1.1={death=yes}
 }
 1804088={
 	name="Saura"
@@ -1326,7 +1257,7 @@
 	trait=zealous
 	trait=craven
 	2622.3.18={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804089={
 	name="Enmanuèl"
@@ -1352,7 +1283,7 @@
 	father=1804087
 	mother=1804088
 	2643.10.4={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804090={
 	name="Asalaís"
@@ -1374,7 +1305,7 @@
 	father=1804087
 	mother=1804088
 	2647.8.7={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804091={
 	name="Magalí"
@@ -1396,7 +1327,7 @@
 	father=1804087
 	mother=1804088
 	2650.1.1={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804092={
 	name="Teodòr"
@@ -1418,9 +1349,8 @@
 	trait=chaste
 	trait=erudite
 	2644.5.14={birth=yes}
-	2652.6.21={add_spouse=1804093
-	}
-	2700.1.1={death=yes}
+	2652.6.21={add_spouse=1804093}
+	2680.1.1={death=yes}
 }	
 	
 1804093={
@@ -1443,7 +1373,7 @@
 	trait=charitable
 	trait=lunatic
 	2646.3.2={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804094={
 	name="Alòi"
@@ -1460,7 +1390,7 @@
 	father=1804092
 	mother=1804093
 	2659.2.4={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804095={
 	name="Gustau"
@@ -1482,9 +1412,8 @@
 	trait=greedy
 	trait=selfish
 	2627.6.12={birth=yes}
-	2649.8.22={add_spouse=1804096
-	}
-	2700.1.1={death=yes}
+	2649.8.22={add_spouse=1804096}
+	2680.1.1={death=yes}
 }
 1804096={
 	name="Amèlia"
@@ -1504,7 +1433,7 @@
 	trait=stubborn
 	trait=just
 	2633.1.11={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804097={
 	name="Adrian"
@@ -1523,7 +1452,7 @@
 	father=1804095
 	mother=1804096
 	2650.5.2={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804098={
 	name="Ofèlia"
@@ -1541,7 +1470,7 @@
 	father=1804095
 	mother=1804096
 	2656.11.26={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804099={
 	name="Damian"
@@ -1562,9 +1491,8 @@
 	trait=honorable
 	trait=homosexual
 	2631.2.21={birth=yes}
-	2656.10.29={add_spouse=1804100
-	}
-	2700.1.1={death=yes}
+	2656.10.29={add_spouse=1804100}
+	2680.1.1={death=yes}
 }
 1804100={
 	name="Amélie"
@@ -1584,7 +1512,7 @@
 	trait=slothful
 	trait=lovers_pox
 	2634.12.8={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804101={
 	name="Laurenç"
@@ -1601,7 +1529,7 @@
 	father=1804099
 	mother=1804100
 	2658.5.27={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804102={
 	name="Ugueta"
@@ -1617,7 +1545,7 @@
 	father=1804099
 	mother=1804100
 	2661.8.14={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804103={
 	name="Jean"
@@ -1640,9 +1568,8 @@
 	trait=cannibal_trait
 	trait=selfish
 	2619.7.21={birth=yes}
-	2639.1.1={add_spouse=1804104
-	}
-	2700.1.1={death=yes}
+	2639.1.1={add_spouse=1804104}
+	2680.1.1={death=yes}
 }
 1804104={
 	name="Nadine"
@@ -1664,7 +1591,7 @@
 	trait=homosexual
 	trait=charitable
 	2622.12.15={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804105={
 	name="Ulysse"
@@ -1686,7 +1613,7 @@
 	father=1804103
 	mother=1804104
 	2643.9.16={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804106={
 	name="Joséphine"
@@ -1706,7 +1633,7 @@
 	trait=freckles
 	trait=fair
 	2648.10.19={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804107={
 	name="Stanislas"
@@ -1727,9 +1654,8 @@
 	trait=honest
 	father=1804226
 	2630.6.6={birth=yes}
-	2656.9.8={add_spouse=1804108
-	}
-	2700.1.1={death=yes}
+	2656.9.8={add_spouse=1804108}
+	2680.1.1={death=yes}
 }
 1804108={
 	name="Mathilde"
@@ -1743,7 +1669,7 @@
 	intrigue=5
 	learning=4
 	2637.2.11={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804109={
 	name="Léonie"
@@ -1762,7 +1688,7 @@
 	father=1804107
 	mother=1804108
 	2660.12.1={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804110={
 	name="Louì"
@@ -1783,9 +1709,8 @@
 	trait=proud
 	trait=slothful
 	2649.1.1={birth=yes}
-	2665.2.10={add_spouse=1804111
-	}
-	2700.1.1={death=yes}
+	2665.2.10={add_spouse=1804111}
+	2680.1.1={death=yes}
 }
 1804111={
 	name="Oliva"
@@ -1806,7 +1731,7 @@
 	trait=stressed
 	trait=charitable
 	2649.1.11={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804112={
 	name="Ghjulianu"
@@ -1823,7 +1748,7 @@
 	trait=haughty
 	trait=bastard
 	2653.3.21={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804113={
 	name="Ramzi"
@@ -1845,12 +1770,9 @@
 	trait=deceitful
 	trait=just
 	2640.1.6={birth=yes}
-	2640.1.7={
-		give_nickname=nick_the_surfer
-	}
-	2659.12.8={add_spouse=1804116
-	}
-	2700.1.1={death=yes}
+	2640.1.7={give_nickname=nick_the_surfer}
+	2659.12.8={add_spouse=1804116}
+	2680.1.1={death=yes}
 }
 1804114={
 	name="Marc"
@@ -1871,7 +1793,7 @@
 	trait=wroth
 	trait=envious
 	2645.10.13={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804115={
 	name="Ricardo"
@@ -1891,9 +1813,8 @@
 	trait=musician
 	trait=humble
 	2615.4.11={birth=yes}
-	2638.9.9={add_spouse=1804118
-	}
-	2700.1.1={death=yes}
+	2638.9.9={add_spouse=1804118}
+	2680.1.1={death=yes}
 }
 1804116={
 	name="Oumaïma"
@@ -1913,7 +1834,7 @@
 	trait=humble
 	trait=patient
 	2643.10.9={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804117={
 	name="Mehdi"
@@ -1930,7 +1851,7 @@
 	father=1804113
 	mother=1804116
 	2661.2.1={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804118={
 	name="Ginette"
@@ -1951,7 +1872,7 @@
 	trait=chaste
 	trait=selfish
 	2618.6.24={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804119={
 	name="Patchaï"
@@ -1971,7 +1892,7 @@
 	father=1804115
 	mother=1804118
 	2644.8.17={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804120={
 	name="Lesièn"
@@ -1991,7 +1912,7 @@
 	trait=greedy
 	trait=dwarf
 	2621.1.1={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804121={
 	name="Habib"
@@ -2012,9 +1933,8 @@
 	trait=temperate
 	trait=ruthless
 	2615.8.4={birth=yes}
-	2635.3.23={add_spouse=1804122
-	}
-	2700.1.1={death=yes}
+	2635.3.23={add_spouse=1804122}
+	2680.1.1={death=yes}
 }
 1804122={
 	name="Ada"
@@ -2035,7 +1955,7 @@
 	trait=familyperson
 	trait=temperate
 	2616.1.18={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804123={
 	name="Aharon"
@@ -2055,7 +1975,7 @@
 	father=1804121
 	mother=1804122
 	2640.12.1={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804124={
 	name="Shemaya"
@@ -2077,7 +1997,7 @@
 	father=1804121
 	mother=1804122
 	2648.2.12={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804125={
 	name="Brakha"
@@ -2096,7 +2016,7 @@
 	father=1804121
 	mother=1804122
 	2653.12.13={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804126={
 	name="Guilyômo"
@@ -2113,9 +2033,8 @@
 	trait=honorable
 	trait=wroth
 	2628.10.31={birth=yes}
-	2648.11.24={add_spouse=1804127
-	}
-	2700.1.1={death=yes}
+	2648.11.24={add_spouse=1804127}
+	2680.1.1={death=yes}
 }
 1804127={
 	name="Alisa"
@@ -2135,7 +2054,7 @@
 	trait=cynical
 	trait=charitable
 	2631.6.2={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804128={
 	name="Pahcâl"
@@ -2152,7 +2071,7 @@
 	father=1804126
 	mother=1804127
 	2652.9.18={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804129={
 	name="Eve"
@@ -2169,7 +2088,7 @@
 	father=1804126
 	mother=1804127
 	2656.2.21={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804130={
 	name="Flavièn"
@@ -2186,7 +2105,7 @@
 	father=1804126
 	mother=1804127
 	2660.12.11={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804131={
 	name="Ali"
@@ -2205,7 +2124,7 @@
 	trait=stubborn
 	trait=charitable
 	2626.5.5={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804132={
 	name="Albèrt"
@@ -2224,9 +2143,8 @@
 	trait=zealous
 	trait=humble
 	2616.6.5={birth=yes}
-	2638.9.7={add_spouse=1804133
-	}
-	2700.1.1={death=yes}
+	2638.9.7={add_spouse=1804133}
+	2680.1.1={death=yes}
 }
 1804133={
 	name="Anna-Maria"
@@ -2246,7 +2164,7 @@
 	trait=lunatic
 	trait=possessed
 	2620.10.22={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804134={
 	name="Laurenç"
@@ -2266,7 +2184,7 @@
 	father=1804132
 	mother=1804133
 	2644.12.22={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804135={
 	name="Florença"
@@ -2290,7 +2208,7 @@
 	father=1804132
 	mother=1804133
 	2647.7.3={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804136={
 	name="Francès"
@@ -2312,7 +2230,7 @@
 	father=1804132
 	mother=1804133
 	2650.3.1={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804137={
 	name="Rodbèrt"
@@ -2333,9 +2251,8 @@
 	trait=cynical
 	trait=proud
 	2623.8.2={birth=yes}
-	2642.10.4={add_spouse=1804138
-	}
-	2700.1.1={death=yes}
+	2642.10.4={add_spouse=1804138}
+	2680.1.1={death=yes}
 }
 1804138={
 	name="Aileen"
@@ -2356,7 +2273,7 @@
 	trait=patient
 	trait=greedy
 	2624.7.18={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804139={
 	name="Baptistòu"
@@ -2378,7 +2295,7 @@
 	father=1804137
 	mother=1804138
 	2644.3.20={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804140={
 	name="Daphne"
@@ -2400,7 +2317,7 @@
 	father=1804137
 	mother=1804138
 	2649.8.11={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804141={
 	name="Magdalena"
@@ -2418,7 +2335,7 @@
 	father=1804137
 	mother=1804138
 	2653.5.18={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804142={
 	name="Marc"
@@ -2436,7 +2353,7 @@
 	father=1804137
 	mother=1804138
 	2657.12.31={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804143={
 	name="Paul"
@@ -2456,9 +2373,8 @@
 	trait=humble
 	trait=lustful
 	2638.8.22={birth=yes}
-	2656.12.11={add_spouse=1804144
-	}
-	2700.1.1={death=yes}
+	2656.12.11={add_spouse=1804144}
+	2680.1.1={death=yes}
 }
 1804144={
 	name="Asalaís"
@@ -2478,7 +2394,7 @@
 	trait=familyperson
 	trait=arbitrary
 	2640.2.3={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804145={
 	name="Berenguela"
@@ -2496,7 +2412,7 @@
 	father=1804143
 	mother=1804144
 	2657.6.12={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804146={
 	name="Marcèl"
@@ -2513,7 +2429,7 @@
 	father=1804143
 	mother=1804144
 	2662.1.11={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804147={
 	name="Simon"
@@ -2534,9 +2450,8 @@
 	trait=trusting
 	trait=kind
 	2632.10.25={birth=yes}
-	2659.9.24={add_spouse=1804148
-	}
-	2700.1.1={death=yes}
+	2659.9.24={add_spouse=1804148}
+	2680.1.1={death=yes}
 }
 1804148={
 	name="Fibrounie"
@@ -2557,7 +2472,7 @@
 	trait=cruel
 	trait=gregarious
 	2643.4.8={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804149={
 	name="Abel"
@@ -2574,7 +2489,7 @@
 	father=1804147
 	mother=1804148
 	2660.7.9={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804150={
 	name="Déricco"
@@ -2591,7 +2506,7 @@
 	father=1804147
 	mother=1804148
 	2662.9.15={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804151={
 	name="Bernadette"
@@ -2613,7 +2528,7 @@
 	trait=patient
 	2642.10.13={birth=yes}
 	2642.10.13={culture=rumelian}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804152={
 	name="Katell"
@@ -2635,7 +2550,7 @@
 	trait=giant
 	trait=gregarious
 	2641.1.4={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804153={
 	name="Stella"
@@ -2655,7 +2570,7 @@
 	trait=ruthless
 	trait=one_eyed
 	2639.4.22={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804154={
 	name="Yves"
@@ -2677,7 +2592,7 @@
 	father=1804061
 	mother=1804152
 	2661.3.6={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804155={
 	name="Yvonne"
@@ -2699,7 +2614,7 @@
 	father=1804061
 	mother=1804152
 	2661.3.6={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804156={
 	name="Ulysse"
@@ -2719,7 +2634,7 @@
 	father=1804061
 	mother=1804153
 	2663.1.22={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804157={
 	name="Guy"
@@ -2731,7 +2646,7 @@
 	father=1804061
 	mother=1804151
 	2665.8.14={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804158={
 	name="Hervé"
@@ -2755,13 +2670,8 @@
 	trait=sang_capetien
 	father=1804217
 	2594.9.27={birth=yes}
-	2620.1.1={add_spouse=1804159
-	}
-	2650.12.12={
-		death={
-		death_reason=death_pneumonic
-		}
-	}
+	2620.1.1={add_spouse=1804159}
+	2650.12.12={death={death_reason=death_pneumonic}}
 }
 1804159={
 	name="Bárbara"
@@ -2781,7 +2691,7 @@
 	trait=humble
 	trait=cynical
 	2604.1.1={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804160={
 	name="Arnaud"
@@ -2804,7 +2714,7 @@
 	father=1804158
 	mother=1804159
 	2649.1.18={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804161={
 	name="Alan"
@@ -2825,9 +2735,8 @@
 	trait=charitable
 	trait=trusting
 	2621.6.2={birth=yes}
-	2646.11.2={add_spouse=1804162
-	}
-	2700.1.1={death=yes}
+	2646.11.2={add_spouse=1804162}
+	2680.1.1={death=yes}
 }
 1804162={
 	name="Cadi"
@@ -2846,7 +2755,7 @@
 	trait=kind
 	trait=depressed
 	2626.9.1={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804163={
 	name="Ivonètt"
@@ -2866,7 +2775,7 @@
 	father=1804161
 	mother=1804162
 	2650.4.4={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804164={
 	name="Sandr"
@@ -2876,7 +2785,6 @@
 	diplomacy=4
 	martial=4
 	stewardship=2
-	stewardship=6
 	intrigue=5
 	learning=3
 	trait=conscientious
@@ -2884,7 +2792,7 @@
 	father=1804161
 	mother=1804162
 	2655.8.17={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804165={
 	name="Oreli"
@@ -2902,7 +2810,7 @@
 	father=1804161
 	mother=1804162
 	2658.10.8={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804166={
 	name="Sebastièn"
@@ -2922,7 +2830,7 @@
 	trait=robust
 	trait=stubborn
 	2645.2.1={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804167={ #sous la cagoule c'est jul
 	name="Juliano"
@@ -2943,7 +2851,7 @@
 	trait=slothful
 	2636.1.19={birth=yes}
 	2656.1.1={employer=1804031}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804168={
 	name="Ferdinand" 
@@ -2963,7 +2871,7 @@
 	trait=cynical
 	2625.3.30={birth=yes}
 	2660.1.1={employer=1804022}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804169={
 	name="Quentin"
@@ -2985,7 +2893,7 @@
 	trait=zealous
 	2643.12.16={birth=yes}
 	2660.1.1={employer=1804031}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804170={
 	name="Cristoù"
@@ -3005,7 +2913,7 @@
 	trait=possessed
 	2639.11.28={birth=yes}
 	2660.1.1={employer=1804031}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804171={
 	name="Jeremias"
@@ -3026,7 +2934,7 @@
 	2638.3.22={birth=yes}
 	2638.3.22={culture=occitan}
 	2660.1.1={employer=1804070}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804172={
 	name="Malsèline"
@@ -3048,7 +2956,7 @@
 	2640.10.11={birth=yes}
 	2640.10.11={culture=sudani}
 	2660.1.1={employer=1804110}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804173={
 	name="Alioune"
@@ -3071,7 +2979,7 @@
 	2621.9.8={birth=yes}
 	2621.9.8={culture=sudani}
 	2660.1.1={employer=1804131}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804174={
 	name="Dàvid"
@@ -3092,7 +3000,7 @@
 	2624.8.27={birth=yes}
 	2624.8.27={culture=gascon}
 	2660.1.1={employer=1804114}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804175={
 	name="Habib"
@@ -3110,7 +3018,7 @@
 	trait=deceitful
 	2648.1.20={birth=yes}
 	2660.1.1={employer=1804070}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804176={
 	name="Ibrahim"
@@ -3131,7 +3039,7 @@
 	2649.3.22={birth=yes}
 	2649.3.22={culture=sudani}
 	2660.1.1={employer=1804031}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804177={
 	name="Fifi"
@@ -3155,7 +3063,7 @@
 	dna=bicbf0k0ab0
 	properties=gg0dak000000
 	2626.7.14={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804178={
 	name="Alan"
@@ -3169,7 +3077,7 @@
 	trait=proud
 	trait=charitable
 	2597.1.6={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804179={
 	name="Tomaz"
@@ -3182,9 +3090,8 @@
 	trait=stubborn
 	trait=patient
 	2640.12.5={birth=yes}
-	2658.1.1={add_spouse=1804181 #Marie-Jeanne Gabrielle
-	}
-	2700.1.1={death=yes}
+	2658.1.1={add_spouse=1804181} #Marie-Jeanne Gabrielle
+	2680.1.1={death=yes}
 }
 1804180={
 	name="Aleksandr"
@@ -3200,9 +3107,8 @@
 	trait=scarred
 	trait=pious
 	2621.6.16={birth=yes}
-	2658.1.1={add_spouse=2201007 #Myfanwy Owen
-	}
-	2700.1.1={death=yes}
+	2658.1.1={add_spouse=2201007} #Myfanwy Owen
+	2680.1.1={death=yes}
 }
 1804181={
 	name="Mari-Janig"
@@ -3213,7 +3119,7 @@
 	trait=ambitious
 	trait=kind
 	2640.1.12={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804182={
 	name="Louïs"
@@ -3249,7 +3155,7 @@
 	trait=stubborn
 	trait=ambitious
 	2620.3.8={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804184={
 	name="François"
@@ -3267,9 +3173,8 @@
 	trait=charitable
 	trait=patient
 	2635.10.20={birth=yes}
-	2655.4.5={add_spouse=1804185
-	}
-	2700.1.1={death=yes}
+	2655.4.5={add_spouse=1804185}
+	2680.1.1={death=yes}
 }
 1804185={
 	name="Sybille"
@@ -3287,7 +3192,7 @@
 	trait=trusting
 	trait=pious
 	2637.9.8={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804186={
 	name="Annabelle"
@@ -3305,7 +3210,7 @@
 	father=1804184
 	mother=1804185
 	2659.7.7={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804187={
 	name="Teuric"
@@ -3324,9 +3229,8 @@
 	trait=gluttonous
 	trait=familyperson
 	2624.5.11={birth=yes}
-	2645.9.9={add_spouse=1804188
-	}
-	2700.1.1={death=yes}
+	2645.9.9={add_spouse=1804188}
+	2680.1.1={death=yes}
 }
 1804188={
 	name="Beatritz"
@@ -3346,7 +3250,7 @@
 	trait=just
 	trait=wroth
 	2627.1.11={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804189={
 	name="Gaston"
@@ -3369,7 +3273,7 @@
 	father=1804187
 	mother=1804188
 	2648.3.11={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804190={
 	name="Guy"
@@ -3388,9 +3292,8 @@
 	trait=honest
 	trait=falconer
 	2620.10.18={birth=yes}
-	2640.12.11={add_spouse=1804191
-	}
-	2700.1.1={death=yes}
+	2640.12.11={add_spouse=1804191}
+	2680.1.1={death=yes}
 }
 1804191={
 	name="Alice"
@@ -3410,7 +3313,7 @@
 	trait=patient
 	trait=slothful
 	2622.9.9={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804192={
 	name="François"
@@ -3432,7 +3335,7 @@
 	father=1804190
 	mother=1804191
 	2643.2.27={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804193={
 	name="Mikaël"
@@ -3454,7 +3357,7 @@
 	trait=cruel
 	trait=pious
 	2635.2.11={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804194={
 	name="Charloun"
@@ -3466,7 +3369,7 @@
 	trait=musician
 	trait=gregarious
 	2624.5.22={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804195={
 	name="Robert"
@@ -3479,7 +3382,7 @@
 	trait=skilled_tactician
 	trait=gregarious
 	2632.10.16={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804196={
 	name="Trung Quan"
@@ -3494,6 +3397,7 @@
 	2632.10.16={birth=yes
 		culture=occitan}
 	2660.1.1={employer=1804065}
+	2680.1.1={death=yes}
 }
 1804197={
 	name="Michèu"
@@ -3515,9 +3419,9 @@
 	intrigue=9
 	learning=7
 	2628.9.1={birth=yes
-		culture=provencal
-	}
+		culture=provencal}
 	2628.9.2={effect={set_character_flag=rite_selected}}
+	2680.1.1={death=yes}
 }
 1804198={
 	name="Mélinée"
@@ -3531,10 +3435,10 @@
 	trait=sympathy_old_world_cults
 	trait=gregarious
 	2635.8.22={birth=yes
-		culture=provencal
-	}
+		culture=provencal}
 	2659.1.1={add_spouse=1804197}
 	2659.1.1={effect={add_lover=1804197}}
+	2680.1.1={death=yes}
 }
 1804199={
 	name="Gastoun"
@@ -3551,7 +3455,7 @@
 	trait=shy
 	trait=brave
 	2628.9.14={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804200={
 	name="Lion"
@@ -3572,7 +3476,7 @@
 	religion=catholic
 	2636.11.16={birth=yes}
 	2654.1.1={add_spouse=1861111}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804202={
 	name="Nurè"
@@ -3581,7 +3485,7 @@
 	religion=catholic
 	father=1804029
 	2662.12.22={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804203={
 	name="Claudina"
@@ -3591,7 +3495,7 @@
 	religion=catholic
 	father=1804029
 	2659.7.7={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804204={
 	name="Luisa"
@@ -3602,7 +3506,7 @@
 	culture=ligurian
 	religion=catholic
 	2642.5.9={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804205={
 	name="Arcule"
@@ -3612,7 +3516,7 @@
 	culture=ligurian
 	religion=catholic
 	2645.12.29={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804206={
 	name="Rustam"
@@ -3626,10 +3530,9 @@
 	trait=sympathy_islam
 	trait=honest
 	2643.12.7={birth=yes}
-	2665.1.1={
-		employer=1804032
+	2665.1.1={employer=1804032
 		effect={add_friend=1804032}}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804207={
 	name="Alexandrine"
@@ -3641,7 +3544,7 @@
 	2665.1.1={add_spouse=1804206
 		effect={add_lover=1804206}
 		employer=1804032}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804208={
 	name="Archibald"
@@ -3659,7 +3562,7 @@
 	trait=drunkard
 	trait=cynical
 	2624.5.22={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804209={
 	name="Bianca"
@@ -3675,7 +3578,7 @@
 	trait=distractible
 	2628.9.10={birth=yes}
 	2648.1.1={add_spouse=1804208}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1804210={
 	name="Jili"

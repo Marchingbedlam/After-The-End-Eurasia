@@ -863,8 +863,7 @@
 	trait=apostle_cult
 	father=8000071
 	2623.1.1={birth=yes}
-	2648.1.1={add_spouse=8000191
-	}
+	2648.1.1={add_spouse=8000191}
 	2660.1.1={
 		add_alliance=8000078 #Broken thing, please fix
 	}
@@ -888,6 +887,7 @@
 	trait=flamboyant_schemer
 	disallow_random_traits=yes
 	2645.1.1={birth=yes}
+	2680.1.1={death=yes}
 }
 
 8000074={
@@ -6945,6 +6945,7 @@ trait=fair
 trait=rowdy
 2656.3.6={birth=yes}
 2658.1.1={add_claim=k_denmark}
+	2680.1.1={death=yes}
 }
 
 
@@ -6988,7 +6989,7 @@ trait=cruel
 trait=greedy
 2630.3.4={birth=yes}
 2660.1.1={give_nickname=nick_the_victual}
-2700.1.1={death=yes}
+2680.1.1={death=yes}
 }
 
 80003631={
@@ -7000,7 +7001,7 @@ trait=scholarly_theologian
 trait=erudite
 trait=kind
 2635.3.4={birth=yes}
-2700.1.1={death=yes}
+2680.1.1={death=yes}
 }
 
 80003632={
@@ -7012,5 +7013,5 @@ trait=hiddenfolk_cult
 trait=strong
 trait=robust
 2635.3.4={birth=yes}
-2700.1.1={death=yes}
+2680.1.1={death=yes}
 }

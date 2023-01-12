@@ -127,9 +127,7 @@
 	trait=diligent
 	trait=greedy
 	2590.1.2={birth=yes}
-	2630.1.1={
-			add_spouse=1001007
-		}
+	2630.1.1={add_spouse=1001007}
 	2650.10.3={death=yes}
 }
 1001007={
@@ -163,9 +161,8 @@
 	trait=honest
 	trait=just
 	trait=shrewd
-	2643.10.2={
-	birth=yes
-	culture=southerner}
+	2643.10.2={birth=yes
+		culture=southerner}
 	2700.1.3={death=yes}
 }
 1001009={
@@ -1190,7 +1187,7 @@
 	father=1001034
 	mother=1001069
 	2653.5.1={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1001062={
 	name="Alberta"
@@ -1201,7 +1198,7 @@
 	father=1001034
 	mother=1001069
 	2654.10.5={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1001063={
 	name="Alfred"
@@ -1211,7 +1208,7 @@
 	father=1001034
 	mother=1001069
 	2656.6.25={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1001064={
 	name="Aladale"
@@ -1221,7 +1218,7 @@
 	father=1001034
 	mother=1001069
 	2660.11.8={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1001065={
 	name="Alexandra"
@@ -1232,7 +1229,7 @@
 	father=1001034
 	mother=1001069
 	2663.9.9={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1001066={
 	name="Robert"
@@ -1256,7 +1253,7 @@
 	trait=gregarious
 	trait=authoritative
 	2624.4.24={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1001067={
 	name="Philip"
@@ -1280,7 +1277,7 @@
 	trait=lustful
 	trait=ruthless
 	2626.12.27={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1001068={
 	name="Eliphas"
@@ -1309,7 +1306,7 @@
 	add_trait=trusting
 	add_trait=humble
 	2630.4.16={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1001070={
 	name="Nigel"
@@ -1390,6 +1387,7 @@
 	trait=sympathy_vernacular
 	2646.12.25={birth=yes}
 	2663.12.25={employer=3046007}
+	2680.1.1={death=yes}
 }
 
 1001077={
@@ -1418,7 +1416,7 @@
 	add_trait=rude
 	2635.5.25={birth=yes}
 	2659.5.25={effect={add_artifact=favorite_shades}}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1001078={
 	name="Hugo"
@@ -1429,6 +1427,7 @@
 	2626.8.6={birth=yes
 		culture=southerner}
 	2666.1.1={employer=1001003}
+	2680.1.1={death=yes}
 }
 1001079={
 	name="Barry"
@@ -1446,4 +1445,5 @@
 	trait=drunkard
 	properties=c0sc0k00
 	2603.5.12={birth=yes}
+	2680.1.1={death=yes}
 }

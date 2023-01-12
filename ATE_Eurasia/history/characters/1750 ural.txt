@@ -87,7 +87,7 @@
 	trait=indulgent_wastrel
 	trait=brave
 	trait=hunter
-	trait=devout
+	trait=zealous
 	trait=patient
 	trait=gregarious
 	disallow_random_traits=yes
@@ -143,7 +143,7 @@
 	religion=jumic
 	female=yes
 	2641.4.12={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1750043={
 	name="Semyon Mikhailovich"
@@ -164,7 +164,7 @@
 	learning=10
 	disallow_random_traits=yes
 	2624.2.5={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1750044={
 	name="Konstantin Nikloaevich"
@@ -184,6 +184,7 @@
 	learning=7
 	disallow_random_traits=yes
 	2620.4.10={birth=yes}
+	2680.1.1={death=yes}
 }
 1750045={
 	name="Kristina"
@@ -192,7 +193,7 @@
 	religion=dvoeverie
 	female=yes
 	2646.5.12={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1750046={
 	name="Alla"
@@ -202,7 +203,7 @@
 	trait=gamer
 	trait=strong
 	2634.2.12={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1750047={
 	name="Evgeniya"
@@ -216,7 +217,7 @@
 	trait=scholar
 	trait=sympathy_pagans
 	2622.4.1={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1750048={
 	name="Artyom"
@@ -224,7 +225,7 @@
 	culture=akmolensk
 	religion=dvoeverie
 	2652.5.1={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1750049={
 	name="Amosa"
@@ -234,7 +235,7 @@
 	trait=mystic
 	trait=adventurer
 	2594.2.1={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1750050={
 	name="Mascha"
@@ -244,7 +245,7 @@
 	female=yes
 	trait=musician
 	2630.1.31={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1750051={
 	name="Pavel"
@@ -254,7 +255,7 @@
 	secret_religion=chronicler
 	trait=adventurer
 	2613.2.1={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1750052={
 	name="Alisher"
@@ -270,7 +271,7 @@
 	trait=flat_terrain_leader
 	disallow_random_traits=yes
 	2635.1.20={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1750053={
 	name="Minigali"
@@ -278,7 +279,7 @@
 	culture=bashkir
 	religion=ruhi
 	2620.2.28={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1750054={
 	name="Minigali"
@@ -286,7 +287,7 @@
 	culture=bashkir
 	religion=ruhi
 	2625.3.14={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1750055={
 	name="Taymaç"
@@ -302,14 +303,14 @@
 	trait=trickster
 	disallow_random_traits=yes
 	2633.2.4={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1750056={
 	name="Varish"
 	dynasty=2169102 #Oki
 	culture=udmurt
 	religion=jumic
-	trait=dutiful_cleric
+	trait=martial_cleric
 	trait=renowned_physician
 	trait=poet
 	trait=brave
@@ -317,7 +318,7 @@
 	trait=ambitious
 	female=yes
 	2635.1.20={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1750057={
 	name="Paladdya"
@@ -326,7 +327,7 @@
 	religion=jumic
 	female=yes
 	2635.4.20={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 1750058={
 	name="Pyotr Pavlovich"
@@ -349,7 +350,7 @@
 	disallow_random_traits=yes
 	2634.5.1={birth=yes}
 	2660.1.1={add_spouse=170059}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 170059={
 	name="Ulyana"
@@ -364,7 +365,7 @@
 	female=yes
 	disallow_random_traits=yes
 	2640.6.2={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 170060={
 	name="Shukay"
@@ -372,7 +373,7 @@
 	culture=udmurt
 	religion=jumic
 	2568.3.1={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 170061={
 	name="Valeria"
@@ -382,7 +383,7 @@
 	trait=administrator
 	female=yes
 	2620.5.1={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 170062={
 	name="Sergey"
@@ -391,7 +392,7 @@
 	religion=jumic
 	trait=musician
 	2630.2.4={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 170063={
 	name="Kallistrat"
@@ -399,7 +400,7 @@
 	culture=komi
 	religion=jumic
 	2639.4.12={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 170064={
 	name="Aleksandr"
@@ -409,7 +410,7 @@
 	trait=hunter
 	trait=strong
 	2639.3.16={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
 170065={
 	name="Ivan"
@@ -417,5 +418,5 @@
 	culture=komi
 	religion=jumic
 	2610.4.12={birth=yes}
-	2700.1.1={death=yes}
+	2680.1.1={death=yes}
 }
