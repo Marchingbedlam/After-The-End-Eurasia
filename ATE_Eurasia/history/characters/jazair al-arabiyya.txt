@@ -1,145 +1,152 @@
-2106000 = { #King of Kuwait
-	name = "Jaber" 
-	dynasty = 2106006 #al-Sabah
-	culture = furataini
-	religion = sunni
-	trait = fortune_builder
-	trait = greedy
-	trait = diligent
-	trait = deceitful
-	2625.1.1 = { birth = yes }
-	2645.1.1 = {
-		add_spouse = 2106001
-	}
+2106000={ #King of Kuwait
+	name="Jaber" 
+	dynasty=2106006 #al-Sabah
+	culture=furataini
+	religion=sunni
+	trait=fortune_builder
+	trait=greedy
+	trait=diligent
+	trait=deceitful
+	2625.1.1={birth=yes}
+	2645.1.1={add_spouse=2106001}
+	2700.1.1={death=yes}
 }
-2106001 = { 
-	name = "Shujoun" 
-	culture = furataini
-	religion = sunni
-	female = yes
-	trait = charismatic_negotiator
-	trait = gregarious
-	trait = kind
-	trait = groomed
-	2625.1.1 = { birth = yes }
+2106001={
+	name="Shujoun" 
+	culture=furataini
+	religion=sunni
+	female=yes
+	trait=charismatic_negotiator
+	trait=gregarious
+	trait=kind
+	trait=groomed
+	2625.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
-2106002 = { 
-	name = "Salim" 
-	dynasty = 2106006 #al-Sabah
-	culture = furataini
-	religion = sunni
-	father = 2106000
-	mother = 2106001
-	trait = fortune_builder
-	trait = greedy
-	trait = patient
-	trait = deceitful
-	2648.1.1 = { birth = yes }
+2106002={
+	name="Salim" 
+	dynasty=2106006 #al-Sabah
+	culture=furataini
+	religion=sunni
+	father=2106000
+	mother=2106001
+	trait=fortune_builder
+	trait=greedy
+	trait=patient
+	trait=deceitful
+	2648.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
-2106003 = { 
-	name = "Sabah" 
-	dynasty = 2106006 #al-Sabah
-	culture = furataini
-	religion = sunni
-	father = 2106000
-	mother = 2106001
-	trait = fortune_builder
-	trait = kind
-	trait = diligent
-	trait = trusting
-	trait = honorable
-	2650.1.1 = { birth = yes }
+2106003={
+	name="Sabah" 
+	dynasty=2106006 #al-Sabah
+	culture=furataini
+	religion=sunni
+	father=2106000
+	mother=2106001
+	trait=fortune_builder
+	trait=kind
+	trait=diligent
+	trait=trusting
+	trait=honorable
+	2650.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
-2106004 = { 
-	name = "Fawzi" 
-	dynasty = 2106006 #al-Kharafi
-	culture = furataini
-	religion = sunni
-	trait = midas_touched
-	trait = stubborn
-	trait = ambitious
-	trait = greedy
-	trait = honorable
-	2640.1.1 = { birth = yes }
-	2660.1.1 = { wealth = 500 }
-	2664.1.1 = {
-		add_spouse = 2106005
-	}
+2106004={
+	name="Fawzi" 
+	dynasty=2106006 #al-Kharafi
+	culture=furataini
+	religion=sunni
+	trait=midas_touched
+	trait=stubborn
+	trait=ambitious
+	trait=greedy
+	trait=honorable
+	2640.1.1={birth=yes}
+	2660.1.1={wealth=500}
+	2664.1.1={add_spouse=2106005}
+	2700.1.1={death=yes}
 }
-2106005 = { 
-	name = "Nejoud" 
-	culture = furataini
-	religion = sunni
-	female = yes
-	trait = intricate_webweaver
-	trait = gregarious
-	trait = kind
-	trait = deceitful
-	trait = groomed
-	2644.1.1 = { birth = yes }
+2106005={
+	name="Nejoud" 
+	culture=furataini
+	religion=sunni
+	female=yes
+	trait=intricate_webweaver
+	trait=gregarious
+	trait=kind
+	trait=deceitful
+	trait=groomed
+	2644.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
-2110000 = { #Duke of Ruus al-Jibal
-	name = "Omar" 
-	dynasty = 2110000 #Al-Makki
-	culture = umani
-	religion = nazari
-	2638.1.1 = { birth = yes }
+2110000={ #Duke of Ruus al-Jibal
+	name="Omar" 
+	dynasty=2110000 #Al-Makki
+	culture=umani
+	religion=nazari
+	2638.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
-2110001 = { #King of Oman
-	name = "Abdullah" 
-	dynasty = 2110001 #Al-Zubayr
-	culture = umani
-	religion = ibadi
-	2638.1.1 = { birth = yes }
+2110001={ #King of Oman
+	name="Abdullah" 
+	dynasty=2110001 #Al-Zubayr
+	culture=umani
+	religion=ibadi
+	2638.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
-2110002 = { #Count of az-Zaharirah
-	name = "Sufyan" 
-	dynasty = 2110002 #Al-Harithi
-	culture = umani
-	religion = nazari
-	2638.1.1 = { birth = yes }
+2110002={ #Count of az-Zaharirah
+	name="Sufyan" 
+	dynasty=2110002 #Al-Harithi
+	culture=umani
+	religion=nazari
+	2638.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
-2110003 = { #Count of Sur
-	name = "Sufyan" 
-	dynasty = 2110064 #Ramdas
-	culture = gujarati
-	religion = ibadi
-	2638.1.1 = { 
-		birth = yes 
-		culture = umani
-	}
+2110003={ #Count of Sur
+	name="Sufyan" 
+	dynasty=2110064 #Ramdas
+	culture=gujarati
+	religion=ibadi
+	2638.1.1={
+		birth=yes 
+		culture=umani}
+	2700.1.1={death=yes}
 }
-2110004 = { #Count of ar Rustaq
-	name = "Mustahil" 
-	dynasty = 2110065 #Zigdali
-	culture = baloch
-	religion = ibadi
-	2638.1.1 = { 
-		birth = yes 
-		culture = umani
-	}
+2110004={ #Count of ar Rustaq
+	name="Mustahil" 
+	dynasty=2110065 #Zigdali
+	culture=baloch
+	religion=ibadi
+	2638.1.1={
+		birth=yes 
+		culture=umani}
+	2700.1.1={death=yes}
 }
-2110005 = { #Count of ar Rustaq
-	name = "Hisham" 
-	dynasty = 2110066 #Al-Balushi
-	culture = baloch
-	religion = ibadi
-	2638.1.1 = { 
-		birth = yes 
-		culture = umani
-	}
+2110005={ #Count of ar Rustaq
+	name="Hisham" 
+	dynasty=2110066 #Al-Balushi
+	culture=baloch
+	religion=ibadi
+	2638.1.1={
+		birth=yes 
+		culture=umani}
+	2700.1.1={death=yes}
 }
-2121000 = { #Duke of Zufar
-	name = "Muhammad" 
-	dynasty = 2121000 #Al-Shanfari
-	culture = dhofari
-	religion = an_nahar
-	2638.1.1 = { birth = yes }
+2121000={ #Duke of Zufar
+	name="Muhammad" 
+	dynasty=2121000 #Al-Shanfari
+	culture=dhofari
+	religion=an_nahar
+	2638.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
-2121001 = { #Count of Al-Wusta
-	name = "Yahya" 
-	dynasty = 2121001 #Al-Hina'i
-	culture = dhofari
-	religion = ibadi
-	2638.1.1 = { birth = yes }
+2121001={ #Count of Al-Wusta
+	name="Yahya" 
+	dynasty=2121001 #Al-Hina'i
+	culture=dhofari
+	religion=ibadi
+	2638.1.1={birth=yes}
+	2700.1.1={death=yes}
 }

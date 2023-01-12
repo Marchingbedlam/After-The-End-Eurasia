@@ -38,7 +38,7 @@
 	trait=honest
 	trait=trusting
 	2621.3.12={birth=yes}
-	2664.1.10={death={death_reason = death_murder killer = 21}}
+	2664.1.10={death={death_reason=death_murder killer=21}}
 }
 1501002={
 	name="Marshal"
@@ -62,7 +62,7 @@
 	name="Isabella"
 	dynasty=9000
 	culture=manx
-	female = yes
+	female=yes
 	religion=free_church
 	martial=6
 	diplomacy=5
@@ -299,14 +299,14 @@
 	martial=9
 	diplomacy=5
 	stewardship=5
-	intrigue= 6
-	learning= 4
+	intrigue=6
+	learning=4
 	trait=skilled_tactician
 	trait=scarred
 	trait=lustful
 	trait=proud
 	trait=ambitious
-	trait= cavalry_leader
+	trait=cavalry_leader
 	2630.5.2={birth=yes}
 	2670.3.10={death=yes}
 }
@@ -394,7 +394,7 @@
 	name="Eala"
 	dynasty=1501013 #Fitzgerald
 	culture=irish
-	religion= insular
+	religion=insular
 	martial=5
 	diplomacy=5
 	intrigue=5
@@ -763,7 +763,7 @@
 	trait=stubborn
 	father=1501040
 	2518.7.5={birth=yes}
-	2585.6.29={death=yes} #set when Diarmait gains the Kingdom, 					 make him lose it in 2601
+	2585.6.29={death=yes} #set when Diarmait gains the Kingdom, make him lose it in 2601
 }
 1501040={
 	name="Cormac"
@@ -948,10 +948,10 @@
 	trait=misguided_warrior
 	2602.9.2={birth=yes}
 	2620.27.5={add_spouse=2419}
-	2646.11.11 = {
-		death = {
-			death_reason = death_battle
-			killer = 2377
+	2646.11.11={
+		death={
+			death_reason=death_battle
+			killer=2377
 		}
 	}
 }
@@ -970,7 +970,7 @@
 	2603.12.15={birth=yes}
 	2620.27.5={add_spouse=1501049}
 	2647.1.1={
-		death = {death_reason = death_trait}
+		death={death_reason=death_trait}
 	}
 }
 1501051={

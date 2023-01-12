@@ -1,48 +1,51 @@
-2072001 = {
-	name = "Kostas"
-	dynasty = 2072069
-	culture = greek
-	religion = neoplatonist
-	trait = midas_touched
-	trait = shrewd
-	trait = patient
-	trait = proud
-	trait = ambitious
-	trait = is_fat
-	disallow_random_traits = yes
-		2639.3.25 = { birth = yes }
+2072001={
+	name="Kostas"
+	dynasty=2072069
+	culture=greek
+	religion=neoplatonist
+	trait=midas_touched
+	trait=shrewd
+	trait=patient
+	trait=proud
+	trait=ambitious
+	trait=is_fat
+	disallow_random_traits=yes
+		2639.3.25={birth=yes}
 		2660.1.1={
 		effect={
 			add_claim=c_euboea
-				}
 			}
 		}
-2072002 = {
-	name = "Medon"
-	dynasty = 2072070
-	culture = greek
-	religion = neoplatonist
-	trait = intricate_webweaver
-	trait = brave
-	trait = groomed
-	trait = strategist
-	trait = proud
-	trait = ambitious
-		2648.6.9 = { birth = yes }
+	2700.1.1={death=yes}
 	}
-2072003 = {
-	name = "Mardochaios"
-	dynasty = 1821000
+2072002={
+	name="Medon"
+	dynasty=2072070
+	culture=greek
+	religion=neoplatonist
+	trait=intricate_webweaver
+	trait=brave
+	trait=groomed
+	trait=strategist
+	trait=proud
+	trait=ambitious
+		2648.6.9={birth=yes}
+	2700.1.1={death=yes}
+	}
+2072003={
+	name="Mardochaios"
+	dynasty=1821000
 	dna="mdhahdqgbbcz"
-	culture = romaniote
-	religion = ivri
-	trait = mastermind_theologian
-	trait = brave
-	trait = erudite
-	trait = charitable
-	trait = theologian
-	2606.4.12 = { birth = yes }
-	2628.6.23 = { add_spouse = 2072004 }
+	culture=romaniote
+	religion=ivri
+	trait=mastermind_theologian
+	trait=brave
+	trait=erudite
+	trait=charitable
+	trait=theologian
+	2606.4.12={birth=yes}
+	2628.6.23={add_spouse=2072004}
+	2700.1.1={death=yes}
 }
 2072004={
 	name="Iohana"
@@ -54,56 +57,56 @@
 	mother=2202252
 	2612.5.20={birth=yes}
 }
-2072005 = {
-	name = "Ioseph"
-	dynasty = 1821000
-	religion = ivri
-	culture = romaniote
+2072005={
+	name="Ioseph"
+	dynasty=1821000
+	religion=ivri
+	culture=romaniote
 	father=2072003
 	mother=2072004
-		2630.11.9 = { birth = yes }
+		2630.11.9={birth=yes}
 	}
-2072006 = {
-	name = "Isaak"
-	dynasty = 1821000
-	religion = ivri
-	culture = romaniote
+2072006={
+	name="Isaak"
+	dynasty=1821000
+	religion=ivri
+	culture=romaniote
 	father=2072003
 	mother=2072004
-		2640.3.8 = { birth = yes }
+		2640.3.8={birth=yes}
 	}
-2072007 = {
-	name = "Cevat"
-	dynasty = 2057001
-	religion = ruhi
-	culture = rumelian
-		2636.8.7 = { birth = yes }
+2072007={
+	name="Cevat"
+	dynasty=2057001
+	religion=ruhi
+	culture=rumelian
+		2636.8.7={birth=yes}
 	}
-2072008 = {
-	name = "Georgios"
-	dynasty = 2072068
-	dna = "degfdribbbr"
-	religion = neoplatonist
-	culture = greek
-	trait = charismatic_negotiator
-	trait = poet
-	trait = erudite
-	trait = clubfooted
-	trait = fair
-	trait = hedonist
-	trait = lustful
-	trait = charitable
-		2636.4.19 = { birth = yes }
+2072008={
+	name="Georgios"
+	dynasty=2072068
+	dna="degfdribbbr"
+	religion=neoplatonist
+	culture=greek
+	trait=charismatic_negotiator
+	trait=poet
+	trait=erudite
+	trait=clubfooted
+	trait=fair
+	trait=hedonist
+	trait=lustful
+	trait=charitable
+		2636.4.19={birth=yes}
 	}
-2072009 = {
-	name = "Dimitris"
-	dynasty = 2072071
-	culture = greek
-	religion = orthodox
-	trait = poet
-	trait = scholarly_theologian
-	trait = mystic
-		2640.1.16 = { birth = yes }
+2072009={
+	name="Dimitris"
+	dynasty=2072071
+	culture=greek
+	religion=orthodox
+	trait=poet
+	trait=scholarly_theologian
+	trait=mystic
+		2640.1.16={birth=yes}
 	}
 2072010={
 	name="Kostas"
@@ -244,168 +247,168 @@
 	2630.1.11={birth=yes}
 	2700.10.1={death=yes}
 }
-2072100 = {
-	name = "Spyridon"
-	dynasty = 2072052
-	religion = neoplatonist
-	culture = greek
-	trait = mystic
-	2634.1.2 = { birth = yes }
+2072100={
+	name="Spyridon"
+	dynasty=2072052
+	religion=neoplatonist
+	culture=greek
+	trait=mystic
+	2634.1.2={birth=yes}
 }
-2072101 = {
-	name = "Tomica"
-	dynasty = 7000052
-	religion = catholic
-	culture = croatian
-	trait = adventurer
-	2629.1.1 = { birth = yes 
+2072101={
+	name="Tomica"
+	dynasty=7000052
+	religion=catholic
+	culture=croatian
+	trait=adventurer
+	2629.1.1={birth=yes 
 		give_nickname=nick_the_liberator
 	}
 }
-2072102 = {
-	name = "Marko"
-	dynasty = 2078028
-	religion = jedinstvo
-	culture = croatian
-	2642.1.1 = { birth = yes }
+2072102={
+	name="Marko"
+	dynasty=2078028
+	religion=jedinstvo
+	culture=croatian
+	2642.1.1={birth=yes}
 }
-2072103 = {
-	name = "Kenan"
-	dynasty = 2092100
-	religion = jedinstvo
-	culture = bosniak
-	2642.1.1 = { birth = yes }
+2072103={
+	name="Kenan"
+	dynasty=2092100
+	religion=jedinstvo
+	culture=bosniak
+	2642.1.1={birth=yes}
 }
-2072104 = {
-	name = "Zlatko"
-	dynasty = 2092095
-	religion = jedinstvo
-	culture = bosniak
-	2609.1.1 = { birth = yes }
+2072104={
+	name="Zlatko"
+	dynasty=2092095
+	religion=jedinstvo
+	culture=bosniak
+	2609.1.1={birth=yes}
 }
-2072105 = {
-	name = "Slobodanka"
-	dynasty = 7000045
-	religion = jedinstvo
-	culture = croatian
+2072105={
+	name="Slobodanka"
+	dynasty=7000045
+	religion=jedinstvo
+	culture=croatian
 	female=yes
-	2649.1.1 = { birth = yes }
+	2649.1.1={birth=yes}
 }
-2072106 = {
-	name = "Fabijan"
-	dynasty = 7000007
-	religion = catholic
-	culture = croatian
-	trait = sympathy_old_world_cults
-	2641.1.1 = { birth = yes }
+2072106={
+	name="Fabijan"
+	dynasty=7000007
+	religion=catholic
+	culture=croatian
+	trait=sympathy_old_world_cults
+	2641.1.1={birth=yes}
 }
-2072107 = {
-	name = "Irnes"
-	dynasty = 2048072
-	religion = jedinstvo
-	secret_religion = orthodox
-	culture = montenegrin
-	2638.1.1 = { birth = yes }
+2072107={
+	name="Irnes"
+	dynasty=2048072
+	religion=jedinstvo
+	secret_religion=orthodox
+	culture=montenegrin
+	2638.1.1={birth=yes}
 }
-2072108 = {
-	name = "Šahbaz"
-	dynasty = 2048071
-	religion = jedinstvo
-	culture = bosniak
-	2626.1.1 = { birth = yes }
+2072108={
+	name="Šahbaz"
+	dynasty=2048071
+	religion=jedinstvo
+	culture=bosniak
+	2626.1.1={birth=yes}
 }
-2072109 = {
-	name = "Suada"
-	dynasty = 2092069
+2072109={
+	name="Suada"
+	dynasty=2092069
 	female=yes
-	religion = ruhi
-	culture = bosniak
-	2647.1.1 = { birth = yes }
+	religion=ruhi
+	culture=bosniak
+	2647.1.1={birth=yes}
 }
-2072110 = {
-	name = "Saša"
-	dynasty = 2078099
-	religion = orthodox
-	culture = serbian
-	2631.1.1 = { birth = yes }
+2072110={
+	name="Saša"
+	dynasty=2078099
+	religion=orthodox
+	culture=serbian
+	2631.1.1={birth=yes}
 }
-2072111 = {
-	name = "Jelena"
-	dynasty = 2078087
+2072111={
+	name="Jelena"
+	dynasty=2078087
 	female=yes
 	trait=twin
-	religion = jedinstvo
-	culture = serbian
+	religion=jedinstvo
+	culture=serbian
 	father=2072113
-	2623.1.1 = { birth = yes }
+	2623.1.1={birth=yes}
 }
-2072112 = {
-	name = "Ostoje"
-	dynasty = 2078087
+2072112={
+	name="Ostoje"
+	dynasty=2078087
 	trait=twin
-	religion = jedinstvo
-	culture = serbian
+	religion=jedinstvo
+	culture=serbian
 	father=2072113
-	2623.1.1 = { birth = yes }
+	2623.1.1={birth=yes}
 }
-2072113 = {
-	name = "Nikolaj"
-	dynasty = 2078087
-	religion = jedinstvo
-	culture = serbian
-	2591.1.1 = { birth = yes }
-	2655.1.1 = { death = yes }
+2072113={
+	name="Nikolaj"
+	dynasty=2078087
+	religion=jedinstvo
+	culture=serbian
+	2591.1.1={birth=yes}
+	2655.1.1={death=yes}
 }
-2072114 = {
-	name = "Branimir"
-	dynasty = 7000050
-	religion = catholic
-	culture = croatian
-	2635.1.1 = { birth = yes 
-	add_claim = d_dalmatia
+2072114={
+	name="Branimir"
+	dynasty=7000050
+	religion=catholic
+	culture=croatian
+	2635.1.1={birth=yes 
+	add_claim=d_dalmatia
 	}
 }
-2072115 = {
-	name = "Tripo"
-	dynasty = 2048047 #Kovinic
-	religion = jedinstvo
-	culture = montenegrin
-	2638.1.1 = { birth = yes }
+2072115={
+	name="Tripo"
+	dynasty=2048047 #Kovinic
+	religion=jedinstvo
+	culture=montenegrin
+	2638.1.1={birth=yes}
 }
-2072116 = {
-	name = "Krile"
-	dynasty = 2048090 #Zmajevic
-	religion = jedinstvo
-	culture = montenegrin
-	2638.1.1 = { birth = yes }
+2072116={
+	name="Krile"
+	dynasty=2048090 #Zmajevic
+	religion=jedinstvo
+	culture=montenegrin
+	2638.1.1={birth=yes}
 }
-2072117 = {
-	name = "Lekso"
-	dynasty = 2078100 #Saicic
-	religion = orthodox
-	culture = serbian
-	2638.1.1 = { birth = yes }
+2072117={
+	name="Lekso"
+	dynasty=2078100 #Saicic
+	religion=orthodox
+	culture=serbian
+	2638.1.1={birth=yes}
 }
-2072118 = {
-	name = "Muhamet"
-	dynasty = 2049116 #Mami
-	religion = ruhi
-	culture = albanian
-	2638.1.1 = { birth = yes }
+2072118={
+	name="Muhamet"
+	dynasty=2049116 #Mami
+	religion=ruhi
+	culture=albanian
+	2638.1.1={birth=yes}
 }
-2072119 = {
-	name = "Petar"
-	dynasty = 7000130 #Kruzic
-	religion = catholic
-	culture = croatian
-	2638.1.1 = { birth = yes }
+2072119={
+	name="Petar"
+	dynasty=7000130 #Kruzic
+	religion=catholic
+	culture=croatian
+	2638.1.1={birth=yes}
 }
-2072120 = {
-	name = "Slobodo"
-	dynasty = 2926069 #Vlaxicko
-	religion = ruhi
-	culture = romani
-	2638.5.12 = { birth = yes }
+2072120={
+	name="Slobodo"
+	dynasty=2926069 #Vlaxicko
+	religion=ruhi
+	culture=romani
+	2638.5.12={birth=yes}
 }
 2072121={
 	name="Faruk"
@@ -426,549 +429,549 @@
 	trait=honest
 	2605.6.2={birth=yes}
 }
-2072200 = {
-	name = "Simona"  #placeholder as fuck
-	dynasty = 2047196 #Derzhanski
-	female = yes
-	religion = orthodox
-	culture = bulgarian
-	trait = erudite
-	trait = mastermind_theologian
-	trait = shrewd
-	trait = ugly
-	trait = gamer
-	trait = humble
+2072200={
+	name="Simona"  #placeholder as fuck
+	dynasty=2047196 #Derzhanski
+	female=yes
+	religion=orthodox
+	culture=bulgarian
+	trait=erudite
+	trait=mastermind_theologian
+	trait=shrewd
+	trait=ugly
+	trait=gamer
+	trait=humble
 	trait=placeholder_char_trait
-	2634.1.1 = { birth = yes }
+	2634.1.1={birth=yes}
 }
-2072201 = {
-	name = "Qasim"
-	dynasty = 2049016
-	religion = ruhi
-	culture = albanian	
-	trait= gregarious
-	2602.1.1 = { birth = yes }
+2072201={
+	name="Qasim"
+	dynasty=2049016
+	religion=ruhi
+	culture=albanian	
+	trait=gregarious
+	2602.1.1={birth=yes}
 }
-2072202 = {
-	name = "Staurakios"
-	dynasty = 2073073 #Ioannidis
-	religion = orthodox
-	culture = makedonian
-	trait = elusive_shadow
-	trait = ambitious
-	trait = schemer
-	trait = patient
-	trait = paranoid
-	father = 2072207
-	mother = 2072208
-	disallow_random_traits = yes
-	2630.1.1 = { birth = yes }
+2072202={
+	name="Staurakios"
+	dynasty=2073073 #Ioannidis
+	religion=orthodox
+	culture=makedonian
+	trait=elusive_shadow
+	trait=ambitious
+	trait=schemer
+	trait=patient
+	trait=paranoid
+	father=2072207
+	mother=2072208
+	disallow_random_traits=yes
+	2630.1.1={birth=yes}
 		2660.1.1={
 		effect={
 			add_claim=c_euboea
 				}
 			}
 }
-2072203 = {
-	name = "Thomas"
-	dynasty = 2073073 #Ioannidis
-	religion = orthodox
-	culture = makedonian
-	trait = brilliant_strategist
-	trait = brave
-	trait = wroth
-	trait = duelist
-	trait = severely_injured 
-	trait = mangled #died of battle injury
-	trait = trusting
-	disallow_random_traits = yes
-	father = 2072207
-	mother = 2072208
-	2628.1.1 = { birth = yes }
-	2640.1.1 = { add_spouse = 2072204}
-	2664.1.1 = { death = {death_reason = death_trait} }
+2072203={
+	name="Thomas"
+	dynasty=2073073 #Ioannidis
+	religion=orthodox
+	culture=makedonian
+	trait=brilliant_strategist
+	trait=brave
+	trait=wroth
+	trait=duelist
+	trait=severely_injured 
+	trait=mangled #died of battle injury
+	trait=trusting
+	disallow_random_traits=yes
+	father=2072207
+	mother=2072208
+	2628.1.1={birth=yes}
+	2640.1.1={add_spouse=2072204}
+	2664.1.1={death={death_reason=death_trait}}
 }
-2072204 = {
-	name = "Sophia"
-	dynasty = 2073037
-	female = yes
-	religion = orthodox
-	culture = makedonian
-	2630.1.1 = { birth = yes }
+2072204={
+	name="Sophia"
+	dynasty=2073037
+	female=yes
+	religion=orthodox
+	culture=makedonian
+	2630.1.1={birth=yes}
 }
-2072205 = {
-	name = "Eleftherios"
-	dynasty = 2073073 #Ioannidis
-	religion = orthodox
-	culture = makedonian
-	father = 2072203
-	mother = 2072204
-	2655.1.1 = {birth = yes}
-	2665.1.1 = {death = {death_reason = death_murder_unknown}}
+2072205={
+	name="Eleftherios"
+	dynasty=2073073 #Ioannidis
+	religion=orthodox
+	culture=makedonian
+	father=2072203
+	mother=2072204
+	2655.1.1={birth=yes}
+	2665.1.1={death={death_reason=death_murder_unknown}}
 }
-2072206 = {
-	name = "Vyron"
-	dynasty = 2073073 #Ioannidis
-	religion = orthodox
-	culture = makedonian
-	father = 2072203
-	mother = 2072204
-	2658.1.1 = {birth = yes}
+2072206={
+	name="Vyron"
+	dynasty=2073073 #Ioannidis
+	religion=orthodox
+	culture=makedonian
+	father=2072203
+	mother=2072204
+	2658.1.1={birth=yes}
 }
-2072207 = {
-	name = "Alexandros"
-	dynasty = 2073073
-	religion = orthodox
-	culture = makedonian
-	father = 2072209
-	2600.1.1 = {birth = yes}
-	2620.1.1 = { add_spouse = 2072208}
-	2660.1.1 = {death = yes}
+2072207={
+	name="Alexandros"
+	dynasty=2073073
+	religion=orthodox
+	culture=makedonian
+	father=2072209
+	2600.1.1={birth=yes}
+	2620.1.1={add_spouse=2072208}
+	2660.1.1={death=yes}
 }
-2072208 = {
-	name = "Theodora"
-	female = yes
-	religion = orthodox
-	culture = makedonian
-	2605.1.1 = {birth = yes}
+2072208={
+	name="Theodora"
+	female=yes
+	religion=orthodox
+	culture=makedonian
+	2605.1.1={birth=yes}
 }
-2072209 = {
-	name = "Theodoros"
-	dynasty = 2073073
-	religion = orthodox
-	culture = makedonian
-	2580.1.1 = {birth = yes}
-	2630.1.1 = {death = yes}
+2072209={
+	name="Theodoros"
+	dynasty=2073073
+	religion=orthodox
+	culture=makedonian
+	2580.1.1={birth=yes}
+	2630.1.1={death=yes}
 }
-2072210 = {
-	name = "Dimitrios"
-	dynasty = 2138127
-	religion = orthodox
-	culture = aromanian
-	2620.4.4 = {birth = yes}
+2072210={
+	name="Dimitrios"
+	dynasty=2138127
+	religion=orthodox
+	culture=aromanian
+	2620.4.4={birth=yes}
 }
-2072211 = {
-	name = "Mykon" #insert Sparta reference here lol
-	dynasty = 2072084
-	religion = orthodox
-	culture = greek
-	trait = brilliant_strategist
-	trait = brave
-	trait = wroth
-	trait = duelist
-	trait = strong
-	trait = deceitful
-	disallow_random_traits = yes
-	2630.1.1 = {birth = yes}
+2072211={
+	name="Mykon" #insert Sparta reference here lol
+	dynasty=2072084
+	religion=orthodox
+	culture=greek
+	trait=brilliant_strategist
+	trait=brave
+	trait=wroth
+	trait=duelist
+	trait=strong
+	trait=deceitful
+	disallow_random_traits=yes
+	2630.1.1={birth=yes}
 }
-2072212 = {
-	name = "Markos" #Tyrant of Euboiea
-	dynasty = 2072083#Belisarios
-	religion = nekromante
-	culture = greek
-	trait = brilliant_strategist
-	trait = brave
-	trait = ambitious
-	trait = wroth
-	trait = peasant_leader
-	trait = one_handed
-	disallow_random_traits = yes
-	2640.1.1 = {birth = yes}
+2072212={
+	name="Markos" #Tyrant of Euboiea
+	dynasty=2072083#Belisarios
+	religion=nekromante
+	culture=greek
+	trait=brilliant_strategist
+	trait=brave
+	trait=ambitious
+	trait=wroth
+	trait=peasant_leader
+	trait=one_handed
+	disallow_random_traits=yes
+	2640.1.1={birth=yes}
 }
-2072213 = {
-	name = "Glauketis"
-	dynasty = 2072082 #Glafketis
-	religion = orthodox
-	culture = greek
-	2635.1.1 = {birth = yes}
+2072213={
+	name="Glauketis"
+	dynasty=2072082 #Glafketis
+	religion=orthodox
+	culture=greek
+	2635.1.1={birth=yes}
 }
 
-2072214 = {
-	name = "Leon"
-	dynasty = 2072077
-	religion = orthodox
-	culture = makedonian
-	trait = brilliant_strategist
-	trait = organizer
-	trait = scarred_mid
-	trait = dull
-	trait = chaste
-	trait = temperate
-	trait = ambitious
-	trait = legendary
-	occluded = yes
-	disallow_random_traits = yes
-	2044.3.8 = {birth = yes}
-	2114.1.1 = {death = yes}
+2072214={
+	name="Leon"
+	dynasty=2072077
+	religion=orthodox
+	culture=makedonian
+	trait=brilliant_strategist
+	trait=organizer
+	trait=scarred_mid
+	trait=dull
+	trait=chaste
+	trait=temperate
+	trait=ambitious
+	trait=legendary
+	occluded=yes
+	disallow_random_traits=yes
+	2044.3.8={birth=yes}
+	2114.1.1={death=yes}
 }
-2072215 = {
-	name = "Leon"
-	dynasty = 2072077
-	religion = orthodox
-	culture = makedonian
-	trait = legendary
-	occluded = yes
-	father = 2072214
-	2065.1.1 = {birth = yes}
-	2125.1.1 = {death = yes}
+2072215={
+	name="Leon"
+	dynasty=2072077
+	religion=orthodox
+	culture=makedonian
+	trait=legendary
+	occluded=yes
+	father=2072214
+	2065.1.1={birth=yes}
+	2125.1.1={death=yes}
 }
-2072216 = {
-	name = "Kostas"
-	dynasty = 2072077
-	religion = orthodox
-	culture = makedonian
-	trait = legendary
-	occluded = yes
-	father = 2072214
-	2068.1.1 = {birth = yes}
-	2110.1.1 = {death = yes}
+2072216={
+	name="Kostas"
+	dynasty=2072077
+	religion=orthodox
+	culture=makedonian
+	trait=legendary
+	occluded=yes
+	father=2072214
+	2068.1.1={birth=yes}
+	2110.1.1={death=yes}
 }
-2072217 = {
-	name = "Christoforos"
-	dynasty = 2072077
-	religion = orthodox
-	culture = makedonian
-	trait = legendary
-	occluded = yes
-	father = 2072215
-	2088.1.1 = {birth = yes}
-	2129.1.1 = {
-		death = {
-			death_reason = death_murder
-			killer = 2072218
+2072217={
+	name="Christoforos"
+	dynasty=2072077
+	religion=orthodox
+	culture=makedonian
+	trait=legendary
+	occluded=yes
+	father=2072215
+	2088.1.1={birth=yes}
+	2129.1.1={
+		death={
+			death_reason=death_murder
+			killer=2072218
 		}
 	}
 }
-2072218 = {
-	name = "Nikos"
-	dynasty = 2073074
-	religion = pagan
-	culture = greek
-	trait = sympathy_scholastic
-	trait = peasant_leader
-	trait = legendary
-	occluded = yes
-	2098.1.1 = {birth = yes}
-	2129.1.1 = {
-		death = {
-			death_reason = death_execution_hanging
-			killer = 2072219
+2072218={
+	name="Nikos"
+	dynasty=2073074
+	religion=pagan
+	culture=greek
+	trait=sympathy_scholastic
+	trait=peasant_leader
+	trait=legendary
+	occluded=yes
+	2098.1.1={birth=yes}
+	2129.1.1={
+		death={
+			death_reason=death_execution_hanging
+			killer=2072219
 		}
 	}
 }
-2072219 = {
-	name = "Leon"
-	dynasty = 2072077
-	religion = orthodox
-	culture = makedonian
-	father = 2072215
-	trait = legendary
-	2090.1.1 = {birth = yes}
-	2164.1.1 = {death = yes}
+2072219={
+	name="Leon"
+	dynasty=2072077
+	religion=orthodox
+	culture=makedonian
+	father=2072215
+	trait=legendary
+	2090.1.1={birth=yes}
+	2164.1.1={death=yes}
 }
-2072220 = {
-	name = "Soteres"
-	dynasty = 2072077
-	religion = orthodox
-	culture = makedonian
-	father = 2072219
-	2120.1.1 = {birth = yes}
-	2160.1.1 = {death = yes}
+2072220={
+	name="Soteres"
+	dynasty=2072077
+	religion=orthodox
+	culture=makedonian
+	father=2072219
+	2120.1.1={birth=yes}
+	2160.1.1={death=yes}
 }
-2072221 = {
-	name = "Pavlos"
-	dynasty = 2072077
-	religion = orthodox
-	culture = makedonian
-	father = 2072219
-	2121.1.1 = {birth = yes}
-	2180.1.1 = {death = yes}
+2072221={
+	name="Pavlos"
+	dynasty=2072077
+	religion=orthodox
+	culture=makedonian
+	father=2072219
+	2121.1.1={birth=yes}
+	2180.1.1={death=yes}
 }
-2072222 = {
-	name = "Daniíl"
-	dynasty = 2072077
-	religion = orthodox
-	culture = makedonian
-	father = 2072221
-	2151.1.1 = {birth = yes}
-	2192.1.1 = {death = yes}
+2072222={
+	name="Daniíl"
+	dynasty=2072077
+	religion=orthodox
+	culture=makedonian
+	father=2072221
+	2151.1.1={birth=yes}
+	2192.1.1={death=yes}
 }
-2072223 = {
-	name = "Perikles"
-	dynasty = 2072077
-	religion = orthodox
-	culture = makedonian
-	trait = stressed
-	father = 2072222
-	2175.1.1 = {birth = yes}
-	2202.1.1 = {
-		death = {
-		death_reason = death_trait
+2072223={
+	name="Perikles"
+	dynasty=2072077
+	religion=orthodox
+	culture=makedonian
+	trait=stressed
+	father=2072222
+	2175.1.1={birth=yes}
+	2202.1.1={
+		death={
+		death_reason=death_trait
 		}
 	}
 }
-2072224 = {
-	name = "Fotios"
-	dynasty = 2072077
-	religion = orthodox
-	culture = makedonian
-	father = 2072219
-	2122.1.1 = {birth = yes}
-	2170.1.1 = {death = yes}
+2072224={
+	name="Fotios"
+	dynasty=2072077
+	religion=orthodox
+	culture=makedonian
+	father=2072219
+	2122.1.1={birth=yes}
+	2170.1.1={death=yes}
 }
-2072225 = {
-	name = "Apostolis"
-	dynasty = 2072077
-	religion = orthodox
-	culture = makedonian
-	father = 2072224
-	2147.1.1 = {birth = yes}
-	2200.1.1 = {death = yes}
+2072225={
+	name="Apostolis"
+	dynasty=2072077
+	religion=orthodox
+	culture=makedonian
+	father=2072224
+	2147.1.1={birth=yes}
+	2200.1.1={death=yes}
 }
-2072226 = {
-	name = "Pavlos"
-	dynasty = 2072077
-	religion = orthodox
-	culture = makedonian
-	father = 2072225
-	2170.1.1 = {birth = yes}
-	2220.1.1 = {death = yes}
+2072226={
+	name="Pavlos"
+	dynasty=2072077
+	religion=orthodox
+	culture=makedonian
+	father=2072225
+	2170.1.1={birth=yes}
+	2220.1.1={death=yes}
 }
-2072227 = {
-	name = "Demos"
-	dynasty = 2073075
-	religion = orthodox
-	culture = greek
-	2180.1.1 = {birth = yes}
-	2225.1.1 = {death = yes}
+2072227={
+	name="Demos"
+	dynasty=2073075
+	religion=orthodox
+	culture=greek
+	2180.1.1={birth=yes}
+	2225.1.1={death=yes}
 }
-2072228 = {
-	name = "Otto"
-	dynasty = 2072086
-	religion = catholic
-	culture = bavarian
-	trait = legendary
-	occluded = yes
-	disallow_random_traits = yes
-	1815.6.1 = {birth = yes}
-	1867.7.26 = {death = yes}
+2072228={
+	name="Otto"
+	dynasty=2072086
+	religion=catholic
+	culture=bavarian
+	trait=legendary
+	occluded=yes
+	disallow_random_traits=yes
+	1815.6.1={birth=yes}
+	1867.7.26={death=yes}
 }
-2072229 = {
-	name = "George"
-	dynasty = 2072087
-	religion = lutheran
-	culture = danish
-	trait = legendary
-	occluded = yes
-	disallow_random_traits = yes
-	1845.12.24 = {birth = yes}
-	1913.3.18 = {
-		death = {
-		death_reason = death_murder
+2072229={
+	name="George"
+	dynasty=2072087
+	religion=lutheran
+	culture=danish
+	trait=legendary
+	occluded=yes
+	disallow_random_traits=yes
+	1845.12.24={birth=yes}
+	1913.3.18={
+		death={
+		death_reason=death_murder
 		}
 	}
 }
-2072230 = {
-	name = "Konstantinos"
-	dynasty = 2072087
-	religion = orthodox
-	culture = danish
-	trait = legendary
-	occluded = yes
-	disallow_random_traits = yes
-	father = 2072229
-	1868.8.2 = {
-		birth = yes
-		culture = greek
+2072230={
+	name="Konstantinos"
+	dynasty=2072087
+	religion=orthodox
+	culture=danish
+	trait=legendary
+	occluded=yes
+	disallow_random_traits=yes
+	father=2072229
+	1868.8.2={
+		birth=yes
+		culture=greek
 	}
-	1923.1.11 = {death = yes}
+	1923.1.11={death=yes}
 }
-2072231 = {
-	name = "Georgios"
-	dynasty = 2072087
-	religion = orthodox
-	culture = greek
-	trait = legendary
-	occluded = yes
-	disallow_random_traits = yes
-	father = 2072230
-	1890.7.19 = {birth = yes}
-	1947.4.1 = {death = yes}
+2072231={
+	name="Georgios"
+	dynasty=2072087
+	religion=orthodox
+	culture=greek
+	trait=legendary
+	occluded=yes
+	disallow_random_traits=yes
+	father=2072230
+	1890.7.19={birth=yes}
+	1947.4.1={death=yes}
 }
-2072232 = {
-	name = "Alexandros"
-	dynasty = 2072087
-	religion = orthodox
-	culture = greek
-	trait = legendary
-	trait = infection
-	occluded = yes
-	disallow_random_traits = yes
-	father = 2072230
-	1893.8.1 = {birth = yes}
-	1920.10.25 = {
-		death = {
-			death_reason = death_trait
+2072232={
+	name="Alexandros"
+	dynasty=2072087
+	religion=orthodox
+	culture=greek
+	trait=legendary
+	trait=infection
+	occluded=yes
+	disallow_random_traits=yes
+	father=2072230
+	1893.8.1={birth=yes}
+	1920.10.25={
+		death={
+			death_reason=death_trait
 		}
 	}
 }
-2072233 = {
-	name = "Pavlos"
-	dynasty = 2072087
-	religion = orthodox
-	culture = greek
-	trait = legendary
-	occluded = yes
-	disallow_random_traits = yes
-	father = 2072230
-	1901.12.14 = {birth = yes}
-	1947.3.6 = {death = yes}
+2072233={
+	name="Pavlos"
+	dynasty=2072087
+	religion=orthodox
+	culture=greek
+	trait=legendary
+	occluded=yes
+	disallow_random_traits=yes
+	father=2072230
+	1901.12.14={birth=yes}
+	1947.3.6={death=yes}
 }
-2072234 = {
-	name = "Konstantinos"
-	dynasty = 2072087
-	religion = orthodox
-	culture = greek
-	trait = legendary
-	occluded = yes
-	disallow_random_traits = yes
-	father = 2072233
-	1940.6.2 = {birth = yes}
-	2040.1.1 = {death = yes}
+2072234={
+	name="Konstantinos"
+	dynasty=2072087
+	religion=orthodox
+	culture=greek
+	trait=legendary
+	occluded=yes
+	disallow_random_traits=yes
+	father=2072233
+	1940.6.2={birth=yes}
+	2040.1.1={death=yes}
 }
-2072235 = {
-	name = "Nikolas"
-	dynasty = 2050068#Karpoš
-	religion = orthodox
-	culture = macedonian
-	trait = skilled_tactician
-	trait = brave
-	trait = diligent
-	trait = wroth
-	trait = mountain_terrain_leader
-	father = 2072238
-	disallow_random_traits = yes
-	2630.12.4 = {birth = yes}
-	2649.11.2 = {add_spouse = 2072236}
+2072235={
+	name="Nikolas"
+	dynasty=2050068#Karpoš
+	religion=orthodox
+	culture=macedonian
+	trait=skilled_tactician
+	trait=brave
+	trait=diligent
+	trait=wroth
+	trait=mountain_terrain_leader
+	father=2072238
+	disallow_random_traits=yes
+	2630.12.4={birth=yes}
+	2649.11.2={add_spouse=2072236}
 }
-2072236 = {
-	name = "Filipa"
-	dynasty = 2047198
-	female = yes
-	religion = orthodox
-	culture = bulgarian
-	trait = brilliant_strategist
-	trait = brave
-	trait = inspiring_leader
-	trait = temperate
-	disallow_random_traits = yes
-	2635.11.2 = {birth = yes}
+2072236={
+	name="Filipa"
+	dynasty=2047198
+	female=yes
+	religion=orthodox
+	culture=bulgarian
+	trait=brilliant_strategist
+	trait=brave
+	trait=inspiring_leader
+	trait=temperate
+	disallow_random_traits=yes
+	2635.11.2={birth=yes}
 }
-2072237 = {
-	name = "Aleksandar"
-	dynasty = 2050068
-	religion = orthodox
-	culture = macedonian
-	trait = skilled_tactician
-	trait = musician
-	trait = diligent
-	trait = brave
-	trait = gregarious
-	disallow_random_traits = yes
-	father = 2072235
-	mother = 2072236
-	2650.2.1 = {birth = yes}
+2072237={
+	name="Aleksandar"
+	dynasty=2050068
+	religion=orthodox
+	culture=macedonian
+	trait=skilled_tactician
+	trait=musician
+	trait=diligent
+	trait=brave
+	trait=gregarious
+	disallow_random_traits=yes
+	father=2072235
+	mother=2072236
+	2650.2.1={birth=yes}
 }
-2072238 = {
-	name = "Blazhe"
-	dynasty = 2050068
-	religion = orthodox
-	culture = macedonian
-	trait = scholarly_theologian
-	trait = erudite
-	trait = diligent
-	trait = humble
-	disallow_random_traits = yes
-	2600.3.24 = {birth = yes}
+2072238={
+	name="Blazhe"
+	dynasty=2050068
+	religion=orthodox
+	culture=macedonian
+	trait=scholarly_theologian
+	trait=erudite
+	trait=diligent
+	trait=humble
+	disallow_random_traits=yes
+	2600.3.24={birth=yes}
 }
-2072239 = {
-	name = "Filip"
-	dynasty = 2049118
-	religion = catholic
-	culture = albanian
-	trait = midas_touched
-	trait = administrator
-	trait = latin_rite
-	trait = patient
-	trait = gluttonous
-	trait = just
-	disallow_random_traits = yes
-	2625.2.12 = {birth = yes}
+2072239={
+	name="Filip"
+	dynasty=2049118
+	religion=catholic
+	culture=albanian
+	trait=midas_touched
+	trait=administrator
+	trait=latin_rite
+	trait=patient
+	trait=gluttonous
+	trait=just
+	disallow_random_traits=yes
+	2625.2.12={birth=yes}
 }
-2072240 = {
-	name = "Mihali"
-	dynasty = 2138128
-	religion = orthodox
-	culture = aromanian
-	trait = skilled_tactician
-	trait = wroth
-	trait = hunter
-	trait = temperate
-	trait = brave
-	disallow_random_traits = yes
-	2635.4.1 = {birth = yes}
+2072240={
+	name="Mihali"
+	dynasty=2138128
+	religion=orthodox
+	culture=aromanian
+	trait=skilled_tactician
+	trait=wroth
+	trait=hunter
+	trait=temperate
+	trait=brave
+	disallow_random_traits=yes
+	2635.4.1={birth=yes}
 }
-2072241 = {
-	name = "Hussein"
-	dynasty = 2049119
-	religion = ruhi
-	culture = albanian
-	trait = elusive_shadow
-	trait = schemer
-	trait = diligent
-	trait = lustful
-	trait = cynical
-	disallow_random_traits = yes
-	2633.5.25 = {birth = yes}
+2072241={
+	name="Hussein"
+	dynasty=2049119
+	religion=ruhi
+	culture=albanian
+	trait=elusive_shadow
+	trait=schemer
+	trait=diligent
+	trait=lustful
+	trait=cynical
+	disallow_random_traits=yes
+	2633.5.25={birth=yes}
 }
-2072242 = {
-	name = "Skendër"
-	dynasty = 2049120
-	religion = ruhi
-	culture = albanian
-	trait = grey_eminence
-	trait = gamer
-	trait = patient
-	trait = slothful
-	trait = gregarious
-	disallow_random_traits = yes
-	2637.1.29 = {birth = yes}
+2072242={
+	name="Skendër"
+	dynasty=2049120
+	religion=ruhi
+	culture=albanian
+	trait=grey_eminence
+	trait=gamer
+	trait=patient
+	trait=slothful
+	trait=gregarious
+	disallow_random_traits=yes
+	2637.1.29={birth=yes}
 }
-2072243 = {
-	name = "Rustem"
-	dynasty = 2049121
-	religion = alevi
-	culture = albanian
-	trait = scholarly_theologian
-	trait = theologian
-	trait = pious
-	trait = just
-	trait = trusting
-	trait = proud
-	disallow_random_traits = yes
-	2630.3.12 = {birth = yes}
+2072243={
+	name="Rustem"
+	dynasty=2049121
+	religion=alevi
+	culture=albanian
+	trait=scholarly_theologian
+	trait=theologian
+	trait=pious
+	trait=just
+	trait=trusting
+	trait=proud
+	disallow_random_traits=yes
+	2630.3.12={birth=yes}
 }
-2072244 = {
-	name = "Kostandin"
-	dynasty = 2049122
-	religion = orthodox
-	culture = albanian
-	trait = intricate_webweaver
-	trait = seductor
-	trait = lustful
-	trait = diligent
-	trait = hedonist
-	trait = deceitful
-	disallow_random_traits = yes
-	2640.1.20 = {birth = yes}
+2072244={
+	name="Kostandin"
+	dynasty=2049122
+	religion=orthodox
+	culture=albanian
+	trait=intricate_webweaver
+	trait=seductor
+	trait=lustful
+	trait=diligent
+	trait=hedonist
+	trait=deceitful
+	disallow_random_traits=yes
+	2640.1.20={birth=yes}
 }

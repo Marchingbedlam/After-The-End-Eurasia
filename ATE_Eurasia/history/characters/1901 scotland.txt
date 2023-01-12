@@ -17,7 +17,7 @@
 	2621.10.24={birth=yes}
 	2705.3.2={death=yes}
 }
-1901001={ 	
+1901001={	
 	name="Robert"
 	dynasty=1901005 #Stewart
 	martial=5
@@ -35,7 +35,7 @@
 	2610.7.4={birth=yes}
 	2670.6.7={death=yes}
 }
-1901002={ 	
+1901002={	
 	name="Isabel"
 	female=yes
 	dynasty=1901004 #Carpenter
@@ -157,7 +157,7 @@
 	trait=playful
 	trait=rowdy
 	trait=willful
-	add_claim = c_inverness
+	add_claim=c_inverness
 	2656.3.8={birth=yes}
 	2723.5.15={death=yes}
 }
@@ -259,7 +259,7 @@
 }
 1901014={
 	name="Mary"
-	female = yes
+	female=yes
 	dynasty=2101000 #Armour
 	culture=nynorn
 	religion=calvinist

@@ -254,7 +254,7 @@
 	properties=ad0afa000000
 	2623.6.14={birth=yes}
 	2640.2.1={add_spouse=1804072}
-	2666.1.1={effect={add_artifact = ethics_boenhoeffer}}
+	2666.1.1={effect={add_artifact=ethics_boenhoeffer}}
 	2700.1.1={death=yes}
 }
 1805021={
@@ -740,7 +740,7 @@
 	trait=kind
 	2370.2.25={birth=yes}
 	2378.10.6={death={
-			death_reason = death_murder
+			death_reason=death_murder
 			killer=1805059
 		}
 	}
@@ -1401,7 +1401,7 @@
 	culture=bavarian
 	religion=catholic
 	2239.4.5={birth=yes
-		effect = { set_government_type = feudal_government }}
+		effect={set_government_type=feudal_government}}
 	2284.10.11={death=yes}
 }
 1805119	={
@@ -1411,7 +1411,7 @@
 	culture=bavarian
 	religion=catholic
 	2258.5.1={birth=yes
-		effect = { set_government_type = feudal_government }}
+		effect={set_government_type=feudal_government}}
 	2301.9.18={death=yes}
 }
 1805120	={
@@ -1421,7 +1421,7 @@
 	culture=bavarian
 	religion=catholic
 	2279.5.7={birth=yes
-		effect = { set_government_type = feudal_government }}
+		effect={set_government_type=feudal_government}}
 	2308.5.17={death=yes}
 }
 1805121	={
@@ -1431,7 +1431,7 @@
 	culture=bavarian
 	religion=catholic
 	2296.11.15={birth=yes
-		effect = { set_government_type = feudal_government }}
+		effect={set_government_type=feudal_government}}
 	2351.5.13={death=yes}
 }
 1805122	={
@@ -1534,7 +1534,7 @@
 	2382.5.31={birth=yes}
 	2441.5.1={death=yes}
 }
-1805131	= {
+1805131	={
 	name="Albrecht"
 	dynasty=1951112 #Vigauner
 	father=1805130
@@ -1545,7 +1545,7 @@
 	2404.7.15={birth=yes}
 	2441.10.8={death=yes}
 }
-1805132	= {
+1805132	={
 	name="Thomas"
 	dynasty=1951113 #Bludenzer
 	culture=austrian
@@ -1553,7 +1553,7 @@
 	2318.1.6={birth=yes}
 	2369.3.37={death=yes}
 }
-1805133	= {
+1805133	={
 	name="Heinrich"
 	dynasty=1951113 #Bludenzer
 	father=1805132
@@ -1562,7 +1562,7 @@
 	2357.2.28={birth=yes}
 	2403.9.1={death=yes}
 }
-1805134	= {
+1805134	={
 	name="Georg"
 	dynasty=1951113 #Bludenzer
 	father=1805133
@@ -1576,7 +1576,7 @@
 	2395.2.28={birth=yes}
 	2473.9.1={death=yes}
 }
-1805135	= {
+1805135	={
 	name="Maria"
 	female=yes
 	dynasty=1951113 #Bludenzer
@@ -1586,7 +1586,7 @@
 	2445.4.7={birth=yes}
 	2495.2.23={death=yes}
 }
-1805136	= {
+1805136	={
 	name="Thomas"
 	dynasty=1951113 #Bludenzer
 	father=1805134
@@ -1596,7 +1596,7 @@
 	2417.1.18={birth=yes}
 	2462.10.4={death=yes}
 }
-1805137	= {
+1805137	={
 	name="Andreas"
 	dynasty=1949031 #Stromer
 	culture=bavarian
@@ -1604,7 +1604,7 @@
 	2397.11.18={birth=yes}
 	2459.7.26={death=yes}
 }
-1805138	= {
+1805138	={
 	name="David"
 	dynasty=1949031 #Stromer
 	father=1805137
@@ -1616,7 +1616,7 @@
 		}
 	2470.8.15={death=yes}
 }
-1805139	= {
+1805139	={
 	name="Albrecht"
 	dynasty=1949031 #Stromer
 	father=1805138
@@ -1626,7 +1626,7 @@
 	2465.12.1={birth=yes}
 	2521.12.15={death=yes}
 }
-1805140	= {
+1805140	={
 	name="Valentin"
 	dynasty=1949144 #Eichstätter
 	culture=bavarian
@@ -1637,7 +1637,7 @@
 	2488.3.18={birth=yes}
 	2551.11.13={death=yes}
 }
-1805141	= {
+1805141	={
 	name="Benedikt"
 	dynasty=1949144 #Eichstätter
 	father=1805140
@@ -1650,7 +1650,7 @@
 		}
 	}
 }
-1805142	= {
+1805142	={
 	name="Steffen"
 	dynasty=1949145 #Sonntag
 	culture=bavarian
@@ -1663,7 +1663,7 @@
 		}
 	}
 }
-1805143	= {
+1805143	={
 	name="Albrecht"
 	dynasty=1949031 #Stromer
 	culture=bavarian
@@ -1672,7 +1672,7 @@
 	2528.10.24={birth=yes}
 	2584.9.29={death=yes}
 }
-1805144	= {
+1805144	={
 	name="Markus"
 	dynasty=1949031 #Stromer
 	culture=bavarian
@@ -1681,7 +1681,7 @@
 	2492.2.7={birth=yes}
 	2551.4.17={death=yes}
 }
-1805145	= {
+1805145	={
 	name="Felix"
 	dynasty=1949031 #Stromer
 	culture=bavarian
@@ -1690,7 +1690,7 @@
 	2556.9.27={birth=yes}
 	2607.2.25={death=yes}
 }
-1805146	= {
+1805146	={
 	name="Steffen"
 	dynasty=1949031 #Stromer
 	culture=bavarian
@@ -1701,7 +1701,7 @@
 	2581.9.27={birth=yes}
 	2620.5.26={death=yes}
 }
-1805147	= {
+1805147	={
 	name="Johanna"
 	female=yes
 	dynasty=1949031 #Stromer
@@ -1727,7 +1727,7 @@
 		}
 	}
 }
-1805148	= {
+1805148	={
 	name="Maximilian"
 	dynasty=1949031 #Stromer
 	culture=bavarian
@@ -1746,7 +1746,7 @@
 	2604.2.26={birth=yes}
 	2629.12.30={death=yes}
 }
-1805149	= {
+1805149	={
 	name="Xaver"
 	dynasty=1949146 #Hofer
 	culture=bavarian
@@ -1899,7 +1899,7 @@
 	2638.12.21={birth=yes
 		add_claim=k_bavaria}
 }
-1805165	= {
+1805165	={
 	name="Benedikt"
 	dynasty=1949031 #Stromer
 	culture=bavarian

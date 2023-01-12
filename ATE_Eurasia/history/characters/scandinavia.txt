@@ -100,7 +100,7 @@
 	2670.1.3={death=yes}
 }
 
-1979000 = {
+1979000={
 	name="Nukaka"
 	dynasty=2220641 #Qarsoq
 	culture=kalaaleq
@@ -119,7 +119,7 @@
 	2567.2.20={birth=yes}
 	2630.9.21={death=yes}
 }
-1979001 = {
+1979001={
 	name="Nivineq"
 	dynasty=2220641 #Qarsoq
 	culture=kalaaleq
@@ -138,7 +138,7 @@
 	2594.3.9={birth=yes}
 	2661.4.2={death=yes}
 }
-1979002 ={
+1979002={
 	name="Eerik"
 	dynasty=2220642 #Eeriksen
 	culture=kalaaleq
@@ -157,7 +157,7 @@
 	2597.9.9={birth=yes}
 	2645.5.19={death=yes}
 }
-1979003 ={
+1979003={
 	name="Nanoq"
 	dynasty=2220642 #Eeriksen
 	culture=kalaaleq
@@ -177,7 +177,7 @@
 	2626.11.3={birth=yes}
 	2690.5.19={death=yes}
 }
-1979004 ={
+1979004={
 	name="Tammaq"
 	dynasty=2220642 #Eeriksen
 	culture=kalaaleq
@@ -192,7 +192,7 @@
 	2646.12.6={birth=yes}
 	2690.5.19={death=yes}
 }
-1979005 ={
+1979005={
 	name="Paalusi"
 	dynasty=2220642 #Eeriksen
 	culture=kalaaleq
@@ -206,7 +206,7 @@
 	2653.3.20={birth=yes}
 	2690.5.19={death=yes}
 }
-1979006 ={
+1979006={
 	name="Agsile"
 	dynasty=2220641 #Qarsoq
 	culture=kalaaleq
@@ -225,7 +225,7 @@
 	2633.5.24={birth=yes}
 	2690.4.2={death=yes}
 }
-1979007 ={
+1979007={
 	name="Ujukku"
 	dynasty=2220641 #Qarsoq
 	culture=kalaaleq
@@ -234,7 +234,7 @@
 	2659.5.28={birth=yes}
 	2690.4.2={death=yes}
 }
-1979008 ={
+1979008={
 	name="Qaaqqortooq"
 	dynasty=2220641 #Qarsoq
 	culture=kalaaleq
@@ -256,9 +256,9 @@
 	trait=gregarious
 	2471.3.22={birth=yes}
 	2511.1.1={
-		create_bloodline = {
-			type = sonderborg
-			has_dlc = "Holy Fury"
+		create_bloodline={
+			type=sonderborg
+			has_dlc="Holy Fury"
 		}
 	}
 	2518.1.1={death={
@@ -698,7 +698,7 @@
 	learning=5
 	father=8000060
 	2469.1.1={birth=yes}
-	2486.1.1={give_nickname = nick_the_young}
+	2486.1.1={give_nickname=nick_the_young}
 	2487.1.1={death=yes}
 }
 
@@ -802,7 +802,7 @@
 	trait=mastermind_theologian
 	father=8000067
 	2552.1.1={birth=yes}
-	2570.1.1={give_nickname = nick_the_apostate}
+	2570.1.1={give_nickname=nick_the_apostate}
 	2591.1.1={death=yes}
 }
 
@@ -863,11 +863,10 @@
 	trait=apostle_cult
 	father=8000071
 	2623.1.1={birth=yes}
-	2648.1.1={
-		add_spouse = 8000191
+	2648.1.1={add_spouse=8000191
 	}
-	2660.1.1 = {
-		add_alliance = 8000078 #Broken thing, please fix
+	2660.1.1={
+		add_alliance=8000078 #Broken thing, please fix
 	}
 	2670.1.1={death=yes}
 }
@@ -876,7 +875,7 @@
 	name="Aurora"
 	female=yes
 	mother=8000208
-	father = 8000225
+	father=8000225
 	dynasty=2335104 #Rosensverd
 	culture=ostlending
 	religion=folketro
@@ -887,7 +886,7 @@
 	trait=legit_bastard
 	trait=apostle_cult
 	trait=flamboyant_schemer
-	disallow_random_traits = yes
+	disallow_random_traits=yes
 	2645.1.1={birth=yes}
 }
 
@@ -941,7 +940,7 @@
 	trait=hiddenfolk_cult
 	trait=just 
 	2636.1.1={birth=yes}
-	2666.1.1={give_nickname = nick_the_arrow }
+	2666.1.1={give_nickname=nick_the_arrow}
 	2670.1.1={death=yes}
 }
 
@@ -990,7 +989,7 @@
 	trait=ambitious 
 	trait=blinded_age
 	2100.1.1={birth=yes}
-	2100.1.1={give_nickname = nick_the_victorious}
+	2100.1.1={give_nickname=nick_the_victorious}
 	2200.1.1={death=yes}
 }
 
@@ -1007,7 +1006,7 @@
 	trait=strong
 	father=8000079
 	2150.1.1={birth=yes}
-	2200.1.1={give_nickname = nick_the_mighty }
+	2200.1.1={give_nickname=nick_the_mighty}
 	2250.1.1={death=yes}
 }
 
@@ -1103,7 +1102,7 @@
 	trait=authoritative
 	father=8000085
 	2391.1.1={birth=yes}
-	2410.1.1={give_nickname = nick_the_red}
+	2410.1.1={give_nickname=nick_the_red}
 	2411.1.1={death=yes}
 }
 
@@ -1134,7 +1133,7 @@
 	learning=5
 	father=8000085
 	2396.1.1={birth=yes}
-	2413.1.1={give_nickname = nick_the_conqueror}
+	2413.1.1={give_nickname=nick_the_conqueror}
 	2430.1.1={death={
 			death_reason=death_execution
 			killer=8000142
@@ -1188,7 +1187,7 @@
 	trait=mystic
 	father=8000089
 	2476.1.1={birth=yes}
-	2510.1.1={give_nickname = nick_the_wanderer}
+	2510.1.1={give_nickname=nick_the_wanderer}
 	2514.1.1={death=yes}
 }
 
@@ -1351,8 +1350,8 @@
 	father=8000160
 	mother=8000203
 	2649.1.1={birth=yes}
-	2659.1.1={ add_claim=d_opplandene}
-	2666.1.1={give_nickname = nick_half_troll }
+	2659.1.1={add_claim=d_opplandene}
+	2666.1.1={give_nickname=nick_half_troll}
 	2670.1.1={death=yes}
 }
 
@@ -1367,7 +1366,7 @@
 	trait=misguided_warrior 
 	trait=diligent
 	2642.1.1={birth=yes}
-	2663.1.1={add_spouse = 80003562}
+	2663.1.1={add_spouse=80003562}
 	2670.1.1={death=yes}
 }
 
@@ -1619,7 +1618,7 @@
 	trait=hunter
 	trait=sturdy
 	2640.1.1={birth=yes}
-	2666.1.1={give_nickname = nick_the_fearless}
+	2666.1.1={give_nickname=nick_the_fearless}
 	2670.1.1={death=yes}
 }
 
@@ -1635,7 +1634,7 @@
 	trait=apostle_cult
 	trait=wroth
 	2629.1.1={birth=yes}
-	2666.1.1={give_nickname = nick_the_liberator}
+	2666.1.1={give_nickname=nick_the_liberator}
 	2670.1.1={death=yes}
 }
 
@@ -1664,7 +1663,7 @@
 	trait=kind
 	trait=trusting
 	2640.4.15={birth=yes}
-	2665.1.1={give_nickname = nick_the_good}
+	2665.1.1={give_nickname=nick_the_good}
 	2672.7.14={death=yes}
 }
 
@@ -1864,7 +1863,7 @@
 	religion=folketro
 	father=8000141
 	2395.1.1={birth=yes}
-	2414.1.1={give_nickname = nick_the_restorer}
+	2414.1.1={give_nickname=nick_the_restorer}
 	2448.1.1={death=yes}
 }
 
@@ -1894,7 +1893,7 @@
 	trait=fair 
 	trait=ambitious
 	trait=brilliant_strategist
-	disallow_random_traits = yes 
+	disallow_random_traits=yes 
 	2100.1.1={birth=yes}
 	2200.1.1={death=yes}
 }
@@ -1938,7 +1937,7 @@
 	culture=danish
 	religion=lutheran
 	2300.1.1={birth=yes}
-	2340.1.1={give_nickname = nick_the_blessed}
+	2340.1.1={give_nickname=nick_the_blessed}
 	2351.1.1={death=yes}
 }
 
@@ -2303,7 +2302,7 @@
 	trait=holy_warrior
 	father=8000278
 	2433.1.1={birth=yes}
-	2484.1.1={give_nickname = nick_the_great}
+	2484.1.1={give_nickname=nick_the_great}
 	2500.1.1={death=yes}
 }
 
@@ -2402,8 +2401,7 @@
 	religion=lutheran
 	father=8000177
 	2628.1.1={birth=yes}
-	2648.1.1={
-		add_spouse = 8000072
+	2648.1.1={add_spouse=8000072
 	}
 	2670.1.1={death=yes}
 }
@@ -2434,7 +2432,7 @@
 	trait=erudite
 	trait=slothful
 	religion=folketro
-	disallow_random_traits = yes 
+	disallow_random_traits=yes 
 	father=8000072
 	2645.1.1={birth=yes}
 	2670.1.1={death=yes}
@@ -2497,7 +2495,7 @@
 	trait=robust
 	religion=folketro
 	2531.1.1={birth=yes}
-	2550.1.1={give_nickname = nick_the_strong}
+	2550.1.1={give_nickname=nick_the_strong}
 	2597.1.1={death=yes}
 }
 
@@ -2515,7 +2513,7 @@
 	trait=brave
 	trait=shrewd
 	trait=familyperson
-	disallow_random_traits = yes 
+	disallow_random_traits=yes 
 	religion=lutheran
 	2631.1.1={birth=yes}
 	2670.1.1={death=yes}
@@ -2534,7 +2532,7 @@
 	trait=zealous
 	trait=diligent
 	2613.1.1={birth=yes}
-	2647.1.1={give_nickname = nick_longsword}
+	2647.1.1={give_nickname=nick_longsword}
 	2657.1.1={death=yes}
 }
 
@@ -2618,7 +2616,7 @@
 	father=8000213
 	religion=folketro
 	2635.1.1={birth=yes}
-	2657.1.1={ add_spouse = 8000011 }
+	2657.1.1={add_spouse=8000011}
 	2670.1.1={death=yes}
 }
 
@@ -2718,15 +2716,15 @@
 	culture=ostlending
 	religion=folketro
 	father=80003568
-	dynasty = 2335104
+	dynasty=2335104
 	trait=uncouth
 	trait=strong 
 	trait=lustful 
 	trait=wroth
 	trait=hiddenfolk_cult
 	trait=skilled_tactician
-	disallow_random_traits = yes 
-	employer = 8000073
+	disallow_random_traits=yes 
+	employer=8000073
 	2621.1.1={birth=yes}
 	2670.1.1={death=yes}
 }
@@ -2802,7 +2800,7 @@
 	trait=giant 
 	trait=strong 
 	2481.1.1={birth=yes}
-	2499.1.1={give_nickname = nick_the_giant}
+	2499.1.1={give_nickname=nick_the_giant}
 	2501.1.1={death=yes}
 }
 
@@ -2878,7 +2876,7 @@
 	trait=strong 
 	trait=robust 
 	2434.1.1={birth=yes}
-	2490.1.1={give_nickname = nick_the_eagle}
+	2490.1.1={give_nickname=nick_the_eagle}
 	2499.1.1={death=yes}
 }
 
@@ -2895,7 +2893,7 @@
 	religion=insular
 	2399.1.1={birth=yes}
 	2431.1.1={add_spouse=8000271}
-	2452.1.1={give_nickname = nick_the_stranger}
+	2452.1.1={give_nickname=nick_the_stranger}
 	2461.1.1={death=yes}
 }
 
@@ -2949,7 +2947,7 @@
 	trait=cruel 
 	trait=wroth 
 	2492.1.1={birth=yes}
-	2542.1.1={give_nickname = nick_elf_hater}
+	2542.1.1={give_nickname=nick_elf_hater}
 	2560.1.1={death=yes}
 }
 
@@ -2979,7 +2977,7 @@
 	culture=icelander
 	religion=sjotru 
 	2402.1.1={birth=yes}
-	2438.1.1={give_nickname = nick_the_bull}
+	2438.1.1={give_nickname=nick_the_bull}
 	2452.1.1={death=yes}
 }
 
@@ -3063,7 +3061,7 @@
 	culture=icelander
 	religion=sjotru
 	2402.1.1={birth=yes}
-	2429.1.1={give_nickname = nick_the_dragon}
+	2429.1.1={give_nickname=nick_the_dragon}
 	2438.1.1={death=yes}
 }
 
@@ -3085,7 +3083,7 @@
 	religion=sjotru
 	trait=strong 
 	2367.1.1={birth=yes}
-	2388.1.1={give_nickname = nick_the_strong}
+	2388.1.1={give_nickname=nick_the_strong}
 	2406.1.1={death=yes}
 }
 
@@ -3122,7 +3120,7 @@
 	culture=icelander
 	religion=sjotru
 	2300.1.1={birth=yes}
-	2330.1.1={give_nickname = nick_the_old}
+	2330.1.1={give_nickname=nick_the_old}
 	2358.1.1={death=yes}
 }
 
@@ -3133,7 +3131,7 @@
 	culture=icelander
 	religion=sjotru
 	2330.1.1={birth=yes}
-	2300.1.1={give_nickname = nick_the_younger}
+	2300.1.1={give_nickname=nick_the_younger}
 	2361.1.1={death=yes}
 }
 
@@ -3197,7 +3195,7 @@
 	religion=sjotru
 	trait=legendary
 	2250.1.1={birth=yes}
-	2300.1.1={give_nickname = nick_the_wise}
+	2300.1.1={give_nickname=nick_the_wise}
 	2310.1.1={death=yes}
 }
 
@@ -3236,7 +3234,7 @@
 	trait=strong 
 	trait=giant
 	2409.1.1={birth=yes}
-	2431.1.1={add_spouse = 8000240}
+	2431.1.1={add_spouse=8000240}
 	2459.1.1={death=yes}
 }
 
@@ -3363,7 +3361,7 @@
 	culture=gotalander
 	religion=lutheran
 	2301.1.1={birth=yes}
-	2335.1.1={give_nickname = nick_the_wolf}
+	2335.1.1={give_nickname=nick_the_wolf}
 	2363.1.1={death=yes}
 }
 
@@ -3378,8 +3376,8 @@
 	father=8000160
 	mother=8000203
 	2650.1.1={birth=yes}
-	2659.1.1={ add_claim=d_opplandene}
-	2666.1.1={give_nickname = nick_half_troll }
+	2659.1.1={add_claim=d_opplandene}
+	2666.1.1={give_nickname=nick_half_troll}
 	2670.1.1={death=yes}
 }
 
@@ -3395,8 +3393,8 @@
 	father=8000160
 	mother=8000203
 	2653.1.1={birth=yes}
-	2659.1.1={ add_claim=d_opplandene}
-	2666.1.1={give_nickname = nick_half_troll }
+	2659.1.1={add_claim=d_opplandene}
+	2666.1.1={give_nickname=nick_half_troll}
 	2670.1.1={death=yes}
 }
 
@@ -3460,7 +3458,7 @@
 	trait=legendary 
 	occluded=yes
 	850.1.1={birth=yes}
-	872.1.1={give_nickname = nick_fairhair}
+	872.1.1={give_nickname=nick_fairhair}
 	933.1.1={death=yes}
 }
 
@@ -3473,7 +3471,7 @@
 	trait=legendary 
 	occluded=yes
 	885.1.1={birth=yes}
-	900.1.1={give_nickname = nick_bloodaxe}
+	900.1.1={give_nickname=nick_bloodaxe}
 	954.1.1={death=yes}
 }
 
@@ -3486,7 +3484,7 @@
 	culture=vestlending
 	religion=catholic
 	920.1.1={birth=yes}
-	940.1.1={give_nickname = nick_the_good}
+	940.1.1={give_nickname=nick_the_good}
 	961.1.1={death=yes}
 }
 
@@ -3583,7 +3581,7 @@
 	culture=vestlending
 	religion=catholic
 	995.1.1={birth=yes}
-	1030.7.29={give_nickname = nick_the_holy}
+	1030.7.29={give_nickname=nick_the_holy}
 	1030.7.29={death=yes}
 }
 
@@ -3596,7 +3594,7 @@
 	culture=vestlending
 	religion=catholic
 	1024.1.1={birth=yes}
-	1030.1.1={give_nickname = nick_the_good}
+	1030.1.1={give_nickname=nick_the_good}
 	1047.10.25={death=yes}
 }
 
@@ -3647,7 +3645,7 @@
 	culture=ostlending
 	religion=orthodox
 	1015.1.1={birth=yes}
-	1060.1.1={give_nickname = nick_haardraade}
+	1060.1.1={give_nickname=nick_haardraade}
 	1066.9.25={death=yes}
 }
 
@@ -3708,7 +3706,7 @@
 	culture=ostlending
 	religion=catholic
 	1089.1.1={birth=yes}
-	1120.1.1={give_nickname = nick_the_crusader}
+	1120.1.1={give_nickname=nick_the_crusader}
 	1130.1.1={death=yes}
 }
 
@@ -3733,7 +3731,7 @@
 	culture=ostlending
 	religion=catholic
 	1115.1.1={birth=yes}
-	1120.1.1={give_nickname = nick_the_blind}
+	1120.1.1={give_nickname=nick_the_blind}
 	1139.11.12={death=yes}
 }
 
@@ -3758,7 +3756,7 @@
 	culture=ostlending
 	religion=catholic
 	1136.1.1={birth=yes}
-	1160.1.1={give_nickname = nick_the_hunchback}
+	1160.1.1={give_nickname=nick_the_hunchback}
 	1161.1.1={death=yes}
 }
 
@@ -3808,7 +3806,7 @@
 	1202.1.1={death=yes}
 }
 
-8000329={ 
+8000329={
 	name="Håkon" 
  	dynasty=2335083 #Sverre
 	trait=legendary 
@@ -3820,7 +3818,7 @@
 	1204.5.5={death=yes}
 }
 
-8000330={ 
+8000330={
 	name="Sigurd" 
  	dynasty=2335083 #Sverre
 	father=8000328
@@ -3832,7 +3830,7 @@
 	1200.1.1={death=yes}
 }
 
-8000331={ 
+8000331={
 	name="Guttorm" 
  	dynasty=2335083 #Sverre
 	father=8000330
@@ -3844,7 +3842,7 @@
 	1204.8.11={death=yes}
 }
 
-8000332={ 
+8000332={
 	name="Inge" 
  	dynasty=2335101 #Godwinson
 	trait=legendary 
@@ -3855,7 +3853,7 @@
 	1217.1.1={death=yes}
 }
 
-8000333={ 
+8000333={
 	name="Håkon" #Håkonsson
  	dynasty=2335083 #Sverre
 	father=8000329
@@ -3864,11 +3862,11 @@
 	culture=ostlending
 	religion=catholic
 	1204.1.1={birth=yes}
-	1260.1.1={give_nickname = nick_the_old}
+	1260.1.1={give_nickname=nick_the_old}
 	1263.1.1={death=yes}
 }
 
-8000334={ 
+8000334={
 	name="Magnus" #Håkonsson
  	dynasty=2335083 #Sverre
 	father=8000333
@@ -3877,11 +3875,11 @@
 	culture=ostlending
 	religion=catholic
 	1238.1.1={birth=yes}
-	1270.1.1={give_nickname = nick_the_lawgiver}
+	1270.1.1={give_nickname=nick_the_lawgiver}
 	1280.1.1={death=yes}
 }
 
-8000335={ 
+8000335={
 	name="Eirik" #Magnusson
  	dynasty=2335083 #Sverre
 	father=8000334
@@ -3890,11 +3888,11 @@
 	culture=ostlending
 	religion=catholic
 	1268.1.1={birth=yes}
-	1280.1.1={give_nickname = nick_priest_hater}
+	1280.1.1={give_nickname=nick_priest_hater}
 	1299.1.1={death=yes}
 }
 
-8000336={ 
+8000336={
 	name="Håkon" #Magnusson
  	dynasty=2335083 #Sverre
 	father=8000334
@@ -3906,7 +3904,7 @@
 	1319.1.1={death=yes}
 }
 
-8000337={ 
+8000337={
 	name="Magnus" #Smek
 	father=8000397
  	dynasty=2335084 #Folkung
@@ -3918,7 +3916,7 @@
 	1374.1.1={death=yes}
 }
 
-8000338={ 
+8000338={
 	name="Håkon" #Magnusson
  	dynasty=2335084 #Folkung
 	father=8000337
@@ -3930,7 +3928,7 @@
 	1380.1.1={death=yes}
 }
 
-8000339={ 
+8000339={
 	name="Olav" #IV
  	dynasty=2335084 #Folkung
 	father=8000338
@@ -3943,7 +3941,7 @@
 	1387.1.1={death=yes}
 }
 
-8000340={ 
+8000340={
 	name="Margaret" 
 	father=80003472
 	female=yes
@@ -3956,7 +3954,7 @@
 	1412.1.1={death=yes}
 }
 
-8000341={ 
+8000341={
 	name="Erik" #Adopted
  	dynasty=2335096 #Estridsen
 	trait=legendary 
@@ -3967,7 +3965,7 @@
 	1459.1.1={death=yes}
 }
 
-8000342={ 
+8000342={
 	name="Christoffer" 
  	dynasty=2335098 #Neumarkt
 	trait=legendary 
@@ -3978,7 +3976,7 @@
 	1448.1.1={death=yes}
 }
 
-8000343={ 
+8000343={
 	name="Karl" 
  	dynasty=2335102 #Bonde
 	trait=legendary 
@@ -3989,7 +3987,7 @@
 	1470.1.1={death=yes}
 }
 
-8000344={ 
+8000344={
 	name="Kristian" #1
  	dynasty=2335099 #Oldenburg
 	trait=legendary 
@@ -4000,7 +3998,7 @@
 	1481.1.1={death=yes}
 }
 
-8000345={ 
+8000345={
 	name="John" 
  	dynasty=2335099 #Oldenburg
 	father=8000344
@@ -4012,7 +4010,7 @@
 	1513.1.1={death=yes}
 }
 
-8000346={ 
+8000346={
 	name="Frederick" #1
  	dynasty=2335099 #Oldenburg
 	father=8000344
@@ -4024,7 +4022,7 @@
 	1533.1.1={death=yes}
 }
 
-8000347={ 
+8000347={
 	name="Kristian" #2
  	dynasty=2335099 #Oldenburg
 	father=8000345
@@ -4036,7 +4034,7 @@
 	1559.1.1={death=yes}
 }
 
-8000348={ 
+8000348={
 	name="Kristian" #3
  	dynasty=2335099 #Oldenburg
 	father=8000346
@@ -4048,7 +4046,7 @@
 	1559.1.1={death=yes}
 }
 
-8000349={ 
+8000349={
 	name="Frederick" #2
  	dynasty=2335099 #Oldenburg
 	father=8000348
@@ -4060,7 +4058,7 @@
 	1588.1.1={death=yes}
 }
 
-8000350={ 
+8000350={
 	name="Kristian" #4
  	dynasty=2335099 #Oldenburg
 	father=8000349
@@ -4072,7 +4070,7 @@
 	1648.1.1={death=yes}
 }
 
-8000351={ 
+8000351={
 	name="Frederick" #3
  	dynasty=2335099 #Oldenburg
 	father=8000350
@@ -4084,7 +4082,7 @@
 	1670.1.1={death=yes}
 }
 
-8000352={ 
+8000352={
 	name="Kristian" #5
  	dynasty=2335099 #Oldenburg
 	father=8000351
@@ -4096,7 +4094,7 @@
 	1699.1.1={death=yes}
 }
 
-8000353={ 
+8000353={
 	name="Frederick" #4
  	dynasty=2335099 #Oldenburg
 	father=8000352
@@ -4108,7 +4106,7 @@
 	1730.1.1={death=yes}
 }
 
-8000354={ 
+8000354={
 	name="Kristian" #6
  	dynasty=2335099 #Oldenburg
 	father=8000353
@@ -4120,7 +4118,7 @@
 	1746.1.1={death=yes}
 }
 
-8000355={ 
+8000355={
 	name="Frederick" #5
  	dynasty=2335099 #Oldenburg
 	father=8000354
@@ -4132,7 +4130,7 @@
 	1766.1.1={death=yes}
 }
 
-8000356={ 
+8000356={
 	name="Kristian" #7
  	dynasty=2335099 #Oldenburg
 	father=8000355
@@ -4144,7 +4142,7 @@
 	1808.1.1={death=yes}
 }
 
-8000357={ 
+8000357={
 	name="Frederick" #6
  	dynasty=2335099 #Oldenburg
 	father=8000356
@@ -4156,7 +4154,7 @@
 	1839.1.1={death=yes}
 }
 
-8000358={ 
+8000358={
 	name="Frederick" #Heir
  	dynasty=2335099 #Oldenburg
 	father=8000355
@@ -4168,7 +4166,7 @@
 	1805.1.1={death=yes}
 }
 
-8000359={ 
+8000359={
 	name="Kristian" #8
  	dynasty=2335099 #Oldenburg
 	father=8000358
@@ -4180,7 +4178,7 @@
 	1848.1.1={death=yes}
 }
 
-8000360={ 
+8000360={
 	name="Kristian-Frederick" #Frederick
  	dynasty=2335099 #Oldenburg
 	father=8000358
@@ -4192,7 +4190,7 @@
 	1848.1.1={death=yes}
 }
 
-8000361={ 
+8000361={
 	name="Karl" #Gottorp
 	father=8000412
  	dynasty=2335093 #Gottorp
@@ -4204,7 +4202,7 @@
 	1818.1.1={death=yes}
 }
 
-8000362={ 
+8000362={
 	name="Karl Johan"
  	dynasty=2335094 #Bernadotte
 	trait=legendary 
@@ -4215,7 +4213,7 @@
 	1844.1.1={death=yes}
 }
 
-8000363={ 
+8000363={
 	name="Oscar"
 	father=8000362
  	dynasty=2335094 #Bernadotte
@@ -4227,7 +4225,7 @@
 	1859.1.1={death=yes}
 }
 
-8000364={ 
+8000364={
 	name="Karl"
 	father=8000363
  	dynasty=2335094 #Bernadotte
@@ -4239,7 +4237,7 @@
 	1872.1.1={death=yes}
 }
 
-8000365={ 
+8000365={
 	name="Oscar"
 	father=8000363
  	dynasty=2335094 #Bernadotte
@@ -4251,7 +4249,7 @@
 	1907.1.1={death=yes}
 }
 
-8000366={ 
+8000366={
 	name="Håkon"
  	dynasty=2335099 #Oldenburg
 	trait=legendary 
@@ -4262,7 +4260,7 @@
 	1957.1.1={death=yes}
 }
 
-8000367={ 
+8000367={
 	name="Olav"
 	father=8000366
  	dynasty=2335099 #Oldenburg
@@ -4274,7 +4272,7 @@
 	1991.1.1={death=yes}
 }
 
-8000368={ 
+8000368={
 	name="Harald" #the man himself
 	father=8000367
  	dynasty=2335099 #Oldenburg
@@ -4288,7 +4286,7 @@
 
 #Swedish Kings
 
-8000370={ 
+8000370={
 	name="Erik" #Sägersæl
  	dynasty=2335085 #Munsö
 	trait=legendary 
@@ -4296,11 +4294,11 @@
 	culture=swedish
 	religion=pagan
 	945.1.1={birth=yes}
-	970.1.1={give_nickname = nick_the_victorious}
+	970.1.1={give_nickname=nick_the_victorious}
 	995.1.1={death=yes}
 }
 
-8000371={ 
+8000371={
 	name="Olof"
 	father=8000370
  	dynasty=2335085 #Munsö
@@ -4312,7 +4310,7 @@
 	1022.1.1={death=yes}
 }
 
-8000372={ 
+8000372={
 	name="Anund Jakob"
 	father=8000371
  	dynasty=2335085 #Munsö
@@ -4324,7 +4322,7 @@
 	1050.1.1={death=yes}
 }
 
-8000373={ 
+8000373={
 	name="Emund"
 	father=8000371
  	dynasty=2335085 #Munsö
@@ -4333,11 +4331,11 @@
 	culture=swedish
 	religion=catholic
 	1010.1.1={birth=yes}
-	1050.1.1={give_nickname = nick_the_old}
+	1050.1.1={give_nickname=nick_the_old}
 	1060.1.1={death=yes}
 }
 
-8000374={ 
+8000374={
 	name="Stenkil"
  	dynasty=2335086 #Stenkil
 	trait=legendary 
@@ -4348,7 +4346,7 @@
 	1066.1.1={death=yes}
 }
 
-8000375={ 
+8000375={
 	name="Halsten"
 	father=8000374
  	dynasty=2335086 #Stenkil
@@ -4360,7 +4358,7 @@
 	1081.1.1={death=yes}
 }
 
-8000376={ 
+8000376={
 	name="Håkan"
 	father=8000374
  	dynasty=2335086 #Stenkil
@@ -4369,11 +4367,11 @@
 	culture=swedish
 	religion=pagan
 	1050.1.1={birth=yes}
-	1060.1.1={give_nickname = nick_the_red}
+	1060.1.1={give_nickname=nick_the_red}
 	1081.1.1={death=yes}
 }
 
-8000377={ 
+8000377={
 	name="Inge"
 	father=8000374
  	dynasty=2335086 #Stenkil
@@ -4382,11 +4380,11 @@
 	culture=swedish
 	religion=catholic
 	1060.1.1={birth=yes}
-	1090.1.1={give_nickname = nick_the_elder}
+	1090.1.1={give_nickname=nick_the_elder}
 	1105.1.1={death=yes}
 }
 
-8000378={ 
+8000378={
 	name="Filip"
 	father=8000375
  	dynasty=2335086 #Stenkil
@@ -4398,7 +4396,7 @@
 	1118.1.1={death=yes}
 }
 
-8000379={ 
+8000379={
 	name="Inge"
 	father=8000375
  	dynasty=2335086 #Stenkil
@@ -4407,11 +4405,11 @@
 	culture=swedish
 	religion=catholic
 	1080.1.1={birth=yes}
-	1110.1.1={give_nickname = nick_the_younger}
+	1110.1.1={give_nickname=nick_the_younger}
 	1125.1.1={death=yes}
 }
 
-8000380={ 
+8000380={
 	name="Ragnvald" #Knaphøvde
 	father=8000377
  	dynasty=2335086 #Stenkil
@@ -4423,7 +4421,7 @@
 	1125.1.1={death=yes}
 }
 
-8000381={ 
+8000381={
 	name="Magnus" #Sterke
  	dynasty=2335096 #Estridsen
 	father=80003452
@@ -4435,7 +4433,7 @@
 	1134.1.1={death=yes}
 }
 
-8000382={ 
+8000382={
 	name="Sverker" #1
  	dynasty=2335086 #Sverker
 	trait=legendary 
@@ -4446,7 +4444,7 @@
 	1156.1.1={death=yes}
 }
 
-8000383={ 
+8000383={
 	name="Erik" #9, the saint 
  	dynasty=2335088 #Erik
 	trait=legendary 
@@ -4454,11 +4452,11 @@
 	culture=swedish
 	religion=catholic
 	1120.1.1={birth=yes}
-	1150.1.1={give_nickname = nick_the_saint}
+	1150.1.1={give_nickname=nick_the_saint}
 	1160.1.1={death=yes}
 }
 
-8000384={ 
+8000384={
 	name="Magnus" #2
 	father=80003478
  	dynasty=2335096 #Estridsen
@@ -4470,7 +4468,7 @@
 	1161.1.1={death=yes}
 }
 
-8000385={ 
+8000385={
 	name="Karl" #7, Sverkersson
 	father=8000382
  	dynasty=2335086 #Sverker
@@ -4482,7 +4480,7 @@
 	1167.1.1={death=yes}
 }
 
-8000386={ 
+8000386={
 	name="Knut" #Eriksson
 	father=8000383
  	dynasty=2335088 #Erik
@@ -4494,7 +4492,7 @@
 	1195.1.1={death=yes}
 }
 
-8000387={ 
+8000387={
 	name="Sverker" #2, Karlsson
 	father=8000385
  	dynasty=2335086 #Sverker
@@ -4503,11 +4501,11 @@
 	culture=swedish
 	religion=catholic
 	1164.1.1={birth=yes}
-	1200.1.1={give_nickname = nick_the_younger}
+	1200.1.1={give_nickname=nick_the_younger}
 	1210.1.1={death=yes}
 }
 
-8000388={ 
+8000388={
 	name="Erik" #Knutsson
 	father=8000386
  	dynasty=2335088 #Erik
@@ -4519,7 +4517,7 @@
 	1216.1.1={death=yes}
 }
 
-8000389={ 
+8000389={
 	name="Johan" #2, Sverkersson
 	father=8000387
  	dynasty=2335086 #Sverker
@@ -4528,11 +4526,11 @@
 	culture=swedish
 	religion=catholic
 	1201.1.1={birth=yes}
-	1202.1.1={give_nickname = nick_the_young}
+	1202.1.1={give_nickname=nick_the_young}
 	1222.1.1={death=yes}
 }
 
-8000390={ 
+8000390={
 	name="Erik" #Eriksson
 	father=8000388
  	dynasty=2335088 #Erik
@@ -4541,11 +4539,11 @@
 	culture=swedish
 	religion=catholic
 	1216.1.1={birth=yes}
-	1230.1.1={give_nickname = nick_the_lisp_and_lame}
+	1230.1.1={give_nickname=nick_the_lisp_and_lame}
 	1250.1.1={death=yes}
 }
 
-8000391={ 
+8000391={
 	name="Knut" #2, Lange
 	father=8000392
  	dynasty=2335088 #Erik
@@ -4557,7 +4555,7 @@
 	1234.1.1={death=yes}
 }
 
-8000392={ 
+8000392={
 	name="Holmger" 
 	father=8000386
  	dynasty=2335088 #Erik
@@ -4569,7 +4567,7 @@
 	1220.1.1={death=yes}
 }
 
-8000393={ 
+8000393={
 	name="Birger" #Jarl 
  	dynasty=2335084 #Folkung
 	trait=legendary 
@@ -4580,7 +4578,7 @@
 	1266.1.1={death=yes}
 }
 
-8000394={ 
+8000394={
 	name="Magnus" #Ladulås 
 	father=8000393
  	dynasty=2335084 #Folkung
@@ -4592,7 +4590,7 @@
 	1290.1.1={death=yes}
 }
 
-8000395={ 
+8000395={
 	name="Valdemar" #Birgersson 
 	father=8000393
  	dynasty=2335084 #Folkung
@@ -4604,7 +4602,7 @@
 	1302.1.1={death=yes}
 }
 
-8000396={ 
+8000396={
 	name="Birger" #Magnusson 
 	father=8000394
  	dynasty=2335084 #Folkung
@@ -4616,7 +4614,7 @@
 	1321.1.1={death=yes}
 }
 
-8000397={ 
+8000397={
 	name="Erik" #Magnusson, not king
 	father=8000394
  	dynasty=2335084 #Folkung
@@ -4628,7 +4626,7 @@
 	1318.1.1={death=yes}
 }
 
-8000398={ 
+8000398={
 	name="Erik" #Magnusson
 	father=8000337
  	dynasty=2335084 #Folkung
@@ -4640,7 +4638,7 @@
 	1359.1.1={death=yes}
 }
 
-8000399={ 
+8000399={
 	name="Albert" #von Mecklenburg
  	dynasty=2335089 #Mecklenburg
 	trait=legendary 
@@ -4651,7 +4649,7 @@
 	1412.1.1={death=yes}
 }
 
-8000400={ 
+8000400={
 	name="Gustav" 
  	dynasty=2335090 #Vasa
 	trait=legendary 
@@ -4662,7 +4660,7 @@
 	1560.1.1={death=yes}
 }
 
-8000401={ 
+8000401={
 	name="Erik" 
 	father=8000400
  	dynasty=2335090#Vasa
@@ -4674,7 +4672,7 @@
 	1577.1.1={death=yes}
 }
 
-8000402={ 
+8000402={
 	name="Johan" 
 	father=8000400
  	dynasty=2335090 #Vasa
@@ -4686,7 +4684,7 @@
 	1592.1.1={death=yes}
 }
 
-8000403={ 
+8000403={
 	name="Karl" 
 	father=8000400
  	dynasty=2335090 #Vasa
@@ -4698,7 +4696,7 @@
 	1611.1.1={death=yes}
 }
 
-8000404={ 
+8000404={
 	name="Sigmund" 
 	father=8000402
  	dynasty=2335090 #Vasa
@@ -4710,7 +4708,7 @@
 	1632.1.1={death=yes}
 }
 
-8000405={ 
+8000405={
 	name="Gustav Adolf" 
 	father=8000403
  	dynasty=2335090 #Vasa
@@ -4719,11 +4717,11 @@
 	culture=swedish
 	religion=lutheran
 	1594.1.1={birth=yes}
-	1630.1.1={give_nickname = nick_the_great}
+	1630.1.1={give_nickname=nick_the_great}
 	1632.1.1={death=yes}
 }
 
-8000406={ 
+8000406={
 	name="Kristina" 
 	female=yes
 	father=8000405
@@ -4736,7 +4734,7 @@
 	1689.1.1={death=yes}
 }
 
-8000407={ 
+8000407={
 	name="Karl Gustav" 
  	dynasty=2335091 #Palatinate-Zweibrücken
 	trait=legendary 
@@ -4747,7 +4745,7 @@
 	1660.1.1={death=yes}
 }
 
-8000408={ 
+8000408={
 	name="Karl" 
 	father=8000407
  	dynasty=2335091 #Palatinate-Zweibrücken
@@ -4759,7 +4757,7 @@
 	1697.1.1={death=yes}
 }
 
-8000409={ 
+8000409={
 	name="Karl" #Carolus Rex
 	father=8000408
  	dynasty=2335091 #Palatinate-Zweibrücken
@@ -4771,7 +4769,7 @@
 	1718.1.1={death=yes}
 }
 
-8000410={ 
+8000410={
 	name="Ulrika Eleonora"
 	female=yes
 	father=8000408
@@ -4784,7 +4782,7 @@
 	1721.1.1={death=yes}
 }
 
-8000411={ 
+8000411={
 	name="Fredrik"
  	dynasty=2335092 #Hesse
 	trait=legendary 
@@ -4795,7 +4793,7 @@
 	1751.1.1={death=yes}
 }
 
-8000412={ 
+8000412={
 	name="Adolf Fredrik"
  	dynasty=2335093 #Holstein-Gottorp
 	trait=legendary 
@@ -4806,7 +4804,7 @@
 	1771.1.1={death=yes}
 }
 
-8000413={ 
+8000413={
 	name="Gustav"
 	father=8000412
  	dynasty=2335093 #Holstein-Gottorp
@@ -4818,7 +4816,7 @@
 	1792.1.1={death=yes}
 }
 
-8000415={ 
+8000415={
 	name="Gustav Adolf"
 	father=8000413
  	dynasty=2335093 #Holstein-Gottorp
@@ -4830,7 +4828,7 @@
 	1837.1.1={death=yes}
 }
 
-80003416={ 
+80003416={
 	name="Gustaf Adolf"
 	father=8000365
  	dynasty=2335094 #Bernadotte
@@ -4842,7 +4840,7 @@
 	1950.1.1={death=yes}
 }
 
-80003417={ 
+80003417={
 	name="Gustaf Adolf"
 	father=80003416
  	dynasty=2335094 #Bernadotte
@@ -4854,7 +4852,7 @@
 	1973.1.1={death=yes}
 }
 
-80003418={ 
+80003418={
 	name="Carl Gustaf"
 	father=80003417
  	dynasty=2335094 #Bernadotte
@@ -4866,7 +4864,7 @@
 	2100.1.1={death=yes}
 }
 
-80003419={ 
+80003419={
 	name="Karl" #For regnal number
 	father=80003425
  	dynasty=2335103
@@ -4878,7 +4876,7 @@
 	650.1.1={death=yes}
 }
 
-80003420={ 
+80003420={
 	name="Karl" #For regnal number
 	father=80003419
  	dynasty=2335103
@@ -4890,7 +4888,7 @@
 	660.1.1={death=yes}
 }
 
-80003421={ 
+80003421={
 	name="Karl" #For regnal number
 	father=80003420
  	dynasty=2335103
@@ -4902,7 +4900,7 @@
 	670.1.1={death=yes}
 }
 
-80003422={ 
+80003422={
 	name="Karl" #For regnal number
 	father=80003421
  	dynasty=2335103
@@ -4914,7 +4912,7 @@
 	680.1.1={death=yes}
 }
 
-80003423={ 
+80003423={
 	name="Karl" #For regnal number
 	father=80003422
  	dynasty=2335103
@@ -4926,7 +4924,7 @@
 	700.1.1={death=yes}
 }
 
-80003424={ 
+80003424={
 	name="Karl" #For regnal number
 	father=80003423
  	dynasty=2335103
@@ -4938,7 +4936,7 @@
 	720.1.1={death=yes}
 }
 
-80003425={ 
+80003425={
 	name="Erik" #For regnal number
 	father=80003426
  	dynasty=2335103
@@ -4950,7 +4948,7 @@
 	630.1.1={death=yes}
 }
 
-80003426={ 
+80003426={
 	name="Erik" #For regnal number
 	father=80003427
  	dynasty=2335103
@@ -4962,7 +4960,7 @@
 	610.1.1={death=yes}
 }
 
-80003427={ 
+80003427={
 	name="Erik" #For regnal number
 	father=80003428
  	dynasty=2335103
@@ -4974,7 +4972,7 @@
 	590.1.1={death=yes}
 }
 
-80003428={ 
+80003428={
 	name="Erik" #For regnal number
 	father=80003429
  	dynasty=2335103
@@ -4986,7 +4984,7 @@
 	570.1.1={death=yes}
 }
 
-80003429={ 
+80003429={
 	name="Erik" #For regnal number
 	father=80003430
  	dynasty=2335103
@@ -4998,7 +4996,7 @@
 	550.1.1={death=yes}
 }
 
-80003430={ 
+80003430={
 	name="Erik" #For regnal number
 	father=80003431
  	dynasty=2335103
@@ -5010,7 +5008,7 @@
 	530.1.1={death=yes}
 }
 
-80003431={ 
+80003431={
 	name="Erik" #For regnal number
  	dynasty=2335103
 	trait=legendary 
@@ -5021,7 +5019,7 @@
 	510.1.1={death=yes}
 }
 
-80003440={ 
+80003440={
 	name="Knud" #Harthacnut 1
  	dynasty=2335095 #Knytling
 	trait=legendary 
@@ -5029,11 +5027,11 @@
 	culture=danish
 	religion=pagan
 	880.1.1={birth=yes}
-	930.1.1={give_nickname = nick_hardeknud}
+	930.1.1={give_nickname=nick_hardeknud}
 	936.1.1={death=yes}
 }
 
-80003441={ 
+80003441={
 	name="Gorm" #Gorm
 	father=80003440
  	dynasty=2335095 #Knytling
@@ -5042,11 +5040,11 @@
 	culture=danish
 	religion=pagan
 	900.1.1={birth=yes}
-	930.1.1={give_nickname = nick_the_old}
+	930.1.1={give_nickname=nick_the_old}
 	958.1.1={death=yes}
 }
 
-80003442={ 
+80003442={
 	name="Harald" #Blåtand
 	father=80003441
  	dynasty=2335095 #Knytling
@@ -5055,11 +5053,11 @@
 	culture=danish
 	religion=catholic
 	920.1.1={birth=yes}
-	960.1.1={give_nickname = nick_bluetooth}
+	960.1.1={give_nickname=nick_bluetooth}
 	986.1.1={death=yes}
 }
 
-80003443={ 
+80003443={
 	name="Svend" #Forkbeard
 	father=80003442
  	dynasty=2335095 #Knytling
@@ -5071,7 +5069,7 @@
 	1014.1.1={death=yes}
 }
 
-80003444={ 
+80003444={
 	name="Harald" #Svendsen
 	father=80003443
  	dynasty=2335095 #Knytling
@@ -5083,7 +5081,7 @@
 	1018.1.1={death=yes}
 }
 
-80003445={ 
+80003445={
 	name="Knud" #den Store
 	father=80003443
  	dynasty=2335095 #Knytling
@@ -5092,11 +5090,11 @@
 	culture=danish
 	religion=catholic
 	990.1.1={birth=yes}
-	1030.1.1={give_nickname = nick_the_great}
+	1030.1.1={give_nickname=nick_the_great}
 	1035.1.1={death=yes}
 }
 
-80003446={ 
+80003446={
 	name="Knud" #Harthacnut 2
 	father=80003445
  	dynasty=2335095 #Knytling
@@ -5105,11 +5103,11 @@
 	culture=danish
 	religion=catholic
 	1020.1.1={birth=yes}
-	1030.1.1={give_nickname = nick_hardeknud}
+	1030.1.1={give_nickname=nick_hardeknud}
 	1042.1.1={death=yes}
 }
 
-80003447={ 
+80003447={
 	name="Svend" #2
  	dynasty=2335096 #Estridsen
 	trait=legendary 
@@ -5120,7 +5118,7 @@
 	1076.1.1={death=yes}
 }
 
-80003448={ 
+80003448={
 	name="Harald" #2
  	dynasty=2335096 #Estridsen
 	father=80003447
@@ -5132,7 +5130,7 @@
 	1080.1.1={death=yes}
 }
 
-80003449={ 
+80003449={
 	name="Knud" #4
  	dynasty=2335096 #Estridsen
 	father=80003447
@@ -5141,11 +5139,11 @@
 	culture=danish
 	religion=catholic
 	1042.1.1={birth=yes}
-	1080.1.1={give_nickname = nick_the_holy}
+	1080.1.1={give_nickname=nick_the_holy}
 	1086.1.1={death=yes}
 }
 
-80003450={ 
+80003450={
 	name="Oluf" #1
  	dynasty=2335096 #Estridsen
 	father=80003447
@@ -5157,7 +5155,7 @@
 	1095.1.1={death=yes}
 }
 
-80003451={ 
+80003451={
 	name="Erik" #1
  	dynasty=2335096 #Estridsen
 	father=80003447
@@ -5169,7 +5167,7 @@
 	1103.1.1={death=yes}
 }
 
-80003452={ 
+80003452={
 	name="Niels" #2
  	dynasty=2335096 #Estridsen
 	father=80003447
@@ -5181,7 +5179,7 @@
 	1134.1.1={death=yes}
 }
 
-80003453={ 
+80003453={
 	name="Erik" #2
  	dynasty=2335096 #Estridsen
 	father=80003451
@@ -5193,7 +5191,7 @@
 	1137.1.1={death=yes}
 }
 
-80003454={ 
+80003454={
 	name="Ragnhild" 
 	female=yes
  	dynasty=2335096 #Estridsen
@@ -5206,7 +5204,7 @@
 	1130.1.1={death=yes}
 }
 
-80003455={ 
+80003455={
 	name="Erik" #3
  	dynasty=2335096 #Estridsen
 	mother=80003454
@@ -5218,7 +5216,7 @@
 	1146.1.1={death=yes}
 }
 
-80003456={ 
+80003456={
 	name="Svend" #3
  	dynasty=2335096 #Estridsen
 	father=80003453
@@ -5230,7 +5228,7 @@
 	1157.1.1={death=yes}
 }
 
-80003457={ 
+80003457={
 	name="Knud" #5
  	dynasty=2335096 #Estridsen
 	father=8000381
@@ -5242,7 +5240,7 @@
 	1157.1.1={death=yes}
 }
 
-80003458={ 
+80003458={
 	name="Knud" #Lavard, not king
  	dynasty=2335096 #Estridsen
 	father=80003451
@@ -5254,7 +5252,7 @@
 	1131.1.1={death=yes}
 }
 
-80003459={ 
+80003459={
 	name="Valdemar" #1
  	dynasty=2335096 #Estridsen
 	father=80003458
@@ -5263,11 +5261,11 @@
 	culture=danish
 	religion=catholic
 	1131.1.1={birth=yes}
-	1160.1.1={give_nickname = nick_the_great}
+	1160.1.1={give_nickname=nick_the_great}
 	1182.1.1={death=yes}
 }
 
-80003460={ 
+80003460={
 	name="Knud" #6
  	dynasty=2335096 #Estridsen
 	father=80003459
@@ -5279,7 +5277,7 @@
 	1202.1.1={death=yes}
 }
 
-80003461={ 
+80003461={
 	name="Valdemar" #2
  	dynasty=2335096 #Estridsen
 	father=80003459
@@ -5288,11 +5286,11 @@
 	culture=danish
 	religion=catholic
 	1170.1.1={birth=yes}
-	1200.1.1={give_nickname = nick_the_victorious}
+	1200.1.1={give_nickname=nick_the_victorious}
 	1241.1.1={death=yes}
 }
 
-80003462={ 
+80003462={
 	name="Erik" #4, Plogpenning
  	dynasty=2335096 #Estridsen
 	father=80003461
@@ -5304,7 +5302,7 @@
 	1250.1.1={death=yes}
 }
 
-80003463={ 
+80003463={
 	name="Abel"
  	dynasty=2335096 #Estridsen
 	father=80003461
@@ -5316,7 +5314,7 @@
 	1252.1.1={death=yes}
 }
 
-80003464={ 
+80003464={
 	name="Christoffer" #1
  	dynasty=2335096 #Estridsen
 	father=80003461
@@ -5328,7 +5326,7 @@
 	1259.1.1={death=yes}
 }
 
-80003465={ 
+80003465={
 	name="Erik" #5, Klipping
  	dynasty=2335096 #Estridsen
 	father=80003464
@@ -5340,7 +5338,7 @@
 	1286.1.1={death=yes}
 }
 
-80003466={ 
+80003466={
 	name="Erik" #6, Menved
  	dynasty=2335096 #Estridsen
 	father=80003465
@@ -5352,7 +5350,7 @@
 	1319.1.1={death=yes}
 }
 
-80003467={ 
+80003467={
 	name="Christoffer" #2
  	dynasty=2335096 #Estridsen
 	father=80003465
@@ -5364,7 +5362,7 @@
 	1332.1.1={death=yes}
 }
 
-80003468={ 
+80003468={
 	name="Erik" #Duke of Slesvig
  	dynasty=2335096 #Estridsen
 	father=80003463
@@ -5376,7 +5374,7 @@
 	1272.1.1={death=yes}
 }
 
-80003469={ 
+80003469={
 	name="Valdemar" #Duke of Slesvig
  	dynasty=2335096 #Estridsen
 	father=80003468
@@ -5388,7 +5386,7 @@
 	1312.1.1={death=yes}
 }
 
-800034670={ 
+800034670={
 	name="Erik" #Duke of Slesvig
  	dynasty=2335096 #Estridsen
 	father=80003469
@@ -5400,7 +5398,7 @@
 	1325.1.1={death=yes}
 }
 
-800034671={ 
+800034671={
 	name="Valdemar" #3
  	dynasty=2335096 #Estridsen
 	father=800034670
@@ -5412,7 +5410,7 @@
 	1364.1.1={death=yes}
 }
 
-80003472={ 
+80003472={
 	name="Valdemar" #4, Atterdag
  	dynasty=2335096 #Estridsen
 	father=80003467
@@ -5424,7 +5422,7 @@
 	1375.1.1={death=yes}
 }
 
-80003478={ 
+80003478={
 	name="Henrik" #Skadelår
  	dynasty=2335096 #Estridsen
 	father=80003447
@@ -5436,7 +5434,7 @@
 	1134.1.1={death=yes}
 }
 
-80003479={ 
+80003479={
 	name="Frederick" #7
  	dynasty=2335099 #Oldenburg
 	father=8000359
@@ -5448,7 +5446,7 @@
 	1863.1.1={death=yes}
 }
 
-80003480={ 
+80003480={
 	name="John" #Duke of Slesvig
  	dynasty=2335099 #Oldenburg
 	father=8000348
@@ -5460,7 +5458,7 @@
 	1622.1.1={death=yes}
 }
 
-80003481={ 
+80003481={
 	name="Alexander" #Duke of Slesvig
  	dynasty=2335099 #Oldenburg
 	father=80003480
@@ -5472,7 +5470,7 @@
 	1627.1.1={death=yes}
 }
 
-80003482={ 
+80003482={
 	name="August Philipp" #Duke of Slesvig
  	dynasty=2335099 #Oldenburg
 	father=80003481
@@ -5484,7 +5482,7 @@
 	1675.1.1={death=yes}
 }
 
-80003483={ 
+80003483={
 	name="Frederick Louis" #Duke of Slesvig
  	dynasty=2335099 #Oldenburg
 	father=80003482
@@ -5496,7 +5494,7 @@
 	1728.1.1={death=yes}
 }
 
-80003484={ 
+80003484={
 	name="Peter August" #Duke of Slesvig
  	dynasty=2335099 #Oldenburg
 	father=80003483
@@ -5508,7 +5506,7 @@
 	1775.1.1={death=yes}
 }
 
-80003485={ 
+80003485={
 	name="Karl Anton August" #Duke of Slesvig
  	dynasty=2335099 #Oldenburg
 	father=80003484
@@ -5520,7 +5518,7 @@
 	1759.1.1={death=yes}
 }
 
-80003486={ 
+80003486={
 	name="Frederick Charles Louis" #Duke of Slesvig
  	dynasty=2335099 #Oldenburg
 	father=80003485
@@ -5532,7 +5530,7 @@
 	1816.1.1={death=yes}
 }
 
-80003487={ 
+80003487={
 	name="Frederick William" #Duke of Slesvig
  	dynasty=2335099 #Oldenburg
 	father=80003486
@@ -5544,7 +5542,7 @@
 	1831.1.1={death=yes}
 }
 
-80003488={ 
+80003488={
 	name="Kristian" #9
  	dynasty=2335099 #Oldenburg
 	father=80003487
@@ -5556,7 +5554,7 @@
 	1906.1.1={death=yes}
 }
 
-80003489={ 
+80003489={
 	name="Frederick" #8
  	dynasty=2335099 #Oldenburg
 	father=80003488
@@ -5568,7 +5566,7 @@
 	1912.1.1={death=yes}
 }
 
-80003490={ 
+80003490={
 	name="Kristian" #10
  	dynasty=2335099 #Oldenburg
 	father=80003489
@@ -5580,7 +5578,7 @@
 	1947.1.1={death=yes}
 }
 
-80003491={ 
+80003491={
 	name="Frederick" #9
  	dynasty=2335099 #Oldenburg
 	father=80003490
@@ -5592,7 +5590,7 @@
 	1972.1.1={death=yes}
 }
 
-80003492={ 
+80003492={
 	name="Margaret" #2
 	female=yes
  	dynasty=2335099 #Oldenburg
@@ -5605,7 +5603,7 @@
 	2100.1.1={death=yes}
 }
 
-80003500={ 
+80003500={
 	name="Rosemarie" #1st Lucia ruler
 	female=yes
  	dynasty=0
@@ -5619,12 +5617,12 @@
 	trait=skilled_tactician
 	trait=feeble
 	trait=shrewd
-	disallow_random_traits = yes
+	disallow_random_traits=yes
 	2250.1.1={birth=yes}
 	2297.1.1={death=yes}
 }
 
-80003501={ 
+80003501={
 	name="Sofie" #2nd Lucia ruler
 	female=yes 
  	dynasty=0
@@ -5634,7 +5632,7 @@
 	2315.1.1={death=yes}
 }
 
-80003502={ 
+80003502={
 	name="Sunniva" #3rd Lucia ruler
 	female=yes 
  	dynasty=0
@@ -5644,7 +5642,7 @@
 	2323.1.1={death=yes}
 }
 
-80003503={ 
+80003503={
 	name="Magnhild" #4th Lucia ruler
 	female=yes 
  	dynasty=0
@@ -5654,7 +5652,7 @@
 	2348.1.1={death=yes}
 }
 
-80003504={ 
+80003504={
 	name="Rosemarie" #5th Lucia ruler
 	female=yes 
  	dynasty=0
@@ -5664,7 +5662,7 @@
 	2361.1.1={death=yes}
 }
 
-80003505={ 
+80003505={
 	name="Katarina" #6th Lucia ruler
 	female=yes 
  	dynasty=0
@@ -5674,7 +5672,7 @@
 	2364.1.1={death=yes}
 }
 
-80003506={ 
+80003506={
 	name="Valborg" #7th Lucia ruler
 	female=yes 
  	dynasty=0
@@ -5684,7 +5682,7 @@
 	2383.1.1={death=yes}
 }
 
-80003507={ 
+80003507={
 	name="Rosemarie" #8th Lucia ruler
 	female=yes 
  	dynasty=0
@@ -5694,7 +5692,7 @@
 	2397.1.1={death=yes}
 }
 
-80003508={ 
+80003508={
 	name="Maria" #9th Lucia ruler
 	female=yes 
  	dynasty=0
@@ -5704,7 +5702,7 @@
 	2399.1.1={death=yes}
 }
 
-80003509={ 
+80003509={
 	name="Sofie" #10th Lucia ruler
 	female=yes 
  	dynasty=0
@@ -5714,7 +5712,7 @@
 	2406.1.1={death=yes}
 }
 
-80003510={ 
+80003510={
 	name="Ragnhild" #11th Lucia ruler
 	female=yes 
  	dynasty=0
@@ -5724,7 +5722,7 @@
 	2434.1.1={death=yes}
 }
 
-80003511={ 
+80003511={
 	name="Katarina" #12th Lucia ruler
 	female=yes 
  	dynasty=0
@@ -5734,7 +5732,7 @@
 	2439.1.1={death=yes}
 }
 
-80003512={ 
+80003512={
 	name="Rosemarie" #13th Lucia ruler
 	female=yes 
  	dynasty=0
@@ -5744,7 +5742,7 @@
 	2444.1.1={death=yes}
 }
 
-80003513={ 
+80003513={
 	name="Lucia" #14th Lucia ruler
 	female=yes 
  	dynasty=0
@@ -5758,7 +5756,7 @@
 	}
 }
 
-80003514={ 
+80003514={
 	name="Reorus" #15th Lucia ruler
  	dynasty=0
 	culture=ostlending 
@@ -5767,11 +5765,11 @@
 	trait=authoritative
 	trait=ambitious
 	2433.1.1={birth=yes}
-	2456.1.1={give_nickname = nick_the_bloody}
+	2456.1.1={give_nickname=nick_the_bloody}
 	2470.1.1={death=yes}
 }
 
-80003515={ 
+80003515={
 	name="Valborg" #16th Lucia ruler
 	female=yes 
  	dynasty=0
@@ -5781,7 +5779,7 @@
 	2473.1.1={death=yes}
 }
 
-80003516={ 
+80003516={
 	name="Rosemarie" #17th Lucia ruler
 	female=yes 
  	dynasty=0
@@ -5791,7 +5789,7 @@
 	2478.1.1={death=yes}
 }
 
-80003517={ 
+80003517={
 	name="Lucia" #18th Lucia ruler
 	female=yes 
  	dynasty=0
@@ -5801,7 +5799,7 @@
 	2494.1.1={death=yes}
 }
 
-80003518={ 
+80003518={
 	name="Katarina" #19th Lucia ruler
 	female=yes 
  	dynasty=0
@@ -5811,7 +5809,7 @@
 	2500.1.1={death=yes}
 }
 
-80003519={ 
+80003519={
 	name="Solveig" #20th Lucia ruler
 	female=yes 
  	dynasty=0
@@ -5821,7 +5819,7 @@
 	2519.1.1={death=yes}
 }
 
-80003520={ 
+80003520={
 	name="Sofie" #21st Lucia ruler
 	female=yes 
  	dynasty=0
@@ -5831,7 +5829,7 @@
 	2526.1.1={death=yes}
 }
 
-80003521={ 
+80003521={
 	name="Helena" #22nd Lucia ruler
 	female=yes 
  	dynasty=0
@@ -5841,7 +5839,7 @@
 	2541.1.1={death=yes}
 }
 
-80003522={ 
+80003522={
 	name="Rosemarie" #23rd Lucia ruler
 	female=yes 
  	dynasty=0
@@ -5851,7 +5849,7 @@
 	2556.1.1={death=yes}
 }
 
-80003523={ 
+80003523={
 	name="Ingrid" #24th Lucia ruler
 	female=yes 
  	dynasty=0
@@ -5861,7 +5859,7 @@
 	2571.1.1={death=yes}
 }
 
-80003524={ 
+80003524={
 	name="Frida" #25th Lucia ruler
 	female=yes 
  	dynasty=0
@@ -5871,7 +5869,7 @@
 	2585.1.1={death=yes}
 }
 
-80003525={ 
+80003525={
 	name="Rosemarie" #26th Lucia ruler
 	female=yes 
  	dynasty=0
@@ -5881,7 +5879,7 @@
 	2601.1.1={death=yes}
 }
 
-80003526={ 
+80003526={
 	name="Christina" #28th Lucia ruler
 	female=yes 
  	dynasty=0
@@ -5891,7 +5889,7 @@
 	2624.1.1={death=yes}
 }
 
-80003527={ 
+80003527={
 	name="Sofie" #29th Lucia ruler
 	female=yes 
  	dynasty=0
@@ -5901,7 +5899,7 @@
 	2640.1.1={death=yes}
 }
 
-80003528={ 
+80003528={
 	name="Lucia" #30th Lucia ruler
 	female=yes 
  	dynasty=0
@@ -5911,7 +5909,7 @@
 	2653.1.1={death=yes}
 }
 
-80003529={ 
+80003529={
 	name="Maria" #31st Lucia ruler
 	female=yes 
  	dynasty=0
@@ -5922,11 +5920,11 @@
 	trait=kind 
 	trait=scarred
 	2599.1.1={birth=yes}
-	2650.1.1={ give_nickname = nick_the_mad}
+	2650.1.1={give_nickname=nick_the_mad}
 	2670.1.1={death=yes}
 }
 
-80003530={ 
+80003530={
 	name="Folke" #Duke of Finland
  	dynasty=2220347 #Stenhammar
 	culture=fennoswede
@@ -5937,16 +5935,16 @@
 	trait=is_fat 
 	trait=ambitious 
 	2612.1.1={birth=yes}
-	2650.1.1={give_nickname = nick_the_greater}
+	2650.1.1={give_nickname=nick_the_greater}
 	2660.1.1={
-		effect = {
-			add_rival = 80003531
+		effect={
+			add_rival=80003531
 		}
 	}
 	2670.1.1={death=yes}
 }
 
-80003531={ 
+80003531={
 	name="Eero" #King of Finland
  	dynasty=2220813
 	culture=finnish
@@ -5960,7 +5958,7 @@
 	2670.1.1={death=yes}
 }
 
-80003532={ 
+80003532={
 	name="Samuli"
  	dynasty=2220815
 	culture=finnish
@@ -5974,7 +5972,7 @@
 	2670.1.1={death=yes}
 }
 
-80003533={ 
+80003533={
 	name="Turo"
  	dynasty=2220810
 	culture=finnish
@@ -5988,7 +5986,7 @@
 	2670.1.1={death=yes}
 }
 
-80003534={ 
+80003534={
 	name="Ahkejuoksa"
  	dynasty=2220741
 	culture=sami 
@@ -6002,7 +6000,7 @@
 	2670.1.1={death=yes}
 }
 
-80003535={ 
+80003535={
 	name="Siitäri"
  	dynasty=2220968
 	culture=karelian 
@@ -6016,7 +6014,7 @@
 	2670.1.1={death=yes}
 }
 
-80003536={ 
+80003536={
 	name="Urho"
  	dynasty=2220817
 	culture=finnish 
@@ -6030,7 +6028,7 @@
 	2670.1.1={death=yes}
 }
 
-80003537={ 
+80003537={
 	name="Pekka"
  	dynasty=2220818
 	culture=finnish 
@@ -6044,7 +6042,7 @@
 	2670.1.1={death=yes}
 }
 
-80003538={ 
+80003538={
 	name="Aleksanteri"
  	dynasty=2220818
 	culture=karelian 
@@ -6058,7 +6056,7 @@
 	2670.1.1={death=yes}
 }
 
-80003539={ 
+80003539={
 	name="Kaarle"
  	dynasty=2220819
 	culture=finnish 
@@ -6132,7 +6130,7 @@
 	culture=tronder
 	religion=folketro
 	2503.1.1={birth=yes}
-	2540.1.1={give_nickname = nick_the_monster}
+	2540.1.1={give_nickname=nick_the_monster}
 	2544.1.1={death=yes}
 }
 
@@ -6163,7 +6161,7 @@
 	culture=tronder
 	religion=folketro
 	2415.1.1={birth=yes}
-	2455.1.1={give_nickname = nick_the_vengeful}
+	2455.1.1={give_nickname=nick_the_vengeful}
 	2465.1.1={death=yes}
 }
 
@@ -6208,9 +6206,9 @@
 	trait=shy
 	2645.1.1={
 		birth=yes
-		culture = vestlending
+		culture=vestlending
 	}
-	2663.1.1={add_spouse = 8000103}
+	2663.1.1={add_spouse=8000103}
 	2670.1.1={death=yes}
 }
 
@@ -6226,7 +6224,7 @@
 	trait=willful
 	2663.1.1={
 		birth=yes
-		culture = vestlending
+		culture=vestlending
 	}
 	2670.1.1={death=yes}
 }
@@ -6243,7 +6241,7 @@
 	trait=conscientious
 	2663.1.1={
 		birth=yes
-		culture = vestlending
+		culture=vestlending
 	}
 	2670.1.1={death=yes}
 }
@@ -6253,15 +6251,15 @@
 	culture=ostlending
 	father=8000225
 	religion=folketro
-	dynasty = 2335104
+	dynasty=2335104
 	trait=uncouth
 	trait=strong 
 	trait=legit_bastard
 	trait=lustful 
 	trait=wroth
 	trait=misguided_warrior
-	disallow_random_traits = yes 
-	employer = 8000073
+	disallow_random_traits=yes 
+	employer=8000073
 	2650.1.1={birth=yes}
 	2670.1.1={death=yes}
 }
@@ -6272,8 +6270,8 @@
 	father=8000225
 	trait=legit_bastard
 	religion=folketro
-	dynasty = 2335104
-	employer = 8000073
+	dynasty=2335104
+	employer=8000073
 	2661.1.1={birth=yes}
 	2670.1.1={death=yes}
 }
@@ -6289,7 +6287,7 @@
 	trait=patient 
 	trait=chaste 
 	religion=ruhi
-	employer = 8000073
+	employer=8000073
 	2639.1.1={birth=yes}
 	2670.1.1={death=yes}
 }
@@ -6299,7 +6297,7 @@
 	father=80003569
 	culture=ostlending
 	religion=folketro
-	dynasty = 2335104
+	dynasty=2335104
 	2600.1.1={birth=yes}
 	2645.1.1={death=yes}
 }
@@ -6309,7 +6307,7 @@
 	father=80003570
 	culture=ostlending
 	religion=folketro
-	dynasty = 2335104
+	dynasty=2335104
 	2577.1.1={birth=yes}
 	2614.1.1={death=yes}
 }
@@ -6323,7 +6321,7 @@
 	trait=fair 
 	trait=ambitious
 	trait=gregarious
-	dynasty = 2335104
+	dynasty=2335104
 	2503.1.1={birth=yes}
 	2598.1.1={death=yes}
 }
@@ -6333,7 +6331,7 @@
 	culture=ostlending
 	father=80003569
 	religion=folketro
-	dynasty = 2335104
+	dynasty=2335104
 	2597.1.1={birth=yes}
 	2622.1.1={death=yes}
 }
@@ -6343,7 +6341,7 @@
 	culture=ostlending
 	father=80003571
 	religion=folketro
-	dynasty = 2335104
+	dynasty=2335104
 	2620.1.1={birth=yes}
 	2670.1.1={death=yes}
 }
@@ -6353,7 +6351,7 @@
 	culture=ostlending
 	father=80003572
 	religion=folketro
-	dynasty = 2335104
+	dynasty=2335104
 	2646.1.1={birth=yes}
 	2670.1.1={death=yes}
 }
@@ -6364,7 +6362,7 @@
 	culture=ostlending
 	father=80003572
 	religion=folketro
-	dynasty = 2335104
+	dynasty=2335104
 	2643.1.1={birth=yes}
 	2670.1.1={death=yes}
 }
@@ -6374,7 +6372,7 @@
 	father=80003570
 	culture=ostlending
 	religion=folketro
-	dynasty = 2335104
+	dynasty=2335104
 	2545.1.1={birth=yes}
 	2594.1.1={death=yes}
 }
@@ -6384,7 +6382,7 @@
 	father=80003576
 	culture=ostlending
 	religion=folketro
-	dynasty = 2335104
+	dynasty=2335104
 	2570.1.1={birth=yes}
 	2630.1.1={death=yes}
 }
@@ -6394,7 +6392,7 @@
 	father=80003577
 	culture=ostlending
 	religion=folketro
-	dynasty = 2335104
+	dynasty=2335104
 	2598.1.1={birth=yes}
 	2667.1.1={death=yes}
 }
@@ -6404,7 +6402,7 @@
 	father=80003578
 	culture=ostlending
 	religion=folketro
-	dynasty = 2335104
+	dynasty=2335104
 	2630.1.1={birth=yes}
 	2667.1.1={death=yes}
 }
@@ -6414,7 +6412,7 @@
 	father=80003578
 	culture=ostlending
 	religion=folketro
-	dynasty = 2335104
+	dynasty=2335104
 	2636.1.1={birth=yes}
 	2667.1.1={death=yes}
 }
@@ -6425,7 +6423,7 @@
 	father=80003578
 	culture=ostlending
 	religion=folketro
-	dynasty = 2335104
+	dynasty=2335104
 	2639.1.1={birth=yes}
 	2667.1.1={death=yes}
 }
@@ -6435,7 +6433,7 @@
 	father=80003576
 	culture=ostlending
 	religion=folketro
-	dynasty = 2335104
+	dynasty=2335104
 	2576.1.1={birth=yes}
 	2623.1.1={death=yes}
 }
@@ -6445,7 +6443,7 @@
 	father=80003582
 	culture=ostlending
 	religion=folketro
-	dynasty = 2335104
+	dynasty=2335104
 	2605.1.1={birth=yes}
 	2657.1.1={death=yes}
 }
@@ -6455,7 +6453,7 @@
 	father=80003583
 	culture=ostlending
 	religion=folketro
-	dynasty = 2335104
+	dynasty=2335104
 	2633.1.1={birth=yes}
 	2670.1.1={death=yes}
 }
@@ -6465,7 +6463,7 @@
 	father=80003583
 	culture=ostlending
 	religion=folketro
-	dynasty = 2335104
+	dynasty=2335104
 	2637.1.1={birth=yes}
 	2670.1.1={death=yes}
 }
@@ -6476,7 +6474,7 @@
 	father=80003583
 	culture=ostlending
 	religion=folketro
-	dynasty = 2335104
+	dynasty=2335104
 	2638.1.1={birth=yes}
 	2670.1.1={death=yes}
 }
@@ -6487,7 +6485,7 @@
 	father=80003583
 	culture=ostlending
 	religion=folketro
-	dynasty = 2335104
+	dynasty=2335104
 	2640.1.1={birth=yes}
 	2670.1.1={death=yes}
 }
@@ -6498,7 +6496,7 @@
 	father=80003583
 	culture=ostlending
 	religion=folketro
-	dynasty = 2335104
+	dynasty=2335104
 	2643.1.1={birth=yes}
 	2670.1.1={death=yes}
 }
@@ -6508,7 +6506,7 @@
 	father=80003583
 	culture=ostlending
 	religion=folketro
-	dynasty = 2335104
+	dynasty=2335104
 	trait=elusive_shadow
 	trait=lustful
 	trait=deceitful
@@ -6531,7 +6529,7 @@
 	trait=hunter
 	trait=shy 
 	religion=ruhi
-	employer = 8000073
+	employer=8000073
 	2642.1.1={birth=yes}
 	2670.1.1={death=yes}
 }
@@ -6540,7 +6538,7 @@
 	name="Torgrim"
 	culture=ostlending
 	religion=ruhi
-	employer = 8000073
+	employer=8000073
 	2606.1.1={birth=yes}
 	2670.1.1={death=yes}
 }
@@ -6549,9 +6547,9 @@
 	name="Pavel"
 	culture=ostlending
 	religion=mariavite
-	employer = 8000073
+	employer=8000073
 	2626.1.1={birth=yes}
-	2660.1.1={add_spouse = 80003594}
+	2660.1.1={add_spouse=80003594}
 	2670.1.1={death=yes}
 }
 
@@ -6560,9 +6558,9 @@
 	female=yes 
 	culture=ostlending
 	religion=mariavite
-	employer = 8000073
+	employer=8000073
 	2633.1.1={birth=yes}
-	2660.1.1={add_spouse = 80003593}
+	2660.1.1={add_spouse=80003593}
 	2670.1.1={death=yes}
 }
 
@@ -6573,7 +6571,7 @@
 	mother=80003594
 	culture=ostlending
 	religion=mariavite
-	employer = 8000073
+	employer=8000073
 	2661.1.1={birth=yes}
 	2670.1.1={death=yes}
 }
@@ -6583,7 +6581,7 @@
 	female=yes 
 	culture=finnish
 	religion=lutheran
-	employer = 8000111
+	employer=8000111
 	2624.1.1={birth=yes}
 	2670.1.1={death=yes}
 }
@@ -6593,7 +6591,7 @@
 	mother=80003596
 	culture=finnish
 	religion=lutheran
-	employer = 8000111
+	employer=8000111
 	2646.1.1={birth=yes}
 	2670.1.1={death=yes}
 }
@@ -6604,7 +6602,7 @@
 	female=yes 
 	culture=finnish
 	religion=lutheran
-	employer = 8000111
+	employer=8000111
 	2648.1.1={birth=yes}
 	2670.1.1={death=yes}
 }
@@ -6614,7 +6612,7 @@
 	mother=80003596
 	culture=finnish
 	religion=lutheran
-	employer = 8000111
+	employer=8000111
 	2650.1.1={birth=yes}
 	2670.1.1={death=yes}
 }
@@ -6623,7 +6621,7 @@
 	name="Faravid"
 	culture=finnish
 	religion=lutheran
-	employer = 8000111
+	employer=8000111
 	2644.1.1={birth=yes}
 	2670.1.1={death=yes}
 }
@@ -6632,7 +6630,7 @@
 	name="Torstein"
 	culture=finnish
 	religion=lutheran
-	employer = 8000111
+	employer=8000111
 	2634.1.1={birth=yes}
 	2670.1.1={death=yes}
 }
@@ -6651,12 +6649,12 @@
 	trait=hiddenfolk_cult
 	trait=legendary
 	occluded=yes 
-	disallow_random_traits = yes 
+	disallow_random_traits=yes 
 	2000.1.1={birth=yes}
 	2100.1.1={
-		create_bloodline = {
-			type = snow_queen
-			has_dlc = "Holy Fury"
+		create_bloodline={
+			type=snow_queen
+			has_dlc="Holy Fury"
 		}
 	}
 	2150.1.1={death=yes}
@@ -6666,9 +6664,9 @@
 	name="Ludvig Valentin"
 	culture=romani
 	religion=folketro
-	employer = 8000073
+	employer=8000073
 	2630.1.1={birth=yes}
-	2660.1.1={add_spouse = 80003602}
+	2660.1.1={add_spouse=80003602}
 	2670.1.1={death=yes}
 }
 
@@ -6677,9 +6675,9 @@
 	female=yes 
 	culture=romani
 	religion=folketro
-	employer = 8000073
+	employer=8000073
 	2630.1.1={birth=yes}
-	2660.1.1={add_spouse = 80003591}
+	2660.1.1={add_spouse=80003591}
 	2670.1.1={death=yes}
 }
 
@@ -6772,7 +6770,7 @@
 	religion=folketro
 	trait=bastard
 	2150.1.1={birth=yes}
-	2200.1.1={give_nickname = nick_the_lucky}
+	2200.1.1={give_nickname=nick_the_lucky}
 	2220.1.1={death=yes}
 }
 
@@ -6905,12 +6903,12 @@
 	2590.1.1={birth=yes}
 	2634.1.1={death=yes}
 }
-80003625={ 
+80003625={
 name="Erik" # The uncle of the current king of Denmark, has a strong claim that can be inherited
 dynasty=2223001 #Sønderborg
 culture=danish
 religion=lutheran
-father = 8000008
+father=8000008
 martial=10
 intrigue=10
 trait=charismatic_negotiator
@@ -6922,11 +6920,11 @@ trait=fair
 trait=greedy
 2610.1.1={birth=yes}
 2636.1.1={add_spouse=80003626}
-2640.1.1={add_claim = k_denmark}
+2640.1.1={add_claim=k_denmark}
 2670.1.1={death=yes}
 }
 
-80003626={ 
+80003626={
 name="Margaret"
 culture=danish
 religion=lutheran
@@ -6946,7 +6944,7 @@ martial=8
 trait=fair
 trait=rowdy
 2656.3.6={birth=yes}
-2658.1.1={add_claim = k_denmark}
+2658.1.1={add_claim=k_denmark}
 }
 
 

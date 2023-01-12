@@ -54,7 +54,7 @@
 	occluded=yes
 	1360.1.1={birth=yes}
 	1403.3.8={death={
-			death_reason = death_dungeon
+			death_reason=death_dungeon
 		}
 	}
 }
@@ -379,7 +379,7 @@
 	occluded=yes
 	1830.2.8={birth=yes}
 	1876.6.4={death={
-			death_reason = death_suicide
+			death_reason=death_suicide
 		}
 	}
 }
@@ -635,7 +635,7 @@
 
 ######2666 Characters######
 
-2202056={#Ottoman Claimant
+2202056={ #Ottoman Claimant
 	name="Süleyman"
 	dynasty=2057009 #Osmanoghlu
 	culture=rumelian
@@ -656,9 +656,9 @@
 		effect={add_lover=2202057}}
 	2663.01.01={capital=c_edirne}
 }
-2202057={#Süleyman Wife
+2202057={ #Süleyman Wife
 	name="Meryem"
-	dynasty = 2057006 #Hurrem
+	dynasty=2057006 #Hurrem
 	female=yes
 	culture=ukrainian
 	religion=naqshbandi
@@ -672,24 +672,24 @@
 	trait=grey_eminence
 	2643.11.6={birth=yes}
 }
-2202069={#Eldest Son of Süleyman
+2202069={ #Eldest Son of Süleyman
 	name="Mustafa"
 	dynasty=2057009 #Osmanoghlu
 	culture=rumelian
 	religion=naqshbandi
 	father=2202056
-	2660.11.6={ birth=yes }
+	2660.11.6={birth=yes}
 }
-2202106={#Second Son of Süleyman
+2202106={ #Second Son of Süleyman
 	name="Mehmet"
 	dynasty=2057009 #Osmanoghlu
 	culture=rumelian
 	religion=naqshbandi
 	father=2202056
 	mother=2202057
-	2662.11.6={ birth=yes }
+	2662.11.6={birth=yes}
 }
-2202107={#Daughter of Süleyman
+2202107={ #Daughter of Süleyman
 	name="Mihrimah"
 	dynasty=2057009 #Osmanoghlu
 	culture=rumelian
@@ -697,18 +697,18 @@
 	female=yes
 	father=2202056
 	mother=2202057
-	2663.11.6={ birth=yes }
+	2663.11.6={birth=yes}
 }
-2202108={#Third Son of Süleyman
+2202108={ #Third Son of Süleyman
 	name="Selim"
 	dynasty=2057009 #Osmanoghlu
 	culture=rumelian
 	religion=naqshbandi
 	father=2202056
 	mother=2202057
-	2665.11.6={ birth=yes }
+	2665.11.6={birth=yes}
 }
-2202058={#Family who lost land to the Post-Event Osmanoghlu
+2202058={ #Family who lost land to the Post-Event Osmanoghlu
 	name="Barish"
 	dynasty=2055005 #Kemal
 	culture=west_anatolian
@@ -723,12 +723,12 @@
 	father=2202049
 	2600.6.9={birth=yes}
 	2660.10.10={
-		effect = {
-			add_claim = d_marmara
+		effect={
+			add_claim=d_marmara
 		}
 	}
 }
-2202059={#Baris's Son
+2202059={ #Baris's Son
 	name="Mahmud"
 	dynasty=2055005 #Kemal
 	culture=west_anatolian
@@ -742,7 +742,7 @@
 	trait=tough_soldier
 	2647.6.9={birth=yes}
 }
-2202060={#Matrilineal Connected to the Post-Event Osmanoghlu
+2202060={ #Matrilineal Connected to the Post-Event Osmanoghlu
 	name="Musa"
 	dynasty=7100163 #Zenci
 	father=2202055
@@ -755,10 +755,10 @@
 	trait=mevlevi
 	2643.11.6={
 		birth=yes
-		culture = toros_mountain
+		culture=toros_mountain
 	}
 }
-2202061={#Konya Vassal
+2202061={ #Konya Vassal
 	name="Shevket"
 	dynasty=2055000 #Özdemir
 	culture=west_anatolian
@@ -769,10 +769,10 @@
 	trait=just
 	trait=proud
 	trait=brilliant_strategist
-	2631.5.18={ birth=yes }
+	2631.5.18={birth=yes}
 }
 #Temporary Izmir Patricians#
-2202063={#Izmir Patrician
+2202063={ #Izmir Patrician
 	name="Emir"
 	dynasty=2055001 #Shahenk
 	father=2202114
@@ -784,12 +784,12 @@
 	trait=kind
 	trait=familyperson
 	trait=wroth
-	2628.7.25={ birth=yes }
+	2628.7.25={birth=yes}
 	2655.7.2={effect={
 		add_rival=2202291
 		add_friend=2202068}}
 }
-2202064={#Izmir Patrician
+2202064={ #Izmir Patrician
 	name="Ibrahim"
 	dynasty=2055002 #Ulukaya
 	culture=west_anatolian
@@ -802,7 +802,7 @@
 	trait=charitable
 	trait=gregarious
 	father=2202249
-	2617.10.26={ birth=yes }
+	2617.10.26={birth=yes}
 }
 2202065={ #Izmir Patrician
 	name="Hüseyin"
@@ -816,7 +816,7 @@
 	trait=bisexual
 	trait=proud
 	stewardship=9
-	2628.11.6={ birth=yes }
+	2628.11.6={birth=yes}
 }
 2202066={ #Izmir Jewish Patrician
 	name="Shlomo"
@@ -843,7 +843,7 @@
 	religion=orthodox
 	trait=strong
 	trait=aggressive_leader
-	2626.3.16={ birth=yes }
+	2626.3.16={birth=yes}
 }
 #####################################
 2202068={ #Aydin Strongman
@@ -858,9 +858,9 @@
 	trait=honorable
 	trait=ismailagha
 	properties=m00eb
-	2615.10.31={ birth=yes }
+	2615.10.31={birth=yes}
 }
-2202070={#Corum Strongwoman
+2202070={ #Corum Strongwoman
 	name="Ceyda"
 	female=yes
 	dynasty=2052001 #Demir
@@ -877,7 +877,7 @@
 	2626.12.20={birth=yes}
 	2660.2.2={capital=c_corum}
 }
-2202071={#Ankara Strongman
+2202071={ #Ankara Strongman
 	name="Atilla"
 	dynasty=2052002 #Günesh
 	culture=central_anatolian
@@ -897,7 +897,7 @@
 	2583.8.10={birth=yes}
 	2666.1.1={effect={add_rival=2202216}}
 }
-2202072={#Ankara Vassal #owns kayseri nevshehir and nigde
+2202072={ #Ankara Vassal #owns kayseri nevshehir and nigde
 	name="Sinan"
 	dynasty=2052003 #Sabanci
 	culture=central_anatolian
@@ -907,12 +907,12 @@
 	trait=midas_touched
 	trait=greedy
 	trait=is_fat
-	2613.6.29={ birth=yes }
+	2613.6.29={birth=yes}
 	2661.2.20={
 		employer=2202071
 		effect={give_job_title=job_steward}}
 }
-2202073={#Pontic King (A Philsopher King of the Laz)
+2202073={ #Pontic King (A Philsopher King of the Laz)
 	name="Serdar"
 	dynasty=1282000 #Topaloghlu
 	culture=laz
@@ -929,7 +929,7 @@
 	2600.11.23={birth=yes}
 	2660.2.2={capital=c_artvin}
 }
-2202074={#Samsun Vassal
+2202074={ #Samsun Vassal
 	name="Emre"
 	dynasty=2052004 #Baylan
 	culture=central_anatolian
@@ -942,7 +942,7 @@
 	trait=honorable
 	2643.4.22={birth=yes}
 }
-2202075={#Count of Ordu
+2202075={ #Count of Ordu
 	name="Bektash"
 	dynasty=2060205 #Köksal
 	culture=black_sea
@@ -954,14 +954,14 @@
 	trait=inspiring_leader
 	2620.2.10={birth=yes}
 }
-2202076={#Count of sushehri
+2202076={ #Count of sushehri
 	name="Gürbüz"
 	dynasty=2060001 #Üçok
 	culture=black_sea
 	religion=ruhi
-	2635.6.1={ birth=yes }
+	2635.6.1={birth=yes}
 }
-2202077={#King of Antakya (and Arab descendant)
+2202077={ #King of Antakya (and Arab descendant)
 	name="Abdullah"
 	dynasty=2065000 #Arap
 	culture=suriyi
@@ -974,7 +974,7 @@
 	trait=midas_touched
 	trait=inspiring_leader
 	trait=charitable
-	2638.1.5={ birth=yes culture=toros_mountain }
+	2638.1.5={birth=yes culture=toros_mountain}
 	2662.1.1={
 		prestige=500
 		effect={
@@ -1001,22 +1001,22 @@
 		}
 	}
 }
-2202078={#Arab Father
+2202078={ #Arab Father
 	name="Adnan"
 	dynasty=2065000 #Arap
 	culture=suriyi
 	religion=alawi
-	2610.11.6={ birth=yes }
-	2636.11.6={ add_spouse = 2202079 }
+	2610.11.6={birth=yes}
+	2636.11.6={add_spouse=2202079}
 }
-2202079={#Turkish Mother
+2202079={ #Turkish Mother
 	name="Aydan"
 	female=yes
 	culture=toros_mountain
 	religion=naqshbandi
-	2610.11.6={ birth=yes }
+	2610.11.6={birth=yes}
 }
-2202080={#Turkish Vassal to Antakya King
+2202080={ #Turkish Vassal to Antakya King
 	name="Miran"
 	dynasty=2052005 #Karaca
 	culture=toros_mountain
@@ -1033,7 +1033,7 @@
 	2594.5.5={birth=yes}
 	2634.1.1={add_spouse=3601540}
 }
-2202081={#Kurdish Vassal to Antakya King
+2202081={ #Kurdish Vassal to Antakya King
 	name="Elemût"
 	dynasty=2052006 #Tanriverdi
 	culture=kurdish
@@ -1049,7 +1049,7 @@
 	father=2202272
 	2625.5.23={birth=yes}
 }
-2202082={#Kurdish Tribute to Antakya
+2202082={ #Kurdish Tribute to Antakya
 	name="Hawar"
 	dynasty=2066000 #Kezêban
 	culture=kurdish
@@ -1071,7 +1071,7 @@
 	female=yes
 	culture=kurdish
 	religion=yazidi
-	2610.11.6={ birth=yes }
+	2610.11.6={birth=yes}
 }
 2202084={
 	name="Sheyhmus"
@@ -1090,10 +1090,10 @@
 	father=2202084
 	mother=2202083
 	religion=sunni
-	2638.11.6={ birth=yes }
+	2638.11.6={birth=yes}
 	2657.1.1={add_spouse=2202081}
 }
-2202086={#Kurdish Duke of Van
+2202086={ #Kurdish Duke of Van
 	name="Ferîd"
 	dynasty=2066001 #Seyvan
 	culture=kurdish
@@ -1138,9 +1138,9 @@
 	trait=pious
 	trait=content
 	trait=scarred
-	2640.7.4={ birth=yes }
+	2640.7.4={birth=yes}
 }
-2202089={#duke of Malatya
+2202089={ #duke of Malatya
 	name="Hüseyin"
 	dynasty=2052007 #Yilmaz
 	culture=toros_mountain
@@ -1152,9 +1152,9 @@
 	trait=groomed
 	trait=diligent
 	trait=stubborn
-	2583.3.20={ birth=yes }
+	2583.3.20={birth=yes}
 }
-2202090={#Count of Erzincan
+2202090={ #Count of Erzincan
 	name="Vereng"
 	dynasty=2060003 #Tercanij
 	culture=zaza
@@ -1167,7 +1167,7 @@
 	trait=content
 	trait=hajjaj
 	father=2202257
-	2615.10.27={ birth=yes }
+	2615.10.27={birth=yes}
 }
 2202091={ #Most Recent Shaykh al-Islam
 	name="Fatih"
@@ -1209,7 +1209,7 @@
 	trait=brave
 	2649.6.24={birth=yes}
 }
-2202094={ 
+2202094={
 	name="Islam"
 	culture=rumelian
 	religion=ruhi
@@ -1380,7 +1380,7 @@
 	dynasty=2057211 #Mehmetoghlu
 	2617.9.23={birth=yes}
 }
-2202112 = { 
+2202112={
 	name="Eyûb" 
 	dynasty=2066060 #Guven
 	culture=kurdish
@@ -1397,7 +1397,7 @@
 	learning=6
 	2609.5.6={birth=yes}
 }
-2202113 = { 
+2202113={
 	name="Leyla"
 	female=yes
 	dynasty=2066060 #Guven
@@ -1609,9 +1609,9 @@
 	culture=kypriot
 	religion=naqshbandi
 	2102.5.31={
-		create_bloodline = {
-			type = demetrios_ghazi_bloodline
-			has_dlc = "Holy Fury"
+		create_bloodline={
+			type=demetrios_ghazi_bloodline
+			has_dlc="Holy Fury"
 		}
 	}
 	trait=ismailagha
@@ -2347,9 +2347,9 @@
 	trait=administrator
 	2063.5.21={birth=yes}
 	2102.6.21={
-		create_bloodline = {
-			type = sarikaya_bloodline
-			has_dlc = "Holy Fury"
+		create_bloodline={
+			type=sarikaya_bloodline
+			has_dlc="Holy Fury"
 		}
 	}
 	2124.4.9={death=yes}
@@ -2654,7 +2654,8 @@
 	dynasty=2060000 #Sönmez
 	culture=black_sea
 	religion=alevi
-	2638.11.6={ birth=yes }
+	2638.11.6={birth=yes}
+	2700.1.1={death=yes}
 }
 2202216={
 	name="Mehmet"
@@ -2673,10 +2674,11 @@
 	2645.9.3={birth=yes}
 	2661.2.21={
 		employer=2202071
-		effect= { 
+		effect={
 			give_job_title=job_chancellor 
 		}
 	}
+	2700.1.1={death=yes}
 }
 2202217={
 	name="Hatice"
@@ -2687,6 +2689,7 @@
 	2645.4.8={birth=yes}
 	2664.1.1={add_spouse=2202216
 		effect={add_lover=2202216}}
+	2700.1.1={death=yes}
 }
 2202218={
 	name="Ipek"
@@ -2695,6 +2698,7 @@
 	religion=ruhi
 	2618.11.22={birth=yes}
 	2636.1.1={add_spouse=2202087}
+	2700.1.1={death=yes}
 }
 2202219={
 	name="Yitzhak"
@@ -2704,6 +2708,7 @@
 	father=2202220
 	2576.1.28={birth=yes}
 	2645.9.1={death=yes}
+	2700.1.1={death=yes}
 }
 2202220={
 	name="Yosef"
@@ -2740,6 +2745,7 @@
 	father=2202222
 	mother=2202252
 	2609.11.18={birth=yes}
+	2700.1.1={death=yes}
 }
 2202224={
 	name="Yosef"
@@ -2749,6 +2755,7 @@
 	father=2202219
 	mother=2202253
 	2607.11.4={birth=yes}
+	2700.1.1={death=yes}
 }
 2202225={
 	name="Abram"
@@ -2758,6 +2765,7 @@
 	father=2202224
 	mother=2202256
 	2634.7.3={birth=yes}
+	2700.1.1={death=yes}
 }
 2202226={
 	name="Yehuda"
@@ -2767,6 +2775,7 @@
 	father=2202219
 	mother=2202253
 	2609.3.27={birth=yes}
+	2700.1.1={death=yes}
 }
 2202227={
 	name="Yitzhak"
@@ -2779,6 +2788,7 @@
 	trait=quick
 	give_nickname=nick_the_young
 	2634.12.10={birth=yes}
+	2700.1.1={death=yes}
 }
 2202228={
 	name="Yosef"
@@ -2788,6 +2798,7 @@
 	father=2202066
 	mother=3600097
 	2636.1.8={birth=yes}
+	2700.1.1={death=yes}
 }
 2202229={
 	name="Chaya"
@@ -2798,6 +2809,7 @@
 	father=2202066
 	mother=2202254
 	2631.11.16={birth=yes}
+	2700.1.1={death=yes}
 }
 2202230={
 	name="Stella"
@@ -2808,6 +2820,7 @@
 	father=2202066
 	mother=3600097
 	2638.4.22={birth=yes}
+	2700.1.1={death=yes}
 }
 2202231={
 	name="Muna"
@@ -2818,6 +2831,7 @@
 	father=2202066
 	mother=3600097
 	2640.2.6={birth=yes}
+	2700.1.1={death=yes}
 }
 2202232={
 	name="Shlomo"
@@ -2827,6 +2841,7 @@
 	father=2202227
 	mother=2202255
 	2655.4.5={birth=yes}
+	2700.1.1={death=yes}
 }
 2202233={
 	name="Nisim"
@@ -2836,6 +2851,7 @@
 	father=2202227
 	mother=2202255
 	2654.2.13={birth=yes}
+	2700.1.1={death=yes}
 }
 2202234={
 	name="Seyfettin"
@@ -2857,18 +2873,19 @@
 	2641.4.2={birth=yes}
 	2661.2.21={
 		employer=2202071
-		effect= { 
+		effect={
 			give_job_title=job_marshal 
 		}
 	}
 	2666.2.21={
-		effect = {
-			add_claim = d_ankara
-			add_claim = d_kirikkale
+		effect={
+			add_claim=d_ankara
+			add_claim=d_kirikkale
 			add_friend=2202071
 		}
 		add_spouse=2202302
 	}
+	2700.1.1={death=yes}
 }
 2202235={
 	name="Hüma"
@@ -2877,6 +2894,7 @@
 	trait=sayyid
 	father=2202236
 	2618.8.10={birth=yes}
+	2700.1.1={death=yes}
 }
 2202236={
 	name="Ibrahim"
@@ -2894,6 +2912,7 @@
 	religion=alevi
 	2588.12.29={birth=yes}
 	2606.1.1={add_spouse=2202089}
+	2700.1.1={death=yes}
 }
 2202238={
 	name="Veli"
@@ -2903,6 +2922,7 @@
 	father=2202089
 	mother=2202237
 	2609.4.20={birth=yes}
+	2700.1.1={death=yes}
 }
 2202239={
 	name="Muhammet"
@@ -2915,6 +2935,7 @@
 	father=2202089
 	mother=2202237
 	2612.9.10={birth=yes}
+	2700.1.1={death=yes}
 }
 2202240={
 	name="Leyla"
@@ -2925,6 +2946,7 @@
 	father=2202089
 	mother=2202237
 	2616.5.10={birth=yes}
+	2700.1.1={death=yes}
 }
 2202241={
 	name="Ekrem"
@@ -2933,6 +2955,7 @@
 	religion=alevi
 	2613.2.6={birth=yes}
 	2633.1.1={add_matrilineal_spouse=2202240}
+	2700.1.1={death=yes}
 }
 2202242={
 	name="Cenan"
@@ -2945,6 +2968,7 @@
 	mother=2202240
 	father=2202241
 	2644.11.26={birth=yes}
+	2700.1.1={death=yes}
 }
 2202243={
 	name="Ali"
@@ -2956,6 +2980,7 @@
 	father=2202089
 	mother=2202237
 	2621.1.2={birth=yes}
+	2700.1.1={death=yes}
 }
 2202244={
 	name="Gabi"
@@ -2966,6 +2991,7 @@
 	father=1958333
 	2627.4.21={birth=yes}
 	2648.1.1={add_spouse=2202243}
+	2700.1.1={death=yes}
 }
 2202245={
 	name="Cenk"
@@ -2976,6 +3002,7 @@
 	father=2202243
 	mother=2202244
 	2660.10.26={birth=yes}
+	2700.1.1={death=yes}
 }
 2202246={
 	name="Emir"
@@ -2986,6 +3013,7 @@
 	mother=2202247
 	give_nickname=nick_alaton
 	2635.9.24={birth=yes}
+	2700.1.1={death=yes}
 }
 2202247={
 	name="Suzan"
@@ -2995,6 +3023,7 @@
 	female=yes
 	2612.3.29={birth=yes}
 	2633.1.1={add_spouse=2202223}
+	2700.1.1={death=yes}
 }
 2202248={
 	name="Shehrazat"
@@ -3013,6 +3042,7 @@
 	trait=erudite
 	trait=lustful
 	2628.9.3={birth=yes}
+	2700.1.1={death=yes}
 }
 2202249={
 	name="Alican"
@@ -3084,6 +3114,7 @@
 	religion=ruhi
 	2634.2.3={birth=yes}
 	2652.1.1={add_spouse=2202227}
+	2700.1.1={death=yes}
 }
 2202256={
 	name="Bellida"
@@ -3093,6 +3124,7 @@
 	religion=ivri
 	2615.11.30={birth=yes}
 	2632.1.1={add_spouse=2202224}
+	2700.1.1={death=yes}
 }
 2202257={
 	name="Elishan"
@@ -3111,6 +3143,7 @@
 	2624.8.8={birth=yes}
 	2647.1.1={add_matrilineal_spouse=2202248}
 	2660.1.1={effect={add_rival=2202248}}
+	2700.1.1={death=yes}
 }
 2202259={
 	name="Hüsrev"
@@ -3120,6 +3153,7 @@
 	father=2202258
 	mother=2202248
 	2648.12.10={birth=yes}
+	2700.1.1={death=yes}
 }
 2202260={
 	name="Turgay"
@@ -3132,6 +3166,7 @@
 	father=2202261
 	2649.6.1={birth=yes}
 	2660.1.1={effect={add_rival=2202259}}
+	2700.1.1={death=yes}
 }
 2202261={
 	name="Hikmet"
@@ -3141,6 +3176,7 @@
 	trait=fair
 	2631.11.8={birth=yes}
 	2649.9.8={death={death_reason=death_duel killer=2202258}}
+	2700.1.1={death=yes}
 }
 2202262={
 	name="Ferahengiz"
@@ -3151,6 +3187,7 @@
 	father=2202258
 	mother=2202248
 	2650.6.11={birth=yes}
+	2700.1.1={death=yes}
 }
 2202263={
 	name="Shemsedîn"
@@ -3200,6 +3237,7 @@
 	trait=content
 	trait=scholarly_theologian
 	2639.4.13={birth=yes}
+	2700.1.1={death=yes}
 }
 2202268={ #Rabia wife of the Bagratid Duke
 	name="Rabia"
@@ -3216,6 +3254,7 @@
 	intrigue=7
 	2642.5.11={birth=yes}
 	2658.8.12={add_spouse=1802061}
+	2700.1.1={death=yes}
 }
 2202269={ #Count of Bitlis
 	name="Nemrud"
@@ -3231,6 +3270,7 @@
 	diplomacy=8
 	intrigue=4
 	2635.1.25={birth=yes}
+	2700.1.1={death=yes}
 }
 2202270={ #Count of Diyarbakir
 	name="Lokman"
@@ -3261,7 +3301,7 @@
 	2644.7.15={birth=yes
 		culture=kurdish}
 }
-2202272={ 
+2202272={
 	name="Arif"
 	dynasty=2052006 #Tanriverdi
 	culture=kurdish
@@ -3270,7 +3310,7 @@
 	2600.4.22={birth=yes}
 	2652.5.14={death=yes}
 }
-2202273={ 
+2202273={
 	name="Artîn"
 	dynasty=2052006 #Tanriverdi
 	culture=kurdish
@@ -3279,7 +3319,7 @@
 	2571.3.9={birth=yes}
 	2633.3.8={death=yes}
 }
-2202274={ 
+2202274={
 	name="Ceferqulî"
 	dynasty=2052006 #Tanriverdi
 	culture=kurdish
@@ -3288,7 +3328,7 @@
 	2552.7.4={birth=yes}
 	2604.11.17={death=yes}
 }
-2202275={ 
+2202275={
 	name="Rohat"
 	dynasty=2052006 #Tanriverdi
 	culture=kurdish
@@ -3297,7 +3337,7 @@
 	2522.4.4={birth=yes}
 	2570.1.10={death=yes}
 }
-2202276={ 
+2202276={
 	name="Xana"
 	dynasty=2052006 #Tanriverdi
 	culture=kurdish
@@ -3305,7 +3345,7 @@
 	2498.2.8={birth=yes}
 	2548.6.16={death=yes}
 }
-2202277={ 
+2202277={
 	name="Kemal"
 	dynasty=2066000 #Kezêban
 	culture=kurdish
@@ -3314,7 +3354,7 @@
 	2574.8.30={birth=yes}
 	2638.7.30={death=yes}
 }
-2202278={ 
+2202278={
 	name="Casim"
 	dynasty=2066000 #Kezêban
 	culture=kurdish
@@ -3323,7 +3363,7 @@
 	2552.8.20={birth=yes}
 	2604.11.29={death=yes}
 }
-2202279={ 
+2202279={
 	name="Xelîl"
 	dynasty=2066000 #Kezêban
 	culture=kurdish
@@ -3332,7 +3372,7 @@
 	2519.6.1={birth=yes}
 	2566.8.14={death=yes}
 }
-2202280={ 
+2202280={
 	name="Yadgar"
 	dynasty=2066000 #Kezêban
 	culture=kurdish
@@ -3341,7 +3381,7 @@
 	2498.9.2={birth=yes}
 	2542.7.7={death=yes}
 }
-2202281={ 
+2202281={
 	name="Behram"
 	dynasty=2066000 #Kezêban
 	culture=kurdish
@@ -3350,7 +3390,7 @@
 	2474.11.11={birth=yes}
 	2524.10.14={death=yes}
 }
-2202282={ 
+2202282={
 	name="Dadyar"
 	dynasty=2066000 #Kezêban
 	culture=kurdish
@@ -3359,7 +3399,7 @@
 	2442.6.28={birth=yes}
 	2481.9.8={death=yes}
 }
-2202283={ 
+2202283={
 	name="Rehîm"
 	dynasty=2066000 #Kezêban
 	culture=kurdish
@@ -3368,7 +3408,7 @@
 	2415.11.26={birth=yes}
 	2469.7.2={death=yes}
 }
-2202284={ 
+2202284={
 	name="Lerzan"
 	dynasty=2066000 #Kezêban
 	culture=kurdish
@@ -3377,7 +3417,7 @@
 	2388.3.29={birth=yes}
 	2442.10.1={death=yes}
 }
-2202285={ 
+2202285={
 	name="Siyamend"
 	dynasty=2066000 #Kezêban
 	culture=kurdish
@@ -3386,7 +3426,7 @@
 	2364.10.7={birth=yes}
 	2419.8.19={death=yes}
 }
-2202286={ 
+2202286={
 	name="Zinar"
 	dynasty=2066000 #Kezêban
 	culture=kurdish
@@ -3395,7 +3435,7 @@
 	2338.5.21={birth=yes}
 	2394.12.26={death=yes}
 }
-2202287={ 
+2202287={
 	name="Shêx"
 	dynasty=2066000 #Kezêban
 	culture=kurdish
@@ -3404,7 +3444,7 @@
 	2310.5.12={birth=yes}
 	2369.7.29={death=yes}
 }
-2202288={ 
+2202288={
 	name="Agir"
 	dynasty=2066000 #Kezêban
 	culture=kurdish
@@ -3413,7 +3453,7 @@
 	2276.8.6={birth=yes}
 	2318.9.7={death=yes}
 }
-2202289={ 
+2202289={
 	name="Beroj"
 	dynasty=2066000 #Kezêban
 	culture=kurdish
@@ -3422,7 +3462,7 @@
 	2241.7.3={birth=yes}
 	2298.4.17={death=yes}
 }
-2202290={ 
+2202290={
 	name="Cengiz"
 	dynasty=2052002 #Günesh
 	culture=central_anatolian
@@ -3435,8 +3475,9 @@
 	trait=celibate
 	trait=mevlevi
 	2604.9.4={birth=yes}
+	2700.1.1={death=yes}
 }
-2202291={ 
+2202291={
 	name="Iskender"
 	dynasty=2055210 #Tantal
 	culture=greek
@@ -3459,7 +3500,7 @@
 		add_claim=c_mugla
 		add_claim=c_denizli}}
 }
-2202292={ 
+2202292={
 	name="Ertughrul"
 	dynasty=2052002 #Günesh
 	culture=central_anatolian
@@ -3472,7 +3513,7 @@
 	2616.12.10={birth=yes}
 	2659.6.9={death={death_reason=death_battle killer=2202077}}
 }
-2202293={ 
+2202293={
 	name="Iskender"
 	dynasty=2052002 #Günesh
 	culture=central_anatolian
@@ -3484,8 +3525,9 @@
 	trait=cruel
 	2641.4.30={birth=yes}
 	2660.1.1={effect={add_rival=2202071}}
+	2700.1.1={death=yes}
 }
-2202294={ 
+2202294={
 	name="Atilla"
 	dynasty=2052002 #Günesh
 	culture=central_anatolian
@@ -3497,8 +3539,9 @@
 	trait=deceitful
 	2648.1.1={birth=yes}
 	2660.1.1={effect={add_rival=2202071}}
+	2700.1.1={death=yes}
 }
-2202295={ 
+2202295={
 	name="Osman"
 	dynasty=2052002 #Günesh
 	culture=central_anatolian
@@ -3511,8 +3554,9 @@
 	trait=gluttonous
 	trait=cynical
 	2628.8.7={birth=yes}
+	2700.1.1={death=yes}
 }
-2202296={ 
+2202296={
 	name="Mustafa Kemal"
 	dynasty=2052002 #Günesh
 	culture=central_anatolian
@@ -3525,7 +3569,7 @@
 	2608.5.27={birth=yes}
 	2659.6.9={death={death_reason=death_battle killer=2202077}}
 }
-2202297={ 
+2202297={
 	name="Alparslan"
 	dynasty=2052002 #Günesh
 	culture=central_anatolian
@@ -3537,8 +3581,9 @@
 	trait=poet
 	trait=homosexual
 	2635.2.20={birth=yes}
+	2700.1.1={death=yes}
 }
-2202298={ 
+2202298={
 	name="Asena"
 	female=yes
 	dynasty=2052002 #Günesh
@@ -3547,8 +3592,9 @@
 	father=2202071
 	mother=2202355
 	2607.2.20={birth=yes}
+	2700.1.1={death=yes}
 }
-2202299={ 
+2202299={
 	name="Tansu"
 	female=yes
 	dynasty=2052002 #Günesh
@@ -3558,8 +3604,9 @@
 	mother=2202360
 	2613.3.10={birth=yes}
 	2638.1.1={add_spouse=2202356}
+	2700.1.1={death=yes}
 }
-2202300={ 
+2202300={
 	name="Hatice"
 	female=yes
 	dynasty=2052002 #Günesh
@@ -3569,8 +3616,9 @@
 	mother=2202360
 	2615.3.19={birth=yes}
 	2635.1.1={add_spouse=2202072}
+	2700.1.1={death=yes}
 }
-2202301={ 
+2202301={
 	name="Meryem"
 	female=yes
 	dynasty=2052002 #Günesh
@@ -3579,8 +3627,9 @@
 	father=2202071
 	mother=2202365
 	2629.8.31={birth=yes}
+	2700.1.1={death=yes}
 }
-2202302={ 
+2202302={
 	name="Latife"
 	female=yes
 	dynasty=2052002 #Günesh
@@ -3589,8 +3638,9 @@
 	father=2202071
 	mother=2202365
 	2638.11.5={birth=yes}
+	2700.1.1={death=yes}
 }
-2202303={ 
+2202303={
 	name="Yahya"
 	dynasty=2055211 #Gündoghdu
 	culture=west_anatolian
@@ -3599,7 +3649,7 @@
 	2640.1.1={capital=c_isparta}
 	2642.4.2={death=yes}
 }
-2202304={ 
+2202304={
 	name="Sami"
 	dynasty=2055211 #Gündoghdu
 	culture=west_anatolian
@@ -3612,8 +3662,9 @@
 	father=2202303
 	2622.11.1={birth=yes}
 	2660.1.1={capital=c_isparta}
+	2700.1.1={death=yes}
 }
-2202305={ 
+2202305={
 	name="Aslan"
 	dynasty=7100166 #Dolapli
 	culture=toros_mountain
@@ -3631,8 +3682,9 @@
 	trait=sympathy_christendom
 	give_nickname=nick_the_lionheart
 	2610.9.21={birth=yes}
+	2700.1.1={death=yes}
 }
-2202306={ 
+2202306={
 	name="Shahin"
 	dynasty=2066106 #Matur
 	culture=kurdish
@@ -3646,7 +3698,7 @@
 	2633.3.28={birth=yes
 		culture=toros_mountain}
 }
-2202307={ 
+2202307={
 	name="Ibrahim"
 	dynasty=2103134 #Mungan
 	culture=suriyi
@@ -3659,8 +3711,9 @@
 	trait=proud
 	trait=kind
 	2626.4.21={birth=yes}
+	2700.1.1={death=yes}
 }
-2202308={ 
+2202308={
 	name="Mihrdat"
 	dynasty=2052206 #Köpekoghlu
 	culture=central_anatolian
@@ -3678,8 +3731,9 @@
 	trait=sympathy_scholastic
 	2610.6.11={birth=yes}
 	2663.01.01={capital=c_sinop}
+	2700.1.1={death=yes}
 }
-2202309={ 
+2202309={
 	name="Lazaros"
 	dynasty=2074067 #Türkkan
 	culture=kypriot
@@ -3689,7 +3743,7 @@
 	2087.3.11={birth=yes}
 	2157.11.13={death=yes}
 }
-2202310={ 
+2202310={
 	name="Savvas"
 	dynasty=2074067 #Türkkan
 	culture=kypriot
@@ -3699,7 +3753,7 @@
 	2117.4.17={birth=yes}
 	2162.8.23={death={death_reason=death_battle killer=2202119}}
 }
-2202311={ 
+2202311={
 	name="Omiros"
 	dynasty=2074067 #Türkkan
 	culture=kypriot
@@ -3710,7 +3764,7 @@
 	2143.11.29={birth=yes}
 	2202.10.12={death={death_reason=death_trait}}
 }
-2202312={ 
+2202312={
 	name="Veniamin"
 	dynasty=2074067 #Türkkan
 	culture=kypriot
@@ -3721,7 +3775,7 @@
 	2167.7.7={birth=yes}
 	2213.2.23={death={death_reason=death_accident_drowning}}
 }
-2202313={ 
+2202313={
 	name="Kaan"
 	dynasty=2074067 #Türkkan
 	culture=kypriot
@@ -3732,7 +3786,7 @@
 	2189.5.30={birth=yes}
 	2239.7.27={death={death_reason=death_trait}}
 }
-2202314={ 
+2202314={
 	name="Lazaros"
 	dynasty=2074067 #Türkkan
 	culture=kypriot
@@ -3743,7 +3797,7 @@
 	2217.9.22={birth=yes}
 	2246.12.2={death={death_reason=death_trait}}
 }
-2202315={ 
+2202315={
 	name="Lazaros"
 	dynasty=2074067 #Türkkan
 	culture=kypriot
@@ -3753,7 +3807,7 @@
 	2241.11.29={birth=yes}
 	2262.1.23={death={death_reason=death_accident}}
 }
-2202316={ 
+2202316={
 	name="Savvas"
 	dynasty=2074067 #Türkkan
 	culture=kypriot
@@ -3763,7 +3817,7 @@
 	2242.6.2={birth=yes}
 	2303.4.1={death=yes}
 }
-2202317={ 
+2202317={
 	name="Lazaros"
 	dynasty=2074067 #Türkkan
 	culture=kypriot
@@ -3773,7 +3827,7 @@
 	2266.12.11={birth=yes}
 	2313.11.19={death={death_reason=death_trait}}
 }
-2202318={ 
+2202318={
 	name="Lazaros"
 	dynasty=2074067 #Türkkan
 	culture=kypriot
@@ -3783,7 +3837,7 @@
 	2288.5.7={birth=yes}
 	2344.5.18={death={death_reason=death_murder killer=2202320}}
 }
-2202319={ 
+2202319={
 	name="Savvas"
 	dynasty=2074067 #Türkkan
 	culture=kypriot
@@ -3794,7 +3848,7 @@
 	2311.4.11={birth=yes}
 	2346.4.13={death={death_reason=death_suicide}}
 }
-2202320={ 
+2202320={
 	name="Vasil"
 	dynasty=2074067 #Türkkan
 	culture=kypriot
@@ -3804,7 +3858,7 @@
 	2290.5.7={birth=yes}
 	2344.5.20={death={death_reason=death_execution_beheading killer=2202319}}
 }
-2202321={ 
+2202321={
 	name="Lazaros"
 	dynasty=2074067 #Türkkan
 	culture=kypriot
@@ -3825,7 +3879,7 @@
 	2359.4.24={birth=yes}
 	2415.9.24={death={death_reason=death_trait}}
 }
-2202323={ 
+2202323={
 	name="Lazaros"
 	dynasty=2074067 #Türkkan
 	culture=kypriot
@@ -3835,7 +3889,7 @@
 	2387.6.5={birth=yes}
 	2443.10.4={death={death_reason=death_battle killer=2202323}}  #killed by another count in the revolt
 }
-2202324={ 
+2202324={
 	name="Lazaros"
 	dynasty=2074067 #Türkkan
 	culture=kypriot
@@ -3845,7 +3899,7 @@
 	2409.1.13={birth=yes}
 	2481.10.2={death=yes}
 }
-2202325={ 
+2202325={
 	name="Kaan"
 	dynasty=2074067 #Türkkan
 	culture=kypriot
@@ -3856,7 +3910,7 @@
 	2439.10.23={birth=yes}
 	2484.12.27={death={death_reason=death_murder killer=2202326}}
 }
-2202326={ 
+2202326={
 	name="Lazaros"
 	dynasty=2074067 #Türkkan
 	culture=kypriot
@@ -3869,7 +3923,7 @@
 	2461.7.31={birth=yes}
 	2510.10.18={death={death_reason=death_trait}}
 }
-2202327={ 
+2202327={
 	name="Lazaros"
 	dynasty=2074067 #Türkkan
 	culture=kypriot
@@ -3880,7 +3934,7 @@
 	2485.3.14={birth=yes}
 	2528.1.1={death={death_reason=death_trait}}
 }
-2202328={ 
+2202328={
 	name="Lazaros"
 	dynasty=2074067 #Türkkan
 	culture=kypriot
@@ -3890,7 +3944,7 @@
 	2510.1.10={birth=yes}
 	2570.11.1={death=yes}
 }
-2202329={ 
+2202329={
 	name="Savvas"
 	dynasty=2074067 #Türkkan
 	culture=kypriot
@@ -3901,7 +3955,7 @@
 	2532.3.3={birth=yes}
 	2589.3.1={death={death_reason=death_trait}}
 }
-2202330={ 
+2202330={
 	name="Lazaros"
 	dynasty=2074067 #Türkkan
 	culture=kypriot
@@ -3911,7 +3965,7 @@
 	2556.5.10={birth=yes}
 	2624.5.11={death=yes}
 }
-2202331={ 
+2202331={
 	name="Sofokles"
 	dynasty=2074067 #Türkkan
 	culture=kypriot
@@ -3921,7 +3975,7 @@
 	2577.10.6={birth=yes}
 	2631.10.13={death={death_reason=death_murder}}
 }
-2202332={ 
+2202332={
 	name="Lazaros"
 	dynasty=2074067 #Türkkan
 	culture=kypriot
@@ -3939,7 +3993,7 @@
 	trait=cynical
 	2602.11.30={birth=yes}
 }
-2202333={ 
+2202333={
 	name="Lazaros"
 	dynasty=2074067 #Türkkan
 	culture=kypriot
@@ -3956,8 +4010,9 @@
 	trait=gluttonous
 	disallow_random_traits=yes
 	2626.5.20={birth=yes}
+	2700.1.1={death=yes}
 }
-#2202334={ 
+#2202334={
 #	name="Thalia"
 #	female=yes
 #	dynasty=2074067 #Türkkan
@@ -3966,7 +4021,7 @@
 #	father=2202332
 #	2630.6.16={birth=yes}
 #}
-2202335={ 
+2202335={
 	name="Savvas"
 	dynasty=2074067 #Türkkan
 	culture=kypriot
@@ -3984,8 +4039,9 @@
 	trait=selfish
 	disallow_random_traits=yes
 	2631.6.22={birth=yes}
+	2700.1.1={death=yes}
 }
-2202336={ 
+2202336={
 	name="Shahin"
 	dynasty=1282000 #Topaloghlu
 	culture=laz
@@ -3998,7 +4054,7 @@
 	2539.12.25={birth=yes}
 	2599.8.13={death=yes}
 }
-#2202337={ 
+#2202337={
 #	name="Olympia"
 #	female=yes
 #	dynasty=2074067 #Türkkan
@@ -4006,8 +4062,9 @@
 #	religion=naqshbandi
 #   father=2202332
 #	2637.11.29={birth=yes}
+	2700.1.1={death=yes}
 #}
-2202338={ 
+2202338={
 	name="Domna"
 	female=yes
 	dynasty=2074067 #Türkkan
@@ -4017,6 +4074,7 @@
 	father=2202332
 	2640.8.24={birth=yes}
 	2663.1.1={add_spouse=2202060}
+	2700.1.1={death=yes}
 }
 2202339={
 	name="Korkut"
@@ -4116,6 +4174,7 @@
 	religion=ruhi
 	father=2202348
 	2625.11.18={birth=yes}
+	2700.1.1={death=yes}
 }
 2202350={
 	name="Ziya"
@@ -4151,8 +4210,9 @@
 	trait=deceitful
 	trait=just
 	2633.3.6={birth=yes}
+	2700.1.1={death=yes}
 }
-2202355={ 
+2202355={
 	name="Eda"
 	female=yes
 	dynasty=0
@@ -4163,7 +4223,7 @@
 	2603.1.1={add_spouse=2202071}
 	2611.1.10={death={death_reason=death_trait}}
 }
-2202355={ 
+2202355={
 	name="Eda"
 	female=yes
 	dynasty=0
@@ -4209,6 +4269,7 @@
 	father=2202348
 	2620.4.6={birth=yes}
 	2640.1.1={add_spouse=2202292}
+	2700.1.1={death=yes}
 }
 2202360={
 	name="Münire"
@@ -4259,6 +4320,7 @@
 	father=2202363
 	2621.2.11={birth=yes}
 	2639.1.1={add_spouse=2202070}
+	2700.1.1={death=yes}
 }
 2202365={
 	name="Handan"
@@ -4269,6 +4331,7 @@
 	father=2202362
 	2608.1.3={birth=yes}
 	2625.1.1={add_spouse=2202071}
+	2700.1.1={death=yes}
 }
 2202366={
 	name="Fatmagül"
@@ -4315,6 +4378,7 @@
 	mother=2202368
 	2648.12.4={birth=yes}
 	2666.1.1={add_spouse=2202293}
+	2700.1.1={death=yes}
 }
 2202370={
 	name="Çelik"
@@ -4325,6 +4389,7 @@
 	mother=2202300
 	trait=twin
 	2636.10.9={birth=yes}
+	2700.1.1={death=yes}
 }
 2202371={
 	name="Ebru"
@@ -4337,6 +4402,7 @@
 	trait=twin
 	trait=giant
 	2636.10.9={birth=yes}
+	2700.1.1={death=yes}
 }
 2202372={
 	name="Bulut"
@@ -4346,6 +4412,7 @@
 	father=2202072
 	mother=2202300
 	2639.11.26={birth=yes}
+	2700.1.1={death=yes}
 }
 2202373={
 	name="Galip"
@@ -4355,6 +4422,7 @@
 	father=2202357
 	2621.11.22={birth=yes}
 	2666.1.1={effect={add_rival=2202216}}
+	2700.1.1={death=yes}
 }
 2202374={
 	name="Shükri"
@@ -4364,6 +4432,7 @@
 	father=2202357
 	2625.6.15={birth=yes}
 	2666.1.1={effect={add_rival=2202216}}
+	2700.1.1={death=yes}
 }
 2202375={
 	name="Raimond"
@@ -4377,6 +4446,7 @@
 	trait=bisexual
 	2606.1.14={birth=yes}
 	2660.1.1={employer=2202056}
+	2700.1.1={death=yes}
 }
 2202376={
 	name="Shmuel"
@@ -4390,6 +4460,7 @@
 		culture=sefardi}
 	2645.1.1={effect={add_lover=2202375}}
 	2660.1.1={employer=2202056}
+	2700.1.1={death=yes}
 }
 2202377={
 	name="Fethiyye"
@@ -4400,8 +4471,9 @@
 	father=2202357
 	2622.2.21={birth=yes}
 	2640.1.1={add_spouse=2202112}
+	2700.1.1={death=yes}
 }
-2202378 = { 
+2202378={
 	name="Pirjîn"
 	female=yes
 	dynasty=2066060 #Guven
@@ -4410,8 +4482,9 @@
 	father=2202112
 	mother=2202377
 	2644.2.22={birth=yes}
+	2700.1.1={death=yes}
 }
-2202379 = { 
+2202379={
 	name="Zarîn"
 	female=yes
 	dynasty=2066060 #Guven
@@ -4420,8 +4493,9 @@
 	father=2202112
 	mother=2202377
 	2649.1.22={birth=yes}
+	2700.1.1={death=yes}
 }
-2202380 = { 
+2202380={
 	name="Dewken"
 	female=yes
 	dynasty=2066060 #Guven
@@ -4430,8 +4504,9 @@
 	father=2202112
 	mother=2202377
 	2657.2.25={birth=yes}
+	2700.1.1={death=yes}
 }
-2202381 = { 
+2202381={
 	name="Ebas"
 	dynasty=2066060 #Guven
 	culture=kurdish
@@ -4439,8 +4514,9 @@
 	father=2202112
 	mother=2202377
 	2664.11.11={birth=yes}
+	2700.1.1={death=yes}
 }
-2202382={ 
+2202382={
 	name="Betül"
 	female=yes
 	dynasty=2055211 #Gündoghdu
@@ -4451,6 +4527,7 @@
 	father=2202303
 	2626.5.8={birth=yes}
 	2646.1.1={add_spouse=2202349}
+	2700.1.1={death=yes}
 }
 2202383={
 	name="Bahattin"
@@ -4465,6 +4542,7 @@
 	father=2202349
 	mother=2202382
 	2648.2.20={birth=yes}
+	2700.1.1={death=yes}
 }
 2202384={
 	name="Sebahattin"
@@ -4477,6 +4555,7 @@
 	father=2202349
 	mother=2202382
 	2650.1.2={birth=yes}
+	2700.1.1={death=yes}
 }
 2202385={
 	name="Algi"
@@ -4487,6 +4566,7 @@
 	father=2202349
 	mother=2202382
 	2654.5.11={birth=yes}
+	2700.1.1={death=yes}
 }
 2202386={
 	name="Cenan"
@@ -4496,6 +4576,7 @@
 	religion=naqshbandi
 	2612.8.16={birth=yes}
 	2630.1.1={add_spouse=2202055}
+	2700.1.1={death=yes}
 }
 2202387={
 	name="Ali"
@@ -4508,8 +4589,9 @@
 	trait=patient
 	2632.9.18={
 		birth=yes
-		culture = toros_mountain
+		culture=toros_mountain
 	}
+	2700.1.1={death=yes}
 }
 2202354={ #Orko
 	name="Orko"
@@ -4525,6 +4607,7 @@
 	intrigue=7
 	martial=8
 	2640.5.11={birth=yes}
+	2700.1.1={death=yes}
 }
 2202388={
 	name="Mustafa"
@@ -4537,8 +4620,9 @@
 	trait=patient
 	2634.3.3={
 		birth=yes
-		culture = toros_mountain
+		culture=toros_mountain
 	}
+	2700.1.1={death=yes}
 }
 2202389={
 	name="Yasemin"
@@ -4550,8 +4634,9 @@
 	religion=naqshbandi
 	2641.11.22={
 		birth=yes
-		culture = toros_mountain
+		culture=toros_mountain
 	}
+	2700.1.1={death=yes}
 }
 2202390={
 	name="Nazmiye"
@@ -4561,6 +4646,7 @@
 	religion=naqshbandi
 	2625.1.14={birth=yes}
 	2643.1.1={add_spouse=2202304}
+	2700.1.1={death=yes}
 }
 2202391={
 	name="Hayrünnisa"
@@ -4571,6 +4657,7 @@
 	father=2202304
 	mother=2202390
 	2644.10.13={birth=yes}
+	2700.1.1={death=yes}
 }
 2202392={
 	name="Ahmet"
@@ -4580,6 +4667,7 @@
 	father=2202304
 	mother=2202390
 	2646.12.10={birth=yes}
+	2700.1.1={death=yes}
 }
 2202393={
 	name="Turgut"
@@ -4589,6 +4677,7 @@
 	father=2202304
 	mother=2202390
 	2649.5.14={birth=yes}
+	2700.1.1={death=yes}
 }
 2202394={
 	name="Tevfik"
@@ -4598,6 +4687,7 @@
 	father=2202061
 	mother=2202368
 	2666.4.6={birth=yes}
+	2700.1.1={death=yes}
 }
 2202395={
 	name="Bahadir"
@@ -4639,6 +4729,7 @@
 	religion=ruhi
 	2622.3.17={birth=yes}
 	2641.1.1={add_spouse=2202068}
+	2700.1.1={death=yes}
 }
 2202399={
 	name="Deniz"
@@ -4653,6 +4744,7 @@
 	father=2202068
 	mother=2202398
 	2642.3.30={birth=yes}
+	2700.1.1={death=yes}
 }
 2202400={
 	name="Çevik"
@@ -4666,6 +4758,7 @@
 	father=2202068
 	mother=2202398
 	2643.3.1={birth=yes}
+	2700.1.1={death=yes}
 }
 2202401={
 	name="Mümtaz"
@@ -5029,6 +5122,7 @@
 	trait=shafii
 	2613.7.26={birth=yes}
 	2629.1.1={add_spouse=2202430}
+	2700.1.1={death=yes}
 }
 2202433={
 	name="Mujahid"
@@ -5045,6 +5139,7 @@
 	father=2202430
 	mother=2202432
 	2630.12.5={birth=yes}
+	2700.1.1={death=yes}
 }
 2202434={
 	name="Seljuk"
@@ -5060,6 +5155,7 @@
 	trait=familyperson
 	trait=just
 	2632.4.21={birth=yes}
+	2700.1.1={death=yes}
 }
 2202435={
 	name="Ayshegül" #married to eldest son of Meran Karaca
@@ -5115,6 +5211,7 @@
 	father=2202364
 	mother=2202070
 	2641.6.17={birth=yes}
+	2700.1.1={death=yes}
 }
 2202438={
 	name="Gülsün"
@@ -5125,6 +5222,7 @@
 	father=2202364
 	mother=2202070
 	2644.12.30={birth=yes}
+	2700.1.1={death=yes}
 }
 2202439={
 	name="Sabîte"
@@ -5136,6 +5234,7 @@
 	mother=3602023
 	2620.3.4={birth=yes}
 	2658.1.1={add_spouse=2202086}
+	2700.1.1={death=yes}
 }
 2202440={
 	name="Lorîn"
@@ -5147,6 +5246,7 @@
 	mother=2202439
 	2644.4.1={birth=yes}
 	2665.1.1={add_spouse=2202082}
+	2700.1.1={death=yes}
 }
 2202441={
 	name="Mîr"
@@ -5158,6 +5258,7 @@
 	trait=honorable
 	trait=kind
 	2647.4.13={birth=yes}
+	2700.1.1={death=yes}
 }
 2202442={
 	name="Halil"
@@ -5177,7 +5278,7 @@
 	2618.1.1={add_spouse=2202442}
 	2648.3.3={death=yes}
 }
-2202444={ 
+2202444={
 	name="Ilay"
 	female=yes
 	dynasty=2057003 #Mehmetçik
@@ -5186,11 +5287,11 @@
 	father=2202442
 	mother=2202443
 	2631.7.6={birth=yes}
-	2652.01.2={
-		add_spouse=2202065
+	2652.01.2={add_spouse=2202065
 	}
+	2700.1.1={death=yes}
 }
-2202445={ 
+2202445={
 	name="Oghuz"
 	dynasty=2055003 #Polat
 	culture=west_anatolian
@@ -5199,9 +5300,10 @@
 	mother=2202444
 	trait=proud
 	trait=twin
-	2653.5.1={ birth=yes }
+	2653.5.1={birth=yes}
+	2700.1.1={death=yes}
 }
-2202446={ 
+2202446={
 	name="Güler"
 	female=yes
 	dynasty=2055003 #Polat
@@ -5210,18 +5312,20 @@
 	father=2202065
 	mother=2202444
 	trait=twin
-	2653.5.1={ birth=yes }
+	2653.5.1={birth=yes}
+	2700.1.1={death=yes}
 }
-2202447={ 
+2202447={
 	name="Ekber"
 	dynasty=2055003 #Polat
 	culture=west_anatolian
 	religion=alevi
 	father=2202065
 	mother=2202444
-	2655.3.22={ birth=yes }
+	2655.3.22={birth=yes}
+	2700.1.1={death=yes}
 }
-2202448={ 
+2202448={
 	name="Mehmet"
 	culture=west_anatolian
 	religion=naqshbandi
@@ -5229,7 +5333,7 @@
 	2600.1.19={birth=yes}
 	2658.8.30={death=yes}
 }
-2202449={ 
+2202449={
 	name="Gülsüm"
 	female=yes
 	culture=west_anatolian
@@ -5237,24 +5341,27 @@
 	father=2202448
 	dynasty=2055008 #Kanter
 	2638.9.11={birth=yes}
+	2700.1.1={death=yes}
 }
-2202449={ 
+2202449={
 	name="Özgür"
 	culture=west_anatolian
 	religion=naqshbandi
 	father=2202448
 	dynasty=2055008 #Kanter
 	2640.4.29={birth=yes}
+	2700.1.1={death=yes}
 }
-2202450={ 
+2202450={
 	name="Hürriyet"
 	culture=west_anatolian
 	religion=naqshbandi
 	father=2202448
 	dynasty=2055008 #Kanter
 	2642.9.29={birth=yes}
+	2700.1.1={death=yes}
 }
-2202451={ 
+2202451={
 	name="Lefter"
 	culture=romioi
 	religion=naqshbandi
@@ -5265,16 +5372,18 @@
 	trait=proud
 	trait=aggressive_leader
 	2633.12.22={birth=yes}
+	2700.1.1={death=yes}
 }
-2202452={ 
+2202452={
 	name="Athanasios"
 	culture=romioi
 	religion=orthodox
 	father=2202454
 	2628.2.9={birth=yes}
 	2665.1.1={effect={add_friend=2202451}}
+	2700.1.1={death=yes}
 }
-2202453={ 
+2202453={
 	name="Stavriani"
 	female=yes
 	culture=romioi
@@ -5283,64 +5392,73 @@
 	2636.9.24={birth=yes}
 	2660.1.1={add_spouse=2202451}
 	2665.1.1={effect={add_lover=2202451}}
+	2700.1.1={death=yes}
 }
-2202454={ 
+2202454={
 	name="Petros"
 	culture=romioi
 	religion=orthodox
 	2601.2.5={birth=yes}
 	2664.4.24={death=yes}
 }
-2202455={ 
+2202455={
 	name="Gündüz"
 	culture=rumelian
 	religion=naqshbandi
 	2642.6.16={birth=yes}
+	2700.1.1={death=yes}
 }
-2202456={ 
+2202456={
 	name="Ayetullah"
 	culture=rumelian
 	religion=naqshbandi
 	2614.5.27={birth=yes}
+	2700.1.1={death=yes}
 }
-2202457={ 
+2202457={
 	name="Celal"
 	culture=west_anatolian
 	religion=ruhi
 	2643.10.10={birth=yes}
+	2700.1.1={death=yes}
 }
-2202458={ 
+2202458={
 	name="Eren"
 	culture=toros_mountain
 	religion=alevi
 	give_nickname=nick_the_lesser
 	2619.8.20={birth=yes}
+	2700.1.1={death=yes}
 }
-2202459={ 
+2202459={
 	name="Selim"
 	dynasty=2056071
 	culture=romioi
 	religion=naqshbandi
 	2624.8.25={birth=yes}
+	2700.1.1={death=yes}
 }
-2202460={ 
+2202460={
 	name="Burhan"
 	dynasty=2055212
 	culture=west_anatolian
 	religion=ruhi
 	2611.10.1={birth=yes}
+	2700.1.1={death=yes}
 }
-2202461={ 
+2202461={
 	name="Aslan"
 	culture=central_anatolian
 	religion=ruhi
 	2630.5.20={birth=yes}
+	2700.1.1={death=yes}
 }
-2202462={ 
+2202462={
 	name="Cahit"
 	culture=kurdish
 	religion=sunni
 	2635.1.21={birth=yes}
+	2700.1.1={death=yes}
 }
 2202463={
 	name="Ashkin"
@@ -5352,6 +5470,7 @@
 	2627.4.7={birth=yes}
 	2648.1.1={add_spouse=2202291}
 	2655.7.2={effect={add_rival=2202291}}
+	2700.1.1={death=yes}
 }
 2202464={
 	name="Rustem"
@@ -5363,7 +5482,7 @@
 	2603.9.3={birth=yes}
 	2645.12.14={death=yes}
 }
-2202465={ 
+2202465={
 	name="Minas"
 	culture=romioi
 	religion=naqshbandi
@@ -5372,7 +5491,7 @@
 	2602.4.18={birth=yes}
 	2645.3.21={death=yes}
 }
-2202466={ 
+2202466={
 	name="Moustafa"
 	culture=romioi
 	religion=naqshbandi
@@ -5381,7 +5500,7 @@
 	2575.2.27={birth=yes}
 	2636.4.19={death=yes}
 }
-2202467={ 
+2202467={
 	name="Adile"
 	culture=romioi
 	religion=naqshbandi
@@ -5390,6 +5509,7 @@
 	father=2202466
 	2608.8.3={birth=yes}
 	2627.1.1={add_spouse=2202464}
+	2700.1.1={death=yes}
 }
 2202468={
 	name="Gülistan"
@@ -5401,6 +5521,7 @@
 	mother=2202467
 	2631.1.17={birth=yes}
 	2647.1.1={add_spouse=2070024}
+	2700.1.1={death=yes}
 }
 2202469={
 	name="Bahtiyar"
@@ -5463,7 +5584,7 @@
 	2600.1.1={add_spouse=2202469}
 	2641.4.28={death=yes}
 }
-2202475={ 
+2202475={
 	name="Minas"
 	culture=romioi
 	religion=naqshbandi
@@ -5472,7 +5593,7 @@
 	2551.7.27={birth=yes}
 	2601.4.26={death=yes}
 }
-2202476={ 
+2202476={
 	name="Alexandros"
 	culture=romioi
 	religion=naqshbandi
@@ -5481,7 +5602,7 @@
 	2578.4.28={birth=yes}
 	2632.10.21={death=yes}
 }
-2202477={ 
+2202477={
 	name="Lefter"
 	culture=romioi
 	religion=naqshbandi
@@ -5490,7 +5611,7 @@
 	2536.12.16={birth=yes}
 	2589.3.5={death=yes}
 }
-2202478={ 
+2202478={
 	name="Minas"
 	culture=romioi
 	religion=naqshbandi
@@ -5499,7 +5620,7 @@
 	2510.8.5={birth=yes}
 	2562.3.20={death=yes}
 }
-2202479={ 
+2202479={
 	name="Irini"
 	female=yes
 	culture=romioi
@@ -5541,6 +5662,7 @@
 	mother=2202481
 	2625.11.2={birth=yes}
 	2644.1.1={add_spouse=2202081}
+	2700.1.1={death=yes}
 }
 2202483={
 	name="Cenab"
@@ -5550,8 +5672,9 @@
 	father=2202080
 	mother=3601540
 	2636.9.7={birth=yes}
+	2700.1.1={death=yes}
 }
-2202484={ 
+2202484={
 	name="Berika"
 	female=yes
 	dynasty=2074067 #Türkkan
@@ -5610,7 +5733,7 @@
 	2605.1.1={add_spouse=2202263}
 	2640.4.20={death=yes}
 }
-2202490={ 
+2202490={
 	name="Vasil"
 	culture=romioi
 	religion=naqshbandi
@@ -5618,7 +5741,7 @@
 	2487.3.23={birth=yes}
 	2512.4.6={death=yes}
 }
-2202491={ 
+2202491={
 	name="Maria"
 	female=yes
 	culture=romioi
@@ -5629,7 +5752,7 @@
 	2535.1.1={add_spouse=2202472}
 	2562.3.20={death=yes}
 }
-2202492={ 
+2202492={
 	name="Sabri"
 	culture=rumelian
 	religion=naqshbandi
@@ -5637,7 +5760,7 @@
 	2581.9.13={birth=yes}
 	2611.5.6={death=yes}
 }
-2202493={ 
+2202493={
 	name="Gazi"
 	culture=rumelian
 	religion=naqshbandi

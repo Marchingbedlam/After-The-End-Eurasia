@@ -1,5 +1,5 @@
 ###ÄNSI
-1001001 ={
+1001001={
 	name="Gaius"
 	dynasty=1001002 #Snaphance
 	culture=southerner
@@ -136,7 +136,7 @@
 	name="Dee"
 	culture=southerner
 	religion=glorian
-	female = yes
+	female=yes
 	martial=3
 	diplomacy=5
 	stewardship=4
@@ -553,7 +553,7 @@
 	2618.2.8={add_spouse=1001022}
 	2666.7.2={death=yes}
 }
-1001028 = {
+1001028={
 	name="Clarke"
 	dynasty=1101011 #Carne
 	culture=westerner
@@ -675,8 +675,8 @@
 	add_trait=kind
 	add_trait=cynical
 	2620.2.12={birth=yes}
-	2640.4.3={effect = {add_artifact = ate_calculator} }
-	2659.11.22={effect = {add_artifact = magnum_opus_alchemy_panacea_3} }
+	2640.4.3={effect={add_artifact=ate_calculator}}
+	2659.11.22={effect={add_artifact=magnum_opus_alchemy_panacea_3}}
 	2699.7.30={death=yes}
 }
 1001034={
@@ -786,7 +786,7 @@
 	trait=proud
 	trait=kind
 	2643.4.10={birth=yes}
-	2665.2.5={effect = {add_lover=1001037}}
+	2665.2.5={effect={add_lover=1001037}}
 	2665.5.4={add_spouse=1001037}
 	2722.4.1={death=yes}
 }
@@ -1030,7 +1030,7 @@
 	trait=kind
 	trait=diligent
 	2579.8.12={birth=yes}
-	2601.6.10={ add_spouse=1001049 }
+	2601.6.10={add_spouse=1001049}
 	2650.3.2={death=yes}
 }
 1001051={
@@ -1090,8 +1090,8 @@
 	trait=brave
 	trait=just
 	trait=proud
-	add_claim = k_england
-	add_claim = c_london
+	add_claim=k_england
+	add_claim=c_london
 	2640.5.24={birth=yes}
 	2721.1.22={death=yes}
 }
@@ -1392,7 +1392,7 @@
 	2663.12.25={employer=3046007}
 }
 
-1001077 ={
+1001077={
 	name="Naomi"
 	dynasty=1601101 #Rainwood
 	dna=babfeefahcc
@@ -1417,10 +1417,10 @@
 	add_trait=painter
 	add_trait=rude
 	2635.5.25={birth=yes}
-	2659.5.25={effect={add_artifact = favorite_shades}}
+	2659.5.25={effect={add_artifact=favorite_shades}}
 	2700.1.1={death=yes}
 }
-1001078 ={
+1001078={
 	name="Hugo"
 	dynasty=1001121 #Chakrabongse
 	culture=southeastasian
@@ -1430,7 +1430,7 @@
 		culture=southerner}
 	2666.1.1={employer=1001003}
 }
-1001079 ={
+1001079={
 	name="Barry"
 	dynasty=0
 	culture=northerner

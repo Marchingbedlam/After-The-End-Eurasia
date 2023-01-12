@@ -20,7 +20,7 @@
 	2642.5.21={birth=yes}
 	2664.1.1={effect={add_lover=1958002}}
 	2664.1.1={add_spouse=1958002}
-	2666.5.9={effect={add_artifact = the_spiritual_contract}}
+	2666.5.9={effect={add_artifact=the_spiritual_contract}}
 	2700.1.1={death=yes}
 }
 1958001={
@@ -313,7 +313,7 @@
 	trait=lunatic
 	trait=proud
 	trait=genius
-	properties = dn0clc000000
+	properties=dn0clc000000
 	2646.6.6={birth=yes}
 	2700.1.1={death=yes}
 }
@@ -637,7 +637,7 @@
 	trait=trusting
 	2198.9.4={birth=yes}
 	2235.12.13={add_spouse=1958101}
-	2246.3.25={ 
+	2246.3.25={
 		death={
 			death_reason=death_murder_unknown #Heinrich Geyer
 		}
@@ -707,7 +707,7 @@
 	2269.5.8={birth=yes}
 	2286.1.1={add_spouse=1958105}
 	2295.1.1={give_nickname=nick_the_profligate}
-	2305.8.2={ 
+	2305.8.2={
 		death={
 			death_reason=death_murder_unknown #poisoned
 		}
@@ -2224,8 +2224,8 @@
 	trait=fortune_builder
 	mother=1958320
 	2623.5.5={birth=yes
-	add_claim = d_brandenburg
-	add_claim = d_mecklenburg_vorpommern}
+	add_claim=d_brandenburg
+	add_claim=d_mecklenburg_vorpommern}
 	2700.1.1={death=yes}
 }
 1958232={
@@ -2855,8 +2855,8 @@
 	give_nickname=nick_the_old
 	2417.10.20={birth=yes}
 	2495.11.19={death={
-			death_reason=death_dungeon
-			killer=1958139}}
+		death_reason=death_dungeon
+		killer=1958139}}
 }
 1958289={
 	name="Maarten"
@@ -2874,8 +2874,8 @@
 	father=1958289
 	2453.10.1={birth=yes}
 	2503.10.17={death={
-			death_reason=death_murder
-			killer=1958323}}
+		death_reason=death_murder
+		killer=1958323}}
 }
 1958291={
 	name="Ludwig"
@@ -3088,8 +3088,8 @@
 	father=1958312
 	2457.7.3={birth=yes}
 	2490.7.24={death={
-			death_reason=death_battle
-			killer=1958139
+		death_reason=death_battle
+		killer=1958139
 		}
 	}
 }

@@ -16,7 +16,8 @@
 	trait=gregarious
 	trait=erudite
 	trait=trusting
-	2638.1.1={birth=yes}	
+	2638.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
 3601001={
 	name="Umar"
@@ -58,6 +59,7 @@
 	trait=ambitious
 	trait=diligent
 	2640.4.5={birth=yes}
+	2700.1.1={death=yes}
 }
 3601005={ #Count of Tartus and al-Ladhiqiyah
 	name="Sulayman"
@@ -75,6 +77,7 @@
 	trait=pious
 	father=3601689
 	2644.11.19={birth=yes}
+	2700.1.1={death=yes}
 }
 3601006={ #Count of Idlib
 	name="Ahmad"
@@ -83,6 +86,7 @@
 	religion=sunni
 	father=3601656
 	2610.11.27={birth=yes}
+	2700.1.1={death=yes}
 }
 3601007={ #Count of Hama
 	name="Ahmad"
@@ -96,6 +100,7 @@
 	trait=wroth
 	trait=zealous
 	2631.4.6={birth=yes}
+	2700.1.1={death=yes}
 }
 3601008={ #Count of Kobani
 	name="Necîbe"
@@ -111,6 +116,7 @@
 	trait=just
 	father=3601677
 	2642.7.2={birth=yes}
+	2700.1.1={death=yes}
 }
 3601009={ #Count of Al-Hasakah
 	name="Aram"
@@ -126,6 +132,7 @@
 	trait=temperate
 	father=3601648
 	2609.6.4={birth=yes}
+	2700.1.1={death=yes}
 }
 3601010={
 	name="Rojda"
@@ -141,6 +148,7 @@
 	trait=honest
 	trait=gregarious
 	2644.7.8={birth=yes}
+	2700.1.1={death=yes}
 }
 3601011={ #Count of Tell Tamer
 	name="Adwar"
@@ -151,6 +159,7 @@
 	trait=honorable
 	trait=humble
 	2620.3.1={birth=yes}
+	2700.1.1={death=yes}
 }
 3601012={ #Duke of Tadmur an-Nahar Cult
 	name="Khalid"
@@ -163,6 +172,7 @@
 	trait=ambitious
 	trait=brave
 	2642.11.3={birth=yes}
+	2700.1.1={death=yes}
 }
 3601013={ #Duke of Hims (Actual Duchy)
 	name="Ali"
@@ -170,6 +180,7 @@
 	culture=suriyi
 	religion=sunni
 	2632.5.20={birth=yes}
+	2700.1.1={death=yes}
 }
 3601014={
 	name="Muhammad"
@@ -181,8 +192,9 @@
 	trait=brave
 	trait=shy
 	2606.9.8={birth=yes}
+	2700.1.1={death=yes}
 }
-3601015={ 
+3601015={
 	name="Ebdulla"
 	dynasty=2066023 #Mihemed
 	culture=kurdish
@@ -194,6 +206,7 @@
 	trait=honest
 	trait=gregarious
 	2628.6.7={birth=yes}
+	2700.1.1={death=yes}
 }
 3601016={ #Duke of Halab
 	name="Abdurrahman"
@@ -206,6 +219,7 @@
 	trait=wroth
 	trait=brave
 	2619.9.4={birth=yes}
+	2700.1.1={death=yes}
 }
 3601017={ #Duke of Damascus
 	name="Nizar"
@@ -222,6 +236,7 @@
 	trait=pious
 	father=3601701
 	2643.10.14={birth=yes}
+	2700.1.1={death=yes}
 }
 3601018={ #count of As-Suwayda
 	name="Hasan"
@@ -236,6 +251,7 @@
 	trait=brave
 	father=3601713
 	2645.1.10={birth=yes}
+	2700.1.1={death=yes}
 }
 3601019={ #count of Duma
 	name="Sultan"
@@ -248,6 +264,7 @@
 	trait=wroth
 	trait=brave
 	2641.8.10={birth=yes}
+	2700.1.1={death=yes}
 }
 3601020={ #count of Dara'a
 	name="Abdullah"
@@ -274,6 +291,7 @@
 	trait=patient	
 	2618.2.2={birth=yes}
 	2640.1.1={add_spouse=3601022}
+	2700.1.1={death=yes}
 }
 3601022={
 	name="Hiyam"
@@ -286,6 +304,7 @@
 	trait=humble
 	trait=diligent
 	2621.10.28={birth=yes}
+	2700.1.1={death=yes}
 }
 3601023={
 	name="Hattem"
@@ -302,6 +321,7 @@
 	2641.12.17={birth=yes}
 	2660.1.1={add_spouse=3601024}
 	2660.1.1={employer=3600018}
+	2700.1.1={death=yes}
 }
 3601024={
 	name="Viktoria"
@@ -309,6 +329,7 @@
 	religion=orthodox
 	female=yes
 	2644.3.6={birth=yes}
+	2700.1.1={death=yes}
 }
 3601025={
 	name="Muna"
@@ -323,6 +344,7 @@
 	trait=cynical
 	trait=charitable
 	2643.12.2={birth=yes}
+	2700.1.1={death=yes}
 }
 3601026={
 	name="Marwan"
@@ -336,6 +358,7 @@
 	trait=deceitful
 	trait=lustful
 	2645.8.25={birth=yes}
+	2700.1.1={death=yes}
 }
 3601027={
 	name="Amal"
@@ -350,6 +373,7 @@
 	trait=humble
 	trait=kind
 	2647.9.28={birth=yes}
+	2700.1.1={death=yes}
 }
 3601028={
 	name="Umar"
@@ -364,8 +388,9 @@
 	trait=sympathy_christendom
 	2618.2.13={birth=yes}
 	2665.1.1={employer=3601000}
+	2700.1.1={death=yes}
 }
-3601029={ 
+3601029={
 	name="Gabro" #Apostolic assyrian
 	dynasty=2104045 #Noohra
 	culture=assyrian
@@ -385,216 +410,213 @@
 	learning=4
 	father=3601626
 	2611.3.18={birth=yes}
+	2700.1.1={death=yes}
 }
 
 ###############################Lebanon Characters###################################
 
-3601500 = { #Head Patrician of the Beirut Republic
-	name = "Elias" 
-	dynasty = 2105000 #Jibran
-	culture = lebneni
-	religion = catholic
-	father = 3601501
-	mother = 3601502
-	trait = charismatic_negotiator
-	trait = maronite_rite
-	trait = poet
-	trait = mystic
-	trait = erudite
-	trait = gregarious
-	trait = sympathy_islam
-	trait = sympathy_islamosyncretic
-	2645.1.1 = { birth = yes }
+3601500={ #Head Patrician of the Beirut Republic
+	name="Elias" 
+	dynasty=2105000 #Jibran
+	culture=lebneni
+	religion=catholic
+	father=3601501
+	mother=3601502
+	trait=charismatic_negotiator
+	trait=maronite_rite
+	trait=poet
+	trait=mystic
+	trait=erudite
+	trait=gregarious
+	trait=sympathy_islam
+	trait=sympathy_islamosyncretic
+	2645.1.1={birth=yes}
 }
-3601501 = {
-	name = "Khalil" 
-	dynasty = 2105000 #Jibran
-	culture = lebneni
-	religion = catholic
-	trait = scholarly_theologian
-	trait = maronite_rite
-	trait = poet
-	trait = mystic
-	trait = sympathy_islam
-	trait = sympathy_islamosyncretic
-	2610.1.1 = { birth = yes }
+3601501={
+	name="Khalil" 
+	dynasty=2105000 #Jibran
+	culture=lebneni
+	religion=catholic
+	trait=scholarly_theologian
+	trait=maronite_rite
+	trait=poet
+	trait=mystic
+	trait=sympathy_islam
+	trait=sympathy_islamosyncretic
+	2610.1.1={birth=yes}
 	2641.3.14={add_spouse=3601502}
-	2660.1.1 = { death = yes }
+	2660.1.1={death=yes}
 }
-3601502 = {
-	name = "Kamila" 
-	culture = lebneni
-	religion = catholic
-	female = yes
-	trait = grey_eminence
-	trait = maronite_rite
-	trait = kind
-	trait = gregarious
-	2615.1.1 = { birth = yes }
+3601502={
+	name="Kamila" 
+	culture=lebneni
+	religion=catholic
+	female=yes
+	trait=grey_eminence
+	trait=maronite_rite
+	trait=kind
+	trait=gregarious
+	2615.1.1={birth=yes}
 }
-3601503 = { #Patrician of the Beirut Republic
-	name = "Tigran" 
-	dynasty = 2105001 #Sarkesian
-	culture = lebneni
-	religion = miaphysite
-	trait = school_thaddeus
-	trait = fortune_builder
-	trait = greedy
-	trait = temperate
-	trait = cynical
-	2638.1.1 = { birth = yes }
-	2660.1.1 = {
-		add_spouse = 3600545
+3601503={ #Patrician of the Beirut Republic
+	name="Tigran" 
+	dynasty=2105001 #Sarkesian
+	culture=lebneni
+	religion=miaphysite
+	trait=school_thaddeus
+	trait=fortune_builder
+	trait=greedy
+	trait=temperate
+	trait=cynical
+	2638.1.1={birth=yes}
+	2660.1.1={add_spouse=3600545
 	}
 }
-3601504 = { 
-	name = "Yahya" 
-	culture = lebneni
-	religion = catholic
-	trait = maronite_rite
-	dynasty = 2105000 #Jibran
-	trait = underhanded_rogue
-	trait = chaste
-	trait = temperate
-	trait = humble
-	father = 3601501
-	mother = 3601502
-	2648.1.1 = { birth = yes }
+3601504={
+	name="Yahya" 
+	culture=lebneni
+	religion=catholic
+	trait=maronite_rite
+	dynasty=2105000 #Jibran
+	trait=underhanded_rogue
+	trait=chaste
+	trait=temperate
+	trait=humble
+	father=3601501
+	mother=3601502
+	2648.1.1={birth=yes}
 }
-3601505 = { 
-	name = "Alisa" 
-	dynasty = 2105001 #Sarkesian
-	culture = lebneni
-	trait = school_thaddeus
-	religion = miaphysite
+3601505={
+	name="Alisa" 
+	dynasty=2105001 #Sarkesian
+	culture=lebneni
+	trait=school_thaddeus
+	religion=miaphysite
 	father=3601503
 	mother=3600545
-	female = yes
-	2661.1.1 = { birth = yes }
+	female=yes
+	2661.1.1={birth=yes}
 }
-3601506 = { 
-	name = "Vardan" 
-	dynasty = 2105001 #Sarkesian
+3601506={
+	name="Vardan" 
+	dynasty=2105001 #Sarkesian
 	father=3601503
 	mother=3600545
-	trait = school_thaddeus
-	culture = lebneni
-	religion = miaphysite
-	2663.1.1 = { birth = yes }
+	trait=school_thaddeus
+	culture=lebneni
+	religion=miaphysite
+	2663.1.1={birth=yes}
 }
-3601507 = { #Patrician of the Beirut Republic
-	name = "Mansour" 
-	dynasty = 2105002 #Rahbani
-	culture = lebneni
-	religion = catholic
-	trait = charismatic_negotiator
-	trait = byzantine_rite
-	trait = musician
-	trait = sympathy_islam
-	trait = groomed
-	trait = kind
-	trait = temperate
-	2615.1.1 = { birth = yes }
-	2640.1.1 = {
-		add_spouse = 3601508
-	}
-}
-3601508 = { 
-	name = "Nadine" 
-	culture = lebneni
-	religion = catholic
-	female = yes
-	trait = byzantine_rite
-	2618.1.1 = { birth = yes }
-}
-3601509 = { 
-	name = "Fairuz" 
-	dynasty = 2105002 #Rahbani
-	culture = lebneni
-	religion = catholic
-	female = yes
-	father = 3601507
-	mother = 3601508
-	trait = grey_eminence
-	trait = byzantine_rite
-	trait = sympathy_islam
-	trait = fair
-	trait = musician
-	trait = gregarious
-	trait = groomed
-	2643.1.1 = { birth = yes }
-}
-3601510 = { 
-	name = "Assi" 
-	dynasty = 2105002 #Rahbani
-	culture = lebneni
-	religion = catholic
-	father = 3601507
-	mother = 3601508
-	trait = fortune_builder
-	trait = byzantine_rite
-	trait = musician
-	trait = charitable
-	trait = trusting
-	trait = humble
-	2646.1.1 = { birth = yes }
-}
-3601511 = { 
-	name = "Ziad" 
-	dynasty = 2105002 #Rahbani
-	culture = lebneni
-	religion = catholic
-	father = 3601507
-	mother = 3601508
-	trait = intricate_webweaver
-	trait = musician
-	trait = groomed
-	trait = deceitful
-	trait = proud
-	trait = lustful
+3601507={ #Patrician of the Beirut Republic
+	name="Mansour" 
+	dynasty=2105002 #Rahbani
+	culture=lebneni
+	religion=catholic
+	trait=charismatic_negotiator
 	trait=byzantine_rite
-	2648.1.1 = { birth = yes }
-}
-3601512 = { #Patrician of the Beirut Republic
-	name = "Hasan" 
-	dynasty = 2105003 #Usseiran
-	culture = lebneni
-	religion = shiite
-	trait = scholarly_theologian
-	trait = scholar
-	trait = familyperson
-	trait = temperate
-	trait = erudite
-	2599.1.1 = { birth = yes }
-	2620.1.1 = {
-		add_spouse = 3601513
+	trait=musician
+	trait=sympathy_islam
+	trait=groomed
+	trait=kind
+	trait=temperate
+	2615.1.1={birth=yes}
+	2640.1.1={add_spouse=3601508
 	}
 }
-3601513 = { 
-	name = "Fatima" 
-	culture = lebneni
-	religion = shiite
-	female = yes
-	2603.1.1 = { birth = yes }
+3601508={
+	name="Nadine" 
+	culture=lebneni
+	religion=catholic
+	female=yes
+	trait=byzantine_rite
+	2618.1.1={birth=yes}
 }
-3601514 = { 
-	name = "Husayn" 
-	dynasty = 2105003 #Usseiran
-	culture = lebneni
-	religion = shiite
-	father = 3601512
-	mother = 3601513
-	trait = mastermind_theologian
-	trait = scholar
-	trait = feeble
-	trait = temperate
-	trait = stubborn
-	2624.1.1 = { birth = yes }
-	2642.1.1 = {
-		effect = { add_rival = 3601517 }
+3601509={
+	name="Fairuz" 
+	dynasty=2105002 #Rahbani
+	culture=lebneni
+	religion=catholic
+	female=yes
+	father=3601507
+	mother=3601508
+	trait=grey_eminence
+	trait=byzantine_rite
+	trait=sympathy_islam
+	trait=fair
+	trait=musician
+	trait=gregarious
+	trait=groomed
+	2643.1.1={birth=yes}
+}
+3601510={
+	name="Assi" 
+	dynasty=2105002 #Rahbani
+	culture=lebneni
+	religion=catholic
+	father=3601507
+	mother=3601508
+	trait=fortune_builder
+	trait=byzantine_rite
+	trait=musician
+	trait=charitable
+	trait=trusting
+	trait=humble
+	2646.1.1={birth=yes}
+}
+3601511={
+	name="Ziad" 
+	dynasty=2105002 #Rahbani
+	culture=lebneni
+	religion=catholic
+	father=3601507
+	mother=3601508
+	trait=intricate_webweaver
+	trait=musician
+	trait=groomed
+	trait=deceitful
+	trait=proud
+	trait=lustful
+	trait=byzantine_rite
+	2648.1.1={birth=yes}
+}
+3601512={ #Patrician of the Beirut Republic
+	name="Hasan" 
+	dynasty=2105003 #Usseiran
+	culture=lebneni
+	religion=shiite
+	trait=scholarly_theologian
+	trait=scholar
+	trait=familyperson
+	trait=temperate
+	trait=erudite
+	2599.1.1={birth=yes}
+	2620.1.1={add_spouse=3601513
 	}
-	2643.1.1 = {
-		add_spouse = 3601515
+}
+3601513={
+	name="Fatima" 
+	culture=lebneni
+	religion=shiite
+	female=yes
+	2603.1.1={birth=yes}
+}
+3601514={
+	name="Husayn" 
+	dynasty=2105003 #Usseiran
+	culture=lebneni
+	religion=shiite
+	father=3601512
+	mother=3601513
+	trait=mastermind_theologian
+	trait=scholar
+	trait=feeble
+	trait=temperate
+	trait=stubborn
+	2624.1.1={birth=yes}
+	2642.1.1={
+		effect={add_rival=3601517}
+	}
+	2643.1.1={add_spouse=3601515
 	}
 	
 }
@@ -604,6 +626,7 @@
 	religion=shiite
 	female=yes
 	2626.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
 3601516={
 	name="Khalid"
@@ -613,6 +636,7 @@
 	father=3601514
 	mother=3601515
 	2647.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
 3601517={
 	name="Muhammad"
@@ -622,6 +646,7 @@
 	father=3601514
 	mother=3601515
 	2652.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
 3601518={
 	name="Abdullah"
@@ -636,9 +661,9 @@
 	trait=stubborn
 	trait=zealous
 	2630.1.1={birth=yes}
-	2655.1.1={
-		add_spouse=3601519
+	2655.1.1={add_spouse=3601519
 	}
+	2700.1.1={death=yes}
 }
 3601519={
 	name="Khadija"
@@ -646,6 +671,7 @@
 	religion=shiite
 	female=yes
 	2635.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
 3601520={
 	name="Ali"
@@ -655,6 +681,7 @@
 	father=3601518
 	mother=3601519
 	2656.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
 3601521={
 	name="Nasrin"
@@ -665,245 +692,243 @@
 	father=3601518
 	mother=3601519
 	2658.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
-3601522 = { #Patrician of the Beirut Republic
-	name = "Walid" 
-	dynasty = 2105004 #Talal
-	culture = lebneni
-	religion = sunni
-	trait = tough_soldier
-	trait = charitable
-	trait = kind
-	trait = stubborn
-	trait = brave
-	2640.1.1 = { birth = yes }
+3601522={ #Patrician of the Beirut Republic
+	name="Walid" 
+	dynasty=2105004 #Talal
+	culture=lebneni
+	religion=sunni
+	trait=tough_soldier
+	trait=charitable
+	trait=kind
+	trait=stubborn
+	trait=brave
+	2640.1.1={birth=yes}
 }
-3601523 = { #Count of Sur
-	name = "Musa"
-	dynasty = 2105005 #Sharafeddine
-	culture = lebneni
-	religion = shiite
-	trait = skilled_tactician
-	trait = sayyid
-	trait = brave
-	trait = pious
-	trait = erudite
-	2630.1.1 = { birth = yes }
-	2657.1.1 = {
-		add_spouse = 3601524
+3601523={ #Count of Sur
+	name="Musa"
+	dynasty=2105005 #Sharafeddine
+	culture=lebneni
+	religion=shiite
+	trait=skilled_tactician
+	trait=sayyid
+	trait=brave
+	trait=pious
+	trait=erudite
+	2630.1.1={birth=yes}
+	2657.1.1={add_spouse=3601524
 	}
 }
-3601524 = { 
-	name = "Mona"
-	culture = lebneni
-	religion = shiite
-	female = yes
-	2637.1.1 = { birth = yes }
+3601524={
+	name="Mona"
+	culture=lebneni
+	religion=shiite
+	female=yes
+	2637.1.1={birth=yes}
 }
-3601525 = { 
-	name = "Samir"
-	dynasty = 2105005 #Sharafeddine
-	culture = lebneni
-	religion = shiite
-	father = 3601523
-	mother = 3601524
-	2657.1.1 = { birth = yes }
+3601525={
+	name="Samir"
+	dynasty=2105005 #Sharafeddine
+	culture=lebneni
+	religion=shiite
+	father=3601523
+	mother=3601524
+	2657.1.1={birth=yes}
 }
-3601526 = { 
-	name = "Omar"
-	dynasty = 2105005 #Sharafeddine
-	culture = lebneni
-	religion = shiite
-	father = 3601523
-	mother = 3601524
-	2662.1.1 = { birth = yes }
+3601526={
+	name="Omar"
+	dynasty=2105005 #Sharafeddine
+	culture=lebneni
+	religion=shiite
+	father=3601523
+	mother=3601524
+	2662.1.1={birth=yes}
 }
-3601527 = { #Count of Beqaa
-	name = "Amin"
-	dynasty = 2105006 #Arslan
-	culture = lebneni
-	religion = druze
-	trait = skilled_tactician
-	trait = adventurer
-	trait = brave
-	trait = wroth
-	trait = honorable
-	2645.1.1 = { birth = yes }
+3601527={ #Count of Beqaa
+	name="Amin"
+	dynasty=2105006 #Arslan
+	culture=lebneni
+	religion=druze
+	trait=skilled_tactician
+	trait=adventurer
+	trait=brave
+	trait=wroth
+	trait=honorable
+	2645.1.1={birth=yes}
 }
-3601528 = { #Count of Saida
-	name = "Riad"
-	dynasty = 2105007 #As-Sulah
-	culture = lebneni
-	religion = sunni
-	trait = martial_cleric
-	trait = humble
-	trait = craven
-	trait = patient
-	trait = pious
-	2640.1.1 = { birth = yes }
+3601528={ #Count of Saida
+	name="Riad"
+	dynasty=2105007 #As-Sulah
+	culture=lebneni
+	religion=sunni
+	trait=martial_cleric
+	trait=humble
+	trait=craven
+	trait=patient
+	trait=pious
+	2640.1.1={birth=yes}
 }
-3601529 = { #Count of Baalbek
-	name = "Baha' ad-Din"
-	dynasty = 2105008 #Harfush
-	culture = lebneni
-	religion = shiite
-	trait = tough_soldier
-	trait = strong
-	trait = brave
-	trait = patient
-	trait = proud
-	2642.1.1 = { birth = yes }
+3601529={ #Count of Baalbek
+	name="Baha' ad-Din"
+	dynasty=2105008 #Harfush
+	culture=lebneni
+	religion=shiite
+	trait=tough_soldier
+	trait=strong
+	trait=brave
+	trait=patient
+	trait=proud
+	2642.1.1={birth=yes}
 }
-3601530 = { #Count of Tarabulus
-	name = "Abdurrashid"
-	dynasty = 2105009 #Karami
-	culture = lebneni
-	religion = sunni
-	father = 3601531
-	mother = 3601532
-	trait = martial_cleric
-	trait = humble
-	trait = craven
-	trait = patient
-	trait = pious
-	2642.1.1 = { birth = yes }
+3601530={ #Count of Tarabulus
+	name="Abdurrashid"
+	dynasty=2105009 #Karami
+	culture=lebneni
+	religion=sunni
+	father=3601531
+	mother=3601532
+	trait=martial_cleric
+	trait=humble
+	trait=craven
+	trait=patient
+	trait=pious
+	2642.1.1={birth=yes}
 }
-3601531 = { 
-	name = "Jalal"
-	dynasty = 2105009 #Karami
-	culture = lebneni
-	religion = sunni
-	father = 3601533
-	trait = martial_cleric
-	trait = humble
-	trait = craven
-	trait = patient
-	trait = pious
-	2617.1.1 = { birth = yes }
-	2630.1.1 = { 
-		add_spouse = 3601532
+3601531={
+	name="Jalal"
+	dynasty=2105009 #Karami
+	culture=lebneni
+	religion=sunni
+	father=3601533
+	trait=martial_cleric
+	trait=humble
+	trait=craven
+	trait=patient
+	trait=pious
+	2617.1.1={birth=yes}
+	2630.1.1={add_spouse=3601532
 	}
-	2662.1.1 = { 		
-		death = { 
-			death_reason = death_drank_poison
+	2662.1.1={		
+		death={
+			death_reason=death_drank_poison
 		}
 	}
 }
-3601532 = { 
-	name = "Jamila"
-	culture = lebneni
-	religion = sunni
-	female = yes
-	trait = charismatic_negotiator
-	trait = brave
-	trait = kind
-	2617.1.1 = { birth = yes }
-	2662.1.1 = { 		
-		effect = { 
-			add_rival = 3601534
+3601532={
+	name="Jamila"
+	culture=lebneni
+	religion=sunni
+	female=yes
+	trait=charismatic_negotiator
+	trait=brave
+	trait=kind
+	2617.1.1={birth=yes}
+	2662.1.1={		
+		effect={
+			add_rival=3601534
 		}
 	}
 }
-3601533 = { 
-	name = "Ragheb"
-	dynasty = 2105009 #Karami
-	culture = lebneni
-	religion = sunni
-	2590.1.1 = { birth = yes }
-	2650.1.1 = { 		
-		death = { 
-			death_reason = death_drank_poison
+3601533={
+	name="Ragheb"
+	dynasty=2105009 #Karami
+	culture=lebneni
+	religion=sunni
+	2590.1.1={birth=yes}
+	2650.1.1={		
+		death={
+			death_reason=death_drank_poison
 		}
 	}
 }
-3601534 = { 
-	name = "Wajih"
-	dynasty = 2105009 #Karami
-	culture = lebneni
-	religion = sunni
-	father = 3601533
-	trait = intricate_webweaver
-	trait = deceitful
-	trait = ambitious
-	trait = patient
-	trait = proud
-	2622.1.1 = { birth = yes }
-	2645.1.1 = { 
-		add_spouse = 3601535
+3601534={
+	name="Wajih"
+	dynasty=2105009 #Karami
+	culture=lebneni
+	religion=sunni
+	father=3601533
+	trait=intricate_webweaver
+	trait=deceitful
+	trait=ambitious
+	trait=patient
+	trait=proud
+	2622.1.1={birth=yes}
+	2645.1.1={add_spouse=3601535
 	}
 }
-3601535 = { 
-	name = "Niveen"
-	father = 3601006
-	dynasty = 2103006 #Sahyouni
-	culture = suriyi
-	religion = sunni
-	female = yes
-	trait = thrifty_clerk
-	trait = temperate
-	trait = trusting
-	2625.1.1 = { birth = yes }
+3601535={
+	name="Niveen"
+	father=3601006
+	dynasty=2103006 #Sahyouni
+	culture=suriyi
+	religion=sunni
+	female=yes
+	trait=thrifty_clerk
+	trait=temperate
+	trait=trusting
+	2625.1.1={birth=yes}
 }
-3601536 = { 
-	name = "Nabil"
-	dynasty = 2105009 #Karami
-	culture = lebneni
-	religion = sunni
-	father = 3601534
-	mother = 3601535
-	trait = amateurish_plotter
-	trait = twin
-	trait = deceitful
-	trait = greedy
-	trait = ambitious
-	trait = ruthless
-	2646.1.1 = { birth = yes }
+3601536={
+	name="Nabil"
+	dynasty=2105009 #Karami
+	culture=lebneni
+	religion=sunni
+	father=3601534
+	mother=3601535
+	trait=amateurish_plotter
+	trait=twin
+	trait=deceitful
+	trait=greedy
+	trait=ambitious
+	trait=ruthless
+	2646.1.1={birth=yes}
 }
-3601537 = { 
-	name = "Rina"
-	dynasty = 2105009 #Karami
-	culture = lebneni
-	religion = sunni
-	female = yes
-	father = 3601534
-	mother = 3601535
-	trait = amateurish_plotter
-	trait = twin
-	trait = rude
-	trait = lustful
-	trait = groomed
-	trait = gregarious
-	2646.1.1 = { birth = yes }
+3601537={
+	name="Rina"
+	dynasty=2105009 #Karami
+	culture=lebneni
+	religion=sunni
+	female=yes
+	father=3601534
+	mother=3601535
+	trait=amateurish_plotter
+	trait=twin
+	trait=rude
+	trait=lustful
+	trait=groomed
+	trait=gregarious
+	2646.1.1={birth=yes}
 }
-3601538 = { #placeholder Catholicos of Cilicia
-	name = "Aphrem"
-	culture = assyrian
-	religion = miaphysite
-	trait = school_peter
-	trait = mastermind_theologian
-	trait = pious
-	trait = shy
-	trait = theologian
-	2630.1.1 = { birth = yes }
-    2640.1.1 = {
-        effect = {
-            set_special_character_title = DESERT_FATHER_TITLE
-        }
-    }
+3601538={ #placeholder Catholicos of Cilicia
+	name="Aphrem"
+	culture=assyrian
+	religion=miaphysite
+	trait=school_peter
+	trait=mastermind_theologian
+	trait=pious
+	trait=shy
+	trait=theologian
+	2630.1.1={birth=yes}
+    2640.1.1={
+        effect={
+            set_special_character_title=DESERT_FATHER_TITLE
+      }
+  }
 }
-3601539 = { #placeholder Catholicos of Etchmiadzin
-	name = "Karekin"
-	culture = armenian
-	religion = miaphysite
-	trait = school_thaddeus
-	trait = mastermind_theologian
-	trait = pious
-	trait = shy
-	trait = theologian
-	2630.1.1 = { birth = yes }
-	2660.1.1 = {
-		effect_even_if_dead = {
-			set_special_character_title = DESERT_FATHER_TITLE
+3601539={ #placeholder Catholicos of Etchmiadzin
+	name="Karekin"
+	culture=armenian
+	religion=miaphysite
+	trait=school_thaddeus
+	trait=mastermind_theologian
+	trait=pious
+	trait=shy
+	trait=theologian
+	2630.1.1={birth=yes}
+	2660.1.1={
+		effect_even_if_dead={
+			set_special_character_title=DESERT_FATHER_TITLE
 		}
 	}
 }
@@ -915,6 +940,7 @@
 	religion=sunni
 	father=3601002
 	2615.11.11={birth=yes}
+	2700.1.1={death=yes}
 }
 3601541={
 	name="Mukarram"
@@ -1042,7 +1068,7 @@
 	2238.1.5={birth=yes}
 	2311.10.20={death=yes}
 }
-3601552={ 
+3601552={
 	name="Valentina"
 	female=yes
 	dynasty=2074067 #Türkkan
@@ -1483,7 +1509,7 @@
 	2284.7.20={birth=yes}
 	2342.1.20={death=yes}
 }
-3601594={ 
+3601594={
 	name="Ismail"
 	dynasty=2103006 #Sahyouni
 	culture=suriyi
@@ -1491,7 +1517,7 @@
 	2309.4.24={birth=yes}
 	2358.9.22={death=yes}
 }
-3601595={ 
+3601595={
 	name="Salah"
 	dynasty=2103142 #Hawrani
 	culture=suriyi
@@ -1499,7 +1525,7 @@
 	2258.10.4={birth=yes}
 	2338.7.13={death=yes}
 }
-3601596={ 
+3601596={
 	name="Musa"
 	dynasty=2103001 #Qabbani
 	culture=suriyi
@@ -1507,7 +1533,7 @@
 	2293.4.24={birth=yes}
 	2345.6.23={death=yes}
 }
-3601597={ 
+3601597={
 	name="Salim"
 	dynasty=2103143 #al-Asali
 	culture=suriyi
@@ -1515,7 +1541,7 @@
 	2312.11.23={birth=yes}
 	2372.9.24={death=yes}
 }
-3601598={ 
+3601598={
 	name="Fathallah"
 	dynasty=2103144 #Ghadban
 	culture=suriyi
@@ -1523,7 +1549,7 @@
 	2298.8.20={birth=yes}
 	2340.3.15={death=yes}
 }
-3601599={ 
+3601599={
 	name="Elîriza"
 	dynasty=2066021 #Mirkan
 	culture=kurdish
@@ -1531,7 +1557,7 @@
 	2293.11.16={birth=yes}
 	2346.8.31={death=yes}
 }
-3601600={ 
+3601600={
 	name="Riad"
 	dynasty=2103005 #Al-Ali
 	culture=suriyi
@@ -1539,7 +1565,7 @@
 	2293.9.16={birth=yes}
 	2339.7.4={death=yes}
 }
-3601601={ 
+3601601={
 	name="Jamal"
 	dynasty=2103009 #Al-Atrash
 	culture=suriyi
@@ -1547,7 +1573,7 @@
 	2300.4.23={birth=yes}
 	2361.12.27={death=yes}
 }
-3601602={ 
+3601602={
 	name="Fawzi"
 	dynasty=2103145 #Tarif
 	culture=suriyi
@@ -1555,7 +1581,7 @@
 	2292.9.22={birth=yes}
 	2340.11.5={death=yes}
 }
-3601603={ 
+3601603={
 	name="Muhammad"
 	dynasty=2103139 #Eid
 	culture=suriyi
@@ -1564,7 +1590,7 @@
 	2300.5.25={birth=yes}
 	2358.3.13={death=yes}
 }
-3601604={ 
+3601604={
 	name="Shahud"
 	dynasty=2103139 #Eid
 	culture=suriyi
@@ -1623,7 +1649,7 @@
 	2293.1.2={birth=yes}
 	2363.5.16={death=yes}
 }
-3601611={ 
+3601611={
 	name="Izzat"
 	dynasty=2103001 #Qabbani
 	culture=suriyi
@@ -1632,7 +1658,7 @@
 	2315.4.23={birth=yes}
 	2363.8.28={death=yes}
 }
-3601612={ 
+3601612={
 	name="Khalid"
 	dynasty=2103001 #Qabbani
 	culture=suriyi
@@ -1641,7 +1667,7 @@
 	2326.4.20={birth=yes}
 	2374.2.8={death=yes}
 }
-3601613={ 
+3601613={
 	name="Tawfiq"
 	dynasty=2103144 #Ghadban
 	culture=suriyi
@@ -1650,7 +1676,7 @@
 	2320.4.18={birth=yes}
 	2387.10.6={death=yes}
 }
-3601614={ 
+3601614={
 	name="Muhammad"
 	dynasty=2103148 #Mujais
 	culture=suriyi
@@ -1658,7 +1684,7 @@
 	2270.5.21={birth=yes}
 	2339.3.8={death=yes}
 }
-3601615={ 
+3601615={
 	name="Rafiq"
 	dynasty=2103148 #Mujais
 	father=3601614
@@ -1693,7 +1719,7 @@
 	2323.3.10={birth=yes}
 	2393.2.7={death=yes}
 }
-3601620={ 
+3601620={
 	name="Rehîm"
 	dynasty=2066021 #Mirkan
 	culture=kurdish
@@ -1702,7 +1728,7 @@
 	2314.2.3={birth=yes}
 	2365.10.4={death=yes}
 }
-3601621={ 
+3601621={
 	name="Zahir"
 	dynasty=2066021 #Mirkan
 	culture=kurdish
@@ -1731,7 +1757,7 @@
 	2338.8.10={birth=yes}
 	2406.7.17={death={death_reason=death_trait}}
 }
-3601623={ 
+3601623={
 	name="Fadel"
 	dynasty=2103139 #Eid
 	culture=suriyi
@@ -1740,7 +1766,7 @@
 	2335.2.12={birth=yes}
 	2397.12.23={death=yes}
 }
-3601624={ 
+3601624={
 	name="Hashim"
 	dynasty=2103139 #Eid
 	culture=suriyi
@@ -1753,7 +1779,7 @@
 	2357.1.2={birth=yes}
 	2413.8.25={death={death_reason=death_execution_stoning killer=2202154}}
 }
-3601625={ 
+3601625={
 	name="Bextiyar"
 	dynasty=2066107 #Berazî
 	culture=suriyi
@@ -1764,7 +1790,7 @@
 	2375.7.12={birth=yes}
 	2411.1.21={death={death_reason=death_battle killer=2202160}}
 }
-3601626={ 
+3601626={
 	name="Aba"
 	dynasty=2104045 #Noohra
 	culture=assyrian
@@ -1774,7 +1800,7 @@
 	2582.4.23={birth=yes}
 	2643.5.23={death=yes}
 }
-3601627={ 
+3601627={
 	name="Mahdi"
 	dynasty=2104045 #Noohra
 	culture=assyrian
@@ -1784,7 +1810,7 @@
 	2560.4.3={birth=yes}
 	2615.7.13={death=yes}
 }
-3601628={ 
+3601628={
 	name="Babai"
 	dynasty=2104045 #Noohra
 	culture=assyrian
@@ -1794,7 +1820,7 @@
 	2533.7.6={birth=yes}
 	2578.11.16={death=yes}
 }
-3601629={ 
+3601629={
 	name="Nimrud"
 	dynasty=2104045 #Noohra
 	culture=assyrian
@@ -1804,7 +1830,7 @@
 	2501.5.31={birth=yes}
 	2545.1.19={death=yes}
 }
-3601630={ 
+3601630={
 	name="Nimrud"
 	dynasty=2104045 #Noohra
 	culture=assyrian
@@ -1814,7 +1840,7 @@
 	2482.11.21={birth=yes}
 	2529.5.5={death=yes}
 }
-3601631={ 
+3601631={
 	name="Salman"
 	dynasty=2104045 #Noohra
 	culture=assyrian
@@ -1824,7 +1850,7 @@
 	2455.7.21={birth=yes}
 	2496.9.24={death=yes}
 }
-3601632={ 
+3601632={
 	name="Abhai"
 	dynasty=2104045 #Noohra
 	culture=assyrian
@@ -1834,7 +1860,7 @@
 	2430.12.23={birth=yes}
 	2483.8.1={death=yes}
 }
-3601633={ 
+3601633={
 	name="Sayfo"
 	dynasty=2104045 #Noohra
 	culture=assyrian
@@ -1844,7 +1870,7 @@
 	2410.3.22={birth=yes}
 	2436.12.11={death=yes}
 }
-3601634={ 
+3601634={
 	name="Yonan"
 	dynasty=2104045 #Noohra
 	culture=assyrian
@@ -1854,7 +1880,7 @@
 	2383.6.16={birth=yes}
 	2428.3.8={death=yes}
 }
-3601635={ 
+3601635={
 	name="Maremmeh"
 	dynasty=2104045 #Noohra
 	culture=assyrian
@@ -1864,7 +1890,7 @@
 	2358.6.15={birth=yes}
 	2417.3.28={death=yes}
 }
-3601636={ 
+3601636={
 	name="Akbar"
 	dynasty=2104045 #Noohra
 	culture=assyrian
@@ -1874,7 +1900,7 @@
 	2323.8.21={birth=yes}
 	2366.11.6={death=yes}
 }
-3601637={ 
+3601637={
 	name="Mattai"
 	dynasty=2104000 #Yonadam
 	culture=assyrian
@@ -1883,7 +1909,7 @@
 	2592.5.27={birth=yes}
 	2643.9.6={death=yes}
 }
-3601638={ 
+3601638={
 	name="Danho"
 	dynasty=2104000 #Yonadam
 	culture=assyrian
@@ -1892,7 +1918,7 @@
 	2562.6.21={birth=yes}
 	2603.8.31={death=yes}
 }
-3601639={ 
+3601639={
 	name="Pirayou"
 	dynasty=2104000 #Yonadam
 	culture=assyrian
@@ -1901,7 +1927,7 @@
 	2538.3.1={birth=yes}
 	2584.12.9={death=yes}
 }
-3601640={ 
+3601640={
 	name="Ninos"
 	dynasty=2104000 #Yonadam
 	culture=assyrian
@@ -1910,7 +1936,7 @@
 	2512.12.19={birth=yes}
 	2568.7.31={death=yes}
 }
-3601641={ 
+3601641={
 	name="Fahim"
 	dynasty=2104000 #Yonadam
 	culture=assyrian
@@ -1919,7 +1945,7 @@
 	2483.6.1={birth=yes}
 	2530.5.8={death=yes}
 }
-3601642={ 
+3601642={
 	name="Khalid"
 	dynasty=2104000 #Yonadam
 	culture=assyrian
@@ -1928,7 +1954,7 @@
 	2451.12.29={birth=yes}
 	2507.11.22={death=yes}
 }
-3601643={ 
+3601643={
 	name="Ousi"
 	dynasty=2104000 #Yonadam
 	culture=assyrian
@@ -1937,7 +1963,7 @@
 	2419.2.24={birth=yes}
 	2470.5.18={death=yes}
 }
-3601644={ 
+3601644={
 	name="Maremmeh"
 	dynasty=2104000 #Yonadam
 	culture=assyrian
@@ -1946,7 +1972,7 @@
 	2395.3.9={birth=yes}
 	2436.4.23={death=yes}
 }
-3601645={ 
+3601645={
 	name="Abhai"
 	dynasty=2104000 #Yonadam
 	culture=assyrian
@@ -1955,7 +1981,7 @@
 	2367.11.9={birth=yes}
 	2402.5.17={death=yes}
 }
-3601646={ 
+3601646={
 	name="Zaki"
 	dynasty=2104000 #Yonadam
 	culture=assyrian
@@ -1964,7 +1990,7 @@
 	2337.2.29={birth=yes}
 	2384.8.16={death=yes}
 }
-3601647={ 
+3601647={
 	name="Maremmeh"
 	dynasty=2104000 #Yonadam
 	culture=assyrian
@@ -2045,7 +2071,7 @@
 	2338.4.3={birth=yes}
 	2399.9.13={death=yes}
 }
-3601656={ 
+3601656={
 	name="Hafez"
 	dynasty=2103006 #Sahyouni
 	culture=suriyi
@@ -2054,7 +2080,7 @@
 	2564.1.12={birth=yes}
 	2626.10.7={death=yes}
 }
-3601657={ 
+3601657={
 	name="Harith"
 	dynasty=2103006 #Sahyouni
 	culture=suriyi
@@ -2063,7 +2089,7 @@
 	2520.1.5={birth=yes}
 	2583.12.24={death=yes}
 }
-3601658={ 
+3601658={
 	name="Nazim"
 	dynasty=2103006 #Sahyouni
 	culture=suriyi
@@ -2072,7 +2098,7 @@
 	2491.10.10={birth=yes}
 	2547.1.10={death=yes}
 }
-3601659={ 
+3601659={
 	name="Izzat"
 	dynasty=2103006 #Sahyouni
 	culture=suriyi
@@ -2082,7 +2108,7 @@
 	2450.6.7={birth=yes}
 	2513.6.29={death=yes}
 }
-3601660={ 
+3601660={
 	name="Abdulhadi"
 	dynasty=2103006 #Sahyouni
 	culture=suriyi
@@ -2091,7 +2117,7 @@
 	2415.10.16={birth=yes}
 	2490.11.9={death=yes}
 }
-3601661={ 
+3601661={
 	name="Ammar"
 	dynasty=2103006 #Sahyouni
 	culture=suriyi
@@ -2100,7 +2126,7 @@
 	2375.6.5={birth=yes}
 	2434.9.25={death=yes}
 }
-3601662={ 
+3601662={
 	name="Haidar"
 	dynasty=2103006 #Sahyouni
 	culture=suriyi
@@ -2109,7 +2135,7 @@
 	2340.5.17={birth=yes}
 	2408.11.13={death=yes}
 }
-3601663={ 
+3601663={
 	name="Îdrîs"
 	dynasty=2066021 #Mirkan
 	culture=kurdish
@@ -2119,7 +2145,7 @@
 	2362.1.29={birth=yes}
 	2413.8.25={death={death_reason=death_execution_beheading killer=2202154}}
 }
-3601664={ 
+3601664={
 	name="Rasha"
 	female=yes
 	dynasty=2103136 #al-Qudsi
@@ -2131,7 +2157,7 @@
 	2357.1.1={add_spouse=3601621}
 	2405.1.26={death=yes}
 }
-3601665={ 
+3601665={
 	name="Selahedîn"
 	dynasty=2066021 #Mirkan
 	culture=kurdish
@@ -2141,7 +2167,7 @@
 	2365.8.12={birth=yes}
 	2411.1.21={death={death_reason=death_battle killer=2202160}}
 }
-3601666={ 
+3601666={
 	name="Îdrîs"
 	dynasty=2066021 #Mirkan
 	culture=kurdish
@@ -2150,7 +2176,7 @@
 	2406.3.20={birth=yes}
 	2457.11.30={death=yes}
 }
-3601667={ 
+3601667={
 	name="Sûsika"
 	female=yes
 	dynasty=2066021 #Mirkan
@@ -2160,7 +2186,7 @@
 	2388.8.17={birth=yes}
 	2413.8.25={death={death_reason=death_execution_beheading killer=2202154}}
 }
-3601668={ 
+3601668={
 	name="Seren"
 	female=yes
 	dynasty=2066021 #Mirkan
@@ -2170,7 +2196,7 @@
 	2391.3.30={birth=yes}
 	2413.8.25={death={death_reason=death_execution_beheading killer=2202154}}
 }
-3601669={ 
+3601669={
 	name="Yûnis"
 	dynasty=2066021 #Mirkan
 	culture=kurdish
@@ -2180,7 +2206,7 @@
 	2406.1.1={add_spouse=3601667}
 	2411.1.21={death={death_reason=death_battle killer=2202160}}
 }
-3601670={ 
+3601670={
 	name="Mîrza"
 	dynasty=2066021 #Mirkan
 	culture=kurdish
@@ -2189,7 +2215,7 @@
 	2424.1.14={birth=yes}
 	2458.3.9={death=yes}
 }
-3601671={ 
+3601671={
 	name="Selahedîn"
 	dynasty=2066021 #Mirkan
 	culture=kurdish
@@ -2198,7 +2224,7 @@
 	2452.2.17={birth=yes}
 	2510.10.14={death=yes}
 }
-3601672={ 
+3601672={
 	name="Riza"
 	dynasty=2066021 #Mirkan
 	culture=kurdish
@@ -2208,7 +2234,7 @@
 	2471.10.10={birth=yes}
 	2530.11.9={death=yes}
 }
-3601673={ 
+3601673={
 	name="Berfo"
 	dynasty=2066021 #Mirkan
 	culture=kurdish
@@ -2217,7 +2243,7 @@
 	2495.7.19={birth=yes}
 	2526.3.12={death=yes}
 }
-3601674={ 
+3601674={
 	name="Ekber"
 	dynasty=2066021 #Mirkan
 	culture=kurdish
@@ -2226,7 +2252,7 @@
 	2524.6.18={birth=yes}
 	2584.4.23={death=yes}
 }
-3601675={ 
+3601675={
 	name="Bedel"
 	dynasty=2066021 #Mirkan
 	culture=kurdish
@@ -2235,7 +2261,7 @@
 	2568.4.6={birth=yes}
 	2631.7.5={death=yes}
 }
-3601676={ 
+3601676={
 	name="Receb"
 	dynasty=2066021 #Mirkan
 	culture=kurdish
@@ -2244,7 +2270,7 @@
 	2594.2.3={birth=yes}
 	2656.11.1={death=yes}
 }
-3601677={ 
+3601677={
 	name="Receb"
 	dynasty=2066021 #Mirkan
 	culture=kurdish
@@ -2253,7 +2279,7 @@
 	2620.3.9={birth=yes}
 	2664.10.15={death=yes}
 }
-3601678={ 
+3601678={
 	name="Shîlan"
 	female=yes
 	dynasty=2066021 #Mirkan
@@ -2266,7 +2292,7 @@
 	2447.8.1={add_spouse=3601660}
 	2463.5.3={death=yes}
 }
-3601679={ 
+3601679={
 	name="Thuraia"
 	female=yes
 	dynasty=2103006 #Sahyouni
@@ -2379,7 +2405,7 @@
 	2356.1.1={add_spouse=3601623}
 	2385.6.12={death=yes}
 }
-3601691={ 
+3601691={
 	name="Baraa"
 	dynasty=2103001 #Qabbani
 	culture=suriyi
@@ -2388,7 +2414,7 @@
 	2351.7.27={birth=yes}
 	2407.5.19={death=yes}
 }
-3601692={ 
+3601692={
 	name="Zakaria"
 	dynasty=2103001 #Qabbani
 	culture=suriyi
@@ -2397,7 +2423,7 @@
 	2379.5.8={birth=yes}
 	2422.9.28={death=yes}
 }
-3601693={ 
+3601693={
 	name="Murad"
 	dynasty=2103001 #Qabbani
 	culture=suriyi
@@ -2406,7 +2432,7 @@
 	2403.10.3={birth=yes}
 	2468.10.1={death=yes}
 }
-3601694={ 
+3601694={
 	name="Abbas"
 	dynasty=2103001 #Qabbani
 	culture=suriyi
@@ -2415,7 +2441,7 @@
 	2422.6.1={birth=yes}
 	2454.6.24={death=yes}
 }
-3601695={ 
+3601695={
 	name="Nasuhi"
 	dynasty=2103001 #Qabbani
 	culture=suriyi
@@ -2424,7 +2450,7 @@
 	2448.5.22={birth=yes}
 	2492.1.4={death=yes}
 }
-3601696={ 
+3601696={
 	name="Rashid"
 	dynasty=2103001 #Qabbani
 	culture=suriyi
@@ -2433,7 +2459,7 @@
 	2474.3.20={birth=yes}
 	2518.10.13={death=yes}
 }
-3601697={ 
+3601697={
 	name="Rashid"
 	dynasty=2103001 #Qabbani
 	culture=suriyi
@@ -2442,7 +2468,7 @@
 	2502.2.20={birth=yes}
 	2564.4.20={death=yes}
 }
-3601698={ 
+3601698={
 	name="Shams ad-Din"
 	dynasty=2103001 #Qabbani
 	culture=suriyi
@@ -2451,7 +2477,7 @@
 	2522.12.16={birth=yes}
 	2560.1.19={death=yes}
 }
-3601699={ 
+3601699={
 	name="Jamil"
 	dynasty=2103001 #Qabbani
 	culture=suriyi
@@ -2460,7 +2486,7 @@
 	2546.2.8={birth=yes}
 	2575.10.25={death=yes}
 }
-3601700={ 
+3601700={
 	name="Fadel"
 	dynasty=2103001 #Qabbani
 	culture=suriyi
@@ -2469,7 +2495,7 @@
 	2574.12.20={birth=yes}
 	2605.10.29={death=yes}
 }
-3601701={ 
+3601701={
 	name="Adib"
 	dynasty=2103001 #Qabbani
 	culture=suriyi
@@ -2478,7 +2504,7 @@
 	2597.2.13={birth=yes}
 	2661.7.23={death=yes}
 }
-3601702={ 
+3601702={
 	name="Ismail"
 	dynasty=2103009 #Al-Atrash
 	culture=suriyi
@@ -2487,7 +2513,7 @@
 	2350.1.29={birth=yes}
 	2414.3.5={death=yes}
 }
-3601703={ 
+3601703={
 	name="Abdurrazaq"
 	dynasty=2103009 #Al-Atrash
 	culture=suriyi
@@ -2496,7 +2522,7 @@
 	2375.9.2={birth=yes}
 	2395.10.23={death=yes}
 }
-3601704={ 
+3601704={
 	name="Izzat"
 	dynasty=2103009 #Al-Atrash
 	culture=suriyi
@@ -2505,7 +2531,7 @@
 	2381.5.17={birth=yes}
 	2443.5.9={death=yes}
 }
-3601705={ 
+3601705={
 	name="Hasan"
 	dynasty=2103009 #Al-Atrash
 	culture=suriyi
@@ -2514,7 +2540,7 @@
 	2432.12.22={birth=yes}
 	2494.5.30={death=yes}
 }
-3601706={ 
+3601706={
 	name="Abdulkarim"
 	dynasty=2103009 #Al-Atrash
 	culture=suriyi
@@ -2523,7 +2549,7 @@
 	2476.4.8={birth=yes}
 	2523.4.25={death=yes}
 }
-3601707={ 
+3601707={
 	name="Radwan"
 	dynasty=2103009 #Al-Atrash
 	culture=suriyi
@@ -2532,7 +2558,7 @@
 	2490.2.18={birth=yes}
 	2533.3.23={death=yes}
 }
-3601708={ 
+3601708={
 	name="Khalaf"
 	dynasty=2103009 #Al-Atrash
 	culture=suriyi
@@ -2541,7 +2567,7 @@
 	2522.6.5={birth=yes}
 	2579.1.25={death=yes}
 }
-3601709={ 
+3601709={
 	name="Ismail"
 	dynasty=2103009 #Al-Atrash
 	culture=suriyi
@@ -2550,7 +2576,7 @@
 	2541.1.22={birth=yes}
 	2595.3.27={death=yes}
 }
-3601710={ 
+3601710={
 	name="Orwa"
 	dynasty=2103009 #Al-Atrash
 	culture=suriyi
@@ -2559,7 +2585,7 @@
 	2561.6.1={birth=yes}
 	2581.7.19={death=yes}
 }
-3601711={ 
+3601711={
 	name="Jamal"
 	dynasty=2103009 #Al-Atrash
 	culture=suriyi
@@ -2568,7 +2594,7 @@
 	2589.6.25={birth=yes}
 	2622.4.11={death=yes}
 }
-3601712={ 
+3601712={
 	name="Abdulhalim"
 	dynasty=2103009 #Al-Atrash
 	culture=suriyi
@@ -2577,7 +2603,7 @@
 	2616.4.2={birth=yes}
 	2640.3.28={death=yes}
 }
-3601713={ 
+3601713={
 	name="Taj ad-Din"
 	dynasty=2103009 #Al-Atrash
 	culture=suriyi

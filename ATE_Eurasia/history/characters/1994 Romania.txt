@@ -851,12 +851,13 @@
 	trait=architect
 	give_nickname=nick_the_architect
 	2642.2.18={birth=yes}
-	2658.2.18 = {
-		effect = {
-			join_society = the_satanists
-			set_society_grandmaster = yes
+	2658.2.18={
+		effect={
+			join_society=the_satanists
+			set_society_grandmaster=yes
 		}
 	}
+	2700.1.1={death=yes}
 }
 1994119={ #Famous Philantrophist
 	name="Vasile"
@@ -870,6 +871,7 @@
 	trait=gardener
 	2630.9.3={birth=yes}
 	2650.9.3={add_spouse=1994120}
+	2700.1.1={death=yes}
 }
 1994120={ #Famous Model (Monica Dean)
 	name="Elena"
@@ -883,6 +885,7 @@
 	trait=seductress
 	female=yes
 	2630.9.3={birth=yes}
+	2700.1.1={death=yes}
 }
 1994121={ #Famous Singer (Dan Balan) and his co-founder Petru Jelihovschi [Ozone]
 	name="Petru"
@@ -896,6 +899,7 @@
 	trait=ambitious
 	trait=humble
 	2630.9.3={birth=yes}
+	2700.1.1={death=yes}
 }
 1994122={
 	name="Mihai"
@@ -904,6 +908,7 @@
 	religion=orthodox
 	father=1994121
 	2663.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
 1994123={
 	name="Ludmila"
@@ -913,6 +918,7 @@
 	father=1994121
 	female=yes
 	2665.6.2={birth=yes}
+	2700.1.1={death=yes}
 }
 1994124={
 	name="Teodora"
@@ -923,11 +929,12 @@
 	mother=1994117
 	female=yes
 	2664.12.1={birth=yes}
+	2700.1.1={death=yes}
 }
 
 1994125={ #Polux Castor
 	name="Polux"
-	dynasty= 2077104 #Castor
+	dynasty=2077104 #Castor
 	culture=moldovan
 	religion=orthodox
 	trait=underhanded_rogue
@@ -938,10 +945,11 @@
 	trait=humble
 	father=1994126
 	2642.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
 1994126={ #Codrut Castor
 	name="Codrut"
-	dynasty= 2077104 #Castor
+	dynasty=2077104 #Castor
 	culture=moldovan
 	religion=orthodox
 	trait=underhanded_rogue
@@ -953,7 +961,7 @@
 }
 1994127={ #Bartolomeu
 	name="Bartolomeu"
-	dynasty= 2077105 #Safran
+	dynasty=2077105 #Safran
 	culture=moldovan
 	religion=nekromante
 	trait=martial_cleric
@@ -963,6 +971,7 @@
 	trait=charitable
 	trait=just
 	2620.11.2={birth=yes}
+	2700.1.1={death=yes}
 }
 1994128={ #Serghei
 	name="Serghei"
@@ -979,7 +988,7 @@
 }
 1994129={ #Sabina
 	name="Sabina"
-	dynasty= 2077106 #Stepanov
+	dynasty=2077106 #Stepanov
 	female=yes
 	culture=moldovan
 	religion=orthodox
@@ -989,6 +998,7 @@
 	trait=charitable
 	father=1994128
 	2620.2.19={birth=yes}
+	2700.1.1={death=yes}
 }
 
 1994130={

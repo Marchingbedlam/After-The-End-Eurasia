@@ -58,9 +58,7 @@
 	trait=paranoid
 	trait=just
 	2633.5.19={birth=yes}
-	2654.7.15={
-		add_spouse=1982009
-	}
+	2654.7.15={add_spouse=1982009}
 	2700.1.1={death=yes}
 }
 1982003={
@@ -99,9 +97,7 @@
 	trait=shy
 	trait=diligent
 	2625.12.9={birth=yes}
-	2659.3.12={
-		add_spouse=1982012
-	}
+	2659.3.12={add_spouse=1982012}
 	2700.1.1={death=yes}
 }
 1982005={
@@ -121,9 +117,8 @@
 	trait=shy
 	trait=proud
 	trait=ambitious
-	2636.9.8={birth=yes effect = {
-	add_weak_claim = d_las_palmas }
-	}
+	2636.9.8={birth=yes effect={
+	add_weak_claim=d_las_palmas}}
 	2700.1.1={death=yes}
 }
 1982006={
@@ -341,9 +336,7 @@
 	trait=honest
 	trait=erudite
 	2629.9.21={birth=yes}
-	2660.6.8={
-		add_spouse=1982027
-	}
+	2660.6.8={add_spouse=1982027}
 	2700.1.1={death=yes}
 }
 1982027={
@@ -380,7 +373,7 @@
 	trait=charitable
 	trait=rude
 	2632.3.12={birth=yes}
-	2653.1.1= {effect = { add_claim = c_sao_miguel }}
+	2653.1.1={effect={add_claim=c_sao_miguel}}
 	2700.1.1={death=yes}
 }
 1914000={
@@ -402,8 +395,8 @@
 	trait=patient
 	trait=ruthless
 
-	2627.7.24={ birth=yes }
-	2700.1.1={ death=yes }
+	2627.7.24={birth=yes}
+	2700.1.1={death=yes}
 }
 1914001={
 	name="Abel"
@@ -420,8 +413,8 @@
 	trait=trusting 
 	trait=erudite
 
-	2633.9.12={ birth=yes }
-	2700.1.1={ death=yes }
+	2633.9.12={birth=yes}
+	2700.1.1={death=yes}
 }
 1914002={
 	name="Sérgio"
@@ -433,8 +426,8 @@
 	trait=poet
 	trait=diligent
 
-	2630.7.16={ birth=yes }
-	2700.1.1={ death=yes }
+	2630.7.16={birth=yes}
+	2700.1.1={death=yes}
 }
 1914003={
 	name="Corsino"
@@ -445,8 +438,8 @@
 	trait=cynical
 	trait=erudite
 
-	2622.2.14={ birth=yes }
-	2700.1.1={ death=yes }
+	2622.2.14={birth=yes}
+	2700.1.1={death=yes}
 }
 1914004={
 	name="Germano"
@@ -459,8 +452,8 @@
 	trait=shrewd
 	trait=arbitrary
 
-	2640.2.14={ birth=yes }
-	2700.1.1={ death=yes }
+	2640.2.14={birth=yes}
+	2700.1.1={death=yes}
 }
 1914005={
 	name="Ivan"
@@ -471,8 +464,8 @@
 
 	trait=twin
 
-	2654.1.20={ birth=yes }
-	2700.1.1={ death=yes }
+	2654.1.20={birth=yes}
+	2700.1.1={death=yes}
 }
 1914006={
 	name="Juvenal"
@@ -483,8 +476,8 @@
 
 	trait=twin
 
-	2654.1.20={ birth=yes }
-	2700.1.1={ death=yes }
+	2654.1.20={birth=yes}
+	2700.1.1={death=yes}
 }
 1914007={
 	name="Pedro"
@@ -492,8 +485,8 @@
 	culture=verdean
 	religion=quinto
 
-	2600.1.1={ birth=yes }
-	2660.1.1={ death=yes }
+	2600.1.1={birth=yes}
+	2660.1.1={death=yes}
 }
 1914008={
 	name="Luís"
@@ -502,8 +495,8 @@
 	religion=quinto
 	father=1914007
 
-	2631.3.1={ birth=yes }
-	2700.1.1={ death=yes }
+	2631.3.1={birth=yes}
+	2700.1.1={death=yes}
 }
 1914009={
 	name="António"
@@ -512,8 +505,8 @@
 	religion=quinto
 	father=1914008
 
-	2651.1.1={ birth=yes }
-	2700.1.1={ death=yes }
+	2651.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
 1914010={
 	name="Pedro"
@@ -522,8 +515,8 @@
 	religion=quinto
 	father=1914000
 
-	2645.1.1={ birth=yes }
-	2700.1.1={ death=yes }
+	2645.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
 1914011={
 	name="José"
@@ -532,8 +525,8 @@
 	religion=quinto
 	father=1914000
 
-	2647.1.1={ birth=yes }
-	2700.1.1={ death=yes }
+	2647.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
 1914012={
 	name="Evandro"
@@ -542,8 +535,8 @@
 	religion=quinto
 	father=1914003
 
-	2644.1.1={ birth=yes }
-	2700.1.1={ death=yes }
+	2644.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
 1914013={
 	name="Silvino"
@@ -552,8 +545,8 @@
 	religion=quinto
 	father=1914003
 
-	2646.1.1={ birth=yes }
-	2700.1.1={ death=yes }
+	2646.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
 1914014={
 	name="Manuel"
@@ -562,8 +555,8 @@
 	religion=quinto
 	father=1914003
 
-	2650.1.1={ birth=yes }
-	2700.1.1={ death=yes }
+	2650.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
 1914015={
 	name="Viriato"
@@ -572,8 +565,8 @@
 	religion=quinto
 	father=1914003
 
-	2652.1.1={ birth=yes }
-	2700.1.1={ death=yes }
+	2652.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
 1914016={
 	name="Ismenia"
@@ -585,8 +578,8 @@
 	trait=bastard
 	trait=quick
 
-	2656.1.1={ birth=yes }
-	2700.1.1={ death=yes }
+	2656.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
 1914017={
 	name="Sérgio"
@@ -595,8 +588,8 @@
 	religion=quinto
 	father=1914002
 
-	2650.7.16={ birth=yes }
-	2700.1.1={ death=yes }
+	2650.7.16={birth=yes}
+	2700.1.1={death=yes}
 }
 1914018={
 	name="Sérgio"
@@ -605,8 +598,8 @@
 	religion=quinto
 	father=1914019
 
-	2610.7.16={ birth=yes }
-	2655.1.1={ death=yes }
+	2610.7.16={birth=yes}
+	2655.1.1={death=yes}
 }
 1914019={
 	name="Sérgio"
@@ -614,8 +607,8 @@
 	culture=verdean
 	religion=quinto
 
-	2580.1.1={ birth=yes }
-	2639.1.1={ death=yes }
+	2580.1.1={birth=yes}
+	2639.1.1={death=yes}
 }
 1914020={
 	name="Vicente"
@@ -624,8 +617,8 @@
 	religion=quinto
 	father=1914019
 
-	2615.1.1={ birth=yes }
-	2700.1.1={ death=yes }
+	2615.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
 1914021={
 	name="Álvaro"
@@ -634,8 +627,8 @@
 	religion=quinto
 	father=1914018
 
-	2634.1.1={ birth=yes }
-	2700.1.1={ death=yes }
+	2634.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
 1914022={
 	name="Hélder"
@@ -652,8 +645,8 @@
 	trait=ambitious
 	trait=tough_soldier
 
-	2625.1.1={ birth=yes }
-	2700.1.1={ death=yes }
+	2625.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
 1914023={
 	name="João Pedro"
@@ -669,8 +662,8 @@
 	trait=charitable
 	trait=tough_soldier
 
-	2632.1.1={ birth=yes }
-	2700.1.1={ death=yes }
+	2632.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
 1914024={
 	name="Alberto"
@@ -687,8 +680,8 @@
 	trait=sturdy
 	trait=skilled_tactician
 
-	2420.1.1={ birth=yes }
-	2471.1.1={ death=yes }
+	2420.1.1={birth=yes}
+	2471.1.1={death=yes}
 }
 1914025={
 	name="Sebastião"
@@ -697,8 +690,8 @@
 	religion=quinto
 	father=1914024
 
-	2444.1.1={ birth=yes }
-	2500.1.1={ death=yes }
+	2444.1.1={birth=yes}
+	2500.1.1={death=yes}
 }
 1914026={
 	name="Aníbal"
@@ -707,8 +700,8 @@
 	religion=quinto
 	father=1914025
 
-	2465.1.1={ birth=yes }
-	2522.1.1={ death=yes }
+	2465.1.1={birth=yes}
+	2522.1.1={death=yes}
 }
 1914027={
 	name="Alberto"
@@ -717,8 +710,8 @@
 	religion=quinto
 	father=1914026
 
-	2490.1.1={ birth=yes }
-	2557.1.1={ death=yes }
+	2490.1.1={birth=yes}
+	2557.1.1={death=yes}
 }
 1914028={
 	name="Alberto"
@@ -727,8 +720,8 @@
 	religion=quinto
 	father=1914027
 
-	2511.1.1={ birth=yes }
-	2570.1.1={ death=yes }
+	2511.1.1={birth=yes}
+	2570.1.1={death=yes}
 }
 1914029={
 	name="Henrique"
@@ -737,8 +730,8 @@
 	religion=quinto
 	father=1914028
 
-	2539.1.1={ birth=yes }
-	2590.1.1={ death=yes }
+	2539.1.1={birth=yes}
+	2590.1.1={death=yes}
 }
 1914030={
 	name="Jerónimo"
@@ -747,8 +740,8 @@
 	religion=quinto
 	father=1914029
 
-	2560.1.1={ birth=yes }
-	2615.1.1={ death=yes }
+	2560.1.1={birth=yes}
+	2615.1.1={death=yes}
 }
 1914031={
 	name="Otelo"
@@ -757,8 +750,8 @@
 	religion=quinto
 	father=1914030
 
-	2584.1.1={ birth=yes }
-	2646.1.1={ death=yes }
+	2584.1.1={birth=yes}
+	2646.1.1={death=yes}
 }
 1914032={
 	name="António"
@@ -767,8 +760,8 @@
 	religion=quinto
 	father=1914031
 
-	2600.1.1={ birth=yes }
-	2653.1.1={ death=yes }
+	2600.1.1={birth=yes}
+	2653.1.1={death=yes}
 }
 1914200={
 	name=Henry
@@ -787,6 +780,6 @@
 	add_trait=gregarious
 	add_trait=paranoid 
 
-	2627.9.2={ birth=yes }
-	2690.5.2={ death=yes }
+	2627.9.2={birth=yes}
+	2690.5.2={death=yes}
 }

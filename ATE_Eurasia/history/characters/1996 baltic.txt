@@ -15,6 +15,7 @@
 	trait=aggressive_leader
 	trait=flanker
 	2641.6.27={birth=yes}
+	2700.1.1={death=yes}
 }
 1996001={
 	name="Modris"
@@ -148,7 +149,7 @@
 	trait=content
 	trait=hunter
 	2625.6.18={birth=yes}
-	2660.1.1={effect={add_rival = 1996014}} 
+	2660.1.1={effect={add_rival=1996014}} 
 	2700.1.1={death=yes}
 }
 1996013={
@@ -203,11 +204,12 @@
 	2648.2.6={death=yes}
 }
 
-1996018 = {
-	name = "Maria Karolis"
-	culture = lithuanian
-	religion = mariavite
-	2630.1.1 = {birth = yes}
+1996018={
+	name="Maria Karolis"
+	culture=lithuanian
+	religion=mariavite
+	2630.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
 1996019={
 	name="Denis"
@@ -1092,6 +1094,7 @@
 	trait=light_foot_leader
 	father=1996076
 	2641.6.27={birth=yes}
+	2700.1.1={death=yes}
 }
 1996076={
 	name="Vitovt"
@@ -1105,6 +1108,7 @@
 	trait=stressed
 	2613.3.6={birth=yes}
 	2655.8.12={death={death_reason=death_battle killer=1996084}}
+	2700.1.1={death=yes}
 }
 1996077={
 	name="Yulia"
@@ -1117,6 +1121,7 @@
 	trait=humble
 	father=1996076
 	2639.6.4={birth=yes}
+	2700.1.1={death=yes}
 }
 1996078={
 	name="Lyosha"
@@ -1126,6 +1131,7 @@
 	trait=playful
 	father=1996076
 	2653.9.5={birth=yes}
+	2700.1.1={death=yes}
 }
 1996079={
 	name="Hieronim"
@@ -1137,6 +1143,7 @@
 	trait=scholar
 	trait=cynical
 	2630.7.29={birth=yes}
+	2700.1.1={death=yes}
 }
 1996080={
 	name="Olga"
@@ -1162,6 +1169,7 @@
 	father=1996079
 	mother=1996080
 	2649.1.10={birth=yes}
+	2700.1.1={death=yes}
 }
 1996082={
 	name="Lowiza"
@@ -1174,6 +1182,7 @@
 	father=1996079
 	mother=1996080
 	2652.3.29={birth=yes}
+	2700.1.1={death=yes}
 }
 1996083={
 	name="Evgenia"
@@ -1181,6 +1190,7 @@
 	culture=kaliningradyets
 	religion=proletcult
 	2611.3.16={birth=yes}
+	2700.1.1={death=yes}
 }
 1996084={
 	name="Leona"
@@ -1205,6 +1215,7 @@
 		employer=1996070
 		effect={give_job_title=job_marshal}
 	}
+	2700.1.1={death=yes}
 }
 1996085={
 	name="Andreas"
@@ -1237,6 +1248,7 @@
 	trait=lipka
 	2643.8.13={birth=yes}
 	2660.1.1={employer=1996102}
+	2700.1.1={death=yes}
 }
 1996087={
 	name="Mikalaj"
@@ -1255,6 +1267,7 @@
 	2644.5.29={birth=yes}
 	2665.1.1={add_matrilineal_spouse=1996000}
 	2665.1.1={effect={add_lover=1996000}}
+	2700.1.1={death=yes}
 }
 1996088={
 	name="Kulibek Dariusz"
@@ -1269,6 +1282,7 @@
 	trait=trusting
 	trait=winter_soldier
 	2609.7.22={birth=yes}
+	2700.1.1={death=yes}
 }
 1996089={
 	name="Chaszajar"
@@ -1283,6 +1297,7 @@
 	trait=stutter
 	trait=trickster
 	2630.3.19={birth=yes}
+	2700.1.1={death=yes}
 }
 1996090={
 	name="Gulsana"
@@ -1294,6 +1309,7 @@
 	father=1996088
 	mother=2070072
 	2633.12.5={birth=yes}
+	2700.1.1={death=yes}
 }
 1996091={
 	name="Galiena"
@@ -1306,6 +1322,7 @@
 	mother=2070072
 	trait=twin
 	2637.2.7={birth=yes}
+	2700.1.1={death=yes}
 }
 1996092={
 	name="Szemira"
@@ -1318,6 +1335,7 @@
 	mother=2070072
 	trait=twin
 	2637.2.7={birth=yes}
+	2700.1.1={death=yes}
 }
 1996093={
 	name="Anserianna"
@@ -1329,6 +1347,7 @@
 	father=1996088
 	mother=2070072
 	2640.12.15={birth=yes}
+	2700.1.1={death=yes}
 }
 1996094={
 	name="Klaudia"
@@ -1347,6 +1366,7 @@
 	2657.12.29={add_spouse=1996088}
 	2657.9.23={effect={add_rival=1996089}}
 	2665.1.1={effect={add_friend=1996000}}
+	2700.1.1={death=yes}
 }
 1996095={
 	name="Artur"
@@ -1371,6 +1391,7 @@
 	father=1996095
 	mother=1996094
 	2659.5.2={birth=yes}
+	2700.1.1={death=yes}
 }
 1996097={
 	name="Mikita"
@@ -1385,6 +1406,7 @@
 	trait=defensive_leader
 	trait=falconer
 	2605.4.18={birth=yes}
+	2700.1.1={death=yes}
 }
 1996098={
 	name="Anzhelika"
@@ -1393,6 +1415,7 @@
 	religion=orthodox
 	2616.9.3={birth=yes}
 	2636.1.1={add_spouse=1996097}
+	2700.1.1={death=yes}
 }
 1996099={
 	name="Yauhen"
@@ -1406,6 +1429,7 @@
 	trait=pious
 	father=1996097
 	2624.3.28={birth=yes}
+	2700.1.1={death=yes}
 }
 1996100={
 	name="Barys"
@@ -1421,6 +1445,7 @@
 	trait=trickster
 	father=1996097
 	2628.12.5={birth=yes}
+	2700.1.1={death=yes}
 }
 1996101={
 	name="Tamara"
@@ -1431,6 +1456,7 @@
 	father=1996097
 	mother=1996098
 	2641.12.22={birth=yes}
+	2700.1.1={death=yes}
 }
 1996102={
 	name="Ismail"
@@ -1439,4 +1465,5 @@
 	religion=ruhi
 	father=1996016
 	2612.7.15={birth=yes}
+	2700.1.1={death=yes}
 }

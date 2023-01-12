@@ -1,87 +1,89 @@
-3606000 = { #Placeholder Abune of Axum
-	name = "Mathias"
-	culture = tigrinya
-	religion = miaphysite
-	trait = mastermind_theologian
-	trait = theologian
-	trait = pious
-	trait = patient
-	2600.1.1 = { birth = yes }
+3606000={ #Placeholder Abune of Axum
+	name="Mathias"
+	culture=tigrinya
+	religion=miaphysite
+	trait=mastermind_theologian
+	trait=theologian
+	trait=pious
+	trait=patient
+	2600.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
-3606001 = { #Placeholder Emperor of Ethopia
-	name = "Placeholder"
-	culture = amhara
-	religion = miaphysite
-	2633.1.1 = { birth =  yes }
+3606001={ #Placeholder Emperor of Ethopia
+	name="Placeholder"
+	culture=amhara
+	religion=miaphysite
+	2633.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
-3606025 = { 
+3606025={
 	#Amhara governor
-	name = "Bekele"
-	dynasty = 2098037 #Tesfaye
-	culture = amhara
-	religion = miaphysite
-	diplomacy = 4
-	martial = 2
-	stewardship = 5
-	intrigue = 6
-	learning = 2
-	trait = underhanded_rogue
-	trait = school_mark
-	trait = stubborn
-	trait = ambitious
-	trait = cynical
-	trait = patient
-	2631.3.2 = { birth = yes }
-	2653.1.3 = { add_spouse = 3606026 }
-	2710.2.1 = { death = yes }
+	name="Bekele"
+	dynasty=2098037 #Tesfaye
+	culture=amhara
+	religion=miaphysite
+	diplomacy=4
+	martial=2
+	stewardship=5
+	intrigue=6
+	learning=2
+	trait=underhanded_rogue
+	trait=school_mark
+	trait=stubborn
+	trait=ambitious
+	trait=cynical
+	trait=patient
+	2631.3.2={birth=yes}
+	2653.1.3={add_spouse=3606026}
+	2710.2.1={death=yes}
 }
-3606026 = { 
-	name = "Kassanesh"
-	female = yes
-	dynasty = 0 #Lowborn
-	culture = amhara
-	religion = miaphysite
-	diplomacy = 3
-	martial = 4
-	stewardship = 5
-	intrigue = 6
-	learning = 4
-	trait = amateurish_plotter
-	trait = school_mark
-	trait = authoritative
-	trait = selfish
-	trait = content
-	2640.2.1 = { birth = yes }
-	2700.1.1 = { death = yes }
+3606026={
+	name="Kassanesh"
+	female=yes
+	dynasty=0 #Lowborn
+	culture=amhara
+	religion=miaphysite
+	diplomacy=3
+	martial=4
+	stewardship=5
+	intrigue=6
+	learning=4
+	trait=amateurish_plotter
+	trait=school_mark
+	trait=authoritative
+	trait=selfish
+	trait=content
+	2640.2.1={birth=yes}
+	2700.1.1={death=yes}
 }
-3606027 = { 
-	name = "Eskender"
-	dynasty = 2098037 #Tesfaye
-	culture = amhara
-	religion = miaphysite
-	diplomacy = 2
-	martial = 3
-	stewardship = 8
-	intrigue = 2
-	learning = 6
-	trait = brilliant_strategist
-	trait = school_mark
-	trait = inspiring_leader
-	trait = honest
-	trait = charitable
-	trait = cynical
-	trait = just
-	2633.8.17 = { birth = yes }
-	2655.3.9 = { add_spouse = 3606028 }
-	2710.2.1 = { death = yes }
+3606027={
+	name="Eskender"
+	dynasty=2098037 #Tesfaye
+	culture=amhara
+	religion=miaphysite
+	diplomacy=2
+	martial=3
+	stewardship=8
+	intrigue=2
+	learning=6
+	trait=brilliant_strategist
+	trait=school_mark
+	trait=inspiring_leader
+	trait=honest
+	trait=charitable
+	trait=cynical
+	trait=just
+	2633.8.17={birth=yes}
+	2655.3.9={add_spouse=3606028}
+	2710.2.1={death=yes}
 }
-3606028 = {
-	name = "Tigist"
-	female = yes
-	dynasty = 2098038 #Abebe
-	culture = amhara
-	religion = miaphysite
-	father = 3606036
+3606028={
+	name="Tigist"
+	female=yes
+	dynasty=2098038 #Abebe
+	culture=amhara
+	religion=miaphysite
+	father=3606036
 	
 	trait=mastermind_theologian
 	trait=scholar
@@ -89,199 +91,199 @@
 	trait=stubborn
 	trait=diligent
 	trait=paranoid
-	2634.3.1 = {birth = yes }
-	2710.2.1 = { death = yes }
+	2634.3.1={birth=yes}
+	2710.2.1={death=yes}
 }
-3606029 = { 
-	name = "Selassie"
-	dynasty = 2098037 #Tesfaye
-	culture = amhara
-	religion = miaphysite
-	diplomacy = 2
-	martial = 3
-	stewardship = 3
-	intrigue = 2
-	learning = 3
+3606029={
+	name="Selassie"
+	dynasty=2098037 #Tesfaye
+	culture=amhara
+	religion=miaphysite
+	diplomacy=2
+	martial=3
+	stewardship=3
+	intrigue=2
+	learning=3
 	father=3606027
 	mother=3606028
-	trait = school_mark
-	trait = curious
-	trait = brooding
-	trait = haughty
+	trait=school_mark
+	trait=curious
+	trait=brooding
+	trait=haughty
 	
-	2657.3.12 = { birth = yes }
-	2662.3.9 = { add_trait = cynical add_trait = honest }
-	2730.1.1 = { death = yes }
+	2657.3.12={birth=yes}
+	2662.3.9={add_trait=cynical add_trait=honest}
+	2730.1.1={death=yes}
 }
-3606030 = { 
-	name = "Asfaw"
-	dynasty = 2098037 #Tesfaye
-	culture = amhara
-	religion = miaphysite
-	diplomacy = 2
-	martial = 3
-	stewardship = 3
-	intrigue = 2
-	learning = 3
+3606030={
+	name="Asfaw"
+	dynasty=2098037 #Tesfaye
+	culture=amhara
+	religion=miaphysite
+	diplomacy=2
+	martial=3
+	stewardship=3
+	intrigue=2
+	learning=3
 	father=3606027
 	mother=3606028
-	trait = school_mark
-	trait = timid
-	trait = willful
-	trait = affectionate
+	trait=school_mark
+	trait=timid
+	trait=willful
+	trait=affectionate
 	
-	2659.9.2 = { birth = yes }
-	2662.3.9 = { add_trait = cynical add_trait = charitable }
-	2730.1.1 = { death = yes }
+	2659.9.2={birth=yes}
+	2662.3.9={add_trait=cynical add_trait=charitable}
+	2730.1.1={death=yes}
 }
-3606031 = { 
-	name = "Azmera"
-	female = yes
-	dynasty = 2098037 #Tesfaye
-	culture = amhara
-	religion = miaphysite
-	diplomacy = 2
-	martial = 3
-	stewardship = 3
-	intrigue = 2
-	learning = 3
+3606031={
+	name="Azmera"
+	female=yes
+	dynasty=2098037 #Tesfaye
+	culture=amhara
+	religion=miaphysite
+	diplomacy=2
+	martial=3
+	stewardship=3
+	intrigue=2
+	learning=3
 	father=3606027
 	mother=3606028
-	trait = school_mark
-	trait = affectionate
-	trait = idolizer
-	trait = conscientious
+	trait=school_mark
+	trait=affectionate
+	trait=idolizer
+	trait=conscientious
 	
-	2661.10.3 = { birth = yes }
-	2665.3.9 = { add_trait = cynical add_trait = honest }
-	2730.1.1 = { death = yes }
+	2661.10.3={birth=yes}
+	2665.3.9={add_trait=cynical add_trait=honest}
+	2730.1.1={death=yes}
 }
-3606032 = { 
-	name = "Abiyot"
-	dynasty = 2098038 #Abebe
-	culture = amhara
-	religion = miaphysite
-	diplomacy = 2
-	martial = 3
-	stewardship = 8
-	intrigue = 2
-	learning = 6
-	father = 3606036
-	trait = charismatic_negotiator
-	trait = school_mark
-	trait = chaste
-	trait = greedy
-	trait = kind
-	trait = gregarious
-	2636.12.31 = { birth = yes }
-	2660.12.1 = { add_spouse = 3606033 }
-	2710.2.1 = { death = yes }
+3606032={
+	name="Abiyot"
+	dynasty=2098038 #Abebe
+	culture=amhara
+	religion=miaphysite
+	diplomacy=2
+	martial=3
+	stewardship=8
+	intrigue=2
+	learning=6
+	father=3606036
+	trait=charismatic_negotiator
+	trait=school_mark
+	trait=chaste
+	trait=greedy
+	trait=kind
+	trait=gregarious
+	2636.12.31={birth=yes}
+	2660.12.1={add_spouse=3606033}
+	2710.2.1={death=yes}
 }
-3606033 = { 
-	name = "Rahel"
-	female = yes
-	dynasty = 0 #Lowborn, actually a wealthy merchants daughter
-	culture = amhara
-	religion = miaphysite
-	trait = thrifty_clerk
-	trait = groomed
-	trait = school_mark
-	trait = proud
-	trait = stubborn
-	trait = diligent
-	trait = paranoid
-	2639.3.21 = { birth = yes }
-	2710.2.1 = { death = yes }
+3606033={
+	name="Rahel"
+	female=yes
+	dynasty=0 #Lowborn, actually a wealthy merchants daughter
+	culture=amhara
+	religion=miaphysite
+	trait=thrifty_clerk
+	trait=groomed
+	trait=school_mark
+	trait=proud
+	trait=stubborn
+	trait=diligent
+	trait=paranoid
+	2639.3.21={birth=yes}
+	2710.2.1={death=yes}
 }
-3606034 = { 
-	name = "Desita"
-	female = yes
-	dynasty = 2098038 #Abebe
-	culture = amhara
-	religion = miaphysite
+3606034={
+	name="Desita"
+	female=yes
+	dynasty=2098038 #Abebe
+	culture=amhara
+	religion=miaphysite
 	father=3606032
 	mother=3606033
 	
-	trait = school_mark
-	trait = quick
-	trait = indolent
-	trait = conscientious
+	trait=school_mark
+	trait=quick
+	trait=indolent
+	trait=conscientious
 	
-	2661.3.22 = { birth = yes }
-	2710.2.1 = { death = yes }
+	2661.3.22={birth=yes}
+	2710.2.1={death=yes}
 }
-3606035 = { 
-	name = "Temesgen"
-	dynasty = 2098038 #Abebe
-	culture = amhara
-	religion = miaphysite
+3606035={
+	name="Temesgen"
+	dynasty=2098038 #Abebe
+	culture=amhara
+	religion=miaphysite
 	father=3606032
 	mother=3606033
 	
-	trait = school_mark
-	trait = willful
+	trait=school_mark
+	trait=willful
 	
-	2661.3.22 = { birth = yes }
-	2665.12.1 = { add_trait = gregarious }
-	2710.2.1 = { death = yes }
+	2661.3.22={birth=yes}
+	2665.12.1={add_trait=gregarious}
+	2710.2.1={death=yes}
 }
-3606036 = { 
-	name = "Mekonnen"
-	dynasty = 2098038 #Abebe
-	culture = amhara
-	religion = miaphysite
+3606036={
+	name="Mekonnen"
+	dynasty=2098038 #Abebe
+	culture=amhara
+	religion=miaphysite
 	
-	trait = charismatic_negotiator
-	trait = school_mark
-	trait = kind
-	trait = gregarious
-	trait = deceitful
-	trait = familyperson
+	trait=charismatic_negotiator
+	trait=school_mark
+	trait=kind
+	trait=gregarious
+	trait=deceitful
+	trait=familyperson
 	
 	
-	2600.2.1 = { birth = yes }
-	2651.3.1 = { death = yes }
+	2600.2.1={birth=yes}
+	2651.3.1={death=yes}
 }
-3606037 = { 
-	name = "Worknesh"
-	female = yes
-	dynasty = 2098021 #Mesk
-	culture = amhara
-	religion = miaphysite
-	diplomacy = 3
-	martial = 4
-	stewardship = 3
-	intrigue = 4
-	learning = 2
-	trait = intricate_webweaver
-	trait = school_mark
-	trait = charitable
-	trait = diligent
-	trait = familyperson
-	trait = deceitful
-	2624.2.27 = { birth = yes }
-	2647.1.3 = { add_spouse = 3606038 }
-	2670.1.1 = { death = yes }
+3606037={
+	name="Worknesh"
+	female=yes
+	dynasty=2098021 #Mesk
+	culture=amhara
+	religion=miaphysite
+	diplomacy=3
+	martial=4
+	stewardship=3
+	intrigue=4
+	learning=2
+	trait=intricate_webweaver
+	trait=school_mark
+	trait=charitable
+	trait=diligent
+	trait=familyperson
+	trait=deceitful
+	2624.2.27={birth=yes}
+	2647.1.3={add_spouse=3606038}
+	2670.1.1={death=yes}
 }
-3606038 = { 
-	name = "Gabriel"
-	dynasty = 0 #Lowborn
-	culture = amhara
-	religion = miaphysite
-	trait = intricate_webweaver
-	trait = school_mark
-	trait = charitable
-	trait = diligent
-	trait = familyperson
-	trait = deceitful
-	2625.3.12 = { birth = yes }
-	2670.1.1 = { death = yes }
+3606038={
+	name="Gabriel"
+	dynasty=0 #Lowborn
+	culture=amhara
+	religion=miaphysite
+	trait=intricate_webweaver
+	trait=school_mark
+	trait=charitable
+	trait=diligent
+	trait=familyperson
+	trait=deceitful
+	2625.3.12={birth=yes}
+	2670.1.1={death=yes}
 }
-3606039 = { 
-	name = "Tessema"
-	dynasty = 2098021 #Mesk
-	culture = amhara
-	religion = miaphysite
+3606039={
+	name="Tessema"
+	dynasty=2098021 #Mesk
+	culture=amhara
+	religion=miaphysite
 	diplomacy=2
 	martial=1
 	stewardship=2
@@ -289,19 +291,19 @@
 	learning=2
 	father=3606038
 	mother=3606037
-	trait = curious
-	trait = haughty
-	trait = indolent
-	2653.4.12 = { birth = yes }
-	2666.4.12 = { add_trait = deceitful add_trait = charitable }
-	2700.1.1 = { death = yes }
+	trait=curious
+	trait=haughty
+	trait=indolent
+	2653.4.12={birth=yes}
+	2666.4.12={add_trait=deceitful add_trait=charitable}
+	2700.1.1={death=yes}
 }
-3606040 = { 
-	name = "Misrak"
-	female = yes
-	dynasty = 2098021 #Mesk
-	culture = amhara
-	religion = miaphysite
+3606040={
+	name="Misrak"
+	female=yes
+	dynasty=2098021 #Mesk
+	culture=amhara
+	religion=miaphysite
 	diplomacy=2
 	martial=1
 	stewardship=2
@@ -309,19 +311,19 @@
 	learning=2
 	father=3606038
 	mother=3606037
-	trait = indolent
-	trait = idolizer
-	trait = timid
-	2654.1.4 = { birth = yes }
-	2666.1.4 = { add_trait = familyperson add_trait = diligent }
-	2700.1.1 = { death = yes }
+	trait=indolent
+	trait=idolizer
+	trait=timid
+	2654.1.4={birth=yes}
+	2666.1.4={add_trait=familyperson add_trait=diligent}
+	2700.1.1={death=yes}
 }
-3606041 = { 
-	name = "Aster"
-	female = yes
-	dynasty = 2098021 #Mesk
-	culture = amhara
-	religion = miaphysite
+3606041={
+	name="Aster"
+	female=yes
+	dynasty=2098021 #Mesk
+	culture=amhara
+	religion=miaphysite
 	diplomacy=2
 	martial=1
 	stewardship=2
@@ -329,10 +331,10 @@
 	learning=2
 	father=3606038
 	mother=3606037
-	trait = rowdy
-	trait = idolizer
-	trait = curious
-	2654.1.20 = { birth = yes }
-	2666.4.12 = { add_trait = deceitful add_trait = diligent }
-	2700.1.1 = { death = yes }
+	trait=rowdy
+	trait=idolizer
+	trait=curious
+	2654.1.20={birth=yes}
+	2666.4.12={add_trait=deceitful add_trait=diligent}
+	2700.1.1={death=yes}
 }

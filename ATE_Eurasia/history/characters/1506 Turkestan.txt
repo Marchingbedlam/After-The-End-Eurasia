@@ -27,12 +27,13 @@
 	properties=ag00f
 	2633.2.22={birth=yes}
 	2664.8.11={effect={add_claim=k_fergana}}
-	2665.1.1 = {
-		effect = {
-			join_society = monastic_order_naqshbandi
-			set_society_grandmaster = yes
+	2665.1.1={
+		effect={
+			join_society=monastic_order_naqshbandi
+			set_society_grandmaster=yes
 		}
 	}
+	2690.2.10={death=yes}
 }
 1506001={
 	name="Abdulhoshim"
@@ -318,8 +319,7 @@
 	father=1506026
 	mother=1506042
 	2631.6.22={birth=yes}
-	2665.5.5={
-		add_spouse=1506023
+	2665.5.5={add_spouse=1506023
 		effect={add_lover=1506023}
 		effect={add_friend=1506024}}
 }
