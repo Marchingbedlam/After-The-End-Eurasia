@@ -3888,7 +3888,7 @@ d_folketro;The Nordic Priesthood;;;;;;;;;;;x
 d_forge_committee;Forge Committee;;;;;;;;;;;x
 d_fradi_adj;Fradist;;;;;;;;;;;x
 d_fradi;Fradi;;;;;;;;;;;x
-d_franche_comte_adj;Franc-Comtois;;;;;;;;;;;;x;
+d_franche_comte_adj;Franc-Comtois;;;;;;;;;;;x
 d_franche_comte;Franche-Comté;;;;;;;;;;;x
 d_franconia_adj;Franconian;;;;;;;;;;;x
 d_franconia;Franconia;;;;;;;;;;;x
@@ -3963,8 +3963,8 @@ d_guiyi_adj;Guiyian;;;;;;;;;;;x
 d_guiyi;Guiyi;;;;;;;;;;;x
 d_gujranwala_adj;Gujranwala;;;;;;;;;;;x
 d_gujranwala;Gujranwala;;;;;;;;;;;x
-d_guwahati_adj;Guwahatian;;guwahater;;;;;;;;;;;x
-d_guwahati;Guwahati;Guwahati;Guwahati;;;;;;;;;;;x
+d_guwahati_adj;Guwahatian;;guwahater;;;;;;;;;x
+d_guwahati;Guwahati;Guwahati;Guwahati;;;;;;;;;x
 d_gwynedd_adj;Gwyneddian;;;;;;;;;;;x
 d_gwynedd;Gwynedd;;;;;;;;;;;x
 d_gyumri_adj;Gyumretsi;;;;;;;;;;;x
@@ -4022,7 +4022,7 @@ d_huelva;Huelva;;;;;;;;;;;x
 d_hulunbuir_adj;Hulunbuir;;;;;;;;;;;x
 d_hulunbuir;Hulunbuir;;;;;;;;;;;x
 d_hyderabad_adj;Hyderabadi;;;;;;;;;;;x
-d_hyderabad_pk_adj;Hyderabad;;;;Guwahati;;;;;;;;;x
+d_hyderabad_pk_adj;Hyderabad;;;;Guwahati;;;;;;;x
 d_hyderabad_pk;Hyderabad;;;;;;;;;;;x
 d_hyderabad;Hyderabad;;;;;;;;;;;x
 d_ibadi_adj;Ibadi;;;;;;;;;;;x
@@ -4090,8 +4090,8 @@ d_jerusalem;Jerusalem;;;;;;;;;;;x
 d_jhansi;Jhansi;;;;;;;;;;;x
 d_jirba_corsairs_adj;Barbary;;;;;;;;;;;x
 d_jirba_corsairs;Jirba Corsairs;;;;;;;;;;;x
-d_jorhat_adj;Jorhatian;;jorhater;;;;;;;;;;;x
-d_jorhat;Jorhat;Jorhat;Jorhat;;;;;;;;;;;x
+d_jorhat_adj;Jorhatian;;jorhater;;;;;;;;;x
+d_jorhat;Jorhat;Jorhat;Jorhat;;;;;;;;;x
 d_kabulistan_adj;Kabuli;;;;;;;;;;;x
 d_kabulistan;Kabulistan;;;;;;;;;;;x
 d_kadapa;Kadapa;;;;;;;;;;;x
@@ -4144,7 +4144,7 @@ d_kemerovo;Kemerovo;;;;;;;;;;;x
 d_kerman_adj;Kermani;;;;;;;;;;;x
 d_kerman;Kerman;;;;;;;;;;;x
 d_kermanshah_adj;Kermanshahi;;;;;;;;;;;x
-d_kermanshah;Kermanshah;;;;Jorhat;;;;;;;;;x
+d_kermanshah;Kermanshah;;;;;;;;;;;x
 d_keyih_bahri_adj;Keyih Bahri;;;;;;;;;;;x
 d_keyih_bahri;Keyih Bahri;;;;;;;;;;;x
 d_khakassia_adj;Khakassian;;;;;;;;;;;x
@@ -4398,10 +4398,10 @@ d_nadu_nadu_adj;Nadu;;;;;;;;;;;x
 d_nadu_nadu;Nadu Nadu;;;;;;;;;;;x
 d_nafarroako_adj;Nafarroakian;;;;;;;;;;;x
 d_nafarroako;Nafarroako;;;;;;;;;;;x
-d_nagaland_adj;Nagalandian;;nagalander;;;;;;;;;;;x
-d_nagaland;Nagaland;Nagaland;Nagaland;;;;;;;;;;;x
-d_nagaon_adj;Nagaonian;;nagaoner;;;;;;;;;;;x
-d_nagaon;Nagaon;Nagaon;Nagaon;;;;;;;;;;;x
+d_nagaland_adj;Nagalandian;;nagalander;;;;;;;;;x
+d_nagaland;Nagaland;Nagaland;Nagaland;;;;;;;;;x
+d_nagaon_adj;Nagaonian;;nagaoner;;;;;;;;;x
+d_nagaon;Nagaon;Nagaon;Nagaon;;;;;;;;;x
 d_nagpur;Nagpur;;;;;;;;;;;x
 d_nagqu_adj;Nagqu;;;;;;;;;;;x
 d_nagqu;Nagqu;;;;;;;;;;;x
@@ -4429,10 +4429,10 @@ d_new_fianna_adj;New Fianna;;;;;;;;;;;x
 d_new_fianna;New Fianna;;;;;;;;;;;x
 d_ngari_adj;Ngari;;;;;;;;;;;x
 d_ngari;Ngari;;;;;;;;;;;x
-d_nile_adj;Nile;;;;Nagaland;;;;;;;;;x
+d_nile_adj;Nile;;;;Nagaland;;;;;;;x
 d_nile;Nile;;;;;;;;;;;x
 d_nimar;Nimar;;;;;;;;;;;x
-d_ningxia;Ningxia;;;;Nagaon;;;;;;;;;x
+d_ningxia;Ningxia;;;;Nagaon;;;;;;;x
 d_nis_adj;Nišlija;;;;;;;;;;;x
 d_nis;Niš;;;;;;;;;;;x
 d_nishapur_adj;Nishapuri;;;;;;;;;;;x
@@ -4945,9 +4945,10 @@ d_zufar;Zufar;;;;;;;;;;;x
 e_al_mashriq_adj;Levantine;;;;;;;;;;;x
 e_al_mashriq;al-Mashriq;;;;;;;;;;;x
 e_alpenland;Alpenland;;;;;;;;;;;x
+e_alpenland_adj;Alpenlander;;;;;;;;;;;x
 e_arabia_adj;Arabian;;;;;;;;;;;x
 e_arabia;Arabia;;;;;;;;;;;x
-e_arabiyya_adj;Arabiyya;;;;;;;;;;;x
+e_arabiyya_adj;Arabiyyan;;;;;;;;;;;x
 e_arabiyya;Arabiyya;;;;;;;;;;;x
 e_balkans_adj;Balkanian;;;;;;;;;;;x
 e_balkans;Balkans;;;;;;;;;;;x
@@ -5008,6 +5009,7 @@ e_magadha;Magadha;;;;;;;;;;;x
 e_maghrib_adj;Maghribian;;;;;;;;;;;x
 e_maghrib;Maghrib;;;;;;;;;;;x
 e_maharashtra;Maharashtra;;;;;;;;;;;x
+e_maharashtra_adj;Maharashtran;;;;;;;;;;;x
 e_misr_adj;Egyptian;;;;;;;;;;;x
 e_misr;Misr;;;;;;;;;;;x
 e_mongolia_adj;Mongolian;;;;;;;;;;;x
@@ -5019,6 +5021,7 @@ e_northern_provinces;Northern Ethiopian Provinces;;;;;;;;;;;x
 e_pakistan_adj;Pakistani;;;;;;;;;;;x
 e_pakistan;Pakistan;;;;;;;;;;;x
 e_pale_settlement;Der Tkhum HaMoyshav;;;;;;;;;;;x
+e_pale_settlement_adj;Pale;;;;;;;;;;;x
 e_persia_adj;Persian;;;;;;;;;;;x
 e_persia;Persia;;;;;;;;;;;x
 e_pirates_adj;Pirates;;;;;;;;;;;x
@@ -5054,26 +5057,31 @@ e_ural;Ural;;;;;;;;;;;x
 e_vindhya_adj;Vindhyan;;;;;;;;;;;x
 e_vindhya;Vindhya;;;;;;;;;;;x
 e_visegrad;Visegrad;;;;;;;;;;;x
+e_visegrad_adj;Visegrader;;;;;;;;;;;x
 e_yugoslavia_adj;Yugoslavian;;;;;;;;;;;x
 e_yugoslavia;Yugoslavia;;;;;;;;;;;x
 k_afghanistan_adj;Afghan;;;;;;;;;;;x
 k_afghanistan;Afghanistan;;;;;;;;;;;x
 k_agra;Agra;;;;;;;;;;;x
+k_agra_adj;Agra;;;;;;;;;;;x
 k_albania_adj;Albanian;;;;;;;;;;;x
 k_albania;Albania;;;;;;;;;;;x
 k_algeria_adj;Algerian;;;;;;;;;;;x
 k_algeria;Algeria;;;;;;;;;;;x
 k_alta_italia;Alta Italia;;;;;;;;;;;x
-k_altay_adj;Altay;;;;;;;;;;;x
+k_alta_italia_adj;Alta Italian;;;;;;;;;;;x
 k_altay_sayan_adj;Altay-Sayan;;;;;;;;;;;x
 k_altay_sayan;Altay-Sayan;;;;;;;;;;;x
 k_altay;Altay;;;;;;;;;;;x
+k_altay_adj;Altaian;;;;;;;;;;;x
 k_amdo_adj;Amdo;;;;;;;;;;;x
 k_amdo;Amdo;;;;;;;;;;;x
 k_amhara_adj;Amhara;;;;;;;;;;;x
 k_amhara;Amhara;;;;;;;;;;;x
 k_anatolia_adj;Anatolian;;;;;;;;;;;x
 k_anatolia;Anatolia;;;;;;;;;;;x
+e_anatolia;Anatolia;;;;;;;;;;;x
+e_anatolia_adj;Anatolian;;;;;;;;;;;x
 k_andalusia_adj;Andalusian;;;;;;;;;;;x
 k_andalusia;Andalusia;;;;;;;;;;;x
 k_andhra_adj;Andhrulu;;;;;;;;;;;x
@@ -5095,6 +5103,7 @@ k_azerbaijan;Azerbaijan;;;;;;;;;;;x
 k_azov_adj;Azov;;;;;;;;;;;x
 k_azov;Azov;;;;;;;;;;;x
 k_bagelkhand;Bagelkhand;;;;;;;;;;;x
+k_bagelkhand_adj;Bagelkhandi;;;;;;;;;;;x
 k_bahrayn_adj;Bahrayni;;;;;;;;;;;x
 k_bahrayn;Bahrayn;;;;;;;;;;;x
 k_balc_adj;Estian;;;;;;;;;;;x
@@ -5102,6 +5111,7 @@ k_balc;Balc;;;;;;;;;;;x
 k_balochistan_adj;Balochistani;;;;;;;;;;;x
 k_balochistan;Balochistan;;;;;;;;;;;x
 k_bandar_abbas;Bandar Abbas;;;;;;;;;;;x
+k_bandar_abbas_adj;Bandar Abbas;;;;;;;;;;;x
 k_bangladesh_adj;Bangladeshi;;;;;;;;;;;x
 k_bangladesh;Bangladesh;;;;;;;;;;;x
 k_bashkortostan_adj;Bashkir;;;;;;;;;;;x
@@ -5111,8 +5121,10 @@ k_bavaria;Bavaria;;;;;;;;;;;x
 k_belarus_adj;Belarusian;;;;;;;;;;;x
 k_belarus;Belarus;;;;;;;;;;;x
 k_belgium;Belgium;;;;;;;;;;;x
+k_belgium_adj;Belgian;;;;;;;;;;;x
 k_belomore;Belomor'e;;;;;;;;;;;x
 k_bessarabia;Bessarabia;;;;;;;;;;;x
+k_bessarabia_adj;Bessarabian;;;;;;;;;;;x
 k_bhutan_adj;Bhutanese;;;;;;;;;;;x
 k_bhutan;Bhutan;;;;;;;;;;;x
 k_bihar_adj;Bihari;;;;;;;;;;;x
@@ -5130,6 +5142,7 @@ k_brittany;Brittany;;;;;;;;;;;x
 k_bulgaria_adj;Bulgarian;;;;;;;;;;;x
 k_bulgaria;Bulgaria;;;;;;;;;;;x
 k_bundelkhand;Bundelkhand;;;;;;;;;;;x
+k_bundelkhand_adj;Bundelkhandi;;;;;;;;;;;x
 k_buryatia_adj;Buryatia;;;;;;;;;;;x
 k_buryatia;Buryatia;;;;;;;;;;;x
 k_castile_adj;Castilian-Leónese;;;;;;;;;;;x
@@ -5145,6 +5158,7 @@ k_centro;Italia;;;;;;;;;;;x
 k_chernozemye_adj;Chernozem'ye;;;;;;;;;;;x
 k_chernozemye;Chernozem'ye;;;;;;;;;;;x
 k_chhattisgarh;Chhattisgarh;;;;;;;;;;;x
+k_chhattisgarh_adj;Chhattisgarhi;;;;;;;;;;;x
 k_crimea_adj;Crimean;;;;;;;;;;;x
 k_crimea;Crimea;;;;;;;;;;;x
 k_croatia_adj;Croatian;;;;;;;;;;;x
@@ -5158,6 +5172,7 @@ k_czechia;Czechia;;;;;;;;;;;x
 k_czechoslovakia_adj;Czechoslovakian;;;;;;;;;;;x
 k_czechoslovakia;Czechoslovakia;;;;;;;;;;;x
 k_daglar;Daghlar;;;;;;;;;;;x
+k_daglar_adj;Daghlar;;;;;;;;;;;x
 k_delhi_adj;Delhi;;;;;;;;;;;x
 k_delhi;Delhi;;;;;;;;;;;x
 k_denmark_adj;Danish;;;;;;;;;;;x
@@ -5167,6 +5182,7 @@ k_dobruja;Dobruja;;;;;;;;;;;x
 k_don_adj;Doner;;;;;;;;;;;x
 k_don;Don;;;;;;;;;;;x
 k_dyke_pole;Dyke Pole;;;;;;;;;;;x
+k_dyke_pole_adj;Dyke Pole;;;;;;;;;;;x
 k_dzungaria_adj;Dzungar;;;;;;;;;;;x
 k_dzungaria;Dzungaria;;;;;;;;;;;x
 k_ege_adj;Egean;;;;;;;;;;;x
@@ -5182,6 +5198,7 @@ k_euskadi;Euskadi;;;;;;;;;;;x
 k_fars_adj;Farsi;;;;;;;;;;;x
 k_fars;Fars;;;;;;;;;;;x
 k_fergana;Fergana;;;;;;;;;;;x
+k_fergana_adj;Ferganam;;;;;;;;;;;x
 k_finland_adj;Finnish;;;;;;;;;;;x
 k_finland;Finland;;;;;;;;;;;x
 k_fornsed_adj;Fornsedfolk;;;;;;;;;;;x
@@ -5192,6 +5209,7 @@ k_free_officers_revolt_adj;Officer;;;;;;;;;;;x
 k_free_officers_revolt;Harakat a-Dubbat al'Ahrar;;;;;;;;;;;x
 k_galicia_adj;Galician;;;;;;;;;;;x
 k_galicia_eastern;Galicia;;;;;;;;;;;x
+k_galicia_eastern_adj;Galician;;;;;;;;;;;x
 k_galicia_lodomeria_adj;Galicia-Volhynian;;;;;;;;;;;x
 k_galicia_lodomeria;Galicia-Volhynia;;;;;;;;;;;x
 k_galicia;Galicia;;;;;;;;;;;x
@@ -5200,6 +5218,7 @@ k_gandhist;Presidium;;;;;;;;;;;x
 k_gauda_adj;Gaudan;;;;;;;;;;;x
 k_gauda;Gauda;;;;;;;;;;;x
 k_gelugpa;Lhasa;;;;;;;;;;;x
+k_gelugpa_adj;Lhasan;;;;;;;;;;;x
 k_georgia_adj;Georgian;;;;;;;;;;;x
 k_georgia;Georgia;;;;;;;;;;;x
 k_gibraltar_adj;Gibraltar;;;;;;;;;;;x
@@ -5225,6 +5244,7 @@ k_hatay;Hatay;;;;;;;;;;;x
 k_hellas_adj;Hellenic;;;;;;;;;;;x
 k_hellas;Hellas;;;;;;;;;;;x
 k_hexi;Hexi;;;;;;;;;;;x
+k_hexi_adj;Hexi;;;;;;;;;;;x
 k_hijaz_adj;Hijazi;;;;;;;;;;;x
 k_hijaz;Hijaz;;;;;;;;;;;x
 k_himal_adj;Himal;;;;;;;;;;;x
@@ -5234,6 +5254,7 @@ k_hungary;Hungary;;;;;;;;;;;x
 k_iceland_adj;Icelandic;;;;;;;;;;;x
 k_iceland;Iceland;;;;;;;;;;;x
 k_ilahabad;Ilahabad;;;;;;;;;;;x
+k_ilahabad_adj;Ilahabadi;;;;;;;;;;;x
 k_iran_e_gharbi_adj;Western Iranian;;;;;;;;;;;x
 k_iran_e_gharbi;Iran-e Gharbi;;;;;;;;;;;x
 k_iraq_adj;Iraqi;;;;;;;;;;;x
@@ -5243,6 +5264,7 @@ k_ireland;Ireland;;;;;;;;;;;x
 k_irkutsk_adj;Irkutsk;;;;;;;;;;;x
 k_irkutsk;Irkutsk;;;;;;;;;;;x
 k_iron_mountains;Zheleznyye Gory;;;;;;;;;;;x
+k_iron_mountains_adj;Zheleznyye Gory;;;;;;;;;;;x
 k_jharkhand_adj;Jharkhandi;;;;;;;;;;;x
 k_jharkhand;Jharkhand;;;;;;;;;;;x
 k_jordan_adj;Jordanian;;;;;;;;;;;x
@@ -5268,6 +5290,7 @@ k_khangai;Khangai;;;;;;;;;;;x
 k_khorasan_adj;Khorasani;;;;;;;;;;;x
 k_khorasan;Khorasan;;;;;;;;;;;x
 k_kishi_juz;Aral;;;;;;;;;;;x
+k_kishi_juz_adj;Aral;;;;;;;;;;;x
 k_komi_adj;Komi;;;;;;;;;;;x
 k_komi;Komi;;;;;;;;;;;x
 k_krasnoyarsk_adj;Krasnoyarsk;;;;;;;;;;;x
@@ -5303,14 +5326,19 @@ k_lombardy;Lombardy;;;;;;;;;;;x
 k_london_adj;Londonian;;;;;;;;;;;x
 k_london;London;;;;;;;;;;;x
 k_lower_saxony;Lower Saxony;;;;;;;;;;;x
+k_lower_saxony_adj;Saxon;;;;;;;;;;;x
 k_lower_volga;Povolzhye;;;;;;;;;;;x
+k_lower_volga_adj;Volgan;;;;;;;;;;;x
 k_macedonia_adj;Macedonian;;;;;;;;;;;x
 k_macedonia;Macedonia;;;;;;;;;;;x
 k_macronesia;Macaronesia;;;;;;;;;;;x
+k_macronesia_adj;Macaronesian;;;;;;;;;;;x
 k_mahakoshal;Mahakoshal;;;;;;;;;;;x
+k_mahakoshal_adj;Mahakoshali;;;;;;;;;;;x
 k_maldives_adj;Maldivian;;;;;;;;;;;x
 k_maldives;Maldives;;;;;;;;;;;x
 k_marathwada;Marathwada;;;;;;;;;;;x
+k_marathwada_adj;Marathwadan;;;;;;;;;;;x
 k_markazi_adj;Markazi;;;;;;;;;;;x
 k_markazi;Markazi;;;;;;;;;;;x
 k_moldova_adj;Moldovan;;;;;;;;;;;x
@@ -5323,6 +5351,7 @@ k_moskva_adj;Muscovite;;;;;;;;;;;x
 k_moskva;Moskva;;;;;;;;;;;x
 k_mumbai;Mumbai;;;;;;;;;;;x
 k_nagpur;Nagpur;;;;;;;;;;;x
+k_nagpur_adj;Nagpuri;;;;;;;;;;;x
 k_najd_adj;Najdi;;;;;;;;;;;x
 k_najd;Najd;;;;;;;;;;;x
 k_naples_adj;Meridional;;;;;;;;;;;x
@@ -5350,9 +5379,11 @@ k_ob;Ob;;;;;;;;;;;x
 k_occitania_adj;Occitan;;;;;;;;;;;x
 k_occitania;Occitania;;;;;;;;;;;x
 k_odisha;Odisha;;;;;;;;;;;x
+k_odisha_adj;Odishan;;;;;;;;;;;x
 k_oman_adj;Omani;;;;;;;;;;;x
 k_oman;Oman;;;;;;;;;;;x
 k_orta_juz;Akmola;;;;;;;;;;;x
+k_orta_juz_adj;Akmolan;;;;;;;;;;;x
 k_ossiland_adj;Ossilander;;;;;;;;;;;x
 k_ossiland;Ossiland;;;;;;;;;;;x
 k_panjab_adj;Panjabi;;;;;;;;;;;x
@@ -5368,12 +5399,13 @@ k_poland;Poland;;;;;;;;;;;x
 k_portugal_adj;Portugese;;;;;;;;;;;x
 k_portugal;Portugal;;;;;;;;;;;x
 k_povolzhye;Povolzhye;;;;;;;;;;;x
+k_povolzhye_adj;Volgan;;;;;;;;;;;x
 k_pravoslavie_adj;Muscovite;;;;;;;;;;;x
 k_pravoslavie;Moskva;;;;;;;;;;;x
 k_provence_adj;Provençal;;;;;;;;;;;x
 k_provence;Provence;;;;;;;;;;;x
 k_purvanchal;Purvanchal;;;;;;;;;;;x
-k_purvottar_pradesh;Purvottar Pradesh;;;;;;;;;;;x
+k_purvanchal_adj;Purvanchali;;;;;;;;;;;x
 k_rajasthan_adj;Rajasthani;;;;;;;;;;;x
 k_rajasthan;Rajasthan;;;;;;;;;;;x
 k_rarh_adj;Rarhian;;;;;;;;;;;x
@@ -5387,7 +5419,9 @@ k_sahara;Sahara;;;;;;;;;;;x
 k_samarkand_adj;Samarkandi;;;;;;;;;;;x
 k_samarkand;Samarkand;;;;;;;;;;;x
 k_san_marino;San Marino;;;;;;;;;;;x
+k_san_marino_adj;Sammarinese;;;;;;;;;;;x
 k_sapmi;Sápmi;;;;;;;;;;;x
+k_sapmi_adj;Sápmi;;;;;;;;;;;x
 k_saraikistan_adj;Saraikistan;;;;;;;;;;;x
 k_saraikistan;Saraikistan;;;;;;;;;;;x
 k_saryarqa_adj;Saryarqa;;;;;;;;;;;x
@@ -5410,7 +5444,7 @@ k_sindh_adj;Sindhi;;;;;;;;;;;x
 k_sindh;Sindh;;;;;;;;;;;x
 k_slovakia_adj;Slovak;;;;;;;;;;;x
 k_slovakia;Slovakia;;;;;;;;;;;x
-k_slovenia_adj;Slovenian;;;;;;;;;;;;;
+k_slovenia_adj;Slovenian;;;;;;;;;;;x
 k_slovenia;Slovenia;;;;;;;;;;;x
 k_somalia_adj;Somalian;;;;;;;;;;;x
 k_somalia;Somalia;;;;;;;;;;;x
@@ -5456,9 +5490,10 @@ k_udmurtia_adj;Udmurt;;;;;;;;;;;x
 k_udmurtia;Udmurtia;;;;;;;;;;;x
 k_ukraine_adj;Ukrainian;;;;;;;;;;;x
 k_ukraine;Ukraine;;;;;;;;;;;x
-k_ulster_adj;Ulsterian;;;;;;;;;;;x
+k_ulster_adj;Ulsterman;;;;;;;;;;;x
 k_ulster;Ulster;;;;;;;;;;;x
 k_uly_juz;Almaty;;;;;;;;;;;x
+k_uly_juz_adj;Almatyan;;;;;;;;;;;x
 k_ural_adj;Uralic;;;;;;;;;;;x
 k_ural;Ural;;;;;;;;;;;x
 k_uzbekistan_adj;Uzbek;;;;;;;;;;;x
@@ -5466,15 +5501,18 @@ k_uzbekistan;Uzbekistan;;;;;;;;;;;x
 k_valencia_adj;Valèncian;;;;;;;;;;;x
 k_valencia;València;;;;;;;;;;;x
 k_venetia;Venetia;;;;;;;;;;;x
+k_venetia_adj;Venetian;;;;;;;;;;;x
 k_vidarbha;Vidarbha;;;;;;;;;;;x
+k_vidarbha_adj;Vidarbhan;;;;;;;;;;;x
 k_volga_adj;Volgan;;;;;;;;;;;x
 k_volga;Volga;;;;;;;;;;;x
 k_volgograd;Volgograd;;;;;;;;;;;x
+k_volgograd_adj;Volgograder;;;;;;;;;;;x
 k_wales_adj;Welsh;;;;;;;;;;;x
 k_wales;Wales;;;;;;;;;;;x
 k_wallachia_adj;Wallachian;;;;;;;;;;;x
 k_wallachia;Wallachia;;;;;;;;;;;x
 k_yemen_adj;Yemeni;;;;;;;;;;;x
 k_yemen;Yemen;;;;;;;;;;;x
-k_york_adj;Yorker;;;;;;;;;;;;;
+k_york_adj;Yorker;;;;;;;;;;;x
 k_york;York;;;;;;;;;;;x
