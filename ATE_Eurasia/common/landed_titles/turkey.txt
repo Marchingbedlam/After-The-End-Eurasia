@@ -165,23 +165,23 @@ e_turkey = {
 				b_shekerli = {}
 			}
 		}
-		d_agri = {
+		d_aghri = {
 			color={ 208 127 93 }
 			color2={ 255 255 255 }
 			
-			capital = 302 # c_agri
+			capital = 302 # c_aghri
 			
 			kurdish="Agirî"
 			armenian="Ararat"
 			
-			c_agri = { # 302
+			c_aghri = { # 302
 				color={ 218 117 98 }
 				color2={ 255 255 255 }
 				
 				kurdish="Agirî"
 				armenian="K'arber"
 				
-				b_agri = {
+				b_aghri = {
 					kurdish="Agirî"
 					armenian="K'arber"}
 				b_patnos = {}
