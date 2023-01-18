@@ -463,6 +463,116 @@ e_scandinavia = {
 		vestlending = "Sverike"
 		svalbarder = "Sverige"
 				
+		d_svealand = {
+			color={ 10 180 220 }
+			color2={ 255 255 255 }
+			
+			capital = 530 # stockholm
+			
+			c_stockholm = {
+				color={ 53 123 200 }
+				color2={ 255 255 255 }
+				
+				b_stockholm = {}
+				b_ostermalm = {}
+				b_gamlastan = {}
+				b_huddinge = {}
+				b_akersberga = {}
+				b_sodertorn = {}
+				b_sollentuna = {}
+				b_taby = {}
+				b_solna = {}
+				b_norrtalje = {}
+				b_rinkeby = {}
+				b_boo = {}
+				b_varmdo = {}
+				b_nacka = {}
+			}
+			
+			c_uppland = {
+				color={ 10 100 245 }
+				color2={ 255 255 255 }
+				
+				holy_site = folketro
+				
+				ostlending = "Oppland"
+				vestlending = "Oppland"
+				tronder = "Oppland"
+				
+				b_uppsala = {
+					yankee = "Oopsalah"
+					ostlending = "Oppsala"
+					vestlending = "Oppsala"
+					tronder = "Oppsala"
+					danish = "Opsala"
+				}
+				b_storvreta = {}
+				b_osthammar = {}
+				b_heby = {}
+				b_vallskoga = {}
+				b_norby = {}
+				b_enkoping = {}
+			}
+			
+			c_orebro = {
+				color={ 18 130 247 }
+				color2={ 255 255 255 }
+				
+				ostlending = "Ørebro"
+				vestlending = "Ørebro"
+				tronder = "Ørebro"
+				danish = "Ørebro"
+				
+				b_orebro = {
+					ostlending = "Ørebro"
+					vestlending = "Ørebro"
+					tronder = "Ørebro"
+					danish = "Ørebro"
+				}
+				b_karlskoga = {}
+				b_kumla = {}
+				b_zinkgruvan = {}
+				b_nora = {}
+				b_lindesberg = {}
+				b_kopparbeg = {}
+			}
+			
+			c_sodermanland = {
+				color={ 84 124 246 }
+				color2={ 255 255 255 }
+				
+				b_sodertalje = {}
+				b_strangnas = {}
+				b_trosa = {}
+				b_nykoping = {}
+				b_oxelosund = {}
+				b_gnesta = {}
+				b_katrineholm = {}
+			}
+			c_vastmanland = {
+				color={ 18 115 172 }
+				color2={ 255 255 255 }
+				
+				ostlending = "Vestmannland"
+				tronder = "Vestmannland"
+				vestlending = "Vestmannland"
+				danish = "Vestmandland"
+				
+				b_vasteras = {
+					ostlending = "Vesterås"
+					vestlending = "Vesterås"
+					tronder = "Vesterås"
+					danish = "Vesterås"
+				}
+				b_arboga = {}
+				b_sala = {}
+				b_fagersta = {}
+				b_koping = {}
+				b_surahammar = {}
+				b_norberg = {}
+			}
+		}
+		
 		d_skaneland = {
 			color={ 10 212 212 }
 			color2={ 255 255 255 }
@@ -509,6 +619,7 @@ e_scandinavia = {
 				b_hallabro = {}
 			}
 		}
+		
 		d_smaland = {
 			color={ 50 180 195 }
 			color2={ 255 255 255 }
@@ -551,8 +662,8 @@ e_scandinavia = {
 				b_norrkoping = {}
 				b_linkoping = {}
 				b_soderkoping = {}
-				b_nykoping = {}
-				b_katrineholm = {}
+				b_nordanskog = {}
+				b_finspang = {}
 				b_motala = {}
 				b_vadstena = {}
 			}
@@ -730,105 +841,23 @@ e_scandinavia = {
 				b_hemse = {}
 			}
 		}
-		d_svealand = {
-			color={ 10 180 220 }
-			color2={ 255 255 255 }
-			
-			capital = 494 # c_uppland
-			
-			c_uppland = {
-				color={ 10 100 245 }
-				color2={ 255 255 255 }
-				
-				holy_site = folketro
-				
-				ostlending = "Oppland"
-				vestlending = "Oppland"
-				tronder = "Oppland"
-				
-				b_gamlastan = {}
-				b_uppsala = {
-					yankee = "Oopsalah"
-					ostlending = "Oppsala"
-					vestlending = "Oppsala"
-					tronder = "Oppsala"
-					danish = "Opsala"
-				}
-				b_sollentuna = {}
-				b_solna = {}
-				b_norrtalje = {}
-				b_danmark = {}
-				b_rinkeby = {}
-			}
-			
-			c_orebro = {
-				color={ 18 130 247 }
-				color2={ 255 255 255 }
-				
-				ostlending = "Ørebro"
-				vestlending = "Ørebro"
-				tronder = "Ørebro"
-				danish = "Ørebro"
-				
-				b_orebro = {
-					ostlending = "Ørebro"
-					vestlending = "Ørebro"
-					tronder = "Ørebro"
-					danish = "Ørebro"
-				}
-				b_karlskoga = {}
-				b_kumla = {}
-				b_zinkgruvan = {}
-				b_nora = {}
-				b_lindesberg = {}
-				b_kopparbeg = {}
-			}
-			
-			c_sodermanland = {
-				color={ 84 124 246 }
-				color2={ 255 255 255 }
-				
-				b_sodertalje = {}
-				b_huddinge = {}
-				b_nacka = {}
-				b_trosa = {}
-				b_varmdo = {}
-				b_sodertorn = {}
-				b_boo = {}
-			}
-			c_vastmanland = {
-				color={ 18 115 172 }
-				color2={ 255 255 255 }
-				
-				ostlending = "Vestmannland"
-				tronder = "Vestmannland"
-				vestlending = "Vestmannland"
-				danish = "Vestmandland"
-				
-				b_vasteras = {
-					ostlending = "Vesterås"
-					vestlending = "Vesterås"
-					tronder = "Vesterås"
-					danish = "Vesterås"
-				}
-				b_arboga = {}
-				b_sala = {}
-				b_fagersta = {}
-				b_koping = {}
-				b_surahammar = {}
-				b_norberg = {}
-			}
-		}
 		d_bergslagen = {
 			color={ 125 105 178 }
 			color2={ 255 255 255 }
 			
-			capital = 530 # Karlstad
+			capital = 530 # varmland
 			
 			c_varmland = {
 				color={ 126 112 244 }
 				color2={ 255 255 255 }
 				
+				b_karlstad = {}
+				b_kil = {}
+				b_deje = {}
+				b_grums = {}
+				b_kristinehamn = {}
+				b_storfors = {}
+				b_forshaga = {}
 				b_arvika = {}
 				b_charlottenberg = {}
 				b_filipstad = {}
@@ -866,18 +895,6 @@ e_scandinavia = {
 				b_edsbyn_2 = {}
 				b_ljusdal_2 = {}
 				b_sandviken = {}
-			}
-			c_karlstad = {
-				color={ 155 145 216 }
-				color2={ 255 255 255 }
-			
-				b_karlstad = {}
-				b_kil = {}
-				b_deje = {}
-				b_grums = {}
-				b_kristinehamn = {}
-				b_storfors = {}
-				b_forshaga = {}
 			}
 		}
 		d_jamtland = {
