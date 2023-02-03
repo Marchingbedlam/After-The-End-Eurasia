@@ -1,0 +1,15 @@
+al_saud_bloodline = { #Blood of Al Saud
+	monthly_character_prestige = 0.3
+	muslim_opinion = 10
+	ahl_as_salaf_opinion = 20
+	najdi_opinion = 10
+	martial = 2
+	combat_rating = 5
+	inheritance = patrilineal
+	allow_bastards = no
+	picture = GFX_bloodlines_symbol_sunni
+	flags = { historical_bloodline }
+	active = {
+		religion = ahl_as_salaf
+	}
+}

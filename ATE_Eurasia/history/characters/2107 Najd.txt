@@ -5,6 +5,12 @@
 	religion=ahl_as_salaf
 	2638.9.21={birth=yes}
 	2680.1.1={death=yes}
+	1720.1.1={
+		create_bloodline={
+			type=al_saud_bloodline
+			has_dlc="Holy Fury"
+		}
+	}
 }
 2107001={ #Duke of Duwadmi
 	name="Salman"
