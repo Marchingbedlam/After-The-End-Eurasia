@@ -653,8 +653,8 @@ narrative_event = {
 #The search for Genghis's Tomb was successful. - Establish claim.
 narrative_event = {
 	id = khan.5
-	title = EVTTITLEHF2
-	desc = EVTDESCAHF5
+	title = khan_title_5
+	desc = khan_desc_5
 	picture = GFX_evt_death
 	border = GFX_event_narrative_frame_war
 	
@@ -672,25 +672,25 @@ narrative_event = {
 	}
 
 	option = { 
-		name = EVTOPTAHF5
+		name = EVTOPTA_khan_5
 		custom_tooltip = { text = TT_EVTOPTAHF3 }
 		prestige = -10000
 		set_character_flag = flag_khan_lineage_search_high
 	}
 	option = { 
-		name = EVTOPTBHF5
+		name = EVTOPTB_khan_5
 		custom_tooltip = { text = TT_EVTOPTBHF3 }
 		prestige = -7500
 		set_character_flag = flag_khan_lineage_search_medium
 	}
 	option = { 
-		name = EVTOPTCHF5
+		name = EVTOPTC_khan_5
 		custom_tooltip = { text = TT_EVTOPTCHF3 }
 		prestige = -5000
 		set_character_flag = flag_khan_lineage_search_low
 	}
 	option = { 
-		name = EVTOPTDHF5
+		name = EVTOPTD_khan_5
 		custom_tooltip = { text = TT_EVTOPTDHF3 }
 		prestige = -2500
 		set_character_flag = flag_khan_lineage_search_cheap
@@ -1111,8 +1111,8 @@ narrative_event = {
 #Genghis Bloodline gained.
 narrative_event = {
 	id = khan.9
-	title = EVTTITLEHF9
-	desc = EVTDESCAHF9
+	title = khan_title_9
+	desc = khan_desc_9
 	picture = GFX_the_khan
 	border = GFX_event_narrative_frame_war
 	
