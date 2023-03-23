@@ -5,7 +5,7 @@
 11100 = { name = "Borjigin"
 	culture = khalkha
 	coat_of_arms = { 
-		religion = ruist
+		religion = nondescript_eastern
 		template = 0
 		layer = {
 			texture = 1
@@ -93,7 +93,7 @@
 1051150 = { name = "Li"
 	culture = beifanghua
 	coat_of_arms = { 
-		religion = nondescript_far_east
+		religion = nondescript_eastern
 		template = 0
 		layer = {
 			texture = 1
@@ -109,7 +109,7 @@
 1051151 = { name = "Zhao"
 	culture = beifanghua
 	coat_of_arms = {
-		religion = nondescript_far_east
+		religion = nondescript_eastern
 		template = 0
 		layer = {
 			texture = 1
@@ -124,7 +124,7 @@
 1051152 = { name = "Wu"
 	culture = beifanghua
 	coat_of_arms = { 
-		religion = nondescript_far_east
+		religion = nondescript_eastern
 		template = 0
 		layer = {
 			texture = 1
@@ -292,7 +292,7 @@
 105837 = { name = "Yang" #Imperial family of Sui
 	culture = beifanghua
 	coat_of_arms = { 
-		religion = nondescript_far_east
+		religion = nondescript_eastern
 		template = 0
 		layer = {
 			texture = 1
@@ -317,7 +317,7 @@
 8001000 = { name = "Zhu" #- Ruling Ming Dynasty
 	culture = beifanghua
 	coat_of_arms = { 
-		religion = nondescript_far_east
+		religion = nondescript_eastern
 		template = 0
 		layer = {
 			texture = 1
@@ -357,7 +357,7 @@
 	name = "Hong"
 	culture = beifanghua
 	coat_of_arms = { 
-		religion = nondescript_far_east
+		religion = nondescript_eastern
 		template = 0
 		layer = {
 			texture = 1
@@ -374,11 +374,11 @@
 	name = "Lü" 
 	culture = beifanghua
 	coat_of_arms = { 
-		religion = nondescript_far_east
+		religion = nondescript_eastern
 		template = 0
 		layer = {
-			texture = 2
-			texture_internal = 1
+			texture = 0
+			texture_internal = 9
 			emblem = 0
 			color = 0
 			color = 0
@@ -391,11 +391,11 @@
 	name = "Azizi"
 	culture = beifanghua
 	coat_of_arms = { 
-		religion = nondescript_far_east
+		religion = nondescript_eastern
 		template = 0
 		layer = {
-			texture = 2
-			texture_internal = 0
+			texture = 0
+			texture_internal = 8
 			emblem = 0
 			color = 0
 			color = 0
@@ -404,8 +404,40 @@
 	}
 	used_for_random = no
 }
-8001025 = { name = "Yue" culture = beifanghua religion = jibenyuanze }
-8001026 = { name = "Liu" culture = beifanghua religion = hui }
+8001025 = {
+	name = "Yue"
+	culture = beifanghua
+	coat_of_arms = { 
+		religion = nondescript_eastern
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 11
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+	used_for_random = no
+}
+8001026 = { 
+	name = "Liu"
+	culture = beifanghua
+	coat_of_arms = { 
+		religion = nondescript_eastern
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 10
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+	used_for_random = no
+}
 8001027 = { name = "Liugiya" culture = beifanghua religion = ruist }
 
 #################################
@@ -415,7 +447,7 @@
 1051153 = { name = "Wanyan"
 	culture = manchu
 	coat_of_arms = { 
-		religion = ruist
+		religion = nondescript_eastern
 		template = 0
 		layer = {
 			texture = 1
@@ -491,7 +523,7 @@
 1051209 = { name = "Aisin Gioro"
 	culture = manchu
 	coat_of_arms = {
-		religion = ruist
+		religion = nondescript_eastern
 		template = 0
 		layer = {
 			texture = 1
