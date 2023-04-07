@@ -2,7 +2,7 @@ title=c_tallinn
 
 # Settlements
 max_settlements=5
-b_maardu=castle
+b_maardu=tribal
 b_tallinn=city
 b_keila=temple
 b_paldiski=city
@@ -13,3 +13,6 @@ religion=lutheran
 
 
 # History
+2476.4.5={
+	b_maardu=castle
+}

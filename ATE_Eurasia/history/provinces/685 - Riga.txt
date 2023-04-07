@@ -4,7 +4,7 @@ title=c_riga
 # Settlements
 max_settlements=6
 
-b_vecriga=castle
+b_vecriga=tribal
 b_riga=city
 b_sarkandaugava=temple
 b_salaspils=city
@@ -15,3 +15,6 @@ culture=latvian
 religion=lutheran
 
 #History
+2493.4.19={
+	b_vecriga=castle
+}
