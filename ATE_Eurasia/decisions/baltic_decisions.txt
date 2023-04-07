@@ -122,7 +122,6 @@ decisions = {
 					show_scope_change = no
 					de_jure_liege = e_baltic
 				}
-			}
 			e_ruthenia = {
 				set_name = "Ukrayina"
 				adjective = "Ukrayintsi"
@@ -131,6 +130,7 @@ decisions = {
 				set_name = "Kyiv"
 				adjective = "Kyivan"
 			}
+		}
 			narrative_event = { id = baltic.2 }
 		}
 	}
