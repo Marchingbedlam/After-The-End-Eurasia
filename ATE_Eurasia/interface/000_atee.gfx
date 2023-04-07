@@ -1076,4 +1076,12 @@ spriteTypes = {
 		texturefile = "gfx\\interface\\societies\\symbol_small_warrior_lodge_glorian.dds"
 		noOfFrames = 2
 	}
+		spriteType = {
+		name = "GFX_integrate_borussia"
+		texturefile = "gfx\\interface\\decision_icon_integrate_borussia.dds"
+	}
+			spriteType = {
+		name = "GFX_integrate_belarus"
+		texturefile = "gfx\\interface\\decision_icon_integrate_belarus.dds"
+	}
 }
