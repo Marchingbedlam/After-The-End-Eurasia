@@ -1,0 +1,136 @@
+decisions = {
+	integrate_borussia = { #Places Borussia (Prussia) in the e_baltic instead of e_visegrad
+		is_high_prio = yes
+		only_playable = yes
+		ai_check_interval = 120
+
+		potential = {
+			is_alternate_start = no
+			OR = {
+				has_landed_title = e_baltic
+				AND = {
+					top_liege = {
+						has_landed_title = e_baltic
+					}
+					tier = KING
+					has_landed_title = k_borussia
+				}
+			}
+			NOT = {
+				has_global_flag = borussia_integrated
+			}
+			NOR = {
+				has_alternate_start_setting = {
+					setting = dejure
+					value = random
+				}
+				has_alternate_start_setting = {
+					setting = title_names
+					value = random
+				}
+				has_alternate_start_setting = {
+					setting = title_names
+					value = random_including_duchies
+				}
+			}
+		}
+
+		allow = {
+			is_adult = yes
+			war = no
+			prestige = 1500
+			wealth = 500
+			completely_controls = k_borussia
+			k_borussia = {
+				has_holder = no
+			}
+		}
+
+		effect = {
+			wealth = -500
+
+			custom_tooltip = { text = integrate_borussia_TT }
+
+			set_global_flag = borussia_integrated
+
+			hidden_tooltip = {
+				k_borussia = {
+					show_scope_change = no
+					de_jure_liege = e_baltic
+				}
+			}
+
+			narrative_event = { id = baltic.1 }
+		}
+	}
+
+	integrate_belarus = { #Places Belarus in e_baltic rather than e_ruthenia
+		is_high_prio = yes
+		only_playable = yes
+		ai_check_interval = 120
+
+		potential = {
+			is_alternate_start = no
+			OR = {
+				has_landed_title = e_baltic
+				AND = {
+					top_liege = {
+						has_landed_title = e_baltic
+					}
+					tier = KING
+					has_landed_title = k_belarus
+				}
+			}
+			NOT = {
+				has_global_flag = belarus_integrated
+			}
+			NOR = {
+				has_alternate_start_setting = {
+					setting = dejure
+					value = random
+				}
+				has_alternate_start_setting = {
+					setting = title_names
+					value = random
+				}
+				has_alternate_start_setting = {
+					setting = title_names
+					value = random_including_duchies
+				}
+			}
+		}
+
+		allow = {
+			is_adult = yes
+			war = no
+			prestige = 3000
+			wealth = 1000
+			completely_controls = k_belarus
+			k_belarus = {
+				has_holder = no
+			}
+		}
+		
+		effect = {
+			wealth = -1000
+			custom_tooltip = {
+				text = integrate_belarus_TT
+			}
+			set_global_flag = belarus_integrated
+			hidden_tooltip = {
+				k_belarus = {
+					show_scope_change = no
+					de_jure_liege = e_baltic
+				}
+			}
+			e_ruthenia = {
+				set_name = "Ukrayina"
+				adjective = "Ukrayintsi"
+			}
+			k_ukraine = {
+				set_name = "Kyiv"
+				adjective = "Kyivan"
+			}
+			narrative_event = { id = baltic.2 }
+		}
+	}
