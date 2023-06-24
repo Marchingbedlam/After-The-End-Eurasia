@@ -6079,7 +6079,20 @@
 
 1819000 = { name = "Shabazi" culture = teimani }
 1819001 = { name = "Sharabi" culture = teimani }
-1819002 = { name = "Al-Fayyumi" culture = teimani }
+1819002 = { name = "Al-Fayyumi" culture = teimani 
+	coat_of_arms = { 
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 66
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1819003 = { name = "Haddad" culture = teimani }
 1819004 = { name = "Abdar" culture = teimani }
 1819005 = { name = "Abaydh" culture = teimani }
@@ -6793,7 +6806,20 @@
 	}
 }
 
-1825000 = { name = "al-Huwaytat" culture = badawi }
+1825000 = { name = "al-Huwaytat" culture = badawi 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 46
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1825001 = { name = "al-Dulaymi" culture = badawi 
 	coat_of_arms = { 
 		religion = nondescript_muslim
@@ -29989,10 +30015,62 @@ coat_of_arms = {
 2106158 = { name = "Khlaifawi" culture = furataini }
 2106159 = { name = "al-Lami" culture = furataini }
 
-2107000 = { name = "Al-Saud" culture = najdi }
-2107001 = { name = "Dukkak" culture = najdi }
-2107002 = { name = "Siddiqi" culture = najdi }
-2107003 = { name = "Ali" culture = najdi }
+2107000 = { name = "Al-Saud" culture = najdi 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 77
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2107001 = { name = "Dukkak" culture = najdi 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 78
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2107002 = { name = "Siddiqi" culture = najdi 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 79
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2107003 = { name = "Al Abdi" culture = najdi 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 47
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2107004 = { name = "Ali" culture = najdi }
 2107005 = { name = "Ali" culture = najdi }
 2107006 = { name = "Ali" culture = najdi }
@@ -30120,17 +30198,121 @@ coat_of_arms = {
 2108000 = { name = "Al-Dabbagh" culture = bahrayni }
 2108001 = { name = "Ansari" culture = bahrayni }
 2108002 = { name = "Al-Khawaja" culture = bahrayni }
-2108003 = { name = "Al-Jamri" culture = bahrayni }
-2108004 = { name = "Al-Samahiji" culture = bahrayni }
-2108005 = { name = "Al-Sulaiti" culture = bahrayni }
-2108006 = { name = "Ali" culture = bahrayni }
+2108003 = { name = "Al-Jamri" culture = bahrayni 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 76
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2108004 = { name = "Al-Samahiji" culture = bahrayni 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 75
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2108005 = { name = "Al-Sulaiti" culture = bahrayni 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 74
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2108006 = { name = "Al-Qamish" culture = bahrayni 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 73
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2108007 = { name = "Ali" culture = bahrayni }
-2108008 = { name = "Ali" culture = bahrayni }
-2108009 = { name = "Ali" culture = bahrayni }
+2108008 = { name = "Kartha" culture = bahrayni 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 66
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2108009 = { name = "Al Maktoum" culture = bahrayni 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 67
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2108010 = { name = "Ali" culture = bahrayni }
-2108011 = { name = "Ali" culture = bahrayni }
+2108011 = { name = "Al Matrooshi" culture = bahrayni 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 70
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2108012 = { name = "Ali" culture = bahrayni }
-2108013 = { name = "Ali" culture = bahrayni }
+2108013 = { name = "Al Zaabi" culture = bahrayni 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 72
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2108014 = { name = "Al-Harthi" culture = bahrayni }
 2108015 = { name = "Al-Hashemi" culture = bahrayni }
 2108016 = { name = "Al-Blushi" culture = bahrayni }
@@ -30359,19 +30541,84 @@ coat_of_arms = {
 2108239 = { name = "Arkaji" culture = bahrayni }
 2108240 = { name = "Jabbareh" culture = bahrayni }
 
-2109000 = { name = "Ali" culture = hijazi }
+2109000 = { name = "Al Mahamadi" culture = hijazi 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 45
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2109001 = { name = "Al-Shaykh" culture = hijazi }
 2109002 = { name = "Zahrani" culture = hijazi }
-2109003 = { name = "Al-Dawud" culture = hijazi }
-2109004 = { name = "Ali" culture = hijazi }
+2109003 = { name = "Al-Dawud" culture = hijazi 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 48
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2109004 = { name = "Ben Mensi" culture = hijazi 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 49
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2109005 = { name = "Ali" culture = hijazi }
-2109006 = { name = "Al-Khaldi" culture = hijazi }
+2109006 = { name = "Al-Khaldi" culture = hijazi 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 50
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2109007 = { name = "Ali" culture = hijazi }
 2109008 = { name = "Ali" culture = hijazi }
 2109009 = { name = "Ali" culture = hijazi }
 2109010 = { name = "Ali" culture = hijazi }
 2109011 = { name = "Ali" culture = hijazi }
-2109012 = { name = "Al-Khazan" culture = hijazi }
+2109012 = { name = "Al-Khazan" culture = hijazi 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 51
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2109013 = { name = "Al-Hashemi" culture = hijazi }
 2109014 = { name = "Siraj" culture = hijazi }
 2109015 = { name = "Al-Ahmadi" culture = hijazi }
@@ -30535,8 +30782,34 @@ coat_of_arms = {
 2109173 = { name = "Al-Mutairi" culture = hijazi }
 2109174 = { name = "Al-Qahtani" culture = hijazi }
 
-2110000 = {name = "Al-Makki" culture = umani }
-2110001 = {name = "Al-Zubayr" culture = umani }
+2110000 = {name = "Al-Makki" culture = umani 
+		coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 65
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2110001 = {name = "Al-Zubayr" culture = umani 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 63
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2110002 = {name = "Al-Harithi" culture = umani }
 2110003 = {name = "Al-Gheilani" culture = umani }
 2110004 = {name = "Al-Busaidi" culture = umani }
@@ -30600,7 +30873,20 @@ coat_of_arms = {
 2110062 = {name = "Al-Obaidani" culture = umani }
 2110063 = {name = "Al-Rumhi" culture = umani }
 2110064 = {name = "Ramdas" culture = umani }
-2110065 = {name = "Zigdali" culture = umani }
+2110065 = {name = "Zigdali" culture = umani 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 64
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2110066 = {name = "Al-Balushi" culture = umani }
 2110067 = {name = "Al-Kalbani" culture = umani }
 2110068 = {name = "Al-Zawawi" culture = umani 
@@ -30615,19 +30901,150 @@ coat_of_arms = {
 			color = 0
 			color = 0
 		}
-	}}
+	}
+}
 
-2111000 = { name = "Ali" culture = yemeni }
-2111001 = { name = "Al-Hamdani" culture = yemeni }
-2111002 = { name = "Ali" culture = yemeni }
-2111003 = { name = "Ali" culture = yemeni }
-2111004 = { name = "Ali" culture = yemeni }
-2111005 = { name = "Rajeh" culture = yemeni }
-2111006 = { name = "Ali" culture = yemeni }
-2111007 = { name = "Ali" culture = yemeni }
-2111008 = { name = "Ali" culture = yemeni }
+2111000 = { name = "Al Amudi" culture = yemeni 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 55
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2111001 = { name = "Al-Hamdani" culture = yemeni 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 52
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2111002 = { name = "Al Abdali" culture = yemeni 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 58
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2111003 = { name = "Al Qayfa" culture = yemeni 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 53
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2111004 = { name = "Al Zaraniq" culture = yemeni 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 54
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2111005 = { name = "Al Yadumi" culture = yemeni 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 57
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2111006 = { name = "Omran" culture = yemeni 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 61
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2111007 = { name = "Ali" culture = yemeni 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 59
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2111008 = { name = "Alshshawush" culture = yemeni 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 60
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2111009 = { name = "Ali" culture = yemeni }
-2111010 = { name = "Massud" culture = yemeni }
+2111010 = { name = "Al Fadhli" culture = yemeni 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 56
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2111011 = { name = "Ali" culture = yemeni }
 2111012 = { name = "Al-Huthayfi" culture = yemeni }
 2111013 = { name = "Muhammad" culture = yemeni }
@@ -31648,7 +32065,20 @@ coat_of_arms = {
 2120149 = { name = "Shokri" culture = gilaki }
 2120150 = { name = "Fadaei" culture = gilaki }
 
-2121000 = {name = "Al-Shanfari" culture = dhofari }
+2121000 = {name = "Al-Shanfari" culture = dhofari 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 62
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2121001 = {name = "Al-Hina'i" culture = dhofari }
 2121002 = {name = "Ali" culture = dhofari }
 2121003 = {name = "Al-Gheilani" culture = dhofari }
@@ -37653,7 +38083,20 @@ coat_of_arms = {
 2171001 = { name = "Ansari" culture = sabir }
 2171002 = { name = "Al-Khawaja" culture = sabir }
 2171003 = { name = "Al-Amriki" culture = sabir }
-2171004 = { name = "Mangalus" culture = sabir }
+2171004 = { name = "Mangalus" culture = sabir 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 79
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2171005 = { name = "Al-Sudani" culture = sabir }
 2171006 = { name = "Al-Filastini" culture = sabir }
 2171007 = { name = "Al-Masri" culture = sabir }
@@ -37798,6 +38241,20 @@ coat_of_arms = {
 2171146 = { name = "Untirmair" culture = sabir }
 2171147 = { name = "Al-Mansuri" culture = sabir }
 2171148 = { name = "Al-Maghrebi" culture = sabir }
+2171149 = { name = "Jeevanandham" culture = sabir 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 68
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 2201000 = { name = "Lewis" culture = welsh 
 	coat_of_arms = {
@@ -42473,3 +42930,17 @@ coat_of_arms = {
 720108 = { name = "Yu Tin" culture = sinoa }
 720109 = { name = "Zhang" culture = sinoa }
 720110 = { name = "Zeng" culture = sinoa }
+720111 = { name = "Ah Chuen" culture sinoa 
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 71
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
