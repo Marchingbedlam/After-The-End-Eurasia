@@ -82,6 +82,11 @@
 	trait=arbitrary
 	trait=grey_eminence
 	2640.7.27={birth=yes}
+	2659.1.2={
+		effect={
+			add_claim=d_minsk
+		}
+	}
 	2690.1.1={death=yes}
 }
 1996006={
@@ -183,7 +188,7 @@
 }
 1996013={
 	name="Tikhon"
-	dynasty=1703172 #Tsoganov
+	dynasty=1703173 #Tsoganov
 	culture=severyane
 	religion=pravoslavie
 	2574.3.19={birth=yes}
@@ -242,7 +247,7 @@
 }
 1996019={
 	name="Denis"
-	dynasty=1703172 #Tsoganov
+	dynasty=1703173 #Tsoganov
 	culture=severyane
 	religion=pravoslavie
 	father=1996067
@@ -493,7 +498,7 @@
 }
 1996035={
 	name="Vasiliy"
-	dynasty=1703172 #Tarasov
+	dynasty=1703172 #Tarasovs
 	culture=severyane
 	religion=mariavite
 	trait=fortune_builder
@@ -506,7 +511,7 @@
 }
 1996036={
 	name="Vadim"
-	dynasty=1703172 #Tarasov
+	dynasty=1703172 #Tarasovs
 	culture=severyane
 	religion=mariavite
 	trait=charismatic_negotiator
@@ -600,7 +605,7 @@
 }
 1996042={
 	name="Arturs"
-	dynasty=2917043 #Viksna
+	dynasty=2917043 #Briedis
 	culture=latvian
 	religion=mariavite
 	trait=charismatic_negotiator
@@ -629,7 +634,7 @@
 }
 1996044={
 	name="Gustavs"
-	dynasty=2917043 #Viksna
+	dynasty=2917043 #Briedis
 	culture=latvian
 	religion=mariavite
 	add_trait=indolent
@@ -723,7 +728,7 @@
 1996050={
 	name="Daina"
 	female=yes
-	dynasty=2917103 #Maurins
+	dynasty=2917103 #Skrastins
 	culture=latvian
 	religion=lutheran
 	father=1996053
@@ -779,7 +784,7 @@
 }
 1996053={
 	name="Valerijs"
-	dynasty=2917103 #Maurins
+	dynasty=2917103 #Skrastins
 	culture=latvian
 	religion=lutheran
 	trait=charismatic_negotiator
@@ -796,7 +801,7 @@
 1996054={
 	name="Sofija"
 	female=yes
-	dynasty=2917103 #Maurins
+	dynasty=2917103 #Skrastins
 	culture=latvian
 	religion=lutheran
 	trait=underhanded_rogue
@@ -812,7 +817,7 @@
 1996055={
 	name="Lasma"
 	female=yes
-	dynasty=2917103 #Maurins
+	dynasty=2917103 #Skrastins
 	culture=latvian
 	religion=lutheran
 	father=1996053
@@ -832,7 +837,7 @@
 1996056={
 	name="Lasma"
 	female=yes
-	dynasty=2917103 #Maurins
+	dynasty=2917103 #Skrastins
 	culture=latvian
 	religion=lutheran
 	father=1996053
@@ -1008,12 +1013,12 @@
 }
 1996067={
 	name="Igor"
-	dynasty=1703172 #Tsoganov
+	dynasty=1703173 #Tsoganov
 	culture=severyane
 	religion=pravoslavie
 	father=1996013
 	2601.9.18={birth=yes}
-	2653.2.6={death=yes}
+	2653.1.1={death=yes}
 }
 1996068={
 	name="Julijs"
@@ -1032,6 +1037,7 @@
 	trait=gamer
 	trait=strategist
 	trait=giant
+	father=1993210
 	2619.11.9={birth=yes}
 	2642.12.2={add_spouse=1996071}
 	2670.8.15={death=yes}
@@ -2764,4 +2770,168 @@
 	father=1996162
 	2603.2.15={birth=yes}
 	2652.9.13={death=yes}
+}
+1996167={
+	name="Ninel"
+	female=yes
+	dynasty=1856092 #Ninelev
+	culture=kaliningradyets
+	religion=proletcult
+	disallow_random_traits=yes
+	trait=charismatic_negotiator
+	trait=pious
+	trait=fair
+	trait=socializer
+	trait=diligent
+	2493.8.1={birth=yes}
+	2538.9.16={death=yes}
+}
+1996168={
+	name="Kalinin"
+	dynasty=1856092 #Ninelev
+	culture=kaliningradyets
+	religion=proletcult
+	disallow_random_traits=yes
+	trait=tough_soldier
+	trait=brave
+	trait=zealous
+	trait=wroth
+	trait=temperate
+	trait=stubborn
+	mother=1996167
+	2513.11.6={birth=yes}
+	2564.2.14={death=yes}
+}
+1996169={
+	name="Dimitry"
+	dynasty=1856092 #Ninelev
+	culture=kaliningradyets
+	religion=proletcult
+	disallow_random_traits=yes
+	trait=midas_touched
+	trait=greedy
+	trait=just
+	trait=ambitious
+	trait=rude
+	trait=decietful
+	father=1996168
+	2553.3.26={birth=yes}
+	2600.6.22={death=yes}
+}
+1996170={
+	name="Tania"
+	female=yes
+	dynasty=1856092 #Ninelev
+	culture=kaliningradyets
+	religion=proletcult
+	disallow_random_traits=yes
+	trait=scholarly_theologian
+	trait=seductress
+	trait=charitable
+	trait=quick
+	trait=groomed
+	trait=gregarious
+	father=1996169
+	2585.9.31={birth=yes}
+	2621.1.30={add_trait=pneumonic}
+	2621.7.15={
+		death={death_reason=death_trait}
+	} # pneumonia
+}
+1996171={
+	name="Yevgeniya"
+	female=yes
+	dynasty=1856092 #Ninelev
+	culture=kaliningradyets
+	religion=proletcult
+	disallow_random_traits=yes
+	trait=flamboyant_schemer
+	trait=temperate
+	trait=envious
+	trait=gregarious
+	trait=proud
+	mother=1996167
+	2523.9.22={birth=yes}
+	2567.11.3={death=yes}
+}
+1996172={
+	name="Ninel"
+	female=yes
+	dynasty=1856092 #Ninelev
+	culture=kaliningradyets
+	religion=proletcult
+	disallow_random_traits=yes
+	trait=fortune_builder
+	trait=charitable
+	trait=erudite
+	trait=cynical
+	trait=rude
+	mother=1996171
+	2554.2.22={birth=yes}
+	2589.4.12={death=yes}
+}
+1996173={
+	name="Ninel"
+	female=yes
+	dynasty=1856092 #Ninelev
+	culture=kaliningradyets
+	religion=proletcult
+	disallow_random_traits=yes
+	trait=charismatic_negotiator
+	trait=trusting
+	trait=kind
+	trait=patient
+	trait=pious
+	mother=1996172
+	2573.4.11={birth=yes}
+	2615.2.3={death=yes}
+}
+1996174={
+	name="Sabina"
+	female=yes
+	dynasty=1856092 #Ninelev
+	culture=kaliningradyets
+	religion=proletcult
+	disallow_random_traits=yes
+	trait=martial_cleric
+	trait=frail
+	trait=erudite
+	trait=diligent
+	trait=cynical
+	mother=1996173
+	2595.9.22={birth=yes}
+	2650.11.30={death=yes}
+}
+1996175={
+	name="Olga"
+	female=yes
+	dynasty=1856092 #Ninelev
+	culture=kaliningradyets
+	religion=proletcult
+	disallow_random_traits=yes
+	trait=tough_soldier
+	trait=cruel
+	trait=wroth
+	trait=temperate
+	trait=zealous
+	mother=1996173
+	2614.12.25={birth=yes}
+	2684.1.2={death=yes}
+}
+1996176={
+	name="Lev"
+	dynasty=1856092 #Ninelev
+	culture=kaliningradyets
+	religion=proletcult
+	disallow_random_traits=yes
+	trait=brilliant_strategist
+	trait=brave
+	trait=winter_soldier
+	trait=rough_terrain_leader
+	trait=ambitious
+	trait=stubborn
+	mother=1996175
+	give_nickname=nick_the_bear
+	2640.1.14={birth=yes}
+	2689.9.3={death=yes}
 }

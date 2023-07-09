@@ -492,8 +492,17 @@
 	dynasty=1727112 #Lisouski
 	culture=belarusian
 	religion=pravoslavie
-	
+	trait=intricate_webweaver
+	trait=shrewd
+	trait=decietful
+	trait=patient
+	trait=paranoid
 	2642.1.3={birth=yes}
+	2659.1.1={
+		effect={
+			set_character_flag=no_historical_family
+		}
+	}
 	2680.1.1={death=yes}
 	father=1993204
 }
@@ -502,8 +511,13 @@
 	dynasty=1727112 #Lisouski
 	culture=belarusian
 	religion=pravoslavie
+	trait=grey_eminence
+	trait=gregarious
+	trait=kind
+	trait=greedy
+	trait=socializer
 	2638.2.3={birth=yes}
-	2660.1.1={death=yes}
+	2659.1.1={death={death_reason=death_rabble}}
 	father=1993204
 }
 1993204={
@@ -511,17 +525,147 @@
 	dynasty=1727112 #Lisouski
 	culture=belarusian
 	religion=pravoslavie
+	trait=tough_soldier
+	trait=authoritative
+	trait=cruel
+	trait=diligent
+	trait=wroth
+	trait=zealous
 	2610.1.20={birth=yes}
-	2657.2.19={death=yes}
+	2660.2.19={death=yes}
 	father=1993205
 }
 1993205={
-	name="Viachaslau "
+	name="Viachaslau"
 	dynasty=1727112 #Lisouski
 	culture=belarusian
 	religion=pravoslavie
 	trait=bastard
+	trait=skilled_tactician
+	trait=ambitious
+	trait=brave
+	trait=adventurer
+	trait=lipka
+	trait=pious
 	disallow_random_traits=yes
+	father=1993207
+	mother=1993211
+	give_nickname=nick_the_fox
 	2594.6.2={birth=yes}
 	2630.8.1={death=yes}
+}
+1993206={
+	name="Bahdan"
+	dynasty=1856054 #Potolkov
+	culture=belarusian
+	religion=proletcult
+	trait=martial_cleric
+	trait=zealous
+	trait=wroth
+	trait=ambitious
+	disallow_random_traits=yes
+	2533.7.27={birth=yes}
+	2582.8.25={death=yes}
+}
+1993207={
+	name="Raman"
+	dynasty=1856054 #Potolkov
+	culture=belarusian
+	religion=proletcult
+	trait=flamboyant_schemer
+	trait=lustful
+	trait=diligent
+	trait=brave
+	trait=drunkard
+	trait=stubborn
+	trait=seducer
+	disallow_random_traits=yes
+	father=1993206
+	2555.1.18={birth=yes}
+	2605.5.30={death=yes}
+}
+1993208={
+	name="Aleksei"
+	dynasty=1856054 #Potolkov
+	culture=belarusian
+	religion=proletcult
+	trait=charismatic_negotiator
+	trait=envious
+	trait=patient
+	trait=pious
+	trait=gamer
+	trait=stubborn
+	trait=cruel
+	disallow_random_traits=yes
+	father=1993207
+	2584.6.19={birth=yes}
+	2628.9.23={death=yes}
+}
+1993209={
+	name="Bahdan"
+	dynasty=1856054 #Potolkov
+	culture=belarusian
+	religion=proletcult
+	trait=naive_appeaser
+	trait=content
+	trait=trusting
+	trait=pious
+	trait=kind
+	trait=temperate
+	trait=gregarious
+	disallow_random_traits=yes
+	father=1993207
+	2600.7.12={birth=yes}
+	2645.1.21={death=yes}
+}
+1993210={
+	name="Lev"
+	dynasty=1856054 #Potolkov
+	culture=kaliningradyets
+	religion=proletcult
+	trait=skilled_tactician
+	trait=gregarious
+	trait=cruel
+	trait=groomed
+	trait=architect
+	trait=poet
+	trait=craven
+	disallow_random_traits=yes
+	father=1993208
+	mother=1996170
+	2601.4.21={birth=yes}
+	2651.8.1={death=yes}
+}
+1993211={
+	name="Iosif"
+	dynasty=1856054 #Potolkov
+	culture=belarusian
+	religion=proletcult
+	trait=midas_touched
+	trait=charitable
+	trait=fair
+	trait=robust
+	trait=erudite
+	trait=poet
+	trait=proud
+	disallow_random_traits=yes
+	father=1993209
+	2633.1.13={birth=yes}
+	2682.7.19={death=yes}
+}
+1993212={
+	name="Efrosinia"
+	female=yes
+	culture=belarusian
+	religion=pravoslavie
+	trait=fortune_builder
+	trait=fair
+	trait=pious
+	trait=kind
+	trait=familyperson
+	trait=erudite
+	trait=just
+	disallow_random_traits=yes
+	2574.5.23={birth=yes}
+	2635.7.19={death=yes}
 }
