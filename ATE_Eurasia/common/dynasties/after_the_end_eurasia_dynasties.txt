@@ -2095,7 +2095,20 @@
 1442071 = { name = "Tunguz-Zawislak" culture = lipka }
 1442072 = { name = "Korotkin" culture = lipka }
 1442073 = { name = "Aksak" culture = lipka }
-1442074 = { name = "Sofijew" culture = lipka }
+1442074 = { name = "Sofijew" culture = lipka
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 0
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 1443000 = { name = "Petrioglu" culture = gagauz }
 1443001 = { name = "Gaydarzhi" culture = gagauz }
@@ -4082,8 +4095,21 @@
 1703169 = { name = "Miller" culture = severyane }
 1703170 = { name = "Troitskiy" culture = severyane }
 1703171 = { name = "Shulz" culture = severyane }
-1703172 = { name = "Tarasov" culture = severyane }
-1703173 = { name = "Tsoganov" culture = severyane
+1703172 = { name = "Tarasovs" culture = severyane used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 4
+			texture_internal = 27
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1703173 = { name = "Tsoganov" culture = severyane used_for_random = no
 	coat_of_arms = {
 		religion = nondescript_christian
 		template = 0
@@ -4209,7 +4235,20 @@
 1727108 = { name = "Kachan" culture = belarusian}
 1727109 = { name = "Jermakovich" culture = belarusian}
 1727110 = { name = "Paliakou" culture = belarusian}
-1727111 = { name = "Shatochin" culture = belarusian}
+1727111 = { name = "Shatochin" culture = belarusian
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 4
+			texture_internal = 26
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1727112 = { name = "Lisouski" culture = belarusian used_for_random = no }
 
 1729000 = { name = "Thirummukhathu-Varma" culture = malayali used_for_random = no
@@ -7644,6 +7683,7 @@
 1856089 = { name = "Podrezov" culture = kaliningradyets}
 1856090 = { name = "Avtseshko" culture = kaliningradyets}
 1856091 = { name = "Vasenin" culture = kaliningradyets}
+1856092 = { name = "Ninelev" culture = kaliningradyets used_for_random = no}
 
 1889000 = { name = "Guimarães" culture = brazilian }
 1889001 = { name = "Aragão" culture = brazilian }
@@ -40415,15 +40455,54 @@ coat_of_arms = {
 2916090 = { name = "Leonavicius" culture = lithuanian }
 2916091 = { name = "Aleksandravicius" culture = lithuanian }
 2916092 = { name = "Cepulis" culture = lithuanian }
-2916093 = { name = "Gylys" culture = lithuanian }
+2916093 = { name = "Gylys" culture = lithuanian
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 72
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2916094 = { name = "Tamašauskas" culture = lithuanian }
 2916095 = { name = "Remeikis" culture = lithuanian }
-2916096 = { name = "Jonušas" culture = lithuanian }
+2916096 = { name = "Jonušas" culture = lithuanian
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 74
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2916097 = { name = "Krupavicius" culture = lithuanian }
 2916098 = { name = "Gustaitis" culture = lithuanian }
 2916099 = { name = "Grigulevicius" culture = lithuanian }
 2916100 = { name = "Uborevicius" culture = lithuanian }
-2916101 = { name = "Maciulis" culture = lithuanian }
+2916101 = { name = "Maciulis" culture = lithuanian
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 73
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2916102 = { name = "Talmont" culture = lithuanian }
 
 2917000 = { name = "Berzinš" culture = latvian }
@@ -40482,7 +40561,20 @@ coat_of_arms = {
 2917040 = { name = "Rozitis" culture = latvian }
 2917041 = { name = "Miezis" culture = latvian }
 2917042 = { name = "Saulitis" culture = latvian }
-2917043 = { name = "Viksna" culture = latvian }
+2917043 = { name = "Briedis" culture = latvian
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 4
+			texture_internal = 24
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2917044 = { name = "Locmelis" culture = latvian }
 2917045 = { name = "Mednis" culture = latvian }
 2917046 = { name = "Purinš" culture = latvian }
@@ -40491,7 +40583,7 @@ coat_of_arms = {
 2917049 = { name = "Feldmanis" culture = latvian }
 2917050 = { name = "Laizans" culture = latvian }
 2917051 = { name = "Udris" culture = latvian }
-2917052 = { name = "Briedis" culture = latvian }
+2917052 = { name = "Viksna" culture = latvian }
 2917053 = { name = "Lusis" culture = latvian }
 2917054 = { name = "Blumbergs" culture = latvian }
 2917055 = { name = "Millers" culture = latvian }
@@ -40510,7 +40602,7 @@ coat_of_arms = {
 2917068 = { name = "Skudra" culture = latvian }
 2917069 = { name = "Buls" culture = latvian }
 2917070 = { name = "Gailis" culture = latvian }
-2917071 = { name = "Skrastinš" culture = latvian }
+2917071 = { name = "Maurinš" culture = latvian }
 2917072 = { name = "Lipsbergs" culture = latvian }
 2917073 = { name = "Alksnis" culture = latvian }
 2917074 = { name = "Treimanis" culture = latvian }
@@ -40540,12 +40632,90 @@ coat_of_arms = {
 2917098 = { name = "Šics" culture = latvian }
 2917099 = { name = "Apinis" culture = latvian }
 2917100 = { name = "Dombrovskis" culture = latvian }
-2917101 = { name = "Ziedonis" culture = latvian used_for_random = no }
-2917102 = { name = "Lusis" culture = latvian used_for_random = no }
-2917103 = { name = "Maurinš" culture = latvian used_for_random = no }
-2917104 = { name = "Lacplesis" culture = latvian used_for_random = no }
-2917105 = { name = "Meiers" culture = latvian used_for_random = no }
-2917106 = { name = "Pilens" culture = latvian used_for_random = no }
+2917101 = { name = "Ziedonis" culture = latvian used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 4
+			texture_internal = 25
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2917102 = { name = "Lusis" culture = latvian used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 75
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2917103 = { name = "Skrastinš" culture = latvian used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 76
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2917104 = { name = "Lacplesis" culture = latvian used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 77
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2917105 = { name = "Meiers" culture = latvian used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 79
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2917106 = { name = "Pilens" culture = latvian used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 78
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2917107 = { name = "Viesturs" culture = latvian }
 
 2918000 = { name = "Tamm" culture = estonian }
@@ -40576,7 +40746,20 @@ coat_of_arms = {
 2918025 = { name = "Peterson" culture = estonian }
 2918026 = { name = "Teder" culture = estonian }
 2918027 = { name = "Mets" culture = estonian }
-2918028 = { name = "Põder" culture = estonian }
+2918028 = { name = "Põder" culture = estonian
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 66
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2918029 = { name = "Lõhmus" culture = estonian }
 2918030 = { name = "Kull" culture = estonian }
 2918031 = { name = "Kütt" culture = estonian }
@@ -40664,13 +40847,77 @@ coat_of_arms = {
 }
 2918101 = { name = "Einaste" culture = estonian }
 2918102 = { name = "Valk" culture = estonian used_for_random = no }
-2918103 = { name = "Nelis" culture = estonian used_for_random = no }
-2918104 = { name = "Saagpakk" culture = estonian used_for_random = no }
+2918103 = { name = "Nelis" culture = estonian used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 68
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2918104 = { name = "Saagpakk" culture = estonian used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 71
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2918105 = { name = "Maaker" culture = estonian used_for_random = no }
-2918106 = { name = "Einasto" culture = estonian used_for_random = no }
-2918107 = { name = "Sang" culture = estonian used_for_random = no }
-2918108 = { name = "Hirv" culture = estonian }
-
+2918106 = { name = "Einasto" culture = estonian used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 67
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2918107 = { name = "Sang" culture = estonian used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 70
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2918108 = { name = "Hirv" culture = estonian
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 65
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2918200 = { name = "Paul" culture = seto }
 2918201 = { name = "Pajusalu" culture = seto }
 2918202 = { name = "Külvik" culture = seto }
@@ -40691,7 +40938,20 @@ coat_of_arms = {
 2918217 = { name = "Valk" culture = seto }
 2918218 = { name = "Taro" culture = seto }
 2918219 = { name = "Matvei" culture = seto }
-2918220 = { name = "Kudre" culture = seto }
+2918220 = { name = "Kudre" culture = seto
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 69
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2918221 = { name = "Kala" culture = seto }
 2918222 = { name = "Itse" culture = seto }
 2918223 = { name = "Hüdsi" culture = seto }
@@ -41736,7 +41996,20 @@ coat_of_arms = {
 2941003 = { name = "Zamana" culture = warmzur }
 2941004 = { name = "Samsel" culture = warmzur }
 2941005 = { name = "Ziedro" culture = warmzur }
-2941006 = { name = "Aweje" culture = warmzur }
+2941006 = { name = "Awejde" culture = warmzur
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 4
+			texture_internal = 28
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2941007 = { name = "Suchodola" culture = warmzur }
 
 3000000 = { name = "Adiviyar" culture = tamil }
