@@ -3,6 +3,14 @@
 	dynasty=2109000 #Al Mahamadi
 	culture=hijazi
 	religion=sunni
+	trait=underhanded_rogue
+	trait=familyperson
+	trait=rude
+	trait=scribe
+	trait=sturdy
+	trait=honest
+	trait=charitable
+	disallow_random_traits=yes
 	2638.1.1={birth=yes}
 	2680.1.1={death=yes}
 }
@@ -11,6 +19,14 @@
 	dynasty=2109001 #Al-Shaykh
 	culture=hijazi
 	religion=ahl_as_salaf
+	trait=scholarly_theologian
+	trait=lunatic
+	trait=falconer
+	trait=uncouth
+	trait=humble
+	trait=sayyid
+	trait=honorable
+	disallow_random_traits=yes
 	2639.7.29={birth=yes}
 	2680.1.1={death=yes}
 }
@@ -27,7 +43,20 @@
 	dynasty=2109003 #Al-Dawud
 	culture=hijazi
 	religion=ahl_as_salaf
+	trait=skilled_tactician
+	trait=devout
+	trait=sayyid
+	trait=hafiz
+	trait=hajjaj
+	trait=content
+	trait=honest
+	trait=one_eyed
+	trait=wounded
+	trait=stressed
+	disallow_random_traits=yes
+	father=2109024
 	2632.9.18={birth=yes}
+	2666.1.1={give_nickname=nick_the_vengeful}
 	2680.1.1={death=yes}
 }
 2109004={ #Duke of Rabigh
@@ -35,12 +64,21 @@
 	dynasty=2109004 #Ben Mensi
 	culture=hijazi
 	religion=sunni
+	trait=tough_soldier
+	trait=harelip
+	trait=falconer
+	trait=hunter
+	trait=envious
+	trait=sayyid
+	trait=stubborn
+	trait=ruthless
+	disallow_random_traits=yes
 	2638.1.1={birth=yes}
 	2680.1.1={death=yes}
 }
 2109005={ #Count of al-Mahd
-	name="Muhammad"
-	dynasty=2109005 #Ali
+	name="Abdulrahman"
+	dynasty=2109005 #Al Ghamidi
 	culture=hijazi
 	religion=sunni
 	2638.1.1={birth=yes}
@@ -51,45 +89,55 @@
 	dynasty=2109006 #Al-Khaldi
 	culture=hijazi
 	religion=ahl_as_salaf
+	trait=mastermind_theologian
+	trait=faqih
+	trait=just
+	trait=theologian
+	trait=devout
+	trait=feeble
+	trait=hafiz
+	disallow_random_traits=yes
 	father=2109017
 	2622.2.9={birth=yes}
 	2680.1.1={death=yes}
 }
 2109007={ #Count of Turubah
-	name="Muhammad"
-	dynasty=2109007 #Ali
+	name="Yusuf"
+	dynasty=2109007 #Al Utaibi
 	culture=hijazi
 	religion=sunni
 	2638.1.1={birth=yes}
 	2680.1.1={death=yes}
 }
-2109008={ #Count of Ranyah
+2109008={ 
 	name="Muhammad"
-	dynasty=2109008 #Ali
+	dynasty=2109009 #Al Zahrani
 	culture=hijazi
-	religion=sunni
-	2638.1.1={birth=yes}
+	religion=shiite
+	2620.1.1={birth=yes}
 	2680.1.1={death=yes}
 }
 2109009={ #Count of al-Qunfudhah
-	name="Muhammad"
-	dynasty=2109009 #Ali
+	name="Hussein"
+	dynasty=2109009 #Al Zahrani
 	culture=hijazi
 	religion=shiite
+	father=2109008
 	2638.1.1={birth=yes}
 	2680.1.1={death=yes}
 }
 2109010={ #Count of al-Bahah
-	name="Muhammad"
-	dynasty=2109010 #Ali
+	name="Omar"
+	dynasty=2109009 #Al Zahrani
 	culture=hijazi
-	religion=sunni
-	2638.1.1={birth=yes}
+	religion=shiite
+	father=2109008
+	2639.1.1={birth=yes}
 	2680.1.1={death=yes}
 }
 2109011={ #Northern Asir Lord (Asir Vassal)
 	name="Muhammad"
-	dynasty=2109011 #Ali
+	dynasty=2109011 #Al Bariki
 	culture=hijazi
 	religion=shiite
 	2638.1.1={birth=yes}
@@ -172,4 +220,56 @@
 	father=2109018
 	2613.4.14={birth=yes}
 	2656.6.4={death={death_reason=death_battle killer=2109006}}
+}
+2109021={
+	name="Abdulaziz"
+	culture=hijazi
+	religion=ahl_as_salaf
+	trait=tough_soldier
+	trait=arbitrary
+	trait=wroth
+	trait=cruel
+	2613.4.14={birth=yes}
+	2666.1.1={death={death_reason=death_battle killer=2109003}}
+}
+2109022={
+	name="Ibrahim"
+	dynasty=2109003
+	culture=hijazi
+	religion=ahl_as_salaf
+	trait=grey_eminence
+	trait=poet
+	trait=kind
+	trait=sayyid
+	father=2109024
+	disallow_random_traits=yes
+	2630.4.14={birth=yes}
+	2665.12.31={death={death_reason=death_battle killer=2109021}}
+}
+2109023={
+	name="Yusuf"
+	dynasty=2109003
+	culture=hijazi
+	religion=ahl_as_salaf
+	trait=intricate_webweaver
+	trait=deceitful
+	trait=sayyid
+	trait=diligent
+	father=2109024
+	disallow_random_traits=yes
+	2634.4.14={birth=yes}
+	2680.12.31={death=yes}
+}
+2109024={
+	name="Abdullah"
+	dynasty=2109003
+	culture=hijazi
+	religion=ahl_as_salaf
+	trait=mastermind_theologian
+	trait=pious
+	trait=sayyid
+	trait=hafiz
+	disallow_random_traits=yes
+	2600.4.14={birth=yes}
+	2650.12.31={death=yes}
 }
