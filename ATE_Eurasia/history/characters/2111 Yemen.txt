@@ -163,19 +163,131 @@
 	2660.1.1={give_nickname=nick_the_lion}
 	2680.1.1={death=yes}
 }
-2111011={ #Count of al-Maqatirah (Aden Tribute)
-	name="Muhammad"
-	dynasty=2111011 #Ali
+2111011={ 
+	name="Faruk"
+	dynasty=2111004 #Al Zaraniq
 	culture=yemeni
-	religion=an_nahar
+	religion=sunni
 	2638.1.1={birth=yes}
 	2680.1.1={death=yes}
 }
 2111012={ #Count of ad-Dali (Aden Tribute)
 	name="Noaman"
-	dynasty=2111012 #Ali
+	dynasty=2111012 #Al Huthayfi
 	culture=akhdam
 	religion=an_nahar
 	2610.2.27={birth=yes}
+	2680.1.1={death=yes}
+}
+2111013={
+	name="Fathi"
+	dynasty=2111011 
+	culture=yemeni
+	religion=zaydi
+	2640.2.27={birth=yes}
+	2680.1.1={death=yes}
+}
+2111014={
+	name="Zayd"
+	dynasty=2111112 
+	culture=yemeni
+	religion=zaydi
+	2630.5.27={birth=yes}
+	2680.1.1={death=yes}
+}
+2111015={
+	name="Faisal"
+	dynasty=2111113 
+	culture=yemeni
+	religion=zaydi
+	2633.2.2={birth=yes}
+	2680.1.1={death=yes}
+}
+2111016={
+	name="Sinan"
+	dynasty=2111114 
+	culture=yemeni
+	religion=zaydi
+	2640.7.17={birth=yes}
+	2680.1.1={death=yes}
+}
+2111017={
+	name="Khaled"
+	dynasty=2111115 
+	culture=yemeni
+	religion=zaydi
+	2642.1.27={birth=yes}
+	2680.1.1={death=yes}
+}
+2111018={
+	name="Mutaher"
+	dynasty=2111116 
+	culture=yemeni
+	religion=zaydi
+	2643.10.17={birth=yes}
+	2680.1.1={death=yes}
+}
+2111019={
+	name="Muhammad"
+	dynasty=2111117 
+	culture=yemeni
+	religion=zaydi
+	2638.12.1={birth=yes}
+	2680.1.1={death=yes}
+}
+2111020={
+	name="Ali"
+	dynasty=2111118 
+	culture=yemeni
+	religion=zaydi
+	2633.1.27={birth=yes}
+	2680.1.1={death=yes}
+}
+2111021={
+	name="Faruk"
+	dynasty=2111119 
+	culture=yemeni
+	religion=zaydi
+	2632.8.21={birth=yes}
+	2680.1.1={death=yes}
+}
+2111022={
+	name="Muhammad"
+	dynasty=2111120 
+	culture=yemeni
+	religion=zaydi
+	2630.5.27={birth=yes}
+	2680.1.1={death=yes}
+}
+211023={
+	name="Saad"
+	dynasty=2111121 
+	culture=yemeni
+	religion=sunni
+	2645.1.17={birth=yes}
+	2680.1.1={death=yes}
+}
+211024={
+	name="Abdallah"
+	dynasty=2135056 
+	culture=hadhrami
+	religion=sunni
+	2636.6.1={birth=yes}
+	2680.1.1={death=yes}
+}
+211025={
+	name="Rashid"
+	dynasty=2135057 
+	culture=hadhrami
+	religion=sunni
+	2639.1.20={birth=yes}
+	2680.1.1={death=yes}
+}
+211026={
+	name="Ismail"
+	dynasty=2135058 
+	culture=hadhrami
+	religion=sunni
+	2646.3.27={birth=yes}
 	2680.1.1={death=yes}
 }
