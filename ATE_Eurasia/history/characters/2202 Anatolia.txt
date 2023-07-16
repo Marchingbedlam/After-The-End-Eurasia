@@ -4280,17 +4280,7 @@
 	2603.1.1={add_spouse=2202071}
 	2611.1.10={death={death_reason=death_trait}}
 }
-2202355={
-	name="Eda"
-	female=yes
-	dynasty=0
-	culture=central_anatolian
-	religion=ruhi
-	trait=has_tuberculosis
-	2585.2.6={birth=yes}
-	2603.1.1={add_spouse=2202071}
-	2611.1.10={death={death_reason=death_trait}}
-}
+
 2202356={
 	name="Durdu"
 	dynasty=7100164 #Yashar
@@ -5400,15 +5390,6 @@
 	2638.9.11={birth=yes}
 	2680.1.1={death=yes}
 }
-2202449={
-	name="Özgür"
-	culture=west_anatolian
-	religion=naqshbandi
-	father=2202448
-	dynasty=2055008 #Kanter
-	2640.4.29={birth=yes}
-	2680.1.1={death=yes}
-}
 2202450={
 	name="Hürriyet"
 	culture=west_anatolian
@@ -5836,4 +5817,13 @@
 	2586.6.1={birth=yes}
 	2606.1.1={add_spouse=2202050}
 	2626.11.24={death=yes}
+}
+2202495={
+	name="Özgür"
+	culture=west_anatolian
+	religion=naqshbandi
+	father=2202448
+	dynasty=2055008 #Kanter
+	2640.4.29={birth=yes}
+	2680.1.1={death=yes}
 }
