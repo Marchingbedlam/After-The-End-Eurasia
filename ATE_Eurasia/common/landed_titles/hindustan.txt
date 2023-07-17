@@ -198,6 +198,7 @@ e_hindustan = {
 			c_bareilly = {
 				color={ 88 211 69 }
 				color2={ 255 255 255 }
+				holy_site = barelvi
 				
 				b_bareilly = {}
 				b_pilibhit = {}
@@ -241,6 +242,7 @@ e_hindustan = {
 			c_saharanpur = {
 				color={ 45 241 35 }
 				color2={ 255 255 255 }
+				holy_site = shaktah
 				
 				b_saharanpur = {}
 				b_deoband = {}
@@ -291,6 +293,7 @@ e_hindustan = {
 			c_mathura = {
 				color={ 76 125 185 }
 				color2={ 255 255 255 }
+				holy_site = vaishnava
 				
 				b_mathura = {}
 				b_vrindravan = {}
@@ -385,6 +388,10 @@ e_hindustan = {
 			c_varanasi = {
 				color={ 51 120 223 }
 				color2={ 255 255 255 }
+				holy_site = hindu
+				holy_site = mantramarga
+				holy_site = navayana
+				holy_site = vaishnava
 				
 				b_varanasi = {}
 				b_sarnath = {}
@@ -452,6 +459,7 @@ e_hindustan = {
 			c_faizabad = {
 				color={ 76 98 186 }
 				color2={ 255 255 255 }
+				holy_site = vaishnava
 				
 				b_faizabad = {}
 				b_sultanapur = {}
@@ -526,6 +534,7 @@ e_hindustan = {
 			c_gorakhpur = {
 				color={ 100 121 241 }
 				color2={ 255 255 255 }
+				holy_site = navayana
 				
 				b_gorakhpur = {}
 				b_deoria = {}
@@ -985,6 +994,8 @@ e_hindustan = {
 			c_gaya = { # 2659
 				color={ 199 156 120 }
 				color2={ 255 255 255 }
+				holy_site = theravada
+				holy_site = navayana
 				
 				b_gaya = {}
 				b_sherghati = {}
