@@ -497,14 +497,21 @@
 	trait=decietful
 	trait=patient
 	trait=paranoid
+	disallow_random_traits=yes
 	2642.1.3={birth=yes}
 	2659.1.1={
 		effect={
 			set_character_flag=no_historical_family
 		}
 	}
+	2665.11.23={
+		effect={
+			add_weak_claim=d_gomel
+		}
+	}
 	2680.1.1={death=yes}
 	father=1993204
+	mother=1993216
 }
 1993203={
 	name="Valeriy"
@@ -519,6 +526,7 @@
 	2638.2.3={birth=yes}
 	2659.1.1={death={death_reason=death_rabble}}
 	father=1993204
+	mother=1993216
 }
 1993204={
 	name="Mikalai"
@@ -532,6 +540,7 @@
 	trait=wroth
 	trait=zealous
 	2610.1.20={birth=yes}
+	2630.6.16={add_spouse=1993216}
 	2660.2.19={death=yes}
 	father=1993205
 }
@@ -668,4 +677,120 @@
 	disallow_random_traits=yes
 	2574.5.23={birth=yes}
 	2635.7.19={death=yes}
+}
+1993213={
+	name="Hleb"
+	dynasty=1727058 #Drozd
+	culture=belarusian
+	religion=pravoslavie
+	trait=mastermind_theologian
+	trait=scholar
+	trait=pious
+	trait=authoritative
+	trait=monk
+	disallow_random_traits=yes
+	2570.1.1={birth=yes}
+	2640.8.13={death=yes}
+}
+1993214={
+	name="Nil"
+	dynasty=1727058 #Drozd
+	culture=belarusian
+	religion=pravoslavie
+	trait=martial_cleric
+	trait=robust
+	trait=brave
+	trait=zealous
+	trait=wroth
+	disallow_random_traits=yes
+	father=1993213
+	2590.2.8={birth=yes}
+	2653.1.10={death=yes}
+}
+1993215={
+	name="Piotr"
+	dynasty=1727058 #Drozd
+	culture=belarusian
+	religion=pravoslavie
+	trait=scholarly_theologian
+	trait=erudite
+	trait=diligent
+	trait=arbitrary
+	trait=content
+	disallow_random_traits=yes
+	father=1993213
+	2594.9.22={birth=yes}
+	2663.10.20={death={death_reason=death_murder_unknown}}
+}	
+1993216={
+	name="Nadzeya"
+	female=yes
+	dynasty=1727058 #Drozd
+	culture=belarusian
+	religion=pravoslavie
+	trait=thrifty_clerk
+	trait=fair
+	trait=groomed
+	trait=patient
+	trait=gregarious
+	disallow_random_traits=yes
+	father=1993213
+	2605.9.22={birth=yes}
+	2630.6.16={add_spouse=1993204}
+	2665.11.23={death=yes}
+}
+1993217={
+	name="Taras"
+	dynasty=1727079 #Sakalouski
+	culture=belarusian
+	religion=pravoslavie
+	trait=tough_soldier
+	trait=adventurer
+	trait=greedy
+	trait=brave
+	trait=ambitious
+	disallow_random_traits=yes
+	2640.1.18={birth=yes}
+	2670.9.12={death=yes}
+}
+1993218={
+	name="Anton"
+	dynasty=0 #Lowborn
+	culture=poleshuk
+	religion=pravoslavie
+	trait=martial_cleric
+	trait=erudite
+	trait=scholar
+	trait=patient
+	disallow_random_traits=yes
+	2610.7.15={birth=yes}
+	2680.9.12={death=yes}
+}
+1993219={
+	name="Zynoviy"
+	dynasty=2923083 #Sych
+	culture=poleshuk
+	religion=orthodox
+	trait=brilliant_strategist
+	trait=strong
+	trait=zealous
+	trait=stubborn
+	disallow_random_traits=yes
+	2610.5.22={birth=yes}
+	2665.1.18={death=yes}
+}
+1993220={
+	name="Frantsyshek"
+	dynasty=2923083 #Sych
+	culture=poleshuk
+	religion=orthodox
+	trait=tough_soldier
+	trait=brave
+	trait=robust
+	trait=humble
+	trait=pious
+	disallow_random_traits=yes
+	father=1993219
+	2646.9.14={birth=yes}
+	2694.9.12={death=yes}
 }
