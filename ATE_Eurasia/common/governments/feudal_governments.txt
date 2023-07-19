@@ -1051,6 +1051,7 @@ feudal_governments = {
 		}
 		free_revoke_on_tiers = { baron }
 		frame_suffix = "_hetmanate"
+		title_prefix = "hetmanate_"
 		potential = {
 			OR = {
 					capital_scope = {
