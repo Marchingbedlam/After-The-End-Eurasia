@@ -203,24 +203,40 @@ hetmanate_barony_of;Castellany of;;;;;;;;;;;;;x
 hetmanate_barony;Castellany;;;;;;;;;;;;;x
 hetmanate_baron_halychian;Otaman;;;;;;;;;;;;;x
 hetmanate_baron_female_halychian;Otaman;;;;;;;;;;;;;x
+hetmanate_barony_of_halychian;Otamanate of;;;;;;;;;;;;;x
+hetmanate_barony;Otamanate;;;;;;;;;;;;;x
 hetmanate_baron_ukrainian;Otaman;;;;;;;;;;;;;x
 hetmanate_baron_female_ukrainian;Otaman;;;;;;;;;;;;;x
+hetmanate_barony_of_ukrainian;Otamanate of;;;;;;;;;;;;;x
+hetmanate_barony_ukrainian;Otamanate;;;;;;;;;;;;;x
 hetmanate_baron_slavic_east;Ataman;;;;;;;;;;;;;x
 hetmanate_baron_female_slavic_east;Ataman;;;;;;;;;;;;;x
+hetmanate_barony_of_slavic_east;Atamanate of;;;;;;;;;;;;;x
+hetmanate_barony_slavic_east;Atamanate;;;;;;;;;;;;;x
+hetmanate_baron_kozachina;Otaman;;;;;;;;;;;;;x
+hetmanate_baron_female_kozachina;Otaman;;;;;;;;;;;;;x
 hetmanate_count;Voivode;;;;;;;;;;;;;x
 hetmanate_count_female;Voivodess;;;;;;;;;;;;;x
+hetmanate_count_kozachina;Sotnyk;;;;;;;;;;;;;x
+hetmanate_count_female_kozachina;Sotnyk;;;;;;;;;;;;;x
 hetmanate_county_of;Voivodeship of;;;;;;;;;;;;;x
 hetmanate_county;Voivodeship;;;;;;;;;;;;;x
 hetmanate_duke;Prince;;;;;;;;;;;;;x
 hetmanate_duke_female;Princess;;;;;;;;;;;;;x
+hetmanate_duke_kozachina;Polkovnyk;;;;;;;;;;;;;
+hetmanate_duke_female_kozachina;Polkovnyk;;;;;;;;;;;;;
 hetmanate_duchy_of;Principality of;;;;;;;;;;;;;x
 hetmanate_duchy;Principality;;;;;;;;;;;;;x
 hetmanate_king;King;;;;;;;;;;;;;x
 hetmanate_king_female;Queen;;;;;;;;;;;;;x
 hetmanate_king_halychian;King;;;;;;;;;;;;;x
 hetmanate_king_female_halychian;Queen;;;;;;;;;;;;;x
+hetmanate_king_kozachina;Hetman;;;;;;;;;;;;;
+hetmanate_king_female_kozachina;Hetman;;;;;;;;;;;;;
 hetmanate_kingdom_of;Kingdom of;;;;;;;;;;;;;x
 hetmanate_kingdom;Kingdom;;;;;;;;;;;;;x
+hetmanate_kingdom_of_kozachina;Hetmanate of;;;;;;;;;;;;;x
+hetmanate_kingdom_kozachina;Hetmanate;;;;;;;;;;;;;x
 hetmanate_king_slavic_east;Grand Prince;;;;;;;;;;;;;x
 hetmanate_king_female_slavic_east;Grand Princess;;;;;;;;;;;;;x
 hetmanate_king_lithuanian;Grand Prince;;;;;;;;;;;;;x
@@ -237,10 +253,14 @@ hetmanate_emperor;Emperor;;;;;;;;;;;;;x
 hetmanate_emperor_female;Empress;;;;;;;;;;;;;x
 hetmanate_emperor_slavic_east;Tsar;;;;;;;;;;;;;x
 hetmanate_emperor_female_slavic_east;Tsaritsa;;;;;;;;;;;;;x
+hetmanate_emperor_kozachina;Grand Hetman;;;;;;;;;;;;;
+hetmanate_emperor_female_kozachina;Grand Hetman;;;;;;;;;;;;;
 hetmanate_empire_of;Empire of;;;;;;;;;;;;;x
 hetmanate_empire;Empire;;;;;;;;;;;;;x
 hetmanate_empire_of_slavic_east;Tsardom of;;;;;;;;;;;;;x
 hetmanate_empire_slavic_east;Tsardom;;;;;;;;;;;;;x
+hetmanate_empire_of_kozachina;Grand Hetmanate of;;;;;;;;;;;;;x
+hetmanate_empire_kozachina;Grand Hetmanate;;;;;;;;;;;;;x
 
 #Laws
 local_term_length;Term Length of Office;;;;;;;;;;;;;x
