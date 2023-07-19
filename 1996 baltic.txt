@@ -1,0 +1,2937 @@
+1996000={
+	name="Churszeja"
+	female=yes
+	dynasty=1442001 #Ulanowicz
+	culture=lipka
+	religion=ruhi
+	father=1996017
+	trait=elusive_shadow
+	trait=strong
+	trait=brave
+	trait=proud
+	trait=temperate
+	trait=sympathy_christendom
+	trait=falconer
+	trait=aggressive_leader
+	trait=flanker
+	2641.6.27={birth=yes}
+	2680.1.1={death=yes}
+}
+1996001={
+	name="Miervaldis"
+	dynasty=2917004 #Ozols
+	culture=latvian
+	religion=lutheran
+	2550.7.27={birth=yes}
+	2618.9.30={death=yes}
+}
+1996002={
+	name="Krišjanis"
+	dynasty=2917004 #Ozols
+	culture=latvian
+	religion=lutheran
+	father=1996001
+	2583.9.15={birth=yes}
+	2631.8.26={death=yes}
+}
+1996003={
+	name="Valdis"
+	dynasty=2917004 #Ozols
+	culture=latvian
+	religion=lutheran
+	father=1996002
+	trait=ambitious
+	trait=diligent
+	trait=deceitful
+	trait=ruthless
+	trait=quick
+	trait=arbitrary
+	trait=elusive_shadow
+	2601.5.16={birth=yes}
+	2620.1.1={add_spouse=1996121}
+	2645.2.24={death=yes}
+}
+1996004={
+	name="Edgars"
+	dynasty=2917004 #Ozols
+	culture=latvian
+	religion=lutheran
+	father=1996003
+	mother=1996121
+	trait=skilled_tactician	
+	trait=brave
+	trait=arbitrary
+	trait=diligent
+	trait=ruthless
+	trait=proud
+	trait=strong
+	2620.10.1={birth=yes}
+	2656.10.3={death=yes}
+}
+1996005={
+	name="Edgars"
+	dynasty=2917004 #Ozols
+	culture=latvian
+	religion=lutheran
+	father=1996004
+	trait=scarred
+	trait=groomed
+	trait=shrewd
+	trait=socializer
+	trait=proud
+	trait=arbitrary
+	trait=grey_eminence
+	2640.7.27={birth=yes}
+	2659.1.2={
+		effect={
+			add_claim=d_minsk
+		}
+	}
+	2690.1.1={death=yes}
+}
+1996006={
+	name="Valdeko"
+	dynasty=2918100 #Loo
+	culture=estonian
+	religion=lutheran
+	trait=grey_eminence
+	trait=quick
+	trait=just
+	trait=ambitious
+	father=1996146
+	2576.8.16={birth=yes}
+	2614.1.22={death=yes}
+}
+1996007={
+	name="Reigo"
+	dynasty=2918100 #Loo
+	culture=estonian
+	religion=lutheran
+	disallow_random_traits=yes
+	trait=naive_appeaser
+	trait=gregarious
+	trait=honest
+	trait=brave
+	father=1996148
+	2615.3.10={birth=yes}
+	2633.7.11={death=yes}
+}
+1996008={
+	name="Regimantas"
+	dynasty=2916017 #Zilinskas
+	culture=lithuanian
+	religion=mariavite
+	disallow_random_traits=yes
+	trait=martial_cleric
+	trait=erudite
+	trait=charitable
+	trait=monk
+	trait=theologian
+	2440.6.26={birth=yes}
+	2505.9.15={death=yes}
+}
+1996009={
+	name="Vytautas"
+	dynasty=2916017 #Zilinskas
+	culture=lithuanian
+	religion=mariavite
+	disallow_random_traits=yes
+	trait=skilled_tactician
+	trait=patient
+	trait=gluttonous
+	trait=brave
+	father=1996008
+	2472.5.6={birth=yes}
+	2530.11.5={death=yes}
+}
+1996010={
+	name="Benediktas"
+	dynasty=2916017 #Zilinskas
+	culture=lithuanian
+	religion=mariavite
+	disallow_random_traits=yes
+	trait=mastermind_theologian
+	trait=content
+	trait=scholar
+	trait=poet
+	father=1996009
+	2492.6.5={birth=yes}
+	2542.3.23={death=yes}
+}
+1996011={
+	name="Gintautas"
+	dynasty=2916017 #Zilinskas
+	culture=lithuanian
+	religion=mariavite
+	disallow_random_traits=yes
+	trait=charismatic_negotiator
+	trait=trusting
+	trait=honest
+	trait=gregarious
+	father=1996010
+	2510.2.14={birth=yes}
+	2555.8.19={death=yes}
+}
+1996012={
+	name="Gediminas"
+	dynasty=2916017 #Zilinskas
+	culture=lithuanian
+	religion=mariavite
+	father=1996165
+	trait=wroth
+	trait=brave
+	trait=content
+	trait=hunter
+	2620.6.18={birth=yes}
+	2660.1.1={effect={add_rival=1996014}} 
+	2680.1.1={death=yes}
+}
+1996013={
+	name="Tikhon"
+	dynasty=1703173 #Tsoganov
+	culture=severyane
+	religion=pravoslavie
+	2574.3.19={birth=yes}
+	2629.7.12={death=yes}
+}
+1996014={
+	name="Antanas"
+	dynasty=2916017 #Zilinskas
+	culture=lithuanian
+	religion=mariavite
+	father=1996165
+	trait=wroth
+	trait=proud
+	trait=lustful
+	2628.3.3={birth=yes}
+	2680.1.1={death=yes}
+}
+1996015={
+	name="Dariusz"
+	dynasty=1442001 #Ulanowicz
+	culture=lipka
+	religion=ruhi
+	trait=zealous
+	trait=brave
+	trait=ambitious
+	trait=genius
+	trait=brilliant_strategist
+	2536.11.24={birth=yes}
+	2629.6.3={death=yes}
+}
+1996016={
+	name="Ulug Murza"
+	dynasty=1442001 #Ulanowicz
+	culture=lipka
+	religion=ruhi
+	father=1996015
+	2567.8.6={birth=yes}
+	2638.12.6={death=yes}
+}
+1996017={
+	name="Gasim Murza"
+	dynasty=1442001 #Ulanowicz
+	culture=lipka
+	religion=ruhi
+	father=1996016
+	2589.7.15={birth=yes}
+	2648.2.6={death=yes}
+}
+
+1996018={
+	name="Maria Karolis"
+	culture=lithuanian
+	religion=mariavite
+	2630.1.1={birth=yes}
+	2680.1.1={death=yes}
+}
+1996019={
+	name="Denis"
+	dynasty=1703173 #Tsoganov
+	culture=severyane
+	religion=pravoslavie
+	father=1996067
+	trait=charismatic_negotiator
+	trait=poet
+	trait=diligent
+	trait=gregarious
+	trait=proud
+	trait=wroth
+	2636.3.18={birth=yes}
+	2680.1.1={death=yes}
+}
+1996020={
+	name="Markus"
+	dynasty=2918106 #Einasto
+	culture=estonian
+	religion=lutheran
+	father=1996066
+	trait=skilled_tactician
+	trait=just
+	trait=ambitious
+	trait=authoritative
+	trait=charitable
+	
+	2638.7.24={birth=yes}
+	2666.2.1={add_spouse=1996021}
+	2680.1.1={death=yes}
+}
+1996021={
+	name="Tea"
+	female=yes
+	dynasty=0 #Lowborn
+	culture=estonian
+	religion=lutheran
+	trait=intricate_webweaver
+	trait=envious
+	trait=ambitious
+	trait=just
+	trait=erudite
+	trait=charitable
+	
+	2640.4.3={birth=yes}
+	2680.1.1={death=yes}
+}
+1996022={
+	name="Toomas"
+	dynasty=2918102 #Valk
+	culture=estonian
+	religion=lutheran
+	trait=skilled_tactician
+	trait=defensive_leader
+	trait=familyperson
+	trait=robust
+	trait=just
+	trait=stubborn
+	trait=authoritative
+	trait=charitable
+	
+	2590.3.11={birth=yes}
+	2631.3.11={add_spouse=1996023}
+	2680.1.1={death=yes}
+}
+1996023={
+	name="Heleri"
+	female=yes
+	dynasty=0 #Lowborn
+	culture=estonian
+	religion=lutheran
+	trait=underhanded_rogue
+	trait=familyperson
+	trait=content 
+	trait=humble
+	trait=paranoid
+	trait=zealous
+	
+	2610.8.12={birth=yes}
+	2680.1.1={death=yes}
+}
+1996024={
+	name="Emil"
+	dynasty=2918102 #Valk
+	culture=estonian
+	religion=lutheran
+	trait=skilled_tactician
+	trait=familyperson
+	trait=shy
+	trait=brave
+	trait=kind
+	trait=charitable
+	father=1996022
+	mother=1996023
+	
+	2632.2.8={birth=yes}
+	2680.1.1={death=yes}
+}
+1996025={
+	name="Jaanus"
+	dynasty=2918103 #Nelis
+	culture=estonian
+	religion=lutheran
+	trait=tough_soldier
+	trait=duelist
+	trait=pious
+	trait=proud
+	trait=lustful
+	trait=brave
+	
+	2639.11.12={birth=yes}
+	2680.1.1={death=yes}
+}
+1996026={
+	name="Aleksander"
+	dynasty=2918104 #Saagpakk
+	culture=estonian
+	religion=lutheran
+	trait=scholarly_theologian
+	trait=distractible
+	trait=erudite
+	trait=pious
+	trait=familyperson
+	trait=brave
+	trait=honest
+	
+	2631.2.19={birth=yes}
+	2663.2.13={add_spouse=1996027}
+	2680.1.1={death=yes}
+}
+1996027={
+	name="Ingel"
+	female=yes
+	dynasty=2918105 #Maaker
+	culture=estonian
+	religion=lutheran
+	trait=underhanded_rogue
+	trait=kind
+	trait=authoritative
+	trait=greedy
+	trait=proud
+	
+	2630.4.13={birth=yes}
+	2680.1.1={death=yes}
+}
+1996028={
+	name="Rasmus"
+	dynasty=2918104 #Saagpakk
+	culture=estonian
+	religion=lutheran
+	father=1996026
+	mother=1996027
+	
+	2666.2.12={birth=yes}
+	2680.1.1={death=yes}
+}
+1996029={
+	name="Valentin"
+	dynasty=2918105 #Maaker
+	culture=estonian
+	religion=lutheran
+	trait=martial_cleric
+	trait=musician
+	trait=erudite
+	trait=shy
+	trait=socializer
+	trait=diligent
+	
+	2631.5.14={birth=yes}
+	2680.1.1={death=yes}
+}
+1996030={
+	name="Georg-Kaarel"
+	dynasty=2918106 #Einasto
+	culture=estonian
+	religion=lutheran
+	father=1996064
+	trait=mastermind_theologian
+	trait=giant
+	trait=quick
+	trait=robust
+	trait=scholar
+	trait=chaste
+	trait=temperate
+	trait=shy
+	
+	2630.6.7={birth=yes}
+	2680.1.1={death=yes}
+}
+1996031={
+	name="Ago"
+	dynasty=2918107 #Sang
+	culture=estonian
+	religion=lutheran
+	trait=fortune_builder
+	trait=gregarious
+	trait=diligent
+	trait=honest
+	trait=honorable
+	
+	2633.12.28={birth=yes}
+	2680.1.1={death=yes}
+}
+1996032={
+	name="Miku"
+	female=yes
+	dynasty=2918220 #Kudre
+	culture=seto
+	religion=orthodox
+	trait=fortune_builder
+	trait=musician
+	trait=poet
+	trait=pious
+	trait=shy
+	trait=authoritative
+	trait=temperate
+	
+	2630.12.26={birth=yes}
+	2659.1.3={add_spouse=1996033}
+	2680.1.1={death=yes}
+}
+1996033={
+	name="Hardi"
+	dynasty=2918213 #Tuul
+	culture=seto
+	religion=orthodox
+	trait=tough_soldier
+	trait=gardener
+	trait=gregarious
+	trait=zealous
+	trait=content
+	trait=stubborn
+	
+	2631.12.26={birth=yes}
+	2680.1.1={death=yes}
+}
+1996034={
+	name="Irina"
+	female=yes
+	dynasty=2918220 #Kudre
+	culture=seto
+	religion=orthodox
+	father=1996033
+	mother=1996032
+	trait=fair
+
+	2660.3.2={birth=yes}
+	2664.3.2={add_trait=playful}
+	2664.3.2={add_trait=affectionate}
+	2680.1.1={death=yes}
+}
+1996035={
+	name="Vasiliy"
+	dynasty=1703172 #Tarasovs
+	culture=severyane
+	religion=mariavite
+	trait=fortune_builder
+	trait=gregarious
+	trait=diligent
+	trait=honest
+	trait=honorable
+	2633.12.28={birth=yes}
+	2680.1.1={death=yes}
+}
+1996036={
+	name="Vadim"
+	dynasty=1703172 #Tarasovs
+	culture=severyane
+	religion=mariavite
+	trait=charismatic_negotiator
+	trait=temperate
+	trait=patient
+	trait=diligent
+	trait=greedy
+	2640.2.1={birth=yes}
+	2663.3.12={effect={add_lover=1996037}}
+	2665.4.14={add_spouse=1996037}
+	2680.1.1={death=yes}
+}
+1996037={
+	name="Evgenia"
+	female=yes
+	dynasty=0 #Lowborn
+	culture=severyane
+	religion=mariavite
+	trait=thrifty_clerk
+	trait=fair
+	trait=erudite
+	trait=humble
+	trait=familyperson
+	trait=charitable
+	2641.2.1={birth=yes}
+	2680.1.1={death=yes}
+}
+1996038={
+	name="Maris"
+	dynasty=2917024 #Bergs
+	culture=latvian
+	religion=mariavite
+	trait=flamboyant_schemer
+	trait=slow
+	trait=greedy
+	trait=craven
+	trait=pious
+	trait=honorable
+	
+	2629.7.5={birth=yes}
+	2652.3.12={add_spouse=1996039}
+	2680.1.1={death=yes}
+}
+1996039={
+	name="Vija"
+	female=yes
+	dynasty=2917024 #Bergs
+	culture=latvian
+	religion=mariavite
+	trait=flamboyant_schemer
+	trait=chaste
+	trait=ambitious
+	trait=wroth
+	trait=stubborn
+	
+	2631.5.1={birth=yes}
+	2680.1.1={death=yes}
+}
+1996040={
+	name="Irene"
+	female=yes
+	dynasty=2917024 #Bergs
+	culture=latvian
+	religion=mariavite
+	add_trait=indolent
+	add_trait=playful
+	add_trait=conscientious
+	father=1996038
+	mother=1996039
+	
+	2653.5.1={birth=yes}
+	2665.1.1={add_trait=greedy}
+	2666.1.1={add_trait=stubborn}
+	2680.1.1={death=yes}
+}
+1996041={
+	name="Egils"
+	dynasty=2917024 #Bergs
+	culture=latvian
+	religion=mariavite
+	add_trait=curious
+	add_trait=indolent
+	add_trait=rowdy
+	father=1996038
+	mother=1996039
+	
+	2654.4.16={birth=yes}
+	2665.1.1={add_trait=greedy}
+	2666.1.1={add_trait=stubborn}
+	2680.1.1={death=yes}
+}
+1996042={
+	name="Arturs"
+	dynasty=2917043 #Briedis
+	culture=latvian
+	religion=mariavite
+	trait=charismatic_negotiator
+	trait=honest
+	trait=zealous
+	trait=stubborn
+	trait=charitable
+	
+	2636.9.8={birth=yes}
+	2651.3.12={add_spouse=1996043}
+	2680.1.1={death=yes}
+}
+1996043={
+	name="Sandra"
+	female=yes
+	dynasty=2917024 #Bergs
+	culture=latvian
+	religion=mariavite
+	trait=amateurish_plotter
+	trait=humble
+	trait=pious
+	trait=cruel
+	
+	2637.3.13={birth=yes}
+	2680.1.1={death=yes}
+}
+1996044={
+	name="Gustavs"
+	dynasty=2917043 #Briedis
+	culture=latvian
+	religion=mariavite
+	add_trait=indolent
+	add_trait=playful
+	add_trait=conscientious
+	father=1996042
+	mother=1996043
+	
+	2658.1.7={birth=yes}
+	2666.1.1={add_trait=kind}
+	2680.1.1={death=yes}
+}
+1996045={
+	name="Martins"
+	dynasty=2917101 #Ziedonis
+	culture=latvian
+	religion=lutheran
+	trait=intricate_webweaver
+	trait=hunter
+	trait=poet
+	trait=dwarf
+	trait=honest
+	trait=diligent
+	trait=familyperson
+	trait=patient
+	
+	2636.2.8={birth=yes}
+	2680.1.1={death=yes}
+}
+1996046={
+	name="Mareks"
+	dynasty=2917102 #Lusis
+	culture=latvian
+	religion=mariavite
+	trait=charismatic_negotiator
+	trait=sturdy 
+	trait=diligent
+	trait=kind
+	trait=humble
+	trait=deceitful
+	father=1996068
+	2640.2.6={birth=yes}
+	2661.3.1={add_spouse=1996047}
+	2680.1.1={death=yes}
+}
+1996047={
+	name="Skaidra"
+	female=yes
+	dynasty=2917049 #Feldmanis
+	culture=latvian
+	religion=mariavite
+	trait=thrifty_clerk
+	trait=duelist 
+	trait=gregarious
+	trait=chaste
+	trait=paranoid
+	trait=ruthless
+	
+	2641.4.3={birth=yes}
+	2680.1.1={death=yes}
+}
+1996048={
+	name="Ernests"
+	dynasty=2917102 #Lusis
+	culture=latvian
+	religion=mariavite
+	father=1996046
+	mother=1996047
+	
+	trait=conscientious
+	
+	2658.1.28={birth=yes}
+	2666.1.1={add_trait=kind}
+	2680.1.1={death=yes}
+}
+1996049={
+	name="Kaspars"
+	dynasty=2917102 #Lusis
+	culture=latvian
+	religion=lutheran
+	trait=fortune_builder
+	trait=temperate 
+	trait=ambitious
+	trait=greedy
+	trait=pious
+	father=1996068
+	2634.8.15={birth=yes}
+	2652.3.1={add_spouse=1996050}
+	2680.1.1={death=yes}
+}
+1996050={
+	name="Daina"
+	female=yes
+	dynasty=2917103 #Skrastins
+	culture=latvian
+	religion=lutheran
+	father=1996053
+	mother=1996054
+	
+	trait=elusive_shadow
+	trait=quick
+	trait=gardener 
+	trait=rude
+	trait=cruel
+	trait=wroth
+	
+	2636.3.1={birth=yes}
+	2664.1.1={death=yes}
+}
+1996051={
+	name="Daina"
+	female=yes
+	dynasty=2917102 #Lusis
+	culture=latvian
+	religion=lutheran
+	
+	trait=quick
+	trait=curious
+	trait=affectionate
+	trait=timid
+	father=1996049
+	mother=1996050
+	
+	trait=playful
+	
+	2657.1.7={birth=yes}
+	2665.1.1={add_trait=temperate}
+	2666.1.1={add_trait=pious}
+	2680.1.1={death=yes}
+}
+1996052={
+	name="Andris"
+	dynasty=2917102 #Lusis
+	culture=latvian
+	religion=lutheran
+	
+	trait=affectionate
+	trait=rowdy
+	trait=playful
+	father=1996049
+	mother=1996050
+	
+	2658.1.7={birth=yes}
+	2665.1.1={add_trait=greedy}
+	2666.1.1={add_trait=pious}
+	2680.1.1={death=yes}
+}
+1996053={
+	name="Valerijs"
+	dynasty=2917103 #Skrastins
+	culture=latvian
+	religion=lutheran
+	trait=charismatic_negotiator
+	trait=just
+	trait=cruel
+	trait=temperate
+	trait=zealous
+	trait=honest
+	
+	2600.7.10={birth=yes}
+	2620.1.1={add_spouse=1996054}
+	2657.1.1={death=yes}
+}
+1996054={
+	name="Sofija"
+	female=yes
+	dynasty=2917103 #Skrastins
+	culture=latvian
+	religion=lutheran
+	trait=underhanded_rogue
+	trait=quick
+	trait=pious
+	trait=gluttonous
+	trait=gregarious
+	trait=greedy
+	
+	2605.3.10={birth=yes}
+	2650.1.1={death=yes}
+}
+1996055={
+	name="Lasma"
+	female=yes
+	dynasty=2917103 #Skrastins
+	culture=latvian
+	religion=lutheran
+	father=1996053
+	mother=1996054
+	
+	trait=underhanded_rogue
+	trait=quick
+	trait=seductress
+	trait=patient
+	trait=stubborn
+	trait=pious
+	trait=charitable
+	
+	2639.3.17={birth=yes}
+	2680.1.1={death=yes}
+}
+1996056={
+	name="Lasma"
+	female=yes
+	dynasty=2917103 #Skrastins
+	culture=latvian
+	religion=lutheran
+	father=1996053
+	mother=1996054
+	
+	trait=underhanded_rogue
+	trait=quick
+	trait=seductress
+	trait=patient
+	trait=stubborn
+	trait=pious
+	trait=charitable
+	
+	2639.3.17={birth=yes}
+	2680.1.1={death=yes}
+}
+1996057={
+	name="Algirdas"
+	dynasty=2916101 #Maciulis
+	culture=lithuanian
+	religion=mariavite
+	
+	trait=brilliant_strategist
+	trait=trickster
+	trait=scholar
+	trait=temperate
+	trait=brave
+	trait=shy
+	trait=authoritative
+	
+	2633.12.29={birth=yes}
+	2652.8.13={add_spouse=1996058}
+	2680.1.1={death=yes}
+}
+1996058={
+	name="Edita"
+	female=yes
+	dynasty=0 #Lowborn
+	culture=lithuanian
+	religion=mariavite
+	
+	trait=flamboyant_schemer
+	trait=temperate
+	trait=lustful
+	trait=patient
+	
+	2636.2.1={birth=yes}
+	2680.1.1={death=yes}
+}
+1996059={
+	name="Regimantas"
+	dynasty=2916101 #Maciulis
+	culture=lithuanian
+	religion=mariavite
+	father=1996057
+	mother=1996058
+	
+	trait=fussy
+	trait=willful
+	trait=haughty
+
+	2653.3.17={birth=yes}
+	2664.3.2={add_trait=brave}
+	2664.3.2={add_trait=stubborn}
+	2680.1.1={death=yes}
+}
+1996060={
+	name="Laura"
+	female=yes
+	dynasty=2916101 #Maciulis
+	culture=lithuanian
+	religion=mariavite
+	father=1996057
+	mother=1996058
+	
+	trait=conscientious
+	trait=rowdy
+	trait=playful
+
+	2664.1.16={birth=yes}
+	2664.3.2={add_trait=temperate}
+	2664.3.2={add_trait=brave}
+	2680.1.1={death=yes}
+}
+1996061={
+	name="Henrikas"
+	dynasty=2916093 #Gylys
+	culture=lithuanian
+	religion=mariavite
+	
+	trait=tough_soldier
+	trait=pious
+	trait=content
+	trait=trusting
+	trait=authoritative
+	
+	2630.5.16={birth=yes}
+	2680.1.1={death=yes}
+}
+1996062={
+	name="Benediktas"
+	dynasty=2916096 #Jonušas
+	culture=lithuanian
+	religion=mariavite
+	
+	trait=elusive_shadow
+	trait=shrewd
+	trait=charitable
+	trait=content
+	trait=chaste
+	trait=just
+	
+	2640.2.9={birth=yes}
+	2680.1.1={death=yes}
+}
+1996063={			#can be moved
+	name="Ewa"
+	female=yes
+	dynasty=2941000 #Swiat-Jajek
+	culture=warmzur
+	religion=mariavite
+	
+	trait=underhanded_rogue
+	trait=quick
+	trait=feeble
+	trait=scholar
+	trait=diligent
+	trait=humble
+	trait=content
+	trait=cynical
+	trait=poet
+	
+	martial=2
+	diplomacy=5
+	intrigue=6
+	stewardship=4
+	learning=7
+	
+	2644.3.11={birth=yes}
+	2680.1.1={death=yes}
+}
+1996064={
+	name="Elmar"
+	dynasty=2918106 #Einasto
+	culture=estonian
+	religion=lutheran
+	father=1996065
+	
+	trait=giant
+	
+	2609.7.25={birth=yes}
+	2660.3.8={death=yes}
+}
+1996065={
+	name="Oskar"
+	dynasty=2918106 #Einasto
+	culture=estonian
+	religion=lutheran
+	trait=giant
+	
+	2578.6.2={birth=yes}
+	2634.8.13={death=yes}
+}
+1996066={
+	name="Lennart"
+	dynasty=2918106 #Einasto
+	culture=estonian
+	religion=lutheran
+	father=1996065
+	
+	2612.7.3={birth=yes}
+	2664.8.6={death=yes}
+}
+1996067={
+	name="Igor"
+	dynasty=1703173 #Tsoganov
+	culture=severyane
+	religion=pravoslavie
+	father=1996013
+	2601.9.18={birth=yes}
+	2653.1.1={death=yes}
+}
+1996068={
+	name="Julijs"
+	dynasty=2917102 #Lusis
+	culture=latvian
+	religion=mariavite
+	2602.2.2={birth=yes}
+	2664.11.22={death=yes}
+}
+1996069={
+	name="Ivan"
+	dynasty=1856054 #Potolkov
+	culture=kaliningradyets
+	religion=proletcult
+	trait=skilled_tactician
+	trait=gamer
+	trait=strategist
+	trait=giant
+	father=1993210
+	2619.11.9={birth=yes}
+	2642.12.2={add_spouse=1996071}
+	2670.8.15={death=yes}
+}
+1996070={
+	name="Henryk"
+	dynasty=2125237 #Kur
+	culture=mazovian
+	religion=mariavite
+	trait=charismatic_negotiator
+	trait=sturdy
+	trait=celibate
+	trait=administrator
+	trait=holy_warrior
+	trait=falconer
+	trait=temperate
+	trait=diligent
+	trait=proud
+	trait=brave
+	trait=just
+	trait=experimenter
+	2611.5.17={birth=yes}
+	2660.1.1={effect={add_friend=19911055}}
+	2680.1.1={death=yes}
+}
+1996071={
+	name="Alyona"
+	dynasty=1703003 #Moskvin
+	culture=severyane
+	religion=proletcult
+	female=yes
+	trait=charismatic_negotiator
+	trait=quick
+	trait=dwarf
+	trait=winter_soldier
+	trait=diligent
+	2625.2.3={birth=yes}
+	2642.12.2={add_spouse=1996069}
+	2670.4.4={death=yes}
+}
+
+1996072={
+	name="Irina"
+	dynasty=1856054 #Potolkov
+	culture=kaliningradyets
+	religion=proletcult
+	female=yes
+	trait=thrifty_clerk
+	trait=robust
+	trait=musician
+	mother=1996071
+	father=1996069
+	2643.9.23={birth=yes}
+	2690.1.14={death=yes}
+}
+1996073={
+	name="Lada"
+	dynasty=1856054 #Potolkov
+	culture=kaliningradyets
+	religion=proletcult
+	female=yes
+	mother=1996071
+	father=1996069
+	trait=haughty
+	2651.2.3={birth=yes}
+	2680.7.17={death=yes}
+}
+1996074={
+	name="Daniil"
+	dynasty=1856054 #Potolkov
+	culture=kaliningradyets
+	religion=proletcult
+	trait=bastard
+	trait=tough_soldier
+	trait=giant
+	trait=scarred_mid
+	trait=hedonist
+	trait=light_foot_leader
+	father=1996069
+	mother=1996083
+	2634.10.13={birth=yes}
+	2700.4.27={death=yes}
+}
+1996075={
+	name="Pavel"
+	dynasty=1856091 #Vasenin
+	culture=kaliningradyets
+	religion=proletcult
+	trait=charismatic_negotiator
+	trait=light_foot_leader
+	father=1996076
+	2641.6.27={birth=yes}
+	2680.1.1={death=yes}
+}
+1996076={
+	name="Vitovt"
+	dynasty=1856091 #Vasenin
+	culture=kaliningradyets
+	religion=proletcult
+	trait=grey_eminence
+	trait=sympathy_christendom
+	trait=duelist
+	trait=holy_warrior
+	trait=stressed
+	2613.3.6={birth=yes}
+	2655.8.12={death={death_reason=death_battle killer=1996084}}
+}
+1996077={
+	name="Yulia"
+	female=yes
+	dynasty=1856091 #Vasenin
+	culture=kaliningradyets
+	religion=proletcult
+	trait=stutter
+	trait=scholarly_theologian
+	trait=humble
+	father=1996076
+	2639.6.4={birth=yes}
+	2680.1.1={death=yes}
+}
+1996078={
+	name="Lyosha"
+	dynasty=1856091 #Vasenin
+	culture=kaliningradyets
+	religion=proletcult
+	trait=playful
+	father=1996076
+	2653.9.5={birth=yes}
+	2680.1.1={death=yes}
+}
+1996079={
+	name="Hieronim"
+	dynasty=2941003 #Zamana
+	culture=warmzur
+	religion=oasite
+	trait=thrifty_clerk
+	trait=robust
+	trait=scholar
+	trait=cynical
+	2630.7.29={birth=yes}
+	2680.1.1={death=yes}
+}
+1996080={
+	name="Olga"
+	female=yes
+	dynasty=2941004 #Samsel
+	culture=warmzur
+	religion=oasite
+	trait=tough_soldier
+	trait=chaste
+	trait=theologian
+	trait=holy_warrior
+	2630.10.20={birth=yes}
+	2648.1.1={add_spouse=1996079}
+	2655.8.12={death={death_reason=death_battle killer=1996084}}
+}
+1996081={
+	name="Cezary"
+	dynasty=2941003 #Zamana
+	culture=warmzur
+	religion=oasite
+	trait=misguided_warrior
+	trait=light_foot_leader
+	father=1996079
+	mother=1996080
+	2649.1.10={birth=yes}
+	2680.1.1={death=yes}
+}
+1996082={
+	name="Lowiza"
+	female=yes
+	dynasty=2941003 #Zamana
+	culture=warmzur
+	religion=oasite
+	trait=timid
+	trait=groomed
+	father=1996079
+	mother=1996080
+	2652.3.29={birth=yes}
+	2680.1.1={death=yes}
+}
+1996083={
+	name="Evgenia"
+	female=yes
+	culture=kaliningradyets
+	religion=proletcult
+	2611.3.16={birth=yes}
+	2680.1.1={death=yes}
+}
+1996084={
+	name="Leona"
+	dynasty=1948141 #Bonhart
+	female=yes
+	culture=mazovian
+	religion=mariavite
+	trait=brilliant_strategist
+	trait=diligent
+	trait=celibate
+	trait=zealous
+	trait=holy_warrior
+	trait=strong
+	trait=duelist
+	trait=chaste
+	trait=cruel
+	trait=wroth
+	trait=trickster
+	father=1996085
+	2619.9.11={birth=yes}
+	2659.2.21={
+		employer=1996070
+		effect={give_job_title=job_marshal}
+	}
+	2680.1.1={death=yes}
+}
+1996085={
+	name="Andreas"
+	dynasty=1948141 #Bonhart
+	culture=ossi
+	religion=mariavite
+	2594.6.5={birth=yes}
+	2627.5.5={death=yes}
+}
+1996086={
+	name="Ibrahim"
+	dynasty=1442001 #Ulanowicz
+	culture=lipka
+	religion=ruhi
+	martial=6
+	diplomacy=9
+	stewardship=8
+	intrigue=6
+	learning=5
+	father=1996017
+	trait=zealous
+	trait=brave
+	trait=just
+	trait=diligent
+	trait=deceitful
+	trait=proud
+	trait=skilled_tactician
+	trait=cavalry_leader
+	trait=unyielding_leader
+	trait=lipka
+	2643.8.13={birth=yes}
+	2660.1.1={employer=1996102}
+	2680.1.1={death=yes}
+}
+1996087={
+	name="Mikalaj"
+	dynasty=1727111 #Shatochin
+	culture=belarusian
+	religion=orthodox
+	trait=martial_cleric
+	trait=fair
+	trait=shy
+	trait=feeble
+	trait=temperate
+	trait=humble
+	trait=poet
+	father=1996097
+	mother=1996098
+	2644.5.29={birth=yes}
+	2665.1.1={add_matrilineal_spouse=1996000}
+	2665.1.1={effect={add_lover=1996000}}
+	2680.1.1={death=yes}
+}
+1996088={
+	name="Kulibek Dariusz"
+	dynasty=1442074 #Sofijew
+	culture=lipka
+	religion=ruhi
+	secret_religion=shiite
+	trait=fortune_builder
+	trait=ruthless
+	trait=quick
+	trait=patient
+	trait=trusting
+	trait=winter_soldier
+	2609.7.22={birth=yes}
+	2680.1.1={death=yes}
+}
+1996089={
+	name="Chaszajar"
+	dynasty=1442074 #Sofijew
+	culture=lipka
+	religion=ruhi
+	secret_religion=shiite
+	father=1996088
+	mother=2070072
+	trait=amateurish_plotter
+	trait=authoritative
+	trait=stutter
+	trait=trickster
+	2630.3.19={birth=yes}
+	2680.1.1={death=yes}
+}
+1996090={
+	name="Gulsana"
+	female=yes
+	dynasty=1442074 #Sofijew
+	culture=lipka
+	religion=ruhi
+	secret_religion=shiite
+	father=1996088
+	mother=2070072
+	2633.12.5={birth=yes}
+	2680.1.1={death=yes}
+}
+1996091={
+	name="Galiena"
+	female=yes
+	dynasty=1442074 #Sofijew
+	culture=lipka
+	religion=ruhi
+	secret_religion=shiite
+	father=1996088
+	mother=2070072
+	trait=twin
+	2637.2.7={birth=yes}
+	2680.1.1={death=yes}
+}
+1996092={
+	name="Szemira"
+	female=yes
+	dynasty=1442074 #Sofijew
+	culture=lipka
+	religion=ruhi
+	secret_religion=shiite
+	father=1996088
+	mother=2070072
+	trait=twin
+	2637.2.7={birth=yes}
+	2680.1.1={death=yes}
+}
+1996093={
+	name="Anserianna"
+	female=yes
+	dynasty=1442074 #Sofijew
+	culture=lipka
+	religion=ruhi
+	secret_religion=shiite
+	father=1996088
+	mother=2070072
+	2640.12.15={birth=yes}
+	2680.1.1={death=yes}
+}
+1996094={
+	name="Klaudia"
+	female=yes
+	dynasty=2941006 #Aweje
+	culture=warmzur
+	religion=mariavite
+	trait=tough_soldier
+	trait=sturdy
+	trait=groomed
+	trait=freckles
+	trait=falconer
+	trait=light_foot_leader
+	2632.12.3={birth=yes}
+	2659.1.1={add_matrilineal_spouse=1996095}
+	2657.12.29={add_spouse=1996088}
+	2657.9.23={effect={add_rival=1996089}}
+	2665.1.1={effect={add_friend=1996000}}
+	2680.1.1={death=yes}
+}
+1996095={
+	name="Artur"
+	dynasty=2941007 #Suchodola
+	culture=warmzur
+	religion=mariavite
+	trait=flamboyant_schemer
+	trait=musician
+	trait=brave
+	trait=inspiring_leader
+	2629.7.11={birth=yes}
+	2657.9.23={death={death_reason=death_duel killer=1996089}}
+}
+1996096={
+	name="Oskar"
+	dynasty=2941006 #Aweje
+	culture=warmzur
+	religion=mariavite
+	trait=misguided_warrior
+	trait=robust
+	trait=groomed
+	father=1996095
+	mother=1996094
+	2659.5.2={birth=yes}
+	2680.1.1={death=yes}
+}
+1996097={
+	name="Mikita"
+	dynasty=1727111 #Shatochin
+	culture=belarusian
+	religion=orthodox
+	trait=charismatic_negotiator
+	trait=strong
+	trait=familyperson
+	trait=honorable
+	trait=one_handed
+	trait=defensive_leader
+	trait=falconer
+	2605.4.18={birth=yes}
+	2680.1.1={death=yes}
+}
+1996098={
+	name="Anzhelika"
+	female=yes
+	culture=poleshuk
+	religion=orthodox
+	2616.9.3={birth=yes}
+	2636.1.1={add_spouse=1996097}
+	2680.1.1={death=yes}
+}
+1996099={
+	name="Yauhen"
+	dynasty=1727111 #Shatochin
+	culture=belarusian
+	religion=orthodox
+	trait=charismatic_negotiator
+	trait=painter
+	trait=diligent
+	trait=content
+	trait=pious
+	father=1996097
+	2624.3.28={birth=yes}
+	2680.1.1={death=yes}
+}
+1996100={
+	name="Barys"
+	dynasty=1727111 #Shatochin
+	culture=belarusian
+	religion=orthodox
+	secret_religion=pravoslavie
+	trait=tough_soldier
+	trait=strong
+	trait=ambitious
+	trait=envious
+	trait=chaste
+	trait=trickster
+	father=1996097
+	2628.12.5={birth=yes}
+	2680.1.1={death=yes}
+}
+1996101={
+	name="Tamara"
+	female=yes
+	dynasty=1727111 #Shatochin
+	culture=poleshuk
+	religion=orthodox
+	father=1996097
+	mother=1996098
+	2641.12.22={birth=yes}
+	2680.1.1={death=yes}
+}
+1996102={
+	name="Ismail"
+	dynasty=0
+	culture=lipka
+	religion=ruhi
+	father=1996016
+	2612.7.15={birth=yes}
+	2680.1.1={death=yes}
+}
+1996103={
+	name="Matiss"
+	dynasty=2917104 #Lacplesis
+	culture=latvian
+	religion=lutheran
+	martial=12
+	diplomacy=6
+	stewardship=5
+	intrigue=8
+	learning=10
+	disallow_random_traits=yes
+	trait=brilliant_strategist
+	trait=genius
+	trait=robust
+	trait=wroth
+	trait=just
+	trait=brave
+	trait=pious
+	trait=authoritative
+	trait=inspiring_leader
+	trait=holy_warrior
+	2493.6.24={
+		create_bloodline={
+			type=visvaldis_bloodline
+			has_dlc="Holy Fury"
+		}
+	}
+	2475.11.11={birth=yes}
+	2495.1.1={add_spouse=1996104}
+	2500.1.1 = {
+	name="Visvaldis"
+	# AKA: Matiss
+	}
+	2525.11.18={death=yes}
+}
+1996104={
+	name="Ausma"
+	female=yes
+	dynasty=2917107 #Viesturs
+	culture=latvian
+	religion=lutheran
+	martial=5
+	diplomacy=12
+	stewardship=8
+	intrigue=10
+	learning=6
+	disallow_random_traits=yes
+	trait=grey_eminence
+	trait=fair
+	trait=gregarious
+	trait=poet
+	trait=cynical
+	trait=schemer
+	father=1996130
+	2475.8.21={birth=yes}
+	2528.3.1={death=yes}
+}
+	
+1996105={
+	name="Janis"
+	dynasty=2917104 #Lacplesis
+	culture=latvian
+	religion=lutheran
+	martial=8
+	diplomacy=7
+	stewardship=9
+	intrigue=5
+	learning=8
+	disallow_random_traits=yes
+	trait=thrifty_clerk
+	trait=erudite
+	trait=patient
+	trait=shrewd
+	trait=administrator
+	trait=temperate
+	father=1996103
+	mother=1996104
+	2499.8.13={birth=yes}
+	2533.5.21={death=yes}
+}
+1996106={
+	name="Lukass"
+	dynasty=2917104 #Lacplesis
+	culture=latvian
+	religion=lutheran
+	martial=5
+	diplomacy=9
+	stewardship=7
+	intrigue=6
+	learning=11
+	disallow_random_traits=yes
+	trait=scholarly_theologian
+	trait=scholar
+	trait=quick
+	trait=humble
+	trait=kind
+	trait=content
+	father=1996103
+	mother=1996104
+	2511.3.24={birth=yes}
+	2548.2.1={death=yes}
+}
+1996107={
+	name="Laima"
+	female=yes
+	dynasty=2917104 #Lacplesis
+	culture=latvian
+	religion=lutheran
+	martial=4
+	diplomacy=11
+	stewardship=7
+	intrigue=5
+	learning=8
+	disallow_random_traits=yes
+	trait=grey_eminence
+	trait=genius
+	trait=kind
+	trait=socializer
+	trait=poet
+	trait=humble
+	trait=honest
+	trait=familyperson
+	trait=infirm
+	father=1996103
+	mother=1996104
+	2520.6.21={birth=yes}
+	2598.8.15={death=yes}
+}
+1996108={
+	name="Andrejs"
+	dynasty=2917104 #Lacplesis
+	culture=latvian
+	religion=lutheran
+	martial=9
+	diplomacy=6
+	stewardship=5
+	intrigue=8
+	learning=7
+	disallow_random_traits=yes
+	trait=martial_cleric
+	trait=groomed
+	trait=zealous
+	trait=wroth
+	trait=ambitious
+	father=1996105
+	2530.3.11={birth=yes}
+	2553.9.3={death=yes}
+}
+1996109={
+	name="Talivaldis"
+	dynasty=2917104 #Lacplesis
+	culture=latvian
+	religion=lutheran
+	martial=7
+	diplomacy=8
+	stewardship=6
+	intrigue=8
+	learning=7
+	disallow_random_traits=yes
+	trait=elusive_shadow
+	trait=shrewd
+	trait=robust
+	trait=schemer
+	trait=falconer
+	trait=charitable
+	trait=trusting
+	trait=deceitful
+	father=1996106
+	2531.4.22={birth=yes}
+	2573.1.9={death=yes}
+}
+1996110={
+	name="Kristine"
+	female=yes
+	dynasty=2917104 #Lacplesis
+	culture=latvian
+	religion=lutheran
+	martial=4
+	diplomacy=6
+	stewardship=5
+	intrigue=8
+	learning=8
+	disallow_random_traits=yes
+	trait=flamboyant_schemer
+	trait=lustful
+	trait=seductress
+	trait=groomed
+	trait=diligent
+	father=1996106
+	2533.7.23={birth=yes}
+	2582.12.25={death={death_reason=death_murder_unknown}}
+}
+1996111={
+	name="Eizens"
+	dynasty=2917104 #Lacplesis
+	culture=latvian
+	religion=lutheran
+	martial=5
+	diplomacy=8
+	stewardship=7
+	intrigue=8
+	learning=6
+	disallow_random_traits=yes
+	trait=fortune_builder
+	trait=painter
+	trait=humble
+	trait=sympathy_scholastic
+	trait=chaste
+	trait=shy
+	trait=erudite
+	father=1996108
+	2551.9.10={birth=yes}
+	2594.5.12={death=yes}
+}
+1996112={
+	name="Karlis"
+	dynasty=2917104 #Lacplesis
+	culture=latvian
+	religion=lutheran
+	martial=9
+	diplomacy=3
+	stewardship=6
+	intrigue=5
+	learning=6
+	disallow_random_traits=yes
+	trait=tough_soldier
+	trait=authoritative
+	trait=ruthless
+	trait=ambitious
+	trait=severely_injured
+	trait=greedy
+	father=1996109
+	2552.2.19={birth=yes}
+	2576.12.4={death={death_reason=death_murder_unknown}}
+}
+1996113={
+	name="Matiss"
+	dynasty=2917104 #Lacplesis
+	culture=latvian
+	religion=lutheran
+	martial=7
+	diplomacy=9
+	stewardship=8
+	intrigue=5
+	learning=7
+	disallow_random_traits=yes
+	trait=charismatic_negotiator
+	trait=gregarious
+	trait=trusting
+	trait=groomed
+	trait=gamer
+	trait=depressed
+	father=1996109
+	2555.7.1={birth=yes}
+	2580.12.25={death=yes}
+}
+1996114={
+	name="Bruno"
+	dynasty=2917104 #Lacplesis
+	culture=latvian
+	religion=lutheran
+	martial=9
+	diplomacy=6
+	stewardship=5
+	intrigue=8
+	learning=7
+	disallow_random_traits=yes
+	trait=skilled_tactician
+	trait=wroth
+	trait=brave
+	trait=duelist
+	trait=robust
+	trait=lustful
+	trait=hedonist
+	father=1996109
+	2561.2.9={birth=yes}
+	2590.9.3={death=yes}
+}
+1996115={
+	name="Karlis"
+	dynasty=2917104 #Lacplesis
+	culture=latvian
+	religion=lutheran
+	martial=6
+	diplomacy=6
+	stewardship=7
+	intrigue=8
+	learning=6
+	disallow_random_traits=yes
+	trait=underhanded_rogue
+	trait=paranoid
+	trait=gregarious
+	trait=frail
+	trait=lefthanded
+	trait=poet
+	father=1996112
+	2575.9.11={birth=yes}
+	2605.1.21={death={death_reason=death_murder_unknown}}
+}
+1996116={
+	name="Lukass"
+	dynasty=2917104 #Lacplesis
+	culture=latvian
+	religion=lutheran
+	martial=0
+	diplomacy=0
+	stewardship=0
+	intrigue=0
+	learning=0
+	disallow_random_traits=yes
+	trait=sickly
+	father=1996113
+	2578.3.11={birth=yes}
+	2579.2.14={
+		death={death_reason=death_trait}
+	} #Sickly
+} 
+1996117={
+	name="Matiss"
+	dynasty=2917104 #Lacplesis
+	culture=latvian
+	religion=lutheran
+	martial=4
+	diplomacy=8
+	stewardship=8
+	intrigue=6
+	learning=9
+	disallow_random_traits=yes
+	trait=scholarly_theologian
+	trait=shrewd
+	trait=theologian
+	trait=patient
+	trait=charitable
+	trait=erudite
+	father=1996111
+	2579.8.5={birth=yes}
+	2619.6.12={death=yes}
+}
+1996118={
+	name="Normunds"
+	dynasty=2917106 #Pilens
+	culture=latvian
+	religion=lutheran
+	martial=5
+	diplomacy=9
+	stewardship=9
+	intrigue=8
+	learning=6
+	disallow_random_traits=yes
+	trait=midas_touched
+	trait=bastard
+	trait=stubborn
+	trait=just
+	trait=gregarious
+	trait=temperate
+	father=1996114
+	2587.5.10={birth=yes}
+	2632.3.15={death=yes}
+}
+1996119={
+	name="Edvins"
+	dynasty=2917104 #Lacplesis
+	culture=latvian
+	religion=lutheran
+	martial=5
+	diplomacy=9
+	stewardship=5
+	intrigue=9
+	learning=6
+	disallow_random_traits=yes
+	trait=naive_appeaser
+	trait=lustful
+	trait=seducer
+	trait=greedy
+	trait=cynical
+	trait=gregarious
+	father=1996117
+	2596.10.18={birth=yes}
+	2631.5.5={add_spouse=1996166}
+	2651.3.19={death=yes}
+}
+1996120={
+	name="Gustavs"
+	dynasty=2917104 #Lacplesis
+	culture=latvian
+	religion=lutheran
+	martial=10
+	diplomacy=10
+	stewardship=9
+	intrigue=8
+	learning=7
+	disallow_random_traits=yes
+	trait=fortune_builder
+	trait=temperate
+	trait=shrewd
+	trait=erudite
+	trait=content
+	trait=humble
+	father=1996115
+	2600.3.27={birth=yes}
+	2643.8.19={death=yes}
+}
+1996121={
+	name="Karolina"
+	female=yes
+	dynasty=2917104 #Lacplesis
+	culture=latvian
+	religion=lutheran
+	martial=7
+	diplomacy=8
+	stewardship=6
+	intrigue=8
+	learning=8
+	disallow_random_traits=yes
+	trait=elusive_shadow
+	trait=gregarious
+	trait=socializer
+	trait=patient
+	trait=humble
+	father=1996117
+	2603.9.17={birth=yes}
+	2673.5.19={death=yes}
+}
+1996122={
+	name="Rolands"
+	dynasty=2917104 #Lacplesis
+	culture=latvian
+	religion=lutheran
+	martial=10
+	diplomacy=6
+	stewardship=7
+	intrigue=8
+	learning=8
+	disallow_random_traits=yes
+	trait=brilliant_strategist
+	trait=adventurer
+	trait=zealous
+	trait=ruthless
+	trait=brave
+	trait=strategist
+	trait=holy_warrior
+	father=1996117
+	2616.12.5={birth=yes}
+	2691.8.28={death=yes}
+}
+1996123={
+	name="Svens"
+	dynasty=2917104 #Lacplesis
+	culture=latvian
+	religion=lutheran
+	martial=8
+	diplomacy=9
+	stewardship=7
+	intrigue=8
+	learning=9
+	disallow_random_traits=yes
+	trait=martial_cleric
+	trait=charitable
+	trait=familyperson
+	trait=brass_chorus
+	trait=musician
+	trait=proud
+	trait=gregarious
+	father=1996120
+	2625.11.11={birth=yes}
+	2685.8.18={death=yes}
+}
+1996124={
+	name="Wilhelms"
+	dynasty=2917105 #Meiers
+	culture=latvian
+	religion=lutheran
+	martial=5
+	diplomacy=6
+	stewardship=5
+	intrigue=8
+	learning=7
+	disallow_random_traits=yes
+	trait=thrifty_clerk
+	trait=bastard
+	trait=quick
+	trait=erudite
+	trait=giant
+	trait=poet
+	trait=temperate
+	father=1996119
+	mother=1996166
+	2631.4.1={birth=yes}
+	2682.12.14={death=yes}
+}
+1996125={
+	name="Gustavs"
+	dynasty=2917104 #Lacplesis
+	culture=latvian
+	religion=lutheran
+	martial=10
+	diplomacy=9
+	stewardship=8
+	intrigue=8
+	learning=9
+	disallow_random_traits=yes
+	trait=brilliant_strategist
+	trait=quick
+	trait=humble
+	trait=greedy
+	trait=just
+	trait=ambitious
+	father=1996123
+	2650.2.14={birth=yes}
+	2705.10.13={death=yes}
+}
+1996126={
+	name="Ksenija"
+	female=yes
+	dynasty=2917104 #Lacplesis
+	culture=latvian
+	religion=lutheran
+	martial=5
+	diplomacy=6
+	stewardship=5
+	intrigue=8
+	learning=7
+	disallow_random_traits=yes
+	trait=gregarious
+	trait=curious
+	trait=affectionate
+	trait=conscientious
+	father=1996123
+	2653.3.11={birth=yes}
+	2726.12.2={death=yes}
+}
+1996127={
+	name="Miervaldis"
+	dynasty=2917104 #Lacplesis
+	culture=latvian
+	religion=lutheran
+	martial=4
+	diplomacy=5
+	stewardship=6
+	intrigue=3
+	learning=6
+	disallow_random_traits=yes
+	trait=timid
+	father=1996123
+	2657.3.11={birth=yes}
+	2717.2.14={death=yes}
+}
+1996128={
+	name="Georgs"
+	dynasty=2917106 #Pilens
+	culture=latvian
+	religion=lutheran
+	martial=5
+	diplomacy=8
+	stewardship=9
+	intrigue=8
+	learning=5
+	disallow_random_traits=yes
+	trait=fortune_builder
+	trait=honest
+	trait=erudite
+	trait=temperate
+	trait=stubborn
+	trait=diligent
+	father=1996118
+	2627.6.18={birth=yes}
+	2682.2.25={death=yes}
+}
+1996129={
+	name="Ludvigs"
+	dynasty=2917105 #Meiers
+	culture=latvian
+	religion=lutheran
+	martial=3
+	diplomacy=3
+	stewardship=3
+	intrigue=3
+	learning=3
+	father=1996124
+	2661.9.1={birth=yes}
+	2719.10.17={death=yes}
+}
+1996130={
+	name="Arturs"
+	dynasty=2917107 #Viesturs
+	culture=latvian
+	religion=lutheran
+	martial=7
+	diplomacy=8
+	stewardship=12
+	intrigue=5
+	learning=10
+	disallow_random_traits=yes
+	trait=underhanded_rogue
+	trait=cynical
+	trait=ruthless
+	trait=rude
+	trait=stubborn
+	trait=legendary
+	occluded=yes
+	2428.3.12={birth=yes}
+	2488.4.18={death=yes}
+}	
+1996131={
+	name="Ülo"
+	dynasty=2918003 #Mägi
+	culture=estonian
+	religion=lutheran
+	martial=7
+	diplomacy=7
+	stewardship=7
+	intrigue=7
+	learning=7
+	disallow_random_traits=yes
+	trait=grey_eminence
+	trait=gregarious
+	trait=kind
+	trait=diligent
+	trait=shrewd
+	trait=legendary
+	occluded=yes
+	2310.1.20={birth=yes}
+	2390.3.13={death=yes}
+}
+1996132={
+	name="Toivo"
+	dynasty=2918003 #Mägi
+	culture=estonian
+	religion=lutheran
+	martial=7
+	diplomacy=7
+	stewardship=7
+	intrigue=7
+	learning=7
+	disallow_random_traits=yes
+	trait=fortune_builder
+	trait=temperate
+	trait=familyperson
+	trait=poet
+	trait=erudite
+	trait=legendary
+	occluded=yes
+	father=1996131
+	2369.7.13={birth=yes}
+	2420.2.27={death=yes}
+}
+1996133={
+	name="Annika"
+	female=yes
+	dynasty=2918003 #Mägi
+	culture=estonian
+	religion=lutheran
+	martial=6
+	diplomacy=7
+	stewardship=8
+	intrigue=4
+	learning=9
+	disallow_random_traits=yes
+	trait=naive_appeaser
+	trait=content
+	trait=pious
+	trait=groomed
+	trait=shy
+	father=1996132
+	2399.7.13={birth=yes}
+	2459.2.27={death=yes}
+}
+1996134={
+	name="Hannes"
+	dynasty=2918037 #Saks
+	culture=estonian
+	religion=lutheran
+	martial=9
+	diplomacy=6
+	stewardship=9
+	intrigue=5
+	learning=9
+	disallow_random_traits=yes
+	trait=tough_soldier
+	trait=brave
+	trait=authoritarian
+	trait=wroth
+	trait=cruel
+	trait=just
+	2397.7.13={birth=yes}
+	2418.1.1={add_spouse=1996133}
+	2447.12.6={death=yes}
+}
+1996135={
+	name="Villem"
+	dynasty=2918037 #Saks
+	culture=estonian
+	religion=lutheran
+	martial=8
+	diplomacy=5
+	stewardship=9
+	intrigue=8
+	learning=5
+	disallow_random_traits=yes
+	trait=thrifty_clerk
+	trait=diligent
+	trait=trusting
+	trait=architect
+	trait=wroth
+	father=1996134
+	mother=1996133
+	2427.3.17={birth=yes}
+	2452.6.14={death=yes}
+}
+1996136={
+	name="Hannes"
+	dynasty=2918037 #Saks
+	culture=estonian
+	religion=lutheran
+	martial=7
+	diplomacy=9
+	stewardship=6
+	intrigue=5
+	learning=7
+	disallow_random_traits=yes
+	trait=charismatic_negotiator
+	trait=gregarious
+	trait=gamer
+	trait=envious
+	trait=proud
+	father=1996134
+	mother=1996133
+	2430.2.14={birth=yes}
+	2462.3.8={death=yes}
+}
+1996137={
+	name="Mati"
+	dynasty=2918037 #Saks
+	culture=estonian
+	religion=lutheran
+	martial=9
+	diplomacy=7
+	stewardship=8
+	intrigue=6
+	learning=7
+	disallow_random_traits=yes
+	trait=skilled_tactician
+	trait=slothful
+	trait=temperate
+	trait=content
+	trait=brave
+	father=1996135
+	2447.9.29={birth=yes}
+	2476.4.4={death=yes}
+}
+1996138={
+	name="Karin"
+	female=yes
+	dynasty=2918037 #Saks
+	culture=estonian
+	religion=lutheran
+	martial=5
+	diplomacy=8
+	stewardship=7
+	intrigue=5
+	learning=9
+	disallow_random_traits=yes
+	trait=martial_cleric
+	trait=groomed
+	trait=erudite
+	trait=zealous
+	trait=frail
+	father=1996136
+	2448.6.23={birth=yes}
+	2485.11.8={death=yes}
+}
+1996139={
+	name="Alvar"
+	dynasty=2918062 #Orav
+	culture=estonian
+	religion=lutheran
+	martial=8
+	diplomacy=11
+	stewardship=10
+	intrigue=7
+	learning=9
+	disallow_random_traits=yes
+	trait=fortune_builder
+	trait=quick
+	trait=diligent
+	trait=deceitful
+	trait=authoritative
+	2442.9.10={birth=yes}
+	2475.1.1={add_spouse=1996138}
+	2491.12.31={death=yes}
+}
+1996140={
+	name="Tarmo"
+	dynasty=2918062 #Orav
+	culture=estonian
+	religion=lutheran
+	martial=8
+	diplomacy=7
+	stewardship=8
+	intrigue=7
+	learning=8
+	disallow_random_traits=yes
+	trait=mastermind_theologian
+	trait=erudite
+	trait=just
+	trait=ambitious
+	trait=greedy
+	father=1996139
+	2477.3.14={birth=yes}
+	2525.9.15={death=yes}
+}
+1996141={
+	name="Tarmo"
+	dynasty=2918062 #Orav
+	culture=estonian
+	religion=lutheran
+	martial=6
+	diplomacy=8
+	stewardship=5
+	intrigue=9
+	learning=6
+	disallow_random_traits=yes
+	trait=flamboyant_schemer
+	trait=authoritative
+	trait=rude
+	trait=proud
+	trait=envious
+	father=1996140
+	2500.2.19={birth=yes}
+	2534.1.9={death=yes}
+}
+1996142={
+	name="Kaspar"
+	dynasty=2918062 #Orav
+	culture=estonian
+	religion=lutheran
+	martial=4
+	diplomacy=8
+	stewardship=6
+	intrigue=7
+	learning=9
+	disallow_random_traits=yes
+	trait=tough_soldier
+	trait=craven
+	trait=frail
+	trait=shy
+	trait=patient
+	trait=strategist
+	father=1996141
+	2522.8.26={birth=yes}
+	2544.2.3={death=yes}
+}
+1996143={
+	name="Tarmo"
+	dynasty=2918062 #Orav
+	culture=estonian
+	religion=lutheran
+	martial=5
+	diplomacy=5
+	stewardship=5
+	intrigue=5
+	learning=5
+	disallow_random_traits=yes
+	trait=charismatic_negotiator
+	trait=hedonist
+	trait=drunkard
+	trait=lustful
+	trait=gregarious
+	father=1996141
+	2525.1.13={birth=yes}
+	2562.12.11={death=yes}
+}
+1996144={
+	name="Hannes"
+	dynasty=2918062 #Orav
+	culture=estonian
+	religion=lutheran
+	martial=5
+	diplomacy=9
+	stewardship=7
+	intrigue=6
+	learning=5
+	disallow_random_traits=yes
+	trait=grey_eminence
+	trait=gamer
+	trait=gregarious
+	trait=brave
+	trait=shrewd
+	father=1996141
+	2527.4.17={birth=yes}
+	2577.12.3={death={death_reason=death_murder_unknown}}
+}
+1996145={
+	name="Laine"
+	female=yes
+	dynasty=2918062 #Orav
+	culture=estonian
+	religion=lutheran
+	martial=4
+	diplomacy=7
+	stewardship=10
+	intrigue=8
+	learning=6
+	disallow_random_traits=yes
+	trait=midas_touched
+	trait=schemer
+	trait=patient
+	trait=envious
+	trait=deceitful
+	father=1996144
+	2555.4.25={birth=yes}
+	2599.1.12={death=yes}
+}
+1996146={
+	name="Tarmo"
+	dynasty=2918100 #Loo
+	culture=estonian
+	religion=lutheran
+	martial=6
+	diplomacy=6
+	stewardship=7
+	intrigue=6
+	learning=8
+	disallow_random_traits=yes
+	trait=martial_cleric
+	trait=erudite
+	trait=scholar
+	trait=poet
+	trait=charitable
+	2550.9.10={birth=yes}
+	2575.1.1={add_spouse=1996145}
+	2592.3.5={death=yes}
+}
+1996147={
+	name="Kalju"
+	dynasty=2918100 #Loo
+	culture=estonian
+	religion=lutheran
+	martial=7
+	diplomacy=3
+	stewardship=9
+	intrigue=4
+	learning=10
+	disallow_random_traits=yes
+	trait=mastermind_theologian
+	trait=pious
+	trait=physician
+	trait=charitable
+	trait=proud
+	father=1996006
+	2583.2.24={birth=yes}
+	2623.7.3={death=yes}
+}
+1996148={
+	name="Hannes"
+	dynasty=2918100 #Loo
+	culture=estonian
+	religion=lutheran
+	martial=6
+	diplomacy=9
+	stewardship=8
+	intrigue=6
+	learning=5
+	disallow_random_traits=yes
+	trait=elusive_shadow
+	trait=pious
+	trait=deceitful
+	trait=patient
+	trait=arbitrary
+	father=1996147
+	2599.2.24={birth=yes}
+	2631.7.3={death=yes}
+}
+1996149={
+	name="Ilmar"
+	dynasty=2918028 #Põder
+	culture=estonian
+	religion=lutheran
+	martial=6
+	diplomacy=9
+	stewardship=6
+	intrigue=7
+	learning=8
+	disallow_random_traits=yes
+	trait=charismatic_negotiator
+	trait=socializer
+	trait=familyperson
+	trait=pious
+	trait=content
+	father=1996147
+	2610.6.13={birth=yes}
+	2645.2.24={death=yes}
+}
+1996150={
+	name="Raivo"
+	dynasty=2918108 #Hirv
+	culture=estonian
+	religion=lutheran
+	martial=6
+	diplomacy=5
+	stewardship=7
+	intrigue=4
+	learning=7
+	disallow_random_traits=yes
+	trait=indulgent_wastrel
+	trait=brave
+	trait=ruthless
+	trait=authoritative
+	trait=cruel
+	trait=wroth
+	father=1996147
+	2613.5.24={birth=yes}
+	2649.11.12={death={death_reason=death_execution_hanging}}
+}
+1996151={
+	name="Meelis"
+	dynasty=2918028 #Põder
+	culture=estonian
+	religion=lutheran
+	martial=6
+	diplomacy=9
+	stewardship=6
+	intrigue=7
+	learning=8
+	disallow_random_traits=yes
+	trait=charismatic_negotiator
+	trait=socializer
+	trait=familyperson
+	trait=pious
+	trait=content
+	father=1996149
+	2627.6.13={birth=yes}
+	2649.3.13={death={death_reason=death_murder killer=1996150}}
+}
+1996152={
+	name="Jüri"
+	dynasty=2918108 #Hirv
+	culture=estonian
+	religion=lutheran
+	disallow_random_traits=yes
+	trait=scholarly_theologian
+	trait=deceitful
+	trait=content
+	trait=brave
+	trait=painter
+	father=1996150
+	2633.2.18={birth=yes}
+		2660.1.1={
+		effect={
+			set_character_flag=no_historical_family
+		}
+	}
+	2660.1.2={
+		effect={
+			add_weak_claim=e_baltic
+			add_weak_claim=k_estonia
+		}
+	}
+	2679.1.22={death=yes}
+}
+1996153={
+	name="Kaspar"
+	dynasty=2918028 #Põder
+	culture=estonian
+	religion=lutheran
+	martial=7
+	diplomacy=9
+	stewardship=6
+	intrigue=8
+	learning=5
+	disallow_random_traits=yes
+	trait=intricate_webweaver
+	trait=gregarious
+	trait=scarred
+	trait=humble
+	trait=temperate
+	father=1996149
+	2633.2.3={birth=yes}
+	2656.3.18={death=yes}
+}
+1996154={
+	name="Toomas"
+	dynasty=2918028 #Põder
+	culture=estonian
+	religion=lutheran
+	disallow_random_traits=yes
+	trait=thrifty_clerk
+	trait=stubborn
+	trait=shrewd
+	trait=diligent
+	trait=greedy
+	father=1996153
+	2649.8.14={birth=yes}
+	2704.1.17={death=yes}
+}
+1996155={
+	name="Paavo"
+	dynasty=2918108 #Hirv
+	culture=estonian
+	religion=lutheran
+	disallow_random_traits=yes
+	trait=skilled_tactician
+	trait=robust
+	trait=strong
+	trait=wroth
+	trait=envious
+	father=1996152
+	2652.9.15={birth=yes}
+	2712.2.17={death=yes}
+}
+1996156={
+	name="Matas"
+	dynasty=2916017 #Zilinskas
+	culture=lithuanian
+	religion=mariavite
+	disallow_random_traits=yes
+	trait=thrifty_clerk
+	trait=brave
+	trait=stubborn
+	trait=ambitious
+	father=1996011
+	2528.6.14={birth=yes}
+	2567.10.22={death=yes}
+}
+1996157={
+	name="Austeja"
+	female=yes
+	dynasty=2916017 #Zilinskas
+	culture=lithuanian
+	religion=mariavite
+	disallow_random_traits=yes
+	trait=grey_eminence
+	trait=deceitful
+	trait=ruthless
+	trait=familyperson
+	father=1996011
+	2529.3.27={birth=yes}
+	2582.4.7={death=yes}
+}
+1996158={
+	name="Giedrius"
+	dynasty=2916017 #Zilinskas
+	culture=lithuanian
+	religion=mariavite
+	disallow_random_traits=yes
+	trait=fortune_builder
+	trait=greedy
+	trait=temperate
+	trait=diligent
+	trait=twin
+	father=1996156
+	2548.8.15={birth=yes}
+	2591.12.1={death=yes}
+}
+1996159={
+	name="Giedre"
+	female=yes
+	dynasty=2916017 #Zilinskas
+	culture=lithuanian
+	religion=mariavite
+	disallow_random_traits=yes
+	trait=martial_cleric
+	trait=erudite
+	trait=wroth
+	trait=shrewd
+	trait=twin
+	father=1996156
+	2548.8.15={birth=yes}
+	2597.5.3={death=yes}
+}
+1996160={
+	name="Pilypas"
+	dynasty=2916017 #Zilinskas
+	culture=lithuanian
+	religion=mariavite
+	disallow_random_traits=yes
+	trait=elusive_shadow
+	trait=ruthless
+	trait=authoritative
+	trait=deceitful
+	father=1996158
+	2566.5.4={birth=yes}
+	2602.7.12={death=yes}
+}
+1996161={
+	name="Pilypas"
+	dynasty=2916017 #Zilinskas
+	culture=lithuanian
+	religion=mariavite
+	disallow_random_traits=yes
+	trait=naive_appeaser
+	trait=frail
+	trait=trusting
+	trait=kind
+	father=1996160
+	2586.9.12={birth=yes}
+	2606.12.25={death=yes}
+}
+1996162={
+	name="Vytautas"
+	dynasty=2916017 #Zilinskas
+	culture=lithuanian
+	religion=mariavite
+	disallow_random_traits=yes
+	trait=tough_soldier
+	trait=strong
+	trait=brave
+	trait=content
+	mother=1996159
+	2578.11.29={birth=yes}
+	2608.7.13={death=yes}
+}
+1996163={
+	name="Algimantas"
+	dynasty=2916017 #Zilinskas
+	culture=lithuanian
+	religion=mariavite
+	disallow_random_traits=yes
+	trait=brilliant_strategist
+	trait=genius
+	trait=ambitious
+	trait=just
+	mother=1996159
+	2582.3.19={birth=yes}
+	2622.6.16={death=yes}
+}
+1996164={
+	name="Matas"
+	dynasty=2916017 #Zilinskas
+	culture=lithuanian
+	religion=mariavite
+	disallow_random_traits=yes
+	trait=fortune_builder
+	trait=administrator
+	trait=temperate
+	trait=just
+	father=1996162
+	2600.12.1={birth=yes}
+	2628.2.10={death=yes}
+}
+1996165={
+	name="Regimantas"
+	dynasty=2916017 #Zilinskas
+	culture=lithuanian
+	religion=mariavite
+	disallow_random_traits=yes
+	trait=skilled_tactician
+	trait=lustful
+	trait=wroth
+	trait=robust
+	father=1996162
+	2602.6.4={birth=yes}
+	2636.11.5={death=yes}
+}
+1996166={
+	name="Viltaute"
+	female=yes
+	dynasty=2916017 #Zilinskas
+	culture=lithuanian
+	religion=mariavite
+	disallow_random_traits=yes
+	trait=skilled_tactician
+	trait=lustful
+	trait=wroth
+	trait=robust
+	father=1996162
+	2603.2.15={birth=yes}
+	2652.9.13={death=yes}
+}
+1996167={
+	name="Ninel"
+	female=yes
+	dynasty=1856092 #Ninelev
+	culture=kaliningradyets
+	religion=proletcult
+	disallow_random_traits=yes
+	trait=charismatic_negotiator
+	trait=pious
+	trait=fair
+	trait=socializer
+	trait=diligent
+	2493.8.1={birth=yes}
+	2538.9.16={death=yes}
+}
+1996168={
+	name="Kalinin"
+	dynasty=1856092 #Ninelev
+	culture=kaliningradyets
+	religion=proletcult
+	disallow_random_traits=yes
+	trait=tough_soldier
+	trait=brave
+	trait=zealous
+	trait=wroth
+	trait=temperate
+	trait=stubborn
+	mother=1996167
+	2513.11.6={birth=yes}
+	2564.2.14={death=yes}
+}
+1996169={
+	name="Dimitry"
+	dynasty=1856092 #Ninelev
+	culture=kaliningradyets
+	religion=proletcult
+	disallow_random_traits=yes
+	trait=midas_touched
+	trait=greedy
+	trait=just
+	trait=ambitious
+	trait=rude
+	trait=decietful
+	father=1996168
+	2553.3.26={birth=yes}
+	2600.6.22={death=yes}
+}
+1996170={
+	name="Tania"
+	female=yes
+	dynasty=1856092 #Ninelev
+	culture=kaliningradyets
+	religion=proletcult
+	disallow_random_traits=yes
+	trait=scholarly_theologian
+	trait=seductress
+	trait=charitable
+	trait=quick
+	trait=groomed
+	trait=gregarious
+	father=1996169
+	2585.9.31={birth=yes}
+	2621.1.30={add_trait=pneumonic}
+	2621.7.15={
+		death={death_reason=death_trait}
+	} # pneumonia
+}
+1996171={
+	name="Yevgeniya"
+	female=yes
+	dynasty=1856092 #Ninelev
+	culture=kaliningradyets
+	religion=proletcult
+	disallow_random_traits=yes
+	trait=flamboyant_schemer
+	trait=temperate
+	trait=envious
+	trait=gregarious
+	trait=proud
+	mother=1996167
+	2523.9.22={birth=yes}
+	2567.11.3={death=yes}
+}
+1996172={
+	name="Ninel"
+	female=yes
+	dynasty=1856092 #Ninelev
+	culture=kaliningradyets
+	religion=proletcult
+	disallow_random_traits=yes
+	trait=fortune_builder
+	trait=charitable
+	trait=erudite
+	trait=cynical
+	trait=rude
+	mother=1996171
+	2554.2.22={birth=yes}
+	2589.4.12={death=yes}
+}
+1996173={
+	name="Ninel"
+	female=yes
+	dynasty=1856092 #Ninelev
+	culture=kaliningradyets
+	religion=proletcult
+	disallow_random_traits=yes
+	trait=charismatic_negotiator
+	trait=trusting
+	trait=kind
+	trait=patient
+	trait=pious
+	mother=1996172
+	2573.4.11={birth=yes}
+	2615.2.3={death=yes}
+}
+1996174={
+	name="Sabina"
+	female=yes
+	dynasty=1856092 #Ninelev
+	culture=kaliningradyets
+	religion=proletcult
+	disallow_random_traits=yes
+	trait=martial_cleric
+	trait=frail
+	trait=erudite
+	trait=diligent
+	trait=cynical
+	mother=1996173
+	2595.9.22={birth=yes}
+	2650.11.30={death=yes}
+}
+1996175={
+	name="Olga"
+	female=yes
+	dynasty=1856092 #Ninelev
+	culture=kaliningradyets
+	religion=proletcult
+	disallow_random_traits=yes
+	trait=tough_soldier
+	trait=cruel
+	trait=wroth
+	trait=temperate
+	trait=zealous
+	mother=1996173
+	2614.12.25={birth=yes}
+	2684.1.2={death=yes}
+}
+1996176={
+	name="Lev"
+	dynasty=1856092 #Ninelev
+	culture=kaliningradyets
+	religion=proletcult
+	disallow_random_traits=yes
+	trait=brilliant_strategist
+	trait=brave
+	trait=winter_soldier
+	trait=rough_terrain_leader
+	trait=ambitious
+	trait=stubborn
+	mother=1996175
+	give_nickname=nick_the_bear
+	2640.1.14={birth=yes}
+	2689.9.3={death=yes}
+}
