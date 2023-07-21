@@ -1038,7 +1038,6 @@ feudal_governments = {
 			feudal_government
 			diwan_government
 			ghazi_government
-			hereditary_theocracy_government
 			theocratic_feudal_government
 
 		}
@@ -1069,7 +1068,6 @@ feudal_governments = {
 			NOT = { is_government_potential = romanipen_government }
 			NOT = { is_government_potential = cenobitic_government }
 			NOT = { is_government_potential = theocratic_feudal_government }
-			NOT = { is_government_potential = hereditary_theocracy_government }
 		}
 		
 		character_modifier = {
