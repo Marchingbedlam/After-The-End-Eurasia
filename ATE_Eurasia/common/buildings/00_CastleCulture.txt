@@ -1820,17 +1820,21 @@ castle = {
 		}
 		is_active_trigger = {
 			ROOT = {
-				culture = portuguese 
-				culture = azorean 
-				culture = madeiran
+				OR = {
+					culture = portuguese 
+					culture = azorean 
+					culture = madeiran
+				}
 			}
 		} 
 		trigger = { 
 			TECH_CASTLE_CONSTRUCTION = 0
 			ROOT = {
-				culture = portuguese 
-				culture = azorean 
-				culture = madeiran
+				OR = {
+					culture = portuguese 
+					culture = azorean 
+					culture = madeiran
+				}
 			}
 		}
 		prerequisites = { ca_wall_1 }
@@ -1855,17 +1859,21 @@ castle = {
 		}
 		is_active_trigger = {
 			ROOT = {
-				culture = portuguese 
-				culture = azorean 
-				culture = madeiran
+				OR = {
+					culture = portuguese 
+					culture = azorean 
+					culture = madeiran
+				}
 			}
 		} 
 		trigger = { 
 			TECH_CASTLE_CONSTRUCTION = 1
 			ROOT = {
-				culture = portuguese 
-				culture = azorean 
-				culture = madeiran
+				OR = {
+					culture = portuguese 
+					culture = azorean 
+					culture = madeiran
+				}
 			}
 		}
 		upgrades_from = ca_culture_portuguese_1
@@ -1891,17 +1899,21 @@ castle = {
 		}
 		is_active_trigger = {
 			ROOT = {
-				culture = portuguese 
-				culture = azorean 
-				culture = madeiran
+				OR = {
+					culture = portuguese 
+					culture = azorean 
+					culture = madeiran
+				}
 			}
 		} 
 		trigger = { 
 			TECH_CASTLE_CONSTRUCTION = 2
 			ROOT = {
-				culture = portuguese 
-				culture = azorean 
-				culture = madeiran
+				OR = {
+					culture = portuguese 
+					culture = azorean 
+					culture = madeiran
+				}
 			}
 		}
 		upgrades_from = ca_culture_portuguese_2
@@ -1928,17 +1940,21 @@ castle = {
 		}
 		is_active_trigger = {
 			ROOT = {
-				culture = portuguese 
-				culture = azorean 
-				culture = madeiran
+				OR = {
+					culture = portuguese 
+					culture = azorean 
+					culture = madeiran
+				}
 			}
 		} 
 		trigger = { 
 			TECH_CASTLE_CONSTRUCTION = 4
 			ROOT = {
-				culture = portuguese 
-				culture = azorean 
-				culture = madeiran
+				OR = {
+					culture = portuguese 
+					culture = azorean 
+					culture = madeiran
+				}
 			}
 		}
 		upgrades_from = ca_culture_portuguese_3
@@ -3888,7 +3904,7 @@ castle = {
 			}
 			OR = {
 						culture = armenian
-						culture = georgiann
+						culture = georgian
 				has_building = ca_culture_mountaincaucasian_1
 				has_building = ca_culture_mountaincaucasian_2
 			}
