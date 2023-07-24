@@ -4249,7 +4249,20 @@
 		}
 	}
 }
-1727112 = { name = "Lisouski" culture = belarusian used_for_random = no }
+1727112 = { name = "Lisouski" culture = belarusian used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 4
+			texture_internal = 29
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 1729000 = { name = "Thirummukhathu-Varma" culture = malayali used_for_random = no
 	coat_of_arms = { 
@@ -7645,7 +7658,21 @@
 1856051 = { name = "Doroshok" culture = kaliningradyets}
 1856052 = { name = "Isayenko" culture = kaliningradyets}
 1856053 = { name = "Rudnikov" culture = kaliningradyets}
-1856054 = { name = "Potolkov" culture = kaliningradyets}
+1856054 = { name = "Potolkov" culture = kaliningradyets
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 4
+			texture_internal = 30
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+
 1856055 = { name = "Grishkovets" culture = kaliningradyets}
 1856056 = { name = "Shvoren" culture = kaliningradyets}
 1856057 = { name = "Revin" culture = kaliningradyets}
