@@ -85,7 +85,14 @@
 	dynasty=2110000 #Al-Makki
 	culture=umani
 	religion=nazari
+	trait=scholarly_theologian
+	trait=one_eyed
+	trait=mystic
+	trait=deceiftful
+	trait=zealous
+	trait=scarred_high
 	2638.1.1={birth=yes}
+	2660.1.1={give_nickname=nick_the_strange}
 	2680.1.1={death=yes}
 }
 2110001={ #King of Oman
@@ -93,6 +100,12 @@
 	dynasty=2110001 #Al-Zubayr
 	culture=umani
 	religion=ibadi
+	trait=intricate_webweaver
+	trait=gregarious
+	trait=attractive
+	trait=kind
+	trait=groomed
+	disallow_random_trait=yes
 	2638.1.1={birth=yes}
 	2680.1.1={death=yes}
 }
@@ -101,6 +114,13 @@
 	dynasty=2110002 #Al-Harithi
 	culture=umani
 	religion=nazari
+	trait=martial_cleric
+	trait=slow
+	trait=temperate
+	trait=honest
+	trait=cynical
+	trait=stubborn
+	trait=ambitious
 	2638.1.1={birth=yes}
 	2680.1.1={death=yes}
 }
@@ -109,6 +129,11 @@
 	dynasty=2110064 #Ramdas
 	culture=gujarati
 	religion=ibadi
+	trait=thrifty_clerk
+	trait=gardener
+	trait=patient
+	trait=cynical
+	trait=stubborn
 	2638.1.1={
 		birth=yes 
 		culture=umani}
@@ -119,6 +144,13 @@
 	dynasty=2110065 #Zigdali
 	culture=baloch
 	religion=ibadi
+	trait=skilled_tactician
+	trait=hunter
+	trait=charitable
+	trait=patient
+	trait=gluttonous
+	trait=trusting
+	trait=sayyid
 	2638.1.1={
 		birth=yes 
 		culture=umani}
@@ -129,6 +161,12 @@
 	dynasty=2110066 #Al-Balushi
 	culture=baloch
 	religion=ibadi
+	trait=underhanded_rogue
+	trait=temperate
+	trait=weak
+	trait=homosexual
+	trait=attractive
+	trait=poet
 	2638.1.1={
 		birth=yes 
 		culture=umani}
@@ -139,6 +177,13 @@
 	dynasty=2121000 #Al-Shanfari
 	culture=dhofari
 	religion=an_nahar
+	trait=skilled_tactician
+	trait=lustful
+	trait=hunter
+	trait=hedonist
+	trait=kind
+	trait=shrewd
+	disallow_random_trait=yes
 	2638.1.1={birth=yes}
 	2680.1.1={death=yes}
 }
@@ -147,6 +192,13 @@
 	dynasty=2121001 #Al-Hina'i
 	culture=dhofari
 	religion=ibadi
+	trait=martial_cleric
+	trait=clubfooted
+	trait=quick
+	trait=proud
+	trait=arbitrary
+	trait=hajjaj
+	disallow_random_trait=yes
 	2638.1.1={birth=yes}
 	2680.1.1={death=yes}
 }
