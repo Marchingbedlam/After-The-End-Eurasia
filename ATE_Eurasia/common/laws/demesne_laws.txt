@@ -2622,9 +2622,9 @@ laws = {
 				has_crown_law_title = no
 				crownlaw_title = { NOT = { title = PREV } }
 			}
-			OR = {
-				has_law = succ_democratic_elective
-			}
+			#OR = {
+			#	has_law = succ_democratic_elective
+			#}
 			# These are a republican thing
 			holder_scope = {
 				OR = {
@@ -2703,9 +2703,9 @@ laws = {
 				has_crown_law_title = no
 				crownlaw_title = { NOT = { title = PREV } }
 			}
-			OR = {
-				has_law = succ_democratic_elective
-			}
+			#OR = {
+			#	has_law = succ_democratic_elective
+			#}
 			# These are a republican thing
 			holder_scope = {
 				OR = {
@@ -2772,9 +2772,9 @@ laws = {
 				has_crown_law_title = no
 				crownlaw_title = { NOT = { title = PREV } }
 			}
-			OR = {
-				has_law = succ_democratic_elective
-			}
+			#OR = {
+			#	has_law = succ_democratic_elective
+			#}
 			# These are a republican thing
 			holder_scope = {
 				OR = {
@@ -2833,9 +2833,9 @@ laws = {
 				has_crown_law_title = no
 				crownlaw_title = { NOT = { title = PREV } }
 			}
-			OR = {
-				has_law = succ_democratic_elective
-			}
+			#OR = {
+			#	has_law = succ_democratic_elective
+			#}
 			# These are a republican thing
 			holder_scope = {
 				OR = {
