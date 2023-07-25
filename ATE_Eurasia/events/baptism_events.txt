@@ -14,7 +14,7 @@ character_event = {
 		piety = 100
 			random = {
 		    chance = 2
-			{death = { death_reason = death_accident_drowning }}
+			death = { death_reason = death_accident_drowning }
 		}
 			random = {
 		    chance = 10
@@ -35,7 +35,7 @@ character_event = {
 		}
 			random = {
 		    chance = 2
-			{death = { death_reason = death_accident_drowning }}
+			death = { death_reason = death_accident_drowning }
 		}
 			random = {
 		    chance = 10
