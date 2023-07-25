@@ -502,7 +502,7 @@ long_character_event = {
 	}
 	option = { #Give to people 
 	    name = EVTOPTBarmenian_apostolic.6
-		cash = -15
+		wealth = -15
 		random_list = { 
 		    10 = {
 			    piety = 20
