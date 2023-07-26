@@ -1,163 +1,5 @@
 namespace = lipka
 
-# Child wants to join the Lipkas (Child)
-character_event = {
-	id = lipka.3109
-	hide_window = yes
-	
-	is_triggered_only = yes
-	
-	ai = yes
-	min_age = 16
-	max_age = 40
-	capable_only = yes
-	prisoner = no
-	OR = {
-		culture_group = turkic_east
-		culture_group = turkic_west
-	}
-	has_dlc = "The Old Gods"
-	
-	trigger = {
-		is_landed = no
-		in_command = no
-		NOR = { 
-			trait = lipka 
-			has_character_flag = wants_lipka
-			has_character_flag = denied_lipka
-		}
-		AND = { 
-			OR = { #Updated: New gender check for ROOT, to account for special circumstances...
-				has_game_rule = { # Game rules are all on!
-					name = gender
-					value = all
-				}
-				AND = { # The Old Gods version...
-					is_female = no
-					gender_equality_trigger = no
-				}
-				AND = { # Status of women version, allowing women in...
-					is_female = yes
-					liege = { primary_title = { has_law = status_of_women_4 } }
-				}
-				AND = { # Boys always dream of fighting, when not explicitly blocked from it
-					is_female = no
-					NOT = { has_religion_feature = religion_matriarchal } 
-				}
-				AND = { # Enatic Clans version (no boys allowed)...
-					is_female = yes
-					has_religion_feature = religion_matriarchal
-				}
-			}
-			OR = { # Regardless, they might ask either parent...
-				father = {
-					is_alive = yes
-					OR = {
-						culture_group = turkic_east
-						culture_group = turkic_west 
-					}
-					is_ruler = yes
-					is_liege_of = ROOT
-					prisoner = no
-					NOT = { trait = incapable }
-					ROOT = { host = { character = PREVPREV } }
-				}
-				mother = {
-					is_alive = yes
-					OR = {
-						culture_group = turkic_east
-						culture_group = turkic_west 
-					}
-					is_ruler = yes
-					is_liege_of = ROOT
-					prisoner = no
-					NOT = { trait = incapable }
-					ROOT = { host = { character = PREVPREV } }
-				}
-			}
-		}
-		NOT = { is_inaccessible_trigger = yes }
-	}
-	
-	weight_multiplier = {
-		days = 1
-		
-		modifier = {
-			factor = 1.5
-			trait = ambitious
-		}
-		modifier = {
-			factor = 1.5
-			trait = brave
-		}
-		modifier = {
-			factor = 1.75
-			trait = proud
-		}
-		modifier = {
-			factor = 1.75
-			trait = impaler
-		}
-		modifier = {
-			factor = 0.5
-			trait = slothful
-		}
-		modifier = {
-			factor = 0.5
-			trait = content
-		}
-		modifier = {
-			factor = 0.5
-			is_primary_heir = yes
-		}
-		modifier = {
-			factor = 0.25
-			trait = craven
-		}
-		interesting_courtier_outcome_score = yes
-	}
-	
-	immediate = {
-		random_list = { # Send event to parent-liege...
-			50 = {
-				trigger = {
-					father = {
-						is_alive = yes
-						OR = {
-							culture_group = turkic_east
-							culture_group = turkic_west 
-						}
-						is_ruler = yes
-						is_liege_of = ROOT
-						prisoner = no
-						NOT = { trait = incapable }
-						ROOT = { host = { character = PREVPREV } }
-					}
-				}
-				father = { character_event = { id = lipka.3110 } }
-			}
-			50 = {
-				trigger = {
-					mother = {
-						is_alive = yes
-						OR = {
-							culture_group = turkic_east
-							culture_group = turkic_west 
-						}
-						is_ruler = yes
-						is_liege_of = ROOT
-						prisoner = no
-						NOT = { trait = incapable }
-						ROOT = { host = { character = PREVPREV } }
-					}
-				}
-				mother = { character_event = { id = lipka.3110 } }
-			}			
-		}
-		set_character_flag = wants_lipka
-	}
-}
-
 # Lipka Captain gets Lipka trait
 character_event = {
 	id = lipka.3105
@@ -964,7 +806,7 @@ character_event = {
 
 # Setup: Child returns scarred but seasoned (Child)
 character_event = {
-	id = LIPKA.3114
+	id = lipka.3114
 	hide_window = yes
 	
 	is_triggered_only = yes
@@ -977,14 +819,14 @@ character_event = {
 					factor = 100
 					father = { ai = no }
 				}
-				father = { character_event = { id = LIPKA.3115 } }
+				father = { character_event = { id = lipka.3115 } }
 			}
 			50 = {
 				modifier = {
 					factor = 100
 					mother = { ai = no }
 				}
-				mother = { character_event = { id = LIPKA.3115 } }
+				mother = { character_event = { id = lipka.3115 } }
 			}
 		}
 		clr_character_flag = serving_lipka
