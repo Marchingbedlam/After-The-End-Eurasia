@@ -5074,7 +5074,7 @@
 	religion=mariavite
 	disallow_random_traits=yes
 	trait=brilliant_strategist
-	trait=self_crowned
+	trait=crowned_by_myself
 	trait=reclusive
 	trait=genius
 	trait=drunkard
@@ -5672,14 +5672,14 @@
 	trait=stubborn
 	trait=greedy
 	2610.10.3={birth=yes}
-	2640.5.4={add_spouse=212605}
+	2640.5.4={add_spouse=212608}
 	2664.1.1={death={
         death_reason=death_battle
         killer=212602
 		}
 	}
 }
-212605={
+212608={
 	name="Maria"
 	culture=goral
 	religion=mariavite
