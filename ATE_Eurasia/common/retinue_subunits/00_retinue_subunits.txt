@@ -840,7 +840,7 @@ RETTYPE_CUL_CAUCASUS =
 	potential = {
 		is_nomadic = no
 		culture_group = caucasian
-		NOT = {
+		NOR = {
 			culture = armenian
 			culture = georgian
 			}
@@ -861,9 +861,11 @@ RETTYPE_CUL_FALX =
 	
 	potential = {
 		is_nomadic = no
-		culture = romanian
-		culture = transylvanian
-		culture = moldovan
+		OR = {
+			culture = romanian
+			culture = transylvanian
+			culture = moldovan
+		}
 	}
 	
 	modifier = {
