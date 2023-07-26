@@ -93,7 +93,7 @@ character_event = {
                 random_list = {
                     20 = {
                         trigger = {
-							job_chabeshacellor = {
+							job_chancellor = {
 								OR = {
 									culture_group = habesha
 									culture_group = cushitic
@@ -102,7 +102,7 @@ character_event = {
 							}
 						}
 
-                        job_chabeshacellor = {
+                        job_chancellor = {
                             #Picks a reason for visiting
                             set_character_flag = eg_diplomatic_visit
                             
@@ -319,7 +319,7 @@ letter_event = {
     	detract_grace_major_effect = yes
 
     	event_target:ethiopian_guest = {
-            show_scope_chabeshage = no
+            show_scope_change = no
     		opinion = {
                 who = ROOT
     			modifier = opinion_offended
@@ -327,9 +327,9 @@ letter_event = {
     		}
     	}
     	event_target:ethiopian_guest = { 
-            show_scope_chabeshage = no
+            show_scope_change = no
             liege = {
-                show_scope_chabeshage = no
+                show_scope_change = no
         		opinion = {
                     who = ROOT
         			modifier = opinion_offended
@@ -355,8 +355,8 @@ character_event = {
         FROM = {
             #Save corresponding councilor
             if = {
-                limit = { ROOT = { has_job_title = job_chabeshacellor } }
-                job_chabeshacellor = { save_event_target_as = corresponding_councilor }
+                limit = { ROOT = { has_job_title = job_chancellor } }
+                job_chancellor = { save_event_target_as = corresponding_councilor }
             }
             if = {
                 limit = { ROOT = { has_job_title = job_marshal } }
@@ -377,7 +377,7 @@ character_event = {
                     modifier = {
                         OR = {
                             event_target:corresponding_councilor = {
-                                has_job_title = job_chabeshacellor
+                                has_job_title = job_chancellor
                                 NOT = { diplomacy = 8 }
                             }                       
                             event_target:corresponding_councilor = {
@@ -1228,7 +1228,7 @@ character_event = {
 
 
         event_target:adventurous_spirit = {
-            #show_scope_chabeshage = no
+            #show_scope_change = no
             check_likes_or_dislikes_THIS_effect = yes
             add_character_modifier = {
                 name = out_traveling
@@ -1244,7 +1244,7 @@ character_event = {
 
 
         event_target:back_up_target_1 = {
-            #show_scope_chabeshage = no
+            #show_scope_change = no
             check_likes_or_dislikes_THIS_effect = yes
             add_character_modifier = {
                 name = out_traveling
@@ -1264,7 +1264,7 @@ character_event = {
 
 
         event_target:back_up_target_2 = {
-            #show_scope_chabeshage = no
+            #show_scope_change = no
             check_likes_or_dislikes_THIS_effect = yes
             add_character_modifier = {
                 name = out_traveling
@@ -1819,7 +1819,7 @@ character_event = { # Things went great
             limit = { has_character_flag = chinese_traveler_artifact }
             tooltip = {
                 event_target:chinese_artifact = {
-                    show_scope_chabeshage = no
+                    show_scope_change = no
                     transfer_artifact = {
                         to = ROOT
                         from = FROM
@@ -4290,7 +4290,7 @@ letter_event = {
             limit = { has_character_flag = trade_competition_winner_artifact }
             tooltip = {
                 event_target:chinese_artifact = { 
-                    show_scope_chabeshage = no
+                    show_scope_change = no
                     transfer_artifact = {
                         from = FROM
                         to = ROOT
@@ -5891,7 +5891,7 @@ character_event = {
         custom_tooltip = { text = EVTOPTA_ED_10032_TT }
 
         event_target:chinese_administrator = {
-            show_scope_chabeshage = no
+            show_scope_change = no
             if = {
                 limit = {
                     offmap_china = {
@@ -5938,7 +5938,7 @@ character_event = {
         custom_tooltip = { text = EVTOPTA_ED_10032_TT }
 
         event_target:chinese_master_engineer = { 
-            show_scope_chabeshage = no
+            show_scope_change = no
             if = {
                 limit = {
                     offmap_china = {
@@ -5967,7 +5967,7 @@ character_event = {
         custom_tooltip = { text = EVTOPTA_ED_10032_TT } #(yes, the same as opt A)
         
         event_target:chinese_strategist = {
-            show_scope_chabeshage = no
+            show_scope_change = no
             if = {
                 limit = { 
                     can_hold_title = title_commander 
@@ -5993,7 +5993,7 @@ character_event = {
         custom_tooltip = { text = EVTOPTA_ED_10032_TT }
         
         event_target:chinese_doctor = {
-            show_scope_chabeshage = no
+            show_scope_change = no
             give_minor_title = title_court_physician
         }
 

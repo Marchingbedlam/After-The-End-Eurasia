@@ -119,12 +119,10 @@ narrative_event = {
 		}
 		name = EVTOPT_praise_buddha
 		add_character_modifier = { name = resolute_peace years = 1 }
-		AND = {
-			clr_character_flag = { buddhist_mahayana_sutra_1 }
-			clr_character_flag = { buddhist_mahayana_sutra_2 }
-			clr_character_flag = { buddhist_mahayana_sutra_3 }
-			clr_character_flag = { buddhist_mahayana_sutra_4 }
-		}
+		clr_character_flag = buddhist_mahayana_sutra_1
+		clr_character_flag = buddhist_mahayana_sutra_2
+		clr_character_flag = buddhist_mahayana_sutra_3
+		clr_character_flag = buddhist_mahayana_sutra_4
 		narrative_event = { id = budevents.6 days = 2 }
 	}
 	option = {
@@ -133,12 +131,10 @@ narrative_event = {
 		}
 		name = EVTOPT_praise_buddha
 		add_character_modifier = { name = wise_sayings years = 1 }
-		AND = {
-			clr_character_flag = { buddhist_mahayana_sutra_1 }
-			clr_character_flag = { buddhist_mahayana_sutra_2 }
-			clr_character_flag = { buddhist_mahayana_sutra_3 }
-			clr_character_flag = { buddhist_mahayana_sutra_4 }
-		}
+		clr_character_flag = buddhist_mahayana_sutra_1
+		clr_character_flag = buddhist_mahayana_sutra_2
+		clr_character_flag = buddhist_mahayana_sutra_3
+		clr_character_flag = buddhist_mahayana_sutra_4
 		narrative_event = { id = budevents.6 days = 2 }
 	}
 	option = {
@@ -147,12 +143,10 @@ narrative_event = {
 		}
 		name = EVTOPT_praise_buddha
 		add_character_modifier = { name = karmic_fury years = 1 }
-		AND = {
-			clr_character_flag = { buddhist_mahayana_sutra_1 }
-			clr_character_flag = { buddhist_mahayana_sutra_2 }
-			clr_character_flag = { buddhist_mahayana_sutra_3 }
-			clr_character_flag = { buddhist_mahayana_sutra_4 }
-		}
+		clr_character_flag = buddhist_mahayana_sutra_1
+		clr_character_flag = buddhist_mahayana_sutra_2
+		clr_character_flag = buddhist_mahayana_sutra_3
+		clr_character_flag = buddhist_mahayana_sutra_4
 		narrative_event = { id = budevents.6 days = 2 }
 	}
 	option = {
@@ -161,12 +155,10 @@ narrative_event = {
 		}
 		name = EVTOPT_praise_buddha
 		add_character_modifier = { name = tending_lotus years = 1 }
-		AND = {
-			clr_character_flag = { buddhist_mahayana_sutra_1 }
-			clr_character_flag = { buddhist_mahayana_sutra_2 }
-			clr_character_flag = { buddhist_mahayana_sutra_3 }
-			clr_character_flag = { buddhist_mahayana_sutra_4 }
-		}
+		clr_character_flag = buddhist_mahayana_sutra_1
+		clr_character_flag = buddhist_mahayana_sutra_2
+		clr_character_flag = buddhist_mahayana_sutra_3
+		clr_character_flag = buddhist_mahayana_sutra_4
 		narrative_event = { id = budevents.6 days = 2 }
 	}
 }
@@ -207,12 +199,10 @@ narrative_event = {
 		}
 		name = EVTOPT_praise_buddha
 		add_character_modifier = { name = resolute_peace years = 1 }
-		AND = {
-			clr_character_flag = { buddhist_theravada_sutra_1 }
-			clr_character_flag = { buddhist_theravada_sutra_2 }
-			clr_character_flag = { buddhist_theravada_sutra_3 }
-			clr_character_flag = { buddhist_theravada_sutra_4 }
-		}
+		clr_character_flag = buddhist_theravada_sutra_1
+		clr_character_flag = buddhist_theravada_sutra_2
+		clr_character_flag = buddhist_theravada_sutra_3
+		clr_character_flag = buddhist_theravada_sutra_4
 		narrative_event = { id = budevents.6 days = 2 }
 	}
 	option = {
@@ -221,12 +211,10 @@ narrative_event = {
 		}
 		name = EVTOPT_praise_buddha
 		add_character_modifier = { name = wise_sayings years = 1 }
-		AND = {
-			clr_character_flag = { buddhist_theravada_sutra_1 }
-			clr_character_flag = { buddhist_theravada_sutra_2 }
-			clr_character_flag = { buddhist_theravada_sutra_3 }
-			clr_character_flag = { buddhist_theravada_sutra_4 }
-		}
+		clr_character_flag = buddhist_theravada_sutra_1
+		clr_character_flag = buddhist_theravada_sutra_2
+		clr_character_flag = buddhist_theravada_sutra_3
+		clr_character_flag = buddhist_theravada_sutra_4
 		narrative_event = { id = budevents.6 days = 2 }
 	}
 	option = {
@@ -235,12 +223,10 @@ narrative_event = {
 		}
 		name = EVTOPT_praise_buddha
 		add_character_modifier = { name = karmic_fury years = 1 }
-		AND = {
-			clr_character_flag = { buddhist_theravada_sutra_1 }
-			clr_character_flag = { buddhist_theravada_sutra_2 }
-			clr_character_flag = { buddhist_theravada_sutra_3 }
-			clr_character_flag = { buddhist_theravada_sutra_4 }
-		}
+		clr_character_flag = buddhist_theravada_sutra_1
+		clr_character_flag = buddhist_theravada_sutra_2
+		clr_character_flag = buddhist_theravada_sutra_3
+		clr_character_flag = buddhist_theravada_sutra_4
 		narrative_event = { id = budevents.6 days = 2 }
 	}
 	option = {
@@ -249,12 +235,10 @@ narrative_event = {
 		}
 		name = EVTOPT_praise_buddha
 		add_character_modifier = { name = tending_lotus years = 1 }
-		AND = {
-			clr_character_flag = { buddhist_theravada_sutra_1 }
-			clr_character_flag = { buddhist_theravada_sutra_2 }
-			clr_character_flag = { buddhist_theravada_sutra_3 }
-			clr_character_flag = { buddhist_theravada_sutra_4 }
-		}
+		clr_character_flag = buddhist_theravada_sutra_1
+		clr_character_flag = buddhist_theravada_sutra_2
+		clr_character_flag = buddhist_theravada_sutra_3
+		clr_character_flag = buddhist_theravada_sutra_4
 		narrative_event = { id = budevents.6 days = 2 }
 	}
 }
@@ -383,12 +367,10 @@ narrative_event = {
 		}
 		name = EVTOPT_praise_buddha
 		add_character_modifier = { name = resolute_peace years = 1 }
-		AND = {
-			clr_character_flag = { buddhist_tibetan_sutra_1 }
-			clr_character_flag = { buddhist_tibetan_sutra_2 }
-			clr_character_flag = { buddhist_tibetan_sutra_3 }
-			clr_character_flag = { buddhist_tibetan_sutra_4 }
-		}
+		clr_character_flag = buddhist_tibetan_sutra_1
+		clr_character_flag = buddhist_tibetan_sutra_2
+		clr_character_flag = buddhist_tibetan_sutra_3
+		clr_character_flag = buddhist_tibetan_sutra_4
 		narrative_event = { id = budevents.6 days = 2 }
 	}
 	option = {
@@ -397,12 +379,10 @@ narrative_event = {
 		}
 		name = EVTOPT_praise_buddha
 		add_character_modifier = { name = wise_sayings years = 1 }
-		AND = {
-			clr_character_flag = { buddhist_tibetan_sutra_1 }
-			clr_character_flag = { buddhist_tibetan_sutra_2 }
-			clr_character_flag = { buddhist_tibetan_sutra_3 }
-			clr_character_flag = { buddhist_tibetan_sutra_4 }
-		}
+		clr_character_flag = buddhist_tibetan_sutra_1
+		clr_character_flag = buddhist_tibetan_sutra_2
+		clr_character_flag = buddhist_tibetan_sutra_3
+		clr_character_flag = buddhist_tibetan_sutra_4
 		narrative_event = { id = budevents.6 days = 2 }
 	}
 	option = {
@@ -411,12 +391,10 @@ narrative_event = {
 		}
 		name = EVTOPT_praise_buddha
 		add_character_modifier = { name = karmic_fury years = 1 }
-		AND = {
-			clr_character_flag = { buddhist_tibetan_sutra_1 }
-			clr_character_flag = { buddhist_tibetan_sutra_2 }
-			clr_character_flag = { buddhist_tibetan_sutra_3 }
-			clr_character_flag = { buddhist_tibetan_sutra_4 }
-		}
+		clr_character_flag = buddhist_tibetan_sutra_1
+		clr_character_flag = buddhist_tibetan_sutra_2
+		clr_character_flag = buddhist_tibetan_sutra_3
+		clr_character_flag = buddhist_tibetan_sutra_4
 		narrative_event = { id = budevents.6 days = 2 }
 	}
 	option = {
@@ -425,12 +403,10 @@ narrative_event = {
 		}
 		name = EVTOPT_praise_buddha
 		add_character_modifier = { name = tending_lotus years = 1 }
-		AND = {
-			clr_character_flag = { buddhist_tibetan_sutra_1 }
-			clr_character_flag = { buddhist_tibetan_sutra_2 }
-			clr_character_flag = { buddhist_tibetan_sutra_3 }
-			clr_character_flag = { buddhist_tibetan_sutra_4 }
-		}
+		clr_character_flag = buddhist_tibetan_sutra_1
+		clr_character_flag = buddhist_tibetan_sutra_2
+		clr_character_flag = buddhist_tibetan_sutra_3
+		clr_character_flag = buddhist_tibetan_sutra_4
 		narrative_event = { id = budevents.6 days = 2 }
 	}
 }
@@ -1068,10 +1044,11 @@ character_event = {
 character_event = {
 	id = budevents.121
 	desc = budevent121_desc
-	has_character_modifier = celebrating_vesak
 	war = yes
 	
 	is_triggered_only = yes
+	
+	trigger = { has_character_modifier = celebrating_vesak }
 	
 	mean_time_to_happen = {
 		days = 1
