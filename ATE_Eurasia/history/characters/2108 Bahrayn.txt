@@ -3,6 +3,13 @@
 	dynasty=2108000 #Al-Dabbagh
 	culture=bahrayni
 	religion=ahl_as_salaf
+	trait=tough_soldier
+	trait=sayyid
+	trait=just
+	trait=brave
+	trait=rude
+	trait=distractible
+	disallow_random_traits=yes
 	2641.11.15={birth=yes}
 	2680.1.1={death=yes}
 }
@@ -11,6 +18,13 @@
 	dynasty=2108001 #Ansari
 	culture=bahrayni
 	religion=nazari
+	trait=elusive_shadow
+	trait=lustful
+	trait=slothful
+	trait=dull
+	trait=gregarious
+	trait=cruel
+	disallow_random_traits=yes
 	2634.8.9={birth=yes}
 	2680.1.1={death=yes}
 }
@@ -19,6 +33,12 @@
 	dynasty=2108002 #Al-Khawaja
 	culture=bahrayni
 	religion=nazari
+	trait=flamboyant_schemer
+	trait=deceitful
+	trait=wroth
+	trait=uncouth
+	trait=arbitrary
+	disallow_random_traits=yes
 	2642.4.6={birth=yes}
 	2680.1.1={death=yes}
 }
@@ -27,6 +47,12 @@
 	dynasty=2108003 #Al-Jamri
 	culture=bahrayni
 	religion=shiite
+	trait=intricate_webweaver
+	trait=lustful
+	trait=charitable
+	trait=seducer
+	trait=hajjaj
+	disallow_random_traits=yes
 	2608.4.17={birth=yes}
 	2680.1.1={death=yes}
 }
@@ -35,6 +61,15 @@
 	dynasty=2108004 #Al-Samahiji
 	culture=bahrayni
 	religion=shiite
+	trait=mastermind_theologian
+	trait=legit_bastard
+	trait=schemer
+	trait=painter
+	trait=pious
+	trait=hajjaj
+	trait=brave
+	trait=humble
+	disallow_random_traits=yes
 	2619.4.6={birth=yes}
 	2680.1.1={death=yes}
 }
@@ -43,6 +78,13 @@
 	dynasty=2108005 #Al-Sulaiti
 	culture=bahrayni
 	religion=ahl_as_salaf
+	trait=thrifty_clerk
+	trait=ambitious
+	trait=administrator
+	trait=sayyid
+	trait=hafiz
+	trait=diligent
+	disallow_random_traits=yes
 	2631.12.20={birth=yes}
 	2680.1.1={death=yes}
 }
@@ -51,6 +93,12 @@
 	dynasty=2108006 #Al-Qamish
 	culture=bahrayni
 	religion=nazari
+	trait=martial_cleric
+	trait=bisexual
+	trait=chaste
+	trait=content
+	trait=paranoid
+	disallow_random_traits=yes
 	2638.1.1={birth=yes}
 	2680.1.1={death=yes}
 }
@@ -59,6 +107,13 @@
 	dynasty=2108011 #Al Matrooshi
 	culture=bahrayni
 	religion=nazari
+	trait=tough_soldier
+	trait=rude
+	trait=familyperson
+	trait=wroth
+	trait=zealous
+	trait=sayyid
+	disallow_random_traits=yes
 	2648.12.1={birth=yes}
 	2649.1.1={culture=sabir}
 	2680.1.1={death=yes}
@@ -68,6 +123,13 @@
 	dynasty=2108008 #Kartha
 	culture=bahrayni
 	religion=nazari
+	trait=scholarly_theologian
+	trait=sympathy_pagans
+	trait=scholar
+	trait=temperate
+	trait=gamer
+	trait=groomed
+	disallow_random_traits=yes
 	2632.2.14={birth=yes}
 	2680.1.1={death=yes}
 }
@@ -76,6 +138,12 @@
 	dynasty=2171149 #Jeevanandham
 	culture=sabir
 	religion=nazari
+	trait=brilliant_strategist
+	trait=strategist
+	trait=left_handed
+	trait=diligent
+	trait=authoritative
+	disallow_random_traits=yes
 	2637.12.13={birth=yes}
 	2680.1.1={death=yes}
 }
@@ -84,6 +152,12 @@
 	dynasty=2171004 #Mangalus
 	culture=sabir
 	religion=ruhi
+	trait=martial_cleric
+	trait=humble
+	trait=slothful
+	trait=stubborn
+	trait=familyperson
+	disallow_random_traits=yes
 	2642.4.12={birth=yes}
 	2680.1.1={death=yes}
 }
@@ -92,6 +166,13 @@
 	dynasty=2108009 #Al Maktoum
 	culture=bahrayni
 	religion=ruhi
+	trait=thrifty_clerk
+	trait=gluttonous
+	trait=sympathy_old_world_cults
+	trait=cynical
+	trait=arbitrary
+	trait=kind
+	disallow_random_traits=yes
 	2644.12.12={birth=yes}
 	2680.1.1={death=yes}
 }
@@ -100,6 +181,12 @@
 	dynasty=720111 #Ah Chuen
 	culture=sinoa
 	religion=ruhi
+	trait=intricate_webweaver
+	trait=ambitious
+	trait=diligent
+	trait=greedy
+	trait=socializer
+	disallow_random_traits=yes
 	2640.11.12={birth=yes}
 	2680.1.1={death=yes}
 }
@@ -108,6 +195,62 @@
 	dynasty=2108013 #Al Zaabi
 	culture=bahrayni
 	religion=sunni
+	trait=charismatic_negotiator
+	trait=hanafi
+	trait=zealous
+	trait=brave
+	trait=familyperson
+	trait=humble
+	disallow_random_traits=yes
 	2638.4.18={birth=yes}
+	2680.1.1={death=yes}
+}
+218014={
+	name="Muhammad"
+	dynasty=2108003
+	culture=bahrayni
+	religion=shiite
+	trait=bastard
+	father=2108003
+	2655.4.18={birth=yes}
+	2680.1.1={death=yes}
+}
+218015={
+	name="Yasmin"
+	dynasty=2108003
+	female=yes
+	culture=bahrayni
+	religion=shiite
+	trait=bastard
+	father=2108003
+	2660.4.18={birth=yes}
+	2680.1.1={death=yes}
+}
+218016={
+	name="Aisha"
+	dynasty=2108003
+	female=yes
+	culture=bahrayni
+	religion=shiite
+	trait=bastard
+	father=2108003
+	2662.4.18={birth=yes}
+	2680.1.1={death=yes}
+}
+218017={
+	name="Gopal"
+	culture=sabir
+	religion=nazari
+	trait=detached_priest
+	trait=lunatic
+	trait=sturdy
+	trait=falconer
+	trait=patient
+	trait=envious
+	trait=cruel
+	trait=paranoid
+	trait=trickster
+	disallow_random_traits=yes
+	2642.4.18={birth=yes}
 	2680.1.1={death=yes}
 }

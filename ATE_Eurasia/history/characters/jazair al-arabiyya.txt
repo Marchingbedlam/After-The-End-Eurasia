@@ -4,9 +4,12 @@
 	culture=furataini
 	religion=sunni
 	trait=fortune_builder
-	trait=greedy
-	trait=diligent
-	trait=deceitful
+	trait=hunter
+	trait=chaste
+	trait=sturdy
+	trait=stutter
+	trait=is_fat
+	disallow_random_traits=yes
 	2625.1.1={birth=yes}
 	2645.1.1={add_spouse=2106001}
 	2680.1.1={death=yes}
@@ -62,6 +65,7 @@
 	trait=ambitious
 	trait=greedy
 	trait=honorable
+	disallow_random_traits=yes
 	2640.1.1={birth=yes}
 	2660.1.1={wealth=500}
 	2664.1.1={add_spouse=2106005}
@@ -91,7 +95,7 @@
 	trait=deceiftful
 	trait=zealous
 	trait=scarred_high
-	disallow_random_trait=yes
+	disallow_random_traits=yes
 	2638.1.1={birth=yes}
 	2660.1.1={give_nickname=nick_the_strange}
 	2680.1.1={death=yes}
@@ -106,7 +110,7 @@
 	trait=attractive
 	trait=kind
 	trait=groomed
-	disallow_random_trait=yes
+	disallow_random_traits=yes
 	2638.1.1={birth=yes}
 	2680.1.1={death=yes}
 }
@@ -122,7 +126,7 @@
 	trait=cynical
 	trait=stubborn
 	trait=ambitious
-	disallow_random_trait=yes
+	disallow_random_traits=yes
 	2638.1.1={birth=yes}
 	2680.1.1={death=yes}
 }
@@ -136,7 +140,7 @@
 	trait=patient
 	trait=cynical
 	trait=stubborn
-	disallow_random_trait=yes
+	disallow_random_traits=yes
 	2638.1.1={
 		birth=yes 
 		culture=umani}
@@ -154,13 +158,13 @@
 	trait=gluttonous
 	trait=trusting
 	trait=sayyid
-	disallow_random_trait=yes
+	disallow_random_traits=yes
 	2638.1.1={
 		birth=yes 
 		culture=umani}
 	2680.1.1={death=yes}
 }
-2110005={ #Count of ar Rustaq
+2110005={ 
 	name="Hisham" 
 	dynasty=2110066 #Al-Balushi
 	culture=baloch
@@ -171,7 +175,7 @@
 	trait=homosexual
 	trait=attractive
 	trait=poet
-	disallow_random_trait=yes
+	disallow_random_traits=yes
 	2638.1.1={
 		birth=yes 
 		culture=umani}
@@ -188,7 +192,7 @@
 	trait=hedonist
 	trait=kind
 	trait=shrewd
-	disallow_random_trait=yes
+	disallow_random_traits=yes
 	2638.1.1={birth=yes}
 	2680.1.1={death=yes}
 }
@@ -203,7 +207,7 @@
 	trait=proud
 	trait=arbitrary
 	trait=hajjaj
-	disallow_random_trait=yes
+	disallow_random_traits=yes
 	2638.1.1={birth=yes}
 	2680.1.1={death=yes}
 }
