@@ -1,288 +1,288 @@
-# #Melting pot events for the Eurasian Cultures
-# #Adapted from the ATE Ck2 Events
-# namespace = meltingpot
+#Melting pot events for the Eurasian Cultures
+#Adapted from the ATE Ck2 Events
+namespace = meltingpot
 
-# # The Brythonic Melting Pot
-# character_event = {
-	# id = meltingpot.1
-	# desc = "EVTDESC_melting_pot_1"
-	# picture = GFX_evt_stone_church
+# The Brythonic Melting Pot
+character_event = {
+	id = meltingpot.1
+	desc = "EVTDESC_melting_pot_1"
+	picture = GFX_evt_stone_church
 	
-	# only_playable = yes
-	# culture_group = celtic
+	only_playable = yes
+	culture_group = celtic
 	
-	# trigger = {
-		# year = 2900
-		# any_demesne_province = {
-			# region = world_united_kingdom
-			# culture_group = britannic	
-			# any_province_holding = {
-				# NOT = { holding_type = nomad }
-			# }
-		# }
-		# NOT = { government = chinese_imperial_government }
-		# NOT = { government = ethiopian_imperial_government }
-	# }
+	trigger = {
+		year = 2900
+		any_demesne_province = {
+			region = world_united_kingdom
+			culture_group = britannic	
+			any_province_holding = {
+				NOT = { holding_type = nomad }
+			}
+		}
+		NOT = { government = chinese_imperial_government }
+		NOT = { government = ethiopian_imperial_government }
+	}
 	
-	# mean_time_to_happen = {
-		# months = 1200
-		# modifier = {
-			# factor = 0.75
-			# learning = 7
-		# }
-		# modifier = {
-			# factor = 0.75
-			# learning = 9
-		# }
-		# modifier = {
-			# factor = 0.75
-			# learning = 11
-		# }
-		# modifier = {
-			# factor = 0.75
-			# learning = 13
-		# }
-		# modifier = {
-			# factor = 1.5
-			# NOT = { learning = 5 }
-		# }
-		# modifier = {
-			# factor = 1.5
-			# NOT = { learning = 3 }
-		# }
-		# modifier = {
-			# factor = 2.0
-			# NOT = { learning = 1 }
-		# }
-		# modifier = {
-			# factor = 0.3
-			# OR = {
-				# has_game_rule = {
-					# name = culture_conversion
-					# value = faster_melting_pots
-				# }
-				# has_game_rule = {
-					# name = culture_conversion
-					# value = faster_melting_pots_and_slower_normal
-				# }
-			# }
-		# }
-	# }
+	mean_time_to_happen = {
+		months = 1200
+		modifier = {
+			factor = 0.75
+			learning = 7
+		}
+		modifier = {
+			factor = 0.75
+			learning = 9
+		}
+		modifier = {
+			factor = 0.75
+			learning = 11
+		}
+		modifier = {
+			factor = 0.75
+			learning = 13
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { learning = 5 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { learning = 3 }
+		}
+		modifier = {
+			factor = 2.0
+			NOT = { learning = 1 }
+		}
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
 
-	# option = {
-		# name = "EVTOPTA_melting_pot_1"
-		# culture = brythonic
-		# random_demesne_province = {
-			# limit = {
-				# region = world_united_kingdom
-				# culture = english
-				# any_province_holding = {
-					# NOT = { holding_type = nomad }
-				# }
-			# }
-			# culture = brythonic
-		# }
-	# }
-# }
+	option = {
+		name = "EVTOPTA_melting_pot_1"
+		culture = brythonic
+		random_demesne_province = {
+			limit = {
+				region = world_united_kingdom
+				culture = english
+				any_province_holding = {
+					NOT = { holding_type = nomad }
+				}
+			}
+			culture = brythonic
+		}
+	}
+}
 
-# # It's spreading
-# character_event = {
-	# id = meltingpot.2
-	# desc = "EVTDESC_melting_pot_2"
-	# picture = GFX_evt_stone_church
+# It's spreading
+character_event = {
+	id = meltingpot.2
+	desc = "EVTDESC_melting_pot_2"
+	picture = GFX_evt_stone_church
 	
-	# only_playable = yes
-	# culture = brythonic
+	only_playable = yes
+	culture = brythonic
 	
-	# trigger = {
-		# year = 2900
-		# any_demesne_province = {
-			# region = world_united_kingdom
-			# OR = {
-				# culture = english
-				# culture_group = britannic
-			# }
-			# any_province_holding = {
-				# NOT = { holding_type = nomad }
-			# }
-		# }
-	# }
+	trigger = {
+		year = 2900
+		any_demesne_province = {
+			region = world_united_kingdom
+			OR = {
+				culture = english
+				culture_group = britannic
+			}
+			any_province_holding = {
+				NOT = { holding_type = nomad }
+			}
+		}
+	}
 	
-	# mean_time_to_happen = {
-		# months = 720
-		# modifier = {
-			# factor = 0.3
-			# OR = {
-				# has_game_rule = {
-					# name = culture_conversion
-					# value = faster_melting_pots
-				# }
-				# has_game_rule = {
-					# name = culture_conversion
-					# value = faster_melting_pots_and_slower_normal
-				# }
-			# }
-		# }
-	# }
+	mean_time_to_happen = {
+		months = 720
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
 
-	# option = {
-		# name = "EVTOPTA_melting_pot_2"
-		# random_demesne_province = {
-			# limit = {
-				# region = world_united_kingdom
-				# OR = {	
-					# culture = english
-					# culture_group = britannic
-				# }
-				# any_province_holding = {
-					# NOT = { holding_type = nomad }
-				# }
-			# }
-			# culture = brythonic
-		# }
-	# }
-# }
+	option = {
+		name = "EVTOPTA_melting_pot_2"
+		random_demesne_province = {
+			limit = {
+				region = world_united_kingdom
+				OR = {	
+					culture = english
+					culture_group = britannic
+				}
+				any_province_holding = {
+					NOT = { holding_type = nomad }
+				}
+			}
+			culture = brythonic
+		}
+	}
+}
 
-# #Make my court speak Brythonic
-# character_event = {
-	# id = meltingpot.3
-	# desc = "EVTDESC_melting_pot_3"
-	# picture = GFX_evt_throne_room
+#Make my court speak Brythonic
+character_event = {
+	id = meltingpot.3
+	desc = "EVTDESC_melting_pot_3"
+	picture = GFX_evt_throne_room
 	
-	# only_rulers = yes
-	# culture = brythonic
+	only_rulers = yes
+	culture = brythonic
 
-	# trigger = {
-		# year = 2900
-		# top_liege = {
-			# primary_title = {
-				# OR = {
-					# title = k_england
-					# title = e_britannia
-				# }
-			# }
-		# }
-		# any_courtier = {
-			# OR = {
-				# culture = english
-				# culture_group = britannic
-			# }
-		# }
-	# }
+	trigger = {
+		year = 2900
+		top_liege = {
+			primary_title = {
+				OR = {
+					title = k_england
+					title = e_britannia
+				}
+			}
+		}
+		any_courtier = {
+			OR = {
+				culture = english
+				culture_group = britannic
+			}
+		}
+	}
 	
-	# mean_time_to_happen = {
-		# months = 120
-		# modifier = {
-			# factor = 0.3
-			# OR = {
-				# has_game_rule = {
-					# name = culture_conversion
-					# value = faster_melting_pots
-				# }
-				# has_game_rule = {
-					# name = culture_conversion
-					# value = faster_melting_pots_and_slower_normal
-				# }
-			# }
-		# }
-	# }
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
 
-	# option = {
-		# name = "EVTOPTA_melting_pot_3"
-		# any_courtier = {
-			# limit = {
-				# OR = {	
-					# culture = english
-					# culture_group = britannic
-				# }
-			# }
-			# score_value = { #Prioritizes selecting an interesting courtier...
-				# value = 10
-				# interesting_courtier_selection_score = yes
-			# }
-			# culture = brythonic
-			# hidden_tooltip = {
-				# character_event = { id = meltingpot.5 days = 3 }
-			# }
-		# }
-	# }
-# }
+	option = {
+		name = "EVTOPTA_melting_pot_3"
+		any_courtier = {
+			limit = {
+				OR = {	
+					culture = english
+					culture_group = britannic
+				}
+			}
+			score_value = { #Prioritizes selecting an interesting courtier...
+				value = 10
+				interesting_courtier_selection_score = yes
+			}
+			culture = brythonic
+			hidden_tooltip = {
+				character_event = { id = meltingpot.5 days = 3 }
+			}
+		}
+	}
+}
 
-# #Make my vassal speak New English
-# character_event = {
-	# id = meltingpot.4
-	# desc = "EVTDESC_melting_pot_4"
-	# picture = GFX_evt_throne_room
+#Make my vassal speak New English
+character_event = {
+	id = meltingpot.4
+	desc = "EVTDESC_melting_pot_4"
+	picture = GFX_evt_throne_room
 	
-	# only_playable = yes
-	# culture = brythonic
+	only_playable = yes
+	culture = brythonic
 
-	# trigger = {
-		# year = 2900
-		# independent = no
-		# top_liege = {
-			# primary_title = {
-				# OR = {
-					# title = k_england
-					# title = e_britannia
-				# }
-			# }
-		# }
-		# any_vassal = {
-			# OR = {
-				# culture = english
-				# culture_group = britannic
-			# }
-		# }
-	# }
+	trigger = {
+		year = 2900
+		independent = no
+		top_liege = {
+			primary_title = {
+				OR = {
+					title = k_england
+					title = e_britannia
+				}
+			}
+		}
+		any_vassal = {
+			OR = {
+				culture = english
+				culture_group = britannic
+			}
+		}
+	}
 	
-	# mean_time_to_happen = {
-		# months = 720
-		# modifier = {
-			# factor = 0.3
-			# OR = {
-				# has_game_rule = {
-					# name = culture_conversion
-					# value = faster_melting_pots
-				# }
-				# has_game_rule = {
-					# name = culture_conversion
-					# value = faster_melting_pots_and_slower_normal
-				# }
-			# }
-		# }
-	# }
+	mean_time_to_happen = {
+		months = 720
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
 
-	# option = {
-		# name = "EVTOPTA_melting_pot_4"
-		# any_vassal = {
-			# limit = {
-				# OR = {	
-					# culture = english
-					# culture_group = britannic
-				# }
-			# }
-			# score_value = { #Prioritizes selecting an interesting courtier...
-				# value = 10
-				# interesting_courtier_selection_score = yes
-			# }
-			# culture = brythonic
-			# hidden_tooltip = {
-				# character_event = { id = meltingpot.5 days = 3 }
-			# }
-		# }
-	# }
-# }
+	option = {
+		name = "EVTOPTA_melting_pot_4"
+		any_vassal = {
+			limit = {
+				OR = {	
+					culture = english
+					culture_group = britannic
+				}
+			}
+			score_value = { #Prioritizes selecting an interesting courtier...
+				value = 10
+				interesting_courtier_selection_score = yes
+			}
+			culture = brythonic
+			hidden_tooltip = {
+				character_event = { id = meltingpot.5 days = 3 }
+			}
+		}
+	}
+}
 
-# character_event = {
-	# id = meltingpot.5
-	# desc = "EVTDESC_melting_pot_5"
-	# picture = GFX_evt_throne_room
+character_event = {
+	id = meltingpot.5
+	desc = "EVTDESC_melting_pot_5"
+	picture = GFX_evt_throne_room
 
-	# is_triggered_only = yes
+	is_triggered_only = yes
 
-	# option = {
-		# name = "EVTOPTA_melting_pot_5"
-		# culture = brythonic
-	# }
-# }
+	option = {
+		name = "EVTOPTA_melting_pot_5"
+		culture = brythonic
+	}
+}
