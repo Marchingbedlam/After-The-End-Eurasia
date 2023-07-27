@@ -397,4 +397,74 @@ celtic	= {
 		
 		modifier = default_culture_modifier
 	}
+	brythonic = {
+		graphical_cultures = { celticgfx }
+		
+		color = { 0.2 0.4 0.2 }
+
+		male_names = {
+			Accolon Aelens Afallach Alfred Ambrose Andragius Arawn Archgallo Archibald Arthmael Arthur Arvirargus Austen
+			Baeddan Baldwin Barclay Barnaby Barry Bedivere Beldgabred Beli Belinus Bernie Bladud Bledudo Bors Brân Brennius Brian Brutus
+			Caff Cai Camber Cap Capoir Caradog Charles Cherin Clydog Cole Cunedda Cunstentin_Constantine Cuthbert Cynfarch
+			Dan Daned Daniel David Decimus Derek Digby Dirk Dolph Dominic Domitius Donald Duncan Dyfnwal Dylan 
+			Earl Edern Edmund Edward Efrog Egbert Einion Eldol Elias Elidyr Elihud Eric Ernest Erskine Escol
+			Fabian Felix Ferrex Francis Finlay Finn Fitz Flynn Fulke Frederick
+			Gabriel Galahad Gareth Gawain Geoffrey George Geraint Gorboduc Gorlois Gorust Gorviniaw Gorwst Griflet Guithelin Gurguit Gwydion Gwydr
+			Hamilton Harold Harvey Haydn Hector Heilyn Henry Hiram Horatio Hoel Hugh
+			Ian Idvallo Irving Irwin Ivor Isidore
+			Jack Jacob Jago_James Jared Jason Jaufre_Jaufré Jerome Jezza John Jonty Joseph Julius
+			Kadell Kamber Keegan Keith Kelvin Kenneth Keredic Kevin Kieth Kyle
+			Lachlan Lambert Lancelot Landon Lanval Lawrie Leil Leir Lennon Leo Leonard Lewis Lionel_Leon Llefelys Llewelyn Lloyd Lot Lucius Lud
+			Mabuz Macsen_Maximus Maddan Mairiawn Maleagabt Margan Marius Mark_Marcus Math Matthew Melwas Membyr Merlin Mordred Morien Morholt
+			Nathan Nelson Neville Nicholas Noel Nolan Norman
+			Oenus Oliver Olwen Orguelleus Orville Osborn Oscar Oswyn Otto Owain
+			Pancras Patrick Paul Pelleas_Peleus Pellehan Pellinore Pendragon Peredur Percival Philip Piers Pir Porrex Pryderi Pwyll
+			Quentin Quincy Quinlan Quinn 
+			Redon Rene Rex Rhiwallon Rhun Rhys Richard Robert Rollo Ronald Rory Ross Royce Royston Runo Ryan
+			Sagramore Samuel Saxon Scott Sean Seisyll Sheldon Sinjin Solomon Sterling Steven Stuart Sullivan
+			Taliesin Taylor Ted Tel Terrence Thomas Tristam
+			Ulfin Uther
+			Wallace Walweyn Walter Wilmot_William Wyrtgeorn_Vortigern
+		}
+		female_names = {
+			Abigail Acacia Agnes Alice Amphelisia Angharad Aralyn Arianrhod Aureole Azalea
+			Bambi Betty Bianca Blanche Boudica Branwen Breanne
+			Caitlin Camille Cara Carmel Caroline Cassandra Catherine Clara Clementine Courtney
+			Darcie Daria Deirdre Delilah Delphia Demelza Denise Desiree Diana Donna Dorothy
+			Edith Elaine_Helen Eleanor Elizabeth Elma Emily Enid Esmé Esther Ethel Eugenie Evelyn
+			Fae Fallon Fay Felicia Fiona Fleur Florence Frances Frieda
+			Gabrielle Gail Gemma Georgeanna Georgia Geralyn Gertrude Gloria Guinevere
+			Hayley Hazel Heather Hilda Hortense Hyacinth
+			Ida Igraine Imogen Iona Irene Iris Isabel Ivy
+			Jacqui Jaiden Jaime Jane Jasmine Jennifer Joan Jocelyn Johanna Judon Julia
+			Kenzie Kim Kinsley
+			Lainey Laudine Laura Lauren Leanne Leslie Lilibet Lorraine Lydia Lynette
+			Mabel Madeline Maisy Mary May Melanie Morgen_Morgan
+			Nancy Natalie Nichola Nicole Norma
+			Oakley Octavia Olivia Ophelia
+			Paige Paisley Palatyne Pauline Penny Petra Philippa Phoebe
+			Rae Regina Rhiannon Rita Rosalind Rowena Ruth
+			Samantha Sarah Sebile_Sybil Serena Shannon Sloane Sophia Susanna
+			Tamsin Tabitha Teleri Teresa 
+			Valerie Victoria
+		}
+		
+		dukes_called_kings = yes
+		
+		from_dynasty_prefix = "de "
+		male_patronym = "map "
+		female_patronym = "ferch "
+		prefix = yes
+
+		modifier = default_culture_modifier
+
+		pat_grf_name_chance = 80
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+	}
+}
 }
