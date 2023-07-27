@@ -699,4 +699,69 @@ central_germanic = {
 
 		modifier = default_culture_modifier
 	}
+	prussian = {
+		graphical_cultures = { germangfx }
+		
+		color = { 0 0.2 0.3 }
+
+		male_names = {
+			Adams_Adam Adolfas_Adolf Alberchts_Albert Aleksandrs_Alexander Alfons Alfreds_Alfred Andrejas_Andrew Antons_Anton Armins_Armin Arnfrids_Arnfried Arturs_Arthur
+			Benedikts_Benedict Benjamins_Benjamin Benno Boris Bruno
+			Dagmars_Dagmar Deivids_David Didrihs_Diedrich Ditrihs_Dietrich Ditmars_Dietmar Dominiks_Dominik Dzintars
+			Edgars_Edgar Eduards_Edward Edmunds_Edmund Elmars_Elmar Emils_Emil Emmerihs_Emmerich Erdmans_Erdmann Eriks_Eric Ervins_Erwin 
+			Fabians_Fabian Ferdinands_Ferdinand Filips_Phillipp Florentins_Florentinus Franz Fridrihs_Frederick 
+			Gabriels_Gabriel Georgs_Georg Genrihs_Henry Gerharts_Gehard Gotfrids_Gottfried Gustavs_Gustav Gvido_Guido
+			Hans Haralds_Harald Hartmans_Hartmann Heinz Helmuts_Helmut Hugo
+			Igors_Igor Immanuels_Immanuel Ivans_Ivan Ivo
+			Janis_Johann Jazep_Joseph Jekab_Jakob Jevgenijs_Eugen Johans_Johannes Juri_Yuri
+			Karlis_Charles Karls_Karl Kasimirs_Kasimir Kaspars_Kasper Konstantins_Konstantin Krišjanis_Christian Kristaps_Christofer
+			Leons_Leon Lorenzs_Lorenz Lothars_Lothar Ludolfs_Ludolf Ludvigs_Ludwig Lukas_Lucas
+			Maksims_Maxim Marks_Marx Martins_Martin Matiss_Matthias Mihails_Michael Mischa_Misha
+			Niklavs_Nicholas Nils_Nil 
+			Olaf Oliver Oskar_Oscar Osvald_Oswald Oto_Otto 
+			Pascal Patriks_Patrick Pauls_Paul 
+			Raimonds_Raimund Ralf_Ralph Rihard_Richard Roberts_Robert Rolands_Roland Rudolf
+			Sebastians_Sebastian Sergejs_Sergey Stefans_Stephen Svens_Sven
+			Tomass_Thomas
+			Ulrihs_Ulrich
+			Valdemar_Waldemar Valentins_Valentine Valter_Walter Viktor_Victor Vilhelms_Wilhelm Voldemar
+			Zigfrids_Siegfried Zigmars_Siegmar
+		}
+		female_names = {
+			Adelaide Adele Agatha Alise Angele_Angela Anna Antonija_Antonia Anuschka_Annushka Ariadna_Ariadne
+			Beate_Beata Beatrix Bertha Bianka Brunhilde_Brunhild
+			Dace Dagnija_Dagny Diana Dina_Dinah Dita Ditlinde Doroteja
+			Elena_Helen Eleonora_Eleanor Elfrida_Elfreda Emilija_Emily Emma Evelina Evgenija_Eugenia Evita_Eva 
+			Franziska_Francisca Frida 
+			Gerhilde_Gerhild Gertrude Gunta_Gunda
+			Hanna Hedviga_Hedwig Heidi Helena_Helen Helga Hilda
+			Ida Ilona Ilze_Ilse Inga Isabelle
+			Jana Johanna_Joan Josefine Julija_Julia
+			Karin Karolina_Carolina Katja_Katya Katrina_Catherine Klara_Clara Kristine_Christina
+			Laura Linda Lilija_Lily
+			Marija_Maria Marta Monika_Moncia
+			Nina
+			Olga
+			Patricija_Patricia Paula
+			Rebeka_Rebecca Rita Roze Ruta
+			Sara_Sarah Sascha_Sasha Sofija_Sophia 
+			Ursula
+			Vendija_Wendy Vilma_Wilma 
+			Yvonne
+			Zane_Susanna Ziska Zoja_Zoe
+		}
+	
+		from_dynasty_prefix = "von "
+
+
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 5
+		father_name_chance = 10
+		
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 5
+
+		modifier = default_culture_modifier
+	}
 }
