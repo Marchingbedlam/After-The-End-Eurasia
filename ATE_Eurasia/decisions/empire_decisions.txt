@@ -51,25 +51,25 @@ decisions = {
 				give_nickname = nick_the_great
 			}
 			d_friesland = {
-				de_jure_liege = k_netherlands
+				de_jure_liege = k_benelux
 			}
 			d_holland = {
-				de_jure_liege = k_netherlands
+				de_jure_liege = k_benelux
 			}
 			d_gelre = {
-				de_jure_liege = k_netherlands
+				de_jure_liege = k_benelux
 			}
 			d_north_brabant = {
-				de_jure_liege = k_netherlands
+				de_jure_liege = k_benelux
 			}
 			d_flanders = {
-				de_jure_liege = k_belgium
+				de_jure_liege = k_benelux
 			}
 			d_wallonia = {
-				de_jure_liege = k_belgium
+				de_jure_liege = k_benelux
 			}
 			d_luxembourg = {
-				de_jure_liege = k_belgium
+				de_jure_liege = k_benelux
 			}
 			k_benelux = {
 				de_jure_liege = e_europa
@@ -340,11 +340,10 @@ decisions = {
 			prestige = 500
 			wealth = 400
 			OR = {
-				tier = DUKE
-				tier = KING
+				primary_title = { lower_tier_than = KING }
+				primary_title = { title = k_naples }
+				primary_title = { title = k_sicily }
 			}
-			completely_controls = k_sicily
-			completely_controls = k_naples
         }
         effect = {
             activate_title = { title = k_sicilia status = yes }

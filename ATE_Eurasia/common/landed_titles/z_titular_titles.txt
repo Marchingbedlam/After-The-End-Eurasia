@@ -184,6 +184,18 @@ e_carthage = {
 
 ### titular kingdoms ###
 
+k_benelux = {
+	color={ 240 37 0 }
+	color2={ 220 220 20 }
+
+	capital = 326 # Brussels
+	
+	dignity = 20 # Counted as having this many more counties than it does
+	
+	allow = {
+		always = no # Only created through special event
+	}
+}
 k_britain = {
 	color={ 193 19 61 }
 	color2={ 220 220 20 }
