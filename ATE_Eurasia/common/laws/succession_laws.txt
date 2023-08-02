@@ -1460,6 +1460,7 @@ succession_laws = {
 				title = d_ivri
 				title = d_shiite
 				title = k_pravoslavie
+				title = d_esztergom_primacy
 			}
 		}
 		
@@ -1507,6 +1508,8 @@ succession_laws = {
 				title = d_ivri
 				title = d_shiite
 				title = d_nizari
+				title = k_pravoslavie
+				title = d_esztergom_primacy
 			}
 			temporary = no
 			OR = {
@@ -1534,7 +1537,11 @@ succession_laws = {
 				is_landless_type_title = yes
 				holder_scope = { is_theocracy = no }
 				holder_scope = { 
-					NOT = { religion = catholic }
+					NOT = { 
+						religion = catholic
+						religion = pravoslavie
+						religion = coronite
+					}
 				}
 			}
 			holder_scope = { 
@@ -1581,6 +1588,8 @@ succession_laws = {
 			holder_scope = {
 				OR = {
 					religion = catholic
+					religion = pravoslavie
+					religion = coronite
 				}
 				is_merchant_republic = no
 				OR = {
