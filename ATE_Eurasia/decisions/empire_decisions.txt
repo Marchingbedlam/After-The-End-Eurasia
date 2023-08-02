@@ -197,7 +197,7 @@ decisions = {
 		}
 	}
 	form_sapmi = {
-        is_high_priority = yes
+        is_high_prio = yes
         potential = {
             is_alternate_start = no
             NOT = { has_global_flag = sapmi_formed }
@@ -259,7 +259,7 @@ decisions = {
         }
     }
 	form_nenets = {
-        is_high_priority = yes
+        is_high_prio = yes
         potential = {
             is_alternate_start = no
             NOT = { has_global_flag = nenets_formed }
@@ -321,7 +321,7 @@ decisions = {
         }
     }
 	form_sicilia = {
-        is_high_priority = yes
+        is_high_prio = yes
         potential = {
             is_alternate_start = no
             NOT = { has_global_flag = sicilia_formed }
