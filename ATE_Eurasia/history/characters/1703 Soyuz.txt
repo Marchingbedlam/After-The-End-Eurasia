@@ -71,7 +71,7 @@
 	2695.1.1={death=yes}
 }
 1703005={
-	name="Sergey"
+	name="Taran"
 	dynasty=1703004
 	culture=severyane
 	religion=proletcult
@@ -80,11 +80,19 @@
 	stewardship=5
 	intrigue=4
 	learning=5
-	trait=hedonist
-	trait=poet
+	trait=adventurer
+	trait=peasant_leader
 	trait=charismatic_negotiator
-	trait=proud
-	2618.3.30={birth=yes}
+	trait=quick
+	trait=hunter
+	trait=diligent
+	trait=scarred_mid
+	trait=shrewd
+	trait=rude
+	trait=familyperson
+	trait=winter_soldier
+	disallow_random_traits=yes
+	2625.3.30={birth=yes}
 	2687.3.5={death=yes}
 }
 1703006={
@@ -92,7 +100,7 @@
 	dynasty=1945000
 	female=yes
 	culture=pomor
-	religion=orthodox
+	religion=old_believer
 	martial=5
 	diplomacy=4
 	stewardship=5
@@ -103,6 +111,7 @@
 	trait=fortune_builder
 	trait=kind
 	trait=gardener
+	disallow_random_traits=yes
 	2633.8.28={birth=yes}
 	2691.2.5={death=yes}
 }
@@ -758,5 +767,166 @@
 	trait=proud
 	trait=hedonist
 	2631.2.23={birth=yes}
+	2704.11.3={death=yes}
+}
+1703046={
+	name="Gleb"
+	dynasty=1703004
+	culture=severyane
+	religion=proletcult
+	trait=adopted_child
+	trait=playful
+	trait=honest
+	trait=willful
+	disallow_random_traits=yes
+	father=1703005
+	2654.2.12={birth=yes}
+	2704.11.3={death=yes}
+}
+1703047={
+	name="Valeria"
+	dynasty=1703174
+	female=yes
+	culture=severyane
+	religion=proletcult
+	trait=underhanded_rogue
+	trait=gregarious
+	trait=ambitious
+	trait=charitable
+	trait=envious
+	disallow_random_traits=yes
+	2627.4.13={birth=yes}
+	2704.11.3={death=yes}
+}
+1703048={
+	name="Konstantin"
+	dynasty=2220998
+	culture=karelian
+	religion=proletcult
+	trait=scholarly_theologian
+	trait=gamer
+	trait=erudite
+	trait=just
+	trait=honest
+	disallow_random_traits=yes
+	2643.6.1={birth=yes}
+	2704.11.3={death=yes}
+}
+1703049={
+	name="Vadim"
+	dynasty=1703175
+	culture=severyane
+	religion=proletcult
+	trait=thrifty_clerk
+	trait=content
+	trait=painter
+	trait=trusting
+	trait=organizer
+	disallow_random_traits=yes
+	2623.1.20={birth=yes}
+	2704.11.3={death=yes}
+}
+1703050={
+	name="Anna"
+	dynasty=1703176
+	female=yes
+	culture=severyane
+	religion=proletcult
+	trait=underhanded_rogue
+	trait=painter
+	trait=honorable
+	trait=shy
+	trait=content
+	disallow_random_traits=yes
+	2629.4.9={birth=yes}
+	2704.11.3={death=yes}
+}
+1703051={
+	name="Valery"
+	dynasty=1703177
+	culture=severyane
+	religion=proletcult
+	trait=martial_cleric
+	trait=scholar
+	trait=genius
+	trait=diligent
+	trait=authoritative
+	disallow_random_traits=yes
+	2620.7.18={birth=yes}
+	2704.11.3={death=yes}
+}
+1703052={
+	name="Makar"
+	dynasty=1703178
+	culture=severyane
+	religion=proletcult
+	trait=tough_soldier
+	trait=zealous
+	trait=one_handed
+	trait=proud
+	trait=temperate
+	disallow_random_traits=yes
+	2592.1.31={birth=yes}
+	2704.11.3={death=yes}
+}
+1703053={
+	name="Juri"
+	dynasty=1945086
+	culture=pomor
+	religion=proletcult
+	trait=thrifty_clerk
+	trait=honest
+	trait=scholar
+	trait=sympathy_scholastic
+	trait=just
+	secret_religion=haskalah
+	disallow_random_traits=yes
+	2640.5.30={birth=yes}
+	2704.11.3={death=yes}
+}
+1703054={
+	name="Alexander"
+	dynasty=1945070
+	culture=pomor
+	religion=proletcult
+	trait=thrifty_clerk
+	trait=charitable
+	trait=homosexual
+	trait=wroth
+	trait=paranoid
+	trait=gregarious
+	disallow_random_traits=yes
+	2628.1.9={birth=yes}
+	2704.11.3={death=yes}
+}
+1703055={
+	name="Pavel"
+	dynasty=2220999
+	culture=karelian
+	religion=old_believer
+	trait=martial_cleric
+	trait=pious
+	trait=homosexual
+	trait=defensive_leader
+	trait=honest
+	trait=envious
+	trait=groomed
+	disallow_random_traits=yes
+	2621.1.10={birth=yes}
+	2704.11.3={death=yes}
+}
+1703056={
+	name="Askold"
+	dynasty=2220699
+	culture=sami
+	religion=old_believer
+	trait=tough_soldier
+	trait=familyperson
+	trait=brawny
+	trait=shrewd
+	trait=lustful
+	trait=stubborn
+	disallow_random_traits=yes
+	2633.1.10={birth=yes}
 	2704.11.3={death=yes}
 }

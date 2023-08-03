@@ -768,6 +768,13 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
+		name = "GFX_trait_adopted_child"
+		texturefile = "gfx/traits/adopted_child.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
 		name = "GFX_trait_school_calvin"
 		texturefile = "gfx/traits/school_calvin.dds"
 		noOfFrames = 1
