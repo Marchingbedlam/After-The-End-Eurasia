@@ -1,0 +1,1506 @@
+# Modification of the Great Debate and Invention Decision of the Hermetic Society
+namespace = synod
+#Interaction: Gathering of a synod (test)
+character_event = {		
+	id = synod.1
+	desc = EVTDESC_synod_1
+	picture = GFX_evt_gathering_of_minds
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+	only_rulers = yes
+	capable_only = yes
+	war = no
+
+	trigger = {
+		learning = 10
+		stewardship = 8
+		NOT = { has_character_flag = gathering_of_the_synod }
+	}
+
+	option = { 
+		name = EVTOPTA_synod_1
+		custom_tooltip = { text = EVTOPTA_synod_1_TT }
+		scaled_wealth = { value = -0.5 min = -20 }
+		hidden_effect = { 
+			character_event = { id = synod.2 days = 7 } 
+			set_character_flag = gathering_of_the_synod
+		}
+	}
+
+	option = {
+		name = EVTOPTB_synod_1
+	}
+}
+
+#Send out letters
+character_event = {
+	id = synod.2
+	desc = EVTDESC_synod_2
+	picture = GFX_evt_recieve_letter
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+	hide_from = yes
+
+	trigger = { has_character_flag = gathering_of_the_synod }
+
+	immediate = {
+		hidden_effect = {
+			#Guest of honor (1)
+			random_list = {
+				100 = {
+					trigger = { has_job_title = job_spiritual }
+					save_event_target_as = synod_guest_1
+				}
+			}
+		}
+
+		#Guest 2
+		society = {
+			random_realm_lord = {
+				limit = {
+					ai = yes
+					NOT = { character = event_target:synod_guest_1 }
+					opinion = { who = ROOT value = 15 }
+					reverse_opinion = { who = ROOT value = 15 }
+				}
+				save_event_target_as = synod_guest_2
+			}
+		}
+
+		#Guest 3 and 4
+		random_list = {
+			70 = { #Your rival gets invited
+				trigger = { society = { random_rival = { ai = yes NOT = { reverse_opinion = { who = ROOT value = -30 } } } } }
+				set_character_flag = disliked_synod_colleague
+
+				society = {
+					random_rival = {
+						limit = { ai = yes NOT = { reverse_opinion = { who = ROOT value = -30 } } }
+						save_event_target_as = synod_guest_4
+					}
+
+					random_rival = {
+						limit = {
+							ai = yes
+							opinion = { who = event_target:synod_guest_4 value = 20 }
+							reverse_opinion = { who = ROOT value = 15 }
+							NOR = {
+								character = event_target:synod_guest_1
+								character = event_target:synod_guest_2
+							}
+						}
+						save_event_target_as = synod_guest_3
+					}
+				}
+				if = {
+					limit = { NOT = { event_target:synod_guest_3 = { always = yes } } }
+					society = {
+						random_realm_lord = {
+							limit = {
+								ai = yes
+								NOR = {
+									character = event_target:synod_guest_1
+									character = event_target:synod_guest_2
+								}
+								opinion = { who = ROOT value = 15 }
+								reverse_opinion = { who = ROOT value = 15 }
+							}
+							save_event_target_as = synod_guest_3
+						}
+					}
+				}
+			}
+			30 = { #Nothing special
+				society = {
+					random_realm_lord = {
+						limit = {
+							ai = yes
+							NOR = {
+								character = event_target:synod_guest_1
+								character = event_target:synod_guest_2
+							}
+							opinion = { who = ROOT value = 15 }
+							reverse_opinion = { who = ROOT value = 15 }
+						}
+						save_event_target_as = synod_guest_3
+					}
+				}
+				society = {
+					random_realm_lord = {
+						limit = {
+							ai = yes
+							NOR = {
+								character = event_target:synod_guest_1
+								character = event_target:synod_guest_2
+								character = event_target:synod_guest_3
+							}
+							opinion = { who = ROOT value = 15 }
+							reverse_opinion = { who = ROOT value = 15 }
+						}
+						save_event_target_as = synod_guest_4
+					}
+				}
+			}
+		}
+	}
+
+	option = { 
+		name = EVTOPTA_synod_2
+
+		reverse_opinion = { who = event_target:synod_guest_1 modifier = opinion_grateful_invitation months = 3 }
+		reverse_opinion = { who = event_target:synod_guest_2 modifier = opinion_grateful_invitation months = 3 }
+		reverse_opinion = { who = event_target:synod_guest_3 modifier = opinion_grateful_invitation months = 3 }
+		if = {
+			limit = { NOT = { has_character_flag = disliked_synod_colleague } }
+			reverse_opinion = { who = event_target:synod_guest_4 modifier = opinion_grateful_invitation months = 3 }
+		}
+		hidden_effect = {
+			if = {
+				limit = { has_character_flag = disliked_synod_colleague }
+				event_target:synod_guest_3 = { character_event = { id = synod.3 days = 10 } }
+				clr_character_flag = disliked_synod_colleague
+				break = yes
+			}
+			character_event = { id = synod.5 days = 30 }
+		}
+	}
+}
+
+#Ping to rival inviter
+character_event = {
+	id = synod.3
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = { FROM = { letter_event = { id = synod.4 } } }
+}
+
+#Another guests wants rival to come
+letter_event = {
+	id = synod.4
+	desc = EVTDESC_synod_4
+	border = GFX_event_letter_frame_religion
+
+	is_triggered_only = yes
+
+	trigger = { has_character_flag = gathering_of_the_synod }
+	
+	#Diplomatic excuse
+	option = {
+		trigger = { diplomacy = 12 }
+		tooltip_info = diplomacy
+		name = EVTOPTD_synod_4
+		custom_tooltip = { text = EVTOPTD_synod_4_TT }
+
+		clear_event_target = synod_guest_4
+
+	}
+
+	#I guess they can come
+ 	option = { 
+		name = EVTOPTA_synod_4
+		custom_tooltip = { text = EVTOPTA_synod_4_TT }
+
+		event_target:synod_guest_4 = {
+			set_character_flag = show_in_option
+			clr_character_flag = show_in_option
+		}
+
+		reverse_opinion = { who = FROM modifier = opinion_grateful years = 3 }
+	}
+
+	#I don't want them here
+	option = {
+		name = EVTOPTB_synod_4
+		custom_tooltip = { text = EVTOPTB_synod_4_TT }
+
+		clear_event_target = synod_guest_4
+
+		hidden_effect = { character_event = { id = synod.100 } } #Handles scandals
+
+		reverse_opinion = { who = FROM modifier = opinion_very_disappointed years = 3 }
+	}
+	
+	#Neither are invited!
+	option = {
+		name = EVTOPTC_synod_4
+		custom_tooltip = { text = EVTOPTC_synod_4_TT }
+
+		clear_event_target = synod_guest_3
+		clear_event_target = synod_guest_4
+
+		set_character_flag = synod_minor_scandal #Will be upgraded to major in 100
+		hidden_effect = { character_event = { id = synod.100 } } #Handles scandals
+
+		reverse_opinion = { who = FROM modifier = opinion_offended years = 10 }
+	}
+
+	after = {
+		hidden_effect = { character_event = { id = synod.5 days = 20 } }
+	}
+}
+
+#You suggest what you make
+character_event = {
+	id = synod.5
+	desc = EVTDESC_synod_5
+	picture = GFX_evt_gathering_of_minds
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+	hide_from = yes
+
+	trigger = { has_character_flag = gathering_of_the_synod }
+
+	#Something about reconcilation (religious and cultural mending and unification)
+	option = { 
+		trigger = { diplomacy = 8 }
+		tooltip_info = diplomacy
+		name = EVTOPTA_synod_5
+		custom_tooltip = { text = EVTOPTA_synod_5_TT }
+		set_character_flag = diplomacy_path
+	}
+
+	#Something for prosperity (religious investiture and alm works)
+	option = {
+		trigger = { stewardship = 8 }
+		tooltip_info = stewardship
+		name = EVTOPTB_synod_5
+		custom_tooltip = { text = EVTOPTB_synod_5_TT }
+		set_character_flag = prosperity_path
+	}
+	
+	#Something for learning (intellectual religious studies and pursuit)
+	option = {
+		tooltip_info = learning
+		name = EVTOPTD_synod_5
+		custom_tooltip = { text = EVTOPTD_synod_5_TT }
+		set_character_flag = knowledge_path
+	}
+
+	after = {
+		hidden_effect = {
+			random_list = { 
+				50 = {
+					trigger = {
+						always = yes
+						OR = {
+							event_target:synod_guest_1 = { NOT = { opinion = { who = ROOT value = 10 } } }
+							event_target:synod_guest_1 = { is_dumb_trigger = yes }
+							event_target:synod_guest_1 = { trait = ambitious }
+						}
+					}
+					modifier = { is_rival = event_target:synod_guest_1 factor = 3 }
+					event_target:synod_guest_1 = { character_event = { id = synod.6 days = 3 } }
+				}
+				50 = {
+					trigger = {
+						always = yes
+						OR = {
+							event_target:synod_guest_2 = { NOT = { opinion = { who = ROOT value = 10 } } }
+							event_target:synod_guest_2 = { is_dumb_trigger = yes }
+							event_target:synod_guest_2 = { trait = ambitious }
+						}
+					}
+					modifier = { is_rival = event_target:synod_guest_2 factor = 3 }
+					event_target:synod_guest_2 = { character_event = { id = synod.6 days = 3 } }
+				}
+				50 = {
+					trigger = {
+						always = yes
+						OR = {
+							event_target:synod_guest_3 = { NOT = { opinion = { who = ROOT value = 10 } } }
+							event_target:synod_guest_3 = { is_dumb_trigger = yes }
+							event_target:synod_guest_3 = { trait = ambitious }
+						}
+					}
+					modifier = { is_rival = event_target:synod_guest_3 factor = 3 }
+					event_target:synod_guest_3 = { character_event = { id = synod.6 days = 3 } }
+				}
+				50 = {
+					trigger = {
+						always = yes
+						OR = {
+							event_target:synod_guest_4 = { NOT = { opinion = { who = ROOT value = 10 } } }
+							event_target:synod_guest_4 = { is_dumb_trigger = yes }
+							event_target:synod_guest_4 = { trait = ambitious }
+						}
+					}
+					modifier = { is_rival = event_target:synod_guest_4 factor = 3 }
+					event_target:synod_guest_4 = { character_event = { id = synod.6 days = 3 } }
+				}
+				50 = { #They agree
+					character_event = { id = synod.8 days = 3 }
+				}
+			}
+		}
+	}
+}
+
+
+#Someone protests (ping)
+character_event = {
+	id = synod.6
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = { FROM = { character_event = { id = synod.7 } } }
+}
+		
+#Someone protests and has their own suggestion
+character_event = {
+	id = synod.7
+	desc = EVTDESC_synod_7
+	picture = GFX_evt_quarrel
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+
+	trigger = { has_character_flag = gathering_of_the_synod }
+	
+	immediate = {
+		FROM = {
+			random_list = {
+				33 = {
+					trigger = { NOT = { ROOT = { has_character_flag = diplomacy_path } } }
+					modifier = { has_education_martial_trigger = yes factor = 1.5 }
+					modifier = { has_lifestyle_martial_trigger = yes factor = 1.5 }
+					set_character_flag = diplomacy_path
+				}
+				33 = {
+					trigger = { NOT = { ROOT = { has_character_flag = prosperity_path } } }
+					modifier = { has_education_stewardship_trigger = yes factor = 1.5 }
+					modifier = { has_lifestyle_stewardship_trigger = yes factor = 1.5 }
+					set_character_flag = prosperity_path
+				}
+				33 = {
+					trigger = { NOT = { ROOT = { has_character_flag = knowledge_path } } }
+					modifier = { has_education_learning_trigger = yes factor = 1.5 }
+					modifier = { has_lifestyle_learning_trigger = yes factor = 1.5 }
+					set_character_flag = knowledge_path
+				}
+			}
+		}
+	}
+
+	#Debate them
+	option = { 
+		trigger = { learning = 12 }
+		name = EVTOPTA_synod_7
+		custom_tooltip = { text = EVTOPTA_synod_7_TT }
+
+		random_list = {
+			50 = { #You win
+				modifier = { learning = 8 factor = 1.2 }
+				modifier = { learning = 10 factor = 1.2 }
+				modifier = { learning = 12 factor = 1.2 }
+				modifier = { learning = 14 factor = 1.2 }
+				modifier = { learning = 16 factor = 1.2 }
+				modifier = { learning = 18 factor = 1.2 }
+				modifier = { learning = 20 factor = 1.2 }
+				custom_tooltip = { text = EVTOPTA_synod_7_SUCCESS_TT }
+				hidden_effect = { character_event = { id = synod.9 days = 7 } }
+			}
+			50 = { #They win
+				modifier = { FROM = { learning = 8 } factor = 1.2 }
+				modifier = { FROM = { learning = 10 } factor = 1.2 }
+				modifier = { FROM = { learning = 12 } factor = 1.2 }
+				modifier = { FROM = { learning = 14 } factor = 1.2 }
+				modifier = { FROM = { learning = 16 } factor = 1.2 }
+				modifier = { FROM = { learning = 18 } factor = 1.2 }
+				modifier = { FROM = { learning = 20 } factor = 1.2 }
+				custom_tooltip = { text = EVTOPTA_synod_7_FAILURE_TT }
+				hidden_effect = { character_event = { id = synod.10 days = 7 } }
+			}
+		}
+	}
+
+	#Agree, it begins
+	option = {
+		name = EVTOPTB_synod_7
+		custom_tooltip = { text = EVTOPTB_synod_7_TT }
+
+		hidden_effect = {
+			clr_character_flag = diplomacy_path
+			clr_character_flag = prosperity_path
+			clr_character_flag = knowledge_path
+
+			if = {
+				limit = { FROM = { has_character_flag = diplomacy_path } }
+				FROM = { clr_character_flag = diplomacy_path }
+				set_character_flag = diplomacy_path
+			}
+			if = {
+				limit = { FROM = { has_character_flag = prosperity_path } }
+				FROM = { clr_character_flag = prosperity_path }
+				set_character_flag = prosperity_path
+			}
+			if = {
+				limit = { FROM = { has_character_flag = knowledge_path } }
+				FROM = { clr_character_flag = knowledge_path }
+				set_character_flag = knowledge_path
+			}
+		}
+		hidden_effect = { character_event = { id = synod.11 days = 30 } }
+	}
+	
+	#Forbid, it begins
+	option = {
+		name = EVTOPTC_synod_7
+		custom_tooltip = { text = EVTOPTC_synod_7_TT } 
+
+		reverse_opinion = { who = event_target:synod_guest_1 modifier = opinion_unreasonable years = 5 }
+		reverse_opinion = { who = event_target:synod_guest_2 modifier = opinion_unreasonable years = 5 }
+		if = {
+			limit = { event_target:synod_guest_3 = { always = yes } }
+			reverse_opinion = { who = event_target:synod_guest_3 modifier = opinion_unreasonable years = 5 }
+		}
+		if = {
+			limit = { event_target:synod_guest_4 = { always = yes } }
+			reverse_opinion = { who = event_target:synod_guest_4 modifier = opinion_unreasonable years = 5 }
+		}
+		hidden_effect = { 	
+			character_event = { id = synod.100 } 
+			character_event = { id = synod.11 days = 30 }
+		}
+		FROM = {
+			clr_character_flag = diplomacy_path
+			clr_character_flag = prosperity_path
+			clr_character_flag = knowledge_path
+		}
+	}
+}	
+
+#They agreed, it begins
+character_event = {
+	id = synod.8
+	desc = EVTDESC_synod_8
+	picture = GFX_evt_gathering_of_minds
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_synod_8
+		custom_tooltip = { text = EVTOPTA_synod_8_TT }
+
+		hidden_effect = { character_event = { id = synod.11 days = 30 } }
+	}
+}	
+
+#You won debate
+character_event = {
+	id = synod.9
+	desc = EVTDESC_synod_9
+	picture = GFX_evt_religious_exultation
+	border = GFX_event_normal_frame_religion
+
+	trigger = { has_character_flag = gathering_of_the_synod }
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_synod_9
+		custom_tooltip = { text = EVTOPTA_synod_8_TT }
+
+		add_society_currency_minor_effect = yes
+
+		hidden_effect = { character_event = { id = synod.11 days = 30 } }
+
+		FROMFROM = {
+			clr_character_flag = diplomacy_path
+			clr_character_flag = prosperity_path
+			clr_character_flag = knowledge_path
+		}
+	}
+}
+
+#You lost debate
+character_event = {
+	id = synod.10
+	desc = EVTDESC_synod_10
+	picture = GFX_evt_rival_rulers
+	border = GFX_event_normal_frame_religion
+
+	trigger = { has_character_flag = gathering_of_the_synod }
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_synod_10
+		custom_tooltip = { text = EVTOPTA_synod_10_TT }
+
+		prestige = -50
+
+		hidden_effect = {
+			clr_character_flag = diplomacy_path
+			clr_character_flag = prosperity_path
+			clr_character_flag = knowledge_path
+
+			if = {
+				limit = { FROMFROM = { has_character_flag = diplomacy_path } }
+				FROMFROM = { clr_character_flag = diplomacy_path }
+				set_character_flag = diplomacy_path
+			}
+			if = {
+				limit = { FROMFROM = { has_character_flag = prosperity_path } }
+				FROMFROM = { clr_character_flag = prosperity_path }
+				set_character_flag = prosperity_path
+			}
+			if = {
+				limit = { FROMFROM = { has_character_flag = knowledge_path } }
+				FROMFROM = { clr_character_flag = knowledge_path }
+				set_character_flag = knowledge_path
+			}
+		}
+
+		hidden_effect = { character_event = { id = synod.11 days = 30 } }
+	}
+}
+
+#Risky or safe project
+character_event = {
+	id = synod.11
+	desc = EVTDESC_synod_11
+	picture = GFX_evt_rival_rulers
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+	hide_from = yes
+
+	trigger = { has_character_flag = gathering_of_the_synod }
+
+	#The safer
+	option = { 
+		name = EVTOPTA_synod_11
+		custom_tooltip = { text = EVTOPTA_synod_11_TT }
+
+		reverse_opinion = { who = event_target:synod_guest_2 modifier = opinion_grateful years = 5 }
+		reverse_opinion = { who = event_target:synod_guest_1 modifier = opinion_disappointed years = 5 }
+
+		hidden_effect = { set_character_flag = sound_testimonial }
+	}
+
+	#The riskier
+	option = {
+		name = EVTOPTB_synod_11
+		custom_tooltip = { text = EVTOPTB_synod_11_TT }
+
+		reverse_opinion = { who = event_target:synod_guest_1 modifier = opinion_grateful years = 5 }
+		reverse_opinion = { who = event_target:synod_guest_2 modifier = opinion_disappointed years = 5 }
+
+		hidden_effect = { set_character_flag = unsound_testimonial }
+	}
+
+	after = {
+		hidden_effect = {
+			event_target:synod_guest_1 = {
+				opinion = { who = event_target:synod_guest_1 modifier = opinion_argued years = 5 }
+				reverse_opinion = { who = event_target:synod_guest_1 modifier = opinion_argued years = 5 }
+			}
+
+			#Things that might happen
+			random_list = {
+				40 = { #People fight
+					trigger = {
+						society = {
+							any_realm_lord = {
+								OR = {
+									character = event_target:synod_guest_1
+									character = event_target:synod_guest_2
+									character = event_target:synod_guest_3
+									character = event_target:synod_guest_4
+								}
+								society = {
+									any_realm_lord = {
+										OR = {
+											character = event_target:synod_guest_1
+											character = event_target:synod_guest_2
+											character = event_target:synod_guest_3
+											character = event_target:synod_guest_4
+										}
+										NOT = { opinion = { who = PREVPREV value = 10 } }
+									}
+								}
+							}
+						}
+					}
+					society = {
+						random_realm_lord = {
+							limit = {
+								OR = {
+									character = event_target:synod_guest_1
+									character = event_target:synod_guest_2
+									character = event_target:synod_guest_3
+									character = event_target:synod_guest_4
+								}
+								society = {
+									any_realm_lord = {
+										OR = {
+											character = event_target:synod_guest_1
+											character = event_target:synod_guest_2
+											character = event_target:synod_guest_3
+											character = event_target:synod_guest_4
+										}
+										NOT = { opinion = { who = PREVPREV value = 10 } }
+									}
+								}
+							}
+							save_event_target_as = arguer_2
+							society = {
+								random_realm_lord = {
+									limit = {
+										OR = {
+											character = event_target:synod_guest_1
+											character = event_target:synod_guest_2
+											character = event_target:synod_guest_3
+											character = event_target:synod_guest_4
+										}
+										NOT = { opinion = { who = PREVPREV value = 10 } }
+									}
+									save_event_target_as = arguer_1
+								}
+							}
+						}
+					}
+					character_event = { id = synod.12 days = 20 random = 10 }
+				}
+				35 = { #You agree with someone
+					trigger = {
+						OR = {
+							opinion = { who = event_target:synod_guest_1 value = 20 }
+							opinion = { who = event_target:synod_guest_2 value = 20 }
+							opinion = { who = event_target:synod_guest_3 value = 20 }
+							opinion = { who = event_target:synod_guest_4 value = 20 }
+						}
+					}
+					society = {
+						random_realm_lord = {
+							limit = {
+								OR = {
+									character = event_target:synod_guest_1
+									character = event_target:synod_guest_2
+									character = event_target:synod_guest_3
+									character = event_target:synod_guest_4
+								}
+								reverse_opinion = { who = ROOT value = 20 }
+							}
+							character_event = { id = synod.15 days = 20 random = 10 }
+						}
+					}
+				}
+				25 = { #You have a brilliant insight
+					trigger = { learning = 12 }
+					modifier = { learning = 14 factor = 1.2 }
+					modifier = { learning = 16 factor = 1.2 }
+					modifier = { learning = 18 factor = 1.2 }
+					modifier = { has_character_modifier = divine_summoning_succeeded factor = 1.5 }
+					character_event = { id = synod.17 days = 20 random = 10 }
+				}
+			}
+		}
+	}
+}
+
+
+#Two people are arguing
+character_event = {
+	id = synod.12
+	desc = EVTDESC_synod_12
+	picture = GFX_evt_quarrel
+	border = GFX_event_normal_frame_war
+
+	is_triggered_only = yes
+	hide_from = yes
+
+	trigger = { has_character_flag = gathering_of_the_synod }
+
+	#Try to meddle
+	option = { 
+		name = EVTOPTA_synod_12
+		custom_tooltip = { text = EVTOPTA_synod_12_TT }
+
+		random_list = {
+			50 = { #It works
+				modifier = { society_rank >= 3 factor = 1.2 }
+				modifier = { 
+					reverse_opinion = { who = event_target:arguer_1 value = 25 }
+					reverse_opinion = { who = event_target:arguer_2 value = 25 } 
+					factor = 1.4
+				}
+				modifier = { diplomacy = 12 factor = 1.2 }
+				modifier = { diplomacy = 14 factor = 1.2 }
+				modifier = { diplomacy = 16 factor = 1.2 }
+				custom_tooltip = { text = EVTOPTA_synod_12_SUCCESS_TT }
+				hidden_effect = { character_event = { id = synod.13 days = 5 } }
+			}
+			50 = { #It didn't work
+				modifier = { NOT = { diplomacy = 10 } factor = 1.2 }
+				modifier = { has_unpleasant_personality_trigger = yes factor = 1.3 }
+				custom_tooltip = { text = EVTOPTA_synod_12_FAIL_TT }
+				hidden_effect = { character_event = { id = synod.14 days = 5 } }
+			}
+		}
+	}
+
+	#Person 1 goes
+	option = {
+		name = EVTOPTB_synod_12
+		custom_tooltip = { text = EVTOPTB_synod_12_TT }
+
+		hidden_effect = {
+			if = { 
+				limit = { event_target:arguer_1 = { character = event_target:synod_guest_1 } }
+				clear_event_target = synod_guest_1
+			}
+			if = { 
+				limit = { event_target:arguer_1 = { character = event_target:synod_guest_2 } }
+				clear_event_target = synod_guest_2
+			}
+			if = { 
+				limit = { event_target:arguer_1 = { character = event_target:synod_guest_3 } }
+				clear_event_target = synod_guest_3
+			}
+			if = { 
+				limit = { event_target:arguer_1 = { character = event_target:synod_guest_4 } }
+				clear_event_target = synod_guest_4
+			}
+
+			hidden_effect = { character_event = { id = synod.100 } } #Handles scandals
+
+
+			#After some time, end result
+			character_event = { id = synod.18 days = 30 random = 20 }
+		}
+	}
+	
+	#Person 2 goes
+	option = {
+		name = EVTOPTC_synod_12
+		custom_tooltip = { text = EVTOPTC_synod_12_TT }
+
+		hidden_effect = {
+			if = { 
+				limit = { event_target:arguer_2 = { character = event_target:synod_guest_1 } }
+				clear_event_target = synod_guest_1
+			}
+			if = { 
+				limit = { event_target:arguer_2 = { character = event_target:synod_guest_2 } }
+				clear_event_target = synod_guest_2
+			}
+			if = { 
+				limit = { event_target:arguer_2 = { character = event_target:synod_guest_3 } }
+				clear_event_target = synod_guest_3
+			}
+			if = { 
+				limit = { event_target:arguer_2 = { character = event_target:synod_guest_4 } }
+				clear_event_target = synod_guest_4
+			}
+
+			hidden_effect = { character_event = { id = synod.100 } } #Handles scandals
+
+			#After some time, end result
+			character_event = { id = synod.18 days = 30 random = 20 }
+		}
+	}
+}
+
+#You managed to make the quarrelers make up
+character_event = {
+	id = synod.13
+	desc = EVTDESC_synod_13
+	picture = GFX_evt_state_diplomacy
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+
+	trigger = { has_character_flag = gathering_of_the_synod }
+
+	option = { 
+		name = EVTOPTA_synod_13
+		custom_tooltip = { text = EVTOPTA_synod_13_TT }
+
+		reverse_opinion = {
+			who = event_target:arguer_1
+			modifier = opinion_reasonable
+			years = 5
+		}
+
+		reverse_opinion = {
+			who = event_target:arguer_2
+			modifier = opinion_reasonable
+			years = 5
+		}
+
+
+		hidden_effect = {
+			#After some time, end result
+			character_event = { id = synod.18 days = 30 random = 20 }
+		}
+	}
+}
+
+#You fail to make the quarrelers make up
+character_event = {
+	id = synod.14
+	desc = EVTDESC_synod_14
+	picture = GFX_evt_rival_rulers
+	border = GFX_event_normal_frame_war
+
+	is_triggered_only = yes
+
+	trigger = { has_character_flag = gathering_of_the_synod }
+
+	option = { 
+		name = EVTOPTA_synod_14
+		custom_tooltip = { text = EVTOPTA_synod_14_TT }
+
+		reverse_opinion = {
+			who = event_target:arguer_1
+			modifier = opinion_unreasonable
+			years = 5
+		}
+
+		reverse_opinion = {
+			who = event_target:arguer_2
+			modifier = opinion_unreasonable
+			years = 5
+		}
+
+		hidden_effect = {
+			#No one leaves because it is sure to end here
+
+			clr_character_flag = synod_minor_scandal
+			set_character_flag = synod_major_scandal
+			hidden_effect = { character_event = { id = synod.100 } } #Handles scandals
+
+			#After some time, end result
+			character_event = { id = synod.18 days = 30 random = 20 }
+		}
+	}
+}
+
+#You agree with someone (ping)
+character_event = {
+	id = synod.15
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = { FROM = { character_event = { id = synod.16 } } }
+}
+
+#You agree with someone, you work well together
+character_event = {
+	id = synod.16
+	desc = EVTDESC_synod_16
+	picture = GFX_evt_experiment
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+
+	trigger = { has_character_flag = gathering_of_the_synod }
+	
+	option = { 
+		name = EVTOPTA_synod_16
+
+		hidden_effect = {
+			#After some time, end result
+			character_event = { id = synod.18 days = 30 random = 20 }
+		}
+
+		if = {
+			limit = {
+				opinion = { who = FROM value = 40 }
+				reverse_opinion = { who = FROM value = 40 }
+				NOT = { is_friend = FROM }
+			}
+			add_friend = FROM
+			break = yes
+		}
+		reverse_opinion = {
+			who = FROM
+			modifier = opinion_great_minds
+			years = 10 
+		}
+		hidden_effect = {
+			opinion = {
+				who = FROM
+				modifier = opinion_great_minds
+				years = 10 
+			}
+		}
+	}
+}
+
+#You have a brilliant insight		
+character_event = {
+	id = synod.17
+	desc = EVTDESC_synod_17
+	picture = GFX_evt_religious_exultation
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+
+	hide_from = yes
+
+	trigger = { has_character_flag = gathering_of_the_synod }
+
+	option = { 
+		name = EVTOPTA_synod_17
+		custom_tooltip = { text = EVTOPTA_synod_17_TT }
+
+		add_character_modifier = {
+			name = brilliant_insight
+			years = 5
+		}
+
+		set_character_flag = brilliant_insight
+
+
+		hidden_effect = {
+			#After some time, end result
+			character_event = { id = synod.18 days = 30 random = 20 }
+		}
+	}
+}
+
+#Event to calculate outcome
+character_event = {
+	id = synod.18
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = { has_character_flag = gathering_of_the_synod }
+	immediate = {
+		#Adds up everyone's learning
+		set_variable = { which = collective_learning value = 0 }
+		if = {
+			limit = { event_target:synod_guest_1 = { always = yes } }
+			export_to_variable = { which = collective_learning_temp value = learning who = event_target:synod_guest_1 }
+			change_variable = { which = collective_learning which = collective_learning_temp }
+		}
+		if = {
+			limit = { event_target:synod_guest_2 = { always = yes } }
+			export_to_variable = { which = collective_learning_temp value = learning who = event_target:synod_guest_2 }
+			change_variable = { which = collective_learning which = collective_learning_temp }
+		}
+		if = {
+			limit = { event_target:synod_guest_3 = { always = yes } }
+			export_to_variable = { which = collective_learning_temp value = learning who = event_target:synod_guest_3 }
+			change_variable = { which = collective_learning which = collective_learning_temp }
+		}
+		if = {
+			limit = { event_target:synod_guest_4 = { always = yes } }
+			export_to_variable = { which = collective_learning_temp value = learning who = event_target:synod_guest_4 }
+			change_variable = { which = collective_learning which = collective_learning_temp }
+		}
+
+
+		#Outcome
+		random_list = {
+			20 = { #Best
+				trigger = { has_character_flag = unsound_testimonial }
+				modifier = { learning = 10 factor = 1.3 }
+				modifier = { learning = 12 factor = 1.3 }
+				modifier = { learning = 14 factor = 1.3 }
+				modifier = { learning = 16 factor = 1.3 }
+				modifier = { learning = 18 factor = 1.3 }
+				modifier = { learning = 20 factor = 1.3 }
+				modifier = { has_character_flag = brilliant_insight factor = 100 }
+				modifier = { check_variable = { which = collective_learning value = 40 } factor = 1.4 }
+				modifier = { check_variable = { which = collective_learning value = 50 } factor = 1.4 }
+				modifier = { check_variable = { which = collective_learning value = 60 } factor = 1.4 }
+				set_character_flag = best_outcome
+				character_event = { id = synod.19 }
+			}
+			30 = { #Good
+				modifier = { learning = 10 factor = 1.2 }
+				modifier = { learning = 12 factor = 1.2 }
+				modifier = { learning = 14 factor = 1.2 }
+				modifier = { learning = 16 factor = 1.2 }
+				modifier = { learning = 18 factor = 1.2 }
+				modifier = { learning = 20 factor = 1.2 }
+				modifier = { has_character_flag = brilliant_insight factor = 10 }
+				modifier = { check_variable = { which = collective_learning value = 40 } factor = 1.3 }
+				modifier = { check_variable = { which = collective_learning value = 50 } factor = 1.3 }
+				modifier = { check_variable = { which = collective_learning value = 60 } factor = 1.3 }
+				set_character_flag = good_outcome
+				character_event = { id = synod.19 }
+			}
+			45 = { #Ok
+				trigger = { has_character_flag = sound_testimonial }
+				modifier = { learning = 10 factor = 1.1 }
+				modifier = { learning = 12 factor = 1.1 }
+				modifier = { learning = 14 factor = 1.1 }
+				modifier = { learning = 16 factor = 1.1 }
+				modifier = { learning = 18 factor = 1.1 }
+				modifier = { learning = 20 factor = 1.1 }
+				modifier = { check_variable = { which = collective_learning value = 40 } factor = 1.2 }
+				modifier = { check_variable = { which = collective_learning value = 50 } factor = 1.2 }
+				modifier = { check_variable = { which = collective_learning value = 60 } factor = 1.2 }
+				set_character_flag = ok_outcome
+				character_event = { id = synod.19 }
+			}
+			25 = { #Normal failure outcome 
+				trigger = { has_character_flag = sound_testimonial }
+				set_character_flag = failure_outcome
+				character_event = { id = synod.20 }
+			}
+			25 = { #Dangerous failure outcome
+				trigger = { has_character_flag = unsound_testimonial }
+				set_character_flag = bad_failure_outcome
+				character_event = { id = synod.20 }
+			}
+		}
+		clr_character_flag = brilliant_insight
+	}
+}
+
+#Good outcome
+character_event = {
+	id = synod.19
+	picture = GFX_evt_gathering_of_minds
+	border = GFX_event_normal_frame_religion
+
+	desc = {
+		trigger = {
+			has_character_flag = best_outcome
+			has_character_flag = diplomacy_path
+		}
+		text = EVTDESC_synod_19_A #Hand gun
+		picture = GFX_evt_gathering_of_minds
+	}
+	desc = {
+		trigger = {
+			has_character_flag = best_outcome 
+			has_character_flag = prosperity_path
+		}
+		text = EVTDESC_synod_19_B #Compass
+		picture = GFX_evt_gathering_of_minds
+	}
+	desc = {
+		trigger = {
+			has_character_flag = best_outcome 
+			has_character_flag = knowledge_path
+		}
+		text = EVTDESC_synod_19_C #Radius astronomicus
+		picture = GFX_evt_gathering_of_minds
+	}
+	desc = {
+		trigger = {
+			has_character_flag = good_outcome
+			has_character_flag = diplomacy_path 
+		}
+		text = EVTDESC_synod_19_D #Giant crossbow
+		picture = GFX_evt_gathering_of_minds
+	}
+	desc = {
+		trigger = {
+			has_character_flag = good_outcome 
+			has_character_flag = prosperity_path
+		}
+		text = EVTDESC_synod_19_E #Blast furnace
+		picture = GFX_evt_weaponsmith
+	}
+	desc = {
+		trigger = {
+			has_character_flag = good_outcome 
+			has_character_flag = knowledge_path
+		}
+		text = EVTDESC_synod_19_F #Crypt and cypher machine
+		picture = GFX_evt_ritual_scroll
+	}
+	desc = {
+		trigger = {
+			has_character_flag = ok_outcome
+			has_character_flag = diplomacy_path
+		}
+		text = EVTDESC_synod_19_G #Plate armor
+		picture = GFX_evt_weaponsmith
+	}
+	desc = {
+		trigger = {
+			has_character_flag = ok_outcome 
+			has_character_flag = prosperity_path
+		}
+		text = EVTDESC_synod_19_H #A new mill
+		picture = GFX_evt_gathering_of_minds
+	}
+	desc = {
+		trigger = {
+			has_character_flag = ok_outcome
+			has_character_flag = knowledge_path
+		}
+		text = EVTDESC_synod_19_I #Glasses
+		picture = GFX_evt_gathering_of_minds
+	}
+
+	is_triggered_only = yes
+	hide_from = yes
+	
+ 	trigger = { has_character_flag = gathering_of_the_synod }
+
+	option = { 
+		trigger = {
+			has_character_flag = best_outcome
+			has_character_flag = diplomacy_path
+		}
+		name = EVTOPTA_synod_19
+
+		add_artifact = hermetic_handgun
+
+		military_techpoints = 100
+		add_society_currency_major_effect = yes
+	}
+
+	option = {
+		trigger = {
+			has_character_flag = best_outcome
+			has_character_flag = prosperity_path
+		}
+		name = EVTOPTB_synod_19
+
+		add_artifact = hermetic_compass
+
+		economy_techpoints = 100
+		add_society_currency_major_effect = yes
+	}
+	
+	option = {
+		trigger = {
+			has_character_flag = best_outcome
+			has_character_flag = knowledge_path
+		}
+		name = EVTOPTC_synod_19
+
+		add_artifact = radius_astronomicus
+
+		culture_techpoints = 100
+		add_society_currency_major_effect = yes
+	}
+	
+	option = {
+		trigger = {
+			has_character_flag = good_outcome
+			has_character_flag = diplomacy_path
+		}
+		name = EVTOPTD_synod_19
+
+		capital_scope = {
+			add_province_modifier = {
+				name = giant_crossbow
+				years = 100
+			}
+		}
+
+		military_techpoints = 50
+		add_society_currency_medium_effect = yes
+	}
+
+	option = {
+		trigger = {
+			has_character_flag = good_outcome
+			has_character_flag = prosperity_path
+		}
+		name = EVTOPTE_synod_19
+
+		capital_scope = {
+			add_province_modifier = {
+				name = blast_furnace
+				years = 100
+			}
+		}
+
+		economy_techpoints = 50
+		add_society_currency_medium_effect = yes
+	}
+
+	option = {
+		trigger = {
+			has_character_flag = good_outcome
+			has_character_flag = knowledge_path
+		}
+		name = EVTOPTF_synod_19
+
+		add_artifact = hermetic_cypher_machine
+
+		culture_techpoints = 50
+		add_society_currency_medium_effect = yes
+	}
+
+	option = {
+		trigger = {
+			has_character_flag = ok_outcome
+			has_character_flag = diplomacy_path
+		}
+		name = EVTOPTG_synod_19
+
+		add_artifact = hermetic_plate_armor
+
+		military_techpoints = 25
+		add_society_currency_minor_effect = yes
+	}
+
+	option = {
+		trigger = {
+			has_character_flag = ok_outcome
+			has_character_flag = prosperity_path
+		}
+		name = EVTOPTH_synod_19
+
+		capital_scope = {
+			add_province_modifier = {
+				name = great_mill
+				years = 100
+			}
+		}
+
+		economy_techpoints = 25
+		add_society_currency_minor_effect = yes
+	}
+
+	option = {
+		trigger = {
+			has_character_flag = ok_outcome
+			has_character_flag = knowledge_path
+		}
+		name = EVTOPTI_synod_19
+
+		add_artifact = hermetic_glasses
+
+		culture_techpoints = 25
+		add_society_currency_minor_effect = yes
+	}
+
+	after = {
+		hidden_effect = {
+			clr_character_flag = gathering_of_the_synod
+			clr_character_flag = diplomacy_path
+			clr_character_flag = prosperity_path
+			clr_character_flag = knowledge_path
+			clr_character_flag = great_outcome
+			clr_character_flag = good_outcome
+			clr_character_flag = ok_outcome
+		}
+	}
+}
+
+#Failure
+character_event = {
+	id = synod.20
+	picture = GFX_evt_burning_house
+	border = GFX_event_normal_frame_religion
+
+	desc = {
+		trigger = { has_character_flag = failure_outcome }
+		text = EVTDESC_synod_20_A
+		picture = GFX_evt_quarrel
+	}
+	desc = {
+		trigger = { has_character_flag = bad_failure_outcome }
+		text = EVTDESC_synod_20_B
+	}
+
+	immediate = {
+		random_list = {
+			20 = { set_character_flag = synod_failure_horrid }
+			20 = { set_character_flag = synod_failure_shame }
+			60 = { } #They're safe
+		}
+		event_target:synod_guest_1 = {
+			random_list = {
+				20 = { set_character_flag = synod_failure_humilation }
+				20 = { set_character_flag = synod_failure_horrid }
+				20 = { set_character_flag = synod_failure_shame }
+				40 = { } #They're safe
+			}
+		}
+		event_target:synod_guest_2 = {
+			random_list = {
+				20 = { set_character_flag = synod_failure_humilation }
+				20 = { set_character_flag = synod_failure_horrid }
+				20 = { set_character_flag = synod_failure_shame }
+				40 = { } #They're safe
+			}
+		}
+		event_target:synod_guest_3 = {
+			random_list = {
+				20 = { set_character_flag = synod_failure_humilation }
+				20 = { set_character_flag = synod_failure_horrid }
+				20 = { set_character_flag = synod_failure_shame }
+				40 = { } #They're safe
+			}
+		}
+		event_target:synod_guest_4 = {
+			random_list = {
+				20 = { set_character_flag = synod_failure_humilation }
+				20 = { set_character_flag = synod_failure_horrid }
+				20 = { set_character_flag = synod_failure_shame }
+				40 = { } #They're safe
+			}
+		}
+	}
+
+	is_triggered_only = yes
+
+	hide_from = yes
+
+	option = { 
+		trigger = { has_character_flag = failure_outcome }
+		name = EVTOPTA_synod_20
+		custom_tooltip = { text = EVTOPTA_synod_20_TT }
+	}
+
+	option = {
+		trigger = { has_character_flag = bad_failure_outcome }
+		name = EVTOPTB_synod_20
+		custom_tooltip = { text = EVTOPTB_synod_20_TT }
+
+		trigger_switch = {
+			on_trigger = has_character_flag
+			synod_failure_horrid = { add_trait = stressed }
+			synod_failure_shame = { add_trait = headache }
+		}
+
+		event_target:synod_guest_1 = {
+			trigger_switch = {
+				on_trigger = has_character_flag
+				synod_failure_humilation = { add_trait = depressed }
+				synod_failure_horrid = { add_trait = stressed }
+				synod_failure_shame = { add_trait = headache }
+			}
+		}
+		event_target:synod_guest_2 = {
+			trigger_switch = {
+				on_trigger = has_character_flag
+				synod_failure_humilation = { add_trait = depressed }
+				synod_failure_horrid = { add_trait = stressed }
+				synod_failure_shame = { add_trait = headache }
+			}
+		}
+		event_target:synod_guest_3 = {
+			trigger_switch = {
+				on_trigger = has_character_flag
+				synod_failure_humilation = { add_trait = depressed }
+				synod_failure_horrid = { add_trait = stressed }
+				synod_failure_shame = { add_trait = headache }
+			}
+		}
+		event_target:synod_guest_4 = {
+			trigger_switch = {
+				on_trigger = has_character_flag
+				synod_failure_humilation = { add_trait = depressed }
+				synod_failure_horrid = { add_trait = stressed }
+				synod_failure_shame = { add_trait = headache }
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			clr_character_flag = gathering_of_the_synod
+			clr_character_flag = diplomacy_path
+			clr_character_flag = prosperity_path
+			clr_character_flag = knowledge_path
+			clr_character_flag = failure_outcome
+			clr_character_flag = bad_failure_outcome
+
+			clr_character_flag = synod_failure_horrid
+			clr_character_flag = synod_failure_shame
+			event_target:synod_guest_1 = {
+				clr_character_flag = synod_failure_horrid
+				clr_character_flag = synod_failure_shame
+			}
+			event_target:synod_guest_2 = {
+				clr_character_flag = synod_failure_horrid
+				clr_character_flag = synod_failure_shame
+			}
+			event_target:synod_guest_3 = {
+				clr_character_flag = synod_failure_horrid
+				clr_character_flag = synod_failure_shame
+			}
+			event_target:synod_guest_4 = {
+				clr_character_flag = synod_failure_horrid
+				clr_character_flag = synod_failure_shame
+			}
+		}
+	}
+}
+#Handles scandals, ends the event chain if things go to far
+character_event = {
+	id = synod.100
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = { has_character_flag = gathering_of_the_synod }
+	immediate = {
+		if = {
+			limit = {
+				NOR = {
+					has_character_flag = synod_minor_scandal
+					has_character_flag = synod_major_scandal
+				}
+			}
+			set_character_flag = synod_minor_scandal
+			break = yes
+		} 
+		if = {
+			limit = { has_character_flag = synod_minor_scandal }
+			clr_character_flag = synod_minor_scandal
+			set_character_flag = synod_major_scandal
+			break = yes
+		}
+
+		if = {
+			limit = { has_character_flag = synod_major_scandal }
+			clr_character_flag = synod_major_scandal
+
+			character_event = { id = synod.101 }
+		}
+	}
+}
+
+character_event = {
+	id = synod.101
+	desc = EVTDESC_synod_101
+	picture = GFX_evt_scandal
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+	hide_from = yes
+	
+	option = { 
+		name = EVTOPTA_synod_101
+		custom_tooltip = { text = EVTOPTA_synod_101_TT }
+
+		hidden_effect = {
+			clr_character_flag = gathering_of_the_synod
+			clr_character_flag = diplomacy_path
+			clr_character_flag = prosperity_path
+			clr_character_flag = knowledge_path
+			clr_character_flag = synod_minor_scandal
+			clr_character_flag = synod_major_scandal
+			clr_character_flag = unsound_testimonial
+			clr_character_flag = sound_testimonial
+			clr_character_flag = brilliant_insight
+
+			event_target:synod_guest_1 = {
+				clr_character_flag = diplomacy_path
+				clr_character_flag = prosperity_path
+				clr_character_flag = knowledge_path
+			}
+			event_target:synod_guest_2 = {
+				clr_character_flag = diplomacy_path
+				clr_character_flag = prosperity_path
+				clr_character_flag = knowledge_path
+			}
+			event_target:synod_guest_3 = {
+				clr_character_flag = diplomacy_path
+				clr_character_flag = prosperity_path
+				clr_character_flag = knowledge_path
+			}
+			event_target:synod_guest_4 = {
+				clr_character_flag = diplomacy_path
+				clr_character_flag = prosperity_path
+				clr_character_flag = knowledge_path
+			}
+		}
+	}
+}	
