@@ -2050,7 +2050,7 @@
 	name="Irinja"
 	female=yes
 	culture=karelian
-	religion=prolecult
+	religion=proletcult
 	martial=5
 	diplomacy=4
 	stewardship=5
@@ -2083,4 +2083,111 @@
 	disallow_random_traits=yes
 	2646.2.28={birth=yes}
 	2704.1.1={death=yes}
+}
+1703111={
+	name="Vakrim"
+	dynasty=2087063 #Sespel
+	culture=chuvash
+	religion=proletcult
+	trait=poet
+	trait=blinded
+	trait=just
+	trait=feeble
+	2628.1.1={birth=yes}
+	2658.1.1={add_spouse=1703112}
+}
+1703112={
+	name="Tany"
+	dynasty=2087064 #Vitti
+	culture=chuvash
+	religion=proletcult
+	female=yes
+	trait=fair
+	trait=painter
+	trait=familyperson
+	2633.1.1={birth=yes}
+}
+1703113={
+	name="Kamaj"
+	dynasty=2087063 #Sespel
+	culture=chuvash
+	religion=proletcult
+	father=1703111
+	mother=1703112
+	2659.1.1={birth=yes}
+}
+1703114={
+	name="Maria"
+	dynasty=1147228 #Ishimov
+	culture=muscovite
+	religion=pravoslavie
+	female=yes
+	trait=poet
+	trait=kind
+	trait=erudite
+	trait=diligent
+	trait=familyperson
+	2624.1.1={birth=yes}
+	2642.1.1={add_matrilineal_spouse=1703115}
+}
+1703115={
+	name="Roman"
+	dynasty=1147229 #Pisemsky
+	culture=muscovite
+	religion=pravoslavie
+	trait=poet
+	trait=just
+	trait=craven
+	trait=gregarious
+	trait=honest
+	trait=temperate
+	2626.1.1={birth=yes}
+}
+1703116={
+	name="Arkady"
+	dynasty=1147228 #Ishimov
+	culture=muscovite
+	religion=pravoslavie
+	trait=shy
+	trait=content
+	trait=kind
+	trait=humble
+	mother=1703114
+	father=1703115
+	2651.1.1={birth=yes}
+}
+1703117={
+	name="Platon"
+	dynasty=1147228 #Ishimov
+	culture=muscovite
+	religion=pravoslavie
+	trait=devout
+	trait=quick
+	trait=rowdy
+	mother=1703114
+	father=1703115
+	2654.1.1={birth=yes}
+}
+1703118={
+	name="Nastassya"
+	dynasty=1147228 #Ishimov
+	culture=muscovite
+	religion=pravoslavie
+	female=yes
+	mother=1703114
+	father=1703115
+	2662.1.1={birth=yes}
+}
+1703119={
+	name="Anna"
+	dynasty=1147230 #Zack
+	culture=muscovite
+	religion=proletcult
+	female=yes
+	trait=scholar
+	trait=just
+	trait=honest
+	trait=temperate
+	2500.1.1={birth=yes}
+	2550.1.1={death=yes}
 }

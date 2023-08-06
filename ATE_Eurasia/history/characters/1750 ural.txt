@@ -420,3 +420,107 @@
 	2610.4.12={birth=yes}
 	2680.1.1={death=yes}
 }
+1750066={
+	name="Öndrej"
+	dynasty=2170045 #Palshin
+	culture=komi
+	religion=dvoeverie
+	trait=hunter
+	trait=just
+	trait=craven
+	trait=deceitful
+	trait=ruthless
+	2630.1.1={birth=yes}
+	2650.1.1={add_spouse=170067}
+}
+1750067={
+	name="Ljullja"
+	dynasty=2170057 #Cybin
+	culture=komi
+	religion=dvoeverie
+	female=yes
+	trait=administrator
+	trait=chaste
+	trait=selfish
+	trait=brave
+	trait=arbitrary
+	2631.1.1={birth=yes}
+}
+1750068={
+	name="Senipont"
+	dynasty=2170045 #Palshin
+	culture=komi
+	religion=dvoeverie
+	trait=affectionate
+	trait=just
+	trait=deceitful
+	father=1750066
+	mother=1750067
+	2653.1.1={birth=yes}
+}
+1750069={
+	name="Demen"
+	dynasty=2170005 #Zhakov
+	culture=komi
+	religion=pravoslavie
+	trait=fair
+	trait=robust
+	trait=patient
+	trait=ambitious
+	trait=gregarious
+	trait=kind
+	trait=authoritative
+	2614.1.1={birth=yes}
+	2635.1.1={add_spouse=170070}
+}
+1750070={
+	name="Tatjana"
+	dynasty=0 #Lowborn
+	culture=komi
+	religion=pravoslavie
+	female=yes
+	trait=weak
+	trait=honest
+	trait=zealous
+	trait=stubborn
+	trait=humble
+	2617.1.1={birth=yes}
+}
+1750071={
+	name="Ölösh"
+	dynasty=2170005 #Zhakov
+	culture=komi
+	religion=pravoslavie
+	trait=diligent
+	trait=proud
+	trait=chaste
+	trait=honest
+	father=1750069
+	mother=1750070
+	2643.1.1={birth=yes}
+}
+1750072={
+	name="Pulkherija"
+	dynasty=2170005 #Zhakov
+	culture=komi
+	religion=pravoslavie
+	female=yes
+	trait=honorable
+	trait=diligent
+	trait=brave
+	trait=hunter
+	father=1750069
+	mother=1750070
+	2650.1.1={birth=yes}
+}
+1750073={
+	name="Pimna"
+	dynasty=2170005 #Zhakov
+	culture=komi
+	religion=pravoslavie
+	trait=rowdy
+	trait=honorable
+	father=1750069
+	mother=1750070
+	2655.1.1={birth=yes}
+}
