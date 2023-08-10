@@ -636,7 +636,7 @@
 }
 
 1703039={
-	name="FÃ¤yzÃ¤"
+	name="Fäyzä"
 	dynasty=1005029 #Abashev
 	female=yes
 	culture=tatar
@@ -658,8 +658,8 @@
 }
 
 1703040={
-	name="XÃ¤kim"
-	dynasty=1005023 #Ã„xtÃ¤mov
+	name="Xäkim"
+	dynasty=1005023 #Äxtämov
 	culture=tatar
 	religion=ruhi
 	martial=4
@@ -757,7 +757,7 @@
 
 1703045={
 	name="Svetlana"
-	dynasty=2087018 #ÃeÃ¾pÃªl
+	dynasty=2087018 #Şeşpêl
 	female=yes
 	culture=mordvin
 	religion=jumic
@@ -2415,5 +2415,150 @@
 	culture=muscovite
 	religion=pravoslavie
 	2630.1.1={birth=yes}
+	2704.1.1={death=yes}
+}
+1703137={
+	name="Shabdar"
+	dynasty=2167087
+	culture=mari
+	religion=jumic
+	trait=brilliant_strategist
+	trait=strategist
+	trait=gregarious
+	trait=strong
+	trait=inspiring_leader
+	trait=deceitful
+	disallow_random_traits=yes
+	2636.2.10={birth=yes}
+	2660.1.1={add_spouse=1703138}
+	2704.1.1={death=yes}
+}
+1703138={
+	name="Sofi"
+	female=yes
+	culture=mari
+	religion=jumic
+	trait=underhanded_rogue
+	trait=chaste
+	trait=just
+	trait=shy
+	trait=charitable
+	disallow_random_traits=yes
+	2639.5.31={birth=yes}
+	2704.1.1={death=yes}
+}
+1703139={
+	name="Jansyle"
+	dynasty=2167087
+	female=yes
+	culture=mari
+	religion=jumic
+	trait=twin
+	trait=diligent
+	trait=curious
+	trait=affectionate
+	father=1703137
+	mother=1703138
+	2660.3.4={birth=yes}
+	2704.1.1={death=yes}
+}
+1703139={
+	name="Paytr"
+	dynasty=2167087
+	culture=mari
+	religion=jumic
+	trait=twin
+	trait=afffectionate
+	trait=conscientious
+	trait=willful
+	trait=just
+	trait=brave
+	father=1703137
+	mother=1703138
+	2660.3.4={birth=yes}
+	2704.1.1={death=yes}
+}
+1703139={
+	name="Praska"
+	dynasty=2167087
+	culture=mari
+	religion=jumic
+	trait=brave
+	father=1703137
+	mother=1703138
+	2664.6.4={birth=yes}
+	2704.1.1={death=yes}
+}
+1703140={
+	name="Kestenttin"
+	dynasty=2087065 #Khuzangai
+	culture=chuvash
+	religion=dvoeverie
+	trait=sympathy_islam
+	trait=charismatic_negotiator
+	trait=familyperson
+	trait=content
+	trait=gregarious
+	trait=lefthanded
+	trait=honorable
+	disallow_random_traits=yes
+	2624.4.5={birth=yes}
+	2640.1.1={add_spouse=1703141}
+	2704.1.1={death=yes}
+}
+1703141={
+	name="Nadezha"
+	female=yes
+	culture=chuvash
+	religion=dvoeverie
+	trait=martial_cleric
+	trait=erudite
+	trait=selfish
+	trait=temperate
+	trait=shy
+	2628.4.1={birth=yes}
+	2704.1.1={death=yes}
+}
+1703142={
+	name="Entiruk"
+	dynasty=2087065 #Khuzangai
+	culture=chuvash
+	religion=dvoeverie
+	trait=scholarly_theologian
+	trait=attractive
+	trait=patient
+	trait=pious
+	trait=authoritative
+	trait=paranoid
+	father=1703140
+	mother=1703141
+	disallow_random_traits=yes
+	2648.1.15={birth=yes}
+	2704.1.1={death=yes}
+}
+1703143={
+	name="Kamaj"
+	dynasty=2087065 #Khuzangai
+	culture=chuvash
+	religion=dvoeverie
+	trait=playful
+	trait=quick
+	father=1703140
+	mother=1703141
+	2655.1.15={birth=yes}
+	2704.1.1={death=yes}
+}
+1703144={
+	name="Mahmud"
+	dynasty=1005007 #Shabayev
+	culture=tatar
+	religion=ruhi
+	trait=intricate_webweaver
+	trait=attractive
+	trait=patient
+	trait=ambitious
+	trait=kind
+	trait=cynical
+	2622.4.12={birth=yes}
 	2704.1.1={death=yes}
 }
