@@ -2191,3 +2191,229 @@
 	2500.1.1={birth=yes}
 	2550.1.1={death=yes}
 }
+1703120={
+	name="Fyodor"
+	dynasty=1147231
+	culture=muscovite
+	religion=pravoslavie
+	trait=naive_appeaser
+	trait=distractible
+	trait=groomed
+	trait=crowned_by_pope
+	trait=stressed
+	disallow_random_traits=yes
+	2647.2.12={birth=yes}
+	2704.1.1={death=yes}
+}
+1703121={
+	name="Maksim"
+	dynasty=1147231
+	culture=muscovite
+	religion=pravoslavie
+	trait=skilled_tactician
+	trait=quick
+	trait=stutter
+	trait=familyperson
+	trait=organizer
+	disallow_random_traits=yes
+	2631.2.5={birth=yes}
+	2655.1.1={add_spouse=1703122}
+	2704.1.1={death=yes}
+}
+1703122={
+	name="Yulia"
+	female=yes
+	culture=muscovite
+	religion=pravoslavie
+	2635.1.24={birth=yes}
+	2704.1.1={death=yes}
+}
+1703123={
+	name="Dmitriy"
+	dynasty=1147232
+	culture=muscovite
+	religion=pravoslavie
+	trait=tough_soldier
+	trait=attractive
+	trait=rude
+	trait=socializer
+	trait=lustful
+	trait=drunkard
+	trait=cavalry_leader
+	trait=sympathy_pagans
+	disallow_random_traits=yes
+	2622.4.6={birth=yes}
+	2640.1.1={add_spouse=1703124}
+	2704.1.1={death=yes}
+}
+1703124={
+	name="Shura"
+	dynasty=1703182
+	female=yes
+	culture=severyane
+	religion=pagan
+	trait=intricate_webweaver
+	trait=shieldmaiden
+	trait=duelist
+	trait=gregarious
+	trait=sympathy_christendom
+	disallow_random_traits=yes
+	2623.1.1.={birth=yes}
+	2704.1.1={death=yes}
+}
+1703125={
+	name="Nikolai"
+	dynasty=1147138
+	culture=muscovite
+	religion=pravoslavie
+	trait=tough_soldier
+	trait=shrewd
+	trait=gregarious
+	trait=cynical
+	trait=sympathy_old_world_cultists
+	disallow_random_traits=yes
+	2598.4.12={birth=yes}
+	2610.1.1={add_spouse=1703126}
+	2704.1.1={death=yes}
+}
+1703126={
+	name="Galina"
+	dynasty=1147233
+	female=yes
+	culture=muscovite
+	religion=pravoslavie
+	trait=martial_cleric
+	trait=musician
+	trait=envious
+	trait=familyperson
+	disallow_random_traits=yes
+	2601.2.5={birth=yes}
+	2704.1.1={death=yes}
+}
+1703127={
+	name="Leonid"
+	dynasty=1147138
+	culture=muscovite
+	religion=pravoslavie
+	trait=skilled_tactician
+	trait=shy
+	trait=just
+	disallow_random_traits=yes
+	father=1703125
+	mother=1703126
+	2621.5.6={birth=yes}
+	2640.1.1={add_spouse=1703128}
+	2704.1.1={death=yes}
+}
+1703128={
+	name="Izolda"
+	dynasty=1950135
+	female=yes
+	culture=upper_saxon
+	religion=calvinist
+	trait=thrifty_clerk
+	trait=kind
+	trait=painter
+	disallow_random_traits=yes
+	2630.5.1={birth=yes}
+	2650.1.1={add_friend=1703131}
+	2704.1.1={death=yes}
+}
+1703129={
+	name="Sasha"
+	dynasty=1147138
+	culture=muscovite
+	religion=pravoslavie
+	father=1703127
+	mother=1703128
+	2663.3.1={birth=yes}
+	2704.1.1={death=yes}
+}
+1703130={
+	name="Konstantin"
+	dynasty=1147138
+	culture=muscovite
+	religion=pravoslavie
+	trait=charismatic_negotiator
+	trait=quick
+	trait=familyperson
+	trait=content
+	trait=gamer
+	disallow_random_traits=yes
+	father=1703125
+	mother=1703126
+	2625.1.25={birth=yes}
+	2640.1.1={add_spouse=1703131}
+	2704.1.1={death=yes}
+}
+1703131={
+	name="Vera"
+	dynasty=1147234
+	female=yes
+	culture=muscovite
+	religion=pravoslavie
+	trait=fortune_builder
+	trait=groomed
+	trait=kind
+	disallow_random_traits=yes
+	2630.6.21={birth=yes}
+	2650.1.1={add_friend=1703128}
+	2704.1.1={death=yes}
+}
+1703132={
+	name="Mariya"
+	dynasty=1147138
+	female=yes
+	culture=muscovite
+	religion=pravoslavie
+	trait=willful
+	father=1703130
+	mother=1703131
+	2652.1.31={birth=yes}
+	2704.1.1={death=yes}
+}
+1703133={
+	name="Kirill"
+	dynasty=1147138
+	culture=muscovite
+	religion=pravoslavie
+	trait=rowdy
+	trait=playful
+	trait=twin
+	father=1703130
+	mother=1703131
+	2658.3.12={birth=yes}
+	2704.1.1={death=yes}
+}
+1703134={
+	name="Filipp"
+	dynasty=1147138
+	culture=muscovite
+	religion=pravoslavie
+	trait=rowdy
+	trait=playful
+	trait=twin
+	father=1703130
+	mother=1703131
+	2658.3.12={birth=yes}
+	2704.1.1={death=yes}
+}
+1703135={
+	name="Vera"
+	dynasty=1147138
+	female=yes
+	culture=muscovite
+	religion=pravoslavie
+	father=1703130
+	mother=1703131
+	2665.1.12={birth=yes}
+	2704.1.1={death=yes}
+}
+1703136={
+	name="Sergei"
+	dynasty=1147235
+	culture=muscovite
+	religion=pravoslavie
+	2630.1.1={birth=yes}
+	2704.1.1={death=yes}
+}
