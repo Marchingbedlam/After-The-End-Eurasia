@@ -46,7 +46,7 @@ character_event = {
 		trigger = {
 			OR = {
 				trait = zealous
-				trait = devout
+				trait = pious
 				piety = 100
 			}
 		}
@@ -558,7 +558,7 @@ character_event = {
 				NOR = {
 					trait = cynical
 					trait = zealous
-					trait = devout
+					trait = pious
 				}
 			}
 			random_list = {
@@ -583,7 +583,7 @@ character_event = {
 			on_trigger = has_character_flag
 			flagellant_remove_cynical = { remove_trait = cynical }
 			flagellant_add_zealous = { add_trait = zealous }
-			flagellant_add_trait = { add_trait = devout }
+			flagellant_add_trait = { add_trait = pious }
 		}
 		
 		clr_character_flag = flagellant_remove_cynical
@@ -625,7 +625,7 @@ character_event = {
 				NOR = {
 					trait = cynical
 					trait = zealous
-					trait = devout
+					trait = pious
 				}
 			}
 			random_list = {
@@ -665,7 +665,7 @@ character_event = {
 			on_trigger = has_character_flag
 			flagellant_remove_cynical = { remove_trait = cynical }
 			flagellant_add_zealous = { add_trait = zealous }
-			flagellant_add_trait = { add_trait = devout }
+			flagellant_add_trait = { add_trait = pious }
 		}
 		
 		clr_character_flag = flagellant_remove_cynical
@@ -707,7 +707,7 @@ character_event = {
 				NOR = {
 					trait = cynical
 					trait = zealous
-					trait = devout
+					trait = pious
 				}
 			}
 			random_list = {
@@ -737,7 +737,7 @@ character_event = {
 			on_trigger = has_character_flag
 			flagellant_remove_cynical = { remove_trait = cynical }
 			flagellant_add_zealous = { add_trait = zealous }
-			flagellant_add_trait = { add_trait = devout }
+			flagellant_add_trait = { add_trait = pious }
 		}
 		
 		clr_character_flag = flagellant_remove_cynical

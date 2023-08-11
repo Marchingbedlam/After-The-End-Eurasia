@@ -51,7 +51,7 @@ decisions = {
 			}
 			modifier = { factor = 1	martial >= 15 }
 			modifier = { factor = 2	trait = zealous }
-			modifier = { factor = 2	trait = devout }
+			modifier = { factor = 2	trait = pious }
 			modifier = { factor = 2	martial >= 20 }
 			modifier = { factor = 5	trait = ambitious }
 			modifier = { factor = 5	martial >= 25 }
@@ -260,7 +260,7 @@ targeted_decisions = {
 			}
 			modifier = { factor = 1	martial >= 15 }
 			modifier = { factor = 2	trait = zealous }
-			modifier = { factor = 2	trait = devout }
+			modifier = { factor = 2	trait = pious }
 			modifier = { factor = 2	martial >= 20 }
 			modifier = { factor = 5	trait = ambitious }
 			modifier = { factor = 5	martial >= 25 }
