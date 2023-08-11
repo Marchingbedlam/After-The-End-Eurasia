@@ -31,7 +31,6 @@ decisions = {
 			prisoner = no
 			age >= 14
 			piety = 150
-			is_playable = yes
 			NOT = { has_trait = adult_baptized }
 		}
 		
