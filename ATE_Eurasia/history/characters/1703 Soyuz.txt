@@ -993,7 +993,7 @@
 	learning=5
 	trait=tough_soldier
 	trait=familyperson
-	trait=brawny
+	trait=robust
 	trait=shrewd
 	trait=lustful
 	trait=stubborn
@@ -1307,7 +1307,7 @@
 	learning=5
 	trait=intricate_webweaver
 	trait=one_eyed
-	trait=attractive
+	trait=fair
 	trait=shrewd
 	trait=groomed
 	trait=falconer
@@ -1329,7 +1329,7 @@
 	intrigue=4
 	learning=5
 	trait=thrifty_clerk
-	trait=fat
+	trait=is_fat
 	trait=patient
 	trait=arbitrary
 	trait=honorable
@@ -1961,7 +1961,7 @@
 	trait=chaste
 	trait=erudite
 	trait=rude
-	trait=attractive
+	trait=fair
 	disallow_random_traits=yes
 	2638.5.31={birth=yes}
 	2704.1.1={death=yes}
@@ -2234,7 +2234,7 @@
 	culture=muscovite
 	religion=pravoslavie
 	trait=tough_soldier
-	trait=attractive
+	trait=fair
 	trait=rude
 	trait=socializer
 	trait=lustful
@@ -2258,7 +2258,7 @@
 	trait=gregarious
 	trait=sympathy_christendom
 	disallow_random_traits=yes
-	2623.1.1.={birth=yes}
+	2623.1.1={birth=yes}
 	2704.1.1={death=yes}
 }
 1703125={
@@ -2270,7 +2270,7 @@
 	trait=shrewd
 	trait=gregarious
 	trait=cynical
-	trait=sympathy_old_world_cultists
+	trait=sympathy_old_world_cults
 	disallow_random_traits=yes
 	2598.4.12={birth=yes}
 	2610.1.1={add_spouse=1703126}
@@ -2316,7 +2316,7 @@
 	trait=painter
 	disallow_random_traits=yes
 	2630.5.1={birth=yes}
-	#2650.1.1={add_friend=1703131}
+	2650.1.1={ effect = { add_friend=1703131} }
 	2704.1.1={death=yes}
 }
 1703129={
@@ -2357,7 +2357,7 @@
 	trait=kind
 	disallow_random_traits=yes
 	2630.6.21={birth=yes}
-	#2650.1.1={add_friend=1703128}
+	2650.1.1={ effect = { add_friend=1703128 } }
 	2704.1.1={death=yes}
 }
 1703132={
@@ -2468,7 +2468,7 @@
 	culture=mari
 	religion=jumic
 	trait=twin
-	trait=afffectionate
+	trait=affectionate
 	trait=conscientious
 	trait=willful
 	trait=just
@@ -2525,7 +2525,7 @@
 	culture=chuvash
 	religion=dvoeverie
 	trait=scholarly_theologian
-	trait=attractive
+	trait=fair
 	trait=patient
 	trait=pious
 	trait=authoritative
@@ -2554,7 +2554,7 @@
 	culture=tatar
 	religion=ruhi
 	trait=intricate_webweaver
-	trait=attractive
+	trait=fair
 	trait=patient
 	trait=ambitious
 	trait=kind

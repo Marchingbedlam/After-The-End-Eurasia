@@ -2670,7 +2670,6 @@
 			killer=19911129
 		}
 	}
-	2680.1.1={death=yes}
 }
 19911133={
 	name="Swiatopôlk"
@@ -5212,7 +5211,7 @@
 	properties=0o0ddk000000
 	2588.11.14={birth=yes}
 	2655.1.20={add_spouse=1991353}
-	2660.2.24={event={add_rival=1991344}}
+	2660.2.24={effect={add_rival=1991344}}
 	2680.1.1={death=yes}
 }
 1991353={
