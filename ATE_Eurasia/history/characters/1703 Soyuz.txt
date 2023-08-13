@@ -2316,7 +2316,7 @@
 	trait=painter
 	disallow_random_traits=yes
 	2630.5.1={birth=yes}
-	2650.1.1={add_friend=1703131}
+	#2650.1.1={add_friend=1703131}
 	2704.1.1={death=yes}
 }
 1703129={
@@ -2357,7 +2357,7 @@
 	trait=kind
 	disallow_random_traits=yes
 	2630.6.21={birth=yes}
-	2650.1.1={add_friend=1703128}
+	#2650.1.1={add_friend=1703128}
 	2704.1.1={death=yes}
 }
 1703132={
@@ -2478,7 +2478,7 @@
 	2660.3.4={birth=yes}
 	2704.1.1={death=yes}
 }
-1703139={
+1703140={
 	name="Praska"
 	dynasty=2167087
 	culture=mari
@@ -2489,7 +2489,7 @@
 	2664.6.4={birth=yes}
 	2704.1.1={death=yes}
 }
-1703140={
+1703141={
 	name="Kestenttin"
 	dynasty=2087065 #Khuzangai
 	culture=chuvash
@@ -2503,10 +2503,10 @@
 	trait=honorable
 	disallow_random_traits=yes
 	2624.4.5={birth=yes}
-	2640.1.1={add_spouse=1703141}
+	2640.1.1={add_spouse=1703142}
 	2704.1.1={death=yes}
 }
-1703141={
+1703142={
 	name="Nadezha"
 	female=yes
 	culture=chuvash
@@ -2519,7 +2519,7 @@
 	2628.4.1={birth=yes}
 	2704.1.1={death=yes}
 }
-1703142={
+1703143={
 	name="Entiruk"
 	dynasty=2087065 #Khuzangai
 	culture=chuvash
@@ -2530,25 +2530,25 @@
 	trait=pious
 	trait=authoritative
 	trait=paranoid
-	father=1703140
-	mother=1703141
+	father=1703141
+	mother=1703142
 	disallow_random_traits=yes
 	2648.1.15={birth=yes}
 	2704.1.1={death=yes}
 }
-1703143={
+1703144={
 	name="Kamaj"
 	dynasty=2087065 #Khuzangai
 	culture=chuvash
 	religion=dvoeverie
 	trait=playful
 	trait=quick
-	father=1703140
-	mother=1703141
+	father=1703141
+	mother=1703142
 	2655.1.15={birth=yes}
 	2704.1.1={death=yes}
 }
-1703144={
+1703145={
 	name="Mahmud"
 	dynasty=1005007 #Shabayev
 	culture=tatar
