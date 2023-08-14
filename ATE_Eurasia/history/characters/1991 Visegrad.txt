@@ -5090,7 +5090,7 @@
 	properties=al0bcb000000
 	2599.1.20={birth=yes}
 	2620.4.1={add_spouse=1991345}
-	2660.1.20={add_rival=1991352}
+	2660.1.20={effect={add_rival=1991352}}
 	2680.1.1={death=yes}
 }
 1991345={
@@ -5566,9 +5566,9 @@
 	2613.7.26={birth=yes}
 	dna=bcdfiredaap
 	properties=ae00ma000000
-	2664.1.1={add_friend=1991343}
-	2664.1.1={add_friend=1991344}
-	2664.1.1={add_friend=1991352}
+	2664.1.1={effect={add_friend=1991343}}
+	2664.1.1={effect={add_friend=1991344}}
+	2664.1.1={effect={add_friend=1991352}}
 	2680.1.1={death=yes}
 }
 1991383={
@@ -5709,7 +5709,7 @@
 	trait=cynical
 	2641.3.1={birth=yes
 	add_claim=c_przemysl}
-	2664.1.1={add_rival=212602}
+	2664.1.1={effect={add_rival=212602}}
 	2680.1.1={death=yes}
 }
 212606={
@@ -5724,7 +5724,7 @@
 	trait=gregarious
 	2638.6.3={birth=yes}
 	2663.3.1={add_spouse=212607}
-	2664.1.1={add_friend=212602}
+	2664.1.1={effect={add_friend=212602}}
 	2680.1.1={death=yes}
 }
 212607={

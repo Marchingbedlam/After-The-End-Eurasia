@@ -578,7 +578,7 @@
 		add_claim=c_govi_altai
 		add_claim=c_dundgovi
 		add_claim=c_bayankhongor
-		set_character_flag=interdynasty_war
+		effect={set_character_flag=interdynasty_war}
 	}
 	2666.1.1={
 		prestige=500
@@ -720,7 +720,7 @@
 		add_claim=c_zavkhan
 		add_claim=c_khovd
 		add_claim=c_govi_altai
-		set_character_flag=interdynasty_war
+		effect={set_character_flag=interdynasty_war}
 	}
 	2680.1.1={death=yes}
 }
