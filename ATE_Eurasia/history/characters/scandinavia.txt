@@ -865,7 +865,7 @@
 	2623.1.1={birth=yes}
 	2648.1.1={add_spouse=8000191}
 	2660.1.1={
-		add_alliance=8000078 #Broken thing, please fix
+		effect={add_alliance=8000078}
 	}
 	2670.1.1={death=yes}
 }
