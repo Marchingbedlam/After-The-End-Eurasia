@@ -64,7 +64,7 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/damascus.dds"
 	}
 	spriteType = {
-		name = "GFX_al_azhar"
+		name = "GFX_evt_al_azhar"
 		texturefile = "gfx/event_pictures/al_azhar.dds"
 	}
 	spriteType = {
@@ -220,7 +220,7 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/yeshiva_rabbi.dds"
 	}
 	spriteType = {
-		name = "GFX_yeshiva_lilien"
+		name = "GFX_evt_yeshiva_lilien"
 		texturefile = "gfx/event_pictures/yeshiva_lilien.dds"
 	}
 	spriteType = {
@@ -354,6 +354,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_synod_hall"
 		texturefile = "gfx/event_pictures/synod_hall.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_nauvoo"
+		texturefile = "gfx/event_pictures/nauvoo.dds"
 	}
 #Imported from Orientalis
 	spriteType = {
