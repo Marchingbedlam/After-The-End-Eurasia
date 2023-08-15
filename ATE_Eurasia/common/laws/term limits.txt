@@ -173,6 +173,7 @@ laws = {
 			#NOT = { has_law = term_limit_9 }
 			NOT = { has_law = term_limit_6 }
 			NOT = { has_law = term_limit_3 }
+		}
 		ai_will_do = { 
 			factor = 0.1
 		modifier = {
@@ -207,8 +208,8 @@ laws = {
 			factor = 1
 			has_law = ze_administration_laws_rep_1
 		}
-			}
-			ai_will_revoke = { factor = 0 }
+		}
+		ai_will_revoke = { factor = 0 }
 			pass_effect = { }
 			effect = {
 			custom_tooltip = {
@@ -216,6 +217,5 @@ laws = {
 			revoke_law = term_limit_9
 				}	
 			}
-		}
 	}
 }

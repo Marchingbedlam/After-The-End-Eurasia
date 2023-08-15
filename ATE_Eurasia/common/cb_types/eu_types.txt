@@ -1029,7 +1029,7 @@ pirate_plundering = {
 			factor = 2
 			ROOT = {
 				government = pirate_government
-				trait = amibitious
+				trait = ambitious
 			}
 		}
 		modifier = {
@@ -1066,8 +1066,6 @@ tyranny_war = {
 	is_revolt_cb = yes
 	allow_whitepeace = no
 	can_call_allies = no 
-	piety_cost = 50
-	prestige_cost = 100
 	
 	can_use = {
 		ROOT = {
@@ -1098,8 +1096,8 @@ tyranny_war = {
 	}
 	can_use_gui = {
 		ROOT = {
-			piety_cost = 50
-			prestige_cost = 100
+			piety = 50
+			prestige = 100
 		}
 	}
 	
@@ -1173,7 +1171,7 @@ tyranny_war = {
 			ROOT = {
 				is_feudal = yes
 				OR = {
-					trait = amibitious
+					trait = ambitious
 					trait = just
 					trait = pious
 					trait = zealous
@@ -1202,8 +1200,6 @@ taharur_tyranny_war = {
 	is_revolt_cb = yes
 	allow_whitepeace = no
 	can_call_allies = no 
-	piety_cost = 50
-	prestige_cost = 100
 	
 	can_use = {
 		ROOT = {
@@ -1234,8 +1230,8 @@ taharur_tyranny_war = {
 	}
 	can_use_gui = {
 		ROOT = {
-			piety_cost = 50
-			prestige_cost = 100
+			piety = 50
+			prestige = 100
 		}
 	}
 	
@@ -1309,7 +1305,7 @@ taharur_tyranny_war = {
 			ROOT = {
 				is_feudal = yes
 				OR = {
-					trait = amibitious
+					trait = ambitious
 					trait = just
 					trait = pious
 					trait = zealous

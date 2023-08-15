@@ -160,12 +160,10 @@ narrative_event = {
 	option = {
 		name = EVTOPT_praise_rabbi
 		add_character_modifier = { name = haredi_learning years = 1 }
-		AND = {
-			clr_character_flag = { random_torah_verse_1 }
-			clr_character_flag = { random_torah_verse_2 }
-			clr_character_flag = { random_torah_verse_3 }
-			clr_character_flag = { random_torah_verse_4 }
-		}
+		clr_character_flag = random_torah_verse_1
+		clr_character_flag = random_torah_verse_2
+		clr_character_flag = random_torah_verse_3
+		clr_character_flag = random_torah_verse_4
 		narrative_event = { id = jewish.13 days = 2 }
 	}
 }
