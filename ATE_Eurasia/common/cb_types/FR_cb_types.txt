@@ -11,12 +11,6 @@ fr_chaotic_revolt = {
 	allow_whitepeace = no
 
 	can_use = {
-		FROM = {
-			NOT = { culture = monster }
-		}
-		ROOT = {
-			NOT = { culture = monster }
-		}
 		ROOT = {
 			has_character_flag = chaotic_revolter
 		}
@@ -25,7 +19,7 @@ fr_chaotic_revolt = {
 	on_add = {
 		hidden_tooltip = { fire_haruspicy_event_effect = yes }
 		if = {
-			limit = { defender = { is_offmap_governor = shou_lung } }
+			limit = { defender = { is_offmap_governor = offmap_china } }
 			attacker = {
 				sound_effect = china_angered_emperor
 				detract_grace_super_huge_effect = yes
@@ -47,7 +41,6 @@ fr_chaotic_revolt = {
 		if = {
 			limit = {
 				ROOT = {
-					trait = patron_hoar
 					is_rival = FROM
 				}
 			}
@@ -398,7 +391,6 @@ fr_chaotic_revolt = {
 		if = {
 			limit = {
 				FROM = {
-					trait = patron_hoar
 					is_rival = ROOT
 				}
 			}
