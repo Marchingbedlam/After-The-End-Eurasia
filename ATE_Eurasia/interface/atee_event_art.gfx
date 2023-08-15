@@ -359,6 +359,15 @@ spriteTypes = {
 		name = "GFX_evt_nauvoo"
 		texturefile = "gfx/event_pictures/nauvoo.dds"
 	}
+	spriteType = {
+		name = "GFX_evt_totem_pole"
+		texturefile = "gfx/event_pictures/totem_pole.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_ot_river"
+		texturefile = "gfx/event_pictures/ot_river.dds"
+		allwaystransparent = yes
+	}
 #Imported from Orientalis
 	spriteType = {
 		name = "GFX_evt_buddha_teaching"
