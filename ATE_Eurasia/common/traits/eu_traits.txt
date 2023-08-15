@@ -1904,3 +1904,49 @@ reclusive = {
 	child_compliment_adj = COMPL_NICE
 	ruler_designer_cost = -5
 }
+fashionable = {	
+	opposites =  {
+		uncouth
+	}
+	diplomacy = 1
+
+	sex_appeal_opinion = 10
+	same_opinion = 5
+	spouse_opinion = 5
+	opposite_opinion = -5
+	
+	monthly_character_prestige = 0.01
+	
+	child_compliment_adj = COMPL_SMART
+	male_compliment_adj = COMPL_STYLISH
+	female_compliment_adj = COMPL_ELEGANT
+	male_compliment = COMPL_CHARMER
+	female_compliment = COMPL_BEAUTY
+}
+tall = { #Renamed to GIant.
+	inherit_chance = 25
+	birth=100
+	
+	opposites =  {
+		dwarf
+	}
+	
+	martial = 2
+	intrigue = -1 #easily recognisable.
+	
+	combat_rating = 30
+
+	sex_appeal_opinion = 5
+	
+	ruler_designer_cost = 20
+	
+	male_compliment = COMPL_GIANT
+	child_compliment = COMPL_GIANT
+	male_compliment_adj = COMPL_IMPOSING
+	child_compliment_adj = COMPL_BIG
+	
+	male_insult = INSULT_HULK
+	female_insult = INSULT_HULK
+	male_insult_adj = INSULT_HULKING
+	female_insult_adj = INSULT_HULKING
+}
