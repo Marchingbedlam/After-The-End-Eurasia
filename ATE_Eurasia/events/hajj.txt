@@ -1201,7 +1201,7 @@ narrative_event = {
 	id = hajj.101
 	title = EVTTITLE_HAJJALAZHAR
 	desc = EVTDESC_hajj101
-	picture = GFX_al_azhar
+	picture = GFX_evt_al_azhar
 	border = GFX_event_narrative_frame_religion
 	
 	is_triggered_only = yes
@@ -1332,7 +1332,7 @@ narrative_event = {
 	id = hajj.105
 	title = EVTTITLE_HAJJALAZHARARRIVED
 	desc = EVTDESC_hajjalazharmosque
-	picture = GFX_al_azhar
+	picture = GFX_evt_al_azhar
 	border = GFX_event_narrative_frame_religion
 	prisoner = no
 	is_triggered_only = yes
