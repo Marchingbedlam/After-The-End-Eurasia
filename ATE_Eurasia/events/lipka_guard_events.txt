@@ -120,13 +120,13 @@ character_event = {
 	max_age = 40
 	capable_only = yes
 	prisoner = no
-	OR = {
-		culture_group = turkic_east
-		culture_group = turkic_west
-	}
 	has_dlc = "The Old Gods"
 	
 	trigger = {
+		OR = {
+			culture_group = turkic_east
+			culture_group = turkic_west
+		}
 		is_landed = no
 		in_command = no
 		NOR = { 
