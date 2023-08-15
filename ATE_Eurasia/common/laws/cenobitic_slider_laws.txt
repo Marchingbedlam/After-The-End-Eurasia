@@ -157,34 +157,34 @@ laws = {
 			modifier = {
 				factor = 10
 				OR = {
-					trait = pious
-					trait = zealous
+					has_trait = pious
+					has_trait = zealous
 				}
 			}
 			modifier = {
 				factor = 10
 				OR = {
-					trait = detached_priest
-					trait = martial_cleric
-					trait = scholarly_theologian
-					trait = mastermind_theologian
+					has_trait = detached_priest
+					has_trait = martial_cleric
+					has_trait = scholarly_theologian
+					has_trait = mastermind_theologian
 				}
 			}
 			modifier = { #Truly a Pious One
 			factor = 20
 				OR = {
-					trait = canon
-					trait = canoness
-					trait = celibate
+					has_trait = canon
+					has_trait = canoness
+					has_trait = celibate
 					}
 				
 			}
 			modifier = { #Truly a Pious One
 			factor = 10
 				OR = {
-					trait = regularis
-					trait = regulara
-					trait = chaste
+					has_trait = regularis
+					has_trait = regulara
+					has_trait = chaste
 					}
 			}
 			modifier = {
@@ -244,33 +244,33 @@ laws = {
 			modifier = {
 				factor = 10
 				OR = {
-					trait = pious
-					trait = zealous
+					has_trait = pious
+					has_trait = zealous
 				}
 			}
 			modifier = {
 				factor = 10
 				OR = {
-					trait = detached_priest
-					trait = martial_cleric
-					trait = scholarly_theologian
-					trait = mastermind_theologian
+					has_trait = detached_priest
+					has_trait = martial_cleric
+					has_trait = scholarly_theologian
+					has_trait = mastermind_theologian
 				}
 			}
 		modifier = { #Truly a Pious One
 			factor = 15
 				OR = {
-					trait = canon
-					trait = canoness
-					trait = celibate
+					has_trait = canon
+					has_trait = canoness
+					has_trait = celibate
 					}
 			}
 		modifier = { #Truly a Pious One
 			factor = 5
 				OR = {
-					trait = regularis
-					trait = regulara
-					trait = chaste
+					has_trait = regularis
+					has_trait = regulara
+					has_trait = chaste
 					}
 			}
 			modifier = {
@@ -359,26 +359,26 @@ laws = {
 			modifier = {
 				factor = 10
 				OR = {
-					trait = indulgent_wastrel
-					trait = thrifty_clerk
-					trait = fortune_builder
-					trait = midas_touched
+					has_trait = indulgent_wastrel
+					has_trait = thrifty_clerk
+					has_trait = fortune_builder
+					has_trait = midas_touched
 				}
 			}
 		modifier = { #Truly a Pious One
 			factor = 20
 				OR = {
-					trait = canon
-					trait = canoness
-					trait = celibate
+					has_trait = canon
+					has_trait = canoness
+					has_trait = celibate
 					}
 			}
 		modifier = { #Truly a Pious One
 			factor = 10
 				OR = {
-					trait = regularis
-					trait = regulara
-					trait = chaste
+					has_trait = regularis
+					has_trait = regulara
+					has_trait = chaste
 					}
 			}
 			modifier = {
@@ -470,9 +470,9 @@ laws = {
 		modifier = { #Truly a Pious One
 			factor = 20
 				OR = {
-					trait = desert_father
-					trait = desert_mother
-					trait = celibate
+					has_trait = desert_father
+					has_trait = desert_mother
+					has_trait = celibate
 				}
 			}
 		}

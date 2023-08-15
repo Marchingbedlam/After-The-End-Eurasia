@@ -2887,9 +2887,9 @@ is_devil_worshiper_trigger = {
 			society_member_of = the_cold_ones
 			society_member_of = the_plaguebringers
 			society_member_of = the_cult_of_kali
-			society_member_of = the_trollcrafters
-			society_member_of = the_vodouns
-			society_member_of = the_bacchants
+			#society_member_of = the_trollcrafters
+			#society_member_of = the_vodouns
+			#society_member_of = the_bacchants
 		}
 	}
 }
@@ -2926,24 +2926,20 @@ is_christian_monastic_member_trigger = {
 		society_member_of = monastic_order_orthodox
 		society_member_of = monastic_order_benedictine
 		society_member_of = monastic_order_dominican
-		society_member_of = monastic_order_nestorian
+		#society_member_of = monastic_order_nestorian
 		society_member_of = monastic_order_monophysite
 	}
 }
 
 is_dharmic_monastic_member_trigger = {
-	OR = {
-		society_member_of = monastic_order_hindu
-		society_member_of = monastic_order_buddhist
-		society_member_of = monastic_order_jain
-	}
+	always = no
 }
 
 is_monastic_member_trigger = {
 	OR = {
 		is_dharmic_monastic_member_trigger = yes
 		is_christian_monastic_member_trigger = yes
-		society_member_of = monastic_order_stoics
+		#society_member_of = monastic_order_stoics
 	}
 }
 
