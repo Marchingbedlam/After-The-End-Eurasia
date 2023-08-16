@@ -2213,7 +2213,7 @@ character_event = { # Hidden event
         }
 		any_vassal = {
 			any_realm_province = {
-				NOT = { has_province_modifier = reprimanded_merchabeshats }
+				NOT = { has_province_modifier = reprimanded_merchants }
 				any_province_holding = {
 					holding_type = CITY
 				}
@@ -2263,7 +2263,7 @@ letter_event = {
 			limit = {
 				NOT = { tier = BARON }
 				any_realm_province = {
-					NOT = { has_province_modifier = reprimanded_merchabeshats }
+					NOT = { has_province_modifier = reprimanded_merchants }
 					any_province_holding = {
 						holding_type = CITY
 					}
@@ -2275,7 +2275,7 @@ letter_event = {
 			limit = {
 				NOT = { tier = BARON }
 				any_realm_province = {
-					NOT = { has_province_modifier = reprimanded_merchabeshats }
+					NOT = { has_province_modifier = reprimanded_merchants }
 					any_province_holding = {
 						holding_type = CITY
 					}
@@ -2288,7 +2288,7 @@ letter_event = {
 			limit = {
 				NOT = { tier = BARON }
 				any_realm_province = {
-					NOT = { has_province_modifier = reprimanded_merchabeshats }
+					NOT = { has_province_modifier = reprimanded_merchants }
 					any_province_holding = {
 						holding_type = CITY
 					}
@@ -2317,20 +2317,20 @@ letter_event = {
 		
 		capital_scope = {
 			add_province_modifier = {
-				modifier = reprimanded_merchabeshats
+				modifier = reprimanded_merchants
 				duration = 3650
 			}
 		}
 		event_target:target_vassal_1 = {
 			random_realm_province = {
 				limit = {
-					NOT = { has_province_modifier = reprimanded_merchabeshats }
+					NOT = { has_province_modifier = reprimanded_merchants }
 					any_province_holding = {
 						holding_type = CITY
 					}
 				}
 				add_province_modifier = {
-					modifier = reprimanded_merchabeshats
+					modifier = reprimanded_merchants
 					duration = 3650
 				}
 			}
@@ -2339,13 +2339,13 @@ letter_event = {
 		event_target:target_vassal_2 = {
 			random_realm_province = {
 				limit = {
-					NOT = { has_province_modifier = reprimanded_merchabeshats }
+					NOT = { has_province_modifier = reprimanded_merchants }
 					any_province_holding = {
 						holding_type = CITY
 					}
 				}
 				add_province_modifier = {
-					modifier = reprimanded_merchabeshats
+					modifier = reprimanded_merchants
 					duration = 3650
 				}
 			}
@@ -2359,13 +2359,13 @@ letter_event = {
 		event_target:target_vassal_3 = {
 			random_realm_province = {
 				limit = {
-					NOT = { has_province_modifier = reprimanded_merchabeshats }
+					NOT = { has_province_modifier = reprimanded_merchants }
 					any_province_holding = {
 						holding_type = CITY
 					}
 				}
 				add_province_modifier = {
-					modifier = reprimanded_merchabeshats
+					modifier = reprimanded_merchants
 					duration = 3650
 				}
 			}
@@ -2382,7 +2382,7 @@ letter_event = {
 		}
 		capital_scope = {
 			add_province_modifier = {
-				modifier = reprimanded_merchabeshats
+				modifier = reprimanded_merchants
 				duration = 3650
 			}
 		}
@@ -2416,7 +2416,7 @@ letter_event = {
 	}
 }
 
-# Your liege has limited your merchabeshats privileges 
+# Your liege has limited your merchants privileges 
 character_event = {
 	id = ED.30003
 	has_dlc = "Jade Dragon"
@@ -2481,10 +2481,10 @@ character_event = {
 		tooltip = {
 			any_demesne_province = {	
 				limit = {
-					has_province_modifier = reprimanded_merchabeshats
+					has_province_modifier = reprimanded_merchants
 				}
 				add_province_modifier = {
-					modifier = reprimanded_merchabeshats
+					modifier = reprimanded_merchants
 					days = 3650
 				}
 			}
@@ -2866,9 +2866,9 @@ character_event = {
 								any_demesne_province = {
 									trade_route = silk_road
 								}
-								higher_tier_thabesha = BARON
+								higher_tier_than = BARON
 								NOR = { 
-									higher_tier_thabesha = COUNT
+									higher_tier_than = COUNT
 									is_nomadic = yes
 									has_character_modifier = china_raid_active
 									has_character_modifier = china_raid_grace_cd
@@ -2883,9 +2883,9 @@ character_event = {
 								any_demesne_province = {
 									trade_route = silk_road
 								}
-								higher_tier_thabesha = BARON
+								higher_tier_than = BARON
 								NOR = { 
-									higher_tier_thabesha = COUNT
+									higher_tier_than = COUNT
 									is_nomadic = yes
 									has_character_modifier = china_raid_active
 									has_character_modifier = china_raid_grace_cd
@@ -2901,9 +2901,9 @@ character_event = {
 								any_demesne_province = {
 									trade_route = silk_road
 								}
-								higher_tier_thabesha = BARON
+								higher_tier_than = BARON
 								NOR = { 
-									higher_tier_thabesha = COUNT
+									higher_tier_than = COUNT
 									is_nomadic = yes
 									has_character_modifier = china_raid_active
 									has_character_modifier = china_raid_grace_cd
@@ -2919,9 +2919,9 @@ character_event = {
 								any_demesne_province = {
 									trade_route = silk_road
 								}
-								higher_tier_thabesha = BARON
+								higher_tier_than = BARON
 								NOR = { 
-									higher_tier_thabesha = COUNT
+									higher_tier_than = COUNT
 									is_nomadic = yes
 									has_character_modifier = china_raid_active
 									has_character_modifier = china_raid_grace_cd
@@ -2937,9 +2937,9 @@ character_event = {
 								any_demesne_province = {
 									trade_route = silk_road
 								}
-								higher_tier_thabesha = BARON
+								higher_tier_than = BARON
 								NOR = { 
-									higher_tier_thabesha = COUNT
+									higher_tier_than = COUNT
 									is_nomadic = yes
 									has_character_modifier = china_raid_active
 									has_character_modifier = china_raid_grace_cd
@@ -2966,9 +2966,9 @@ character_event = {
 								any_demesne_province = {
 									trade_route = silk_road
 								}
-								higher_tier_thabesha = COUNT
+								higher_tier_than = COUNT
 								NOR = { 
-									higher_tier_thabesha = DUKE
+									higher_tier_than = DUKE
 									is_nomadic = yes
 									has_character_modifier = china_raid_active
 									has_character_modifier = china_raid_grace_cd
@@ -2983,9 +2983,9 @@ character_event = {
 								any_demesne_province = {
 									trade_route = silk_road
 								}
-								higher_tier_thabesha = COUNT
+								higher_tier_than = COUNT
 								NOR = { 
-									higher_tier_thabesha = DUKE
+									higher_tier_than = DUKE
 									is_nomadic = yes
 									has_character_modifier = china_raid_active
 									has_character_modifier = china_raid_grace_cd
@@ -3001,9 +3001,9 @@ character_event = {
 								any_demesne_province = {
 									trade_route = silk_road
 								}
-								higher_tier_thabesha = COUNT
+								higher_tier_than = COUNT
 								NOR = { 
-									higher_tier_thabesha = DUKE
+									higher_tier_than = DUKE
 									is_nomadic = yes
 									has_character_modifier = china_raid_active
 									has_character_modifier = china_raid_grace_cd
@@ -3019,9 +3019,9 @@ character_event = {
 								any_demesne_province = {
 									trade_route = silk_road
 								}
-								higher_tier_thabesha = COUNT
+								higher_tier_than = COUNT
 								NOR = { 
-									higher_tier_thabesha = DUKE
+									higher_tier_than = DUKE
 									is_nomadic = yes
 									has_character_modifier = china_raid_active
 									has_character_modifier = china_raid_grace_cd
@@ -3037,9 +3037,9 @@ character_event = {
 								any_demesne_province = {
 									trade_route = silk_road
 								}
-								higher_tier_thabesha = COUNT
+								higher_tier_than = COUNT
 								NOR = { 
-									higher_tier_thabesha = DUKE
+									higher_tier_than = DUKE
 									is_nomadic = yes
 									has_character_modifier = china_raid_active
 									has_character_modifier = china_raid_grace_cd
@@ -3066,9 +3066,9 @@ character_event = {
 								any_demesne_province = {
 									trade_route = silk_road
 								}
-								higher_tier_thabesha = DUKE
+								higher_tier_than = DUKE
 								NOR = { 
-									higher_tier_thabesha = KING
+									higher_tier_than = KING
 									is_nomadic = yes
 									has_character_modifier = china_raid_active
 									has_character_modifier = china_raid_grace_cd
@@ -3083,9 +3083,9 @@ character_event = {
 								any_demesne_province = {
 									trade_route = silk_road
 								}
-								higher_tier_thabesha = DUKE
+								higher_tier_than = DUKE
 								NOR = { 
-									higher_tier_thabesha = KING
+									higher_tier_than = KING
 									is_nomadic = yes
 									has_character_modifier = china_raid_active
 									has_character_modifier = china_raid_grace_cd
@@ -3101,9 +3101,9 @@ character_event = {
 								any_demesne_province = {
 									trade_route = silk_road
 								}
-								higher_tier_thabesha = DUKE
+								higher_tier_than = DUKE
 								NOR = { 
-									higher_tier_thabesha = KING
+									higher_tier_than = KING
 									is_nomadic = yes
 									has_character_modifier = china_raid_active
 									has_character_modifier = china_raid_grace_cd
@@ -3119,9 +3119,9 @@ character_event = {
 								any_demesne_province = {
 									trade_route = silk_road
 								}
-								higher_tier_thabesha = DUKE
+								higher_tier_than = DUKE
 								NOR = { 
-									higher_tier_thabesha = KING
+									higher_tier_than = KING
 									is_nomadic = yes
 									has_character_modifier = china_raid_active
 									has_character_modifier = china_raid_grace_cd
@@ -3137,9 +3137,9 @@ character_event = {
 								any_demesne_province = {
 									trade_route = silk_road
 								}
-								higher_tier_thabesha = DUKE
+								higher_tier_than = DUKE
 								NOR = { 
-									higher_tier_thabesha = KING
+									higher_tier_than = KING
 									is_nomadic = yes
 									has_character_modifier = china_raid_active
 									has_character_modifier = china_raid_grace_cd
@@ -3175,7 +3175,7 @@ character_event = {
 								any_demesne_province = {
 									trade_route = silk_road
 								}
-								higher_tier_thabesha = KING
+								higher_tier_than = KING
 								NOR = {
 									is_nomadic = yes
 									is_offmap_governor = yes #makes sure it doesn't fire for the governor themselves
@@ -3192,7 +3192,7 @@ character_event = {
 								any_demesne_province = {
 									trade_route = silk_road
 								}
-								higher_tier_thabesha = KING
+								higher_tier_than = KING
 								NOR = {
 									is_nomadic = yes
 									is_offmap_governor = yes #makes sure it doesn't fire for the governor themselves
@@ -3210,7 +3210,7 @@ character_event = {
 								any_demesne_province = {
 									trade_route = silk_road
 								}
-								higher_tier_thabesha = KING
+								higher_tier_than = KING
 								NOR = {
 									is_nomadic = yes
 									is_offmap_governor = yes #makes sure it doesn't fire for the governor themselves
@@ -3228,7 +3228,7 @@ character_event = {
 								any_demesne_province = {
 									trade_route = silk_road
 								}
-								higher_tier_thabesha = KING
+								higher_tier_than = KING
 								NOR = {
 									is_nomadic = yes
 									is_offmap_governor = yes #makes sure it doesn't fire for the governor themselves
@@ -3246,7 +3246,7 @@ character_event = {
 								any_demesne_province = {
 									trade_route = silk_road
 								}
-								higher_tier_thabesha = KING
+								higher_tier_than = KING
 								NOR = {
 									is_nomadic = yes
 									is_offmap_governor = yes #makes sure it doesn't fire for the governor themselves
@@ -5354,12 +5354,12 @@ character_event = {
                         5 = { 
                             trigger = { has_dlc = Reapers }
                             add_trait = one_eyed 
-                            chabeshage_martial = 1
+                            change_martial = 1
                         }
                         2 = { 
                             trigger = { has_dlc = Reapers }
-                            add_trait = one_habeshaded
-                            chabeshage_martial = 1
+                            add_trait = one_handed
+                            change_martial = 1
                         }
                         2 = { add_trait = ugly }
                     }
@@ -6485,7 +6485,7 @@ character_event = { # Radhabeshaite Merchabeshat
 	
 	trigger = {
 		NOR = {
-			has_character_flag = radhabeshaite_visit
+			has_character_flag = radhanite_visit
 			has_character_modifier = expelled_jewish
 			has_alternate_start_parameter = {
 				key = religion_names
@@ -6495,8 +6495,8 @@ character_event = { # Radhabeshaite Merchabeshat
 		any_realm_province = {
 			trade_route = silk_road
 			NOR = {
-				has_province_modifier = radhabeshaite_favor
-				has_province_modifier = radhabeshaite_favor_big
+				has_province_modifier = radhanite_favor
+				has_province_modifier = radhanite_favor_big
 			}
 			any_province_holding = {
 				holding_type = city
@@ -6544,14 +6544,14 @@ character_event = { # Radhabeshaite Merchabeshat
 				
 				add_trait = shrewd
 				
-				save_event_target_as = radhabeshaite_merchabeshat
+				save_event_target_as = radhanite_merchant
 			}
 			random_realm_province = {
 				limit = {
 					trade_route = silk_road
 					NOR = {
-						has_province_modifier = radhabeshaite_favor
-						has_province_modifier = radhabeshaite_favor_big
+						has_province_modifier = radhanite_favor
+						has_province_modifier = radhanite_favor_big
 					}
 					any_province_holding = {
 						holding_type = city
@@ -6560,9 +6560,9 @@ character_event = { # Radhabeshaite Merchabeshat
 						}
 					}
 				}
-				save_event_target_as = radhabeshaite_location
+				save_event_target_as = radhanite_location
 			}
-			event_target:radhabeshaite_location = {
+			event_target:radhanite_location = {
 				random_province_holding = {
 					limit = {
 						holding_type = city
@@ -6570,17 +6570,17 @@ character_event = { # Radhabeshaite Merchabeshat
 							tier = BARON
 						}
 					}
-					save_event_target_as = radhabeshaite_location_barony
+					save_event_target_as = radhanite_location_barony
 				}
 			}
-			event_target:radhabeshaite_location_barony = {
+			event_target:radhanite_location_barony = {
 				holder_scope = {
-					save_event_target_as = radhabeshaite_location_barony_holder
+					save_event_target_as = radhanite_location_barony_holder
 				}
 			}
 		}
 		
-		set_character_flag = radhabeshaite_visit
+		set_character_flag = radhanite_visit
 	}
 	
 	option = { # Accept offer
@@ -6588,17 +6588,17 @@ character_event = { # Radhabeshaite Merchabeshat
 		custom_tooltip = {
 			text = EVTOPTA_ED_7010_TT
 		}
-		event_target:radhabeshaite_merchabeshat = {
+		event_target:radhanite_merchant = {
 			show_portrait = yes
 		}
 		transfer_scaled_wealth = {
-			to = event_target:radhabeshaite_merchabeshat
+			to = event_target:radhanite_merchant
 			value = 0.5
 			min = 100
 		}
-		event_target:radhabeshaite_location = {
+		event_target:radhanite_location = {
 			add_province_modifier = {
-				name = radhabeshaite_favor
+				name = radhanite_favor
 				years = 50
 			}
 		}
@@ -6619,7 +6619,7 @@ character_event = { # Radhabeshaite Merchabeshat
 		trigger = {
 			trait = cannibal_trait
 		}
-		event_target:radhabeshaite_merchabeshat = {
+		event_target:radhanite_merchant = {
 			death = {
 				death_reason = death_execution_eaten
 				killer = ROOT
@@ -6643,16 +6643,16 @@ character_event = { # Radhabeshaite Merchabeshat
 		}
 	}
 
-	option = { # One-up the radhabeshaite
+	option = { # One-up the radhanite
 		name = EVTOPTC_ED_7010
 		trigger = {
-			event_target:radhabeshaite_location = {
+			event_target:radhanite_location = {
 				always = yes
 			}
-			event_target:radhabeshaite_location_barony = {
+			event_target:radhanite_location_barony = {
 				always = yes
 			}
-			event_target:radhabeshaite_location_barony_holder = {
+			event_target:radhanite_location_barony_holder = {
 				is_alive = yes
 			}
 		}
@@ -6661,25 +6661,25 @@ character_event = { # Radhabeshaite Merchabeshat
 		}
 		prestige = -100
 		transfer_scaled_wealth = {
-			to = event_target:radhabeshaite_merchabeshat
+			to = event_target:radhanite_merchant
 			value = 0.5
 			min = 100
 		}
-		event_target:radhabeshaite_merchabeshat = {
-			usurp_title = event_target:radhabeshaite_location_barony
+		event_target:radhanite_merchant = {
+			usurp_title = event_target:radhanite_location_barony
 			opinion = {
 				modifier = opinion_loyal_servant
 				who = ROOT
 				years = 100
 			}
 		}
-		event_target:radhabeshaite_location = {
+		event_target:radhanite_location = {
 			add_province_modifier = {
-				name = radhabeshaite_favor_big
+				name = radhanite_favor_big
 				years = 100
 			}
 		}
-		event_target:radhabeshaite_location_barony_holder = {
+		event_target:radhanite_location_barony_holder = {
 			opinion = {
 				who = ROOT
 				years = 100
@@ -6702,7 +6702,7 @@ character_event = { # Radhabeshaite Merchabeshat
 		custom_tooltip = {
 			text = EVTOPTD_ED_7010_TT
 			hidden_effect = {
-				event_target:radhabeshaite_merchabeshat = {
+				event_target:radhanite_merchant = {
 					leave_court_and_die_effect = yes
 				}
 			}

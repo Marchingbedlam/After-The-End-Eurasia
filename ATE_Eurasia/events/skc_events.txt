@@ -52,7 +52,7 @@ character_event = { #claim the blood of the sun king
 	trigger = {
 		higher_real_tier_than = DUKE
 		prestige = 2000
-		is_ill = no
+		is_ill_trigger = no
 		NOT = { trait = sang_capetien }
 		NOT = { trait = content }
 		learning = 10
@@ -215,7 +215,7 @@ character_event = {
 	trigger = {
 		higher_real_tier_than = DUKE
 		prestige = 250
-		is_ill = no
+		is_ill_trigger = no
 	}
 	
 	weight_multiplier = {
@@ -227,7 +227,7 @@ character_event = {
 		modifier = {
 			factor = 1.5
 			any_vassal_or_courtier = {
-				is_ill = yes
+				is_ill_trigger = yes
 			}
 		}
 		
@@ -239,13 +239,13 @@ character_event = {
 		if = {
 			trigger = {
 				any_vassal = {
-					is_ill = yes
+					is_ill_trigger = yes
 					religion = sun_king_cultist
 				}
 			}
 			any_vassal = {
 				limit = {
-					is_ill = yes
+					is_ill_trigger = yes
 					religion = sun_king_cultist
 				}
 				save_event_target_as = royal_touch_vassal
@@ -254,14 +254,14 @@ character_event = {
 		if = {
 			trigger = {
 				any_courtier = {
-					is_ill = yes
+					is_ill_trigger = yes
 					religion = sun_king_cultist
 					is_landed = no
 				}
 			}
 			any_courtier = {
 				limit = {
-					is_ill = yes
+					is_ill_trigger = yes
 					religion = sun_king_cultist
 					is_landed = no
 				}
@@ -276,14 +276,14 @@ character_event = {
 	option = {
 		trigger = {
 			any_vassal = {
-				is_ill = yes
+				is_ill_trigger = yes
 				religion = sun_king_cultist
 			}
 		}
 		name = EVTOPTA_royal_touch_1
 		event_target:royal_touch_vassal = {
 			limit = {
-				is_ill = yes
+				is_ill_trigger = yes
 				religion = sun_king_cultist
 			}
 			ROOT = {
@@ -303,7 +303,7 @@ character_event = {
 	option = {
 		trigger = {
 			any_courtier = {
-				is_ill = yes
+				is_ill_trigger = yes
 				religion = sun_king_cultist
 				is_landed = no
 			}
@@ -311,7 +311,7 @@ character_event = {
 		name = EVTOPTB_royal_touch_1
 		event_target:royal_touch_courtier = {
 			limit = {
-				is_ill = yes
+				is_ill_trigger = yes
 				religion = sun_king_cultist
 				is_landed = no
 			}
@@ -406,7 +406,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		is_ill = no
+		is_ill_trigger = no
 	}
 	
 	fail_trigger_effect = {
