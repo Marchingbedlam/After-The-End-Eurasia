@@ -1567,11 +1567,11 @@ papist = {
 	}
 	
 	religion_head_opinion = 10
-	feudal_opinion = -5
+	castle_opinion = -5
 	liege_opinion = -10
 	church_opinion = 5
-	city_opinion = -5
-	seculares_opinion = -15
+	town_opinion = -5
+	populares_opinion = -15
 	
 	learning = 2
 	diplomacy = -1
@@ -1593,10 +1593,10 @@ populares = {
 	}
 	
 	religion_head_opinion = -10
-	feudal_opinion = 5
+	castle_opinion = 5
 	liege_opinion = 10
 	church_opinion = -5
-	city_opinion = 5
+	town_opinion = 5
 	papist_opinion = -15
 	defensor_fidei_opinion = 5
 	
