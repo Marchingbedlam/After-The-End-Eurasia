@@ -7,30 +7,30 @@
 #Matthew Clohessy
 # Alexander Oltner
 
-namespace = JD
+namespace = EL
 
 #GAINING GRACE
 
 #Sending gift
 character_event = {
-    id = JD.20023
+    id = EL.20023
 	has_dlc = "Jade Dragon"
     hide_window = yes
     is_triggered_only = yes
-    immediate = { FROMFROM = { letter_event = { id = JD.20024 } } }
+    immediate = { FROMFROM = { letter_event = { id = EL.20024 } } }
 }
 
 
 letter_event = {
-    id = JD.20024
+    id = EL.20024
 	has_dlc = "Jade Dragon"
-    desc = EVTDESC_JD_20024
+    desc = EVTDESC_EL_20024
     border = GFX_event_letter_frame_diplomacy
 
     is_triggered_only = yes
 
     option = { 
-        name = EVTOPTA_JD_20024
+        name = EVTOPTA_EL_20024
 		
 		sound_effect = china_grace_gain
 		if = {
@@ -100,23 +100,23 @@ letter_event = {
 
 #Asking to become tributary
 character_event = {
-    id = JD.20027
+    id = EL.20027
 	has_dlc = "Jade Dragon"
     hide_window = yes
     is_triggered_only = yes
-    immediate = { FROMFROM = { letter_event = { id = JD.20028 } } }
+    immediate = { FROMFROM = { letter_event = { id = EL.20028 } } }
 }
 
 letter_event = {
-    id = JD.20028
+    id = EL.20028
 	has_dlc = "Jade Dragon"
-    desc = EVTDESC_JD_20028
+    desc = EVTDESC_EL_20028
     border = GFX_event_letter_frame_diplomacy
 
     is_triggered_only = yes
 
     option = { 
-        name = EVTOPTA_JD_20028
+        name = EVTOPTA_EL_20028
 		
 		sound_effect = china_grace_gain
 		if = {
@@ -184,7 +184,7 @@ letter_event = {
 
 #Chinese doctor
 character_event = {
-    id = JD.20021
+    id = EL.20021
 	has_dlc = "Jade Dragon"
     hide_window = yes
     is_triggered_only = yes
@@ -475,16 +475,16 @@ character_event = {
 					change_learning = 5
 				}
             }
-            letter_event = { id = JD.20022 } 
+            letter_event = { id = EL.20022 } 
         } 
     }
 }
 
 #Governor presents doctor
 letter_event = {
-    id = JD.20022
+    id = EL.20022
 	has_dlc = "Jade Dragon"
-    desc = EVTDESC_JD_20022
+    desc = EVTDESC_EL_20022
     border = GFX_event_letter_frame_diplomacy
 
     hide_new = yes
@@ -492,8 +492,8 @@ letter_event = {
     is_triggered_only = yes
 
     option = { 
-        name = EVTOPTA_JD_20022
-        custom_tooltip = { text = EVTOPTA_JD_20022_TT }
+        name = EVTOPTA_EL_20022
+        custom_tooltip = { text = EVTOPTA_EL_20022_TT }
         event_target:chinese_doctor = {
             show_scope_change = no
             give_minor_title = title_court_physician
@@ -504,23 +504,23 @@ letter_event = {
 
 #Peace deal
 character_event = {
-    id = JD.20025
+    id = EL.20025
 	has_dlc = "Jade Dragon"
     hide_window = yes
     is_triggered_only = yes
-    immediate = { FROMFROM = { letter_event = { id = JD.20026 } } }
+    immediate = { FROMFROM = { letter_event = { id = EL.20026 } } }
 }
 
 letter_event = {
-    id = JD.20026
+    id = EL.20026
 	has_dlc = "Jade Dragon"
-    desc = EVTDESC_JD_20026
+    desc = EVTDESC_EL_20026
     border = GFX_event_letter_frame_diplomacy
 
     is_triggered_only = yes
     
     option = { 
-        name = EVTOPTA_JD_20026
+        name = EVTOPTA_EL_20026
 
         add_character_modifier = {
             inherit = yes
@@ -532,7 +532,7 @@ letter_event = {
 
 #Administrator (scholar-bureaucrat)
 character_event = {
-    id = JD.20029
+    id = EL.20029
 	has_dlc = "Jade Dragon"
     hide_window = yes
     is_triggered_only = yes
@@ -769,16 +769,16 @@ character_event = {
                     }
                 } 
             }
-            letter_event = { id = JD.20030 } 
+            letter_event = { id = EL.20030 } 
         } 
     }
 }
 
 #Governor presents administrator
 letter_event = {
-    id = JD.20030
+    id = EL.20030
 	has_dlc = "Jade Dragon"
-    desc = EVTDESC_JD_20030
+    desc = EVTDESC_EL_20030
     border = GFX_event_letter_frame_diplomacy
 
     hide_new = yes
@@ -786,8 +786,8 @@ letter_event = {
     is_triggered_only = yes
 
     option = { 
-        name = EVTOPTA_JD_20022
-        custom_tooltip = { text = EVTOPTA_JD_20030_TT }
+        name = EVTOPTA_EL_20022
+        custom_tooltip = { text = EVTOPTA_EL_20030_TT }
         event_target:ethiopian_administrator = {
             show_scope_change = no
             if = {
@@ -823,19 +823,19 @@ letter_event = {
 }
 
 character_event = {
-    id = JD.9000
+    id = EL.9000
     hide_window = yes
     is_triggered_only = yes
 	
 	has_dlc = "Jade Dragon"
 	
     immediate = { 
-		character_event = { id = JD.9001 days = 1 }
+		character_event = { id = EL.9001 days = 1 }
 	}
 }
 
 character_event = { # Reapply modifier on succession
-    id = JD.9001
+    id = EL.9001
     hide_window = yes
     is_triggered_only = yes
 	
@@ -881,7 +881,7 @@ character_event = { # Reapply modifier on succession
 
 #Master engineer
 character_event = {
-    id = JD.20031
+    id = EL.20031
 	has_dlc = "Jade Dragon"
     hide_window = yes
     is_triggered_only = yes
@@ -1124,16 +1124,16 @@ character_event = {
                     }
                 } 
             }
-            letter_event = { id = JD.20032 } 
+            letter_event = { id = EL.20032 } 
         } 
     }
 }
 
 #Governor presents master engineer
 letter_event = {
-    id = JD.20032
+    id = EL.20032
 	has_dlc = "Jade Dragon"
-    desc = EVTDESC_JD_20032
+    desc = EVTDESC_EL_20032
     border = GFX_event_letter_frame_diplomacy
 
     hide_new = yes
@@ -1141,8 +1141,8 @@ letter_event = {
     is_triggered_only = yes
 
     option = { 
-        name = EVTOPTA_JD_20022
-        custom_tooltip = { text = EVTOPTA_JD_20032_TT }
+        name = EVTOPTA_EL_20022
+        custom_tooltip = { text = EVTOPTA_EL_20032_TT }
         event_target:ethiopian_master_engineer = { 
             show_scope_change = no
             if = {
@@ -1161,7 +1161,7 @@ letter_event = {
 
 #Master engineer builds something
 character_event = {
-    id = JD.20033
+    id = EL.20033
 	has_dlc = "Jade Dragon"
     hide_window = yes
     is_triggered_only = yes
@@ -1176,10 +1176,10 @@ character_event = {
             limit = {
                 has_character_flag = china_master_engineer_golden_age
             }
-            character_event = { id = JD.20033 days = 1460 random = 542 } 
+            character_event = { id = EL.20033 days = 1460 random = 542 } 
         }
 		else = {
-            character_event = { id = JD.20033 days = 2920 random = 1095 } 
+            character_event = { id = EL.20033 days = 2920 random = 1095 } 
         }
  
         #Building 
@@ -1273,26 +1273,26 @@ character_event = {
             random_list = {
                 20 = {
                     trigger = { NOT = { has_province_modifier = jd_paper_mill } }
-                    owner = { character_event = { id = JD.20034 } }
+                    owner = { character_event = { id = EL.20034 } }
                 }
                 20 = {
                     trigger = { NOT = { has_province_modifier = jd_fireworks_guild } }
-                    owner = { character_event = { id = JD.20035 } }
+                    owner = { character_event = { id = EL.20035 } }
                 }
                 20 = {
                     trigger = { 
                         NOT = { has_province_modifier = jd_dry_docks } 
                         port = yes
                     }
-                    owner = { character_event = { id = JD.20036 } }
+                    owner = { character_event = { id = EL.20036 } }
                 }
                 20 = {
                     trigger = { NOT = { has_province_modifier = jd_administrative_outpost } }
-                    owner = { character_event = { id = JD.20037 } }
+                    owner = { character_event = { id = EL.20037 } }
                 }
                 20 = {
                     trigger = { NOT = { has_province_modifier = jd_blast_furnace } }
-                    owner = { character_event = { id = JD.20038 } }
+                    owner = { character_event = { id = EL.20038 } }
                 }
             }
         }
@@ -1301,9 +1301,9 @@ character_event = {
 
 #Announcement paper mill
 character_event = {
-    id = JD.20034
+    id = EL.20034
 	has_dlc = "Jade Dragon"
-    desc = EVTDESC_JD_20034
+    desc = EVTDESC_EL_20034
     picture = GFX_evt_bandits
     notification = yes
 
@@ -1335,9 +1335,9 @@ character_event = {
 
 
 character_event = {
-    id = JD.20035
+    id = EL.20035
 	has_dlc = "Jade Dragon"
-    desc = EVTDESC_JD_20035
+    desc = EVTDESC_EL_20035
     picture = GFX_evt_bandits
     notification = yes
 
@@ -1368,9 +1368,9 @@ character_event = {
 }   
 
 character_event = {
-    id = JD.20036
+    id = EL.20036
 	has_dlc = "Jade Dragon"
-    desc = EVTDESC_JD_20036
+    desc = EVTDESC_EL_20036
     picture = GFX_evt_bandits
     notification = yes
 
@@ -1401,9 +1401,9 @@ character_event = {
 }   
 
 character_event = {
-    id = JD.20037
+    id = EL.20037
 	has_dlc = "Jade Dragon"
-    desc = EVTDESC_JD_20037
+    desc = EVTDESC_EL_20037
     picture = GFX_evt_bandits
     notification = yes
 
@@ -1434,9 +1434,9 @@ character_event = {
 }   
 
 character_event = {
-    id = JD.20038
+    id = EL.20038
 	has_dlc = "Jade Dragon"
-    desc = EVTDESC_JD_20038
+    desc = EVTDESC_EL_20038
     picture = GFX_evt_bandits
     notification = yes
 
@@ -1468,7 +1468,7 @@ character_event = {
 
 #Strategist
 character_event = {
-    id = JD.20039
+    id = EL.20039
 	has_dlc = "Jade Dragon"
     hide_window = yes
     is_triggered_only = yes
@@ -1711,16 +1711,16 @@ character_event = {
 					set_character_flag = jd_strategist_golden_age
                 }
 			}
-            letter_event = { id = JD.20040 } 
+            letter_event = { id = EL.20040 } 
         } 
     }
 }
 
 #Governor presents strategist
 letter_event = {
-    id = JD.20040
+    id = EL.20040
 	has_dlc = "Jade Dragon"
-    desc = EVTDESC_JD_20040
+    desc = EVTDESC_EL_20040
     border = GFX_event_letter_frame_diplomacy
 
     hide_new = yes
@@ -1728,8 +1728,8 @@ letter_event = {
     is_triggered_only = yes
 
     option = { 
-        name = EVTOPTA_JD_20022
-        custom_tooltip = { text = EVTOPTA_JD_20040_TT }
+        name = EVTOPTA_EL_20022
+        custom_tooltip = { text = EVTOPTA_EL_20040_TT }
         event_target:ethiopian_strategist = {
             show_scope_change = no
             set_character_flag = appear_in_option
@@ -1750,7 +1750,7 @@ letter_event = {
 
 #Strategist has taught someone else, event for picking commander and trait (hidden)
 character_event = {
-    id = JD.20041
+    id = EL.20041
     hide_window = yes
 
     is_triggered_only = yes
@@ -1853,26 +1853,26 @@ character_event = {
                     set_character_flag = give_sapper
                 }
             }
-            character_event = { id = JD.20042 }
+            character_event = { id = EL.20042 }
         }
     }
 }
 
 #Ping event
 character_event = {
-    id = JD.20042
+    id = EL.20042
 	has_dlc = "Jade Dragon"
     hide_window = yes
     is_triggered_only = yes
     immediate = { 
-    	FROM = { character_event = { id = JD.20043 } }
-    	character_event = { id = JD.20044 days = 1 } #clear flag
+    	FROM = { character_event = { id = EL.20043 } }
+    	character_event = { id = EL.20044 days = 1 } #clear flag
     }
 }
 
 #Handing out trait and notifying liege
 character_event = {
-    id = JD.20043
+    id = EL.20043
 	has_dlc = "Jade Dragon"
     picture = GFX_evt_china_invades
     border = GFX_event_normal_frame_war
@@ -1882,19 +1882,19 @@ character_event = {
 
     desc = {
         trigger = { event_target:commander_student = { has_character_flag = give_master_of_flame } }
-        text = EVTDESC_JD_20041_A
+        text = EVTDESC_EL_20041_A
     }
     desc = {
         trigger = { event_target:commander_student = { has_character_flag = give_logistics_expert } }
-        text = EVTDESC_JD_20041_B
+        text = EVTDESC_EL_20041_B
     }
     desc = {
         trigger = { event_target:commander_student = { has_character_flag = give_levy_coordinator } }
-        text = EVTDESC_JD_20041_C
+        text = EVTDESC_EL_20041_C
     }
     desc = {
         trigger = { event_target:commander_student = { has_character_flag = give_sapper } }
-        text = EVTDESC_JD_20041_D
+        text = EVTDESC_EL_20041_D
     }
 
     option = { 
@@ -1914,7 +1914,7 @@ character_event = {
 
 #Clear flag separately so desc works for notification
 character_event = {
-	id = JD.20044
+	id = EL.20044
 	has_dlc = "Jade Dragon"
 	is_triggered_only = yes
 	hide_window = yes
@@ -1931,7 +1931,7 @@ character_event = {
 
 #Randomizing the spouse 
 character_event = {
-    id = JD.20045
+    id = EL.20045
 	has_dlc = "Jade Dragon"
     hide_window = yes
     is_triggered_only = yes
@@ -2604,14 +2604,14 @@ character_event = {
         }
 
         FROMFROM = { #The arranger of the marriage
-            letter_event = { id = JD.20046 } 
+            letter_event = { id = EL.20046 } 
         } 
     }
 }
 
 #The spouse is on its way
 letter_event = {
-    id = JD.20046
+    id = EL.20046
 	has_dlc = "Jade Dragon"
     border = GFX_event_letter_frame_diplomacy
 
@@ -2620,35 +2620,35 @@ letter_event = {
 			event_target:imperial_marriage_spouse_2 = { is_female = yes }
 			offmap_ethiopia = { offmap_ruler = { age = 32 } }
 		}
-        text = EVTDESC_JD_20046_A
+        text = EVTDESC_EL_20046_A
     }
     desc = {
         trigger = { event_target:imperial_marriage_spouse_2 = { is_female = no } }
-        text = EVTDESC_JD_20046_B
+        text = EVTDESC_EL_20046_B
     }
 	desc = {
         trigger = {
 			event_target:imperial_marriage_spouse_2 = { is_female = yes }
 			offmap_ethiopia = { offmap_ruler = { NOT = { age = 32 } } }
 		}
-        text = EVTDESC_JD_20046_C
+        text = EVTDESC_EL_20046_C
     }
 
     is_triggered_only = yes
     
     option = { 
-        name = EVTOPTA_JD_20046
-        custom_tooltip = { text = EVTOPTA_JD_20046_TT }
+        name = EVTOPTA_EL_20046
+        custom_tooltip = { text = EVTOPTA_EL_20046_TT }
 
         hidden_effect = {
-            event_target:imperial_marriage_spouse_2 = { character_event = { id = JD.20047 days = 14 random = 10 } } 
+            event_target:imperial_marriage_spouse_2 = { character_event = { id = EL.20047 days = 14 random = 10 } } 
         }
     }
 }
 
 #The chinese spouse ping event
 character_event = {
-    id = JD.20047
+    id = EL.20047
 	has_dlc = "Jade Dragon"
     hide_window = yes
     is_triggered_only = yes
@@ -2670,41 +2670,41 @@ character_event = {
         remove_trait = cannot_marry
         event_target:imperial_marriage_spouse_1 = { 
             remove_trait = cannot_marry
-            narrative_event = { id = JD.20048 } 
+            narrative_event = { id = EL.20048 } 
         } 
     }
 }
  
 #The marriage takes place
 narrative_event = {
-    id = JD.20048
+    id = EL.20048
 	has_dlc = "Jade Dragon"
-    title = EVTTITLE_JD_20048
+    title = EVTTITLE_EL_20048
     picture = GFX_evt_ethiopia_golden_age
     border = GFX_event_narrative_frame_diplomacy
 
     desc = {
         trigger = { FROM = { has_character_flag = archetype_conservative } }
-        text = EVTDESC_JD_20048_CONSERVATIVE
+        text = EVTDESC_EL_20048_CONSERVATIVE
     }
     desc = {
         trigger = { FROM = { has_character_flag = archetype_supportive } }
-        text = EVTDESC_JD_20048_SUPPORTIVE
+        text = EVTDESC_EL_20048_SUPPORTIVE
     }
     desc = {
         trigger = { FROM = { has_character_flag = archetype_decisive } }
-        text = EVTDESC_JD_20048_DECISIVE
+        text = EVTDESC_EL_20048_DECISIVE
     }
     desc = {
         trigger = { FROM = { has_character_flag = archetype_sociable } }
-        text = EVTDESC_JD_20048_SOCIABLE
+        text = EVTDESC_EL_20048_SOCIABLE
     }
 
     is_triggered_only = yes
     
 
     option = { 
-        name = EVTOPTA_JD_20048
+        name = EVTOPTA_EL_20048
 
         #Marry
         if = {
@@ -2732,16 +2732,16 @@ narrative_event = {
             }
         }
 
-        hidden_effect = { FROMFROM = { character_event = { id = JD.20049 } } } #Letting the decision taker know
+        hidden_effect = { FROMFROM = { character_event = { id = EL.20049 } } } #Letting the decision taker know
         clr_character_flag = awaiting_imperial_wedding
     }
 }
 
 #Anouncement
 character_event = {
-    id = JD.20049
+    id = EL.20049
 	has_dlc = "Jade Dragon"
-    desc = EVTDESC_JD_20049
+    desc = EVTDESC_EL_20049
     picture = GFX_evt_ethiopia_golden_age
     border = GFX_event_normal_frame_diplomacy
 
@@ -2752,8 +2752,8 @@ character_event = {
     }
 
     option = {
-        name = EVTOPTA_JD_20049
-        custom_tooltip = { text = EVTOPTA_JD_20049_TT }
+        name = EVTOPTA_EL_20049
+        custom_tooltip = { text = EVTOPTA_EL_20049_TT }
         custom_tooltip = {
             text = chinese_imperial_marriage_peace_deal_effect_tt
             add_character_modifier = {
@@ -2773,7 +2773,7 @@ character_event = {
 
 #Siege Engineers
 character_event = {
-    id = JD.3000
+    id = EL.3000
 	has_dlc = "Jade Dragon"
     hide_window = yes
     is_triggered_only = yes
@@ -3082,16 +3082,16 @@ character_event = {
                     months = 1200
                 }
             }
-            letter_event = { id = JD.3001 } 
+            letter_event = { id = EL.3001 } 
         }
     }
 }
 
 #Governor presents Siege Engineers
 letter_event = {
-    id = JD.3001
+    id = EL.3001
 	has_dlc = "Jade Dragon"
-    desc = EVTDESC_JD_3001
+    desc = EVTDESC_EL_3001
     border = GFX_event_letter_frame_diplomacy
 
     hide_new = yes
@@ -3099,9 +3099,9 @@ letter_event = {
     is_triggered_only = yes
 
     option = { 
-        name = EVTOPTA_JD_3001
+        name = EVTOPTA_EL_3001
 		custom_tooltip = {
-			text = EVTOPTA_JD_3001_tt
+			text = EVTOPTA_EL_3001_tt
 		}
         event_target:chinese_siege_engineer_1 = {
             show_scope_change = no
@@ -3141,9 +3141,9 @@ letter_event = {
         }
     }
 	option = { 
-        name = EVTOPTB_JD_3001
+        name = EVTOPTB_EL_3001
 		custom_tooltip = {
-			text = EVTOPTB_JD_3001_tt
+			text = EVTOPTB_EL_3001_tt
 		}
 		event_target:chinese_siege_engineer_1 = {
 			set_character_flag = appear_in_option
@@ -3533,39 +3533,39 @@ letter_event = {
 
 # Relief Expedition
 character_event = {
-    id = JD.3010
+    id = EL.3010
 	has_dlc = "Jade Dragon"
     hide_window = yes
     is_triggered_only = yes
-    immediate = { FROMFROM = { letter_event = { id = JD.3011 } } }
+    immediate = { FROMFROM = { letter_event = { id = EL.3011 } } }
 }
 
 letter_event = {
-    id = JD.3011
+    id = EL.3011
 	has_dlc = "Jade Dragon"
-    desc = EVTDESC_JD_3011
+    desc = EVTDESC_EL_3011
     border = GFX_event_letter_frame_diplomacy
 
     is_triggered_only = yes
 
     option = { 
-        name = EVTOPTA_JD_3011
+        name = EVTOPTA_EL_3011
     }
 }
 
 # Request Invasion
 character_event = {
-    id = JD.3020
+    id = EL.3020
 	has_dlc = "Jade Dragon"
     hide_window = yes
     is_triggered_only = yes
-    immediate = { FROMFROM = { letter_event = { id = JD.3021 } } }
+    immediate = { FROMFROM = { letter_event = { id = EL.3021 } } }
 }
 
 letter_event = {
-    id = JD.3021
+    id = EL.3021
 	has_dlc = "Jade Dragon"
-    desc = EVTDESC_JD_3021
+    desc = EVTDESC_EL_3021
     border = GFX_event_letter_frame_diplomacy
 
     is_triggered_only = yes
@@ -3576,7 +3576,7 @@ letter_event = {
 	
 	option = {
         name = {
-        	text = EVTOPTA_JD_3021 # Join wars
+        	text = EVTOPTA_EL_3021 # Join wars
         }
         trigger = {
          	event_target:chinese_invasion_instigator = { character = ROOT }
@@ -3601,7 +3601,7 @@ letter_event = {
 }
 
 narrative_event = { # NEWS: visible event for player (shatter realm invasion)
-    id = JD.3022
+    id = EL.3022
 	has_dlc = "Jade Dragon"
     title = NEWS_FROM_CHINA
 	picture = GFX_evt_china_expansionist
@@ -3610,13 +3610,13 @@ narrative_event = { # NEWS: visible event for player (shatter realm invasion)
 	background = GFX_event_window_news_from_china
 
 	desc = {
-		text = EVTDESC_JD_3022_A
+		text = EVTDESC_EL_3022_A
 		trigger = {
 			event_target:chinese_invasion_target = { character = ROOT }
 		}
 	}
 	desc = {
-		text = EVTDESC_JD_3022_B
+		text = EVTDESC_EL_3022_B
 		trigger = {
 			NOT = { event_target:chinese_invasion_target = { character = ROOT } }
 		}
@@ -3628,25 +3628,25 @@ narrative_event = { # NEWS: visible event for player (shatter realm invasion)
 
     option = {
         name = {
-        	text = EVTOPTA_JD_10102_A_brave
+        	text = EVTOPTA_EL_10102_A_brave
         	trigger = {
 				trait = brave
         	}
         }
         name = {
-        	text = EVTOPTA_JD_10102_A_craven
+        	text = EVTOPTA_EL_10102_A_craven
         	trigger = {
 				trait = craven
         	}
         }
         name = {
-        	text = EVTOPTA_JD_10102_A_pious
+        	text = EVTOPTA_EL_10102_A_pious
         	trigger = {
 				is_pious_trigger = yes
         	}
         }
         name = {
-        	text = EVTOPTA_JD_10102_A_neutral
+        	text = EVTOPTA_EL_10102_A_neutral
         	trigger = {
 				NOT = { trait = craven }
 				NOT = { trait = brave }
@@ -3666,11 +3666,11 @@ narrative_event = { # NEWS: visible event for player (shatter realm invasion)
 
     option = {
         name = {
-        	text = EVTOPTA_JD_10102_B_same_religion #May [HighGod] protect them
+        	text = EVTOPTA_EL_10102_B_same_religion #May [HighGod] protect them
         	trigger = {	event_target:chinese_invasion_target = { religion_group = ROOT } }
         }
         name = {
-        	text = EVTOPTA_JD_10102_B_other_religion #May their gods protect them
+        	text = EVTOPTA_EL_10102_B_other_religion #May their gods protect them
         	trigger = {	NOT = { event_target:chinese_invasion_target = { religion_group = ROOT } } }
         }
         trigger = {
@@ -3689,7 +3689,7 @@ narrative_event = { # NEWS: visible event for player (shatter realm invasion)
 	
 	option = {
         name = {
-        	text = EVTOPTC_JD_3022 # Just as planned
+        	text = EVTOPTC_EL_3022 # Just as planned
         }
         trigger = {
          	event_target:chinese_invasion_instigator = { character = ROOT }
@@ -3705,7 +3705,7 @@ narrative_event = { # NEWS: visible event for player (shatter realm invasion)
 
 # Request Artifact
 character_event = {
-    id = JD.3030
+    id = EL.3030
 	has_dlc = "Jade Dragon"
     hide_window = yes
     is_triggered_only = yes
@@ -4036,42 +4036,42 @@ character_event = {
 				}
 			}
 		}
-		FROMFROM = { letter_event = { id = JD.3031 } } 
+		FROMFROM = { letter_event = { id = EL.3031 } } 
 	}
 }
 
 letter_event = {
-    id = JD.3031
+    id = EL.3031
 	has_dlc = "Jade Dragon"
-    desc = EVTDESC_JD_3031
+    desc = EVTDESC_EL_3031
     border = GFX_event_letter_frame_diplomacy
 
     is_triggered_only = yes
 
     option = { 
-        name = EVTOPTA_JD_3031
+        name = EVTOPTA_EL_3031
     }
 }
 
 # Supply Horses
 character_event = {
-    id = JD.3040
+    id = EL.3040
 	has_dlc = "Jade Dragon"
     hide_window = yes
     is_triggered_only = yes
-    immediate = { FROMFROM = { letter_event = { id = JD.3041 } } }
+    immediate = { FROMFROM = { letter_event = { id = EL.3041 } } }
 }
 
 letter_event = {
-    id = JD.3041
+    id = EL.3041
 	has_dlc = "Jade Dragon"
-    desc = EVTDESC_JD_3041
+    desc = EVTDESC_EL_3041
     border = GFX_event_letter_frame_diplomacy
 
     is_triggered_only = yes
 
     option = { 
-        name = EVTOPTA_JD_3041
+        name = EVTOPTA_EL_3041
 		
 		sound_effect = china_grace_gain
 		add_character_modifier = {
@@ -4125,7 +4125,7 @@ letter_event = {
 }
 
 character_event = { # Clear modifier on death if no longer Nomadic
-	id = JD.3042
+	id = EL.3042
 	has_dlc = "Jade Dragon"
 	is_triggered_only = yes
 	hide_window = yes
@@ -4142,59 +4142,59 @@ character_event = { # Clear modifier on death if no longer Nomadic
 
 # Raid China
 character_event = {
-    id = JD.3050
+    id = EL.3050
 	has_dlc = "Jade Dragon"
     hide_window = yes
     is_triggered_only = yes
-    immediate = { FROMFROM = { letter_event = { id = JD.3051 } } }
+    immediate = { FROMFROM = { letter_event = { id = EL.3051 } } }
 }
 
 letter_event = {
-    id = JD.3051
+    id = EL.3051
 	has_dlc = "Jade Dragon"
-    desc = EVTDESC_JD_3051
+    desc = EVTDESC_EL_3051
     border = GFX_event_letter_frame_diplomacy
 
     is_triggered_only = yes
 
     option = { 
-        name = EVTOPTA_JD_3051
+        name = EVTOPTA_EL_3051
     }
 }
 
 #Response for sending a tribute character to China...
 letter_event = {
-    id = JD.10050
+    id = EL.10050
 	has_dlc = "Jade Dragon"
-    desc = EVTDESC_JD_10050
+    desc = EVTDESC_EL_10050
     border = GFX_event_letter_frame_diplomacy
 
     is_triggered_only = yes
 
     option = { 
         name = {
-            text = EVTOPTA_JD_10050_bad
+            text = EVTOPTA_EL_10050_bad
             trigger = {
                 has_character_flag = sent_bad_tribute
                 NOT = { is_close_relative = event_target:person_sent_as_tribute }
             }
         }
         name = {
-            text = EVTOPTA_JD_10050_decent
+            text = EVTOPTA_EL_10050_decent
             trigger = {
                 has_character_flag = sent_decent_tribute
                 NOT = { is_close_relative = event_target:person_sent_as_tribute }
             }
         }
         name = {
-            text = EVTOPTA_JD_10050_great
+            text = EVTOPTA_EL_10050_great
             trigger = {
                 has_character_flag = sent_great_tribute
                 NOT = { is_close_relative = event_target:person_sent_as_tribute }
             }
         }
         name = {
-            text = EVTOPTA_JD_10050_family
+            text = EVTOPTA_EL_10050_family
             trigger = { is_close_relative = event_target:person_sent_as_tribute }
         }
 
@@ -4209,16 +4209,16 @@ letter_event = {
 }
 
 letter_event = {
-	id = JD.30014
+	id = EL.30014
 	has_dlc = "Jade Dragon"
 	
-	desc = EVTDESC_JD_30014
+	desc = EVTDESC_EL_30014
     border = GFX_event_letter_frame_economy
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_JD_30014
+		name = EVTOPTA_EL_30014
 		tooltip = {
 			add_character_modifier = {
 				modifier = chinese_imperial_trade_contract
@@ -4231,7 +4231,7 @@ letter_event = {
 
 #Fired from on-action war started. Cleans up trade contract modifiers if you end up fighting China.
 character_event = {
-	id = JD.30015
+	id = EL.30015
 	has_dlc = "Jade Dragon"
 	hide_window = yes
 	
@@ -4275,25 +4275,25 @@ character_event = {
 ### Opening China by Force ###
 #Ping for WP
 character_event = {
-    id = JD.60300
+    id = EL.60300
 	has_dlc = "Jade Dragon"
     hide_window = yes
     is_triggered_only = yes
 
     immediate = {
-        FROMFROM = { character_event = { id = JD.60301 } }
+        FROMFROM = { character_event = { id = EL.60301 } }
     }
 }
 character_event = {
-    id = JD.60301
+    id = EL.60301
 	has_dlc = "Jade Dragon"
-    desc = EVT_DESC_JD_60301
+    desc = EVT_DESC_EL_60301
     picture = GFX_evt_china_isolationist
 
     is_triggered_only = yes
 
     option = { #War
-        name = EVT_OPTA_JD_60301
+        name = EVT_OPTA_EL_60301
 		sound_effect = china_angered_emperor
         detract_grace_super_huge_effect = yes
         war = {
@@ -4303,7 +4303,7 @@ character_event = {
         custom_tooltip = { text = force_china_open_cb_outcome_tt }
     }
     option = { #Silk Road dominance
-        name = EVT_OPTB_JD_60301
+        name = EVT_OPTB_EL_60301
         trigger = {
             any_realm_province = {
                 OR = {
@@ -4369,16 +4369,16 @@ character_event = {
                     has_offmap_news_enabled = offmap_ethiopia
                     is_within_diplo_range = event_target:target_governor
                 }
-                narrative_event = { id = JD.60304 }
+                narrative_event = { id = EL.60304 }
             }
         }
     }
     option = { #Negotiate with China
-        name = EVT_OPTC_JD_60301
-        event_target:target_governor = { letter_event = { id = JD.60305 tooltip = force_open_china_negotiate_tt } }
+        name = EVT_OPTC_EL_60301
+        event_target:target_governor = { letter_event = { id = EL.60305 tooltip = force_open_china_negotiate_tt } }
     }
     option = { #Maybe not
-        name = EVT_OPTD_JD_60301
+        name = EVT_OPTD_EL_60301
         hidden_effect = { 
             remove_character_modifier = china_force_open_cooldown
             offmap_ethiopia = { clr_offmap_tmp_flag = china_force_open_in_progress }
@@ -4388,10 +4388,10 @@ character_event = {
 
 #News Event: Successfully force open China by war
 narrative_event = {
-    id = JD.60302
+    id = EL.60302
 	has_dlc = "Jade Dragon"
     title = NEWS_FROM_CHINA
-    desc = EVTDESC_JD_60302
+    desc = EVTDESC_EL_60302
     picture = GFX_evt_china_isolationist
     portrait = offmap_ethiopia
 	window = EventWindowOffmap
@@ -4399,16 +4399,16 @@ narrative_event = {
     is_triggered_only = yes
 
     option = {
-        name = EVT_OPTA_JD_60302
+        name = EVT_OPTA_EL_60302
     }
 }
 
 #News Event: Fail to force open China by war
 narrative_event = {
-    id = JD.60303
+    id = EL.60303
 	has_dlc = "Jade Dragon"
     title = NEWS_FROM_CHINA
-    desc = EVTDESC_JD_60303
+    desc = EVTDESC_EL_60303
     picture = GFX_evt_china_isolationist
     portrait = offmap_ethiopia
 	window = EventWindowOffmap
@@ -4416,16 +4416,16 @@ narrative_event = {
     is_triggered_only = yes
 
     option = {
-        name = EVT_OPTA_JD_60303
+        name = EVT_OPTA_EL_60303
     }
 }
 
 #News Event: Silk Road dominance forces open China
 narrative_event = {
-    id = JD.60304
+    id = EL.60304
 	has_dlc = "Jade Dragon"
     title = NEWS_FROM_CHINA
-    desc = EVTDESC_JD_60304
+    desc = EVTDESC_EL_60304
     picture = GFX_evt_china_isolationist
     portrait = offmap_ethiopia
 	window = EventWindowOffmap
@@ -4443,13 +4443,13 @@ narrative_event = {
 	portrait = event_target:portrait_target
 	
     option = {
-        name = EVT_OPTA_JD_60304
+        name = EVT_OPTA_EL_60304
     }
 }
 
 #Governor: Allow Negotiation with China
 letter_event = {
-    id = JD.60305
+    id = EL.60305
 	has_dlc = "Jade Dragon"
     hide_window = yes
     is_triggered_only = yes
@@ -4511,7 +4511,7 @@ letter_event = {
                         power = 3
                     }
                 }
-                FROM = { letter_event = { id = JD.60306 days = 5 } }
+                FROM = { letter_event = { id = EL.60306 days = 5 } }
             }
             70 = { #Yes
                 modifier = {
@@ -4846,7 +4846,7 @@ letter_event = {
                         }
                         set_character_flag = force_open_china_demands_backup
                     }
-                    letter_event = { id = JD.60307 days = 5 }
+                    letter_event = { id = EL.60307 days = 5 }
                 }  
             }
         }
@@ -4854,9 +4854,9 @@ letter_event = {
 }
 #Governor says no
 letter_event = {
-    id = JD.60306
+    id = EL.60306
 	has_dlc = "Jade Dragon"
-    desc = EVT_DESC_JD_60306
+    desc = EVT_DESC_EL_60306
     is_triggered_only = yes
 
     option = { #Then war it is!
@@ -4877,9 +4877,9 @@ letter_event = {
 }
 #Governor says yes
 letter_event = {
-    id = JD.60307
+    id = EL.60307
 	has_dlc = "Jade Dragon"
-    desc = EVT_DESC_JD_60307
+    desc = EVT_DESC_EL_60307
     is_triggered_only = yes
 
     option = { #Get their demands
@@ -4958,7 +4958,7 @@ letter_event = {
                     has_offmap_news_enabled = offmap_ethiopia
                     is_within_diplo_range = event_target:target_governor
                 }
-                narrative_event = { id = JD.60308 }
+                narrative_event = { id = EL.60308 }
             }
         }
     }
@@ -4982,10 +4982,10 @@ letter_event = {
 }
 #News Event: Negotiations end, China opens up
 narrative_event = {
-    id = JD.60308
+    id = EL.60308
 	has_dlc = "Jade Dragon"
     title = NEWS_FROM_CHINA
-    desc = EVTDESC_JD_60308
+    desc = EVTDESC_EL_60308
     picture = GFX_evt_china_open
     portrait = offmap_ethiopia
 	window = EventWindowOffmap
@@ -5003,18 +5003,18 @@ narrative_event = {
 	portrait = event_target:portrait_target
 
     option = {
-        name = EVT_OPTA_JD_60308
+        name = EVT_OPTA_EL_60308
         trigger = { FROM = { character = ROOT } }
     }
     option = {
-        name = EVT_OPTB_JD_60308
+        name = EVT_OPTB_EL_60308
         trigger = { NOT = { FROM = { character = ROOT } } }
     }
 }
 
 ### Grace courtier dies, inform ###
 character_event = {
-    id = JD.60310
+    id = EL.60310
     hide_window = yes
     is_triggered_only = yes
     has_character_flag = originated_from_chinese_court
@@ -5043,7 +5043,7 @@ character_event = {
 					death_reason = death_dungeon
 				}
 			}
-			offmap_ethiopia = { governor = { character_event = { id = JD.60313 } } }
+			offmap_ethiopia = { governor = { character_event = { id = EL.60313 } } }
 		}
 		else = { # Otherwise refund as normal
 			if = {
@@ -5061,27 +5061,27 @@ character_event = {
 				}
 			}
 			else = { event_target:grace_courtier_liege = { set_variable = { which = "grace_refund" value = 0 } } }
-			offmap_ethiopia = { governor = { character_event = { id = JD.60311 } } }
+			offmap_ethiopia = { governor = { character_event = { id = EL.60311 } } }
 		}
     }
 }
 character_event = { #Bounce
-	id = JD.60311
+	id = EL.60311
 	has_dlc = "Jade Dragon"
 	is_triggered_only = yes
 	hide_window = yes
 	immediate = {
-		event_target:grace_courtier_liege = { letter_event = { id = JD.60312 } }
+		event_target:grace_courtier_liege = { letter_event = { id = EL.60312 } }
 	}
 }
 letter_event = {
-    id = JD.60312
+    id = EL.60312
 	has_dlc = "Jade Dragon"
-    desc = EVT_DESC_JD_60312
+    desc = EVT_DESC_EL_60312
     is_triggered_only = yes
 
     option = {
-    	name = EVT_OPTA_JD_60312
+    	name = EVT_OPTA_EL_60312
     	show_portrait = FROMFROM
     	if = {
     		limit = { check_variable = { which = "grace_refund" value > 0 } }
@@ -5091,18 +5091,18 @@ letter_event = {
     }
 }
 character_event = { #Bounce
-	id = JD.60313
+	id = EL.60313
 	has_dlc = "Jade Dragon"
 	is_triggered_only = yes
 	hide_window = yes
 	immediate = {
-		FROM = { killer = {  letter_event = { id = JD.60314 } } }
+		FROM = { killer = {  letter_event = { id = EL.60314 } } }
 	}
 }
 letter_event = {
-    id = JD.60314
+    id = EL.60314
 	has_dlc = "Jade Dragon"
-    desc = EVT_DESC_JD_60314
+    desc = EVT_DESC_EL_60314
     is_triggered_only = yes
 
     option = {

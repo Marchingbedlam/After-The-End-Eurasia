@@ -1,56 +1,56 @@
-namespace = demo
+# namespace = demo
 
-character_event = {
-	id = demo.1000
-	desc = EVTDESCDEMO1000
-	picture = GFX_evt_council
+# character_event = {
+	# id = demo.1000
+	# desc = EVTDESCDEMO1000
+	# picture = GFX_evt_council
 	
-	only_rulers = yes
+	# only_rulers = yes
 	
-	is_triggered_only = yes
+	# is_triggered_only = yes
 	
-	trigger = { 
-		primary_title = { government = playable_republic_government }
-		any_demesne_title = {
-			OR = {
-				government = playable_republic_government
-				has_law = succ_gavelkind
-			}
-			OR = {
-				government = playable_republic_government
-				has_law = succ_elective_gavelkind
-			}
-			OR = {
-				government = playable_republic_government
-				has_law = succ_eldership
-			}
-			OR = {
-				government = playable_republic_government
-				has_law = succ_seniority
-			}
-			OR = {
-				government = playable_republic_government
-				has_law = succ_primogeniture
-			}
-			OR = {
-				government = playable_republic_government
-				has_law = succ_feudal_elective
-			}
-			OR = {
-				government = playable_republic_government
-				has_law = succ_hre_elective
-			}
-			OR = {
-				government = playable_republic_government
-				has_law = succ_tanistry
-			}
-		}
-	}
-	option = {
-		name = "EVTOPTACCEPTDEMO1"
-		trigger = { primary_title = {government = playable_republic_government }}
-		any_demesne_title = {
-			add_law = succ_democratic_elective
-		}
-	}
-}
+	# trigger = { 
+		# primary_title = { government = playable_republic_government }
+		# any_demesne_title = {
+			# OR = {
+				# government = playable_republic_government
+				# has_law = succ_gavelkind
+			# }
+			# OR = {
+				# government = playable_republic_government
+				# has_law = succ_elective_gavelkind
+			# }
+			# OR = {
+				# government = playable_republic_government
+				# has_law = succ_eldership
+			# }
+			# OR = {
+				# government = playable_republic_government
+				# has_law = succ_seniority
+			# }
+			# OR = {
+				# government = playable_republic_government
+				# has_law = succ_primogeniture
+			# }
+			# OR = {
+				# government = playable_republic_government
+				# has_law = succ_feudal_elective
+			# }
+			# OR = {
+				# government = playable_republic_government
+				# has_law = succ_hre_elective
+			# }
+			# OR = {
+				# government = playable_republic_government
+				# has_law = succ_tanistry
+			# }
+		# }
+	# }
+	# option = {
+		# name = "EVTOPTACCEPTDEMO1"
+		# trigger = { primary_title = {government = playable_republic_government }}
+		# any_demesne_title = {
+			# add_law = succ_democratic_elective
+		# }
+	# }
+# }
