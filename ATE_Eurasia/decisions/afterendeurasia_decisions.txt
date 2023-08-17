@@ -294,7 +294,7 @@ decisions = {
 				factor = 0
 				has_character_flag = recent_minor_decision
 				NOT = {
-					has_character_flag = {
+					had_character_flag = {
 						flag = recent_minor_decision
 						days = 730
 					}
