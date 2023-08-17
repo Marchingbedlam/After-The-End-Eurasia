@@ -206,7 +206,7 @@ character_event = {
 
 	trigger = {
 		religion = ruhi
-		has_dlc = "Sword of Islam"
+		has_dlc = "The Sword of Islam"
 		any_courtier = {
 			has_minor_title = title_dervish
 			NOT = { has_character_flag = fake_guru }
@@ -251,7 +251,7 @@ character_event = {
 	min_age = 16
 	
 	trigger = {
-		has_dlc = "Sword of Islam"
+		has_dlc = "The Sword of Islam"
 		religion = ruhi
 		any_courtier = {
 			has_minor_title = title_dervish
@@ -299,7 +299,7 @@ character_event = {
 	
 	trigger = {
 		religion = ruhi
-		has_dlc = "Sword of Islam"
+		has_dlc = "The Sword of Islam"
 		any_courtier = {
 			has_minor_title = title_dervish
 			NOT = { has_character_flag = fake_guru }
@@ -376,7 +376,7 @@ character_event = {
 	min_age = 16
 	
 	trigger = {
-		has_dlc = "Sword of Islam"
+		has_dlc = "The Sword of Islam"
 		religion = ruhi
 		any_courtier = {
 			has_minor_title = title_dervish
@@ -422,7 +422,7 @@ character_event = {
 	min_age = 16
 	
 	trigger = {
-		has_dlc = "Sword of Islam"
+		has_dlc = "The Sword of Islam"
 		religion = ruhi
 		any_courtier = {
 			has_minor_title = title_dervish
@@ -470,7 +470,7 @@ character_event = {
 	
 	trigger = {
 		religion = ruhi
-		has_dlc = "Sword of Islam"
+		has_dlc = "The Sword of Islam"
 		any_courtier = {
 			has_minor_title = title_dervish
 			NOT = { has_character_flag = fake_guru }
@@ -517,7 +517,7 @@ character_event = {
 	
 	trigger = {
 		religion = ruhi
-		has_dlc = "Sword of Islam"
+		has_dlc = "The Sword of Islam"
 		any_courtier = {
 			has_minor_title = title_dervish
 			NOT = { has_character_flag = fake_guru }
@@ -564,7 +564,7 @@ character_event = {
 	
 	trigger = {
 		religion = ruhi
-		has_dlc = "Sword of Islam"
+		has_dlc = "The Sword of Islam"
 		any_courtier = {
 			has_minor_title = title_dervish
 			NOT = { has_character_flag = fake_guru }
@@ -643,7 +643,7 @@ character_event = {
 	
 	trigger = {
 		has_dharmic_religion_trigger = yes
-		has_dlc = "Sword of Islam"
+		has_dlc = "The Sword of Islam"
 		any_courtier = {
 			has_minor_title = title_dervish
 			NOT = { has_character_flag = fake_guru }
@@ -724,7 +724,7 @@ character_event = {
 	
 	trigger = {
 		religion = ruhi
-		has_dlc = "Sword of Islam"
+		has_dlc = "The Sword of Islam"
 		any_courtier = {
 			has_minor_title = title_dervish
 			NOT = { has_character_flag = fake_guru }
@@ -772,7 +772,7 @@ character_event = {
 	
 	trigger = {
 		religion = ruhi
-		has_dlc = "Sword of Islam"
+		has_dlc = "The Sword of Islam"
 		any_courtier = {
 			has_minor_title = title_dervish
 			NOT = { has_character_flag = fake_guru }
@@ -820,7 +820,7 @@ character_event = {
 	
 	trigger = {
 		religion = ruhi
-		has_dlc = "Sword of Islam"
+		has_dlc = "The Sword of Islam"
 		any_courtier = {
 			has_minor_title = title_dervish
 			NOT = { has_character_flag = fake_guru }
@@ -866,7 +866,7 @@ character_event = {
 	religion = jain
 	
 	trigger = {
-		has_dlc = "Sword of Islam"
+		has_dlc = "The Sword of Islam"
 		any_courtier = {
 			has_minor_title = title_dervish
 			NOT = { has_character_flag = fake_guru }
@@ -920,7 +920,7 @@ character_event = {
 	
 	trigger = {
 		religion = ruhi
-		has_dlc = "Sword of Islam"
+		has_dlc = "The Sword of Islam"
 		any_courtier = {
 			has_minor_title = title_dervish
 			NOT = { has_character_flag = fake_guru }
@@ -967,7 +967,7 @@ character_event = {
 	min_age = 16
 	
 	trigger = {
-		has_dlc = "Sword of Islam"
+		has_dlc = "The Sword of Islam"
 		is_dumb_trigger = no
 		NOT = { trait = inbred }
 		NOT = { trait = trusting }
@@ -1127,7 +1127,7 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_dlc = "Sword of Islam"
+		has_dlc = "The Sword of Islam"
 		any_courtier = {
 			has_minor_title = title_dervish
 			trait = genius
@@ -1288,7 +1288,7 @@ character_event = {
 	religion = ruhi
 	
 	trigger = {
-		has_dlc = "Sword of Islam"
+		has_dlc = "The Sword of Islam"
 		OR = {
 			trait = stressed
 			trait = depressed
