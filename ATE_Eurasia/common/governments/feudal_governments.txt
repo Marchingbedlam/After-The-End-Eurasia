@@ -123,7 +123,7 @@ feudal_governments = {
 		can_grant_kingdoms_and_empires_to_other_government_group = no
 		commander_limit = +4
 		city_vassal_tax_modifier = 0.5
-		character_modifier = { feudal_opinion = -40 }
+		character_modifier = { castle_opinion = -40 }
 		
 		can_build_tribal = no	
 
@@ -463,8 +463,8 @@ feudal_governments = {
 		## Modifiers
 		court_size_modifier = 10
 		commander_limit = 2
-		min_vassal_tax = -0.5
-		min_vassal_levy = -0.5
+		#min_vassal_tax = -0.5
+		#min_vassal_levy = -0.5
 		
 	}
 	confederation_government = {
@@ -596,10 +596,10 @@ feudal_governments = {
 		## Modifiers
 		court_size_modifier = 20
 		vassal_limit = 15
-		min_vassal_tax = -0.2
-		min_vassal_levy = -0.2
-		max_vassal_tax = 0.3
-		max_vassal_levy = 0.3
+		#min_vassal_tax = -0.2
+		#min_vassal_levy = -0.2
+		#max_vassal_tax = 0.3
+		#max_vassal_levy = 0.3
 		commander_limit = -2
 		character_modifier = {
 			stewardship = 3
@@ -722,10 +722,10 @@ feudal_governments = {
 		## Modifiers
 		court_size_modifier = 20
 		vassal_limit = 15
-		min_vassal_tax = -0.4
-		min_vassal_levy = -0.4
-		max_vassal_tax = 0.4
-		max_vassal_levy = 0.4
+		#min_vassal_tax = -0.4
+		#min_vassal_levy = -0.4
+		#max_vassal_tax = 0.4
+		#max_vassal_levy = 0.4
 		commander_limit = -2
 
 	}

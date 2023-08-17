@@ -46,7 +46,7 @@ laws = {
 				revoke_law = cenobitic_government_slider_3
 				revoke_law = cenobitic_government_slider_4
 			}
-			set_government = feudal_government
+			set_government_type = feudal_government
 
 		}
 				
@@ -64,8 +64,10 @@ laws = {
 			modifier = {
 				factor = 20
 				holder_scope = {
-					trait = excommunicated
-					trait = adventurer
+					OR = {
+						trait = excommunicated
+						trait = adventurer
+					}
 				}
 			}
 			modifier = {
@@ -145,7 +147,7 @@ laws = {
 				revoke_law = cenobitic_government_slider_3
 				revoke_law = cenobitic_government_slider_4
 			}
-			set_government = theocratic_feudal_government
+			set_government_type = theocratic_feudal_government
 
 		}
 		
@@ -156,36 +158,43 @@ laws = {
 			}
 			modifier = {
 				factor = 10
-				OR = {
-					has_trait = pious
-					has_trait = zealous
+				holder_scope = {
+					OR = {
+						trait = pious
+						trait = zealous
+					}
 				}
 			}
 			modifier = {
 				factor = 10
-				OR = {
-					has_trait = detached_priest
-					has_trait = martial_cleric
-					has_trait = scholarly_theologian
-					has_trait = mastermind_theologian
+				holder_scope = {
+					OR = {
+						trait = detached_priest
+						trait = martial_cleric
+						trait = scholarly_theologian
+						trait = mastermind_theologian
+					}
 				}
 			}
 			modifier = { #Truly a Pious One
 			factor = 20
-				OR = {
-					has_trait = canon
-					has_trait = canoness
-					has_trait = celibate
+				holder_scope = {
+					OR = {
+						trait = canon
+						trait = canoness
+						trait = celibate
 					}
-				
+				}
 			}
 			modifier = { #Truly a Pious One
 			factor = 10
-				OR = {
-					has_trait = regularis
-					has_trait = regulara
-					has_trait = chaste
+				holder_scope = {
+					OR = {
+						trait = regularis
+						trait = regulara
+						trait = chaste
 					}
+				}
 			}
 			modifier = {
                 factor = 0
@@ -244,33 +253,33 @@ laws = {
 			modifier = {
 				factor = 10
 				OR = {
-					has_trait = pious
-					has_trait = zealous
+					trait = pious
+					trait = zealous
 				}
 			}
 			modifier = {
 				factor = 10
 				OR = {
-					has_trait = detached_priest
-					has_trait = martial_cleric
-					has_trait = scholarly_theologian
-					has_trait = mastermind_theologian
+					trait = detached_priest
+					trait = martial_cleric
+					trait = scholarly_theologian
+					trait = mastermind_theologian
 				}
 			}
 		modifier = { #Truly a Pious One
 			factor = 15
 				OR = {
-					has_trait = canon
-					has_trait = canoness
-					has_trait = celibate
+					trait = canon
+					trait = canoness
+					trait = celibate
 					}
 			}
 		modifier = { #Truly a Pious One
 			factor = 5
 				OR = {
-					has_trait = regularis
-					has_trait = regulara
-					has_trait = chaste
+					trait = regularis
+					trait = regulara
+					trait = chaste
 					}
 			}
 			modifier = {
@@ -289,7 +298,7 @@ laws = {
 				revoke_law = cenobitic_government_slider_3
 				revoke_law = cenobitic_government_slider_4
 			}
-			set_government = theocratic_feudal_government
+			set_government_type = theocratic_feudal_government
 
 		}
 		global_revolt_risk = -0.05
@@ -297,8 +306,8 @@ laws = {
 		temple_vassal_max_levy = -0.10
 		church_opinion = 5
 		same_religion_opinion = 5
-		tech_growth_modifier_cultural = 0.05
-		tech_growth_modifier_economy = 0.05		
+		#tech_growth_modifier_cultural = 0.05
+		#tech_growth_modifier_economy = 0.05
 	}
 	
 	#Cenobitic Feudal
@@ -359,26 +368,26 @@ laws = {
 			modifier = {
 				factor = 10
 				OR = {
-					has_trait = indulgent_wastrel
-					has_trait = thrifty_clerk
-					has_trait = fortune_builder
-					has_trait = midas_touched
+					trait = indulgent_wastrel
+					trait = thrifty_clerk
+					trait = fortune_builder
+					trait = midas_touched
 				}
 			}
 		modifier = { #Truly a Pious One
 			factor = 20
 				OR = {
-					has_trait = canon
-					has_trait = canoness
-					has_trait = celibate
+					trait = canon
+					trait = canoness
+					trait = celibate
 					}
 			}
 		modifier = { #Truly a Pious One
 			factor = 10
 				OR = {
-					has_trait = regularis
-					has_trait = regulara
-					has_trait = chaste
+					trait = regularis
+					trait = regulara
+					trait = chaste
 					}
 			}
 			modifier = {
@@ -398,7 +407,7 @@ laws = {
 				revoke_law = cenobitic_government_slider_3
 				revoke_law = cenobitic_government_slider_4
 			}
-			set_government = cenobitic_government
+			set_government_type = cenobitic_government
 			add_law = succ_cenobitic_elective
 
 		}
@@ -407,8 +416,8 @@ laws = {
 		temple_vassal_max_levy = -0.15
 		church_opinion = 5
 		same_religion_opinion = 5
-		tech_growth_modifier_cultural = 0.1
-		tech_growth_modifier_economy = 0.1		
+		#tech_growth_modifier_cultural = 0.1
+		#tech_growth_modifier_economy = 0.1
 	}
 	
 	#Pachomial Feudal
@@ -457,7 +466,7 @@ laws = {
 				revoke_law = cenobitic_government_slider_3
 				revoke_law = cenobitic_government_slider_4
 			}
-			set_government = cenobitic_government
+			set_government_type = cenobitic_government
 			add_law = succ_pachomial_elective
 
 		}
@@ -469,10 +478,12 @@ laws = {
 			}
 		modifier = { #Truly a Pious One
 			factor = 20
-				OR = {
-					has_trait = desert_father
-					has_trait = desert_mother
-					has_trait = celibate
+				holder_scope = {
+					OR = {
+						trait = desert_father
+						trait = desert_mother
+						trait = celibate
+					}
 				}
 			}
 		}
@@ -484,7 +495,7 @@ laws = {
 		temple_vassal_max_levy = -0.20
 		church_opinion = 15
 		same_religion_opinion = 15
-		tech_growth_modifier_cultural = 0.15
-		tech_growth_modifier_economy = 0.15			
-	}	
+		#tech_growth_modifier_cultural = 0.15
+		#tech_growth_modifier_economy = 0.15
+	}
 }

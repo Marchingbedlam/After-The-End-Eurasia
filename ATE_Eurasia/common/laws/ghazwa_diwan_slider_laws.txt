@@ -51,7 +51,7 @@ laws = {
 				revoke_law = muslim_government_slider_3
 				revoke_law = muslim_government_slider_4
 			}
-			set_government = ghazi_government
+			set_government_type = ghazi_government
 
 		}
 				
@@ -136,7 +136,7 @@ laws = {
 				revoke_law = muslim_government_slider_3
 				revoke_law = muslim_government_slider_4
 			}
-			set_government = ghazi_government
+			set_government_type = ghazi_government
 
 		}
 		
@@ -215,7 +215,7 @@ laws = {
 						lower_tier_than = KING
 					}
 				}
-				set_government = ghazi_government
+				set_government_type = ghazi_government
 			}
 			else_if = {
 				limit = {
@@ -223,7 +223,7 @@ laws = {
 						higher_tier_than = DUKE
 					}
 				}
-				set_government = diwan_government
+				set_government_type = diwan_government
 			}
 		}
 	}
