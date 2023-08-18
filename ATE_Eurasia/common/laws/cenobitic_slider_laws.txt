@@ -252,35 +252,43 @@ laws = {
 			}
 			modifier = {
 				factor = 10
-				OR = {
-					trait = pious
-					trait = zealous
+				holder_scope = {
+					OR = {
+						trait = pious
+						trait = zealous
+					}
 				}
 			}
 			modifier = {
 				factor = 10
-				OR = {
-					trait = detached_priest
-					trait = martial_cleric
-					trait = scholarly_theologian
-					trait = mastermind_theologian
+				holder_scope = {
+					OR = {
+						trait = detached_priest
+						trait = martial_cleric
+						trait = scholarly_theologian
+						trait = mastermind_theologian
+					}
 				}
 			}
 		modifier = { #Truly a Pious One
 			factor = 15
-				OR = {
-					trait = canon
-					trait = canoness
-					trait = celibate
+				holder_scope = {
+					OR = {
+						trait = canon
+						trait = canoness
+						trait = celibate
 					}
+				}
 			}
 		modifier = { #Truly a Pious One
 			factor = 5
-				OR = {
-					trait = regularis
-					trait = regulara
-					trait = chaste
+				holder_scope = {
+					OR = {
+						trait = regularis
+						trait = regulara
+						trait = chaste
 					}
+				}
 			}
 			modifier = {
                 factor = 0
@@ -367,28 +375,34 @@ laws = {
 			}
 			modifier = {
 				factor = 10
-				OR = {
-					trait = indulgent_wastrel
-					trait = thrifty_clerk
-					trait = fortune_builder
-					trait = midas_touched
+				holder_scope = {
+					OR = {
+						trait = indulgent_wastrel
+						trait = thrifty_clerk
+						trait = fortune_builder
+						trait = midas_touched
+					}
 				}
 			}
 		modifier = { #Truly a Pious One
 			factor = 20
-				OR = {
-					trait = canon
-					trait = canoness
-					trait = celibate
+				holder_scope = {
+					OR = {
+						trait = canon
+						trait = canoness
+						trait = celibate
 					}
+				}
 			}
 		modifier = { #Truly a Pious One
 			factor = 10
-				OR = {
-					trait = regularis
-					trait = regulara
-					trait = chaste
+				holder_scope = {
+					OR = {
+						trait = regularis
+						trait = regulara
+						trait = chaste
 					}
+				}
 			}
 			modifier = {
                 factor = 0
