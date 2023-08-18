@@ -875,508 +875,508 @@ society_decisions = {
 	}
 }
 
-targeted_decisions = {
+# targeted_decisions = {
 
-	#Action: recruit assassins
-	assassins_recruit = {
-		ai_target_filter = realm
-		is_in_society = yes # Note - Only works for targeted_decisions. For non-targeted decisions you can use "society_decisions"
-		ai_check_interval = 24
+	# #Action: recruit assassins
+	# assassins_recruit = {
+		# ai_target_filter = realm
+		# is_in_society = yes # Note - Only works for targeted_decisions. For non-targeted decisions you can use "society_decisions"
+		# ai_check_interval = 24
 
-		from_potential = {
-			is_adult = yes
-			prisoner = no
-			NOT = { trait = incapable }
-			NOT = { has_character_modifier = recruitment_timer }
-			society_member_of = the_assassins
+		# from_potential = {
+			# is_adult = yes
+			# prisoner = no
+			# NOT = { trait = incapable }
+			# NOT = { has_character_modifier = recruitment_timer }
+			# society_member_of = the_assassins
 			
-			#Only level 2 and 3 AIs recruit
-			OR = {
-				ai = no
-				society_rank == 2
-				society_rank == 3
-			}
-		}
-		potential = {
-			OR = {
-				FROM = { ai = no }
-				ai = no
-			}
-			OR = {
-				FROM = { ai = yes }
-				is_within_diplo_range = FROM # AI only checks inside realm, so is by definition in range
-			}
-			is_adult = yes
-			prisoner = no
-			NOT = { trait = incapable }
-			is_in_society = no
-			OR = {
-				is_female = no
-				has_game_rule = {
-					name = gender
-					value = all
-				}
-			}
+			# #Only level 2 and 3 AIs recruit
+			# OR = {
+				# ai = no
+				# society_rank == 2
+				# society_rank == 3
+			# }
+		# }
+		# potential = {
+			# OR = {
+				# FROM = { ai = no }
+				# ai = no
+			# }
+			# OR = {
+				# FROM = { ai = yes }
+				# is_within_diplo_range = FROM # AI only checks inside realm, so is by definition in range
+			# }
+			# is_adult = yes
+			# prisoner = no
+			# NOT = { trait = incapable }
+			# is_in_society = no
+			# OR = {
+				# is_female = no
+				# has_game_rule = {
+					# name = gender
+					# value = all
+				# }
+			# }
 
-			#AI cannot invite other AIs when society is full
-			NAND = {
-				ai = yes
-				FROM = { ai = yes }
-				NOT = { can_join_society = the_assassins }
-			}
+			# #AI cannot invite other AIs when society is full
+			# NAND = {
+				# ai = yes
+				# FROM = { ai = yes }
+				# NOT = { can_join_society = the_assassins }
+			# }
 
-			#Stopping the ai from making stupid choices
-			OR = {
-				FROM = { ai = no }
-				is_friend = FROM
-				is_lover = FROM
-				is_close_relative = FROM
-				interested_in_society = the_assassins
-			}
+			# #Stopping the ai from making stupid choices
+			# OR = {
+				# FROM = { ai = no }
+				# is_friend = FROM
+				# is_lover = FROM
+				# is_close_relative = FROM
+				# interested_in_society = the_assassins
+			# }
 
-			NAND = {
-				FROM = { ai = yes }
-				ai = yes
-				trait = zealous
-				NOT = { true_religion_group = muslim }
-			}
-		}
-		allow = {
-			has_assassins_prerequisites = yes
-			is_inaccessible_trigger = no
+			# NAND = {
+				# FROM = { ai = yes }
+				# ai = yes
+				# trait = zealous
+				# NOT = { true_religion_group = muslim }
+			# }
+		# }
+		# allow = {
+			# has_assassins_prerequisites = yes
+			# is_inaccessible_trigger = no
 
-			FROM = {
-				custom_tooltip = {
-					text = recruit_delay_timer_tooltip
-					NOT = { has_character_modifier = recruitment_delay_timer }
-				}
-			}
+			# FROM = {
+				# custom_tooltip = {
+					# text = recruit_delay_timer_tooltip
+					# NOT = { has_character_modifier = recruitment_delay_timer }
+				# }
+			# }
 
-			ROOT = {
-				is_inaccessible_trigger = no
-				custom_tooltip = {
-					text = assassins_recruit_block_tooltip
-					OR = {
-						NOT = { has_character_flag = assassins_attempted_recruitment }
-						interested_in_society = the_assassins					
-					}
-					NOT = { has_character_flag = ongoing_recruitment }
-				}
-			}	
-		}
-		effect = {
-			set_character_flag = assassins_attempted_recruitment
-			set_character_flag = ongoing_recruitment
-			hidden_effect = { 
-				if = {
-					limit = { NOT = { religion = shiite } }
-					character_event = { id = MNM.6020 days = 3 } 
-				}
-				if = {
-					limit = { religion = shiite }
-					character_event = { id = MNM.6022 days = 3 } 
-				}
-				character_event = { id = MNM.7030 days = 365 }
-				FROM = {
-					if = {
-						limit = { ai = yes }
-						add_character_modifier = {
-							name = recruitment_timer
-							days = 730
-							hidden = yes
-						}
-					}
-					add_character_modifier = {
-						name = recruitment_delay_timer
-						days = 90
-						hidden = yes
-					}
-				}
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0.1 # slow down
-			}
-			modifier = {
-				factor = 10 # recruit interested parties
-				interested_in_society = the_assassins
-			}
-			modifier = {
-				factor = 0 # don't recruit characters interested in something else
-				NOT = { interested_in_society = the_assassins }
-				is_interested_in_any_society = yes
-			}
-			modifier = {
-				factor = 0.1
-				NOT = { religion_group = muslim }
-			}
-		}
-	}
+			# ROOT = {
+				# is_inaccessible_trigger = no
+				# custom_tooltip = {
+					# text = assassins_recruit_block_tooltip
+					# OR = {
+						# NOT = { has_character_flag = assassins_attempted_recruitment }
+						# interested_in_society = the_assassins					
+					# }
+					# NOT = { has_character_flag = ongoing_recruitment }
+				# }
+			# }	
+		# }
+		# effect = {
+			# set_character_flag = assassins_attempted_recruitment
+			# set_character_flag = ongoing_recruitment
+			# hidden_effect = { 
+				# if = {
+					# limit = { NOT = { religion = shiite } }
+					# character_event = { id = MNM.6020 days = 3 } 
+				# }
+				# if = {
+					# limit = { religion = shiite }
+					# character_event = { id = MNM.6022 days = 3 } 
+				# }
+				# character_event = { id = MNM.7030 days = 365 }
+				# FROM = {
+					# if = {
+						# limit = { ai = yes }
+						# add_character_modifier = {
+							# name = recruitment_timer
+							# days = 730
+							# hidden = yes
+						# }
+					# }
+					# add_character_modifier = {
+						# name = recruitment_delay_timer
+						# days = 90
+						# hidden = yes
+					# }
+				# }
+			# }
+		# }
+		# revoke_allowed = {
+			# always = no
+		# }
+		# ai_will_do = {
+			# factor = 1
+			# modifier = {
+				# factor = 0.1 # slow down
+			# }
+			# modifier = {
+				# factor = 10 # recruit interested parties
+				# interested_in_society = the_assassins
+			# }
+			# modifier = {
+				# factor = 0 # don't recruit characters interested in something else
+				# NOT = { interested_in_society = the_assassins }
+				# is_interested_in_any_society = yes
+			# }
+			# modifier = {
+				# factor = 0.1
+				# NOT = { religion_group = muslim }
+			# }
+		# }
+	# }
 
-	#Power: scare ruler
-	assassins_scare_ruler = {
-		only_playable = yes
+	# #Power: scare ruler
+	# assassins_scare_ruler = {
+		# only_playable = yes
 		
-		ai_target_filter = realm
-		ai_check_interval = 60
+		# ai_target_filter = realm
+		# ai_check_interval = 60
 
-		from_potential = {
-			has_dlc = "Conclave"
-			is_playable = yes
-			is_adult = yes
-			NOT = { trait = incapable }
-			society_rank = {
-				society = the_assassins
-				rank >= 2
-			}
-			prisoner = no
-		}
+		# from_potential = {
+			# has_dlc = "Conclave"
+			# is_playable = yes
+			# is_adult = yes
+			# NOT = { trait = incapable }
+			# society_rank = {
+				# society = the_assassins
+				# rank >= 2
+			# }
+			# prisoner = no
+		# }
 
-		potential = {
-			NOT = { character = FROM }
-			age = 10
-			is_ruler = yes
-			OR = {
-				FROM = { ai = yes } # Only checks realm, so by definition in range
-				is_within_diplo_range = FROM
-			}
-		}
+		# potential = {
+			# NOT = { character = FROM }
+			# age = 10
+			# is_ruler = yes
+			# OR = {
+				# FROM = { ai = yes } # Only checks realm, so by definition in range
+				# is_within_diplo_range = FROM
+			# }
+		# }
 
-		allow = {
-			ROOT = {
-				NOT = { society_member_of = the_assassins }
-				prisoner = no
-				is_inaccessible_trigger = no
-				NOT = { owes_favor_to = FROM }
-			}
-			OR = {
-				FROM = { society_rank == 4 }
-				ROOT = { same_realm = FROM }
-			}
-			FROM = { 
-				has_society_currency_medium_trigger = yes
-				is_inaccessible_trigger = no 
-			}
-			NOT = {
-				has_opinion_modifier = {
-					modifier = opinion_threatened_me
-					who = FROM
-				}
-			}
-		}
+		# allow = {
+			# ROOT = {
+				# NOT = { society_member_of = the_assassins }
+				# prisoner = no
+				# is_inaccessible_trigger = no
+				# NOT = { owes_favor_to = FROM }
+			# }
+			# OR = {
+				# FROM = { society_rank == 4 }
+				# ROOT = { same_realm = FROM }
+			# }
+			# FROM = { 
+				# has_society_currency_medium_trigger = yes
+				# is_inaccessible_trigger = no 
+			# }
+			# NOT = {
+				# has_opinion_modifier = {
+					# modifier = opinion_threatened_me
+					# who = FROM
+				# }
+			# }
+		# }
 
-		effect = {
-			FROM = { detract_society_currency_medium_effect = yes }
+		# effect = {
+			# FROM = { detract_society_currency_medium_effect = yes }
 
-			random_list = {
-				50 = {
-					modifier = {
-						factor = 9
-						FROM = { society_rank == 4 }
-					}
-					modifier = {
-						factor = 3
-						FROM = { society_rank == 3 }
-					}
-					hidden_effect = { character_event = { id = MNM.6840 days = 1 } }
-					FROM = { add_favor = ROOT }
-				}
-				50 = {
-					modifier = { #Makes it even harder to threaten someone 2 steps above you
-						factor = 3
-						OR = {
-							AND = {
-								tier = EMPEROR
-								FROM = { lower_tier_than = KING }
-							}
-							AND = {
-								tier = KING
-								FROM = { tier = BARON }
-							}
-						}
-					}
-					modifier = { #Makes it harder to threaten someone above you
-						factor = 3
-						higher_tier_than = FROM
-					}
-					custom_tooltip = { text = assassins_scare_ruler_fail }
-					hidden_effect = { FROM = { character_event = { id = MNM.6980 days = 1 } } }
-				}
-			}
+			# random_list = {
+				# 50 = {
+					# modifier = {
+						# factor = 9
+						# FROM = { society_rank == 4 }
+					# }
+					# modifier = {
+						# factor = 3
+						# FROM = { society_rank == 3 }
+					# }
+					# hidden_effect = { character_event = { id = MNM.6840 days = 1 } }
+					# FROM = { add_favor = ROOT }
+				# }
+				# 50 = {
+					# modifier = { #Makes it even harder to threaten someone 2 steps above you
+						# factor = 3
+						# OR = {
+							# AND = {
+								# tier = EMPEROR
+								# FROM = { lower_tier_than = KING }
+							# }
+							# AND = {
+								# tier = KING
+								# FROM = { tier = BARON }
+							# }
+						# }
+					# }
+					# modifier = { #Makes it harder to threaten someone above you
+						# factor = 3
+						# higher_tier_than = FROM
+					# }
+					# custom_tooltip = { text = assassins_scare_ruler_fail }
+					# hidden_effect = { FROM = { character_event = { id = MNM.6980 days = 1 } } }
+				# }
+			# }
 			
-		}
+		# }
 
-		revoke_allowed = {
-			always = no
-		}
+		# revoke_allowed = {
+			# always = no
+		# }
 
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0.5 # slow down
-			}
-			modifier = {
-				FROM = { is_benevolent_trigger = yes }
-				factor = 0.1
-			}
-			modifier = {
-				FROM = { is_evil_trigger = yes }
-				factor = 2
-			}
-			modifier = {
-				OR = {
-					is_friend = FROM
-					is_lover = FROM
-					NOR = {
-						liege = { character = FROM }
-						is_liege_of = FROM
-					}
-				}
-				factor = 0
-			}
-		}
-	}
+		# ai_will_do = {
+			# factor = 1
+			# modifier = {
+				# factor = 0.5 # slow down
+			# }
+			# modifier = {
+				# FROM = { is_benevolent_trigger = yes }
+				# factor = 0.1
+			# }
+			# modifier = {
+				# FROM = { is_evil_trigger = yes }
+				# factor = 2
+			# }
+			# modifier = {
+				# OR = {
+					# is_friend = FROM
+					# is_lover = FROM
+					# NOR = {
+						# liege = { character = FROM }
+						# is_liege_of = FROM
+					# }
+				# }
+				# factor = 0
+			# }
+		# }
+	# }
 
-	#Power: mark for death
-	assassins_mark_for_death = {
-		only_playable = yes
+	# #Power: mark for death
+	# assassins_mark_for_death = {
+		# only_playable = yes
 		
-		ai_target_filter = realm
-		ai_target_filter = rivals
-		ai_check_interval = 24
+		# ai_target_filter = realm
+		# ai_target_filter = rivals
+		# ai_check_interval = 24
 
-		from_potential = {
-			is_playable = yes
-			is_adult = yes
-			prisoner = no
-			society_rank = {
-				society = the_assassins
-				rank == 4
-			}
-		}
+		# from_potential = {
+			# is_playable = yes
+			# is_adult = yes
+			# prisoner = no
+			# society_rank = {
+				# society = the_assassins
+				# rank == 4
+			# }
+		# }
 
-		potential = {
-			NOT = { character = FROM }
-			is_adult = yes
-			is_within_diplo_range = FROM
+		# potential = {
+			# NOT = { character = FROM }
+			# is_adult = yes
+			# is_within_diplo_range = FROM
 
-			#Limits for performance and sense-making
-			OR = {
-				FROM = { ai = no }
-				is_foe = FROM 
-				NOT = { reverse_opinion = { who = FROM value = -30 } }
-				holds_favor_on = FROM
-				any_spouse = { #Unfaithful spouse
-					character = FROM
-					any_lover = { NOT = { character = FROM } }
-				}
-				any_lover = { any_spouse = { character = FROM  } } #Lover of spouse
-				any_lover = { any_lover = { character = FROM } } #Lover of lover
-				ROOT = { any_claim = { any_claimant = { character = FROM } } } #Somneone sharing claims
-				AND = {
-					true_religion_shiite_trigger = no
-					is_ruler = yes
-					OR = {
-						trait = zealous
-						trait = cruel
-						trait = arbitrary
-					}
-				}
-			}
-		}
+			# #Limits for performance and sense-making
+			# OR = {
+				# FROM = { ai = no }
+				# is_foe = FROM 
+				# NOT = { reverse_opinion = { who = FROM value = -30 } }
+				# holds_favor_on = FROM
+				# any_spouse = { #Unfaithful spouse
+					# character = FROM
+					# any_lover = { NOT = { character = FROM } }
+				# }
+				# any_lover = { any_spouse = { character = FROM  } } #Lover of spouse
+				# any_lover = { any_lover = { character = FROM } } #Lover of lover
+				# ROOT = { any_claim = { any_claimant = { character = FROM } } } #Somneone sharing claims
+				# AND = {
+					# true_religion_shiite_trigger = no
+					# is_ruler = yes
+					# OR = {
+						# trait = zealous
+						# trait = cruel
+						# trait = arbitrary
+					# }
+				# }
+			# }
+		# }
 
-		allow = {
-			custom_tooltip = {
-				text = assassins_mark_for_death_allow_tooltip
-				FROM = { 
-					NOT = { has_character_flag = assassins_marked_someone_for_death } 
-					has_society_currency_medium_trigger = yes
-				}
-			}	
-		}
+		# allow = {
+			# custom_tooltip = {
+				# text = assassins_mark_for_death_allow_tooltip
+				# FROM = { 
+					# NOT = { has_character_flag = assassins_marked_someone_for_death } 
+					# has_society_currency_medium_trigger = yes
+				# }
+			# }	
+		# }
 
-		effect = {
-			custom_tooltip = {
-				text = assassins_mark_for_death_effect_tooltip
-				FROM = { 
-					set_character_flag = assassins_marked_someone_for_death 
-					character_event = { id = MNM.6842 }
-				}
-				set_character_flag = assassins_target_marked_for_death
-			}
-			FROM = { detract_society_currency_medium_effect = yes }
-		}
+		# effect = {
+			# custom_tooltip = {
+				# text = assassins_mark_for_death_effect_tooltip
+				# FROM = { 
+					# set_character_flag = assassins_marked_someone_for_death 
+					# character_event = { id = MNM.6842 }
+				# }
+				# set_character_flag = assassins_target_marked_for_death
+			# }
+			# FROM = { detract_society_currency_medium_effect = yes }
+		# }
 
-		revoke_allowed = {
-			always = no
-		}
+		# revoke_allowed = {
+			# always = no
+		# }
 
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0.2 # slow down
-			}
-			modifier = {
-				FROM = { is_benevolent_trigger = yes }
-				factor = 0.1
-			}
-			modifier = {
-				FROM = { is_evil_trigger = yes }
-				factor = 4
-			}
-			modifier = {
-				FROM = { trait = ambitious }
-				factor = 2
-			}
-			modifier = {
-				OR = {
-					is_friend = FROM
-					is_lover = FROM
-				}
-				factor = 0
-			}
-		}
-	}
+		# ai_will_do = {
+			# factor = 1
+			# modifier = {
+				# factor = 0.2 # slow down
+			# }
+			# modifier = {
+				# FROM = { is_benevolent_trigger = yes }
+				# factor = 0.1
+			# }
+			# modifier = {
+				# FROM = { is_evil_trigger = yes }
+				# factor = 4
+			# }
+			# modifier = {
+				# FROM = { trait = ambitious }
+				# factor = 2
+			# }
+			# modifier = {
+				# OR = {
+					# is_friend = FROM
+					# is_lover = FROM
+				# }
+				# factor = 0
+			# }
+		# }
+	# }
 
-	#Action: Clear marked for death
-	assassins_clear_marked_for_death_target = {
-		only_playable = yes
+	# #Action: Clear marked for death
+	# assassins_clear_marked_for_death_target = {
+		# only_playable = yes
 		
-		ai_target_filter = realm
-		ai = no
+		# ai_target_filter = realm
+		# ai = no
 
-		from_potential = {
-			is_playable = yes
-			is_adult = yes
-			prisoner = no
-			society_rank = {
-				society = the_assassins
-				rank == 4
-			}
-		}
+		# from_potential = {
+			# is_playable = yes
+			# is_adult = yes
+			# prisoner = no
+			# society_rank = {
+				# society = the_assassins
+				# rank == 4
+			# }
+		# }
 
-		potential = {
-			NOT = { character = FROM }
-			is_adult = yes
-			is_within_diplo_range = FROM
-			has_character_flag = assassins_target_marked_for_death
-		}
+		# potential = {
+			# NOT = { character = FROM }
+			# is_adult = yes
+			# is_within_diplo_range = FROM
+			# has_character_flag = assassins_target_marked_for_death
+		# }
 
-		allow = {
-			custom_tooltip = {
-				text = assassins_clear_marked_for_death_target_allow_tooltip
-				has_character_flag = assassins_target_marked_for_death
-			}
-		}
+		# allow = {
+			# custom_tooltip = {
+				# text = assassins_clear_marked_for_death_target_allow_tooltip
+				# has_character_flag = assassins_target_marked_for_death
+			# }
+		# }
 
-		effect = {
-			custom_tooltip = {
-				text = assassins_clear_marked_for_death_target_effect_tooltip
-				clr_character_flag = assassins_target_marked_for_death
-				FROM = { clr_character_flag = assassins_marked_someone_for_death }
-			}
-		}
+		# effect = {
+			# custom_tooltip = {
+				# text = assassins_clear_marked_for_death_target_effect_tooltip
+				# clr_character_flag = assassins_target_marked_for_death
+				# FROM = { clr_character_flag = assassins_marked_someone_for_death }
+			# }
+		# }
 
-		revoke_allowed = {
-			always = no
-		}
+		# revoke_allowed = {
+			# always = no
+		# }
 
-		ai_will_do = { 
-			factor = 0
-		}
-	}
-	#Action: (Mission only: Train Protege)
-	train_assassin_protege = {
-	    only_playable = yes
-	    is_high_prio = yes
-		ai_check_interval = 36
+		# ai_will_do = { 
+			# factor = 0
+		# }
+	# }
+	# #Action: (Mission only: Train Protege)
+	# train_assassin_protege = {
+	    # only_playable = yes
+	    # is_high_prio = yes
+		# ai_check_interval = 36
 	    
-	    from_potential = {
-    		has_dlc = "Mystics"
-	        is_playable = yes
-	        is_adult = yes
-	        prisoner = no
-			society_member_of = the_assassins
-	        has_regent = no
-	        is_inaccessible_trigger = no
-	        has_quest = quest_the_assassins_protege
-	        NOT = { has_character_flag = training_protege }
-	    }
+	    # from_potential = {
+    		# has_dlc = "Mystics"
+	        # is_playable = yes
+	        # is_adult = yes
+	        # prisoner = no
+			# society_member_of = the_assassins
+	        # has_regent = no
+	        # is_inaccessible_trigger = no
+	        # has_quest = quest_the_assassins_protege
+	        # NOT = { has_character_flag = training_protege }
+	    # }
 	    
-	    potential = {
-        	NOT = { character = FROM }
-	        prisoner = no
-	        #is_child_of = FROM
-	    }
+	    # potential = {
+        	# NOT = { character = FROM }
+	        # prisoner = no
+	        # #is_child_of = FROM
+	    # }
 	    
-	    allow = {
-	    	host = { character = FROM } #must be in your court...?
-		    age = 12
-			NOT = { age = 21 }
-		    is_ruler = no
-			is_abroad = no
-			is_married = no
-			#NOT = { any_spouse = { is_landed = yes } }
+	    # allow = {
+	    	# host = { character = FROM } #must be in your court...?
+		    # age = 12
+			# NOT = { age = 21 }
+		    # is_ruler = no
+			# is_abroad = no
+			# is_married = no
+			# #NOT = { any_spouse = { is_landed = yes } }
 
-	    	trigger_if = {
-	    		limit = { #can't be in a society already...
-	    			is_in_society = yes
-	    		}
-		    	is_in_society = no
-	    	}
+	    	# trigger_if = {
+	    		# limit = { #can't be in a society already...
+	    			# is_in_society = yes
+	    		# }
+		    	# is_in_society = no
+	    	# }
 
-	        is_inaccessible_trigger = no
+	        # is_inaccessible_trigger = no
 
-	        custom_tooltip = {
-	            text = characters_are_not_busy_tt
-	            hidden_tooltip = {
-	                FROM = {
-	                    NOT = { has_character_flag = do_not_disturb }
-	                    NOT = { war = yes }
-	                }
-	                NOT = { has_character_flag = do_not_disturb }
-	                NOT = { war = yes }
-	            }
-	        }
-	        trigger_if = {
-	        	limit = { NOT = { is_within_diplo_range = FROM } }
-	        	is_within_diplo_range = FROM # CPU HEAVY!
-	        }
-	    }
+	        # custom_tooltip = {
+	            # text = characters_are_not_busy_tt
+	            # hidden_tooltip = {
+	                # FROM = {
+	                    # NOT = { has_character_flag = do_not_disturb }
+	                    # NOT = { war = yes }
+	                # }
+	                # NOT = { has_character_flag = do_not_disturb }
+	                # NOT = { war = yes }
+	            # }
+	        # }
+	        # trigger_if = {
+	        	# limit = { NOT = { is_within_diplo_range = FROM } }
+	        	# is_within_diplo_range = FROM # CPU HEAVY!
+	        # }
+	    # }
 	    
-	    effect = {
-	    	save_event_target_as = assassin_protege
+	    # effect = {
+	    	# save_event_target_as = assassin_protege
 	    	
-	    	FROM = {
-	    		set_character_flag = is_using_train_protege_decision
-	    		character_event = { id = MNM.6250 }
-	    	}
-	    }
+	    	# FROM = {
+	    		# set_character_flag = is_using_train_protege_decision
+	    		# character_event = { id = MNM.6250 }
+	    	# }
+	    # }
 	    
-	    revoke_allowed = {
-	        always = no
-	    }
-	    ai_will_do = {
-	        factor = 1
-	        modifier = {
-	            factor = 0
-	            #if the target has already recruited someone
-	            any_child = {
-	            	same_society_as = ROOT
-	            }
+	    # revoke_allowed = {
+	        # always = no
+	    # }
+	    # ai_will_do = {
+	        # factor = 1
+	        # modifier = {
+	            # factor = 0
+	            # #if the target has already recruited someone
+	            # any_child = {
+	            	# same_society_as = ROOT
+	            # }
 
-	        }
-	        modifier = {
-	            factor = 0.3
-	        }
-	    }
-	}
-}
+	        # }
+	        # modifier = {
+	            # factor = 0.3
+	        # }
+	    # }
+	# }
+# }
 
 
 society_decisions = {

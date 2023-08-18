@@ -8,36 +8,3 @@ slots = {
 #################### Jade Dragon. ##########################
 #### Section 2: Books that can be written by characters ####
 ############################################################
-
-magnum_opus_alchemy_panacea_3 = {
-	learning = 2
-	health = 0.5
-	quality = 3
-	flags = { society hermetics lore alchemy book }
-	active = { 
-		OR = {
-			learning = 20
-			society_member_of = hermetics 
-		}
-		custom_tooltip = {
-			text = NO_HIGHER_QUALITY_VERSION_ACTIVE
-			NOT = {
-				AND = {
-					OR = {
-						learning = 25
-						society_member_of = hermetics
-					}
-					any_artifact = {
-						artifact_type = magnum_opus_alchemy_panacea_4
-					}
-				}
-			}
-		}
-	}
-	allowed_gift = {
-		always = no
-	}
-	stacking = no
-	picture = "GFX_book_green"
-	slot = library
-}

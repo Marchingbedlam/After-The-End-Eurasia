@@ -654,24 +654,24 @@ plot_kill_character = {
 	type = realm_characters_plus # All characters in the same realm, plus rivals and relatives of self, parents, children and spouse, and quest target
 	intrigue_plot = yes
 	murder_plot = yes
-	society_plot = {
-		ROOT = {
-			society_member_of = the_assassins
-			society_rank >= 2
-		}
-		OR = {
-			FROM = { 
-				NOR = {
-					religion = shiite
-					secret_religion = shiite
-				}
-			}
-			ROOT = {
-				has_quest = quest_the_assassins_assassination
-				quest_target = { character = FROM }
-			}
-		}
-	}
+	# society_plot = {
+		# ROOT = {
+			# society_member_of = the_assassins
+			# society_rank >= 2
+		# }
+		# OR = {
+			# FROM = { 
+				# NOR = {
+					# religion = shiite
+					# secret_religion = shiite
+				# }
+			# }
+			# ROOT = {
+				# has_quest = quest_the_assassins_assassination
+				# quest_target = { character = FROM }
+			# }
+		# }
+	# }
 	
 	# Plotter scope
 	potential = {
