@@ -8,16 +8,16 @@
 
 namespace = cenobitic
 
-character_event = {
-	id = cenobitic.001
-	hide_window = yes
-	is_triggered_only = yes
+# character_event = {
+	# id = cenobitic.001
+	# hide_window = yes
+	# is_triggered_only = yes
 	
-		c_1802036 = {
-            set_special_character_title = DESERT_FATHER_TITLE
-        }
+		# c_1802036 = {
+            # set_special_character_title = DESERT_FATHER_TITLE
+        # }
 	
-}
+# }
 
 character_event = {
 	id = cenobitic.002

@@ -335,7 +335,7 @@ character_event = {
 # Hidden tombola: fired from event above to determine what happened to lipka child
 # Formely MTTH events, then random yearly events, but for more control, now a delayed tombola event...
 character_event = {
-	id = HFP.19102
+	id = lipka.19102
 	is_triggered_only = yes
 	hide_window = yes
 

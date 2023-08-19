@@ -283,7 +283,7 @@ decisions = {
 		}
 		effect = {
 			change_learning = 1
-			add_piety = 100
+			piety = 100
 			add_cenobitic_trait_effect_married = yes
 			set_character_flag = ordainedinthechurch
 		}
@@ -372,7 +372,7 @@ decisions = {
 		}
 		effect = {
 			change_learning = 1
-			add_piety = 200
+			piety = 200
 			add_cenobitic_trait_effect = yes
 			set_character_flag = ordainedinthechurch
 		}
