@@ -582,17 +582,102 @@ dravidian_south = {
 
 		modifier = default_culture_modifier
 	}
-	deccani = {
+	deccani = { #Mix of Urdu-Dravidian names
 		graphical_cultures = { southindiangfx muslimgfx egyptiangfx }
 
 		color = { 0.6 0.54 0.72 }
 
 		male_names = {
-		
+			#Urdu names
+			Abbas_Abbas Abdul Ahed_Abdulahad Abdul Ghafur_Abdulghafur Abdul Hamid_Abdulhamid Abdul Jabbar_Abduljabbar Abdul Karim_Abdulkarim Abdul Majid_Abdulmajid Abdul Wahid_Abdulwahid Abdullah_Abdullah Abdur Rab_Abdulrab Abdur Rahim_Abdulrahim Abdur Rahman_Abdulrahman Abdur Rashid_Abdulrashid Abdur Razak_Abdulrazzaq Abdus Sattar_Abdulsattar Aboobacker_Abu-Bakr Afshar Aftab_Aftab Afzal_Afzal Ahfaz-ur-Rahman Ahmad_Ahmad Ahmadullah Ahsan_Ahsan Ajmal_Ajmal Akbar_Akbar Akhlaq Akhtar_Akhtar Akif_Akif Alam_Alam Alamgir_Alamgir Alauddin_Alauddin Ali_Ali Alqama Altaf_Altaf Amir Ali Amir_Amir Amiruddin Anwar_Anwar Aqil_Aqil Ardeshir Arif_Arif Arifullah Arshad_Arshad Asad_Asad Asfandyar_Asfandyar Asghar_Asghar Ashiq Ashraf_Ashraf Asif_Asif Aslam_Arslan Ataullah Atif_Atif Aziz_Aziz 
+			Badi-uz-Zaman Badruddin_Badruddin Bahadur_Bahadur Bahauddin_Bahauddin Baqir_Baqir Bashir_Bashir Bilal_Bilal 
+			Dilawar 
+			Ehtesham Ehteshamuddin 
+			Fahad Faisal_Faisal Fakhruddin_Fakhruddin Faran Farrukh_Farrukh Faruq_Faruq Fasihuddin Fatehyab Fatih_Fatih 
+			Ghiyasuddin_Ghiyasuddin Ghulam Ghulam Abbas Ghulam Ali Ghulam Muhammad Ghulam Mustafa Gul Muhammad Gulzar 
+			Habib_Habib Habibullah_Habibullah Halim_Halim Hamid Hamidullah_Hamidullah Hamid-ur-Rahman Hamud-ur-Rahman Hanif Harun_Aaron Hashim_Hashim Hassan_Hasan Himayat Hussain_Hussain Hyder Ali Hyder_Haydar 
+			Ibrahim_Abraham Idris_Idris Iftikhar Ihsan-ul-Karim Ijaz Ikramullah Imran_Imran Imtiaz_Imtiaz Inam-ul-Haq Inamullah Inzamam-ul-Haq Iqbal_Iqbal Ishrat-ul-Ibad Islahuddin Ismail_Ismail Israr 
+			Jafar_Jafar Jahangir Jalal_Jalal Jalaluddin_Jalaluddin Jamil_Jamil Jamiluddin_Jamiluddin Jamshid_Jamshid Javed_Jawad 
+			Kamal_Kamal Kamran Karim_Karim Karimullah Khairuddin_Khairuddin Khalid_Khalid Khalil_Khalil Khaliq-uz-Zaman Khayyam Khurram_Khurram Khurshid_Khurshid Kunwar 
+			Latif_Latif Latif-ur-Rahman Lutfullah 
+			Mahbub_Mahbub Mahmud_Mahmud Majid_Majid Mansur_Mansur Manuchihr_Manuchihr Maqbul Maqsud_Maqsud Masud-ul-Hassan Mawdud Mehdi_Mahdi Miftah Mizan-ur-Rahman Mohyuddin_Muhiuddin Mubashir_Mubashir Muhammad Ali Muhammad_Muhammad Muhsin Muhsin-ul-Mulk Mujahid_Mujahid Mujib_Mujib Mujtaba_Mujtaba Munawwar_Munawwar Muntakhib-ul-Haq Murad_Murad Musa_Moses Musharraf_Musharraf Mushtaq Muslihuddin Muslim_Muslim Mustafa_Mustafa Muzaffar 
+			Nasir_Nasir Naushad Nazimuddin Nizamuddin Numan Nur Muhammad Nur-ul-Amin 
+			Obaidullah_Ubaydullah Ovamir 
+			Parviz_Parviz 
+			Qadiruddin Qasim_Qasim Qurban_Kurban 
+			Rafiuddin Ramzan_Ramadan Rashid_Rashid Rauf_Rauf Raza_Rezha Raziuddin Rehmat Riazuddin Rustam_Rustam 
+			Sabihuddin Sada Sadruddin_Sadruddin Safwanullah Sahib_Sahib Saidullah Said-ur-Rahman Said-uz-Zaman Sajjad_Sajjad Salahuddin_Salahuddin Salim_Salim Salim-uz-Zaman Salman_Salman Sarfaraz Sattar Saulat Shafiq_Shafiq Shafi-ur-Rahman Shahabuddin Shahid_Shahid Shahin_Shahin Shahjahan Shahryar_Shahryar Shammi Shamsuddin_Shamsuddin Shams-ul-Hassan Shan-ul-Haq Shaukat_Shawkat Shehzar Sher Ali Sher Muhammad Siddiq_Siddiq Sikandar_Alexander Subhani Sufiyan_Sufyan Suhail Suleman_Sulayman 
+			Tahir_Tahir Taimur_Timur Tajuddin Talib_Talib Tanzil-ur-Rahman Tariq_Tariq Tasadduq Tashbih Tassaduq Turab-ul-Haq 
+			Usman_Uthman Uzair_Uzair 
+			Wahid Yar Wahiduddin Wajid_Wajid Wajihuddin Wazir 
+			Yaqub_James Yunus_Jonah Yusuf_Joseph 
+			Zahid Zaid_Zayd Zainuddin_Zaynuddin Zainul Abedin_Zaynalabidin Zakaria_Zachary Zakaullah Zaman Ziauddin Zulfiqar_Zulfiqar Zulkader 
+			
+			#Kannadiga names
+			Abhimanyu Abhishek Akash Amarnath Amartya Amit Amitash Anil Annadanaiah Anup Appaji Apurva Aravind Arjun Atharvaa 
+			Balakrishna Balappa Basappa Basavaiah Basavaraj Bhairappa Bhashyam Bheemaarayappa Bhimsen Bhuvanesh Byregowda 
+			Chanabasappa Chandragowda Chandrasekhar Chengaluraya Chintamani Chiranjeevi Chitagopi Chowdiah 
+			Danappa Dasappa Devanahalli Devaraj Devegowda Dhanaraj Dhruva Dilip Dinesh Dodda 
+			Erapalli 
+			Ganesh Gangaiah Gautam Giri Girish Gnaneshwar Gopal Gopalakrishna Gopalaswamy Gopinath Govinda Govindaraj Govindaray Gundappa Gurudath Gururaj 
+			Hanumanna Hanumantha Harish Hemanth 
+			Indrajit Ishaan 
+			Janardhan Javagal Javarappa Jayant Jayasimha 
+			Kaladharan Kalinga Kallinatha Kanekal Karun Kemparaj Kempegowda Krishna Krishnacharya Krishnamurthy Krishnaswamy Kumar Kumaraswamy 
+			Lakshminarayan Lakshminarayanaswamy Lingappa Lingegowda Lohith Lohithaswa Lokanatha 
+			Madhukar Madhusudana Madiah Mahadev Mailara Mallaiah Mallikarjun Manappa Mariappa Mayappa Mayas Mohan Mok Mudalagiriyappa Mukul Munishamappa Muniyappa Murugappa Muthuraj 
+			Nagaraj Nandakumar Narahari Narasimha Narasinga Narayan Narayanaswamy Nataraj Nikhil Nirup 
+			Padmanabha Paramashivaiah Parameshwar Pavankumar Poornachandra Prabhanjan Pradeep Prajwal Prakash Praneet Prasad Prasanna Prashanth Pravara Prem Puneeth Purarava Puttaswamaiah Puttaswamy 
+			Raam Raayan Raghavendra Raghurama Raghuveer Rahul Rajaratnam Rajashankar Rajashekhar Rajeev Rajendrapura Rajesh Ramachandra Ramachandraraya Ramaiah Ramakrishna Ramamurthy Ramanujan Ramaraju Ramaswamy Ramesh Rangadhamanayak Ranganatha Ravikumar Revanna Rohan Rudramurthy 
+			Sampangappa Sampathkumar Samvit Sannappa Satyanarayana Seetharam Seetharamaiah Shalivahana Shamanna Sharad Sharatchandra Sheshaiah Shiva Shivakumar Shivanna Shivappa Shivarudraiah Shivarudrappa Shreyas Shri Shripad Siddaiah Siddalingaiah Siddalingappa Siddeshwara Siddharth Srikanta Srikrishna Srinivas Srinivasamurthy Srinivasan Sripathi Sriramulu Srujan Subbaiah Subbanna Subbaswamy Subramanya Sudhakar Sundar Sunil Suraj Suresh Suryanarayana 
+			Thimmappa Tirumalesh 
+			Ugrappa 
+			Varadaraj Vedavyasachar Veeranna Veerappa Venkanna Venkata Venkatachala Venkatakrishna Venkatakrishnaiah Venkatappa Venkataramaiah Venkatasubba Venkatasubramanyan Venkatesh Vidyasagar Vijay Vijayendra Vikash Vinay Vishnuvardhan Vishweshwar Vishweshwaraiah Vittal Vivek 
+			Yashowardhan Yathiraj 
 		}
 
 		female_names = {
-		
+			#Urdu names
+			Abida Akhtar Jahan Amina Amna Anis Aqila Asma Ayesha_Aisha 
+			Benazir Bilqis_Bilqis Birjis Bushra_Bushra 
+			Fahmida Fatima_Fatima Fawzia 
+			Hajra Hamida_Hamida Haseena Hijab Hina Humaira 
+			Ishrat Jahan 
+			Jahanara Jamila_Jamila Javeria 
+			Khadija_Khadija Khalida Khurshid Khushbakht 
+			Laila_Laila Latifa_Latifa Lubna 
+			Maheen Mahjabeen Mariam_Mary Masuma Mehreen Minara Miraj Mumtaz Mumtaz-un-Nissa Muniba 
+			Nadira_Nadira Nadra Nahid Najma Narmeen Nasreen Naushaba Naz Nazia Nazneen Niaz Nigar Nighat Nurjahan Nuzhat 
+			Parvin 
+			Qurratulain 
+			Rabiya Rahimunnisa Rana Rashida_Rashida Razia Rehana Roshan Roshanara 
+			Saadia Sabrina Sahibni Salma Sarah Sarvath Sarwat Senain Shabbir-un-Nissa Shabnam Shahrbanu Shahzadi Shaista Shamaila Shamim Sharmin Shirin Shumaila Siddiqa Sultana_Sultana Surayya 
+			Tabassum Tahira Tayyaba Tehmina 
+			Umat-ur-Rahman Uzma 
+			Yasmin 
+			Zahida Zaib-un-Nissa Zakia Zarin Zeba Zubaida_Zubayda Zuhra_Zahra 
+			
+			#Kannadiga names
+			Aadhi Aaruni Aishani Aishwarya Aja Akshata Alamelamma Ambabai Ammaji Ananya Anasuya Anita Anitha Anjana Annapoorna Annapoornamma Anu Anuradha Aparna Aravind Arisi Aruna Aryamba Ashwini 
+			Babitha Banashankaramma Belaku Bhagirathi Bhanumati Bharathi Bhargavi Bhavani Bhuvaneshwari 
+			Champalakshmi Chandana Chandralekha Chandrika Chaya Chennamma Chetana Chinnadevi 
+			Devamma Deveramma Devirammanni Deviyani Dhanya Dharmavathi Divya Drithi 
+			Ganapamma Gangamma Gangubai Gauri Gayathri Gayithri Geetha Girija Godavaribai Gowramma 
+			Hema Hemalatha Hemavathi Hitha Honnuramma 
+			Indira Indu Indukala Indumati 
+			Janaki Jaya Jayalakshamma Jayalakshmi Jayamma Jayashree 
+			Kalapini Kamakshamma Kamala Kamalamma Kannamma Kaveri Kavitha Kavya Keerthi Koorme Kusuma 
+			Lakshamma Lakshmamma Lakshmi Lakshmidevi Lakshmigowramma Lalitha Lalithamma Leela Leelamma Lingamma 
+			Madhava Mahabala Mahalakshmi Malavika Mallamma Mamatha Mangala Maniammai Manjula Meghana Mithravinda Muktamba Muthumma Nagalakshmi 
+			Nagammai Nagarathna Nagarathnamma Naidile Nalini Nanditha Narahari Narasamma Navilu Neela Neetha Nidhi Nirmala Nishka Niveditha 
+			Padmaja Padmamma Pallavi Parijatha Parimala Parvathamma Parvathi Pavitra Pillamma Ponnuthoy Pooja Poornimma Pramila Prathyusha Pratibha Prema Purna Puttamma Puttathayamma 
+			Radhabai Radhamma Radhika Ragini Rajamma Rajeshwari Rangamma Ranjana Ranjitha Rathna Ratnamma Rekha Revanna Revathi Rudramma 
+			Sabavva Sakshi Samyukta Sangamma Sangavi Sangeeta Santhi Saralamba Sarasvatamma Saraswati Saroja Sarojini Sathyabhama Savithramma Seetalakshmi Seetamma Shamika Shanta Shantakumari Shanthamma Sharada Sharadamma Sharvani Sherin Shilpa Shobha Shravya Siddagangamma Somavva Sowmya Subbamma Suchitra Sudeshna Sudha Sujatha Sumalatha Sumathi Sundara Sundarabai Sundaramma Supriya Susheelamma Sushma Sushmitha Suvarna Svasti Swara 
+			Tejaswini Thangamma Tharini Thejaswini 
+			Uma Umashree Usha 
+			Vaishali Vanditha Vani Vanishree Vasanti Vasundhara Vatsalabai Vedhika Veena Veeranna Venkamma Venkatalakshmamma Venkatalakshmi Venkatamma Vidya Vijaya Vimala Virisi Vishalakshi 
+			Weena 
+			Yamunabai 
 		}
 		
 		from_dynasty_prefix = "of "
@@ -615,11 +700,51 @@ dravidian_south = {
 		color = { 0.6 0.3 0.6 }
 
 		male_names = {
-		
+			Adarsh Ahmad_Ahmad Akash Akhil Ali_Ali Amith Anand Anindith Anjaiah Anthaiah Aravind Archishman Arjun Arulappa Ashok Ashwin 
+			Bala Balakrisha Bharani Bharath 
+			Chakradhar Chandramma Chandrashekhara Chinnaiah 
+			Daasarathi Damodar Dattatreya Deendayal Devaiah Durga 
+			Govardhan Govindaswami Govindrajulu 
+			Hanumantha Harish Himanshu Hyder_Haydar 
+			Indra 
+			Jaipal Jaiveer Jagannadham Jana Janardhana Janga Jayaraj Jayaram Jayashankar Jeevan 
+			Kanakappa Karunakara Kesava Kishan Kishore Kodandaram Konda Krishna Krishnamacharyulu Kumar Kumaraswamy 
+			Lakshma Lakshmikantha 
+			Madhava Madhusudhan Mahendra Mahipal Malla Murali Muralidhar 
+			Nagarjuna Nageswara Nandagopala Narasimha Narayana Narendra Narsa Narsimayya Narsingh Nayudamma 
+			Papi Prabhakar Pranay Prasada Pratapa Pratik Priyadarshi 
+			Radakrishna Raghava Raghuveer Rahul Rajagopala Rajaiah Rajendra Rajeshwara Ramachandra Ramakrishna Ramalinga Ramana  
+			Ramanaidu "Ram Charan" Ramesh Rameshwara Rangacharya Ranganatha Rathiesh Revanth 
+			"Sai Daram" Sampath Sanjeeva Sankalp Santosh Saraiah Sarvotham Satya Satyanarayana Sekhar Shankar Shravan  
+			Siddharth Sirish Sitarama Siva Somashekara Sridhar Srihari Srinivas Subadhramma Subba Sudhakar Sukender Sundara   
+			Sudarshan Sudhir Sundararaja Surendra Suresh Sushanth Swamy 
+			Taraka Tharani Tharun 
+			Uday Uttej 
+			Vaikuntam Vaishnav Vamshidhar Varavara Varun Veera Vengala Venka Venkata Venkatarama Venkataswamy 
+			Venkatesh Venkateshwara Venkateshwarlu Vidyasagar Vijay Vinay Vinayak Vinod Vishal Vishnu Vishweshwar Vivekananda 
+			Yoganand Yugandhar 
 		}
 
 		female_names = {
-		
+			Aashritha Alekhya Ananthalakshmi Anasuya Andalamma Anita Anthamma Aruna Arunadevi Arundathi Ashwini 
+			Bharathi Buchamma 
+			Dhanalakshmi Divya Durgabai 
+			Geeta 
+			Hanumayamma Hemalatha 
+			Ilamma 
+			Janakamma Janaki Jayadevi Jayalakshmi Jayalatha Jayanthi 
+			Kalpana Kamala Kamaladevi Kausalya Kavitha Kavya Kiran Kusuma 
+			Lakshmamma Lakshmi Lakshmibai Lalita 
+			Madhavi Mahalakshmi Maisamma Mallamma Manemma Manishi Malini Megha 
+			Nandini Narasamma Neeraja Niharika Nikitha Nirmala 
+			Padma Padmaja Padmavathi Prabhavathi 
+			Racha Radha Rajamma Rajeswari Ramya Rangamma Ranganayakamma Rukmini 
+			Sasirekha Satyamma Seetarama Shailima Shanthamma Shanti Sharada Shobha Shriya Simhadramma Sindhu Sneha Sravani  
+			Sriharshita Srilakshmi Srinitha Srinivasa Subhadra Sugunadevi Sujatha Sumathi Sunitha Surekha Sushmita Suseela Swathi Syamala 
+			Tungabadramma 
+			Udaya 
+			Vaishnavi Varalakshmi Vasumathi Venkata Venkatamma Vijayalalitha Vijayamma Vijayashanti Vinaya Vinoda Vygha 
+			Yashodamma 
 		}
 		
 		from_dynasty_prefix = "of "
