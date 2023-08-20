@@ -222,31 +222,6 @@
 	dynasty=2024230 #Teixeira
 	culture=portuguese
 	religion=catholic
-	martial=3
-	diplomacy=3
-	stewardship=3
-	intrigue=3
-	learning=3
-}
-1992400={
-	name="Leandro"
-	dynasty=2024230 #Teixeira
-	culture=portuguese
-	religion=catholic
-	martial=3
-	diplomacy=3
-	stewardship=3
-	intrigue=3
-	learning=3
-	trait=drunkard
-	2565.9.16={birth=yes}
-	2600.2.4={death=yes}
-}
-1992401={
-	name="Pedro"
-	dynasty=2024230 #Teixeira
-	culture=portuguese
-	religion=catholic
 	martial=10
 	diplomacy=5
 	stewardship=8
@@ -681,33 +656,33 @@
 	2642.5.9={birth=yes}
 	2680.1.1={death=yes}
 }
-#1992811={
-#	name="Federico"
-#	dynasty=2022177 #Romariz
-#	culture=galician
-#	religion=quinto
-#	trait=skilled_tactician
-#	trait=authoritative
-#	trait=just
-#	
-#	2581.1.1={birth=yes}
-#	2638.4.15={death=yes}
-#}
-#19928012={
-#	name="Anxo"
-#	dynasty=2022055 #Carro
-#	culture=galician
-#	religion=quinto
-#	trait=fortune_builder
-#	trait=fair
-#	trait=gregarious
-#	trait=charitable
-#	trait=gluttonous
-#	trait=honest
-#	
-#	2639.1.2={birth=yes}
-#	2680.1.1={death=yes}
-#}
+1992811={
+	name="Federico"
+	dynasty=2022177 #Romariz
+	culture=galician
+	religion=quinto
+	trait=skilled_tactician
+	trait=authoritative
+	trait=just
+	
+	2581.1.1={birth=yes}
+	2638.4.15={death=yes}
+}
+1992812={
+	name="Anxo"
+	dynasty=2022055 #Carro
+	culture=galician
+	religion=quinto
+	trait=fortune_builder
+	trait=fair
+	trait=gregarious
+	trait=charitable
+	trait=gluttonous
+	trait=honest
+	
+	2639.1.2={birth=yes}
+	2680.1.1={death=yes}
+}
 #19928013={
 #	name="Casandra"
 #	female=yes
