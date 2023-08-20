@@ -1,163 +1,163 @@
-#Modified Immortality EVENT for the purposes of reincarnating the Dalai Lama back into the game.
-namespace = TIB
-#Martial quest step 3 challenge - THE FINAL RITUAL /// Start of the Reincarnation event chain modified to work as a trigger upon death of the Dalai Lama
-narrative_event = {
-	title = EVTNAME_TIB_1
-	id = TIB.1
-	border = GFX_event_narrative_frame_war
-	picture = GFX_evt_ritual_scroll
+# #Modified Immortality EVENT for the purposes of reincarnating the Dalai Lama back into the game.
+# namespace = TIB
+# #Martial quest step 3 challenge - THE FINAL RITUAL /// Start of the Reincarnation event chain modified to work as a trigger upon death of the Dalai Lama
+# narrative_event = {
+	# title = EVTNAME_TIB_1
+	# id = TIB.1
+	# border = GFX_event_narrative_frame_war
+	# picture = GFX_evt_ritual_scroll
 
-	is_triggered_only = yes
+	# is_triggered_only = yes
 
-	trigger = {
-		has_landed_title = k_gelugpa
-		religion = gelugpa
-		NOT = { 
-			has_alternate_start_parameter = { key = religion_names value = 100 }
-		}
-	}
+	# trigger = {
+		# has_landed_title = k_gelugpa
+		# religion = gelugpa
+		# NOT = { 
+			# has_alternate_start_parameter = { key = religion_names value = 100 }
+		# }
+	# }
 	
-	fail_trigger_effect = {
-		if = {
-			limit = { prisoner = yes } #Try again later, in case you're released from prison...
-			repeat_event = {
-				id = TIB.1
-				days = 35
-			}
-		}
-	}
+	# fail_trigger_effect = {
+		# if = {
+			# limit = { prisoner = yes } #Try again later, in case you're released from prison...
+			# repeat_event = {
+				# id = TIB.1
+				# days = 35
+			# }
+		# }
+	# }
 
-	immediate = {
-		hidden_tooltip = {
-			random_list = {
-				100 = {
-					#Unlike the corresponding Vanilla Event it will always auto fail allowing for the Dalai Lama to ALWAYS REINCARNATE
-					modifier = {
-						factor = 1000
-						FROM = { has_character_flag = is_the_dalai_lama }
-					}
+	# immediate = {
+		# hidden_tooltip = {
+			# random_list = {
+				# 100 = {
+					# #Unlike the corresponding Vanilla Event it will always auto fail allowing for the Dalai Lama to ALWAYS REINCARNATE
+					# modifier = {
+						# factor = 1000
+						# FROM = { has_character_flag = is_the_dalai_lama }
+					# }
 					
-					if = {
-						limit = { ROOT = { is_female = yes } }
-						create_character = {
-							female = yes
-							age = 0
-							random_traits = no
-							dynasty = ROOT
-							religion = ROOT
-							culture = ROOT
-							race = ROOT
-						}
-						new_character = {
-							set_mother = ROOT
-						}
-					}
-					if = {
-						limit = { ROOT = { is_female = no } }
-						create_character = {
-							female = no
-							age = 0
-							random_traits = no
-							dynasty = ROOT
-							religion = ROOT
-							culture = ROOT
-							race = ROOT
-						}
-						new_character = {
-							set_father = ROOT
-						}
-					}
+					# if = {
+						# limit = { ROOT = { is_female = yes } }
+						# create_character = {
+							# female = yes
+							# age = 0
+							# random_traits = no
+							# dynasty = ROOT
+							# religion = ROOT
+							# culture = ROOT
+							# race = ROOT
+						# }
+						# new_character = {
+							# set_mother = ROOT
+						# }
+					# }
+					# if = {
+						# limit = { ROOT = { is_female = no } }
+						# create_character = {
+							# female = no
+							# age = 0
+							# random_traits = no
+							# dynasty = ROOT
+							# religion = ROOT
+							# culture = ROOT
+							# race = ROOT
+						# }
+						# new_character = {
+							# set_father = ROOT
+						# }
+					# }
 		
-					new_character = {
-						narrative_event = { id = TIB.2 days = 3 } #Copies traits
-						narrative_event = { id = TIB.3 days = 3 } #Pings new character
-						narrative_event = { id = TIB.5 days = 3 } #Give Character a the Dalai Lama Character Flag
-					}
-				}
-			}
-		}
-	}
-}
-#Martial quest step 3 pinging the reincarnation character 
-narrative_event = {
-	id = TIB.3
-	is_triggered_only = yes
-	hide_window = yes
+					# new_character = {
+						# narrative_event = { id = TIB.2 days = 3 } #Copies traits
+						# narrative_event = { id = TIB.3 days = 3 } #Pings new character
+						# narrative_event = { id = TIB.5 days = 3 } #Give Character a the Dalai Lama Character Flag
+					# }
+				# }
+			# }
+		# }
+	# }
+# }
+# #Martial quest step 3 pinging the reincarnation character 
+# narrative_event = {
+	# id = TIB.3
+	# is_triggered_only = yes
+	# hide_window = yes
 
-	option = {
-		FROM = { narrative_event = { id = TIB.4 } }
-	}
-}
+	# option = {
+		# FROM = { narrative_event = { id = TIB.4 } }
+	# }
+# }
 
-#Martial quest step 3 reincarnation death
-narrative_event = {
-	title = EVTNAME_TIB_4
-	id = TIB.4
-	desc = EVTDSC_TIB_4
-	border = GFX_event_narrative_frame_war
-	picture = GFX_evt_lunatic
+# #Martial quest step 3 reincarnation death
+# narrative_event = {
+	# title = EVTNAME_TIB_4
+	# id = TIB.4
+	# desc = EVTDSC_TIB_4
+	# border = GFX_event_narrative_frame_war
+	# picture = GFX_evt_lunatic
 
-	is_triggered_only = yes
+	# is_triggered_only = yes
 
-	option = {
-		name = EVTOPTA_TIB_4
-		custom_tooltip = { text = EVTOPTA_TIB_4_TOOLTIP }
+	# option = {
+		# name = EVTOPTA_TIB_4
+		# custom_tooltip = { text = EVTOPTA_TIB_4_TOOLTIP }
 		
-		hidden_tooltip = {
-			death = { death_reason = death_murder_unknown killer = event_target:eternal_life_mystic } 
-		}
-	}
-}
-###REINCARNATION
+		# hidden_tooltip = {
+			# death = { death_reason = death_murder_unknown killer = event_target:eternal_life_mystic } 
+		# }
+	# }
+# }
+# ###REINCARNATION
 
-#reincarnation event
-narrative_event = {
-	id = TIB.2
-	is_triggered_only = yes
-	hide_from = yes
+# #reincarnation event
+# narrative_event = {
+	# id = TIB.2
+	# is_triggered_only = yes
+	# hide_from = yes
 
-	hide_window = yes
+	# hide_window = yes
 
-	option = {
+	# option = {
 
-		FROM = {
-			save_event_target_as = eternal_life_reincarnation_source
-			grant_title = ROOT
-		}
+		# FROM = {
+			# save_event_target_as = eternal_life_reincarnation_source
+			# grant_title = ROOT
+		# }
 
-		ROOT = {
-			#Add traits of reincarnation source
-			copy_random_personality_trait = event_target:eternal_life_reincarnation_source
-			copy_random_personality_trait = event_target:eternal_life_reincarnation_source
-			copy_random_personality_trait = event_target:eternal_life_reincarnation_source
-			copy_random_personality_trait = event_target:eternal_life_reincarnation_source
-			copy_random_personality_trait = event_target:eternal_life_reincarnation_source
-			copy_random_personality_trait = event_target:eternal_life_reincarnation_source
-			copy_random_personality_trait = event_target:eternal_life_reincarnation_source
-			copy_random_personality_trait = event_target:eternal_life_reincarnation_source
-		}
-	}
-}
-#Assign the new dalai lama the special character flag which should allow the system to prepetuate with every dalai lama after game start
-narrative_event = {
-	title = EVTNAME_TIB_5
-	id = TIB.5
-	desc = EVTDSC_TIB_5
-	border = GFX_event_narrative_frame_war
-	picture = GFX_evt_lunatic
+		# ROOT = {
+			# #Add traits of reincarnation source
+			# copy_random_personality_trait = event_target:eternal_life_reincarnation_source
+			# copy_random_personality_trait = event_target:eternal_life_reincarnation_source
+			# copy_random_personality_trait = event_target:eternal_life_reincarnation_source
+			# copy_random_personality_trait = event_target:eternal_life_reincarnation_source
+			# copy_random_personality_trait = event_target:eternal_life_reincarnation_source
+			# copy_random_personality_trait = event_target:eternal_life_reincarnation_source
+			# copy_random_personality_trait = event_target:eternal_life_reincarnation_source
+			# copy_random_personality_trait = event_target:eternal_life_reincarnation_source
+		# }
+	# }
+# }
+# #Assign the new dalai lama the special character flag which should allow the system to prepetuate with every dalai lama after game start
+# narrative_event = {
+	# title = EVTNAME_TIB_5
+	# id = TIB.5
+	# desc = EVTDSC_TIB_5
+	# border = GFX_event_narrative_frame_war
+	# picture = GFX_evt_lunatic
 
-	is_triggered_only = yes
-	hide_from = yes
-	hide_window = yes
+	# is_triggered_only = yes
+	# hide_from = yes
+	# hide_window = yes
 
-	option = {
+	# option = {
 
-		FROM = {
-			save_event_target_as = eternal_life_reincarnation_source
-		}
+		# FROM = {
+			# save_event_target_as = eternal_life_reincarnation_source
+		# }
 
-		ROOT = {
-			set_character_flag = is_the_dalai_lama
-		}
-	}
-}
+		# ROOT = {
+			# set_character_flag = is_the_dalai_lama
+		# }
+	# }
+# }
