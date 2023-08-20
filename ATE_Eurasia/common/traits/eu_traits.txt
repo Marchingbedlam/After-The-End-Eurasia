@@ -1693,6 +1693,7 @@ aniconist= {
 		sea_queen
 		buccaneer
 		corsair
+		capitain
 		#aniconist
 		image_breaker
 		arch_iconoclast
@@ -1729,6 +1730,7 @@ image_breaker = {
 		sea_queen
 		buccaneer
 		corsair
+		capitain
 		aniconist
 		#image_breaker
 		arch_iconoclast
@@ -1764,6 +1766,7 @@ arch_iconoclast = {
 		sea_queen
 		buccaneer
 		corsair
+		capitain
 		aniconist
 		image_breaker
 		#arch_iconoclast
@@ -1802,6 +1805,7 @@ freebooter= {
 		sea_queen
 		buccaneer
 		corsair
+		capitain
 	}
 	martial = 1
 	combat_rating = 10 #old value: 1
@@ -1949,4 +1953,41 @@ tall = { #Renamed to GIant.
 	female_insult = INSULT_HULK
 	male_insult_adj = INSULT_HULKING
 	female_insult_adj = INSULT_HULKING
+}
+capitain = {
+	potential = {
+		OR = {
+			religion = quinto
+			any_owned_bloodline = {
+				has_bloodline_flag = bloodline_capitain
+			}
+		}
+	}
+	opposites = {
+		freebooter
+		pirate
+		viking
+		seaking
+		sea_queen
+		buccaneer
+		corsair
+		capitain
+		aniconist
+		image_breaker
+		arch_iconoclast
+	}
+	martial = 1
+	combat_rating = 10 #old value: 1
+	monthly_character_prestige = 0.3
+	quinto_opinion = 15
+	
+	same_opinion = 5
+	#religious = yes
+	
+	male_insult = COMPL_PIRATE
+	female_insult = COMPL_PIRATE
+	male_compliment = COMPL_ADVENTURER
+	male_compliment_adj = COMPL_ADVENTURER_adj
+	female_compliment = COMPL_ADVENTURER
+	female_compliment_adj = COMPL_ADVENTURER_adj
 }

@@ -3135,6 +3135,17 @@ character_event = {
 		} 
 		text = EVTDESC_TOG_3320
 	}
+	desc = { #For Quinto-Imperial Characters
+		trigger = { 
+			OR = {
+				religion = quinto
+				any_owned_bloodline = {
+					has_bloodline_flag = bloodline_capitain
+				}
+			}
+		} 
+		text = EVTDESC_TOG_3320_quinto
+	}
 	desc = { 
 		trigger = { 
 			NOR = {
@@ -3142,6 +3153,10 @@ character_event = {
 				religion = norse_pagan_reformed
 				any_owned_bloodline = {
 					has_bloodline_flag = bloodline_viking
+				}
+				religion = quinto
+				any_owned_bloodline = {
+					has_bloodline_flag = bloodline_capitain
 				}
 			}
 		} 
@@ -3171,6 +3186,9 @@ character_event = {
 			any_owned_bloodline = {
 				has_bloodline_flag = bloodline_viking
 			}
+			any_owned_bloodline = {
+				has_bloodline_flag = bloodline_capitain
+			}
 			AND = {
 				has_religion_feature = religion_adventuring
 				has_religion_feature = religion_seafaring
@@ -3183,12 +3201,17 @@ character_event = {
 			trait = ravager
 			trait = seaking
 			trait = sea_queen
+			trait = capitain
 		}
 		OR = {
 			religion = norse_pagan
 			religion = norse_pagan_reformed
+			religion = quinto
 			any_owned_bloodline = {
 				has_bloodline_flag = bloodline_viking
+			}
+			any_owned_bloodline = {
+				has_bloodline_flag = bloodline_capitain
 			}
 			AND = {
 				has_religion_feature = religion_adventuring
@@ -3215,6 +3238,7 @@ character_event = {
 				NOR = { 
 					religion = norse_pagan
 					religion = norse_pagan_reformed
+					religion = quinto
 				} 
 			}
 			if = {
@@ -3226,6 +3250,17 @@ character_event = {
 				set_character_flag = acquired_pirate_trait_by_bloodline
 			}
 			add_trait = pirate
+		}
+		if = {
+			limit = { 
+				OR = { 
+					religion = quinto
+					any_owned_bloodline = {
+						has_bloodline_flag = bloodline_capitain
+					}
+				}
+			}
+			add_trait = capitain
 		}
 		hidden_tooltip = {
 			set_variable = { which = viking_raids value = 0 }
@@ -3421,6 +3456,9 @@ character_event = {
 			any_owned_bloodline = {
 				has_bloodline_flag = bloodline_viking
 			}
+			any_owned_bloodline = {
+				has_bloodline_flag = bloodline_capitain
+			}
 			AND = {
 				has_religion_feature = religion_adventuring
 				has_religion_feature = religion_seafaring
@@ -3433,12 +3471,17 @@ character_event = {
 			trait = ravager
 			trait = seaking #Top trait, but there's still chance of gaining a Bloodline if variable goes high enough.
 			trait = sea_queen
+			trait = capitain
 		}
 		OR = {
 			religion = norse_pagan
 			religion = norse_pagan_reformed
+			religion = quinto
 			any_owned_bloodline = {
 				has_bloodline_flag = bloodline_viking
+			}
+			any_owned_bloodline = {
+				has_bloodline_flag = bloodline_capitain
 			}
 			AND = {
 				has_religion_feature = religion_adventuring
