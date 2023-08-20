@@ -16935,7 +16935,20 @@ coat_of_arms = {
 2024256 = { name = "Valente" culture = portuguese }
 2024257 = { name = "Vicente" culture = portuguese }
 2024258 = { name = "Guimarães" culture = portuguese religion = quinto}
-2024259 = { name = "da Veiga" culture = portuguese religion = quinto}
+2024259 = { name = "da Veiga" culture = portuguese religion = quinto used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 67
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2024260 = { name = "de Almeida" culture = portuguese religion = quinto}
 2024261 = { name = "Curvelo" culture = portuguese religion = quinto}
 
@@ -43057,15 +43070,54 @@ coat_of_arms = {
 7001030 = { name = "Drumond" culture = azorean }
 7001031 = { name = "Brum" culture = azorean }
 7001032 = { name = "Dutra" culture = azorean }
-7001033 = { name = "Betancourt" culture = azorean used_for_random = no }
+7001033 = { name = "Betancourt" culture = azorean used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 64
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 7001034 = { name = "Arriaga" culture = azorean }
 7001035 = { name = "Berquó" culture = azorean }
 7001036 = { name = "Bom Dia" culture = azorean }
 7001037 = { name = "Brum" culture = azorean }
 7001038 = { name = "Silveira" culture = azorean }
 
-7002000 = { name = "Lancastre" culture = madeiran used_for_random = no }
-7002001 = { name = "Santos-Aveiro" culture = madeiran used_for_random = no }
+7002000 = { name = "Lancastre" culture = madeiran used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 66
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7002001 = { name = "Santos-Aveiro" culture = madeiran used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 65
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 7002002 = { name = "Mendonça" culture = madeiran }
 7002003 = { name = "Tolentino" culture = madeiran }
 7002004 = { name = "Matos" culture = madeiran }

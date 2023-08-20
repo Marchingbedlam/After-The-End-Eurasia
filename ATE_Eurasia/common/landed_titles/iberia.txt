@@ -742,7 +742,6 @@ k_galicia = {
 				castilian = "La Coruña"
 				andalusian = "La Coruña"
 				
-				holy_site = catholic
 				holy_site = penitant
 					
 				b_santiago = {}
@@ -1988,6 +1987,8 @@ k_galicia = {
 			c_leiria = {
 				color={ 218 61 26 }
 				color2={ 255 255 255 }
+			
+				holy_site = catholic
 			
 				b_torres_vedras = {}
 				b_leiria = {}

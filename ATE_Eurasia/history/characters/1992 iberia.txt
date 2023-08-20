@@ -202,6 +202,7 @@
 	2680.1.1={death=yes}
 }
 # PORTUGAL #
+##The Teixeiras, OG rulers of Portugal
 1992400={
 	name="Leandro"
 	dynasty=2024230 #Teixeira
@@ -220,7 +221,32 @@
 	name="Pedro"
 	dynasty=2024230 #Teixeira
 	culture=portuguese
-	religion=quinto
+	religion=catholic
+	martial=3
+	diplomacy=3
+	stewardship=3
+	intrigue=3
+	learning=3
+}
+1992400={
+	name="Leandro"
+	dynasty=2024230 #Teixeira
+	culture=portuguese
+	religion=catholic
+	martial=3
+	diplomacy=3
+	stewardship=3
+	intrigue=3
+	learning=3
+	trait=drunkard
+	2565.9.16={birth=yes}
+	2600.2.4={death=yes}
+}
+1992401={
+	name="Pedro"
+	dynasty=2024230 #Teixeira
+	culture=portuguese
+	religion=catholic
 	martial=10
 	diplomacy=5
 	stewardship=8
@@ -239,7 +265,7 @@
 	dynasty=2024230 #Teixeira
 	give_nickname=nick_the_grim
 	culture=portuguese
-	religion=quinto
+	religion=catholic
 	martial=4
 	diplomacy=6
 	stewardship=7
@@ -252,29 +278,11 @@
 	2628.8.9={death=yes}
 }
 1992403={
-	name="Bento"
-	dynasty=2024230 #Teixeira
-	give_nickname=nick_the_wise
-	culture=portuguese
-	religion=quinto
-	martial=5
-	diplomacy=8
-	stewardship=10
-	intrigue=5
-	learning=10
-	trait=midas_touched
-	trait=just
-	trait=authoritative
-	father=1992402
-	2607.3.21={birth=yes}
-	2654.8.13={death=yes}
-}
-1992404={
 	name="Rodolfo"
 	dynasty=2024230 #Teixeira
 	give_nickname=nick_the_unfortunate
 	culture=portuguese
-	religion=quinto
+	religion=catholic
 	martial=6
 	diplomacy=3
 	stewardship=4
@@ -283,15 +291,35 @@
 	trait=misguided_warrior
 	trait=ruthless
 	trait=robust
+	father=1992402
+	2607.3.21={birth=yes}
+	2654.8.13={death=yes}
+	#Lost the Kingdom to the Bittencourts
+}
+1992404={
+	name="Bento"
+	dynasty=2024230 #Teixeira
+	culture=portuguese
+	religion=catholic
+	martial=5
+	diplomacy=8
+	stewardship=10
+	intrigue=5
+	learning=10
+	trait=midas_touched
+	trait=just
+	trait=authoritative
 	father=1992403
 	2633.2.26={birth=yes}
+	2354.8.13={effect={add_claim=k_portugal}}
 	2660.5.5={death=yes}
+	#duke of Azores, 
 }
 1992405={
 	name="Diogo"
 	dynasty=2024230 #Teixeira
 	culture=portuguese
-	religion=quinto
+	religion=catholic
 	martial=3
 	diplomacy=3
 	stewardship=3
@@ -301,7 +329,106 @@
 	2657.5.14={birth=yes}
 	2680.1.1={death=yes}
 }
-# #
+#Bittencourts#
+1992406={
+	name="Sebastião"
+	dynasty=7001033 #Betancourt
+	give_nickname=nick_the_conqueror
+	culture=azorean
+	religion=quinto
+	trait=brilliant_strategist
+	trait=brave
+	trait=inspiring_leader
+	trait=experimenter
+	trait=zealous
+	trait=adventurer
+	#trait=capitain
+	martial=9
+	diplomacy=6
+	stewardship=4
+	intrigue=3
+	learning=3
+	2608.3.22={birth=yes}
+	2630.1.1={add_spouse=1992407}
+	2662.2.5={death=yes}
+	#Invaded Galicia and then Portugal
+}
+1992407={
+	name="Bianca"
+	dynasty=0
+	culture=madeiran
+	religion=quinto
+	female=yes
+	trait=thrifty_clerk
+	trait=diligent
+	trait=stubborn
+	trai=strong
+	2616.1.1={birth=yes}
+	2669.4.28={death=yes}
+}
+1992408={
+	name="Bartolomeu"
+	dynasty=7001033 #Betancourt
+	culture=azorean
+	religion=quinto
+	trait=fortune_builder
+	trait=content
+	trait=robust
+	trait=patient
+	trait=kind
+	martial=4
+	diplomacy=6
+	stewardship=7
+	intrigue=3
+	learning=3
+	father=1992406
+	mother=1992407
+	2638.3.22={birth=yes culture=galician}
+	2662.2.5={death=yes}
+	#Older son of the Betancourts, inherited Galicia
+}
+1992409={
+	name="Sebastião"
+	dynasty=7001033 #Betancourt
+	culture=azorean
+	religion=quinto
+	trait=skilled_tactician
+	trait=cynical
+	trait=ambitious
+	trait=patient
+	trait=diligent
+	martial=8
+	diplomacy=6
+	stewardship=5
+	intrigue=3
+	learning=3
+	father=1992406
+	mother=1992407
+	2643.3.22={birth=yes culture=portuguese}
+	2692.2.5={death=yes}
+	#Younger son of the Betancourts, inherited Portugal
+}
+1992410={
+	name="Maria"
+	dynasty=7002000 #Lancastre
+	culture=portuguese
+	religion=catholic
+	female=yes
+	trait=brilliant_strategist
+	trait=zealous
+	trait=holy_warrior
+	trait=inspiring_leader
+	trait=brave
+	trait=shrewd
+	diplomacy=5
+	martial=8
+	stewardship=5
+	intrigue=4
+	learning=4
+	2648.5.30={birth=yes}
+	2699.1.1={death=yes}
+	#Portuguese Catholic rebel, who retook Lisbon and Leiria(Fátima)
+}
 1992500={
 	name="Ramón"
 	dynasty=2019101 #Tenorio
@@ -554,57 +681,57 @@
 	2642.5.9={birth=yes}
 	2680.1.1={death=yes}
 }
-1992811={
-	name="Federico"
-	dynasty=2022177 #Romariz
-	culture=galician
-	religion=quinto
-	trait=skilled_tactician
-	trait=authoritative
-	trait=just
-	
-	2581.1.1={birth=yes}
-	2638.4.15={death=yes}
-}
-19928012={
-	name="Anxo"
-	dynasty=2022055 #Carro
-	culture=galician
-	religion=quinto
-	trait=fortune_builder
-	trait=fair
-	trait=gregarious
-	trait=charitable
-	trait=gluttonous
-	trait=honest
-	
-	2639.1.2={birth=yes}
-	2680.1.1={death=yes}
-}
-19928013={
-	name="Casandra"
-	female=yes
-	dynasty=0 #Lowborn
-	culture=galician
-	religion=quinto
-	trait=brilliant_strategist
-	trait=strong
-	trait=homosexual
-	trait=duelist
-	trait=proud
-	trait=envious
-	trait=brave
-	trait=deceitful
-	2644.3.1={birth=yes}
-	2664.1.1={
-	employer=1992809
-	effect={add_friend=1992809}
-	}
-	2666.1.1={
-		effect={add_rival=19928010}
-	}
-	2680.1.1={death=yes}
-}	
+#1992811={
+#	name="Federico"
+#	dynasty=2022177 #Romariz
+#	culture=galician
+#	religion=quinto
+#	trait=skilled_tactician
+#	trait=authoritative
+#	trait=just
+#	
+#	2581.1.1={birth=yes}
+#	2638.4.15={death=yes}
+#}
+#19928012={
+#	name="Anxo"
+#	dynasty=2022055 #Carro
+#	culture=galician
+#	religion=quinto
+#	trait=fortune_builder
+#	trait=fair
+#	trait=gregarious
+#	trait=charitable
+#	trait=gluttonous
+#	trait=honest
+#	
+#	2639.1.2={birth=yes}
+#	2680.1.1={death=yes}
+#}
+#19928013={
+#	name="Casandra"
+#	female=yes
+#	dynasty=0 #Lowborn
+#	culture=galician
+#	religion=quinto
+#	trait=brilliant_strategist
+#	trait=strong
+#	trait=homosexual
+#	trait=duelist
+#	trait=proud
+#	trait=envious
+#	trait=brave
+#	trait=deceitful
+#	2644.3.1={birth=yes}
+#	2664.1.1={
+#	employer=1992809
+#	effect={add_friend=1992809}
+#	}
+#	2666.1.1={
+#		effect={add_rival=19928010}
+#	}
+#	2680.1.1={death=yes}
+#}	
 1992900={
 	name="Marcel"
 	dynasty=2017067 #Pons

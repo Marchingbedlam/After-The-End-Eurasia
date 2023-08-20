@@ -731,7 +731,7 @@
 }
 1713042={
 	name="Eduardo"
-	dynasty=2024259
+	dynasty=2024259 #da Veiga
 	culture=portuguese
 	religion=catholic
 	trait=mastermind_theologian
@@ -744,9 +744,9 @@
 }
 1713043={
 	name="Eduardo"
-	dynasty=2024259
+	dynasty=2024259 #da Veiga
 	culture=portuguese
-	religion=quinto
+	religion=catholic
 	trait=brilliant_strategist
 	trait=kind
 	trait=charitable
@@ -758,10 +758,10 @@
 }
 1713044={
 	name="Leonor"
-	dynasty=2024259
+	dynasty=2024259 #da Veiga
 	female=yes
 	culture=portuguese
-	religion=quinto
+	religion=catholic
 	trait=charismatic_negotiator
 	trait=envious
 	trait=craven
@@ -769,17 +769,24 @@
 	trait=giant
 	father=1713042
 	2618.12.5={birth=yes}
+	2666.1.1={effect={
+		add_character_modifier={
+			name=pet_rat_dungeon
+			years = 3
+		}
+	}}
 	2690.2.10={death=yes}
 }
 1713045={
 	name="Marcelo"
-	dynasty=2024259
+	dynasty=2024259 #da Veiga
 	culture=portuguese
-	religion=quinto
+	religion=catholic
 	trait=indolent
 	trait=fussy
 	trait=conscientious
 	father=1713043
 	2653.9.3={birth=yes}
 	2690.2.10={death=yes}
+	#current duke of Beja
 }
