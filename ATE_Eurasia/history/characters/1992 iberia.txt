@@ -286,7 +286,7 @@
 	trait=authoritative
 	father=1992403
 	2633.2.26={birth=yes}
-	2354.8.13={effect={add_claim=k_portugal}}
+	2354.8.13={add_claim=k_portugal}
 	2660.5.5={death=yes}
 	#duke of Azores, 
 }
@@ -302,6 +302,7 @@
 	learning=3
 	father=1992404
 	2657.5.14={birth=yes}
+	2666.1.1={add_claim=k_portugal}
 	2680.1.1={death=yes}
 }
 #Bittencourts#
@@ -401,6 +402,23 @@
 	intrigue=4
 	learning=4
 	2648.5.30={birth=yes}
+	2665.1.1={
+		effect={
+			spawn_unit={
+				province=167 # Lisboa
+				owner=ROOT
+				#leader=ROOT
+				troops={
+					light_infantry={1000 1000}
+					archers={150 150}
+					light_cavalry={50 50}
+					knights={10 10}
+				}
+				attrition=0.5
+			}
+		}
+	}
+	2666.1.1={effect={capital = c_lisbon}}
 	2699.1.1={death=yes}
 	#Portuguese Catholic rebel, who retook Lisbon and Leiria(Fátima)
 }
