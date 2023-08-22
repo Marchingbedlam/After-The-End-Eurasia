@@ -3997,16 +3997,6 @@ add_crusade_trait_effect = {
 	if = {
 		limit = {
 			OR = {
-				religion = occultist
-				religion = occultist_reformed
-			}
-		}
-		add_trait = knight_templar
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
 				religion = glorian
 				religion = thelema
 			}
@@ -5242,10 +5232,6 @@ join_prev_warrior_lodge_society_effect = {
 		join_society = warrior_lodge_atomicist
 	}
 	if = {
-		limit = { PREV = { society_member_of = warrior_lodge_occultist } }
-		join_society = warrior_lodge_occultist
-	}
-	if = {
 		limit = { PREV = { society_member_of = warrior_lodge_raven_tales } }
 		join_society = warrior_lodge_raven_tales
 	}
@@ -5314,20 +5300,6 @@ give_this_warrior_lodge_religion_effect = { #Mostly for spawned characters.
 			has_global_flag = norse_reformation
 		}
 		religion = trailwalker_reformed
-	}
-	if = {
-		limit = { 
-			society_member_of = warrior_lodge_occultist
-			has_global_flag = occultist_reformation
-		}
-		religion = occultist_reformed
-	}
-	if = {
-		limit = { 
-			society_member_of = warrior_lodge_occultist
-			NOT = { has_global_flag = occultist_reformation }
-		}
-		religion = occultist
 	}
 	if = {
 		limit = { 
@@ -9410,13 +9382,6 @@ add_sympathy_for_prevs_true_religion_effect = {
 	}
 	if = {
 		limit = { 
-			PREV = { true_religion_group_mesoamerican_gods_trigger = yes } 
-			NOT = { religion_group = mesoamerican_gods }
-		}
-		add_trait = sympathy_mesoamerican_gods
-	}
-	if = {
-		limit = { 
 			PREV = { true_religion_group_oldworld_trigger = yes } 
 			NOT = { religion_group = oldworld }
 		}
@@ -9508,13 +9473,6 @@ add_sympathy_for_prevs_open_religion_effect = {
 			NOT = { religion_group = latter_day_saints }
 		}
 		add_trait = sympathy_latter_day_saints
-	}
-	if = {
-		limit = { 
-			PREV = { true_religion_group_mesoamerican_gods_trigger = yes } 
-			NOT = { religion_group = mesoamerican_gods }
-		}
-		add_trait = sympathy_mesoamerican_gods
 	}
 	if = {
 		limit = { 
@@ -10606,38 +10564,6 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 					NOT = {
 						has_character_was_religion_flag_trigger = yes
 					}
-					religion = occultist_reformed
-				}
-				has_character_flag = character_was_occultist_reformed
-			}
-		}
-		set_secret_religion = occultist_reformed
-		clr_character_flag = character_was_occultist_reformed
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
-					religion = occultist
-				}
-				has_character_flag = character_was_occultist
-			}
-		}
-		set_secret_religion = occultist
-		clr_character_flag = character_was_occultist
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
 					religion = glorian
 				}
 				has_character_flag = character_was_glorian
@@ -11307,14 +11233,6 @@ add_religion_char_flag_effect = {
 		set_character_flag = character_was_rust_cultist
 	}
 	if = {
-		limit = { religion = occultist_reformed }
-		set_character_flag = character_was_occultist_reformed
-	}
-	if = {
-		limit = { religion = occultist }
-		set_character_flag = character_was_occultist
-	}
-	if = {
 		limit = { religion = glorian }
 		set_character_flag = character_was_glorian
 	}
@@ -11484,8 +11402,6 @@ clr_religion_char_flag_effect = {
 	clr_character_flag = character_was_revelationist
 	clr_character_flag = character_was_chrome_cultist
 	clr_character_flag = character_was_rust_cultist
-	clr_character_flag = character_was_occultist_reformed
-	clr_character_flag = character_was_occultist
 	clr_character_flag = character_was_glorian
 	clr_character_flag = character_was_thelema
 	clr_character_flag = character_was_norse_pagan_reformed
@@ -11967,20 +11883,6 @@ event_target_old_religion_from_flag_effect = {
 		limit = { has_character_flag = character_was_rust_cultist }
 		random_character = {
 			limit = { religion = rust_cultist }
-			save_event_target_as = old_religion
-		}
-	}
-	if = {
-		limit = { has_character_flag = character_was_occultist_reformed }
-		random_character = {
-			limit = { religion = occultist_reformed }
-			save_event_target_as = old_religion
-		}
-	}
-	if = {
-		limit = { has_character_flag = character_was_occultist }
-		random_character = {
-			limit = { religion = occultist }
 			save_event_target_as = old_religion
 		}
 	}
@@ -14346,28 +14248,6 @@ flip_secret_religious_community_provinces = {
 				}
 			}
 		}
-		secret_religious_society_occultist_reformed = {
-			ROOT = {
-				any_demesne_province = {
-					limit = {
-						has_province_modifier = secret_occultist_reformed_community
-					}
-					religion = occultist_reformed
-					remove_province_modifier = secret_occultist_reformed_community
-				}
-			}
-		}
-		secret_religious_society_occultist = {
-			ROOT = {
-				any_demesne_province = {
-					limit = {
-						has_province_modifier = secret_occultist_community
-					}
-					religion = occultist
-					remove_province_modifier = secret_occultist_community
-				}
-			}
-		}
 		secret_religious_society_glorian = {
 			ROOT = {
 				any_demesne_province = {
@@ -15068,7 +14948,6 @@ spawn_good_commander_effect = {
 						religion = gaian
 						religion = neomayan
 						has_religion_feature = religion_astrology
-						has_religion_feature = religion_feature_occultist
 					}
 				}
 				hidden_tooltip = { add_western_zodiac_trait_effect = yes }
@@ -15079,10 +14958,6 @@ spawn_good_commander_effect = {
 					OR = {
 						religion_group = pagan_group
 						religion_group = american_native
-					}
-					NOR = {
-						religion = occultist
-						religion = occultist_reformed
 					}
 				}
 				random_list = { 
@@ -15276,7 +15151,6 @@ spawn_great_commander_effect = {
 						religion = gaian
 						religion = neomayan
 						has_religion_feature = religion_astrology
-						has_religion_feature = religion_feature_occultist
 					}
 				}
 				hidden_tooltip = { add_western_zodiac_trait_effect = yes }
@@ -15287,10 +15161,6 @@ spawn_great_commander_effect = {
 					OR = {
 						religion_group = pagan_group
 						religion_group = american_native
-					}
-					NOR = {
-						religion = occultist
-						religion = occultist_reformed
 					}
 				}
 				random_list = { 
@@ -15607,10 +15477,6 @@ spawn_fantastic_commander_effect = {
 						religion_group = pagan_group
 						religion_group = american_native
 					}
-					NOR = {
-						religion = occultist
-						religion = occultist_reformed
-					}
 				}
 				random_list = { 
 					5 = {
@@ -15748,10 +15614,6 @@ spawn_fantastic_diplomat_effect = {
 						religion_group = pagan_group
 						religion_group = american_native
 					}
-					NOR = {
-						religion = occultist
-						religion = occultist_reformed
-					}
 				}
 				random_list = { 
 					5 = {
@@ -15870,10 +15732,6 @@ spawn_fantastic_scholar_effect = {
 					OR = {
 						religion_group = pagan_group
 						religion_group = american_native
-					}
-					NOR = {
-						religion = occultist
-						religion = occultist_reformed
 					}
 				}
 				random_list = { 
@@ -16052,10 +15910,6 @@ spawn_elder_effect = {
 					OR = {
 						religion_group = pagan_group
 						religion_group = american_native
-					}
-					NOR = {
-						religion = occultist
-						religion = occultist_reformed
 					}
 				}
 				random_list = { 
@@ -19029,28 +18883,6 @@ root_secret_religion_provinces_convert_effect = {
 						}
 						religion = rust_cultist
 						remove_province_modifier = secret_rust_cultist_community
-					}
-				}
-			}
-			secret_religious_society_occultist_reformed = { 
-				PREV = {
-					any_demesne_province = {
-						limit = {
-							has_province_modifier = secret_occultist_reformed_community
-						}
-						religion = occultist_reformed
-						remove_province_modifier = secret_occultist_reformed_community
-					}
-				}
-			}
-			secret_religious_society_occultist = { 
-				PREV = {
-					any_demesne_province = {
-						limit = {
-							has_province_modifier = secret_occultist_community
-						}
-						religion = occultist
-						remove_province_modifier = secret_occultist_community
 					}
 				}
 			}
@@ -24073,9 +23905,6 @@ add_warrior_lodge_leader_trait_effect = { #NOTE: These traits don't exist right 
 		warrior_lodge_atomicist = {
 			add_trait = atomicist_leader
 		}
-		warrior_lodge_occultist = {
-			add_trait = occultist_leader
-		}
 		warrior_lodge_raven_tales = {
 			add_trait = raven_tales_leader
 		}
@@ -24105,12 +23934,9 @@ fire_haruspicy_event_effect = { #Used for Mesoamerican Religions
 			limit = { 
 				attacker = { 
 					OR = { 
-						religion_group = mesoamerican_gods
-						religion = navegante
 						religion = ak_jeng
 						religion = ak_jeng_reformed
 						has_religion_feature = religion_haruspicy 
-						has_religion_feature = religion_feature_occultist
 					} 
 				} 
 			}
@@ -24122,12 +23948,9 @@ fire_haruspicy_event_effect = { #Used for Mesoamerican Religions
 			limit = { 
 				defender = { 
 					OR = { 
-						religion_group = mesoamerican_gods
-						religion = navegante
 						religion = ak_jeng
 						religion = ak_jeng_reformed
 						has_religion_feature = religion_haruspicy 
-						has_religion_feature = religion_feature_occultist
 					} 
 				} 
 			}
@@ -24622,7 +24445,6 @@ apply_dogmatic_on_start_effect = {
 	remove_intermarry = cult_of_saints
 	remove_intermarry = pacific
 	remove_intermarry = latter_day_saints
-	remove_intermarry = mesoamerican_gods
 	remove_intermarry = oldworld
 	remove_intermarry = nautical
 	remove_intermarry = indian_group
@@ -24773,7 +24595,6 @@ spawn_debutante_effect = {
 						religion = gaian
 						religion = neomayan
 						has_religion_feature = religion_astrology
-						has_religion_feature = religion_feature_occultist
 					}
 				}
 				hidden_tooltip = { add_western_zodiac_trait_effect = yes }
@@ -24784,10 +24605,6 @@ spawn_debutante_effect = {
 					OR = {
 						religion_group = pagan_group
 						religion_group = american_native
-					}
-					NOR = {
-						religion = occultist
-						religion = occultist_reformed
 					}
 				}
 				random_list = { 
@@ -24912,20 +24729,6 @@ transfer_crown_on_abdication_effect = {
 	}
 	if = {
 		limit = { 
-			has_landed_title = d_occultist_reformed
-			any_artifact = { artifact_type = crown_occultist_fylkir }
-		}
-			current_heir = { save_event_target_as = crown_occultist_fylkir_heir }
-			any_artifact = { 
-				limit = { artifact_type = crown_occultist_fylkir }
-				transfer_artifact = {
-					from = PREV
-					to = event_target:crown_occultist_fylkir_heir
-				} 
-			}
-	}
-	if = {
-		limit = { 
 			has_landed_title = d_midewiwin_reformed
 			any_artifact = { artifact_type = scepter_midewiwin_fylkir }
 		}
@@ -24978,7 +24781,6 @@ transfer_crown_on_abdication_effect = {
 				artifact_type = crown_celtic_fylkir
 				artifact_type = crown_aria_de_machete_fylkir
 				artifact_type = crown_revelationist_fylkir
-				artifact_type = crown_occultist_fylkir
 				artifact_type = scepter_midewiwin_fylkir 
 				artifact_type = crown_raven_tales_fylkir 
 				artifact_type = crown_trailwalker_fylkir 
@@ -25724,7 +25526,6 @@ WL_ritual_hunt_cleanup_effect = {
 
 	clr_character_flag = flag_hunting_wolf_norse
 	clr_character_flag = flag_hunting_wolf_celtic
-	clr_character_flag = flag_hunting_wolf_occultist
 
 	clr_character_flag = flag_hunting_eagle_peyotist
 	clr_character_flag = flag_hunting_eagle_midewiwin
@@ -25946,7 +25747,6 @@ WL_ritual_hunt_flavor_events_effect = {
 							has_character_modifier = lycanthropy 
 							OR = { 
 								has_character_flag = flag_hunting_wolf_norse
-								has_character_flag = flag_hunting_wolf_occultist
 								has_character_flag = flag_hunting_wolf_celtic
 							} 
 						}
@@ -26913,7 +26713,6 @@ add_sympathy_for_religion_effect = {
 		pacific = { add_trait = sympathy_pacific }
 		latter_day_saints = { add_trait = sympathy_latter_day_saints }
 		indian_group = { add_trait = sympathy_indian }
-		mesoamerican_gods = { add_trait = sympathy_mesoamerican_gods }
 		jewish_group = { add_trait = sympathy_judaism }
 		pagan_group = { add_trait = sympathy_pagans }
 		oldworld = { add_trait = sympathy_oldworld }
@@ -28332,62 +28131,6 @@ reformation_god_names_changes_effect = { #Reforming religion with certain Doctri
 				break = yes
 			}
 
-			if = { #A ruler reforms Occultism.
-				limit = {
-					has_dlc = "Holy Fury" 
-					religion = occultist_reformed
-					OR = { 
-						has_religion_feature = religion_matriarchal
-						has_religion_feature = religion_patriarchal
-						has_religion_feature = religion_dogmatic
-					}
-				}
-				remove_god_names = yes
-				remove_evil_god_names = yes
-				if = { #Religion is not sexist, add just Dogmatic set.
-					limit = {
-						NOR = {
-							has_religion_feature = religion_matriarchal
-							has_religion_feature = religion_patriarchal
-						}
-					}
-					set_high_god_name = GOD_THE_ELDER_GODS
-					add_god_name = GOD_THE_ELDER_GODS_2
-					add_evil_god_name = THE_CRAWLING_CHAOS
-				}
-				if = { #Religion is Patriarchal
-					limit = {
-						has_religion_feature = religion_patriarchal
-					}
-					set_high_god_name = GOD_THE_ELDER_GODS
-					add_god_name = GOD_THE_ELDER_GODS_2
-					if = { 
-						limit = {
-							NOT = { has_religion_feature = religion_dogmatic }
-						}
-						add_god_name = GOD_THE_ANCESTORS 
-						add_god_name = GOD_THE_SPIRITS
-					}
-					add_evil_god_name = THE_CRAWLING_CHAOS
-				}
-				if = { #Religion is Matriarchal
-					limit = {
-						has_religion_feature = religion_matriarchal
-					}
-					set_high_god_name = GOD_THE_ELDER_GODS
-					add_god_name = GOD_THE_ELDER_GODS_2
-					if = { 
-						limit = {
-							NOT = { has_religion_feature = religion_dogmatic }
-						}
-						add_god_name = GOD_THE_SPIRITS 
-					}
-					add_evil_god_name = RANDALL_FLAGG 
-				}
-	
-				break = yes
-			}
-
 			if = { #A ruler reforms Celtic Paganism
 				limit = {
 					has_dlc = "Holy Fury" 
@@ -29069,7 +28812,6 @@ give_goldsmith_artifacts_flag_okay_effect = {
 	else_if = {
 		limit = { 
 			OR = {
-				religion_group = mesoamerican_gods
 				religion_group = amero_syncretic
 				religion = midewiwin
 				religion = midewiwin_reformed
@@ -29131,7 +28873,6 @@ give_goldsmith_artifacts_flag_good_effect = {
 	else_if = {
 		limit = { 
 			OR = {
-				religion_group = mesoamerican_gods
 				religion_group = amero_syncretic
 				religion = midewiwin
 				religion = midewiwin_reformed
@@ -29193,7 +28934,6 @@ give_goldsmith_artifacts_flag_expensive_effect = {
 	else_if = {
 		limit = { 
 			OR = {
-				religion_group = mesoamerican_gods
 				religion_group = amero_syncretic
 				religion = midewiwin
 				religion = midewiwin_reformed
@@ -29255,7 +28995,6 @@ give_goldsmith_artifacts_flag_amazing_effect = {
 	else_if = {
 		limit = { 
 			OR = {
-				religion_group = mesoamerican_gods
 				religion_group = amero_syncretic
 				religion = midewiwin
 				religion = midewiwin_reformed
@@ -29318,7 +29057,6 @@ give_weaponsmith_artifacts_flag_okay_effect = {
 	else_if = {
 		limit = { 
 			OR = {
-				religion_group = mesoamerican_gods
 				religion_group = amero_syncretic
 				religion = midewiwin
 				religion = midewiwin_reformed
@@ -29380,7 +29118,6 @@ give_weaponsmith_artifacts_flag_good_effect = {
 	else_if = {
 		limit = { 
 			OR = {
-				religion_group = mesoamerican_gods
 				religion_group = amero_syncretic
 				religion = midewiwin
 				religion = midewiwin_reformed
@@ -29442,7 +29179,6 @@ give_weaponsmith_artifacts_flag_expensive_effect = {
 	else_if = {
 		limit = { 
 			OR = {
-				religion_group = mesoamerican_gods
 				religion_group = amero_syncretic
 				religion = midewiwin
 				religion = midewiwin_reformed
@@ -30841,35 +30577,6 @@ abdicate_holy_order_if_religion_changes_effect = { #why. why did you add this ef
 				}
 			}
 			log = "[d_flaming_sword.owner.GetTitledFirstName] was found to be unfit to lead the [d_flaming_sword.GetName] due to religious conflict! Title is revelationist, but owner is not. "
-			log = "ROOT = [Root.GetTitledFirstName] FROM = [From.GetTitledFirstName] PREV = [Prev.GetTitledFirstName]"
-		}
-	}
-
-	d_fm = {
-		if = {
-			limit = {
-				is_title_active = d_fm
-				religion = occultist_reformed
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = occultist_reformed } 
-				}
-			}
-			log = "[d_fm.owner.GetTitledFirstName] was found to be unfit to lead the [d_fm.GetName] due to religious conflict! Title is occultist_reformed, but owner is not. "
-			log = "ROOT = [Root.GetTitledFirstName] FROM = [From.GetTitledFirstName] PREV = [Prev.GetTitledFirstName]"
-		}
-		if = {
-			limit = {
-				is_title_active = d_fm
-				religion = occultist
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = occultist } 
-				}
-			}
-			log = "[d_fm.owner.GetTitledFirstName] was found to be unfit to lead the [d_fm.GetName] due to religious conflict! Title is occultist, but owner is not. "
 			log = "ROOT = [Root.GetTitledFirstName] FROM = [From.GetTitledFirstName] PREV = [Prev.GetTitledFirstName]"
 		}
 	}
