@@ -718,7 +718,7 @@ d_nepmese_reformed = {
 	title = "TALTOS_KING"
 	title_female = "TALTOS_QUEEN"
 	foa = "TALTOS_KING_FOA"
-	foa_female = "TALTOS_QUEEN_FOA"
+	#foa_female = "TALTOS_QUEEN_FOA"
 	short_name = yes
 	
 	allow = {
@@ -1066,37 +1066,150 @@ d_esztergom_primacy = {
 	}
 }
 
-d_capirote = {
+d_penitant = {
 	color = { 0.9 0.9 0.0 }
 	color2 = { 1.0 1.0 1.0}
 	
-	capital = 223 # Seville
+	capital = 222 # Huelva
 	
-	title = PREGONERO
-	foa = PREGONERO_FOA
+	title = ARCHBISHOP
+	title_prefix = OUR_LADY_OF
+	foa = ARCHBISHOP_FOA
+	
+	dignity = 1000
+	
+	controls_religion = penitant
+	pentarchy = penitant
+
+	primary = yes
+	dynasty_title_names = no
+	
+	male_names = {
+		Adeodatus Agapetus Alexander Aloisius Anastasius Anscharius Antonius Benedictus Bonifatius Caelestinus Callixtus Clemens Damasus Damianus Dominicus Eduardus Engelmarus Eugenius 
+		Felix Franciscus "Franciscus Xavierus" Frumentius Gelasius Gregorius Hadrianus Honorius Iannus Ianuarius Ignatius Innocentius Ioannes "Ioannes Henricus" "Ioannes Paulus" Iosephus Julius 
+		Leo Lucius Marcellus Marinus Martinus Maximilianus Nicolaus Paschalis Paulus Pelagius Pius Sarbelus Sergius Silvester Sixtus Stephanus Theodorus Thomas Titus Urbanus Victor Xavierus
+	}
+	culture = andalusian
+	
+	landless = yes
+
+	monthly_income = 10
+}
+d_penitant_fatima = {
+	color = { 242 38 45 }
+	color2 = { 1.0 1.0 1.0}
+	
+	capital = 176 # Leiria
+	
+	title = ARCHBISHOP
+	title_prefix = OUR_LADY_OF
+	foa = ARCHBISHOP_FOA
 	
 	dignity = 1000
 	
 	religion = penitant
-	controls_religion = penitant
+	pentarchy = penitant
 
 	primary = yes
-	short_name = yes
 	dynasty_title_names = no
 	
-	culture = andalusian
+	male_names = {
+		Adeodatus Agapetus Alexander Aloisius Anastasius Anscharius Antonius Benedictus Bonifatius Caelestinus Callixtus Clemens Damasus Damianus Dominicus Eduardus Engelmarus Eugenius 
+		Felix Franciscus "Franciscus Xavierus" Frumentius Gelasius Gregorius Hadrianus Honorius Iannus Ianuarius Ignatius Innocentius Ioannes "Ioannes Henricus" "Ioannes Paulus" Iosephus Julius 
+		Leo Lucius Marcellus Marinus Martinus Maximilianus Nicolaus Paschalis Paulus Pelagius Pius Sarbelus Sergius Silvester Sixtus Stephanus Theodorus Thomas Titus Urbanus Victor Xavierus
+	}
+	culture = portuguese
 	
 	landless = yes
-	holy_order = yes
 
 	monthly_income = 10
-
-	mercenary_type = d_capirote_composition
-
+}
+d_penitant_galicia = {
+	color = { 222 44 19 }
+	color2 = { 1.0 1.0 1.0}
 	
-	allow = {
-		religion = penitant
+	capital = 211 # A Coruna
+	
+	title = ARCHBISHOP
+	title_prefix = OUR_LADY_OF
+	foa = ARCHBISHOP_FOA
+	
+	dignity = 1000
+	
+	religion = penitant
+	pentarchy = penitant
+
+	primary = yes
+	dynasty_title_names = no
+	
+	male_names = {
+		Adeodatus Agapetus Alexander Aloisius Anastasius Anscharius Antonius Benedictus Bonifatius Caelestinus Callixtus Clemens Damasus Damianus Dominicus Eduardus Engelmarus Eugenius 
+		Felix Franciscus "Franciscus Xavierus" Frumentius Gelasius Gregorius Hadrianus Honorius Iannus Ianuarius Ignatius Innocentius Ioannes "Ioannes Henricus" "Ioannes Paulus" Iosephus Julius 
+		Leo Lucius Marcellus Marinus Martinus Maximilianus Nicolaus Paschalis Paulus Pelagius Pius Sarbelus Sergius Silvester Sixtus Stephanus Theodorus Thomas Titus Urbanus Victor Xavierus
 	}
+	culture = galician
+	
+	landless = yes
+
+	monthly_income = 10
+}
+d_penitant_garabandal = {
+	color = { 154 35 34 }
+	color2 = { 1.0 1.0 1.0}
+	
+	capital = 235 #Cantabria
+	
+	title = ARCHBISHOP
+	title_prefix = OUR_LADY_OF
+	foa = ARCHBISHOP_FOA
+	
+	dignity = 1000
+	
+	religion = penitant
+	pentarchy = penitant
+
+	primary = yes
+	dynasty_title_names = no
+	
+	male_names = {
+		Adeodatus Agapetus Alexander Aloisius Anastasius Anscharius Antonius Benedictus Bonifatius Caelestinus Callixtus Clemens Damasus Damianus Dominicus Eduardus Engelmarus Eugenius 
+		Felix Franciscus "Franciscus Xavierus" Frumentius Gelasius Gregorius Hadrianus Honorius Iannus Ianuarius Ignatius Innocentius Ioannes "Ioannes Henricus" "Ioannes Paulus" Iosephus Julius 
+		Leo Lucius Marcellus Marinus Martinus Maximilianus Nicolaus Paschalis Paulus Pelagius Pius Sarbelus Sergius Silvester Sixtus Stephanus Theodorus Thomas Titus Urbanus Victor Xavierus
+	}
+	culture = asturleonese
+	
+	landless = yes
+
+	monthly_income = 10
+}
+d_penitant_del_pilar = {
+	color = { 251 243 34 }
+	color2 = { 1.0 1.0 1.0}
+	
+	capital = 223 # Zaragoza
+	
+	title = ARCHBISHOP
+	title_prefix = OUR_LADY_OF
+	foa = ARCHBISHOP_FOA
+	
+	dignity = 1000
+	
+	religion = penitant
+	pentarchy = penitant
+
+	primary = yes
+	dynasty_title_names = no
+	
+	male_names = {
+		Adeodatus Agapetus Alexander Aloisius Anastasius Anscharius Antonius Benedictus Bonifatius Caelestinus Callixtus Clemens Damasus Damianus Dominicus Eduardus Engelmarus Eugenius 
+		Felix Franciscus "Franciscus Xavierus" Frumentius Gelasius Gregorius Hadrianus Honorius Iannus Ianuarius Ignatius Innocentius Ioannes "Ioannes Henricus" "Ioannes Paulus" Iosephus Julius 
+		Leo Lucius Marcellus Marinus Martinus Maximilianus Nicolaus Paschalis Paulus Pelagius Pius Sarbelus Sergius Silvester Sixtus Stephanus Theodorus Thomas Titus Urbanus Victor Xavierus
+	}
+	culture = aragonese
+	
+	landless = yes
+
+	monthly_income = 10
 }
 d_nestorian = {
 	color={ 180 137 97 }
