@@ -438,7 +438,6 @@ e_tibet = {
 				color={ 110 150 195 }
 				color2={ 255 255 255 }
 				
-				holy_site = gelugpa
 				holy_site = rime
 				
 				b_gonggar = {}
@@ -677,11 +676,15 @@ e_tibet = {
 				color={ 71 16 199 }
 				color2={ 255 255 255 }
 				
+				nepali = "Taklakot"
+				
 				holy_site = rime
 				holy_site = gelugpa
 				holy_site = ngocholugspa
 				
-				b_burang = {}
+				b_burang = {
+					nepali = "Taklakot"
+				}
 				b_parga = {}
 				b_hor = {}
 				b_xide = {}
