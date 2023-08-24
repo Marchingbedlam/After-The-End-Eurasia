@@ -129,7 +129,6 @@ character_event = {
 				factor = 0 
 				liege = { 
 					OR = { 
-						trait = sympathy_zoroastrianism
 						trait = sympathy_indian
 						trait = sympathy_buddhism
 					}
@@ -139,7 +138,6 @@ character_event = {
 				factor = 0 
 				top_liege = { 
 					OR = { 
-						trait = sympathy_zoroastrianism
 						trait = sympathy_indian
 						trait = sympathy_buddhism
 					}
@@ -149,7 +147,6 @@ character_event = {
 				factor = 0.25
 				spouse = { 
 					OR = { 
-						trait = sympathy_zoroastrianism
 						trait = sympathy_indian
 						trait = sympathy_buddhism
 					}
@@ -165,18 +162,6 @@ character_event = {
 				factor = 1.5
 				any_courtier_or_vassal = { 
 					religion_group = indian_group
-				}
-			}
-			modifier = { 
-				factor = 1.5
-				any_demesne_province = { 
-					religion_group = zoroastrian_group
-				}
-			}
-			modifier = { 
-				factor = 1.5
-				any_courtier_or_vassal = { 
-					religion_group = zoroastrian_group
 				}
 			}
 			modifier = { 
@@ -326,7 +311,6 @@ character_event = {
 					OR = { 
 						trait = sympathy_islam
 						trait = sympathy_pagans
-						trait = sympathy_zoroastrianism
 						trait = sympathy_judaism
 						trait = sympathy_indian
 						trait = sympathy_islamosyncretic
@@ -342,7 +326,6 @@ character_event = {
 					OR = { 
 						trait = sympathy_islam
 						trait = sympathy_pagans
-						trait = sympathy_zoroastrianism
 						trait = sympathy_judaism
 						trait = sympathy_indian
 						trait = sympathy_islamosyncretic
@@ -358,7 +341,6 @@ character_event = {
 					OR = { 
 						trait = sympathy_islam
 						trait = sympathy_pagans
-						trait = sympathy_zoroastrianism
 						trait = sympathy_judaism
 						trait = sympathy_indian
 						trait = sympathy_islamosyncretic
@@ -408,7 +390,6 @@ character_event = {
 					OR = { 
 						trait = sympathy_christendom
 						trait = sympathy_pagans
-						trait = sympathy_zoroastrianism
 						trait = sympathy_judaism
 						trait = sympathy_indian
 						trait = sympathy_islamosyncretic
@@ -424,7 +405,6 @@ character_event = {
 					OR = { 
 						trait = sympathy_christendom
 						trait = sympathy_pagans
-						trait = sympathy_zoroastrianism
 						trait = sympathy_judaism
 						trait = sympathy_indian
 						trait = sympathy_islamosyncretic
@@ -440,7 +420,6 @@ character_event = {
 					OR = { 
 						trait = sympathy_christendom
 						trait = sympathy_pagans
-						trait = sympathy_zoroastrianism
 						trait = sympathy_judaism
 						trait = sympathy_indian
 						trait = sympathy_islamosyncretic
@@ -490,7 +469,6 @@ character_event = {
 					OR = { 
 						trait = sympathy_christendom
 						trait = sympathy_pagans
-						trait = sympathy_zoroastrianism
 						trait = sympathy_islam
 						trait = sympathy_indian
 						trait = sympathy_islamosyncretic
@@ -506,7 +484,6 @@ character_event = {
 					OR = { 
 						trait = sympathy_christendom
 						trait = sympathy_pagans
-						trait = sympathy_zoroastrianism
 						trait = sympathy_islam
 						trait = sympathy_indian
 						trait = sympathy_islamosyncretic
@@ -522,7 +499,6 @@ character_event = {
 					OR = { 
 						trait = sympathy_christendom
 						trait = sympathy_pagans
-						trait = sympathy_zoroastrianism
 						trait = sympathy_islam
 						trait = sympathy_indian
 						trait = sympathy_islamosyncretic
@@ -572,7 +548,6 @@ character_event = {
 					OR = { 
 						trait = sympathy_christendom
 						trait = sympathy_pagans
-						trait = sympathy_zoroastrianism
 						trait = sympathy_islam
 						trait = sympathy_indian
 						trait = sympathy_judaism
@@ -588,7 +563,6 @@ character_event = {
 					OR = { 
 						trait = sympathy_christendom
 						trait = sympathy_pagans
-						trait = sympathy_zoroastrianism
 						trait = sympathy_islam
 						trait = sympathy_indian
 						trait = sympathy_judaism
@@ -604,7 +578,6 @@ character_event = {
 					OR = { 
 						trait = sympathy_christendom
 						trait = sympathy_pagans
-						trait = sympathy_zoroastrianism
 						trait = sympathy_islam
 						trait = sympathy_indian
 						trait = sympathy_judaism
@@ -650,76 +623,6 @@ character_event = {
 	
 	is_triggered_only = yes
 	
-	option = { #Zoroastrians
-		name = {
-			text = EVTOPTASYNC3
-			trigger = {
-				is_alternate_start = no
-			}
-		}
-		name = {
-			text = EVTOPTDSYNC1_ALT
-			trigger = {
-				is_alternate_start = yes
-			}
-		}
-		trigger = {
-			NOT = { religion_group = zoroastrian_group } #Random World safety check.
-		}
-		add_trait = sympathy_zoroastrianism
-		clr_character_flag = flag_picking_sympathy
-		ai_chance = { 
-			factor = 25 
-			modifier = { 
-				factor = 0 
-				liege = { 
-					trait = sympathy_indian 
-				}
-			}
-			modifier = { 
-				factor = 0 
-				top_liege = { 
-					trait = sympathy_indian 
-				}
-			}
-			modifier = { 
-				factor = 0.25
-				spouse = { 
-					trait = sympathy_indian 
-				}
-			}
-			modifier = { 
-				factor = 0 
-				liege = { 
-					trait = sympathy_pagans 
-				}
-			}
-			modifier = { 
-				factor = 0 
-				top_liege = { 
-					trait = sympathy_pagans 
-				}
-			}
-			modifier = { 
-				factor = 0.25
-				spouse = { 
-					trait = sympathy_pagans 
-				}
-			}
-			modifier = { 
-				factor = 1.5
-				any_demesne_province = { 
-					religion_group = zoroastrian_group
-				}
-			}
-			modifier = { 
-				factor = 1.5
-				any_courtier_or_vassal = { 
-					religion_group = zoroastrian_group
-				}
-			}
-		}
-	}
 	option = { #Indians
 		name = {
 			text = EVTOPTBSYNC3
@@ -740,24 +643,6 @@ character_event = {
 		clr_character_flag = flag_picking_sympathy
 		ai_chance = { 
 			factor = 25 
-			modifier = { 
-				factor = 0 
-				liege = { 
-					trait = sympathy_zoroastrianism 
-				}
-			}
-			modifier = { 
-				factor = 0 
-				top_liege = { 
-					trait = sympathy_zoroastrianism 
-				}
-			}
-			modifier = { 
-				factor = 0.25
-				spouse = { 
-					trait = sympathy_zoroastrianism 
-				}
-			}
 			modifier = { 
 				factor = 0 
 				liege = { 

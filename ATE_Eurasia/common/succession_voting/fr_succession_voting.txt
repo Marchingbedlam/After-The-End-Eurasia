@@ -1086,7 +1086,6 @@ nomadic_elective = {
 			NOR = {
 				has_religion_feature = religion_matriarchal
 				has_religion_feature = religion_equal
-				has_religion_feature = religion_feature_bon
 				has_game_rule = {
 					name = gender
 					value = all
@@ -1105,7 +1104,6 @@ nomadic_elective = {
 			NOR = {
 				has_religion_feature = religion_patriarchal
 				has_religion_feature = religion_equal
-				has_religion_feature = religion_feature_bon
 				has_game_rule = {
 					name = gender
 					value = all
@@ -1125,7 +1123,6 @@ nomadic_elective = {
 			NOR = {
 				has_religion_feature = religion_matriarchal
 				has_religion_feature = religion_equal
-				has_religion_feature = religion_feature_bon
 				has_game_rule = {
 					name = gender
 					value = all
@@ -1144,7 +1141,6 @@ nomadic_elective = {
 			NOR = {
 				has_religion_feature = religion_matriarchal
 				has_religion_feature = religion_equal
-				has_religion_feature = religion_feature_bon
 				has_game_rule = {
 					name = gender
 					value = all
@@ -1163,7 +1159,6 @@ nomadic_elective = {
 			NOR = {
 				has_religion_feature = religion_matriarchal
 				has_religion_feature = religion_equal
-				has_religion_feature = religion_feature_bon
 				has_game_rule = {
 					name = gender
 					value = all
@@ -1182,7 +1177,6 @@ nomadic_elective = {
 			NOR = {
 				has_religion_feature = religion_matriarchal
 				has_religion_feature = religion_equal
-				has_religion_feature = religion_feature_bon
 				has_game_rule = {
 					name = gender
 					value = all
@@ -1596,15 +1590,6 @@ nomadic_elective = {
 		#All the Traits
 
 		additive_modifier = {
-			value = 10
-			localisation_key = tooltip_feudal_elector_vote_legendary
-			NOT = { character = FROM } #Do not judge yourself.
-			FROM = {
-				z_legendary_class = yes
-				z_legendary_martial = no
-			}
-		}
-		additive_modifier = {
 			value = -25
 			localisation_key = tooltip_feudal_elector_vote_depressed
 			NOT = { character = FROM } #Do not judge yourself.
@@ -1626,7 +1611,7 @@ nomadic_elective = {
 			value = -15
 			localisation_key = tooltip_feudal_elector_vote_drunkard_muslim
 			NOT = { character = FROM } #Do not judge yourself.
-			is_muslim_trigger = yes
+			religion_group = muslim
 		}
 		additive_modifier = {
 			value = -15
@@ -1677,12 +1662,6 @@ nomadic_elective = {
 			localisation_key = tooltip_feudal_elector_vote_lunatic
 			NOT = { character = FROM } #Do not judge yourself.
 			is_tribal = no
-			NOR = {
-				culture = aslanlar
-				culture = eraka
-				culture = centaur
-				culture = wemic
-			}
 			FROM = {
 				trait = lunatic
 			}
@@ -1713,18 +1692,7 @@ nomadic_elective = {
 			NOR = {
 				is_tribal = yes
 				government = nomadic_tribal_government
-				z_warlock = yes
 			}
-			FROM = {
-				trait = possessed
-				z_warlock = no # Becoming possessed is an acceptable occupational hazard for a warlock
-			}
-		}
-		additive_modifier = {
-			value = 25
-			localisation_key = tooltip_feudal_elector_vote_possessed_warlock
-			NOT = { character = FROM } #Do not judge yourself.
-			z_warlock = yes
 			FROM = {
 				trait = possessed
 			}
@@ -1737,7 +1705,6 @@ nomadic_elective = {
 			NOR = {
 				is_tribal = yes
 				government = nomadic_tribal_government
-				z_warlock = yes
 			}
 			FROM = {
 				trait = possessed

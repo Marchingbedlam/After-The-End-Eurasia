@@ -5039,30 +5039,6 @@ join_from_devil_worshiper_society_effect = {
 		}
 		if = {
 			limit = {
-				society_member_of = the_plaguebringers
-			}
-			ROOT = {
-				join_society = the_plaguebringers
-			}
-		}
-		if = {
-			limit = {
-				society_member_of = the_cult_of_kali
-			}
-			ROOT = {
-				join_society = the_cult_of_kali
-			}
-		}
-		if = {
-			limit = {
-				society_member_of = the_trollcrafters
-			}
-			ROOT = {
-				join_society = the_trollcrafters
-			}
-		}
-		if = {
-			limit = {
 				society_member_of = the_illuminati
 			}
 			ROOT = {
@@ -5192,26 +5168,6 @@ join_prev_devil_worshiper_society_effect = {
 	if = {
 		limit = { PREV = { society_member_of = the_cold_ones } }
 		join_society = the_cold_ones
-	}
-	if = {
-		limit = { PREV = { society_member_of = the_plaguebringers } }
-		join_society = the_plaguebringers
-	}
-	if = {
-		limit = { PREV = { society_member_of = the_cult_of_kali } }
-		join_society = the_cult_of_kali
-	}
-	if = {
-		limit = { PREV = { society_member_of = the_trollcrafters } }
-		join_society = the_trollcrafters
-	}
-	if = {
-		limit = { PREV = { society_member_of = the_bacchants } }
-		join_society = the_bacchants
-	}
-	if = {
-		limit = { PREV = { society_member_of = the_vodouns } }
-		join_society = the_vodouns
 	}
 }
 join_prev_warrior_lodge_society_effect = {
@@ -9361,27 +9317,6 @@ add_sympathy_for_prevs_true_religion_effect = {
 	}
 	if = {
 		limit = { 
-			PREV = { true_religion_group_cult_of_saints_trigger = yes } 
-			NOT = { religion_group = cult_of_saints }
-		}
-		add_trait = sympathy_cult_of_saints
-	}
-	if = {
-		limit = { 
-			PREV = { true_religion_group_pacific_trigger = yes } 
-			NOT = { religion_group = pacific }
-		}
-		add_trait = sympathy_pacific
-	}
-	if = {
-		limit = { 
-			PREV = { true_religion_group_latter_day_saints_trigger = yes } 
-			NOT = { religion_group = latter_day_saints }
-		}
-		add_trait = sympathy_latter_day_saints
-	}
-	if = {
-		limit = { 
 			PREV = { true_religion_group_oldworld_trigger = yes } 
 			NOT = { religion_group = oldworld }
 		}
@@ -9452,27 +9387,6 @@ add_sympathy_for_prevs_open_religion_effect = {
 			NOT = { religion_group = christian }
 		}
 		add_trait = sympathy_christendom
-	}
-	if = {
-		limit = { 
-			PREV = { true_religion_group_cult_of_saints_trigger = yes } 
-			NOT = { religion_group = cult_of_saints }
-		}
-		add_trait = sympathy_cult_of_saints
-	}
-	if = {
-		limit = { 
-			PREV = { true_religion_group_pacific_trigger = yes } 
-			NOT = { religion_group = pacific }
-		}
-		add_trait = sympathy_pacific
-	}
-	if = {
-		limit = { 
-			PREV = { true_religion_group_latter_day_saints_trigger = yes } 
-			NOT = { religion_group = latter_day_saints }
-		}
-		add_trait = sympathy_latter_day_saints
 	}
 	if = {
 		limit = { 
@@ -23127,11 +23041,8 @@ weight_flavor_conditions_effect = {
 					trait = theologian
 					OR = { 
 						religion_group = christian
-						religion_group = cult_of_saints
-						religion_group = latter_day_saints
 						religion_group = jewish_group
 						religion_group = indian_group
-						religion_group = pacific
 						religion_group = muslim
 					}
 				}
@@ -23140,11 +23051,8 @@ weight_flavor_conditions_effect = {
 					has_focus = focus_theology
 					OR = { 
 						religion_group = christian
-						religion_group = cult_of_saints
-						religion_group = latter_day_saints
 						religion_group = jewish_group
 						religion_group = indian_group
-						religion_group = pacific
 						religion_group = muslim
 					}
 				}
@@ -24442,9 +24350,6 @@ apply_dogmatic_on_start_effect = {
 	remove_intermarry = american_native
 	remove_intermarry = amero_syncretic
 	remove_intermarry = christian
-	remove_intermarry = cult_of_saints
-	remove_intermarry = pacific
-	remove_intermarry = latter_day_saints
 	remove_intermarry = oldworld
 	remove_intermarry = nautical
 	remove_intermarry = indian_group
@@ -26709,9 +26614,6 @@ add_sympathy_for_religion_effect = {
 		american_native = { add_trait = sympathy_american_native }
 		amero_syncretic = { add_trait = sympathy_amero_syncretic }
 		christian = { add_trait = sympathy_christendom }
-		cult_of_saints = { add_trait = sympathy_cult_of_saints }
-		pacific = { add_trait = sympathy_pacific }
-		latter_day_saints = { add_trait = sympathy_latter_day_saints }
 		indian_group = { add_trait = sympathy_indian }
 		jewish_group = { add_trait = sympathy_judaism }
 		pagan_group = { add_trait = sympathy_pagans }
@@ -28779,9 +28681,7 @@ give_goldsmith_artifacts_flag_okay_effect = {
 	if = {
 		limit = { 
 			OR = {
-				religion_group = christian 
-				religion_group = cult_of_saints 
-				religion_group = latter_day_saints 
+				religion_group = christian  
 				religion_group = jewish_group
 			}
 		}
@@ -28801,10 +28701,7 @@ give_goldsmith_artifacts_flag_okay_effect = {
 	}
 	else_if = {
 		limit = { 
-			OR = {
-				religion_group = indian_group
-				religion_group = pacific
-			}
+			religion_group = indian_group
 		}
 		add_artifact = engraved_dagger
 		add_artifact = collar_of_pearls
@@ -28841,8 +28738,6 @@ give_goldsmith_artifacts_flag_good_effect = {
 		limit = { 
 			OR = {
 				religion_group = christian 
-				religion_group = cult_of_saints 
-				religion_group = latter_day_saints 
 				religion_group = jewish_group
 			}
 		}
@@ -28862,10 +28757,7 @@ give_goldsmith_artifacts_flag_good_effect = {
 	}
 	else_if = {
 		limit = { 
-			OR = {
-				religion_group = indian_group
-				religion_group = pacific
-			}
+			religion_group = indian_group
 		}
 		add_artifact = bejeweled_dagger
 		add_artifact = necklace_of_radiance
@@ -28901,9 +28793,7 @@ give_goldsmith_artifacts_flag_expensive_effect = {
 	if = {
 		limit = { 
 			OR = {
-				religion_group = christian 
-				religion_group = cult_of_saints 
-				religion_group = latter_day_saints 
+				religion_group = christian  
 				religion_group = jewish_group
 			}
 		}
@@ -28923,10 +28813,7 @@ give_goldsmith_artifacts_flag_expensive_effect = {
 	}
 	else_if = {
 		limit = { 
-			OR = {
-				religion_group = indian_group
-				religion_group = pacific
-			}
+			religion_group = indian_group
 		}
 		add_artifact = dagger_of_glory
 		add_artifact = celestial_necklace
@@ -28963,8 +28850,6 @@ give_goldsmith_artifacts_flag_amazing_effect = {
 		limit = { 
 			OR = {
 				religion_group = christian 
-				religion_group = cult_of_saints 
-				religion_group = latter_day_saints 
 				religion_group = jewish_group
 			}
 		}
@@ -28984,10 +28869,7 @@ give_goldsmith_artifacts_flag_amazing_effect = {
 	}
 	else_if = {
 		limit = { 
-			OR = {
-				religion_group = indian_group
-				religion_group = pacific
-			}
+			religion_group = indian_group
 		}
 		add_artifact = dagger_of_glory_2
 		add_artifact = celestial_necklace_2
@@ -29025,8 +28907,6 @@ give_weaponsmith_artifacts_flag_okay_effect = {
 		limit = { 
 			OR = {
 				religion_group = christian 
-				religion_group = cult_of_saints 
-				religion_group = latter_day_saints 
 				religion_group = jewish_group
 			}
 		}
@@ -29046,10 +28926,7 @@ give_weaponsmith_artifacts_flag_okay_effect = {
 	}
 	else_if = {
 		limit = { 
-			OR = {
-				religion_group = indian_group
-				religion_group = pacific
-			}
+			religion_group = indian_group
 		}
 		add_artifact = engraved_dagger
 		add_artifact = collar_of_pearls
@@ -29086,8 +28963,6 @@ give_weaponsmith_artifacts_flag_good_effect = {
 		limit = { 
 			OR = {
 				religion_group = christian 
-				religion_group = cult_of_saints 
-				religion_group = latter_day_saints 
 				religion_group = jewish_group
 			}
 		}
@@ -29107,10 +28982,7 @@ give_weaponsmith_artifacts_flag_good_effect = {
 	}
 	else_if = {
 		limit = { 
-			OR = {
-				religion_group = indian_group
-				religion_group = pacific
-			}
+			religion_group = indian_group
 		}
 		add_artifact = bejeweled_dagger
 		add_artifact = necklace_of_radiance
@@ -29147,8 +29019,6 @@ give_weaponsmith_artifacts_flag_expensive_effect = {
 		limit = { 
 			OR = {
 				religion_group = christian 
-				religion_group = cult_of_saints 
-				religion_group = latter_day_saints 
 				religion_group = jewish_group
 			}
 		}
@@ -29168,10 +29038,7 @@ give_weaponsmith_artifacts_flag_expensive_effect = {
 	}
 	else_if = {
 		limit = { 
-			OR = {
-				religion_group = indian_group
-				religion_group = pacific
-			}
+			religion_group = indian_group
 		}
 		add_artifact = dagger_of_glory
 		add_artifact = celestial_necklace

@@ -69,10 +69,10 @@ join_prev_sufi_order_society = {
 		limit = { PREV = { society_member_of = monastic_order_shiite } }
 		join_society = monastic_order_shiite
 	}
-	if = {
-		limit = { PREV = { society_member_of = monastic_order_ibadi } }
-		join_society = monastic_order_ibadi
-	}
+	#if = {
+	#	limit = { PREV = { society_member_of = monastic_order_ibadi } }
+	#	join_society = monastic_order_ibadi
+	#}
 	if = {
 		limit = { PREV = { society_member_of = monastic_order_naqshbandi } }
 		join_society = monastic_order_naqshbandi
@@ -174,7 +174,7 @@ spawn_sufi_effect = {
 		}
 		random = {
 			chance = 15
-			add_trait = sayyid2
+			add_trait = sayyid
 		}
 		#Virtues
 		remove_trait = lustful
