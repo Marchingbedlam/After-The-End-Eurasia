@@ -1,8 +1,8 @@
 
 1346000={
-	name="1346000"
-	dynasty=0 #blank
-	culture=utsang
+	name="Yülsung"
+	dynasty=7501004 #Pashu'tse
+	culture=kham
 	religion=ngocholugspa
 	trait=naive_appeaser
 	trait=paranoid
@@ -10,38 +10,22 @@
 	trait=zealous
 	trait=kind
 	trait=hedonist
-	2611.1.1={birth=yes}
-	2691.1.1={death=yes}
-}
-
-1346001={
-	name="1346001"
-	dynasty=0 #blank
-	female=yes
-	culture=utsang
-	religion=ngocholugspa
-	trait=thrifty_clerk
-	trait=greedy
-	trait=gardener
-	trait=cynical
-	trait=shy
-	trait=gluttonous
-	2647.1.1={birth=yes}
+	2631.1.1={birth=yes}
 	2691.1.1={death=yes}
 }
 
 1346002={
-	name="1346002"
-	dynasty=0 #blank
+	name="Tsenpo"
+	dynasty=7500000 #Dalunpa
 	culture=utsang
 	religion=ngocholugspa
 	trait=tough_soldier
-	trait=deceitful
+	trait=humble
 	trait=gluttonous
 	trait=gregarious
-	trait=arbitrary
+	trait=just
 	trait=kind
-	2635.1.1={birth=yes}
+	2600.1.1={birth=yes}
 	2691.1.1={death=yes}
 }
 
@@ -122,10 +106,10 @@
 }
 
 1346008={
-	name="1346008"
-	dynasty=0 #blank
-	culture=utsang
-	religion=ngocholugspa
+	name="Drogön"
+	dynasty=7501003 #Yangatse
+	culture=kham
+	religion=gelugpa
 	trait=charismatic_negotiator
 	trait=slothful
 	trait=proud
@@ -460,7 +444,7 @@
 	2691.1.1={death=yes}
 }
 1346032={
-	name="Ã–poche"
+	name="Gön"
 	dynasty=7502000 #Conyi'po
 	culture=changpa
 	religion=gelugpa
@@ -482,7 +466,8 @@
 	trait=robust
 	trait=ambitious
 	trait=falconer
-	trait=stubborn
+	trait=kind
+	trait=scarred_mid
 	father=1346034
 	mother=1346035
 	2636.1.1={birth=yes}
@@ -512,7 +497,6 @@
 	trait=grey_eminence
 	trait=gregarious
 	trait=kind
-	2615.1.1={birth=yes}
 	2615.1.1={birth=yes}
 	2645.1.1={death=yes}
 }
