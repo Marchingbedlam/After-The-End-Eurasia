@@ -1073,7 +1073,6 @@ d_penitant = {
 	capital = 222 # Huelva
 	
 	title = HERMANO_MAYOR
-	title_prefix = CONFRATERNITY_OF
 	foa = BROTHER_FOA
 	
 	dignity = 1000
@@ -1082,6 +1081,7 @@ d_penitant = {
 	pentarchy = penitant
 
 	primary = yes
+	short_name = yes
 	dynasty_title_names = no
 	
 	male_names = {
@@ -1102,7 +1102,6 @@ d_penitant_fatima = {
 	capital = 176 # Leiria
 	
 	title = MAYORDOMO
-	title_prefix = CONFRATERNITY_OF
 	foa = BROTHER_FOA
 	
 	dignity = 1000
@@ -1124,14 +1123,13 @@ d_penitant_fatima = {
 
 	monthly_income = 10
 }
-d_penitant_galicia = {
-	color = { 222 44 19 }
+d_penitant_africa = {
+	color = { 216 219 212 }
 	color2 = { 1.0 1.0 1.0}
 	
-	capital = 211 # A Coruna
+	capital = 244 # Al Jazair
 	
 	title = MAYORDOMO
-	title_prefix = CONFRATERNITY_OF
 	foa = BROTHER_FOA
 	
 	dignity = 1000
@@ -1140,6 +1138,7 @@ d_penitant_galicia = {
 	pentarchy = penitant
 
 	primary = yes
+	short_name = yes
 	dynasty_title_names = no
 	
 	male_names = {
@@ -1147,28 +1146,25 @@ d_penitant_galicia = {
 		Felix Franciscus "Franciscus Xavierus" Frumentius Gelasius Gregorius Hadrianus Honorius Iannus Ianuarius Ignatius Innocentius Ioannes "Ioannes Henricus" "Ioannes Paulus" Iosephus Julius 
 		Leo Lucius Marcellus Marinus Martinus Maximilianus Nicolaus Paschalis Paulus Pelagius Pius Sarbelus Sergius Silvester Sixtus Stephanus Theodorus Thomas Titus Urbanus Victor Xavierus
 	}
-	culture = galician
+	culture = algerian
 	
 	landless = yes
-
-	monthly_income = 10
 }
-d_penitant_garabandal = {
-	color = { 154 35 34 }
+d_penitant_rome = {
+	color = { 234 217 110 }
 	color2 = { 1.0 1.0 1.0}
 	
-	capital = 235 #Cantabria
+	capital = 1117 #Cantabria
 	
 	title = MAYORDOMO
-	title_prefix = CONFRATERNITY_OF
 	foa = BROTHER_FOA
 	
 	dignity = 1000
 	
 	religion = penitant
-	pentarchy = penitant
 
 	primary = yes
+	short_name = yes
 	dynasty_title_names = no
 	
 	male_names = {
@@ -1176,20 +1172,17 @@ d_penitant_garabandal = {
 		Felix Franciscus "Franciscus Xavierus" Frumentius Gelasius Gregorius Hadrianus Honorius Iannus Ianuarius Ignatius Innocentius Ioannes "Ioannes Henricus" "Ioannes Paulus" Iosephus Julius 
 		Leo Lucius Marcellus Marinus Martinus Maximilianus Nicolaus Paschalis Paulus Pelagius Pius Sarbelus Sergius Silvester Sixtus Stephanus Theodorus Thomas Titus Urbanus Victor Xavierus
 	}
-	culture = asturleonese
+	culture = roman
 	
 	landless = yes
-
-	monthly_income = 10
 }
 d_penitant_del_pilar = {
-	color = { 251 243 34 }
+	color = { 23 51 229 }
 	color2 = { 1.0 1.0 1.0}
 	
 	capital = 223 # Zaragoza
 	
 	title = MAYORDOMO
-	title_prefix = CONFRATERNITY_OF
 	foa = BROTHER_FOA
 	
 	dignity = 1000
@@ -1198,6 +1191,7 @@ d_penitant_del_pilar = {
 	pentarchy = penitant
 
 	primary = yes
+	short_name = yes
 	dynasty_title_names = no
 	
 	male_names = {
@@ -1208,8 +1202,6 @@ d_penitant_del_pilar = {
 	culture = aragonese
 	
 	landless = yes
-
-	monthly_income = 10
 }
 d_nestorian = {
 	color={ 180 137 97 }

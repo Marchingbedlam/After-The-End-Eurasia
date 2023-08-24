@@ -2313,9 +2313,11 @@ e_italy = {
 				holy_site = quinto
 				holy_site = nasrani
 				holy_site = ezharapallikal
-				pentarchy = mariavite
 					
-				b_vatican = {}
+				b_vatican = {
+					pentarchy = mariavite
+					pentarchy = penitant
+				}
 				b_guidonia = {}
 				b_fiumicino = {}
 				b_tivoli = {}
