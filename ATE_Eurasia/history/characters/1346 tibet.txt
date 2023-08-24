@@ -46,13 +46,13 @@
 }
 
 1346003={
-	name="1346003"
-	dynasty=0 #blank
-	culture=utsang
+	name="Donyö"
+	dynasty=7501001 #Dzatö'tse
+	culture=kham
 	religion=ngocholugspa
-	trait=flamboyant_schemer
-	trait=seducer
-	trait=charitable
+	trait=brilliant_strategist
+	trait=one_handed
+	trait=scarred_mid
 	trait=just
 	trait=brave
 	trait=hedonist
@@ -61,25 +61,25 @@
 }
 
 1346004={
-	name="1346004"
-	dynasty=0 #blank
-	culture=utsang
-	religion=ngocholugspa
-	trait=martial_cleric
+	name="Meng"
+	dynasty=8001029 #Ying
+	culture=beifanghua
+	religion=gelugpa
+	trait=thrifty_clerk
 	trait=proud
-	trait=homosexual
-	trait=diligent
-	trait=kind
-	trait=strong
+	trait=craven
+	trait=envious
+	trait=honest
+	trait=trusting
 	trait=robust
 	2630.1.1={birth=yes}
 	2691.1.1={death=yes}
 }
 
 1346005={
-	name="1346005"
-	dynasty=0 #blank
-	culture=utsang
+	name="Phagpa"
+	dynasty=7500001 #Dzachukapu
+	culture=amdowa
 	religion=ngocholugspa
 	trait=thrifty_clerk
 	trait=architect
@@ -92,25 +92,24 @@
 }
 
 1346006={
-	name="1346006"
-	dynasty=0 #blank
-	culture=utsang
+	name="Lukhong"
+	dynasty=7501002 #Pelyültse
+	culture=kham
 	religion=ngocholugspa
-	trait=underhanded_rogue
+	trait=amateurish_plotter
 	trait=one_eyed
-	trait=humble
+	trait=uncouth
 	trait=diligent
 	trait=lustful
-	trait=groomed
+	trait=envious
 	2624.1.1={birth=yes}
 	2691.1.1={death=yes}
 }
 
 1346007={
-	name="1346007"
-	dynasty=0 #blank
-	female=yes
-	culture=utsang
+	name="Raksita"
+	dynasty=7501000 #Yüxüpo
+	culture=kham
 	religion=ngocholugspa
 	trait=indulgent_wastrel
 	trait=arbitrary
@@ -399,25 +398,26 @@
 }
 
 1346026={
-	name="1346026"
-	dynasty=0 #blank
+	name="Jashi"
+	dynasty=7500000 #Dalunpa
 	female=yes
-	culture=utsang
+	culture=amdowa
 	religion=ngocholugspa
-	trait=underhanded_rogue
-	trait=feeble
-	trait=clubfooted
+	trait=hunter
+	trait=robust
 	trait=ambitious
 	trait=falconer
-	trait=envious
-	2605.1.1={birth=yes}
+	trait=stubborn
+	father=1346034
+	mother=1346035
+	2636.1.1={birth=yes}
 	2691.1.1={death=yes}
 }
 
 1346029={
 	name="1346029"
 	dynasty=0 #blank
-	culture=utsang
+	culture=amdowa
 	religion=ngocholugspa
 	trait=flamboyant_schemer
 	trait=dwarf
@@ -444,3 +444,75 @@
 	2691.1.1={death=yes}
 }
 
+1346031={
+	name="Erdeni"
+	dynasty=1207051 #Pandita
+	culture=oirat
+	religion=gelugpa
+	trait=martial_cleric
+	trait=shrewd
+	trait=mystic
+	trait=diligent
+	trait=kind
+	trait=strong
+	trait=robust
+	2600.1.1={birth=yes}
+	2691.1.1={death=yes}
+}
+1346032={
+	name="Ã–poche"
+	dynasty=7502000 #Conyi'po
+	culture=changpa
+	religion=gelugpa
+	trait=flamboyant_schemer
+	trait=seducer
+	trait=charitable
+	trait=just
+	trait=brave
+	trait=hedonist
+	2629.1.1={birth=yes}
+	2691.1.1={death=yes}
+}
+1346033={
+	name="Zhonnu"
+	dynasty=7500000 #Dalunpa
+	culture=amdowa
+	religion=ngocholugspa
+	trait=hunter
+	trait=robust
+	trait=ambitious
+	trait=falconer
+	trait=stubborn
+	father=1346034
+	mother=1346035
+	2636.1.1={birth=yes}
+	2691.1.1={death=yes}
+}
+1346034={
+	name="Thönmi"
+	dynasty=7500000 #Dalunpa
+	culture=amdowa
+	religion=ngocholugspa
+	trait=hunter
+	trait=robust
+	trait=ambitious
+	trait=falconer
+	trait=cruel
+	2615.1.1={birth=yes}
+	2635.1.1={add_spouse=1346035}
+	2651.1.1={death=yes}
+}
+1346035={
+	name="Dro"
+	dynasty=7500000 #Dalunpa
+	female=yes
+	culture=amdowa
+	religion=ngocholugspa
+	trait=robust
+	trait=grey_eminence
+	trait=gregarious
+	trait=kind
+	2615.1.1={birth=yes}
+	2615.1.1={birth=yes}
+	2645.1.1={death=yes}
+}
