@@ -4006,26 +4006,6 @@ add_crusade_trait_effect = {
 	}
 	if = {
 		limit = {
-			OR = {
-				religion = celtic_pagan
-				religion = celtic_pagan_reformed
-			}
-		}
-		add_trait = lughs_own
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				religion = aria_de_machete
-				religion = aria_de_machete_reformed
-			}
-		}
-		add_trait = joropo_cantor
-		break = yes
-	}
-	if = {
-		limit = {
 			religion_group = christian
 		}
 		add_trait = crusader
@@ -4104,16 +4084,6 @@ add_crusade_trait_effect = {
 			}
 		}
 		add_trait = cavalier
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				religion = aria_de_machete
-				religion = aria_de_machete_reformed
-			}
-		}
-		add_trait = joropo_cantor
 		break = yes
 	}
 	if = {
@@ -5192,10 +5162,6 @@ join_prev_warrior_lodge_society_effect = {
 		join_society = warrior_lodge_raven_tales
 	}
 	if = {
-		limit = { PREV = { society_member_of = warrior_lodge_celtic } }
-		join_society = warrior_lodge_celtic
-	}
-	if = {
 		limit = { PREV = { society_member_of = warrior_lodge_revelationist } }
 		join_society = warrior_lodge_revelationist
 	}
@@ -5263,34 +5229,6 @@ give_this_warrior_lodge_religion_effect = { #Mostly for spawned characters.
 		}
 		religion = raven_tales
 	}
-	if = {
-		limit = { 
-			society_member_of = warrior_lodge_celtic
-			NOT = { has_global_flag = celtic_pagan_reformation }
-		}
-		religion = celtic_pagan
-	}
-	if = {
-		limit = { 
-			society_member_of = warrior_lodge_celtic
-			has_global_flag = celtic_pagan_reformation
-		}
-		religion = celtic_pagan_reformed
-	}
-	#if = { #we havent actually added this one yet
-	#	limit = { 
-	#		society_member_of = warrior_lodge_aria_de_machete
-	#		NOT = { has_global_flag = aria_de_machete_reformation }
-	#	}
-	#	religion = aria_de_machete
-	#}
-	#if = {
-	#	limit = { 
-	#		society_member_of = warrior_lodge_aria_de_machete
-	#		has_global_flag = aria_de_machete_reformation
-	#	}
-	#	religion = aria_de_machete_reformed
-	#}
 	if = {
 		limit = { 
 			society_member_of = warrior_lodge_revelationist
@@ -10542,70 +10480,6 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 					NOT = {
 						has_character_was_religion_flag_trigger = yes
 					}
-					religion = celtic_pagan
-				}
-				has_character_flag = character_was_celtic_pagan
-			}
-		}
-		set_secret_religion = celtic_pagan
-		clr_character_flag = character_was_celtic_pagan
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
-					religion = celtic_pagan_reformed
-				}
-				has_character_flag = character_was_celtic_pagan_reformed
-			}
-		}
-		set_secret_religion = celtic_pagan_reformed
-		clr_character_flag = character_was_celtic_pagan_reformed
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
-					religion = aria_de_machete
-				}
-				has_character_flag = character_was_aria_de_machete
-			}
-		}
-		set_secret_religion = aria_de_machete
-		clr_character_flag = character_was_aria_de_machete
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
-					religion = aria_de_machete_reformed
-				}
-				has_character_flag = character_was_aria_de_machete_reformed
-			}
-		}
-		set_secret_religion = aria_de_machete_reformed
-		clr_character_flag = character_was_aria_de_machete_reformed
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
 					religion = brethren
 				}
 				has_character_flag = character_was_brethren
@@ -10654,22 +10528,6 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 					NOT = {
 						has_character_was_religion_flag_trigger = yes
 					}
-					religion = meshichist
-				}
-				has_character_flag = character_was_meshichist
-			}
-		}
-		set_secret_religion = meshichist
-		clr_character_flag = character_was_meshichist
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
 					religion = hindu
 				}
 				has_character_flag = character_was_hindu
@@ -10709,22 +10567,6 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 		}
 		set_secret_religion = revivalist
 		clr_character_flag = character_was_revivalist
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
-					religion = transcendentalist
-				}
-				has_character_flag = character_was_transcendentalist
-			}
-		}
-		set_secret_religion = transcendentalist
-		clr_character_flag = character_was_transcendentalist
 		break = yes
 	}
 	if = {
@@ -11175,28 +11017,8 @@ add_religion_char_flag_effect = {
 		set_character_flag = character_was_reform
 	}
 	if = {
-		limit = { religion = meshichist }
-		set_character_flag = character_was_meshichist
-	}
-	if = {
 		limit = { religion = hindu }
 		set_character_flag = character_was_hindu
-	}
-	if = {
-		limit = { religion = celtic_pagan }
-		set_character_flag = character_was_celtic_pagan
-	}
-	if = {
-		limit = { religion = celtic_pagan_reformed }
-		set_character_flag = character_was_celtic_pagan_reformed
-	}
-	if = {
-		limit = { religion = aria_de_machete }
-		set_character_flag = character_was_aria_de_machete
-	}
-	if = {
-		limit = { religion = aria_de_machete_reformed }
-		set_character_flag = character_was_aria_de_machete_reformed
 	}
 	if = {
 		limit = { religion = traditionalist }
@@ -11205,10 +11027,6 @@ add_religion_char_flag_effect = {
 	if = {
 		limit = { religion = revivalist }
 		set_character_flag = character_was_revivalist
-	}
-	if = {
-		limit = { religion = transcendentalist }
-		set_character_flag = character_was_transcendentalist
 	}
 	if = {
 		limit = { religion = imamite }
@@ -11320,18 +11138,11 @@ clr_religion_char_flag_effect = {
 	clr_character_flag = character_was_thelema
 	clr_character_flag = character_was_norse_pagan_reformed
 	clr_character_flag = character_was_norse_pagan
-	clr_character_flag = character_was_celtic_pagan_reformed
-	clr_character_flag = character_was_celtic_pagan
-	clr_character_flag = character_was_aria_de_machete_reformed
-	clr_character_flag = character_was_aria_de_machete
 	clr_character_flag = character_was_brethren
 	clr_character_flag = character_was_jewish
 	clr_character_flag = character_was_reform
-	clr_character_flag = character_was_meshichist
 	clr_character_flag = character_was_hindu
-	clr_character_flag = character_was_traditionalist
 	clr_character_flag = character_was_revivalist
-	clr_character_flag = character_was_transcendentalist
 	clr_character_flag = character_was_imamite
 	clr_character_flag = character_was_qingzhen
 	clr_character_flag = character_was_alawiyya
@@ -11829,34 +11640,6 @@ event_target_old_religion_from_flag_effect = {
 		}
 	}
 	if = {
-		limit = { has_character_flag = character_was_celtic_pagan }
-		random_character = {
-			limit = { religion = celtic_pagan }
-			save_event_target_as = old_religion
-		}
-	}
-	if = {
-		limit = { has_character_flag = character_was_celtic_pagan_reformed }
-		random_character = {
-			limit = { religion = celtic_pagan_reformed }
-			save_event_target_as = old_religion
-		}
-	}
-	if = {
-		limit = { has_character_flag = character_was_aria_de_machete }
-		random_character = {
-			limit = { religion = aria_de_machete }
-			save_event_target_as = old_religion
-		}
-	}
-	if = {
-		limit = { has_character_flag = character_was_aria_de_machete_reformed }
-		random_character = {
-			limit = { religion = aria_de_machete_reformed }
-			save_event_target_as = old_religion
-		}
-	}
-	if = {
 		limit = { has_character_flag = character_was_brethren }
 		random_character = {
 			limit = { religion = brethren }
@@ -11878,13 +11661,6 @@ event_target_old_religion_from_flag_effect = {
 		}
 	}
 	if = {
-		limit = { has_character_flag = character_was_meshichist }
-		random_character = {
-			limit = { religion = meshichist }
-			save_event_target_as = old_religion
-		}
-	}
-	if = {
 		limit = { has_character_flag = character_was_hindu }
 		random_character = {
 			limit = { religion = hindu }
@@ -11892,23 +11668,9 @@ event_target_old_religion_from_flag_effect = {
 		}
 	}
 	if = {
-		limit = { has_character_flag = character_was_traditionalist }
-		random_character = {
-			limit = { religion = traditionalist }
-			save_event_target_as = old_religion
-		}
-	}
-	if = {
 		limit = { has_character_flag = character_was_revivalist }
 		random_character = {
 			limit = { religion = revivalist }
-			save_event_target_as = old_religion
-		}
-	}
-	if = {
-		limit = { has_character_flag = character_was_transcendentalist }
-		random_character = {
-			limit = { religion = transcendentalist }
 			save_event_target_as = old_religion
 		}
 	}
@@ -14206,50 +13968,6 @@ flip_secret_religious_community_provinces = {
 				}
 			}
 		}
-		secret_religious_society_celtic_pagan = {
-			ROOT = {
-				any_demesne_province = {
-					limit = {
-						has_province_modifier = secret_celtic_pagan_community
-					}
-					religion = celtic_pagan
-					remove_province_modifier = secret_celtic_pagan_community
-				}
-			}
-		}
-		secret_religious_society_celtic_pagan_reformed = {
-			ROOT = {
-				any_demesne_province = {
-					limit = {
-						has_province_modifier = secret_celtic_pagan_reformed_community
-					}
-					religion = celtic_pagan_reformed
-					remove_province_modifier = secret_celtic_pagan_reformed_community
-				}
-			}
-		}
-		secret_religious_society_aria_de_machete = {
-			ROOT = {
-				any_demesne_province = {
-					limit = {
-						has_province_modifier = secret_aria_de_machete_community
-					}
-					religion = aria_de_machete
-					remove_province_modifier = secret_aria_de_machete_community
-				}
-			}
-		}
-		secret_religious_society_aria_de_machete_reformed = {
-			ROOT = {
-				any_demesne_province = {
-					limit = {
-						has_province_modifier = secret_aria_de_machete_reformed_community
-					}
-					religion = aria_de_machete_reformed
-					remove_province_modifier = secret_aria_de_machete_reformed_community
-				}
-			}
-		}
 		secret_religious_society_brethren = {
 			ROOT = {
 				any_demesne_province = {
@@ -14283,17 +14001,6 @@ flip_secret_religious_community_provinces = {
 				}
 			}
 		}
-		secret_religious_society_meshichist = {
-			ROOT = {
-				any_demesne_province = {
-					limit = {
-						has_province_modifier = secret_meshichist_community
-					}
-					religion = meshichist
-					remove_province_modifier = secret_meshichist_community
-				}
-			}
-		}
 		secret_religious_society_hindu = {
 			ROOT = {
 				any_demesne_province = {
@@ -14305,17 +14012,6 @@ flip_secret_religious_community_provinces = {
 				}
 			}
 		}
-		secret_religious_society_traditionalist = {
-			ROOT = {
-				any_demesne_province = {
-					limit = {
-						has_province_modifier = secret_traditionalist_community
-					}
-					religion = traditionalist
-					remove_province_modifier = secret_traditionalist_community
-				}
-			}
-		}
 		secret_religious_society_revivalist = {
 			ROOT = {
 				any_demesne_province = {
@@ -14324,17 +14020,6 @@ flip_secret_religious_community_provinces = {
 					}
 					religion = revivalist
 					remove_province_modifier = secret_revivalist_community
-				}
-			}
-		}
-		secret_religious_society_transcendentalist = {
-			ROOT = {
-				any_demesne_province = {
-					limit = {
-						has_province_modifier = secret_transcendentalist_community
-					}
-					religion = transcendentalist
-					remove_province_modifier = secret_transcendentalist_community
 				}
 			}
 		}
@@ -15849,7 +15534,6 @@ spawn_elder_effect = {
 						has_religion_feature = religion_animistic
 						has_religion_feature = religion_feature_trailwalker
 						has_religion_feature = religion_feature_midewiwin
-						has_religion_feature = religion_feature_celtic
 					}
 				}
 				random_list = {
@@ -18844,50 +18528,6 @@ root_secret_religion_provinces_convert_effect = {
 					}
 				}
 			}
-			secret_religious_society_celtic_pagan_reformed = { 
-				PREV = {
-					any_demesne_province = {
-						limit = {
-							has_province_modifier = secret_celtic_pagan_reformed_community
-						}
-						religion = celtic_pagan_reformed
-						remove_province_modifier = secret_celtic_pagan_reformed_community
-					}
-				}
-			}
-			secret_religious_society_celtic_pagan = { 
-				PREV = {
-					any_demesne_province = {
-						limit = {
-							has_province_modifier = secret_celtic_pagan_community
-						}
-						religion = celtic_pagan
-						remove_province_modifier = secret_celtic_pagan_community
-					}
-				}
-			}
-			secret_religious_society_aria_de_machete_reformed = { 
-				PREV = {
-					any_demesne_province = {
-						limit = {
-							has_province_modifier = secret_aria_de_machete_reformed_community
-						}
-						religion = aria_de_machete_reformed
-						remove_province_modifier = secret_aria_de_machete_reformed_community
-					}
-				}
-			}
-			secret_religious_society_aria_de_machete = { 
-				PREV = {
-					any_demesne_province = {
-						limit = {
-							has_province_modifier = secret_aria_de_machete_community
-						}
-						religion = aria_de_machete
-						remove_province_modifier = secret_aria_de_machete_community
-					}
-				}
-			}
 			secret_religious_society_brethren = { 
 				PREV = {
 					any_demesne_province = {
@@ -18921,17 +18561,6 @@ root_secret_religion_provinces_convert_effect = {
 					}
 				}
 			}
-			secret_religious_society_meshichist = { 
-				PREV = {
-					any_demesne_province = {
-						limit = {
-							has_province_modifier = secret_meshichist_community
-						}
-						religion = meshichist
-						remove_province_modifier = secret_meshichist_community
-					}
-				}
-			}
 			secret_religious_society_hindu = { 
 				PREV = {
 					any_demesne_province = {
@@ -18943,17 +18572,6 @@ root_secret_religion_provinces_convert_effect = {
 					}
 				}
 			}
-			secret_religious_society_traditionalist = { 
-				PREV = {
-					any_demesne_province = {
-						limit = {
-							has_province_modifier = secret_traditionalist_community
-						}
-						religion = traditionalist
-						remove_province_modifier = secret_traditionalist_community
-					}
-				}
-			}
 			secret_religious_society_revivalist = { 
 				PREV = {
 					any_demesne_province = {
@@ -18962,17 +18580,6 @@ root_secret_religion_provinces_convert_effect = {
 						}
 						religion = revivalist
 						remove_province_modifier = secret_revivalist_community
-					}
-				}
-			}
-			secret_religious_society_transcendentalist = { 
-				PREV = {
-					any_demesne_province = {
-						limit = {
-							has_province_modifier = secret_transcendentalist_community
-						}
-						religion = transcendentalist
-						remove_province_modifier = secret_transcendentalist_community
 					}
 				}
 			}
@@ -23816,9 +23423,6 @@ add_warrior_lodge_leader_trait_effect = { #NOTE: These traits don't exist right 
 		warrior_lodge_raven_tales = {
 			add_trait = raven_tales_leader
 		}
-		warrior_lodge_celtic = {
-			add_trait = celtic_leader
-		}
 		warrior_lodge_revelationist = {
 			add_trait = revelationist_leader
 		}
@@ -24592,34 +24196,6 @@ transfer_crown_on_abdication_effect = {
 	}
 	if = {
 		limit = { 
-			has_landed_title = d_celtic_pagan_reformed
-			any_artifact = { artifact_type = crown_celtic_fylkir }
-		}
-			current_heir = { save_event_target_as = crown_celtic_fylkir_heir }
-			any_artifact = { 
-				limit = { artifact_type = crown_celtic_fylkir }
-				transfer_artifact = {
-					from = PREV
-					to = event_target:crown_celtic_fylkir_heir
-				} 
-			}
-	}
-	if = {
-		limit = { 
-			has_landed_title = d_aria_de_machete_reformed
-			any_artifact = { artifact_type = crown_aria_de_machete_fylkir }
-		}
-			current_heir = { save_event_target_as = crown_aria_de_machete_fylkir_heir }
-			any_artifact = { 
-				limit = { artifact_type = crown_aria_de_machete_fylkir }
-				transfer_artifact = {
-					from = PREV
-					to = event_target:crown_aria_de_machete_fylkir_heir
-				} 
-			}
-	}
-	if = {
-		limit = { 
 			has_landed_title = d_revelationist_reformed
 			any_artifact = { artifact_type = crown_revelationist_fylkir }
 		}
@@ -24683,8 +24259,6 @@ transfer_crown_on_abdication_effect = {
 				artifact_type = crown_lion_judah
 				artifact_type = crown_california
 				artifact_type = crown_fylkir
-				artifact_type = crown_celtic_fylkir
-				artifact_type = crown_aria_de_machete_fylkir
 				artifact_type = crown_revelationist_fylkir
 				artifact_type = scepter_midewiwin_fylkir 
 				artifact_type = crown_raven_tales_fylkir 
@@ -25430,7 +25004,6 @@ WL_ritual_hunt_cleanup_effect = {
 	hidden_tooltip = { set_variable = { which = wl_ritual_hunting value = 0 } }
 
 	clr_character_flag = flag_hunting_wolf_norse
-	clr_character_flag = flag_hunting_wolf_celtic
 
 	clr_character_flag = flag_hunting_eagle_peyotist
 	clr_character_flag = flag_hunting_eagle_midewiwin
@@ -25650,10 +25223,7 @@ WL_ritual_hunt_flavor_events_effect = {
 						trait = lunatic
 						AND = { 
 							has_character_modifier = lycanthropy 
-							OR = { 
-								has_character_flag = flag_hunting_wolf_norse
-								has_character_flag = flag_hunting_wolf_celtic
-							} 
+							has_character_flag = flag_hunting_wolf_norse
 						}
 					} 
 					event_target:scoped_WL_co_hunter = { is_alive = yes }
@@ -28028,124 +27598,6 @@ reformation_god_names_changes_effect = { #Reforming religion with certain Doctri
 					add_god_name = GOD_SACAGEWEA 
 					add_god_name = GOD_MISSUS_SURESHOT 
 					add_evil_god_name = THE_GHOST_RIDERS
-				}
-	
-				break = yes
-			}
-
-			if = { #A ruler reforms Celtic Paganism
-				limit = {
-					has_dlc = "Holy Fury" 
-					religion = celtic_pagan_reformed
-					OR = { 
-						has_religion_feature = religion_matriarchal
-						has_religion_feature = religion_patriarchal
-						has_religion_feature = religion_dogmatic
-					}
-				}
-				remove_god_names = yes
-				remove_evil_god_names = yes
-				if = { #Religion is not sexist, add just Dogmatic set.
-					limit = {
-						NOR = {
-							has_religion_feature = religion_matriarchal
-							has_religion_feature = religion_patriarchal
-						}
-					}
-					set_high_god_name = GOD_THE_DAGDA
-					add_god_name = GOD_THE_DAGDA_2
-					add_evil_god_name = THE_FOMORIANS
-					add_evil_god_name = OLD_NOLL
-				}
-				if = { #Religion is Patriarchal
-					limit = {
-						has_religion_feature = religion_patriarchal
-					}
-					set_high_god_name = GOD_DAIRE
-					add_god_name = GOD_DAIRE_2
-					if = { 
-						limit = {
-							NOT = { has_religion_feature = religion_dogmatic }
-						}
-						add_god_name = GOD_GLOOSCAP 
-						add_god_name = GOD_MANANNAN
-						add_god_name = GOD_LUGH 
-						add_god_name = GOD_THE_ANCESTORS 
-					}
-					add_evil_god_name = GOD_CAILLEACH
-				}
-				if = { #Religion is Matriarchal
-					limit = {
-						has_religion_feature = religion_matriarchal
-					}
-					set_high_god_name = GOD_BRIGID
-					add_god_name = GOD_BRIGID_2
-					if = { 
-						limit = {
-							NOT = { has_religion_feature = religion_dogmatic }
-						}
-						add_god_name = GOD_CAILLEACH
-						add_god_name = GOD_NOKOMIS
-					}
-					add_evil_god_name = OLD_NOLL 
-					add_evil_god_name = GOD_HORNED_ONE
-				}
-	
-				break = yes
-			}
-
-			if = { #A ruler reforms Aria de Machete
-				limit = {
-					has_dlc = "Holy Fury" 
-					religion = aria_de_machete_reformed
-					OR = { 
-						has_religion_feature = religion_matriarchal
-						has_religion_feature = religion_patriarchal
-						has_religion_feature = religion_dogmatic
-					}
-				}
-				remove_god_names = yes
-				remove_evil_god_names = yes
-				if = { #Religion is not sexist, add just Dogmatic set.
-					limit = {
-						NOR = {
-							has_religion_feature = religion_matriarchal
-							has_religion_feature = religion_patriarchal
-						}
-					}
-					set_high_god_name = GOD_RUCIO_MORO
-					add_god_name = GOD_RUCIO_MORO_2
-					add_evil_god_name = SATAN
-				}
-				if = { #Religion is Patriarchal
-					limit = {
-						has_religion_feature = religion_patriarchal
-					}
-					set_high_god_name = GOD_RUCIO_MORO
-					add_god_name = GOD_RUCIO_MORO_2
-					if = { 
-						limit = {
-							NOT = { has_religion_feature = religion_dogmatic }
-						}
-						add_god_name = GOD_JUAN_MACHETE 
-						add_god_name = GOD_FLORENTINO_CAZADIABLOS 
-					}
-					add_evil_god_name = GOD_LA_BOLEFUEGO
-					add_evil_god_name = GOD_LA_SAYONA
-				}
-				if = { #Religion is Matriarchal
-					limit = {
-						has_religion_feature = religion_matriarchal
-					}
-					set_high_god_name = GOD_LA_BOLEFUEGO
-					add_god_name = GOD_LA_BOLEFUEGO_2
-					if = { 
-						limit = {
-							NOT = { has_religion_feature = religion_dogmatic }
-						}
-						add_god_name = GOD_LA_SAYONA
-					}
-					add_evil_god_name = SATAN 
 				}
 	
 				break = yes
@@ -30576,64 +30028,6 @@ abdicate_holy_order_if_religion_changes_effect = { #why. why did you add this ef
 				}
 			}
 			log = "[d_taxet_warriors.owner.GetTitledFirstName] was found to be unfit to lead the [d_taxet_warriors.GetName] due to religious conflict! Title is raven_tales, but owner is not. "
-			log = " ROOT = [Root.GetTitledFirstName] FROM = [From.GetTitledFirstName] PREV = [Prev.GetTitledFirstName]"
-		}
-	}
-	
-	d_round_table = {
-		if = {
-			limit = {
-				is_title_active = d_round_table
-				religion = celtic_pagan_reformed
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = celtic_pagan_reformed } 
-				}
-			}
-			log = "[d_round_table.owner.GetTitledFirstName] was found to be unfit to lead the [d_round_table.GetName] due to religious conflict! Title is celtic_pagan_reformed, but owner is not. "
-			log = " ROOT = [Root.GetTitledFirstName] FROM = [From.GetTitledFirstName] PREV = [Prev.GetTitledFirstName]"
-		}
-		if = {
-			limit = {
-				is_title_active = d_round_table
-				religion = celtic_pagan
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = celtic_pagan } 
-				}
-			}
-			log = "[d_round_table.owner.GetTitledFirstName] was found to be unfit to lead the [d_round_table.GetName] due to religious conflict! Title is celtic_pagan, but owner is not. "
-			log = " ROOT = [Root.GetTitledFirstName] FROM = [From.GetTitledFirstName] PREV = [Prev.GetTitledFirstName]"
-		}
-	}
-	
-	d_legion_infernal = {
-		if = {
-			limit = {
-				is_title_active = d_legion_infernal
-				religion = aria_de_machete_reformed
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = aria_de_machete_reformed } 
-				}
-			}
-			log = "[d_legion_infernal.owner.GetTitledFirstName] was found to be unfit to lead the [d_legion_infernal.GetName] due to religious conflict! Title is aria_de_machete_reformed, but owner is not. "
-			log = " ROOT = [Root.GetTitledFirstName] FROM = [From.GetTitledFirstName] PREV = [Prev.GetTitledFirstName]"
-		}
-		if = {
-			limit = {
-				is_title_active = d_legion_infernal
-				religion = aria_de_machete
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = aria_de_machete } 
-				}
-			}
-			log = "[d_legion_infernal.owner.GetTitledFirstName] was found to be unfit to lead the [d_legion_infernal.GetName] due to religious conflict! Title is aria_de_machete, but owner is not. "
 			log = " ROOT = [Root.GetTitledFirstName] FROM = [From.GetTitledFirstName] PREV = [Prev.GetTitledFirstName]"
 		}
 	}
