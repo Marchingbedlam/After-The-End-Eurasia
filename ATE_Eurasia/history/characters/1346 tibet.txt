@@ -121,58 +121,61 @@
 }
 
 1346009={
-	name="1346009"
-	dynasty=0 #blank
+	name="Yeshe"
+	dynasty=7503000 #Kharchen
+	female=yes
 	culture=utsang
 	religion=ngocholugspa
 	trait=mastermind_theologian
-	trait=cruel
-	trait=wroth
-	trait=slothful
+	trait=kind
+	trait=diligent
+	trait=gregarious
 	trait=ill
-	trait=brave
-	2609.1.1={birth=yes}
+	trait=ambitious
+	2639.1.1={birth=yes}
 	2691.1.1={death=yes}
 }
 
 1346010={
-	name="1346010"
-	dynasty=0 #blank
-	female=yes
+	name="Gangkarwa"
+	dynasty=0 #Nagartse
 	culture=utsang
-	religion=ngocholugspa
+	religion=gelugpa
 	trait=intricate_webweaver
 	trait=kind
 	trait=one_eyed
 	trait=trusting
-	trait=maimed
+	trait=depressed
 	trait=duelist
 	2644.1.1={birth=yes}
 	2691.1.1={death=yes}
 }
 
 1346011={
-	name="1346011"
-	dynasty=0 #blank
+	name="Aglen"
+	dynasty=7503005 #Löntsen
 	culture=utsang
-	religion=ngocholugspa
-	trait=misguided_warrior
-	trait=gluttonous
+	religion=gelugpa
+	trait=naive_appeaser
+	trait=genius
 	trait=drunkard
 	trait=theologian
-	trait=envious
-	trait=deceitful
-	2632.1.1={birth=yes}
+	trait=lefthanded
+	trait=sturdy
+	trait=groomed
+	trait=kind
+	trait=humble
+	2592.1.1={birth=yes}
 	2691.1.1={death=yes}
 }
 
 1346012={
-	name="1346012"
-	dynasty=0 #blank
+	name="Raksita"
+	dynasty=7503001 #Tulku
 	female=yes
 	culture=utsang
-	religion=ngocholugspa
-	trait=fortune_builder
+	religion=rime
+	trait=mastermind_theologian
 	trait=falconer
 	trait=humble
 	trait=shrewd
@@ -183,13 +186,13 @@
 }
 
 1346013={
-	name="1346013"
-	dynasty=0 #blank
-	culture=utsang
-	religion=ngocholugspa
+	name="Kyidé"
+	dynasty=7504000 #Nyampo
+	culture=yolmo
+	religion=rime
 	trait=midas_touched
 	trait=wroth
-	trait=homosexual
+	trait=gamer
 	trait=zealous
 	trait=uncouth
 	trait=paranoid
@@ -198,11 +201,11 @@
 }
 
 1346014={
-	name="1346014"
-	dynasty=0 #blank
+	name="Phurbulcam"
+	dynasty=7503003 #Tsongtse
 	female=yes
 	culture=utsang
-	religion=ngocholugspa
+	religion=rime
 	trait=charismatic_negotiator
 	trait=chaste
 	trait=honest
@@ -214,8 +217,8 @@
 }
 
 1346015={
-	name="1346015"
-	dynasty=0 #blank
+	name="Tromo"
+	dynasty=7503004 #Ringtse
 	culture=utsang
 	religion=ngocholugspa
 	trait=grey_eminence
@@ -229,11 +232,11 @@
 }
 
 1346016={
-	name="1346016"
-	dynasty=0 #blank
+	name="Lasya"
+	dynasty=7503006 #Burangpo
 	female=yes
 	culture=utsang
-	religion=ngocholugspa
+	religion=rime
 	trait=skilled_tactician
 	trait=quick
 	trait=uncouth
@@ -245,40 +248,44 @@
 }
 
 1346017={
-	name="1346017"
-	dynasty=0 #blank
-	culture=utsang
-	religion=ngocholugspa
-	trait=underhanded_rogue
+	name="Hariti"
+	dynasty=7502001 #Fangpa
+	female=yes
+	culture=changpa
+	religion=gelugpa
+	trait=martial_cleric
 	trait=slothful
 	trait=patient
-	trait=craven
+	trait=brave
 	trait=just
-	trait=groomed
+	trait=uncouth
 	2629.1.1={birth=yes}
 	2691.1.1={death=yes}
 }
 
 1346018={
-	name="1346018"
-	dynasty=0 #blank
+	name="Kyide"
+	dynasty=7503007 #Yarlung
 	culture=utsang
-	religion=ngocholugspa
+	religion=gelugpa
 	trait=naive_appeaser
 	trait=fair
-	trait=strategist
+	trait=honest
 	trait=temperate
 	trait=charitable
 	trait=kind
-	2613.1.1={birth=yes}
+	trait=craven
+	trait=child_of_consort
+	father=1346011
+	2628.1.1={birth=yes}
 	2691.1.1={death=yes}
 }
 
 1346019={
-	name="1346019"
-	dynasty=0 #blank
+	name="Darma"
+	dynasty=7503008 #Tsen
 	culture=utsang
-	religion=ngocholugspa
+	religion=gelugpa
 	trait=flamboyant_schemer
 	trait=shrewd
 	trait=stressed
@@ -290,10 +297,10 @@
 }
 
 1346020={
-	name="1346020"
-	dynasty=0 #blank
-	culture=utsang
-	religion=ngocholugspa
+	name="Lhachen"
+	dynasty=7502002 #Dzonpo
+	culture=changpa
+	religion=rime
 	trait=intricate_webweaver
 	trait=socializer
 	trait=gregarious
@@ -301,83 +308,6 @@
 	trait=brave
 	trait=wroth
 	2638.1.1={birth=yes}
-	2691.1.1={death=yes}
-}
-
-1346021={
-	name="1346021"
-	dynasty=0 #blank
-	culture=utsang
-	religion=ngocholugspa
-	trait=fortune_builder
-	trait=craven
-	trait=impaler
-	trait=cruel
-	trait=humble
-	trait=deceitful
-	trait=temperate
-	2632.1.1={birth=yes}
-	2691.1.1={death=yes}
-}
-
-1346022={
-	name="1346022"
-	dynasty=0 #blank
-	culture=utsang
-	religion=ngocholugspa
-	trait=elusive_shadow
-	trait=ambitious
-	trait=envious
-	trait=chaste
-	trait=temperate
-	trait=gamer
-	2625.1.1={birth=yes}
-	2691.1.1={death=yes}
-}
-
-1346023={
-	name="1346023"
-	dynasty=0 #blank
-	culture=utsang
-	religion=ngocholugspa
-	trait=misguided_warrior
-	trait=gluttonous
-	trait=dull
-	trait=trusting
-	trait=slothful
-	trait=charitable
-	2626.1.1={birth=yes}
-	2691.1.1={death=yes}
-}
-
-1346024={
-	name="1346024"
-	dynasty=0 #blank
-	female=yes
-	culture=utsang
-	religion=ngocholugspa
-	trait=brilliant_strategist
-	trait=robust
-	trait=fair
-	trait=zealous
-	trait=charitable
-	trait=craven
-	2650.1.1={birth=yes}
-	2691.1.1={death=yes}
-}
-
-1346025={
-	name="1346025"
-	dynasty=0 #blank
-	culture=utsang
-	religion=ngocholugspa
-	trait=detached_priest
-	trait=proud
-	trait=arbitrary
-	trait=gregarious
-	trait=erudite
-	trait=honest
-	2615.1.1={birth=yes}
 	2691.1.1={death=yes}
 }
 
@@ -392,6 +322,7 @@
 	trait=ambitious
 	trait=falconer
 	trait=stubborn
+	trait=twin
 	father=1346034
 	mother=1346035
 	2636.1.1={birth=yes}
@@ -468,6 +399,7 @@
 	trait=falconer
 	trait=kind
 	trait=scarred_mid
+	trait=twin
 	father=1346034
 	mother=1346035
 	2636.1.1={birth=yes}
