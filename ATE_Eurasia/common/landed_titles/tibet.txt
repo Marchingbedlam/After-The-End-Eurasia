@@ -6,11 +6,15 @@ e_tibet = {
 	
 	capital = 2702 #Lhasa
 	
+	beifanghua = "Xizang"
+	
 	k_amdo = {
 		color={ 156 35 56 }
 		color2={ 255 255 255 }
 		
 		capital = 2720 # Xining
+		
+		beifanghua="Qinghai"
 		
 		d_qaidam = {
 			color={ 146 29 24 }
@@ -18,11 +22,21 @@ e_tibet = {
 			
 			capital = 2713 #Delingha
 			
+			beifanghua="Chaidamu"
+			
 			c_delingha = {
 				color={ 159 59 40 }
 				color2={ 255 255 255 }
 				
-				b_delingha = {}
+				khalkha="Delhi"
+				khorchin="Delhi"
+				oirat="Delhi"
+				
+				b_delingha = {
+					khalkha="Delhi"
+					khorchin="Delhi"
+					oirat="Delhi"
+				}
 				b_hexi = {}
 				b_hedong = {}
 				b_xinyuan = {}
@@ -34,7 +48,15 @@ e_tibet = {
 				color={ 187 42 11 }
 				color2={ 255 255 255 }
 				
-				b_golmud = {}
+				khalkha="Golmo"
+				khorchin="Golmo"
+				oirat="Golmo"
+				
+				b_golmud = {
+					khalkha="Golmo"
+					khorchin="Golmo"
+					oirat="Golmo"
+				}
 				b_hexi_2 = {}
 				b_huanghelu = {}
 				b_xizang = {}
@@ -45,6 +67,12 @@ e_tibet = {
 			c_dulan = {
 				color={ 141 56 22 }
 				color2={ 255 255 255 }
+				
+				amdowa = "Dêrlam"
+				utsang = "Dêrlam"
+				kham = "Dêrlam"
+				changpa = "Dêrlam"
+				yolmo = "Dêrlam"
 				
 				b_chahanwusu = {}
 				b_xiligou = {}
@@ -57,6 +85,12 @@ e_tibet = {
 			c_da_qaidam = {
 				color={ 125 46 63 }
 				color2={ 255 255 255 }
+				
+				amdowa = "Tatsaitan"
+				utsang = "Tatsaitan"
+				kham = "Tatsaitan"
+				changpa = "Tatsaitan"
+				yolmo = "Tatsaitan"
 				
 				b_qaidam = {}
 				b_huatugou = {}
@@ -73,11 +107,29 @@ e_tibet = {
 			
 			capital = 2717 #Yushu
 			
+				amdowa = "Tsang Sumbung"
+				utsang = "Tsang Sumbung"
+				kham = "Tsang Sumbung"
+				changpa = "Tsang Sumbung"
+				yolmo = "Tsang Sumbung"
+			
 			c_yushu = {
 				color={ 157 24 164 }
 				color2={ 255 255 255 }
 				
-				b_yushu = {}
+				amdowa = "Yüxü"
+				utsang = "Yüxü"
+				kham = "Yüxü"
+				changpa = "Yüxü"
+				yolmo = "Yüxü"
+				
+				b_yushu = {
+					amdowa = "Yüxü"
+					utsang = "Yüxü"
+					kham = "Yüxü"
+					changpa = "Yüxü"
+					yolmo = "Yüxü"
+				}
 				b_xiangda = {}
 				b_longbao = {}
 				b_jiequ = {}
@@ -89,7 +141,19 @@ e_tibet = {
 				color={ 159 95 82 }
 				color2={ 255 255 255 }
 				
-				b_tanggulashan = {}
+				amdowa = "Dangula"
+				utsang = "Dangula"
+				kham = "Dangula"
+				changpa = "Dangula"
+				yolmo = "Dangula"
+				
+				b_tanggulashan = {
+					amdowa = "Dangula"
+					utsang = "Dangula"
+					kham = "Dangula"
+					changpa = "Dangula"
+					yolmo = "Dangula"
+				}
 				b_tongtian_heyan = {}
 				b_wenquan = {}
 				b_yanshiping = {}
@@ -100,6 +164,12 @@ e_tibet = {
 			c_zadoi = {
 				color={ 166 91 150 }
 				color2={ 255 255 255 }
+				
+				amdowa = "Dzatö"
+				utsang = "Dzatö"
+				kham = "Dzatö"
+				changpa = "Dzatö"
+				yolmo = "Dzatö"
 				
 				b_qapugtang = {}
 				b_jiajiboluoge = {}
@@ -113,6 +183,8 @@ e_tibet = {
 				color={ 123 10 54 }
 				color2={ 255 255 255 }
 				
+				beifanghua = "Chenduo"
+				
 				b_chengwen = {}
 				b_zhenqin = {}
 				b_gaduo = {}
@@ -125,6 +197,13 @@ e_tibet = {
 				color={ 199 15 132 }
 				color2={ 255 255 255 }
 				
+				amdowa = "Maqên"
+				utsang = "Maqên"
+				kham = "Maqên"
+				changpa = "Maqên"
+				yolmo = "Maqên"
+				beifanghua = "Maqin"
+				
 				b_dawu = {}
 				b_lajia = {}
 				b_huashixia = {}
@@ -136,6 +215,13 @@ e_tibet = {
 			c_gade = {
 				color={ 114 23 141 }
 				color2={ 255 255 255 }
+				
+				amdowa = "Gadê"
+				utsang = "Gadê"
+				kham = "Gadê"
+				changpa = "Gadê"
+				yolmo = "Gadê"
+				beifanghua = "Gande"
 				
 				b_kequ = {}
 				b_gyumai = {}
@@ -152,12 +238,27 @@ e_tibet = {
 			
 			capital = 2720 # xining
 			
+			amdowa = "Amdo"
+			utsang = "Amdo"
+			kham = "Amdo"
+			changpa = "Amdo"
+			yolmo = "Amdo"
+			
 			c_xining = {
 				color={ 131 40 82 }
 				color2={ 255 255 255 }
 				
 				holy_site = gelugpa
 				holy_site = ngocholugspa
+				
+				amdowa = "Siling"
+				utsang = "Siling"
+				kham = "Siling"
+				changpa = "Siling"
+				yolmo = "Siling"
+				khalkha = "Seleng"
+				oirat = "Seleng"
+				khorchin="Seleng"
 				
 				b_xining = {}
 				b_ledu = {}
@@ -171,6 +272,12 @@ e_tibet = {
 				color={ 194 112 15 }
 				color2={ 255 255 255 }
 				
+				amdowa = "Cojang"
+				utsang = "Cojang"
+				kham = "Cojang"
+				changpa = "Cojang"
+				yolmo = "Cojang"
+				
 				b_haiyan = {}
 				b_babao = {}
 				b_shaliuhe = {}
@@ -182,6 +289,12 @@ e_tibet = {
 			c_hainan = {
 				color={ 100 108 43 }
 				color2={ 255 255 255 }
+				
+				amdowa = "Tsolho"
+				utsang = "Tsolho"
+				kham = "Tsolho"
+				changpa = "Tsolho"
+				yolmo = "Tsolho"
 				
 				b_qabqa = {}
 				b_heyin = {}
@@ -195,7 +308,19 @@ e_tibet = {
 				color={ 132 75 68 }
 				color2={ 255 255 255 }
 				
-				b_tongren = {}
+				amdowa = "Rebgong"
+				utsang = "Rebgong"
+				kham = "Rebgong"
+				changpa = "Rebgong"
+				yolmo = "Rebgong"
+				
+				b_tongren = {
+					amdowa = "Rebgong"
+					utsang = "Rebgong"
+					kham = "Rebgong"
+					changpa = "Rebgong"
+					yolmo = "Rebgong"
+				}
 				b_rongwu = {}
 				b_markhu_thang = {}
 				b_chak_qu = {}
@@ -211,15 +336,30 @@ e_tibet = {
 		
 		capital = 2722 #Karuo
 		
+		beifanghua = "Xikang"
+		
 		d_chamdo = {
 			color={ 121 141 103 }
 			color2={ 255 255 255 }
 			
 			capital = 2722 #Karuo
 			
+			amdowa = "Qamdo"
+			utsang = "Qamdo"
+			kham = "Qamdo"
+			changpa = "Qamdo"
+			yolmo = "Qamdo"
+			beifanghua = "Changdu"
+			
 			c_karuo = {
 				color={ 178 186 16 }
 				color2={ 255 255 255 }
+				
+				amdowa = "Kharro"
+				utsang = "Kharro"
+				kham = "Kharro"
+				changpa = "Kharro"
+				yolmo = "Kharro"
 				
 				b_chengguan = {}
 				b_karuo = {}
@@ -233,7 +373,11 @@ e_tibet = {
 				color={ 128 177 29 }
 				color2={ 255 255 255 }
 				
-				b_baxoi = {}
+				beifanghua = "Pashu"
+				
+				b_baxoi = {
+					beifanghua = "Pashu"
+				}
 				b_waxiang = {}
 				b_baima = {}
 				b_bamda = {}
@@ -245,7 +389,20 @@ e_tibet = {
 				color={ 204 195 59 }
 				color2={ 255 255 255 }
 				
-				b_dingqing = {}
+				amdowa = "Dêngqên"
+				utsang = "Dêngqên"
+				kham = "Dêngqên"
+				changpa = "Dêngqên"
+				yolmo = "Dêngqên"
+				beifanghua = "Dingqing"
+				
+				b_dingqing = {
+					amdowa = "Dêngqên"
+					utsang = "Dêngqên"
+					kham = "Dêngqên"
+					changpa = "Dêngqên"
+					yolmo = "Dêngqên"
+				}
 				b_leiwuqi = {}
 				b_jueen = {}
 				b_muta = {}
@@ -256,6 +413,8 @@ e_tibet = {
 			c_lhorong = {
 				color={ 200 243 110 }
 				color2={ 255 255 255 }
+				
+				beifanghua = "Luolong"
 				
 				b_zituo = {}
 				b_bianba = {}
@@ -273,11 +432,32 @@ e_tibet = {
 			
 			capital = 2751 #Garze
 			
+			amdowa = "Garzê"
+			utsang = "Garzê"
+			kham = "Garzê"
+			changpa = "Garzê"
+			yolmo = "Garzê"
+			beifanghua = "Ganzi"
+			
 			c_garze = {
 				color={ 158 211 68 }
 				color2={ 255 255 255 }
 				
-				b_garze = {}
+				amdowa = "Garzê"
+				utsang = "Garzê"
+				kham = "Garzê"
+				changpa = "Garzê"
+				yolmo = "Garzê"
+				beifanghua = "Ganzi"
+				
+				b_garze = {
+					amdowa = "Garzê"
+					utsang = "Garzê"
+					kham = "Garzê"
+					changpa = "Garzê"
+					yolmo = "Garzê"
+					beifanghua = "Ganzi"
+				}
 				b_seike = {}
 				b_laima = {}
 				b_nanduo = {}
@@ -288,6 +468,13 @@ e_tibet = {
 			c_serxu = {
 				color={ 123 247 57 }
 				color2={ 255 255 255 }
+				
+				amdowa = "Sêrxü"
+				utsang = "Sêrxü"
+				kham = "Sêrxü"
+				changpa = "Sêrxü"
+				yolmo = "Sêrxü"
+				beifanghua = "Shiqu"
 				
 				b_shiqu = {}
 				b_niga = {}
@@ -317,6 +504,8 @@ e_tibet = {
 			
 			capital = 2708 # Bayi
 			
+			beifanghua = "Linzhi"
+			
 			c_bayi = {
 				color={ 50 185 213 }
 				color2={ 255 255 255 }
@@ -335,7 +524,11 @@ e_tibet = {
 				color={ 56 172 241 }
 				color2={ 255 255 255 }
 				
-				b_gongbogyamda = {}
+				beifanghua = "Gongbujiangda"
+				
+				b_gongbogyamda = {
+					beifanghua = "Gongbujiangda"
+				}
 				b_jinda = {}
 				b_bahe = {}
 				b_zhula = {}
@@ -346,6 +539,8 @@ e_tibet = {
 			c_bome = {
 				color={ 41 216 184 }
 				color2={ 255 255 255 }
+				
+				beifanghua = "Bomi"
 				
 				b_zhamo = {}
 				b_medog = {}
@@ -359,7 +554,11 @@ e_tibet = {
 				color={ 103 199 246 }
 				color2={ 255 255 255 }
 				
-				b_zayu = {}
+				beifanghua = "Chayu"
+				
+				b_zayu = {
+					beifanghua = "Chayu"
+				}
 				b_dzayul = {}
 				b_puzang = {}
 				b_golag = {}
@@ -376,11 +575,15 @@ e_tibet = {
 		
 		capital = 2702 #Lhasa
 		
+		beifanghua = "Xizang"
+		
 		d_lhasa = {
 			color={ 16 153 199 }
 			color2={ 255 255 255 }
 			
 			capital = 2702 # Lhasa
+			
+			beifanghua = "Lasa"
 			
 			c_lhasa = {
 				color={ 57 100 205 }
@@ -390,7 +593,11 @@ e_tibet = {
 				holy_site = ngocholugspa
 				holy_site = rime
 				
-				b_lhasa = {}
+				beifanghua = "Lasa"
+				
+				b_lhasa = {
+					beifanghua = "Lasa"
+				}
 				b_pargor = {}
 				b_deqen = {}
 				b_ganden_chokhor = {}
@@ -401,6 +608,8 @@ e_tibet = {
 			c_doilungdeqen = {
 				color={ 11 86 187 }
 				color2={ 255 255 255 }
+				
+				beifanghua = "Duilongdeqing"
 				
 				b_donggar = {}
 				b_damquka = {}
@@ -414,7 +623,11 @@ e_tibet = {
 				color={ 43 124 245 }
 				color2={ 255 255 255 }
 				
-				b_nedong = {}
+				beifanghua = "Naidong"
+				
+				b_nedong = {
+					beifanghua = "Naidong"
+				}
 				b_qusum = {}
 				b_sangri = {}
 				b_changzu = {}
@@ -426,7 +639,11 @@ e_tibet = {
 				color={ 76 146 213 }
 				color2={ 255 255 255 }
 				
-				b_lhunze = {}
+				beifanghua = "Longzi"
+				
+				b_lhunze = {
+					beifanghua = "Longzi"
+				}
 				b_cona = {}
 				b_sangnag_choling = {}
 				b_migyutin = {}
@@ -440,7 +657,11 @@ e_tibet = {
 				
 				holy_site = rime
 				
-				b_gonggar = {}
+				beifanghua = "Gongga"
+				
+				b_gonggar = {
+					beifanghua = "Gongga"
+				}
 				b_qonggyai = {}
 				b_gyazhugling = {}
 				b_gyaideshiu = {}
@@ -452,7 +673,11 @@ e_tibet = {
 				color={ 24 74 158 }
 				color2={ 255 255 255 }
 				
-				b_nagarze = {}
+				beifanghua = "Langkazi"
+				
+				b_nagarze = {
+					beifanghua = "Langkazi"
+				}
 				b_zuidui = {}
 				b_langkazi = {}
 				b_baidi = {}
@@ -467,9 +692,13 @@ e_tibet = {
 			
 			capital = 2689 # Samzhubze
 			
+			beifanghua = "Rikaze"
+			
 			c_samzhubze = {
 				color={ 111 134 236 }
 				color2={ 255 255 255 }
+				
+				beifanghua = "Rikaze"
 				
 				holy_site = gelugpa
 				holy_site = rime
@@ -487,7 +716,11 @@ e_tibet = {
 				color={ 85 161 198 }
 				color2={ 255 255 255 }
 				
-				b_gyangze = {}
+				beifanghua = "Jiangzi"
+				
+				b_gyangze = {
+					beifanghua = "Jiangzi"
+				}
 				b_kangmar = {}
 				b_norbu_khyuntse = {}
 				b_lungmar = {}
@@ -499,7 +732,11 @@ e_tibet = {
 				color={ 127 143 209 }
 				color2={ 255 255 255 }
 				
-				b_sagya = {}
+				beifanghua = "Sajia"
+				
+				b_sagya = {
+					beifanghua = "Sajia"
+				}
 				b_kamba = {}
 				b_geding = {}
 				b_gyankar = {}
@@ -511,7 +748,11 @@ e_tibet = {
 				color={ 171 164 229 }
 				color2={ 255 255 255 }
 				
-				b_lhaze = {}
+				beifanghua = "Lazi"
+				
+				b_lhaze = {
+					beifanghua = "Lazi"
+				}
 				b_chau = {}
 				b_quxar = {}
 				b_resa = {}
@@ -530,7 +771,11 @@ e_tibet = {
 				color={ 23 44 206 }
 				color2={ 255 255 255 }
 				
-				b_nyalam = {}
+				beifanghua = "Nielamu"
+				
+				b_nyalam = {
+					beifanghua = "Nielamu"
+				}
 				b_zongga = {}
 				b_dram = {}
 				b_saga_2 = {}
@@ -541,6 +786,8 @@ e_tibet = {
 			c_tingri = {
 				color={ 13 53 157 }
 				color2={ 255 255 255 }
+				
+				beifanghua = "Dingri"
 				
 				b_xigaze = {}
 				b_cogo = {}
@@ -554,7 +801,11 @@ e_tibet = {
 				color={ 46 31 200 }
 				color2={ 255 255 255 }
 				
-				b_coqen = {}
+				beifanghua = "Cuoqin"
+				
+				b_coqen = {
+					beifanghua = "Cuoqin"
+				}
 				b_quluo = {}
 				b_asog = {}
 				b_cishi = {}
@@ -565,6 +816,8 @@ e_tibet = {
 			c_ngamring = {
 				color={ 96 90 196 }
 				color2={ 255 255 255 }
+				
+				beifanghua = "Angren"
 				
 				b_kagar = {}
 				b_sangsang = {}
@@ -581,9 +834,13 @@ e_tibet = {
 			
 			capital = 2685 # Gerze
 			
+			beifanghua = "Qiangtang"
+			
 			c_gerze = {
 				color={ 103 122 204 }
 				color2={ 255 255 255 }
+				
+				beifanghua = "Gaize"
 				
 				b_gerze_2 = {}
 				b_marme = {}
@@ -597,6 +854,8 @@ e_tibet = {
 				color={ 185 102 152 }
 				color2={ 255 255 255 }
 				
+				uighur = "Aqsai Chöl"
+				
 				b_tianshuilhai = {}
 				b_kizilyeza = {}
 				b_dahongluitan = {}
@@ -609,7 +868,11 @@ e_tibet = {
 				color={ 135 100 159 }
 				color2={ 255 255 255 }
 				
-				b_rutog = {}
+				beifanghua = "Ritu"
+				
+				b_rutog = {
+					beifanghua = "Ritu"
+				}
 				b_rabang = {}
 				b_tungru = {}
 				b_risum = {}
@@ -620,6 +883,12 @@ e_tibet = {
 			c_shuanghu = {
 				color={ 18 19 144 }
 				color2={ 255 255 255 }
+				
+				amdowa = "Conyi"
+				kham = "Conyi"
+				utsang = "Conyi"
+				changpa = "Conyi"
+				yolmo = "Conyi"
 				
 				b_cozhelhoma = {}
 				b_garco = {}
@@ -633,7 +902,11 @@ e_tibet = {
 				color={ 103 56 113 }
 				color2={ 255 255 255 }
 				
-				b_nyima = {}
+				beifanghua = "Nima"
+				
+				b_nyima = {
+					beifanghua = "Nima"
+				}
 				b_dagou = {}
 				b_shenya = {}
 				b_zhuomi = {}
@@ -648,11 +921,21 @@ e_tibet = {
 			
 			capital = 2686 # Gar
 			
+			beifanghua = "Ali"
+			
 			c_gar = {
 				color={ 42 15 201 }
 				color2={ 255 255 255 }
 				
-				b_shiquanhe = {}
+				beifanghua = "Ga'er"
+				
+				b_shiquanhe = {
+					amdowa = "Sênggêkanbab"
+					kham = "Sênggêkanbab"
+					utsang = "Sênggêkanbab"
+					changpa = "Sênggêkanbab"
+					yolmo = "Sênggêkanbab"
+				}
 				b_tuolin = {}
 				b_menshi = {}
 				b_kunsha = {}
@@ -664,7 +947,11 @@ e_tibet = {
 				color={ 12 17 169 }
 				color2={ 255 255 255 }
 				
-				b_gegyai = {}
+				beifanghua = "Geji"
+				
+				b_gegyai = {
+					beifanghua = "Geji"
+				}
 				b_yare = {}
 				b_xiongba = {}
 				b_napu = {}
@@ -677,6 +964,7 @@ e_tibet = {
 				color2={ 255 255 255 }
 				
 				nepali = "Taklakot"
+				beifanghua = "Pulan"
 				
 				holy_site = rime
 				holy_site = gelugpa
@@ -684,6 +972,7 @@ e_tibet = {
 				
 				b_burang = {
 					nepali = "Taklakot"
+					beifanghua = "Pulan"
 				}
 				b_parga = {}
 				b_hor = {}
@@ -711,9 +1000,13 @@ e_tibet = {
 			
 			capital = 2705 # Seni
 			
+			beifanghua = "Heihe"
+			
 			c_baingoin = {
 				color={ 85 12 153 }
 				color2={ 255 255 255 }
+				
+				beifanghua = "Bange"
 				
 				b_pubao = {}
 				b_pagnag = {}
@@ -739,7 +1032,11 @@ e_tibet = {
 				color={ 15 87 146 }
 				color2={ 255 255 255 }
 				
-				b_baqen = {}
+				beifanghua = "Baqing"
+				
+				b_baqen = {
+					beifanghua = "Baqing"
+				}
 				b_sog = {}
 				b_yala = {}
 				b_laxing = {}
