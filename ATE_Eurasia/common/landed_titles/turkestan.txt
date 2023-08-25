@@ -2673,7 +2673,6 @@ e_turkestan = {
 				color2={ 255 255 255 }
 				
 				b_niye = {}
-				b_kuqa_2 = {}
 				b_rokiya = {}
 				b_salgozek = {}
 				b_yeyik = {}
@@ -2699,9 +2698,11 @@ e_turkestan = {
 			
 			capital = 1264 #Korla
 			
+			beifanghua = "Gaochang"
 			khalkha="Bayangol"
 			khorchin="Bayangol"
 			oirat="Bayangol"
+			uighur="Idiqut"
 			
 			c_korla = {
 				color={ 157 195 84 }
@@ -2741,29 +2742,30 @@ e_turkestan = {
 				color={ 185 118 114 }
 				color2={ 255 255 255 }
 				
-				b_charklik = {}
+				beifanghua = "Ruoqiang"
+				
+				b_charklik = {
+					beifanghua = "Ruoqiang"
+				}
 				b_waxxari = {}
 				b_yetimbulak = {}
-				b_tiegenlike = {}
 				b_tomolog = {}
-				b_lop_nur = {}
 				b_qimantag = {}
 				b_shimiankuang = {}
-				b_yitunbulakezhen = {}
 				b_tiemulike = {}
-				b_mangaizhen = {}
-				b_qimantage = {}
-				b_dongluk = {}
-				b_hongliugou = {}
 			}
 			c_qarqan = {
 				color={ 225 195 98 }
 				color2={ 255 255 255 }
 				
-				b_qarqan = {}
+				beifanghua = "Shanshan"
+				
+				b_qarqan = {
+					beifanghua = "Shanshan"
+				}
 				b_tatirang = {}
 				b_aqqan = {}
-				b_aral_2 = {}
+				b_hongliugou = {}
 				b_bage_airike = {}
 				b_aoyiya_yilake = {}
 				b_qiongkule = {}
@@ -2781,7 +2783,7 @@ e_turkestan = {
 				b_xingping = {}
 				b_bumbut = {}
 				b_tuanjie = {}
-				b_tarim_2 = {}
+				b_dongluk = {}
 				b_qakannur = {}
 				b_qekinnur = {}
 			}
