@@ -73,124 +73,92 @@ nomadic_elective = {
 		}
 
 
-		#The Electors: General modifiers.
-		additive_modifier = { #Prestigious people hold more sway.
+		# The Electors: General modifiers
+		additive_modifier = { # Prestigious people hold more sway
 			value = 5
 			localisation_key = tooltip_imperial_vote_strength_elector_prestige
+
 			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			prestige = 100
-			NOT = { prestige = 300 }
+			prestige >= 100
+			prestige < 300
 		}
+
 		additive_modifier = {
 			value = 10
 			localisation_key = tooltip_imperial_vote_strength_elector_prestige
+
 			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			prestige = 300
-			NOT = { prestige = 700 }
+			prestige >= 300
+			prestige < 700
 		}
+
 		additive_modifier = {
 			value = 15
 			localisation_key = tooltip_imperial_vote_strength_elector_prestige
+
 			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			prestige = 700
-			NOT = { prestige = 1000 }
+			prestige >= 700
+			prestige < 1000
 		}
+
 		additive_modifier = {
 			value = 20
 			localisation_key = tooltip_imperial_vote_strength_elector_prestige
+
 			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			prestige = 1000
-			NOT = { prestige = 1500 }
+			prestige >= 1000
+			prestige < 1500
 		}
+
 		additive_modifier = {
 			value = 25
 			localisation_key = tooltip_imperial_vote_strength_elector_prestige
+
 			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			prestige = 1500
-			NOT = { prestige = 2000 }
+			prestige >= 1500
+			prestige < 2000
 		}
+
 		additive_modifier = {
 			value = 30
 			localisation_key = tooltip_imperial_vote_strength_elector_prestige
+
 			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			prestige = 2000
-			NOT = { prestige = 5000 }
+			prestige >= 2000
+			prestige < 5000
 		}
+
 		additive_modifier = {
 			value = 40
 			localisation_key = tooltip_imperial_vote_strength_elector_prestige
+
 			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			prestige = 5000
+			prestige >= 5000
 		}
-		additive_modifier = { #Powerful people can pull strings.
+
+		# Powerful people can pull strings
+		additive_modifier = {
 			value = 5
 			localisation_key = tooltip_imperial_vote_strength_elector_tier
+
 			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			higher_tier_than = BARON
-			lower_tier_than = DUKE
+			real_tier = COUNT
 		}
-		additive_modifier = { #Powerful people can pull strings.
+
+		additive_modifier = {
 			value = 10
 			localisation_key = tooltip_imperial_vote_strength_elector_high_tier
+
 			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			higher_tier_than = COUNT
-			lower_tier_than = KING
+			real_tier = DUKE
 		}
-		additive_modifier = { #Powerful people can pull strings.
+
+		additive_modifier = {
 			value = 15
 			localisation_key = tooltip_imperial_vote_strength_elector_high_tier
+
 			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			higher_tier_than = DUKE
+			real_tier = KING
 		}
 		additive_modifier = { #Powerful people can pull strings.
 			value = 15
@@ -203,620 +171,477 @@ nomadic_elective = {
 			}
 			relative_power_to_liege >= 0.7
 		}
-		additive_modifier = { #The Martial has disproportionate influence
+		# Martial increases a commander's influence
+		additive_modifier = {
 			value = 10
 			localisation_key = tooltip_imperial_vote_strength_commander_martial
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
+
+			OR = {
+				has_minor_title = title_commander
+				has_job_title = job_marshal
 			}
-			martial = 8
-			NOT = { martial = 10 }
-			has_job_title = job_marshal
+
+			martial >= 8
+			martial < 10
 		}
-		additive_modifier = { #The Martial has disproportionate influence
+
+		additive_modifier = {
 			value = 15
 			localisation_key = tooltip_imperial_vote_strength_commander_martial
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
+
+			OR = {
+				has_minor_title = title_commander
+				has_job_title = job_marshal
 			}
-			martial = 10
-			NOT = { martial = 12 }
-			has_job_title = job_marshal
+
+			martial >= 10
+			martial < 12
 		}
-		additive_modifier = { #The Martial has disproportionate influence
+
+		additive_modifier = {
 			value = 20
 			localisation_key = tooltip_imperial_vote_strength_commander_martial
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
+
+			OR = {
+				has_minor_title = title_commander
+				has_job_title = job_marshal
 			}
-			martial = 12
-			NOT = { martial = 14 }
-			has_job_title = job_marshal
+
+			martial >= 12
+			martial < 14
 		}
-		additive_modifier = { #The Martial has disproportionate influence
+
+		additive_modifier = {
 			value = 25
 			localisation_key = tooltip_imperial_vote_strength_commander_martial
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
+
+			OR = {
+				has_minor_title = title_commander
+				has_job_title = job_marshal
 			}
-			martial = 14
-			NOT = { martial = 16 }
-			has_job_title = job_marshal
+
+			martial >= 14
+			martial < 16
 		}
-		additive_modifier = { #The Martial has disproportionate influence
+
+		additive_modifier = {
 			value = 30
 			localisation_key = tooltip_imperial_vote_strength_commander_martial
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
+
+			OR = {
+				has_minor_title = title_commander
+				has_job_title = job_marshal
 			}
-			martial = 16
-			NOT = { martial = 18 }
-			has_job_title = job_marshal
+
+			martial >= 16
+			martial < 18
 		}
-		additive_modifier = { #The Martial has disproportionate influence
+
+		additive_modifier = {
 			value = 35
 			localisation_key = tooltip_imperial_vote_strength_commander_martial
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
+
+			OR = {
+				has_minor_title = title_commander
+				has_job_title = job_marshal
 			}
-			martial = 18
-			NOT = { martial = 20 }
-			has_job_title = job_marshal
+
+			martial >= 18
+			martial < 20
 		}
-		additive_modifier = { #The Martial has disproportionate influence
+
+		additive_modifier = {
 			value = 40
 			localisation_key = tooltip_imperial_vote_strength_commander_martial
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
+
+			OR = {
+				has_minor_title = title_commander
+				has_job_title = job_marshal
 			}
-			martial = 20
-			NOT = { martial = 25 }
-			has_job_title = job_marshal
+
+			martial >= 20
+			martial < 25
 		}
-		additive_modifier = { #The Martial has disproportionate influence
+
+		additive_modifier = {
 			value = 50
 			localisation_key = tooltip_imperial_vote_strength_commander_martial
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
+
+			OR = {
+				has_minor_title = title_commander
+				has_job_title = job_marshal
 			}
-			martial = 25
-			NOT = { martial = 30 }
-			has_job_title = job_marshal
+
+			martial >= 25
+			martial < 30
 		}
-		additive_modifier = { #The Martial has disproportionate influence
+
+		additive_modifier = {
 			value = 65
 			localisation_key = tooltip_imperial_vote_strength_commander_martial
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
+
+			OR = {
+				has_minor_title = title_commander
+				has_job_title = job_marshal
 			}
-			martial = 30
-			has_job_title = job_marshal
+
+			martial >= 30
 		}
 
 		################################################################################
 
-		additive_modifier = { #Diplomacy increases the Chancellor's influence.
+		# Diplomacy increases the Chancellor's influence
+		additive_modifier = {
 			value = 10
 			localisation_key = tooltip_imperial_vote_strength_chancellor_diplomacy
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			diplomacy = 8
-			NOT = { diplomacy = 10 }
+
 			has_job_title = job_chancellor
+			diplomacy >= 8
+			diplomacy < 10
 		}
-		additive_modifier = { #Diplomacy increases the Chancellor's influence.
+
+		additive_modifier = { #Diplomacy increases the Chancellor's influence
 			value = 15
 			localisation_key = tooltip_imperial_vote_strength_chancellor_diplomacy
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			diplomacy = 10
-			NOT = { diplomacy = 12 }
+
 			has_job_title = job_chancellor
+			diplomacy >= 10
+			diplomacy < 12
 		}
+
 		additive_modifier = { #Diplomacy increases the Chancellor's influence.
 			value = 20
 			localisation_key = tooltip_imperial_vote_strength_chancellor_diplomacy
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			diplomacy = 12
-			NOT = { diplomacy = 14 }
+
 			has_job_title = job_chancellor
+			diplomacy >= 12
+			diplomacy < 14
 		}
+
 		additive_modifier = { #Diplomacy increases the Chancellor's influence.
 			value = 25
 			localisation_key = tooltip_imperial_vote_strength_chancellor_diplomacy
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			diplomacy = 14
-			NOT = { diplomacy = 16 }
+
 			has_job_title = job_chancellor
+			diplomacy >= 14
+			diplomacy < 16
 		}
+
 		additive_modifier = { #Diplomacy increases the Chancellor's influence.
 			value = 30
 			localisation_key = tooltip_imperial_vote_strength_chancellor_diplomacy
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			diplomacy = 16
-			NOT = { diplomacy = 18 }
+
 			has_job_title = job_chancellor
+			diplomacy >= 16
+			diplomacy < 18
 		}
+
 		additive_modifier = { #Diplomacy increases the Chancellor's influence.
 			value = 35
 			localisation_key = tooltip_imperial_vote_strength_chancellor_diplomacy
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			diplomacy = 18
-			NOT = { diplomacy = 20 }
+
 			has_job_title = job_chancellor
+			diplomacy >= 18
+			diplomacy < 20
 		}
+
 		additive_modifier = { #Diplomacy increases the Chancellor's influence.
 			value = 40
 			localisation_key = tooltip_imperial_vote_strength_chancellor_diplomacy
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			diplomacy = 20
-			NOT = { diplomacy = 25 }
+
 			has_job_title = job_chancellor
+			diplomacy >= 20
+			diplomacy < 25
 		}
+
 		additive_modifier = { #Diplomacy increases the Chancellor's influence.
 			value = 50
 			localisation_key = tooltip_imperial_vote_strength_chancellor_diplomacy
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			diplomacy = 25
-			NOT = { diplomacy = 30 }
+
 			has_job_title = job_chancellor
+			diplomacy >= 25
+			diplomacy < 30
 		}
+
 		additive_modifier = { #Diplomacy increases the Chancellor's influence.
 			value = 65
 			localisation_key = tooltip_imperial_vote_strength_chancellor_diplomacy
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			diplomacy = 30
+
 			has_job_title = job_chancellor
+			diplomacy >= 30
 		}
+
 		################################################################################
 
-		additive_modifier = { #Stewardship increases the Steward's influence.
+		# Stewardship increases the Steward's influence
+		additive_modifier = {
 			value = 10
 			localisation_key = tooltip_imperial_vote_strength_steward_stewardship
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			stewardship = 8
-			NOT = { stewardship = 10 }
+
 			has_job_title = job_treasurer
+			stewardship >= 8
+			stewardship < 10
 		}
-		additive_modifier = { #Stewardship increases the Steward's influence.
+
+		additive_modifier = {
 			value = 15
 			localisation_key = tooltip_imperial_vote_strength_steward_stewardship
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			stewardship = 10
-			NOT = { stewardship = 12 }
+
 			has_job_title = job_treasurer
+			stewardship >= 10
+			stewardship < 12
 		}
-		additive_modifier = { #Stewardship increases the Steward's influence.
+
+		additive_modifier = {
 			value = 20
 			localisation_key = tooltip_imperial_vote_strength_steward_stewardship
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			stewardship = 12
-			NOT = { stewardship = 14 }
+
 			has_job_title = job_treasurer
+			stewardship >= 12
+			stewardship < 14
 		}
-		additive_modifier = { #Stewardship increases the Steward's influence.
+
+		additive_modifier = {
 			value = 25
 			localisation_key = tooltip_imperial_vote_strength_steward_stewardship
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			stewardship = 14
-			NOT = { stewardship = 16 }
+
 			has_job_title = job_treasurer
+			stewardship >= 14
+			stewardship < 16
 		}
-		additive_modifier = { #Stewardship increases the Steward's influence.
+
+		additive_modifier = {
 			value = 30
 			localisation_key = tooltip_imperial_vote_strength_steward_stewardship
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			stewardship = 16
-			NOT = { stewardship = 18 }
+
 			has_job_title = job_treasurer
+			stewardship >= 16
+			stewardship < 18
 		}
-		additive_modifier = { #Stewardship increases the Steward's influence.
+
+		additive_modifier = {
 			value = 35
 			localisation_key = tooltip_imperial_vote_strength_steward_stewardship
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			stewardship = 18
-			NOT = { stewardship = 20 }
+
 			has_job_title = job_treasurer
+			stewardship >= 18
+			stewardship < 20
 		}
-		additive_modifier = { #Stewardship increases the Steward's influence.
+
+		additive_modifier = {
 			value = 40
 			localisation_key = tooltip_imperial_vote_strength_steward_stewardship
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			stewardship = 20
-			NOT = { stewardship = 25 }
+
 			has_job_title = job_treasurer
+			stewardship >= 20
+			stewardship < 25
 		}
-		additive_modifier = { #Stewardship increases the Steward's influence.
+
+		additive_modifier = {
 			value = 50
 			localisation_key = tooltip_imperial_vote_strength_steward_stewardship
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			stewardship = 25
-			NOT = { stewardship = 30 }
+
 			has_job_title = job_treasurer
+			stewardship >= 25
+			stewardship < 30
 		}
-		additive_modifier = { #Stewardship increases the Steward's influence.
+
+		additive_modifier = {
 			value = 65
 			localisation_key = tooltip_imperial_vote_strength_steward_stewardship
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			stewardship = 30
+
 			has_job_title = job_treasurer
+			stewardship >= 30
 		}
+
 		################################################################################
 
-		additive_modifier = { #Intrigue increases the Spymaster's influence.
+		# Intrigue increases the Spymaster's influence
+		additive_modifier = {
 			value = 10
 			localisation_key = tooltip_imperial_vote_strength_spymaster_intrigue
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			intrigue = 8
-			NOT = { intrigue = 10 }
+
 			has_job_title = job_spymaster
+			intrigue >= 8
+			intrigue < 10
 		}
-		additive_modifier = { #Intrigue increases the Spymaster's influence.
+
+		additive_modifier = {
 			value = 15
 			localisation_key = tooltip_imperial_vote_strength_spymaster_intrigue
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			intrigue = 10
-			NOT = { intrigue = 12 }
+
 			has_job_title = job_spymaster
+			intrigue >= 10
+			intrigue < 12
 		}
-		additive_modifier = { #Intrigue increases the Spymaster's influence.
+
+		additive_modifier = {
 			value = 20
 			localisation_key = tooltip_imperial_vote_strength_spymaster_intrigue
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			intrigue = 12
-			NOT = { intrigue = 14 }
+
 			has_job_title = job_spymaster
+			intrigue >= 12
+			intrigue < 14
 		}
-		additive_modifier = { #Intrigue increases the Spymaster's influence.
+
+		additive_modifier = {
 			value = 25
 			localisation_key = tooltip_imperial_vote_strength_spymaster_intrigue
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			intrigue = 14
-			NOT = { intrigue = 16 }
+
 			has_job_title = job_spymaster
+			intrigue >= 14
+			intrigue < 16
 		}
-		additive_modifier = { #Intrigue increases the Spymaster's influence.
+
+		additive_modifier = {
 			value = 30
 			localisation_key = tooltip_imperial_vote_strength_spymaster_intrigue
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			intrigue = 16
-			NOT = { intrigue = 18 }
+
 			has_job_title = job_spymaster
+			intrigue >= 16
+			intrigue < 18
 		}
-		additive_modifier = { #Intrigue increases the Spymaster's influence.
+
+		additive_modifier = {
 			value = 35
 			localisation_key = tooltip_imperial_vote_strength_spymaster_intrigue
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			intrigue = 18
-			NOT = { intrigue = 20 }
+
 			has_job_title = job_spymaster
+			intrigue >= 18
+			intrigue < 20
 		}
-		additive_modifier = { #Intrigue increases the Spymaster's influence.
+
+		additive_modifier = {
 			value = 40
 			localisation_key = tooltip_imperial_vote_strength_spymaster_intrigue
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			intrigue = 20
-			NOT = { intrigue = 25 }
+
 			has_job_title = job_spymaster
+			intrigue >= 20
+			intrigue < 25
 		}
-		additive_modifier = { #Intrigue increases the Spymaster's influence.
+
+		additive_modifier = {
 			value = 50
 			localisation_key = tooltip_imperial_vote_strength_spymaster_intrigue
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			intrigue = 25
-			NOT = { intrigue = 30 }
+
 			has_job_title = job_spymaster
+			intrigue >= 25
+			intrigue < 30
 		}
-		additive_modifier = { #Intrigue increases the Spymaster's influence.
+
+		additive_modifier = {
 			value = 65
 			localisation_key = tooltip_imperial_vote_strength_spymaster_intrigue
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			intrigue = 30
+
 			has_job_title = job_spymaster
+			intrigue >= 30
 		}
+
 		################################################################################
 
-		additive_modifier = { #Learning increases the Chaplain's influence.
+		# Learning increases the Chaplain's influence
+		additive_modifier = {
 			value = 10
 			localisation_key = tooltip_imperial_vote_strength_chaplain_learning
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			learning = 8
-			NOT = { learning = 10 }
+
 			has_job_title = job_spiritual
+			learning >= 8
+			learning < 10
 		}
-		additive_modifier = { #Learning increases the Chaplain's influence.
+
+		additive_modifier = {
 			value = 15
 			localisation_key = tooltip_imperial_vote_strength_chaplain_learning
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			learning = 10
-			NOT = { learning = 12 }
+
 			has_job_title = job_spiritual
+			learning >= 10
+			learning < 12
 		}
-		additive_modifier = { #Learning increases the Chaplain's influence.
+
+		additive_modifier = {
 			value = 20
 			localisation_key = tooltip_imperial_vote_strength_chaplain_learning
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			learning = 12
-			NOT = { learning = 14 }
+
 			has_job_title = job_spiritual
+			learning >= 12
+			learning < 14
 		}
-		additive_modifier = { #Learning increases the Chaplain's influence.
+
+		additive_modifier = {
 			value = 25
 			localisation_key = tooltip_imperial_vote_strength_chaplain_learning
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			learning = 14
-			NOT = { learning = 16 }
+
 			has_job_title = job_spiritual
+			learning >= 14
+			learning < 16
 		}
-		additive_modifier = { #Learning increases the Chaplain's influence.
+
+		additive_modifier = {
 			value = 30
 			localisation_key = tooltip_imperial_vote_strength_chaplain_learning
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			learning = 16
-			NOT = { learning = 18 }
+
 			has_job_title = job_spiritual
+			learning >= 16
+			learning < 18
 		}
-		additive_modifier = { #Learning increases the Chaplain's influence.
+
+		additive_modifier = {
 			value = 35
 			localisation_key = tooltip_imperial_vote_strength_chaplain_learning
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			learning = 18
-			NOT = { learning = 20 }
+
 			has_job_title = job_spiritual
+			learning >= 18
+			learning < 20
 		}
-		additive_modifier = { #Learning increases the Chaplain's influence.
+
+		additive_modifier = {
 			value = 40
 			localisation_key = tooltip_imperial_vote_strength_chaplain_learning
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			learning = 20
-			NOT = { learning = 25 }
+
 			has_job_title = job_spiritual
+			learning >= 20
+			learning < 25
 		}
-		additive_modifier = { #Learning increases the Chaplain's influence.
+
+		additive_modifier = {
 			value = 50
 			localisation_key = tooltip_imperial_vote_strength_chaplain_learning
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			learning = 25
-			NOT = { learning = 30 }
+
 			has_job_title = job_spiritual
+			learning >= 25
+			learning < 30
 		}
-		additive_modifier = { #Learning increases the Chaplain's influence.
+
+		additive_modifier = {
 			value = 65
 			localisation_key = tooltip_imperial_vote_strength_chaplain_learning
-			vassal_of = FROMFROM
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
-				}
-			}
-			learning = 30
+
 			has_job_title = job_spiritual
+			learning >= 30
 		}
-		additive_modifier = { #Chaplain is also the head of the ruling religion.
+		# Chaplain is also the head of the ruling religion
+		additive_modifier = {
 			value = 15
 			localisation_key = tooltip_imperial_vote_strength_chaplain_patriarch
-			vassal_of = FROMFROM
+
+			has_job_title = job_spiritual
+			controls_religion = yes
+
 			FROMFROM = {
-				holder_scope = { religion = ROOT }
-			}
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
+				holder_scope = {
+					religion = ROOT
 				}
 			}
-			primary_title = { controls_religion = yes }
-			has_job_title = job_spiritual
 		}
-		additive_modifier = { #Spouse Bonus
+
+		# Spouse Bonus
+		additive_modifier = {
 			value = 30
 			localisation_key = tooltip_imperial_vote_strength_spouse
-			vassal_of = FROMFROM
+
 			FROMFROM = {
-				holder_scope = { is_married = ROOT }
-			}
-			NOT = {
-				FROMFROM = {
-					holder_scope = { character = ROOT }
+				holder_scope = {
+					is_married = ROOT
 				}
 			}
 		}

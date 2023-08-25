@@ -66,18 +66,6 @@ decisions = {
 			}
 			modifier = {
 				factor = 2
-				OR = {
-				z_master_martial = yes
-				z_renowned_martial = yes
-				z_legendary_martial = yes
-				}
-			}
-			modifier = {
-				factor = 1.5
-				z_expert_martial = yes
-			}
-			modifier = {
-				factor = 2
 				trait = brilliant_strategist
 			}
 			modifier = {
@@ -91,19 +79,6 @@ decisions = {
 				}
 			}
 			modifier = {
-				factor = 1.5
-				AND = {
-					trait = zealous
-					OR = {
-						religion_group  = wild_human_pantheon_group
-						religion_group  = evil_human_pantheon_group
-						religion_group  = giant_pantheon_group
-						religion_group  = pagan_group
-						religion = urdlen
-					}
-				}
-			}
-			modifier = {
 				factor = 0
 				OR = {
 				trait = content
@@ -112,10 +87,6 @@ decisions = {
 				trait = craven
 				trait = shy
 				}
-			}
-			modifier = {
-				factor = 2
-				evilcat_is_chosen = yes
 			}
 		}
 	}
