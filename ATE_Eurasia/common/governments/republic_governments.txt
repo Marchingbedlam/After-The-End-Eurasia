@@ -349,7 +349,7 @@ republic_governments = {
 		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
 			tribal_government
 		}
-		frame_suffix = "_romanimperial"
+		frame_suffix = "_ethiopian_governorate"
 		potential = {
 			is_offmap_tag = offmap_ethiopia
 		}
@@ -454,7 +454,7 @@ republic_governments = {
 			tribal_government
 			nomadic_tribal_government
 		}
-		frame_suffix = "_hereditarytheocracy"
+		frame_suffix = "_ethiopia"
 		potential = {
 			is_offmap_tag = offmap_ethiopia
 		}
