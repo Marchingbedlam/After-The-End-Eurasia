@@ -1,0 +1,1841 @@
+#This event is based on the Rust Cultist Expedition
+#==================================================
+# 1		description of terma expedition, choose random location
+# 2		[hidden] prov bounceback selecting location
+# 3		describe selected site, accept or reject it
+# 4		[hidden] prov bounceback while prepping
+# 5		set out to the prov, or keep making more preparations
+# 10	[hidden] determine whether there will be trouble in the province, or get competing agent event
+# 11	[hidden] no problems in the province, buffer event
+# 12	unfriendly locals in the province
+# 13	province owner reacts to conflict in his lands
+# 14	conflict solved peacefully
+# 15	conflict erupts into violence
+# 16 	you have been driven out of the province by angry locals
+# 20	[hidden] determine quality of terma to be found in province, also collapse event
+# 21	poor terma
+# 22	medium terma
+# 23	great terma
+# 24	meet competing agent of unknown rust cultist (add function to actually choose a lord later?)
+# 26	ruins collapse during exploration
+# 40	find conch_shell
+# 41	find tokens
+# 42	find herbs
+# 43	find boddhi statue
+# 44-49	* reserved for more low tier non-reliquary finds *
+# 50	find lonesome reliquary
+# 51	find jewellery
+# 52	---EVENT DELETED---
+# 53	find paintings
+# 54	find bells
+# 55	find boddhi statue
+# 56	prize: dharma wheel
+# 57	repair dharma wheel
+# 58	hidden sutra event
+# 59	* reserved for another tier reliquary artifact *
+# 60	prize: damaru
+# 61	prize: khata
+# 62	prize: tunderbolt
+# 63	prize: amulet
+# 64	prize: cymbals
+# 65	prize: hidden sutra
+# 70	repair damaru
+# 71	repair khata
+# 72	repair tunderbolt
+# 73	repair amulet
+# 74	repair cymbals
+# 75	repair hidden sutra
+# 79	fail to understand/repair something
+# 90	expedition is a failure
+# 91	expedition is a wash: small reward
+# 92	expedition is a wash: medium reward
+# 94	expedition is a success
+# 95	clean up flags
+# 120	[hidden] helper event for randomly finding terma
+# 121	[hidden] helper prov event for randomly finding terma
+# 130	damaru combat event
+# 131	khata event
+# 132	tunderbolt event
+# 133	pocket amulet event
+# 134	cymbals event
+# 135	hidden sutra event
+
+namespace = terma
+
+# ************************* Salvage Expedition ************************
+
+narrative_event = {
+	id = terma.1
+	title = EVTNAME_terma_describe
+	desc = EVTDESC_terma_describe
+	picture = GFX_evt_pilgrims_epic_journey
+
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPT_terma_describe
+		trigger = {
+			num_of_count_titles = 1
+		}
+		hidden_tooltip = {
+			random_realm_province = {
+				random_neighbor_province = {
+					province_event = { id = terma.2 days = 3 random = 5 }
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPT_terma_describe
+		trigger = {
+			NOT = { num_of_count_titles = 1 }
+		}
+		hidden_tooltip = {
+			liege = {
+				random_realm_province = {
+					random_neighbor_province = {
+						province_event = { id = terma.2 days = 3 random = 5 }
+					}
+				}
+			}
+		}
+	}
+}
+
+province_event = {
+	id = terma.2
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = { FROM = { narrative_event = { id = terma.3 } } }
+	option = { }
+}
+
+narrative_event = {
+	id = terma.3
+	title = EVTNAME_terma_describe
+	desc = EVTDESC_terma_choosesite
+	picture = GFX_evt_pilgrims_epic_journey
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTDESC_terma_choosesite_accept
+		FROM = { province_event = { id = terma.4 days = 3 random = 5 } }
+	}
+	
+	option = {
+		name = EVTDESC_terma_choosesite_reject
+		random = { chance = 10 }
+		random_realm_province = {
+			random_neighbor_province = {
+				province_event = { id = terma.2 days = 3 random = 5 }
+			}
+		}
+	}
+}
+
+province_event = {
+	id = terma.4
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = { FROM = { narrative_event = { id = terma.5 } } }
+	option = { }
+}
+
+narrative_event = {
+	id = terma.5
+	title = EVTNAME_terma_describe
+	desc = EVTDESC_terma_prepare
+	picture = GFX_evt_pilgrims_epic_journey
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPT_terma_prepare_start
+		add_trait = on_pilgrimage
+		remove_character_modifier = preparing_expedition
+		hidden_tooltip = {
+			FROM = {
+				province_event = {
+					id = terma.10 days = 5 random = 5
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPT_terma_prepare_research
+		trigger = {
+			NOT = { has_character_flag = terma_research }
+			learning = 8
+			wealth = 5
+		}
+		tooltip_info = learning
+		set_character_flag = terma_research
+		wealth = -5
+		piety = 5
+		hidden_tooltip = { FROM = { province_event = { id = terma.4 days = 15 random = 5 } } }
+		ai_chance = { factor = 5 }
+	}
+	
+	option = {
+		name = EVTOPT_terma_prepare_warband
+		trigger = {
+			NOT = { has_character_flag = terma_warband }
+			martial = 8
+			wealth = 10
+		}
+		tooltip_info = martial
+		set_character_flag = terma_warband
+		wealth = -10
+		hidden_tooltip = { FROM = { province_event = { id = terma.4 days = 10 random = 5 } } }
+		ai_chance = { factor = 5 }
+	}
+	
+	option = {
+		name = EVTOPT_terma_prepare_envoys
+		trigger = {
+			NOT = { has_character_flag = terma_envoys }
+			diplomacy = 8
+			wealth = 10
+		}
+		tooltip_info = diplomacy
+		set_character_flag = terma_envoys
+		wealth = -10
+		prestige = 5
+		hidden_tooltip = { FROM = { province_event = { id = terma.4 days = 10 random = 5 } } }
+		ai_chance = { factor = 5 }
+	}
+}
+
+province_event = {
+	id = terma.10
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		random = { chance = 40 FROM = { narrative_event = { id = terma.24 days = 3 random = 5 } } }
+	
+		if = {			# same realm, same religion
+			limit = {
+				holder_scope = { same_realm = FROM }
+				religion = rust_cultist
+			}
+			FROM = { character_event = { id = terma.11 days = 5 } }
+		}
+		
+		if = {			# same realm, different religion
+			limit = {
+				holder_scope = { same_realm = FROM }
+				NOT = {
+					religion = rust_cultist
+				}
+			}
+			random_list = {
+				70 = { FROM = { character_event = { id = terma.11 days = 5 } } }
+				30 = { FROM = { narrative_event = { id = terma.12 days = 5 } } }
+			}
+		}
+		
+		if = {			# different realm, same religion
+			limit = {
+				holder_scope = { NOT = { same_realm = FROM } }
+				religion = rust_cultist
+			}
+			random_list = {
+				50 = { FROM = { character_event = { id = terma.11 days = 5 } } }
+				50 = { FROM = { narrative_event = { id = terma.12 days = 5 } } }
+			}
+		}
+	
+		if = {			# different realm, different religion
+			limit = {
+				holder_scope = { NOT = { same_realm = FROM } }
+				NOT = {
+					religion = rust_cultist
+				}
+			}
+			random_list = {
+				25 = { FROM = { character_event = { id = terma.11 days = 5 } } }
+				75 = { FROM = { narrative_event = { id = terma.12 days = 5 } } }
+			}
+		}
+	}
+	option = { }
+}
+
+character_event = {
+	id = terma.11
+	hide_window = yes
+	is_triggered_only = yes
+	desc = EVTNAME_bounce
+	immediate = {
+		FROM = { province_event = { id = terma.20 days = 5 } }
+	}
+	option = { }
+}
+
+narrative_event = {
+	id = terma.12
+	is_triggered_only = yes
+	title = EVTNAME_terma_unfriendly
+	desc = EVTDESC_terma_unfriendly
+	picture = GFX_evt_peasants
+
+	option = {
+		name = EVTOPT_terma_unfriendly_ignore
+		hidden_tooltip = { FROM = { province_event = { id = terma.13 days = 3 } } }
+	}
+	
+	option = {
+		name = EVTOPT_terma_unfriendly_warband
+		trigger = {
+			has_character_flag = terma_warband
+		}
+		hidden_tooltip = { random_list = {
+			25 = { FROM = { province_event = { id = terma.20 days = 5 } } }
+			75 = { FROM = { province_event = { id = terma.13 days = 3 } } }
+		} }
+	}
+	
+	option = {
+		name = EVTOPT_terma_unfriendly_envoys
+		trigger = {
+			has_character_flag = terma_envoys
+		}
+		hidden_tooltip = { FROM = { province_event = { id = terma.20 days = 5 } } }
+	}
+	
+	option = {
+		name = EVTOPT_terma_unfriendly_intrigue
+		trigger = {
+			intrigue = 8
+		}
+		tooltip_info = intrigue
+		hidden_tooltip = { random_list = {
+			75 = { FROM = { province_event = { id = terma.20 days = 5 } } }
+			25 = { FROM = { province_event = { id = terma.13 days = 3 } } }
+		} }
+	}
+}
+
+province_event = {
+	id = terma.13
+	desc = EVTDESC_terma_provowner
+	picture = GFX_evt_peasants
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPT_terma_provowner_violence
+		FROM = { narrative_event = { id = terma.15 days = 3 } }
+	}
+	
+	option = {
+		name = EVTOPT_terma_provowner_peaceful
+		FROM = { narrative_event = { id = terma.14 days = 3 } }
+	}
+}
+
+narrative_event = {
+	id = terma.14
+	is_triggered_only = yes
+	title = EVTNAME_terma_unfriendly
+	desc = EVTDESC_terma_peaceful
+	picture = GFX_evt_carriage
+
+	option = {
+		name = OK
+		hidden_tooltip = { FROM = { province_event = { id = terma.20 days = 5 } } }
+	}
+}
+
+narrative_event = {
+	id = terma.15
+	is_triggered_only = yes
+	title = EVTNAME_terma_violence
+	desc = EVTDESC_terma_violence
+	picture = GFX_evt_peasants
+
+	option = {
+		name = EVTOPT_terma_violence_flee
+		custom_tooltip = { text = TXT_terma_flee }
+		hidden_tooltip = { narrative_event = { id = terma.16 days = 3 } }
+		hidden_tooltip = { narrative_event = { id = terma.90 days = 6 } }
+	}
+	
+	option = {
+		name = EVTOPT_terma_violence_fight
+		trigger = {
+			NOT = { has_character_flag = terma_warband }
+		}
+		random_list = {
+			10 = {
+				add_maimed_trait_effect = yes
+				custom_tooltip = { text = TXT_terma_flee }
+				hidden_tooltip = { narrative_event = { id = terma.16 days = 3 } }
+				hidden_tooltip = { narrative_event = { id = terma.90 days = 6 } }
+			}
+			30 = {
+				add_trait = wounded
+				custom_tooltip = { text = TXT_terma_flee }
+				hidden_tooltip = { narrative_event = { id = terma.16 days = 3 } }
+				hidden_tooltip = { narrative_event = { id = terma.90 days = 6 } }
+			}
+			20 = {
+				add_trait = wounded
+				custom_tooltip = { text = TXT_terma_continue }
+				hidden_tooltip = { FROM = { province_event = { id = terma.20 days = 5 } } }
+			}
+			40 = {
+				custom_tooltip = { text = TXT_terma_continue }
+				hidden_tooltip = { FROM = { province_event = { id = terma.20 days = 5 } } }
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPT_terma_violence_fightwarband
+		trigger = {
+			has_character_flag = terma_warband
+		}
+		random_list = {
+			20 = { add_trait = wroth }
+			20 = { add_trait = cruel }
+			10 = { add_trait = wounded }
+			50 = { }
+		}
+		custom_tooltip = { text = TXT_terma_continue }
+		hidden_tooltip = { FROM = { province_event = { id = terma.20 days = 5 } } }
+	}
+	
+	option = {
+		name = EVTOPT_terma_violence_bribe
+		trigger = {
+			stewardship = 8
+			wealth = 25
+		}
+		tooltip_info = stewardship
+		wealth = -25
+		custom_tooltip = { text = TXT_terma_continue }
+		hidden_tooltip = { FROM = { province_event = { id = terma.20 days = 5 } } }
+	}
+}
+
+
+narrative_event = {
+	id = terma.16
+	is_triggered_only = yes
+	title = EVTNAME_terma_drivenout
+	desc = EVTDESC_terma_drivenout
+	picture = GFX_evt_pilgrims_epic_journey
+	option = { name = OK }
+}
+
+# ************************* Determine the Province Salvage ************************
+
+province_event = {
+	id = terma.20
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		if = {
+			limit = { FROM = { has_character_flag = terma_compete } }
+			random_list = {
+				50 = { FROM = { narrative_event = { id = terma.21 days = 20 random = 10 } } }
+				45 = { FROM = { narrative_event = { id = terma.22 days = 15 random = 10 } } }
+				5 = { FROM = { narrative_event = { id = terma.23 days = 15 random = 10 } } }
+			}
+		}
+		
+		if = {
+			limit = { FROM = { NOT = { has_character_flag = terma_compete } } }
+			random_list = {
+				30 = { FROM = { narrative_event = { id = terma.21 days = 20 random = 10 } } }
+				60 = { FROM = { narrative_event = { id = terma.22 days = 15 random = 10 } } }
+				10 = { FROM = { narrative_event = { id = terma.23 days = 15 random = 10 } } }
+			}
+		}
+		
+		random = { chance = 30 FROM = { narrative_event = { id = terma.26 days = 8 } } }
+	}
+	
+	option = { }
+}
+
+narrative_event = {
+	id = terma.21
+	title = EVTNAME_terma_value
+	desc = EVTDESC_terma_worthless
+	picture = GFX_evt_carriage
+	
+	is_triggered_only = yes
+	trigger = { trait = on_pilgrimage }
+
+	option = {
+		name = EVTOPT_terma_worthless
+		trigger = { NOT = { has_character_flag = terma_compete } }
+		hidden_tooltip = { narrative_event = { id = terma.90 days = 5 } }
+		ai_chance = { factor = 10 }
+	}
+	
+	option = {
+		name = EVTOPT_terma_worthless_compete
+		trigger = { has_character_flag = terma_compete }
+		hidden_tooltip = { narrative_event = { id = terma.90 days = 5 } }
+		ai_chance = { factor = 10 }
+	}
+	
+	option = {
+		name = EVTOPT_terma_worthless_research
+		trigger = { has_character_flag = terma_research }
+		custom_tooltip = { text = TXT_terma_continue }
+		hidden_tooltip = { FROM = { province_event = { id = terma.20 days = 5 } } }
+		clr_character_flag = terma_research
+		ai_chance = { factor = 500 }
+	}
+}
+
+narrative_event = {
+	id = terma.22
+	title = EVTNAME_terma_value
+	desc = EVTDESC_terma_moderate
+	picture = GFX_evt_carriage
+	
+	is_triggered_only = yes
+	trigger = { trait = on_pilgrimage }
+
+	option = {
+		name = EVTOPT_terma_moderate
+		hidden_tooltip = {
+			random_list = {
+				10 = {
+					narrative_event = { id = terma.40 days = 5 }
+					narrative_event = { id = terma.91 days = 12 }
+				}
+				10 = {
+					narrative_event = { id = terma.41 days = 5 }
+					narrative_event = { id = terma.91 days = 12 }
+				}
+				10 = {
+					narrative_event = { id = terma.42 days = 5 }
+					narrative_event = { id = terma.92 days = 12 }
+				}
+				10 = {
+					narrative_event = { id = terma.43 days = 5 }
+					narrative_event = { id = terma.92 days = 12 }
+				}
+				10 = {
+					narrative_event = { id = terma.44 days = 5 }
+					narrative_event = { id = terma.92 days = 12 }
+				}
+			}
+		}
+		ai_chance = { factor = 10 }
+	}
+	
+	option = {
+		name = EVTOPT_terma_moderate_research
+		trigger = { has_character_flag = terma_research }
+		wealth = 25
+		custom_tooltip = { text = TXT_terma_continue }
+		hidden_tooltip = { FROM = { province_event = { id = terma.20 days = 5 } } }
+		clr_character_flag = terma_research
+		ai_chance = { factor = 20 }
+	}
+}
+
+narrative_event = {
+	id = terma.23
+	title = EVTNAME_terma_value
+	desc = EVTDESC_terma_reliquary
+	picture = GFX_evt_carriage
+	
+	is_triggered_only = yes
+	trigger = {
+		OR = {
+			AND = {
+				trait = on_pilgrimage
+				religion = rust_cultist
+			}
+			has_character_flag = discover_terma
+		}
+		NAND = {
+			trait = on_pilgrimage
+			religion = rust_cultist
+		}
+		NOT = { trait = kow_tow_travels }
+		NOT = { trait = travelling }
+	}
+	
+	immediate = { clr_character_flag = discover_terma }
+
+	option = {
+		name = EVTOPT_terma_reliquary
+		hidden_tooltip = {
+			random_list = {
+				20 = {
+					narrative_event = { id = terma.90 days = 6 }
+				}
+				10 = {
+					narrative_event = { id = terma.51 days = 3 }
+					narrative_event = { id = terma.92 days = 6 }
+				}
+				5 = {
+					narrative_event = { id = terma.91 days = 6 }
+				}
+				10 = {
+					narrative_event = { id = terma.54 days = 3 }
+					narrative_event = { id = terma.92 days = 6 }
+				}
+				10 = {
+					narrative_event = { id = terma.55 days = 3 }
+					narrative_event = { id = terma.94 days = 6 }
+				}
+				#10 = {
+				#	narrative_event = { id = terma.5 days = 3 }
+				#	narrative_event = { id = terma.94 days = 6 }
+				#}
+				5 = {
+					narrative_event = { id = terma.56 days = 3 }
+					narrative_event = { id = terma.94 days = 6 }
+				}
+				10 = {
+					narrative_event = { id = terma.60 days = 3 }
+					narrative_event = { id = terma.94 days = 6 }
+				}
+				10 = {
+					narrative_event = { id = terma.61 days = 3 }
+					narrative_event = { id = terma.94 days = 6 }
+				}
+				10 = {
+					narrative_event = { id = terma.62 days = 3 }
+					narrative_event = { id = terma.94 days = 6 }
+				}
+				10 = {
+					narrative_event = { id = terma.63 days = 3 }
+					narrative_event = { id = terma.94 days = 6 }
+				}
+				5 = {
+					narrative_event = { id = terma.64 days = 3 }
+					narrative_event = { id = terma.94 days = 6 }
+				}
+			}
+		}
+		ai_chance = { factor = 10 }
+	}
+	
+	option = {
+		name = EVTOPT_terma_reliquary_patient
+		hidden_tooltip = {
+			random_list = {
+				10 = {
+					narrative_event = { id = terma.51 days = 15 random = 8 }
+					narrative_event = { id = terma.92 days = 25 }
+				}
+				10 = {
+					narrative_event = { id = terma.91 days = 25 }
+				}
+				10 = {
+					narrative_event = { id = terma.53 days = 15 random = 8 }
+					narrative_event = { id = terma.91 days = 25 }
+				}
+				10 = {
+					narrative_event = { id = terma.54 days = 15 random = 8 }
+					narrative_event = { id = terma.92 days = 25 }
+				}
+				10 = {
+					narrative_event = { id = terma.55 days = 15 random = 8 }
+					narrative_event = { id = terma.94 days = 25 }
+				}
+				10 = {
+					narrative_event = { id = terma.56 days = 15 random = 8 }
+					narrative_event = { id = terma.94 days = 25 }
+				}
+				10 = {
+					narrative_event = { id = terma.60 days = 15 random = 8 }
+					narrative_event = { id = terma.94 days = 25 }
+				}
+				10 = {
+					narrative_event = { id = terma.61 days = 15 random = 8 }
+					narrative_event = { id = terma.94 days = 25 }
+				}
+				10 = {
+					narrative_event = { id = terma.62 days = 15 random = 8 }
+					narrative_event = { id = terma.94 days = 25 }
+				}
+				10 = {
+					narrative_event = { id = terma.63 days = 15 random = 8 }
+					narrative_event = { id = terma.94 days = 25 }
+				}
+				10 = {
+					narrative_event = { id = terma.64 days = 15 random = 8 }
+					narrative_event = { id = terma.94 days = 25 }
+				}
+				10 = {
+					narrative_event = { id = terma.65 days = 15 random = 8 }
+					narrative_event = { id = terma.94 days = 25 }
+				}
+			}
+		}
+		ai_chance = { factor = 50 }
+	}
+}
+
+narrative_event = {
+	id = terma.24
+	is_triggered_only = yes
+	title = EVTNAME_terma_agent
+	desc = EVTDESC_terma_agent
+	picture = GFX_evt_pilgrims_epic_journey
+
+	option = {
+		name = EVTOPT_terma_agent
+		prestige = 5
+		set_character_flag = terma_compete
+	}
+	
+	option = {
+		name = EVTOPT_terma_agent_research
+		trigger = { has_character_flag = terma_research }
+		piety = 10
+		random = { chance = 25 add_trait = charitable }
+		clr_character_flag = terma_research
+	}
+	
+	option = {
+		name = EVTOPT_terma_agent_intrigue
+		trigger = { intrigue = 8 }
+		tooltip_info = intrigue
+		random_list = {
+			10 = { add_trait = paranoid }
+			10 = { add_trait = wroth }
+			10 = { add_trait = greedy }
+			10 = { add_trait = cruel }
+			10 = { add_trait = cynical }
+			50 = { }
+		}
+	}
+}
+
+narrative_event = {
+	id = terma.26
+	is_triggered_only = yes
+	title = EVTNAME_terma_collapse
+	desc = EVTDESC_terma_collapse
+	picture = GFX_evt_pilgrims_epic_journey
+
+	option = {
+		name = EVTOPT_terma_collapse_flee
+		custom_tooltip = { text = TXT_terma_flee }
+		hidden_tooltip = { narrative_event = { id = terma.90 days = 3 } }
+	}
+	
+	option = {
+		name = EVTOPT_terma_collapse_brave
+		add_trait = brave
+		random_list = {
+			50 = {	
+				custom_tooltip = { text = TXT_terma_continue }
+			}
+			50 = {
+				add_trait = wounded
+				custom_tooltip = { text = TXT_terma_flee }
+				hidden_tooltip = { narrative_event = { id = terma.90 days = 3 } }
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPT_terma_collapse_plan
+		trigger = {
+			OR = {
+				trait = genius
+				trait = quick
+				trait = diligent
+				trait = paranoid
+			}
+		}
+		prestige = 5
+	}
+}
+
+
+# ************************* All the different terma artifacts ************************
+
+narrative_event = {
+	id = terma.40
+	is_triggered_only = yes
+	title = EVTNAME_terma_item
+	desc = EVTDESC_terma_conch_shell
+	picture = GFX_evt_pilgrims_epic_journey
+	option = { name = OK }
+}
+
+narrative_event = {
+	id = terma.41
+	is_triggered_only = yes
+	title = EVTNAME_terma_item
+	desc = EVTDESC_terma_tokens
+	picture = GFX_evt_pilgrims_epic_journey
+	option = { name = OK }
+}
+
+narrative_event = {
+	id = terma.42
+	is_triggered_only = yes
+	title = EVTNAME_terma_item
+	desc = EVTDESC_terma_herbs
+	picture = GFX_evt_pilgrims_epic_journey
+	option = {
+		name = OK
+		add_artifact = herbal_pouch
+		new_artifact = { set_creation_date = 1.1.1 }
+		set_character_flag = found_herb
+	}
+}
+
+narrative_event = {
+	id = terma.43
+	is_triggered_only = yes
+	title = EVTNAME_terma_item
+	desc = EVTDESC_terma_boddhi_statue
+	picture = GFX_evt_pilgrims_epic_journey
+	option = {
+		name = OK
+		add_artifact = boddhi_statue
+		new_artifact = { set_creation_date = 1.1.1 }
+		set_character_flag = found_statue
+	}
+}
+
+narrative_event = {
+	id = terma.50
+	is_triggered_only = yes
+	title = EVTNAME_terma_item
+	desc = EVTDESC_terma_reliquary_smash
+	picture = GFX_evt_carriage
+	option = { name = OK }
+}
+
+narrative_event = {
+	id = terma.51
+	is_triggered_only = yes
+	title = EVTNAME_terma_reliquary_jewellery
+	desc = EVTDESC_terma_reliquary_jewellery
+	picture = GFX_evt_carriage
+	option = { 
+		name = OK
+		#wealth = 25
+		add_artifact = old_world_jewelry
+		new_artifact = { set_creation_date = 1.1.1 }
+		set_character_flag = found_jewelry
+	}
+}
+narrative_event = {
+	id = terma.53
+	is_triggered_only = yes
+	title = EVTNAME_terma_reliquary_paintings
+	desc = EVTDESC_terma_reliquary_paintings
+	picture = GFX_evt_carriage
+	option = { name = OK }
+}
+
+narrative_event = {
+	id = terma.54
+	is_triggered_only = yes
+	title = EVTNAME_terma_item
+	desc = EVTDESC_terma_reliquary_bells
+	picture = GFX_evt_carriage
+	option = {
+		name = OK
+		prestige = 10
+		add_artifact = old_world_bells
+		new_artifact = { set_creation_date = 1.1.1 }
+		set_character_flag = found_bells
+	}
+}
+
+narrative_event = {
+	id = terma.55
+	is_triggered_only = yes
+	title = EVTDESC_terma_reliquary_boddhi_statue
+	desc = EVTDESC_terma_reliquary_statue
+	picture = GFX_evt_carriage
+	option = { 
+		name = OK
+		hidden_tooltip = { narrative_event = { id = terma.79 days = 15 random = 30 } }
+	}
+}
+
+narrative_event = {
+	id = terma.56
+	is_triggered_only = yes
+	title = EVTDESC_terma_reliquary_boddhi_statue
+	desc = EVTDESC_terma_reliquary_dharma_wheel
+	picture = GFX_evt_carriage
+	option = {
+		name = OK
+		hidden_tooltip = { random_list = {
+			80 = { narrative_event = { id = terma.57 days = 15 random = 30 } }
+			20 = { narrative_event = { id = terma.79 days = 15 random = 30 } }
+		} }
+	}
+}
+
+narrative_event = {
+	id = terma.60
+	is_triggered_only = yes
+	title = EVTNAME_terma_reliquary_damaru
+	desc = EVTDESC_terma_reliquary_damaru
+	picture = GFX_evt_carriage
+	option = { 
+		name = OK
+		hidden_tooltip = { random_list = {
+			80 = { narrative_event = { id = terma.70 days = 15 random = 30 } }
+			20 = { narrative_event = { id = terma.79 days = 15 random = 30 } }
+		} }
+	}
+}
+
+narrative_event = {
+	id = terma.61
+	is_triggered_only = yes
+	title = EVTDESC_terma_reliquary_boddhi_statue
+	desc = EVTDESC_terma_reliquary_khata
+	picture = GFX_evt_carriage
+	option = { 
+		name = OK
+		hidden_tooltip = { random_list = {
+			80 = { narrative_event = { id = terma.71 days = 15 random = 30 } }
+			20 = { narrative_event = { id = terma.79 days = 15 random = 30 } }
+		} }
+	}
+}
+
+narrative_event = {
+	id = terma.62
+	is_triggered_only = yes
+	title = EVTDESC_terma_reliquary_boddhi_statue
+	desc = EVTDESC_terma_reliquary_tunderbolt
+	picture = GFX_evt_carriage
+	option = { 
+		name = OK
+		hidden_tooltip = { random_list = {
+			80 = { narrative_event = { id = terma.72 days = 15 random = 30 } }
+			20 = { narrative_event = { id = terma.79 days = 15 random = 30 } }
+		} }
+	}
+}
+
+narrative_event = {
+	id = terma.63
+	is_triggered_only = yes
+	title = EVTNAME_terma_reliquary_jewellery
+	desc = EVTDESC_terma_reliquary_amulet
+	picture = GFX_evt_carriage
+	option = { 
+		name = OK
+		hidden_tooltip = { random_list = {
+			80 = { narrative_event = { id = terma.73 days = 15 random = 30 } }
+			20 = { narrative_event = { id = terma.79 days = 15 random = 30 } }
+		} }
+	}
+}
+
+narrative_event = {
+	id = terma.64
+	is_triggered_only = yes
+	title = EVTDESC_terma_reliquary_boddhi_statue
+	desc = EVTDESC_terma_reliquary_cymbals
+	picture = GFX_evt_carriage
+	option = { 
+		name = OK
+		hidden_tooltip = { random_list = {
+			80 = { narrative_event = { id = terma.74 days = 15 random = 30 } }
+			20 = { narrative_event = { id = terma.79 days = 15 random = 30 } }
+		} }
+	}
+}
+
+narrative_event = {
+	id = terma.65
+	is_triggered_only = yes
+	title = EVTNAME_terma_reliquary_hidden_sutra
+	desc = EVTDESC_terma_reliquary_hidden_sutra
+	picture = GFX_evt_carriage
+	option = { 
+		name = OK
+		hidden_tooltip = { random_list = {
+			80 = { narrative_event = { id = terma.75 days = 15 random = 30 } }
+			20 = { narrative_event = { id = terma.79 days = 15 random = 30 } }
+		} }
+	}
+}
+
+# ************************* Attempts to restore prizes ************************
+narrative_event = {
+	id = terma.57
+	is_triggered_only = yes
+	title = EVTNAME_terma_repair_prize
+	desc = EVTDESC_terma_study_dharma_wheel
+	picture = GFX_evt_library
+	option = {
+		name = EVTOPT_terma_study_dharma_wheel
+		prestige = 50
+		add_artifact = ate_dharma_wheel
+	}
+}
+
+narrative_event = {
+	id = terma.70
+	is_triggered_only = yes
+	title = EVTNAME_terma_repair_prize
+	desc = EVTDESC_terma_study_damaru
+	picture = GFX_evt_library
+	option = {
+		name = EVTOPT_terma_study_damaru
+		prestige = 50
+		add_artifact = ate_damaru
+	}
+}
+
+narrative_event = {
+	id = terma.71
+	is_triggered_only = yes
+	title = EVTNAME_terma_repair_prize
+	desc = EVTDESC_terma_study_khata
+	picture = GFX_evt_library
+	option = {
+		name = OK
+		prestige = 50
+		add_artifact = ate_khata
+	}
+}
+
+narrative_event = {
+	id = terma.72
+	is_triggered_only = yes
+	title = EVTNAME_terma_repair_prize
+	desc = EVTDESC_terma_study_tunderbolt
+	picture = GFX_evt_library
+	option = {
+		name = OK
+		prestige = 50
+		add_artifact = ate_tunderbolt
+	}
+}
+
+narrative_event = {
+	id = terma.73
+	is_triggered_only = yes
+	title = EVTNAME_terma_repair_prize
+	desc = EVTDESC_terma_study_amulet
+	picture = GFX_evt_library
+	option = {
+		name = OK
+		prestige = 50
+		add_artifact = ate_amulet
+	}
+}
+
+narrative_event = {
+	id = terma.74
+	is_triggered_only = yes
+	title = EVTNAME_terma_repair_prize
+	desc = EVTDESC_terma_study_cymbals
+	picture = GFX_evt_library
+	option = {
+		name = OK
+		prestige = 50
+		add_artifact = ate_cymbals
+	}
+}
+
+narrative_event = {
+	id = terma.75
+	is_triggered_only = yes
+	title = EVTNAME_terma_repair_prize
+	desc = EVTDESC_terma_study_hidden_sutra
+	picture = GFX_evt_library
+	option = {
+		name = OK
+		prestige = 50
+		add_artifact = ate_hidden_sutra
+	}
+}
+
+narrative_event = {
+	id = terma.79
+	is_triggered_only = yes
+	title = EVTNAME_terma_fail_prize
+	desc = EVTDESC_terma_study_fail
+	picture = GFX_evt_library
+	
+	option = {
+		name = EVTOPT_terma_study_keep
+		prestige = 100
+		random = { chance = 10 add_trait = proud }
+		hidden_tooltip = { character_event = { id = terma.95 } }
+	}
+	
+	option = {
+		name = EVTOPT_terma_study_sell
+		wealth = 75
+		random = { chance = 15 add_trait = greedy }
+		hidden_tooltip = { character_event = { id = terma.95 } }
+	}
+	
+	option = {
+		name = EVTOPT_terma_study_learn
+		random_list = {
+			10 = { culture_techpoints = 25 }
+			10 = { military_techpoints = 25 }
+			10 = { economy_techpoints = 25 }
+			10 = { change_learning = 1 }
+			10 = { add_trait = patient }
+			50 = { }
+		}
+		hidden_tooltip = { character_event = { id = terma.95 } }
+	}
+	
+	option = {
+		name = EVTOPT_terma_study_donate
+		trigger = {
+			religion = rust_cultist
+		}
+		piety = 50
+		religion_authority = { modifier = donated_spiritual_prize }
+		random_list = {
+			10 = { add_trait = zealous }
+			10 = { add_trait = charitable }
+			10 = { add_trait = humble }
+		}
+		hidden_tooltip = { character_event = { id = terma.95 } }
+	}
+}
+
+# ************************* Expedition results and cleanup ************************
+
+narrative_event = {
+	id = terma.90
+	is_triggered_only = yes
+	title = EVTNAME_terma_result
+	desc = EVTDESC_terma_result_poor
+	picture = GFX_evt_pilgrims_epic_journey
+	
+	religion = rust_cultist
+	
+	trigger = {
+		trait = on_pilgrimage
+	}
+
+	option = {
+		name = EVTOPT_terma_result_poor
+		hidden_tooltip = { character_event = { id = terma.95 } }
+	}
+}
+
+narrative_event = {
+	id = terma.91
+	is_triggered_only = yes
+	title = EVTNAME_terma_result
+	desc = EVTDESC_terma_result_medium
+	picture = GFX_evt_pilgrims_epic_journey
+	religion = rust_cultist
+	
+	trigger = {
+		trait = on_pilgrimage
+	}
+	
+	option = {
+		name = EVTOPT_terma_result_medium_keep
+		prestige = 20
+		hidden_tooltip = { character_event = { id = terma.95 } }
+	}
+}
+
+narrative_event = {
+	id = terma.92
+	is_triggered_only = yes
+	title = EVTNAME_terma_result
+	desc = EVTDESC_terma_result_medium
+	picture = GFX_evt_pilgrims_epic_journey
+	religion = rust_cultist
+	
+	trigger = {
+		trait = on_pilgrimage
+	}
+	
+	option = {
+		name = EVTOPT_terma_result_medium_keep
+		prestige = 40
+		hidden_tooltip = { character_event = { id = terma.95 } }
+	}
+	
+	option = {
+		name = EVTOPT_terma_result_medium_sell
+		wealth = 40
+		if = {
+			limit = { has_character_flag = found_herb }
+			destroy_artifact = herbs
+		}
+		if = {
+			limit = { has_character_flag = found_statue }
+			destroy_artifact = boddhi_statue
+		}
+		if = {
+			limit = { has_character_flag = found_jewelry }
+			destroy_artifact = old_world_jewelry
+		}
+		if = {
+			limit = { has_character_flag = found_bells }
+			destroy_artifact = old_world_bells
+		}
+		hidden_tooltip = { character_event = { id = terma.95 } }
+	}
+	
+	option = {
+		name = EVTOPT_terma_result_medium_donate
+		piety = 20
+		if = {
+			limit = { has_character_flag = found_herb }
+			destroy_artifact = herbs
+		}
+		if = {
+			limit = { has_character_flag = found_statue }
+			destroy_artifact = boddhi_statue
+		}
+		if = {
+			limit = { has_character_flag = found_jewelry }
+			destroy_artifact = old_world_jewelry
+		}
+		if = {
+			limit = { has_character_flag = found_bells }
+			destroy_artifact = old_world_bells
+		}
+		religion_authority = { modifier = donated_spiritual_prize }
+		hidden_tooltip = { character_event = { id = terma.95 } }
+	}
+}
+
+narrative_event = {
+	id = terma.94
+	is_triggered_only = yes
+	title = EVTNAME_terma_result
+	desc = EVTDESC_terma_result_good
+	picture = GFX_evt_pilgrims_epic_journey
+	religion = rust_cultist
+	
+	trigger = {
+		trait = on_pilgrimage
+	}
+	
+	option = {
+		name = EVTOPT_terma_result_study
+		piety = 50
+		prestige = 50
+		add_trait = tech_scavenger
+		hidden_tooltip = { character_event = { id = terma.95 } }
+	}
+}
+
+character_event = {
+	id = terma.95
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		clr_character_flag = terma_warband
+		clr_character_flag = terma_research
+		clr_character_flag = terma_envoys
+		clr_character_flag = terma_compete
+		clr_character_flag = found_herb
+		clr_character_flag = found_statue
+		clr_character_flag = found_jewelry
+		clr_character_flag = found_bells
+		remove_trait = on_pilgrimage
+		add_character_modifier = { name = recent_terma duration = 720 }
+	}
+	option = { # just in case
+		name = DEBUG
+	
+		clr_character_flag = terma_warband
+		clr_character_flag = terma_research
+		clr_character_flag = terma_envoys
+		clr_character_flag = terma_compete
+		clr_character_flag = found_herb
+		clr_character_flag = found_statue
+		clr_character_flag = found_jewelry
+		clr_character_flag = found_bells
+		remove_trait = on_pilgrimage
+		add_character_modifier = { name = recent_terma duration = 720 }
+		
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+# ************************* Pass Salvage to Heir ************************
+# removed for now, since artifacts are always passed on
+
+# ************************* Events for Anyone ************************
+
+character_event = {
+	id = terma.120
+	hide_window = yes
+	desc = EVTNAME_bounce
+	picture = GFX_evt_courier
+
+	is_triggered_only = yes
+	
+	only_playable = yes
+	prisoner = no
+	
+	immediate = {
+		random_list = {
+			50 = {
+				modifier = {
+					factor = 0 
+					has_artifact = ate_damaru
+				}
+				character_event = { id = terma.130 }
+			}
+			50 = {
+				modifier = { factor = 0 NOT = { has_artifact = ate_khata } }
+				character_event = { id = terma.131 }
+			}
+			50 = {
+				modifier = { factor = 0 NOT = { has_artifact = ate_tunderbolt } }
+				character_event = { id = terma.132 }
+			}
+			50 = {
+				modifier = { factor = 0 NOT = { has_artifact = ate_amulet } }
+				character_event = { id = terma.133 }
+			}
+			50 = {
+				modifier = { factor = 0 NOT = { has_artifact = ate_cymbals } }
+				character_event = { id = terma.134 }
+			}
+			50 = {
+				modifier = { factor = 0 NOT = { has_artifact = ate_hidden_sutra } }
+				character_event = { id = terma.135 }
+			}
+			50 = {
+				modifier = { factor = 0 NOT = { has_artifact = ate_hidden_sutra } }
+				character_event = { id = terma.58 }
+			}
+			5 = {
+				# find new strongbox
+				modifier = { factor = 10 ai = no }
+				modifier = { factor = 0.6 has_artifact = ate_damaru }
+				modifier = { factor = 0.6 has_artifact = ate_khata }
+				modifier = { factor = 0.6 has_artifact = ate_tunderbolt }
+				modifier = { factor = 0.6 has_artifact = ate_amulet }
+				modifier = { factor = 0.6 has_artifact = ate_cymbals }
+				modifier = { factor = 0.6 has_artifact = ate_hidden_sutra }
+				modifier = { factor = 0.6 has_artifact = ate_hidden_sutra }
+				modifier = { factor = 0.8 num_of_artifacts = 4 }
+				modifier = { factor = 0.8 num_of_artifacts = 8 }
+				modifier = { factor = 0.8 num_of_artifacts = 12 }
+				modifier = { factor = 0.8 num_of_artifacts = 16 }
+				set_character_flag = discover_terma
+				random_demesne_province = { province_event = { id = terma.121 } }
+			}
+			100 = {
+				# nothing happens
+			}
+		}
+	}
+	option = { }
+}
+
+province_event = {
+	id = terma.121
+	hide_window = yes
+	desc = EVTNAME_bounce
+	picture = GFX_evt_courier
+	
+	is_triggered_only = yes
+	immediate = { FROM = { narrative_event = { id = terma.23 } } }
+	option = { }
+}
+
+narrative_event = {
+	id = terma.130
+	is_triggered_only = yes
+	title = EVTNAME_damaru_battle
+	desc = EVTDESC_damaru_battle
+	picture = GFX_evt_viking_battle_oldgods
+	
+	trigger = {
+		age = 16
+		has_artifact = ate_damaru
+	}
+	
+	option = {
+		name = EVTOPT_damaru_battle_fire
+		trigger = {
+			has_nickname = no
+			martial = 8
+			OR = {
+				trait = mystic
+				trait = brave
+				trait = cruel
+				trait = lustful
+			}
+		}
+		prestige = 50
+		change_martial = 1
+		give_nickname = nick_the_firebringer
+		#FROM = { 
+		#	death = {
+		#		death_reason = death_battle
+		#		killer = ROOT
+		#	}
+		#}
+	}
+	
+	option = {
+		name = EVTOPT_damaru_battle_thunder
+		trigger = {
+			has_nickname = no
+			martial = 8
+			OR = {
+				trait = duelist
+				trait = strong
+				trait = brave
+				trait = wroth
+				trait = zealous
+			}
+		}
+		prestige = 50
+		change_martial = 1
+		give_nickname = nick_the_thunderhand
+		#FROM = { 
+		#	death = {
+		#		death_reason = death_battle
+		#		killer = ROOT
+		#	}
+		#}
+	}
+	
+	option = {
+		name = EVTOPT_damaru_battle_marksman
+		trigger = {
+			has_nickname = no
+			martial = 8
+			OR = {
+				trait = hunter
+				trait = brave
+				trait = patient
+				trait = kind
+			}
+		}
+		prestige = 50
+		change_martial = 1 
+		give_nickname = nick_the_marksman
+		#FROM = { 
+		#	death = {
+		#		death_reason = death_battle
+		#		killer = ROOT
+		#	}
+		#}
+	}
+	
+	option = {
+		name = EVTOPT_damaru_battle_default
+		prestige = 25
+		#random = {
+		#	chance = 25
+		#	FROM = { 
+		#		death = {
+		#			death_reason = death_battle
+		#			killer = ROOT
+		#		}
+		#	}
+		#}
+	}
+}
+
+narrative_event = {
+	id = terma.131
+	is_triggered_only = yes
+	title = EVTNAME_khata_history
+	desc = EVTDESC_khata_history
+	picture = GFX_evt_library
+	
+	trigger = { has_artifact = ate_khata }
+	
+	option = {
+		name = EVTOPT_khata_history_record
+		trigger = {
+			has_nickname = no
+			learning = 8
+			OR = {
+				trait = scholar
+				trait = diligent
+				trait = proud
+				trait = honest
+			}
+		}
+		prestige = 50
+		change_learning = 1
+		give_nickname = nick_the_chronicler
+	}
+	
+	option = {
+		name = EVTOPT_khata_history_poet
+		trigger = {
+			has_nickname = no
+			diplomacy = 8
+			OR = {
+				trait = poet
+				trait = lustful
+				trait = kind
+				trait = content
+			}
+		}
+		prestige = 50
+		change_diplomacy = 1
+		give_nickname = nick_the_poet
+	}
+	
+	option = {
+		name = EVTOPT_khata_history_poet
+		trigger = {
+			has_nickname = yes
+			NOT = { lifestyle_traits = 1 }
+			diplomacy = 8
+			OR = {
+				trait = lustful
+				trait = kind
+				trait = content
+			}
+		}
+		prestige = 50
+		change_diplomacy = 1
+		add_trait = poet
+	}
+	
+	option = {
+		name = EVTOPT_khata_history_square
+		prestige = 25
+	}
+}
+
+narrative_event = {
+	id = terma.132
+	is_triggered_only = yes
+	title = EVTNAME_tunderbolt_taxes
+	desc = EVTDESC_tunderbolt_taxes
+	picture = GFX_evt_library
+	
+	trigger = { has_artifact = ate_tunderbolt }
+	
+	option = {
+		name = EVTOPT_tunderbolt_taxes_shrewd
+		trigger = {
+			has_nickname = no
+			stewardship = 8
+			OR = {
+				trait = ambitious
+				trait = greedy
+				trait = patient
+				trait = envious
+			}
+		}
+		wealth = 50
+		prestige = 25
+		change_stewardship = 1
+		give_nickname = nick_the_shrewd
+	}
+	
+	option = {
+		name = EVTOPT_tunderbolt_taxes_machine
+		trigger = {
+			has_nickname = no
+			stewardship = 8
+			OR = {
+				trait = patient
+				trait = diligent
+				trait = temperate
+				trait = chaste
+			}
+		}
+		wealth = 50
+		prestige = 25
+		change_stewardship = 1
+		give_nickname = nick_the_tunderbolt
+	}
+	
+	option = {
+		name = EVTOPT_tunderbolt_taxes_default
+		wealth = 10
+		prestige = 10
+	}
+}
+
+narrative_event = {
+	id = terma.133
+	is_triggered_only = yes
+	title = EVTNAME_amulet_smooth
+	desc = EVTDESC_amulet_smooth
+	picture = GFX_evt_carriage
+	
+	trigger = { has_artifact = ate_amulet }
+	
+	option = {
+		name = EVTOPT_amulet_smooth_style
+		trigger = {
+			has_nickname = no
+			diplomacy = 8
+			OR = {
+				trait = fair
+				trait = falconer
+				trait = hedonist
+				trait = gluttonous
+				trait = proud
+				trait = gregarious
+				trait = homosexual
+			}
+		}
+		prestige = 50
+		change_diplomacy = 1
+		give_nickname = nick_the_stylish
+	}
+	
+	option = {
+		name = EVTOPT_amulet_smooth_carriage
+		trigger = {
+			has_nickname = no
+			intrigue = 8
+			OR = {
+				trait = gardener
+				trait = patient
+				trait = diligent
+				trait = temperate
+			}
+		}
+		prestige = 50
+		change_intrigue = 1
+		give_nickname = nick_the_timekeeper
+	}
+	
+	option = {
+		name = EVTOPT_amulet_smooth_default
+		prestige = 25
+	}
+}
+
+narrative_event = {
+	id = terma.134
+	is_triggered_only = yes
+	title = EVTNAME_cymbals
+	desc = EVTDESC_cymbals
+	picture = GFX_evt_comet
+	
+	trigger = { has_artifact = ate_cymbals }
+	
+	option = {
+		name = EVTOPT_cymbals_stargaze_astro
+		trigger = {
+			has_nickname = no
+			NOT = { lifestyle_traits = 1 } 
+			learning = 8
+			OR = {
+				trait = scholar
+				trait = patient
+				trait = diligent
+				trait = shy
+			}
+		}
+		prestige = 50
+		change_learning = 1
+		
+		add_trait = musician
+	}
+	
+	option = {
+		name = EVTOPT_cymbals_stargaze_military
+		trigger = {
+			has_nickname = no
+			intrigue = 8
+			OR = {
+				trait = patient
+				trait = craven
+				trait = paranoid
+				trait = envious
+			}
+		}
+		prestige = 50
+		change_intrigue = 1
+	}
+	
+	option = {
+		name = EVTOPT_cymbals_stargaze_calm
+		remove_trait = stressed
+	}
+}
+
+narrative_event = {
+	id = terma.135
+	is_triggered_only = yes
+	title = EVTNAME_hidden_sutra_medical
+	desc = EVTDESC_hidden_sutra_medical
+	picture = GFX_evt_library
+	
+	trigger = { has_artifact = ate_hidden_sutra }
+	
+	option = {
+		name = EVTOPT_hidden_sutra_medical_wound
+		trigger = { trait = wounded }
+		remove_trait = wounded
+		add_scarred_tiered_effect = yes
+	}
+	
+	option = {
+		name = EVTOPT_hidden_sutra_medical_ill
+		trigger = {
+			has_disease_trigger = yes
+			NOT = { trait = leper }
+			NOT = { trait = cancer }
+		}
+		remove_disease_trait_effect = yes
+	}
+	
+	option = {
+		name = EVTOPT_hidden_sutra_medical_child
+		trigger = {
+			has_nickname = no
+			any_child = {
+				OR = {
+					AND = {
+						has_disease_trigger = yes
+						NOT = { trait = leper }
+						NOT = { trait = cancer }
+					}
+					trait = sickly
+				}
+			}
+		}
+		prestige = 25
+		give_nickname = nick_the_healer
+		any_child = {
+			remove_disease_trait_effect = yes
+			remove_trait = sickly
+		}
+	}
+	
+	option = {
+		name = EVTOPT_hidden_sutra_medical_child
+		trigger = {
+			has_nickname = yes
+			any_child = {
+				OR = {
+					AND = {
+						has_disease_trigger = yes
+						NOT = { trait = leper }
+						NOT = { trait = cancer }
+					}
+					trait = sickly
+				}
+			}
+		}
+		prestige = 25
+		any_child = {
+			remove_disease_trait_effect = yes
+			remove_trait = sickly
+		}
+	}
+	
+	option = {
+		name = EVTOPT_hidden_sutra_medical_learn
+		trigger = {
+			has_nickname = no
+			learning = 8
+			OR = {
+				trait = scholar
+				trait = diligent
+				trait = humble
+				trait = shy
+			}
+		}
+		prestige = 50
+		change_learning = 1
+		give_nickname = nick_the_learned
+	}
+	
+	option = {
+		name = EVTOPT_hidden_sutra_medical_learn
+		trigger = {
+			has_nickname = yes
+			lifestyle_traits = 1
+		}
+		random_list = {
+			10 = { culture_techpoints = 10 }
+			10 = { military_techpoints = 10 }
+			10 = { economy_techpoints = 10 }
+		}
+	}
+	
+	option = {
+		name = EVTOPT_hidden_sutra_medical_lazy
+	}
+}
+
+narrative_event = {
+	id = terma.58
+	is_triggered_only = yes
+	title = EVTNAME_hidden_sutra_navigate
+	desc = EVTDESC_hidden_sutra_navigate
+	picture = GFX_evt_carriage
+	
+	trigger = { has_artifact = ate_hidden_sutra }
+	
+	option = {
+		name = EVTOPT_hidden_sutra_navigate_logistics
+		trigger = {
+			has_nickname = no
+			stewardship = 8
+			OR = {
+				trait = patient
+				trait = diligent
+				trait = administrator
+				trait = greedy
+			}
+		}
+		prestige = 50
+		change_stewardship = 1
+	}
+	option = {
+		name = EVTOPT_hidden_sutra_navigate_military
+		trigger = {
+			has_nickname = no
+			martial = 8
+			OR = {
+				trait = strategist
+				trait = diligent
+				trait = brave
+				trait = stubborn
+			}
+		}
+		prestige = 50
+		change_martial = 1
+	}
+	option = {
+		name = EVTOPT_hidden_sutra_navigate_sneaky
+		trigger = {
+			has_nickname = no
+			intrigue = 8
+			OR = {
+				trait = deceitful
+				trait = craven
+				trait = schemer
+				trait = shy
+				trait = paranoid
+			}
+		}
+		prestige = 50
+		change_intrigue = 1
+	}
+}

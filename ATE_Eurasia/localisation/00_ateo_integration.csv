@@ -4,6 +4,8 @@ reciting_sutras;Recite a Sutra;;;;;;;;;;;;;x
 reciting_sutras_desc;As an observant Buddhist, you often feel great pressure to rule your kingship in line with Dharma perhaps it is time to return to the sayings of Buddha for a bit clarity.;;;;;;;;;;;;;x
 hold_vesak;Celebrate Vesak;;;;;;;;;;;;;x
 hold_vesak_desc;Whether its called Vesak or Buddha Day, Buddhist celebrate the Birth, Nirvana, and Parinirvana of the Buddha which is usually accompanied by widespread celebration.;;;;;;;;;;;;;x
+terma_expedition;Terma Exploration;;;;;;;;;;;;;x
+terma_expedition_desc;Faithful Rime followers can embark on an expedition to unearth the "hidden treasures" or Earth-Terma of the earthly realm as part of their efforts to uncover esoterics truths and transmitted across the generations by elder masters of old.;;;;;;;;;;;;;x
 ###########Character Modifiers###########
 resolute_peace;Resolute Peace;;;;;;;;;;;;;x
 resolute_peace_desc;This character has read a sutra, which has created a sense of ease and rejuvenation in thier kingship.;;;;;;;;;;;;;x
@@ -21,6 +23,7 @@ building_stupa;Building Stupa;;;;;;;;;;;;;x
 building_stupa_desc;This character is building a magnificent Stupa in the name of the Buddha.;;;;;;;;;;;;;x
 glad_bhikku;Glad Bhikku;;;;;;;;;;;;;x
 glad_bhikku_desc;This character has donated alms to the local temple and has made wonders for their bhikku.;;;;;;;;;;;;;x
+donated_spiritual_prize;Donated a prized Earth-Terma;;;;;;;;;;;;;x
 ###########Custom Text###########
 fast_begins_custom_text;May my vow of asceticism be fruitful...;;;;;;;;;;;;;x
 fast_sicknesss;You feel queezy but you must power through.;;;;;;;;;;;;;x
@@ -113,3 +116,103 @@ LANTERN_SHOW;As dusk falls over the city, a thousand lamps of every color and sh
 EVTOPTA_budevent112;I have accrued enough merits...;;;;;;;;;;;;;x
 EVTOPTB_budevent112;...But I could yet accrue more;;;;;;;;;;;;;x
 EVTOPTC_budevent112;It was a good day...;;;;;;;;;;;;;x
+
+#Terma Expedition
+EVTNAME_terma_describe;The Earthly Realm;;;;;;;;;;;;;x
+EVTDESC_terma_describe;It is said that all over the Earthly Realm powerful tantric artifacts known as Earth-Terma lay in wait and according to tradition contain "hidden treasures" of understanding that many of the Rime Faith strive to find. These artifacts come in many forms: ritual objects, sacred texts and simply magical objects left behind by those that walk before us. While the event has sundered the world from the old connections some hold out hope that some of these relics hold those secrets within...\n\nAcquiring such Earth-Terma will not only bring me great renown and prestige, it is the sacred duty of all adherences of the Rime Movement.;;;;;;;;;;;;x
+EVTOPT_terma_describe;Hmmm, where will I find well-preserved terma?;;;;;;;;;;;;x
+EVTDESC_terma_choosesite;You check the maps, and have located several potential expedition sites in the province of [From.GetName]. The people of [From.GetName] follow the [From.Religion.GetName] faith, and are culturally [From.Culture.GetName].\n\nProvinces populated by the ignorant are more likely to contain items of spiritual significance, since they do not have the traditions of terma.;;;;;;;;;;;;x
+EVTDESC_terma_choosesite_accept;That will be my destination.;;;;;;;;;;;;x
+EVTDESC_terma_choosesite_reject;That province is unacceptable.;;;;;;;;;;;;x
+EVTDESC_terma_prepare;Before leaving on your Terma Expedition to [From.GetName], it would be wise to make preparations.;;;;;;;;;;;;x
+EVTOPT_terma_prepare_start;Set out with your men.;;;;;;;;;;;;x
+EVTOPT_terma_prepare_research;Consult the masters for good terma locations.;;;;;;;;;;;;x
+EVTOPT_terma_prepare_warband;Assemble a battle-hardened warband to accompany you.;;;;;;;;;;;;x
+EVTOPT_terma_prepare_envoys;Send envoys ahead to smooth your travels.;;;;;;;;;;;;x
+EVTNAME_terma_unfriendly;Unfriendly Locals;;;;;;;;;;;;;x
+EVTDESC_terma_unfriendly;You arrive in [From.GetName], and many of the local residents are distrustful or outright hostile towards you and your men. You notice them amuleting you surreptitiously and talking amongst themselves, and have a difficult time finding a place to rest.;;;;;;;;;;;;x
+EVTOPT_terma_unfriendly_ignore;Ignore them.;;;;;;;;;;;;x
+EVTOPT_terma_unfriendly_warband;We're well armed, they won't risk attacking us.;;;;;;;;;;;;x
+EVTOPT_terma_unfriendly_envoys;My envoys have arranged for reliquary passage.;;;;;;;;;;;;x
+EVTOPT_terma_unfriendly_intrigue;Try to keep a low profile.;;;;;;;;;;;;x
+EVTDESC_terma_provowner;Other Terma Specialists from a nearby realm are attempting to retrieve the Earth-Terma from your lands in [Root.GetName]. Their presence seems to be drawing the ire of the local [Root.Religion.GetName] population, who are preparing for a confrontation with them.;;;;;;;;;;;;x
+EVTOPT_terma_provowner_violence;Let the locals drive them away.;;;;;;;;;;;;x
+EVTOPT_terma_provowner_peaceful;We must avoid bloodshed.;;;;;;;;;;;;x
+EVTDESC_terma_peaceful;Mixed among the local residents in [From.GetName], you see the occasional soldier wearing the colors of [From.Holder.GetTitledFirstName]. Fortunately, the soldiers seem to be ensuring that order is maintained and the locals allow you to pass without conflict.;;;;;;;;;;;;x
+EVTNAME_terma_violence;Hostile Locals;;;;;;;;;;;;;x
+EVTDESC_terma_violence;Your continued presence in [From.GetName] has drawn the ire of the local peasantry, and you are now confronted by a disorganized mob of angry villagers. They may not be well armed, and they're certainly not well trained...\n\n...but there are a lot of them.;;;;;;;;;;;;x
+EVTOPT_terma_violence_flee;We should turn back.;;;;;;;;;;;;x
+TXT_terma_flee;Your Terma Expedition is over.;;;;;;;;;;;;x
+TXT_terma_continue;Your Terma Expedition continues.;;;;;;;;;;;;x
+EVTOPT_terma_violence_fight;We can fight our way through!;;;;;;;;;;;;x
+EVTOPT_terma_violence_fightwarband;They'll back down from a vulgar display of power!;;;;;;;;;;;;x
+EVTOPT_terma_violence_bribe;Peasants like silver, right?;;;;;;;;;;;;x
+EVTNAME_terma_drivenout;Driven from [From.From.GetName];;;;;;;;;;;;x
+EVTDESC_terma_drivenout;Hordes of angry local villagers have driven you from their lands, ending your Terma Expedition. If it makes you feel better, tell yourself you left to avoid shedding THEIR blood.;;;;;;;;;;;;x
+EVTNAME_terma_agent;Competing Terma Specialist;;;;;;;;;;;;;x
+EVTDESC_terma_agent;During your expedition to [From.GetName], you encounter an agent of an unknown lord who shares your faith. He appears to be scouting new terma sites for his master, in direct competition with you!;;;;;;;;;;;;x
+EVTOPT_terma_agent;May the best Terma Specialist win!;;;;;;;;;;;;x
+EVTOPT_terma_agent_research;Direct him to a promising site nearby.;;;;;;;;;;;;x
+EVTOPT_terma_agent_intrigue;Make him disappear.;;;;;;;;;;;;x
+EVTNAME_terma_collapse;Collapse!;;;;;;;;;;;;x
+EVTDESC_terma_collapse;You hoped the wooden reinforcement beams would be enough, but one of them slipped. The centuries have not been kind to the crumbling stone and supports, and the whole unstable mess is coming down around you!;;;;;;;;;;;;x
+EVTOPT_terma_collapse_flee;Run for it!;;;;;;;;;;;;x
+EVTOPT_terma_collapse_brave;I won't let debris stand in my way!;;;;;;;;;;;;x
+EVTOPT_terma_collapse_plan;I planned for this risk.;;;;;;;;;;;;x
+recent_terma;Recent Terma;;;;;;;;;;;;;x
+recent_terma_desc;This character has recently gone on a Terma Expedition.;;;;;;;;;;;;x
+preparing_expedition;Preparing Expedition;;;;;;;;;;;;;x
+preparing_expedition_desc;This character is preparing to go on a Terma Expedition.;;;;;;;;;;;;x
+EVTNAME_terma_value;Terma in [From.GetName];;;;;;;;;;;;x
+EVTDESC_terma_worthless;Your expedition has turned up very little valuable terma. You have explored many ruined buildings, and everywhere you look you find the ruins picked clean.;;;;;;;;;;;;x
+EVTOPT_terma_worthless;Disappointing.;;;;;;;;;;;;x
+EVTOPT_terma_worthless_compete;Someone has been here before me...;;;;;;;;;;;;x
+EVTOPT_terma_worthless_research;There is another site nearby we could check.;;;;;;;;;;;;x
+EVTDESC_terma_moderate;Your expedition has turned up a few items of useful terma. In the ruined buildings and tunnels you have uncovered several artifacts, though you have not yet found the kind of major prize you were hoping for.;;;;;;;;;;;;x
+EVTOPT_terma_moderate;At least I found something.;;;;;;;;;;;;x
+EVTOPT_terma_moderate_research;Hawk these trinkets, I know of another site.;;;;;;;;;;;;x
+EVTDESC_terma_reliquary;Your men have discovered a large metal box beneath the ruins of a long-forgotten structure in [From.GetName]. The strongbox is corroded but still intact. Who knows what mystical relics of Old are sealed within it?;;;;;;;;;;;;x
+EVTOPT_terma_reliquary;I'll know soon, crack it open!;;;;;;;;;;;;x
+EVTOPT_terma_reliquary_patient;Have your tinker open it carefully.;;;;;;;;;;;;x
+EVTNAME_terma_item;Terma;;;;;;;;;;;;;x
+EVTDESC_terma_conch_shells;You have found conch shells, but none of them are especially unblemished by the ruins around it. There are objects that may have once been used for to make nice jewelry and serve as offerings, but it's hard to tell with the fragments that remain. They might be worth a few gold pieces to the right buyer.;;;;;;;;;;;;x
+EVTDESC_terma_tokens;Your men have discovered a cache of corroded tokens from an old box. Their tokens were inexplicably made out of base metals rather than gold or silver, dramatically reducing their value as ritualistic artifacts but perhaps they could be a nice gift for the local market-goer.;;;;;;;;;;;;x
+EVTDESC_terma_herbs;You have discovered a long-hidden supply of Old World herbs. Unlike objects of precious stones and metal, well aired herbs can still be useful in rituals. You need but wipe off the centuries and you'll have fine collection of herbs to burn as incense with a mysterious aura of days long gone.;;;;;;;;;;;;x
+EVTDESC_terma_boddhi_statue;Amongst the ruins you stumble before a lonesome shadow just beyond your perception, you find a fabulously preserved piece of a statues of Bodhisattvas and furious Mahakala. Though blemished by sands of time, the beautiful object itself does not seem to have rusted. It is about five feet tall, with an enlightened fearsome pose befitting their rank. It is sturdy and seemingly "warm" by grace itself.\n\nThis will be a great addition to your great hall, or part of a shrine.;;;;;;;;;;;;x
+EVTDESC_terma_reliquary_smash;Your men carefully pull apart the ancient box, and succeed in prying the door off after a few hours. Whether it was the rough handling of the box, the ravages of time and moisture, or simple bad luck, you find nothing of value within.;;;;;;;;;;;;x
+EVTNAME_terma_reliquary_jewellery;Treasures!;;;;;;;;;;;;x
+EVTDESC_terma_reliquary_jewellery;The reliquary door finally opens, and you can see the contents: a variety of precious jewels, glittering with gold, silver, and precious stones. The craftsmanship is finer and more intricate than what modern goldsmiths can produce.;;;;;;;;;;;;x
+EVTNAME_terma_reliquary_hidden_sutra;Ancient Folios;;;;;;;;;;;;x
+EVTDESC_terma_reliquary_hidden_sutra;The reliquary door finally opens, and you can see the contents: several old folios bound with crumbling dark leather and stacks of wooden and stone tablets etched with ancient sutras. It's amazing how well the box has preserved its contents, the seal must have been perfect. The folios are filled with line after line of ancient sayings though hard to read.\n\nPerhaps with a bit more examination these texts could be illuminating to your court.;;;;;;;;;;;;x
+EVTNAME_terma_reliquary_paintings;Paintings?;;;;;;;;;;;;x
+EVTDESC_terma_reliquary_paintings;The reliquary door finally opens, and you can see the contents: a collection of dozens of tiny paintings, discolored with age but extremely detailed. The paintings depict events both mythological and seemingly historical. How these paintings were produced is a mystery to you, as the canvas is very thin and there are no visible brush strokes.\n\nThe cracked and crumbling condition of the paintings makes you think they are unlikely to last long after being removed from the sealed reliquary.;;;;;;;;;;;;x
+EVTDESC_terma_reliquary_bells;The reliquary door finally opens, and you can see the contents: a collection of small ornate bells meant to be held. Each bell is exquisitely crafted you happily give it a little ring and to your surprise it still works, playing a soft melody that has probably not been played for centuries at the very least.\n\nThis will be a hit among the court but especially in the primacy of the temple masters.;;;;;;;;;;;;x
+EVTNAME_terma_reliquary_damaru;Powerful!;;;;;;;;;;;;x
+EVTDESC_terma_reliquary_damaru;The reliquary door finally opens, and you can see the contents: a small wood-bound drum with various bits of sinews and brittle wood attached to it. You've heard that this is a damaru, a tool instrumental in many pieces of music but this particular damaru seem of an exceptional quality that you have never seen before.\n\nThough the reliquary has preserved it well, you will have to handle it gently and be unable to fix it if it breaks.;;;;;;;;;;;;x
+EVTDESC_terma_reliquary_khata;The reliquary door finally opens, and you can see the contents: a well preserved khata its silk cotton and gold embroidery surprisingly intact despite its apparent age. Expert weaves display prayers and scenes from across the Buddha's life, each labeled with a unique signature of this ancient weaver.\n\nAside from its religious significance it could be hung up if handled with exceptional care and restoration to make it sparkle...;;;;;;;;;;;;x
+EVTDESC_terma_reliquary_tunderbolt;The reliquary door finally opens, and you can see the contents: a well preserved piece of Vajra Dorje or "Thunderbolt". Representing the industriability of Diamond and the furious power of Lightning, it craft is exceptional and engraved with magical runes.\n\nFor its beauty one must be gentle in how to use and maintain it...;;;;;;;;;;;;x
+EVTDESC_terma_reliquary_amulet;The reliquary door finally opens, and you can see the contents: a golden, palm-sized square mirror reflecting the face of the buddha, attached to an intricate chain of precious stones. When you clean the dust off it you seen a protection rune scrawled across the edges from ancient tantric masters, and you realize that the artifact is an ancient protection amulet.\n\nIt would be a stylish accessory for any lord, but it would be even more useful if you could understand its workings and avoid attracting unwanted spirits.;;;;;;;;;;;;x
+EVTDESC_terma_reliquary_cymbals;The reliquary door finally opens, and you can see the contents: a pair of cymbals intricately designed and smooth like polished glass. This instrument forms one of the sacred instruments during rituals back at home.;;;;;;;;;;;;x
+EVTNAME_terma_result;Terma Expedition ends;;;;;;;;;;;;;x
+EVTDESC_terma_result_poor;Not all Terma Expeditions end in success. Sometimes the recovered artifacts are badly damaged, sometimes they are worthless, sometimes there isn't anything to terma because the area has been picked clean, and sometimes dangerous circumstances interrupt the expedition.\n\nThis is one of those times.;;;;;;;;;;;;x
+EVTOPT_terma_result_poor;Until next time.;;;;;;;;;;;;x
+EVTDESC_terma_result_medium;You have returned from your Terma Expedition with baubles and artifacts from the ancient ruins. Although you did not find an Earth Terma truly worthy of [Root.Religion.GetRandomGodName]'s favor, at least you didn't return empty handed.;;;;;;;;;;;;x
+EVTOPT_terma_result_medium_keep;I'll keep the terma for myself.;;;;;;;;;;;;x
+EVTOPT_terma_result_medium_sell;Someone will buy these trinkets.;;;;;;;;;;;;x
+EVTOPT_terma_result_medium_donate;I will donate these artifacts to the masters for study.;;;;;;;;;;;;x
+EVTDESC_terma_result_good;You have returned from your Terma Expedition with an exciting Earth Terma, worthy of [Root.Religion.GetRandomGodName]'s favor. Your court is buzzing with word of your success, and the masters are already coming to you with requests to examine your prize. It remains to be seen whether you can return the artifact to a functional state.\n\nThis will surely bring you fame, power, and understanding of the hidden treasures of the world.;;;;;;;;;;;;x
+EVTOPT_terma_result_study;I must study and repair my prize.;;;;;;;;;;;;x
+EVTNAME_terma_repair_prize;A Terma Restored;;;;;;;;;;;;;x
+EVTDESC_terma_study_damaru;After weeks of study, your specialists have finally restored your Old World damaru to working condition! Much of the wood body had to be replaced, but the metal parts were functional, all other parts were adequately substituted for a stronger overall object.;;;;;;;;;;;;x
+EVTOPT_terma_study_damaru;This will see use once more.;;;;;;;;;;;;x
+EVTDESC_terma_study_tunderbolt;After weeks of study, your jewelers have finally restored your vajra dorje to working condition! You are still learning to handle the delicate relic with the utmost care.;;;;;;;;;;;;x
+EVTDESC_terma_study_amulet;After weeks of study, your diviners have finally restored your gilded amulet and dispelled any previous enchantments placed on it! The Diviners ensured that the amulet will protect you and that they went to placate the spirits invoked on this ancient talisman on your behalf, you smile and thank them for their hard work.;;;;;;;;;;;;x
+EVTDESC_terma_study_khata;After weeks of study, your seamstress have finally restored your seams of the Khata to no longer be frail to a touch. It took many days but the colors of the Khata shimmer like many others found in the courts temples and markets of your realm.;;;;;;;;;;;;x
+EVTDESC_terma_study_cymbals;After weeks of study, your jewelers have finally restored your brass cymbals to working condition! Polishing with a soft cloth has brought the shine back to the metal, while the brass cymbals have retained their nearly perfect tuning. When you give it a try you swear you hear a faint tremor of a distant memory in these instruments that had you deeply contemplating for the night after.;;;;;;;;;;;;x
+EVTDESC_terma_study_hidden_sutra;After weeks of study, your scholars have learned many things about your collection of pre-calamity sutras. Several of the sutras have fallen to pieces during transport or study, but those that survived are providing valuable insight into medicine, the mystical, and other topics related to the Buddha's life.;;;;;;;;;;;;x
+EVTNAME_terma_fail_prize;Unsolved Mysteries;;;;;;;;;;;;;x
+EVTDESC_terma_study_fail;Despite weeks of effort you have failed to restore your terma to a useful state. Your assistants don't possess the knowledge or the tools to help you accomplish this task, and your efforts only seem to be causing additional damage. Major portions of the prize are damaged or missing, and there may be some mystical component required to make the device function that is not available to you.;;;;;;;;;;;;x
+EVTOPT_terma_study_keep;I can still display it as art.;;;;;;;;;;;;x
+EVTOPT_terma_study_sell;Someone will buy it from me.;;;;;;;;;;;;x
+EVTOPT_terma_study_learn;The real prize is the knowledge I've gained.;;;;;;;;;;;;x
+EVTOPT_terma_study_donate;The masters will find a use for it.;;;;;;;;;;;;x
