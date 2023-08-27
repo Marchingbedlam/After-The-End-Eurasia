@@ -4360,3 +4360,73 @@ upgrade_ovoo = { #Sacred Stones
 		custom_modifier_text = private_talk_possible_modifier_tt
 	}
 }
+upgrade_potrang_marpo = {
+	picture = GFX_upgrade_icon_key
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		room
+		is_singular
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	local_modifier = {
+		land_organisation = 0.1
+		disease_defence = 0.05
+		monthly_character_prestige = 0.05
+		defensive_plot_power_modifier = 0.05
+	}
+	owner_modifier = {
+		monthly_character_prestige = 0.05
+		custom_modifier_text = private_talk_possible_modifier_tt
+	}
+}
+upgrade_potrang_karpo = {
+	picture = GFX_upgrade_icon_key
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		room
+		is_singular
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	local_modifier = {
+		land_organisation = 0.1
+		disease_defence = 0.05
+		monthly_character_prestige = 0.05
+		defensive_plot_power_modifier = 0.05
+	}
+	owner_modifier = {
+		monthly_character_prestige = 0.05
+		custom_modifier_text = private_talk_possible_modifier_tt
+	}
+}
+upgrade_norbulingka = {
+	picture = GFX_upgrade_icon_roses_white
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		is_plural
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	local_modifier = {
+		disease_defence = 0.05
+		monthly_character_prestige = 0.05
+		defensive_plot_power_modifier = 0.05
+	}
+	owner_modifier = {
+		monthly_character_prestige = 0.1
+		gardener_opinion = 5
+	}
+}

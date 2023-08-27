@@ -97,6 +97,7 @@
 # 7F. Sri Ranganathaswamy Temple in Tamil Nadu ............ wonder_ranganathaswamy
 # 7G. Colosseum .............. wonder_colosseum
 # 7H. Biblioteca Marciana ............... wonder_biblioteca_marciana
+# 7I. Potala Palace ............... wonder_potala_palace
 
 ###################################################################
 
@@ -4058,6 +4059,137 @@ wonder_shapurs_castle = {
 			monthly_character_prestige = 0.1
 			land_morale = 0.03
 			court_size_maintenance_cost_modifier = -0.05
+		}
+	}
+}
+
+# 7I. Potala Palace
+wonder_potala_palace = {
+	allow_coastal = yes
+	picture = GFX_wonder_strip_potala_palace
+	potential = {
+	}
+	active = {
+		ROOT = {
+			OR = {
+				religion_group = buddhist_group
+				culture_group = tibetan
+			}
+		}
+	}
+	flags = {
+		defensive
+		holy_building
+		inspires_piety
+	}
+	available_upgrades = {
+		# UNIQUE:
+		upgrade_armory
+		upgrade_soaring_fortresses
+		upgrade_watch_tower
+		upgrade_vault
+		upgrade_garden_inner
+		upgrade_chaitya-grihas
+		upgrade_gompa
+		upgrade_bodhi_tree
+		upgrade_vihara
+		upgrade_school_buddhist
+		upgrade_relic_stupa
+		upgrade_commerative_stupa
+		upgrade_symbolic_stupa
+		upgrade_votive_stupa
+		
+		# OTHER:
+		upgrade_roads
+		upgrade_watchtower_network
+		upgrade_spikes
+		upgrade_hypocausts
+		upgrade_heating_pipes
+		upgrade_retinue
+		upgrade_road_tolls
+		upgrade_tavern
+		upgrade_historical_mural
+	}
+	stage = {
+		allow = {
+		}
+		build_time = 300
+		gold_cost_flat = 2000
+		gold_cost_ticking = 3
+		restore_time = 150
+		loot_time = 200
+		restore_cost_flat = 400
+		restore_cost_ticking = 2
+		upgrade_slots = 2
+		local_modifier = {
+			fort_level = 0.25
+		}
+		owner_modifier = {
+			monthly_character_prestige = 0.1
+			court_size_maintenance_cost_modifier = -0.05
+			monthly_character_piety = 0.1
+		}
+	}
+	stage = {
+		allow = {
+		}
+		build_time = 400
+		gold_cost_flat = 2100
+		gold_cost_ticking = 3
+		restore_time = 200
+		loot_time = 200
+		restore_cost_flat = 500
+		restore_cost_ticking = 2
+		upgrade_slots = 2
+		local_modifier = {
+			fort_level = 0.25
+		}
+		owner_modifier = {
+			monthly_character_prestige = 0.1
+			court_size_modifier = 5
+			monthly_character_piety = 0.2
+		}
+	}
+	stage = {
+		allow = {
+		}
+		build_time = 500
+		gold_cost_flat = 2200
+		gold_cost_ticking = 3
+		restore_time = 200
+		loot_time = 20
+		restore_cost_flat = 500
+		restore_cost_ticking = 2
+		upgrade_slots = 2
+		local_modifier = {
+			fort_level = 0.25
+			siege_defence = 0.05
+		}
+		owner_modifier = {
+			court_size_maintenance_cost_modifier = -0.05
+			monthly_character_prestige = 0.1
+			monthly_character_piety = 0.2
+		}
+	}
+	stage = {
+		allow = {
+		}
+		build_time = 600
+		gold_cost_flat = 2300
+		gold_cost_ticking = 3
+		restore_time = 200
+		loot_time = 20
+		restore_cost_flat = 500
+		restore_cost_ticking = 2
+		upgrade_slots = 2
+		local_modifier = {
+			fort_level = 0.5
+			siege_defence = 0.05
+		}
+		owner_modifier = {
+			monthly_character_prestige = 0.1
+			court_size_modifier = 5
+			monthly_character_piety = 0.3
 		}
 	}
 }

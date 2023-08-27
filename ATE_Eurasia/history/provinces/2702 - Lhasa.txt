@@ -15,3 +15,28 @@ religion = gelugpa
 terrain = mountain
 
 # History
+652.1.1 = { #Construction of Jonkhang Temple Complex and a small fortress that will be the Potala Palace
+	build_wonder=wonder_potala_palace
+	set_wonder_stage=2
+	build_wonder_upgrade = upgrade_vihara
+	build_wonder_upgrade = upgrade_relic_stupa
+	build_wonder_upgrade = upgrade_commerative_stupa
+	build_wonder_upgrade = upgrade_symbolic_stupa
+	build_wonder_upgrade = upgrade_votive_stupa
+}
+1645.1.1 = { #Construction of the Main Potala Fortress
+	set_wonder_stage=3
+	build_wonder_upgrade = upgrade_historical_mural
+	build_wonder_upgrade = upgrade_soaring_fortresses
+	build_wonder_upgrade = upgrade_watchtower_network
+}
+1694.1.1 = { #Construction of the White/Red Palace
+	build_wonder_upgrade = upgrade_potrang_marpo
+	build_wonder_upgrade = upgrade_potrang_karpo
+}
+1755.1.1 = { #Construction of Norbulingka
+	build_wonder_upgrade = upgrade_norbulingka
+}
+1959.3.10 = { #Damage from the Sino-Tibetan War
+	set_wonder_stage=2
+}
