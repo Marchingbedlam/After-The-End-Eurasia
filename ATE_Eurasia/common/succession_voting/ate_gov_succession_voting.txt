@@ -908,8 +908,6 @@ ghazi_elective = {
 			NOR = {
 				has_religion_feature = religion_matriarchal
 				has_religion_feature = religion_equal
-				has_religion_feature = religion_feature_aria_de_machete
-				has_religion_feature = religion_feature_midewiwin
 				has_game_rule = {
 					name = gender
 					value = all
@@ -928,8 +926,6 @@ ghazi_elective = {
 			NOR = {
 				has_religion_feature = religion_patriarchal
 				has_religion_feature = religion_equal
-				has_religion_feature = religion_feature_aria_de_machete
-				has_religion_feature = religion_feature_midewiwin
 				has_game_rule = {
 					name = gender
 					value = all
@@ -949,8 +945,6 @@ ghazi_elective = {
 			NOR = {
 				has_religion_feature = religion_matriarchal
 				has_religion_feature = religion_equal
-				has_religion_feature = religion_feature_aria_de_machete
-				has_religion_feature = religion_feature_midewiwin
 				has_game_rule = {
 					name = gender
 					value = all
@@ -969,8 +963,6 @@ ghazi_elective = {
 			NOR = {
 				has_religion_feature = religion_matriarchal
 				has_religion_feature = religion_equal
-				has_religion_feature = religion_feature_aria_de_machete
-				has_religion_feature = religion_feature_midewiwin
 				has_game_rule = {
 					name = gender
 					value = all
@@ -989,8 +981,6 @@ ghazi_elective = {
 			NOR = {
 				has_religion_feature = religion_matriarchal
 				has_religion_feature = religion_equal
-				has_religion_feature = religion_feature_aria_de_machete
-				has_religion_feature = religion_feature_midewiwin
 				has_game_rule = {
 					name = gender
 					value = all
@@ -1009,8 +999,6 @@ ghazi_elective = {
 			NOR = {
 				has_religion_feature = religion_matriarchal
 				has_religion_feature = religion_equal
-				has_religion_feature = religion_feature_aria_de_machete
-				has_religion_feature = religion_feature_midewiwin
 				has_game_rule = {
 					name = gender
 					value = all
@@ -1202,22 +1190,6 @@ ghazi_elective = {
 					FROM = { religion_group = christian } 
 				} 
 				AND = { 
-					trait = sympathy_afro_syncretic
-					FROM = { religion_group = afro_syncretic } 
-				} 
-				AND = { 
-					trait = sympathy_american_native
-					FROM = { religion_group = american_native } 
-				}
-				AND = { 
-					trait = sympathy_amero_syncretic
-					FROM = { religion_group = amero_syncretic } 
-				}
-				AND = { 
-					trait = sympathy_pacific
-					FROM = { religion_group = pacific } 
-				} 
-				AND = { 
 					trait = sympathy_judaism
 					FROM = { religion_group = jewish_group } 
 				} 
@@ -1226,25 +1198,9 @@ ghazi_elective = {
 					FROM = { religion_group = indian_group } 
 				} 
 				AND = { 
-					trait = sympathy_nautical
-					FROM = { religion_group = nautical } 
-				} 
-				AND = { 
-					trait = sympathy_cult_of_saints
-					FROM = { religion_group = cult_of_saints } 
-				} 
-				AND = { 
-					trait = sympathy_cult_of_saints
-					FROM = { religion_group = cult_of_saints } 
-				} 
-				AND = { 
 					trait = sympathy_pagans
 					FROM = { religion_group = pagan_group } 
-				} 
-				AND = { 
-					trait = sympathy_oldworld
-					FROM = { religion_group = oldworld } 
-				} 
+				}  
 
 
 			}
@@ -2977,13 +2933,6 @@ ghazi_elective = {
 				OR = { 
 					trait = sympathy_christendom
 					trait = sympathy_judaism
-					trait = sympathy_afro_syncretic
-					trait = sympathy_american_native
-					trait = sympathy_amero_syncretic
-					trait = sympathy_pacific
-					trait = sympathy_oldworld
-					trait = sympathy_mesoamerican_gods
-					trait = sympathy_nautical
 					trait = sympathy_pagans
 					trait = sympathy_indian
 				}

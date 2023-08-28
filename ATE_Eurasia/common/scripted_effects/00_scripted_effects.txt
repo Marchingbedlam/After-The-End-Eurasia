@@ -5367,10 +5367,6 @@ monastic_order_purity_effect = {
 
 join_prev_monastic_order_society = {
 	if = {
-		limit = { PREV = { society_member_of = monastic_order_evangelical } }
-		join_society = monastic_order_evangelical
-	}
-	if = {
 		limit = { PREV = { society_member_of = monastic_order_benedictine } }
 		join_society = monastic_order_benedictine
 	}
@@ -5378,33 +5374,17 @@ join_prev_monastic_order_society = {
 		limit = { PREV = { society_member_of = monastic_order_dominican } }
 		join_society = monastic_order_dominican
 	}
-	if = {
-		limit = { PREV = { society_member_of = monastic_order_leibowitz } }
-		join_society = monastic_order_leibowitz
+    if = {
+		limit = { PREV = { society_member_of = monastic_order_sunni } }
+		join_society = monastic_order_sunni
 	}
-	if = {
-		limit = { PREV = { society_member_of = monastic_order_ursuline } }
-		join_society = monastic_order_ursuline
+    if = {
+		limit = { PREV = { society_member_of = monastic_order_shiite } }
+		join_society = monastic_order_shiite
 	}
-	if = {
-		limit = { PREV = { society_member_of = monastic_order_mormon } }
-		join_society = monastic_order_mormon
-	}
-	if = {
-		limit = { PREV = { society_member_of = monastic_order_hindu } }
-		join_society = monastic_order_hindu
-	}
-	if = {
-		limit = { PREV = { society_member_of = monastic_order_jewish } }
-		join_society = monastic_order_jewish
-	}
-	if = {
-		limit = { PREV = { society_member_of = monastic_order_cetic } }
-		join_society = monastic_order_cetic
-	}
-	if = {
-		limit = { PREV = { society_member_of = regla_de_ifa } }
-		join_society = regla_de_ifa
+    if = {
+		limit = { PREV = { society_member_of = monastic_order_naqshbandi } }
+		join_society = monastic_order_naqshbandi
 	}
 }
 
@@ -9632,22 +9612,6 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 					NOT = {
 						has_character_was_religion_flag_trigger = yes
 					}
-					religion = angeline
-				}
-				has_character_flag = character_was_angeline
-			}
-		}
-		set_secret_religion = angeline
-		clr_character_flag = character_was_angeline
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
 					religion = anabaptist
 				}
 				has_character_flag = character_was_anabaptist
@@ -10793,10 +10757,6 @@ add_religion_char_flag_effect = {
 		set_character_flag = character_was_ursuline
 	}
 	if = {
-		limit = { religion = angeline }
-		set_character_flag = character_was_angeline
-	}
-	if = {
 		limit = { religion = anabaptist }
 		set_character_flag = character_was_anabaptist
 	}
@@ -11085,7 +11045,6 @@ clr_religion_char_flag_effect = {
 	clr_character_flag = character_was_neognostic
 	clr_character_flag = character_was_sedevacantist
 	clr_character_flag = character_was_ursuline
-	clr_character_flag = character_was_angeline
 	clr_character_flag = character_was_anabaptist
 	clr_character_flag = character_was_batenburger
 	clr_character_flag = character_was_evangelical
@@ -11265,13 +11224,6 @@ event_target_old_religion_from_flag_effect = {
 		limit = { has_character_flag = character_was_ursuline }
 		random_character = {
 			limit = { religion = ursuline }
-			save_event_target_as = old_religion
-		}
-	}
-	if = {
-		limit = { has_character_flag = character_was_angeline }
-		random_character = {
-			limit = { religion = angeline }
 			save_event_target_as = old_religion
 		}
 	}
@@ -13382,17 +13334,6 @@ flip_secret_religious_community_provinces = {
 					}
 					religion = ursuline
 					remove_province_modifier = secret_ursuline_community
-				}
-			}
-		}
-		secret_religious_society_angeline = {
-			ROOT = {
-				any_demesne_province = {
-					limit = {
-						has_province_modifier = secret_angeline_community
-					}
-					religion = angeline
-					remove_province_modifier = secret_angeline_community
 				}
 			}
 		}
@@ -17964,17 +17905,6 @@ root_secret_religion_provinces_convert_effect = {
 						}
 						religion = ursuline
 						remove_province_modifier = secret_ursuline_community
-					}
-				}
-			}
-			secret_religious_society_angeline = {
-				PREV = {
-					any_demesne_province = {
-						limit = {
-							has_province_modifier = secret_angeline_community
-						}
-						religion = angeline
-						remove_province_modifier = secret_angeline_community
 					}
 				}
 			}
@@ -26672,32 +26602,6 @@ landless_pope_effect = {
 			character_event = { id = HFP.40035 }
 		}
 	}
-	if = {
-		limit = {
-			has_landed_title = k_ursuline
-			NOT = {
-				ursuline = {
-					is_name_randomized = yes
-				}
-			}
-		}
-		if = {
-			limit = {
-				NOR = {
-					any_demesne_province = {
-						always = yes
-					}
-					any_realm_lord = {
-						any_demesne_province = {
-							always = yes
-						}
-					}
-				}
-			}
-			#character_event = { id = HFP.40034 }
-			character_event = { id = canada.28 }
-		}
-	}
 }
 
 # Used for rains in African regions...
@@ -29688,677 +29592,139 @@ assign_random_nickname_effect = {
 
 abdicate_holy_order_if_religion_changes_effect = { #why. why did you add this effect like this, paradox. why do i now have to replace this with every ate holy order. stop coding like this
 	#Cycle through all Holy Orders and update them 
-	k_ursuline_state = {
+	d_forge_committee = {
 		if = {
 			limit = {
-				religion = ursuline
-				is_title_active = k_ursuline_state
+				religion = chronicler
+				is_title_active = d_forge_committee
 				owner = { 
 					ai = yes
 					holy_order = yes 
-					NOT = { religion = ursuline } 
+					NOT = { religion = chronicler } 
 				}
 			}
-			log = "[k_ursuline_state.owner.GetTitledFirstName] was found to be unfit to lead the [k_ursuline_state.GetName] due to religious conflict! Title is ursuline, but owner is not. "
+			log = "[d_forge_committee.owner.GetTitledFirstName] was found to be unfit to lead the [d_forge_committee.GetName] due to religious conflict! Title is chronicler, but owner is not. "
 			log = "ROOT = [Root.GetTitledFirstName] FROM = [From.GetTitledFirstName] PREV = [Prev.GetTitledFirstName]"
 		}
 	}
-
-	d_knights_of_columbus = {
+    d_stjarngossarna = {
 		if = {
 			limit = {
-				is_title_active = d_knights_of_columbus
+				religion = fornsed
+				is_title_active = d_stjarngossarna
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = fornsed } 
+				}
+			}
+			log = "[d_stjarngossarna.owner.GetTitledFirstName] was found to be unfit to lead the [d_stjarngossarna.GetName] due to religious conflict! Title is fornsed, but owner is not. "
+			log = "ROOT = [Root.GetTitledFirstName] FROM = [From.GetTitledFirstName] PREV = [Prev.GetTitledFirstName]"
+		}
+	}
+    d_trollsikkerhetstjensten = {
+		if = {
+			limit = {
+				religion = folketro
+				is_title_active = d_trollsikkerhetstjensten
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = folketro } 
+				}
+			}
+			log = "[d_trollsikkerhetstjensten.owner.GetTitledFirstName] was found to be unfit to lead the [d_trollsikkerhetstjensten.GetName] due to religious conflict! Title is folketro, but owner is not. "
+			log = "ROOT = [Root.GetTitledFirstName] FROM = [From.GetTitledFirstName] PREV = [Prev.GetTitledFirstName]"
+		}
+	}
+    d_order_of_saint_john = {
+		if = {
+			limit = {
+				religion = lutheran
+				is_title_active = d_order_of_saint_john
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = lutheran } 
+				}
+			}
+			log = "[d_order_of_saint_john.owner.GetTitledFirstName] was found to be unfit to lead the [d_order_of_saint_john.GetName] due to religious conflict! Title is lutheran, but owner is not. "
+			log = "ROOT = [Root.GetTitledFirstName] FROM = [From.GetTitledFirstName] PREV = [Prev.GetTitledFirstName]"
+		}
+	}
+    d_order_of_malta = {
+		if = {
+			limit = {
 				religion = catholic
+				is_title_active = d_order_of_malta
 				owner = { 
 					ai = yes
 					holy_order = yes 
 					NOT = { religion = catholic } 
 				}
 			}
-			log = "[d_knights_of_columbus.owner.GetTitledFirstName] was found to be unfit to lead the [d_knights_of_columbus.GetName] due to religious conflict! Title is catholic, but owner is not. "
+			log = "[d_order_of_malta.owner.GetTitledFirstName] was found to be unfit to lead the [d_order_of_malta.GetName] due to religious conflict! Title is catholic, but owner is not. "
 			log = "ROOT = [Root.GetTitledFirstName] FROM = [From.GetTitledFirstName] PREV = [Prev.GetTitledFirstName]"
 		}
 	}
-
-	d_knights_of_peter_claver = {
+    d_faustinian_knights = {
 		if = {
 			limit = {
-				is_title_active = d_knights_of_peter_claver
-				religion = catholic
+				religion = mariavite
+				is_title_active = d_faustinian_knights
 				owner = { 
 					ai = yes
 					holy_order = yes 
-					NOT = { religion = catholic } 
+					NOT = { religion = mariavite } 
 				}
 			}
-			log = "[d_knights_of_peter_claver.owner.GetTitledFirstName] was found to be unfit to lead the [d_knights_of_peter_claver.GetName] due to religious conflict! Title is catholic, but owner is not. "
+			log = "[d_faustinian_knights.owner.GetTitledFirstName] was found to be unfit to lead the [d_faustinian_knights.GetName] due to religious conflict! Title is mariavite, but owner is not. "
 			log = "ROOT = [Root.GetTitledFirstName] FROM = [From.GetTitledFirstName] PREV = [Prev.GetTitledFirstName]"
 		}
 	}
-
-	d_lebanon_brethren = {
+    d_kara_shahinler = {
 		if = {
 			limit = {
-				is_title_active = d_lebanon_brethren
-				religion = anabaptist
+				religion = ruhi
+				is_title_active = d_kara_shahinler
 				owner = { 
 					ai = yes
 					holy_order = yes 
-					NOT = { religion = anabaptist } 
+					NOT = { religion = ruhi } 
 				}
 			}
-			log = "[d_lebanon_brethren.owner.GetTitledFirstName] was found to be unfit to lead the [d_lebanon_brethren.GetName] and therefore removed by the abdicate holy order effect!"
-		}
-	}
-
-	d_st_ursulas_chosen = {
-		if = {
-			limit = {
-				is_title_active = d_st_ursulas_chosen
-				religion = ursuline
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = ursuline } 
-				}
-			}
-			log = "[d_st_ursulas_chosen.owner.GetTitledFirstName] was found to be unfit to lead the [d_st_ursulas_chosen.GetName] due to religious conflict! Title is ursuline, but owner is not. "
+			log = "[d_kara_shahinler.owner.GetTitledFirstName] was found to be unfit to lead the [d_kara_shahinler.GetName] due to religious conflict! Title is ruhi, but owner is not. "
 			log = "ROOT = [Root.GetTitledFirstName] FROM = [From.GetTitledFirstName] PREV = [Prev.GetTitledFirstName]"
 		}
 	}
-
-	d_masked_knights = {
+    d_haganah = {
 		if = {
 			limit = {
-				is_title_active = d_masked_knights
-				religion = sacred_heart
+				religion = ivri
+				is_title_active = d_haganah
 				owner = { 
 					ai = yes
 					holy_order = yes 
-					NOT = { religion = sacred_heart } 
+					NOT = { religion = ivri } 
 				}
 			}
-			log = "[d_masked_knights.owner.GetTitledFirstName] was found to be unfit to lead the [d_masked_knights.GetName] and therefore removed by the abdicate holy order effect!"
-		}
-	}
-
-	d_fh = {
-		if = {
-			limit = {
-				is_title_active = d_fh
-				religion = norse_pagan_reformed
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = norse_pagan_reformed } 
-				}
-			}
-			log = "[d_fh.owner.GetTitledFirstName] was found to be unfit to lead the [d_fh.GetName] due to religious conflict! Title is norse_pagan_reformed, but owner is not. "
-			log = "ROOT = [Root.GetTitledFirstName] FROM = [From.GetTitledFirstName] PREV = [Prev.GetTitledFirstName]"
-		}
-		if = {
-			limit = {
-				is_title_active = d_fh
-				religion = norse_pagan
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = norse_pagan} 
-				}
-			}
-			log = "[d_fh.owner.GetTitledFirstName] was found to be unfit to lead the [d_fh.GetName] due to religious conflict! Title is norse_pagan, but owner is not. "
+			log = "[d_haganah.owner.GetTitledFirstName] was found to be unfit to lead the [d_haganah.GetName] due to religious conflict! Title is ivri, but owner is not. "
 			log = "ROOT = [Root.GetTitledFirstName] FROM = [From.GetTitledFirstName] PREV = [Prev.GetTitledFirstName]"
 		}
 	}
-
-	d_men_in_black = {
+    d_capirote = {
 		if = {
 			limit = {
-				is_title_active = d_men_in_black
-				religion = americanist
+				religion = penitant
+				is_title_active = d_capirote
 				owner = { 
 					ai = yes
 					holy_order = yes 
-					NOT = { religion = americanist } 
+					NOT = { religion = penitant } 
 				}
 			}
-			log = "[d_men_in_black.owner.GetTitledFirstName] was found to be unfit to lead the [d_men_in_black.GetName] and therefore removed by the abdicate holy order effect!"
-		}
-	}
-
-	d_shomrim = {
-		if = {
-			limit = {
-				is_title_active = d_shomrim
-				religion = jewish
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = jewish } 
-				}
-			}
-			log = "[d_shomrim.owner.GetTitledFirstName] was found to be unfit to lead the [d_shomrim.GetName] and therefore removed by the abdicate holy order effect!"
-		}
-	}
-
-	d_iron_workers = {
-		if = {
-			limit = {
-				is_title_active = d_iron_workers
-				religion = rust_cultist
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = rust_cultist } 
-				}
-			}
-			log = "[d_iron_workers.owner.GetTitledFirstName] was found to be unfit to lead the [d_iron_workers.GetName] and therefore removed by the abdicate holy order effect!"
-		}
-	}
-
-	d_national_cathedral = {
-		if = {
-			limit = {
-				is_title_active = d_national_cathedral
-				religion = evangelical
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = evangelical } 
-				}
-			}
-			log = "[d_national_cathedral.owner.GetTitledFirstName] was found to be unfit to lead the [d_national_cathedral.GetName] and therefore removed by the abdicate holy order effect!"
-		}
-	}
-
-	d_flaming_sword = {
-		if = {
-			limit = {
-				is_title_active = d_flaming_sword
-				religion = revelationist_reformed
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = revelationist_reformed } 
-				}
-			}
-			log = "[d_flaming_sword.owner.GetTitledFirstName] was found to be unfit to lead the [d_flaming_sword.GetName] due to religious conflict! Title is revelationist_reformed, but owner is not. "
-			log = "ROOT = [Root.GetTitledFirstName] FROM = [From.GetTitledFirstName] PREV = [Prev.GetTitledFirstName]"
-		}
-		if = {
-			limit = {
-				is_title_active = d_flaming_sword
-				religion = revelationist
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = revelationist } 
-				}
-			}
-			log = "[d_flaming_sword.owner.GetTitledFirstName] was found to be unfit to lead the [d_flaming_sword.GetName] due to religious conflict! Title is revelationist, but owner is not. "
+			log = "[d_capirote.owner.GetTitledFirstName] was found to be unfit to lead the [d_capirote.GetName] due to religious conflict! Title is penitant, but owner is not. "
 			log = "ROOT = [Root.GetTitledFirstName] FROM = [From.GetTitledFirstName] PREV = [Prev.GetTitledFirstName]"
 		}
 	}
-
-	d_oto = {
-		if = {
-			limit = {
-				is_title_active = d_oto
-				religion = glorian
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = glorian } 
-				}
-			}
-			log = "[d_oto.owner.GetTitledFirstName] was found to be unfit to lead the [d_oto.GetName] due to religious conflict! Title is glorian, but owner is not. "
-			log = "ROOT = [Root.GetTitledFirstName] FROM = [From.GetTitledFirstName] PREV = [Prev.GetTitledFirstName]"
-		}
-	}
-
-	d_pony_express = {	#ADD TRAILWALKERS HERE
-		if = {
-			limit = {
-				is_title_active = d_pony_express
-				religion = trailwalker_reformed
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = trailwalker_reformed } 
-				}
-			}
-			log = "[d_pony_express.owner.GetTitledFirstName] was found to be unfit to lead the [d_pony_express.GetName] due to religious conflict! Title is trailwalker_reformed, but owner is not. "
-			log = "ROOT = [Root.GetTitledFirstName] FROM = [From.GetTitledFirstName] PREV = [Prev.GetTitledFirstName]"
-		}
-		if = {
-			limit = {
-				is_title_active = d_pony_express
-				religion = trailwalker
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = trailwalker } 
-				}
-			}
-			log = "[d_pony_express.owner.GetTitledFirstName] was found to be unfit to lead the [d_pony_express.GetName] due to religious conflict! Title is trailwalker, but owner is not. "
-			log = " ROOT = [Root.GetTitledFirstName] FROM = [From.GetTitledFirstName] PREV = [Prev.GetTitledFirstName]"
-		}
-	}
-
-	d_warriors_guaicaipuro = {
-		if = {
-			limit = {
-				is_title_active = d_warriors_guaicaipuro
-				religion = espiritista
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = espiritista } 
-				}
-			}
-			log = "[d_warriors_guaicaipuro.owner.GetTitledFirstName] was found to be unfit to lead the [d_warriors_guaicaipuro.GetName] due to religious conflict! Title is espiritista, but owner is not."
-			log = " ROOT = [Root.GetTitledFirstName] FROM = [From.GetTitledFirstName] PREV = [Prev.GetTitledFirstName]"
-		}
-		if = {
-			limit = {
-				is_title_active = d_warriors_guaicaipuro
-				religion = espiritista
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = espiritista } 
-				}
-			}
-			log = "[d_warriors_guaicaipuro.owner.GetTitledFirstName] was found to be unfit to lead the [d_warriors_guaicaipuro.GetName] due to religious conflict! Title is espiritista, but owner is not."
-			log = " ROOT = [Root.GetTitledFirstName] FROM = [From.GetTitledFirstName] PREV = [Prev.GetTitledFirstName]"
-		}
-	}
-
-	d_three_fires = {
-		if = {
-			limit = {
-				is_title_active = d_three_fires
-				religion = midewiwin_reformed
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = midewiwin_reformed } 
-				}
-			}
-			log = "[d_three_fires.owner.GetTitledFirstName] was found to be unfit to lead the [d_three_fires.GetName] due to religious conflict! Title is midewiwin_reformed, but owner is not."
-			log = " ROOT = [Root.GetTitledFirstName] FROM = [From.GetTitledFirstName] PREV = [Prev.GetTitledFirstName]"
-		}
-		if = {
-			limit = {
-				is_title_active = d_three_fires
-				religion = midewiwin
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = midewiwin } 
-				}
-			}
-			log = "[d_three_fires.owner.GetTitledFirstName] was found to be unfit to lead the [d_three_fires.GetName] due to religious conflict! Title is midewiwin, but owner is not."
-			log = " ROOT = [Root.GetTitledFirstName] FROM = [From.GetTitledFirstName] PREV = [Prev.GetTitledFirstName]"
-		}
-	}
-	
-	d_taxet_warriors = {
-		if = {
-			limit = {
-				is_title_active = d_taxet_warriors
-				religion = raven_tales_reformed
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = raven_tales_reformed } 
-				}
-			}
-			log = "[d_taxet_warriors.owner.GetTitledFirstName] was found to be unfit to lead the [d_taxet_warriors.GetName] due to religious conflict! Title is raven_tales_reformed, but owner is not."
-			log = " ROOT = [Root.GetTitledFirstName] FROM = [From.GetTitledFirstName] PREV = [Prev.GetTitledFirstName]"
-		}
-		if = {
-			limit = {
-				is_title_active = d_taxet_warriors
-				religion = raven_tales
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = raven_tales } 
-				}
-			}
-			log = "[d_taxet_warriors.owner.GetTitledFirstName] was found to be unfit to lead the [d_taxet_warriors.GetName] due to religious conflict! Title is raven_tales, but owner is not. "
-			log = " ROOT = [Root.GetTitledFirstName] FROM = [From.GetTitledFirstName] PREV = [Prev.GetTitledFirstName]"
-		}
-	}
-
-	d_salvation_army = {
-		if = {
-			limit = {
-				is_title_active = d_salvation_army
-				religion = evangelical
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = evangelical } 
-				}
-			}
-			log = "[d_salvation_army.owner.GetTitledFirstName] was found to be unfit to lead the [d_salvation_army.GetName] and therefore removed by the abdicate holy order effect!"
-		}
-	}
-
-	d_fruit_of_islam = {
-		if = {
-			limit = {
-				is_title_active = d_fruit_of_islam
-				religion = orientalist
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = orientalist } 
-				}
-			}
-			log = "[d_fruit_of_islam.owner.GetTitledFirstName] was found to be unfit to lead the [d_fruit_of_islam.GetName] and therefore removed by the abdicate holy order effect!"
-		}
-	}	
-
-	d_followers_ram = {
-		if = {
-			limit = {
-				is_title_active = d_followers_ram
-				religion = hindu
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = hindu } 
-				}
-			}
-			log = "[d_followers_ram.owner.GetTitledFirstName] was found to be unfit to lead the [d_followers_ram.GetName] and therefore removed by the abdicate holy order effect!"
-		}
-	}	
-
-	d_keepers_of_the_green_peace = {
-		if = {
-			limit = {
-				is_title_active = d_keepers_of_the_green_peace
-				religion = gaian 
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = gaian } 
-				}
-			}
-			log = "[d_keepers_of_the_green_peace.owner.GetTitledFirstName] was found to be unfit to lead the [d_keepers_of_the_green_peace.GetName] and therefore removed by the abdicate holy order effect!"
-		}
-	}	
-
-	d_lightbringers = {
-		if = {
-			limit = {
-				is_title_active = d_lightbringers
-				religion = sol_invicta
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = sol_invicta } 
-				}
-			}
-			log = "[d_lightbringers.owner.GetTitledFirstName] was found to be unfit to lead the [d_lightbringers.GetName] and therefore removed by the abdicate holy order effect!"
-		}
-	}	
-
-	d_dead_sun = {
-		if = {
-			limit = {
-				is_title_active = d_dead_sun
-				religion = mictlantec
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = mictlantec } 
-				}
-			}
-			log = "[d_dead_sun.owner.GetTitledFirstName] was found to be unfit to lead the [d_dead_sun.GetName] and therefore removed by the abdicate holy order effect!"
-		}
-	}	
-
-	d_nauvoo_legion = {
-		if = {
-			limit = {
-				is_title_active = d_nauvoo_legion
-				religion = mormon
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = mormon } 
-				}
-			}
-			log = "[d_nauvoo_legion.owner.GetTitledFirstName] was found to be unfit to lead the [d_nauvoo_legion.GetName] and therefore removed by the abdicate holy order effect!"
-		}
-	}		
-
-	d_st_pats = {
-		if = {
-			limit = {
-				is_title_active = d_st_pats
-				religion = free_church
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = free_church } 
-				}
-			}
-			log = "[d_st_pats.owner.GetTitledFirstName] was found to be unfit to lead the [d_st_pats.GetName] and therefore removed by the abdicate holy order effect!"
-		}
-	}	
-	
-	d_golden_bears = {
-		if = {
-			limit = {
-				is_title_active = d_golden_bears
-				religion = cetic
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = cetic } 
-				}
-			}
-			log = "[d_golden_bears.owner.GetTitledFirstName] was found to be unfit to lead the [d_golden_bears.GetName] and therefore removed by the abdicate holy order effect!"
-		}
-	}	
-	
-	d_oppenheimer = {
-		if = {
-			limit = {
-				is_title_active = d_oppenheimer
-				religion = atomicist
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = atomicist } 
-				}
-			}
-			log = "[d_oppenheimer.owner.GetTitledFirstName] was found to be unfit to lead the [d_oppenheimer.GetName] and therefore removed by the abdicate holy order effect!"
-		}
-	}	
-	
-	d_order_of_brotherhood = {
-		if = {
-			limit = {
-				is_title_active = d_order_of_brotherhood
-				religion = falling_star
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = falling_star } 
-				}
-			}
-			log = "[d_order_of_brotherhood.owner.GetTitledFirstName] was found to be unfit to lead the [d_order_of_brotherhood.GetName] and therefore removed by the abdicate holy order effect!"
-		}
-	}	
-	
-	d_batallon_colombia = {
-		if = {
-			limit = {
-				is_title_active = d_batallon_colombia
-				religion = patria_grande
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = patria_grande } 
-				}
-			}
-			log = "[d_batallon_colombia.owner.GetTitledFirstName] was found to be unfit to lead the [d_batallon_colombia.GetName] and therefore removed by the abdicate holy order effect!"
-		}
-	}	
-	
-	d_judah_lions = {
-		if = {
-			limit = {
-				is_title_active = d_judah_lions
-				religion = rastafarian
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = rastafarian } 
-				}
-			}
-			log = "[d_judah_lions.owner.GetTitledFirstName] was found to be unfit to lead the [d_judah_lions.GetName] and therefore removed by the abdicate holy order effect!"
-		}
-	}	
-	
-	d_saint_expedit = {
-		if = {
-			limit = {
-				is_title_active = d_saint_expedit
-				religion = voodoo
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = voodoo } 
-				}
-			}
-			log = "[d_saint_expedit.owner.GetTitledFirstName] was found to be unfit to lead the [d_saint_expedit.GetName] and therefore removed by the abdicate holy order effect!"
-		}
-	}	
-	
-	d_followers_ogun = {
-		if = {
-			limit = {
-				is_title_active = d_followers_ogun
-				religion = santeria
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = santeria } 
-				}
-			}
-			log = "[d_followers_ogun.owner.GetTitledFirstName] was found to be unfit to lead the [d_followers_ogun.GetName] and therefore removed by the abdicate holy order effect!"
-		}
-	}	
-	
-	d_all_tribes = {
-		if = {
-			limit = {
-				is_title_active = d_all_tribes
-				religion = peyotist
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = peyotist } 
-				}
-			}
-			log = "[d_all_tribes.owner.GetTitledFirstName] was found to be unfit to lead the [d_all_tribes.GetName] and therefore removed by the abdicate holy order effect!"
-		}
-	}	
-	
-	d_capoeiristas = {
-		if = {
-			limit = {
-				is_title_active = d_capoeiristas
-				religion = candomble
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = candomble } 
-				}
-			}
-			log = "[d_capoeiristas.owner.GetTitledFirstName] was found to be unfit to lead the [d_capoeiristas.GetName] and therefore removed by the abdicate holy order effect!"
-		}
-	}	
-	
-	d_code_keepers = {
-		if = {
-			limit = {
-				is_title_active = d_code_keepers
-				religion = brethren
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = brethren } 
-				}
-			}
-			log = "[d_code_keepers.owner.GetTitledFirstName] was found to be unfit to lead the [d_code_keepers.GetName] and therefore removed by the abdicate holy order effect!"
-		}
-	}	
-	
-	d_golden_archers = {
-		if = {
-			limit = {
-				is_title_active = d_golden_archers
-				religion = consumerist
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = consumerist } 
-				}
-			}
-			log = "[d_golden_archers.owner.GetTitledFirstName] was found to be unfit to lead the [d_golden_archers.GetName] and therefore removed by the abdicate holy order effect!"
-		}
-	}	
-	
-	d_guardians_of_tradition = {
-		if = {
-			limit = {
-				is_title_active = d_guardians_of_tradition
-				religion = traditionalist
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = traditionalist } 
-				}
-			}
-			log = "[d_guardians_of_tradition.owner.GetTitledFirstName] was found to be unfit to lead the [d_guardians_of_tradition.GetName] and therefore removed by the abdicate holy order effect!"
-		}
-	}	
-	
-	d_coureurs_des_bois = {
-		if = {
-			limit = {
-				is_title_active = d_coureurs_des_bois
-				religion = exovedate
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = exovedate } 
-				}
-			}
-			log = "[d_coureurs_des_bois.owner.GetTitledFirstName] was found to be unfit to lead the [d_coureurs_des_bois.GetName] and therefore removed by the abdicate holy order effect!"
-		}
-	}	
-	
-	d_knights_st_flanelle = {
-		if = {
-			limit = {
-				is_title_active = d_knights_st_flanelle
-				religion = ursuline
-				owner = { 
-					ai = yes
-					holy_order = yes 
-					NOT = { religion = ursuline } 
-				}
-			}
-			log = "[d_knights_st_flanelle.owner.GetTitledFirstName] was found to be unfit to lead the [d_knights_st_flanelle.GetName] and therefore removed by the abdicate holy order effect!"
-		}
-	}	
 }

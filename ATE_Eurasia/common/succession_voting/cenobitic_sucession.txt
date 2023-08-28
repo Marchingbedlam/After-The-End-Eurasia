@@ -819,7 +819,6 @@ cenobitic_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 		}
 		additive_modifier = {
@@ -836,7 +835,6 @@ cenobitic_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 		}
 		additive_modifier = {
@@ -853,7 +851,6 @@ cenobitic_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 		}
 		additive_modifier = {
@@ -870,7 +867,6 @@ cenobitic_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 		}
 		additive_modifier = {
@@ -887,7 +883,6 @@ cenobitic_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 		}
 		additive_modifier = {
@@ -904,7 +899,6 @@ cenobitic_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 		}
 		additive_modifier = {
@@ -921,7 +915,6 @@ cenobitic_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 		}
 		additive_modifier = {
@@ -938,7 +931,6 @@ cenobitic_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 		}
 		additive_modifier = {
@@ -954,7 +946,6 @@ cenobitic_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 		}
 	}
@@ -1050,12 +1041,9 @@ cenobitic_elective = {
 			FROMFROM = {
 				has_law = cognatic_succession
 			}
-			NOT = { religion = angeline }
 			NOR = {
 				has_religion_feature = religion_matriarchal
 				has_religion_feature = religion_equal
-				has_religion_feature = religion_feature_aria_de_machete
-				has_religion_feature = religion_feature_midewiwin
 				has_game_rule = {
 					name = gender
 					value = all
@@ -1067,17 +1055,6 @@ cenobitic_elective = {
 		}
 		
 		#Sexism
-		additive_modifier = { #Gender weights angeline
-			value = 30
-			localisation_key = tooltip_feudal_elector_vote_agnatic_woman
-			FROMFROM = {
-				has_law = cognatic_succession
-			}
-			religion = angeline
-			FROM = {
-				is_female = yes
-			}
-		}
 		additive_modifier = { #Gender weights
 			value = -30
 			localisation_key = tooltip_feudal_elector_vote_enatic_man
@@ -1087,8 +1064,6 @@ cenobitic_elective = {
 			NOR = {
 				has_religion_feature = religion_patriarchal
 				has_religion_feature = religion_equal
-				has_religion_feature = religion_feature_aria_de_machete
-				has_religion_feature = religion_feature_midewiwin
 				has_game_rule = {
 					name = gender
 					value = all
@@ -1105,28 +1080,14 @@ cenobitic_elective = {
 			FROMFROM = {
 				has_law = status_of_women_0
 			}
-			NOT = { religion = angeline }
 			NOR = {
 				has_religion_feature = religion_matriarchal
 				has_religion_feature = religion_equal
-				has_religion_feature = religion_feature_aria_de_machete
-				has_religion_feature = religion_feature_midewiwin
 				has_game_rule = {
 					name = gender
 					value = all
 				}
 			}
-			FROM = {
-				is_female = yes
-			}
-		}
-		additive_modifier = { #Gender weights angeline
-			value = 20
-			localisation_key = tooltip_feudal_elector_vote_sow
-			FROMFROM = {
-				has_law = status_of_women_0
-			}
-			religion = angeline
 			FROM = {
 				is_female = yes
 			}
@@ -1137,26 +1098,13 @@ cenobitic_elective = {
 			FROMFROM = {
 				has_law = status_of_women_1
 			}
-			NOT = { religion = angeline }
 			NOR = {
 				has_religion_feature = religion_matriarchal
 				has_religion_feature = religion_equal
-				has_religion_feature = religion_feature_aria_de_machete
-				has_religion_feature = religion_feature_midewiwin
 				has_game_rule = {
 					name = gender
 					value = all
 				}
-			}
-			FROM = {
-				is_female = yes
-			}
-		}
-		additive_modifier = { #Gender weights angeline
-			value = 20
-			localisation_key = tooltip_feudal_elector_vote_sow
-			FROMFROM = {
-				has_law = status_of_women_1
 			}
 			FROM = {
 				is_female = yes

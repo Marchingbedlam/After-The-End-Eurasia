@@ -6,7 +6,7 @@ decisions = {
 			OR = {
 			religion = oasite
 			religion = pentay
-			religion = separatist
+			religion = seperatist
 			religion = baptist
 			religion = kohhran_thianghlim
 				}
@@ -23,7 +23,7 @@ decisions = {
 			OR = {
 			religion = oasite
 			religion = pentay
-			religion = separatist
+			religion = seperatist
 			religion = baptist
 			religion = kohhran_thianghlim
 				}
@@ -159,10 +159,7 @@ decisions = {
 		is_high_prio = yes
 		ai_check_interval = 12
 		potential = {
-			OR = {
-				religion =  muntzeran
-				religion = neotondrakian
-			}
+			religion = neotondrakian
 			is_adult = yes
 			NOT = { 
 				trait = incapable 
