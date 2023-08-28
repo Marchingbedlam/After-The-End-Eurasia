@@ -4201,7 +4201,7 @@ indian_group = { #Religions primarily from the Indian Subcontinent which don't f
 		secret_religion = no
 	}
 	
-	hindu = { #Sanatan Dharma
+	jagannath = {
 		graphical_culture = hindugfx
 
 		icon = 145
@@ -4209,10 +4209,10 @@ indian_group = { #Religions primarily from the Indian Subcontinent which don't f
 		
 		color = { 1.0 0.0 0.0 }
 		
-		high_god_name = GOD_PRAJAPATI
+		high_god_name = GOD_JAGANNATH
 		
 		god_names = {
-			GOD_SHIVA GOD_SHAKTI GOD_VISHNU GOD_RAMA GOD_KRISHNA GOD_KALI GOD_DURGA GOD_RADHA GOD_LAKSHMI GOD_MURUGAN GOD_MARIAMMAN
+			GOD_BALABHADRA GOD_SUBHADRA
 		}
 		
 		evil_god_names = {
@@ -4325,6 +4325,43 @@ indian_group = { #Religions primarily from the Indian Subcontinent which don't f
 		
 		god_names = {
 			GOD_RAMA GOD_KRISHNA GOD_KALIKI GOD_LAKSHMI
+		}
+		
+		evil_god_names = {
+			GOD_KALIASURA
+		}
+		
+		can_grant_divorce = yes
+		priests_can_inherit = no
+		priests_can_marry = yes
+		allow_looting = yes
+		max_consorts = 3
+		caste_opinions = yes
+		castes = yes
+		
+		religious_clothing_head = 8
+		religious_clothing_priest = 8
+
+		scripture_name = THE_BHAGAVAD_GITA
+		priest_title = PUJARI
+		piety_name = KARMA
+		
+		intermarry = jain
+		intermarry = zoroastrian
+		
+	}
+	bhagavata = { 
+		graphical_culture = hindugfx
+
+		icon = 154
+		heresy_icon = 154
+		
+		color = { 50 183 255 }
+		
+		high_god_name = GOD_KRISHNA
+		
+		god_names = {
+			GOD_GOPALA GOD_BALA GOD_RADHA GOD_VASUDEVA GOD_RUKMINI
 		}
 		
 		evil_god_names = {
