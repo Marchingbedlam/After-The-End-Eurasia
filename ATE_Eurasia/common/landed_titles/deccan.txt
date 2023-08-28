@@ -22,8 +22,6 @@ e_deccan = {
 				color={ 63 140 56 }
 				color2={ 255 255 255 }
 				
-				holy_site = hindu
-				
 				b_amaravathi = {}
 				b_guntur = {}
 				b_tenali = {}
@@ -425,6 +423,9 @@ e_deccan = {
 			c_hyderabad = { # 2263
 				color={ 145 160 72 }
 				color2={ 255 255 255 }
+				
+				religion = jagannath_reformed
+				religion = jagannath
 				
 				b_falaknuma = {}
 				b_hyderabad = {}

@@ -756,7 +756,7 @@ brahmin = {
 	potential = {
 		OR = {
 			religion = vaishnava
-			religion = hindu
+			religion = bhagavata
 			religion = mantramarga
 			religion = shaktah
 		}
@@ -780,7 +780,7 @@ kshatriya = {
 	potential = {
 		OR = {
 			religion = vaishnava
-			religion = hindu
+			religion = bhagavata
 			religion = mantramarga
 			religion = shaktah
 		}
@@ -804,7 +804,7 @@ vaishya = {
 	potential = {
 		OR = {
 			religion = vaishnava
-			religion = hindu
+			religion = bhagavata
 			religion = mantramarga
 			religion = shaktah
 		}
@@ -846,129 +846,6 @@ sympathy_indian = {
 	female_insult_adj = INSULT_UNPRINCIPLED
 	child_insult_adj = INSULT_STUPID
 }
-
-# shaivist_hindu = {
-	# opposites = {
-		# vaishnavist_hindu
-		# shaktist_hindu
-		# smartist_hindu
-	# }
-
-	# opposite_opinion = -5
-	
-	# monthly_character_prestige = 0.5
-	
-	# potential = { religion = hindu }
-	# religious_branch = hindu
-	# random = no
-	# religious = yes
-	# ruler_designer_cost = 0
-# }
-
-# vaishnavist_hindu = {
-	# opposites = {
-		# shaivist_hindu
-		# shaktist_hindu
-		# smartist_hindu
-	# }
-
-	# opposite_opinion = -5
-	
-	# vassal_opinion = 5
-
-	# potential = { religion = hindu }
-	# religious_branch = hindu
-	# random = no
-	# religious = yes
-	# ruler_designer_cost = 0
-# }
-
-# shaktist_hindu = {
-	# opposites = {
-		# vaishnavist_hindu
-		# shaivist_hindu
-		# smartist_hindu
-	# }
-
-	# opposite_opinion = -5
-	
-	# fertility = 0.2
-
-	# potential = { religion = hindu }
-	# religious_branch = hindu
-	# random = no
-	# religious = yes
-	# ruler_designer_cost = 0
-# }
-
-# smartist_hindu = {
-	# opposites = {
-		# vaishnavist_hindu
-		# shaktist_hindu
-		# shaivist_hindu
-	# }
-
-	# opposite_opinion = -5
-	
-	# monthly_character_piety = 0.5
-
-	# potential = { religion = hindu }
-	# religious_branch = hindu
-	# random = no
-	# religious = yes
-	# ruler_designer_cost = 0
-# }
-
-# mahayana_buddhist = {
-	# opposites = {
-		# vajrayana_buddhist
-		# theravada_buddhist
-	# }
-
-	# opposite_opinion = -5
-	
-	# vassal_opinion = 5
-
-	# potential = { religion = buddhist }
-	# religious_branch = buddhist
-	# random = no
-	# religious = yes
-	# ruler_designer_cost = 0
-# }
-
-# vajrayana_buddhist = {
-	# opposites = {
-		# mahayana_buddhist
-		# theravada_buddhist
-	# }
-
-	# opposite_opinion = -5
-	
-	# health = 1
-
-	# potential = { religion = buddhist }
-	# religious_branch = buddhist
-	# random = no
-	# religious = yes
-	# ruler_designer_cost = 0
-# }
-
-# theravada_buddhist = {
-	# opposites = {
-		# vajrayana_buddhist
-		# mahayana_buddhist
-	# }
-
-	# opposite_opinion = -5
-	
-	# learning = 1
-
-	# potential = { religion = buddhist }
-	# religious_branch = buddhist
-	# random = no
-	# religious = yes
-	# ruler_designer_cost = 0
-# }
 
 digambara_jain = {
 	opposites = {
@@ -4661,8 +4538,14 @@ secretly_manichean = {
 #Hinduism
 secretly_hinduism = {
 	potential = {
-		NOT = {
-			religion = hindu
+		NOR = {
+			religion = mantramarga
+			religion = bhagavata
+			religion = vaishnava
+			religion = shrauta
+			religion = jagannath
+			religion = shaktah
+			religion = thirumatam
 		}
 		OR = {
 			ai = yes
@@ -4743,7 +4626,7 @@ secretly_hinduism = {
 secretly_buddhism = {
 	potential = {
 		NOT = {
-			religion = buddhist
+			religion_group = buddhist_group
 		}
 		OR = {
 			ai = yes

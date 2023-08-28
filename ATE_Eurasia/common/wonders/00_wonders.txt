@@ -690,11 +690,29 @@ wonder_temple_buddhist = {
 wonder_temple_hindu = {
 	picture = GFX_wonder_strip_hindu_temple
 	potential = {
-		religion = hindu
+		OR = {
+			religion = jagannath_reformed
+			religion = jagannath
+			religion = shrauta
+			religion = mantramarga
+			religion = vaishnava
+			religion = bhagavata
+			religion = shaktah
+			religion = thirumatam
+		}
 	}
 	active = {
 		ROOT = {
-			religion = hindu
+			OR = {
+				religion = jagannath_reformed
+				religion = jagannath
+				religion = shrauta
+				religion = mantramarga
+				religion = vaishnava
+				religion = bhagavata
+				religion = shaktah
+				religion = thirumatam
+			}
 		}
 	}
 	flags = {

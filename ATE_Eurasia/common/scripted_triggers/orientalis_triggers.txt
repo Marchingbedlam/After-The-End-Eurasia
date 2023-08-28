@@ -5,3 +5,15 @@ is_vajrayana = {
 		religion = rime
 	}
 }
+is_hinduism = {
+	OR = {
+		religion = thirumatam
+		religion = shaktah
+		religion = bhagavata
+		religion = vaishnava
+		religion = mantramarga
+		religion = shrauta
+		religion = jagannath
+		religion = jagannath_reformed
+	}
+}

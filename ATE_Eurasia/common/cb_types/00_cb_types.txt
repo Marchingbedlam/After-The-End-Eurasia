@@ -6040,7 +6040,7 @@ religious = {
 				reconquista_check_trigger = yes
 			}
 			OR = {
-				NOT = { religion = hindu }
+				NOT = { religion_group = indian_group }
 				FROM = { NOT = { has_dharmic_religion_trigger = yes } }
 				AND = {
 					religion_group = FROM

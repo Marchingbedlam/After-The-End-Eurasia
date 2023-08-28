@@ -800,7 +800,7 @@ character_event = {
 					trait = cruel
 					AND = {
 						trait = lustful
-						NOT = { religion = hindu }
+						NOT = { religion_group = indian_group }
 						NOT = { religion_group = jewish_group }
 					}
 					NOT = { trait = humble }

@@ -1075,7 +1075,7 @@ can_be_marshal_trigger = {
 				}
 			}
 			OR = {
-				NOT = { religion = hindu }
+				NOT = { religion = bhagavata }
 				trait = kshatriya
 			}
 			is_adult = yes
@@ -1324,7 +1324,7 @@ can_be_spiritual_trigger = {
 				has_religion_feature = religion_patriarchal
 			}
 			OR = {
-				NOT = { religion = hindu }
+				NOT = { religion = bhagavata }
 				trait = brahmin
 				is_ascetic_trigger = yes
 			}
@@ -2165,7 +2165,7 @@ true_religion_taoist_trigger = {
 }
 
 true_religion_hindu_trigger = {
-	true_religion = hindu
+	true_religion = bhagavata
 }
 
 true_religion_buddhist_trigger = {
@@ -3577,7 +3577,7 @@ is_visible_to_self_trigger = { #For hidden modifiers
 #		AND = { 
 #			has_character_flag = character_was_hindu
 #			any_character = {
-#				religion = hindu
+#				religion = bhagavata
 #			}
 #		}
 #		AND = { 
@@ -3779,7 +3779,7 @@ has_trollcrafters_prerequisites = {
 has_cult_of_kali_prerequisites = {
 	has_common_devilworship_prerequisites = yes
 	OR = {
-		religion = hindu
+		religion = bhagavata
 	}
 }
 
@@ -4102,7 +4102,7 @@ looting_artifact_event_religious_artifacts_trigger = {
 			any_artifact = {
 				has_artifact_flag = looted_artifact_tooltip_1
 				has_artifact_flag = hindu
-				ROOT = { religion = hindu }
+				ROOT = { religion = bhagavata }
 			}
 		}
 		NAND = {
@@ -5550,7 +5550,7 @@ has_unsafe_secret_religion = {
 		AND = {
 			NOT = { has_dlc = "Rajas of India" }
 			OR = {
-				secret_religion = hindu
+				secret_religion = bhagavata
 				secret_religion = buddhist
 				secret_religion = jain
 			}
@@ -6553,7 +6553,7 @@ likes_buddhists = {
 	religion_group = buddhist_group
 }
 likes_hindus = {
-	religion = hindu
+	religion = bhagavata
 }
 likes_jains = {
 	religion = jain
@@ -6699,7 +6699,7 @@ has_unsafe_religion = {
 		AND = {
 			NOT = { has_dlc = "Rajas of India" }
 			OR = {
-				religion = hindu
+				religion = bhagavata
 				religion = buddhist
 				religion = jain
 			}
@@ -9129,7 +9129,7 @@ can_still_be_commander_byzantine_trigger = {
 				female_can_hold_minor_commander_title_trigger = yes
 			}
 			OR = {
-				NOT = { religion = hindu }
+				NOT = { religion = bhagavata }
 				trait = kshatriya
 			}
 			is_adult = yes
@@ -9167,7 +9167,7 @@ can_still_be_commander_byzantine_trigger = {
 									female_can_hold_minor_commander_title_trigger = yes
 								}
 								OR = {
-									NOT = { religion = hindu }
+									NOT = { religion = bhagavata }
 									trait = kshatriya
 								}
 								is_adult = yes
@@ -9265,7 +9265,7 @@ can_still_be_marshal_byzantine_trigger = {
 				}
 			}
 			OR = {
-				NOT = { religion = hindu }
+				NOT = { religion = bhagavata }
 				trait = kshatriya
 			}
 			is_adult = yes

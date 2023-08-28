@@ -1678,14 +1678,56 @@ upgrade_votive_stupa = {
 upgrade_high_gopura = { 
 	picture = GFX_upgrade_icon_crates
 
-	potential = { religion = hindu }
-	allow = {
-		trigger_if = {
-			limit = { NOT = { religion = hindu } }
-			religion = hindu
+	potential = {
+		OR = {
+			religion = jagannath_reformed
+			religion = jagannath
+			religion = shrauta
+			religion = mantramarga
+			religion = vaishnava
+			religion = bhagavata
+			religion = shaktah
+			religion = thirumatam
 		}
 	}
-	active = { religion = hindu }
+	allow = {
+		trigger_if = {
+			limit = { 
+				OR = {
+					religion = jagannath_reformed
+					religion = jagannath
+					religion = shrauta
+					religion = mantramarga
+					religion = vaishnava
+					religion = bhagavata
+					religion = shaktah
+					religion = thirumatam
+				}
+			}
+			OR = {
+				religion = jagannath_reformed
+				religion = jagannath
+				religion = shrauta
+				religion = mantramarga
+				religion = vaishnava
+				religion = bhagavata
+				religion = shaktah
+				religion = thirumatam
+			}
+		}
+	}
+	active = {
+		OR = {
+			religion = jagannath_reformed
+			religion = jagannath
+			religion = shrauta
+			religion = mantramarga
+			religion = vaishnava
+			religion = bhagavata
+			religion = shaktah
+			religion = thirumatam
+		}
+	}
 
 	flags = {
 		towering
@@ -1705,14 +1747,56 @@ upgrade_high_gopura = {
 upgrade_shikhara = { 
 	picture = GFX_upgrade_icon_crates
 
-	potential = { religion = hindu }
-	allow = {
-		trigger_if = {
-			limit = { NOT = { religion = hindu } }
-			religion = hindu
+	potential = {
+		OR = {
+			religion = jagannath_reformed
+			religion = jagannath
+			religion = shrauta
+			religion = mantramarga
+			religion = vaishnava
+			religion = bhagavata
+			religion = shaktah
+			religion = thirumatam
 		}
 	}
-	active = { religion = hindu }
+	allow = {
+		trigger_if = {
+			limit = { 
+				OR = {
+					religion = jagannath_reformed
+					religion = jagannath
+					religion = shrauta
+					religion = mantramarga
+					religion = vaishnava
+					religion = bhagavata
+					religion = shaktah
+					religion = thirumatam
+				}
+			}
+			OR = {
+				religion = jagannath_reformed
+				religion = jagannath
+				religion = shrauta
+				religion = mantramarga
+				religion = vaishnava
+				religion = bhagavata
+				religion = shaktah
+				religion = thirumatam
+			}
+		}
+	}
+	active = {
+		OR = {
+			religion = jagannath_reformed
+			religion = jagannath
+			religion = shrauta
+			religion = mantramarga
+			religion = vaishnava
+			religion = bhagavata
+			religion = shaktah
+			religion = thirumatam
+		}
+	}
 
 	flags = {
 		towering
@@ -1734,14 +1818,56 @@ upgrade_shikhara = {
 upgrade_mandapa = { 
 	picture = GFX_upgrade_icon_crates
 
-	potential = { religion = hindu }
-	allow = {
-		trigger_if = {
-			limit = { NOT = { religion = hindu } }
-			religion = hindu
+	potential = {
+		OR = {
+			religion = jagannath_reformed
+			religion = jagannath
+			religion = shrauta
+			religion = mantramarga
+			religion = vaishnava
+			religion = bhagavata
+			religion = shaktah
+			religion = thirumatam
 		}
 	}
-	active = { religion = hindu }
+	allow = {
+		trigger_if = {
+			limit = { 
+				OR = {
+					religion = jagannath_reformed
+					religion = jagannath
+					religion = shrauta
+					religion = mantramarga
+					religion = vaishnava
+					religion = bhagavata
+					religion = shaktah
+					religion = thirumatam
+				}
+			}
+			OR = {
+				religion = jagannath_reformed
+				religion = jagannath
+				religion = shrauta
+				religion = mantramarga
+				religion = vaishnava
+				religion = bhagavata
+				religion = shaktah
+				religion = thirumatam
+			}
+		}
+	}
+	active = {
+		OR = {
+			religion = jagannath_reformed
+			religion = jagannath
+			religion = shrauta
+			religion = mantramarga
+			religion = vaishnava
+			religion = bhagavata
+			religion = shaktah
+			religion = thirumatam
+		}
+	}
 
 	flags = {
 		is_singular
@@ -1759,16 +1885,58 @@ upgrade_mandapa = {
 
 upgrade_temple_complex = { 
 	picture = GFX_upgrade_icon_crates
-
-	potential = { religion = hindu }
+	
+	potential = {
+		OR = {
+			religion = jagannath_reformed
+			religion = jagannath
+			religion = shrauta
+			religion = mantramarga
+			religion = vaishnava
+			religion = bhagavata
+			religion = shaktah
+			religion = thirumatam
+		}
+	}
 	allow = {
 		trigger_if = {
-			limit = { NOT = { religion = hindu } }
-			religion = hindu
+			limit = { 
+				OR = {
+					religion = jagannath_reformed
+					religion = jagannath
+					religion = shrauta
+					religion = mantramarga
+					religion = vaishnava
+					religion = bhagavata
+					religion = shaktah
+					religion = thirumatam
+				}
+			}
+			OR = {
+				religion = jagannath_reformed
+				religion = jagannath
+				religion = shrauta
+				religion = mantramarga
+				religion = vaishnava
+				religion = bhagavata
+				religion = shaktah
+				religion = thirumatam
+			}
 		}
 		num_of_wonder_upgrades = 4
 	}
-	active = { religion = hindu }
+	active = {
+		OR = {
+			religion = jagannath_reformed
+			religion = jagannath
+			religion = shrauta
+			religion = mantramarga
+			religion = vaishnava
+			religion = bhagavata
+			religion = shaktah
+			religion = thirumatam
+		}
+	}
 
 	flags = {
 		is_singular
@@ -1787,14 +1955,56 @@ upgrade_temple_complex = {
 upgrade_school_hindu = { 
 	picture = GFX_upgrade_icon_book_red
 
-	potential = { religion = hindu }
-	allow = {
-		trigger_if = {
-			limit = { NOT = { religion = hindu } }
-			religion = hindu
+	potential = {
+		OR = {
+			religion = jagannath_reformed
+			religion = jagannath
+			religion = shrauta
+			religion = mantramarga
+			religion = vaishnava
+			religion = bhagavata
+			religion = shaktah
+			religion = thirumatam
 		}
 	}
-	active = { religion = hindu }
+	allow = {
+		trigger_if = {
+			limit = { 
+				OR = {
+					religion = jagannath_reformed
+					religion = jagannath
+					religion = shrauta
+					religion = mantramarga
+					religion = vaishnava
+					religion = bhagavata
+					religion = shaktah
+					religion = thirumatam
+				}
+			}
+			OR = {
+				religion = jagannath_reformed
+				religion = jagannath
+				religion = shrauta
+				religion = mantramarga
+				religion = vaishnava
+				religion = bhagavata
+				religion = shaktah
+				religion = thirumatam
+			}
+		}
+	}
+	active = {
+		OR = {
+			religion = jagannath_reformed
+			religion = jagannath
+			religion = shrauta
+			religion = mantramarga
+			religion = vaishnava
+			religion = bhagavata
+			religion = shaktah
+			religion = thirumatam
+		}
+	}
 
 	flags = {
 		culture_conversion_faster
@@ -1816,11 +2026,42 @@ upgrade_school_hindu = {
 upgrade_hospital_hindu = { # 
 	picture = GFX_upgrade_icon_house
 
-	potential = { religion = hindu }
+	potential = {
+		OR = {
+			religion = jagannath_reformed
+			religion = jagannath
+			religion = shrauta
+			religion = mantramarga
+			religion = vaishnava
+			religion = bhagavata
+			religion = shaktah
+			religion = thirumatam
+		}
+	}
 	allow = {
 		trigger_if = {
-			limit = { NOT = { religion = hindu } }
-			religion = hindu
+			limit = { 
+				OR = {
+					religion = jagannath_reformed
+					religion = jagannath
+					religion = shrauta
+					religion = mantramarga
+					religion = vaishnava
+					religion = bhagavata
+					religion = shaktah
+					religion = thirumatam
+				}
+			}
+			OR = {
+				religion = jagannath_reformed
+				religion = jagannath
+				religion = shrauta
+				religion = mantramarga
+				religion = vaishnava
+				religion = bhagavata
+				religion = shaktah
+				religion = thirumatam
+			}
 		}
 	}
 	active = { } #active even if owner is not of same religion

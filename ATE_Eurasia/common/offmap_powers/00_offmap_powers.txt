@@ -571,22 +571,22 @@ offmap_china = {
 					FROMFROM = { religion_group = buddhist_group }
 				}
 			}
-			likes_hindus = {
-				value = 100
-				modifier = {
-					factor = 0
-					NOT = {
-						any_province = {
-							religion = hindu
-							is_within_diplo_range = offmap_china
-						}
-					}
-				}
-				modifier = {
-					factor = 0.5
-					FROMFROM = { religion = hindu }
-				}
-			}
+			#likes_hindus = {
+				#value = 100
+				#modifier = {
+					#factor = 0
+					#NOT = {
+						#any_province = {
+						#	religion = hindu
+						#	is_within_diplo_range = offmap_china
+						#}
+					#}
+				#}
+				#modifier = {
+					#factor = 0.5
+					#FROMFROM = { religion = hindu }
+				#}
+			#}
 			likes_jains = {
 				value = 100
 				modifier = {
@@ -970,22 +970,22 @@ offmap_china = {
 					FROMFROM = { religion_group = buddhist_group }
 				}
 			}
-			likes_hindus = {
-				value = 100
-				modifier = {
-					factor = 0
-					NOT = {
-						any_province = {
-							religion = hindu
-							is_within_diplo_range = offmap_china
-						}
-					}
-				}
-				modifier = {
-					factor = 0
-					FROMFROM = { religion = hindu }
-				}
-			}
+			#likes_hindus = {
+				#value = 100
+				#modifier = {
+				#	factor = 0
+				#	NOT = {
+				#		any_province = {
+				#			religion = hindu
+				#			is_within_diplo_range = offmap_china
+				#		}
+				#	}
+				#}
+				#modifier = {
+				#	factor = 0
+				#	FROMFROM = { religion = hindu }
+				#}
+			#}
 			likes_jains = {
 				value = 25
 				modifier = {
@@ -1703,22 +1703,22 @@ offmap_ethiopia = {
 					FROMFROM = { religion_group = buddhist_group }
 				}
 			}
-			likes_hindus = {
-				value = 100
-				modifier = {
-					factor = 0
-					NOT = {
-						any_province = {
-							religion = hindu
-							is_within_diplo_range = offmap_ethiopia
-						}
-					}
-				}
-				modifier = {
-					factor = 0.5
-					FROMFROM = { religion = hindu }
-				}
-			}
+			#likes_hindus = {
+				#value = 100
+				#modifier = {
+				#	factor = 0
+				#	NOT = {
+				#		any_province = {
+				#			religion = hindu
+				#			is_within_diplo_range = offmap_ethiopia
+				#		}
+				#	}
+				#}
+				#modifier = {
+				#	factor = 0.5
+				#	FROMFROM = { religion = hindu }
+				#}
+			#}
 			likes_jains = {
 				value = 100
 				modifier = {
@@ -2102,22 +2102,22 @@ offmap_ethiopia = {
 					FROMFROM = { religion_group = buddhist_group }
 				}
 			}
-			likes_hindus = {
-				value = 100
-				modifier = {
-					factor = 0
-					NOT = {
-						any_province = {
-							religion = hindu
-							is_within_diplo_range = offmap_ethiopia
-						}
-					}
-				}
-				modifier = {
-					factor = 0
-					FROMFROM = { religion = hindu }
-				}
-			}
+			#likes_hindus = {
+				#value = 100
+				#modifier = {
+				#	factor = 0
+				#	NOT = {
+				#		any_province = {
+				#			religion = hindu
+				#			is_within_diplo_range = offmap_ethiopia
+				#		}
+				#	}
+				#}
+				#modifier = {
+				#	factor = 0
+				#	FROMFROM = { religion = hindu }
+				#}
+			#}
 			likes_jains = {
 				value = 25
 				modifier = {
