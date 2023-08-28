@@ -4364,6 +4364,43 @@ indian_group = { #Religions primarily from the Indian Subcontinent which don't f
 		intermarry = zoroastrian
 		
 	}
+	surya = { 
+		graphical_culture = hindugfx
+
+		icon = 145
+		heresy_icon = 145
+		
+		color = { 255 215 0 }
+		
+		high_god_name = GOD_SURYA
+		
+		god_names = {
+			GOD_SURYA
+		}
+		
+		evil_god_names = {
+			GOD_RAKSHASAS
+		}
+		
+		can_grant_divorce = yes
+		priests_can_inherit = no
+		priests_can_marry = yes
+		max_consorts = 3
+		caste_opinions = yes
+		castes = yes
+		
+		
+		religious_clothing_head = 8
+		religious_clothing_priest = 8
+
+		scripture_name = THE_VEDAS
+		priest_title = PUJARI
+		piety_name = KARMA
+		
+		intermarry = jain
+		intermarry = zoroastrian
+		
+	}
 	mantramarga = { 
 		graphical_culture = hindugfx
 

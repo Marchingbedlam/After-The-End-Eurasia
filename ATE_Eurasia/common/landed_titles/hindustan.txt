@@ -294,9 +294,10 @@ e_hindustan = {
 				color={ 76 125 185 }
 				color2={ 255 255 255 }
 				holy_site = vaishnava
-				religion = jagannath_reformed
-				religion = jagannath
-				religion = bhagavata
+				holy_site = jagannath_reformed
+				holy_site = jagannath
+				holy_site = bhagavata
+				holy_site = surya
 				
 				b_mathura = {}
 				b_vrindravan = {}
@@ -395,8 +396,9 @@ e_hindustan = {
 				holy_site = mantramarga
 				holy_site = navayana
 				holy_site = vaishnava
-				religion = jagannath_reformed
-				religion = jagannath
+				holy_site = jagannath_reformed
+				holy_site = jagannath
+				holy_site = surya
 				
 				b_varanasi = {}
 				b_sarnath = {}
@@ -1015,6 +1017,8 @@ e_hindustan = {
 			c_aurangabad = { # 2956
 				color={ 203 186 30 }
 				color2={ 255 255 255 }
+				
+				holy_site = surya
 				
 				b_aurangabad = {}
 				b_daudnagar = {}
