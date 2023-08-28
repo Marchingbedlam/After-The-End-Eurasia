@@ -1580,3 +1580,36 @@ d_ahmadi = {
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
+d_jagannath_reformed = {
+	color = { 229 22 22 }
+	color2 = { 255 255 255 }
+	
+	capital = 2788 #Varanasi
+	creation_requires_capital = no
+	
+	landless = no
+	
+	title = "ACHARAYA"
+	title_female = "ACHARAYA"
+	foa = "ACHARAYA_FOA"
+	short_name = yes
+	
+	allow = {
+		num_of_holy_sites = 3
+		piety = 150
+		wealth = 100
+	}
+	
+	#Controls a religion
+	controls_religion = jagannath_reformed
+	
+	religion = jagannath_reformed
+	
+	assimilate = no
+	
+	primary = no
+	
+	dignity = 200
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
