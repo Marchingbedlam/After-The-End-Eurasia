@@ -103,14 +103,14 @@ character_event = {
         #Break peace deal
         any_playable_ruler = {
             limit = {
-				has_character_modifier = peace_deal_wtih_ethiopia
+				has_character_modifier = peace_deal_with_ethiopia
 				OR = {
 					ai = yes
 					NOT = { has_offmap_news_enabled = FROMFROM }
 					NOT = { is_within_diplo_range = ROOT }
 				}
 			}
-            remove_character_modifier = peace_deal_wtih_ethiopia
+            remove_character_modifier = peace_deal_with_ethiopia
         }
 
         #Reset Cooldowns

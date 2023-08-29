@@ -1,0 +1,34 @@
+evilcat_samesex_valid = {
+	OR = {
+		trait = homosexual
+		trait = bisexual
+		AND = {
+			trait = hedonist
+			ai = no
+		}
+	}
+}
+fancies_men_trigger = {
+	OR = {
+		AND = {
+			is_female = yes
+			NOT = { trait = homosexual }
+		}
+		AND = {
+			is_female = no
+			evilcat_samesex_valid = yes
+		}
+	}
+}
+fancies_women_trigger = {
+	OR = {
+		AND = {
+			is_female = no
+			NOT = { trait = homosexual }
+		}
+		AND = {
+			is_female = yes
+			evilcat_samesex_valid = yes
+		}
+	}
+}

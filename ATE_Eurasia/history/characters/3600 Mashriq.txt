@@ -187,7 +187,6 @@
 			killer=3600006
 		}
 	}
-	2680.1.1={death=yes}
 }
 3600009=	{
 	name="Nehorai"
@@ -874,7 +873,6 @@
 			death_reason=death_rabble
 		}
 	}
-	2680.1.1={death=yes}
 }
 3600047={
 	name="Adi"
@@ -889,7 +887,6 @@
 			death_reason=death_childbirth
 		}
 	}
-	2680.1.1={death=yes}
 }
 3600048={
 	name="Amir"
@@ -1252,6 +1249,7 @@
 	learning=10
 	trait=scholarly_theologian
 	2614.1.7={birth=yes}
+	2694.1.1={death=yes}
 }
 3600069={
 	name="Roie"
@@ -1268,6 +1266,7 @@
 	father=3600067
 	mother=3600068
 	2636.1.7={birth=yes}
+	2716.1.1={death=yes}
 }
 3600070={
 	name="Rakefet"
@@ -1286,6 +1285,7 @@
 	father=3600067
 	mother=3600068
 	2640.1.7={birth=yes}
+	2720.1.1={death=yes}
 }
 3600071={
 	name="Tomer"
@@ -1444,6 +1444,7 @@
 	intrigue=5
 	learning=10
 	2610.1.7={birth=yes}
+	2690.1.1={death=yes}
 }
 3600081={
 	name="Tuvia"
@@ -1628,7 +1629,7 @@
 	trait=hakham
 	trait=musician
 	2234.11.2={birth=yes}
-	2334.11.3={culture=sabra}
+	2234.11.3={culture=sabra}
 	2300.1.1={death=yes}
 }
 3600090={
@@ -1785,9 +1786,8 @@
 	religion=ruhi
 	father=3600504
 	2580.1.1={birth=yes}
+	2605.1.7={add_spouse=3600503}
 	2640.1.1={death=yes}
-	2605.1.7={add_spouse=3600501
-	}
 }
 
 3600503={ #Queen of Jordan
@@ -2227,7 +2227,6 @@
     trait=thrifty_clerk	  
 	trait=gardener
     trait=school_thaddeus
-    trait=slothful
     trait=slothful
 	trait=patient
 	father=3600528

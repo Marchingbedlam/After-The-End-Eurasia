@@ -19,7 +19,7 @@ character_event = {
 	
 	trigger = {
 		liege = { government = confederation_government }
-		NOT = { has_minor_title = title_govederation_diet_member }
+		NOT = { has_minor_title = title_confederation_diet_member }
 		has_regent = no
 		#is_councillor = no
 		higher_real_tier_than = BARON

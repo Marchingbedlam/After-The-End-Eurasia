@@ -441,10 +441,6 @@ confederation_elective = {
 					FROM = { religion_group = pagan_group } 
 				} 
 				AND = { 
-					trait = sympathy_zoroastrianism
-					FROM = { religion_group = zoroastrian_group } 
-				} 
-				AND = { 
 					trait = sympathy_judaism
 					FROM = { religion_group = jewish_group } 
 				} 
@@ -1250,7 +1246,6 @@ confederation_elective = {
 			is_adult = yes
 			OR = { 
 				NOT = { is_close_relative = FROM }
-				religion = zoroastrian
 				religion = messalian
 				has_religion_feature = religion_holy_family 
 				has_religion_feature = religion_feature_zun
@@ -1297,7 +1292,6 @@ confederation_elective = {
 			is_adult = yes
 			OR = { 
 				NOT = { is_close_relative = FROM }
-				religion = zoroastrian
 				religion = messalian
 				has_religion_feature = religion_holy_family 
 				has_religion_feature = religion_feature_zun
@@ -1613,10 +1607,6 @@ confederation_elective = {
 				trait = lustful 
 				AND = { 
 					religion_group = pagan_group
-					NOT = { religion = bon }
-					NOT = { religion = bon_reformed }
-					NOT = { religion = hellenic_pagan }
-					NOT = { religion = hellenic_pagan_reformed }
 				}
 			}
 			NOT = { trait = chaste }
@@ -1633,10 +1623,6 @@ confederation_elective = {
 				religion_group = muslim
 				religion_group = jewish_group
 				religion_group = indian_group
-				religion = hellenic_pagan
-				religion = hellenic_pagan_reformed
-				religion = bon
-				religion = bon_reformed
 			}
 			NOT = { trait = gluttonous }
 			FROM = { 
@@ -1651,10 +1637,6 @@ confederation_elective = {
 				trait = gluttonous
 				AND = { 
 					religion_group = pagan_group
-					NOT = { religion = bon }
-					NOT = { religion = bon_reformed }
-					NOT = { religion = hellenic_pagan }
-					NOT = { religion = hellenic_pagan_reformed }
 				}
 			}
 			NOT = { trait = temperate }
@@ -1753,8 +1735,6 @@ confederation_elective = {
 				religion_group = muslim
 				religion_group = jewish_group
 				religion_group = indian_group
-				religion = bon
-				religion = bon_reformed
 			}
 			NOR = { 
 				trait = proud 
@@ -1771,10 +1751,6 @@ confederation_elective = {
 			OR = { 
 				AND = { 
 					religion_group = pagan_group
-					NOT = { religion = bon }
-					NOT = { religion = bon_reformed }
-					NOT = { religion = hellenic_pagan }
-					NOT = { religion = hellenic_pagan_reformed }
 				}
 				trait = proud
 				trait = envious
@@ -2369,15 +2345,6 @@ confederation_elective = {
 				trait = shieldmaiden
 			}
 		}
-		additive_modifier = { #Praised for being a saoshyant_descendant 
-			value = 10
-			localisation_key = tooltip_feudal_elector_vote_saoshyant_descendant_positive
-			NOT = { character = FROM } #Do not judge yourself.
-			religion_group = zoroastrian_group
-			FROM = { 
-				trait = saoshyant_descendant 
-			}
-		}
 		additive_modifier = { #Praised for being Adventurer
 			value = 10
 			localisation_key = tooltip_feudal_elector_vote_adventurer_positive
@@ -2703,7 +2670,6 @@ confederation_elective = {
 					trait = sympathy_christendom
 					trait = sympathy_islam
 					trait = sympathy_judaism
-					trait = sympathy_zoroastrianism
 					trait = sympathy_pagans
 					trait = sympathy_indian
 				}
@@ -4010,10 +3976,6 @@ bureaucratic_elective = {
 					FROM = { religion_group = pagan_group } 
 				} 
 				AND = { 
-					trait = sympathy_zoroastrianism
-					FROM = { religion_group = zoroastrian_group } 
-				} 
-				AND = { 
 					trait = sympathy_judaism
 					FROM = { religion_group = jewish_group } 
 				} 
@@ -4819,7 +4781,6 @@ bureaucratic_elective = {
 			is_adult = yes
 			OR = { 
 				NOT = { is_close_relative = FROM }
-				religion = zoroastrian
 				religion = messalian
 				has_religion_feature = religion_holy_family 
 				has_religion_feature = religion_feature_zun
@@ -4866,7 +4827,6 @@ bureaucratic_elective = {
 			is_adult = yes
 			OR = { 
 				NOT = { is_close_relative = FROM }
-				religion = zoroastrian
 				religion = messalian
 				has_religion_feature = religion_holy_family 
 				has_religion_feature = religion_feature_zun
@@ -5938,15 +5898,6 @@ bureaucratic_elective = {
 				trait = shieldmaiden
 			}
 		}
-		additive_modifier = { #Praised for being a saoshyant_descendant 
-			value = 10
-			localisation_key = tooltip_feudal_elector_vote_saoshyant_descendant_positive
-			NOT = { character = FROM } #Do not judge yourself.
-			religion_group = zoroastrian_group
-			FROM = { 
-				trait = saoshyant_descendant 
-			}
-		}
 		additive_modifier = { #Praised for being Adventurer
 			value = 10
 			localisation_key = tooltip_feudal_elector_vote_adventurer_positive
@@ -6272,7 +6223,6 @@ bureaucratic_elective = {
 					trait = sympathy_christendom
 					trait = sympathy_islam
 					trait = sympathy_judaism
-					trait = sympathy_zoroastrianism
 					trait = sympathy_pagans
 					trait = sympathy_indian
 				}

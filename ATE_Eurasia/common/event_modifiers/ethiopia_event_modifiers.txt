@@ -1,0 +1,156 @@
+jd_master_engineer = {
+	icon = 101
+	martial = 1
+	stewardship = 1
+}
+
+jd_administrator = {
+	icon = 99
+	stewardship = 1
+	learning = 1
+}
+
+employing_jd_administrator = {
+	icon = 99
+	#inherit = yes
+	build_time_modifier = -0.15
+	build_cost_modifier = -0.15
+}	
+
+employing_jd_administrator_golden_age = {
+	icon = 99
+	#inherit = yes
+	build_time_modifier = -0.3
+	build_cost_modifier = -0.3
+}	
+
+peace_deal_with_ethiopia = {
+	icon = 95
+	monthly_character_prestige = 1
+}
+
+jd_paper_mill = {
+	icon = 97
+	economy_techpoints = 1
+	tech_growth_modifier = 0.5
+	local_tax_modifier = 0.1
+}
+
+jd_fireworks_guild = {
+	icon = 103
+	military_techpoints = 1
+	garrison_size = 0.25
+	levy_size = 0.1
+}
+
+jd_dry_docks = {
+	icon = 101
+	economy_techpoints = 1
+	galleys_perc = 0.5
+	local_tax_modifier = 0.1
+}
+
+jd_administrative_outpost = {
+	icon = 101
+	economy_techpoints = 1
+	culture_techpoints = 1
+}
+
+jd_blast_furnace = {
+	icon = 101
+	military_techpoints = 1
+	levy_reinforce_rate = 0.5
+}
+
+jd_strategist = {
+	icon = 103
+	martial = 1
+	stewardship = 1
+}
+
+jd_prince = {
+	icon = 109
+	diplomacy = 1
+	stewardship = 1
+	learning = 1
+}
+
+jd_princess = {
+	icon = 109
+	diplomacy = 1
+	stewardship = 1
+	learning = 1
+}
+
+jd_held_sadah_timer = {
+	vassal_opinion = 5
+	icon = 7
+}
+
+jd_ethiopia_honor_guard_timer = { icon = 1 }
+
+jd_ethiopia_regiment_timer = { icon = 1 }
+
+ethiopia_imperial_trade_contract = {
+	multiplicative_trade_post_income_modifier = 1.0
+	icon = 99
+}
+
+ethiopia_favored_in_trade = {
+	multiplicative_trade_post_income_modifier = 1.0
+	icon = 99
+}
+
+ethiopia_send_relief = {
+	icon = 60
+	global_tax_modifier = -0.1
+	levy_reinforce_rate = -0.3
+}
+
+angered_ethiopia_modifier = { #Scripter! Update angered_ethiopia_tt if values change here.
+	icon = 110
+	monthly_character_prestige = -0.5
+	monthly_grace = -2
+}
+
+war_with_ethiopia_modifier = {
+	icon = 110
+	levy_reinforce_rate = -0.75
+}
+
+failed_invasion_of_ethiopia = { icon = 1}
+
+ethiopia_supply_horses = {
+	manpower_growth = -0.15
+	monthly_grace = 2
+	icon = 56
+}
+
+ethiopia_raid_active = {
+	manpower_growth = -0.15
+	levy_reinforce_rate = -0.15
+	global_levy_size = -0.10
+	multiplicative_trade_post_income_modifier = -0.25
+	monthly_grace = -5
+	icon = 105
+}
+
+ethiopia_raid_grace_cd = {
+	icon = 1
+}
+
+ethiopia_grace_send_gift_timer = { icon = 1 }
+
+ethiopia_grace_send_eunuch_timer = { icon = 1 }
+
+ethiopia_grace_send_commander_timer = { icon = 1 }
+
+ethiopia_grace_send_concubine_timer = { icon = 1 }
+
+ethiopia_grace_tributary_timer = { icon = 1 }
+
+jd_ethiopia_boon_cd = { icon = 1 }
+
+jd_ethiopia_tribute_cd = { icon = 1 } # not used anymore
+
+ethiopia_force_open_cooldown = { icon = 1 }

@@ -1,6 +1,6 @@
 # #character
-# on_startup = {
-	# events = {
+on_startup = {
+	events = {
 		# GR.13 #True cognatic for rule gender = all
 		# JD.10006 #Save game fix for setting the name of the Chinese empire
 		# JD.60005 #Convert prosthetics event modifiers into artifacts
@@ -23,7 +23,7 @@
 		# HFP.20804 #Clear Byzantine commander variables on the Emperor.
 		# HF.23778 #Setting up god-emperors on Altstart.
 		# HFP.24120 #Setup Princely Elector Titles.
-		# HFP.11051 # Hidden event to give commanders (who do not have it already) the commander bonus
+		HFP.11051 # Hidden event to give commanders (who do not have it already) the commander bonus
 		# LT.32000 # Adding the historical flag to wonders.
 		# texas.75
 		# gaian.800 #Both of these are Gaian Court-Chap and Stewardship events
@@ -75,8 +75,8 @@
 		
 		
 		# ORFmaint.11
-	# }
-# }
+	}
+}
 
 # #character
 # on_yearly_pulse = {
@@ -1367,10 +1367,10 @@
 # ### on combat pulse
 # #FROM is the character who is the commander of the opposing side
 # #FROMFROM is the character who is the LIEGE of the commander of the opposing side
-# on_combat_pulse = {
-	# random_events = {
-		# 2750 = 0
-		# 500 = HFP.11000 #tombola for battle events
+on_combat_pulse = {
+	random_events = {
+		2750 = 0
+		500 = HFP.11000 #tombola for battle events
 		# #2000 = MIL.500 #Milla's debug event
 		
 		# #### Below: Outcommented - some remade, some moved into tombola.
@@ -1408,8 +1408,8 @@
 		# #50 = MNM.1202 # Scrying vision inspires greatness
 		# #50 = MNM.1203 # Scrying vision injury
 
-	# }
-# }
+	}
+}
 
 # ### on combat starting
 # #FROM is the character who is the commander of the opposing side
@@ -1935,8 +1935,8 @@
 	# }
 # }
 
-# on_death = {
-	# events = {
+on_death = {
+	events = {
 		# #8250
 		# 650
 		# 24500
@@ -1994,7 +1994,7 @@
 		# HF.40090 # Potential bad Papal beatification
 		# HF.40100 # Potential Ancestor Worship
 		# HF.21152 # Clear special interest Sway/Antagonize characters on_death of Swayer/Antagonizer.
-		# HFP.10997 #For logging purposes: how many of my commanders died during my lifetime
+		HFP.10997 #For logging purposes: how many of my commanders died during my lifetime
 		# HFP.41002 # Change the Official Crusade Recipient if the current one dies
 		# HFP.41053 # Change Beneficiary when a Beneficiary dies
 		# HF.23410 #Haruspicy + Bloodthirsty Gods = Read future in human entrails of your sacrifices.
@@ -2052,7 +2052,7 @@
 		# orfelection.100 #reigning senator dies mid-election
 		# orfelection.102 #reigning senator dies mid-election
 		# #ORFmaint.12
-	# }
+	}
 	# random_events = {
 		# 1 = RIP.29800 #reincarnation investigation
 		# 5 = HF.51000 # Crucible steel weapon chain
@@ -2063,7 +2063,7 @@
 		# 2 = HF.40050 # Potential Bad Beatification
 		# 100 = 0
 	# }
-# }
+}
 
 # on_merc_rampage = {
 	# events = {

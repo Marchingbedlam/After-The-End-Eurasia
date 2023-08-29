@@ -74,7 +74,7 @@ cenobitic_elective = {
 			}
 			OR = {
 				trait = regularis
-				trait = regularis
+				trait = regulara
 			}
 		}
 		additive_modifier = {
@@ -159,7 +159,7 @@ cenobitic_elective = {
 			}
 			OR = {
 				trait = regularis
-				trait = regularis
+				trait = regulara
 			}
 		}
 		additive_modifier = {
@@ -1116,28 +1116,14 @@ cenobitic_elective = {
 			FROMFROM = {
 				has_law = status_of_women_2
 			}
-			NOT = { religion = angeline }
 			NOR = {
 				has_religion_feature = religion_matriarchal
 				has_religion_feature = religion_equal
-				has_religion_feature = religion_feature_aria_de_machete
-				has_religion_feature = religion_feature_midewiwin
 				has_game_rule = {
 					name = gender
 					value = all
 				}
 			}
-			FROM = {
-				is_female = yes
-			}
-		}
-		additive_modifier = { #Gender weights angeline
-			value = 30
-			localisation_key = tooltip_feudal_elector_vote_sow
-			FROMFROM = {
-				has_law = status_of_women_2
-			}
-			religion = angeline
 			FROM = {
 				is_female = yes
 			}
@@ -1148,28 +1134,14 @@ cenobitic_elective = {
 			FROMFROM = {
 				has_law = status_of_women_3
 			}
-			NOT = { religion = angeline }
 			NOR = {
 				has_religion_feature = religion_matriarchal
 				has_religion_feature = religion_equal
-				has_religion_feature = religion_feature_aria_de_machete
-				has_religion_feature = religion_feature_midewiwin
 				has_game_rule = {
 					name = gender
 					value = all
 				}
 			}
-			FROM = {
-				is_female = yes
-			}
-		}
-		additive_modifier = { #Gender weights angeline
-			value = 45
-			localisation_key = tooltip_feudal_elector_vote_sow
-			FROMFROM = {
-				has_law = status_of_women_3
-			}
-			religion = angeline
 			FROM = {
 				is_female = yes
 			}
@@ -1184,7 +1156,6 @@ cenobitic_elective = {
 					value = all
 				}
 			}
-			NOT = { religion = angeline }
 			FROM = {
 				is_female = yes
 			}
@@ -2412,7 +2383,6 @@ cenobitic_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 			NOT = { trait = lustful }
 			FROM = { 
@@ -2427,7 +2397,6 @@ cenobitic_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 			FROM = { 
 				trait = temperate
@@ -2441,7 +2410,6 @@ cenobitic_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 			FROM = { 
 				trait = charitable
@@ -2559,7 +2527,6 @@ cenobitic_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 			OR = { 
 				trait = arbitrary #No need for consistency
@@ -2591,7 +2558,6 @@ cenobitic_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 			OR = { 
 				trait = arbitrary #No need for consistency
@@ -2622,7 +2588,6 @@ cenobitic_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 			OR = { 
 				trait = arbitrary #No need for consistency
@@ -2690,7 +2655,6 @@ cenobitic_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 			OR = { 
 				trait = arbitrary #No need for consistency
@@ -2711,7 +2675,6 @@ cenobitic_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 			OR = { 
 				trait = arbitrary #No need for consistency
@@ -3208,13 +3171,6 @@ cenobitic_elective = {
 				OR = { 
 					trait = sympathy_christendom
 					trait = sympathy_judaism
-					trait = sympathy_afro_syncretic
-					trait = sympathy_american_native
-					trait = sympathy_amero_syncretic
-					trait = sympathy_pacific
-					trait = sympathy_oldworld
-					trait = sympathy_mesoamerican_gods
-					trait = sympathy_nautical
 					trait = sympathy_pagans
 					trait = sympathy_indian
 				}
@@ -3246,7 +3202,6 @@ cenobitic_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 			FROM = { 
 				trait = lefthanded
@@ -3671,7 +3626,6 @@ cenobitic_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 					}
 			NOR = {
 				trait = cat
@@ -3775,7 +3729,7 @@ pachomial_elective = {
 			}
 			OR = {
 				trait = regularis
-				trait = regularis
+				trait = regulara
 			}
 		}
 		additive_modifier = {
@@ -3860,7 +3814,7 @@ pachomial_elective = {
 			}
 			OR = {
 				trait = regularis
-				trait = regularis
+				trait = regulara
 			}
 		}
 		additive_modifier = {
@@ -4520,7 +4474,6 @@ pachomial_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 		}
 		additive_modifier = {
@@ -4537,7 +4490,6 @@ pachomial_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 		}
 		additive_modifier = {
@@ -4554,7 +4506,6 @@ pachomial_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 		}
 		additive_modifier = {
@@ -4571,7 +4522,6 @@ pachomial_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 		}
 		additive_modifier = {
@@ -4588,7 +4538,6 @@ pachomial_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 		}
 		additive_modifier = {
@@ -4605,7 +4554,6 @@ pachomial_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 		}
 		additive_modifier = {
@@ -4622,7 +4570,6 @@ pachomial_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 		}
 		additive_modifier = {
@@ -4639,7 +4586,6 @@ pachomial_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 		}
 		additive_modifier = {
@@ -4655,7 +4601,6 @@ pachomial_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 		}
 	}
@@ -4751,12 +4696,9 @@ pachomial_elective = {
 			FROMFROM = {
 				has_law = cognatic_succession
 			}
-			NOT = { religion = angeline }
 			NOR = {
 				has_religion_feature = religion_matriarchal
 				has_religion_feature = religion_equal
-				has_religion_feature = religion_feature_aria_de_machete
-				has_religion_feature = religion_feature_midewiwin
 				has_game_rule = {
 					name = gender
 					value = all
@@ -4768,17 +4710,6 @@ pachomial_elective = {
 		}
 		
 		#Sexism
-		additive_modifier = { #Gender weights angeline
-			value = 30
-			localisation_key = tooltip_feudal_elector_vote_agnatic_woman
-			FROMFROM = {
-				has_law = cognatic_succession
-			}
-			religion = angeline
-			FROM = {
-				is_female = yes
-			}
-		}
 		additive_modifier = { #Gender weights
 			value = -30
 			localisation_key = tooltip_feudal_elector_vote_enatic_man
@@ -4788,8 +4719,6 @@ pachomial_elective = {
 			NOR = {
 				has_religion_feature = religion_patriarchal
 				has_religion_feature = religion_equal
-				has_religion_feature = religion_feature_aria_de_machete
-				has_religion_feature = religion_feature_midewiwin
 				has_game_rule = {
 					name = gender
 					value = all
@@ -4806,28 +4735,14 @@ pachomial_elective = {
 			FROMFROM = {
 				has_law = status_of_women_0
 			}
-			NOT = { religion = angeline }
 			NOR = {
 				has_religion_feature = religion_matriarchal
 				has_religion_feature = religion_equal
-				has_religion_feature = religion_feature_aria_de_machete
-				has_religion_feature = religion_feature_midewiwin
 				has_game_rule = {
 					name = gender
 					value = all
 				}
 			}
-			FROM = {
-				is_female = yes
-			}
-		}
-		additive_modifier = { #Gender weights angeline
-			value = 20
-			localisation_key = tooltip_feudal_elector_vote_sow
-			FROMFROM = {
-				has_law = status_of_women_0
-			}
-			religion = angeline
 			FROM = {
 				is_female = yes
 			}
@@ -4838,26 +4753,13 @@ pachomial_elective = {
 			FROMFROM = {
 				has_law = status_of_women_1
 			}
-			NOT = { religion = angeline }
 			NOR = {
 				has_religion_feature = religion_matriarchal
 				has_religion_feature = religion_equal
-				has_religion_feature = religion_feature_aria_de_machete
-				has_religion_feature = religion_feature_midewiwin
 				has_game_rule = {
 					name = gender
 					value = all
 				}
-			}
-			FROM = {
-				is_female = yes
-			}
-		}
-		additive_modifier = { #Gender weights angeline
-			value = 20
-			localisation_key = tooltip_feudal_elector_vote_sow
-			FROMFROM = {
-				has_law = status_of_women_1
 			}
 			FROM = {
 				is_female = yes
@@ -4869,28 +4771,14 @@ pachomial_elective = {
 			FROMFROM = {
 				has_law = status_of_women_2
 			}
-			NOT = { religion = angeline }
 			NOR = {
 				has_religion_feature = religion_matriarchal
 				has_religion_feature = religion_equal
-				has_religion_feature = religion_feature_aria_de_machete
-				has_religion_feature = religion_feature_midewiwin
 				has_game_rule = {
 					name = gender
 					value = all
 				}
 			}
-			FROM = {
-				is_female = yes
-			}
-		}
-		additive_modifier = { #Gender weights angeline
-			value = 30
-			localisation_key = tooltip_feudal_elector_vote_sow
-			FROMFROM = {
-				has_law = status_of_women_2
-			}
-			religion = angeline
 			FROM = {
 				is_female = yes
 			}
@@ -4901,28 +4789,14 @@ pachomial_elective = {
 			FROMFROM = {
 				has_law = status_of_women_3
 			}
-			NOT = { religion = angeline }
 			NOR = {
 				has_religion_feature = religion_matriarchal
 				has_religion_feature = religion_equal
-				has_religion_feature = religion_feature_aria_de_machete
-				has_religion_feature = religion_feature_midewiwin
 				has_game_rule = {
 					name = gender
 					value = all
 				}
 			}
-			FROM = {
-				is_female = yes
-			}
-		}
-		additive_modifier = { #Gender weights angeline
-			value = 45
-			localisation_key = tooltip_feudal_elector_vote_sow
-			FROMFROM = {
-				has_law = status_of_women_3
-			}
-			religion = angeline
 			FROM = {
 				is_female = yes
 			}
@@ -4937,7 +4811,6 @@ pachomial_elective = {
 					value = all
 				}
 			}
-			NOT = { religion = angeline }
 			FROM = {
 				is_female = yes
 			}
@@ -5117,22 +4990,6 @@ pachomial_elective = {
 			NOT = { has_religion_feature = religion_dogmatic }
 			NOR = { 
 				AND = { 
-					trait = sympathy_afro_syncretic
-					FROM = { religion_group = afro_syncretic } 
-				} 
-				AND = { 
-					trait = sympathy_american_native
-					FROM = { religion_group = american_native } 
-				}
-				AND = { 
-					trait = sympathy_amero_syncretic
-					FROM = { religion_group = amero_syncretic } 
-				}
-				AND = { 
-					trait = sympathy_pacific
-					FROM = { religion_group = pacific } 
-				} 
-				AND = { 
 					trait = sympathy_judaism
 					FROM = { religion_group = jewish_group } 
 				} 
@@ -5141,20 +4998,8 @@ pachomial_elective = {
 					FROM = { religion_group = indian_group } 
 				} 
 				AND = { 
-					trait = sympathy_nautical
-					FROM = { religion_group = nautical } 
-				} 
-				AND = { 
-					trait = sympathy_cult_of_saints
-					FROM = { religion_group = cult_of_saints } 
-				} 
-				AND = { 
 					trait = sympathy_pagans
 					FROM = { religion_group = pagan_group } 
-				} 
-				AND = { 
-					trait = sympathy_oldworld
-					FROM = { religion_group = oldworld } 
 				} 
 
 
@@ -6209,7 +6054,6 @@ pachomial_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 			NOT = { trait = lustful }
 			FROM = { 
@@ -6224,7 +6068,6 @@ pachomial_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 			FROM = { 
 				trait = temperate
@@ -6238,7 +6081,6 @@ pachomial_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 			FROM = { 
 				trait = charitable
@@ -6356,7 +6198,6 @@ pachomial_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 			OR = { 
 				trait = arbitrary #No need for consistency
@@ -6388,7 +6229,6 @@ pachomial_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 			OR = { 
 				trait = arbitrary #No need for consistency
@@ -6419,7 +6259,6 @@ pachomial_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 			OR = { 
 				trait = arbitrary #No need for consistency
@@ -6487,7 +6326,6 @@ pachomial_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 			OR = { 
 				trait = arbitrary #No need for consistency
@@ -6508,7 +6346,6 @@ pachomial_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 			OR = { 
 				trait = arbitrary #No need for consistency
@@ -7005,13 +6842,6 @@ pachomial_elective = {
 				OR = { 
 					trait = sympathy_christendom
 					trait = sympathy_judaism
-					trait = sympathy_afro_syncretic
-					trait = sympathy_american_native
-					trait = sympathy_amero_syncretic
-					trait = sympathy_pacific
-					trait = sympathy_oldworld
-					trait = sympathy_mesoamerican_gods
-					trait = sympathy_nautical
 					trait = sympathy_pagans
 					trait = sympathy_indian
 				}
@@ -7043,7 +6873,6 @@ pachomial_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 			}
 			FROM = { 
 				trait = lefthanded
@@ -7470,7 +7299,6 @@ pachomial_elective = {
 				OR = {
 				religion = miaphysite
 				religion = insular
-				religion = angeline
 					}
 				OR = {
 				trait = regulara
