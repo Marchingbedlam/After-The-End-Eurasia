@@ -431,6 +431,7 @@
 	trait=ruthless
 	2630.1.1={birth=yes}
 	2650.1.1={add_spouse=1750067}
+	2670.1.1={death=yes}
 }
 1750067={
 	name="Ljullja"
@@ -445,6 +446,7 @@
 	trait=brave
 	trait=arbitrary
 	2631.1.1={birth=yes}
+	2670.1.1={death=yes}
 }
 1750068={
 	name="Senipont"
@@ -457,6 +459,7 @@
 	father=1750066
 	mother=1750067
 	2653.1.1={birth=yes}
+	2670.1.1={death=yes}
 }
 1750069={
 	name="Demen"
@@ -472,6 +475,7 @@
 	trait=authoritative
 	2614.1.1={birth=yes}
 	2635.1.1={add_spouse=1750070}
+	2670.1.1={death=yes}
 }
 1750070={
 	name="Tatjana"
@@ -485,6 +489,7 @@
 	trait=stubborn
 	trait=humble
 	2617.1.1={birth=yes}
+	2670.1.1={death=yes}
 }
 1750071={
 	name="Ölösh"
@@ -498,6 +503,7 @@
 	father=1750069
 	mother=1750070
 	2643.1.1={birth=yes}
+	2670.1.1={death=yes}
 }
 1750072={
 	name="Pulkherija"
@@ -512,6 +518,7 @@
 	father=1750069
 	mother=1750070
 	2650.1.1={birth=yes}
+	2670.1.1={death=yes}
 }
 1750073={
 	name="Pimna"
@@ -523,4 +530,19 @@
 	father=1750069
 	mother=1750070
 	2655.1.1={birth=yes}
+	2670.1.1={death=yes}
+}
+1750074={
+	name="Andron"
+	dynasty=2164000 #Vagatov
+	culture=khanty
+	religion=jumic
+	trait=elusive_shadow
+	trait=greedy
+	trait=cynical
+	trait=stubborn
+	trait=trusting
+	disallow_random_traits=yes
+	2640.2.12={birth=yes}
+	2670.1.1={death=yes}
 }
