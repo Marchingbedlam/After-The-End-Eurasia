@@ -173,7 +173,7 @@
 	name="1927013"
 	dynasty=0 #blank
 	culture=braji
-	religion=naqshbandi
+	religion=saura
 	trait=fortune_builder
 	trait=deceitful
 	trait=slothful
@@ -186,7 +186,7 @@
 	name="1927014"
 	dynasty=0 #blank
 	culture=braji
-	religion=naqshbandi
+	religion=saura
 	trait=charismatic_negotiator
 	trait=diligent
 	trait=envious
@@ -281,7 +281,7 @@
 	name="1927021"
 	dynasty=0 #blank
 	culture=awadhi
-	religion=naqshbandi
+	religion=vaishnava
 	trait=intricate_webweaver
 	trait=hedonist
 	trait=greedy
@@ -391,7 +391,7 @@
 	name="1927030"
 	dynasty=0 #blank
 	culture=bundeli
-	religion=naqshbandi
+	religion=vaishnava
 	trait=naive_appeaser
 	trait=wroth
 	trait=brave
@@ -406,7 +406,7 @@
 	dynasty=0 #blank
 	female=yes
 	culture=bagheli
-	religion=naqshbandi
+	religion=vaishnava
 	trait=martial_cleric
 	trait=proud
 	trait=brave
@@ -420,7 +420,7 @@
 	name="1927032"
 	dynasty=0 #blank
 	culture=chhattisgarhi
-	religion=jagannath
+	religion=sarnaist
 	trait=flamboyant_schemer
 	trait=chaste
 	trait=gregarious
@@ -465,7 +465,7 @@
 	dynasty=0 #blank
 	female=yes
 	culture=braji
-	religion=naqshbandi
+	religion=mantramarga
 	trait=fortune_builder
 	trait=diligent
 	trait=humble
@@ -495,7 +495,7 @@
 	dynasty=0 #blank
 	female=yes
 	culture=braji
-	religion=naqshbandi
+	religion=bhagavata
 	trait=intricate_webweaver
 	trait=chaste
 	trait=content
@@ -540,9 +540,8 @@
 1927050={
 	name="1927050"
 	dynasty=0 #blank
-	female=yes
 	culture=bundeli
-	religion=naqshbandi
+	religion=saura
 	trait=midas_touched
 	trait=administrator
 	trait=patient
@@ -557,7 +556,7 @@
 	name="1927051"
 	dynasty=0 #blank
 	culture=bundeli
-	religion=naqshbandi
+	religion=bhagavata
 	trait=mastermind_theologian
 	trait=gardener
 	trait=proud
@@ -573,7 +572,7 @@
 	dynasty=0 #blank
 	female=yes
 	culture=malvi
-	religion=naqshbandi
+	religion=bhagavata
 	trait=misguided_warrior
 	trait=stubborn
 	trait=chaste
@@ -648,9 +647,8 @@
 1927057={
 	name="1927057"
 	dynasty=0 #blank
-	female=yes
-	culture=kauravi
-	religion=naqshbandi
+	culture=bundeli
+	religion=bhagavata
 	trait=midas_touched
 	trait=intricate_webweaver
 	trait=hunter
@@ -663,8 +661,8 @@
 1927058={
 	name="1927058"
 	dynasty=0 #blank
-	culture=kauravi
-	religion=naqshbandi
+	culture=hadoti
+	religion=bhagavata
 	trait=thrifty_clerk
 	trait=paranoid
 	trait=charitable
@@ -678,8 +676,8 @@
 	name="1927059"
 	dynasty=0 #blank
 	female=yes
-	culture=kauravi
-	religion=naqshbandi
+	culture=hadoti
+	religion=bhagavata
 	trait=tough_soldier
 	trait=hedonist
 	trait=honest
@@ -739,8 +737,8 @@
 	name="1927063"
 	dynasty=0 #blank
 	female=yes
-	culture=kauravi
-	religion=naqshbandi
+	culture=bhili
+	religion=bhagavata
 	trait=mastermind_theologian
 	trait=stubborn
 	trait=patient
@@ -790,6 +788,45 @@
 	trait=uncouth
 	trait=mystic
 	2615.1.1={birth=yes}
+	2680.1.1={death=yes}
+}
+1927067={
+	name="1927067"
+	dynasty=0 #blank
+	culture=bundeli
+	religion=mantramarga
+	trait=martial_cleric
+	trait=diligent
+	trait=brave
+	trait=uncouth
+	trait=mystic
+	2615.1.1={birth=yes}
+	2680.1.1={death=yes}
+}
+1927068={
+	name="1927068"
+	dynasty=0 #blank
+	culture=bundeli
+	religion=mantramarga
+	trait=martial_cleric
+	trait=diligent
+	trait=brave
+	trait=uncouth
+	trait=mystic
+	2645.1.1={birth=yes}
+	2680.1.1={death=yes}
+}
+1927069={
+	name="1927069"
+	dynasty=0 #blank
+	culture=bundeli
+	religion=mantramarga
+	trait=martial_cleric
+	trait=diligent
+	trait=brave
+	trait=uncouth
+	trait=mystic
+	2650.1.1={birth=yes}
 	2680.1.1={death=yes}
 }
 
