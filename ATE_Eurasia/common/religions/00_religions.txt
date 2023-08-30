@@ -542,7 +542,7 @@ pagan_group = {
 		
 	}
 	adi_reformed = {
-		graphical_culture = hindugfx
+		graphical_culture = indiangfx
 		interface_skin = { zun_interface indian_interface }
 
 		icon = 27
@@ -576,7 +576,7 @@ pagan_group = {
 		
 	}
 	adi = {
-		graphical_culture = hindugfx
+		graphical_culture = indiangfx
 		interface_skin = { zun_interface indian_interface }
 
 		icon = 26
@@ -610,7 +610,7 @@ pagan_group = {
 		
 	}
 	sarnaist_reformed = {
-		graphical_culture = hindugfx
+		graphical_culture = indiangfx
 		interface_skin = { zun_interface indian_interface }
 
 		icon = 30
@@ -643,7 +643,7 @@ pagan_group = {
 		
 	}
 	sarnaist = {
-		graphical_culture = hindugfx
+		graphical_culture = indiangfx
 		interface_skin = { zun_interface indian_interface }
 
 		icon = 29
@@ -760,7 +760,7 @@ pagan_group = {
 		intermarry = catholic
 	}
 	koyapunem_reformed = {
-		graphical_culture = hindugfx
+		graphical_culture = indiangfx
 		interface_skin = { zun_interface indian_interface }
 		
 
@@ -795,7 +795,7 @@ pagan_group = {
 		
 	}
 	koyapunem = {
-		graphical_culture = hindugfx
+		graphical_culture = indiangfx
 		interface_skin = { zun_interface indian_interface }
 
 		icon = 26
@@ -1819,7 +1819,7 @@ christian = {
 		
 	}
 	nasrani = {
-		graphical_culture = hindugfx
+		graphical_culture = indiangfx
 		
 		icon = 67
 		heresy_icon = 68
@@ -2031,7 +2031,7 @@ vernacular = {
 	
 	
 		ezharapallikal = {
-		graphical_culture = hindugfx
+		graphical_culture = indiangfx
 		
 		icon = 67
 		heresy_icon = 68
@@ -3791,13 +3791,13 @@ old_world_cultist_group = {
 		religious_clothing_head = 10
 		religious_clothing_priest = 10
 	}
-	antaveda = { 
-		graphical_culture = hindugfx
+	antaraveda = { 
+		graphical_culture = indiangfx
 
 		icon = 135
 		heresy_icon = 135
 		
-		color = { 1.0 0.0 0.5 }
+		color = { 127 0 255}
 		
 		high_god_name = GOD_VISHNU
 		
@@ -3829,7 +3829,7 @@ old_world_cultist_group = {
 		
 	}
 	gandhist = { 
-		graphical_culture = hindugfx
+		graphical_culture = indiangfx
 
 		icon = 168
 		heresy_icon = 168
@@ -3869,7 +3869,7 @@ old_world_cultist_group = {
 		
 	}
 	sangh = { 
-		graphical_culture = hindugfx
+		graphical_culture = indiangfx
 
 		icon = 169
 		heresy_icon = 169
@@ -3938,7 +3938,7 @@ old_world_cultist_group = {
 		religious_clothing_priest = 10
 	}
 	satyagraha = {  #Ghandi Non-violence Resistance Religion
-		graphical_culture = hindugfx
+		graphical_culture = indiangfx
 
 		icon = 137
 		heresy_icon = 137
@@ -4052,7 +4052,7 @@ old_world_cultist_group = {
 		intermarry = glorian
 	}
 	masala = { #Jiyo Re Bahubali
-		graphical_culture = hindugfx 
+		graphical_culture = indiangfx 
 
 		icon = 165
 		heresy_icon = 165
@@ -4275,7 +4275,7 @@ indian_group = { #Religions primarily from the Indian Subcontinent which don't f
 	}
 	
 	jagannath_reformed = {
-		graphical_culture = hindugfx
+		graphical_culture = indiangfx
 
 		icon = 161
 		heresy_icon = 162
@@ -4337,7 +4337,7 @@ indian_group = { #Religions primarily from the Indian Subcontinent which don't f
 	}
 
 	jagannath = {
-		graphical_culture = hindugfx
+		graphical_culture = indiangfx
 
 		icon = 144
 		heresy_icon = 144
@@ -4401,7 +4401,7 @@ indian_group = { #Religions primarily from the Indian Subcontinent which don't f
 		
 	}
 	shrauta = { 
-		graphical_culture = hindugfx
+		graphical_culture = indiangfx
 
 		icon = 145
 		heresy_icon = 145
@@ -4438,10 +4438,10 @@ indian_group = { #Religions primarily from the Indian Subcontinent which don't f
 		
 	}
 	saura = { 
-		graphical_culture = hindugfx
+		graphical_culture = indiangfx
 
-		icon = 145
-		heresy_icon = 145
+		icon = 153
+		heresy_icon = 153
 		
 		color = { 255 215 0 }
 		
@@ -4475,7 +4475,7 @@ indian_group = { #Religions primarily from the Indian Subcontinent which don't f
 		
 	}
 	mantramarga = { 
-		graphical_culture = hindugfx
+		graphical_culture = indiangfx
 
 		icon = 146
 		heresy_icon = 146
@@ -4513,7 +4513,7 @@ indian_group = { #Religions primarily from the Indian Subcontinent which don't f
 		
 	}
 	vaishnava = { 
-		graphical_culture = hindugfx
+		graphical_culture = indiangfx
 
 		icon = 147
 		heresy_icon = 147
@@ -4550,7 +4550,7 @@ indian_group = { #Religions primarily from the Indian Subcontinent which don't f
 		
 	}
 	bhagavata = { 
-		graphical_culture = hindugfx
+		graphical_culture = indiangfx
 
 		icon = 154
 		heresy_icon = 154
@@ -4587,7 +4587,7 @@ indian_group = { #Religions primarily from the Indian Subcontinent which don't f
 		
 	}
 	shaktah = { 
-		graphical_culture = hindugfx
+		graphical_culture = indiangfx
 
 		icon = 148
 		heresy_icon = 148
@@ -4627,7 +4627,7 @@ indian_group = { #Religions primarily from the Indian Subcontinent which don't f
 		
 	}
 	thirumatam = { 
-		graphical_culture = hindugfx
+		graphical_culture = indiangfx
 
 		icon = 149
 		heresy_icon = 149
@@ -4670,7 +4670,7 @@ indian_group = { #Religions primarily from the Indian Subcontinent which don't f
 		
 	}
 	sikh = { 
-		graphical_culture = hindugfx
+		graphical_culture = indiangfx
 
 		icon = 150
 		heresy_icon = 150
@@ -4711,8 +4711,8 @@ indian_group = { #Religions primarily from the Indian Subcontinent which don't f
 		
 		pacifist = yes # Makes the AI less likely to start wars, plots and factions
 
-		icon = 151
-		heresy_icon = 151
+		icon = 152
+		heresy_icon = 152
 		
 		color = { 1.0 1.0 0.4 }
 		
@@ -4747,12 +4747,12 @@ indian_group = { #Religions primarily from the Indian Subcontinent which don't f
 		intermarry = hindu
 	}
 	advaita = {   #Spiritual Hinduism centered around the Brahman
-		graphical_culture = hindugfx
+		graphical_culture = indiangfx
 
-		icon = 152
-		heresy_icon = 152
+		icon = 151
+		heresy_icon = 151
 		
-		color = { 163 108 52 }
+		color = { 255 88 0 }
 		
 		high_god_name = GOD_THE_GURU
 		
@@ -4948,7 +4948,7 @@ buddhist_group = {
 		religious_clothing_priest = 10
 	}
 	theravada = {
-		graphical_culture = hindugfx
+		graphical_culture = indiangfx
 
 		icon = 159
 		heresy_icon = 159
@@ -4985,7 +4985,7 @@ buddhist_group = {
 		religious_clothing_priest = 10
 	}
 	navayana = {
-		graphical_culture = hindugfx
+		graphical_culture = indiangfx
 
 		icon = 160
 		heresy_icon = 160
