@@ -45,13 +45,13 @@ on_five_year_pulse = {
 	events = {
 		skc.104 # Lady seeks protection.
 		skc.101 # Knight/bards
-		skc.20 # Royal Touch
+		#skc.20 # Royal Touch
 		SUFI.10030 # Have AI characters join sufi societies
 	}
 }
 on_death = {
 	events = {
-		skc.25 #check if failed Royal Touch
+		#skc.25 #check if failed Royal Touch
 		ottoman.47 #Getting the Sultan Han Trait upon Succession
 		britain.104 #Getting the Fount of Honour Trait upon Succession
 		shia.7 # Getting he Al-Waqil trait
@@ -79,7 +79,7 @@ on_new_holder_usurpation = {
 }
 on_birth = {
 	events = {
-		nepmese.01 #Nepmese Auspicious Birth
+		#nepmese.01 #Nepmese Auspicious Birth
 	}
 }
 on_adulthood = {
