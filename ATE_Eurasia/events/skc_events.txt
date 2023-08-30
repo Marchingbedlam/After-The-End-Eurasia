@@ -196,430 +196,430 @@ character_event = { #claim the blood of the sun king
 		}
 	}
 }
-#royal touch events
-character_event = {
-	id = skc.20
-	desc = EVTDESC_royal_touch_1
-	picture = GFX_evt_bloodlines
-	border = GFX_event_normal_frame_religion
+#royal touch events - fix before uncommenting, odd code
+# character_event = {
+	# id = skc.20
+	# desc = EVTDESC_royal_touch_1
+	# picture = GFX_evt_bloodlines
+	# border = GFX_event_normal_frame_religion
 	
-	is_triggered_only = yes
+	# is_triggered_only = yes
 	
-	only_playable = yes
-	religion = sun_king_cultist
-	only_men = yes
-	only_capable = yes
-	prisoner = no
-	min_age = 16
+	# only_playable = yes
+	# religion = sun_king_cultist
+	# only_men = yes
+	# only_capable = yes
+	# prisoner = no
+	# min_age = 16
 	
-	trigger = {
-		higher_real_tier_than = DUKE
-		prestige = 250
-		is_ill_trigger = no
-	}
+	# trigger = {
+		# higher_real_tier_than = DUKE
+		# prestige = 250
+		# is_ill_trigger = no
+	# }
 	
-	weight_multiplier = {
-		days = 30
-		modifier = {
-			factor = 1.25
-			tier = EMPEROR
-		}
-		modifier = {
-			factor = 1.5
-			any_vassal_or_courtier = {
-				is_ill_trigger = yes
-			}
-		}
+	# weight_multiplier = {
+		# days = 30
+		# modifier = {
+			# factor = 1.25
+			# tier = EMPEROR
+		# }
+		# modifier = {
+			# factor = 1.5
+			# any_vassal_or_courtier = {
+				# is_ill_trigger = yes
+			# }
+		# }
 		
 		
-		# some more modifiers in here
-	}
+		# # some more modifiers in here
+	# }
 	
-	immediate = {
-		if = {
-			trigger = {
-				any_vassal = {
-					is_ill_trigger = yes
-					religion = sun_king_cultist
-				}
-			}
-			any_vassal = {
-				limit = {
-					is_ill_trigger = yes
-					religion = sun_king_cultist
-				}
-				save_event_target_as = royal_touch_vassal
-			}
-		}
-		if = {
-			trigger = {
-				any_courtier = {
-					is_ill_trigger = yes
-					religion = sun_king_cultist
-					is_landed = no
-				}
-			}
-			any_courtier = {
-				limit = {
-					is_ill_trigger = yes
-					religion = sun_king_cultist
-					is_landed = no
-				}
-				save_event_target_as = royal_touch_courtier
-			}
-		}
-		random_demesne_province = {
-			save_event_target_as = royally_touched_province		
-		}
-	}
+	# immediate = {
+		# if = {
+			# trigger = {
+				# any_vassal = {
+					# is_ill_trigger = yes
+					# religion = sun_king_cultist
+				# }
+			# }
+			# any_vassal = {
+				# limit = {
+					# is_ill_trigger = yes
+					# religion = sun_king_cultist
+				# }
+				# save_event_target_as = royal_touch_vassal
+			# }
+		# }
+		# if = {
+			# trigger = {
+				# any_courtier = {
+					# is_ill_trigger = yes
+					# religion = sun_king_cultist
+					# is_landed = no
+				# }
+			# }
+			# any_courtier = {
+				# limit = {
+					# is_ill_trigger = yes
+					# religion = sun_king_cultist
+					# is_landed = no
+				# }
+				# save_event_target_as = royal_touch_courtier
+			# }
+		# }
+		# random_demesne_province = {
+			# save_event_target_as = royally_touched_province		
+		# }
+	# }
 		
-	option = {
-		trigger = {
-			any_vassal = {
-				is_ill_trigger = yes
-				religion = sun_king_cultist
-			}
-		}
-		name = EVTOPTA_royal_touch_1
-		event_target:royal_touch_vassal = {
-			limit = {
-				is_ill_trigger = yes
-				religion = sun_king_cultist
-			}
-			ROOT = {
-				save_persistent_event_target = {
-					name = royally_touched
-					scope = PREV
-				}
-			}
-			save_persistent_event_target = {
-				name = royal_toucher
-				scope = ROOT
-			}
-			character_event = { id = skc.21 days = 1 }
-		}
-		character_event = { id = skc.22 days = 5 }
-	}
-	option = {
-		trigger = {
-			any_courtier = {
-				is_ill_trigger = yes
-				religion = sun_king_cultist
-				is_landed = no
-			}
-		}
-		name = EVTOPTB_royal_touch_1
-		event_target:royal_touch_courtier = {
-			limit = {
-				is_ill_trigger = yes
-				religion = sun_king_cultist
-				is_landed = no
-			}
-			ROOT = {
-				save_persistent_event_target = {
-					name = royally_touched
-					scope = PREV
-				}
-			}
-			save_persistent_event_target = {
-				name = royally_touched
-				scope = ROOT
-			}
-		}
-		character_event = { id = skc.22 days = 3 }
-	}
-	option = {
-		name = EVTOPTC_royal_touch_1
-		character_event = { id = skc.28 days = 3 }
-	}
-	after = {
-		clear_event_target = royal_touch_vassal
-		clear_event_target = royal_touch_courtier
-	}
+	# option = {
+		# trigger = {
+			# any_vassal = {
+				# is_ill_trigger = yes
+				# religion = sun_king_cultist
+			# }
+		# }
+		# name = EVTOPTA_royal_touch_1
+		# event_target:royal_touch_vassal = {
+			# limit = {
+				# is_ill_trigger = yes
+				# religion = sun_king_cultist
+			# }
+			# ROOT = {
+				# save_persistent_event_target = {
+					# name = royally_touched
+					# scope = PREV
+				# }
+			# }
+			# save_persistent_event_target = {
+				# name = royal_toucher
+				# scope = ROOT
+			# }
+			# character_event = { id = skc.21 days = 1 }
+		# }
+		# character_event = { id = skc.22 days = 5 }
+	# }
+	# option = {
+		# trigger = {
+			# any_courtier = {
+				# is_ill_trigger = yes
+				# religion = sun_king_cultist
+				# is_landed = no
+			# }
+		# }
+		# name = EVTOPTB_royal_touch_1
+		# event_target:royal_touch_courtier = {
+			# limit = {
+				# is_ill_trigger = yes
+				# religion = sun_king_cultist
+				# is_landed = no
+			# }
+			# ROOT = {
+				# save_persistent_event_target = {
+					# name = royally_touched
+					# scope = PREV
+				# }
+			# }
+			# save_persistent_event_target = {
+				# name = royally_touched
+				# scope = ROOT
+			# }
+		# }
+		# character_event = { id = skc.22 days = 3 }
+	# }
+	# option = {
+		# name = EVTOPTC_royal_touch_1
+		# character_event = { id = skc.28 days = 3 }
+	# }
+	# after = {
+		# clear_event_target = royal_touch_vassal
+		# clear_event_target = royal_touch_courtier
+	# }
 
-}
+# }
 
-character_event = {
-	id = skc.21
-	desc = EVTDESC_royal_touch_2
-	picture = GFX_evt_bloodlines
-	border = GFX_event_normal_frame_religion
+# character_event = {
+	# id = skc.21
+	# desc = EVTDESC_royal_touch_2
+	# picture = GFX_evt_bloodlines
+	# border = GFX_event_normal_frame_religion
 	
-	is_triggered_only = yes
+	# is_triggered_only = yes
 
-	option = {
-		name = EVTOPTA_royal_touch_2
-		prestige = 10
-	}
-}
+	# option = {
+		# name = EVTOPTA_royal_touch_2
+		# prestige = 10
+	# }
+# }
 
-character_event = {
-	id = skc.22
-	desc = EVTDESC_royal_touch_3
-	picture = GFX_royal_touch
-	border = GFX_event_normal_frame_religion
+# character_event = {
+	# id = skc.22
+	# desc = EVTDESC_royal_touch_3
+	# picture = GFX_royal_touch
+	# border = GFX_event_normal_frame_religion
 	
-	is_triggered_only = yes
+	# is_triggered_only = yes
 
-	option = {
-		name = EVTOPTA_royal_touch_3
-		persistent_event_target:royally_touched = {
-			add_character_modifier = {
-				name = kings_touch
-				duration = -1
-			}
-			opinion = {
-				modifier = opinion_royal_touch
-				who = ROOT
-				years = 5
-			}
-			character_event = { id = skc.23 }
-		}
-		prestige = 50
-	}
+	# option = {
+		# name = EVTOPTA_royal_touch_3
+		# persistent_event_target:royally_touched = {
+			# add_character_modifier = {
+				# name = kings_touch
+				# duration = -1
+			# }
+			# opinion = {
+				# modifier = opinion_royal_touch
+				# who = ROOT
+				# years = 5
+			# }
+			# character_event = { id = skc.23 }
+		# }
+		# prestige = 50
+	# }
 
 	
-}
+# }
 
-character_event = {
-	id = skc.23
-	desc = EVTDESC_royal_touch_4
-	picture = GFX_royal_touch
-	border = GFX_event_normal_frame_religion
+# character_event = {
+	# id = skc.23
+	# desc = EVTDESC_royal_touch_4
+	# picture = GFX_royal_touch
+	# border = GFX_event_normal_frame_religion
 	
-	is_triggered_only = yes
+	# is_triggered_only = yes
 
-	option = {
-		name = EVTOPTA_royal_touch_4
-		prestige = 50
-	}
-	after = {
-		character_event = { id = skc.24 days = 45 }
-	}
-}
+	# option = {
+		# name = EVTOPTA_royal_touch_4
+		# prestige = 50
+	# }
+	# after = {
+		# character_event = { id = skc.24 days = 45 }
+	# }
+# }
 
-character_event = {
-	id = skc.24
-	picture = GFX_evt_bloodlines
-	hide_window = yes
+# character_event = {
+	# id = skc.24
+	# picture = GFX_evt_bloodlines
+	# hide_window = yes
 	
-	is_triggered_only = yes
+	# is_triggered_only = yes
 	
-	trigger = {
-		is_ill_trigger = no
-	}
+	# trigger = {
+		# is_ill_trigger = no
+	# }
 	
-	fail_trigger_effect = {
-		if = {
-			limit = {
-				is_alive = yes
-				has_instances_of_character_modifier = {
-					name = still_sick
-					amount >= 8
-				}
-			}
-			repeat_event = { id = skc.24 days = 45 }
-			add_character_modifier = {
-				name = still_sick
-				duration = -1
-				hidden = yes
-			}
-		}
-		else = {
-			remove_character_modifiers = {
-				modifier = still_sick
-				amount = 8
-			}
-			persistent_event_target:royal_toucher = {
-				character_event = { id = skc.26 }
-			}
-			remove_character_modifier = kings_touch
-		}
-	}
+	# fail_trigger_effect = {
+		# if = {
+			# limit = {
+				# is_alive = yes
+				# has_instances_of_character_modifier = {
+					# name = still_sick
+					# amount >= 8
+				# }
+			# }
+			# repeat_event = { id = skc.24 days = 45 }
+			# add_character_modifier = {
+				# name = still_sick
+				# duration = -1
+				# hidden = yes
+			# }
+		# }
+		# else = {
+			# remove_character_modifiers = {
+				# modifier = still_sick
+				# amount = 8
+			# }
+			# persistent_event_target:royal_toucher = {
+				# character_event = { id = skc.26 }
+			# }
+			# remove_character_modifier = kings_touch
+		# }
+	# }
 	
-	immediate = {
-		persistent_event_target:royal_toucher = {
-			character_event = { id = skc.27 }
-		}
-		remove_character_modifier = kings_touch
-	}
+	# immediate = {
+		# persistent_event_target:royal_toucher = {
+			# character_event = { id = skc.27 }
+		# }
+		# remove_character_modifier = kings_touch
+	# }
 			
-}
+# }
 		
-character_event = { 
-	id = skc.25
-	picture = GFX_evt_bloodlines
-	hide_window = yes
+# character_event = { 
+	# id = skc.25
+	# picture = GFX_evt_bloodlines
+	# hide_window = yes
 	
-	is_triggered_only = yes
+	# is_triggered_only = yes
 	
-	religion = sun_king_cultist
-	prisoner = no
+	# religion = sun_king_cultist
+	# prisoner = no
 	
-	trigger = {
-		has_character_modifier = kings_touch
-	}
+	# trigger = {
+		# has_character_modifier = kings_touch
+	# }
 	
-	immediate = {
-		remove_character_modifiers = {
-			modifier = still_sick
-			amount = 8
-		}
-		persistent_event_target:royal_toucher = {
-			character_event = { id = skc.26 }
-		}
-		remove_character_modifier = kings_touch
-	}
-}
+	# immediate = {
+		# remove_character_modifiers = {
+			# modifier = still_sick
+			# amount = 8
+		# }
+		# persistent_event_target:royal_toucher = {
+			# character_event = { id = skc.26 }
+		# }
+		# remove_character_modifier = kings_touch
+	# }
+# }
 
-character_event = {
-	id = skc.26
-	desc = EVTDESC_royal_touch_5
-	picture = GFX_evt_bloodlines
-	border = GFX_event_normal_frame_religion
+# character_event = {
+	# id = skc.26
+	# desc = EVTDESC_royal_touch_5
+	# picture = GFX_evt_bloodlines
+	# border = GFX_event_normal_frame_religion
 	
-	is_triggered_only = yes
+	# is_triggered_only = yes
 	
 	
 	
-	option = {
-		name = EVTOPTA_royal_touch_5
-		persistent_event_target:royally_touched = {
-			remove_character_modifier = kings_touch
-		}
-		clear_persistent_event_target = royally_touched
-		add_character_modifier = {
-			name = failed_kings_touch
-			years = 3
-		}
-	}
-}
+	# option = {
+		# name = EVTOPTA_royal_touch_5
+		# persistent_event_target:royally_touched = {
+			# remove_character_modifier = kings_touch
+		# }
+		# clear_persistent_event_target = royally_touched
+		# add_character_modifier = {
+			# name = failed_kings_touch
+			# years = 3
+		# }
+	# }
+# }
 
-character_event = {
-	id = skc.27
-	desc = EVTDESC_royal_touch_6
-	picture = GFX_royal_touch
-	border = GFX_event_normal_frame_religion
+# character_event = {
+	# id = skc.27
+	# desc = EVTDESC_royal_touch_6
+	# picture = GFX_royal_touch
+	# border = GFX_event_normal_frame_religion
 	
-	is_triggered_only = yes
+	# is_triggered_only = yes
 
-	option = {
-		name = EVTOPTA_royal_touch_6
-		if = {
-			limit = { 
-				has_instances_of_character_modifier = {
-					name = kings_touch_success
-					amount == 2
-				}
-			}
-			add_trait = blessed_hands
-		}
-		persistent_event_target:royally_touched = {
-			remove_character_modifier = kings_touch
-		}
-		add_character_modifier = {
-			name = successful_kings_touch
-			years = 3
-		}
-		add_character_modifier = {
-			name = kings_touch_success
-			duration = -1
-			hidden = yes
-		}
-		clear_persistent_event_target = royally_touched
-		prestige = 50
+	# option = {
+		# name = EVTOPTA_royal_touch_6
+		# if = {
+			# limit = { 
+				# has_instances_of_character_modifier = {
+					# name = kings_touch_success
+					# amount == 2
+				# }
+			# }
+			# add_trait = blessed_hands
+		# }
+		# persistent_event_target:royally_touched = {
+			# remove_character_modifier = kings_touch
+		# }
+		# add_character_modifier = {
+			# name = successful_kings_touch
+			# years = 3
+		# }
+		# add_character_modifier = {
+			# name = kings_touch_success
+			# duration = -1
+			# hidden = yes
+		# }
+		# clear_persistent_event_target = royally_touched
+		# prestige = 50
 		
-	}
-}
+	# }
+# }
 
 
-character_event = {
-	id = skc.28
-	desc = EVTDESC_royal_touch_8
-	picture = GFX_royal_touch
-	border = GFX_event_normal_frame_religion
+# character_event = {
+	# id = skc.28
+	# desc = EVTDESC_royal_touch_8
+	# picture = GFX_royal_touch
+	# border = GFX_event_normal_frame_religion
 	
-	is_triggered_only = yes
+	# is_triggered_only = yes
 
-	option = {
-		name = EVTOPTA_royal_touch_8
-		prestige = 50
-		hidden_tooltip = {
-			random_list = {
-				95 = { 
-					set_character_flag = royal_touch_success
-				}
-				5 = { 
-					set_character_flag = royal_touch_failure 
-				}
-			}
-		}
-		character_event = { id = skc.29 days = 60 random = 10 }
-	}
+	# option = {
+		# name = EVTOPTA_royal_touch_8
+		# prestige = 50
+		# hidden_tooltip = {
+			# random_list = {
+				# 95 = { 
+					# set_character_flag = royal_touch_success
+				# }
+				# 5 = { 
+					# set_character_flag = royal_touch_failure 
+				# }
+			# }
+		# }
+		# character_event = { id = skc.29 days = 60 random = 10 }
+	# }
 
 	
-}
+# }
 
-character_event = {
-	id = skc.29
-	desc = {
-		trigger = {
-			has_character_flag = royal_touch_success
-		}
-		text = EVTDES1_royal_touch_9
-	}
-	desc = {
-		trigger = {
-			has_character_flag = royal_touch_failure
-		}
-		text = EVTDES2_royal_touch_9
-	}
-	picture = GFX_royal_touch
-	border = GFX_event_normal_frame_religion
+# character_event = {
+	# id = skc.29
+	# desc = {
+		# trigger = {
+			# has_character_flag = royal_touch_success
+		# }
+		# text = EVTDES1_royal_touch_9
+	# }
+	# desc = {
+		# trigger = {
+			# has_character_flag = royal_touch_failure
+		# }
+		# text = EVTDES2_royal_touch_9
+	# }
+	# picture = GFX_royal_touch
+	# border = GFX_event_normal_frame_religion
 	
-	is_triggered_only = yes
+	# is_triggered_only = yes
 
-	option = {
-		trigger = {
-			has_character_flag = royal_touch_success
-		}
-		name = EVTOPTA_royal_touch_9
-		event_target:royally_touched_province = {
-			add_province_modifier = { 
-				name = province_kings_touch
-				years = 3
-			}
-		}
-		if = {
-			limit = { 
-				has_instances_of_character_modifier = {
-					name = kings_touch_success
-					amount == 2
-				}
-			}
-			add_trait = blessed_hands
-		}
-		add_character_modifier = {
-			name = successful_kings_touch
-			years = 3
-		}
-		add_character_modifier = {
-			name = kings_touch_success
-			duration = -1
-			hidden = yes
-		}	
-	}
-	option = {
-		trigger = {
-			has_character_flag = royal_touch_failure
-		}
-		name = EVTOPTB_royal_touch_9
-		add_character_modifier = {
-			name = failed_kings_touch
-			years = 3
-		}
-	}
-}
+	# option = {
+		# trigger = {
+			# has_character_flag = royal_touch_success
+		# }
+		# name = EVTOPTA_royal_touch_9
+		# event_target:royally_touched_province = {
+			# add_province_modifier = { 
+				# name = province_kings_touch
+				# years = 3
+			# }
+		# }
+		# if = {
+			# limit = { 
+				# has_instances_of_character_modifier = {
+					# name = kings_touch_success
+					# amount == 2
+				# }
+			# }
+			# add_trait = blessed_hands
+		# }
+		# add_character_modifier = {
+			# name = successful_kings_touch
+			# years = 3
+		# }
+		# add_character_modifier = {
+			# name = kings_touch_success
+			# duration = -1
+			# hidden = yes
+		# }	
+	# }
+	# option = {
+		# trigger = {
+			# has_character_flag = royal_touch_failure
+		# }
+		# name = EVTOPTB_royal_touch_9
+		# add_character_modifier = {
+			# name = failed_kings_touch
+			# years = 3
+		# }
+	# }
+# }
 
 
 ########Chevalier Events##########

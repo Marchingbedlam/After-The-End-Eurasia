@@ -1213,9 +1213,9 @@ character_event = { # Adding Passover flavor: Selling Chametz
 	option = {
 		name = EVTOPTA_SoA_509
 		event_target:chametz_sale = {
-			gold = 20
+			wealth = 20
 		}
-		gold = -20
+		wealth = -20
 		character_event = { id = SoA.510 days = 9 }
 	}						
 }
@@ -1231,7 +1231,7 @@ character_event = { # Adding Passover flavor: Buying Back Chametz/Mimouna time!
 	option = {
 		name = EVTOPTA_SoA_510
 		event_target:chametz_sale = {
-			gold = -20
+			wealth = -20
 			prestige = 50
 			random_list = {
 				10 = { add_friend = ROOT }
@@ -1259,7 +1259,7 @@ character_event = { # Adding Passover flavor: Buying Back Chametz/Mimouna time!
 				}
 			}
 		}
-		gold = 20
+		wealth = 20
 		prestige = 50
 
 	}

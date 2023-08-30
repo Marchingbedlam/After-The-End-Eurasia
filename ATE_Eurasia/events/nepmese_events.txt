@@ -1,89 +1,89 @@
 
 
-namespace = nepmese
+# namespace = nepmese
 
 
-# 
-character_event = {
-	id = nepmese.01
-	desc = "EVTDESCnepmese.01"
-	picture = "GFX_evt_birth"
-	is_triggered_only = yes
-	trigger = {
-		OR = {
-			religion = nepmese
-			religion = nepmese_reformed
-		}
-		NOT = { has_character_flag = is_child_of_destiny }
-	}
-	immediate = {
-		random = {
-			chance = 5
-			mult_modifier = {
-				OR = {
-					trait = clubfooted
-					trait = harelip
-					trait = hunchback
-					trait = stutter
-					is_weak_trigger = yes
-				}
-				factor = 1.15
-			}
-			mult_modifier = {
-				OR = {
-					trait = dwarf
-				}
-				factor = 1.2
-			}
-			mult_modifier = {
-				OR = {
-					trait = genius
-				}
-				factor = 2
-			}
-			mult_modifier = {
-				OR = {
-					trait = quick
-					trait = shrewd
-					has_fair_trait_trigger = yes
-					is_strong_trigger = yes
-				}
-				factor = 1.15
-			}
-			mult_modifier = {
-				OR = {
-					trait = slow
-					trait = dull
-				}
-				factor = 0.85
-			}
-			mult_modifier = {
-				trait = imbecile
-				factor = 0.0
-			}
-			mult_modifier = {
-				trait = inbred
-				factor = 0.01
-			}
-		}
-		add_trait = trait_auspicious_birth
-		father = { event = { id = nepmese.02 days = 3 } }
-		mother = { event = { id = nepmese.02 days = 3 } }
-	}
-	option = {
-		name = "EVTOPTAnepmese.01"
-	}
-}
+# # 
+# character_event = {
+	# id = nepmese.01
+	# desc = "EVTDESCnepmese.01"
+	# picture = "GFX_evt_birth"
+	# is_triggered_only = yes
+	# trigger = {
+		# OR = {
+			# religion = nepmese
+			# religion = nepmese_reformed
+		# }
+		# NOT = { has_character_flag = is_child_of_destiny }
+	# }
+	# immediate = {
+		# random = {
+			# chance = 5
+			# mult_modifier = {
+				# OR = {
+					# trait = clubfooted
+					# trait = harelip
+					# trait = hunchback
+					# trait = stutter
+					# is_weak_trigger = yes
+				# }
+				# factor = 1.15
+			# }
+			# mult_modifier = {
+				# OR = {
+					# trait = dwarf
+				# }
+				# factor = 1.2
+			# }
+			# mult_modifier = {
+				# OR = {
+					# trait = genius
+				# }
+				# factor = 2
+			# }
+			# mult_modifier = {
+				# OR = {
+					# trait = quick
+					# trait = shrewd
+					# has_fair_trait_trigger = yes
+					# is_strong_trigger = yes
+				# }
+				# factor = 1.15
+			# }
+			# mult_modifier = {
+				# OR = {
+					# trait = slow
+					# trait = dull
+				# }
+				# factor = 0.85
+			# }
+			# mult_modifier = {
+				# trait = imbecile
+				# factor = 0.0
+			# }
+			# mult_modifier = {
+				# trait = inbred
+				# factor = 0.01
+			# }
+		# }
+		# add_trait = trait_auspicious_birth
+		# father = { event = { id = nepmese.02 days = 3 } }
+		# mother = { event = { id = nepmese.02 days = 3 } }
+	# }
+	# option = {
+		# name = "EVTOPTAnepmese.01"
+	# }
+# }
 
-#Child born Auspiciously
-character_event = {
-	id = nepmese.02
-	desc = nepmese.02DESC
-	picture = GFX_evt_birth
+# #Child born Auspiciously
+# character_event = {
+	# id = nepmese.02
+	# desc = nepmese.02DESC
+	# picture = GFX_evt_birth
 	
-	is_triggered_only = yes
+	# is_triggered_only = yes
 	
-	option = {
-		name = EVTOPTAnepmese.01
-	}
-}
+	# option = {
+		# name = EVTOPTAnepmese.01
+	# }
+# }
