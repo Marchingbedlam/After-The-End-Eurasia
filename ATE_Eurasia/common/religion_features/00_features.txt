@@ -1086,6 +1086,8 @@ religion_doctrine = {
 			NOR = {
 				religion = west_african_pagan #Redundant
 				religion = west_african_pagan_reformed #Redundant
+				religion = koyapunem_reformed #redundancy
+				religion = koyapunem #redundancy
 			}
 		}
 		effect = {
@@ -1122,6 +1124,7 @@ religion_doctrine = {
 			NOR = {
 				has_selected_religion_feature = religion_no_leader
 				has_selected_religion_feature = religion_feature_ak_jeng
+				has_selected_religion_feature = religion_feature_koyapunem
 				religion_group = christian #Random World redundancy.
 			}
 		}
@@ -1651,6 +1654,43 @@ religion_doctrine = {
 				learning = 2
 				key = "MONASTIC_ATTR_RELIGION"
 			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = { #Handles feature randomization in AltStart to make unreformed pagans still have "paganish" features.
+				factor = 0
+				has_game_started = no
+				religion_group = indian_group
+			}
+		}
+	}
+	religion_feature_koyapunem = {
+		picture = GFX_religion_feature_koyapunem
+		potential = {
+			has_game_started = yes
+			religion = koyapunem_reformed
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		trigger = {
+			religion = koyapunem_reformed
+			NOR = { 
+				has_selected_religion_feature = religion_animistic
+				has_selected_religion_feature = religion_beatification
+			}
+		}
+		effect = {
+			custom_tooltip = { text = tooltip_religion_feature_land_morale }
+			custom_tooltip = { text = tooltip_religion_feature_adulthood_rite }
+			hidden_tooltip = { 
+				set_unit_modifier = { 
+					land_morale = 0.05
+					key = "ANIMISTIC_RELIGION"
+				}
+			}
+			custom_tooltip = { text = tooltip_religion_feature_beatification }
+			custom_tooltip = { text = tooltip_religion_feature_eldership }
 		}
 		ai_will_do = {
 			factor = 1

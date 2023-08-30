@@ -546,7 +546,14 @@ k_udmurtia = {
 		always = no # Only created through special event
 	}
 }
-
+k_gondwana = {
+	color={ 223 189 57 }
+	color2={ 255 255 255 }
+	
+	capital = 2951 #Mandla
+	
+	dignity=10
+}
 ### titular duchies ###
 
 d_sligo = {

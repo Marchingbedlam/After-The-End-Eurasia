@@ -14,3 +14,15 @@ culture = odia
 religion = jagannath
 
 #History
+1250.1.1 = { 
+	build_wonder=wonder_konark_sun_temple
+	set_wonder_stage=3
+	build_wonder_upgrade = upgrade_temple_complex
+	build_wonder_upgrade = upgrade_school_hindu
+	build_wonder_upgrade = upgrade_high_gopura
+	build_wonder_upgrade = upgrade_shikhara
+	build_wonder_upgrade = upgrade_hospital_hindu
+	build_wonder_upgrade = upgrade_hypocausts
+	build_wonder_upgrade = upgrade_scribe_room
+	build_wonder_upgrade = upgrade_inner_sanctuary
+}

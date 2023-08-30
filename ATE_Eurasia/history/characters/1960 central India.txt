@@ -2,7 +2,7 @@
 	name="1960000"
 	dynasty=0 #blank
 	culture=odia
-	religion = bhagavata
+	religion = jagannath
 	martial=3
 	diplomacy=2
 	stewardship=4
@@ -21,7 +21,7 @@
 	name="1960001"
 	dynasty=0 #blank
 	culture=odia
-	religion = bhagavata
+	religion = saura
 	martial=4
 	diplomacy=5
 	stewardship=4
@@ -32,14 +32,14 @@
 	trait=envious
 	trait=proud
 	trait=cynical
-	2651.12.15={birth=yes}
+	2641.12.15={birth=yes}
 	2695.4.3={death=yes}
 }
 1960002={
 	name="1960002"
 	dynasty=0 #blank
 	culture=odia
-	religion = bhagavata
+	religion = jagannath
 	martial=3
 	diplomacy=6
 	stewardship=4
@@ -57,8 +57,8 @@
 	name="1960003"
 	dynasty=0 #blank
 	female=yes
-	culture=chhattisgarhi
-	religion = bhagavata
+	culture=odia
+	religion = jagannath
 	martial=4
 	diplomacy=7
 	stewardship=5
@@ -77,7 +77,7 @@
 	name="1960004"
 	dynasty=0 #blank
 	culture=chhattisgarhi
-	religion = bhagavata
+	religion = jagannath
 	martial=3
 	diplomacy=1
 	stewardship=4
@@ -94,8 +94,8 @@
 1960005={
 	name="1960005"
 	dynasty=0 #blank
-	culture=odia
-	religion = bhagavata
+	culture=chhattisgarhi
+	religion = jagannath
 	martial=3
 	diplomacy=5
 	stewardship=3
@@ -113,8 +113,8 @@
 1960006={
 	name="1960006"
 	dynasty=0 #blank
-	culture=odia
-	religion = bhagavata
+	culture=telluguvalli
+	religion = jagannath
 	martial=5
 	diplomacy=3
 	stewardship=5
@@ -133,7 +133,7 @@
 	name="1960007"
 	dynasty=0 #blank
 	culture=odia
-	religion = bhagavata
+	religion = jagannath
 	martial=3
 	diplomacy=3
 	stewardship=4
@@ -151,7 +151,7 @@
 	name="1960008"
 	dynasty=0 #blank
 	culture=odia
-	religion = bhagavata
+	religion = jagannath
 	martial=4
 	diplomacy=5
 	stewardship=7
@@ -170,8 +170,8 @@
 	name="1960009"
 	dynasty=0 #blank
 	female=yes
-	culture=odia
-	religion = bhagavata
+	culture=chhattisgarhi
+	religion = jagannath
 	martial=3
 	diplomacy=5
 	stewardship=4
@@ -189,8 +189,8 @@
 1960010={
 	name="1960010"
 	dynasty=0 #blank
-	culture=odia
-	religion = bhagavata
+	culture=chhattisgarhi
+	religion = jagannath
 	martial=5
 	diplomacy=3
 	stewardship=4
@@ -205,11 +205,12 @@
 	2609.1.13={birth=yes}
 	2701.2.17={death=yes}
 }
-1960011={
+1960011={ #Bastar
 	name="1960011"
 	dynasty=0 #blank
 	culture=gondi
-	religion = bhagavata
+	religion = koyapunem
+	secret_religion = vaishnava
 	martial=5
 	diplomacy=2
 	stewardship=3
@@ -227,8 +228,8 @@
 1960012={
 	name="1960012"
 	dynasty=0 #blank
-	culture=odia
-	religion = bhagavata
+	culture=marathi
+	religion = navayana
 	martial=3
 	diplomacy=3
 	stewardship=5
@@ -247,8 +248,8 @@
 1960013={
 	name="1960013"
 	dynasty=0 #blank
-	culture=odia
-	religion = bhagavata
+	culture=nagpuri
+	religion = sarnaist
 	martial=2
 	diplomacy=2
 	stewardship=3
@@ -267,8 +268,8 @@
 1960014={
 	name="1960014"
 	dynasty=0 #blank
-	culture=odia
-	religion = bhagavata
+	culture=rarhi
+	religion = shaktah
 	martial=3
 	diplomacy=2
 	stewardship=5
@@ -290,8 +291,8 @@
 	name="1960015"
 	dynasty=0 #blank
 	female=yes
-	culture=odia
-	religion = bhagavata
+	culture=magahi
+	religion = sarnaist
 	martial=3
 	diplomacy=5
 	stewardship=5
@@ -311,8 +312,8 @@
 	name="1960016"
 	dynasty=0 #blank
 	female=yes
-	culture=odia
-	religion = bhagavata
+	culture=bagheli
+	religion = mantramarga
 	martial=4
 	diplomacy=4
 	stewardship=6
@@ -331,7 +332,7 @@
 	name="1960017"
 	dynasty=0 #blank
 	culture=odia
-	religion = bhagavata
+	religion = saura
 	trait=misguided_warrior
 	trait=sturdy
 	trait=patient
@@ -345,8 +346,8 @@
 	name="1960018"
 	dynasty=0 #blank
 	female=yes
-	culture=gondi
-	religion = bhagavata
+	culture=odia
+	religion = vaishnava
 	trait=indulgent_wastrel
 	trait=robust
 	trait=proud
@@ -360,7 +361,7 @@
 	name="1960019"
 	dynasty=0 #blank
 	culture=ho
-	religion = bhagavata
+	religion = sarnaist
 	trait=martial_cleric
 	trait=diligent
 	trait=humble
@@ -375,8 +376,8 @@
 	name="1960020"
 	dynasty=0 #blank
 	female=yes
-	culture=gondi
-	religion = bhagavata
+	culture=telangani
+	religion = vaishnava
 	trait=brilliant_strategist
 	trait=slothful
 	trait=proud
@@ -556,8 +557,8 @@
 	name="1960032"
 	dynasty=0 #blank
 	female=yes
-	culture=gondi
-	religion = bhagavata
+	culture=chhattisgarhi
+	religion = jagannath
 	trait=naive_appeaser
 	trait=chaste
 	trait=greedy
@@ -736,8 +737,8 @@
 1960044={
 	name="1960044"
 	dynasty=0 #blank
-	culture=gondi
-	religion = bhagavata
+	culture=santal
+	religion = sarnaist
 	trait=grey_eminence
 	trait=slothful
 	trait=proud
@@ -1328,6 +1329,22 @@
 	dynasty=0 #blank
 	culture=gondi
 	religion = bhagavata
+	trait=naive_appeaser
+	trait=groomed
+	trait=chaste
+	trait=impaler
+	trait=gregarious
+	trait=brave
+	trait=freckles
+	2638.1.1={birth=yes}
+	2680.1.1={death=yes}
+}
+
+1960083={
+	name="1960083"
+	dynasty=0 #blank
+	culture=odia
+	religion = jagannath
 	trait=naive_appeaser
 	trait=groomed
 	trait=chaste
