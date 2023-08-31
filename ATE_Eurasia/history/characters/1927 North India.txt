@@ -2,7 +2,7 @@
 	name="1927000"
 	dynasty=0 #blank
 	culture=kauravi
-	religion=naqshbandi
+	religion=gandhist
 	trait=tough_soldier
 	trait=wroth
 	trait=socializer
@@ -18,7 +18,7 @@
 	dynasty=0 #blank
 	female=yes
 	culture=kauravi
-	religion=naqshbandi
+	religion=bharathamatha
 	trait=underhanded_rogue
 	trait=greedy
 	trait=dull
@@ -31,7 +31,7 @@
 	name="1927002"
 	dynasty=0 #blank
 	culture=kauravi
-	religion=naqshbandi
+	religion=bhagavata
 	trait=martial_cleric
 	trait=content
 	trait=lustful
@@ -47,7 +47,7 @@
 	dynasty=0 #blank
 	female=yes
 	culture=kauravi
-	religion=naqshbandi
+	religion=bharathamatha
 	trait=thrifty_clerk
 	trait=kind
 	trait=patient
@@ -61,7 +61,7 @@
 	name="1927004"
 	dynasty=0 #blank
 	culture=kauravi
-	religion=naqshbandi
+	religion=barelvi
 	trait=indulgent_wastrel
 	trait=brave
 	trait=patient
@@ -74,30 +74,29 @@
 1927006={
 	name="1927006"
 	dynasty=0 #blank
-	culture=kauravi
-	religion=naqshbandi
+	culture=kannauji
+	religion=jain
 	trait=thrifty_clerk
 	trait=kind
 	trait=harelip
 	trait=shrewd
 	trait=uncouth
 	trait=lustful
-	2615.1.1={birth=yes}
+	2635.1.1={birth=yes}
 	2691.1.1={death=yes}
 }
 
 1927007={
 	name="1927007"
 	dynasty=0 #blank
-	female=yes
-	culture=kauravi
-	religion=naqshbandi
+	culture=awadhi
+	religion=shiite
 	trait=amateurish_plotter
 	trait=cruel
 	trait=homosexual
 	trait=stressed
 	trait=quick
-	2604.1.1={birth=yes}
+	2634.1.1={birth=yes}
 	2691.1.1={death=yes}
 }
 
@@ -105,7 +104,7 @@
 	name="1927008"
 	dynasty=0 #blank
 	culture=braji
-	religion=naqshbandi
+	religion=bhagavata
 	trait=intricate_webweaver
 	trait=gregarious
 	trait=honest
@@ -117,8 +116,8 @@
 1927009={
 	name="1927009"
 	dynasty=0 #blank
-	culture=braji
-	religion=naqshbandi
+	culture=kannauji
+	religion=ruhi
 	trait=grey_eminence
 	trait=gardener
 	trait=deceitful
@@ -130,15 +129,14 @@
 1927010={
 	name="1927010"
 	dynasty=0 #blank
-	female=yes
-	culture=kauravi
-	religion=naqshbandi
+	culture=punjabi
+	religion=sikh
 	trait=skilled_tactician
 	trait=stubborn
 	trait=humble
 	trait=wounded
 	trait=strong
-	2627.1.1={birth=yes}
+	2647.1.1={birth=yes}
 	2691.1.1={death=yes}
 }
 
@@ -146,7 +144,7 @@
 	name="1927011"
 	dynasty=0 #blank
 	culture=braji
-	religion=naqshbandi
+	religion=gandhist
 	trait=tough_soldier
 	trait=temperate
 	trait=charitable
@@ -159,7 +157,8 @@
 	name="1927012"
 	dynasty=0 #blank
 	culture=kannauji
-	religion=naqshbandi
+	religion=bharathamatha
+	female=yes
 	trait=midas_touched
 	trait=lustful
 	trait=slothful
@@ -199,7 +198,8 @@
 	name="1927015"
 	dynasty=0 #blank
 	culture=braji
-	religion=naqshbandi
+	religion=bharathamatha
+	female=yes
 	trait=elusive_shadow
 	trait=cynical
 	trait=groomed
@@ -225,14 +225,13 @@
 1927017={
 	name="1927017"
 	dynasty=0 #blank
-	female=yes
 	culture=awadhi
-	religion=naqshbandi
+	religion=bhagavata
 	trait=underhanded_rogue
 	trait=proud
 	trait=zealous
 	trait=chaste
-	2654.1.1={birth=yes}
+	2644.1.1={birth=yes}
 	2691.1.1={death=yes}
 }
 
@@ -240,7 +239,7 @@
 	name="1927018"
 	dynasty=0 #blank
 	culture=awadhi
-	religion=naqshbandi
+	religion=bhagavata
 	trait=misguided_warrior
 	trait=hedonist
 	trait=trusting
@@ -255,7 +254,7 @@
 	dynasty=0 #blank
 	female=yes
 	culture=awadhi
-	religion=naqshbandi
+	religion=bharathamatha
 	trait=thrifty_clerk
 	trait=slothful
 	trait=patient
@@ -268,7 +267,7 @@
 	name="1927020"
 	dynasty=0 #blank
 	culture=awadhi
-	religion=naqshbandi
+	religion=bhagavata
 	trait=underhanded_rogue
 	trait=feeble
 	trait=envious
@@ -294,7 +293,7 @@
 	name="1927022"
 	dynasty=0 #blank
 	culture=awadhi
-	religion=naqshbandi
+	religion=bhagavata
 	trait=duelist
 	trait=gregarious
 	trait=slothful
@@ -308,7 +307,7 @@
 	name="1927023"
 	dynasty=0 #blank
 	culture=awadhi
-	religion=naqshbandi
+	religion=mantramarga
 	trait=indulgent_wastrel
 	trait=gregarious
 	trait=arbitrary
@@ -321,7 +320,7 @@
 	name="1927024"
 	dynasty=0 #blank
 	culture=awadhi
-	religion=naqshbandi
+	religion=bhagavata
 	trait=detached_priest
 	trait=theologian
 	trait=proud
@@ -334,7 +333,7 @@
 	name="1927025"
 	dynasty=0 #blank
 	culture=bhojpuri
-	religion=naqshbandi
+	religion=vaishnava
 	trait=tough_soldier
 	trait=diligent
 	trait=honest
@@ -347,8 +346,8 @@
 	name="1927026"
 	dynasty=0 #blank
 	female=yes
-	culture=bagheli
-	religion=naqshbandi
+	culture=awadhi
+	religion=vaishnava
 	trait=flamboyant_schemer
 	trait=craven
 	trait=chaste
@@ -363,7 +362,7 @@
 	dynasty=0 #blank
 	female=yes
 	culture=awadhi
-	religion=naqshbandi
+	religion=bhagavata
 	trait=tough_soldier
 	trait=sturdy
 	trait=lustful
@@ -377,7 +376,8 @@
 	name="1927028"
 	dynasty=0 #blank
 	culture=awadhi
-	religion=naqshbandi
+	religion=bharathamatha
+	female=yes
 	trait=naive_appeaser
 	trait=temperate
 	trait=lustful
@@ -588,15 +588,14 @@
 1927053={
 	name="1927053"
 	dynasty=0 #blank
-	female=yes
-	culture=bagri
-	religion=naqshbandi
+	culture=punjabi
+	religion=sikh
 	trait=charismatic_negotiator
 	trait=erudite
 	trait=slothful
 	trait=kind
 	trait=honest
-	2651.1.1={birth=yes}
+	2641.1.1={birth=yes}
 	2691.1.1={death=yes}
 }
 
@@ -766,8 +765,8 @@
 1927065={
 	name="1927065"
 	dynasty=0 #blank
-	culture=kauravi
-	religion=naqshbandi
+	culture=saraiki
+	religion=ahmadi
 	trait=indulgent_wastrel
 	trait=wroth
 	trait=shy
@@ -821,6 +820,19 @@
 	dynasty=0 #blank
 	culture=bundeli
 	religion=mantramarga
+	trait=martial_cleric
+	trait=diligent
+	trait=brave
+	trait=uncouth
+	trait=mystic
+	2650.1.1={birth=yes}
+	2680.1.1={death=yes}
+}
+1927070={
+	name="1927070"
+	dynasty=0 #blank
+	culture=punjabi
+	religion=sikh
 	trait=martial_cleric
 	trait=diligent
 	trait=brave
