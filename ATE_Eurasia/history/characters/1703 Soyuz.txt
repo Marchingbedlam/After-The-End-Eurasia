@@ -1285,7 +1285,6 @@
 	trait=gregarious
 	trait=arbitrary
 	trait=quick
-	trait=gregarious
 	trait=schemer
 	trait=deceitful
 	father=1703066
@@ -2095,6 +2094,7 @@
 	trait=feeble
 	2628.1.1={birth=yes}
 	2658.1.1={add_spouse=1703112}
+	2750.1.1={death=yes}
 }
 1703112={
 	name="Tany"
@@ -2106,6 +2106,7 @@
 	trait=painter
 	trait=familyperson
 	2633.1.1={birth=yes}
+	2750.1.1={death=yes}
 }
 1703113={
 	name="Kamaj"
@@ -2115,6 +2116,7 @@
 	father=1703111
 	mother=1703112
 	2659.1.1={birth=yes}
+	2750.1.1={death=yes}
 }
 1703114={
 	name="Maria"
@@ -2129,6 +2131,7 @@
 	trait=familyperson
 	2624.1.1={birth=yes}
 	2642.1.1={add_matrilineal_spouse=1703115}
+	2750.1.1={death=yes}
 }
 1703115={
 	name="Roman"
@@ -2142,6 +2145,7 @@
 	trait=honest
 	trait=temperate
 	2626.1.1={birth=yes}
+	2750.1.1={death=yes}
 }
 1703116={
 	name="Arkady"
@@ -2155,6 +2159,7 @@
 	mother=1703114
 	father=1703115
 	2651.1.1={birth=yes}
+	2750.1.1={death=yes}
 }
 1703117={
 	name="Platon"
@@ -2167,6 +2172,7 @@
 	mother=1703114
 	father=1703115
 	2654.1.1={birth=yes}
+	2750.1.1={death=yes}
 }
 1703118={
 	name="Nastassya"
@@ -2177,6 +2183,7 @@
 	mother=1703114
 	father=1703115
 	2662.1.1={birth=yes}
+	2750.1.1={death=yes}
 }
 1703119={
 	name="Anna"

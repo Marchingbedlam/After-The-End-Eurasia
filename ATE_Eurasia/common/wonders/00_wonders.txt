@@ -3582,42 +3582,34 @@ wonder_biblioteca_marciana = {
 	show_model = no 
 	allow_coastal = yes 
 	potential = {
-		trigger_if = {
-			limit = {
-				AND = {
-					religion_group = christian
-					religion_group = scholastic
-					religion_group = old_world_cultist
-					religion_group = muslim
-					religion_group = pagan_group
-					religion_group = indian_group
-					religion_group = jewish_group
-					religion_group = vernacular
-					religion_group = islamosyncretic
-					NOT = {
-						is_tribal = yes
-					}
-				}
+		AND = {
+			OR = {
+				religion_group = christian
+				religion_group = scholastic
+				religion_group = muslim
+				religion_group = pagan_group
+				religion_group = indian_group
+				religion_group = jewish_group
+				religion_group = vernacular
+				religion_group = islamosyncretic
 			}
+			is_tribal = no
 		}
 	}
 	active = {
 		ROOT = {
-			trigger_if = {
-				AND = {
+			AND = {
+				OR = {
 					religion_group = christian
 					religion_group = scholastic
-					religion_group = old_world_cultist
 					religion_group = muslim
 					religion_group = pagan_group
 					religion_group = indian_group
 					religion_group = jewish_group
 					religion_group = vernacular
 					religion_group = islamosyncretic
-					NOT = {
-						is_tribal = yes
-					}
 				}
+				is_tribal = no
 			}
 		}
 	}
