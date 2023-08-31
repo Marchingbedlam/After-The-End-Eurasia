@@ -3868,22 +3868,22 @@ old_world_cultist_group = {
 		intermarry = buddhist_group
 		
 	}
-	sangh = { 
+	bharathamatha = { 
 		graphical_culture = indiangfx
 
 		icon = 169
 		heresy_icon = 169
 		
-		color = { 255 199 44 }
+		color = { 244 196 48 }
 		
-		high_god_name = GOD_BHARAT2
+		high_god_name = GOD_BHARAT_MATA
 		
 		god_names = {
-			GOD_BRAHMA GOD_DOCTORIND GOD_RAMA GOD_HEMCHANDRA GOD_SARVODAYA GOD_SHAHEED GOD_SHIVA GOD_VIKRAMADITYA GOD_VISHNU
+			GOD_BHARAT_MATA GOD_LAKSHMI
 		}
 		
 		evil_god_names = {
-			GOD_SHAHEED GOD_SATYABHAKTA GOD_GHAZWA GOD_ISI GOD_SUBH GOD_QAISAR
+			GOD_APAATA GOD_GODSE GOD_SUBH GOD_ISI
 		}
 		
 		character_modifier = {
@@ -3895,12 +3895,12 @@ old_world_cultist_group = {
 		priests_can_marry = yes
 		max_consorts = 3
 		caste_opinions = yes
-		castes = yes
+		feminist = yes
 		
 		religious_clothing_head = 8
 		religious_clothing_priest = 8
 
-		scripture_name = BOOK_BHARAT
+		scripture_name = THE_BHAGAVAD_GITA
 		priest_title = PUJARI
 		piety_name = KARMA
 		

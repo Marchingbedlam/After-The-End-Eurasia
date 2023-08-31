@@ -390,7 +390,7 @@ RETTYPE_CUL_JURCHEN;Tie-Futu;Tie-futu;Tie-Futu;;Tiefutu;;;;;;;;;x
 NORTHERN_GOVERNOR_MALE;Governor;;;;;;;;;x
 NORTHERN_GOVERNOR_FEMALE;Governess;;;;;;;;;x
 NORTHERN_GOVERNOR_TITLE_FOA;Your Illustriousness;Votre Illustre Grandeur;Eure Erhabenheit;;Su Ilustrísima;;;;;;;;;x
-e_ethiopia_governor;Northern Governor;Gouverneur du Nord;Gouverneur des Nordens;;Gobernador del norte;;;;;;;;;x
+e_ethiopia_governor;Tsahife Lam;Tsahife Lam;Tsahife Lam;;Tsahife Lam;;;;;;;;;x
 e_ethiopia_governor_adj;Ethiopian;Éthiopien;Äthiopisch;;etíope;;;;;;;;;x
 e_ethiopia;Empire of Ethiopia;Empire d'Ethiopie;Kaiserreich von Äthiopien;;Imperio de Etíope;;;;;;;;;x
 ethiopia_stable;Stable;Stable;Stabil;;Estable;;;;;;;;;x
@@ -1436,38 +1436,11 @@ EVT_DESC_ZP_9;Today is a sad day. The hedgehog I took into my house that faithfu
 EVT_OPTA_ZP_9;Never was there a better hunter.;Jamais il n'y eut meilleur chasseur.;Niemals gab es einen besseren Jäger.;;Jamás hubo mejor cazador.;;;;;;;;;x
 EVT_DESC_ZP_10;Today is a sad day. The otter I took into my house that faithfully ensured the health and well-being of my realm has passed away. Today is a day of mourning and sorrow.;C'est un jour triste. Le chien à loutre que j'ai pris sous mon toit, qui a loyalement assuré santé et bien-être à mon pays s'en est allé.;Heute ist ein trauriger Tag. Der Otter, den ich in mein Haus gebracht habe und der die Gesundheit und das Wohlergehen meines Reiches treu gesichert hat, ist verstorben. Heute ist ein Tag der Trauer und des Schmerzes.;;Hoy es un día triste. La nutria que traje a mi casa y que garantizó lealmente la salud y bienestar de mi reino, ha fallecido. Hoy es un día de luto y pena.;;;;;;;;;x
 EVT_OPTA_ZP_10;May he finally rest.;Puisse-t-il reposer en paix.;Möge er friedlich ruhen.;;Que al fin pueda descansar.;;;;;;;;;x
-b_chhajian;Chhajian;Chhajian;Chhajian;;Chhajian;;;;;;;;;x
-b_mughal;Mughal;Mughal;Mogul;;Mogol;;;;;;;;;x
-b_man;Man;Man;Man;;Man;;;;;;;;;x
-b_karim_bakhsh;Karim Bakhsh;Karim Bakhsh;Karim Bakhsh;;Karim Bakhsh;;;;;;;;;x
-b_dad;Dad;Dad;Dad;;Dad;;;;;;;;;x
-b_chachoke;Chachoke;Chachoke;Chachoke;;Chachoke;;;;;;;;;x
-b_kandar;Kandar;Kandar;Kandar;;Kandar;;;;;;;;;x
-b_bochra;Bochra;Bochra;Bochra;;Bochra;;;;;;;;;x
-b_kallarwala;Kallarwala;Kallarwala;Kallarwala;;Kallarwala;;;;;;;;;x
-b_kashmir_kili;Kashmir Kili;Kashmir Kili;Kashmir Kili;;Kashmir Kili;;;;;;;;;x
-b_peshai;Peshai;Peshai;Peshai;;Peshai;;;;;;;;;x
-b_kot_waras;Kot Waras;Kot Waras;Kot Waras;;Kot Waras;;;;;;;;;x
-b_palasi;Palasi;Palasi;Palasi;;Palasi;;;;;;;;;x
-b_bhaminpur;Bhaminpur;Bhaminpur;Bhaminpur;;Bhaminpur;;;;;;;;;x
-b_katewala;Katewala;Katewala;Katewala;;Katewala;;;;;;;;;x
-b_chenga;Chenga;Chenga;Chenga;;Chenga;;;;;;;;;x
-b_nautasal;Nautasal;Nautasal;Nautasal;;Nautasal;;;;;;;;;x
-b_rihana_sahu;Rihana Sahu;Rihana Sahu;Rihana Sahu;;Rihana Sahu;;;;;;;;;x
-b_basti_basira;Basti Basira;Basti Basira;Basti Basira;;Basti Basira;;;;;;;;;x
-b_pejoke;Pejoke;Pejoke;Pejoke;;Pejoke;;;;;;;;;x
-b_daryun;Daryun;Daryun;Daryun;;Daryun;;;;;;;;;x
 tooltip_silk_road_required;Must have a realm province located on the Aksumite Network;Doit avoir une province située le long de la Route de la Soie;Muss eine Reichsprovinz auf der Seidenstraße besitzen;;Debe tener una provincia del reino situada en la Ruta de la Seda;;;;;;;;;x
 religious_cb_succ_muslim_tip;§Y[Root.GetTitledFirstName]§! vassalizes lords in the §Y[This.GetFullBaseName]§!.\n;[Root.Get_Le_TitledFirstNameJ] vassalise les seigneurs dans §Y[This.GetFullBaseName]§!.\n;§Y[Root.GetTitledFirstName]§! vasallisiert die Fürsten von §Y[This.GetFullBaseName]§!;;§Y[Root.GetTitledFirstName]§! hace vasallos a los señores del §Y[This.GetFullBaseName]§!.\n;;;;;;;;;x
 theocratic_feudal_government;Monastic Feudal;Féodalité monastique;Feudaler Mönchsorden;;Feudal monástico;;;;;;;;;x
 custom_eastern_edge_of_map;Eastern Edge;Bordure à l'Est;Östlicher Rand;;Borde oriental;;;;;;;;;x
 custom_chinese_invasion_target_region;Chinese Region of Influence;Région d'influence chinoise;Chinesischer Einflussbereich;;Región de influencia china;;;;;;;;;x
-ADD_RALLY_POINT_INFO;§YOpen Rally Point view§!\n\nRally points makes units automatically gather in predefined Counties. Army rally points are accessed through activating the Army Levies tab and Navy Rally Points are accessed through the Fleet Levies tab.;§YOuvrir la vue de ralliement§!\n\nLes points de ralliement permettent aux unités de se rassembler automatiquement dans des comtés prédéfinis. Ceux de l'armée sont accessibles en activant l'onglet 'Levée de l'armée' et ceux de la marine sont accessibles dans l'onglet 'Levée de la flotte'.;§YSammelpunkt-Ansicht öffnen§!\n\nSammelpunkte lassen Einheiten automatisch in vordefinierten Provinzen sammeln. Sammelpunkte für Armeen können im Armee-Reiter des Militärs festgelegt werden, Sammelpunkte für Flotten im Flotten-Reiter.;;§YAbre vista de punto de reunión§!\n\nLos puntos de reunión hacen que las unidades se reúnan en condados predeterminados. Accedemos a los puntos de reunión del ejército activando la pestaña de recluta militar, y a los de la flota mediante la pestaña de recluta naval.;;;;;;;;;x
-ca_government_monastery_1;Gompa Monastery;Monastère Gompa;Gönpa;;Monasterio gompa;;;;;;;;;x
-ca_government_monastery_2;Gompa Monastery;Monastère Gompa;Gönpa;;Monasterio gompa;;;;;;;;;x
-ca_government_monastery_3;Gompa Monastery;Monastère Gompa;Gönpa;;Monasterio gompa;;;;;;;;;x
-ca_government_monastery_4;Gompa Monastery;Monastère Gompa;Gönpa;;Monasterio gompa;;;;;;;;;x
-ca_government_monastery_1_desc;This fortified gompa protects the monastery and university that lies within it.;Cette gompa fortifiée protège le monastère et l'université qui s'y trouve.;Diese befestigte Gönpa schützt die Klöster und Universitäten, die im Inneren liegen.;;Este gompa fortificado protege el monasterio y la universidad de su interior.;;;;;;;;;x
 OFFMAP_GIFTS_DESC;If the §Y[offmap_ethiopia.GetName]§! is amenable to foreign relations you can send an envoy to provide the Emperor with a token of your subservience. Paying Tribute will increase your §YGrace§!.;Si l'§Y[offmap_ethiopia.GetName]§! est ouvert aux relations étrangères, vous pouvez envoyer un émissaire pour fournir à l'Empereur un gage de votre subordination. Payer un tribut augmentera votre §YGrâce§!.;Wenn §Y[offmap_ethiopia.GetName]§! für ausländische Beziehungen zugänglich ist, könnt Ihr einen Gesandten schicken, um dem Kaiser ein Zeichen Eurer Unterwürfigkeit zu geben. Das Zahlen von Tribut wird Eure §YGunst§! erhöhen.;;Si el §Y[offmap_ethiopia.GetName]§! está abierto a las relaciones extranjeras, puedes mandar un enviado con una muestra de tu sumisión al emperador. Pagar tributo aumentará tu §YGracia§!;;;;;;;;;x
 chinese_siege_engineers_effect_tt;Three Siege Engineers join your court. These characters are exceptional in the art of undermining fortifications using explosives and constructing siege towers to scale walls.\n;Trois ingénieurs de siège rejoignent votre cour. Ces personnages sont exceptionnels dans le domaine de la destruction des fortifications à l'aide d'explosifs et dans la construction de tours de siège à hauteur des murs.\n;Drei Belagerungsingenieure kommen an Euren Hof. Sie sind Spezialisten in der Kunst, Befestigungsanlagen unter Verwendung von Sprengstoffen zu untergraben und Belagerungstürme zu bauen, die so groß sind wie die jeweiligen Mauern.\n;;Tres ingenieros de asedios se unen a tu corte. Estos personajes tienen un talento singular en el arte de tomar fortificaciones usando explosivos y construyendo torres de asedio para escalar murallas.\n;;;;;;;;;x
 chinese_siege_engineers;Request Siege Engineers;Demander des ingénieurs de siège;Belagerungsingenieure anfordern;;Solicitar ingenieros de asedios;;;;;;;;;x
