@@ -1,40 +1,331 @@
 3606000={ #Placeholder Abune of Axum
 	name="Mathias"
-	culture=tigrinya
-	religion=miaphysite
-	trait=mastermind_theologian
-	trait=theologian
-	trait=pious
-	trait=patient
-	2600.1.1={birth=yes}
-	2680.1.1={death=yes}
+    dynasty=0 #Lowborn
+    culture=amhara
+    religion=miaphysite
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=mastermind_theologian
+    trait=zealous
+    trait=ambitious
+    trait=brave
+    trait=diligent
+    trait=gregarious
+    trait=chaste
+    2610.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
-3606001={ #Placeholder Emperor of Ethopia
-	name="Placeholder"
+3606001={ #Emperor of Ethopia
+	name="Ilmaknun"
+	dynasty=2098037 #Tamrat
 	culture=amhara
 	religion=miaphysite
-	2633.1.1={birth=yes}
-	2680.1.1={death=yes}
+	2625.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+3606002={
+	name="Mahsamed"
+    dynasty=7506001 # Sadiq
+    culture=afar
+    religion=sunni
+    martial=3
+    diplomacy=4
+    stewardship=4
+    intrigue=3
+    learning=2
+    trait=fortune_builder
+    trait=diligent
+    trait=envious
+    trait=ambitious
+    2642.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+3606003={
+	name="Yusuf"
+    dynasty=7506002 # Kadafo
+    culture=afar
+    religion=sunni
+    martial=5
+    diplomacy=2
+    stewardship=2
+    intrigue=4
+    learning=5
+    trait=tough_soldier
+    trait=brave
+    trait=proud
+    trait=patient
+    trait=arbitrary
+    2635.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+3606004={
+	name="Alimirah"
+    dynasty=7506003 # Yayyo
+    culture=afar
+    religion=sunni
+    martial=5
+    diplomacy=3
+    stewardship=2
+    intrigue=5
+    learning=5
+    trait=brilliant_strategist
+    trait=ambitious
+    trait=lustful
+    trait=wroth
+    trait=proud
+    trait=zealous
+    2649.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+3606005={
+	name="Minas"
+    dynasty=2098043 # Segad
+    culture=amhara
+    religion=miaphysite
+    martial=3
+    diplomacy=2
+    stewardship=3
+    intrigue=3
+    learning=4
+    trait=martial_cleric
+    trait=mystic
+    trait=sympathy_judaism
+    trait=kind
+    trait=patient
+    trait=slothful
+    2642.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+3606006={
+	name="Kassa"
+    dynasty=2098044 # Gallabat
+    culture=amhara
+    religion=miaphysite
+    martial=4
+    diplomacy=2
+    stewardship=4
+    intrigue=3
+    learning=3
+    trait=tough_soldier
+    trait=fat
+    trait=gregarious
+    trait=charitable
+    trait=gluttonous
+    trait=honest
+    2633.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+3606007={
+	name="Wand"
+    dynasty=2098045 # Wagshum
+    culture=amhara
+    religion=miaphysite
+    martial=4
+    diplomacy=4
+    stewardship=2
+    intrigue=5
+    learning=2
+    trait=intricate_webweaver
+    trait=genius
+    trait=patient
+    trait=deceitful
+    trait=ambitious
+    trait=cruel
+    trait=greedy
+    2640.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+3606008={
+	name="Solomon"
+    dynasty=2098046 # Ekubamichael
+    culture=amhara
+    religion=miaphysite
+    martial=4
+    diplomacy=3
+    stewardship=3
+    intrigue=5
+    learning=3
+    trait=misguided_warrior
+    trait=robust        
+    trait=ambitious
+    trait=proud
+    trait=charitable
+    trait=kind
+    2645.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+3606009={
+	name="Hassan"
+    dynasty=2701051 # Mamassan
+    culture=somali
+    religion=sunni
+    martial=3
+    diplomacy=2
+    stewardship=5
+    intrigue=3
+    learning=3
+    trait=midas_touched
+    trait=greedy
+    trait=brave
+    trait=kind
+    trait=sturdy
+    2633.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+3606010={
+	name="Haji"
+    dynasty=2701052 # Dishiishe
+    culture=somali
+    religion=taharur
+    martial=4
+    diplomacy=3
+    stewardship=4
+    intrigue=3
+    learning=3
+    trait=tough_soldier
+    trait=robust
+    trait=shrewd
+    trait=ambitious
+    trait=proud
+    trait=wroth
+    trait=diligent
+    2644.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+3606011={
+	name="Yusuf"
+    dynasty=2701053 # Mahamud
+    culture=somali
+    religion=taharur
+    martial=2
+    diplomacy=5
+    stewardship=3
+    intrigue=3
+    learning=2
+    trait=underhanded_rogue
+    trait=drunkard
+    trait=gregarious 
+    trait=greedy
+    trait=slothful
+    trait=humble
+    2640.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+3606012={
+	name="Bashir"
+    dynasty=2701054 # ibn Hassan
+    culture=somali
+    religion=taharur
+    martial=5
+    diplomacy=3
+    stewardship=2
+    intrigue=3
+    learning=4
+    trait=tough_soldier
+    trait=wroth
+    trait=stubborn
+    trait=zealous
+    2638.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+3606013={
+	name="Garaad"
+    dynasty=2701055 # Dhulbahante
+    culture=somali
+    religion=taharur
+    martial=5
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=5
+    trait=martial_cleric
+    trait=cynical
+    trait=lustful
+    trait=humble
+    trait=kind
+    2636.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+3606014={
+	name="Samaale"
+    dynasty=2701056 # Gadabuursi
+    culture=somali
+    religion=taharur
+    martial=6
+    diplomacy=3
+    stewardship=3
+    intrigue=5
+    learning=3
+    trait=tough_soldier
+    trait=wroth
+    trait=zealous
+    trait=kind
+    2628.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+3606015={
+	name="AbdiHakiim"
+    dynasty=2701057 # Aweys
+    culture=somali
+    religion=taharur
+    martial=6
+    diplomacy=3
+    stewardship=3
+    intrigue=4
+    learning=3
+    trait=skilled_tactician
+    trait=faqih
+    trait=poet
+    trait=erudite
+    trait=kind
+    trait=diligent
+    trait=ambitious
+    trait=honest
+    2648.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+3606016={
+	name="Abdilahi"
+    dynasty=2701058 # Ahmed
+    culture=somali
+    religion=taharur
+    martial=3
+    diplomacy=5
+    stewardship=3
+    intrigue=2
+    learning=4
+    trait=mastermind_theologian
+    trait=just
+    trait=zealous
+    trait=gregarious
+    trait=charitable
+    trait=proud
+    2636.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 3606025={
 	#Amhara governor
-	name="Bekele"
-	dynasty=2098037 #Tesfaye
+	name="Zera"
+	dynasty=2098037 #Gorgoryos
 	culture=amhara
 	religion=miaphysite
-	diplomacy=4
 	martial=2
-	stewardship=5
-	intrigue=6
-	learning=2
-	trait=underhanded_rogue
-	trait=school_mark
-	trait=stubborn
-	trait=ambitious
-	trait=cynical
-	trait=patient
-	2631.3.2={birth=yes}
+    diplomacy=5
+    stewardship=2
+    intrigue=2
+    learning=4
+    trait=charismatic_negotiator
+    trait=poet
+    trait=charitable
+    trait=patient
+    trait=gregarious
+    trait=proud
+	2625.1.1={birth=yes}
 	2653.1.3={add_spouse=3606026}
+    2700.1.1={death=yes}
 	2710.2.1={death=yes}
 }
 3606026={
@@ -57,127 +348,115 @@
 	2680.1.1={death=yes}
 }
 3606027={
-	name="Eskender"
-	dynasty=2098037 #Tesfaye
+	name="Jemal"
+	dynasty=2098039 #Jawi
 	culture=amhara
 	religion=miaphysite
-	diplomacy=2
 	martial=3
-	stewardship=8
-	intrigue=2
-	learning=6
-	trait=brilliant_strategist
-	trait=school_mark
-	trait=inspiring_leader
-	trait=honest
-	trait=charitable
-	trait=cynical
-	trait=just
-	2633.8.17={birth=yes}
-	2655.3.9={add_spouse=3606028}
-	2710.2.1={death=yes}
+    diplomacy=4
+    stewardship=5
+    intrigue=4
+    learning=4
+    trait=thrifty_clerk
+    trait=diligent
+    trait=proud
+    trait=content
+	2650.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 3606028={
-	name="Tigist"
-	female=yes
-	dynasty=2098038 #Abebe
-	culture=amhara
-	religion=miaphysite
-	father=3606036
-	
-	trait=mastermind_theologian
-	trait=scholar
-	trait=proud
-	trait=stubborn
-	trait=diligent
-	trait=paranoid
-	2634.3.1={birth=yes}
-	2710.2.1={death=yes}
+	name="Abraham"
+    dynasty=2097010 # Afwerki
+    culture=tigre
+    religion=miaphysite
+    martial=6
+    diplomacy=5
+    stewardship=5
+    intrigue=5
+    learning=5
+    trait=tough_soldier
+    trait=shrewd
+    trait=proud
+    trait=wroth
+    trait=paranoid
+    trait=diligent
+    2621.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 3606029={
-	name="Selassie"
-	dynasty=2098037 #Tesfaye
-	culture=amhara
-	religion=miaphysite
-	diplomacy=2
-	martial=3
-	stewardship=3
-	intrigue=2
-	learning=3
-	father=3606027
-	mother=3606028
-	trait=school_mark
-	trait=curious
-	trait=brooding
-	trait=haughty
-	
-	2657.3.12={birth=yes}
-	2662.3.9={add_trait=cynical add_trait=honest}
-	2730.1.1={death=yes}
+	name="Tewelde"
+    dynasty=2097010 # Hagos
+    culture=tigre
+    religion=sunni
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=tough_soldier
+    trait=patient
+    trait=diligent
+    trait=lustful
+    2630.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 3606030={
-	name="Asfaw"
-	dynasty=2098037 #Tesfaye
-	culture=amhara
-	religion=miaphysite
-	diplomacy=2
-	martial=3
-	stewardship=3
-	intrigue=2
-	learning=3
-	father=3606027
-	mother=3606028
-	trait=school_mark
-	trait=timid
-	trait=willful
-	trait=affectionate
-	
-	2659.9.2={birth=yes}
-	2662.3.9={add_trait=cynical add_trait=charitable}
-	2730.1.1={death=yes}
+	name="Tedros"
+    dynasty=7505000 # Ghebreyesus
+    culture=tigrinya
+    religion=pentay
+    martial=3
+    diplomacy=3
+    stewardship=5
+    intrigue=3
+    learning=3
+    trait=fortune_builder
+    trait=ambitious
+    trait=greedy
+    trait=diligent
+    trait=envious
+    2626.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 3606031={
-	name="Azmera"
-	female=yes
-	dynasty=2098037 #Tesfaye
-	culture=amhara
-	religion=miaphysite
-	diplomacy=2
-	martial=3
-	stewardship=3
-	intrigue=2
-	learning=3
-	father=3606027
-	mother=3606028
-	trait=school_mark
-	trait=affectionate
-	trait=idolizer
-	trait=conscientious
-	
-	2661.10.3={birth=yes}
-	2665.3.9={add_trait=cynical add_trait=honest}
-	2730.1.1={death=yes}
+	name="Muhammed"
+    dynasty=7506000 # Aussa
+    culture=afar
+    religion=sunni
+    martial=3
+    diplomacy=2
+    stewardship=4
+    intrigue=3
+    learning=2
+    trait=misguided_warrior
+    trait=strong
+    trait=dull
+    trait=ambitious
+    trait=humble
+    trait=temperate
+    2643.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 3606032={
-	name="Abiyot"
-	dynasty=2098038 #Abebe
-	culture=amhara
-	religion=miaphysite
-	diplomacy=2
-	martial=3
-	stewardship=8
-	intrigue=2
-	learning=6
-	father=3606036
-	trait=charismatic_negotiator
-	trait=school_mark
-	trait=chaste
-	trait=greedy
-	trait=kind
-	trait=gregarious
-	2636.12.31={birth=yes}
-	2660.12.1={add_spouse=3606033}
-	2710.2.1={death=yes}
+	name="Haylu"
+    dynasty=7505001 # Mengesha
+    culture=tigrinya
+    religion=pentay
+    martial=6
+    diplomacy=3
+    stewardship=3
+    intrigue=4
+    learning=4
+    trait=skilled_tactician
+    trait=quick
+    trait=heresiarch
+    trait=charitable
+    trait=wroth
+    trait=humble
+    trait=just
+    trait=brave
+    2636.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 3606033={
 	name="Rahel"
@@ -196,74 +475,82 @@
 	2710.2.1={death=yes}
 }
 3606034={
-	name="Desita"
-	female=yes
-	dynasty=2098038 #Abebe
-	culture=amhara
-	religion=miaphysite
-	father=3606032
-	mother=3606033
-	
-	trait=school_mark
-	trait=quick
-	trait=indolent
-	trait=conscientious
-	
-	2661.3.22={birth=yes}
-	2710.2.1={death=yes}
+	name="Eskender"
+    dynasty=2098040 # Solomonid
+    culture=amhara
+    religion=miaphysite
+    martial=7
+    diplomacy=5
+    stewardship=3
+    intrigue=4
+    learning=3
+    trait=brilliant_strategist
+    trait=duelist
+    trait=robust
+    trait=patient
+    trait=ambitious
+    trait=kind
+    trait=proud
+    2641.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 3606035={
-	name="Temesgen"
-	dynasty=2098038 #Abebe
-	culture=amhara
-	religion=miaphysite
-	father=3606032
-	mother=3606033
-	
-	trait=school_mark
-	trait=willful
-	
-	2661.3.22={birth=yes}
-	2665.12.1={add_trait=gregarious}
-	2710.2.1={death=yes}
+	name="Iyasus"
+    dynasty=2098041 # Haymanot
+    culture=amhara
+    religion=miaphysite
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=4
+    trait=martial_cleric
+    trait=theologian
+    trait=zealous
+    trait=diligent
+    trait=lustful
+    trait=content
+    2619.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 3606036={
-	name="Mekonnen"
-	dynasty=2098038 #Abebe
-	culture=amhara
-	religion=miaphysite
-	
-	trait=charismatic_negotiator
-	trait=school_mark
-	trait=kind
-	trait=gregarious
-	trait=deceitful
-	trait=familyperson
-	
-	
-	2600.2.1={birth=yes}
-	2651.3.1={death=yes}
+	name="Adyam"
+    dynasty=2098042 # Yejju
+    culture=oromo
+    religion=sunni
+    martial=3
+    diplomacy=4
+    stewardship=5
+    intrigue=3
+    learning=3
+    trait=tough_soldier
+    trait=zealous
+    trait=wroth
+    trait=kind
+    2648.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 3606037={
-	name="Worknesh"
+	name="Eleni"
 	female=yes
-	dynasty=2098021 #Mesk
+	dynasty=2098021 #Yaqob
 	culture=amhara
-	religion=miaphysite
-	diplomacy=3
-	martial=4
-	stewardship=3
-	intrigue=4
-	learning=2
-	trait=intricate_webweaver
-	trait=school_mark
-	trait=charitable
-	trait=diligent
-	trait=familyperson
-	trait=deceitful
-	2624.2.27={birth=yes}
+    religion=miaphysite
+    martial=3
+    diplomacy=6
+    stewardship=4
+    intrigue=5
+    learning=4
+    trait=grey_eminence
+    trait=shrewd
+    trait=brave
+    trait=deceitful
+    trait=envious
+    trait=patient
+    trait=ambitious
+	2636.1.1={birth=yes}
 	2647.1.3={add_spouse=3606038}
-	2670.1.1={death=yes}
+	2700.1.1={death=yes}
 }
 3606038={
 	name="Gabriel"
@@ -281,7 +568,7 @@
 }
 3606039={
 	name="Tessema"
-	dynasty=2098021 #Mesk
+	dynasty=2098021 #Yaqob
 	culture=amhara
 	religion=miaphysite
 	diplomacy=2
@@ -301,7 +588,7 @@
 3606040={
 	name="Misrak"
 	female=yes
-	dynasty=2098021 #Mesk
+	dynasty=2098021 #Yaqob
 	culture=amhara
 	religion=miaphysite
 	diplomacy=2
@@ -321,7 +608,7 @@
 3606041={
 	name="Aster"
 	female=yes
-	dynasty=2098021 #Mesk
+	dynasty=2098021 #Yaqob
 	culture=amhara
 	religion=miaphysite
 	diplomacy=2
