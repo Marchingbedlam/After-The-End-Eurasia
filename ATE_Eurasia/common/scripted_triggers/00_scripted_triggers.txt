@@ -9100,19 +9100,19 @@ lipka_guard_events_default_trigger = {
 }
 
 
-ere_elective_politician_titles_trigger = { #Used in Imperial Elective to determine AI behavior.
-	OR = {
-		has_job_title = job_marshal
-		has_job_title = job_spymaster
-		has_job_title = job_treasurer
-		has_job_title = job_chancellor
-		has_minor_title = title_despot
-		has_minor_title = title_sebastokrator
-		has_minor_title = title_caesar
-		has_minor_title = title_kouropalates
-		has_minor_title = title_anthypatos
-	} 
-}
+# ere_elective_politician_titles_trigger = { #Used in Imperial Elective to determine AI behavior.
+	# OR = {
+		# has_job_title = job_marshal
+		# has_job_title = job_spymaster
+		# has_job_title = job_treasurer
+		# has_job_title = job_chancellor
+		# has_minor_title = title_despot
+		# has_minor_title = title_sebastokrator
+		# has_minor_title = title_caesar
+		# has_minor_title = title_kouropalates
+		# has_minor_title = title_anthypatos
+	# } 
+# }
 
 can_still_be_commander_byzantine_trigger = { 
 	NOT = { 
@@ -9195,115 +9195,115 @@ can_still_be_commander_byzantine_trigger = {
 	}
 }
 
-can_still_be_marshal_byzantine_trigger = {
-	liege = { 
-		character = FROMFROM
-		has_law = succ_byzantine_elective
-	}
-	NOR = { 
-		war_with = FROMFROM
-		any_liege = { 
-			war_with = FROMFROM
-		}
-	}
-	OR = {
-		AND = {
-			OR = {
-				AND = { #Patriarchal religions can only hire males. Matriarchal religions can only hire females.
-					is_female = no 
-					NOT = { liege = { has_religion_feature = religion_matriarchal } } 
-				}
-				AND = {
-					is_female = yes 
-					OR = { 
-						liege = { has_religion_feature = religion_matriarchal } 
-						liege = { has_religion_feature = religion_equal } 
-						liege = { has_religion_feature = religion_feature_bon } 
-					} 
-				}
-				trait = horse # So we can have female glitterhoofs! :D
-				OR = {
-					AND = {
-						religion = cathar
-						liege = { religion = cathar }
-					}
-					AND = {
-						religion = messalian
-						liege = { religion = messalian }
-					}
-				}
-				AND = {
-					liege = {
-						primary_title = {
-							OR = {
-								has_law = status_of_women_3
-							}
-						}
-					}
-					OR = {
-						liege = {
-							OR = {
-								dynasty = ROOT
-								is_close_relative = ROOT
-								any_spouse = { character = ROOT }
-								any_consort = { character = ROOT }
-							}
-						}
-						is_landed = yes
+# can_still_be_marshal_byzantine_trigger = {
+	# liege = { 
+		# character = FROMFROM
+		# has_law = succ_byzantine_elective
+	# }
+	# NOR = { 
+		# war_with = FROMFROM
+		# any_liege = { 
+			# war_with = FROMFROM
+		# }
+	# }
+	# OR = {
+		# AND = {
+			# OR = {
+				# AND = { #Patriarchal religions can only hire males. Matriarchal religions can only hire females.
+					# is_female = no 
+					# NOT = { liege = { has_religion_feature = religion_matriarchal } } 
+				# }
+				# AND = {
+					# is_female = yes 
+					# OR = { 
+						# liege = { has_religion_feature = religion_matriarchal } 
+						# liege = { has_religion_feature = religion_equal } 
+						# liege = { has_religion_feature = religion_feature_bon } 
+					# } 
+				# }
+				# trait = horse # So we can have female glitterhoofs! :D
+				# OR = {
+					# AND = {
+						# religion = cathar
+						# liege = { religion = cathar }
+					# }
+					# AND = {
+						# religion = messalian
+						# liege = { religion = messalian }
+					# }
+				# }
+				# AND = {
+					# liege = {
+						# primary_title = {
+							# OR = {
+								# has_law = status_of_women_3
+							# }
+						# }
+					# }
+					# OR = {
+						# liege = {
+							# OR = {
+								# dynasty = ROOT
+								# is_close_relative = ROOT
+								# any_spouse = { character = ROOT }
+								# any_consort = { character = ROOT }
+							# }
+						# }
+						# is_landed = yes
 						
-					}
-				}
-				OR = {
-					AND = { 
-						is_female = yes
-						liege = { primary_title = { has_law = status_of_women_4 } } 
-					}
-					has_game_rule = {
-						name = gender
-						value = all
-					}
-				}
-			}
-			OR = {
-				NOT = { religion = bhagavata }
-				trait = kshatriya
-			}
-			is_adult = yes
-		}
-		has_character_flag = special_marshal
-	}
+					# }
+				# }
+				# OR = {
+					# AND = { 
+						# is_female = yes
+						# liege = { primary_title = { has_law = status_of_women_4 } } 
+					# }
+					# has_game_rule = {
+						# name = gender
+						# value = all
+					# }
+				# }
+			# }
+			# OR = {
+				# NOT = { religion = bhagavata }
+				# trait = kshatriya
+			# }
+			# is_adult = yes
+		# }
+		# has_character_flag = special_marshal
+	# }
 	
-	independent = no
-	prisoner = no
-	NOT = { trait = incapable }
- 	NOT = { trait = sick_incapable }
-	NOT = { trait = in_hiding }
-	NOT = { has_character_flag = guru }
-	NOT = { has_character_modifier = resigned_in_anger }
-	NOT = { 
-		liege = { 
-			has_opinion_modifier = {
-				who = ROOT	
-				modifier = opinion_resigned_from_council 
-			} 
-		} 
-	}
-}
+	# independent = no
+	# prisoner = no
+	# NOT = { trait = incapable }
+ 	# NOT = { trait = sick_incapable }
+	# NOT = { trait = in_hiding }
+	# NOT = { has_character_flag = guru }
+	# NOT = { has_character_modifier = resigned_in_anger }
+	# NOT = { 
+		# liege = { 
+			# has_opinion_modifier = {
+				# who = ROOT	
+				# modifier = opinion_resigned_from_council 
+			# } 
+		# } 
+	# }
+# }
 
 
-is_mongol_empire_leader_trigger = {
-	OR = {
-		has_landed_title = e_il-khanate
-		has_landed_title = e_golden_horde
-		has_landed_title = e_mongol_empire
-		liege = { has_landed_title = e_il-khanate }
-		liege = { has_landed_title = e_golden_horde }
-		liege = { has_landed_title = e_mongol_empire }
-		top_liege = { has_landed_title = e_il-khanate }
-		top_liege = { has_landed_title = e_golden_horde }
-		top_liege = { has_landed_title = e_mongol_empire }
-	}
-}
+# is_mongol_empire_leader_trigger = {
+	# OR = {
+		# has_landed_title = e_il-khanate
+		# has_landed_title = e_golden_horde
+		# has_landed_title = e_mongol_empire
+		# liege = { has_landed_title = e_il-khanate }
+		# liege = { has_landed_title = e_golden_horde }
+		# liege = { has_landed_title = e_mongol_empire }
+		# top_liege = { has_landed_title = e_il-khanate }
+		# top_liege = { has_landed_title = e_golden_horde }
+		# top_liege = { has_landed_title = e_mongol_empire }
+	# }
+# }
 
 is_single_player_observer_mode = {
 	AND = {
@@ -9349,5 +9349,24 @@ has_jedinstvo_deity_trigger = {
 		has_character_modifier = jedinstvo_blagoj_strackoviski
 		has_character_modifier = jedinstvo_ivan_milutinovic
 		has_character_modifier = jedinstvo_lepa_radic
+	}
+}
+is_nomadic_tribal_culture = {
+	OR = {
+		culture_group = turkic_east
+		culture_group = turkic_karluk
+		culture_group = turkic_siberian
+		culture_group = turkic_west
+		culture_group = turkic_oghuz
+		culture_group = mongolian_group
+		culture = manchu
+		culture_group = uralic_west
+		culture_group = amazigh
+		culture = xibe
+		culture = sami
+		culture = najdi
+		culture = sahrawi
+		culture = dhofari
+		culture = hadhrami
 	}
 }

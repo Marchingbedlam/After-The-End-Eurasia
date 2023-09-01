@@ -19,13 +19,13 @@ character_event = {
 	immediate = {
 		if = {
 			limit = { 
-				is_faerun_horde_nomad_culture = no
+				is_nomadic_tribal_culture = no
 			}
 			FROM = { add_building = tb_nomadtribal }
 		}
 		if = {
 			limit = { 
-				is_faerun_horde_nomad_culture = yes
+				is_nomadic_tribal_culture = yes
 			}
 			FROM = { add_building = tb_hordetribal }
 		}
@@ -115,7 +115,7 @@ character_event = {
 						holding_type = tribal
 						NOT = { has_building = tb_nomadtribal }
 						ROOT = {
-							is_faerun_horde_nomad_culture = no
+							is_nomadic_tribal_culture = no
 						}
 					}
 					add_building = tb_nomadtribal
@@ -125,7 +125,7 @@ character_event = {
 						holding_type = tribal
 						NOT = { has_building = tb_hordetribal }
 						ROOT = {
-							is_faerun_horde_nomad_culture = yes
+							is_nomadic_tribal_culture = yes
 						}
 					}
 					add_building = tb_hordetribal
@@ -270,7 +270,7 @@ character_event = {
 						holding_type = tribal
 						NOT = { has_building = tb_hordetribal }
 						ROOT = {
-							is_faerun_horde_nomad_culture = yes
+							is_nomadic_tribal_culture = yes
 						}
 					}
 					add_building = tb_hordetribal
@@ -281,7 +281,7 @@ character_event = {
 						holding_type = tribal
 						NOT = { has_building = tb_horde_fort_1 }
 						ROOT = {
-							is_faerun_horde_nomad_culture = yes
+							is_nomadic_tribal_culture = yes
 						}
 					}
 					add_building = tb_horde_fort_1
@@ -293,7 +293,7 @@ character_event = {
 						NOT = { has_building = no_meat_preserver_1 }
 						location = { is_capital = yes }
 						ROOT = {
-							is_faerun_horde_nomad_culture = yes
+							is_nomadic_tribal_culture = yes
 						}
 					}
 					add_building = no_meat_preserver_1
@@ -425,7 +425,7 @@ character_event = {
 						holding_type = tribal
 						NOT = { has_building = tb_nomadtribal }
 						ROOT = {
-							is_faerun_horde_nomad_culture = no
+							is_nomadic_tribal_culture = no
 						}
 					}
 					add_building = tb_nomadtribal
@@ -436,7 +436,7 @@ character_event = {
 						holding_type = tribal
 						NOT = { has_building = tb_hordetribal }
 						ROOT = {
-							is_faerun_horde_nomad_culture = yes
+							is_nomadic_tribal_culture = yes
 						}
 					}
 					add_building = tb_hordetribal
