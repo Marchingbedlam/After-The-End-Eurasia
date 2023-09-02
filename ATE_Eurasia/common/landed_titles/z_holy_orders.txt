@@ -220,3 +220,27 @@ d_capirote = {
 		religion = penitant
 	}
 }
+d_ansar = {
+
+	color = { 210 35 35 }
+	color2 = { 255 255 255 }
+	
+	capital = 3061 #Omdurman
+	
+	title = "ANSAR"
+	foa = "ANSAR_FOA"
+	
+	culture = sudani
+	religion = sunni
+
+	holy_order = yes
+	primary = yes 
+	monthly_income = 6
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_ansar_composition
+	
+	allow = {
+		religion = sunni
+	}
+}
