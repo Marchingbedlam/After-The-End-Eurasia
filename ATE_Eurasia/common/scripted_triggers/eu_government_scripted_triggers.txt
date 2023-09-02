@@ -143,22 +143,3 @@ is_historical_hordes_culture = { #Cultures with histories of nomadic steppe hist
 		culture = manchu
 	}
 }
-is_nomadic_tribal_culture = {
-	OR = {
-		culture_group = turkic_east
-		culture_group = turkic_karluk
-		culture_group = turkic_siberian
-		culture_group = turkic_west
-		culture_group = mongolian_group
-		culture = manchu
-		culture_group = uralic_west
-		culture_group = amazigh
-		culture = xibe
-		culture = sami
-		culture = najdi
-		culture = sahrawi
-		culture = dhofari
-		culture = hadhrami
-		#Other Bedouin Groups
-	}
-}
