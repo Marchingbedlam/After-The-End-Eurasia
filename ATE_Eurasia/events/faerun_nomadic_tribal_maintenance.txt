@@ -19,13 +19,13 @@ character_event = {
 	immediate = {
 		if = {
 			limit = { 
-				is_nomadic_tribal_culture = no
+				is_historical_nomad_culture = yes
 			}
 			FROM = { add_building = tb_nomadtribal }
 		}
 		if = {
 			limit = { 
-				is_nomadic_tribal_culture = yes
+				is_historical_hordes_culture = yes
 			}
 			FROM = { add_building = tb_hordetribal }
 		}
@@ -115,7 +115,7 @@ character_event = {
 						holding_type = tribal
 						NOT = { has_building = tb_nomadtribal }
 						ROOT = {
-							is_nomadic_tribal_culture = no
+							is_historical_nomad_culture = yes
 						}
 					}
 					add_building = tb_nomadtribal
@@ -125,7 +125,7 @@ character_event = {
 						holding_type = tribal
 						NOT = { has_building = tb_hordetribal }
 						ROOT = {
-							is_nomadic_tribal_culture = yes
+							is_historical_hordes_culture = yes
 						}
 					}
 					add_building = tb_hordetribal
@@ -152,7 +152,10 @@ character_event = {
 				# is_landed = no
 			# }
 			government = tribal_government
-			is_nomadic_tribal_culture = yes
+			OR = {
+				is_historical_nomad_culture = yes
+				is_historical_hordes_culture = yes
+			}
 		}
 	}
 	
@@ -243,7 +246,7 @@ character_event = {
 						holding_type = tribal
 						NOT = { has_building = tb_nomadtribal }
 						ROOT = {
-							is_nomadic_tribal_culture = yes
+							is_historical_nomad_culture = yes
 						}
 					}
 					add_building = tb_nomadtribal
@@ -259,7 +262,10 @@ character_event = {
 							has_building = tb_hillfort_4 
 						}
 						ROOT = {
-							is_nomadic_tribal_culture = yes
+							OR = {
+								is_historical_nomad_culture = yes
+								is_historical_hordes_culture = yes
+							}
 						}
 					}
 					add_building = tb_hillfort_1
@@ -270,7 +276,7 @@ character_event = {
 						holding_type = tribal
 						NOT = { has_building = tb_hordetribal }
 						ROOT = {
-							is_nomadic_tribal_culture = yes
+							is_historical_hordes_culture = yes
 						}
 					}
 					add_building = tb_hordetribal
@@ -281,7 +287,7 @@ character_event = {
 						holding_type = tribal
 						NOT = { has_building = tb_horde_fort_1 }
 						ROOT = {
-							is_nomadic_tribal_culture = yes
+							is_historical_hordes_culture = yes
 						}
 					}
 					add_building = tb_horde_fort_1
@@ -293,7 +299,10 @@ character_event = {
 						NOT = { has_building = no_meat_preserver_1 }
 						location = { is_capital = yes }
 						ROOT = {
-							is_nomadic_tribal_culture = yes
+							OR = {
+								is_historical_nomad_culture = yes
+								is_historical_hordes_culture = yes
+							}
 						}
 					}
 					add_building = no_meat_preserver_1
@@ -425,7 +434,7 @@ character_event = {
 						holding_type = tribal
 						NOT = { has_building = tb_nomadtribal }
 						ROOT = {
-							is_nomadic_tribal_culture = no
+							is_historical_nomad_culture = yes
 						}
 					}
 					add_building = tb_nomadtribal
@@ -436,7 +445,7 @@ character_event = {
 						holding_type = tribal
 						NOT = { has_building = tb_hordetribal }
 						ROOT = {
-							is_nomadic_tribal_culture = yes
+							is_historical_hordes_culture = yes
 						}
 					}
 					add_building = tb_hordetribal
