@@ -75,7 +75,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 0.3
-				religion = anabaptist
+				religion = calvinist
 			}
 		}
 		if = {
@@ -437,18 +437,18 @@ character_event = {
 			}
 			modifier = {
 				factor = 0.3
-				religion = anabaptist
+				religion = calvinist
 			}
 			modifier = {
 				religion_group = christian
 				is_priest = yes
 				factor = 0
 			}
-			modifier = {
-				religion_group = latter_day_saints
-				is_priest = yes
-				factor = 0
-			}
+			# modifier = {
+				# religion_group = latter_day_saints
+				# is_priest = yes
+				# factor = 0
+			# }
 			modifier = {
 				is_female = no
 				event_target:combatant_1 = { is_female = yes }

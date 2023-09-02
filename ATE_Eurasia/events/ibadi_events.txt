@@ -170,7 +170,7 @@ character_event = { #Incapable Imam
 			}
 		}
 		if = {
-			limit = { has_title = d_ibadi }
+			limit = { primary_title = d_ibadi }
 			d_ibadi = {
 				gain_title = event_target:imam_heir
 			}

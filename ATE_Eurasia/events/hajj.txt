@@ -898,7 +898,7 @@ narrative_event = {
 	trigger = {
 		OR = {
 			trait = on_hajj
-			trait = on_hajj2
+			#trait = on_hajj2
 		}
 	}
 	
@@ -927,7 +927,7 @@ narrative_event = {
 	trigger = {
 		OR = {
 			trait = on_hajj
-			trait = on_hajj2
+			#trait = on_hajj2
 		}
 	}
 	
@@ -979,7 +979,7 @@ narrative_event = {
 	trigger = {
 		OR = {
 			trait = on_hajj
-			trait = on_hajj2
+			#trait = on_hajj2
 		}
 	}
 	
@@ -1024,7 +1024,7 @@ narrative_event = {
 	trigger = {
 		OR = {
 			trait = on_hajj
-			trait = on_hajj2
+			#trait = on_hajj2
 		}
 	}
 	
@@ -1052,7 +1052,7 @@ narrative_event = {
 	trigger = {
 		OR = {
 			trait = on_hajj
-			trait = on_hajj2
+			#trait = on_hajj2
 		}
 	}
 	
@@ -1103,7 +1103,7 @@ narrative_event = {
 	trigger = {
 		OR = {
 			trait = on_hajj
-			trait = on_hajj2
+			#trait = on_hajj2
 		}
 	}
 	option = {
@@ -1117,12 +1117,12 @@ narrative_event = {
 				}
 				narrative_event = { id = hajj.96 days = 18 }
 			}
-			else_if = {
-				limit = {
-					trait = on_hajj2
-				}
-				narrative_event = { id = hajj.96 days = 7 }
-			}
+			# else_if = {
+				# limit = {
+					# trait = on_hajj2
+				# }
+				# narrative_event = { id = hajj.96 days = 7 }
+			# }
 		}		
 	}
 	option = {
@@ -1136,12 +1136,12 @@ narrative_event = {
 				}
 				narrative_event = { id = hajj.96 days = 18 }
 			}
-			else_if = {
-				limit = {
-					trait = on_hajj2
-				}
-				narrative_event = { id = hajj.96 days = 7 }
-			}
+			# else_if = {
+				# limit = {
+					# trait = on_hajj2
+				# }
+				# narrative_event = { id = hajj.96 days = 7 }
+			# }
 		}		
 	}	
 }

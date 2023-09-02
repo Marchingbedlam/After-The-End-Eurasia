@@ -2924,96 +2924,96 @@ character_event = {
 			}
 			join_society = warrior_lodge_glorian
 		}
-		else_if = {
-			limit = {
-				OR = {
-					religion = peyotist
-					is_nomadic = yes
-				}
-				can_join_society = warrior_lodge_peyotist
-			}
-			join_society = warrior_lodge_peyotist
-		}
-		else_if = {
-			limit = {
-				religion_openly_trailwalker_or_reformed_trigger = yes
-				can_join_society = warrior_lodge_trailwalker
-			}
-			join_society = warrior_lodge_trailwalker
-		}
-		else_if = {
-			limit = {
-				religion_openly_celtic_or_reformed_trigger = yes
-				can_join_society = warrior_lodge_celtic
-			}
-			join_society = warrior_lodge_celtic
-		}
-		else_if = {
-			limit = {
-				religion_openly_occultist_or_reformed_trigger = yes
-				can_join_society = warrior_lodge_occultist
-			}
-			join_society = warrior_lodge_occultist
-		}
-		else_if = {
-			limit = {
-				religion_openly_raven_tales_or_reformed_trigger = yes
-				can_join_society = warrior_lodge_raven_tales
-			}
-			join_society = warrior_lodge_raven_tales
-		}
-		else_if = {
-			limit = {
-				religion = atomicist
-				can_join_society = warrior_lodge_atomicist
-			}
-			join_society = warrior_lodge_atomicist
-		}
-		else_if = {
-			limit = {
-				religion_openly_revelationist_or_reformed_trigger = yes
-				can_join_society = warrior_lodge_revelationist
-			}
-			join_society = warrior_lodge_revelationist
-		}
-		else_if = {
-			limit = {
-				religion_openly_rust_cultist_or_heresy_trigger = yes
-				can_join_society = warrior_lodge_rust_cultist
-			}
-			join_society = warrior_lodge_rust_cultist
-		}
-		else_if = {
-			limit = {
-				OR = {
-					religion_openly_americanist_or_heresy_trigger = yes
-					can_join_society = warrior_lodge_americanist
-				}
-			}
-			join_society = warrior_lodge_americanist
-		}
-		else_if = {
-			limit = {
-				OR = {
-					culture_group = mexicano
-					AND = {
-						culture_group = mesoamerican
-						NOT = { religion = mictlantec }
-					}
-					can_join_society = warrior_lodge_mexican
-				}
-			}
-			join_society = warrior_lodge_mexican
-		}
-		else_if = {
-			limit = {
-				OR = {
-					religion = mictlantec
-					can_join_society = warrior_lodge_mictlantec
-				}
-			}
-			join_society = warrior_lodge_mictlantec
-		}
+		# else_if = {
+			# limit = {
+				# OR = {
+					# religion = peyotist
+					# is_nomadic = yes
+				# }
+				# can_join_society = warrior_lodge_peyotist
+			# }
+			# join_society = warrior_lodge_peyotist
+		# }
+		# else_if = {
+			# limit = {
+				# religion_openly_trailwalker_or_reformed_trigger = yes
+				# can_join_society = warrior_lodge_trailwalker
+			# }
+			# join_society = warrior_lodge_trailwalker
+		# }
+		# else_if = {
+			# limit = {
+				# religion_openly_celtic_or_reformed_trigger = yes
+				# can_join_society = warrior_lodge_celtic
+			# }
+			# join_society = warrior_lodge_celtic
+		# }
+		# else_if = {
+			# limit = {
+				# religion_openly_occultist_or_reformed_trigger = yes
+				# can_join_society = warrior_lodge_occultist
+			# }
+			# join_society = warrior_lodge_occultist
+		# }
+		# else_if = {
+			# limit = {
+				# religion_openly_raven_tales_or_reformed_trigger = yes
+				# can_join_society = warrior_lodge_raven_tales
+			# }
+			# join_society = warrior_lodge_raven_tales
+		# }
+		# else_if = {
+			# limit = {
+				# religion = atomicist
+				# can_join_society = warrior_lodge_atomicist
+			# }
+			# join_society = warrior_lodge_atomicist
+		# }
+		# else_if = {
+			# limit = {
+				# religion_openly_revelationist_or_reformed_trigger = yes
+				# can_join_society = warrior_lodge_revelationist
+			# }
+			# join_society = warrior_lodge_revelationist
+		# }
+		# else_if = {
+			# limit = {
+				# religion_openly_rust_cultist_or_heresy_trigger = yes
+				# can_join_society = warrior_lodge_rust_cultist
+			# }
+			# join_society = warrior_lodge_rust_cultist
+		# }
+		# else_if = {
+			# limit = {
+				# OR = {
+					# religion_openly_americanist_or_heresy_trigger = yes
+					# can_join_society = warrior_lodge_americanist
+				# }
+			# }
+			# join_society = warrior_lodge_americanist
+		# }
+		# else_if = {
+			# limit = {
+				# OR = {
+					# culture_group = mexicano
+					# AND = {
+						# culture_group = mesoamerican
+						# NOT = { religion = mictlantec }
+					# }
+					# can_join_society = warrior_lodge_mexican
+				# }
+			# }
+			# join_society = warrior_lodge_mexican
+		# }
+		# else_if = {
+			# limit = {
+				# OR = {
+					# religion = mictlantec
+					# can_join_society = warrior_lodge_mictlantec
+				# }
+			# }
+			# join_society = warrior_lodge_mictlantec
+		# }
 		else = {
 			log = "[Root.GetTitledName] failed to join a society in event HF.10051"
 			break = yes

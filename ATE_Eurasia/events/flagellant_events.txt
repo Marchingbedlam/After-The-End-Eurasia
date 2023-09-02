@@ -990,19 +990,19 @@ character_event = { #Event to check if character should receive the fla
 				NOT = { is_inaccessible_trigger = yes }
 				NOT = {	is_incapable = yes }
 				is_adult = yes
-				religion = penitents
+				religion = penitant
 			}
 			character_event = { id = capiroteiberia.121 }
 		}
 		else_if = {
 			limit = {
-				religion = penitents
+				religion = penitant
 			}
 			character_event = { id = capiroteiberia.120 months = 6 }
 		}
 		else_if = {
 			limit = {
-				NOT = { religion = penitents }
+				NOT = { religion = penitant }
 			}
 			clr_character_flag = flagellation_timer
 		}
@@ -1028,7 +1028,7 @@ character_event = { #bad penitente event
 			limit = {
 				religion_head = {
 					is_alive = yes 
-					has_landed_title = d_capirote	 
+					has_landed_title = d_penitant	 
 				}
 			}
 			custom_tooltip = { text = big_brother_sad }
@@ -1060,7 +1060,7 @@ character_event = { #gives penitente rulers their timer at start
 	trigger = {
 		is_playable = yes
 		is_adult = yes
-		religion = penitents
+		religion = penitant
 		NOT = {
 			has_character_flag = flagellation_timer
 		}
