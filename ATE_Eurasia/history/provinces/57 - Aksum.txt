@@ -13,3 +13,13 @@ culture = tigrinya
 religion = miaphysite
 
 #History
+1200.1.1 = { 
+	build_wonder=wonder_lalibela_churches
+	set_wonder_stage=3
+	build_wonder_upgrade = upgrade_relic_tomb
+	build_wonder_upgrade = upgrade_catacombs
+	build_wonder_upgrade = upgrade_ark_of_the_covenant
+	build_wonder_upgrade = upgrade_bells_golden
+	build_wonder_upgrade = upgrade_historical_mural
+	build_wonder_upgrade = upgrade_retinue
+}

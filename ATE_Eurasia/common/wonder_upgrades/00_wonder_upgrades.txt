@@ -4671,3 +4671,22 @@ upgrade_norbulingka = {
 		gardener_opinion = 5
 	}
 }
+upgrade_ark_of_the_covenant = { #The Supposed Ark
+	picture = GFX_upgrade_icon_door
+	
+	potential = { religion_group = christian }
+	active = { religion_group = christian }
+
+	flags = {
+		is_singular
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	owner_modifier = {
+		church_opinion = 5
+		same_religion_opinion = 5
+		monthly_character_piety = 0.25
+		custom_modifier_text = storing_a_relic_possible_modifier_tt
+	}
+}
