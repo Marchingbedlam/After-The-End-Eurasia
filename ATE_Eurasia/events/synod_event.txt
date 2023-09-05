@@ -1,8 +1,9 @@
 # Modification of the Great Debate and Invention Decision of the Hermetic Society
 namespace = synod
 #Interaction: Gathering of a synod (test)
-character_event = {		
+narrative_event = {		
 	id = synod.1
+	title = EVTTITLE_synod_1
 	desc = EVTDESC_synod_1
 	picture = GFX_evt_gathering_of_minds
 	border = GFX_event_normal_frame_religion
@@ -28,17 +29,22 @@ character_event = {
 		}
 	}
 	option = { #Ecumenial Council
+		limit = {
+			holder_scope = {
+				OR = {
+					religion = lutheran
+					religion = calvinist
+				}
+				has_landed_title = e_baltic
+			}
+		}
 		name = EVTOPTB_synod_1
 		custom_tooltip = { text = EVTOPTB_synod_1_TT }
 		scaled_wealth = { value = -0.5 min = -20 }
 		hidden_effect = { 
-			character_event = { id = synod.2 days = 7 } 
+			character_event = { id = synod.21 days = 7 } 
 			set_character_flag = gathering_of_the_ecu_council
 		}
-	}
-
-	option = {
-		name = EVTOPTB_synod_1
 	}
 }
 
@@ -172,7 +178,7 @@ character_event = {
 				clr_character_flag = disliked_synod_colleague
 				break = yes
 			}
-			character_event = { id = synod.5 days = 30 }
+			narrative_event = { id = synod.5 days = 30 }
 		}
 	}
 }
@@ -246,13 +252,14 @@ letter_event = {
 	}
 
 	after = {
-		hidden_effect = { character_event = { id = synod.5 days = 20 } }
+		hidden_effect = { narrative_event = { id = synod.5 days = 20 } }
 	}
 }
 
 #You suggest what you make
-character_event = {
+narrative_event = {
 	id = synod.5
+	title = EVTTITLE_synod_5
 	desc = EVTDESC_synod_5
 	picture = GFX_synod_hall
 	border = GFX_event_normal_frame_religion
@@ -283,8 +290,8 @@ character_event = {
 	#Something for learning (intellectual religious studies and pursuit)
 	option = {
 		tooltip_info = learning
-		name = EVTOPTD_synod_5
-		custom_tooltip = { text = EVTOPTD_synod_5_TT }
+		name = EVTOPTC_synod_5
+		custom_tooltip = { text = EVTOPTC_synod_5_TT }
 		set_character_flag = knowledge_path
 	}
 
@@ -1530,7 +1537,7 @@ character_event = {
 				clr_character_flag = disliked_synod_colleague
 				break = yes
 			}
-			character_event = { id = synod.24 days = 30 }
+			narrative_event = { id = synod.24 days = 30 }
 		}
 	}
 }
@@ -1604,13 +1611,14 @@ letter_event = {
 	}
 
 	after = {
-		hidden_effect = { character_event = { id = synod.24 days = 20 } }
+		hidden_effect = { narrative_event = { id = synod.24 days = 20 } }
 	}
 }
 
 #You suggest what you make
-character_event = {
+narrative_event = {
 	id = synod.24
+	title = EVTTITLE_synod_24
 	desc = EVTDESC_synod_24
 	picture = GFX_synod_discussion
 	border = GFX_event_normal_frame_religion
@@ -1641,8 +1649,8 @@ character_event = {
 	#Something for learning (intellectual religious studies and pursuit)
 	option = {
 		tooltip_info = learning
-		name = EVTOPTD_synod_24
-		custom_tooltip = { text = EVTOPTD_synod_24_TT }
+		name = EVTOPTC_synod_24
+		custom_tooltip = { text = EVTOPTC_synod_24_TT }
 		set_character_flag = knowledge_path
 	}
 

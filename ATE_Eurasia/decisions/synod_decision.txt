@@ -40,7 +40,7 @@ decisions = {
 			custom_tooltip = {
 				text = holding_synod
 				hidden_tooltip = {
-					character_event = { id = synod.1 } 
+					narrative_event = { id = synod.1 } 
 				}
 			}
 			if = {

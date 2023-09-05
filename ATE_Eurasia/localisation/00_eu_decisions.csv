@@ -1,5 +1,35 @@
 ###ÄNSI###
+holding_synod;Summon a Synod;;;;;;;;;;;;;x
+holding_synod_desc;As a leader of the Protestant community, you may call for priests and other members of the faith to gather together for a grand council on matters of the church.;;;;;;;;;;;;;x
 
+EVTTITLE_synod_1;Calling the Synod;;;;;;;;;;;;;x
+EVTDESC_synod_1;Calling upon the Protestant clergy to gather is a tradition that most Lutherans and Calvinists abide by as to uphold a common sense of unity and brotherhood among the Protestants of Europe. It is seen by many as a badge of pride to host one, and even more so, get something done within it.;;;;;;;;;;;;;x
+EVTOPTA_synod_1;Let this be a Synod for all Protestants!;;;;;;;;;;;;;x
+EVTOPTB_synod_1;Let us not humble ourselves, all Christians must convene for an Ecumenical Council!;;;;;;;;;;;;;x
+
+EVTDESC_synod_2;With the plan set in motion, for any decent Synod to occur, knowing who to invite, and how to prepare your capital for the event is imperative. Setting up housing for the clergy and where the assembly would be set up and prepared for.;;;;;;;;;;;;;x
+EVTDESC_synod_21;As per tradition set out by Visvaldis, the First Emperor of the Baltic, and of the Lutherans, it has been customary to provide a grand gesture to the fellow followers of Christ, since they come from so far afield, from across Europe, and on occasion, even beyond the continent. Deciding on how much to provide for the clergy of all Christendom is imperative.;;;;;;;;;;;;;x
+
+EVTTITLE_synod_5;The Synod Convenes;;;;;;;;;;;;;x
+EVTDESC_synod_5;The people of the Protestant tradition have brought themselves upon the capital, from the Lutherans of Germany, Scandinavia and the Baltic, to the Calvinists from the Benelux, Scotland and Switzerland. Chatter fills the halls as everyone waits for you. As for yourself, as the head of this Synod, you have the decision upon what the Protestants must focus on.;;;;;;;;;;;;;x
+EVTOPTA_synod_5;Focusing on solving our internal disputes would be the most productive task.;;;;;;;;;;;;;x
+EVTOPTA_synod_5_TT;A Frank and Humble Path.;;;;;;;;;;;;;x
+EVTOPTB_synod_5;Continuing our path of being a united front against all who dare to defy God would be best.;;;;;;;;;;;;;x
+EVTOPTB_synod_5_TT;Build that future.;;;;;;;;;;;;;x
+EVTOPTC_synod_5;We must understand as to why our misguided brethren left the flock, and if there reason behind it.;;;;;;;;;;;;;x
+EVTOPTC_synod_5_TT;A Wise and Studious Path.;;;;;;;;;;;;;x
+
+EVTTITLE_synod_24;The Council Gathers;;;;;;;;;;;;;x
+EVTDESC_synod_24;The clergy of Christ have gathered, and the city and more importantly, the great hall is filled with chatter from all sides, discussing local and interfaith issues, and happenings in their parts of the world. As the Emperor, and the master of this great meeting, you have the supreme authourity to decide on a topic that should be discussed.;;;;;;;;;;;;;x
+EVTOPTA_synod_24;If Christianity is to prosper for centuries more, regardless of belief, we have to strengthen ourselves internally.;;;;;;;;;;;;;x
+EVTOPTA_synod_24_TT;A Bold and Ambitious Path.;;;;;;;;;;;;;x
+EVTOPTB_synod_24;Without dialogue, we are bound to turn our weapons on each other. We musn't allow that to come to pass.;;;;;;;;;;;;;x
+EVTOPTB_synod_24_TT;Invest into the future you want.;;;;;;;;;;;;;x
+EVTOPTC_synod_24;The current age has brought the discussion and questioning of doctrine into vogue. Perhaps it is time we listen, instead of persecute.;;;;;;;;;;;;;x
+EVTOPTC_synod_24_TT;A Wise and Studious Path.;;;;;;;;;;;;;x
+
+
+#Holding Blot
 hold_blot;Hold a Great Bonfire;Tenir un grand blót ;Haltet ein Blót ab;;Celebrar una Gran Mancha;;;;;;;;;x
 hold_blot_desc;Hold a great bonfire together with your vassals in the name of the Queen. Ritual costumes are donned and the guilty cast into the flames of her Eternal Majesty's judgement...;Tenez un grand blót accompagné de vos vassaux et offrez des sacrifices aux dieux en remerciement pour les bonnes récoltes et pour le succès sur le champ de bataille. Cela ne se fait qu'une fois tous les neuf ans.;Haltet mit Euren Vasallen ein Blót ab und dankt den Göttern für gute Ernten und Erfolge auf dem Schlachtfeld. Dies kann nur jedes neunte Jahr durchgeführt werden.;;Celebrar una gran mancha junto con tus vasallos y ofrecer sacrificios a los dioses por buenas cosechas y el éxito en el campo de batalla. Esto sólo puede hacerse cada nueve años.;;;;;;;;;x
 held_blot_modifier;Burnt Offerings to Gloria;Offert en sacrifice aux dieux;Den Göttern geopfert;;Sacrificado a los Dioses;;;;;;;;;x
