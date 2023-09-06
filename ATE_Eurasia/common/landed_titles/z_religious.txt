@@ -1586,3 +1586,58 @@ d_jagannath_reformed = {
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
+d_apostolic = { #Archbishop of Manaus - head of the faith in northern Brazil and entirety of map
+	color={ 205 199 148 }
+	color2={ 220 220 0 }
+
+	capital = 1117 #Rome
+	
+	title = "ARCHBISHOP"
+	title_female = "ARCHBISHOP"
+	foa = "ECUMENICAL_PATRIARCH_FOA"
+	title_prefix = "ARCHDIOCESE_OF"
+	
+	# Always exists
+	landless = yes
+	
+	# Controls a religion
+	controls_religion = apostolic
+	
+	religion = apostolic
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+k_celeste = {
+	color={ 175 180 25 }
+	color2={ 180 170 40 }
+
+	creation_requires_capital = no
+	
+	capital = 1117 # Rome
+	
+	dignity = 200 
+	
+	title = "HIGH_MONK"
+	title_female = "JACOBINA"
+	foa = "POPE_FOA"
+	primary = yes
+	
+	short_name = yes
+	
+	religion = celeste
+	caliphate = yes	
+
+	# Controls a religion
+	controls_religion = celeste
+	
+	allow = {
+		has_global_flag = celeste_formed
+		num_of_holy_sites = 3
+		piety = 1000
+	}
+	
+	dynasty_title_names = no	# Will not be named "Seljuk", etc.
+}
