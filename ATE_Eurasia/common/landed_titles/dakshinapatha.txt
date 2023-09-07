@@ -143,10 +143,14 @@ e_dakshinapatha = {
 			c_kottayam = { # 2239
 				color={ 195 241 169 }
 				color2={ 255 255 255 }
+				holy_site = baptist
+				holy_site = kohhran_thianghlim
 				
 				b_kottayam = {}
 				b_thiruvalla = {}
-				b_pathanamthitta = {}
+				b_pathanamthitta = {
+					pentarchy = baptist
+				}
 				b_changanassery = {}
 				b_ettumanoor = {}
 				b_pandalam = {}
@@ -782,7 +786,9 @@ e_dakshinapatha = {
 				
 				b_puttalam = {}
 				b_chilaw = {}
-				b_kalpitiya = {}
+				b_kalpitiya = {
+					pentarchy = baptist
+				}
 				b_anamaduwa = {}
 				b_nattandiya = {}
 				b_mundel = {}

@@ -1641,3 +1641,58 @@ k_celeste = {
 	
 	dynasty_title_names = no	# Will not be named "Seljuk", etc.
 }
+d_baptist = {
+	color={ 205 199 148 }
+	color2={ 220 220 0 }
+
+	capital = 2972 #Kohima
+	
+	title = "GENERAL_SECRETARY"
+	title_female = "GENERAL_SECRETARY"
+	foa = "ECUMENICAL_PATRIARCH_FOA"
+	
+	# Always exists
+	landless = yes
+	short_name = yes
+	
+	# Controls a religion
+	controls_religion = baptist
+	
+	religion = baptist
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+k_kohhran_thianghlim = {
+	color={ 175 180 25 }
+	color2={ 180 170 40 }
+
+	creation_requires_capital = no
+	
+	capital = 2775 # Aizawl
+	
+	dignity = 200 
+	
+	title = "REVEREND"
+	title_female = "REVEREND"
+	foa = "REVEREND_FOA"
+	primary = yes
+	
+	short_name = yes
+	
+	religion = kohhran_thianghlim
+	caliphate = yes
+
+	# Controls a religion
+	controls_religion = kohhran_thianghlim
+	
+	allow = {
+		has_global_flag = kohhran_thianglim_formed
+		num_of_holy_sites = 3
+		piety = 1000
+	}
+	
+	dynasty_title_names = no	# Will not be named "Seljuk", etc.
+}

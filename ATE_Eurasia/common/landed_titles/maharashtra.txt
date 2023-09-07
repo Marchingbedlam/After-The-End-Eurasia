@@ -24,7 +24,9 @@ e_maharashtra = {
 				
 				b_mumbai = {}
 				b_thane = {}
-				b_mira_bhayandar = {}
+				b_mira_bhayandar = {
+					pentarchy = baptist
+				}
 				b_dadar = {}
 				b_andheri = {}
 				b_borivali = {}
@@ -267,6 +269,8 @@ e_maharashtra = {
 			c_vasco_da_gama = {
 				color={ 199 185 57 }
 				color2={ 255 255 255 }
+				holy_site = baptist
+				holy_site = kohhran_thianghlim
 				
 				b_vasco_da_gama = {}
 				b_margao = {}

@@ -226,10 +226,14 @@ e_bengal = {
 				color2={ 255 255 255 }
 				holy_site = adi
 				holy_site = adi_reformed
+				holy_site = baptist
+				holy_site = kohhran_thianghlim
 				
 				b_kohima = {}
 				b_dimapur = {}
-				b_mokokchung = {}
+				b_mokokchung = {
+					pentarchy = baptist
+				}
 				b_tuensang = {}
 				b_wokha = {}
 				b_phek = {}
@@ -290,6 +294,8 @@ e_bengal = {
 				color2={ 255 255 255 }
 				holy_site = adi
 				holy_site = adi_reformed
+				holy_site = baptist
+				holy_site = kohhran_thianghlim
 				
 				b_aizawl = {}
 				b_champhai = {}
