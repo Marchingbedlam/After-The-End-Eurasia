@@ -12,6 +12,26 @@ EVTOPTCbaptism_events.1;No.;;;;;;;;;;;;;x
 adult_baptized;Baptized as a Believer;;;;;;;;;;;;;x
 adult_baptized_desc;This character has received a believer’s baptism.;;;;;;;;;;;;;x
 
+###########Kohhran Thianghlim - Decisions and Events########### 
+
+build_third_temple;Restore Solomon's Temple;;;;;;;;;;;;;x
+build_third_temple_desc;During the Event the Glory of the Temple Mound was caught in the storm of the apocalypse leaving Mizoram faithful directionless in the sea of chaos that followed the Event. Now that the faithful of Kohhran Thianghlim have returned home grander than ever before an ambitious lord such as yourself can build a grand temple to God like the one raised by King Solomon himself.;;;;;;;;;;;;;x
+
+restore_high_priesthood;Unify the Holy Church;;;;;;;;;;;;;x
+restore_high_priesthood_desc;With Solomon's Temple Restored, many weary faithful look to you for guidance awaiting your word. The ministries that were once disunited look to you as the Grand Reverend of God himself and request that you guide the faithful with your own steady hand.;;;;;;;;;;;;;x
+
+EVTDESC_SoA_100;Construction of the Third Temple will begin immediately on the outskirts of Aizawl. The design of the new temple is greater in scope than the previous church on the site or even King Solomon's fabled First Temple. Your architects estimate that the construction will take roughly four years. When it is finished, it will truly be a sight to see!;;;;;;;;;;;;;x
+EVTOPTA_SoA_100;Our people need but wait a little longer.;;;;;;;;;;;;;x
+EVTNAME_SoA_101;The Third Temple, The Holy Church;;;;;;;;;;;;;x
+EVTDESC_SoA_101;The First Temple, built by King Solomon, was destroyed by the invading Babylonians. The Second Temple, built under the auspices of Cyrus the Great of Persia, was razed by the Romans after a terrible siege. The Third Temple, first seen in the dreams of Lalbiakmawia Sailo and built by the great [FromFrom.GetTitledFirstName] in Mizoram, shall stand for all eternity!\n\nThe magnificent building has become a dominant feature of Aizawl, instantly recognizable from far away by travelers approaching the city. Truly, Solomon himself would have been moved to tears by the sight.;;;;;;;;;;;;;x
+EVTOPTA_SoA_101;It is beautiful.;;;;;;;;;;;;;x
+
+EVTNAME_SoA_550;The Future of the Church;;;;;;;;;x
+EVTDESC_SoA_550;The Proud Restoration of Solomon's Temple was quickly followed by disparate ministries of Kohhran Thianghlim declaring you as the Grand Reverend to hold the steady hand of the church so that this proud realm may last until the day that Jesus returns to usher in the millenia Kingdom of Heaven and collect the faithful in his realm.;;;;;;;;;;;;x
+EVTOPTA_SoA_550;Long live the Reverend, Glory to the Church!;;;;;;;;;x
+EVTOPTB_SoA_550;An interesting development...;;;;;;;;;x #Major event recieved to all Indian and Tibetan Leaders
+EVTOPTC_SoA_550;This is ridiculous!;;;;;;;;;x #reaction of the Baptist
+
 ###########Event Modifiers########### 
  
 flagellant_tier_one;Flagellant;;;;;;;;;x

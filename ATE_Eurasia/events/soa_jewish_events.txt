@@ -1265,6 +1265,46 @@ character_event = { # Adding Passover flavor: Buying Back Chametz/Mimouna time!
 	}
 }
 
+### Restoration of the Kohhran Thianghlim High Priesthood
+
+# The Priesthood Restored
+narrative_event = {
+	id = SoA.550
+	title = EVTNAME_SoA_550
+	desc = EVTDESC_SoA_550
+	picture = GFX_evt_synagogue
+	border = GFX_event_narrative_frame_religion
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_SoA_550
+		trigger = {
+			religion = kohhran_thianghlim
+		}
+	}
+	option = {
+		name = EVTOPTB_SoA_550
+		trigger = {
+			capital_scope = { 
+				OR = { 
+					region = custom_greater_tibet
+					region = custom_northern_india
+					region = custom_southern_india
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTC_SoA_550
+		trigger = {
+			religion = baptist
+		}
+	}
+}
+
 
 
 ### Jewish Councillor Events

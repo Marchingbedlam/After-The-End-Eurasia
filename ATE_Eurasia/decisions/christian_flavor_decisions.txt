@@ -189,7 +189,7 @@ decisions = {
 		}
 	}	
 
-	build_kohhran_thianghlim = {
+	build_third_temple = {
 		only_playable = yes
 		is_high_prio = yes
 		ai_check_interval = 24
@@ -206,13 +206,14 @@ decisions = {
 		}
 		allow = {
 			completely_controls = c_aizawl
-			2775 = {
-				religion = ROOT
-			}
+			is_feudal = yes
 			OR = {
 				tier = EMPEROR
 				tier = KING
-			}		
+			}
+			2775 = {
+				religion = ROOT
+			}
 			wealth = 1500
 			piety = 1500
 		}
@@ -229,6 +230,51 @@ decisions = {
 		ai_will_do = {
 			factor = 1
 		}
-	}	
+	}
+	
+	restore_high_priesthood = { #edited decision
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 24
+		
+		potential = {
+			has_dlc = "Sons of Abraham"
+			is_playable = yes
+			religion = kohhran_thianghlim
+			has_landed_title = c_aizawl
+			has_global_flag = third_temple_built
+			NOT = { has_global_flag = mizoram_priesthood_founded }
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		allow = {
+			is_feudal = yes
+			completely_controls = c_aizawl
+			OR = {
+				tier = EMPEROR
+				tier = KING
+			}
+			2775 = {
+				religion = kohhran_thianghlim
+			}
+			piety = 1000
+		}
+		effect = {
+			set_global_flag = mizoram_priesthood_founded
+			activate_title = { title = k_kohhran_thianghlim status = yes }
+			hidden_tooltip = {
+				new_character = {
+					k_kohhran_thianghlim = {
+						grant_title = ROOT
+					}
+					narrative_event = { id = SoA.550 }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	
 }
