@@ -2571,17 +2571,246 @@
 	2622.4.12={birth=yes}
 	2704.1.1={death=yes}
 }
-1855007={
-	name="Mikhail"
-	dynasty=1703183 #Lavrentiev
+1703147={
+	name="Jyrki"
+	dynasty=2918233 #Väisänen
+	culture=seto
+	religion=orthodox
+	trait=brilliant_strategist
+	trait=shrewd
+	trait=zealous
+	trait=crusader
+	trait=adventurer
+	trait=familyperson
+	2600.1.3={birth=yes}
+	2656.1.1={death=yes}
+}
+1703148={
+	name="Jyrki"
+	dynasty=2918233 #Väisänen
+	culture=seto
+	religion=orthodox
+	trait=skilled_tactician
+	trait=brave
+	trait=zealous
+	trait=proud
+	trait=adventurer
+	trait=authoritative
+	father=1703147
+	2630.6.1={birth=yes}
+	2665.1.11={add_spouse=1703149}
+	2680.3.2={death=yes}
+}
+1703149={
+	name="Vasilisa"
+	female=yes
+	dynasty=1703184 #Kobyla
 	culture=severyane
-	religion=proletcult
-	trait=intricate_webweaver
-	trait=fair
+	religion=pravoslavie
+	trait=grey_eminence
+	trait=groomed
 	trait=patient
-	trait=ambitious
-	trait=kind
-	trait=cynical
-	2642.1.3={birth=yes}
-	2680.1.1={death=yes}
+	trait=familyperson
+	trait=poet
+	father=1703157
+	2640.7.12={birth=yes}
+	2665.1.11={add_spouse=1703148}
+	2685.11.2={death=yes}
+}
+1703150={
+	name="Heigo"
+	dynasty=2918233 #Väisänen
+	culture=seto
+	religion=orthodox
+	father=1703148
+	mother=1703149
+	2666.3.15={birth=yes}
+	2713.1.12={death=yes}
+}
+1703151={
+	name="Andrey"
+	dynasty=1703184 #Kobyla
+	culture=severyane
+	religion=pravoslavie
+	trait=tough_soldier
+	trait=robust
+	trait=wroth
+	trait=authoritative
+	trait=legendary
+	occluded=yes
+	father=1703164
+	2450.1.1={birth=yes}
+	2498.2.12={death=yes}
+}
+1703152={
+	name="Aleksey"
+	dynasty=1703184 #Kobyla
+	culture=severyane
+	religion=pravoslavie
+	trait=charismatic_negotiatior
+	trait=frail
+	trait=erudite
+	trait=gregarious
+	father=1703151
+	2475.5.12={birth=yes}
+	2515.3.19={death=yes}
+}
+1703153={
+	name="Pavel"
+	dynasty=1703184 #Kobyla
+	culture=severyane
+	religion=pravoslavie
+	trait=martial_cleric
+	trait=robust
+	trait=brave
+	trait=greedy
+	father=1703152
+	2499.1.12={birth=yes}
+	2548.11.3={death=yes}
+}
+1703154={
+	name="Yuriy"
+	dynasty=1703184 #Kobyla
+	culture=severyane
+	religion=pravoslavie
+	trait=flamboyant_schemer
+	trait=deceitful
+	trait=patient
+	trait=envious
+	father=1703153
+	2525.8.12={birth=yes}
+	2570.3.1={death=yes}
+}
+1703155={
+	name="Mikhail"
+	dynasty=1703184 #Kobyla
+	culture=severyane
+	religion=pravoslavie
+	trait=mastermind_theologian
+	trait=scholar
+	trait=erudite
+	trait=proud
+	father=1703154
+	2550.2.13={birth=yes}
+	2612.4.12={death=yes}
+}
+1703156={
+	name="Anton"
+	dynasty=1703184 #Kobyla
+	culture=severyane
+	religion=pravoslavie
+	trait=tough_soldier
+	trait=duelist
+	trait=stubborn
+	trait=brave
+	father=1703155
+	2590.1.2={birth=yes}
+	2630.7.18={death=yes}
+}
+1703157={
+	name="Pavel"
+	dynasty=1703184 #Kobyla
+	culture=severyane
+	religion=pravoslavie
+	trait=thrifty_clerk
+	trait=greedy
+	trait=rude
+	trait=authoritative
+	father=1703156
+	2612.3.12={birth=yes}
+	2657.9.13={death=yes}
+}
+1703158={
+	name="Aleksey"
+	dynasty=1703184 #Kobyla
+	culture=severyane
+	religion=pravoslavie
+	trait=skilled_tactician
+	trait=just
+	trait=lustful
+	trait=patient
+	father=1703157
+	2633.12.11={birth=yes}
+	2653.7.5={add_spouse=1703163}
+	2681.3.2={death=yes}
+}
+1703159={
+	name="Andrey"
+	dynasty=1703184 #Kobyla
+	culture=severyane
+	religion=pravoslavie
+	trait=rowdy
+	trait=curious
+	trait=brooding
+	father=1703158
+	mother=1703163
+	2655.9.4={birth=yes}
+	2696.1.19={death=yes}
+}
+1703160={
+	name="Ksenia"
+	female=yes
+	dynasty=1703184 #Kobyla
+	culture=severyane
+	religion=pravoslavie
+	trait=affectionate
+	father=1703158
+	mother=1703163
+	2660.12.3={birth=yes}
+	2704.5.1={death=yes}
+}
+1703161={
+	name="Evgeniy"
+	dynasty=1855065 #Bulavin
+	culture=kubantsy
+	religion=orthodox
+	trait=tough_soldier
+	trait=brave
+	trait=adventurer
+	trait=pious
+	trait=gluttonous
+	2615.3.12={birth=yes}
+	2668.7.15={death=yes}
+}
+1703162={
+	name="Roman"
+	dynasty=1855065 #Bulavin
+	culture=kubantsy
+	religion=orthodox
+	trait=thrifty_clerk
+	trait=gregarious
+	trait=trusting
+	trait=honest
+	father=1703161
+	2632.2.11={birth=yes}
+	2682.3.9={death=yes}
+}
+1703163={
+	name="Nadezhda"
+	female=yes
+	dynasty=1855065 #Bulavin
+	culture=kubantsy
+	religion=orthodox
+	trait=charismatic_negotiator
+	trait=fair
+	trait=erudite
+	trait=honest
+	father=1703161
+	2633.8.21={birth=yes}
+	2653.7.5={add_spouse=1703158}
+	2690.3.9={death=yes}
+}
+1703164={
+	name="Glanda Kambila"
+	dynasty=1703184 #Kobyla
+	culture=prussian
+	religion=pravoslavie
+	trait=skilled_tactician
+	trait=brave
+	trait=stubborn
+	trait=strong
+	trait=legendary
+	occluded=yes
+	2420.1.1={birth=yes}
+	2468.1.1={death=yes}
 }

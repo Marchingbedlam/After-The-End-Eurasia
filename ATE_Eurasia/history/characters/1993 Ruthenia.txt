@@ -864,3 +864,77 @@
 	2646.9.14={birth=yes}
 	2694.9.12={death=yes}
 }
+1993226={
+	name="Vadym"
+	dynasty=2923058 #Kysyl
+	culture=poleshuk
+	religion=orthodox
+	trait=skilled_tactician
+	trait=just
+	trait=wroth
+	trait=brave
+	trait=stubborn
+	2600.7.11={birth=yes}
+	2627.1.1={add_spouse=1993227}
+	2670.9.14={death=yes}
+}
+1993227={
+	name="Halyna"
+	female=yes
+	dynasty=0 #Lowborn
+	culture=poleshuk
+	religion=orthodox
+	trait=martial_cleric
+	trait=groomed
+	trait=fair
+	trait=humble
+	trait=pious
+	2606.1.12={birth=yes}
+	2627.1.1={add_spouse=1993226}
+	2669.2.12={death=yes}
+}
+	
+1993228={
+	name="Pyetr"
+	dynasty=2923058 #Kysyl
+	culture=poleshuk
+	religion=orthodox
+	trait=tough_soldier
+	trait=stubborn
+	trait=brave
+	trait=charitable
+	father=1993226
+	mother=1993227
+	2630.7.9={birth=yes}
+	2682.1.12={death=yes}
+}
+1993229={
+	name="Khrystop"
+	dynasty=2923058 #Kysyl
+	culture=poleshuk
+	religion=orthodox
+	trait=brilliant_strategist
+	trait=gamer
+	trait=patient
+	trait=proud
+	father=1993226
+	mother=1993227
+	2636.11.2={birth=yes}
+	2700.1.14={death=yes}
+}
+1993230={
+	name="Svyatlana"
+	female=yes
+	dynasty=2923058 #Kysyl
+	culture=poleshuk
+	religion=orthodox
+	trait=charismatic_negotiator
+	trait=fair
+	trait=groomed
+	trait=gregarious
+	trait=envious
+	father=1993226
+	mother=1993227
+	2650.2.14={birth=yes}
+	2694.12.1={death=yes}
+}
