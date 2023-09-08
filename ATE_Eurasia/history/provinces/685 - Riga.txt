@@ -15,6 +15,28 @@ culture=latvian
 religion=lutheran
 
 #History
+1334.1.1 = { #As a Guild Hall
+	build_wonder=wonder_blackbeard
+	set_wonder_stage=3
+	build_wonder_upgrade = upgrade_throne_fancy
+	build_wonder_upgrade = upgrade_herb_garden
+	build_wonder_upgrade = upgrade_statues_garden
+	build_wonder_upgrade = upgrade_piers
+	build_wonder_upgrade = upgrade_historical_mural
+	build_wonder_upgrade = upgrade_office_harbor
+}
+1941.6.4 = { #Damage from the WW2 Bombings of Riga
+	set_wonder_stage=2
+}
 2493.4.19={
 	b_vecriga=castle
+}
+2495.1.1 = { #Made into a Palace
+	set_wonder_stage=3
+	build_wonder_upgrade = upgrade_royal_bedchamber
+	build_wonder_upgrade = upgrade_golden_throne
+	build_wonder_upgrade = upgrade_royal_custodian
+	build_wonder_upgrade = upgrade_automata_throne
+	build_wonder_upgrade = upgrade_dueling_room
+	build_wonder_upgrade = upgrade_road_tolls
 }
