@@ -257,6 +257,25 @@ spriteTypes = {
 		noOfFrames = 5
 	}
 	
+	#House of the Blackbeards
+	spriteType = {
+		name = "GFX_wonder_strip_blackbeard_large"
+		texturefile = "gfx\\interface\\wonder_interface\\wonder_strips\\wonder_stages_blackbeard_large.dds"
+		noOfFrames = 5
+	}
+	
+	spriteType = {
+		name = "GFX_wonder_strip_blackbeard_medium"
+		texturefile = "gfx\\interface\\wonder_interface\\wonder_strips\\wonder_stages_blackbeard_medium.dds"
+		noOfFrames = 5
+	}
+	
+	spriteType = {
+		name = "GFX_wonder_strip_blackbeard_small"
+		texturefile = "gfx\\interface\\wonder_interface\\wonder_strips\\wonder_stages_blackbeard_small.dds"
+		noOfFrames = 5
+	}
+	
 	#Orszaghaz; the Hungarian Parliament
 	spriteType = {
 		name = "GFX_wonder_strip_orszaghaz_large"
