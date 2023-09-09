@@ -459,7 +459,7 @@
 	2680.1.1={death=yes}
 }
 2072200={
-	name="Simona"  #placeholder as fuck
+	name="Simona"
 	dynasty=2047196 #Derzhanski
 	female=yes
 	religion=orthodox
@@ -467,10 +467,8 @@
 	trait=erudite
 	trait=mastermind_theologian
 	trait=shrewd
-	trait=ugly
 	trait=gamer
 	trait=humble
-	trait=placeholder_char_trait
 	2634.1.1={birth=yes}
 	2680.1.1={death=yes}
 }
@@ -1005,6 +1003,137 @@
 	trait=hedonist
 	trait=deceitful
 	disallow_random_traits=yes
+	2640.1.20={birth=yes}
+	2680.1.1={death=yes}
+}
+2072245={
+	name="Teodora"
+	dynasty=2047200 #Pulev
+	religion=orthodox
+	culture=bulgarian
+	female=yes
+	trait=intricate_webweaver
+	trait=seductress
+	trait=musician
+	trait=diligent
+	trait=patient
+	trait=ambitious
+	2640.1.20={birth=yes}
+	2680.1.1={death=yes}
+}
+2072246={
+	name="Konstantin"
+	dynasty=2047201 #Sratsimir
+	religion=orthodox
+	culture=bulgarian
+	trait=indulgent_wastrel
+	trait=paranoid
+	trait=scarred
+	trait=dull
+	trait=robust
+	trait=craven
+	trait=envious
+	trait=falconer
+	2640.1.20={birth=yes}
+	2650.1.1={add_claim=c_vidin}
+	2680.1.1={death=yes}
+}
+2072247={
+	name="Krastev"
+	dynasty=2047202 #Tenev
+	religion=orthodox
+	culture=bulgarian
+	trait=skilled_tactician
+	trait=quick
+	trait=stutter
+	trait=sturdy
+	trait=duelist
+	trait=patient
+	trait=wroth
+	trait=cynical
+	2640.1.20={birth=yes}
+	2680.1.1={death=yes}
+}
+2072248={
+	name="Iliya"
+	dynasty=1822096 #Canetti
+	religion=haskalah
+	culture=yiddish
+	trait=charismatic_negotiator
+	trait=quick
+	trait=stutter
+	trait=sturdy
+	trait=socializer
+	trait=honest
+	trait=erudite
+	trait=poet
+	2620.1.20={birth=yes}
+	2680.1.1={death=yes}
+}
+2072249={
+	name="Isperih"
+	dynasty=2047204 #Zlatarski
+	religion=orthodox
+	culture=bulgarian
+	trait=brilliant_strategist
+	trait=strong
+	trait=hunter
+	trait=sturdy
+	trait=ambitious
+	trait=honest
+	trait=erudite
+	trait=poet
+	2635.1.20={birth=yes}
+	2680.1.1={death=yes}
+}
+2072250={
+	name="Yusuf"
+	dynasty=2057213 #Ishmaelo
+	religion=ruhi
+	culture=rumelian
+	trait=tough_soldier
+	trait=robust
+	trait=giant
+	trait=duelist
+	trait=scarred_mid
+	trait=zealous
+	trait=gluttonous
+	trait=ambitious
+	2620.1.20={birth=yes}
+	2642.1.1={birth=yes 
+		give_nickname=nick_the_great
+	}
+	2680.1.1={death=yes}
+}
+2072251={
+	name="Mehmed"
+	dynasty=2151198 #Talaat
+	religion=ruhi
+	culture=pomak
+	trait=charismatic_negotiator
+	trait=administrator
+	trait=feeble
+	trait=shrewd
+	trait=charitable
+	trait=humble
+	trait=erudite
+	trait=ambitious
+	2625.1.20={birth=yes}
+	2680.1.1={death=yes}
+}
+2072252={
+	name="Dimitar"
+	dynasty=2047205 #Ivanov
+	religion=orthodox
+	culture=bulgarian
+	trait=brilliant_strategist
+	trait=strong
+	trait=duelist
+	trait=sturdy
+	trait=ambitious
+	trait=honest
+	trait=proud
+	trait=cruel
 	2640.1.20={birth=yes}
 	2680.1.1={death=yes}
 }
