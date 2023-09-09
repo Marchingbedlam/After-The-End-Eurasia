@@ -182,6 +182,32 @@ e_carthage = {
 	}
 }
 
+e_soyuz = { #Prolekult Formable Russia
+	color={ 245 29 15 }
+	color2={ 225 225 225 }
+
+	capital = 652 #Moskva
+	
+	dignity = 30 # Counted as having this many more counties than it does
+	
+	allow = {
+		always = no # Only created through special event
+	}
+}
+
+e_russia = { #Pravoslavie Formable Russia
+	color={ 103 146 103 }
+	color2={ 225 225 225 }
+
+	capital = 652 #Moskva
+	
+	dignity = 30 # Counted as having this many more counties than it does
+	
+	allow = {
+		always = no # Only created through special event
+	}
+}
+
 ### titular kingdoms ###
 
 k_benelux = {

@@ -791,7 +791,20 @@
 1102120 = { name = "Karrek" culture = cornish }
 
 
-1120000 = { name = "Navlyotov" culture = mordvin }
+1120000 = { name = "Navlyotov" culture = mordvin used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 4
+			texture_internal = 60
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1120001 = { name = "Chichvarkin" culture = mordvin }
 1120002 = { name = "Kadysheva" culture = mordvin }
 1120003 = { name = "Budnikov" culture = mordvin }
@@ -3074,7 +3087,20 @@
 1536072 = { name = "Toussaint" culture = cajun }
 
 1585000 = { name = "Shpolskiy" culture = chernyan }
-1585001 = { name = "Otrepyev" culture = chernyan }
+1585001 = { name = "Otrepyev" culture = chernyan used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 4
+			texture_internal = 59
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1585002 = { name = "Agarkov" culture = chernyan }
 1585003 = { name = "Alisov" culture = chernyan }
 1585004 = { name = "Arnautov" culture = chernyan }
@@ -21271,7 +21297,20 @@ coat_of_arms = {
 2040090 = { name = "Nazarbaev" culture = kazakh }
 2040091 = { name = "Mambetaliev" culture = kazakh }
 2040092 = { name = "Ábdirov" culture = kazakh }
-2040093 = { name = "Altynbaev" culture = kazakh }
+2040093 = { name = "Altynbaev" culture = kazakh used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 13
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2040094 = { name = "Säkirov" culture = kazakh }
 2040095 = { name = "Nygmatwlin" culture = kazakh }
 2040096 = { name = "Hairullin" culture = kazakh }
@@ -21279,7 +21318,20 @@ coat_of_arms = {
 2040098 = { name = "Satybaldy" culture = kazakh }
 2040099 = { name = "Boranbai" culture = kazakh }
 2040100 = { name = "Ötepbergen" culture = kazakh }
-2040101 = { name = "Äshim" culture = kazakh }
+2040101 = { name = "Äshim" culture = kazakh used_for_random = no
+	coat_of_arms = { 
+		religion = pagan
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 0
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2040102 = { name = "Seiitmamytuly" culture = kazakh }
 2040103 = { name = "Ogai" culture = kazakh }
 2040104 = { name = "Qaptaghai" culture = kazakh }
@@ -21288,7 +21340,20 @@ coat_of_arms = {
 2040107 = { name = "Turys" culture = kazakh }
 2040108 = { name = "Aqmolda" culture = kazakh }
 2040109 = { name = "Serghazin" culture = kazakh }
-2040110 = { name = "Myrzabek" culture = kazakh }
+2040110 = { name = "Myrzabek" culture = kazakh used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 10
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2040111 = { name = "Biläl" culture = kazakh }
 2040112 = { name = "Tolghanbai" culture = kazakh }
 2040113 = { name = "Jylqyshyuly" culture = kazakh }
@@ -21339,12 +21404,51 @@ coat_of_arms = {
 2040145 = { name = "Derbisäli" culture = kazakh used_for_random = no }
 2040146 = { name = "Kemel" culture = kazakh used_for_random = no }
 2040147 = { name = "Baisultanuly" culture = kazakh }
-2040148 = { name = "Äbilqaiyruly" culture = kazakh used_for_random = no }
+2040148 = { name = "Äbilqaiyruly" culture = kazakh used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 11
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2040149 = { name = "Nurkin" culture = kazakh used_for_random = no }
 2040150 = { name = "Sätbaev" culture = kazakh used_for_random = no }
 2040151 = { name = "Qarakesek" culture = kazakh used_for_random = no }
-2040152 = { name = "Kenesaryuly" culture = kazakh used_for_random = no }
-2040153 = { name = "Töre" culture = kazakh used_for_random = no }
+2040152 = { name = "Kenesaryuly" culture = kazakh used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 9
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2040153 = { name = "Töre" culture = kazakh used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 14
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2040154 = { name = "Asanbiev" culture = kazakh used_for_random = no }
 2040155 = { name = "Baighanin" culture = kazakh used_for_random = no }
 2040156 = { name = "Arghyn" culture = kazakh used_for_random = no }
@@ -26908,7 +27012,20 @@ coat_of_arms = {
 2075079 = { name = "Mamuratov" culture = karakalpak }
 2075080 = { name = "Qabulov" culture = karakalpak }
 2075081 = { name = "Baxadirov" culture = karakalpak }
-2075082 = { name = "Ku'nxojaev" culture = karakalpak }
+2075082 = { name = "Ku'nxojaev" culture = karakalpak used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 12
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2075083 = { name = "Ziywar" culture = karakalpak }
 
 2076000 = { name = "Betalgiry" culture = nakh }
@@ -38320,7 +38437,20 @@ coat_of_arms = {
 	}
 }
 2168082 = { name = "Pïrïev" culture = altay used_for_random = no religion = ak_jeng }
-2168083 = { name = "Samyk" culture = altay used_for_random = no religion = ak_jeng }
+2168083 = { name = "Samyk" culture = altay used_for_random = no
+	coat_of_arms = { 
+		religion = pagan
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 39
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2168084 = { name = "Kuroskanov" culture = altay used_for_random = no religion = ak_jeng }
 
 2169000 = { name = "Agayev" culture = udmurt}
