@@ -1290,7 +1290,20 @@
 1207051 = { name = "Pandita" culture = oirat }
 1207052 = { name = "Lama" culture = oirat }
 
-1208000 = { name = "Tong" culture = xibe }
+1208000 = { name = "Tong" culture = xibe used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 0
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 1240000 = { name = "Tukhan" culture = buryat }
 1240001 = { name = "Malo" culture = buryat }
@@ -1683,6 +1696,7 @@
 	}
 	used_for_random = no
 }
+1258105 = { name = "Kazantsev" culture = akmolensk }
 
 
 1282000 = { name = "Topaloghlu" culture = laz 
@@ -3275,7 +3289,20 @@
 1585173 = { name = "Kmokin" culture = chernyan }
 1585174 = { name = "Rasin" culture = chernyan }
 
-1589001 = { name = "Tsoi" culture = volgan }
+1589001 = { name = "Tsoi" culture = volgan used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 4
+			texture_internal = 62
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1589002 = { name = "Petrov" culture = volgan }
 1589003 = { name = "Popov" culture = volgan }
 1589004 = { name = "Smirnov" culture = volgan }
@@ -3291,7 +3318,20 @@
 1589014 = { name = "Kovanev" culture = volgan }
 1589015 = { name = "Orlov" culture = volgan }
 1589016 = { name = "Goncharov" culture = volgan }
-1589017 = { name = "Frolov" culture = volgan }
+1589017 = { name = "Frolov" culture = volgan used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 4
+			texture_internal = 61
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1589018 = { name = "Melnikov" culture = volgan } 
 1589019 = { name = "Yegorov" culture = volgan }
 1589020 = { name = "Nikitin" culture = volgan }
@@ -7682,6 +7722,7 @@
 1854118 = { name = "Ivakhnenko" culture = donskoy}
 1854119 = { name = "Izvarin" culture = donskoy}
 1854120 = { name = "Bespalov" culture = donskoy}
+1854121 = { name = "Rymniksky" culture = donskoy}
 
 1855000 = { name = "Kirichenko" culture = kubantsy}
 1855001 = { name = "Bezkrovny" culture = kubantsy}
@@ -7717,7 +7758,20 @@
 1855031 = { name = "Belyayev" culture = kubantsy}
 1855032 = { name = "Grishko" culture = kubantsy}
 1855033 = { name = "Kholod" culture = kubantsy}
-1855034 = { name = "Drobot" culture = kubantsy}
+1855034 = { name = "Drobot" culture = kubantsy used_for_random = no 
+	coat_of_arms = {
+		religion = pagan
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 2
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1855035 = { name = "Eryomenko" culture = kubantsy}
 1855036 = { name = "Kalambet" culture = kubantsy}
 1855037 = { name = "Sergienko" culture = kubantsy}
@@ -21378,7 +21432,20 @@ coat_of_arms = {
 2040118 = { name = "Mamai" culture = kazakh }
 2040119 = { name = "Jubatqan" culture = kazakh }
 2040120 = { name = "Jantörin" culture = kazakh }
-2040121 = { name = "Jaqypbai" culture = kazakh }
+2040121 = { name = "Jaqypbai" culture = kazakh used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 22
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2040122 = { name = "Qydyralin" culture = kazakh }
 2040123 = { name = "Böribaiuly" culture = kazakh }
 2040124 = { name = "Merekeuly" culture = kazakh }
@@ -21402,7 +21469,20 @@ coat_of_arms = {
 2040142 = { name = "Orazalin" culture = kazakh }
 2040143 = { name = "Biqojauly" culture = kazakh }
 2040144 = { name = "Baitursynuly" culture = kazakh }
-2040145 = { name = "Derbisäli" culture = kazakh used_for_random = no }
+2040145 = { name = "Derbisäli" culture = kazakh used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 15
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2040146 = { name = "Kemel" culture = kazakh used_for_random = no }
 2040147 = { name = "Baisultanuly" culture = kazakh }
 2040148 = { name = "Äbilqaiyruly" culture = kazakh used_for_random = no 
@@ -21420,8 +21500,34 @@ coat_of_arms = {
 	}
 }
 2040149 = { name = "Nurkin" culture = kazakh used_for_random = no }
-2040150 = { name = "Sätbaev" culture = kazakh used_for_random = no }
-2040151 = { name = "Qarakesek" culture = kazakh used_for_random = no }
+2040150 = { name = "Sätbaev" culture = kazakh used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 7
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2040151 = { name = "Qarakesek" culture = kazakh used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 21
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2040152 = { name = "Kenesaryuly" culture = kazakh used_for_random = no 
 	coat_of_arms = {
 		religion = nondescript_muslim
@@ -21466,6 +21572,7 @@ coat_of_arms = {
 2040167 = { name = "Qoñyratbaiuly" culture = kazakh }
 2040168 = { name = "Baidildin" culture = kazakh }
 2040169 = { name = "Bökeihan" culture = kazakh }
+2040170 = { name = "Qanapiianov" culture = kazakh }
 
 2041001 = { name = "Kürräýew" culture = turkmen }
 2041002 = { name = "Gapurow" culture = turkmen }
@@ -26454,7 +26561,20 @@ coat_of_arms = {
 2071017 = { name = "Manaschy" culture = kyrgyz }
 2071018 = { name = "Japyy" culture = kyrgyz }
 2071019 = { name = "Fuytqo" culture = kyrgyz }
-2071020 = { name = "Sher-Niyaz" culture = kyrgyz }
+2071020 = { name = "Sher-Niyaz" culture = kyrgyz used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 16
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2071021 = { name = "Jaqypbek" culture = kyrgyz }
 2071022 = { name = "Janghazy" culture = kyrgyz }
 2071023 = { name = "Jarqynbay" culture = kyrgyz }
@@ -26518,7 +26638,20 @@ coat_of_arms = {
 2071081 = { name = "Daanyshman" culture = kyrgyz }
 2071082 = { name = "Chyngghyz" culture = kyrgyz used_for_random = no }
 2071083 = { name = "Makhan" culture = kyrgyz }
-2071084 = { name = "Datqa" culture = kyrgyz }
+2071084 = { name = "Datqa" culture = kyrgyz used_for_random = no 
+	coat_of_arms = {
+		religion = pagan
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 1
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2071085 = { name = "Ayti" culture = kyrgyz }
 2071086 = { name = "Qorghonbay" culture = kyrgyz }
 2071087 = { name = "Jusupaqmat" culture = kyrgyz }
@@ -27602,7 +27735,20 @@ coat_of_arms = {
 2080044 = { name = "Iman" culture = uighur }
 2080045 = { name = "Ismail" culture = uighur }
 2080046 = { name = "Kül" culture = uighur }
-2080047 = { name = "Mehmet" culture = uighur }
+2080047 = { name = "Mehmet" culture = uighur used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 19
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2080048 = { name = "Yalkun" culture = uighur }
 2080049 = { name = "Muhiti" culture = uighur }
 2080050 = { name = "Xaliq" culture = uighur }
@@ -27651,7 +27797,20 @@ coat_of_arms = {
 	}
 	used_for_random = no
 }
-2080081 = { name = "Abbas" culture = uighur }
+2080081 = { name = "Abbas" culture = uighur used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 17
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2080082 = {
 	name = "Dashik" 
 	culture = uighur
@@ -27675,8 +27834,34 @@ coat_of_arms = {
 2080086 = { name = "Tiliwaldi" culture = uighur }
 2080087 = { name = "Obul" culture = uighur }
 2080088 = { name = "Muti'i" culture = uighur }
-2080089 = { name = "Khoja" culture = uighur }
-2080090 = { name = "Tekin" culture = uighur }
+2080089 = { name = "Khoja" culture = uighur used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 18
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2080090 = { name = "Tekin" culture = uighur used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 20
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2080091 = { name = "Shad" culture = uighur }
 
 2081000 = { name = "Temirezlani" culture = karachay }
@@ -27845,7 +28030,20 @@ coat_of_arms = {
 2102109 = { name = "Kögltin" culture = kalmyk }
 2102110 = { name = "Tepkin" culture = kalmyk }
 2102111 = { name = "Badmacin" culture = kalmyk }
-2102112 = { name = "Kirsen" culture = kalmyk }
+2102112 = { name = "Kirsen" culture = kalmyk used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 8
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 2083000 = { name = "Arwi" culture = soussi }
 2083001 = { name = "Igherm" culture = soussi }
@@ -32857,7 +33055,20 @@ coat_of_arms = {
 2122121 = { name = "Sheujiev" culture = nogai }
 2122122 = { name = "Shutukov" culture = nogai }
 2122123 = { name = "Ebzeev" culture = nogai }
-2122124 = { name = "Batyrgaziev" culture = nogai }
+2122124 = { name = "Batyrgaziev" culture = nogai used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 23
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 2123000 = { name = "Saidi" culture = algerian 
 	coat_of_arms = { 
@@ -43666,7 +43877,20 @@ coat_of_arms = {
 
 3103000 = { name = "Khangsarpa" culture = sikkimese }
 
-3104000 = { name = "Wangchuck" culture = ngalop }
+3104000 = { name = "Wangchuck" culture = ngalop used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 6
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 3105000 = { name = "Tshering" culture = sharchop }
 
@@ -44189,9 +44413,34 @@ coat_of_arms = {
 	}
 }
 
-7500000 = { name = "Dalunpa" culture = amdowa }
-7500001 = { name = "Dzachukapu" culture = amdowa }
-
+7500000 = { name = "Dalunpa" culture = amdowa used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 2
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7500001 = { name = "Dzachukapu" culture = amdowa used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 3
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 7501000 = { name = "Yüxüpo" culture = kham }
 7501001 = { name = "Dzatö'tse" culture = kham }
 7501002 = { name = "Pelyültse" culture = kham }
@@ -44202,12 +44451,38 @@ coat_of_arms = {
 7502001 = { name = "Fangpa" culture = changpa }
 7502002 = { name = "Dzonpo" culture = changpa }
 
-7503000 = { name = "Kharchen" culture = utsang }
+7503000 = { name = "Kharchen" culture = utsang used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 5
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 7503001 = { name = "Tulku" culture = utsang }
 7503002 = { name = "Nagartse" culture = utsang }
 7503003 = { name = "Tsongtse" culture = utsang }
 7503004 = { name = "Ringtse" culture = utsang }
-7503005 = { name = "Löntsen" culture = utsang }
+7503005 = { name = "Löntsen" culture = utsang used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 4
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 7503006 = { name = "Burangpo" culture = utsang }
 7503007 = { name = "Yarlung" culture = utsang }
 7503008 = { name = "Tsen" culture = utsang }

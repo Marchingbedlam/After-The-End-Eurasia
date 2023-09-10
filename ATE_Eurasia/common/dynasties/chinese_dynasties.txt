@@ -439,7 +439,20 @@
 	used_for_random = no
 }
 8001027 = { name = "Liugiya" culture = beifanghua religion = ruist }
-8001028 = { name = "Bufang" culture = beifanghua religion = ruist }
+8001028 = { name = "Bufang" culture = beifanghua used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 1
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 8001029 = { name = "Ying" culture = beifanghua religion = ruist }
 
 #################################
