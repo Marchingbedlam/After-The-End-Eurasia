@@ -25,56 +25,6 @@ on_startup = {
 		HFP.24120 #Setup Princely Elector Titles.
 		HFP.11051 # Hidden event to give commanders (who do not have it already) the commander bonus
 		LT.32000 # Adding the historical flag to wonders.
-		texas.75
-		gaian.800 #Both of these are Gaian Court-Chap and Stewardship events
-		gaian.801
-		
-		ate_landmarks.0 # Landmark event
-		okla_landmarks.0
-		misc.5 #Startup event
-		flavor.30 #Batman
-		flavor.40 #Scooby-Doo
-		misc.10 #Checksum Check
-		#islamate.37 #Adds modifier to Detroit
-		#cetic.303 #Sets global variable Imperial Authority for Cali Emperor
-		#cetic.500 #Sets variable for bureaucratic level
-		#cetic.501 #Sets variable for global bureaucratic level
-		#ceticreform.5 #Gives Cetic ways to Cetic characters who don't have one
-		#canada.5 #Gives Anglican branch traits to Anglicans who don't have one
-		#patria.44 # Bayardo story chain
-		
-		#col.50 #Player colonization event (Russia)
-		#col.55 #Player Colonization Event (Japan)
-		#col.59 #Player Colonization Event (Moroccan)
-		#wayne.23 #ok
-		#islamate.77 #Player Viceroy
-		#fallingstar.13 #Player Renovator
-	
-		holyorder.25
-		
-		playerbrit.1 #Player colonization event (Britain)
-		consumer.20 #Player Consumerist Uprising
-		
-		machete.4 #sets up gender laws
-		
-		AMLT.2
-		
-		patria.40
-		patria.41
-		machete.40
-		mesoamerica.700
-		
-		HFATE.20372
-		HFATE.20373
-		HFATE.20374
-		
-		gaian.10
-		
-		texas.1
-		NC.5000
-		
-		
-		ORFmaint.11
 	}
 }
 
@@ -113,19 +63,6 @@ on_yearly_pulse = {
 		HF.49460 # Reconquista Adventurer
 		HF.49470 # Reconquista flavor tombola
 		HFP.24001 # Elder has too much to live for.
-		
-		ceticreform.5 #Gives Cetic ways to Cetic characters who don't have one
-		canada.5 #Gives Anglican branch traits to Anglicans who don't have one
-		prez.2 # Runs elections if Presidency usurped. So this is why I needed to make that Presidency Restored decision...
-		ancrel.1000 #Celtic King is maimed
-		cetic.408 #Yearly Imperial Authority Change
-		cetic.544 #Yearly Bureaucracy Change
-		
-		ruin.1
-		
-		holyorder.25
-		
-		americanist_crusade.2
 		
 	}
 	
@@ -605,13 +542,6 @@ on_yearly_pulse = {
 		
 		5000 = 0 # Chance of no yearly event
 		
-		#After the End Events
-		400 = salvage.120	# randomly find good salvage, or an event related to owned salvage
-		
-		#Celtic Flavor
-		100 = ancrel.1260 # fennid arrested by marshal, catholics only (why?)
-		100 = ancrel.1254 # fian visiting your court
-		
 		friends_rivals_adults = {
 			delay = 36
 			20000 = 0
@@ -1005,7 +935,6 @@ on_five_year_pulse = {
 		HF.15100 # Rain/Drought status changes in most of Africa
 		
 		SUFI.10030 # Have AI characters join sufi societies
-		cetic.546 #Average Bureaucracy Calculation
 	}
 	
 	random_events = {
@@ -1163,8 +1092,6 @@ on_decade_pulse = {
 
 		forged_bloodlines = {
 			15 = HF.24200 # Chance to claim MacArthur Bloodline.
-			15 = HFATE.24200 # Chance to claim Tecumseh's Bloodline.
-			15 = HFATE.24220 # Chance to claim Che's Bloodline.
 			#15 = HF.24220 # Chance to claim Ashoka's Bloodline.
 			7900 = 0
 		}
@@ -1192,7 +1119,6 @@ on_decade_pulse = {
 # For characters older than AGE_CHILDHOOD_PULSE but not an adult as defined by ADULT_AGE_FEMALE and ADULT_AGE_MALE
 on_yearly_childhood_pulse = {
 	events = {
-		ancrel.0184 # Celtic child begins education (14 years old)
 		HFP.20057 # Hollow Child nickname.
 		HF.302 # Child of Destiny gets extra stats
 		
@@ -1275,8 +1201,6 @@ on_yearly_childhood_pulse = {
 		50 = 1935
 
 		1500 = 0
-		
-		5000 = ancrel.0272 #celtic reincarnation
 		
 		friends_rivals = { #Friends rival flavour events moved from MTTH to childhood pulse.
 			100 = 100005
@@ -1682,17 +1606,6 @@ on_birth = {
 		HF.23019 # Zodiac signs assigned on Hellenic babies.
 		HFP.20068 # Cleanup for children born after father's death.
 		HF.23750 # Stable Doctrine gives chance to shield newborn heir from harm.
-		
-		#AtE Events
-		atom.100	# atomicist child born, blessing of atom events
-		ancrel.0215 # Child Perceived to be a Changeling
-		gaian.16 #General of Gaia heir is acknowledged
-		ceticreform.7 #Son is Given Cetic Way
-		ceticreform.8 #Daughter is Given Cetic Way
-		orientalist.4 # Ya-Shamal thing
-		
-		canada.37
-		flavor.63
 	}
 	random_events = {
 		200 = 0
@@ -1700,9 +1613,6 @@ on_birth = {
 		50 = RIP.29600 # Firstborn/first son reaction 
 		5 = RoI.10000 # Reincarnation?
 		1 = RIP.29805 # Reincarnation for non west_african
-		
-		#AtE Events
-		1 = ancrel.0270 # child is reincarnation? (celtic)
 		
 		child_of_destiny_chance = { # Chance of a newborn child becoming a Child of Destiny
 			15000 = 0
@@ -1751,25 +1661,7 @@ on_adulthood = {
 
 		ZE.40000 # Extra clean up of childhood traits, for incapable etc characters
 		
-		#AtE Events
-		sacredheart.1 # choose patron saint
-		patria.1 	# choose patron saint
-		cetic.19	# choose cetic path
-		occult.2	# choose lore school
-		occult.3	# choose lore school (reformed)
-		apostolic.1	# choose patron saint
-		ancrel.0241	# Changeling child's true nature asserts itself
-		flavor.32 # Becomes Batman
-		canada.4 # Select Anglican trait
-		native.39 # Select Peyotist trait
-		#islamate.86 # Select Traditionalist trait
-		#islamate.87 # Select Qingzhen trait
-		#islamate.88 # Select Trans trait
-		pacific.25 # Select Shinto trait
-		
 		SUFI.4302 # Monastic Order education bonus purity effect
-		
-		mesoamerica.710
 	}
 }
 
@@ -1821,11 +1713,6 @@ on_crusade_creation = {
  		326 # Pagan Holy War against other Pagans
 		327 # Mormon Expeditions
 		328 # Jewish Great Holy War
-		consumer.4 # Consumerist Marketing Campaigns
-		atom.200 # Atomicist First Strikes
-		rustcultist.2 # Rust Cultist Industrial Action
-		americanist_crusade.1 # Americanist Liberation War
-		patria.54 # Patria Grande
 
 		CM.10015 # Chronicle entry
  	}
@@ -2016,42 +1903,10 @@ on_death = {
 		HF.50107 # Clean up for Warrior Lodge war aid
 		HFP.24019 # Elder has been killed, other Elders hate the killer.
 		LT.20501 # Sucessor must decide on Burial if it has wonders with burial_ground flag
-		#cetic.104 #Imperial Era Names
-		cetic.323 #Governator dies with no heir
-		cetic.326 #Governator heir gets Governator
-		cetic.328 #Governator heir dies
 		
-		faust.60		# notify next of kin about faustian contest
 		overseas.53		# inherit opinion used to return adventurer to court
-		sacredheart.100	# sacred heart: santa muerte death event
-		cetic.10		# pass on imperial figurehead trait
-		canada.3 		# Ursuline succession
-		prez.1 			# President dies
-		prez.302 		# President in the Empire
-		prez.8 			# Candidate dies
 		misc.1			# Sister-Militant
 		misc.2			# Nancy Harts
-		misc.11			# Labrys
-		misc.7			# Make Ursuline priests female
-		misc.17			# Make Gaian priests female
-		misc.8			# First Lady
-		misc.9			# High Church and Strangite
-		consumer.5		# death of the Profit Prophet
-		nazarene.2		# fix dumb bug
-		
-		#islamate.32		# second chance
-		
-		#islamate.54		# end of revivalist event chain
-		
-		cetic.539		#Succession penalty bureaucracy
-		
-		cetic.540
-		
-		misc.13
-		
-		orfelection.100 #reigning senator dies mid-election
-		orfelection.102 #reigning senator dies mid-election
-		#ORFmaint.12
 	}
 	random_events = {
 		1 = RIP.29800 #reincarnation investigation
@@ -2759,7 +2614,6 @@ on_rebel_revolt = {
 		TOG.1000 	# Peasant rebels rise up
 		HL.2010		# Minor Clan rebels reinforced
 		HL.2000		# Minor Clan rebels rise up
-		# cetic.315	# Imperial Authority loss for rebellion
 	}
 }
 
@@ -2811,10 +2665,6 @@ on_forced_consort = {
 on_reform_religion = {
 	events = {
 		670
-		
-		#AtE Events
-		ancrel.1186
-		machete.1
 	}
 }
 
@@ -2919,37 +2769,16 @@ on_new_holder = {
 		HF.23779 #Setting up next god-emperor.
 		#HFP.19100 #Make sure the Varangian guard handles its inheritance if not male-lead
 		
-		#AtE Events
-		ancrel.0256 # Pendragon nick
-		
-		misc.6 # Make Ursulines female
-		misc.16 # Make Gaians female
-		
-		prez.105 # In case President loses all titles at once
-		
-		#islamate.34 # When you conquer a Muslim community
-
-		#cetic.503 #Bureaucracy modifier for heirs
-		
-		#cetic.504 #Removes title flags for bureaucracy
-		
-		#col.1 # Delete Colonizer Titles
-		
 		#preserve range
 		ORFmaint.21
-		
-		mesoamerica.400 #Granting of new bloodline
 
 		flavor.70 #Granting of new bloodline
-
-		gaian.21 #non-gaian takes a duchy in gaian core land
 	}
 	random_events = {
-		delayed_hagia_sophia_conversion = {
-			delay = 14
-			100 = LT.20900
-			100 = AMLT.3
-		}
+		#delayed_hagia_sophia_conversion = {
+		#	delay = 14
+		#	100 = LT.20900
+		#}
 	}
 }
 
@@ -2973,23 +2802,13 @@ on_new_holder_inheritance = {
 
 		HF.49205 # Reconquista Beneficiary
 		HF.23779 #Setting up next god-emperor.
-		
-		misc.6 # Make Ursuline priests female
-		misc.16 # Make Gaians female
-		
-		mesoamerica.400 #Granting of new bloodline
-		
-		#col.1 # Delete Colonizer Titles
-		
-		AMLT.1
 		ORFmaint.21
 	}
 	random_events = {
-		delayed_hagia_sophia_conversion = {
-			delay = 14
-			100 = LT.20900
-			100 = AMLT.3
-		}
+		#delayed_hagia_sophia_conversion = {
+		#	delay = 14
+		#	100 = LT.20900
+		#}
 	}
 }
 
@@ -3017,22 +2836,12 @@ on_new_holder_usurpation = {
 
 		HF.49205 # Reconquista Beneficiary
 		HF.20417 # Clear uncrowned modifier.
-		
-		misc.6 # Make Ursuline priests female
-		misc.16 # Make Gaians female
-		
-		mesoamerica.400 #Granting of new bloodline
-		
-		#col.1 # Delete Colonizer Titles
-		
-		AMLT.1
 	}
 	random_events = {
-		delayed_hagia_sophia_conversion = {
-			delay = 14
-			100 = LT.20900
-			100 = AMLT.3
-		}
+		#delayed_hagia_sophia_conversion = {
+		#	delay = 14
+		#	100 = LT.20900
+		#}
 	}
 }
 
@@ -3040,7 +2849,6 @@ on_unlanded = {
 	events = {
 		HL.130 #Landless nomad clean-up.
 		HFP.44009 # Teutonic State reverts to Teutonic Order
-		# col.1 # Delete Colonizer Titles
 	}
 }
 
@@ -3164,7 +2972,6 @@ on_war_ended_victory = {
 		HF.10515 # Complete Wage War mission, if you went about it some non-conventional way
 		HFP.23025 # Remove stolen spouse from concubinage.
 		HF.50100 # Warrior Lodge War Aid conclusion 
-		cetic.312 #Imperial Authority boost for winning
 	}
 }
 
@@ -3194,7 +3001,6 @@ on_war_ended_defeat = {
 		HF.10517 # Completes Wage War mission for Warrior Lodge members
 		HFP.23026 # Remove stolen spouse from concubinage.
 		HF.50102 # Warrior Lodge War Aid conclusion 
-		#cetic.306 #Imperial Authority loss for losing
 	}
 }
 
@@ -3782,7 +3588,6 @@ on_unit_entering_province = {
 		8305
 		HFP.42320
 		HF.49121 # Northern Crusade flavor
-		americanist_crusade.7
 	}
 }
 
