@@ -795,9 +795,9 @@
 	2694.9.12={death=yes}
 }
 1993221={
-	name="Yegorovich"
-	dynasty=2923083 #Makovsky
-	culture=chornomorsky
+	name="Dmytro"
+	dynasty=2922120 #Holovko
+	culture=ukrainian
 	religion=kozachina
 	trait=tough_soldier
 	trait=brave
@@ -808,8 +808,8 @@
 	2694.9.12={death=yes}
 }
 1993222={
-	name="Yegorovich"
-	dynasty=2923083 #Makovsky
+	name="Gennadiy"
+	dynasty=1853151 #Makovsky
 	culture=chornomorsky
 	religion=orthodox
 	trait=martial_cleric
@@ -822,7 +822,7 @@
 }
 1993223={
 	name="Zinoviy"
-	dynasty=2923083 #Pustozyorov
+	dynasty=1853024 #Pustozyorov
 	culture=chornomorsky
 	religion=kozachina
 	trait=tough_soldier
@@ -834,8 +834,8 @@
 	2646.9.14={birth=yes}
 	2694.9.12={death=yes}
 }
-1993224={ #Brothers
-	name="Sacha"
+1993224={
+	name="Igor"
 	dynasty=1854008 #Miroshnichenko
 	culture=donskoy
 	religion=kozachina
@@ -849,17 +849,17 @@
 	2646.9.14={birth=yes}
 	2694.9.12={death=yes}
 }
-1993225={ #Brothers
+1993225={
 	name="Igor"
 	dynasty=1854008 #Miroshnichenko
 	culture=donskoy
 	religion=proletcult
 	trait=fortune_builder
 	trait=quick
-	trait=envious
-	trait=greedy
-	trait=robust
 	trait=wroth
+	trait=charitable
+	trait=robust
+	trait=patient
 	trait=groomed
 	2646.9.14={birth=yes}
 	2694.9.12={death=yes}
@@ -943,28 +943,12 @@
 	dynasty=2922101
 	culture=ukrainian
 	religion=kozachina
-    trait=brilliant_strategist
+	trait=brilliant_strategist
 	trait=duelist
-    trait=zealous
-    trait=just
-    trait=cruel
+	trait=zealous
+	trait=just
+	trait=cruel
 	trait=brave
 	2642.1.3={birth=yes}
-	2680.1.1={death=yes}
-}
-1854000={
-	name="Aleksándr"
-	dynasty=1854091 #Rymniksky
-	culture=donskoy
-	religion=kozachina
-	trait=skilled_tactician
-	trait=strong
-	trait=groomed
-	trait=strategist
-	trait=gluttonous
-	trait=brave
-	trait=stubborn
-	trait=zealous
-	2622.1.3={birth=yes}
 	2680.1.1={death=yes}
 }
