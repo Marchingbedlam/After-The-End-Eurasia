@@ -8,7 +8,9 @@ EVTOPTA_synod_1;Let this be a Synod for all Protestants!;;;;;;;;;;;;;x
 EVTOPTB_synod_1;Let us gather an ecumenical council for all of Christendom!;;;;;;;;;;;;;x
 
 EVTDESC_synod_2;With the plan set in motion, for any decent Synod to occur, knowing who to invite, and how to prepare your capital for the event is imperative. Setting up housing for the clergy and where the assembly would be set up and prepared for.;;;;;;;;;;;;;x
+EVTOPTA_synod_2;Come fellow brethren of faith it's time to discuss.;;;;;;;;;;;;;x
 EVTDESC_synod_21;As per tradition set out by Visvaldis, the First Emperor of the Baltic, and of the Lutherans, it has been customary to provide a grand gesture to the fellow followers of Christ, since they come from so far afield, from across Europe, and on occasion, even beyond the continent. Deciding on how much to provide for the clergy of all Christendom is imperative.;;;;;;;;;;;;;x
+EVTOPTA_synod_21;Come one, Come all in the name of Christ!;;;;;;;;;;;;;x
 
 EVTTITLE_synod_5;The Synod Convenes;;;;;;;;;;;;;x
 EVTDESC_synod_5;The people of the Protestant tradition have brought themselves upon the capital, from the Lutherans of Germany, Scandinavia and the Baltic, to the Calvinists from the Benelux, Scotland and Switzerland. Chatter fills the halls as everyone waits for you. As for yourself, as the head of this Synod, you have the decision upon what the Protestants must focus on.;;;;;;;;;;;;;x
@@ -19,6 +21,75 @@ EVTOPTB_synod_5_TT;Continuing our path of being a united front against all who d
 EVTOPTC_synod_5;A Wise and Studious Path.;;;;;;;;;;;;;x
 EVTOPTC_synod_5_TT;We must understand as to why our misguided brethren left the flock, and if there reason behind it.;;;;;;;;;;;;;x
 
+EVTDESC_synod_7;One brother from the crowd gathered raised an objection in the course of discussion instead proposing their own suggestion to the qurom, while some appear to agree, you stand up ready to debate your wayward companion that your topic is of greater importance.;;;;;;;;;;;;;x
+EVTOPTA_synod_7;Debate Them!;;;;;;;;;;;;;x
+EVTOPTA_synod_7_TT;The course of faith seems to dictate...;;;;;;;;;;;;;x
+EVTOPTA_synod_7_SUCCESS_TT;that it appear's they have rescinded their objection.;;;;;;;;;;;;;x
+EVTOPTA_synod_7_FAILURE_TT;that it appear you weren't persuasive enough.;;;;;;;;;;;;;x
+EVTOPTB_synod_7;Fine we will go with your topic instead...;;;;;;;;;;;;;x
+EVTOPTC_synod_7;I object to this, please refrain from doing this again.;;;;;;;;;;;;;x
+
+EVTDESC_synod_8;They agree to your proposed debate both you and your opposite begin to clarify their stances while the rest of the audience stares intentively before the panel of judges have agreed on the outcome of the the debate;;;;;;;;;;;;;x
+EVTOPTA_synod_8;(I hope I have won...);;;;;;;;;;;;;x
+
+EVTDESC_synod_8;They agree to your proposed debate both you and your opposite begin to clarify their stances while the rest of the audience stares intentively before the panel of judges have agreed on the outcome of the the debate;;;;;;;;;;;;;x
+EVTOPTA_synod_8;(I hope I have won...);;;;;;;;;;;;;x
+
+EVTDESC_synod_9;The judges clear their voice and declare that you had the stronger points and while your opponent seemed upset they too eventually come around to your position.;;;;;;;;;;;;;x
+EVTOPTA_synod_9;A Great Debate!;;;;;;;;;;;;;x
+
+EVTDESC_synod_10;The judges clear their voice and declare that your opponent had the stronger points and while you were upset they too eventually come around to your position.;;;;;;;;;;;;;x
+EVTOPTA_synod_10;Fine, let us continue with this topic...;;;;;;;;;;;;;x
+
+EVTDESC_synod_11;As you and your brethren discuss the fine lines of faith and the practical application of ideas to all whom come to organize the faith. You can't help but think that this conversation could be more ambitious...;;;;;;;;;;;;;x
+EVTOPTA_synod_11;(This is Fine...);;;;;;;;;;;;;x
+EVTOPTB_synod_11;(Perhaps its time to take action...);;;;;;;;;;;;;x
+
+EVTDESC_synod_12;A particularly nasty debate has arisen between two brethren over certain lines of faith that both feel incredibly strong about. You could try to meddle in this arguement with a chance to resolve it or drag you into their spat.;;;;;;;;;;;;;x
+EVTOPTA_synod_12;Come now this is no time to create divides...;;;;;;;;;;;;;x
+EVTOPTA_synod_12_SUCCESS_TT;This has seemed to work....;;;;;;;;;;;;;x
+EVTOPTA_synod_12_FAIL_TT;I think I made it worse....;;;;;;;;;;;;;x
+EVTOPTB_synod_12;I agree with you, [GetFirstNameName.arguer_1].;;;;;;;;;;;;;x
+EVTOPTB_synod_12_TT;[GetFirstNameName.arguer_2] seems displeased;;;;;;;;;;;;;x
+EVTOPTC_synod_12;I agree with you, [GetFirstNameName.arguer_2].;;;;;;;;;;;;;x
+EVTOPTC_synod_12_TT;[GetFirstNameName.arguer_1] seems displeased;;;;;;;;;;;;;x
+
+EVTDESC_synod_13;You expertly maneuvered the disagreement into a territory that both arguers appear to be have common ground and both see your proposal as a reasonable.;;;;;;;;;;;;;x
+EVTOPTA_synod_13;Faith and Reason have prevailed!;;;;;;;;;;;;;x
+
+EVTDESC_synod_14;You were not able to maneuver the disagreement into a territory that both arguers could agree on, instead both look at you disdainfully before continuing to bicker amongst each other.;;;;;;;;;;;;;x
+EVTOPTA_synod_14;Oh lord give me strength!;;;;;;;;;;;;;x
+
+EVTDESC_synod_16;As you discuss a particular point was raised that had one of the debaters enthuaistically agree with you. Both of you grow closer together in your shared belief...;;;;;;;;;;;;;x
+EVTOPTA_synod_16;A brethren in faith indeed!;;;;;;;;;;;;;x
+
+EVTDESC_synod_17;You seemingly hit your stride as the synod falls silent before the crowd quietly nodded in unison "My [GetLordLady.ROOT], this is a great point!" you precede to spend a great deal of time explaining this point with greater excitement then before.;;;;;;;;;;;;;x
+EVTOPTA_synod_17;This could be the answer we need!;;;;;;;;;;;;;x
+
+EVTDESC_synod_19_A;With the Discussions closing all are in agreement that this Synod was a great success and with your effort many feel positive about the growing bonds of faith established in this meeting.;;;;;;;;;;;;;x
+EVTOPTA_synod_19;A Great Day for the Faith!;;;;;;;;;;;;;x
+EVTDESC_synod_19_B;With the Discussions closing all are in agreement that this Synod was a great success and with your effort many feel positive about the growing relations and trade bonds established during this meeting.;;;;;;;;;;;;;x
+EVTOPTB_synod_19;A Great Day for our worldly bonds!;;;;;;;;;;;;;x
+EVTDESC_synod_19_C;With the Discussions closing all are in agreement that this Synod was a great success and with your effort many feel positive about the finer details of Faith being adequately addressed during this meeting.;;;;;;;;;;;;;x
+EVTOPTC_synod_19;A Great Day for reason!;;;;;;;;;;;;;x
+EVTDESC_synod_19_D;With the Discussions closing all are in agreement that this Synod was a success and with your effort most feel positive about the growing bonds of faith established in this meeting.;;;;;;;;;;;;;x
+EVTOPTD_synod_19;A Good Session indeed!;;;;;;;;;;;;;x
+EVTDESC_synod_19_E;With the Discussions closing all are in agreement that this Synod was a success and with your effort most feel positive about the growing relations and trade bonds established during this meeting.;;;;;;;;;;;;;x
+EVTOPTE_synod_19;A Good Day for our worldly bonds!;;;;;;;;;;;;;x
+EVTDESC_synod_19_F;With the Discussions closing all are in agreement that this Synod was a success and with your effort most feel positive about the finer details of Faith being adequately addressed during this meeting.;;;;;;;;;;;;;x
+EVTOPTF_synod_19;A good day for reason!;;;;;;;;;;;;;x
+EVTDESC_synod_19_G;With the Discussions closing all are in agreement that this Synod was a good means to address the points of faith constructively and hope this could establish a growing bonds of faith established in this meeting.;;;;;;;;;;;;;x
+EVTOPTG_synod_19;Hope to see you guys again!;;;;;;;;;;;;;x
+EVTDESC_synod_19_H;With the Discussions closing all are in agreement that this Synod was a good means to address growing relations and trade bonds established during this meeting.;;;;;;;;;;;;;x
+EVTOPTH_synod_19;Hope to see you in the ports!;;;;;;;;;;;;;x
+EVTDESC_synod_19_I;With the Discussions closing all are in agreement that this Synod was a good means to address of the complex disagreements on Faiththat were raised during this meeting.;;;;;;;;;;;;;x
+EVTOPTI_synod_19;Hopefully a good result indeed!;;;;;;;;;;;;;x
+
+EVTDESC_synod_20_A;The Synod continued at a steady pace but it has become clear that the many that came that at least for now, the divide is just too large to cross and quietly remove themselves from the premise some wishing you their condolences.;;;;;;;;;;;;;x
+EVTOPTA_synod_20;Well maybe better luck next time?;;;;;;;;;;;;;x
+EVTDESC_synod_20_B;The Synod continued at a shaky pace and it has become all but clear that this was an abject failure as the attendees all leave having found no common ground and in fact more upset about the current state of the faith then when they first came...;;;;;;;;;;;;;x
+EVTOPTB_synod_20;Ugh, my head is pounding.;;;;;;;;;;;;;x
+
 EVTTITLE_synod_24;The Council Gathers;;;;;;;;;;;;;x
 EVTDESC_synod_24;The clergy of Christ have gathered, and the city and more importantly, the great hall is filled with chatter from all sides, discussing local and interfaith issues, and happenings in their parts of the world. As the Emperor, and the master of this great meeting, you have the supreme authourity to decide on a topic that should be discussed.;;;;;;;;;;;;;x
 EVTOPTA_synod_24;A Bold and Ambitious Path.;;;;;;;;;;;;;x
@@ -28,6 +99,74 @@ EVTOPTB_synod_24_TT;Without dialogue, we are bound to turn our weapons on each o
 EVTOPTC_synod_24;A Wise and Studious Path.;;;;;;;;;;;;;x
 EVTOPTC_synod_24_TT;The current age has brought the discussion and questioning of doctrine into vogue. Perhaps it is time we listen, instead of persecute.;;;;;;;;;;;;;x
 
+EVTDESC_synod_26;One member of the delegation has raised an objection in the course of discussion instead proposing their own suggestion to the qurom, while some appear to agree, you stand up ready to debate your wayward companion that your topic is of greater importance.;;;;;;;;;;;;;x
+EVTOPTA_synod_26;Debate Them!;;;;;;;;;;;;;x
+EVTOPTA_synod_26_TT;The course of faith seems to dictate...;;;;;;;;;;;;;x
+EVTOPTA_synod_26_SUCCESS_TT;that it appear's they have rescinded their objection.;;;;;;;;;;;;;x
+EVTOPTA_synod_26_FAILURE_TT;that it appear you weren't persuasive enough.;;;;;;;;;;;;;x
+EVTOPTB_synod_26;Fine we will go with your topic instead...;;;;;;;;;;;;;x
+EVTOPTC_synod_26;I object to this, please refrain from doing this again.;;;;;;;;;;;;;x
+
+EVTDESC_synod_27;They agree to your proposed debate both you and your opposite begin to clarify their stances while the rest of the audience stares intentively before the panel of judges have agreed on the outcome of the the debate;;;;;;;;;;;;;x
+EVTOPTA_synod_27;(I hope I have won...);;;;;;;;;;;;;x
+
+EVTDESC_synod_28;The judges clear their voice and declare that you had the stronger points and while your opponent seemed upset they too eventually come around to your position.;;;;;;;;;;;;;x
+EVTOPTA_synod_28;A Great Debate!;;;;;;;;;;;;;x
+
+EVTDESC_synod_29;The judges clear their voice and declare that your opponent had the stronger points and while you were upset they too eventually come around to your position.;;;;;;;;;;;;;x
+EVTOPTA_synod_29;Fine, let us continue with this topic...;;;;;;;;;;;;;x
+
+EVTDESC_synod_30;As the delegates argue and discuss the many divides of faith and ways to mend the schisming of long gone days. You can't help but think that this conversation could be more ambitious...;;;;;;;;;;;;;x
+EVTOPTA_synod_30;(This is Fine...);;;;;;;;;;;;;x
+EVTOPTB_synod_30;(Perhaps its time to take action...);;;;;;;;;;;;;x
+
+EVTDESC_synod_31;A particularly nasty debate has arisen between two delegates over certain lines of faith that both feel incredibly strong about. You could try to meddle in this arguement with a chance to resolve it or drag you into their spat.;;;;;;;;;;;;;x
+EVTOPTA_synod_31;Come now this is no time to create divides...;;;;;;;;;;;;;x
+EVTOPTA_synod_31_SUCCESS_TT;This has seemed to work....;;;;;;;;;;;;;x
+EVTOPTA_synod_31_FAIL_TT;I think I made it worse....;;;;;;;;;;;;;x
+EVTOPTB_synod_31;I agree with you, [GetFirstNameName.arguer_1].;;;;;;;;;;;;;x
+EVTOPTB_synod_31_TT;[GetFirstNameName.arguer_2] seems displeased;;;;;;;;;;;;;x
+EVTOPTC_synod_31;I agree with you, [GetFirstNameName.arguer_2].;;;;;;;;;;;;;x
+EVTOPTC_synod_31_TT;[GetFirstNameName.arguer_1] seems displeased;;;;;;;;;;;;;x
+
+EVTDESC_synod_32;You expertly maneuvered the disagreement into a territory that both arguers appear to be have common ground and both see your proposal as a reasonable.;;;;;;;;;;;;;x
+EVTOPTA_synod_32;Faith and Reason have prevailed!;;;;;;;;;;;;;x
+
+EVTDESC_synod_33;You were not able to maneuver the disagreement into a territory that both arguers could agree on, instead both look at you disdainfully before continuing to bicker amongst each other.;;;;;;;;;;;;;x
+EVTOPTA_synod_33;Oh lord give me strength!;;;;;;;;;;;;;x
+
+EVTDESC_synod_35;As you discuss a particular point was raised that had one of the debaters enthuaistically agree with you. Both of you grow closer together in your shared belief...;;;;;;;;;;;;;x
+EVTOPTA_synod_35;A true one in faith indeed!;;;;;;;;;;;;;x
+
+EVTDESC_synod_36;You seemingly hit your stride as the delegations of the council falls silent before the crowd quietly nodded in unison "My [GetLordLady.ROOT], this is a great point!" you precede to spend a great deal of time explaining this point with greater excitement then before.;;;;;;;;;;;;;x
+EVTOPTA_synod_36;This could be the answer we need!;;;;;;;;;;;;;x
+
+EVTDESC_synod_38_A;With the Discussions closing all are in agreement that this Council was a great success and with your effort many feel positive about the growing bonds of faith established in this meeting.;;;;;;;;;;;;;x
+EVTOPTA_synod_38;A Great Day for the Faith!;;;;;;;;;;;;;x
+EVTDESC_synod_38_B;With the Discussions closing all are in agreement that this Council was a great success and with your effort many feel positive about the growing relations and trade bonds established during this meeting.;;;;;;;;;;;;;x
+EVTOPTB_synod_38;A Great Day for our worldly bonds!;;;;;;;;;;;;;x
+EVTDESC_synod_38_C;With the Discussions closing all are in agreement that this Council was a great success and with your effort many feel positive about the finer details of Faith being adequately addressed during this meeting.;;;;;;;;;;;;;x
+EVTOPTC_synod_38;A Great Day for reason!;;;;;;;;;;;;;x
+EVTDESC_synod_38_D;With the Discussions closing all are in agreement that this Council was a success and with your effort most feel positive about the growing bonds of faith established in this meeting.;;;;;;;;;;;;;x
+EVTOPTD_synod_38;A Good Session indeed!;;;;;;;;;;;;;x
+EVTDESC_synod_38_E;With the Discussions closing all are in agreement that this Council was a success and with your effort most feel positive about the growing relations and trade bonds established during this meeting.;;;;;;;;;;;;;x
+EVTOPTE_synod_38;A Good Day for our worldly bonds!;;;;;;;;;;;;;x
+EVTDESC_synod_38_F;With the Discussions closing all are in agreement that this Council was a success and with your effort most feel positive about the finer details of Faith being adequately addressed during this meeting.;;;;;;;;;;;;;x
+EVTOPTF_synod_38;A good day for reason!;;;;;;;;;;;;;x
+EVTDESC_synod_38_G;With the Discussions closing all are in agreement that this Council was a good means to address the points of faith constructively and hope this could establish a growing bonds of faith established in this meeting.;;;;;;;;;;;;;x
+EVTOPTG_synod_38;Hope to see you guys again!;;;;;;;;;;;;;x
+EVTDESC_synod_38_H;With the Discussions closing all are in agreement that this Council was a good means to address growing relations and trade bonds established during this meeting.;;;;;;;;;;;;;x
+EVTOPTH_synod_38;Hope to see you in the ports!;;;;;;;;;;;;;x
+EVTDESC_synod_38_I;With the Discussions closing all are in agreement that this Council was a good means to address of the complex disagreements on Faiththat were raised during this meeting.;;;;;;;;;;;;;x
+EVTOPTI_synod_38;Hopefully a good result indeed!;;;;;;;;;;;;;x
+
+EVTDESC_synod_39_A;The Council continued at a steady pace but it has become clear that the many that came that at least for now, the divide is just too large to cross and quietly remove themselves from the premise some wishing you their condolences.;;;;;;;;;;;;;x
+EVTOPTA_synod_39;Well maybe better luck next time?;;;;;;;;;;;;;x
+EVTDESC_synod_39_B;The Council continued at a shaky pace and it has become all but clear that this was an abject failure as the attendees all leave having found no common ground and in fact more upset about the current state of the faith then when they first came...;;;;;;;;;;;;;x
+EVTOPTB_synod_39;Ugh, my head is pounding.;;;;;;;;;;;;;x
+
+EVTDESC_synod_101;The Scandal in the conference has ended and everyone departs home.;;;;;;;;;;;;;x
+EVTOPTA_synod_101;Let us hope that doesn't happen again.;;;;;;;;;;;;;x
 
 #Holding Blot
 hold_blot;Hold a Great Bonfire;Tenir un grand blót ;Haltet ein Blót ab;;Celebrar una Gran Mancha;;;;;;;;;x

@@ -60,6 +60,7 @@ character_event = {
 				100 = {
 					trigger = { has_job_title = job_spiritual }
 					save_event_target_as = synod_guest_1
+					religion_group = ROOT
 				}
 			}
 		}
@@ -69,43 +70,39 @@ character_event = {
 			random_realm_lord = {
 				limit = {
 					ai = yes
+					religion_group = ROOT
 					NOT = { character = event_target:synod_guest_1 }
-					opinion = { who = ROOT value = 15 }
-					reverse_opinion = { who = ROOT value = 15 }
 				}
 				save_event_target_as = synod_guest_2
 			}
 		}
 		#Guest 3 and 4
-		hidden_effect = {
-			random_realm_lord = {
-						limit = {
-							ai = yes
-							NOR = {
-								character = event_target:synod_guest_1
-								character = event_target:synod_guest_2
-							}
-							opinion = { who = ROOT value = 15 }
-							reverse_opinion = { who = ROOT value = 15 }
-						}
-						save_event_target_as = synod_guest_3
+	hidden_effect = {
+		random_realm_lord = {
+				limit = {
+					ai = yes
+					religion_group = ROOT
+					NOR = {
+						character = event_target:synod_guest_1
+						character = event_target:synod_guest_2
 					}
-			random_realm_lord = {
-						limit = {
-							ai = yes
-							NOR = {
-								character = event_target:synod_guest_1
-								character = event_target:synod_guest_2
-								character = event_target:synod_guest_3
-							}
-							opinion = { who = ROOT value = 15 }
-							reverse_opinion = { who = ROOT value = 15 }
-						}
-						save_event_target_as = synod_guest_4
-					}
+				}
+				save_event_target_as = synod_guest_3
 			}
+		random_realm_lord = {
+			limit = {
+				ai = yes
+				religion_group = ROOT
+				NOR = {
+						character = event_target:synod_guest_1
+						character = event_target:synod_guest_2
+						character = event_target:synod_guest_3
+				}
+			}
+			save_event_target_as = synod_guest_4
 		}
 	}
+}
 
 	option = { 
 		name = EVTOPTA_synod_2
@@ -113,91 +110,10 @@ character_event = {
 		reverse_opinion = { who = event_target:synod_guest_1 modifier = opinion_grateful_invitation months = 3 }
 		reverse_opinion = { who = event_target:synod_guest_2 modifier = opinion_grateful_invitation months = 3 }
 		reverse_opinion = { who = event_target:synod_guest_3 modifier = opinion_grateful_invitation months = 3 }
-		if = {
-			limit = { NOT = { has_character_flag = disliked_synod_colleague } }
-			reverse_opinion = { who = event_target:synod_guest_4 modifier = opinion_grateful_invitation months = 3 }
-		}
+
 		hidden_effect = {
-			if = {
-				limit = { has_character_flag = disliked_synod_colleague }
-				event_target:synod_guest_3 = { character_event = { id = synod.3 days = 10 } }
-				clr_character_flag = disliked_synod_colleague
-				break = yes
-			}
 			narrative_event = { id = synod.5 days = 30 }
 		}
-	}
-
-#Ping to rival inviter
-character_event = {
-	id = synod.3
-	hide_window = yes
-	is_triggered_only = yes
-	immediate = { FROM = { letter_event = { id = synod.4 } } }
-}
-
-#Another guests wants rival to come
-letter_event = {
-	id = synod.4
-	desc = EVTDESC_synod_4
-	border = GFX_event_letter_frame_religion
-
-	is_triggered_only = yes
-
-	trigger = { has_character_flag = gathering_of_the_synod }
-	
-	#Diplomatic excuse
-	option = {
-		trigger = { diplomacy = 12 }
-		tooltip_info = diplomacy
-		name = EVTOPTD_synod_4
-		custom_tooltip = { text = EVTOPTD_synod_4_TT }
-
-		clear_event_target = synod_guest_4
-
-	}
-
-	#I guess they can come
- 	option = { 
-		name = EVTOPTA_synod_4
-		custom_tooltip = { text = EVTOPTA_synod_4_TT }
-
-		event_target:synod_guest_4 = {
-			set_character_flag = show_in_option
-			clr_character_flag = show_in_option
-		}
-
-		reverse_opinion = { who = FROM modifier = opinion_grateful years = 3 }
-	}
-
-	#I don't want them here
-	option = {
-		name = EVTOPTB_synod_4
-		custom_tooltip = { text = EVTOPTB_synod_4_TT }
-
-		clear_event_target = synod_guest_4
-
-		hidden_effect = { character_event = { id = synod.100 } } #Handles scandals
-
-		reverse_opinion = { who = FROM modifier = opinion_very_disappointed years = 3 }
-	}
-	
-	#Neither are invited!
-	option = {
-		name = EVTOPTC_synod_4
-		custom_tooltip = { text = EVTOPTC_synod_4_TT }
-
-		clear_event_target = synod_guest_3
-		clear_event_target = synod_guest_4
-
-		set_character_flag = synod_minor_scandal #Will be upgraded to major in 100
-		hidden_effect = { character_event = { id = synod.100 } } #Handles scandals
-
-		reverse_opinion = { who = FROM modifier = opinion_offended years = 10 }
-	}
-
-	after = {
-		hidden_effect = { narrative_event = { id = synod.5 days = 20 } }
 	}
 }
 
@@ -443,7 +359,6 @@ character_event = {
 	
 	option = { 
 		name = EVTOPTA_synod_8
-		custom_tooltip = { text = EVTOPTA_synod_8_TT }
 
 		hidden_effect = { character_event = { id = synod.11 days = 30 } }
 	}
@@ -462,9 +377,6 @@ character_event = {
 	
 	option = { 
 		name = EVTOPTA_synod_9
-		custom_tooltip = { text = EVTOPTA_synod_8_TT }
-
-		add_society_currency_minor_effect = yes
 
 		hidden_effect = { character_event = { id = synod.11 days = 30 } }
 
@@ -489,7 +401,6 @@ character_event = {
 	
 	option = { 
 		name = EVTOPTA_synod_10
-		custom_tooltip = { text = EVTOPTA_synod_10_TT }
 
 		prestige = -50
 
@@ -534,7 +445,6 @@ character_event = {
 	#The safer
 	option = { 
 		name = EVTOPTA_synod_11
-		custom_tooltip = { text = EVTOPTA_synod_11_TT }
 
 		reverse_opinion = { who = event_target:synod_guest_2 modifier = opinion_grateful years = 5 }
 		reverse_opinion = { who = event_target:synod_guest_1 modifier = opinion_disappointed years = 5 }
@@ -545,7 +455,6 @@ character_event = {
 	#The riskier
 	option = {
 		name = EVTOPTB_synod_11
-		custom_tooltip = { text = EVTOPTB_synod_11_TT }
 
 		reverse_opinion = { who = event_target:synod_guest_1 modifier = opinion_grateful years = 5 }
 		reverse_opinion = { who = event_target:synod_guest_2 modifier = opinion_disappointed years = 5 }
@@ -564,7 +473,13 @@ character_event = {
 			random_list = {
 				40 = { #People fight
 					trigger = {
-						society = {
+						any_realm_lord = {
+							OR = {
+								character = event_target:synod_guest_1
+								character = event_target:synod_guest_2
+								character = event_target:synod_guest_3
+								character = event_target:synod_guest_4
+							}
 							any_realm_lord = {
 								OR = {
 									character = event_target:synod_guest_1
@@ -572,58 +487,42 @@ character_event = {
 									character = event_target:synod_guest_3
 									character = event_target:synod_guest_4
 								}
-								society = {
-									any_realm_lord = {
-										OR = {
-											character = event_target:synod_guest_1
-											character = event_target:synod_guest_2
-											character = event_target:synod_guest_3
-											character = event_target:synod_guest_4
-										}
-										NOT = { opinion = { who = PREVPREV value = 10 } }
-									}
-								}
+								NOT = { opinion = { who = PREVPREV value = 10 } }
 							}
 						}
 					}
-					society = {
-						random_realm_lord = {
-							limit = {
+					random_realm_lord = {
+						limit = {
+							OR = {
+								character = event_target:synod_guest_1
+								character = event_target:synod_guest_2
+								character = event_target:synod_guest_3
+								character = event_target:synod_guest_4
+							}
+							any_realm_lord = {
 								OR = {
 									character = event_target:synod_guest_1
 									character = event_target:synod_guest_2
 									character = event_target:synod_guest_3
 									character = event_target:synod_guest_4
 								}
-								society = {
-									any_realm_lord = {
-										OR = {
-											character = event_target:synod_guest_1
-											character = event_target:synod_guest_2
-											character = event_target:synod_guest_3
-											character = event_target:synod_guest_4
-										}
-										NOT = { opinion = { who = PREVPREV value = 10 } }
-									}
-								}
-							}
-							save_event_target_as = arguer_2
-							society = {
-								random_realm_lord = {
-									limit = {
-										OR = {
-											character = event_target:synod_guest_1
-											character = event_target:synod_guest_2
-											character = event_target:synod_guest_3
-											character = event_target:synod_guest_4
-										}
-										NOT = { opinion = { who = PREVPREV value = 10 } }
-									}
-									save_event_target_as = arguer_1
-								}
+								NOT = { opinion = { who = PREVPREV value = 10 } }
 							}
 						}
-					}
+						save_event_target_as = arguer_2
+							random_realm_lord = {
+								limit = {
+									OR = {
+										character = event_target:synod_guest_1
+										character = event_target:synod_guest_2
+										character = event_target:synod_guest_3
+										character = event_target:synod_guest_4
+									}
+									NOT = { opinion = { who = PREVPREV value = 10 } }
+								}
+								save_event_target_as = arguer_1
+							}
+						}
 					character_event = { id = synod.12 days = 20 random = 10 }
 				}
 				35 = { #You agree with someone
@@ -635,19 +534,17 @@ character_event = {
 							opinion = { who = event_target:synod_guest_4 value = 20 }
 						}
 					}
-					society = {
-						random_realm_lord = {
-							limit = {
-								OR = {
-									character = event_target:synod_guest_1
-									character = event_target:synod_guest_2
-									character = event_target:synod_guest_3
-									character = event_target:synod_guest_4
-								}
-								reverse_opinion = { who = ROOT value = 20 }
+					random_realm_lord = {
+						limit = {
+							OR = {
+								character = event_target:synod_guest_1
+								character = event_target:synod_guest_2
+								character = event_target:synod_guest_3
+								character = event_target:synod_guest_4
 							}
-							character_event = { id = synod.15 days = 20 random = 10 }
+								reverse_opinion = { who = ROOT value = 20 }
 						}
+						character_event = { id = synod.15 days = 20 random = 10 }
 					}
 				}
 				25 = { #You have a brilliant insight
@@ -679,11 +576,9 @@ character_event = {
 	#Try to meddle
 	option = { 
 		name = EVTOPTA_synod_12
-		custom_tooltip = { text = EVTOPTA_synod_12_TT }
 
 		random_list = {
 			50 = { #It works
-				modifier = { society_rank >= 3 factor = 1.2 }
 				modifier = { 
 					reverse_opinion = { who = event_target:arguer_1 value = 25 }
 					reverse_opinion = { who = event_target:arguer_2 value = 25 } 
@@ -707,7 +602,6 @@ character_event = {
 	#Person 1 goes
 	option = {
 		name = EVTOPTB_synod_12
-		custom_tooltip = { text = EVTOPTB_synod_12_TT }
 
 		hidden_effect = {
 			if = { 
@@ -738,7 +632,6 @@ character_event = {
 	#Person 2 goes
 	option = {
 		name = EVTOPTC_synod_12
-		custom_tooltip = { text = EVTOPTC_synod_12_TT }
 
 		hidden_effect = {
 			if = { 
@@ -779,7 +672,6 @@ character_event = {
 
 	option = { 
 		name = EVTOPTA_synod_13
-		custom_tooltip = { text = EVTOPTA_synod_13_TT }
 
 		reverse_opinion = {
 			who = event_target:arguer_1
@@ -814,7 +706,6 @@ character_event = {
 
 	option = { 
 		name = EVTOPTA_synod_14
-		custom_tooltip = { text = EVTOPTA_synod_14_TT }
 
 		reverse_opinion = {
 			who = event_target:arguer_1
@@ -907,7 +798,6 @@ character_event = {
 
 	option = { 
 		name = EVTOPTA_synod_17
-		custom_tooltip = { text = EVTOPTA_synod_17_TT }
 
 		add_character_modifier = {
 			name = brilliant_insight
@@ -1105,9 +995,6 @@ character_event = {
 			has_character_flag = diplomacy_path
 		}
 		name = EVTOPTA_synod_19
-
-		military_techpoints = 100
-		add_society_currency_major_effect = yes
 	}
 
 	option = {
@@ -1118,7 +1005,7 @@ character_event = {
 		name = EVTOPTB_synod_19
 
 		economy_techpoints = 100
-		add_society_currency_major_effect = yes
+		
 	}
 	
 	option = {
@@ -1129,7 +1016,7 @@ character_event = {
 		name = EVTOPTC_synod_19
 
 		culture_techpoints = 100
-		add_society_currency_major_effect = yes
+		
 	}
 	
 	option = {
@@ -1138,9 +1025,7 @@ character_event = {
 			has_character_flag = diplomacy_path
 		}
 		name = EVTOPTD_synod_19
-
-		military_techpoints = 50
-		add_society_currency_medium_effect = yes
+		
 	}
 
 	option = {
@@ -1151,7 +1036,7 @@ character_event = {
 		name = EVTOPTE_synod_19
 
 		economy_techpoints = 50
-		add_society_currency_medium_effect = yes
+		
 	}
 
 	option = {
@@ -1162,7 +1047,7 @@ character_event = {
 		name = EVTOPTF_synod_19
 
 		culture_techpoints = 50
-		add_society_currency_medium_effect = yes
+		
 	}
 
 	option = {
@@ -1171,9 +1056,7 @@ character_event = {
 			has_character_flag = diplomacy_path
 		}
 		name = EVTOPTG_synod_19
-
-		military_techpoints = 25
-		add_society_currency_minor_effect = yes
+		
 	}
 
 	option = {
@@ -1184,7 +1067,7 @@ character_event = {
 		name = EVTOPTH_synod_19
 
 		economy_techpoints = 25
-		add_society_currency_minor_effect = yes
+		
 	}
 
 	option = {
@@ -1195,7 +1078,7 @@ character_event = {
 		name = EVTOPTI_synod_19
 
 		culture_techpoints = 25
-		add_society_currency_minor_effect = yes
+		
 	}
 
 	after = {
@@ -1274,13 +1157,11 @@ character_event = {
 	option = { 
 		trigger = { has_character_flag = failure_outcome }
 		name = EVTOPTA_synod_20
-		custom_tooltip = { text = EVTOPTA_synod_20_TT }
 	}
 
 	option = {
 		trigger = { has_character_flag = bad_failure_outcome }
 		name = EVTOPTB_synod_20
-		custom_tooltip = { text = EVTOPTB_synod_20_TT }
 
 		trigger_switch = {
 			on_trigger = has_character_flag
@@ -1367,148 +1248,64 @@ character_event = {
 	immediate = {
 		hidden_effect = {
 			#Guest of honor (1)
-			random_realm_lord = {
+			any_neighbor_independent_ruler = {
 				100 = {
 					trigger = { has_job_title = job_spiritual }
 					save_event_target_as = synod_guest_1
+					religion_group = ROOT
 				}
 			}
 		}
 
 		#Guest 2
 		hidden_effect = {
-			random_realm_lord = {
+			any_neighbor_independent_ruler = {
 				limit = {
 					ai = yes
+					religion_group = ROOT
 					NOT = { character = event_target:synod_guest_1 }
-					opinion = { who = ROOT value = 15 }
-					reverse_opinion = { who = ROOT value = 15 }
 				}
 				save_event_target_as = synod_guest_2
 			}
 		}
 		#Guest 3 and 4
 		hidden_effect = {
-			random_realm_lord = {
-						limit = {
+			any_neighbor_independent_ruler = {
+					limit = {
 							ai = yes
+							religion_group = ROOT
 							NOR = {
 								character = event_target:synod_guest_1
 								character = event_target:synod_guest_2
 							}
-							opinion = { who = ROOT value = 15 }
-							reverse_opinion = { who = ROOT value = 15 }
 						}
 						save_event_target_as = synod_guest_3
 					}
-			random_realm_lord = {
-						limit = {
-							ai = yes
-							NOR = {
-								character = event_target:synod_guest_1
-								character = event_target:synod_guest_2
-								character = event_target:synod_guest_3
-							}
-							opinion = { who = ROOT value = 15 }
-							reverse_opinion = { who = ROOT value = 15 }
+			any_neighbor_independent_ruler = {
+				limit = {
+						ai = yes
+						religion_group = ROOT
+						NOR = {
+							character = event_target:synod_guest_1
+							character = event_target:synod_guest_2
+							character = event_target:synod_guest_3
 						}
-						save_event_target_as = synod_guest_4
-					}
+				}
+				save_event_target_as = synod_guest_4
 			}
 		}
 	}
 
 	option = { 
-		name = EVTOPTA_synod_2
+		name = EVTOPTA_synod_21
 
 		reverse_opinion = { who = event_target:synod_guest_1 modifier = opinion_grateful_invitation months = 3 }
 		reverse_opinion = { who = event_target:synod_guest_2 modifier = opinion_grateful_invitation months = 3 }
 		reverse_opinion = { who = event_target:synod_guest_3 modifier = opinion_grateful_invitation months = 3 }
-		if = {
-			limit = { NOT = { has_character_flag = disliked_synod_colleague } }
-			reverse_opinion = { who = event_target:synod_guest_4 modifier = opinion_grateful_invitation months = 3 }
-		}
+		
 		hidden_effect = {
-			if = {
-				limit = { has_character_flag = disliked_synod_colleague }
-				event_target:synod_guest_3 = { character_event = { id = synod.22 days = 10 } }
-				clr_character_flag = disliked_synod_colleague
-				break = yes
-			}
 			narrative_event = { id = synod.24 days = 30 }
 		}
-	}
-
-#Ping to rival inviter
-character_event = {
-	id = synod.22
-	hide_window = yes
-	is_triggered_only = yes
-	immediate = { FROM = { letter_event = { id = synod.23 } } }
-}
-
-#Another guests wants rival to come
-letter_event = {
-	id = synod.23
-	desc = EVTDESC_synod_23
-	border = GFX_event_letter_frame_religion
-
-	is_triggered_only = yes
-
-	trigger = { has_character_flag = gathering_of_the_ecu_council }
-	
-	#Diplomatic excuse
-	option = {
-		trigger = { diplomacy = 12 }
-		tooltip_info = diplomacy
-		name = EVTOPTD_synod_23
-		custom_tooltip = { text = EVTOPTD_synod_23_TT }
-
-		clear_event_target = synod_guest_4
-
-	}
-
-	#I guess they can come
- 	option = { 
-		name = EVTOPTA_synod_23
-		custom_tooltip = { text = EVTOPTA_synod_4_TT }
-
-		event_target:synod_guest_4 = {
-			set_character_flag = show_in_option
-			clr_character_flag = show_in_option
-		}
-
-		reverse_opinion = { who = FROM modifier = opinion_grateful years = 3 }
-	}
-
-	#I don't want them here
-	option = {
-		name = EVTOPTB_synod_23
-		custom_tooltip = { text = EVTOPTB_synod_4_TT }
-
-		clear_event_target = synod_guest_4
-
-		hidden_effect = { character_event = { id = synod.100 } } #Handles scandals
-
-		reverse_opinion = { who = FROM modifier = opinion_very_disappointed years = 3 }
-	}
-	
-	#Neither are invited!
-	option = {
-		name = EVTOPTC_synod_4
-		custom_tooltip = { text = EVTOPTC_synod_4_TT }
-
-		clear_event_target = synod_guest_3
-		clear_event_target = synod_guest_4
-
-		set_character_flag = synod_minor_scandal #Will be upgraded to major in 100
-		hidden_effect = { character_event = { id = synod.100 } } #Handles scandals
-
-		reverse_opinion = { who = FROM modifier = opinion_offended years = 10 }
-	}
-
-	after = {
-		hidden_effect = { narrative_event = { id = synod.24 days = 20 } }
 	}
 }
 
@@ -1775,7 +1572,7 @@ character_event = {
 		name = EVTOPTA_synod_28
 		custom_tooltip = { text = EVTOPTA_synod_27_TT }
 
-		add_society_currency_minor_effect = yes
+		
 
 		hidden_effect = { character_event = { id = synod.30 days = 30 } }
 
@@ -1875,66 +1672,56 @@ character_event = {
 			random_list = {
 				40 = { #People fight
 					trigger = {
-						society = {
-							any_realm_lord = {
+						any_neighbor_independent_ruler = {
+							OR = {
+								character = event_target:synod_guest_1
+								character = event_target:synod_guest_2
+								character = event_target:synod_guest_3
+								character = event_target:synod_guest_4
+							}
+							any_neighbor_independent_ruler = {
 								OR = {
 									character = event_target:synod_guest_1
 									character = event_target:synod_guest_2
 									character = event_target:synod_guest_3
 									character = event_target:synod_guest_4
 								}
-								society = {
-									any_realm_lord = {
-										OR = {
-											character = event_target:synod_guest_1
-											character = event_target:synod_guest_2
-											character = event_target:synod_guest_3
-											character = event_target:synod_guest_4
-										}
-										NOT = { opinion = { who = PREVPREV value = 10 } }
-									}
-								}
+								NOT = { opinion = { who = PREVPREV value = 10 } }
 							}
 						}
 					}
-					society = {
-						random_realm_lord = {
-							limit = {
-								OR = {
-									character = event_target:synod_guest_1
-									character = event_target:synod_guest_2
-									character = event_target:synod_guest_3
-									character = event_target:synod_guest_4
-								}
-								society = {
-									any_realm_lord = {
-										OR = {
-											character = event_target:synod_guest_1
-											character = event_target:synod_guest_2
-											character = event_target:synod_guest_3
-											character = event_target:synod_guest_4
-										}
-										NOT = { opinion = { who = PREVPREV value = 10 } }
+					any_neighbor_independent_ruler = {
+						limit = {
+							OR = {
+								character = event_target:synod_guest_1
+								character = event_target:synod_guest_2
+								character = event_target:synod_guest_3
+								character = event_target:synod_guest_4
+							}
+								any_neighbor_independent_ruler = {
+									OR = {
+										character = event_target:synod_guest_1
+										character = event_target:synod_guest_2
+										character = event_target:synod_guest_3
+										character = event_target:synod_guest_4
 									}
+									NOT = { opinion = { who = PREVPREV value = 10 } }
 								}
 							}
-							save_event_target_as = arguer_2
-							society = {
-								random_realm_lord = {
-									limit = {
-										OR = {
-											character = event_target:synod_guest_1
-											character = event_target:synod_guest_2
-											character = event_target:synod_guest_3
-											character = event_target:synod_guest_4
-										}
-										NOT = { opinion = { who = PREVPREV value = 10 } }
+						save_event_target_as = arguer_2
+							any_neighbor_independent_ruler = {
+								limit = {
+									OR = {
+										character = event_target:synod_guest_1
+										character = event_target:synod_guest_2
+										character = event_target:synod_guest_3
+										character = event_target:synod_guest_4
 									}
-									save_event_target_as = arguer_1
+									NOT = { opinion = { who = PREVPREV value = 10 } }
 								}
+								save_event_target_as = arguer_1
 							}
 						}
-					}
 					character_event = { id = synod.31 days = 20 random = 10 }
 				}
 				35 = { #You agree with someone
@@ -1946,19 +1733,17 @@ character_event = {
 							opinion = { who = event_target:synod_guest_4 value = 20 }
 						}
 					}
-					society = {
-						random_realm_lord = {
-							limit = {
-								OR = {
-									character = event_target:synod_guest_1
-									character = event_target:synod_guest_2
-									character = event_target:synod_guest_3
-									character = event_target:synod_guest_4
-								}
-								reverse_opinion = { who = ROOT value = 20 }
+					any_neighbor_independent_ruler = {
+						limit = {
+							OR = {
+								character = event_target:synod_guest_1
+								character = event_target:synod_guest_2
+								character = event_target:synod_guest_3
+								character = event_target:synod_guest_4
 							}
-							character_event = { id = synod.15 days = 20 random = 10 }
+							reverse_opinion = { who = ROOT value = 20 }
 						}
+						character_event = { id = synod.15 days = 20 random = 10 }
 					}
 				}
 				25 = { #You have a brilliant insight
@@ -1990,11 +1775,9 @@ character_event = {
 	#Try to meddle
 	option = { 
 		name = EVTOPTA_synod_31
-		custom_tooltip = { text = EVTOPTA_synod_31_TT }
 
 		random_list = {
 			50 = { #It works
-				modifier = { society_rank >= 3 factor = 1.2 }
 				modifier = { 
 					reverse_opinion = { who = event_target:arguer_1 value = 25 }
 					reverse_opinion = { who = event_target:arguer_2 value = 25 } 
@@ -2018,7 +1801,6 @@ character_event = {
 	#Person 1 goes
 	option = {
 		name = EVTOPTB_synod_31
-		custom_tooltip = { text = EVTOPTB_synod_31_TT }
 
 		hidden_effect = {
 			if = { 
@@ -2049,7 +1831,6 @@ character_event = {
 	#Person 2 goes
 	option = {
 		name = EVTOPTC_synod_31
-		custom_tooltip = { text = EVTOPTC_synod_31_TT }
 
 		hidden_effect = {
 			if = { 
@@ -2090,7 +1871,6 @@ character_event = {
 
 	option = { 
 		name = EVTOPTA_synod_32
-		custom_tooltip = { text = EVTOPTA_synod_32_TT }
 
 		reverse_opinion = {
 			who = event_target:arguer_1
@@ -2125,7 +1905,6 @@ character_event = {
 
 	option = { 
 		name = EVTOPTA_synod_33
-		custom_tooltip = { text = EVTOPTA_synod_33_TT }
 
 		reverse_opinion = {
 			who = event_target:arguer_1
@@ -2218,7 +1997,6 @@ character_event = {
 
 	option = { 
 		name = EVTOPTA_synod_36
-		custom_tooltip = { text = EVTOPTA_synod_36_TT }
 
 		add_character_modifier = {
 			name = brilliant_insight
@@ -2416,9 +2194,6 @@ character_event = {
 			has_character_flag = diplomacy_path
 		}
 		name = EVTOPTA_synod_38
-
-		military_techpoints = 100
-		add_society_currency_major_effect = yes
 	}
 
 	option = {
@@ -2429,7 +2204,6 @@ character_event = {
 		name = EVTOPTB_synod_38
 
 		economy_techpoints = 100
-		add_society_currency_major_effect = yes
 	}
 	
 	option = {
@@ -2440,7 +2214,6 @@ character_event = {
 		name = EVTOPTC_synod_38
 
 		culture_techpoints = 100
-		add_society_currency_major_effect = yes
 	}
 	
 	option = {
@@ -2449,9 +2222,6 @@ character_event = {
 			has_character_flag = diplomacy_path
 		}
 		name = EVTOPTD_synod_38
-
-		military_techpoints = 50
-		add_society_currency_medium_effect = yes
 	}
 
 	option = {
@@ -2462,7 +2232,6 @@ character_event = {
 		name = EVTOPTE_synod_38
 
 		economy_techpoints = 50
-		add_society_currency_medium_effect = yes
 	}
 
 	option = {
@@ -2473,7 +2242,6 @@ character_event = {
 		name = EVTOPTF_synod_38
 
 		culture_techpoints = 50
-		add_society_currency_medium_effect = yes
 	}
 
 	option = {
@@ -2482,9 +2250,7 @@ character_event = {
 			has_character_flag = diplomacy_path
 		}
 		name = EVTOPTG_synod_38
-
-		military_techpoints = 25
-		add_society_currency_minor_effect = yes
+		
 	}
 
 	option = {
@@ -2495,7 +2261,7 @@ character_event = {
 		name = EVTOPTH_synod_38
 
 		economy_techpoints = 25
-		add_society_currency_minor_effect = yes
+		
 	}
 
 	option = {
@@ -2506,7 +2272,7 @@ character_event = {
 		name = EVTOPTI_synod_38
 
 		culture_techpoints = 25
-		add_society_currency_minor_effect = yes
+		
 	}
 
 	after = {
@@ -2585,13 +2351,11 @@ character_event = {
 	option = { 
 		trigger = { has_character_flag = failure_outcome }
 		name = EVTOPTA_synod_39
-		custom_tooltip = { text = EVTOPTA_synod_39_TT }
 	}
 
 	option = {
 		trigger = { has_character_flag = bad_failure_outcome }
 		name = EVTOPTB_synod_39
-		custom_tooltip = { text = EVTOPTB_synod_39_TT }
 
 		trigger_switch = {
 			on_trigger = has_character_flag
@@ -2707,7 +2471,6 @@ character_event = {
 	
 	option = { 
 		name = EVTOPTA_synod_101
-		custom_tooltip = { text = EVTOPTA_synod_101_TT }
 
 		hidden_effect = {
 			clr_character_flag = gathering_of_the_synod
