@@ -7763,6 +7763,21 @@
 1854119 = { name = "Izvarin" culture = donskoy}
 1854120 = { name = "Bespalov" culture = donskoy}
 1854121 = { name = "Rymniksky" culture = donskoy}
+1854122 = { name = "Yuzov" culture = donskoy used_for_random = no 
+	coat_of_arms = {
+		religion = pagan
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 5
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1854123 = { name = "Gaskoin" culture = donskoy used_for_random = no}
 
 1855000 = { name = "Kirichenko" culture = kubantsy}
 1855001 = { name = "Bezkrovny" culture = kubantsy}
@@ -42304,7 +42319,20 @@ coat_of_arms = {
 2922098 = { name = "Maksymenko" culture = ukrainian }
 2922099 = { name = "Prokopenko" culture = ukrainian }
 2922100 = { name = "Soroka" culture = ukrainian }
-2922101 = { name = "Ostapenko" culture = ukrainian }
+2922101 = { name = "Ostapenko" culture = ukrainian 
+	coat_of_arms = {
+		religion = pagan
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 6
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2922102 = { name = "Didenko" culture = ukrainian }
 2922103 = { name = "Honcharuk" culture = ukrainian }
 2922104 = { name = "Naumenko" culture = ukrainian }
