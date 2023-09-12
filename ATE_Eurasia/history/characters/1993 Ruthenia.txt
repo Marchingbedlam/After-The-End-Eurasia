@@ -938,20 +938,6 @@
 	2650.2.14={birth=yes}
 	2694.12.1={death=yes}
 }
-2922023={
-	name="Grugg"
-	dynasty=2922101
-	culture=ukrainian
-	religion=kozachina
-	trait=brilliant_strategist
-	trait=duelist
-	trait=zealous
-	trait=just
-	trait=cruel
-	trait=brave
-	2642.1.3={birth=yes}
-	2680.1.1={death=yes}
-}
 1854000={
 	name="Aleksandr"
 	dynasty=1854091 #Rymniksky
@@ -967,4 +953,153 @@
 	trait=zealous
 	2622.1.3={birth=yes}
 	2680.1.1={death=yes}
+}
+1993231={
+	name="Yan"
+	dynasty=1854122 #Yuzov
+	culture=donskoy
+	religion=kozachina
+	trait=thrifty_clerk
+	trait=patient
+	trait=proud
+	trait=erudite
+	trait=stubborn
+	trait=robust
+	2642.4.12={birth=yes}
+	2650.1.1={effect={add_friend=1993233}}
+	2676.1.13={death=yes}
+}
+1993232={
+	name="Yakov"
+	dynasty=1854122 #Yuzov
+	culture=donskoy
+	religion=kozachina
+	trait=quick
+	father=1993231
+	2663.12.3={birth=yes}
+	2718.3.21={death=yes}
+}
+1993233={
+	name="Yemelyan"
+	dynasty=1854123 #Gaskoin
+	culture=donskoy
+	religion=kozachina
+	trait=tough_soldier
+	trait=ruthless
+	trait=honest
+	trait=diligent
+	2645.3.12={birth=yes}
+	2650.1.1={effect={add_friend=1993231}}
+	2690.4.18={death=yes}
+}
+1993234={
+	name="Yan"
+	dynasty=1854123 #Gaskoin
+	culture=donskoy
+	religion=kozachina
+	trait=bastard
+	trait=strong
+	father=1993233
+	2661.12.19={birth=yes}
+	2723.1.22={death=yes}
+}
+1993235={
+	name="Karl"	
+	dynasty=1854123 #Gaskoin
+	culture=donskoy
+	religion=kozachina
+	father=1993233
+	2665.12.25={birth=yes}
+	2699.5.3={death=yes}
+}
+1993236={
+	name="Oleksiy"
+	dynasty=2922150 #Ilchenko
+	culture=ukrainian
+	religion=kozachina
+	trait=tough_soldier
+	trait=adventurer
+	trait=zealous
+	trait=wroth
+	trait=authoritative
+	2640.5.1={birth=yes}
+	2690.2.14={death=yes}
+}
+1993237={
+	name="Hryhoriy"
+	dynasty=2922101 #Ostapenko
+	culture=ukrainian
+	religion=kozachina
+	trait=brilliant_strategist
+	trait=duelist
+	trait=zealous
+	trait=just
+	trait=cruel
+	trait=brave
+	2632.1.3={birth=yes}
+	2680.1.1={death=yes}
+}
+1993238={
+	name="Ustym"
+	dynasty=2922101 #Ostapenko
+	culture=ukrainian
+	religion=kozachina
+	father=1993237
+	2666.1.12={birth=yes}
+	2712.4.19={death=yes}
+}
+1993239={
+	name="Ostap"
+	dynasty=2922140 #Matvyenko
+	culture=ukrainian
+	religion=pravoslavie
+	trait=skilled_tactician
+	trait=trusting
+	trait=proud
+	trait=ruthless
+	trait=cruel
+	2641.3.12={birth=yes}
+	2683.1.19={death=yes}
+}
+1993240={
+	name="Osip"
+	dynasty=1585076 #Kosarev
+	culture=chernyan
+	religion=kozachina
+	trait=brilliant_strategist
+	trait=genius
+	trait=frail
+	trait=patient
+	trait=strategist
+	give_nickname=nick_the_great
+	2600.3.15={birth=yes}
+	2667.1.12={death=yes}
+}
+1993241={
+	name="Osip"
+	dynasty=1585076 #Kosarev
+	culture=chernyan
+	religion=kozachina
+	trait=martial_cleric
+	trait=zealous
+	trait=stubborn
+	trait=shrewd
+	trait=erudite
+	father=1993240
+	2637.1.13={birth=yes}
+	2679.8.21={death=yes}
+}
+1993242={
+	name="Semyon"
+	dynasty=1585076 #Kosarev
+	culture=chernyan
+	religion=orthodox
+	trait=martial_cleric
+	trait=zealous
+	trait=stubborn
+	trait=shrewd
+	trait=erudite
+	father=1993240
+	2643.9.29={birth=yes}
+	2685.1.11={death=yes}
 }
