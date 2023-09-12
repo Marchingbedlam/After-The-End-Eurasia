@@ -29,10 +29,6 @@ narrative_event = {
 	option = { #Ecumenial Council
 		limit = {
 			holder_scope = {
-				OR = {
-					religion = lutheran
-					religion = calvinist
-				}
 				has_landed_title = e_baltic
 			}
 		}
@@ -60,7 +56,7 @@ character_event = {
 	immediate = {
 		hidden_effect = {
 			#Guest of honor (1)
-			random_list = {
+			random_realm_lord = {
 				100 = {
 					trigger = { has_job_title = job_spiritual }
 					save_event_target_as = synod_guest_1
@@ -69,7 +65,7 @@ character_event = {
 		}
 
 		#Guest 2
-		society = {
+		hidden_effect = {
 			random_realm_lord = {
 				limit = {
 					ai = yes
@@ -80,53 +76,9 @@ character_event = {
 				save_event_target_as = synod_guest_2
 			}
 		}
-
 		#Guest 3 and 4
-		random_list = {
-			70 = { #Your rival gets invited
-				trigger = { society = { random_rival = { ai = yes NOT = { reverse_opinion = { who = ROOT value = -30 } } } } }
-				set_character_flag = disliked_synod_colleague
-
-				society = {
-					random_rival = {
-						limit = { ai = yes NOT = { reverse_opinion = { who = ROOT value = -30 } } }
-						save_event_target_as = synod_guest_4
-					}
-
-					random_rival = {
-						limit = {
-							ai = yes
-							opinion = { who = event_target:synod_guest_4 value = 20 }
-							reverse_opinion = { who = ROOT value = 15 }
-							NOR = {
-								character = event_target:synod_guest_1
-								character = event_target:synod_guest_2
-							}
-						}
-						save_event_target_as = synod_guest_3
-					}
-				}
-				if = {
-					limit = { NOT = { event_target:synod_guest_3 = { always = yes } } }
-					society = {
-						random_realm_lord = {
-							limit = {
-								ai = yes
-								NOR = {
-									character = event_target:synod_guest_1
-									character = event_target:synod_guest_2
-								}
-								opinion = { who = ROOT value = 15 }
-								reverse_opinion = { who = ROOT value = 15 }
-							}
-							save_event_target_as = synod_guest_3
-						}
-					}
-				}
-			}
-			30 = { #Nothing special
-				society = {
-					random_realm_lord = {
+		hidden_effect = {
+			random_realm_lord = {
 						limit = {
 							ai = yes
 							NOR = {
@@ -138,9 +90,7 @@ character_event = {
 						}
 						save_event_target_as = synod_guest_3
 					}
-				}
-				society = {
-					random_realm_lord = {
+			random_realm_lord = {
 						limit = {
 							ai = yes
 							NOR = {
@@ -153,7 +103,6 @@ character_event = {
 						}
 						save_event_target_as = synod_guest_4
 					}
-				}
 			}
 		}
 	}
@@ -1419,7 +1368,7 @@ character_event = {
 	immediate = {
 		hidden_effect = {
 			#Guest of honor (1)
-			random_list = {
+			random_realm_lord = {
 				100 = {
 					trigger = { has_job_title = job_spiritual }
 					save_event_target_as = synod_guest_1
@@ -1428,7 +1377,7 @@ character_event = {
 		}
 
 		#Guest 2
-		society = {
+		hidden_effect = {
 			random_realm_lord = {
 				limit = {
 					ai = yes
@@ -1439,53 +1388,9 @@ character_event = {
 				save_event_target_as = synod_guest_2
 			}
 		}
-
 		#Guest 3 and 4
-		random_list = {
-			70 = { #Your rival gets invited
-				trigger = { society = { random_rival = { ai = yes NOT = { reverse_opinion = { who = ROOT value = -30 } } } } }
-				set_character_flag = disliked_synod_colleague
-
-				society = {
-					random_rival = {
-						limit = { ai = yes NOT = { reverse_opinion = { who = ROOT value = -30 } } }
-						save_event_target_as = synod_guest_4
-					}
-
-					random_rival = {
-						limit = {
-							ai = yes
-							opinion = { who = event_target:synod_guest_4 value = 20 }
-							reverse_opinion = { who = ROOT value = 15 }
-							NOR = {
-								character = event_target:synod_guest_1
-								character = event_target:synod_guest_2
-							}
-						}
-						save_event_target_as = synod_guest_3
-					}
-				}
-				if = {
-					limit = { NOT = { event_target:synod_guest_3 = { always = yes } } }
-					society = {
-						random_realm_lord = {
-							limit = {
-								ai = yes
-								NOR = {
-									character = event_target:synod_guest_1
-									character = event_target:synod_guest_2
-								}
-								opinion = { who = ROOT value = 15 }
-								reverse_opinion = { who = ROOT value = 15 }
-							}
-							save_event_target_as = synod_guest_3
-						}
-					}
-				}
-			}
-			30 = { #Nothing special
-				society = {
-					random_realm_lord = {
+		hidden_effect = {
+			random_realm_lord = {
 						limit = {
 							ai = yes
 							NOR = {
@@ -1497,9 +1402,7 @@ character_event = {
 						}
 						save_event_target_as = synod_guest_3
 					}
-				}
-				society = {
-					random_realm_lord = {
+			random_realm_lord = {
 						limit = {
 							ai = yes
 							NOR = {
@@ -1512,7 +1415,6 @@ character_event = {
 						}
 						save_event_target_as = synod_guest_4
 					}
-				}
 			}
 		}
 	}
