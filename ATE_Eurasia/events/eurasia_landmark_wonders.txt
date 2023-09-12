@@ -152,14 +152,36 @@ character_event = {
 		534 = { 
 			add_province_modifier = { name = landmark_blautopf duration = -1 }
 			}
+		535 = { 
+			add_province_modifier = { name = landmark_kadriorg_palace duration = -1 }
+			}
+		537 = { 
+			add_province_modifier = { name = landmark_kaali_crater duration = -1 }
+			}
+		550 = { 
+			add_province_modifier = { name = landmark_cathedral_hill duration = -1 }
+			}
 		552 = { 
 			add_province_modifier = { name = landmark_qinngua_valley duration = -1 }
+			}
+		569 = { 
+			add_province_modifier = { name = landmark_suomenlinna duration = -1 }
 			}
 		616 = { 
 			add_province_modifier = { name = landmark_volga_don_canal duration = -1 }
 			}
 		652 = { 
 			add_province_modifier = { name = landmark_kremlin duration = -1 }
+			}
+		663 = { 
+			add_province_modifier = { name = landmark_aglona_basilica duration = -1 }
+			}
+		685 = { 
+			add_province_modifier = { name = landmark_freedom_monument duration = -1 }
+			add_province_modifier = { name = landmark_riga_market duration = -1 }
+			}
+		686 = { 
+			add_province_modifier = { name = landmark_rundale_manor duration = -1 }
 			}
 		697 = { 
 			add_province_modifier = { name = landmark_the_giant duration = -1 }
@@ -180,14 +202,29 @@ character_event = {
 		777 = { 
 			add_province_modifier = { name = landmark_arkaim duration = -1 }
 			}
+		800 = { 
+			add_province_modifier = { name = landmark_kyonigsberg_cathedral duration = -1 }
+			}
+		802 = { 
+			add_province_modifier = { name = landmark_palanga_botanical_gardens duration = -1 }
+			}
 		813 = { 
 			add_province_modifier = { name = landmark_kursk_anomaly duration = -1 }
 			}
 		853 = { 
 			add_province_modifier = { name = landmark_brest_fortress duration = -1 }
 			}
+		857 = { 
+			add_province_modifier = { name = landmark_nesvizh_castle duration = -1 }
+			}
 		859 = { 
 			add_province_modifier = { name = landmark_khatyn_memorial duration = -1 }
+			}
+		861 = { 
+			add_province_modifier = { name = landmark_vilnius_cc duration = -1 }
+			}
+		896 = { 
+			add_province_modifier = { name = landmark_hill_of_crosses duration = -1 }
 			}
 		898 = { 
 			add_province_modifier = { name = landmark_the_golden_abode duration = -1 }
