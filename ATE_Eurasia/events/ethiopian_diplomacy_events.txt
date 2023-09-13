@@ -27,10 +27,10 @@ character_event = {
 
     trigger = { 
         NOT = { has_character_flag = ethiopian_governor_councilor_guest }
-        NOT = { offmap_china = { governor = { character = ROOT } } } #makes sure it doesn't fire for the governor themselves
+        NOT = { offmap_ethiopia = { governor = { character = ROOT } } } #makes sure it doesn't fire for the governor themselves
         is_inaccessible_trigger = no
         ethiopia_diplo_interaction_trigger = yes
-        offmap_china = {
+        offmap_ethiopia = {
             NOR = {
                 has_status = ethiopia_civil_war
                 has_status = ethiopia_plague
@@ -44,27 +44,27 @@ character_event = {
     weight_multiplier = {
     	days = 1
         modifier = {
-            offmap_china = { has_status = ethiopia_unrest }
+            offmap_ethiopia = { has_status = ethiopia_unrest }
             factor = 0.6
         }
         modifier = {
-            offmap_china = { has_status = ethiopia_east_african_invasion }
+            offmap_ethiopia = { has_status = ethiopia_east_african_invasion }
             factor = 0.3
         }
         modifier = {
-            offmap_china = { has_status = ethiopia_west_african_invasion }
+            offmap_ethiopia = { has_status = ethiopia_west_african_invasion }
             factor = 0.3
         }
         modifier = {
-            offmap_china = { has_status = ethiopia_famine }
+            offmap_ethiopia = { has_status = ethiopia_famine }
             factor = 0.3
         }
         modifier = {
-            offmap_china = { has_status = ethiopia_golden_age }
+            offmap_ethiopia = { has_status = ethiopia_golden_age }
             factor = 1.5
         }
         modifier = {
-            offmap_china = { has_policy = ethiopia_expansionist }
+            offmap_ethiopia = { has_policy = ethiopia_expansionist }
             factor = 1.5
         }
         modifier = {
@@ -86,7 +86,7 @@ character_event = {
     }
 
     immediate = {
-        offmap_china = {
+        offmap_ethiopia = {
             governor = {
                 save_event_target_as = target_governor
                 #Selects a diplomat
@@ -260,11 +260,11 @@ character_event = { # Fallback (in case the visitor died/imprisoned)
         prestige = -50
         wealth = -15
         add_offmap_currency = {
-            offmap = offmap_china
+            offmap = offmap_ethiopia
             value = 15
         }
 
-        offmap_china = {
+        offmap_ethiopia = {
             governor = {
                 show_portrait = yes
             }
@@ -349,7 +349,7 @@ character_event = {
     trigger = { 
         is_alive = yes
         prisoner = no
-        offmap_china = { governor = { is_liege_of = ROOT } }
+        offmap_ethiopia = { governor = { is_liege_of = ROOT } }
     }
     immediate = { 
         FROM = {
@@ -466,13 +466,13 @@ character_event = {
 	has_dlc = "Jade Dragon"
     desc = { 
         trigger = { 
-            offmap_china = { offmap_ruler = { NOT = { culture = ROOT } } }
+            offmap_ethiopia = { offmap_ruler = { NOT = { culture = ROOT } } }
         } 
         text =EVTDESC_ED_20005 
     }
     desc = { 
         trigger = { 
-            offmap_china = { offmap_ruler = { culture = ROOT } }
+            offmap_ethiopia = { offmap_ruler = { culture = ROOT } }
         } 
         text =EVTDESC_ED_20005_B
     }
@@ -821,13 +821,13 @@ character_event = {
 	has_dlc = "Jade Dragon"
     desc = { 
         trigger = { 
-            offmap_china = { offmap_ruler = { NOT = { culture = ROOT } } }
+            offmap_ethiopia = { offmap_ruler = { NOT = { culture = ROOT } } }
         } 
         text = EVTDESC_ED_20012 
     }
     desc = { 
         trigger = { 
-            offmap_china = { offmap_ruler = { culture = ROOT } }
+            offmap_ethiopia = { offmap_ruler = { culture = ROOT } }
         } 
         text = EVTDESC_ED_20012_B
     }
@@ -922,12 +922,12 @@ character_event = {
 
     trigger = {
 		NOT = { mercenary = yes }
-        NOT = { offmap_china = { governor = { character = ROOT } } } #makes sure it doesn't fire for the governor themselves
+        NOT = { offmap_ethiopia = { governor = { character = ROOT } } } #makes sure it doesn't fire for the governor themselves
         NOT = { has_character_flag = ethiopian_governor_councilor_guest }
         NOT = { has_character_flag = is_sending_someone_to_china }
         is_inaccessible_trigger = no
         ethiopia_diplo_interaction_trigger = yes
-        offmap_china = {
+        offmap_ethiopia = {
             NOR = {
                 has_status = ethiopia_civil_war
                 has_status = ethiopia_plague
@@ -960,7 +960,7 @@ character_event = {
         }
         modifier = { # less likely if China is isolationist
             factor = 0.5
-            offmap_china = { has_policy = china_isolationist }
+            offmap_ethiopia = { has_policy = china_isolationist }
         }
     }
 
@@ -1038,7 +1038,7 @@ character_event = {
     is_triggered_only = yes
 
     immediate = {
-        offmap_china = {
+        offmap_ethiopia = {
             governor = {
                 save_event_target_as = the_protector_general
             }
@@ -1310,7 +1310,7 @@ character_event = {
     hide_window = yes
     is_triggered_only = yes
     immediate = {
-        offmap_china = {
+        offmap_ethiopia = {
             governor = {
                 save_event_target_as = the_protector_general #in case the old one has died, resave
             }
@@ -1405,7 +1405,7 @@ character_event = {
 
                 trigger = {
                     is_alive = yes
-                    offmap_china = {
+                    offmap_ethiopia = {
                         NOR = {
                             has_status = ethiopia_civil_war
                             has_status = ethiopia_plague
@@ -1448,7 +1448,7 @@ character_event = {
                 }
                 trigger = {
                     is_alive = yes
-                    offmap_china = {
+                    offmap_ethiopia = {
                         NOR = {
                             has_status = ethiopia_civil_war
                             has_status = ethiopia_plague
@@ -1664,7 +1664,7 @@ character_event = { # Things went great
                 any_artifact = { has_artifact_flag = chinese }
             }
             set_character_flag = chinese_traveler_artifact
-            offmap_china = {
+            offmap_ethiopia = {
                 governor = {
                     random_list = {
                         5 = { 
@@ -2205,7 +2205,7 @@ character_event = { # Hidden event
     only_playable = yes
     
     trigger = {
-        NOT = { offmap_china = { governor = { character = ROOT } } } #makes sure it doesn't fire for the governor themselves
+        NOT = { offmap_ethiopia = { governor = { character = ROOT } } } #makes sure it doesn't fire for the governor themselves
         ethiopia_diplo_interaction_trigger = yes
         any_demesne_province = {
             has_trade_post = yes
@@ -2222,7 +2222,7 @@ character_event = { # Hidden event
     }
     
     immediate = {
-        offmap_china = {
+        offmap_ethiopia = {
             governor = {
                 character_event = { id = ED.30001 }
             }
@@ -2311,7 +2311,7 @@ letter_event = {
 		}
 		
 		add_offmap_currency = {
-			offmap = offmap_china
+			offmap = offmap_ethiopia
 			value = 150
 		}
 		
@@ -2377,7 +2377,7 @@ letter_event = {
 	option = {
 		name = EVTOPTB_ED_30002
 		add_offmap_currency = {
-			offmap = offmap_china
+			offmap = offmap_ethiopia
 			value = 50
 		}
 		capital_scope = {
@@ -2410,7 +2410,7 @@ letter_event = {
 	option = {
 		name = EVTOPTC_ED_30002
 		add_offmap_currency = {
-			offmap = offmap_china
+			offmap = offmap_ethiopia
 			value = -150
 		}
 	}
@@ -2533,9 +2533,9 @@ character_event = {
 	
 	trigger = {
 		is_adult = yes
-        NOT = { offmap_china = { governor = { character = ROOT } } } #makes sure it doesn't fire for the governor themselves
+        NOT = { offmap_ethiopia = { governor = { character = ROOT } } } #makes sure it doesn't fire for the governor themselves
 		NOT = {
-			offmap_china = {
+			offmap_ethiopia = {
 				has_policy = china_isolationist
 			}
 		}
@@ -2738,7 +2738,7 @@ character_event = {
 		sound_effect = china_grace_gain
 		
 		add_offmap_currency = {
-			offmap = offmap_china
+			offmap = offmap_ethiopia
 			value = 150
 		}
 	}
@@ -2751,7 +2751,7 @@ character_event = {
 			add_trait_proud_effect = yes
 		}
 		add_offmap_currency = {
-			offmap = offmap_china
+			offmap = offmap_ethiopia
 			value = 100
 		}
 	}
@@ -2769,7 +2769,7 @@ character_event = {
 	
 	immediate = {
 		hidden_effect = {
-			offmap_china = {
+			offmap_ethiopia = {
 				governor = {
 					save_event_target_as = target_governor
 				}
@@ -2780,7 +2780,7 @@ character_event = {
 	option = {
 		name = EVTOPTA_ED_30012
 		add_offmap_currency = {
-			offmap = offmap_china
+			offmap = offmap_ethiopia
 			value = -100
 		}
 	}
@@ -2832,7 +2832,7 @@ character_event = {
     
     trigger = {
         NOT = { has_character_modifier = trade_competition_in_progress } # No new trade competition should fire while one is in progress
-        offmap_china = {
+        offmap_ethiopia = {
             NOT = { has_policy = china_isolationist }
             NOT = { has_status = ethiopia_famine }
             NOT = { has_status = ethiopia_plague }
@@ -3296,7 +3296,7 @@ character_event = {
 							letter_event = { id = ED.40001 }
 						}
 						clr_character_flag = trade_competition_count
-						offmap_china = {
+						offmap_ethiopia = {
 							governor = {
 								character_event = { id = ED.40006 days = 1825 } # Failure event in case nobody built a city
 							}
@@ -3324,7 +3324,7 @@ character_event = {
 							letter_event = { id = ED.40001 }
 						}
 						clr_character_flag = trade_competition_count
-						offmap_china = {
+						offmap_ethiopia = {
 							governor = {
 								character_event = { id = ED.40008 days = 913 }
 							}
@@ -3418,7 +3418,7 @@ character_event = {
         set_character_flag = trade_competition_city_winner
         save_event_target_as = trade_competition_city_winner
         clr_character_flag = started_building_holding
-        offmap_china = {
+        offmap_ethiopia = {
             governor = {
                 character_event = { id = ED.40004 } # Result ping event
             }
@@ -3473,7 +3473,7 @@ letter_event = {
         clr_character_flag = trade_competition_participant
         clr_character_flag = trade_competition_city_winner
         add_offmap_currency = {
-            offmap = offmap_china
+            offmap = offmap_ethiopia
             value = 1000
         }
         if = {
@@ -3499,7 +3499,7 @@ letter_event = {
             show_portrait = yes
         }
         add_offmap_currency = {
-            offmap = offmap_china
+            offmap = offmap_ethiopia
             value = -100
         }
         clr_character_flag = trade_competition_build_city
@@ -3568,7 +3568,7 @@ letter_event = {
     option = {
         name = EVTOPTA_ED_40007
         add_offmap_currency = {
-            offmap = offmap_china
+            offmap = offmap_ethiopia
             value = -250
         }
         any_playable_ruler = {
@@ -4115,7 +4115,7 @@ letter_event = {
                 limit = { 
                     NOT = { any_artifact = { has_artifact_flag = chinese } }
                 }
-                offmap_china = {
+                offmap_ethiopia = {
                     governor = {
                         random_list = {
                             5 = { 
@@ -4281,7 +4281,7 @@ letter_event = {
                 years = 15
             }
             add_offmap_currency = {
-                offmap = offmap_china
+                offmap = offmap_ethiopia
                 value = 750
             }
             clr_character_flag = trade_competition_winner_modifier
@@ -4298,7 +4298,7 @@ letter_event = {
                 }
             }
             add_offmap_currency = {
-                offmap = offmap_china
+                offmap = offmap_ethiopia
                 value = 750
             }
             clr_character_flag = trade_competition_winner_artifact
@@ -4306,7 +4306,7 @@ letter_event = {
         if = {
             limit = { has_character_flag = trade_competition_winner_grace }
             add_offmap_currency = {
-                offmap = offmap_china
+                offmap = offmap_ethiopia
                 value = 1500
             }
             clr_character_flag = trade_competition_winner_grace
@@ -4326,7 +4326,7 @@ letter_event = {
         clr_character_flag = trade_competition_participant
         clr_character_flag = trade_competition_accumulate_prestige
         add_offmap_currency = {
-            offmap = offmap_china
+            offmap = offmap_ethiopia
             value = -100
         }
     }
@@ -4345,11 +4345,11 @@ character_event = {
 	only_playable = yes
 	
 	trigger = { 
-        NOT = { offmap_china = { governor = { character = ROOT } } } #makes sure it doesn't fire for the governor themselves
+        NOT = { offmap_ethiopia = { governor = { character = ROOT } } } #makes sure it doesn't fire for the governor themselves
 		NOT = { has_character_flag = escaped_chinese_noble }
         is_inaccessible_trigger = no
         ethiopia_diplo_interaction_trigger = yes
-        offmap_china = {
+        offmap_ethiopia = {
             NOR = {
                 has_status = ethiopia_civil_war
                 has_status = ethiopia_plague
@@ -4368,7 +4368,7 @@ character_event = {
             }
         }    
 
-    	offmap_china = {
+    	offmap_ethiopia = {
 			offmap_ruler = {
 				save_event_target_as = chinese_emperor
 			}
@@ -4433,7 +4433,7 @@ character_event = {		#Escaped Chinese Noble appears
 		hidden_effect = {
 			random_list = {
 				50 = {
-					offmap_china = { 
+					offmap_ethiopia = { 
 						governor = { character_event = { id = ED.70007 days = 30 } } 
 					}
 				}
@@ -4737,7 +4737,7 @@ character_event = {
     only_playable = yes
     
     trigger = {
-        NOT = { offmap_china = { governor = { character = ROOT } } } #makes sure it doesn't fire for the governor themselves
+        NOT = { offmap_ethiopia = { governor = { character = ROOT } } } #makes sure it doesn't fire for the governor themselves
         NOT = { has_character_flag = received_chinese_refugee }
         is_inaccessible_trigger = no
         ethiopia_diplo_interaction_trigger = yes
@@ -4750,7 +4750,7 @@ character_event = {
             }
         }
 
-        offmap_china = {
+        offmap_ethiopia = {
             OR = {
                 has_status = ethiopia_east_african_invasion
                 has_status = ethiopia_west_african_invasion
@@ -4764,19 +4764,19 @@ character_event = {
         factor = 1
         
         modifier = {
-            offmap_china = { has_policy = china_isolationist }
+            offmap_ethiopia = { has_policy = china_isolationist }
             factor = 0.8
         }        
         modifier = {
-            offmap_china = { has_status = ethiopia_civil_war }
+            offmap_ethiopia = { has_status = ethiopia_civil_war }
             factor = 0.5
         }
         modifier = {
-            offmap_china = { has_status = ethiopia_famine }
+            offmap_ethiopia = { has_status = ethiopia_famine }
             factor = 0.25
         }
         modifier = {
-            offmap_china = { has_status = ethiopia_plague }
+            offmap_ethiopia = { has_status = ethiopia_plague }
             factor = 0.25
         }
 
@@ -4790,7 +4790,7 @@ character_event = {
     }
 
     immediate = {
-        offmap_china = {
+        offmap_ethiopia = {
             offmap_ruler = {
                 save_event_target_as = chinese_emperor
             }
@@ -5385,7 +5385,7 @@ character_event = {
                             add_trait = logistics_expert
                             if = {
                                 limit = {
-                                    offmap_china = {
+                                    offmap_ethiopia = {
                                         has_status = ethiopia_golden_age
                                     }
                                 }
@@ -5431,7 +5431,7 @@ character_event = {
                             add_trait = sapper 
                             if = {
                                 limit = {
-                                    offmap_china = {
+                                    offmap_ethiopia = {
                                         has_status = ethiopia_golden_age
                                     }
                                 }
@@ -5467,7 +5467,7 @@ character_event = {
                             add_trait = master_of_flame 
                             if = {
                                 limit = {
-                                    offmap_china = {
+                                    offmap_ethiopia = {
                                         has_status = ethiopia_golden_age
                                     }
                                 }
@@ -5508,7 +5508,7 @@ character_event = {
                             add_trait = levy_coordinator 
                             if = {
                                 limit = {
-                                    offmap_china = {
+                                    offmap_ethiopia = {
                                         has_status = ethiopia_golden_age
                                     }
                                 }
@@ -5536,7 +5536,7 @@ character_event = {
 
                     #Add second commander trait
                     if = {
-                        limit = { offmap_china = { has_status = ethiopia_golden_age } }
+                        limit = { offmap_ethiopia = { has_status = ethiopia_golden_age } }
                         random_list = {
                             25 = {
                                 trigger = { NOT = {trait = master_of_flame } }
@@ -5833,7 +5833,7 @@ character_event = {
                     }
                     if = {
                         limit = {
-                            offmap_china = {
+                            offmap_ethiopia = {
                                 has_status = ethiopia_golden_age
                             }
                         }
@@ -5894,7 +5894,7 @@ character_event = {
             show_scope_change = no
             if = {
                 limit = {
-                    offmap_china = {
+                    offmap_ethiopia = {
                         has_status = ethiopia_golden_age
                     }
                 }
@@ -5905,7 +5905,7 @@ character_event = {
         tooltip = {
             if = {
                 limit = {
-                    offmap_china = {
+                    offmap_ethiopia = {
                         has_status = ethiopia_golden_age
                     }
                 }
@@ -5941,7 +5941,7 @@ character_event = {
             show_scope_change = no
             if = {
                 limit = {
-                    offmap_china = {
+                    offmap_ethiopia = {
                         has_status = ethiopia_golden_age
                     }
                 }
@@ -6155,7 +6155,7 @@ character_event = { # Traveling Teacher
 				is_inaccessible_trigger = yes
 			}
 		}
-		offmap_china = {
+		offmap_ethiopia = {
             NOR = {
                 has_status = ethiopia_plague
 				has_status = ethiopia_famine

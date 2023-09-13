@@ -9221,13 +9221,6 @@ add_sympathy_for_prevs_true_religion_effect = {
 	}
 	if = {
 		limit = { 
-			PREV = { true_religion_group_american_native_trigger = yes } 
-			NOT = { religion_group = american_native }
-		}
-		add_trait = sympathy_american_native
-	}
-	if = {
-		limit = { 
 			PREV = { true_religion_group_christian_trigger = yes } 
 			NOT = { religion_group = christian }
 		}
@@ -9291,13 +9284,6 @@ add_sympathy_for_prevs_open_religion_effect = {
 			NOT = { religion_group = amero_syncretic }
 		}
 		add_trait = sympathy_amero_syncretic
-	}
-	if = {
-		limit = { 
-			PREV = { true_religion_group_american_native_trigger = yes } 
-			NOT = { religion_group = american_native }
-		}
-		add_trait = sympathy_american_native
 	}
 	if = {
 		limit = { 
@@ -14364,21 +14350,14 @@ spawn_good_commander_effect = {
 			#}
 			if = {
 				limit = {
-					OR = {
-						religion = gaian
-						religion = neomayan
-						has_religion_feature = religion_astrology
-					}
+					has_religion_feature = religion_astrology
 				}
 				hidden_tooltip = { add_western_zodiac_trait_effect = yes }
 			}
 			if = {
 				limit = {
 					has_religion_feature = religion_no_leader
-					OR = {
-						religion_group = pagan_group
-						religion_group = american_native
-					}
+					religion_group = pagan_group
 				}
 				random_list = { 
 					5 = {
@@ -14404,10 +14383,7 @@ spawn_good_commander_effect = {
 spawn_great_commander_effect = {
 	if = { 
 		limit = {
-			OR = {
-				religion = gaian
-				has_religion_feature = religion_matriarchal
-			}
+			has_religion_feature = religion_matriarchal
 		}
 		create_random_soldier = {
 			random_traits = yes
@@ -14424,8 +14400,7 @@ spawn_great_commander_effect = {
 	}
 	if = { 
 		limit = {
-			NOR = {
-				religion = gaian
+			NOT = {
 				has_religion_feature = religion_matriarchal
 			}
 		}
@@ -14567,21 +14542,14 @@ spawn_great_commander_effect = {
 			#}
 			if = {
 				limit = {
-					OR = {
-						religion = gaian
-						religion = neomayan
-						has_religion_feature = religion_astrology
-					}
+					has_religion_feature = religion_astrology
 				}
 				hidden_tooltip = { add_western_zodiac_trait_effect = yes }
 			}
 			if = {
 				limit = {
 					has_religion_feature = religion_no_leader
-					OR = {
-						religion_group = pagan_group
-						religion_group = american_native
-					}
+					religion_group = pagan_group
 				}
 				random_list = { 
 					5 = {
@@ -14608,10 +14576,7 @@ spawn_fantastic_commander_effect = {
 
 	if = { 
 		limit = {
-			OR = {
-				religion = gaian
-				has_religion_feature = religion_matriarchal
-			}
+			has_religion_feature = religion_matriarchal
 		}
 		create_random_soldier = {
 			random_traits = yes
@@ -14628,8 +14593,7 @@ spawn_fantastic_commander_effect = {
 	}
 	if = { 
 		limit = {
-			NOR = {
-				religion = gaian
+			NOT = {
 				has_religion_feature = religion_matriarchal
 			}
 		}
@@ -14893,10 +14857,7 @@ spawn_fantastic_commander_effect = {
 			if = {
 				limit = {
 					has_religion_feature = religion_no_leader
-					OR = {
-						religion_group = pagan_group
-						religion_group = american_native
-					}
+					religion_group = pagan_group
 				}
 				random_list = { 
 					5 = {
@@ -15030,10 +14991,7 @@ spawn_fantastic_diplomat_effect = {
 			if = {
 				limit = {
 					has_religion_feature = religion_no_leader
-					OR = {
-						religion_group = pagan_group
-						religion_group = american_native
-					}
+					religion_group = pagan_group
 				}
 				random_list = { 
 					5 = {
@@ -15149,10 +15107,7 @@ spawn_fantastic_scholar_effect = {
 			if = {
 				limit = {
 					has_religion_feature = religion_no_leader
-					OR = {
-						religion_group = pagan_group
-						religion_group = american_native
-					}
+					religion_group = pagan_group
 				}
 				random_list = { 
 					5 = {
@@ -15327,10 +15282,7 @@ spawn_elder_effect = {
 			if = {
 				limit = {
 					has_religion_feature = religion_no_leader
-					OR = {
-						religion_group = pagan_group
-						religion_group = american_native
-					}
+					religion_group = pagan_group
 				}
 				random_list = { 
 					5 = {
@@ -23761,7 +23713,6 @@ apply_dogmatic_on_start_effect = {
 		years = 1000
 	}
 	remove_intermarry = afro_syncretic
-	remove_intermarry = american_native
 	remove_intermarry = amero_syncretic
 	remove_intermarry = christian
 	remove_intermarry = oldworld
@@ -23921,10 +23872,7 @@ spawn_debutante_effect = {
 			if = {
 				limit = {
 					has_religion_feature = religion_no_leader
-					OR = {
-						religion_group = pagan_group
-						religion_group = american_native
-					}
+					religion_group = pagan_group
 				}
 				random_list = { 
 					5 = {
@@ -25991,7 +25939,6 @@ add_sympathy_for_religion_effect = {
 	trigger_switch = {
 		on_trigger = religion_group
 		afro_syncretic = { add_trait = sympathy_afro_syncretic }
-		american_native = { add_trait = sympathy_american_native }
 		amero_syncretic = { add_trait = sympathy_amero_syncretic }
 		christian = { add_trait = sympathy_christendom }
 		indian_group = { add_trait = sympathy_indian }

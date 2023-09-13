@@ -1010,7 +1010,7 @@ character_event = {
 		any_demesne_title = {
 			limit = {
 				has_title_flag = flag_holding_election
-				has_law = succ_democratic_elective
+				#has_law = succ_democratic_elective
 				current_heir = { character = FROM }
 			}
 			set_title_flag = flag_just_won_popular_election
@@ -1160,9 +1160,9 @@ character_event = {
 		any_demesne_title = {
 			limit = {
 				has_title_flag = flag_holding_election
-				OR = {
-					has_law = succ_democratic_elective
-				}
+				#OR = {
+				#	has_law = succ_democratic_elective
+				#}
 				current_heir = { character = FROM }
 			}
 			
@@ -1247,9 +1247,9 @@ character_event = {
 	
 	trigger = {
 		FROM = {
-			OR = {
-				has_law = succ_democratic_elective
-			}
+			#OR = {
+			#	has_law = succ_democratic_elective
+			#}
 			OR = {
 				#has_law = crown_term_length_0
 				#has_law = crown_term_length_1
@@ -1281,9 +1281,9 @@ character_event = {
 		any_demesne_title = {
 			limit = {
 				is_primary_holder_title_tier = yes
-				OR = {
-					has_law = succ_democratic_elective
-				}
+				#OR = {
+				#	has_law = succ_democratic_elective
+				#}
 			}
 			set_title_flag = flag_holding_election
 		}
