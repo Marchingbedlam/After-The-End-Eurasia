@@ -47,7 +47,7 @@ character_event = { #you have to practice
 	trigger = {
 		AND = {
 			trait = brass_chorus
-			has_artifact_flag = brasschorus
+			any_artifact = { has_artifact_flag = brasschorus }
 			religion = lutheran
 			prisoner = no
 			NOT = {
@@ -109,7 +109,7 @@ character_event = { #we dooting in the church
 	trigger = {
 		AND = {
 			trait = brass_chorus
-			has_artifact_flag = brasschorus
+			any_artifact = { has_artifact_flag = brasschorus }
 			religion = lutheran
 			prisoner = no
 			NOT = {
@@ -175,7 +175,7 @@ character_event = { #people are arguing during practice
 	trigger = {
 		AND = {
 			trait = brass_chorus
-			has_artifact_flag = brasschorus
+			any_artifact = { has_artifact_flag = brasschorus }
 			religion = lutheran
 			prisoner = no
 			NOT = {

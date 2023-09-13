@@ -231,7 +231,7 @@ character_event = {
 			prestige = -50
 			scaled_wealth = 1
 			random = { chance = 50 change_learning = 1 }
-			religion_authority = { add_character_modifier = disgraced_philospher }
+			#religion_authority = { add_character_modifier = disgraced_philospher }
 			ai_chance = {
 				factor = 30
 				modifier = { factor = 2 trait = humble }
@@ -244,7 +244,7 @@ character_event = {
 			name = EVTOPT_educate_write_pride
 			prestige = -50
 			piety = -100
-			religion_authority = { add_character_modifier = disgraced_philospher }
+			#religion_authority = { add_character_modifier = disgraced_philospher }
 			hidden_tooltip = {
 				ROOT = {
 					limit = { religion = neuhumanist }

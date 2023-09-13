@@ -88,16 +88,6 @@ character_event = {
 
 	fail_trigger_effect = {
 		clr_character_flag = being_recruited_by_the_satanists
-		clr_character_flag = being_recruited_by_the_trollcrafters
-		clr_character_flag = being_recruited_by_the_cult_of_kali
-		clr_character_flag = being_recruited_by_the_plaguebringers
-		clr_character_flag = being_recruited_by_the_illuminati
-		clr_character_flag = being_recruited_by_cult_of_xolotl
-		clr_character_flag = being_recruited_by_bohemian_grove
-		clr_character_flag = being_recruited_by_davy_jones_mates
-		clr_character_flag = being_recruited_by_starry_wisdom
-
-		clr_character_flag = being_recruited_by_the_unseelie
 	}
 
 	#Approving of heretics
@@ -113,12 +103,9 @@ character_event = {
 				trait = bad_priest_christian
 				trait = bad_priest_muslim
 				trait = bad_priest_norse
-				#trait = bad_priest_tengri
-				#trait = bad_priest_zoroastrian
-				trait = bad_priest_americanist
-				#trait = bad_priest_aztec
-				trait = bad_druid
-				trait = bad_priest_mormon
+				trait = bad_priest_tengri
+				trait = bad_priest_zoroastrian
+				trait = bad_priest_aztec
 			}
 		}
 
@@ -156,12 +143,9 @@ character_event = {
 					trait = bad_priest_christian
 					trait = bad_priest_muslim
 					trait = bad_priest_norse
-					#trait = bad_priest_tengri
-					#trait = bad_priest_zoroastrian
-					trait = bad_priest_americanist
-					#trait = bad_priest_aztec
-					trait = bad_druid
-					trait = bad_priest_mormon
+					trait = bad_priest_tengri
+					trait = bad_priest_zoroastrian
+					trait = bad_priest_aztec
 				}
 			}
 			modifier = {
@@ -183,53 +167,7 @@ character_event = {
 						has_character_flag = being_recruited_by_the_satanists
 						true_religion_group_christian_trigger = no
 						true_religion_group_muslim_trigger = no
-						true_religion_group_cult_of_saints_trigger = no
-						true_religion_group_latter_day_saints_trigger = no
 						true_religion_group_jewish_group_trigger = no
-						true_religion_revelationist_trigger = no
-						true_religion_revelationist_reformed_trigger = no
-						true_religion_rastafarian_trigger = no
-					}
-					AND = {
-						has_character_flag = being_recruited_by_the_trollcrafters
-						true_religion_norse_pagan_reformed_trigger = no
-						true_religion_norse_pagan_trigger = no
-					}
-					AND = {
-						has_character_flag = being_recruited_by_the_cult_of_kali
-						true_religion_hindu_trigger = no
-					}
-					AND = {
-						has_character_flag = being_recruited_by_the_plaguebringers
-						true_religion_peyotist_trigger = no
-						true_religion_midewiwin_or_reformed_trigger = no
-						true_religion_raven_tales_or_reformed_trigger = no
-					}
-					AND = {
-						has_character_flag = being_recruited_by_the_illuminati
-						true_religion_group_oldworld_trigger = yes
-					}
-					AND = {
-						has_character_flag = being_recruited_by_cult_of_xolotl
-						true_religion_group_mesoamerican_gods_trigger = no
-					}
-					AND = {
-						has_character_flag = being_recruited_by_bohemian_grove
-						true_religion_shinto_trigger = no
-						true_religion_nousthreskeia_trigger = no
-					}
-					AND = {
-						has_character_flag = being_recruited_by_davy_jones_mates
-						true_religion_group_nautical_trigger = no
-					}
-					AND = {
-						has_character_flag = being_recruited_by_starry_wisdom
-						true_religion_occultist_trigger = no
-						true_religion_occultist_reformed_trigger = no
-					}
-					AND = {
-						has_character_flag = being_recruited_by_the_unseelie
-						true_religion_in_celtic_subgroup_trigger = yes
 					}
 				}
 			}
@@ -253,15 +191,6 @@ character_event = {
 		set_character_flag = disapproves_of_satanism
 
 		clr_character_flag = being_recruited_by_the_satanists
-		clr_character_flag = being_recruited_by_the_trollcrafters
-		clr_character_flag = being_recruited_by_the_cult_of_kali
-		clr_character_flag = being_recruited_by_the_plaguebringers
-		clr_character_flag = being_recruited_by_the_illuminati
-		clr_character_flag = being_recruited_by_cult_of_xolotl
-		clr_character_flag = being_recruited_by_bohemian_grove
-		clr_character_flag = being_recruited_by_davy_jones_mates
-		clr_character_flag = being_recruited_by_starry_wisdom
-		clr_character_flag = being_recruited_by_the_unseelie
 
 		hidden_effect = { 
 			event_target:satanists_recruiter = { 
@@ -459,15 +388,6 @@ character_event = { # event notifying recruitee that "Something must've gone wro
 		}
 		custom_tooltip = { text = EVTTOOLTIP_MNM_6995 }
 		clr_character_flag = being_recruited_by_the_satanists
-		clr_character_flag = being_recruited_by_the_trollcrafters
-		clr_character_flag = being_recruited_by_the_cult_of_kali
-		clr_character_flag = being_recruited_by_the_plaguebringers
-		clr_character_flag = being_recruited_by_the_illuminati
-		clr_character_flag = being_recruited_by_cult_of_xolotl
-		clr_character_flag = being_recruited_by_bohemian_grove
-		clr_character_flag = being_recruited_by_davy_jones_mates
-		clr_character_flag = being_recruited_by_starry_wisdom
-		clr_character_flag = being_recruited_by_the_unseelie
 		clr_character_flag = dw_recruitment_end_unable
 	}
 }
@@ -549,14 +469,11 @@ character_event = {
 				ai = no
 				NOT = { controls_religion = yes }
 				trait = bad_priest_christian
-				#trait = bad_priest_muslim
+				trait = bad_priest_muslim
 				trait = bad_priest_norse
-				#trait = bad_priest_tengri
-				#trait = bad_priest_zoroastrian
-				trait = bad_priest_americanist
-				#trait = bad_priest_aztec
-				trait = bad_druid
-				trait = bad_priest_mormon
+				trait = bad_priest_tengri
+				trait = bad_priest_zoroastrian
+				trait = bad_priest_aztec
 			}
 		}
 		
@@ -596,14 +513,11 @@ character_event = {
 				factor = 1.5
 				OR = {
 					trait = bad_priest_christian
-					#trait = bad_priest_muslim
+					trait = bad_priest_muslim
 					trait = bad_priest_norse
-					#trait = bad_priest_tengri
-					#trait = bad_priest_zoroastrian
-					trait = bad_priest_americanist
-					#trait = bad_priest_aztec
-					trait = bad_druid
-					trait = bad_priest_mormon
+					trait = bad_priest_tengri
+					trait = bad_priest_zoroastrian
+					trait = bad_priest_aztec
 				}
 			}
 			modifier = {
@@ -655,15 +569,6 @@ character_event = {
 		set_character_flag = unwilling_to_join
 		
 		clr_character_flag = being_recruited_by_the_satanists
-		clr_character_flag = being_recruited_by_the_trollcrafters
-		clr_character_flag = being_recruited_by_the_cult_of_kali
-		clr_character_flag = being_recruited_by_the_plaguebringers
-		clr_character_flag = being_recruited_by_the_illuminati
-		clr_character_flag = being_recruited_by_cult_of_xolotl
-		clr_character_flag = being_recruited_by_bohemian_grove
-		clr_character_flag = being_recruited_by_davy_jones_mates
-		clr_character_flag = being_recruited_by_starry_wisdom
-		clr_character_flag = being_recruited_by_the_unseelie
 		
 		hidden_effect = { character_event = { id = MNM.6998 } } #to recruiter - via ping: recruit said no
 		
@@ -834,15 +739,6 @@ character_event = {
 		name = EVTOPTB_7005
 		custom_tooltip = { text = EVTOPTB_7005_TT }
 		clr_character_flag = being_recruited_by_the_satanists
-		clr_character_flag = being_recruited_by_the_trollcrafters
-		clr_character_flag = being_recruited_by_the_cult_of_kali
-		clr_character_flag = being_recruited_by_the_plaguebringers
-		clr_character_flag = being_recruited_by_the_illuminati
-		clr_character_flag = being_recruited_by_cult_of_xolotl
-		clr_character_flag = being_recruited_by_bohemian_grove
-		clr_character_flag = being_recruited_by_davy_jones_mates
-		clr_character_flag = being_recruited_by_starry_wisdom
-		clr_character_flag = being_recruited_by_the_unseelie
 
 		hidden_effect = { character_event = { id = MNM.6996 days = 1 } } # turn down the satanists
 
@@ -1278,182 +1174,6 @@ letter_event = {
 					break = yes
 				}
 			}
-			if = {
-				limit = {
-					prefers_men_trigger = yes
-					has_character_flag = being_recruited_by_the_trollcrafters
-					any_society_member = {
-						society_member_of = the_trollcrafters
-						is_female = no
-						is_attractive_trigger = yes
-					}
-				}
-				random_society_member = {
-					limit = {
-						society_member_of = the_trollcrafters
-						is_female = no
-						is_attractive_trigger = yes
-					}
-					save_event_target_as = satanists_inductor
-					set_character_flag = event_MNM_7015
-					character_event = { id = MNM.7013 }
-					break = yes
-				}
-			}
-			if = {
-				limit = {
-					prefers_men_trigger = yes
-					has_character_flag = being_recruited_by_the_cult_of_kali
-					any_society_member = {
-						society_member_of = the_cult_of_kali
-						is_female = no
-						is_attractive_trigger = yes
-					}
-				}
-				random_society_member = {
-					limit = {
-						society_member_of = the_cult_of_kali
-						is_female = no
-						is_attractive_trigger = yes
-					}
-					save_event_target_as = satanists_inductor
-					set_character_flag = event_MNM_7015
-					character_event = { id = MNM.7013 }
-					break = yes
-				}
-			}
-			if = {
-				limit = {
-					prefers_men_trigger = yes
-					has_character_flag = being_recruited_by_the_plaguebringers
-					any_society_member = {
-						society_member_of = the_plaguebringers
-						is_female = no
-						is_attractive_trigger = yes
-					}
-				}
-				random_society_member = {
-					limit = {
-						society_member_of = the_plaguebringers
-						is_female = no
-						is_attractive_trigger = yes
-					}
-					save_event_target_as = satanists_inductor
-					set_character_flag = event_MNM_7015
-					character_event = { id = MNM.7013 }
-					break = yes
-				}
-			}
-			if = {
-				limit = {
-					prefers_men_trigger = yes
-					has_character_flag = being_recruited_by_the_illuminati
-					any_society_member = {
-						society_member_of = the_illuminati
-						is_female = no
-						is_attractive_trigger = yes
-					}
-				}
-				random_society_member = {
-					limit = {
-						society_member_of = the_illuminati
-						is_female = no
-						is_attractive_trigger = yes
-					}
-					save_event_target_as = satanists_inductor
-					set_character_flag = event_MNM_7015
-					character_event = { id = MNM.7013 }
-					break = yes
-				}
-			}
-			if = {
-				limit = {
-					prefers_men_trigger = yes
-					has_character_flag = being_recruited_by_cult_of_xolotl
-					any_society_member = {
-						society_member_of = cult_of_xolotl
-						is_female = no
-						is_attractive_trigger = yes
-					}
-				}
-				random_society_member = {
-					limit = {
-						society_member_of = cult_of_xolotl
-						is_female = no
-						is_attractive_trigger = yes
-					}
-					save_event_target_as = satanists_inductor
-					set_character_flag = event_MNM_7015
-					character_event = { id = MNM.7013 }
-					break = yes
-				}
-			}
-			if = {
-				limit = {
-					prefers_men_trigger = yes
-					has_character_flag = being_recruited_by_bohemian_grove
-					any_society_member = {
-						society_member_of = bohemian_grove
-						is_female = no
-						is_attractive_trigger = yes
-					}
-				}
-				random_society_member = {
-					limit = {
-						society_member_of = bohemian_grove
-						is_female = no
-						is_attractive_trigger = yes
-					}
-					save_event_target_as = satanists_inductor
-					set_character_flag = event_MNM_7015
-					character_event = { id = MNM.7013 }
-					break = yes
-				}
-			}
-			if = {
-				limit = {
-					prefers_men_trigger = yes
-					has_character_flag = being_recruited_by_davy_jones_mates
-					any_society_member = {
-						society_member_of = davy_jones_mates
-						is_female = no
-						is_attractive_trigger = yes
-					}
-				}
-				random_society_member = {
-					limit = {
-						society_member_of = davy_jones_mates
-						is_female = no
-						is_attractive_trigger = yes
-					}
-					save_event_target_as = satanists_inductor
-					set_character_flag = event_MNM_7015
-					character_event = { id = MNM.7013 }
-					break = yes
-				}
-			}
-			if = {
-				limit = {
-					prefers_men_trigger = yes
-					has_character_flag = being_recruited_by_starry_wisdom
-					any_society_member = {
-						society_member_of = starry_wisdom
-						is_female = no
-						is_attractive_trigger = yes
-					}
-				}
-				random_society_member = {
-					limit = {
-						society_member_of = starry_wisdom
-						is_female = no
-						is_attractive_trigger = yes
-					}
-					save_event_target_as = satanists_inductor
-					set_character_flag = event_MNM_7015
-					character_event = { id = MNM.7013 }
-					break = yes
-				}
-			}
 			#start of prefer women 
 			if = {
 				limit = {
@@ -1468,204 +1188,6 @@ letter_event = {
 				random_society_member = {
 					limit = {
 						society_member_of = the_satanists
-						is_female = yes
-						is_attractive_trigger = yes
-					}
-					save_event_target_as = satanists_inductor
-					set_character_flag = event_MNM_7015
-					character_event = { id = MNM.7013 }
-					break = yes
-				}
-			}
-			if = {
-				limit = {
-					prefers_men_trigger = no
-					has_character_flag = being_recruited_by_the_trollcrafters
-					any_society_member = {
-						society_member_of = the_trollcrafters
-						is_female = yes
-						is_attractive_trigger = yes
-					}
-				}
-				random_society_member = {
-					limit = {
-						society_member_of = the_trollcrafters
-						is_female = yes
-						is_attractive_trigger = yes
-					}
-					save_event_target_as = satanists_inductor
-					set_character_flag = event_MNM_7015
-					character_event = { id = MNM.7013 }
-					break = yes
-				}
-			}
-			if = {
-				limit = {
-					prefers_men_trigger = no
-					has_character_flag = being_recruited_by_the_cult_of_kali
-					any_society_member = {
-						society_member_of = the_cult_of_kali
-						is_female = yes
-						is_attractive_trigger = yes
-					}
-				}
-				random_society_member = {
-					limit = {
-						society_member_of = the_cult_of_kali
-						is_female = yes
-						is_attractive_trigger = yes
-					}
-					save_event_target_as = satanists_inductor
-					set_character_flag = event_MNM_7015
-					character_event = { id = MNM.7013 }
-					break = yes
-				}
-			}
-			if = {
-				limit = {
-					prefers_men_trigger = no
-					has_character_flag = being_recruited_by_the_plaguebringers
-					any_society_member = {
-						society_member_of = the_plaguebringers
-						is_female = yes
-						is_attractive_trigger = yes
-					}
-				}
-				random_society_member = {
-					limit = {
-						society_member_of = the_plaguebringers
-						is_female = yes
-						is_attractive_trigger = yes
-					}
-					save_event_target_as = satanists_inductor
-					set_character_flag = event_MNM_7015
-					character_event = { id = MNM.7013 }
-					break = yes
-				}
-			}
-			if = {
-				limit = {
-					prefers_men_trigger = no
-					has_character_flag = being_recruited_by_the_illuminati
-					any_society_member = {
-						society_member_of = the_illuminati
-						is_female = yes
-						is_attractive_trigger = yes
-					}
-				}
-				random_society_member = {
-					limit = {
-						society_member_of = the_illuminati
-						is_female = yes
-						is_attractive_trigger = yes
-					}
-					save_event_target_as = satanists_inductor
-					set_character_flag = event_MNM_7015
-					character_event = { id = MNM.7013 }
-					break = yes
-				}
-			}
-			if = {
-				limit = {
-					prefers_men_trigger = no
-					has_character_flag = being_recruited_by_cult_of_xolotl
-					any_society_member = {
-						society_member_of = cult_of_xolotl
-						is_female = yes
-						is_attractive_trigger = yes
-					}
-				}
-				random_society_member = {
-					limit = {
-						society_member_of = cult_of_xolotl
-						is_female = yes
-						is_attractive_trigger = yes
-					}
-					save_event_target_as = satanists_inductor
-					set_character_flag = event_MNM_7015
-					character_event = { id = MNM.7013 }
-					break = yes
-				}
-			}
-			if = {
-				limit = {
-					prefers_men_trigger = no
-					has_character_flag = being_recruited_by_bohemian_grove
-					any_society_member = {
-						society_member_of = bohemian_grove
-						is_female = yes
-						is_attractive_trigger = yes
-					}
-				}
-				random_society_member = {
-					limit = {
-						society_member_of = bohemian_grove
-						is_female = yes
-						is_attractive_trigger = yes
-					}
-					save_event_target_as = satanists_inductor
-					set_character_flag = event_MNM_7015
-					character_event = { id = MNM.7013 }
-					break = yes
-				}
-			}
-			if = {
-				limit = {
-					prefers_men_trigger = no
-					has_character_flag = being_recruited_by_davy_jones_mates
-					any_society_member = {
-						society_member_of = davy_jones_mates
-						is_female = yes
-						is_attractive_trigger = yes
-					}
-				}
-				random_society_member = {
-					limit = {
-						society_member_of = davy_jones_mates
-						is_female = yes
-						is_attractive_trigger = yes
-					}
-					save_event_target_as = satanists_inductor
-					set_character_flag = event_MNM_7015
-					character_event = { id = MNM.7013 }
-					break = yes
-				}
-			}
-			if = {
-				limit = {
-					prefers_men_trigger = no
-					has_character_flag = being_recruited_by_starry_wisdom
-					any_society_member = {
-						society_member_of = starry_wisdom
-						is_female = yes
-						is_attractive_trigger = yes
-					}
-				}
-				random_society_member = {
-					limit = {
-						society_member_of = starry_wisdom
-						is_female = yes
-						is_attractive_trigger = yes
-					}
-					save_event_target_as = satanists_inductor
-					set_character_flag = event_MNM_7015
-					character_event = { id = MNM.7013 }
-					break = yes
-				}
-			}
-			if = {
-				limit = {
-					prefers_men_trigger = no
-					has_character_flag = being_recruited_by_the_unseelie
-					any_society_member = {
-						society_member_of = unseelie_petitioners
-						is_female = yes
-						is_attractive_trigger = yes
-					}
-				}
-				random_society_member = {
-					limit = {
-						society_member_of = unseelie_petitioners
 						is_female = yes
 						is_attractive_trigger = yes
 					}
@@ -1705,15 +1227,6 @@ letter_event = {
 						trigger_switch = {
 							on_trigger = has_character_flag
 							being_recruited_by_the_satanists = { PREV = { join_society = the_satanists } }
-							being_recruited_by_the_trollcrafters = { PREV = { join_society = the_trollcrafters } }
-							being_recruited_by_the_cult_of_kali = { PREV = { join_society = the_cult_of_kali } }
-							being_recruited_by_the_plaguebringers = { PREV = { join_society = the_plaguebringers } }
-							being_recruited_by_the_illuminati = { PREV = { join_society = the_illuminati } }
-							being_recruited_by_cult_of_xolotl = { PREV = { join_society = cult_of_xolotl } }
-							being_recruited_by_bohemian_grove = { PREV = { join_society = bohemian_grove } }
-							being_recruited_by_davy_jones_mates = { PREV = { join_society = davy_jones_mates } }
-							being_recruited_by_starry_wisdom = { PREV = { join_society = starry_wisdom } }
-							being_recruited_by_the_unseelie = { PREV = { join_society = unseelie_petitioners }}
 						}
 					}
 					character_event = { id = MNM.7013 }
@@ -1748,15 +1261,6 @@ letter_event = {
 						trigger_switch = {
 							on_trigger = has_character_flag
 							being_recruited_by_the_satanists = { PREV = { join_society = the_satanists } }
-							being_recruited_by_the_trollcrafters = { PREV = { join_society = the_trollcrafters } }
-							being_recruited_by_the_cult_of_kali = { PREV = { join_society = the_cult_of_kali } }
-							being_recruited_by_the_plaguebringers = { PREV = { join_society = the_plaguebringers } }
-							being_recruited_by_the_illuminati = { PREV = { join_society = the_illuminati } }
-							being_recruited_by_cult_of_xolotl = { PREV = { join_society = cult_of_xolotl } }
-							being_recruited_by_bohemian_grove = { PREV = { join_society = bohemian_grove } }
-							being_recruited_by_davy_jones_mates = { PREV = { join_society = davy_jones_mates } }
-							being_recruited_by_starry_wisdom = { PREV = { join_society = starry_wisdom } }
-							being_recruited_by_the_unseelie = { PREV = { join_society = unseelie_petitioners }}
 						}
 					}
 					character_event = { id = MNM.7013 }
@@ -2010,15 +1514,6 @@ character_event = {
 		}
 		custom_tooltip = { text = EVTTOOLTIP_MNM_6993 }
 		clr_character_flag = being_recruited_by_the_satanists
-		clr_character_flag = being_recruited_by_the_trollcrafters
-		clr_character_flag = being_recruited_by_the_cult_of_kali
-		clr_character_flag = being_recruited_by_the_plaguebringers
-		clr_character_flag = being_recruited_by_the_illuminati
-		clr_character_flag = being_recruited_by_cult_of_xolotl
-		clr_character_flag = being_recruited_by_bohemian_grove
-		clr_character_flag = being_recruited_by_davy_jones_mates
-		clr_character_flag = being_recruited_by_starry_wisdom
-		clr_character_flag = being_recruited_by_the_unseelie
 		clr_character_flag = dw_recruitment_end_unable
 	}
 }
@@ -2224,105 +1719,6 @@ character_event = {
 						save_event_target_as = grand_master
 					}
 				}
-				if = { limit = { has_character_flag = being_recruited_by_the_trollcrafters }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = the_trollcrafters
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_the_cult_of_kali }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = the_cult_of_kali
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_the_plaguebringers }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = the_plaguebringers
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_the_illuminati }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = the_illuminati
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_cult_of_xolotl }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = cult_of_xolotl
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_bohemian_grove }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = bohemian_grove
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_davy_jones_mates }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = davy_jones_mates
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_starry_wisdom }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = starry_wisdom
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_the_unseelie }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = unseelie_petitioners
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
 				event_target:grand_master = { character_event = { id = MNM.7021 } }
 			}
 		}
@@ -2334,42 +1730,6 @@ character_event = {
 		if = {
 			limit = { has_character_flag = being_recruited_by_the_satanists }
 			join_society = the_satanists
-		}
-		if = {
-			limit = { has_character_flag = being_recruited_by_the_trollcrafters }
-			join_society = the_trollcrafters
-		}
-		if = {
-			limit = { has_character_flag = being_recruited_by_the_cult_of_kali }
-			join_society = the_cult_of_kali
-		}
-		if = {
-			limit = { has_character_flag = being_recruited_by_the_plaguebringers }
-			join_society = the_plaguebringers
-		}
-		if = {
-			limit = { has_character_flag = being_recruited_by_the_illuminati }
-			join_society = the_illuminati
-		}
-		if = {
-			limit = { has_character_flag = being_recruited_by_cult_of_xolotl }
-			join_society = cult_of_xolotl
-		}
-		if = {
-			limit = { has_character_flag = being_recruited_by_bohemian_grove }
-			join_society = bohemian_grove
-		}
-		if = {
-			limit = { has_character_flag = being_recruited_by_davy_jones_mates }
-			join_society = davy_jones_mates
-		}
-		if = {
-			limit = { has_character_flag = being_recruited_by_starry_wisdom }
-			join_society = starry_wisdom
-		}
-		if = {
-			limit = { has_character_flag = being_recruited_by_the_unseelie }
-			join_society = unseelie_petitioners
 		}
 
 		if = { 
@@ -2390,15 +1750,6 @@ character_event = {
 
 		hidden_effect = {
 			clr_character_flag = being_recruited_by_the_satanists
-			clr_character_flag = being_recruited_by_the_trollcrafters
-			clr_character_flag = being_recruited_by_the_cult_of_kali
-			clr_character_flag = being_recruited_by_the_plaguebringers
-			clr_character_flag = being_recruited_by_the_illuminati
-			clr_character_flag = being_recruited_by_cult_of_xolotl
-			clr_character_flag = being_recruited_by_bohemian_grove
-			clr_character_flag = being_recruited_by_davy_jones_mates
-			clr_character_flag = being_recruited_by_starry_wisdom
-			clr_character_flag = being_recruited_by_the_unseelie
 		}
 	}
 	option = {
@@ -2407,42 +1758,6 @@ character_event = {
 		if = {
 			limit = { has_character_flag = being_recruited_by_the_satanists }
 			join_society = the_satanists
-		}
-		if = {
-			limit = { has_character_flag = being_recruited_by_the_trollcrafters }
-			join_society = the_trollcrafters
-		}
-		if = {
-			limit = { has_character_flag = being_recruited_by_the_cult_of_kali }
-			join_society = the_cult_of_kali
-		}
-		if = {
-			limit = { has_character_flag = being_recruited_by_the_plaguebringers }
-			join_society = the_plaguebringers
-		}
-		if = {
-			limit = { has_character_flag = being_recruited_by_the_illuminati }
-			join_society = the_illuminati
-		}
-		if = {
-			limit = { has_character_flag = being_recruited_by_cult_of_xolotl }
-			join_society = cult_of_xolotl
-		}
-		if = {
-			limit = { has_character_flag = being_recruited_by_bohemian_grove }
-			join_society = bohemian_grove
-		}
-		if = {
-			limit = { has_character_flag = being_recruited_by_davy_jones_mates }
-			join_society = davy_jones_mates
-		}
-		if = {
-			limit = { has_character_flag = being_recruited_by_starry_wisdom }
-			join_society = starry_wisdom
-		}
-		if = {
-			limit = { has_character_flag = being_recruited_by_the_unseelie }
-			join_society = unseelie_petitioners
 		}
 
 		event_target:satanists_inductor = {
@@ -2467,116 +1782,9 @@ character_event = {
 						save_event_target_as = grand_master
 					}
 				}
-				if = { limit = { has_character_flag = being_recruited_by_the_trollcrafters }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = the_trollcrafters
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_the_cult_of_kali }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = the_cult_of_kali
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_the_plaguebringers }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = the_plaguebringers
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_the_illuminati }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = the_illuminati
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_cult_of_xolotl }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = cult_of_xolotl
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_bohemian_grove }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = bohemian_grove
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_davy_jones_mates }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = davy_jones_mates
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_starry_wisdom }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = starry_wisdom
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_the_unseelie }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = unseelie_petitioners
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
 				event_target:grand_master = { character_event = { id = MNM.7021 } }
 			}
 			clr_character_flag = being_recruited_by_the_satanists
-			clr_character_flag = being_recruited_by_the_trollcrafters
-			clr_character_flag = being_recruited_by_the_cult_of_kali
-			clr_character_flag = being_recruited_by_the_plaguebringers
-			clr_character_flag = being_recruited_by_the_illuminati
-			clr_character_flag = being_recruited_by_cult_of_xolotl
-			clr_character_flag = being_recruited_by_bohemian_grove
-			clr_character_flag = being_recruited_by_davy_jones_mates
-			clr_character_flag = being_recruited_by_the_unseelie
 		}
 	}
 }
@@ -2620,119 +1828,12 @@ character_event = {
 						save_event_target_as = grand_master
 					}
 				}
-				if = { limit = { has_character_flag = being_recruited_by_the_trollcrafters }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = the_trollcrafters
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_the_cult_of_kali }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = the_cult_of_kali
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_the_plaguebringers }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = the_plaguebringers
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_the_illuminati }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = the_illuminati
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_cult_of_xolotl }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = cult_of_xolotl
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_bohemian_grove }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = bohemian_grove
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_davy_jones_mates }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = davy_jones_mates
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_starry_wisdom }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = starry_wisdom
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_the_unseelie }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = unseelie_petitioners
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
 
 				event_target:grand_master = { character_event = { id = MNM.7021 } }
 			}
 		}
 
 		clr_character_flag = being_recruited_by_the_satanists
-		clr_character_flag = being_recruited_by_the_trollcrafters
-		clr_character_flag = being_recruited_by_the_cult_of_kali
-		clr_character_flag = being_recruited_by_the_plaguebringers
-		clr_character_flag = being_recruited_by_the_illuminati
-		clr_character_flag = being_recruited_by_cult_of_xolotl
-		clr_character_flag = being_recruited_by_bohemian_grove
-		clr_character_flag = being_recruited_by_davy_jones_mates
-		clr_character_flag = being_recruited_by_the_unseelie
 	}
 
 	#Escape successfully
@@ -2780,14 +1881,6 @@ character_event = {
 		name = EVTOPTA_7020
 		custom_tooltip = { text = EVTOPTA_7020_TT}
 		clr_character_flag = being_recruited_by_the_satanists
-		clr_character_flag = being_recruited_by_the_trollcrafters
-		clr_character_flag = being_recruited_by_the_cult_of_kali
-		clr_character_flag = being_recruited_by_the_plaguebringers
-		clr_character_flag = being_recruited_by_the_illuminati
-		clr_character_flag = being_recruited_by_cult_of_xolotl
-		clr_character_flag = being_recruited_by_bohemian_grove
-		clr_character_flag = being_recruited_by_davy_jones_mates
-		clr_character_flag = being_recruited_by_the_unseelie
 	}
 }
 
@@ -2851,15 +1944,7 @@ character_event = {
 						is_in_society = no
 						OR = {
 							has_character_flag = being_recruited_by_the_satanists
-							has_character_flag = being_recruited_by_the_trollcrafters
-							has_character_flag = being_recruited_by_the_cult_of_kali
-							has_character_flag = being_recruited_by_the_plaguebringers
-							has_character_flag = being_recruited_by_the_illuminati
-							has_character_flag = being_recruited_by_cult_of_xolotl
-							has_character_flag = being_recruited_by_bohemian_grove
-							has_character_flag = being_recruited_by_davy_jones_mates
 							has_character_flag = assassins_attempted_recruitment
-							has_character_flag = being_recruited_by_the_unseelie
 						}
 					}
 				}
@@ -2869,116 +1954,6 @@ character_event = {
 							society_rank = {
 								rank == 4
 								society = the_satanists
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_the_trollcrafters }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = the_trollcrafters
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_the_cult_of_kali }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = the_cult_of_kali
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_the_plaguebringers }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = the_plaguebringers
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_the_illuminati }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = the_illuminati
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_cult_of_xolotl }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = cult_of_xolotl
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_bohemian_grove }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = bohemian_grove
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_davy_jones_mates }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = davy_jones_mates
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_starry_wisdom }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = starry_wisdom
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = assassins_attempted_recruitment }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = the_assassins
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_the_unseelie }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = unseelie_petitioners
 							}
 						}
 						save_event_target_as = grand_master
@@ -3048,58 +2023,13 @@ letter_event = {
 			join_society = the_satanists
 		}
 		if = {
-			limit = { has_character_flag = being_recruited_by_the_trollcrafters }
-			join_society = the_trollcrafters
-		}
-		if = {
-			limit = { has_character_flag = being_recruited_by_the_cult_of_kali }
-			join_society = the_cult_of_kali
-		}
-		if = {
-			limit = { has_character_flag = being_recruited_by_the_plaguebringers }
-			join_society = the_plaguebringers
-		}
-		if = {
-			limit = { has_character_flag = being_recruited_by_the_illuminati }
-			join_society = the_illuminati
-		}
-		if = {
-			limit = { has_character_flag = being_recruited_by_cult_of_xolotl }
-			join_society = cult_of_xolotl
-		}
-		if = {
-			limit = { has_character_flag = being_recruited_by_bohemian_grove }
-			join_society = bohemian_grove
-		}
-		if = {
-			limit = { has_character_flag = being_recruited_by_davy_jones_mates }
-			join_society = davy_jones_mates
-		}
-		if = {
-			limit = { has_character_flag = being_recruited_by_starry_wisdom }
-			join_society = starry_wisdom
-		}
-		if = {
 			limit = { has_character_flag = assassins_attempted_recruitment }
 			join_society = the_assassins
 		}
 
-		if = {
-			limit = { has_character_flag = being_recruited_by_the_unseelie }
-			join_society = unseelie_petitioners
-		}
-
 		hidden_effect = {
 			clr_character_flag = being_recruited_by_the_satanists
-			clr_character_flag = being_recruited_by_the_trollcrafters
-			clr_character_flag = being_recruited_by_the_cult_of_kali
-			clr_character_flag = being_recruited_by_the_plaguebringers
-			clr_character_flag = being_recruited_by_the_illuminati
-			clr_character_flag = being_recruited_by_cult_of_xolotl
-			clr_character_flag = being_recruited_by_bohemian_grove
-			clr_character_flag = being_recruited_by_davy_jones_mates
 			clr_character_flag = assassins_attempted_recruitment
-			clr_character_flag = being_recruited_by_the_unseelie
 		}
 	}
 
@@ -3113,15 +2043,7 @@ letter_event = {
 		}
 		hidden_effect = {
 			clr_character_flag = being_recruited_by_the_satanists
-			clr_character_flag = being_recruited_by_the_trollcrafters
-			clr_character_flag = being_recruited_by_the_cult_of_kali
-			clr_character_flag = being_recruited_by_the_plaguebringers
-			clr_character_flag = being_recruited_by_the_illuminati
-			clr_character_flag = being_recruited_by_cult_of_xolotl
-			clr_character_flag = being_recruited_by_bohemian_grove
-			clr_character_flag = being_recruited_by_davy_jones_mates
 			clr_character_flag = assassins_attempted_recruitment
-			clr_character_flag = being_recruited_by_the_unseelie
 		}
 		ai_chance = { factor = 0 }
 	}
@@ -3813,14 +2735,11 @@ character_event = {
 						event_target:corrupt_priest_target = {
 							OR = {
 								trait = bad_priest_christian
-								#trait = bad_priest_muslim
+								trait = bad_priest_muslim
 								trait = bad_priest_norse
-								#trait = bad_priest_tengri
-								#trait = bad_priest_zoroastrian
-								trait = bad_priest_americanist
-								#trait = bad_priest_aztec
-								trait = bad_druid
-								trait = bad_priest_mormon
+								trait = bad_priest_tengri
+								trait = bad_priest_zoroastrian
+								trait = bad_priest_aztec
 							}
 						}
 					}
@@ -3887,14 +2806,11 @@ character_event = {
 						event_target:corrupt_priest_target = {
 							OR = {
 								trait = bad_priest_christian
-								#trait = bad_priest_muslim
+								trait = bad_priest_muslim
 								trait = bad_priest_norse
-								#trait = bad_priest_tengri
-								#trait = bad_priest_zoroastrian
-								trait = bad_priest_americanist
-								#trait = bad_priest_aztec
-								trait = bad_druid
-								trait = bad_priest_mormon
+								trait = bad_priest_tengri
+								trait = bad_priest_zoroastrian
+								trait = bad_priest_aztec
 							}
 						}
 					}
@@ -3932,14 +2848,11 @@ character_event = {
 						event_target:corrupt_priest_target = {
 							OR = {
 								trait = bad_priest_christian
-								#trait = bad_priest_muslim
+								trait = bad_priest_muslim
 								trait = bad_priest_norse
-								#trait = bad_priest_tengri
-								#trait = bad_priest_zoroastrian
-								trait = bad_priest_americanist
-								#trait = bad_priest_aztec
-								trait = bad_druid
-								trait = bad_priest_mormon
+								trait = bad_priest_tengri
+								trait = bad_priest_zoroastrian
+								trait = bad_priest_aztec
 							}
 						}
 					}
@@ -4456,14 +3369,11 @@ character_event = {
 						event_target:corrupt_priest_target = {
 							OR = {
 								trait = bad_priest_christian
-								#trait = bad_priest_muslim
+								trait = bad_priest_muslim
 								trait = bad_priest_norse
-								#trait = bad_priest_tengri
-								#trait = bad_priest_zoroastrian
-								trait = bad_priest_americanist
-								#trait = bad_priest_aztec
-								trait = bad_druid
-								trait = bad_priest_mormon
+								trait = bad_priest_tengri
+								trait = bad_priest_zoroastrian
+								trait = bad_priest_aztec
 							}
 						}
 					}
@@ -4530,14 +3440,11 @@ character_event = {
 						event_target:corrupt_priest_target = {
 							OR = {
 								trait = bad_priest_christian
-								#trait = bad_priest_muslim
+								trait = bad_priest_muslim
 								trait = bad_priest_norse
-								#trait = bad_priest_tengri
-								#trait = bad_priest_zoroastrian
-								trait = bad_priest_americanist
-								#trait = bad_priest_aztec
-								trait = bad_druid
-								trait = bad_priest_mormon
+								trait = bad_priest_tengri
+								trait = bad_priest_zoroastrian
+								trait = bad_priest_aztec
 							}
 						}
 					}
@@ -4575,14 +3482,11 @@ character_event = {
 						event_target:corrupt_priest_target = {
 							OR = {
 								trait = bad_priest_christian
-								#trait = bad_priest_muslim
+								trait = bad_priest_muslim
 								trait = bad_priest_norse
-								#trait = bad_priest_tengri
-								#trait = bad_priest_zoroastrian
-								trait = bad_priest_americanist
-								#trait = bad_priest_aztec
-								trait = bad_druid
-								trait = bad_priest_mormon
+								trait = bad_priest_tengri
+								trait = bad_priest_zoroastrian
+								trait = bad_priest_aztec
 							}
 						}
 					}
@@ -5654,42 +4558,6 @@ character_event = {
 				limit = { ROOT = { society_member_of = the_satanists } }
 				join_society = the_satanists
 			}
-			if = {
-				limit = { ROOT = { society_member_of = the_trollcrafters } }
-				join_society = the_trollcrafters
-			}
-			if = {
-				limit = { ROOT = { society_member_of = the_cult_of_kali } }
-				join_society = the_cult_of_kali
-			}
-			if = {
-				limit = { ROOT = { society_member_of = the_plaguebringers } }
-				join_society = the_plaguebringers
-			}
-			if = {
-				limit = { ROOT = { society_member_of = the_illuminati } }
-				join_society = the_illuminati
-			}
-			if = {
-				limit = { ROOT = { society_member_of = cult_of_xolotl } }
-				join_society = cult_of_xolotl
-			}
-			if = {
-				limit = { ROOT = { society_member_of = bohemian_grove } }
-				join_society = bohemian_grove
-			}
-			if = {
-				limit = { ROOT = { society_member_of = davy_jones_mates } }
-				join_society = davy_jones_mates
-			}
-			if = {
-				limit = { ROOT = { society_member_of = starry_wisdom } }
-				join_society = starry_wisdom
-			}
-			if = {
-				limit = { ROOT = { society_member_of = unseelie_petitioners } }
-				join_society = unseelie_petitioners
-			}
 		}
 		
 		name = EVTOPTA_MNM_7123
@@ -6705,10 +5573,6 @@ character_event = {
 				}
 				random = {
 					chance = 5
-					modifier = {
-						society_member_of = the_trollcrafters
-						factor = 4
-					}
 					add_trait = one_eyed
 				}
 			}
@@ -7038,70 +5902,6 @@ character_event = { #birth
 			}
 			ROOT = {
 				set_character_flag = demonspawn_will_join_satanists
-			}
-		}
-		if = {
-			limit = {
-				mother = { society_member_of = the_plaguebringers }
-			}
-			ROOT = {
-				set_character_flag = demonspawn_will_join_plaguebringers
-			}
-		}
-		if = {
-			limit = {
-				mother = { society_member_of = the_cult_of_kali }
-			}
-			ROOT = {
-				set_character_flag = demonspawn_will_join_cult_of_kali
-			}
-		}
-		if = {
-			limit = {
-				mother = { society_member_of = the_trollcrafters }
-			}
-			ROOT = {
-				set_character_flag = demonspawn_will_join_trollcrafters
-			}
-		}
-		if = {
-			limit = {
-				mother = { society_member_of = the_illuminati }
-			}
-			ROOT = {
-				set_character_flag = demonspawn_will_join_the_illuminati
-			}
-		}
-		if = {
-			limit = {
-				mother = { society_member_of = cult_of_xolotl }
-			}
-			ROOT = {
-				set_character_flag = demonspawn_will_join_cult_of_xolotl
-			}
-		}
-		if = {
-			limit = {
-				mother = { society_member_of = bohemian_grove }
-			}
-			ROOT = {
-				set_character_flag = demonspawn_will_join_bohemian_grove
-			}
-		}
-		if = {
-			limit = {
-				mother = { society_member_of = starry_wisdom }
-			}
-			ROOT = {
-				set_character_flag = demonspawn_will_join_starry_wisdom
-			}
-		}
-		if = {
-			limit = {
-				mother = { society_member_of = unseelie_petitioners }
-			}
-			ROOT = {
-				set_character_flag = demonspawn_will_join_unseelie_petitioners
 			}
 		}
 		remove_trait = sickly

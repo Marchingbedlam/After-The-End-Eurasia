@@ -145,7 +145,7 @@ character_event = {
 			}
 			20 = {
 				trigger = {
-					NOT = { society_member_of = warrior_lodge_mexican }
+					#NOT = { society_member_of = warrior_lodge_mexican }
 					age = 16
 					society = {
 						any_society_member = {
@@ -225,7 +225,7 @@ character_event = {
 			20 = {
 				trigger = {
 					is_landed = yes
-					NOT = { society_member_of = warrior_lodge_mexican }
+					#NOT = { society_member_of = warrior_lodge_mexican }
 					any_independent_ruler = {
 						any_realm_title = {
 							tier = COUNT
@@ -337,62 +337,62 @@ character_event = {
 					character_event = { id = HF.25070 } #Small chance for tattoos to Rank 3 and 4s.
 				}
 			}
-			20 = {
-				trigger = {
-					NOT = { has_character_modifier = recent_match_timer }
-					society_member_of = warrior_lodge_mexican
-					age = 16
-					society = {
-						any_society_member = {
-							ai = yes
-							age = 16
-							NOT = { character = ROOT }
-							is_inaccessible_or_incapable_trigger = no
-							NOT = { has_character_modifier = bedridden_illness }
-							NOT = { has_character_modifier = severe_illness }
-							NOT = { has_character_flag = call_to_legend_active }
-						}
-					}
-				}
-				event_target:lodge_hero = {
-					character_event = { id = HF.10522 } #Wrestle Someone
-				}
-			}
-			20 = {
-				trigger = {
-					society_member_of = warrior_lodge_mexican
-					age = 16
-					NOT = { has_character_modifier = bedridden_illness }
-					NOT = { has_character_modifier = severe_illness }
-					NOT = { has_character_flag = call_to_legend_active }
-					OR = {
-						NOT = { has_character_flag = w_training_flag }
-						had_character_flag = { flag = w_training_flag days = 730 }
-					}
-				}
-				event_target:lodge_hero = {
-					character_event = { id = WR.1 } #Ping to tell you to train
-				}
-			}
-			100 = {
-				trigger = {
-					society_member_of = warrior_lodge_mexican
-					society_rank = 3
-					age = 16
-					NOT = {
-						trait = w_heel
-					}
-					NOT = {
-						trait = w_face
-					}
-					NOT = {
-						has_character_flag = choosing_persona
-					}
-				}
-				event_target:lodge_hero = {
-					society_quest_event = { id = WR.100 } #Pick Persona
-				}
-			}
+			# 20 = {
+				# trigger = {
+					# NOT = { has_character_modifier = recent_match_timer }
+					# society_member_of = warrior_lodge_mexican
+					# age = 16
+					# society = {
+						# any_society_member = {
+							# ai = yes
+							# age = 16
+							# NOT = { character = ROOT }
+							# is_inaccessible_or_incapable_trigger = no
+							# NOT = { has_character_modifier = bedridden_illness }
+							# NOT = { has_character_modifier = severe_illness }
+							# NOT = { has_character_flag = call_to_legend_active }
+						# }
+					# }
+				# }
+				# event_target:lodge_hero = {
+					# character_event = { id = HF.10522 } #Wrestle Someone
+				# }
+			# }
+			# 20 = {
+				# trigger = {
+					# society_member_of = warrior_lodge_mexican
+					# age = 16
+					# NOT = { has_character_modifier = bedridden_illness }
+					# NOT = { has_character_modifier = severe_illness }
+					# NOT = { has_character_flag = call_to_legend_active }
+					# OR = {
+						# NOT = { has_character_flag = w_training_flag }
+						# had_character_flag = { flag = w_training_flag days = 730 }
+					# }
+				# }
+				# event_target:lodge_hero = {
+					# character_event = { id = WR.1 } #Ping to tell you to train
+				# }
+			# }
+			# 100 = {
+				# trigger = {
+					# society_member_of = warrior_lodge_mexican
+					# society_rank = 3
+					# age = 16
+					# NOT = {
+						# trait = w_heel
+					# }
+					# NOT = {
+						# trait = w_face
+					# }
+					# NOT = {
+						# has_character_flag = choosing_persona
+					# }
+				# }
+				# event_target:lodge_hero = {
+					# society_quest_event = { id = WR.100 } #Pick Persona
+				# }
+			# }
 			200 = {
 				trigger = {
 					ai = yes
