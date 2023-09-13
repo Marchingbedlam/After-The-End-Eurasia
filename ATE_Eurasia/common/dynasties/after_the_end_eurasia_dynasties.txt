@@ -1512,13 +1512,41 @@
 		}
 	}
 }
-1240181 = { name = "Klyonov" culture = buryat used_for_random = no religion = dvoeverie 
+1240181 = { name = "Klyonov" culture = buryat used_for_random = no 
 	coat_of_arms = {
 		religion = nondescript_christian
 		template = 0
 		layer = {
 			texture = 3
 			texture_internal = 63
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1240182 = { name = "Kiyat" culture = buryat used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 9
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1240183 = { name = "Lhasaranova" culture = buryat used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 10
 			emblem = 0
 			color = 0
 			color = 0
@@ -2544,6 +2572,7 @@
 	}
 }
 1479083 = { name = "Mönkh-Erdene" culture = khalkha }
+1479084 = { name = "Dandarvaanchig" culture = khalkha }
 
 1501000 = { name = "Ó Fearghail" culture = irish used_for_random = no 
 	coat_of_arms = {

@@ -46,7 +46,7 @@
 	name="Pavel"
 	dynasty=2136098 #Vorobjov
 	culture=siberian
-	religion=orthodox
+	religion=pravoslavie
 	2651.7.30={birth=yes}
 	2680.1.1={death=yes}
 }
@@ -89,7 +89,7 @@
 	name="Evgeniy"
 	dynasty=2136100 #Chudinov
 	culture=siberian
-	religion=orthodox
+	religion=pravoslavie
 	trait=deceitful
 	trait=cruel
 	trait=intricate_webweaver
@@ -104,7 +104,7 @@
 	name="Evgeniy"
 	dynasty=2136100 #Chudinov
 	culture=siberian
-	religion=orthodox
+	religion=pravoslavie
 	give_nickname=nick_the_old
 	2575.2.27={birth=yes}
 	2629.12.30={death=yes}
@@ -113,7 +113,7 @@
 	name="Evgeniy"
 	dynasty=2136100 #Chudinov
 	culture=siberian
-	religion=orthodox
+	religion=pravoslavie
 	father=1912009
 	trait=hunter
 	2628.1.26={birth=yes}
@@ -123,7 +123,7 @@
 	name="Denis"
 	dynasty=2136100 #Chudinov
 	culture=siberian
-	religion=orthodox
+	religion=pravoslavie
 	father=1912009
 	trait=hunter
 	trait=incapable
@@ -134,7 +134,7 @@
 	name="Anton"
 	dynasty=2136100 #Chudinov
 	culture=siberian
-	religion=orthodox
+	religion=pravoslavie
 	father=1912009
 	trait=monk
 	2634.11.13={birth=yes}
@@ -144,7 +144,7 @@
 	name="Evgeniy"
 	dynasty=2136100 #Chudinov
 	culture=siberian
-	religion=orthodox
+	religion=pravoslavie
 	father=1912011
 	2665.4.5={birth=yes}
 	2680.1.1={death=yes}
@@ -153,7 +153,7 @@
 	name="Rudolf"
 	dynasty=2136101 #Yevtushenko
 	culture=siberian
-	religion=orthodox
+	religion=pravoslavie
 	trait=poet
 	trait=scholar
 	trait=erudite
@@ -376,7 +376,7 @@
 	name="Pyotr"
 	dynasty=2136105
 	culture=siberian
-	religion=orthodox
+	religion=pravoslavie
 	trait=genius
 	trait=greedy
 	trait=is_fat
@@ -445,4 +445,77 @@
 	religion=nenets
 	2630.1.30={birth=yes}
 	2680.1.1={death=yes}
+}
+1912044={ #The "New" Khans
+	name="Yesükhei"
+	dynasty=1240182 #Kiyat
+	culture=buryat
+	religion=gelugpa
+	trait=charismatic_negotiator
+	trait=scarred
+	trait=quick
+	trait=groomed
+	trait=diligent
+	2610.3.12={birth=yes}
+	2631.10.10={add_spouse=1912045}
+}
+1912045={
+	name="Öelün"
+	female=yes
+	culture=buryat
+	religion=gelugpa
+	trait=intricate_webweaver
+	trait=groomed
+	trait=seductress
+	trait=lustful
+	trait=zealous
+	2610.7.15={birth=yes}
+}
+1912046={
+	name="Temüjin"
+	dynasty=1240182 #Kiyat
+	culture=buryat
+	religion=gelugpa
+	secret_religion=khanist
+	father=1912044
+	mother=1912045
+	trait=naive_appeaser
+	trait=craven
+	trait=stressed
+	trait=stutter
+	trait=dull
+	trait=robust
+	trait=musician
+	trait=content
+	2640.8.25={birth=yes}
+}
+1912047={
+	name="Namgar"
+	dynasty=1240183 #Lhasaranova
+	female=yes
+	culture=buryat
+	religion=gelugpa
+	trait=brilliant_strategist
+	trait=ambitious
+	trait=shrewd
+	trait=feeble
+	trait=kind
+	trait=brave
+	trait=musician
+	2640.8.25={birth=yes}
+	2662.9.25={add_matrilineal_spouse=1912048}
+}
+1912048={
+	name="Epi"
+	dynasty=1479084 #Dandarvaanchig
+	culture=khalkha
+	religion=khanist
+	trait=grey_eminence
+	trait=ambitious
+	trait=quick
+	trait=sturdy
+	trait=kind
+	trait=trusting
+	trait=musician
+	2640.8.25={birth=yes}
 }
