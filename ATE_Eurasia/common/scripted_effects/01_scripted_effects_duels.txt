@@ -684,7 +684,7 @@ set_potential_injury_flag_effect = {
 	# injury_could_be_lethal (only if you have all the other injuries already)
 
 	if = {
-		limit = { has_dlc = Reapers }
+		limit = { has_dlc = "Reapers" }
 		random_list = {
 			10 = { #the eyes
 				trigger = { NOT = { trait = blinded } }

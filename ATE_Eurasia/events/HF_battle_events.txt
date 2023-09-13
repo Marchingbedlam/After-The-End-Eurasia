@@ -1741,7 +1741,7 @@ character_event = {
 		randomize_ABC_desc_flag_effect = yes
 		set_battle_duels_option_flag_effect = yes
 		if = {
-			limit = { has_dlc = Reapers }
+			limit = { has_dlc = "Reapers" }
 			random_list = { #Randomize injured body part.
 				10 = { #the eyes
 					trigger = { NOT = { trait = blinded } }

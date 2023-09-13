@@ -15,7 +15,7 @@ character_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	
-	has_dlc = Mystics
+	has_dlc = "Mystics"
 
 	trigger = {
 		is_devil_worshiper_trigger = yes
@@ -76,7 +76,7 @@ character_event = {
 
 	prisoner = no
 
-	trigger = { has_dlc = Mystics }
+	trigger = { has_dlc = "Mystics" }
 
 	immediate = {
 		if = {
@@ -5696,7 +5696,7 @@ character_event = {
 
 	desc = {
 		trigger = {
-			has_dlc = Reapers
+			has_dlc = "Reapers"
 			FROM = { is_female = yes }
 		}
 		text = EVTDESC_MNM_7824
@@ -5705,7 +5705,7 @@ character_event = {
 	desc = {
 		trigger = {
 			NAND = {
-				has_dlc = Reapers
+				has_dlc = "Reapers"
 				FROM = { is_female = yes }
 			}
 		}

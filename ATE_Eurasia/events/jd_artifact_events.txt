@@ -2197,7 +2197,7 @@ character_event = { #Progress event type 4!  #stay up all night or not
         		random = {
         			chance = 80
         			if = {
-        				limit = { has_dlc = Reapers }
+        				limit = { has_dlc = "Reapers" }
         				custom_tooltip = {
         					text = you_get_a_cold_of_some_sort_tt
         				}
@@ -2230,7 +2230,7 @@ character_event = { #Progress event type 4!  #stay up all night or not
         		random = {
         			chance = 80
         			if = {
-        				limit = { has_dlc = Reapers }
+        				limit = { has_dlc = "Reapers" }
         				custom_tooltip = {
         					text = you_get_a_cold_of_some_sort_tt
         				}
@@ -2254,7 +2254,7 @@ character_event = { #Progress event type 4!  #stay up all night or not
         		random = {
         			chance = 80
         			if = {
-        				limit = { has_dlc = Reapers }
+        				limit = { has_dlc = "Reapers" }
         				custom_tooltip = {
         					text = you_get_a_cold_of_some_sort_tt
         				}
@@ -2279,7 +2279,7 @@ character_event = { #Progress event type 4!  #stay up all night or not
         		random = {
         			chance = 80
         			if = {
-        				limit = { has_dlc = Reapers }
+        				limit = { has_dlc = "Reapers" }
         				custom_tooltip = {
         					text = you_get_a_cold_of_some_sort_tt
         				}
