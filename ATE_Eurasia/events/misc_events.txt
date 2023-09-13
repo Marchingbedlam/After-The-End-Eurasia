@@ -2,7 +2,7 @@ namespace = misc
 character_event = { #some weird ass old man offers you hash
 	id = misc.1
 	desc = EVTDESC_MISC_1
-	picture = GFX_
+	picture = GFX_evt_mysterious_person
 	
 	only_playable = yes
 	
@@ -54,8 +54,24 @@ character_event = { #some weird ass old man offers you hash
 			prestige = 30
 			set_de_facto_liege = ROOT
 		}
-		hidden_tooltip = {
-			character_event = { id = misc.2 days = 5 }
+		random_list = {
+			10 = {
+				add_trait = gregarious
+			}
+			20 = {
+				add_trait = fatigue
+				add_trait = vomiting
+			}
+			30 = {
+				add_trait = depressed
+			}
+			20 = {
+				add_trait = uncouth
+			}
+			20 = {
+				add_trait = paranoid
+				add_trait = trusting
+			}
 		}
 	}
 	option = { # you politely decline because you are unbased
@@ -70,136 +86,5 @@ character_event = { #some weird ass old man offers you hash
 		}
 	}
 }
-
-character_event = { #you take a nice puff, three possible trips
-	id = misc.2
-	desc = EVTDESC_MISC_2
-	picture = GFX_
-	
-	is_triggered_only = yes
-	
-	option = { #let's gooooooooo
-		name = EVTOPTB_MISC_2
-		hidden_tooltip = {
-			add_character_modifier = on_vision_quest
-			random_list = {
-				20 = {
-					character_event = { 
-						id = misc.3 days = 5
-					}
-				}
-				60 = {
-					character_event = {
-						id = misc.4 days = 5
-					}
-				}
-				20 = {
-					character_event = {
-						id = misc.5 days = 5
-					}
-				}
-			}
-		}
-	}
-}
-
-character_event = { #your trip is really cool, you're on the beach, it's sunny and all
-	id = misc.3
-	desc = EVTDESC_MISC_3
-	picture = GFX_
-	
-	is_triggered_only = yes
-	
-	option = { # damn son lemme swim for a while
-		name = EVTOPTA_MISC_3
-		hidden_tooltip = {
-			random_list = {
-				50 = {
-					character_event = {
-						id = misc.6 days = 5
-					}
-				}
-				40 = {
-					character_event = {
-						id = misc.7
-					}
-				}
-				10 = {
-					character_event = {
-						id = misc.8
-					}
-				}
-			}
-		}
-	}
-	option = { #imma climb these rocks to catch some height
-		name = EVTOPTB_MISC_3
-		hidden_tooltip = {
-			random_list = {
-				60 = {
-					character_event = {
-						id = misc.9
-					}
-				}
-				25 = {
-					character_event = {
-						id = misc.10
-					}
-				}
-				15 = {
-					character_event = {
-						id = misc.11
-					}
-				}
-			}
-		}
-	}
-}
-
-character_event = { #your trip is alright, you're not out there feeling like a god but it's pretty cool
-	id = misc.4
-	desc = EVTDESC_MISC_4
-	picture = GFX_
-	
-	is_triggered_only = yes
-	
-	option = { #i'll take a small walk before going home
-		name = EVTOPTA_MISC_4
-		hidden_tooltip = {
-			random_list = {
-				95 = {
-					character_event = {
-						id = misc.12
-					}
-				}
-				5 = {
-					character_event = {
-						id = misc.13
-					}
-				}
-			}
-		}
-	}
-	option = { # i feel tired, let's go home
-		name = EVTOPTB_MISC_4
-		random_list = {
-			95 = {
-			}
-			5 = {
-				add_trait = slothful
-			}
-		}
-		hidden_tooltip = {
-			character_event = { id = misc.0 days = 5 }
-		}
-	}
-}
-
-#character_event = { #you're totally fucked and it seems the hash is bad
-#	id = misc.5
-#	desc = EVTDESC_MISC_5
-#	picture = GFX_
-#	
-#	is_triggered_only = yes
 	
 	
