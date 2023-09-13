@@ -558,7 +558,7 @@
 	trait=pious
 	disallow_random_traits=yes
 	father=1993207
-	mother=1993211
+	mother=1993212
 	give_nickname=nick_the_fox
 	2594.6.2={birth=yes}
 	2630.8.1={death=yes}
@@ -591,6 +591,7 @@
 	disallow_random_traits=yes
 	father=1993206
 	2555.1.18={birth=yes}
+	2574.1.1={add_spouse=1993212}
 	2605.5.30={death=yes}
 }
 1993208={
@@ -1068,7 +1069,7 @@
 	religion=kozachina
 	trait=brilliant_strategist
 	trait=genius
-	trait=frail
+	trait=feeble
 	trait=patient
 	trait=strategist
 	give_nickname=nick_the_great
