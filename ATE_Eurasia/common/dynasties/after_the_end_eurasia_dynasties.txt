@@ -7811,7 +7811,20 @@
 1855029 = { name = "Kalmykov" culture = kubantsy}
 1855030 = { name = "Skryplev" culture = kubantsy}
 1855031 = { name = "Belyayev" culture = kubantsy}
-1855032 = { name = "Grishko" culture = kubantsy}
+1855032 = { name = "Grishko" culture = kubantsy used_for_random = no
+	coat_of_arms = {
+		religion = pagan
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 8
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1855033 = { name = "Kholod" culture = kubantsy}
 1855034 = { name = "Drobot" culture = kubantsy used_for_random = no 
 	coat_of_arms = {
@@ -12304,7 +12317,20 @@ coat_of_arms = {
 2003011 = { name = "Xashba" culture = abkhazian}
 2003012 = { name = "Jergyenia" culture = abkhazian}
 2003013 = { name = "Ajÿnjal" culture = abkhazian}
-2003014 = { name = "Zarandia" culture = abkhazian}
+2003014 = { name = "Zarandia" culture = abkhazian used_for_random = no
+	coat_of_arms = {
+		religion = pagan
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 7
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2003015 = { name = "Ankwab" culture = abkhazian}
 2003016 = { name = "Inal-Ipa" culture = abkhazian}
 2003017 = { name = "Tsÿgwba" culture = abkhazian}
@@ -23014,7 +23040,20 @@ coat_of_arms = {
 }
 2051123 = { name = "Modrekili" culture = georgian used_for_random = no }
 2051124 = { name = "Gelovani" culture = georgian used_for_random = no }
-2051125 = { name = "Bolkvadze" culture = georgian used_for_random = no }
+2051125 = { name = "Bolkvadze" culture = georgian used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 4
+			texture_internal = 65
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2051126 = { name = "Bagrationi" culture = georgian
 	coat_of_arms = {
 		religion = nondescript_christian
@@ -23345,7 +23384,20 @@ coat_of_arms = {
 2053000 = { name = "Ælborty" culture = ossetian }
 2053001 = { name = "Bagin" culture = ossetian }
 2053002 = { name = "Fadzayty" culture = ossetian }
-2053003 = { name = "Khædartsaty" culture = ossetian }
+2053003 = { name = "Khædartsaty" culture = ossetian used_for_random = no
+	coat_of_arms = {
+		religion = pagan
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 9
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2053004 = { name = "Abayty" culture = ossetian }
 2053005 = { name = "Vitarty" culture = ossetian }
 2053006 = { name = "Dawyraty" culture = ossetian }
@@ -26074,7 +26126,20 @@ coat_of_arms = {
 2068049 = { name = "Labazanow" culture = avar }
 2068050 = { name = "Nurmuahamadow" culture = avar }
 2068051 = { name = "Sasiqa" culture = avar }
-2068052 = { name = "G'aliyew" culture = avar used_for_random = no}
+2068052 = { name = "G'aliyew" culture = avar used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 29
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2068053 = { name = "Yusupow" culture = avar used_for_random = no}
 
 2069000 = { name = "Choriev" culture = tajik }
@@ -27296,7 +27361,20 @@ coat_of_arms = {
 2076071 = { name = "Visitan" culture = nakh }
 2076072 = { name = "Mazayev" culture = nakh }
 2076073 = { name = "Vagapgeran" culture = nakh }
-2076074 = { name = "Sarakayev" culture = nakh }
+2076074 = { name = "Sarakayev" culture = nakh used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 28
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 2077000 = { name = "Popa" culture = moldovan }
 2077001 = { name = "Popescu" culture = moldovan }
@@ -28574,7 +28652,20 @@ coat_of_arms = {
 2088008 = { name = "Dadash" culture = kumyk }
 2088009 = { name = "Acamat" culture = kumyk }
 2088010 = { name = "Elderlany" culture = kumyk }
-2088011 = { name = "Israpillany" culture = kumyk }
+2088011 = { name = "Israpillany" culture = kumyk used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 27
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2088012 = { name = "Ismayillany" culture = kumyk }
 2088013 = { name = "Habillany" culture = kumyk }
 2088014 = { name = "Mutalimlany" culture = kumyk }
@@ -28838,7 +28929,20 @@ coat_of_arms = {
 2091018 = { name = "L'ibzew" culture = kabardian }
 2091019 = { name = "Heghwndoqw'e" culture = kabardian }
 2091020 = { name = "Lhepschiqwe" culture = kabardian }
-2091021 = { name = "Mesey" culture = kabardian }
+2091021 = { name = "Mesey" culture = kabardian used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 25
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2091022 = { name = "Aghnoqwe" culture = kabardian }
 2091023 = { name = "Abaze" culture = kabardian }
 2091024 = { name = "Boletiqwe" culture = kabardian }
@@ -38126,7 +38230,20 @@ coat_of_arms = {
 2163003 = { name = "Bat" culture = circassian }
 2163004 = { name = "Blänghäps'" culture = circassian }
 2163005 = { name = "Bät'ywash" culture = circassian }
-2163006 = { name = "Jändar" culture = circassian }
+2163006 = { name = "Jändar" culture = circassian used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 26
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2163007 = { name = "Ghork'ozh" culture = circassian }
 2163008 = { name = "Zazi" culture = circassian }
 2163009 = { name = "Koblä" culture = circassian }
