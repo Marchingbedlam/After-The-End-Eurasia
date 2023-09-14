@@ -621,7 +621,6 @@
 1911047={
 	name="Darigha"
 	female=yes
-	dynasty=0
 	culture=kazakh
 	religion=ak_jeng
 	2620.1.22={birth=yes}
@@ -643,7 +642,7 @@
 	culture=khalkha
 	religion=khanist
 	trait=altan_urag
-	father=1911049
+	#father=1911049
 	2571.8.16={birth=yes}
 	2634.1.21={death=yes}
 }
