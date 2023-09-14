@@ -1407,3 +1407,69 @@ d_lipka_guard = {
 	
 	mercenary_type = d_lipka_guard_composition
 }
+d_order_three_stars = {
+	color={ 18 78 195 }
+	color2={ 255 255 255 }
+	
+	graphical_culture = holygfx
+
+	capital = 685 #Riga
+	
+	# Parent Religion 
+	religion = lutheran
+	
+	culture = latvian
+	
+	mercenary = yes
+	
+	short_name = yes
+	
+	landless = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+	title_female = "CAPTAIN_FEMALE"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	strength_growth_per_century = 1.00
+	
+	mercenary_type = d_order_three_stars_composition
+}
+d_karaim_horsemen = {
+	color={ 193 0 0 }
+	color2={ 255 255 255 }
+	
+	graphical_culture = holygfx
+
+	capital = 861 #Vilnius
+	
+	# Parent Religion 
+	religion = haredi
+	
+	culture = tatar
+	
+	mercenary = yes
+	
+	short_name = yes
+	
+	landless = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+	title_female = "CAPTAIN_FEMALE"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	strength_growth_per_century = 1.00
+	
+	mercenary_type = d_karaim_horsemen_composition
+}
