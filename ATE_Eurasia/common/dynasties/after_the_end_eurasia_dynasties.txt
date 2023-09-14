@@ -8816,7 +8816,20 @@
 1916017 = {name = "El Admi" culture = sahrawi }
 1916018 = {name = "Mouichane" culture = sahrawi }
 1916019 = {name = "Aabadilah" culture = sahrawi }
-1916020 = {name = "Ould Rabani" culture = sahrawi used_for_random = no }
+1916020 = {name = "Ould Rabani" culture = sahrawi used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 30
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1916021 = {name = "El Bouhali" culture = sahrawi }
 1916022 = {name = "Hakim" culture = sahrawi }
 1916023 = {name = "Malainine" culture = sahrawi }
@@ -8856,7 +8869,20 @@
 1916057 = {name = "Laaroussi" culture = sahrawi }
 1916058 = {name = "Khouna" culture = sahrawi }
 1916059 = {name = "Tahlil" culture = sahrawi }
-1916060 = {name = "Mohamedlamin" culture = sahrawi }
+1916060 = {name = "Mohamedlamin" culture = sahrawi used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 31
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1916061 = {name = "Elgarhi" culture = sahrawi }
 1916062 = {name = "El Khalidi" culture = sahrawi }
 1916063 = {name = "Bohalla" culture = sahrawi }
