@@ -295,7 +295,6 @@ character_event = {
 	#Agree, it begins
 	option = {
 		name = EVTOPTB_synod_7
-		custom_tooltip = { text = EVTOPTB_synod_7_TT }
 
 		hidden_effect = {
 			clr_character_flag = diplomacy_path
@@ -323,8 +322,7 @@ character_event = {
 	
 	#Forbid, it begins
 	option = {
-		name = EVTOPTC_synod_7
-		custom_tooltip = { text = EVTOPTC_synod_7_TT } 
+		name = EVTOPTC_synod_7 
 
 		reverse_opinion = { who = event_target:synod_guest_1 modifier = opinion_unreasonable years = 5 }
 		reverse_opinion = { who = event_target:synod_guest_2 modifier = opinion_unreasonable years = 5 }
@@ -1487,7 +1485,6 @@ character_event = {
 	#Agree, it begins
 	option = {
 		name = EVTOPTB_synod_26
-		custom_tooltip = { text = EVTOPTB_synod_26_TT }
 
 		hidden_effect = {
 			clr_character_flag = diplomacy_path
@@ -1516,7 +1513,6 @@ character_event = {
 	#Forbid, it begins
 	option = {
 		name = EVTOPTC_synod_26
-		custom_tooltip = { text = EVTOPTC_synod_26_TT } 
 
 		reverse_opinion = { who = event_target:synod_guest_1 modifier = opinion_unreasonable years = 5 }
 		reverse_opinion = { who = event_target:synod_guest_2 modifier = opinion_unreasonable years = 5 }
@@ -1642,7 +1638,6 @@ character_event = {
 	#The safer
 	option = { 
 		name = EVTOPTA_synod_30
-		custom_tooltip = { text = EVTOPTA_synod_30_TT }
 
 		reverse_opinion = { who = event_target:synod_guest_2 modifier = opinion_grateful years = 5 }
 		reverse_opinion = { who = event_target:synod_guest_1 modifier = opinion_disappointed years = 5 }
@@ -1653,7 +1648,6 @@ character_event = {
 	#The riskier
 	option = {
 		name = EVTOPTB_synod_11
-		custom_tooltip = { text = EVTOPTB_synod_30_TT }
 
 		reverse_opinion = { who = event_target:synod_guest_1 modifier = opinion_grateful years = 5 }
 		reverse_opinion = { who = event_target:synod_guest_2 modifier = opinion_disappointed years = 5 }

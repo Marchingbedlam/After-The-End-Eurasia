@@ -1696,3 +1696,24 @@ k_kohhran_thianghlim = {
 	
 	dynasty_title_names = no	# Will not be named "Seljuk", etc.
 }
+
+d_agio_oros = {
+	color={ 255 233 0 }
+	color2={ 220 220 0 }
+
+	capital = 138 #Thessaloniki
+	
+	title = "ARCHON_OFFIKIALIOS"
+	foa = "ECUMENICAL_PATRIARCH_FOA"
+	
+	# Always exists
+	landless = yes
+	short_name = yes
+	
+	religion = orthodox
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
