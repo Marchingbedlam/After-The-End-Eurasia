@@ -11,6 +11,10 @@ spriteTypes = {
 		name = "GFX_evt_cao_dai"
 		texturefile = "gfx\\event_pictures\\cao_dai.dds"
 	}
+	spriteType = {
+		name = "GFX_evt_chinese_travelers"
+		texturefile = "gfx\\event_pictures\\chinese_travelers.dds"
+	}
 	
 #Cao Dai Traits
 
@@ -43,7 +47,49 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	
+	#Hui Sufi Orders and Schools
+	
+	spriteType = {
+		name = "GFX_trait_khufiy"
+		texturefile = "gfx/traits/khufiy.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_jahriy"
+		texturefile = "gfx/traits/jahriy.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_gedimu"
+		texturefile = "gfx/traits/gedimu.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_yihewani"
+		texturefile = "gfx/traits/yihewani.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_xidaotang"
+		texturefile = "gfx/traits/xidaotang.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
 #Decisions Icons
+	spriteType = {
+		name = "GFX_cd_pilgrimage"
+		texturefile = "gfx\\interface\\decision_icon_catholic_pilgrimage.dds"
+	}
 	spriteType = {
 		name = "GFX_cd_pilgrimage"
 		texturefile = "gfx\\interface\\decision_icon_catholic_pilgrimage.dds"

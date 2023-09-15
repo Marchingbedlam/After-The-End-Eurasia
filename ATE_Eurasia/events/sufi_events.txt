@@ -23,19 +23,26 @@ character_event = {
 	option = {
 		name = EVTOPTA_sufi_2
 		set_character_flag = sufi_martial
+		if = {
+			limit = {
+				religion = taharur
+			}
+			character_event = {id = sufi.3 }
+		}
 	}
 	option = {
 		name = EVTOPTB_sufi_2
 		set_character_flag = sufi_music_poetry
+		if = {
+			limit = {
+				religion = hui
+			}
+			character_event = {id = sufi.4 }
+		}
 	}
 	option = {
 		name = EVTOPTC_sufi_2
 		set_character_flag = sufi_mysticism
-	}
-
-	
-	after = {
-		character_event = { id = sufi.3 days = 30 random = 5 }
 	}
 }
 
@@ -46,18 +53,39 @@ character_event = {
 
 	is_triggered_only = yes
 	
-	option = {
-		trigger = {
-			OR= {
-				religion = taharur
-				has_character_flag = sufi_martial
-			}
+	trigger = {
+			has_character_flag = sufi_martial
 		}
+	
+	option = {
 		name = EVTOPTA_sufi_3
 		add_trait = senussi
+		clr_character_flag = sufi_martial
 	}
 	option = {
 		name = EVTOPTA_sufi_3
 		add_trait = qadiri
+		clr_character_flag = sufi_martial
+	}
+}
+
+character_event = {
+	id = sufi.4
+	desc = EVTDESC_sufi_4
+	picture = GFX_evt_religious_exultation
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_flag = sufi_music_poetry
+	}
+	
+	option = {
+		name = EVTOPTA_sufi_4
+		add_trait = khufiy
+	}
+	option = {
+		name = EVTOPTB_sufi_4
+		add_trait = jahriy
 	}
 }
