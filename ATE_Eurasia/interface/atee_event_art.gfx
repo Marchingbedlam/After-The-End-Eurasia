@@ -454,11 +454,13 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_evt_luchador"
-		texturefile = "gfx\\event_pictures\\luchador.dds
+		texturefile = "gfx/event_pictures/luchador.dds
+		allwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_evt_athlete"
-		texturefile = "gfx\\event_pictures\\athlete.tga"
+		texturefile = "gfx/event_pictures/athlete.dds"
+		allwaystransparent = yes
 	}
 #Imported from Orientalis
 	spriteType = {
