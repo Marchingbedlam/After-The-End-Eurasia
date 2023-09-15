@@ -452,6 +452,16 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/ethiopia_devastating_plague.dds"
 		allwaystransparent = yes
 	}
+	spriteType = {
+		name = "GFX_evt_luchador"
+		texturefile = "gfx\\event_pictures\\luchador.dds
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_athlete"
+		texturefile = "gfx\\event_pictures\\athlete.tga"
+		allwaystransparent = yes
+	}
 #Imported from Orientalis
 	spriteType = {
 		name = "GFX_evt_buddha_teaching"
