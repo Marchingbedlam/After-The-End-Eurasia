@@ -834,6 +834,7 @@ long_character_event = {
 character_event = {
     id = fr_prepared_invasion.10 # Prepared Invader's first notification
     title = fr_prepared_invasion_desc.9a
+	picture = GFX_evt_large_army
     border = GFX_event_normal_frame_war
     is_triggered_only = yes
 	desc = {

@@ -437,6 +437,21 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/rundown_greek_temple.dds"
 		allwaystransparent = yes
 	}
+	spriteType = {
+		name = "GFX_evt_ethiopia_open"
+		texturefile = "gfx/event_pictures/ethiopia_open.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_ethiopia_isolationist"
+		texturefile = "gfx/event_pictures/ethiopia_isolationist.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_ethiopia_devastating_plague"
+		texturefile = "gfx/event_pictures/ethiopia_devastating_plague.dds"
+		allwaystransparent = yes
+	}
 #Imported from Orientalis
 	spriteType = {
 		name = "GFX_evt_buddha_teaching"
