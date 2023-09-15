@@ -49,10 +49,10 @@ EVTDESC_synod_12;A particularly nasty debate has arisen between two brethren ove
 EVTOPTA_synod_12;Come now this is no time to create divides...;;;;;;;;;;;;;x
 EVTOPTA_synod_12_SUCCESS_TT;This has seemed to work....;;;;;;;;;;;;;x
 EVTOPTA_synod_12_FAIL_TT;I think I made it worse....;;;;;;;;;;;;;x
-EVTOPTB_synod_12;I agree with you, [GetFirstNameName.arguer_1].;;;;;;;;;;;;;x
-EVTOPTB_synod_12_TT;[GetFirstNameName.arguer_2] seems displeased;;;;;;;;;;;;;x
-EVTOPTC_synod_12;I agree with you, [GetFirstNameName.arguer_2].;;;;;;;;;;;;;x
-EVTOPTC_synod_12_TT;[GetFirstNameName.arguer_1] seems displeased;;;;;;;;;;;;;x
+EVTOPTB_synod_12;I agree with you, [arguer_1.GetFirstNameName].;;;;;;;;;;;;;x
+EVTOPTB_synod_12_TT;[arguer_2.GetFirstNameName] seems displeased;;;;;;;;;;;;;x
+EVTOPTC_synod_12;I agree with you, [arguer_2.GetFirstNameName].;;;;;;;;;;;;;x
+EVTOPTC_synod_12_TT;[arguer_1.GetFirstNameName] seems displeased;;;;;;;;;;;;;x
 
 EVTDESC_synod_13;You expertly maneuvered the disagreement into a territory that both arguers appear to be have common ground and both see your proposal as a reasonable.;;;;;;;;;;;;;x
 EVTOPTA_synod_13;Faith and Reason have prevailed!;;;;;;;;;;;;;x
@@ -124,10 +124,10 @@ EVTDESC_synod_31;A particularly nasty debate has arisen between two delegates ov
 EVTOPTA_synod_31;Come now this is no time to create divides...;;;;;;;;;;;;;x
 EVTOPTA_synod_31_SUCCESS_TT;This has seemed to work....;;;;;;;;;;;;;x
 EVTOPTA_synod_31_FAIL_TT;I think I made it worse....;;;;;;;;;;;;;x
-EVTOPTB_synod_31;I agree with you, [GetFirstNameName.arguer_1].;;;;;;;;;;;;;x
-EVTOPTB_synod_31_TT;[GetFirstNameName.arguer_2] seems displeased;;;;;;;;;;;;;x
-EVTOPTC_synod_31;I agree with you, [GetFirstNameName.arguer_2].;;;;;;;;;;;;;x
-EVTOPTC_synod_31_TT;[GetFirstNameName.arguer_1] seems displeased;;;;;;;;;;;;;x
+EVTOPTB_synod_31;I agree with you, [arguer_1.GetFirstNameName].;;;;;;;;;;;;;x
+EVTOPTB_synod_31_TT;[arguer_2.GetFirstNameName] seems displeased;;;;;;;;;;;;;x
+EVTOPTC_synod_31;I agree with you, [arguer_2.GetFirstNameName].;;;;;;;;;;;;;x
+EVTOPTC_synod_31_TT;[arguer_1.GetFirstNameName] seems displeased;;;;;;;;;;;;;x
 
 EVTDESC_synod_32;You expertly maneuvered the disagreement into a territory that both arguers appear to be have common ground and both see your proposal as a reasonable.;;;;;;;;;;;;;x
 EVTOPTA_synod_32;Faith and Reason have prevailed!;;;;;;;;;;;;;x

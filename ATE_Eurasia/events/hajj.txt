@@ -903,11 +903,25 @@ narrative_event = {
 	}
 	
 	option = {
+		trigger = {
+			is_indian_muslim = no
+		}
 		name = "EVTOPTA86520"
 		clr_character_flag = preparing_hajj_mecca
 		piety = 15
 		hidden_tooltip = {
 			narrative_event = { id = hajj.91 days = 2 }
+		}		
+	}
+	option = {
+		trigger = {
+			is_indian_muslim =yes
+		}
+		name = "hajj90indian"
+		clr_character_flag = preparing_hajj_mecca
+		piety = 15
+		hidden_tooltip = {
+			narrative_event = { id = hajj.97 days = 2 }
 		}		
 	}
 }
@@ -1150,7 +1164,7 @@ narrative_event = {
 	id = hajj.96
 	title = EVTTITLE_HAJJ_HOME
 	desc = "EVTDESC86800"
-	picture = GFX_evt_bishop
+	picture = GFX_travel_muslim
 	border = GFX_event_narrative_frame_religion
 	
 	is_triggered_only = yes
@@ -1168,6 +1182,98 @@ narrative_event = {
 			}
 			remove_trait = on_hajj
 			add_trait = hajjaj
+		}
+	}
+}
+
+narrative_event = {
+	id = hajj.97
+	title = EVTTITLE_TROUBLE_AHMADI
+	desc = "HAJJ97DESC"
+	picture = GFX_evt_kaaba
+	border = GFX_event_narrative_frame_religion
+	
+	prisoner = no
+	
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			trait = on_hajj
+			#trait = on_hajj2
+		}
+	}
+	
+	immediate = {
+		
+	}	
+	option = {
+		name = "HAJJOPTA_97"
+		trigger = {
+			AND = {
+				trait = zealous
+				religion = ahmadi
+			}
+		}
+		piety = 100
+		custom_tooltip = { text = HAJJOPTA_97_TT }
+		hidden_tooltip = {
+			narrative_event = { id = hajj.98 days = 1 }
+		}	
+		
+		
+	}
+	option = {
+		name = "HAJJOPTB_97"
+		trigger = {
+			religion = ahmadi
+		}
+		piety = -50
+		custom_tooltip = { text = HAJJOPTB_97_TT }
+		hidden_tooltip = {
+			random_list = {
+				50 = {narrative_event = { id = hajj.91 days = 1 }}
+				50 = {narrative_event = { id = hajj.98 days = 1 }}
+			}
+		}	
+	}
+	option = {
+		name = "HAJJOPTC_97"
+		piety = 25
+		add_trait = humble
+		
+		trigger = {
+			NOT = {religion = ahmadi}
+		}
+		
+		hidden_tooltip = {
+			narrative_event = { id = hajj.91 days = 1 }
+		}	
+	}
+}
+narrative_event = {
+	id = hajj.98
+	title = EVTTITLE_HAJJ_FORCED_HOME
+	desc = "HAJJ98DESC"
+	picture = GFX_travel_muslim
+	border = GFX_event_narrative_frame_religion
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			trait = on_hajj
+			#trait = on_hajj2
+		}
+	}
+	
+	option = {
+		name = "HAJJ98OPTA"
+		if = {
+			limit = {
+				trait = on_hajj
+			}
+			remove_trait = on_hajj
 		}
 	}
 }

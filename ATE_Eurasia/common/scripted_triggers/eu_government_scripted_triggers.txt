@@ -62,12 +62,15 @@ is_sufi = {
 
 is_sunni = {
 	OR = {
-		religion = taharur
 		religion = sunni
 		religion = sunnah
+		religion = taharur
+		religion = naqshbandi
 		religion = ruhi
-		religion = barelvi
+		religion = revivalist
 		religion = hui
+		religion = barelvi
+		religion = deobandi
 		religion = ahmadi
 		religion = ahl_as_salaf
 	}
@@ -78,6 +81,14 @@ is_shiite = {
 		religion = shiite
 		religion = ismaili
 		religion = zaydi
+	}
+}
+
+is_indian_muslim = {
+	OR = {
+		religion = barelvi
+		religion = deobandi
+		religion = ahmadi
 	}
 }
 
