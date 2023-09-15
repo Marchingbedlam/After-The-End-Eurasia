@@ -55,6 +55,7 @@ character_event = { #defensor fidei is normal
 	religion = catholic
 	desc = EVTDESC_papal_3
 	picture = "GFX_evt_bishop"
+	is_triggered_only = yes
 	
 	trigger = {
 		NOT = { religion_authority = 0.3 }
@@ -64,6 +65,9 @@ character_event = { #defensor fidei is normal
 		trait = defensor_fidei
 	}
 	
+	weight_multiplier = {
+		days = 1
+	}
 	option = { #meh
 		name = EVTOPTA_papal_3
 		if = {
