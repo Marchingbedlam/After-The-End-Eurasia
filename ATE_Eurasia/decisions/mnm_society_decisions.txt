@@ -3311,16 +3311,27 @@ decisions = {
 				text = employ_a_smith_tt
 				hidden_effect = {
 					character_event = { id = MNM.9130 }
-					add_character_modifier = {
-						name = employ_a_smith_cd
-						hidden = yes
-						years = 2
+					if = {
+						limit = {
+							NOT = {
+								religion = chronicler
+							}
+						}
+						add_character_modifier = {
+							name = employ_a_smith_cd
+							hidden = yes
+							years = 2
+						}
+					}
+					else = {
+						add_character_modifier = {
+							name = employ_a_smith_cd
+							hidden = yes
+							years = 1
+						}
 					}
 				}
 			}
-		}
-		revoke_allowed = {
-			always = no
 		}
 		ai_will_do = {
 			factor = 1
