@@ -763,17 +763,21 @@
 }
 
 1927065={
-	name="1927065"
-	dynasty=0 #blank
+	name="Shakir"
+	dynasty=2117014 #Qureshi
 	culture=saraiki
-	religion=ahmadi
-	trait=indulgent_wastrel
-	trait=wroth
-	trait=shy
-	trait=administrator
-	trait=deceitful
-	2629.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=ahmadi
+    martial=3
+    diplomacy=5
+    stewardship=3
+    intrigue=3
+    learning=5
+    trait=naive_appeaser
+    trait=kind
+    trait=humble
+    trait=trusting
+    2641.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1927066={

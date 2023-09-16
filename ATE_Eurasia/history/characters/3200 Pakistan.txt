@@ -306,45 +306,61 @@
 }
 
 3200030={
-	name="Asfi"
-	dynasty=2158015 #Razvi
+	name="Fatima"
+	dynasty=2158122 #Shaukat
 	culture=muhajir
-	religion=barelvi
-	trait=charismatic_negotiator
-	trait=hunter
-	trait=envious
-	trait=craven
-	trait=diligent
-	2642.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=barelvi
+    female=yes
+    martial=3
+    diplomacy=3
+    stewardship=5
+    intrigue=5
+    learning=3
+    trait=grey_eminence
+    trait=ambitious
+    trait=kind
+    trait=just
+    trait=charitable
+    2636.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 3200031={
-	name="Hakeem"
+	name="Hakim"
 	dynasty=2158119 #Ahmad
 	culture=muhajir
-	religion=ahmadi
-	trait=charismatic_negotiator
-	trait=hunter
-	trait=envious
-	trait=craven
-	trait=diligent
-	2642.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=ahmadi
+    martial=2
+    diplomacy=5
+    stewardship=4
+    intrigue=4
+    learning=5
+    trait=scholarly_theologian
+    trait=sympathy_indian
+    trait=gregarious
+    trait=temperate
+    trait=just
+    trait=content
+    2425.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 3200032={
-	name="Qadir"
-	dynasty=2117010 #Esakhelvi
+	name="Mustafa"
+	dynasty=2117089 #Chawla
 	culture=saraiki
-	religion=ahmadi
-	trait=charismatic_negotiator
-	trait=hunter
-	trait=proud
-	trait=craven
-	trait=diligent
-	2642.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=ahmadi
+    martial=4
+    diplomacy=3
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=flamboyant_schemer
+    trait=deceitful
+    trait=envious
+    trait=patient
+    2646.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 3200033={
@@ -362,276 +378,381 @@
 }
 
 3200034={
-	name="Muzammil"
-	dynasty=2157054 #Qawwal
-	culture=punjabi
-	religion=ahmadi
-	trait=charismatic_negotiator
-	trait=hunter
-	trait=proud
-	trait=craven
-	trait=diligent
-	2642.1.1={birth=yes}
-	2680.1.1={death=yes}
+	name="Gul"
+	dynasty=2158121 #Salam
+	culture=muhajir
+    religion=ahmadi
+    martial=4
+    diplomacy=5
+    stewardship=3
+    intrigue=4
+    learning=8
+    trait=mastermind_theologian
+    trait=genius
+    trait=sympathy_old_world_cults
+    trait=scholar
+    trait=shy
+    trait=honest
+    trait=proud
+    trait=kind
+    2621.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 3200035={
-	name="Quddus"
-	dynasty=2157040 #Abbasi
+	name="Ayyub"
+	dynasty=2157120 #Mushtaq
 	culture=punjabi
-	religion=shiite
-	trait=charismatic_negotiator
-	trait=hunter
-	trait=proud
-	trait=craven
-	trait=diligent
-	2642.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=ismaili
+    martial=4
+    diplomacy=3
+    stewardship=3
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=wroth
+    trait=just
+    trait=charitable
+    2636.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 3200036={
-	name="Shuaib"
-	dynasty=2157087 #Thaheem
-	culture=punjabi
-	religion=deobandi
-	trait=charismatic_negotiator
-	trait=hunter
-	trait=proud
-	trait=craven
-	trait=diligent
-	2642.1.1={birth=yes}
-	2680.1.1={death=yes}
+	name="Hafez"
+	dynasty=2085105 #Jadran
+	culture=pashtun
+    religion=deobandi
+    martial=6
+    diplomacy=4
+    stewardship=3
+    intrigue=4
+    learning=3
+    trait=skilled_tactician
+    trait=holy_warrior
+    trait=ambitious
+    trait=wroth
+    trait=zealous
+    trait=just
+    trait=temperate
+    trait=proud
+    2629.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 3200037={
-	name="Kalim"
-	dynasty=2157050 #Hanjra
+	name="Tafazzul"
+	dynasty=2157118 #Abbas
 	culture=punjabi
-	religion=ismaili
-	trait=skilled_tactician
-	trait=hunter
-	trait=proud
-	trait=brave
-	trait=diligent
-	2642.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=ismaili
+	martial=3
+    diplomacy=4
+    stewardship=4
+    intrigue=3
+    learning=6
+    trait=scholarly_theologian
+    trait=sympathy_indian
+    trait=faqih
+    trait=erudite
+    trait=temperate
+    trait=content
+    trait=kind
+    trait=charitable
+    2634.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 3200038={
-	name="Yasir"
-	dynasty=2157063 #Rahi
+	name="Sardar"
+	dynasty=2157005 #Chaudhry
 	culture=punjabi
-	religion=deobandi
-	trait=skilled_tactician
-	trait=hunter
-	trait=proud
-	trait=brave
-	trait=diligent
-	2642.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=deobandi
+    martial=3
+    diplomacy=3
+    stewardship=4
+    intrigue=3
+    learning=3
+    trait=thrifty_clerk
+    trait=quick
+    trait=diligent
+    trait=greedy
+    2645.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 3200039={
-	name="Israel"
-	dynasty=2157072 #Hashmi
+	name="Ali"
+	dynasty=2157119 #Makhdoom
 	culture=punjabi
-	religion=deobandi
-	trait=skilled_tactician
-	trait=hunter
-	trait=proud
-	trait=brave
-	trait=diligent
-	2642.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=deobandi
+    martial=5
+    diplomacy=3
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=patient
+    trait=arbitrary
+    trait=brave
+    2649.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 3200040={
-	name="Hafiz"
-	dynasty=2157075 #Naqqash
+	name="Kamran"
+	dynasty=2157121 #Ali
 	culture=punjabi
-	religion=deobandi
-	trait=skilled_tactician
-	trait=hunter
-	trait=proud
-	trait=brave
-	trait=diligent
-	2642.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=deobandi
+    martial=5
+    diplomacy=3
+    stewardship=4
+    intrigue=3
+    learning=5
+    trait=tough_soldier
+    trait=proud
+    trait=patient
+    trait=zealous
+    2648.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 3200041={
-	name="Iskander"
-	dynasty=2158001 #Ali
+	name="Zulfiqar"
+	dynasty=2158120 #Khalid
 	culture=muhajir
-	religion=ruhi
-	trait=skilled_tactician
-	trait=hunter
-	trait=proud
-	trait=brave
-	trait=diligent
-	2642.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=ruhi
+    martial=3
+    diplomacy=4
+    stewardship=3
+    intrigue=3
+    learning=6
+    trait=elusive_shadow
+    trait=schemer
+    trait=shrewd
+    trait=cynical
+    trait=deceitful
+    trait=proud
+    trait=patient
+    trait=ambitious
+    2629.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 3200042={
-	name="Farhan"
-	dynasty=2157113 #Mirasi
+	name="Talat"
+	dynasty=2157122 #Wassim
 	culture=punjabi
-	religion=deobandi
-	trait=skilled_tactician
-	trait=hunter
-	trait=proud
-	trait=brave
-	trait=diligent
-	2642.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=deobandi
+    martial=4
+    diplomacy=3
+    stewardship=5
+    intrigue=3
+    learning=3
+    trait=indulgent_wastrel
+    trait=slothful
+    trait=gregarious
+    trait=kind
+    2639.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 3200043={
-	name="Abasin"
-	dynasty=2085007 #Bannuzai
+	name="Abdul"
+	dynasty=2085107 #Akhunzada
 	culture=pashtun
-	religion=deobandi
-	trait=skilled_tactician
-	trait=hunter
-	trait=proud
-	trait=brave
-	trait=diligent
-	2642.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=deobandi
+    martial=5
+    diplomacy=3
+    stewardship=3
+    intrigue=5
+    learning=5
+    trait=martial_cleric
+    trait=faqih
+    trait=stubborn
+    trait=zealous
+    trait=patient
+    2625.1.1={birth=yes}
+    2700.1.1={death=yes}
+
 }
 3200044={
-	name="Tahir"
-	dynasty=2085015 #Dashti
+	name="Qazi"
+	dynasty=2085106 #Saim
 	culture=pashtun
-	religion=deobandi
-	trait=skilled_tactician
-	trait=hunter
-	trait=proud
-	trait=brave
-	trait=diligent
-	2642.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=deobandi
+    martial=4
+    diplomacy=4
+    stewardship=3
+    intrigue=4
+    learning=4
+    trait=misguided_warrior
+    trait=brave
+    trait=envious
+    trait=temperate
+    2626.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 3200045={
-	name="Rahshon"
-	dynasty=2086078 #Lund
+	name="Zafarullah"
+	dynasty=2086000 #Jamali
 	culture=baloch
-	religion=barelvi
-	trait=skilled_tactician
-	trait=hunter
-	trait=proud
-	trait=brave
-	trait=diligent
-	2642.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=barelvi
+    martial=5
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=5
+    trait=tough_soldier
+    trait=cruel
+    trait=wroth
+    trait=envious
+    trait=brawny
+    2635.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 3200046={
-	name="Muhammad Idris"
-	dynasty=2156006 #Qambrani
+	name="Rajab"
+	dynasty=2156107 #Bhanbhro
 	culture=sindhi
-	religion=barelvi
-	trait=skilled_tactician
-	trait=hunter
-	trait=proud
-	trait=brave
-	trait=diligent
-	2642.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=barelvi
+    martial=4
+    diplomacy=4
+    stewardship=5
+    intrigue=4
+    learning=4
+    trait=flamboyant_schemer
+    trait=lustful
+    trait=cruel
+    trait=gluttonous
+    2635.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 3200047={
-	name="Qaim Ali"
-	dynasty=2156015 #Allana
+	name="Mishan"
+	dynasty=2156110 #Charan
 	culture=sindhi
-	religion=barelvi
-	trait=skilled_tactician
-	trait=hunter
-	trait=proud
-	trait=brave
-	trait=diligent
-	2642.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=barelvi
+    martial=3
+    diplomacy=3
+    stewardship=5
+    intrigue=3
+    learning=3
+    trait=thrifty_clerk
+    trait=greedy
+    trait=gluttonous
+    trait=craven
+    2640.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 3200048={
-	name="Taj Mahmud"
-	dynasty=2156021 #Sindhi
+	name="Qaseem"
+	dynasty=2156109 #Dhareja
 	culture=sindhi
-	religion=barelvi
-	trait=skilled_tactician
-	trait=hunter
-	trait=proud
-	trait=brave
-	trait=diligent
-	2642.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=barelvi
+    martial=3
+    diplomacy=5
+    stewardship=5
+    intrigue=4
+    learning=5
+    trait=underhanded_rogue
+    trait=gregarious
+    trait=diligent
+    trait=arbitrary
+    2642.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 3200049={
-	name="Shakar"
-	dynasty=2086013 #Dawar
+	name="Mehrab"
+	dynasty=2086007 #Bugti
 	culture=baloch
-	religion=barelvi
-	trait=skilled_tactician
-	trait=hunter
-	trait=proud
-	trait=brave
-	trait=diligent
-	2642.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=barelvi
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=thrifty_clerk
+    trait=diligent
+    trait=greedy
+    trait=shrewd
+    2630.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 3200050={
-	name="Umar"
-	dynasty=2116002 #Brahui
+	name="Mohyuddin"
+	dynasty=2116053 #Yar Khan
 	culture=brahui
-	religion=deobandi
-	trait=skilled_tactician
-	trait=hunter
-	trait=proud
-	trait=brave
-	trait=diligent
-	2642.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=deobandi
+    martial=3
+    diplomacy=5
+    stewardship=5
+    intrigue=4
+    learning=3
+    trait=charismatic_negotiator
+    trait=gregarious
+    trait=kind
+    trait=just
+    2632.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 3200051={
-	name="Kalag"
-	dynasty=2086022 #Dagarzahi
+	name="Sanaullah"
+	dynasty=2086105 #Dzaranga
 	culture=baloch
-	religion=deobandi
-	trait=skilled_tactician
-	trait=hunter
-	trait=proud
-	trait=brave
-	trait=diligent
-	2642.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=deobandi
+    martial=3
+    diplomacy=3
+    stewardship=5
+    intrigue=3
+    learning=3
+    trait=tough_soldier
+    trait=ugly
+    trait=wroth
+    trait=cruel
+    trait=temperate
+    2640.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 3200052={
-	name="Mazaar"
-	dynasty=2086032 #Khwakhuzhi
+	name="Usman"
+	dynasty=2086023 #Leghari
 	culture=baloch
-	religion=deobandi
-	trait=skilled_tactician
-	trait=hunter
-	trait=proud
-	trait=brave
-	trait=diligent
-	2642.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=deobandi
+    martial=3
+    diplomacy=6
+    stewardship=3
+    intrigue=3
+    learning=5
+    trait=underhanded_rogue
+    trait=temperate
+    trait=diligent
+    trait=honest
+    2638.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 3200053={
-	name="Rasul"
-	dynasty=2086044 #Mushwani
+	name="Naz"
+	dynasty=2086104 #Nawaz
 	culture=baloch
-	religion=deobandi
-	trait=skilled_tactician
-	trait=hunter
-	trait=proud
-	trait=brave
-	trait=diligent
-	2642.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=deobandi
+    martial=4
+    diplomacy=5
+    stewardship=5
+    intrigue=4
+    learning=6
+    trait=martial_cleric
+    trait=poet
+    trait=erudite
+    trait=charitable
+    trait=kind
+    2636.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 3200054={
-	name="Waliullah"
-	dynasty=2117034 #Changar
+	name="Irfan"
+	dynasty=2117009 #Rokhri
 	culture=saraiki
-	religion=deobandi
-	trait=skilled_tactician
-	trait=hunter
-	trait=proud
-	trait=brave
-	trait=diligent
-	2642.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=deobandi
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=tough_soldier
+    trait=zealous
+    trait=chaste
+    trait=diligent
+    2630.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
