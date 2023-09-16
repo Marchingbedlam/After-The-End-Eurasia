@@ -374,7 +374,7 @@ sympathy_buddhist = {
 		NOT = { religion_group = buddhist_group }
 	}
 
-	tolerates_christian = yes		# Tolerates and is tolerated by Christians
+	tolerates_buddhist_group = yes		# Tolerates and is tolerated by Buddhists
 	
 	same_opinion_if_same_religion = 5
 
@@ -420,7 +420,7 @@ sympathy_eastern = {
 		NOT = { religion_group = eastern_group }
 	}
 
-	tolerates_christian = yes		# Tolerates and is tolerated by Christians
+	tolerates_eastern = yes		# Tolerates and is tolerated by Eastern faiths
 	
 	same_opinion_if_same_religion = 5
 
@@ -636,7 +636,7 @@ sympathy_zoroastrianism = {
 		NOT = { religion_group = zoroastrian_group }
 	}
 
-	tolerates_zoroastrian = yes		# Tolerates and is tolerated by Zoroastrian Religions
+	tolerates_zoroastrian_group = yes		# Tolerates and is tolerated by Zoroastrian Religions
 
 	same_opinion_if_same_religion = 5
 
