@@ -332,3 +332,128 @@ narrative_event = {
 		}
 	}
 }
+
+#Khalasa and Ahmadi Alliance
+#Sikh Emperor rights to his friend
+narrative_event = {
+	id = story.5
+	title = khalasa_ahmadi_friendship
+	picture = GFX_evt_feast
+	border = GFX_event_narrative_frame_diplomacy
+	desc = EVTDESC_Story5
+
+	is_triggered_only = yes
+
+	immediate = {
+		k_ahmadi = {
+			holder_scope = {
+				save_event_target_as = target_ruler
+			}
+		}
+		ROOT = { save_event_target_as = target_proposer }
+	}
+	
+	option = {
+		name = EVTOPTA_story5
+		ai_chance = { 
+			factor = 100
+		}
+		show_portrait = event_target:target_ruler
+		custom_tooltip = {
+			text = EVTOPTA_story5_TOOLTIP
+			hidden_tooltip = {
+				event_target:target_ruler = {
+					narrative_event = { id = story.6 days = 3 }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTB_story5
+		ai_chance = { 
+			factor = 0
+		}
+	}
+}
+
+#Suggestion to form non-aggression pact (Recieved for the Ahmadi Caliph)
+narrative_event = {
+	id = story.6
+	title = khalasa_ahmadi_friendship_2
+	picture = GFX_evt_feast
+	border = GFX_event_narrative_frame_diplomacy
+	desc = EVTDESC_Story6
+
+	is_triggered_only = yes
+
+	#accept
+	option = {
+		name = EVTOPTA_story6
+		ai_chance = {
+			factor = 100
+		}
+		show_portrait = event_target:target_proposer
+		custom_tooltip = {
+			text = KAF_ESTABLISHED
+			hidden_tooltip = {
+				FROM = {
+					letter_event = { id = story.7 days = 3 }
+				}
+			}
+			opinion = {
+				modifier = in_non_aggression_pact
+				years = 3
+				who = FROM
+				origin_description = khalasa_ahmadi_friendship_2
+			}
+			FROM = {
+				opinion = {
+					modifier = in_non_aggression_pact
+					years = 3
+					who = ROOT
+					origin_description = khalasa_ahmadi_friendship_2
+				}
+			}
+		}
+	}
+	#decline
+	option = {
+		name = EVTOPTB_story6
+		ai_chance = {
+			factor = 0
+		}
+		custom_tooltip = {
+			text = EVTOPTB_story6_TOOLTIP
+			FROM = {
+				letter_event = { id = story.8 days = 3 }
+			}
+		}
+	}
+}
+
+#respone that accepted the offer
+letter_event = {
+	id = story.7
+	desc = EVTDESC_Story7
+
+	is_triggered_only = yes
+
+	#accept
+	option = {
+		name = EVTOPTA_story7
+	}
+}
+
+#respone that declined the offer
+letter_event = {
+	id = story.8
+	desc = EVTDESC_Story8
+
+	is_triggered_only = yes
+
+	#accept
+	option = {
+		name = EVTOPTA_story8
+	}
+}
