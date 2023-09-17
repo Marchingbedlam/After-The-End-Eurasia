@@ -38075,7 +38075,20 @@ coat_of_arms = {
 2157114 = { name = "Tarkhan" culture = punjabi }
 2157115 = { name = "Bhutani" culture = punjabi }
 2157116 = { name = "Bajaj" culture = punjabi }
-2157117 = { name = "Das-Singh" culture = punjabi }
+2157117 = { name = "Das-Singh" culture = punjabi used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 11
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2157118 = { name = "Abbas" culture = punjabi used_for_random = no 
 	coat_of_arms = {
 		religion = nondescript_muslim
@@ -38107,6 +38120,65 @@ coat_of_arms = {
 2157120 = { name = "Mushtaq" culture = punjabi religion = ismaili used_for_random = no }
 2157121 = { name = "Ali" culture = punjabi religion = deobandi used_for_random = no }
 2157122 = { name = "Wassim" culture = punjabi religion = deobandi used_for_random = no }
+2157123 = { name = "Kharak-Singh" culture = punjabi used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 12
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2157124 = { name = "Pritam" culture = punjabi used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 13
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2157125 = { name = "Thakur-Singh" culture = punjabi used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 14
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2157126 = { name = "Jeet-Singh" culture = punjabi used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 15
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2157127 = { name = "Rai" culture = punjabi religion = sikh used_for_random = no }
+2157128 = { name = "Gill-Singh" culture = punjabi religion = sikh used_for_random = no }
+2157129 = { name = "Brahma-Singh" culture = punjabi religion = sikh used_for_random = no }
 
 2158000 = { name = "Kutty" culture = muhajir }
 2158001 = { name = "Ali" culture = muhajir }

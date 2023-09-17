@@ -127,17 +127,25 @@
 }
 
 1927010={
-	name="1927010"
-	dynasty=0 #blank
+	name="Satwant"
+	dynasty=2157123 #Kharak-Singh
 	culture=punjabi
-	religion=sikh
-	trait=skilled_tactician
-	trait=stubborn
-	trait=humble
-	trait=wounded
-	trait=strong
-	2647.1.1={birth=yes}
-	2691.1.1={death=yes}
+    religion=sikh
+    martial=5
+    diplomacy=3
+    stewardship=2
+    intrigue=3
+    learning=3
+    trait=skill_tactician
+    trait=strong
+    trait=authoritative
+    trait=gregarious
+    trait=diligent
+    trait=proud
+	father=1927083
+    2647.1.1={birth=yes}
+	2666.1.1={add_spouse=1927080}
+    2700.1.1={death=yes}
 }
 
 1927011={
@@ -924,4 +932,427 @@
 	father=1927078
 	2540.1.1={birth=yes}
 	2605.1.1={death=yes}
+}
+1927080={ #Daughter of the Last Governor of Punjab
+	name="Rupi"
+    dynasty=2157124 # Pritam
+    female=yes
+    culture=punjabi
+    religion=sikh
+    martial=3
+    diplomacy=4
+    stewardship=4
+    intrigue=3
+    learning=5
+    trait=charismatic_negotiator
+    trait=poet
+    trait=stubborn
+    trait=kind
+	father=1927090
+    2648.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1927081={
+	name="Jarnail"
+    dynasty=2157123 # Kharak-Singh
+    culture=punjabi
+    religion=sikh
+    martial=1
+    diplomacy=2
+    stewardship=1
+    intrigue=1
+    learning=2
+    trait=willful        
+    trait=curious
+	father=1927010
+	mother=1927080
+    2665.6.8={birth=yes}
+    2700.1.1={death=yes}
+}
+1927082={
+	name="Ranjit"
+    dynasty=2157123 # Kharak-Singh
+    culture=punjabi
+    religion=sikh
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=strong
+    trait=quick
+    trait=diligent
+    trait=wroth
+    trait=cruel
+    2565.1.1={birth=yes}
+    2645.1.1={death=yes}
+}
+1927083={
+	name="Baba"
+    dynasty=2157123 # Kharak-Singh
+    culture=punjabi
+    religion=sikh
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=strong
+    trait=quick
+    trait=diligent
+    trait=wroth
+    trait=cruel
+	father=1927082
+    2585.1.1={birth=yes}
+    2650.1.1={death=yes}
+}
+1927084={
+	name="Vikramjit"
+    dynasty=2157124 # Pritam
+    culture=punjabi
+    religion=sikh
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=skilled_tactician
+    trait=wroth
+    trait=ambitious
+    2465.1.1={birth=yes}
+    2529.1.1={death=yes}
+}
+1927085={
+	name="Harjinder"
+    dynasty=2157124 # Pritam
+    culture=punjabi
+    religion=sikh
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=martial_cleric
+    trait=kind
+    trait=zealous
+	father=1927084
+    2510.1.1={birth=yes}
+    2540.1.1={death=yes}
+}
+1927086={
+	name="Avtar"
+    dynasty=2157124 # Pritam
+    culture=punjabi
+    religion=sikh
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=mastermind_theologian
+    trait=mystic
+    trait=chaste
+    trait=kind
+	father=1927085
+    2535.1.1={birth=yes}
+    2595.1.1={death=yes}
+}
+1927087={
+	name="Vikramjit"
+    dynasty=2157124 # Pritam
+    culture=punjabi
+    religion=sikh
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=wroth
+    trait=kind
+	father=1927086
+    2570.1.1={birth=yes}
+    2630.1.1={death=yes}
+}
+1927088={
+	name="Vikramjit"
+    dynasty=2157124 # Pritam
+    culture=punjabi
+    religion=sikh
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=fortune_builder
+    trait=envious
+    trait=shrewd
+	father=1927087
+    2601.1.1={birth=yes}
+    2635.1.1={death=yes}
+}
+1927089={
+	name="Gurinder"
+    dynasty=2157124 # Pritam
+    culture=punjabi
+    religion=sikh
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+	father=1927088
+    2603.1.1={birth=yes}
+    2650.1.1={death=yes}
+}
+1927090={ #Last Sikh Governor of Punjab
+	name="Vikramjit"
+    dynasty=2157124 # Pritam
+    culture=punjabi
+    religion=sikh
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=grey_eminence        
+    trait=gregarious
+    trait=ambitious
+	father=1927089
+    2629.1.1={birth=yes}
+    2661.1.1={death={death_reason=death_battle killer=3200036}} #Slain in battle by the current Wali of Peshawar
+}
+1927091={
+	name="Bhagat"
+    dynasty=2157126 # Jeet Singh
+    culture=punjabi
+    religion=sikh
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=ambitious
+    2499.1.1={birth=yes}
+    2571.1.1={death=yes}
+}
+1927092={
+	name="Harjinder"
+    dynasty=2157126 # Jeet Singh
+    culture=punjabi
+    religion=sikh
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=skilled_tactician
+    trait=twin
+    trait=kind
+	father=1927091
+    2545.1.1={birth=yes}
+    2585.1.1={death={death_reason=death_battle}}
+}
+1927093={
+	name="Parkash"
+    dynasty=2157126 # Jeet Singh
+    culture=punjabi
+    religion=sikh
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=skilled_tactician
+    trait=twin
+    trait=envious
+	father=1927091
+    2545.1.1={birth=yes}
+    2599.1.1={death={death_reason=death_battle}}
+}
+1927094={
+	name="Jasjit"
+    dynasty=2157127 # Rai
+    culture=punjabi
+    religion=sikh
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=martial_cleric
+    trait=temperate
+    2655.1.1={birth=yes}
+    2610.1.1={death={death_reason=death_battle}}
+}
+1927095={
+	name="Charat"
+    dynasty=2157125 # Thakur-Singh
+    culture=punjabi
+    religion=sikh
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=content
+	father=1927100
+    2518.1.1={birth=yes}
+    2565.1.1={death=yes}
+}
+1927096={
+	name="Kapur"
+    dynasty=2157125 # Thakur-Singh
+    culture=punjabi
+    religion=sikh
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=charismatic_negotiator
+    trait=deceitful
+	father=1927095
+    2544.1.1={birth=yes}
+    2580.1.1={death=yes}
+}
+1927097={
+	name="Gagandeep"
+    dynasty=2157125 # Thakur-Singh
+    culture=gujarati
+    religion=sikh
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=intricate_webweaver
+    trait=wroth
+	father=1927096
+    2565.1.1={birth=yes}
+    2584.1.1={death={death_reason=death_battle}}
+}
+1927098={
+	name="Shavinder"
+    dynasty=2157125 # Thakur-Singh
+    culture=gujarati
+    religion=sikh
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=midas_touched
+    trait=shrewd
+	father=1927096
+    2566.1.1={birth=yes}
+    2585.1.1={death={death_reason=death_battle}}
+}
+1927099={
+	name="Manmohan"
+    dynasty=2157125 # Thakur-Singh
+    culture=gujarati
+    religion=sikh
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=content
+	father=1927096
+    2570.1.1={birth=yes}
+    2590.1.1={death={death_reason=death_battle}}
+}
+1927100={
+	name="Ajay"
+    dynasty=2157125 # Thakur-Singh
+    culture=punjabi
+    religion=sikh
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=brilliant_strategist        
+    trait=quick
+    trait=strong
+    2499.1.1={birth=yes}
+    2550.1.1={death=yes}
+}
+1927101={
+	name="Gadowar"
+    dynasty=2157125 # Thakur-Singh
+    culture=punjabi
+    religion=sikh
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=indulgent_wastrel
+    trait=dull
+	father=1927100
+    2520.1.1={birth=yes}
+    2605.1.1={death=yes}
+}
+1927102={
+	name="Ajay"
+    dynasty=2157125 # Thakur-Singh
+    culture=punjabi
+    religion=sikh
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+	trait=tough_soldier
+	trait=trusting
+	trait=brave
+	trait=ambitious
+	father=1927101
+    2565.1.1={birth=yes}
+    2630.1.1={death=yes}
+}
+1927103={
+	name="Karamjit"
+    dynasty=2157128 # Gill-Singh
+    culture=punjabi
+    religion=sikh
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+	trait=intricate_webweaver
+	trait=envious
+	trait=content
+	trait=craven
+	trait=bastard
+	father=1927102
+    2608.1.1={birth=yes}
+    2650.1.1={death={death_reason=death_battle}}
+}
+1927104={ #First and Only Sikh Governor of Mumbai
+	name="Gurjant"
+    dynasty=2157129 # Brahma-Singh
+    culture=punjabi
+    religion=sikh
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=brilliant_strategist
+    trait=scarred_high
+    trait=one_eyed
+    trait=cruel
+    trait=gregarious
+    2553.1.1={birth=yes}
+    2605.1.1={death={death_reason=death_battle}}
 }
