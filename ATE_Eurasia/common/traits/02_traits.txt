@@ -182,12 +182,12 @@ heresiarch = {
 }
 
 berserker = {
-	potential = {
-		OR = {
-			religion = norse_pagan
-			religion = norse_pagan_reformed
-		}
-	}
+	# potential = {
+		# OR = {
+			# religion = norse_pagan
+			# religion = norse_pagan_reformed
+		# }
+	# }
 	martial = 4
 	diplomacy = -2
 	combat_rating = 25 #old value: 3
@@ -236,15 +236,15 @@ saoshyant_descendant = {
 }
 
 viking = {
-	potential = {
-		OR = {
-			religion = norse_pagan
-			religion = norse_pagan_reformed
-			any_owned_bloodline = {
-				has_bloodline_flag = bloodline_viking
-			}
-		}
-	}
+	# potential = {
+		# OR = {
+			# religion = norse_pagan
+			# religion = norse_pagan_reformed
+			# any_owned_bloodline = {
+				# has_bloodline_flag = bloodline_viking
+			# }
+		# }
+	# }
 	opposites = {
 		ravager
 		seaking
