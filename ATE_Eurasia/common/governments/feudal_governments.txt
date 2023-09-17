@@ -28,6 +28,7 @@ feudal_governments = {
 				religion = quinto
 				religion = celeste
 				religion = kohhran_thianghlim
+				religion = gandhist
 				has_religion_feature = religion_temporal_head
 				#AND = {
 				#	religion = norse_pagan_reformed
@@ -409,8 +410,13 @@ feudal_governments = {
 				AND = { 
 					religion_group = muslim
 					NOT = { religion = ruhi }
-					religion = an_nahar
+					NOT = { religion = ibadi }
 					NOT = { religion = ahmadi }
+				}
+				religion = an_nahar
+				AND = {
+					religion = ibadi
+					NOT = {has_landed_title = d_ibadi}
 				}
 			}
 			OR = {
@@ -639,8 +645,15 @@ feudal_governments = {
 				AND = {
 					OR = {
 						religion_group = islamosyncretic
-						religion_group = muslim
+						AND = {
+							religion_group = muslim
+							NOT = {religion = ibadi}
+						}
 						religion = an_nahar
+						AND = {
+							religion = ibadi
+							NOT = {has_landed_title = d_ibadi}
+						}
 					}
 					NAND = {
 						OR = {

@@ -617,9 +617,7 @@ monastic_order_naqshbandi = {
 	}
 
 	show_society = {
-		OR = {
-			religion = naqshbandi
-		}
+		religion = naqshbandi
 	}
 
 	potential = { 
