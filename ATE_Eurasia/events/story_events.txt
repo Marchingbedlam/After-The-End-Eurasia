@@ -343,6 +343,10 @@ narrative_event = {
 	desc = EVTDESC_Story5
 
 	is_triggered_only = yes
+	
+	trigger = {
+		has_landed_title = e_sikh
+	}
 
 	immediate = {
 		k_ahmadi = {
@@ -386,6 +390,10 @@ narrative_event = {
 	desc = EVTDESC_Story6
 
 	is_triggered_only = yes
+	
+	trigger = {
+		has_landed_title = k_ahmadi
+	}
 
 	#accept
 	option = {
