@@ -2404,7 +2404,20 @@
 1444034 = {name = "Midou" culture = tuareg }
 1444035 = {name = "Ag Oussouf" culture = tuareg }
 1444036 = {name = "Houma" culture = tuareg }
-1444037 = {name = "Imola" culture = tuareg }
+1444037 = {name = "Imola" culture = tuareg used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 53
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1444038 = {name = "Zada" culture = tuareg }
 1444039 = {name = "Sidi Sidi" culture = tuareg }
 1444040 = {name = "Ag Djeri" culture = tuareg }
@@ -2432,7 +2445,20 @@
 1444062 = {name = "Ag Ahmed Salam" culture = tuareg }
 1444063 = {name = "Ag Ahmouden" culture = tuareg }
 1444064 = {name = "Ag Borreiba" culture = tuareg }
-1444065 = {name = "Abdamou" culture = tuareg }
+1444065 = {name = "Abdamou" culture = tuareg used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 55
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1444066 = {name = "Zeinabou" culture = tuareg }
 1444067 = {name = "Ag Alhabib" culture = tuareg }
 1444068 = {name = "Ag Abil" culture = tuareg }
@@ -2448,7 +2474,20 @@
 1444078 = {name = "Ag Akawkaw" culture = tuareg }
 1444079 = {name = "Stanboulewa" culture = tuareg }
 1444080 = {name = "Ag Abba" culture = tuareg }
-1444081 = {name = "Hinan" culture = tuareg }
+1444081 = {name = "Hinan" culture = tuareg used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 56
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 1479000 = { name = "Borjigin" culture = khalkha }
 1479001 = { name = "Tserendorj" culture = khalkha }
@@ -10865,7 +10904,20 @@ coat_of_arms = {
 
 1956000 = { name = "Ziyadi" culture = moroccan}
 1956001 = { name = "Debbagh" culture = moroccan}
-1956002 = { name = "Sqalli" culture = moroccan}
+1956002 = { name = "Sqalli" culture = moroccan used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 50
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1956003 = { name = "Karaaoui" culture = moroccan}
 1956004 = { name = "El Fihri" culture = moroccan}
 1956005 = { name = "Idrissi" culture = moroccan }
@@ -21942,7 +21994,20 @@ coat_of_arms = {
 2042048 = { name = "Ahanfouf" culture = riffian }
 2042049 = { name = "Bouyeri" culture = riffian }
 2042050 = { name = "Achahbar" culture = riffian }
-2042051 = { name = "Axettab" culture = riffian }
+2042051 = { name = "Axettab" culture = riffian used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 52
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2042052 = { name = "Belhadj" culture = riffian }
 
 2043000 = { name = "Tazeggwaght" culture = chaoui }
@@ -28242,7 +28307,20 @@ coat_of_arms = {
 	}
 }
 
-2083000 = { name = "Arwi" culture = soussi }
+2083000 = { name = "Arwi" culture = soussi used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 49
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2083001 = { name = "Igherm" culture = soussi }
 2083002 = { name = "Lmûddn" culture = soussi }
 2083003 = { name = "Amzîl" culture = soussi }
@@ -28295,7 +28373,20 @@ coat_of_arms = {
 2083052 = { name = "Id Blqasm" culture = soussi }
 2083053 = { name = "Abaaqil" culture = soussi }
 
-2084000 = { name = "Lccixi" culture = atlas }
+2084000 = { name = "Lccixi" culture = atlas used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 51
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2084001 = { name = "Azellal" culture = atlas }
 2084002 = { name = "Ayt Seghruccen)" culture = atlas }
 2084004 = { name = "Izayyan" culture = atlas }
@@ -36754,7 +36845,20 @@ coat_of_arms = {
 2146031 = { name = "Boudiaf" culture = mozabite }
 2146032 = { name = "Fehim" culture = mozabite }
 2146033 = { name = "Adli" culture = mozabite }
-2146034 = { name = "Djemaâ" culture = mozabite }
+2146034 = { name = "Djemaâ" culture = mozabite used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 54
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2146035 = { name = "Aïssat" culture = mozabite }
 2146036 = { name = "Boukermouche" culture = mozabite }
 2146037 = { name = "Boukhari" culture = mozabite }
@@ -38164,7 +38268,7 @@ coat_of_arms = {
 		}
 	}
 }
-2158122 = { name = "Shaukat" culture = muhajir used_for_random = no 
+2158122 = { name = "Shakaut" culture = muhajir used_for_random = no 
 	coat_of_arms = {
 		religion = nondescript_muslim
 		template = 0
