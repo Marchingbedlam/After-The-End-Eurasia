@@ -21,7 +21,7 @@ character_event = {
 				NOT = { block_general_event_trigger = yes }
 				OR = { 
 					has_landed_title = k_papal_state
-					has_landed_title = d_fraticelli
+					has_landed_title = k_pravoslavie
 				} 
 			} 
 		}
@@ -39,7 +39,7 @@ character_event = {
 				religion_head = { 
 					OR = { 
 						has_landed_title = k_papal_state
-						has_landed_title = d_fraticelli
+						has_landed_title = k_pravoslavie
 					}
 					NOT = { 
 						opinion = { 
@@ -54,7 +54,7 @@ character_event = {
 				religion_head = { 
 					OR = { 
 						has_landed_title = k_papal_state
-						has_landed_title = d_fraticelli
+						has_landed_title = k_pravoslavie
 					}
 					NOT = { 
 						opinion = { 
@@ -69,7 +69,7 @@ character_event = {
 				religion_head = { 
 					OR = { 
 						has_landed_title = k_papal_state
-						has_landed_title = d_fraticelli
+						has_landed_title = k_pravoslavie
 					}
 					NOT = { 
 						opinion = { 
@@ -84,7 +84,7 @@ character_event = {
 				religion_head = { 
 					OR = { 
 						has_landed_title = k_papal_state
-						has_landed_title = d_fraticelli
+						has_landed_title = k_pravoslavie
 					}
 					NOT = { 
 						opinion = { 
@@ -99,7 +99,7 @@ character_event = {
 				religion_head = { 
 					OR = { 
 						has_landed_title = k_papal_state
-						has_landed_title = d_fraticelli
+						has_landed_title = k_pravoslavie
 					}
 					NOT = { 
 						opinion = { 
@@ -114,7 +114,7 @@ character_event = {
 				religion_head = { 
 					OR = { 
 						has_landed_title = k_papal_state
-						has_landed_title = d_fraticelli
+						has_landed_title = k_pravoslavie
 					}
 					NOT = { 
 						opinion = { 
@@ -129,7 +129,7 @@ character_event = {
 				religion_head = { 
 					OR = { 
 						has_landed_title = k_papal_state
-						has_landed_title = d_fraticelli
+						has_landed_title = k_pravoslavie
 					}
 					NOT = { 
 						opinion = { 
@@ -144,7 +144,7 @@ character_event = {
 				religion_head = { 
 					OR = { 
 						has_landed_title = k_papal_state
-						has_landed_title = d_fraticelli
+						has_landed_title = k_pravoslavie
 					}
 					NOT = { 
 						opinion = { 
@@ -159,7 +159,7 @@ character_event = {
 				religion_head = { 
 					OR = { 
 						has_landed_title = k_papal_state
-						has_landed_title = d_fraticelli
+						has_landed_title = k_pravoslavie
 					}
 					NOT = { 
 						opinion = { 
@@ -174,7 +174,7 @@ character_event = {
 				religion_head = { 
 					OR = { 
 						has_landed_title = k_papal_state
-						has_landed_title = d_fraticelli
+						has_landed_title = k_pravoslavie
 					}
 					NOT = { 
 						opinion = { 
@@ -202,12 +202,12 @@ character_event = {
 				OR = { 
 					higher_tier_than = BARON 
 					has_minor_title = title_cardinal
-					has_minor_title = title_fraticelli_cardinal
+					has_minor_title = title_archierus
 					any_claim = { title = k_papal_state } #Antipope
-					any_claim = { title = d_fraticelli } #Antipope
+					any_claim = { title = k_pravoslavie } #Antipope
 				}
 				NOT = { has_landed_title = k_papal_state }
-				NOT = { has_landed_title = d_fraticelli }
+				NOT = { has_landed_title = k_pravoslavie }
 			}
 		}
 		custom_tooltip = { text = EVTTOOLTIPBHF20200 }
@@ -218,7 +218,7 @@ character_event = {
 					is_alive = yes 
 					OR = { 
 						has_landed_title = k_papal_state
-						has_landed_title = d_fraticelli
+						has_landed_title = k_pravoslavie
 					} 
 				}
 			}
@@ -244,24 +244,24 @@ character_event = {
 				OR = { 
 					higher_tier_than = BARON 
 					has_minor_title = title_cardinal
-					has_minor_title = title_fraticelli_cardinal
+					has_minor_title = title_archierus
 					any_claim = { title = k_papal_state } #Antipope
-					any_claim = { title = d_fraticelli } #Antipope
+					any_claim = { title = k_pravoslavie } #Antipope
 				}
 				NOT = { has_landed_title = k_papal_state }
-				NOT = { has_landed_title = d_fraticelli }
+				NOT = { has_landed_title = k_pravoslavie }
 			}
 			preferred_limit = { #First search for a possible antipopes.
 				any_claim = { title = k_papal_state } 
 			}
 			preferred_limit = { 
-				any_claim = { title = d_fraticelli } 
+				any_claim = { title = k_pravoslavie } 
 			}
 			preferred_limit = { 
 				has_minor_title = title_cardinal
 			}
 			preferred_limit = { 
-				has_minor_title = title_fraticelli_cardinal
+				has_minor_title = title_archierus
 			}
 			hidden_tooltip = { letter_event = { id = HF.20201 days = 30 random = 5 } } 
 			break = yes
@@ -287,12 +287,12 @@ character_event = {
 				religion = ROOT
 				NOR = { 
 					has_landed_title = k_papal_state
-					has_landed_title = d_fraticelli
+					has_landed_title = k_pravoslavie
 					higher_real_tier_than = BARON 
 					has_minor_title = title_cardinal
-					has_minor_title = title_fraticelli_cardinal
+					has_minor_title = title_archierus
 					any_claim = { title = k_papal_state } #Antipope
-					any_claim = { title = d_fraticelli } #Antipope
+					any_claim = { title = k_pravoslavie } #Antipope
 				}
 			}
 		}
@@ -309,7 +309,7 @@ character_event = {
 					is_alive = yes 
 					OR = { 
 						has_landed_title = k_papal_state
-						has_landed_title = d_fraticelli
+						has_landed_title = k_pravoslavie
 					} 
 				}
 			}
@@ -340,12 +340,12 @@ character_event = {
 					OR = { 
 						higher_real_tier_than = BARON 
 						has_minor_title = title_cardinal
-						has_minor_title = title_fraticelli_cardinal
+						has_minor_title = title_archierus
 						any_claim = { title = k_papal_state } #Antipope
-						any_claim = { title = d_fraticelli } 
+						any_claim = { title = k_pravoslavie } 
 					}
 					NOT = { has_landed_title = k_papal_state }
-					NOT = { has_landed_title = d_fraticelli }
+					NOT = { has_landed_title = k_pravoslavie }
 				}
 			}
 			custom_tooltip = { text = scorned_powerful_theocrats }
@@ -359,12 +359,12 @@ character_event = {
 						OR = { 
 							higher_real_tier_than = BARON 
 							has_minor_title = title_cardinal
-							has_minor_title = title_fraticelli_cardinal
+							has_minor_title = title_archierus
 							any_claim = { title = k_papal_state } #Antipope
-							any_claim = { title = d_fraticelli } 
+							any_claim = { title = k_pravoslavie } 
 						}
 						NOT = { has_landed_title = k_papal_state }
-						NOT = { has_landed_title = d_fraticelli }
+						NOT = { has_landed_title = k_pravoslavie }
 					}			
 					opinion = {
 						modifier = opinion_offended
@@ -383,12 +383,12 @@ character_event = {
 				NOT = { block_general_event_trigger = yes }
 				NOR = { 
 					has_landed_title = k_papal_state
-					has_landed_title = d_fraticelli
+					has_landed_title = k_pravoslavie
 					higher_real_tier_than = BARON 
 					has_minor_title = title_cardinal
-					has_minor_title = title_fraticelli_cardinal
+					has_minor_title = title_archierus
 					any_claim = { title = k_papal_state } #Antipope
-					any_claim = { title = d_fraticelli } 
+					any_claim = { title = k_pravoslavie } 
 				}
 			}
 			preferred_limit = { 
@@ -434,7 +434,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 0.5
-				has_landed_title = e_hre
+				has_landed_title = e_italy
 			}
 		}
 	}
@@ -459,7 +459,7 @@ letter_event = {
 			religion = ROOT
 			OR = {
 				religion = catholic
-				religion = fraticelli
+				religion = pravoslavie
 			}
 		}
 	}
@@ -469,12 +469,12 @@ letter_event = {
 		trigger = { 
 			NOR = { 
 				has_landed_title = k_papal_state
-				has_landed_title = d_fraticelli
+				has_landed_title = k_pravoslavie
 				higher_real_tier_than = BARON 
 				has_minor_title = title_cardinal
-				has_minor_title = title_fraticelli_cardinal
+				has_minor_title = title_archierus
 				any_claim = { title = k_papal_state } #Antipope
-				any_claim = { title = d_fraticelli } 
+				any_claim = { title = k_pravoslavie } 
 			}
 		}
 		random_list = { 
@@ -588,16 +588,16 @@ letter_event = {
 		trigger = { 
 			NOR = { 
 				has_landed_title = k_papal_state
-				has_landed_title = d_fraticelli
+				has_landed_title = k_pravoslavie
 			}
 			OR = { 
 				has_landed_title = k_papal_state
-				has_landed_title = d_fraticelli
+				has_landed_title = k_pravoslavie
 				higher_real_tier_than = BARON 
 				has_minor_title = title_cardinal
-				has_minor_title = title_fraticelli_cardinal
+				has_minor_title = title_archierus
 				any_claim = { title = k_papal_state } #Antipope
-				any_claim = { title = d_fraticelli } 
+				any_claim = { title = k_pravoslavie } 
 			}
 		}
 		random_list = { 
@@ -868,11 +868,11 @@ letter_event = {
 			10 = { 
 				trigger = { #Check if holy orders exist.
 					OR = { 
-						is_title_active = d_knights_templar 
-						is_title_active = d_teutonic_order 
-						is_title_active = d_knights_hospitaler 
-						is_title_active = d_knights_santiago 
-						is_title_active = d_knights_calatrava 
+						is_title_active = d_order_of_malta 
+						#is_title_active = d_teutonic_order 
+						#is_title_active = d_knights_hospitaler 
+						#is_title_active = d_knights_santiago 
+						#is_title_active = d_knights_calatrava 
 					}
 					FROM = { 
 						any_child = { 
@@ -1149,7 +1149,7 @@ letter_event = {
 		trigger = { 
 			OR = { 
 				has_landed_title = k_papal_state
-				has_landed_title = d_fraticelli
+				has_landed_title = k_pravoslavie
 			}
 		}
 		random_list = { 
@@ -1380,7 +1380,7 @@ letter_event = {
 				}
 				modifier = {
 					factor = 1.75
-					FROM = { has_landed_title = e_hre }
+					FROM = { has_landed_title = e_italy }
 				}
 				modifier = {
 					factor = 1.5
@@ -1455,13 +1455,13 @@ letter_event = {
 							NOT = { is_allied_with = ROOT }
 							OR = {
 								religion = catholic
-								religion = fraticelli
+								religion = pravoslavie
 							}
 							rightful_religious_head_scope = {
 								is_liege_or_above = PREV
 								OR = {
 									has_claim = k_papal_state
-									has_claim = d_fraticelli
+									has_claim = k_pravoslavie
 								}
 							}
 						}
@@ -1504,12 +1504,12 @@ letter_event = {
 							any_demesne_title = {
 							can_be_given_away = yes
 							OR = {
-								title = d_latium
-								title = d_spoleto
-								title = d_ancona
-								title = d_ferrara
-								title = d_benevento
-								title = c_roma
+								title = d_lazio
+								title = d_marche
+								title = d_san_marino
+								title = d_romagna
+								title = d_tuscany
+								title = c_rome
 								}
 							}
 						}
@@ -1517,12 +1517,12 @@ letter_event = {
 							any_vassal = {
 								any_demesne_title = {
 								OR = {
-									title = d_latium
-									title = d_spoleto
-									title = d_ancona
-									title = d_ferrara
-									title = d_benevento
-									title = c_roma
+									title = d_lazio
+									title = d_marche
+									title = d_san_marino
+									title = d_romagna
+									title = d_tuscany
+									title = c_rome
 									}
 								}
 							}
@@ -1647,15 +1647,15 @@ letter_event = {
 				modifier = {
 					factor = 1.5
 					has_landed_title = k_papal_state
-					FROM = { has_landed_title = c_roma }
+					FROM = { has_landed_title = c_rome }
 				}
 				modifier = {
 					factor = 1.5
 					has_landed_title = k_papal_state
 					FROM = { 
 						OR = { 
-							has_landed_title = d_latium 
-							any_vassal = { has_landed_title = d_latium }
+							has_landed_title = d_lazio 
+							any_vassal = { has_landed_title = d_lazio }
 						} 
 					}
 				}
@@ -1664,8 +1664,8 @@ letter_event = {
 					has_landed_title = k_papal_state
 					FROM = { 
 						OR = { 
-							has_landed_title = d_spoleto
-							any_vassal = { has_landed_title = d_spoleto }
+							has_landed_title = d_marche
+							any_vassal = { has_landed_title = d_marche }
 						} 
 					}
 				}
@@ -1674,8 +1674,8 @@ letter_event = {
 					has_landed_title = k_papal_state
 					FROM = { 
 						OR = { 
-							has_landed_title = d_ancona
-							any_vassal = { has_landed_title = d_ancona }
+							has_landed_title = d_san_marino
+							any_vassal = { has_landed_title = d_san_marino }
 						} 
 					}
 				}
@@ -1684,8 +1684,8 @@ letter_event = {
 					has_landed_title = k_papal_state
 					FROM = { 
 						OR = { 
-							has_landed_title = d_ferrara
-							any_vassal = { has_landed_title = d_ferrara }
+							has_landed_title = d_romagna
+							any_vassal = { has_landed_title = d_romagna }
 						} 
 					}
 				}
@@ -1694,15 +1694,15 @@ letter_event = {
 					has_landed_title = k_papal_state
 					FROM = { 
 						OR = { 
-							has_landed_title = d_benevento
-							any_vassal = { has_landed_title = d_benevento }
+							has_landed_title = d_tuscany
+							any_vassal = { has_landed_title = d_tuscany }
 						} 
 					}
 				}
 				modifier = {
 					factor = 1.25
 					has_landed_title = k_papal_state
-					FROM = { has_landed_title = e_hre }
+					FROM = { has_landed_title = e_italy }
 				}
 				modifier = {
 					factor = 2.5
@@ -1715,28 +1715,28 @@ letter_event = {
 					factor = 0
 					AND = { 
 						OR = { 
-							any_vassal = { has_landed_title = c_roma }
-							has_landed_title = c_roma 
+							any_vassal = { has_landed_title = c_rome }
+							has_landed_title = c_rome 
 						}
 						OR = { 
-							any_vassal = { has_landed_title = d_latium }
-							has_landed_title = d_latium 
+							any_vassal = { has_landed_title = d_lazio }
+							has_landed_title = d_lazio 
 						}
 						OR = { 
-							any_vassal = { has_landed_title = d_spoleto }
-							has_landed_title = d_spoleto 
+							any_vassal = { has_landed_title = d_marche }
+							has_landed_title = d_marche 
 						}
 						OR = { 
-							any_vassal = { has_landed_title = d_ancona }
-							has_landed_title = d_ancona 
+							any_vassal = { has_landed_title = d_san_marino }
+							has_landed_title = d_san_marino 
 						}
 						OR = { 
-							any_vassal = { has_landed_title = d_ferrara }
-							has_landed_title = d_ferrara 
+							any_vassal = { has_landed_title = d_romagna }
+							has_landed_title = d_romagna 
 						}
 						OR = { 
-							any_vassal = { has_landed_title = d_benevento }
-							has_landed_title = d_benevento 
+							any_vassal = { has_landed_title = d_tuscany }
+							has_landed_title = d_tuscany 
 						}
 					}
 				}
@@ -1779,7 +1779,7 @@ letter_event = {
 				}
 				modifier = {
 					factor = 0		# Catholics only.
-					has_landed_title = d_fraticelli
+					has_landed_title = k_pravoslavie
 				}
 				modifier = {
 					factor = 1.5
@@ -1806,11 +1806,11 @@ letter_event = {
 			5 = { 
 				trigger = { #Check if holy orders exist.
 					OR = { 
-						is_title_active = d_knights_templar 
-						is_title_active = d_teutonic_order 
-						is_title_active = d_knights_hospitaler 
-						is_title_active = d_knights_santiago 
-						is_title_active = d_knights_calatrava 
+						is_title_active = d_order_of_malta 
+						#is_title_active = d_teutonic_order 
+						#is_title_active = d_knights_hospitaler 
+						#is_title_active = d_knights_santiago 
+						#is_title_active = d_knights_calatrava 
 					}
 					FROM = { 
 						higher_real_tier_than = KING 
@@ -1963,24 +1963,24 @@ letter_event = {
 						OR = {
 							any_demesne_title = {
 								OR = {
-									title = d_latium
-									title = d_spoleto
-									title = d_ancona
-									title = d_ferrara
-									title = d_benevento
-									d_latium = {
+									title = d_lazio
+									title = d_marche
+									title = d_san_marino
+									title = d_romagna
+									title = d_tuscany
+									d_lazio = {
 										any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 									}
-									d_spoleto = {
+									d_marche = {
 										any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 									}
-									d_ancona = {
+									d_san_marino = {
 										any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 									}
-									d_ferrara = {
+									d_romagna = {
 										any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 									}
-									d_benevento = {
+									d_tuscany = {
 										any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 									}
 								}
@@ -1988,24 +1988,24 @@ letter_event = {
 							any_vassal = {	
 								any_demesne_title = {
 									OR = {
-										title = d_latium
-										title = d_spoleto
-										title = d_ancona
-										title = d_ferrara
-										title = d_benevento
-										d_latium = {
+										title = d_lazio
+										title = d_marche
+										title = d_san_marino
+										title = d_romagna
+										title = d_tuscany
+										d_lazio = {
 											any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 										}
-										d_spoleto = {
+										d_marche = {
 											any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 										}
-										d_ancona = {
+										d_san_marino = {
 											any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 										}
-										d_ferrara = {
+										d_romagna = {
 											any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 										}
-										d_benevento = {
+										d_tuscany = {
 											any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 										}
 									}
@@ -2066,7 +2066,7 @@ letter_event = {
 				modifier = {
 					factor = 2
 					has_landed_title = k_papal_state
-					FROM = { has_landed_title = e_hre }
+					FROM = { has_landed_title = e_italy }
 				}
 				modifier = {
 					factor = 2.5
@@ -2077,19 +2077,19 @@ letter_event = {
 				}
 				modifier = { #If Papacy doesn't control any of its historical provinces, this request will be its highest priority (as long as potential enemies are available and it's an imperial coronation).
 					factor = 10
-					NOT = { completely_controls = d_latium }
-					NOT = { completely_controls = d_spoleto }
-					NOT = { completely_controls = d_ancona }
-					NOT = { completely_controls = d_ferrara }
-					NOT = { completely_controls = d_benevento }
+					NOT = { completely_controls = d_lazio }
+					NOT = { completely_controls = d_marche }
+					NOT = { completely_controls = d_san_marino }
+					NOT = { completely_controls = d_romagna }
+					NOT = { completely_controls = d_tuscany }
 				}
 				modifier = { #If Papacy already controls historical provinces, it won't be interested in gaining even more land in Italy.
 					factor = 0
-					completely_controls = d_latium
-					completely_controls = d_spoleto
-					completely_controls = d_ancona
-					completely_controls = d_ferrara
-					completely_controls = d_benevento
+					completely_controls = d_lazio
+					completely_controls = d_marche
+					completely_controls = d_san_marino
+					completely_controls = d_romagna
+					completely_controls = d_tuscany
 				}
 				FROM = { letter_event = { id = HF.20221 } } #Holy war Italy for me.
 			}
@@ -2105,7 +2105,7 @@ letter_event = {
 	trigger = {
 		OR = {
 			religion = catholic
-			religion = fraticelli
+			religion = pravoslavie
 		}
 	}
 
@@ -2148,7 +2148,7 @@ letter_event = {
 	trigger = {
 		OR = {
 			religion = catholic
-			religion = fraticelli
+			religion = pravoslavie
 		}
 	}
 	is_triggered_only = yes
@@ -2192,7 +2192,7 @@ letter_event = {
 	trigger = {
 		OR = {
 			religion = catholic
-			religion = fraticelli
+			religion = pravoslavie
 		}
 	}
 
@@ -2237,7 +2237,7 @@ letter_event = {
 	trigger = {
 		OR = {
 			religion = catholic
-			religion = fraticelli
+			religion = pravoslavie
 		}
 	}
 	is_triggered_only = yes
@@ -2281,7 +2281,7 @@ letter_event = {
 	trigger = {
 		OR = {
 			religion = catholic
-			religion = fraticelli
+			religion = pravoslavie
 		}
 	}
 	is_triggered_only = yes
@@ -2356,7 +2356,7 @@ letter_event = {
 	trigger = {
 		OR = {
 			religion = catholic
-			religion = fraticelli
+			religion = pravoslavie
 		}
 	}
 	is_triggered_only = yes
@@ -2387,11 +2387,11 @@ letter_event = {
 			limit = { 
 				religion = ROOT
 				OR = { 
-					has_landed_title = d_knights_templar
-					has_landed_title = d_teutonic_order
-					has_landed_title = d_knights_hospitaler
-					has_landed_title = d_knights_santiago
-					has_landed_title = d_knights_calatrava 
+					has_landed_title = d_order_of_malta
+					#has_landed_title = d_teutonic_order
+					#has_landed_title = d_knights_hospitaler
+					#has_landed_title = d_knights_santiago
+					#has_landed_title = d_knights_calatrava 
 				} 
 			}
 			save_event_target_as = son_holyorder_host
@@ -2444,7 +2444,7 @@ letter_event = {
 	trigger = {
 		OR = {
 			religion = catholic
-			religion = fraticelli
+			religion = pravoslavie
 		}
 	}
 	is_triggered_only = yes
@@ -2525,7 +2525,7 @@ letter_event = {
 	trigger = {
 		OR = {
 			religion = catholic
-			religion = fraticelli
+			religion = pravoslavie
 		}
 	}
 	option = {
@@ -2574,7 +2574,7 @@ letter_event = {
 	trigger = {
 		OR = {
 			religion = catholic
-			religion = fraticelli
+			religion = pravoslavie
 		}
 	}
 	is_triggered_only = yes
@@ -2616,7 +2616,7 @@ letter_event = {
 	trigger = {
 		OR = {
 			religion = catholic
-			religion = fraticelli
+			religion = pravoslavie
 		}
 	}
 	is_triggered_only = yes
@@ -2672,7 +2672,7 @@ letter_event = {
 	trigger = {
 		OR = {
 			religion = catholic
-			religion = fraticelli
+			religion = pravoslavie
 		}
 	}
 	is_triggered_only = yes
@@ -3070,7 +3070,7 @@ letter_event = {
 	trigger = {
 		OR = {
 			religion = catholic
-			religion = fraticelli
+			religion = pravoslavie
 		}
 	}
 	is_triggered_only = yes
@@ -3134,7 +3134,7 @@ letter_event = {
 	trigger = {
 		OR = {
 			religion = catholic
-			religion = fraticelli
+			religion = pravoslavie
 		}
 	}
 	is_triggered_only = yes
@@ -3620,7 +3620,7 @@ letter_event = {
 	trigger = {
 		OR = {
 			religion = catholic
-			religion = fraticelli
+			religion = pravoslavie
 		}
 	}
 	is_triggered_only = yes
@@ -3633,13 +3633,13 @@ letter_event = {
 				is_within_diplo_range = ROOT
 				OR = {
 					religion = catholic
-					religion = fraticelli
+					religion = pravoslavie
 				}
 				rightful_religious_head_scope = {
 					is_liege_or_above = PREV
 					OR = {
 						has_claim = k_papal_state
-						has_claim = d_fraticelli
+						has_claim = k_pravoslavie
 					}
 				}
 			}
@@ -4098,7 +4098,7 @@ letter_event = {
 	trigger = {
 		OR = {
 			religion = catholic
-			religion = fraticelli
+			religion = pravoslavie
 		}
 	}
 	is_triggered_only = yes
@@ -4124,10 +4124,10 @@ letter_event = {
 		}
 		hidden_tooltip = { character_event = { id = HF.20300 } } #Go to budget event
 		#First of all, if the Emperor has Rome, it is asked automatically as an additional gift.
-		#Latium Check
+		#Lazio Check
 		if = { 
-			limit = { has_landed_title = c_roma }
-			c_roma = { 
+			limit = { has_landed_title = c_rome }
+			c_rome = { 
 				grant_title = FROM 
 				any_de_jure_vassal = { #Pope vassalizes all vassal titles in the scope
 					limit = { 
@@ -4143,18 +4143,18 @@ letter_event = {
 				} 
 			}
 		}
-		#Secondly, check for all Duchies within the borders of the historical Donation of Pepin (Latium, Spoleto, Ancona, Ferrara, Benevento).
+		#Secondly, check for all Duchies within the borders of the historical Donation of Pepin (Lazio, Marche, San Marino, Romagna, Tuscany).
 		#If the Emperor owns them directly, the Pope takes the title, if his vassals do, said vassals will become the Papacy's vassals.
-		#Latium Check
+		#Lazio Check
 		if = { 
 			limit = {
 				any_demesne_title = {
 					can_be_given_away = yes
 					tier = duke
-					title = d_latium
+					title = d_lazio
 				}
 			}
-			d_latium = { 
+			d_lazio = { 
 				grant_title = FROM 
 				any_de_jure_vassal = {
 					limit = { 
@@ -4178,13 +4178,13 @@ letter_event = {
 					any_demesne_title = {
 						#can_be_given_away = yes #No need as he will only get vassalized.
 						tier = duke
-						title = d_latium
+						title = d_lazio
 					}
 				}
 			}
 			random_vassal = { 
 				limit = { 
-					has_landed_title = d_latium
+					has_landed_title = d_lazio
 					lower_tier_than = FROM
 				} 
 				set_defacto_liege = FROM
@@ -4192,16 +4192,16 @@ letter_event = {
 			}
 			break = yes
 		}
-		#Spoleto Check
+		#Marche Check
 		if = { 
 			limit = {
 				any_demesne_title = {
 					can_be_given_away = yes
 					tier = duke
-					title = d_spoleto
+					title = d_marche
 				}
 			}
-			d_spoleto = { 
+			d_marche = { 
 				grant_title = FROM 
 				any_de_jure_vassal = {
 					limit = { 
@@ -4225,13 +4225,13 @@ letter_event = {
 					any_demesne_title = {
 						#can_be_given_away = yes
 						tier = duke
-						title = d_spoleto
+						title = d_marche
 					}
 				}
 			}
 			random_vassal = { 
 				limit = { 
-					has_landed_title = d_spoleto 
+					has_landed_title = d_marche 
 					lower_tier_than = FROM
 				} 
 				set_defacto_liege = FROM
@@ -4239,16 +4239,16 @@ letter_event = {
 			}
 			break = yes
 		}
-		#Ancona Check
+		#San Marino Check
 		if = { 
 			limit = {
 				any_demesne_title = {
 					can_be_given_away = yes
 					tier = duke
-					title = d_ancona
+					title = d_san_marino
 				}
 			}
-			d_ancona = { 
+			d_san_marino = { 
 				grant_title = FROM 
 				any_de_jure_vassal = {
 					limit = { 
@@ -4272,13 +4272,13 @@ letter_event = {
 					any_demesne_title = {
 						#can_be_given_away = yes 
 						tier = duke
-						title = d_ancona
+						title = d_san_marino
 					}
 				}
 			}
 			random_vassal = { 
 				limit = { 
-					has_landed_title = d_ancona 
+					has_landed_title = d_san_marino 
 					lower_tier_than = FROM
 				} 
 				set_defacto_liege = FROM
@@ -4286,16 +4286,16 @@ letter_event = {
 			}
 			break = yes
 		}
-		#Ferrara
+		#Romagna
 		if = { 
 			limit = {
 				any_demesne_title = {
 					can_be_given_away = yes
 					tier = duke
-					title = d_ferrara
+					title = d_romagna
 				}
 			}
-			d_ferrara = { 
+			d_romagna = { 
 				grant_title = FROM 
 				any_de_jure_vassal = {
 					limit = { 
@@ -4319,13 +4319,13 @@ letter_event = {
 					any_demesne_title = {
 						#can_be_given_away = yes 
 						tier = duke
-						title = d_ferrara
+						title = d_romagna
 					}
 				}
 			}
 			random_vassal = { 
 				limit = { 
-					has_landed_title = d_ferrara 
+					has_landed_title = d_romagna 
 					lower_tier_than = FROM
 				} 
 				set_defacto_liege = FROM
@@ -4333,16 +4333,16 @@ letter_event = {
 			}
 			break = yes
 		}
-		#Benevento
+		#Tuscany
 		if = { 
 			limit = {
 				any_demesne_title = {
 					can_be_given_away = yes
 					tier = duke
-					title = d_benevento
+					title = d_tuscany
 				}
 			}
-			d_benevento = { 
+			d_tuscany = { 
 				grant_title = FROM 
 				any_de_jure_vassal = {
 					limit = { 
@@ -4366,13 +4366,13 @@ letter_event = {
 					any_demesne_title = {
 						#can_be_given_away = yes 
 						tier = duke
-						title = d_benevento
+						title = d_tuscany
 					}
 				}
 			}
 			random_vassal = { 
 				limit = { 
-					has_landed_title = d_benevento 
+					has_landed_title = d_tuscany 
 					lower_tier_than = FROM
 				} 
 				set_defacto_liege = FROM
@@ -4419,7 +4419,7 @@ letter_event = {
 	trigger = {
 		OR = {
 			religion = catholic
-			religion = fraticelli
+			religion = pravoslavie
 		}
 	}
 	is_triggered_only = yes
@@ -4491,11 +4491,11 @@ letter_event = {
 			limit = { 
 				religion = ROOT
 				OR = { 
-					has_landed_title = d_knights_templar
-					has_landed_title = d_teutonic_order
-					has_landed_title = d_knights_hospitaler
-					has_landed_title = d_knights_santiago
-					has_landed_title = d_knights_calatrava 
+					has_landed_title = d_order_of_malta
+					#has_landed_title = d_teutonic_order
+					#has_landed_title = d_knights_hospitaler
+					#has_landed_title = d_knights_santiago
+					#has_landed_title = d_knights_calatrava 
 				} 
 			}
 			save_event_target_as = scoped_grandmaster
@@ -4549,11 +4549,11 @@ letter_event = {
 				limit = { 
 					religion = ROOT
 					OR = { 
-						has_landed_title = d_knights_templar
-						has_landed_title = d_teutonic_order
-						has_landed_title = d_knights_hospitaler
-						has_landed_title = d_knights_santiago
-						has_landed_title = d_knights_calatrava 
+						has_landed_title = d_order_of_malta
+						#has_landed_title = d_teutonic_order
+						#has_landed_title = d_knights_hospitaler
+						#has_landed_title = d_knights_santiago
+						#has_landed_title = d_knights_calatrava 
 					} 
 				}
 				ROOT = {
@@ -5198,7 +5198,7 @@ letter_event = {
 	trigger = {
 		OR = {
 			religion = catholic
-			religion = fraticelli
+			religion = pravoslavie
 		}
 	}
 	is_triggered_only = yes
@@ -5212,24 +5212,24 @@ letter_event = {
 					OR = {
 						any_demesne_title = {
 							OR = {
-								title = d_latium
-								title = d_spoleto
-								title = d_ancona
-								title = d_ferrara
-								title = d_benevento
-								d_latium = {
+								title = d_lazio
+								title = d_marche
+								title = d_san_marino
+								title = d_romagna
+								title = d_tuscany
+								d_lazio = {
 									any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 								}
-								d_spoleto = {
+								d_marche = {
 									any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 								}
-								d_ancona = {
+								d_san_marino = {
 									any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 								}
-								d_ferrara = {
+								d_romagna = {
 									any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 								}
-								d_benevento = {
+								d_tuscany = {
 									any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 								}
 							}
@@ -5237,24 +5237,24 @@ letter_event = {
 						any_vassal = {
 							any_demesne_title = {
 								OR = {
-									title = d_latium
-									title = d_spoleto
-									title = d_ancona
-									title = d_ferrara
-									title = d_benevento
-									d_latium = {
+									title = d_lazio
+									title = d_marche
+									title = d_san_marino
+									title = d_romagna
+									title = d_tuscany
+									d_lazio = {
 										any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 									}
-									d_spoleto = {
+									d_marche = {
 										any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 									}
-									d_ancona = {
+									d_san_marino = {
 										any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 									}
-									d_ferrara = {
+									d_romagna = {
 										any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 									}
-									d_benevento = {
+									d_tuscany = {
 										any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 									}
 								}
@@ -5271,24 +5271,24 @@ letter_event = {
 					OR = {
 						any_demesne_title = {
 							OR = {
-								title = d_latium
-								title = d_spoleto
-								title = d_ancona
-								title = d_ferrara
-								title = d_benevento
-								d_latium = {
+								title = d_lazio
+								title = d_marche
+								title = d_san_marino
+								title = d_romagna
+								title = d_tuscany
+								d_lazio = {
 									any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 								}
-								d_spoleto = {
+								d_marche = {
 									any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 								}
-								d_ancona = {
+								d_san_marino = {
 									any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 								}
-								d_ferrara = {
+								d_romagna = {
 									any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 								}
-								d_benevento = {
+								d_tuscany = {
 									any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 								}
 							}
@@ -5296,24 +5296,24 @@ letter_event = {
 						any_vassal = {
 							any_demesne_title = {
 								OR = {
-									title = d_latium
-									title = d_spoleto
-									title = d_ancona
-									title = d_ferrara
-									title = d_benevento
-									d_latium = {
+									title = d_lazio
+									title = d_marche
+									title = d_san_marino
+									title = d_romagna
+									title = d_tuscany
+									d_lazio = {
 										any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 									}
-									d_spoleto = {
+									d_marche = {
 										any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 									}
-									d_ancona = {
+									d_san_marino = {
 										any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 									}
-									d_ferrara = {
+									d_romagna = {
 										any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 									}
-									d_benevento = {
+									d_tuscany = {
 										any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 									}
 								}
@@ -5334,24 +5334,24 @@ letter_event = {
 					OR = {
 						any_demesne_title = {
 							OR = {
-								title = d_latium
-								title = d_spoleto
-								title = d_ancona
-								title = d_ferrara
-								title = d_benevento
-								d_latium = {
+								title = d_lazio
+								title = d_marche
+								title = d_san_marino
+								title = d_romagna
+								title = d_tuscany
+								d_lazio = {
 									any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 								}
-								d_spoleto = {
+								d_marche = {
 									any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 								}
-								d_ancona = {
+								d_san_marino = {
 									any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 								}
-								d_ferrara = {
+								d_romagna = {
 									any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 								}
-								d_benevento = {
+								d_tuscany = {
 									any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 								}
 							}
@@ -5359,24 +5359,24 @@ letter_event = {
 						any_vassal = {
 							any_demesne_title = {
 								OR = {
-									title = d_latium
-									title = d_spoleto
-									title = d_ancona
-									title = d_ferrara
-									title = d_benevento
-									d_latium = {
+									title = d_lazio
+									title = d_marche
+									title = d_san_marino
+									title = d_romagna
+									title = d_tuscany
+									d_lazio = {
 										any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 									}
-									d_spoleto = {
+									d_marche = {
 										any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 									}
-									d_ancona = {
+									d_san_marino = {
 										any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 									}
-									d_ferrara = {
+									d_romagna = {
 										any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 									}
-									d_benevento = {
+									d_tuscany = {
 										any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 									}
 								}
@@ -5393,24 +5393,24 @@ letter_event = {
 					OR = {
 						any_demesne_title = {
 							OR = {
-								title = d_latium
-								title = d_spoleto
-								title = d_ancona
-								title = d_ferrara
-								title = d_benevento
-								d_latium = {
+								title = d_lazio
+								title = d_marche
+								title = d_san_marino
+								title = d_romagna
+								title = d_tuscany
+								d_lazio = {
 									any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 								}
-								d_spoleto = {
+								d_marche = {
 									any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 								}
-								d_ancona = {
+								d_san_marino = {
 									any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 								}
-								d_ferrara = {
+								d_romagna = {
 									any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 								}
-								d_benevento = {
+								d_tuscany = {
 									any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 								}
 							}
@@ -5418,24 +5418,24 @@ letter_event = {
 						any_vassal = {
 							any_demesne_title = {
 								OR = {
-									title = d_latium
-									title = d_spoleto
-									title = d_ancona
-									title = d_ferrara
-									title = d_benevento
-									d_latium = {
+									title = d_lazio
+									title = d_marche
+									title = d_san_marino
+									title = d_romagna
+									title = d_tuscany
+									d_lazio = {
 										any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 									}
-									d_spoleto = {
+									d_marche = {
 										any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 									}
-									d_ancona = {
+									d_san_marino = {
 										any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 									}
-									d_ferrara = {
+									d_romagna = {
 										any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 									}
-									d_benevento = {
+									d_tuscany = {
 										any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 									}
 								}
@@ -5465,24 +5465,24 @@ letter_event = {
 					OR = {
 						any_demesne_title = {
 							OR = {
-								title = d_latium
-								title = d_spoleto
-								title = d_ancona
-								title = d_ferrara
-								title = d_benevento
-								d_latium = {
+								title = d_lazio
+								title = d_marche
+								title = d_san_marino
+								title = d_romagna
+								title = d_tuscany
+								d_lazio = {
 									any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 								}
-								d_spoleto = {
+								d_marche = {
 									any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 								}
-								d_ancona = {
+								d_san_marino = {
 									any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 								}
-								d_ferrara = {
+								d_romagna = {
 									any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 								}
-								d_benevento = {
+								d_tuscany = {
 									any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 								}
 							}
@@ -5490,24 +5490,24 @@ letter_event = {
 						any_vassal = {
 							any_demesne_title = {
 								OR = {
-									title = d_latium
-									title = d_spoleto
-									title = d_ancona
-									title = d_ferrara
-									title = d_benevento
-									d_latium = {
+									title = d_lazio
+									title = d_marche
+									title = d_san_marino
+									title = d_romagna
+									title = d_tuscany
+									d_lazio = {
 										any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 									}
-									d_spoleto = {
+									d_marche = {
 										any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 									}
-									d_ancona = {
+									d_san_marino = {
 										any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 									}
-									d_ferrara = {
+									d_romagna = {
 										any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 									}
-									d_benevento = {
+									d_tuscany = {
 										any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 									}
 								}
@@ -5533,24 +5533,24 @@ letter_event = {
 					OR = {
 						any_demesne_title = {
 							OR = {
-								title = d_latium
-								title = d_spoleto
-								title = d_ancona
-								title = d_ferrara
-								title = d_benevento
-								d_latium = {
+								title = d_lazio
+								title = d_marche
+								title = d_san_marino
+								title = d_romagna
+								title = d_tuscany
+								d_lazio = {
 									any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 								}
-								d_spoleto = {
+								d_marche = {
 									any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 								}
-								d_ancona = {
+								d_san_marino = {
 									any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 								}
-								d_ferrara = {
+								d_romagna = {
 									any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 								}
-								d_benevento = {
+								d_tuscany = {
 									any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 								}
 							}
@@ -5558,24 +5558,24 @@ letter_event = {
 						any_vassal = {
 							any_demesne_title = {
 								OR = {
-									title = d_latium
-									title = d_spoleto
-									title = d_ancona
-									title = d_ferrara
-									title = d_benevento
-									d_latium = {
+									title = d_lazio
+									title = d_marche
+									title = d_san_marino
+									title = d_romagna
+									title = d_tuscany
+									d_lazio = {
 										any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 									}
-									d_spoleto = {
+									d_marche = {
 										any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 									}
-									d_ancona = {
+									d_san_marino = {
 										any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 									}
-									d_ferrara = {
+									d_romagna = {
 										any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 									}
-									d_benevento = {
+									d_tuscany = {
 										any_de_jure_vassal_title = { owner = { character = PREVPREVPREVPREV } }
 									}
 								}
@@ -6032,100 +6032,100 @@ character_event = {
 			limit = { 
 				OR = {
 					#Check whether you (or your vassals) own the title directly...
-					has_landed_title = d_latium
-					any_vassal = { has_landed_title = d_latium }
+					has_landed_title = d_lazio
+					any_vassal = { has_landed_title = d_lazio }
 					#...or if you (or your vassals) only own land within the title's dejure.
-					d_latium = {
+					d_lazio = {
 						any_de_jure_vassal_title = { owner = { character = PREVPREVPREV } }
 					}
 					any_vassal = { 
-						d_latium = {
+						d_lazio = {
 							any_de_jure_vassal_title = { owner = { character = PREVPREVPREV } }
 						}
 					}
 				}
 			}
-			d_latium = { save_event_target_as = pepin_title_target }
+			d_lazio = { save_event_target_as = pepin_title_target }
 			FROM = { character_event = { id = HF.20223 } }
 		}
 		else_if = { 
 			limit = { 
 				OR = {
 					#Check whether you (or your vassals) own the title directly...
-					has_landed_title = d_spoleto
-					any_vassal = { has_landed_title = d_spoleto }
+					has_landed_title = d_marche
+					any_vassal = { has_landed_title = d_marche }
 					#...or if you (or your vassals) only own land within the title's dejure.
-					d_spoleto = {
+					d_marche = {
 						any_de_jure_vassal_title = { owner = { character = PREVPREVPREV } }
 					}
 					any_vassal = { 
-						d_spoleto = {
+						d_marche = {
 							any_de_jure_vassal_title = { owner = { character = PREVPREVPREV } }
 						}
 					}
 				}
 			}
-			d_spoleto = { save_event_target_as = pepin_title_target }
+			d_marche = { save_event_target_as = pepin_title_target }
 			FROM = { character_event = { id = HF.20223 } }
 		}
 		else_if = { 
 			limit = { 
 				OR = {
 					#Check whether you (or your vassals) own the title directly...
-					has_landed_title = d_ancona
-					any_vassal = { has_landed_title = d_ancona }
+					has_landed_title = d_san_marino
+					any_vassal = { has_landed_title = d_san_marino }
 					#...or if you (or your vassals) only own land within the title's dejure.
-					d_ancona = {
+					d_san_marino = {
 						any_de_jure_vassal_title = { owner = { character = PREVPREVPREV } }
 					}
 					any_vassal = { 
-						d_ancona = {
+						d_san_marino = {
 							any_de_jure_vassal_title = { owner = { character = PREVPREVPREV } }
 						}
 					}
 				}
 			}
-			d_ancona = { save_event_target_as = pepin_title_target }
+			d_san_marino = { save_event_target_as = pepin_title_target }
 			FROM = { character_event = { id = HF.20223 } }
 		}
 		else_if = { 
 			limit = { 
 				OR = {
 					#Check whether you (or your vassals) own the title directly...
-					has_landed_title = d_ferrara
-					any_vassal = { has_landed_title = d_ferrara }
+					has_landed_title = d_romagna
+					any_vassal = { has_landed_title = d_romagna }
 					#...or if you (or your vassals) only own land within the title's dejure.
-					d_ferrara = {
+					d_romagna = {
 						any_de_jure_vassal_title = { owner = { character = PREVPREVPREV } }
 					}
 					any_vassal = { 
-						d_ferrara = {
+						d_romagna = {
 							any_de_jure_vassal_title = { owner = { character = PREVPREVPREV } }
 						}
 					}
 				}
 			}
-			d_ferrara = { save_event_target_as = pepin_title_target }
+			d_romagna = { save_event_target_as = pepin_title_target }
 			FROM = { character_event = { id = HF.20223 } }
 		}
 		else_if = { 
 			limit = { 
 				OR = {
 					#Check whether you (or your vassals) own the title directly...
-					has_landed_title = d_benevento
-					any_vassal = { has_landed_title = d_benevento }
+					has_landed_title = d_tuscany
+					any_vassal = { has_landed_title = d_tuscany }
 					#...or if you (or your vassals) only own land within the title's dejure.
-					d_benevento = {
+					d_tuscany = {
 						any_de_jure_vassal_title = { owner = { character = PREVPREVPREV } }
 					}
 					any_vassal = { 
-						d_benevento = {
+						d_tuscany = {
 							any_de_jure_vassal_title = { owner = { character = PREVPREVPREV } }
 						}
 					}
 				}
 			}
-			d_benevento = { save_event_target_as = pepin_title_target }
+			d_tuscany = { save_event_target_as = pepin_title_target }
 			FROM = { character_event = { id = HF.20223 } }
 		}
 	}
@@ -6564,7 +6564,7 @@ letter_event = {
 	trigger = {
 		OR = {
 			religion = catholic
-			religion = fraticelli
+			religion = pravoslavie
 		}
 	}
 	is_triggered_only = yes
@@ -6996,7 +6996,7 @@ letter_event = {
 	trigger = {
 		OR = {
 			religion = catholic
-			religion = fraticelli
+			religion = pravoslavie
 		}
 	}
 	is_triggered_only = yes
@@ -7062,7 +7062,7 @@ letter_event = {
 	trigger = {
 		OR = {
 			religion = catholic
-			religion = fraticelli
+			religion = pravoslavie
 		}
 	}
 	is_triggered_only = yes
@@ -7166,7 +7166,7 @@ character_event = {
 	trigger = {
 		OR = {
 			religion = catholic
-			religion = fraticelli
+			religion = pravoslavie
 		}
 	}
 	is_triggered_only = yes
@@ -7574,7 +7574,7 @@ letter_event = {
 	trigger = {
 		OR = {
 			religion = catholic
-			religion = fraticelli
+			religion = pravoslavie
 		}
 		OR = {
 			has_character_flag = flag_crowned_by_priest
@@ -7598,7 +7598,7 @@ letter_event = {
 	trigger = {
 		OR = {
 			religion = catholic
-			religion = fraticelli
+			religion = pravoslavie
 		}
 		OR = {
 			has_character_flag = flag_crowned_by_priest
@@ -7654,7 +7654,7 @@ character_event = {
 	trigger = { 
 		OR = {
 			religion = catholic
-			religion = fraticelli
+			religion = pravoslavie
 		}
 		OR = {
 			has_character_flag = flag_crowned_by_priest
@@ -11299,7 +11299,7 @@ character_event = {
 		event_target:coronation_ruler = {
 			OR = {
 				religion = catholic
-				religion = fraticelli
+				religion = pravoslavie
 			}
 			OR = {
 				has_character_flag = flag_crowned_by_priest
@@ -11348,7 +11348,7 @@ character_event = {
 			ROOT = { 
 				war = no
 				OR = { 
-					has_landed_title = e_hre 
+					has_landed_title = e_italy 
 					has_landed_title = e_france
 				}
 				NOT = { has_character_flag = flag_secluded_coronation }
@@ -11364,7 +11364,7 @@ character_event = {
 				war = no
 				tier = EMPEROR
 				NOR = { 
-					has_landed_title = e_hre 
+					has_landed_title = e_italy 
 					has_landed_title = e_france
 				}
 				NOT = { has_character_flag = flag_secluded_coronation }
@@ -11381,7 +11381,7 @@ character_event = {
 				war = no
 				tier = EMPEROR
 				NOR = { 
-					has_landed_title = e_hre 
+					has_landed_title = e_italy 
 					has_landed_title = e_france
 				}
 				NOT = { has_character_flag = flag_secluded_coronation }
@@ -11509,7 +11509,7 @@ character_event = {
 		event_target:coronation_ruler = { 
 			OR = {
 				religion = catholic
-				religion = fraticelli
+				religion = pravoslavie
 			}
 			OR = {
 				has_character_flag = flag_crowned_by_priest
@@ -11736,7 +11736,7 @@ character_event = {
 			FROM = { 
 				war = no
 				OR = { 
-					has_landed_title = e_hre 
+					has_landed_title = e_italy 
 					has_landed_title = e_france
 				}
 				NOT = { has_character_flag = flag_secluded_coronation }
@@ -11752,7 +11752,7 @@ character_event = {
 				war = no
 				tier = EMPEROR
 				NOR = { 
-					has_landed_title = e_hre 
+					has_landed_title = e_italy 
 					has_landed_title = e_france
 				}
 				NOT = { has_character_flag = flag_secluded_coronation }
@@ -11769,7 +11769,7 @@ character_event = {
 				war = no
 				tier = EMPEROR
 				NOR = { 
-					has_landed_title = e_hre 
+					has_landed_title = e_italy 
 					has_landed_title = e_france
 				}
 				NOT = { has_character_flag = flag_secluded_coronation }
@@ -12328,18 +12328,18 @@ character_event = {
 							trait = excommunicated
 							trait = possessed 
 							NOT = { religion_head = { has_landed_title = k_papal_state } }
-							has_landed_title = e_latin_empire #Disavowed historically.
+							#has_landed_title = e_latin_empire #Disavowed historically.
 						}
 					}
 					modifier = { #More distant/Less powerful Kingdom less likely to be crowned by the Pope.
 						factor = 0.5
 						NOR = { 
 							has_landed_title = k_france
-							has_landed_title = k_burgundy
-							has_landed_title = k_aquitaine
-							has_landed_title = k_germany
-							has_landed_title = k_lotharingia
-							has_landed_title = k_italy
+							has_landed_title = k_balc
+							has_landed_title = k_occitania
+							#has_landed_title = k_germany
+							#has_landed_title = k_lotharingia
+							has_landed_title = k_alta_italia
 							has_landed_title = k_sicily
 							has_landed_title = k_naples
 						} 
@@ -12356,8 +12356,8 @@ character_event = {
 					modifier = { #Historically more likely.
 						factor = 10
 						OR = { 
-							has_landed_title = k_italy
-							has_landed_title = e_hre
+							has_landed_title = k_alta_italia
+							has_landed_title = e_italy
 						} 
 					}
 				save_persistent_event_target = { name = coronation_priest_per scope = ROOT } #Needed to localize the trait properly.
@@ -12385,12 +12385,12 @@ character_event = {
 								OR = { 
 									higher_real_tier_than = BARON 
 									has_minor_title = title_cardinal
-									has_minor_title = title_fraticelli_cardinal
+									has_minor_title = title_archierus
 									any_claim = { title = k_papal_state } #Antipope
-									any_claim = { title = d_fraticelli } #Antipope
+									any_claim = { title = k_pravoslavie } #Antipope
 								}
 								NOT = { has_landed_title = k_papal_state }
-								NOT = { has_landed_title = d_fraticelli }
+								NOT = { has_landed_title = k_pravoslavie }
 							}
 						} 
 					}
@@ -12401,7 +12401,7 @@ character_event = {
 						factor = 0
 						NOT = { trait = excommunicated }
 						NOT = { trait = possessed }
-						NOT = { has_landed_title = e_latin_empire }
+						# NOT = { has_landed_title = e_latin_empire }
 						tier = EMPEROR
 					}
 					modifier = { #Respectable Kings are crowned by Bishops.
@@ -12415,12 +12415,12 @@ character_event = {
 							OR = { 
 								higher_real_tier_than = BARON 
 								has_minor_title = title_cardinal
-								has_minor_title = title_fraticelli_cardinal
+								has_minor_title = title_archierus
 								any_claim = { title = k_papal_state } #Antipope
-								any_claim = { title = d_fraticelli } #Antipope
+								any_claim = { title = k_pravoslavie } #Antipope
 							}
 							NOT = { has_landed_title = k_papal_state }
-							NOT = { has_landed_title = d_fraticelli }
+							NOT = { has_landed_title = k_pravoslavie }
 						}
 					}
 					add_trait = crowned_by_priest
@@ -12478,12 +12478,12 @@ character_event = {
 			OR = { 
 				higher_real_tier_than = BARON 
 				has_minor_title = title_cardinal
-				has_minor_title = title_fraticelli_cardinal
+				has_minor_title = title_archierus
 				any_claim = { title = k_papal_state } #Antipope
-				any_claim = { title = d_fraticelli } #Antipope
+				any_claim = { title = k_pravoslavie } #Antipope
 				}
 			NOT = { has_landed_title = k_papal_state }
-			NOT = { has_landed_title = d_fraticelli }
+			NOT = { has_landed_title = k_pravoslavie }
 			}
 			ROOT = { save_persistent_event_target = { name = coronation_priest_per scope = PREV } }
 		}
@@ -12504,7 +12504,7 @@ character_event = {
 		higher_real_tier_than = DUKE
 		OR = { 
 			religion = catholic
-			religion = fraticelli
+			religion = pravoslavie
 		}
 		NOR = { 
 			trait = crowned_by_priest
@@ -12536,7 +12536,7 @@ character_event = {
 		ruled_years = 5
 		OR = { 
 			religion = catholic
-			religion = fraticelli
+			religion = pravoslavie
 		}
 		NOR = { 
 			trait = crowned_by_priest
@@ -12578,7 +12578,7 @@ character_event = {
 					spouse = { 
 						NOR = { 
 							religion = catholic
-							religion = fraticelli
+							religion = pravoslavie
 						}
 					}
 				}
@@ -12676,7 +12676,7 @@ character_event = {
 				}
 				modifier = { 
 					factor = 0.5
-					has_landed_title = e_hre
+					has_landed_title = e_italy
 				}
 				modifier = { 
 					factor = 1.5
@@ -12744,7 +12744,7 @@ character_event = {
 		}
 		OR = { 
 			religion = catholic
-			religion = fraticelli
+			religion = pravoslavie
 		}
 		capital_scope = { religion = ROOT }
 		higher_real_tier_than = DUKE
@@ -12787,7 +12787,7 @@ character_event = {
 		}
 		OR = { 
 			religion = catholic
-			religion = fraticelli
+			religion = pravoslavie
 		}
 		higher_real_tier_than = DUKE
 	}
@@ -12863,7 +12863,7 @@ character_event = {
 			}
 			OR = { 
 				religion = catholic
-				religion = fraticelli
+				religion = pravoslavie
 			}
 			higher_real_tier_than = DUKE
 		}
@@ -13174,7 +13174,7 @@ character_event = {
 			}
 			OR = { 
 				religion = catholic
-				religion = fraticelli
+				religion = pravoslavie
 			}
 			higher_real_tier_than = DUKE
 		}
@@ -13254,7 +13254,7 @@ character_event = {
 			}
 			OR = { 
 				religion = catholic
-				religion = fraticelli
+				religion = pravoslavie
 			}
 			higher_real_tier_than = DUKE
 		}
@@ -14138,7 +14138,7 @@ character_event = {
 		NOT = { has_character_flag = is_charlemagne }
 		NOT = { is_inaccessible_trigger = yes }
 		religion_group = christian
-		has_landed_title = e_hre
+		has_landed_title = e_italy
 		any_artifact = {
 			artifact_type = crown_hre
 			is_artifact_equipped = yes 
@@ -14334,7 +14334,7 @@ character_event = {
 		higher_real_tier_than = DUKE
 		OR = { 
 			religion = catholic
-			religion = fraticelli
+			religion = pravoslavie
 		}
 		NOT = { check_variable = { which = uncrowned_count value = 30 } } #Stop at minus thirty.
 		NOR = { 
@@ -14372,117 +14372,117 @@ character_event = {
 		has_dlc = "Holy Fury"
 		OR = { 
 			AND = { 
-				has_landed_title = e_hre 
+				has_landed_title = e_italy 
 				any_artifact = { artifact_type = crown_hre }
-				e_hre = { 
+				e_italy = { 
 					current_heir = { 
 						NOT = { dynasty = ROOT }
 					} 
 				} 
 			}
 			AND = { 
-				has_landed_title = e_byzantium 
+				has_landed_title = e_balkans 
 				any_artifact = { artifact_type = crown_byzantine }
-				e_byzantium = { 
+				e_balkans = { 
 					current_heir = { 
 						NOT = { dynasty = ROOT }
 					} 
 				} 
 			}
+			# AND = { 
+				# has_landed_title = d_norse_pagan_reformed 
+				# any_artifact = { artifact_type = crown_fylkir }
+				# d_norse_pagan_reformed = { 
+					# current_heir = { 
+						# NOT = { dynasty = ROOT }
+					# } 
+				# } 
+			# }
+			# AND = { 
+				# has_landed_title = d_tengri_pagan_reformed 
+				# any_artifact = { artifact_type = crown_tengri_fylkir }
+				# d_tengri_pagan_reformed = { 
+					# current_heir = { 
+						# NOT = { dynasty = ROOT }
+					# } 
+				# } 
+			# }
+			# AND = { 
+				# has_landed_title = d_finnish_pagan_reformed 
+				# any_artifact = { artifact_type = crown_finnish_fylkir }
+				# d_finnish_pagan_reformed = { 
+					# current_heir = { 
+						# NOT = { dynasty = ROOT }
+					# } 
+				# } 
+			# }
+			# AND = { 
+				# has_landed_title = d_west_african_pagan_reformed 
+				# any_artifact = { artifact_type = crown_west_african_fylkir }
+				# d_west_african_pagan_reformed = { 
+					# current_heir = { 
+						# NOT = { dynasty = ROOT }
+					# } 
+				# } 
+			# }
+			# AND = { 
+				# has_landed_title = d_zun_pagan_reformed 
+				# any_artifact = { artifact_type = crown_zun_fylkir }
+				# d_zun_pagan_reformed = { 
+					# current_heir = { 
+						# NOT = { dynasty = ROOT }
+					# } 
+				# } 
+			# }
+			# AND = { 
+				# has_landed_title = k_hellenic_pagan
+				# any_artifact = { artifact_type = scepter_hellenic_fylkir }
+				# k_hellenic_pagan = { 
+					# current_heir = { 
+						# NOT = { dynasty = ROOT }
+					# } 
+				# } 
+			# }
+			# AND = { 
+				# has_landed_title = d_slavic_pagan_reformed 
+				# any_artifact = { artifact_type = crown_slavic_fylkir }
+				# d_slavic_pagan_reformed = { 
+					# current_heir = { 
+						# NOT = { dynasty = ROOT }
+					# } 
+				# } 
+			# }
+			# AND = { 
+				# has_landed_title = d_baltic_pagan_reformed 
+				# any_artifact = { artifact_type = crown_romuva_fylkir }
+				# d_baltic_pagan_reformed = { 
+					# current_heir = { 
+						# NOT = { dynasty = ROOT }
+					# } 
+				# } 
+			# }
+			# AND = { 
+				# has_landed_title = d_bon_reformed 
+				# any_artifact = { artifact_type = scepter_bon_fylkir }
+				# d_bon_reformed = { 
+					# current_heir = { 
+						# NOT = { dynasty = ROOT }
+					# } 
+				# } 
+			# }
+			# AND = { 
+				# has_landed_title = d_aztec_reformed 
+				# any_artifact = { artifact_type = crown_aztec_fylkir }
+				# d_aztec_reformed = { 
+					# current_heir = { 
+						# NOT = { dynasty = ROOT }
+					# } 
+				# } 
+			# }
 			AND = { 
-				has_landed_title = d_norse_pagan_reformed 
-				any_artifact = { artifact_type = crown_fylkir }
-				d_norse_pagan_reformed = { 
-					current_heir = { 
-						NOT = { dynasty = ROOT }
-					} 
-				} 
-			}
-			AND = { 
-				has_landed_title = d_tengri_pagan_reformed 
-				any_artifact = { artifact_type = crown_tengri_fylkir }
-				d_tengri_pagan_reformed = { 
-					current_heir = { 
-						NOT = { dynasty = ROOT }
-					} 
-				} 
-			}
-			AND = { 
-				has_landed_title = d_finnish_pagan_reformed 
-				any_artifact = { artifact_type = crown_finnish_fylkir }
-				d_finnish_pagan_reformed = { 
-					current_heir = { 
-						NOT = { dynasty = ROOT }
-					} 
-				} 
-			}
-			AND = { 
-				has_landed_title = d_west_african_pagan_reformed 
-				any_artifact = { artifact_type = crown_west_african_fylkir }
-				d_west_african_pagan_reformed = { 
-					current_heir = { 
-						NOT = { dynasty = ROOT }
-					} 
-				} 
-			}
-			AND = { 
-				has_landed_title = d_zun_pagan_reformed 
-				any_artifact = { artifact_type = crown_zun_fylkir }
-				d_zun_pagan_reformed = { 
-					current_heir = { 
-						NOT = { dynasty = ROOT }
-					} 
-				} 
-			}
-			AND = { 
-				has_landed_title = k_hellenic_pagan
-				any_artifact = { artifact_type = scepter_hellenic_fylkir }
-				k_hellenic_pagan = { 
-					current_heir = { 
-						NOT = { dynasty = ROOT }
-					} 
-				} 
-			}
-			AND = { 
-				has_landed_title = d_slavic_pagan_reformed 
-				any_artifact = { artifact_type = crown_slavic_fylkir }
-				d_slavic_pagan_reformed = { 
-					current_heir = { 
-						NOT = { dynasty = ROOT }
-					} 
-				} 
-			}
-			AND = { 
-				has_landed_title = d_baltic_pagan_reformed 
-				any_artifact = { artifact_type = crown_romuva_fylkir }
-				d_baltic_pagan_reformed = { 
-					current_heir = { 
-						NOT = { dynasty = ROOT }
-					} 
-				} 
-			}
-			AND = { 
-				has_landed_title = d_bon_reformed 
-				any_artifact = { artifact_type = scepter_bon_fylkir }
-				d_bon_reformed = { 
-					current_heir = { 
-						NOT = { dynasty = ROOT }
-					} 
-				} 
-			}
-			AND = { 
-				has_landed_title = d_aztec_reformed 
-				any_artifact = { artifact_type = crown_aztec_fylkir }
-				d_aztec_reformed = { 
-					current_heir = { 
-						NOT = { dynasty = ROOT }
-					} 
-				} 
-			}
-			AND = { 
-				has_landed_title = e_persia 
+				has_landed_title = e_fars 
 				any_artifact = { artifact_type = crown_pahlavi }
-				e_persia = { 
+				e_fars = { 
 					current_heir = { 
 						NOT = { dynasty = ROOT }
 					} 
@@ -14494,10 +14494,10 @@ character_event = {
 	immediate = { 
 		if = { 
 			limit = { 
-				has_landed_title = e_hre
+				has_landed_title = e_italy
 				any_artifact = { artifact_type = crown_hre }
 			}
-			e_hre = { 
+			e_italy = { 
 				current_heir = { save_event_target_as = worthy_hre_crown }
 			}
 			player_heir = { save_event_target_as = unworthy_hre_crown }
@@ -14509,10 +14509,10 @@ character_event = {
 		}
 		if = { 
 			limit = { 
-				has_landed_title = e_byzantium
+				has_landed_title = e_balkans
 				any_artifact = { artifact_type = crown_byzantine }
 			}
-			e_byzantium = { 
+			e_balkans = { 
 				current_heir = { save_event_target_as = worthy_byz_crown }
 			}
 			player_heir = { save_event_target_as = unworthy_byz_crown }
@@ -14522,162 +14522,162 @@ character_event = {
 			}
 			current_heir = { character_event = { id = HF.20407 days = 1 } }
 		}
+		# if = { 
+			# limit = { 
+				# has_landed_title = d_norse_pagan_reformed
+				# any_artifact = { artifact_type = crown_fylkir }
+			# }
+			# d_norse_pagan_reformed = { 
+				# current_heir = { save_event_target_as = worthy_fylkir_crown }
+			# }
+			# player_heir = { save_event_target_as = unworthy_fylkir_crown }
+			# any_artifact = { 
+				# limit = { artifact_type = crown_fylkir }
+				# save_event_target_as = inheriting_artifact_3
+			# }
+			# current_heir = { character_event = { id = HF.20407 days = 1 } }
+		# }
+		# if = { 
+			# limit = { 
+				# has_landed_title = d_tengri_pagan_reformed
+				# any_artifact = { artifact_type = crown_tengri_fylkir }
+			# }
+			# d_tengri_pagan_reformed = { 
+				# current_heir = { save_event_target_as = worthy_tengri_fylkir_crown }
+			# }
+			# player_heir = { save_event_target_as = unworthy_tengri_fylkir_crown }
+			# any_artifact = { 
+				# limit = { artifact_type = crown_tengri_fylkir }
+				# save_event_target_as = inheriting_artifact_tengricrown
+			# }
+			# current_heir = { character_event = { id = HF.20407 days = 1 } }
+		# }
+		# if = { 
+			# limit = { 
+				# has_landed_title = d_finnish_pagan_reformed
+				# any_artifact = { artifact_type = crown_finnish_fylkir }
+			# }
+			# d_finnish_pagan_reformed = { 
+				# current_heir = { save_event_target_as = worthy_finnish_fylkir_crown }
+			# }
+			# player_heir = { save_event_target_as = unworthy_finnish_fylkir_crown }
+			# any_artifact = { 
+				# limit = { artifact_type = crown_finnish_fylkir }
+				# save_event_target_as = inheriting_artifact_finnishcrown
+			# }
+			# current_heir = { character_event = { id = HF.20407 days = 1 } }
+		# }
+		# if = { 
+			# limit = { 
+				# has_landed_title = d_west_african_pagan_reformed
+				# any_artifact = { artifact_type = crown_west_african_fylkir }
+			# }
+			# d_west_african_pagan_reformed = { 
+				# current_heir = { save_event_target_as = worthy_west_african_fylkir_crown }
+			# }
+			# player_heir = { save_event_target_as = unworthy_west_african_fylkir_crown }
+			# any_artifact = { 
+				# limit = { artifact_type = crown_west_african_fylkir }
+				# save_event_target_as = inheriting_artifact_west_africancrown
+			# }
+			# current_heir = { character_event = { id = HF.20407 days = 1 } }
+		# }
+		# if = { 
+			# limit = { 
+				# has_landed_title = d_slavic_pagan_reformed
+				# any_artifact = { artifact_type = crown_slavic_fylkir }
+			# }
+			# d_slavic_pagan_reformed = { 
+				# current_heir = { save_event_target_as = worthy_slavic_fylkir_crown }
+			# }
+			# player_heir = { save_event_target_as = unworthy_slavic_fylkir_crown }
+			# any_artifact = { 
+				# limit = { artifact_type = crown_slavic_fylkir }
+				# save_event_target_as = inheriting_artifact_slaviccrown
+			# }
+			# current_heir = { character_event = { id = HF.20407 days = 1 } }
+		# }
+		# if = { 
+			# limit = { 
+				# has_landed_title = d_baltic_pagan_reformed
+				# any_artifact = { artifact_type = crown_romuva_fylkir }
+			# }
+			# d_baltic_pagan_reformed = { 
+				# current_heir = { save_event_target_as = worthy_baltic_fylkir_crown }
+			# }
+			# player_heir = { save_event_target_as = unworthy_baltic_fylkir_crown }
+			# any_artifact = { 
+				# limit = { artifact_type = crown_romuva_fylkir }
+				# save_event_target_as = inheriting_artifact_balticcrown
+			# }
+			# current_heir = { character_event = { id = HF.20407 days = 1 } }
+		# }
+		# if = { 
+			# limit = { 
+				# has_landed_title = d_bon_reformed
+				# any_artifact = { artifact_type = scepter_bon_fylkir }
+			# }
+			# d_bon_reformed = { 
+				# current_heir = { save_event_target_as = worthy_bon_fylkir_crown }
+			# }
+			# player_heir = { save_event_target_as = unworthy_bon_fylkir_crown }
+			# any_artifact = { 
+				# limit = { artifact_type = scepter_bon_fylkir }
+				# save_event_target_as = inheriting_artifact_boncrown
+			# }
+			# current_heir = { character_event = { id = HF.20407 days = 1 } }
+		# }
+		# if = { 
+			# limit = { 
+				# has_landed_title = d_zun_pagan_reformed
+				# any_artifact = { artifact_type = crown_zun_fylkir }
+			# }
+			# d_zun_pagan_reformed = { 
+				# current_heir = { save_event_target_as = worthy_zun_fylkir_crown }
+			# }
+			# player_heir = { save_event_target_as = unworthy_zun_fylkir_crown }
+			# any_artifact = { 
+				# limit = { artifact_type = crown_zun_fylkir }
+				# save_event_target_as = inheriting_artifact_zuncrown
+			# }
+			# current_heir = { character_event = { id = HF.20407 days = 1 } }
+		# }
+		# if = { 
+			# limit = { 
+				# has_landed_title = k_hellenic_pagan
+				# any_artifact = { artifact_type = scepter_hellenic_fylkir }
+			# }
+			# k_hellenic_pagan = { 
+				# current_heir = { save_event_target_as = worthy_hellenic_fylkir_crown }
+			# }
+			# player_heir = { save_event_target_as = unworthy_hellenic_fylkir_crown }
+			# any_artifact = { 
+				# limit = { artifact_type = scepter_hellenic_fylkir }
+				# save_event_target_as = inheriting_artifact_helleniccrown
+			# }
+			# current_heir = { character_event = { id = HF.20407 days = 1 } }
+		# }
+		# if = { 
+			# limit = { 
+				# has_landed_title = d_aztec_reformed
+				# any_artifact = { artifact_type = crown_aztec_fylkir }
+			# }
+			# d_aztec_reformed = { 
+				# current_heir = { save_event_target_as = worthy_aztec_fylkir_crown }
+			# }
+			# player_heir = { save_event_target_as = unworthy_aztec_fylkir_crown }
+			# any_artifact = { 
+				# limit = { artifact_type = crown_aztec_fylkir }
+				# save_event_target_as = inheriting_artifact_azteccrown
+			# }
+			# current_heir = { character_event = { id = HF.20407 days = 1 } }
+		# }
 		if = { 
 			limit = { 
-				has_landed_title = d_norse_pagan_reformed
-				any_artifact = { artifact_type = crown_fylkir }
-			}
-			d_norse_pagan_reformed = { 
-				current_heir = { save_event_target_as = worthy_fylkir_crown }
-			}
-			player_heir = { save_event_target_as = unworthy_fylkir_crown }
-			any_artifact = { 
-				limit = { artifact_type = crown_fylkir }
-				save_event_target_as = inheriting_artifact_3
-			}
-			current_heir = { character_event = { id = HF.20407 days = 1 } }
-		}
-		if = { 
-			limit = { 
-				has_landed_title = d_tengri_pagan_reformed
-				any_artifact = { artifact_type = crown_tengri_fylkir }
-			}
-			d_tengri_pagan_reformed = { 
-				current_heir = { save_event_target_as = worthy_tengri_fylkir_crown }
-			}
-			player_heir = { save_event_target_as = unworthy_tengri_fylkir_crown }
-			any_artifact = { 
-				limit = { artifact_type = crown_tengri_fylkir }
-				save_event_target_as = inheriting_artifact_tengricrown
-			}
-			current_heir = { character_event = { id = HF.20407 days = 1 } }
-		}
-		if = { 
-			limit = { 
-				has_landed_title = d_finnish_pagan_reformed
-				any_artifact = { artifact_type = crown_finnish_fylkir }
-			}
-			d_finnish_pagan_reformed = { 
-				current_heir = { save_event_target_as = worthy_finnish_fylkir_crown }
-			}
-			player_heir = { save_event_target_as = unworthy_finnish_fylkir_crown }
-			any_artifact = { 
-				limit = { artifact_type = crown_finnish_fylkir }
-				save_event_target_as = inheriting_artifact_finnishcrown
-			}
-			current_heir = { character_event = { id = HF.20407 days = 1 } }
-		}
-		if = { 
-			limit = { 
-				has_landed_title = d_west_african_pagan_reformed
-				any_artifact = { artifact_type = crown_west_african_fylkir }
-			}
-			d_west_african_pagan_reformed = { 
-				current_heir = { save_event_target_as = worthy_west_african_fylkir_crown }
-			}
-			player_heir = { save_event_target_as = unworthy_west_african_fylkir_crown }
-			any_artifact = { 
-				limit = { artifact_type = crown_west_african_fylkir }
-				save_event_target_as = inheriting_artifact_west_africancrown
-			}
-			current_heir = { character_event = { id = HF.20407 days = 1 } }
-		}
-		if = { 
-			limit = { 
-				has_landed_title = d_slavic_pagan_reformed
-				any_artifact = { artifact_type = crown_slavic_fylkir }
-			}
-			d_slavic_pagan_reformed = { 
-				current_heir = { save_event_target_as = worthy_slavic_fylkir_crown }
-			}
-			player_heir = { save_event_target_as = unworthy_slavic_fylkir_crown }
-			any_artifact = { 
-				limit = { artifact_type = crown_slavic_fylkir }
-				save_event_target_as = inheriting_artifact_slaviccrown
-			}
-			current_heir = { character_event = { id = HF.20407 days = 1 } }
-		}
-		if = { 
-			limit = { 
-				has_landed_title = d_baltic_pagan_reformed
-				any_artifact = { artifact_type = crown_romuva_fylkir }
-			}
-			d_baltic_pagan_reformed = { 
-				current_heir = { save_event_target_as = worthy_baltic_fylkir_crown }
-			}
-			player_heir = { save_event_target_as = unworthy_baltic_fylkir_crown }
-			any_artifact = { 
-				limit = { artifact_type = crown_romuva_fylkir }
-				save_event_target_as = inheriting_artifact_balticcrown
-			}
-			current_heir = { character_event = { id = HF.20407 days = 1 } }
-		}
-		if = { 
-			limit = { 
-				has_landed_title = d_bon_reformed
-				any_artifact = { artifact_type = scepter_bon_fylkir }
-			}
-			d_bon_reformed = { 
-				current_heir = { save_event_target_as = worthy_bon_fylkir_crown }
-			}
-			player_heir = { save_event_target_as = unworthy_bon_fylkir_crown }
-			any_artifact = { 
-				limit = { artifact_type = scepter_bon_fylkir }
-				save_event_target_as = inheriting_artifact_boncrown
-			}
-			current_heir = { character_event = { id = HF.20407 days = 1 } }
-		}
-		if = { 
-			limit = { 
-				has_landed_title = d_zun_pagan_reformed
-				any_artifact = { artifact_type = crown_zun_fylkir }
-			}
-			d_zun_pagan_reformed = { 
-				current_heir = { save_event_target_as = worthy_zun_fylkir_crown }
-			}
-			player_heir = { save_event_target_as = unworthy_zun_fylkir_crown }
-			any_artifact = { 
-				limit = { artifact_type = crown_zun_fylkir }
-				save_event_target_as = inheriting_artifact_zuncrown
-			}
-			current_heir = { character_event = { id = HF.20407 days = 1 } }
-		}
-		if = { 
-			limit = { 
-				has_landed_title = k_hellenic_pagan
-				any_artifact = { artifact_type = scepter_hellenic_fylkir }
-			}
-			k_hellenic_pagan = { 
-				current_heir = { save_event_target_as = worthy_hellenic_fylkir_crown }
-			}
-			player_heir = { save_event_target_as = unworthy_hellenic_fylkir_crown }
-			any_artifact = { 
-				limit = { artifact_type = scepter_hellenic_fylkir }
-				save_event_target_as = inheriting_artifact_helleniccrown
-			}
-			current_heir = { character_event = { id = HF.20407 days = 1 } }
-		}
-		if = { 
-			limit = { 
-				has_landed_title = d_aztec_reformed
-				any_artifact = { artifact_type = crown_aztec_fylkir }
-			}
-			d_aztec_reformed = { 
-				current_heir = { save_event_target_as = worthy_aztec_fylkir_crown }
-			}
-			player_heir = { save_event_target_as = unworthy_aztec_fylkir_crown }
-			any_artifact = { 
-				limit = { artifact_type = crown_aztec_fylkir }
-				save_event_target_as = inheriting_artifact_azteccrown
-			}
-			current_heir = { character_event = { id = HF.20407 days = 1 } }
-		}
-		if = { 
-			limit = { 
-				has_landed_title = e_persia
+				has_landed_title = e_fars
 				any_artifact = { artifact_type = crown_pahlavi }
 			}
-			e_persia = { 
+			e_fars = { 
 				current_heir = { save_event_target_as = worthy_pahlavi_crown }
 			}
 			player_heir = { save_event_target_as = unworthy_pahlavi_crown }
@@ -14709,66 +14709,66 @@ character_event = {
 				to = event_target:worthy_byz_crown
  			} 
  		}
-		event_target:inheriting_artifact_3 = {
-			transfer_artifact = {
-				from = event_target:unworthy_fylkir_crown
-				to = event_target:worthy_fylkir_crown
- 			} 
- 		}
-		event_target:inheriting_artifact_tengricrown = {
-			transfer_artifact = {
-				from = event_target:unworthy_tengri_fylkir_crown
-				to = event_target:worthy_tengri_fylkir_crown
- 			} 
- 		}
-		event_target:inheriting_artifact_finnishcrown = {
-			transfer_artifact = {
-				from = event_target:unworthy_finnish_fylkir_crown
-				to = event_target:worthy_finnish_fylkir_crown
- 			} 
- 		}
-		event_target:inheriting_artifact_west_africancrown = {
-			transfer_artifact = {
-				from = event_target:unworthy_west_african_fylkir_crown
-				to = event_target:worthy_west_african_fylkir_crown
- 			} 
- 		}
-		event_target:inheriting_artifact_slaviccrown = {
-			transfer_artifact = {
-				from = event_target:unworthy_slavic_fylkir_crown
-				to = event_target:worthy_slavic_fylkir_crown
- 			} 
- 		}
-		event_target:inheriting_artifact_balticcrown = {
-			transfer_artifact = {
-				from = event_target:unworthy_baltic_fylkir_crown
-				to = event_target:worthy_baltic_fylkir_crown
- 			} 
- 		}
-		event_target:inheriting_artifact_boncrown = {
-			transfer_artifact = {
-				from = event_target:unworthy_bon_fylkir_crown
-				to = event_target:worthy_bon_fylkir_crown
- 			} 
- 		}
-		event_target:inheriting_artifact_zuncrown = {
-			transfer_artifact = {
-				from = event_target:unworthy_zun_fylkir_crown
-				to = event_target:worthy_zun_fylkir_crown
- 			} 
- 		}
-		event_target:inheriting_artifact_helleniccrown = {
-			transfer_artifact = {
-				from = event_target:unworthy_hellenic_fylkir_crown
-				to = event_target:worthy_hellenic_fylkir_crown
- 			} 
- 		}
-		event_target:inheriting_artifact_azteccrown = {
-			transfer_artifact = {
-				from = event_target:unworthy_aztec_fylkir_crown
-				to = event_target:worthy_aztec_fylkir_crown
- 			} 
- 		}
+		# event_target:inheriting_artifact_3 = {
+			# transfer_artifact = {
+				# from = event_target:unworthy_fylkir_crown
+				# to = event_target:worthy_fylkir_crown
+ 			# } 
+ 		# }
+		# event_target:inheriting_artifact_tengricrown = {
+			# transfer_artifact = {
+				# from = event_target:unworthy_tengri_fylkir_crown
+				# to = event_target:worthy_tengri_fylkir_crown
+ 			# } 
+ 		# }
+		# event_target:inheriting_artifact_finnishcrown = {
+			# transfer_artifact = {
+				# from = event_target:unworthy_finnish_fylkir_crown
+				# to = event_target:worthy_finnish_fylkir_crown
+ 			# } 
+ 		# }
+		# event_target:inheriting_artifact_west_africancrown = {
+			# transfer_artifact = {
+				# from = event_target:unworthy_west_african_fylkir_crown
+				# to = event_target:worthy_west_african_fylkir_crown
+ 			# } 
+ 		# }
+		# event_target:inheriting_artifact_slaviccrown = {
+			# transfer_artifact = {
+				# from = event_target:unworthy_slavic_fylkir_crown
+				# to = event_target:worthy_slavic_fylkir_crown
+ 			# } 
+ 		# }
+		# event_target:inheriting_artifact_balticcrown = {
+			# transfer_artifact = {
+				# from = event_target:unworthy_baltic_fylkir_crown
+				# to = event_target:worthy_baltic_fylkir_crown
+ 			# } 
+ 		# }
+		# event_target:inheriting_artifact_boncrown = {
+			# transfer_artifact = {
+				# from = event_target:unworthy_bon_fylkir_crown
+				# to = event_target:worthy_bon_fylkir_crown
+ 			# } 
+ 		# }
+		# event_target:inheriting_artifact_zuncrown = {
+			# transfer_artifact = {
+				# from = event_target:unworthy_zun_fylkir_crown
+				# to = event_target:worthy_zun_fylkir_crown
+ 			# } 
+ 		# }
+		# event_target:inheriting_artifact_helleniccrown = {
+			# transfer_artifact = {
+				# from = event_target:unworthy_hellenic_fylkir_crown
+				# to = event_target:worthy_hellenic_fylkir_crown
+ 			# } 
+ 		# }
+		# event_target:inheriting_artifact_azteccrown = {
+			# transfer_artifact = {
+				# from = event_target:unworthy_aztec_fylkir_crown
+				# to = event_target:worthy_aztec_fylkir_crown
+ 			# } 
+ 		# }
 		event_target:inheriting_artifact_4 = {
 			transfer_artifact = {
 				from = event_target:unworthy_pahlavi_crown
@@ -14785,7 +14785,7 @@ character_event = {
 		text = EVTDESCHFA20408
 		trigger = { 
 			NOR = { 
-				religion = fraticelli
+				religion = pravoslavie
 				religion = catholic
 			}
 		}
@@ -14794,7 +14794,7 @@ character_event = {
 		text = EVTDESCHFB20408
 		trigger = { 
 			OR = { 
-				religion = fraticelli
+				religion = pravoslavie
 				religion = catholic
 			}
 		}
@@ -14823,7 +14823,7 @@ character_event = {
 		FROM = {
 			OR = {
 				religion = catholic
-				religion = fraticelli
+				religion = pravoslavie
 			}
 		}
 	} 
@@ -14843,7 +14843,7 @@ character_event = {
 			trigger = {
 				NOR = { 
 					religion = catholic
-					religion = fraticelli
+					religion = pravoslavie
 				}
 			}
 		}
@@ -14852,7 +14852,7 @@ character_event = {
 			trigger = {
 				OR = { 
 					religion = catholic
-					religion = fraticelli
+					religion = pravoslavie
 				}
 			}
 		}
@@ -15734,29 +15734,29 @@ character_event = {
 	trigger = {
 		OR = {	
 			AND = {
-				FROM = { title = e_hre } 
+				FROM = { title = e_italy } 
 				FROMFROM = { any_artifact = { artifact_type = crown_hre } } 
 			} 
 			AND = {
-				FROM = { title = e_persia } 
+				FROM = { title = e_fars } 
 				FROMFROM = { any_artifact = { artifact_type = crown_pahlavi } } 
 			} 
 			AND = {
-				FROM = { title = e_byzantium } 
+				FROM = { title = e_balkans } 
 				FROMFROM = { any_artifact = { artifact_type = crown_byzantine } } 
 			} 
-			AND = {
-				FROM = { title = d_norse_pagan_reformed } 
-				FROMFROM = { any_artifact = { artifact_type = crown_fylkir } } 
-			} 
-			AND = {
-				FROM = { title = d_tengri_pagan_reformed } 
-				FROMFROM = { any_artifact = { artifact_type = crown_tengri_fylkir } } 
-			} 
-			AND = {
-				FROM = { title = d_finnish_pagan_reformed } 
-				FROMFROM = { any_artifact = { artifact_type = crown_finnish_fylkir } } 
-			} 
+			# AND = {
+				# FROM = { title = d_norse_pagan_reformed } 
+				# FROMFROM = { any_artifact = { artifact_type = crown_fylkir } } 
+			# } 
+			# AND = {
+				# FROM = { title = d_tengri_pagan_reformed } 
+				# FROMFROM = { any_artifact = { artifact_type = crown_tengri_fylkir } } 
+			# } 
+			# AND = {
+				# FROM = { title = d_finnish_pagan_reformed } 
+				# FROMFROM = { any_artifact = { artifact_type = crown_finnish_fylkir } } 
+			# } 
 		}
 	}
 
@@ -15766,7 +15766,7 @@ character_event = {
 
 		if = {
 			limit = {
-				FROM = { title = e_hre } 
+				FROM = { title = e_italy } 
 				FROMFROM = { any_artifact = { artifact_type = crown_hre } } 
 			} 
 			FROMFROM = { 
@@ -15778,7 +15778,7 @@ character_event = {
 		}
 		if = {
 			limit = {
-				FROM = { title = e_persia } 
+				FROM = { title = e_fars } 
 				FROMFROM = { any_artifact = { artifact_type = crown_pahlavi } } 
 			} 
 			FROMFROM = { 
@@ -15790,7 +15790,7 @@ character_event = {
 		}
 		if = {
 			limit = {
-				FROM = { title = e_byzantium } 
+				FROM = { title = e_balkans } 
 				FROMFROM = { any_artifact = { artifact_type = crown_byzantine } } 
 			} 
 			FROMFROM = { 
@@ -15800,42 +15800,42 @@ character_event = {
 				}
 			}
 		}
-		if = {
-			limit = {
-				FROM = { title = d_norse_pagan_reformed } 
-				FROMFROM = { any_artifact = { artifact_type = crown_fylkir } } 
-			} 
-			FROMFROM = { 
-				any_artifact = { 
-					limit = { artifact_type = crown_fylkir }
-					save_event_target_as = inheriting_artifact_3
-				}
-			}
-		}
-		if = {
-			limit = {
-				FROM = { title = d_tengri_pagan_reformed } 
-				FROMFROM = { any_artifact = { artifact_type = crown_tengri_fylkir } } 
-			} 
-			FROMFROM = { 
-				any_artifact = { 
-					limit = { artifact_type = crown_tengri_fylkir }
-					save_event_target_as = inheriting_artifact_tengricrown 
-				}
-			}
-		}
-		if = {
-			limit = {
-				FROM = { title = d_finnish_pagan_reformed } 
-				FROMFROM = { any_artifact = { artifact_type = crown_finnish_fylkir } } 
-			} 
-			FROMFROM = { 
-				any_artifact = { 
-					limit = { artifact_type = crown_finnish_fylkir }
-					save_event_target_as = inheriting_artifact_finnishcrown
-				}
-			}
-		}
+		# if = {
+			# limit = {
+				# FROM = { title = d_norse_pagan_reformed } 
+				# FROMFROM = { any_artifact = { artifact_type = crown_fylkir } } 
+			# } 
+			# FROMFROM = { 
+				# any_artifact = { 
+					# limit = { artifact_type = crown_fylkir }
+					# save_event_target_as = inheriting_artifact_3
+				# }
+			# }
+		# }
+		# if = {
+			# limit = {
+				# FROM = { title = d_tengri_pagan_reformed } 
+				# FROMFROM = { any_artifact = { artifact_type = crown_tengri_fylkir } } 
+			# } 
+			# FROMFROM = { 
+				# any_artifact = { 
+					# limit = { artifact_type = crown_tengri_fylkir }
+					# save_event_target_as = inheriting_artifact_tengricrown 
+				# }
+			# }
+		# }
+		# if = {
+			# limit = {
+				# FROM = { title = d_finnish_pagan_reformed } 
+				# FROMFROM = { any_artifact = { artifact_type = crown_finnish_fylkir } } 
+			# } 
+			# FROMFROM = { 
+				# any_artifact = { 
+					# limit = { artifact_type = crown_finnish_fylkir }
+					# save_event_target_as = inheriting_artifact_finnishcrown
+				# }
+			# }
+		# }
 		event_target:inheriting_artifact_1 = {
 			transfer_artifact = {
 				from = FROMFROM
@@ -15848,24 +15848,24 @@ character_event = {
 				to = ROOT
  			} 
  		}
-		event_target:inheriting_artifact_3 = {
-			transfer_artifact = {
-				from = FROMFROM
-				to = ROOT
- 			} 
- 		}
-		event_target:inheriting_artifact_tengricrown = {
-			transfer_artifact = {
-				from = FROMFROM
-				to = ROOT
- 			} 
- 		}
-		event_target:inheriting_artifact_finnishcrown = {
-			transfer_artifact = {
-				from = FROMFROM
-				to = ROOT
- 			} 
- 		}
+		# event_target:inheriting_artifact_3 = {
+			# transfer_artifact = {
+				# from = FROMFROM
+				# to = ROOT
+ 			# } 
+ 		# }
+		# event_target:inheriting_artifact_tengricrown = {
+			# transfer_artifact = {
+				# from = FROMFROM
+				# to = ROOT
+ 			# } 
+ 		# }
+		# event_target:inheriting_artifact_finnishcrown = {
+			# transfer_artifact = {
+				# from = FROMFROM
+				# to = ROOT
+ 			# } 
+ 		# }
 		event_target:inheriting_artifact_4 = {
 			transfer_artifact = {
 				from = FROMFROM
@@ -15886,59 +15886,59 @@ character_event = {
 		has_dlc = "Holy Fury"
 		OR = { 
 			AND = { 
-				has_landed_title = e_hre 
+				has_landed_title = e_italy 
 				any_artifact = { artifact_type = crown_hre } 
 			}
 			AND = { 
-				has_landed_title = e_byzantium 
+				has_landed_title = e_balkans 
 				any_artifact = { artifact_type = crown_byzantine }
 			}
+			# AND = { 
+				# has_landed_title = d_norse_pagan_reformed 
+				# any_artifact = { artifact_type = crown_fylkir }
+			# }
+			# AND = { 
+				# has_landed_title = d_tengri_pagan_reformed 
+				# any_artifact = { artifact_type = crown_tengri_fylkir }
+			# }
+			# AND = { 
+				# has_landed_title = d_finnish_pagan_reformed 
+				# any_artifact = { artifact_type = crown_finnish_fylkir }
+			# }
+			# AND = { 
+				# has_landed_title = d_slavic_pagan_reformed 
+				# any_artifact = { artifact_type = crown_slavic_fylkir }
+			# }
+			# AND = { 
+				# has_landed_title = d_baltic_pagan_reformed 
+				# any_artifact = { artifact_type = crown_romuva_fylkir }
+			# }
+			# AND = { 
+				# has_landed_title = d_west_african_pagan_reformed 
+				# any_artifact = { artifact_type = crown_west_african_fylkir }
+			# }
+			# AND = { 
+				# has_landed_title = k_hellenic_pagan
+				# any_artifact = { artifact_type = scepter_hellenic_fylkir }
+			# }
+			# AND = { 
+				# has_landed_title = d_zun_pagan_reformed 
+				# any_artifact = { artifact_type = crown_zun_fylkir }
+			# }
+			# AND = { 
+				# has_landed_title = d_aztec_reformed 
+				# any_artifact = { artifact_type = crown_aztec_fylkir }
+			# }
+			# AND = { 
+				# has_landed_title = d_bon_reformed 
+				# any_artifact = { artifact_type = scepter_bon_fylkir }
+			# }
 			AND = { 
-				has_landed_title = d_norse_pagan_reformed 
-				any_artifact = { artifact_type = crown_fylkir }
-			}
-			AND = { 
-				has_landed_title = d_tengri_pagan_reformed 
-				any_artifact = { artifact_type = crown_tengri_fylkir }
-			}
-			AND = { 
-				has_landed_title = d_finnish_pagan_reformed 
-				any_artifact = { artifact_type = crown_finnish_fylkir }
-			}
-			AND = { 
-				has_landed_title = d_slavic_pagan_reformed 
-				any_artifact = { artifact_type = crown_slavic_fylkir }
-			}
-			AND = { 
-				has_landed_title = d_baltic_pagan_reformed 
-				any_artifact = { artifact_type = crown_romuva_fylkir }
-			}
-			AND = { 
-				has_landed_title = d_west_african_pagan_reformed 
-				any_artifact = { artifact_type = crown_west_african_fylkir }
-			}
-			AND = { 
-				has_landed_title = k_hellenic_pagan
-				any_artifact = { artifact_type = scepter_hellenic_fylkir }
-			}
-			AND = { 
-				has_landed_title = d_zun_pagan_reformed 
-				any_artifact = { artifact_type = crown_zun_fylkir }
-			}
-			AND = { 
-				has_landed_title = d_aztec_reformed 
-				any_artifact = { artifact_type = crown_aztec_fylkir }
-			}
-			AND = { 
-				has_landed_title = d_bon_reformed 
-				any_artifact = { artifact_type = scepter_bon_fylkir }
-			}
-			AND = { 
-				has_landed_title = e_persia 
+				has_landed_title = e_fars 
 				any_artifact = { artifact_type = crown_pahlavi }
 			}
 			AND = { 
-				has_landed_title = k_italy 
+				has_landed_title = k_alta_italia 
 				any_artifact = { artifact_type = iron_crown_of_lombardy }
 			}
 		#	AND = { 
@@ -15950,98 +15950,98 @@ character_event = {
 	immediate = {
 		if = { 
 			limit = { 
-				has_landed_title = e_hre 
+				has_landed_title = e_italy 
 				any_artifact = { artifact_type = crown_hre }
 			}
 			add_trait = dead_crown_hre
 		}
 		if = { 
 			limit = { 
-				has_landed_title = e_byzantium 
+				has_landed_title = e_balkans 
 				any_artifact = { artifact_type = crown_byzantine }
 			}
 			add_trait = dead_crown_byzantine
 		}
+		# if = { 
+			# limit = { 
+				# has_landed_title = d_norse_pagan_reformed 
+				# any_artifact = { artifact_type = crown_fylkir }
+			# }
+			# add_trait = dead_crown_fylkir
+		# }
+		# if = { 
+			# limit = { 
+				# has_landed_title = d_tengri_pagan_reformed 
+				# any_artifact = { artifact_type = crown_tengri_fylkir }
+			# }
+			# add_trait = dead_crown_tengri_fylkir
+		# }
+		# if = { 
+			# limit = { 
+				# has_landed_title = d_finnish_pagan_reformed 
+				# any_artifact = { artifact_type = crown_finnish_fylkir }
+			# }
+			# add_trait = dead_crown_finnish_fylkir
+		# }
+		# if = { 
+			# limit = { 
+				# has_landed_title = d_slavic_pagan_reformed 
+				# any_artifact = { artifact_type = crown_slavic_fylkir }
+			# }
+			# add_trait = dead_crown_slavic_fylkir
+		# }
+		# if = { 
+			# limit = { 
+				# has_landed_title = d_baltic_pagan_reformed 
+				# any_artifact = { artifact_type = crown_romuva_fylkir }
+			# }
+			# add_trait = dead_crown_romuva_fylkir
+		# }
+		# if = { 
+			# limit = { 
+				# has_landed_title = d_west_african_pagan_reformed 
+				# any_artifact = { artifact_type = crown_west_african_fylkir }
+			# }
+			# add_trait = dead_crown_west_african_fylkir
+		# }
+		# if = { 
+			# limit = { 
+				# has_landed_title = d_bon_reformed 
+				# any_artifact = { artifact_type = scepter_bon_fylkir }
+			# }
+			# add_trait = dead_scepter_bon_fylkir
+		# }
+		# if = { 
+			# limit = { 
+				# has_landed_title = d_zun_pagan_reformed 
+				# any_artifact = { artifact_type = crown_zun_fylkir }
+			# }
+			# add_trait = dead_crown_zun_fylkir
+		# }
+		# if = { 
+			# limit = { 
+				# has_landed_title = k_hellenic_pagan
+				# any_artifact = { artifact_type = scepter_hellenic_fylkir }
+			# }
+			# add_trait = dead_scepter_hellenic_fylkir
+		# }
+		# if = { 
+			# limit = { 
+				# has_landed_title = d_aztec_reformed 
+				# any_artifact = { artifact_type = crown_aztec_fylkir }
+			# }
+			# add_trait = dead_crown_aztec_fylkir
+		# }
 		if = { 
 			limit = { 
-				has_landed_title = d_norse_pagan_reformed 
-				any_artifact = { artifact_type = crown_fylkir }
-			}
-			add_trait = dead_crown_fylkir
-		}
-		if = { 
-			limit = { 
-				has_landed_title = d_tengri_pagan_reformed 
-				any_artifact = { artifact_type = crown_tengri_fylkir }
-			}
-			add_trait = dead_crown_tengri_fylkir
-		}
-		if = { 
-			limit = { 
-				has_landed_title = d_finnish_pagan_reformed 
-				any_artifact = { artifact_type = crown_finnish_fylkir }
-			}
-			add_trait = dead_crown_finnish_fylkir
-		}
-		if = { 
-			limit = { 
-				has_landed_title = d_slavic_pagan_reformed 
-				any_artifact = { artifact_type = crown_slavic_fylkir }
-			}
-			add_trait = dead_crown_slavic_fylkir
-		}
-		if = { 
-			limit = { 
-				has_landed_title = d_baltic_pagan_reformed 
-				any_artifact = { artifact_type = crown_romuva_fylkir }
-			}
-			add_trait = dead_crown_romuva_fylkir
-		}
-		if = { 
-			limit = { 
-				has_landed_title = d_west_african_pagan_reformed 
-				any_artifact = { artifact_type = crown_west_african_fylkir }
-			}
-			add_trait = dead_crown_west_african_fylkir
-		}
-		if = { 
-			limit = { 
-				has_landed_title = d_bon_reformed 
-				any_artifact = { artifact_type = scepter_bon_fylkir }
-			}
-			add_trait = dead_scepter_bon_fylkir
-		}
-		if = { 
-			limit = { 
-				has_landed_title = d_zun_pagan_reformed 
-				any_artifact = { artifact_type = crown_zun_fylkir }
-			}
-			add_trait = dead_crown_zun_fylkir
-		}
-		if = { 
-			limit = { 
-				has_landed_title = k_hellenic_pagan
-				any_artifact = { artifact_type = scepter_hellenic_fylkir }
-			}
-			add_trait = dead_scepter_hellenic_fylkir
-		}
-		if = { 
-			limit = { 
-				has_landed_title = d_aztec_reformed 
-				any_artifact = { artifact_type = crown_aztec_fylkir }
-			}
-			add_trait = dead_crown_aztec_fylkir
-		}
-		if = { 
-			limit = { 
-				has_landed_title = e_persia 
+				has_landed_title = e_fars 
 				any_artifact = { artifact_type = crown_pahlavi }
 			}
 			add_trait = dead_crown_pahlavi
 		}
 		if = { 
 			limit = { 
-				has_landed_title = k_italy 
+				has_landed_title = k_alta_italia 
 				any_artifact = { artifact_type = iron_crown_of_lombardy }
 			}
 			add_trait = dead_iron_crown_lombardy
@@ -16059,7 +16059,7 @@ character_event = {
 		has_character_modifier = uncrowned_modifier
 		NOR = {
 			religion = catholic
-			religion = fraticelli
+			religion = pravoslavie
 		}
 	}
 
