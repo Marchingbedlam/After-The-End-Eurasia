@@ -57,9 +57,12 @@ character_event = {
 			}
 			character_event = {id = sufi.6 }
 		}
-		else_if = {
+		else = {
 			limit = {
-				is_sunni = yes
+				AND = {
+					is_sunni = yes
+					NOT = {religion = hui}
+				}
 			}
 			character_event = {id = sufi.9 }
 		}
@@ -67,7 +70,7 @@ character_event = {
 	option = {
 		name = EVTOPTC_sufi_2
 		set_character_flag = sufi_mysticism
-		else_if = {
+		if = {
 			limit = {
 				is_shiite = yes
 			}
