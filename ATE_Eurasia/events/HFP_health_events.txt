@@ -1475,20 +1475,20 @@ character_event = {
 			}
 			change_variable = { which = physique_variable value = -2 }
 		}
-		if = { 
-			limit = { 
-				society_member_of = hermetics
-				NOT = { check_variable = { which = physique_variable value = -1 } }
-			}
-			change_variable = { which = physique_variable value = 3 }
-		}
-		if = { 
-			limit = { 
-				society_member_of = hermetics
-				check_variable = { which = physique_variable value = 1 }
-			}
-			change_variable = { which = physique_variable value = -3 }
-		}
+		# if = { 
+			# limit = { 
+				# society_member_of = hermetics
+				# NOT = { check_variable = { which = physique_variable value = -1 } }
+			# }
+			# change_variable = { which = physique_variable value = 3 }
+		# }
+		# if = { 
+			# limit = { 
+				# society_member_of = hermetics
+				# check_variable = { which = physique_variable value = 1 }
+			# }
+			# change_variable = { which = physique_variable value = -3 }
+		# }
 
 		#Prosperity
 		if = { 

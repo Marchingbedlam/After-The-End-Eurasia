@@ -2402,22 +2402,23 @@ character_event = {
 
 			clr_character_flag = synod_failure_horrid
 			clr_character_flag = synod_failure_shame
-			event_target:synod_guest_1 = {
-				clr_character_flag = synod_failure_horrid
-				clr_character_flag = synod_failure_shame
-			}
-			event_target:synod_guest_2 = {
-				clr_character_flag = synod_failure_horrid
-				clr_character_flag = synod_failure_shame
-			}
-			event_target:synod_guest_3 = {
-				clr_character_flag = synod_failure_horrid
-				clr_character_flag = synod_failure_shame
-			}
-			event_target:synod_guest_4 = {
-				clr_character_flag = synod_failure_horrid
-				clr_character_flag = synod_failure_shame
-			}
+            # don't think below are needed if above 2 are ok - tsf4
+			# event_target:synod_guest_1 = {
+				# clr_character_flag = synod_failure_horrid
+				# clr_character_flag = synod_failure_shame
+			# }
+			# event_target:synod_guest_2 = {
+				# clr_character_flag = synod_failure_horrid
+				# clr_character_flag = synod_failure_shame
+			# }
+			# event_target:synod_guest_3 = {
+				# clr_character_flag = synod_failure_horrid
+				# clr_character_flag = synod_failure_shame
+			# }
+			# event_target:synod_guest_4 = {
+				# clr_character_flag = synod_failure_horrid
+				# clr_character_flag = synod_failure_shame
+			# }
 		}
 	}
 }
