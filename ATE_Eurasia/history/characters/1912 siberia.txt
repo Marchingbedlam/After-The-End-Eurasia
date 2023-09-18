@@ -51,8 +51,8 @@
 	2680.1.1={death=yes}
 }
 1912005={
-	name="Ã‹kinek"
-	dynasty=2168082 #PÃ¯rÃ¯ev
+	name="Ëkinek"
+	dynasty=2168082 #Pïrïev
 	culture=altay
 	religion=ak_jeng
 	2614.2.26={birth=yes}
@@ -172,9 +172,18 @@
 }
 1912017={
 	name="Alina"
-	dynasty=2136102 #Kharitonov
+	dynasty=2136113 #Kharitonov
 	culture=siberian
 	religion=dvoeverie
+	trait=thrifty_clerk
+	trait=pious
+	trait=patient
+	trait=gamer
+	trait=scholar
+	trait=content
+	father=1912055
+	mother=1912056
+	disallow_random_traits=yes
 	female=yes
 	trait=content
 	2635.2.28={birth=yes}
@@ -336,11 +345,18 @@
 }
 1912032={
 	name="Boris"
-	dynasty=2136102 #Kharitonov
+	dynasty=2136113 #Kharitonov
 	culture=siberian
 	religion=dvoeverie
+	trait=charismatic_negotiator
+	trait=trusting
+	trait=poet
+	trait=wroth
 	trait=homosexual
 	trait=musician
+	disallow_random_traits=yes
+	father=1912050
+	mother=1912051
 	2645.3.31={birth=yes}
 	2680.1.1={death=yes}
 }
@@ -518,4 +534,138 @@
 	trait=trusting
 	trait=musician
 	2640.8.25={birth=yes}
+}
+1912049={
+	name="Alexey"
+	dynasty=2136113 #Kharitonov
+	culture=siberian
+	religion=pravoslavie
+	trait=skilled_tactician
+	trait=adventurer
+	trait=brave
+	trait=wroth
+	trait=arbitrary
+	disallow_random_traits = yes
+	2560.3.31={birth=yes}
+	2610.1.1={death=yes}
+}
+1912050={
+	name="Ivan"
+	dynasty=2136113 #Kharitonov
+	culture=siberian
+	religion=pravoslavie
+	trait=elusive_shadow
+	trait=impaler
+	trait=cruel
+	trait=wroth
+	trait=arbitrary
+	trait=deceitful
+	trait=depressed
+	father=1912049
+	disallow_random_traits = yes
+	2600.8.31={birth=yes}
+	2630.1.1={add_spouse=1912051}
+	2660.1.1={death={death_reason=death_suicide}}
+}
+1912051={
+	name="Elisaveta"
+	dynasty=2136112 #Ovechkin
+	female=yes
+	culture=siberian
+	religion=dvoeverie
+	trait=charismatic_negotiator
+	trait=poet
+	trait=gregarious
+	trait=patient
+	trait=fair
+	trait=depressed
+	disallow_random_traits = yes
+	2610.10.31={birth=yes}
+	2630.1.1={add_spouse=1912050}
+	2680.1.1={death=yes}
+}
+1912052={
+	name="Pyotr"
+	dynasty=2136113 #Kharitonov
+	culture=siberian
+	religion=pravoslavie
+	trait=brilliant_strategist
+	trait=duelist
+	trait=brave
+	trait=wroth
+	trait=lustful
+	trait=deceitful
+	trait=fair
+	trait=twin
+	father=1912050
+	mother=1912051
+	disallow_random_traits = yes
+	2630.5.1={birth=yes}
+	2660.1.1={death={death_reason=death_murder=1912032}}
+}
+1912053={
+	name="Ekaterina"
+	dynasty=2136113 #Kharitonov
+	female=yes
+	culture=siberian
+	religion=pravoslavie
+	trait=intricate_webweaver
+	trait=diligent
+	trait=seductress
+	trait=cynical
+	trait=lustful
+	trait=deceitful
+	trait=fair
+	trait=twin
+	father=1912050
+	mother=1912051
+	disallow_random_traits = yes
+	2630.5.1={birth=yes}
+	2660.1.1={death={death_reason=death_murder=1912032}}
+}
+1912054={
+	name="Pavlov"
+	dynasty=2136113 #Kharitonov
+	culture=siberian
+	religion=pravoslavie
+	trait=curious
+	trait=fussy
+	trait=legitimized_bastard
+	father=1912052
+	mother=1912053
+	disallow_random_traits = yes
+	2659.1.20={birth=yes}
+	2680.1.1={death=yes}
+}
+1912055={
+	name="Grigorii"
+	dynasty=2136113 #Kharitonov
+	culture=siberian
+	religion=pravoslavie
+	trait=martial_cleric
+	trait=scholar
+	trait=pious
+	trait=slothful
+	trait=gamer
+	father=1912052
+	mother=1912053
+	disallow_random_traits = yes
+	2602.1.12={birth=yes}
+	2630.1.1={add_spouse=1912056}
+	2661.1.1={death=yes}
+}
+1912056={
+	name="Agafya"
+	dynasty=2136111 #Kharitonov
+	culture=siberian
+	religion=pravoslavie
+	trait=thrifty_clerk
+	trait=patient
+	trait=pious
+	trait=diligent
+	trait=gregarious
+	disallow_random_traits = yes
+	2610.1.12={birth=yes}
+	2630.1.1={add_spouse=1912055}
+	2680.1.1={death=yes}
 }
