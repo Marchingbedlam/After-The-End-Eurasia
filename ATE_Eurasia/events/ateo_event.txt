@@ -1,0 +1,37 @@
+namespace = ateo
+
+narrative_event = {
+    id = ateo.1
+	title=ateotitle1
+	desc = EVTDESCateo1
+	picture = GFX_evt_chinese_thinkers
+	border = GFX_event_narrative_frame_religion 
+	
+	hide_from = yes 
+	is_triggered_only = yes 
+
+	option = { #Cross in a Lotus
+	    name = EVTOPTAateo1
+		piety = 50
+		add_trait = sympathy_christendom
+		remove_trait = in_hiding
+	}
+	option = { #Dragon
+	    name = EVTOPTBateo1
+		piety = 50
+		add_trait = sympathy_eastern
+		remove_trait = in_hiding
+	}
+	option = { #A wise word
+	    name = EVTOPTCateo1
+		piety = 50
+		add_trait = sympathy_old_world_cults
+		remove_trait = in_hiding
+	}
+	option = { #The Lotus
+	    name = EVTOPTDateo1
+		piety = 50
+		add_trait = sympathy_buddhist
+		remove_trait = in_hiding
+	}
+}
