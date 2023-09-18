@@ -3995,10 +3995,10 @@ character_event = {
 							NOR = { 
 								religion_group = christian
 								religion_group = muslim
-								religion = tengri_pagan
-								religion = tengri_pagan_reformed
-								religion = norse_pagan
-								religion = norse_pagan_reformed
+								religion = khanist
+								religion = khanist_reformed
+								religion = sjotru
+								religion = sjotru_reformed
 							} 
 						} 
 						set_dynasty_flag = flag_vision_baby		#Positive
@@ -4010,10 +4010,10 @@ character_event = {
 							NOR = { 
 								religion_group = christian
 								religion_group = muslim
-								religion = tengri_pagan
-								religion = tengri_pagan_reformed
-								religion = norse_pagan
-								religion = norse_pagan_reformed
+								religion = khanist
+								religion = khanist_reformed
+								religion = sjotru
+								religion = sjotru_reformed
 							} 
 						}
 						set_dynasty_flag = flag_vision_baby 	#Negative
@@ -4640,8 +4640,8 @@ character_event = {
 		picture = GFX_evt_comet
 		trigger = {
 			OR = { 
-				religion = norse_pagan
-				religion = norse_pagan_reformed
+				religion = sjotru
+				religion = sjotru_reformed
 			} 
 		}
 	}
@@ -4650,8 +4650,8 @@ character_event = {
 		picture = GFX_evt_wolf
 		trigger = {
 			OR = { 
-				religion = tengri_pagan
-				religion = tengri_pagan_reformed
+				religion = khanist
+				religion = khanist_reformed
 			} 
 		}
 	}
@@ -4675,8 +4675,8 @@ character_event = {
 		name = EVTOPTBHFP20503
 		trigger = { 
 			OR = { 
-				religion = norse_pagan
-				religion = norse_pagan_reformed
+				religion = sjotru
+				religion = sjotru_reformed
 			} 
 		}
 		set_character_flag = thor_baby
@@ -4685,8 +4685,8 @@ character_event = {
 		name = EVTOPTCHFP20503
 		trigger = { 
 			OR = { 
-				religion = tengri_pagan
-				religion = tengri_pagan_reformed
+				religion = khanist
+				religion = khanist_reformed
 			} 
 		}
 		set_character_flag = tengri_baby
@@ -4715,8 +4715,8 @@ character_event = {
 		picture = GFX_evt_torture
 		trigger = {
 			OR = { 
-				religion = norse_pagan
-				religion = norse_pagan_reformed
+				religion = sjotru
+				religion = sjotru_reformed
 			} 
 		}
 	}
@@ -4725,8 +4725,8 @@ character_event = {
 		picture = GFX_evt_illness
 		trigger = {
 			OR = { 
-				religion = tengri_pagan
-				religion = tengri_pagan_reformed
+				religion = khanist
+				religion = khanist_reformed
 			} 
 		}
 	}
@@ -4754,8 +4754,8 @@ character_event = {
 		name = EVTOPTCHFP20504
 		trigger = { 
 			OR = { 
-				religion = norse_pagan
-				religion = norse_pagan_reformed
+				religion = sjotru
+				religion = sjotru_reformed
 			} 
 		}
 		set_character_flag = loki_baby
@@ -4764,8 +4764,8 @@ character_event = {
 		name = EVTOPTDHFP20504
 		trigger = { 
 			OR = { 
-				religion = tengri_pagan
-				religion = tengri_pagan_reformed
+				religion = khanist
+				religion = khanist_reformed
 			} 
 		}
 		set_character_flag = erlik_baby
@@ -8029,12 +8029,12 @@ character_event = {
 					} 
 					spouse = { 
 						OR = { 
-							religion = norse_pagan
-							religion = norse_pagan_reformed
-							religion = baltic_pagan
-							religion = baltic_pagan_reformed
-							religion = finnish_pagan
-							religion = finnish_pagan_reformed 
+							religion = sjotru
+							religion = sjotru_reformed
+							# religion = baltic_pagan
+							# religion = baltic_pagan_reformed
+							# religion = finnish_pagan
+							# religion = finnish_pagan_reformed 
 						}  
 						NOR = { 
 							trait = incapable 
@@ -8043,12 +8043,12 @@ character_event = {
 						}
 					}
 					OR = { 
-						religion = norse_pagan
-						religion = norse_pagan_reformed
-						religion = baltic_pagan
-						religion = baltic_pagan_reformed
-						religion = finnish_pagan
-						religion = finnish_pagan_reformed 
+						religion = sjotru
+						religion = sjotru_reformed
+						# religion = baltic_pagan
+						# religion = baltic_pagan_reformed
+						# religion = finnish_pagan
+						# religion = finnish_pagan_reformed 
 					} 
 				}
 				modifier = { 
@@ -8123,12 +8123,12 @@ character_event = {
 					} 
 					spouse = { 
 						OR = { 
-							religion = norse_pagan
-							religion = norse_pagan_reformed
-							religion = baltic_pagan
-							religion = baltic_pagan_reformed
-							religion = finnish_pagan
-							religion = finnish_pagan_reformed 
+							religion = sjotru
+							religion = sjotru_reformed
+							# religion = baltic_pagan
+							# religion = baltic_pagan_reformed
+							# religion = finnish_pagan
+							# religion = finnish_pagan_reformed 
 						}  
 						NOR = { 
 							trait = incapable 
@@ -8137,12 +8137,12 @@ character_event = {
 						}
 					}
 					OR = { 
-						religion = norse_pagan
-						religion = norse_pagan_reformed
-						religion = baltic_pagan
-						religion = baltic_pagan_reformed
-						religion = finnish_pagan
-						religion = finnish_pagan_reformed 
+						religion = sjotru
+						religion = sjotru_reformed
+						# religion = baltic_pagan
+						# religion = baltic_pagan_reformed
+						# religion = finnish_pagan
+						# religion = finnish_pagan_reformed 
 					} 
 				}
 				modifier = { 
@@ -8970,10 +8970,10 @@ character_event = {
 							NOR = { 
 								religion_group = christian
 								religion_group = muslim
-								religion = tengri_pagan
-								religion = tengri_pagan_reformed
-								religion = norse_pagan
-								religion = norse_pagan_reformed
+								religion = khanist
+								religion = khanist_reformed
+								religion = sjotru
+								religion = sjotru_reformed
 							} 
 						} 
 						set_dynasty_flag = flag_vision_baby		#Positive
@@ -9000,10 +9000,10 @@ character_event = {
 							NOR = { 
 								religion_group = christian
 								religion_group = muslim
-								religion = tengri_pagan
-								religion = tengri_pagan_reformed
-								religion = norse_pagan
-								religion = norse_pagan_reformed
+								religion = khanist
+								religion = khanist_reformed
+								religion = sjotru
+								religion = sjotru_reformed
 							} 
 						} 
 						set_dynasty_flag = flag_vision_baby		#Positive
@@ -9075,10 +9075,10 @@ character_event = {
 							NOR = { 
 								religion_group = christian
 								religion_group = muslim
-								religion = tengri_pagan
-								religion = tengri_pagan_reformed
-								religion = norse_pagan
-								religion = norse_pagan_reformed
+								religion = khanist
+								religion = khanist_reformed
+								religion = sjotru
+								religion = sjotru_reformed
 							} 
 						}
 						set_dynasty_flag = flag_vision_baby 	#Negative
@@ -9123,10 +9123,10 @@ character_event = {
 							NOR = { 
 								religion_group = christian
 								religion_group = muslim
-								religion = tengri_pagan
-								religion = tengri_pagan_reformed
-								religion = norse_pagan
-								religion = norse_pagan_reformed
+								religion = khanist
+								religion = khanist_reformed
+								religion = sjotru
+								religion = sjotru_reformed
 							} 
 						}
 						set_dynasty_flag = flag_vision_baby 	#Negative
@@ -14867,12 +14867,12 @@ character_event = {
 			is_alive = yes
 			is_married = ROOT
 			OR = { #Can be of different but similar religion.
-				religion = baltic_pagan
-				religion = baltic_pagan_reformed
-				religion = norse_pagan
-				religion = norse_pagan_reformed
-				religion = finnish_pagan
-				religion = finnish_pagan_reformed
+				# religion = baltic_pagan
+				# religion = baltic_pagan_reformed
+				religion = sjotru
+				religion = sjotru_reformed
+				# religion = finnish_pagan
+				# religion = finnish_pagan_reformed
 			}
 			NOR = {
 				trait = incapable
@@ -14889,12 +14889,12 @@ character_event = {
 			} 
 		}
 		OR = {
-			religion = baltic_pagan
-			religion = baltic_pagan_reformed
-			religion = norse_pagan
-			religion = norse_pagan_reformed
-			religion = finnish_pagan
-			religion = finnish_pagan_reformed
+			# religion = baltic_pagan
+			# religion = baltic_pagan_reformed
+			religion = sjotru
+			religion = sjotru_reformed
+			# religion = finnish_pagan
+			# religion = finnish_pagan_reformed
 		}
 	}
 

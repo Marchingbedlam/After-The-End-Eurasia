@@ -31,13 +31,13 @@ character_event = {
             }
             official_crusade_recipient = {
                 OR = {
-                    has_landed_title = e_byzantium
-                    has_landed_title = k_thrace
+                    has_landed_title = e_europa
+                    has_landed_title = k_belgium
                 }
             }
             NOT = {
                 crusade_target_title = {
-                    title = k_thrace
+                    title = k_belgium
                 }
             }
         }
@@ -306,14 +306,14 @@ character_event = {
                     }
 	    		}
 			}
-			fraticelli = {
-				official_crusade_recipient = {
-                    character = ROOT
-                    NOT = {
-                        religion = fraticelli
-                    }
-				}
-			}
+			# fraticelli = {
+				# official_crusade_recipient = {
+                    # character = ROOT
+                    # NOT = {
+                        # religion = fraticelli
+                    # }
+				# }
+			# }
 		}
         NOT = {
             has_character_flag = fourth_crusade_recipient
@@ -324,7 +324,7 @@ character_event = {
     	trigger_switch = {
     		on_trigger = religion
     		catholic = { k_papal_state = { owner = { character_event = { id = HFP.41000 days = 1 } } } }
-    		fraticelli = { d_fraticelli = { owner = { character_event = { id = HFP.41000 days = 1 } } } }
+    		# fraticelli = { d_fraticelli = { owner = { character_event = { id = HFP.41000 days = 1 } } } }
     	}
     }
 }
@@ -341,11 +341,11 @@ character_event = {
                     character = ROOT
 	    		}
 			}
-			fraticelli = {
-				official_crusade_recipient = {
-                    character = ROOT
-				}
-			}
+			# fraticelli = {
+				# official_crusade_recipient = {
+                    # character = ROOT
+				# }
+			# }
             has_character_flag = fourth_crusade_recipient
 		}
     }
@@ -358,15 +358,15 @@ character_event = {
             catholic = {
                 set_official_crusade_recipient = NONE
             }
-            fraticelli = {
-                set_official_crusade_recipient = NONE
-            }
+            # fraticelli = {
+                # set_official_crusade_recipient = NONE
+            # }
         }
 
     	trigger_switch = {
     		on_trigger = religion
     		catholic = { k_papal_state = { owner = { character_event = { id = HFP.41000 } } } }
-    		fraticelli = { d_fraticelli = { owner = { character_event = { id = HFP.41000 } } } }
+    		# fraticelli = { d_fraticelli = { owner = { character_event = { id = HFP.41000 } } } }
     	}
     }
 }
@@ -381,7 +381,7 @@ character_event = {
 		uses_new_crusade = yes
     	OR = {
     		religion = catholic
-    		religion = fraticelli
+    		# religion = fraticelli
     	}
     }
 
@@ -2765,10 +2765,10 @@ character_event = {
     trigger = {
         NAND = {
             crusade_target_title = {
-                title = k_thrace
+                title = k_belgium
             }
             crusade_target_char = {
-                e_byzantium = {
+                e_europa = {
                     owner = {
                         character = PREVPREV
                     }
@@ -3554,13 +3554,13 @@ character_event = {
             NOT = {
                 ROOT = {
                     crusade_target_title = {
-                        title = k_thrace
+                        title = k_belgium
                     }
                 }
             }
             NOT = {
                 crusade_target_char = {
-                    has_landed_title = e_byzantium
+                    has_landed_title = e_europa
                 }
             }
             NOT = {
@@ -4398,8 +4398,8 @@ narrative_event = {
 			event_target:new_crusader_king = {
 				if = {
 					limit = {
-						dynasty = 308
-						completely_controls = c_jerusalem
+						#dynasty = 308
+						completely_controls = c_al_quds
 						higher_tier_than = DUKE
 					}
 					set_character_flag = achievement_defender_of_the_holy_sepulchre
@@ -5367,7 +5367,7 @@ character_event = {
         }
         OR = {
             religion = catholic
-            religion = fraticelli
+            # religion = fraticelli
         }
     }
 
@@ -5833,20 +5833,20 @@ character_event = {
 }
 
 # Test script to make every Catholic ruler Fraticelli
-character_event = {
-    id = HFP.41105
-    hide_window = yes
-    is_triggered_only = yes
+# character_event = {
+    # id = HFP.41105
+    # hide_window = yes
+    # is_triggered_only = yes
 
-    immediate = {
-        any_character = {
-            limit = {
-                religion = catholic
-            }
-            religion = fraticelli
-        }
-    }
-}
+    # immediate = {
+        # any_character = {
+            # limit = {
+                # religion = catholic
+            # }
+            # religion = fraticelli
+        # }
+    # }
+# }
 
 ## Loss of Beneficiary Notification
 # Beneficiary message check - Player Only
@@ -6345,22 +6345,22 @@ province_event = {
                 }
             }
         }
-        if = {
-            limit = {
-                d_fraticelli = {
-                    owner = {
-                        any_war = {
-                            using_cb = new_crusade
-                        }
-                    }
-                }
-            }
-            d_fraticelli = {
-                owner = {
-                    character_event = { id = HFP.41143 }
-                }
-            }
-        }
+        # if = {
+            # limit = {
+                # d_fraticelli = {
+                    # owner = {
+                        # any_war = {
+                            # using_cb = new_crusade
+                        # }
+                    # }
+                # }
+            # }
+            # d_fraticelli = {
+                # owner = {
+                    # character_event = { id = HFP.41143 }
+                # }
+            # }
+        # }
         if = { #Delay event if the target is far far away
             limit = {
                 any_war = {
@@ -6516,22 +6516,22 @@ province_event = {
                 }
             }
         }
-        if = {
-            limit = {
-                d_fraticelli = {
-                    owner = {
-                        any_war = {
-                            using_cb = new_crusade
-                        }
-                    }
-                }
-            }
-            d_fraticelli = {
-                owner = {
-                    character_event = { id = HFP.41146 }
-                }
-            }
-        }
+        # if = {
+            # limit = {
+                # d_fraticelli = {
+                    # owner = {
+                        # any_war = {
+                            # using_cb = new_crusade
+                        # }
+                    # }
+                # }
+            # }
+            # d_fraticelli = {
+                # owner = {
+                    # character_event = { id = HFP.41146 }
+                # }
+            # }
+        # }
     }
 }
 

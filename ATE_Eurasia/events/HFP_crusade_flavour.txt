@@ -1624,8 +1624,8 @@ character_event = {
     			event_target:current_location = {
     				OR = {
     					religion_group = muslim
-    					religion = west_african_pagan
-    					religion = west_african_pagan_reformed
+    					# religion = west_african_pagan
+    					# religion = west_african_pagan_reformed
     				}
     			}
     		}
@@ -1690,8 +1690,8 @@ character_event = {
     			event_target:current_location = {
     				OR = {
     					religion_group = zoroastrian_group
-    					religion = zun_pagan
-    					religion = zun_pagan_reformed
+    					# religion = zun_pagan
+    					# religion = zun_pagan_reformed
     				}
     			}
     		}
@@ -1727,93 +1727,93 @@ character_event = {
     		}
     	}
     	# Germanics
-    	if = {
-    		limit = {
-    			event_target:current_location = {
-    				OR = {
-    					religion = norse_pagan
-    					religion = norse_pagan_reformed
-    				}
-    			}
-    		}
-    		random_list = {
-    			1 = {
-    				set_character_flag = crown_of_crows
-    			}
-    			1 = {
-    				set_character_flag = sword_of_heroes
-    			}
-    			1 = {
-    				set_character_flag = crown_of_the_sea
-    			}
-    			1 = {
-    				set_character_flag = golden_sword
-    			}
-    			1 = {
-    				trigger = { 
-    					NOT = {
-    						higher_tier_than = DUKE
-    					}
-    				}
-    				set_character_flag = iron_crown
-    			}
-    			1 = {
-    				trigger = { 
-    					NOT = {
-    						higher_tier_than = DUKE
-    					}
-    				}
-    				set_character_flag = engraved_sword
-    			}
-    		}
-    	}
+    	# if = {
+    		# limit = {
+    			# event_target:current_location = {
+    				# OR = {
+    					# religion = norse_pagan
+    					# religion = norse_pagan_reformed
+    				# }
+    			# }
+    		# }
+    		# random_list = {
+    			# 1 = {
+    				# set_character_flag = crown_of_crows
+    			# }
+    			# 1 = {
+    				# set_character_flag = sword_of_heroes
+    			# }
+    			# 1 = {
+    				# set_character_flag = crown_of_the_sea
+    			# }
+    			# 1 = {
+    				# set_character_flag = golden_sword
+    			# }
+    			# 1 = {
+    				# trigger = { 
+    					# NOT = {
+    						# higher_tier_than = DUKE
+    					# }
+    				# }
+    				# set_character_flag = iron_crown
+    			# }
+    			# 1 = {
+    				# trigger = { 
+    					# NOT = {
+    						# higher_tier_than = DUKE
+    					# }
+    				# }
+    				# set_character_flag = engraved_sword
+    			# }
+    		# }
+    	# }
     	# Slavic, Romuva, Suomenski or Tengri
-    	if = {
-    		limit = {
-    			event_target:current_location = {
-    				OR = {
-    					religion = slavic_pagan
-    					religion = slavic_pagan_reformed
-    					religion = baltic_pagan
-    					religion = baltic_pagan_reformed
-    					religion = finnish_pagan
-    					religion = finnish_pagan_reformed
-    					religion = tengri_pagan
-    					religion = tengri_pagan_reformed
-    				}
-    			}
-    		}
-    		random_list = {
-    			1 = {
-    				set_character_flag = heros_crown
-    			}
-    			1 = {
-    				set_character_flag = axe_of_the_ancestors
-    			}
-    			1 = {
-    				set_character_flag = amber_crown
-    			}
-    			1 = {
-    				set_character_flag = obsidian_axe
-    			}
-    			1 = {
-    				trigger = { 
-    					NOT = {
-    						higher_tier_than = DUKE
-    					}
-    				}
-    				set_character_flag = engraved_crown
-    			}
-    			1 = {
-    				trigger = { 
-    					NOT = {
-    						higher_tier_than = DUKE
-    					}
-    				}
-    				set_character_flag = ceremonial_axe
-    			}
-    		}
-    	}
+    	# if = {
+    		# limit = {
+    			# event_target:current_location = {
+    				# OR = {
+    					# religion = slavic_pagan
+    					# religion = slavic_pagan_reformed
+    					# religion = baltic_pagan
+    					# religion = baltic_pagan_reformed
+    					# religion = finnish_pagan
+    					# religion = finnish_pagan_reformed
+    					# religion = tengri_pagan
+    					# religion = tengri_pagan_reformed
+    				# }
+    			# }
+    		# }
+    		# random_list = {
+    			# 1 = {
+    				# set_character_flag = heros_crown
+    			# }
+    			# 1 = {
+    				# set_character_flag = axe_of_the_ancestors
+    			# }
+    			# 1 = {
+    				# set_character_flag = amber_crown
+    			# }
+    			# 1 = {
+    				# set_character_flag = obsidian_axe
+    			# }
+    			# 1 = {
+    				# trigger = { 
+    					# NOT = {
+    						# higher_tier_than = DUKE
+    					# }
+    				# }
+    				# set_character_flag = engraved_crown
+    			# }
+    			# 1 = {
+    				# trigger = { 
+    					# NOT = {
+    						# higher_tier_than = DUKE
+    					# }
+    				# }
+    				# set_character_flag = ceremonial_axe
+    			# }
+    		# }
+    	# }
     }
 
     option = {      
@@ -2888,197 +2888,197 @@ character_event = {
 }
 
 # Guided by God or Alcohol
-character_event = {
-    id = HFP.42212
-    desc = EVTDESC_HFP_42212
-    picture = GFX_evt_religious_exultation
-    portrait = none
-    is_triggered_only = yes
-    trigger = {
+# character_event = {
+    # id = HFP.42212
+    # desc = EVTDESC_HFP_42212
+    # picture = GFX_evt_religious_exultation
+    # portrait = none
+    # is_triggered_only = yes
+    # trigger = {
     	
-    }
+    # }
 
-    immediate = {
-    	hidden_tooltip = {
-	    	random_list = {
-	    		10 = {
-	    			trigger = {
-	    				is_title_active = d_knights_templar
-	    			}
-	    			d_knights_templar = {
-	    				owner = {
-	    					save_event_target_as = decided_holy_order
-	    				}
-	    			}
-	    		}
-	    		10 = {
-	    			trigger = {
-	    				is_title_active = d_knights_calatrava
-	    			}
-	    			d_knights_calatrava = {
-	    				owner = {
-	    					save_event_target_as = decided_holy_order
-	    				}
-	    			}
-	    		}
-	    		10 = {
-	    			trigger = {
-	    				is_title_active = d_knights_santiago
-	    			}
-	    			d_knights_santiago = {
-	    				owner = {
-	    					save_event_target_as = decided_holy_order
-	    				}
-	    			}
-	    		}
-	    		10 = {
-	    			trigger = {
-	    				is_title_active = d_knights_hospitaler
-	    			}
-	    			d_knights_hospitaler = {
-	    				owner = {
-	    					save_event_target_as = decided_holy_order
-	    				}
-	    			}
-	    		}
-	    		10 = {
-	    			trigger = {
-	    				is_title_active = d_teutonic_order
-	    			}
-	    			d_teutonic_order = {
-	    				owner = {
-	    					save_event_target_as = decided_holy_order
-	    				}
-	    			}
-	    		}
-	    		10 = {
-	    			trigger = {
-	    				is_title_active = k_teutonic_state
-	    			}
-	    			k_teutonic_state = {
-	    				owner = {
-	    					save_event_target_as = decided_holy_order
-	    				}
-	    			}
-	    		}
-	    		10 = {
-	    			trigger = {
-	    				is_title_active = d_livonian_order
-	    			}
-	    			d_livonian_order = {
-	    				owner = {
-	    					save_event_target_as = decided_holy_order
-	    				}
-	    			}
-	    		}
-	    	}
-	    }
-    }
+    # immediate = {
+    	# hidden_tooltip = {
+	    	# random_list = {
+	    		# 10 = {
+	    			# trigger = {
+	    				# is_title_active = d_knights_templar
+	    			# }
+	    			# d_knights_templar = {
+	    				# owner = {
+	    					# save_event_target_as = decided_holy_order
+	    				# }
+	    			# }
+	    		# }
+	    		# 10 = {
+	    			# trigger = {
+	    				# is_title_active = d_knights_calatrava
+	    			# }
+	    			# d_knights_calatrava = {
+	    				# owner = {
+	    					# save_event_target_as = decided_holy_order
+	    				# }
+	    			# }
+	    		# }
+	    		# 10 = {
+	    			# trigger = {
+	    				# is_title_active = d_knights_santiago
+	    			# }
+	    			# d_knights_santiago = {
+	    				# owner = {
+	    					# save_event_target_as = decided_holy_order
+	    				# }
+	    			# }
+	    		# }
+	    		# 10 = {
+	    			# trigger = {
+	    				# is_title_active = d_knights_hospitaler
+	    			# }
+	    			# d_knights_hospitaler = {
+	    				# owner = {
+	    					# save_event_target_as = decided_holy_order
+	    				# }
+	    			# }
+	    		# }
+	    		# 10 = {
+	    			# trigger = {
+	    				# is_title_active = d_teutonic_order
+	    			# }
+	    			# d_teutonic_order = {
+	    				# owner = {
+	    					# save_event_target_as = decided_holy_order
+	    				# }
+	    			# }
+	    		# }
+	    		# 10 = {
+	    			# trigger = {
+	    				# is_title_active = k_teutonic_state
+	    			# }
+	    			# k_teutonic_state = {
+	    				# owner = {
+	    					# save_event_target_as = decided_holy_order
+	    				# }
+	    			# }
+	    		# }
+	    		# 10 = {
+	    			# trigger = {
+	    				# is_title_active = d_livonian_order
+	    			# }
+	    			# d_livonian_order = {
+	    				# owner = {
+	    					# save_event_target_as = decided_holy_order
+	    				# }
+	    			# }
+	    		# }
+	    	# }
+	    # }
+    # }
 
-    option = {      
-        name = EVTOPTA_HFP_42212
-        piety = 50
-        scaled_wealth = { value = -0.2 min = -30 max = -300 } 
-        if = {
-        	limit = {
-        		NOT = {
-        			trait = zealous
-        		}
-        	}
-        	add_trait = zealous
-        }
-    }
-    option = {      
-        name = EVTOPTB_HFP_42212
-        piety = -50
-        if = {
-        	limit = {
-        		NOT = {
-        			trait = cynical
-        		}
-        	}
-        	add_trait = cynical
-        }
-        if = {
-        	limit = {
-        		trait = drunkard
-        	}
-        	remove_trait = drunkard
-        }
-        if = {
-        	limit = {
-        		trait = gluttonous
-        	}
-        	remove_trait = gluttonous
-        }
-        else_if = {
-        	limit = {
-        		NOT = {
-        			trait = temperate
-        		}
-        	}
-        	add_trait = temperate
-        }
-    }
-    option = {
-    	name = EVTOPTC_HFP_42212
-    	trigger = {
-    		trait = zealous
-    		is_heretic = no
-    		piety = 500
-    		OR = {
-				AND = {
-					is_title_active = d_teutonic_order
-					d_teutonic_order = {
-						owner = {
-							religion = ROOT
-						}
-					}
-				}
-				AND = {
-					is_title_active = k_teutonic_state
-					k_teutonic_state = {
-						owner = {
-							religion = ROOT
-						}
-					}
-				}
-				AND = {
-					is_title_active = d_knights_templar
-					d_knights_templar = {
-						owner = {
-							religion = ROOT
-						}
-					}
-				}
-				AND = {
-					is_title_active = d_livonian_order
-					d_livonian_order = {
-						owner = {
-							religion = ROOT
-						}
-					}
-				}
-				AND = {
-					is_title_active = d_knights_hospitaler
-					d_knights_hospitaler = {
-						owner = {
-							religion = ROOT
-						}
-					}
-				}
-			}
-    	}
-    	tooltip_info = yes
-    	piety = 150
-    	abdicate = yes
-    	add_trait = celibate
-    	ROOT = {
-    		show_scope_change = no
-    		move_character = event_target:decided_holy_order
-    	}
-    }
-}
+    # option = {      
+        # name = EVTOPTA_HFP_42212
+        # piety = 50
+        # scaled_wealth = { value = -0.2 min = -30 max = -300 } 
+        # if = {
+        	# limit = {
+        		# NOT = {
+        			# trait = zealous
+        		# }
+        	# }
+        	# add_trait = zealous
+        # }
+    # }
+    # option = {      
+        # name = EVTOPTB_HFP_42212
+        # piety = -50
+        # if = {
+        	# limit = {
+        		# NOT = {
+        			# trait = cynical
+        		# }
+        	# }
+        	# add_trait = cynical
+        # }
+        # if = {
+        	# limit = {
+        		# trait = drunkard
+        	# }
+        	# remove_trait = drunkard
+        # }
+        # if = {
+        	# limit = {
+        		# trait = gluttonous
+        	# }
+        	# remove_trait = gluttonous
+        # }
+        # else_if = {
+        	# limit = {
+        		# NOT = {
+        			# trait = temperate
+        		# }
+        	# }
+        	# add_trait = temperate
+        # }
+    # }
+    # option = {
+    	# name = EVTOPTC_HFP_42212
+    	# trigger = {
+    		# trait = zealous
+    		# is_heretic = no
+    		# piety = 500
+    		# OR = {
+				# AND = {
+					# is_title_active = d_teutonic_order
+					# d_teutonic_order = {
+						# owner = {
+							# religion = ROOT
+						# }
+					# }
+				# }
+				# AND = {
+					# is_title_active = k_teutonic_state
+					# k_teutonic_state = {
+						# owner = {
+							# religion = ROOT
+						# }
+					# }
+				# }
+				# AND = {
+					# is_title_active = d_knights_templar
+					# d_knights_templar = {
+						# owner = {
+							# religion = ROOT
+						# }
+					# }
+				# }
+				# AND = {
+					# is_title_active = d_livonian_order
+					# d_livonian_order = {
+						# owner = {
+							# religion = ROOT
+						# }
+					# }
+				# }
+				# AND = {
+					# is_title_active = d_knights_hospitaler
+					# d_knights_hospitaler = {
+						# owner = {
+							# religion = ROOT
+						# }
+					# }
+				# }
+			# }
+    	# }
+    	# tooltip_info = yes
+    	# piety = 150
+    	# abdicate = yes
+    	# add_trait = celibate
+    	# ROOT = {
+    		# show_scope_change = no
+    		# move_character = event_target:decided_holy_order
+    	# }
+    # }
+# }
 
 # Meeting a Holy Order
 character_event = {
@@ -3685,10 +3685,10 @@ province_event = {
 			tier = COUNT
 			OR = {
 				empire = {
-					title = e_spain
+					title = e_iberia
 				}
 				kingdom = {
-					title = k_jerusalem
+					title = k_ard_al_muqaddis
 				}
 			}
 			owner = {
@@ -3745,10 +3745,10 @@ province_event = {
 							tier = COUNT
 							OR = {
 								empire = {
-									title = e_spain
+									title = e_iberia
 								}
 								kingdom = {
-									title = k_jerusalem
+									title = k_ard_al_muqaddis
 								}
 							}
 							owner = {
