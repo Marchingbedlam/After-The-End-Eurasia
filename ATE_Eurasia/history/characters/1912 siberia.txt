@@ -547,6 +547,7 @@
 	trait=arbitrary
 	disallow_random_traits = yes
 	2560.3.31={birth=yes}
+	2590.1.1={add_spouse=1912057}
 	2610.1.1={death=yes}
 }
 1912050={
@@ -562,6 +563,7 @@
 	trait=deceitful
 	trait=depressed
 	father=1912049
+	mother=1912057
 	disallow_random_traits = yes
 	2600.8.31={birth=yes}
 	2630.1.1={add_spouse=1912051}
@@ -658,8 +660,8 @@
 	trait=pious
 	trait=slothful
 	trait=gamer
-	father=1912052
-	mother=1912053
+	father=1912049
+	mother=1912057
 	disallow_random_traits = yes
 	2602.1.12={birth=yes}
 	2630.1.1={add_spouse=1912056}
@@ -679,4 +681,19 @@
 	2610.1.12={birth=yes}
 	2630.1.1={add_spouse=1912055}
 	2680.1.1={death=yes}
+}
+1912057={
+	name="Anna"
+	dynasty=2136110 #Kolpashnikov
+	culture=siberian
+	religion=pravoslavie
+	trait=intricate_webweaver
+	trait=schemer
+	trait=pious
+	trait=diligent
+	trait=gregarious
+	disallow_random_traits = yes
+	2562.12.1={birth=yes}
+	2590.1.1={add_spouse=1912049}
+	2660.1.1={death=yes}
 }
