@@ -25,24 +25,60 @@ character_event = {
 		set_character_flag = sufi_martial
 		if = {
 			limit = {
-				religion = taharur
+				is_sunni = yes
 			}
 			character_event = {id = sufi.3 }
+		}
+		else_if = {
+			limit = {
+				is_shiite = yes
+			}
+			character_event = {id = sufi.5 }
 		}
 	}
 	option = {
 		name = EVTOPTB_sufi_2
 		set_character_flag = sufi_music_poetry
+		trigger = {
+			OR = {
+				is_shiite = yes
+				religion = hui
+			}
+		}
 		if = {
 			limit = {
 				religion = hui
 			}
 			character_event = {id = sufi.4 }
 		}
+		else_if = {
+			limit = {
+				is_shiite = yes
+			}
+			character_event = {id = sufi.6 }
+		}
+		else_if = {
+			limit = {
+				is_sunni = yes
+			}
+			character_event = {id = sufi.9 }
+		}
 	}
 	option = {
 		name = EVTOPTC_sufi_2
 		set_character_flag = sufi_mysticism
+		else_if = {
+			limit = {
+				is_shiite = yes
+			}
+			character_event = {id = sufi.7 }
+		}
+		else_if = {
+			limit = {
+				is_sunni = yes
+			}
+			character_event = {id = sufi.8 }
+		}
 	}
 }
 
@@ -59,12 +95,18 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA_sufi_3
+		trigger = {religion = taharur}
 		add_trait = senussi
 		clr_character_flag = sufi_martial
 	}
 	option = {
-		name = EVTOPTA_sufi_3
+		name = EVTOPTB_sufi_3
 		add_trait = qadiri
+		clr_character_flag = sufi_martial
+	}
+	option = {
+		name = EVTOPTC_sufi_3
+		add_trait = tijani
 		clr_character_flag = sufi_martial
 	}
 }
@@ -83,9 +125,137 @@ character_event = {
 	option = {
 		name = EVTOPTA_sufi_4
 		add_trait = khufiy
+		clr_character_flag = sufi_music_poetry
+		if = { #get additional benefits as a Xidaotang
+			limit = {
+				trait = xidaotang
+			}
+			piety = 200
+			learning = 2
+		}
 	}
 	option = {
 		name = EVTOPTB_sufi_4
 		add_trait = jahriy
+		clr_character_flag = sufi_music_poetry
+		if = { #get additional benefits as a Xidaotang
+			limit = {
+				trait = xidaotang
+			}
+			piety = 200
+			learning = 2
+		}
+	}
+}
+
+character_event = {
+	id = sufi.5
+	desc = EVTDESC_sufi_5
+	picture = GFX_evt_religious_exultation
+
+	is_triggered_only = yes
+	
+	trigger = {
+			has_character_flag = sufi_martial
+		}
+	
+	option = { #Guardian of the Tombs in Iran
+		name = EVTOPTA_sufi_6
+		add_trait = nimatullahi
+		martial = 1
+		clr_character_flag = sufi_martial
+	}
+}
+
+character_event = {
+	id = sufi.6
+	desc = EVTDESC_sufi_6
+	picture = GFX_evt_religious_exultation
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_flag = sufi_music_poetry
+	}
+	
+	option = { #Whirling Dervishes
+		name = EVTOPTA_sufi_6
+		add_trait = mevlevi
+		add_trait = socializer
+		diplomacy = 2
+		clr_character_flag = sufi_music_poetry
+	}
+}
+
+character_event = {
+	id = sufi.7
+	desc = EVTDESC_sufi_7
+	picture = GFX_evt_religious_exultation
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_flag = sufi_mysticism
+	}
+	
+	option = {
+		name = EVTOPTA_sufi_7
+		piety = 100
+		add_trait = bektashi
+		clr_character_flag = sufi_mysticism
+	}
+}
+
+character_event = {
+	id = sufi.8
+	desc = EVTDESC_sufi_8
+	picture = GFX_evt_religious_exultation
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_flag = sufi_mysticism
+	}
+	
+	option = {
+		name = EVTOPTA_sufi_8
+		piety = 100
+		add_trait = galibi
+		add_trait = sympathy_islamosyncretic #To represent affinity with the Alevi Movement
+		clr_character_flag = sufi_mysticism
+	}
+	option = {
+		name = EVTOPTB_sufi_8
+		trigger = {
+			NOT = {religion = naqshbandi } #No paradoxes here
+		}
+		piety = 200
+		add_trait = naqshbandi
+		clr_character_flag = sufi_mysticism
+	}
+	option = { #anyone with this trait can do retreat and remove a sinful trait (decision)
+		name = EVTOPTC_sufi_8
+		add_trait = khalveti
+		clr_character_flag = sufi_mysticism
+	}
+}
+
+character_event = {
+	id = sufi.9
+	desc = EVTDESC_sufi_9
+	picture = GFX_evt_religious_exultation
+
+	is_triggered_only = yes
+	
+	trigger = {
+			has_character_flag = sufi_music_poetry
+		}
+	
+	option = {
+		name = EVTOPTB_sufi_6
+		piety = 100
+		add_trait = shadhili
+		add_trait = sympathy_christendom #Do some rituals converging with some Iberian Arab Catholic Rites
+		clr_character_flag = sufi_mysticism
 	}
 }

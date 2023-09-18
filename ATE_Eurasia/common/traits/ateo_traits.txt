@@ -134,6 +134,7 @@ gedimu = {
 	
 	monthly_character_piety = 1
 	learning = 1
+	diplomacy = 1
 	
 	religious_branch = hui
 	random = no
@@ -148,11 +149,12 @@ yihewani = {
 	potential = {
 		religion = hui
 	}
-	opposite_opinion = -5
-	same_opinion = 10
+	opposite_opinion = -10
+	same_opinion = 20
 	
 	monthly_character_piety = 1
 	learning = 1
+	martial = 1
 	
 	religious_branch = hui
 	random = no
@@ -171,7 +173,7 @@ xidaotang = {
 	same_opinion = 10
 	
 	monthly_character_piety = 1
-	learning = 1
+	learning = 2
 	
 	religious_branch = hui
 	random = no
