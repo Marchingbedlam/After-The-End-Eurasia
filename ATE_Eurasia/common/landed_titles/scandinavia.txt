@@ -79,6 +79,8 @@ e_scandinavia = {
 				color2={ 255 255 255 }
 				
 				holy_site = nysed #Legend about that one giant
+				holy_site = sjotru
+				holy_site = sjotru_reformed
 
 				b_reykjavik = {
 					vestlending = "Røykjavik"
@@ -236,6 +238,8 @@ e_scandinavia = {
 			c_kujalleq = { #552
 				color={ 96 136 178 }
 				color2={ 255 255 255 }
+				holy_site = sjotru
+				holy_site = sjotru_reformed
 				
 				b_qaqortoq = {}
 				b_narsaq = {}
@@ -381,6 +385,9 @@ e_scandinavia = {
 				english = "Zealand"
 				
 				holy_site = nysed #made by trolls/ giantesses according to folklore
+				holy_site = sjotru
+				holy_site = sjotru_reformed
+				holy_site = pagan
 				
 				b_kobenhavn = {
 					swedish = "Köbenhamn"
@@ -494,6 +501,8 @@ e_scandinavia = {
 				color2={ 255 255 255 }
 				
 				holy_site = folketro
+				holy_site = sjotru
+				holy_site = sjotru_reformed
 				
 				ostlending = "Oppland"
 				vestlending = "Oppland"
@@ -1070,6 +1079,8 @@ e_scandinavia = {
 				
 				danish = "Agershuus"
 				icelander = "Akrshús"
+				holy_site = sjotru
+				holy_site = sjotru_reformed
 				
 				b_oslo = {
 					danish = "Christiania"
