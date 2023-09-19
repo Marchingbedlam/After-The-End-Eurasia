@@ -650,11 +650,11 @@
 	trait=charitable
 	
 	2648.5.9={birth=yes}
-	2665.4.1={effect={add_lover=19928010}}
-	2666.1.1={add_spouse=19928010}
+	2665.4.1={effect={add_lover=1992810}}
+	2666.1.1={add_spouse=1992810}
 	2680.1.1={death=yes}
 }
-19928010={
+1992810={
 	name="Eugenio"
 	dynasty=2024230 #Teixeira
 	father=1992404
@@ -701,31 +701,83 @@
 	
 	2639.1.2={birth=yes}
 	2680.1.1={death=yes}
+}	
+1992813={
+	name="Ventura"
+	dynasty=2018180 #Villanueva
+	culture=castilian
+	religion=catholic
+	martial=6
+	diplomacy=5
+	stewardship=8
+	intrigue=7
+	learning=4
+	trait=fortune_builder
+	trait=authoritative
+	trait=brave
+	trait=honorable
+	trait=kind
+	trait=genius
+	trait=architect
+	trait=poet
+	2630.8.22={birth=yes}
+	2680.1.1={death=yes}
 }
-#19928013={
-#	name="Casandra"
-#	female=yes
-#	dynasty=0 #Lowborn
-#	culture=galician
-#	religion=quinto
-#	trait=brilliant_strategist
-#	trait=strong
-#	trait=homosexual
-#	trait=duelist
-#	trait=proud
-#	trait=envious
-#	trait=brave
-#	trait=deceitful
-#	2644.3.1={birth=yes}
-#	2664.1.1={
-#	employer=1992809
-#	effect={add_friend=1992809}
-#	}
-#	2666.1.1={
-#		effect={add_rival=19928010}
-#	}
-#	2680.1.1={death=yes}
-#}	
+1992814={
+	name="González"
+	dynasty=2018127 #Mendoza
+	culture=castilian
+	religion=catholic
+	trait=tough_soldier
+	trait=cruel
+	trait=brave
+	trait=wroth
+	trait=kind
+	trait=quick
+	trait=cynical
+	give_nickname=nick_le_grande
+	2640.4.12={birth=yes}
+	2680.1.1={death=yes}
+}
+1992815={
+	name="Casandra"
+	female=yes
+	dynasty=0 #Lowborn
+	culture=galician
+	religion=quinto
+	trait=brilliant_strategist
+	trait=strong
+	trait=homosexual
+	trait=duelist
+	trait=proud
+	trait=envious
+	trait=brave
+	trait=deceitful
+	2644.3.1={birth=yes}
+	2664.1.1={
+	employer=1992809
+	effect={add_friend=1992809}
+	}
+	2666.1.1={
+		effect={add_rival=1992810}
+	}
+	2680.1.1={death=yes}
+}
+1992816={
+	name="Alonso Antonio"
+	dynasty=2018204 #de los Monteros
+	culture=castilian
+	religion=penitant
+	trait=martial_cleric
+	trait=envious
+	trait=craven
+	trait=wroth
+	trait=kind
+	trait=deceitful
+	trait=zealous
+	2640.4.12={birth=yes}
+	2680.1.1={death=yes}
+}
 1992900={
 	name="Marcel"
 	dynasty=2017067 #Pons
