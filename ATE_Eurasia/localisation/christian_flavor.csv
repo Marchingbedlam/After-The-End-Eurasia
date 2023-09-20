@@ -1,0 +1,99 @@
+###ÄNSI###
+
+adult_baptism_event;Become Baptized;;;;;;;;;;;;;x
+adult_baptism_event_desc;Become baptized in the faith.;;;;;;;;;;;;;x
+TXT_baptism_events;Become baptized in the faith.;;;;;;;;;;;;;x
+
+EVTDESCbaptism_events.1;Every believer should be baptized, but only when they are able to make a conscious profession of faith. As is customary for those of the [This.Religion.GetName], you may now be baptized in the name of Jesus Christ. Do you accept Him as your Lord and Savior?;;;;;;;;;;;;;x
+EVTOPTAbaptism_events.1;I accept Jesus as my Lord and Savior.;;;;;;;;;;;;;x
+EVTOPTBbaptism_events.1;Yes.;;;;;;;;;;;;;x
+EVTOPTCbaptism_events.1;No.;;;;;;;;;;;;;x
+
+adult_baptized;Baptized as a Believer;;;;;;;;;;;;;x
+adult_baptized_desc;This character has received a believer’s baptism.;;;;;;;;;;;;;x
+
+###########Kohhran Thianghlim - Decisions and Events########### 
+
+build_third_temple;Restore Solomon's Temple;;;;;;;;;;;;;x
+build_third_temple_desc;During the Event the Glory of the Temple Mound was caught in the storm of the apocalypse leaving Mizoram faithful directionless in the sea of chaos that followed the Event. Now that the faithful of Kohhran Thianghlim have returned home grander than ever before an ambitious lord such as yourself can build a grand temple to God like the one raised by King Solomon himself.;;;;;;;;;;;;;x
+
+restore_high_priesthood;Unify the Holy Church;;;;;;;;;;;;;x
+restore_high_priesthood_desc;With Solomon's Temple Restored, many weary faithful look to you for guidance awaiting your word. The ministries that were once disunited look to you as the Grand Reverend of God himself and request that you guide the faithful with your own steady hand.;;;;;;;;;;;;;x
+
+EVTDESC_SoA_100;Construction of the Third Temple will begin immediately on the outskirts of Aizawl. The design of the new temple is greater in scope than the previous church on the site or even King Solomon's fabled First Temple. Your architects estimate that the construction will take roughly four years. When it is finished, it will truly be a sight to see!;;;;;;;;;;;;;x
+EVTOPTA_SoA_100;Our people need but wait a little longer.;;;;;;;;;;;;;x
+EVTNAME_SoA_101;The Third Temple, The Holy Church;;;;;;;;;;;;;x
+EVTDESC_SoA_101;The First Temple, built by King Solomon, was destroyed by the invading Babylonians. The Second Temple, built under the auspices of Cyrus the Great of Persia, was razed by the Romans after a terrible siege. The Third Temple, first seen in the dreams of Lalbiakmawia Sailo and built by the great [FromFrom.GetTitledFirstName] in Mizoram, shall stand for all eternity!\n\nThe magnificent building has become a dominant feature of Aizawl, instantly recognizable from far away by travelers approaching the city. Truly, Solomon himself would have been moved to tears by the sight.;;;;;;;;;;;;;x
+EVTOPTA_SoA_101;It is beautiful.;;;;;;;;;;;;;x
+
+EVTNAME_SoA_550;The Future of the Church;;;;;;;;;x
+EVTDESC_SoA_550;The Proud Restoration of Solomon's Temple was quickly followed by disparate ministries of Kohhran Thianghlim declaring you as the Grand Reverend to hold the steady hand of the church so that this proud realm may last until the day that Jesus returns to usher in the millenia Kingdom of Heaven and collect the faithful in his realm.;;;;;;;;;;;;x
+EVTOPTA_SoA_550;Long live the Reverend, Glory to the Church!;;;;;;;;;x
+EVTOPTB_SoA_550;An interesting development...;;;;;;;;;x #Major event recieved to all Indian and Tibetan Leaders
+EVTOPTC_SoA_550;This is ridiculous!;;;;;;;;;x #reaction of the Baptist
+
+###########Event Modifiers########### 
+ 
+flagellant_tier_one;Flagellant;;;;;;;;;x
+flagellant_tier_two;Pious Flagellant;;;;;;;;;x
+flagellant_tier_three;Most Pious Flagellant;;;;;;;;;x
+bad_penitente;Bad Penitente;;;;;;;;;x
+flagellation_ritual;Mortification of the Flesh;;;;;;;;;x
+flagellation_ritual_desc;Sanctify thyself through an act to mortify your sins.;;;;;;;;;x
+RECENT_FLAGELLATION;Has not recently partaken in mortification of the flesh;;;;;;;;;x
+
+#####FLAGELLANT EVENTS#####
+
+EVTDESC_flagellation_1;Mortification of the Flesh is an act undertaken in order to repent for sins or as a way to share and imitate the Passion of Christ. While the tradition long predates the event, it was only after it that it took the more extreme form practiced by contemporary Penitentes, as instruments of mortification were made bloodier. Penitente Rulers are expected to practice mortification regularly..;;;;;;;;;;;;;x
+EVTOPTA_flagellation_1;I will walk barefoot and wear the Cilice.;;;;;;;;;;;;;x
+TXT_EVTOPTA_flagellation_1;This is the most common and riskless form of Penance.;;;;;;;;;;;;;x
+EVTOPTB_flagellation_1;I will publically whip myself using the discipline.;;;;;;;;;;;;;x
+TXT_EVTOPTB_flagellation_1;Self-flagellation is seen as very pious, however it also carries more risk than simply wearing the Cilice.;;;;;;;;;;;;;x
+EVTOPTC_flagellation_1;I will imitate His Passion and ask to be put in a Cross.;;;;;;;;;;;;;x
+TXT_EVTOPTC_flagellation_1;This is the most extraordinary form of mortification of the flesh, however it also carries higher risk compared to all others.;;;;;;;;;;;;;x
+
+EVTDESC_flagellation_2;You spent a long time wearing the Cilice in public, as an act repent and Reparation. It was a painful but rewarding experience.;;;;;;;;;;;;;x
+EVTOPTA_flagellation_2;Pecador Contempla.;;;;;;;;;;;;;x
+EVTDESC_flagellation_3;Although the original Cilice used in the pre-event world was only meant to cause some discomfort, the ones worn by contemporary Penitentes are meant to cause actual pain and often occasionate bleeding. As you spent a long time wearing the cilice you ended up developing an infection from the wounds it caused. May God take this as an act of repent and Reparation.;;;;;;;;;;;;;x
+EVTOPTA_flagellation_3;Pecador Contempla.;;;;;;;;;;;;;x
+EVTDESC_flagellation_4;In addition to the chain Cilice, you also had to wear a sackcloth and walk barefoot. While walking through somewhat rough terrain, you ended up wounding your feet, and it later developed into a swollen ankle.;;;;;;;;;;;;;x
+EVTOPTA_flagellation_4;Pecador Contempla.;;;;;;;;;;;;;x
+
+EVTDESC_flagellation_5;You practiced mortification through the use of the Penance, a small whip containing seven cords, each representing one of the seven deadly sins as an act repent and Reparation. It was a painful but rewarding experience.;;;;;;;;;;;;;x
+EVTDESC_flagellation_6;You practiced mortification through the use of the Penance, a small whip containing seven cords, each representing one of the seven deadly sins. The constant self-flagellation opened a wound, and occasionated an infection. May God take this as an act of repent and Reparation.;;;;;;;;;;;;;x
+EVTDESC_flagellation_7;You practiced mortification through the use of the Penance, a small whip containing seven cords, each representing one of the seven deadly sins. The constant self-flagellation ended leaving you badly bruised. May God take this as an act of repent and Reparation.;;;;;;;;;;;;;x
+
+EVTDESC_flagellation_8;You asked to be publically crucified for a few minutes, a form of mortification considered by the Penitentes to be both the most pious and risky. Although it was painful, you did not sustain any serious injuries and it left you with new insight over the Passion of Christ.;;;;;;;;;;;;;x
+EVTDESC_flagellation_9;You asked to be publically crucified for a few minutes, a form of mortification considered by the Penitentes to be both the most pious and risky. It was a very painful experience as it left you severely injured, but it also gave you new insight over the Passion of Christ.;;;;;;;;;;;;;x
+EVTOPTA_flagellation_9;He underwent all that pain, only to give us a second chance...;;;;;;;;;;;;;x
+EVTDESC_flagellation_10;You asked to be publically crucified for a few minutes, a form of mortification considered by the Penitentes to be both the most pious and risky. It was a very painful experience as staying in such a painful position lead to you breaking your ribs, but it also gave you new insight over the Passion of Christ.;;;;;;;;;;;;;x
+
+EVTDESC_flagellation_15;Your recent mortification of the flesh was a transforming experience for you. Your discipline toughened in response to your physical trauma and you learned to better resist the temptations of the flesh.;;;;;;;;;;;;;x
+EVTOPTA_flagellation_15;I am becoming a better Christian;;;;;;;;;;;;;x
+
+EVTDESC_flagellation_21;Penitente rulers are expected to serve as an example to their people and regularly practice Mortification of the Flesh as penance for both his sins and the sins of his people. You however have went too long without performing mortification, which has earned you the disaproval of the clergy.;;;;;;;;;;;;;x
+EVTOPTA_flagellation_21;I should have seen this coming.;;;;;;;;;;;;;x
+
+big_brother_sad;Your lack of faith §Rdisturbs§! the Hermano Mayor.;;;;;;;;;;;;;x
+
+aniconist;Jubilee;;;;;;;;;;;;;x
+aniconist_desc;For their deeds against Idolatry, this character has earned the lowest rank of the Purificador mission of smashing Golden Bulls to purify the Temple.;;;;;;;;;;;;;x
+image_breaker;Mighty Celebrant;;;;;;;;;;;;;x
+image_breaker_desc;For their deeds against Idolatry, this character has earned the second rank of the Purificador mission of smashing Golden Bulls to purify the Temple. ;;;;;;;;;;;;;x
+arch_iconoclast;Sanctifier;;;;;;;;;;;;;x
+arch_iconoclast_desc;For their deeds against Idolatry, this character has earned the highest rank of the Purificador mission of smashing Golden Bulls to purify the Temple. Achieving sanctification through the Gift of Discerning Spirits.;;;;;;;;;;;;;x
+
+EVTDESC_centroamerica_3A;The Bible says, Ye shall make you no idols nor graven image. Many so-called Christians have forgotten this, but you have not. For your actions against idolatry, you are known as a jubileo.;;;;;;;;;;;;;x
+EVTOPTA_centroamerica_3;Their idols are forfeit.;;;;;;;;;;;;;x
+
+EVTDESC_centroamerica_3B;The Bible says, The idols of the nations are but silver and gold, the work of man’s hands. You have thrown down many nations idols, their Golden Bulls. For that, you are known as a celebrante ponderoso.;;;;;;;;;;;;;x
+EVTOPTB_centroamerica_3;Their Baals will not protect them.;;;;;;;;;;;;;x
+
+EVTDESC_centroamerica_3C;The Bible says, I will cut off your carved images and your sacred pillars from among you, so that you will no longer bow down to the work of your hands. For fulfilling God’s words, you are now known as a sanctificador.;;;;;;;;;;;;;x
+EVTOPTC_centroamerica_3;I hold no other gods before the Lord.;;;;;;;;;;;;;x
+
+
+cristero_peasant_army;Raise Peasant Army;;;;;;;;;x
+cristero_peasant_army_desc;Call forth a band of devoted worshipers from the peasantry to help reinforce our forces.;;;;;;;;;x
+christian_raised_peasants;Recently called upon fanatic peasanty.;;;;;;;;;x
+christian_raised_peasants_desc;This character has recently called upon a fanatic group of peasants.;;;;;;;;;x

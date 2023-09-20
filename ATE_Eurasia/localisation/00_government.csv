@@ -1,0 +1,285 @@
+#Confederation
+title_confederation_diet_member;Diet Member;;;;;;;;;;;;;x
+title_confederation_diet_member_desc;Diet Members convene at least once a year to discuss legislative matters in the Confederation. Every capable vassal owning a territory inside the realm can become a Member unless they already are a councillor.;;;;;;;;;;;;;x
+title_confederation_diet_president;Diet President;;;;;;;;;;;;;x
+title_confederation_diet_president_desc;The Diet President mediates all prodecures in the Diet. It's the second most powerful position in the Confederation.;;;;;;;;;;;;;x
+
+gov_confederation;Confederation;;;;;;;;;;;;;x
+confederation_government;Confederation;;;;;;;;;;;;;x
+confederation_government_desc;A Confederation is a political alliance between a collection of smaller states. Every Member of the Confederation Diet has a voice in legislation and nomination of the successor in the realm.;;;;;;;;;;;;;x
+
+confederation_elective;Diet Elective;;;;;;;;;;;;;x
+succ_confederation_elective;Diet Elective;;;;;;;;;;;;;x
+succ_confederation_elective_desc;Each member of the Confederation Diet can cast a vote to elect a successor. Candidates are close relatives of the current liege and all direct vassals who aren't only barons.;;;;;;;;;;;;;x
+popular_elective;Confederation Elective;;;;;;;;;;;;;x
+
+confederation_count;Canton President;;;;;;;;;;;;;x
+confederation_count_female;Canton President;;;;;;;;;;;;;x
+confederation_county_of;Canton of;;;;;;;;;;;;;x
+confederation_duke;League President;;;;;;;;;;;;;x
+confederation_duke_female;League President;;;;;;;;;;;;;x
+confederation_duchy_of;League of;;;;;;;;;;;;;x
+confederation_king;Confederation President;;;;;;;;;;;;;x
+confederation_king_female;Confederation President;;;;;;;;;;;;;x
+confederation_kingdom_of;Confederation of;;;;;;;;;;;;;x
+confederation_emperor;Confederation President;;;;;;;;;;;;;x
+confederation_emperor_female;Confederation President;;;;;;;;;;;;;x
+confederation_empire_of;Grand Confederation of;;;;;;;;;;;;;x
+
+#Bureaucracy
+gov_bureaucracy;Bureaucracy;;;;;;;;;;;;;x
+bureaucratic_government;Bureaucratic;;;;;;;;;;;;;x
+bureaucratic_government_desc;A Bureaucracy is a form of government in which executive functions are delegated to bureaucrats selected through an examination system. Rulers are expected to have many managing skills. Therefore, a competent lower noble is more likely to rise in the ranks of a Bureaucracy. Claimant factions are disabled as it is easier to climb the ladder through lawful means.;;;;;;;;;;;;;x
+
+bureaucratic_elective;Bureaucratic Elective;;;;;;;;;;;;;x
+succ_bureaucratic_elective;Bureaucratic Elective;;;;;;;;;;;;;x
+succ_bureaucratic_elective_desc;Direct Bureaucratic vassals can cast a vote to choose the heir. Candidates are close relatives of the current liege and all direct vassals. Skilled rulers have more sway in electing the successor.;;;;;;;;;;;;;x
+
+tooltip_bureaucratic_vote_strength_liege_emperor;Imperial Authority;;;;;;;;;;;;;x
+tooltip_bureaucratic_vote_strength_liege_king;Royal Authority;;;;;;;;;;;;;x
+tooltip_bureaucratic_vote_strength_liege_duke;Ducal Authority;;;;;;;;;;;;;x
+#tooltip_bureaucratic_vote_strength_liege_count;Count Authority;;;;;;;;;;;;;x
+#tooltip_bureaucratic_vote_strength_liege_baron;Baron Authority;;;;;;;;;;;;;x
+tooltip_bureaucratic_vote_strength_diplomacy;Diplomacy;;;;;;;;;;;;;x
+tooltip_bureaucratic_vote_strength_martial;Martial;;;;;;;;;;;;;x
+tooltip_bureaucratic_vote_strength_stewardship;Stewardship;;;;;;;;;;;;;x
+tooltip_bureaucratic_vote_strength_intrigue;Intrigue;;;;;;;;;;;;;x
+tooltip_bureaucratic_vote_strength_learning;Learning;;;;;;;;;;;;;x
+
+#bureaucracy_emperor;President;;;;;;;;;;;;;x
+#bureaucracy_emperor_female;President;;;;;;;;;;;;;x
+#bureaucracy_empire_of;Union of;;;;;;;;;;;;;x
+#bureaucracy_king;Commissioner;;;;;;;;;;;;;x
+#bureaucracy_king_female;Commissioner;;;;;;;;;;;;;x
+#bureaucracy_kingdom_of;State of;;;;;;;;;;;;;x
+
+EVTDESCgov.005;[From.GetTitledFirstName] has sent an envoy asking you to adopt his Bureaucratic administration. Now your realm can adopt the same government type. Doing so will eventually change your successsion law and your vassals will slowly adapt to the new system. Moreover, switching to Bureaucratic will allow you to vote on and be eligible for your liege's succession. However, refusing this offer will anger [From.GetObjectPronoun].;;;;;;;;;;;;;x
+EVTOPTAgov.005;I will adopt [From.GetPossPronoun] ways;;;;;;;;;;;;;x
+EVTOPTBgov.005;I won't be a slave!;;;;;;;;;;;;;x
+opinion_refused_bureaucracy;Refused Bureaucracy;;;;;;;;;;;;;x
+
+#Pirate
+pirate_government;Pirate;;;;;;;;;;;;;x
+pirate_government_desc;A Pirate Domain is a haven for all manner of thieves, murderers and smugglers. The Domain is ruled by a number of mighty captains each competing for leadership. The loyalty of their men is swayed greatly by the loot they are able to seize and distribute.;;;;;;;;;;;;;x
+gov_pirate;Pirate Domain;;;;;;;;;;;;;x
+become_pirate;Hoist the Black Flag;;;;;;;;;;;;;x
+become_pirate_desc;Become a Pirate Domain 'n start lootin'.;;;;;;;;;;;;;x
+pirate_county_conquest_desc;Claim a county from a landlubber to grow your realm.;;;;;;;;;;;;;x
+pirate_baron;Captain;;;;;;;;;;;;;x
+pirate_baron_female;Captain;;;;;;;;;;;;;x
+pirate_barony_of;Captaincy of;;;;;;;;;;;;;x
+pirate_barony;Captaincy;;;;;;;;;;;;;x
+pirate_count;Commodore;;;;;;;;;;;;;x
+pirate_count_female;Commodore;;;;;;;;;;;;;x
+pirate_county_of;Flotilla of;;;;;;;;;;;;;x
+pirate_county;Flotilla;;;;;;;;;;;;;x
+pirate_duke;Admiral;;;;;;;;;;;;;x
+pirate_duke_female;Admiral;;;;;;;;;;;;;x
+pirate_duchy_of;Admiralty of;;;;;;;;;;;;;x
+pirate_duchy;Admiralty;;;;;;;;;;;;;x
+pirate_king;Sea King;;;;;;;;;;;;;x
+pirate_king_female;Sea Queen;;;;;;;;;;;;;x
+pirate_kingdom_of;Sea Kingdom of;;;;;;;;;;;;;x
+pirate_kingdom;Sea Kingdom;;;;;;;;;;;;;x
+pirate_emperor;Sea Emperor;;;;;;;;;;;;;x
+pirate_emperor_female;Sea Empress;;;;;;;;;;;;;x
+pirate_empire_of;Sea Empire of;;;;;;;;;;;;;x
+pirate_empire;Sea Empire;;;;;;;;;;;;;x
+
+become_feudal;Lower the Black Flag;;;;;;;;;;;;;x
+become_feudal_desc;Go back to your feudal roots.;;;;;;;;;;;;;x
+
+HAS_SHIPYARD;Has shipyard in capital holding;;;;;;;;;;;;;x
+
+pirate_decide_fate;§YDecide Fate§!;;;;;;;;;;;;;x
+pirate_decide_fate_desc;Decide the fate of this character and gain extra §Yprestige§!.;;;;;;;;;;;;;x
+
+EVTgov.010;The Fate of [From.GetFirstName];;;;;;;;;;;;;x
+EVTDESCgov.010;You will now decide the fate of [From.GetFirstName]. Doing so will make you a more fearsome Pirate.;;;;;;;;;;;;;x
+EVTOPTAgov.010;[From.GetSheHeCap] will be less of a man!;;;;;;;;;;;;;x
+EVTOPTBgov.010;[From.GetSheHeCap] will no longer see!;;;;;;;;;;;;;x
+EVTOPTCgov.010;[From.GetSheHeCap] has limbs to spare!;;;;;;;;;;;;;x
+EVTOPTDgov.010;[From.GetSheHeCap] shall be humiliated!;;;;;;;;;;;;;x
+
+opinion_decided_fate;Decided my Fate;;;;;;;;;;;;;x
+CB_NAME_PLUNDERING;Plundering;;;;;;;;;;;;;x
+WAR_NAME_PLUNDERING;Plundering;;;;;;;;;;;;;x
+
+#Romanipen
+romanipen_government;Romanipen;;;;;;;;;;;;;x
+romanipen_government_desc;The Romanipen system of governorship contains elements of both tribal and feudal traditions, while also being mobile than both. Romanipen rulers tend to change their capital rather frequently, moving from county to county. Governing also heavily relies on a ruler's prestige, as a prestigious and strong ruler will easily be able to change the realm's laws.;;;;;;;;;;;;;x
+gov_romanipen;Romanipen;;;;;;;;;;;;;x
+romanipen_baron;Chief;;;;;;;;;;;;;x
+romanipen_baron_female;Chieftess;;;;;;;;;;;;;x
+romanipen_barony_of;Chiefdom of;;;;;;;;;;;;;x
+romanipen_barony;Chiefdom;;;;;;;;;;;;;x
+romanipen_count;Patriarch;;;;;;;;;;;;;x
+romanipen_count_female;Matriarch;;;;;;;;;;;;;x
+romanipen_county_of;Clan of;;;;;;;;;;;;;x
+romanipen_county;Clan;;;;;;;;;;;;;x
+romanipen_duke;Rom Baro;;;;;;;;;;;;;x
+romanipen_duke_female;Romnyi Bari;;;;;;;;;;;;;x
+romanipen_duchy_of;Duchy of;;;;;;;;;;;;;x
+romanipen_duchy;Duchy;;;;;;;;;;;;;x
+romanipen_king;King;;;;;;;;;;;;;x
+romanipen_king_female;Queen;;;;;;;;;;;;;x
+romanipen_kingdom_of;Kingdom of;;;;;;;;;;;;;x
+romanipen_kingdom;Kingdom;;;;;;;;;;;;;x
+romanipen_emperor;Emperor;;;;;;;;;;;;;x
+romanipen_emperor_female;Empress;;;;;;;;;;;;;x
+romanipen_empire_of;Empire of;;;;;;;;;;;;;x
+romanipen_empire;Empire;;;;;;;;;;;;;x
+
+gov_pavee;Traveller Clan;;;;;;;;;;;;;x
+
+
+
+#Chinese Bureaucracy Government (Re-Flavored)
+confucian_bureaucracy;Sinic Bureaucracy;Bureaucratie sinique;Sündige Bürokratie;;Burocracia sinica;;;;;;;;;x
+confucian_bureaucracy_desc;Sinic Bureaucracies rely on a set of strict imperial examinations to select their rulers. Candidates are tested on their knowledge of the Ancient Classics - though merit, previous achievements and recommendations from prominent aristocrats also play a major role in the selection process. Rulers tend to be very skilled stewards.;Les bureaucraties sinique s'appuient sur des examens impériaux stricts pour sélectionner leurs dirigeants. Les candidats sont testés sur leurs connaissances des ancien classique - en dehors du mérite, les accomplissements précédents et les recommandations d'aristocrates en vue jouent aussi un rôle majeur dans le processus de sélection. Les dirigeants ont tendance à être des intendants très compétents.;Sündige Bürokraten verlassen sich auf eine Reihe von strengen kaiserlichen Prüfungen, um ihre Herrscher auszuwählen. Die Kandidaten werden auf ihre Kenntnisse der alter Klassiker getestet, wobei Verdienst, frühere Errungenschaften und Empfehlungen von prominenten Aristokraten auch eine wichtige Rolle bei der Auswahl spielen. Herrscher neigen dazu, sehr erfahrene Kämmerer zu sein.;;Las burocracias sinica recurren a una serie de rigurosos exámenes imperiales para elegir a sus gobernantes. Los candidatos prueban su conocimiento de los clásicos antiguo. Aunque méritos, logros previos y recomendaciones de aristócratas destacados también desempeñan un papel importante en el proceso de selección. Los gobernantes suelen ser administradores hábiles.;;;;;;;;;x
+
+#Swaraj
+gov_swaraj;Sublime Swaraj State;;;;;;;;;;;;;x
+swaraj_government;Sublime Swaraj;;;;;;;;;;;;;x
+swaraj_government_desc;A cosmopolitan government practiced by those of the Satyagrahi faith. It rejects heirarchy and the stratification of society by promoting the idea of promoting the individual by giving them the tools to build their community. A highly decentralized government, they are disallowed from assimilationist and dogmatic policies and whose leaders are bonded by appointment rather than feudal sucession in exchange for increase vassal limits.;;;;;;;;;;;;;x
+
+#Playable Inland Republics###############################################
+playable_republic_government;Republic;;;;;;;;;;;;;x
+playable_republic_government_desc;The Republic, an ancient system of government where the people elect their representatives through a mix of either direct democratic or federal/parliamentary elections. The elected sovereigns of these realms are elected among the great houses of the Republic, can you sway the public to vote for you or will you fade into obscurity?;;;;;;;;;;;;;x
+
+gov_free_republic;Representative Council;;;;;;;;;;;;;x
+gov_parliamentary_republic;Parliamentary Cabinet;;;;;;;;;;;;;x
+gov_imperial_republic;Autocratic Elective;;;;;;;;;;;;;x
+
+democratic_elective;Democratic Elective;;;;;;;;;;;;;x
+succ_democratic_elective;Democratic Elective;;;;;;;;;;;;;x
+succ_democratic_elective_desc;Direct Representatives of your people can cast a vote to choose the sovereign of the realm. Candidates are the prestigous houses (vassals) of the republic which also include members from the ruling house of the Republic of the current sovereign. Skilled rulers have more sway in electing the successor.;;;;;;;;;;;;;x
+
+gov_white_martyr;Bánmartre;;;;;;;;;;;;;x
+white_martyr_government;Bánmartre;;;;;;;;;;;;;x
+white_martyr_government_desc;In the wake of the event, the Papacy retreated underground, leaving much of its flock vulnerable. The monks of the old world became these new shepherds, tending to his own flock a warmhearted caution. This has intwined Insular rulership with monastic devotion, the affairs of church and state becoming one and the same.;;;;;;;;;;;;;x
+
+white_martyr_count;Prior;;;;;;;;;;;;;x
+white_martyr_count_female;Prioress;;;;;;;;;;;;;x
+white_martyr_duke;Abbot;;;;;;;;;;;;;x
+white_martyr_duke_female;Abbess;;;;;;;;;;;;;x
+white_martyr_king;Hegumen;;;;;;;;;;;;;x
+white_martyr_king_female;Ihumenia;;;;;;;;;;;;;x
+white_martyr_emperor;Archimandrite;;;;;;;;;;;;;x
+white_martyr_emperor_female;Archimandrate;;;;;;;;;;;;;x
+
+#Communal
+
+communal_government;Communal;;;;;;;;;;;;;x
+communal_government_desc;Communal Government is based around communal religious principals, with leadership being viewed as being appointed to maintain them in both a religious and political context. Unlike in the standard feudal system, rulers are beholden to certain duties and may be removed from office by the council of the realm if they are not upheld. While not dejure hereditary, crafty rulers can often ensure their succession remains in family.;;;;;;;;;;;;;x
+
+mil_communal_elective;Military Selection;;;;;;;;;;;;;x
+succ_mil_communal_elective;Military Selection;;;;;;;;;;;;;x
+succ_mil_communal_elective_desc;The most qualified person to run the commune should be the most capable commander and strategist. Voted on by their skill and prestige as a military commander, the successor of the realm will be choosen by the council and the ruler.;;;;;;;;;;;;;x
+rel_communal_elective;Learned Appointment;;;;;;;;;;;;;x
+succ_rel_communal_elective;Learned Appointment;;;;;;;;;;;;;x
+succ_rel_communal_elective_desc;The direction of leadership should be guided by knowledge of theory, therefore, the apointment of new captains should also be decided by the religious scholars and theocrats of the realm.;;;;;;;;;;;;;x
+gov_communal_military_apointment;Meritocratic Secretariate;;;;;;;;;;;;;x
+gov_communal_learned_apointment;Appointed Secretariate;;;;;;;;;;;;;x
+gov_communal_eldership;Elder Selected Secretariate;;;;;;;;;;;;;x
+
+#Laws
+local_term_length;Term Length of Office;;;;;;;;;;;;;x
+local_term_length_desc;You can choose to elect the length of Office at the express approval of your citizen and council.;;;;;;;;;;;;;x
+local_term_length_0;Annual;;;;;;;;;;;;;x
+local_term_length_0_desc;Elections for the republic are on an annual bases with the elected sovereign holding the office for the duration before the next election.;;;;;;;;;;;;;x
+local_term_length_1;4 Year;;;;;;;;;;;;;x
+local_term_length_1_desc;Elections for the republic are on an Four Years bases with the elected sovereign holding the office for the duration before the next election.;;;;;;;;;;;;;x
+local_term_length_2;6 Year;;;;;;;;;;;;;x
+local_term_length_2_desc;Elections for the republic are on an Six Years bases with the elected sovereign holding the office for the duration before the next election.;;;;;;;;;;;;;x
+local_term_length_3;10 Year;;;;;;;;;;;;;x
+local_term_length_3_desc;Elections for the republic every decade with the elected sovereign holding the office for the duration before the next election.;;;;;;;;;;;;;x
+
+#Decisions
+establish_republic;Establish a Republic;;;;;;;;;;;;;x
+establish_republic_desc;By Establishing a Republic, you forfeit the hereditary rule of the Kings of Feudal Realms.;;;;;;;;;;;;;x
+gain_family_estate;Establish your House;;;;;;;;;;;;;x
+gain_family_estate_desc;As a Representative of the People you must make a name for yourself and your family among the people.;;;;;;;;;;;;;x
+hold_elections;Hold an Election;;;;;;;;;;;;;x
+hold_elections_desc;You may hold the election early if you wish by calling all the citizens of the realm to vote.;;;;;;;;;;;;;x
+
+#Modifiers
+constitutional_crisis;Constitutional Crisis;;;;;;;;;;;;;x
+constitutional_crisis_desc;The Governing Body of the Republic is facing a Great Crisis of Faith...;;;;;;;;;;;;;x
+
+#Events
+EVTOPTACCEPT;I Accept!;;;;;;;;;;;;;x
+
+EVTDESCDEMO1000;As a Representative of the People you have for consistency elected to reform all your titles to the same elective system as the primary title of the republic.;;;;;;;;;;;;;x
+EVTOPTACCEPTDEMO1;For the Republic!;;;;;;;;;;;;;x
+
+EVTDESCLAWS4000;The Annual Elections are being held and you and your opponents are thrust into the heat of debate as the people watch to elect their future representatives. You wait with eager breath as you wait for the election results.;;;;;;;;;;;;;x
+EVTOPTCLAWS4000;Can't change the results now...;;;;;;;;;;;;;x
+
+EVTDESCLAWS4100;The 4-year Elections are being held and you and your opponents are thrust into the heat of debate as the people watch to elect their future representatives. You wait with eager breath as you wait for the election results.;;;;;;;;;;;;;x
+
+EVTDESCLAWS4200;The 6-year Elections are being held and you and your opponents are thrust into the heat of debate as the people watch to elect their future representatives. You wait with eager breath as you wait for the election results.;;;;;;;;;;;;;x
+
+EVTDESCLAWS4300;The 10-year Elections are being held and you and your opponents are thrust into the heat of debate as the people watch to elect their future representatives. You wait with eager breath as you wait for the election results.;;;;;;;;;;;;;x
+
+EVTDESCLAWS5000;On the behest of your council you are to hold an election, a time honored tradition of the Republic since antiquity. You stand before the people to announce yourself as a candidate with opponents appear within the crowds in jovial cheer.;;;;;;;;;;;;;x
+EVTOPTCONFIRM;I place my service for the Republic!;;;;;;;;;;;;;x
+EVTTOOLTIPLAWS5100;Off to the Representative Halls, I go!;;;;;;;;;;;;;x
+EVTTOOLTIPLAWS5200;Off to the Public Forums, I go!;;;;;;;;;;;;;x
+
+#Federal
+EVTDESCLAWS5100;In a Federal Republic, you are a representative of your constituencies whom have elected you to stand before the Halls of Representatives who judge and your merits as an orator and as a steward to the republic.;;;;;;;;;;;;;x
+
+EVTDESCLAWS5105;In a Federal Republic, you as a constituent can elect from a pool of candidates who would represent you before the Halls of Representatives who will judge your candidates on their merits as an orator and as a steward to the republic.;;;;;;;;;;;;;x
+EVTOPTALAWS5105;My Ballot is for the Incumbent!;;;;;;;;;;;;;x
+EVTOPTBLAWS5105;My Ballot is for the Challenger!;;;;;;;;;;;;;x
+
+EVTDESCLAWS5110;My challenger has defeated me in this election and now stands poised to rule the republic in your stead... perhaps you can get them next time?;;;;;;;;;;;;;x
+EVTDESCLAWS5115;You have won a great victory today and the titles you recieve based on ranks are just as full of history as a the crowns of great feudal kings...;;;;;;;;;;;;;x
+EVTDESCLAWS5120;I have bested my opponent in the art of debate and now stands poised to rule the republic... may your next opponent not best your clever wit!;;;;;;;;;;;;;x
+EVTDESCLAWS5125;For shame you lost the Election you bow your head in shame as you return to your stately manor...;;;;;;;;;;;;;x
+
+#Popular
+EVTDESCLAWS5200;In a Democratic System, you are a representative of the people whom have elected you due to your merits and or wits as a representative of them. With this honor you must be a great steward of the people.;;;;;;;;;;;;;x
+
+EVTDESCLAWS5205;In a Democratic System, you directly vote for a representative of the people whom due to merits and or wits as a representative of you and the people. With this honor they must be a great steward of the people.;;;;;;;;;;;;;x
+EVTOPTALAWS5205;My Ballot is for the Incumbent!;;;;;;;;;;;;;x
+EVTOPTBLAWS5205;My Ballot is for the Challenger!;;;;;;;;;;;;;x
+
+EVTDESCLAWS5210;My challenger has defeated me in this election and now stands poised to rule as their representative in your stead... perhaps you can get them next time?;;;;;;;;;;;;;x
+EVTDESCLAWS5215;You have won a great victory today and the titles you recieve based on ranks are just as full of history as a the crowns of great feudal kings...;;;;;;;;;;;;;x
+EVTDESCLAWS5220;I have bested my opponent in the art of debate and now stands poised as their representative... may your next opponent not best your clever wit!;;;;;;;;;;;;;x
+EVTDESCLAWS5225;For shame you lost the Election you bow your head in shame as you return to your stately manor...;;;;;;;;;;;;;x
+
+#Ethiopian Government Localization Stuff
+
+ethiopian_imperial_government;The Northern Governate;Impérialisme chinois;Chinesischer Imperialismus;;Imperial chino;;;;;;;;;x
+ethiopian_imperial_government_desc;The Northern Governate, while superficially similar to Feudalism to those of Europe,revolves around a complex relationships between local lords and generals of the outlying provinces of [offmap_ethiopia.GetFullName] who answer to the head governor of the imperial boundaries, The Governor of the Northern Provinces, the imperial representative of the unconquerable Lion of Judah. In line with the Imperial Perogative of the Empire, the governor stresses the importance of peaceful dialog and unification for all peoples of the Empire regardless of Creed and Culture.;Le gouvernorat du Nord, bien que superficiellement similaire au féodalisme à ceux de l’Europe, tourne autour d’une relation complexe entre les seigneurs locaux et les généraux des provinces périphériques de l’Éthiopie relèvent du [offmap_ethiopia.GetFullName],gouverneur en chef des frontières impériales, le gouverneur des provinces du Nord, le représentant impérial de l’invincible Lion de Juda.Conformément à la pérogénation impériale de l’Empire, le gouverneur souligne l’importance du dialogue pacifique et de l’unification pour tous les peuples de l’Empire, indépendamment de la croyance et de la culture.;Das nördliche Gouvernement ähnelt zwar oberflächlich dem Feudalismus denen Europas, dreht sich aber um komplexe Beziehungen zwischen lokalen Herren und Generälen der abgelegenen Provinzen [offmap_ethiopia.GetFullName], die dem Hauptgouverneur der kaiserlichen Grenzen, dem Gouverneur der nördlichen Provinzen, dem kaiserlichen Vertreter des unbesiegbaren Löwen von Juda, unterstehen. In Übereinstimmung mit dem imperialen Perogativ des Reiches betont der Gouverneur die Bedeutung des friedlichen Dialogs und der Vereinigung für alle Völker des Reiches, unabhängig von Glaubensbekenntnis und Kultur.;;La Gobernación del Norte, aunque superficialmente similar al feudalismo a las de Europa, gira en torno a una compleja relación entre los señores locales y los generales de las provincias periféricas de [offmap_ethiopia.GetFullName] que responden al gobernador principal de las fronteras imperiales, el Gobernador de las Provincias del Norte, el representante imperial del león inconquistable de Judá. En línea con la Perogativa Imperial del Imperio, el gobernador enfatiza la importancia del diálogo pacífico y la unificación para todos los pueblos del Imperio, independientemente del Credo y la Cultura.;;;;;;;;;x
+
+ethiopian_bureaucracy;Ethiopian Empire;;;;;;;;;;;;;x
+ethiopian_bureaucracy_desc;The Imperial Ethiopia State, represents a multi-cultural and multi-religous union of rulers across Ethiopia whom recognize the central primacy of the King of Kings as their sole legal sovereign and represenative. Based on the ancient traditions of ancient Ethiopian Empires that came before it, The Great King of Kings rules the vibrant state of Ethiopia with the fearsome will of the Lion of Judah, thier standing reliant of maintaining an increasingly large array of governors, princes, and bureaucrats loyal to the central court.;;;;;;;;;;;;;x
+
+#Noble Republic/Hetmanate
+hetmanate_baron;Castellan;;;;;;;;;;;;;x
+hetmanate_baron_female;Castellan;;;;;;;;;;;;;x
+hetmanate_barony_of;Castellany of;;;;;;;;;;;;;x
+hetmanate_barony;Castellany;;;;;;;;;;;;;x
+hetmanate_count;Voivode;;;;;;;;;;;;;x
+hetmanate_count_female;Voivodess;;;;;;;;;;;;;x
+hetmanate_county_of;Voivodeship of;;;;;;;;;;;;;x
+hetmanate_county;Voivodeship;;;;;;;;;;;;;x
+hetmanate_duke;Prince;;;;;;;;;;;;;x
+hetmanate_duke_female;Princess;;;;;;;;;;;;;x
+hetmanate_duchy_of;Principality of;;;;;;;;;;;;;x
+hetmanate_duchy;Principality;;;;;;;;;;;;;x
+hetmanate_king;King;;;;;;;;;;;;;x
+hetmanate_king_female;Queen;;;;;;;;;;;;;x
+hetmanate_kingdom_of;Kingdom of;;;;;;;;;;;;;x
+hetmanate_kingdom;Kingdom;;;;;;;;;;;;;x
+hetmanate_emperor;Emperor;;;;;;;;;;;;;x
+hetmanate_emperor_female;Empress;;;;;;;;;;;;;x
+hetmanate_empire_of;Empire of;;;;;;;;;;;;;x
+hetmanate_empire;Empire;;;;;;;;;;;;;x
+
+#MISC
+gov_reindeer_herder;Reindeer Herders;;;;;;;;;;;;;x

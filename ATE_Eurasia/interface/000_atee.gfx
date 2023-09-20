@@ -1,0 +1,1159 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_trait_tyrant"
+		texturefile = "gfx/traits/tyrant.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_musician"
+		texturefile = "gfx/traits/musician.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name= "GFX_trait_scribe"
+		texturefile = "gfx/traits/scribe.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name="GFX_trait_painter"
+		texturefile = "gfx/traits/painter.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_distractible"
+		texturefile = "gfx/traits/distractible.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_bisexual"
+		texturefile = "gfx/traits/bisexual.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_legendary"
+		texturefile = "gfx/traits/legendary.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_fashionable"
+		texturefile = "gfx/traits/fashionable.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_tall"
+		texturefile = "gfx/traits/tall.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_authoritative"
+		texturefile = "gfx/traits/authoritative.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_rude"
+		texturefile = "gfx/traits/rude.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_pious"
+		texturefile = "gfx/traits/pious.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_ruthless"
+		texturefile = "gfx/traits/ruthless.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_honorable"
+		texturefile = "gfx/traits/honorable.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_familyperson"
+		texturefile = "gfx/traits/familyperson.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_selfish"
+		texturefile = "gfx/traits/selfish.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_blinded_age"
+		texturefile = "gfx/traits/blinded_age.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_crippled"
+		texturefile = "gfx/traits/crippled.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+		spriteType = {
+		name = "GFX_trait_patron_marianne"
+		texturefile = "gfx/traits/patron_marianne.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_patron_the_emperor"
+		texturefile = "gfx/traits/patron_the_emperor.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_patron_the_general"
+		texturefile = "gfx/traits/patron_the_general.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_patron_la_sociale"
+		texturefile = "gfx/traits/patron_la_sociale.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_patron_la_montagne"
+		texturefile = "gfx/traits/patron_la_montagne.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_low_anglican"
+		texturefile = "gfx/traits/low_anglican.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+		spriteType = {
+		name = "GFX_trait_methodist"
+		texturefile = "gfx/traits/methodist.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_quaker"
+		texturefile = "gfx/traits/quaker.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_baptist"
+		texturefile = "gfx/traits/baptist.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_branch_idealism"
+		texturefile = "gfx/traits/branch_idealism.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_branch_realism"
+		texturefile = "gfx/traits/branch_realism.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_branch_existentialism"
+		texturefile = "gfx/traits/branch_existentialism.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_branch_romanticism"
+		texturefile = "gfx/traits/branch_romanticism.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_branch_nuclearism"
+		texturefile = "gfx/traits/branch_nuclearism.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_branch_medicalism"
+		texturefile = "gfx/traits/branch_medicalism.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_branch_industrialism"
+		texturefile = "gfx/traits/branch_industrialism.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_sultan_han"
+		texturefile = "gfx/traits/sultan_han.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_fount_of_honour"
+		texturefile = "gfx/traits/fount_of_honour.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_neuhumanist_associate"
+		texturefile = "gfx/traits/neuhumanist_associate.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_neuhumanist_bachelor"
+		texturefile = "gfx/traits/neuhumanist_bachelor.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_neuhumanist_master"
+		texturefile = "gfx/traits/neuhumanist_master.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_neuhumanist_doctor"
+		texturefile = "gfx/traits/neuhumanist_doctor.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_haredi_breslov"
+		texturefile = "gfx/traits/haredi_breslov.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_haredi_chassid"
+		texturefile = "gfx/traits/haredi_chassid.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_haredi_yashvai"
+		texturefile = "gfx/traits/haredi_yashvai.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_alevi"
+		texturefile = "gfx/traits/alevi.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_najafi"
+		texturefile = "gfx/traits/najafi.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_qomi"
+		texturefile = "gfx/traits/qomi.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_waqil"
+		texturefile = "gfx/traits/waqil.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_apostle_cult"
+		texturefile = "gfx/traits/apostle_cult.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_hiddenfolk_cult"
+		texturefile = "gfx/traits/hiddenfolk_cult.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_latin_rite"
+		texturefile = "gfx/traits/latin_rite.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_byzantine_rite"
+		texturefile = "gfx/traits/byzantine_rite.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_alexandrian_rite"
+		texturefile = "gfx/traits/alexandrian_rite.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_maronite_rite"
+		texturefile = "gfx/traits/maronite_rite.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_armenian_rite"
+		texturefile = "gfx/traits/armenian_rite.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_worthy_knight"
+		texturefile = "gfx/traits/worthy_knight.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_blessed_hands"
+		texturefile = "gfx/traits/blessed_hands.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_sang_capetien"
+		texturefile = "gfx/traits/sang_capetien.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_avrach"
+		texturefile = "gfx/traits/avrach.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_hakham"
+		texturefile = "gfx/traits/hakham.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_maskil"
+		texturefile = "gfx/traits/maskil.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_qawi"
+		texturefile = "gfx/traits/qawi.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_thaif"
+		texturefile = "gfx/traits/thaif.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_wahbi"
+		texturefile = "gfx/traits/wahbi.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_nukkari"
+		texturefile = "gfx/traits/nukkari.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_azzabas"
+		texturefile = "gfx/traits/azzabas.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_auspicious_birth"
+		texturefile = "gfx/traits/auspicious_birth.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_hanafi"
+		texturefile = "gfx/traits/hanafi.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_maliki"
+		texturefile = "gfx/traits/maliki.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_shafii"
+		texturefile = "gfx/traits/shafii.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_hanafi_sunnah"
+		texturefile = "gfx/traits/hanafi.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_maliki_sunnah"
+		texturefile = "gfx/traits/maliki.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_shafii_sunnah"
+		texturefile = "gfx/traits/shafii.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_akhbari"
+		texturefile = "gfx/traits/akhbari.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_lingayat"
+		texturefile = "gfx/traits/lingayat.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_natha"
+		texturefile = "gfx/traits/natha.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_siddhanta"
+		texturefile = "gfx/traits/siddhanta.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_shudra"
+		texturefile = "gfx/traits/shudra.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_dalit"
+		texturefile = "gfx/traits/dalit.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}	
+	spriteType = {
+		name = "GFX_trait_vegetarian"
+		texturefile = "gfx/traits/vegetarian.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	#Sufi School Traits
+	spriteType = {
+		name = "GFX_trait_bektashi"
+		texturefile = "gfx/traits/sufi_bektashi.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_galibi"
+		texturefile = "gfx/traits/sufi_galibi.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_khalveti"
+		texturefile = "gfx/traits/sufi_khalveti.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_mevlevi"
+		texturefile = "gfx/traits/sufi_mevlevi.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_naqshbandi"
+		texturefile = "gfx/traits/sufi_naqshbandi.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_nimatullahi"
+		texturefile = "gfx/traits/sufi_nimatullahi.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_qadiri"
+		texturefile = "gfx/traits/sufi_qadiri.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_senussi"
+		texturefile = "gfx/traits/sufi_senussi.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_shadhili"
+		texturefile = "gfx/traits/sufi_shadhili.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_tijani"
+		texturefile = "gfx/traits/sufi_tijani.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_ismailagha"
+		texturefile = "gfx/traits/ismailagha.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_mujaddidi"
+		texturefile = "gfx/traits/mujaddidi.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_iskenderpasha"
+		texturefile = "gfx/traits/iskenderpasha.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_school_mark"
+		texturefile = "gfx/traits/school_mark.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_school_thaddeus"
+		texturefile = "gfx/traits/school_thaddeus.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_school_peter"
+		texturefile = "gfx/traits/school_peter.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_school_mathew"
+		texturefile = "gfx/traits/school_mathew.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}	
+	spriteType = {
+		name = "GFX_trait_canon"
+		texturefile = "gfx/traits/canon.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_canoness"
+		texturefile = "gfx/traits/canoness.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_regularis"
+		texturefile = "gfx/traits/regularis.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_regulara"
+		texturefile = "gfx/traits/regulara.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_desert_father"
+		texturefile = "gfx/traits/desert_father.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_desert_mother"
+		texturefile = "gfx/traits/desert_mother.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_placeholder_char_trait"
+		texturefile = "gfx/traits/legendary.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
+	#Sympathy Traits
+	
+	spriteType = {
+		name = "GFX_trait_sympathy_vernacular"
+		texturefile = "gfx/traits/sympathy_vernacular.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_sympathy_buddhist"
+		texturefile = "gfx/traits/sympathy_buddhist.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_sympathy_eastern"
+		texturefile = "gfx/traits/sympathy_eastern.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_sympathy_old_world_cults"
+		texturefile = "gfx/traits/sympathy_old_world_cults.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_sympathy_scholastic"
+		texturefile = "gfx/traits/sympathy_scholastic.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_sympathy_islamosyncretic"
+		texturefile = "gfx/traits/sympathy_islamosyncretic.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_sympathy_universalist"
+		texturefile = "gfx/traits/sympathy_universalist.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_homosexually_married_mm"
+		texturefile = "gfx/traits/homosexually_married_mm.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_homosexually_married_ff"
+		texturefile = "gfx/traits/homosexually_married_ff.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_adopted_child"
+		texturefile = "gfx/traits/adopted_child.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_school_calvin"
+		texturefile = "gfx/traits/school_calvin.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_school_zwingli"
+		texturefile = "gfx/traits/school_zwingli.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_school_fischli"
+		texturefile = "gfx/traits/school_fischli.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_school_knox"
+		texturefile = "gfx/traits/school_knox.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_brass_chorus"
+		texturefile = "gfx/traits/brass_chorus.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_altan_urag"
+		texturefile = "gfx/traits/altan_urag.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_defensor_fidei"
+		texturefile = "gfx/traits/defensor_fidei.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_papist"
+		texturefile = "gfx/traits/papist.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_populares"
+		texturefile = "gfx/traits/populares.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_lipka"
+		texturefile = "gfx/traits/lipka.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_buccaneer"
+		texturefile = "gfx/traits/buccaneer.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_freebooter"
+		texturefile = "gfx/traits/freebooter.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_corsair"
+		texturefile = "gfx/traits/corsair.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_reclusive"
+		texturefile = "gfx/traits/reclusive.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
+	#Ambitions
+	spriteType = {
+		name = "GFX_obj_naqshbandis_cultivate_character"
+		texturefile = "gfx/ambitions/obj_naqshbandis_cultivate_character.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
+	#Decisions
+	spriteType = {
+		name = "GFX_restore_ottoman_empire"
+		texturefile = "gfx\\interface\\decision_restore_ottoman_empire.dds"
+	}
+	spriteType = {
+		name = "GFX_reform_spanish_empire"
+		texturefile = "gfx\\interface\\decision_reform_spanish_empire.dds"
+	}
+	spriteType = {
+		name = "GFX_form_russia"
+		texturefile = "gfx\\interface\\decision_form_russia.dds"
+	}
+	spriteType = {
+		name = "GFX_form_soyuz"
+		texturefile = "gfx\\interface\\decision_form_soyuz.dds"
+	}
+	spriteType = {
+		name = "GFX_nh_salon_visit"
+		texturefile = "gfx\\interface\\nh_salon_visit.dds"
+	}
+	spriteType = {
+		name = "GFX_switch_haredi"
+		texturefile = "gfx\\interface\\switch_haredi.dds"
+	}
+	spriteType = {
+		name = "GFX_change_neuhumanist_branch"
+		texturefile = "gfx\\interface\\switch_neuhumanist.dds"
+	}
+	spriteType = {
+		name = "GFX_change_jacobin_branch"
+		texturefile = "gfx\\interface\\switch_jacobin.dds"
+	}
+	spriteType = {
+		name = "GFX_change_chronicler_branch"
+		texturefile = "gfx\\interface\\switch_chronicler.dds"
+	}
+	spriteType = {
+		name = "GFX_change_folketro_branch"
+		texturefile = "gfx\\interface\\switch_folketro.dds"
+	}
+	spriteType = {
+		name = "GFX_celebrate_ashura"
+		texturefile = "gfx\\interface\\decision_icon_celebrate_ashura.dds"
+	}
+	spriteType = {
+		name = "GFX_become_alevi"
+		texturefile = "gfx\\interface\\decision_icon_become_alevi.dds"
+	}
+	spriteType = {
+		name = "GFX_restore_ivri_rabbi"
+		texturefile = "gfx\\interface\\decision_icon_restore_chief_rabbi.dds"
+	}
+	spriteType = {
+		name = "GFX_celebrate_yule"
+		texturefile = "gfx\\interface\\decision_icon_yuletide.dds"
+	}
+	spriteType = {
+		name = "GFX_hide_bible_decisions"
+		texturefile = "gfx\\interface\\decision_icon_tell_a_story_decision.dds"
+	}
+	spriteType = {
+		name = "GFX_show_bible_decisions"
+		texturefile = "gfx\\interface\\decision_icon_tell_a_story_decision.dds"
+	}
+	spriteType = {
+		name = "GFX_unify_germany"
+		texturefile = "gfx\\interface\\unified_germany.dds"
+	}
+	spriteType = {
+		name = "GFX_unify_north_germany"
+		texturefile = "gfx\\interface\\unified_north_germany.dds"
+	}
+	spriteType = {
+		name = "GFX_unify_south_germany"
+		texturefile = "gfx\\interface\\unified_south_germany.dds"
+	}
+	spriteType = {
+		name = "GFX_celebrate_tish"
+		texturefile = "gfx\\interface\\celebrate_tish.dds"
+	}
+	spriteType = {
+		name = "GFX_organize_the_nordic_priesthood"
+		texturefile = "gfx\\interface\\organize_the_nordic_priesthood.dds"
+	}
+	spriteType = {
+		name = "GFX_become_allfader"
+		texturefile = "gfx\\interface\\become_allfader.dds"
+	}
+	spriteType = {
+		name = "GFX_form_empire_pale"
+		texturefile = "gfx\\interface\\form_empire_pale.dds"
+	}
+	spriteType = {
+		name = "GFX_reform_sunni_islam"
+		texturefile = "gfx\\interface\\reform_sunni_islam.dds"
+	}
+	spriteType = {
+		name = "GFX_unify_kurdistan"
+		texturefile = "gfx\\interface\\unify_kurdistan.dds"
+	}
+	spriteType = {
+		name = "GFX_form_sicilia"
+		texturefile = "gfx\\interface\\form_sicilia.dds"
+	}
+	spriteType = {
+		name = "GFX_unify_the_lands_of_the_holy_crown"
+		texturefile = "gfx\\interface\\unify_lothc.dds"
+	}
+	spriteType = {
+		name = "GFX_select_patron_saint_coronite"
+		texturefile = "gfx\\interface\\decision_icon_convert_to_local_religion.dds"
+	}
+	spriteType = {
+		name = "GFX_celebrate_bastille_day"
+		texturefile = "gfx\\interface\\decision_celebrate_bastille_day.dds"
+	}
+	#Republic Stuff
+	spriteType = {
+		name = "GFX_establish_republic"
+		texturefile = "gfx\\interface\\decision_icon_hold_grand_debate.dds"
+	}
+	spriteType = {
+		name = "GFX_gain_family_estate"
+		texturefile = "gfx\\interface\\decision_icon_feast.dds"
+	}
+	spriteType = {
+		name = "GFX_hold_elections"
+		texturefile = "gfx\\interface\\decision_icon_issue_declaration_of_repentance.dds"
+	}
+	spriteType = {
+		name = "GFX_shvil_israel"
+		texturefile = "gfx\\interface\\shvil_israel.dds"
+	}
+	spriteType = {
+		name = "GFX_attend_yeshiva"
+		texturefile = "gfx\\interface\\attend_yeshiva.dds"
+	}
+	spriteType = {
+		name = "GFX_establish_uk"
+		texturefile = "gfx\\interface\\establish_uk.dds"
+	}
+	spriteType = {
+		name = "GFX_commission_kopjafa"
+		texturefile = "gfx\\interface\\commission_kopjafa.dds"
+	}
+	spriteType = {
+		name = "GFX_delve_into_tasawwuf"
+		texturefile = "gfx\\interface\\delve_into_tasawwuf.dds"
+	}
+	spriteType = {
+		name = "GFX_jedinstvo_pilgrimage"
+		texturefile = "gfx\\interface\\jedinstvo_pilgrimage.dds"
+	}
+	spriteType = {
+		name = "GFX_commission_tawiz"
+		texturefile = "gfx\\interface\\commission_tawiz.dds"
+	}
+	spriteType = {
+		name = "GFX_reestablish_carthage"
+		texturefile = "gfx\\interface\\decision_reestablish_carthage.dds"
+	}
+	spriteType = {
+		name = "GFX_reestablish_phoenicia"
+		texturefile = "gfx\\interface\\decision_reestablish_phoenicia.dds"
+	}
+	spriteType = {
+		name = "GFX_holding_synod"
+		texturefile = "gfx\\interface\\hold_synod.dds"
+	}
+	
+	#ATEO Stuff
+	spriteType = {
+		name = "GFX_reciting_sutras"
+		texturefile = "gfx\\interface\\decision_reciting_sutras.dds"
+	}
+	spriteType = {
+		name = "GFX_terma_expedition"
+		texturefile = "gfx\\interface\\decision_reciting_sutras.dds"
+	}
+	spriteType = {
+		name = "GFX_hold_vesak"
+		texturefile = "gfx\\interface\\hold_vesak.dds"
+	}
+	spriteType = {
+		name = "GFX_hold_mahashivaratri"
+		texturefile = "gfx\\interface\\hold_mahashivaratri.dds"
+	}
+	spriteType = {
+		name = "GFX_select_jedinstvo_deity"
+		texturefile = "gfx\\interface\\select_jedinstvo_deity.dds"
+	}
+	spriteType = {
+		name = "GFX_join_a_brass_chorus"
+		texturefile = "gfx\\interface\\join_a_brass_chorus.dds"
+	}
+	spriteType = {
+		name = "GFX_join_jamia"
+		texturefile = "gfx\\interface\\join_jamia.dds"
+	}
+	spriteType = {
+		name = "GFX_find_dervish"
+		texturefile = "gfx\\interface\\find_dervish.dds"
+	}
+	spriteType = {
+		name = "GFX_attempt_become_christian_ascetic"
+		texturefile = "gfx\\interface\\decision_icon_attempt_become_christian_ascetic.dds"
+	}
+	spriteType = {
+		name = "GFX_become_ordained"
+		texturefile = "gfx\\interface\\decision_icon_become_ordained.dds"
+	}
+	spriteType = {
+		name = "GFX_old_world_shades"
+		texturefile = "gfx\\interface\\artifacts\\inventory\\old_world_shades.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_favorite_shades"
+		texturefile = "gfx\\interface\\artifacts\\inventory\\favorite_shades.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_favorite_shades_small"
+		texturefile = "gfx\\interface\\artifacts\\inventory\\favorite_shades_small.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_old_world_shades_small"
+		texturefile = "gfx\\interface\\artifacts\\inventory\\old_world_shades_small.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_society_main_background_warrior_lodge_glorian"
+		texturefile = "gfx\\interface\\societies\\society_bg_knights_of_the_round_table.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_small_warrior_lodge_glorian"
+		texturefile = "gfx\\interface\\societies\\symbol_small_warrior_lodge_glorian.dds"
+		noOfFrames = 2
+	}
+		spriteType = {
+		name = "GFX_integrate_borussia"
+		texturefile = "gfx\\interface\\decision_icon_integrate_borussia.dds"
+	}
+			spriteType = {
+		name = "GFX_integrate_belarus"
+		texturefile = "gfx\\interface\\decision_icon_integrate_belarus.dds"
+	}
+}

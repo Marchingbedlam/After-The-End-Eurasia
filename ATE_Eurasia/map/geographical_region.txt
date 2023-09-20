@@ -1,0 +1,483 @@
+# Geographical regions
+# Regions can be declared with one or more of the following fields:
+#	duchies = { }, takes duchy title names declared in landed_titles.txt
+#	counties = { }, takes county title names declared in landed_titles.txt
+#	provinces = { }, takes province id numbers declared in /history/provinces
+#	regions = { }, a region can also include other regions, however the subregions needs to be declared before the parent region. 
+#		E.g. If the region world_europe contains the region world_europe_west then world_europe_west needs to be declared as a region before (i.e. higher up in this file) world_europe.
+
+###########################################################################
+# Custom Regions
+###########################################################################
+
+custom_scotland = {
+	duchies = { 
+		d_lothian d_strathclyde d_tayside d_the_highlands d_hebrides d_northern_isles
+	}
+}
+
+custom_morocco = {
+	duchies = { 
+		d_ar_ribat d_ad_dar_al_baidaa d_ash_sharq d_bani_mellal d_dara_tafilalt d_fas_maknas d_marrakish d_reef d_sus_masa
+	}
+}
+
+custom_sahara = {
+	duchies = { 
+		d_fezzan d_adrar d_bechar d_as_sahra_al_gharbiah d_ghardaia d_illizi d_nouakchott d_ahaggar d_tibesti
+	}
+}
+
+custom_algeria = {
+	duchies = { 
+		d_al_jazair d_annaba d_awras d_mustaganam d_qusantinah d_saida d_tamurt_n_yiqbayliyen d_tayarat d_wahran
+	}
+}
+
+custom_tunisia = {
+	duchies = { 
+		d_tunis d_al_sahil d_al_wasat
+	}
+}
+
+custom_libya = {
+	duchies = { 
+		d_tripolitania d_misratah d_cyrenaica
+	}
+}
+
+custom_old_egypt = {
+	duchies = { 
+		d_al_qahirah d_kufra d_al_bahr_al_ahmar d_al_wadi_al_jadid d_as_suways d_delta_an_nil d_matruh d_shamal_as_said d_sinai d_asyut d_al_uqsur d_buhayra_nasr
+	}
+	counties = { 
+		c_marsa_alam c_halayib
+	}
+}
+
+custom_sudan = {
+	duchies = { 
+		d_dongola d_nile d_black_nile d_al_mogran d_white_nile d_blue_nile d_kordofan
+	}
+	counties = { 
+		c_port_sudan c_tokar
+	}
+}
+
+custom_baikal = {
+	duchies = { 
+		d_bratsk d_irkutsk d_ulan_ude d_zabaykalsky d_severo_baykalsky
+	}
+}
+
+custom_tarim_basin = {
+	duchies = { 
+		d_kashgar d_aksu d_khotan d_bayingholin
+	}
+}
+
+custom_altay_sayan = {
+	duchies = { 
+		d_tuva d_gorny_altay d_lugovoy_altay d_oskemen d_altay d_turpan d_kemerovo d_krasnoyarsk d_khakassia
+	}
+}
+
+custom_tian_shan = {
+	duchies = { 
+		d_ili d_urumqi d_naryn d_bishkek d_fergana d_tashkent
+	}
+}
+
+custom_urals = {
+	duchies = { 
+		d_perm d_serov
+	}
+}
+
+custom_tataria = {
+	duchies = {
+		d_ufa d_magnitogorsk d_chelyabinsk d_sverdlovsk d_kazan d_neftyanka d_mari_el d_chuvashia d_saratov d_samara d_orenburg
+	}
+}
+
+custom_siberian_steppe = {
+	duchies = { 
+		d_omsk d_kurgan d_tyumen d_petropavl d_novosibirsk 
+	}
+}
+
+custom_siberian_taiga = {
+	duchies = { 
+		d_khanty_mansi d_tomsk d_oktyabrsky d_priuralsky d_purovsky d_yeniseysky d_tobolsk d_norilsk d_syktyvkar d_mezen d_dvina d_barents d_nenets d_pechora d_kirov 
+	}
+}
+
+custom_turan_desert = {
+	duchies = { 
+		d_mangystau d_ahal d_karakalpakstan d_lebap d_bukhara d_samarkand d_balkan
+	}
+}
+
+custom_pamir = {
+	duchies = { 
+		d_pamir d_dushanbe d_ladakh
+	}
+}
+
+custom_kazakh_steppe = {
+	duchies = { 
+		d_kostanay d_akmola d_pavlodar d_karagandy d_zhezqazghan d_shygys_saryarqa d_almaty d_jambyl d_kyzylorda d_aktyubinsk d_aral
+	}
+}
+
+custom_caucasus = {
+	duchies = { 
+		d_kavkaz d_abkhazia d_kartli d_kakheti d_gyumri d_chechnya d_baku d_aran d_ganja d_shirvan d_imereti
+	}
+}
+
+custom_pontic_caspian_steppe = {
+	duchies = { 
+		d_atyrau d_uralsk d_astrakhan d_kalmykia d_stavropol d_dagestan d_volgograd d_krasnodar d_chernomorye d_adygea d_rostov d_donbas d_don 
+	}
+}
+custom_great_britain = {
+	duchies = {
+		d_london d_sussex d_thames_valley d_east_anglia d_cornwall d_wessex d_west_midlands d_east_midlands d_yorkshire d_manchester d_liverpool d_northumberland d_gwynedd d_dyfed d_gwent d_lothian d_strathclyde d_tayside d_the_highlands d_hebrides d_northern_isles d_the_isles
+	}
+}
+custom_ireland = {
+	duchies = {
+		d_munster d_leinster d_connacht d_ulster
+	}
+}
+custom_benelux = {
+	duchies = {
+		d_flanders d_wallonia d_luxembourg d_north_brabant d_holland d_gelre d_friesland
+	}
+}
+custom_old_germany = {
+	duchies = {
+		d_palatinate d_westfalen d_oldenburg d_hannover d_bremen d_hansa d_schleswig_holstein d_mecklenburg_vorpommern d_berlin d_brandenburg d_saxony d_saxony_anhalt d_thuringia d_franconia d_baden d_wurttemberg d_upper_palatinate d_lower_bavaria d_bavaria d_swabia d_rhine_ruhr d_kassel d_hesse
+	}
+}
+custom_old_france = {
+	duchies = { d_picardy d_nord d_champagne d_lorraine d_alsace d_franche_comte d_burgundy d_ile_de_france d_normandy d_orleanais d_loire d_breizh_uhel d_breizh_izel d_berry d_poitou d_limousin d_auvergne d_lyonnais d_savoy d_dauphine d_provence d_cevennes d_haut_languedoc d_bas_languedoc d_gascony d_aquitaine d_corsica } 
+	
+	counties = { c_labourd }
+}
+custom_old_spain = {
+	duchies = { 
+		d_alto_aragon d_barcelona d_bajo_aragon d_valencia d_balears d_castile d_leon d_asturias d_galicia d_madrid d_la_mancha d_granada d_seville d_extramadura d_las_palmas d_santa_cruz_de_tenerife 
+	} 
+	
+	counties = { 
+		c_navarre c_biscay c_alava c_la_rioja c_cadiz 
+	}
+}
+custom_norway = {
+	duchies = { 
+		d_viken d_vestlandet d_trondelag d_opplandene d_halogaland 
+	}
+}
+custom_sweden = {
+	duchies = { 
+		d_skaneland d_smaland d_kalmar d_vastra_gotaland d_gotland d_svealand d_bergslagen d_jamtland d_norrland d_halsingland 
+	}
+}
+custom_denmark = {
+	duchies = { 
+		d_nordjylland d_syddanmark d_sjaelland 
+	}
+}
+custom_italy = {
+	duchies = { 
+		d_venice d_veneto d_trentino d_liguria d_piedmont d_lombardy d_romagna d_emilia d_milan d_san_marino d_lazio d_marche d_tuscany d_calabria d_apulia d_campania d_abruzzo d_palermo d_syracuse d_malta d_sardinia d_fruli
+	}
+}
+custom_austria = {
+	duchies = { 
+		d_tyrol d_styria d_austria
+	}
+}
+custom_switzerland = {
+	duchies = { 
+		d_romandy d_espace_mittelland d_switzerland d_raetia d_liechtenstein
+	}
+}
+custom_old_portugal = {
+	duchies = {
+		d_lisboa d_beja d_beira d_norte d_acores d_madeira
+	}
+}
+custom_turkey = {
+	duchies = {
+		d_diyarbakir d_aghri d_erzurum d_malatya d_mardin d_van d_samsun d_trabzon d_zonguldak d_ankara d_antalya d_cappadocia d_cilicia d_hatay d_kirikkale d_konya d_istanbul d_aydin d_izmir d_marmara d_tekirdag
+	}
+}
+custom_oman = {
+	duchies = {
+		d_masqat d_ruus_al_jibal d_zufar
+	}
+}
+custom_yemen = {
+	duchies = {
+		d_azal d_aden d_hadramawt d_janad d_saba d_tihamah
+	}
+}
+custom_hejaz = {
+	duchies = {
+		d_makkah d_al_bahah d_asir d_madinah d_rabigh d_tabuk
+	}
+}
+custom_najd = {
+	duchies = {
+		d_riyad d_al_hudud_as_samaliyya d_hail d_al_jawf d_al_qasim d_duwadmi
+	}
+}
+custom_bahrain = {
+	duchies = {
+		d_qatar d_abu_dhabi d_al_ahsa d_al_hajar_al_gharbi d_dammam d_bahrayn d_hafar_al_batin
+	}
+}
+custom_finland = {
+	duchies = {
+		d_turku d_aland d_uusimaa d_tavastia d_savonia d_ostrobothnia d_lapland
+	}
+}
+custom_ethiopia = {
+	duchies = {
+		d_gojjam d_wollo d_gondar d_tigray d_afar d_eritrea d_keyih_bahri
+	}
+}
+custom_somalia = {
+	duchies = {
+		d_puntland d_sanaag d_somaliland
+	}
+}
+custom_fertile_crescent = {
+	duchies = {
+		d_baghdad d_anbar d_al_jazira d_kurdistan d_sawad d_dimashq d_al_ladhqiyah d_halab d_hims d_raqqa d_amman d_karak d_beirut d_al_jnoub d_as_shamal d_jerusalem d_galil d_mishor_hahof d_negev d_west_bank d_cyprus d_al_qahirah d_cyrenaica d_kufra d_al_bahr_al_ahmar d_al_uqsur d_asyut d_al_wadi_al_jadid d_as_suways d_buhayra_nasr d_delta_an_nil d_matruh d_shamal_as_said d_sinai d_kuwait
+	}
+}
+world_united_kingdom = {
+	regions = {
+		custom_great_britain
+	}
+	duchies = { d_channel_islands  }
+}
+custom_western_europe = {
+	regions = {
+		custom_old_france custom_old_germany custom_old_spain world_united_kingdom custom_italy custom_benelux custom_austria custom_switzerland custom_old_portugal custom_ireland
+	}
+	duchies = {
+		d_andorra d_monaco
+	}
+	counties = { c_gibraltar }
+}
+
+custom_pale = {
+	duchies = { 
+		d_crimea d_kyiv d_chernihiv d_kherson d_poltava d_kharkiv d_dnipropetrovsk d_cherkasy d_zaporizhia d_odessa d_vinnytsia d_viciebsk d_minsk d_brest d_gomel d_lviv d_volyn d_zhytomyr d_mazovia d_podlasie d_lubelia d_lodz d_aukstaitija d_samogitia d_suvalkija d_budjak d_bukovina d_western_moldova d_moldova 
+	}
+	
+	counties = { c_swietokrzyskie c_rzeszow c_czestochowa }
+}
+
+custom_north_africa = {
+	regions = {
+		custom_morocco custom_sahara custom_algeria custom_tunisia custom_libya custom_old_egypt custom_sudan
+	}
+}
+custom_east_africa = {
+	regions = {
+		custom_ethiopia custom_somalia
+	}
+	duchies = {
+		d_djibouti
+	}
+}
+custom_arabian_pennisula = {
+	regions = {
+		custom_oman custom_yemen custom_hejaz custom_najd custom_bahrain
+	}
+}
+
+custom_pannorian_basin = {
+	duchies = {
+		d_budapest d_transdanubia d_alfoeld d_greater_nograd d_transylvania d_banat d_crisana d_maramures
+	}
+}
+custom_hetmanate = {
+	duchies = {
+		d_chernomorye d_krasnodar d_don d_rostov d_crimea d_donbas d_zaporizhia d_kherson d_kharkiv d_dnipropetrovsk d_odessa d_cherkasy d_poltava d_chernihiv d_kyiv d_vinnytsia d_zhytomyr d_lviv d_volyn d_brest d_gomel d_minsk d_viciebsk d_lodz d_mazovia d_podlasie d_lubelia d_lesser_poland
+	}
+}
+custom_yugoslavia = {
+	duchies = {
+		d_croatia d_slavonia d_dalmatia d_krajina d_bosnia d_slovenia d_belgrade d_nis d_vojvodina d_montenegro
+	}
+}
+custom_southern_balkans = {
+	duchies = {
+		d_attica d_roumeli d_ionian_isles d_south_aegean_islands d_north_aegean_islands d_crete d_peloponnese d_south_macedonia d_north_macedonia d_tirana d_vlore d_kosovo d_sofia d_chernomorie d_dunavska_ravina d_ruse d_trakiyska_nizina d_muntenia d_dobruja d_oltenia d_budjak d_bukovina d_western_moldova 
+	}
+}
+custom_balkans = {
+	regions = {
+		custom_yugoslavia custom_southern_balkans
+	}
+}
+custom_european_russia = {
+	duchies = {
+		d_moskva d_tver d_tula d_smolensk d_bryansk d_vladimir d_nizhny_novgorod d_dzerzhinsk d_mordovia d_kostroma d_yaroslavl d_petrograd d_south_karelia d_vologda d_pskov d_veliky_novgorod d_voronezh d_kursk d_oryol d_tambov d_volgograd d_saratov d_samara d_ulyanovsk d_penza d_arkhangelsk d_kola d_karelia d_kaliningrad d_warmia_masuria
+	}
+}
+custom_czechoslovakia = {
+	duchies = {
+		d_bohemia d_moravia d_severovychod d_tatra d_nitra
+	}
+}
+custom_old_poland = {
+	duchies = {
+		d_pomerania d_lubusz d_greater_poland d_kujawy_pomerania d_mazovia d_podlasie d_lesser_poland d_lubelia d_lodz d_lower_silesia d_upper_silesia
+	}
+}
+custom_belarus = {
+	duchies = {
+		d_viciebsk d_minsk d_brest d_gomel
+	}
+}
+custom_ukraine = {
+	duchies = {
+		d_kyiv d_chernihiv d_kherson d_poltava d_kharkiv d_dnipropetrovsk d_cherkasy d_zaporizhia d_odessa d_vinnytsia d_lviv d_volyn d_zhytomyr d_rostov d_don d_donbas
+	}
+}
+custom_slavic_europe = {
+	regions = {
+		custom_european_russia custom_czechoslovakia custom_old_poland custom_belarus custom_ukraine
+	}
+}
+custom_baltic = {
+	duchies = {
+		d_courland d_semigallia d_livonia d_aukstaitija d_samogitia d_suvalkija d_harjumaa d_tartumaa
+	}
+}
+custom_guiyi = {
+	duchies = {
+		d_suiyuan d_hexi d_lanzhou d_ningxia
+	}
+}
+custom_northern_india = {
+	duchies = {
+		d_karachi d_sukkur d_hyderabad_pk d_mirpur_khas d_lahore d_peshawar d_dera_ismail_khan d_sargodha d_islamabad d_gujranwala d_dera_ghazi_khan d_multan d_bahawalpur d_ahmedabad d_bhavnagar d_gandhinagar d_rajkot d_surat d_dhundhar d_bikaner d_marwar d_mewar d_hadoti d_raipur d_surguja d_bilaspur d_durg d_bastar d_dakshin_chotanagpur d_kolhan d_palamu d_santhal_pargana d_uttar_chotanagpur d_patna d_darbhanga d_magadh d_munger d_purnia d_tirhut d_ganjam d_cuttack d_garhjat d_koraput d_sambalpur d_malda d_rajshahi d_rangpur d_tripura d_nagaland d_manipur d_mizoram d_guwahati d_meghalaya d_jorhat d_nagaon d_arunachal d_dhaka d_barishal d_mymensingh d_sylhet d_chittagong d_kolkata d_burdwan d_khulna d_medinipur d_mumbai d_nashik d_pune d_khandesh d_goa d_bhopal d_indore d_nimar d_narmadapuram d_ujjain d_nagpur d_satpura d_amravati d_aurangabad d_nanded d_jabalpur d_sagar d_rewa d_shahdol d_delhi d_karnal d_hisar d_rohilkhand d_saharanpur d_agra d_aligarh d_varanasi d_azamgarh d_devipatan d_gorakhpur d_ilahabad d_lucknow d_kanpur d_patiala d_faridkot d_amritsar d_jhansi d_gird d_chitrakoot d_kashmir d_jammu d_gilgit_baltistan d_himachal d_uttarakhand
+	}
+}
+custom_southern_india = {
+	duchies = {
+		d_amaravathi d_anantapur d_chittoor d_godavari d_kadapa d_kurnool d_tira_andhra d_uttarandhra d_hyderabad d_nizamabad d_warangal d_bangalore d_bayalu_seeme d_dharwad d_kalaburagi d_kanara d_malenadu d_mysuru d_maldives d_lakshadweep d_travancore d_kochi d_malabar d_chennai d_thondai_nadu d_chola_nadu d_kongu_nadu d_nadu_nadu d_pandya_nadu d_salem d_kotte d_kandy d_rajarata d_jaffna 
+	}
+}
+custom_greater_tibet = {
+	duchies = {
+		d_qaidam d_sanjiangyuan d_qinghai d_chamdo d_garze d_nyingchi d_lhasa d_xigaze d_gangdise d_changtang d_ngari d_nagqu 
+	}
+}
+custom_iran = {
+	duchies = {
+		d_mashhad d_bojnord d_nishapur d_quhistan d_shiraz d_bushehr d_hormozgan d_jahrom d_isfahan d_bakhtiari d_kerman d_markazi d_yazd d_semnan d_tehran d_alborz d_gilan d_golestan d_mazandaran d_kermanshah d_ilam d_khuzestan d_lorestan d_sanandaj d_tabriz d_ardabil d_urmiya d_zanjan  
+	}
+}
+custom_mongolia = {
+	regions = { 
+		custom_altay_sayan
+	}
+	duchies = {
+		d_ulaanbaatar d_dornod d_hulunbuir d_khovsgol d_khangai d_govi d_xilingol
+	}
+}
+###########################################################################
+# World Regions
+#	These groups are mutually exclusive on the same tier
+###########################################################################
+
+custom_historical_plague_free_zone = {
+	duchies = {
+		d_iceland d_kalaallit_nunaat d_faroe_islands d_svalbard
+	}
+}
+world_india = {
+	regions = {
+		custom_northern_india custom_southern_india
+	}
+}
+custom_xinjiang = {
+	regions = {
+		custom_tian_shan custom_tarim_basin custom_guiyi
+	}
+	duchies = {
+		d_altay d_turpan
+	}
+}
+world_himalayas = {
+	regions = {
+		custom_greater_tibet
+	}
+	duchies = {
+		d_kathmandu d_gandaki d_karnali d_kosi d_sikkim d_bhutan d_ladakh
+	}
+}
+world_greater_iran = {
+	regions = {
+		custom_iran custom_turan_desert custom_pamir
+	}
+	duchies = {
+		d_quetta d_iranshahr d_kalat d_kharan d_makran d_nasirabad d_sistan d_kabulistan d_balkh d_ghazni d_hazarajat d_herat d_kunduz d_loy_kandahar 
+	}
+}
+world_great_steppe = {
+	regions = {
+		custom_siberian_steppe custom_kazakh_steppe custom_pontic_caspian_steppe custom_mongolia custom_tataria
+	}
+}
+
+world_siberia = {
+	regions = {
+		custom_urals custom_siberian_taiga custom_baikal
+	}
+}
+custom_eastern_europe = {
+	regions = {
+		custom_slavic_europe custom_baltic custom_finland
+	}
+}
+
+world_scandinavia = {
+	regions = {
+		custom_norway custom_sweden custom_denmark
+	}
+}
+custom_europe = {
+	regions = {
+		custom_western_europe world_scandinavia custom_pannorian_basin custom_balkans custom_eastern_europe
+	}
+}
+###########################################################################
+# French Reconquest Regions
+###########################################################################
+
+custom_parisian_core = {
+	duchies = {d_ile_de_france d_berry d_loire d_nord d_normandy d_orleanais d_picardy } 
+}
+custom_provence = { 
+	duchies = {d_provence d_cevennes d_dauphine d_lyonnais d_monaco d_savoy } 
+}
+custom_brittany = { 
+	duchies = {d_breizh_uhel d_breizh_izel } 
+}
+custom_balc = { 
+	duchies = {d_burgundy d_champagne d_franche_comte d_lorraine } 
+}
+custom_occitania = { 
+	duchies = {d_haut_languedoc d_aquitaine d_auvergne d_bas_languedoc d_gascony d_limousin d_poitou } 
+}

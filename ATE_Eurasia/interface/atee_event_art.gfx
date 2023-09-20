@@ -1,0 +1,478 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_musing_in_the_salon"
+		texturefile = "gfx/event_pictures/musing_in_the_salon.dds"
+	}
+	spriteType = {
+		name = "GFX_concordia"
+		texturefile = "gfx/event_pictures/concordia.dds"
+	}
+	spriteType = {
+		name = "GFX_the_green_fairy"
+		texturefile = "gfx/event_pictures/the_green_fairy.dds"
+	}
+	spriteType = {
+		name = "GFX_the_hungry_man"
+		texturefile = "gfx/event_pictures/the_hungry_man.dds"
+	}
+	spriteType = {
+		name = "GFX_salome"
+		texturefile = "gfx/event_pictures/salome.dds"
+	}
+	spriteType = {
+		name = "GFX_victory_march_ottoman"
+		texturefile = "gfx/event_pictures/victory_march_ottoman.dds"
+	}
+	spriteType = {
+		name = "GFX_ottoman_empire_restored"
+		texturefile = "gfx/event_pictures/ottoman_empire_restored.dds"
+	}
+	spriteType = {
+		name = "GFX_ottoman_celebration"
+		texturefile = "gfx/event_pictures/ottoman_celebration.dds"
+	}
+	spriteType = {
+		name = "GFX_ottoman_succession"
+		texturefile = "gfx/event_pictures/ottoman_succession.dds"
+	}
+	spriteType = {
+		name = "GFX_vienna_seized_ottoman"
+		texturefile = "gfx/event_pictures/vienna_seized_ottoman.dds"
+	}
+	spriteType = {
+		name = "GFX_travel_muslim"
+		texturefile = "gfx/event_pictures/travel_muslim.dds"
+	}
+	spriteType = {
+		name = "GFX_blessed_mecca"
+		texturefile = "gfx/event_pictures/blessed_mecca.dds"
+	}
+	spriteType = {
+		name = "GFX_istanbul"
+		texturefile = "gfx/event_pictures/istanbul.dds"
+	}
+	spriteType = {
+		name = "GFX_jerusalem"
+		texturefile = "gfx/event_pictures/jerusalem.dds"
+	}
+	spriteType = {
+		name = "GFX_medina"
+		texturefile = "gfx/event_pictures/medina.dds"
+	}
+	spriteType = {
+		name = "GFX_damascus"
+		texturefile = "gfx/event_pictures/damascus.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_al_azhar"
+		texturefile = "gfx/event_pictures/al_azhar.dds"
+	}
+	spriteType = {
+		name = "GFX_baghdad"
+		texturefile = "gfx/event_pictures/baghdad.dds"
+	}
+	spriteType = {
+		name = "GFX_karbala"
+		texturefile = "gfx/event_pictures/karbala.dds"
+	}
+	spriteType = {
+		name = "GFX_mashhad"
+		texturefile = "gfx/event_pictures/mashhad.dds"
+	}
+	spriteType = {
+		name = "GFX_kadhimiyya"
+		texturefile = "gfx/event_pictures/kadhimiyya.dds"
+	}
+	spriteType = {
+		name = "GFX_eyupmasjid"
+		texturefile = "gfx/event_pictures/eyup_masjid.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_lady_guadalupe"
+		texturefile = "gfx/event_pictures/our_lady_guadalupe.dds"
+	}
+	spriteType = {
+		name = "GFX_yuletide"
+		texturefile = "gfx/event_pictures/yuletide.dds"
+	}
+	spriteType = {
+		name = "GFX_snowforest_day"
+		texturefile = "gfx/event_pictures/into_the_snow_forest.dds"
+	}
+	spriteType = {
+		name = "GFX_snowforest_night"
+		texturefile = "gfx/event_pictures/into_the_snow_forest_dark.dds"
+	}
+	spriteType = {
+		name = "GFX_abraham_lilien"
+		texturefile = "gfx/event_pictures/abraham_lilien.dds"
+	}
+	spriteType = {
+		name = "GFX_lilien_psalm"
+		texturefile = "gfx/event_pictures/lilien_psalm.dds"
+	}
+	spriteType = {
+		name = "GFX_lilien_psalmist"
+		texturefile = "gfx/event_pictures/lilien_psalmist.dds"
+	}	
+	spriteType = {
+		name = "GFX_lilien_jonas"
+		texturefile = "gfx/event_pictures/lilien_jonas.dds"
+	}	
+	spriteType = {
+		name = "GFX_lilien_isaiah"
+		texturefile = "gfx/event_pictures/lilien_isaiah.dds"
+	}	
+	spriteType = {
+		name = "GFX_lilien_daniel"
+		texturefile = "gfx/event_pictures/lilien_daniel.dds"
+	}
+	spriteType = {
+		name = "GFX_rebbe_wisdom"
+		texturefile = "gfx/event_pictures/rebbe_wisdom.dds"
+	}
+	spriteType = {
+		name = "GFX_passover"
+		texturefile = "gfx/event_pictures/passover.dds"
+	}
+	spriteType = {
+		name = "GFX_passover_cleaning"
+		texturefile = "gfx/event_pictures/passover_cleaning.dds"
+	}
+	spriteType = {
+		name = "GFX_passover_exodus"
+		texturefile = "gfx/event_pictures/passover_exodus.dds"
+	}
+	spriteType = {
+		name = "GFX_weinles_synagogue"
+		texturefile = "gfx/event_pictures/weinles_synagogue.dds"
+	}
+	spriteType = {
+		name = "GFX_hitboddedut"
+		texturefile = "gfx/event_pictures/hitboddedut.dds"
+	}
+	spriteType = {
+		name = "GFX_allsherjargode"
+		texturefile = "gfx/event_pictures/allsherjargode.dds"
+	}
+	spriteType = {
+		name = "GFX_riga"
+		texturefile = "gfx/event_pictures/old_riga.dds"
+	}
+	spriteType = {
+		name = "GFX_bar_mitzvah"
+		texturefile = "gfx/event_pictures/bar_mitzvah.dds"
+	}
+	spriteType = {
+		name = "GFX_nine_worthies"
+		texturefile = "gfx/event_pictures/nine_worthies.dds"
+	}
+	spriteType = {
+		name = "GFX_rosh_hashanah"
+		texturefile = "gfx/event_pictures/rosh_hashanah.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_hebron"
+		texturefile = "gfx/event_pictures/hebron.dds"
+	}
+	spriteType = {
+		name = "GFX_royal_touch"
+		texturefile = "gfx/event_pictures/royal_touch.dds"
+	}
+	spriteType = {
+		name = "GFX_capet_king"
+		texturefile = "gfx/event_pictures/capet_king.dds"
+	}
+	spriteType = {
+		name = "GFX_muslim_prayer"
+		texturefile = "gfx/event_pictures/muslim_prayer.dds"
+	}
+	spriteType = {
+		name = "GFX_muslim_departure"
+		texturefile = "gfx/event_pictures/muslim_departure.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_election"
+		texturefile = "gfx/event_pictures/election.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_bastille_day"
+		texturefile = "gfx/event_pictures/bastille_day.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_vana_sea_goddess"
+		texturefile = "gfx/event_pictures/vana_sea_goddess.dds"
+	}
+	spriteType = {
+		name = "GFX_gift_giving_british"
+		texturefile = "gfx/event_pictures/gift_giving_british.dds"
+	}
+	spriteType = {
+		name = "GFX_tiberias"
+		texturefile = "gfx/event_pictures/tiberias.dds"
+	}
+	spriteType = {
+		name = "GFX_jaffa"
+		texturefile = "gfx/event_pictures/jaffa.dds"
+	}
+	spriteType = {
+		name = "GFX_contemplation_jewish"
+		texturefile = "gfx/event_pictures/contemplation_jewish.dds"
+	}
+	spriteType = {
+		name = "GFX_yeshiva_rabbi"
+		texturefile = "gfx/event_pictures/yeshiva_rabbi.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_yeshiva_lilien"
+		texturefile = "gfx/event_pictures/yeshiva_lilien.dds"
+	}
+	spriteType = {
+		name = "GFX_yeshiva_morocco"
+		texturefile = "gfx/event_pictures/yeshiva_morocco.dds"
+	}
+	spriteType = {
+		name = "GFX_uk_restored"
+		texturefile = "gfx/event_pictures/uk_restored.dds"
+	}
+	spriteType = {
+		name = "GFX_glorian_bonfire"
+		texturefile = "gfx/event_pictures/glorian_bonfire.dds"
+	}
+	spriteType = {
+		name = "GFX_glorian_feast"
+		texturefile = "gfx/event_pictures/glorian_feast.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_kopjafa"
+		texturefile = "gfx/event_pictures/kopjafa.dds"
+	}
+	spriteType = {
+		name = "GFX_an_najaf"
+		texturefile = "gfx/event_pictures/an_najaf.dds"
+	}
+	spriteType = {
+		name = "GFX_dagan_the_great"
+		texturefile = "gfx/event_pictures/dagan_the_great.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_mantramarga_branch"
+		texturefile = "gfx/event_pictures/mantramarga_branch.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_night_festival_hindu"
+		texturefile = "gfx/event_pictures/hindu_festival_night.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_lord_shiva_dance"
+		texturefile = "gfx/event_pictures/rudra_tandava.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_yoga_meditation"
+		texturefile = "gfx/event_pictures/hindu_contemplation.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_cenobium_christian"
+		texturefile = "gfx/event_pictures/cenobium_christian.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_roma_conversation"
+		texturefile = "gfx/event_pictures/roma_conversation.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_roma_festival"
+		texturefile = "gfx/event_pictures/roma_festival.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_roma_life"
+		texturefile = "gfx/event_pictures/roma_life.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_brass_chorus"
+		texturefile = "gfx/event_pictures/brass_chorus.dds"
+	}
+	spriteType = {
+		name = "GFX_bosniak_revolution"
+		texturefile = "gfx/event_pictures/yugoslav_bosniak_revolution.dds"
+	}
+	spriteType = {
+		name = "GFX_bosniak_workers"
+		texturefile = "gfx/event_pictures/yugoslav_bosniak_workers.dds"
+	}
+	spriteType = {
+		name = "GFX_yugoslav_coronation"
+		texturefile = "gfx/event_pictures/yugoslav_coronation.dds"
+	}
+	spriteType = {
+		name = "GFX_yugoslav_liberation"
+		texturefile = "gfx/event_pictures/yugoslav_liberation.dds"
+	}
+	spriteType = {
+		name = "GFX_partisan_march"
+		texturefile = "gfx/event_pictures/yugoslav_partisan_march.dds"
+	}
+	spriteType = {
+		name = "GFX_yugoslav_revolution"
+		texturefile = "gfx/event_pictures/yugoslav_revolution.dds"
+	}
+	spriteType = {
+		name = "GFX_tolling_workers"
+		texturefile = "gfx/event_pictures/yugoslav_tolling_workers.dds"
+	}
+	spriteType = {
+		name = "GFX_yugoslav_warriors"
+		texturefile = "gfx/event_pictures/yugoslav_warriors.dds"
+	}
+	spriteType = {
+		name = "GFX_workers_march"
+		texturefile = "gfx/event_pictures/yugoslav_workers_march.dds"
+	}
+	spriteType = {
+		name = "GFX_reindeer_herders"
+		texturefile = "gfx/event_pictures/reindeer_herders.dds"
+	}
+	spriteType = {
+		name = "GFX_cossacks"
+		texturefile = "gfx/event_pictures/cossacks.dds"
+	}
+	spriteType = {	
+		name = "GFX_evt_eucharist_adoration"
+		texturefile = "gfx/event_pictures/eucharist_adoration.dds"
+	}
+	spriteType = {
+		name = "GFX_ethiopian_magistrates"
+		texturefile = "gfx/event_pictures/ethiopian_magistrates.dds"
+	}
+	spriteType = {
+		name = "GFX_the_khan"
+		texturefile = "gfx/event_pictures/the_khan.dds"
+	}
+	spriteType = {
+		name = "GFX_ovoo"
+		texturefile = "gfx/event_pictures/ovoo.dds"
+	}
+	spriteType = {
+		name = "GFX_synod_discussion"
+		texturefile = "gfx/event_pictures/synod_discussion.dds"
+	}
+	spriteType = {
+		name = "GFX_synod_hall"
+		texturefile = "gfx/event_pictures/synod_hall.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_nauvoo"
+		texturefile = "gfx/event_pictures/nauvoo.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_totem_pole"
+		texturefile = "gfx/event_pictures/totem_pole.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_ot_river"
+		texturefile = "gfx/event_pictures/ot_river.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_barbarian_1"
+		texturefile = "gfx/event_pictures/barbarian_1.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_carnage_1"
+		texturefile = "gfx/event_pictures/carnage_1.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_iconoclasts_iconoclasming"
+		texturefile = "gfx/event_pictures/iconoclasts_iconoclasming.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_ethiopia_stable"
+		texturefile = "gfx/event_pictures/ethiopia_stable.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_ethiopia_civil_war"
+		texturefile = "gfx/event_pictures/ethiopia_civil_war.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_ethiopia_golden_age"
+		texturefile = "gfx/event_pictures/ethiopia_golden_age.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_ethiopia_somalis_invade"
+		texturefile = "gfx/event_pictures/ethiopia_somalis_invade.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_ethiopia_unrest"
+		texturefile = "gfx/event_pictures/ethiopia_unrest.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_rider_1"
+		texturefile = "gfx/event_pictures/rider_1.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_ethiopia_famine"
+		texturefile = "gfx/event_pictures/ethiopia_famine.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_ethiopia_expansionist"
+		texturefile = "gfx/event_pictures/ethiopia_expansionist.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_mysterious_person"
+		texturefile = "gfx/event_pictures/mysterious_person.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_rundown_greek_temple"
+		texturefile = "gfx/event_pictures/rundown_greek_temple.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_ethiopia_open"
+		texturefile = "gfx/event_pictures/ethiopia_open.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_ethiopia_isolationist"
+		texturefile = "gfx/event_pictures/ethiopia_isolationist.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_ethiopia_devastating_plague"
+		texturefile = "gfx/event_pictures/ethiopia_devastating_plague.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_luchador"
+		texturefile = "gfx/event_pictures/luchador.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_athlete"
+		texturefile = "gfx/event_pictures/athlete.dds"
+		allwaystransparent = yes
+	}
+#Imported from Orientalis
+	spriteType = {
+		name = "GFX_evt_buddha_teaching"
+		texturefile = "gfx/event_pictures/buddha_teaching.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_buddha_parade"
+		texturefile = "gfx/event_pictures/buddha_parade.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_buddhist_contemplation"
+		texturefile = "gfx/event_pictures/buddhist_contemplation.dds"
+	}
+}

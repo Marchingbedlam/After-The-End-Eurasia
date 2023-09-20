@@ -1,0 +1,14 @@
+name="Basque-Gasconian War"
+
+casus_belli = {
+	actor=1804074
+	recipient=1992000
+	casus_belli=claim
+	landed_title=c_labourd
+	date=2666.5.9
+}
+
+2666.5.9={
+	add_attacker=1804074
+	add_defender=1992000
+}

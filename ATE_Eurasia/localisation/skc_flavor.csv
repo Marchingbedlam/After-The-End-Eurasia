@@ -1,0 +1,81 @@
+EVTNAME_skc_1;A Solarque Reborn;;;;;;;;;;;;;x
+EVTDESC_skc_1; After decades of submission under the reign of foolish heathens, the Soleil Royal faith has restored its original splendor and luminous glory. Thanks to many worthy conquests in the name of [sun_king_cultist.GetHighGodName], the partisans of the Diable have been pushed back to lands not graced by his luminous kingship of the newly anointed Solarque.;;;;;;;;;;;;;x
+EVTOPTA_skc_1;Long live the Solarque!;;;;;;;;;;;;;x
+EVTOPTB_skc_1;That is none of our business.;;;;;;;;;;;;;x
+EVTOPTC_skc_1;Foolish heathens, God will punish them!;;;;;;;;;;;;;x
+EVTDESC_claim_sun_blood_1;Your might and majesty as the [ROOT.GetPrimaryTitles] has lead priests thorughout the [sun_king_cultist.GetName] world as a great leader blessed by [sun_king_cultist.GetHighGodName] himself. Some even wonder if you might share the blood of the blessed Sun King...;;;;;;;;;;;;;x
+EVTOPTA_claim_sun_blood_1;Let us investige this!;;;;;;;;;;;;;x
+EVTOPTB_claim_sun_blood_1;This is foolish;;;;;;;;;;;;;x
+EVTDESC_claim_sun_blood_2;A pile of texts have been gathered to trace back your bloodline through the generations. The task will take weeks, and you wonder: do you lead the search youself, or pass the responsibility on to [ROOT.job_spiritual.GetName]?;;;;;;;;;;;;;x
+EVTOPTA_claim_sun_blood_2;I will do it myself!;;;;;;;;;;;;;x
+EVTOPTB_claim_sun_blood_2;[ROOT.job_spiritual.GetFirstName] will do a fine job!;;;;;;;;;;;;;x
+EVTDESC_claim_sun_blood_3;After weeks of study, you have found it! A missing link tying you to a bastard son of the mighty Sun King himself! The priests and scholars of the land have all verified this ancestry. The old Capet families may seethe in private, but all true followers of [sun_king_cultist.GetHighGodName] acknowledge your claim.;;;;;;;;;;;;;x
+EVTOPTA_claim_sun_blood_3;Praise [sun_king_cultist.GetHighGodName]!;;;;;;;;;;;;;x
+EVTDESC_claim_sun_blood_4;Weeks of searching and stress have lead to nothing. The threads you traced back generations, all the work of your scholars, and no connection to the Sun King to be found.;;;;;;;;;;;;;x
+EVTOPTA_claim_sun_blood_4;Curses!;;;;;;;;;;;;;x
+
+
+EVTDESC_worthy_chevalier;Your valiant deeds have become known by many throughout the [chevalier.GetName] world. Many priests and kinghts have begun to speak of you in reverent tones, hailing you as a Worthy, a knight whose valor and virtues are fit for comparison to those of the Nine Worthies of Old.;;;;;;;;;;;;;x
+EVTOPTA_worthy_chevalier;I hope that I prove worthy of this honor;;;;;;;;;;;;;x
+EVTDESC_knight_arrives_worthy;A wandering knight has arrived to my court, drawn in by the tales of my virtue and valiance. [invited_character.GetSheHeCap] claims to have traveled far and wide, searching for a liege worth following, and that [invited_character.GetSheHe] wishes to pledge [invited_character.GetHerselfHimself] to my service.;;;;;;;;;;;;x
+EVTOPTA_knight_arrives_worthy;I will give you command of an army.;;;;;;;;;;;;x
+EVTOPTB_knight_arrives_worthy;I am sorry, but my court is full.;;;;;;;;;;;;x
+EVTDESC_bard_arrives_worthy;A wandering bard has arrived at my court, drawn in by the great tales of my valor and honor. [invited_character.GetSheHeCap] claims that [invited_character.GetSheHe] wishes to pledge [invited_character.GetHerHis] loyalty to me and sing about the great deeds of my dynasty.;;;;;;;;;;;;x
+EVTOPTA_bard_arrives_worthy;You are welcome!;;;;;;;;;;;;x
+EVTDESC_damsel_distress_1;I have received a distraught message from a damsel in need. [From.GetTitledFirstName] is suffering under the yoke of an uncouth [From.Liege.GetManWoman] with no honor. Hearing tales of my valor and my status as a Worthy Knight of the Chevaliers, [From.GetSheHe] pleads me to offer [From.GetHerHim] my protection.;;;;;;;;;;;;x
+EVTOPTA_damsel_distress_1;Fear not, my [From.GetLordLady]! I will protect you!;;;;;;;;;;;;x
+EVTOPTB_damsel_distress_1;Unfortunately, I cannot offer assistance now.;;;;;;;;;;;;x
+EVTDESC_damsel_distress_2;After a long week on the road, I have arrived at the castle to deliver [event_target:damsel_in_distress.GetTitledFirstName] from [event_target:damsel_in_distress.GetHerHis] captors. Soon, I am faced with the commander of guard, who has heard the tales of my skill in combat. He agrees to release [event_target:damsel_in_distress.GetTitledFirstName] if I can defeat him in a duel.;;;;;;;;;;;;x
+EVTOPTA_damsel_distress_2;Alright then! En Garde!;;;;;;;;;;;;x
+EVTOPTB_damsel_distress_2;On second thought, I better head home...;;;;;;;;;;;;x
+
+EVTDES1_damsel_distress_3;While the duel was hard-fought, you have emerged as the victor. [event_target:damsel_in_distress.GetTitledFirstName] falls into your arms, thanking you endlessly for taking [event_target:damsel_in_distress.GetHerHim] away from this dreaded place. ;;;;;;;;;;;;x
+EVTDES2_damsel_distress_3;You have been defeated in the duel and must ride home to your castle in shame, without rescuing [damsel_in_distress.GetTitledFirstName]. ;;;;;;;;;;;;x
+EVTOPTA_damsel_distress_3;My Lady! May I have your hand?;;;;;;;;;;;;x
+EVTOPTB_damsel_distress_3;You will be welcome to stay in my court;;;;;;;;;;;;x
+EVTOPTC_damsel_distress_3;I will never live this down...;;;;;;;;;;;;x
+
+EVTDESC_unworthy_chevalier;While once you were once known for valor and virtue, your dishonorable behavior has become too apparent. The priests who once spoke of you as a Worthy now spit at the mention of your name. At least for now, your time in their favor is over.;;;;;;;;;;;;;x
+EVTOPTA_unworthy_chevalier;I ought to look over my sins.;;;;;;;;;;;;;x
+
+##Royal Touch Event
+EVTDESC_royal_touch_1;The ever-present shadow of disease and pestilence still plague your kingdom. Your subjects again cry out to see you work miracles with your healing royal touch. As their [From.GetTitle], it is time for you to fulfill your duty and bring healing to the sick with your blessed hands. Your healing powers are important for your legitimacy in the eyes of the priesthood and your subjects.;;;;;;;;;;;;;x
+EVTOPTA_royal_touch_1;The loyal [royal_touch_vassal.GetTitledName] needs my blessing.;;;;;;;;;;;;;x
+EVTOPTB_royal_touch_1;[royal_touch_courtier.GetFirstName] shall have my blessing.;;;;;;;;;;;;;x
+EVTOPTC_royal_touch_1;I will bless the scrofula patients in [royally_touched_province.GetName].;;;;;;;;;;;;;x
+EVTDESC_royal_touch_2;Your liege [from.GetTitledFirstName] has heard of your illness, and is on the way to give you his royal touch..;;;;;;;;;;;;;x
+EVTOPTA_royal_touch_2;Praise [sun_king_cultist.GetHighGodName]!;;;;;;;;;;;;;x
+EVTDESC_royal_touch_3;You greet [royally_touched.GetFirstName] with the clergy and physicians accompanying you. Couriers and common folk flock around you, looking up in awe at your royal presence. They witness you give the weakened & sickly [royally_touched.GetFirstName] your blessed touch.;;;;;;;;;;;;;x
+EVTOPTA_royal_touch_3;May this touch heal you from your ills...;;;;;;;;;;;;;x
+EVTDESC_royal_touch_4;Your gracious liege [from.GetTitledFirstName] arrives at your court, and blesses you with his royal touch.;;;;;;;;;;;;;x
+EVTOPTA_royal_touch_4;May my lord's touch cures me from my disease.;;;;;;;;;;;;;x
+EVTDESC_royal_touch_5;[From.GetFirstName] has not showed signs of recovery from their diseases despite the royal touch you gave [From.GetHerHim] recently. Some traitors are even beginning to doubt your power.;;;;;;;;;;;;;x
+EVTOPTA_royal_touch_5;Curses!;;;;;;;;;;;;;x
+EVTDESC_royal_touch_6;[from.GetFirstName] has sent you a letter full of praises. It seems that your touch was successful as your vassal has fully recovered from [From.GetHerHis] illness after you touched [From.GetHerHim].;;;;;;;;;;;;;x
+EVTOPTA_royal_touch_6;[sun_king_cultist.GetHighGodName] blesses me with the Divine Rights to Rule!;;;;;;;;;;;;;x
+EVTDESC_royal_touch_8;You decide to head out to the hospital in [royally_touched_province.GetName] with your royal clergy and physicians accompanying you. The scrofula patients wait in line for your royal touch to heal them, each one covered with repulsive lesions. Bystanders crowd around you as the afflicted subjects wait for your blessing. You begin blessing your patients one by one as they line up for your healing touch.;;;;;;;;;;;;x
+EVTOPTA_royal_touch_8;May these poor souls be cured from their illness with my touch.;;;;;;;;;;;;;x
+EVTDES1_royal_touch_9;Reports from the hospital you visited in [royally_touched_province.GetName] are full of excitement. Many of those you blessed with your touch earlier have now fully recovered! ;;;;;;;;;;;;;x
+EVTDES2_royal_touch_9;In spite of your royal blessing, it seems your subjects have not shown any signs of recovery from their illness, with some even dying afterwards. While many of your lowal followers argue there must have been a mistake, some traitors are beginning to doubt whether {sun_king_cultist.GetHighGodName] still blesses you with the divine right of royalty.;;;;;;;;;;;;;x
+EVTOPTA_royal_touch_9;[Root.Religion.GetHighGodName] blesses me with the Divine Rights to Rule.;;;;;;;;;;;;;x
+EVTOPTB_royal_touch_9;Curses!;;;;;;;;;;;;;x
+
+##traits
+worthy_knight;Worthy;;;;;;;;;;;;;x
+worthy_knight_desc;The [chevalier.GetName] priesthood has recognized this character as a truly worthy and valiant knight for whom other chevaliers will flock to [this.GetHerHis] banners.;;;;;;;;;;;;;x
+blessed_hands;Blessed Hands;;;;;;;;;;;;;x
+blessed_hands_desc;The people has recognized the King as having hands that are capable of blessing the sick from illness.;;;;;;;;;;;;;x
+##modifier
+shamed_knight;Shamed Knight;;;;;;;;;;;;;x
+shamed_knight_desc;This Knight has lost [this.GetHerHis] position as a Worthy Knight of the [chevalier.GetName] Faith, a great shame for [this.GetHerHim] and all thier blood-kin.;;;;;;;;;;;;;x
+both_chevalier_tt;Both characters follow the [chevalier.GetName] Religion.;;;;;;;;;;;;;x
+claimed_capet_blood;Claimed Capet Bloodline;;;;;;;;;;;;;x
+claimed_capet_blood_DESC;This character has found a claim to the holy blood of the Capets, bringing glory to his name and enraging the previous families to claim descent from him;;;;;;;;;;;;;x
+sun_king_cultist_opinion;Soleil Royal Opinion;;;;;;;;;;;;;x
+chevalier_opinion;Chévalier Opinion;;;;;;;;;;;;;x
+opinion_royal_touch;Royal Touch Opinion;;;;;;;;;;;;;x
+failed_kings_touch;Failed King's Touch;;;;;;;;;;;;;x
+successful_kings_touch;Successful King's Touch;;;;;;;;;;;;;x
+province_kings_touch;King's Touched Province;;;;;;;;;;;;;x
+opinion_capet_connection;Found Capet Connection;;;;;;;;;;;;;x
+sang_capetien_opinion;Sang Capetien Opinion;;;;;;;;;;;;;x

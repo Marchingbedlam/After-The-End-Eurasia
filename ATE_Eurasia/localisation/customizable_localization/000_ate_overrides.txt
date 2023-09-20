@@ -1,0 +1,204 @@
+#GetHouseOfWorship 			Gets name for house of worship of character's religion (character)
+#GetReligiousRite 			Gets name for a common religious rite (character)
+#GetReligionWarrior
+#GetReligionWarriorPlural
+#GetReligiousPerson
+#GetArtifactSource			Gets name for bodypart artifact's source (saint, holy man, hero)
+#GetArtifactSourceCap
+
+#GetBeastString
+
+###RELIGION###
+defined_text = {
+	name = GetHouseOfWorship # Returns a suitable name for the house of worship of your religion (WIP)
+
+	text = {
+		localisation_key = GetHouseOfWorship_Christian
+		trigger = {
+			OR = {
+				religion_group = christian
+				religion_group = vernacular
+			}
+		}
+	}
+	text = {
+		localisation_key = GetHouseOfWorship_Muslim
+		trigger = { religion_group = muslim }
+	}
+	text = {
+		localisation_key = GetHouseOfWorship_Pagan
+		trigger = {
+			religion_group = pagan_group
+			NOT = { religion_openly_in_celtic_subgroup_trigger = yes }
+		}
+	}
+
+	text = {
+		localisation_key = GetHouseOfWorship_Americanist
+		trigger = {
+			OR = {
+				religion = glorian
+				religion = neuhumanist
+			}
+		}
+	}
+	text = {
+		localisation_key = GetHouseOfWorship_Pagan
+		trigger = {
+			religion_group = pagan_group
+			NOT = {
+				religion_openly_in_celtic_subgroup_trigger = no
+			}
+		}
+	}
+	text = {
+		localisation_key = string_generic_temple
+		trigger = {
+			OR = {
+				religion_group = universalist
+				religion_group = islamosyncretic
+				AND = {
+					religion_group = scholastic
+					NOR = {
+						religion = glorian
+						religion = neuhumanist
+					}
+				}
+				religion_group = old_world_cultist_group
+				religion_group = buddhist_group
+				religion_group = eastern
+				religion_group = zoroastrian_group
+			}
+		}
+	}
+	text = {
+		localisation_key = GetHouseOfWorship_Jewish
+		trigger = { religion_group = jewish_group }
+	}
+	text = {
+		localisation_key = GetHouseOfWorship_Hindu
+		trigger = { religion_group = indian_group }
+	}
+	#Copied from vanilla
+}
+
+defined_text = {
+	name = GetHouseOfWorshipCap # Returns a suitable name for the house of worship of your religion (WIP)
+
+	text = {
+		localisation_key = string_Church
+		trigger = {
+			OR = {
+				religion_group = christian
+				religion_group = vernacular
+			}
+		}
+	}
+	text = {
+		localisation_key = string_Mosque
+		trigger = { religion_group = muslim }
+	}
+	text = {
+		localisation_key = string_Temple
+		trigger = { religion_group = pagan_group }
+	}
+	text = {
+		localisation_key = string_Synagogue_Cap
+		trigger = { religion_group = jewish_group }
+	}
+	text = {
+		localisation_key = string_Temple
+		trigger = { religion_group = indian_group }
+	}
+	text = {
+		localisation_key = string_Temple
+		trigger = { religion_group = buddhist_group }
+	}
+	text = {
+		localisation_key = string_Court
+		trigger = {
+			OR = {
+				religion = glorian
+				religion = neuhumanist
+			}
+		}
+	}
+	fallback_text = {
+		localisation_key = string_Temple
+	}
+}
+defined_text = {
+	name = GetReligiousRite # Returns a suitable name for a common rite in the character's religion
+
+	text = {
+		localisation_key = String_mass
+		trigger = { religion_group = christian }
+	}
+	text = {
+		localisation_key = String_worship
+		#generic
+	}
+	text = {
+		localisation_key = String_prayer
+		trigger = { religion_group = muslim }
+	}
+	text = {
+		localisation_key = String_prayer
+		trigger = { religion_group = jewish_group }
+	}
+	text = {
+		localisation_key = String_prayer
+		trigger = { religion_group = indian_group }
+	}
+	text = {
+		localisation_key = String_prayer
+		trigger = { religion_group = buddhist_group }
+	}
+	#Copied from vanilla
+}
+
+defined_text = {
+	name = GetSaintReligionTitle
+
+	text = {
+		trigger = {
+			religion_group = christian
+		}
+		localisation_key = string_saint_in_heaven
+	}
+	text = {
+		trigger = {
+			religion_group = pagan_group
+		}
+		localisation_key = string_blessed_ancestor
+	}
+	text = {
+		trigger = {
+			religion = jedinstvo
+		}
+		localisation_key = string_partisan
+	}
+}
+
+defined_text = {
+	name = GetSaintViewTitle
+
+	text = {
+		trigger = {
+			religion_group = christian
+		}
+		localisation_key = string_saint_view_title_christian
+	}
+	text = {
+		trigger = {
+			religion_group = pagan_group
+		}
+		localisation_key = string_saint_view_title_pagan
+	}
+	text = {
+		trigger = {
+			religion = jedinstvo
+		}
+		localisation_key = string_saint_view_title_jedinstvo
+	}
+}

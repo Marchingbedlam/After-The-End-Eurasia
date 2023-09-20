@@ -1,0 +1,380 @@
+song = {
+	name = "crusaderkings2_maintitle.ogg"
+	song_name = "Long Road Ahead"
+	chance = {
+		factor = 1	
+	}
+}
+song = {
+	name = "finnish_polkka.ogg"
+	song_name = "Sakkijarven Polkka"
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 0
+			NOT = {
+				culture = finnish
+			}
+		}
+	}
+}
+song = {
+	name = "Hall of the Mountain King.ogg"
+	song_name = "Hall of the Mountain King"
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 0
+			NOT = {
+				religion = folketro
+			}
+		}
+	}
+}
+song = {
+	name = "fiddling_in_the_north.ogg"
+	song_name = "Malselvhalling"
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 0
+			NOT = {
+				religion = folketro
+			}
+		}
+	}
+}
+song = {
+	name = "jamtland_folk.ogg"
+	song_name = "Jamtlandsk Brudmarsch"
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 0
+			NOR = {
+				culture_group = scandinavian
+				culture_group = finnic
+				religion = folketro
+			}
+		}
+	}
+}song = {
+	name = "finnish_polkka.ogg"
+	song_name = "Sakkijarven Polkka"
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 0
+			NOT = {
+				culture = finnish
+			}
+		}
+	}
+}
+song = {
+	name = "Hall of the Mountain King.ogg"
+	song_name = "Hall of the Mountain King"
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 0
+			NOT = {
+				religion = folketro
+			}
+		}
+	}
+}
+song = {
+	name = "fiddling_in_the_north.ogg"
+	song_name = "Malselvhalling"
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 0
+			NOT = {
+				religion = folketro
+			}
+		}
+	}
+}
+song = {
+	name = "jamtland_folk.ogg"
+	song_name = "Jamtlandsk Brudmarsch"
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 0
+			NOR = {
+				culture_group = scandinavian
+				culture_group = finnic
+				religion = folketro
+			}
+		}
+	}
+}
+song = {
+	name = "a_csitari_hegyek_alatt.ogg"
+	song_name = "A csitári hegyek alatt"
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 0
+			NOR = {
+				culture_group = magyar
+				religion = nepmese
+				religion = nepmese_reformed
+			}
+		}
+	}
+}
+song = {
+	name = "Esik_az_eso.ogg"
+	song_name = "Esik az esö, ázik a heveder"
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 0
+			NOR = {
+				culture_group = magyar
+				religion = nepmese
+				religion = nepmese_reformed
+			}
+		}
+	}
+}
+song = {
+	name = "Kalotaszegi_dallamok_played_by_Szanics_Richard.ogg"
+	song_name = "Kalotaszegi dallamok played by Szanics Richárd"
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 0
+			NOR = {
+				culture_group = magyar
+				religion = nepmese
+				religion = nepmese_reformed
+			}
+		}
+	}
+}
+song = {
+	name = "Somogyi_citeramuzsika_played_by_Szlama_Laszlo.ogg"
+	song_name = "Somogyi citeramuzsika played by Szlama László"
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 0
+			NOR = {
+				culture_group = magyar
+				religion = nepmese
+				religion = nepmese_reformed
+			}
+		}
+	}
+}
+song = {
+	name = "Cimbalom_dulcimer_solo_played_by_Jeno_Farkas_Szalai_Hungarian_Gypsy_Band.ogg"
+	song_name = "Cimbalom dulcimer solo played by Jenö Farkas Szalai Hungarian Gypsy Band"
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 0
+			NOR = {
+				culture_group = magyar
+				religion = nepmese
+				religion = nepmese_reformed
+			}
+		}
+	}
+}
+song = {
+	name = "Doromb_III.ogg"
+	song_name = "Doromb III by Péter Balogh"
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 0
+			NOR = {
+				culture_group = magyar
+				religion = nepmese
+				religion = nepmese_reformed
+			}
+		}
+	}
+}
+song = {
+	name = "Tilinkos_tanc_Dolomber.ogg"
+	song_name = "Tilinkós tánc (Dorombér)"
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 0
+			NOR = {
+				culture_group = magyar
+				religion = nepmese
+				religion = nepmese_reformed
+			}
+		}
+	}
+}
+song = {
+	name = "Doromb_es_sarkantyu.ogg"
+	song_name = "Doromb és sarkantyú"
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 0
+			NOR = {
+				culture_group = magyar
+				religion = nepmese
+				religion = nepmese_reformed
+			}
+		}
+	}
+}
+song = {
+	name = "Az_en_csizmam_disznobor.ogg"
+	song_name = "Az én csizmám disznóbör"
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 0
+			NOR = {
+				culture_group = magyar
+				religion = nepmese
+				religion = nepmese_reformed
+			}
+		}
+	}
+}
+song = {
+	name = "hej_sokoly.ogg"
+	song_name = "Hej, Sokoly!"
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 0.25
+			NOR = {
+				culture_group = west_slavic
+				culture_group = ruthenian
+			}
+		}
+	}
+}
+song = {
+	name = "3_Country_Rounds.ogg"
+	song_name = "Country Rounds"
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 0
+			NOR = {
+				culture_group = britannic
+			}
+		}
+	}
+}
+song = {
+	name = "The_Witches_Dance.ogg"
+	song_name = "The Witches Dance"
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 0
+			NOR = {
+				culture_group = britannic
+			}
+		}
+	}
+}
+song = {
+	name = "God_Rest_ye_Merry_Gentlemen.ogg"
+	song_name = "God Rest ye Merry Gentlemen"
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 0
+			NOR = {
+				culture_group = britannic
+			}
+		}
+	}
+}
+
+song = {
+	name = "Christ_ist_erstanden.ogg"
+	song_name = "Christ ist Erstanden"
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 0
+			NOR = {
+				culture_group = central_germanic
+			}
+		}
+	}
+}
+song = {
+	name = "Von_guten_Machten_wunderbar_geborgen.ogg"
+	song_name = "Von guten Machten wunderbar geborgen"
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 0
+			NOR = {
+				culture_group = central_germanic
+			}
+		}
+	}
+}
+song = {
+	name = "Es_ist_ein_Ros_entsprungen.ogg"
+	song_name = "Es ist ein Ros entsprungen"
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 0
+			NOR = {
+				culture_group = central_germanic
+			}
+		}
+	}
+}
+song = {
+	name = "Adagio_after_K439b.ogg"
+	song_name = "Adagio after K439b"
+	chance = {
+		factor = 2
+	}
+}
+song = {
+	name = "Danse_de_la_Fee_Dragee.ogg"
+	song_name = "Danse de la Fee Dragee"
+	chance = {
+		factor = 2
+	}
+}
+song = {
+	name = "Andante_from_Divertimento_II.ogg"
+	song_name = "Andante from Divertimento II"
+	chance = {
+		factor = 2
+	}
+}
+song = {
+	name = "God_Save_the_Queen.ogg"
+	song_name = "God Save the Queen"
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 0
+			NOR = {
+				religion = glorian
+				culture_group = britannic
+				culture = welsh
+				culture = cornish
+				culture = highlander
+			}
+		}
+	}
+}

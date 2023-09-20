@@ -1,0 +1,114 @@
+###ÄNSI###
+
+##CenobiticDecisions###
+cenobitic_order_to_take_vows;Order to Take Vows;;;;;;;;x
+cenobitic_order_to_take_vows_desc;You can order unlanded courtiers to take the vows and to join a monastic order of their choice. Becoming a canon or canoness.;;;;;;;;x
+cenobitic_order_to_take_vows_married;Order to become Ordained;;;;;;;;x
+cenobitic_order_to_take_vows_married_desc;You can order unlanded courtiers to become ordained and join a monastic order of their choice. Becoming a regularis or regulara.;;;;;;;;x
+cenobitic_tooltip_vows_monk_joins_society;§Y[Root.GetTitledFirstName]§! will join a §YMonastic Society§!;;;;;;;;x
+become_ordained_unmarried;Become Ordained as a Celibate;;;;;;;;;;;;;x
+become_ordained_married;Become Ordained as a Non-celibate;;;;;;;;;;;;;x
+become_ordained_unmarried_desc;Become Ordained as a Canon or Canoness.;;;;;;;;;;;;;x
+become_ordained_married_desc;Become Ordained as a Regularis or Regulara.;;;;;;;;;;;;;x
+tooltip_feudal_elector_vote_commander_martial;[From.GetFirstName] is a brilliant ?YGeneral?!;[From.GetFirstName] est un brillant ?Yg?n?ral?!;[From.GetFirstName] ist ein ausgezeichneter ?YGeneral?!;;[From.GetFirstName] es un[From.GetXA] ?Ygeneral?! brillante;;;;;;x
+tooltip_imperial_vote_strength_chaplain_learning;[Root.GetFirstName] is a wise ?Y[Root.GetJobTitle]?!;[Root.GetFirstName] est un sage ?Y[Root.GetJobTitle]?!;[Root.GetFirstName] ist ein weiser ?Y[Root.GetJobTitle]?!;;[Root.GetFirstName] es un[Root.GetXA] ?Y[Root.GetJobTitle]?! sabi[Root.GetOA];;;;;;x
+tooltip_feudal_elector_vote_depressed_married_ordained;Become Ordained as a Canon or Canoness.;;;;;;;;;;;;;x
+tooltip_feudal_elector_vote_unmarried;Become Ordained as a Canon or Canoness.;;;;;;;;;;;;;x
+tooltip_feudal_elector_vote_desert_ordained;Become Ordained as a Canon or Canoness.;;;;;;;;;;;;;x
+
+
+##ApostolicTraits###
+desert_father;Desert Father;;;;;;;;;x
+desert_father_desc;This man is regarded as a living saint, for both his steadfast faith and wise teachings.;;;;;;;;;x	
+DESERT_FATHER_TITLE;Deseret Father;;;;;;;;;x
+desert_mother;Desert Mother;;;;;;;;;x
+desert_mother_desc;This woman is regarded as a living saint, for both her steadfast faith and wise teachings.;;;;;;;;;x
+DESERT_MOTHER_TITLE;Deseret Mother;;;;;;;;;x
+school_mark;School of Saint Mark;;;;;;;;;x
+school_mark_desc;This character is adheres to the School of Saint Mark.;;;;;;;;;x
+school_peter;School of Saint Peter;;;;;;;;;x
+school_peter_desc;This character is adheres to the School of Saint Peter.;;;;;;;;;x
+school_mathew;School of Saint Mathew;;;;;;;;;x
+school_mathew_desc;This character is adheres to the School of Saint Mathew.;;;;;;;;;x
+school_thaddeus;School of Saint Thaddeus;;;;;;;;;x
+school_thaddeus_desc;This character is adheres to the School of Saint Thaddeus.;;;;;;;;;x
+
+##CenobiticTraits###
+canon;Canon;;;;;;;;;x
+canoness;Canoness;;;;;;;;;x
+canon_desc;This man has made a vow of sanctity and celibacy.;;;;;;;;;x			
+canoness_desc;This woman has made a vow of sanctity and celibacy.;;;;;;;;;x
+regularis;Regularis;;;;;;;;;x
+regulara;Regulara;;;;;;;;;x
+regularis_desc;This man has been distinguished with devout sanctity and purity.;;;;;;;;;x	
+regulara_desc;This woman has been distinguished with devout sanctity and purity.;;;;;;;;;x
+
+
+##ApostolicDecisions###
+TXT_change_apostolic_branch;Switch between the four Apostolic branches.;;;;;;;;;;;;;x
+EVTDESC_cenobitic_002;Placeholder Text Writers Block hi Derrick.;;;;;;;;;;;;;x
+EVTOPTA_cenobitic_002;Follow the School of Saint Mark.;;;;;;;;;;;;;x
+EVTOPTB_cenobitic_002;Follow the School of Saint Peter.;;;;;;;;;;;;;x
+EVTOPTC_cenobitic_002;Follow the School of Saint Mathew.;;;;;;;;;;;;;x
+EVTOPTD_cenobitic_002;Follow the School of Saint Thaddeus.;;;;;;;;;;;;;x
+
+##CenobiticTitles##
+title_illuminist;Illuminist;;;;;;;;;;;;;x
+title_illuminist_desc;Each member of the Confederation Diet can case relatives oirect vassals who aren't only barons.;;;;;;;;;;;;;x
+title_sacrist;Sacrist;;;;;;;;;;;;;x
+title_sacrist_desc;Each member of the Confederation Diet can case relatives oirect vassals who aren't only barons.;;;;;;;;;;;;;x
+title_bee_keeper;Beekeeper;;;;;;;;;;;;;x
+title_bee_keeper_desc;Each member of the Confederation Diet can case relatives oirect vassals who aren't only barons.;;;;;;;;;;;;;x
+title_cellarer;Cellarer;;;;;;;;;;;;;x
+title_cellarer_desc;Each member of the Confederation Diet can case relatives oirect vassals who aren't only barons.;;;;;;;;;;;;;x
+
+##CenobiticTiers##
+cenobitic_government_slider_0;Feudal;;;;;;;;;x
+cenobitic_government_slider_1;Monastic Feudal;;;;;;;;;x
+cenobitic_government_slider_2;Transitionary Monastic Feudal;;;;;;;;;x
+cenobitic_government_slider_3;Cenobitic Feudal;;;;;;;;;x
+cenobitic_government_slider_4;Pachomial Cenobitic Feudal;;;;;;;;;x
+cenobitic_government_slider_0_desc;This is FEUDAL I will write a description I swear.;;;;;;;;;x
+cenobitic_government_slider_1_desc;This is MONASTIC FEUDAL I will write a description I swear.;;;;;;;;;x
+cenobitic_government_slider_2_desc;This is TRANSITIONARY MONASTIC FEUDAL I will write a description I swear.;;;;;;;;;x
+cenobitic_government_slider_3_desc;This is CENOBITIC FEUDAL I will write a description I swear.;;;;;;;;;x
+cenobitic_government_slider_4_desc;This is PACHOMIAL CENOBITIC FEUDAL I will write a description I swear.;;;;;;;;;x
+
+cenobitic_government;Cenobitic;;;;;;;;;x
+cenobitic_government_desc;This is CENOBITIC FEUDAL I will write a description I swear.;;;;;;;;;x
+cenobitic_government_slider;Ecclesiastical Status;;;;;;;;;x
+cenobitic_government_slider_desc;This is ECCLESIASTICAL I will write a description I swear.;;;;;;;;;x
+
+##CenobiticTitles##
+cenobitic_government_baron_armenian;Kahana;;;;;;;;;x
+cenobitic_government_baron_female_armenian;Yeretzgin;;;;;;;;;x
+cenobitic_government_count_armenian;Paharru;;;;;;;;;x
+cenobitic_government_count_female_armenian;Paharuhi;;;;;;;;;x
+cenobitic_government_duke_armenian;Vanahayr;;;;;;;;;x
+cenobitic_government_duke_female_armenian;Vanahayr;;;;;;;;;x
+cenobitic_government_duchy_armenian;Gavarr;;;;;;;;;x
+cenobitic_government_duchy_of_armenian;Gavarr of;;;;;;;;;x
+cenobitic_government_king_armenian;Arachnort;;;;;;;;;x
+cenobitic_government_king_female_armenian;Oriord;;;;;;;;;x
+cenobitic_government_kingdom_armenian;Abbayut’yun;;;;;;;;;x
+cenobitic_government_kingdom_of_armenian;Abbayut’yun of;;;;;;;;;x
+cenobitic_government_emperor_armenian;Vartabet;;;;;;;;;x
+cenobitic_government_emperor_female_armenian;Vardapetuhi;;;;;;;;;x
+cenobitic_government_empire_armenian;Mitropolit;;;;;;;;;x
+cenobitic_government_empire_of_armenian;Mitropolit of;;;;;;;;;x
+
+gov_cenobitic;Cenobium Conclave;;;;;;;;;;;;;x
+cenobitic_elective;Cenobitic Elective;;;;;;;;;;;;;x
+succ_cenobitic_elective;Cenobitic Elective;;;;;;;;;;;;;x
+succ_cenobitic_elective_desc;A Monastic Way of life, the cenobium of monastics both celibate and non-celibate elect from among themselves a representative to shepard their flock of devotees as they live frugal and pious lives as commonly held by the traditions of the monastery.;;;;;;;;;;;;;x
+succ_pachomial_elective;Pachomial Elective;;;;;;;;;;;;;x
+pachomial_elective;Pachomial Elective;;;;;;;;;;;;;x
+succ_pachomial_elective_desc;A Monastic Way of life, the cenobium of monastics elect from among themselves a representative to shepard their flock of devotees as they live frugal and pious lives as commonly held by the traditions of the monastery.;;;;;;;;;;;;;x
+
+#Sigma Mountain Building
+ca_culture_mountaincaucasian_1;Mountaineer Paths;;;;;;;;;;;;;x
+ca_culture_mountaincaucasian_2;Mountaineer Paths;;;;;;;;;;;;;x
+ca_culture_mountaincaucasian_3;Mountaineer Paths;;;;;;;;;;;;;x
+ca_culture_mountaincaucasian_4;Mountaineer Paths;;;;;;;;;;;;;x
+ca_culture_mountaincaucasian_1_desc;The soldiers of the Caucasian mountains are adapted to its harsh terrain. The Armenians and Georgians of the Caucasus are well adapted to travelling to and fro with a light step. Knowledgable in all the nooks and crannies of the Caucasus. Because of this, the soldiers mainly serve as lightly armoured skirmishers armed with swords, javelins, slings, and bows.;;;;;;;;;;;;;x
+

@@ -1,0 +1,347 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_icon_confederation_government"
+		texturefile = "gfx\\interface\\government_icon_confederation.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_icon_bureaucratic_government"
+		texturefile = "gfx\\interface\\government_icon_bureaucratic.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_cenobitic_government"
+		texturefile = "gfx\\interface\\government_icon_cenobitic.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_pirate_government"
+		texturefile = "gfx\\interface\\government_icon_pirate.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_diwan_government"
+		texturefile = "gfx\\interface\\government_icon_diwan_government.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_hetmanate_government"
+		texturefile = "gfx\\interface\\government_icon_hetmanate.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_romanipen_government"
+		texturefile = "gfx\\interface\\government_icon_romanipen.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_communal_government"
+		texturefile = "gfx\\interface\\government_icon_communal.dds"
+	}
+	spriteType = {
+		name = "GFX_become_pirate"
+		texturefile = "gfx\\interface\\decision_icon_pirate.dds"
+	}
+	spriteType = {
+		name = "GFX_become_feudal"
+		texturefile = "gfx\\interface\\decision_icon_pirate.dds"
+	}
+	spriteType = {
+		name = "GFX_charframe_150_pirate"
+		texturefile = "gfx\\interface\\charframe_150_pirate.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_100_pirate"
+		texturefile = "gfx\\interface\\charframe_100_pirate.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_75_pirate"
+		texturefile = "gfx\\interface\\charframe_75_pirate.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_50_pirate"
+		texturefile = "gfx\\interface\\charframe_50_pirate.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_34_pirate"
+		texturefile = "gfx\\interface\\charframe_34_pirate.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_150_romanipen"
+		texturefile = "gfx\\interface\\charframe_150_romanipen.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_100_romanipen"
+		texturefile = "gfx\\interface\\charframe_100_romanipen.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_75_romanipen"
+		texturefile = "gfx\\interface\\charframe_75_romanipen.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_50_romanipen"
+		texturefile = "gfx\\interface\\charframe_50_romanipen.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_34_romanipen"
+		texturefile = "gfx\\interface\\charframe_34_romanipen.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_150_cenobitic"
+		texturefile = "gfx\\interface\\charframe_150_cenobitic.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_100_cenobitic"
+		texturefile = "gfx\\interface\\charframe_100_cenobitic.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_75_cenobitic"
+		texturefile = "gfx\\interface\\charframe_75_cenobitic.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_50_cenobitic"
+		texturefile = "gfx\\interface\\charframe_50_cenobitic.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_34_cenobitic"
+		texturefile = "gfx\\interface\\charframe_34_cenobitic.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_charframe_150_bureaucratic"
+		texturefile = "gfx\\interface\\charframe_150_bureaucratic.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_100_bureaucratic"
+		texturefile = "gfx\\interface\\charframe_100_bureaucratic.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_75_bureaucratic"
+		texturefile = "gfx\\interface\\charframe_75_bureaucratic.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_50_bureaucratic"
+		texturefile = "gfx\\interface\\charframe_50_bureaucratic.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_34_bureaucratic"
+		texturefile = "gfx\\interface\\charframe_34_bureaucratic.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_charframe_150_diwan"
+		texturefile = "gfx\\interface\\charframe_150_diwan.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_100_diwan"
+		texturefile = "gfx\\interface\\charframe_100_diwan.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_75_diwan"
+		texturefile = "gfx\\interface\\charframe_75_diwan.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_50_diwan"
+		texturefile = "gfx\\interface\\charframe_50_diwan.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_34_diwan"
+		texturefile = "gfx\\interface\\charframe_34_diwan.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_charframe_150_ghazwa"
+		texturefile = "gfx\\interface\\charframe_150_ghazwa.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_100_ghazwa"
+		texturefile = "gfx\\interface\\charframe_100_ghazwa.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_75_ghazwa"
+		texturefile = "gfx\\interface\\charframe_75_ghazwa.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_50_ghazwa"
+		texturefile = "gfx\\interface\\charframe_50_ghazwa.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_34_ghazwa"
+		texturefile = "gfx\\interface\\charframe_34_ghazwa.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_charframe_150_communal"
+		texturefile = "gfx\\interface\\charframe_150_communal.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_100_communal"
+		texturefile = "gfx\\interface\\charframe_100_communal.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_75_communal"
+		texturefile = "gfx\\interface\\charframe_75_communal.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_50_communal"
+		texturefile = "gfx\\interface\\charframe_50_communal.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_34_communal"
+		texturefile = "gfx\\interface\\charframe_34_communal.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_150_hetmanate"
+		texturefile = "gfx\\interface\\charframe_150_hetmanate.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_100_hetmanate"
+		texturefile = "gfx\\interface\\charframe_100_hetmanate.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_75_hetmanate"
+		texturefile = "gfx\\interface\\charframe_75_hetmanate.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_50_hetmanate"
+		texturefile = "gfx\\interface\\charframe_50_hetmanate.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_34_hetmanate"
+		texturefile = "gfx\\interface\\charframe_34_hetmanate.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}	
+	spriteType = {
+		name = "GFX_charframe_150_ethiopia"
+		texturefile = "gfx\\interface\\charframe_150_ethiopia.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_100_ethiopia"
+		texturefile = "gfx\\interface\\charframe_100_ethiopia.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_75_ethiopia"
+		texturefile = "gfx\\interface\\charframe_75_ethiopia.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_50_ethiopia"
+		texturefile = "gfx\\interface\\charframe_50_ethiopia.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_34_ethiopia"
+		texturefile = "gfx\\interface\\charframe_34_ethiopia.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_150_ethiopian_governorate"
+		texturefile = "gfx\\interface\\charframe_150_ethiopian_governorate.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_100_ethiopian_governorate"
+		texturefile = "gfx\\interface\\charframe_100_ethiopian_governorate.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_75_ethiopian_governorate"
+		texturefile = "gfx\\interface\\charframe_75_ethiopian_governorate.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_50_ethiopian_governorate"
+		texturefile = "gfx\\interface\\charframe_50_ethiopian_governorate.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_charframe_34_ethiopian_governorate"
+		texturefile = "gfx\\interface\\charframe_34_ethiopian_governorate.dds"
+		noOfFrames = 6
+		allwaystransparent = yes
+	}
+}

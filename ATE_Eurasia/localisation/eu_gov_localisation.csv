@@ -1,0 +1,106 @@
+#Confederation
+title_confederation_diet_member;Diet Member;;;;;;;;;;;;;x
+title_confederation_diet_member_desc;Diet Members convene at least once a year to discuss legislative matters in the Confederation. Every capable vassal owning a territory inside the realm can become a Member unless they already are a councillor.;;;;;;;;;;;;;x
+title_confederation_diet_president;Diet President;;;;;;;;;;;;;x
+title_confederation_diet_president_desc;The Diet President mediates all prodecures in the Diet. It's the second most powerful position in the Confederation.;;;;;;;;;;;;;x
+
+gov_confederation;Confederation;;;;;;;;;;;;;x
+confederation_government;Confederation;;;;;;;;;;;;;x
+confederation_government_desc;A Confederation is a political alliance between a collection of smaller states. Every Member of the Confederation Diet has a voice in legislation and nomination of the successor in the realm.;;;;;;;;;;;;;x
+
+confederation_elective;Diet Elective;;;;;;;;;;;;;x
+succ_confederation_elective;Diet Elective;;;;;;;;;;;;;x
+succ_confederation_elective_desc;Each member of the Confederation Diet can cast a vote to elect a successor. Candidates are close relatives of the current liege and all direct vassals who aren't only barons.;;;;;;;;;;;;;x
+
+confederation_count;Canton President;;;;;;;;;;;;;x
+confederation_count_female;Canton President;;;;;;;;;;;;;x
+confederation_county_of;Canton of;;;;;;;;;;;;;x
+confederation_duke;League President;;;;;;;;;;;;;x
+confederation_duke_female;League President;;;;;;;;;;;;;x
+confederation_duchy_of;League of;;;;;;;;;;;;;x
+confederation_king;Confederation President;;;;;;;;;;;;;x
+confederation_king_female;Confederation President;;;;;;;;;;;;;x
+confederation_kingdom_of;Confederation of;;;;;;;;;;;;;x
+confederation_emperor;Confederation President;;;;;;;;;;;;;x
+confederation_emperor_female;Confederation President;;;;;;;;;;;;;x
+confederation_empire_of;Grand Confederation of;;;;;;;;;;;;;x
+
+#Bureaucracy
+gov_bureaucracy;Bureaucracy;;;;;;;;;;;;;x
+bureaucratic_government;Bureaucratic;;;;;;;;;;;;;x
+bureaucratic_government_desc;A Bureaucracy is an administration managed by departments in which many functions are delegated. Rulers are required to have skills in many fields and govern according to the benefit of its vassals. Claimant factions are not justified as it is easier to climb the ladder.;;;;;;;;;;;;;x
+
+bureaucratic_elective;Bureaucratic Elective;;;;;;;;;;;;;x
+succ_bureaucratic_elective;Bureaucratic Elective;;;;;;;;;;;;;x
+succ_bureaucratic_elective_desc;Direct Bureaucratic vassals can cast a vote to choose the heir. Candidates are close relatives of the current liege and all direct vassals. Skilled rulers have more sway in electing the successor.;;;;;;;;;;;;;x
+
+tooltip_bureaucratic_vote_strength_liege_emperor;Emperor Authority;;;;;;;;;;;;;x
+tooltip_bureaucratic_vote_strength_liege_king;King Authority;;;;;;;;;;;;;x
+tooltip_bureaucratic_vote_strength_liege_duke;Duke Authority;;;;;;;;;;;;;x
+tooltip_bureaucratic_vote_strength_liege_count;Count Authority;;;;;;;;;;;;;x
+tooltip_bureaucratic_vote_strength_liege_baron;Baron Authority;;;;;;;;;;;;;x
+tooltip_bureaucratic_vote_strength_diplomacy;Diplomacy;;;;;;;;;;;;;x
+tooltip_bureaucratic_vote_strength_martial;Martial;;;;;;;;;;;;;x
+tooltip_bureaucratic_vote_strength_stewardship;Stewardship;;;;;;;;;;;;;x
+tooltip_bureaucratic_vote_strength_intrigue;Intrigue;;;;;;;;;;;;;x
+tooltip_bureaucratic_vote_strength_learning;Learning;;;;;;;;;;;;;x
+
+#bureaucracy_emperor;President;;;;;;;;;;;;;x
+#bureaucracy_emperor_female;President;;;;;;;;;;;;;x
+#bureaucracy_empire_of;Union of;;;;;;;;;;;;;x
+#bureaucracy_king;Commissioner;;;;;;;;;;;;;x
+#bureaucracy_king_female;Commissioner;;;;;;;;;;;;;x
+#bureaucracy_kingdom_of;State of;;;;;;;;;;;;;x
+
+EVTDESCgov.005;[From.GetTitledFirstName] has sent an envoy asking you to adopt his Bureaucratic administration. Now your realm can adopt the same government type. Doing so will eventually change your successsion law and your vassals will slowly adapt to the new system. Moreover, switching to Bureaucratic will allow you to vote on and be eligible for your liege's succession. However, refusing this offer will anger [From.GetObjectPronoun].;;;;;;;;;;;;;x
+EVTOPTAgov.005;I will adopt [From.GetPossPronoun] ways;;;;;;;;;;;;;x
+EVTOPTBgov.005;I won't be a slave!;;;;;;;;;;;;;x
+opinion_refused_bureaucracy;Refused Bureaucracy;;;;;;;;;;;;;x
+
+#Pirate
+pirate_government;Pirate;;;;;;;;;;;;;x
+pirate_government_desc;A Pirate Domain is a haven for all manner of thieves, murderers and smugglers. The Domain is ruled by a collection of influencial captains who compete for dominance.;;;;;;;;;;;;;x
+gov_pirate;Pirate Domain;;;;;;;;;;;;;x
+become_pirate;Hoist the Black Flag;;;;;;;;;;;;;x
+become_pirate_desc;Become a Pirate Domain 'n start lootin'.;;;;;;;;;;;;;x
+
+pirate_baron;Captain;;;;;;;;;;;;;x
+pirate_baron_female;Captain;;;;;;;;;;;;;x
+pirate_barony_of;Captaincy of;;;;;;;;;;;;;x
+pirate_barony;Captaincy;;;;;;;;;;;;;x
+pirate_count;Commodore;;;;;;;;;;;;;x
+pirate_count_female;Commodore;;;;;;;;;;;;;x
+pirate_county_of;Flotilla of;;;;;;;;;;;;;x
+pirate_county;Flotilla;;;;;;;;;;;;;x
+pirate_duke;Admiral;;;;;;;;;;;;;x
+pirate_duke_female;Admiral;;;;;;;;;;;;;x
+pirate_duchy_of;Admiralty of;;;;;;;;;;;;;x
+pirate_duchy;Admiralty;;;;;;;;;;;;;x
+pirate_king;Grand Admiral;;;;;;;;;;;;;x
+pirate_king_female;Grand Admiral;;;;;;;;;;;;;x
+pirate_kingdom_of;Grand Admiralty of;;;;;;;;;;;;;x
+pirate_kingdom;Grand Admiralty;;;;;;;;;;;;;x
+pirate_emperor;Sea Emperor;;;;;;;;;;;;;x
+pirate_emperor_female;Sea Empress;;;;;;;;;;;;;x
+pirate_empire_of;Sea Empire of;;;;;;;;;;;;;x
+pirate_empire;Sea Empire;;;;;;;;;;;;;x
+
+become_feudal;Lower the Black Flag;;;;;;;;;;;;;x
+become_feudal_desc;Go back to your feudal roots.;;;;;;;;;;;;;x
+
+HAS_SHIPYARD;Has shipyard in capital holding;;;;;;;;;;;;;x
+
+pirate_decide_fate;§YDecide Fate§!;;;;;;;;;;;;;x
+pirate_decide_fate_desc;Decide the fate of this character and gain extra §Yprestige§!.;;;;;;;;;;;;;x
+
+EVTgov.010;The Fate of [From.GetFirstName];;;;;;;;;;;;;x
+EVTDESCgov.010;You will now decide the fate of [From.GetFirstName]. Doing so will make you a more fearsome Pirate.;;;;;;;;;;;;;x
+EVTOPTAgov.010;[From.GetSheHeCap] will be less of a man!;;;;;;;;;;;;;x
+EVTOPTBgov.010;[From.GetSheHeCap] will no longer see!;;;;;;;;;;;;;x
+EVTOPTCgov.010;[From.GetSheHeCap] has limbs to spare!;;;;;;;;;;;;;x
+EVTOPTDgov.010;[From.GetSheHeCap] shall be humiliated!;;;;;;;;;;;;;x
+
+call_grand_expedition;Call Grand Expedition;;;;;;;;;;;;;x
+call_grand_expedition_DESC;[root.GetName]'s lands are rich and ripe for pillaging. Call a great pirate army to prepare a Grand Expedition to raid [root.GetHisHer] realm.;;;;;;;;;;;;;x
+
+opinion_decided_fate;Decided my Fate;;;;;;;;;;;;;x

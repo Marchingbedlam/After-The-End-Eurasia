@@ -1,0 +1,224 @@
+#Eastern Christianity, Orthodoxy, Old Believers, Syriacs, and Armenians
+
+celebrate_matagh;Celebrate Matagh;;;;;;;;;;;;;x
+celebrate_matagh_desc;Let us exalt God with the slaughter of an animal.;;;;;;;;;;;;;x
+change_apostolic_branch;Change Apostolic School;;;;;;;;;;;;;x
+change_apostolic_branch_desc;Take this decision to change your religious school of thought.;;;;;;;;;;;;;x
+TXT_armenian_apostolic;Perform the Matagh.;;;;;;;;;;;;;x
+
+celebrated_matagh;Celebrated Matagh;;;;;;;;;;;;;x
+celebrated_matagh_desc;This person has celebrated Matagh.;;;;;;;;;;;;;x
+meat_of_rooster;Slain a Rooster;;;;;;;;;;;;;x
+meat_of_rooster_desc;This person has slaughtered a rooster for Matagh.;;;;;;;;;;;;;x
+meat_of_ram;Slain a Ram;;;;;;;;;;;;;x
+meat_of_ram_desc;This person has slaughtered a ram for Matagh.;;;;;;;;;;;;;x
+meat_of_bull;Slain a Bull;;;;;;;;;;;;;x
+meat_of_bull_desc;This person has slaughtered a bull for Matah.;;;;;;;;;;;;;x
+
+celebrate_matagh;Celebrate Matagh;;;;;;;;;;;;;x
+celebrate_matagh_desc;Celebrate Matagh;;;;;;;;;;;;;x
+
+#Which Animal will you slay
+EVTDESCarmenian_apostolic.1;Matagh is a time-honored tradition, just as Abraham sacrificed the ram on Mount Moriah to give thanks to the Lord now I will do the same. It is a gift to God through giving alms to the poor by distributing the meat of the donated animal.;;;;;;;;;;;;;x
+EVTOPTAarmenian_apostolic.1;I will go with a pair of doves.;;;;;;;;;;;;;x
+EVTOPTBarmenian_apostolic.1;I will go with a rooster.;;;;;;;;;;;;;x
+EVTOPTCarmenian_apostolic.1;I will go with a ram.;;;;;;;;;;;;;x
+EVTOPTDarmenian_apostolic.1;I will go with a bull.;;;;;;;;;;;;;x
+
+#Decide who leads the Sacrifice #1
+#armenian_apostolic.2;By your own hand or not;;;;;;;;;;;;;x
+EVTDESCarmenian_apostolic.2;Traditionally the Matagh is carried out the organizer but many find the thought of killing an animal with their own hands unappealing. One can either participate in the sacrifice personally who push the burden onto a servant. Though not everyone is able to partake the Matagh even if they are willing, women are barred from participating in the slaughter of the animal. While technically not considered a Matagh, women are able to participate in a similar celebration with doves but there is no killing of animals. Since matagh is an offering to God, a crippled and sick animal cannot be sacrificed, since it is customary to offer gifts to God, both material and spiritual, pure, immaculate, selected and best, from honest earnings.;;;;;;;;;;;;;x
+EVTOPTAarmenian_apostolic.2;I will participate in the celebration myself.;;;;;;;;;;;;;x
+EVTOPTBarmenian_apostolic.2;I will have a female servant lead the celebration.;;;;;;;;;;;;;x
+EVTOPTCarmenian_apostolic.2;As a male I am unable to perform the "Matagh" with doves.;;;;;;;;;;;;;x
+
+#Decide who leads the Sacrifice #2
+#armenian_apostolic.8;By your own hand or not;;;;;;;;;;;;;x
+EVTDESCarmenian_apostolic.8;Traditionally the Matagh is carried out the organizer but many find the thought of killing an animal with their own hands unappealing. One can either participate in the sacrifice personally who push the burden onto a servant. Though not everyone is able to partake the Matagh even if they are willing, women are barred from participating in the slaughter of the animal. Since matagh is an offering to God, a crippled and sick animal cannot be sacrificed, since it is customary to offer gifts to God, both material and spiritual, pure, immaculate, selected and best, from honest earnings.;;;;;;;;;;;;;x
+EVTOPTAarmenian_apostolic.8;I will participate in the sacrifice myself.;;;;;;;;;;;;;x
+EVTOPTBarmenian_apostolic.8;I will have my servant make the sacrifice.;;;;;;;;;;;;;x
+EVTOPTCarmenian_apostolic.8;I will enlist a male servant to carry out the Matagh.;;;;;;;;;;;;;x
+
+#Decide who leads the Sacrifice #3
+#armenian_apostolic.9;By your own hand or not;;;;;;;;;;;;;x
+EVTDESCarmenian_apostolic.9;Traditionally the Matagh is carried out the organizer but many find the thought of killing an animal with their own hands unappealing. One can either participate in the sacrifice personally who push the burden onto a servant. Though not everyone is able to partake the Matagh even if they are willing, women are barred from participating in the slaughter of the animal. Since matagh is an offering to God, a crippled and sick animal cannot be sacrificed, since it is customary to offer gifts to God, both material and spiritual, pure, immaculate, selected and best, from honest earnings.;;;;;;;;;;;;;x
+EVTOPTAarmenian_apostolic.9;I will participate in the sacrifice myself.;;;;;;;;;;;;;x
+EVTOPTBarmenian_apostolic.9;I will have my servant make the sacrifice.;;;;;;;;;;;;;x
+EVTOPTCarmenian_apostolic.9;I will enlist a male servant to carry out the Matagh.;;;;;;;;;;;;;x
+
+#Decide who leads the Sacrifice #4
+#armenian_apostolic.10;By your own hand or not;;;;;;;;;;;;;x
+EVTDESCarmenian_apostolic.10;Traditionally the Matagh is carried out the organizer but many find the thought of killing an animal with their own hands unappealing. One can either participate in the sacrifice personally who push the burden onto a servant. Though not everyone is able to partake the Matagh even if they are willing, women are barred from participating in the slaughter of the animal. Since matagh is an offering to God, a crippled and sick animal cannot be sacrificed, since it is customary to offer gifts to God, both material and spiritual, pure, immaculate, selected and best, from honest earnings.;;;;;;;;;;;;;x
+EVTOPTAarmenian_apostolic.10;I will participate in the sacrifice myself.;;;;;;;;;;;;;x
+EVTOPTBarmenian_apostolic.10;I will have my servant make the sacrifice.;;;;;;;;;;;;;x
+EVTOPTCarmenian_apostolic.10;I will enlist a male servant to carry out the Matagh.;;;;;;;;;;;;;x
+
+
+########################### 
+
+#You release the doves
+EVTDESCarmenian_apostolic.3;You have decided to release the doves yourself. While the ritual slaughter of roosters, rams and bulls falls under Matagh. The releasing of the doves does not as there is now sharing of alms with the poor or consecration of salt. It is still considered a holy ceremony and as your release the doves they fly up above you and fly off into the distance.;;;;;;;;;;;;;x
+EVTOPTAarmenian_apostolic.3;Praise God!;;;;;;;;;;;;;x
+
+#A servant releases the doves
+EVTDESCarmenian_apostolic.4;You have decided to let a female servant release the doves. While the ritual slaughter of roosters, rams and bulls falls under Matagh. The releasing of the doves does not as there is now sharing of alms with the poor or consecration of salt. It is still considered a holy ceremony and as your release the doves they fly up above you and fly off into the distance.;;;;;;;;;;;;;x
+EVTOPTAarmenian_apostolic.4;Praise God!;;;;;;;;;;;;;x
+
+#You slaughter the rooster
+EVTDESCarmenian_apostolic.14;You have decided to lead the ceremony yourself, first you get a priest to bless the salt. The animal is not blessed only the salt is, serving as a symbol of purity and sanctification. Leading the rooster to the doorsteps of a church you perform the Matagh, slitting its throat.;;;;;;;;;;;;;x
+EVTOPTAarmenian_apostolic.14;It is finished.;;;;;;;;;;;;;x
+
+#A servant slaughters the rooster
+EVTDESCarmenian_apostolic.15;You have decided to let a servant perform the ceremony, first you get a priest to bless the salt. The animal is not blessed only the salt is, serving as a symbol of purity and sanctification. Leading the rooster to the doorsteps of a church your servant performs the Matagh, slitting its throat.;;;;;;;;;;;;;x
+EVTOPTAarmenian_apostolic.15;It is done.;;;;;;;;;;;;;x
+
+#You slaughter the ram
+EVTDESCarmenian_apostolic.16;You have decided to let a servant perform the ceremony, first you get a priest to bless the salt. The animal is not blessed only the salt is, serving as a symbol of purity and sanctification. Leading the rooster to the doorsteps of a church your servant performs the Matagh, slitting its throat.;;;;;;;;;;;;;x
+EVTOPTAarmenian_apostolic.16;It is done.;;;;;;;;;;;;;x
+
+#A servant slaughters the ram
+EVTDESCarmenian_apostolic.17;You have decided to let a servant perform the ceremony, first you get a priest to bless the salt. The animal is not blessed only the salt is, serving as a symbol of purity and sanctification. Leading the ram to the doorsteps of a church your servant performs the Matagh, slitting its throat.;;;;;;;;;;;;;x
+EVTOPTAarmenian_apostolic.17;It is done.;;;;;;;;;;;;;x
+
+#You slaughter the bull
+EVTDESCarmenian_apostolic.18;You have decided to let a servant perform the ceremony, first you get a priest to bless the salt. The animal is not blessed only the salt is, serving as a symbol of purity and sanctification. Leading the bull to the doorsteps of a church your servant performs the Matagh, slitting its throat.;;;;;;;;;;;;;x
+EVTOPTAarmenian_apostolic.18;It is done.;;;;;;;;;;;;;x
+
+#A servant slaughters the bull
+EVTDESCarmenian_apostolic.19;You have decided to let a servant perform the ceremony, first you get a priest to bless the salt. The animal is not blessed only the salt is, serving as a symbol of purity and sanctification. Leading the bull to the doorsteps of a church your servant performs the Matagh, slitting its throat.;;;;;;;;;;;;;x
+EVTOPTAarmenian_apostolic.19;It is done.;;;;;;;;;;;;;x
+
+########################### 
+#Sharing of sacrifice 
+EVTDESCarmenian_apostolic.5;The rooster has been slain, its meat is boiled in water and seasoned with salt and nothing more. Its entrails and head are not cooked so it is buried so that it does not become food for any scavenging animals. Before its death it is fed the sanctified salt and is purified by it. After it is prepared you have to serve the meat.;;;;;;;;;;;;;x
+EVTOPTAarmenian_apostolic.5;I will share God's gifts with the community.;;;;;;;;;;;;;x
+EVTOPTBarmenian_apostolic.5;I will share it with myself.;;;;;;;;;;;;;x
+
+#Sharing of sacrifice 
+EVTDESCarmenian_apostolic.11;The ram has been slain, its meat is boiled in water and seasoned with salt and nothing more. Its entrails and head are not cooked so it is buried so that it does not become food for any scavenging animals. Before its death it is fed the sanctified salt and is purified by it. After it is prepared you have to serve the meat.;;;;;;;;;;;;;x
+EVTOPTAarmenian_apostolic.11;I will share God's gifts with the community.;;;;;;;;;;;;;x
+EVTOPTBarmenian_apostolic.11;I will share it with myself.;;;;;;;;;;;;;x
+
+#Sharing of sacrifice 
+EVTDESCarmenian_apostolic.12;The bull has been slain, its meat is boiled in water and seasoned with salt and nothing more. Its entrails and head are not cooked so it is buried so that it does not become food for any scavenging animals. Before its death it is fed the sanctified salt and is purified by it. After it is prepared you have to serve the meat.;;;;;;;;;;;;;x
+EVTOPTAarmenian_apostolic.12;I will share God's gifts with the community.;;;;;;;;;;;;;x
+EVTOPTBarmenian_apostolic.12;I will share it with myself.;;;;;;;;;;;;;x
+
+#Sharing of sacrifice #Event 13 
+EVTDESCarmenian_apostolic.13;The sacrifice has been made. Duh!;;;;;;;;;;;;;x
+EVTOPTAarmenian_apostolic.13;I will share God's gifts with the community.;;;;;;;;;;;;;x
+EVTOPTBarmenian_apostolic.13;I will share it with myself.;;;;;;;;;;;;;x
+
+EVTDESCarmenian_apostolic.14;You have decided to lead the sacrifice yourself, as you approach the sitting animal you gfsfdFDFSFDFDSasd.;;;;;;;;;;;;;x
+EVTOPTAarmenian_apostolic.14;Praise God!;;;;;;;;;;;;;x
+
+#A servant slaughters the rooster
+EVTDESCarmenian_apostolic.15;The servant approaches the sitting gfsfdFDFSFDFDSasd.;;;;;;;;;;;;;x
+EVTOPTAarmenian_apostolic.15;Praise God!;;;;;;;;;;;;;x
+
+#You slaughter the ram
+EVTDESCarmenian_apostolic.16;You have decided to lead the sacrifice yourself, as you approach the sitting animal you gfsfdFDFSFDFDSasd.;;;;;;;;;;;;;x
+EVTOPTAarmenian_apostolic.16;Praise God!;;;;;;;;;;;;;x
+
+#A servant slaughters the ram
+EVTDESCarmenian_apostolic.17;The servant approaches the sitting gfsfdFDFSFDFDSasd.;;;;;;;;;;;;;x
+EVTOPTAarmenian_apostolic.17;Praise God!;;;;;;;;;;;;;x
+
+#You slaughter the bull
+EVTDESCarmenian_apostolic.18;You have decided to lead the sacrifice yourself, as you approach the sitting animal you gfsfdFDFSFDFDSasd.;;;;;;;;;;;;;x
+EVTOPTAarmenian_apostolic.18;Praise God!;;;;;;;;;;;;;x
+
+#A servant slaughters the bull
+EVTDESCarmenian_apostolic.19;The servant approaches the sitting gfsfdFDFSFDFDSasd.;;;;;;;;;;;;;x
+EVTOPTAarmenian_apostolic.19;Praise God!;;;;;;;;;;;;;x
+
+
+########################### 
+#Sharing of sacrifice 
+EVTDESCarmenian_apostolic.5;The sacrifice has been made;;;;;;;;;;;;;x
+EVTOPTAarmenian_apostolic.5;I will share God's gifts with the community.;;;;;;;;;;;;;x
+EVTOPTBarmenian_apostolic.5;I will feed more family first.;;;;;;;;;;;;;x
+
+#Sharing of sacrifice 
+EVTDESCarmenian_apostolic.11;The sacrifice has been made;;;;;;;;;;;;;x
+EVTOPTAarmenian_apostolic.11;I will share God's gifts with the community.;;;;;;;;;;;;;x
+EVTOPTBarmenian_apostolic.11;I will go with a pig.;;;;;;;;;;;;;x
+
+#Sharing of sacrifice 
+EVTDESCarmenian_apostolic.12;The sacrifice has been made;;;;;;;;;;;;;x
+EVTOPTAarmenian_apostolic.12;I will share God's gifts with the community.;;;;;;;;;;;;;x
+EVTOPTBarmenian_apostolic.12;I will go with a pig.;;;;;;;;;;;;;x
+
+#Sharing of sacrifice 
+EVTDESCarmenian_apostolic.13;The sacrifice has been made;;;;;;;;;;;;;x
+EVTOPTAarmenian_apostolic.13;I will share God's gifts with the community.;;;;;;;;;;;;;x
+EVTOPTBarmenian_apostolic.13;I will go with a pig.;;;;;;;;;;;;;x
+
+##############All sharings lead here either 6 or 7 (and 7 leads to 7 getting the majorit of the time) Except for the Doves
+
+
+#Refuse to share in God's Gift
+EVTDESCarmenian_apostolic.6;One of your courtiers has discovered that you did not distribute the the meat of the slaughtered animal to the greater community and that you instead plan on distributing the meat solely to yourself and your family. In shock the courtier asks why have you acted so miserly.;;;;;;;;;;;;;x
+EVTOPTAarmenian_apostolic.6;Admit the Theft.;;;;;;;;;;;;;x
+EVTOPTBarmenian_apostolic.6;Give out alms as penance.;;;;;;;;;;;;;x
+EVTOPTCarmenian_apostolic.6;No I don't know what you are talking about.;;;;;;;;;;;;;x
+
+#Successful Matagh
+EVTDESCarmenian_apostolic.7;Matagh is a giving of alms, in the Gospels of Luke it is said, "When you hold a lunch or a dinner, do not invite your friends or your brothers or your relatives or your wealthy neighbors, in case they may invite you back and you have repayment. Rather, when you hold a banquet, invite the poor, the crippled, the lame, the blind; blessed indeed will you be because of their inability to repay you. For you will be repaid at the resurrection of the righteous.";;;;;;;;;;;;;x
+EVTOPTAarmenian_apostolic.7;God is good and God is great.;;;;;;;;;;;;;x
+
+################Assyrian Events
+
+EVTDESC_newnestorian_1;You have chosen to dedicate yourself to a particular saint, and through modeling yourself after them, you may set yourself closer to God's holiness.;;;;;;;;;;;;;x
+EVOTPA_newnestorian_1;I shall dedicate myself to Mar Zaya, blessed and handsome.;;;;;;;;;;;;;x
+EVOTPB_newnestorian_1;I shall dedicate myself to Mar Maroun, for his humbleness.;;;;;;;;;;;;;x
+EVOTPC_newnestorian_1;I shall dedicate myself to Mar Nestor, for laying out the teachings.;;;;;;;;;;;;;x
+EVOTPD_newnestorian_1;I shall dedicate myself to Mar Abba, for his greatness.;;;;;;;;;;;;;x
+nestorian_mar_zaya;Mar Zaya;;;;;;;;;;;;;x
+nestorian_mar_abba;Mar Abba;;;;;;;;;;;;;x
+nestorian_mar_maroun;Mar Maroun;;;;;;;;;;;;;x
+nestorian_mar_nestor;Mar Nestor;;;;;;;;;;;;;x
+select_nestorian_patron_saint;Select Nestorian Patron Saint;;;;;;;;;;;;;x
+select_nestorian_patron_saint_desc;I can choose to dedicate myself to a specific saint in order to come closer to god.;;;;;;;;;;;;;x
+TXT_nestorian_mar_zaya;Mar Zaya is known for being the patron saint against plagues.;;;;;;;;;;;;;x
+TXT_nestorian_mar_abba;Mar Abba is known for his comprehensiveness.;;;;;;;;;;;;;x
+TXT_nestorian_mar_maroun;Mar Maorun is known for his humbleness and respectability.;;;;;;;;;;;;;x
+TXT_nestorian_mar_maroun;Mar Nestor is known for his great knowlodge of religious matters.;;;;;;;;;;;;;x
+EVTOPTA_newnestorian.2;I should strive to be more like them!;;;;;;;;;;;;;x
+EVTOPTB_newnestorian.2;Oh to be like them!;;;;;;;;;;;;;x
+EVTOPTC_newnestorian.2;My heart is now closed to their messages...;;;;;;;;;;;;;x
+EVTDESC_newnestorian.2;My patron saint Zaya did not shy away from matters, they sought the truth of god whenever it led them, and were important in their search of Him even in the sphere of the mystical.;;;;;;;;;;;;;x
+EVTDESC_newnestorian.3;My patron saint Maroun was a humble man, living as an ascetic hermit up in the mountains, and knowing that we should not be proud in the face of God.;;;;;;;;;;;;;x
+EVTDESC_newnestorian.4;My patron saint Nestor was the father of this Church, a corner stone of the knowlodge God revealed, but only through hard work and dedication did he menage, and only through erudition his message spread.;;;;;;;;;;;;;x
+EVTDESC_newnestorian.5;My patron saint Abba was a just man, he knew right from wrong and was a good patriarch of the Church before the event.;;;;;;;;;;;;;x
+EVTDESC_newnestorian.6;Having abandoned my old faith, the teachings of the saints no longer mean the same to me...;;;;;;;;;;;;;x
+
+################### Assyrian Apostolic Events
+opinion_naheere;Celebrated Naheere;;;;;;;;;;;;;x
+opinion_naheere_desc;This person has decided to participate in Naheere.;;;;;;;;;;;;;x
+opinion_refused_naheere;Ignored Naheere;;;;;;;;;;;;;x
+opinion_refused_naheere_desc;This person has refused to participate in Naheere.;;;;;;;;;;;;;x
+celebrate_naheere;Celebrate Naheere;;;;;;;;;;;;;x
+celebrate_naheere_desc;Naheere is a religious sermon celebrated during Holy Week.;;;;;;;;;;;;;x
+
+EVTDESC_newnestorian_7;More than 2,000 years ago, Jesus Christ made his triumphal entry into Jerusalem, where he came in and showed the world his light. This sigil centers around the Parable of the Ten Virgins and celebrates how, if one asks Jesus into his heart, Jesus comes in and shows you the light.;;;;;;;;;;;;;x
+EVTOPTA_newnestorian_7;Send the invitations.;;;;;;;;;;;;;x
+
+EVTDESC_newnestorian_8;You have been invited to join your liege, [From.GetTitledFirstName], at the Naheere [From.GetSheHe] is hosting this year. This ritual dinner is held on the eve of Monday during Holy Week and involves the retelling of the Parable of the Ten Virgins.;;;;;;;;;;;;;x
+EVTOPTA_newnestorian_8;How thoughtful!;;;;;;;;;;;;;x
+EVTOPTB_newnestorian_8;Unfortunately, I have other plans.;;;;;;;;;;;;;x
+
+EVTDESC_newnestorian_9;[From.GetTitledFirstName] has refused your invitation to Naheere, claiming [From.GetSheHe] has other plans.;;;;;;;;;;;;;x
+EVTOPTA_newnestorian_9;I see.;;;;;;;;;;;;;x
+
+EVTDESC_newnestorian_10;You walk into the church, a curtain drawn over the light of windows. The only light is from candles held by the congregation with the priest among them with the altar closed. After prayers in Syriac, the priest tells of the parable of the ten virgins and lets out three cries. After which, the lights in the church are turned on and simultaneously the curtain is opened.;;;;;;;;;;;;;x
+EVTOPTA_newnestorian_10;O Lord, O Lord, open Thy door for us!;;;;;;;;;;;;;x
+
+EVTDESC_newnestorian_11;The service ends with a dramatic entrance into the altar resembling the entrance of the wise virgins into heaven. The candles in the church are lit and simultaneously the curtain is opened. The clergy enter the altar with a hymn of rejoice, accompanied by the peels of the bells on the fans and the censor. Naheere has ended. Your vassals return home, but most seem to agree that the service was well worth the trip.;;;;;;;;;;;;;x
+EVTOPTA_newnestorian_11;The bridegroom has arrived.;;;;;;;;;;;;;x
+
+EVTDESC_newnestorian_12;The service ends with a dramatic entrance into the altar resembling the entrance of the wise virgins into heaven. The candles in the church are lit and simultaneously the curtain is opened. The clergy enter the altar with a hymn of rejoice, accompanied by the peels of the bells on the fans and the censor. Naheere has ended.;;;;;;;;;;;;;x
+EVTOPTA_newnestorian_12;The bridegroom has arrived.;;;;;;;;;;;;;x
+
+nick_the_black_bastard;the Black Bastard;;;;;;;;;;;;;x
+nick_the_caucasian_hammer;the Caucasian Hammer;;;;;;;;;;;;;x

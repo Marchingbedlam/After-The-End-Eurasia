@@ -1,0 +1,27 @@
+
+#EVENTS
+EVTTITLE_joan_1;Whispers of a Lady of Legend;;;;;;;;;;;;;x
+EVTDESC_joan_1;Paris has been taken and is in [Root.Religion.GetName] hands. However, there have been rumours of a peasant woman wandering around the countryside claiming to hold within her a spirit sent by Dieu... Some claim she is inhabited by the Virgin Mary, others by Marianne herself, or even of a valiant woman who died loyal to her last breath for her country and God to defeat a great foe long before the event... The local population enraptured by her call have joined her banners, willing to liberate the Île de France from the hands of filthy heathens and infidels alike.;;;;;;;;;;;;;x
+EVTOPTA_joan_1;A worrying development...;;;;;;;;;;;;;x
+EVTOPTB_joan_1;For [Root.Religion.GetRandomGodName]!;;;;;;;;;;;;;x
+EVTDESC_joan_4;Dear [This.GetName], I am hereby solemnly asking to join me in my campaign to liberate the Holy City of Paris by giving me your assitance, your wisdom and your troops.;;;;;;;;;;;;;x
+EVTOPTA_joan_4;An urgent matter indeed it seems... I will send a detachment right away!;;;;;;;;;;;;;x
+EVTOPTB_joan_4;I have more important matters to attend.;;;;;;;;;;;;;x
+EVTDESC_joan_5;The Great Jeanne has succeeded in her divine mission to liberate Paris, but the situation seems to have snowballed: indeed, she is now claiming to be the rightful ruler of a number of duchies which she wishes to liberate from heathen influence.;;;;;;;;;;;;;x
+EVTOPTA_joan_5;Interesting...;;;;;;;;;;;;;x
+
+#CB
+joan_revolt_desc;You're not supposed to see this;;;;;;;;;;;;;x
+CB_NAME_JOAN_REVOLT;Free [Title.getName};;;;;;;;;;;;;x
+WAR_NAME_JOAN_REVOLT;Jeanne Larchère's Revolt for $OTHER_TITLE$;;;;;;;;;;;;;x
+
+#modifiers - coded in euroasia_religion_modifiers
+joan_success;Won Jeanne Larchère's rebellion ;;;;;;;;;;;;;x
+joan_lost;Lost Jeanne Larchère's rebellion;;;;;;;;;;;;;x
+crushed_joan_revolt; Crushed Jeanne Larchère's rebellion;;;;;;;;;;;;;x
+
+
+#titles
+k_joan_darc;France Neuve;;;;;;;;;;;;;x
+JOAN_ARMY;L'Armée du Salut;;;;;;;;;;;;;x
+d_sun_king_cultist;Haute Cour de la Solarchie;;;;;;;;;;;;;x
