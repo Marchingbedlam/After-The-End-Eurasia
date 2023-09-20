@@ -1384,14 +1384,14 @@ upgrade_school_synagogue = {
 upgrade_chaitya-grihas = {
 	picture = GFX_upgrade_icon_crates
 	
-	potential = { religion = buddhist }
+	potential = { religion_group = buddhist_group }
 	allow = {
 		trigger_if = {
-			limit = { NOT = { religion = buddhist } }
-			religion = buddhist
+			limit = { NOT = { religion_group = buddhist_group } }
+			religion_group = buddhist_group
 		}
 	}
-	active = { religion = buddhist }
+	active = { religion_group = buddhist_group }
 
 	flags = {
 		is_plural
@@ -1412,11 +1412,11 @@ upgrade_chaitya-grihas = {
 upgrade_gompa= {
 	picture = GFX_upgrade_icon_crates
 	
-	potential = { religion = buddhist }
+	potential = { religion_group = buddhist_group }
 	allow = {
 		trigger_if = {
-			limit = { NOT = { religion = buddhist } }
-			religion = buddhist
+			limit = { NOT = { religion_group = buddhist_group } }
+			religion_group = buddhist_group
 		}
 	}
 	active = { } #active even if owner not of the same religion
@@ -1439,14 +1439,14 @@ upgrade_gompa= {
 upgrade_bodhi_tree = {
 	picture = GFX_upgrade_icon_crates
 	
-	potential = { religion = buddhist }
+	potential = { religion_group = buddhist_group }
 	allow = {
 		trigger_if = {
-			limit = { NOT = { religion = buddhist } }
-			religion = buddhist
+			limit = { NOT = { religion_group = buddhist_group } }
+			religion_group = buddhist_group
 		}
 	}
-	active = { religion = buddhist }
+	active = { religion_group = buddhist_group }
 
 	flags = {
 		is_singular
@@ -1466,11 +1466,11 @@ upgrade_bodhi_tree = {
 upgrade_cave_complex = {
 	picture = GFX_upgrade_icon_crates
 	
-	potential = { religion = buddhist }
+	potential = { religion_group = buddhist_group }
 	allow = {
 		trigger_if = {
-			limit = { NOT = { religion = buddhist } }
-			religion = buddhist
+			limit = { NOT = { religion_group = buddhist_group } }
+			religion_group = buddhist_group
 		}
 	}
 	active = { } # active even if owner is not a Budhist?
@@ -1493,14 +1493,14 @@ upgrade_cave_complex = {
 upgrade_vihara = {
 	picture = GFX_upgrade_icon_crates
 	
-	potential = { religion = buddhist }
+	potential = { religion_group = buddhist_group }
 	allow = {
 		trigger_if = {
-			limit = { NOT = { religion = buddhist } }
-			religion = buddhist
+			limit = { NOT = { religion_group = buddhist_group } }
+			religion_group = buddhist_group
 		}
 	}
-	active = { religion = buddhist }
+	active = { religion_group = buddhist_group }
 
 	flags = {
 		is_singular
@@ -1518,11 +1518,11 @@ upgrade_vihara = {
 upgrade_school_buddhist = {
 	picture = GFX_upgrade_icon_crates
 	
-	potential = { religion = buddhist }
+	potential = { religion_group = buddhist_group }
 	allow = {
 		trigger_if = {
-			limit = { NOT = { religion = buddhist } }
-			religion = buddhist
+			limit = { NOT = { religion_group = buddhist_group } }
+			religion_group = buddhist_group
 		}
 	}
 	active = { religion = buddhist }
@@ -1547,15 +1547,15 @@ upgrade_school_buddhist = {
 upgrade_relic_stupa = {
 	picture = GFX_upgrade_icon_crates
 	
-	potential = { religion = buddhist }
+	potential = { religion_group = buddhist_group }
 	allow = {
 		trigger_if = {
-			limit = { NOT = { religion = buddhist } }
-			religion = buddhist
+			limit = { NOT = { religion_group = buddhist_group } }
+			religion_group = buddhist_group
 		}
 	}
 	active = { 
-		religion = buddhist
+		religion_group = buddhist_group
 		hidden_tooltip = {
 			FROMFROM = { is_active = yes }
 		}
@@ -1594,14 +1594,14 @@ upgrade_relic_stupa = {
 upgrade_commerative_stupa = {
 	picture = GFX_upgrade_icon_crates
 	
-	potential = { religion = buddhist }
+	potential = { religion_group = buddhist_group }
 	allow = {
 		trigger_if = {
-			limit = { NOT = { religion = buddhist } }
-			religion = buddhist
+			limit = { NOT = { religion_group = buddhist_group } }
+			religion_group = buddhist_group
 		}
 	}
-	active = { religion = buddhist }
+	active = { religion_group = buddhist_group }
 
 	flags = {
 		is_singular
@@ -1621,14 +1621,14 @@ upgrade_commerative_stupa = {
 upgrade_symbolic_stupa = {
 	picture = GFX_upgrade_icon_crates
 	
-	potential = { religion = buddhist }
+	potential = { religion_group = buddhist_group }
 	allow = {
 		trigger_if = {
-			limit = { NOT = { religion = buddhist } }
-			religion = buddhist
+			limit = { NOT = { religion_group = buddhist_group } }
+			religion_group = buddhist_group
 		}
 	}
-	active = { religion = buddhist }
+	active = { religion_group = buddhist_group }
 
 	flags = {
 		is_singular
@@ -1647,15 +1647,15 @@ upgrade_symbolic_stupa = {
 upgrade_votive_stupa = {
 	picture = GFX_upgrade_icon_crates
 	
-	potential = { religion = buddhist }
+	potential = { religion_group = buddhist_group }
 	allow = {
 		trigger_if = {
-			limit = { NOT = { religion = buddhist } }
-			religion = buddhist
+			limit = { NOT = { religion_group = buddhist_group } }
+			religion_group = buddhist_group
 		}
 		num_of_wonder_upgrades = 6
 	}
-	active = { religion = buddhist }
+	active = { religion_group = buddhist_group }
 
 	flags = {
 		is_singular
@@ -4688,5 +4688,107 @@ upgrade_ark_of_the_covenant = { #The Supposed Ark
 		same_religion_opinion = 5
 		monthly_character_piety = 0.25
 		custom_modifier_text = storing_a_relic_possible_modifier_tt
+	}
+}
+upgrade_ber_trees = {
+	picture = GFX_upgrade_icon_crates
+	
+	potential = { religion = sikh }
+	allow = {
+		trigger_if = {
+			limit = { NOT = { religion = sikh } }
+			religion = sikh
+		}
+	}
+	active = { religion = sikh }
+
+	flags = {
+		is_singular
+		contemplative
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	local_modifier = {
+		
+	}
+	owner_modifier = {
+		same_religion_opinion = 5
+		dynasty_opinion = 5
+	}
+	local_modifier = {
+		local_revolt_risk = -0.02
+	}
+}
+upgrade_ramgarhia_bunga = { 
+	picture = GFX_upgrade_icon_tower
+
+	potential = { religion = sikh }
+	allow = {
+		trigger_if = {
+			limit = { NOT = { religion = sikh } }
+			religion = sikh
+		}
+	}
+	active = { religion = sikh }
+
+	flags = {
+		towering
+		religion_conversion_faster
+		is_singular
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	owner_modifier = {
+		same_religion_opinion = 5
+		custom_modifier_text = religious_spread_custom_modifier_tt
+	}
+}
+
+upgrade_amrit_sarovar = { # Sahn
+	picture = GFX_upgrade_icon_tower
+
+	potential = { religion = sikh }
+	allow = {
+		trigger_if = {
+			limit = { NOT = { religion = sikh } }
+			religion = sikh
+		}
+		num_of_wonder_upgrades = 2
+	}
+	active = { religion = sikh }
+
+	flags = {
+		is_singular
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	local_modifier = {
+		disease_defence = 0.05
+	}
+}
+upgrade_akal_takht = {
+	picture = GFX_upgrade_icon_ingots_gold
+	potential = { }
+	allow = { 
+		
+	}
+	active = { }
+
+	flags = {
+		golden
+		valuable
+	}
+	build_time = 25
+	gold_cost_flat = 1000
+	gold_cost_ticking = 1
+	owner_modifier = {
+		monthly_character_prestige = 2
+		land_organisation = 0.05
+	}
+	local_modifier = {
+		local_revolt_risk = -0.02
 	}
 }

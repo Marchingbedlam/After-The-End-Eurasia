@@ -13,3 +13,31 @@ culture = punjabi
 religion = sikh
 
 # History
+1589.1.1 = { #First Temple
+	build_wonder=wonder_golden_temple
+	set_wonder_stage=2
+	build_wonder_upgrade = upgrade_ber_trees
+	build_wonder_upgrade = upgrade_scribe_room
+	build_wonder_upgrade = upgrade_fountains
+	build_wonder_upgrade = upgrade_amrit_sarovar
+}
+1604.1.1 = { #Completion of the Adi Granth
+	set_wonder_stage=3
+}
+1830.1.1 = { #Gold Encasing of the Temple was done (Also construction associated with the Historic Sikh Empire)
+	set_wonder_stage=4
+	build_wonder_upgrade = upgrade_akal_takht
+	build_wonder_upgrade = upgrade_ramgarhia_bunga
+}
+1984.6.10 = { #Damaged Sustained during Operation Bluestar
+	set_wonder_stage=3
+	destroy_wonder_upgrade = upgrade_akal_takht
+}
+1988.5.5 = { #Restoration of the Area
+	set_wonder_stage=4
+	build_wonder_upgrade = upgrade_akal_takht
+	build_wonder_upgrade = upgrade_historical_mural
+}
+2661.1.1 = { #Damaged Sustained after the Collasped of the Punjabi Authority to Afghan Raiders
+	set_wonder_stage=2
+}
