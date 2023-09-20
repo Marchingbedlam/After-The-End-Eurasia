@@ -1172,6 +1172,10 @@ e_france = {
 				holy_site = chevalier
 				holy_site = sun_king_cultist
 				holy_site = americanist
+				holy_site = ruist
+				holy_site = taoist
+				holy_site = nondescript_far_east
+				holy_site = eastern
 	
 				breton="Pariz"
 				flemish="Parys"
@@ -1808,6 +1812,7 @@ e_france = {
 			c_somme = { # 1568
 				color={ 85 135 181 }
 				color2={ 255 255 255 }
+				holy_site = valinorist
 	
 				arpitan = "Soma"
 				chti = "Sonme"
@@ -2929,6 +2934,7 @@ e_france = {
 			c_gironde = { # 1527
 				color={ 132 41 164 }
 				color2={ 255 255 255 }
+				holy_site = mahayana
 	
 				catalan = "Gironda"
 				basque = "Gironda"
