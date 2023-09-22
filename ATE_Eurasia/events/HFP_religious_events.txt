@@ -700,7 +700,7 @@ character_event = {
 				}
 				modifier = {
 					factor = 1.75
-					FROM = { has_landed_title = e_hre }
+					FROM = { has_landed_title = e_europa }
 				}
 				modifier = {
 					factor = 1.5
@@ -797,23 +797,27 @@ character_event = {
 							any_demesne_title = {
 								can_be_given_away = yes
 								OR = {
-									title = d_latium
-									title = d_spoleto
-									title = d_ancona
-									title = d_ferrara
-									title = d_benevento
-									title = c_roma
+									title = d_lazio
+									title = d_marche
+									title = d_san_marino
+									title = d_romagna
+									title = d_tuscany
+									title = d_emilia
+									title = d_abruzzo
+									title = c_rome
 								}
 							}
 							any_vassal = {
 								any_demesne_title = {
 									OR = {
-										title = d_latium
-										title = d_spoleto
-										title = d_ancona
-										title = d_ferrara
-										title = d_benevento
-										title = c_roma
+										title = d_lazio
+										title = d_marche
+										title = d_san_marino
+										title = d_romagna
+										title = d_tuscany
+										title = d_emilia
+										title = d_abruzzo
+										title = c_rome
 									}
 								}
 							}
@@ -938,15 +942,15 @@ character_event = {
 				modifier = {
 					factor = 1.5
 					has_landed_title = k_papal_state
-					FROM = { has_landed_title = c_roma }
+					FROM = { has_landed_title = c_rome }
 				}
 				modifier = {
 					factor = 1.5
 					has_landed_title = k_papal_state
 					FROM = { 
 						OR = { 
-							has_landed_title = d_latium 
-							any_vassal = { has_landed_title = d_latium }
+							has_landed_title = d_lazio 
+							any_vassal = { has_landed_title = d_lazio }
 						} 
 					}
 				}
@@ -955,8 +959,8 @@ character_event = {
 					has_landed_title = k_papal_state
 					FROM = { 
 						OR = { 
-							has_landed_title = d_spoleto
-							any_vassal = { has_landed_title = d_spoleto }
+							has_landed_title = d_marche
+							any_vassal = { has_landed_title = d_marche }
 						} 
 					}
 				}
@@ -965,8 +969,8 @@ character_event = {
 					has_landed_title = k_papal_state
 					FROM = { 
 						OR = { 
-							has_landed_title = d_ancona
-							any_vassal = { has_landed_title = d_ancona }
+							has_landed_title = d_san_marino
+							any_vassal = { has_landed_title = d_san_marino }
 						} 
 					}
 				}
@@ -975,8 +979,8 @@ character_event = {
 					has_landed_title = k_papal_state
 					FROM = { 
 						OR = { 
-							has_landed_title = d_ferrara
-							any_vassal = { has_landed_title = d_ferrara }
+							has_landed_title = d_romagna
+							any_vassal = { has_landed_title = d_romagna }
 						} 
 					}
 				}
@@ -985,42 +989,70 @@ character_event = {
 					has_landed_title = k_papal_state
 					FROM = { 
 						OR = { 
-							has_landed_title = d_benevento
-							any_vassal = { has_landed_title = d_benevento }
+							has_landed_title = d_tuscany
+							any_vassal = { has_landed_title = d_tuscany }
+						} 
+					}
+				}
+				modifier = {
+					factor = 1.15
+					has_landed_title = k_papal_state
+					FROM = { 
+						OR = { 
+							has_landed_title = d_emilia
+							any_vassal = { has_landed_title = d_emilia }
+						} 
+					}
+				}
+				modifier = {
+					factor = 1.15
+					has_landed_title = k_papal_state
+					FROM = { 
+						OR = { 
+							has_landed_title = d_abruzzo
+							any_vassal = { has_landed_title = d_abruzzo }
 						} 
 					}
 				}
 				modifier = {
 					factor = 1.25
 					has_landed_title = k_papal_state
-					FROM = { has_landed_title = e_hre }
+					FROM = { has_landed_title = e_europa }
 				}
 				modifier = { #If Papacy already controls historical provinces, it won't be interested in gaining even more land in Italy.
 					factor = 0
 					AND = { 
 						OR = { 
-							any_vassal = { has_landed_title = c_roma }
-							has_landed_title = c_roma 
+							any_vassal = { has_landed_title = c_rome }
+							has_landed_title = c_rome 
 						}
 						OR = { 
-							any_vassal = { has_landed_title = d_latium }
-							has_landed_title = d_latium 
+							any_vassal = { has_landed_title = d_lazio }
+							has_landed_title = d_lazio 
 						}
 						OR = { 
-							any_vassal = { has_landed_title = d_spoleto }
-							has_landed_title = d_spoleto 
+							any_vassal = { has_landed_title = d_marche }
+							has_landed_title = d_marche 
 						}
 						OR = { 
-							any_vassal = { has_landed_title = d_ancona }
-							has_landed_title = d_ancona 
+							any_vassal = { has_landed_title = d_san_marino }
+							has_landed_title = d_san_marino 
 						}
 						OR = { 
-							any_vassal = { has_landed_title = d_ferrara }
-							has_landed_title = d_ferrara 
+							any_vassal = { has_landed_title = d_romagna }
+							has_landed_title = d_romagna 
 						}
 						OR = { 
-							any_vassal = { has_landed_title = d_benevento }
-							has_landed_title = d_benevento 
+							any_vassal = { has_landed_title = d_tuscany }
+							has_landed_title = d_tuscany 
+						}
+						OR = { 
+							any_vassal = { has_landed_title = d_emilia }
+							has_landed_title = d_emilia 
+						}
+						OR = { 
+							any_vassal = { has_landed_title = d_abruzzo }
+							has_landed_title = d_abruzzo 
 						}
 					}
 				}
@@ -1152,23 +1184,27 @@ character_event = {
 						OR = {
 							any_demesne_title = {
 								OR = {
-									title = d_latium
-									title = d_spoleto
-									title = d_ancona
-									title = d_ferrara
-									title = d_benevento
-									title = c_roma
+									title = d_lazio
+									title = d_marche
+									title = d_san_marino
+									title = d_romagna
+									title = d_tuscany
+									title = d_emilia
+									title = d_abruzzo
+									title = c_rome
 								}
 							}
 							any_vassal = {
 								any_demesne_title = {
 									OR = {
-										title = d_latium
-										title = d_spoleto
-										title = d_ancona
-										title = d_ferrara
-										title = d_benevento
-										title = c_roma
+										title = d_lazio
+										title = d_marche
+										title = d_san_marino
+										title = d_romagna
+										title = d_tuscany
+										title = d_emilia
+										title = d_abruzzo
+										title = c_rome
 									}
 								}
 							}
@@ -1293,15 +1329,15 @@ character_event = {
 				modifier = {
 					factor = 1.5
 					has_landed_title = k_papal_state
-					FROM = { has_landed_title = c_roma }
+					FROM = { has_landed_title = c_rome }
 				}
 				modifier = {
 					factor = 1.5
 					has_landed_title = k_papal_state
 					FROM = { 
 						OR = { 
-							has_landed_title = d_latium 
-							any_vassal = { has_landed_title = d_latium }
+							has_landed_title = d_lazio 
+							any_vassal = { has_landed_title = d_lazio }
 						} 
 					}
 				}
@@ -1310,8 +1346,8 @@ character_event = {
 					has_landed_title = k_papal_state
 					FROM = { 
 						OR = { 
-							has_landed_title = d_spoleto
-							any_vassal = { has_landed_title = d_spoleto }
+							has_landed_title = d_marche
+							any_vassal = { has_landed_title = d_marche }
 						} 
 					}
 				}
@@ -1320,8 +1356,8 @@ character_event = {
 					has_landed_title = k_papal_state
 					FROM = { 
 						OR = { 
-							has_landed_title = d_ancona
-							any_vassal = { has_landed_title = d_ancona }
+							has_landed_title = d_san_marino
+							any_vassal = { has_landed_title = d_san_marino }
 						} 
 					}
 				}
@@ -1330,8 +1366,8 @@ character_event = {
 					has_landed_title = k_papal_state
 					FROM = { 
 						OR = { 
-							has_landed_title = d_ferrara
-							any_vassal = { has_landed_title = d_ferrara }
+							has_landed_title = d_romagna
+							any_vassal = { has_landed_title = d_romagna }
 						} 
 					}
 				}
@@ -1340,8 +1376,28 @@ character_event = {
 					has_landed_title = k_papal_state
 					FROM = { 
 						OR = { 
-							has_landed_title = d_benevento
-							any_vassal = { has_landed_title = d_benevento }
+							has_landed_title = d_tuscany
+							any_vassal = { has_landed_title = d_tuscany }
+						} 
+					}
+				}
+				modifier = {
+					factor = 1.15
+					has_landed_title = k_papal_state
+					FROM = { 
+						OR = { 
+							has_landed_title = d_emilia
+							any_vassal = { has_landed_title = d_emilia }
+						} 
+					}
+				}
+				modifier = {
+					factor = 1.15
+					has_landed_title = k_papal_state
+					FROM = { 
+						OR = { 
+							has_landed_title = d_abruzzo
+							any_vassal = { has_landed_title = d_abruzzo }
 						} 
 					}
 				}
@@ -1349,28 +1405,36 @@ character_event = {
 					factor = 0
 					AND = { 
 						OR = { 
-							any_vassal = { has_landed_title = c_roma }
-							has_landed_title = c_roma 
+							any_vassal = { has_landed_title = c_rome }
+							has_landed_title = c_rome 
 						}
 						OR = { 
-							any_vassal = { has_landed_title = d_latium }
-							has_landed_title = d_latium 
+							any_vassal = { has_landed_title = d_lazio }
+							has_landed_title = d_lazio 
 						}
 						OR = { 
-							any_vassal = { has_landed_title = d_spoleto }
-							has_landed_title = d_spoleto 
+							any_vassal = { has_landed_title = d_marche }
+							has_landed_title = d_marche 
 						}
 						OR = { 
-							any_vassal = { has_landed_title = d_ancona }
-							has_landed_title = d_ancona 
+							any_vassal = { has_landed_title = d_san_marino }
+							has_landed_title = d_san_marino 
 						}
 						OR = { 
-							any_vassal = { has_landed_title = d_ferrara }
-							has_landed_title = d_ferrara 
+							any_vassal = { has_landed_title = d_romagna }
+							has_landed_title = d_romagna 
 						}
 						OR = { 
-							any_vassal = { has_landed_title = d_benevento }
-							has_landed_title = d_benevento 
+							any_vassal = { has_landed_title = d_tuscany }
+							has_landed_title = d_tuscany 
+						}
+						OR = { 
+							any_vassal = { has_landed_title = d_emilia }
+							has_landed_title = d_emilia 
+						}
+						OR = { 
+							any_vassal = { has_landed_title = d_abruzzo }
+							has_landed_title = d_abruzzo 
 						}
 					}
 				}
@@ -3594,10 +3658,7 @@ letter_event = {
 	border = GFX_event_letter_frame_religion
 
 	trigger = {
-		OR = {
-			religion = catholic
-			religion = fraticelli
-		}
+		religion = catholic
 	}
 	is_triggered_only = yes
 	
@@ -3621,8 +3682,8 @@ letter_event = {
 		#First of all, if the Emperor has Rome, it is asked automatically as an additional gift.
 		#Latium Check
 		if  = { 
-			limit = { has_landed_title = c_roma }
-			c_roma = { 
+			limit = { has_landed_title = c_rome }
+			c_rome = { 
 				grant_title = FROM 
 				any_de_jure_vassal = { #Pope vassalizes all vassal titles in the scope
 					limit = { 
@@ -3646,10 +3707,10 @@ letter_event = {
 				any_demesne_title = {
 					can_be_given_away = yes
 					tier = duke
-					title = d_latium
+					title = d_lazio
 				}
 			}
-			d_latium = { 
+			d_lazio = { 
 				grant_title = FROM 
 				any_de_jure_vassal = {
 					limit = { 
@@ -3673,13 +3734,13 @@ letter_event = {
 					any_demesne_title = {
 						#can_be_given_away = yes #No need as he will only get vassalized.
 						tier = duke
-						title = d_latium
+						title = d_lazio
 					}
 				}
 			}
 			random_vassal = { 
 				limit = { 
-					has_landed_title = d_latium
+					has_landed_title = d_lazio
 					lower_tier_than = FROM
 				} 
 				set_defacto_liege = FROM
@@ -3693,10 +3754,10 @@ letter_event = {
 				any_demesne_title = {
 					can_be_given_away = yes
 					tier = duke
-					title = d_spoleto
+					title = d_marche
 				}
 			}
-			d_spoleto = { 
+			d_marche = { 
 				grant_title = FROM 
 				any_de_jure_vassal = {
 					limit = { 
@@ -3720,13 +3781,13 @@ letter_event = {
 					any_demesne_title = {
 						#can_be_given_away = yes
 						tier = duke
-						title = d_spoleto
+						title = d_marche
 					}
 				}
 			}
 			random_vassal = { 
 				limit = { 
-					has_landed_title = d_spoleto 
+					has_landed_title = d_marche 
 					lower_tier_than = FROM
 				} 
 				set_defacto_liege = FROM
@@ -3740,10 +3801,10 @@ letter_event = {
 				any_demesne_title = {
 					can_be_given_away = yes
 					tier = duke
-					title = d_ancona
+					title = d_san_marino
 				}
 			}
-			d_ancona = { 
+			d_san_marino = { 
 				grant_title = FROM 
 				any_de_jure_vassal = {
 					limit = { 
@@ -3767,13 +3828,13 @@ letter_event = {
 					any_demesne_title = {
 						#can_be_given_away = yes 
 						tier = duke
-						title = d_ancona
+						title = d_san_marino
 					}
 				}
 			}
 			random_vassal = { 
 				limit = { 
-					has_landed_title = d_ancona 
+					has_landed_title = d_san_marino 
 					lower_tier_than = FROM
 				} 
 				set_defacto_liege = FROM
@@ -3787,10 +3848,10 @@ letter_event = {
 				any_demesne_title = {
 					can_be_given_away = yes
 					tier = duke
-					title = d_ferrara
+					title = d_romagna
 				}
 			}
-			d_ferrara = { 
+			d_romagna = { 
 				grant_title = FROM 
 				any_de_jure_vassal = {
 					limit = { 
@@ -3814,13 +3875,13 @@ letter_event = {
 					any_demesne_title = {
 						#can_be_given_away = yes 
 						tier = duke
-						title = d_ferrara
+						title = d_romagna
 					}
 				}
 			}
 			random_vassal = { 
 				limit = { 
-					has_landed_title = d_ferrara 
+					has_landed_title = d_romagna 
 					lower_tier_than = FROM
 				} 
 				set_defacto_liege = FROM
@@ -3834,10 +3895,10 @@ letter_event = {
 				any_demesne_title = {
 					can_be_given_away = yes
 					tier = duke
-					title = d_benevento
+					title = d_tuscany
 				}
 			}
-			d_benevento = { 
+			d_tuscany = { 
 				grant_title = FROM 
 				any_de_jure_vassal = {
 					limit = { 
@@ -3861,13 +3922,55 @@ letter_event = {
 					any_demesne_title = {
 						#can_be_given_away = yes 
 						tier = duke
-						title = d_benevento
+						title = d_tuscany
 					}
 				}
 			}
 			random_vassal = { 
 				limit = { 
-					has_landed_title = d_benevento 
+					has_landed_title = d_tuscany 
+					lower_tier_than = FROM
+				} 
+				set_defacto_liege = FROM
+				hidden_tooltip = { character_event =  { id = HF.20230 } }
+			}
+			break = yes
+		}
+		if  = { 
+			limit = {
+				any_vassal = {
+					lower_tier_than = FROM
+					any_demesne_title = {
+						#can_be_given_away = yes 
+						tier = duke
+						title = d_emilia
+					}
+				}
+			}
+			random_vassal = { 
+				limit = { 
+					has_landed_title = d_emilia 
+					lower_tier_than = FROM
+				} 
+				set_defacto_liege = FROM
+				hidden_tooltip = { character_event =  { id = HF.20230 } }
+			}
+			break = yes
+		}
+		if  = { 
+			limit = {
+				any_vassal = {
+					lower_tier_than = FROM
+					any_demesne_title = {
+						#can_be_given_away = yes 
+						tier = duke
+						title = d_abruzzo
+					}
+				}
+			}
+			random_vassal = { 
+				limit = { 
+					has_landed_title = d_abruzzo 
 					lower_tier_than = FROM
 				} 
 				set_defacto_liege = FROM
@@ -3913,10 +4016,7 @@ letter_event = {
 	border = GFX_event_letter_frame_religion
 
 	trigger = {
-		OR = {
-			religion = catholic
-			religion = fraticelli
-		}
+		religion = catholic
 	}
 	is_triggered_only = yes
 	
@@ -4001,10 +4101,7 @@ letter_event = {
 	border = GFX_event_letter_frame_religion
 
 	trigger = {
-		OR = {
-			religion = catholic
-			religion = fraticelli
-		}
+		religion = catholic
 	}
 	is_triggered_only = yes
 	
@@ -4381,23 +4478,23 @@ character_event = {
 }
 
 #On_startup:Cleanup the Maniots on Charlemagne start if Hellenism is off.
-character_event = {
-	id = HFP.23028
-	hide_window = yes
-	trigger = { 
-		has_game_rule = {
-			name = hellenism_rule
-			value = off
-		}
-		NOT = { year = 800 }
-		is_save_game = no
-		is_alternate_start = no
-		has_landed_title = k_papal_state
-	}
+# character_event = {
+	# id = HFP.23028
+	# hide_window = yes
+	# trigger = { 
+		# has_game_rule = {
+			# name = hellenism_rule
+			# value = off
+		# }
+		# NOT = { year = 800 }
+		# is_save_game = no
+		# is_alternate_start = no
+		# has_landed_title = k_papal_state
+	# }
 	
-	is_triggered_only = yes
+	# is_triggered_only = yes
 
-	immediate = { 
-		478 = { religion = orthodox }
-	}
-}
+	# immediate = { 
+		# 478 = { religion = orthodox }
+	# }
+# }

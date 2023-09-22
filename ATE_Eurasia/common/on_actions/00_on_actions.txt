@@ -16,7 +16,7 @@ on_startup = {
 		#HF.25070 #Add Tattoos to landless starting Warrior Lodge members of high ranks.
 		HFP.40028 # Remove child traits
 		689 # scripted default elective token setup
-		HFP.24025 #Enable Eldership for appropriate religions/Doctrines.
+		#HFP.24025 #Enable Eldership for appropriate religions/Doctrines.
 		GR.30 # Generate random families for characters without
 		HF.15099 # Setup rain in African regions
 		HF.23776 #Assign African tattoos.
@@ -62,7 +62,7 @@ on_yearly_pulse = {
 		HF.49120 # Flavor event tombola Northern Crusade
 		HF.49460 # Reconquista Adventurer
 		HF.49470 # Reconquista flavor tombola
-		HFP.24001 # Elder has too much to live for.
+		#HFP.24001 # Elder has too much to live for.
 		
 	}
 	
@@ -1096,17 +1096,17 @@ on_decade_pulse = {
 			7900 = 0
 		}
 
-		eldership_succession = {
-			15 = HFP.24002 #Pleased Elder moves in.
-			15 = HFP.24004 #Grumpy Elder moves out.
-			5 = HFP.24006 #Happy Elder suggests County grant.
-			45 = HFP.24010 #Grumpy Elder suggests County grant.
-			5 = HFP.24014 #Pleased Elder feels lonely.
-			3 = HFP.24016 #Grumpy Elder fabricates claim against ruler.
-			2 = HFP.24020 #Ecstatic Elder praises ruler.
-			1 = HFP.24022 #Ecstatic Elder mentors ruler.
-			150 = 0
-		}
+		# eldership_succession = {
+			# 15 = HFP.24002 #Pleased Elder moves in.
+			# 15 = HFP.24004 #Grumpy Elder moves out.
+			# 5 = HFP.24006 #Happy Elder suggests County grant.
+			# 45 = HFP.24010 #Grumpy Elder suggests County grant.
+			# 5 = HFP.24014 #Pleased Elder feels lonely.
+			# 3 = HFP.24016 #Grumpy Elder fabricates claim against ruler.
+			# 2 = HFP.24020 #Ecstatic Elder praises ruler.
+			# 1 = HFP.24022 #Ecstatic Elder mentors ruler.
+			# 150 = 0
+		# }
 		
 		horse_prophecy = {
 			delay = 128
@@ -1747,7 +1747,7 @@ on_become_imprisoned_any_reason = {
 		HF.25803 # Childrens' Crusade leader has been captured, disband everything.
 		HFP.23024 # Stop pilgrimage when arrested.
 		HF.12305 # Legendary Hero has been imprisoned - notifies society members
-		HFP.24024 # Elder imprisoned without reason, other Elders upset.
+		#HFP.24024 # Elder imprisoned without reason, other Elders upset.
 	}
 }
 
@@ -1901,7 +1901,7 @@ on_death = {
 		HF.49201 # Reconquista Death
 		HF.49208 # Clean up event troops at an old ex-Reconquistadors death
 		HF.50107 # Clean up for Warrior Lodge war aid
-		HFP.24019 # Elder has been killed, other Elders hate the killer.
+		#HFP.24019 # Elder has been killed, other Elders hate the killer.
 		LT.20501 # Sucessor must decide on Burial if it has wonders with burial_ground flag
 		
 		overseas.53		# inherit opinion used to return adventurer to court
