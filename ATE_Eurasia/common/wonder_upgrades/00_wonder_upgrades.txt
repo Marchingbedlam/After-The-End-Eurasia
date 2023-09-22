@@ -4792,3 +4792,35 @@ upgrade_akal_takht = {
 		local_revolt_risk = -0.02
 	}
 }
+upgrade_mary_church = {
+	picture = GFX_upgrade_icon_roses_red
+	potential = { religion_group = christian }
+	allow = {
+		trigger_if = {
+			limit = { NOT = { religion_group = christian } }
+			religion_group = christian
+		}
+	}
+	active = { religion_group = christian }
+
+	flags = {
+		decorative
+		is_singular
+		contemplative
+		holy
+		stores_relic
+	}
+	build_time = 20
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	owner_modifier = {
+		church_opinion = 5
+		town_opinion = 5
+		same_religion_opinion = 2
+		monthly_character_piety = 0.30
+		custom_modifier_text = storing_a_relic_possible_modifier_tt
+	}
+	local_modifier = {
+		siege_defence = 0.1
+	}
+}

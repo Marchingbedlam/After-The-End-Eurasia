@@ -13,3 +13,46 @@ culture=kaliningradyets
 religion=proletcult
 
 #History
+1274.1.1 = { #Teutonic Knights builds a small forward wooden castle in their fight against Prussi Tribes
+	build_wonder=wonder_malbork
+	set_wonder_stage=1
+}
+1300.1.1 = { #Teutonic Knights refurbish this castle making it their order's base
+	set_wonder_stage=2
+	build_wonder_upgrade = upgrade_armory
+	build_wonder_upgrade = upgrade_watch_tower
+	build_wonder_upgrade = upgrade_moat_pit
+	build_wonder_upgrade = upgrade_dueling_room
+	build_wonder_upgrade = upgrade_mary_church
+}
+1410.1.1 = { #Fortification that will bankrupt the Teutonic Knights
+	build_wonder_upgrade = upgrade_walls_sea
+	build_wonder_upgrade = upgrade_soaring_fortresses
+}
+1466.1.1 = { #Conversion to a Palace for Polish Kings until the Polish Partitions
+	set_wonder_stage=3
+	destroy_wonder_upgrade = upgrade_soaring_fortresses
+	build_wonder_upgrade = upgrade_throne_fancy
+	build_wonder_upgrade = upgrade_royal_bedchamber
+}
+1803.1.1 = { #Interest of Refurbishment for Prussia
+	build_wonder_upgrade = upgrade_historical_mural
+}
+1959.1.1 = { #Damages sustain during World War 2 and fires after the war degrades the structure
+	set_wonder_stage=2
+	destroy_wonder_upgrade = upgrade_watch_tower
+	destroy_wonder_upgrade = upgrade_moat_pit
+	destroy_wonder_upgrade = upgrade_walls_sea
+	destroy_wonder_upgrade = upgrade_mary_church
+}
+1965.1.1 = { #Amber Exhibition of the Restored Castle
+	set_wonder_stage=3
+}
+1989.1.1 = { #Reconstruction of the Church (Technically Restoration process begins following the Fall of the Polish People's Republic post Cold War)
+	build_wonder_upgrade = upgrade_mary_church #technically finished in 2016 but we gonna fudge it to keep it ambiguous
+}
+2513.9.11 = { #Castle Renovations and Upkeep over the centuries after the Event
+	build_wonder_upgrade = upgrade_watch_tower
+	build_wonder_upgrade = upgrade_moat_pit
+	build_wonder_upgrade = upgrade_walls_sea
+}

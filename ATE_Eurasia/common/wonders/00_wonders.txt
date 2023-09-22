@@ -90,11 +90,11 @@
 ################# Historical/Pre-existing Wonders #################
 
 # 7A. The University of Oxford ..... wonder_oxford_library
-# 7B. Fatih District of Istanbul ... wonder_fatih
-# 7C. Kronborg Castle in Denmark ... wonder_kronborg_castle
-# 7D. Walhalla in Germany .......... wonder_walhalla
-# 7E. Orszaghaz Palace in Hungary .. wonder_orszaghaz
-# 7F. Sri Ranganathaswamy Temple in Tamil Nadu ............ wonder_ranganathaswamy
+# 7B. Fatih District ... wonder_fatih
+# 7C. Kronborg Castle ... wonder_kronborg_castle
+# 7D. Walhalla .......... wonder_walhalla
+# 7E. Orszaghaz Palace .. wonder_orszaghaz
+# 7F. Sri Ranganathaswamy Temple ............ wonder_ranganathaswamy
 # 7G. Colosseum .............. wonder_colosseum
 # 7H. Biblioteca Marciana ............... wonder_biblioteca_marciana
 # 7I. Potala Palace ............... wonder_potala_palace
@@ -102,6 +102,7 @@
 # 7K. Rock-Hewn Churches of Lalibela ............... wonder_lalibela_churches
 # 7L. House of the Blackbeards ............... wonder_blackbeard
 # 7M. Golden Temple ............... wonder_golden_temple
+# 7N. Malbork Castle ............... wonder_malbork
 
 ###################################################################
 
@@ -4669,6 +4670,147 @@ wonder_golden_temple = {
 		}
 		owner_modifier = {
 			monthly_character_prestige = 0.1
+			monthly_character_piety = 0.3
+		}
+	}
+}
+
+# 7N. Malbork Castle (Seat of the Teutonic Order) combination of Cathedral and Castle/Palace
+wonder_malbork = {
+	allow_coastal = yes
+	picture = GFX_wonder_strip_malbork
+	potential = {
+	}
+	active = {
+	}
+	flags = {
+		defensive
+		is_destructible
+		cost_medium
+		holy_building
+		inspires_piety
+	}
+	available_upgrades = {
+		# UNIQUE:
+		upgrade_armory
+		upgrade_watch_tower
+		upgrade_vault
+		upgrade_moat_pit
+		upgrade_dueling_room
+		upgrade_walls_sea
+		upgrade_soaring_fortresses
+		upgrade_mary_church
+		upgrade_throne_fancy
+		upgrade_royal_bedchamber
+
+		#
+		upgrade_torture_chamber
+		upgrade_historical_mural
+
+		# OTHER:
+		upgrade_roads
+		upgrade_watchtower_network
+		upgrade_spikes
+		upgrade_hypocausts
+		upgrade_heating_pipes
+		upgrade_retinue
+		upgrade_road_tolls
+		upgrade_tavern
+	}
+	stage = {
+		allow = {
+			FROMFROMFROM = {
+				TECH_FORTIFICATIONS_CONSTRUCTION = 4
+				TECH_CONSTRUCTION = 4
+			}
+		}
+		build_time = 300
+		gold_cost_flat = 2000
+		gold_cost_ticking = 3
+		restore_time = 150
+		loot_time = 200
+		restore_cost_flat = 400
+		restore_cost_ticking = 2
+		upgrade_slots = 2
+		local_modifier = {
+			fort_level = 0.25
+		}
+		owner_modifier = {
+			monthly_character_prestige = 0.05
+			monthly_character_piety = 0.1
+			court_size_maintenance_cost_modifier = -0.05
+		}
+	}
+	stage = {
+		allow = {
+			FROMFROMFROM = {
+				TECH_FORTIFICATIONS_CONSTRUCTION = 4
+				TECH_CONSTRUCTION = 4
+			}
+		}
+		build_time = 400
+		gold_cost_flat = 2100
+		gold_cost_ticking = 3
+		restore_time = 200
+		loot_time = 200
+		restore_cost_flat = 500
+		restore_cost_ticking = 2
+		upgrade_slots = 2
+		local_modifier = {
+			fort_level = 0.25
+		}
+		owner_modifier = {
+			monthly_character_prestige = 0.1
+			court_size_modifier = 5
+		}
+	}
+	stage = {
+		allow = {
+			FROMFROMFROM = {
+				TECH_FORTIFICATIONS_CONSTRUCTION = 4
+				TECH_CONSTRUCTION = 4
+			}
+		}
+		build_time = 500
+		gold_cost_flat = 2200
+		gold_cost_ticking = 3
+		restore_time = 200
+		loot_time = 20
+		restore_cost_flat = 500
+		restore_cost_ticking = 2
+		upgrade_slots = 2
+		local_modifier = {
+			fort_level = 0.25
+			siege_defence = 0.05
+		}
+		owner_modifier = {
+			court_size_maintenance_cost_modifier = -0.05
+			monthly_character_prestige = 0.05
+			monthly_character_piety = 0.2
+		}
+	}
+	stage = {
+		allow = {
+			FROMFROMFROM = {
+				TECH_FORTIFICATIONS_CONSTRUCTION = 4
+				TECH_CONSTRUCTION = 4
+			}
+		}
+		build_time = 600
+		gold_cost_flat = 2300
+		gold_cost_ticking = 3
+		restore_time = 200
+		loot_time = 20
+		restore_cost_flat = 500
+		restore_cost_ticking = 2
+		upgrade_slots = 2
+		local_modifier = {
+			fort_level = 0.5
+			siege_defence = 0.05
+		}
+		owner_modifier = {
+			court_size_modifier = 5
+			monthly_character_prestige = 1
 			monthly_character_piety = 0.3
 		}
 	}
