@@ -1128,6 +1128,18 @@ spriteTypes = {
 		norefcount = yes
 	}
 	spriteType = {
+		name = "GFX_victory_banner"
+		texturefile = "gfx\\interface\\artifacts\\inventory\\victory_banner.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_victory_banner_small"
+		texturefile = "gfx\\interface\\artifacts\\inventory\\victory_banner_small.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+	spriteType = {
 		name = "GFX_favorite_shades_small"
 		texturefile = "gfx\\interface\\artifacts\\inventory\\favorite_shades_small.dds"
 		noOfFrames = 1

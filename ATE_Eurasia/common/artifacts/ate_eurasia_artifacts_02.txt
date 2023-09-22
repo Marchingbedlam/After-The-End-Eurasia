@@ -340,3 +340,16 @@ naqshbandis_tawiz = {
 	picture = "GFX_naqshbandis_tawiz"
 	stacking = no
 }
+victory_banner = { 
+	monthly_character_piety	= 0.25
+	monthly_character_prestige	= 0.5
+	proletcult_opinion = 5
+	levy_size= 0.02
+	quality = 3
+	active = {
+		religion = proletcult
+	}
+	flags = { oldworld }
+	picture = "GFX_victory_banner"
+	stacking = no
+}
