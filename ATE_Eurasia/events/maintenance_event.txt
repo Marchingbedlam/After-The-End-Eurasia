@@ -10,7 +10,7 @@ character_event = {
 	trigger = {
 		always = no
 		AND = {
-			landless = yes
+			is_landed = no
 			has_landed_title = c_roman_patriarch
 		}
 	}
@@ -87,9 +87,8 @@ character_event = {
 					OR = {
 						culture_group = hellenic
 						culture_group = baltic
-						culture_group = russian
+						culture_group = slavic_east
 						culture_group = south_slavic
-						culture_group = ruthenian
 						culture_group = carpathian
 					}
 				}
