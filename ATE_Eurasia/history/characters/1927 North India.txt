@@ -1,129 +1,191 @@
 1927000={
-	name="1927000"
-	dynasty=0 #blank
+	name="Raj"
+	dynasty=7508000 #Gandhi
 	culture=kauravi
-	religion=gandhist
-	trait=tough_soldier
-	trait=wroth
-	trait=socializer
-	trait=gregarious
-	trait=brave
-	trait=content
-	2634.1.1={birth=yes}
-	2691.1.1={death=yes}
+    religion=gandhist
+    martial=5
+    diplomacy=3
+    stewardship=5
+    intrigue=5
+    learning=4
+    trait=grey_eminence
+    trait=scholar
+    trait=ambitious
+    trait=honest
+    trait=gregarious
+    trait=devout
+    trait=just
+    trait=diligent
+    trait=erudite
+    2633.1.1={birth=yes}
+	2663.1.1={add_spouse=1927105}
+    2700.1.1={death=yes}
 }
 
 1927001={
-	name="1927001"
-	dynasty=0 #blank
+	name="Shivangi"
+	dynasty=7508001 #Gupta
 	female=yes
-	culture=kauravi
-	religion=bharathamatha
-	trait=underhanded_rogue
-	trait=greedy
-	trait=dull
-	trait=proud
-	2621.1.1={birth=yes}
-	2691.1.1={death=yes}
+    culture=kauravi
+    religion=bharathamatha
+    martial=4
+    diplomacy=5
+    stewardship=5
+    intrigue=4
+    learning=4
+    trait=intricate_webweaver
+    trait=seductress
+    trait=groomed
+    trait=patient
+    trait=lustful
+    trait=ambitious
+    trait=deceitful
+    trait=envious
+    trait=diligent
+    2641.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1927002={
-	name="1927002"
-	dynasty=0 #blank
+	name="Ash"
+	dynasty=7508003 #Siddiqui
 	culture=kauravi
-	religion=bhagavata
-	trait=martial_cleric
-	trait=content
-	trait=lustful
-	trait=charitable
-	trait=arbitrary
-	trait=shy
-	2625.1.1={birth=yes}
-	2691.1.1={death=yes}
+    religion=bhagavata
+    martial=3
+    diplomacy=4
+    stewardship=5
+    intrigue=3
+    learning=4
+    trait=naive_appeaser
+    trait=craven
+    trait=kind
+    trait=humble
+    trait=cynical
+    2644.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1927003={
-	name="1927003"
-	dynasty=0 #blank
+	name="Aastha"
+	dynasty=7508004 #Bharadwaj
 	female=yes
-	culture=kauravi
-	religion=bharathamatha
-	trait=thrifty_clerk
-	trait=kind
-	trait=patient
-	trait=weak
-	trait=shrewd
-	2639.1.1={birth=yes}
-	2691.1.1={death=yes}
+    culture=kauravi
+    religion=bharathamatha
+    martial=3
+    diplomacy=4
+    stewardship=4
+    intrigue=3
+    learning=4
+    trait=charismatic_negotiator
+    trait=fair
+    trait=gregarious
+    trait=chaste
+    trait=brave
+    trait=honest
+    2635.1.1={birth=yes}
+    2700.1.1={death=yes}
+
 }
 
 1927004={
-	name="1927004"
-	dynasty=0 #blank
+	name="Ali Khan"
+	dynasty=7508005 #Bahadur
 	culture=kauravi
-	religion=barelvi
-	trait=indulgent_wastrel
-	trait=brave
-	trait=patient
-	trait=ambitious
-	trait=gamer
-	2644.1.1={birth=yes}
-	2691.1.1={death=yes}
+    religion=barelvi
+    martial=4
+    diplomacy=3
+    stewardship=2
+    intrigue=4
+    learning=4
+    trait=mastermind_theologian
+    trait=blinded
+    trait=devout
+    trait=charitable
+    trait=temperate
+    trait=proud
+    trait=honest
+    2638.1.1={birth=yes}
+    2700.1.1={death=yes}
+
 }
 
 1927006={
-	name="1927006"
-	dynasty=0 #blank
+	name="Virendra"
+	dynasty=7510002 #Hukumchand
 	culture=kannauji
-	religion=jain
-	trait=thrifty_clerk
-	trait=kind
-	trait=harelip
-	trait=shrewd
-	trait=uncouth
-	trait=lustful
-	2635.1.1={birth=yes}
-	2691.1.1={death=yes}
+    religion=jain
+    martial=3
+    diplomacy=5
+    stewardship=3
+    intrigue=3
+    learning=6
+    trait=martial_cleric
+    trait=chaste
+    trait=zealous
+    trait=erudite
+	give_nickname=nick_the_naked
+    2618.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1927007={
-	name="1927007"
-	dynasty=0 #blank
+	name="Mirza"
+	dynasty=7511004 #Abedi
 	culture=awadhi
-	religion=shiite
-	trait=amateurish_plotter
-	trait=cruel
-	trait=homosexual
-	trait=stressed
-	trait=quick
-	2634.1.1={birth=yes}
-	2691.1.1={death=yes}
+    religion=shiite
+    martial=5
+    diplomacy=4
+    stewardship=3
+    intrigue=3
+    learning=5
+    trait=midas_touched
+    trait=administrator
+    trait=kind
+    trait=humble
+    2645.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1927008={
-	name="1927008"
-	dynasty=0 #blank
+	name="Rahul"
+	dynasty=7509002 #Ram
 	culture=braji
-	religion=bhagavata
-	trait=intricate_webweaver
-	trait=gregarious
-	trait=honest
-	trait=administrator
-	2639.1.1={birth=yes}
-	2691.1.1={death=yes}
+    religion=bhagavata
+    martial=3
+    diplomacy=5
+    stewardship=4
+    intrigue=4
+    learning=3
+    trait=charismatic_negotiator
+    trait=gregarious
+    trait=honest
+    trait=patient
+    trait=diligent
+    trait=just
+    2650.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1927009={
-	name="1927009"
-	dynasty=0 #blank
+	name="Maulvi"
+	dynasty=7510000 #Qasim
 	culture=kannauji
-	religion=ruhi
-	trait=grey_eminence
-	trait=gardener
-	trait=deceitful
-	trait=craven
-	2620.1.1={birth=yes}
-	2691.1.1={death=yes}
+    religion=ruhi
+    martial=3
+    diplomacy=2
+    stewardship=4
+    intrigue=3
+    learning=4
+    trait=scholarly_theologian
+    trait=faqih
+    trait=sympathy_indian
+    trait=devout
+    trait=diligent
+    trait=erudite
+    trait=honest
+    trait=proud
+    2621.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1927010={
@@ -149,31 +211,46 @@
 }
 
 1927011={
-	name="1927011"
-	dynasty=0 #blank
+	name="Rajendra"
+	dynasty=7509000 #Kumar-Singh
 	culture=braji
-	religion=gandhist
-	trait=tough_soldier
-	trait=temperate
-	trait=charitable
-	trait=paranoid
-	2657.1.1={birth=yes}
-	2691.1.1={death=yes}
+    religion=gandhist
+    martial=6
+    diplomacy=4
+    stewardship=3
+    intrigue=5
+    learning=5
+    trait=tough_soldier
+    trait=unyielding_leader
+    trait=gregarious
+    trait=kind
+    trait=content
+    trait=humble
+    trait=wroth
+    trait=just
+    2642.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1927012={
-	name="1927012"
-	dynasty=0 #blank
-	culture=kannauji
-	religion=bharathamatha
+	name="Nivetha"
+	dynasty=7510001 #Sharma
 	female=yes
-	trait=midas_touched
-	trait=lustful
-	trait=slothful
-	trait=kind
-	trait=quick
-	2646.1.1={birth=yes}
-	2691.1.1={death=yes}
+    culture=kannauji
+    religion=bharathamatha
+    martial=5
+    diplomacy=3
+    stewardship=3
+    intrigue=5
+    learning=3
+    trait=brilliant_strategist
+    trait=strong
+    trait=lustful
+    trait=content
+    trait=diligent
+    trait=charitable
+    2630.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1927013={
@@ -203,85 +280,116 @@
 }
 
 1927015={
-	name="1927015"
-	dynasty=0 #blank
+	name="Harivansh"
+	dynasty=7509001 #Shankhdhar
 	culture=braji
-	religion=bharathamatha
-	female=yes
-	trait=elusive_shadow
-	trait=cynical
-	trait=groomed
-	trait=arbitrary
-	2626.1.1={birth=yes}
-	2691.1.1={death=yes}
+    religion=bharathamatha
+    martial=4
+    diplomacy=2
+    stewardship=5
+    intrigue=4
+    learning=4
+    trait=thrifty_clerk
+    trait=greedy
+    trait=lustful
+    trait=gregarious
+    2625.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1927016={
-	name="1927016"
-	dynasty=0 #blank
+	name="Neeraj"
+	dynasty=0 #Jindal
 	culture=kauravi
-	religion=gandhist
-	trait=martial_cleric
-	trait=proud
-	trait=stubborn
-	trait=patient
-	trait=mystic
-	2642.1.1={birth=yes}
-	2691.1.1={death=yes}
+    religion=bharathamatha
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=3
+    learning=5
+    trait=fortune_builder
+    trait=greedy
+    trait=paranoid
+    trait=proud
+    2624.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1927017={
-	name="1927017"
-	dynasty=0 #blank
+	name="Raj"
+	dynasty=7511002 #Harnakas
 	culture=awadhi
-	religion=bhagavata
-	trait=underhanded_rogue
-	trait=proud
-	trait=zealous
-	trait=chaste
-	2644.1.1={birth=yes}
-	2691.1.1={death=yes}
+    religion=bhagavata
+    martial=4
+    diplomacy=3
+    stewardship=4
+    intrigue=3
+    learning=5
+    trait=detached_priest
+    trait=cynical
+    trait=erudite
+    trait=patient
+    2645.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1927018={
-	name="1927018"
-	dynasty=0 #blank
+	name="Nazeer"
+	dynasty=7511008 #Mahmood
 	culture=awadhi
-	religion=bhagavata
-	trait=misguided_warrior
-	trait=hedonist
-	trait=trusting
-	trait=groomed
-	trait=gluttonous
-	2620.1.1={birth=yes}
-	2691.1.1={death=yes}
+    religion=ruhi
+    martial=4
+    diplomacy=6
+    stewardship=6
+    intrigue=4
+    learning=3
+    trait=midas_touched
+    trait=sympathy_indian
+    trait=shrewd
+    trait=proud
+    trait=patient
+    trait=honest
+    trait=just
+    2628.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1927019={
-	name="1927019"
-	dynasty=0 #blank
-	female=yes
+	name="Jagan"
+	dynasty=7511003 #Chauhan
 	culture=awadhi
-	religion=bharathamatha
-	trait=thrifty_clerk
-	trait=slothful
-	trait=patient
-	trait=craven
-	2639.1.1={birth=yes}
-	2691.1.1={death=yes}
+    religion=bharathamatha
+    martial=3
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=5
+    trait=tough_soldier
+    trait=wroth
+    trait=charitable
+    trait=shy
+    2638.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1927020={
-	name="1927020"
-	dynasty=0 #blank
+	name="Siddhant"
+	dynasty=7511009 #Gondvi
 	culture=awadhi
-	religion=bhagavata
-	trait=underhanded_rogue
-	trait=feeble
-	trait=envious
-	trait=administrator
-	2618.1.1={birth=yes}
-	2691.1.1={death=yes}
+    religion=bhagavata
+    martial=3
+    diplomacy=5
+    stewardship=3
+    intrigue=3
+    learning=4
+    trait=underhanded_rogue
+    trait=arbitrary
+    trait=gregarious
+    trait=diligent
+    trait=patient
+    trait=ambitious
+    2642.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1927021={
@@ -298,101 +406,134 @@
 }
 
 1927022={
-	name="1927022"
-	dynasty=0 #blank
+	name="Satya"
+	dynasty=7511000 #Browne
 	culture=awadhi
-	religion=bhagavata
-	trait=duelist
-	trait=gregarious
-	trait=slothful
-	trait=fair
-	trait=kind
-	2635.1.1={birth=yes}
-	2691.1.1={death=yes}
+    religion=bhagavata
+    martial=4
+    diplomacy=5
+    stewardship=4
+    intrigue=3
+    learning=4
+    trait=underhanded_rogue
+    trait=gregarious
+    trait=wroth
+    trait=charitable
+    2648.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1927023={
-	name="1927023"
-	dynasty=0 #blank
+	name="Amritlal"
+	dynasty=7511007 #Premchand
 	culture=awadhi
-	religion=mantramarga
-	trait=indulgent_wastrel
-	trait=gregarious
-	trait=arbitrary
-	trait=patient
-	2616.1.1={birth=yes}
-	2691.1.1={death=yes}
+    religion=mantramarga
+    martial=4
+    diplomacy=3
+    stewardship=5
+    intrigue=3
+    learning=3
+    trait=thrifty_clerk
+    trait=proud
+    trait=genius
+    trait=robust
+    2635.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1927024={
-	name="1927024"
-	dynasty=0 #blank
+	name="Rajendra"
+	dynasty=7511005 #Sankrityayan
 	culture=awadhi
-	religion=bhagavata
-	trait=detached_priest
-	trait=theologian
-	trait=proud
-	trait=stubborn
-	2644.1.1={birth=yes}
-	2691.1.1={death=yes}
+    religion=bhagavata
+    martial=4
+    diplomacy=5
+    stewardship=3
+    intrigue=3
+    learning=5
+    trait=scholarly_theologian
+    trait=devout
+    trait=gregarious
+    trait=humble
+    trait=kind
+    2642.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1927025={
-	name="1927025"
-	dynasty=0 #blank
+	name="Doodhnath"
+	dynasty=2147960 #Pandey
 	culture=bhojpuri
-	religion=vaishnava
-	trait=tough_soldier
-	trait=diligent
-	trait=honest
-	trait=just
-	2630.1.1={birth=yes}
-	2691.1.1={death=yes}
+    religion=vaishnava
+    martial=5
+    diplomacy=3
+    stewardship=4
+    intrigue=4
+    learning=3
+    trait=tough_soldier
+    trait=wroth
+    trait=kind
+    trait=brave
+    2633.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1927026={
-	name="1927026"
-	dynasty=0 #blank
-	female=yes
+	name="Seth"
+	dynasty=0 #Devi
 	culture=awadhi
-	religion=vaishnava
-	trait=flamboyant_schemer
-	trait=craven
-	trait=chaste
-	trait=erudite
-	trait=robust
-	2650.1.1={birth=yes}
-	2691.1.1={death=yes}
+    religion=vaishnava
+    martial=3
+    diplomacy=5
+    stewardship=4
+    intrigue=4
+    learning=3
+    trait=intricate_webweaver
+    trait=wroth
+    trait=cruel
+    trait=arbitrary
+    2636.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1927027={
-	name="1927027"
-	dynasty=0 #blank
+	name="Archana"
+	dynasty=7511006 #Mishra
 	female=yes
-	culture=awadhi
-	religion=bhagavata
-	trait=tough_soldier
-	trait=sturdy
-	trait=lustful
-	trait=gardener
-	trait=gluttonous
-	2616.1.1={birth=yes}
-	2691.1.1={death=yes}
+    culture=awadhi
+    religion=bhagavata
+    martial=4
+    diplomacy=3
+    stewardship=5
+    intrigue=4
+    learning=3
+    trait=amateurish_plotter
+    trait=wroth
+    trait=ambitious
+    trait=stubborn
+    2639.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1927028={
-	name="1927028"
-	dynasty=0 #blank
-	culture=awadhi
-	religion=bharathamatha
+	name="Christine"
+	dynasty=7511001 #Azad
 	female=yes
-	trait=naive_appeaser
-	trait=temperate
-	trait=lustful
-	trait=paranoid
-	trait=ill
-	2634.1.1={birth=yes}
-	2691.1.1={death=yes}
+    culture=awadhi
+    religion=bharathamatha
+    martial=4
+    diplomacy=3
+    stewardship=3
+    intrigue=6
+    learning=5
+    trait=elusive_shadow        
+    trait=schemer
+    trait=cruel
+    trait=stubborn
+    trait=wroth
+    trait=envious
+    2633.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1927030={
@@ -594,17 +735,23 @@
 }
 
 1927053={
-	name="1927053"
-	dynasty=0 #blank
+	name="Inderpal"
+	dynasty=2157130 #Pal-Singh
 	culture=punjabi
-	religion=sikh
-	trait=charismatic_negotiator
-	trait=erudite
-	trait=slothful
-	trait=kind
-	trait=honest
-	2641.1.1={birth=yes}
-	2691.1.1={death=yes}
+    religion=sikh
+    martial=4
+    diplomacy=3
+    stewardship=4
+    intrigue=3
+    learning=3
+    trait=skilled_tactician
+    trait=brave
+    trait=diligent
+    trait=homosexual
+    trait=shy
+    trait=ambitious
+    2641.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1927054={
@@ -841,17 +988,23 @@
 	2680.1.1={death=yes}
 }
 1927070={
-	name="1927070"
-	dynasty=0 #blank
+	name="Charanjeet"
+	dynasty=2157131 #Deep Singh
 	culture=punjabi
-	religion=sikh
-	trait=martial_cleric
-	trait=diligent
-	trait=brave
-	trait=uncouth
-	trait=mystic
-	2650.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=sikh
+    martial=5
+    diplomacy=4
+    stewardship=4
+    intrigue=5
+    learning=3
+    trait=thrifty_clerk
+    trait=quick
+    trait=slothful
+    trait=charitable
+    trait=kind
+    trait=trusting
+    2624.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1927071={
 	name="Arjun"
@@ -1355,4 +1508,41 @@
     trait=gregarious
     2553.1.1={birth=yes}
     2605.1.1={death={death_reason=death_battle}}
+}
+1927105={ 
+	name="Kamala"
+    dynasty=3106006 # Pandit
+    culture=kashmiri
+    religion=gandhist
+	female=yes
+    martial=3
+    diplomacy=4
+    stewardship=5
+    intrigue=3
+    learning=4
+    trait=fortune_builder
+    trait=robust
+    trait=diligent
+    trait=lustful
+    trait=brave
+    trait=patient
+    2645.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1927106={ 
+	name="Ranjit"
+    dynasty=7508000 # Gandhi
+    culture=kauravi
+    religion=gandhist
+    martial=2
+    diplomacy=2
+    stewardship=2
+    intrigue=2
+    learning=2
+    trait=idolizer
+    trait=brooding
+	father=1927000
+	mother=1927105
+    2665.1.1={birth=yes}
+    2700.1.1={death=yes}
 }

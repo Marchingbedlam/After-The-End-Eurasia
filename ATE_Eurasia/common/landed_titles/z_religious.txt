@@ -1339,14 +1339,22 @@ d_nizari = {
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
 
-k_gandhist = {
+d_gandhist = {
 	color={ 110 120 230 }
 	color2={ 220 220 0 }
 	
 	capital = 2800 #Delhi
-	creation_requires_capital = no 
+	creation_requires_capital = yes 
 	
-	landless = no 
+	landless = yes
+	
+	allow = {
+		religion = gandhist
+		num_of_holy_sites = 3 
+		piety = 250
+		prestige = 500 
+		wealth = 250
+	}
 	
 	short_name = yes
 	
