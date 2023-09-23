@@ -504,6 +504,44 @@ spriteTypes = {
 		noOfFrames = 5
 	}
 	
+	#Malbork Castle
+	spriteType = {
+		name = "GFX_wonder_strip_malbork_large"
+		texturefile = "gfx\\interface\\wonder_interface\\wonder_strips\\wonder_stages_malbork_large.dds"
+		noOfFrames = 5
+	}
+	
+	spriteType = {
+		name = "GFX_wonder_strip_malbork_medium"
+		texturefile = "gfx\\interface\\wonder_interface\\wonder_strips\\wonder_stages_malbork_medium.dds"
+		noOfFrames = 5
+	}
+	
+	spriteType = {
+		name = "GFX_wonder_strip_malbork_small"
+		texturefile = "gfx\\interface\\wonder_interface\\wonder_strips\\wonder_stages_malbork_small.dds"
+		noOfFrames = 5
+	}
+	
+	#Golden Temple
+	spriteType = {
+		name = "GFX_wonder_strip_golden_temple_large"
+		texturefile = "gfx\\interface\\wonder_interface\\wonder_strips\\wonder_stages_golden_temple_large.dds"
+		noOfFrames = 5
+	}
+	
+	spriteType = {
+		name = "GFX_wonder_strip_golden_temple_medium"
+		texturefile = "gfx\\interface\\wonder_interface\\wonder_strips\\wonder_stages_golden_temple_medium.dds"
+		noOfFrames = 5
+	}
+	
+	spriteType = {
+		name = "GFX_wonder_strip_golden_temple_small"
+		texturefile = "gfx\\interface\\wonder_interface\\wonder_strips\\wonder_stages_golden_temple_small.dds"
+		noOfFrames = 5
+	}
+	
 	#Rock-Hewn Churches of Lalibela
 	spriteType = {
 		name = "GFX_wonder_strip_lalibela_churches_large"

@@ -35,3 +35,55 @@ narrative_event = {
 		remove_trait = in_hiding
 	}
 }
+
+narrative_event = {
+	id = ateo.2
+	title = ateo2_title
+	desc = ateo2_desc
+	picture = GFX_evt_daoist_master
+	
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {trait = mystic}
+		name = EVT_ateo2_OPTA
+		health = 0.5
+		learning = 2
+		add_trait = vegetarian
+		narrative_event = { id = ateo.3 days = 7 } 
+	}
+	option = {
+		trigger = {NOT = {trait = mystic}}
+		name = EVT_ateo2_OPTB
+		health = 0.15
+		add_trait = vegetarian
+		narrative_event = { id = ateo.3 days = 7 } 
+	}
+	option = { #decide against contemplation
+		name = EVT_ateo2_OPTC
+		remove_trait = in_hiding
+		clr_character_flag = neidan_meditation
+	}
+}
+
+narrative_event = {
+	id = ateo.3
+	title = ateo3_title
+	desc = ateo3_desc
+	picture = GFX_evt_daoist_master
+	
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {trait = mystic}
+		name = EVT_ateo3_OPTA
+		piety = 200
+		remove_trait = in_hiding
+	}
+	option = {
+		trigger = {NOT = {trait = mystic}}
+		name = EVT_ateo3_OPTB
+		piety = 100
+		remove_trait = in_hiding
+	}
+}

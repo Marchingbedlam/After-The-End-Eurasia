@@ -3340,20 +3340,6 @@ character_event = { #Madhab Trait Dispensing (on_startup and on_adulthood checki
 			remove_trait = hanafi_sunnah
 		}
 		else_if = {
-			limit = { 
-				OR = {
-					culture = kurdish
-					culture = yemeni
-					culture = hadhrami
-					culture = dhofari
-					culture_group = cushitic
-				}
-			}
-			add_trait = shafii_aas
-			remove_trait = maliki_aas
-			remove_trait = hanafi_aas
-		}
-		else_if = {
 			limit = {
 				AND = {
 					OR = {
@@ -3386,22 +3372,6 @@ character_event = { #Madhab Trait Dispensing (on_startup and on_adulthood checki
 				80 = {add_trait = hanafi_sunnah}
 			}
 			remove_trait = maliki_sunnah
-		}
-		else_if = {
-			limit = {
-				AND = {
-					OR = {
-						capital_scope = {region = custom_fertile_crescent}
-						capital_scope = {region = custom_old_egypt}
-					}
-					culture_group = arabic
-				}
-			}
-			random_list = {
-				20 = {add_trait = shafii_aas}
-				80 = {add_trait = hanafi_aas}
-			}
-			remove_trait = maliki_aas
 		}
 		else_if = {
 			limit = { 
@@ -3437,21 +3407,6 @@ character_event = { #Madhab Trait Dispensing (on_startup and on_adulthood checki
 		}
 		else_if = {
 			limit = { 
-				OR = {
-					culture_group = turkic_karluk
-					culture_group = turkic_oghuz
-					culture_group = turkic_east
-					culture_group = turkic_west
-					culture_group = caucasian
-					culture_group = iranian
-				}
-			}
-			add_trait = hanafi_aas
-			remove_trait = maliki_aas
-			remove_trait = shafii_aas
-		}
-		else_if = {
-			limit = { 
 				AND = {
 					capital_scope = {region = custom_arabian_pennisula}
 					NOT = { 
@@ -3484,21 +3439,6 @@ character_event = { #Madhab Trait Dispensing (on_startup and on_adulthood checki
 		}
 		else_if = {
 			limit = { 
-				AND = {
-					capital_scope = {region = custom_arabian_pennisula}
-					NOT = { 
-						culture = yemeni
-						culture = hadhrami
-						culture = dhofari
-					}
-				}
-			}
-			add_trait = maliki_aas
-			remove_trait = hanafi_aas
-			remove_trait = shafii_aas
-		}
-		else_if = {
-			limit = { 
 				OR = {
 					culture = sudani
 					culture_group = nilotic
@@ -3526,20 +3466,6 @@ character_event = { #Madhab Trait Dispensing (on_startup and on_adulthood checki
 			add_trait = maliki_sunnah
 			remove_trait = hanafi_sunnah
 			remove_trait = shafii_sunnah
-		}
-		else_if = {
-			limit = { 
-				OR = {
-					culture = sudani
-					culture_group = nilotic
-					culture_group = maghrebi
-					culture_group = amazigh
-					culture = tigre
-				}
-			}
-			add_trait = maliki_aas
-			remove_trait = hanafi_aas
-			remove_trait = shafii_aas
 		}
 	}
 }

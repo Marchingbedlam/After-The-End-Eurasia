@@ -6,6 +6,10 @@ hold_vesak;Celebrate Vesak;;;;;;;;;;;;;x
 hold_vesak_desc;Whether its called Vesak or Buddha Day, Buddhist celebrate the Birth, Nirvana, and Parinirvana of the Buddha which is usually accompanied by widespread celebration.;;;;;;;;;;;;;x
 terma_expedition;Terma Exploration;;;;;;;;;;;;;x
 terma_expedition_desc;Faithful Rime followers can embark on an expedition to unearth the "hidden treasures" or Earth-Terma of the earthly realm as part of their efforts to uncover esoterics truths and transmitted across the generations by elder masters of old.;;;;;;;;;;;;;x
+neidan_meditation;Contemplate the Dao;;;;;;;;;;;;;x
+neidan_meditation_desc;The manifestation of the universal force of Dao is the great harmony of life as the masters have taught in ages past perhaps it is time to reflect on that.;;;;;;;;;;;;;x
+buddhist_meditation;Contemplate the Teachings;;;;;;;;;;;;;x
+buddhist_meditation_desc;It is said that many teachers have had many a great epiphany when they withdraw themselves from this world briefly. Perhaps it is time for you to do the same?;;;;;;;;;;;;;x
 ###########Character Modifiers###########
 resolute_peace;Resolute Peace;;;;;;;;;;;;;x
 resolute_peace_desc;This character has read a sutra, which has created a sense of ease and rejuvenation in thier kingship.;;;;;;;;;;;;;x
@@ -48,12 +52,6 @@ THERAVADA_SUTRA_1;Before you lays a most auspicious sutra, you slowly mouth the 
 THERAVADA_SUTRA_2;Before you lays a most auspicious sutra, you slowly mouth the words of the sutra before you:\n\n"But when a person discerns the origination, ending, allure, drawbacks of, and escape from the sense input, he discerns what is higher than all views."\n\nYou arose from your deep thought and observe your surrounding in a new light, learning a great lesson about overcoming rhetoric so that you may shape the world in better balance and live in accordance to [Root.Religion.GetHighGodName].;;;;;;;;;;;;;x
 THERAVADA_SUTRA_3;Before you lays a most auspicious sutra, you slowly mouth the words of the sutra before you:\n"Thus, friends, from goods not being distributed to the needy, poverty grew rife, from poverty growing rife stealing increased, from the spread of stealing violence grew apace, from the growth of violence the destruction of life became common, from the frequency of murder lying grew common, from lying growing common, evil speaking grew abundant, from evil speaking growing abundant, adultery grew common, from adultery growing common abusive and idle talk grew common, from abusive and idle talk growing common, covetousness and ill-will grew common, from covetousness and ill-will growing common, false opinions grew common, from false opinions growing common, incest, wanton greed and perverted lust grew common, finally from incest, wanton greed and perverted lust growing common lack of filial and religious piety and lack of regard for the head of the family grew great."\nYou arose from your deep thought and observe your surrounding in a new light, as [Root.GetTitle] you must learn to be a justice ruler and exact due justice upon those that shun away from [Root.Religion.GetHighGodName];;;;;;;;;;;;;x
 THERAVADA_SUTRA_4;Before you lays a most auspicious sutra, you slowly mouth the words of the sutra before you:\n"Just as the minter, or an apprentice of his, knows, on holding up a scale, that by so much it has dipped down, by so much it has tilted up. Even so a householder, knowing his income and expenses leads a balanced life, neither extravagant nor miserly, knowing that thus his income will stand in excess of his expenses, but not his expenses in excess of his leads a balanced life."\n\nYou arose from your deep thought and observe your surrounding in a new light, perhaps it is time for you to be humbled by what you have and to balance your life according to the scales of [Root.Religion.GetHighGodName] for which you should always be mindful of.;;;;;;;;;;;;;x
-budevent4_title;An Auspicious Sutra;;;;;;;;;;;;;x
-#THEOBUDDHIST_SUTRA_1
-#THEOBUDDHIST_SUTRA_2
-#THEOBUDDHIST_SUTRA_3
-#THEOBUDDHIST_SUTRA_4
-EVTOPT_praise_theoist;Praise [Root.Religion.GetRandomGodName]!;;;;;;;;;;;;;x
 budevent5_title;An Auspicious Sutra;;;;;;;;;;;;;x
 TIBETAN_SUTRA_1;Before you lays a most auspicious sutra, you slowly mouth the words of the sutra before you:\n\n"He who leads all worldly beings to tread the path of liberation, the teacher of all dharmas- He will bring you well-being."\nYou arose from your deep thought and observe your surrounding in a new light, you are comforted to consider the Auspicious Ones great mercy for all sentient beings, perhaps this gentle peace he felt in the pure bless of enlightment can inform your earthly kingship in the eyes of your subjects...;;;;;;;;;;;;;x
 TIBETAN_SUTRA_2;Before you lays a most auspicious sutra, you slowly mouth the words of the sutra before you:\n\n"The protector who, with thoughts of love for all these beings, sustains them always just as he would his only child- He will bring you well-being."\nYou arose from your deep thought and observe your surrounding in a new light, much as it is the fathers duty to protect his child it wise that a ruler must nuture enlightment through his good judgement.;;;;;;;;;;;;;x
@@ -65,6 +63,18 @@ EVTOPTA_budevent6;"[Root.Religion.GetHighGodName] is compassion!";;;;;;;;;;;;;x
 EVTOPTB_budevent6;"[Root.Religion.GetHighGodName] is reason!";;;;;;;;;;;;;x
 EVTOPTC_budevent6;"[Root.Religion.GetHighGodName] is glorious!";;;;;;;;;;;;;x
 EVTOPTD_budevent6;"[Root.Religion.GetHighGodName] is sublime!";;;;;;;;;;;;;x
+
+#Meditation Event
+budevents4_title;Contemplation under a Tree;;;;;;;;;;;;;x
+budevent4_desc;Many wise teachers have came to insightful reveals of sense reality by removing distractions from one self to connect with the deeper workings of the world. As you bid your worldly existence behind to contemplate underneath the Boddhi Tree one hopes that you can reach a deeper understanding of your senses. You close your eyes watching as your senses sharpen slowly passing the local scenery around you as you slip into a deeper purer state of being.;;;;;;;;;;;;;x
+EVT_BUD_4_OPTA;Praise [Root.Religion.GetRandomGodName]!;;;;;;;;;;;;;x
+EVT_BUD_4_OPTB;Peace from wordly distraction...;;;;;;;;;;;;;x
+EVT_BUD_4_OPTC;I got other things to do...;;;;;;;;;;;;;x
+
+budevents7_title;Contemplation under a Tree;;;;;;;;;;;;;x
+budevent7_desc;As you walk before a mysterious formless shapes you can whiff a scent of incense wafting around a strange abode. Before you can enter the building you awaken from the deep recesses of your experiences back to the current state of being perhaps its a sign of things to come? You are deep in contemplation as you collect your belongings and begin the trek back home to where your court resides. As you pass by a river you can't help but recall a saying about the milky sea, you wonder how many experience you have left to go.;;;;;;;;;;;;;x
+EVT_BUD_7_OPTA;Life is illusory trapped in Samsara!;;;;;;;;;;;;;x
+EVT_BUD_7_OPTB;Clear mind make truer decisions.;;;;;;;;;;;;;x
 
 ####Vesak/Wessak/Buddha Day Celebration####
 continue;You listen intently...;;;;;;;;;;;;;x
@@ -238,3 +248,15 @@ EVTOPTAateo1;Perhaps the messangers of Yishu will provide insight...;;;;;;;;;;;;
 EVTOPTBateo1;Probably should heed the wise-sayings of the sages...;;;;;;;;;;;;x
 EVTOPTCateo1;Records of the Ancients might conceal secret knowledge.;;;;;;;;;;;;x
 EVTOPTDateo1;Perhaps life is transcient in the face of the divine...;;;;;;;;;;;;x
+
+#Meditation Event
+ateo2_title;Contemplation under a Tree;;;;;;;;;;;;;x
+ateo2_desc;It is a common tradition of Daoist masters and their initiates to undergo Neidan in the pursuit to create the immortal body by forging the Golden Elixir (Jindan) from the harmonizing of the essence of Qi and Shen to achieve a reflection of the Dao. As you sit before the tree you can't help but notice a neighboring hill as the sun slowly makes its celestial movement in the heavens. You recall a proverb "The old man of the frontier lost his horse, how could he know if this is not fortuitous?", you smiled as you close your eyes...;;;;;;;;;;;;;x
+EVT_ateo2_OPTA;Praise [Root.Religion.GetRandomGodName]!;;;;;;;;;;;;;x
+EVT_ateo2_OPTB;Peace from wordly distraction...;;;;;;;;;;;;;x
+EVT_ateo2_OPTC;I got other things to do...;;;;;;;;;;;;;x
+
+ateo3_title;Contemplation under a Tree;;;;;;;;;;;;;x
+ateo3_desc;Your little escape from the court has ended and you have found the beauty of the wilderness eye-opening. As you make your way back you can't help but notice a stream nearby. Drawn to the banks, deep in thought, you kneel before the waters intently staring at the formless shapes of the moving water and fishes blissfully going about their life. It all seems so familiar...;;;;;;;;;;;;;x
+EVT_ateo3_OPTA;Finding Harmony in the Dao.;;;;;;;;;;;;;x
+EVT_ateo3_OPTB;I see myself in the flow.;;;;;;;;;;;;;x

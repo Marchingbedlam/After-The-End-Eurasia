@@ -1109,8 +1109,6 @@ character_event = { #Choosing a madhab
 		hidden_tooltip = {
 			remove_trait = maliki
 			remove_trait = shafii
-			remove_trait = maliki_aas
-			remove_trait = shafii_aas
 			remove_trait = maliki_sunnah
 			remove_trait = shafii_sunnah
 		}
@@ -1152,8 +1150,6 @@ character_event = { #Choosing a madhab
 		hidden_tooltip = {
 			remove_trait = hanafi
 			remove_trait = shafii
-			remove_trait = hanafi_aas
-			remove_trait = shafii_aas
 			remove_trait = hanafi_sunnah
 			remove_trait = shafii_sunnah
 		}
@@ -1185,8 +1181,6 @@ character_event = { #Choosing a madhab
 		hidden_tooltip = {
 			remove_trait = hanafi
 			remove_trait = maliki
-			remove_trait = hanafi_aas
-			remove_trait = maliki_aas
 			remove_trait = hanafi_sunnah
 			remove_trait = maliki_sunnah
 		}
