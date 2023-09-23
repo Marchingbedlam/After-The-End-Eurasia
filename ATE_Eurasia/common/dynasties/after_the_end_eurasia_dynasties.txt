@@ -36947,41 +36947,184 @@ coat_of_arms = {
 2147909 = { name = "Mengoubi" culture = meitei used_for_random = no}
 2147910 = { name = "Khynriam" culture = khasi used_for_random = no}
 2147911 = { name = "Sangma" culture = garo used_for_random = no}
-2147912 = { name = "Sailo" culture = mizo used_for_random = no}
-2147913 = { name = "Khaplang" culture = naga used_for_random = no}
+2147912 = { name = "Sailo" culture = mizo used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 4
+			texture_internal = 67
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2147913 = { name = "Khaplang" culture = naga used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 4
+			texture_internal = 66
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2147914 = { name = "Tengima" culture = naga used_for_random = no}
 2147915 = { name = "Haflongbar" culture = dimasa used_for_random = no}
 2147916 = { name = "Bora" culture = assamese used_for_random = no}
 2147917 = { name = "Bose" culture = sylheti used_for_random = no}
-2147918 = { name = "Husain" culture = vangiya used_for_random = no}
+2147918 = { name = "Husain" culture = vangiya used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 63
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2147919 = { name = "Saha" culture = vangiya used_for_random = no}
 2147920 = { name = "Miyan" culture = vangiya used_for_random = no}
 2147921 = { name = "Mazumdar" culture = vangiya used_for_random = no}
 2147923 = { name = "Iqbal" culture = vangiya used_for_random = no}
 2147924 = { name = "Bijoy" culture = vangiya used_for_random = no}
 2147925 = { name = "Hamzah" culture = vangiya used_for_random = no}
-2147926 = { name = "Ali-Khan" culture = vangiya used_for_random = no}
-2147927 = { name = "Ahrar" culture = vangiya used_for_random = no}
+2147926 = { name = "Ali-Khan" culture = vangiya used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 61
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2147927 = { name = "Ahrar" culture = vangiya used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 60
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2147928 = { name = "Sarkar" culture = vangiya used_for_random = no}
-2147929 = { name = "Haq" culture = vangiya used_for_random = no}
-2147930 = { name = "Barman" culture = tripuri used_for_random = no}
+2147929 = { name = "Haq" culture = vangiya used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 62
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2147930 = { name = "Barman" culture = tripuri used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 29
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2147931 = { name = "Choudhury" culture = varendri used_for_random = no}
 2147932 = { name = "Barman" culture = rajbongshi used_for_random = no}
 2147933 = { name = "Makhdam" culture = varendri used_for_random = no}
 2147934 = { name = "Moitra" culture = varendri used_for_random = no}
 2147935 = { name = "Hossein" culture = varendri used_for_random = no}
-2147936 = { name = "Sharif" culture = rangpuri used_for_random = no}
+2147936 = { name = "Sharif" culture = rangpuri used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 64
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2147937 = { name = "Majumdar" culture = rajbongshi used_for_random = no}
 2147938 = { name = "Thakur" culture = rarhi used_for_random = no}
 2147939 = { name = "Bukhari" culture = vangiya used_for_random = no}
-2147940 = { name = "Tagore" culture = rarhi used_for_random = no}
+2147940 = { name = "Tagore" culture = rarhi used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 32
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2147941 = { name = "Banerjee" culture = rarhi used_for_random = no}
 2147942 = { name = "Ojha" culture = rarhi used_for_random = no}
 2147943 = { name = "Sarkar" culture = rarhi used_for_random = no}
 2147944 = { name = "Mukhopadhyay" culture = rarhi used_for_random = no}
 2147945 = { name = "Ghosh" culture = rarhi used_for_random = no}
-2147946 = { name = "Saheb" culture = bhojpuri used_for_random = no}
-2147947 = { name = "Azaad" culture = bhojpuri used_for_random = no}
+2147946 = { name = "Saheb" culture = bhojpuri used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 31
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2147947 = { name = "Azaad" culture = bhojpuri used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 30
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2147948 = { name = "Sinha" culture = bhojpuri used_for_random = no}
 2147949 = { name = "Ajazi" culture = bhojpuri used_for_random = no}
 2147950 = { name = "Prasad" culture = maithil used_for_random = no}
@@ -38211,6 +38354,7 @@ coat_of_arms = {
 		}
 	}
 }
+2157132 = { name = "Rizwi" culture = punjabi religion = deobandi used_for_random = no }
 
 2158000 = { name = "Kutty" culture = muhajir }
 2158001 = { name = "Ali" culture = muhajir }
@@ -44584,22 +44728,74 @@ coat_of_arms = {
 3090046 = { name = "Herath" culture = vedda }
 3090047 = { name = "Hangan" culture = vedda }
 
-3101000 = { name = "Rana" culture = nepali }
+3101000 = { name = "Rana" culture = nepali used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 33
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 3101001 = { name = "Bhandari" culture = nepali }
 3101002 = { name = "Pokharel" culture = nepali }
 3101003 = { name = "Thapa" culture = nepali }
 3101004 = { name = "Shahi" culture = nepali }
 3101005 = { name = "Kaulani" culture = nepali }
-3101006 = { name = "Shah" culture = nepali }
+3101006 = { name = "Shah" culture = nepali used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 36
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 3101007 = { name = "Koirala" culture = nepali }
 3101008 = { name = "Yakthung" culture = nepali }
 
 3102000 = { name = "Sharma" culture = himachali }
 3102001 = { name = "Choudhary" culture = himachali }
 3102002 = { name = "Mushtaq" culture = himachali }
-3102003 = { name = "Negi" culture = himachali }
+3102003 = { name = "Negi" culture = himachali used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 35
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
-3103000 = { name = "Khangsarpa" culture = sikkimese }
+3103000 = { name = "Khangsarpa" culture = sikkimese used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 34
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 3104000 = { name = "Wangchuck" culture = ngalop used_for_random = no 
 	coat_of_arms = {
@@ -44618,11 +44814,50 @@ coat_of_arms = {
 
 3105000 = { name = "Tshering" culture = sharchop }
 
-3106000 = { name = "Zutshi" culture = kashmiri }
+3106000 = { name = "Zutshi" culture = kashmiri used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 37
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 3106001 = { name = "Rinchen" culture = kashmiri }
-3106002 = { name = "Qazvini" culture = kashmiri }
+3106002 = { name = "Qazvini" culture = kashmiri used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 65
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 3106003 = { name = "Andrabi" culture = kashmiri }
-3106004 = { name = "Musa" culture = kashmiri }
+3106004 = { name = "Musa" culture = kashmiri used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 66
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 3106005 = { name = "Chakoo" culture = kashmiri }
 3106006 = { name = "Pandit" culture = kashmiri religion=gandhist used_for_random = no}
 
