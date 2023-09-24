@@ -14,3 +14,15 @@ culture = braji
 religion = bhagavata
 
 # History
+1648.1.1 = { #Mausoleum finishes construction
+	build_wonder=wonder_taj_mahal
+	set_wonder_stage=3
+	build_wonder_upgrade = upgrade_statues_dead
+	build_wonder_upgrade = upgrade_fountains
+	build_wonder_upgrade = upgrade_charbagh
+	build_wonder_upgrade = upgrade_secluded_groves
+	build_wonder_upgrade = upgrade_tower
+	build_wonder_upgrade = upgrade_retinue
+	build_wonder_upgrade = upgrade_watchtower_network
+	build_wonder_upgrade = upgrade_statues_garden
+}

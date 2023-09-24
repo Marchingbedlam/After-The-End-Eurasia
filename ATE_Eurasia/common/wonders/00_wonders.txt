@@ -103,6 +103,7 @@
 # 7L. House of the Blackbeards ............... wonder_blackbeard
 # 7M. Golden Temple ............... wonder_golden_temple
 # 7N. Malbork Castle ............... wonder_malbork
+# 7O. Taj Mahal ............... wonder_taj_mahal
 
 ###################################################################
 
@@ -4812,6 +4813,115 @@ wonder_malbork = {
 			court_size_modifier = 5
 			monthly_character_prestige = 1
 			monthly_character_piety = 0.3
+		}
+	}
+}
+
+# 7O. Taj Mahal
+wonder_taj_mahal = {
+	allow_coastal = yes
+	picture = GFX_wonder_strip_taj_mahal
+	potential = {
+	}
+	active = {
+	}
+	flags = {
+		burial_ground
+		cost_medium
+	}
+	available_upgrades = {
+		# UNIQUE:
+		upgrade_statues_dead
+		upgrade_historical_mural
+		upgrade_fountains
+		upgrade_charbagh
+		upgrade_secluded_groves
+		upgrade_herb_garden
+		upgrade_statues_garden
+
+		upgrade_horse_graveyard
+		upgrade_pet_graveyard
+
+		# OTHER:
+		upgrade_roads
+		upgrade_watchtower_network
+		upgrade_spikes
+		upgrade_tower
+		upgrade_retinue
+		upgrade_road_tolls
+		upgrade_tavern
+	}
+	stage = {
+		allow = {
+		}
+		build_time = 300
+		gold_cost_flat = 2100
+		gold_cost_ticking = 3
+		restore_time = 150
+		loot_time = 200
+		restore_cost_flat = 400
+		restore_cost_ticking = 2
+		upgrade_slots = 2
+		local_modifier = {
+			local_revolt_risk = -0.0025
+		}
+		owner_modifier = {
+			monthly_character_prestige = 0.1
+		}
+	}
+	stage = {
+		allow = {
+		}
+		build_time = 300
+		gold_cost_flat = 1000
+		gold_cost_ticking = 3
+		restore_time = 200
+		loot_time = 200
+		restore_cost_flat = 500
+		restore_cost_ticking = 2
+		upgrade_slots = 2
+		local_modifier = {
+			local_revolt_risk = -0.0025
+		}
+		owner_modifier = {
+			monthly_character_prestige = 0.2
+		}
+	}
+	stage = {
+		allow = {
+		}
+		build_time = 300
+		gold_cost_flat = 1000
+		gold_cost_ticking = 3
+		restore_time = 200
+		loot_time = 20
+		restore_cost_flat = 500
+		restore_cost_ticking = 2
+		upgrade_slots = 2
+		local_modifier = {
+			local_revolt_risk = -0.0025
+		}
+		owner_modifier = {
+			monthly_character_prestige = 0.3
+		}
+	}
+	stage = {
+		allow = {
+		}
+		build_time = 300
+		gold_cost_flat = 1000
+		gold_cost_ticking = 3
+		restore_time = 200
+		loot_time = 20
+		restore_cost_flat = 500
+		restore_cost_ticking = 2
+		upgrade_slots = 2
+		local_modifier = {
+			local_revolt_risk = -0.0025
+		}
+		owner_modifier = {
+			monthly_character_prestige = 0.4
+			dynasty_opinion = 3
 		}
 	}
 }

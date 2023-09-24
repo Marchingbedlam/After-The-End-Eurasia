@@ -504,6 +504,25 @@ spriteTypes = {
 		noOfFrames = 5
 	}
 	
+	#Taj Mahal
+	spriteType = {
+		name = "GFX_wonder_strip_taj_mahal_large"
+		texturefile = "gfx\\interface\\wonder_interface\\wonder_strips\\wonder_stages_taj_mahal_large.dds"
+		noOfFrames = 5
+	}
+	
+	spriteType = {
+		name = "GFX_wonder_strip_taj_mahal_medium"
+		texturefile = "gfx\\interface\\wonder_interface\\wonder_strips\\wonder_stages_taj_mahal_medium.dds"
+		noOfFrames = 5
+	}
+	
+	spriteType = {
+		name = "GFX_wonder_strip_taj_mahal_small"
+		texturefile = "gfx\\interface\\wonder_interface\\wonder_strips\\wonder_stages_taj_mahal_small.dds"
+		noOfFrames = 5
+	}
+	
 	#Malbork Castle
 	spriteType = {
 		name = "GFX_wonder_strip_malbork_large"

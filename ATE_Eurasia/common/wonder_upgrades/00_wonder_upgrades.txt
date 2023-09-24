@@ -4824,3 +4824,21 @@ upgrade_mary_church = {
 		siege_defence = 0.1
 	}
 }
+
+upgrade_charbagh = { #4x bonus of the hanging gardens
+	picture = GFX_upgrade_icon_roses_white
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		decorative
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	owner_modifier = {
+		monthly_character_prestige = 0.4
+		gardener_opinion = 20
+	}
+}
