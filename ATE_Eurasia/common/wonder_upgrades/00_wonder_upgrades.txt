@@ -4842,3 +4842,27 @@ upgrade_charbagh = { #4x bonus of the hanging gardens
 		gardener_opinion = 20
 	}
 }
+
+upgrade_bazaar = { # Bazaar
+	picture = GFX_upgrade_icon_written_paper
+	
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		is_singular
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	owner_modifier = {
+		monthly_character_piety = 0.02
+		town_opinion = 5
+	}
+	local_modifier = {
+		tradevalue = 30
+		supply_limit = 0.5
+		local_tax_modifier = 0.1025
+	}
+}

@@ -19,3 +19,13 @@ culture = kannadiga
 religion = mantramarga
 
 #History
+269.1.1 = { #Earliest Historical Mention of the Complex during the Maurya Empire
+	build_wonder=wonder_hampi
+	set_wonder_stage=3
+	build_wonder_upgrade = upgrade_high_gopura
+	build_wonder_upgrade = upgrade_shikhara
+	build_wonder_upgrade = upgrade_mandapa
+	build_wonder_upgrade = upgrade_temple_complex
+	build_wonder_upgrade = upgrade_school_hindu
+	build_wonder_upgrade = upgrade_hospital_hindu
+}

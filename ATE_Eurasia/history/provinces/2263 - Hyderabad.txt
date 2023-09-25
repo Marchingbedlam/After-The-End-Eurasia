@@ -19,3 +19,13 @@ culture = deccani
 religion = naqshbandi
 
 #History
+1591.1.1 = { #Construction completed under the rule of Muhammad Quli Qutb Shah
+	build_wonder=wonder_charminar
+	set_wonder_stage=3
+	build_wonder_upgrade = upgrade_minaret
+	build_wonder_upgrade = upgrade_bazaar
+	build_wonder_upgrade = upgrade_open_courtyard
+	build_wonder_upgrade = upgrade_lamps_hanging
+	build_wonder_upgrade = upgrade_soup_kitchen
+	build_wonder_upgrade = upgrade_custodian_of_the_mosque
+}
