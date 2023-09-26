@@ -376,8 +376,14 @@ character_event = {
 		2721 = {
 			add_province_modifier = { name = landmark_yumen_pass duration = -1 }
 			}
+		2798 = {
+			add_province_modifier = { name = landmark_red_fort duration = -1 }
+			}
 		2800 = {
 			add_province_modifier = { name = landmark_iron_pillar duration = -1 }
+			}
+		2905 = {
+			add_province_modifier = { name = landmark_mehrangarh duration = -1 }
 			}
 		set_global_flag = landmarks_set
 	}
