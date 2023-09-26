@@ -337,6 +337,12 @@ character_event = {
 		2040 = {
 			add_province_modifier = { name = landmark_erbil_citadel duration = -1 }
 			}
+		2061 = {
+			add_province_modifier = { name = landmark_gateway_of_india duration = -1 }
+			add_province_modifier = { name = landmark_taj_palace duration = -1 }
+			add_province_modifier = { name = landmark_hutatma_chowk duration = -1 }
+			add_province_modifier = { name = landmark_victoria_terminus duration = -1 }
+			}
 		2085 = {
 			add_province_modifier = { name = landmark_lake_tuz duration = -1 }
 			}
@@ -369,6 +375,9 @@ character_event = {
 			}
 		2721 = {
 			add_province_modifier = { name = landmark_yumen_pass duration = -1 }
+			}
+		2800 = {
+			add_province_modifier = { name = landmark_iron_pillar duration = -1 }
 			}
 		set_global_flag = landmarks_set
 	}
