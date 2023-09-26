@@ -22,3 +22,19 @@ death_went_back_to_ethiopia = {
 	killer_icon = 1
 	sound = no
 }
+death_went_to_ethiopia = {
+	can_nokiller = yes
+	long_desc = "DEATH_WENT_TO_ETHIOPIA"
+	death_date_desc = "DEATH_DATE_ETHIOPIA"
+	icon = 2
+	killer_icon = 1
+	sound = no
+}
+death_went_to_america = {
+	can_nokiller = yes
+	long_desc = "DEATH_WENT_TO_AMERICA"
+	death_date_desc = "DEATH_DATE_AMERICA"
+	icon = 2
+	killer_icon = 1
+	sound = no
+}
