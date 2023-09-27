@@ -950,35 +950,41 @@
 }
 
 1960058={
-	name="1960058"
-	dynasty=0 #blank
-	female=yes
+	name="Prachi"
+	dynasty=7513007 #Kumar
 	culture=gujarati
-	religion = antaraveda
-	trait=indulgent_wastrel
-	trait=hunter
-	trait=trusting
-	trait=greedy
-	trait=craven
-	trait=stubborn
-	2633.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=antaraveda
+    female=yes
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=midas_touched
+    trait=quick
+    trait=stubborn
+    trait=ambitious
+    2634.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1960059={
-	name="1960059"
-	dynasty=0 #blank
-	female=yes
+	name="Swara"
+	dynasty=7513008 #Dholakia
 	culture=gujarati
-	religion = antaraveda
-	trait=fortune_builder
-	trait=ambitious
-	trait=falconer
-	trait=dwarf
-	trait=dull
-	trait=envious
-	2641.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=antaraveda
+    female=yes
+    martial=3
+    diplomacy=4
+    stewardship=3
+    intrigue=5
+    learning=6
+    trait=martial_cleric
+    trait=gluttonous
+    trait=arbitrary
+    trait=gregarious
+    2648.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1960060={
@@ -1197,142 +1203,181 @@
 }
 
 1960074={
-	name="1960074"
-	dynasty=0 #blank
+	name="Jigar"
+	dynasty=7513006 #Ahir
 	culture=gujarati
-	religion = bhagavata
-	trait=brilliant_strategist
-	trait=diligent
-	trait=deceitful
-	trait=ugly
-	trait=humble
-	trait=ill
-	2648.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=bhagavata
+    martial=5
+    diplomacy=3
+    stewardship=5
+    intrigue=3
+    learning=5
+    trait=detached_priest
+    trait=cynical
+    trait=patient
+    trait=proud
+    trait=honest
+    2625.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1960075={
-	name="1960075"
-	dynasty=0 #blank
-	culture=gujarati
-	religion = bhagavata
-	trait=flamboyant_schemer
-	trait=socializer
-	trait=erudite
-	trait=groomed
-	trait=diligent
-	trait=envious
-	2630.1.1={birth=yes}
-	2680.1.1={death=yes}
+	name="Lilavati"
+	dynasty=7513000 #Sanghavi
+	female=yes
+    culture=gujarati
+    religion=jain
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=6
+    trait=scholarly_theologian
+    trait=celibate
+    trait=shrewd
+    trait=devout
+    trait=proud
+    trait=patient
+    trait=charitable
+    trait=chaste
+    trait=content
+    2640.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1960076={
-	name="1960076"
-	dynasty=0 #blank
+	name="Rasikbala"
+	dynasty=7513005 #Hasmukh
 	female=yes
-	culture=gujarati
-	religion = bhagavata
-	trait=fortune_builder
-	trait=cynical
-	trait=just
-	trait=fair
-	trait=chaste
-	trait=paranoid
-	2623.1.1={birth=yes}
-	2680.1.1={death=yes}
+    culture=gujarati
+    religion=bhagavata
+    martial=5
+    diplomacy=3
+    stewardship=5
+    intrigue=4
+    learning=3
+    trait=fortune_builder
+    trait=just
+    trait=diligent
+    trait=stubborn
+    2629.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1960077={
-	name="1960077"
-	dynasty=0 #blank
+	name="Govind"
+	dynasty=7516002 #Pargi
 	culture=marwari
-	religion = jain
-	trait=grey_eminence
-	trait=wroth
-	trait=hedonist
-	trait=seductress
-	trait=charitable
-	trait=craven
-	2635.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=jain
+    martial=3
+    diplomacy=3
+    stewardship=4
+    intrigue=4
+    learning=6
+    trait=charismatic_negotiator
+    trait=gregarious
+    trait=content
+    trait=stubborn
+    trait=patient
+    2618.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1960078={
-	name="1960078"
-	dynasty=0 #blank
+	name="Vijayrajsinhji"
+	dynasty=7513003 #Gohil
 	culture=gujarati
-	religion = gandhist
-	trait=naive_appeaser
-	trait=flamboyant_schemer
-	trait=humble
-	trait=content
-	trait=lustful
-	trait=zealous
-	2637.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=gandhist
+    martial=5
+    diplomacy=6
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=robust
+    trait=brave
+    trait=wroth
+    2642.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1960079={
-	name="1960079"
-	dynasty=0 #blank
+	name="Vinoo"
+	dynasty=7513001 #Ranjitsinhji
 	culture=gujarati
-	religion = satyagraha
-	trait=proud
-	trait=gardener
-	trait=arbitrary
-	trait=greedy
-	trait=wroth
-	trait=harelip
-	2623.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=satyagraha
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=martial_cleric
+    trait=zealous
+    trait=brave
+    trait=ambitious
+    trait=patient
+    2625.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1960080={
-	name="1960080"
-	dynasty=0 #blank
-	female=yes
+	name="Ajay"
+	dynasty=7513004 #Amitbhai
 	culture=gujarati
-	religion = jain
-	trait=misguided_warrior
-	trait=erudite
-	trait=proud
-	trait=kind
-	trait=chaste
-	trait=honest
-	2636.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=bhagavata
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=flamboyant_schemer
+    trait=poet
+    trait=charitable
+    trait=humble
+    trait=envious
+    trait=cynical
+    2636.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1960081={
-	name="1960081"
-	dynasty=0 #blank
+	name="Mankumari"
+	dynasty=7512000 #Pradyumansinhji
 	female=yes
-	culture=kutchi
-	religion = saura
-	trait=indulgent_wastrel
-	trait=robust
-	trait=craven
-	trait=seductress
-	trait=hedonist
-	trait=gregarious
-	2642.1.1={birth=yes}
-	2680.1.1={death=yes}
+    culture=kutchi
+    religion=saura
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=naive_appeaser
+    trait=kind
+    trait=gregarious
+    trait=brave
+    trait=slothful
+    trait=humble
+    2639.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1960082={
-	name="1960082"
-	dynasty=0 #blank
+	name="Mukesh"
+	dynasty=7513002 #Chaudhary
 	culture=gujarati
-	religion = saura
-	trait=naive_appeaser
-	trait=groomed
-	trait=chaste
-	trait=impaler
-	trait=gregarious
-	trait=brave
-	trait=freckles
-	2638.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=saura
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=charismatic_negotiator
+    trait=charitable
+    trait=wroth
+    trait=deceitful
+    trait=gregarious
+    2635.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1960083={

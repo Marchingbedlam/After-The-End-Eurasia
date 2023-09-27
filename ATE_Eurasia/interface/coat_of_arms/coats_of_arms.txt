@@ -1432,10 +1432,13 @@ culture = {
 		"sikh"
 		"jain"
 		"advaita"
-		"antaveda"
+		"antaraveda"
 		"satyagraha"
 		"gandhist"
 		"bharathamatha"
+		"saura"
+		"shrauta"
+		"masala"
 	}
 	
 	templates = { 
@@ -1716,9 +1719,16 @@ culture = {
 	# WHEN ADDING NEW, ALWAYS ADD AT THE END !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11111
 	textures = {
 		texture = {
-			file = "gfx\\coats_of_arms\\pattern_glorian.tga"
-			size = { x = 10 y = 5 }
-			noOfFrames = 47
+			file = "gfx\\coats_of_arms\\pattern_zoroastrian.tga"
+			size = { x = 10 y = 1 }
+			noOfFrames = 10
+			color = 3
+			emblem = no
+		}
+		texture = {
+			file = "gfx\\coats_of_arms\\pattern2_zoroastrian.tga"
+			size = { x = 10 y = 1 }
+			noOfFrames = 10
 			color = 3
 			emblem = no
 		}

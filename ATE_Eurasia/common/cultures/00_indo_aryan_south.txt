@@ -321,4 +321,31 @@ indo_aryan_south = {
 
 		modifier = default_culture_modifier
 	}
+	parsi = {
+		graphical_cultures = { persiangfx }
+		
+		color = { 0.5 0.7 0.2 }
+		
+		male_names = {
+			Abadan Adel Anosh Arshan Azman Azadafroz Bakhtayar Bastavar Baman Darashah Delafruz 
+			Delawar Dinyar Farhad Farrokh Farzan Homyar Hormazd Ishvat Jahanshah 
+			Jehangir Kaizaad Khubyar Khufiruz Meheryar Meherzad Nawazish Navroz 
+			Parwez Peroz Ramin Rustam Sarafaz Shaharzaad Suroyazat Taronish 
+			Varaz Yazdyar Zirak Zubin
+		}
+		
+		female_names = {
+			Afareen Aanahita Arnavaz Arzoo Bahar Bakhtawar Behroz Benaifer Cheherazad 
+			Delnaz Delnazvaz Dinaz Farnaaza Fehroza Gulrukh Gulshirin Hufriya 
+			Jahanray Khursheed Khushnavaz Laleh Lilya Mahbanoo Mahrukh Meher Nauheed
+			Navaz Parinaaz Parizaad Rukhsaar Roshanak Sanobar Shahnaz Shehernavaz Shereen 
+			Tanaz Tehmina Vahbeez Yazdin Zarin
+		}
+		
+		founder_named_dynasties = no
+
+		prefix = no
+
+		modifier = default_culture_modifier
+	}
 }

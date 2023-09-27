@@ -298,20 +298,20 @@
 }
 
 1927016={
-	name="Neeraj"
-	dynasty=0 #Jindal
+	name="Jitendra"
+	dynasty=7508006 #Shekhawat
 	culture=kauravi
-    religion=bharathamatha
-    martial=4
+    religion=gandhist
+    martial=5
     diplomacy=4
     stewardship=4
-    intrigue=3
-    learning=5
-    trait=fortune_builder
-    trait=greedy
-    trait=paranoid
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=robust
     trait=proud
-    2624.1.1={birth=yes}
+    trait=kind
+    2650.1.1={birth=yes}
     2700.1.1={death=yes}
 }
 
@@ -626,17 +626,21 @@
 }
 
 1927036={
-	name="1927036"
-	dynasty=0 #blank
+	name="Veerendra"
+	dynasty=7515000 #Jadhav
 	culture=dhundari
-	religion=bhagavata
-	trait=skilled_tactician
-	trait=trusting
-	trait=falconer
-	trait=temperate
-	trait=groomed
-	2613.1.1={birth=yes}
-	2691.1.1={death=yes}
+    religion=bhagavata
+    martial=4
+    diplomacy=6
+    stewardship=4
+    intrigue=6
+    learning=4
+    trait=flamboyant_schemer
+    trait=deceitful
+    trait=stubborn
+    trait=diligent
+    2636.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1927045={
@@ -655,35 +659,40 @@
 }
 
 1927047={
-	name="1927047"
-	dynasty=0 #blank
-	female=yes
+	name="Lakshmi"
+	dynasty=7514001 #Maloo
 	culture=bagri
-	religion=saura
-	trait=thrifty_clerk
-	trait=charitable
-	trait=cynical
-	trait=lustful
-	trait=erudite
-	2615.1.1={birth=yes}
-	2691.1.1={death=yes}
+    religion=saura
+    female=yes
+    martial=5
+    diplomacy=4
+    stewardship=4
+    intrigue=5
+    learning=5
+    trait=intricate_webweaver
+    trait=deceitful
+    trait=proud
+    trait=patient
+    2649.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1927048={
-	name="1927048"
-	dynasty=0 #blank
+	name="Ranoji"
+	dynasty=7516000 #Scindia
 	culture=marwari
-	religion=bhagavata
-	trait=naive_appeaser
-	trait=maimed
-	trait=gardener
-	trait=dull
-	trait=humble
-	trait=temperate
-	trait=slothful
-	trait=one_eyed
-	2621.1.1={birth=yes}
-	2691.1.1={death=yes}
+    religion=bhagavata
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=skilled_tactician
+    trait=wroth
+    trait=cruel
+    trait=proud
+    2639.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1927050={
@@ -813,17 +822,21 @@
 }
 
 1927058={
-	name="1927058"
-	dynasty=0 #blank
+	name="Kishore"
+	dynasty=7517000 #Chauhan
 	culture=hadoti
-	religion=bhagavata
-	trait=thrifty_clerk
-	trait=paranoid
-	trait=charitable
-	trait=ambitious
-	trait=envious
-	2657.1.1={birth=yes}
-	2691.1.1={death=yes}
+    religion=bhagavata
+    martial=4
+    diplomacy=4
+    stewardship=6
+    intrigue=4
+    learning=5
+    trait=martial_cleric
+    trait=devout
+    trait=envious
+    trait=proud
+    2642.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1927059={
@@ -842,49 +855,58 @@
 }
 
 1927060={
-	name="1927060"
-	dynasty=0 #blank
+	name="Fateh"
+	dynasty=7516001 #Sisodia
 	culture=marwari
-	religion=bhagavata
-	trait=brilliant_strategist
-	trait=architect
-	trait=lustful
-	trait=mystic
-	trait=sturdy
-	trait=humble
-	2629.1.1={birth=yes}
-	2691.1.1={death=yes}
+    religion=bhagavata
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=wroth
+    trait=kind
+    trait=ambitious
+    2628.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1927061={
-	name="1927061"
-	dynasty=0 #blank
-	female=yes
-	culture=marwari
-	religion=saura
-	trait=indulgent_wastrel
-	trait=craven
-	trait=diligent
-	trait=charitable
-	trait=wroth
-	2632.1.1={birth=yes}
-	2691.1.1={death=yes}
+	name="Rajyashree"
+	dynasty=0 #Rathore
+	culture=bagri
+    religion=saura
+    female=yes
+    martial=3
+    diplomacy=4
+    stewardship=4
+    intrigue=3
+    learning=4
+    trait=skilled_tactician
+    trait=pious
+    trait=proud
+    trait=strong
+    2650.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1927062={
-	name="1927062"
-	dynasty=0 #blank
+	name="Bharat"
+	dynasty=7516004 #Singh Barhath
 	culture=marwari
-	religion=bhagavata
-	trait=martial_cleric
-	trait=chaste
-	trait=erudite
-	trait=homosexual
-	trait=patient
-	trait=just
-	trait=proud
-	2640.1.1={birth=yes}
-	2691.1.1={death=yes}
+    religion=bhagavata
+    martial=4
+    diplomacy=5
+    stewardship=6
+    intrigue=4
+    learning=5
+    trait=fortune_builder
+    trait=greedy
+    trait=cruel
+    trait=zealous
+    2633.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1927063={
@@ -903,18 +925,22 @@
 }
 
 1927064={
-	name="1927064"
-	dynasty=0 #blank
-	female=yes
+	name="Taniska"
+	dynasty=7514002 #Nohria
 	culture=bagri
-	religion=saura
-	trait=misguided_warrior
-	trait=envious
-	trait=deceitful
-	trait=brave
-	trait=stressed
-	2626.1.1={birth=yes}
-	2691.1.1={death=yes}
+    religion=saura
+    female=yes
+    martial=4
+    diplomacy=4
+    stewardship=5
+    intrigue=4
+    learning=4
+    trait=thrifty_clerk
+    trait=kind
+    trait=charitable
+    trait=humble
+    2645.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1927065={
@@ -936,17 +962,21 @@
 }
 
 1927066={
-	name="1927066"
-	dynasty=0 #blank
+	name="Rana"
+	dynasty=7516003 #Shyamaldas
 	culture=marwari
-	religion=bhagavata
-	trait=martial_cleric
-	trait=diligent
-	trait=brave
-	trait=uncouth
-	trait=mystic
-	2615.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=bhagavata
+    martial=6
+    diplomacy=5
+    stewardship=4
+    intrigue=4
+    learning=6
+    trait=tough_soldier
+    trait=fat
+    trait=kind
+    trait=charitable
+    2635.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1927067={
 	name="1927067"
