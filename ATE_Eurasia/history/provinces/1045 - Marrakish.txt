@@ -19,3 +19,13 @@ culture = moroccan
 religion = ruhi
 
 #History
+1158.1.1 = { #Second Current Mosque Construction
+	build_wonder=wonder_kutubiyya
+	set_wonder_stage=3
+	build_wonder_upgrade = upgrade_minaret
+	build_wonder_upgrade = upgrade_open_courtyard
+	build_wonder_upgrade = upgrade_soup_kitchen
+	build_wonder_upgrade = upgrade_school_mosque
+	build_wonder_upgrade = upgrade_custodian_of_the_mosque
+	build_wonder_upgrade = upgrade_heating_pipes
+}

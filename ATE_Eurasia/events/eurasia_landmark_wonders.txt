@@ -49,6 +49,9 @@ character_event = {
 		232 = {
 			add_province_modifier = { name = landmark_cap_de_creus duration = -1 }
 			}
+		275 = {
+			add_province_modifier = { name = landmark_el_jem_amphitheatre duration = -1 }
+			}
 		289 = {
 			add_province_modifier = { name = landmark_denizili duration = -1 }
 			}
@@ -96,6 +99,21 @@ character_event = {
 			}
 		412 = {
 			add_province_modifier = { name = landmark_brandenburg_gate duration = -1 }
+			}
+		421 = {
+			add_province_modifier = { name = landmark_dougga duration = -1 }
+			}
+		420 = {
+			add_province_modifier = { name = landmark_acropolium duration = -1 }
+			}
+		437 = {
+			add_province_modifier = { name = landmark_chott_el_djerid duration = -1 }
+			}
+		439 = {
+			add_province_modifier = { name = landmark_chenini duration = -1 }
+			}
+		441 = {
+			add_province_modifier = { name = landmark_djerbahood duration = -1 }
 			}
 		449 = {
 			add_province_modifier = { name = landmark_vosges_massif duration = -1 }
@@ -250,6 +268,9 @@ character_event = {
 		995 = { 
 			add_province_modifier = { name = landmark_big_dam duration = -1 }
 			}
+		1042 = { 
+			add_province_modifier = { name = landmark_hassan_mosque duration = -1 }
+			}
 		1087 = { 
 			add_province_modifier = { name = landmark_shaman_rock duration = -1 }
 			}
@@ -378,6 +399,9 @@ character_event = {
 			}
 		2798 = {
 			add_province_modifier = { name = landmark_red_fort duration = -1 }
+			}
+		2790 = {
+			add_province_modifier = { name = landmark_babri_masjid duration = -1 }
 			}
 		2800 = {
 			add_province_modifier = { name = landmark_iron_pillar duration = -1 }
