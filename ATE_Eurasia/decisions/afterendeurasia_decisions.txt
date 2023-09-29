@@ -495,3 +495,76 @@ decisions = {
 		}
 	}	
 }
+targeted_decisions = {						
+	navjote = {
+		only_playable = yes
+		is_high_prio = yes
+		
+		filter = home_court
+		ai_target_filter = home_court
+		ai_check_interval = 12
+	
+		from_potential = {
+			is_playable = yes
+			religion = zoroastrian
+			prisoner = no
+			NOR = { 
+				trait = incapable
+				is_inaccessible_trigger = yes
+			}
+			war = no
+		}
+		
+		potential = {
+			is_alive = yes
+			religion = zoroastrian
+			NOT = {
+				has_character_flag = navjoted
+			}
+			is_child_of = FROM
+		}
+		allow = {
+			age = 15
+			NOR = {
+				is_landed = yes
+				prisoner = yes
+				is_adult = yes
+				custom_tooltip = {
+					text = bastard_eunuch_celibate_or_incapable_tt
+					OR = {
+						trait = bastard
+						trait = eunuch
+						trait = celibate
+						trait = incapable
+					}
+				}
+				is_ascetic_trigger = yes
+			}
+			is_inaccessible_trigger = no
+			host = { character = FROM }
+		}
+		effect = {
+			custom_tooltip = {
+				text = navjote_custom_tooltip
+				hidden_tooltip = {
+					set_character_flag = navjoted
+					save_event_target_as = navjote_target
+					FROM = { character_event = { id = zoroastrian.1 } }
+				}
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0.1
+				always = yes
+			}
+		}
+	}
+}

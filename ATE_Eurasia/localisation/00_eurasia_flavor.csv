@@ -151,3 +151,30 @@ EVTOPTC_budevents_11;I have better things to do.;;;;;;;;;;;;;x
 
 EVTDESC_budevents_12;While bringing in the harvest, nothing of note happens, but it is a success nonetheless.;;;;;;;;;;;;;x
 EVTOPTA_budevents_12;Arise, for it is your task, be strong and do it.;;;;;;;;;;;;;x
+
+#Navjote Localizations ;;;;;;;;;;;;;;
+navjote;Prepare Grand Navjote;;;;;;;;;;;;;x
+navjote_named;Prepare Grand Navjote;;;;;;;;;;;;;x
+navjote_desc;As your child is soon of age you can choose to hold a grand Navjote for [Root.GetHerHim], inviting your vassals and the members of your court. This can help build trust that will certainly prove useful for the child in the future.;;;;;;;;;;;;;x
+navjote_custom_tooltip;Send out the invitations.;;;;;;;;;;;;;x
+
+EVTDESC_navjote_1;The day of [navjote_target.GetBestName]'s Navjote is soon approaching, and excitement builds in the palace. Your Magi [Root.job_spiritual.GetBestName] has offered to personally prepare [navjote_target.GetHerHim] in the final month, to understand the Ahuna Vairya so that they are prepared to give their oath.;;;;;;;;;;;;;x
+EVTOPTA_navjote_1;[Root.job_spiritual.GetBestName] will prepare my [navjote_target.GetSonDaughter].;;;;;;;;;;;;;x
+EVTOPTB_navjote_1;I can prepare [navjote_target.GetBestName] for the Navjote myself!;;;;;;;;;;;;;x
+EVTOPTC_navjote_1;[navjote_target.GetBestName] can figure it out on [navjote_target.GetHerHis] own.;;;;;;;;;;;;;x
+EVTDES1_navjote_2;The day has arrived. At your family's atashgah [navjote_target.GetBestName] approaches the atar brimming with a regal confidence. [navjote_target.GetSheHeCap] reads [navjote_target.GetHerHis] Ahuna Vairya portion effortlessly, followed by a statement of faith, din no kalmo, with a conviction that impresses even the most cynical of your vassals.;;;;;;;;;;;;;x
+EVTDES2_navjote_2;The day has arrived. At your family's atashgah [navjote_target.GetBestName] approaches the atar shaking nervously. [navjote_target.GetSheHeCap] stumbles [navjote_target.GetHerHis] way through the passage, constantly stopping for corrections from an uneased samaritan. Your vassals cringe in pity as [navjote_target.GetFirstName] attempts to deliver a clumsy statement of faith clearly written the night before.;;;;;;;;;;;;;x
+EVTOPTA_navjote_2;I'm so proud!;;;;;;;;;;;;;x
+EVTOPTB_navjote_2;That fool!;;;;;;;;;;;;;x
+EVTDESC_navjote_3;In the celebration after, you see [navjote_target.GetBestName] and [compliment_vassal.GetBestName] discussing intently some issue brought up in [navjote_target.GetHerHis] Avesta like the sayings of Zarathustra, with [navjote_target.GetFirstName] displaying a maturity you didn't realize [navjote_target.GetSheHe] had. Afterwards [compliment_vassal.GetFirstName] pull you aside to tell you just how impressed [compliment_vassal.GetSheHe] is.;;;;;;;;;;;;;x
+EVTOPTA_navjote_3;That's my [navjote_target.GetSonDaughter]!;;;;;;;;;;;;;x
+EVTDESC_navjote_4;In the celebration after, you see [navjote_target.GetBestName] and [insult_vassal.GetBestName] arguing, when [navjote_target.GetFirstName] suddenly jumps up out of [navjote_target.GetHerHis] seat, flailing at [insult_vassal.GetFirstName] until your guards are able to pull [navjote_target.GetHerHim] away. [insult_vassal.GetFirstName] calls out to you: "is this how your family treats guests?".;;;;;;;;;;;;;x
+EVTOPTA_navjote_4;Ugh, what have you done [navjote_target.GetFirstName]!;;;;;;;;;;;;;x
+EVTDESC_navjote_5;It seems as if [navjote_target.GetFirstName] has started getting along incredibly well with the child of one of the visiting vassals! Indeed, apparently [navjote_target.GetFirstName] and [befriended_child.GetBestName] are becoming fast friends.;;;;;;;;;;;;;x
+EVTOPTA_navjote_5;How lovely!;;;;;;;;;;;;;x
+EVTDESC_navjote_6;While having a pleasant conversation you are suddenly interrupted by an infernal ruckus, upon further investigation it seems as if [navjote_target.GetFirstName] has gotten into a fight with the child of one of the visiting vassals! You tear the two children apart, but it is obvious that [navjote_target.GetFirstName] and [rival_child.GetBestName] will not ever be friends after this encounter...;;;;;;;;;;;;;x
+EVTOPTA_navjote_6;I wonder who started it?;;;;;;;;;;;;;x
+EVTDESC_navjote_7;As the hours go by you notice [navjote_target.GetFirstName]'s mood starting to drop. [navjote_target.GetSheHeCap] is obviously still upset about the embarassment at [navjote_target.GetHerHis] Navjote. Hopefully this slump in [navjote_target.GetFirstName]'s mood will pass soon.;;;;;;;;;;;;;x
+EVTOPTA_navjote_7;I should go help [navjote_target.GetHerHim]...;;;;;;;;;;;;;x
+EVTDESC_navjote_8;After a long night of celebration, the Navjote is finally over. After all the stresses of the day, [navjote_target.GetFirstName] you can't help be see how wonderful they look now that they have don their sudreh and kushti. You bid them farewell as they retire to [navjote_target.GetHerHis] chambers. For better or worse, you look on the child you raised, finally grown to adulthood, and wonder what [navjote_target.GetHerHis] future will bring.;;;;;;;;;;;;;x
+EVTOPTA_navjote_8;I feel old...;;;;;;;;;;;;;x

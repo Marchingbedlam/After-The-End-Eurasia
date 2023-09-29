@@ -353,3 +353,16 @@ aided_harvest = {
 	icon = 133
 	navayana_opinion = 5
 }
+navjote_good = {
+	icon = 2
+	learning = 1
+	zoroastrian_opinion = 5
+	monthly_character_prestige = 0.1
+	monthly_character_piety = 0.50
+}
+navjote_bad = {
+	icon = 20
+	zoroastrian_opinion = -5
+	monthly_character_prestige = -0.1
+	monthly_character_piety = -0.1
+}
