@@ -394,6 +394,235 @@ narrative_event = {
 	}
 }
 
+character_event = {
+	id = budevents.8
+	desc = EVTDESC_budevents_8
+	picture = GFX_evt_farming
+	border = GFX_event_normal_frame_religion
+	is_triggered_only = yes
+
+	trigger = {
+		religion = navayana
+	}
+
+	option = { #Work hard as possible
+		name = EVTOPTA_budevents_8
+		hidden_toolip = {
+			random_list = {
+				10 = {
+					character_event = { id = budevents.9 days = 1 }
+				}
+				10 = {
+					character_event = { id = budevents.10 days = 1 }
+					trigger = {
+						NOT = { trait = brawny }
+					}
+				}
+				80 = {
+					character_event = { id = budevents.12 days = 1 }
+				}
+			}
+		}
+	}
+	option = { #Do only what is necessary
+		name = EVTOPTB_budevents_8
+		hidden_toolip = {
+			random_list = {
+				5 = {
+					character_event = { id = budevents.9 days = 1 }
+				}
+				10 = {
+					character_event = { id = budevents.10 days = 1 }
+					trigger = {
+						NOT = { trait = brawny }
+					}
+				}
+				20 = {
+					character_event = { id = budevents.11 days = 1 }
+				}
+				65 = {
+					character_event = { id = budevents.12 days = 1 }
+				}
+			}
+		}
+	}
+}
+
+character_event = { #Getting injured
+	id = budevents.9
+	desc = EVTDESC_budevents_9
+	picture = GFX_evt_farming
+	border = GFC_event_normal_frame_religion
+	is_triggered_only = yes
+
+	trigger = {
+		religion = navayana
+	}
+
+	option = {
+		name = EVTOPTA_budevents_9
+		hidden_tooltip = {
+			random_list = {
+				50 = {
+					trait = wounded
+				}
+				15 = {
+					trait = severely_injured
+				}
+				5 = {
+					trait = mangled
+				}
+				1 = {
+					death = { death_reason = death_accident }
+				}
+			}
+		}
+	}
+}
+
+character_event = { #Becoming Brawny
+	id = budevents.10
+	desc = EVTDESC_budevents_10
+	picture = GFX_evt_farming
+	border = GFC_event_normal_frame_religion
+	is_triggered_only = yes
+
+	trigger = {
+		religion = navayana
+	}
+
+	option = {
+		name = EVTOPTA_budevents_10
+		trait = brawny
+		add_character_modifier = { name = aided_harvest days = 180 }
+	}
+}
+					
+character_event = { #Gaining a lover
+	id = budevents.11
+	desc = EVTDESC_budevents_11
+	picture = GFX_evt_lovers
+	border = GFC_event_normal_frame_religion
+	is_triggered_only = yes
+
+	trigger = {
+		religion = navayana
+	}
+
+	option = {
+		name = EVTOPTA_budevents_11
+		trigger = {
+			is_female = no
+		}
+		piety = -10
+		prestige = 10
+		if = {
+			limit = {
+				trait = chaste
+			}
+			remove_trait = chaste
+		}
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			religion = ROOT
+			culture = ROOT
+			female = yes
+			age = 17
+			trait = intricate_webweaver
+			trait = fair
+			trait = uncouth
+			trait = quick
+			trait = lustful
+			trait = proud
+			trait = gluttonous
+			attributes = {
+				diplomacy = 3
+				intrigue = 10
+			}
+		}
+		new_character = {
+			character_event = { id = maintenance.4 } # Diversity
+			gain_weight_medium_effect = yes
+			add_lover = ROOT
+			remove_trait = genius
+			remove_trait = imbecile
+			remove_trait = distractible
+			remove_trait = ugly
+			remove_trait = slow
+			remove_trait = chaste
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_budevents_11
+		trigger = {
+			is_female = yes
+		}
+		piety = -10
+		prestige = 10
+		if = {
+			limit = {
+				trait = chaste
+			}
+			remove_trait = chaste
+		}
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			religion = ROOT
+			culture = ROOT
+			female = no
+			age = 17
+			trait = intricate_webweaver
+			trait = fair
+			trait = uncouth
+			trait = quick
+			trait = lustful
+			trait = proud
+			trait = drunkard
+			attributes = {
+				diplomacy = 3
+				intrigue = 10
+			}
+		}
+		new_character = {
+			character_event = { id = maintenance.4 } # Diversity
+			gain_weight_medium_effect = yes
+			add_lover = ROOT
+			remove_trait = genius
+			remove_trait = imbecile
+			remove_trait = ugly
+			remove_trait = slow
+			remove_trait = chaste
+		}
+	}
+	option = { #I have better things to do
+		name = EVTOPTC_budevents_11
+		piety = 10
+		add_character_modifier = { name = aided_harvest days = 180 }
+	}
+}
+
+character_event = { #Average successful harvest
+	id = budevents.12
+	desc = EVTDESC_budevents_12
+	picture = GFX_evt_farming
+	border = GFX_event_normal_frame_religion
+	is_triggered_only = yes
+
+	trigger = {
+		religion = navayana
+	}
+
+	option = {
+		name = EVTOPTA_budevents_12
+		piety = 25
+		prestige = 25
+		add_character_modifier = { name = aided_harvest days = 180 }
+	}
+}	
+
 
 
 #Vessak events 100 - 120

@@ -431,4 +431,67 @@ decisions = {
 			modifier = { factor = 0 NOT = { wealth = 250 } }
 		}
 	}
+	aid_harvest = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 6
+
+		potential = {
+			is_adult = yes
+			prisoner = no
+			religion = navayana
+			NOT = { has_character_modifier = aided_harvest }
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			religion = navayana
+			custom_tooltip = {
+				text = TXT_not_sick_or_wounded_or_lazy
+				hidden_tooltip = {
+					NOR = {
+						trait = wounded
+						trait = maimed
+						trait = slothful
+						trait = mangled
+						trait = one_legged
+						trait = severely_injured
+						trait = has_aztec_disease
+						trait = has_typhus
+						trait = cancer
+						trait = has_tuberculosis
+						trait = dancing_plague
+						trait = dysentery
+						trait = flu
+						trait = food_poisoning
+						trait = gout
+						trait = syphilitic
+						trait = has_typhoid_fever
+						trait = ill
+						trait = leper
+						trait = has_measles
+						trait = rabies
+						trait = scurvy
+						trait = has_small_pox
+						trait = has_bubonic_plague
+					}
+				}
+			}
+			month = 6
+			NOT = { month = 5 }
+		}
+		effect = {
+			character_event = { id = budevents.8 }
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0
+				NOT = {
+					trait = cynical
+				}
+			}
+		}
+	}	
 }
