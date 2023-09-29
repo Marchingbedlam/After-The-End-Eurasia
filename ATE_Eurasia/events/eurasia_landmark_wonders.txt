@@ -49,6 +49,19 @@ character_event = {
 		232 = {
 			add_province_modifier = { name = landmark_cap_de_creus duration = -1 }
 			}
+		244 = {
+			add_province_modifier = { name = landmark_algerian_martyrs duration = -1 }
+			}
+		245 = {
+			add_province_modifier = { name = landmark_royal_mausoleum_of_mauretania duration = -1 }
+			}
+		253 = {
+			add_province_modifier = { name = landmark_calama duration = -1 }
+			add_province_modifier = { name = landmark_hammam_maskhoutine duration = -1 }
+			}
+		256 = {
+			add_province_modifier = { name = landmark_emir_abdelkader_mosque duration = -1 }
+			}
 		275 = {
 			add_province_modifier = { name = landmark_el_jem_amphitheatre duration = -1 }
 			}
@@ -384,6 +397,9 @@ character_event = {
 			}
 		2301 = {
 			add_province_modifier = { name = landmark_norilsk duration = -1 }
+			}
+		2534 = {
+			add_province_modifier = { name = landmark_tassili_najjer duration = -1 }
 			}
 		2549 = {
 			add_province_modifier = { name = landmark_chara_sands duration = -1 }
