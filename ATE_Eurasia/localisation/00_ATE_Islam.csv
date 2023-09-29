@@ -332,3 +332,55 @@ EVTOPTA_ruhi_dervish_3402;La ilaha illallah!;;;;;;;;;;;;;x
 #### Naziri Ismaili stuff
 AGA_KHAN;Aga Khan;;;;;;;;;;;;;x
 AGA_KHANUM;Aga Khanum;;;;;;;;;;;;;x
+
+#Revivalist Event Chain (Revised from ATE)
+
+EVTDESC_revivalist_1;Reports of a wild man preaching in [Root.PrimaryTitle.GetName] has reached you. Apparently, a fiery passionate man has been stirring trouble in an attempt to seek audience with you...;;;;;;;;;;;;;x
+EVTOPTA_revivalist_1;Bring him here.;;;;;;;;;;;;;x
+TXT_EVTOPTA_revivalist_1;The preacher is brought before you.;;;;;;;;;;;;;x
+EVTDESC_revivalist_2;The man is brought before you. "Abdullah al-Shaykhi," he introduces himself, then quickly attempting to ingratiate himself to you. He offers his services to you — he says he was once a merchant of a neighboring realm claiming that he had uncovered hidden teachings unknown to your court about the Prophet.;;;;;;;;;;;;;x
+EVTOPTA_revivalist_2;You have my curiousity...;;;;;;;;;;;;;x
+EVTOPTB_revivalist_2;I have no need of him.;;;;;;;;;;;;;x
+TXT_EVTOPTB_revivalist_2;Abdullah leaves your court and begins wandering your realm...;;;;;;;;;;;;;x
+EVTDESC_revivalist_3;You walk into your council chambers for your daily meeting, but instead of councilors, you find scholars of all variety, with Abdullah chairing the meeting. The discussion silences as you enter, and Abdullah explains, "We're discussing matters related to the faith, my liege..." You allow them to carry on.;;;;;;;;;;;;;x
+EVTOPTA_revivalist_3;Strange...;;;;;;;;;;;;;x
+TXT_EVTOPTA_revivalist_3;You leave them to their business.;;;;;;;;;;;;;x
+EVTDESC_revivalist_4;During a council meeting, your guard takes you aside, and he informs you of his suspicions related to Abdullah. He claims that this wise man is no simple merchant and is in fact a wanted heretic from the neighboring realm!;;;;;;;;;;;;;x
+EVTOPTA_revivalist_4;Watch him closely. If you have just cause, arrest him.;;;;;;;;;;;;;x
+TXT_EVTOPTA_revivalist_4;Security around the capital is tightened.;;;;;;;;;;;;;x
+EVTOPTB_revivalist_4;I am sure it is nothing.;;;;;;;;;;;;;x
+TXT_EVTOPTB_revivalist_4;You dismiss the report.;;;;;;;;;;;;;x
+EVTDESC_revivalist_5;You and some of your court are discussing religious affairs when Abdullah walks in. He explains a theory about the nature of the world, one that is believed widely in the Maghreb. "The Great Regression is not a test, but a punishment!" He argues that the state of the world angered the Almighty, and He crushed the old order to make way for purification.;;;;;;;;;;;;;x
+EVTOPTA_revivalist_5;Tell us more, Abdullah.;;;;;;;;;;;;;x
+TXT_EVTOPTA_revivalist_5;Abdullah continues explaining his doctrine.;;;;;;;;;;;;;x
+EVTDESC_revivalist_6;Abdullah continues on, narrating stories for hours on end. He extolls the bravery of the early Muslims — those whom he calls "rightfully guided" — and speaks of their conquests and bravery. He finishes his story by directly looking at you, and saying: "My [Root.GetTitle], embrace their tradition!";;;;;;;;;;;;;x
+EVTOPTA_revivalist_6;Delightful, Abdullah!;;;;;;;;;;;;;x
+TXT_EVTOPTA_revivalist_6;You marvel at Abdullah's wisdom.;;;;;;;;;;;;;x
+EVTDESC_revivalist_7;You are in your chambers one night when Abdullah requests to speak with you. He shares with you his ambition to spread the true faith to the nonbelievers around you, in an attempt to provoke a revival of Islam in these lands. He requests your support, but Abdullah makes it clear that he will pursue his goal no matter your response.;;;;;;;;;;;;;x
+EVTOPTA_revivalist_7;You have my official support.;;;;;;;;;;;;;x
+EVTOPTB_revivalist_7;I cannot officially support your goal, but go with my blessing.;;;;;;;;;;;;;x
+TXT_EVTOPTB_revivalist_7;Abdullah begins preaching in the streets.;;;;;;;;;;;;;x
+EVTOPTC_revivalist_7;Absolutely not.;;;;;;;;;;;;;x
+TXT_EVTOPTC_revivalist_7;You banish Abdullah from your lands.;;;;;;;;;;;;;x
+EVTDESC_revivalist_8;Reports reach you of Abdullah's efforts in preaching. Supposedly, he has gained numerous followers. Some of these followers have gathered themselves into an armed group in order to protect "the Revival", as Abdullah calls his movement. These "Ikhwan" have acquiring through unknown means a fortress near your realm, and are applying strict laws on the local populace in your name...;;;;;;;;;;;;;x
+EVTOPTA_revivalist_8;Interesting...;;;;;;;;;;;;;x
+EVTOPTB_revivalist_8;Concerning...;;;;;;;;;;;;;x
+EVTTITLE_revivalist_9;Messenger Of The Revival;;;;;;;;;;;;;x
+EVTDESC_revivalist_9;You are conducting affairs related to your court when Abdullah suddenly enters, flanked by armed men. "Oh people of the revealed Truth! We have our duty to follow and obey the will of God — I tell you now that the Great Regression is a punishment which can only be lifted with the cleansing of this world in his name!" He then addresses you specifically. "[Root.GetBestName], I offer myself and my followers to your name, if you agree to take the cause of the Great Revival upon yourself. However, your refusal to spread the cause of God will force me to consider you as one of the innovators who must be punished. God is always with the faithful!", he says, before drawing a sword and burying it into the stomach of one of the merchants — a banker — in your court. The court sits in stunned silence, and all eyes turn to you for your response.;;;;;;;;;;;;;x
+EVTOPTA_revivalist_9;There can be no victory except through God, and He is surely with us.;;;;;;;;;;;;;x
+EVTOPTB_revivalist_9;Leave my court at once, you munafiq.;;;;;;;;;;;;;x
+EVTTITLE_revivalist_10;The Rise of Revivalism;;;;;;;;;;;;;x
+EVTDESCA_revivalist_10;Abdullah and his entourage all give bayah to you as the sovereign of the realm, and proclaim that you are the new Caliph, leader of the entire Muslim world. Abdullah explains that, as Caliph, you have a duty to spread the Revival and its message across the four corners of the world. Only by cleansing the world of sin can all prosper again!;;;;;;;;;;;;;x
+EVTDESCB_revivalist_10;The wise hafiz Abdullah, a stranger to your realm not too long ago, has brought a focus on the revival of faith and sharia in your realm with heretofore unimaginable reach. The ruler of [From.PrimaryTitle.GetName], [From.GetBestName], has adopted the Revivalist philosophy and been proclaimed Caliph. Allah willing, the entire world will soon be cleansed of sin!;;;;;;;;;;;;;x
+EVTDESCC_revivalist_10;Strange news has reached you from [From.PrimaryTitle.GetName]. The ruler of that realm, [From.GetBestName], has fallen under the influence of a preacher from the Old World and declared himself Caliph. This is, of course, an indirect attack on your own legitimacy as [Root.GetTitle]. Many in your court fear that the armies of the new Caliph may arrive in your realm to enforce his claim...;;;;;;;;;;;;;x
+EVTDESCD_revivalist_10;Strange news has reached you from [From.PrimaryTitle.GetName]. The ruler of that realm, [From.GetBestName], has evidently adopted a strange new form of Islam. What's more, he now claims to be the rightful ruler of the entire Muslim world. Many in your court are fearful that he may soon begin wars of expansion...;;;;;;;;;;;;;x
+EVTOPTA_revivalist_10;Allahu Akbar!;;;;;;;;;;;;;x
+EVTOPTB_revivalist_10;Allahu Akbar!;;;;;;;;;;;;;x
+EVTOPTC_revivalist_10;Terrifying!;;;;;;;;;;;;;x
+EVTOPTD_revivalist_10;Bah, more infidel infighting!;;;;;;;;;;;;;x
+EVTDESC_revivalist_12;Angered at your conduct and treatment, Abdullah and his followers have begun organized revolts against you, claiming you are "the Pharaoh of this age". With cries of faith and valor, they have seized many arms, and already many have perished!;;;;;;;;;;;;;x
+EVTOPTA_revivalist_12;We will crush these heretics!;;;;;;;;;;;;;x
+TXT_EVTOPTA_revivalist_12;You go to war against Abdullah.;;;;;;;;;;;;;x
+EVTDESC_revivalist_13;Many of Abdullah's followers have reacted to news of his banishment with shock with a mass movement to the shores to join their heretic teacher to his exile abroad, cursing your name. Although they are disorganized, their message has rocked your realm to your core...;;;;;;;;;;;;;x
+EVTOPTA_revivalist_13;I will banish every one of these heretics!;;;;;;;;;;;;;x
+TXT_EVTOPTA_revivalist_13;Your realm has been shaken by deceit...;;;;;;;;;;;;;x
