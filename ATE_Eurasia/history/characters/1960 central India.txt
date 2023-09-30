@@ -226,23 +226,23 @@
 }
 
 1960012={
-	name="1960012"
-	dynasty=0 #blank
-	culture=marathi
-	religion = navayana
-	martial=3
-	diplomacy=3
-	stewardship=5
-	intrigue=5
-	learning=4
-	trait=underhanded_rogue
-	trait=gluttonous
-	trait=chaste
-	trait=arbitrary
-	trait=envious
-	trait=robust
-	2649.1.23={birth=yes}
-	2668.4.4={death=yes}
+	name="Ramchandra"
+    dynasty=7518010 # Kamble
+    culture=marathi
+    religion=navayana
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=underhanded_rogue
+    trait=patient
+    trait=lustful
+    trait=wroth
+    trait=just
+    trait=charitable
+    2640.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1960013={
@@ -404,33 +404,43 @@
 }
 
 1960022={
-	name="1960022"
-	dynasty=0 #blank
-	culture=marathi
-	religion = navayana
-	trait=tough_soldier
-	trait=diligent
-	trait=gluttonous
-	trait=honest
-	trait=shrewd
-	2628.1.1={birth=yes}
-	2680.1.1={death=yes}
+	name="Nashikrao"
+    dynasty=7518009 # Meshram
+    culture=marathi
+    religion=navayana
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=flamboyant_schemer
+    trait=schemer        
+    trait=proud
+    trait=slothful
+    trait=deceitful
+    trait=temperate
+    2634.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1960023={
-	name="1960023"
-	dynasty=0 #blank
-	female=yes
-	culture=marathi
-	religion = jain
-	trait=martial_cleric
-	trait=chaste
-	trait=content
-	trait=hunter
-	trait=cynical
-	trait=brave
-	2622.1.1={birth=yes}
-	2680.1.1={death=yes}
+	name="Veer"
+    dynasty=7518011 # Deshmukh
+    culture=marathi
+    religion=jain
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=martial_cleric
+    trait=charitable
+    trait=honest
+    trait=humble
+    trait=content
+    trait=lustful
+    2633.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1960024={
@@ -704,33 +714,41 @@
 }
 
 1960042={
-	name="1960042"
-	dynasty=0 #blank
-	culture=marathi
-	religion = navayana
-	trait=martial_cleric
-	trait=hedonist
-	trait=charitable
-	trait=kind
-	trait=just
-	trait=slothful
-	2641.1.1={birth=yes}
-	2680.1.1={death=yes}
+	name="Sanjay"
+    dynasty=7518008 # Wasnik
+    culture=marathi
+    religion=navayana
+    martial=3
+    diplomacy=5
+    stewardship=3
+    intrigue=3
+    learning=5
+    trait=charismatic_negotiator
+    trait=diligent
+    trait=charitable
+    trait=zealous
+    2632.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1960043={
-	name="1960043"
-	dynasty=0 #blank
-	culture=marathi
-	religion = navayana
-	trait=skilled_tactician
-	trait=greedy
-	trait=wroth
-	trait=cynical
-	trait=stubborn
-	trait=lisp
-	2624.1.1={birth=yes}
-	2680.1.1={death=yes}
+	name="Uttam"
+    dynasty=7518007 # Bhat
+    culture=marathi
+    religion=navayana
+    martial=5
+    diplomacy=3
+    stewardship=5
+    intrigue=3
+    learning=4
+    trait=thrifty_clerk
+    trait=greedy
+    trait=diligent
+    trait=humble
+    trait=charitable
+    trait=cynical
+    2647.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1960044={
@@ -859,84 +877,126 @@
 }
 
 1960052={
-	name="1960052"
-	dynasty=0 #blank
-	culture=konkani
-	religion = nasrani
-	trait=skilled_tactician
-	trait=quick
-	trait=robust
-	trait=brave
-	trait=envious
-	trait=greedy
-	2622.1.1={birth=yes}
-	2680.1.1={death=yes}
+	name="Hortencio"
+    dynasty=7519002 # Vaz
+    culture=konkani
+    religion=nasrani
+    martial=5
+    diplomacy=4
+    stewardship=5
+    intrigue=4
+    learning=5
+    trait=tough_soldier
+    trait=erudite
+    trait=brave
+    trait=honest
+    trait=patient
+    trait=chaste
+    2639.1.1={birth=yes}
+	2665.1.1={add_spouse=1960095}
+    2700.1.1={death=yes}
 }
 
 1960053={
-	name="1960053"
-	dynasty=0 #blank
+	name="Prakash"
+	dynasty=7519000 #Nilekani
 	culture=konkani
-	religion = masala
-	trait=martial_cleric
-	trait=uncouth
-	trait=impaler
-	trait=brave
-	trait=erudite
-	trait=cruel
-	2614.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=vaishnava
+    martial=5
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=tough_soldier
+    trait=ambitious
+    trait=zealous
+    trait=arbitrary
+    trait=cruel
+    trait=envious
+    2638.1.1={birth=yes}
+	2660.1.1={add_spouse=1960091}
+	2663.1.1={
+		effect={
+			add_rival=1960054
+		}
+	}
+    2700.1.1={death=yes}
 }
 
 1960054={
-	name="1960054"
-	dynasty=0 #blank
+	name="Freida"
+	dynasty=7519001 #Lotlikar
 	culture=konkani
-	religion = masala
-	trait=indulgent_wastrel
-	trait=temperate
-	trait=socializer
-	trait=just
-	trait=trusting
-	trait=greedy
-	2651.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=masala
+    female=yes
+    martial=4
+    diplomacy=6
+    stewardship=4
+    intrigue=3
+    learning=5
+    trait=martial_cleric
+    trait=scarred_high
+    trait=ambitious
+    trait=chaste
+    trait=wroth
+    trait=diligent
+    trait=shy
+	father=1960092
+    2648.1.1={birth=yes}
+	2650.1.2={effect={add_friend=1960054}}
+	2663.1.1={
+		effect={
+			add_rival=1960086
+			add_rival=1960053
+			add_claim=d_konkan
+		}
+	}
+    2700.1.1={death=yes}
 }
 
 1960055={
-	name="1960055"
-	dynasty=0 #blank
+	name="Aditya"
+	dynasty=7518001 #Avraham
 	culture=marathi
-	religion = vaishnava
-	trait=intricate_webweaver
-	trait=scarred_mid
-	trait=cruel
-	trait=envious
-	trait=brave
-	trait=gregarious
-	2617.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=vaishnava
+    martial=3
+    diplomacy=5
+    stewardship=5
+    intrigue=3
+    learning=3
+    trait=martial_cleric
+    trait=diligent
+    trait=ambitious
+    trait=greedy
+	give_nickname=nick_the_snoocker
+    2640.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1960056={
-	name="1960056"
-	dynasty=0 #blank
-	female=yes
+	name="Govind"
+	dynasty=7518000 #Khanna
 	culture=marathi
-	religion = masala
-	trait=underhanded_rogue
-	trait=impaler
-	trait=stressed
-	trait=envious
-	trait=arbitrary
-	trait=seductress
-	2626.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=masala
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=charismatic_negotiator
+    trait=hedonist
+    trait=gregarious
+    trait=dull
+    trait=charitable
+    trait=kind
+    trait=gluttonous
+    2626.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1960057={
-	name="1960057"
-	dynasty=0 #blank
+	name="Bhima"
+	dynasty=7524000 #Pawar
 	culture=dang
 	religion = antaraveda
 	trait=grey_eminence
@@ -945,7 +1005,7 @@
 	trait=duelist
 	trait=charitable
 	trait=proud
-	2624.1.1={birth=yes}
+	2624.12.29={birth=yes}
 	2680.1.1={death=yes}
 }
 
@@ -988,18 +1048,21 @@
 }
 
 1960060={
-	name="1960060"
-	dynasty=0 #blank
-	culture=bhili
-	religion = bhagavata
-	trait=flamboyant_schemer
-	trait=brave
-	trait=temperate
-	trait=deceitful
-	trait=organizer
-	trait=lustful
-	2647.1.1={birth=yes}
-	2680.1.1={death=yes}
+	name="Yashvantrao"
+    dynasty=7518004 # Kardak
+    culture=marathi
+    religion=navayana
+    martial=5
+    diplomacy=4
+    stewardship=3
+    intrigue=5
+    learning=3
+    trait=underhanded_rogue
+    trait=envious
+    trait=charitable
+    trait=stubborn
+    2641.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1960061={
@@ -1018,18 +1081,21 @@
 }
 
 1960062={
-	name="1960062"
-	dynasty=0 #blank
+	name="Nihal"
+	dynasty=7521000 #Ansari
 	culture=bhili
-	religion = jain
-	trait=tough_soldier
-	trait=gluttonous
-	trait=freckles_2
-	trait=shrewd
-	trait=humble
-	trait=administrator
-	2633.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=naqshbandi
+    martial=3
+    diplomacy=4
+    stewardship=3
+    intrigue=4
+    learning=4
+    trait=misguided_warrior
+    trait=wroth
+    trait=brave
+    trait=deceitful        
+    2649.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1960063={
@@ -1049,64 +1115,81 @@
 }
 
 1960064={
-	name="1960064"
-	dynasty=0 #blank
-	culture=deccani
-	religion = naqshbandi
-	trait=naive_appeaser
-	trait=groomed
-	trait=diligent
-	trait=envious
-	trait=chaste
-	trait=strong
-	2640.1.1={birth=yes}
-	2680.1.1={death=yes}
+	name="Rafiq"
+    dynasty=7522002 # Siddiqui
+    culture=deccani
+    religion=naqshbandi
+    martial=5
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=skilled_tactician
+    trait=brave
+    trait=diligent
+    trait=proud
+    trait=patient
+    trait=lustful
+    2635.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1960065={
-	name="1960065"
-	dynasty=0 #blank
-	culture=marathi
-	religion = jain
-	trait=misguided_warrior
-	trait=poet
-	trait=proud
-	trait=paranoid
-	trait=patient
-	trait=dwarf
-	2647.1.1={birth=yes}
-	2680.1.1={death=yes}
+	name="Ahmed"
+    dynasty=7522001 # Patil
+    culture=deccani
+    religion=naqshbandi
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=underhanded_rogue
+    trait=gregarious
+    trait=cynical
+    trait=proud
+    2639.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1960066={
-	name="1960066"
-	dynasty=0 #blank
-	female=yes
-	culture=marathi
-	religion = antaraveda
-	trait=fortune_builder
-	trait=ambitious
-	trait=drunkard
-	trait=deceitful
-	trait=patient
-	trait=theologian
-	2630.1.1={birth=yes}
-	2680.1.1={death=yes}
+	name="Chandra"
+    dynasty=7518005 # Rajneesh
+    culture=marathi
+    religion=jain
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=6
+    trait=mastermind_theologian
+    trait=zealous
+    trait=craven
+    trait=deceitful
+    trait=patient
+    trait=stubborn
+    2619.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1960067={
-	name="1960067"
-	dynasty=0 #blank
-	culture=marathi
-	religion = advaita
-	trait=indulgent_wastrel
-	trait=martial_cleric
-	trait=proud
-	trait=arbitrary
-	trait=fair
-	trait=honest
-	2623.1.1={birth=yes}
-	2680.1.1={death=yes}
+	name="Pradeep"
+    dynasty=7518006 # Godse
+    culture=marathi
+    religion=advaita
+    martial=7
+    diplomacy=3
+    stewardship=3
+    intrigue=6
+    learning=3
+    trait=elusive_shadow
+    trait=zealous
+    trait=wroth
+    trait=deceitful
+    trait=cruel
+    trait=proud
+    2642.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1960068={
@@ -1396,44 +1479,233 @@
 	2680.1.1={death=yes}
 }
 1960084={
-	name="1960055"
-	dynasty=0 #blank
+	name="Ibrahim"
+	dynasty=7518002 #Saifuddin
 	culture=marathi
-	religion = mantramarga
-	trait=intricate_webweaver
-	trait=scarred_mid
-	trait=cruel
-	trait=envious
-	trait=brave
-	trait=gregarious
-	2617.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=ismaili
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=scholarly_theologian
+    trait=sayyid
+    trait=faqih
+    trait=patient
+    trait=proud
+    trait=content
+    trait=diligent
+    trait=just
+    2628.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1960085={
-	name="1960055"
-	dynasty=0 #blank
-	culture=marathi
-	religion = gandhist
-	trait=intricate_webweaver
-	trait=scarred_mid
-	trait=cruel
-	trait=envious
-	trait=brave
-	trait=gregarious
-	2617.1.1={birth=yes}
-	2680.1.1={death=yes}
+	name="Cowasji"
+	dynasty=7520000 #Tata
+	culture=parsi
+	religion=zoroastrian
+    martial=3
+    diplomacy=5
+    stewardship=3
+    intrigue=3
+    learning=6
+    trait=midas_touched
+    trait= physician
+    trait=shrewd
+    trait=diligent
+    trait=envious
+    trait=proud
+    trait=just
+    2623.1.1={birth=yes}
+	2650.1.1={add_spouse=1960088}
+	2650.1.1={effect={add_friend=1960087}}
+    2700.1.1={death=yes}
 }
 1960086={
-	name="1960055"
-	dynasty=0 #blank
+	name="Chhoti"
+	dynasty=7518003 #Kumari
 	culture=marathi
-	religion = bhagavata
-	trait=intricate_webweaver
-	trait=scarred_mid
-	trait=cruel
-	trait=envious
-	trait=brave
-	trait=gregarious
-	2617.1.1={birth=yes}
-	2680.1.1={death=yes}
+    religion=masala
+    female=yes
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=6
+    learning=3
+    trait=elusive_shadow
+    trait=genius
+    trait=seductress
+    trait=lustful
+    trait=groomed
+    trait=patient
+    trait=honest
+    trait=cynical
+    2633.1.1={birth=yes}
+	2663.1.1={
+		effect={
+			add_rival=1960054
+			add_weak_claim=d_konkan
+		}
+	}
+    2700.1.1={death=yes}
+}
+1960087={
+	name="Jerusha"
+	culture=konkani
+    religion=haskalah
+    female=yes
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=thrifty_clerk
+    trait=humble
+    trait=content
+    trait=honest
+    2648.1.1={birth=yes}
+	2650.1.1={effect={add_friend=1960085}}
+	2650.1.2={effect={add_friend=1960054}}
+    2700.1.1={death=yes}
+}
+1960088={
+	name="Banugushnasp"
+	culture=parsi
+    religion=zoroastrian
+    female=yes
+    martial=4
+    diplomacy=3
+    stewardship=3
+    intrigue=5
+    learning=3
+    trait=flamboyant_schemer
+    trait=content
+    trait=kind
+    trait=chaste
+    2635.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1960089={
+	name="Jafar"
+    dynasty=7520000 # Tata
+	culture=parsi
+    religion=zoroastrian
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=fair
+    trait=brooding
+	father=1960085
+	mother=1960088
+    2651.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1960090={
+	name="Artdokht"
+    dynasty=7520000 # Tata
+	culture=parsi
+    religion=zoroastrian
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=quick
+    trait=idolizer
+    trait=curious
+	father=1960085
+	mother=1960088
+    2655.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1960091={
+	name="Kareena"
+    culture=marathi
+    religion=masala
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=naive_appeaser
+    trait=fair
+    trait=gregarious
+    trait=cruel
+    2645.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1960092={
+	name="Amitabh"
+    dynasty=7519001 # Lotlikar
+    culture=konkani
+    religion=masala
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=grey_eminence
+    trait=gregarious
+    trait=just
+    trait=kind
+    2616.1.1={birth=yes}
+    2655.1.1={death={death_reason=death_murder_unknown_poison killer=1960085}}
+}
+1960093={
+	name="Hrithik"
+    dynasty=7519001 # Lotlikar
+    culture=konkani
+    religion=masala
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=kind
+    trait=wroth
+    trait=gregarious
+	father=1960092
+    2640.1.1={birth=yes}
+	2658.1.1={add_spouse=1960094}
+	2660.5.1={add_spouse=1960086}
+    2663.1.1={death={death_reason=death_battle killer=1960053}}
+}
+1960094={
+	name="Kajol"
+    culture=konkani
+    religion=masala
+	female=yes
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=charismatic_negotiator
+    trait=fair
+    trait=charitable
+    trait=kind
+    2640.1.1={birth=yes}
+    2660.1.1={death={death_reason=death_murder_unknown killer=1960086}}
+}
+1960095={
+	name="Maria"
+    culture=konkani
+    religion=nasrani
+    female=yes
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=thrifty_clerk
+    trait=greedy
+    trait=charitable
+    trait=kind
+    trait=proud
+    trait=zealous
+    2650.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
