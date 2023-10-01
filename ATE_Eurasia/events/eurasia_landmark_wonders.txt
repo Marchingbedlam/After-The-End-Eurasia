@@ -284,6 +284,18 @@ character_event = {
 		1042 = { 
 			add_province_modifier = { name = landmark_hassan_mosque duration = -1 }
 			}
+		1072 = { 
+			add_province_modifier = { name = landmark_jamahiriya duration = -1 }
+			add_province_modifier = { name = landmark_tripoli_cathedral duration = -1 }
+			}
+		1076 = { 
+			add_province_modifier = { name = landmark_mandara_lakes duration = -1 }
+			}
+		1082 = { 
+			add_province_modifier = { name = landmark_benghazi_lighthouse duration = -1 }
+			add_province_modifier = { name = landmark_benghazi_cathedral duration = -1 }
+			add_province_modifier = { name = landmark_al_berka_palace duration = -1 }
+			}
 		1087 = { 
 			add_province_modifier = { name = landmark_shaman_rock duration = -1 }
 			}
@@ -392,6 +404,12 @@ character_event = {
 		2173 = {
 			add_province_modifier = { name = landmark_rann_of_kutch duration = -1 }
 			}
+		2183 = {
+			add_province_modifier = { name = landmark_amba_vilas duration = -1 }
+			}
+		2185 = {
+			add_province_modifier = { name = landmark_haft_gumbaz duration = -1 }
+			}
 		2270 = {
 			add_province_modifier = { name = landmark_alang_yard duration = -1 }
 			}
@@ -400,6 +418,12 @@ character_event = {
 			}
 		2534 = {
 			add_province_modifier = { name = landmark_tassili_najjer duration = -1 }
+			}
+		2546 = {
+			add_province_modifier = { name = landmark_tazirbu duration = -1 }
+			}
+		2547 = {
+			add_province_modifier = { name = landmark_waw_an_namus duration = -1 }
 			}
 		2549 = {
 			add_province_modifier = { name = landmark_chara_sands duration = -1 }
