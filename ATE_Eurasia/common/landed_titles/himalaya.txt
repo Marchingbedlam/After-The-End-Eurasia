@@ -209,15 +209,36 @@ e_himalaya = {
 		
 		capital = 2765 # c_sikkim
 		
+		sikkimese = "Drenjong"
+		qiang = "Dremoshong"
+		changpa = "Dremoshong"
+		amdowa = "Dremoshong"
+		kham = "Dremoshong"
+		utsang = "Dremoshong"
+		
 		d_sikkim = {
 			color={ 213 102 159 }
 			color2={ 255 255 255 }
 			
 			capital = 2765 # c_sikkim
 			
+			sikkimese = "Drenjong"
+			qiang = "Dremoshong"
+			changpa = "Dremoshong"
+			amdowa = "Dremoshong"
+			kham = "Dremoshong"
+			utsang = "Dremoshong"
+			
 			c_sikkim = { # 2765
 				color={ 223 92 164 }
 				color2={ 255 255 255 }
+				
+				sikkimese = "Drenjong"
+				qiang = "Dremoshong"
+				changpa = "Dremoshong"
+				amdowa = "Dremoshong"
+				kham = "Dremoshong"
+				utsang = "Dremoshong"
 				
 				b_gangtok = {}
 				b_namchi = {}
@@ -246,11 +267,17 @@ e_himalaya = {
 		color={ 243 126 15 }
 		color2={ 255 255 255 }
 		
+		ngalop = "Drukyul"
+		sharchop = "Drukyul"
+		
 		capital = 2743 # c_thimphu
 		
 		d_bhutan = {
 			color={ 243 146 25 }
 			color2={ 255 255 255 }
+			
+			ngalop = "Drukyul"
+			sharchop = "Drukyul"
 			
 			capital = 2743 # c_thimphu
 			
