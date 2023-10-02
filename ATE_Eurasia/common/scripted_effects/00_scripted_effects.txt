@@ -4042,26 +4042,6 @@ add_crusade_trait_effect = {
 	if = {
 		limit = {
 			OR = {
-				religion = midewiwin
-				religion = midewiwin_reformed
-			}
-		}
-		add_trait = thunderbird_warrior
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				religion = raven_tales
-				religion = raven_tales_reformed
-			}
-		}
-		add_trait = raven_warrior
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
 				religion = atomicist
 				religion = aphite
 			}
@@ -9207,20 +9187,6 @@ print_scope_effect = {
 add_sympathy_for_prevs_true_religion_effect = {
 	if = {
 		limit = { 
-			PREV = { true_religion_group_afro_syncretic_trigger = yes } 
-			NOT = { religion_group = afro_syncretic }
-		}
-		add_trait = sympathy_afro_syncretic
-	}
-	if = {
-		limit = { 
-			PREV = { true_religion_group_amero_syncretic_trigger = yes } 
-			NOT = { religion_group = amero_syncretic }
-		}
-		add_trait = sympathy_amero_syncretic
-	}
-	if = {
-		limit = { 
 			PREV = { true_religion_group_christian_trigger = yes } 
 			NOT = { religion_group = christian }
 		}
@@ -9228,24 +9194,10 @@ add_sympathy_for_prevs_true_religion_effect = {
 	}
 	if = {
 		limit = { 
-			PREV = { true_religion_group_oldworld_trigger = yes } 
-			NOT = { religion_group = oldworld }
-		}
-		add_trait = sympathy_oldworld
-	}
-	if = {
-		limit = { 
 			PREV = { true_religion_group_pagan_group_trigger = yes } 
 			NOT = { religion_group = pagan_group }
 		}
 		add_trait = sympathy_pagans
-	}
-	if = {
-		limit = { 
-			PREV = { true_religion_group_nautical_trigger = yes } 
-			NOT = { religion_group = nautical }
-		}
-		add_trait = sympathy_nautical
 	}
 	if = {
 		limit = { 
@@ -9273,20 +9225,6 @@ add_sympathy_for_prevs_true_religion_effect = {
 add_sympathy_for_prevs_open_religion_effect = {
 	if = {
 		limit = { 
-			PREV = { true_religion_group_afro_syncretic_trigger = yes } 
-			NOT = { religion_group = afro_syncretic }
-		}
-		add_trait = sympathy_afro_syncretic
-	}
-	if = {
-		limit = { 
-			PREV = { true_religion_group_amero_syncretic_trigger = yes } 
-			NOT = { religion_group = amero_syncretic }
-		}
-		add_trait = sympathy_amero_syncretic
-	}
-	if = {
-		limit = { 
 			PREV = { true_religion_group_christian_trigger = yes } 
 			NOT = { religion_group = christian }
 		}
@@ -9294,24 +9232,10 @@ add_sympathy_for_prevs_open_religion_effect = {
 	}
 	if = {
 		limit = { 
-			PREV = { true_religion_group_oldworld_trigger = yes } 
-			NOT = { religion_group = oldworld }
-		}
-		add_trait = sympathy_oldworld
-	}
-	if = {
-		limit = { 
 			PREV = { true_religion_group_pagan_group_trigger = yes } 
 			NOT = { religion_group = pagan_group }
 		}
 		add_trait = sympathy_pagans
-	}
-	if = {
-		limit = { 
-			PREV = { true_religion_group_nautical_trigger = yes } 
-			NOT = { religion_group = nautical }
-		}
-		add_trait = sympathy_nautical
 	}
 	if = {
 		limit = { 
@@ -9374,150 +9298,6 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 					NOT = {
 						has_character_was_religion_flag_trigger = yes
 					}
-					religion = voodoo
-				}
-				has_character_flag = character_was_voodoo
-			}
-		}
-		set_secret_religion = voodoo
-		clr_character_flag = character_was_voodoo
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
-					religion = santeria
-				}
-				has_character_flag = character_was_santeria
-			}
-		}
-		set_secret_religion = santeria
-		clr_character_flag = character_was_santeria
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
-					religion = candomble
-				}
-				has_character_flag = character_was_candomble
-			}
-		}
-		set_secret_religion = candomble
-		clr_character_flag = character_was_candomble
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
-					religion = espiritista
-				}
-				has_character_flag = character_was_espiritista
-			}
-		}
-		set_secret_religion = espiritista
-		clr_character_flag = character_was_espiritista
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
-					religion = peyotist
-				}
-				has_character_flag = character_was_peyotist
-			}
-		}
-		set_secret_religion = peyotist
-		clr_character_flag = character_was_peyotist
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
-					religion = midewiwin
-				}
-				has_character_flag = character_was_midewiwin
-			}
-		}
-		set_secret_religion = midewiwin
-		clr_character_flag = character_was_midewiwin
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
-					religion = midewiwin_reformed
-				}
-				has_character_flag = character_was_midewiwin_reformed
-			}
-		}
-		set_secret_religion = midewiwin_reformed
-		clr_character_flag = character_was_midewiwin_reformed
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
-					religion = raven_tales
-				}
-				has_character_flag = character_was_raven_tales
-			}
-		}
-		set_secret_religion = raven_tales
-		clr_character_flag = character_was_raven_tales
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
-					religion = raven_tales_reformed
-				}
-				has_character_flag = character_was_raven_tales_reformed
-			}
-		}
-		set_secret_religion = raven_tales_reformed
-		clr_character_flag = character_was_raven_tales_reformed
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
 					religion = catholic
 				}
 				has_character_flag = character_was_catholic
@@ -9534,38 +9314,6 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 					NOT = {
 						has_character_was_religion_flag_trigger = yes
 					}
-					religion = neognostic
-				}
-				has_character_flag = character_was_neognostic
-			}
-		}
-		set_secret_religion = neognostic
-		clr_character_flag = character_was_neognostic
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
-					religion = sedevacantist
-				}
-				has_character_flag = character_was_sedevacantist
-			}
-		}
-		set_secret_religion = sedevacantist
-		clr_character_flag = character_was_sedevacantist
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
 					religion = nestorian
 				}
 				has_character_flag = character_was_nestorian
@@ -9573,182 +9321,6 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 		}
 		set_secret_religion = nestorian
 		clr_character_flag = character_was_nestorian
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
-					religion = ursuline
-				}
-				has_character_flag = character_was_ursuline
-			}
-		}
-		set_secret_religion = ursuline
-		clr_character_flag = character_was_ursuline
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
-					religion = anabaptist
-				}
-				has_character_flag = character_was_anabaptist
-			}
-		}
-		set_secret_religion = anabaptist
-		clr_character_flag = character_was_anabaptist
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
-					religion = batenburger
-				}
-				has_character_flag = character_was_batenburger
-			}
-		}
-		set_secret_religion = batenburger
-		clr_character_flag = character_was_batenburger
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
-					religion = evangelical
-				}
-				has_character_flag = character_was_evangelical
-			}
-		}
-		set_secret_religion = evangelical
-		clr_character_flag = character_was_evangelical
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
-					religion = antinomian
-				}
-				has_character_flag = character_was_antinomian
-			}
-		}
-		set_secret_religion = antinomian
-		clr_character_flag = character_was_antinomian
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
-					religion = charismatic
-				}
-				has_character_flag = character_was_charismatic
-			}
-		}
-		set_secret_religion = charismatic
-		clr_character_flag = character_was_charismatic
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
-					religion = postadventist
-				}
-				has_character_flag = character_was_postadventist
-			}
-		}
-		set_secret_religion = postadventist
-		clr_character_flag = character_was_postadventist
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
-					religion = falling_star
-				}
-				has_character_flag = character_was_falling_star
-			}
-		}
-		set_secret_religion = falling_star
-		clr_character_flag = character_was_falling_star
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
-					religion = moravian
-				}
-				has_character_flag = character_was_moravian
-			}
-		}
-		set_secret_religion = moravian
-		clr_character_flag = character_was_moravian
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
-					religion = wormwoodist
-				}
-				has_character_flag = character_was_wormwoodist
-			}
-		}
-		set_secret_religion = wormwoodist
-		clr_character_flag = character_was_wormwoodist
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
-					religion = nonconformist
-				}
-				has_character_flag = character_was_nonconformist
-			}
-		}
-		set_secret_religion = nonconformist
-		clr_character_flag = character_was_nonconformist
 		break = yes
 	}
 	if = {
@@ -9781,70 +9353,6 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
 		}
 		set_secret_religion = celeste
 		clr_character_flag = character_was_celeste
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
-					religion = nazarene
-				}
-				has_character_flag = character_was_nazarene
-			}
-		}
-		set_secret_religion = nazarene
-		clr_character_flag = character_was_nazarene
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
-					religion = true_cross
-				}
-				has_character_flag = character_was_true_cross
-			}
-		}
-		set_secret_religion = true_cross
-		clr_character_flag = character_was_true_cross
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
-					religion = edenite
-				}
-				has_character_flag = character_was_edenite
-			}
-		}
-		set_secret_religion = edenite
-		clr_character_flag = character_was_edenite
-		break = yes
-	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					NOT = {
-						has_character_was_religion_flag_trigger = yes
-					}
-					religion = cristo_rey
-				}
-				has_character_flag = character_was_cristo_rey
-			}
-		}
-		set_secret_religion = cristo_rey
-		clr_character_flag = character_was_cristo_rey
 		break = yes
 	}
 	if = {
@@ -9967,100 +9475,12 @@ add_religion_char_flag_effect = {
 		set_character_flag = character_was_rastafarian
 	}
 	if = {
-		limit = { religion = voodoo }
-		set_character_flag = character_was_voodoo
-	}
-	if = {
-		limit = { religion = santeria }
-		set_character_flag = character_was_santeria
-	}
-	if = {
-		limit = { religion = candomble }
-		set_character_flag = character_was_candomble
-	}
-	if = {
-		limit = { religion = espiritista }
-		set_character_flag = character_was_espiritista
-	}
-	if = {
-		limit = { religion = peyotist }
-		set_character_flag = character_was_peyotist
-	}
-	if = {
-		limit = { religion = midewiwin }
-		set_character_flag = character_was_midewiwin
-	}
-	if = {
-		limit = { religion = midewiwin_reformed }
-		set_character_flag = character_was_midewiwin_reformed
-	}
-	if = {
-		limit = { religion = raven_tales }
-		set_character_flag = character_was_raven_tales
-	}
-	if = {
-		limit = { religion = raven_tales_reformed }
-		set_character_flag = character_was_raven_tales_reformed
-	}
-	if = {
 		limit = { religion = catholic }
 		set_character_flag = character_was_catholic
 	}
 	if = {
-		limit = { religion = neognostic }
-		set_character_flag = character_was_neognostic
-	}
-	if = {
-		limit = { religion = sedevacantist }
-		set_character_flag = character_was_sedevacantist
-	}
-	if = {
 		limit = { religion = nestorian }
 		set_character_flag = character_was_nestorian
-	}
-	if = {
-		limit = { religion = ursuline }
-		set_character_flag = character_was_ursuline
-	}
-	if = {
-		limit = { religion = anabaptist }
-		set_character_flag = character_was_anabaptist
-	}
-	if = {
-		limit = { religion = batenburger }
-		set_character_flag = character_was_batenburger
-	}
-	if = {
-		limit = { religion = evangelical }
-		set_character_flag = character_was_evangelical
-	}
-	if = {
-		limit = { religion = antinomian }
-		set_character_flag = character_was_antinomian
-	}
-	if = {
-		limit = { religion = charismatic }
-		set_character_flag = character_was_charismatic
-	}
-	if = {
-		limit = { religion = postadventist }
-		set_character_flag = character_was_postadventist
-	}
-	if = {
-		limit = { religion = falling_star }
-		set_character_flag = character_was_falling_star
-	}
-	if = {
-		limit = { religion = moravian }
-		set_character_flag = character_was_moravian
-	}
-	if = {
-		limit = { religion = wormwoodist }
-		set_character_flag = character_was_wormwoodist
-	}
-	if = {
-		limit = { religion = nonconformist }
-		set_character_flag = character_was_nonconformist
 	}
 	if = {
 		limit = { religion = apostolic }
@@ -10071,148 +9491,12 @@ add_religion_char_flag_effect = {
 		set_character_flag = character_was_celeste
 	}
 	if = {
-		limit = { religion = nazarene }
-		set_character_flag = character_was_nazarene
-	}
-	if = {
-		limit = { religion = true_cross }
-		set_character_flag = character_was_true_cross
-	}
-	if = {
-		limit = { religion = edenite }
-		set_character_flag = character_was_edenite
-	}
-	if = {
-		limit = { religion = cristo_rey }
-		set_character_flag = character_was_cristo_rey
-	}
-	if = {
-		limit = { religion = reformista }
-		set_character_flag = character_was_reformista
-	}
-	if = {
-		limit = { religion = sacred_heart }
-		set_character_flag = character_was_sacred_heart
-	}
-	if = {
-		limit = { religion = patria_grande }
-		set_character_flag = character_was_patria_grande
-	}
-	if = {
-		limit = { religion = navegante }
-		set_character_flag = character_was_navegante
-	}
-	if = {
-		limit = { religion = fidencista }
-		set_character_flag = character_was_fidencista
-	}
-	if = {
-		limit = { religion = cetic }
-		set_character_flag = character_was_cetic
-	}
-	if = {
-		limit = { religion = gaian }
-		set_character_flag = character_was_gaian
-	}
-	if = {
-		limit = { religion = shinto }
-		set_character_flag = character_was_shinto
-	}
-	if = {
-		limit = { religion = nousthreskeia }
-		set_character_flag = character_was_nousthreskeia
-	}
-	if = {
-		limit = { religion = mormon }
-		set_character_flag = character_was_mormon
-	}
-	if = {
-		limit = { religion = neogodbeite }
-		set_character_flag = character_was_neogodbeite
-	}
-	if = {
-		limit = { religion = woolleyite }
-		set_character_flag = character_was_woolleyite
-	}
-	if = {
-		limit = { religion = strangite }
-		set_character_flag = character_was_strangite
-	}
-	if = {
-		limit = { religion = lamanita }
-		set_character_flag = character_was_lamanita
-	}
-	if = {
-		limit = { religion = furiegi }
-		set_character_flag = character_was_furiegi
-	}
-	if = {
-		limit = { religion = sol_invicta }
-		set_character_flag = character_was_sol_invicta
-	}
-	if = {
-		limit = { religion = mictlantec }
-		set_character_flag = character_was_mictlantec
-	}
-	if = {
-		limit = { religion = qabantajik }
-		set_character_flag = character_was_qabantajik
-	}
-	if = {
-		limit = { religion = neomayan }
-		set_character_flag = character_was_neomayan
-	}
-	if = {
 		limit = { religion = americanist }
 		set_character_flag = character_was_americanist
 	}
 	if = {
-		limit = { religion = hamiltonian }
-		set_character_flag = character_was_hamiltonian
-	}
-	if = {
-		limit = { religion = jeffersonian }
-		set_character_flag = character_was_jeffersonian
-	}
-	if = {
-		limit = { religion = libertarian }
-		set_character_flag = character_was_libertarian
-	}
-	if = {
-		limit = { religion = consumerist }
-		set_character_flag = character_was_consumerist
-	}
-	if = {
-		limit = { religion = monetarist }
-		set_character_flag = character_was_monetarist
-	}
-	if = {
-		limit = { religion = atomicist }
-		set_character_flag = character_was_atomicist
-	}
-	if = {
-		limit = { religion = aphite }
-		set_character_flag = character_was_aphite
-	}
-	if = {
 		limit = { religion = pagan }
 		set_character_flag = character_was_pagan
-	}
-	if = {
-		limit = { religion = revelationist_reformed }
-		set_character_flag = character_was_revelationist_reformed
-	}
-	if = {
-		limit = { religion = revelationist }
-		set_character_flag = character_was_revelationist
-	}
-	if = {
-		limit = { religion = chrome_cultist }
-		set_character_flag = character_was_chrome_cultist
-	}
-	if = {
-		limit = { religion = rust_cultist }
-		set_character_flag = character_was_rust_cultist
 	}
 	if = {
 		limit = { religion = glorian }
@@ -10221,26 +9505,6 @@ add_religion_char_flag_effect = {
 	if = {
 		limit = { religion = thelema }
 		set_character_flag = character_was_thelema
-	}
-	if = {
-		limit = { religion = norse_pagan_reformed }
-		set_character_flag = character_was_norse_pagan_reformed
-	}
-	if = {
-		limit = { religion = norse_pagan }
-		set_character_flag = character_was_norse_pagan
-	}
-	if = {
-		limit = { religion = brethren }
-		set_character_flag = character_was_brethren
-	}
-	if = {
-		limit = { religion = jewish }
-		set_character_flag = character_was_jewish
-	}
-	if = {
-		limit = { religion = reform }
-		set_character_flag = character_was_reform
 	}
 	if = {
 		limit = { religion = bhagavata }
@@ -10255,129 +9519,23 @@ add_religion_char_flag_effect = {
 		set_character_flag = character_was_revivalist
 	}
 	if = {
-		limit = { religion = imamite }
-		set_character_flag = character_was_imamite
-	}
-	if = {
-		limit = { religion = qingzhen }
-		set_character_flag = character_was_qingzhen
-	}
-	if = {
-		limit = { religion = alawiyya }
-		set_character_flag = character_was_alawiyya
-	}
-	if = {
-		limit = { religion = orientalist }
-		set_character_flag = character_was_orientalist
-	}
-	if = {
-		limit = { religion = misrist }
-		set_character_flag = character_was_misrist
-	}
-	if = {
-		limit = { religion = trailwalker }
-		set_character_flag = character_was_trailwalker
-	}
-	if = {
-		limit = { religion = trailwalker_reformed }
-		set_character_flag = character_was_trailwalker_reformed
-	}
-	if = {
 		limit = { religion = orthodox }
 		set_character_flag = character_was_orthodox
-	}
-	if = {
-		limit = { religion = exovedate }
-		set_character_flag = character_was_exovedate
-	}
-	if = {
-		limit = { religion = pelagic }
-		set_character_flag = character_was_pelagic
 	}
 }
 
 clr_religion_char_flag_effect = {
 	clr_character_flag = character_was_rastafarian
-	clr_character_flag = character_was_voodoo
-	clr_character_flag = character_was_santeria
-	clr_character_flag = character_was_candomble
-	clr_character_flag = character_was_espiritista
-	clr_character_flag = character_was_peyotist
-	clr_character_flag = character_was_midewiwin
-	clr_character_flag = character_was_midewiwin_reformed
-	clr_character_flag = character_was_raven_tales
-	clr_character_flag = character_was_raven_tales_reformed
 	clr_character_flag = character_was_catholic
-	clr_character_flag = character_was_neognostic
-	clr_character_flag = character_was_sedevacantist
-	clr_character_flag = character_was_ursuline
-	clr_character_flag = character_was_anabaptist
-	clr_character_flag = character_was_batenburger
-	clr_character_flag = character_was_evangelical
-	clr_character_flag = character_was_antinomian
-	clr_character_flag = character_was_charismatic
-	clr_character_flag = character_was_postadventist
-	clr_character_flag = character_was_falling_star
-	clr_character_flag = character_was_moravian
-	clr_character_flag = character_was_wormwoodist
-	clr_character_flag = character_was_nonconformist
 	clr_character_flag = character_was_apostolic
 	clr_character_flag = character_was_celeste
-	clr_character_flag = character_was_nazarene
-	clr_character_flag = character_was_true_cross
-	clr_character_flag = character_was_edenite
-	clr_character_flag = character_was_cristo_rey
-	clr_character_flag = character_was_reformista
-	clr_character_flag = character_was_sacred_heart
-	clr_character_flag = character_was_patria_grande
-	clr_character_flag = character_was_navegante
-	clr_character_flag = character_was_fidencista
-	clr_character_flag = character_was_cetic
-	clr_character_flag = character_was_gaian
-	clr_character_flag = character_was_shinto
-	clr_character_flag = character_was_nousthreskeia
-	clr_character_flag = character_was_mormon
-	clr_character_flag = character_was_neogodbeite
-	clr_character_flag = character_was_woolleyite
-	clr_character_flag = character_was_strangite
-	clr_character_flag = character_was_lamanita
-	clr_character_flag = character_was_furiegi
-	clr_character_flag = character_was_sol_invicta
-	clr_character_flag = character_was_mictlantec
-	clr_character_flag = character_was_qabantajik
-	clr_character_flag = character_was_neomayan
 	clr_character_flag = character_was_americanist
-	clr_character_flag = character_was_hamiltonian
-	clr_character_flag = character_was_jeffersonian
-	clr_character_flag = character_was_libertarian
-	clr_character_flag = character_was_consumerist
-	clr_character_flag = character_was_monetarist
-	clr_character_flag = character_was_atomicist
-	clr_character_flag = character_was_aphite
 	clr_character_flag = character_was_pagan
-	clr_character_flag = character_was_revelationist_reformed
-	clr_character_flag = character_was_revelationist
-	clr_character_flag = character_was_chrome_cultist
-	clr_character_flag = character_was_rust_cultist
 	clr_character_flag = character_was_glorian
 	clr_character_flag = character_was_thelema
-	clr_character_flag = character_was_norse_pagan_reformed
-	clr_character_flag = character_was_norse_pagan
-	clr_character_flag = character_was_brethren
-	clr_character_flag = character_was_jewish
-	clr_character_flag = character_was_reform
 	clr_character_flag = character_was_hindu
 	clr_character_flag = character_was_revivalist
-	clr_character_flag = character_was_imamite
-	clr_character_flag = character_was_qingzhen
-	clr_character_flag = character_was_alawiyya
-	clr_character_flag = character_was_orientalist
-	clr_character_flag = character_was_misrist
-	clr_character_flag = character_was_trailwalker
-	clr_character_flag = character_was_trailwalker_reformed
 	clr_character_flag = character_was_orthodox
-	clr_character_flag = character_was_exovedate
-	clr_character_flag = character_was_pelagic
 }
 
 event_target_old_religion_from_flag_effect = {
@@ -14582,12 +13740,7 @@ spawn_elder_effect = {
 
 			if = { # Assign African face paint
 				limit = {
-					OR = {
-						religion_group = afro_syncretic
-						has_religion_feature = religion_animistic
-						has_religion_feature = religion_feature_trailwalker
-						has_religion_feature = religion_feature_midewiwin
-					}
+					has_religion_feature = religion_animistic
 				}
 				random_list = {
 					25 = { #Nothing
@@ -22992,11 +22145,7 @@ apply_dogmatic_on_start_effect = {
 		modifier = religion_dogmatic
 		years = 1000
 	}
-	remove_intermarry = afro_syncretic
-	remove_intermarry = amero_syncretic
 	remove_intermarry = christian
-	remove_intermarry = oldworld
-	remove_intermarry = nautical
 	remove_intermarry = indian_group
 	remove_intermarry = jewish_group
 }
@@ -25218,14 +24367,10 @@ stable_attribute_improvement_effect = {
 add_sympathy_for_religion_effect = {
 	trigger_switch = {
 		on_trigger = religion_group
-		afro_syncretic = { add_trait = sympathy_afro_syncretic }
-		amero_syncretic = { add_trait = sympathy_amero_syncretic }
 		christian = { add_trait = sympathy_christendom }
 		indian_group = { add_trait = sympathy_indian }
 		jewish_group = { add_trait = sympathy_judaism }
 		pagan_group = { add_trait = sympathy_pagans }
-		oldworld = { add_trait = sympathy_oldworld }
-		nautical = { add_trait = sympathy_nautical }
 		muslim = { add_trait = sympathy_islam }
 	}
 }
@@ -27156,7 +26301,6 @@ give_goldsmith_artifacts_flag_okay_effect = {
 		limit = { 
 			OR = {
 				religion_group = muslim 
-				religion_group = afro_syncretic
 			}
 		}
 		add_artifact = engraved_dagger
@@ -27169,27 +26313,27 @@ give_goldsmith_artifacts_flag_okay_effect = {
 		add_artifact = engraved_dagger
 		add_artifact = collar_of_pearls
 	}
-	else_if = {
-		limit = { 
-			OR = {
-				religion_group = amero_syncretic
-				religion = midewiwin
-				religion = midewiwin_reformed
-			}
-		}
-		add_artifact = circlet_of_twilight
-		add_artifact = silver_staff
-	}
-	else_if = {
-		limit = {
-			OR = {
-				religion = norse_pagan
-				religion = norse_pagan_reformed
-			}
-		}
-		add_artifact = iron_crown
-		add_artifact = engraved_sword
-	}
+	# else_if = {
+		# limit = { 
+			# OR = {
+				# religion_group = amero_syncretic
+				# religion = midewiwin
+				# religion = midewiwin_reformed
+			# }
+		# }
+		# add_artifact = circlet_of_twilight
+		# add_artifact = silver_staff
+	# }
+	# else_if = {
+		# limit = {
+			# OR = {
+				# religion = norse_pagan
+				# religion = norse_pagan_reformed
+			# }
+		# }
+		# add_artifact = iron_crown
+		# add_artifact = engraved_sword
+	# }
 	else = {
 		add_artifact = engraved_crown
 		add_artifact = ceremonial_axe
@@ -27212,7 +26356,6 @@ give_goldsmith_artifacts_flag_good_effect = {
 		limit = { 
 			OR = {
 				religion_group = muslim 
-				religion_group = afro_syncretic
 			}
 		}
 		add_artifact = bejeweled_dagger
@@ -27225,27 +26368,27 @@ give_goldsmith_artifacts_flag_good_effect = {
 		add_artifact = bejeweled_dagger
 		add_artifact = necklace_of_radiance
 	}
-	else_if = {
-		limit = { 
-			OR = {
-				religion_group = amero_syncretic
-				religion = midewiwin
-				religion = midewiwin_reformed
-			}
-		}
-		add_artifact = circlet_of_the_heavens
-		add_artifact = golden_staff
-	}
-	else_if = {
-		limit = {
-			OR = {
-				religion = norse_pagan
-				religion = norse_pagan_reformed
-			}
-		}
-		add_artifact = crown_of_the_sea
-		add_artifact = golden_sword
-	}
+	# else_if = {
+		# limit = { 
+			# OR = {
+				# religion_group = amero_syncretic
+				# religion = midewiwin
+				# religion = midewiwin_reformed
+			# }
+		# }
+		# add_artifact = circlet_of_the_heavens
+		# add_artifact = golden_staff
+	# }
+	# else_if = {
+		# limit = {
+			# OR = {
+				# religion = norse_pagan
+				# religion = norse_pagan_reformed
+			# }
+		# }
+		# add_artifact = crown_of_the_sea
+		# add_artifact = golden_sword
+	# }
 	else = {
 		add_artifact = amber_crown
 		add_artifact = obsidian_axe
@@ -27268,7 +26411,6 @@ give_goldsmith_artifacts_flag_expensive_effect = {
 		limit = { 
 			OR = {
 				religion_group = muslim 
-				religion_group = afro_syncretic
 			}
 		}
 		add_artifact = dagger_of_glory
@@ -27281,27 +26423,27 @@ give_goldsmith_artifacts_flag_expensive_effect = {
 		add_artifact = dagger_of_glory
 		add_artifact = celestial_necklace
 	}
-	else_if = {
-		limit = { 
-			OR = {
-				religion_group = amero_syncretic
-				religion = midewiwin
-				religion = midewiwin_reformed
-			}
-		}
-		add_artifact = circlet_of_the_heavens
-		add_artifact = staff_of_majesty
-	}
-	else_if = {
-		limit = {
-			OR = {
-				religion = norse_pagan
-				religion = norse_pagan_reformed
-			}
-		}
-		add_artifact = crown_of_crows
-		add_artifact = sword_of_heroes
-	}
+	# else_if = {
+		# limit = { 
+			# OR = {
+				# religion_group = amero_syncretic
+				# religion = midewiwin
+				# religion = midewiwin_reformed
+			# }
+		# }
+		# add_artifact = circlet_of_the_heavens
+		# add_artifact = staff_of_majesty
+	# }
+	# else_if = {
+		# limit = {
+			# OR = {
+				# religion = norse_pagan
+				# religion = norse_pagan_reformed
+			# }
+		# }
+		# add_artifact = crown_of_crows
+		# add_artifact = sword_of_heroes
+	# }
 	else = {
 		add_artifact = heros_crown
 		add_artifact = axe_of_the_ancestors
@@ -27324,7 +26466,6 @@ give_goldsmith_artifacts_flag_amazing_effect = {
 		limit = { 
 			OR = {
 				religion_group = muslim 
-				religion_group = afro_syncretic
 			}
 		}
 		add_artifact = dagger_of_glory_2
@@ -27337,27 +26478,27 @@ give_goldsmith_artifacts_flag_amazing_effect = {
 		add_artifact = dagger_of_glory_2
 		add_artifact = celestial_necklace_2
 	}
-	else_if = {
-		limit = { 
-			OR = {
-				religion_group = amero_syncretic
-				religion = midewiwin
-				religion = midewiwin_reformed
-			}
-		}
-		add_artifact = circlet_of_the_heavens_2
-		add_artifact = staff_of_majesty_2
-	}
-	else_if = {
-		limit = {
-			OR = {
-				religion = norse_pagan
-				religion = norse_pagan_reformed
-			}
-		}
-		add_artifact = crown_of_crows_2
-		add_artifact = sword_of_heroes_2
-	}
+	# else_if = {
+		# limit = { 
+			# OR = {
+				# religion_group = amero_syncretic
+				# religion = midewiwin
+				# religion = midewiwin_reformed
+			# }
+		# }
+		# add_artifact = circlet_of_the_heavens_2
+		# add_artifact = staff_of_majesty_2
+	# }
+	# else_if = {
+		# limit = {
+			# OR = {
+				# religion = norse_pagan
+				# religion = norse_pagan_reformed
+			# }
+		# }
+		# add_artifact = crown_of_crows_2
+		# add_artifact = sword_of_heroes_2
+	# }
 	else = {
 		add_artifact = heros_crown_2
 		add_artifact = axe_of_the_ancestors_2
@@ -27381,7 +26522,6 @@ give_weaponsmith_artifacts_flag_okay_effect = {
 		limit = { 
 			OR = {
 				religion_group = muslim 
-				religion_group = afro_syncretic
 			}
 		}
 		add_artifact = engraved_dagger
@@ -27394,27 +26534,27 @@ give_weaponsmith_artifacts_flag_okay_effect = {
 		add_artifact = engraved_dagger
 		add_artifact = collar_of_pearls
 	}
-	else_if = {
-		limit = { 
-			OR = {
-				religion_group = amero_syncretic
-				religion = midewiwin
-				religion = midewiwin_reformed
-			}
-		}
-		add_artifact = circlet_of_twilight
-		add_artifact = silver_staff
-	}
-	else_if = {
-		limit = {
-			OR = {
-				religion = norse_pagan
-				religion = norse_pagan_reformed
-			}
-		}
-		add_artifact = iron_crown
-		add_artifact = engraved_sword
-	}
+	# else_if = {
+		# limit = { 
+			# OR = {
+				# religion_group = amero_syncretic
+				# religion = midewiwin
+				# religion = midewiwin_reformed
+			# }
+		# }
+		# add_artifact = circlet_of_twilight
+		# add_artifact = silver_staff
+	# }
+	# else_if = {
+		# limit = {
+			# OR = {
+				# religion = norse_pagan
+				# religion = norse_pagan_reformed
+			# }
+		# }
+		# add_artifact = iron_crown
+		# add_artifact = engraved_sword
+	# }
 	else = {
 		add_artifact = engraved_crown
 		add_artifact = ceremonial_axe
@@ -27437,7 +26577,6 @@ give_weaponsmith_artifacts_flag_good_effect = {
 		limit = { 
 			OR = {
 				religion_group = muslim 
-				religion_group = afro_syncretic
 			}
 		}
 		add_artifact = bejeweled_dagger
@@ -27450,27 +26589,27 @@ give_weaponsmith_artifacts_flag_good_effect = {
 		add_artifact = bejeweled_dagger
 		add_artifact = necklace_of_radiance
 	}
-	else_if = {
-		limit = { 
-			OR = {
-				religion_group = amero_syncretic
-				religion = midewiwin
-				religion = midewiwin_reformed
-			}
-		}
-		add_artifact = circlet_of_the_heavens
-		add_artifact = golden_staff
-	}
-	else_if = {
-		limit = {
-			OR = {
-				religion = norse_pagan
-				religion = norse_pagan_reformed
-			}
-		}
-		add_artifact = crown_of_the_sea
-		add_artifact = golden_sword
-	}
+	# else_if = {
+		# limit = { 
+			# OR = {
+				# religion_group = amero_syncretic
+				# religion = midewiwin
+				# religion = midewiwin_reformed
+			# }
+		# }
+		# add_artifact = circlet_of_the_heavens
+		# add_artifact = golden_staff
+	# }
+	# else_if = {
+		# limit = {
+			# OR = {
+				# religion = norse_pagan
+				# religion = norse_pagan_reformed
+			# }
+		# }
+		# add_artifact = crown_of_the_sea
+		# add_artifact = golden_sword
+	# }
 	else = {
 		add_artifact = amber_crown
 		add_artifact = obsidian_axe
@@ -27493,7 +26632,6 @@ give_weaponsmith_artifacts_flag_expensive_effect = {
 		limit = { 
 			OR = {
 				religion_group = muslim 
-				religion_group = afro_syncretic
 			}
 		}
 		add_artifact = dagger_of_glory
@@ -27506,27 +26644,27 @@ give_weaponsmith_artifacts_flag_expensive_effect = {
 		add_artifact = dagger_of_glory
 		add_artifact = celestial_necklace
 	}
-	else_if = {
-		limit = { 
-			OR = {
-				religion_group = amero_syncretic
-				religion = midewiwin
-				religion = midewiwin_reformed
-			}
-		}
-		add_artifact = circlet_of_the_heavens
-		add_artifact = staff_of_majesty
-	}
-	else_if = {
-		limit = {
-			OR = {
-				religion = norse_pagan
-				religion = norse_pagan_reformed
-			}
-		}
-		add_artifact = crown_of_crows
-		add_artifact = sword_of_heroes
-	}
+	# else_if = {
+		# limit = { 
+			# OR = {
+				# religion_group = amero_syncretic
+				# religion = midewiwin
+				# religion = midewiwin_reformed
+			# }
+		# }
+		# add_artifact = circlet_of_the_heavens
+		# add_artifact = staff_of_majesty
+	# }
+	# else_if = {
+		# limit = {
+			# OR = {
+				# religion = norse_pagan
+				# religion = norse_pagan_reformed
+			# }
+		# }
+		# add_artifact = crown_of_crows
+		# add_artifact = sword_of_heroes
+	# }
 	else = {
 		add_artifact = heros_crown
 		add_artifact = axe_of_the_ancestors
