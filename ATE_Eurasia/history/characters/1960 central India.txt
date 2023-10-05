@@ -1,62 +1,63 @@
 1960000={
-	name="1960000"
-	dynasty=0 #blank
-	culture=odia
-	religion = jagannath
-	martial=3
-	diplomacy=2
-	stewardship=4
-	intrigue=5
-	learning=3
-	trait=charismatic_negotiator
-	trait=gregarious
-	trait=honest
-	trait=stubborn
-	trait=brave
-	trait=flanker
-	2629.11.2={birth=yes}
-	2668.1.25={death=yes}
+	name="Netaji"
+    dynasty=7532000 # Panigrahi
+    culture=odia
+    religion=jagannath
+	secret_religion=bharathamatha
+    martial=3
+    diplomacy=5
+    stewardship=4
+    intrigue=4
+    learning=6
+    trait=grey_eminence
+    trait=quick
+    trait=poet
+    trait=honest
+    trait=ambitious
+    trait=proud
+    trait=charitable
+    trait=gregarious
+	mother=1960108
+    2641.1.1={birth=yes}
+	2655.1.1={effect={add_lover=1992810}}
+    2700.1.1={death=yes}
 }
 1960001={
-	name="1960001"
-	dynasty=0 #blank
-	culture=odia
-	religion = saura
-	martial=4
-	diplomacy=5
-	stewardship=4
-	intrigue=3
-	learning=3
-	trait=underhanded_rogue
-	trait=patient
-	trait=envious
-	trait=proud
-	trait=cynical
-	2641.12.15={birth=yes}
-	2695.4.3={death=yes}
+	name="Fakir"
+    dynasty=7532007 # Das
+    culture=odia
+    religion=saura
+    martial=3
+    diplomacy=4
+    stewardship=2
+    intrigue=4
+    learning=3
+    trait=underhanded_rogue
+    trait=content
+    trait=diligent
+    trait=arbitrary
+    2627.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1960002={
-	name="1960002"
-	dynasty=0 #blank
-	culture=odia
-	religion = jagannath
-	martial=3
-	diplomacy=6
-	stewardship=4
-	intrigue=3
-	learning=4
-	trait=fortune_builder
-	trait=content
-	trait=gamer
-	trait=lustful
-	trait=patient
-	2595.10.6={birth=yes}
-	2675.7.23={death=yes}
+	name="Bira"
+    dynasty=7532002 # Surendra
+    culture=odia
+    religion=jagannath
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=4
+    learning=3
+    trait=flamboyant_schemer     
+    trait=kind
+    trait=paranoid
+    2616.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1960003={
-	name="1960003"
-	dynasty=0 #blank
-	female=yes
+	name="Srinivas"
+	dynasty=7532008 #Udgata
 	culture=odia
 	religion = jagannath
 	martial=4
@@ -68,47 +69,46 @@
 	trait=erudite
 	trait=wroth
 	trait=arbitrary
-	trait=freckles_5
 	trait=humble
 	2645.9.10={birth=yes}
 	2686.5.11={death=yes}
 }
 1960004={
-	name="1960004"
-	dynasty=0 #blank
-	culture=chhattisgarhi
-	religion = jagannath
-	martial=3
-	diplomacy=1
-	stewardship=4
-	intrigue=3
-	learning=2
-	trait=scholarly_theologian
-	trait=zealous
-	trait=kind
-	trait=gluttonous
-	trait=gardener
-	2513.5.30={birth=yes}
-	2685.3.1={death=yes}
+	name="Tamradhwaj"
+    dynasty=7526000 # Karim
+    culture=chhattisgarhi
+    religion=jagannath
+    martial=4
+    diplomacy=3
+    stewardship=5
+    intrigue=3
+    learning=4
+    trait=indulgent_wastrel
+    trait=drunkard
+    trait=envious
+    trait=wroth
+    trait=diligent
+    trait=arbitrary
+    2639.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1960005={
-	name="1960005"
-	dynasty=0 #blank
-	culture=chhattisgarhi
-	religion = sarnaist
-	martial=3
-	diplomacy=5
-	stewardship=3
-	intrigue=4
-	learning=3
-	trait=indulgent_wastrel
-	trait=trusting
-	trait=ambitious
-	trait=homosexual
-	trait=shy
-	trait=lustful
-	2589.10.14={birth=yes}
-	2669.2.16={death=yes}
+	name="Dhanraj"
+    dynasty=7526005 # Dayal
+    culture=chhattisgarhi
+    religion=sarnaist
+    female-yes
+    martial=3
+    diplomacy=5
+    stewardship=4
+    intrigue=4
+    learning=3
+    trait=underhanded_rogue
+    trait=wroth
+    trait=stubborn
+    trait=deceitful
+    2635.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1960006={
 	name="Tenneti"
@@ -128,99 +128,94 @@
     2700.1.1={death=yes}
 }
 1960007={
-	name="1960007"
-	dynasty=0 #blank
-	culture=odia
-	religion = jagannath
-	martial=3
-	diplomacy=3
-	stewardship=4
-	intrigue=5
-	learning=2
-	trait=misguided_warrior
-	trait=humble
-	trait=stressed
-	trait=charitable
-	trait=lisp
-	2648.10.1={birth=yes}
-	2668.12.29={death=yes}
+	name="Vikram"
+    dynasty=7532003 # Padal
+    culture=odia
+    religion=jagannath
+    martial=4
+    diplomacy=4
+    stewardship=3
+    intrigue=4
+    learning=5
+    trait=thrifty_clerk
+    trait=robust
+    trait=patient
+    trait=greedy
+    2625.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1960008={
-	name="1960008"
-	dynasty=0 #blank
-	culture=odia
-	religion = jagannath
-	martial=4
-	diplomacy=5
-	stewardship=7
-	intrigue=2
-	learning=3
-	trait=tough_soldier
-	trait=giant
-	trait=temperate
-	trait=greedy
-	trait=brave
-	trait=organizer
-	2598.12.3={birth=yes}
-	2670.4.16={death=yes}
+	name="Pratap"
+    dynasty=7532004 # Pattnaik
+    culture=odia
+    religion=jagannath
+    martial=3
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=3
+    trait=detached_priest
+    trait=cynical
+    trait=homosexual
+    trait=cynical
+    trait=diligent
+    trait=patient
+    trait=proud
+    2643.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1960009={
-	name="1960009"
-	dynasty=0 #blank
-	female=yes
-	culture=chhattisgarhi
-	religion = jagannath
-	martial=3
-	diplomacy=5
-	stewardship=4
-	intrigue=1
-	learning=3
-	trait=fortune_builder
-	trait=kind
-	trait=quick
-	trait=drunkard
-	trait=proud
-	trait=temperate
-	2614.11.21={birth=yes}
-	2682.5.16={death=yes}
+	name="Kuppahalli"
+    dynasty=7526001 # Sen
+    culture=chhattisgarhi
+    religion=jagannath
+    female=yes
+    martial=4
+    diplomacy=3
+    stewardship=5
+    intrigue=5
+    learning=3
+    trait=intricate_webweaver
+    trait=cruel
+    trait=greedy
+    trait=charitable
+    2645.1.1{birth=yes}
+    2700.1.1={death=yes}
 }
 1960010={
-	name="1960010"
-	dynasty=0 #blank
-	culture=chhattisgarhi
-	religion = jagannath
-	martial=5
-	diplomacy=3
-	stewardship=4
-	intrigue=2
-	learning=4
-	trait=intricate_webweaver
-	trait=groomed
-	trait=temperate
-	trait=greedy
-	trait=content
-	trait=light_foot_leader
-	2609.1.13={birth=yes}
-	2701.2.17={death=yes}
+	name="Harshad"
+    dynasty=7526002 # Ali
+    culture=chhattisgarhi
+    religion=jagannath
+    martial=4
+    diplomacy=4
+    stewardship=3
+    intrigue=5
+    learning=3
+    trait=midas_touched
+    trait=deceitful
+    trait=envious
+    trait=greedy
+    2619.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
-1960011={ #Bastar
-	name="1960011"
-	dynasty=0 #blank
-	culture=gondi
-	religion = koyapunem
-	secret_religion = vaishnava
-	martial=5
-	diplomacy=2
-	stewardship=3
-	intrigue=5
-	learning=4
-	trait=martial_cleric
-	trait=charitable
-	trait=kind
-	trait=sturdy
-	trait=temperate
-	2644.5.11={birth=yes}
-	2675.11.3={death=yes}
+1960011={
+	name="Komaram"
+    dynasty=7525002 # Dhur
+    culture=gondi
+    religion=koyapunem
+	secret_religion=vaishnava
+    martial=3
+    diplomacy=5
+    stewardship=3
+    intrigue=3
+    learning=4
+    trait=charismatic_negotiator
+    trait=gregarious
+    trait=charitable
+    trait=lustful
+    2629.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1960012={
@@ -244,28 +239,28 @@
 }
 
 1960013={
-	name="1960013"
-	dynasty=0 #blank
-	culture=nagpuri
-	religion = sarnaist
-	martial=2
-	diplomacy=2
-	stewardship=3
-	intrigue=3
-	learning=2
-	trait=naive_appeaser
-	trait=deceitful
-	trait=depressed
-	trait=patient
-	trait=slothful
-	trait=paranoid
-	2628.6.24={birth=yes}
-	2671.3.4={death=yes}
+	name="Bakhtar"
+    dynasty=7529000 # Nayak
+    culture=nagpuri
+    religion=sarnaist
+    martial=4
+    diplomacy=4
+    stewardship=3
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=duelist
+    trait=cruel
+    trait=greedy
+    trait=envious
+    trait=diligent
+    2636.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1960014={
-	name="1960014"
-	dynasty=0 #blank
+	name="Maniklal"
+	dynasty=2144096 #Sinha
 	culture=rarhi
 	religion = shaktah
 	martial=3
@@ -276,7 +271,6 @@
 	trait=fortune_builder
 	trait=administrator
 	trait=dull
-	trait=freckles_3
 	trait=temperate
 	trait=diligent
 	trait=zealous
@@ -286,25 +280,23 @@
 }
 
 1960015={
-	name="1960015"
-	dynasty=0 #blank
-	female=yes
-	culture=magahi
-	religion = sarnaist
-	martial=3
-	diplomacy=5
-	stewardship=5
-	intrigue=3
-	learning=3
-	trait=skilled_tactician
-	trait=shy
-	trait=just
-	trait=deceitful
-	trait=duelist
-	trait=freckles
-	trait=harelip
-	2650.4.8={birth=yes}
-	2691.6.9={death=yes}
+	name="Jaipal"
+    dynasty=7528001 # Munda
+    culture=magahi
+    religion=sarnaist
+    martial=4
+    diplomacy=4
+    stewardship=3
+    intrigue=4
+    learning=5
+    trait=skilled_tactician
+    trait=brave
+    trait=charitable
+    trait=wroth
+    trait=zealous
+    trait=gregarious
+    2638.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1960016={
 	name="1960016"
@@ -327,47 +319,59 @@
 }
 
 1960017={
-	name="1960017"
-	dynasty=0 #blank
-	culture=odia
-	religion = saura
-	trait=misguided_warrior
-	trait=sturdy
-	trait=patient
-	trait=brave
-	trait=strong
-	2641.1.1={birth=yes}
-	2691.1.1={death=yes}
+	name="Dhanurjaya"
+    dynasty=7532001 # Patnaik
+    culture=odia
+    religion=jagannath
+    martial=5
+    diplomacy=4
+    stewardship=3
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=wroth
+    trait=just
+    trait=kind
+    2648.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1960018={
-	name="1960018"
-	dynasty=0 #blank
-	female=yes
-	culture=odia
-	religion = vaishnava
-	trait=indulgent_wastrel
-	trait=robust
-	trait=proud
-	trait=paranoid
-	trait=envious
-	2635.1.1={birth=yes}
-	2691.1.1={death=yes}
+	name="Radha"
+    dynasty=7532006 # Reddy
+    culture=odia
+    religion=vaishnava
+    female=yes
+    martial=4
+    diplomacy=3
+    stewardship=4
+    intrigue=3
+    learning=4
+    trait=skilled_tactician
+    trait=envious
+    trait=charitable
+    trait=just
+	give_nickname=nick_the_red2
+    2648.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1960019={
-	name="1960019"
-	dynasty=0 #blank
-	culture=ho
-	religion = sarnaist
-	trait=martial_cleric
-	trait=diligent
-	trait=humble
-	trait=craven
-	trait=fair
-	trait=sturdy
-	2622.1.1={birth=yes}
-	2691.1.1={death=yes}
+	name="Laxman"
+    dynasty=7530000 # Koda
+    culture=ho
+    religion=sarnaist
+    martial=3
+    diplomacy=4
+    stewardship=5
+    intrigue=4
+    learning=4
+    trait=fortune_builder
+    trait=shrewd
+    trait=diligent
+    trait=proud
+    2640.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1960020={
@@ -830,17 +834,21 @@
 }
 
 1960044={
-	name="1960044"
-	dynasty=0 #blank
-	culture=santal
-	religion = sarnaist
-	trait=grey_eminence
-	trait=slothful
-	trait=proud
-	trait=gardener
-	trait=gluttonous
-	2619.1.1={birth=yes}
-	2680.1.1={death=yes}
+	name="Arjun"
+    dynasty=7531000 # Murmu
+    culture=santal
+    religion=sarnaist
+    martial=5
+    diplomacy=4
+    stewardship=4
+    intrigue=3
+    learning=4
+    trait=misguided_warrior
+    trait=lustful
+    trait=honest
+    trait=wroth
+    2645.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1960045={
@@ -1579,19 +1587,21 @@
 }
 
 1960083={
-	name="1960083"
-	dynasty=0 #blank
-	culture=odia
-	religion = jagannath
-	trait=naive_appeaser
-	trait=groomed
-	trait=chaste
-	trait=impaler
-	trait=gregarious
-	trait=brave
-	trait=freckles
-	2638.1.1={birth=yes}
-	2680.1.1={death=yes}
+	name="Rajendra"
+    dynasty=7532005 # Tosh
+    culture=odia
+    religion=jagannath
+    martial=3
+    diplomacy=5
+    stewardship=4
+    intrigue=4
+    learning=5
+    trait=martial_cleric
+    trait=zealous
+    trait=envious
+    trait=diligent
+    2639.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1960084={
 	name="Ibrahim"
@@ -2004,4 +2014,50 @@
 	occluded=yes
     2200.1.1={birth=yes}
     2310.1.1={death=yes}
+}
+1960107={
+	name="Sucheta"
+    dynasty=2157133 # Surendranatha
+    culture=punjabi
+    religion=bharathamatha
+	female=yes
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=mastermind_theologian
+    trait=mystic
+    trait=genius
+    trait=sturdy
+    trait=zealous
+    trait=honest
+    trait=diligent
+    trait=shy
+    trait=proud
+    trait=stubborn
+    2635.1.1={birth=yes}
+	2655.1.1={effect={add_lover=1960000}}
+	2660.1.1={employer=1960000}
+    2700.1.1={death=yes}
+}
+1960108={
+	name="Indira"
+    dynasty=7532000 # Panigrahi
+    culture=odia
+    religion=jagannath
+    female=yes
+    martial=5
+    diplomacy=5
+    stewardship=5
+    intrigue=5
+    learning=5
+    trait=fair
+    trait=quick
+    trait=brave
+    trait=kind
+    trait=proud
+    trait=honest
+    2599.1.1={birth=yes}
+    2660.1.1={death=yes}
 }
