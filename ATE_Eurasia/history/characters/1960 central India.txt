@@ -299,23 +299,22 @@
     2700.1.1={death=yes}
 }
 1960016={
-	name="1960016"
-	dynasty=0 #blank
-	female=yes
-	culture=bagheli
-	religion = sarnaist
-	martial=4
-	diplomacy=4
-	stewardship=6
-	intrigue=6
-	learning=4
-	trait=indulgent_wastrel
-	trait=trusting
-	trait=strong
-	trait=honest
-	trait=proud
-	2631.3.11={birth=yes}
-	2685.12.13={death=yes}
+	name="Rani"
+    dynasty=7533000 # Bai
+    culture=bagheli
+    religion=sarnaist
+    female=yes
+    martial=5
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=4
+    trait=fortune_builder
+    trait=stubborn
+    trait=proud
+    trait=diligent
+    2641.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1960017={
@@ -1174,21 +1173,6 @@
     2700.1.1={death=yes}
 }
 
-1960061={
-	name="1960061"
-	dynasty=0 #blank
-	culture=gondi
-	religion = bhagavata
-	trait=midas_touched
-	trait=uncouth
-	trait=robust
-	trait=temperate
-	trait=trusting
-	trait=ambitious
-	2649.1.1={birth=yes}
-	2680.1.1={death=yes}
-}
-
 1960062={
 	name="Nihal"
 	dynasty=7521000 #Ansari
@@ -1377,35 +1361,41 @@
 }
 
 1960072={
-	name="1960072"
-	dynasty=0 #blank
-	culture=malvi
-	religion = bhagavata
-	trait=intricate_webweaver
-	trait=cynical
-	trait=hunter
-	trait=patient
-	trait=wroth
-	trait=content
-	trait=clubfooted
-	2625.1.1={birth=yes}
-	2680.1.1={death=yes}
+	name="Digvijay"
+    dynasty=7535002 # Holkar
+    culture=malvi
+    religion=bhagavata
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=just
+    trait=patient
+    trait=honest
+    2636.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1960073={
-	name="1960073"
-	dynasty=0 #blank
-	female=yes
-	culture=bhili
-	religion = jain
-	trait=underhanded_rogue
-	trait=quick
-	trait=cruel
-	trait=gregarious
-	trait=depressed
-	trait=one_eyed
-	2636.1.1={birth=yes}
-	2680.1.1={death=yes}
+	name="Mishrilal"
+    dynasty=7521002 # Jain
+    culture=bhili
+    religion=jain
+    martial=4
+    diplomacy=3
+    stewardship=4
+    intrigue=3
+    learning=4
+    trait=detached_priest
+    trait=mystic
+    trait=zealous
+    trait=patient
+    trait=honest
+    trait=erudite
+    2647.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1960074={

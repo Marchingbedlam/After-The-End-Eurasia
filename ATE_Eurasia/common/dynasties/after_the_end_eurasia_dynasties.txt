@@ -45905,6 +45905,36 @@ coat_of_arms = {
 		}
 	}
 }
+7509003 = { name = "Chand" culture = braji used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 24
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7509004 = { name = "Rajan" culture = braji religion=mantramarga used_for_random = no }
+7509005 = { name = "Chaturvedi" culture = braji used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 25
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7509006 = { name = "Abhinay" culture = braji religion=saura used_for_random = no }
 
 7510000 = { name = "Qasim" culture = kannauji used_for_random = no 
 	coat_of_arms = {
@@ -46038,6 +46068,21 @@ coat_of_arms = {
 7511008 = { name = "Mahmood" culture = awadhi religion=ruhi used_for_random = no }
 7511009 = { name = "Gondvi" culture = awadhi religion=bhagavata used_for_random = no }
 7511010 = { name = "Devi" culture = awadhi religion=vaishnava used_for_random = no }
+7511011 = { name = "Tripathi" culture = awadhi used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 36
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7511012 = { name = "Yadav" culture = awadhi religion=vaishnava used_for_random = no }
 
 7512000 = { name = "Pradyumansinhji" culture = kutchi used_for_random = no 
 	coat_of_arms = {
@@ -46220,6 +46265,7 @@ coat_of_arms = {
 		}
 	}
 }
+7517001 = { name = "Khare" culture = hadoti religion=bhagavata used_for_random = no }
 
 7518000 = { name = "Khanna" culture = marathi used_for_random = no 
 	coat_of_arms = {
@@ -46425,6 +46471,34 @@ coat_of_arms = {
 }
 
 7521000 = { name = "Ansari" culture = bhili religion=naqshbandi used_for_random = no }
+7521001 = { name = "Bheel" culture = bhili used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 34
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7521002 = { name = "Jain" culture = bhili used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 35
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 7522000 = { name = "Hussain" culture = deccani used_for_random = no 
 	coat_of_arms = {
@@ -46563,6 +46637,20 @@ coat_of_arms = {
 		layer = {
 			texture = 1
 			texture_internal = 8
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7525003 = { name = "Cursetji" culture = gondi used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 27
 			emblem = 0
 			color = 0
 			color = 0
@@ -46767,3 +46855,134 @@ coat_of_arms = {
 }
 7532007 = { name = "Das" culture = odia religion=saura used_for_random = no}
 7532008 = { name = "Udgata" culture = odia religion=saura used_for_random = no}
+
+7533000 = { name = "Rai" culture = bagheli used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 22
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7533001 = { name = "Satyarthi" culture = bagheli used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 23
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+
+7534000 = { name = "Kapoor" culture = bundeli used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 26
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7534001 = { name = "Udgata" culture = bundeli religion=mantramarga used_for_random = no}
+7534002 = { name = "Yadav" culture = bundeli used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 28
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7534003 = { name = "Gour" culture = bundeli used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 29
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7534004 = { name = "Khatik" culture = bundeli religion=mantramarga used_for_random = no}
+
+7535000 = { name = "Paramara" culture = malvi used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 30
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7535001 = { name = "Shrivastava" culture = malvi used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 31
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7535002 = { name = "Holkar" culture = malvi used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 32
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7535003 = { name = "Bose" culture = malvi used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_far_east
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 33
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
