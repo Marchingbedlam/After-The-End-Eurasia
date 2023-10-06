@@ -376,3 +376,33 @@ nick_the_wolf = {
 		}
 	}
 }
+nick_the_mighty = {
+	allow = {
+		martial = 12
+		OR = {
+			trait = strong
+			trait = robust
+			trait = fair
+		}
+		OR = {
+			trait = shrewd
+			trait = quick
+			trait = genius
+		}
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2.0
+			prestige = 4000
+		}
+		modifier = {
+			factor = 2.0
+			prestige = 8000
+		}
+		modifier = {
+			factor = 5.0
+			prestige = 15000
+		}
+	}
+}
