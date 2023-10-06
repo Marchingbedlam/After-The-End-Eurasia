@@ -1993,3 +1993,11 @@ capitain = {
 	female_compliment = COMPL_ADVENTURER
 	female_compliment_adj = COMPL_ADVENTURER_adj
 }
+amritdhari = {
+	sikh_opinion = 10
+	monthly_character_piety = 0.50
+	potential = { religion = sikh }
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}

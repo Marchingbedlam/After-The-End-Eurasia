@@ -477,6 +477,16 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/fire_temple.dds"
 		allwaystransparent = yes
 	}
+	spriteType = {
+		name = "GFX_evt_golden_temple"
+		texturefile = "gfx/event_pictures/golden_temple.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_indian_pilgrimage"
+		texturefile = "gfx/event_pictures/indian_pilgrimage.dds"
+		allwaystransparent = yes
+	}
 #Imported from Orientalis
 	spriteType = {
 		name = "GFX_evt_buddha_teaching"

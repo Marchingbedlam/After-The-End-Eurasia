@@ -1,6 +1,58 @@
-bm_terra_nullius = {
-	name = "BM_TERRA_NULLIUS"
-	desc = "BM_TERRA_NULLIUS_DESC"
+bm_western_europe = {
+	name = "BM_WESTERN_EUROPE"
+	desc = "BM_WESTERN_EUROPE_DESC"
+	date = 2666.5.9
+	
+	era = yes
+	picture = GFX_pick_era_image_1
+	custom_start = yes
+	
+	selectable_character = {
+		id = 1 # 
+	}
+}
+bm_eastern_europe = {
+	name = "BM_EASTERN_EUROPE"
+	desc = "BM_EASTERN_EUROPE_DESC"
+	date = 2666.5.9
+	
+	era = yes
+	picture = GFX_pick_era_image_2
+	custom_start = yes
+	
+	selectable_character = {
+		id = 1 # 
+	}
+}
+bm_the_muslim_world = {
+	name = "BM_THE_MUSLIM_WORLD"
+	desc = "BM_THE_MUSLIM_WORLD_DESC"
+	date = 2666.5.9
+	
+	era = yes
+	picture = GFX_pick_era_image_3
+	custom_start = yes
+	
+	selectable_character = {
+		id = 1 # 
+	}
+}
+bm_the_subcontinent = {
+	name = "BM_THE_SUBCONTIENT"
+	desc = "BM_THE_SUBCONTIENT_DESC"
+	date = 2666.5.9
+	
+	era = yes
+	picture = GFX_pick_era_image_4
+	custom_start = yes
+	
+	selectable_character = {
+		id = 1 # 
+	}
+}
+bm_the_far_east = {
+	name = "BM_THE_FAR_EAST"
+	desc = "BM_THE_FAR_EAST_DESC"
 	date = 2666.5.9
 	
 	era = yes
