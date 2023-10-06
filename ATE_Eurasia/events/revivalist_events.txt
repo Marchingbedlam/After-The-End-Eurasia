@@ -619,42 +619,41 @@ character_event = {
 		custom_tooltip = { text = TXT_EVTOPTA_revivalist_12 }
 	}
 }
-#Still needs some testing before letting it all go
 
-#character_event = { #completely new Event 13 that simulates their complete removal from the map after the war regardless of outcome
-#	id = revivalist.13
-#	desc = EVTDESC_revivalist_13
-#	picture = GFX_evt_melee_arabic
-#	border = GFX_event_normal_frame_religion
-#	is_triggered_only = yes
-#	
-#	trigger = {
-#		has_global_flag = muslim_revival_finished
-#		ROOT = {
-#			war = no
-#		}
-#	}
-#	
-#	immediate = {
-#		any_character = { #Banish all Revivalist Characters on the Map to the Americas (Guyana)
-#			limit = {religion = revivalist}
-#			death = {
-#				death_reason = death_went_to_america
-#				killer = ROOT
-#			}
-#		}
-#		any_province = { #Convert all Revivalist Province to the Religion of the Target of the Jihad
-#			limit = {religion = revivalist}
-#			religion = ROOT
-#		}
-#		k_revivalist = { destroy_landed_title = THIS } #Disable this title
-#	}
-#	
-#	option = {
-#		name = EVTOPTA_revivalist_13
-#		custom_tooltip = { text = TXT_EVTOPTA_revivalist_13 }
-#	}
-#}
+character_event = { #completely new Event 13 that simulates their complete removal from the map after the war regardless of outcome
+	id = revivalist.13
+	desc = EVTDESC_revivalist_13
+	picture = GFX_evt_melee_arabic
+	border = GFX_event_normal_frame_religion
+	is_triggered_only = yes
+	
+	trigger = {
+		has_global_flag = muslim_revival_finished
+		ROOT = {
+			war = no
+		}
+	}
+	
+	immediate = {
+		any_character = { #Banish all Revivalist Characters on the Map to the Americas (Guyana)
+			limit = {religion = revivalist}
+			death = {
+				death_reason = death_went_to_america
+				killer = ROOT
+			}
+		}
+		any_province = { #Convert all Revivalist Province to the Religion of the Target of the Jihad
+			limit = {religion = revivalist}
+			religion = ROOT
+		}
+		k_revivalist = { destroy_landed_title = THIS } #Disable this title
+	}
+	
+	option = {
+		name = EVTOPTA_revivalist_13
+		custom_tooltip = { text = TXT_EVTOPTA_revivalist_13 }
+	}
+}
 
 character_event = {
 	id = revivalist.14
