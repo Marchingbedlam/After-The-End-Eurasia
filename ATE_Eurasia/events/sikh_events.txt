@@ -35,7 +35,9 @@ narrative_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		trait = travelling
+		OR = {
+			has_character_flag = visiting_golden_temple
+		}
 	}
 	
 	option = {
@@ -63,9 +65,6 @@ narrative_event = {
 		trait = travelling
 	}
 	
-	immediate = {
-		
-	}	
 	option = {
 		name = EVTOPTA_SIKH3
 		if = {

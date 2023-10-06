@@ -510,7 +510,7 @@ decisions = {
 			NOT = { trait = amritdhari }
 		}
 		effect = {
-			character_event = { id = sikh.1 }
+			character_event = { id = sikh.1 days = 1 }
 		}
 	}
 	pilgrimage_to_the_takhts = { #and other Takhts
@@ -558,13 +558,12 @@ decisions = {
 		effect = {
 			scaled_wealth = -0.2
 			hidden_tooltip = {
-				narrative_event = { id = sikh.2 }
+				narrative_event = { id = sikh.2 days = 1 }
+				add_trait = travelling
 			}
 			set_character_flag = visiting_golden_temple
 			set_character_flag = recent_minor_decision
 			set_character_flag = do_not_disturb
-			
-			add_trait = travelling
 			
 		}
 		revoke_allowed = {
