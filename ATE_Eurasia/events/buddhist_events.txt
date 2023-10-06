@@ -452,7 +452,7 @@ character_event = { #Getting injured
 	id = budevents.9
 	desc = EVTDESC_budevents_9
 	picture = GFX_evt_farming
-	border = GFC_event_normal_frame_religion
+	border = GFX_event_normal_frame_religion
 	is_triggered_only = yes
 
 	trigger = {
@@ -484,7 +484,7 @@ character_event = { #Becoming Brawny
 	id = budevents.10
 	desc = EVTDESC_budevents_10
 	picture = GFX_evt_farming
-	border = GFC_event_normal_frame_religion
+	border = GFX_event_normal_frame_religion
 	is_triggered_only = yes
 
 	trigger = {
@@ -502,7 +502,7 @@ character_event = { #Gaining a lover
 	id = budevents.11
 	desc = EVTDESC_budevents_11
 	picture = GFX_evt_lovers
-	border = GFC_event_normal_frame_religion
+	border = GFX_event_normal_frame_religion
 	is_triggered_only = yes
 
 	trigger = {
