@@ -8,6 +8,7 @@
 #hajj.121-127 = Going to Mashhad
 #hajj.128-134 = Going to Kadhimiyya
 #hajj.135-141 = Going to Eyup Masjid (Sufi)
+#hajj.142-148 = Going to Rozabal Tomb in Kashmir (Indian Muslims)
 #hajj.7-16 = Hadith (General Muslim)
 #hajj.200 = Pilgrimage to Minor Shrines Setup
 
@@ -2388,6 +2389,211 @@ character_event = {
 		add_trait = zair
 	}
 }
+#############################
+# Going to Rozabal
+#############################
+letter_event = {
+	id = hajj.142
+	desc = "EVTDESC_hajjtorozabal"
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPT_hajjtocity"
+		piety = 5
+		set_character_flag = preparing_hajj_rozabal
+		clr_character_flag = activated_hajj_rozabal
+		clr_character_flag = preparing_ziyara
+		hidden_tooltip = {
+			character_event = { id = hajj.143 days = 12 }
+		}	
+	}
+}
+##########################################################################
+#A Trip to Rozabal
+##########################################################################
+narrative_event = {
+	id = hajj.143
+	title = EVTTITLE_HAJJROZABAL
+	desc = EVTDESC_hajj143
+	picture = GFX_evt_rozabal
+	border = GFX_event_narrative_frame_religion
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "EVTOPT_hajj143"
+		clr_character_flag = preparing_hajj_rozabal
+		add_trait = on_ziyara
+		hidden_tooltip = {
+			character_event = { id = hajj.7 days = 30 }
+		}
+		hidden_tooltip = {
+			character_event = { id = hajj.144 days = 30 }
+		}
+		hidden_tooltip = {
+			if = {
+				limit = {
+					location = {
+						distance = {
+							where = 2727 #Srinagar
+							value = 400	#kind of far..
+						}
+					}
+				}
+				random_list = {
+					10 = { character_event = { id = SoA.5027 days = 5 random = 9 } }
+					10 = { narrative_event = { id = SoA.5028 days = 5 random = 9 } }
+					10 = { character_event = { id = SoA.5029 days = 5 random = 9 } }
+					10 = { character_event = { id = SoA.5030 days = 5 random = 9 } }
+				}
+			}
+			if = {
+				limit = {
+					location = {
+						distance = {
+							where = 2727 #Srinagar
+							value = 100	#kind of far..
+						}
+					}
+				}
+				random_list = {
+					10 = { character_event = { id = SoA.5031 days = 15 random = 7 } } # List that is always checked
+					10 = { character_event = { id = SoA.5032 days = 15 random = 7 } }
+					10 = { narrative_event = { id = SoA.5033 days = 15 random = 7 } }
+					10 = { character_event = { id = SoA.5034 days = 15 random = 7 } }
+					10 = { character_event = { id = SoA.5035 days = 15 random = 7 } }
+					10 = { character_event = { id = SoA.5036 days = 15 random = 7 } }
+					10 = { character_event = { id = SoA.5037 days = 15 random = 7 } }
+					10 = { character_event = { id = SoA.5038 days = 15 random = 7 } }
+				}
+			}
+		}
+	}
+}
+##########################################################################
+# Arrival at Rozabal
+##########################################################################				
+
+#Hidden gateway event				
+character_event = {
+	id = hajj.144
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		random_list = {
+			50 = { character_event = { id = hajj.145 } }
+			50 = { character_event = { id = hajj.146 } }
+		}
+	}
+}
+
+character_event = {
+	id = hajj.145
+	desc = "EVTDESC_hajj145"
+	picture = GFX_evt_council_arabic
+	border = GFX_event_normal_frame_religion
+	prisoner = no
+	is_triggered_only = yes
+	option = {
+		name = "EVTOPT_hajjssufimysteries"
+		change_learning = 1
+		add_trait = mystic
+		hidden_tooltip = {
+			character_event = { id = hajj.147 days = 35 }
+		}
+	}
+	option = {
+		name = "EVTOPT_hajjnosufimysteries"
+		add_trait = proud
+		prestige = 20
+		hidden_tooltip = {
+			character_event = { id = hajj.147 days = 35 }
+		}	
+	}
+}
+character_event = {
+	id = hajj.146
+	desc = "EVTDESC_hajj146"
+	picture = GFX_evt_indian_pilgrimage
+	border = GFX_event_normal_frame_religion
+	prisoner = no
+	is_triggered_only = yes
+	option = {
+		name = "EVTOPT_hajjkindpatron"
+		change_diplomacy = 1
+		add_trait = kind
+		wealth = -20
+		hidden_tooltip = {
+			character_event = { id = hajj.147 days = 35 }
+		}
+	}
+	option = {
+		name = "EVTOPT_hajjzealous"
+		add_trait = zealous
+		hidden_tooltip = {
+			character_event = { id = hajj.147 days = 35 }
+		}	
+	}
+}
+narrative_event = {
+	id = hajj.147
+	title = EVTTITLE_HAJJROZABALARRIVED
+	desc = {
+		trigger = {
+			religion = ahmadi
+		}
+		text = HAJJ147_AHMADI
+	}
+	desc = {
+		trigger = {
+			NOT = {religion = ahmadi}
+		}
+		text = HAJJ147_NOT_AHMADI
+	}
+	picture = GFX_evt_rozabal
+	border = GFX_event_narrative_frame_religion
+	prisoner = no
+	is_triggered_only = yes
+	option = {
+		trigger = {
+			NOT = {religion = ahmadi}
+		}
+		name = "EVTOPT_hajjrozabal"
+		piety = 50
+		hidden_tooltip = {
+			character_event = { id = hajj.148 days = 35 }
+		}	
+	}
+	option = {
+		trigger = {religion=ahmadi}
+		name = "EVTOPT_hajjtolerantrozabal"
+		add_trait = sympathy_christendom
+		add_trait = sympathy_judaism
+		hidden_tooltip = {
+			character_event = { id = hajj.148 days = 35 }
+		}
+	}
+}
+character_event = {
+	id = hajj.148
+	desc = "EVTDESC_hajjrozabalhome"
+	picture = GFX_evt_prospering_province
+	border = GFX_event_normal_frame_religion
+	prisoner = no
+	is_triggered_only = yes
+	option = {
+		name = "EVTOPT_hajjrozabalhome"
+		clr_character_flag = do_not_disturb
+		piety = 50
+		remove_trait = on_ziyara
+		add_trait = zair
+	}
+}
 #################################################################################
 #Singular Decision to encompass all Zijaya Locations to declutter Intrigue Screen
 #################################################################################
@@ -2426,6 +2632,12 @@ narrative_event = {
 			}
 			set_character_flag = activated_hajj_eyupmasjid
 		}
+		if = {
+			limit = {
+				is_indian_muslim = yes
+			}
+			set_character_flag = activated_hajj_rozabal
+		}
 	}
 	
 	option = {
@@ -2444,15 +2656,6 @@ narrative_event = {
 		}
 		hidden_tooltip = {
 			letter_event = { id = hajj.2 days = 12 }
-		}
-	}
-	option = {
-		name = EVTOPTD_ZIYARA_EYUPMASJID
-		trigger = {
-			has_character_flag = activated_hajj_eyupmasjid
-		}
-		hidden_tooltip = {
-			letter_event = { id = hajj.135 days = 12 }
 		}
 	}
 	option = {
@@ -2479,6 +2682,24 @@ narrative_event = {
 		}
 		hidden_tooltip = {
 			narrative_event = { id = hajj.203 days = 2 }
+		}
+	}
+	option = {
+		name = EVTOPTD_ZIYARA_EYUPMASJID
+		trigger = {
+			has_character_flag = activated_hajj_eyupmasjid
+		}
+		hidden_tooltip = {
+			letter_event = { id = hajj.135 days = 12 }
+		}
+	}
+	option = {
+		name = EVTOPTD_ZIYARA_ROZ_BAL
+		trigger = {
+			has_character_flag = activated_hajj_rozabal
+		}
+		hidden_tooltip = {
+			letter_event = { id = hajj.142 days = 12 }
 		}
 	}
 }
