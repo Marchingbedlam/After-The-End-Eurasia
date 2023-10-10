@@ -368,19 +368,105 @@ custom_guiyi = {
 		d_suiyuan d_hexi d_lanzhou d_ningxia
 	}
 }
-custom_northern_india = {
+custom_nepal = {
 	duchies = {
-		d_karachi d_sukkur d_hyderabad_pk d_mirpur_khas d_lahore d_peshawar d_dera_ismail_khan d_sargodha d_islamabad d_gujranwala d_dera_ghazi_khan d_multan d_bahawalpur d_ahmedabad d_bhavnagar d_gandhinagar d_rajkot d_surat d_dhundhar d_bikaner d_marwar d_mewar d_hadoti d_raipur d_surguja d_bilaspur d_durg d_bastar d_dakshin_chotanagpur d_kolhan d_palamu d_santhal_pargana d_uttar_chotanagpur d_patna d_darbhanga d_magadh d_munger d_purnia d_tirhut d_ganjam d_cuttack d_garhjat d_koraput d_sambalpur d_malda d_rajshahi d_rangpur d_tripura d_nagaland d_manipur d_mizoram d_guwahati d_meghalaya d_jorhat d_nagaon d_arunachal d_dhaka d_barishal d_mymensingh d_sylhet d_chittagong d_kolkata d_burdwan d_khulna d_medinipur d_mumbai d_nashik d_pune d_khandesh d_goa d_bhopal d_indore d_nimar d_narmadapuram d_ujjain d_nagpur d_satpura d_amravati d_aurangabad d_nanded d_jabalpur d_sagar d_rewa d_shahdol d_delhi d_karnal d_hisar d_rohilkhand d_saharanpur d_agra d_aligarh d_varanasi d_azamgarh d_devipatan d_gorakhpur d_ilahabad d_lucknow d_kanpur d_patiala d_faridkot d_amritsar d_jhansi d_gird d_chitrakoot d_kashmir d_jammu d_gilgit_baltistan d_himachal d_uttarakhand
+		d_kathmandu d_gandaki d_karnali d_kosi
+	}
+}
+custom_bhutan = {
+	duchies = {
+		d_bhutan
+	}
+}
+custom_sikkim = {
+	duchies = {
+		d_sikkim
+	}
+}
+custom_indian_himalaya = {
+	duchies = {
+		d_kashmir d_jammu d_gilgit_baltistan d_himachal d_uttarakhand
+	}
+}
+custom_northeast_india = {
+	duchies = {
+		d_karachi d_sukkur d_hyderabad_pk d_mirpur_khas d_lahore d_peshawar d_dera_ismail_khan d_sargodha d_islamabad d_gujranwala d_dera_ghazi_khan d_multan d_bahawalpur
+	}
+}
+custom_ganges_india = {
+	duchies = {
+		d_delhi d_karnal d_hisar d_rohilkhand d_saharanpur d_agra d_aligarh d_varanasi d_azamgarh d_devipatan d_gorakhpur d_ilahabad d_lucknow d_kanpur d_patiala d_faridkot d_amritsar d_patna d_darbhanga d_magadh d_munger d_purnia d_tirhut d_santhal_pargana
+	}
+}
+custom_vindhya_india = {
+	duchies = {
+		d_nashik d_pune d_khandesh d_bhopal d_indore d_nimar d_narmadapuram d_ujjain d_nagpur d_satpura d_amravati d_aurangabad d_nanded d_jabalpur d_sagar d_rewa d_shahdol d_jhansi d_gird d_chitrakoot
+	}
+}
+custom_rajputana_india = {
+	duchies = {
+		d_dhundhar d_bikaner d_marwar d_mewar d_hadoti
+	}
+}
+custom_western_ghat_india = {
+	duchies = {
+		d_ahmedabad d_bhavnagar d_gandhinagar d_rajkot d_surat d_mumbai d_goa d_kanara
+	}
+}
+custom_eastern_ghat_india = {
+	duchies = {
+		d_bilaspur d_durg d_bastar d_dakshin_chotanagpur d_kolhan d_palamu d_uttar_chotanagpur d_ganjam d_cuttack d_garhjat d_koraput d_sambalpur d_godavari d_amaravathi d_tira_andhra d_uttarandhra
+	}
+}
+custom_northwest_india = {
+	duchies = {
+		d_rajshahi d_rangpur d_tripura d_nagaland d_manipur d_mizoram d_guwahati d_meghalaya d_jorhat d_nagaon d_arunachal d_dhaka d_barishal d_mymensingh d_sylhet d_chittagong d_kolkata d_burdwan d_khulna d_medinipur
+	}
+}
+custom_sri_lanka = {
+	duchies = {
+		d_kotte d_kandy d_rajarata d_jaffna 
+	}
+}
+custom_maldives = {
+	duchies = {
+		d_maldives d_lakshadweep
+	}
+}
+custom_malabar_coast = {
+	duchies = {
+		d_travancore d_kochi d_malabar
+	}
+}
+custom_deccan_plateau = {
+	duchies = {
+		d_anantapur d_kadapa d_kurnool d_hyderabad d_nizamabad d_warangal d_bangalore d_bayalu_seeme d_dharwad d_kalaburagi d_malenadu d_mysuru d_chittoor
+	}
+}
+custom_tamil_nadu = {
+	duchies = {
+		d_chennai d_thondai_nadu d_chola_nadu d_kongu_nadu d_nadu_nadu d_pandya_nadu d_salem
+	}
+}
+
+custom_northern_india = {
+	regions = {
+		custom_northwest_india custom_northeast_india custom_ganges_india custom_rajputana_india
+	}
+}
+custom_central_india = {
+	regions = {
+		custom_vindhya_india custom_deccan_plateau
 	}
 }
 custom_southern_india = {
-	duchies = {
-		d_amaravathi d_anantapur d_chittoor d_godavari d_kadapa d_kurnool d_tira_andhra d_uttarandhra d_hyderabad d_nizamabad d_warangal d_bangalore d_bayalu_seeme d_dharwad d_kalaburagi d_kanara d_malenadu d_mysuru d_maldives d_lakshadweep d_travancore d_kochi d_malabar d_chennai d_thondai_nadu d_chola_nadu d_kongu_nadu d_nadu_nadu d_pandya_nadu d_salem d_kotte d_kandy d_rajarata d_jaffna 
+	regions = {
+		custom_sri_lanka custom_maldives custom_malabar_coast custom_tamil_nadu
 	}
 }
 custom_greater_tibet = {
 	duchies = {
-		d_qaidam d_sanjiangyuan d_qinghai d_chamdo d_garze d_nyingchi d_lhasa d_xigaze d_gangdise d_changtang d_ngari d_nagqu 
+		d_qaidam d_sanjiangyuan d_qinghai d_chamdo d_garze d_nyingchi d_lhasa d_xigaze d_gangdise d_changtang d_ngari d_nagqu d_ladakh
 	}
 }
 custom_iran = {
@@ -408,7 +494,7 @@ custom_historical_plague_free_zone = {
 }
 world_india = {
 	regions = {
-		custom_northern_india custom_southern_india
+		custom_northern_india custom_central_india custom_southern_india custom_eastern_ghat_india custom_western_ghat_india
 	}
 }
 custom_xinjiang = {
@@ -421,10 +507,7 @@ custom_xinjiang = {
 }
 world_himalayas = {
 	regions = {
-		custom_greater_tibet
-	}
-	duchies = {
-		d_kathmandu d_gandaki d_karnali d_kosi d_sikkim d_bhutan d_ladakh
+		custom_greater_tibet custom_nepal custom_bhutan custom_sikkim custom_indian_himalaya
 	}
 }
 world_greater_iran = {
