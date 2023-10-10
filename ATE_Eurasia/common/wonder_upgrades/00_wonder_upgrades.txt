@@ -4866,3 +4866,27 @@ upgrade_bazaar = { # Bazaar
 		local_tax_modifier = 0.1025
 	}
 }
+
+upgrade_murex_production = { # Tyrian Purple
+	picture = GFX_upgrade_icon_roses_blue
+	
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		is_singular
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	owner_modifier = {
+		monthly_character_prestige = 0.02
+		town_opinion = 5
+	}
+	local_modifier = {
+		tradevalue = 30
+		supply_limit = 0.5
+		local_tax_modifier = 0.1025
+	}
+}

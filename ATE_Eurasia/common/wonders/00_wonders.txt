@@ -106,6 +106,9 @@
 # 7O. Taj Mahal ............... wonder_taj_mahal
 # 7P. Charminar ............... wonder_charminar
 # 7Q. Hampi ............... wonder_hampi
+# 7R. Dwarkadhish Temple ............... wonder_dwarkadhish
+# 7S. Kutubiyya Mosque ............... wonder_kutubiyya
+# 7T. Borj El Kebir ............... wonder_borj_el_kebir
 
 ###################################################################
 
@@ -5416,6 +5419,146 @@ wonder_kutubiyya = {
 		owner_modifier = {
 			monthly_character_prestige = 0.2
 			monthly_character_piety = 0.2
+		}
+	}
+}
+# 7T. Borj El Kebir
+wonder_borj_el_kebir = {
+	picture = GFX_wonder_strip_borj_el_kebir
+	model = wonder_harbor
+	potential = {
+		FROMFROMFROM = { is_coastal = yes }
+	}
+	active = {
+	}
+	flags = {
+		defensive
+		cost_medium
+	}
+	available_upgrades = {
+		# UNIQUE:
+		upgrade_walls_sea
+		upgrade_strategic_exclaves
+		upgrade_soaring_fortresses
+		upgrade_hidden_gates
+		upgrade_gatehouse_forts
+		upgrade_killing_fields
+		upgrade_deep_defense_architecture
+		upgrade_cothon
+		upgrade_piers
+		upgrade_office_harbor
+		upgrade_lighthouse
+		upgrade_military_wharf
+		upgrade_murex_production
+
+		# OTHER:
+		upgrade_roads
+		upgrade_watchtower_network
+		upgrade_spikes
+		upgrade_tower
+		upgrade_hypocausts
+		upgrade_heating_pipes
+		upgrade_retinue
+		upgrade_road_tolls
+		upgrade_tavern
+	}
+	stage = {
+		allow = {
+			FROMFROMFROM = {
+				TECH_FORTIFICATIONS_CONSTRUCTION = 4
+				TECH_CONSTRUCTION = 4
+			}
+		}
+		build_time = 300
+		gold_cost_flat = 2000
+		gold_cost_ticking = 3
+		restore_time = 150
+		loot_time = 200
+		restore_cost_flat = 400
+		restore_cost_ticking = 2
+		upgrade_slots = 2
+		local_modifier = {
+			local_tax_modifier = 0.025
+			tradevalue = 25
+			fort_level = 0.25
+		}
+		owner_modifier = {
+			monthly_character_prestige = 0.2
+		}
+	}
+	stage = {
+		allow = {
+			FROMFROMFROM = {
+				TECH_FORTIFICATIONS_CONSTRUCTION = 4
+				TECH_CONSTRUCTION = 4
+			}
+		}
+		build_time = 300
+		gold_cost_flat = 1000
+		gold_cost_ticking = 3
+		restore_time = 200
+		loot_time = 200
+		restore_cost_flat = 500
+		restore_cost_ticking = 2
+		upgrade_slots = 2
+		local_modifier = {
+			local_tax_modifier = 0.025
+			tradevalue = 25
+			fort_level = 0.25
+		}
+		owner_modifier = {
+			monthly_character_prestige = 0.2
+		}
+	}
+	stage = {
+		allow = {
+			FROMFROMFROM = {
+				TECH_FORTIFICATIONS_CONSTRUCTION = 4
+				TECH_CONSTRUCTION = 4
+			}
+		}
+		build_time = 300
+		gold_cost_flat = 1000
+		gold_cost_ticking = 3
+		restore_time = 200
+		loot_time = 20
+		restore_cost_flat = 500
+		restore_cost_ticking = 2
+		upgrade_slots = 2
+		local_modifier = {
+			local_tax_modifier = 0.025
+			tradevalue = 25
+			fort_level = 0.25
+			siege_defence = 0.05
+		}
+		owner_modifier = {
+			monthly_character_prestige = 0.2
+		}
+	}
+	stage = {
+		allow = {
+			FROMFROMFROM = {
+				TECH_FORTIFICATIONS_CONSTRUCTION = 4
+				TECH_CONSTRUCTION = 4
+			}
+		}
+		build_time = 300
+		gold_cost_flat = 1000
+		gold_cost_ticking = 3
+		restore_time = 200
+		loot_time = 20
+		restore_cost_flat = 500
+		restore_cost_ticking = 2
+		upgrade_slots = 2
+		local_modifier = {
+			fort_level = 0.5
+			siege_defence = 0.05
+			local_tax_modifier = 0.025
+			tradevalue = 25
+		}
+		owner_modifier = {
+			monthly_character_prestige = 0.2
+			build_cost_modifier = -0.05
 		}
 	}
 }

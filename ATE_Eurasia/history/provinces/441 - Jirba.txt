@@ -19,3 +19,19 @@ culture = tunisian
 religion = ivri
 
 #History
+1450.1.1 = { #Base of the Reconstructed Fort (built on the Ruins of the Old Roman City of Djerba)
+	build_wonder=wonder_borj_el_kebir
+	set_wonder_stage=2
+	build_wonder_upgrade = upgrade_walls_sea
+	build_wonder_upgrade = upgrade_strategic_exclaves
+	build_wonder_upgrade = upgrade_deep_defense_architecture
+	build_wonder_upgrade = upgrade_cothon
+	build_wonder_upgrade = upgrade_military_wharf
+	build_wonder_upgrade = upgrade_piers
+}
+2300.1.1 = { #When the People of Djerba begin to mass produce Murex Purple in Massive numbers for trade
+	build_wonder_upgrade = upgrade_murex_production
+}
+2500.1.1 = { #Pirate Notoriety 
+	build_wonder_upgrade = upgrade_killing_fields
+}
