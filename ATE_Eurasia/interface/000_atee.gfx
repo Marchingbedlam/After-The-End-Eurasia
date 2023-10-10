@@ -722,7 +722,20 @@ spriteTypes = {
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
-	
+	spriteType = {
+		name = "GFX_trait_yatri"
+		texturefile = "gfx/traits/ziyarat.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_on_yatra"
+		texturefile = "gfx/traits/ziyarat.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
 	#Sympathy Traits
 	
 	spriteType = {
@@ -1027,6 +1040,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_pilgrimage_to_the_takhts"
 		texturefile = "gfx/interface/decision_icon_pilgrimage_to_the_takhts.dds"
+	}
+	spriteType = {
+		name = "GFX_go_on_yatra"
+		texturefile = "gfx/interface/decision_icon_yatra.dds"
 	}
 	#Republic Stuff
 	spriteType = {

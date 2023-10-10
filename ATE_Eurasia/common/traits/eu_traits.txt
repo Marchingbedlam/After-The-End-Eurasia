@@ -2001,3 +2001,14 @@ amritdhari = {
 	religious = yes
 	ruler_designer_cost = 0
 }
+yatri = {
+	random = no
+	religious = yes
+	hindu_opinion = 5
+}
+on_yatra = {
+	random = no
+	pilgrimage = yes
+	religious = yes
+	hindu_opinion = 5
+}
