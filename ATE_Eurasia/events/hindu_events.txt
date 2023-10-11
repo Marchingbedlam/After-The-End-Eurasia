@@ -355,6 +355,23 @@ narrative_event = {
 			narrative_event = { id = hindu.31 days = 1 }
 		}
 	}
+	option = { #Adapted from the Vanilla Hindu Pilgrimage
+		name = EVTOPTA_MNM_8003
+		trigger = {
+			NOT = { capital_scope = { province_id = 2788 } }
+		}
+		set_character_flag = pilgrimage_to_varanasi
+		hidden_tooltip = {
+			character_event = { id = hindu.60 days = 30 }
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_VARANASI
+				picture = GFX_evt_indian_pilgrimage
+			}
+		}
+	}
 }
 narrative_event = {
 	id = hindu.31
@@ -447,37 +464,42 @@ narrative_event = {
 				limit = {
 					location = {
 						distance = {
-							where = 3120 #Pauri Garwhal
-							value = 400	#kind of far..
+							where = 3120    #Pauri Garwhal
+							value = 300		# Longer journey
 						}
 					}
 				}
-				random_list = {
-					10 = { character_event = { id = SoA.5027 days = 5 random = 9 } }
-					10 = { narrative_event = { id = SoA.5028 days = 5 random = 9 } }
-					10 = { character_event = { id = SoA.5029 days = 5 random = 9 } }
-					10 = { character_event = { id = SoA.5030 days = 5 random = 9 } }
+				random_list = { #Long Journey
+					10 = {
+						modifier = {
+							factor = 0
+								month = 6
+								NOT = { month = 9 }
+						}
+						character_event = { id = MNM.8020 days = 15 random = 9 }
+					} #Monsoon Troubles
+					10 = {
+						modifier = {
+							factor = 0
+							NOT = { month = 4 }
+						}
+						character_event = { id = MNM.8021 days = 15 random = 9 }
+					} #Dry Season Troubles
+					10 = {  character_event = { id = MNM.8022 days = 15 random = 9 } } #Getting lost in the Jungle
+					10 = {  character_event = { id = MNM.8023 days = 15 random = 9 } } #Robbers on the road
+					10 = {  character_event = { id = MNM.8024 days = 15 random = 9 } } #Encounter in Dandakaranya
+					10 = { character_event = { id = MNM.8037 days = 15 random = 9 } }#What's happening at home?
 				}
 			}
-			if = {
-				limit = {
-					location = {
-						distance = {
-							where = 3120 #Pauri Garwhal
-							value = 100	#kind of far..
-						}
-					}
-				}
-				random_list = {
-					10 = { character_event = { id = SoA.5031 days = 15 random = 7 } } # List that is always checked
-					10 = { character_event = { id = SoA.5032 days = 15 random = 7 } }
-					10 = { narrative_event = { id = SoA.5033 days = 15 random = 7 } }
-					10 = { character_event = { id = SoA.5034 days = 15 random = 7 } }
-					10 = { character_event = { id = SoA.5035 days = 15 random = 7 } }
-					10 = { character_event = { id = SoA.5036 days = 15 random = 7 } }
-					10 = { character_event = { id = SoA.5037 days = 15 random = 7 } }
-					10 = { character_event = { id = SoA.5038 days = 15 random = 7 } }
-				}
+			
+			random_list = { #Stuff that always happen
+				10 = {  character_event = { id = MNM.8025 days = 30 random = 7 } } #The poor villagers
+				10 = {  character_event = { id = MNM.8026 days = 30 random = 7 } } #Reflections about journey
+				10 = {  character_event = { id = MNM.8027 days = 30 random = 7 } } #Encounter with merchant
+				10 = {  character_event = { id = MNM.8028 days = 30 random = 7 } } #You get sick
+				10 = {  character_event = { id = MNM.8029 days = 30 random = 7 } } #Water tanks
+				10 = {  character_event = { id = MNM.8030 days = 30 random = 7 } } #Village Pipal Tree
+				10 = {  character_event = { id = MNM.8031 days = 30 random = 7 } } #Splendid City
 			}
 		}
 	}
@@ -569,7 +591,7 @@ narrative_event = {
 character_event = {
 	id = hindu.38
 	desc = "EVTDESC_yatrahome"
-	picture = GFX_evt_prospering_province
+	picture = GFX_evt_throne_room_indo_aryan_group
 	border = GFX_event_normal_frame_religion
 	prisoner = no
 	is_triggered_only = yes
@@ -626,37 +648,42 @@ narrative_event = {
 				limit = {
 					location = {
 						distance = {
-							where = 2184 #Jamnagar
-							value = 400	#kind of far..
+							where = 2184    #Jamnagar
+							value = 300		# Longer journey
 						}
 					}
 				}
-				random_list = {
-					10 = { character_event = { id = SoA.5027 days = 5 random = 9 } }
-					10 = { narrative_event = { id = SoA.5028 days = 5 random = 9 } }
-					10 = { character_event = { id = SoA.5029 days = 5 random = 9 } }
-					10 = { character_event = { id = SoA.5030 days = 5 random = 9 } }
+				random_list = { #Long Journey
+					10 = {
+						modifier = {
+							factor = 0
+								month = 6
+								NOT = { month = 9 }
+						}
+						character_event = { id = MNM.8020 days = 15 random = 9 }
+					} #Monsoon Troubles
+					10 = {
+						modifier = {
+							factor = 0
+							NOT = { month = 4 }
+						}
+						character_event = { id = MNM.8021 days = 15 random = 9 }
+					} #Dry Season Troubles
+					10 = {  character_event = { id = MNM.8022 days = 15 random = 9 } } #Getting lost in the Jungle
+					10 = {  character_event = { id = MNM.8023 days = 15 random = 9 } } #Robbers on the road
+					10 = {  character_event = { id = MNM.8024 days = 15 random = 9 } } #Encounter in Dandakaranya
+					10 = { character_event = { id = MNM.8037 days = 15 random = 9 } }#What's happening at home?
 				}
 			}
-			if = {
-				limit = {
-					location = {
-						distance = {
-							where = 2184 #Jamnagar
-							value = 100	#kind of far..
-						}
-					}
-				}
-				random_list = {
-					10 = { character_event = { id = SoA.5031 days = 15 random = 7 } } # List that is always checked
-					10 = { character_event = { id = SoA.5032 days = 15 random = 7 } }
-					10 = { narrative_event = { id = SoA.5033 days = 15 random = 7 } }
-					10 = { character_event = { id = SoA.5034 days = 15 random = 7 } }
-					10 = { character_event = { id = SoA.5035 days = 15 random = 7 } }
-					10 = { character_event = { id = SoA.5036 days = 15 random = 7 } }
-					10 = { character_event = { id = SoA.5037 days = 15 random = 7 } }
-					10 = { character_event = { id = SoA.5038 days = 15 random = 7 } }
-				}
+			
+			random_list = { #Stuff that always happen
+				10 = {  character_event = { id = MNM.8025 days = 30 random = 7 } } #The poor villagers
+				10 = {  character_event = { id = MNM.8026 days = 30 random = 7 } } #Reflections about journey
+				10 = {  character_event = { id = MNM.8027 days = 30 random = 7 } } #Encounter with merchant
+				10 = {  character_event = { id = MNM.8028 days = 30 random = 7 } } #You get sick
+				10 = {  character_event = { id = MNM.8029 days = 30 random = 7 } } #Water tanks
+				10 = {  character_event = { id = MNM.8030 days = 30 random = 7 } } #Village Pipal Tree
+				10 = {  character_event = { id = MNM.8031 days = 30 random = 7 } } #Splendid City
 			}
 		}
 	}
@@ -748,7 +775,7 @@ narrative_event = {
 character_event = {
 	id = hindu.45
 	desc = "EVTDESC_yatrahome"
-	picture = GFX_evt_prospering_province
+	picture = GFX_evt_throne_room_indo_aryan_group
 	border = GFX_event_normal_frame_religion
 	prisoner = no
 	is_triggered_only = yes
@@ -805,37 +832,42 @@ narrative_event = {
 				limit = {
 					location = {
 						distance = {
-							where = 2812 #Bhubaneswar
-							value = 400	#kind of far..
+							where = 2812    #Bhubaneswar
+							value = 300		# Longer journey
 						}
 					}
 				}
-				random_list = {
-					10 = { character_event = { id = SoA.5027 days = 5 random = 9 } }
-					10 = { narrative_event = { id = SoA.5028 days = 5 random = 9 } }
-					10 = { character_event = { id = SoA.5029 days = 5 random = 9 } }
-					10 = { character_event = { id = SoA.5030 days = 5 random = 9 } }
+				random_list = { #Long Journey
+					10 = {
+						modifier = {
+							factor = 0
+								month = 6
+								NOT = { month = 9 }
+						}
+						character_event = { id = MNM.8020 days = 15 random = 9 }
+					} #Monsoon Troubles
+					10 = {
+						modifier = {
+							factor = 0
+							NOT = { month = 4 }
+						}
+						character_event = { id = MNM.8021 days = 15 random = 9 }
+					} #Dry Season Troubles
+					10 = {  character_event = { id = MNM.8022 days = 15 random = 9 } } #Getting lost in the Jungle
+					10 = {  character_event = { id = MNM.8023 days = 15 random = 9 } } #Robbers on the road
+					10 = {  character_event = { id = MNM.8024 days = 15 random = 9 } } #Encounter in Dandakaranya
+					10 = { character_event = { id = MNM.8037 days = 15 random = 9 } }#What's happening at home?
 				}
 			}
-			if = {
-				limit = {
-					location = {
-						distance = {
-							where = 2812 #Bhubaneswar
-							value = 100	#kind of far..
-						}
-					}
-				}
-				random_list = {
-					10 = { character_event = { id = SoA.5031 days = 15 random = 7 } } # List that is always checked
-					10 = { character_event = { id = SoA.5032 days = 15 random = 7 } }
-					10 = { narrative_event = { id = SoA.5033 days = 15 random = 7 } }
-					10 = { character_event = { id = SoA.5034 days = 15 random = 7 } }
-					10 = { character_event = { id = SoA.5035 days = 15 random = 7 } }
-					10 = { character_event = { id = SoA.5036 days = 15 random = 7 } }
-					10 = { character_event = { id = SoA.5037 days = 15 random = 7 } }
-					10 = { character_event = { id = SoA.5038 days = 15 random = 7 } }
-				}
+			
+			random_list = { #Stuff that always happen
+				10 = {  character_event = { id = MNM.8025 days = 30 random = 7 } } #The poor villagers
+				10 = {  character_event = { id = MNM.8026 days = 30 random = 7 } } #Reflections about journey
+				10 = {  character_event = { id = MNM.8027 days = 30 random = 7 } } #Encounter with merchant
+				10 = {  character_event = { id = MNM.8028 days = 30 random = 7 } } #You get sick
+				10 = {  character_event = { id = MNM.8029 days = 30 random = 7 } } #Water tanks
+				10 = {  character_event = { id = MNM.8030 days = 30 random = 7 } } #Village Pipal Tree
+				10 = {  character_event = { id = MNM.8031 days = 30 random = 7 } } #Splendid City
 			}
 		}
 	}
@@ -927,7 +959,7 @@ narrative_event = {
 character_event = {
 	id = hindu.52
 	desc = "EVTDESC_yatrahome"
-	picture = GFX_evt_prospering_province
+	picture = GFX_evt_throne_room_indo_aryan_group
 	border = GFX_event_normal_frame_religion
 	prisoner = no
 	is_triggered_only = yes
@@ -974,7 +1006,7 @@ narrative_event = {
 		
 	option = {
 		name = "EVTOPT_hindu54"
-		clr_character_flag = preparing_chardham_jagannath
+		clr_character_flag = pilgrimage_to_varanasi
 		add_trait = on_yatra
 		hidden_tooltip = {
 			character_event = { id = hindu.55 days = 30 }
@@ -984,37 +1016,42 @@ narrative_event = {
 				limit = {
 					location = {
 						distance = {
-							where = 2227 #Ramanathapuram
-							value = 400	#kind of far..
+							where = 2227 	#Ramanathapuram
+							value = 300		# Longer journey
 						}
 					}
 				}
-				random_list = {
-					10 = { character_event = { id = SoA.5027 days = 5 random = 9 } }
-					10 = { narrative_event = { id = SoA.5028 days = 5 random = 9 } }
-					10 = { character_event = { id = SoA.5029 days = 5 random = 9 } }
-					10 = { character_event = { id = SoA.5030 days = 5 random = 9 } }
+				random_list = { #Long Journey
+					10 = {
+						modifier = {
+							factor = 0
+								month = 6
+								NOT = { month = 9 }
+						}
+						character_event = { id = MNM.8020 days = 15 random = 9 }
+					} #Monsoon Troubles
+					10 = {
+						modifier = {
+							factor = 0
+							NOT = { month = 4 }
+						}
+						character_event = { id = MNM.8021 days = 15 random = 9 }
+					} #Dry Season Troubles
+					10 = {  character_event = { id = MNM.8022 days = 15 random = 9 } } #Getting lost in the Jungle
+					10 = {  character_event = { id = MNM.8023 days = 15 random = 9 } } #Robbers on the road
+					10 = {  character_event = { id = MNM.8024 days = 15 random = 9 } } #Encounter in Dandakaranya
+					10 = { character_event = { id = MNM.8037 days = 15 random = 9 } }#What's happening at home?
 				}
 			}
-			if = {
-				limit = {
-					location = {
-						distance = {
-							where = 2227 #Ramanathapuram
-							value = 100	#kind of far..
-						}
-					}
-				}
-				random_list = {
-					10 = { character_event = { id = SoA.5031 days = 15 random = 7 } } # List that is always checked
-					10 = { character_event = { id = SoA.5032 days = 15 random = 7 } }
-					10 = { narrative_event = { id = SoA.5033 days = 15 random = 7 } }
-					10 = { character_event = { id = SoA.5034 days = 15 random = 7 } }
-					10 = { character_event = { id = SoA.5035 days = 15 random = 7 } }
-					10 = { character_event = { id = SoA.5036 days = 15 random = 7 } }
-					10 = { character_event = { id = SoA.5037 days = 15 random = 7 } }
-					10 = { character_event = { id = SoA.5038 days = 15 random = 7 } }
-				}
+			
+			random_list = { #Stuff that always happen
+				10 = {  character_event = { id = MNM.8025 days = 30 random = 7 } } #The poor villagers
+				10 = {  character_event = { id = MNM.8026 days = 30 random = 7 } } #Reflections about journey
+				10 = {  character_event = { id = MNM.8027 days = 30 random = 7 } } #Encounter with merchant
+				10 = {  character_event = { id = MNM.8028 days = 30 random = 7 } } #You get sick
+				10 = {  character_event = { id = MNM.8029 days = 30 random = 7 } } #Water tanks
+				10 = {  character_event = { id = MNM.8030 days = 30 random = 7 } } #Village Pipal Tree
+				10 = {  character_event = { id = MNM.8031 days = 30 random = 7 } } #Splendid City
 			}
 		}
 	}
@@ -1059,7 +1096,7 @@ character_event = {
 		add_trait = proud
 		prestige = 20
 		hidden_tooltip = {
-			character_event = { id = hindu.51 days = 35 }
+			character_event = { id = hindu.58 days = 35 }
 		}	
 	}
 }
@@ -1099,14 +1136,14 @@ narrative_event = {
 		name = "EVTOPT_chardhamrameswaram"
 		piety = 50
 		hidden_tooltip = {
-			character_event = { id = hindu.52 days = 35 }
+			character_event = { id = hindu.59 days = 35 }
 		}	
 	}
 }
 character_event = {
-	id = hindu.52
+	id = hindu.59
 	desc = "EVTDESC_yatrahome"
-	picture = GFX_evt_prospering_province
+	picture = GFX_evt_throne_room_indo_aryan_group
 	border = GFX_event_normal_frame_religion
 	prisoner = no
 	is_triggered_only = yes
@@ -1118,6 +1155,166 @@ character_event = {
 		add_trait = yatri
 	}
 }
+##########################################################################
+# Setting out to Varanasi
+##########################################################################	
+character_event = {
+	id = hindu.60
+	desc = EVTDESC_MNM_8011
+	picture = GFX_evt_indian_pilgrimage
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_MNM_8011
+		clr_character_flag = preparing_indian_pilgrimage
+		hidden_tooltip = {
+			add_trait = on_yatra
+			narrative_event = { id = hindu.61 days = 45 } #Arrival in Varanasi
+		}
+		hidden_tooltip = {
+			if = {
+				limit = {
+					location = {
+						distance = {
+							where = 2788	# Varanasi
+							value = 300		# Longer journey
+						}
+					}
+				}
+				random_list = { #Long Journey
+					10 = {
+						modifier = {
+							factor = 0
+								month = 6
+								NOT = { month = 9 }
+						}
+						character_event = { id = MNM.8020 days = 15 random = 9 }
+					} #Monsoon Troubles
+					10 = {
+						modifier = {
+							factor = 0
+							NOT = { month = 4 }
+						}
+						character_event = { id = MNM.8021 days = 15 random = 9 }
+					} #Dry Season Troubles
+					10 = {  character_event = { id = MNM.8022 days = 15 random = 9 } } #Getting lost in the Jungle
+					10 = {  character_event = { id = MNM.8023 days = 15 random = 9 } } #Robbers on the road
+					10 = {  character_event = { id = MNM.8024 days = 15 random = 9 } } #Encounter in Dandakaranya
+					10 = { character_event = { id = MNM.8037 days = 15 random = 9 } }#What's happening at home?
+				}
+			}
+			
+			random_list = { #Stuff that always happen
+				10 = {  character_event = { id = MNM.8025 days = 30 random = 7 } } #The poor villagers
+				10 = {  character_event = { id = MNM.8026 days = 30 random = 7 } } #Reflections about journey
+				10 = {  character_event = { id = MNM.8027 days = 30 random = 7 } } #Encounter with merchant
+				10 = {  character_event = { id = MNM.8028 days = 30 random = 7 } } #You get sick
+				10 = {  character_event = { id = MNM.8029 days = 30 random = 7 } } #Water tanks
+				10 = {  character_event = { id = MNM.8030 days = 30 random = 7 } } #Village Pipal Tree
+				10 = {  character_event = { id = MNM.8031 days = 30 random = 7 } } #Splendid City
+			}
+		}
+	}
+}
+##########################################################################
+# Arrival at Varanasi
+##########################################################################	
+#Hidden gateway event				
+character_event = {
+	id = hindu.61
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		random_list = {
+			50 = { character_event = { id = hindu.62 } }
+			50 = { character_event = { id = hindu.63 } }
+		}
+	}
+}
+
+character_event = {
+	id = hindu.62
+	desc = "EVTDESC_hindu62"
+	picture = GFX_evt_hindu_temple
+	border = GFX_event_normal_frame_religion
+	prisoner = no
+	is_triggered_only = yes
+	option = {
+		name = "EVTOPT_read_bhagavad_gita"
+		change_learning = 2
+		add_trait = mystic
+		hidden_tooltip = {
+			narrative_event = { id = hindu.64 days = 35 }
+		}
+	}
+	option = {
+		name = "EVTOPT_noread_bhagavad_gita"
+		add_trait = proud
+		prestige = 20
+		hidden_tooltip = {
+			narrative_event = { id = hindu.64 days = 35 }
+		}	
+	}
+}
+character_event = {
+	id = hindu.63
+	desc = "EVTDESC_hindu63"
+	picture = GFX_evt_indian_pilgrimage
+	border = GFX_event_normal_frame_religion
+	prisoner = no
+	is_triggered_only = yes
+	option = {
+		name = "EVTOPT_chardhamkindpatron"
+		change_diplomacy = 1
+		add_trait = kind
+		wealth = -20
+		hidden_tooltip = {
+			narrative_event = { id = hindu.64 days = 35 }
+		}
+	}
+	option = {
+		name = "EVTOPT_chardhamzealous"
+		add_trait = zealous
+		hidden_tooltip = {
+			narrative_event = { id = hindu.64 days = 35 }
+		}	
+	}
+}
+narrative_event = {
+	id = hindu.64
+	title = EVTNAME_MNM_8057
+	desc = EVTDESC_MNM_8057
+	picture = GFX_evt_indian_pilgrimage
+	border = GFX_event_narrative_frame_religion
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_MNM_8057
+		hidden_tooltip = { character_event = { id = hindu.65 days = 15 } }
+	}
+}
+character_event = {
+	id = hindu.65
+	desc = "EVTDESC_yatrahome"
+	picture = GFX_evt_throne_room_indo_aryan_group
+	border = GFX_event_normal_frame_religion
+	prisoner = no
+	is_triggered_only = yes
+	option = {
+		name = "EVTOPT_yatrahome"
+		clr_character_flag = do_not_disturb
+		piety = 50
+		remove_trait = on_yatra
+		add_trait = yatri
+	}
+}
+
 ######################
 ####Siddhar EVENTS####
 ######################

@@ -1610,124 +1610,125 @@ decisions = {
 		}
 	}
 	
-	hold_navatri = {
-		only_playable = yes
-		ai_check_interval = 4
-		potential = {
-			is_playable = yes
-			is_adult = yes
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-				is_nomadic = yes
-				is_republic = yes
-			}
-			prisoner = no
-			religion_group = indian_group
-			NOT = { trait = incapable }
-			NOT = {
-				has_character_modifier = holding_navatri
-			}
-			NOT = {
-				has_character_modifier = large_feast_timer
-			}
-			NOT = {
-				has_character_modifier = fabulous_feast
-			}
-			NOT = {
-				has_character_flag = guest_navatri
-			}
-			NOT = {
-				liege = {
-					has_character_modifier = holding_navatri
-				}
-			}
-			NOT = {
-				has_alternate_start_parameter = { key = religion_names value = random }
-			}
-		}
-		allow = {
-			war = no
-			custom_tooltip = {
-				text = UNOCCUPIED_DEMESNE_TITLE
-				hidden_tooltip = {
-					any_demesne_title = {
-						NOT = { higher_tier_than = count }
-						is_occupied = no
-					}
-				}
-			}
-			prisoner = no
-			NOT = { is_inaccessible_trigger = yes }
-			scaled_wealth = 0.2
-			month >= 8
-			month <= 10
-			prestige = 100
-			custom_tooltip = {
-				text = is_not_busy_trigger_tooltip
-				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
-			}
-		}
-		effect = {
-			scaled_wealth = -0.2
-			add_character_modifier = {
-				name = holding_navatri
-				duration = 365
-			}
-			set_character_flag = recent_minor_decision
-			set_character_flag = do_not_disturb
-			hidden_tooltip = { 
-				character_event = { id = RoI.1000 }#this is the Diwali event, until we write the new Festival
-			}
-			if = {
-				limit = {
-					has_dlc = "Reapers"
-				}
-				custom_tooltip = {
-					text = capital_prospers_custom_tooltip
-					hidden_tooltip = {
-						capital_scope = {
-							change_variable = { which = prosperity_value value = 8 }
-						}
-					}
-				}
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				NOT = {
-					scaled_wealth = 2
-				}
-			}
-			modifier = {
-				factor = 0.5
-				trait = shy
-			}
-			modifier = {
-				factor = 0.5
-				NOT = { diplomacy = 10 }
-			}	
-			modifier = {
-				factor = 0
-				has_character_flag = recent_minor_decision
-				NOT = {
-					had_character_flag = {
-						flag = recent_minor_decision
-						days = 730
-					}
-				}
-			}	
-			modifier = {
-				factor = 0
-				NOT = { age = 30 }
-			}			
-		}
-	}
+	#hold_navaratri = {
+	#	only_playable = yes
+	#	ai_check_interval = 4
+	#	potential = {
+	#		is_playable = yes
+	#		is_adult = yes
+	#		OR = {
+	#			is_feudal = yes
+	#			is_tribal = yes
+	#			is_nomadic = yes
+	#			is_republic = yes
+	#		}
+	#		prisoner = no
+	#		is_hinduism=yes
+	#		NOT = { trait = incapable }
+	#		NOT = { has_character_modifier = patron_kali }
+	#		NOT = {
+	#			has_character_modifier = holding_navaratri
+	#		}
+	#		NOT = {
+	#			has_character_modifier = large_feast_timer
+	#		}
+	#		NOT = {
+	#			has_character_modifier = fabulous_feast
+	#		}
+	#		NOT = {
+	#			has_character_flag = guest_navatri
+	#		}
+	#		NOT = {
+	#			liege = {
+	#				has_character_modifier = holding_navaratri
+	#			}
+	#		}
+	#		NOT = {
+	#			has_alternate_start_parameter = { key = religion_names value = random }
+	#		}
+	#	}
+	#	allow = {
+	#		war = no
+	#		custom_tooltip = {
+	#			text = UNOCCUPIED_DEMESNE_TITLE
+	#			hidden_tooltip = {
+	#				any_demesne_title = {
+	#					NOT = { higher_tier_than = count }
+	#					is_occupied = no
+	#				}
+	#			}
+	#		}
+	#		prisoner = no
+	#		NOT = { is_inaccessible_trigger = yes }
+	#		scaled_wealth = 0.2
+	#		month >= 8
+	#		month <= 10
+	#		prestige = 100
+	#		custom_tooltip = {
+	#			text = is_not_busy_trigger_tooltip
+	#			hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+	#		}
+	#	}
+	#	effect = {
+	#		scaled_wealth = -0.2
+	#		add_character_modifier = {
+	#			name = holding_navaratri
+	#			duration = 365
+	#		}
+	#		set_character_flag = recent_minor_decision
+	#		set_character_flag = do_not_disturb
+	#		hidden_tooltip = { 
+	#			character_event = { id = #### }
+	#		}
+	#		if = {
+	#			limit = {
+	#				has_dlc = "Reapers"
+	#			}
+	#			custom_tooltip = {
+	#				text = capital_prospers_custom_tooltip
+	#				hidden_tooltip = {
+	#					capital_scope = {
+	#						change_variable = { which = prosperity_value value = 8 }
+	#					}
+	#				}
+	#			}
+	#		}
+	#	}
+	#	revoke_allowed = {
+	#		always = no
+	#	}
+	#	ai_will_do = {
+	#		factor = 1
+	#		modifier = {
+	#			factor = 0
+	#			NOT = {
+	#				scaled_wealth = 2
+	#			}
+	#		}
+	#		modifier = {
+	#			factor = 0.5
+	#			trait = shy
+	#		}
+	#		modifier = {
+	#			factor = 0.5
+	#			NOT = { diplomacy = 10 }
+	#		}	
+	#		modifier = {
+	#			factor = 0
+	#			has_character_flag = recent_minor_decision
+	#			NOT = {
+	#				had_character_flag = {
+	#					flag = recent_minor_decision
+	#					days = 730
+	#				}
+	#			}
+	#		}	
+	#		modifier = {
+	#			factor = 0
+	#			NOT = { age = 30 }
+	#		}			
+	#	}
+	#}
 	
 	hold_vesak = {
 		only_playable = yes

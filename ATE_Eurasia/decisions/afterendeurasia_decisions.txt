@@ -590,13 +590,19 @@ decisions = {
 			}
 		}
 	}
-	go_on_yatra = {
+	go_on_yatra = { #Modification of the Vanilla Event
 		only_playable = yes
 		is_high_prio = yes
 		ai_check_interval = 60
 		potential = {
 			is_playable = yes
 			is_hinduism = yes
+			has_dlc = "Mystics"
+			OR = {
+				NOT = { has_dlc = "Way of Life" }
+				has_focus = focus_theology
+				has_quest = quest_indian_monastic_order_pilgrimage
+			}
 			NOT = { trait = yatri }
 			NOT = { trait = on_yatra }
 			NOT = {	has_character_flag = preparing_yatra }

@@ -6278,36 +6278,6 @@ sanyasini = {
 	female_compliment = COMPL_NUN
 }
 
-
-# Dharmic who has completed a Pilgrimage
-indian_pilgrim = {
-	potential = {
-		has_dharmic_religion_trigger = yes
-	}
-	
-	same_religion_opinion = 5
-	monthly_character_piety = 0.1
-	
-	male_compliment = COMPL_PILGRIM
-	female_compliment = COMPL_PILGRIM
-}
-
-# Dharmic pilgrim while doing pilgrimage
-on_indian_pilgrimage = {
-	potential = {
-		has_dharmic_religion_trigger = yes
-		NOT = { trait = pilgrim }
-	}
-	
-	cached = yes	# Keep a cache of all trait holders, to use with the corresponding event trigger 
-	
-	monthly_character_piety = 0.2
-	same_religion_opinion = 5
-	
-	pilgrimage = yes	# Will need a regent, but can still be guardian to children
-	customizer = no
-}
-
 masterless_dog = {
 	church_opinion = 5
 	same_religion_opinion = 5

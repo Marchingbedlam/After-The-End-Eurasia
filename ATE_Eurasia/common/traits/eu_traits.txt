@@ -2002,13 +2002,27 @@ amritdhari = {
 	ruler_designer_cost = 0
 }
 yatri = {
-	random = no
-	religious = yes
-	hindu_opinion = 5
+	potential = {
+		is_hinduism = yes
+	}
+	
+	same_religion_opinion = 5
+	monthly_character_piety = 0.1
+	
+	male_compliment = COMPL_PILGRIM
+	female_compliment = COMPL_PILGRIM
 }
 on_yatra = {
-	random = no
-	pilgrimage = yes
-	religious = yes
-	hindu_opinion = 5
+	potential = {
+		is_hinduism = yes
+		NOT = { trait = pilgrim }
+	}
+	
+	cached = yes    # Keep a cache of all trait holders, to use with the corresponding event trigger 
+	
+	monthly_character_piety = 0.2
+	same_religion_opinion = 5
+	
+	pilgrimage = yes    # Will need a regent, but can still be guardian to children
+	customizer = no
 }

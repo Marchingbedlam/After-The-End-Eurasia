@@ -724,14 +724,14 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_trait_yatri"
-		texturefile = "gfx/traits/ziyarat.dds"
+		texturefile = "gfx/traits/indian_pilgrim.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
 		name = "GFX_trait_on_yatra"
-		texturefile = "gfx/traits/ziyarat.dds"
+		texturefile = "gfx/traits/on_indian_pilgrimage.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1113,6 +1113,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_hold_diwali_feast_kali_puja"
 		texturefile = "gfx\\interface\\decision_icon_hold_diwali_feast.dds"
+	}
+	spriteType = {
+		name = "GFX_hold_navaratri"
+		texturefile = "gfx\\interface\\decision_icon_hold_navaratri.dds"
 	}
 	
 	#ATEO Stuff
