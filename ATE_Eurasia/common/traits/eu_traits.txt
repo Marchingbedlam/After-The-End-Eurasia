@@ -2003,7 +2003,10 @@ amritdhari = {
 }
 yatri = {
 	potential = {
-		is_hinduism = yes
+		OR = {
+			is_hinduism = yes
+			religion = jain
+		}
 	}
 	
 	same_religion_opinion = 5
@@ -2014,7 +2017,10 @@ yatri = {
 }
 on_yatra = {
 	potential = {
-		is_hinduism = yes
+		OR = {
+			is_hinduism = yes
+			religion = jain
+		}
 		NOT = { trait = pilgrim }
 	}
 	

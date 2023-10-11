@@ -601,7 +601,6 @@ decisions = {
 			OR = {
 				NOT = { has_dlc = "Way of Life" }
 				has_focus = focus_theology
-				has_quest = quest_indian_monastic_order_pilgrimage
 			}
 			NOT = { trait = yatri }
 			NOT = { trait = on_yatra }
@@ -646,6 +645,86 @@ decisions = {
 				narrative_event = { id = hindu.30 }
 			}
 			set_character_flag = activated_yatra
+			set_character_flag = recent_minor_decision
+			set_character_flag = do_not_disturb
+			
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				trait = cynical
+			}
+			modifier = {
+				factor = 0
+				NOT = { wealth = 300 }
+			}
+			modifier = { # Monthly randomizer for when AI takes decision (1% chance)
+				factor = 0
+				random = 1
+			}
+			modifier = {
+				factor = 0
+				NOT = { age = 30 }
+			}
+		}
+	}
+	go_on_yatra_jain = { #Modification of the Vanilla Event
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 60
+		potential = {
+			is_playable = yes
+			religion = jain
+			has_dlc = "Mystics"
+			OR = {
+				NOT = { has_dlc = "Way of Life" }
+				has_focus = focus_theology
+			}
+			NOT = { trait = yatri }
+			NOT = { trait = on_yatra }
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		allow = {
+			age = 16
+			prisoner = no
+			scaled_wealth = 0.2
+			war = no
+			in_command = no
+			custom_tooltip = {
+				text = UNOCCUPIED_DEMESNE_TITLE
+				hidden_tooltip = {
+					any_demesne_title = {
+						NOT = { higher_tier_than = count }
+						is_occupied = no
+					}
+				}
+			}
+			
+			NOT = { is_inaccessible_trigger = yes }
+			custom_tooltip = {
+				text = health_travel_condition
+				hidden_tooltip = {
+					NOT = {	is_incapable = yes }
+					NOT = {	trait = blinded }
+				}
+			}
+			custom_tooltip = {
+				text = is_not_busy_trigger_tooltip
+				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+		}
+		effect = {
+			scaled_wealth = -0.2
+			hidden_tooltip = {
+				character_event = { id = jain.8002 }
+			}
 			set_character_flag = recent_minor_decision
 			set_character_flag = do_not_disturb
 			
