@@ -207,6 +207,47 @@ e_russia = { #Pravoslavie Formable Russia
 		always = no # Only created through special event
 	}
 }
+e_hetmanate = { #The Grand Hetmanate
+	color={ 238 206 110 }
+	color2={ 220 220 20 }
+
+	capital = 794 #Zaporizhia
+	
+	title = "HETMAN"
+	title_female = "HETMAN_FEMALE"
+	foa = "HETMAN_FOA"
+	
+	ukrainian = "Hetmanshchyna"
+	halychian = "Hetmanshchyna"
+	belarusian = "Hetmanshchyna"
+	rusyn = "Hetmanshchyna"
+	poleshuk = "Hetmanshchyna"
+	severyane = "Getmanšcina"
+	muscovite = "Getmanšcina"
+	pomor = "Getmanšcina"
+	volgan = "Getmanšcina"
+	chernyan = "Getmanšcina"
+	kubantsy = "Getmanšcina"
+	chornomorsky = "Getmanšcina"
+	donskoy = "Getmanšcina"
+	uralic = "Getmanšcina"
+	siberian = "Getmanšcina"
+	akmolensk = "Getmanšcina"
+	kaliningradyets = "Getmanšcina"
+	polish = "Hetmanszczyzna"
+	malopolan = "Hetmanszczyzna"
+	mazovian = "Hetmanszczyzna"
+	wielkopolan = "Hetmanszczyzna"
+	odrzan = "Hetmanszczyzna"
+	warmzur = "Hetmanszczyzna"
+	goral = "Hetmanszczyzna"
+	
+	dignity = 20 # Counted as having this many more counties than it does
+	
+	allow = {
+		always = no # Only created through special event
+	}
+}
 
 ### titular kingdoms ###
 

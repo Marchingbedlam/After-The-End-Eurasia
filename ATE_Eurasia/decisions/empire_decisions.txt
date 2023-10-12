@@ -664,4 +664,134 @@ decisions = {
 			factor = 1
 		}
 	}
+	form_the_hetmanate = {
+		is_high_prio = yes
+		only_playable = yes
+		
+		potential = {
+			is_alternate_start = no
+			NOT = { has_global_flag = hetmanate_formed }
+			independent = yes
+			OR = {
+				religion = kozachina
+				religion = angelchina
+			}
+			OR = {
+				has_landed_title = e_velikorossiya
+				has_landed_title = e_ruthenia
+			}
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			NOT = { is_incapable = yes }
+			prestige = 1000
+			scaled_wealth = 1.5
+			war = no
+			primary_title = { title = e_ruthenia }
+			AND = {
+				has_landed_title = e_ural
+				has_landed_title = e_baltic
+				has_landed_title = e_caucasia
+				has_landed_title = e_velikorossiya
+			}
+		}
+		effect = {
+			hidden_tooltip = {
+				any_title = {
+					limit = {
+						tier = KING
+						OR = {
+							region = custom_european_russia
+							region = custom_ukraine
+							region = custom_belarus
+						}
+					}
+					de_jure_liege = e_hetmanate
+				}
+			}
+			primary_title = {
+				e_hetmanate = {
+					grant_title = ROOT
+					copy_title_laws = PREV
+					copy_title_history = PREV
+				}
+			}
+			hidden_tooltip = { e_hetmanate = { make_primary_title = yes } }
+			if = {
+				limit = {
+					OR = {
+						has_landed_title = e_velikorossiya
+						e_velikorossiya = { has_holder = no }
+					}
+				}
+				e_velikorossiya = { destroy_landed_title = THIS }
+				activate_title = { title = e_velikorossiya status = no }
+			}
+			if = {
+				limit = {
+					OR = {
+						has_landed_title = e_ural
+						e_ural = { has_holder = no }
+					}
+				}
+				e_ural = { destroy_landed_title = THIS }
+				activate_title = { title = e_ural status = no }
+			}
+			if = {
+				limit = {
+					OR = {
+						has_landed_title = e_ruthenia
+						e_ruthenia = { has_holder = no }
+					}
+				}
+				e_ruthenia = { destroy_landed_title = THIS }
+				activate_title = { title = e_ruthenia status = no }
+			}
+			if = {
+				limit = {
+					OR = {
+						has_landed_title = e_caucasia
+						e_caucasia = { has_holder = no }
+					}
+				}
+				e_caucasia = { destroy_landed_title = THIS }
+				activate_title = { title = e_caucasia status = no }
+			}
+			if = {
+				limit = {
+					OR = {
+						has_landed_title = e_baltic
+						e_baltic = { has_holder = no }
+					}
+				}
+				e_baltic = { destroy_landed_title = THIS }
+				activate_title = { title = e_baltic status = no }
+			}
+			k_latvia = {
+				de_jure_liege = e_hetmanate
+			}
+			k_lithuania = {
+				de_jure_liege = e_hetmanate
+			}
+			k_estonia = {
+				de_jure_liege = e_hetmanate
+			}
+			k_finland = {
+				de_jure_liege = e_scandinavia
+			}
+			scaled_wealth = -1.5
+			if = {
+				limit = { has_nickname = no }
+				give_nickname = nick_the_great
+			}
+			set_global_flag = hetmanate_formed
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
