@@ -1,0 +1,57 @@
+#####################################################################
+#		An-Nahar Event Reference Numbers for Ease of Reference		#
+#	x arab.1 - arab.3 : Martyr's Day Celebration					#
+##################################################################### 
+namespace = arab
+
+#### Martyr Day event chain ####
+
+character_event = {
+	id = arab.1
+	desc = EVTDESC_ARAB_1
+	picture = GFX_evt_muslim_martyrs
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_ARAB_1
+		character_event = { id = arab.2 days = 10 }
+	}
+}
+character_event = {
+	id = arab.2
+	desc = EVTDESC_ARAB_2
+	picture = GFX_evt_muslim_martyrs
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_ARAB_2
+		wealth = -10
+		piety = 20
+		narrative_event = { id = arab.3 days = 10 }
+	}
+	option = { 
+		name = EVTOPTB_ARAB_2
+		wealth = -10
+		prestige = 20
+		narrative_event = { id = arab.3 days = 10 }
+	}
+	option = { 
+		name = EVTOPTC_ARAB_2
+		piety = -10
+		prestige = -10
+		narrative_event = { id = arab.3 days = 10 }
+	}
+}
+
+narrative_event = {
+	id = arab.3
+	title = EVT_TITLE_ARAB_3
+	desc = EVTDESC_ARAB_3
+	picture = GFX_evt_muslim_martyrs
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_ARAB_3
+		piety = 200
+	}
+}
