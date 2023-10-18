@@ -1,0 +1,48 @@
+#####################################################################
+#		Cossack Event Reference Numbers for Ease of Reference		#
+#	x cossack.1 - cossack.3 : Intercession of the Theotokos			#
+##################################################################### 
+namespace = cossack
+
+#### Intercession of the Theotokos event chain ####
+
+character_event = {
+	id = cossack.1
+	desc = EVTDESC_COSSACK_1
+	picture = GFX_evt_theotokos
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_COSSACK_1
+		character_event = { id = cossack.2 days = 10 }
+	}
+}
+character_event = {
+	id = cossack.2
+	desc = EVTDESC_COSSACK_2
+	picture = GFX_evt_theotokos
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_COSSACK_2
+		piety = 25
+		narrative_event = { id = cossack.3 days = 10 }
+	}
+	option = { 
+		name = EVTOPTB_COSSACK_2
+		prestige = 25
+		narrative_event = { id = cossack.3 days = 10 }
+	}
+}
+
+narrative_event = {
+	id = cossack.3
+	title = EVT_TITLE_COSSACK_3
+	desc = EVTDESC_COSSACK_3
+	picture = GFX_evt_theotokos
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_COSSACK_3
+	}
+}
