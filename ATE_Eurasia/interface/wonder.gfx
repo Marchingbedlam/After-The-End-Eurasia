@@ -371,6 +371,25 @@ spriteTypes = {
 		noOfFrames = 5
 	}
 	
+	#Borj el-Kebir
+	spriteType = {
+		name = "GFX_wonder_strip_borj_el_kebir_large"
+		texturefile = "gfx\\interface\\wonder_interface\\wonder_strips\\wonder_stages_borj_el_kebir_large.dds"
+		noOfFrames = 5
+	}
+	
+	spriteType = {
+		name = "GFX_wonder_strip_borj_el_kebir_medium"
+		texturefile = "gfx\\interface\\wonder_interface\\wonder_strips\\wonder_stages_borj_el_kebir_medium.dds"
+		noOfFrames = 5
+	}
+	
+	spriteType = {
+		name = "GFX_wonder_strip_borj_el_kebir_small"
+		texturefile = "gfx\\interface\\wonder_interface\\wonder_strips\\wonder_stages_borj_el_kebir_small.dds"
+		noOfFrames = 5
+	}
+	
 	#Falak-ol-Aflak (Shapur's Castle)
 	spriteType = {
 		name = "GFX_wonder_strip_shapurs_castle_large"
