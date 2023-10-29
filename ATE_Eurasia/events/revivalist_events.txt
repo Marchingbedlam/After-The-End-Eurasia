@@ -77,7 +77,7 @@ character_event = {
 			flag = ai_flag_refuse_conversion
 		}
 		new_character = {
-			character_event = { id = maintenance.4 } # Diversity
+			#character_event = { id = maintenance.4 } # Diversity
 			set_character_flag = revival_wahhab
 			save_event_target_as = revival_wahhab
 		}
