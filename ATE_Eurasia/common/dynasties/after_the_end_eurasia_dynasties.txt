@@ -374,7 +374,20 @@
 1005212 = { name = "Tarxanov" culture = tatar }
 1005213 = { name = "Firkovich" culture = tatar }
 
-1020000 = { name = "Wasawo" culture = luo }
+1020000 = { name = "Wasawo" culture = luo used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 21
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1020001 = { name = "Lagum" culture = luo }
 1020002 = { name = "Oruka" culture = luo }
 1020003 = { name = "Obote" culture = luo }
@@ -467,7 +480,20 @@
 1023010 = { name = "Aju" culture = nuba }
 1023011 = { name = "Kodi" culture = nuba }
 1023012 = { name = "Aized" culture = nuba }
-1023013 = { name = "Muluk" culture = nuba }
+1023013 = { name = "Muluk" culture = nuba used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 18
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1023014 = { name = "Narada" culture = nuba }
 1023015 = { name = "Kujur" culture = nuba }
 1023016 = { name = "Belga" culture = nuba }
@@ -8589,7 +8615,20 @@
 1912038 = {name = "Wagdy" culture = masri }
 1912039 = {name = "Moussa" culture = masri }
 1912040 = {name = "El Shazly" culture = masri }
-1912041 = {name = "Hassan" culture = masri }
+1912041 = {name = "Hassan" culture = masri used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 12
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1912042 = {name = "Hamza" culture = masri }
 1912043 = {name = "Abu Taleb" culture = masri }
 1912044 = {name = "El-Mwawi" culture = masri }
@@ -8890,7 +8929,20 @@
 1915001 = {name = "al-Azhari" culture = sudani }
 1915002 = {name = "Eltayeb" culture = sudani }
 1915003 = {name = "Salman" culture = sudani }
-1915004 = {name = "Haj-Omar" culture = sudani }
+1915004 = {name = "Haj-Omar" culture = sudani used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 14
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1915005 = {name = "Medani" culture = sudani }
 1915006 = {name = "Al-Mirghani" culture = sudani }
 1915007 = {name = "an-Nimeiry" culture = sudani }
@@ -8907,9 +8959,35 @@
 1915018 = {name = "Al-Balla" culture = sudani }
 1915019 = {name = "Kasha" culture = sudani }
 1915020 = {name = "al-Kabli" culture = sudani }
-1915021 = {name = "Burhan" culture = sudani }
+1915021 = {name = "Burhan" culture = sudani used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 17
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1915022 = {name = "ibn Auf" culture = sudani }
-1915023 = {name = "Khabbashi" culture = sudani }
+1915023 = {name = "Khabbashi" culture = sudani used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 15
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1915024 = {name = "al-Taishi" culture = sudani }
 1915025 = {name = "Hamdok" culture = sudani }
 1915026 = {name = "Al-Faki" culture = sudani }
@@ -8978,7 +9056,20 @@
 1915089 = {name = "Abu Issa" culture = sudani }
 1915090 = {name = "Al Kashif" culture = sudani }
 1915091 = {name = "Dunqas" culture = sudani }
-1915092 = {name = "Mahdi" culture = sudani }
+1915092 = {name = "Mahdi" culture = sudani used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 16
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 1916000 = {name = "Daddach" culture = sahrawi }
 1916001 = {name = "Amidane" culture = sahrawi }
@@ -15817,7 +15908,20 @@ coat_of_arms = {
 2017064 = { name = "Paret" culture = catalan }
 2017065 = { name = "Pasqual" culture = catalan }
 2017066 = { name = "Piqué" culture = catalan }
-2017067 = { name = "Pons" culture = catalan }
+2017067 = { name = "Pons" culture = catalan used_for_random=no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 23
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2017068 = { name = "Pou" culture = catalan }
 2017069 = { name = "Puig" culture = catalan }
 2017070 = { name = "Pujol" culture = catalan }
@@ -16001,7 +16105,20 @@ coat_of_arms = {
 2017248 = { name = "Nadal" culture = catalan }
 2017249 = { name = "Lluch" culture = catalan }
 2017250 = { name = "Llussà" culture = catalan }
-2017251 = { name = "Vallvé" culture = catalan }
+2017251 = { name = "Vallvé" culture = catalan used_for_random=no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 24
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2017252 = { name = "Barbés" culture = catalan }
 
 2018001 = { name = "García" culture = castilian }
@@ -16209,7 +16326,20 @@ coat_of_arms = {
 2018177 = { name = "Cuesta" culture = castilian }
 2018178 = { name = "Serra" culture = castilian }
 2018179 = { name = "Manzano" culture = castilian }
-2018180 = { name = "Villanueva" culture = castilian }
+2018180 = { name = "Villanueva" culture = castilian used_for_random=no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 25
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2018181 = { name = "Tomás" culture = castilian }
 2018182 = { name = "Hurtado" culture = castilian }
 2018183 = { name = "Rueda" culture = castilian }
@@ -17260,7 +17390,20 @@ coat_of_arms = {
 2023144 = { name = "Kharbouch" culture = llanito }
 2023145 = { name = "Peliza" culture = llanito }
 2023146 = { name = "Carneiro" culture = llanito }
-2023147 = { name = "Macfarlane" culture = llanito }
+2023147 = { name = "Macfarlane" culture = llanito used_for_random=no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 26
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2023148 = { name = "Isola" culture = llanito }
 2023149 = { name = "Risso" culture = llanito }
 2023150 = { name = "Abudarham" culture = llanito }
@@ -30517,7 +30660,20 @@ coat_of_arms = {
 		}
 	}
 }
-2097010 = { name = "Hagos" culture = tigre }
+2097010 = { name = "Hagos" culture = tigre used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 22
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 2098000 = { name = "Amen" culture = amhara }
 2098001 = { name = "Aselafi" culture = amhara }
@@ -33094,7 +33250,20 @@ coat_of_arms = {
 	}
 }
 2112135 = { name = "Alisher" culture = uzbek }
-2112136 = { name = "Ming" culture = uzbek }
+2112136 = { name = "Ming" culture = uzbek used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 20
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 2113000 = { name = "Marak" culture = garo }
 2113001 = { name = "Mankin" culture = garo }
@@ -39578,11 +39747,11 @@ coat_of_arms = {
 	name = "Shestalov"
 	culture = mansi
 	coat_of_arms = { 
-		religion = nondescript_pagan
+		religion = pagan
 		template = 0
 		layer = {
-			texture = 0
-			texture_internal = 27
+			texture = 1
+			texture_internal = 11
 			emblem = 0
 			color = 0
 			color = 0
@@ -39595,11 +39764,11 @@ coat_of_arms = {
 	name = "Krapivin"
 	culture = mansi
 	coat_of_arms = { 
-		religion = nondescript_pagan
+		religion = pagan
 		template = 0
 		layer = {
-			texture = 0
-			texture_internal = 28
+			texture = 1
+			texture_internal = 12
 			emblem = 0
 			color = 0
 			color = 0
@@ -39661,7 +39830,20 @@ coat_of_arms = {
 2163036 = { name = "Zuaby" culture = circassian }
 2163037 = { name = "Mäscharq'a" culture = circassian }
 
-2164000 = { name = "Vagatov" culture = khanty }
+2164000 = { name = "Vagatov" culture = khanty used_for_random = no
+	coat_of_arms = { 
+		religion = pagan
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 10
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2164001 = { name = "Vandymov" culture = khanty }
 2164002 = { name = "Voldin" culture = khanty }
 2164003 = { name = "Yernykhov" culture = khanty }
@@ -39926,7 +40108,20 @@ coat_of_arms = {
 }
 2165079 = { name = "Vylka" culture = nenet used_for_random = no}
 
-2166000 = {name = "Qasim" culture = nubian }
+2166000 = {name = "Qasim" culture = nubian used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 13
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2166001 = {name = "al-Azhari" culture = nubian }
 2166002 = {name = "Eltayeb" culture = nubian }
 2166003 = {name = "Salman" culture = nubian }
@@ -46423,7 +46618,20 @@ coat_of_arms = {
 
 7506000 = { name = "Aussa" culture = afar }
 7506001 = { name = "Sadiq" culture = afar }
-7506002 = { name = "Kadafo" culture = afar }
+7506002 = { name = "Kadafo" culture = afar used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 19
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 7506003 = { name = "Yayyo" culture = afar used_for_random = no 
 	coat_of_arms = {
 		religion = nondescript_muslim
