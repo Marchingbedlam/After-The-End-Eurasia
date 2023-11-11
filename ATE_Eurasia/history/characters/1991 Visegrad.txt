@@ -5638,44 +5638,50 @@
 	2680.1.1={death=yes}
 }
 212601={
-	name="Artur"
-	dynasty=2126121 #Antol
-	culture=goral
+	name="Marika"
+	female=yes
+	culture=slovak
 	religion=mariavite
-	trait=elusive_shadow
+	trait=midas_touched
+	trait=familyperson
+	trait=is_fat
 	trait=charitable
-	trait=wroth
-	trait=authoritative
-	trait=cynical
-	trait=gregarious
-	2638.4.5={birth=yes}
+	trait=administrator
+	2605.4.5={birth=yes}
 	2680.1.1={death=yes}
 }
 212602={
-	name="Stanislawa"
-	female=yes
-	dynasty=2126122 #Kostka-Napierski
+	name="Francisek"
+	dynasty=2126122 #Bachleda-Gogoc
 	culture=goral
-	religion=mariavite
-	trait=skilled_tactician
-	trait=ambitious
-	trait=chaste
+	religion=coronite
+	trait=detached_priest
 	trait=authoritative
-	trait=deceitful
+	trait=wroth
+	trait=proud
+	trait=temperate
 	trait=charitable
-	2637.2.4={birth=yes}
-	2665.3.1={add_spouse=212601}
+	trait=charitable
+	2599.1.1={birth=yes}
+	2640.1.1={add_spouse=212601}
 	2680.1.1={death=yes}
 }
 212603={
-	name="Milos"
-	dynasty=2126121 #Antol
-	father=212601
+	name="Jyndrek"
+	dynasty=2126122 #Bachleda-Gogoc
+	father=212602
+	mother=212601
 	culture=goral
-	religion=mariavite
-	trait=quick
-	trait=legit_bastard
-	2660.10.3={birth=yes}
+	religion=coronite
+	trait=skilled_tactician
+	trait=groomed
+	trait=cruel
+	trait=lustful
+	trait=greedy
+	trait=shrewd
+	trait=scarred_high
+	trait=duelist
+	2623.1.1={birth=yes}
 	2680.1.1={death=yes}
 }
 212604={
