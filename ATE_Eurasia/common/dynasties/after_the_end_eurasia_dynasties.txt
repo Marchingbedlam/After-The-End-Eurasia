@@ -6241,7 +6241,20 @@
 1818003 = { name = "Buber" culture = sabra }
 1818004 = { name = "Netzer" culture = sabra }
 1818005 = { name = "Dayan" culture = sabra }
-1818006 = { name = "Kook" culture = sabra }
+1818006 = { name = "Kook" culture = sabra used_for_random=no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 31
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1818007 = { name = "Yosef" culture = sabra }
 1818008 = { name = "Shmaryahu" culture = sabra } 
 1818009 = { name = "Aloni" culture = sabra }
@@ -6634,7 +6647,20 @@
 
 1820000 = { name = "Taitazak" culture = sefardi }
 1820001 = { name = "Abshalom" culture = sefardi }
-1820002 = { name = "Abecassis" culture = sefardi }
+1820002 = { name = "Abecassis" culture = sefardi used_for_random=no
+	coat_of_arms = { 
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 70
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1820003 = { name = "Abulafia" culture = sefardi }
 1820004 = { name = "Agassi" culture = sefardi }
 1820005 = { name = "Aboudi" culture = sefardi }
@@ -7167,11 +7193,37 @@
 1822096 = { name = "Canetti" culture = yiddish }
 
 1824000 = { name = "Hamoudeh" culture = filastini }
-1824001 = { name = "Rifa'i" culture = filastini }
+1824001 = { name = "Rifa'i" culture = filastini used_for_random = no
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 21
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1824002 = { name = "Halabi" culture = filastini }
 1824003 = { name = "Al-Issa" culture = filastini religion = orthodox }
 1824004 = { name = "Al-Khalidi" culture = filastini }
-1824005 = { name = "Al-Shuqayri" culture = filastini }
+1824005 = { name = "Al-Shuqayri" culture = filastini used_for_random = no
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 22
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1824006 = { name = "Nusaybah" culture = filastini 
 	coat_of_arms = { 
 		religion = nondescript_muslim
@@ -7520,7 +7572,20 @@
 1848062 = { name = "Dörr" culture = rhenish}
 1848063 = { name = "Schürrle" culture = rhenish}
 1848064 = { name = "Eigen" culture = rhenish}
-1848065 = { name = "Engin" culture = rhenish}
+1848065 = { name = "Engin" culture = rhenish
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 32
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1848066 = { name = "Stahl" culture = rhenish}
 1848067 = { name = "Diehl" culture = rhenish}
 1848068 = { name = "Knyphausen" culture = rhenish
@@ -7564,7 +7629,7 @@
 1848080 = { name = "Smisek" culture = rhenish}
 1848081 = { name = "Dreyfus" culture = rhenish
 	coat_of_arms = { 
-		religion = ivri
+		religion = nondescript_christian
 		template = 0
 		layer = {
 			texture = 0
@@ -7628,7 +7693,20 @@
 1848131 = { name = "Öztürk" culture = rhenish}
 1848132 = { name = "Möntzer" culture = rhenish used_for_random = no }
 1848133 = { name = "Noether" culture = rhenish used_for_random = no }
-1848134 = { name = "Büchner" culture = rhenish used_for_random = no }
+1848134 = { name = "Büchner" culture = rhenish used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 64
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1848135 = { name = "Dilthey" culture = rhenish used_for_random = no 
 	coat_of_arms = {
 		religion = nondescript_christian
@@ -7658,8 +7736,34 @@
 	}
 }
 1848137 = { name = "von Waldbröl" culture = rhenish}
-1848138 = { name = "Rühmann" culture = rhenish}
-1848139 = { name = "Habermas" culture = rhenish}
+1848138 = { name = "Rühmann" culture = rhenish used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 65
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1848139 = { name = "Habermas" culture = rhenish used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 66
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 1853000 = { name = "Mishin" culture = chornomorsky}
 1853001 = { name = "Grigorovich" culture = chornomorsky}
@@ -8321,7 +8425,20 @@
 1890019 = { name = "Carvalho" culture = amazonense }
 1890020 = { name = "Leão" culture = amazonense }
 
-1901000 = { name = "Mackintosh" culture = lowlander }
+1901000 = { name = "Mackintosh" culture = lowlander used_for_random=no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 79
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1901001 = { name = "Burns" culture = lowlander }
 1901002 = { name = "Robertson" culture = lowlander }
 1901003 = { name = "Scott" culture = lowlander }
@@ -9595,7 +9712,20 @@
 		}
 	}
 }
-1946172 = { name = "Störtebeker" culture = low_saxon}
+1946172 = { name = "Störtebeker" culture = low_saxon used_for_random = no
+	coat_of_arms = { 
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 67
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 
 
@@ -10081,9 +10211,48 @@
 	}
 }
 1948135 = { name = "von Berghain" culture = ossi }
-1948136 = { name = "von Mirov" culture = ossi }
-1948137 = { name = "von Bülow" culture = ossi }
-1948138 = { name = "Dutschke" culture = ossi }
+1948136 = { name = "von Mirow" culture = ossi used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 60
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1948137 = { name = "von Bülow" culture = ossi used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 61
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1948138 = { name = "Dutschke" culture = ossi used_for_random=no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 62
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1948139 = { name = "Haffner" culture = ossi }
 1948140 = { name = "Garisch" culture = ossi }
 1948141 = { name = "Bonhart" culture = ossi }
@@ -10552,8 +10721,34 @@ coat_of_arms = {
 		}
 	}
 }
-1950133 = { name = "Wahner" culture = upper_saxon}
-1950134 = { name = "Jäckel" culture = upper_saxon}
+1950133 = { name = "Wahner" culture = upper_saxon used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 57
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1950134 = { name = "Jäckel" culture = upper_saxon used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 58
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1950135 = { name = "Schwartz" culture = upper_saxon}
 
 1951000 = { name = "Sobotka" culture = austrian}
@@ -11891,7 +12086,20 @@ coat_of_arms = {
 		}
 	}
 }
-1998001 = { name = "Zejler" culture = sorbian}
+1998001 = { name = "Zejler" culture = sorbian used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 59
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1998002 = { name = "Kocor" culture = sorbian}
 1998003 = { name = "Cišinski" culture = sorbian}
 1998004 = { name = "Witkojc" culture = sorbian}
@@ -12319,7 +12527,20 @@ coat_of_arms = {
 2000082 = { name = "Sychta" culture = kashubian}
 2000083 = { name = "Gôsk" culture = kashubian}
 2000084 = { name = "Stolem" culture = kashubian}
-2000085 = { name = "Badziag" culture = kashubian}
+2000085 = { name = "Badziag" culture = kashubian used_for_random = no
+	coat_of_arms = { 
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 69
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2000086 = { name = "Wejer" culture = kashubian}
 2000087 = { name = "Barta" culture = kashubian
 	coat_of_arms = {
@@ -13401,7 +13622,20 @@ coat_of_arms = {
 	}
 }
 2008244 = { name = "Dusautoir" culture = occitan }
-2008245 = { name = "Comte" culture = occitan }
+2008245 = { name = "Comte" culture = occitan used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 78
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2008246 = { name = "Lautrec" culture = occitan }
 2008247 = { name = "Flores" culture = occitan used_for_random = no
 	coat_of_arms = {
@@ -21403,9 +21637,35 @@ coat_of_arms = {
 		}
 	}
 }
-2038221 = { name = "Boukhiam" culture = francarabe }
+2038221 = { name = "Boukhiam" culture = francarabe used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 29
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2038222 = { name = "Cheiki" culture = francarabe }
-2038223 = { name = "Sekkoumi" culture = francarabe used_for_random = no }
+2038223 = { name = "Sekkoumi" culture = francarabe used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 24
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2038224 = { name = "Ould" culture = francarabe used_for_random = no }
 2038225 = { name = "Zoghdani" culture = francarabe }
 2038226 = { name = "Zaghdoudi" culture = francarabe }
@@ -23222,7 +23482,20 @@ coat_of_arms = {
 2048087 = { name = "Vukotic" culture = montenegrin }
 2048088 = { name = "Vukovic" culture = montenegrin }
 2048089 = { name = "Zverotic" culture = montenegrin }
-2048090 = { name = "Zmajevic" culture = montenegrin }
+2048090 = { name = "Zmajevic" culture = montenegrin used_for_random=no
+	coat_of_arms = { 
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 72
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 2049000 = { name = "Agalliu" culture = albanian}
 2049001 = { name = "Ago" culture = albanian}
@@ -25328,8 +25601,34 @@ coat_of_arms = {
 2058200 = { name = "Denayer" culture = flemish}
 
 2059000 = { name = "De Geer" culture = dutch}
-2059001 = { name = "van Zuylen" culture = dutch}
-2059002 = { name = "Zahavi" culture = dutch used_for_random = no}
+2059001 = { name = "van Zuylen" culture = dutch used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 29
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2059002 = { name = "Zahavi" culture = dutch used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 68
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2059003 = { name = "van Voorst" culture = dutch used_for_random = no
 	coat_of_arms = {
 		religion = nondescript_christian
@@ -25344,14 +25643,53 @@ coat_of_arms = {
 		}
 	}
 }
-2059004 = { name = "van Hoek" culture = dutch}
+2059004 = { name = "van Hoek" culture = dutch used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 67
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2059005 = { name = "Schaft" culture = dutch}
 2059006 = { name = "Tellegen" culture = dutch}
 2059007 = { name = "de Jonge" culture = dutch}
 2059008 = { name = "van der Stok" culture = dutch}
-2059009 = { name = "van Dijk" culture = dutch}
+2059009 = { name = "van Dijk" culture = dutch used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 69
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2059010 = { name = "Snijders" culture = dutch}
-2059011 = { name = "Fellahi" culture = dutch}
+2059011 = { name = "Fellahi" culture = dutch used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 23
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2059012 = { name = "Wassing" culture = dutch}
 2059013 = { name = "van de Wouw" culture = dutch}
 2059014 = { name = "van Kessel" culture = dutch}
@@ -27918,9 +28256,35 @@ coat_of_arms = {
 20740193 = { name = "Demirchyan" culture = kypriot }
 20740194 = { name = "Soultanyan" culture = kypriot }
 20740195 = { name = "Karamanoukyan" culture = kypriot }
-20740196 = { name = "Gharios" culture = kypriot }
+20740196 = { name = "Gharios" culture = kypriot used_for_random=no
+	coat_of_arms = { 
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 75
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 20740197 = { name = "Zakos" culture = kypriot }
-20740198 = { name = "Estathiou" culture = kypriot }
+20740198 = { name = "Estathiou" culture = kypriot used_for_random=no
+	coat_of_arms = { 
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 74
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 20740199 = { name = "Qedahyan" culture = kypriot }
 20740200 = { name = "Boukris " culture = kypriot used_for_random = no 
 	coat_of_arms = {
@@ -27936,7 +28300,20 @@ coat_of_arms = {
 		}
 	}
 }
-20740201 = { name = "Günsel" culture = kypriot }
+20740201 = { name = "Günsel" culture = kypriot used_for_random=no
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 25
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 20740202 = { name = "Miltiadou" culture = kypriot }
 20740203 = { name = "Kallitheotis" culture = kypriot }
 20740204 = { name = "Anastassiou" culture = kypriot }
@@ -28390,7 +28767,20 @@ coat_of_arms = {
 2078097 = { name = "Radivojevic" culture = serbian }
 2078098 = { name = "Randjelovic" culture = serbian }
 2078099 = { name = "Božic" culture = serbian }
-2078100 = { name = "Saicic" culture = serbian }
+2078100 = { name = "Saicic" culture = serbian used_for_random=no
+	coat_of_arms = { 
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 71
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 2079000 = { name = "Aqkuçukov" culture = bashkir }
 2079001 = { name = "Abdullin" culture = bashkir }
@@ -31429,10 +31819,62 @@ coat_of_arms = {
 		}
 	}
 }
-2105001 = { name = "Sarkesian" culture = lebneni }
-2105002 = { name = "Rahbani" culture = lebneni }
-2105003 = { name = "Usseiran" culture = lebneni }
-2105004 = { name = "Talal" culture = lebneni }
+2105001 = { name = "Sarkesian" culture = lebneni used_for_random=no
+	coat_of_arms = { 
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 77
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2105002 = { name = "Rahbani" culture = lebneni used_for_random=no
+	coat_of_arms = { 
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 76
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2105003 = { name = "Usseiran" culture = lebneni used_for_random=no
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 28
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2105004 = { name = "Talal" culture = lebneni used_for_random=no
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 27
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2105005 = { name = "Sharafeddine" culture = lebneni }
 2105006 = { name = "Arslan" culture = lebneni 
 	coat_of_arms = { 
@@ -32472,7 +32914,20 @@ coat_of_arms = {
 2108237 = { name = "Al-Harbi" culture = bahrayni }
 2108238 = { name = "Al-Senaani" culture = bahrayni }
 2108239 = { name = "Arkaji" culture = bahrayni }
-2108240 = { name = "Jabbareh" culture = bahrayni }
+2108240 = { name = "Jabbareh" culture = bahrayni used_for_random=no
+	coat_of_arms = { 
+		religion = nondescript_muslim
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 26
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 2109000 = { name = "Al Mahamadi" culture = hijazi 
 	coat_of_arms = { 
@@ -34896,7 +35351,20 @@ coat_of_arms = {
 		}
 	}
 }
-2125237 = { name = "Kur" culture = mazovian }
+2125237 = { name = "Kur" culture = mazovian used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 30
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2125238 = { name = "Wysocki" culture = mazovian used_for_random = no 
 	coat_of_arms = {
 		religion = nondescript_christian
@@ -40702,7 +41170,7 @@ coat_of_arms = {
 		template = 0
 		layer = {
 			texture = 1
-			texture_internal = 79
+			texture_internal = 69
 			emblem = 0
 			color = 0
 			color = 0
@@ -41026,7 +41494,20 @@ coat_of_arms = {
 2220025 = { name = "Løvlund" culture = ostlending }
 2220026 = { name = "Tollefsen" culture = ostlending }
 2220027 = { name = "Valen" culture = ostlending }
-2220028 = { name = "Vreim" culture = ostlending }
+2220028 = { name = "Vreim" culture = ostlending used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 56
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2220029 = { name = "Hynne" culture = ostlending }
 2220030 = { name = "Solberg" culture = ostlending }
 2220031 = { name = "Rønning" culture = ostlending }
@@ -41049,7 +41530,20 @@ coat_of_arms = {
 2220048 = { name = "Hedde" culture = ostlending }
 2220049 = { name = "Rekustad" culture = ostlending }
 2220050 = { name = "Møller" culture = ostlending }
-2220051 = { name = "Nordraak" culture = ostlending }
+2220051 = { name = "Nordraak" culture = ostlending used_for_random=no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 51
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2220052 = { name = "Skaugum" culture = ostlending }
 2220053 = { name = "Prøysen" culture = ostlending 
 	coat_of_arms = {
@@ -41103,28 +41597,288 @@ coat_of_arms = {
 2335079 = { name = "Brendemo" culture = ostlending }
 2335080 = { name = "Bliksetrud" culture = ostlending }
 2335081 = { name = "Børsheim" culture = ostlending }
-2335082 = { name = "Yngling" culture = ostlending used_for_random = no }
-2335083 = { name = "Sverre" culture = ostlending used_for_random = no }
-2335084 = { name = "Folkung" culture = ostlending used_for_random = no }
-2335085 = { name = "af Munsö" culture = ostlending used_for_random = no }
-2335086 = { name = "Sverker" culture = ostlending used_for_random = no }
+2335082 = { name = "Yngling" culture = ostlending used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 34
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2335083 = { name = "Sverre" culture = ostlending used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 54
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2335084 = { name = "Folkung" culture = ostlending used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 43
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2335085 = { name = "af Munsö" culture = ostlending used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 40
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2335086 = { name = "Sverker" culture = ostlending used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 41
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2335087 = { name = "Stenkil" culture = ostlending used_for_random = no }
-2335088 = { name = "Erik" culture = ostlending used_for_random = no }
-2335089 = { name = "Mecklenburg" culture = ostlending used_for_random = no }
-2335090 = { name = "Vasa" culture = ostlending used_for_random = no }
-2335091 = { name = "Palatinate-Zweibr?cken" culture = ostlending used_for_random = no }
-2335092 = { name = "Hesse" culture = ostlending used_for_random = no }
-2335093 = { name = "Holstein-Gottorp" culture = ostlending used_for_random = no }
-2335094 = { name = "Bernadotte" culture = ostlending used_for_random = no }
-2335095 = { name = "Jelling" culture = ostlending used_for_random = no }
-2335096 = { name = "Estridsen" culture = ostlending used_for_random = no }
+2335088 = { name = "Erik" culture = ostlending used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 42
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2335089 = { name = "Mecklenburg" culture = ostlending used_for_random=no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 39
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2335090 = { name = "Vasa" culture = ostlending used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 45
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2335091 = { name = "Palatinate-Zweibrücken" culture = ostlending used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 46
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2335092 = { name = "Hesse" culture = ostlending used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 47
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2335093 = { name = "Holstein-Gottorp" culture = ostlending used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 48
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2335094 = { name = "Bernadotte" culture = ostlending used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 49
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2335095 = { name = "Jelling" culture = ostlending used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 33
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2335096 = { name = "Estridsen" culture = ostlending used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 35
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2335097 = { name = "Pomerania" culture = ostlending used_for_random = no }
-2335098 = { name = "Palatinate-Neumarkt" culture = ostlending used_for_random = no }
-2335099 = { name = "Oldenburg" culture = ostlending used_for_random = no }
-2335100 = { name = "Skakke" culture = ostlending used_for_random = no }
-2335101 = { name = "Godwinson" culture = ostlending used_for_random = no }
-2335102 = { name = "Bonde" culture = ostlending used_for_random = no }
-2335103 = { name = "Gamle" culture = ostlending used_for_random = no }
+2335098 = { name = "Palatinate-Neumarkt" culture = ostlending used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 37
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2335099 = { name = "Oldenburg" culture = ostlending used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 36
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2335100 = { name = "Skakke" culture = ostlending used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 53
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2335101 = { name = "Godwinson" culture = ostlending used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 55
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2335102 = { name = "Bonde" culture = ostlending used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 44
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2335103 = { name = "Gamle" culture = ostlending used_for_random=no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 63
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2335104 = { name = "Rosensverd" culture = ostlending 
 	coat_of_arms = {
 		religion = nondescript_christian
@@ -41393,7 +42147,20 @@ coat_of_arms = {
 2220215 = { name = "Lönnqvist" culture = scanian }
 2220216 = { name = "Fallenius" culture = scanian }
 2220217 = { name = "Hagströmer" culture = scanian }
-2220218 = { name = "Fritjofsson" culture = scanian }
+2220218 = { name = "Fritjofsson" culture = scanian used_for_random = no
+	coat_of_arms = { 
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 68
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 2220219 = { name = "Ulseth" culture = tronder }
 2220220 = { name = "Malmo" culture = tronder }
@@ -41608,7 +42375,20 @@ coat_of_arms = {
 2333040 = { name = "Torgrimsson" culture = jamta }
 
 2220344 = { name = "Wolgers" culture = svealander }
-2220345 = { name = "Vasa" culture = svealander }
+2220345 = { name = "Vasa" culture = svealander used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 52
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2220346 = { name = "Swedenborg" culture = svealander 
 	coat_of_arms = {
 		religion = nondescript_christian
@@ -41779,7 +42559,20 @@ coat_of_arms = {
 2220461 = { name = "Folin" culture = svealander }
 2220462 = { name = "Klingberg" culture = svealander }
 2220463 = { name = "Vikander" culture = svealander }
-2220464 = { name = "Vigfors" culture = svealander }
+2220464 = { name = "Vigfors" culture = svealander used_for_random=no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 50
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2220465 = { name = "Vasa-Bernadotte" culture = svealander }
 2220466 = { name = "af Uppsala" culture = svealander used_for_random = no}
 2220467 = { name = "af Lönneberg" culture = svealander 
@@ -42189,13 +42982,39 @@ coat_of_arms = {
 2223002 = { name = "Lomborg" culture = danish }
 2223003 = { name = "Utzon" culture = danish }
 2223004 = { name = "Tønnies" culture = danish }
-2223005 = { name = "Danneskiold" culture = danish }
+2223005 = { name = "Danneskiold" culture = danish used_for_random=no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 38
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2223006 = { name = "Olst" culture = danish }
 2223007 = { name = "Flyvbjerg" culture = danish }
 2223008 = { name = "Bang" culture = danish }
 2223009 = { name = "Kandi" culture = danish }
 2223010 = { name = "Kierkegaard" culture = danish }
-2223011 = { name = "Holberg" culture = danish }
+2223011 = { name = "Holberg" culture = danish used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 27
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2223012 = { name = "Jante" culture = danish }
 2223013 = { name = "Psilander" culture = danish }
 2223014 = { name = "Munk" culture = danish }
@@ -42304,7 +43123,20 @@ coat_of_arms = {
 2223119 = { name = "Vangsaae" culture = danish }
 2223120 = { name = "Vindahl" culture = danish }
 2223121 = { name = "Vullum" culture = danish }
-2223122 = { name = "Blom" culture = danish }
+2223122 = { name = "Blom" culture = danish used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 28
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 2224201 = { name = "Solem" culture = norwegian }
 2224202 = { name = "Birch" culture = norwegian }
@@ -46051,7 +46883,20 @@ coat_of_arms = {
 7000050 = { name = "Živkovich" culture = croatian }
 7000051 = { name = "Zorich" culture = croatian }
 7000052 = { name = "Borojevic" culture = croatian }
-7000130 = { name = "Kružic" culture = croatian }
+7000130 = { name = "Kružic" culture = croatian used_for_random=no
+	coat_of_arms = { 
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 73
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 7001000 = { name = "Rosa" culture = azorean }
 7001001 = { name = "Silveira" culture = azorean }
