@@ -493,7 +493,7 @@ feudal_governments = {
 			tribal_government
 			nomadic_tribal_government
 		}
-		frame_suffix = "_merchantrepublic"
+		frame_suffix = "_republic"
 		title_prefix = "confederation_"
 		potential = {
 			higher_tier_than = BARON
@@ -948,7 +948,7 @@ feudal_governments = {
 			tribal_government
 			nomadic_tribal_government
 		}
-		frame_suffix = "_chineseimperial"
+		frame_suffix = "_swaraj"
 		potential = {
 			religion = satyagraha
 			is_patrician = no
