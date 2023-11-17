@@ -62,7 +62,8 @@ narrative_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		trait = travelling
+		trait = on_yatra
+		religion = sikh
 	}
 	
 	option = {
@@ -107,7 +108,8 @@ narrative_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		trait = travelling
+		trait = on_yatra
+		religion = sikh
 	}
 	
 	option = {
@@ -136,7 +138,6 @@ narrative_event = {
 	}
 }
 	
-# Wuquf at Mount Ararat
 narrative_event = {
 	id = sikh.5
 	title = EVTTITLE_SIKH5
@@ -149,7 +150,8 @@ narrative_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		trait = travelling
+		trait = on_yatra
+		religion = sikh
 	}
 	
 	option = {
@@ -173,7 +175,8 @@ narrative_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		trait = travelling
+		trait = on_yatra
+		religion = sikh
 	}
 	
 	option = {
@@ -181,12 +184,7 @@ narrative_event = {
 		scaled_wealth = -0.1
 		prestige = 25
 		hidden_tooltip = {
-			if = {
-				limit = {
-					trait = travelling
-				}
-				narrative_event = { id = sikh.7 days = 18 }
-			}
+			narrative_event = { id = sikh.7 days = 3 }
 		}		
 	}
 	option = {
@@ -194,12 +192,7 @@ narrative_event = {
 		scaled_wealth = -0.05
 		piety = 15
 		hidden_tooltip = {
-			if = {
-				limit = {
-					trait = travelling
-				}
-				narrative_event = { id = sikh.7 days = 18 }
-			}
+			narrative_event = { id = sikh.7 days = 3 }
 		}		
 	}	
 }
@@ -220,9 +213,10 @@ narrative_event = {
 		name = "EVTOPTA_SIKH7"
 		if = {
 			limit = {
-				trait = travelling
+				trait = on_yatra
 			}
-			remove_trait = travelling
+			remove_trait = on_yatra
+			add_trait = yatri
 			piety=250
 		}
 	}

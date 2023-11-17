@@ -520,7 +520,8 @@ decisions = {
 		potential = {
 			is_playable = yes
 			religion = sikh
-			NOT = { trait = travelling }
+			NOT = { trait = on_yatra }
+			NOT = { trait = yatri }
 			NOT = {	has_character_flag = visiting_golden_temple }
 			NOT = {
 				has_alternate_start_parameter = { key = religion_names value = random }
@@ -559,7 +560,7 @@ decisions = {
 			scaled_wealth = -0.2
 			hidden_tooltip = {
 				narrative_event = { id = sikh.2 days = 1 }
-				add_trait = travelling
+				add_trait = on_yatra
 			}
 			set_character_flag = visiting_golden_temple
 			set_character_flag = recent_minor_decision

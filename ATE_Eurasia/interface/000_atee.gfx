@@ -736,6 +736,13 @@ spriteTypes = {
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
+	spriteType = {
+		name = "GFX_trait_amritdhari"
+		texturefile = "gfx/traits/amritdhari.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
 	#Sympathy Traits
 	
 	spriteType = {

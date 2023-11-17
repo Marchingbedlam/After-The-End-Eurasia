@@ -2006,6 +2006,7 @@ yatri = {
 		OR = {
 			is_hinduism = yes
 			religion = jain
+			religion = sikh
 		}
 	}
 	
@@ -2020,6 +2021,7 @@ on_yatra = {
 		OR = {
 			is_hinduism = yes
 			religion = jain
+			religion = sikh
 		}
 		NOT = { trait = pilgrim }
 	}
