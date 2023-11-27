@@ -51,16 +51,25 @@ HAJJ98OPTA;Steady my heart, a lost yearning unanswered.;;;;;;;;;;;;;x
 ### ZIYARA EVENT ###
 EVTTITLE_ZIYARA;A Trip to the Shrines;;;;;;;;;;;;;x
 EVTDESC_hajj200;The Islamic World is a wide and diverse place. Having a rich history of blessed shrines, mosque and other features that can be just as important as the conducting the Hajj to [c_mecca.GetName]. Whether it be for shrines of the Walis or the dedications to the Prophet Muhammad, his family and companions, as a pious Muslim you may visit these blessed places anytime...;;;;;;;;;;;;;x
+EVTDESC_hajj202;The Islamic World is a wide and diverse place. Having a rich history of blessed shrines, mosque and other features that can be just as important as the conducting the Hajj to [c_mecca.GetName]. Whether it be for splendorous Madrasas funded by the Caliphs of Old or the dedications to the Prophet Muhammad, his family and companions, as a pious Muslim you may visit these blessed places anytime...;;;;;;;;;;;;;x
+EVTDESC_hajj203;The Islamic World is a wide and diverse place. Having a rich history of blessed shrines, mosque and other features that can be just as important as the conducting the Hajj to [c_mecca.GetName]. Whether it be the dedications to the Prophet Muhammad, his family and companions, or the shrines of the rightful succession of Imams as a pious Muslim you may visit these blessed places anytime...;;;;;;;;;;;;;x
 EVTOPTA_ZIYARA_ALAQSA;To the City of Yusuf and Musa, I go!;;;;;;;;;;;;;x
 EVTOPTB_ZIYARA_ALBAQI;To the Blessed City of the Prophet, I go!;;;;;;;;;;;;;x
 EVTOPTC_ZIYARA_UMAYYAD_MOSQUE;To the City of the Martyrs, I go!;;;;;;;;;;;;;x
-EVTOPTD_ZIYARA_ROZ_BAL;To a proud Ghazi resting place, I go!;;;;;;;;;;;;;x
+EVTOPTD_ZIYARA_ROZ_BAL;To shrine of the valiant Roz Bal, I go!;;;;;;;;;;;;;x
+EVTOPTC_ZIYARA_SUNNI_GENERAL;To the Splendors of the Caliphs, I go!;;;;;;;;;;;;;x
+EVTOPTC_ZIYARA_SHIA_GENERAL;To shall pay respect the Imams, I go!;;;;;;;;;;;;;x
 
+EVTDESC_hajjtoalazhar;Whilst Mecca and Medina hold great religious significance to all pious Muslims, there are plenty of other sites to visit. Al-Azhar is particularly for its location in the city of al-Qahirah, the beating heart of academia in North Africa.;;;;;;;;;;;;;x
 EVTDESC_hajjtoalaqsa;Whilst Mecca and Medina hold great religious significance to all pious Muslims, there are plenty of other sites to visit. Al-Aqsa is particularly for its location in the city of al-Quds, the Holy city of Yusuf and Musa.;;;;;;;;;;;;;x
 EVTDESC_hajjtoalbaqi;Whilst Mecca may be the more blessed city, there are plenty of other sites to visit. Such as the City of the Prophet, Al Madinah and the resting place of his companions and family, Al-Baqi'.;;;;;;;;;;;;;x
 EVTDESC_hajjtoumayyadmosque;Whilst Mecca and Medina hold the greatest religious significance to all Muslims, there are plenty of other sites to visit. For the faithful of Ahlus-Sunnah, the Great Mosque of Damascus built by the Umayyad Caliphs is one such site.;;;;;;;;;;;;;x
 EVTDESC_hajjtorozabal;Whilst Mecca and Medina hold the greatest religious significance to all Muslims, there are plenty of other sites to visit. For the faithful who reside in the Subcontinent, the sublime Tomb of Rozabal is one such site.;;;;;;;;;;;;;x
 EVTOPT_hajjtocity;All are equal in front of God!;;;;;;;;;;;;;x
+
+EVTTITLE_HAJJALAZHAR;A Blessed Trip to al-Qahirah;;;;;;;;;;;;;x
+EVTDESC_hajj101;The city of al-Qahirah is the location of a great Academic Center of the Islamic World. The grand university of al-Azhar dedicated by the Fatimid General Jawhar al-Siqilli for his liege Caliph al-Mu'izz li-Din Allah. al-Qahirah is known as the city of a thousand minarets, and having been a part of the proud history of Islam as it expanded in North Africa following the clash against the Imperial Eagle of Rum. One awaits to be illuminated in these grand halls like the great scholars that preceded the arrival of the Prophet in this eternal lands blessed by its life-giving river.;;;;;;;;;;;;;x
+EVTOPT_hajj101;To al-Qahirah we depart!;;;;;;;;;;;;;x
 
 EVTTITLE_HAJJALAQSA;A Blessed Trip to al-Quds;;;;;;;;;;;;;x
 EVTDESC_hajj4;The city of al-Quds is the location of a great holy site to the [Root.Religion.GetName] faith. The silver-domed mosque of al-Aqsa was built by the noble caliph Umar ibn al-Khattab, whose successors have tirelessly expanded the magnificent complex that you behold. al-Quds in general is regarded often as the third most blessed city of all of Islam, and home to the Haram al-Sharif a raised platform that is revered by all people of the Book. The blessed lands this mosque was built upon remained according to legends miraculously unscathed by the Event, and to this millions of devotees continue to pray in its ancient halls.;;;;;;;;;;;;;x
@@ -82,6 +91,18 @@ EVTDESC_hajjhadith;As you stop for camp one evening, you notice that an old man 
 EVTOPT_hajjhadithyes;Listen to the old man.;;;;;;;;;;;;;x
 EVTOPT_hajjhadithno;It is just an old man...;;;;;;;;;;;;;x
 TOOLTIP_LISTEN_TO_HADITHHAJJ;You listen carefully to the old man's hadith.\n;;;;;;;;;;;;;x
+
+EVTDESC_hajj103;You have arrived in the city of al-Qahirah, home of the al-Azhar Complex. But spending time in the city has been quite eye-opening. Here there are men of all sorts of different creeds. You decide to browse through a local library to prepare yourself to be immersed the grand literary tradition of the Islamic World.;;;;;;;;;;;;;x
+EVTOPT_hajjstudyscripture;I shall study the catalog of scripture...;;;;;;;;;;;;;x
+EVTOPT_hajjreadstories;I shall read the catalog of stories...;;;;;;;;;;;;;x
+EVTDESC_hajj104;You have arrived in the city of al-Qahirah in all of its wonder. The marvelous hustle and bustle of the city is almost overwhelming, as men and women of every creed and color walk the streets around you. A particularly lively debate was being held in a local tavern about the faith. Your curiousity in this debate is peaked...;;;;;;;;;;;;;x
+EVTOPT_hajjdebatesalazhar;Let us debate in good faith!;;;;;;;;;;;;;x
+EVTOPT_hajjnodebatesalazhar;I don't got time for rambling...;;;;;;;;;;;;;x
+EVTTITLE_HAJJALAZHARARRIVED;The Grand University;;;;;;;;;;;;x
+EVTDESC_hajjalazharmosque;You have spent quite some time in the city of a thousand minarets, making small talk with local scholars, and the time has come for you to fulfill the purpose of this pilgrimage. Dismounting a carriage, the hustle and bustle of vibrant city seemed to give way to the tranquility of mosque splendid floral patterns and towering minarets above you. An old man in black robes greets you, his clothing the hallmark of the grand mufti of al-Qahirah. He bows respectfully. "Come," ushering you to join him in the midday prayer. As you step through its hallowed doors, you make way to the common praying area. All men are equal before God.";;;;;;;;;;;;;x
+EVTOPT_hajjalazharmosque1;I bow my head in prayer.;;;;;;;;;;;;;x
+EVTDESC_hajjalazharhome;Walking back through the familiar gates of my castle, I can't help but feel fulfilled. I have travelled across the land, and returned a changed man. Before Allah, all men are indeed equal.;;;;;;;;;;;;;x
+EVTOPT_hajjalazharhome;There is no god but Allah, and Mohammad is his messenger!;;;;;;;;;;;;;x
 
 EVTDESC_hajj26;You have arrived in the city of al-Quds, home of the Haram esh-Sharif. But spending time in the city has been quite eye-opening. Here there are men of all sorts of different creeds. In your inn, the theological talkings of a Jewish rabbi and Christian theologian catches your ear.;;;;;;;;;;;;;x
 EVTOPT_hajjtolerantalaqsa;The people of the book share the same God as us, no? Let us discuss...;;;;;;;;;;;;;x

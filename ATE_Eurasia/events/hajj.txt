@@ -1268,6 +1268,12 @@ narrative_event = {
 		}
 	}
 	
+	immediate = {
+		clr_character_flag = on_home_from_hajj
+		clr_character_flag = hajj_company
+		clr_character_flag = do_not_disturb
+	}
+	
 	option = {
 		name = "HAJJ98OPTA"
 		if = {
