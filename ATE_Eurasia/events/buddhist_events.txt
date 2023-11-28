@@ -407,7 +407,7 @@ character_event = {
 
 	option = { #Work hard as possible
 		name = EVTOPTA_budevents_8
-		hidden_toolip = {
+		hidden_tooltip = {
 			random_list = {
 				10 = {
 					character_event = { id = budevents.9 days = 1 }
@@ -426,7 +426,7 @@ character_event = {
 	}
 	option = { #Do only what is necessary
 		name = EVTOPTB_budevents_8
-		hidden_toolip = {
+		hidden_tooltip = {
 			random_list = {
 				5 = {
 					character_event = { id = budevents.9 days = 1 }

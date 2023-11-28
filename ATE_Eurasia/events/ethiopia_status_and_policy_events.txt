@@ -1760,7 +1760,7 @@ character_event = {
 			factor = 0
 			FROM = {
 				offmap_ruler = {
-					culture = jurchen
+					culture = tigre
 				}
 			}
 		}
@@ -1998,7 +1998,7 @@ character_event = {
 					random_traits = yes
 					female = no
 					religion = THIS
-					culture = jurchen
+					culture = tigre
 					dynasty = THIS
 				}
 				new_character = {
@@ -2019,7 +2019,7 @@ character_event = {
 							random_traits = yes
 							female = yes
 							religion = miaphysite # A bit strange, but necessary
-							culture = jurchen
+							culture = tigre
 							dynasty = actually_culture
 							trait = brilliant_strategist
 							martial = 10
@@ -2031,7 +2031,7 @@ character_event = {
 							random_traits = yes
 							female = no
 							religion = miaphysite # A bit strange, but necessary
-							culture = jurchen
+							culture = tigre
 							dynasty = actually_culture
 							trait = brilliant_strategist
 							martial = 10
