@@ -9557,15 +9557,8 @@ increase_visibility_minor_effect = {
 					controls_religion = no
 					OR = {
 						religion = catholic
-						religion = ursuline
-						religion = evangelical
-						religion = mormon
 						religion = americanist
-						religion = libertarian
-						religion = anabaptist
 						religion = apostolic
-						religion = qabantajik
-						religion = postadventist
 					}
 				}
 				add_trait = excommunicated
@@ -11970,15 +11963,9 @@ spawn_fantastic_diplomat_effect = {
 		}
 		if = {
 			limit = {
-				OR = {
-					AND = {
-						has_global_flag = christian_crusades_unlocked
-						religion = catholic
-					}
-					AND = {
-						has_global_flag = ursuline_crusades_unlocked
-						religion = ursuline
-					}
+				AND = {
+					has_global_flag = christian_crusades_unlocked
+					religion = catholic
 				}
 			}
 			random = { 

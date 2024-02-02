@@ -3475,7 +3475,7 @@ wonder_colosseum = {
 		OR = {
 			religion_group = christian
 			religion_group = scholastic
-			religion_group = old_world_cultist
+			religion_group = old_world_cultist_group
 			religion_group = muslim
 			religion_group = pagan_group
 			religion_group = indian_group
@@ -3736,12 +3736,10 @@ wonder_motherland_calls = {
 	}
 	active = {
 		ROOT = {
-			trigger_if = {
 			OR = {
 				culture_group = russian
 				culture_group = ruthenian
 				religion = proletcult
-				}
 			}
 		}
 	}
@@ -3855,13 +3853,11 @@ wonder_mausoleum_of_genghis_khan = {
 	}
 	active = {
 		ROOT = {
-			trigger_if = {
 			OR = {
 				culture_group = mongolian_group
 				culture_group = han
 				religion = khanist
 				religion = gelugpa
-				}
 			}
 		}
 	}
@@ -4101,7 +4097,7 @@ wonder_potala_palace = {
 		ROOT = {
 			OR = {
 				religion_group = buddhist_group
-				culture_group = tibetan
+				culture_group = tibetic
 			}
 		}
 	}
@@ -4227,14 +4223,14 @@ wonder_konark_sun_temple = {
 	model = cote_khajuraho
 	potential = {
 		OR = {
-			is_hindu = yes
+			is_hinduism = yes
 			religion = saura
 		}
 	}
 	active = {
 		ROOT = {
 			OR = {
-				is_hindu = yes
+				is_hinduism = yes
 				religion = saura
 			}
 		}

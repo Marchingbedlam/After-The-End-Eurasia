@@ -149,7 +149,6 @@ castle = {
 	}
 	ca_tercio_gunners_2 = {
 		desc = ca_tercio_gunners_1_desc
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 TECH_RECRUITMENT = 6 TECH_SIEGE_EQUIPMENT = 6 }
 		potential = {
 			OR = {
 				culture_group = iberian 
@@ -164,7 +163,7 @@ castle = {
 			}
 		} 
 		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 1
+			TECH_CASTLE_CONSTRUCTION = 1 TECH_RECRUITMENT = 6 TECH_SIEGE_EQUIPMENT = 6
 			ROOT = {
 				culture_group = iberian 
 				
@@ -183,7 +182,6 @@ castle = {
 	}
 	ca_tercio_gunners_3 = {
 		desc = ca_tercio_gunners_1_desc
-		trigger = { TECH_CASTLE_CONSTRUCTION = 5 TECH_RECRUITMENT = 7 TECH_SIEGE_EQUIPMENT = 7 }
 		potential = {
 			OR = {
 				culture_group = iberian 
@@ -199,7 +197,7 @@ castle = {
 			}
 		} 
 		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 2
+			TECH_CASTLE_CONSTRUCTION = 5 TECH_RECRUITMENT = 7 TECH_SIEGE_EQUIPMENT = 7
 			ROOT = {
 				culture_group = iberian 
 				
@@ -218,7 +216,6 @@ castle = {
 	}
 	ca_tercio_gunners_4 = {
 		desc = ca_tercio_gunners_1_desc
-		trigger = { TECH_CASTLE_CONSTRUCTION = 7 TECH_RECRUITMENT = 8 TECH_SIEGE_EQUIPMENT = 8 }
 		potential = {
 			OR = {
 				culture_group = iberian 
@@ -235,7 +232,7 @@ castle = {
 			}
 		} 
 		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
+			TECH_CASTLE_CONSTRUCTION = 7 TECH_RECRUITMENT = 8 TECH_SIEGE_EQUIPMENT = 8
 			ROOT = {
 				culture_group = iberian 
 				
