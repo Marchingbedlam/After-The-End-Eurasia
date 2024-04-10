@@ -1,143 +1,168 @@
 ### GERMAN
-#When adding new custom loc keys, add them to the appropriate category (or add a new one) and describe them. Name the strings "string_DE_X" where x is its content.
+# When adding new custom loc keys, add them to the appropriate category (or add a new one) and describe them. Name the strings "string_DE_X" where x is its content.
 # To not display anything, you can use 'localisation_key = ""'
 
 ## German gender differentiation with non capital letters
-#Getderdie
-#Getdendie
-#Geteineine
-#Getdesder
-#Getunseresunserer
-#Getunserunsere
-#Getunsermunserer
-#Geteineseiner
-#Geteineneine
-#Geteinemeiner
-#Getkeinkeine
-#Getirgendeinirgendeine
-#Getkeinemkeiner
-#Getdieserdiese
-#Getdiesesdieser
-#Getdiesemdieser
-#Getihmihr
-#Getdemder
-#Getmeinemmeiner
-#Geteuereure
-#Geteuremeurer
-#Getihnsie
-#Geteureneure
+# Getderdie
+# Getdendie
+# Geteineine
+# Getdesder
+# Getunseresunserer
+# Getunserenunsere
+# Getunserunsere
+# Getunsermunserer
+# Geteineseiner
+# Geteineneine
+# Geteinemeiner
+# Getkeinkeine
+# Getirgendeinirgendeine
+# Getkeinemkeiner
+# Getdieserdiese
+# Getdiesesdieser
+# Getdiesemdieser
+# Getihmihr
+# Getihrenihre
+# Getihresihrer
+# Getdemder
+# Getmeinemmeiner
+# Geteuereure
+# Geteuremeurer
+# Geteureseurer
+# Getihnsie
+# Geteureneure
 
 ## German gender differentiation with capital letters
-#GetDerDie
-#GetDenDie
-#GetEinEine
-#GetDesDer
-#GetUnseresUnserer
-#GetUnserUnsere
-#GetUnsermUnserer
-#GetEinesEiner
-#GetEinemEiner
-#GetEinenEine
-#GetKeinKeine
-#GetIrgendeinIrgendeine
-#GetKeinemKeiner
-#GetDieserDiese
-#GetDiesesDieser
-#GetDiesemDieser
-#GetIhmIhr
-#GetDemDer
-#GetMeinemMeiner
-#GetEuerEure
-#GetEuremEurer
-#GetIhnSie
-#GetEurenEure
+# GetDerDie
+# GetDenDie
+# GetEinEine
+# GetDesDer
+# GetUnseresUnserer
+# GetUnsereNUnsere
+# GetUnserUnsere
+# GetUnsermUnserer
+# GetEinesEiner
+# GetEinemEiner
+# GetEinenEine
+# GetKeinKeine
+# GetIrgendeinIrgendeine
+# GetKeinemKeiner
+# GetDieserDiese
+# GetDiesesDieser
+# GetDiesemDieser
+# GetIhmIhr
+# GetIhrenIhre
+# GetDemDer
+# GetMeinemMeiner
+# GetEuerEure
+# GetEuremEurer
+# GetEuresEurer
+# GetIhnSie
+# GetEurenEure
 
-##Opposite german gender differentiation 
-#GeteineineOpp
-#GetEinEineOpp
-#GeteinemeinerOpp
-#GeteineineOpp
-#GetEinEineOpp
-#GeteinemeinerOpp
-#GetEinemEinerOpp
-#GeteineseinerOpp
-#GetEinesEinerOpp
-#GetihmihrOpp
-#GetIhmIhrOpp
-#GetdendieOpp
-#GetDenDieOpp
+## Opposite german gender differentiation
+# GeteineineOpp
+# GetEinEineOpp
+# GeteinemeinerOpp
+# GeteineineOpp
+# GetEinEineOpp
+# GeteinemeinerOpp
+# GetEinemEinerOpp
+# GeteineseinerOpp
+# GetEinesEinerOpp
+# GetihmihrOpp
+# GetIhmIhrOpp
+# GetdendieOpp
+# GetDenDieOpp
 
 ## German endings
-#GetsMale
-#GeteFemale
-#GetnMale
-#GetrMale
-#GetinFemale
-#GetemMale
-#GeterFemale
-#GetaFemale
+# GetsMale
+# GeteFemale
+# GetnMale
+# GetrMale
+# GetinFemale
+# GetemMale
+# GeterFemale
+# GetaFemale
 
 ## Opposite endings
-#GetsMaleOpp
-#GeteFemaleOpp
-#GetnMaleOpp
-#GetrMaleOpp
-#GetinFemaleOpp
-#GetemMaleOpp
-#GeterFemaleOpp
-#GetaFemaleOPP
+# GetsMaleOpp
+# GeteFemaleOpp
+# GetnMaleOpp
+# GetrMaleOpp
+# GetinFemaleOpp
+# GetemMaleOpp
+# GeterFemaleOpp
+# GetaFemaleOPP
 
-#Rare special cases
-#GetArztÄrztin
-#GetKannibaleKannibalin
-#GetProphetenProphetin
-#GetMissgestalteterMissgestalt
-#GetFoltererFolterin
-#GetFeiglingMemme
-#GetNarrNärrin
-#GetKrüppelBehinderte
-#GetEselZiege
-#GetStrohmannVogelscheuche
-#GetDschungelbewohnerDschungelnatter
-#GetBücherwurmLeseratte
-#GetBengelGöre
-#GetBlutsaugerZecke
-#GetWurmMade
-#GetWüstenkäferWüstenratte
-#GetFieslingVettel
-#GetEselZuchtstute
+## Rare special cases
+# GetArztÄrztin
+# GetKannibaleKannibalin
+# GetProphetenProphetin
+# GetMissgestalteterMissgestalt
+# GetFoltererFolterin
+# GetFeiglingMemme
+# GetNarrNärrin
+# GetKrüppelBehinderte
+# GetEselZiege
+# GetStrohmannVogelscheuche
+# GetDschungelbewohnerDschungelnatter
+# GetBücherwurmLeseratte
+# GetBengelGöre
+# GetBlutsaugerZecke
+# GetWurmMade
+# GetWüstenkäferWüstenratte
+# GetFieslingVettel
+# GetEselZuchtstute
+# GetStrohkopfHohlbirne
+# GetGesichtskrapfenHackfresse
+# GetÜberfliegerKoriphäe
+# GetHohlkopfPflaume
+# Getbewohnernatter
+# GetZimmererZimmerin
+# GetBluthundBluthündin
+# GetErobererEroberin
+# GetBoteBotin
+# GetBardeBardin
+# GetBeichtvaterBeichtmutter
+# GetTurmMauer
+# GetSklaveSklavin
+# GetGemahlenGemahlin
+# GetEberSau
+# GetPrinzenPrinzessin
+# Getvomvonder
+# GetMannesFrau
+# GetSauEber
+# GetSchwächlingKrüke
+# GetLeichnamLeiche
 
-##English custom localisation commands with german gender differentiation
-#GetHouseOfWorshipeineine
-#GetHouseOfWorshipEinEine
-#GetHouseOfWorshipeineneine
-#GetHouseOfWorshipeinemeiner
-#GetHouseOfWorshipzumzur
-#GetHouseOfWorshipiminder
-#GetHouseOfWorshipdesder
-#GetMOCodedemder
-#GetMOCodedieden
-#GetHoldingdiedasden
-#GetHoldingdieserdieses
-#GetDWSettlementdiedas
-#GetDWSettlementjedejedes
+## English custom localisation commands with German gender differentiation
+# GetHouseOfWorshipeineine
+# GetHouseOfWorshipEinEine
+# GetHouseOfWorshipeineneine
+# GetHouseOfWorshipeinemeiner
+# GetHouseOfWorshipzumzur
+# GetHouseOfWorshipiminder
+# GetHouseOfWorshipdesder
+# GetMOCodedemder
+# GetMOCodedieden
+# GetHoldingdiedasden
+# GetHoldingdieserdieses
+# GetDWSettlementdiedas
+# GetDWSettlementjedejedes
+# GetHuntingQuarryAkk
 
 # ********************************************************************************
 ### German gender differentiation
-##Example: "Der König", "Die Königin", "...der König...", "...die Königin..."
+## Example: "Der König", "Die Königin", "...der König...", "...die Königin..."
 defined_text = {
     name = Getderdie
     text = {
         localisation_key = string_DE_der
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_die
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_derdie
@@ -148,15 +173,11 @@ defined_text = {
     name = GetDerDie
     text = {
         localisation_key = string_DE_Der
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Die
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_DerDie
@@ -167,15 +188,11 @@ defined_text = {
     name = Getderdas
     text = {
         localisation_key = string_DE_der
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_das
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_derdas
@@ -186,15 +203,11 @@ defined_text = {
     name = GetDerDas
     text = {
         localisation_key = string_DE_Der
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Das
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_DerDas
@@ -206,15 +219,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_den
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_die
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_dendie
@@ -226,36 +235,27 @@ defined_text = {
 
    text = {
         localisation_key = string_DE_Den
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Die
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_DenDie
 	}
 }
 
-	
 defined_text = {
     name = Geteineine
 
     text = {
         localisation_key = string_DE_ein
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_eine
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_eineine
@@ -267,15 +267,11 @@ defined_text = {
 
    text = {
         localisation_key = string_DE_Ein
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Eine
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_EinEine
@@ -287,15 +283,11 @@ defined_text = {
 
    text = {
         localisation_key = string_DE_Des
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Der
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_DesDer
@@ -307,15 +299,11 @@ defined_text = {
 
    text = {
         localisation_key = string_DE_des
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_der
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_desder
@@ -327,18 +315,46 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_unseres
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_unserer
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_unseresunserer
+	}
+}
+
+defined_text = {
+    name = Getunserenunsere
+
+    text = {
+        localisation_key = string_DE_unseren
+        trigger = { is_female = no }
+    }
+	text = {
+        localisation_key = string_DE_unsere
+        trigger = { is_female = yes }
+    }
+	fallback_text = {
+		localisation_key = string_DE_unserenunsere
+	}
+}
+
+defined_text = {
+    name = GetUnserenUnsere
+
+    text = {
+        localisation_key = string_DE_Unseren
+        trigger = { is_female = no }
+    }
+	text = {
+        localisation_key = string_DE_Unsere
+        trigger = { is_female = yes }
+    }
+	fallback_text = {
+		localisation_key = string_DE_UnserenUnsere
 	}
 }
 
@@ -347,15 +363,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Unseres
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Unserer
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_UnseresUnserer
@@ -367,15 +379,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_unser
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_unsere
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_unserunsere
@@ -387,15 +395,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Unser
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Unsere
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_UnserUnsere
@@ -407,15 +411,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_unserem
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_unserer
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_unseremunserer
@@ -427,15 +427,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Unserem
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Unserer
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_UnseremUnserer
@@ -447,15 +443,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_eines
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_einer
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_eineseiner
@@ -467,15 +459,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Eines
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Einer
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_EinesEiner
@@ -487,15 +475,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_einen
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_eine
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_eineneine
@@ -507,15 +491,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Einen
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Eine
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_EinenEinen
@@ -527,15 +507,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_einem
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_einer
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_einemeiner
@@ -547,15 +523,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Einem
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Einer
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_EinemEiner
@@ -567,15 +539,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_kein
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_keine
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_keinkeine
@@ -587,15 +555,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Kein
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Keine
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_KeinKeine
@@ -607,15 +571,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_irgendein
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_irgendeine
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_irgendeinirgendeine
@@ -627,15 +587,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Irgendein
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Irgendeine
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_IrgendeinIrgendeine
@@ -647,15 +603,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_keinem
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_keiner
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_keinemkeiner
@@ -667,15 +619,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Keinem
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Keiner
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_KeinemKeiner
@@ -687,15 +635,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_dieser
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_diese
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_dieserdiese
@@ -707,15 +651,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Dieser
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Diese
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_DieserDiese
@@ -727,15 +667,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_dieses
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_dieser
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_diesesdieser
@@ -747,15 +683,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Dieses
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Dieser
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_DiesesDieser
@@ -767,15 +699,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_diesem
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_dieser
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_diesemdieser
@@ -787,15 +715,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Diesem
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Dieser
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_DiesemDieser
@@ -807,18 +731,30 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_ihm
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_ihr
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_ihmihr
+	}
+}
+
+defined_text = {
+    name = Getihrenihre
+
+    text = {
+        localisation_key = string_DE_ihren
+        trigger = { is_female = no }
+    }
+	text = {
+        localisation_key = string_DE_ihre
+        trigger = { is_female = yes }
+    }
+	fallback_text = {
+		localisation_key = string_DE_ihrenihre
 	}
 }
 
@@ -827,18 +763,30 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Ihm
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Ihr
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_IhmIhr
+	}
+}
+
+defined_text = {
+    name = GetIhrenIhre
+
+    text = {
+        localisation_key = string_DE_Ihren
+        trigger = { is_female = no }
+    }
+	text = {
+        localisation_key = string_DE_Ihre
+        trigger = { is_female = yes }
+    }
+	fallback_text = {
+		localisation_key = string_DE_IhrenIhre
 	}
 }
 
@@ -847,15 +795,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_dem
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_der
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_demder
@@ -867,15 +811,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Dem
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Der
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_DemDer
@@ -887,15 +827,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_meinem
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_meiner
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_meinemmeiner
@@ -907,15 +843,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Meinem
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Meiner
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_MeinemMeiner
@@ -927,15 +859,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_euer
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_eure
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_euereure
@@ -947,15 +875,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Euer
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Eure
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_EuerEure
@@ -967,15 +891,27 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_eurem
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_eurer
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
+    }
+	fallback_text = {
+		localisation_key = string_DE_euremeurer
+	}
+}
+
+defined_text = {
+    name = Geteureseurer
+
+    text = {
+        localisation_key = string_DE_eures
+        trigger = { is_female = no }
+    }
+	text = {
+        localisation_key = string_DE_eurer
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_euremeurer
@@ -987,15 +923,27 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Eurem
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Eurer
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
+    }
+	fallback_text = {
+		localisation_key = string_DE_EuremEurer
+	}
+}
+
+defined_text = {
+    name = GetEuresEurer
+
+    text = {
+        localisation_key = string_DE_Eures
+        trigger = { is_female = no }
+    }
+	text = {
+        localisation_key = string_DE_Eurer
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_EuremEurer
@@ -1007,15 +955,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_ihn
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_sie
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_ihnsie
@@ -1027,15 +971,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Ihn
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Sie
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_IhnSie
@@ -1047,15 +987,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_euren
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_eure
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_eureneure
@@ -1067,15 +1003,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Euren
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Eure
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_EurenEure
@@ -1087,15 +1019,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_zum
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_zur
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_zumzur
@@ -1107,18 +1035,30 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_ihres
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_ihrer
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_ihresihrer
+	}
+}
+
+defined_text = {
+    name = GetIhresIhrer
+
+    text = {
+        localisation_key = string_DE_Ihres
+        trigger = { is_female = no }
+    }
+	text = {
+        localisation_key = string_DE_Ihrer
+        trigger = { is_female = yes }
+    }
+	fallback_text = {
+		localisation_key = string_DE_IhresIhrer
 	}
 }
 
@@ -1127,15 +1067,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_ihrem
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_ihrer
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_ihremihrer
@@ -1147,15 +1083,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_dessen
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_deren
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_dessenderen
@@ -1168,15 +1100,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_eine
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_ein
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_eineine
@@ -1188,15 +1116,11 @@ defined_text = {
 
    text = {
         localisation_key = string_DE_Eine
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Ein
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_EinEine
@@ -1208,9 +1132,7 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_einer
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_einem
@@ -1228,15 +1150,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Einer
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Einem
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_EinemEiner
@@ -1248,15 +1166,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_einer
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_eines
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_eineseiner
@@ -1268,15 +1182,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Einer
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Eines
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_EinesEiner
@@ -1288,15 +1198,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Eures
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Eurer
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_EuresEurer
@@ -1308,15 +1214,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_ihr
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_ihm
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_ihmihr
@@ -1328,15 +1230,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Ihr
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Ihm
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_IhmIhr
@@ -1348,15 +1246,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_die
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_den
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_dendie
@@ -1368,15 +1262,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Die
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Den
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_DenDie
@@ -1388,15 +1278,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Eure
-        trigger = {
-			is_female = no
-        }
+        trigger = {	is_female = no }
     }
 	text = {
         localisation_key = string_DE_Euren
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_EureEuren
@@ -1408,15 +1294,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_eine
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_einen
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_eineneine
@@ -1428,15 +1310,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_die
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_der
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_derdie
@@ -1450,16 +1328,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_endingS
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
-	
 	text = {
         localisation_key = ""
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_FB_endingS
@@ -1471,16 +1344,11 @@ defined_text = {
 
     text = {
         localisation_key = ""
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
-	
 	text = {
         localisation_key = string_DE_endingE
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_FB_endingE
@@ -1492,16 +1360,12 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_endingN
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
-	
+
 	text = {
         localisation_key = ""
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_FB_endingN
@@ -1513,16 +1377,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_endingE
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
-	
 	text = {
         localisation_key = ""
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_FB_endingE
@@ -1534,16 +1393,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_endingR
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
-	
 	text = {
         localisation_key = ""
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_FB_endingR
@@ -1555,16 +1409,12 @@ defined_text = {
 
     text = {
         localisation_key = ""
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
-	
+
 	text = {
         localisation_key = string_DE_endingIN
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_FB_endingIN
@@ -1576,16 +1426,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_endingEM
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
-	
 	text = {
         localisation_key = ""
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_FB_endingEM
@@ -1597,16 +1442,11 @@ defined_text = {
 
     text = {
         localisation_key = ""
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
-	
 	text = {
         localisation_key = string_DE_endingER
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_FB_endingER
@@ -1618,16 +1458,11 @@ defined_text = {
 
     text = {
         localisation_key = ""
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
-	
 	text = {
         localisation_key = string_DE_endinga
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_FB_endinga
@@ -1639,16 +1474,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_endingEN
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
-	
 	text = {
         localisation_key = ""
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_FB_endingEN
@@ -1661,16 +1491,11 @@ defined_text = {
 
     text = {
         localisation_key = ""
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
-	
 	text = {
         localisation_key = string_DE_endingS
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_FB_endingS
@@ -1682,16 +1507,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_endingE
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
-	
 	text = {
         localisation_key = ""
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_FB_endingE
@@ -1703,16 +1523,11 @@ defined_text = {
 
     text = {
         localisation_key = ""
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
-	
 	text = {
         localisation_key = string_DE_endingN
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_FB_endingN
@@ -1724,16 +1539,11 @@ defined_text = {
 
     text = {
         localisation_key = ""
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
-	
 	text = {
         localisation_key = string_DE_endingR
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_FB_endingR
@@ -1745,16 +1555,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_endingIN
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
-	
 	text = {
         localisation_key = ""
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_FB_endingIN
@@ -1766,16 +1571,11 @@ defined_text = {
 
     text = {
         localisation_key = ""
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
-	
 	text = {
         localisation_key = string_DE_endingEM
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_FB_endingEM
@@ -1787,16 +1587,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_endingER
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
-	
 	text = {
         localisation_key = ""
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_FB_endingER
@@ -1808,16 +1603,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_endinga
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
-	
 	text = {
         localisation_key = ""
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 	fallback_text = {
 		localisation_key = string_DE_FB_endinga
@@ -1829,7 +1619,7 @@ defined_text = {
 
 defined_text = {
 	name = GetHouseOfWorshipeineine # Returns a suitable name for the house of worship of your religion (WIP)
-	
+
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Christian_eineine
 		trigger = { religion_group = christian }
@@ -1873,7 +1663,7 @@ defined_text = {
 
 defined_text = {
 	name = GetHouseOfWorshipEinEine # Returns a suitable name for the house of worship of your religion (WIP)
-	
+
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Christian_EinEine
 		trigger = { religion_group = christian }
@@ -1917,7 +1707,7 @@ defined_text = {
 
 defined_text = {
 	name = GetHouseOfWorshipeineneine # Returns a suitable name for the house of worship of your religion (WIP)
-	
+
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Christian_eineneine
 		trigger = { religion_group = christian }
@@ -1961,7 +1751,7 @@ defined_text = {
 
 defined_text = {
 	name = GetHouseOfWorshipeinemeiner # Returns a suitable name for the house of worship of your religion (WIP)
-	
+
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Christian_einemeiner
 		trigger = { religion_group = christian }
@@ -2005,7 +1795,7 @@ defined_text = {
 
 defined_text = {
 	name = GetHouseOfWorshipzumzur # Returns a suitable name for the house of worship of your religion (WIP)
-	
+
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Christian_zumzur
 		trigger = { religion_group = christian }
@@ -2049,7 +1839,7 @@ defined_text = {
 
 defined_text = {
 	name = GetHouseOfWorshipiminder # Returns a suitable name for the house of worship of your religion (WIP)
-	
+
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Christian_iminder
 		trigger = { religion_group = christian }
@@ -2093,7 +1883,7 @@ defined_text = {
 
 defined_text = {
 	name = GetHouseOfWorshipdesder # Returns a suitable name for the house of worship of your religion (WIP)
-	
+
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Christian_desder
 		trigger = { religion_group = christian }
@@ -2149,15 +1939,15 @@ defined_text = {
 	text = {
 		localisation_key = string_DE_the_Rule_of_Saint_Basil_demder
 		trigger = { society_member_of = monastic_order_orthodox }
-	}	
+	}
 	text = {
 		localisation_key = string_DE_the_Rule_of_Saint_Abraham_demder
 		trigger = { society_member_of = monastic_order_nestorian }
-	}	
+	}
 	text = {
 		localisation_key = string_DE_the_Rule_of_Saint_Anthony_demder
 		trigger = { society_member_of = monastic_order_monophysite }
-	}		
+	}
 	text = {
 		localisation_key = string_DE_the_Noble_Eightfold_Path_demder
 		trigger = { society_member_of = monastic_order_buddhist }
@@ -2189,15 +1979,15 @@ defined_text = {
 	text = {
 		localisation_key = string_DE_the_Rule_of_Saint_Basil_dieden
 		trigger = { society_member_of = monastic_order_orthodox }
-	}	
+	}
 	text = {
 		localisation_key = string_DE_the_Rule_of_Saint_Abraham_dieden
 		trigger = { society_member_of = monastic_order_nestorian }
-	}	
+	}
 	text = {
 		localisation_key = string_DE_the_Rule_of_Saint_Anthony_dieden
 		trigger = { society_member_of = monastic_order_monophysite }
-	}		
+	}
 	text = {
 		localisation_key = string_DE_the_Noble_Eightfold_Path_dieden
 		trigger = { society_member_of = monastic_order_buddhist }
@@ -2222,26 +2012,21 @@ defined_text = {
 		localisation_key = string_DE_GetHolding_Castle_1_diedasden
 		trigger = {
 			holding_type = castle
-			county = { holder_scope = { NOT = { higher_tier_than = DUKE } } }
+			county = { holder_scope = { lower_real_tier_than = KING } }
 		}
 	}
 	text = {
 		localisation_key = string_DE_GetHolding_Castle_2_diedasden
 		trigger = {
 			holding_type = castle
-			county = { 
-				holder_scope = { 
-					higher_tier_than = DUKE
-					NOT = { higher_tier_than = KING }
-				}
-			}
+			county = { holder_scope = { real_tier = KING } }
 		}
 	}
 	text = {
 		localisation_key = string_DE_GetHolding_Castle_3_diedasden
 		trigger = {
 			holding_type = castle
-			county = { holder_scope = { higher_tier_than = KING } }
+			county = { holder_scope = { higher_real_tier_than = KING } }
 		}
 	}
 	text = {
@@ -2252,19 +2037,14 @@ defined_text = {
 		localisation_key = string_DE_GetHolding_Nomad_1_diedasden
 		trigger = {
 			holding_type = nomad
-			county = { holder_scope = { NOT = { higher_tier_than = DUKE } } }
+			county = { holder_scope = { lower_real_tier_than = KING } }
 		}
 	}
 	text = {
 		localisation_key = string_DE_GetHolding_Nomad_2_diedasden
 		trigger = {
 			holding_type = nomad
-			county = { 
-				holder_scope = { 
-					higher_tier_than = DUKE
-					NOT = { higher_tier_than = KING }
-				}
-			}
+			county = { holder_scope = { real_tier = KING } }
 		}
 	}
 	text = {
@@ -2278,65 +2058,53 @@ defined_text = {
 		localisation_key = string_DE_GetHolding_Tribal_1_diedasden
 		trigger = {
 			holding_type = tribal
-			county = { holder_scope = { NOT = { higher_tier_than = COUNT } } }
+			county = { holder_scope = { lower_real_tier_than = DUKE } }
 		}
 	}
 	text = {
 		localisation_key = string_DE_GetHolding_Tribal_2_diedasden
 		trigger = {
 			holding_type = tribal
-			county = { 
-				holder_scope = { 
-					higher_tier_than = COUNT
-					NOT = { higher_tier_than = DUKE }
-				}
-			}
+			county = { holder_scope = { real_tier = DUKE } }
 		}
 	}
 	text = {
 		localisation_key = string_DE_GetHolding_Tribal_3_diedasden
 		trigger = {
 			holding_type = tribal
-			county = { holder_scope = { higher_tier_than = DUKE } }
+			county = { holder_scope = { higher_real_tier_than = DUKE } }
 		}
 	}
 	text = {
 		localisation_key = string_DE_GetHolding_City_1_diedasden
 		trigger = {
 			holding_type = city
-			county = { holder_scope = { NOT = { higher_tier_than = DUKE } } }
+			county = { holder_scope = { lower_real_tier_than = DUKE } }
 		}
 	}
 	text = {
 		localisation_key = string_DE_GetHolding_City_2_diedasden
 		trigger = {
 			holding_type = city
-			county = { 
-				holder_scope = { 
-					higher_tier_than = DUKE
-					NOT = { higher_tier_than = KING }
-				}
-			}
+			county = { holder_scope = { real_tier = KING } }
 		}
 	}
 	text = {
 		localisation_key = string_DE_GetHolding_City_3_diedasden
 		trigger = {
 			holding_type = city
-			county = { holder_scope = { higher_tier_than = KING } }
+			county = { holder_scope = { higher_real_tier_than = KING } }
 		}
 	}
 	text = {
 		localisation_key = string_DE_settlement_diedasden
 		trigger = {
-			NOT = {
-				OR = {
-					holding_type = castle
-					holding_type = temple
-					holding_type = nomad
-					holding_type = tribal
-					holding_type = city
-				}	
+			NOR = {
+				holding_type = castle
+				holding_type = temple
+				holding_type = nomad
+				holding_type = tribal
+				holding_type = city
 			}
 		}
 	}
@@ -2352,26 +2120,21 @@ defined_text = {
 		localisation_key = string_DE_GetHolding_Castle_1_dieserdieses
 		trigger = {
 			holding_type = castle
-			county = { holder_scope = { NOT = { higher_tier_than = DUKE } } }
+			county = { holder_scope = { lower_real_tier_than = KING } }
 		}
 	}
 	text = {
 		localisation_key = string_DE_GetHolding_Castle_2_dieserdieses
 		trigger = {
 			holding_type = castle
-			county = { 
-				holder_scope = { 
-					higher_tier_than = DUKE
-					NOT = { higher_tier_than = KING }
-				}
-			}
+			county = { holder_scope = { real_tier = KING } }
 		}
 	}
 	text = {
 		localisation_key = string_DE_GetHolding_Castle_3_dieserdieses
 		trigger = {
 			holding_type = castle
-			county = { holder_scope = { higher_tier_than = KING } }
+			county = { holder_scope = { higher_real_tier_than = KING } }
 		}
 	}
 	text = {
@@ -2382,91 +2145,74 @@ defined_text = {
 		localisation_key = string_DE_GetHolding_Nomad_1_dieserdieses
 		trigger = {
 			holding_type = nomad
-			county = { holder_scope = { NOT = { higher_tier_than = DUKE } } }
+			county = { holder_scope = { lower_real_tier_than = KING } }
 		}
 	}
 	text = {
 		localisation_key = string_DE_GetHolding_Nomad_2_dieserdieses
 		trigger = {
 			holding_type = nomad
-			county = { 
-				holder_scope = { 
-					higher_tier_than = DUKE
-					NOT = { higher_tier_than = KING }
-				}
-			}
+			county = { holder_scope = { real_tier = KING } }
 		}
 	}
 	text = {
 		localisation_key = string_DE_GetHolding_Nomad_3_dieserdieses
 		trigger = {
 			holding_type = nomad
-			county = { holder_scope = { higher_tier_than = KING } }
+			county = { holder_scope = { higher_real_tier_than = KING } }
 		}
 	}
 	text = {
 		localisation_key = string_DE_GetHolding_Tribal_1_dieserdieses
 		trigger = {
 			holding_type = tribal
-			county = { holder_scope = { NOT = { higher_tier_than = COUNT } } }
+			county = { holder_scope = { lower_real_tier_than = DUKE } }
 		}
 	}
 	text = {
 		localisation_key = string_DE_GetHolding_Tribal_2_dieserdieses
 		trigger = {
 			holding_type = tribal
-			county = { 
-				holder_scope = { 
-					higher_tier_than = COUNT
-					NOT = { higher_tier_than = DUKE }
-				}
-			}
+			county = { holder_scope = { real_tier = DUKE } }
 		}
 	}
 	text = {
 		localisation_key = string_DE_GetHolding_Tribal_3_dieserdieses
 		trigger = {
 			holding_type = tribal
-			county = { holder_scope = { higher_tier_than = DUKE } }
+			county = { holder_scope = { higher_real_tier_than = DUKE } }
 		}
 	}
 	text = {
 		localisation_key = string_DE_GetHolding_City_1_dieserdieses
 		trigger = {
 			holding_type = city
-			county = { holder_scope = { NOT = { higher_tier_than = DUKE } } }
+			county = { holder_scope = { lower_real_tier_than = KING } }
 		}
 	}
 	text = {
 		localisation_key = string_DE_GetHolding_City_2_dieserdieses
 		trigger = {
 			holding_type = city
-			county = { 
-				holder_scope = { 
-					higher_tier_than = DUKE
-					NOT = { higher_tier_than = KING }
-				}
-			}
+			county = { holder_scope = { real_tier = KING } }
 		}
 	}
 	text = {
 		localisation_key = string_DE_GetHolding_City_3_dieserdieses
 		trigger = {
 			holding_type = city
-			county = { holder_scope = { higher_tier_than = KING } }
+			county = { holder_scope = { higher_real_tier_than = KING } }
 		}
 	}
 	text = {
 		localisation_key = string_DE_settlement_dieserdieses
 		trigger = {
-			NOT = {
-				OR = {
-					holding_type = castle
-					holding_type = temple
-					holding_type = nomad
-					holding_type = tribal
-					holding_type = city
-				}	
+			NOR = {
+				holding_type = castle
+				holding_type = temple
+				holding_type = nomad
+				holding_type = tribal
+				holding_type = city
 			}
 		}
 	}
@@ -2482,26 +2228,21 @@ defined_text = {
 		localisation_key = string_DE_GetHolding_Castle_1_derdiedas
 		trigger = {
 			holding_type = castle
-			county = { holder_scope = { NOT = { higher_tier_than = DUKE } } }
+			county = { holder_scope = { lower_real_tier_than = KING } }
 		}
 	}
 	text = {
 		localisation_key = string_DE_GetHolding_Castle_2_derdiedas
 		trigger = {
 			holding_type = castle
-			county = { 
-				holder_scope = { 
-					higher_tier_than = DUKE
-					NOT = { higher_tier_than = KING }
-				}
-			}
+			county = { holder_scope = { real_tier = KING } }
 		}
 	}
 	text = {
 		localisation_key = string_DE_GetHolding_Castle_3_derdiedas
 		trigger = {
 			holding_type = castle
-			county = { holder_scope = { higher_tier_than = KING } }
+			county = { holder_scope = { higher_real_tier_than = KING } }
 		}
 	}
 	text = {
@@ -2512,45 +2253,35 @@ defined_text = {
 		localisation_key = string_DE_GetHolding_Nomad_1_derdiedas
 		trigger = {
 			holding_type = nomad
-			county = { holder_scope = { NOT = { higher_tier_than = DUKE } } }
+			county = { holder_scope = { lower_real_tier_than = KING } }
 		}
 	}
 	text = {
 		localisation_key = string_DE_GetHolding_Nomad_2_derdiedas
 		trigger = {
 			holding_type = nomad
-			county = { 
-				holder_scope = { 
-					higher_tier_than = DUKE
-					NOT = { higher_tier_than = KING }
-				}
-			}
+			county = { holder_scope = { real_tier = KING } }
 		}
 	}
 	text = {
 		localisation_key = string_DE_GetHolding_Nomad_3_derdiedas
 		trigger = {
 			holding_type = nomad
-			county = { holder_scope = { higher_tier_than = KING } }
+			county = { holder_scope = { higher_real_tier_than = KING } }
 		}
 	}
 	text = {
 		localisation_key = string_DE_GetHolding_Tribal_1_derdiedas
 		trigger = {
 			holding_type = tribal
-			county = { holder_scope = { NOT = { higher_tier_than = COUNT } } }
+			county = { holder_scope = { lower_real_tier_than = DUKE } }
 		}
 	}
 	text = {
 		localisation_key = string_DE_GetHolding_Tribal_2_derdiedas
 		trigger = {
 			holding_type = tribal
-			county = { 
-				holder_scope = { 
-					higher_tier_than = COUNT
-					NOT = { higher_tier_than = DUKE }
-				}
-			}
+			county = { holder_scope = { real_tier = DUKE } }
 		}
 	}
 	text = {
@@ -2564,39 +2295,32 @@ defined_text = {
 		localisation_key = string_DE_GetHolding_City_1_derdiedas
 		trigger = {
 			holding_type = city
-			county = { holder_scope = { NOT = { higher_tier_than = DUKE } } }
+			county = { holder_scope = { lower_real_tier_than = KING } }
 		}
 	}
 	text = {
 		localisation_key = string_DE_GetHolding_City_2_derdiedas
 		trigger = {
 			holding_type = city
-			county = { 
-				holder_scope = { 
-					higher_tier_than = DUKE
-					NOT = { higher_tier_than = KING }
-				}
-			}
+			county = { holder_scope = { real_tier = KING } }
 		}
 	}
 	text = {
 		localisation_key = string_DE_GetHolding_City_3_derdiedas
 		trigger = {
 			holding_type = city
-			county = { holder_scope = { higher_tier_than = KING } }
+			county = { holder_scope = { higher_real_tier_than = KING } }
 		}
 	}
 	text = {
 		localisation_key = string_DE_settlement_derdiedas
 		trigger = {
-			NOT = {
-				OR = {
-					holding_type = castle
-					holding_type = temple
-					holding_type = nomad
-					holding_type = tribal
-					holding_type = city
-				}	
+			NOR = {
+				holding_type = castle
+				holding_type = temple
+				holding_type = nomad
+				holding_type = tribal
+				holding_type = city
 			}
 		}
 	}
@@ -2614,9 +2338,7 @@ defined_text = {
 		localisation_key = string_DE_town_diedas
 	}
 	text = {
-		trigger = {
-			society_member_of = the_plaguebringers
-		}
+		trigger = { society_member_of = the_plaguebringers }
 		localisation_key = string_DE_camp_diedas
 	}
 	fallback_text = {
@@ -2633,9 +2355,7 @@ defined_text = {
 		localisation_key = string_DE_town_jedejedes
 	}
 	text = {
-		trigger = {
-			society_member_of = the_plaguebringers
-		}
+		trigger = { society_member_of = the_plaguebringers }
 		localisation_key = string_DE_camp_jedejedes
 	}
 	fallback_text = {
@@ -2649,15 +2369,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Arzt
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Ärztin
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -2666,15 +2382,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Kannibale
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Kannibalin
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -2683,15 +2395,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Propheten
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Prophetin
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -2700,15 +2408,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Missgestalteter
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Missgestalt
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -2717,15 +2421,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Folterer
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Folterin
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -2734,15 +2434,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Feigling
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Memme
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -2751,15 +2447,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Narr
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Närrin
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -2768,15 +2460,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Krüppel
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Behinderte
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -2785,15 +2473,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Esel
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Ziege
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -2802,15 +2486,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Strohmann
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Vogelscheuche
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -2819,15 +2499,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Dschungelbewohner
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Dschungelnatter
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -2836,33 +2512,24 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Bücherwurm
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Leseratte
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
-
 
 defined_text = {
     name = GetBengelGöre
 
     text = {
         localisation_key = string_DE_Bengel
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Göre
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -2871,15 +2538,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Blutsauger
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Zecke
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -2888,15 +2551,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Wurm
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Made
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -2905,15 +2564,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Wüstenkäfer
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Wüstenratte
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -2922,15 +2577,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Fiesling
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Vettel
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -2939,9 +2590,7 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Esel
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Zuchtstute
@@ -2956,15 +2605,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Strohkopf
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Hohlbirne
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -2973,15 +2618,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Gesichtskrapfen
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Hackfresse
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -2990,15 +2631,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Überflieger
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Koriphäe
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -3007,15 +2644,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Hohlkopf
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Pflaume
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -3024,15 +2657,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_bewohner
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_natter
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -3041,15 +2670,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Zimmerer
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Zimmerin
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -3058,15 +2683,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Bluthund
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Bluthündin
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -3075,15 +2696,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Eroberer
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Eroberin
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -3092,15 +2709,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Bote
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Botin
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -3109,15 +2722,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Barde
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Bardin
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -3126,15 +2735,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Beichtvater
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Beichtmutter
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -3143,15 +2748,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Turm
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Mauer
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -3160,15 +2761,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Sklave
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Sklavin
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -3177,15 +2774,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Gemahlen
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Gemahlin
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -3194,15 +2787,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Eber
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Sau
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -3211,15 +2800,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Prinzen
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Prinzessin
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -3228,15 +2813,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_vom
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_vonder
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -3245,15 +2826,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Mannes
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Frau
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -3262,15 +2839,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Sau
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Eber
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -3279,15 +2852,11 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Schwachling
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Kruke
-        trigger = {
-			is_female = yes
-        }
+        trigger = { is_female = yes }
     }
 }
 
@@ -3296,14 +2865,32 @@ defined_text = {
 
     text = {
         localisation_key = string_DE_Leichnam
-        trigger = {
-			is_female = no
-        }
+        trigger = { is_female = no }
     }
 	text = {
         localisation_key = string_DE_Leiche
-        trigger = {
-			is_female = yes
-        }
-    }
+        trigger = { is_female = yes }
+	}
+}
+
+defined_text = {
+	name = GetHuntingQuarryAkk
+	use_first_valid = yes
+
+	text = {
+		trigger = { has_character_flag = white_bear }
+		localisation_key = string_DE_Bären
+	}
+	text = {
+		trigger = { has_character_flag = white_lion }
+		localisation_key = string_DE_Löwen
+	}
+	text = {
+		trigger = { has_character_flag = white_stag }
+		localisation_key = String_Stag
+	}
+	text = {
+		trigger = { has_character_flag = white_tiger }
+		localisation_key = String_Tiger
+	}
 }
