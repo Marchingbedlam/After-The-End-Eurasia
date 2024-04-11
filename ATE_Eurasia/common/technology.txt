@@ -295,59 +295,59 @@ TECH_GROUP_ECONOMY = {
 			add_building = tp_elite_barracks_6
 		}
 	}
-	TECH_TEMPLE_CONSTRUCTION = { #temple buildings
-		modifier = {
-			TEMPLE_TAX_MODIFIER = 0.5
-		}
-		1 = { 
-			add_building = tp_barracks_3
-			add_building = tp_town_3
-			add_building = no_shrine_2
-			add_building = no_shrine_3
-			add_building = no_minority_shrine_2
-			add_building = no_minority_shrine_3
-		}
-		2 = {
-			add_building = tp_monastery_3
-			add_building = tp_elite_barracks_3
-			add_building = no_shrine_4
-			add_building = no_minority_shrine_4
-			add_building = no_minority_shrine_5
-		}
-		3 = {
-			add_building = tp_barracks_4
-			add_building = tp_town_4
-			add_building = tp_school_1
-			add_building = no_shrine_5
-			add_building = no_minority_shrine_6
-		}
-		4 = {
-			add_building = tp_monastery_4
-			add_building = tp_elite_barracks_4
-			add_building = no_shrine_6
-			add_building = no_shrine_7
-			add_building = no_minority_shrine_7
-		}
-		5 = {
-			add_building = tp_barracks_5
-			add_building = tp_town_5
-			add_building = no_shrine_8
-			add_building = no_minority_shrine_8
-		}
-		6 = {
-			add_building = tp_monastery_5
-			add_building = tp_elite_barracks_5
-			add_building = tp_school_2
-		}
-		7 = {
-			add_building = tp_barracks_6
-			add_building = tp_town_6
-		}
-		8 = {
-			add_building = tp_monastery_6
-			add_building = tp_elite_barracks_6
-		}
-	}
+	#TECH_TEMPLE_CONSTRUCTION = { #temple buildings
+	#	modifier = {
+	#		TEMPLE_TAX_MODIFIER = 0.5
+	#	}
+	#	1 = { 
+	#		add_building = tp_barracks_3
+	#		add_building = tp_town_3
+	#		add_building = no_shrine_2
+	#		add_building = no_shrine_3
+	#		add_building = no_minority_shrine_2
+	#		add_building = no_minority_shrine_3
+	#	}
+	#	2 = {
+	#		add_building = tp_monastery_3
+	#		add_building = tp_elite_barracks_3
+	#		add_building = no_shrine_4
+	#		add_building = no_minority_shrine_4
+	#		add_building = no_minority_shrine_5
+	#	}
+	#	3 = {
+	#		add_building = tp_barracks_4
+	#		add_building = tp_town_4
+	#		add_building = tp_school_1
+	#		add_building = no_shrine_5
+	#		add_building = no_minority_shrine_6
+	#	}
+	#	4 = {
+	#		add_building = tp_monastery_4
+	#		add_building = tp_elite_barracks_4
+	#		add_building = no_shrine_6
+	#		add_building = no_shrine_7
+	#		add_building = no_minority_shrine_7
+	#	}
+	#	5 = {
+	#		add_building = tp_barracks_5
+	#		add_building = tp_town_5
+	#		add_building = no_shrine_8
+	#		add_building = no_minority_shrine_8
+	#	}
+	#	6 = {
+	#		add_building = tp_monastery_5
+	#		add_building = tp_elite_barracks_5
+	#		add_building = tp_school_2
+	#	}
+	#	7 = {
+	#		add_building = tp_barracks_6
+	#		add_building = tp_town_6
+	#	}
+	#	8 = {
+	#		add_building = tp_monastery_6
+	#		add_building = tp_elite_barracks_6
+	#	}
+	#}
 	TECH_FORTIFICATIONS_CONSTRUCTION = { # walls and levy buildings
 		modifier = {
 		}

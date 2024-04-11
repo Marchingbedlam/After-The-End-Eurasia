@@ -299,7 +299,7 @@ city = {
 temple = {
 	tp_firing_range_1 = {
 		desc = tp_firing_range_1_desc
-		trigger = { TECH_TEMPLE_CONSTRUCTION = 0 TECH_RECRUITMENT = 5 TECH_SIEGE_EQUIPMENT = 5 }
+		trigger = { TECH_CITY_CONSTRUCTION = 0 TECH_RECRUITMENT = 5 TECH_SIEGE_EQUIPMENT = 5 }
 		gold_cost = 100
 		build_time = 365
 		handgunners = 40
@@ -309,7 +309,7 @@ temple = {
 	}
 	tp_firing_range_2 = {
 		desc = tp_firing_range_1_desc
-		trigger = { TECH_TEMPLE_CONSTRUCTION = 1 TECH_RECRUITMENT = 6 TECH_SIEGE_EQUIPMENT = 6 }
+		trigger = { TECH_CITY_CONSTRUCTION = 1 TECH_RECRUITMENT = 6 TECH_SIEGE_EQUIPMENT = 6 }
 		prerequisites = { tp_wall_1 }
 		upgrades_from = tp_firing_range_1
 		gold_cost = 120
@@ -321,7 +321,7 @@ temple = {
 	}
 	tp_firing_range_3 = {
 		desc = tp_firing_range_1_desc
-		trigger = { TECH_TEMPLE_CONSTRUCTION = 5 TECH_RECRUITMENT = 7 TECH_SIEGE_EQUIPMENT = 7 }
+		trigger = { TECH_CITY_CONSTRUCTION = 5 TECH_RECRUITMENT = 7 TECH_SIEGE_EQUIPMENT = 7 }
 		upgrades_from = tp_firing_range_2
 		gold_cost = 200
 		build_time = 1095
@@ -332,7 +332,7 @@ temple = {
 	}
 	tp_firing_range_4 = {
 		desc = tp_firing_range_1_desc
-		trigger = { TECH_TEMPLE_CONSTRUCTION = 7 TECH_RECRUITMENT = 8 TECH_SIEGE_EQUIPMENT = 8 }
+		trigger = { TECH_CITY_CONSTRUCTION = 7 TECH_RECRUITMENT = 8 TECH_SIEGE_EQUIPMENT = 8 }
 		upgrades_from = tp_firing_range_3
 		gold_cost = 300
 		build_time = 1095
