@@ -283,6 +283,7 @@ e_britannia = {
 			c_kent = {
 				color={ 241 115 65 }
 				color2={ 255 255 255 }
+				holy_site = high_church
 				
 				b_rochester = {}
 				b_maidstone = {}
@@ -681,6 +682,7 @@ e_britannia = {
 			c_north_riding = {
 				color={ 255 80 5 }
 				color2={ 255 255 255 }
+				holy_site = high_church
 				
 				b_harrogate = {}
 				b_york = {}
@@ -1230,6 +1232,7 @@ e_britannia = {
 				cornish = "Karedin"
 				
 				holy_site = free_church
+				holy_site = high_church
 				
 				b_holyrood = {
 					lowlander = "Halyruid"
