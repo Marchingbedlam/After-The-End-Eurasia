@@ -2835,6 +2835,7 @@
 	disallow_random_traits=yes
 	2647.1.1={birth=yes}
 	2660.1.1={effect={add_rival = 1703166}}
+	2700.1.1={death=yes}
 }
 1703166={
 	name="Alexander"
@@ -2852,6 +2853,7 @@
 	trait = ambitious
 	disallow_random_traits=yes
 	2633.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
 1703167={
 	name="Boris"
@@ -2871,6 +2873,7 @@
 	disallow_random_traits=yes
 	2617.1.1={birth=yes}
 	2637.1.1={add_spouse = 1703169}
+	2700.1.1={death=yes}
 }
 1703168={
 	name="Catherine"
@@ -2892,6 +2895,7 @@
 
 	disallow_random_traits=yes
 	2650.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
 1703169={
 	name="Ksenia"
@@ -2901,6 +2905,7 @@
 	religion=pravoslavie
 	disallow_random_traits=no
 	2620.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
 1703170={
 	name="Stenka"
@@ -2920,6 +2925,7 @@
 	trait = shrewd
 	disallow_random_traits=yes
 	2630.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
 
 1703171={
@@ -2939,6 +2945,7 @@
 	trait = just
 	disallow_random_traits=yes
 	2620.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
 
 1703172={
@@ -2956,4 +2963,5 @@
 	trait = lustful
 	disallow_random_traits=yes
 	2620.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
