@@ -161,6 +161,20 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
+		name = "GFX_trait_high_anglican"
+		texturefile = "gfx/traits/high_anglican.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_broad_anglican"
+		texturefile = "gfx/traits/broad_anglican.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
 		name = "GFX_trait_low_anglican"
 		texturefile = "gfx/traits/low_anglican.dds"
 		noOfFrames = 1

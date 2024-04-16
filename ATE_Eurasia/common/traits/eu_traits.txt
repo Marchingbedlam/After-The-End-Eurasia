@@ -375,11 +375,47 @@ baptist = {
 	religious = yes
 	ruler_designer_cost = 0
 }
+high_anglican = {
+	opposites = {
+		broad_anglican
+		low_anglican
+	}
+
+	opposite_opinion = -10
+
+	learning = 2
+	mariavite_opinion = 5
+	catholic_opinion = 5
+
+	potential = { religion = high_church }
+	religious_branch = high_church
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+
+broad_anglican = {
+	opposites = {
+		high_anglican
+		low_anglican
+	}
+
+	opposite_opinion = -5
+
+	learning = 1
+	diplomacy = 1
+	vassal_opinion = 5
+
+	potential = { religion = high_church }
+	religious_branch = high_church
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
 low_anglican = {
 	opposites = {
-		quaker
-		baptist
-		methodist
+		high_anglican
+		low_anglican
 	}
 
 	opposite_opinion = -10
@@ -388,8 +424,8 @@ low_anglican = {
 	calvinist_opinion = 5
 	free_church_opinion = 5
 
-	potential = { religion = free_church }
-	religious_branch = free_church
+	potential = { religion = high_church }
+	religious_branch = high_church
 	random = no
 	religious = yes
 	ruler_designer_cost = 0
