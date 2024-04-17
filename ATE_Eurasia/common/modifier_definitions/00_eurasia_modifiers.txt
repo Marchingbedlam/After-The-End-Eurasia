@@ -26,6 +26,13 @@ calvinist_opinion = {
 	is_hidden = no
 	max_decimals = 0
 }
+high_church_opinion = {
+	show_as_percent = no
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 0
+}
 free_church_opinion = {
 	show_as_percent = no
 	is_good = yes
@@ -629,6 +636,13 @@ quinto_opinion = {
 	max_decimals = 0
 }
 sikh_opinion = {
+	show_as_percent = no
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 0
+}
+spouse_opinion = {
 	show_as_percent = no
 	is_good = yes
 	is_monthly = no
