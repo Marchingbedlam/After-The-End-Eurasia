@@ -186,7 +186,7 @@ religion_nature = {
 						religion = sjotru
 						religion = tengri_pagan
 						religion = zun_pagan
-						religion = hellenic_pagan
+						religion = adonist
 						religion = west_african_pagan
 					}
 				}
@@ -269,7 +269,7 @@ religion_nature = {
 					character = yes 
 					NOR = { 
 						religion = zun_pagan
-						religion = hellenic_pagan
+						religion = adonist
 						religion = west_african_pagan
 					}
 				}
@@ -424,6 +424,11 @@ religion_nature = {
 	}
 	religion_cosmopolitan = {
 		picture = GFX_religion_feature_cosmopolitan
+		trigger = {
+			NOT = {
+				has_selected_religion_feature = religion_feature_adi
+			}
+		}
 		effect = {
 			custom_tooltip = { text = tooltip_religion_feature_cosmopolitan_2 }
 			custom_tooltip = { text = tooltip_religion_feature_crusade }
@@ -449,7 +454,7 @@ religion_nature = {
 				FROM = { 
 					character = yes 
 					NOR = { 
-						religion = hellenic_pagan
+						religion = adonist
 						religion = west_african_pagan
 						religion = slavic_pagan
 					}
@@ -459,7 +464,7 @@ religion_nature = {
 				factor = 2
 				FROM = { 
 					character = yes 
-					religion = hellenic_pagan 
+					religion = adonist 
 				}
 			}
 			modifier = { 	
@@ -571,6 +576,7 @@ religion_doctrine = {
 				has_selected_religion_feature = religion_matriarchal #Incompatible
 				has_selected_religion_feature = religion_feature_zun #Redundant
 				has_selected_religion_feature = religion_feature_tengri
+				has_selected_religion_feature = religion_feature_ak_jeng
 			} 
 		}
 		effect = {
@@ -720,10 +726,8 @@ religion_doctrine = {
 	religion_haruspicy = { #Gives option to divinate the future before waging a war.
 		picture = GFX_religion_feature_haruspicy
 		potential = {
-			NOT = { religion = hellenic_pagan } #Core feature of the religion itself.
-			NOT = { religion = hellenic_pagan_reformed } #Core feature of the religion itself.
-			NOT = { religion = ak_jeng } #Core feature of the religion itself.
-			NOT = { religion = ak_jeng_reformed } #Core feature of the religion itself.
+			NOT = { religion = adonist } #Core feature of the religion itself.
+			NOT = { religion = adonist_reformed } #Core feature of the religion itself.
 		}
 
 		effect = {
@@ -736,8 +740,8 @@ religion_doctrine = {
 	religion_astrology = {
 		picture = GFX_religion_feature_astrology
 		potential = {
-			NOT = { religion = hellenic_pagan } #Core feature of the religion itself.
-			NOT = { religion = hellenic_pagan_reformed } #Core feature of the religion itself.
+			NOT = { religion = adonist } #Core feature of the religion itself.
+			NOT = { religion = adonist_reformed } #Core feature of the religion itself.
 		}
 
 		effect = {
@@ -811,6 +815,7 @@ religion_doctrine = {
 				has_selected_religion_feature = religion_matriarchal
 				has_selected_religion_feature = religion_patriarchal
 				has_selected_religion_feature = religion_feature_bon
+				has_selected_religion_feature = religion_feature_adi
 				trigger_if = {
 					limit = { has_game_started = yes }
 					FROM = { 
@@ -986,7 +991,7 @@ religion_doctrine = {
 								religion = pagan 
 								religion = zun_pagan
 								religion = aztec
-								religion = hellenic_pagan
+								religion = adonist
 							}
 						}
 					}
@@ -1041,6 +1046,7 @@ religion_doctrine = {
 				has_selected_religion_feature = religion_feature_tengri
 				has_selected_religion_feature = religion_feature_khanist
 				has_selected_religion_feature = religion_feature_jagannath
+				has_selected_religion_feature = religion_feature_ak_jeng
 			}
 		}
 		effect = {
@@ -1088,6 +1094,8 @@ religion_doctrine = {
 				religion = west_african_pagan_reformed #Redundant
 				religion = koyapunem_reformed #redundancy
 				religion = koyapunem #redundancy
+				religion = ak_jeng_reformed #redundancy
+				religion = ak_jeng #redundancy
 			}
 		}
 		effect = {
@@ -1123,7 +1131,6 @@ religion_doctrine = {
 		trigger = {
 			NOR = {
 				has_selected_religion_feature = religion_no_leader
-				has_selected_religion_feature = religion_feature_ak_jeng
 				has_selected_religion_feature = religion_feature_koyapunem
 				religion_group = christian #Random World redundancy.
 			}
@@ -1447,16 +1454,16 @@ religion_doctrine = {
 		}
 	}
 	religion_feature_hellenic = {
-		picture = GFX_religion_feature_hellenic
+		picture = GFX_religion_feature_adonist
 		potential = {
 			has_game_started = yes
-			religion = hellenic_pagan_reformed
+			religion = adonist_reformed
 			NOT = {
 				has_alternate_start_parameter = { key = religion_names value = random }
 			}
 		}
 		trigger = {
-			religion = hellenic_pagan_reformed
+			religion = adonist_reformed
 			NOR = { 
 				has_selected_religion_feature = religion_syncretic
 				has_selected_religion_feature = religion_dogmatic
@@ -1487,7 +1494,59 @@ religion_doctrine = {
 			custom_tooltip = { text = tooltip_religion_feature_pyramids }
 		}
 	}
-	
+	religion_feature_adi = { #Cosmopolitan Dual Priesthood
+		picture = GFX_religion_feature_adi
+		potential = {
+			has_game_started = yes
+			religion = adi_reformed
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		trigger = {
+			religion = adi_reformed
+			NOR = { 
+				has_selected_religion_feature = religion_cosmopolitan
+				has_selected_religion_feature = religion_equal
+				has_selected_religion_feature = religion_theocratic_head
+			}
+		}
+		effect = {
+			custom_tooltip = { text = tooltip_religion_feature_cosmopolitan_2 }
+			custom_tooltip = { text = tooltip_religion_feature_crusade }
+			custom_tooltip = { text = tooltip_religion_feature_impotent }
+			custom_tooltip = { text = tooltip_religion_feature_cosmopolitan_1 }
+			custom_tooltip = { text = tooltip_religion_feature_cognatic }
+			custom_tooltip = { text = tooltip_religion_feature_feminist }
+			custom_tooltip = { text = tooltip_religion_feature_theocratic_head }
+			hidden_tooltip = { 
+				set_can_excommunicate = yes
+				set_can_grant_divorce = yes
+				set_can_grant_invasion_cb = yes
+				set_can_grant_claim = yes
+				set_allows_matrilineal_marriage = yes
+				set_feminist = yes
+				set_women_can_take_consorts = yes
+				set_men_can_take_consorts = yes
+				set_female_temple_holders = yes
+				set_male_temple_holders = yes
+				#FROM = { any_demesne_title = { add_law = status_of_women_4 } } 
+				set_pacifist = no
+				set_peace_piety_gain = 0
+				set_raised_vassal_opinion_loss = yes
+				set_peace_prestige_loss = no
+				set_allow_looting = yes
+				set_hard_to_convert = no
+				set_piety_loss_for_attacking_same_religion = no
+				set_convert_other_groups = 0
+				set_convert_same_group = 0
+				set_ai_aggression = 0.5
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
 	religion_feature_nepmese = {  # Star Trails
 		picture = GFX_religion_feature_nepmese
 		potential = {
@@ -1590,14 +1649,44 @@ religion_doctrine = {
 		trigger = {
 			religion = ak_jeng_reformed
 			NOR = { 
-				has_selected_religion_feature = religion_haruspicy
-				has_selected_religion_feature = religion_beatification
+				has_selected_religion_feature = religion_relentless
+				has_selected_religion_feature = religion_animistic
+				has_selected_religion_feature = religion_harems
 			}
 		}
 		effect = {
-			custom_tooltip = { text = tooltip_religion_feature_beatification }
-			custom_tooltip = { text = tooltip_religion_feature_eldership }
-			custom_tooltip = { text = tooltip_religion_feature_haruspicy }
+			custom_tooltip = { text = tooltip_religion_feature_land_morale }
+			custom_tooltip = { text = tooltip_religion_feature_adulthood_rite }
+			hidden_tooltip = { 
+				set_unit_modifier = { 
+					land_morale = 0.05
+					key = "ANIMISTIC_RELIGION"
+				}
+			}
+			custom_tooltip = { text = tooltip_religion_feature_anti_attrition }
+			custom_tooltip = { text = tooltip_religion_feature_offensive }
+			hidden_tooltip = { 
+				set_ignores_defensive_attrition = yes
+				set_unit_modifier = { 
+					light_infantry_offensive = 0.1
+					heavy_infantry_offensive = 0.1
+					light_cavalry_offensive = 0.1 
+					knights_offensive = 0.1 
+					pikemen_offensive = 0.1 
+					archers_offensive = 0.1
+					horse_archers_offensive = 0.1
+					camel_cavalry_offensive = 0.1
+					war_elephants_offensive = 0.1
+					key = "RELENTLESS_RELIGION"
+				}
+			}
+			effect = {
+			custom_tooltip = { text = tooltip_religion_feature_harems }
+			hidden_tooltip = { 
+				set_max_consorts = 0
+				set_max_wives = 4
+			}
+		}
 		}
 		ai_will_do = {
 			factor = 1
@@ -1743,6 +1832,11 @@ religion_leadership = {
 		potential = {
 			has_game_started = yes
 		}
+		trigger = {
+			NOT = {
+				has_selected_religion_feature = religion_feature_adi
+			}
+		}
 		effect = {
 			custom_tooltip = { text = tooltip_religion_feature_theocratic_head }
 			hidden_tooltip = { 
@@ -1791,7 +1885,7 @@ religion_leadership = {
 						religion = finnish_pagan
 						religion = slavic_pagan
 						religion = baltic_pagan
-						religion = hellenic_pagan
+						religion = adonist
 					}
 				}
 			}
@@ -1947,7 +2041,7 @@ religion_leadership = {
 					FROM = { 
 						character = yes 
 						OR = { 
-							religion = hellenic_pagan
+							religion = adonist
 							religion = bon
 						}
 					}
@@ -1963,7 +2057,7 @@ religion_leadership = {
 					FROM = { 
 						character = yes 
 						OR = { 
-							religion = hellenic_pagan
+							religion = adonist
 							religion = bon
 						}
 					}
