@@ -66,11 +66,11 @@ is_devil_worshiper_trigger = {
 # TODO: replace with society flags?
 is_christian_monastic_member_trigger = {
 	OR = {
-		society_member_of = monastic_order_orthodox
+		#society_member_of = monastic_order_orthodox
 		society_member_of = monastic_order_benedictine
 		society_member_of = monastic_order_dominican
-		society_member_of = monastic_order_nestorian
-		society_member_of = monastic_order_monophysite
+		#society_member_of = monastic_order_nestorian
+		#society_member_of = monastic_order_monophysite
 	}
 }
 
@@ -88,7 +88,7 @@ is_monastic_member_trigger = {
 	OR = {
 		is_dharmic_monastic_member_trigger = yes
 		is_christian_monastic_member_trigger = yes
-		society_member_of = monastic_order_stoics
+		#society_member_of = monastic_order_stoics
 	}
 }
 
