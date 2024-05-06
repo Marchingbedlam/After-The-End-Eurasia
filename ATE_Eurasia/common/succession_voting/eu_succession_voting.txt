@@ -991,9 +991,9 @@ confederation_elective = {
 		}
 		additive_modifier = {
 			value = -15
-			localisation_key = tooltip_feudal_elector_vote_has_typhus
+			localisation_key = tooltip_feudal_elector_vote_camp_fever
 			FROM = { 
-				trait = has_typhus 
+				trait = camp_fever 
 			}
 		}
 		additive_modifier = {
@@ -1005,9 +1005,9 @@ confederation_elective = {
 		}
 		additive_modifier = {
 			value = -25
-			localisation_key = tooltip_feudal_elector_vote_has_tuberculosis
+			localisation_key = tooltip_feudal_elector_vote_consumption
 			FROM = { 
-				trait = has_tuberculosis
+				trait = consumption
 			}
 		}
 		additive_modifier = {
@@ -1054,9 +1054,9 @@ confederation_elective = {
 		}
 		additive_modifier = {
 			value = -10
-			localisation_key = tooltip_feudal_elector_vote_has_typhoid_fever
+			localisation_key = tooltip_feudal_elector_vote_slow_fever
 			FROM = { 
-				trait = has_typhoid_fever 
+				trait = slow_fever 
 			}
 		}
 		additive_modifier = {
@@ -1075,9 +1075,9 @@ confederation_elective = {
 		}
 		additive_modifier = {
 			value = -10
-			localisation_key = tooltip_feudal_elector_vote_has_measles
+			localisation_key = tooltip_feudal_elector_vote_measles
 			FROM = { 
-				trait = has_measles
+				trait = measles
 			}
 		}
 		additive_modifier = {
@@ -1110,16 +1110,16 @@ confederation_elective = {
 		}
 		additive_modifier = {
 			value = -15
-			localisation_key = tooltip_feudal_elector_vote_has_small_pox
+			localisation_key = tooltip_feudal_elector_vote_smallpox
 			FROM = { 
-				trait = has_small_pox
+				trait = smallpox
 			}
 		}
 		additive_modifier = {
 			value = -35
-			localisation_key = tooltip_feudal_elector_vote_has_bubonic_plague
+			localisation_key = tooltip_feudal_elector_vote_bubonic_plague
 			FROM = { 
-				trait = has_bubonic_plague
+				trait = bubonic_plague
 			}
 		}
 		additive_modifier = {
@@ -4526,9 +4526,9 @@ bureaucratic_elective = {
 		}
 		additive_modifier = {
 			value = -15
-			localisation_key = tooltip_feudal_elector_vote_has_typhus
+			localisation_key = tooltip_feudal_elector_vote_camp_fever
 			FROM = { 
-				trait = has_typhus 
+				trait = camp_fever 
 			}
 		}
 		additive_modifier = {
@@ -4540,9 +4540,9 @@ bureaucratic_elective = {
 		}
 		additive_modifier = {
 			value = -25
-			localisation_key = tooltip_feudal_elector_vote_has_tuberculosis
+			localisation_key = tooltip_feudal_elector_vote_consumption
 			FROM = { 
-				trait = has_tuberculosis
+				trait = consumption
 			}
 		}
 		additive_modifier = {
@@ -4589,9 +4589,9 @@ bureaucratic_elective = {
 		}
 		additive_modifier = {
 			value = -10
-			localisation_key = tooltip_feudal_elector_vote_has_typhoid_fever
+			localisation_key = tooltip_feudal_elector_vote_slow_fever
 			FROM = { 
-				trait = has_typhoid_fever 
+				trait = slow_fever 
 			}
 		}
 		additive_modifier = {
@@ -4610,9 +4610,9 @@ bureaucratic_elective = {
 		}
 		additive_modifier = {
 			value = -10
-			localisation_key = tooltip_feudal_elector_vote_has_measles
+			localisation_key = tooltip_feudal_elector_vote_measles
 			FROM = { 
-				trait = has_measles
+				trait = measles
 			}
 		}
 		additive_modifier = {
@@ -4645,16 +4645,16 @@ bureaucratic_elective = {
 		}
 		additive_modifier = {
 			value = -15
-			localisation_key = tooltip_feudal_elector_vote_has_small_pox
+			localisation_key = tooltip_feudal_elector_vote_smallpox
 			FROM = { 
-				trait = has_small_pox
+				trait = smallpox
 			}
 		}
 		additive_modifier = {
 			value = -35
-			localisation_key = tooltip_feudal_elector_vote_has_bubonic_plague
+			localisation_key = tooltip_feudal_elector_vote_bubonic_plague
 			FROM = { 
-				trait = has_bubonic_plague
+				trait = bubonic_plague
 			}
 		}
 		additive_modifier = {
@@ -8513,9 +8513,9 @@ imamate_elective = {
 		}
 		additive_modifier = {
 			value = -10
-			localisation_key = tooltip_feudal_elector_vote_has_measles
+			localisation_key = tooltip_feudal_elector_vote_measles
 			FROM = { 
-				trait = has_measles
+				trait = measles
 			}
 		}
 		additive_modifier = {
