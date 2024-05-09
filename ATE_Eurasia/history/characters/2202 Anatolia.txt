@@ -924,7 +924,7 @@
 	trait=quick
 	trait=midas_touched
 	trait=greedy
-	trait=is_fat
+	trait=fat
 	2613.6.29={birth=yes}
 	2661.2.20={
 		employer=2202071
@@ -1066,7 +1066,7 @@
 	culture=kurdish
 	religion=naqshbandi
 	trait=charismatic_negotiator
-	trait=fair
+	trait=attractive
 	trait=familyperson
 	trait=groomed
 	trait=hunter
@@ -1134,7 +1134,7 @@
 	trait=scarred_high
 	trait=disfigured
 	trait=shrewd
-	trait=schemer
+	trait=master_schemer
 	trait=cruel
 	trait=temperate
 	trait=patient
@@ -1194,9 +1194,9 @@
 	dynasty=2060003 #Tercanij
 	culture=zaza
 	religion=alevi
-	trait=martial_cleric
-	trait=is_fat
-	trait=robust
+	trait=dutiful_cleric
+	trait=fat
+	trait=brawny
 	trait=gardener
 	trait=charitable
 	trait=content
@@ -1333,7 +1333,7 @@
 	father=2202493
 	trait=tough_soldier
 	trait=giant
-	trait=robust
+	trait=brawny
 	trait=dull
 	trait=proud
 	trait=cruel
@@ -1349,7 +1349,7 @@
 	father=2202493
 	trait=scholarly_theologian
 	trait=mystic
-	trait=feeble
+	trait=frail
 	trait=temperate
 	trait=pious
 	trait=diligent
@@ -1379,7 +1379,7 @@
 	trait=tough_soldier
 	trait=strong
 	trait=brave
-	trait=robust
+	trait=brawny
 	trait=just
 	trait=humble
 	2619.5.18={birth=yes}
@@ -1393,7 +1393,7 @@
 	trait=tough_soldier
 	trait=strong
 	trait=brave
-	trait=robust
+	trait=brawny
 	trait=ambitious
 	father=2202448
 	2637.5.20={birth=yes}
@@ -1626,7 +1626,7 @@
 	dynasty=2055078 #Gül
 	culture=west_anatolian
 	religion=ruhi
-	trait=is_fat
+	trait=fat
 	trait=fortune_builder
 	trait=sympathy_judaism
 	trait=sympathy_christendom
@@ -1976,7 +1976,7 @@
 	trait=charismatic_negotiator
 	trait=depressed
 	trait=charitable
-	trait=feeble
+	trait=frail
 	trait=quick
 	trait=iskenderpasha
 	give_nickname=nick_the_pale
@@ -2072,7 +2072,7 @@
 	culture=central_anatolian
 	religion=naqshbandi
 	trait=grey_eminence
-	trait=fair 
+	trait=attractive 
 	trait=musician
 	trait=deceitful
 	trait=ambitious
@@ -2095,12 +2095,12 @@
 	dynasty=2055078 #Gül
 	culture=west_anatolian
 	religion=naqshbandi
-	trait=fair
+	trait=attractive
 	trait=authoritative
 	trait=ruthless
 	trait=shrewd
 	trait=iskenderpasha
-	give_nickname=nick_the_fair
+	give_nickname=nick_the_attractive
 	father=2202161
 	mother=2202162
 	2424.2.28={birth=yes}
@@ -2464,7 +2464,7 @@
 	trait=content
 	trait=patient
 	trait=falconer
-	trait=is_fat
+	trait=fat
 	trait=chest_pain
 	father=2202192
 	mother=2202193
@@ -2691,7 +2691,7 @@
 	dynasty=0
 	culture=west_anatolian
 	religion=naqshbandi
-	trait=is_malnourished
+	trait=malnourished
 	2321.4.22={birth=yes}
 	2338.1.1={add_spouse=2202212}
 	2363.2.24={death={death_reason=death_trait}}
@@ -2720,7 +2720,7 @@
 	dynasty=7100164 #Yashar
 	culture=toros_mountain
 	religion=naqshbandi
-	trait=feeble
+	trait=frail
 	trait=brave
 	trait=cavalry_leader
 	trait=wroth
@@ -2918,7 +2918,7 @@
 	martial=8
 	trait=tough_soldier
 	trait=strong
-	trait=robust
+	trait=brawny
 	trait=falconer
 	trait=proud
 	trait=charitable
@@ -3218,7 +3218,7 @@
 	culture=black_sea
 	religion=alevi
 	trait=legit_bastard
-	trait=fair
+	trait=attractive
 	mother=2202248
 	father=2202261
 	2649.6.1={birth=yes}
@@ -3230,7 +3230,7 @@
 	dynasty=0
 	culture=black_sea
 	religion=ruhi
-	trait=fair
+	trait=attractive
 	2631.11.8={birth=yes}
 	2649.9.8={death={death_reason=death_duel killer=2202258}}
 }
@@ -3544,7 +3544,7 @@
 	trait=charitable
 	trait=intricate_webweaver
 	trait=cruel
-	trait=is_malnourished
+	trait=malnourished
 	trait=gluttonous
 	trait=kinslayer
 	trait=ruthless
@@ -3609,7 +3609,7 @@
 	mother=2202365
 	trait=indulgent_wastrel
 	trait=slothful
-	trait=is_fat
+	trait=fat
 	trait=gluttonous
 	trait=cynical
 	2628.8.7={birth=yes}
@@ -4011,7 +4011,7 @@
 	religion=naqshbandi
 	father=2202328
 	trait=ismailagha
-	trait=has_typhus
+	trait=camp_fever
 	2532.3.3={birth=yes}
 	2589.3.1={death={death_reason=death_trait}}
 }
@@ -4090,7 +4090,7 @@
 	religion=naqshbandi
 	father=2202332
 	trait=charismatic_negotiator
-	trait=fair
+	trait=attractive
 	trait=ismailagha
 	trait=strategist
 	trait=deceitful
@@ -4280,7 +4280,7 @@
 	dynasty=0
 	culture=central_anatolian
 	religion=ruhi
-	trait=has_tuberculosis
+	trait=consumption
 	2585.2.6={birth=yes}
 	2603.1.1={add_spouse=2202071}
 	2611.1.10={death={death_reason=death_trait}}
@@ -4505,7 +4505,7 @@
 	dynasty=1820288 #Aziyade
 	culture=circassian
 	religion=ivri
-	trait=fair
+	trait=attractive
 	trait=homosexual
 	give_nickname=nick_the_culture
 	2620.4.7={birth=yes
@@ -4878,7 +4878,7 @@
 	trait=honorable
 	trait=zealous
 	trait=iskenderpasha
-	trait=is_fat
+	trait=fat
 	father=2202405
 	2134.1.30={birth=yes}
 	2187.1.4={death={death_reason=death_trait}}
@@ -5072,7 +5072,7 @@
 	culture=rumelian
 	religion=ruhi
 	father=2202423
-	trait=has_tuberculosis
+	trait=consumption
 	trait=ambitious
 	2537.7.17={birth=yes}
 	2570.5.21={death={death_reason=death_trait}}

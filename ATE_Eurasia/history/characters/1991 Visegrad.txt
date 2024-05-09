@@ -4,7 +4,7 @@
 	father=1991018
 	culture=czech
 	religion=chronicler
-	trait=fair
+	trait=attractive
 	trait=cynical
 	trait=ambitious
 	trait=arbitrary
@@ -40,7 +40,7 @@
 	religion=neuhumanist
 	father=1991016
 	female=yes
-	trait=fair
+	trait=attractive
 	trait=cynical
 	trait=wroth
 	trait=arbitrary
@@ -58,7 +58,7 @@
 	dynasty=1968052 #Jebavı
 	culture=czech
 	religion=neuhumanist
-	trait=fair
+	trait=attractive
 	trait=cynical
 	trait=ambitious
 	trait=branch_realism
@@ -66,7 +66,7 @@
 	trait=uncouth
 	trait=shrewd
 	trait=scholar
-	trait=martial_cleric
+	trait=dutiful_cleric
 	2537.9.13={birth=yes}
 	2580.1.1={death={
 				death_reason=death_murder #Pushed off a Tower
@@ -81,7 +81,7 @@
 	religion=neuhumanist
 	father=1991016
 	female=yes
-	trait=fair
+	trait=attractive
 	trait=cynical
 	trait=kind
 	trait=just
@@ -99,7 +99,7 @@
 	dynasty=1968051 #Komenskı
 	culture=czech
 	religion=mariavite
-	trait=fair
+	trait=attractive
 	trait=cynical
 	trait=kind
 	trait=temperate
@@ -137,7 +137,7 @@
 	father=1991014
 	mother=1991013
 	religion=neuhumanist
-	trait=fair
+	trait=attractive
 	trait=cynical
 	trait=ambitious
 	trait=arbitrary
@@ -267,7 +267,7 @@
 	culture=hungarian
 	religion=nepmese
 	trait=honest
-	trait=seducer
+	trait=master_seducer
 	trait=grey_eminence
 	father=1991102
 	2524.7.14={birth=yes}
@@ -348,7 +348,7 @@
 	female=yes
 	trait=gregarious
 	trait=gardener
-	trait=fair
+	trait=attractive
 	father=1991105
 	2580.7.1={birth=yes}
 	2596.11.10={add_spouse=1991126}
@@ -362,7 +362,7 @@
 	female=yes
 	trait=gregarious
 	trait=gardener
-	trait=fair
+	trait=attractive
 	father=1991105
 	2585.7.5={birth=yes}
 	2635.9.12={death=yes}
@@ -373,7 +373,7 @@
 	culture=hungarian
 	religion=nepmese
 	trait=lustful
-	trait=fair
+	trait=attractive
 	trait=fortune_builder
 	father=1991105
 	2595.11.8={birth=yes}
@@ -400,7 +400,7 @@
 	female=yes
 	trait=zealous
 	trait=falconer
-	trait=fair
+	trait=attractive
 	father=1991111
 	2633.8.7={birth=yes}
 	2660.6.22={add_matrilineal_spouse=19911050}
@@ -445,7 +445,7 @@
 	dynasty=2045110 #Fehérlófi
 	culture=hungarian
 	religion=nepmese
-	trait=is_fat
+	trait=fat
 	trait=trusting
 	trait=gluttonous
 	trait=fortune_builder
@@ -553,7 +553,7 @@
 	religion=nepmese
 	trait=gregarious
 	trait=drunkard
-	trait=is_fat
+	trait=fat
 	father=1991121
 	2620.8.30={birth=yes}
 	2680.1.1={death=yes}
@@ -635,7 +635,7 @@
 	religion=calvinist
 	female=yes
 	trait=fortune_builder
-	trait=seducer
+	trait=master_seductress
 	trait=patient
 	mother=1991127
 	2630.1.29={birth=yes}
@@ -702,11 +702,11 @@
 	trait=falconer
 	trait=poet
 	trait=bisexual
-	trait=seducer
+	trait=master_seducer
 	trait=charitable
 	trait=cavalry_leader
 	trait=proud
-	trait=martial_cleric
+	trait=dutiful_cleric
 	martial=7
 	diplomacy=7
 	stewardship=3
@@ -779,7 +779,7 @@
 	dynasty=2926073 #Puci
 	culture=romani
 	religion=nepmese
-	trait=martial_cleric
+	trait=dutiful_cleric
 	trait=scarred
 	trait=one_eyed
 	trait=zealous
@@ -808,7 +808,7 @@
 	female=yes
 	culture=romani
 	religion=nepmese
-	trait=fair
+	trait=attractive
 	trait=kind
 	trait=mystic
 	trait=gregarious
@@ -857,7 +857,7 @@
 	trait=temperate
 	trait=diligent
 	trait=shy
-	trait=martial_cleric
+	trait=dutiful_cleric
 	father=199154
 	2630.6.14={birth=yes}
 	2655.8.8={add_spouse=199157}
@@ -979,7 +979,7 @@
 	dynasty=2045114 #Toldi
 	culture=hungarian
 	religion=coronite
-	trait=martial_cleric
+	trait=dutiful_cleric
 	trait=holy_warrior
 	trait=gregarious
 	trait=charitable
@@ -1126,7 +1126,7 @@
 	culture=hungarian
 	religion=coronite
 	trait=tough_soldier
-	trait=robust
+	trait=brawny
 	trait=arbitrary
 	trait=diligent
 	trait=architect
@@ -1195,7 +1195,7 @@
 	trait=greedy
 	trait=gregarious
 	trait=chaste
-	trait=feeble
+	trait=frail
 	trait=weak
 	trait=cruel
 	martial=4
@@ -1240,14 +1240,14 @@
 	trait=honest
 	trait=kind
 	trait=chaste
-	trait=fair
+	trait=attractive
 	trait=trusting
 	martial=5
 	diplomacy=8
 	stewardship=5
 	intrigue=4
 	learning=4
-	give_nickname=nick_the_fair
+	give_nickname=nick_the_attractive
 	father=19911012
 	2348.6.6={birth=yes}
 	2358.2.4={religion=mariavite}
@@ -1339,7 +1339,7 @@
 	learning=6
 	father=19911016
 	2344.4.4={birth=yes}
-	2369.6.9={add_spouse=19911013}  #Toldi Janka the Fair
+	2369.6.9={add_spouse=19911013}  #Toldi Janka the attractive
 	2397.7.2={death=yes}
 }
 19911018={
@@ -1371,7 +1371,7 @@
 	religion=coronite
 	trait=content
 	trait=brilliant_strategist
-	trait=fair
+	trait=attractive
 	trait=lustful
 	trait=authoritative
 	trait=aggressive_leader
@@ -1438,7 +1438,7 @@
 	religion=coronite
 	trait=greedy
 	trait=tough_soldier
-	trait=robust
+	trait=brawny
 	trait=zealous
 	trait=brave
 	trait=temperate
@@ -1581,7 +1581,7 @@
 	female=yes
 	culture=malopolan
 	religion=mariavite
-	trait=fair
+	trait=attractive
 	trait=quick
 	trait=lustful
 	trait=slothful
@@ -1730,7 +1730,7 @@
 	religion=coronite
 	trait=proud
 	trait=tough_soldier
-	trait=is_fat
+	trait=fat
 	trait=zealous
 	trait=brave
 	trait=gluttonous
@@ -1889,8 +1889,8 @@
 	trait=lustful
 	trait=temperate
 	trait=patient
-	trait=seducer
-	trait=martial_cleric
+	trait=master_seductress
+	trait=dutiful_cleric
 	martial=5
 	diplomacy=5
 	stewardship=7
@@ -2030,7 +2030,7 @@
 	trait=patient
 	trait=socializer
 	trait=stubborn
-	trait=martial_cleric
+	trait=dutiful_cleric
 	trait=bisexual
 	martial=3
 	diplomacy=5
@@ -2161,7 +2161,7 @@
 	religion=mariavite
 	trait=kind
 	trait=patient
-	trait=robust
+	trait=brawny
 	trait=depressed
 	trait=chaste
 	father=19911035
@@ -2190,7 +2190,7 @@
 	trait=cruel
 	trait=falconer
 	trait=strong
-	trait=fair
+	trait=attractive
 	give_nickname=nick_longbeard
 	father=19911059
 	2534.1.16={birth=yes}
@@ -2201,7 +2201,7 @@
 	dynasty=2045115 #Bem
 	culture=malopolan
 	religion=mariavite
-	trait=feeble
+	trait=frail
 	trait=ill
 	trait=proud
 	trait=mystic
@@ -2214,7 +2214,7 @@
 	dynasty=2045115 #Bem
 	culture=malopolan
 	religion=mariavite
-	trait=feeble
+	trait=frail
 	trait=deceitful
 	trait=shrewd
 	trait=proud
@@ -2245,7 +2245,7 @@
 	religion=mariavite
 	female=yes
 	trait=sympathy_islam
-	trait=fair
+	trait=attractive
 	trait=stubborn
 	trait=charismatic_negotiator
 	trait=chaste
@@ -2384,7 +2384,7 @@
 	female=yes
 	culture=slovak
 	religion=mariavite
-	trait=feeble
+	trait=frail
 	trait=deceitful
 	mother=19911104
 	2637.2.19={birth=yes}
@@ -2427,7 +2427,7 @@
 	culture=odrzan
 	religion=mariavite
 	trait=amateurish_plotter
-	trait=robust
+	trait=brawny
 	trait=lefthanded
 	trait=socializer
 	2634.4.8={birth=yes}
@@ -2773,7 +2773,7 @@
 	culture=kaliningradyets
 	religion=proletcult
 	trait=elusive_shadow
-	trait=fair
+	trait=attractive
 	trait=hedonist
 	trait=seductress
 	trait=kind
@@ -2813,7 +2813,7 @@
 	mother=19911139
 	trait=dull
 	trait=freckles
-	trait=fair
+	trait=attractive
 	2658.8.28={birth=yes
 		effect={
 			c_19911136={
@@ -2832,7 +2832,7 @@
 	mother=19911139
 	trait=quick
 	trait=freckles
-	trait=fair
+	trait=attractive
 	2665.1.19={birth=yes
 		effect={
 			c_19911138={
@@ -2984,7 +2984,7 @@
 	religion=mariavite
 	trait=charismatic_negotiator
 	trait=musician
-	trait=feeble
+	trait=frail
 	father=19911151
 	mother=19911152
 	give_nickname=nick_niemen
@@ -3074,7 +3074,7 @@
 	trait=charismatic_negotiator
 	trait=bisexual
 	trait=poet
-	trait=seducer
+	trait=master_seducer
 	trait=arbitrary
 	trait=deceitful
 	trait=kind
@@ -3113,7 +3113,7 @@
 	religion=chronicler
 	
 	trait=charismatic_negotiator
-	trait=fair
+	trait=attractive
 	trait=charitable
 	trait=just
 	trait=kind
@@ -3279,7 +3279,7 @@
 	trait=branch_industrialism
 	trait=scholar
 	trait=musician
-	trait=fair
+	trait=attractive
 	trait=cynical
 	trait=gregarious
 	trait=charitable
@@ -3298,7 +3298,7 @@
 	father=1991211
 	mother=1991212
 
-	trait=fair
+	trait=attractive
 	trait=affectionate
 	
 	2656.7.11={birth=yes}
@@ -3467,7 +3467,7 @@
 	mother=1991222
 
 	trait=fortune_builder
-	trait=robust
+	trait=brawny
 	trait=pious
 	trait=hunter
 	trait=kind
@@ -3626,7 +3626,7 @@
 	religion=mariavite
 	trait=tough_soldier
 	trait=strong
-	trait=fair
+	trait=attractive
 	trait=duelist
 	trait=peasant_leader
 	trait=brave
@@ -3646,7 +3646,7 @@
 	dynasty=2000088 #Wenta
 	culture=kashubian
 	religion=oasite
-	trait=robust
+	trait=brawny
 	trait=tough_soldier
 	father=1991231
 	2629.7.10={birth=yes}
@@ -3709,7 +3709,7 @@
 	dynasty=2000090 #Kwiatkowsczi
 	culture=kashubian
 	religion=mariavite
-	trait=martial_cleric
+	trait=dutiful_cleric
 	trait=administrator
 	trait=scholar
 	trait=content
@@ -3810,7 +3810,7 @@
 	trait=underhanded_rogue
 	trait=trickster
 	trait=legit_bastard
-	trait=fair
+	trait=attractive
 	trait=duelist
 	2593.8.17={birth=yes}
 	2615.1.1={add_spouse=1991245}
@@ -3859,7 +3859,7 @@
 	religion=oasite
 	trait=indulgent_wastrel
 	trait=quick
-	trait=feeble
+	trait=frail
 	trait=diligent
 	father=1991243
 	mother=1991247
@@ -3945,7 +3945,7 @@
 	dynasty=2941001 #Pilejczyk
 	culture=warmzur
 	religion=lutheran
-	trait=robust
+	trait=brawny
 	trait=misguided_warrior
 	father=1991253
 	mother=1991254
@@ -4114,7 +4114,7 @@
 	culture=yiddish
 	religion=haskalah
 	trait=underhanded_rogue
-	trait=robust
+	trait=brawny
 	trait=sympathy_christendom
 	father=1991263
 	mother=1991267
@@ -4422,9 +4422,9 @@
 	dynasty=2130215 #Lejszys
 	culture=finnish
 	religion=oasite
-	trait=martial_cleric
+	trait=dutiful_cleric
 	trait=dwarf
-	trait=robust
+	trait=brawny
 	trait=diligent
 	trait=shy
 	trait=painter
@@ -4529,7 +4529,7 @@
 	culture=wielkopolan
 	religion=mariavite
 	trait=thrifty_clerk
-	trait=robust
+	trait=brawny
 	trait=groomed
 	father=1991296
 	mother=1991297
@@ -4555,7 +4555,7 @@
 	trait=elusive_shadow
 	trait=scholar
 	trait=poet
-	trait=is_malnourished
+	trait=malnourished
 	father=1991303
 	2643.4.2={birth=yes}
 	2660.1.1={effect={add_claim=c_konin}}
@@ -4575,10 +4575,10 @@
 	culture=wielkopolan
 	religion=mariavite
 	secret_religion=coronite
-	trait=martial_cleric
+	trait=dutiful_cleric
 	trait=ruthless
 	trait=scholar
-	trait=seducer
+	trait=master_seducer
 	father=1991305
 	2628.12.25={birth=yes}
 	2680.1.1={death=yes}
@@ -4813,7 +4813,7 @@
 	religion=mariavite
 	trait=skilled_tactician
 	trait=strategist
-	trait=robust
+	trait=brawny
 	trait=rough_terrain_leader
 	trait=shy
 	trait=sympathy_islam
@@ -4887,7 +4887,7 @@
 	religion=mariavite
 	trait=flamboyant_schemer
 	trait=physician
-	trait=fair
+	trait=attractive
 	trait=socializer
 	trait=headache
 	trait=troubled_pregnancy
@@ -4919,8 +4919,8 @@
 	dynasty=1822094 #Peretz
 	culture=yiddish
 	religion=haredi
-	trait=martial_cleric
-	trait=fair
+	trait=dutiful_cleric
+	trait=attractive
 	trait=musician
 	father=1991327
 	mother=1991328
@@ -5051,7 +5051,7 @@
 	disallow_random_traits=yes
 	trait=indulgent_wastrel
 	trait=baptized_by_pope
-	trait=robust
+	trait=brawny
 	trait=dull
 	trait=musician
 	trait=kind
@@ -5100,7 +5100,7 @@
 	female=yes
 	culture=malopolan
 	religion=mariavite
-	trait=martial_cleric
+	trait=dutiful_cleric
 	trait=physician
 	trait=shrewd
 	trait=diligent
@@ -5201,7 +5201,7 @@
 	religion=mariavite
 	trait=elusive_shadow
 	trait=baptized_by_pope
-	trait=schemer
+	trait=master_schemer
 	trait=patient
 	trait=temperate
 	trait=envious
@@ -5293,7 +5293,7 @@
 	culture=silesian
 	religion=mariavite
 	trait=midas_touched
-	trait=fair
+	trait=attractive
 	trait=scholar
 	trait=pregnancy_finishing
 	2639.3.16={birth=yes}
@@ -5504,7 +5504,7 @@
 	culture=moravian
 	religion=chronicler
 	father=1991379
-	trait=martial_cleric
+	trait=dutiful_cleric
 	trait=painter
 	trait=scholar
 	trait=erudite
@@ -5555,9 +5555,9 @@
 	dynasty=2129224 #Hajbura
 	culture=silesian
 	religion=mariavite
-	trait=martial_cleric
+	trait=dutiful_cleric
 	trait=bisexual
-	trait=is_fat
+	trait=fat
 	trait=poet
 	trait=diligent
 	trait=kind
@@ -5644,7 +5644,7 @@
 	religion=mariavite
 	trait=midas_touched
 	trait=familyperson
-	trait=is_fat
+	trait=fat
 	trait=charitable
 	trait=administrator
 	2605.4.5={birth=yes}
@@ -5746,7 +5746,7 @@
 	culture=rusyn
 	religion=mariavite
 	trait=grey_eminence
-	trait=fair
+	trait=attractive
 	trait=groomed
 	trait=trusting
 	trait=envious

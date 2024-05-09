@@ -55,8 +55,8 @@
 	intrigue=3
 	learning=4
 	trait=charismatic_negotiator
-	trait=fair
-	trait=feeble
+	trait=attractive
+	trait=frail
 	trait=temperate
 	trait=proud
 	father=1805003
@@ -110,7 +110,7 @@
 	stewardship=3
 	intrigue=4
 	learning=6
-	trait=martial_cleric
+	trait=dutiful_cleric
 	trait=mystic
 	trait=scholar
 	trait=proud
@@ -132,7 +132,7 @@
 	trait=genius
 	trait=scholar
 	trait=mystic
-	trait=feeble
+	trait=frail
 	#trait=sympathy_for_neuhumanism #add in later
 	2633.12.27={birth=yes}
 	2717.7.23={death=yes}
@@ -186,7 +186,7 @@
 	intrigue=3
 	learning=4
 	trait=skilled_tactician 
-	trait=robust
+	trait=brawny
 	trait=cynical
 	trait=diligent
 	trait=wroth
@@ -292,7 +292,7 @@
 	stewardship=4
 	intrigue=5
 	learning=4
-	trait=martial_cleric
+	trait=dutiful_cleric
 	trait=cynical
 	trait=slothful
 	trait=quick
@@ -501,7 +501,7 @@
 	father=1805036
 	culture=swabian
 	religion=lutheran
-	trait=is_malnourished
+	trait=malnourished
 	give_nickname=nick_the_hollow
 	2186.8.19={birth=yes}
 	2224.1.29={death=yes}
@@ -612,7 +612,7 @@
 	religion=lutheran
 	trait=inspiring_leader
 	trait=heavy_infantry_leader
-	trait=fair
+	trait=attractive
 	trait=brave	
 	trait=patient
 	trait=falconer
@@ -850,7 +850,7 @@
 	culture=swabian
 	religion=lutheran
 	trait=giant
-	trait=robust
+	trait=brawny
 	trait=kind
 	give_nickname=nick_the_giant
 	2392.7.6={birth=yes}
@@ -1316,7 +1316,7 @@
 	father=1805110
 	culture=bavarian
 	religion=lutheran
-	trait=is_fat
+	trait=fat
 	give_nickname=nick_the_fat
 	2218.10.9={birth=yes}
 	2245.3.14={death=yes}
@@ -1352,7 +1352,7 @@
 	father=1805113
 	culture=bavarian
 	religion=catholic
-	trait=has_tuberculosis
+	trait=consumption
 	2274.8.12={birth=yes}
 	2285.9.1={death=yes}
 }
@@ -1709,7 +1709,7 @@
 	religion=catholic
 	father=1805146
 	trait=twin
-	trait=fair
+	trait=attractive
 	trait=crowned_by_priest
 	trait=groomed
 	trait=quick
@@ -1734,14 +1734,14 @@
 	religion=catholic
 	father=1805146
 	trait=twin
-	trait=fair
+	trait=attractive
 	trait=quick
 	trait=lustful
 	trait=envious
 	trait=ambitious
 	trait=deceitful
 	trait=charitable
-	trait=seducer
+	trait=master_seducer
 	give_nickname=nick_the_whoremonger
 	2604.2.26={birth=yes}
 	2629.12.30={death=yes}
@@ -2079,7 +2079,7 @@
         culture=swabian
         religion=lutheran
         trait=legendary
-        trait=robust
+        trait=brawny
         disallow_random_traits=yes
         occluded=yes
         father=1805177

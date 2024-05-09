@@ -51,7 +51,7 @@
 	trait=amateurish_plotter
 	trait=just
 	trait=hedonist
-	trait=martial_cleric
+	trait=dutiful_cleric
 	disallow_random_traits=yes
 	2639.4.24={birth=yes}
 	2674.6.30={death=yes}
@@ -137,7 +137,7 @@
 	trait=poet
 	trait=wroth
 	trait=diligent
-	trait=robust
+	trait=brawny
 	2613.5.1={birth=yes}
 	2697.12.25={death=yes}
 }
@@ -184,7 +184,7 @@
 	trait=temperate
 	trait=paranoid
 	trait=craven
-	trait=is_malnourished
+	trait=malnourished
 	2601.5.29={birth=yes}
 	2680.1.1={death=yes}
 }
@@ -288,7 +288,7 @@
 	secret_religion=dukhovnye
 	dynasty=1147004
 	trait=scholar
-	trait=feeble
+	trait=frail
 	trait=scholarly_theologian
 	martial=3
 	diplomacy=2
@@ -307,7 +307,7 @@
 	dynasty=1585001
 	trait=zealous
 	trait=deceitful
-	trait=martial_cleric
+	trait=dutiful_cleric
 	martial=4
 	diplomacy=3
 	stewardship=3
@@ -369,7 +369,7 @@
 	religion=pravoslavie
 	trait=celibate
 	trait=zealous
-	trait=martial_cleric
+	trait=dutiful_cleric
 	father=1703025
 	dynasty=1147006
 	2612.4.25={birth=yes}
@@ -507,7 +507,7 @@
 	intrigue=5
 	learning=5
 	trait=scholarly_theologian
-	trait=robust
+	trait=brawny
 	trait=gregarious
 	trait=cynical
 	trait=kind
@@ -529,7 +529,7 @@
 	trait=detached_priest
 	trait=proud
 	trait=hunter
-	trait=fair
+	trait=attractive
 	trait=diligent
 	trait=envious
 	2619.4.8={birth=yes}
@@ -751,7 +751,7 @@
 	stewardship=6
 	intrigue=2
 	learning=3
-	trait=martial_cleric
+	trait=dutiful_cleric
 	trait=diligent
 	trait=hunter
 	trait=paranoid
@@ -892,7 +892,7 @@
 	stewardship=5
 	intrigue=4
 	learning=5
-	trait=martial_cleric
+	trait=dutiful_cleric
 	trait=scholar
 	trait=genius
 	trait=diligent
@@ -974,7 +974,7 @@
 	stewardship=5
 	intrigue=4
 	learning=5
-	trait=martial_cleric
+	trait=dutiful_cleric
 	trait=pious
 	trait=homosexual
 	trait=defensive_leader
@@ -998,7 +998,7 @@
 	learning=5
 	trait=tough_soldier
 	trait=familyperson
-	trait=robust
+	trait=brawny
 	trait=shrewd
 	trait=lustful
 	trait=stubborn
@@ -1058,7 +1058,7 @@
 	stewardship=5
 	intrigue=4
 	learning=5
-	trait=martial_cleric
+	trait=dutiful_cleric
 	trait=authoritative
 	trait=pious
 	trait=arbitrary
@@ -1125,10 +1125,10 @@
 	stewardship=5
 	intrigue=4
 	learning=5
-	trait=martial_cleric
+	trait=dutiful_cleric
 	trait=envious
 	trait=pious
-	trait=fair
+	trait=attractive
 	trait=familyperson
 	trait=diligent
 	disallow_random_traits=yes
@@ -1148,7 +1148,7 @@
 	learning=5
 	trait=tough_soldier
 	trait=wroth
-	trait=fair
+	trait=attractive
 	trait=lefthanded
 	trait=deceitful
 	father=1703011
@@ -1205,7 +1205,7 @@
 	stewardship=5
 	intrigue=4
 	learning=5
-	trait=martial_cleric
+	trait=dutiful_cleric
 	trait=gregarious
 	trait=brave
 	trait=pious
@@ -1224,7 +1224,7 @@
 	stewardship=5
 	intrigue=4
 	learning=5
-	trait=martial_cleric
+	trait=dutiful_cleric
 	trait=slothful
 	trait=ambitious
 	trait=pious
@@ -1290,7 +1290,7 @@
 	trait=gregarious
 	trait=arbitrary
 	trait=quick
-	trait=schemer
+	trait=master_schemer
 	trait=deceitful
 	father=1703066
 	mother=1703067
@@ -1311,7 +1311,7 @@
 	learning=5
 	trait=intricate_webweaver
 	trait=one_eyed
-	trait=fair
+	trait=attractive
 	trait=shrewd
 	trait=groomed
 	trait=falconer
@@ -1333,7 +1333,7 @@
 	intrigue=4
 	learning=5
 	trait=thrifty_clerk
-	trait=is_fat
+	trait=fat
 	trait=patient
 	trait=arbitrary
 	trait=honorable
@@ -1521,7 +1521,7 @@
 	stewardship=5
 	intrigue=4
 	learning=5
-	trait=martial_cleric
+	trait=dutiful_cleric
 	trait=stubborn
 	trait=selfish
 	trait=cruel
@@ -1715,7 +1715,7 @@
 	stewardship=5
 	intrigue=4
 	learning=5
-	trait=martial_cleric
+	trait=dutiful_cleric
 	trait=cynical
 	trait=cruel
 	trait=proud
@@ -1919,7 +1919,7 @@
 	stewardship=5
 	intrigue=4
 	learning=5
-	trait=martial_cleric
+	trait=dutiful_cleric
 	trait=envious
 	trait=honest
 	trait=proud
@@ -1961,11 +1961,11 @@
 	intrigue=4
 	learning=5
 	religion=old_believer
-	trait=martial_cleric
+	trait=dutiful_cleric
 	trait=chaste
 	trait=erudite
 	trait=rude
-	trait=fair
+	trait=attractive
 	disallow_random_traits=yes
 	2638.5.31={birth=yes}
 	2704.1.1={death=yes}
@@ -2096,7 +2096,7 @@
 	trait=poet
 	trait=blinded
 	trait=just
-	trait=feeble
+	trait=frail
 	2628.1.1={birth=yes}
 	2658.1.1={add_spouse=1703112}
 	2750.1.1={death=yes}
@@ -2107,7 +2107,7 @@
 	culture=chuvash
 	religion=proletcult
 	female=yes
-	trait=fair
+	trait=attractive
 	trait=painter
 	trait=familyperson
 	2633.1.1={birth=yes}
@@ -2246,7 +2246,7 @@
 	culture=muscovite
 	religion=pravoslavie
 	trait=tough_soldier
-	trait=fair
+	trait=attractive
 	trait=rude
 	trait=socializer
 	trait=lustful
@@ -2294,7 +2294,7 @@
 	female=yes
 	culture=muscovite
 	religion=pravoslavie
-	trait=martial_cleric
+	trait=dutiful_cleric
 	trait=musician
 	trait=envious
 	trait=familyperson
@@ -2523,7 +2523,7 @@
 	female=yes
 	culture=chuvash
 	religion=dvoeverie
-	trait=martial_cleric
+	trait=dutiful_cleric
 	trait=erudite
 	trait=selfish
 	trait=temperate
@@ -2537,7 +2537,7 @@
 	culture=chuvash
 	religion=dvoeverie
 	trait=scholarly_theologian
-	trait=fair
+	trait=attractive
 	trait=patient
 	trait=pious
 	trait=authoritative
@@ -2566,7 +2566,7 @@
 	culture=tatar
 	religion=ruhi
 	trait=intricate_webweaver
-	trait=fair
+	trait=attractive
 	trait=patient
 	trait=ambitious
 	trait=kind
@@ -2636,7 +2636,7 @@
 	culture=severyane
 	religion=pravoslavie
 	trait=tough_soldier
-	trait=robust
+	trait=brawny
 	trait=wroth
 	trait=authoritative
 	trait=legendary
@@ -2651,7 +2651,7 @@
 	culture=severyane
 	religion=pravoslavie
 	trait=charismatic_negotiator
-	trait=feeble
+	trait=frail
 	trait=erudite
 	trait=gregarious
 	father=1703151
@@ -2663,8 +2663,8 @@
 	dynasty=1703184 #Kobyla
 	culture=severyane
 	religion=pravoslavie
-	trait=martial_cleric
-	trait=robust
+	trait=dutiful_cleric
+	trait=brawny
 	trait=brave
 	trait=greedy
 	father=1703152
@@ -2795,7 +2795,7 @@
 	culture=kubantsy
 	religion=orthodox
 	trait=charismatic_negotiator
-	trait=fair
+	trait=attractive
 	trait=erudite
 	trait=honest
 	father=1703161
@@ -2865,7 +2865,7 @@
 	stewardship=7
 	intrigue=3
 	learning=5
-	trait = is_fat
+	trait = fat
 	trait = gamer
 	trait = cruel
 	trait = wroth

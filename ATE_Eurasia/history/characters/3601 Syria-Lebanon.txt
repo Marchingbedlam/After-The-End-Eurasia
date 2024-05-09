@@ -9,7 +9,7 @@
 	trait=scholarly_theologian
 	trait=organizer
 	trait=poet
-	trait=feeble
+	trait=frail
 	trait=quick
 	trait=honest
 	trait=stubborn
@@ -53,7 +53,7 @@
 	father=3601003
 	trait=elusive_shadow
 	trait=detached_priest
-	trait=schemer
+	trait=master_schemer
 	trait=greedy
 	trait=gregarious
 	trait=ambitious
@@ -142,7 +142,7 @@
 	female=yes
 	father=3601009
 	trait=charismatic_negotiator
-	trait=fair
+	trait=attractive
 	trait=trusting
 	trait=humble
 	trait=honest
@@ -532,7 +532,7 @@
 	2618.1.1={birth=yes}
 }
 3601509={
-	name="Fairuz" 
+	name="attractiveuz" 
 	dynasty=2105002 #Rahbani
 	culture=lebneni
 	religion=catholic
@@ -542,7 +542,7 @@
 	trait=grey_eminence
 	trait=byzantine_rite
 	trait=sympathy_islam
-	trait=fair
+	trait=attractive
 	trait=musician
 	trait=gregarious
 	trait=groomed
@@ -609,7 +609,7 @@
 	mother=3601513
 	trait=mastermind_theologian
 	trait=scholar
-	trait=feeble
+	trait=frail
 	trait=temperate
 	trait=stubborn
 	2624.1.1={birth=yes}
@@ -654,7 +654,7 @@
 	father=3601512
 	mother=3601513
 	trait=tough_soldier
-	trait=robust
+	trait=brawny
 	trait=wroth
 	trait=stubborn
 	trait=zealous
@@ -764,7 +764,7 @@
 	dynasty=2105007 #As-Sulah
 	culture=lebneni
 	religion=sunni
-	trait=martial_cleric
+	trait=dutiful_cleric
 	trait=humble
 	trait=craven
 	trait=patient
@@ -792,7 +792,7 @@
 	religion=sunni
 	father=3601531
 	mother=3601532
-	trait=martial_cleric
+	trait=dutiful_cleric
 	trait=humble
 	trait=craven
 	trait=patient
@@ -806,7 +806,7 @@
 	culture=lebneni
 	religion=sunni
 	father=3601533
-	trait=martial_cleric
+	trait=dutiful_cleric
 	trait=humble
 	trait=craven
 	trait=patient
@@ -1212,7 +1212,7 @@
 	religion=sunni
 	father=3601551
 	mother=3601562
-	trait=has_tuberculosis
+	trait=consumption
 	2276.8.12={birth=yes}
 	2279.9.10={death={death_reason=death_trait}}
 }
@@ -1232,8 +1232,8 @@
 	dynasty=2103135 #al-Razzaq
 	culture=suriyi
 	religion=sunni
-	trait=feeble
-	trait=is_malnourished
+	trait=frail
+	trait=malnourished
 	trait=kind
 	trait=shy
 	trait=intricate_webweaver
@@ -1297,7 +1297,7 @@
 	dynasty=2103138 #Jazairi
 	culture=suriyi
 	religion=sunni
-	trait=fair
+	trait=attractive
 	father=3601577
 	2308.7.16={birth=yes}
 	2328.10.10={add_spouse=3601561}

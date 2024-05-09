@@ -32,7 +32,7 @@
 	learning=4
 	trait=tough_soldier
 	trait=erudite
-	trait=robust
+	trait=brawny
 	trait=kind
 	trait=just
 	trait=honest
@@ -90,7 +90,7 @@
 	health=8
 	trait=brilliant_strategist
 	trait=duelist
-	trait=robust
+	trait=brawny
 	trait=just
 	trait=humble
 	trait=brave
@@ -168,7 +168,7 @@
 	stewardship=5
 	intrigue=11
 	learning=9
-	trait=martial_cleric
+	trait=dutiful_cleric
 	trait=arbitrary
 	trait=cynical
 	trait=wroth
@@ -189,7 +189,7 @@
 	learning=3
 	trait=skilled_tactician
 	trait=peasant_leader
-	trait=robust
+	trait=brawny
 	trait=diligent
 	trait=patient
 	trait=humble
@@ -213,7 +213,7 @@
 	stewardship=6
 	intrigue=3
 	learning=1
-	trait=is_fat
+	trait=fat
 	trait=tough_soldier
 	trait=freckles_3
 	trait=dull
@@ -281,9 +281,9 @@
 	stewardship=4
 	intrigue=3
 	learning=4
-	trait=martial_cleric
+	trait=dutiful_cleric
 	trait=strong
-	trait=robust
+	trait=brawny
 	trait=erudite
 	trait=scholar
 	trait=patient
@@ -435,7 +435,7 @@
 	diplomacy=6
 	learning=9
 	trait=scholarly_theologian
-	trait=is_fat
+	trait=fat
 	trait=scholar
 	trait=patient
 	trait=content
@@ -454,7 +454,7 @@
 	intrigue=4
 	learning=4
 	trait=tough_soldier
-	trait=robust
+	trait=brawny
 	trait=one_eyed
 	2635.7.12={birth=yes}
 	2670.1.1={death=yes}
@@ -506,7 +506,7 @@
 	intrigue=8
 	learning=5
 	trait=intricate_webweaver
-	trait=fair
+	trait=attractive
 	trait=groomed
 	trait=envious
 	trait=deceitful
@@ -523,8 +523,8 @@
 	stewardship=6
 	intrigue=3
 	learning=6
-	trait=martial_cleric
-	trait=feeble
+	trait=dutiful_cleric
+	trait=frail
 	trait=scholar
 	trait=diligent
 	trait=proud
@@ -566,8 +566,8 @@
 	stewardship=5
 	intrigue=3
 	learning=6
-	trait=martial_cleric
-	trait=is_fat
+	trait=dutiful_cleric
+	trait=fat
 	trait=sturdy
 	trait=socializer
 	trait=kind
@@ -755,7 +755,7 @@
 	intrigue=5
 	learning=5
 	trait=flamboyant_schemer
-	trait=robust
+	trait=brawny
 	trait=patient
 	trait=greedy
 	trait=brave
@@ -777,7 +777,7 @@
 	learning=7
 	trait=brilliant_strategist
 	trait=quick
-	trait=robust
+	trait=brawny
 	trait=shrewd
 	trait=groomed #give him the mod's trait that makes him a
 	trait=strategist # great military leader and a great fighter
@@ -837,7 +837,7 @@
 	diplomacy=5
 	intrigue=3
 	learning=7
-	trait=martial_cleric
+	trait=dutiful_cleric
 	trait=poet
 	father=1501010
 	mother=1501045
@@ -879,7 +879,6 @@
 }
 1501046={
 	name="Medb"
-	dynasty=0
 	culture=irish
 	religion=catholic
 	martial=5
@@ -889,8 +888,8 @@
 	learning=4
 	trait=intricate_webweaver
 	trait=quick
-	trait=fair
-	trait=seducer
+	trait=attractive
+	trait=master_seductress
 	trait=proud
 	trait=envious
 	trait=cruel
