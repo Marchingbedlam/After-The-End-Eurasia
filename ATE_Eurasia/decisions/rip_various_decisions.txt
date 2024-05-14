@@ -734,30 +734,36 @@ targeted_decisions = {
 
 	commit_suicide_immortal = {
 		filter = self
-		ai_target_filter = self
+
 		ai = no
-		
+
 		potential = {
+			immortal = yes
 			is_adult = yes
 			prisoner = no
-			immortal = yes
 
 			OR = {
 				trait = depressed
-				age = 100
+				age >= 100
 			}
 		}
-		
+
 
 		allow = {
 			immortal = yes
+
 			OR = {
 				trait = depressed
-				age = 100
+				age >= 100
 			}
-			custom_tooltip = {
-				NOT = { has_character_flag = attempting_suicide }
-				text = attempting_suicide_tooltip
+
+			trigger_if = {
+				limit = { has_character_flag = attempting_suicide }
+
+				custom_tooltip = {
+					text = attempting_suicide_tooltip
+					always = no
+				}
 			}
 		}
 
@@ -768,54 +774,55 @@ targeted_decisions = {
 				set_character_flag = attempting_suicide
 
 				if = {
-					limit = { NOT = { trait = incapable } }
+					limit = { is_incapable = no }
 					character_event = { id = RIP.30200 }
 				}
-				if = {
-					limit = { trait = incapable } 
+				else = {
 					character_event = { id = RIP.30210 }
 				}
 			}
-			if = {
-				limit = { NOT = { has_dlc = "Reapers" } }
 
+			else = {
 				prestige = -200
 
 				add_character_modifier = {
-					modifier = suicide
+					name = suicide
 					duration = -1
 				}
+
 				death = { death_reason = death_suicide }
 			}
 		}
 
-		revoke_allowed = {
-			always = no
-		}
 		ai_will_do = {
 			factor = 0
 		}
 	}
+
 }
 
 decisions = {
+
 	seek_treatment = {
-		only_playable = yes
-		is_high_prio = yes
 		ai_check_interval = 6
-		
+
+		is_high_prio = yes
+
+		only_playable = yes
+
 		potential = {
-			is_playable = yes
-			NOT = { trait = troubled_pregnancy } #Treatment handled by special event chain.
+			has_assigned_minor_title = title_court_physician
+
 			OR = {
-				trait = has_tuberculosis
-				trait = has_typhoid_fever
-				trait = has_typhus
-				trait = has_bubonic_plague
-				trait = has_measles
-				trait = has_small_pox
-				trait = has_aztec_disease
-				trait = syphilitic
+				has_any_symptom = yes
+				trait = consumption
+				trait = slow_fever
+				trait = camp_fever
+				trait = bubonic_plague
+				trait = measles
+				trait = smallpox
+				trait = aztec_disease
+				trait = great_pox
 				trait = flu
 				trait = dysentery
 				trait = gout
@@ -823,45 +830,65 @@ decisions = {
 				trait = rabies
 				trait = cancer
 				trait = pneumonic
-				num_of_symptoms = 1
 			}
-			has_assigned_minor_title = title_court_physician
+
+			NOT = { trait = troubled_pregnancy } # Treatment handled by special event chain
 		}
-		
+
 		allow = {
 			prisoner = no
+
 			custom_tooltip = {
 				text = seek_treatment_tooltip_2
-				OR = {
-					NOT = { has_character_flag = being_treated }
-					had_character_flag = { flag = being_treated days = 20 }
+
+				trigger_if = {
+					limit = { has_character_flag = being_treated }
+
+					had_character_flag = {
+						flag = being_treated
+						days >= 20
+					}
 				}
+
 				OR = {
-					AND = {	#if you have a developed disease and want further treatment
-						character_disease_trigger = yes
-						OR = {
-							NOT = { has_character_flag = recent_treatment }
-							had_character_flag = { flag = recent_treatment days = 90 }
+					trigger_if = { # If you have a developed disease and want further treatment
+						limit = { character_disease_trigger = yes }
+
+						trigger_if = {
+							limit = { has_character_flag = recent_treatment }
+
+							had_character_flag = {
+								flag = recent_treatment
+								days >= 90
+							}
 						}
 					}
-					AND = {	#if you have multiple symptoms and want to seek further treatment
-						num_of_symptoms = 2
+
+					trigger_else_if = { # If your treatment failed and you want to try again (not sick, but have symptoms)
+						limit = { has_any_symptom = yes }
+
 						OR = {
-							NOT = { has_character_flag = recent_treatment }
-							had_character_flag = { flag = recent_treatment days = 30 }
+							# Anti-spam delay since event should handle this normally
+							had_character_flag = {
+								flag = disease_not_serious
+								days >= 10
+							}
+
+							had_character_flag = {
+								flag = developing_illness
+								days >= 10
+							}
 						}
-					}
-					AND = { #if your treatment failed and you want to try again
-						character_disease_trigger = no
-						num_of_symptoms = 1
-						OR = {
-							had_character_flag = { flag = disease_not_serious days = 10 } #anti-spam delay since event should handle this normally
-							had_character_flag = { flag = developing_illness days = 10 }
+
+						trigger_if = {
+							limit = { has_character_flag = recent_treatment }
+
+							had_character_flag = {
+								flag = recent_treatment
+								days >= 30
+							}
 						}
-						OR = {
-							NOT = { has_character_flag = recent_treatment }
-							had_character_flag = { flag = recent_treatment days = 30 }
-						}
+
 						NOR = {
 							has_character_modifier = successful_treatment_1
 							has_character_modifier = successful_treatment_2
@@ -877,231 +904,236 @@ decisions = {
 							has_character_modifier = symptom_treatment_4
 						}
 					}
+
+					trigger_if = { # If you have multiple symptoms and want to seek further treatment
+						limit = { num_of_symptoms >= 2 }
+
+						trigger_if = {
+							limit = { has_character_flag = recent_treatment }
+
+							had_character_flag = {
+								flag = recent_treatment
+								days >= 30
+							}
+						}
+					}
 				}
 			}
+
 			custom_tooltip = {
 				text = seek_treatment_tooltip_1
 			}
+
 			custom_tooltip = {
 				text = seek_treatment_tooltip_3
-				hidden_tooltip = {
-					NOR = {
-						has_character_modifier = mystic_treatment_decent
-						has_character_modifier = successful_treatment_1
-						has_character_modifier = successful_treatment_2
-						has_character_modifier = successful_treatment_3
-					}
+
+				NOR = {
+					has_character_modifier = mystic_treatment_decent
+					has_character_modifier = successful_treatment_1
+					has_character_modifier = successful_treatment_2
+					has_character_modifier = successful_treatment_3
 				}
 			}
 		}
+
 		effect = {
 			set_character_flag = recent_treatment
-			hidden_tooltip = {
-				remove_treatment_modifiers_effect = yes
-			}
+
 			custom_tooltip = {
 				text = seek_treatment_tooltip_4
-				hidden_tooltip = {
-					random_courtier_or_vassal = {
-						limit = {
-							is_adult = yes
-							has_minor_title = title_court_physician
-							liege = {
-								character = ROOT
-							}
-						}
-						character_event = { id = RIP.11031 }
-					}
-				}
+
+				remove_treatment_modifiers_effect = yes
+				character_event = { id = RIP.11031 }
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+
 		ai_will_do = {
 			factor = 0.25
 
-			modifier = {
+			trigger = {
+				# AI don't want to seek treatment when they have a decent one already
+				NOR = {
+					has_character_modifier = symptom_treatment_3
+					has_character_modifier = symptom_treatment_4
+					has_character_modifier = successful_treatment_2
+					has_character_modifier = successful_treatment_3
+
+					trigger_if = {
+						limit = { has_character_modifier = symptom_treatment_2 }
+						developing_epidemic_disease_trigger = no
+					}
+				}
+			}
+
+			mult_modifier = {
 				factor = 2
+
 				OR = {
 					trait = craven
 					trait = paranoid
 				}
 			}
 
-			modifier = {
+			mult_modifier = {
 				factor = 1.4
-				NOT = { health = 5 }
+				health < 5
 			}
-			modifier = {
+
+			mult_modifier = {
 				factor = 1.4
-				NOT = { health = 4 }
+				health < 4
 			}
-			modifier = {
+
+			mult_modifier = {
 				factor = 1.4
-				NOT = { health = 3 }
+				health < 3
 			}
-			modifier = {
+
+			mult_modifier = {
 				factor = 1.4
-				NOT = { health = 2 }
+				health < 2
 			}
-			modifier = {
+
+			mult_modifier = {
 				factor = 1.4
-				NOT = { health = 1 }
-			}
-			
-			modifier = {
-				factor = 0
-				OR = {
-					has_character_modifier = symptom_treatment_3 #characters don't want to seek treatment when they have a decent one already
-					has_character_modifier = symptom_treatment_4
-					AND = {
-						has_character_modifier = symptom_treatment_2
-						developing_epidemic_disease_trigger = no
-					}
-					has_character_modifier = successful_treatment_2
-					has_character_modifier = successful_treatment_3
-				}
+				health < 1
 			}
 		}
 	}
 
 	employ_court_physician = {
-		only_playable = yes
-		is_high_prio = yes
 		ai_check_interval = 24
+
+		is_high_prio = yes
+
+		only_playable = yes
+
 		potential = {
 			has_dlc = "Reapers"
-			NOR = {
-				is_tribal = yes
-				is_nomadic = yes
-				religion = thirumatam
-			}
-			OR = {
-				mercenary = no
-				ai = no
-			}
-			OR = {
-				higher_tier_than = COUNT
-				ai = no
-				is_ill = yes
-				num_of_symptoms > 0
-			}
-			NOT = {
-				has_assigned_minor_title = title_court_physician
-			}
-		}
-		allow = {
-			hidden_tooltip = {
+
+			trigger_if = {
+				limit = { ai = yes }
+
 				OR = {
-					wealth = 25
-					ai = no
+					higher_real_tier_than = COUNT
+					is_ill = yes
+					has_any_symptom = yes
 				}
+
+				mercenary = no
 			}
-			NOR = {
-				has_character_modifier = in_seclusion
-				has_assigned_minor_title = title_court_physician
-			}
+
+			is_tribal = no
+			is_nomadic = no
+			NOT = { religion = thirumatam }
+
+			NOT = { has_assigned_minor_title = title_court_physician }
+		}
+
+		allow = {
+			in_seclusion = no
+			NOT = { has_assigned_minor_title = title_court_physician }
+
 			custom_tooltip = {
 				text = 3_year_physician_cooldown
-				hidden_tooltip = {
-					OR = {
-						NOT = { has_character_flag = 3_year_physician_cooldown }
-						had_character_flag = { flag = 3_year_physician_cooldown days = 1095 }
+
+				trigger_if = {
+					limit = { has_character_flag = 3_year_physician_cooldown }
+
+					had_character_flag = {
+						flag = 3_year_physician_cooldown
+						years >= 3
 					}
 				}
 			}
 		}
+
 		effect = {
 			custom_tooltip = {
 				text = employ_court_physician_tooltip
-				hidden_tooltip = {
-					character_event = { id = RIP.11050 }
-					clr_character_flag = 3_year_physician_cooldown
-					set_character_flag = 3_year_physician_cooldown
-				}
+
+				character_event = { id = RIP.11050 }
+				clr_character_flag = 3_year_physician_cooldown
+				set_character_flag = 3_year_physician_cooldown
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+
 		ai_will_do = {
 			factor = 0.5
-			
-			modifier = {
-				factor = 0
-				AND = {
-					tier = COUNT
-					NOT = {
-						any_close_relative = {
-							ai = no
-						}
+
+			trigger = {
+				wealth >= 25
+
+				trigger_if = {
+					limit = { real_tier = COUNT }
+
+					any_close_relative = {
+						ai = no
 					}
 				}
 			}
-			modifier = {
+
+			mult_modifier = {
 				factor = 0.5
-				NOR = {
-					tier = KING
-					tier = EMPEROR
-				}
+				lower_real_tier_than = KING
 			}
-			modifier = {
+
+			mult_modifier = {
 				factor = 2
 				trait = paranoid
 			}
-			modifier = {
+
+			mult_modifier = {
 				factor = 10
+
 				OR = {
 					is_ill = yes
-					num_of_symptoms = 1
+					has_any_symptom = yes
 				}
 			}
 		}
 	}
 
 	employ_court_siddhar = {
-		only_playable = yes
-		is_high_prio = yes
 		ai_check_interval = 24
+
+		is_high_prio = yes
+
+		only_playable = yes
+
 		potential = {
 			has_dlc = "Reapers"
-			religion = thirumatam
-			NOR = {
-				is_tribal = yes
-				is_nomadic = yes
-			}
-			OR = {
+
+			trigger_if = {
+				limit = { ai = yes }
+
+				OR = {
+					higher_real_tier_than = COUNT
+					is_ill = yes
+					has_any_symptom = yes
+				}
+
 				mercenary = no
-				ai = no
 			}
-			OR = {
-				higher_tier_than = COUNT
-				ai = no
-				is_ill = yes
-				num_of_symptoms > 0
-			}
-			NOT = {
-				has_assigned_minor_title = title_court_siddhar
-			}
+
+			is_tribal = no
+			is_nomadic = no
+			religion = thirumatam
+
+			NOT = { has_assigned_minor_title = title_court_siddhar }
 		}
 		allow = {
-			hidden_tooltip = {
-				OR = {
-					wealth = 25
-					ai = no
-				}
-			}
-			NOR = {
-				has_character_modifier = in_seclusion
-				has_assigned_minor_title = title_court_siddhar
-			}
+			in_seclusion = no
+			NOT = { has_assigned_minor_title = title_court_siddhar }
 			custom_tooltip = {
 				text = 3_year_physician_cooldown
-				hidden_tooltip = {
-					OR = {
-						NOT = { has_character_flag = 3_year_physician_cooldown }
-						had_character_flag = { flag = 3_year_physician_cooldown days = 1095 }
+
+				trigger_if = {
+					limit = { has_character_flag = 3_year_physician_cooldown }
+
+					had_character_flag = {
+						flag = 3_year_physician_cooldown
+						years >= 3
 					}
 				}
 			}
@@ -1109,485 +1141,477 @@ decisions = {
 		effect = {
 			custom_tooltip = {
 				text = employ_court_physician_tooltip
-				hidden_tooltip = {
-					character_event = { id = hindu.100 days = 2 }
-					clr_character_flag = 3_year_physician_cooldown
-					set_character_flag = 3_year_physician_cooldown
-				}
+
+				character_event = { id = hindu.100 days = 2 }
+				clr_character_flag = 3_year_physician_cooldown
+				set_character_flag = 3_year_physician_cooldown
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+
 		ai_will_do = {
 			factor = 0.5
-			
-			modifier = {
-				factor = 0
-				AND = {
-					tier = COUNT
-					NOT = {
-						any_close_relative = {
-							ai = no
-						}
+
+			trigger = {
+				wealth >= 25
+
+				trigger_if = {
+					limit = { real_tier = COUNT }
+
+					any_close_relative = {
+						ai = no
 					}
 				}
 			}
-			modifier = {
+
+			mult_modifier = {
 				factor = 0.5
-				NOR = {
-					tier = KING
-					tier = EMPEROR
-				}
+				lower_real_tier_than = KING
 			}
-			modifier = {
+
+			mult_modifier = {
 				factor = 2
 				trait = paranoid
 			}
-			modifier = {
+
+			mult_modifier = {
 				factor = 10
+
 				OR = {
 					is_ill = yes
-					num_of_symptoms = 1
+					has_any_symptom = yes
 				}
 			}
 		}
 	}
 	
-	#Seclusion
-
+	# Seclusion
 	shut_the_gates = {
-		only_rulers = yes
 		is_high_prio = yes
-		
-		filter = self
-		ai_target_filter = self
-		
+
+		only_rulers = yes
+
 		potential = {
 			has_dlc = "Reapers"
+
 			OR = {
 				is_landed = yes
 				is_patrician = yes
 			}
-			NOR = {
-				is_tribal = yes
-				is_nomadic = yes
-				is_inaccessible_trigger = yes
-			}
+
+			is_tribal = no
+			is_nomadic = no
+			in_seclusion = no
 		}
-		
+
 		allow = {
 			prisoner = no
-			custom_tooltip = {
-				text = is_not_busy_trigger_tooltip
-				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
-			}
+			is_inaccessible_trigger = no
+
 			OR = {
 				trait = paranoid
+
 				custom_tooltip = {
 					text = epidemic_present_tooltip
-					hidden_tooltip = {
-						OR = {
-							ai = no
-							capital_scope = { has_epidemic = yes }
-						}
-						OR = {
-							capital_scope = {
-								OR = {
+
+					trigger_if = {
+						limit = { ai = yes }
+						capital_scope = { has_epidemic = yes }
+					}
+
+					OR = {
+						trigger_if = {
+							limit = { ai = no }
+
+							top_liege = {
+								any_realm_province = {
 									has_epidemic = yes
-									any_neighbor_province = {
-										has_epidemic = yes
-									}
+									held_under_PREV = yes
 								}
 							}
-							AND = {
-								ai = no
-								top_liege = {
-									any_realm_province = {
-										has_epidemic = yes
-									}
+						}
+
+						capital_scope = {
+							OR = {
+								has_epidemic = yes
+
+								any_neighbor_province = {
+									has_epidemic = yes
 								}
 							}
 						}
 					}
 				}
 			}
-			NOT = { has_character_modifier = out_traveling }
+
 			NOT = { has_character_modifier = recently_opened_gates }
 		}
+
 		effect = {
-			#Achievement flag
+			# Achievement flag
 			if = {
 				limit = {
 					ai = no
+					is_ironman = yes
 				}
+
 				set_character_flag = achievement_no_solicitors
 			}
+
 			if = {
-				limit = {
-					has_minor_title = title_commander
-				}
+				limit = { has_minor_title = title_commander }
 				remove_title = title_commander
 			}
+
 			set_character_flag = do_not_disturb
+
 			custom_tooltip = { text = shut_the_gates_info_tooltip }
+
 			add_character_modifier = {
 				name = in_seclusion
 				duration = -1
 			}
+
 			if = { # If you are a councillor, stop working and return home
 				limit = {
 					host = { NOT = { character = ROOT } }
+
 					OR = {
 						is_councillor = yes
 						has_minor_title = title_councilmember_king
 						has_minor_title = title_councilmember_emperor
 					}
 				}
+
 				force_host = ROOT
 			}
-			hidden_tooltip = {
-				character_event = { id = RIP.12000 }
-				any_courtier = { # Unlanded councillors stop working in order to go into seclusion with their liege
-					limit = {
-						prisoner = no
-						is_councillor = yes
-						is_landed = no
-						liege = { character = ROOT }
-						NOT = { character = ROOT }
-					}
-					add_character_modifier = {
-						name = in_seclusion
-						duration = -1
+
+			character_event = { id = RIP.12000 }
+
+			if = {
+				limit = {
+					ai = no
+					war = yes
+					multiplayer = yes
+				}
+
+				character_event = {
+					id = RIP.12099
+					months = 40
+					random = 1800
+				}
+			}
+			else_if = {
+				limit = {
+					ai = no
+
+					OR = {
+						war = yes
+						multiplayer = yes
 					}
 				}
-				any_courtier = { # Unlanded non-councillors join their liege in seclusion
+
+				character_event = {
+					id = RIP.12099
+					months = 15
+					random = 540
+				}
+			}
+			else = {
+				character_event = {
+					id = RIP.12099
+					months = 5
+					random = 180
+				}
+			}
+
+			hidden_effect = {
+				any_courtier = {
 					limit = {
 						prisoner = no
-						is_councillor = no
-						is_landed = no
-						liege = { character = ROOT }
+						vassal_of = ROOT
 						NOT = { character = ROOT }
 					}
-					add_character_modifier = {
-						name = in_seclusion
-						duration = -1
-					}
-				}
-				any_courtier = { # Landed councillors return home while you, their liege, is in seclusion
-					limit = {
-						prisoner = no
-						OR = {
-							is_councillor = yes
-							has_minor_title = title_councilmember_king
-							has_minor_title = title_councilmember_emperor
+
+					# Unlanded councillors stop working in order to go into seclusion with their liege and other unlanded courtiers join their liege in seclusion
+					if = {
+						limit = { is_landed = no }
+
+						add_character_modifier = {
+							name = in_seclusion
+							duration = -1
 						}
-						is_landed = yes
-						liege = { character = ROOT }
-						NOT = { character = ROOT }
 					}
-					force_host = THIS
+
+					# Landed councillors return home while you, their liege, are in seclusion
+					else_if = {
+						limit = { is_voter = yes }
+						force_host = THIS
+					}
 				}
+
 				any_courtier = { # Landed children being educated in your court are sent home, with the guardianship ending
 					limit = {
+						has_guardian = yes
+						is_adult = no
 						prisoner = no
 						is_landed = yes
-						is_adult = no
-						has_guardian = yes
 					}
+
 					remove_guardian = yes
 				}
-				if = { #If you are getting educated elsewhere, then go home to be secluded
+
+				if = { # If you are getting educated elsewhere, then go home to be secluded
 					limit = {
-						NOT = { age = 16 }
+						is_adult = no
 						is_abroad = yes
 					}
+
 					remove_guardian = yes
 					force_host = ROOT
 				}
+
 				any_vassal = {
-					character_event = { id = RIP.12001 days = 7 random = 7 }
+					character_event = {
+						id = RIP.12001
+						days = 7
+						random = 7
+					}
 				}
-				if = { #Notify employer that councillor is going into seclusion
-					limit = { 
-						is_councillor = yes 
+
+				if = { # Notify employer that councillor is going into seclusion
+					limit = {
+						is_councillor = yes
 						liege = { ai = no }
 					}
-					liege = { letter_event = { id = RIP.12101 days = 1 } }
+
+					liege = {
+						character_event = {
+							id = RIP.12101
+							days = 1
+						}
+					}
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+
 		ai_will_do = {
 			factor = 0.2
-			
-			modifier = {
-				factor = 0
-				NOT = {
-					capital_scope = {
-						OR = {
+
+			trigger = {
+				capital_scope = {
+					OR = {
+						has_epidemic = yes
+
+						any_neighbor_province = {
 							has_epidemic = yes
-							any_neighbor_province = {
-								has_epidemic = yes
-							}
 						}
 					}
 				}
 			}
-			
-			modifier = {
+
+			mult_modifier = {
 				factor = 0.01
-				OR = {
-					capital_scope = {
-						OR = {
-							disease = tuberculosis
-							disease = measles
-						}
+
+				capital_scope = {
+					OR = {
+						disease = consumption
+						disease = measles
 					}
 				}
 			}
-			modifier = {
+
+			mult_modifier = {
 				factor = 0.5
 				trait = brave
 			}
-			modifier = {
+
+			mult_modifier = {
 				factor = 2
 				trait = depressed
 			}
-			modifier = {
+
+			mult_modifier = {
 				factor = 2
 				trait = stressed
 			}
-			modifier = {
+
+			mult_modifier = {
 				factor = 5
 				trait = craven
 			}
-			modifier = {
+
+			mult_modifier = {
 				factor = 10
 				trait = paranoid
 			}
-			modifier = {
+
+			mult_modifier = {
 				factor = 50
 				capital_scope = { disease = bubonic_plague }
 			}
 		}
 	}
-	
+
 	open_the_gates = {
-		only_rulers = yes
-		is_high_prio = yes
 		ai_check_interval = 3
-		
-		filter = self
-		
+
+		is_high_prio = yes
+
+		only_rulers = yes
+
 		potential = {
-			is_ruler = yes
-			has_character_modifier = in_seclusion
+			in_seclusion = yes
 		}
 
 		allow = {
-			has_character_modifier = in_seclusion
+			in_seclusion = yes
 		}
 
 		effect = {
-			clr_character_flag = do_not_disturb
-			clr_character_flag = exposed_to_outside
-			clr_character_flag = seclusion_piling_corpses
-			clr_character_flag = seclusion_lazy_seduction
-			clr_character_flag = seclusion_nightmares
-			clr_character_flag = seclusion_gained_friend
-			clr_character_flag = seclusion_child_has_lover
-			clr_character_flag = seclusion_tunnel
-			clr_character_flag = seclusion_food_events
+			custom_tooltip = {
+				text = open_the_gates_info_tooltip
 
-			custom_tooltip = { text = open_the_gates_info_tooltip }
+				clr_character_flag = do_not_disturb
+				clr_character_flag = exposed_to_outside
+				clr_character_flag = seclusion_piling_corpses
+				clr_character_flag = seclusion_lazy_seduction
+				clr_character_flag = seclusion_nightmares
+				clr_character_flag = seclusion_gained_friend
+				clr_character_flag = seclusion_child_has_lover
+				clr_character_flag = seclusion_tunnel
+				clr_character_flag = seclusion_food_events
+			}
+
 			remove_character_modifier = in_seclusion
+			clr_character_flag = seclusion_events_on
+
 			add_character_modifier = {
 				name = recently_opened_gates
-				duration = 365
+				years = 1
 			}
-			hidden_tooltip = {
-				clr_character_flag = seclusion_events_on
-				character_event = { id = RIP.11557 days = 40 random = 20} #clears starvation modifiers
+
+			character_event = {
+				id = RIP.11557 # Clears starvation modifiers
+				days = 40
+				random = 20
+			}
+
+			hidden_effect = {
 				any_courtier = {
 					clr_character_flag = seclusion_events_on
 					remove_character_modifier = in_seclusion
-					character_event = { id = RIP.11557 days = 40 random = 20} #clears starvation modifiers
+
+					character_event = {
+						id = RIP.11557 # Clears starvation modifiers
+						days = 40
+						random = 20
+					}
 				}
+
 				any_vassal = {
 					limit = {
-						OR = {
-							is_councillor = yes
-							has_minor_title = title_councilmember_king
-							has_minor_title = title_councilmember_emperor
-						}
+						is_voter = yes
 						is_landed = yes
-						liege = { character = ROOT }
-						NOT = {
-							has_character_modifier = in_seclusion
-						}
+						vassal_of = ROOT
+						in_seclusion = no
 						host = { NOT = { character = ROOT } }
 					}
+
 					force_host = ROOT
 				}
 			}
+
 			if = { # Rejoin your liege's court if both of you are not in seclusion
 				limit = {
-					OR = {
+					is_voter = yes
+					liege = { in_seclusion = no }
+				}
+
+				force_host = liege
+
+				if = { # Notify employer that councillor is coming out of seclusion
+					limit = {
 						is_councillor = yes
-						has_minor_title = title_councilmember_king
-						has_minor_title = title_councilmember_emperor
+						liege = { ai = no }
 					}
-					NOT = {
-						liege = {
-							has_character_modifier = in_seclusion
+
+					liege = {
+						character_event = {
+							id = RIP.12100
+							days = 1
 						}
 					}
 				}
-				liege = {
-					ROOT = {
-						force_host = PREV
-					}
-				}
-
-				if = { #Notify employer that councillor is going into seclusion
-					limit = { 
-						is_councillor = yes 
-						#liege = { ai = no }
-					}
-					liege = { character_event = { id = RIP.12100 days = 1 } }
-				}
 			}
 
-			if = { limit = { has_character_modifier = secluded_revelry } remove_character_modifier = secluded_revelry }
-			if = { limit = { has_character_modifier = savoring_the_end_days } remove_character_modifier = savoring_the_end_days }
+			if = {
+				limit = { has_character_modifier = secluded_revelry }
+				remove_character_modifier = secluded_revelry
+			}
+
+			if = {
+				limit = { has_character_modifier = savoring_the_end_days }
+				remove_character_modifier = savoring_the_end_days
+			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+
 		ai_will_do = {
-			factor = 0.3
+			factor = 0.9
 
-			modifier = {
-				factor = 0
-				AND = {
-					capital_scope = { has_disease = yes }
-					NOT = { has_character_modifier = starving_food_shortage }
+			trigger = {
+				OR = {
+					capital_scope = { has_disease = no }
+					has_character_modifier = starving_food_shortage
 				}
 			}
-			
-			modifier = {
+
+			mult_modifier = {
 				factor = 0.5
 				trait = paranoid
 			}
 
-			modifier = {
+			mult_modifier = {
 				factor = 3
 				trait = brave
 			}
 
-			modifier = {
+			mult_modifier = {
 				factor = 3
 				capital_scope = { has_disease = no }
-			}
-
-			modifier = {
-				factor = 3
 				has_character_modifier = starving_food_shortage
 			}
 		}
 	}
-	
+
 }
 
 title_decisions = {
+
 	build_hospital = {
-		only_playable = yes
-		hide_in_decisions_list = yes		# player can build hospitals from the province view
 		ai_target_filter = owned
 		ai_check_interval = 36
-		
+
+		hide_in_decisions_list = yes		# player can build hospitals from the province view
+
+		only_playable = yes
+
 		from_potential = {					# scope: character who is building
-			ai = yes
-			is_playable = yes
 			has_dlc = "Reapers"
+		#	ai = yes						# no need to check this, decision is hidden from players
+			wealth >= 600
 			war = no
-			wealth = 600
 		}
-		
+
 		potential = {
 			tier = COUNT
 			has_hospital = no
 			has_siege = no
 			is_occupied = no
 		}
-		
+
 		allow = {
-			always = yes
 		}
-		
-		ai_will_do = {
-			factor = 0.1
-			
-			modifier = {
-				factor = 0.1
-				owner = { independent = no }
-			}
-			modifier = {
-				factor = 0.1
-				owner = { trait = greedy }
-			}
-			modifier = {
-				factor = 0.1
-				owner = { trait = arbitrary }
-			}
-			modifier = {
-				factor = 0.1
-				owner = { trait = slothful }
-			}
-			modifier = {
-				factor = 0.1
-				owner = { trait = zealous }
-			}
-			modifier = {
-				factor = 0.1
-				owner = { trait = content }
-			}
-			modifier = {
-				factor = 5
-				owner = { has_character_flag = seen_the_light_of_modern_medicine }
-			}
-			modifier = {
-				factor = 2
-				is_capital = yes
-			}
-			modifier = {
-				factor = 2
-				OR = {
-					owner = { is_ill = yes }
-					owner = { num_of_symptoms = 1 }
-				}
-			}
-			modifier = {
-				factor = 2
-				owner = { trait = charitable }
-			}
-			modifier = {
-				factor = 2
-				owner = { trait = diligent }
-			}
-			modifier = {
-				factor = 2
-				owner = { trait = kind }
-			}
-			modifier = {
-				factor = 2
-				owner = { trait = erudite }
-			}
-		}
-		
+
 		effect = {
 			location = {
 				build_holding = {
@@ -1595,6 +1619,81 @@ title_decisions = {
 				}
 			}
 		}
+
+		ai_will_do = {
+			factor = 0.1
+
+			mult_modifier = {
+				factor = 0.1
+				holder_scope = { independent = no }
+			}
+
+			mult_modifier = {
+				factor = 0.1
+				holder_scope = { trait = greedy }
+			}
+
+			mult_modifier = {
+				factor = 0.1
+				holder_scope = { trait = arbitrary }
+			}
+
+			mult_modifier = {
+				factor = 0.1
+				holder_scope = { trait = slothful }
+			}
+
+			mult_modifier = {
+				factor = 0.1
+				holder_scope = { trait = zealous }
+			}
+
+			mult_modifier = {
+				factor = 0.1
+				holder_scope = { trait = content }
+			}
+
+			mult_modifier = {
+				factor = 5
+				holder_scope = { has_character_flag = seen_the_light_of_modern_medicine }
+			}
+
+			mult_modifier = {
+				factor = 2
+				is_capital = yes
+			}
+
+			mult_modifier = {
+				factor = 2
+
+				holder_scope = {
+					OR = {
+						is_ill = yes
+						has_any_symptom = yes
+					}
+				}
+			}
+
+			mult_modifier = {
+				factor = 2
+				holder_scope = { trait = charitable }
+			}
+
+			mult_modifier = {
+				factor = 2
+				holder_scope = { trait = diligent }
+			}
+
+			mult_modifier = {
+				factor = 2
+				holder_scope = { trait = kind }
+			}
+
+			mult_modifier = {
+				factor = 2
+				holder_scope = { trait = erudite }
+			}
+		}
 	}
+
 }
-	
