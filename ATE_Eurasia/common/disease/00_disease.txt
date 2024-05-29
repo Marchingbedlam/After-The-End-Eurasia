@@ -841,13 +841,11 @@ bubonic_plague = {
 			chance = 0.30
 
 			start_provinces = {
-				1155 # Jiuquan
+				1362 # Jiuquan
 			}
 
 			excluded_regions = {
-				world_india_deccan
-				world_india_bengal
-				world_india_rajastan
+				world_india
 				world_himalayas
 				custom_historical_plague_free_zone
 			}
@@ -857,13 +855,11 @@ bubonic_plague = {
 			chance = 0.20
 
 			start_provinces = {
-				1155 # Jiuquan
+				1362 # Jiuquan
 			}
 
 			excluded_regions = {
-				world_india_deccan
-				world_india_bengal
-				world_india_rajastan
+				world_india
 				world_himalayas
 			}
 		}
@@ -872,11 +868,12 @@ bubonic_plague = {
 			chance = 0.10
 
 			start_provinces = {
-				1155 # Jiuquan
+				1362 # Jiuquan
 			}
 
 			excluded_regions = {
-				world_africa
+				custom_north_africa
+				custom_east_africa
 				custom_historical_plague_free_zone
 			}
 		}
@@ -885,11 +882,12 @@ bubonic_plague = {
 			chance = 0.10
 
 			start_provinces = {
-				1155 # Jiuquan
+				1362 # Jiuquan
 			}
 
 			excluded_regions = {
-				world_africa
+				custom_north_africa
+				custom_east_africa
 			}
 		}
 
@@ -897,11 +895,11 @@ bubonic_plague = {
 			chance = 0.10
 
 			start_provinces = {
-				1172 # Kundina
+				2182 # Kundina
 			}
 
 			excluded_regions = {
-				world_europe_north
+				world_scandinavia
 				custom_historical_plague_free_zone
 			}
 		}
@@ -910,11 +908,11 @@ bubonic_plague = {
 			chance = 0.10
 
 			start_provinces = {
-				1172 # Kundina
+				2182 # Kundina
 			}
 
 			excluded_regions = {
-				world_europe_west_britannia
+				custom_great_britain
 			}
 		}
 
@@ -922,11 +920,11 @@ bubonic_plague = {
 			chance = 0.10
 
 			start_provinces = {
-				1172 # Kundina
+				2182 # Kundina
 			}
 
 			excluded_regions = {
-				world_steppe
+				world_great_steppe
 				world_himalayas
 			}
 		}
@@ -960,13 +958,11 @@ bubonic_plague = {
 			chance = 0.30
 
 			start_provinces = {
-				1155 # Jiuquan
+				1362 # Jiuquan
 			}
 
 			excluded_regions = {
-				world_india_deccan
-				world_india_bengal
-				world_india_rajastan
+				world_india
 				world_himalayas
 				custom_historical_plague_free_zone
 			}
@@ -976,13 +972,11 @@ bubonic_plague = {
 			chance = 0.20
 
 			start_provinces = {
-				1155 # Jiuquan
+				1362 # Jiuquan
 			}
 
 			excluded_regions = {
-				world_india_deccan
-				world_india_bengal
-				world_india_rajastan
+				world_india
 				world_himalayas
 			}
 		}
@@ -991,11 +985,12 @@ bubonic_plague = {
 			chance = 0.10
 
 			start_provinces = {
-				1155 # Jiuquan
+				1362 # Jiuquan
 			}
 
 			excluded_regions = {
-				world_africa
+				custom_north_africa
+				custom_east_africa
 				custom_historical_plague_free_zone
 			}
 		}
@@ -1004,11 +999,12 @@ bubonic_plague = {
 			chance = 0.10
 
 			start_provinces = {
-				1155 # Jiuquan
+				1362 # Jiuquan
 			}
 
 			excluded_regions = {
-				world_africa
+				custom_north_africa
+				custom_east_africa
 			}
 		}
 
@@ -1016,11 +1012,11 @@ bubonic_plague = {
 			chance = 0.10
 
 			start_provinces = {
-				1172 # Kundina
+				2182 # Kundina
 			}
 
 			excluded_regions = {
-				world_europe_north
+				world_scandinavia
 				custom_historical_plague_free_zone
 			}
 		}
@@ -1029,11 +1025,11 @@ bubonic_plague = {
 			chance = 0.10
 
 			start_provinces = {
-				1172 # Kundina
+				2182 # Kundina
 			}
 
 			excluded_regions = {
-				world_europe_west_britannia
+				custom_great_britain
 			}
 		}
 
@@ -1041,11 +1037,11 @@ bubonic_plague = {
 			chance = 0.10
 
 			start_provinces = {
-				1172 # Kundina
+				2182 # Kundina
 			}
 
 			excluded_regions = {
-				world_steppe
+				world_great_steppe
 				world_himalayas
 			}
 		}
@@ -1080,13 +1076,11 @@ bubonic_plague = {
 			chance = 0.30
 
 			start_provinces = {
-				1155 # Jiuquan
+				1362 # Jiuquan
 			}
 
 			excluded_regions = {
-				world_india_deccan
-				world_india_bengal
-				world_india_rajastan
+				world_india
 				world_himalayas
 				custom_historical_plague_free_zone
 			}
@@ -1096,13 +1090,11 @@ bubonic_plague = {
 			chance = 0.20
 
 			start_provinces = {
-				1155 # Jiuquan
+				1362 # Jiuquan
 			}
 
 			excluded_regions = {
-				world_india_deccan
-				world_india_bengal
-				world_india_rajastan
+				world_india
 				world_himalayas
 			}
 		}
@@ -1111,11 +1103,12 @@ bubonic_plague = {
 			chance = 0.10
 
 			start_provinces = {
-				1155 # Jiuquan
+				1362 # Jiuquan
 			}
 
 			excluded_regions = {
-				world_africa
+				custom_north_africa
+				custom_east_africa
 				custom_historical_plague_free_zone
 			}
 		}
@@ -1124,11 +1117,12 @@ bubonic_plague = {
 			chance = 0.10
 
 			start_provinces = {
-				1155 # Jiuquan
+				1362 # Jiuquan
 			}
 
 			excluded_regions = {
-				world_africa
+				custom_north_africa
+				custom_east_africa
 			}
 		}
 
@@ -1136,11 +1130,11 @@ bubonic_plague = {
 			chance = 0.10
 
 			start_provinces = {
-				1172 # Kundina
+				2182 # Kundina
 			}
 
 			excluded_regions = {
-				world_europe_north
+				world_scandinavia
 				custom_historical_plague_free_zone
 			}
 		}
@@ -1149,11 +1143,11 @@ bubonic_plague = {
 			chance = 0.10
 
 			start_provinces = {
-				1172 # Kundina
+				2182 # Kundina
 			}
 
 			excluded_regions = {
-				world_europe_west_britannia
+				custom_great_britain
 			}
 		}
 
@@ -1161,11 +1155,11 @@ bubonic_plague = {
 			chance = 0.10
 
 			start_provinces = {
-				1172 # Kundina
+				2182 # Kundina
 			}
 
 			excluded_regions = {
-				world_steppe
+				world_great_steppe
 				world_himalayas
 			}
 		}
@@ -1195,13 +1189,11 @@ bubonic_plague = {
 			chance = 0.30
 
 			start_provinces = {
-				1155 # Jiuquan
+				1362 # Jiuquan
 			}
 
 			excluded_regions = {
-				world_india_deccan
-				world_india_bengal
-				world_india_rajastan
+				world_india
 				world_himalayas
 				custom_historical_plague_free_zone
 			}
@@ -1211,13 +1203,11 @@ bubonic_plague = {
 			chance = 0.20
 
 			start_provinces = {
-				1155 # Jiuquan
+				1362 # Jiuquan
 			}
 
 			excluded_regions = {
-				world_india_deccan
-				world_india_bengal
-				world_india_rajastan
+				world_india
 				world_himalayas
 			}
 		}
@@ -1226,11 +1216,12 @@ bubonic_plague = {
 			chance = 0.10
 
 			start_provinces = {
-				1155 # Jiuquan
+				1362 # Jiuquan
 			}
 
 			excluded_regions = {
-				world_africa
+				custom_north_africa
+				custom_east_africa
 				custom_historical_plague_free_zone
 			}
 		}
@@ -1239,11 +1230,12 @@ bubonic_plague = {
 			chance = 0.10
 
 			start_provinces = {
-				1155 # Jiuquan
+				1362 # Jiuquan
 			}
 
 			excluded_regions = {
-				world_africa
+				custom_north_africa
+				custom_east_africa
 			}
 		}
 
@@ -1251,11 +1243,11 @@ bubonic_plague = {
 			chance = 0.10
 
 			start_provinces = {
-				1172 # Kundina
+				2182 # Kundina
 			}
 
 			excluded_regions = {
-				world_europe_north
+				world_scandinavia
 				custom_historical_plague_free_zone
 			}
 		}
@@ -1264,11 +1256,11 @@ bubonic_plague = {
 			chance = 0.10
 
 			start_provinces = {
-				1172 # Kundina
+				2182 # Kundina
 			}
 
 			excluded_regions = {
-				world_europe_west_britannia
+				custom_great_britain
 			}
 		}
 
@@ -1276,11 +1268,11 @@ bubonic_plague = {
 			chance = 0.10
 
 			start_provinces = {
-				1172 # Kundina
+				2182 # Kundina
 			}
 
 			excluded_regions = {
-				world_steppe
+				world_great_steppe
 				world_himalayas
 			}
 		}
@@ -1311,13 +1303,11 @@ bubonic_plague = {
 			chance = 1
 
 			start_provinces = {
-				1155 # Jiuquan
+				1362 # Jiuquan
 			}
 
 			excluded_regions = {
-				world_india_deccan
-				world_india_bengal
-				world_india_rajastan
+				world_india
 				world_himalayas
 				custom_historical_plague_free_zone
 			}
