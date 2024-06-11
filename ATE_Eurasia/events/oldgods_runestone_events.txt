@@ -1,284 +1,209 @@
 ###################################
 #
-# THE OLD GODS 
-# - kopjafa Events
+# THE OLD GODS
+# - Runestone Events
 #
 ###################################
 
-# Written by Henrik Eklund, reused for Nepmese
+# Written by Henrik Eklund
 
-namespace = nepmese
+namespace = TOG
 
-# You commission a kopjafa
+# You commission a runestone
 character_event = {
-	id = nepmese.500
-	desc = EVTDESC_nepmese_500
-	picture = GFX_evt_kopjafa
+	id = TOG.500
+	desc = EVTDESC_TOG_500
+	picture = GFX_evt_runestone_raising_oldgods
 	border = GFX_event_normal_frame_diplomacy
-	
-	is_triggered_only = yes
-	
+
+	is_triggered_only = yes # commission_runestone, minor_decisions.txt
 	hide_from = yes
-	
+
 	option = { # Based on one of your traits
-		name = EVTOPTA_nepmese_500
-		
+		name = EVTOPTA_TOG_500
+
 		custom_tooltip = {
-			text = kopjafa_traits
-			hidden_tooltip = { 
-				character_event = { id = nepmese.501 }
-			}
+			text = runestone_traits
+			character_event = { id = TOG.501 }
 		}
 	}
+
 	option = { # In memory of father
-		name = EVTOPTB_nepmese_500
+		name = EVTOPTB_TOG_500
+
 		trigger = {
 			father_even_if_dead = {
 				is_alive = no
 			}
 		}
-		if = {
-			limit = { father_even_if_dead = { death_reason = death_natural } }
-			hidden_tooltip = { narrative_event = { id = nepmese.510 days = 60 random = 10 } }
-		}
-		if = {
-			limit = { father_even_if_dead = { death_reason = death_battle } }
-			hidden_tooltip = { narrative_event = { id = nepmese.511 days = 60 random = 10 } }
-		}
-		if = {
-			limit = { 
-				father_even_if_dead = {
-					death_execution_trigger = yes
-					NOT = { killer = { character = ROOT } }
-				} 
-			}
-			hidden_tooltip = { narrative_event = { id = nepmese.512 days = 60 random = 10 } }
-		}
-		if = {
-			limit = { 
-				father_even_if_dead = { 
-					death_murder_known_trigger = yes
-					NOT = { killer = { character = ROOT } }
+
+		custom_tooltip = {
+			text = runestone_carved
+
+			father_even_if_dead = {
+				if = {
+					limit = { death_reason = death_natural }
+					ROOT = { narrative_event = { id = TOG.510 days = 60 random = 10 } }
 				}
-			}
-			hidden_tooltip = { narrative_event = { id = nepmese.513 days = 60 random = 10 } }
-		}
-		if = {
-			limit = { 
-				father_even_if_dead = { 
-					OR = {
-						death_accident_trigger = yes
-						death_murder_unknown_trigger = yes
-					} 
+				else_if = {
+					limit = { death_reason = death_battle }
+					ROOT = { narrative_event = { id = TOG.511 days = 60 random = 10 } }
 				}
-			}
-			hidden_tooltip = { narrative_event = { id = nepmese.515 days = 60 random = 10 } }
-		}
-		if = {
-			limit = { 
-				father_even_if_dead = {
-					death_reason = death_dungeon
-					NOT = { killer = { character = ROOT } }
-				} 
-			}
-			hidden_tooltip = { narrative_event = { id = nepmese.516 days = 60 random = 10 } }
-		}
-		if = {
-			limit = { 
-				father_even_if_dead = {
-					death_sacrificed_trigger = yes
-					NOT = { killer = { character = ROOT } }
-				} 
-			}
-			hidden_tooltip = { narrative_event = { id = nepmese.517 days = 60 random = 10 } }
-		}
-		if = {
-			limit = { father_even_if_dead = { death_reason = death_duel } }
-			hidden_tooltip = { narrative_event = { id = nepmese.518 days = 60 random = 10 } }
-		}
-		if = {
-			limit = { father_even_if_dead = { death_suicide_trigger = yes } }
-			hidden_tooltip = { narrative_event = { id = nepmese.519 days = 60 random = 10 } }
-		}
-		if = {
-			limit = { 
-				father_even_if_dead = { 
-					OR = {
-						and = {
-							death_murder_known_trigger = yes
-							killer = { character = ROOT }
-						}
-						and = {
-							death_execution_trigger = yes
-							killer = { character = ROOT }
-						}
-						and = {
-							death_reason = death_dungeon 
-							killer = { character = ROOT }
-						}
-						and = {
-							death_sacrificed_trigger = yes
-							killer = { character = ROOT }
+				else_if = {
+					limit = { death_reason = death_duel }
+					ROOT = { narrative_event = { id = TOG.518 days = 60 random = 10 } }
+				}
+				else_if = {
+					limit = { death_suicide_trigger = yes }
+					ROOT = { narrative_event = { id = TOG.519 days = 60 random = 10 } }
+				}
+				else_if = {
+					limit = {
+						killer = {
+							NOT = { character = ROOT }
 						}
 					}
-				} 
-			}
-			hidden_tooltip = { narrative_event = { id = nepmese.520 days = 60 random = 10 } }
-		}
-		if = {
-			limit = {
-				NOT = {
-					father_even_if_dead = {
+
+					if = {
+						limit = { death_execution_trigger = yes }
+						ROOT = { narrative_event = { id = TOG.512 days = 60 random = 10 } }
+					}
+					else_if = {
+						limit = { death_murder_known_trigger = yes }
+						ROOT = { narrative_event = { id = TOG.513 days = 60 random = 10 } }
+					}
+					if = {
+						limit = {
+							OR = {
+								death_accident_trigger = yes
+								death_murder_unknown_trigger = yes
+							}
+						}
+						ROOT = { narrative_event = { id = TOG.515 days = 60 random = 10 } }
+					}
+					if = {
+						limit = { death_reason = death_dungeon }
+						ROOT = { narrative_event = { id = TOG.516 days = 60 random = 10 } }
+					}
+					if = {
+						limit = { death_sacrificed_trigger = yes }
+						ROOT = { narrative_event = { id = TOG.517 days = 60 random = 10 } }
+					}
+				}
+				else_if = {
+					limit = {
 						OR = {
-							death_reason = death_natural
-							death_reason = death_battle
-							death_execution_trigger = yes
 							death_murder_known_trigger = yes
-							death_murder_unknown_trigger = yes
-							death_accident_trigger = yes
+							death_execution_trigger = yes
 							death_reason = death_dungeon
 							death_sacrificed_trigger = yes
-							death_reason = death_duel
-							death_suicide_trigger = yes
 						}
 					}
+
+					narrative_event = { id = TOG.520 days = 60 random = 10 }
+				}
+				else = {
+					ROOT = { narrative_event = { id = TOG.521 days = 60 random = 10 } }
 				}
 			}
-			hidden_tooltip = { narrative_event = { id = nepmese.521 days = 60 random = 10 } }
 		}
-		custom_tooltip = { text = kopjafa_carved }
 	}
+
 	option = { # In memory of mother
-		name = EVTOPTC_nepmese_500
+		name = EVTOPTC_TOG_500
+
 		trigger = {
 			mother_even_if_dead = {
 				is_alive = no
 			}
 		}
-		if = {
-			limit = { mother_even_if_dead = { death_reason = death_natural } }
-			hidden_tooltip = { narrative_event = { id = nepmese.530 days = 60 random = 10 } }
-		}
-		if = {
-			limit = { 
-				mother_even_if_dead = {
-					death_execution_trigger = yes
-					NOT = { killer = { character = ROOT } }
-				} 
-			}
-			hidden_tooltip = { narrative_event = { id = nepmese.531 days = 60 random = 10 } }
-		}
-		if = {
-			limit = { 
-				mother_even_if_dead = { 
-					death_murder_known_trigger = yes
-					NOT = { killer = { character = ROOT } }
+
+		custom_tooltip = {
+			text = runestone_carved
+
+			mother_even_if_dead = {
+				if = {
+					limit = { death_reason = death_natural }
+					ROOT = { narrative_event = { id = TOG.530 days = 60 random = 10 } }
 				}
-			}
-			hidden_tooltip = { narrative_event = { id = nepmese.532 days = 60 random = 10 } }
-		}
-		if = {
-			limit = { 
-				mother_even_if_dead = { 
-					OR = {
-						death_accident_trigger = yes
-						death_murder_unknown_trigger = yes
-					}
-				}
-			}
-			hidden_tooltip = { narrative_event = { id = nepmese.534 days = 60 random = 10 } }
-		}
-		if = {
-			limit = { 
-				mother_even_if_dead = { 
-					death_reason = death_dungeon
-					NOT = { killer = { character = ROOT } }
-				} 
-			}
-			hidden_tooltip = { narrative_event = { id = nepmese.535 days = 60 random = 10 } }
-		}
-		if = {
-			limit = { 
-				mother_even_if_dead = {
-					death_sacrificed_trigger = yes
-					NOT = { killer = { character = ROOT } }
-				} 
-			}
-			hidden_tooltip = { narrative_event = { id = nepmese.536 days = 60 random = 10 } }
-		}
-		if = {
-			limit = { mother_even_if_dead = { death_suicide_trigger = yes } }
-			hidden_tooltip = { narrative_event = { id = nepmese.537 days = 60 random = 10 } }
-		}
-		if = {
-			limit = { 
-				mother_even_if_dead = { 
-					OR = {
-						and = {
-							death_murder_known_trigger = yes
-							killer = { character = ROOT }
-						}
-						and = {
-							death_execution_trigger = yes
-							killer = { character = ROOT }
-						}
-						and = {
-							death_reason = death_dungeon 
-							killer = { character = ROOT }
-						}
-						and = {
-							death_sacrificed_trigger = yes
-							killer = { character = ROOT }
-						}
-					}
-				} 
-			}
-			hidden_tooltip = { narrative_event = { id = nepmese.538 days = 60 random = 10 } }
-		}
-		if = {
-			limit = {
-				NOT = {
-					mother_even_if_dead = { 
+				else_if = {
+					limit = {
 						OR = {
-							death_reason = death_natural
-							death_execution_trigger = yes
-							death_murder_known_trigger = yes
-							death_murder_unknown_trigger = yes
 							death_accident_trigger = yes
+							death_murder_unknown_trigger = yes
+						}
+					}
+					ROOT = { narrative_event = { id = TOG.534 days = 60 random = 10 } }
+				}
+				else_if = {
+					limit = { death_suicide_trigger = yes }
+					ROOT = { narrative_event = { id = TOG.537 days = 60 random = 10 } }
+				}
+				else_if = {
+					limit = {
+						killer = {
+							NOT = { character = ROOT }
+						}
+					}
+
+					if = {
+						limit = { death_execution_trigger = yes }
+						ROOT = { narrative_event = { id = TOG.531 days = 60 random = 10 } }
+					}
+					if = {
+						limit = { death_murder_known_trigger = yes }
+						ROOT = { narrative_event = { id = TOG.532 days = 60 random = 10 } }
+					}
+					if = {
+						limit = { death_reason = death_dungeon }
+						ROOT = { narrative_event = { id = TOG.535 days = 60 random = 10 } }
+					}
+					if = {
+						limit = { death_sacrificed_trigger = yes }
+						ROOT = { narrative_event = { id = TOG.536 days = 60 random = 10 } }
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							death_murder_known_trigger = yes
+							death_execution_trigger = yes
 							death_reason = death_dungeon
 							death_sacrificed_trigger = yes
-							death_suicide_trigger = yes
 						}
 					}
+					ROOT = { narrative_event = { id = TOG.538 days = 60 random = 10 } }
+				}
+				else = {
+					ROOT = { narrative_event = { id = TOG.539 days = 60 random = 10 } }
 				}
 			}
-			hidden_tooltip = { narrative_event = { id = nepmese.539 days = 60 random = 10 } }
 		}
-		custom_tooltip = { text = kopjafa_carved }
 	}
 }
 
 # Based on one of your traits
 character_event = {
-	id = nepmese.501
-	desc = EVTDESC_nepmese_501
-	picture = GFX_evt_kopjafa
+	id = TOG.501
+	desc = EVTDESC_TOG_501
+	picture = GFX_evt_runestone_raising_oldgods
 	border = GFX_event_normal_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = { # Generic
-		name = EVTOPTA_nepmese_501
+		name = EVTOPTA_TOG_501
+
 		trigger = {
 			is_smart_trigger = no
 			is_dumb_trigger = no
 			is_strong_trigger = no
-			NOT = {
+
+			NOR = {
 				trait = lunatic
 				trait = drunkard
-				trait = fair
+				trait = attractive
 				trait = dwarf
 				trait = scholar
 				trait = impaler
@@ -296,403 +221,512 @@ character_event = {
 				trait = possessed
 			}
 		}
-		
+
 		custom_tooltip = {
-			text = kopjafa_carved
-			hidden_tooltip = { narrative_event = { id = nepmese.550 days = 60 random = 10 } }
+			text = runestone_carved
+
+			narrative_event = {
+				id = TOG.550
+				months = 2
+				random = 10
+			}
 		}
 	}
+
 	option = {
-		name = EVTOPTB_nepmese_501
+		name = EVTOPTB_TOG_501
 		tooltip_info = lunatic
+
 		trigger = {
 			trait = lunatic
 		}
-		
-		custom_tooltip = {
-			text = kopjafa_carved
-			hidden_tooltip = { narrative_event = { id = nepmese.551 days = 60 random = 10 } }
+
+		narrative_event = {
+			id = TOG.551
+			months = 2
+			random = 10
+			tooltip = runestone_carved
 		}
 	}
+
 	option = {
-		name = EVTOPTC_nepmese_501
+		name = EVTOPTC_TOG_501
 		tooltip_info = drunkard
+
 		trigger = {
 			trait = drunkard
-			NOT = {
+			is_dumb_trigger = no
+
+			NOR = {
 				trait = lunatic
 				trait = possessed
-				is_dumb_trigger = yes
-			}
-		}
-		
-		custom_tooltip = { 
-			text = kopjafa_carved
-			hidden_tooltip = { narrative_event = { id = nepmese.552 days = 60 random = 10 } }
-		}
-	}
-	option = {
-		name = EVTOPTD_nepmese_501
-		tooltip_info = fair
-		trigger = {
-			trait = fair
-			NOT = {
-				trait = lunatic
-				trait = possessed
-				is_dumb_trigger = yes
-			}
-		}
-		
-		custom_tooltip = {
-			text = kopjafa_carved
-			hidden_tooltip = { narrative_event = { id = nepmese.553 days = 60 random = 10 } }
-		}
-	}
-	option = {
-		name = EVTOPTE_nepmese_501
-		tooltip_info = dwarf
-		trigger = {
-			trait = dwarf
-			NOT = {
-				trait = lunatic
-				trait = possessed
-				is_dumb_trigger = yes
-			}
-		}
-		
-		custom_tooltip = {
-			text = kopjafa_carved
-			hidden_tooltip = { narrative_event = { id = nepmese.554 days = 60 random = 10 } }
-		}
-	}
-	option = {
-		name = EVTOPTF_nepmese_501
-		tooltip_info_custom = available_due_to_smart
-		trigger = {
-			is_smart_trigger = yes
-			NOT = {
-				trait = lunatic
-				trait = possessed
-				is_dumb_trigger = yes
-			}
-		}
-		
-		custom_tooltip = {
-			text = kopjafa_carved
-			hidden_tooltip = { narrative_event = { id = nepmese.555 days = 60 random = 10 } }
-		}
-	}
-	option = {
-		name = EVTOPTI_nepmese_501
-		tooltip_info = imbecile
-		trigger = {
-			is_dumb_trigger = yes
-		}
-		
-		custom_tooltip = { 
-			text = kopjafa_carved
-			hidden_tooltip = { narrative_event = { id = nepmese.556 days = 60 random = 10 } }
-		}
-	}
-	option = {
-		name = EVTOPTJ_nepmese_501
-		tooltip_info = strong
-		trigger = {
-			is_strong_trigger = yes
-			NOT = {
-				trait = lunatic
-				trait = possessed
-				is_dumb_trigger = yes
-			}
-		}
-		
-		custom_tooltip = {
-			text = kopjafa_carved
-			hidden_tooltip = { narrative_event = { id = nepmese.557 days = 60 random = 10 } }
-		}
-	}
-	option = {
-		name = EVTOPTK_nepmese_501
-		tooltip_info = scholar
-		trigger = {
-			trait = scholar
-			NOT = {
-				trait = lunatic
-				trait = possessed
-				is_dumb_trigger = yes
-			}
-		}
-		
-		custom_tooltip = {
-			text = kopjafa_carved
-			hidden_tooltip = { narrative_event = { id = nepmese.558 days = 60 random = 10 } }
-		}
-	}
-	option = {
-		name = EVTOPTL_nepmese_501
-		tooltip_info = impaler
-		trigger = {
-			trait = impaler
-			NOT = {
-				trait = lunatic
-				trait = possessed
-				is_dumb_trigger = yes
-			}
-		}
-		
-		custom_tooltip = {
-			text = kopjafa_carved
-			hidden_tooltip = { narrative_event = { id = nepmese.559 days = 60 random = 10 } }
-		}
-	}
-	option = {
-		name = EVTOPTM_nepmese_501
-		tooltip_info = poet
-		trigger = {
-			trait = poet
-			NOT = {
-				trait = lunatic
-				trait = possessed
-				is_dumb_trigger = yes
-			}
-		}
-		
-		custom_tooltip = {
-			text = kopjafa_carved
-			hidden_tooltip = { narrative_event = { id = nepmese.560 days = 60 random = 10 } }
-		}
-	}
-	option = {
-		name = EVTOPTN_nepmese_501
-		tooltip_info = lustful
-		trigger = {
-			trait = lustful
-			NOT = {
-				trait = lunatic
-				trait = possessed
-				is_dumb_trigger = yes
-			}
-		}
-		
-		custom_tooltip = {
-			text = kopjafa_carved
-			hidden_tooltip = { narrative_event = { id = nepmese.561 days = 60 random = 10 } }
-		}
-	}
-	option = {
-		name = EVTOPTO_nepmese_501
-		tooltip_info = gluttonous
-		trigger = {
-			trait = gluttonous
-			NOT = {
-				trait = lunatic
-				trait = possessed
-				is_dumb_trigger = yes
-			}
-		}
-		
-		custom_tooltip = {
-			text = kopjafa_carved
-			hidden_tooltip = { narrative_event = { id = nepmese.562 days = 60 random = 10 } }
-		}
-	}
-	option = {
-		name = EVTOPTP_nepmese_501
-		tooltip_info = charitable
-		trigger = {
-			trait = charitable
-			NOT = {
-				trait = lunatic
-				trait = possessed
-				is_dumb_trigger = yes
-			}
-		}
-		
-		custom_tooltip = {
-			text = kopjafa_carved
-			hidden_tooltip = { narrative_event = { id = nepmese.563 days = 60 random = 10 } }
-		}
-	}
-	option = {
-		name = EVTOPTQ_nepmese_501
-		tooltip_info = kind
-		trigger = {
-			trait = kind
-			NOT = {
-				trait = lunatic
-				trait = possessed
-				is_dumb_trigger = yes
-			}
-		}
-		
-		custom_tooltip = {
-			text = kopjafa_carved
-			hidden_tooltip = { narrative_event = { id = nepmese.564 days = 60 random = 10 } }
-		}
-	}
-	option = {
-		name = EVTOPTR_nepmese_501
-		tooltip_info = proud
-		trigger = {
-			trait = proud
-			NOT = {
-				trait = lunatic
-				trait = possessed
-				is_dumb_trigger = yes
-			}
-		}
-		
-		custom_tooltip = {
-			text = kopjafa_carved
-			hidden_tooltip = { narrative_event = { id = nepmese.565 days = 60 random = 10 } }
-		}
-	}
-	option = {
-		name = EVTOPTS_nepmese_501
-		tooltip_info = humble
-		trigger = {
-			trait = humble
-			NOT = {
-				trait = lunatic
-				trait = possessed
-				is_dumb_trigger = yes
-			}
-		}
-		
-		custom_tooltip = { 
-			text = kopjafa_carved
-			hidden_tooltip = { narrative_event = { id = nepmese.566 days = 60 random = 10 } }
-		}
-	}
-	option = {
-		name = EVTOPTT_nepmese_501
-		tooltip_info = brave
-		trigger = {
-			trait = brave
-			NOT = {
-				trait = lunatic
-				trait = possessed
-				is_dumb_trigger = yes
-			}
-		}
-		
-		custom_tooltip = {
-			text = kopjafa_carved
-			hidden_tooltip = { narrative_event = { id = nepmese.567 days = 60 random = 10 } }
-		}
-	}
-	option = {
-		name = EVTOPTU_nepmese_501
-		tooltip_info = just
-		trigger = {
-			trait = just
-			NOT = {
-				trait = lunatic
-				trait = possessed
-				is_dumb_trigger = yes
-			}
-		}
-		
-		custom_tooltip = { 
-			text = kopjafa_carved
-			hidden_tooltip = { narrative_event = { id = nepmese.568 days = 60 random = 10 } }
-		}
-	}
-	option = {
-		name = EVTOPTV_nepmese_501
-		tooltip_info = zealous
-		trigger = {
-			trait = zealous
-			OR = {
-				religion = nepmese
-				religion = nepmese_reformed
-			}
-			NOT = {
-				trait = lunatic
-				trait = possessed
-				is_dumb_trigger = yes
 			}
 		}
 
-		custom_tooltip = {
-			text = kopjafa_carved
-			hidden_tooltip = { narrative_event = { id = nepmese.569 days = 60 random = 10 } }
+		narrative_event = {
+			id = TOG.552
+			months = 2
+			random = 10
+			tooltip = runestone_carved
 		}
 	}
+
 	option = {
-		name = EVTOPTX_nepmese_501
-		tooltip_info = cruel
+		name = EVTOPTD_TOG_501
+		tooltip_info = attractive
+
 		trigger = {
-			trait = cruel
-			NOT = {
+			trait = attractive
+			is_dumb_trigger = no
+
+			NOR = {
 				trait = lunatic
 				trait = possessed
-				is_dumb_trigger = yes
 			}
 		}
-		custom_tooltip = { 
-			text = kopjafa_carved
-			hidden_tooltip = { narrative_event = { id = nepmese.571 days = 60 random = 10 } }
+
+		narrative_event = {
+			id = TOG.553
+			months = 2
+			random = 10
+			tooltip = runestone_carved
 		}
 	}
+
 	option = {
-		name = EVTOPTY_nepmese_501
+		name = EVTOPTE_TOG_501
+		tooltip_info = dwarf
+
+		trigger = {
+			trait = dwarf
+			is_dumb_trigger = no
+
+			NOR = {
+				trait = lunatic
+				trait = possessed
+			}
+		}
+
+		narrative_event = {
+			id = TOG.554
+			months = 2
+			random = 10
+			tooltip = runestone_carved
+		}
+	}
+
+	option = {
+		name = EVTOPTF_TOG_501
+		tooltip_info_custom = available_due_to_smart
+
+		trigger = {
+			is_smart_trigger = yes
+			is_dumb_trigger = no
+
+			NOR = {
+				trait = lunatic
+				trait = possessed
+			}
+		}
+
+		narrative_event = {
+			id = TOG.555
+			months = 2
+			random = 10
+			tooltip = runestone_carved
+		}
+	}
+
+	option = {
+		name = EVTOPTI_TOG_501
+		tooltip_info = imbecile
+
+		trigger = { is_dumb_trigger = yes }
+
+		narrative_event = {
+			id = TOG.556
+			months = 2
+			random = 10
+			tooltip = runestone_carved
+		}
+	}
+
+	option = {
+		name = EVTOPTJ_TOG_501
+		tooltip_info = strong
+
+		trigger = {
+			is_strong_trigger = yes
+			is_dumb_trigger = no
+
+			NOR = {
+				trait = lunatic
+				trait = possessed
+			}
+		}
+
+		narrative_event = {
+			id = TOG.557
+			months = 2
+			random = 10
+			tooltip = runestone_carved
+		}
+	}
+
+	option = {
+		name = EVTOPTK_TOG_501
+		tooltip_info = scholar
+
+		trigger = {
+			trait = scholar
+			is_dumb_trigger = no
+
+			NOR = {
+				trait = lunatic
+				trait = possessed
+			}
+		}
+
+		narrative_event = {
+			id = TOG.558
+			months = 2
+			random = 10
+			tooltip = runestone_carved
+		}
+	}
+
+	option = {
+		name = EVTOPTL_TOG_501
+		tooltip_info = impaler
+
+		trigger = {
+			trait = impaler
+			is_dumb_trigger = no
+
+			NOR = {
+				trait = lunatic
+				trait = possessed
+			}
+		}
+
+		narrative_event = {
+			id = TOG.559
+			months = 2
+			random = 10
+			tooltip = runestone_carved
+		}
+	}
+
+	option = {
+		name = EVTOPTM_TOG_501
+		tooltip_info = poet
+
+		trigger = {
+			trait = poet
+			is_dumb_trigger = no
+
+			NOR = {
+				trait = lunatic
+				trait = possessed
+			}
+		}
+
+		narrative_event = {
+			id = TOG.560
+			months = 2
+			random = 10
+			tooltip = runestone_carved
+		}
+	}
+
+	option = {
+		name = EVTOPTN_TOG_501
+		tooltip_info = lustful
+
+		trigger = {
+			trait = lustful
+			is_dumb_trigger = no
+
+			NOR = {
+				trait = lunatic
+				trait = possessed
+			}
+		}
+
+		narrative_event = {
+			id = TOG.561
+			months = 210
+			tooltip = runestone_carved
+		}
+	}
+
+	option = {
+		name = EVTOPTO_TOG_501
+		tooltip_info = gluttonous
+
+		trigger = {
+			trait = gluttonous
+			is_dumb_trigger = no
+
+			NOR = {
+				trait = lunatic
+				trait = possessed
+			}
+		}
+
+		narrative_event = {
+			id = TOG.562
+			months = 2
+			random = 10
+			tooltip = runestone_carved
+		}
+	}
+
+	option = {
+		name = EVTOPTP_TOG_501
+		tooltip_info = charitable
+
+		trigger = {
+			trait = charitable
+			is_dumb_trigger = no
+
+			NOR = {
+				trait = lunatic
+				trait = possessed
+			}
+		}
+
+		narrative_event = {
+			id = TOG.563
+			months = 2
+			random = 10
+			tooltip = runestone_carved
+		}
+	}
+
+	option = {
+		name = EVTOPTQ_TOG_501
+		tooltip_info = kind
+
+		trigger = {
+			trait = kind
+			is_dumb_trigger = no
+
+			NOR = {
+				trait = lunatic
+				trait = possessed
+			}
+		}
+
+		narrative_event = {
+			id = TOG.564
+			months = 2
+			random = 10
+			tooltip = runestone_carved
+		}
+	}
+
+	option = {
+		name = EVTOPTR_TOG_501
+		tooltip_info = proud
+
+		trigger = {
+			trait = proud
+			is_dumb_trigger = no
+
+			NOR = {
+				trait = lunatic
+				trait = possessed
+			}
+		}
+
+		narrative_event = {
+			id = TOG.565
+			months = 2
+			random = 10
+			tooltip = runestone_carved
+		}
+	}
+
+	option = {
+		name = EVTOPTS_TOG_501
+		tooltip_info = humble
+
+		trigger = {
+			trait = humble
+			is_dumb_trigger = no
+
+			NOR = {
+				trait = lunatic
+				trait = possessed
+			}
+		}
+
+		narrative_event = {
+			id = TOG.566
+			months = 2
+			random = 10
+			tooltip = runestone_carved
+		}
+	}
+
+	option = {
+		name = EVTOPTT_TOG_501
+		tooltip_info = brave
+
+		trigger = {
+			trait = brave
+			is_dumb_trigger = no
+
+			NOR = {
+				trait = lunatic
+				trait = possessed
+			}
+		}
+
+		narrative_event = {
+			id = TOG.567
+			months = 2
+			random = 10
+			tooltip = runestone_carved
+		}
+	}
+
+	option = {
+		name = EVTOPTU_TOG_501
+		tooltip_info = just
+
+		trigger = {
+			trait = just
+			is_dumb_trigger = no
+
+			NOR = {
+				trait = lunatic
+				trait = possessed
+			}
+		}
+
+		narrative_event = {
+			id = TOG.568
+			months = 2
+			random = 10
+			tooltip = runestone_carved
+		}
+	}
+
+	option = {
+		name = EVTOPTV_TOG_501
+		tooltip_info = zealous
+
+		trigger = {
+			trait = zealous
+			religion_openly_norse_or_reformed_trigger = yes
+			is_dumb_trigger = no
+
+			NOR = {
+				trait = lunatic
+				trait = possessed
+			}
+		}
+
+		narrative_event = {
+			id = TOG.569
+			months = 2
+			random = 10
+			tooltip = runestone_carved
+		}
+	}
+
+	option = {
+		name = EVTOPTX_TOG_501
+		tooltip_info = cruel
+
+		trigger = {
+			trait = cruel
+			is_dumb_trigger = no
+
+			NOR = {
+				trait = lunatic
+				trait = possessed
+			}
+		}
+
+		narrative_event = {
+			id = TOG.571
+			months = 2
+			random = 10
+			tooltip = runestone_carved
+		}
+	}
+
+	option = {
+		name = EVTOPTY_TOG_501
 		tooltip_info = possessed
+
 		trigger = {
 			trait = possessed
 		}
 
-		custom_tooltip = { 
-			text = kopjafa_carved
-			hidden_tooltip = { narrative_event = { id = nepmese.572 days = 60 random = 10 } }
+		narrative_event = {
+			id = TOG.572
+			months = 2
+			random = 10
+			tooltip = runestone_carved
 		}
 	}
+
 	option = {
-		name = EVTOPTZ_nepmese_501
+		name = EVTOPTZ_TOG_501
 		tooltip_info = zealous
+
 		trigger = {
 			trait = zealous
 			religion_group = christian
-			NOT = {
+			is_dumb_trigger = no
+
+			NOR = {
 				trait = lunatic
 				trait = possessed
-				is_dumb_trigger = yes
 			}
 		}
-		
-		custom_tooltip = {
-			text = kopjafa_carved
-			hidden_tooltip = { narrative_event = { id = nepmese.570 days = 60 random = 10 } }
+
+		narrative_event = {
+			id = TOG.570
+			months = 2
+			random = 10
+			tooltip = runestone_carved
 		}
-			
 	}
 }
 
 # Father (Death by Natural Causes)
 narrative_event = {
-	id = nepmese.510
-	title = EVTNAME_nepmese_510
-	desc = EVTDESC_nepmese_510
-	picture = GFX_evt_kopjafa
+	id = TOG.510
+	title = EVTNAME_TOG_510
+	desc = EVTDESC_TOG_510
+	picture = GFX_evt_runestone_raising_oldgods
 	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 200
 		piety = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_FATHER
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_FATHER
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -700,28 +734,31 @@ narrative_event = {
 
 # Father (Death by Battle)
 narrative_event = {
-	id = nepmese.511
-	title = EVTNAME_nepmese_510
-	desc = EVTDESC_nepmese_511
-	picture = GFX_evt_kopjafa
+	id = TOG.511
+	title = EVTNAME_TOG_510
+	desc = EVTDESC_TOG_511
+	picture = GFX_evt_runestone_raising_oldgods
 	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 300
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_FATHER
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_FATHER
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -729,29 +766,32 @@ narrative_event = {
 
 # Father (Death by Execution)
 narrative_event = {
-	id = nepmese.512
-	title = EVTNAME_nepmese_510
-	desc = EVTDESC_nepmese_512
-	picture = GFX_evt_kopjafa
+	id = TOG.512
+	title = EVTNAME_TOG_510
+	desc = EVTDESC_TOG_512
+	picture = GFX_evt_runestone_raising_oldgods
 	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 200
 		piety = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_FATHER
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_FATHER
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -759,29 +799,32 @@ narrative_event = {
 
 # Father (Death by Murder)
 narrative_event = {
-	id = nepmese.513
-	title = EVTNAME_nepmese_510
-	desc = EVTDESC_nepmese_513
-	picture = GFX_evt_kopjafa
+	id = TOG.513
+	title = EVTNAME_TOG_510
+	desc = EVTDESC_TOG_513
+	picture = GFX_evt_runestone_raising_oldgods
 	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 200
 		piety = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_FATHER
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_FATHER
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -789,29 +832,32 @@ narrative_event = {
 
 # Father (Death by Accident)
 narrative_event = {
-	id = nepmese.515
-	title = EVTNAME_nepmese_510
-	desc = EVTDESC_nepmese_515
-	picture = GFX_evt_kopjafa
+	id = TOG.515
+	title = EVTNAME_TOG_510
+	desc = EVTDESC_TOG_515
+	picture = GFX_evt_runestone_raising_oldgods
 	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 200
 		piety = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_FATHER
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_FATHER
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -819,29 +865,32 @@ narrative_event = {
 
 # Father (Death by Dungeon)
 narrative_event = {
-	id = nepmese.516
-	title = EVTNAME_nepmese_510
-	desc = EVTDESC_nepmese_516
-	picture = GFX_evt_kopjafa
+	id = TOG.516
+	title = EVTNAME_TOG_510
+	desc = EVTDESC_TOG_516
+	picture = GFX_evt_runestone_raising_oldgods
 	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 200
 		piety = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_FATHER
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_FATHER
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -849,29 +898,32 @@ narrative_event = {
 
 # Father (Death by Sacrifice)
 narrative_event = {
-	id = nepmese.517
-	title = EVTNAME_nepmese_510
-	desc = EVTDESC_nepmese_517
-	picture = GFX_evt_kopjafa
+	id = TOG.517
+	title = EVTNAME_TOG_510
+	desc = EVTDESC_TOG_517
+	picture = GFX_evt_runestone_raising_oldgods
 	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 200
 		piety = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_FATHER
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_FATHER
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -879,28 +931,31 @@ narrative_event = {
 
 # Father (Death by Duel)
 narrative_event = {
-	id = nepmese.518
-	title = EVTNAME_nepmese_510
-	desc = EVTDESC_nepmese_518
-	picture = GFX_evt_kopjafa
+	id = TOG.518
+	title = EVTNAME_TOG_510
+	desc = EVTDESC_TOG_518
+	picture = GFX_evt_runestone_raising_oldgods
 	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 250
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_FATHER
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_FATHER
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -908,28 +963,31 @@ narrative_event = {
 
 # Father (Death by Suicide)
 narrative_event = {
-	id = nepmese.519
-	title = EVTNAME_nepmese_510
-	desc = EVTDESC_nepmese_519
-	picture = GFX_evt_kopjafa
+	id = TOG.519
+	title = EVTNAME_TOG_510
+	desc = EVTDESC_TOG_519
+	picture = GFX_evt_runestone_raising_oldgods
 	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_FATHER
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_FATHER
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -937,28 +995,31 @@ narrative_event = {
 
 # Father (Death by Murder - YOU are the killer)
 narrative_event = {
-	id = nepmese.520
-	title = EVTNAME_nepmese_510
-	desc = EVTDESC_nepmese_520
-	picture = GFX_evt_kopjafa
+	id = TOG.520
+	title = EVTNAME_TOG_510
+	desc = EVTDESC_TOG_520
+	picture = GFX_evt_runestone_raising_oldgods
 	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_FATHER
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_FATHER
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -966,29 +1027,32 @@ narrative_event = {
 
 # Father (Death by Other Reasons)
 narrative_event = {
-	id = nepmese.521
-	title = EVTNAME_nepmese_510
-	desc = EVTDESC_nepmese_521
-	picture = GFX_evt_kopjafa
+	id = TOG.521
+	title = EVTNAME_TOG_510
+	desc = EVTDESC_TOG_521
+	picture = GFX_evt_runestone_raising_oldgods
 	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 200
 		piety = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_FATHER
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_FATHER
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -996,29 +1060,32 @@ narrative_event = {
 
 # Mother (Death by Natural Causes)
 narrative_event = {
-	id = nepmese.530
-	title = EVTNAME_nepmese_530
-	desc = EVTDESC_nepmese_530
-	picture = GFX_evt_kopjafa
+	id = TOG.530
+	title = EVTNAME_TOG_530
+	desc = EVTDESC_TOG_530
+	picture = GFX_evt_runestone_raising_oldgods
 	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 200
 		piety = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_MOTHER
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_MOTHER
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -1026,29 +1093,32 @@ narrative_event = {
 
 # Mother (Death by Execution)
 narrative_event = {
-	id = nepmese.531
-	title = EVTNAME_nepmese_530
-	desc = EVTDESC_nepmese_531
-	picture = GFX_evt_kopjafa
+	id = TOG.531
+	title = EVTNAME_TOG_530
+	desc = EVTDESC_TOG_531
+	picture = GFX_evt_runestone_raising_oldgods
 	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 200
 		piety = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_MOTHER
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_MOTHER
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -1056,29 +1126,32 @@ narrative_event = {
 
 # Mother (Death by Murder)
 narrative_event = {
-	id = nepmese.532
-	title = EVTNAME_nepmese_530
-	desc = EVTDESC_nepmese_532
-	picture = GFX_evt_kopjafa
+	id = TOG.532
+	title = EVTNAME_TOG_530
+	desc = EVTDESC_TOG_532
+	picture = GFX_evt_runestone_raising_oldgods
 	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 200
 		piety = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_MOTHER
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_MOTHER
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -1086,29 +1159,32 @@ narrative_event = {
 
 # Mother (Death by Accident)
 narrative_event = {
-	id = nepmese.534
-	title = EVTNAME_nepmese_530
-	desc = EVTDESC_nepmese_534
-	picture = GFX_evt_kopjafa
+	id = TOG.534
+	title = EVTNAME_TOG_530
+	desc = EVTDESC_TOG_534
+	picture = GFX_evt_runestone_raising_oldgods
 	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 200
 		piety = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_MOTHER
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_MOTHER
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -1116,29 +1192,32 @@ narrative_event = {
 
 # Mother (Death by Dungeon)
 narrative_event = {
-	id = nepmese.535
-	title = EVTNAME_nepmese_530
-	desc = EVTDESC_nepmese_535
-	picture = GFX_evt_kopjafa
+	id = TOG.535
+	title = EVTNAME_TOG_530
+	desc = EVTDESC_TOG_535
+	picture = GFX_evt_runestone_raising_oldgods
 	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 200
 		piety = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_MOTHER
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_MOTHER
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -1146,29 +1225,32 @@ narrative_event = {
 
 # Mother (Death by Sacrifice)
 narrative_event = {
-	id = nepmese.536
-	title = EVTNAME_nepmese_530
-	desc = EVTDESC_nepmese_536
-	picture = GFX_evt_kopjafa
+	id = TOG.536
+	title = EVTNAME_TOG_530
+	desc = EVTDESC_TOG_536
+	picture = GFX_evt_runestone_raising_oldgods
 	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 200
 		piety = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_MOTHER
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_MOTHER
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -1176,28 +1258,31 @@ narrative_event = {
 
 # Mother (Death by Suicide)
 narrative_event = {
-	id = nepmese.537
-	title = EVTNAME_nepmese_530
-	desc = EVTDESC_nepmese_537
-	picture = GFX_evt_kopjafa
+	id = TOG.537
+	title = EVTNAME_TOG_530
+	desc = EVTDESC_TOG_537
+	picture = GFX_evt_runestone_raising_oldgods
 	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_MOTHER
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_MOTHER
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -1205,28 +1290,31 @@ narrative_event = {
 
 # Mother (Death by Murder - YOU are the killer)
 narrative_event = {
-	id = nepmese.538
-	title = EVTNAME_nepmese_530
-	desc = EVTDESC_nepmese_538
-	picture = GFX_evt_kopjafa
+	id = TOG.538
+	title = EVTNAME_TOG_530
+	desc = EVTDESC_TOG_538
+	picture = GFX_evt_runestone_raising_oldgods
 	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_MOTHER
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_MOTHER
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -1234,29 +1322,32 @@ narrative_event = {
 
 # Mother (Death by Other Reasons)
 narrative_event = {
-	id = nepmese.539
-	title = EVTNAME_nepmese_530
-	desc = EVTDESC_nepmese_539
-	picture = GFX_evt_kopjafa
+	id = TOG.539
+	title = EVTNAME_TOG_530
+	desc = EVTDESC_TOG_539
+	picture = GFX_evt_runestone_raising_oldgods
 	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 200
 		piety = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_MOTHER
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_MOTHER
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -1264,46 +1355,48 @@ narrative_event = {
 
 # Generic
 narrative_event = {
-	id = nepmese.550
-	title = EVTNAME_nepmese_550
+	id = TOG.550
+	title = EVTNAME_TOG_550
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+
 	desc = {
-		text = EVTDESC_nepmese_550
+		text = EVTDESC_TOG_550
 		trigger = {
 			mother_even_if_dead = { always = yes }
 			father_even_if_dead = { always = yes }
 		}
 	}
 	desc = {
-		text = EVTDESC_nepmese_550B
+		text = EVTDESC_TOG_550B
 		trigger = {
-			NOT = {
-				AND = {
-					mother_even_if_dead = { always = yes }
-					father_even_if_dead = { always = yes }
-				}
+			NAND = {
+				mother_even_if_dead = { always = yes }
+				father_even_if_dead = { always = yes }
 			}
 		}
 	}
-	picture = GFX_evt_kopjafa
-	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 200
 		piety = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_GENERIC
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_GENERIC
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -1311,28 +1404,31 @@ narrative_event = {
 
 # Lunatic
 narrative_event = {
-	id = nepmese.551
-	title = EVTNAME_nepmese_550
-	desc = EVTDESC_nepmese_551
-	picture = GFX_evt_kopjafa
+	id = TOG.551
+	title = EVTNAME_TOG_550
+	desc = EVTDESC_TOG_551
+	picture = GFX_evt_runestone_raising_oldgods
 	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_LUNATIC
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_LUNATIC
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -1340,46 +1436,48 @@ narrative_event = {
 
 # Drunkard
 narrative_event = {
-	id = nepmese.552
-	title = EVTNAME_nepmese_550
+	id = TOG.552
+	title = EVTNAME_TOG_550
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+
 	desc = {
+		text = EVTDESC_TOG_552
 		trigger = {
 			mother_even_if_dead = { always = yes }
 			father_even_if_dead = { always = yes }
 		}
-		text = EVTDESC_nepmese_552
 	}
 	desc = {
+		text = EVTDESC_TOG_552B
 		trigger = {
-			NOT = {
-				AND = {
-					mother_even_if_dead = { always = yes }
-					father_even_if_dead = { always = yes }
-				}
+			NAND = {
+				mother_even_if_dead = { always = yes }
+				father_even_if_dead = { always = yes }
 			}
 		}
-		text = EVTDESC_nepmese_552B
 	}
-	picture = GFX_evt_kopjafa
-	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 200
 		piety = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_DRUNKARD
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_DRUNKARD
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -1387,45 +1485,47 @@ narrative_event = {
 
 # Fair
 narrative_event = {
-	id = nepmese.553
-	title = EVTNAME_nepmese_550
+	id = TOG.553
+	title = EVTNAME_TOG_550
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+
 	desc = {
+		text = EVTDESC_TOG_553
 		trigger = {
 			mother_even_if_dead = { always = yes }
 			father_even_if_dead = { always = yes }
 		}
-		text = EVTDESC_nepmese_553
 	}
 	desc = {
+		text = EVTDESC_TOG_553B
 		trigger = {
-			NOT = {
-				AND = {
-					mother_even_if_dead = { always = yes }
-					father_even_if_dead = { always = yes }
-				}
+			NAND = {
+				mother_even_if_dead = { always = yes }
+				father_even_if_dead = { always = yes }
 			}
 		}
-		text = EVTDESC_nepmese_553B
 	}
-	picture = GFX_evt_kopjafa
-	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 300
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_FAIR
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_FAIR
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -1433,46 +1533,48 @@ narrative_event = {
 
 # Dwarf
 narrative_event = {
-	id = nepmese.554
-	title = EVTNAME_nepmese_550
+	id = TOG.554
+	title = EVTNAME_TOG_550
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+
 	desc = {
+		text = EVTDESC_TOG_554
 		trigger = {
 			mother_even_if_dead = { always = yes }
 			father_even_if_dead = { always = yes }
 		}
-		text = EVTDESC_nepmese_554
 	}
 	desc = {
+		text = EVTDESC_TOG_554B
 		trigger = {
-			NOT = {
-				AND = {
-					mother_even_if_dead = { always = yes }
-					father_even_if_dead = { always = yes }
-				}
+			NAND = {
+				mother_even_if_dead = { always = yes }
+				father_even_if_dead = { always = yes }
 			}
 		}
-		text = EVTDESC_nepmese_554B
 	}
-	picture = GFX_evt_kopjafa
-	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 200
 		piety = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_DWARF
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_DWARF
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -1480,45 +1582,47 @@ narrative_event = {
 
 # Genius
 narrative_event = {
-	id = nepmese.555
-	title = EVTNAME_nepmese_550
+	id = TOG.555
+	title = EVTNAME_TOG_550
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+
 	desc = {
+		text = EVTDESC_TOG_555
 		trigger = {
 			mother_even_if_dead = { always = yes }
 			father_even_if_dead = { always = yes }
 		}
-		text = EVTDESC_nepmese_555
 	}
 	desc = {
+		text = EVTDESC_TOG_555B
 		trigger = {
-			NOT = {
-				AND = {
-					mother_even_if_dead = { always = yes }
-					father_even_if_dead = { always = yes }
-				}
+			NAND = {
+				mother_even_if_dead = { always = yes }
+				father_even_if_dead = { always = yes }
 			}
 		}
-		text = EVTDESC_nepmese_555B
 	}
-	picture = GFX_evt_kopjafa
-	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 300
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_GENIUS
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_GENIUS
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -1526,45 +1630,47 @@ narrative_event = {
 
 # Imbecile
 narrative_event = {
-	id = nepmese.556
-	title = EVTNAME_nepmese_550
+	id = TOG.556
+	title = EVTNAME_TOG_550
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+
 	desc = {
+		text = EVTDESC_TOG_556
 		trigger = {
 			mother_even_if_dead = { always = yes }
 			father_even_if_dead = { always = yes }
 		}
-		text = EVTDESC_nepmese_556
 	}
 	desc = {
+		text = EVTDESC_TOG_556B
 		trigger = {
-			NOT = {
-				AND = {
-					mother_even_if_dead = { always = yes }
-					father_even_if_dead = { always = yes }
-				}
+			NAND = {
+				mother_even_if_dead = { always = yes }
+				father_even_if_dead = { always = yes }
 			}
 		}
-		text = EVTDESC_nepmese_556B
 	}
-	picture = GFX_evt_kopjafa
-	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_IMBECILE
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_IMBECILE
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -1572,45 +1678,46 @@ narrative_event = {
 
 # Strong
 narrative_event = {
-	id = nepmese.557
-	title = EVTNAME_nepmese_550
+	id = TOG.557
+	title = EVTNAME_TOG_550
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+
 	desc = {
+		text = EVTDESC_TOG_557
 		trigger = {
 			mother_even_if_dead = { always = yes }
 			father_even_if_dead = { always = yes }
 		}
-		text = EVTDESC_nepmese_557
 	}
 	desc = {
+		text = EVTDESC_TOG_557B
 		trigger = {
-			NOT = {
-				AND = {
-					mother_even_if_dead = { always = yes }
-					father_even_if_dead = { always = yes }
-				}
+			NAND = {
+				mother_even_if_dead = { always = yes }
+				father_even_if_dead = { always = yes }
 			}
 		}
-		text = EVTDESC_nepmese_557B
 	}
-	picture = GFX_evt_kopjafa
-	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 300
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_STRONG
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_STRONG
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -1618,46 +1725,48 @@ narrative_event = {
 
 # Scholar
 narrative_event = {
-	id = nepmese.558
-	title = EVTNAME_nepmese_550
+	id = TOG.558
+	title = EVTNAME_TOG_550
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+
 	desc = {
+		text = EVTDESC_TOG_558
 		trigger = {
 			mother_even_if_dead = { always = yes }
 			father_even_if_dead = { always = yes }
 		}
-		text = EVTDESC_nepmese_558
 	}
 	desc = {
+		text = EVTDESC_TOG_558B
 		trigger = {
-			NOT = {
-				AND = {
-					mother_even_if_dead = { always = yes }
-					father_even_if_dead = { always = yes }
-				}
+			NAND = {
+				mother_even_if_dead = { always = yes }
+				father_even_if_dead = { always = yes }
 			}
 		}
-		text = EVTDESC_nepmese_558B
 	}
-	picture = GFX_evt_kopjafa
-	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 200
 		piety = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_SCHOLAR
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_SCHOLAR
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -1665,46 +1774,48 @@ narrative_event = {
 
 # Impaler
 narrative_event = {
-	id = nepmese.559
-	title = EVTNAME_nepmese_550
+	id = TOG.559
+	title = EVTNAME_TOG_550
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+
 	desc = {
+		text = EVTDESC_TOG_559
 		trigger = {
 			mother_even_if_dead = { always = yes }
 			father_even_if_dead = { always = yes }
 		}
-		text = EVTDESC_nepmese_559
 	}
 	desc = {
+		text = EVTDESC_TOG_559B
 		trigger = {
-			NOT = {
-				AND = {
-					mother_even_if_dead = { always = yes }
-					father_even_if_dead = { always = yes }
-				}
+			NAND = {
+				mother_even_if_dead = { always = yes }
+				father_even_if_dead = { always = yes }
 			}
 		}
-		text = EVTDESC_nepmese_559B
 	}
-	picture = GFX_evt_kopjafa
-	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 200
 		piety = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_IMPALER
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_IMPALER
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -1712,46 +1823,48 @@ narrative_event = {
 
 # Poet
 narrative_event = {
-	id = nepmese.560
-	title = EVTNAME_nepmese_550
+	id = TOG.560
+	title = EVTNAME_TOG_550
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+
 	desc = {
+		text = EVTDESC_TOG_560
 		trigger = {
 			mother_even_if_dead = { always = yes }
 			father_even_if_dead = { always = yes }
 		}
-		text = EVTDESC_nepmese_560
 	}
 	desc = {
+		text = EVTDESC_TOG_560B
 		trigger = {
-			NOT = {
-				AND = {
-					mother_even_if_dead = { always = yes }
-					father_even_if_dead = { always = yes }
-				}
+			NAND = {
+				mother_even_if_dead = { always = yes }
+				father_even_if_dead = { always = yes }
 			}
 		}
-		text = EVTDESC_nepmese_560B
 	}
-	picture = GFX_evt_kopjafa
-	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 200
 		piety = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_POET
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_POET
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -1759,46 +1872,48 @@ narrative_event = {
 
 # Lustful
 narrative_event = {
-	id = nepmese.561
-	title = EVTNAME_nepmese_550
+	id = TOG.561
+	title = EVTNAME_TOG_550
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+
 	desc = {
+		text = EVTDESC_TOG_561
 		trigger = {
 			mother_even_if_dead = { always = yes }
 			father_even_if_dead = { always = yes }
 		}
-		text = EVTDESC_nepmese_561
 	}
 	desc = {
+		text = EVTDESC_TOG_561B
 		trigger = {
-			NOT = {
-				AND = {
-					mother_even_if_dead = { always = yes }
-					father_even_if_dead = { always = yes }
-				}
+			NAND = {
+				mother_even_if_dead = { always = yes }
+				father_even_if_dead = { always = yes }
 			}
 		}
-		text = EVTDESC_nepmese_561B
 	}
-	picture = GFX_evt_kopjafa
-	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 200
 		piety = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_LUSTFUL
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_LUSTFUL
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -1806,46 +1921,48 @@ narrative_event = {
 
 # Gluttonous
 narrative_event = {
-	id = nepmese.562
-	title = EVTNAME_nepmese_550
+	id = TOG.562
+	title = EVTNAME_TOG_550
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+
 	desc = {
+		text = EVTDESC_TOG_562
 		trigger = {
 			mother_even_if_dead = { always = yes }
 			father_even_if_dead = { always = yes }
 		}
-		text = EVTDESC_nepmese_562
 	}
 	desc = {
+		text = EVTDESC_TOG_562B
 		trigger = {
-			NOT = {
-				AND = {
-					mother_even_if_dead = { always = yes }
-					father_even_if_dead = { always = yes }
-				}
+			NAND = {
+				mother_even_if_dead = { always = yes }
+				father_even_if_dead = { always = yes }
 			}
 		}
-		text = EVTDESC_nepmese_562B
 	}
-	picture = GFX_evt_kopjafa
-	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 200
 		piety = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_GLUTTONOUS
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_GLUTTONOUS
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -1853,46 +1970,48 @@ narrative_event = {
 
 # Charitable
 narrative_event = {
-	id = nepmese.563
-	title = EVTNAME_nepmese_550
+	id = TOG.563
+	title = EVTNAME_TOG_550
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+
 	desc = {
+		text = EVTDESC_TOG_563
 		trigger = {
 			mother_even_if_dead = { always = yes }
 			father_even_if_dead = { always = yes }
 		}
-		text = EVTDESC_nepmese_563
 	}
 	desc = {
+		text = EVTDESC_TOG_563B
 		trigger = {
-			NOT = {
-				AND = {
-					mother_even_if_dead = { always = yes }
-					father_even_if_dead = { always = yes }
-				}
+			NAND = {
+				mother_even_if_dead = { always = yes }
+				father_even_if_dead = { always = yes }
 			}
 		}
-		text = EVTDESC_nepmese_563B
 	}
-	picture = GFX_evt_kopjafa
-	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 200
 		piety = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_CHARITABLE
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_CHARITABLE
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -1900,46 +2019,48 @@ narrative_event = {
 
 # Kind
 narrative_event = {
-	id = nepmese.564
-	title = EVTNAME_nepmese_550
+	id = TOG.564
+	title = EVTNAME_TOG_550
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+
 	desc = {
+		text = EVTDESC_TOG_564
 		trigger = {
 			mother_even_if_dead = { always = yes }
 			father_even_if_dead = { always = yes }
 		}
-		text = EVTDESC_nepmese_564
 	}
 	desc = {
+		text = EVTDESC_TOG_564B
 		trigger = {
-			NOT = {
-				AND = {
-					mother_even_if_dead = { always = yes }
-					father_even_if_dead = { always = yes }
-				}
+			NAND = {
+				mother_even_if_dead = { always = yes }
+				father_even_if_dead = { always = yes }
 			}
 		}
-		text = EVTDESC_nepmese_564B
 	}
-	picture = GFX_evt_kopjafa
-	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 200
 		piety = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_KIND
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_KIND
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -1947,45 +2068,47 @@ narrative_event = {
 
 # Proud
 narrative_event = {
-	id = nepmese.565
-	title = EVTNAME_nepmese_550
+	id = TOG.565
+	title = EVTNAME_TOG_550
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+
 	desc = {
+		text = EVTDESC_TOG_565
 		trigger = {
 			mother_even_if_dead = { always = yes }
 			father_even_if_dead = { always = yes }
 		}
-		text = EVTDESC_nepmese_565
 	}
 	desc = {
+		text = EVTDESC_TOG_565B
 		trigger = {
-			NOT = {
-				AND = {
-					mother_even_if_dead = { always = yes }
-					father_even_if_dead = { always = yes }
-				}
+			NAND = {
+				mother_even_if_dead = { always = yes }
+				father_even_if_dead = { always = yes }
 			}
 		}
-		text = EVTDESC_nepmese_565B
 	}
-	picture = GFX_evt_kopjafa
-	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 300
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_PROUD
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_PROUD
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -1993,46 +2116,48 @@ narrative_event = {
 
 # Humble
 narrative_event = {
-	id = nepmese.566
-	title = EVTNAME_nepmese_550
+	id = TOG.566
+	title = EVTNAME_TOG_550
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+
 	desc = {
+		text = EVTDESC_TOG_566
 		trigger = {
 			mother_even_if_dead = { always = yes }
 			father_even_if_dead = { always = yes }
 		}
-		text = EVTDESC_nepmese_566
 	}
 	desc = {
+		text = EVTDESC_TOG_566B
 		trigger = {
-			NOT = {
-				AND = {
-					mother_even_if_dead = { always = yes }
-					father_even_if_dead = { always = yes }
-				}
+			NAND = {
+				mother_even_if_dead = { always = yes }
+				father_even_if_dead = { always = yes }
 			}
 		}
-		text = EVTDESC_nepmese_566B
 	}
-	picture = GFX_evt_kopjafa
-	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 200
 		piety = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_HUMBLE
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_HUMBLE
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -2040,45 +2165,47 @@ narrative_event = {
 
 # Brave
 narrative_event = {
-	id = nepmese.567
-	title = EVTNAME_nepmese_550
+	id = TOG.567
+	title = EVTNAME_TOG_550
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+
 	desc = {
+		text = EVTDESC_TOG_567
 		trigger = {
 			mother_even_if_dead = { always = yes }
 			father_even_if_dead = { always = yes }
 		}
-		text = EVTDESC_nepmese_567
 	}
 	desc = {
+		text = EVTDESC_TOG_567B
 		trigger = {
-			NOT = {
-				AND = {
-					mother_even_if_dead = { always = yes }
-					father_even_if_dead = { always = yes }
-				}
+			NAND = {
+				mother_even_if_dead = { always = yes }
+				father_even_if_dead = { always = yes }
 			}
 		}
-		text = EVTDESC_nepmese_567B
 	}
-	picture = GFX_evt_kopjafa
-	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 300
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_BRAVE
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_BRAVE
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -2086,46 +2213,48 @@ narrative_event = {
 
 # Just
 narrative_event = {
-	id = nepmese.568
-	title = EVTNAME_nepmese_550
+	id = TOG.568
+	title = EVTNAME_TOG_550
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+
 	desc = {
+		text = EVTDESC_TOG_568
 		trigger = {
 			mother_even_if_dead = { always = yes }
 			father_even_if_dead = { always = yes }
 		}
-		text = EVTDESC_nepmese_568
 	}
 	desc = {
+		text = EVTDESC_TOG_568B
 		trigger = {
-			NOT = {
-				AND = {
-					mother_even_if_dead = { always = yes }
-					father_even_if_dead = { always = yes }
-				}
+			NAND = {
+				mother_even_if_dead = { always = yes }
+				father_even_if_dead = { always = yes }
 			}
 		}
-		text = EVTDESC_nepmese_568B
 	}
-	picture = GFX_evt_kopjafa
-	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 200
 		piety = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_JUST
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_JUST
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -2133,46 +2262,48 @@ narrative_event = {
 
 # Zealous (Norse Pagan)
 narrative_event = {
-	id = nepmese.569
-	title = EVTNAME_nepmese_550
+	id = TOG.569
+	title = EVTNAME_TOG_550
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+
 	desc = {
+		text = EVTDESC_TOG_569
 		trigger = {
 			mother_even_if_dead = { always = yes }
 			father_even_if_dead = { always = yes }
 		}
-		text = EVTDESC_nepmese_569
 	}
 	desc = {
+		text = EVTDESC_TOG_569B
 		trigger = {
-			NOT = {
-				AND = {
-					mother_even_if_dead = { always = yes }
-					father_even_if_dead = { always = yes }
-				}
+			NAND = {
+				mother_even_if_dead = { always = yes }
+				father_even_if_dead = { always = yes }
 			}
 		}
-		text = EVTDESC_nepmese_569B
 	}
-	picture = GFX_evt_kopjafa
-	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 200
 		piety = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_ZEALOUS_NORSE
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_ZEALOUS_NORSE
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -2180,46 +2311,48 @@ narrative_event = {
 
 # Zealous (Christian)
 narrative_event = {
-	id = nepmese.570
-	title = EVTNAME_nepmese_550
+	id = TOG.570
+	title = EVTNAME_TOG_550
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+
 	desc = {
+		text = EVTDESC_TOG_570
 		trigger = {
 			mother_even_if_dead = { always = yes }
 			father_even_if_dead = { always = yes }
 		}
-		text = EVTDESC_nepmese_570
 	}
 	desc = {
+		text = EVTDESC_TOG_570B
 		trigger = {
-			NOT = {
-				AND = {
-					mother_even_if_dead = { always = yes }
-					father_even_if_dead = { always = yes }
-				}
+			NAND = {
+				mother_even_if_dead = { always = yes }
+				father_even_if_dead = { always = yes }
 			}
 		}
-		text = EVTDESC_nepmese_570B
 	}
-	picture = GFX_evt_kopjafa
-	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 200
 		piety = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_ZEALOUS_CHRISTIAN
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_ZEALOUS_CHRISTIAN
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -2227,46 +2360,48 @@ narrative_event = {
 
 # Cruel
 narrative_event = {
-	id = nepmese.571
-	title = EVTNAME_nepmese_550
+	id = TOG.571
+	title = EVTNAME_TOG_550
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+
 	desc = {
+		text = EVTDESC_TOG_571
 		trigger = {
 			mother_even_if_dead = { always = yes }
 			father_even_if_dead = { always = yes }
 		}
-		text = EVTDESC_nepmese_571
 	}
 	desc = {
+		text = EVTDESC_TOG_571B
 		trigger = {
-			NOT = {
-				AND = {
-					mother_even_if_dead = { always = yes }
-					father_even_if_dead = { always = yes }
-				}
+			NAND = {
+				mother_even_if_dead = { always = yes }
+				father_even_if_dead = { always = yes }
 			}
 		}
-		text = EVTDESC_nepmese_571B
 	}
-	picture = GFX_evt_kopjafa
-	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 200
 		piety = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_CRUEL
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_CRUEL
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
@@ -2274,59 +2409,68 @@ narrative_event = {
 
 # Possessed
 narrative_event = {
-	id = nepmese.572
-	title = EVTNAME_nepmese_550
-	desc = EVTDESC_nepmese_572
-	picture = GFX_evt_kopjafa
+	id = TOG.572
+	title = EVTNAME_TOG_550
+	desc = EVTDESC_TOG_572
+	picture = GFX_evt_runestone_raising_oldgods
 	border = GFX_event_narrative_frame_diplomacy
-	
+
 	is_triggered_only = yes
-	
 	hide_from = yes
-	
+
 	option = {
-		name = EVTOPTA_nepmese_550
+		name = EVTOPTA_TOG_550
+
 		prestige = 100
+
 		add_character_modifier = {
-			name = raised_kopjafa
-			duration = 730
+			name = raised_runestone
+			years = 2
 		}
+
 		if = {
 			limit = { ai = no }
+
 			chronicle = {
-				entry = CHRONICLE_kopjafa_POSSESSED
-				picture = GFX_evt_kopjafa
+				entry = CHRONICLE_RUNESTONE_POSSESSED
+				picture = GFX_evt_runestone_raising_oldgods
 			}
 		}
 	}
 }
 
-# kopjafas can no longer be commissioned
+# Runestones can no longer be commissioned
 character_event = {
-	id = nepmese.580
-	desc = EVTDESC_nepmese_580
-	picture = GFX_evt_kopjafa
+	id = TOG.580
+	desc = EVTDESC_TOG_580
+	picture = GFX_evt_runestone_raising_oldgods
 	border = GFX_event_normal_frame_diplomacy
-	
-	only_playable = yes
+
+	is_triggered_only = yes # on_startup; on_yearly_pulse
+
 	ai = no
-	culture_group = scandinavian
-	
+	culture_group = north_germanic
+
 	trigger = {
-		year = 1150
-		NOT = { has_character_flag = kopjafas_halted }
-		NOT = {
-			has_alternate_start_parameter = { key = religion_names value = random }
+		year >= 1150
+		year <  1160
+
+		NOR = {
+			has_dynasty_flag = runestones_halted
+
+			has_alternate_start_parameter = {
+				key = religion_names
+				value = random
+			}
 		}
 	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
+
 	option = {
-		name = EVTOPTA_nepmese_580
-		custom_tooltip = { text = no_more_kopjafas }
-		set_character_flag = kopjafas_halted
+		name = EVTOPTA_TOG_580
+
+		custom_tooltip = {
+			text = no_more_runestones
+			set_dynasty_flag = runestones_halted
+		}
 	}
 }

@@ -239,7 +239,7 @@ character_event = {
 		# Notify employer that councillor is going into seclusion
 		if = {
 			limit = {
-				is_councillor = yes
+				is_voter = yes
 				liege = { ai = no }
 			}
 
