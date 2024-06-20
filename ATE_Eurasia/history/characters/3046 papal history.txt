@@ -67,7 +67,7 @@
 	2574.3.5={birth=yes}
 	2622.3.24={name="Franciscus Xavierus"}
 	2630.4.7={death={
-			death_reason=death_cancer
+			death_reason=death_trait
 		}
 	}
 }
@@ -90,8 +90,9 @@
 	2559.9.1={birth=yes}
 	2559.9.1={culture=provencal}
 	2597.10.23={name="Titus"}
+	2600.1.1={trait = cancer }
 	2622.3.24={death={
-			death_reason=death_stress
+			death_reason=death_trait
 		}
 	}
 }

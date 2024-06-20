@@ -2016,7 +2016,7 @@
 	culture=west_anatolian
 	religion=naqshbandi
 	father=2202154
-	trait=syphilitic
+	trait=great_pox
 	trait=iskenderpasha
 	2370.8.30={birth=yes}
 	2420.3.18={death={death_reason=death_trait}}
@@ -2037,7 +2037,7 @@
 	culture=west_anatolian
 	religion=naqshbandi
 	father=2202154
-	trait=syphilitic
+	trait=great_pox
 	trait=iskenderpasha
 	2379.4.19={birth=yes}
 	2391.7.2={death={death_reason=death_poor_health}}
@@ -3734,7 +3734,7 @@
 	trait=strong
 	trait=honest
 	trait=just
-	trait=experimenter
+	trait=direct_leader
 	trait=adventurer
 	trait=zodiac_leo
 	trait=proud
@@ -4419,6 +4419,7 @@
 		culture=toros_mountain}
 	2646.1.1={add_spouse=2202367}
 	2665.1.1={add_spouse=2202061}
+	2700.1.1={death=yes}
 }
 2202369={
 	name="Fatma"
@@ -4750,6 +4751,7 @@
 	mother=2202463
 	2645.3.12={birth=yes
 		culture=west_anatolian}
+	2715.1.1={death=yes}
 }
 2202396={
 	name="Nilüfer"
@@ -4761,6 +4763,7 @@
 	mother=2202463
 	2647.11.18={birth=yes
 		culture=west_anatolian}
+	2715.1.1={death=yes}
 }
 2202397={
 	name="Berat"
