@@ -278,6 +278,7 @@
 	trait=patient
 	trait=charitable
 	2644.1.8={birth=yes}
+	2714.1.1={death=yes}
 }
 3601021={ #count of Golan
 	name="Hammed"
@@ -431,6 +432,7 @@
 	trait=sympathy_islam
 	trait=sympathy_islamosyncretic
 	2645.1.1={birth=yes}
+	2715.1.1={death=yes}
 }
 3601501={
 	name="Khalil" 
@@ -457,6 +459,7 @@
 	trait=kind
 	trait=gregarious
 	2615.1.1={birth=yes}
+	2695.1.1={death=yes}
 }
 3601503={ #Patrician of the Beirut Republic
 	name="Tigran" 
@@ -469,8 +472,8 @@
 	trait=temperate
 	trait=cynical
 	2638.1.1={birth=yes}
-	2660.1.1={add_spouse=3600545
-	}
+	2660.1.1={add_spouse=3600545}
+	2708.1.1={death=yes}
 }
 3601504={
 	name="Yahya" 
@@ -485,6 +488,7 @@
 	father=3601501
 	mother=3601502
 	2648.1.1={birth=yes}
+	2718.1.1={death=yes}
 }
 3601505={
 	name="Alisa" 
@@ -496,6 +500,7 @@
 	mother=3600545
 	female=yes
 	2661.1.1={birth=yes}
+	2731.1.1={death=yes}
 }
 3601506={
 	name="Vardan" 
@@ -506,6 +511,7 @@
 	culture=lebneni
 	religion=miaphysite
 	2663.1.1={birth=yes}
+	2733.1.1={death=yes}
 }
 3601507={ #Patrician of the Beirut Republic
 	name="Mansour" 
@@ -520,8 +526,8 @@
 	trait=kind
 	trait=temperate
 	2615.1.1={birth=yes}
-	2640.1.1={add_spouse=3601508
-	}
+	2640.1.1={add_spouse=3601508}
+	2685.1.1={death=yes}
 }
 3601508={
 	name="Nadine" 
@@ -530,6 +536,7 @@
 	female=yes
 	trait=byzantine_rite
 	2618.1.1={birth=yes}
+	2688.1.1={death=yes}
 }
 3601509={
 	name="attractiveuz" 
@@ -547,6 +554,7 @@
 	trait=gregarious
 	trait=groomed
 	2643.1.1={birth=yes}
+	2713.1.1={death=yes}
 }
 3601510={
 	name="Assi" 
@@ -562,6 +570,7 @@
 	trait=trusting
 	trait=humble
 	2646.1.1={birth=yes}
+	2716.1.1={death=yes}
 }
 3601511={
 	name="Ziad" 
@@ -578,6 +587,7 @@
 	trait=lustful
 	trait=byzantine_rite
 	2648.1.1={birth=yes}
+	2718.1.1={death=yes}
 }
 3601512={ #Patrician of the Beirut Republic
 	name="Hasan" 
@@ -590,8 +600,8 @@
 	trait=temperate
 	trait=erudite
 	2599.1.1={birth=yes}
-	2620.1.1={add_spouse=3601513
-	}
+	2620.1.1={add_spouse=3601513}
+	2669.1.1={death=yes}
 }
 3601513={
 	name="Fatima" 
@@ -599,6 +609,7 @@
 	religion=shiite
 	female=yes
 	2603.1.1={birth=yes}
+	2673.1.1={death=yes}
 }
 3601514={
 	name="Husayn" 
@@ -614,9 +625,8 @@
 	trait=stubborn
 	2624.1.1={birth=yes}
 	2642.1.1={effect={add_rival=3601517}}
-	2643.1.1={add_spouse=3601515
-	}
-	
+	2643.1.1={add_spouse=3601515}
+	2694.1.1={death=yes}
 }
 3601515={
 	name="Fatima"
@@ -1006,7 +1016,7 @@
 	trait=zealous
 	father=3601544
 	2193.5.28={birth=yes}
-	2113.1.1={add_spouse=2202484}
+	2213.1.1={add_spouse=2202484}
 	2260.10.27={death=yes}
 }
 3601546={
@@ -1080,7 +1090,7 @@
 	dynasty=2074067 #Türkkan
 	culture=kypriot
 	religion=naqshbandi
-	father=2202314
+	father=2202316
 	trait=ismailagha
 	2262.2.24={birth=yes}
 	2315.1.14={death=yes}
@@ -1147,7 +1157,7 @@
 	culture=suriyi
 	religion=sunni
 	2248.12.25={birth=yes}
-	2664.4.4={add_spouse=3601551}
+	2264.4.4={add_spouse=3601551}
 	2301.8.7={death=yes}
 }
 3601559={

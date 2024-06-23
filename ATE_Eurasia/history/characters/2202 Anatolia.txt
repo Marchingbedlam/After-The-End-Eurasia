@@ -1666,14 +1666,14 @@
 	dynasty=2074067 #Türkkan
 	culture=kypriot
 	religion=naqshbandi
-	2102.5.31={
+	trait=ismailagha
+	2039.2.22={birth=yes}
+	2063.5.31={
 		create_bloodline={
 			type=demetrios_ghazi_bloodline
 			has_dlc="Holy Fury"
 		}
 	}
-	trait=ismailagha
-	2039.2.22={birth=yes}
 	2097.11.11={death=yes}
 }
 2202131={
@@ -2100,7 +2100,7 @@
 	trait=ruthless
 	trait=shrewd
 	trait=iskenderpasha
-	give_nickname=nick_the_attractive
+	give_nickname=nick_the_fair
 	father=2202161
 	mother=2202162
 	2424.2.28={birth=yes}
@@ -3786,7 +3786,6 @@
 	trait=rude
 	trait=uncouth
 	trait=humble
-	trait=cynical
 	trait=lustful
 	trait=sympathy_scholastic
 	2610.6.11={birth=yes}
