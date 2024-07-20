@@ -4890,3 +4890,113 @@ upgrade_murex_production = { # Tyrian Purple
 		local_tax_modifier = 0.1025
 	}
 }
+
+upgrade_giralda = { #Belltower
+	picture = GFX_upgrade_icon_ingots_silver
+
+	potential = { religion = penitant }
+	allow = {
+		trigger_if = {
+			limit = { NOT = { religion = penitant } }
+			religion = penitant
+		}
+	}
+	active = { }
+
+	flags = {
+		defensive
+		decorative
+		is_plural
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	owner_modifier = {
+		monthly_character_prestige = 0.05
+		andalusian_opinion = 2
+		penitant_opinion = 2
+	}
+	local_modifier = {
+		siege_defence = 0.1
+	}
+}
+upgrade_apses_crypt = {
+	picture = GFX_upgrade_icon_key
+	
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		valuable
+		is_singular
+		holy
+		stores_relic
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	owner_modifier = {
+		monthly_character_piety = 0.3
+		custom_modifier_text = storing_a_relic_possible_modifier_tt
+	}
+	local_modifier = {
+		siege_defence = 0.1
+	}
+}
+upgrade_nativity_facade = {
+	picture = GFX_upgrade_icon_roses_white
+
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		decorative
+		is_singular
+		contemplative
+	}
+	build_time = 20
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	owner_modifier = {
+		church_opinion = 5
+	}
+}
+upgrade_passion_facade = {
+	picture = GFX_upgrade_icon_roses_red
+
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		decorative
+		is_singular
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	owner_modifier = {
+		town_opinion = 5
+	}
+}
+upgrade_glory_facade = {
+	picture = GFX_upgrade_icon_roses_yellow
+
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		decorative
+		is_singular
+		contemplative
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	owner_modifier = {
+		same_religion_opinion = 2
+	}
+}

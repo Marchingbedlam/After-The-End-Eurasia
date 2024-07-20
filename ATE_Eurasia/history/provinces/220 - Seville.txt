@@ -19,3 +19,11 @@ culture = andalusian
 religion = penitant
 
 #History
+1519.1.1 = { #The Completion of the Church (The church underwent refurbishment across the centuries the latest restoration occured as late of 1903)
+	build_wonder=wonder_seville_cathedral
+	set_wonder_stage=1
+}
+2100.1.1 = { #The current ruins of the Cathedral at game start
+	build_wonder=wonder_seville_cathedral
+	set_wonder_stage=0
+}
