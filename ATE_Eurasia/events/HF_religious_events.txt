@@ -5317,7 +5317,7 @@ character_event = {
 			any_realm_province = {
 				if = {
 					limit = { 
-						culture_group = latin
+						OR = { culture_group = french culture_group = latin }
 						NOT = { distance = { where = 333 distance = 300 } } 
 					}
 					random = { 

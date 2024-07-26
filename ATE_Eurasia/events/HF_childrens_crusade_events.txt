@@ -214,7 +214,7 @@ narrative_event = {
 		}
 		modifier = { #Historically accurate.
 			factor = 1.5
-			culture = frankish
+			OR = { culture = parisian culture = norman culture = gallo culture = chti culture = arpitan culture = francarabe culture = walloon culture = breton }
 		}
 		modifier = {
 			factor = 1.5

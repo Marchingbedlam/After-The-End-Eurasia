@@ -823,7 +823,7 @@ character_event = {
 
 			has_global_flag = flag_started_roman_renaissance
 			liege = { culture = roman }
-			location = { culture_group = latin }
+			location = { OR = { culture_group = french culture_group = latin } }
 		}
 
 		mult_modifier = {

@@ -440,7 +440,7 @@ decisions = {
 						culture_group = iberian
 						culture_group = west_african
 						culture = berber
-						culture = occitan
+						OR = { culture = gascon culture = occitan culture = provencal }
 					}
 				}
 
@@ -548,7 +548,7 @@ decisions = {
 						culture_group = iberian
 						culture_group = west_african
 						culture = berber
-						culture = occitan
+						OR = { culture = gascon culture = occitan culture = provencal }
 					}
 				}
 
@@ -665,7 +665,7 @@ decisions = {
 						culture_group = iberian
 						culture_group = west_african
 						culture = berber
-						culture = occitan
+						OR = { culture = gascon culture = occitan culture = provencal }
 					}
 				}
 
@@ -3004,7 +3004,7 @@ decisions = {
 						culture_group = iberian
 						culture_group = west_african
 						culture = berber
-						culture = occitan
+						OR = { culture = gascon culture = occitan culture = provencal }
 					}
 				}
 
@@ -3170,7 +3170,7 @@ decisions = {
 						culture_group = iberian
 						culture_group = west_african
 						culture = berber
-						culture = occitan
+						OR = { culture = gascon culture = occitan culture = provencal }
 					}
 				}
 

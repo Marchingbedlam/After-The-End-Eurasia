@@ -1374,7 +1374,7 @@ decisions = {
 
 			OR = {
 				culture = german
-				culture = frankish
+				OR = { culture = parisian culture = norman culture = gallo culture = chti culture = arpitan culture = francarabe culture = walloon culture = breton }
 			}
 
 			NOR = {
@@ -1862,9 +1862,9 @@ decisions = {
 
 			OR = {
 				culture = german
-				culture = frankish
-				culture = french
-				culture = occitan
+				OR = { culture = parisian culture = norman culture = gallo culture = chti culture = arpitan culture = francarabe culture = walloon culture = breton }
+				OR = { culture = parisian culture = norman culture = gallo culture = chti culture = arpitan culture = francarabe culture = walloon culture = breton }
+				OR = { culture = gascon culture = occitan culture = provencal }
 				culture = italian
 				culture = lombard
 			}

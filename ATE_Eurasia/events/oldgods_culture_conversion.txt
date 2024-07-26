@@ -249,7 +249,7 @@ province_event = {
 	trigger = {
 
 		OR = {
-			culture = french
+			OR = { culture = parisian culture = norman culture = gallo culture = chti culture = arpitan culture = francarabe culture = walloon culture = breton }
 			culture = breton
 			culture = occitan
 		}

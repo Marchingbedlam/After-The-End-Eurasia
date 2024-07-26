@@ -2122,7 +2122,7 @@ defined_text = {
 		trigger = {
 			interesting_face_trigger = no
 			OR = {
-				graphical_culture = occitangfx
+				graphical_OR = { culture = gascon culture = occitan culture = provencal }gfx
 				graphical_culture = italiangfx
 				graphical_culture = southerngfx
 				graphical_culture = byzantinegfx
@@ -2178,7 +2178,7 @@ defined_text = {
 		trigger = {
 			NOR = {
 				interesting_face_trigger = yes
-				graphical_culture = occitangfx
+				graphical_OR = { culture = gascon culture = occitan culture = provencal }gfx
 				graphical_culture = italiangfx
 				graphical_culture = southerngfx
 				graphical_culture = byzantinegfx
@@ -21311,7 +21311,7 @@ defined_text = {
 		localisation_key = Culture_Army_Ethiopian
 	}
 	text = {
-		trigger = { culture = french }
+		trigger = { OR = { culture = parisian culture = norman culture = gallo culture = chti culture = arpitan culture = francarabe culture = walloon culture = breton } }
 		localisation_key = Culture_Army_French
 	}
 	text = {
@@ -21403,7 +21403,7 @@ defined_text = {
 		trigger = {
 			OR = {
 				culture = norman
-				culture = occitan
+				OR = { culture = gascon culture = occitan culture = provencal }
 				culture = german
 				culture = breton
 			}

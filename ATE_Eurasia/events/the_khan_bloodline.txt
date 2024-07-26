@@ -41,7 +41,7 @@ narrative_event = {
 		modifier = {
 			factor = 0.35
 			NOR = { 
-				culture_group = latin
+				OR = { culture_group = french culture_group = latin }
 				culture_group = byzantine
 				culture_group = arabic
 			}
@@ -72,7 +72,7 @@ narrative_event = {
 		}
 		modifier = {
 			factor = 1.5
-			culture_group = latin
+			OR = { culture_group = french culture_group = latin }
 		}
 		modifier = {
 			factor = 0.5

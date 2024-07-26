@@ -998,7 +998,7 @@ province_event = {
 
 			owner = { culture = roman }
 			has_global_flag = flag_started_roman_renaissance
-			culture_group = latin
+			OR = { culture_group = french culture_group = latin }
 		}
 
 		mult_modifier = {

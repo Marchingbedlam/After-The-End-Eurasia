@@ -359,7 +359,7 @@ targetted_decisions = {
 								OR = {
 									culture_group = iberian
 									culture = andalusian_arabic
-									culture = occitan
+									OR = { culture = gascon culture = occitan culture = provencal }
 									religion_group = muslim
 								}
 							}

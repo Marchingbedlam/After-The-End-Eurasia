@@ -462,7 +462,7 @@ RETTYPE_CUL_HISP =
 		is_nomadic = no
 		culture_group = iberian
 		NOT = {
-			culture = portuguese
+			OR = { culture = portuguese culture = galician }
 			culture = andalusian
 			culture = azorean
 			culture = madeiran
@@ -817,7 +817,7 @@ RETTYPE_CUL_POR =
 	potential = {
 		is_nomadic = no
 		OR = {
-			culture = portuguese
+			OR = { culture = portuguese culture = galician }
 			culture = azorean
 			culture = madeiran
 		}

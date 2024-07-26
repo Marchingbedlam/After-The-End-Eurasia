@@ -476,7 +476,7 @@ likes_germanics = {
 
 likes_latino_iberians = {
 	OR = {
-		culture_group = latin
+		OR = { culture_group = french culture_group = latin }
 		culture_group = iberian
 	}
 }

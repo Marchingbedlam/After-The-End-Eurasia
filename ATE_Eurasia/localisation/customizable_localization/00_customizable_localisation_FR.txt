@@ -13979,7 +13979,7 @@ defined_text = {
 	}
 	text = {
 		localisation_key = String_FR_Culture_french_Masc
-		trigger = { culture = french }
+		trigger = { OR = { culture = parisian culture = norman culture = gallo culture = chti culture = arpitan culture = francarabe culture = walloon culture = breton } }
 	}
 	text = {
 		localisation_key = String_FR_Culture_frisian_Masc
@@ -14147,11 +14147,11 @@ defined_text = {
 	}
 	text = {
 		localisation_key = String_FR_Culture_occitan_Masc
-		trigger = { culture = occitan }
+		trigger = { OR = { culture = gascon culture = occitan culture = provencal } }
 	}
 	text = {
 		localisation_key = String_FR_Culture_frankish_Masc
-		trigger = { culture = frankish }
+		trigger = { OR = { culture = parisian culture = norman culture = gallo culture = chti culture = arpitan culture = francarabe culture = walloon culture = breton } }
 	}
 	text = {
 		localisation_key = String_FR_Culture_saxon_Masc
@@ -14191,7 +14191,7 @@ defined_text = {
 	}
 	text = {
 		localisation_key = String_FR_Culture_portuguese_Masc
-		trigger = { culture = portuguese }
+		trigger = { OR = { culture = portuguese culture = galician } }
 	}
 	text = {
 		localisation_key = String_FR_Culture_prussian_Masc
@@ -14508,7 +14508,7 @@ defined_text = {
 	}
 	text = {
 		localisation_key = String_FR_Culture_french_Fem
-		trigger = { culture = french }
+		trigger = { OR = { culture = parisian culture = norman culture = gallo culture = chti culture = arpitan culture = francarabe culture = walloon culture = breton } }
 	}
 	text = {
 		localisation_key = String_FR_Culture_frisian_Fem
@@ -14676,11 +14676,11 @@ defined_text = {
 	}
 	text = {
 		localisation_key = String_FR_Culture_occitan_Fem
-		trigger = { culture = occitan }
+		trigger = { OR = { culture = gascon culture = occitan culture = provencal } }
 	}
 	text = {
 		localisation_key = String_FR_Culture_frankish_Fem
-		trigger = { culture = frankish }
+		trigger = { OR = { culture = parisian culture = norman culture = gallo culture = chti culture = arpitan culture = francarabe culture = walloon culture = breton } }
 	}
 	text = {
 		localisation_key = String_FR_Culture_saxon_Fem
@@ -14720,7 +14720,7 @@ defined_text = {
 	}
 	text = {
 		localisation_key = String_FR_Culture_portuguese_Fem
-		trigger = { culture = portuguese }
+		trigger = { OR = { culture = portuguese culture = galician } }
 	}
 	text = {
 		localisation_key = String_FR_Culture_prussian_Fem
@@ -15045,7 +15045,7 @@ defined_text = {
 	}
 	text = {
 		localisation_key = String_FR_Culture_french_PlMasc
-		trigger = { culture = french }
+		trigger = { OR = { culture = parisian culture = norman culture = gallo culture = chti culture = arpitan culture = francarabe culture = walloon culture = breton } }
 	}
 	text = {
 		localisation_key = String_FR_Culture_frisian_PlMasc
@@ -15213,11 +15213,11 @@ defined_text = {
 	}
 	text = {
 		localisation_key = String_FR_Culture_occitan_PlMasc
-		trigger = { culture = occitan }
+		trigger = { OR = { culture = gascon culture = occitan culture = provencal } }
 	}
 	text = {
 		localisation_key = String_FR_Culture_frankish_PlMasc
-		trigger = { culture = frankish }
+		trigger = { OR = { culture = parisian culture = norman culture = gallo culture = chti culture = arpitan culture = francarabe culture = walloon culture = breton } }
 	}
 	text = {
 		localisation_key = String_FR_Culture_saxon_PlMasc
@@ -15257,7 +15257,7 @@ defined_text = {
 	}
 	text = {
 		localisation_key = String_FR_Culture_portuguese_PlMasc
-		trigger = { culture = portuguese }
+		trigger = { OR = { culture = portuguese culture = galician } }
 	}
 	text = {
 		localisation_key = String_FR_Culture_prussian_PlMasc
