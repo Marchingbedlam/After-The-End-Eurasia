@@ -1,0 +1,97 @@
+decisions = {
+	convert_to_portuguese = {
+	only_playable = yes
+	
+	filter = self
+	ai_targeted_filter = self
+	ai_check_interval = 60
+	
+		potential = {
+			is_playable = yes
+				OR = {
+					culture = nortenho
+					culture = alentejano
+				}
+			capital_scope = {
+				region = custom_portugal
+			}
+		}
+		allow = {
+			OR = {
+				culture = nortenho
+				culture = alentejano
+			}
+			completely_controls = k_portugal
+		}
+		effect = {
+			culture = portuguese
+			any_courtier = {
+				limit = {
+					OR = {
+						culture = nortenho
+						culture = alentejano
+					}
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = portuguese
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		
+			modifier = {
+			factor = 0.5 # Slow it down a bit
+			}
+		
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = portuguese }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = portuguese }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = portuguese
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = portuguese
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = portuguese
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = portuguese
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = portuguese
+				}
+			}
+		}
+	}
+}
