@@ -1,4 +1,81 @@
 decisions = {
+	forge_the_lusitanian_empire = {
+		only_independent = yes
+		is_high_prio = yes
+		ai_check_interval = 120
+		
+		potential = {
+			is_playable = yes
+			OR = {
+				culture = nortenho
+				culture = alentejano
+				culture = azorean
+				culture = madeiran
+			}
+			religion = quinto
+		}
+		allow = {
+			completely_controls = k_portugal
+			completely_controls = k_galicia
+			completely_controls = k_macronesia
+		}
+		effect = {
+			set_global_flag = lusitania_formed
+			if = {
+				limit = { has_nickname = no }
+				give_nickname = nick_the_great
+			}
+			prestige = 500
+			piety = 500
+			hidden_tooltip = {
+				primary_title = {
+					e_lusitania = {
+						copy_title_laws = PREV
+						copy_title_history = PREV
+					}
+				}
+			}
+			hidden_tooltip = { e_lusitania = { make_primary_title = yes } }
+			custom_tooltip = {
+				text = create_lusitania_tt
+				grant_title_no_opinion = e_lusitania 
+			}
+			hidden_tooltip = {
+				k_portugal = {
+					de_jure_liege = e_lusitania
+				}
+				k_galicia = {
+					de_jure_liege = e_lusitania
+				}
+				k_macronesia = {
+					de_jure_liege = e_lusitania
+				}
+				if = {
+					limit = { completely_controls = d_leon }
+					d_leon = {
+						de_jure_liege = k_galicia
+					}
+				}
+				if = {
+					limit = { completely_controls = d_asturias }
+					d_asturias = {
+						de_jure_liege = k_galicia
+					}
+				}
+				if = {
+					limit = { completely_controls = d_extramadura }
+					d_extramadura = { de_jure_liege = k_portugal }
+				}
+				if = {
+					limit = { completely_controls = k_andalusia }
+					k_andalusia = { de_jure_liege = e_lusitania }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	convert_to_portuguese = {
 	only_playable = yes
 	
@@ -11,6 +88,8 @@ decisions = {
 				OR = {
 					culture = nortenho
 					culture = alentejano
+					culture = azorean
+					culture = madeiran
 				}
 			capital_scope = {
 				region = custom_portugal
@@ -20,6 +99,8 @@ decisions = {
 			OR = {
 				culture = nortenho
 				culture = alentejano
+				culture = azorean
+				culture = madeiran
 			}
 			completely_controls = k_portugal
 		}
@@ -30,6 +111,8 @@ decisions = {
 					OR = {
 						culture = nortenho
 						culture = alentejano
+						culture = azorean
+						culture = madeiran
 					}
 					employer = { character = ROOT }
 					dynasty = ROOT

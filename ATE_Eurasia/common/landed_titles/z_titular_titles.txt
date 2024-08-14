@@ -248,6 +248,18 @@ e_hetmanate = { #The Grand Hetmanate
 		always = no # Only created through special event
 	}
 }
+e_lusitania = {
+	color = { 1 81 154 }
+	color2 = { 220 220 20 }
+	
+	capital = 167 #Lisboa
+	
+	dignity = 20 # Counted as having this many more counties than it does
+	
+	allow = {
+		always = no # Only created through special event
+	}
+}
 
 ### titular kingdoms ###
 
