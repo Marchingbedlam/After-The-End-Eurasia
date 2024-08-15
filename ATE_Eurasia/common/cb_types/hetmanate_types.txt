@@ -256,12 +256,10 @@ major_liberation = {
 	infamy_modifier = 0.75
 	
 	sort_priority = 810
-	
-	can_use_gui = {
-		check_if_crusader_trigger = yes
-	}
 
 	can_use_gui = {
+		check_if_crusader_trigger = yes
+		
 		ROOT = {
 			OR = {
 				religion = kozachina
@@ -274,7 +272,7 @@ major_liberation = {
 			trait = hedonist
 			trait = impaler
 			trait = drunkard
-			trait = cannibal_trait
+			trait = cannibal
 			trait = possessed
 			trait = lunatic
 			has_character_modifier = known_satanist
@@ -338,7 +336,7 @@ major_liberation = {
 			trait = cruel
 			trait = drunkard
 			trait = impaler
-			trait = cannibal_trait
+			trait = cannibal
 			trait = possessed
 			trait = lunatic
 			any_de_jure_vassal = {

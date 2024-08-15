@@ -143,10 +143,7 @@ check_if_crusader_trigger = {
 	trigger_if = {
 		trigger = {
 			ROOT = {
-				OR = {
-					religion = catholic
-					religion = fraticelli
-				}
+				religion = catholic
 
 				OR = {
 					has_pledged_crusade_participation = yes
