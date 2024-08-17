@@ -77,11 +77,11 @@ decisions = {
 		}
 	}
 	convert_to_portuguese = {
-	only_playable = yes
+		only_playable = yes
 	
-	filter = self
-	ai_targeted_filter = self
-	ai_check_interval = 60
+		filter = self
+		ai_targeted_filter = self
+		ai_check_interval = 60
 	
 		potential = {
 			is_playable = yes
@@ -94,6 +94,7 @@ decisions = {
 			capital_scope = {
 				region = custom_portugal
 			}
+			has_flag=lusitania_formed
 		}
 		allow = {
 			OR = {

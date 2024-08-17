@@ -43,8 +43,18 @@ character_event = {
 		183 = {
 			add_province_modifier = { name = landmark_necropolis_of_myra duration = -1 }
 			}
+		192 = {
+			add_province_modifier = { name = landmark_tierra_de_gigantes duration = -1 }
+			add_province_modifier = { name = landmark_palacio_real_de_madrid duration = -1 }
+			}
+		211 = {
+			add_province_modifier = { name = landmark_santiago_de_compostela duration = -1 }
+			}
 		225 = {
 			add_province_modifier = { name = landmark_rock_of_gibraltar duration = -1 }
+			}
+		226 = {
+			add_province_modifier = { name = landmark_alhambra duration = -1 }
 			}
 		232 = {
 			add_province_modifier = { name = landmark_cap_de_creus duration = -1 }

@@ -1,0 +1,135 @@
+#####################################################################
+#		Sagrada Event Reference Numbers for Ease of Reference		#
+#	x iberia.1 - iberia.9 : Sagrada Construction Event  			#
+##################################################################### 
+namespace = iberia
+
+#### Sagrada Day event chain ####
+
+narrative_event = { #Laying the Foundations of the Sagrada Familia
+	id = iberia.1
+	title=EVT_TITLE_IBERIA_1
+	desc = EVTDESC_IBERIA_1
+	picture = GFX_sagrada
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_IBERIA_1
+		piety = 2000
+	}
+}
+province_event = { #The Apse Crypt
+	id = iberia.2
+	title=EVT_TITLE_IBERIA_2
+	desc = EVTDESC_IBERIA_2
+	picture = GFX_sagrada
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_IBERIA_2
+		piety = 1000
+		build_wonder_upgrade = upgrade_apses_crypt
+		set_wonder_stage=1
+	}
+
+province_event = { #The Nativity Façade
+	id = iberia.3
+	title = EVT_TITLE_IBERIA_3
+	desc = EVTDESC_IBERIA_3
+	picture = GFX_sagrada
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_IBERIA_3
+		piety = 1000
+		build_wonder_upgrade = upgrade_nativity_facade
+		set_wonder_stage=2
+	}
+}
+
+province_event = { #The Passion Façade
+	id = iberia.4
+	title = EVT_TITLE_IBERIA_4
+	desc = EVTDESC_IBERIA_4
+	picture = GFX_sagrada
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_IBERIA_4
+		piety = 1000
+		build_wonder_upgrade = upgrade_passion_facade
+	}
+}
+
+province_event = { #The Glory Façade
+	id = iberia.5
+	title = EVT_TITLE_IBERIA_5
+	desc = EVTDESC_IBERIA_5
+	picture = GFX_sagrada
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_IBERIA_5
+		piety = 1000
+		build_wonder_upgrade = upgrade_glory_facade
+	}
+}
+
+province_event = { #The Virgin Mary Spire
+	id = iberia.6
+	title = EVT_TITLE_IBERIA_6
+	desc = EVTDESC_IBERIA_6
+	picture = GFX_sagrada
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_IBERIA_6
+		piety = 1000
+		build_wonder_upgrade = upgrade_armory
+		set_wonder_stage=3
+	}
+}
+
+province_event = { #The Evangelist Spire
+	id = iberia.7
+	title = EVT_TITLE_IBERIA_7
+	desc = EVTDESC_IBERIA_7
+	picture = GFX_sagrada
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_IBERIA_7
+		piety = 1000
+		build_wonder_upgrade = upgrade_armory
+	}
+}
+
+province_event = { #The Jesus Spire
+	id = iberia.8
+	title = EVT_TITLE_IBERIA_8
+	desc = EVTDESC_IBERIA_8
+	picture = GFX_sagrada
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_IBERIA_8
+		piety = 1000
+		build_wonder_upgrade = upgrade_armory
+		set_wonder_stage=4
+		narrative_event = { id = iberia.9 days = 10 }
+	}
+}
+
+narrative_event = { #Sagrada Familia Complete!
+	id = iberia.9
+	title=EVT_TITLE_IBERIA_9
+	desc = EVTDESC_IBERIA_9
+	picture = GFX_sagrada
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_IBERIA_9
+		piety = 2000
+		prestige=2000
+	}
+}

@@ -5000,3 +5000,66 @@ upgrade_glory_facade = {
 		same_religion_opinion = 2
 	}
 }
+
+upgrade_virgin_mary_spire = {
+	picture = GFX_upgrade_icon_stones
+
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		towering
+		is_singular
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	local_modifier = {
+		siege_defence = 0.05
+	}
+	owner_modifier = {
+		monthly_character_prestige = 0.02
+	}
+}
+
+upgrade_four_evangelist_spire = {
+	picture = GFX_upgrade_icon_ingots_silver
+
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		defensive
+		decorative
+		is_plural
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	local_modifier = {
+		siege_defence = 0.1
+	}
+}
+
+upgrade_bells_golden = {
+	picture = GFX_upgrade_icon_ingots_gold
+
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		defensive
+		decorative
+		is_plural
+		golden
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	owner_modifier = {
+		proud_opinion = 5
+	}
+}
