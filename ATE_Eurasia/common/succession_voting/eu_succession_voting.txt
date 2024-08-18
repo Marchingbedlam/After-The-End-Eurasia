@@ -1049,7 +1049,7 @@ confederation_elective = {
 			value = -15
 			localisation_key = tooltip_feudal_elector_vote_syphilitic
 			FROM = { 
-				trait = syphilitic
+				trait = great_pox
 			}
 		}
 		additive_modifier = {
@@ -1533,7 +1533,7 @@ confederation_elective = {
 			NOT = { character = FROM } #Do not judge yourself.
 			this_is_warrior_culture_trigger = no
 			FROM = { 
-				trait = robust
+				trait = brawny
 			}
 		}
 		additive_modifier = {
@@ -1542,7 +1542,7 @@ confederation_elective = {
 			NOT = { character = FROM } #Do not judge yourself.
 			this_is_warrior_culture_trigger = yes
 			FROM = { 
-				trait = robust
+				trait = brawny
 			}
 		}
 		additive_modifier = {
@@ -1575,7 +1575,7 @@ confederation_elective = {
 			NOT = { character = FROM } #Do not judge yourself.
 			this_is_warrior_culture_trigger = no
 			FROM = { 
-				trait = feeble
+				trait = frail
 			}
 		}
 		additive_modifier = {
@@ -1584,7 +1584,7 @@ confederation_elective = {
 			NOT = { character = FROM } #Do not judge yourself.
 			this_is_warrior_culture_trigger = yes
 			FROM = { 
-				trait = feeble
+				trait = frail
 			}
 		}
 
@@ -2712,8 +2712,8 @@ confederation_elective = {
 			this_is_warrior_culture_trigger = yes
 			FROM = { 
 				OR = { 
-					trait = is_fat
-					trait = is_malnourished
+					trait = fat
+					trait = malnourished
 				}
 			}
 		}
@@ -2812,7 +2812,7 @@ confederation_elective = {
 					trait = decadent
 					trait = slothful
 					trait = hedonist
-					trait = is_fat
+					trait = fat
 					trait = shy
 				}
 			}
@@ -4584,7 +4584,7 @@ bureaucratic_elective = {
 			value = -15
 			localisation_key = tooltip_feudal_elector_vote_syphilitic
 			FROM = { 
-				trait = syphilitic
+				trait = great_pox
 			}
 		}
 		additive_modifier = {
@@ -5068,7 +5068,7 @@ bureaucratic_elective = {
 			NOT = { character = FROM } #Do not judge yourself.
 			this_is_warrior_culture_trigger = no
 			FROM = { 
-				trait = robust
+				trait = brawny
 			}
 		}
 		additive_modifier = {
@@ -5077,7 +5077,7 @@ bureaucratic_elective = {
 			NOT = { character = FROM } #Do not judge yourself.
 			this_is_warrior_culture_trigger = yes
 			FROM = { 
-				trait = robust
+				trait = brawny
 			}
 		}
 		additive_modifier = {
@@ -5110,7 +5110,7 @@ bureaucratic_elective = {
 			NOT = { character = FROM } #Do not judge yourself.
 			this_is_warrior_culture_trigger = no
 			FROM = { 
-				trait = feeble
+				trait = frail
 			}
 		}
 		additive_modifier = {
@@ -5119,7 +5119,7 @@ bureaucratic_elective = {
 			NOT = { character = FROM } #Do not judge yourself.
 			this_is_warrior_culture_trigger = yes
 			FROM = { 
-				trait = feeble
+				trait = frail
 			}
 		}
 
@@ -6265,8 +6265,8 @@ bureaucratic_elective = {
 			this_is_warrior_culture_trigger = yes
 			FROM = { 
 				OR = { 
-					trait = is_fat
-					trait = is_malnourished
+					trait = fat
+					trait = malnourished
 				}
 			}
 		}
@@ -6365,7 +6365,7 @@ bureaucratic_elective = {
 					trait = decadent
 					trait = slothful
 					trait = hedonist
-					trait = is_fat
+					trait = fat
 					trait = shy
 				}
 			}
@@ -8501,7 +8501,7 @@ imamate_elective = {
 			value = -15
 			localisation_key = tooltip_feudal_elector_vote_syphilitic
 			FROM = { 
-				trait = syphilitic
+				trait = great_pox
 			}
 		}
 		additive_modifier = {
@@ -8921,7 +8921,7 @@ imamate_elective = {
 			NOT = { character = FROM } #Do not judge yourself.
 			this_is_warrior_culture_trigger = no
 			FROM = { 
-				trait = robust
+				trait = brawny
 			}
 		}
 		additive_modifier = {
@@ -8930,7 +8930,7 @@ imamate_elective = {
 			NOT = { character = FROM } #Do not judge yourself.
 			this_is_warrior_culture_trigger = yes
 			FROM = { 
-				trait = robust
+				trait = brawny
 			}
 		}
 		additive_modifier = {
@@ -8963,7 +8963,7 @@ imamate_elective = {
 			NOT = { character = FROM } #Do not judge yourself.
 			this_is_warrior_culture_trigger = no
 			FROM = { 
-				trait = feeble
+				trait = frail
 			}
 		}
 		additive_modifier = {
@@ -8972,7 +8972,7 @@ imamate_elective = {
 			NOT = { character = FROM } #Do not judge yourself.
 			this_is_warrior_culture_trigger = yes
 			FROM = { 
-				trait = feeble
+				trait = frail
 			}
 		}
 
@@ -9757,8 +9757,8 @@ imamate_elective = {
 			this_is_warrior_culture_trigger = yes
 			FROM = { 
 				OR = { 
-					trait = is_fat
-					trait = is_malnourished
+					trait = fat
+					trait = malnourished
 				}
 			}
 		}
@@ -9780,7 +9780,7 @@ imamate_elective = {
 					trait = decadent
 					trait = slothful
 					trait = hedonist
-					trait = is_fat
+					trait = fat
 					trait = shy
 				}
 			}
