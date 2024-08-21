@@ -1780,7 +1780,7 @@ character_event = {
 					has_focus = focus_scholarship
 					has_focus = focus_theology
 					trait = detached_priest 
-					trait = martial_cleric  
+					trait = dutiful_cleric  
 					trait = scholarly_theologian 
 					trait = mastermind_theologian 
 				}
@@ -3114,7 +3114,7 @@ character_event = {
 					has_focus = focus_scholarship
 					has_focus = focus_theology
 					trait = detached_priest 
-					trait = martial_cleric  
+					trait = dutiful_cleric  
 					trait = scholarly_theologian 
 					trait = mastermind_theologian 
 				}
@@ -7152,7 +7152,7 @@ character_event = {
 	trigger = {
 		OR = {
 			trait = ravager
-			trait = seaking
+			trait = sea_king
 			trait = sea_queen
 		}
 		FROM = {
@@ -7223,7 +7223,7 @@ character_event = {
 		if = { 
 			limit = {
 				OR = {
-					trait = seaking
+					trait = sea_king
 					trait = sea_queen
 				}
 			}
@@ -7276,7 +7276,7 @@ character_event = {
 		if = { 
 			limit = {
 				OR = {
-					trait = seaking
+					trait = sea_king
 					trait = sea_queen
 				}
 			}
@@ -7300,7 +7300,7 @@ character_event = {
 		if = { 
 			limit = {
 				OR = {
-					trait = seaking
+					trait = sea_king
 					trait = sea_queen
 				}
 			}
@@ -7395,7 +7395,7 @@ narrative_event = {
 	trigger = {
 		check_variable = { which = viking_raids value = 200 }
 		OR = { 
-			trait = seaking
+			trait = sea_king
 			trait = sea_queen
 		}
 		NOR = { 
@@ -7755,11 +7755,11 @@ character_event = {
 					}
 					modifier = { 
 						factor = 1.5 
-						trait = seducer
+						trait = master_seducer
 					}
 					modifier = { 
 						factor = 1.5 
-						trait = seductress
+						trait = master_seductress
 					}
 					modifier = { 
 						factor = 1.25 
@@ -7838,11 +7838,11 @@ character_event = {
 					}
 					modifier = { 
 						factor = 1.5 
-						trait = seducer
+						trait = master_seducer
 					}
 					modifier = { 
 						factor = 1.5 
-						trait = seductress
+						trait = master_seductress
 					}
 					modifier = { 
 						factor = 1.25 
@@ -9605,7 +9605,7 @@ character_event = {
 	option = { #Cannibal eats his remains to gain strength.
 		name = EVTOPTAHF23411
 		trigger = { 
-			trait = cannibal_trait 
+			trait = cannibal 
 			NOT = { FROM = { death_reason = death_execution_eaten } } #Nothing left to eat.
 		}
 		tooltip_info = cannibal_trait
@@ -15393,10 +15393,10 @@ character_event = {
 				### Learning ###
 				detached_priest = {
 					remove_trait = detached_priest
-					add_trait = martial_cleric
+					add_trait = dutiful_cleric
 				}
 				martial_cleric = {
-					remove_trait = martial_cleric
+					remove_trait = dutiful_cleric
 					add_trait = scholarly_theologian 
 				}
 				scholarly_theologian = {
@@ -15624,11 +15624,11 @@ character_event = {
 		name = EVTOPTCHF23762
 		trigger = { 
 			NOR  = {
-				trait = is_fat
-				trait = is_malnourished
+				trait = fat
+				trait = malnourished
 			}
 		}
-		show_trait = is_fat
+		show_trait = fat
 		gain_weight_medium_effect = yes
 		set_character_flag = flag_primed_physique #No random flavor needed.
 		weight_trait_check_effect = yes
@@ -15636,7 +15636,7 @@ character_event = {
 			limit = { 
 				OR = { 
 					NOT = { check_variable = { which = physique_variable value = -5 } }
-					trait = feeble
+					trait = frail
 				} 
 			} 
 			health = 0.5
@@ -15645,10 +15645,10 @@ character_event = {
 			limit = { 
 				check_variable = { which = physique_variable value = 15 } #Nearing threshold.
 				NOR = {
-					trait = is_malnourished
+					trait = malnourished
 					event_target:scoped_improvement_target = { character = event_target:scoped_improvement_ruler }
 				}
-				event_target:scoped_improvement_ruler = { trait = is_fat } #Kindred coping.
+				event_target:scoped_improvement_ruler = { trait = fat } #Kindred coping.
 			}
 			opinion = { who = event_target:scoped_improvement_ruler modifier = opinion_kindred_spirit years = 5 } 
 			reverse_opinion = { who = event_target:scoped_improvement_ruler modifier = opinion_kindred_spirit years = 5 } 
@@ -15658,7 +15658,7 @@ character_event = {
 			limit = { 
 				event_target:scoped_improvement_target = { character = event_target:scoped_improvement_ruler }
 				any_courtier_or_vassal = { 
-					trait = is_fat 
+					trait = fat 
 					is_adult = yes
 					is_incapable = no
 					prisoner = no
@@ -15671,7 +15671,7 @@ character_event = {
 			hidden_tooltip = { 
 				random_courtier_or_vassal = { 
 					limit = { 
-						trait = is_fat 
+						trait = fat 
 						is_adult = yes
 						is_incapable = no
 						prisoner = no
@@ -15705,11 +15705,11 @@ character_event = {
 		name = EVTOPTDHF23762
 		trigger = { 
 			NOR  = {
-				trait = is_fat
-				trait = is_malnourished
+				trait = fat
+				trait = malnourished
 			}
 		}
-		show_trait = is_malnourished
+		show_trait = malnourished
 		lose_weight_medium_effect = yes
 		set_character_flag = flag_primed_physique #No random flavor needed.
 		weight_trait_check_effect = yes
@@ -15726,10 +15726,10 @@ character_event = {
 			limit = { 
 				NOT = { check_variable = { which = physique_variable value = -15 } } #Nearing threshold.
 				NOR = {
-					trait = is_fat
+					trait = fat
 					event_target:scoped_improvement_target = { character = event_target:scoped_improvement_ruler }
 				}
-				event_target:scoped_improvement_ruler = { trait = is_malnourished } #Kindred coping.
+				event_target:scoped_improvement_ruler = { trait = malnourished } #Kindred coping.
 			}
 			opinion = { who = event_target:scoped_improvement_ruler modifier = opinion_kindred_spirit years = 5 } 
 			reverse_opinion = { who = event_target:scoped_improvement_ruler modifier = opinion_kindred_spirit years = 5 } 
@@ -15739,7 +15739,7 @@ character_event = {
 			limit = { 
 				event_target:scoped_improvement_target = { character = event_target:scoped_improvement_ruler }
 				any_courtier_or_vassal = { 
-					trait = is_malnourished 
+					trait = malnourished 
 					is_adult = yes
 					is_incapable = no
 					prisoner = no
@@ -15752,7 +15752,7 @@ character_event = {
 			hidden_tooltip = { 
 				random_courtier_or_vassal = { 
 					limit = { 
-						trait = is_malnourished 
+						trait = malnourished 
 						is_adult = yes
 						is_incapable = no
 						prisoner = no
@@ -15788,8 +15788,8 @@ character_event = {
 			OR = {
 				trait = stressed
 				trait = uncouth
-				trait = is_fat
-				trait = is_malnourished
+				trait = fat
+				trait = malnourished
 			}
 		}
 		if = { 
@@ -15946,12 +15946,12 @@ character_event = {
 				}
 			}
 			martial_cleric = {
-				remove_trait = martial_cleric
+				remove_trait = dutiful_cleric
 				add_trait = detached_priest 
 			}
 			scholarly_theologian = {
 				remove_trait = scholarly_theologian
-				add_trait = martial_cleric 
+				add_trait = dutiful_cleric 
 			}
 			mastermind_theologian = {
 				remove_trait = mastermind_theologian
@@ -16867,7 +16867,7 @@ character_event = {
 			factor = 25
 			modifier = { 
 				factor = 1.5
-				trait = feeble
+				trait = frail
 			}
 			modifier = { 
 				factor = 1.5

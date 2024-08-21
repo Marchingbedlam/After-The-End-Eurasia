@@ -2565,7 +2565,7 @@ character_event = {
 	}
 	option = { #Use weighted die.
 		name = EVTOPTAHF25229
-		trigger = { trait = schemer NOT = { intrigue = 15 } }
+		trigger = { trait = master_schemer NOT = { intrigue = 15 } }
 		tooltip_info = schemer
 		random_list = {
 			30 = {
@@ -5468,7 +5468,7 @@ character_event = {
 				has_character_flag = insulting_family
 				has_character_flag = insulting_family_cruel
 			} 
-			trait = seducer
+			trait = master_seducer
 		}
 		tooltip_info = seducer
 		custom_tooltip = { text = TT_FLYTING_INSULT_MILD_REACTION }
@@ -5490,7 +5490,7 @@ character_event = {
 				has_character_flag = insulting_family
 				has_character_flag = insulting_family_cruel
 			} 
-			trait = seductress
+			trait = master_seductress
 		}
 		tooltip_info = seductress
 		custom_tooltip = { text = TT_FLYTING_INSULT_MILD_REACTION }
@@ -5514,8 +5514,8 @@ character_event = {
 			} 
 			NOR = { 
 				trait = celibate
-				trait = seducer
-				trait = seductress
+				trait = master_seducer
+				trait = master_seductress
 				trait = lustful
 			}
 		}
@@ -5540,8 +5540,8 @@ character_event = {
 			} 
 			NOR = { 
 				trait = celibate
-				trait = seducer
-				trait = seductress
+				trait = master_seducer
+				trait = master_seductress
 			}
 			trait = lustful
 		}
@@ -8301,7 +8301,7 @@ character_event = {
 	}
 	option = { #
 		name = EVTOPTBHF25288
-		trigger = { trait = robust }
+		trigger = { trait = brawny }
 		tooltip_info = robust
 		custom_tooltip = { text = TT_EVTOPTBHF25288 }
 		set_character_flag = flag_strong_boost_WL_drinking_game

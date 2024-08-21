@@ -1600,7 +1600,7 @@ character_event = {
 	
 	option = { #Trick
 		name = EVTOPTAHF23828
-		trigger = { trait = schemer NOT = { trait = deceitful } }
+		trigger = { trait = master_schemer NOT = { trait = deceitful } }
 		tooltip_info = schemer
 		custom_tooltip = { text = TOOLTIP_EVTOPTAHF23828 }
 		hidden_tooltip = { event_target:tribal_festival_potential_enemy_1 = { character_event = { id = HF.23829 } } }
@@ -2718,11 +2718,11 @@ character_event = {
 					} 
 					modifier = { 
 						factor = 0.5
-						trait = feeble
+						trait = frail
 					} 
 					modifier = { 
 						factor = 1.5
-						trait = robust
+						trait = brawny
 					} 
 					character_event = { id = HF.23847 } #Success.
 				}
@@ -3066,7 +3066,7 @@ character_event = {
 				}
 				modifier = {
 					factor = 0.75
-					trait = feeble
+					trait = frail
 				}
 				modifier = {
 					factor = 0.75
@@ -3078,7 +3078,7 @@ character_event = {
 				}
 				modifier = {
 					factor = 1.5
-					trait = robust
+					trait = brawny
 				}
 				modifier = {
 					factor = 0.5
@@ -3177,7 +3177,7 @@ character_event = {
 				}
 				modifier = {
 					factor = 0.75
-					FROM = { trait = feeble }
+					FROM = { trait = frail }
 				}
 				modifier = {
 					factor = 0.75
@@ -3189,7 +3189,7 @@ character_event = {
 				}
 				modifier = {
 					factor = 1.5
-					FROM = { trait = robust }
+					FROM = { trait = brawny }
 				}
 				modifier = {
 					factor = 0.5
@@ -3454,7 +3454,7 @@ character_event = {
 				}
 				modifier = {
 					factor = 0.75
-					trait = feeble
+					trait = frail
 				}
 				modifier = {
 					factor = 1.5
@@ -3462,7 +3462,7 @@ character_event = {
 				}
 				modifier = {
 					factor = 1.5
-					trait = robust
+					trait = brawny
 				}
 				modifier = {
 					factor = 0.5

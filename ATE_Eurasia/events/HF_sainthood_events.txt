@@ -20,7 +20,7 @@ character_event = {
 			trait = excommunicated
 			trait = drunkard
 			trait = hedonist
-			trait = cannibal_trait
+			trait = cannibal
 			#controls_religion = yes
             religion = waldensian
             is_any_kinslayer_trigger = yes
@@ -766,7 +766,7 @@ character_event = {
                             trigger = {
                                 OR = {
                                     trait = strong
-                                    trait = robust
+                                    trait = brawny
                                 }
                             }
                             give_nickname = nick_the_bear
@@ -3182,10 +3182,10 @@ character_event = {
     			}
     		}
     		AND = {
-    			trait = cannibal_trait
+    			trait = cannibal
     			k_papal_state = {
     				holder_scope = {
-    					trait = cannibal_trait
+    					trait = cannibal
     				}
     			}
     		}
@@ -3227,12 +3227,12 @@ character_event = {
     		}
     		AND = {
     			OR = {
-    				trait = seducer
-    				trait = seductress
+    				trait = master_seducer
+    				trait = master_seductress
     			}
     			k_papal_state = {
     				holder_scope = {
-    					trait = seducer
+    					trait = master_seducer
     				}
     			}
     		}
@@ -3294,9 +3294,9 @@ character_event = {
     		}
     		AND = {
     			event_target:saint_person = {
-    				trait = cannibal_trait
+    				trait = cannibal
     			}
-    			trait = cannibal_trait
+    			trait = cannibal
     		}
     		AND = {
     			event_target:saint_person = {
@@ -3328,11 +3328,11 @@ character_event = {
     		AND = {
     			event_target:saint_person = {
     				OR = {
-    					trait = seducer
-    					trait = seductress
+    					trait = master_seducer
+    					trait = master_seductress
     				}
     			}
-    			trait = seducer
+    			trait = master_seducer
     		}
     	}
         NOT = {
@@ -3467,7 +3467,7 @@ narrative_event = {
     	trigger = {
     		k_papal_state = {
     			holder_scope = {
-    				trait = cannibal_trait
+    				trait = cannibal
     			}
     		}
     	}
@@ -3520,7 +3520,7 @@ narrative_event = {
     	trigger = {
     		k_papal_state = {
     			holder_scope = {
-    				trait = seducer
+    				trait = master_seducer
     			}
     		}
     	}
@@ -3554,11 +3554,11 @@ narrative_event = {
             modifier = {
                 factor = 0.25
                 OR = {
-                    trait = cannibal_trait
+                    trait = cannibal
                     trait = impaler
                     trait = hedonist
                     trait = drunkard
-                    trait = seducer
+                    trait = master_seducer
                     trait = lustful
                     trait = lunatic                
                 }
@@ -3599,11 +3599,11 @@ narrative_event = {
             modifier = {
                 factor = 4
                 OR = {
-                    trait = cannibal_trait
+                    trait = cannibal
                     trait = impaler
                     trait = hedonist
                     trait = drunkard
-                    trait = seducer
+                    trait = master_seducer
                     trait = lustful
                     trait = lunatic
                 }

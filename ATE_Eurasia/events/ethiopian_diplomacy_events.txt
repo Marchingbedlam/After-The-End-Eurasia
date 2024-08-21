@@ -4886,7 +4886,7 @@ character_event = {
                         30 = { add_trait = thrifty_clerk }
                         15 = { add_trait = fortune_builder }
                         5 = { add_trait = midas_touched }
-                        30 = { add_trait = martial_cleric }
+                        30 = { add_trait = dutiful_cleric }
                         15 = { add_trait = scholarly_theologian }
                         5 = { add_trait = mastermind_theologian }
                     }
@@ -5020,12 +5020,12 @@ character_event = {
                                     25 = { add_trait = hedonist}
                                     20 = {
                                         trigger = { is_female = yes }
-                                        add_trait = seductress
+                                        add_trait = master_seductress
                                         add_trait = lustful
                                     }
                                     20 = {
                                         trigger = { is_female = no }
-                                        add_trait = seducer
+                                        add_trait = master_seducer
                                         add_trait = lustful
                                     }
                                 }
@@ -5125,7 +5125,7 @@ character_event = {
                         20 = { add_trait = shrewd }
                         15 = { add_trait = quick }
                         5 = { add_trait = genius }
-                        10 = { add_trait = robust }
+                        10 = { add_trait = brawny }
                         5 = { add_trait = strong }
                         5 = { add_trait = fair }
                     }
@@ -5144,7 +5144,7 @@ character_event = {
                         1 = { 
                             add_trait = weak 
                             remove_trait = strong 
-                            remove_trait = robust
+                            remove_trait = brawny
                         }
                     }
                     random = {
@@ -5255,12 +5255,12 @@ character_event = {
                                     25 = { add_trait = hedonist}
                                     20 = {
                                         trigger = { is_female = yes }
-                                        add_trait = seductress
+                                        add_trait = master_seductress
                                         add_trait = lustful
                                     }
                                     20 = {
                                         trigger = { is_female = no }
-                                        add_trait = seducer
+                                        add_trait = master_seducer
                                         add_trait = lustful
                                     }
                                 }
@@ -5346,7 +5346,7 @@ character_event = {
                         20 = { add_trait = brave } 
                         20 = { add_trait = strong }
                         20 = { add_trait = shrewd }
-                        40 = { add_trait = robust }
+                        40 = { add_trait = brawny }
                     }
                     random_list = {
                         71 = { } #Nothing
@@ -5663,7 +5663,7 @@ character_event = {
                                 50 = { add_trait = scholar }
                             }
                             add_scarred_tiered_effect = yes
-                            add_trait = robust
+                            add_trait = brawny
                             random_list = {
                                 60 = { } #Nothing
                                 20 = { 
@@ -5761,7 +5761,7 @@ character_event = {
                             }
                             random = {
                                 chance = 50
-                                add_trait = robust
+                                add_trait = brawny
                             }
                             remove_trait = weak
                         }
@@ -5798,11 +5798,11 @@ character_event = {
                             set_character_flag = archetype_sociable
                             if = {
                                 limit = { is_female = yes }
-                                add_trait = seductress
+                                add_trait = master_seductress
                             }
                             if = {
                                 limit = { is_female = no }
-                                add_trait = seducer
+                                add_trait = master_seducer
                             }
                             random_list = {
                                 50 = { } #Nothing
@@ -6194,10 +6194,10 @@ character_event = { # Traveling Teacher
 			remove_trait = administrator
 			remove_trait = architect
 			remove_trait = gardener
-			remove_trait = schemer
+			remove_trait = master_schemer
 			remove_trait = impaler
-			remove_trait = seducer
-			remove_trait = seductress
+			remove_trait = master_seducer
+			remove_trait = master_seductress
 			remove_trait = theologian
 			
 			add_trait = poet
@@ -6275,7 +6275,7 @@ character_event = { # Traveling Teacher
 		name = EVTOPTC_ED_7000
 		tooltip_info = cannibal_trait
 		trigger = {
-			trait = cannibal_trait
+			trait = cannibal
 		}
 		custom_tooltip = {
 			text = EVTOPTC_ED_7000_TT
@@ -6617,7 +6617,7 @@ character_event = { # Radhabeshaite Merchabeshat
 		name = EVTOPTB_ED_7010
 		tooltip_info = cannibal_trait
 		trigger = {
-			trait = cannibal_trait
+			trait = cannibal
 		}
 		event_target:radhanite_merchant = {
 			death = {

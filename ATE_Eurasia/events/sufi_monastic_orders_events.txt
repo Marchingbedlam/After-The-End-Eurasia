@@ -4422,7 +4422,7 @@ character_event = {
 						limit = {
 							OR = {
 								trait = detached_priest
-								trait = martial_cleric
+								trait = dutiful_cleric
 								trait = scholarly_theologian
 								trait = mastermind_theologian
 							}
@@ -4433,7 +4433,7 @@ character_event = {
 						limit = {
 							NOT = {
 								trait = detached_priest
-								trait = martial_cleric
+								trait = dutiful_cleric
 								trait = scholarly_theologian
 								trait = mastermind_theologian
 							}

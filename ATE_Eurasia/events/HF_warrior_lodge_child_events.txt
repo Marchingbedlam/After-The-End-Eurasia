@@ -92,7 +92,7 @@ character_event = {
 				}
 				modifier = {
 					factor = 1.5
-					trait = feeble
+					trait = frail
 				}
 				modifier = {
 					factor = 1.25
@@ -100,7 +100,7 @@ character_event = {
 				}
 				modifier = {
 					factor = 0.5
-					trait = robust
+					trait = brawny
 				}
 				modifier = {
 					factor = 1.5
@@ -147,11 +147,11 @@ character_event = {
 				event_target:recruiting_parent = { character_event = { id = HF.25407 days = 250 random = 150 } }
 			}
 			15 = { #Brawny for Shrewd switch.
-				trigger = { NOR = { trait = robust trait = sturdy trait = feeble } } #Only if from average physical shape.
+				trigger = { NOR = { trait = brawny trait = sturdy trait = frail } } #Only if from average physical shape.
 				event_target:recruiting_parent = { character_event = { id = HF.25410 days = 250 random = 150 } }
 			}
 			15 = { #Brawny for Groomed switch.
-				trigger = { NOT = { trait = robust trait = sturdy trait = feeble } }
+				trigger = { NOT = { trait = brawny trait = sturdy trait = frail } }
 				event_target:recruiting_parent = { character_event = { id = HF.25413 days = 250 random = 150 } }
 			}
 			15 = { #Hero wants to make child brave.
@@ -211,7 +211,7 @@ character_event = {
 				trigger = { 
 					OR = { 
 						trait = sturdy 
-						trait = feeble 
+						trait = frail 
 					} 
 					any_society_member = { #A potential hero teacher exists.
 						same_society_as = ROOT
@@ -219,7 +219,7 @@ character_event = {
 						society_rank = 4
 						NOT = { event_target:recruiting_parent = { character = PREV } }
 						NOR = { 
-							trait = feeble
+							trait = frail
 							trait = sturdy
 							character = ROOT 
 							is_rival = ROOT
@@ -236,7 +236,7 @@ character_event = {
 							society_rank = 4
 							NOT = { event_target:recruiting_parent = { character = PREV } }
 							NOR = { 
-								trait = feeble
+								trait = frail
 								trait = sturdy
 								character = ROOT 
 								is_rival = ROOT
@@ -254,7 +254,7 @@ character_event = {
 							society_rank = 4
 							NOT = { event_target:recruiting_parent = { character = PREV } }
 							NOR = { 
-								trait = feeble
+								trait = frail
 								trait = sturdy
 								character = ROOT 
 								is_rival = ROOT
@@ -723,16 +723,16 @@ character_event = {
 				}
 
 				if = { #Then add brawn.
-					limit = { trait = robust }
+					limit = { trait = brawny }
 					health = 0.5 #Safety check, shouldn't fire if already Brawny.
 				} 
 				else_if = { 
-					limit = { NOR = { trait = feeble trait = sturdy trait = robust } }
-					add_trait = robust 
+					limit = { NOR = { trait = frail trait = sturdy trait = brawny } }
+					add_trait = brawny 
 				} 
 				else_if = { 
-					limit = { trait = feeble }
-					remove_trait = feeble
+					limit = { trait = frail }
+					remove_trait = frail
 				}
 				else_if = { 
 					limit = { trait = sturdy }
@@ -798,16 +798,16 @@ character_event = {
 		}
 
 		if = { #Then add brawn.
-			limit = { trait = robust }
+			limit = { trait = brawny }
 			health = 0.5 #Safety check, shouldn't fire if already Brawny.
 		} 
 		else_if = { 
-			limit = { NOR = { trait = feeble trait = sturdy trait = robust } }
-			add_trait = robust 
+			limit = { NOR = { trait = frail trait = sturdy trait = brawny } }
+			add_trait = brawny 
 		} 
 		else_if = { 
-			limit = { trait = feeble }
-			remove_trait = feeble
+			limit = { trait = frail }
+			remove_trait = frail
 		}
 		else_if = { 
 			limit = { trait = sturdy }
@@ -928,16 +928,16 @@ character_event = {
 				}
 
 				if = { #Then add brawn.
-					limit = { trait = robust }
+					limit = { trait = brawny }
 					health = 0.5 #Safety check, shouldn't fire if already Brawny.
 				} 
 				else_if = { 
-					limit = { NOR = { trait = feeble trait = sturdy trait = robust } }
-					add_trait = robust 
+					limit = { NOR = { trait = frail trait = sturdy trait = brawny } }
+					add_trait = brawny 
 				} 
 				else_if = { 
-					limit = { trait = feeble }
-					remove_trait = feeble
+					limit = { trait = frail }
+					remove_trait = frail
 				}
 				else_if = { 
 					limit = { trait = sturdy }
@@ -1013,16 +1013,16 @@ character_event = {
 		}
 
 		if = { #Then add brawn.
-			limit = { trait = robust }
+			limit = { trait = brawny }
 			health = 0.5 #Safety check, shouldn't fire if already Brawny.
 		} 
 		else_if = { 
-			limit = { NOR = { trait = feeble trait = sturdy trait = robust } }
-			add_trait = robust 
+			limit = { NOR = { trait = frail trait = sturdy trait = brawny } }
+			add_trait = brawny 
 		} 
 		else_if = { 
-			limit = { trait = feeble }
-			remove_trait = feeble
+			limit = { trait = frail }
+			remove_trait = frail
 		}
 		else_if = { 
 			limit = { trait = sturdy }
@@ -1134,7 +1134,7 @@ character_event = {
 		text = EVTDESCBHF25418
 		trigger = { 
 			FROM = { 
-				trait = feeble
+				trait = frail
 			}
 		}
 	}
@@ -1188,7 +1188,7 @@ character_event = {
 		text = EVTDESCBHF25419
 		trigger = { 
 			FROM = { 
-				trait = feeble
+				trait = frail
 			}
 		}
 	}
@@ -1213,8 +1213,8 @@ character_event = {
 			hidden_tooltip = { FROM = { character_event = { id = HF.25420 days = 50 } } }
 		}
 		if = { 
-			limit = { trait = feeble } 
-			remove_trait = feeble
+			limit = { trait = frail } 
+			remove_trait = frail
 			hidden_tooltip = { FROM = { character_event = { id = HF.25421 days = 50 } } }
 		}
 		ai_chance = { 
@@ -1257,7 +1257,7 @@ character_event = {
 			}
 			modifier = { 
 				factor = 1.75
-				trait = feeble
+				trait = frail
 				trait = temperate
 			}
 			modifier = { 
@@ -1329,7 +1329,7 @@ character_event = {
 		text = EVTDESCBHF25422
 		trigger = { 
 			FROM = { 
-				trait = feeble
+				trait = frail
 			}
 		}
 	}
@@ -1899,7 +1899,7 @@ character_event = {
 			}
 			#Child has become frail bookworm
 			change_martial = -3
-			add_trait = feeble
+			add_trait = frail
 			add_trait = erudite
 			add_trait = craven
 			add_trait = uncouth
