@@ -1425,7 +1425,7 @@ character_event = {
 						add_trait = strong
 					}
 					1 = {
-						add_trait = robust
+						add_trait = brawny
 					}
 				}
 				# Some sort of lifestyle
@@ -2545,7 +2545,7 @@ character_event = {
 			remove_trait = slow
 			remove_trait = imbecile
 			remove_trait = weak
-			remove_trait = feeble
+			remove_trait = frail
 			random_list = {
 				100 = {
 					add_trait = genius
@@ -2560,7 +2560,7 @@ character_event = {
 					add_trait = strong
 				}
 				100 = {
-					add_trait = robust
+					add_trait = brawny
 				}
 			}
 			add_random_commander_trait_effect = yes

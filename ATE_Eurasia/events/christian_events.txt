@@ -19,21 +19,21 @@ character_event = {
 		piety = 30
 		if = { 
 			limit = { 
-				NOT = { trait = is_fat }
-				NOT = { trait = is_malnourished } 
+				NOT = { trait = fat }
+				NOT = { trait = malnourished } 
 			} 
 			random = { 
 				chance = 10 
-				add_trait = is_malnourished
+				add_trait = malnourished
 			}
 		}
 		if = { 
 			limit = { 
-				trait = is_fat
+				trait = fat
 			} 
 			random = { 
 				chance = 30 
-				remove_trait = is_fat
+				remove_trait = fat
 			}
 		} 
 	}
@@ -46,21 +46,21 @@ character_event = {
 		piety = 10
 		if = { 
 			limit = { 
-				NOT = { trait = is_fat } 
-				NOT = { trait = is_malnourished }
+				NOT = { trait = fat } 
+				NOT = { trait = malnourished }
 			} 
 			random = { 
 				chance = 2 
-				add_trait = is_malnourished
+				add_trait = malnourished
 			}
 		}
 		if = { 
 			limit = { 
-				trait = is_fat
+				trait = fat
 			} 
 			random = { 
 				chance = 8 
-				remove_trait = is_fat
+				remove_trait = fat
 			}
 		}
 	}
@@ -242,11 +242,11 @@ narrative_event = {
 		}
 		if = { 
 			limit = { 
-				trait = is_malnourished
+				trait = malnourished
 			} 
 			random = { 
 				chance = 10 
-				remove_trait = is_malnourished
+				remove_trait = malnourished
 			}
 		}
 		

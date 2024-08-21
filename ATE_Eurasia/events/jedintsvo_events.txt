@@ -16,7 +16,7 @@ character_event = {
 				death_no_trace_trigger = no
 				NOR = {
 					trait = excommunicated
-					trait = cannibal_trait
+					trait = cannibal
 					has_character_modifier = voice_of_satan
 					has_character_modifier = known_satanist
 					has_character_modifier = suspected_demon_spawn
@@ -2605,7 +2605,7 @@ character_event = {
 		name = EVOTPA_jedinstvo_27
 		trigger = {
 			NOT = { trait = weak }
-			NOT = { trait = feeble }
+			NOT = { trait = frail }
 		}
 		custom_tooltip = { text = TXT_jedinstvo_rudi_cajavec }
 		hidden_effect = {
@@ -2617,7 +2617,7 @@ character_event = {
 				factor = 20
 				OR = {
 					trait = strong
-					trait = robust
+					trait = brawny
 					trait = diligent
 					trait = drunkard
 				}
@@ -2651,7 +2651,7 @@ character_event = {
 				factor = 20
 				OR = {
 					trait = strong
-					trait = robust
+					trait = brawny
 					trait = gluttonous
 					trait = shrewd
 					trait = quick
@@ -2664,7 +2664,7 @@ character_event = {
 					trait = temperate
 					trait = content
 					trait = weak
-					trait = feeble
+					trait = frail
 				}
 			}
 		}
@@ -2691,8 +2691,8 @@ character_event = {
 					trait = homosexual
 					trait = gregarious
 					trait = hedonist
-					trait = seducer
-					trait = seductress
+					trait = master_seducer
+					trait = master_seductress
 					trait = wroth
 					trait = mystic
 				}
@@ -2779,7 +2779,7 @@ character_event = {
 					trait = proud
 					trait = envious
 					trait = strong
-					trait = robust
+					trait = brawny
 				}
 			}
 			modifier = {
@@ -2898,7 +2898,7 @@ character_event = {
 				OR = {
 					trait = mystic
 					trait = strong
-					trait = robust
+					trait = brawny
 					trait = zealous
 					trait = brave
 				}
@@ -2907,7 +2907,7 @@ character_event = {
 				factor = 5
 				OR = {
 					trait = weak
-					trait = feeble
+					trait = frail
 					trait = temperate
 					trait = chaste
 				}

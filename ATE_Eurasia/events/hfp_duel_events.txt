@@ -870,7 +870,7 @@ character_event = {
 				OR = {
 					intrigue = 15
 					trait = elusive_shadow
-					trait = schemer
+					trait = master_schemer
 				}
 			}
 			random_list = {
@@ -891,8 +891,8 @@ character_event = {
 						factor = 2
 					}
 					modifier = {
-						trait = schemer
-						FROM = { NOT = { trait = schemer } }
+						trait = master_schemer
+						FROM = { NOT = { trait = master_schemer } }
 						factor = 2
 					}
 					modifier = {
@@ -924,8 +924,8 @@ character_event = {
 						factor = 2
 					}
 					modifier = {
-						NOT = { trait = schemer }
-						FROM = { trait = schemer }
+						NOT = { trait = master_schemer }
+						FROM = { trait = master_schemer }
 						factor = 2
 					}
 					modifier = {
@@ -978,7 +978,7 @@ character_event = {
 			OR = {
 				intrigue = 15
 				trait = elusive_shadow
-				trait = schemer
+				trait = master_schemer
 			}
 			NOT = { has_character_flag = mock_duel }
 			NOT = { has_character_flag = claim_duel@event_target:combatant_2 }
@@ -2761,7 +2761,7 @@ character_event = {
 			trigger = {
 				OR = {
 					trait = lunatic
-					trait = cannibal_trait
+					trait = cannibal
 					trait = possessed
 				}
 				NOR = {
@@ -2779,7 +2779,7 @@ character_event = {
 				}
 				NOR = {
 					trait = lunatic
-					trait = cannibal_trait
+					trait = cannibal
 					trait = possessed
 				}
 			}
@@ -2793,7 +2793,7 @@ character_event = {
 				}
 				NOR = {
 					trait = lunatic
-					trait = cannibal_trait
+					trait = cannibal
 					trait = possessed
 					trait = cruel
 				}
@@ -4413,7 +4413,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 1.5
-				trait = feeble
+				trait = frail
 			}
 			modifier = {
 				factor = 1.5
@@ -4475,7 +4475,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 1.5
-				trait = robust
+				trait = brawny
 			}
 			modifier = {
 				factor = 1.5

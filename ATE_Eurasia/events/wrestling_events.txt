@@ -368,7 +368,7 @@
 	# trigger = {
 		# society_member_of = warrior_lodge_mexican
 		# NOR = {
-			# trait = robust
+			# trait = brawny
 			# trait = strong
 		# }
 		# ROOT = { check_variable = { which = training_var value > 3 } }
@@ -383,7 +383,7 @@
 		
 		# random_list = {
 			# 75 = {
-				# add_trait = robust
+				# add_trait = brawny
 			# }
 			# 25 = {
 				# add_trait = strong
