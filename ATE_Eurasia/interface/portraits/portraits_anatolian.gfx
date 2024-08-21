@@ -1,0 +1,137 @@
+# hair, mouth, chin, nose, eyes, cheek, ear, neck
+spriteTypes = {
+	
+############## egyptian ##########################
+
+	### egyptian sprites ####
+	
+	spriteType = {
+		name = "GFX_anatolian_male_clothes_behind"
+		texturefile = "gfx\\characters\\anatolian_male\\anatolian_male_clothes_behind.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_anatolian_male_headgear_behind"
+		texturefile = "gfx\\characters\\anatolian_male\\anatolian_male_headgear_behind.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_anatolian_male_clothes"
+		texturefile = "gfx\\characters\\anatolian_male\\anatolian_male_clothes.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_anatolian_male_headgear"
+		texturefile = "gfx\\characters\\anatolian_male\\anatolian_male_headgear.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_anatolian_female_clothes_behind"
+		texturefile = "gfx\\characters\\anatolian_female\\anatolian_female_clothes_behind.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_anatolian_female_headgear_behind"
+		texturefile = "gfx\\characters\\anatolian_female\\anatolian_female_headgear_behind.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_anatolian_female_clothes"
+		texturefile = "gfx\\characters\\anatolian_female\\anatolian_female_clothes.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_anatolian_female_headgear"
+		texturefile = "gfx\\characters\\anatolian_female\\anatolian_female_headgear.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+	
+	# CULTURE_INDEX: 0 = clothes behind, 1 = headgear behind, 2 = clothes, 3 = headgear mid, 4 = clothes infront, 5 = headgear
+
+	portraitType = { #Portraits - Male
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_anatolian_ruler_male"
+		
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				portrait_is_female = no
+				portrait_clothing = yes
+				OR = {
+					portrait_culture = west_anatolian
+					portrait_culture = rumelian
+					portrait_culture = central_anatolian
+					portrait_culture = black_sea
+					portrait_culture = toros_mountain
+					portrait_culture = laz
+				}
+#				NOT = { portrait_government = theocracy_government }
+			}
+		}
+		
+		layer = {
+			"GFX_anatolian_male_clothes_behind:p3:c0"
+            "GFX_anatolian_male_clothes:p3:c2"
+            "GFX_empty:c3"
+            "GFX_anatolian_male_headgear:p5:c5"
+            "GFX_anatolian_male_headgear_behind:p5:c1"
+			"GFX_empty:c6"
+			"GFX_empty:c7"
+            "GFX_empty:c4"
+		}
+		
+		headgear_that_hides_hair = { 0 1 2 3 4 6 9 }
+	}
+	
+	portraitType = { #Portraits - Female
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_anatolian_ruler_female"
+		
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				portrait_is_female = yes
+				portrait_clothing = yes
+				OR = {
+					portrait_culture = west_anatolian
+					portrait_culture = rumelian
+					portrait_culture = central_anatolian
+					portrait_culture = black_sea
+					portrait_culture = toros_mountain
+					portrait_culture = laz
+				}
+#				NOT = { portrait_government = theocracy_government }
+			}
+		}
+		
+		layer = {
+			"GFX_anatolian_female_clothes_behind:p3:c0"
+            "GFX_anatolian_female_clothes:p3:c2"
+            "GFX_empty:c3"
+            "GFX_anatolian_female_headgear:p5:c5"
+            "GFX_anatolian_female_headgear_behind:p5:c1
+			"GFX_empty:c6"
+			"GFX_empty:c7"
+            "GFX_empty:c4"
+		}
+		
+		headgear_that_hides_hair = { 7 }
+	}
+}

@@ -2992,7 +2992,7 @@ pike_column_advance_tactic = {
 		flank_has_leader = yes
 		leader = { 
 			OR = { 
-				culture = italian 
+				OR = { culture = romansh culture = sardinian culture = sicilian culture = neapolitan culture = maltese culture = tuscan culture = ligurian culture = piedmontese culture = lombard culture = romagnol culture = venetian culture = friulian } 
 				culture = roman
 			} 
 		}
@@ -3133,7 +3133,7 @@ couched_lance_charge_tactic = {
 				culture = outremer
 				OR = { culture = gascon culture = occitan culture = provencal }
 				culture = norman
-				culture = german
+				OR = { culture = rhenish culture = bavarian culture = alsatian culture = low_saxon culture = ossi culture = upper_saxon culture = swabian culture = schwyzer culture = luxembourger culture = austrian culture = palatinate culture = prussian }
 				culture = breton
 			}
 		}

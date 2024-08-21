@@ -1772,7 +1772,7 @@
 
 			OR = {
 				culture = greek
-				culture = italian
+				OR = { culture = romansh culture = sardinian culture = sicilian culture = neapolitan culture = maltese culture = tuscan culture = ligurian culture = piedmontese culture = lombard culture = romagnol culture = venetian culture = friulian }
 				culture = roman
 			}
 
@@ -1903,7 +1903,7 @@
 
 			OR = {
 				culture = greek
-				culture = italian
+				OR = { culture = romansh culture = sardinian culture = sicilian culture = neapolitan culture = maltese culture = tuscan culture = ligurian culture = piedmontese culture = lombard culture = romagnol culture = venetian culture = friulian }
 			}
 
 			OR = {

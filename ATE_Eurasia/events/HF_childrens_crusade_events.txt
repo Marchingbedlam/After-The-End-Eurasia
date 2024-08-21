@@ -218,7 +218,7 @@ narrative_event = {
 		}
 		modifier = {
 			factor = 1.5
-			culture = german
+			OR = { culture = rhenish culture = bavarian culture = alsatian culture = low_saxon culture = ossi culture = upper_saxon culture = swabian culture = schwyzer culture = luxembourger culture = austrian culture = palatinate culture = prussian }
 		}
 		modifier = {
 			factor = 1.5

@@ -15977,7 +15977,7 @@ narrative_event = {
 						show_scope_change = no
 
 						limit = {
-							culture = italian
+							OR = { culture = romansh culture = sardinian culture = sicilian culture = neapolitan culture = maltese culture = tuscan culture = ligurian culture = piedmontese culture = lombard culture = romagnol culture = venetian culture = friulian }
 							lower_real_tier_than = KING
 							is_landed = yes
 
