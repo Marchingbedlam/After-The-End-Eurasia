@@ -790,3 +790,120 @@
 	2690.2.10={death=yes}
 	#current duke of Beja
 }
+1713046={
+	name="Alaricus"
+	dynasty=2018205
+	culture=castilian
+	religion=catholic
+	occluded=yes
+	trait=legendary
+	disallow_random_traits=yes
+	300.1.1={birth=yes}
+	700.1.1={death=yes}
+}
+1713047={
+	name="Tariq"
+	dynasty=2042053
+	culture=riffian
+	religion=ruhi
+	occluded=yes
+	trait=legendary
+	disallow_random_traits=yes
+	700.1.1={birth=yes}
+	800.1.1={death=yes}
+}
+1713048={
+	name="Abderrahman"
+	dynasty=1956140
+	culture=moroccan
+	religion=ruhi
+	occluded=yes
+	trait=legendary
+	disallow_random_traits=yes
+	700.1.1={birth=yes}
+	800.1.1={death=yes}
+}
+1713049={
+	name="Pelayo"
+	dynasty=2020114
+	culture=asturleonese
+	religion=catholic
+	occluded=yes
+	trait=legendary
+	disallow_random_traits=yes
+	700.1.1={birth=yes}
+	900.1.1={death=yes}
+}
+1713050={
+	name="Alfonso"
+	dynasty=2018206
+	culture=castilian
+	religion=catholic
+	occluded=yes
+	trait=legendary
+	disallow_random_traits=yes
+	1100.1.1={birth=yes}
+	1300.1.1={death=yes}
+}
+1713051={
+	name="Isabel"
+	dynasty=2018207
+	culture=castilian
+	religion=catholic
+	female=yes
+	occluded=yes
+	trait=legendary
+	disallow_random_traits=yes
+	1400.1.1={birth=yes}
+	1420.1.1={add_spouse=1713052}
+	1500.1.1={death=yes}
+}
+1713052={
+	name="Ferran"
+	dynasty=2018207
+	culture=catalan
+	religion=catholic
+	occluded=yes
+	trait=legendary
+	disallow_random_traits=yes
+	1400.1.1={birth=yes}
+	1500.1.1={death=yes}
+}
+1713053={
+	name="Juana"
+	dynasty=2018207
+	culture=castilian
+	religion=catholic
+	female=yes
+	occluded=yes
+	father=1713052
+	mother=1713053
+	trait=legendary
+	disallow_random_traits=yes
+	1480.1.1={birth=yes}
+	1550.1.1={death=yes}
+}
+1713054={
+	name="Carlos"
+	dynasty=2018208
+	culture=castilian
+	religion=catholic
+	occluded=yes
+	mother=1713053
+	trait=legendary
+	disallow_random_traits=yes
+	1500.1.1={birth=yes}
+	1556.1.1={death=yes}
+}
+1713055={
+	name="Felipe"
+	dynasty=2018208
+	culture=castilian
+	religion=catholic
+	occluded=yes
+	father=1713054
+	trait=legendary
+	disallow_random_traits=yes
+	1550.1.1={birth=yes}
+	1700.1.1={death=yes}
+}
