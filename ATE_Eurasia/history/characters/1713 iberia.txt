@@ -877,7 +877,7 @@
 	female=yes
 	occluded=yes
 	father=1713052
-	mother=1713053
+	mother=1713051
 	trait=legendary
 	disallow_random_traits=yes
 	1480.1.1={birth=yes}
@@ -906,4 +906,176 @@
 	disallow_random_traits=yes
 	1550.1.1={birth=yes}
 	1700.1.1={death=yes}
+}
+1713056={
+	name="Carlos"
+	dynasty=2018208
+	culture=castilian
+	religion=catholic
+	occluded=yes
+	father=1713055
+	trait=legendary
+	disallow_random_traits=yes
+	1661.1.1={birth=yes}
+	1710.1.1={death=yes}
+}
+1713057={
+	name="Felipe"
+	dynasty=2018209
+	culture=castilian
+	religion=catholic
+	occluded=yes
+	trait=legendary
+	disallow_random_traits=yes
+	1661.1.1={birth=yes}
+	1800.1.1={death=yes}
+}
+1713058={
+	name="Fernando"
+	dynasty=2018209
+	culture=castilian
+	religion=catholic
+	occluded=yes
+	father=1713057
+	trait=legendary
+	disallow_random_traits=yes
+	1784.1.1={birth=yes}
+	1850.1.1={death=yes}
+}
+1713059={
+	name="Joseph"
+	dynasty=2009337
+	culture=parisian
+	religion=catholic
+	occluded=yes
+	trait=legendary
+	disallow_random_traits=yes
+	1768.1.1={birth=yes}
+	1820.1.1={death=yes}
+}
+1713060={
+	name="República"
+	dynasty=2018210
+	female=yes
+	culture=castilian
+	religion=catholic
+	occluded=yes
+	trait=legendary
+	disallow_random_traits=yes
+	1850.1.1={birth=yes}
+	1860.1.1={death=yes}
+}
+1713061={
+	name="Restauración"
+	dynasty=2018211
+	culture=castilian
+	religion=catholic
+	occluded=yes
+	trait=legendary
+	disallow_random_traits=yes
+	1870.1.1={birth=yes}
+	1930.1.1={death=yes}
+}
+1713062={
+	name="República"
+	dynasty=2018210
+	female=yes
+	culture=castilian
+	religion=catholic
+	occluded=yes
+	trait=legendary
+	mother=1713060
+	disallow_random_traits=yes
+	1930.1.1={birth=yes}
+	1940.1.1={death=yes}
+}
+1713063={
+	name="Transición"
+	dynasty=2018211
+	culture=castilian
+	religion=catholic
+	occluded=yes
+	trait=legendary
+	disallow_random_traits=yes
+	1970.1.1={birth=yes}
+	1990.1.1={death=yes}
+}
+1713064={
+	name="Otger"
+	dynasty=2017253
+	culture=catalan
+	religion=catholic
+	occluded=yes
+	trait=legendary
+	disallow_random_traits=yes
+	700.1.1={birth=yes}
+	850.1.1={death=yes}
+}
+1713065={
+	name="Guifré"
+	dynasty=2017254
+	culture=catalan
+	religion=catholic
+	occluded=yes
+	trait=legendary
+	disallow_random_traits=yes
+	850.1.1={birth=yes}
+	900.1.1={death=yes}
+}
+1713066={
+	name="Ramón"
+	dynasty=2017254
+	culture=catalan
+	religion=catholic
+	occluded=yes
+	father=1713065
+	trait=legendary
+	disallow_random_traits=yes
+	900.1.1={birth=yes}
+	1200.1.1={death=yes}
+}
+1713067={
+	name="Jaume"
+	dynasty=2017254
+	culture=catalan
+	religion=catholic
+	occluded=yes
+	father=1713066
+	trait=legendary
+	disallow_random_traits=yes
+	1200.1.1={birth=yes}
+	1400.1.1={death=yes}
+}
+1713068={
+	name="Pau"
+	dynasty=2017255
+	culture=catalan
+	religion=catholic
+	occluded=yes
+	trait=legendary
+	disallow_random_traits=yes
+	1640.1.1={birth=yes}
+	1650.1.1={death=yes}
+}
+1713069={
+	name="Lluís"
+	dynasty=2017256
+	culture=catalan
+	religion=catholic
+	occluded=yes
+	trait=legendary
+	disallow_random_traits=yes
+	1930.1.1={birth=yes}
+	1940.1.1={death=yes}
+}
+1713070={
+	name="Jordi"
+	dynasty=2017070
+	culture=catalan
+	religion=catholic
+	occluded=yes
+	trait=legendary
+	disallow_random_traits=yes
+	1970.1.1={birth=yes}
+	1990.1.1={death=yes}
 }
