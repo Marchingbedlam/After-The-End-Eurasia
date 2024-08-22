@@ -2852,6 +2852,7 @@
 1501118 = { name = "Ó Buachalla" culture = irish }
 1501119 = { name = "Ó Dubhuir" culture = irish }
 1501120 = { name = "Ó Cearbhalláin" culture = irish }
+1501121 = { name = "Chluain Fearta" culture = irish used_for_random = no}
 
 1534000 = { name = "Marathe" culture = quebecois }
 1534001 = { name = "Fortier" culture = quebecois }
@@ -14205,7 +14206,8 @@ coat_of_arms = {
 	}
 }
 2009336 = { name = "de Wendel" culture = parisian }
-2009337 = { name = "Bonaparte" culture = parisian used_for_random no}
+2009337 = { name = "Bonaparte" culture = parisian used_for_random = no}
+2009338 = { name = "Capet" culture = parisian used_for_random = no}
 
 2010001 = { name = "Abgrall" culture = breton }
 2010002 = { name = "Abjean" culture = breton }
@@ -15485,6 +15487,9 @@ coat_of_arms = {
 2014242 = { name = "Solagurenbeascoa" culture = basque }
 2014243 = { name = "De Jasso" culture = basque used_for_random = no }
 2014244 = { name = "Elkano" culture = basque }
+2014245 = { name = "Arista" culture = basque used_for_random = no }
+2014246 = { name = "de Ximena" culture = basque used_for_random = no }
+2014247 = { name = "Ramiritz" culture = basque used_for_random = no }
 
 2015001 = { name = "García" culture = aragonese }
 2015002 = { name = "Pérez" culture = aragonese }
@@ -16776,6 +16781,12 @@ coat_of_arms = {
 		}
 	}
 }
+2019102 = { name = "Nasri" culture = andalusian religion = ruhi used_for_random = no }
+2019103 = { name = "Infante" culture = andalusian used_for_random = no }
+2019104 = { name = "García Lorca" culture = andalusian used_for_random = no }
+2019105 = { name = "Flores" culture = andalusian used_for_random = no }
+2019106 = { name = "de Lucía" culture = andalusian used_for_random = no }
+2019107 = { name = "García Caparros" culture = andalusian used_for_random = no }
 
 2020000 = { name = "Hernández" culture = asturleonese }
 2020001 = { name = "Alonso" culture = asturleonese }
@@ -17517,6 +17528,9 @@ coat_of_arms = {
 2022210 = { name = "Vila" culture = galician }
 2022211 = { name = "Vitureira" culture = galician }
 2022212 = { name = "Viña" culture = galician }
+2022213 = { name = "Matamoros" culture = galician used_for_random = no}
+2022214 = { name = "de Léon" culture = galician used_for_random = no}
+2022215 = { name = "de Castro" culture = galician used_for_random = no}
 
 2023001 = { name = "Garcia" culture = llanito }
 2023002 = { name = "Martinez" culture = llanito }
@@ -18118,6 +18132,8 @@ coat_of_arms = {
 2025131 = { name = "de Abreu" culture = canarian used_for_random = no }
 2025132 = { name = "Cordeiro" culture = canarian used_for_random = no }
 2025133 = { name = "Corte-Real" culture = canarian used_for_random = no }
+2025134 = { name = "Mencey" culture = canarian religion = pagan used_for_random = no }
+2025135 = { name = "Guanarteme" culture = canarian religion = pagan used_for_random = no }
 
 2026001 = { name = "Caretti" culture = piedmontese }
 2026002 = { name = "Rossi" culture = piedmontese }
