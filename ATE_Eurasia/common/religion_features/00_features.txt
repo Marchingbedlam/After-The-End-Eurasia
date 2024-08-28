@@ -1936,13 +1936,11 @@ religion_doctrine = {
 					key = "RELENTLESS_RELIGION"
 				}
 			}
-			effect = {
 			custom_tooltip = { text = tooltip_religion_feature_harems }
 			hidden_tooltip = { 
 				set_max_consorts = 0
 				set_max_wives = 4
 			}
-		}
 		}
 		ai_will_do = {
 			factor = 1

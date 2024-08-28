@@ -13,21 +13,18 @@ decisions = {
         			has_alternate_start_parameter = { key = religion_names value = random }
     			}
 		}
-    		allow = {
+    	allow = {
 			religion = quinto
-    		}
-    		effect = {
-      			hidden_tooltip = {
-       				character_event = {
-        				id = quinto.1
-       				}
-      			}
-			revoke_allowed = {
-				always = no
-			}
-    			ai_will_do = {
-      				factor = 1
-			}
+    	}
+    	effect = {
+      		hidden_tooltip = {
+       			character_event = {
+        			id = quinto.1
+       			}
+      		}
+		}
+    	ai_will_do = {
+      		factor = 1
 		}
 	}
 }

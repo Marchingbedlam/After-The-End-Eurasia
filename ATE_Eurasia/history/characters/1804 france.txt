@@ -2668,10 +2668,11 @@
 	trait=rude
 	trait=gladiator
 	trait=sang_capetien
+	trait=pneumonic
 	father=1804217
 	2594.9.27={birth=yes}
 	2620.1.1={add_spouse=1804159}
-	2650.12.12={death={death_reason=death_pneumonic}}
+	2650.12.12={death={death_reason=death_trait}}
 }
 1804159={
 	name="Bárbara"

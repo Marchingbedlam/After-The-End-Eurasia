@@ -900,7 +900,7 @@ de_jure_laws = {
 				revoke_law = diwan_factions_4
 			}
 			if = {
-				has_dlc = "Zeus"
+				limit = { has_dlc = "Zeus" }
 				add_law = law_voting_power_1
 				add_law = banish_voting_power_1
 				add_law = revoke_title_voting_power_1
@@ -1064,7 +1064,7 @@ de_jure_laws = {
 				revoke_law = diwan_factions_4
 			}
 			if = {
-				has_dlc = "Zeus"
+				limit = { has_dlc = "Zeus" }
 				add_law = law_voting_power_1
 				add_law = banish_voting_power_1
 				add_law = revoke_title_voting_power_1
