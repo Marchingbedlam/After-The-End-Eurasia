@@ -38,7 +38,7 @@
 	trait=honest
 	trait=trusting
 	2621.3.12={birth=yes}
-	2664.1.10={death={death_reason=death_murder killer=21}}
+	2664.1.10={death=yes}
 }
 1501002={
 	name="Marshal"
@@ -198,8 +198,8 @@
 	trait=cavalry_leader
 	trait=duelist
 	trait=ruthless
-	father=2418
-	mother=2419
+	father=1501049
+	mother=1501050
 	2637.8.9={birth=yes}
 	2710.4.1={death=yes}
 }
@@ -307,6 +307,8 @@
 	trait=proud
 	trait=ambitious
 	trait=cavalry_leader
+	father=1501049
+	mother=1501050
 	2630.5.2={birth=yes}
 	2670.3.10={death=yes}
 }
@@ -947,12 +949,7 @@
 	trait=misguided_warrior
 	2602.9.2={birth=yes}
 	2620.5.27={add_spouse=1501050}
-	2646.11.11={
-		death={
-			death_reason=death_battle
-			killer=2377
-		}
-	}
+	2646.11.11={death=yes}
 }
 1501050={
 	name="Kitty"

@@ -131,6 +131,7 @@
 	trait=lustful
 	trait=proud
 	trait=honorable
+	trait=twin
 	father=1713000
 	mother=1713005
 	2643.2.10={birth=yes}
@@ -152,6 +153,7 @@
 	trait=lustful
 	trait=proud
 	trait=honorable
+	trait=twin
 	father=1713000
 	mother=1713005
 	2643.2.10={birth=yes}
@@ -225,7 +227,7 @@
 	trait=affectionate
 	father=1713003
 	mother=1713010
-	2656.4.11={birth=yes}
+	2657.4.11={birth=yes}
 	2680.1.1={death=yes}
 }
 1713012={
@@ -357,6 +359,7 @@
 	trait=honest
 	trait=wroth
 	trait=gluttonous
+	father=1713096
 	2645.10.22={birth=yes}
 	2661.11.2={add_spouse=1713019}
 	2680.1.1={death=yes}
@@ -1230,7 +1233,6 @@
 	intrigue=8
 	learning=8
 	occluded=yes
-	father=1713070
 	trait=legendary
 	disallow_random_traits=yes
 	900.1.1={birth=yes}
@@ -1248,7 +1250,6 @@
 	intrigue=8
 	learning=8
 	occluded=yes
-	father=1713071
 	trait=legendary
 	disallow_random_traits=yes
 	1100.1.1={birth=yes}
@@ -1543,4 +1544,77 @@
 	disallow_random_traits=yes
 	1400.1.1={birth=yes}
 	1500.1.1={death=yes}
+}
+1713092={
+	name="Carlos"
+	dynasty=2020111 #Moctezuma
+	culture=asturleonese
+	religion=penitant
+	martial=5
+	diplomacy=5
+	stewardship=8
+	intrigue=8
+	learning=8
+	2430.3.2={birth=yes}
+	2467.2.1={add_spouse=1992934}
+	2502.2.2={death=yes}
+}
+1713093={
+	name="Felipe"
+	dynasty=2020111 #Moctezuma
+	culture=asturleonese
+	religion=penitant
+	martial=5
+	diplomacy=5
+	stewardship=8
+	intrigue=8
+	learning=8
+	father=1713092
+	mother=1992934
+	2470.5.12={birth=yes}
+	2530.1.1={add_spouse=1992933}
+	2566.12.1={death=yes}
+}
+1713094={
+	name="Felipe"
+	dynasty=2020111 #Moctezuma
+	culture=asturleonese
+	religion=penitant
+	martial=5
+	diplomacy=5
+	stewardship=8
+	intrigue=8
+	learning=8
+	father=1713093
+	mother=1992933
+	2531.2.3={birth=yes}
+	2580.12.12={death=yes}
+}
+1713095={
+	name="Felipe"
+	dynasty=2020111 #Moctezuma
+	culture=asturleonese
+	religion=penitant
+	martial=5
+	diplomacy=5
+	stewardship=8
+	intrigue=8
+	learning=8
+	father=1713094
+	2550.1.1={birth=yes}
+	2636.1.1={death=yes}
+}
+1713096={
+	name="Fernando"
+	dynasty=2020111 #Moctezuma
+	culture=asturleonese
+	religion=penitant
+	martial=5
+	diplomacy=5
+	stewardship=8
+	intrigue=8
+	learning=8
+	father=1713095
+	2570.1.1={birth=yes}
+	2645.10.23={death=yes}
 }

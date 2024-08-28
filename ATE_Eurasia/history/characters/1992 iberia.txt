@@ -73,8 +73,8 @@
 	trait=thrifty_clerk
 	father=1992100
 	2646.2.14={birth=yes}
-	2680.1.1={death=yes}
 	2663.8.11={add_claim=d_bajo_aragon}
+	2680.1.1={death=yes}
 }
 1992102={
 	name="Ricardo"
@@ -94,8 +94,8 @@
 	trait=charismatic_negotiator
 	father=1992100
 	2649.6.3={birth=yes}
-	2680.1.1={death=yes}
 	2663.8.11={add_claim=d_alto_aragon}
+	2680.1.1={death=yes}
 }
 1992200={
 	name="Lluís"
@@ -339,7 +339,7 @@
 	trait=diligent
 	trait=stubborn
 	trait=strong
-	2616.1.1={birth=yes}
+	2614.1.1={birth=yes}
 	2669.4.28={death=yes}
 }
 1992408={
@@ -1137,7 +1137,6 @@
 	stewardship=8
 	intrigue=8
 	learning=8
-	mother=1992918
 	occluded=yes
 	trait=legendary
 	disallow_random_traits=yes
@@ -1198,7 +1197,7 @@
 	intrigue=8
 	learning=8
 	father=1992923
-	2222.4.12={birth=yes}
+	2252.4.12={birth=yes}
 	2310.11.11={death=yes}
 }
 1992925={
@@ -1213,7 +1212,7 @@
 	intrigue=8
 	learning=8
 	mother=1992924
-	2250.12.11={birth=yes}
+	2270.12.11={birth=yes}
 	2330.3.29={death=yes}
 }
 1992926={
@@ -1227,7 +1226,7 @@
 	intrigue=8
 	learning=8
 	mother=1992925
-	2282.3.15={birth=yes}
+	2288.3.15={birth=yes}
 	2378.1.21={death=yes}
 }
 1992927={
@@ -1283,8 +1282,8 @@
 	intrigue=8
 	learning=8
 	father=1992929
-	2435.1.1={birth=yes}
-	2500.1.1={death=yes}
+	2435.7.11={birth=yes}
+	2500.6.1={death=yes}
 }
 1992931={
 	name="Luís"
@@ -1296,8 +1295,8 @@
 	stewardship=8
 	intrigue=8
 	learning=8
-	father=1992929
-	2500.4.25={birth=yes}
+	father=1992930
+	2474.4.25={birth=yes}
 	2506.1.1={death=yes}
 }
 1992932={
@@ -1305,14 +1304,13 @@
 	dynasty=2024263
 	culture=alentejano
 	religion=quinto
-	female=yes
 	martial=5
 	diplomacy=5
 	stewardship=8
 	intrigue=8
 	learning=8
-	father=1992930
-	2503.4.25={birth=yes}
+	father=1992931
+	2503.2.25={birth=yes}
 	2509.1.1={death=yes}
 }
 1992933={
@@ -1326,7 +1324,22 @@
 	stewardship=8
 	intrigue=8
 	learning=8
-	father=1992930
-	2508.4.25={birth=yes}
+	father=1992931
+	2505.4.25={birth=yes}
 	2563.1.1={death=yes}
+}
+1992934={
+	name="Isabel"
+	dynasty=2024263
+	culture=alentejano
+	religion=quinto
+	female=yes
+	martial=5
+	diplomacy=5
+	stewardship=8
+	intrigue=8
+	learning=8
+	father=1992930
+	2451.3.25={birth=yes}
+	2510.1.1={death=yes}
 }
