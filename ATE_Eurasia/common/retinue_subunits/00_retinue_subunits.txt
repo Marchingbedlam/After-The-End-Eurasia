@@ -466,6 +466,7 @@ RETTYPE_CUL_HISP =
 			culture = andalusian
 			culture = azorean
 			culture = madeiran
+			OR = { culture = nortenho culture = alentejano }
 			}
 	}
 	
@@ -1430,5 +1431,34 @@ RETTYPE_CUL_ARBERIAN =
 		light_cavalry_defensive = 0.2
 		light_cavalry_offensive = 0.2
 		light_cavalry_morale = 0.4
+	}
+}
+RETTYPE_CUL_NORTENHO = 
+{
+	first_type = 1
+	first_amount = 200
+	
+	potential = {
+		is_nomadic = no
+		culture = nortenho
+	}
+	modifier = {
+		heavy_infantry_offensive = 0.4
+		heavy_infantry_morale = 0.2
+	}
+}
+RETTYPE_CUL_ALENTEJANO = 
+{
+	first_type = 3
+	first_amount = 400
+	
+	potential = {
+		is_nomadic = no
+		culture = alentejano
+	}
+	modifier = {
+		light_cavalry_defensive = 0.4
+		light_cavalry_offensive = 0.2
+		light_cavalry_morale = 0.2
 	}
 }

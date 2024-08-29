@@ -1967,6 +1967,125 @@ castle = {
 		extra_tech_building_start = 0.8
 	}
 	
+	ca_culture_nortenho_1 = {
+		desc = ca_culture_nortenho_1_desc
+		potential = {
+			OR = {
+				culture = nortenho
+				has_building = ca_culture_nortenho_1
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				culture = nortenho
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0
+			ROOT = {
+				culture = nortenho
+			}
+		}
+		prerequisites = { ca_wall_1 }
+		gold_cost = 150
+		build_time = 730
+		heavy_infantry = 30
+		heavy_infantry_offensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_nortenho_2 = {
+		desc = ca_culture_nortenho_1_desc
+		potential = {
+			OR = {
+				culture = nortenho
+				has_building = ca_culture_nortenho_1
+				has_building = ca_culture_nortenho_2
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				culture = nortenho
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				culture = nortenho
+			}
+		}
+		upgrades_from = ca_culture_nortenho_1
+		gold_cost = 200
+		build_time = 1095
+		heavy_infantry = 40
+		heavy_infantry_offensive = 0.15
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_nortenho_3 = {
+		desc = ca_culture_nortenho_1_desc
+		potential = {
+			OR = {
+				culture = nortenho
+				has_building = ca_culture_nortenho_1
+				has_building = ca_culture_nortenho_2
+				has_building = ca_culture_nortenho_3
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				culture = nortenho
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				culture = nortenho
+			}
+		}
+		upgrades_from = ca_culture_nortenho_2
+		gold_cost = 250
+		build_time = 2190
+		heavy_infantry = 50
+		heavy_infantry_offensive = 0.15
+		ai_creation_factor = 99
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_nortenho_4 = {
+		desc = ca_culture_nortenho_1_desc
+		potential = {
+			OR = {
+				culture = nortenho
+				has_building = ca_culture_nortenho_1
+				has_building = ca_culture_nortenho_2
+				has_building = ca_culture_nortenho_3
+				has_building = ca_culture_nortenho_4
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				culture = nortenho
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				culture = nortenho
+			}
+		}
+		upgrades_from = ca_culture_nortenho_3
+		gold_cost = 350
+		build_time = 2190
+		heavy_infantry = 60
+		heavy_infantry_offensive = 0.15
+		ai_creation_factor = 98
+		
+		extra_tech_building_start = 0.8
+	}
+	
 	ca_culture_iberian_1 = {
 		desc = ca_culture_iberian_1_desc
 		potential = {
@@ -1977,6 +2096,7 @@ castle = {
 					NOT = { culture = azorean }
 					NOT = { culture = madeiran } 
 					NOT = { culture = andalusian }
+					NOR = { culture = nortenho culture = alentejano }
 				}
 				has_building = ca_culture_iberian_1
 			}
@@ -1988,6 +2108,7 @@ castle = {
 				NOT = { culture = azorean }
 				NOT = { culture = madeiran } 
 				NOT = { culture = andalusian }
+				NOR = { culture = nortenho culture = alentejano }
 			}
 		} 
 		trigger = { 
@@ -1998,6 +2119,7 @@ castle = {
 				NOT = { culture = azorean }
 				NOT = { culture = madeiran } 
 				NOT = { culture = andalusian }
+				NOR = { culture = nortenho culture = alentejano }
 			}
 		}
 		prerequisites = { ca_wall_1 }
@@ -2019,6 +2141,7 @@ castle = {
 					NOT = { culture = azorean }
 					NOT = { culture = madeiran } 
 					NOT = { culture = andalusian }
+					NOR = { culture = nortenho culture = alentejano }
 				}
 				has_building = ca_culture_iberian_1
 				has_building = ca_culture_iberian_2
@@ -2031,6 +2154,7 @@ castle = {
 				NOT = { culture = azorean }
 				NOT = { culture = madeiran } 
 				NOT = { culture = andalusian }
+				NOR = { culture = nortenho culture = alentejano }
 			}
 		} 
 		trigger = { 
@@ -2041,6 +2165,7 @@ castle = {
 				NOT = { culture = azorean }
 				NOT = { culture = madeiran } 
 				NOT = { culture = andalusian }
+				NOR = { culture = nortenho culture = alentejano }
 			}
 		}
 		upgrades_from = ca_culture_iberian_1
@@ -2062,6 +2187,7 @@ castle = {
 				NOT = { culture = azorean }
 				NOT = { culture = madeiran } 
 				NOT = { culture = andalusian }
+				NOR = { culture = nortenho culture = alentejano }
 				}
 				has_building = ca_culture_iberian_1
 				has_building = ca_culture_iberian_2
@@ -2075,6 +2201,7 @@ castle = {
 				NOT = { culture = azorean }
 				NOT = { culture = madeiran } 
 				NOT = { culture = andalusian }
+				NOR = { culture = nortenho culture = alentejano }
 			}
 		} 
 		trigger = { 
@@ -2085,6 +2212,7 @@ castle = {
 				NOT = { culture = azorean }
 				NOT = { culture = madeiran } 
 				NOT = { culture = andalusian }
+				NOR = { culture = nortenho culture = alentejano }
 			}
 		}
 		upgrades_from = ca_culture_iberian_2
@@ -2106,6 +2234,7 @@ castle = {
 				NOT = { culture = azorean }
 				NOT = { culture = madeiran } 
 				NOT = { culture = andalusian }
+				NOR = { culture = nortenho culture = alentejano }
 				}
 				has_building = ca_culture_iberian_1
 				has_building = ca_culture_iberian_2
@@ -2120,6 +2249,7 @@ castle = {
 				NOT = { culture = azorean }
 				NOT = { culture = madeiran } 
 				NOT = { culture = andalusian }
+				NOR = { culture = nortenho culture = alentejano }
 			}
 		} 
 		trigger = { 
@@ -2130,6 +2260,7 @@ castle = {
 				NOT = { culture = azorean }
 				NOT = { culture = madeiran } 
 				NOT = { culture = andalusian }
+				NOR = { culture = nortenho culture = alentejano }
 			}
 		}
 		upgrades_from = ca_culture_iberian_3
@@ -2274,6 +2405,148 @@ castle = {
 			}
 		}
 		upgrades_from = ca_culture_andalusia_3
+		gold_cost = 500
+		build_time = 2190
+		light_cavalry = 60
+		light_cavalry_offensive = 0.1
+		light_cavalry_defensive = 0.1
+		light_cavalry_morale = 0.1
+		ai_creation_factor = 98
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_alentejano_1 = {
+		desc = ca_culture_alentejano_1_desc
+		potential = {
+			OR = {
+				culture = alentejano
+				has_building = ca_culture_alentejano_1
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = alentejano
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				OR = {
+					culture = alentejano
+				}
+			}
+		}
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		light_cavalry = 30
+		light_cavalry_offensive = 0.1
+		light_cavalry_defensive = 0.1
+		light_cavalry_morale = 0.1
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_alentejano_2 = {
+		desc = ca_culture_alentejano_1_desc
+		potential = {
+			OR = {
+				culture = alentejano
+				has_building = ca_culture_alentejano_1
+				has_building = ca_culture_alentejano_2
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = alentejano
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				OR = {
+					culture = alentejano
+				}
+			}
+		}
+		upgrades_from = ca_culture_alentejano_1
+		gold_cost = 300
+		build_time = 1095
+		light_cavalry = 40
+		light_cavalry_offensive = 0.1
+		light_cavalry_defensive = 0.1
+		light_cavalry_morale = 0.1
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_alentejano_3 = {
+		desc = ca_culture_alentejano_1_desc
+		potential = {
+			OR = {
+				culture = alentejano
+				has_building = ca_culture_alentejano_1
+				has_building = ca_culture_alentejano_2
+				has_building = ca_culture_alentejano_3
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = alentejano
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				OR = {
+					culture = alentejano
+				}
+			}
+		}
+		upgrades_from = ca_culture_alentejano_2
+		gold_cost = 400
+		build_time = 2190
+		light_cavalry = 50
+		light_cavalry_offensive = 0.1
+		light_cavalry_defensive = 0.1
+		light_cavalry_morale = 0.1
+		ai_creation_factor = 99
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_alentejano_4 = {
+		desc = ca_culture_alentejano_1_desc
+		potential = {
+			OR = {
+				culture = alentejano
+				has_building = ca_culture_alentejano_1
+				has_building = ca_culture_alentejano_2
+				has_building = ca_culture_alentejano_3
+				has_building = ca_culture_alentejano_4
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = alentejano
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				OR = {
+					culture = alentejano
+				}
+			}
+		}
+		upgrades_from = ca_culture_alentejano_3
 		gold_cost = 500
 		build_time = 2190
 		light_cavalry = 60
