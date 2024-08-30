@@ -360,7 +360,11 @@
 	trait=wroth
 	trait=gluttonous
 	father=1713096
-	2645.10.22={birth=yes}
+	2645.10.22={
+		birth=yes
+		effect={add_weak_claim=k_galicia}
+		effect={add_weak_claim=k_portugal}
+	}
 	2661.11.2={add_spouse=1713019}
 	2680.1.1={death=yes}
 }

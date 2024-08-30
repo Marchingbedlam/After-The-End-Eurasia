@@ -324,9 +324,9 @@
 	stewardship=4
 	intrigue=3
 	learning=3
-	2608.3.22={birth=yes}
+	2581.3.22={birth=yes}
 	2630.1.1={add_spouse=1992407}
-	2662.2.5={death=yes}
+	2643.2.5={death=yes}
 	#Invaded Galicia and then Portugal
 }
 1992407={
@@ -343,7 +343,7 @@
 	2669.4.28={death=yes}
 }
 1992408={
-	name="Bartolomeu"
+	name="Henrique"
 	dynasty=7001033 #Betancourt
 	culture=azorean
 	religion=quinto
@@ -359,9 +359,8 @@
 	learning=3
 	father=1992406
 	mother=1992407
-	2638.3.22={birth=yes culture=galician}
-	2692.2.5={death=yes}
-	#Older son of the Betancourts, inherited Galicia
+	2602.3.22={birth=yes culture=alentejano}
+	2656.2.5={death=yes}
 }
 1992409={
 	name="Sebastião"
@@ -380,14 +379,13 @@
 	learning=3
 	father=1992406
 	mother=1992407
-	2643.3.22={birth=yes culture=nortenho}
-	2692.2.5={death=yes}
-	#Younger son of the Betancourts, inherited Portugal
+	2601.3.22={birth=yes culture=alentejano}
+	2655.2.5={death=yes}
 }
 1992410={
 	name="Maria"
 	dynasty=7002000 #Lancastre
-	culture=alentejano
+	culture=nortenho
 	religion=catholic
 	female=yes
 	trait=brilliant_strategist
@@ -406,7 +404,7 @@
 	2665.1.1={
 		effect={
 			spawn_unit={
-				province=167 # Lisboa
+				province=177 # Castelo Branco
 				owner=ROOT
 				#leader=ROOT
 				troops={
@@ -419,9 +417,9 @@
 			}
 		}
 	}
-	2666.1.1={effect={capital = c_lisboa}}
+	2666.1.1={effect={capital = c_castelo_branco}}
 	2699.1.1={death=yes}
-	#Portuguese Catholic rebel, who retook Lisbon and Leiria(Fátima)
+	#Portuguese Catholic rebel, who retook Eastern Portugal
 }
 1992500={
 	name="Ramón"
@@ -1342,4 +1340,58 @@
 	father=1992930
 	2451.3.25={birth=yes}
 	2510.1.1={death=yes}
+}
+1992935={
+	name="Santiago"
+	dynasty=2022216
+	culture=galician
+	religion=catholic
+	martial=5
+	diplomacy=5
+	stewardship=8
+	intrigue=8
+	learning=8
+	2623.3.25={birth=yes}
+	2680.1.1={death=yes}
+}
+1992936={
+	name="Sebastião"
+	dynasty=7001033 #Betancourt
+	culture=alentejano
+	religion=quinto
+	martial=5
+	diplomacy=5
+	stewardship=8
+	intrigue=8
+	learning=8
+	trait=skilled_tactician
+	trait=strong
+	trait=ambitious
+	trait=proud
+	trait=brave
+	disallow_random_traits=yes
+	father=1992409
+	2623.4.1={birth=yes}
+	2680.1.1={death=yes}
+}
+1992937={
+	name="Bartolomeu"
+	dynasty=7001033 #Betancourt
+	culture=nortenho
+	religion=quinto
+	martial=5
+	diplomacy=5
+	stewardship=8
+	intrigue=8
+	learning=8
+	trait=brilliant_strategist
+	trait=strong
+	trait=strategist
+	trait=ambitious
+	trait=envious
+	trait=brave
+	disallow_random_traits=yes
+	father=1992409
+	2625.2.1={birth=yes}
+	2680.1.1={death=yes}
 }
