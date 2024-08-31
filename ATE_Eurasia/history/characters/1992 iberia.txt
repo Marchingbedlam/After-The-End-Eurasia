@@ -202,11 +202,11 @@
 	2680.1.1={death=yes}
 }
 # PORTUGAL #
-##The Teixeiras, OG rulers of Portugal
+##The Teixeiras
 1992400={
 	name="Leandro"
 	dynasty=2024230 #Teixeira
-	culture=portuguese
+	culture=alentejano
 	religion=catholic
 	martial=3
 	diplomacy=3
@@ -220,7 +220,7 @@
 1992401={
 	name="Pedro"
 	dynasty=2024230 #Teixeira
-	culture=portuguese
+	culture=alentejano
 	religion=catholic
 	martial=10
 	diplomacy=5
@@ -239,7 +239,7 @@
 	name="Simão"
 	dynasty=2024230 #Teixeira
 	give_nickname=nick_the_grim
-	culture=portuguese
+	culture=alentejano
 	religion=catholic
 	martial=4
 	diplomacy=6
@@ -256,8 +256,8 @@
 	name="Rodolfo"
 	dynasty=2024230 #Teixeira
 	give_nickname=nick_the_unfortunate
-	culture=portuguese
-	religion=catholic
+	culture=alentejano
+	religion=quinto
 	martial=6
 	diplomacy=3
 	stewardship=4
@@ -269,13 +269,12 @@
 	father=1992402
 	2607.3.21={birth=yes}
 	2654.8.13={death=yes}
-	#Lost the Kingdom to the Bittencourts
 }
 1992404={
 	name="Bento"
 	dynasty=2024230 #Teixeira
-	culture=portuguese
-	religion=catholic
+	culture=alentejano
+	religion=quinto
 	martial=5
 	diplomacy=8
 	stewardship=10
@@ -286,15 +285,13 @@
 	trait=authoritative
 	father=1992403
 	2633.2.26={birth=yes}
-	2654.8.13={add_claim=k_portugal}
 	2660.5.5={death=yes}
-	#duke of Azores, 
 }
 1992405={
 	name="Diogo"
 	dynasty=2024230 #Teixeira
 	culture=alentejano
-	religion=catholic
+	religion=quinto
 	martial=3
 	diplomacy=3
 	stewardship=3
@@ -302,7 +299,6 @@
 	learning=3
 	father=1992404
 	2657.5.14={birth=yes}
-	2666.1.1={add_claim=k_portugal}
 	2680.1.1={death=yes}
 }
 #Bittencourts#
@@ -380,6 +376,7 @@
 	father=1992406
 	mother=1992407
 	2601.3.22={birth=yes culture=alentejano}
+	2620.1.1={add_spouse=1992938}
 	2655.2.5={death=yes}
 }
 1992410={
@@ -416,6 +413,7 @@
 				attrition=0.5
 			}
 		}
+		add_weak_claim=k_portugal
 	}
 	2666.1.1={effect={capital = c_castelo_branco}}
 	2699.1.1={death=yes}
@@ -880,7 +878,7 @@
 	name="Sebastião"
 	dynasty=2024263
 	culture=portuguese
-	religion=quinto
+	religion=catholic
 	martial=5
 	diplomacy=5
 	stewardship=8
@@ -1145,7 +1143,7 @@
 	name="Cristóvão"
 	dynasty=2024263
 	culture=alentejano
-	religion=quinto
+	religion=catholic
 	martial=5
 	diplomacy=5
 	stewardship=8
@@ -1159,7 +1157,7 @@
 	name="Sancho"
 	dynasty=2024263
 	culture=alentejano
-	religion=quinto
+	religion=catholic
 	martial=5
 	diplomacy=5
 	stewardship=8
@@ -1173,7 +1171,7 @@
 	name="Manuel"
 	dynasty=2024263
 	culture=alentejano
-	religion=quinto
+	religion=catholic
 	martial=5
 	diplomacy=5
 	stewardship=8
@@ -1187,7 +1185,7 @@
 	name="Maria"
 	dynasty=2024263
 	culture=alentejano
-	religion=quinto
+	religion=catholic
 	female=yes
 	martial=5
 	diplomacy=5
@@ -1202,7 +1200,7 @@
 	name="Maria"
 	dynasty=2024263
 	culture=alentejano
-	religion=quinto
+	religion=catholic
 	female=yes
 	martial=5
 	diplomacy=5
@@ -1217,7 +1215,7 @@
 	name="Henrique"
 	dynasty=2024263
 	culture=alentejano
-	religion=quinto
+	religion=catholic
 	martial=5
 	diplomacy=5
 	stewardship=8
@@ -1231,7 +1229,7 @@
 	name="Pedro"
 	dynasty=2024263
 	culture=alentejano
-	religion=quinto
+	religion=catholic
 	martial=5
 	diplomacy=5
 	stewardship=8
@@ -1245,7 +1243,7 @@
 	name="Antonio"
 	dynasty=2024263
 	culture=alentejano
-	religion=quinto
+	religion=catholic
 	martial=5
 	diplomacy=5
 	stewardship=8
@@ -1259,7 +1257,7 @@
 	name="Carlos"
 	dynasty=2024263
 	culture=alentejano
-	religion=quinto
+	religion=catholic
 	martial=5
 	diplomacy=5
 	stewardship=8
@@ -1273,7 +1271,7 @@
 	name="Cristóvão"
 	dynasty=2024263
 	culture=alentejano
-	religion=quinto
+	religion=catholic
 	martial=5
 	diplomacy=5
 	stewardship=8
@@ -1287,7 +1285,7 @@
 	name="Luís"
 	dynasty=2024263
 	culture=alentejano
-	religion=quinto
+	religion=catholic
 	martial=5
 	diplomacy=5
 	stewardship=8
@@ -1301,7 +1299,7 @@
 	name="Fernando"
 	dynasty=2024263
 	culture=alentejano
-	religion=quinto
+	religion=catholic
 	martial=5
 	diplomacy=5
 	stewardship=8
@@ -1315,7 +1313,7 @@
 	name="Maria"
 	dynasty=2024263
 	culture=alentejano
-	religion=quinto
+	religion=catholic
 	female=yes
 	martial=5
 	diplomacy=5
@@ -1330,7 +1328,7 @@
 	name="Isabel"
 	dynasty=2024263
 	culture=alentejano
-	religion=quinto
+	religion=catholic
 	female=yes
 	martial=5
 	diplomacy=5
@@ -1371,7 +1369,9 @@
 	trait=brave
 	disallow_random_traits=yes
 	father=1992409
+	mother=1992938
 	2623.4.1={birth=yes}
+	2654.1.1={add_spouse=1992939}
 	2680.1.1={death=yes}
 }
 1992937={
@@ -1390,8 +1390,54 @@
 	trait=ambitious
 	trait=envious
 	trait=brave
+	trait=adventurer
 	disallow_random_traits=yes
 	father=1992409
+	mother=1992938
 	2625.2.1={birth=yes}
+	2654.1.1={add_spouse=1992940}
+	2655.1.1={add_claim=k_galicia}
+	2680.1.1={death=yes}
+}
+1992938={
+	name="Luísa"
+	dynasty=7004257
+	female=yes
+	culture=alentejano
+	religion=quinto
+	martial=5
+	diplomacy=5
+	stewardship=8
+	intrigue=8
+	learning=8
+	2604.2.12={birth=yes}
+	2680.1.1={death=yes}
+}
+1992939={
+	name="Carlota"
+	dynasty=7004256
+	female=yes
+	culture=alentejano
+	religion=quinto
+	martial=5
+	diplomacy=5
+	stewardship=8
+	intrigue=8
+	learning=8
+	2627.2.12={birth=yes}
+	2680.1.1={death=yes}
+}
+1992940={
+	name="Maria"
+	dynasty=7003001
+	female=yes
+	culture=nortenho
+	religion=quinto
+	martial=5
+	diplomacy=5
+	stewardship=8
+	intrigue=8
+	learning=8
+	2630.2.12={birth=yes}
 	2680.1.1={death=yes}
 }

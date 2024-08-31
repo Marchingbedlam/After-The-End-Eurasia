@@ -1,0 +1,14 @@
+name="Galician Expedition"
+
+casus_belli = {
+	actor=1992937
+	recipient=1992935
+	casus_belli=claim
+	landed_title=k_galicia
+	date=2666.4.15
+}
+
+2666.4.15={
+	add_attacker=1992937
+	add_defender=1992935
+}
