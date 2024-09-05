@@ -323,7 +323,7 @@
 	2581.3.22={birth=yes}
 	2600.1.1={add_spouse=1992407}
 	2643.2.5={death=yes}
-	#Invaded Galicia and then Portugal
+	#Invaded Portugal
 }
 1992407={
 	name="Bianca"
@@ -1656,6 +1656,7 @@
 	trait=ambitious
 	trait=slothful
 	trait=humble
+	disallow_random_traits=yes
 	diplomacy=5
 	martial=8
 	stewardship=5
