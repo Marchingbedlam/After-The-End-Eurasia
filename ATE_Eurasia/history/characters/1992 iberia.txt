@@ -391,13 +391,14 @@
 	trait=inspiring_leader
 	trait=brave
 	trait=shrewd
+	disallow_random_traits=yes
 	diplomacy=5
 	martial=8
 	stewardship=5
 	intrigue=4
 	learning=4
-	father=1992953
-	2648.5.30={birth=yes}
+	father=1992954
+	2641.5.30={birth=yes}
 	2665.1.1={
 		effect={
 			spawn_unit={
@@ -1567,7 +1568,13 @@
 	dynasty=7002000 #Lancastre
 	culture=nortenho
 	religion=catholic
+	trait=fortune_builder
 	trait=bastard
+	trait=shy
+	trait=temperate
+	trait=greedy
+	trait=paranoid
+	disallow_random_traits=yes
 	diplomacy=5
 	martial=8
 	stewardship=5
@@ -1583,6 +1590,12 @@
 	dynasty=7002000 #Lancastre
 	culture=nortenho
 	religion=catholic
+	trait=intricate_webweaver
+	trait=ruthless
+	trait=authoritative
+	trait=ambitious
+	trait=cruel
+	disallow_random_traits=yes
 	diplomacy=5
 	martial=8
 	stewardship=5
@@ -1598,6 +1611,12 @@
 	dynasty=7002000 #Lancastre
 	culture=nortenho
 	religion=catholic
+	trait=flamboyant_schemer
+	trait=honorable
+	trait=honest
+	trait=humble
+	trait=diligent
+	disallow_random_traits=yes
 	diplomacy=5
 	martial=8
 	stewardship=5
@@ -1612,6 +1631,12 @@
 	dynasty=7002000 #Lancastre
 	culture=nortenho
 	religion=catholic
+	trait=grey_eminence
+	trait=familyperson
+	trait=kind
+	trait=arbitrary
+	trait=stubborn
+	disallow_random_traits=yes
 	diplomacy=5
 	martial=8
 	stewardship=5
@@ -1626,6 +1651,11 @@
 	dynasty=7002000 #Lancastre
 	culture=nortenho
 	religion=catholic
+	trait=dutiful_cleric
+	trait=pious
+	trait=ambitious
+	trait=slothful
+	trait=humble
 	diplomacy=5
 	martial=8
 	stewardship=5
@@ -1633,5 +1663,34 @@
 	learning=4
 	father=1992952
 	2570.5.30={birth=yes}
-	2665.9.24={death=yes}
+	2630.9.24={death=yes}
+}
+1992954={
+	name="Manuel"
+	dynasty=7002000 #Lancastre
+	culture=nortenho
+	religion=catholic
+	diplomacy=5
+	martial=8
+	stewardship=5
+	intrigue=4
+	learning=4
+	father=1992953
+	2600.5.30={birth=yes}
+	2665.9.24={death={death_reason=death_murder killer=1992936}}
+}
+1992956={
+	name="Afonso"
+	dynasty=7002000 #Lancastre
+	culture=nortenho
+	religion=catholic
+	trait=strong
+	diplomacy=5
+	martial=8
+	stewardship=5
+	intrigue=4
+	learning=4
+	mother=1992410
+	2660.5.30={birth=yes}
+	2680.9.24={death=yes}
 }
