@@ -396,6 +396,7 @@
 	stewardship=5
 	intrigue=4
 	learning=4
+	father=1992953
 	2648.5.30={birth=yes}
 	2665.1.1={
 		effect={
@@ -412,7 +413,7 @@
 				attrition=0.5
 			}
 		}
-		add_weak_claim=k_portugal
+		effect={add_weak_claim=k_portugal}
 	}
 	2666.1.1={effect={capital = c_castelo_branco}}
 	2699.1.1={death=yes}
@@ -1560,4 +1561,77 @@
 	learning=8
 	2600.3.25={birth=yes}
 	2659.1.1={death=yes}
+}
+1992949={
+	name="Pedro"
+	dynasty=7002000 #Lancastre
+	culture=nortenho
+	religion=catholic
+	trait=bastard
+	diplomacy=5
+	martial=8
+	stewardship=5
+	intrigue=4
+	learning=4
+	father=1992929
+	mother=1001080
+	2449.5.30={birth=yes}
+	2509.1.1={death=yes}
+}
+1992950={
+	name="Afonso"
+	dynasty=7002000 #Lancastre
+	culture=nortenho
+	religion=catholic
+	diplomacy=5
+	martial=8
+	stewardship=5
+	intrigue=4
+	learning=4
+	father=1992949
+	2470.5.30={birth=yes}
+	2530.1.1={death=yes}
+}
+
+1992951={
+	name="Teodoro"
+	dynasty=7002000 #Lancastre
+	culture=nortenho
+	religion=catholic
+	diplomacy=5
+	martial=8
+	stewardship=5
+	intrigue=4
+	learning=4
+	father=1992950
+	2500.5.30={birth=yes}
+	2570.1.1={death=yes}
+}
+1992952={
+	name="Carlos"
+	dynasty=7002000 #Lancastre
+	culture=nortenho
+	religion=catholic
+	diplomacy=5
+	martial=8
+	stewardship=5
+	intrigue=4
+	learning=4
+	father=1992951
+	2530.5.30={birth=yes}
+	2600.1.1={death=yes}
+}
+1992953={
+	name="Felipe"
+	dynasty=7002000 #Lancastre
+	culture=nortenho
+	religion=catholic
+	diplomacy=5
+	martial=8
+	stewardship=5
+	intrigue=4
+	learning=4
+	father=1992952
+	2570.5.30={birth=yes}
+	2665.9.24={death=yes}
 }
