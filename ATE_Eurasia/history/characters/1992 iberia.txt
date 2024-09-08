@@ -322,6 +322,15 @@
 	learning=3
 	2581.3.22={birth=yes}
 	2600.1.1={add_spouse=1992407}
+	2630.1.1={
+		effect={
+			add_character_modifier={
+				name=sebastiao_muse
+				years = -1
+			}
+			set_character_flag=foundmuse
+		}
+	}
 	2643.2.5={death=yes}
 	#Invaded Portugal
 }
@@ -376,6 +385,15 @@
 	mother=1992407
 	2601.3.22={birth=yes culture=alentejano}
 	2620.1.1={add_spouse=1992938}
+	2630.1.1={
+		effect={
+			add_character_modifier={
+				name=sebastiao_muse
+				years = -1
+			}
+			set_character_flag=foundmuse
+		}
+	}
 	2655.2.5={death=yes}
 }
 1992410={
@@ -1374,6 +1392,15 @@
 	mother=1992938
 	2623.4.1={birth=yes}
 	2654.1.1={add_spouse=1992939}
+	2666.1.1={
+		effect={
+			add_character_modifier={
+				name=sebastiao_muse
+				years = -1
+			}
+			set_character_flag=foundmuse
+		}
+	}
 	2680.1.1={death=yes}
 }
 1992937={
@@ -1399,6 +1426,26 @@
 	2625.2.1={birth=yes}
 	2654.1.1={add_spouse=1992940}
 	2655.1.1={add_claim=k_galicia}
+	2666.1.1={
+		effect={
+			add_character_modifier={
+				name=mars_muse
+				years = -1
+			}
+			spawn_unit={
+				province=182 # Porto
+				owner=ROOT
+				#leader=ROOT
+				troops={
+					heavy_infantry={600 600}
+					archers={300 300}
+					light_cavalry={300 300}
+				}
+				attrition=0.5
+			}
+			set_character_flag=foundmuse
+		}
+	}
 	2680.1.1={death=yes}
 }
 1992938={
