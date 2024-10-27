@@ -1088,7 +1088,6 @@ character_event = {
 					is_lover = event_target:my_beloved
 					is_parent_of = event_target:my_beloved
 					is_child_of = event_target:my_beloved
-					is_married = event_target:my_beloved
 				}
 			}
 		}
@@ -1108,7 +1107,6 @@ character_event = {
 					is_lover = event_target:my_beloved
 					is_parent_of = event_target:my_beloved
 					is_child_of = event_target:my_beloved
-					is_married = event_target:my_beloved
 				}
 			}
 		}
@@ -1128,7 +1126,6 @@ character_event = {
 					is_lover = event_target:my_beloved
 					is_parent_of = event_target:my_beloved
 					is_child_of = event_target:my_beloved
-					is_married = event_target:my_beloved
 				}
 			}
 		}
@@ -1139,7 +1136,6 @@ character_event = {
 					is_lover = event_target:my_beloved
 					is_parent_of = event_target:my_beloved
 					is_child_of = event_target:my_beloved
-					is_married = event_target:my_beloved
 				}
 			}
 		}
@@ -1151,7 +1147,6 @@ character_event = {
 					is_lover = event_target:my_beloved
 					is_parent_of = event_target:my_beloved
 					is_child_of = event_target:my_beloved
-					is_married = event_target:my_beloved
 				}
 			}
 
@@ -1659,7 +1654,12 @@ character_event = {
 		# For consistency between description and event options
 		random_list = {
 			33 = { set_character_flag = desc_A }
-			33 = { set_character_flag = desc_B }
+
+			33 = {
+				trigger = { NOT = { event_target:enemy_commander = { always = yes } } }
+				set_character_flag = desc_B
+			}
+
 			33 = { set_character_flag = desc_C }
 		}
 
@@ -1669,8 +1669,9 @@ character_event = {
 					is_alive = yes
 					ai = yes
 				}
-				disallow_new_battle_events_effect = yes # To keep the tombola from spamming your potential target...
 			}
+
+			disallow_new_battle_events_effect = yes # To keep the tombola from spamming your potential target...
 		}
 
 		set_battle_duels_option_flag_effect = yes
@@ -1720,15 +1721,10 @@ character_event = {
 		name = EVTOPT_HFP_11010_C
 		tooltip_info = combat_rating
 
-		trigger = {
-			has_character_flag = high_PCS_opt
-
-			NOT = { event_target:enemy_commander = { always = yes } }
-		}
+		trigger = { has_character_flag = high_PCS_opt }
 
 		prestige = 15
 		pacifists_lose_piety_effect = yes
-		allow_new_battle_events_effect = yes
 
 		ai_chance = { factor = 6 }
 	}
@@ -1854,16 +1850,6 @@ character_event = {
 		prestige = 15
 		allow_new_battle_events_effect = yes
 
-		event_target:enemy_commander = {
-			if = {
-				limit = {
-					is_alive = yes
-					ai = yes
-				}
-				allow_new_battle_events_effect = yes
-			}
-		}
-
 		ai_chance = { factor = 2 }
 	}
 
@@ -1880,16 +1866,6 @@ character_event = {
 		}
 
 		allow_new_battle_events_effect = yes
-
-		event_target:enemy_commander = {
-			if = {
-				limit = {
-					is_alive = yes
-					ai = yes
-				}
-				allow_new_battle_events_effect = yes
-			}
-		}
 
 		ai_chance = {
 			factor = 1
@@ -1923,16 +1899,6 @@ character_event = {
 		prestige = -50
 		allow_new_battle_events_effect = yes
 
-		event_target:enemy_commander = {
-			if = {
-				limit = {
-					is_alive = yes
-					ai = yes
-				}
-				allow_new_battle_events_effect = yes
-			}
-		}
-
 		ai_chance = {
 			factor = 2
 
@@ -1956,9 +1922,6 @@ character_event = {
 		clr_character_flag = duel_enemy_opt_gain_brave
 		clr_character_flag = duel_enemy_opt_is_brave
 
-		clr_character_flag = desc_A
-		clr_character_flag = desc_B
-		clr_character_flag = desc_C
 	}
 }
 
@@ -1998,6 +1961,7 @@ character_event = {
 	immediate = {
 		disallow_new_battle_events_effect = yes # To keep the tombola from spamming you...
 		battle_commander_counter_negative_effect = yes
+		save_beloved_character_effect = yes # event_target:my_beloved (might be platonic, children, etc)
 		set_battle_duels_option_flag_effect = yes
 
 		event_target:enemy_commander = {
@@ -2006,12 +1970,9 @@ character_event = {
 					is_alive = yes
 					ai = yes
 				}
-				disallow_new_battle_events_effect = yes # To keep the tombola from spamming your potential target...
 			}
-		}
 
-		hidden_effect = {
-			save_beloved_character_effect = yes # event_target:my_beloved (might be platonic, children, etc)
+			disallow_new_battle_events_effect = yes # To keep the tombola from spamming your potential target...
 		}
 
 		random_list = {
@@ -2099,7 +2060,6 @@ character_event = {
 
 		apply_duel_wounded_effect = yes # Milder than other options
 		add_blood_splatter_effect = yes
-		allow_new_battle_events_effect = yes
 
 		ai_chance = { factor = 300 }
 	}
@@ -2242,16 +2202,6 @@ character_event = {
 
 		allow_new_battle_events_effect = yes
 
-		event_target:enemy_commander = {
-			if = {
-				limit = {
-					is_alive = yes
-					ai = yes
-				}
-				allow_new_battle_events_effect = yes
-			}
-		}
-
 		ai_chance = { factor = 100 }
 	}
 
@@ -2349,16 +2299,6 @@ character_event = {
 
 		allow_new_battle_events_effect = yes
 
-		event_target:enemy_commander = {
-			if = {
-				limit = {
-					is_alive = yes
-					ai = yes
-				}
-				allow_new_battle_events_effect = yes
-			}
-		}
-
 		ai_chance = {
 			factor = 50
 
@@ -2423,16 +2363,6 @@ character_event = {
 
 		allow_new_battle_events_effect = yes
 
-		event_target:enemy_commander = {
-			if = {
-				limit = {
-					is_alive = yes
-					ai = yes
-				}
-				allow_new_battle_events_effect = yes
-			}
-		}
-
 		ai_chance = {
 			factor = 50
 
@@ -2457,9 +2387,6 @@ character_event = {
 		clr_character_flag = duel_enemy_opt
 		clr_character_flag = duel_enemy_opt_gain_brave
 		clr_character_flag = duel_enemy_opt_is_brave
-		clr_character_flag = desc_A
-		clr_character_flag = desc_B
-		clr_character_flag = desc_C
 	}
 }
 
@@ -2502,29 +2429,30 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTA_HFP_11012
+		name = {
+			text = EVTOPTA_HFP_11012
+			trigger = { has_character_flag = wounded_incapable }
+		}
+		name = {
+			text = EVTOPTB_HFP_11012
+			trigger = { has_character_flag = wounded_disfigured }
+		}
 
-		trigger = { has_character_flag = wounded_incapable }
+		if = {
+			limit = { has_character_flag = wounded_incapable }
 
-		custom_tooltip = { text = EVTOPTA_HFP_11012_tt }
-		add_trait = incapable
-	}
-
-	option = {
-		name = EVTOPTB_HFP_11012
-
-		trigger = { has_character_flag = wounded_disfigured }
-
-		custom_tooltip = { text = EVTOPTB_HFP_11012_tt }
-		add_trait = disfigured
-		add_trait = severely_injured
-		resolve_severely_injured_effect = yes
-	}
-
-	after = {
-		clr_character_flag = wounded_incapable
-		clr_character_flag = wounded_disfigured
-		allow_new_battle_events_effect = yes
+			custom_tooltip = { text = EVTOPTA_HFP_11012_tt }
+			add_trait = incapable
+			allow_new_battle_events_effect = yes
+			clr_character_flag = wounded_incapable
+		}
+		else = {
+			custom_tooltip = { text = EVTOPTB_HFP_11012_tt }
+			add_trait = disfigured
+			add_trait = severely_injured
+			resolve_severely_injured_effect = yes
+			clr_character_flag = wounded_disfigured
+		}
 	}
 }
 
@@ -2971,7 +2899,6 @@ character_event = {
 
 		trigger = { character = event_target:enemy_commander }
 
-		custom_tooltip = { text = EVTOPTA_HFP_10018_tt }
 		add_blood_splatter_effect = yes
 	}
 
@@ -2994,10 +2921,10 @@ character_event = {
 			NOT = { character = event_target:enemy_commander }
 		}
 
-		custom_tooltip = { text = EVTOPTA_HFP_10018_tt }
 	}
 
 	after = {
+		custom_tooltip = { text = EVTOPTA_HFP_10018_tt }
 		allow_new_battle_events_effect = yes
 	}
 }
@@ -3483,9 +3410,9 @@ character_event = {
 	only_capable = yes
 	prisoner = no
 
-	#trigger = {
-	#	is_inaccessible_trigger = no
-	#}
+	trigger = {
+		is_inaccessible_trigger = no
+	}
 
 	immediate = {
 		disallow_new_battle_events_effect = yes # To keep the tombola from spamming you...
@@ -3578,8 +3505,9 @@ character_event = {
 					is_alive = yes
 					ai = yes
 				}
-				disallow_new_battle_events_effect = yes # To keep the tombola from spamming your potential target...
 			}
+
+			disallow_new_battle_events_effect = yes # To keep the tombola from spamming your potential target...
 		}
 
 		random_list = {
@@ -3649,15 +3577,6 @@ character_event = {
 		send_new_dog_event_effect = yes # Will only work for certain bloodlines...
 		clr_character_flag = about_to_challenge_enemy_commander
 		allow_new_battle_events_effect = yes
-		event_target:enemy_commander = {
-			if = {
-				limit = {
-					is_alive = yes
-					ai = yes
-				}
-				allow_new_battle_events_effect = yes
-			}
-		}
 	}
 
 	option = {
@@ -3693,15 +3612,6 @@ character_event = {
 
 		clr_character_flag = about_to_challenge_enemy_commander
 		allow_new_battle_events_effect = yes
-		event_target:enemy_commander = {
-			if = {
-				limit = {
-					is_alive = yes
-					ai = yes
-				}
-				allow_new_battle_events_effect = yes
-			}
-		}
 	}
 
 	option = {
@@ -3716,15 +3626,6 @@ character_event = {
 
 		clr_character_flag = about_to_challenge_enemy_commander
 		allow_new_battle_events_effect = yes
-		event_target:enemy_commander = {
-			if = {
-				limit = {
-					is_alive = yes
-					ai = yes
-				}
-				allow_new_battle_events_effect = yes
-			}
-		}
 	}
 
 	option = {
@@ -3739,15 +3640,6 @@ character_event = {
 
 		clr_character_flag = about_to_challenge_enemy_commander
 		allow_new_battle_events_effect = yes
-		event_target:enemy_commander = {
-			if = {
-				limit = {
-					is_alive = yes
-					ai = yes
-				}
-				allow_new_battle_events_effect = yes
-			}
-		}
 	}
 
 	option = {
@@ -3760,18 +3652,9 @@ character_event = {
 			remove_character_modifier = pet_hunting_eagle
 		}
 
-		send_new_eagle_event_effect = yes # Only for certain bloodlines...!
 		clr_character_flag = about_to_challenge_enemy_commander
 		allow_new_battle_events_effect = yes
-		event_target:enemy_commander = {
-			if = {
-				limit = {
-					is_alive = yes
-					ai = yes
-				}
-				allow_new_battle_events_effect = yes
-			}
-		}
+		send_new_eagle_event_effect = yes # Only for certain bloodlines...!
 	}
 
 	option = {
@@ -3786,15 +3669,6 @@ character_event = {
 
 		clr_character_flag = about_to_challenge_enemy_commander
 		allow_new_battle_events_effect = yes
-		event_target:enemy_commander = {
-			if = {
-				limit = {
-					is_alive = yes
-					ai = yes
-				}
-				allow_new_battle_events_effect = yes
-			}
-		}
 	}
 
 	### Chase after the enemy commander (if there is one)
@@ -5777,7 +5651,7 @@ character_event = {
 		prestige = -50
 		save_event_target_as = captured_commander
 		imprison = event_target:enemy_liege # ROOT is imprisoned *by* enemy_liege.
-		event_target:enemy_liege = { character_event = { id = 50020 } } # Enemy_liege is notified about your capture...
+		event_target:other_combatant = { character_event = { id = 50020 } } # Enemy_liege is notified about your capture...
 
 		hidden_effect = {
 			event_target:other_combatant = {
@@ -5926,9 +5800,6 @@ character_event = {
 		clr_character_flag = add_duel_xp # To not give rewards...
 		clr_character_flag = is_battlefield_duel # To not give opinion rewards..
 		allow_new_battle_events_effect = yes
-		event_target:commander_cannon_fodder = {
-			allow_new_battle_events_effect = yes
-		}
 		hidden_effect = { clean_up_after_duel_effect = yes }
 	}
 }
@@ -6416,10 +6287,6 @@ character_event = {
 		NOT = { trait = blinded }
 	}
 
-	fail_trigger_effect = {
-		allow_new_battle_events_effect = yes
-	}
-
 	immediate = {
 		disallow_new_battle_events_effect = yes # To keep the tombola from spamming you...
 
@@ -6512,10 +6379,6 @@ character_event = {
 		}
 	}
 
-	fail_trigger_effect = {
-		allow_new_battle_events_effect = yes
-	}
-
 	immediate = {
 		disallow_new_battle_events_effect = yes # To keep the tombola from spamming you...
 		battle_commander_counter_positive_effect = yes
@@ -6606,9 +6469,6 @@ character_event = {
 		}
 
 		allow_new_battle_events_effect = yes
-		event_target:enemy_commander = {
-			allow_new_battle_events_effect = yes
-		}
 
 		ai_chance = {
 			factor = 100
@@ -6648,30 +6508,26 @@ character_event = {
 				borders_lake = yes
 
 				# Provinces on the Nile
-				province_id = 802
-				province_id = 799
-				province_id = 798
-				province_id = 789
-				province_id = 797
-				province_id = 796
-				province_id = 800
-				province_id = 795
-				province_id = 791
-				province_id = 794
-				province_id = 1282
-				province_id = 1322
-				province_id = 793
-				province_id = 1326
-				province_id = 1334
-				province_id = 1335
-				province_id = 880
-				province_id = 879
+				province_id = 789 # c_pelusia
+				province_id = 791 # c_quena
+				province_id = 793 # c_makuria
+				province_id = 794 # c_aswan
+				province_id = 795 # c_asyut
+				province_id = 796 # c_cairo
+				province_id = 797 # c_manupura
+				province_id = 798 # c_delta
+				province_id = 799 # c_gabiyaha
+				province_id = 800 # c_gizeh
+				province_id = 802 # c_alexandria
+				province_id = 879 # c_atbara
+				province_id = 880 # c_sennar
+				province_id = 1282 # c_dotawo
+				province_id = 1322 # c_nobatia
+				province_id = 1326 # c_napata
+				province_id = 1334 # c_alodia
+				province_id = 1335 # c_kosti
 			}
 		}
-	}
-
-	fail_trigger_effect = {
-		allow_new_battle_events_effect = yes
 	}
 
 	immediate = {
