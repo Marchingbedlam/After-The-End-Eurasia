@@ -1,9 +1,9 @@
 # Character scope
 on_yearly_pulse = {
-	events = {
-		SoA.1209 # Birth of the Bektashi Order
-		CM.4309  # Birth of the Haruriyyah Order
-	}
+	#events = {
+	#	SoA.1209 # Birth of the Bektashi Order
+	#	CM.4309  # Birth of the Haruriyyah Order
+	#}
 
 	random_events = {
 		demon_child_magic = {
@@ -21,18 +21,18 @@ on_yearly_pulse = {
 			100 = SoA.4030 # Courtier with minority religion attempts to convert another character at court
 		}
 
-		holy_order_castle = {
-			500 = 0
-			500 = SoA.1052 # # A Holy Grand Master humbly requests the right to build a castle in some ruler's demesne
-		}
+		#holy_order_castle = {
+		#	500 = 0
+		#	500 = SoA.1052 # # A Holy Grand Master humbly requests the right to build a castle in some ruler's demesne
+		#}
 
-		holy_order_loan = {
-			delay = 170
+		# holy_order_loan = {
+			# delay = 170
 
-			700 = 0
-			100 = SoA.1003 # Grand Master demands one of your sons due to debt
-			200 = SoA.1020 # Grand Master demands the right to build a castle in your demesne
-		}
+			# 700 = 0
+			# 100 = SoA.1003 # Grand Master demands one of your sons due to debt
+			# 200 = SoA.1020 # Grand Master demands the right to build a castle in your demesne
+		# }
 
 		influential_monasteries = {
 			667 = 0
@@ -46,10 +46,10 @@ on_yearly_pulse = {
 on_bi_yearly_pulse = {
 	events = {
 		# Found Holy Orders
-		SoA.1709 # Order of Saint Anthony fromed
-		SoA.2609 # Order of Santiago formed
-		SoA.2709 # Order of Calatrava formed
-		SoA.2809 # Order of St Addai formed
+		# SoA.1709 # Order of Saint Anthony fromed
+		# SoA.2609 # Order of Santiago formed
+		# SoA.2709 # Order of Calatrava formed
+		# SoA.2809 # Order of St Addai formed
 
 		# Wicked Priests
 		SoA.5300 # Christian becoming a wicked priest
@@ -61,10 +61,10 @@ on_bi_yearly_pulse = {
 	}
 
 	random_events = {
-		holy_order_volunteer = {
-			990 = 0
-			 10 = SoA.1030 # The son of a ruler volunteers to join a holy order
-		}
+		# holy_order_volunteer = {
+			# 990 = 0
+			 # 10 = SoA.1030 # The son of a ruler volunteers to join a holy order
+		# }
 
 		fingerbone = {
 			delay = 61
