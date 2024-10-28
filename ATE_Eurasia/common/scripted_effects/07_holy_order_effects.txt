@@ -647,26 +647,26 @@ setup_holy_order_religion_scopes = {
 		}
 
 		# Dharmic
-		d_followers_arjuna = {
-			save_persistent_event_target = {
-				name = holy_order_religion
-				scope = hindu
-			}
-		}
+		# d_followers_arjuna = {
+			# save_persistent_event_target = {
+				# name = holy_order_religion
+				# scope = hindu
+			# }
+		# }
 
-		d_ashokas_chosen = {
-			save_persistent_event_target = {
-				name = holy_order_religion
-				scope = buddhist
-			}
-		}
+		# d_ashokas_chosen = {
+			# save_persistent_event_target = {
+				# name = holy_order_religion
+				# scope = buddhist
+			# }
+		# }
 
-		d_bulls_rishabha = {
-			save_persistent_event_target = {
-				name = holy_order_religion
-				scope = jain
-			}
-		}
+		# d_bulls_rishabha = {
+			# save_persistent_event_target = {
+				# name = holy_order_religion
+				# scope = jain
+			# }
+		# }
 
 		log = "Set-up holy order persistent event target religions"
 	}

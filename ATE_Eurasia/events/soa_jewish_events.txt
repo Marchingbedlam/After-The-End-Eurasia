@@ -51,7 +51,7 @@ narrative_event = {
 
 	major_trigger = {
 		ai = no
-		religion = jewish
+		religion_group = jewish_group
 	}
 
 	immediate = {
@@ -291,7 +291,7 @@ character_event = {
 			religion_group = muslim
 			religion_group = zoroastrian_group
 			religion_group = jewish_group
-			culture = khazar
+			#culture = khazar
 			culture = han
 		}
 
@@ -395,7 +395,7 @@ character_event = {
 			religion_group = muslim
 			religion_group = zoroastrian_group
 			religion_group = jewish_group
-			culture = khazar
+			#culture = khazar
 			culture = han
 		}
 
@@ -499,7 +499,7 @@ character_event = {
 			religion_group = muslim
 			religion_group = zoroastrian_group
 			religion_group = jewish_group
-			culture = khazar
+			#culture = khazar
 			culture = han
 		}
 
@@ -673,7 +673,7 @@ character_event = {
 				show_scope_change = no
 
 				limit = {
-					religion = jewish
+					religion_group = jewish_group
 					is_adult = yes
 					prisoner = no
 					war = no

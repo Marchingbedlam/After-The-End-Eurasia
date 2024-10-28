@@ -641,8 +641,11 @@ religion_openly_norse_or_reformed_trigger = {
 		text = religion_openly_norse_or_reformed_tooltip
 
 		OR = {
-			religion = norse_pagan
-			religion = norse_pagan_reformed
+			religion = adonist
+			religion = adonist_reformed
+			religion = sjotru
+			religion = sjotru_reformed
+			
 		}
 	}
 }

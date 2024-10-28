@@ -1987,7 +1987,7 @@ character_event = {
 	prisoner = no
 
 	trigger = {
-		has_landed_title = b_cluny
+		has_landed_title = b_le_creusot
 		is_priest = yes
 		year >= 950
 		is_catholic_branch = yes
@@ -2024,7 +2024,7 @@ narrative_event = {
 		wealth >= 200
 		year >= 950
 
-		b_cluny = {
+		b_le_creusot = {
 			holder_scope = {
 				religion = ROOT
 				is_priest = yes
@@ -2044,7 +2044,7 @@ narrative_event = {
 	}
 
 	immediate = {
-		b_cluny = {
+		b_le_creusot = {
 			holder_scope = {
 				save_event_target_as = bishop_of_cluny
 			}
@@ -2114,11 +2114,11 @@ narrative_event = {
 		is_inaccessible_trigger = no
 
 		distance = {
-			where = b_cluny
+			where = b_le_creusot
 			value < 300 # Not too far away
 		}
 
-		b_cluny = {
+		b_le_creusot = {
 			holder_scope = {
 				is_priest = yes
 				religion = ROOT
