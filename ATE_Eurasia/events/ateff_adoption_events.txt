@@ -28,7 +28,7 @@ character_event = {
 		new_character = {
 			set_mother = ROOT
 			character_event = { id = maintenance.4 } # Diversity
-			random = { chance = 2 add_trait = fair }
+			random = { chance = 2 add_trait = attractive }
 			random = { chance = 1 add_trait = genius }
 			random = { chance = 2 add_trait = strong }
 			random = { chance = 2 add_trait = quick }
@@ -74,7 +74,7 @@ character_event = {
 		new_character = {
 			set_mother = ROOT
 			character_event = { id = maintenance.4 } # Diversity
-			random = { chance = 2 add_trait = fair }
+			random = { chance = 2 add_trait = attractive }
 			random = { chance = 1 add_trait = genius }
 			random = { chance = 2 add_trait = strong }
 			random = { chance = 2 add_trait = quick }
@@ -128,7 +128,7 @@ character_event = {
 		new_character = {
 			set_father = ROOT
 			character_event = { id = maintenance.4 } # Diversity
-			random = { chance = 2 add_trait = fair }
+			random = { chance = 2 add_trait = attractive }
 			random = { chance = 1 add_trait = genius }
 			random = { chance = 2 add_trait = strong }
 			random = { chance = 2 add_trait = quick }
@@ -174,7 +174,7 @@ character_event = {
 		new_character = {
 			set_father = ROOT
 			character_event = { id = maintenance.4 } # Diversity
-			random = { chance = 2 add_trait = fair }
+			random = { chance = 2 add_trait = attractive }
 			random = { chance = 1 add_trait = genius }
 			random = { chance = 2 add_trait = strong }
 			random = { chance = 2 add_trait = quick }
