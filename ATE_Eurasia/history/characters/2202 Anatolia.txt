@@ -729,9 +729,7 @@
 	father=2202049
 	2600.6.9={birth=yes}
 	2660.10.10={
-		effect={
-			add_claim=d_marmara
-		}
+		add_claim=d_marmara
 	}
 	2680.1.1={death=yes}
 }
@@ -2927,10 +2925,10 @@
 	}
 	2666.2.21={
 		effect={
-			add_claim=d_ankara
-			add_claim=d_kirikkale
 			add_friend=2202071
 		}
+		add_claim=d_ankara
+		add_claim=d_kirikkale
 		add_spouse=2202302
 	}
 	2680.1.1={death=yes}
@@ -3536,12 +3534,13 @@
 	trait=possessed
 	2626.8.3={birth=yes
 		culture=west_anatolian}
-	2660.1.1={effect={
+	2660.1.1={
 		add_rival=2202068
 		add_claim=d_aydin
 		add_claim=c_aydin
 		add_claim=c_mugla
-		add_claim=c_denizli}}
+		add_claim=c_denizli
+	}
 	2700.1.1={death=yes}
 }
 2202292={

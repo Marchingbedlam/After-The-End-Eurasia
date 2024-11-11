@@ -2940,10 +2940,10 @@
 	2626.11.2={birth=yes}
 	2646.1.1={add_spouse=19911152
 		effect={
-			add_claim=c_koszalin
-			add_claim=b_kolobrzeg
 			add_rival=19911157
 		}
+		add_claim=c_koszalin
+		add_claim=b_kolobrzeg
 	}
 	2680.1.1={death=yes}
 }
@@ -4099,7 +4099,7 @@
 	trait=sympathy_judaism
 	2625.4.30={birth=yes}
 	2641.1.1={add_spouse=1991263}
-	2646.1.1={effect={add_claim=b_wejherowo}}
+	2646.1.1={add_claim=b_wejherowo}
 	2680.1.1={death=yes}
 }
 1991268={
@@ -4113,7 +4113,7 @@
 	father=1991263
 	mother=1991267
 	2643.5.5={birth=yes}
-	2646.1.1={effect={add_claim=b_wejherowo}}
+	2646.1.1={add_claim=b_wejherowo}
 	2680.1.1={death=yes}
 }
 1991269={
@@ -4128,7 +4128,7 @@
 	father=1991263
 	mother=1991267
 	2651.3.20={birth=yes}
-	2661.1.1={effect={add_claim=b_wejherowo}}
+	2661.1.1={add_claim=b_wejherowo}
 	2680.1.1={death=yes}
 }
 1991270={
@@ -4551,7 +4551,7 @@
 	trait=malnourished
 	father=1991303
 	2643.4.2={birth=yes}
-	2660.1.1={effect={add_claim=c_konin}}
+	2660.1.1={add_claim=c_konin}
 	2680.1.1={death=yes}
 }
 1991303={
@@ -4644,7 +4644,7 @@
 	father=1991311
 	mother=1991283
 	2643.11.20={birth=yes}
-	2660.1.1={effect={add_claim=d_greater_poland}}
+	2660.1.1={add_claim=d_greater_poland}
 	2680.1.1={death=yes}
 }
 1991311={
@@ -5403,8 +5403,8 @@
 		effect={
 			c_1991369={
 				ROOT={impregnate=PREV}}
-			add_claim=c_beskidenland
 		}
+		add_claim=c_beskidenland
 	}
 	2680.1.1={death=yes}
 }

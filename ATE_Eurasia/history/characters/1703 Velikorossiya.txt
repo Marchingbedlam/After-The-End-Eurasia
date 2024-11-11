@@ -2952,9 +2952,6 @@
 	dynasty=1585121
 	culture=chernyan
 	religion= pravoslavie
-	add_claim = d_oryol
-	add_claim = c_oryol
-	add_claim = c_livny
 	trait = wroth
 	trait = cruel
 	trait = underhanded_rogue
@@ -2962,5 +2959,10 @@
 	trait = lustful
 	disallow_random_traits=yes
 	2620.1.1={birth=yes}
+	2640.1.1 = {
+		add_claim = d_oryol
+		add_claim = c_oryol
+		add_claim = c_livny
+	}
 	2700.1.1={death=yes}
 }

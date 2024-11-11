@@ -1087,9 +1087,12 @@
 	trait=brave
 	trait=just
 	trait=proud
-	add_claim=k_england
-	add_claim=c_london
+	
 	2640.5.24={birth=yes}
+	2650.1.1={
+		add_claim=k_england
+		add_claim=c_london
+	}
 	2721.1.22={death=yes}
 }
 1001054={

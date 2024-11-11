@@ -25,7 +25,7 @@
 	learning=5
 	properties=ag00f
 	2633.2.22={birth=yes}
-	2664.8.11={effect={add_claim=k_fergana}}
+	2664.8.11={add_claim=k_fergana}
 	2665.1.1={
 		effect={
 			join_society=monastic_order_naqshbandi
@@ -75,12 +75,12 @@
 	martial=5
 	properties=ad00i
 	2648.8.11={birth=yes}
-	2648.8.11={effect={
+	2648.8.11={
 		add_claim=c_osh
 		add_claim=c_jalal_abad
 		add_claim=c_namangan
-		add_claim=k_samarkand}
-		}
+		add_claim=k_samarkand
+	}
 	2728.1.1={death=yes}
 }
 1506004={
@@ -959,12 +959,12 @@
 	trait=envious
 	trait=ambitious
 	2649.12.16={birth=yes}
-	2649.12.16={effect={
+	2649.12.16={
 		add_claim=c_osh
 		add_claim=c_jalal_abad
 		add_claim=c_namangan
 		add_claim=k_samarkand
-		add_claim=k_fergana}
+		add_claim=k_fergana
 	}
 	2660.1.1={employer=1506003}
 	2680.1.1={death=yes}

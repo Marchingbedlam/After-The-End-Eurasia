@@ -305,9 +305,9 @@
 	2649.7.14={birth=yes}
 	2660.12.1={
 		wealth=500 
+		add_claim=d_tabriz
 		effect={
 			add_rival=2070025
-			add_claim=d_tabriz
 			
 			spawn_unit={
 				province=2291 #Ardabil
@@ -372,9 +372,7 @@
 	2636.10.5={birth=yes}
 	2659.1.1={add_spouse=1802103}
 	2660.12.1={
-		effect={
-			add_claim=d_ardabil
-		}
+		add_claim=d_ardabil
 	}
 	2680.1.1={death=yes}
 }

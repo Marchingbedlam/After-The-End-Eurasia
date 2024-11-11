@@ -165,11 +165,9 @@
 	trait=shy
 	2640.8.21={birth=yes}
 	2660.12.1={
-		effect={
-			add_claim=d_bani_mellal
-			add_claim=d_ar_ribat
-			add_claim=d_fas_maknas
-		}
+		add_claim=d_bani_mellal
+		add_claim=d_ar_ribat
+		add_claim=d_fas_maknas
 	}
 	2680.1.1={death=yes}
 }
@@ -193,11 +191,11 @@
 	2660.12.1={
 		effect={
 			add_rival=3605014
-			add_claim=k_morocco
-			add_claim=d_bani_mellal
-			add_claim=d_ar_ribat
-			add_claim=d_fas_maknas
 		}
+		add_claim=k_morocco
+		add_claim=d_bani_mellal
+		add_claim=d_ar_ribat
+		add_claim=d_fas_maknas
 	}
 	2680.1.1={death=yes}
 }
@@ -221,10 +219,10 @@
 		effect={
 			add_rival=3605014
 			add_rival=3605015
-			add_claim=k_morocco
-			add_claim=d_bani_mellal
-			add_claim=d_fas_maknas
 		}
+		add_claim=k_morocco
+		add_claim=d_bani_mellal
+		add_claim=d_fas_maknas
 	}
 	2680.1.1={death=yes}
 }
@@ -247,10 +245,10 @@
 			add_rival=3605014
 			add_rival=3605015
 			add_rival=3605016
-			add_claim=k_morocco
-			add_claim=d_bani_mellal
-			add_claim=d_ar_ribat
 		}
+		add_claim=k_morocco
+		add_claim=d_bani_mellal
+		add_claim=d_ar_ribat
 	}
 	2680.1.1={death=yes}
 }
