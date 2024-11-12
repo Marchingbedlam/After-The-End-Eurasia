@@ -3535,7 +3535,7 @@
 	2626.8.3={birth=yes
 		culture=west_anatolian}
 	2660.1.1={
-		add_rival=2202068
+		effect = { add_rival=2202068 }
 		add_claim=d_aydin
 		add_claim=c_aydin
 		add_claim=c_mugla

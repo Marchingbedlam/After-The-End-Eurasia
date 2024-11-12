@@ -890,25 +890,25 @@ narrative_event = {
 # Princely Elective Dynamic Elector titles
 
 # On regular start
-character_event = {
-	id = HFP.24120
+# character_event = {
+	# id = HFP.24120
 
-	is_triggered_only = yes # on_startup
-	hide_window = yes
+	# is_triggered_only = yes # on_startup
+	# hide_window = yes
 
-	only_independent = yes
+	# only_independent = yes
 
-	trigger = {
-		has_landed_title = e_hre # Only if the original exists
+	# trigger = {
+		# has_landed_title = e_hre # Only if the original exists
 
-		e_hre = {
-			NOT = {
-				persistent_event_target:hre_title_1_per = { always = yes } # If one exists already, all do
-			}
-		}
-	}
+		# e_hre = {
+			# NOT = {
+				# persistent_event_target:hre_title_1_per = { always = yes } # If one exists already, all do
+			# }
+		# }
+	# }
 
-	immediate = {
-		princely_elective_german_elector_setup_effect = yes # Regular German setup
-	}
-}
+	# immediate = {
+		# princely_elective_german_elector_setup_effect = yes # Regular German setup
+	# }
+# }

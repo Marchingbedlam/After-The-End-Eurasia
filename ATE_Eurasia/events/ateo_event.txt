@@ -48,7 +48,7 @@ narrative_event = {
 		trigger = {trait = mystic}
 		name = EVT_ateo2_OPTA
 		health = 0.5
-		learning = 2
+		change_learning = 2
 		add_trait = vegetarian
 		narrative_event = { id = ateo.3 days = 7 } 
 	}
