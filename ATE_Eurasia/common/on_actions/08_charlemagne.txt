@@ -1,21 +1,21 @@
 # Character scope
-on_startup = {
-	events = {
-		CM.998 # Charlemagne-Carloman rivalry - Charlemagne
-		CM.999 # Charlemagne-Carloman rivalry - Carloman
-	}
-}
+# on_startup = {
+	# events = {
+		# CM.998 # Charlemagne-Carloman rivalry - Charlemagne
+		# CM.999 # Charlemagne-Carloman rivalry - Carloman
+	# }
+# }
 
 # Character scope
 on_yearly_pulse = {
 	events = {
-		CM.5000 # Ragnar Lodbrok
-		CM.503  # Start of Viking Age
-		CM.1011 # Lombard Queen
-		CM.1100 # Saxon wars begin
-		CM.1104 # Blood court of Verden
-		CM.1108 # Baptism of Widukind
-		CM.1400 # Umayyad vassal calls upon Charlemagne to support rebellion in exchange for vassalization
+		# CM.5000 # Ragnar Lodbrok
+		# CM.503  # Start of Viking Age
+		# CM.1011 # Lombard Queen
+		# CM.1100 # Saxon wars begin
+		# CM.1104 # Blood court of Verden
+		# CM.1108 # Baptism of Widukind
+		# CM.1400 # Umayyad vassal calls upon Charlemagne to support rebellion in exchange for vassalization
 	}
 
 	random_events = {
@@ -49,24 +49,24 @@ on_yearly_pulse = {
 		100 = CM.1192 # Mother seduces your spouse
 
 		# Other Charlemagne/Carloman
-		100 = CM.1132 # Vassal switches sides between Charlemagne/Carloman
+		# 100 = CM.1132 # Vassal switches sides between Charlemagne/Carloman
 
-		ogier_the_dane = {
-			delay = 120
+		# ogier_the_dane = {
+			# delay = 120
 
-			750 = 0
-			250 = CM.1070
-		}
+			# 750 = 0
+			# 250 = CM.1070
+		# }
 	}
 }
 
 # Character scope
-on_bi_yearly_pulse = {
-	events = {
-		CM.1050 # Roland arrives at court
-		CM.1105 # Emergence of Widukind
-	}
-}
+# on_bi_yearly_pulse = {
+	# events = {
+		# CM.1050 # Roland arrives at court
+		# CM.1105 # Emergence of Widukind
+	# }
+# }
 
 # Character scope
 on_decade_pulse = {
@@ -82,11 +82,11 @@ on_decade_pulse = {
 
 # ROOT is any leader in battle on winning side (except the leader)
 # FROM is opponent army leader
-on_battle_won = {
-	random_events = {
-		50 = CM.1054 # Death of Roland
-	}
-}
+# on_battle_won = {
+	# random_events = {
+		# 50 = CM.1054 # Death of Roland
+	# }
+# }
 
 # ROOT is any leader in battle on winning side (except the leader)
 # FROM is opponent army leader
@@ -104,11 +104,11 @@ on_major_battle_won_leader = {
 
 # ROOT is any leader in battle on losing side (except the leader)
 # FROM is opponent army leader
-on_battle_lost = {
-	random_events = {
-		200 = CM.1056 # Death of Roland
-	}
-}
+# on_battle_lost = {
+	# random_events = {
+		# 200 = CM.1056 # Death of Roland
+	# }
+# }
 
 # ROOT is any leader in battle on losing side (except the leader)
 # FROM is opponent army leader
@@ -139,7 +139,7 @@ on_siege_won_leader = {
 # FROM is the taken holding title
 on_siege_over_winner = {
 	events = {
-		CM.1101 # Destruction of Irminsul
+		# CM.1101 # Destruction of Irminsul
 		CM.10035 # Chronicle for certain major locations
 	}
 }
@@ -193,18 +193,18 @@ on_released_from_prison = {
 # Character scope, isn't dead yet
 on_death = {
 	events = {
-		CM.1068  # Carloman dies
-		CM.1069  # Charlemagne dies
-		CM.1081  # Carloman's widow dies
+		# CM.1068  # Carloman dies
+		# CM.1069  # Charlemagne dies
+		# CM.1081  # Carloman's widow dies
 		CM.10010 # Chronicle entry
 	}
 }
 
-OFFER_PEACE_INTERACTION_ACCEPT_EVENT = {
-	events = {
-		CM.1407 # Charlemagne in Spain
-	}
-}
+# OFFER_PEACE_INTERACTION_ACCEPT_EVENT = {
+	# events = {
+		# CM.1407 # Charlemagne in Spain
+	# }
+# }
 
 CALL_ALLY_INTERACTION_ACCEPT_EVENT = {
 	events = {
@@ -240,7 +240,7 @@ on_crusade_failure = {
 # FROM is the title
 on_create_title = {
 	events = {
-		CM.1500 # Charlemagne's coronation
+		# CM.1500 # Charlemagne's coronation
 		CM.10021 # Chronicle event
 	}
 }
@@ -248,12 +248,12 @@ on_create_title = {
 # ROOT is the character
 # FROM is the title
 # FROMFROM is the old holder
-on_new_holder = {
-	events = {
-		CM.501 # Fall of the Kingdom of the Avars
-		CM.502 # Fall of the Kingdom of the Lombards
-	}
-}
+# on_new_holder = {
+	# events = {
+		# CM.501 # Fall of the Kingdom of the Avars
+		# CM.502 # Fall of the Kingdom of the Lombards
+	# }
+# }
 
 # ROOT is the character
 # FROM is the title
@@ -261,8 +261,8 @@ on_new_holder = {
 on_new_holder_inheritance = {
 	events = {
 		CM.10039 # Chronicle entry
-		CM.501 # Fall of the Kingdom of the Avars
-		CM.502 # Fall of the Kingdom of the Lombards
+		# CM.501 # Fall of the Kingdom of the Avars
+		# CM.502 # Fall of the Kingdom of the Lombards
 	}
 }
 
@@ -272,8 +272,8 @@ on_new_holder_inheritance = {
 on_new_holder_usurpation = {
 	events = {
 		CM.10022 # Chronicle event
-		CM.501 # Fall of the Kingdom of the Avars
-		CM.502 # Fall of the Kingdom of the Lombards
+		# CM.501 # Fall of the Kingdom of the Avars
+		# CM.502 # Fall of the Kingdom of the Lombards
 	}
 }
 
@@ -333,8 +333,8 @@ on_character_convert_religion = {
 on_character_convert_culture = {
 	events = {
 		CM.10027 # Chronicle event - When a character converts to a new culture
-		CM.501 # Fall of the Kingdom of the Avars
-		CM.502 # Fall of the Kingdom of the Lombards
+		# CM.501 # Fall of the Kingdom of the Avars
+		# CM.502 # Fall of the Kingdom of the Lombards
 	}
 }
 
@@ -389,16 +389,16 @@ on_divorce = {
 
 # Triggers for character when they are put in command of a flank
 # ROOT is the affected character
-on_command_unit = {
-	events = {
-		CM.1058 # Roland is very brave on campaign
-	}
-}
+# on_command_unit = {
+	# events = {
+		# CM.1058 # Roland is very brave on campaign
+	# }
+# }
 
-# Triggers for character when they are put in command of a subunit
-# ROOT is the affected character
-on_command_sub_unit = {
-	events = {
-		CM.1058 # Roland is very brave on campaign
-	}
-}
+# # Triggers for character when they are put in command of a subunit
+# # ROOT is the affected character
+# on_command_sub_unit = {
+	# events = {
+		# CM.1058 # Roland is very brave on campaign
+	# }
+# }

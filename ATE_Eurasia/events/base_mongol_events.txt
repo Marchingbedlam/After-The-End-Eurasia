@@ -990,2862 +990,2862 @@
 ### The Hordes Convert ###
 
 # Ilkhanate converts to Catholic
-character_event = {
-	id = 60010
-	title = EVTNAME60010
-	desc = EVTDESC60010
-	picture = GFX_evt_mongols
-	border = GFX_event_normal_frame_war
+# character_event = {
+	# id = 60010
+	# title = EVTNAME60010
+	# desc = EVTDESC60010
+	# picture = GFX_evt_mongols
+	# border = GFX_event_normal_frame_war
 
-	is_triggered_only = yes # on_five_year_pulse, random_events, mongol_conversion
-	major = yes
+	# is_triggered_only = yes # on_five_year_pulse, random_events, mongol_conversion
+	# major = yes
 
-	only_independent = yes
-	min_age = 16
-	only_capable = yes
-	prisoner = no
-
-	trigger = {
-		primary_title = {
-			title = e_ilkhanate
-		}
-
-		religion = tengri_pagan
-
-		NOR = {
-			trait = zealous
-			has_global_flag = il_khanate_converts
-		}
-
-		had_global_flag = {
-			flag = mongol_empire_arrival
-			years >= 40
-		}
-
-		had_global_flag = {
-			flag = mongol_empire_arrival
-			years < 80
-		}
-
-		any_realm_province = {
-			religion = catholic
-			held_under_PREV = yes
-		}
-	}
-
-	major_trigger = {
-		ai = no
-	}
-
-	weight_multiplier = {
-		factor = 1
-
-		mult_modifier = {
-			factor = 1.33
-
-			capital_scope = {
-				religion = catholic
-			}
-		}
-	}
-
-	immediate = {
-		set_global_flag = il_khanate_converts
-
-		catholic = {
-			save_event_target_as = target_religion
-		}
-	}
-
-	option = { # Catholic
-		name = EVTOPTA60010
-
-		trigger = { has_landed_title = e_ilkhanate }
-
-		convert_religion_failsafe_effect = yes
-
-		capital_scope = {
-			show_scope_change = no
-
-			religion = catholic
-		}
-
-		any_realm_character = {
-			show_scope_change = no
-
-			limit = { religion = tengri_pagan }
-
-			catholic = {
-				save_event_target_as = target_religion
-			}
-
-			convert_religion_failsafe_effect = yes
-
-			if = {
-				limit = {
-					is_playable = yes
-
-					capital_scope = {
-						religion = tengri_pagan
-					}
-				}
-
-				capital_scope = {
-					show_scope_change = no
-
-					religion = catholic
-				}
-			}
-		}
-	}
-
-	# Other rulers are informed
-	option = {
-		name = {
-			text = EVTOPTB60010
-			trigger = { religion_group = muslim }
-		}
-		name = {
-			text = EXCELLENT
-			trigger = { religion_group = christian }
-		}
-		name = {
-			text = EVTOPTD60010
-			trigger = {
-				NOR = {
-					religion_group = christian
-					religion_group = muslim
-				}
-			}
-		}
-
-		trigger = {
-			NOT = { has_landed_title = e_ilkhanate }
-		}
-	}
-}
-
-# Ilkhanate converts to Orthodox
-character_event = {
-	id = 60011
-	title = EVTNAME60010
-	desc = EVTDESC60011
-	picture = GFX_evt_mongols
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes # on_five_year_pulse, random_events, mongol_conversion
-	major = yes
-
-	only_independent = yes
-	only_capable = yes
-	min_age = 16
-	prisoner = no
-
-	trigger = {
-		primary_title = {
-			title = e_ilkhanate
-		}
-
-		religion = tengri_pagan
-
-		NOR = {
-			trait = zealous
-			has_global_flag = il_khanate_converts
-		}
-
-		had_global_flag = {
-			flag = mongol_empire_arrival
-			years >= 40
-		}
-
-		had_global_flag = {
-			flag = mongol_empire_arrival
-			years < 80
-		}
-
-		any_realm_province = {
-			religion = orthodox
-			held_under_PREV = yes
-		}
-	}
-
-	major_trigger = {
-		ai = no
-	}
-
-	weight_multiplier = {
-		factor = 1
-
-		mult_modifier = {
-			factor = 1.33
-
-			capital_scope = {
-				religion = orthodox
-			}
-		}
-	}
-
-	immediate = {
-		set_global_flag = il_khanate_converts
-
-		orthodox = {
-			save_event_target_as = target_religion
-		}
-	}
-
-	option = { # Orthodox
-		name = EVTOPTA60010
-
-		trigger = { has_landed_title = e_ilkhanate }
-
-		convert_religion_failsafe_effect = yes
-
-		capital_scope = {
-			show_scope_change = no
-
-			religion = orthodox
-		}
-
-		any_realm_character = {
-			show_scope_change = no
-
-			limit = { religion = tengri_pagan }
-
-			orthodox = {
-				save_event_target_as = target_religion
-			}
-
-			convert_religion_failsafe_effect = yes
-
-			if = {
-				limit = {
-					is_playable = yes
-
-					capital_scope = {
-						religion = tengri_pagan
-					}
-				}
-
-				capital_scope = {
-					show_scope_change = no
-
-					religion = orthodox
-				}
-			}
-		}
-	}
-
-	# Other rulers are informed
-	option = {
-		name = {
-			text = EVTOPTB60010
-			trigger = { religion_group = muslim }
-		}
-		name = {
-			text = EXCELLENT
-			trigger = { religion_group = christian }
-		}
-		name = {
-			text = EVTOPTD60010
-			trigger = {
-				NOR = {
-					religion_group = christian
-					religion_group = muslim
-				}
-			}
-		}
-
-		trigger = {
-			NOT = { has_landed_title = e_ilkhanate }
-		}
-	}
-}
-
-# Ilkhanate converts to Sunni
-character_event = {
-	id = 60012
-	title = EVTNAME60010
-	desc = EVTDESC60012
-	picture = GFX_evt_mongols
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes # on_five_year_pulse, random_events, mongol_conversion
-	major = yes
-
-	only_independent = yes
-	min_age = 16
-	only_capable = yes
-	prisoner = no
-
-	trigger = {
-		primary_title = {
-			title = e_ilkhanate
-		}
-
-		religion = tengri_pagan
-
-		NOR = {
-			trait = zealous
-			has_global_flag = il_khanate_converts
-		}
-
-		had_global_flag = {
-			flag = mongol_empire_arrival
-			years >= 40
-		}
-
-		had_global_flag = {
-			flag = mongol_empire_arrival
-			years < 80
-		}
-
-		any_realm_province = {
-			religion = sunni
-			held_under_PREV = yes
-		}
-	}
-
-	major_trigger = {
-		ai = no
-	}
-
-	weight_multiplier = {
-		factor = 1
-
-		mult_modifier = {
-			factor = 1.33
-
-			capital_scope = {
-				religion = sunni
-			}
-		}
-	}
-
-	immediate = {
-		set_global_flag = il_khanate_converts
-
-		sunni = {
-			save_event_target_as = target_religion
-		}
-	}
-
-	option = { # Sunni
-		name = EVTOPTA60010
-
-		trigger = { has_landed_title = e_ilkhanate }
-
-		convert_religion_failsafe_effect = yes
-
-		capital_scope = {
-			show_scope_change = no
-
-			religion = sunni
-		}
-
-		any_realm_character = {
-			show_scope_change = no
-
-			limit = { religion = tengri_pagan }
-
-			sunni = {
-				save_event_target_as = target_religion
-			}
-
-			convert_religion_failsafe_effect = yes
-
-			if = {
-				limit = {
-					is_playable = yes
-
-					capital_scope = {
-						religion = tengri_pagan
-					}
-				}
-
-				capital_scope = {
-					show_scope_change = no
-
-					religion = sunni
-				}
-			}
-		}
-	}
-
-	# Other rulers are informed
-	option = {
-		name = {
-			text = EXCELLENT
-			trigger = { religion_group = muslim }
-		}
-		name = {
-			text = EVTOPTC60010
-			trigger = { religion_group = christian }
-		}
-		name = {
-			text = EVTOPTD60010
-			trigger = {
-				NOR = {
-					religion_group = christian
-					religion_group = muslim
-				}
-			}
-		}
-
-		trigger = {
-			NOT = { has_landed_title = e_ilkhanate }
-		}
-	}
-}
-
-# Ilkhanate converts to Shiite
-character_event = {
-	id = 60013
-	title = EVTNAME60010
-	desc = EVTDESC60013
-	picture = GFX_evt_mongols
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes # on_five_year_pulse, random_events, mongol_conversion
-	major = yes
-
-	only_independent = yes
-	min_age = 16
-	only_capable = yes
-	prisoner = no
-
-	trigger = {
-		primary_title = {
-			title = e_ilkhanate
-		}
-
-		religion = tengri_pagan
-
-		NOR = {
-			trait = zealous
-			has_global_flag = il_khanate_converts
-		}
-
-		had_global_flag = {
-			flag = mongol_empire_arrival
-			years >= 40
-		}
-
-		had_global_flag = {
-			flag = mongol_empire_arrival
-			years < 80
-		}
-
-		any_realm_province = {
-			religion = shiite
-			held_under_PREV = yes
-		}
-	}
-
-	major_trigger = {
-		ai = no
-	}
-
-	weight_multiplier = {
-		factor = 1
-
-		mult_modifier = {
-			factor = 1.33
-
-			capital_scope = {
-				religion = shiite
-			}
-		}
-	}
-
-	immediate = {
-		set_global_flag = il_khanate_converts
-
-		shiite = {
-			save_event_target_as = target_religion
-		}
-	}
-
-	option = { # Shiite
-		name = EVTOPTA60010
-
-		trigger = { has_landed_title = e_ilkhanate }
-
-		convert_religion_failsafe_effect = yes
-
-		capital_scope = {
-			show_scope_change = no
-
-			religion = shiite
-		}
-
-		any_realm_character = {
-			show_scope_change = no
-
-			limit = { religion = tengri_pagan }
-
-			shiite = {
-				save_event_target_as = target_religion
-			}
-
-			convert_religion_failsafe_effect = yes
-
-			if = {
-				limit = {
-					is_playable = yes
-
-					capital_scope = {
-						religion = tengri_pagan
-					}
-				}
-
-				capital_scope = {
-					show_scope_change = no
-
-					religion = shiite
-				}
-			}
-		}
-	}
-
-	# Other rulers are informed
-	option = {
-		name = {
-			text = EXCELLENT
-			trigger = { religion_group = muslim }
-		}
-		name = {
-			text = EVTOPTC60010
-			trigger = { religion_group = christian }
-		}
-		name = {
-			text = EVTOPTD60010
-			trigger = {
-				NOR = {
-					religion_group = christian
-					religion_group = muslim
-				}
-			}
-		}
-
-		trigger = {
-			NOT = { has_landed_title = e_ilkhanate }
-		}
-	}
-}
-
-# Ilkhanate converts to Nestorian
-character_event = {
-	id = 60014
-	title = EVTNAME60010
-	desc = EVTDESC60014
-	picture = GFX_evt_mongols
-	border = GFX_event_normal_frame_war
-
-	is_triggered_only = yes # on_five_year_pulse, random_events, mongol_conversion
-	major = yes
-
-	only_independent = yes
-	min_age = 16
-	only_capable = yes
-	prisoner = no
-
-	trigger = {
-		primary_title = {
-			title = e_ilkhanate
-		}
-
-		religion = tengri_pagan
-		num_of_count_titles_in_realm >= 1
-
-		NOR = {
-			trait = zealous
-			has_global_flag = il_khanate_converts
-		}
-
-		had_global_flag = {
-			flag = mongol_empire_arrival
-			years >= 40
-		}
-
-		had_global_flag = {
-			flag = mongol_empire_arrival
-			years < 80
-		}
-	}
-
-	major_trigger = {
-		ai = no
-	}
-
-	weight_multiplier = {
-		factor = 1
-
-		mult_modifier = {
-			factor = 1.33
-
-			capital_scope = {
-				religion = nestorian
-			}
-		}
-	}
-
-	immediate = {
-		set_global_flag = il_khanate_converts
-
-		nestorian = {
-			save_event_target_as = target_religion
-		}
-	}
-
-	option = { # Nestorian
-		name = EVTOPTA60010
-
-		trigger = { has_landed_title = e_ilkhanate }
-
-		convert_religion_failsafe_effect = yes
-
-		capital_scope = {
-			show_scope_change = no
-
-			religion = nestorian
-		}
-
-		any_realm_character = {
-			show_scope_change = no
-
-			limit = { religion = tengri_pagan }
-
-			nestorian = {
-				save_event_target_as = target_religion
-			}
-
-			convert_religion_failsafe_effect = yes
-
-			if = {
-				limit = {
-					is_playable = yes
-
-					capital_scope = {
-						religion = tengri_pagan
-					}
-				}
-
-				capital_scope = {
-					show_scope_change = no
-
-					religion = nestorian
-				}
-			}
-		}
-	}
-
-	# Other rulers are informed
-	option = {
-		name = {
-			text = EVTOPTB60010
-			trigger = { religion_group = muslim }
-		}
-		name = {
-			text = EXCELLENT
-			trigger = { religion_group = christian }
-		}
-		name = {
-			text = EVTOPTD60010
-			trigger = {
-				NOR = {
-					religion_group = christian
-					religion_group = muslim
-				}
-			}
-		}
-
-		trigger = {
-			NOT = { has_landed_title = e_ilkhanate }
-		}
-	}
-}
-
-# Golden Horde converts to Catholic
-character_event = {
-	id = 60020
-	title = EVTNAME60020
-	desc = EVTDESC60010
-	picture = GFX_evt_mongols
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes # on_five_year_pulse, random_events, mongol_conversion
-	major = yes
-
-	only_independent = yes
-	min_age = 16
-	only_capable = yes
-	prisoner = no
-
-	trigger = {
-		primary_title = {
-			title = e_golden_horde
-		}
-
-		religion = tengri_pagan
-
-		NOR = {
-			trait = zealous
-			has_global_flag = golden_horde_converts
-		}
-
-		had_global_flag = {
-			flag = mongol_empire_arrival
-			years >= 40
-		}
-
-		had_global_flag = {
-			flag = mongol_empire_arrival
-			years < 80
-		}
-
-		any_realm_province = {
-			religion = catholic
-			held_under_PREV = yes
-		}
-	}
-
-	major_trigger = {
-		ai = no
-	}
-
-	weight_multiplier = {
-		factor = 1
-
-		mult_modifier = {
-			factor = 1.33
-
-			capital_scope = {
-				religion = catholic
-			}
-		}
-	}
-
-	immediate = {
-		set_global_flag = golden_horde_converts
-
-		catholic = {
-			save_event_target_as = target_religion
-		}
-	}
-
-	option = { # Catholic
-		name = EVTOPTA60010
-
-		trigger = { has_landed_title = e_golden_horde }
-
-		convert_religion_failsafe_effect = yes
-
-		capital_scope = {
-			show_scope_change = no
-
-			religion = catholic
-		}
-
-		any_realm_character = {
-			show_scope_change = no
-
-			limit = { religion = tengri_pagan }
-
-			catholic = {
-				save_event_target_as = target_religion
-			}
-
-			convert_religion_failsafe_effect = yes
-
-			if = {
-				limit = {
-					is_playable = yes
-
-					capital_scope = {
-						religion = tengri_pagan
-					}
-				}
-
-				capital_scope = {
-					show_scope_change = no
-
-					religion = catholic
-				}
-			}
-		}
-	}
-
-	# Other rulers are informed
-	option = {
-		name = {
-			text = EVTOPTB60010
-			trigger = { religion_group = muslim }
-		}
-		name = {
-			text = EXCELLENT
-			trigger = { religion_group = christian }
-		}
-		name = {
-			text = EVTOPTD60010
-			trigger = {
-				NOR = {
-					religion_group = christian
-					religion_group = muslim
-				}
-			}
-		}
-
-		trigger = {
-			NOT = { has_landed_title = e_golden_horde }
-		}
-	}
-}
-
-# Golden Horde converts to Orthodox
-character_event = {
-	id = 60021
-	title = EVTNAME60020
-	desc = EVTDESC60011
-	picture = GFX_evt_mongols
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes # on_five_year_pulse, random_events, mongol_conversion
-	major = yes
-
-	only_independent = yes
-	min_age = 16
-	only_capable = yes
-	prisoner = no
-
-	trigger = {
-		primary_title = {
-			title = e_golden_horde
-		}
-
-		religion = tengri_pagan
-
-		NOR = {
-			trait = zealous
-			has_global_flag = golden_horde_converts
-		}
-
-		had_global_flag = {
-			flag = mongol_empire_arrival
-			years >= 40
-		}
-
-		had_global_flag = {
-			flag = mongol_empire_arrival
-			years < 80
-		}
-
-		any_realm_province = {
-			religion = orthodox
-			held_under_PREV = yes
-		}
-	}
-
-	major_trigger = {
-		ai = no
-	}
-
-	weight_multiplier = {
-		factor = 1
-
-		mult_modifier = {
-			factor = 1.33
-
-			capital_scope = {
-				religion = orthodox
-			}
-		}
-	}
-
-	immediate = {
-		set_global_flag = golden_horde_converts
-
-		orthodox = {
-			save_event_target_as = target_religion
-		}
-	}
-
-	option = { # Orthodox
-		name = EVTOPTA60010
-
-		trigger = { has_landed_title = e_golden_horde }
-
-		convert_religion_failsafe_effect = yes
-
-		capital_scope = {
-			show_scope_change = no
-
-			religion = orthodox
-		}
-
-		any_realm_character = {
-			show_scope_change = no
-
-			limit = { religion = tengri_pagan }
-
-			orthodox = {
-				save_event_target_as = target_religion
-			}
-
-			convert_religion_failsafe_effect = yes
-
-			if = {
-				limit = {
-					is_playable = yes
-
-					capital_scope = {
-						religion = tengri_pagan
-					}
-				}
-
-				capital_scope = {
-					show_scope_change = no
-
-					religion = orthodox
-				}
-			}
-		}
-	}
-
-	# Other rulers are informed
-	option = {
-		name = {
-			text = EVTOPTB60010
-			trigger = { religion_group = muslim }
-		}
-		name = {
-			text = EXCELLENT
-			trigger = { religion_group = christian }
-		}
-		name = {
-			text = EVTOPTD60010
-			trigger = {
-				NOR = {
-					religion_group = christian
-					religion_group = muslim
-				}
-			}
-		}
-
-		trigger = {
-			NOT = { has_landed_title = e_golden_horde }
-		}
-	}
-}
-
-# Golden Horde converts to Sunni
-character_event = {
-	id = 60022
-	title = EVTNAME60020
-	desc = EVTDESC60012
-	picture = GFX_evt_mongols
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes # on_five_year_pulse, random_events, mongol_conversion
-	major = yes
-
-	only_independent = yes
-	min_age = 16
-	only_capable = yes
-	prisoner = no
-
-	trigger = {
-		primary_title = {
-			title = e_golden_horde
-		}
-
-		religion = tengri_pagan
-
-		NOR = {
-			trait = zealous
-			has_global_flag = golden_horde_converts
-		}
-
-		had_global_flag = {
-			flag = mongol_empire_arrival
-			years >= 40
-		}
-
-		had_global_flag = {
-			flag = mongol_empire_arrival
-			years < 80
-		}
-
-		any_realm_province = {
-			religion = sunni
-			held_under_PREV = yes
-		}
-	}
-
-	major_trigger = {
-		ai = no
-	}
-
-	weight_multiplier = {
-		factor = 1
-
-		mult_modifier = {
-			factor = 1.33
-
-			capital_scope = {
-				religion = sunni
-			}
-		}
-	}
-
-	immediate = {
-		set_global_flag = golden_horde_converts
-
-		sunni = {
-			save_event_target_as = target_religion
-		}
-	}
-
-	option = { # Sunni
-		name = EVTOPTA60010
-
-		trigger = { has_landed_title = e_golden_horde }
-
-		convert_religion_failsafe_effect = yes
-
-		capital_scope = {
-			show_scope_change = no
-
-			religion = sunni
-		}
-
-		any_realm_character = {
-			show_scope_change = no
-
-			limit = { religion = tengri_pagan }
-
-			sunni = {
-				save_event_target_as = target_religion
-			}
-
-			convert_religion_failsafe_effect = yes
-
-			if = {
-				limit = {
-					is_playable = yes
-
-					capital_scope = {
-						religion = tengri_pagan
-					}
-				}
-
-				capital_scope = {
-					show_scope_change = no
-
-					religion = sunni
-				}
-			}
-		}
-	}
-
-	# Other rulers are informed
-	option = {
-		name = {
-			text = EXCELLENT
-			trigger = { religion_group = muslim }
-		}
-		name = {
-			text = EVTOPTC60010
-			trigger = { religion_group = christian }
-		}
-		name = {
-			text = EVTOPTD60010
-			trigger = {
-				NOR = {
-					religion_group = christian
-					religion_group = muslim
-				}
-			}
-		}
-
-		trigger = {
-			NOT = { has_landed_title = e_golden_horde }
-		}
-	}
-}
-
-# Golden Horde converts to Shiite
-character_event = {
-	id = 60023
-	title = EVTNAME60020
-	desc = EVTDESC60013
-	picture = GFX_evt_mongols
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes # on_five_year_pulse, random_events, mongol_conversion
-	major = yes
-
-	only_independent = yes
-	min_age = 16
-	only_capable = yes
-	prisoner = no
-
-	trigger = {
-		primary_title = {
-			title = e_golden_horde
-		}
-
-		religion = tengri_pagan
-
-		NOR = {
-			trait = zealous
-			has_global_flag = golden_horde_converts
-		}
-
-		had_global_flag = {
-			flag = mongol_empire_arrival
-			years >= 40
-		}
-
-		had_global_flag = {
-			flag = mongol_empire_arrival
-			years < 80
-		}
-
-		any_realm_province = {
-			religion = shiite
-			held_under_PREV = yes
-		}
-	}
-
-	major_trigger = {
-		ai = no
-	}
-
-	weight_multiplier = {
-		factor = 1
-
-		mult_modifier = {
-			factor = 1.33
-
-			capital_scope = {
-				religion = shiite
-			}
-		}
-	}
-
-	immediate = {
-		set_global_flag = golden_horde_converts
-
-		shiite = {
-			save_event_target_as = target_religion
-		}
-	}
-
-	option = { # Shiite
-		name = EVTOPTA60010
-
-		trigger = { has_landed_title = e_golden_horde }
-
-		convert_religion_failsafe_effect = yes
-
-		capital_scope = {
-			show_scope_change = no
-
-			religion = shiite
-		}
-
-		any_realm_character = {
-			show_scope_change = no
-
-			limit = { religion = tengri_pagan }
-
-			shiite = {
-				save_event_target_as = target_religion
-			}
-
-			convert_religion_failsafe_effect = yes
-
-			if = {
-				limit = {
-					is_playable = yes
-
-					capital_scope = {
-						religion = tengri_pagan
-					}
-				}
-
-				capital_scope = {
-					show_scope_change = no
-
-					religion = shiite
-				}
-			}
-		}
-	}
-
-	# Other rulers are informed
-	option = {
-		name = {
-			text = EXCELLENT
-			trigger = { religion_group = muslim }
-		}
-		name = {
-			text = EVTOPTC60010
-			trigger = { religion_group = christian }
-		}
-		name = {
-			text = EVTOPTD60010
-			trigger = {
-				NOR = {
-					religion_group = christian
-					religion_group = muslim
-				}
-			}
-		}
-
-		trigger = {
-			NOT = { has_landed_title = e_golden_horde }
-		}
-	}
-}
-
-# Golden Horde converts to Nestorian
-character_event = {
-	id = 60024
-	title = EVTNAME60020
-	desc = EVTDESC60014
-	picture = GFX_evt_mongols
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes # on_five_year_pulse, random_events, mongol_conversion
-	major = yes
-
-	only_independent = yes
-	min_age = 16
-	only_capable = yes
-	prisoner = no
-
-	trigger = {
-		primary_title = {
-			title = e_golden_horde
-		}
-
-		religion = tengri_pagan
-		num_of_count_titles_in_realm >= 1
-
-		NOR = {
-			trait = zealous
-			has_global_flag = golden_horde_converts
-		}
-
-		had_global_flag = {
-			flag = mongol_empire_arrival
-			years >= 40
-		}
-
-		had_global_flag = {
-			flag = mongol_empire_arrival
-			years < 80
-		}
-	}
-
-	major_trigger = {
-		ai = no
-	}
-
-	weight_multiplier = {
-		factor = 1
-
-		mult_modifier = {
-			factor = 1.33
-
-			capital_scope = {
-				religion = nestorian
-			}
-		}
-	}
-
-	immediate = {
-		set_global_flag = golden_horde_converts
-
-		nestorian = {
-			save_event_target_as = target_religion
-		}
-	}
-
-	option = { # Nestorian
-		name = EVTOPTA60010
-
-		trigger = { has_landed_title = e_golden_horde }
-
-		convert_religion_failsafe_effect = yes
-
-		capital_scope = {
-			show_scope_change = no
-
-			religion = nestorian
-		}
-
-		any_realm_character = {
-			show_scope_change = no
-
-			limit = { religion = tengri_pagan }
-
-			nestorian = {
-				save_event_target_as = target_religion
-			}
-
-			convert_religion_failsafe_effect = yes
-
-			if = {
-				limit = {
-					is_playable = yes
-
-					capital_scope = {
-						religion = tengri_pagan
-					}
-				}
-
-				capital_scope = {
-					show_scope_change = no
-
-					religion = nestorian
-				}
-			}
-		}
-	}
-
-	# Other rulers are informed
-	option = {
-		name = {
-			text = EVTOPTB60010
-			trigger = { religion_group = muslim }
-		}
-		name = {
-			text = EXCELLENT
-			trigger = { religion_group = christian }
-		}
-		name = {
-			text = EVTOPTD60010
-			trigger = {
-				NOR = {
-					religion_group = christian
-					religion_group = muslim
-				}
-			}
-		}
-
-		trigger = {
-			NOT = { has_landed_title = e_golden_horde }
-		}
-	}
-}
-
-### Mongols sack European cities ###
-
-# Mongols sack Kiev
-narrative_event = {
-	id = 60100
-	title = EVTNAME_TOG_001
-	border = GFX_event_narrative_frame_war
-
-	desc = {
-		text = EVTDESC60100
-		picture = GFX_evt_mongols
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-	desc = {
-		text = EVTDESC_TOG_001
-		picture = GFX_evt_mongols_pillage_oldgods
-		trigger = { is_mongol_empire_leader_trigger = yes }
-	}
-
-	major = yes
-	is_triggered_only = yes # on_siege_over_winner
-
-	culture = mongol
-
-	trigger = {
-		FROM = {
-			title = b_kiev
-
-			holder_scope = {
-				is_mongol_empire_leader_trigger = no
-			}
-		}
-
-		is_mongol_empire_leader_trigger = yes
-		NOT = { has_global_flag = mongols_sack_kiev }
-	}
-
-	major_trigger = {
-		ai = no
-		is_mongol_empire_leader_trigger = no
-	}
-
-	immediate = {
-		set_global_flag = mongols_sack_kiev
-	}
-
-	option = {
-		name = {
-			text = EVTOPTA60100
-			trigger = {
-				NOT = { religion_group = muslim }
-			}
-		}
-		name = {
-			text = EVTOPTB60100
-			trigger = { religion_group = muslim }
-		}
-
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-
-	option = {
-		name = EVTOPTA_TOG_001
-
-		trigger = { is_mongol_empire_leader_trigger = yes }
-
-		prestige = 100
-	}
-}
-
-# Mongols sack Novgorod
-narrative_event = {
-	id = 60101
-	title = EVTNAME_TOG_002
-	border = GFX_event_narrative_frame_war
-
-	desc = {
-		text = EVTDESC60101
-		picture = GFX_evt_mongols
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-	desc = {
-		text = EVTDESC_TOG_002
-		picture = GFX_evt_mongols_pillage_oldgods
-		trigger = { is_mongol_empire_leader_trigger = yes }
-	}
-
-	major = yes
-	is_triggered_only = yes # on_siege_over_winner
-
-	culture = mongol
-
-	trigger = {
-		FROM = {
-			title = b_novgorod
-
-			holder_scope = {
-				is_mongol_empire_leader_trigger = no
-			}
-		}
-
-		is_mongol_empire_leader_trigger = yes
-		NOT = { has_global_flag = mongols_sack_novgorod }
-	}
-
-	major_trigger = {
-		ai = no
-		is_mongol_empire_leader_trigger = no
-	}
-
-	immediate = {
-		set_global_flag = mongols_sack_novgorod
-	}
-
-	option = {
-		name = {
-			text = EVTOPTA60101 # Perhaps their bloodlust has been sated now
-			trigger = {
-				NOT = { culture = mongol }
-			}
-		}
-		name = {
-			text = EVTOPTB60101 # May the snows of the frozen north claim them
-			trigger = { culture = mongol }
-		}
-	}
-
-	option = {
-		name = EVTOPTA_TOG_001
-
-		trigger = { is_mongol_empire_leader_trigger = yes }
-
-		prestige = 100
-	}
-}
-
-# Mongols sack Krakow
-narrative_event = {
-	id = 60102
-	title = EVTNAME_TOG_003
-	border = GFX_event_narrative_frame_war
-
-	desc = {
-		text = EVTDESC60102
-		picture = GFX_evt_mongols
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-	desc = {
-		text = EVTDESC_TOG_003
-		picture = GFX_evt_mongols_pillage_oldgods
-		trigger = { is_mongol_empire_leader_trigger = yes }
-	}
-
-	major = yes
-	is_triggered_only = yes # on_siege_over_winner
-
-	culture = mongol
-
-	trigger = {
-		FROM = {
-			title = b_krakow
-
-			holder_scope = {
-				is_mongol_empire_leader_trigger = no
-			}
-		}
-
-		is_mongol_empire_leader_trigger = yes
-		NOT = { has_global_flag = mongols_sack_krakow }
-	}
-
-	major_trigger = {
-		ai = no
-		is_mongol_empire_leader_trigger = no
-	}
-
-	immediate = {
-		set_global_flag = mongols_sack_krakow
-	}
-
-	option = {
-		name = {
-			text = EVTOPTA60102
-			trigger = {
-				NOT = { religion_group = muslim }
-			}
-		}
-		name = {
-			text = EVTOPTB60102
-			trigger = { religion_group = muslim }
-		}
-
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-
-	option = {
-		name = EVTOPTA_TOG_001
-
-		trigger = { is_mongol_empire_leader_trigger = yes }
-
-		prestige = 100
-	}
-}
-
-# Mongols sack Aachen
-narrative_event = {
-	id = 60103
-	title = EVTNAME_TOG_004
-	border = GFX_event_narrative_frame_war
-
-	desc = {
-		text = EVTDESC60103
-		picture = GFX_evt_mongols
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-	desc = {
-		text = EVTDESC_TOG_004
-		picture = GFX_evt_mongols_pillage_oldgods
-		trigger = { is_mongol_empire_leader_trigger = yes }
-	}
-
-	major = yes
-	is_triggered_only = yes # on_siege_over_winner
-
-	culture = mongol
-
-	trigger = {
-		FROM = {
-			title = b_aachen
-
-			holder_scope = {
-				is_mongol_empire_leader_trigger = no
-			}
-		}
-
-		is_mongol_empire_leader_trigger = yes
-		NOT = { has_global_flag = mongols_sack_aachen }
-	}
-
-	major_trigger = {
-		ai = no
-		is_mongol_empire_leader_trigger = no
-	}
-
-	immediate = {
-		set_global_flag = mongols_sack_aachen
-	}
-
-	option = {
-		name = {
-			text = EVTOPTA60103
-			trigger = {
-				NOT = { religion_group = muslim }
-			}
-		}
-		name = {
-			text = EVTOPTB60103
-			trigger = { religion_group = muslim }
-		}
-
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-
-	option = {
-		name = EVTOPTA_TOG_001
-
-		trigger = { is_mongol_empire_leader_trigger = yes }
-
-		prestige = 100
-	}
-}
-
-# Mongols sack Paris
-narrative_event = {
-	id = 60104
-	title = EVTNAME_TOG_005
-	border = GFX_event_narrative_frame_war
-
-	desc = {
-		text = EVTDESC60104
-		picture = GFX_evt_mongols
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-	desc = {
-		text = EVTDESC_TOG_005
-		picture = GFX_evt_mongols_pillage_oldgods
-		trigger = { is_mongol_empire_leader_trigger = yes }
-	}
-
-	major = yes
-	is_triggered_only = yes # on_siege_over_winner
-
-	culture = mongol
-
-	trigger = {
-		FROM = {
-			title = b_paris
-
-			holder_scope = {
-				is_mongol_empire_leader_trigger = no
-			}
-		}
-
-		is_mongol_empire_leader_trigger = yes
-		NOT = { has_global_flag = mongols_sack_paris }
-	}
-
-	major_trigger = {
-		ai = no
-		is_mongol_empire_leader_trigger = no
-	}
-
-	immediate = {
-		set_global_flag = mongols_sack_paris
-	}
-
-	option = {
-		name = {
-			text = EVTOPTA60104
-			trigger = {
-				NOT = { religion_group = muslim }
-			}
-		}
-		name = {
-			text = EVTOPTB60104
-			trigger = { religion_group = muslim }
-		}
-
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-
-	option = {
-		name = EVTOPTA_TOG_001
-
-		trigger = { is_mongol_empire_leader_trigger = yes }
-
-		prestige = 100
-	}
-}
-
-# Mongols sack London
-narrative_event = {
-	id = 60105
-	title = EVTNAME_TOG_006
-	border = GFX_event_narrative_frame_war
-
-	desc = {
-		text = EVTDESC60105
-		picture = GFX_evt_mongols
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-	desc = {
-		text = EVTDESC_TOG_006
-		picture = GFX_evt_mongols_pillage_oldgods
-		trigger = { is_mongol_empire_leader_trigger = yes }
-	}
-
-	major = yes
-	is_triggered_only = yes # on_siege_over_winner
-
-	culture = mongol
-
-	trigger = {
-		FROM = {
-			title = b_london
-
-			holder_scope = {
-				is_mongol_empire_leader_trigger = no
-			}
-		}
-
-		is_mongol_empire_leader_trigger = yes
-		NOT = { has_global_flag = mongols_sack_london }
-	}
-
-	major_trigger = {
-		ai = no
-		is_mongol_empire_leader_trigger = no
-	}
-
-	immediate = {
-		set_global_flag = mongols_sack_london
-	}
-
-	option = {
-		name = {
-			text = EVTOPTA60105
-			trigger = {
-				NOT = { religion_group = muslim }
-			}
-		}
-		name = {
-			text = EVTOPTB60105
-			trigger = { religion_group = muslim }
-		}
-
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-
-	option = {
-		name = EVTOPTA_TOG_001
-
-		trigger = { is_mongol_empire_leader_trigger = yes }
-
-		prestige = 100
-	}
-}
-
-# Mongols sack Rome
-narrative_event = {
-	id = 60106
-	title = EVTNAME_TOG_007
-	border = GFX_event_narrative_frame_war
-
-	desc = {
-		text = EVTDESC60106
-		picture = GFX_evt_rome_falls
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-	desc = {
-		text = EVTDESC_TOG_007
-		picture = GFX_evt_mongols_pillage_oldgods
-		trigger = { is_mongol_empire_leader_trigger = yes }
-	}
-
-	major = yes
-	is_triggered_only = yes # on_siege_over_winner
-
-	culture = mongol
-
-	trigger = {
-		FROM = {
-			title = b_roma
-
-			holder_scope = {
-				is_mongol_empire_leader_trigger = no
-			}
-		}
-
-		is_mongol_empire_leader_trigger = yes
-		NOT = { has_global_flag = mongols_sack_rome }
-	}
-
-	major_trigger = {
-		ai = no
-		is_mongol_empire_leader_trigger = no
-	}
-
-	immediate = {
-		set_global_flag = mongols_sack_rome
-	}
-
-	option = {
-		name = {
-			text = EVTOPTA60106
-			trigger = {
-				NOT = { religion_group = muslim }
-			}
-		}
-		name = {
-			text = EVTOPTB60106
-			trigger = { religion_group = muslim }
-		}
-
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-
-	option = {
-		name = EVTOPTA_TOG_001
-
-		trigger = { is_mongol_empire_leader_trigger = yes }
-
-		prestige = 100
-	}
-}
-
-# Mongols sack Venice
-narrative_event = {
-	id = 60107
-	title = EVTNAME_TOG_008
-	border = GFX_event_narrative_frame_war
-
-	desc = {
-		text = EVTDESC60107
-		picture = GFX_evt_mongols
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-	desc = {
-		text = EVTDESC_TOG_008
-		picture = GFX_evt_mongols_pillage_oldgods
-		trigger = { is_mongol_empire_leader_trigger = yes }
-	}
-
-	major = yes
-	is_triggered_only = yes # on_siege_over_winner
-
-	culture = mongol
-
-	trigger = {
-		FROM = {
-			title = b_venezia
-
-			holder_scope = {
-				is_mongol_empire_leader_trigger = no
-			}
-		}
-
-		is_mongol_empire_leader_trigger = yes
-		NOT = { has_global_flag = mongols_sack_venice }
-	}
-
-	major_trigger = {
-		ai = no
-		is_mongol_empire_leader_trigger = no
-	}
-
-	immediate = {
-		set_global_flag = mongols_sack_venice
-	}
-
-	option = {
-		name = {
-			text = EVTOPTA60107
-			trigger = {
-				NOT = { religion_group = muslim }
-			}
-		}
-		name = {
-			text = EVTOPTB60107
-			trigger = { religion_group = muslim }
-		}
-
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-
-	option = {
-		name = EVTOPTA_TOG_001
-
-		trigger = { is_mongol_empire_leader_trigger = yes }
-
-		prestige = 100
-	}
-}
-
-# Mongols sack Constantinople
-narrative_event = {
-	id = 60108
-	title = EVTNAME_TOG_009
-	border = GFX_event_narrative_frame_war
-
-	desc = {
-		text = EVTDESC60108
-		picture = GFX_evt_mongols
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-	desc = {
-		text = EVTDESC_TOG_009
-		picture = GFX_evt_mongols_pillage_oldgods
-		trigger = { is_mongol_empire_leader_trigger = yes }
-	}
-
-	major = yes
-	is_triggered_only = yes # on_siege_over_winner
-
-	culture = mongol
-
-	trigger = {
-		FROM = {
-			title = b_constantinople
-
-			holder_scope = {
-				is_mongol_empire_leader_trigger = no
-			}
-		}
-
-		is_mongol_empire_leader_trigger = yes
-		NOT = { has_global_flag = mongols_sack_constantinople }
-	}
-
-	major_trigger = {
-		ai = no
-		is_mongol_empire_leader_trigger = no
-	}
-
-	immediate = {
-		set_global_flag = mongols_sack_constantinople
-	}
-
-	option = {
-		name = {
-			text = EVTOPTA60108
-			trigger = {
-				NOT = { religion_group = muslim }
-			}
-		}
-		name = {
-			text = EVTOPTB60108
-			trigger = { religion_group = muslim }
-		}
-
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-
-	option = {
-		name = EVTOPTA_TOG_001
-
-		trigger = { is_mongol_empire_leader_trigger = yes }
-
-		prestige = 100
-	}
-}
-
-# Mongols sack Lisbon
-narrative_event = {
-	id = 60109
-	title = EVTNAME_TOG_010
-	border = GFX_event_narrative_frame_war
-
-	desc = {
-		text = EVTDESC60109
-		picture = GFX_evt_mongols
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-	desc = {
-		text = EVTDESC_TOG_010
-		picture = GFX_evt_mongols_pillage_oldgods
-		trigger = { is_mongol_empire_leader_trigger = yes }
-	}
-
-	major = yes
-	is_triggered_only = yes # on_siege_over_winner
-
-	culture = mongol
-
-	trigger = {
-		FROM = {
-			title = b_lisboa
-
-			holder_scope = {
-				is_mongol_empire_leader_trigger = no
-			}
-		}
-
-		is_mongol_empire_leader_trigger = yes
-		NOT = { has_global_flag = mongols_sack_lisbon }
-	}
-
-	major_trigger = {
-		ai = no
-		is_mongol_empire_leader_trigger = no
-	}
-
-	immediate = {
-		set_global_flag = mongols_sack_lisbon
-	}
-
-	option = {
-		name = {
-			text = EVTOPTA60109
-			trigger = {
-				NOT = { religion_group = muslim }
-			}
-		}
-		name = {
-			text = EVTOPTB60109
-			trigger = { religion_group = muslim }
-		}
-
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-
-	option = {
-		name = EVTOPTA_TOG_001
-
-		trigger = { is_mongol_empire_leader_trigger = yes }
-
-		prestige = 100
-	}
-}
-
-# Mongols sack Smolensk
-narrative_event = {
-	id = 60110
-	title = EVTNAME_TOG_011
-	border = GFX_event_narrative_frame_war
-
-	desc = {
-		text = EVTDESC60110
-		picture = GFX_evt_mongols
-		trigger = { NOT = { is_mongol_empire_leader_trigger = yes } }
-	}
-	desc = {
-		text = EVTDESC_TOG_011
-		picture = GFX_evt_mongols_pillage_oldgods
-		trigger = { is_mongol_empire_leader_trigger = yes }
-	}
-
-	major = yes
-	is_triggered_only = yes # on_siege_over_winner
-
-	culture = mongol
-
-	trigger = {
-		FROM = {
-			title = b_smolensk
-
-			holder_scope = {
-				is_mongol_empire_leader_trigger = no
-			}
-		}
-
-		is_mongol_empire_leader_trigger = yes
-		NOT = { has_global_flag = mongols_sack_smolensk }
-	}
-
-	major_trigger = {
-		ai = no
-		is_mongol_empire_leader_trigger = no
-	}
-
-	immediate = {
-		set_global_flag = mongols_sack_smolensk
-	}
-
-	option = {
-		name = {
-			text = EVTOPTA60110
-			trigger = {
-				NOT = { religion_group = muslim }
-			}
-		}
-		name = {
-			text = EVTOPTB60110
-			trigger = { religion_group = muslim }
-		}
-
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-
-	option = {
-		name = EVTOPTA_TOG_001
-
-		trigger = { is_mongol_empire_leader_trigger = yes }
-
-		prestige = 100
-	}
-}
-
-# Mongols sack Prague
-narrative_event = {
-	id = 60111
-	title = EVTNAME_TOG_012
-	border = GFX_event_narrative_frame_war
-
-	desc = {
-		text = EVTDESC60111
-		picture = GFX_evt_mongols
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-	desc = {
-		text = EVTDESC_TOG_012
-		picture = GFX_evt_mongols_pillage_oldgods
-		trigger = { is_mongol_empire_leader_trigger = yes }
-	}
-
-	major = yes
-	is_triggered_only = yes # on_siege_over_winner
-
-	culture = mongol
-
-	trigger = {
-		FROM = {
-			title = b_praha
-
-			holder_scope = {
-				is_mongol_empire_leader_trigger = no
-			}
-		}
-
-		is_mongol_empire_leader_trigger = yes
-		NOT = { has_global_flag = mongols_sack_prague }
-	}
-
-	major_trigger = {
-		ai = no
-		is_mongol_empire_leader_trigger = no
-	}
-
-	immediate = {
-		set_global_flag = mongols_sack_prague
-	}
-
-	option = {
-		name = {
-			text = EVTOPTA60111
-			trigger = {
-				NOT = { religion_group = muslim }
-			}
-		}
-		name = {
-			text = EVTOPTB60111
-			trigger = { religion_group = muslim }
-		}
-
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-
-	option = {
-		name = EVTOPTA_TOG_001
-
-		trigger = { is_mongol_empire_leader_trigger = yes }
-
-		prestige = 100
-	}
-}
-
-# Mongols sack Vienna
-narrative_event = {
-	id = 60112
-	title = EVTNAME_TOG_013
-	border = GFX_event_narrative_frame_war
-
-	desc = {
-		text = EVTDESC60112
-		picture = GFX_evt_mongols
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-	desc = {
-		text = EVTDESC_TOG_013
-		picture = GFX_evt_mongols_pillage_oldgods
-		trigger = { is_mongol_empire_leader_trigger = yes }
-	}
-
-	major = yes
-	is_triggered_only = yes # on_siege_over_winner
-
-	culture = mongol
-
-	trigger = {
-		FROM = {
-			title = b_wien
-
-			holder_scope = {
-				is_mongol_empire_leader_trigger = no
-			}
-		}
-
-		is_mongol_empire_leader_trigger = yes
-		NOT = { has_global_flag = mongols_sack_vienna }
-	}
-
-	major_trigger = {
-		ai = no
-		is_mongol_empire_leader_trigger = no
-	}
-
-	immediate = {
-		set_global_flag = mongols_sack_vienna
-	}
-
-	option = {
-		name = {
-			text = EVTOPTA60112
-			trigger = {
-				NOT = { religion_group = muslim }
-			}
-		}
-		name = {
-			text = EVTOPTB60112
-			trigger = { religion_group = muslim }
-		}
-
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-
-	option = {
-		name = EVTOPTA_TOG_001
-
-		trigger = { is_mongol_empire_leader_trigger = yes }
-
-		prestige = 100
-	}
-}
-
-# Mongols sack Esztergom
-narrative_event = {
-	id = 60113
-	title = EVTNAME_TOG_014
-	border = GFX_event_narrative_frame_war
-
-	desc = {
-		text = EVTDESC60113
-		picture = GFX_evt_mongols
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-	desc = {
-		text = EVTDESC_TOG_014
-		picture = GFX_evt_mongols_pillage_oldgods
-		trigger = { is_mongol_empire_leader_trigger = yes }
-	}
-
-	major = yes
-	is_triggered_only = yes # on_siege_over_winner
-
-	culture = mongol
-
-	trigger = {
-		FROM = {
-			title = b_esztergom
-
-			holder_scope = {
-				is_mongol_empire_leader_trigger = no
-			}
-		}
-
-		is_mongol_empire_leader_trigger = yes
-		NOT = { has_global_flag = mongols_sack_esztergom }
-	}
-
-	major_trigger = {
-		ai = no
-		is_mongol_empire_leader_trigger = no
-	}
-
-	immediate = {
-		set_global_flag = mongols_sack_esztergom
-	}
-
-	option = {
-		name = {
-			text = EVTOPTA60113
-			trigger = {
-				NOT = { religion_group = muslim }
-			}
-		}
-		name = {
-			text = INTERESTING
-			trigger = { religion_group = muslim }
-		}
-
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-
-	option = {
-		name = EVTOPTA_TOG_001
-
-		trigger = { is_mongol_empire_leader_trigger = yes }
-
-		prestige = 100
-	}
-}
-
-# Mongols sack Athens
-narrative_event = {
-	id = 60114
-	title = EVTNAME_TOG_015
-	border = GFX_event_narrative_frame_war
-
-	desc = {
-		text = EVTDESC60114
-		picture = GFX_evt_mongols
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-	desc = {
-		text = EVTDESC_TOG_015
-		picture = GFX_evt_mongols_pillage_oldgods
-		trigger = { is_mongol_empire_leader_trigger = yes }
-	}
-
-	major = yes
-	is_triggered_only = yes # on_siege_over_winner
-
-	culture = mongol
-
-	trigger = {
-		FROM = {
-			title = b_athens
-
-			holder_scope = {
-				is_mongol_empire_leader_trigger = no
-			}
-		}
-
-		is_mongol_empire_leader_trigger = yes
-		NOT = { has_global_flag = mongols_sack_athens }
-	}
-
-	major_trigger = {
-		ai = no
-		is_mongol_empire_leader_trigger = no
-	}
-
-	immediate = {
-		set_global_flag = mongols_sack_athens
-	}
-
-	option = {
-		name = {
-			text = EVTOPTA60114
-			trigger = {
-				NOT = { religion_group = muslim }
-			}
-		}
-		name = {
-			text = UNFORTUNATE
-			trigger = { religion_group = muslim }
-		}
-
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-
-	option = {
-		name = EVTOPTA_TOG_001
-
-		trigger = { is_mongol_empire_leader_trigger = yes }
-
-		prestige = 100
-	}
-}
-
-# Mongols sack Belgrade
-narrative_event = {
-	id = 60115
-	title = EVTNAME_TOG_016
-	border = GFX_event_narrative_frame_war
-
-	desc = {
-		text = EVTDESC60115
-		picture = GFX_evt_mongols
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-	desc = {
-		text = EVTDESC_TOG_016
-		picture = GFX_evt_mongols_pillage_oldgods
-		trigger = { is_mongol_empire_leader_trigger = yes }
-	}
-
-	major = yes
-	is_triggered_only = yes # on_siege_over_winner
-
-	culture = mongol
-
-	trigger = {
-		FROM = {
-			title = b_belgrade
-
-			holder_scope = {
-				is_mongol_empire_leader_trigger = no
-			}
-		}
-
-		is_mongol_empire_leader_trigger = yes
-		NOT = { has_global_flag = mongols_sack_belgrade }
-	}
-
-	major_trigger = {
-		ai = no
-		is_mongol_empire_leader_trigger = no
-	}
-
-	immediate = {
-		set_global_flag = mongols_sack_belgrade
-	}
-
-	option = {
-		name = {
-			text = EVTOPTA60115
-			trigger = {
-				NOT = { religion_group = muslim }
-			}
-		}
-		name = {
-			text = EVTOPTB60115
-			trigger = { religion_group = muslim }
-		}
-
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-
-	option = {
-		name = EVTOPTA_TOG_001
-
-		trigger = { is_mongol_empire_leader_trigger = yes }
-
-		prestige = 100
-	}
-}
-
-### Mongols sack Middle Eastern cities ###
-
-# Mongols sack Baghdad
-narrative_event = {
-	id = 60116
-	title = EVTNAME_TOG_017
-	border = GFX_event_narrative_frame_war
-
-	desc = {
-		text = EVTDESC60116
-		picture = GFX_evt_mongols
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-	desc = {
-		text = EVTDESC_TOG_017
-		picture = GFX_evt_mongols_pillage_oldgods
-		trigger = { is_mongol_empire_leader_trigger = yes }
-	}
-
-	major = yes
-	is_triggered_only = yes # on_siege_over_winner
-
-	culture = mongol
-
-	trigger = {
-		FROM = {
-			title = b_bagdad
-
-			holder_scope = {
-				is_mongol_empire_leader_trigger = no
-			}
-		}
-
-		is_mongol_empire_leader_trigger = yes
-		NOT = { has_global_flag = mongols_sack_baghdad }
-	}
-
-	major_trigger = {
-		ai = no
-		is_mongol_empire_leader_trigger = no
-	}
-
-	immediate = {
-		set_global_flag = mongols_sack_baghdad
-	}
-
-	option = {
-		name = {
-			text = EVTOPTA60116
-			trigger = {
-				NOT = { religion_group = muslim }
-			}
-		}
-		name = {
-			text = EVTOPTB60116
-			trigger = { religion_group = muslim }
-		}
-
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-
-	option = {
-		name = EVTOPTA_TOG_001
-
-		trigger = { is_mongol_empire_leader_trigger = yes }
-
-		prestige = 100
-	}
-}
-
-# Mongols sack Damascus
-narrative_event = {
-	id = 60117
-	title = EVTNAME_TOG_018
-	border = GFX_event_narrative_frame_war
-
-	desc = {
-		text = EVTDESC60117
-		picture = GFX_evt_mongols
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-	desc = {
-		text = EVTDESC_TOG_018
-		picture = GFX_evt_mongols_pillage_oldgods
-		trigger = { is_mongol_empire_leader_trigger = yes }
-	}
-
-	major = yes
-	is_triggered_only = yes # on_siege_over_winner
-
-	culture = mongol
-
-	trigger = {
-		FROM = {
-			title = b_damascus
-
-			holder_scope = {
-				is_mongol_empire_leader_trigger = no
-			}
-		}
-
-		is_mongol_empire_leader_trigger = yes
-		NOT = { has_global_flag = mongols_sack_damascus }
-	}
-
-	major_trigger = {
-		ai = no
-		is_mongol_empire_leader_trigger = no
-	}
-
-	immediate = {
-		set_global_flag = mongols_sack_damascus
-	}
-
-	option = {
-		name = {
-			text = EVTOPTA60117
-			trigger = {
-				NOT = { religion_group = muslim }
-			}
-		}
-		name = {
-			text = EVTOPTB60117
-			trigger = { religion_group = muslim }
-		}
-
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-
-	option = {
-		name = EVTOPTA_TOG_001
-
-		trigger = { is_mongol_empire_leader_trigger = yes }
-
-		prestige = 100
-	}
-}
-
-# Mongols sack Jerusalem
-narrative_event = {
-	id = 60118
-	title = EVTNAME_TOG_019
-	border = GFX_event_narrative_frame_war
-
-	desc = {
-		text = EVTDESC60118
-		picture = GFX_evt_mongols
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-	desc = {
-		text = EVTDESC_TOG_019
-		picture = GFX_evt_mongols_pillage_oldgods
-		trigger = { is_mongol_empire_leader_trigger = yes }
-	}
-
-	major = yes
-	is_triggered_only = yes # on_siege_over_winner
-
-	culture = mongol
-
-	trigger = {
-		FROM = {
-			title = b_jerusalem
-
-			holder_scope = {
-				is_mongol_empire_leader_trigger = no
-			}
-		}
-
-		is_mongol_empire_leader_trigger = yes
-
-		NOR = {
-			has_global_flag = mongols_sack_jerusalem
-			religion_group = muslim
-			religion_group = christian
-		}
-	}
-
-	major_trigger = {
-		ai = no
-		is_mongol_empire_leader_trigger = no
-	}
-
-	immediate = {
-		set_global_flag = mongols_sack_jerusalem
-	}
-
-	option = {
-		name = {
-			text = EVTOPTA60118
-			trigger = {
-				NOT = { religion_group = muslim }
-			}
-		}
-		name = {
-			text = EVTOPTB60118
-			trigger = { religion_group = muslim }
-		}
-
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-
-	option = {
-		name = EVTOPTA_TOG_001
-
-		trigger = { is_mongol_empire_leader_trigger = yes }
-
-		prestige = 100
-	}
-}
-
-# Mongols sack Alexandria
-narrative_event = {
-	id = 60119
-	title = EVTNAME_TOG_020
-	border = GFX_event_narrative_frame_war
-
-	desc = {
-		text = EVTDESC60119
-		picture = GFX_evt_mongols
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-	desc = {
-		text = EVTDESC_TOG_020
-		picture = GFX_evt_mongols_pillage_oldgods
-		trigger = { is_mongol_empire_leader_trigger = yes }
-	}
-
-	major = yes
-	is_triggered_only = yes # on_siege_over_winner
-
-	culture = mongol
-
-	trigger = {
-		FROM = {
-			title = b_alexandria
-
-			holder_scope = {
-				is_mongol_empire_leader_trigger = no
-			}
-		}
-
-		is_mongol_empire_leader_trigger = yes
-		NOT = { has_global_flag = mongols_sack_alexandria }
-	}
-
-	major_trigger = {
-		ai = no
-		is_mongol_empire_leader_trigger = no
-	}
-
-	immediate = {
-		set_global_flag = mongols_sack_alexandria
-	}
-
-	option = {
-		name = {
-			text = EVTOPTA60119
-			trigger = {
-				NOT = { religion_group = muslim }
-			}
-		}
-		name = {
-			text = EVTOPTB60119
-			trigger = { religion_group = muslim }
-		}
-
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-
-	option = {
-		name = EVTOPTA_TOG_001
-
-		trigger = { is_mongol_empire_leader_trigger = yes }
-
-		prestige = 100
-	}
-}
-
-# Mongols sack Cairo
-narrative_event = {
-	id = 60120
-	title = EVTNAME_TOG_021
-	border = GFX_event_narrative_frame_war
-
-	desc = {
-		text = EVTDESC60120
-		picture = GFX_evt_mongols
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-	desc = {
-		text = EVTDESC_TOG_021
-		picture = GFX_evt_mongols_pillage_oldgods
-		trigger = { is_mongol_empire_leader_trigger = yes }
-	}
-
-	major = yes
-	is_triggered_only = yes # on_siege_over_winner
-
-	culture = mongol
-
-	trigger = {
-		FROM = {
-			title = b_cairo
-
-			holder_scope = {
-				is_mongol_empire_leader_trigger = no
-			}
-		}
-
-		is_mongol_empire_leader_trigger = yes
-		NOT = { has_global_flag = mongols_sack_cairo }
-	}
-
-	major_trigger = {
-		is_mongol_empire_leader_trigger = no
-	}
-
-	immediate = {
-		set_global_flag = mongols_sack_cairo
-	}
-
-	option = {
-		name = {
-			text = EVTOPTA60120
-			trigger = {
-				NOT = { religion_group = muslim }
-			}
-		}
-		name = {
-			text = EVTOPTB60120
-			trigger = { religion_group = muslim }
-		}
-
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-
-	option = {
-		name = EVTOPTA_TOG_001
-
-		trigger = { is_mongol_empire_leader_trigger = yes }
-
-		prestige = 100
-	}
-}
-
-# Mongols sack Mecca
-narrative_event = {
-	id = 60121
-	title = EVTNAME_TOG_022
-	border = GFX_event_narrative_frame_war
-
-	desc = {
-		text = EVTDESC60121
-		picture = GFX_evt_mecca_falls_soa
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-	desc = {
-		text = EVTDESC_TOG_022
-		picture = GFX_evt_mongols_pillage_oldgods
-		trigger = { is_mongol_empire_leader_trigger = yes }
-	}
-
-	major = yes
-	is_triggered_only = yes # on_siege_over_winner
-
-	culture = mongol
-
-	trigger = {
-		FROM = {
-			title = b_mecca
-
-			holder_scope = {
-				is_mongol_empire_leader_trigger = no
-			}
-		}
-
-		is_mongol_empire_leader_trigger = yes
-
-		NOR = {
-			religion_group = muslim
-			has_global_flag = mongols_sack_mecca
-		}
-	}
-
-	major_trigger = {
-		ai = no
-		is_mongol_empire_leader_trigger = no
-	}
-
-	immediate = {
-		set_global_flag = mongols_sack_mecca
-	}
-
-	option = {
-		name = {
-			text = EVTOPTA60121
-			trigger = {
-				NOT = { religion_group = muslim }
-			}
-		}
-		name = {
-			text = EVTOPTB60121
-			trigger = { religion_group = muslim }
-		}
-
-		trigger = { is_mongol_empire_leader_trigger = no }
-	}
-
-	option = {
-		name = EVTOPTA_TOG_001
-
-		trigger = { is_mongol_empire_leader_trigger = yes }
-
-		prestige = 100
-	}
-}
+	# only_independent = yes
+	# min_age = 16
+	# only_capable = yes
+	# prisoner = no
+
+	# trigger = {
+		# primary_title = {
+			# title = e_ilkhanate
+		# }
+
+		# religion = tengri_pagan
+
+		# NOR = {
+			# trait = zealous
+			# has_global_flag = il_khanate_converts
+		# }
+
+		# had_global_flag = {
+			# flag = mongol_empire_arrival
+			# years >= 40
+		# }
+
+		# had_global_flag = {
+			# flag = mongol_empire_arrival
+			# years < 80
+		# }
+
+		# any_realm_province = {
+			# religion = catholic
+			# held_under_PREV = yes
+		# }
+	# }
+
+	# major_trigger = {
+		# ai = no
+	# }
+
+	# weight_multiplier = {
+		# factor = 1
+
+		# mult_modifier = {
+			# factor = 1.33
+
+			# capital_scope = {
+				# religion = catholic
+			# }
+		# }
+	# }
+
+	# immediate = {
+		# set_global_flag = il_khanate_converts
+
+		# catholic = {
+			# save_event_target_as = target_religion
+		# }
+	# }
+
+	# option = { # Catholic
+		# name = EVTOPTA60010
+
+		# trigger = { has_landed_title = e_ilkhanate }
+
+		# convert_religion_failsafe_effect = yes
+
+		# capital_scope = {
+			# show_scope_change = no
+
+			# religion = catholic
+		# }
+
+		# any_realm_character = {
+			# show_scope_change = no
+
+			# limit = { religion = tengri_pagan }
+
+			# catholic = {
+				# save_event_target_as = target_religion
+			# }
+
+			# convert_religion_failsafe_effect = yes
+
+			# if = {
+				# limit = {
+					# is_playable = yes
+
+					# capital_scope = {
+						# religion = tengri_pagan
+					# }
+				# }
+
+				# capital_scope = {
+					# show_scope_change = no
+
+					# religion = catholic
+				# }
+			# }
+		# }
+	# }
+
+	# # Other rulers are informed
+	# option = {
+		# name = {
+			# text = EVTOPTB60010
+			# trigger = { religion_group = muslim }
+		# }
+		# name = {
+			# text = EXCELLENT
+			# trigger = { religion_group = christian }
+		# }
+		# name = {
+			# text = EVTOPTD60010
+			# trigger = {
+				# NOR = {
+					# religion_group = christian
+					# religion_group = muslim
+				# }
+			# }
+		# }
+
+		# trigger = {
+			# NOT = { has_landed_title = e_ilkhanate }
+		# }
+	# }
+# }
+
+# # Ilkhanate converts to Orthodox
+# character_event = {
+	# id = 60011
+	# title = EVTNAME60010
+	# desc = EVTDESC60011
+	# picture = GFX_evt_mongols
+	# border = GFX_event_normal_frame_religion
+
+	# is_triggered_only = yes # on_five_year_pulse, random_events, mongol_conversion
+	# major = yes
+
+	# only_independent = yes
+	# only_capable = yes
+	# min_age = 16
+	# prisoner = no
+
+	# trigger = {
+		# primary_title = {
+			# title = e_ilkhanate
+		# }
+
+		# religion = tengri_pagan
+
+		# NOR = {
+			# trait = zealous
+			# has_global_flag = il_khanate_converts
+		# }
+
+		# had_global_flag = {
+			# flag = mongol_empire_arrival
+			# years >= 40
+		# }
+
+		# had_global_flag = {
+			# flag = mongol_empire_arrival
+			# years < 80
+		# }
+
+		# any_realm_province = {
+			# religion = orthodox
+			# held_under_PREV = yes
+		# }
+	# }
+
+	# major_trigger = {
+		# ai = no
+	# }
+
+	# weight_multiplier = {
+		# factor = 1
+
+		# mult_modifier = {
+			# factor = 1.33
+
+			# capital_scope = {
+				# religion = orthodox
+			# }
+		# }
+	# }
+
+	# immediate = {
+		# set_global_flag = il_khanate_converts
+
+		# orthodox = {
+			# save_event_target_as = target_religion
+		# }
+	# }
+
+	# option = { # Orthodox
+		# name = EVTOPTA60010
+
+		# trigger = { has_landed_title = e_ilkhanate }
+
+		# convert_religion_failsafe_effect = yes
+
+		# capital_scope = {
+			# show_scope_change = no
+
+			# religion = orthodox
+		# }
+
+		# any_realm_character = {
+			# show_scope_change = no
+
+			# limit = { religion = tengri_pagan }
+
+			# orthodox = {
+				# save_event_target_as = target_religion
+			# }
+
+			# convert_religion_failsafe_effect = yes
+
+			# if = {
+				# limit = {
+					# is_playable = yes
+
+					# capital_scope = {
+						# religion = tengri_pagan
+					# }
+				# }
+
+				# capital_scope = {
+					# show_scope_change = no
+
+					# religion = orthodox
+				# }
+			# }
+		# }
+	# }
+
+	# # Other rulers are informed
+	# option = {
+		# name = {
+			# text = EVTOPTB60010
+			# trigger = { religion_group = muslim }
+		# }
+		# name = {
+			# text = EXCELLENT
+			# trigger = { religion_group = christian }
+		# }
+		# name = {
+			# text = EVTOPTD60010
+			# trigger = {
+				# NOR = {
+					# religion_group = christian
+					# religion_group = muslim
+				# }
+			# }
+		# }
+
+		# trigger = {
+			# NOT = { has_landed_title = e_ilkhanate }
+		# }
+	# }
+# }
+
+# # Ilkhanate converts to Sunni
+# character_event = {
+	# id = 60012
+	# title = EVTNAME60010
+	# desc = EVTDESC60012
+	# picture = GFX_evt_mongols
+	# border = GFX_event_normal_frame_religion
+
+	# is_triggered_only = yes # on_five_year_pulse, random_events, mongol_conversion
+	# major = yes
+
+	# only_independent = yes
+	# min_age = 16
+	# only_capable = yes
+	# prisoner = no
+
+	# trigger = {
+		# primary_title = {
+			# title = e_ilkhanate
+		# }
+
+		# religion = tengri_pagan
+
+		# NOR = {
+			# trait = zealous
+			# has_global_flag = il_khanate_converts
+		# }
+
+		# had_global_flag = {
+			# flag = mongol_empire_arrival
+			# years >= 40
+		# }
+
+		# had_global_flag = {
+			# flag = mongol_empire_arrival
+			# years < 80
+		# }
+
+		# any_realm_province = {
+			# religion = sunni
+			# held_under_PREV = yes
+		# }
+	# }
+
+	# major_trigger = {
+		# ai = no
+	# }
+
+	# weight_multiplier = {
+		# factor = 1
+
+		# mult_modifier = {
+			# factor = 1.33
+
+			# capital_scope = {
+				# religion = sunni
+			# }
+		# }
+	# }
+
+	# immediate = {
+		# set_global_flag = il_khanate_converts
+
+		# sunni = {
+			# save_event_target_as = target_religion
+		# }
+	# }
+
+	# option = { # Sunni
+		# name = EVTOPTA60010
+
+		# trigger = { has_landed_title = e_ilkhanate }
+
+		# convert_religion_failsafe_effect = yes
+
+		# capital_scope = {
+			# show_scope_change = no
+
+			# religion = sunni
+		# }
+
+		# any_realm_character = {
+			# show_scope_change = no
+
+			# limit = { religion = tengri_pagan }
+
+			# sunni = {
+				# save_event_target_as = target_religion
+			# }
+
+			# convert_religion_failsafe_effect = yes
+
+			# if = {
+				# limit = {
+					# is_playable = yes
+
+					# capital_scope = {
+						# religion = tengri_pagan
+					# }
+				# }
+
+				# capital_scope = {
+					# show_scope_change = no
+
+					# religion = sunni
+				# }
+			# }
+		# }
+	# }
+
+	# # Other rulers are informed
+	# option = {
+		# name = {
+			# text = EXCELLENT
+			# trigger = { religion_group = muslim }
+		# }
+		# name = {
+			# text = EVTOPTC60010
+			# trigger = { religion_group = christian }
+		# }
+		# name = {
+			# text = EVTOPTD60010
+			# trigger = {
+				# NOR = {
+					# religion_group = christian
+					# religion_group = muslim
+				# }
+			# }
+		# }
+
+		# trigger = {
+			# NOT = { has_landed_title = e_ilkhanate }
+		# }
+	# }
+# }
+
+# # Ilkhanate converts to Shiite
+# character_event = {
+	# id = 60013
+	# title = EVTNAME60010
+	# desc = EVTDESC60013
+	# picture = GFX_evt_mongols
+	# border = GFX_event_normal_frame_religion
+
+	# is_triggered_only = yes # on_five_year_pulse, random_events, mongol_conversion
+	# major = yes
+
+	# only_independent = yes
+	# min_age = 16
+	# only_capable = yes
+	# prisoner = no
+
+	# trigger = {
+		# primary_title = {
+			# title = e_ilkhanate
+		# }
+
+		# religion = tengri_pagan
+
+		# NOR = {
+			# trait = zealous
+			# has_global_flag = il_khanate_converts
+		# }
+
+		# had_global_flag = {
+			# flag = mongol_empire_arrival
+			# years >= 40
+		# }
+
+		# had_global_flag = {
+			# flag = mongol_empire_arrival
+			# years < 80
+		# }
+
+		# any_realm_province = {
+			# religion = shiite
+			# held_under_PREV = yes
+		# }
+	# }
+
+	# major_trigger = {
+		# ai = no
+	# }
+
+	# weight_multiplier = {
+		# factor = 1
+
+		# mult_modifier = {
+			# factor = 1.33
+
+			# capital_scope = {
+				# religion = shiite
+			# }
+		# }
+	# }
+
+	# immediate = {
+		# set_global_flag = il_khanate_converts
+
+		# shiite = {
+			# save_event_target_as = target_religion
+		# }
+	# }
+
+	# option = { # Shiite
+		# name = EVTOPTA60010
+
+		# trigger = { has_landed_title = e_ilkhanate }
+
+		# convert_religion_failsafe_effect = yes
+
+		# capital_scope = {
+			# show_scope_change = no
+
+			# religion = shiite
+		# }
+
+		# any_realm_character = {
+			# show_scope_change = no
+
+			# limit = { religion = tengri_pagan }
+
+			# shiite = {
+				# save_event_target_as = target_religion
+			# }
+
+			# convert_religion_failsafe_effect = yes
+
+			# if = {
+				# limit = {
+					# is_playable = yes
+
+					# capital_scope = {
+						# religion = tengri_pagan
+					# }
+				# }
+
+				# capital_scope = {
+					# show_scope_change = no
+
+					# religion = shiite
+				# }
+			# }
+		# }
+	# }
+
+	# # Other rulers are informed
+	# option = {
+		# name = {
+			# text = EXCELLENT
+			# trigger = { religion_group = muslim }
+		# }
+		# name = {
+			# text = EVTOPTC60010
+			# trigger = { religion_group = christian }
+		# }
+		# name = {
+			# text = EVTOPTD60010
+			# trigger = {
+				# NOR = {
+					# religion_group = christian
+					# religion_group = muslim
+				# }
+			# }
+		# }
+
+		# trigger = {
+			# NOT = { has_landed_title = e_ilkhanate }
+		# }
+	# }
+# }
+
+# # Ilkhanate converts to Nestorian
+# character_event = {
+	# id = 60014
+	# title = EVTNAME60010
+	# desc = EVTDESC60014
+	# picture = GFX_evt_mongols
+	# border = GFX_event_normal_frame_war
+
+	# is_triggered_only = yes # on_five_year_pulse, random_events, mongol_conversion
+	# major = yes
+
+	# only_independent = yes
+	# min_age = 16
+	# only_capable = yes
+	# prisoner = no
+
+	# trigger = {
+		# primary_title = {
+			# title = e_ilkhanate
+		# }
+
+		# religion = tengri_pagan
+		# num_of_count_titles_in_realm >= 1
+
+		# NOR = {
+			# trait = zealous
+			# has_global_flag = il_khanate_converts
+		# }
+
+		# had_global_flag = {
+			# flag = mongol_empire_arrival
+			# years >= 40
+		# }
+
+		# had_global_flag = {
+			# flag = mongol_empire_arrival
+			# years < 80
+		# }
+	# }
+
+	# major_trigger = {
+		# ai = no
+	# }
+
+	# weight_multiplier = {
+		# factor = 1
+
+		# mult_modifier = {
+			# factor = 1.33
+
+			# capital_scope = {
+				# religion = nestorian
+			# }
+		# }
+	# }
+
+	# immediate = {
+		# set_global_flag = il_khanate_converts
+
+		# nestorian = {
+			# save_event_target_as = target_religion
+		# }
+	# }
+
+	# option = { # Nestorian
+		# name = EVTOPTA60010
+
+		# trigger = { has_landed_title = e_ilkhanate }
+
+		# convert_religion_failsafe_effect = yes
+
+		# capital_scope = {
+			# show_scope_change = no
+
+			# religion = nestorian
+		# }
+
+		# any_realm_character = {
+			# show_scope_change = no
+
+			# limit = { religion = tengri_pagan }
+
+			# nestorian = {
+				# save_event_target_as = target_religion
+			# }
+
+			# convert_religion_failsafe_effect = yes
+
+			# if = {
+				# limit = {
+					# is_playable = yes
+
+					# capital_scope = {
+						# religion = tengri_pagan
+					# }
+				# }
+
+				# capital_scope = {
+					# show_scope_change = no
+
+					# religion = nestorian
+				# }
+			# }
+		# }
+	# }
+
+	# # Other rulers are informed
+	# option = {
+		# name = {
+			# text = EVTOPTB60010
+			# trigger = { religion_group = muslim }
+		# }
+		# name = {
+			# text = EXCELLENT
+			# trigger = { religion_group = christian }
+		# }
+		# name = {
+			# text = EVTOPTD60010
+			# trigger = {
+				# NOR = {
+					# religion_group = christian
+					# religion_group = muslim
+				# }
+			# }
+		# }
+
+		# trigger = {
+			# NOT = { has_landed_title = e_ilkhanate }
+		# }
+	# }
+# }
+
+# # Golden Horde converts to Catholic
+# character_event = {
+	# id = 60020
+	# title = EVTNAME60020
+	# desc = EVTDESC60010
+	# picture = GFX_evt_mongols
+	# border = GFX_event_normal_frame_religion
+
+	# is_triggered_only = yes # on_five_year_pulse, random_events, mongol_conversion
+	# major = yes
+
+	# only_independent = yes
+	# min_age = 16
+	# only_capable = yes
+	# prisoner = no
+
+	# trigger = {
+		# primary_title = {
+			# title = e_golden_horde
+		# }
+
+		# religion = tengri_pagan
+
+		# NOR = {
+			# trait = zealous
+			# has_global_flag = golden_horde_converts
+		# }
+
+		# had_global_flag = {
+			# flag = mongol_empire_arrival
+			# years >= 40
+		# }
+
+		# had_global_flag = {
+			# flag = mongol_empire_arrival
+			# years < 80
+		# }
+
+		# any_realm_province = {
+			# religion = catholic
+			# held_under_PREV = yes
+		# }
+	# }
+
+	# major_trigger = {
+		# ai = no
+	# }
+
+	# weight_multiplier = {
+		# factor = 1
+
+		# mult_modifier = {
+			# factor = 1.33
+
+			# capital_scope = {
+				# religion = catholic
+			# }
+		# }
+	# }
+
+	# immediate = {
+		# set_global_flag = golden_horde_converts
+
+		# catholic = {
+			# save_event_target_as = target_religion
+		# }
+	# }
+
+	# option = { # Catholic
+		# name = EVTOPTA60010
+
+		# trigger = { has_landed_title = e_golden_horde }
+
+		# convert_religion_failsafe_effect = yes
+
+		# capital_scope = {
+			# show_scope_change = no
+
+			# religion = catholic
+		# }
+
+		# any_realm_character = {
+			# show_scope_change = no
+
+			# limit = { religion = tengri_pagan }
+
+			# catholic = {
+				# save_event_target_as = target_religion
+			# }
+
+			# convert_religion_failsafe_effect = yes
+
+			# if = {
+				# limit = {
+					# is_playable = yes
+
+					# capital_scope = {
+						# religion = tengri_pagan
+					# }
+				# }
+
+				# capital_scope = {
+					# show_scope_change = no
+
+					# religion = catholic
+				# }
+			# }
+		# }
+	# }
+
+	# # Other rulers are informed
+	# option = {
+		# name = {
+			# text = EVTOPTB60010
+			# trigger = { religion_group = muslim }
+		# }
+		# name = {
+			# text = EXCELLENT
+			# trigger = { religion_group = christian }
+		# }
+		# name = {
+			# text = EVTOPTD60010
+			# trigger = {
+				# NOR = {
+					# religion_group = christian
+					# religion_group = muslim
+				# }
+			# }
+		# }
+
+		# trigger = {
+			# NOT = { has_landed_title = e_golden_horde }
+		# }
+	# }
+# }
+
+# # Golden Horde converts to Orthodox
+# character_event = {
+	# id = 60021
+	# title = EVTNAME60020
+	# desc = EVTDESC60011
+	# picture = GFX_evt_mongols
+	# border = GFX_event_normal_frame_religion
+
+	# is_triggered_only = yes # on_five_year_pulse, random_events, mongol_conversion
+	# major = yes
+
+	# only_independent = yes
+	# min_age = 16
+	# only_capable = yes
+	# prisoner = no
+
+	# trigger = {
+		# primary_title = {
+			# title = e_golden_horde
+		# }
+
+		# religion = tengri_pagan
+
+		# NOR = {
+			# trait = zealous
+			# has_global_flag = golden_horde_converts
+		# }
+
+		# had_global_flag = {
+			# flag = mongol_empire_arrival
+			# years >= 40
+		# }
+
+		# had_global_flag = {
+			# flag = mongol_empire_arrival
+			# years < 80
+		# }
+
+		# any_realm_province = {
+			# religion = orthodox
+			# held_under_PREV = yes
+		# }
+	# }
+
+	# major_trigger = {
+		# ai = no
+	# }
+
+	# weight_multiplier = {
+		# factor = 1
+
+		# mult_modifier = {
+			# factor = 1.33
+
+			# capital_scope = {
+				# religion = orthodox
+			# }
+		# }
+	# }
+
+	# immediate = {
+		# set_global_flag = golden_horde_converts
+
+		# orthodox = {
+			# save_event_target_as = target_religion
+		# }
+	# }
+
+	# option = { # Orthodox
+		# name = EVTOPTA60010
+
+		# trigger = { has_landed_title = e_golden_horde }
+
+		# convert_religion_failsafe_effect = yes
+
+		# capital_scope = {
+			# show_scope_change = no
+
+			# religion = orthodox
+		# }
+
+		# any_realm_character = {
+			# show_scope_change = no
+
+			# limit = { religion = tengri_pagan }
+
+			# orthodox = {
+				# save_event_target_as = target_religion
+			# }
+
+			# convert_religion_failsafe_effect = yes
+
+			# if = {
+				# limit = {
+					# is_playable = yes
+
+					# capital_scope = {
+						# religion = tengri_pagan
+					# }
+				# }
+
+				# capital_scope = {
+					# show_scope_change = no
+
+					# religion = orthodox
+				# }
+			# }
+		# }
+	# }
+
+	# # Other rulers are informed
+	# option = {
+		# name = {
+			# text = EVTOPTB60010
+			# trigger = { religion_group = muslim }
+		# }
+		# name = {
+			# text = EXCELLENT
+			# trigger = { religion_group = christian }
+		# }
+		# name = {
+			# text = EVTOPTD60010
+			# trigger = {
+				# NOR = {
+					# religion_group = christian
+					# religion_group = muslim
+				# }
+			# }
+		# }
+
+		# trigger = {
+			# NOT = { has_landed_title = e_golden_horde }
+		# }
+	# }
+# }
+
+# # Golden Horde converts to Sunni
+# character_event = {
+	# id = 60022
+	# title = EVTNAME60020
+	# desc = EVTDESC60012
+	# picture = GFX_evt_mongols
+	# border = GFX_event_normal_frame_religion
+
+	# is_triggered_only = yes # on_five_year_pulse, random_events, mongol_conversion
+	# major = yes
+
+	# only_independent = yes
+	# min_age = 16
+	# only_capable = yes
+	# prisoner = no
+
+	# trigger = {
+		# primary_title = {
+			# title = e_golden_horde
+		# }
+
+		# religion = tengri_pagan
+
+		# NOR = {
+			# trait = zealous
+			# has_global_flag = golden_horde_converts
+		# }
+
+		# had_global_flag = {
+			# flag = mongol_empire_arrival
+			# years >= 40
+		# }
+
+		# had_global_flag = {
+			# flag = mongol_empire_arrival
+			# years < 80
+		# }
+
+		# any_realm_province = {
+			# religion = sunni
+			# held_under_PREV = yes
+		# }
+	# }
+
+	# major_trigger = {
+		# ai = no
+	# }
+
+	# weight_multiplier = {
+		# factor = 1
+
+		# mult_modifier = {
+			# factor = 1.33
+
+			# capital_scope = {
+				# religion = sunni
+			# }
+		# }
+	# }
+
+	# immediate = {
+		# set_global_flag = golden_horde_converts
+
+		# sunni = {
+			# save_event_target_as = target_religion
+		# }
+	# }
+
+	# option = { # Sunni
+		# name = EVTOPTA60010
+
+		# trigger = { has_landed_title = e_golden_horde }
+
+		# convert_religion_failsafe_effect = yes
+
+		# capital_scope = {
+			# show_scope_change = no
+
+			# religion = sunni
+		# }
+
+		# any_realm_character = {
+			# show_scope_change = no
+
+			# limit = { religion = tengri_pagan }
+
+			# sunni = {
+				# save_event_target_as = target_religion
+			# }
+
+			# convert_religion_failsafe_effect = yes
+
+			# if = {
+				# limit = {
+					# is_playable = yes
+
+					# capital_scope = {
+						# religion = tengri_pagan
+					# }
+				# }
+
+				# capital_scope = {
+					# show_scope_change = no
+
+					# religion = sunni
+				# }
+			# }
+		# }
+	# }
+
+	# # Other rulers are informed
+	# option = {
+		# name = {
+			# text = EXCELLENT
+			# trigger = { religion_group = muslim }
+		# }
+		# name = {
+			# text = EVTOPTC60010
+			# trigger = { religion_group = christian }
+		# }
+		# name = {
+			# text = EVTOPTD60010
+			# trigger = {
+				# NOR = {
+					# religion_group = christian
+					# religion_group = muslim
+				# }
+			# }
+		# }
+
+		# trigger = {
+			# NOT = { has_landed_title = e_golden_horde }
+		# }
+	# }
+# }
+
+# # Golden Horde converts to Shiite
+# character_event = {
+	# id = 60023
+	# title = EVTNAME60020
+	# desc = EVTDESC60013
+	# picture = GFX_evt_mongols
+	# border = GFX_event_normal_frame_religion
+
+	# is_triggered_only = yes # on_five_year_pulse, random_events, mongol_conversion
+	# major = yes
+
+	# only_independent = yes
+	# min_age = 16
+	# only_capable = yes
+	# prisoner = no
+
+	# trigger = {
+		# primary_title = {
+			# title = e_golden_horde
+		# }
+
+		# religion = tengri_pagan
+
+		# NOR = {
+			# trait = zealous
+			# has_global_flag = golden_horde_converts
+		# }
+
+		# had_global_flag = {
+			# flag = mongol_empire_arrival
+			# years >= 40
+		# }
+
+		# had_global_flag = {
+			# flag = mongol_empire_arrival
+			# years < 80
+		# }
+
+		# any_realm_province = {
+			# religion = shiite
+			# held_under_PREV = yes
+		# }
+	# }
+
+	# major_trigger = {
+		# ai = no
+	# }
+
+	# weight_multiplier = {
+		# factor = 1
+
+		# mult_modifier = {
+			# factor = 1.33
+
+			# capital_scope = {
+				# religion = shiite
+			# }
+		# }
+	# }
+
+	# immediate = {
+		# set_global_flag = golden_horde_converts
+
+		# shiite = {
+			# save_event_target_as = target_religion
+		# }
+	# }
+
+	# option = { # Shiite
+		# name = EVTOPTA60010
+
+		# trigger = { has_landed_title = e_golden_horde }
+
+		# convert_religion_failsafe_effect = yes
+
+		# capital_scope = {
+			# show_scope_change = no
+
+			# religion = shiite
+		# }
+
+		# any_realm_character = {
+			# show_scope_change = no
+
+			# limit = { religion = tengri_pagan }
+
+			# shiite = {
+				# save_event_target_as = target_religion
+			# }
+
+			# convert_religion_failsafe_effect = yes
+
+			# if = {
+				# limit = {
+					# is_playable = yes
+
+					# capital_scope = {
+						# religion = tengri_pagan
+					# }
+				# }
+
+				# capital_scope = {
+					# show_scope_change = no
+
+					# religion = shiite
+				# }
+			# }
+		# }
+	# }
+
+	# # Other rulers are informed
+	# option = {
+		# name = {
+			# text = EXCELLENT
+			# trigger = { religion_group = muslim }
+		# }
+		# name = {
+			# text = EVTOPTC60010
+			# trigger = { religion_group = christian }
+		# }
+		# name = {
+			# text = EVTOPTD60010
+			# trigger = {
+				# NOR = {
+					# religion_group = christian
+					# religion_group = muslim
+				# }
+			# }
+		# }
+
+		# trigger = {
+			# NOT = { has_landed_title = e_golden_horde }
+		# }
+	# }
+# }
+
+# # Golden Horde converts to Nestorian
+# character_event = {
+	# id = 60024
+	# title = EVTNAME60020
+	# desc = EVTDESC60014
+	# picture = GFX_evt_mongols
+	# border = GFX_event_normal_frame_religion
+
+	# is_triggered_only = yes # on_five_year_pulse, random_events, mongol_conversion
+	# major = yes
+
+	# only_independent = yes
+	# min_age = 16
+	# only_capable = yes
+	# prisoner = no
+
+	# trigger = {
+		# primary_title = {
+			# title = e_golden_horde
+		# }
+
+		# religion = tengri_pagan
+		# num_of_count_titles_in_realm >= 1
+
+		# NOR = {
+			# trait = zealous
+			# has_global_flag = golden_horde_converts
+		# }
+
+		# had_global_flag = {
+			# flag = mongol_empire_arrival
+			# years >= 40
+		# }
+
+		# had_global_flag = {
+			# flag = mongol_empire_arrival
+			# years < 80
+		# }
+	# }
+
+	# major_trigger = {
+		# ai = no
+	# }
+
+	# weight_multiplier = {
+		# factor = 1
+
+		# mult_modifier = {
+			# factor = 1.33
+
+			# capital_scope = {
+				# religion = nestorian
+			# }
+		# }
+	# }
+
+	# immediate = {
+		# set_global_flag = golden_horde_converts
+
+		# nestorian = {
+			# save_event_target_as = target_religion
+		# }
+	# }
+
+	# option = { # Nestorian
+		# name = EVTOPTA60010
+
+		# trigger = { has_landed_title = e_golden_horde }
+
+		# convert_religion_failsafe_effect = yes
+
+		# capital_scope = {
+			# show_scope_change = no
+
+			# religion = nestorian
+		# }
+
+		# any_realm_character = {
+			# show_scope_change = no
+
+			# limit = { religion = tengri_pagan }
+
+			# nestorian = {
+				# save_event_target_as = target_religion
+			# }
+
+			# convert_religion_failsafe_effect = yes
+
+			# if = {
+				# limit = {
+					# is_playable = yes
+
+					# capital_scope = {
+						# religion = tengri_pagan
+					# }
+				# }
+
+				# capital_scope = {
+					# show_scope_change = no
+
+					# religion = nestorian
+				# }
+			# }
+		# }
+	# }
+
+	# # Other rulers are informed
+	# option = {
+		# name = {
+			# text = EVTOPTB60010
+			# trigger = { religion_group = muslim }
+		# }
+		# name = {
+			# text = EXCELLENT
+			# trigger = { religion_group = christian }
+		# }
+		# name = {
+			# text = EVTOPTD60010
+			# trigger = {
+				# NOR = {
+					# religion_group = christian
+					# religion_group = muslim
+				# }
+			# }
+		# }
+
+		# trigger = {
+			# NOT = { has_landed_title = e_golden_horde }
+		# }
+	# }
+# }
+
+# ### Mongols sack European cities ###
+
+# # Mongols sack Kiev
+# narrative_event = {
+	# id = 60100
+	# title = EVTNAME_TOG_001
+	# border = GFX_event_narrative_frame_war
+
+	# desc = {
+		# text = EVTDESC60100
+		# picture = GFX_evt_mongols
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+	# desc = {
+		# text = EVTDESC_TOG_001
+		# picture = GFX_evt_mongols_pillage_oldgods
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+	# }
+
+	# major = yes
+	# is_triggered_only = yes # on_siege_over_winner
+
+	# culture = mongol
+
+	# trigger = {
+		# FROM = {
+			# title = b_kiev
+
+			# holder_scope = {
+				# is_mongol_empire_leader_trigger = no
+			# }
+		# }
+
+		# is_mongol_empire_leader_trigger = yes
+		# NOT = { has_global_flag = mongols_sack_kiev }
+	# }
+
+	# major_trigger = {
+		# ai = no
+		# is_mongol_empire_leader_trigger = no
+	# }
+
+	# immediate = {
+		# set_global_flag = mongols_sack_kiev
+	# }
+
+	# option = {
+		# name = {
+			# text = EVTOPTA60100
+			# trigger = {
+				# NOT = { religion_group = muslim }
+			# }
+		# }
+		# name = {
+			# text = EVTOPTB60100
+			# trigger = { religion_group = muslim }
+		# }
+
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+
+	# option = {
+		# name = EVTOPTA_TOG_001
+
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+
+		# prestige = 100
+	# }
+# }
+
+# # Mongols sack Novgorod
+# narrative_event = {
+	# id = 60101
+	# title = EVTNAME_TOG_002
+	# border = GFX_event_narrative_frame_war
+
+	# desc = {
+		# text = EVTDESC60101
+		# picture = GFX_evt_mongols
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+	# desc = {
+		# text = EVTDESC_TOG_002
+		# picture = GFX_evt_mongols_pillage_oldgods
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+	# }
+
+	# major = yes
+	# is_triggered_only = yes # on_siege_over_winner
+
+	# culture = mongol
+
+	# trigger = {
+		# FROM = {
+			# title = b_novgorod
+
+			# holder_scope = {
+				# is_mongol_empire_leader_trigger = no
+			# }
+		# }
+
+		# is_mongol_empire_leader_trigger = yes
+		# NOT = { has_global_flag = mongols_sack_novgorod }
+	# }
+
+	# major_trigger = {
+		# ai = no
+		# is_mongol_empire_leader_trigger = no
+	# }
+
+	# immediate = {
+		# set_global_flag = mongols_sack_novgorod
+	# }
+
+	# option = {
+		# name = {
+			# text = EVTOPTA60101 # Perhaps their bloodlust has been sated now
+			# trigger = {
+				# NOT = { culture = mongol }
+			# }
+		# }
+		# name = {
+			# text = EVTOPTB60101 # May the snows of the frozen north claim them
+			# trigger = { culture = mongol }
+		# }
+	# }
+
+	# option = {
+		# name = EVTOPTA_TOG_001
+
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+
+		# prestige = 100
+	# }
+# }
+
+# # Mongols sack Krakow
+# narrative_event = {
+	# id = 60102
+	# title = EVTNAME_TOG_003
+	# border = GFX_event_narrative_frame_war
+
+	# desc = {
+		# text = EVTDESC60102
+		# picture = GFX_evt_mongols
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+	# desc = {
+		# text = EVTDESC_TOG_003
+		# picture = GFX_evt_mongols_pillage_oldgods
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+	# }
+
+	# major = yes
+	# is_triggered_only = yes # on_siege_over_winner
+
+	# culture = mongol
+
+	# trigger = {
+		# FROM = {
+			# title = b_krakow
+
+			# holder_scope = {
+				# is_mongol_empire_leader_trigger = no
+			# }
+		# }
+
+		# is_mongol_empire_leader_trigger = yes
+		# NOT = { has_global_flag = mongols_sack_krakow }
+	# }
+
+	# major_trigger = {
+		# ai = no
+		# is_mongol_empire_leader_trigger = no
+	# }
+
+	# immediate = {
+		# set_global_flag = mongols_sack_krakow
+	# }
+
+	# option = {
+		# name = {
+			# text = EVTOPTA60102
+			# trigger = {
+				# NOT = { religion_group = muslim }
+			# }
+		# }
+		# name = {
+			# text = EVTOPTB60102
+			# trigger = { religion_group = muslim }
+		# }
+
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+
+	# option = {
+		# name = EVTOPTA_TOG_001
+
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+
+		# prestige = 100
+	# }
+# }
+
+# # Mongols sack Aachen
+# narrative_event = {
+	# id = 60103
+	# title = EVTNAME_TOG_004
+	# border = GFX_event_narrative_frame_war
+
+	# desc = {
+		# text = EVTDESC60103
+		# picture = GFX_evt_mongols
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+	# desc = {
+		# text = EVTDESC_TOG_004
+		# picture = GFX_evt_mongols_pillage_oldgods
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+	# }
+
+	# major = yes
+	# is_triggered_only = yes # on_siege_over_winner
+
+	# culture = mongol
+
+	# trigger = {
+		# FROM = {
+			# title = b_aachen
+
+			# holder_scope = {
+				# is_mongol_empire_leader_trigger = no
+			# }
+		# }
+
+		# is_mongol_empire_leader_trigger = yes
+		# NOT = { has_global_flag = mongols_sack_aachen }
+	# }
+
+	# major_trigger = {
+		# ai = no
+		# is_mongol_empire_leader_trigger = no
+	# }
+
+	# immediate = {
+		# set_global_flag = mongols_sack_aachen
+	# }
+
+	# option = {
+		# name = {
+			# text = EVTOPTA60103
+			# trigger = {
+				# NOT = { religion_group = muslim }
+			# }
+		# }
+		# name = {
+			# text = EVTOPTB60103
+			# trigger = { religion_group = muslim }
+		# }
+
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+
+	# option = {
+		# name = EVTOPTA_TOG_001
+
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+
+		# prestige = 100
+	# }
+# }
+
+# # Mongols sack Paris
+# narrative_event = {
+	# id = 60104
+	# title = EVTNAME_TOG_005
+	# border = GFX_event_narrative_frame_war
+
+	# desc = {
+		# text = EVTDESC60104
+		# picture = GFX_evt_mongols
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+	# desc = {
+		# text = EVTDESC_TOG_005
+		# picture = GFX_evt_mongols_pillage_oldgods
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+	# }
+
+	# major = yes
+	# is_triggered_only = yes # on_siege_over_winner
+
+	# culture = mongol
+
+	# trigger = {
+		# FROM = {
+			# title = b_paris
+
+			# holder_scope = {
+				# is_mongol_empire_leader_trigger = no
+			# }
+		# }
+
+		# is_mongol_empire_leader_trigger = yes
+		# NOT = { has_global_flag = mongols_sack_paris }
+	# }
+
+	# major_trigger = {
+		# ai = no
+		# is_mongol_empire_leader_trigger = no
+	# }
+
+	# immediate = {
+		# set_global_flag = mongols_sack_paris
+	# }
+
+	# option = {
+		# name = {
+			# text = EVTOPTA60104
+			# trigger = {
+				# NOT = { religion_group = muslim }
+			# }
+		# }
+		# name = {
+			# text = EVTOPTB60104
+			# trigger = { religion_group = muslim }
+		# }
+
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+
+	# option = {
+		# name = EVTOPTA_TOG_001
+
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+
+		# prestige = 100
+	# }
+# }
+
+# # Mongols sack London
+# narrative_event = {
+	# id = 60105
+	# title = EVTNAME_TOG_006
+	# border = GFX_event_narrative_frame_war
+
+	# desc = {
+		# text = EVTDESC60105
+		# picture = GFX_evt_mongols
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+	# desc = {
+		# text = EVTDESC_TOG_006
+		# picture = GFX_evt_mongols_pillage_oldgods
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+	# }
+
+	# major = yes
+	# is_triggered_only = yes # on_siege_over_winner
+
+	# culture = mongol
+
+	# trigger = {
+		# FROM = {
+			# title = b_london
+
+			# holder_scope = {
+				# is_mongol_empire_leader_trigger = no
+			# }
+		# }
+
+		# is_mongol_empire_leader_trigger = yes
+		# NOT = { has_global_flag = mongols_sack_london }
+	# }
+
+	# major_trigger = {
+		# ai = no
+		# is_mongol_empire_leader_trigger = no
+	# }
+
+	# immediate = {
+		# set_global_flag = mongols_sack_london
+	# }
+
+	# option = {
+		# name = {
+			# text = EVTOPTA60105
+			# trigger = {
+				# NOT = { religion_group = muslim }
+			# }
+		# }
+		# name = {
+			# text = EVTOPTB60105
+			# trigger = { religion_group = muslim }
+		# }
+
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+
+	# option = {
+		# name = EVTOPTA_TOG_001
+
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+
+		# prestige = 100
+	# }
+# }
+
+# # Mongols sack Rome
+# narrative_event = {
+	# id = 60106
+	# title = EVTNAME_TOG_007
+	# border = GFX_event_narrative_frame_war
+
+	# desc = {
+		# text = EVTDESC60106
+		# picture = GFX_evt_rome_falls
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+	# desc = {
+		# text = EVTDESC_TOG_007
+		# picture = GFX_evt_mongols_pillage_oldgods
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+	# }
+
+	# major = yes
+	# is_triggered_only = yes # on_siege_over_winner
+
+	# culture = mongol
+
+	# trigger = {
+		# FROM = {
+			# title = b_roma
+
+			# holder_scope = {
+				# is_mongol_empire_leader_trigger = no
+			# }
+		# }
+
+		# is_mongol_empire_leader_trigger = yes
+		# NOT = { has_global_flag = mongols_sack_rome }
+	# }
+
+	# major_trigger = {
+		# ai = no
+		# is_mongol_empire_leader_trigger = no
+	# }
+
+	# immediate = {
+		# set_global_flag = mongols_sack_rome
+	# }
+
+	# option = {
+		# name = {
+			# text = EVTOPTA60106
+			# trigger = {
+				# NOT = { religion_group = muslim }
+			# }
+		# }
+		# name = {
+			# text = EVTOPTB60106
+			# trigger = { religion_group = muslim }
+		# }
+
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+
+	# option = {
+		# name = EVTOPTA_TOG_001
+
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+
+		# prestige = 100
+	# }
+# }
+
+# # Mongols sack Venice
+# narrative_event = {
+	# id = 60107
+	# title = EVTNAME_TOG_008
+	# border = GFX_event_narrative_frame_war
+
+	# desc = {
+		# text = EVTDESC60107
+		# picture = GFX_evt_mongols
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+	# desc = {
+		# text = EVTDESC_TOG_008
+		# picture = GFX_evt_mongols_pillage_oldgods
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+	# }
+
+	# major = yes
+	# is_triggered_only = yes # on_siege_over_winner
+
+	# culture = mongol
+
+	# trigger = {
+		# FROM = {
+			# title = b_venezia
+
+			# holder_scope = {
+				# is_mongol_empire_leader_trigger = no
+			# }
+		# }
+
+		# is_mongol_empire_leader_trigger = yes
+		# NOT = { has_global_flag = mongols_sack_venice }
+	# }
+
+	# major_trigger = {
+		# ai = no
+		# is_mongol_empire_leader_trigger = no
+	# }
+
+	# immediate = {
+		# set_global_flag = mongols_sack_venice
+	# }
+
+	# option = {
+		# name = {
+			# text = EVTOPTA60107
+			# trigger = {
+				# NOT = { religion_group = muslim }
+			# }
+		# }
+		# name = {
+			# text = EVTOPTB60107
+			# trigger = { religion_group = muslim }
+		# }
+
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+
+	# option = {
+		# name = EVTOPTA_TOG_001
+
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+
+		# prestige = 100
+	# }
+# }
+
+# # Mongols sack Constantinople
+# narrative_event = {
+	# id = 60108
+	# title = EVTNAME_TOG_009
+	# border = GFX_event_narrative_frame_war
+
+	# desc = {
+		# text = EVTDESC60108
+		# picture = GFX_evt_mongols
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+	# desc = {
+		# text = EVTDESC_TOG_009
+		# picture = GFX_evt_mongols_pillage_oldgods
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+	# }
+
+	# major = yes
+	# is_triggered_only = yes # on_siege_over_winner
+
+	# culture = mongol
+
+	# trigger = {
+		# FROM = {
+			# title = b_constantinople
+
+			# holder_scope = {
+				# is_mongol_empire_leader_trigger = no
+			# }
+		# }
+
+		# is_mongol_empire_leader_trigger = yes
+		# NOT = { has_global_flag = mongols_sack_constantinople }
+	# }
+
+	# major_trigger = {
+		# ai = no
+		# is_mongol_empire_leader_trigger = no
+	# }
+
+	# immediate = {
+		# set_global_flag = mongols_sack_constantinople
+	# }
+
+	# option = {
+		# name = {
+			# text = EVTOPTA60108
+			# trigger = {
+				# NOT = { religion_group = muslim }
+			# }
+		# }
+		# name = {
+			# text = EVTOPTB60108
+			# trigger = { religion_group = muslim }
+		# }
+
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+
+	# option = {
+		# name = EVTOPTA_TOG_001
+
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+
+		# prestige = 100
+	# }
+# }
+
+# # Mongols sack Lisbon
+# narrative_event = {
+	# id = 60109
+	# title = EVTNAME_TOG_010
+	# border = GFX_event_narrative_frame_war
+
+	# desc = {
+		# text = EVTDESC60109
+		# picture = GFX_evt_mongols
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+	# desc = {
+		# text = EVTDESC_TOG_010
+		# picture = GFX_evt_mongols_pillage_oldgods
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+	# }
+
+	# major = yes
+	# is_triggered_only = yes # on_siege_over_winner
+
+	# culture = mongol
+
+	# trigger = {
+		# FROM = {
+			# title = b_lisboa
+
+			# holder_scope = {
+				# is_mongol_empire_leader_trigger = no
+			# }
+		# }
+
+		# is_mongol_empire_leader_trigger = yes
+		# NOT = { has_global_flag = mongols_sack_lisbon }
+	# }
+
+	# major_trigger = {
+		# ai = no
+		# is_mongol_empire_leader_trigger = no
+	# }
+
+	# immediate = {
+		# set_global_flag = mongols_sack_lisbon
+	# }
+
+	# option = {
+		# name = {
+			# text = EVTOPTA60109
+			# trigger = {
+				# NOT = { religion_group = muslim }
+			# }
+		# }
+		# name = {
+			# text = EVTOPTB60109
+			# trigger = { religion_group = muslim }
+		# }
+
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+
+	# option = {
+		# name = EVTOPTA_TOG_001
+
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+
+		# prestige = 100
+	# }
+# }
+
+# # Mongols sack Smolensk
+# narrative_event = {
+	# id = 60110
+	# title = EVTNAME_TOG_011
+	# border = GFX_event_narrative_frame_war
+
+	# desc = {
+		# text = EVTDESC60110
+		# picture = GFX_evt_mongols
+		# trigger = { NOT = { is_mongol_empire_leader_trigger = yes } }
+	# }
+	# desc = {
+		# text = EVTDESC_TOG_011
+		# picture = GFX_evt_mongols_pillage_oldgods
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+	# }
+
+	# major = yes
+	# is_triggered_only = yes # on_siege_over_winner
+
+	# culture = mongol
+
+	# trigger = {
+		# FROM = {
+			# title = b_smolensk
+
+			# holder_scope = {
+				# is_mongol_empire_leader_trigger = no
+			# }
+		# }
+
+		# is_mongol_empire_leader_trigger = yes
+		# NOT = { has_global_flag = mongols_sack_smolensk }
+	# }
+
+	# major_trigger = {
+		# ai = no
+		# is_mongol_empire_leader_trigger = no
+	# }
+
+	# immediate = {
+		# set_global_flag = mongols_sack_smolensk
+	# }
+
+	# option = {
+		# name = {
+			# text = EVTOPTA60110
+			# trigger = {
+				# NOT = { religion_group = muslim }
+			# }
+		# }
+		# name = {
+			# text = EVTOPTB60110
+			# trigger = { religion_group = muslim }
+		# }
+
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+
+	# option = {
+		# name = EVTOPTA_TOG_001
+
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+
+		# prestige = 100
+	# }
+# }
+
+# # Mongols sack Prague
+# narrative_event = {
+	# id = 60111
+	# title = EVTNAME_TOG_012
+	# border = GFX_event_narrative_frame_war
+
+	# desc = {
+		# text = EVTDESC60111
+		# picture = GFX_evt_mongols
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+	# desc = {
+		# text = EVTDESC_TOG_012
+		# picture = GFX_evt_mongols_pillage_oldgods
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+	# }
+
+	# major = yes
+	# is_triggered_only = yes # on_siege_over_winner
+
+	# culture = mongol
+
+	# trigger = {
+		# FROM = {
+			# title = b_praha
+
+			# holder_scope = {
+				# is_mongol_empire_leader_trigger = no
+			# }
+		# }
+
+		# is_mongol_empire_leader_trigger = yes
+		# NOT = { has_global_flag = mongols_sack_prague }
+	# }
+
+	# major_trigger = {
+		# ai = no
+		# is_mongol_empire_leader_trigger = no
+	# }
+
+	# immediate = {
+		# set_global_flag = mongols_sack_prague
+	# }
+
+	# option = {
+		# name = {
+			# text = EVTOPTA60111
+			# trigger = {
+				# NOT = { religion_group = muslim }
+			# }
+		# }
+		# name = {
+			# text = EVTOPTB60111
+			# trigger = { religion_group = muslim }
+		# }
+
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+
+	# option = {
+		# name = EVTOPTA_TOG_001
+
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+
+		# prestige = 100
+	# }
+# }
+
+# # Mongols sack Vienna
+# narrative_event = {
+	# id = 60112
+	# title = EVTNAME_TOG_013
+	# border = GFX_event_narrative_frame_war
+
+	# desc = {
+		# text = EVTDESC60112
+		# picture = GFX_evt_mongols
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+	# desc = {
+		# text = EVTDESC_TOG_013
+		# picture = GFX_evt_mongols_pillage_oldgods
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+	# }
+
+	# major = yes
+	# is_triggered_only = yes # on_siege_over_winner
+
+	# culture = mongol
+
+	# trigger = {
+		# FROM = {
+			# title = b_wien
+
+			# holder_scope = {
+				# is_mongol_empire_leader_trigger = no
+			# }
+		# }
+
+		# is_mongol_empire_leader_trigger = yes
+		# NOT = { has_global_flag = mongols_sack_vienna }
+	# }
+
+	# major_trigger = {
+		# ai = no
+		# is_mongol_empire_leader_trigger = no
+	# }
+
+	# immediate = {
+		# set_global_flag = mongols_sack_vienna
+	# }
+
+	# option = {
+		# name = {
+			# text = EVTOPTA60112
+			# trigger = {
+				# NOT = { religion_group = muslim }
+			# }
+		# }
+		# name = {
+			# text = EVTOPTB60112
+			# trigger = { religion_group = muslim }
+		# }
+
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+
+	# option = {
+		# name = EVTOPTA_TOG_001
+
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+
+		# prestige = 100
+	# }
+# }
+
+# # Mongols sack Esztergom
+# narrative_event = {
+	# id = 60113
+	# title = EVTNAME_TOG_014
+	# border = GFX_event_narrative_frame_war
+
+	# desc = {
+		# text = EVTDESC60113
+		# picture = GFX_evt_mongols
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+	# desc = {
+		# text = EVTDESC_TOG_014
+		# picture = GFX_evt_mongols_pillage_oldgods
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+	# }
+
+	# major = yes
+	# is_triggered_only = yes # on_siege_over_winner
+
+	# culture = mongol
+
+	# trigger = {
+		# FROM = {
+			# title = b_esztergom
+
+			# holder_scope = {
+				# is_mongol_empire_leader_trigger = no
+			# }
+		# }
+
+		# is_mongol_empire_leader_trigger = yes
+		# NOT = { has_global_flag = mongols_sack_esztergom }
+	# }
+
+	# major_trigger = {
+		# ai = no
+		# is_mongol_empire_leader_trigger = no
+	# }
+
+	# immediate = {
+		# set_global_flag = mongols_sack_esztergom
+	# }
+
+	# option = {
+		# name = {
+			# text = EVTOPTA60113
+			# trigger = {
+				# NOT = { religion_group = muslim }
+			# }
+		# }
+		# name = {
+			# text = INTERESTING
+			# trigger = { religion_group = muslim }
+		# }
+
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+
+	# option = {
+		# name = EVTOPTA_TOG_001
+
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+
+		# prestige = 100
+	# }
+# }
+
+# # Mongols sack Athens
+# narrative_event = {
+	# id = 60114
+	# title = EVTNAME_TOG_015
+	# border = GFX_event_narrative_frame_war
+
+	# desc = {
+		# text = EVTDESC60114
+		# picture = GFX_evt_mongols
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+	# desc = {
+		# text = EVTDESC_TOG_015
+		# picture = GFX_evt_mongols_pillage_oldgods
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+	# }
+
+	# major = yes
+	# is_triggered_only = yes # on_siege_over_winner
+
+	# culture = mongol
+
+	# trigger = {
+		# FROM = {
+			# title = b_athens
+
+			# holder_scope = {
+				# is_mongol_empire_leader_trigger = no
+			# }
+		# }
+
+		# is_mongol_empire_leader_trigger = yes
+		# NOT = { has_global_flag = mongols_sack_athens }
+	# }
+
+	# major_trigger = {
+		# ai = no
+		# is_mongol_empire_leader_trigger = no
+	# }
+
+	# immediate = {
+		# set_global_flag = mongols_sack_athens
+	# }
+
+	# option = {
+		# name = {
+			# text = EVTOPTA60114
+			# trigger = {
+				# NOT = { religion_group = muslim }
+			# }
+		# }
+		# name = {
+			# text = UNFORTUNATE
+			# trigger = { religion_group = muslim }
+		# }
+
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+
+	# option = {
+		# name = EVTOPTA_TOG_001
+
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+
+		# prestige = 100
+	# }
+# }
+
+# # Mongols sack Belgrade
+# narrative_event = {
+	# id = 60115
+	# title = EVTNAME_TOG_016
+	# border = GFX_event_narrative_frame_war
+
+	# desc = {
+		# text = EVTDESC60115
+		# picture = GFX_evt_mongols
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+	# desc = {
+		# text = EVTDESC_TOG_016
+		# picture = GFX_evt_mongols_pillage_oldgods
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+	# }
+
+	# major = yes
+	# is_triggered_only = yes # on_siege_over_winner
+
+	# culture = mongol
+
+	# trigger = {
+		# FROM = {
+			# title = b_belgrade
+
+			# holder_scope = {
+				# is_mongol_empire_leader_trigger = no
+			# }
+		# }
+
+		# is_mongol_empire_leader_trigger = yes
+		# NOT = { has_global_flag = mongols_sack_belgrade }
+	# }
+
+	# major_trigger = {
+		# ai = no
+		# is_mongol_empire_leader_trigger = no
+	# }
+
+	# immediate = {
+		# set_global_flag = mongols_sack_belgrade
+	# }
+
+	# option = {
+		# name = {
+			# text = EVTOPTA60115
+			# trigger = {
+				# NOT = { religion_group = muslim }
+			# }
+		# }
+		# name = {
+			# text = EVTOPTB60115
+			# trigger = { religion_group = muslim }
+		# }
+
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+
+	# option = {
+		# name = EVTOPTA_TOG_001
+
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+
+		# prestige = 100
+	# }
+# }
+
+# ### Mongols sack Middle Eastern cities ###
+
+# # Mongols sack Baghdad
+# narrative_event = {
+	# id = 60116
+	# title = EVTNAME_TOG_017
+	# border = GFX_event_narrative_frame_war
+
+	# desc = {
+		# text = EVTDESC60116
+		# picture = GFX_evt_mongols
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+	# desc = {
+		# text = EVTDESC_TOG_017
+		# picture = GFX_evt_mongols_pillage_oldgods
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+	# }
+
+	# major = yes
+	# is_triggered_only = yes # on_siege_over_winner
+
+	# culture = mongol
+
+	# trigger = {
+		# FROM = {
+			# title = b_bagdad
+
+			# holder_scope = {
+				# is_mongol_empire_leader_trigger = no
+			# }
+		# }
+
+		# is_mongol_empire_leader_trigger = yes
+		# NOT = { has_global_flag = mongols_sack_baghdad }
+	# }
+
+	# major_trigger = {
+		# ai = no
+		# is_mongol_empire_leader_trigger = no
+	# }
+
+	# immediate = {
+		# set_global_flag = mongols_sack_baghdad
+	# }
+
+	# option = {
+		# name = {
+			# text = EVTOPTA60116
+			# trigger = {
+				# NOT = { religion_group = muslim }
+			# }
+		# }
+		# name = {
+			# text = EVTOPTB60116
+			# trigger = { religion_group = muslim }
+		# }
+
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+
+	# option = {
+		# name = EVTOPTA_TOG_001
+
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+
+		# prestige = 100
+	# }
+# }
+
+# # Mongols sack Damascus
+# narrative_event = {
+	# id = 60117
+	# title = EVTNAME_TOG_018
+	# border = GFX_event_narrative_frame_war
+
+	# desc = {
+		# text = EVTDESC60117
+		# picture = GFX_evt_mongols
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+	# desc = {
+		# text = EVTDESC_TOG_018
+		# picture = GFX_evt_mongols_pillage_oldgods
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+	# }
+
+	# major = yes
+	# is_triggered_only = yes # on_siege_over_winner
+
+	# culture = mongol
+
+	# trigger = {
+		# FROM = {
+			# title = b_damascus
+
+			# holder_scope = {
+				# is_mongol_empire_leader_trigger = no
+			# }
+		# }
+
+		# is_mongol_empire_leader_trigger = yes
+		# NOT = { has_global_flag = mongols_sack_damascus }
+	# }
+
+	# major_trigger = {
+		# ai = no
+		# is_mongol_empire_leader_trigger = no
+	# }
+
+	# immediate = {
+		# set_global_flag = mongols_sack_damascus
+	# }
+
+	# option = {
+		# name = {
+			# text = EVTOPTA60117
+			# trigger = {
+				# NOT = { religion_group = muslim }
+			# }
+		# }
+		# name = {
+			# text = EVTOPTB60117
+			# trigger = { religion_group = muslim }
+		# }
+
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+
+	# option = {
+		# name = EVTOPTA_TOG_001
+
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+
+		# prestige = 100
+	# }
+# }
+
+# # Mongols sack Jerusalem
+# narrative_event = {
+	# id = 60118
+	# title = EVTNAME_TOG_019
+	# border = GFX_event_narrative_frame_war
+
+	# desc = {
+		# text = EVTDESC60118
+		# picture = GFX_evt_mongols
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+	# desc = {
+		# text = EVTDESC_TOG_019
+		# picture = GFX_evt_mongols_pillage_oldgods
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+	# }
+
+	# major = yes
+	# is_triggered_only = yes # on_siege_over_winner
+
+	# culture = mongol
+
+	# trigger = {
+		# FROM = {
+			# title = b_jerusalem
+
+			# holder_scope = {
+				# is_mongol_empire_leader_trigger = no
+			# }
+		# }
+
+		# is_mongol_empire_leader_trigger = yes
+
+		# NOR = {
+			# has_global_flag = mongols_sack_jerusalem
+			# religion_group = muslim
+			# religion_group = christian
+		# }
+	# }
+
+	# major_trigger = {
+		# ai = no
+		# is_mongol_empire_leader_trigger = no
+	# }
+
+	# immediate = {
+		# set_global_flag = mongols_sack_jerusalem
+	# }
+
+	# option = {
+		# name = {
+			# text = EVTOPTA60118
+			# trigger = {
+				# NOT = { religion_group = muslim }
+			# }
+		# }
+		# name = {
+			# text = EVTOPTB60118
+			# trigger = { religion_group = muslim }
+		# }
+
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+
+	# option = {
+		# name = EVTOPTA_TOG_001
+
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+
+		# prestige = 100
+	# }
+# }
+
+# # Mongols sack Alexandria
+# narrative_event = {
+	# id = 60119
+	# title = EVTNAME_TOG_020
+	# border = GFX_event_narrative_frame_war
+
+	# desc = {
+		# text = EVTDESC60119
+		# picture = GFX_evt_mongols
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+	# desc = {
+		# text = EVTDESC_TOG_020
+		# picture = GFX_evt_mongols_pillage_oldgods
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+	# }
+
+	# major = yes
+	# is_triggered_only = yes # on_siege_over_winner
+
+	# culture = mongol
+
+	# trigger = {
+		# FROM = {
+			# title = b_alexandria
+
+			# holder_scope = {
+				# is_mongol_empire_leader_trigger = no
+			# }
+		# }
+
+		# is_mongol_empire_leader_trigger = yes
+		# NOT = { has_global_flag = mongols_sack_alexandria }
+	# }
+
+	# major_trigger = {
+		# ai = no
+		# is_mongol_empire_leader_trigger = no
+	# }
+
+	# immediate = {
+		# set_global_flag = mongols_sack_alexandria
+	# }
+
+	# option = {
+		# name = {
+			# text = EVTOPTA60119
+			# trigger = {
+				# NOT = { religion_group = muslim }
+			# }
+		# }
+		# name = {
+			# text = EVTOPTB60119
+			# trigger = { religion_group = muslim }
+		# }
+
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+
+	# option = {
+		# name = EVTOPTA_TOG_001
+
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+
+		# prestige = 100
+	# }
+# }
+
+# # Mongols sack Cairo
+# narrative_event = {
+	# id = 60120
+	# title = EVTNAME_TOG_021
+	# border = GFX_event_narrative_frame_war
+
+	# desc = {
+		# text = EVTDESC60120
+		# picture = GFX_evt_mongols
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+	# desc = {
+		# text = EVTDESC_TOG_021
+		# picture = GFX_evt_mongols_pillage_oldgods
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+	# }
+
+	# major = yes
+	# is_triggered_only = yes # on_siege_over_winner
+
+	# culture = mongol
+
+	# trigger = {
+		# FROM = {
+			# title = b_cairo
+
+			# holder_scope = {
+				# is_mongol_empire_leader_trigger = no
+			# }
+		# }
+
+		# is_mongol_empire_leader_trigger = yes
+		# NOT = { has_global_flag = mongols_sack_cairo }
+	# }
+
+	# major_trigger = {
+		# is_mongol_empire_leader_trigger = no
+	# }
+
+	# immediate = {
+		# set_global_flag = mongols_sack_cairo
+	# }
+
+	# option = {
+		# name = {
+			# text = EVTOPTA60120
+			# trigger = {
+				# NOT = { religion_group = muslim }
+			# }
+		# }
+		# name = {
+			# text = EVTOPTB60120
+			# trigger = { religion_group = muslim }
+		# }
+
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+
+	# option = {
+		# name = EVTOPTA_TOG_001
+
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+
+		# prestige = 100
+	# }
+# }
+
+# # Mongols sack Mecca
+# narrative_event = {
+	# id = 60121
+	# title = EVTNAME_TOG_022
+	# border = GFX_event_narrative_frame_war
+
+	# desc = {
+		# text = EVTDESC60121
+		# picture = GFX_evt_mecca_falls_soa
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+	# desc = {
+		# text = EVTDESC_TOG_022
+		# picture = GFX_evt_mongols_pillage_oldgods
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+	# }
+
+	# major = yes
+	# is_triggered_only = yes # on_siege_over_winner
+
+	# culture = mongol
+
+	# trigger = {
+		# FROM = {
+			# title = b_mecca
+
+			# holder_scope = {
+				# is_mongol_empire_leader_trigger = no
+			# }
+		# }
+
+		# is_mongol_empire_leader_trigger = yes
+
+		# NOR = {
+			# religion_group = muslim
+			# has_global_flag = mongols_sack_mecca
+		# }
+	# }
+
+	# major_trigger = {
+		# ai = no
+		# is_mongol_empire_leader_trigger = no
+	# }
+
+	# immediate = {
+		# set_global_flag = mongols_sack_mecca
+	# }
+
+	# option = {
+		# name = {
+			# text = EVTOPTA60121
+			# trigger = {
+				# NOT = { religion_group = muslim }
+			# }
+		# }
+		# name = {
+			# text = EVTOPTB60121
+			# trigger = { religion_group = muslim }
+		# }
+
+		# trigger = { is_mongol_empire_leader_trigger = no }
+	# }
+
+	# option = {
+		# name = EVTOPTA_TOG_001
+
+		# trigger = { is_mongol_empire_leader_trigger = yes }
+
+		# prestige = 100
+	# }
+# }
 
 
 ##################################

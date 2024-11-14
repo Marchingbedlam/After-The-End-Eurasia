@@ -1095,22 +1095,22 @@ on_five_year_pulse = {
 			 30 = 10000 # Robin Hood
 		}
 
-		mongol_conversion = {
-			delay = 77
+		# mongol_conversion = {
+			# delay = 77
 
-			950 = 0
+			# 950 = 0
 
-			 42 = 60010 # Ilkhanate converts to Catholic
-			 63 = 60011 # Ilkhanate converts to Orthodox
-			143 = 60012 # Ilkhanate converts to Sunni
-			143 = 60013 # Ilkhanate converts to Shiite
-			143 = 60014 # Ilkhanate converts to Nestorian
-			 42 = 60020 # Golden Horde converts to Catholic
-			125 = 60021 # Golden Horde converts to Orthodox
-			143 = 60022 # Golden Horde converts to Sunni
-			143 = 60023 # Golden Horde converts to Shiite
-			 42 = 60024 # Golden Horde converts to Nestorian
-		}
+			 # 42 = 60010 # Ilkhanate converts to Catholic
+			 # 63 = 60011 # Ilkhanate converts to Orthodox
+			# 143 = 60012 # Ilkhanate converts to Sunni
+			# 143 = 60013 # Ilkhanate converts to Shiite
+			# 143 = 60014 # Ilkhanate converts to Nestorian
+			 # 42 = 60020 # Golden Horde converts to Catholic
+			# 125 = 60021 # Golden Horde converts to Orthodox
+			# 143 = 60022 # Golden Horde converts to Sunni
+			# 143 = 60023 # Golden Horde converts to Shiite
+			 # 42 = 60024 # Golden Horde converts to Nestorian
+		# }
 
 		shia_caliphate = {
 			delay = 85
@@ -1461,33 +1461,33 @@ on_siege_lost_leader_trade_post = {
 # FROM is the taken holding title
 on_siege_over_winner = {
 	events = {
-		60100 # Mongols sack Kiev
-		60101 # Mongols sack Novgorod
-		60102 # Mongols sack Krakow
-		60103 # Mongols sack Aachen
-		60104 # Mongols sack Paris
-		60105 # Mongols sack London
-		60106 # Mongols sack Rome
-		60107 # Mongols sack Venice
-		60108 # Mongols sack Constantinople
-		60109 # Mongols sack Lisbon
-		60110 # Mongols sack Smolensk
-		60111 # Mongols sack Prague
-		60112 # Mongols sack Vienna
-		60113 # Mongols sack Esztergom
-		60114 # Mongols sack Athens
-		60115 # Mongols sack Belgrade
-		60116 # Mongols sack Baghdad
-		60117 # Mongols sack Damascus
-		60118 # Mongols sack Jerusalem
-		60119 # Mongols sack Alexandria
-		60120 # Mongols sack Cairo
-		60121 # Mongols sack Mecca
+		# 60100 # Mongols sack Kiev
+		# 60101 # Mongols sack Novgorod
+		# 60102 # Mongols sack Krakow
+		# 60103 # Mongols sack Aachen
+		# 60104 # Mongols sack Paris
+		# 60105 # Mongols sack London
+		# 60106 # Mongols sack Rome
+		# 60107 # Mongols sack Venice
+		# 60108 # Mongols sack Constantinople
+		# 60109 # Mongols sack Lisbon
+		# 60110 # Mongols sack Smolensk
+		# 60111 # Mongols sack Prague
+		# 60112 # Mongols sack Vienna
+		# 60113 # Mongols sack Esztergom
+		# 60114 # Mongols sack Athens
+		# 60115 # Mongols sack Belgrade
+		# 60116 # Mongols sack Baghdad
+		# 60117 # Mongols sack Damascus
+		# 60118 # Mongols sack Jerusalem
+		# 60119 # Mongols sack Alexandria
+		# 60120 # Mongols sack Cairo
+		# 60121 # Mongols sack Mecca
 	}
 
-	random_events = {
-		400 = 0 # Nothing happens
-	}
+	# random_events = {
+		# 400 = 0 # Nothing happens
+	# }
 }
 
 # ROOT is the owner of the winning unit

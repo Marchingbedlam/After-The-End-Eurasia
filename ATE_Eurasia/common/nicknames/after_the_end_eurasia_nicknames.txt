@@ -65,7 +65,7 @@ nick_the_red = {
 		ruled_years = 10
 		OR = {
 			has_character_modifier = cannibal
-			trait = cannibal_trait
+			trait = cannibal
 			AND = {
 				trait = wroth
 				OR = {
@@ -85,7 +85,7 @@ nick_the_red = {
 		modifier = {
 			factor = 5
 			OR = {
-				trait = cannibal_trait
+				trait = cannibal
 				has_character_modifier = cannibal
 			}
 		}
@@ -249,7 +249,7 @@ nick_the_mountain = {
 		OR = {
 			trait = strong
 			trait = brawny
-			trait = fair
+			trait = attractive
 		}
 		OR = {
 			trait = shrewd
@@ -314,7 +314,7 @@ nick_son_of_the_white_mare = {
 		}
 		modifier = {
 			factor = 2.0
-			trait = fair
+			trait = attractive
 		}
 		modifier = {
 			factor = 2.0
@@ -381,7 +381,7 @@ nick_the_mighty = {
 		OR = {
 			trait = strong
 			trait = brawny
-			trait = fair
+			trait = attractive
 		}
 		OR = {
 			trait = shrewd
