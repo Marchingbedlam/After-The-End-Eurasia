@@ -794,4 +794,82 @@ decisions = {
 			factor = 1
 		}
 	}
+	form_al_watan_al_akbar = {
+		is_high_prio = yes
+		only_playable = yes
+		
+		potential = {
+			is_alternate_start = no
+			NOT = { has_global_flag = al_watan_al_akbar_formed }
+			independent = yes
+			religion = an_nahar
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			NOT = { is_incapable = yes }
+			prestige = 1000
+			scaled_wealth = 1.5
+			war = no
+			AND = {
+				has_landed_title = e_al_mashriq
+				has_landed_title = e_arabiyya
+				has_landed_title = e_misr
+				has_landed_title = e_maghrib
+			}
+		}
+		effect = {
+			activate_title = { title = e_al_watan_al_akbar status = yes }
+			scaled_wealth = -1.5
+			if = {
+				limit = { has_nickname = no }
+				give_nickname = nick_the_great
+			}
+			any_demesne_title = {
+				limit = { tier = KING }
+				de_jure_liege = e_al_watan_al_akbar
+			}
+			hidden_tooltip = {
+				primary_title = {
+					if = {
+						limit = { tier = EMPEROR }
+						any_direct_de_jure_vassal_title = {
+							de_jure_liege = e_al_watan_al_akbar
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_patrician = no
+				}
+				primary_title = {
+					e_al_watan_al_akbar = {
+						grant_title = ROOT
+						copy_title_laws = PREV
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_patrician = yes
+				}
+				primary_title = {
+					e_al_watan_al_akbar = {
+						grant_title = ROOT
+						copy_title_laws = PREV
+					}
+				}
+			}
+			any_demesne_title = {
+				limit = {
+					tier = EMPEROR
+					NOT = { title = e_al_watan_al_akbar }
+				}
+				destroy_landed_title = THIS
+				hidden_tooltip = { activate_title = { title = THIS status = no } }
+			}
+			set_global_flag = al_watan_al_akbar_formed
+		}
+	}
 }

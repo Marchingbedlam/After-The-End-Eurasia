@@ -260,6 +260,18 @@ e_lusitania = {
 		always = no # Only created through special event
 	}
 }
+e_al_watan_al_akbar = {
+	color = { 235 236 239 }
+	color2 = { 220 220 20 }
+	
+	capital = 1997 # c_damascus
+	
+	dignity = 20 # Counted as having this many more counties than it does
+	
+	allow = {
+		always = no # Only created through special event
+	}
+}
 
 ### titular kingdoms ###
 
