@@ -189,30 +189,30 @@ province_event = {
 			}
 		}
 
-		mult_modifier = {
-			factor = 0.25
+		# mult_modifier = {
+			# factor = 0.25
 
-			OR = {
-				culture = zhangzhung
-				culture = sumpa
-			}
+			# OR = {
+				# culture = zhangzhung
+				# culture = sumpa
+			# }
 
-			owner = {
-				culture = bodpa
+			# owner = {
+				# culture = bodpa
 
-				OR = {
-					any_owned_bloodline = {
-						has_bloodline_flag = bloodline_songtsen_gampo
-					}
+				# OR = {
+					# any_owned_bloodline = {
+						# has_bloodline_flag = bloodline_songtsen_gampo
+					# }
 
-					top_liege = {
-						any_owned_bloodline = {
-							has_bloodline_flag = bloodline_songtsen_gampo
-						}
-					}
-				}
-			}
-		}
+					# top_liege = {
+						# any_owned_bloodline = {
+							# has_bloodline_flag = bloodline_songtsen_gampo
+						# }
+					# }
+				# }
+			# }
+		# }
 
 		mult_modifier = {
 			factor = 0.6
@@ -228,26 +228,26 @@ province_event = {
 			}
 		}
 
-		mult_modifier = { # Roman Renaissance
-			factor = 0.5
+		# mult_modifier = { # Roman Renaissance
+			# factor = 0.5
 
-			owner = {
-				culture = roman
-			}
+			# owner = {
+				# culture = roman
+			# }
 
-			culture_group = latin
-			has_global_flag = flag_started_roman_renaissance
-		}
+			# culture_group = latin
+			# has_global_flag = flag_started_roman_renaissance
+		# }
 
-		mult_modifier = { # Greek culture is more impervious to Romanization
-			factor = 2
+		# mult_modifier = { # Greek culture is more impervious to Romanization
+			# factor = 2
 
-			owner = {
-				culture = roman
-			}
+			# owner = {
+				# culture = roman
+			# }
 
-			culture = greek
-		}
+			# culture = greek
+		# }
 
 		# Effect of wonder upgrades
 		mult_modifier = {
@@ -464,21 +464,21 @@ province_event = {
 			has_province_flag = recent_depopulation_3
 		}
 
-		mult_modifier = {
-			factor = 0.5 # Altaic nomad steppe bonus vs non-Altaics
+		# mult_modifier = {
+			# factor = 0.5 # Altaic nomad steppe bonus vs non-Altaics
 
-			owner = {
-				culture_group = altaic
+			# owner = {
+				# culture_group = altaic
 
-				trigger_if = {
-					limit = { has_dlc = "Horse Lords" }
-					is_nomadic = yes
-				}
-			}
+				# trigger_if = {
+					# limit = { has_dlc = "Horse Lords" }
+					# is_nomadic = yes
+				# }
+			# }
 
-			terrain = steppe
-			NOT = { culture_group = altaic }
-		}
+			# terrain = steppe
+			# NOT = { culture_group = altaic }
+		# }
 
 		mult_modifier = {
 			factor = 3
@@ -496,51 +496,51 @@ province_event = {
 			}
 		}
 
-		mult_modifier = {
-			factor = 0.25
+		# mult_modifier = {
+			# factor = 0.25
 
-			OR = {
-				culture = zhangzhung
-				culture = sumpa
-			}
+			# OR = {
+				# culture = zhangzhung
+				# culture = sumpa
+			# }
 
-			owner = {
-				culture = bodpa
+			# owner = {
+				# culture = bodpa
 
-				OR = {
-					any_owned_bloodline = {
-						has_bloodline_flag = bloodline_songtsen_gampo
-					}
+				# OR = {
+					# any_owned_bloodline = {
+						# has_bloodline_flag = bloodline_songtsen_gampo
+					# }
 
-					top_liege = {
-						any_owned_bloodline = {
-							has_bloodline_flag = bloodline_songtsen_gampo
-						}
-					}
-				}
-			}
-		}
+					# top_liege = {
+						# any_owned_bloodline = {
+							# has_bloodline_flag = bloodline_songtsen_gampo
+						# }
+					# }
+				# }
+			# }
+		# }
 
-		mult_modifier = { # Roman Renaissance
-			factor = 0.5
+		# mult_modifier = { # Roman Renaissance
+			# factor = 0.5
 
-			owner = {
-				culture = roman
-			}
+			# owner = {
+				# culture = roman
+			# }
 
-			has_global_flag = flag_started_roman_renaissance
-			culture_group = latin
-		}
+			# has_global_flag = flag_started_roman_renaissance
+			# culture_group = latin
+		# }
 
-		mult_modifier = { # Greek culture is more impervious to Romanization
-			factor = 2
+		# mult_modifier = { # Greek culture is more impervious to Romanization
+			# factor = 2
 
-			owner = {
-				culture = roman
-			}
+			# owner = {
+				# culture = roman
+			# }
 
-			culture = greek
-		}
+			# culture = greek
+		# }
 	}
 
 	option = {
@@ -564,374 +564,374 @@ province_event = {
 }
 
 # The English Melting Pot
-character_event = {
-	id = 55002
-	desc = EVTDESC55002
-	picture = GFX_evt_stone_church
-
-	is_triggered_only = yes # on_five_year_pulse, random_events, english_conversion
-
-	only_playable = yes
-	culture = norman
-
-	trigger = {
-		year >= 1100
-
-		any_demesne_province = {
-			region = custom_england
-			culture = anglo-saxon
-			owned_by = PREV
-
-			OR = {
-				has_castle = yes
-				has_city = yes
-				has_temple = yes
-				has_tribal = yes
-			}
-		}
-
-		should_evolve_cultures_trigger = yes
-		NOT = { government = chinese_imperial_government }
-	}
-
-	weight_multiplier = {
-		factor = 1
-
-		mult_modifier = {
-			factor = 1.33
-			learning >= 7
-		}
-
-		mult_modifier = {
-			factor = 1.33
-			learning >= 9
-		}
-
-		mult_modifier = {
-			factor = 1.33
-			learning >= 11
-		}
-
-		mult_modifier = {
-			factor = 1.33
-			learning >= 13
-		}
-
-		mult_modifier = {
-			factor = 0.67
-			learning < 5
-		}
-
-		mult_modifier = {
-			factor = 0.67
-			learning < 3
-		}
-
-		mult_modifier = {
-			factor = 0.5
-			learning < 1
-		}
-
-		mult_modifier = {
-			factor = 3.33
-
-			OR = {
-				has_game_rule = {
-					name = culture_conversion
-					value = faster_melting_pots
-				}
-
-				has_game_rule = {
-					name = culture_conversion
-					value = faster_melting_pots_and_slower_normal
-				}
-			}
-		}
-	}
-
-	option = {
-		name = EVTOPTA55002
-
-		culture = english
-
-		random_demesne_province = {
-			show_scope_change = no
-
-			limit = {
-				region = custom_england
-				culture = anglo-saxon
-				owned_by = PREV
-
-				OR = {
-					has_castle = yes
-					has_city = yes
-					has_temple = yes
-					has_tribal = yes
-				}
-			}
-
-			culture = english
-		}
-	}
-}
-
-# It's spreading
-character_event = {
-	id = 55003
-	desc = EVTDESC55003
-	picture = GFX_evt_stone_church
-
-	is_triggered_only = yes # on_five_year_pulse, random_events, english_conversion
-
-	only_playable = yes
-	culture = english
-
-	trigger = {
-		any_demesne_province = {
-			region = custom_england
-			owned_by = PREV
-
-			OR = {
-				culture = anglo-saxon
-				culture = norman
-			}
-
-			OR = {
-				has_castle = yes
-				has_city = yes
-				has_temple = yes
-				has_tribal = yes
-			}
-		}
-
-		year >= 1100
-		should_evolve_cultures_trigger = yes
-	}
-
-	weight_multiplier = {
-		factor = 1
-
-		mult_modifier = {
-			factor = 3.33
-
-			OR = {
-				has_game_rule = {
-					name = culture_conversion
-					value = faster_melting_pots
-				}
-
-				has_game_rule = {
-					name = culture_conversion
-					value = faster_melting_pots_and_slower_normal
-				}
-			}
-		}
-	}
-
-	option = {
-		name = EVTOPTA55003
-
-		random_demesne_province = {
-			show_scope_change = no
-
-			limit = {
-				region = custom_england
-				owned_by = PREV
-
-				OR = {
-					culture = anglo-saxon
-					culture = norman
-				}
-
-				OR = {
-					has_castle = yes
-					has_city = yes
-					has_temple = yes
-					has_tribal = yes
-				}
-			}
-
-			culture = english
-		}
-	}
-}
-
-# Make my court speak English
-character_event = {
-	id = 55004
-	desc = EVTDESC55004
-	picture = GFX_evt_throne_room
-
-	is_triggered_only = yes # on_yearly_pulse, random_events, english_courtier_conversion
-
-	only_rulers = yes
-	culture = english
-
-	trigger = {
-		year >= 1100
-
-		top_liege = {
-			primary_title = {
-				OR = {
-					title = k_england
-					title = e_britannia
-				}
-			}
-		}
-
-		any_courtier = {
-			OR = {
-				culture = anglo-saxon
-				culture = norman
-			}
-		}
-
-		should_evolve_cultures_trigger = yes
-	}
-
-	weight_multiplier = {
-		factor = 1
-
-		mult_modifier = {
-			factor = 3.33
-
-			OR = {
-				has_game_rule = {
-					name = culture_conversion
-					value = faster_melting_pots
-				}
-
-				has_game_rule = {
-					name = culture_conversion
-					value = faster_melting_pots_and_slower_normal
-				}
-			}
-		}
-	}
-
-	option = {
-		name = EVTOPTA55004
-
-		any_courtier = {
-			show_scope_change = no
-
-			limit = {
-				OR = {
-					culture = anglo-saxon
-					culture = norman
-				}
-			}
-
-			score_value = { # Prioritizes selecting an interesting courtier...
-				value = 10
-				interesting_courtier_selection_score = yes
-			}
-
-			culture = english
-
-			character_event = {
-				id = 55006
-				days = 3
-			}
-		}
-	}
-}
-
-# Make my vassal speak English
-character_event = {
-	id = 55005
-	desc = EVTDESC55005
-	picture = GFX_evt_throne_room
-
-	is_triggered_only = yes # on_five_year_pulse, random_events, english_conversion
-
-	only_playable = yes
-	culture = english
-
-	trigger = {
-		year >= 1100
-		independent = no
-
-		top_liege = {
-			primary_title = {
-				OR = {
-					title = k_england
-					title = e_britannia
-				}
-			}
-		}
-
-		any_vassal = {
-			OR = {
-				culture = anglo-saxon
-				culture = norman
-			}
-		}
-
-		should_evolve_cultures_trigger = yes
-	}
-
-	weight_multiplier = {
-		factor = 1
-
-		mult_modifier = {
-			factor = 3.33
-
-			OR = {
-				has_game_rule = {
-					name = culture_conversion
-					value = faster_melting_pots
-				}
-
-				has_game_rule = {
-					name = culture_conversion
-					value = faster_melting_pots_and_slower_normal
-				}
-			}
-		}
-	}
-
-	option = {
-		name = EVTOPTA55005
-
-		any_vassal = {
-			limit = {
-				OR = {
-					culture = anglo-saxon
-					culture = norman
-				}
-			}
-
-			score_value = { # Prioritizes selecting an interesting courtier...
-				value = 10
-				interesting_courtier_selection_score = yes
-			}
-
-			tooltip = {
-				culture = english
-			}
-
-			character_event = {
-				id = 55006
-				days = 3
-			}
-		}
-	}
-}
-
-character_event = {
-	id = 55006
-	desc = EVTDESC55006
-	picture = GFX_evt_throne_room
-
-	is_triggered_only = yes
-
-	option = {
-		name = EVTOPTA55006
-
-		culture = english
-	}
-}
+# character_event = {
+	# id = 55002
+	# desc = EVTDESC55002
+	# picture = GFX_evt_stone_church
+
+	# is_triggered_only = yes # on_five_year_pulse, random_events, english_conversion
+
+	# only_playable = yes
+	# culture = norman
+
+	# trigger = {
+		# year >= 1100
+
+		# any_demesne_province = {
+			# region = custom_england
+			# culture = anglo-saxon
+			# owned_by = PREV
+
+			# OR = {
+				# has_castle = yes
+				# has_city = yes
+				# has_temple = yes
+				# has_tribal = yes
+			# }
+		# }
+
+		# should_evolve_cultures_trigger = yes
+		# NOT = { government = chinese_imperial_government }
+	# }
+
+	# weight_multiplier = {
+		# factor = 1
+
+		# mult_modifier = {
+			# factor = 1.33
+			# learning >= 7
+		# }
+
+		# mult_modifier = {
+			# factor = 1.33
+			# learning >= 9
+		# }
+
+		# mult_modifier = {
+			# factor = 1.33
+			# learning >= 11
+		# }
+
+		# mult_modifier = {
+			# factor = 1.33
+			# learning >= 13
+		# }
+
+		# mult_modifier = {
+			# factor = 0.67
+			# learning < 5
+		# }
+
+		# mult_modifier = {
+			# factor = 0.67
+			# learning < 3
+		# }
+
+		# mult_modifier = {
+			# factor = 0.5
+			# learning < 1
+		# }
+
+		# mult_modifier = {
+			# factor = 3.33
+
+			# OR = {
+				# has_game_rule = {
+					# name = culture_conversion
+					# value = faster_melting_pots
+				# }
+
+				# has_game_rule = {
+					# name = culture_conversion
+					# value = faster_melting_pots_and_slower_normal
+				# }
+			# }
+		# }
+	# }
+
+	# option = {
+		# name = EVTOPTA55002
+
+		# culture = english
+
+		# random_demesne_province = {
+			# show_scope_change = no
+
+			# limit = {
+				# region = custom_england
+				# culture = anglo-saxon
+				# owned_by = PREV
+
+				# OR = {
+					# has_castle = yes
+					# has_city = yes
+					# has_temple = yes
+					# has_tribal = yes
+				# }
+			# }
+
+			# culture = english
+		# }
+	# }
+# }
+
+# # It's spreading
+# character_event = {
+	# id = 55003
+	# desc = EVTDESC55003
+	# picture = GFX_evt_stone_church
+
+	# is_triggered_only = yes # on_five_year_pulse, random_events, english_conversion
+
+	# only_playable = yes
+	# culture = english
+
+	# trigger = {
+		# any_demesne_province = {
+			# region = custom_england
+			# owned_by = PREV
+
+			# OR = {
+				# culture = anglo-saxon
+				# culture = norman
+			# }
+
+			# OR = {
+				# has_castle = yes
+				# has_city = yes
+				# has_temple = yes
+				# has_tribal = yes
+			# }
+		# }
+
+		# year >= 1100
+		# should_evolve_cultures_trigger = yes
+	# }
+
+	# weight_multiplier = {
+		# factor = 1
+
+		# mult_modifier = {
+			# factor = 3.33
+
+			# OR = {
+				# has_game_rule = {
+					# name = culture_conversion
+					# value = faster_melting_pots
+				# }
+
+				# has_game_rule = {
+					# name = culture_conversion
+					# value = faster_melting_pots_and_slower_normal
+				# }
+			# }
+		# }
+	# }
+
+	# option = {
+		# name = EVTOPTA55003
+
+		# random_demesne_province = {
+			# show_scope_change = no
+
+			# limit = {
+				# region = custom_england
+				# owned_by = PREV
+
+				# OR = {
+					# culture = anglo-saxon
+					# culture = norman
+				# }
+
+				# OR = {
+					# has_castle = yes
+					# has_city = yes
+					# has_temple = yes
+					# has_tribal = yes
+				# }
+			# }
+
+			# culture = english
+		# }
+	# }
+# }
+
+# # Make my court speak English
+# character_event = {
+	# id = 55004
+	# desc = EVTDESC55004
+	# picture = GFX_evt_throne_room
+
+	# is_triggered_only = yes # on_yearly_pulse, random_events, english_courtier_conversion
+
+	# only_rulers = yes
+	# culture = english
+
+	# trigger = {
+		# year >= 1100
+
+		# top_liege = {
+			# primary_title = {
+				# OR = {
+					# title = k_england
+					# title = e_britannia
+				# }
+			# }
+		# }
+
+		# any_courtier = {
+			# OR = {
+				# culture = anglo-saxon
+				# culture = norman
+			# }
+		# }
+
+		# should_evolve_cultures_trigger = yes
+	# }
+
+	# weight_multiplier = {
+		# factor = 1
+
+		# mult_modifier = {
+			# factor = 3.33
+
+			# OR = {
+				# has_game_rule = {
+					# name = culture_conversion
+					# value = faster_melting_pots
+				# }
+
+				# has_game_rule = {
+					# name = culture_conversion
+					# value = faster_melting_pots_and_slower_normal
+				# }
+			# }
+		# }
+	# }
+
+	# option = {
+		# name = EVTOPTA55004
+
+		# any_courtier = {
+			# show_scope_change = no
+
+			# limit = {
+				# OR = {
+					# culture = anglo-saxon
+					# culture = norman
+				# }
+			# }
+
+			# score_value = { # Prioritizes selecting an interesting courtier...
+				# value = 10
+				# interesting_courtier_selection_score = yes
+			# }
+
+			# culture = english
+
+			# character_event = {
+				# id = 55006
+				# days = 3
+			# }
+		# }
+	# }
+# }
+
+# # Make my vassal speak English
+# character_event = {
+	# id = 55005
+	# desc = EVTDESC55005
+	# picture = GFX_evt_throne_room
+
+	# is_triggered_only = yes # on_five_year_pulse, random_events, english_conversion
+
+	# only_playable = yes
+	# culture = english
+
+	# trigger = {
+		# year >= 1100
+		# independent = no
+
+		# top_liege = {
+			# primary_title = {
+				# OR = {
+					# title = k_england
+					# title = e_britannia
+				# }
+			# }
+		# }
+
+		# any_vassal = {
+			# OR = {
+				# culture = anglo-saxon
+				# culture = norman
+			# }
+		# }
+
+		# should_evolve_cultures_trigger = yes
+	# }
+
+	# weight_multiplier = {
+		# factor = 1
+
+		# mult_modifier = {
+			# factor = 3.33
+
+			# OR = {
+				# has_game_rule = {
+					# name = culture_conversion
+					# value = faster_melting_pots
+				# }
+
+				# has_game_rule = {
+					# name = culture_conversion
+					# value = faster_melting_pots_and_slower_normal
+				# }
+			# }
+		# }
+	# }
+
+	# option = {
+		# name = EVTOPTA55005
+
+		# any_vassal = {
+			# limit = {
+				# OR = {
+					# culture = anglo-saxon
+					# culture = norman
+				# }
+			# }
+
+			# score_value = { # Prioritizes selecting an interesting courtier...
+				# value = 10
+				# interesting_courtier_selection_score = yes
+			# }
+
+			# tooltip = {
+				# culture = english
+			# }
+
+			# character_event = {
+				# id = 55006
+				# days = 3
+			# }
+		# }
+	# }
+# }
+
+# character_event = {
+	# id = 55006
+	# desc = EVTDESC55006
+	# picture = GFX_evt_throne_room
+
+	# is_triggered_only = yes
+
+	# option = {
+		# name = EVTOPTA55006
+
+		# culture = english
+	# }
+# }
 
 # A ruler is assimilated by the local culture
 character_event = {
@@ -963,13 +963,13 @@ character_event = {
 		}
 
 		# See special event 55002
-		trigger_if = {
-			limit = { culture = norman }
+		# trigger_if = {
+			# limit = { culture = norman }
 
-			capital_scope = {
-				NOT = { culture = anglo-saxon }
-			}
-		}
+			# capital_scope = {
+				# NOT = { culture = anglo-saxon }
+			# }
+		# }
 
 		# See special event TOG.2003, oldgods_culture_conversion.txt
 		trigger_if = {
