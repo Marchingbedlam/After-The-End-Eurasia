@@ -137,126 +137,126 @@ tribal = {
 		extra_tech_building_start = 2.5
 	}
 
-	tb_defensive_fortifications_1 = {
-		desc = tb_defensive_fortifications_1_desc
-		trigger = { TECH_CASTLE_CONSTRUCTION >= 0 }
-		piety_cost = 100
-		build_time = 365
+	# tb_defensive_fortifications_1 = {
+		# desc = tb_defensive_fortifications_1_desc
+		# trigger = { TECH_CASTLE_CONSTRUCTION >= 0 }
+		# piety_cost = 100
+		# build_time = 365
 
-		potential = {
-			FROM = {
-				OR = {
-					religion_openly_bon_or_reformed_trigger = yes
-					religion_openly_baltic_or_reformed_trigger = yes
-					religion_openly_finnish_or_reformed_trigger = yes
-					religion_openly_slavic_or_reformed_trigger = yes
-					religion_openly_west_african_or_reformed_trigger = yes
-				}
-			}
-		}
+		# potential = {
+			# FROM = {
+				# OR = {
+					# religion_openly_bon_or_reformed_trigger = yes
+					# religion_openly_baltic_or_reformed_trigger = yes
+					# religion_openly_finnish_or_reformed_trigger = yes
+					# religion_openly_slavic_or_reformed_trigger = yes
+					# religion_openly_amazigh_or_reformed_trigger = yes
+				# }
+			# }
+		# }
 
-		fort_level = 0.20
-		garrison_size = 0.15
-		archers = 10
-		ai_creation_factor = 97
-		ai_feudal_modifier = 10
-		ai_republic_modifier = -10
+		# fort_level = 0.20
+		# garrison_size = 0.15
+		# archers = 10
+		# ai_creation_factor = 97
+		# ai_feudal_modifier = 10
+		# ai_republic_modifier = -10
 
-		extra_tech_building_start = 0.3
-	}
+		# extra_tech_building_start = 0.3
+	# }
 
-	tb_defensive_fortifications_2 = {
-		desc = tb_defensive_fortifications_2_desc
-		trigger = { TECH_CASTLE_CONSTRUCTION >= 0 }
-		upgrades_from = tb_defensive_fortifications_1
-		piety_cost = 150
-		build_time = 365
+	# tb_defensive_fortifications_2 = {
+		# desc = tb_defensive_fortifications_2_desc
+		# trigger = { TECH_CASTLE_CONSTRUCTION >= 0 }
+		# upgrades_from = tb_defensive_fortifications_1
+		# piety_cost = 150
+		# build_time = 365
 
-		potential = {
-			FROM = {
-				OR = {
-					religion_openly_bon_or_reformed_trigger = yes
-					religion_openly_baltic_or_reformed_trigger = yes
-					religion_openly_finnish_or_reformed_trigger = yes
-					religion_openly_slavic_or_reformed_trigger = yes
-					religion_openly_west_african_or_reformed_trigger = yes
-				}
-			}
-		}
+		# potential = {
+			# FROM = {
+				# OR = {
+					# religion_openly_bon_or_reformed_trigger = yes
+					# religion_openly_baltic_or_reformed_trigger = yes
+					# religion_openly_finnish_or_reformed_trigger = yes
+					# religion_openly_slavic_or_reformed_trigger = yes
+					# religion_openly_amazigh_or_reformed_trigger = yes
+				# }
+			# }
+		# }
 
-		fort_level = 0.20
-		garrison_size = 0.15
-		archers = 10
-		ai_creation_factor = 98
-		ai_feudal_modifier = 10
-		ai_republic_modifier = -10
+		# fort_level = 0.20
+		# garrison_size = 0.15
+		# archers = 10
+		# ai_creation_factor = 98
+		# ai_feudal_modifier = 10
+		# ai_republic_modifier = -10
 
-		convert_to_city = ct_wall_q_1
-		convert_to_castle = ca_wall_q_1
+		# convert_to_city = ct_wall_q_1
+		# convert_to_castle = ca_wall_q_1
 
-		extra_tech_building_start = 1.5
-	}
+		# extra_tech_building_start = 1.5
+	# }
 
-	tb_defensive_fortifications_3 = {
-		desc = tb_defensive_fortifications_3_desc
-		trigger = { TECH_CASTLE_CONSTRUCTION >= 1 }
-		upgrades_from = tb_defensive_fortifications_2
-		piety_cost = 200
-		build_time = 365
+	# tb_defensive_fortifications_3 = {
+		# desc = tb_defensive_fortifications_3_desc
+		# trigger = { TECH_CASTLE_CONSTRUCTION >= 1 }
+		# upgrades_from = tb_defensive_fortifications_2
+		# piety_cost = 200
+		# build_time = 365
 
-		potential = {
-			FROM = {
-				OR = {
-					religion_openly_bon_or_reformed_trigger = yes
-					religion_openly_baltic_or_reformed_trigger = yes
-					religion_openly_finnish_or_reformed_trigger = yes
-					religion_openly_slavic_or_reformed_trigger = yes
-					religion_openly_west_african_or_reformed_trigger = yes
-				}
-			}
-		}
+		# potential = {
+			# FROM = {
+				# OR = {
+					# religion_openly_bon_or_reformed_trigger = yes
+					# religion_openly_baltic_or_reformed_trigger = yes
+					# religion_openly_finnish_or_reformed_trigger = yes
+					# religion_openly_slavic_or_reformed_trigger = yes
+					# religion_openly_amazigh_or_reformed_trigger = yes
+				# }
+			# }
+		# }
 
-		fort_level = 0.20
-		garrison_size = 0.15
-		archers = 10
-		ai_creation_factor = 99
-		ai_feudal_modifier = 10
-		ai_republic_modifier = -10
+		# fort_level = 0.20
+		# garrison_size = 0.15
+		# archers = 10
+		# ai_creation_factor = 99
+		# ai_feudal_modifier = 10
+		# ai_republic_modifier = -10
 
-		extra_tech_building_start = 2
-	}
+		# extra_tech_building_start = 2
+	# }
 
-	tb_defensive_fortifications_4 = {
-		desc = tb_defensive_fortifications_4_desc
-		trigger = { TECH_CASTLE_CONSTRUCTION >= 1 }
-		upgrades_from = tb_defensive_fortifications_3
-		piety_cost = 250
-		build_time = 365
+	# tb_defensive_fortifications_4 = {
+		# desc = tb_defensive_fortifications_4_desc
+		# trigger = { TECH_CASTLE_CONSTRUCTION >= 1 }
+		# upgrades_from = tb_defensive_fortifications_3
+		# piety_cost = 250
+		# build_time = 365
 
-		potential = {
-			FROM = {
-				OR = {
-					religion_openly_bon_or_reformed_trigger = yes
-					religion_openly_baltic_or_reformed_trigger = yes
-					religion_openly_finnish_or_reformed_trigger = yes
-					religion_openly_slavic_or_reformed_trigger = yes
-					religion_openly_west_african_or_reformed_trigger = yes
-				}
-			}
-		}
+		# potential = {
+			# FROM = {
+				# OR = {
+					# religion_openly_bon_or_reformed_trigger = yes
+					# religion_openly_baltic_or_reformed_trigger = yes
+					# religion_openly_finnish_or_reformed_trigger = yes
+					# religion_openly_slavic_or_reformed_trigger = yes
+					# religion_openly_amazigh_or_reformed_trigger = yes
+				# }
+			# }
+		# }
 
-		fort_level = 0.20
-		garrison_size = 0.15
-		archers = 10
-		ai_creation_factor = 100
-		ai_feudal_modifier = 10
-		ai_republic_modifier = -10
+		# fort_level = 0.20
+		# garrison_size = 0.15
+		# archers = 10
+		# ai_creation_factor = 100
+		# ai_feudal_modifier = 10
+		# ai_republic_modifier = -10
 
-		convert_to_city = ct_wall_q_2
-		convert_to_castle = ca_wall_q_2
+		# convert_to_city = ct_wall_q_2
+		# convert_to_castle = ca_wall_q_2
 
-		extra_tech_building_start = 2.5
-	}
+		# extra_tech_building_start = 2.5
+	# }
 
 	tb_shipyard_1 = {
 		desc = shipyard_desc
@@ -494,7 +494,7 @@ tribal = {
 			terrain = steppe
 			FROM = {
 				OR = {
-					culture_group = altaic
+					culture_group = tungusic
 					culture_group = magyar
 				}
 			}
@@ -516,7 +516,7 @@ tribal = {
 			terrain = steppe
 			FROM = {
 				OR = {
-					culture_group = altaic
+					culture_group = tungusic
 					culture_group = magyar
 				}
 			}
@@ -542,7 +542,7 @@ tribal = {
 			terrain = steppe
 			FROM = {
 				OR = {
-					culture_group = altaic
+					culture_group = tungusic
 					culture_group = magyar
 				}
 			}
@@ -565,7 +565,7 @@ tribal = {
 			terrain = steppe
 			FROM = {
 				OR = {
-					culture_group = altaic
+					culture_group = tungusic
 					culture_group = magyar
 				}
 			}
@@ -594,9 +594,9 @@ tribal = {
 			}
 			FROM = {
 				OR = {
-					culture_group = altaic
+					culture_group = tungusic
 					culture_group = magyar
-					culture = alan
+					# culture = alan
 				}
 			}
 		}
@@ -620,9 +620,9 @@ tribal = {
 			}
 			FROM = {
 				OR = {
-					culture_group = altaic
+					culture_group = tungusic
 					culture_group = magyar
-					culture = alan
+					# culture = alan
 				}
 			}
 		}
@@ -650,9 +650,9 @@ tribal = {
 			}
 			FROM = {
 				OR = {
-					culture_group = altaic
+					culture_group = tungusic
 					culture_group = magyar
-					culture = alan
+					# culture = alan
 				}
 			}
 		}
@@ -677,9 +677,9 @@ tribal = {
 			}
 			FROM = {
 				OR = {
-					culture_group = altaic
+					culture_group = tungusic
 					culture_group = magyar
-					culture = alan
+					# culture = alan
 				}
 			}
 		}
@@ -765,8 +765,8 @@ tribal = {
 			terrain = desert
 			FROM = {
 				OR = {
-					culture_group = east_african
-					culture_group = west_african
+					culture_group = habesha
+					culture_group = amazigh
 					culture_group = arabic
 					culture_group = iranian
 				}
@@ -789,8 +789,8 @@ tribal = {
 			terrain = desert
 			FROM = {
 				OR = {
-					culture_group = east_african
-					culture_group = west_african
+					culture_group = habesha
+					culture_group = amazigh
 					culture_group = arabic
 					culture_group = iranian
 				}
@@ -817,8 +817,8 @@ tribal = {
 			terrain = desert
 			FROM = {
 				OR = {
-					culture_group = east_african
-					culture_group = west_african
+					culture_group = habesha
+					culture_group = amazigh
 					culture_group = arabic
 					culture_group = iranian
 				}
@@ -842,8 +842,8 @@ tribal = {
 			terrain = desert
 			FROM = {
 				OR = {
-					culture_group = east_african
-					culture_group = west_african
+					culture_group = habesha
+					culture_group = amazigh
 					culture_group = arabic
 					culture_group = iranian
 				}

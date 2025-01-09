@@ -548,124 +548,124 @@ nomad = {
 	}
 
 	# MEAT PRESERVER
-	no_meat_preserver_1 = {
-		desc = no_meat_preserver_desc
-		trigger = { FROM = { TECH_CITY_CONSTRUCTION >= 1 } }
-		prerequisites = { no_cattle_pens_1 }
-		gold_cost = 60
-		build_time = 365
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
+	# no_meat_preserver_1 = {
+		# desc = no_meat_preserver_desc
+		# trigger = { FROM = { TECH_CITY_CONSTRUCTION >= 1 } }
+		# prerequisites = { no_cattle_pens_1 }
+		# gold_cost = 60
+		# build_time = 365
+		# ai_creation_factor = 97
+		# extra_tech_building_start = 1
 
-		global_supply_limit = 0.05
-		horde_maintenence_cost = -0.04
-		global_movement_speed = 0.025
-	}
-	no_meat_preserver_2 = {
-		desc = no_meat_preserver_desc
-		trigger = { FROM = { TECH_CITY_CONSTRUCTION >= 1 } }
-		prerequisites = { no_cattle_pens_2 }
-		gold_cost = 70
-		build_time = 511
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
+		# global_supply_limit = 0.05
+		# horde_maintenence_cost = -0.04
+		# global_movement_speed = 0.025
+	# }
+	# no_meat_preserver_2 = {
+		# desc = no_meat_preserver_desc
+		# trigger = { FROM = { TECH_CITY_CONSTRUCTION >= 1 } }
+		# prerequisites = { no_cattle_pens_2 }
+		# gold_cost = 70
+		# build_time = 511
+		# ai_creation_factor = 97
+		# extra_tech_building_start = 1
 
-		upgrades_from = no_meat_preserver_1
+		# upgrades_from = no_meat_preserver_1
 
-		global_supply_limit = 0.05
-		horde_maintenence_cost = -0.03
-		global_movement_speed = 0.025
-	}
-	no_meat_preserver_3 = {
-		desc = no_meat_preserver_desc
-		trigger = { FROM = { TECH_CITY_CONSTRUCTION >= 2 } }
-		prerequisites = { no_cattle_pens_3 }
-		gold_cost = 90
-		build_time = 657
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
+		# global_supply_limit = 0.05
+		# horde_maintenence_cost = -0.03
+		# global_movement_speed = 0.025
+	# }
+	# no_meat_preserver_3 = {
+		# desc = no_meat_preserver_desc
+		# trigger = { FROM = { TECH_CITY_CONSTRUCTION >= 2 } }
+		# prerequisites = { no_cattle_pens_3 }
+		# gold_cost = 90
+		# build_time = 657
+		# ai_creation_factor = 97
+		# extra_tech_building_start = 1
 
-		upgrades_from = no_meat_preserver_2
+		# upgrades_from = no_meat_preserver_2
 
-		global_supply_limit = 0.05
-		horde_maintenence_cost = -0.03
-		global_movement_speed = 0.025
-	}
-	no_meat_preserver_4 = {
-		desc = no_meat_preserver_desc
-		trigger = { FROM = { TECH_CITY_CONSTRUCTION >= 2 } }
-		prerequisites = { no_cattle_pens_4 }
-		gold_cost = 110
-		build_time = 730
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
+		# global_supply_limit = 0.05
+		# horde_maintenence_cost = -0.03
+		# global_movement_speed = 0.025
+	# }
+	# no_meat_preserver_4 = {
+		# desc = no_meat_preserver_desc
+		# trigger = { FROM = { TECH_CITY_CONSTRUCTION >= 2 } }
+		# prerequisites = { no_cattle_pens_4 }
+		# gold_cost = 110
+		# build_time = 730
+		# ai_creation_factor = 97
+		# extra_tech_building_start = 1
 
-		upgrades_from = no_meat_preserver_3
+		# upgrades_from = no_meat_preserver_3
 
-		global_supply_limit = 0.05
-		horde_maintenence_cost = -0.02
-		global_movement_speed = 0.025
-	}
-	no_meat_preserver_5 = {
-		desc = no_meat_preserver_desc
-		trigger = { FROM = { TECH_CITY_CONSTRUCTION >= 3 } }
-		prerequisites = { no_cattle_pens_5 }
-		gold_cost = 140
-		build_time = 803
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
+		# global_supply_limit = 0.05
+		# horde_maintenence_cost = -0.02
+		# global_movement_speed = 0.025
+	# }
+	# no_meat_preserver_5 = {
+		# desc = no_meat_preserver_desc
+		# trigger = { FROM = { TECH_CITY_CONSTRUCTION >= 3 } }
+		# prerequisites = { no_cattle_pens_5 }
+		# gold_cost = 140
+		# build_time = 803
+		# ai_creation_factor = 97
+		# extra_tech_building_start = 1
 
-		upgrades_from = no_meat_preserver_4
+		# upgrades_from = no_meat_preserver_4
 
-		global_supply_limit = 0.05
-		horde_maintenence_cost = -0.02
-		global_movement_speed = 0.025
-	}
-	no_meat_preserver_6 = {
-		desc = no_meat_preserver_desc
-		trigger = { FROM = { TECH_CITY_CONSTRUCTION >= 3 } }
-		prerequisites = { no_cattle_pens_6 }
-		gold_cost = 180
-		build_time = 876
-		ai_creation_factor = 97
-		extra_tech_building_start = 2
+		# global_supply_limit = 0.05
+		# horde_maintenence_cost = -0.02
+		# global_movement_speed = 0.025
+	# }
+	# no_meat_preserver_6 = {
+		# desc = no_meat_preserver_desc
+		# trigger = { FROM = { TECH_CITY_CONSTRUCTION >= 3 } }
+		# prerequisites = { no_cattle_pens_6 }
+		# gold_cost = 180
+		# build_time = 876
+		# ai_creation_factor = 97
+		# extra_tech_building_start = 2
 
-		upgrades_from = no_meat_preserver_5
+		# upgrades_from = no_meat_preserver_5
 
-		global_supply_limit = 0.05
-		horde_maintenence_cost = -0.02
-		global_movement_speed = 0.025
-	}
-	no_meat_preserver_7 = {
-		desc = no_meat_preserver_desc
-		trigger = { FROM = { TECH_CITY_CONSTRUCTION >= 4 } }
-		prerequisites = { no_cattle_pens_7 }
-		gold_cost = 230
-		build_time = 949
-		ai_creation_factor = 97
-		extra_tech_building_start = 2
+		# global_supply_limit = 0.05
+		# horde_maintenence_cost = -0.02
+		# global_movement_speed = 0.025
+	# }
+	# no_meat_preserver_7 = {
+		# desc = no_meat_preserver_desc
+		# trigger = { FROM = { TECH_CITY_CONSTRUCTION >= 4 } }
+		# prerequisites = { no_cattle_pens_7 }
+		# gold_cost = 230
+		# build_time = 949
+		# ai_creation_factor = 97
+		# extra_tech_building_start = 2
 
-		upgrades_from = no_meat_preserver_6
+		# upgrades_from = no_meat_preserver_6
 
-		global_supply_limit = 0.05
-		horde_maintenence_cost = -0.02
-		global_movement_speed = 0.025
-	}
-	no_meat_preserver_8 = {
-		desc = no_meat_preserver_desc
-		trigger = { FROM = { TECH_CITY_CONSTRUCTION >= 5 } }
-		prerequisites = { no_cattle_pens_8 }
-		gold_cost = 300
-		build_time = 1095
-		ai_creation_factor = 97
-		extra_tech_building_start = 2
+		# global_supply_limit = 0.05
+		# horde_maintenence_cost = -0.02
+		# global_movement_speed = 0.025
+	# }
+	# no_meat_preserver_8 = {
+		# desc = no_meat_preserver_desc
+		# trigger = { FROM = { TECH_CITY_CONSTRUCTION >= 5 } }
+		# prerequisites = { no_cattle_pens_8 }
+		# gold_cost = 300
+		# build_time = 1095
+		# ai_creation_factor = 97
+		# extra_tech_building_start = 2
 
-		upgrades_from = no_meat_preserver_7
+		# upgrades_from = no_meat_preserver_7
 
-		global_supply_limit = 0.05
-		horde_maintenence_cost = -0.02
-		global_movement_speed = 0.025
-	}
+		# global_supply_limit = 0.05
+		# horde_maintenence_cost = -0.02
+		# global_movement_speed = 0.025
+	# }
 
 	# SHEEP
 	no_sheep_1 = {
@@ -1167,93 +1167,93 @@ nomad = {
 	}
 
 	# HUNTING PARTIES
-	no_hunting_parties_1 = {
-		desc = no_hunting_parties_desc
-		trigger = { FROM = { TECH_CASTLE_CONSTRUCTION >= 0 } }
-		gold_cost = 20
-		build_time = 365
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
+	# no_hunting_parties_1 = {
+		# desc = no_hunting_parties_desc
+		# trigger = { FROM = { TECH_CASTLE_CONSTRUCTION >= 0 } }
+		# gold_cost = 20
+		# build_time = 365
+		# ai_creation_factor = 97
+		# extra_tech_building_start = 1
 
-		horse_archers_offensive = 0.04
-	}
-	no_hunting_parties_2 = {
-		desc = no_hunting_parties_desc
-		trigger = { FROM = { TECH_CASTLE_CONSTRUCTION >= 0 } }
-		upgrades_from = no_hunting_parties_1
-		gold_cost = 40
-		build_time = 365
-		ai_creation_factor = 90
-		extra_tech_building_start = 2
+		# horse_archers_offensive = 0.04
+	# }
+	# no_hunting_parties_2 = {
+		# desc = no_hunting_parties_desc
+		# trigger = { FROM = { TECH_CASTLE_CONSTRUCTION >= 0 } }
+		# upgrades_from = no_hunting_parties_1
+		# gold_cost = 40
+		# build_time = 365
+		# ai_creation_factor = 90
+		# extra_tech_building_start = 2
 
-		horse_archers_offensive = 0.04
-	}
-	no_hunting_parties_3 = {
-		desc = no_hunting_parties_desc
-		trigger = { FROM = { TECH_CASTLE_CONSTRUCTION >= 1 } }
-		upgrades_from = no_hunting_parties_2
-		gold_cost = 80
-		build_time = 365
-		ai_creation_factor = 85
-		extra_tech_building_start = 3
+		# horse_archers_offensive = 0.04
+	# }
+	# no_hunting_parties_3 = {
+		# desc = no_hunting_parties_desc
+		# trigger = { FROM = { TECH_CASTLE_CONSTRUCTION >= 1 } }
+		# upgrades_from = no_hunting_parties_2
+		# gold_cost = 80
+		# build_time = 365
+		# ai_creation_factor = 85
+		# extra_tech_building_start = 3
 
-		horse_archers_offensive = 0.04
-	}
-	no_hunting_parties_4 = {
-		desc = no_hunting_parties_desc
-		trigger = { FROM = { TECH_CASTLE_CONSTRUCTION >= 1 } }
-		upgrades_from = no_hunting_parties_3
-		gold_cost = 160
-		build_time = 365
-		ai_creation_factor = 80
-		extra_tech_building_start = 4
+		# horse_archers_offensive = 0.04
+	# }
+	# no_hunting_parties_4 = {
+		# desc = no_hunting_parties_desc
+		# trigger = { FROM = { TECH_CASTLE_CONSTRUCTION >= 1 } }
+		# upgrades_from = no_hunting_parties_3
+		# gold_cost = 160
+		# build_time = 365
+		# ai_creation_factor = 80
+		# extra_tech_building_start = 4
 
-		horse_archers_offensive = 0.05
-	}
-	no_hunting_parties_5 = {
-		desc = no_hunting_parties_desc
-		trigger = { FROM = { TECH_CASTLE_CONSTRUCTION >= 2 } }
-		upgrades_from = no_hunting_parties_4
-		gold_cost = 160
-		build_time = 365
-		ai_creation_factor = 80
-		extra_tech_building_start = 4
+		# horse_archers_offensive = 0.05
+	# }
+	# no_hunting_parties_5 = {
+		# desc = no_hunting_parties_desc
+		# trigger = { FROM = { TECH_CASTLE_CONSTRUCTION >= 2 } }
+		# upgrades_from = no_hunting_parties_4
+		# gold_cost = 160
+		# build_time = 365
+		# ai_creation_factor = 80
+		# extra_tech_building_start = 4
 
-		horse_archers_offensive = 0.05
-	}
-	no_hunting_parties_6 = {
-		desc = no_hunting_parties_desc
-		trigger = { FROM = { TECH_CASTLE_CONSTRUCTION >= 2 } }
-		upgrades_from = no_hunting_parties_5
-		gold_cost = 160
-		build_time = 365
-		ai_creation_factor = 80
-		extra_tech_building_start = 4
+		# horse_archers_offensive = 0.05
+	# }
+	# no_hunting_parties_6 = {
+		# desc = no_hunting_parties_desc
+		# trigger = { FROM = { TECH_CASTLE_CONSTRUCTION >= 2 } }
+		# upgrades_from = no_hunting_parties_5
+		# gold_cost = 160
+		# build_time = 365
+		# ai_creation_factor = 80
+		# extra_tech_building_start = 4
 
-		horse_archers_offensive = 0.05
-	}
-	no_hunting_parties_7 = {
-		desc = no_hunting_parties_desc
-		trigger = { FROM = { TECH_CASTLE_CONSTRUCTION >= 3 } }
-		upgrades_from = no_hunting_parties_6
-		gold_cost = 160
-		build_time = 365
-		ai_creation_factor = 80
-		extra_tech_building_start = 4
+		# horse_archers_offensive = 0.05
+	# }
+	# no_hunting_parties_7 = {
+		# desc = no_hunting_parties_desc
+		# trigger = { FROM = { TECH_CASTLE_CONSTRUCTION >= 3 } }
+		# upgrades_from = no_hunting_parties_6
+		# gold_cost = 160
+		# build_time = 365
+		# ai_creation_factor = 80
+		# extra_tech_building_start = 4
 
-		horse_archers_offensive = 0.06
-	}
-	no_hunting_parties_8 = {
-		desc = no_hunting_parties_desc
-		trigger = { FROM = { TECH_CASTLE_CONSTRUCTION >= 3 } }
-		upgrades_from = no_hunting_parties_7
-		gold_cost = 160
-		build_time = 365
-		ai_creation_factor = 80
-		extra_tech_building_start = 4
+		# horse_archers_offensive = 0.06
+	# }
+	# no_hunting_parties_8 = {
+		# desc = no_hunting_parties_desc
+		# trigger = { FROM = { TECH_CASTLE_CONSTRUCTION >= 3 } }
+		# upgrades_from = no_hunting_parties_7
+		# gold_cost = 160
+		# build_time = 365
+		# ai_creation_factor = 80
+		# extra_tech_building_start = 4
 
-		horse_archers_offensive = 0.06
-	}
+		# horse_archers_offensive = 0.06
+	# }
 
 	# YAM
 	no_yam_1 = {
