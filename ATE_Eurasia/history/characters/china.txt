@@ -1,260 +1,28 @@
 
 #########THE GREAT HONG######################
-8001282={ #PLACEHOLDER
-	dynasty=8001022 #HONG
-	name="Ping"
-	religion=jibenyuanze
-	culture=beifanghua
-	2610.2.7={birth=yes}
-	2645.2.7={death={death_reason=death_offmap}}
-}
 8001283={ #PLACEHOLDER
 	dynasty=8001022 #HONG
 	name="Mushu"
 	religion=jibenyuanze
 	culture=beifanghua
-	father=8001282
 	2640.2.7={birth=yes}
 	2680.1.1={death=yes}
 }
 
 ####################### The Western Governor of the Great Hong and its periphery ######################################
 
-2080000={
-	name="Amanni"
-	dynasty=2080080 #Nafisi
-	culture=uighur
-	religion=hui
-	female=yes
-	add_trait=musician
-	add_trait=kind
-	add_trait=groomed
-	add_trait=charismatic_negotiator
-	add_trait=scholar
-	add_trait=patient
-	add_trait=diligent
-	2640.3.16={birth=yes}
-	2680.1.1={death=yes}
-}
-2080001={
-	name="Abdulkerim"
-	dynasty=2080081 #Abbas
-	culture=uighur
-	religion=hui
-	female=yes
-	add_trait=musician
-	add_trait=kind
-	add_trait=groomed
-	add_trait=charismatic_negotiator
-	add_trait=scholar
-	add_trait=patient
-	add_trait=diligent
-	2620.3.16={birth=yes}
-	2680.1.1={death=yes}
-}
-2080002={
-	name="Yelü"
-	dynasty=2080082 #Dashik
-	culture=uighur
-	religion=gelugpa
-	add_trait=musician
-	add_trait=kind
-	add_trait=weak
-	add_trait=charismatic_negotiator
-	add_trait=scholar
-	add_trait=humble
-	add_trait=diligent
-	2620.3.16={birth=yes}
-	2680.1.1={death=yes}
-}
-2080003={
-	name="Yusuf"
-	dynasty=2080047 #Mehmet
-	culture=uighur
-	religion=hui
-	add_trait=shrewd
-	add_trait=strategist
-	add_trait=skilled_tactician
-	add_trait=falconer
-	add_trait=patient
-	add_trait=diligent
-	2630.3.16={birth=yes}
-	2680.1.1={death=yes}
-}
-2080004={
-	name="Mamuraq"
-	dynasty=2080090 #Tekin
-	culture=uighur
-	religion=hui
-	add_trait=shrewd
-	add_trait=strategist
-	add_trait=skilled_tactician
-	add_trait=falconer
-	add_trait=patient
-	add_trait=diligent
-	2640.3.16={birth=yes}
-	2680.1.1={death=yes}
-}
-2080005={
-	name="Ashina"
-	dynasty=2080091 #Shad
-	culture=uighur
-	religion=hui
-	add_trait=shrewd
-	add_trait=strategist
-	add_trait=skilled_tactician
-	add_trait=falconer
-	add_trait=patient
-	add_trait=diligent
-	2640.3.16={birth=yes}
-	2680.1.1={death=yes}
-}
-1207000={
-	name="Pandita"
-	dynasty=1207050 #Zaya
-	culture=oirat
-	religion=gelugpa
-	add_trait=musician
-	add_trait=kind
-	add_trait=groomed
-	add_trait=charismatic_negotiator
-	add_trait=scholar
-	add_trait=patient
-	add_trait=diligent
-	2620.3.16={birth=yes}
-	2680.1.1={death=yes}
-}
-1207001={
-	name="Ja"
-	dynasty=1207052 #Lama
-	culture=oirat
-	religion=gelugpa
-	add_trait=musician
-	add_trait=kind
-	add_trait=charismatic_negotiator
-	add_trait=scholar
-	add_trait=patient
-	add_trait=sympathy_islam
-	2620.3.16={birth=yes}
-	2680.1.1={death=yes}
-}
-1208000={
-	name="Liya"
-	dynasty=1208000 #Tong
-	culture=xibe
-	religion=gelugpa
-	female=yes
-	add_trait=musician
-	add_trait=kind
-	add_trait=humble
-	add_trait=grey_eminence
-	add_trait=scholar
-	add_trait=patient
-	add_trait=gregarious
-	2640.3.16={birth=yes}
-	2680.1.1={death=yes}
-}
-1640000={
-	name="Chayan"
-	dynasty=1640034 #Natsag
-	culture=daur
-	religion=gelugpa
-	add_trait=poet
-	add_trait=kind
-	add_trait=humble
-	add_trait=tough_soldier
-	add_trait=hunter
-	add_trait=patient
-	add_trait=gregarious
-	2640.3.16={birth=yes}
-	2680.1.1={death=yes}
-}
-8001284={
-	name="Suxin"
-	dynasty=8001023 #Lü
-	culture=beifanghua
-	religion=hui
-	female=yes
-	add_trait=musician
-	add_trait=kind
-	add_trait=groomed
-	add_trait=charismatic_negotiator
-	add_trait=scholar
-	add_trait=patient
-	add_trait=diligent
-	2620.3.16={birth=yes}
-	2680.1.1={death=yes}
-}
 8001285={ #Western Governor
 	name="Saifuding"
 	dynasty=8001024 #Azizi
 	culture=beifanghua
 	religion=jibenyuanze
-	add_trait=musician
-	add_trait=kind
-	add_trait=groomed
-	add_trait=charismatic_negotiator
-	add_trait=scholar
-	add_trait=patient
-	add_trait=diligent
-	2620.3.16={birth=yes}
-	2640.12.12={add_spouse=8001284}
-	2680.1.1={death=yes}
-}
-8001286={
-	name="Luo"
-	dynasty=8001025 #Yue
-	culture=beifanghua
-	religion=jibenyuanze
-	add_trait=musician
-	add_trait=kind
-	add_trait=groomed
-	add_trait=thrifty_clerk
-	add_trait=quick
-	add_trait=patient
-	add_trait=diligent
-	2620.3.16={birth=yes}
-	2680.1.1={death=yes}
-}
-8001287={
-	name="Chih"
-	dynasty=8001026 #Liu
-	culture=beifanghua
-	religion=hui
-	add_trait=dutiful_cleric
-	add_trait=groomed
-	add_trait=scholar
-	add_trait=diligent
-	add_trait=charitable
-	add_trait=erudite
-	2600.3.16={birth=yes}
-	2680.1.1={death=yes}
-}
-8001288={
-	name="Han"
-	dynasty=8001028 #Bufang
-	culture=beifanghua
-	religion=gelugpa
-	add_trait=tough_soldier
-	add_trait=kind
-	add_trait=brave
-	add_trait=stubborn
-	add_trait=quick
-	add_trait=diligent
-	2620.3.16={birth=yes}
-	2680.1.1={death=yes}
-}
-8001289={
-	name="Zhang"
-	dynasty=1055000 #Feng
-	culture=beifanghua
-	religion=hui
-	add_trait=scholarly_theologian
-	add_trait=kind
-	add_trait=humble
-	add_trait=content
-	add_trait=quick
-	add_trait=diligent
+	trait=musician
+	trait=kind
+	trait=groomed
+	trait=charismatic_negotiator
+	trait=scholar
+	trait=patient
+	trait=diligent
 	2620.3.16={birth=yes}
 	2680.1.1={death=yes}
 }
