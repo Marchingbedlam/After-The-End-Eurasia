@@ -465,8 +465,8 @@
 	1444.6.30={death=yes}
 }
 8001031={ #Yingzong Consort
-	dynasty=80001009 #Qian
 	name="Xiaozhuangrui"
+	dynasty=80001009 #Qian
 	religion=ruist
 	culture=beifanghua
 	female=yes
@@ -475,42 +475,13 @@
 	1426.1.1={birth=yes}
 	1468.1.1={death=yes}
 }
-8001033={ #Yingzong 1st Daughter
-	dynasty=80001000 #Zhu
-	name="Chongqing"
-	religion=ruist
-	culture=beifanghua
-	female=yes
-	father=8001030
-	1446.1.1={birth=yes}
-	1461.1.1={add_spouse=8001034}
-	1499.1.1={death=yes}
-}
-8001034={
-	dynasty=80001010 #Same Zhou that married of the Second Wife of Yingzong
-	name="Jing"
-	religion=ruist
-	culture=beifanghua
-	1446.1.1={birth=yes}
-	1499.6.30={death=yes}
-}
 8001039={
-	dynasty=80001011 #Same Wang as the 1st wife of Jingtai
 	name="Xian"
+	dynasty=80001011 #Same Wang as the 1st wife of Jingtai
 	religion=ruist
 	culture=beifanghua
 	1446.1.1={birth=yes}
 	1491.1.1={death=yes}
-}
-8001042={ #Yingzong 6th Son
-	dynasty=80001000 #Zhu
-	name="Jianze"
-	religion=ruist
-	culture=beifanghua
-	father=8001030
-	1455.5.2={birth=yes}
-	1457.2.11={name="Chongjian"}
-	1505.8.27={death=yes}
 }
 8001045={ #Chenghua Consort
 	name="Xiaomu"
@@ -521,38 +492,17 @@
 	1475.1.1={death=yes}
 }
 8001047={ #Hongzhi Consort
-	dynasty=80001004 #Zhang
 	name="Xiaochengjing"
+	dynasty=80001004 #Zhang
 	religion=ruist
 	culture=beifanghua
 	female=yes
 	1471.1.1={birth=yes}
 	1541.1.1={death=yes}
 }
-8001049={ #Hongzhi Daughter
-	dynasty=80001000 #Zhu
-	name="Xiurong"
-	religion=ruist
-	culture=beifanghua
-	female=yes
-	father=8001046
-	mother=8001047
-	1494.1.1={birth=yes}
-	1498.10.1={death=yes}
-}
-8001050={ #Hongzhi 2nd Son
-	dynasty=80001000 #Zhu
-	name="Houwei"
-	religion=ruist
-	culture=beifanghua
-	father=8001046
-	mother=8001047
-	1495.1.1={birth=yes}
-	1496.3.9={death=yes}
-}
 8001051={ #Zhengde Consort
-	dynasty=80001013 #Xia
 	name="Xiaojingyi"
+	dynasty=80001013 #Xia
 	religion=ruist
 	culture=beifanghua
 	mother=8001052
@@ -561,8 +511,8 @@
 	1535.1.1={death=yes}
 }
 8001052={ #Lady Xia
-	dynasty=80001013 #Xia
 	name="Ru"
+	dynasty=80001013 #Xia
 	religion=ruist
 	culture=beifanghua
 	female=yes
@@ -570,8 +520,8 @@
 	1520.1.1={death=yes}
 }
 8001054={ #Jiajing Consort (1st Wife)
-	dynasty=80001014 #Chen
 	name="Xiaojiesu"
+	dynasty=80001014 #Chen
 	religion=ruist
 	culture=beifanghua
 	female=yes
@@ -586,50 +536,9 @@
 	1508.1.1={birth=yes}
 	1537.1.1={death=yes}
 }
-8001062={ #Longqing 1st Son
-	dynasty=80001000 #Zhu
-	name="Yiyi"
-	religion=ruist
-	culture=beifanghua
-	father=8001058
-	mother=8001059
-	1555.10.15={birth=yes}
-	1559.5.11={death=yes}
-}
-8001063={ #Longqing 2nd Son
-	dynasty=80001000 #Zhu
-	name="Yiling"
-	religion=ruist
-	culture=beifanghua
-	father=8001058
-	mother=8001059
-	1556.1.1={birth=yes}
-	1559.1.1={death=yes}
-}
-8001064={ #Longqing 1st Daughter
-	dynasty=80001000 #Zhu
-	name="Penglai"
-	religion=ruist
-	culture=beifanghua
-	female=yes
-	father=8001058
-	mother=8001059
-	1556.1.1={birth=yes}
-	1557.1.1={death=yes}
-}
-8001065={ #Longqing 2nd Daughter
-	dynasty=80001000 #Zhu
-	name="Penglai"
-	religion=ruist
-	culture=beifanghua
-	female=yes
-	father=8001058
-	1558.1.1={birth=yes}
-	1560.1.1={death=yes}
-}
 8001067={ #Wanli Emperors Primary Wife
-	dynasty=80001011 #Wang
 	name="Xijie"
+	dynasty=80001011 #Wang
 	religion=ruist
 	culture=beifanghua
 	female=yes
@@ -637,155 +546,18 @@
 	1578.7.19={name="Xiaoduanxian"}
 	1620.4.1={death=yes}
 }
-
-8001071={ #Wanli 1st Daughter
-	dynasty=80001000 #Zhu
-	name="Rongchang"
-	religion=ruist
-	culture=beifanghua
-	female=yes
-	father=8001066
-	mother=8001067
-	1582.1.1={birth=yes}
-	1597.1.1={add_spouse=8001072}
-	1647.1.1={death=yes}
-}
-8001072={ #Husband of Rongchang
-	dynasty=80001017 #Yang
-	name="Chunyuan"
-	religion=ruist
-	culture=beifanghua
-	1582.1.1={birth=yes}
-	1616.1.1={death=yes}
-}
-8001074={ #Wanli 4th daughter
-	dynasty=80001000 #Zhu
-	name="Xuanyuan"
-	religion=ruist
-	culture=beifanghua
-	female=yes
-	father=8001066
-	1584.1.1={birth=yes}
-	1587.1.1={death=yes}
-}
-8001075={ #Wanli 2nd Daughter
-	dynasty=80001000 #Zhu
-	name="Xuanshu"
-	religion=ruist
-	culture=beifanghua
-	female=yes
-	father=8001066
-	1584.1.1={birth=yes}
-	1590.1.1={death=yes}
-}
-8001076={ #Wanli 2nd Son
-	dynasty=80001000 #Zhu
-	name="Changxu"
-	religion=ruist
-	culture=beifanghua
-	father=8001066
-	1585.1.19={birth=yes}
-	1586.1.1={death=yes}
-}
-8001077={ #Wanli 3rd Son
-	dynasty=80001000 #Zhu
-	name="Changxun"
-	religion=ruist
-	culture=beifanghua
-	father=8001066
-	1586.2.22={birth=yes}
-	1601.1.1={name="Gongzong"} #Prince of Fu
-	1641.3.2={death=yes}
-}
-8001078={ #Wanli 4th Son
-	dynasty=80001000 #Zhu
-	name="Changzhi"
-	religion=ruist
-	culture=beifanghua
-	father=8001066
-	1587.10.10={birth=yes}
-	1588.9.5={death=yes}
-}
-8001079={ #Wanli 6th Daughter
-	dynasty=80001000 #Zhu
-	name="Lingqiu"
-	religion=ruist
-	culture=beifanghua
-	female=yes
-	father=8001066
-	1588.1.1={birth=yes}
-	1589.1.1={death=yes}
-}
-8001080={ #Wanli 7th Daughter
-	dynasty=80001000 #Zhu
-	name="Shouning"
-	religion=ruist
-	culture=beifanghua
-	female=yes
-	father=8001066
-	1592.1.1={birth=yes}
-	1609.1.1={add_spouse=8001081}
-	1634.1.1={death=yes}
-}
-8001081={ #Husband of Shouning
-	dynasty=80001018 #Ran
-	name="Xingrang"
-	religion=ruist
-	culture=beifanghua
-	1592.1.1={birth=yes}
-	1644.1.1={death=yes}
-}
-8001082={ #Wanli 6th Son
-	dynasty=80001000 #Zhu
-	name="Changrun"
-	religion=ruist
-	culture=beifanghua
-	father=8001066
-	1594.12.7={birth=yes}
-	1646.6.29={death=yes}
-}
-8001083={ #Wanli 7th Son
-	dynasty=80001000 #Zhu
-	name="Changying"
-	religion=ruist
-	culture=beifanghua
-	father=8001066
-	1597.4.25={birth=yes}
-	1601.1.1={name="Lizong"} #Prince of Gui
-	1645.12.21={death=yes}
-}
 8001084={ #1st Taichang Noble Consort
-	dynasty=80001019 #Guo
 	name="Xiaoyuanzhen"
+	dynasty=80001019 #Guo
 	religion=ruist
 	culture=beifanghua
 	female=yes
 	1580.1.1={birth=yes}
 	1613.1.1={death=yes}
 }
-8001087={ #Taichang 1st daughter
-	dynasty=80001000 #Zhu
-	name="Huijuan"
-	religion=ruist
-	culture=beifanghua
-	female=yes
-	father=8001073
-	mother=8001084
-	1604.1.1={birth=yes}
-	1610.1.1={death=yes}
-}
-8001089={ #Taichang 2nd Son
-	dynasty=80001000 #Zhu
-	name="Youxue"
-	religion=ruist
-	culture=beifanghua
-	father=8001073
-	1607.1.1={birth=yes}
-	1610.1.1={death=yes}
-}
 8001091={ #Tianqi Noble Consort
-	dynasty=80001004 #Zhang
 	name="Xiao'aizhe"
+	dynasty=80001004 #Zhang
 	religion=ruist
 	culture=beifanghua
 	female=yes
@@ -793,105 +565,23 @@
 	1644.1.1={death=yes}
 }
 8001092={ #Chongzhen Noble Consort
-	dynasty=80001010 #Zhou
 	name="Xiaojielie"
+	dynasty=80001010 #Zhou
 	religion=ruist
 	culture=beifanghua
 	female=yes
 	1611.5.10={birth=yes}
 	1644.4.24={death=yes}
 }
-8001093={ #Tianqi Son
-	dynasty=80001000 #Zhu
-	name="Ciran"
-	religion=ruist
-	culture=beifanghua
-	father=8001088
-	mother=8001091
-	female=yes
-	1623.11.4={birth=yes}
-	1624.11.4={death=yes}
-}
-8001094={ #Chongzhen 1st Son
-	dynasty=80001000 #Zhu
-	name="Cilang"
-	religion=ruist
-	culture=beifanghua
-	father=8001090
-	mother=8001092
-	1629.2.26={birth=yes}
-	1644.1.1={death=yes}
-}
-8001095={ #Chongzhen 2nd Son
-	dynasty=80001000 #Zhu
-	name="Cixuan"
-	religion=ruist
-	culture=beifanghua
-	father=8001090
-	mother=8001092
-	1630.1.1={birth=yes}
-	1630.1.15={death=yes}
-}
-8001096={ #Chongzhen 1st Daughter
-	dynasty=80001000 #Zhu
-	name="Kunyi"
-	religion=ruist
-	culture=beifanghua
-	father=8001090
-	mother=8001092
-	female=yes
-	1630.5.10={birth=yes}
-	1644.4.24={death=yes}
-}
-8001097={ #Chongzhen 3rd Son
-	dynasty=80001000 #Zhu
-	name="Cijiong"
-	religion=ruist
-	culture=beifanghua
-	father=8001090
-	mother=8001092
-	1632.1.1={birth=yes}
-	1644.1.1={death=yes}
-}
 
 ####################### NON-CHINESE EXTRA TITLES (MANCHU AND MONGOLS) ######################################
-#Qing
-8001098={
-	dynasty=1051209 #Aisin Gioro
-	name="Giocangga"
-	religion=nondescript_pagan
-	culture=manchu
-	1526.1.1={birth=yes}
-	1583.1.1={death=death_battle}
-}
-8001099={
-	dynasty=1051209 #Aisin Gioro
-	name="Taksi"
-	religion=nondescript_pagan
-	culture=manchu
-	father=8001098
-	1543.1.1={birth=yes}
-	1583.1.1={death=death_battle}
-}
-8001100={
-	dynasty=1051210 #Hitara
-	name="Xuan"
-	religion=ruist
-	culture=manchu
-	female=yes
-	father=8001214
-	1543.1.1={birth=yes}
-	1583.1.1={death=death_battle}
-}
 8001101={
 	dynasty=1051209 #Aisin Gioro
 	name="Nurhaci"
 	religion=nondescript_pagan
 	culture=manchu
-	father=8001099
-	mother=8001100
 	1559.5.14={birth=yes}
-	1626.9.30={death=death_battle}
+	1626.9.30={death=yes}
 }
 8001102={
 	dynasty=1051211 #Yehe Nara
@@ -1592,60 +1282,6 @@
 	father=8001183
 	1766.6.17={birth=yes}
 	1820.4.25={death=yes}
-}
-
-8001209={
-	dynasty=1051210 #Hitara
-	name="He'erjing'e"
-	religion=ruist
-	culture=manchu
-	father=8001210
-	1720.1.1={birth=yes}
-	1780.1.1={death=yes}
-}
-8001210={
-	dynasty=1051210 #Hitara
-	name="Chang'an"
-	religion=ruist
-	culture=manchu
-	father=8001211
-	1680.1.1={birth=yes}
-	1722.1.1={death=yes}
-}
-8001211={
-	dynasty=1051210 #Hitara
-	name="Aisinggga"
-	religion=nondescript_pagan
-	culture=manchu
-	father=8001212
-	1640.1.1={birth=yes}
-	1690.1.1={death=yes}
-}
-8001212={
-	dynasty=1051210 #Hitara
-	name="Antai"
-	religion=nondescript_pagan
-	culture=manchu
-	father=8001213
-	1600.1.1={birth=yes}
-	1650.1.1={death=yes}
-}
-8001213={
-	dynasty=1051210 #Hitara
-	name="Zhage"
-	religion=nondescript_pagan
-	culture=manchu
-	father=8001214
-	1560.1.1={birth=yes}
-	1610.1.1={death=yes}
-}
-8001214={
-	dynasty=1051210 #Hitara
-	name="A'gu"
-	religion=nondescript_pagan
-	culture=manchu
-	1540.1.1={birth=yes}
-	1610.1.1={death=yes}
 }
 8001215={ #Jiajing Emperor Consort
 	dynasty=1051216 #Niohuru
