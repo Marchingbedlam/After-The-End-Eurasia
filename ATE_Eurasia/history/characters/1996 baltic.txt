@@ -493,8 +493,8 @@
 	trait=attractive
 
 	2660.3.2={birth=yes}
-	2664.3.2={add_trait=playful}
-	2664.3.2={add_trait=affectionate}
+	2664.3.2={trait=playful}
+	2664.3.2={trait=affectionate}
 	2680.1.1={death=yes}
 }
 1996035={
@@ -577,15 +577,15 @@
 	dynasty=2917024 #Bergs
 	culture=latvian
 	religion=mariavite
-	add_trait=indolent
-	add_trait=playful
-	add_trait=conscientious
+	trait=indolent
+	trait=playful
+	trait=conscientious
 	father=1996038
 	mother=1996039
 	
 	2653.5.1={birth=yes}
-	2665.1.1={add_trait=greedy}
-	2666.1.1={add_trait=stubborn}
+	2665.1.1={trait=greedy}
+	2666.1.1={trait=stubborn}
 	2680.1.1={death=yes}
 }
 1996041={
@@ -593,15 +593,15 @@
 	dynasty=2917024 #Bergs
 	culture=latvian
 	religion=mariavite
-	add_trait=curious
-	add_trait=indolent
-	add_trait=rowdy
+	trait=curious
+	trait=indolent
+	trait=rowdy
 	father=1996038
 	mother=1996039
 	
 	2654.4.16={birth=yes}
-	2665.1.1={add_trait=greedy}
-	2666.1.1={add_trait=stubborn}
+	2665.1.1={trait=greedy}
+	2666.1.1={trait=stubborn}
 	2680.1.1={death=yes}
 }
 1996042={
@@ -638,14 +638,14 @@
 	dynasty=2917043 #Briedis
 	culture=latvian
 	religion=mariavite
-	add_trait=indolent
-	add_trait=playful
-	add_trait=conscientious
+	trait=indolent
+	trait=playful
+	trait=conscientious
 	father=1996042
 	mother=1996043
 	
 	2658.1.7={birth=yes}
-	2666.1.1={add_trait=kind}
+	2666.1.1={trait=kind}
 	2680.1.1={death=yes}
 }
 1996045={
@@ -708,7 +708,7 @@
 	trait=conscientious
 	
 	2658.1.28={birth=yes}
-	2666.1.1={add_trait=kind}
+	2666.1.1={trait=kind}
 	2680.1.1={death=yes}
 }
 1996049={
@@ -762,8 +762,8 @@
 	trait=playful
 	
 	2657.1.7={birth=yes}
-	2665.1.1={add_trait=temperate}
-	2666.1.1={add_trait=pious}
+	2665.1.1={trait=temperate}
+	2666.1.1={trait=pious}
 	2680.1.1={death=yes}
 }
 1996052={
@@ -779,8 +779,8 @@
 	mother=1996050
 	
 	2658.1.7={birth=yes}
-	2665.1.1={add_trait=greedy}
-	2666.1.1={add_trait=pious}
+	2665.1.1={trait=greedy}
+	2666.1.1={trait=pious}
 	2680.1.1={death=yes}
 }
 1996053={
@@ -901,8 +901,8 @@
 	trait=haughty
 
 	2653.3.17={birth=yes}
-	2664.3.2={add_trait=brave}
-	2664.3.2={add_trait=stubborn}
+	2664.3.2={trait=brave}
+	2664.3.2={trait=stubborn}
 	2680.1.1={death=yes}
 }
 1996060={
@@ -919,8 +919,8 @@
 	trait=playful
 
 	2664.1.16={birth=yes}
-	2664.3.2={add_trait=temperate}
-	2664.3.2={add_trait=brave}
+	2664.3.2={trait=temperate}
+	2664.3.2={trait=brave}
 	2680.1.1={death=yes}
 }
 1996061={
@@ -2834,7 +2834,7 @@
 	trait=gregarious
 	father=1996169
 	2585.9.30={birth=yes}
-	2621.1.30={add_trait=pneumonic}
+	2621.1.30={trait=pneumonic}
 	2621.7.15={
 		death={death_reason=death_trait}
 	} # pneumonia

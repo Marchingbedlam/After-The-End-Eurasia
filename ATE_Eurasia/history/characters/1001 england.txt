@@ -9,14 +9,14 @@
 	stewardship=7
 	intrigue=7
 	learning=5
-	add_trait=intricate_webweaver
-	add_trait=lunatic
-	add_trait=cruel
-	add_trait=impaler
-	add_trait=paranoid
-	add_trait=fat
-	add_trait=patient
-	add_trait=gluttonous
+	trait=intricate_webweaver
+	trait=lunatic
+	trait=cruel
+	trait=impaler
+	trait=paranoid
+	trait=fat
+	trait=patient
+	trait=gluttonous
 	2592.3.16={birth=yes}
 	2660.2.10={death=yes}
 }
@@ -602,12 +602,12 @@
 	stewardship=8
 	intrigue=6
 	learning=4
-	add_trait=fortune_builder 
-	add_trait=erudite
-	add_trait=temperate
-	add_trait=humble
-	add_trait=just
-	add_trait=stressed 
+	trait=fortune_builder 
+	trait=erudite
+	trait=temperate
+	trait=humble
+	trait=just
+	trait=stressed 
 	2626.2.27={birth=yes}
 	2715.8.14={death=yes}
 }
@@ -622,13 +622,13 @@
 	stewardship=7
 	intrigue=4
 	learning=5
-	add_trait=grey_eminence
-	add_trait=quick
-	add_trait=poet
-	add_trait=cynical
-	add_trait=humble
-	add_trait=ambitious
-	add_trait=drunkard 
+	trait=grey_eminence
+	trait=quick
+	trait=poet
+	trait=cynical
+	trait=humble
+	trait=ambitious
+	trait=drunkard 
 	2641.9.14={birth=yes}
 	2697.10.12={death=yes}
 }
@@ -643,12 +643,12 @@
 	stewardship=7
 	intrigue=4
 	learning=4
-	add_trait=detached_priest
-	add_trait=deceitful
-	add_trait=humble
-	add_trait=wroth
-	add_trait=trusting 
-	add_trait=diligent 
+	trait=detached_priest
+	trait=deceitful
+	trait=humble
+	trait=wroth
+	trait=trusting 
+	trait=diligent 
 	2634.5.19={birth=yes}
 	2713.2.28={death=yes}
 }
@@ -663,14 +663,14 @@
 	stewardship=5
 	intrigue=3
 	learning=7
-	add_trait=scholarly_theologian
-	add_trait=gardener
-	add_trait=genius
-	add_trait=patient
-	add_trait=shy
-	add_trait=charitable 
-	add_trait=kind
-	add_trait=cynical
+	trait=scholarly_theologian
+	trait=gardener
+	trait=genius
+	trait=patient
+	trait=shy
+	trait=charitable 
+	trait=kind
+	trait=cynical
 	2620.2.12={birth=yes}
 	2640.4.3={effect={add_artifact=ate_calculator}}
 	2659.11.22={effect={add_artifact=magnum_opus_alchemy_panacea_3}}
@@ -712,7 +712,7 @@
 	stewardship=7
 	intrigue=6
 	learning=8
-	add_trait=scholarly_theologian
+	trait=scholarly_theologian
 	trait=hunter
 	trait=zealous
 	trait=temperate
@@ -1302,12 +1302,12 @@
 	stewardship=8
 	intrigue=4
 	learning=4
-	add_trait=charismatic_negotiator
-	add_trait=sturdy
-	add_trait=content
-	add_trait=honest
-	add_trait=trusting
-	add_trait=humble
+	trait=charismatic_negotiator
+	trait=sturdy
+	trait=content
+	trait=honest
+	trait=trusting
+	trait=humble
 	2630.4.16={birth=yes}
 	2680.1.1={death=yes}
 }
@@ -1407,16 +1407,16 @@
 	intrigue=6
 	learning=5
 	disallow_random_traits=yes
-	add_trait=indulgent_wastrel
-	add_trait=diligent
-	add_trait=greedy
-	add_trait=drunkard
-	add_trait=dull
-	add_trait=cynical
-	add_trait=brawny
-	add_trait=groomed
-	add_trait=painter
-	add_trait=rude
+	trait=indulgent_wastrel
+	trait=diligent
+	trait=greedy
+	trait=drunkard
+	trait=dull
+	trait=cynical
+	trait=brawny
+	trait=groomed
+	trait=painter
+	trait=rude
 	2635.5.25={birth=yes}
 	2659.5.25={effect={add_artifact=favorite_shades}}
 	2680.1.1={death=yes}

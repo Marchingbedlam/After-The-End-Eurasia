@@ -575,14 +575,14 @@
 	stewardship=5
 	intrigue=5
 	learning=10
-	add_trait=grey_eminence
-	add_trait=proud
-	add_trait=chaste
-	add_trait=genius
-	add_trait=scholar
-	add_trait=patient
-	add_trait=just
-	add_trait=legendary
+	trait=grey_eminence
+	trait=proud
+	trait=chaste
+	trait=genius
+	trait=scholar
+	trait=patient
+	trait=just
+	trait=legendary
 	2305.7.13={birth=yes}
 	2375.4.13={death={death_reason=death_poor_health}}
 	}
@@ -597,9 +597,9 @@
 	stewardship=4
 	intrigue=4
 	learning=4
-	add_trait=thrifty_clerk
-	add_trait=proud
-	add_trait=legendary
+	trait=thrifty_clerk
+	trait=proud
+	trait=legendary
 	2280.12.5={birth=yes}
 	2360.1.1={death={death_reason=death_poor_health}}
 	}
