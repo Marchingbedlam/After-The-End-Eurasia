@@ -69,7 +69,7 @@
 	1425.6.27={
 		name="Xuande"
 	}
-	1435.1.31={death=yes}
+	1435.1.30={death=yes}
 }
 8001030={ #Zhengtong and Tianshun Emperor (lived 1427-1464) (1st reigned 1435 to 1449 - 2nd reigned 1457 to 1464) Xuande 1st Son
 	name="Qizhen"
@@ -590,19 +590,19 @@
 	culture=manchu
 	female=yes
 	1575.1.1={birth=yes}
-	1603.10.31={death=yes}
+	1603.10.30={death=yes}
 }
 8001104={
-	dynasty=1051212 #Borjigit
 	name="Namusai"
+	dynasty=1051212 #Borjigit
 	religion=nondescript_pagan
 	culture=khalkha
 	1543.1.1={birth=yes}
 	1583.1.1={death=yes}
 }
 8001105={
-	dynasty=1051212 #Borjigit
 	name="Manggusi"
+	dynasty=1051212 #Borjigit
 	religion=nondescript_pagan
 	culture=khalkha
 	father=8001104
@@ -626,7 +626,7 @@
 	female=yes
 	father=8001105
 	mother=8001106
-	1599.5.31={birth=yes}
+	1599.5.30={birth=yes}
 	1649.5.28={death=yes}
 }
 8001108={
@@ -704,7 +704,7 @@
 	culture=khalkha
 	father=8001108
 	1591.3.28={birth=yes}
-	1600.9.30={add_matrilineal_spouse=8001106}
+	1600.9.30={add_spouse=8001106}
 	1629.1.27={death=yes}
 }
 8001130={
@@ -715,7 +715,7 @@
 	father=8001129
 	mother=8001106
 	1600.3.28={birth=yes}
-	1639.1.1={add_matrilineal_spouse=8001128}
+	1639.1.1={add_spouse=8001128}
 	1653.1.27={death=yes}
 }
 8001131={ #8th Daughter (Hong Taiji)
@@ -1147,7 +1147,7 @@
 	culture=manchu
 	father=8001183
 	mother=8001184
-	1731.7.31={birth=yes}
+	1731.7.30={birth=yes}
 	1747.5.1={add_matrilineal_spouse=8001193}
 	1792.9.30={death=yes}
 }
@@ -1241,7 +1241,7 @@
 	religion=ruist
 	culture=manchu
 	father=8001183
-	1757.8.31={birth=yes}
+	1757.8.30={birth=yes}
 	1760.5.3={death=yes}
 }
 8001203={ #9th Daughter of the Qianlong Emperor
@@ -1637,6 +1637,7 @@
 	religion=ruist
 	culture=manchu
 	female=yes
+	father=8001259
 	1835.11.29={birth=yes}
 	1908.11.15={death=yes}
 }
