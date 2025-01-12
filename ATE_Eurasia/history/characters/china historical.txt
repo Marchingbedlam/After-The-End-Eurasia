@@ -244,6 +244,7 @@
 	religion=ruist
 	culture=manchu
 	father=8001103
+	mother=8001110
 	1638.1.27={birth=yes}
 	1643.10.8={
 		name="Shunzhi"
@@ -591,14 +592,82 @@
 	1575.1.1={birth=yes}
 	1603.10.31={death=yes}
 }
+8001104={
+	dynasty=1051212 #Borjigit
+	name="Namusai"
+	religion=nondescript_pagan
+	culture=khalkha
+	1543.1.1={birth=yes}
+	1583.1.1={death=yes}
+}
+8001105={
+	dynasty=1051212 #Borjigit
+	name="Manggusi"
+	religion=nondescript_pagan
+	culture=khalkha
+	father=8001104
+	1559.5.14={birth=yes}
+	1579.5.14={add_spouse=8001106}
+	1600.9.30={death=yes}
+}
+8001106={
+	name="Gunbu"
+	religion=nondescript_pagan
+	culture=khalkha
+	female=yes
+	1559.5.14={birth=yes}
+	1626.9.30={death=yes}
+}
 8001107={
 	dynasty=1051212 #Borjigit
 	name="Jerjer"
 	religion=nondescript_pagan
 	culture=khalkha
 	female=yes
+	father=8001105
+	mother=8001106
 	1599.5.31={birth=yes}
 	1649.5.28={death=yes}
+}
+8001108={
+	dynasty=1051212 #Borjigit
+	name="Jaisang"
+	religion=nondescript_pagan
+	culture=khalkha
+	father=8001105
+	1590.5.14={birth=yes}
+	1620.5.14={add_spouse=8001109}
+	1649.9.30={death=yes}
+}
+8001109={
+	name="Boli"
+	religion=nondescript_pagan
+	culture=khalkha
+	female=yes
+	1590.5.14={birth=yes}
+	1654.9.30={death=yes}
+}
+8001110={
+	dynasty=1051212 #Borjigit
+	name="Bumbutai"
+	religion=nondescript_pagan
+	culture=khalkha
+	female=yes
+	father=8001108
+	mother=8001109
+	1613.3.28={birth=yes}
+	1688.1.27={death=yes}
+}
+8001111={
+	dynasty=1051212 #Borjigit
+	name="Harjol"
+	religion=nondescript_pagan
+	culture=khalkha
+	female=yes
+	father=8001108
+	mother=8001109
+	1609.1.1={birth=yes}
+	1641.10.22={death=yes}
 }
 8001112={ #Eldest Daughter (Hong Taiji)
 	dynasty=1051209 #Aisin Gioro
@@ -1568,8 +1637,54 @@
 	religion=ruist
 	culture=manchu
 	female=yes
+	father=8001259
 	1835.11.29={birth=yes}
 	1908.11.15={death=yes}
+}
+8001259={
+	dynasty=1051211 #Yehe Nara
+	name="Yehenara Huizheng"
+	religion=ruist
+	culture=manchu
+	father=8001260
+	1805.1.1={birth=yes}
+	1853.1.1={death=yes}
+}
+8001260={
+	dynasty=1051211 #Yehe Nara
+	name="Jingrui"
+	religion=ruist
+	culture=manchu
+	father=8001261
+	1780.1.1={birth=yes}
+	1840.1.1={death=yes}
+}
+8001261={
+	dynasty=1051211 #Yehe Nara
+	name="Lingfu"
+	religion=ruist
+	culture=manchu
+	father=8001262
+	1740.1.1={birth=yes}
+	1800.1.1={death=yes}
+}
+8001262={
+	dynasty=1051211 #Yehe Nara
+	name="Yongfu"
+	religion=ruist
+	culture=manchu
+	father=8001263
+	1700.1.1={birth=yes}
+	1760.1.1={death=yes}
+}
+8001263={
+	dynasty=1051211 #Yehe Nara
+	name="Shanjin"
+	religion=ruist
+	culture=manchu
+	father=8001264
+	1660.1.1={birth=yes}
+	1720.1.1={death=yes}
 }
 8001269={
 	dynasty=1051217 #Uya
