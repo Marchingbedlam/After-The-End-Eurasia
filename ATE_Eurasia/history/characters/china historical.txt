@@ -600,6 +600,17 @@
 	1599.5.31={birth=yes}
 	1649.5.28={death=yes}
 }
+8001112={ #Eldest Daughter (Hong Taiji)
+	dynasty=1051209 #Aisin Gioro
+	name="Makata"
+	religion=nondescript_pagan
+	culture=manchu
+	female=yes
+	father=8001103
+	mother=8001107
+	1625.1.1={birth=yes}
+	1663.1.1={death=yes}
+}
 8001144={
 	dynasty=1051213 #Tunggiya
 	name="Tulai"
@@ -690,6 +701,15 @@
 	culture=khalkha
 	1590.1.1={birth=yes}
 	1650.1.1={death=yes}
+}
+8001156={ #4th Son (Shunzhi)
+	dynasty=1051209 #Aisin Gioro
+	name="Rong"
+	religion=ruist
+	culture=manchu
+	father=8001141
+	1657.11.12={birth=yes}
+	1658.2.25={death=yes}
 }
 8001158={ #Kangxi Consort (Empress Xiaochengren)
 	dynasty=1051215 #Hešeri
@@ -912,7 +932,35 @@
 	father=8001183
 	mother=8001184
 	1731.7.31={birth=yes}
+	1747.5.1={add_matrilineal_spouse=8001193}
 	1792.9.30={death=yes}
+}
+8001193={ #3rd Daughter of the Qianlong Emperor Husband
+	dynasty=11100 #Borjigin
+	name="Septeng"
+	religion=ruist
+	culture=khalkha
+	father=8001194
+	1720.3.5={birth=yes}
+	1792.8.1={death=yes}
+}
+8001194={
+	dynasty=11100 #Borjigin
+	name="Danjin"
+	religion=nondescript_pagan
+	culture=khalkha
+	father=8001195
+	1680.1.1={birth=yes}
+	1738.1.1={death=yes}
+}
+8001195={
+	dynasty=11100 #Borjigin
+	name="Lubsan" #teniously link to the Yuan
+	religion=nondescript_pagan
+	culture=khalkha
+	father=8001127
+	1640.1.1={birth=yes}
+	1700.1.1={death=yes}
 }
 8001196={ #7th Son of the Qianlong Emperor
 	dynasty=1051209 #Aisin Gioro
@@ -1119,6 +1167,69 @@
 	father=8001162 #Ebilun Niohuru
 	1670.1.1={birth=yes}
 	1727.1.1={death=yes}
+}
+8001229={
+	dynasty=1051213 #Tunggiya
+	name="Shuming'a"
+	religion=ruist
+	culture=manchu
+	father=8001230
+	1752.1.1={birth=yes}
+	1820.1.1={death=yes}
+}
+8001230={
+	dynasty=1051213 #Tunggiya
+	name="Changzhou"
+	religion=ruist
+	culture=manchu
+	father=8001231
+	1731.1.1={birth=yes}
+	1752.1.1={death=yes}
+}
+8001231={
+	dynasty=1051213 #Tunggiya
+	name="Namushan"
+	religion=ruist
+	culture=manchu
+	father=8001232
+	1714.1.1={birth=yes}
+	1739.1.1={death=yes}
+}
+8001232={
+	dynasty=1051213 #Tunggiya
+	name="Darina"
+	religion=ruist
+	culture=manchu
+	father=8001233
+	1690.1.1={birth=yes}
+	1715.1.1={death=yes}
+}
+8001233={
+	dynasty=1051213 #Tunggiya
+	name="Liuyong"
+	religion=ruist
+	culture=manchu
+	father=8001234
+	1647.1.1={birth=yes}
+	1709.1.1={death=yes}
+}
+8001234={
+	dynasty=1051209 #Aisin Gioro
+	name="Keda"
+	religion=nondescript_pagan
+	culture=manchu
+	father=8001235
+	1628.3.3={birth=yes}
+	1646.3.22={death=yes}
+}
+8001235={
+	dynasty=1051209 #Aisin Gioro
+	name="Daišan"
+	religion=nondescript_pagan
+	culture=manchu
+	father=8001101 #Nurhaci
+	1606.1.1={birth=yes}
+	1652.1.1={death=yes}
 }
 8001236={ #1st Daughter of the Daoguang Emperor
 	dynasty=1051209 #Aisin Gioro
@@ -1418,6 +1529,142 @@
 }
 #########################################
 #Later Northern Yuan Leaders
+8001113={
+	dynasty=11100
+	name="Tögüs Temür" #Son of Toghon
+	religion=nondescript_pagan
+	culture=khalkha
+	1342.1.1={birth=yes}
+	1388.11.18={death=yes}
+}
+8001114={
+	dynasty=11100 #Borjigin Disputed
+	name="Yesüder"
+	religion=nondescript_pagan
+	culture=khalkha
+	father=8001113
+	# father=217266 Claimed Descendants of Kublai Khan
+	1358.1.1={birth=yes}
+	1392.1.1={death=yes}
+}
+8001115={
+	dynasty=11100 #Borjigin Disputed
+	name="Ajai" #Engke?
+	religion=nondescript_pagan
+	culture=khalkha
+	father=8001114
+	# father=217266 Claimed Descendants of Kublai Khan
+	1390.1.1={birth=yes}
+	1430.1.1={death=yes}
+}
+8001116={
+	dynasty=11100 #Borjigin
+	name="Agbarjin"
+	religion=nondescript_pagan
+	culture=khalkha
+	father=8001115
+	1423.1.1={birth=yes}
+	1454.1.1={death=yes}
+}
+8001117={
+	dynasty=11100 #Borjigin
+	name="Bayunmöngke"
+	religion=nondescript_pagan
+	culture=khalkha
+	father=8001116
+	1444.1.1={birth=yes}
+	1510.1.1={death=yes}
+}
+8001118={
+	dynasty=11100 #Borjigin
+	name="Batumöngke"
+	religion=nondescript_pagan
+	culture=khalkha
+	father=8001117
+	1464.1.1={birth=yes}
+	1510.1.1={death=yes}
+}
+8001119={
+	dynasty=11100 #Borjigin
+	name="Turbolad"
+	religion=nondescript_pagan
+	culture=khalkha
+	father=8001118
+	1480.1.1={birth=yes}
+	1525.1.1={death=yes}
+}
+8001120={
+	dynasty=11100 #Borjigin
+	name="Bodi Alagh"
+	religion=nondescript_pagan
+	culture=khalkha
+	father=8001119
+	1504.1.1={birth=yes}
+	1547.1.1={death=yes}
+}
+8001121={
+	dynasty=11100 #Borjigin
+	name="Daraisung Guden"
+	religion=nondescript_pagan
+	culture=khalkha
+	father=8001120
+	1520.1.1={birth=yes}
+	1557.1.1={death=yes}
+}
+8001122={
+	dynasty=11100 #Borjigin
+	name="Tümen Zasagt"
+	religion=nondescript_pagan
+	culture=khalkha
+	father=8001121
+	1539.1.1={birth=yes}
+	1592.1.1={death=yes}
+}
+8001123={
+	dynasty=11100 #Borjigin
+	name="Buyan Sechen"
+	religion=nondescript_pagan
+	culture=khalkha
+	father=8001122
+	1556.1.1={birth=yes}
+	1604.1.1={death=yes}
+}
+8001124={
+	dynasty=11100 #Borjigin
+	name="Mangghus Mergen Taiji"
+	religion=nondescript_pagan
+	culture=khalkha
+	father=8001123
+	1572.1.1={birth=yes}
+	1600.1.1={death=yes}
+}
+8001125={
+	dynasty=11100 #Borjigin
+	name="Lindan Han"
+	religion=nondescript_pagan
+	culture=khalkha
+	father=8001124
+	1588.1.1={birth=yes}
+	1634.1.1={death=yes}
+}
+8001126={
+	dynasty=11100 #Borjigin
+	name="Ejei Khongghor"
+	religion=nondescript_pagan
+	culture=khalkha
+	father=8001125
+	1610.1.1={birth=yes}
+	1661.1.1={death=yes}
+}
+8001127={
+	dynasty=11100 #Borjigin
+	name="Abunai"
+	religion=nondescript_pagan
+	culture=khalkha
+	father=8001125
+	1620.1.1={birth=yes}
+	1661.1.1={death=yes}
+}
 #########################################
 #The Banner of Ula Nara was founded by Gudai Juyan after the branches of the Nara clan splintered
 
