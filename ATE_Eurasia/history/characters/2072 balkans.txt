@@ -182,13 +182,12 @@
 	trait=shy
 	
 	2612.12.5={birth=yes}
-	2640.3.12={add_spouse=2072014}
+	2630.1.1={add_spouse=2072014}
 	2700.10.1={death=yes}
 }
 2072014={
 	name="Virginia"
 	female=yes
-	dynasty=0 #Lowborn
 	culture=greek
 	religion=orthodox
 	
@@ -512,7 +511,7 @@
 	father=2072207
 	mother=2072208
 	2628.1.1={birth=yes}
-	2640.1.1={add_spouse=2072204}
+	2646.1.1={add_spouse=2072204}
 	2664.1.1={death={death_reason=death_trait}}
 }
 2072204={
@@ -551,7 +550,7 @@
 	culture=makedonian
 	father=2072209
 	2600.1.1={birth=yes}
-	2620.1.1={add_spouse=2072208}
+	2621.1.1={add_spouse=2072208}
 	2660.1.1={death=yes}
 }
 2072208={
@@ -885,7 +884,7 @@
 	trait=inspiring_leader
 	trait=temperate
 	disallow_random_traits=yes
-	2635.11.2={birth=yes}
+	2633.11.2={birth=yes}
 	2680.1.1={death=yes}
 }
 2072237={
