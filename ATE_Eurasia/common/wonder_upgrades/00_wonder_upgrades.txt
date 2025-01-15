@@ -504,3 +504,691 @@ upgrade_tavern = {
 		court_size_modifier = 5
 	}
 }
+
+####UNIQUE EURASIAN UPGRADES
+upgrade_ayasofya = {
+	picture = GFX_upgrade_icon_key
+	potential = { religion_group = muslim }
+	allow = {
+		trigger_if = {
+			limit = { NOT = { religion_group = muslim } }
+			religion_group = muslim
+		}
+	}
+	active = { religion_group = muslim }
+
+	flags = {
+		is_singular
+		unlocks_minor_title
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	local_modifier = {
+		
+	}
+	owner_modifier = {
+		custom_modifier_text = custodian_of_mosque_custom_modifier_tt
+	}
+}
+upgrade_blue_mosque = { 
+	picture = GFX_upgrade_icon_book_red
+
+	potential = { religion_group = muslim }
+	allow = {
+		trigger_if = {
+			limit = { NOT = { religion_group = muslim } }
+			religion_group = muslim
+		}
+	}
+	active = { religion_group = muslim }
+
+	flags = {
+		culture_conversion_faster
+		inspires_learning
+		is_singular
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	local_modifier = {
+		local_revolt_risk = -0.01
+	}
+	owner_modifier = {
+		scholar_opinion = 5
+		custom_modifier_text = culture_convertion_custom_modifier_tt
+		same_religion_opinion = 2
+		custom_modifier_text = religious_spread_custom_modifier_tt
+	}
+}
+upgrade_galata_tower = {
+	picture = GFX_upgrade_icon_stones
+
+	potential = { }
+	allow = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		towering
+		is_singular
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	local_modifier = {
+		siege_defence = 0.05
+		levy_size = 0.1
+	}
+	owner_modifier = {
+		monthly_character_prestige = 0.02
+	}
+}
+upgrade_topkapi_palace = {
+	picture = GFX_upgrade_icon_key
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		room
+		is_singular
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	local_modifier = {
+		land_organisation = 0.1
+		disease_defence = 0.05
+		monthly_character_prestige = 0.05
+		defensive_plot_power_modifier = 0.05
+	}
+	owner_modifier = {
+		monthly_character_prestige = 0.05
+		custom_modifier_text = private_talk_possible_modifier_tt
+	}
+}
+upgrade_sultanahmet_garden = {
+	picture = GFX_upgrade_icon_decorative
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		entertainment
+		is_singular
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	owner_modifier = {
+		command_modifier = {
+			cavalry = 0.05
+		}
+		monthly_character_prestige = 0.05
+		poet_opinion = 5
+		monthly_character_prestige = 0.1
+		gardener_opinion = 5
+	}
+}
+upgrade_istanbul_university = {
+	picture = GFX_upgrade_icon_written_paper
+
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		great_lecture_decision
+		is_plural
+	}
+	build_time = 24
+	gold_cost_flat = 500
+	gold_cost_ticking = 1
+	owner_modifier = {
+		scholar_opinion = 5
+		town_opinion = 3
+		tech_growth_modifier = 0.35
+		diplomacy = 1
+		stewardship = 1
+	}
+	local_modifier = {
+		culture_techpoints = 0.05
+		economy_techpoints = 0.05
+	}
+}
+###UNIQUE UPGRADES
+upgrade_genghis_khan_statue = { # Statues of the Dead
+	#.... 
+	picture = GFX_upgrade_icon_book_blue
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		statues
+		is_plural
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	owner_modifier = {
+		dynasty_opinion = 3
+		khanist_opinion = 10
+		khanist_reformed_opinion = 10
+		monthly_character_piety = 0.5
+		monthly_character_prestige = 0.5
+	}
+}
+
+upgrade_altar_of_heaven = { #Eternal flame
+	#.... 
+	picture = GFX_upgrade_icon_brazier
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		is_singular
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	local_modifier = {
+		local_revolt_risk = -0.05
+	}
+	owner_modifier = {
+		khanist_opinion = 10
+		khanist_reformed_opinion = 10
+		monthly_character_piety = 0.25
+	}
+}
+
+upgrade_ovoo = { #Sacred Stones
+	picture = GFX_upgrade_icon_roses_white
+
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		holy
+		decorative
+		nature
+		is_singular
+		secluded
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	local_modifier = {
+		local_revolt_risk = -0.04
+	}
+	owner_modifier = {
+		same_religion_opinion = 2
+		monthly_character_piety = 0.25
+		custom_modifier_text = private_talk_possible_modifier_tt
+	}
+}
+upgrade_potrang_marpo = {
+	picture = GFX_upgrade_icon_key
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		room
+		is_singular
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	local_modifier = {
+		land_organisation = 0.1
+		disease_defence = 0.05
+		monthly_character_prestige = 0.05
+		defensive_plot_power_modifier = 0.05
+	}
+	owner_modifier = {
+		monthly_character_prestige = 0.05
+		custom_modifier_text = private_talk_possible_modifier_tt
+	}
+}
+upgrade_potrang_karpo = {
+	picture = GFX_upgrade_icon_key
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		room
+		is_singular
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	local_modifier = {
+		land_organisation = 0.1
+		disease_defence = 0.05
+		monthly_character_prestige = 0.05
+		defensive_plot_power_modifier = 0.05
+	}
+	owner_modifier = {
+		monthly_character_prestige = 0.05
+		custom_modifier_text = private_talk_possible_modifier_tt
+	}
+}
+upgrade_norbulingka = {
+	picture = GFX_upgrade_icon_roses_white
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		is_plural
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	local_modifier = {
+		disease_defence = 0.05
+		monthly_character_prestige = 0.05
+		defensive_plot_power_modifier = 0.05
+	}
+	owner_modifier = {
+		monthly_character_prestige = 0.1
+		gardener_opinion = 5
+	}
+}
+upgrade_ark_of_the_covenant = { #The Supposed Ark
+	picture = GFX_upgrade_icon_door
+	
+	potential = { religion_group = christian }
+	active = { religion_group = christian }
+
+	flags = {
+		is_singular
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	owner_modifier = {
+		church_opinion = 5
+		same_religion_opinion = 5
+		monthly_character_piety = 0.25
+		custom_modifier_text = storing_a_relic_possible_modifier_tt
+	}
+}
+upgrade_ber_trees = {
+	picture = GFX_upgrade_icon_crates
+	
+	potential = { religion = sikh }
+	allow = {
+		trigger_if = {
+			limit = { NOT = { religion = sikh } }
+			religion = sikh
+		}
+	}
+	active = { religion = sikh }
+
+	flags = {
+		is_singular
+		contemplative
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	local_modifier = {
+		
+	}
+	owner_modifier = {
+		same_religion_opinion = 5
+		dynasty_opinion = 5
+	}
+	local_modifier = {
+		local_revolt_risk = -0.02
+	}
+}
+upgrade_ramgarhia_bunga = { 
+	picture = GFX_upgrade_icon_tower
+
+	potential = { religion = sikh }
+	allow = {
+		trigger_if = {
+			limit = { NOT = { religion = sikh } }
+			religion = sikh
+		}
+	}
+	active = { religion = sikh }
+
+	flags = {
+		towering
+		religion_conversion_faster
+		is_singular
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	owner_modifier = {
+		same_religion_opinion = 5
+		custom_modifier_text = religious_spread_custom_modifier_tt
+	}
+}
+
+upgrade_amrit_sarovar = { # Sahn
+	picture = GFX_upgrade_icon_tower
+
+	potential = { religion = sikh }
+	allow = {
+		trigger_if = {
+			limit = { NOT = { religion = sikh } }
+			religion = sikh
+		}
+		num_of_wonder_upgrades = 2
+	}
+	active = { religion = sikh }
+
+	flags = {
+		is_singular
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	local_modifier = {
+		disease_defence = 0.05
+	}
+}
+upgrade_akal_takht = {
+	picture = GFX_upgrade_icon_ingots_gold
+	potential = { }
+	allow = { 
+		
+	}
+	active = { }
+
+	flags = {
+		golden
+		valuable
+	}
+	build_time = 25
+	gold_cost_flat = 1000
+	gold_cost_ticking = 1
+	owner_modifier = {
+		monthly_character_prestige = 2
+		land_organisation = 0.05
+	}
+	local_modifier = {
+		local_revolt_risk = -0.02
+	}
+}
+upgrade_mary_church = {
+	picture = GFX_upgrade_icon_roses_red
+	potential = { religion_group = christian }
+	allow = {
+		trigger_if = {
+			limit = { NOT = { religion_group = christian } }
+			religion_group = christian
+		}
+	}
+	active = { religion_group = christian }
+
+	flags = {
+		decorative
+		is_singular
+		contemplative
+		holy
+		stores_relic
+	}
+	build_time = 20
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	owner_modifier = {
+		church_opinion = 5
+		town_opinion = 5
+		same_religion_opinion = 2
+		monthly_character_piety = 0.30
+		custom_modifier_text = storing_a_relic_possible_modifier_tt
+	}
+	local_modifier = {
+		siege_defence = 0.1
+	}
+}
+
+upgrade_charbagh = { #4x bonus of the hanging gardens
+	picture = GFX_upgrade_icon_roses_white
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		decorative
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	owner_modifier = {
+		monthly_character_prestige = 0.4
+		gardener_opinion = 20
+	}
+}
+
+upgrade_bazaar = { # Bazaar
+	picture = GFX_upgrade_icon_written_paper
+	
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		is_singular
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	owner_modifier = {
+		monthly_character_piety = 0.02
+		town_opinion = 5
+	}
+	local_modifier = {
+		tradevalue = 30
+		supply_limit = 0.5
+		local_tax_modifier = 0.1025
+	}
+}
+
+upgrade_murex_production = { # Tyrian Purple
+	picture = GFX_upgrade_icon_roses_blue
+	
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		is_singular
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	owner_modifier = {
+		monthly_character_prestige = 0.02
+		town_opinion = 5
+	}
+	local_modifier = {
+		tradevalue = 30
+		supply_limit = 0.5
+		local_tax_modifier = 0.1025
+	}
+}
+
+upgrade_giralda = { #Belltower
+	picture = GFX_upgrade_icon_ingots_silver
+
+	potential = { religion = penitant }
+	allow = {
+		trigger_if = {
+			limit = { NOT = { religion = penitant } }
+			religion = penitant
+		}
+	}
+	active = { }
+
+	flags = {
+		defensive
+		decorative
+		is_plural
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	owner_modifier = {
+		monthly_character_prestige = 0.05
+		andalusian_opinion = 2
+		penitant_opinion = 2
+	}
+	local_modifier = {
+		siege_defence = 0.1
+	}
+}
+upgrade_apses_crypt = {
+	picture = GFX_upgrade_icon_key
+	
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		valuable
+		is_singular
+		holy
+		stores_relic
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	owner_modifier = {
+		monthly_character_piety = 0.3
+		custom_modifier_text = storing_a_relic_possible_modifier_tt
+	}
+	local_modifier = {
+		siege_defence = 0.1
+	}
+}
+upgrade_nativity_facade = {
+	picture = GFX_upgrade_icon_roses_white
+
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		decorative
+		is_singular
+		contemplative
+	}
+	build_time = 20
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	owner_modifier = {
+		church_opinion = 5
+	}
+}
+upgrade_passion_facade = {
+	picture = GFX_upgrade_icon_roses_red
+
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		decorative
+		is_singular
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	owner_modifier = {
+		town_opinion = 5
+	}
+}
+upgrade_glory_facade = {
+	picture = GFX_upgrade_icon_roses_yellow
+
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		decorative
+		is_singular
+		contemplative
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	owner_modifier = {
+		same_religion_opinion = 2
+	}
+}
+
+upgrade_virgin_mary_spire = {
+	picture = GFX_upgrade_icon_stones
+
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		towering
+		is_singular
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	local_modifier = {
+		siege_defence = 0.05
+	}
+	owner_modifier = {
+		monthly_character_prestige = 0.02
+	}
+}
+
+upgrade_four_evangelist_spire = {
+	picture = GFX_upgrade_icon_ingots_silver
+
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		defensive
+		decorative
+		is_plural
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	local_modifier = {
+		siege_defence = 0.1
+	}
+}
+
+upgrade_bells_golden = {
+	picture = GFX_upgrade_icon_ingots_gold
+
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		defensive
+		decorative
+		is_plural
+		golden
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	owner_modifier = {
+		proud_opinion = 5
+	}
+}

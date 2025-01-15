@@ -64,7 +64,7 @@ nick_the_red = {
 	allow = {
 		ruled_years = 10
 		OR = {
-			has_character_modifier = cannibal
+			#has_character_modifier = cannibal
 			trait = cannibal
 			AND = {
 				trait = wroth
@@ -86,7 +86,7 @@ nick_the_red = {
 			factor = 5
 			OR = {
 				trait = cannibal
-				has_character_modifier = cannibal
+				#has_character_modifier = cannibal
 			}
 		}
 	}
