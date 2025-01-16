@@ -1458,11 +1458,11 @@ succession_laws = {
 		potential = {
 			OR ={
 				title = k_papal_state
-				title = k_glorian
-				title = d_ivri
-				title = d_shiite
-				title = k_pravoslavie
-				title = d_esztergom_primacy
+				#title = k_glorian
+				#title = d_ivri
+				#title = d_shiite
+				#title = k_pravoslavie
+				#title = d_esztergom_primacy
 			}
 		}
 		
@@ -1506,12 +1506,12 @@ succession_laws = {
 			}
 			NOR = { 
 				title = k_papal_state
-				title = k_glorian
-				title = d_ivri
-				title = d_shiite
+				#title = k_glorian
+				#title = d_ivri
+				#title = d_shiite
 				title = d_nizari
-				title = k_pravoslavie
-				title = d_esztergom_primacy
+				#title = k_pravoslavie
+				#title = d_esztergom_primacy
 			}
 			temporary = no
 			OR = {
@@ -1541,8 +1541,8 @@ succession_laws = {
 				holder_scope = { 
 					NOT = { 
 						religion = catholic
-						religion = pravoslavie
-						religion = coronite
+						#religion = pravoslavie
+						#religion = coronite
 					}
 				}
 			}
@@ -1590,8 +1590,8 @@ succession_laws = {
 			holder_scope = {
 				OR = {
 					religion = catholic
-					religion = pravoslavie
-					religion = coronite
+					#religion = pravoslavie
+					#religion = coronite
 				}
 				is_merchant_republic = no
 				OR = {

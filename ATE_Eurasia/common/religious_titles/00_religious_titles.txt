@@ -60,194 +60,194 @@ title_cardinal = {
 	message = yes
 }
 
-title_minister = {
-	religion = glorian
-	can_elect_head = yes
-	revoke_allowed = no
+# title_minister = {
+	# religion = glorian
+	# can_elect_head = yes
+	# revoke_allowed = no
 	
-	grant_limit = 9
+	# grant_limit = 9
 	
-	realm_in_name = no
-	show_as_title = yes
+	# realm_in_name = no
+	# show_as_title = yes
 	
-	opinion_effect = 20
-	dignity = 0.9
+	# opinion_effect = 20
+	# dignity = 0.9
 	
-	monthly_salary = 0.1
-	monthly_prestige = 0.5
+	# monthly_salary = 0.1
+	# monthly_prestige = 0.5
 	
-	allowed_to_grant = {
-		always = no
-	}
-	allow = {
-		religion = glorian
-		is_theocracy = yes
-		k_glorian = {
-			holder_scope = {
-				is_within_diplo_range = ROOT
-			}
-		}
+	# allowed_to_grant = {
+		# always = no
+	# }
+	# allow = {
+		# religion = glorian
+		# is_theocracy = yes
+		# k_glorian = {
+			# holder_scope = {
+				# is_within_diplo_range = ROOT
+			# }
+		# }
 		
-		NOT = {
-			top_liege = {
-				any_vassal = {
-					any_claim = {
-						title = k_glorian
-					}
-				}
-			}
-		}
-	}
+		# NOT = {
+			# top_liege = {
+				# any_vassal = {
+					# any_claim = {
+						# title = k_glorian
+					# }
+				# }
+			# }
+		# }
+	# }
 	
-	gain_effect = {
-	}
+	# gain_effect = {
+	# }
 	
-	lose_effect = {
-	}
+	# lose_effect = {
+	# }
 
-	message = yes
-}
+	# message = yes
+# }
 
-title_tzaddik = {
-	religion = ivri
-	can_elect_head = yes
-	revoke_allowed = no
+# title_tzaddik = {
+	# religion = ivri
+	# can_elect_head = yes
+	# revoke_allowed = no
 	
-	grant_limit = 9
+	# grant_limit = 9
 	
-	realm_in_name = no
-	show_as_title = yes
+	# realm_in_name = no
+	# show_as_title = yes
 	
-	opinion_effect = 20
-	dignity = 0.9
+	# opinion_effect = 20
+	# dignity = 0.9
 	
-	monthly_salary = 0.1
-	monthly_prestige = 0.5
+	# monthly_salary = 0.1
+	# monthly_prestige = 0.5
 	
-	allowed_to_grant = {
-		always = no
-	}
-	allow = {
-		religion = ivri
-		is_theocracy = yes
-		d_ivri = {
-			holder_scope = {
-				is_within_diplo_range = ROOT
-			}
-		}
+	# allowed_to_grant = {
+		# always = no
+	# }
+	# allow = {
+		# religion = ivri
+		# is_theocracy = yes
+		# d_ivri = {
+			# holder_scope = {
+				# is_within_diplo_range = ROOT
+			# }
+		# }
 		
-		NOT = {
-			top_liege = {
-				any_vassal = {
-					any_claim = {
-						title = d_ivri
-					}
-				}
-			}
-		}
-	}
+		# NOT = {
+			# top_liege = {
+				# any_vassal = {
+					# any_claim = {
+						# title = d_ivri
+					# }
+				# }
+			# }
+		# }
+	# }
 	
-	gain_effect = {
-	}
+	# gain_effect = {
+	# }
 	
-	lose_effect = {
-	}
+	# lose_effect = {
+	# }
 
-	message = yes
-}
+	# message = yes
+# }
 
-title_allamah = {
-	religion = shiite
-	can_elect_head = yes
-	revoke_allowed = no
+# title_allamah = {
+	# religion = shiite
+	# can_elect_head = yes
+	# revoke_allowed = no
 	
-	grant_limit = 9
+	# grant_limit = 9
 	
-	realm_in_name = no
-	show_as_title = yes
+	# realm_in_name = no
+	# show_as_title = yes
 	
-	opinion_effect = 20
-	dignity = 0.9
+	# opinion_effect = 20
+	# dignity = 0.9
 	
-	monthly_salary = 0.1
-	monthly_prestige = 0.5
+	# monthly_salary = 0.1
+	# monthly_prestige = 0.5
 	
-	allowed_to_grant = {
-		always = no
-	}
-	allow = {
-		religion = shiite
-		is_theocracy = yes
-		d_shiite = {
-			holder_scope = {
-				is_within_diplo_range = ROOT
-			}
-		}
+	# allowed_to_grant = {
+		# always = no
+	# }
+	# allow = {
+		# religion = shiite
+		# is_theocracy = yes
+		# d_shiite = {
+			# holder_scope = {
+				# is_within_diplo_range = ROOT
+			# }
+		# }
 		
-		NOT = {
-			top_liege = {
-				any_vassal = {
-					any_claim = {
-						title = d_shiite
-					}
-				}
-			}
-		}
-	}
+		# NOT = {
+			# top_liege = {
+				# any_vassal = {
+					# any_claim = {
+						# title = d_shiite
+					# }
+				# }
+			# }
+		# }
+	# }
 	
-	gain_effect = {
-	}
+	# gain_effect = {
+	# }
 	
-	lose_effect = {
-	}
+	# lose_effect = {
+	# }
 
-	message = yes
-}
+	# message = yes
+# }
 
-title_archierus = {
-	religion = pravoslavie
-	can_elect_head = yes
-	revoke_allowed = no
+# title_archierus = {
+	# religion = pravoslavie
+	# can_elect_head = yes
+	# revoke_allowed = no
 	
-	grant_limit = 9
+	# grant_limit = 9
 	
-	realm_in_name = no
-	show_as_title = yes
+	# realm_in_name = no
+	# show_as_title = yes
 	
-	opinion_effect = 20
-	dignity = 0.9
+	# opinion_effect = 20
+	# dignity = 0.9
 	
-	monthly_salary = 0.1
-	monthly_prestige = 0.5
+	# monthly_salary = 0.1
+	# monthly_prestige = 0.5
 	
-	allowed_to_grant = {
-		always = no
-	}
-	allow = {
-		religion = pravoslavie
-		is_theocracy = yes
-		k_pravoslavie = {
-			holder_scope = {
-				is_within_diplo_range = ROOT
-			}
-		}
+	# allowed_to_grant = {
+		# always = no
+	# }
+	# allow = {
+		# religion = pravoslavie
+		# is_theocracy = yes
+		# k_pravoslavie = {
+			# holder_scope = {
+				# is_within_diplo_range = ROOT
+			# }
+		# }
 		
-		NOT = {
-			top_liege = {
-				any_vassal = {
-					any_claim = {
-						title = k_pravoslavie
-					}
-				}
-			}
-		}
-	}
+		# NOT = {
+			# top_liege = {
+				# any_vassal = {
+					# any_claim = {
+						# title = k_pravoslavie
+					# }
+				# }
+			# }
+		# }
+	# }
 	
-	gain_effect = {
-	}
+	# gain_effect = {
+	# }
 	
-	lose_effect = {
-	}
+	# lose_effect = {
+	# }
 
-	message = yes
-}
+	# message = yes
+# }
