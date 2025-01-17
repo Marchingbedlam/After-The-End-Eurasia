@@ -1,0 +1,214 @@
+namespace = baptism_events
+
+character_event = {
+    id = baptism_events.1
+	desc = EVTDESCbaptism_events.1
+	picture = GFX_evt_baptists_doing_baptisms
+	border = GFX_event_normal_frame_religion 
+	
+	is_triggered_only = yes 
+
+	option = { #Yes!
+	    name = EVTOPTAbaptism_events.1
+		add_trait = adult_baptized
+		piety = 100
+			random = {
+		    chance = 2
+			death = { death_reason = death_accident_drowning }
+		}
+			random = {
+		    chance = 10
+			add_trait = zealous
+		}
+			random = {
+		    chance = 33
+			add_trait = pious
+		}
+	}
+	
+	option = { #Yes......
+	    name = EVTOPTBbaptism_events.1
+		add_trait = adult_baptized
+		piety = 50
+		trigger = { 
+			has_trait = cynical
+		}
+			random = {
+		    chance = 2
+			death = { death_reason = death_accident_drowning }
+		}
+			random = {
+		    chance = 10
+			add_trait = zealous
+		}
+			random = {
+		    chance = 33
+			add_trait = pious
+		}
+	}
+	
+	option = { #No!
+	    name = EVTOPTCbaptism_events.1
+		piety = -50
+			random = {
+		    chance = 5
+			add_trait = cynical
+		}
+	}
+}
+
+character_event = { #event to add iconoclast raid variable for when game starts, character converts to seperatist or reaches adulthood etc
+	id = baptism_events.2
+	hide_window = yes
+	
+	min_age = 16
+	
+	is_triggered_only = yes
+	
+	religion_group = christian
+	
+	trigger = {
+		OR = {
+			religion = seperatist
+			religion = neotondrakian
+		}
+		NOT = {
+			check_variable = { which = iconoclast_raids value >= 1 }
+		}
+	}
+	
+	immediate = {
+		set_variable = { which = iconoclast_raids value = 0 }
+	}
+}
+
+character_event = { #iconoclast raid counter
+	id = baptism_events.3
+
+    border = GFX_event_normal_frame_war
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	
+	religion_group = christian
+	
+	trigger = {
+		OR = {
+			religion = seperatist
+			religion = neotondrakian
+		}
+		FROM = {
+			owner = {
+				NOR = { # raiding other protestants won't count
+					religion = seperatist
+					religion = neotondrakian
+					religion = lutheran
+					religion = iconoclast
+					religion = calvinist
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		change_variable = { which = iconoclast_raids value = 1 }
+	}
+}
+
+character_event = { #event that gives the traits
+	id = baptism_events.4
+	desc = { 
+		trigger = { 
+			NOR = {
+				trait = aniconist
+				trait = image_breaker
+				trait = arch_iconoclast
+			}
+		} 
+		text = EVTDESC_baptism_events_4A
+	}
+	desc = { 
+		trigger = { 
+			trait = aniconist
+		}
+		text = EVTDESC_baptism_events_4B
+	}
+	desc = { 
+		trigger = { 
+			trait = image_breaker
+		}
+		text = EVTDESC_baptism_events_4C
+	}
+	picture = GFX_evt_iconoclasts_iconoclasming
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	min_age = 16
+	religion_group = christian
+	
+	
+	trigger = {
+		OR = {
+			religion = seperatist
+			religion = neotondrakian
+		}
+		OR = {
+			AND = {
+				NOR = {
+					trait = aniconist
+					trait = image_breaker
+					trait = arch_iconoclast
+				}
+				check_variable = { which = iconoclast_raids value = 5 }
+			}
+			AND = {
+				trait = aniconist
+				check_variable = { which = iconoclast_raids value = 10 }
+			}
+			AND = {
+				trait = image_breaker
+				check_variable = { which = iconoclast_raids value = 15 }
+			}
+		}
+	}
+	
+	option = {
+        name = EVTOPTA_baptism_events_4
+		trigger = {
+			NOR = {
+				trait = aniconist
+				trait = image_breaker
+				trait = arch_iconoclast
+			}
+			check_variable = { which = iconoclast_raids value = 10 }
+		}
+		add_trait = aniconist
+	}
+	
+	option = {
+        name = EVTOPTB_baptism_events_4
+		trigger = {
+			trait = aniconist
+			check_variable = { which = iconoclast_raids value = 25 }
+		}
+		remove_trait = aniconist
+		add_trait = image_breaker
+	}
+	
+	option = {
+        name = EVTOPTC_baptism_events_4
+		trigger = {
+			trait = image_breaker
+			check_variable = { which = iconoclast_raids value = 50 }
+		}
+		remove_trait = image_breaker
+		add_trait = arch_iconoclast
+	}
+}

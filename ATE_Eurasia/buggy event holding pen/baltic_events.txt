@@ -1,0 +1,135 @@
+namespace = baltic
+
+narrative_event = { #Borussia integrated into the Baltics
+	id = baltic.1
+	title = EVTTITLE_baltic_1
+	desc = EVTDESC_baltic_1
+	picture = GFX_evt_holy_emperor
+	is_triggered_only = yes
+	
+	major = yes	
+	only_playable = yes
+	
+	trigger = {
+		is_playable = yes
+		capital_scope = { region = custom_europe }
+		has_global_flag = borussia_integrated
+	}
+	
+	option = {
+		name = EVTOPTA_baltic_1
+		trigger = {
+			has_landed_title = e_baltic
+		}
+		prestige = 1000
+	}
+	
+	option = {
+		name = EVTOPTB_baltic_1
+		trigger = {
+			NOT = { has_landed_title = e_baltic }
+			top_liege = {
+				has_landed_title = e_baltic
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTC_baltic_1
+		trigger = {
+			NOR = {
+				has_landed_title = e_baltic
+				top_liege = {
+					has_landed_title = e_baltic
+				}
+			}
+			OR = {
+				culture_group = baltic
+				culture_group = finnic
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTD_baltic_1
+		trigger = {
+			NOR = {
+				has_landed_title = e_baltic
+				top_liege = {
+					has_landed_title = e_baltic
+				}
+			}
+			NOR = {
+				culture_group = baltic
+				culture_group = finnic
+			}
+		}
+	}
+}
+
+narrative_event = { #Belarus integrated into the Baltics
+	id = baltic.2
+	title = EVTTITLE_baltic_2
+	desc = EVTDESC_baltic_2
+	picture = GFX_evt_holy_emperor
+	is_triggered_only = yes
+	
+	major = yes	
+	only_playable = yes
+	
+	trigger = {
+		is_playable = yes
+		capital_scope = { region = custom_europe }
+		has_global_flag = belarus_integrated
+	}
+	
+	option = {
+		name = EVTOPTA_baltic_2
+		trigger = {
+			has_landed_title = e_baltic
+		}
+		prestige = 1000
+	}
+	
+	option = {
+		name = EVTOPTB_baltic_2
+		trigger = {
+			NOT = { has_landed_title = e_baltic }
+			top_liege = {
+				has_landed_title = e_baltic
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTC_baltic_2
+		trigger = {
+			NOR = {
+				has_landed_title = e_baltic
+				top_liege = {
+					has_landed_title = e_baltic
+				}
+			}
+			OR = {
+				culture_group = baltic
+				culture_group = finnic
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTD_baltic_2
+		trigger = {
+			NOR = {
+				has_landed_title = e_baltic
+				top_liege = {
+					has_landed_title = e_baltic
+				}
+			}
+			NOR = {
+				culture_group = baltic
+				culture_group = finnic
+			}
+		}
+	}
+}
