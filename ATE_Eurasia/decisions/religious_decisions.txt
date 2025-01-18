@@ -164,7 +164,7 @@ decisions = {
 
 			trigger_if = {
 				limit = { religion = catholic }
-				is_title_active = k_papacy
+				is_title_active = k_papal_state
 			}
 			trigger_else = {
 				religion = fraticelli
@@ -191,7 +191,7 @@ decisions = {
 					trigger_if = {
 						limit = { ROOT = { religion = catholic } }
 
-						k_papacy = {
+						k_papal_state = {
 							holder_scope = {
 								NOR = {
 									character = PREVPREV

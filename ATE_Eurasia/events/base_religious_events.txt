@@ -6569,9 +6569,9 @@ character_event = {
 
 	trigger = {
 		OR = {
-			has_claim = k_papacy
+			has_claim = k_papal_state
 
-			k_papacy = {
+			k_papal_state = {
 				any_claimant = {
 					is_vassal_or_below_of = ROOT
 				}
@@ -6580,7 +6580,7 @@ character_event = {
 	}
 
 	immediate = {
-		k_papacy = {
+		k_papal_state = {
 			any_claimant = {
 				limit = {
 					NAND = {
@@ -6588,7 +6588,7 @@ character_event = {
 						liege = { religion = catholic }
 					}
 				}
-				remove_claim = k_papacy
+				remove_claim = k_papal_state
 			}
 		}
 	}

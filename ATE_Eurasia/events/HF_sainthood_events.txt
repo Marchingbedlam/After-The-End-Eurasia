@@ -3690,7 +3690,7 @@ narrative_event = {
 	is_triggered_only = yes # depose_impious_pope
 
 	immediate = {
-		k_papacy = {
+		k_papal_state = {
 			holder_scope = {
 				save_event_target_as = current_pope
 			}

@@ -1225,7 +1225,7 @@ religion_has_seven_virtue = {
 
 is_antipope = {
 	OR = {
-		has_claim = k_papacy
+		has_claim = k_papal_state
 		has_claim = d_fraticelli
 	}
 }

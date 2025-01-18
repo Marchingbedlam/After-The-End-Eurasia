@@ -116,7 +116,7 @@ fire_haruspicy_event_effect = {
 landless_pope_effect = {
 	if = {
 		limit = {
-			has_landed_title = k_papacy
+			has_landed_title = k_papal_state
 			num_of_count_titles_in_realm == 0
 			is_landed = no
 			catholic = { is_name_randomized = no }

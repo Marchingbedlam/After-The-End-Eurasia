@@ -11078,7 +11078,7 @@ character_event = {
 						NOT = { has_character_flag = flag_coronation_pope_talk }
 
 						event_target:coronation_priest = {
-							has_landed_title = k_papacy
+							has_landed_title = k_papal_state
 						}
 					}
 
@@ -12585,7 +12585,7 @@ character_event = {
 	immediate = {
 		set_global_flag = flag_crowns_delivered
 
-		k_papacy = {
+		k_papal_state = {
 			holder_scope = {
 				save_event_target_as = the_pope
 			}
