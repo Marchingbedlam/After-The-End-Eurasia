@@ -1,0 +1,62 @@
+#######################################
+#
+# Roman Events
+#
+# Event ID LoR.1 - LoR.199 reserved
+#
+#######################################
+
+# Written by Henrik Eklund
+
+namespace = LoR
+
+# Augustus Trait inheritance
+character_event = {
+	id = LoR.47
+
+	is_triggered_only = yes # on_death
+	hide_window = yes
+
+	only_independent = yes
+	has_global_flag = rome_restored
+	has_dlc = "Legacy of Rome"
+
+	trigger = {
+		has_landed_title = e_roman_empire
+	}
+
+	immediate = {
+		e_roman_empire = {
+			current_heir = {
+				character_event = {
+					id = LoR.45
+					days = 2
+				}
+			}
+		}
+	}
+}
+
+# Augustus Trait inheritance
+character_event = {
+	id = LoR.48
+
+	is_triggered_only = yes # on_new_holder_usurpation
+	hide_window = yes
+
+	only_playable = yes
+	has_global_flag = rome_restored
+	has_dlc = "Legacy of Rome"
+
+	trigger = {
+		FROM = { title = e_roman_empire }
+		NOT = { trait = augustus }
+	}
+
+	immediate = {
+		character_event = {
+			id = LoR.45
+			days = 2
+		}
+	}
+}
