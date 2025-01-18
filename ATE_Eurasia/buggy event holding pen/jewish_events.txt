@@ -1,0 +1,2560 @@
+namespace = jewish
+###############################################################
+#	JEWISH EVENTS - After the End Eurasia					 #
+#															 #
+#	Religious Trait Selection (jewish.1 - jewish.3)			 #
+#	Haredi Events (jewish.1x - jewish.3x)					 #
+#	Hasakalah Events (jewish.4x - jewish.6x)				 #
+#	Ivri Events (jewish.7x - jewish.9x)						 #
+#															 #
+#	General Jewish Holidays and Events (jewish.1xx)			 #
+#	Lifecycle Events (jewish.10x-jewish.14x)				 #
+#	Yeshiva/Theology Events (jewish.15x-jewish.19x)			 #
+#															 #
+#	Jewish Maintanance Events for AI (jewish.2xx)			 #
+#															 #
+###############################################################
+
+################Choose Jewish Religious Movement##################################
+character_event = {
+	id = jewish.1
+	desc = EVTDESC_haredi_choose
+	picture = GFX_evt_bishop
+	religion = haredi
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+	}
+
+	option = {
+		name = EVTOPT_haredi_yashvai
+		desc = EVTOPT_haredi_yashvai_desc
+		hidden_tooltip = {
+			remove_trait = haredi_breslov
+			remove_trait = haredi_chassid
+		}
+		add_trait = haredi_yashvai
+		show_trait = haredi_yashvai
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 2 trait = haredi_yashvai }
+			modifier = { factor = 1.5 trait = erudite }
+			modifier = { factor = 1.5 trait = proud }
+			modifier = { factor = 5 culture = sefardi }
+			modifier = { factor = 1 culture = sabra }
+			modifier = { factor = 5 culture = yiddish }
+		}
+	}
+
+	option = {
+		name = EVTOPT_haredi_breslov
+		desc = EVTOPT_haredi_breslov_desc
+		hidden_tooltip = {
+			remove_trait = haredi_yashvai
+			remove_trait = haredi_chassid
+		}
+		add_trait = haredi_breslov
+		show_trait = haredi_breslov
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 2 trait = haredi_breslov }
+			modifier = { factor = 2 trait = gregarious }
+			modifier = { factor = 5 trait = mystic }
+			modifier = { factor = 4 trait = kind }
+			
+		}
+	}
+	
+	option = {
+		name = EVTOPT_haredi_chassid
+		desc = EVTOPT_haredi_chassid_desc
+		hidden_tooltip = {
+			remove_trait = haredi_breslov
+			remove_trait = haredi_yashvai
+		}
+		add_trait = haredi_chassid
+		show_trait = haredi_chassid
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 2 trait = haredi_chassid }
+			modifier = { factor = 2 trait = humble }
+			modifier = { factor = 1.5 trait = lustful }
+			modifier = { factor = 1.5 trait = gregarious }
+			modifier = { factor = 0.1 culture = sefardi }
+			modifier = { factor = 0.1 culture = sabra }
+			modifier = { factor = 5 culture = yiddish }
+		}
+	}
+
+}
+
+######################HAREDI EVENTS#####################
+
+#Hold Tish for your Court Rabbi
+narrative_event = {
+	id = jewish.10
+	title = EVTTITLE_TISH_INVITATION
+	desc = EVTDESC_TISH_INVITATION
+	picture = GFX_weinles_synagogue
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPT_inform_haredi_rabbi
+		job_spiritual = {
+			set_character_flag = invited_to_tish
+		}
+		character_event = { id = jewish.11 days = 2 }
+	}
+}
+character_event = {
+	id = jewish.11
+	desc = OK
+	picture = GFX_evt_synagogue
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		random_list = {
+			25 = { set_character_flag = random_torah_verse_1 }
+			25 = { set_character_flag = random_torah_verse_2 }
+			25 = { set_character_flag = random_torah_verse_3 }
+			25 = { set_character_flag = random_torah_verse_4 }
+		}
+		narrative_event = { id = jewish.12 days = 2 }
+	}
+}
+narrative_event = {
+	id = jewish.12
+	title = EVTTITLE_RECITING_TORAH
+	#Have the Same Intro in the localization just change out the Torah Verses the Rabbi recites
+	desc = {
+		trigger = {
+			has_character_flag = random_torah_verse_1
+		}
+		text = TORAH_VERSE_1
+	}
+	desc = {
+		trigger = {
+			has_character_flag = random_torah_verse_2
+		}
+		text = TORAH_VERSE_2
+	}
+	desc = {
+		trigger = {
+			has_character_flag = random_torah_verse_3
+		}
+		text = TORAH_VERSE_3
+	}
+	desc = {
+		trigger = {
+			has_character_flag = random_torah_verse_4
+		}
+		text = TORAH_VERSE_4
+	}
+	picture = GFX_rebbe_wisdom
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPT_praise_rabbi
+		add_character_modifier = { name = haredi_learning years = 1 }
+		clr_character_flag = random_torah_verse_1
+		clr_character_flag = random_torah_verse_2
+		clr_character_flag = random_torah_verse_3
+		clr_character_flag = random_torah_verse_4
+		narrative_event = { id = jewish.13 days = 2 }
+	}
+}
+narrative_event = {
+	id = jewish.13
+	title = EVTTITLE_A_NIGHT_OUT
+	desc = EVTDESC_TISH_PARTY
+	picture = GFX_evt_feast
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_party_with_rabbi
+		hidden_tooltip = {
+			random_list = {
+				5 = { add_trait = drunkard }
+				95 = { }
+			}
+			piety = 10
+		}
+		narrative_event = { id = jewish.14 days = 2 }
+	}
+	option = {
+		name = EVTOPTB_party_with_rabbi
+		hidden_tooltip = {
+			random_list = {
+				5 = { add_trait = wounded }
+				95 = { }
+			}
+			prestige = 10
+		}
+		narrative_event = { id = jewish.14 days = 2 }
+	}
+}
+narrative_event = {
+	id = jewish.14
+	title = EVTTITLE_TISH_FAREWELLS
+	desc = EVTDESC_TISH_END
+	picture = GFX_evt_carriage
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPT_tish_memories
+		job_spiritual = {
+		holder_scope = {
+			opinion = {
+					who = ROOT
+					modifier = opinion_tish_celebration
+				}
+			}
+		}
+		clr_character_flag = invited_to_tish
+	}
+}
+
+#Hitboddedut Events for Breslovers
+
+character_event = {
+	id = jewish.15
+	desc = EVTDESC_hitboddedut_0
+	picture = GFX_hitboddedut
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		trait = haredi_breslov
+		is_adult = yes
+		only_playable = yes
+		capable_only = yes
+		prisoner = no
+		NOT = { is_inaccessible_trigger = yes }
+	}
+	
+	weight_multiplier = {
+		days = 30
+		modifier = {
+			factor = 0.5
+			trait = cynical
+		}
+		modifier = {
+			factor = 2.0
+			trait = zealous #should be pious
+		}
+		modifier = {
+			factor = 1.5
+			trait = depressed
+		}
+		
+	}
+	
+	option = {
+		name = EVTOPTA_hitboddedut_0
+		add_trait = in_hiding
+		set_character_flag = do_not_disturb
+		set_character_flag = in_religious_seclusion
+		hidden_tooltip = {
+			random_list = {
+				10 = {
+					character_event = { id = jewish.16 days = 3 }
+				}
+				20 = {
+					character_event = { id = jewish.17 days = 3 }
+				}
+				20 = {
+					character_event = { id = jewish.18 days = 3 }
+				}
+				20 = {
+					character_event = { id = jewish.19 days = 3 }
+				}
+				20 = {
+					character_event = { id = jewish.20 days = 3 }
+				}
+				10 = {
+					character_event = { id = jewish.21 days = 3 }
+				}
+			}
+		}
+	}		
+}
+
+character_event = {
+	id = jewish.16
+	desc = EVTDESC_hitboddedut_1
+	picture = GFX_lilien_jonas
+	border = GFX_event_normal_frame_religion
+	
+	only_playable = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_hitboddedut_1
+		add_character_modifier = { name = breslov_foolish years = 2 }
+		remove_trait = in_hiding
+		clr_character_flag = do_not_disturb
+		clr_character_flag = in_religious_seclusion
+	}
+}
+
+character_event = {
+	id = jewish.17
+	desc = EVTDESC_hitboddedut_2
+	picture = GFX_abraham_lilien
+	border = GFX_event_normal_frame_religion
+	
+	only_playable = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_hitboddedut_2
+		random_list = {
+			10 = { 
+				modifier = { 
+					factor = 0 
+					trait = trusting
+				}
+				add_trait = trusting 
+			}
+			10 = { 
+				modifier = { 
+					factor = 0 
+					trait = content
+				}
+				add_trait = content
+			}
+			10 = { 
+				modifier = { 
+					factor = 0 
+					trait = honest
+				}
+				add_trait = honest 
+			}
+			10 = { 
+				modifier = { 
+					factor = 0 
+					trait = humble
+				}
+				add_trait = humble 
+			}
+			fallback = {
+				piety = 50
+			}
+		}
+		remove_trait = in_hiding
+		clr_character_flag = do_not_disturb
+		clr_character_flag = in_religious_seclusion
+	}		
+}
+
+character_event = {
+	id = jewish.18
+	desc = EVTDESC_hitboddedut_3
+	picture = GFX_lilien_psalm
+	border = GFX_event_normal_frame_religion
+	
+	only_playable = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_hitboddedut_3
+		random_list = {
+			10 = { 
+				modifier = { 
+					factor = 0 
+					NOT = { trait = ambitious }
+				}
+				remove_trait = ambitious 
+			}
+			10 = { 
+				modifier = { 
+					factor = 0 
+					NOT = { trait = envious }
+				}
+				remove_trait = envious 
+			}
+			10 = { 
+				modifier = { 
+					factor = 0 
+					NOT = { trait = proud }
+				}
+				remove_trait = proud 
+			}
+			10 = { 
+				modifier = { 
+					factor = 0 
+					NOT = { trait = paranoid }
+				}
+				remove_trait = paranoid 
+			}
+			10 = { 
+				modifier = { 
+					factor = 0 
+					NOT = { trait = deceitful }
+				}
+				remove_trait = deceitful 
+			}
+			fallback = {
+				piety = 50	
+			}
+
+		}
+		remove_trait = in_hiding
+		clr_character_flag = do_not_disturb
+		clr_character_flag = in_religious_seclusion
+	}		
+}
+
+character_event = {
+	id = jewish.19
+	desc = EVTDESC_hitboddedut_4
+	picture = GFX_lilien_psalmist
+	border = GFX_event_normal_frame_religion
+	
+	only_playable = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_hitboddedut_4
+		random_list = {
+			10 = { 
+				modifier = { 
+					factor = 0 
+					NOT = { trait = stressed }
+				}
+				remove_trait = stressed 
+			}
+			10 = { 
+				modifier = { 
+					factor = 0 
+					NOT = { trait = depressed }
+				}
+				remove_trait = depressed 
+			}
+			fallback = {
+				piety = 50		
+			}
+		}
+		remove_trait = in_hiding
+		clr_character_flag = do_not_disturb
+		clr_character_flag = in_religious_seclusion
+	}		
+}
+
+character_event = {
+	id = jewish.20
+	desc = EVTDESC_hitboddedut_5
+	picture = GFX_lilien_isaiah
+	border = GFX_event_normal_frame_religion
+	
+	only_playable = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_hitboddedut_5
+		add_trait = cynical
+		remove_trait = in_hiding
+		clr_character_flag = do_not_disturb
+		clr_character_flag = in_religious_seclusion
+	}
+	option = {
+		name = EVTOPTB_hitboddedut_5
+		random_list = {
+			50 = { add_trait = stressed }
+			50 = { add_trait = depressed }
+		}
+		remove_trait = in_hiding
+		clr_character_flag = do_not_disturb
+		clr_character_flag = in_religious_seclusion
+		
+	}
+}
+
+character_event = {
+	id = jewish.21
+	desc = EVTDESC_hitboddedut_6
+	picture = GFX_lilien_daniel
+	border = GFX_event_normal_frame_religion
+	
+	only_playable = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_hitboddedut_6
+		add_character_modifier = { name = breslov_rejuvenated years = 2 }
+		remove_trait = in_hiding
+		clr_character_flag = do_not_disturb
+		clr_character_flag = in_religious_seclusion
+	}
+	
+}
+
+#Pale of Settlement and additional Haredi events
+narrative_event = {
+	id = jewish.22
+	title = EVTTITLE_pale_settlement
+	desc = EVTDESC_pale_settlement
+	picture = GFX_evt_crusaders
+	border = GFX_event_narrative_frame_religion
+	is_triggered_only = yes
+
+	option = {	 
+		name = EVTOPTA_pale_settlement
+		trigger = {
+			religion_group = jewish_group
+		}
+		if = {
+			limit = {
+				has_landed_title = e_pale_settlement
+			}
+			prestige = 1000
+			religion_authority = { modifier = pale_settlement_established }
+			if = {
+				limit = {
+					has_dlc = "Holy Fury"
+				}
+				if = {
+					limit = {
+						is_female = yes
+					}
+					create_bloodline = {
+						type = yiddishe_bloodline
+						inheritance = matrilineal
+					}
+				}
+				else = {
+					create_bloodline = {
+						type = yiddishe_bloodline
+					}
+				}
+				set_bloodline_founder_religion_flag_effect = yes
+			}
+		}
+	}
+	option = {	 
+		name = EVTOPTB_pale_settlement
+		trigger = {
+			NOT = {
+				religion_group = jewish_group
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			trigger = {
+				OR = {
+					NOT = {
+						any_liege = {
+							religion = FROM
+						}
+					}
+					ai = no
+				}
+			}
+		}
+	}
+}
+
+
+######################HASKALAH EVENTS##################
+
+#####Interfaith Dialogue
+
+character_event = {
+	id = jewish.31
+	desc = EVTDESC_dialogue_1
+	picture = GFX_evt_bishop
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTA_dialogue_1
+		FROM = {
+			trigger_switch = {##adds symapthy in accordance with gentiles religion
+				#### rememder to update as more religion groups are added
+				on_trigger = religion_group
+				scholastic				= { ROOT = { add_trait = sympathy_scholastic}}
+				christian				= { ROOT = { add_trait = sympathy_christendom}}
+				vernacular	 			= { ROOT = { add_trait = sympathy_vernacular }}
+				#jewish_group 			= { add_trait = sympathy_judaism }}
+				pagan_group 			= { ROOT = { add_trait = sympathy_pagans }}
+				muslim 					= { ROOT = { add_trait = sympathy_islam }}
+				old_world_cultist_group	= { ROOT = { add_trait = sympathy_old_world_cults }}
+				islamosyncretic			= { ROOT = { add_trait = sympathy_islamosyncretic }}
+			}
+		}
+		clr_character_flag = dialoguing
+		add_character_modifier = {
+			name = recently_dialogued
+			months = 6
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_dialogue_1
+		trigger = {
+			opinion = {
+				who = FROM
+				value = 25
+			}
+			reverse_opinion = {
+				who = FROM
+				value = 25
+			}
+		}
+		
+		FROM = {
+			trigger_switch = {##adds symapthy in accordance with gentiles religion
+				#### remember to update as more religion groups are added
+				on_trigger = religion_group
+				christian				= { ROOT = { add_trait = sympathy_christendom}}
+				vernacular	 			= { ROOT = { add_trait = sympathy_vernacular } }
+				#jewish_group 			= { add_trait = sympathy_judaism }}
+				pagan_group 			= { ROOT = { add_trait = sympathy_pagans }}
+				muslim 					= { ROOT = { add_trait = sympathy_islam }}
+				old_world_cultist_group	= { ROOT = { add_trait = sympathy_old_world_cults }}
+				islamosyncretic			= { ROOT = { add_trait = sympathy_islamosyncretic }}
+				scholastic				= { ROOT = { add_trait = sympathy_scholastic }}
+			}
+			opinion = {
+				who = PREV
+				modifier = opinion_delighted
+			}
+			#character_event = {id = jewish.32 days = 3}
+			clr_character_flag = dialoguing
+			add_character_modifier = {
+				name = recently_dialogued
+				months = 6
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+
+
+
+####################General Jewish Events##############
+
+#######Bar Mitzvah Events
+
+character_event = { #training to read Torah
+	id = jewish.101
+	desc = EVTDESC_barmitzvah_1
+	picture = GFX_rosh_hashanah
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		event_target:bar_mitzvah_target = { 
+			is_alive = yes
+		}
+
+	}
+
+	fail_trigger_effect = {
+		if = {
+			limit = {
+				NOT = { event_target:bar_mitzvah_target = { is_alive = yes } }
+			}
+			clr_event_target = bar_mitzvah_target
+		}
+	}
+	
+
+	
+	#Accept offer
+	option = {
+		name = EVTOPTA_barmitzvah_1
+		event_target:bar_mitzvah_target = { 
+			random_list = {#how well the kid does in his aliyah latora
+				70 = {#child does well
+					mult_modifier = {#good rabbi
+						factor = 1.3
+						trigger = {
+							job_spiritual = {
+								holder_scope = {
+									OR = {
+										learning >= 15
+										trait = theologian
+									}
+								}
+							}
+						}
+					}
+					mult_modifier = {#good child
+						factor = 1.5
+						trigger = {
+							bar_mitzvah_target = {
+								OR = {
+									trait = idolizer
+									has_character_flag = was_idolizer
+									trait = curious
+									has_character_flag = was_curious
+									trait = timid
+									has_character_flag = was_timid
+									trait = genius
+									trait = quick
+								}
+							}
+						}
+					}
+					mult_modifier = {#child education focus is learning
+						factor = 2
+						trigger = {
+							bar_mitzvah_target = {
+								has_dlc = "Zeus"
+								has_focus = focus_ed_learning
+							}
+						}
+					}
+					set_character_flag = torah_success
+				}
+				30 = {#child fails
+					mult_modifier = {#imbecile/inbred
+						factor = 5
+						trigger = {
+							bar_mitzvah_target = {
+								OR = {
+									trait = imbecile
+									trait = inbred
+								}
+							}
+						}
+					}
+					mult_modifier = {#slow/stutter/cynical
+						factor = 2
+						trigger = {
+							bar_mitzvah_target = {
+								OR = {
+									trait = stutter
+									trait = slow
+									trait = cynical
+								}
+							}
+						}
+					}
+					mult_modifier = {#bad chilhood traits
+						factor = 1.5
+						trigger = {
+							bar_mitzvah_target = {
+								OR = {
+									trait = rowdy
+									has_character_flag = was_rowdy
+									trait = haughty
+									has_character_flag = was_haughty
+									trait = indolent
+									has_character_flag = was_indolent
+									learning <= 3
+								}
+							}
+						}
+					}
+					mult_modifier = {#bad rabbi
+						factor = 1.3
+						trigger = {
+							job_spiritual = {
+								holder_scope = {
+									learning <= 8
+								}
+							}
+						}
+					}
+				set_character_flag = torah_failure
+				}
+			}
+		}
+		job_spiritual = {
+			holder_scope = {
+				opinion = {
+					who = bar_mitzvah_target
+					modifier = opinion_good_student
+				}
+			}
+		}
+		transfer_scaled_wealth = {#is that impossible without the money being scaled?
+			to = job_spiritual
+			value = 1.0
+			min = 50
+			max = 50
+		}
+	}
+	#Teach the kid yourself
+	option = {
+		name = EVTOPTB_barmitzvah_1
+		trigger = {
+			OR = {
+				trait = theologian
+				trait = scholar
+				learning = 8
+				gold <= 100
+			}
+		}
+		prestige = 50
+		random_list = {
+			90 = { trait = proud }
+			10 = { trait = erudite }
+		}
+		event_target:bar_mitzvah_target = { 
+			random_list = {#how well the kid does in his aliyah latora
+				60 = {#child does well
+					mult_modifier = {#good parent
+						factor = 1.3
+						trigger = {
+							ROOT = {
+								OR = {
+									learning >= 15
+									trait = theologian
+								}
+							}
+						}
+					}
+					mult_modifier = {#good child
+						factor = 1.5
+						trigger = {
+							bar_mitzvah_target = {
+								OR = {
+									trait = idolizer
+									has_character_flag = was_idolizer
+									trait = curious
+									has_character_flag = was_curious
+									trait = timid
+									has_character_flag = was_timid
+									trait = genius
+									trait = quick
+								}
+							}
+						}
+					}
+					mult_modifier = {#child education focus is learning
+						factor = 2
+						trigger = {
+							bar_mitzvah_target = {
+								has_dlc = "Zeus"
+								has_focus = focus_ed_learning
+							}
+						}
+					}
+					set_character_flag = torah_success
+				}
+				40 = {#child fails
+					mult_modifier = {#imbecile/inbred
+						factor = 5
+						trigger = {
+							bar_mitzvah_target = {
+								OR = {
+									trait = imbecile
+									trait = inbred
+								}
+							}
+						}
+					}
+					mult_modifier = {#slow/stutter/cynical
+						factor = 2
+						trigger = {
+							bar_mitzvah_target = {
+								OR = {
+									trait = stutter
+									trait = slow
+									trait = cynical
+								}
+							}
+						}
+					}
+					mult_modifier = {#bad chilhood traits
+						factor = 1.5
+						trigger = {
+							bar_mitzvah_target = {
+								OR = {
+									trait = rowdy
+									has_character_flag = was_rowdy
+									trait = haughty
+									has_character_flag = was_haughty
+									trait = indolent
+									has_character_flag = was_indolent
+									learning <= 3
+								}
+							}
+						}
+					}
+				set_character_flag = torah_failure
+				}
+			}
+		}
+		job_spiritual = {
+			holder_scope = {
+				opinion = {
+					modifier = opinion_disappointed
+					who = ROOT
+					years = 5
+				}
+			}
+		}
+	}
+	#Decline offer
+	option = {
+		name = EVTOPTC_barmitzvah_1
+		event_target:bar_mitzvah_target = {
+			random_list = {
+				30 = {#succeds
+					mult_modifier = {#can't succed unless child have education focus of learning
+						factor = 0
+						trigger = {
+							NOT = {
+								bar_mitzvah_target = {
+									has_dlc = "Zeus"
+									has_focus = focus_ed_learning
+								}
+							}
+						}
+					}
+					mult_modifier = {#good child
+						factor = 1.5
+						trigger = {
+							bar_mitzvah_target = {
+								OR = {
+									trait = idolizer
+									has_character_flag = was_idolizer
+									trait = curious
+									has_character_flag = was_curious
+									trait = timid
+									has_character_flag = was_timid
+									trait = genius
+									trait = quick
+								}
+							}
+						}
+					}
+					set_character_flag = torah_success
+				}
+				70 = {#fails
+					mult_modifier = {#imbecile/inbred
+						factor = 5
+						trigger = {
+							bar_mitzvah_target = {
+								OR = {
+									trait = imbecile
+									trait = inbred
+								}
+							}
+						}
+					}
+					mult_modifier = {#slow/stutter/cynical
+						factor = 2
+						trigger = {
+							bar_mitzvah_target = {
+								OR = {
+									trait = stutter
+									trait = slow
+									trait = cynical
+								}
+							}
+						}
+					}
+					mult_modifier = {#bad childhood traits
+						factor = 1.5
+						trigger = {
+							bar_mitzvah_target = {
+								OR = {
+									trait = rowdy
+									has_character_flag = was_rowdy
+									trait = haughty
+									has_character_flag = was_haughty
+									trait = indolent
+									has_character_flag = was_indolent
+									learning <= 3
+								}
+							}
+						}
+					}
+					set_character_flag = torah_failure
+				}
+			}
+		}
+		piety = -50
+		
+		job_spiritual = {
+			holder_scope = {
+				opinion = {
+					modifier = opinion_disappointed
+					who = ROOT
+					years = 10
+				}
+			}
+		}
+	}
+	after={
+		character_event = { id = jewish.102 days= 3 }#should be 10 months but im bugtesting
+	}
+}
+
+
+character_event = { #reading in the Synagogue
+	id = jewish.102
+	picture = GFX_bar_mitzvah
+	desc = {
+		trigger = {
+			event_target:bar_mitzvah_target = { has_character_flag = torah_success }
+		}
+		text = EVTDES1_barmitzvah_2
+	}
+	desc = {
+		trigger = {
+			event_target:bar_mitzvah_target = { has_character_flag = torah_failure }
+		}
+		text = EVTDES2_barmitzvah_2
+	}
+	is_triggered_only = yes
+	
+	trigger = {
+		event_target:bar_mitzvah_target = { 
+				is_alive = yes
+		}
+
+	}
+
+	fail_trigger_effect = {
+		if = {
+			limit = {
+				NOT = { event_target:bar_mitzvah_target = { is_alive = yes } }
+			}
+			clr_event_target = bar_mitzvah_target
+		}
+	}
+	
+	option = {#the child succeeds
+		name = EVTOPTA_barmitzvah_2
+		trigger = {
+			event_target:bar_mitzvah_target = {
+				has_character_flag	= torah_success
+			}
+		}
+		event_target:bar_mitzvah_target = {
+			prestige = 100
+			piety = 100
+			change_learning = 1
+			add_character_modifier = {
+				name = bar_mitzvah_good
+				years = 5
+			}
+		}
+		prestige = 50
+		piety = 25
+	}
+	option = {#the child fails
+		name = EVTOPTB_barmitzvah_2
+		trigger = {
+			event_target:bar_mitzvah_target = {
+				has_character_flag	= torah_failure
+			}
+		}
+		event_target:bar_mitzvah_target = {
+			prestige = -25
+			piety = -50
+			add_character_modifier = {
+				name = bar_mitzvah_bad
+				years = 5
+			}
+		}
+		prestige = -50
+		piety = -50
+	}
+	after = {
+		random_list = {
+			100 = { #Heir impresses visiting vassal
+				character_event = { id = jewish.103 days = 5 } # send event
+				trigger = {
+					any_vassal = {
+						ai = yes
+						prisoner = no
+						NOR = {
+							trait = incapable
+							is_inaccessible_trigger = yes
+						}
+					}
+					event_target:bar_mitzvah_target = {
+						OR = {
+							trait = affectionate
+							has_character_flag = was_affectionate
+							trait = playful
+							has_character_flag = was_playful
+							trait = curious
+							has_character_flag = was_curious
+							trait = conscientious
+							has_character_flag = was_conscientious
+							trait = idolizer
+							has_character_flag = was_idolizer
+						}
+					}
+				}
+			}
+			100 = { #Heir accidently insults visiting vassal
+				character_event = { id = jewish.104 days = 5 } # send event
+				trigger = {
+					any_vassal = {
+						ai = yes
+						prisoner = no
+						NOR = {
+							trait = incapable
+							is_inaccessible_trigger = yes
+						}
+					}
+					event_target:bar_mitzvah_target = {
+						OR = {
+							trait = haughty
+							has_character_flag = was_haughty
+							trait = rowdy
+							has_character_flag = was_rowdy
+							trait = willful
+							has_character_flag = was_willful
+							trait = indolent
+							has_character_flag = was_indolent
+							trait = fussy
+							has_character_flag = was_fussy
+						}
+					}
+				}
+			}
+			50 = { #Heir befriends vassal child
+				character_event = { id = jewish.105 days = 5 } # send event
+				trigger = {
+					event_target:bar_mitzvah_target = {
+						NOR = {
+							trait = timid
+							has_character_flag = was_timid
+						}
+					}
+					any_vassal = {
+						ai = yes
+						prisoner = no
+						NOR = {
+							trait = incapable
+							is_inaccessible_trigger = yes
+						}
+						any_child = {
+							ai = yes
+							age = 8
+							is_adult = no
+							prisoner = no
+							is_landed = no
+							NOR = { 
+								is_friend = event_target:bar_mitzvah_target 
+								is_rival = event_target:bar_mitzvah_target 
+								sibling = event_target:bar_mitzvah_target 
+								trait = incapable
+								is_inaccessible_trigger = yes
+							}
+						}
+					}
+				}
+			}
+			50 = { #Heir rivals vassal child
+				character_event = { id = jewish.106 days = 5 }
+				trigger = {
+					event_target:bar_mitzvah_target = {
+						NOR = {
+							trait = affectionate
+							has_character_flag = was_affectionate
+						}
+					}
+					any_vassal = {
+						ai = yes
+						prisoner = no
+						NOR = {
+							trait = incapable
+							is_inaccessible_trigger = yes
+						}
+						any_child = {
+							ai = yes
+							age = 8
+							is_adult = no
+							prisoner = no
+							is_landed = no
+							NOR = { 
+								is_friend = event_target:bar_mitzvah_target 
+								is_rival = event_target:bar_mitzvah_target 
+								sibling = event_target:bar_mitzvah_target 
+								trait = incapable
+								is_inaccessible_trigger = yes
+							}
+						}
+					}
+				}
+			}			
+			10 = { #Heir underperforms and becomes depressed
+				character_event = { id = jewish.107 days = 5 } #send event
+				trigger = {
+					event_target:bar_mitzvah_target = {
+						NOR = {
+							trait = depressed 
+							trait = indolent
+							has_character_flag = was_indolent
+						}
+						OR = {
+							trait = brooding
+							has_character_flag = was_brooding
+							trait = conscientious
+							has_character_flag = was_conscientious
+							trait = fussy
+							has_character_flag = was_fussy
+							trait = stressed
+							}
+						}
+						has_character_flag = torah_failure
+					}
+				}
+			}
+			fallback = {
+				character_event = {id = jewish.108 days = 10}
+			}
+		}
+	}
+
+####only one of 103-107 events happen
+	
+# Heir impresses vassal
+character_event = {
+	id = jewish.103
+	desc = EVTDESC_barmitzvah_3
+	picture = GFX_evt_dancing
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		event_target:bar_mitzvah_target = {
+			is_alive = yes
+		}
+		any_vassal = {
+			ai = yes
+			prisoner = no
+			NOR = {
+				trait = incapable
+				is_inaccessible_trigger = yes
+			}
+		}
+	}
+
+	fail_trigger_effect = {
+		if = {
+			limit = {
+				NOT = { event_target:bar_mitzvah_target = { is_alive = yes } }
+			}
+		}
+		else = {
+			character_event = { id = jewish.108 days = 10 random = 5 } #skip events
+		}
+	}
+	
+	immediate = {
+		any_vassal = {
+			limit = {
+				ai = yes
+				prisoner = no
+				NOR = {
+					trait = incapable
+					is_inaccessible_trigger = yes
+				}
+			}
+			save_event_target_as = compliment_vassal
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_barmitzvah_3
+		
+		event_target:compliment_vassal = {
+			show_scope_change = no
+			opinion = {
+				modifier = opinion_impressed
+				who = event_target:bar_mitzvah_target
+				years = 20
+			}
+		}
+	}
+	after = {
+		
+	}
+}
+
+# Heir insults vassal
+character_event = {
+	id = jewish.104
+	desc = EVTDESC_barmitzvah_4
+	picture = GFX_evt_accused
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		event_target:bar_mitzvah_target = {
+			is_alive = yes
+		}
+		any_vassal = {
+			ai = yes
+			prisoner = no
+			NOR = {
+				trait = incapable
+				is_inaccessible_trigger = yes
+			}
+		}
+	}
+
+	fail_trigger_effect = {
+		if = {
+			limit = {
+				NOT = { event_target:bar_mitzvah_target = { is_alive = yes } }
+			}
+		}
+		else = {
+			character_event = { id = jewish.108 days = 10 random = 5 } #skip to wrap up event
+		}
+	}
+	
+	immediate = {
+		any_vassal = {
+			limit = {
+				ai = yes
+				prisoner = no
+				NOR = {
+					trait = incapable
+					is_inaccessible_trigger = yes
+				}
+			}
+			save_event_target_as = insult_vassal
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_barmitzvah_4
+		
+		event_target:insult_vassal = {
+			show_scope_change = no
+			opinion = {
+				modifier = insulted
+				who = event_target:bar_mitzvah_target
+				years = 20
+			}
+		}
+	}
+	after = {
+		hidden_effect = {
+			character_event = { id = jewish.108 days = 10 random = 5 } #skip to wrap up event
+		}
+	}
+}
+
+# Heir befriends vassal child
+character_event = {
+	id = jewish.105
+	desc = EVTDESC_barmitzvah_5
+	picture = GFX_evt_child_sword
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		event_target:bar_mitzvah_target = { is_alive = yes }
+		any_vassal = {
+			ai = yes
+			prisoner = no
+			NOR = {
+				trait = incapable
+				is_inaccessible_trigger = yes
+			}
+			any_child = {
+				ai = yes
+				age = 8
+				is_adult = no
+				prisoner = no
+				is_landed = no
+				NOR = { 
+					is_friend = event_target:bar_mitzvah_target 
+					is_rival = event_target:bar_mitzvah_target 
+					sibling = event_target:bar_mitzvah_target 
+					trait = incapable
+					is_inaccessible_trigger = yes
+				}
+			}
+		}
+	}
+
+	fail_trigger_effect = {
+		if = {
+			limit = {
+				NOT = { event_target:bar_mitzvah_target = { is_alive = yes } }
+			}
+		}
+		else = {
+			character_event = { id = jewish.108 days = 10 random = 5 } #skip to wrap up event
+		}
+	}
+	
+	immediate = {
+		any_vassal = {
+			limit = {
+				ai = yes
+				prisoner = no
+				NOR = {
+					trait = incapable
+					is_inaccessible_trigger = yes
+				}
+			}
+			any_child = {
+				limit = {
+					ai = yes
+					age = 8
+					is_adult = no
+					prisoner = no
+					is_landed = no
+					NOR = { 
+						is_friend = event_target:bar_mitzvah_target 
+						is_rival = event_target:bar_mitzvah_target 
+						sibling = event_target:bar_mitzvah_target 
+						trait = incapable
+						is_inaccessible_trigger = yes
+					}
+				}
+				save_event_target_as = befriended_child
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_barmizvah_5
+		
+		event_target:bar_mitzvah_target = {
+			show_scope_change = no
+			add_friend = event_target:befriended_child
+		}
+	}
+	after = {
+		hidden_effect = {
+			character_event = { id = jewish.108 days = 10 random = 5 } #skip to wrap up event
+		}
+	}
+}
+
+# Heir rivals vassal child
+character_event = {
+	id = jewish.106
+	desc = EVTDESC_barmitzvah_6
+	picture = GFX_evt_child_bully
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		event_target:bar_mitzvah_target = { is_alive = yes }
+		any_vassal = {
+			ai = yes
+			prisoner = no
+			NOR = {
+				trait = incapable
+				is_inaccessible_trigger = yes
+			}
+			any_child = {
+				ai = yes
+				age = 8
+				is_adult = no
+				prisoner = no
+				is_landed = no
+				NOR = { 
+					is_friend = event_target:bar_mitzvah_target 
+					is_rival = event_target:bar_mitzvah_target 
+					sibling = event_target:bar_mitzvah_target 
+					trait = incapable
+					is_inaccessible_trigger = yes
+				}
+			}
+		}
+	}
+	fail_trigger_effect = {
+		if = {
+			limit = {
+				NOT = { event_target:bar_mitzvah_target = { is_alive = yes } }
+			}
+		}
+		else = {
+			character_event = { id = jewish.108 days = 10 random = 5 } #skip to wrap up event
+		}
+	}
+	
+	immediate = {
+		any_vassal = {
+			limit = {
+				ai = yes
+				prisoner = no
+				NOR = {
+					trait = incapable
+					is_inaccessible_trigger = yes
+				}
+			}
+			any_child = {
+				limit = {
+					ai = yes
+					age = 8
+					is_adult = no
+					prisoner = no
+					is_landed = no
+					NOR = { 
+						is_friend = event_target:bar_mitzvah_target 
+						is_rival = event_target:bar_mitzvah_target 
+						sibling = event_target:bar_mitzvah_target 
+						trait = incapable
+						is_inaccessible_trigger = yes
+					}
+				}
+				save_event_target_as = rival_child
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_barmitzvah_6
+		
+		event_target:bar_mitzvah_target = { 
+			show_scope_change = no
+			add_rival = event_target:rival_child
+		}		
+	}
+	after = {
+		hidden_effect = {
+			character_event = { id = jewish.108 days = 10 random = 5 } #skip to wrap up event
+		}
+	}
+}
+
+# Heir becomes depressed
+character_event = {
+	id = jewish.107
+	desc = EVTDESC_barmitzvah_7
+	picture = GFX_evt_bad_news
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		event_target:bar_mitzvah_target = { is_alive = yes }
+	}
+	fail_trigger_effect = {
+		if = {
+			limit = {
+				NOT = { event_target:bar_mitzvah_target = { is_alive = yes } }
+			}
+		}
+		else = {
+			character_event = { id = jewish.108 days = 10 random = 5 } #skip to wrap up event
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_barmitzvah_7
+		
+		event_target:bar_mitzvah_target = {
+			add_trait = depressed
+			hidden_tooltip = {
+				character_event = {	id = 38314 days = 1000 random = 800 }
+			}
+		}
+	}
+	after = {
+		hidden_effect = {
+			character_event = { id = jewish.108 days = 10 random = 5 } #skip to wrap up event
+		}
+	}
+}
+
+#FINAL EVENT	
+character_event = {
+	id = jewish.108
+	desc = EVTDESC_barmitzvah_8
+	picture = GFX_evt_son_asking_father
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		event_target:bar_mitzvah_target = { is_alive = yes }
+	}
+	
+	fail_trigger_effect = {
+		if = {
+			limit = {
+				NOT = { event_target:bar_mitzvah_target = { is_alive = yes } }
+			}
+			event_target:bar_mitzvah_target = { clr_flags_torah = yes }
+		}
+	}
+
+	option = {
+		name = EVTOPTA_barmitzvah_8
+		
+		event_target:bar_mitzvah_target = {
+			show_scope_change = no
+			clr_flags_torah = yes
+		}
+	}
+}
+
+#########Yeshiva Events##############
+
+#it begins
+character_event = {
+	id = jewish.150
+	desc = EVTDESC_yeshiva_1
+	picture = GFX_contemplation_jewish
+
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_yeshiva_1
+		add_trait = avrach
+	}
+	
+	after = {
+		character_event = {	id = jewish.151 days = 90 random = 30 }
+	}
+}
+
+#find a chevruta partner
+character_event = {
+	id = jewish.151
+	desc = EVTDESC_yeshiva_2
+	picture = GFX_yeshiva_rabbi
+
+	is_triggered_only = yes
+	
+	immediate = {
+		if = { 
+			limit = {
+				avrach = {
+					NOR = { 
+						has_character_flag = chevruta_1
+						has_character_flag = chevruta_2
+					}
+					NOT = { character = ROOT }
+				}
+			}
+			avrach = {
+				limit = {
+					NOR = { 
+						has_character_flag = chevruta_1
+						has_character_flag = chevruta_2
+					}
+					NOT = { character = ROOT }
+				}
+				ROOT = {
+					save_persistent_event_target = {
+						name = chevruta_partner
+						scope = PREV
+					}
+				}
+			}	
+		}
+		else = {
+			create_character = { 
+				random_traits = yes
+				culture = ROOT
+				religion = ROOT
+				dynasty = actually_culture
+				female = no
+				age = 20
+				trait = dutiful_cleric
+				trait = avrach
+			}
+			new_character = {
+				character_event = { id = maintenance.4 } #diversity
+				ROOT = {
+					save_persistent_event_target = {
+						name = chevruta_partner
+						scope = PREV
+					}
+				}
+			}		
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_yeshiva_2
+		persistent_event_target:chevruta_partner = {
+			set_character_flag = chevruta_2
+			add_trait = travelling
+			character_event = { id = jewish.152 }
+		}
+		add_trait = travelling
+		set_character_flag = chevruta_1
+	}
+	
+	after = {
+		character_event = { id = jewish.153 }
+		#begin the carousel of madness
+	}
+}
+character_event = {
+	id = jewish.152
+	desc = EVTDESC_yeshiva_2
+	picture = GFX_evt_religious_exultation
+
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_yeshiva_2
+		save_persistent_event_target = {
+			name = chevruta_partner
+			scope = FROM
+		}
+	}
+}
+	
+# Tombola (reworked original script to stop MP spam)
+character_event = {
+	id = jewish.153
+	picture = GFX_evt_religious_exultation
+	hide_window = yes
+	
+	is_triggered_only = yes
+
+	trigger = {
+		persistent_event_target:chevruta_partner = {
+			is_alive = yes
+			prisoner = no
+		}
+	}
+	fail_trigger_effect = {
+		clr_flags_introduce_heir_effect = yes
+	}
+
+	immediate = {
+		hidden_effect = {
+			if = { #If you had at least 3 events already
+				limit = {
+					calc_true_if = {
+						amount = 3
+						has_character_flag = yeshiva_evt_1
+						has_character_flag = yeshiva_evt_2
+						has_character_flag = yeshiva_evt_3
+						has_character_flag = yeshiva_evt_4
+						has_character_flag = yeshiva_evt_5
+						has_character_flag = yeshiva_evt_6
+						has_character_flag = yeshiva_evt_7
+						has_character_flag = yeshiva_evt_8
+						has_character_flag = yeshiva_evt_9
+						has_character_flag = yeshiva_evt_10
+					}
+				}
+				random_list = {
+					10 = {
+						mult_modifier = { 
+							factor = 8
+							OR = {
+								has_instances_of_character_modifier = {
+									name = yeshiva_learning_success
+									amount >= 2
+								}
+								learning >= 16
+							}
+						}
+						mult_modifier = { 
+							factor = 0
+							OR = {
+								has_character_modifier = yeshiva_learning_failure
+								learning <= 10
+							}
+						}
+						set_character_flag = yeshiva_hakham
+					}
+					80 = {
+						set_character_flag = yeshiva_maskil
+					}
+					10 = { 
+						mult_modifier = { 
+							factor = 8
+							OR = {
+								has_instances_of_character_modifier = {
+									name = yeshiva_learning_failure
+									amount >= 2
+								}
+								learning <= 6
+							}
+						}
+						mult_modifier = { 
+							factor = 0
+							OR = {
+								has_character_modifier = yeshiva_learning_success
+								learning >= 12
+							}
+						}
+						set_character_flag = yeshiva_dropout
+					}
+				}
+				random_list = {
+					10 = {
+						mult_modifier = { 
+							factor = 8
+							persistent_event_target:chevruta_partner = {
+								OR = {
+									has_instances_of_character_modifier = {
+										name = yeshiva_learning_success
+										amount >= 2
+									}
+									learning >= 16
+								}
+							}
+						}
+						mult_modifier = { 
+							factor = 0
+							persistent_event_target:chevruta_partner = {
+								OR = {
+									has_character_modifier = yeshiva_learning_failure
+									learning <= 10
+								}
+							}
+						}
+						persistent_event_target:chevruta_partner = {
+							set_character_flag = yeshiva_hakham
+						}
+					}
+					60 = {
+						persistent_event_target:chevruta_partner = {
+							set_character_flag = yeshiva_maskil
+						}
+					}
+					10 = { 
+						mult_modifier = { 
+							factor = 8
+							persistent_event_target:chevruta_partner = {
+								OR = {
+									has_instances_of_character_modifier = {
+										name = yeshiva_learning_failure
+										amount >= 2
+									}
+									learning <= 6
+								}
+							}
+						}
+						mult_modifier = { 
+							factor = 0
+							persistent_event_target:chevruta_partner = {
+								OR = {
+									has_character_modifier = yeshiva_learning_success
+									learning >= 12
+								}
+							}
+						}
+						persistent_event_target:chevruta_partner = {
+							set_character_flag = yeshiva_dropout
+						}
+					}
+				}
+				character_event = { id = jewish.154 days = 10 random = 10 } #graduation
+				persistent_event_target:chevruta_partner = {
+					character_event = { id = jewish.154 days = 10 random = 10 } #graduation
+				}
+				break = yes # Skip tombola, you're done!
+			}
+
+			random_list = {
+				100 = { #Partner helps with a conundrum
+					trigger = {
+						NOT = { has_character_flag = yeshiva_evt_1 }
+					}
+					mult_modifier = { 
+						factor = 3
+						persistent_event_target:chevruta_partner = {
+							learning >= 12
+						}
+					}
+					mult_modifier = { 
+						factor = 0
+						persistent_event_target:chevruta_partner = {
+							learning <= 6
+						}
+					}
+					character_event = { id = jewish.155 } #send event
+					set_character_flag = yeshiva_evt_1
+					persistent_event_target:chevruta_partner = {
+						character_event = { id = jewish.156 } # send event
+						set_character_flag = yeshiva_evt_2
+					}
+				}
+				100 = { #help partner with a conundrum
+					trigger = {
+						NOT = { has_character_flag = yeshiva_evt_2 }
+					}
+					mult_modifier = { 
+						factor = 3
+						learning >= 12
+					}
+					mult_modifier = { 
+						factor = 0
+						learning <= 6
+					}
+					character_event = { id = jewish.156 } # send event
+					set_character_flag = yeshiva_evt_2
+					persistent_event_target:chevruta_partner = {
+						character_event = { id = jewish.155 } # send event
+						set_character_flag = yeshiva_evt_1
+					}
+				}
+				100 = { # partner fails to help
+					trigger = {
+						NOT = { has_character_flag = yeshiva_evt_3 }
+					}
+					mult_modifier = { 
+						factor = 0
+						persistent_event_target:chevruta_partner = {
+							learning >= 12
+						}
+					}
+					mult_modifier = { 
+						factor = 3
+						persistent_event_target:chevruta_partner = {
+							learning <= 6
+						}
+					}
+					character_event = { id = jewish.157 } # send event
+					set_character_flag = yeshiva_evt_3
+					persistent_event_target:chevruta_partner = {
+						character_event = { id = jewish.158 } # send event
+						set_character_flag = yeshiva_evt_4
+					}
+				}
+				100 = { #fail to help partner
+					trigger = {
+						NOT = { has_character_flag = yeshiva_evt_4 }
+					}
+					mult_modifier = { 
+						factor = 0
+						learning >= 12
+					}
+					mult_modifier = { 
+						factor = 3
+						learning <= 6
+					}
+					character_event = { id = jewish.158 } # send event
+					set_character_flag = yeshiva_evt_4
+					persistent_event_target:chevruta_partner = {
+						character_event = { id = jewish.157 } # send event
+						set_character_flag = yeshiva_evt_3
+					}
+				}
+				100 = { #in the library
+					trigger = {
+						NOT = { has_character_flag = yeshiva_evt_5 }
+					}
+					character_event = { id = jewish.159 } # send event
+					set_character_flag = yeshiva_evt_5
+					persistent_event_target:chevruta_partner = {
+						character_event = { id = jewish.159 } # send event
+						set_character_flag = yeshiva_evt_5
+					}
+				}
+				50 = { #chevruta friendship
+					trigger = {
+						NOT = { has_character_flag = yeshiva_evt_6 }
+					}
+					mult_modifier = { 
+						factor = 0
+						OR = {
+							personal_opinion = {
+								who = persistent_event_target:chevruta_partner
+								value <= -20
+							}
+							reverse_personal_opinion = {
+								who = persistent_event_target:chevruta_partner
+								value <= -20
+							}
+						}
+					}
+					mult_modifier = { 
+						factor = 3
+						OR = {
+							personal_opinion = {
+								who = persistent_event_target:chevruta_partner
+								value >= 20
+							}
+							reverse_personal_opinion = {
+								who = persistent_event_target:chevruta_partner
+								value >= 20
+							}
+						}
+					}
+					character_event = { id = jewish.160 } # send event
+					set_character_flag = yeshiva_evt_6
+					persistent_event_target:chevruta_partner = {
+						character_event = { id = jewish.160 } # send event
+						set_character_flag = yeshiva_evt_6
+					}
+				}
+				100 = { #chevruta good argument
+					trigger = {
+						NOT = { has_character_flag = yeshiva_evt_7 }
+					}
+					character_event = { id = jewish.161 }
+					set_character_flag = yeshiva_evt_7
+					persistent_event_target:chevruta_partner = {
+						character_event = { id = jewish.161 } # send event
+						set_character_flag = yeshiva_evt_7
+					}
+				}
+				100 = { #chevruta fruitless argument
+					trigger = {
+						NOT = { has_character_flag = yeshiva_evt_8 }
+					}
+					character_event = { id = jewish.162 }
+					set_character_flag = yeshiva_evt_8
+					persistent_event_target:chevruta_partner = {
+						character_event = { id = jewish.162 } # send event
+						set_character_flag = yeshiva_evt_8
+					}
+				}				
+				20 = { #chevruta rivalry
+					trigger = {
+						NOT = { has_character_flag = yeshiva_evt_9 }
+					}
+					mult_modifier = { 
+						factor = 3
+						OR = {
+							personal_opinion = {
+								who = persistent_event_target:chevruta_partner
+								value <= -20
+							}
+							reverse_personal_opinion = {
+								who = persistent_event_target:chevruta_partner
+								value <= -20
+							}
+						}
+					}
+					mult_modifier = { 
+						factor = 0
+						OR = {
+							personal_opinion = {
+								who = persistent_event_target:chevruta_partner
+								value >= 20
+							}
+							reverse_personal_opinion = {
+								who = persistent_event_target:chevruta_partner
+								value >= 20
+							}
+						}
+					}
+					character_event = { id = jewish.163 } #send event
+					set_character_flag = yeshiva_evt_9
+					persistent_event_target:chevruta_partner = {
+						character_event = { id = jewish.163 } # send event
+						set_character_flag = yeshiva_evt_9
+					}
+				}
+				100 = { #visit with the rosh yeshiva
+					trigger = {
+						NOT = { has_character_flag = yeshiva_evt_10 }
+					}
+					character_event = { id = jewish.164 } # send event
+					set_character_flag = yeshiva_evt_10
+					persistent_event_target:chevruta_partner = {
+						character_event = { id = jewish.164 } # send event
+						set_character_flag = yeshiva_evt_10
+					}
+				}
+			}
+		}
+	}
+}
+
+
+# Yeshiva End Event
+character_event = {
+	id = jewish.154
+	picture = GFX_yeshiva_morocco
+	desc = {
+		trigger = {
+			has_character_flag = yeshiva_dropout
+		}
+		text = EVTDESC_yeshiva_end_dropout
+	}
+	desc = {
+		trigger = {
+			has_character_flag = yeshiva_maskil
+		}
+		text = EVTDESC_yeshiva_end_maskil
+	}
+	desc = {
+		trigger = {
+			has_character_flag = yeshiva_hakham
+		}
+		text = EVTDESC_yeshiva_end_hakham
+	}
+	is_triggered_only = yes
+	
+	trigger = {
+		persistent_event_target:chevruta_partner = { is_alive = yes }
+	}
+	
+	fail_trigger_effect = {
+		if = {
+			limit = {
+				NOT = { persistent_event_target:chevruta_partner = { is_alive = yes } }
+			}
+			
+		}
+	}
+
+	option = {
+		trigger = {
+			has_character_flag = yeshiva_maskil
+		}
+		name = EVTOPTA_yeshiva_end_maskil
+		remove_trait = avrach
+		remove_trait = travelling
+		add_trait = maskil
+	}
+	option = {
+		trigger = {
+			has_character_flag = yeshiva_hakham
+		}
+		name = EVTOPTA_yeshiva_end_hakham
+		remove_trait = avrach
+		remove_trait = travelling
+		add_trait = hakham
+	}
+	option = {
+		trigger = {
+			has_character_flag = yeshiva_dropout
+		}
+		name = EVTOPTA_yeshiva_end_dropout
+		remove_trait = avrach
+		remove_trait = travelling
+		add_character_modifier = {
+			name = yeshiva_dropped_out
+			years = 3
+		}
+	}
+}
+
+character_event = {
+	id = jewish.155
+	desc = EVTDESC_yeshiva_teach_1
+	picture = GFX_evt_yeshiva_lilien
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		persistent_event_target:chevruta_partner = {
+			is_alive = yes
+		}
+	}
+
+	fail_trigger_effect = {
+		character_event = { id = jewish.151 days = 10 random = 5 } #new partner
+	}
+	
+	option = {
+		name = EVTOPTA_yeshiva_teach_1
+		opinion = {
+			modifier = opinion_helpful_chaver
+			who = persistent_event_target:chevruta_partner
+			years = 20
+		}
+		add_character_modifier = {
+			name = yeshiva_learning_success
+			years = 5
+		}
+		
+	}
+	after = {
+		if = {
+			limit = { has_character_flag = chevruta_1 }
+			hidden_effect = {
+				character_event = { id = jewish.153 days = 30 random = 5 } #send tombola again
+			}
+		}
+	}
+}
+character_event = {
+	id = jewish.156
+	desc = EVTDESC_yeshiva_teach_2
+	picture = GFX_evt_yeshiva_lilien
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		persistent_event_target:chevruta_partner = {
+			is_alive = yes
+		}
+	}
+
+	fail_trigger_effect = {
+		character_event = { id = jewish.151 days = 10 random = 5 } #new partner
+	}
+	
+	option = {
+		name = EVTOPTA_yeshiva_teach_2
+		persistent_event_target:chevruta_partner = {
+			opinion = {
+				modifier = opinion_helpful_chaver
+				who = ROOT
+				years = 20
+			}
+		}
+		add_character_modifier = {
+			name = yeshiva_learning_success
+			years = 5
+		}
+	}
+	after = {
+		if = {
+			limit = { has_character_flag = chevruta_1 }
+			hidden_effect = {
+				character_event = { id = jewish.153 days = 30 random = 5 } #send tombola again
+			}
+		}
+	}
+}
+
+character_event = {
+	id = jewish.157
+	desc = EVTDESC_yeshiva_teach_3
+	picture = GFX_evt_yeshiva_lilien
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		persistent_event_target:chevruta_partner = {
+			is_alive = yes
+		}
+	}
+
+	fail_trigger_effect = {
+		character_event = { id = jewish.151 days = 10 random = 5 } #new partner
+	}
+	
+	option = {
+		name = EVTOPTA_kosher_22903
+		persistent_event_target:chevruta_partner = {
+			opinion = {
+				modifier = opinion_useless_chaver
+				who = ROOT
+				years = 20
+			}
+		}
+		add_character_modifier = {
+			name = yeshiva_learning_failure
+			years = 5
+		}
+	}
+	after = {
+		if = {
+			limit = { has_character_flag = chevruta_1 }
+			hidden_effect = {
+				character_event = { id = jewish.153 days = 30 random = 5 } #send tombola again
+			}
+		}
+	}
+}
+character_event = {
+	id = jewish.158
+	desc = EVTDESC_yeshiva_teach_4
+	picture = GFX_yeshiva_morocco
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		persistent_event_target:chevruta_partner = {
+			is_alive = yes
+		}
+	}
+
+	fail_trigger_effect = {
+		character_event = { id = jewish.151 days = 10 random = 5 } #new partner
+	}
+	
+	option = {
+		name = EVTOPTA_yeshiva_teach_4
+		persistent_event_target:chevruta_partner = {
+			opinion = {
+				modifier = opinion_useless_chaver
+				who = ROOT
+				years = 20
+			}
+		}
+		add_character_modifier = {
+			name = yeshiva_learning_failure
+			years = 5
+		}
+	}
+	after = {
+		if = {
+			limit = { has_character_flag = chevruta_1 }
+			hidden_effect = {
+				character_event = { id = jewish.153 days = 30 random = 5 } #send tombola again
+			}
+		}
+	}
+}
+character_event = {
+	id = jewish.159
+	desc = EVTDESC_yeshiva_library
+	picture = GFX_contemplation_jewish
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		persistent_event_target:chevruta_partner = {
+			is_alive = yes
+		}
+	}
+
+	fail_trigger_effect = {
+		character_event = { id = jewish.151 days = 10 random = 5 } #new partner
+	}
+	
+	option = {
+		name = EVTOPTA_yeshiva_library
+		add_character_modifier = {
+			name = yeshiva_kabbalah
+			duration = -1
+		}
+	}
+	option = {
+		name = EVTOPTB_yeshiva_library
+		add_character_modifier = {
+			name = yeshiva_halakha
+			duration = -1
+		}
+	}
+	after = {
+		if = {
+			limit = { has_character_flag = chevruta_1 }
+			hidden_effect = {
+				character_event = { id = jewish.153 days = 30 random = 5 } #send tombola again
+			}
+		}
+	}
+}
+character_event = {
+	id = jewish.160
+	desc = EVTDESC_yeshiva_friend
+	picture = GFX_yeshiva_morocco
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		persistent_event_target:chevruta_partner = {
+			is_alive = yes
+		}
+	}
+
+	fail_trigger_effect = {
+		character_event = { id = jewish.151 days = 10 random = 5 } #new partner
+	}
+	
+	option = {
+		name = EVTOPTA_yeshiva_friend
+		persistent_event_target:chevruta_partner = {
+			add_friend = ROOT
+		}
+	}
+	after = {
+		if = {
+			limit = { has_character_flag = chevruta_1 }
+			hidden_effect = {
+				character_event = { id = jewish.153 days = 30 random = 5 } #send tombola again
+			}
+		}
+	}
+}
+character_event = {
+	id = jewish.161
+	desc = EVTDESC_yeshiva_argument_1
+	picture = GFX_yeshiva_rabbi
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		persistent_event_target:chevruta_partner = {
+			is_alive = yes
+		}
+	}
+
+	fail_trigger_effect = {
+		character_event = { id = jewish.151 days = 10 random = 5 } #new partner
+	}
+	
+	option = {
+		name = EVTOPTA_yeshiva_argument_1
+		persistent_event_target:chevruta_partner = {
+			opinion = {
+				modifier = opinion_helpful_chaver
+				who = ROOT
+				years = 20
+			}
+		}
+		add_character_modifier = {
+			name = yeshiva_learning_success
+			years = 5
+		}
+	}
+	after = {
+		if = {
+			limit = { has_character_flag = chevruta_1 }
+			hidden_effect = {
+				character_event = { id = jewish.153 days = 30 random = 5 } #send tombola again
+			}
+		}
+	}
+}
+character_event = {
+	id = jewish.162
+	desc = EVTDESC_yeshiva_argument_2
+	picture = GFX_yeshiva_morocco
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		persistent_event_target:chevruta_partner = {
+			is_alive = yes
+		}
+	}
+
+	fail_trigger_effect = {
+		character_event = { id = jewish.151 days = 10 random = 5 } #new partner
+	}
+	
+	option = {
+		name = EVTOPTA_yeshiva_argument_2
+		persistent_event_target:chevruta_partner = {
+			opinion = {
+				modifier = opinion_useless_chaver
+				who = ROOT
+				years = 20
+			}
+		}
+		add_character_modifier = {
+			name = yeshiva_learning_failure
+			years = 5
+		}
+	}
+	after = {
+		if = {
+			limit = { has_character_flag = chevruta_1 }
+			hidden_effect = {
+				character_event = { id = jewish.153 days = 30 random = 5 } #send tombola again
+			}
+		}
+	}
+}
+character_event = {
+	id = jewish.163
+	desc = EVTDESC_yeshiva_rival
+	picture = GFX_yeshiva_morocco
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		persistent_event_target:chevruta_partner = {
+			is_alive = yes
+		}
+	}
+
+	fail_trigger_effect = {
+		character_event = { id = jewish.151 days = 10 random = 5 } #new partner
+	}
+	
+	option = {
+		name = EVTOPTA_yeshiva_rival
+		persistent_event_target:chevruta_partner = {
+			add_rival = ROOT
+		}
+	}
+	after = {
+		if = {
+			limit = { has_character_flag = chevruta_1 }
+			hidden_effect = {
+				character_event = { id = jewish.153 days = 30 random = 5 } #send tombola again
+			}
+		}
+	}
+}
+character_event = {
+	id = jewish.164
+	desc = EVTDESC_yeshiva_rabbi
+	picture = GFX_contemplation_jewish
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		persistent_event_target:chevruta_partner = {
+			is_alive = yes
+		}
+	}
+
+	fail_trigger_effect = {
+		character_event = { id = jewish.151 days = 10 random = 5 } #new partner
+	}
+	
+	option = {
+		name = EVTOPTA_yeshiva_rabbi
+		add_trait = humble
+	}
+	option = {
+		name = EVTOPTB_yeshiva_rabbi
+		add_trait = proud
+	}
+	after = {
+		if = {
+			limit = { has_character_flag = chevruta_1 }
+			hidden_effect = {
+				character_event = { id = jewish.153 days = 30 random = 5 } #send tombola again
+			}
+		}
+	}
+}
+
+#Gedol Ha'Dor Event
+
+######################AI-ONLY EVENTS#####################
+
+
+character_event = {
+	id = jewish.200
+	desc = OK
+	picture = GFX_evt_religious_exultation
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	ai = yes
+	
+	trigger = {
+		always = no
+		AND = {
+			landless = yes
+			has_landed_title = d_ivri
+		}
+	}
+	
+	immediate = {
+		set_government_type = theocracy_government
+		d_ivri = {
+			holder_scope = {
+				c_west_jerusalem = {
+					grant_title = PREV
+					any_de_jure_vassal_title = {
+						limit = {
+							holder_scope = { 
+								OR = {
+									character = ROOT
+									is_liege_or_above = ROOT
+								}
+							}
+						}
+						grant_title = PREVPREV
+					}
+				}
+			}
+		}
+	}
+}

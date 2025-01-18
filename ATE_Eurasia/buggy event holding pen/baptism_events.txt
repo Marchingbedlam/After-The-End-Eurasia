@@ -31,7 +31,7 @@ character_event = {
 		add_trait = adult_baptized
 		piety = 50
 		trigger = { 
-			trait = cynical
+			has_trait = cynical
 		}
 			random = {
 		    chance = 2
