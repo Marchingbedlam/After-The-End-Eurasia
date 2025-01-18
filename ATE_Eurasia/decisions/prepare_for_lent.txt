@@ -1,0 +1,47 @@
+decisions = {
+prepare_for_lent = { 
+ ai_check_interval = 200 # Determines how seldom the AI checks whether they can and should do the decision, in months. By default 1 (every month).
+ potential = {
+	ai = no
+	OR = {
+			religion = insular
+			religion = free_church
+			religion = nestorian
+			religion = orthodox
+			religion = iconoclast
+			religion = monothelite
+	
+	}
+ }
+ 
+ allow = {		
+		NOT = { trait = gluttonous }
+		NOT = { trait = hedonist }
+		NOT = { trait = pregnant }
+		NOT = { trait = pregnancy_finishing }
+		NOT = { trait = hard_pregnancy }
+		NOT = { trait = troubled_pregnancy }
+		NOT = { trait = infirm }
+		NOT = { trait = incapable }
+		NOT = { trait = excommunicated }
+		NOT = { has_disease = yes }
+		NOT = { has_character_modifier = lent }
+		prisoner = no
+		in_seclusion = no
+	is_adult = yes
+	month = 1
+	NOT = {
+		month = 4
+	}
+ }
+ 
+ effect = {
+	character_event = { id = CIML.301 }
+	add_character_modifier = { 
+	name = lent
+	months = 4 
+	}
+	}
+ }
+
+}

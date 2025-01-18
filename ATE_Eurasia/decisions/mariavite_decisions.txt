@@ -1,0 +1,46 @@
+decisions = {
+	celebrate_eucharist = {
+		only_playable = yes
+		ai_check_interval = 36
+		potential = {
+			AND = {
+				OR = {
+					religion = mariavite
+					religion = coronite
+					religion = oasite
+				}
+				OR = {
+					trait = zealous 
+					has_focus = theology
+				}
+			}
+			NOT = { 
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		allow = {
+			war = no
+			age >= 16
+			NOR = {
+				has_disability_trigger = yes
+				is_inaccessible_trigger = yes
+			}
+			hidden_tooltip = {
+				NOT = {
+					has_character_flag = adoring_eucharist
+				}
+			}
+			custom_tooltip = {
+				text = is_not_busy_trigger_tooltip
+				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+			prisoner = no
+			piety = 50
+		}
+		effect = {
+			piety = -50
+			set_character_flag = do_not_disturb
+			hidden_tooltip = { character_event = { id = mariavite.1 days = 10 } }
+		}
+	}
+}

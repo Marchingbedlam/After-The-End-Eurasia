@@ -1,0 +1,90 @@
+namespace = misc
+character_event = { #some weird ass old man offers you hash
+	id = misc.1
+	desc = EVTDESC_MISC_1
+	picture = GFX_evt_mysterious_person
+	
+	only_playable = yes
+	
+	trigger = {
+		AND = {
+			min_age >= 16
+			prisoner = no
+			has_landed_title = c_marseille
+		}
+		NOT = {
+			trait = incapable
+			character_disease_trigger = yes
+			has_character_modifier = on_vision_quest
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+	}
+	
+	option = { #you accept because you are based
+		name = EVTOPTA_MISC_1
+		piety = -10
+		random_list = {
+			10 = {
+				add_trait = mystic
+			}
+			90 = {
+			}
+		}
+		create_character = {
+			random_traits = no
+			religion = haskalah
+			name = "Walter"
+			dynasty = 200
+			culture = ossi
+			age = 85
+			trait = mastermind_theologian
+			trait = scholar
+			trait = genius
+			trait = depressed
+			trait = blinded
+			trait = gregarious
+			trait = temperate
+			trait = proud
+		}
+		new_character = {
+			piety = 200
+			prestige = 30
+			set_defacto_liege = ROOT
+		}
+		random_list = {
+			10 = {
+				add_trait = gregarious
+			}
+			20 = {
+				add_trait = fatigue
+				add_trait = vomiting
+			}
+			30 = {
+				add_trait = depressed
+			}
+			20 = {
+				add_trait = uncouth
+			}
+			20 = {
+				add_trait = paranoid
+				add_trait = trusting
+			}
+		}
+	}
+	option = { # you politely decline because you are unbased
+		name = EVTOPTB_MISC_1
+		piety = 10
+		random_list = {
+			10 = {
+				add_trait = temperate
+			}
+			90 = {
+			}
+		}
+	}
+}
+	
+	

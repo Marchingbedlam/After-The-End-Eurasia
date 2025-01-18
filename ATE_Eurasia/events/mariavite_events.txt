@@ -1,0 +1,293 @@
+namespace = mariavite
+
+character_event = { #choose how you wanna adore the eucharist
+	id = mariavite.1
+	desc = EVTDESC_mariavite_1
+	picture = GFX_evt_eucharist_adoration
+	
+	only_playable = yes
+	is_triggered_only = yes
+
+	immediate  = {
+		set_character_flag = adoring_eucharist
+	}
+	
+	option = { #traditional formula of prayers
+		name = EVTOPTA_mariavite_1
+		piety = 25
+		hidden_tooltip = {
+			random_list = {
+				85 = { 
+					mult_modifier = {
+						factor = 2
+						is_pious_trigger = yes
+					}
+					mult_modifier = {
+						factor = 2
+						is_benevolent_trigger = yes
+					}
+					mult_modifier = {
+						factor = 2
+						has_lifestyle_learning_trigger = yes
+					}
+					character_event = { id = mariavite.2 days = 10 random = 5 }
+				}
+				15 = {
+					mult_modifier = {
+						factor = 2
+						is_impious_trigger = yes
+					}
+					mult_modifier = {
+						factor = 2
+						is_dumb_trigger = yes
+					}
+					mult_modifier = {
+						factor = 5
+						is_evil_trigger = yes
+					}
+					character_event = { id = mariavite.3 days = 10 random = 5 }
+				}
+			}
+		}
+	}
+	option = { #go into some mystic type of shit 
+		name = EVTOPTB_mariavite_1
+		piety = 50
+		hidden_tooltip = {
+			random_list = {
+				15 = {
+					mult_modifier = {
+						factor = 2
+						is_impious_trigger = yes
+					}
+					mult_modifier = {
+						factor = 2
+						is_dumb_trigger = yes
+					}
+					mult_modifier = {
+						factor = 2
+						is_evil_trigger = yes
+					}
+					character_event = { id = mariavite.4 days = 10 random = 5 }
+				}
+				35 = {
+					mult_modifier = {
+						factor = 2
+						trait = craven
+					}
+					character_event = { id = mariavite.5 days = 10 random = 5 }
+				}
+				45 = {
+					mult_modifier = {
+						factor = 2
+						is_pious_trigger = yes
+					}
+					mult_modifier = {
+						factor = 2
+						is_benevolent_trigger = yes
+					}
+					mult_modifier = {
+						factor = 2
+						has_lifestyle_learning_trigger = yes
+					}
+					mult_modifier = {
+						factor = 2
+						learning >= 8
+					}
+					character_event = { id = mariavite.6 days = 10 random = 5 }
+				}
+				5 = {
+					mult_modifier = {
+						factor = 2
+						learning >= 12
+					}
+					mult_modifier = {
+						factor = 2
+						is_pious_trigger = yes
+					}
+					mult_modifier = {
+						factor = 2
+						is_benevolent_trigger = yes
+					}
+					mult_modifier = {
+						factor = 2
+						has_crusade_trait_trigger = yes
+					}
+					character_event = { id = mariavite.7 days = 10 random = 5 }
+				}
+			}
+		}
+	}
+}
+
+character_event = { #you did well
+	id = mariavite.2 
+	desc = EVTDESC_mariavite_2
+	picture = GFX_evt_eucharist_adoration
+
+	only_playable = yes
+	is_triggered_only = yes 
+
+	option = { #yeet
+		name = EVTOPTA_mariavite_2
+		piety = 100
+		add_character_modifier = { name = succeeded_adoring_eucharist years = 2 }
+		hidden_tooltip = {
+			clr_character_flag = adoring_eucharist
+			clr_character_flag = do_not_disturb
+		}
+		random_list = {
+			65 = { }
+			35 = { add_trait = zealous }
+		}
+	}
+}
+
+character_event = { #you did shit
+	id = mariavite.3
+	desc = EVTDESC_mariavite_3
+	picture = GFX_evt_eucharist_adoration
+
+	only_playable = yes
+	is_triggered_only = yes
+
+	option = { #fuck	
+		name = EVTOPTA_mariavite_3
+		piety = -50
+		prestige = -25
+		add_character_modifier = { name = failed_adoring_eucharist years = 2 }
+		hidden_tooltip = {
+			clr_character_flag = adoring_eucharist
+			clr_character_flag = do_not_disturb
+		}
+	}
+}
+
+character_event = { #you dont get it man
+	id = mariavite.4 
+	desc = EVTDESC_mariavite_4
+	picture = GFX_evt_eucharist_adoration
+
+	only_playable = yes
+	is_triggered_only = yes
+
+	option = { #reeeeeee
+		name = EVTOPTA_mariavite_4
+		piety = -100
+		prestige = -50
+		add_character_modifier = { name = failed_adoring_eucharist years = 2 }
+		hidden_tooltip = {
+			clr_character_flag = adoring_eucharist
+			clr_character_flag = do_not_disturb
+		}
+		random_list = {
+			50 = { }
+			25 = { add_trait = wroth }
+			15 = { add_trait = stressed }
+			10 = {add_trait = depressed }
+		}
+	}
+}
+
+character_event = { #you start feeling weird, you stop bc you're scared 
+	id = mariavite.5 
+	desc = EVTDESC_mariavite_5
+	picture = GFX_evt_eucharist_adoration
+
+	only_playable = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_mariavite_5
+		piety = -75 
+		prestige = -25
+		add_character_modifier = { name = mystically_altered years = 4 }
+		add_character_modifier = { name = failed_adoring_eucharist years = 2 }
+		hidden_tooltip = {
+			clr_character_flag = adoring_eucharist
+			clr_character_flag = do_not_disturb
+		}
+		random_list = {
+			70 = { }
+			30 = { add_trait = craven }
+		}
+	}
+}
+
+character_event = { #yay you connected with jesus
+	id = mariavite.6
+	desc = EVTDESC_mariavite_6
+	picture = GFX_evt_eucharist_adoration
+	
+	only_playable = yes
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_mariavite_6
+		piety = 150
+		prestige = 75
+		add_character_modifier = { name = succeeded_adoring_eucharist years = 2 }
+		hidden_tooltip = {
+			clr_character_flag = adoring_eucharist
+			clr_character_flag = do_not_disturb
+		}
+		random_list = {
+			70 = { }
+			30 = { add_trait = mystic }
+		}
+	}
+}
+
+character_event = { #holy shit jesus told you to beat the shit out of infidels
+	id = mariavite.7 
+	desc = EVTDESC_mariavite_7
+	picture = GFX_evt_eucharist_adoration
+	
+	only_playable = yes
+	is_triggered_only = yes
+
+	immediate = { 
+		if = {
+			limit = {
+				any_title = {
+					kingdom = {
+						region = custom_europe 
+					}
+					owner = {
+						OR = {
+							AND = {
+								independent = yes
+								NOT = {
+								religion_group = christian
+								}
+							}
+							AND = {
+								independent = no
+								NOT = {
+									religion_group = christian
+								}
+								top_liege = {
+									NOT = {
+										religion_group = christian
+									}
+								}
+							}							
+						}
+					}
+				}
+			}
+		}
+		add_claim = ROOT
+	}
+
+	option = { #lets goooooo
+		name = EVTOPTA_mariavite_7
+		piety = 250
+		prestige = 100
+		add_character_modifier = { name = succeeded_adoring_eucharist years = 2 }
+		hidden_tooltip = {
+			clr_character_flag = adoring_eucharist
+			clr_character_flag = do_not_disturb
+		}
+	}
+}

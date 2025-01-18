@@ -1,0 +1,363 @@
+namespace = yule
+narrative_event = { #Aight so you out here tryna find a good tree for yule
+	id = yule.1
+	title = EVTNAME_yule_1
+	desc = EVTDESC_yule_1
+	picture = GFX_snowforest_day
+
+	hide_from = yes 
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_character_flag = celebrating_yule }
+	}
+	
+	immediate = { 
+		set_character_flag = celebrating_yule
+	}
+	
+	option = {
+		name = EVTOPTA_yule_1
+		trigger = {
+			has_character_flag = celebrating_yule 
+		}
+		random_list = {
+			80 = { 
+			character_event = { id = yule.2 days = 3 random = 5 } 
+			} #You find an okay tree 
+		}
+	}
+}
+
+character_event = { # You find an okay tree
+	id = yule.2
+	desc = EVTDESC_yule_2
+	picture = GFX_snowforest_day
+	border = GFX_event_normal_frame_religion
+
+	hide_from = yes 
+
+	is_triggered_only = yes
+	
+	trigger = {has_character_flag = celebrating_yule }
+	
+	option = { #You find an alright tree 
+		name = EVTOPTA_yule_2
+		piety = 15 
+		prestige = 30
+		character_event = { id = yule.4 days = 5 random = 7 }
+	}
+	
+	option = { #You press on...
+		name = EVTOPTB_yule_2
+		random_list = {
+			20 = { 
+				character_event = { id = yule.3 days = 5 random = 7 } 
+			}
+			20 = { 
+				character_event = { id = yule.7 days = 5 random = 7 } 
+			}
+			20 = {
+				character_event = { id = yule.9 days = 5 random = 7 }
+			}
+			40 = { 
+				character_event = { id = yule.10 days = 5 random = 7 }
+			}
+		}
+	}
+}
+
+character_event = { #A boar tries to gore your ass
+	id = yule.3
+	desc = EVTDESC_yule_3
+	picture = GFX_snowforest_night
+	border = GFX_event_normal_frame_religion
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+
+	trigger = { has_character_flag = celebrating_yule }
+	
+	option = { 
+	name = EVTOPTA_yule_3 #Not today piggy
+		random_list = {
+			60 = { 
+				add_trait = wounded 
+				character_event = { id = yule.4 days = 3 random = 5 }
+			}
+			20 = { 
+				add_trait = hunter
+				character_event = { id = yule.4 days = 3 random = 5 }
+			}
+			15 = {
+				add_trait = severely_injured 
+				character_event = {id = yule.4 days = 3 random = 5 }
+			}
+			5 = {death = { death_reason = death_accident_bear } }
+		}
+	}
+	option = {
+	name = EVTOPTB_yule_3 #You run like hell 
+		prestige = -50
+		random_list = {
+			60 = { 
+				character_event = { id = yule.4 days = 3 random = 5 }
+			}
+			40 = { 
+				add_trait = craven 
+				character_event = { id = yule.4 days = 3 random = 5 }
+			}
+		}
+	}
+			
+}
+
+character_event = { #You begin preparing for the feast
+	id = yule.4
+	desc = EVTDESC_yule_4
+	picture = GFX_yuletide
+	border = GFX_event_normal_frame_religion
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+
+	trigger = { has_character_flag = celebrating_yule }
+	
+	option = { 
+		name = EVTOPTA_yule_4 #You spend little money 
+		wealth = -25
+		set_character_flag = cheap_yule 
+		random_list = {
+			20 = {
+				character_event = { id = yule.6 days = 3 random = 5 }
+			}
+			80 = {
+				character_event = { id = yule.8 days = 3 random = 5 }
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_yule_4 #You spend medium amount of money 
+		wealth = -50 
+		piety = 10
+		prestige = 20
+		set_character_flag = okay_yule
+		random_list = {
+			20 = {
+				add_trait = temperate
+				character_event = { id = yule.6 days = 3 random = 5 }
+			}
+			80 = { 
+				character_event = { id = yule.8 days = 3 random = 5 }
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTC_yule_4 #You spend a lot of money 
+		wealth = -75
+		piety = 25
+		prestige = 50
+		set_character_flag = amazing_yule
+		random_list = {
+			20 = {
+				add_trait = charitable 
+				character_event = { id = yule.6 days = 3 random = 5 }
+			}
+			80 = {
+				character_event = { id = yule.8 days = 3 random = 5 }
+			}
+		}
+	}
+}
+
+character_event = { #Yule happens without any problems 
+	id = yule.5
+	desc = EVTDESC_yule_5
+	picture = GFX_yuletide
+	border = GFX_event_normal_frame_religion
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+
+	trigger = { has_character_flag = celebrating_yule }
+	
+	option = { 
+		name = EVTOPTA_yule_5 #Thank you for coming everyone, very cool
+		piety = 25
+		prestige = 50
+		clr_character_flag = cheap_yule 
+		clr_character_flag = okay_yule
+		clr_character_flag = amazing_yule 
+		clr_character_flag = celebrating_yule
+	}
+}
+	
+character_event = { #You meet an injured old man in the woods 
+	id = yule.6
+	desc = EVTDESC_yule_6
+	picture = GFX_snowforest_day
+	border = GFX_event_normal_frame_religion
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+
+	trigger = { has_character_flag = celebrating_yule }
+	
+	option = { #Tell him to fuck off
+		name = EVTOPTA_yule_6
+		piety = -15
+		random_list = {
+			20 = {
+				add_trait = cruel 
+				character_event = { id = yule.8 days = 3 random = 5 }
+			}
+			80 = {
+				character_event = { id = yule.8 days = 3 random = 5 }	
+			}
+		}
+	}
+	option = { #Help him out 
+		wealth = -20
+		piety = 5
+		name = EVTOPTB_yule_6
+		create_character = {
+			random_traits = yes
+			dynasty = NONE
+			religion = ROOT
+			culture = ROOT
+			health = 8
+			female = no
+			age = 56
+			trait = scholar
+			trait = one_eyed
+			trait = genius 
+			trait = mastermind_theologian
+			attributes = {
+				learning = 8
+			}
+		}
+		new_character = {
+			character_event = { id = maintenance.4 } #diversity
+		}
+		random_list = {
+			20 = {
+				add_trait = kind
+				character_event = { id = yule.5 days = 3 random = 5 }
+			}
+			80 = {
+				character_event = { id = yule.5 days = 3 random = 5 }
+			}
+		}
+	}	
+}
+character_event = { #You find an even more based tree
+	id = yule.7
+	desc = EVTDESC_yule_7
+	picture = GFX_snowforest_day
+	border = GFX_event_normal_frame_religion
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	trigger = { has_character_flag = celebrating_yule }
+	
+	option = { # Aight cool
+		name = EVTOPTA_yule_7
+		prestige = 10
+		random_list = {
+			20 = {
+				add_trait = ambitious
+				character_event = { id = yule.4 days = 3 random = 5 }
+			}
+			80 = {
+				character_event = { id = yule.4 days = 3 random = 5 }
+			}
+		}
+	}
+}
+character_event = { # Yay let's get shitfaced
+	id = yule.8
+	desc = EVTDESC_yule_8
+	picture = GFX_yuletide
+	border = GFX_event_normal_frame_religion
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	trigger = { has_character_flag = celebrating_yule }
+	
+	option = { # Shit i've already drank too much funny juice
+		name = EVTOPTA_yule_8
+		piety = 10
+		random_list = {
+			5 = {
+				add_trait = drunkard
+				character_event = { id = yule.5 days = 3 random = 5 }
+			}
+			95 = {
+				character_event = { id = yule.5 days = 3 random = 5 }
+			}
+		}
+	}
+}
+character_event = { #You find a shit ass tree after walking for too long
+	id = yule.9
+	desc = EVTDESC_yule_9
+	picture = GFX_snowforest_night
+	border = GFX_event_normal_frame_religion
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	trigger = { has_character_flag = celebrating_yule }
+	
+	option = { # fuck
+		name = EVTOPTA_yule_9
+		prestige = -20
+		random_list = {
+			20 = {
+				add_trait = stubborn
+				character_event = { id = yule.4 days = 3 random = 5 }
+			}
+			80 = {
+				character_event = { id = yule.4 days = 3 random = 5 }
+			}
+		}
+	}
+}
+character_event = { # you find an ok tree
+	id = yule.10
+	desc = EVTDESC_yule_10
+	picture = GFX_snowforest_day
+	border = GFX_event_normal_frame_religion
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	trigger = { has_character_flag = celebrating_yule }
+	
+	option = { # that will do
+		name = EVTOPTA_yule_10
+		piety = 5
+		random_list = {
+			20 = {
+				add_trait = content
+				character_event = { id = yule.4 days = 3 random = 5 }
+			}
+			80 = {
+				character_event = { id = yule.4 days = 3 random = 5 }
+			}
+		}
+	}
+}
