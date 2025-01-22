@@ -79,19 +79,19 @@ government_flavor = {
 		}
 	}
 }
-government_flavor = {
-	name = gov_swaraj
-	graphics = GFX_evt_yoga_meditation
-	priority = 5
-	trigger = {
-		government = swaraj_government
-	}
-}
-government_flavor = {
-	name = gov_hetmanate
-	graphics = GFX_cossacks
-	priority = 5
-	trigger = {
-		government = hetmanate_government
-	}
-}
+#government_flavor = {
+#	name = gov_swaraj
+#	graphics = GFX_evt_yoga_meditation
+#	priority = 5
+#	trigger = {
+#		government = swaraj_government
+#	}
+#}
+#government_flavor = {
+#	name = gov_hetmanate
+#	graphics = GFX_cossacks
+#	priority = 5
+#	trigger = {
+#		government = hetmanate_government
+#	}
+#}
