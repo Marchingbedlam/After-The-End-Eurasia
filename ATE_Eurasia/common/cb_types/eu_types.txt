@@ -1433,23 +1433,23 @@ interdynasty_war = {
 				}
 				character_event = { id = JD.60101 days = 1 } #calculate gold sent from china for building holdings
 			}
-			if = { #Ethiopia with no land calculates what to do with nomad provinces
-				limit = { 
-					is_offmap_governor = yes
-					offmap_power = { is_offmap_tag = offmap_ethiopia }
-					offmap_ethiopia = { has_offmap_tmp_flag = NG_is_not_on_map }
-					NOT = { wealth = 2500 } #unless already rich from tributes
-				}
-				set_variable = { which = "WP_nomad_provinces" value = 0 }
-				any_realm_province = {
-					limit = { 
-						has_province_modifier = nomad_agitation
-						NOT = { has_settlement_construction = yes }
-					}
-					province_event = { id = JD.60100 } # increase counter for each nomad province
-				}
-				character_event = { id = JD.60101 days = 1 } #calculate gold sent from china for building holdings
-			}
+			# if = { #Ethiopia with no land calculates what to do with nomad provinces
+				# limit = { 
+					# is_offmap_governor = yes
+					# offmap_power = { is_offmap_tag = offmap_ethiopia }
+					# offmap_ethiopia = { has_offmap_tmp_flag = NG_is_not_on_map }
+					# NOT = { wealth = 2500 } #unless already rich from tributes
+				# }
+				# set_variable = { which = "WP_nomad_provinces" value = 0 }
+				# any_realm_province = {
+					# limit = { 
+						# has_province_modifier = nomad_agitation
+						# NOT = { has_settlement_construction = yes }
+					# }
+					# province_event = { id = JD.60100 } # increase counter for each nomad province
+				# }
+				# character_event = { id = JD.60101 days = 1 } #calculate gold sent from china for building holdings
+			# }
 		}
 		hidden_tooltip = {
 			ROOT = {
