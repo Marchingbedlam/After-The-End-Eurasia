@@ -3195,12 +3195,14 @@ religious = {
 			show_scope_change = no
 			if = {
 				limit = {
-					religion = neuhumanist
-					religion = ruhi
-					religion = bahai
-					religion = haskalah
-					religion = kozachina
-					religion = angelchina
+					OR = {
+						religion = neuhumanist
+						religion = ruhi
+						religion = bahai
+						religion = haskalah
+						religion = kozachina
+						religion = angelchina
+					}
 				}
 				piety = -250
 			}
@@ -6161,7 +6163,6 @@ imperial_reconquest = {
 			de_jure_liege_or_above = k_egypt
 			de_jure_liege_or_above = k_africa
 			de_jure_liege_or_above = k_mauretania
-			de_jure_liege_or_above = k_papal_state
 			de_jure_liege_or_above = k_papal_state
 			de_jure_liege_or_above = k_asturias
 			de_jure_liege_or_above = k_sardinia
