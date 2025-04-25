@@ -3346,8 +3346,8 @@ government_flavor = {
 #########################
 
 government_flavor = {
-	name = gov_default
-	graphics = GFX_evt_beheading
+	name = gov_monarchy_default
+	graphics = GFX_evt_throne_room
 	priority = 0
 
 	trigger = {
