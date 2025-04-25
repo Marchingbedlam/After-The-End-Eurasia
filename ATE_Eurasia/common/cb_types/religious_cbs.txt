@@ -2350,6 +2350,20 @@ religious = {
 							}
 						}
 					}
+					# Scholastics can fight each other
+					AND = {
+						religion_group = scholastic
+						NOT = { religion = FROM }
+						FROM = {
+							NOT = { 
+								any_current_enemy = {
+									NOT = {
+										religion_group = scholastic
+									}
+								}
+							}
+						}
+					}
 					# Muslims fight amongst themselves
 					trigger_else_if = {
 						limit = { religion_group = muslim }
@@ -2545,9 +2559,16 @@ religious = {
 						limit = { has_dharmic_religion_trigger = yes }
 						FROM = { religion = taoist }
 					}
+					
 					# OWCs can fight each other
 					trigger_else_if = {
 						limit = { religion_group = old_world_cultist_group }
+						NOT = { religion = FROM }
+					}
+					
+					# Scholastics can fight each other
+					trigger_else_if = {
+						limit = { religion_group = scholastic }
 						NOT = { religion = FROM }
 					}
 
