@@ -64,6 +64,75 @@ celtic	= {
 		mother_name_chance = 10
 	}
 	
+	manx = {
+		graphical_cultures = { celticgfx }
+		
+		color = { 0.3 0.9 0.9 }
+
+		male_names = {
+			Aaron_Aaron Abban Abner_Abner Abel_Abel Adaue_Adam Aldyn Alister_Alexander Allow Art_Arthur Aslac Aulay 
+			Barry Bertram Brian
+			Carbry Carmick_Cormac Colby Conylt Cristen_Christian
+			Davy_David Dermot Donald Dogan Dolyn Doolish_Douglas Dursley
+			Eamon_Edmund Ector_Hector Edard Erling
+			Fayrhare Fergus Felys Filip_Philip Finlo Fletcher Fogal Frank_Francis
+			Gavan Geoffrey Gibbon_Gilbert Gilander Gilcolm Gilmore Gorman
+			Hane Harry_Harold Hugh
+			Illiam_William Inry_Henry Ivanhoe Ivar
+			Jamys_James Juan_John 
+			Kerran_Kieran 
+			Laurys_Lawrence Lonan Lucas_Luke
+			Manus_Magnus Martyn_Martin Mayl_Michael Miles Moris_Maurice Mylecholumb_Malcolm 
+			Nevyn Nigel
+			Orry Ottar
+			Peddyr_Peter Perick
+			Quisten
+			Ramsey Reginald Rigard_Richard Robart_Robert Robyn_Robin Rory Rumund
+			Sandulf		
+			Thomas Thomlyn Thorgil Thormond Thorryn Trevor
+			Urmen_Herman
+			Waltar_Walter
+			Ysaig_Isaac
+
+		}
+		female_names = {
+			Aalin_Eileen Aimel_Emily Ainle_Angela Andreca Aufrica
+			Bahey Breata Brede_Bridget
+			Calybrid Catreena_Catherine Charlotte
+			Doona
+			Eliza_Elizabeth Essa Esther Eubonia Eunys_Eunice
+			Feena Fenella Fritha
+			Grayse_Grace 
+			Isot
+			Jane Joney_Joan Juliana
+			Kathleen
+			Lilee_Lily Lula
+			Mariot Moira_Mary Mona Malane_Magdalene Margaid_Margaret Meave Moreen_Maureen
+			Onnee_Anne
+			Ranhilda Reina Roseen
+			Sarah Sheela_Cecilia Sophia Sorcha
+			Tosha
+			Ursula
+			Vorna Vorgell_Dorothy
+			Ysbal_Isabelle
+			Zoe
+
+		}
+		
+		dukes_called_kings = yes
+		
+		from_dynasty_prefix = "de "
+		prefix = yes
+
+		modifier = default_culture_modifier
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 15
+		father_name_chance = 5
+		
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 15
+		mother_name_chance = 10
+	}
 	highlander = {
 		graphical_cultures = { celticgfx }
 		

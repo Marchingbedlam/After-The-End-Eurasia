@@ -345,8 +345,8 @@ RETTYPE_CUL_SCOT =
 
 RETTYPE_CUL_REDSHANK = 
 {
-	first_type = 0
-	first_amount = 250
+	first_type = 4
+	first_amount = 150
 	second_type = 5
 	second_amount = 250
 	
@@ -354,6 +354,7 @@ RETTYPE_CUL_REDSHANK =
 		is_nomadic = no
 		OR = {
 			culture = irish
+			culture = norner
 			culture = ulsterman
 			culture = manx
 			culture = pavee
