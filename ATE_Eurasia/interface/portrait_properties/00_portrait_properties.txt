@@ -1808,22 +1808,6 @@
 			factor = 100 # No longer bearded Ottavian
 			character = 145290
 		}
-
-		# Frankish men less likely to wear beards after the 12th century, in stages
-		mult_modifier = {
-			factor = 5
-			year = 1100
-		}
-
-		mult_modifier = {
-			factor = 15
-			year >= 1150
-		}
-
-		mult_modifier = {
-			factor = 30
-			year >= 1200
-		}
 	}
 
 	1 = {
