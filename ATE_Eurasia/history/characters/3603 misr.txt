@@ -458,6 +458,7 @@
 	name="Barquq"
 	dynasty=19112092 #el-Tawfik
 	culture=masri
+	father=3603251
 	religion=sunni
 	trait=skilled_tactician
 	trait=brave
@@ -968,6 +969,7 @@
 3603075={
 	name="Hussein Kamel"
 	dynasty=19112093 #el-Gamal
+	father=3603272
 	culture=masri
 	religion=an_nahar
 	trait=fortune_builder
@@ -977,7 +979,7 @@
 	trait=proud
 	2620.11.2={birth=yes}
 	2642.1.1={add_spouse=3603076}
-	2664.1.1={death=yes}
+	2664.1.3={death=yes}
 }
 3603076={
 	name="Hala"
@@ -1434,4 +1436,130 @@
 	trait=erudite
 	2638.11.2={birth=yes}
 	2680.1.1={death=yes}
+}
+3603272={
+	name="Yasser"
+	father=3603273
+	dynasty=19112093 #el-Gamal
+	culture=masri
+	religion=an_nahar
+	2590.12.22={birth=yes}
+	2648.2.15={death=yes}
+}
+3603273={
+	name="Talaat"
+	father=3603274
+	dynasty=19112093 #el-Gamal
+	culture=masri
+	religion=an_nahar
+	2555.5.28={birth=yes}
+	2598.10.12={death=yes}
+}
+3603274={
+	name="Baligh"
+	father=3603275
+	dynasty=19112093 #el-Gamal
+	culture=masri
+	religion=an_nahar
+	2521.11.6={birth=yes}
+	2569.2.11={death=yes}
+}
+3603275={
+	name="Saad Eddin"
+	father=3603276
+	dynasty=19112093 #el-Gamal
+	culture=masri
+	religion=an_nahar
+	2497.6.29={birth=yes}
+	2527.12.15={death=yes}
+}
+3603276={
+	name="Raouf"
+	father=3603277
+	dynasty=19112093 #el-Gamal
+	culture=masri
+	religion=an_nahar
+	2475.12.12={birth=yes}
+	2511.5.10={death=yes}
+}
+3603277={
+	name="Hatem"
+	father=3603278
+	dynasty=19112093 #el-Gamal
+	culture=masri
+	religion=an_nahar
+	2455.1.19={birth=yes}
+	2533.5.22={death=yes}
+}
+3603278={
+	name="Mekkawi"
+	father=3603279
+	dynasty=19112093 #el-Gamal
+	culture=masri
+	religion=an_nahar
+	2426.10.5={birth=yes}
+	2470.4.12={death=yes}
+}
+3603279={
+	name="Fareed"
+	father=3603280
+	dynasty=19112093 #el-Gamal
+	culture=masri
+	religion=an_nahar
+	2407.1.2={birth=yes}
+	2486.10.25={death=yes}
+}
+3603280={
+	name="Mekkawi"
+	father=3603281
+	dynasty=19112093 #el-Gamal
+	culture=masri
+	religion=an_nahar
+	2387.12.19={birth=yes}
+	2420.5.8={death=yes}
+}
+3603281={
+	name="Galal"
+	father=3603282
+	dynasty=19112093 #el-Gamal
+	culture=masri
+	religion=an_nahar
+	2358.1.14={birth=yes}
+	2399.4.10={death=yes}
+}
+3603282={
+	name="Ibrahim"
+	father=3603283
+	dynasty=19112093 #el-Gamal
+	culture=masri
+	religion=an_nahar
+	2323.7.22={birth=yes}
+	2378.10.7={death=yes}
+}
+3603283={
+	name="Adly"
+	father=3603284
+	dynasty=19112093 #el-Gamal
+	culture=masri
+	religion=an_nahar
+	2293.3.25={birth=yes}
+	2336.5.26={death=yes}
+}
+3603284={
+	name="Azzaddin"
+	father=3603285
+	dynasty=19112093 #el-Gamal
+	culture=masri
+	religion=an_nahar
+	2266.12.7={birth=yes}
+	2316.2.14={death=yes}
+}
+3603285={
+	name="Ayman"
+	father=3603250
+	dynasty=19112093 #el-Gamal
+	culture=masri
+	religion=an_nahar
+	2246.2.20={birth=yes}
+	2278.10.26={death=yes}
 }
