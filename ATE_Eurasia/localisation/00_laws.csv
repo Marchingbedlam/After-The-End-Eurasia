@@ -521,3 +521,39 @@ ze_administration_laws_desc;These laws govern how society controls and organizes
 # Unused
 succ_council_elective;Council Elective;Conseil électif;Ratswahl;;Elección del Consejo;;;;;;;;;x
 succ_nomadic_desc;Among the peoples of the steppe, Prestige alone determines the line of succession. Legitimate children and siblings of the current ruler are eligible, but, unlike other forms of succession, only adults of the right culture can inherit.;Au sein du peuple steppique, le prestige à lui seul détermine la lignée de succession. Les enfants légitimes et les frères et soeurs du souverain actuel sont éligibles, mais contrairement aux autres formes de succession, seuls les adultes issus de la bonne culture sont en droit d'hériter.;Prestige bestimmt bei den Steppenvölkern über die Erbfolge. Legitime Kinder und Verwandte des aktuellen Herrschers kommen als Nachfolger in Frage, aber im Unterschied zu anderen Formen der Erbfolge können nur Erwachsene mit der richtigen Kultur das Erbe antreten.;;Entre los pueblos de la estepa, solo el prestigio solo determina la línea de sucesión. Hijos legítimos y hermanos del actual gobernante son elegibles, pero a diferencia de otras formas de la sucesión, sólo los adultos de la cultura correcta pueden heredar.;;;;;;;;;x
+
+#Tolerance Laws
+culture_tolerance;Cultural Tolerance Laws;;;;;;;;;;;;;x
+culture_tolerance_desc;These laws effect treatment and tolerance between different cultures in the realm.;;;;;;;;;;;;;x
+culture_tolerance_0;Cultural Autonomy;;;;;;;;;;;;;x
+culture_tolerance_0_option;Auto.;;;;;;;;;;;;;x
+culture_tolerance_0_desc;Cultural differences are not important between members of the court, and provinces will not adopt your culture;;;;;;;;;;;;;x
+culture_tolerance_1;Normal;;;;;;;;;;;;;x
+culture_tolerance_1_option;Normal;;;;;;;;;;;;;x
+culture_tolerance_1_desc;The standard treatment.;;;;;;;;;;;;;x
+culture_tolerance_2;Assimilationist;;;;;;;;;;;;;x
+culture_tolerance_2_option;Assim.;;;;;;;;;;;;;x
+culture_tolerance_2_desc;Provinces are encouraged to adopt your culture.;;;;;;;;;;;;;x
+religion_tolerance;Religious Tolerance Laws;;;;;;;;;;;;;x
+religion_tolerance_desc;These laws effect treatment and tolerance between different religions in the realm.;;;;;;;;;;;;;x
+religion_tolerance_0;Pacifist;;;;;;;;;;;;;x
+religion_tolerance_0_option;Pac.;;;;;;;;;;;;;x
+religion_tolerance_0_desc;Religious differences are not important between members of the court, and provinces will not be converted by a chaplain. Holy wars are prohibited.;;;;;;;;;;;;;x
+religion_tolerance_1;Tolerant;;;;;;;;;;;;;x
+religion_tolerance_1_option;Toler.;;;;;;;;;;;;;x
+religion_tolerance_1_desc;Religious difference are less important, and conversions by a Chaplain are slower. Holy wars vassalize those of different religions rather than revoking.;;;;;;;;;;;;;x
+religion_tolerance_2;Normal;;;;;;;;;;;;;x
+religion_tolerance_2_option;Normal;;;;;;;;;;;;;x
+religion_tolerance_2_desc;The standard treatment.;;;;;;;;;;;;;x
+religion_tolerance_3;Dogmatic;;;;;;;;;;;;;x
+religion_tolerance_3_option;Dogma.;;;;;;;;;;;;;x
+religion_tolerance_3_desc;Harsher attitudes towards those of different religions, and increased fervor in conversion.;;;;;;;;;;;;;x
+religion_tolerance_4;Inquisitional;;;;;;;;;;;;;x
+religion_tolerance_4_option;Inquis.;;;;;;;;;;;;;x
+religion_tolerance_4_desc;Harsher attitudes towards those of different religions, and increased fervor in conversion.;;;;;;;;;;;;;x
+pacifist_province;Pacifist;;;;;;;;;;;;;x
+tolerant_province;Tolerant;;;;;;;;;;;;;x
+dogmatic_province;Dogmatic;;;;;;;;;;;;;x
+inquisitional_province;Inquisitional;;;;;;;;;;;;;x
+autonomous_province;Autonomous;;;;;;;;;;;;;x
+assimilationist_province;Assimilationist;;;;;;;;;;;;;x

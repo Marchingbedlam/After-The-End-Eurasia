@@ -79,7 +79,7 @@ decisions = {
 		
 		effect = {
 			hidden_tooltip = {
-				character_event = { id = neuhumanist.1 }				
+				character_event = { id = nhevent.1 }				
 			}
 			custom_tooltip = { text = TXT_change_neuhumanist_branch }
 			set_character_flag = changedneuhumanistbranch

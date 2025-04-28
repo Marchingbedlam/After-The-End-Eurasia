@@ -351,9 +351,72 @@ britannic = {
 	}
 	
 	ulsterman = {
-		graphical_cultures = { englishgfx }
+		graphical_cultures = { celticgfx }
 		
 		color = { 0.8 0.4 0.3 }
+		
+		male_names = {
+			Adam Aidan Alan Albert Alexander Alfred Ambrose Andrew Anselm Anthony Archibald Arnold Arthur Aubrey
+			Benjamin Blake Brodie 
+			Callum Caolan Charles Christopher Cillian Conor Cormac 
+			Daithi Daniel Darragh David
+			Edgar Edmund Edward Eoin Eric Erik Ernest Ethan Eustace 
+			Finley Finn Folke Francis_Francis Frederick Fulk
+			Geoffrey George Gerald Gilbert Godfrey Gregory Guy
+			Henry Horatio Hugh Humphrey Hunter 
+			Isaac
+			Jack Jacob James_James Jeremy Jocelyn John_John Jonathan Jordan Joseph Jude 
+			Laurence Lawrence Liam_William Lionel Logan Lorcan 
+			Marcus Mark Martin Mason Matthew Maurice Michael
+			Nathan Nehemiah Nicholas Noah_Noah 
+			Odhran Oisin Oliver 
+			Patrick_Patrick Paul_Paul Peter Philip 
+			Ralph Randolph Reginald Richard Robert_Robert Roger Ronan Ruairi Ryan 
+			Samuel Senan Shea Simon Stephen Sydney 
+			Theo Theobald_Theobald Thomas 
+			Waleran Walter Wentworth William
+		}
+		female_names = {
+			Abigail Ada Adela Adelaide Alice Amice Amy Anna Anne Aoibheann Aoife_Eve Arabella Ava Avelina Aveline
+			Beatrice Blanche Bonnie 
+			Catherine Cecilia Charlotte_Charlotte Chloe Claire_Claire Clodagh Constance 
+			Daisy 
+			Eabha Edith Eimear Ela Eleanor Elisabeth Elizabeth Emily_Emily Emma Erin Esme 
+			Fiadh Fianna 
+			Georgia Grace 
+			Hannah Hawise Holly 
+			Isabel Isabella Isla 
+			Jane Joan Joanne_Joan Juliana Julie_Julia 
+			Katie 
+			Lauren Lisa Lucy 
+			Mahaut Maisie Margaret Maria_Mary Mary Matilda Maud Meabh Megan Michelle Mila Mya 
+			Niamh Nichola 
+			Olivia Orlaith 
+			Penny Philippa Phoebe 
+			Rachel Rebecca Rosie Ruby 
+			Saoirse Sarah Scarlett Shannon Sharon Sienna Sibylla Sophie_Sophia 
+			Thea 
+			Willow 
+		}
+		
+		prefix = yes
+		dukes_called_kings = yes
+
+		modifier = default_culture_modifier
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 15
+		father_name_chance = 5
+		
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 15
+		mother_name_chance = 10
+		
+		tribal_name = "TRIBAL_NAME_PROV_CLAN"
+	}
+	norner = {
+		graphical_cultures = { celticgfx }
+		
+		color = { 0.7 0.6 0.3 }
 		
 		male_names = {
 			Adam Aidan Alan Albert Alexander Alfred Ambrose Andrew Anselm Anthony Archibald Arnold Arthur Aubrey
@@ -472,75 +535,6 @@ britannic = {
 		tribal_name = "TRIBAL_NAME_PROV_CLAN"
 	}
 	
-	manx = {
-		graphical_cultures = { celticgfx }
-		
-		color = { 0.3 0.9 0.9 }
-
-		male_names = {
-			Aaron_Aaron Abban Abner_Abner Abel_Abel Adaue_Adam Aldyn Alister_Alexander Allow Art_Arthur Aslac Aulay 
-			Barry Bertram Brian
-			Carbry Carmick_Cormac Colby Conylt Cristen_Christian
-			Davy_David Dermot Donald Dogan Dolyn Doolish_Douglas Dursley
-			Eamon_Edmund Ector_Hector Edard Erling
-			Fayrhare Fergus Felys Filip_Philip Finlo Fletcher Fogal Frank_Francis
-			Gavan Geoffrey Gibbon_Gilbert Gilander Gilcolm Gilmore Gorman
-			Hane Harry_Harold Hugh
-			Illiam_William Inry_Henry Ivanhoe Ivar
-			Jamys_James Juan_John 
-			Kerran_Kieran 
-			Laurys_Lawrence Lonan Lucas_Luke
-			Manus_Magnus Martyn_Martin Mayl_Michael Miles Moris_Maurice Mylecholumb_Malcolm 
-			Nevyn Nigel
-			Orry Ottar
-			Peddyr_Peter Perick
-			Quisten
-			Ramsey Reginald Rigard_Richard Robart_Robert Robyn_Robin Rory Rumund
-			Sandulf		
-			Thomas Thomlyn Thorgil Thormond Thorryn Trevor
-			Urmen_Herman
-			Waltar_Walter
-			Ysaig_Isaac
-
-		}
-		female_names = {
-			Aalin_Eileen Aimel_Emily Ainle_Angela Andreca Aufrica
-			Bahey Breata Brede_Bridget
-			Calybrid Catreena_Catherine Charlotte
-			Doona
-			Eliza_Elizabeth Essa Esther Eubonia Eunys_Eunice
-			Feena Fenella Fritha
-			Grayse_Grace 
-			Isot
-			Jane Joney_Joan Juliana
-			Kathleen
-			Lilee_Lily Lula
-			Mariot Moira_Mary Mona Malane_Magdalene Margaid_Margaret Meave Moreen_Maureen
-			Onnee_Anne
-			Ranhilda Reina Roseen
-			Sarah Sheela_Cecilia Sophia Sorcha
-			Tosha
-			Ursula
-			Vorna Vorgell_Dorothy
-			Ysbal_Isabelle
-			Zoe
-
-		}
-		
-		dukes_called_kings = yes
-		
-		from_dynasty_prefix = "de "
-		prefix = yes
-
-		modifier = default_culture_modifier
-		pat_grf_name_chance = 30
-		mat_grf_name_chance = 15
-		father_name_chance = 5
-		
-		pat_grm_name_chance = 30
-		mat_grm_name_chance = 15
-		mother_name_chance = 10
-	}
 	
 	scouse = {
 		graphical_cultures = { englishgfx }

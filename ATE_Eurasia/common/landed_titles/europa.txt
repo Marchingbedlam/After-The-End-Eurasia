@@ -351,15 +351,15 @@ e_europa = {
 					parisian="Tirlemont"
 				}
 				b_grimbergen = {}
-				b_nivelles = {
-					dutch="Nijvel"
-					flemish="Neyvel"
-					walloon="Nivele"
-				}
-				b_wavre = {
-					dutch="Waver"
-					flemish="Waver"
-				}
+#				b_nivelles = {
+#					dutch="Nijvel"
+#					flemish="Neyvel"
+#					walloon="Nivele"
+#				}
+#				b_wavre = {
+#					dutch="Waver"
+#					flemish="Waver"
+#				}
 			}
 		}
 		d_wallonia = {
@@ -898,13 +898,13 @@ e_europa = {
 				b_doetinchem = {}
 				b_zutphen = {}
 				b_harderwijk = {}
-				b_lelystad = {}
-				b_almere = {}
-				b_dronten = {}
-				b_emmeloord = {}
-				b_urk = {}
-				b_zeewolde = {}
-				b_biddinghuizen = {}
+#				b_lelystad = {}
+#				b_almere = {}
+#				b_dronten = {}
+#				b_emmeloord = {}
+#				b_urk = {}
+#				b_zeewolde = {}
+#				b_biddinghuizen = {}
 			}
 			c_overijssel = {
 				color={ 255 140 78 }
@@ -1331,9 +1331,9 @@ e_europa = {
 				b_gelsenkirchen = {}
 				b_oberhausen = {}
 				b_hagen = {}
-				b_hamm = {}
-				b_herne = {}
-				b_mulheim_an_der_ruhr = {}
+#				b_hamm = {}
+#				b_herne = {}
+#				b_mulheim_an_der_ruhr = {}
 			}
 			c_dusseldorf = {
 				color={ 145 149 181 }
@@ -2109,7 +2109,7 @@ e_europa = {
 					low_saxon="Dannenbarg"
 					sorbian="Woikam"
 				}
-				b_amt_neuhaus = {}
+#				b_amt_neuhaus = {}
 				b_adendorf = {
 					low_saxon="Adendörp"
 				}
@@ -2215,9 +2215,9 @@ e_europa = {
 				b_helmstedt = {
 					low_saxon="Helmstidde"
 				}
-				b_peine = {
-					low_saxon="Paane"
-				}
+#				b_peine = {
+#					low_saxon="Paane"
+#				}
 			}
 			c_schaumburg_lippe = {
 				color={ 112 113 23 }
@@ -2317,7 +2317,7 @@ e_europa = {
 				b_elmshorn = {
 					low_saxon="Elveshorn"
 				}
-				b_uetersen = {}
+#				b_uetersen = {}
 			}
 			c_lubeck = {
 				color={ 84 147 31 }
@@ -2631,17 +2631,17 @@ e_europa = {
 				b_zingst = {}
 				b_marlow = {}
 				b_poel = {}
-				b_suderholz = {}
-				b_wolgast = {}
-				b_greifswald = {
-					rhenish="Graifswald"
-					low_saxon="Griepswohld"
-					dutch="Griepswoude"
-					walloon="Gripsvalde"
-					chti="Gripsvalde"
-					parisian="Gripsvalde"
-				}
-				b_anklam = {}
+#				b_suderholz = {}
+#				b_wolgast = {}
+#				b_greifswald = {
+#					rhenish="Graifswald"
+#					low_saxon="Griepswohld"
+#					dutch="Griepswoude"
+#					walloon="Gripsvalde"
+#					chti="Gripsvalde"
+#					parisian="Gripsvalde"
+#				}
+#				b_anklam = {}
 			}
 		}
 		d_brandenburg = {
@@ -2774,13 +2774,13 @@ e_europa = {
 				b_spandau = {}
 				b_tempelhof_schoneberg = {}
 				b_charlottenburg_wilmersdorf = {}
-				b_neukolln = {}
-				b_steglitz_zehlendorf = {}
-				b_friedrichshain_kreuzberg = {}
-				b_lichtenberg = {}
-				b_marzahn_hellersdorf = {}
-				b_treptow_kopenick = {}
-				b_reinickendorf = {}
+#				b_neukolln = {}
+#				b_steglitz_zehlendorf = {}
+#				b_friedrichshain_kreuzberg = {}
+#				b_lichtenberg = {}
+#				b_marzahn_hellersdorf = {}
+#				b_treptow_kopenick = {}
+#				b_reinickendorf = {}
 			}
 		}
 		d_saxony_anhalt = {
@@ -2955,7 +2955,7 @@ e_europa = {
 				b_sondershausen = {}
 				b_sommerda = {}
 				b_nordhausen = {}
-				b_bleicherode = {}
+#				b_bleicherode = {}
 			}
 			c_weimar = {
 				color={ 58 51 47 }
@@ -2972,7 +2972,7 @@ e_europa = {
 				b_greiz = {}
 				b_eisenberg = {}
 				b_saalfeld = {}
-				b_rudolstadt = {}
+#				b_rudolstadt = {}
 			}
 			c_eisenach = {
 				color={ 62 81 76 }
@@ -2989,7 +2989,7 @@ e_europa = {
 				b_bad_salzungen = {}
 				b_schmalkalden = {}
 				b_hildburghausen = {}
-				b_wartburg = {}
+#				b_wartburg = {}
 			}
 		}
 		d_saxony = {
@@ -3035,7 +3035,7 @@ e_europa = {
 				b_schkeuditz = {}
 				b_taucha = {}
 				b_oschatz = {}
-				b_delitzsch = {}
+#				b_delitzsch = {}
 			}
 			c_erzgebirge = {
 				color={ 95 109 109 }
@@ -3055,7 +3055,7 @@ e_europa = {
 				b_aue = {}
 				b_schwarzenberg = {}
 				b_glauchau = {}
-				b_crimmitschau = {}
+#				b_crimmitschau = {}
 			}
 			c_dresden = {
 				color={ 102 131 143 }
@@ -3092,10 +3092,10 @@ e_europa = {
 					chti="Frammont"
 					parisian="Frammont"
 				}
-				b_mittweida = {}
-				b_floha = {}
-				b_brand_erbisdorf = {}
-				b_dippoldiswalde = {}
+#				b_mittweida = {}
+#				b_floha = {}
+#				b_brand_erbisdorf = {}
+#				b_dippoldiswalde = {}
 			}
 			c_upper_lusatia = {
 				color={ 85 107 90 }
@@ -3132,15 +3132,15 @@ e_europa = {
 					sorbian="Lubij"
 				}
 				b_radebeul = {}
-				b_kamenz = {
-					sorbian="Kamjenc"
-				}
-				b_niesky = {
-					sorbian="Niska"
-				}
-				b_weisswasser = {
-					sorbian="Bjela Woda"
-				}
+#				b_kamenz = {
+#					sorbian="Kamjenc"
+#				}
+#				b_niesky = {
+#					sorbian="Niska"
+#				}
+#				b_weisswasser = {
+#					sorbian="Bjela Woda"
+#				}
 			}
 			c_lower_lusatia = {
 				color={ 69 89 77 }

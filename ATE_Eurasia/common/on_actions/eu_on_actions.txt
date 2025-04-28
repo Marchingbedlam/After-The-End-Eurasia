@@ -90,12 +90,12 @@ on_siege_over_winner = {
 # Root = New ruler
 # From = Old ruler
 # FromFrom = Offmap
-on_offmap_ruler_changed = {
-	events = {
-		EL.10005 # In case of dynasty change...
-		EL.50000 # Select a new Policy and send News Event
-	}
-}
+#on_offmap_ruler_changed = {
+#	events = {
+#		EL.10005 # In case of dynasty change...
+#		EL.50000 # Select a new Policy and send News Event
+#	}
+#}
 
 # Character converts religion, for whatever reason. ROOT is the character after conversion and the FROM scope has the old religion.
 on_character_convert_religion = {

@@ -6,3 +6,11 @@ has_nestorian_patron_saint_trigger = {
 		has_character_modifier = nestorian_mar_abba
 	}
 }
+religion_openly_glorian_trigger = {
+	custom_tooltip = {
+		text = religion_openly_glorian_trigger
+		hidden_trigger = {
+				religion = glorian
+		}
+	}
+}
