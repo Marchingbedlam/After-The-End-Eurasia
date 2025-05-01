@@ -202,7 +202,85 @@ bm_the_subcontinent = {
 	custom_start = yes
 	
 	selectable_character = {
-		id = 1 # 
+	selectable_character = { #Satwant Kharak-Singh of Khalasa
+		id = 1927010
+		age = 19
+		name = ERA_CHAR_NAME_1927010
+		title = e_sikh
+		title_name = e_sikh
+		
+		character = {
+			dna = ktseendpdtg
+			properties = ao00d0000000000000000000000000000000000
+			religion="sikh"
+			culture="punjabi"
+			government = feudal_government
+			dynasty=2157123
+		}
+	}
+	selectable_character = { # Syed Ali-Khan of the Bengal
+		id = 1961025
+		age = 44
+		name = ERA_CHAR_NAME_1961025
+		title = e_bengal
+		title_name = e_bengal
+		
+		character = {
+			dna = irdvrzkgfwi
+			properties = nnp0b000000000000000000000000000000000
+			religion="barelvi"
+			culture="vangiya"
+			government = diwan_government
+			dynasty=2147926
+		}
+	}
+	selectable_character = { # Freida Lotlikar of Mumbai
+		id = 1960054
+		age = 18
+		name = ERA_CHAR_NAME_1960054
+		title = c_ratnagiri
+		title_name = c_ratnagiri
+		
+		character = {
+			dna = exhszutqmhy
+			properties = cg0dbk000000000000000000000000000000000
+			religion="masala"
+			culture="konkani"
+			government = feudal_government
+			dynasty=2147926
+		}
+	}
+	selectable_character = { # Munni Devi of Vidarbha
+		id = 1927056
+		age = 25
+		name = ERA_CHAR_NAME_1927056
+		title = k_vidarbha
+		title_name = k_vidarbha
+		
+		character = {
+			dna = inddhoqqrei
+			properties = cbm0jb00000000000c000000000000000000000
+			religion="navayana"
+			culture="bundeli"
+			government = feudal_government
+			dynasty=7523000
+		}
+	}
+	selectable_character = { # Tissahamy Morane of Sri Lanka
+		id = 1965107
+		age = 69
+		name = ERA_CHAR_NAME_1965107
+		title = k_sri_lanka
+		title_name = k_sri_lanka
+		
+		character = {
+			dna = hdeuzcoxjfb
+			properties = ah00la0000000000000000000000000000000
+			religion="theravada"
+			culture="vedda"
+			government = feudal_government
+			dynasty=3090000
+		}
 	}
 }
 bm_the_far_east = {
