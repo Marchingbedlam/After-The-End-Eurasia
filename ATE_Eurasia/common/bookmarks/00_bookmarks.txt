@@ -98,8 +98,85 @@ bm_eastern_europe = {
 	picture = GFX_pick_era_image_2
 	custom_start = yes
 	
-	selectable_character = {
-		id = 1 # 
+	selectable_character = { #Piotr Puttkamer of Pomorze
+		id = 19911111
+		age = 32
+		name = ERA_CHAR_NAME_19911111
+		title = k_pomerania
+		title_name = k_pomerania
+		
+		character = {
+			dna = qapdmzbciva
+			properties = adr0nc00000000000000000000000000000000
+			religion="mariavite"
+			culture="odrzan"
+			government = feudal_government
+			dynasty=2124000
+		}
+	}
+	selectable_character = { #Edgars Ozols of the Baltic Empire
+		id = 1996005
+		age = 25
+		name = ERA_CHAR_NAME_1996005
+		title = e_baltic
+		title_name = e_baltic
+		
+		character = {
+			dna = pbutzphshof
+			properties = ao00h0000000000000000000000000000000000
+			religion="lutheran"
+			culture="latvian"
+			government = feudal_government
+			dynasty=2917004
+		}
+	}
+	selectable_character = { #Taran Djakov of Petrograd
+		id = 1703005
+		age = 41
+		name = ERA_CHAR_NAME_1703005
+		title = k_petrograd
+		title_name = k_petrograd
+		
+		character = {
+			dna = fwgwcclvofe
+			properties = ao0gme00000000000000000000000000000000
+			religion="proletcult"
+			culture="severyane"
+			government = communal_government
+			dynasty=17003004
+		}
+	}
+	selectable_character = { #Csanad Feherlofi of Hungary
+		id = 1991106
+		age = 55
+		name = ERA_CHAR_NAME_1991106
+		title = k_hungary
+		title_name = k_hungary
+		
+		character = {
+			dna = nliujlhaqmq
+			properties = aa00jb000000000000000000000000000000000
+			religion="nepmese"
+			culture="hungarian"
+			government = feudal_government
+			dynasty=2045110
+		}
+	}
+	selectable_character = { #Alexandru Dragescu of Wallachia
+		id = 1994110
+		age = 25
+		name = ERA_CHAR_NAME_1994110
+		title = k_wallachia
+		title_name = k_wallachia
+		
+		character = {
+			dna = tiylkjrocrx
+			properties = ae00db000000000000000000000000000000000
+			religion="orthodox"
+			culture="romanian"
+			government = feudal_government
+			dynasty=2046103
+		}
 	}
 }
 bm_the_muslim_world = {
