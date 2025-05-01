@@ -188,8 +188,85 @@ bm_the_muslim_world = {
 	picture = GFX_pick_era_image_3
 	custom_start = yes
 	
-	selectable_character = {
-		id = 1 # 
+	selectable_character = { # Barquq el-Tawfik of Egypt
+		id = 3603033
+		age = 40
+		name = ERA_CHAR_NAME_3603033
+		title = k_egypt
+		title_name = k_egypt
+		
+		character = {
+			dna = mevttitozjv
+			properties = aix0lc000000000000000000000000000000000
+			religion="sunni"
+			culture="masri"
+			government = diwan_government
+			dynasty=19112092
+		}
+	}
+	selectable_character = { # Mohammad Borumand of Tehran
+		id = 2070008
+		age = 55
+		name = ERA_CHAR_NAME_2070008
+		title = d_tehran
+		title_name = d_tehran
+		
+		character = {
+			dna = ngrjzijozcs
+			properties = cg0edd000000000000000000000000000000000
+			religion="shiite"
+			culture="farsi"
+			government = ghazi_government
+			dynasty=20070006
+		}
+	}
+	selectable_character = { # Uzi Ben-Avi of Dan
+		id = 3600005
+		age = 30
+		name = ERA_CHAR_NAME_3600005
+		title = d_mishor_hahof
+		title_name = d_mishor_hahof
+		
+		character = {
+			dna = uwpkarqvejr
+			properties = cimdgd000000000000000000000000000000000
+			religion="ivri"
+			culture="sabra"
+			government = feudal_government
+			dynasty=1818074
+		}
+	}
+	selectable_character = { # Majdi Al-Saud of Riyad
+		id = 2107000
+		age = 27
+		name = ERA_CHAR_NAME_2107000
+		title = d_riyad
+		title_name = d_riyad
+		
+		character = {
+			dna = ocsvvdextmq
+			properties = mi0dmd000000000000000000000000000000000
+			religion="ahl_as_salaf"
+			culture="najdi"
+			government = ghazi_government
+			dynasty=21007000
+		}
+	}
+	selectable_character = { # Atilla Günesh of Ankara
+		id = 2202071
+		age = 82
+		name = ERA_CHAR_NAME_2202071
+		title = d_ankara
+		title_name = d_ankara
+		
+		character = {
+			dna = jucgbxqnzoj
+			properties = n0oead000000000000000000000000000000000
+			religion="ruhi"
+			culture="central_anatolian"
+			government =diwan _government
+			dynasty=2052002
+		}
 	}
 }
 bm_the_subcontinent = {
