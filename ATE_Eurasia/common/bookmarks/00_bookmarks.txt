@@ -7,8 +7,86 @@ bm_western_europe = {
 	picture = GFX_pick_era_image_1
 	custom_start = yes
 	
-	selectable_character = {
-		id = 1 # 
+	selectable_character = { #Hendrik Coudenhove of Europa
+		id = 1958000
+		age = 23
+		name = ERA_CHAR_NAME_1958000
+		title = e_europa
+		title_name = e_europa
+		
+		character = {
+			dna = wuejctdbcpp
+			properties = ae00i000000000000000000000000000000000
+			religion="neuhumanist"
+			culture="flemish"
+			government = bureaucratic_government
+			dynasty=2058000
+		}
+	}
+	selectable_character = { #Edwin FitzSpatstone of Britain
+		id = 1001027
+		age = 66
+		name = ERA_CHAR_NAME_1001027
+		title = k_britain
+		title_name = k_britain
+		
+		character = {
+			dna = mixmoxmcile
+			properties = aiw0db000000000000000000000000000000000
+			religion="glorian"
+			culture="midlander"
+			government = feudal_government
+			dynasty=1701003
+		}
+	}
+	selectable_character = { #Steffen Stromer of Boarn
+		id = 1805000
+		age = 29
+		name = ERA_CHAR_NAME_1805000
+		title = k_bavaria
+		title_name = k_bavaria
+		
+		character = {
+			dna = xfbhxlbbflg
+			properties = wc00kb00000000000000000000000000000000
+			religion="catholic"
+			culture="bavarian"
+			government = feudal_government
+			dynasty=1949031
+		}
+	}
+	selectable_character = { #Georges Colonna-Walewski of Ile-de-France
+		id = 1804032
+		age = 38
+		name = ERA_CHAR_NAME_1804032
+		title = d_ile_de_france
+		title_name = d_ile_de_france
+		
+		character = {
+			dna = cfujxjluspq
+			properties = cl0emd000000000000000000000000000000000
+			religion="jacobin"
+			culture="parisian"
+			government = merchant_republic_government
+			dynasty=2009215
+		}
+	}
+	selectable_character = { #Gionna Agnesi of Lumbardia
+		id = 1861061
+		age = 25
+		name = ERA_CHAR_NAME_1861061
+		title = k_lombardy
+		title_name = k_lombardy
+		
+		character = {
+			female = yes
+			dna = klwjeubjpri
+			properties = adt00a0000000000c0000000000000000000000
+			religion="catholic"
+			culture="lombard"
+			government = feudal_government
+			dynasty=2031234
+		}
 	}
 }
 bm_eastern_europe = {
