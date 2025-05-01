@@ -319,6 +319,7 @@ bm_the_subcontinent = {
 		title_name = c_ratnagiri
 		
 		character = {
+			female = yes
 			dna = exhszutqmhy
 			properties = cg0dbk000000000000000000000000000000000
 			religion="masala"
@@ -335,6 +336,7 @@ bm_the_subcontinent = {
 		title_name = k_vidarbha
 		
 		character = {
+			female = yes
 			dna = inddhoqqrei
 			properties = cbm0jb00000000000c000000000000000000000
 			religion="navayana"
@@ -369,7 +371,86 @@ bm_the_far_east = {
 	picture = GFX_pick_era_image_5
 	custom_start = yes
 	
-	selectable_character = {
-		id = 1 # 
+	selectable_character = { # Mönkhbat Hu of Ulaanbaatar
+		id = 1911008
+		age = 58
+		name = ERA_CHAR_NAME_1911008
+		title = d_ulaanbaatar
+		title_name = d_ulaanbaatar
+		
+		character = {
+			dna = bfpxtcptaad
+			properties = co0djd000000000000000000000000000000000
+			religion="khanist"
+			culture="khalkha"
+			government = tribal_government
+			dynasty=1479080
+		}
+	}
+	selectable_character = { # Löntsen Aglen of Ü-Tsang
+		id = 1346011
+		age = 74
+		name = ERA_CHAR_NAME_1346011
+		title = k_u_tsang
+		title_name = k_u_tsang
+		
+		character = {
+			dna = cbbbfgsgaqu
+			properties = ej000c0000000000000000c0000000000000000
+			religion="gelugpa"
+			culture="utsang"
+			government = theocratic_feudal_government
+			dynasty=7503005
+		}
+	}
+	selectable_character = { # Bufang Han of Qinghai
+		id = 8001288
+		age = 46
+		name = ERA_CHAR_NAME_8001288
+		title = d_qinghai
+		title_name = d_qinghai
+		
+		character = {
+			dna = aloqcmnhuia
+			properties = fbhnfn00000000aa00000000000000000000000
+			religion="gelugpa"
+			culture="beifanghua"
+			government = feudal_government
+			dynasty=80001028
+		}
+	}
+	selectable_character = { # Amanni Nafisi of Junghariya
+		id = 2080000
+		age = 26
+		name = ERA_CHAR_NAME_2080000
+		title = k_dzungaria
+		title_name = k_dzungaria
+		
+		character = {
+			female = yes
+			dna = lhuflkznrdp
+			properties = ala0bc0000000000b0000000000000000000000
+			religion="hui"
+			culture="uighur"
+			government = diwan_government
+			dynasty=2080080
+		}
+	}
+	selectable_character = { # Erjene Maria Klyonov of Irkutsk
+		id = 1912000
+		age = 34
+		name = ERA_CHAR_NAME_1912000
+		title = d_irkutsk
+		title_name = d_irkutsk
+		
+		character = {
+			female = yes
+			dna = hmqoxhkfgot
+			properties = 0j0dnd000000000000000000000000000000000
+			religion="dvoeverie"
+			culture="buryat"
+			government = tribal_government
+			dynasty=1240181
+		}
 	}
 }
