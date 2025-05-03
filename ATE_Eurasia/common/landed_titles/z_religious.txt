@@ -1406,19 +1406,34 @@ d_gandhist = {
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
 
-d_an_nahar={
+d_an_nahar = {
 	color={ 237 27 36 }
 	color2={ 220 220 0 }
 	
-	capital= 1997 #c_damascus
-	creation_requires_capital=no
+	capital = 1997 #c_damascus
+	creation_requires_capital = no
 	
-	landless=no
+	landless = no
 	
-	short_name=yes
+	short_name = yes
+
+	caliphate = yes
+
+	allow = {
+		religion = an_nahar
+		num_of_holy_sites = 3 
+		piety = 250
+		prestige = 500
+		OR = {
+			has_landed_title = e_arabiyya
+			has_landed_title = e_al_mashriq
+			has_landed_title = e_misr
+			has_landed_title = e_al_watan_al_akbar
+		}
+	}
 	
-	title="MURSHID"
-	title_female="MURSHID"
+	title = "MURSHID"
+	title_female = "MURSHID"
 	
 	dignity = 500 # Counted as having this many more counties than it does
 	
