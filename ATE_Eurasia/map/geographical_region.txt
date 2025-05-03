@@ -143,12 +143,12 @@ custom_pontic_caspian_steppe = {
 }
 custom_great_britain = {
 	duchies = {
-		d_london d_sussex d_thames_valley d_east_anglia d_cornwall d_wessex d_west_midlands d_east_midlands d_yorkshire d_manchester d_liverpool d_northumberland d_gwynedd d_dyfed d_gwent d_lothian d_strathclyde d_tayside d_the_highlands d_hebrides d_northern_isles d_the_isles
+		d_london d_sussex d_thames_valley d_east_anglia d_cornwall d_wessex d_west_midlands d_east_midlands d_yorkshire d_manchester d_liverpool d_northumberland d_gwynedd d_dyfed d_gwent d_lothian d_strathclyde d_tayside d_the_highlands d_hebrides d_northern_isles d_the_isles d_channel_islands
 	}
 }
 custom_ireland = {
 	duchies = {
-		d_munster d_leinster d_connacht d_ulster
+		d_munster d_leinster d_connacht d_ulster d_midwest d_meath d_dublin d_derry
 	}
 }
 custom_benelux = {
@@ -262,9 +262,8 @@ custom_fertile_crescent = {
 }
 world_united_kingdom = {
 	regions = {
-		custom_great_britain
+		custom_great_britain custom_ireland
 	}
-	duchies = { d_channel_islands  }
 }
 custom_western_europe = {
 	regions = {
@@ -570,8 +569,8 @@ custom_occitania = {
 ############################################################################
 
 world_europe_west_brittania = {
-	duchies = {
-		d_northumberland d_lancaster d_york d_norfolk d_bedford d_hereford d_gloucester d_canterbury d_somerset d_gwynedd d_powys d_deheubarth d_cornwall d_the_isles d_galloway d_western_isles d_lothian d_albany d_moray d_ulster d_connacht d_meath d_leinster d_munster d_cumbria d_hampshire d_gwent
+	regions = {
+		world_united_kingdom
 	}
 }
 world_europe_west_germania = {
