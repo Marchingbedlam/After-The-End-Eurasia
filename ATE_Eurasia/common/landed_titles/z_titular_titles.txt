@@ -272,6 +272,18 @@ e_al_watan_al_akbar = {
 		always = no # Only created through special event
 	}
 }
+e_india = {
+	color={ 255 119 34 }
+	color2={ 4 106 56 }
+
+	capital = 2800 #Delhi
+
+	dignity = 20 # Counted as having this many more counties than it does
+	
+	allow = {
+		always = no # Only created through special event
+	}
+}
 
 ### titular kingdoms ###
 
