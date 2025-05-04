@@ -4879,6 +4879,16 @@ faction_independence = {
 				}
 			}
 		}
+
+		mult_modifier = {#jedinstvo will not tolerate non-jedinstvo lieges
+			factor = 3.0
+			religion = jedinstvo
+			liege = {
+				NOT = {
+					religion = jedinstvo
+				}
+			}
+		}
 	}
 
 	# AI membership weight
@@ -5329,6 +5339,16 @@ faction_independence = {
 				NOR = {
 					has_status = china_stable
 					has_status = china_golden_age
+				}
+			}
+		}
+
+		mult_modifier = {#jedinstvo will not tolerate non-jedinstvo lieges
+			factor = 3.0
+			religion = jedinstvo
+			liege = {
+				NOT = {
+					religion = jedinstvo
 				}
 			}
 		}

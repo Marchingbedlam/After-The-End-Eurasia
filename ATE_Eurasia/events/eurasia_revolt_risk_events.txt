@@ -1,0 +1,29 @@
+namespace = revoltrisk
+
+character_event = { #jedinstvo provinces have higher revolt risk under non-jedinstvo rulers
+	id = revoltrisk.1
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { ROOT = { religion = jedinstvo } }
+		FROM = {
+			tier = COUNT
+			location = {
+				religion = jedinstvo
+				NOT = { has_province_modifier = religious_tension }
+			}
+		}
+	}
+	immediate = {
+		FROM = {
+			location = {
+				add_province_modifier = {
+					name = religious_tension
+					years = 100
+				}
+			}
+		}
+	}
+}
