@@ -1,0 +1,33 @@
+decisions = {
+
+	set_yugoslavia_as_jedinstvo_hof = {
+		is_high_prio = yes
+		only_playable = yes
+
+		potential = {
+			is_alternate_start = no
+			religion = jedinstvo
+			NOT = { has_global_flag = consolidated_yugoslavia }
+			AND = {
+				has_landed_title = e_yugoslavia
+				NOT = { controls_religion = jedinstvo }
+			}
+		}
+		allow = {
+			religion = jedinstvo
+			has_landed_title = e_yugoslavia
+			piety = 500
+			num_of_holy_sites = 3
+		}
+		effect = {
+			custom_tooltip = {
+				text = TXT_yugoslavia_now_jedinstvo_hof
+				jedinstvo = {
+					make_reformer_head_of_religion = yes
+					set_religion_head = e_yugoslavia
+				}
+			}
+			set_global_flag = consolidated_yugoslavia
+		}
+	}
+}
