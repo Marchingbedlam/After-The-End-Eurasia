@@ -6,12 +6,11 @@ decisions = {
 
 		potential = {
 			is_alternate_start = no
-			religion = jedinstvo
-			NOT = { has_global_flag = consolidated_yugoslavia }
 			AND = {
+				religion = jedinstvo
 				has_landed_title = e_yugoslavia
-				NOT = { controls_religion = jedinstvo }
 			}
+			NOT = { has_global_flag = consolidated_yugoslavia }
 		}
 		allow = {
 			religion = jedinstvo
