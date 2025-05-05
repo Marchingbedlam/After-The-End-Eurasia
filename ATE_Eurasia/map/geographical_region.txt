@@ -162,9 +162,9 @@ custom_old_germany = {
 	}
 }
 custom_old_france = {
-	duchies = { d_picardy d_nord d_champagne d_lorraine d_alsace d_franche_comte d_burgundy d_ile_de_france d_normandy d_orleanais d_loire d_breizh_uhel d_breizh_izel d_berry d_poitou d_limousin d_auvergne d_lyonnais d_savoy d_dauphine d_provence d_cevennes d_haut_languedoc d_bas_languedoc d_gascony d_aquitaine d_corsica } 
-	
-	counties = { c_labourd }
+	duchies = {
+		d_picardy d_nord d_champagne d_lorraine d_alsace d_franche_comte d_burgundy d_ile_de_france d_normandy d_orleanais d_loire d_breizh_uhel d_breizh_izel d_berry d_poitou d_limousin d_auvergne d_lyonnais d_savoy d_dauphine d_provence d_cevennes d_haut_languedoc d_bas_languedoc d_gascony d_aquitaine d_corsica 
+	} 
 }
 custom_old_spain = {
 	duchies = { 
@@ -574,19 +574,18 @@ world_europe_west_brittania = {
 	}
 }
 world_europe_west_germania = {
-	duchies = {
-		d_upper_burgundy d_savoie d_holland d_gelre d_luxembourg d_upper_lorraine d_lower_lorraine d_alsace d_bavaria d_salzburg d_osterreich d_styria d_tyrol d_brunswick d_thuringia d_koln d_franconia d_baden d_swabia d_mecklemburg d_pommerania d_pomeralia d_saxony d_brandenburg d_meissen d_bohemia d_moravia d_thurgau d_raetia d_swiss d_rugen d_bremen d_rhine d_angria d_lausitz d_hesse 
-		d_munster_germany d_nordgau d_trier 
+	regions = {
+		custom_old_france custom_old_germany custom_benelux
 	}
 }
 world_europe_west_francia = {
-	duchies = {
-		d_berry d_anjou d_normandy d_orleans d_champagne d_valois d_burgundy d_aquitaine d_toulouse d_gascogne d_poitou d_auvergne d_bourbon d_provence d_dauphine d_brabant d_flanders d_franche_comte d_penthievre d_brittany d_picardie d_loire
+	regions = {
+		custom_old_france custom_benelux
 	}
 }
 world_europe_west_iberia = {
-	duchies = {
-		d_castilla d_aragon d_barcelona d_valencia d_mallorca d_navarra d_asturias d_leon d_galicia d_porto d_beja d_algarve d_cordoba d_murcia d_granada d_sevilla d_badajoz d_toledo d_balata
+	regions = {
+		custom_old_spain
 	}
 }
 world_europe_west = {
@@ -826,7 +825,7 @@ custom_russia = {
 }
 custom_frisia = {
 	duchies = {
-		d_holland d_gelre d_brabant d_flanders
+		d_holland d_gelre d_north_brabant d_flanders
 	}
 }
 custom_england = {
