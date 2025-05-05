@@ -979,7 +979,18 @@ narrative_event = {
 	
 	option = {
 		name = EVTOPTA_reformed_sunni
+		trigger = {
+			has_landed_title = d_sunnah
+		}
 		narrative_event = { id = islamate.29 }
+	}
+	option = {
+		name = EVTOPTB_reformed_sunni
+		trigger = {
+			NOT = {
+				has_landed_title = d_sunnah
+			}
+		}
 	}
 }
 narrative_event = { #Representatives of the Three "Heresies" Convene to discuss Unification - Majlisi (sunni) Topic: Tradition
@@ -1030,8 +1041,6 @@ narrative_event = { #Turns these Sunni Religions into Heresies
 	desc = EVTDESC_islamate32
 	
 	picture = GFX_evt_moors
-	
-	major = yes
 	
 	is_triggered_only = yes
 	
