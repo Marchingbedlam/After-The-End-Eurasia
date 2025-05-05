@@ -1913,7 +1913,10 @@ d_valinorist = {
 	allow = {
 		religion = valinorist
 		num_of_holy_sites = 3
-		tier = KING
+		OR = {
+			tier = KING
+			tier = EMPEROR
+		}
 		piety = 500
 		prestige = 1000 
 		wealth = 250
