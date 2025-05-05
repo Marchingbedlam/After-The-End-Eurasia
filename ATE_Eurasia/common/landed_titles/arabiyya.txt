@@ -909,7 +909,7 @@ e_arabiyya = {
 	}
 	
 	k_bahrayn = {
-		color={ 188 186 181 }
+		color={ 63 255 209 }
 		color2={ 255 255 255 }
 		
 		capital = 1479 # c_abu_dhabi
@@ -917,7 +917,7 @@ e_arabiyya = {
 		naqshbandi = 1000
 		
 		d_qatar = {
-			color={ 165 142 146 }
+			color={ 0 128 128 }
 			color2={ 255 255 255 }
 			
 			capital = 1350 # c_doha
@@ -949,7 +949,7 @@ e_arabiyya = {
 		}
 		
 		d_abu_dhabi = {
-			color={ 188 156 171 }
+			color={ 0 255 240 }
 			color2={ 255 255 255 }
 			
 			capital = 1479 # c_abu_dhabi
@@ -992,7 +992,7 @@ e_arabiyya = {
 			}
 		}
 		d_al_ahsa = {
-			color={ 143 186 142 }
+			color={ 127 255 212 }
 			color2={ 255 255 255 }
 			
 			capital = 1485 # c_al_hofuf
@@ -1035,7 +1035,7 @@ e_arabiyya = {
 			}
 		}
 		d_al_hajar_al_gharbi = {
-			color={ 197 178 148 }
+			color={ 136 215 193 }
 			color2={ 255 255 255 }
 			
 			capital = 1482 # c_dubai
@@ -1080,7 +1080,7 @@ e_arabiyya = {
 			}
 		}
 		d_dammam = {
-			color={ 127 131 101 }
+			color={ 1 155 255 }
 			color2={ 255 255 255 }
 			
 			capital = 1488 # c_ad_dammam
@@ -1123,7 +1123,7 @@ e_arabiyya = {
 			}
 		}
 		d_bahrayn = {
-			color={ 206 217 236 }
+			color={ 169 209 212 }
 			color2={ 255 255 255 }
 			
 			capital = 1489 # c_al_awal
@@ -1142,7 +1142,7 @@ e_arabiyya = {
 			}
 		}
 		d_hafar_al_batin = {
-			color={ 169 176 140 }
+			color={ 0 70 86 }
 			color2={ 255 255 255 }
 			
 			capital = 1492 # c_hafar_al_batin
@@ -1199,7 +1199,7 @@ e_arabiyya = {
 	}
 	
 	k_yemen = {
-		color={ 249 249 249 }
+		color={ 231 25 30 }
 		color2={ 255 255 255 }
 		
 		capital = 1440 # c_sanaa
@@ -1207,7 +1207,7 @@ e_arabiyya = {
 		naqshbandi = 1000
 		
 		d_azal = {
-			color={ 209 219 240 }
+			color={ 151 48 58 }
 			color2={ 255 255 255 }
 			
 			capital = 1440 # c_sanaa
@@ -1276,7 +1276,7 @@ e_arabiyya = {
 			}
 		}
 		d_aden = {
-			color={ 195 186 190 }
+			color={ 209 74 32 }
 			color2={ 255 255 255 }
 			
 			capital = 1454 # c_aden
@@ -1340,7 +1340,7 @@ e_arabiyya = {
 			}
 		}
 		d_hadramawt = {
-			color={ 220 245 210 }
+			color={ 196 106 106 }
 			color2={ 255 255 255 }
 			
 			capital = 1464 # c_al_mukalla
@@ -1409,7 +1409,7 @@ e_arabiyya = {
 			}
 		}
 		d_janad = {
-			color={ 245 235 216 }
+			color={ 224 18 97 }
 			color2={ 255 255 255 }
 			
 			capital = 1451 # c_taizz
@@ -1459,7 +1459,7 @@ e_arabiyya = {
 			}
 		}
 		d_saba = {
-			color={ 245 205 181 }
+			color={ 235 61 83 }
 			color2={ 255 255 255 }
 			
 			capital = 1460 # c_marib
@@ -1514,7 +1514,7 @@ e_arabiyya = {
 			}
 		}
 		d_tihamah = {
-			color={ 230 199 165 }
+			color={ 230 19 25 }
 			color2={ 255 255 255 }
 			
 			capital = 1445 # c_al_hudaydah
@@ -1583,19 +1583,19 @@ e_arabiyya = {
 	}
 	
 	k_oman = {
-		color={ 231 25 30 }
+		color={ 191 191 191 }
 		color2={ 255 255 255 }
 		
 		capital = 1469 # c_masqat
 		
 		d_masqat = {
-			color={ 191 45 60 }
+			color={ 192 192 192 }
 			color2={ 255 255 255 }
 			
 			capital = 1469 # c_masqat
 			
 			c_masqat = { # 1469
-				color={ 191 55 55 }
+				color={ 215 217 215 }
 				color2={ 255 255 255 }
 				
 				holy_site = ibadi
@@ -1609,7 +1609,7 @@ e_arabiyya = {
 				b_qurayyat = {}
 			}
 			c_ad_dahiliyah = { # 1472
-				color={ 158 32 32 }
+				color={ 211 208 201 }
 				color2={ 255 255 255 }
 				
 				b_qalaat_nizwa = {}
@@ -1621,7 +1621,7 @@ e_arabiyya = {
 				b_al_hamra = {}
 			}
 			c_ibra = { # 1471
-				color={ 219 53 53 }
+				color={ 216 216 216 }
 				color2={ 255 255 255 }
 				
 				b_sinaw = {}
@@ -1633,7 +1633,7 @@ e_arabiyya = {
 				b_bada = {}
 			}
 			c_sur = { # 1470
-				color={ 167 45 45 }
+				color={ 231 213 199 }
 				color2={ 255 255 255 }
 				
 				b_qalhat = {}
@@ -1646,13 +1646,13 @@ e_arabiyya = {
 			}
 		}
 		d_ruus_al_jibal = {
-			color={ 236 91 36 }
+			color={ 124 123 122 }
 			color2={ 255 255 255 }
 			
 			capital = 1475 # c_suhar
 			
 			c_suhar = { # 1475
-				color={ 126 101 101 }
+				color={ 219 219 219 }
 				color2={ 255 255 255 }
 				
 				b_al_hujra = {}
@@ -1664,7 +1664,7 @@ e_arabiyya = {
 				b_liwa_2 = {}
 			}
 			c_al_buraymi = { # 1477
-				color={ 146 82 12 }
+				color={ 205 221 255 }
 				color2={ 255 255 255 }
 				
 				b_al_buraymi = {}
@@ -1676,7 +1676,7 @@ e_arabiyya = {
 				b_qasid = {}
 			}
 			c_ar_rustaq = { # 1476
-				color={ 184 26 26 }
+				color={ 232 220 220 }
 				color2={ 255 255 255 }
 				
 				b_bait_numan = {}
@@ -1688,7 +1688,7 @@ e_arabiyya = {
 				b_wadi_al_maawil = {}
 			}
 			c_az_zahirah = { # 1478
-				color={ 212 65 65 }
+				color={ 232 232 232 }
 				color2={ 255 255 255 }
 				
 				b_bat = {}
@@ -1701,13 +1701,13 @@ e_arabiyya = {
 			}
 		}
 		d_zufar = {
-			color={ 205 118 133 }
+			color={ 132 136 132 }
 			color2={ 255 255 255 }
 			
 			capital = 1473 # c_zufar
 			
 			c_zufar = { # 1473
-				color={ 195 78 18 }
+				color={ 245 245 245 }
 				color2={ 255 255 255 }
 				
 				b_hisn_salalah = {}
@@ -1719,7 +1719,7 @@ e_arabiyya = {
 				b_al_mazyunah = {}
 			}
 			c_al_wusta = { # 1474
-				color={ 167 42 98 }
+				color={ 192 192 192 }
 				color2={ 255 255 255 }
 				
 				b_haima = {}
