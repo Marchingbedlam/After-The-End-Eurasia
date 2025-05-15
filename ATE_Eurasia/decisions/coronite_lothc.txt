@@ -62,8 +62,179 @@ decisions = {
 				d_vojvodina = {
 					de_jure_liege = k_hungary
 				}
+				k_slovenia = { #prevents bordergore for Yugoslavia
+					de_jure_liege = e_alpenland
+				}
 			}
 			narrative_event = { id = anoa.6 }
+		}
+	}
+	integrate_bosnia_lothc = {
+		is_high_prio = yes
+		only_playable = yes
+		ai = no
+
+		potential = {
+			is_alternate_start = no
+			OR = {
+				has_landed_title = e_lothc
+				AND = {
+					top_liege = {
+						has_landed_title = e_lothc
+					}
+					tier = KING
+					has_landed_title = k_bosnia
+				}
+			}
+			NOT = { has_global_flag = bosnia_integrated_lothc }
+			religion = coronite
+			#independent = yes
+		}
+		allow = {
+			is_adult = yes
+			war = no
+			prestige = 3000
+			wealth = 1000
+			completely_controls = k_bosnia
+			k_bosnia = {
+				has_holder = no
+			}
+		}
+		effect = {
+			wealth = -1000
+
+			custom_tooltip = { text = integrate_bosnia_TT }
+
+			set_global_flag = bosnia_integrated_lothc
+
+			hidden_tooltip = {
+				k_bosnia = {
+					show_scope_change = no
+					de_jure_liege = e_lothc
+				}
+				if = {
+					limit = { has_global_flag = serbia_integrated_lothc }
+					k_montenegro = {
+						de_jure_liege = e_balkans
+					}
+				}
+			}
+		}
+	}
+	integrate_serbia_lothc = {
+		is_high_prio = yes
+		only_playable = yes
+		ai = no
+
+		potential = {
+			is_alternate_start = no
+			OR = {
+				has_landed_title = e_lothc
+				AND = {
+					top_liege = {
+						has_landed_title = e_lothc
+					}
+					tier = KING
+					has_landed_title = k_serbia
+				}
+			}
+			NOT = { has_global_flag = serbia_integrated_lothc }
+			religion = coronite
+			#independent = yes
+		}
+		allow = {
+			is_adult = yes
+			war = no
+			prestige = 3000
+			wealth = 1000
+			completely_controls = k_serbia
+			k_serbia = {
+				has_holder = no
+			}
+		}
+		effect = {
+			wealth = -1000
+
+			custom_tooltip = { text = integrate_serbia_TT }
+
+			set_global_flag = serbia_integrated_lothc
+
+			hidden_tooltip = {
+				k_serbia = {
+					show_scope_change = no
+					de_jure_liege = e_lothc
+				}
+				if = {
+					limit = { has_global_flag = bosnia_integrated_lothc }
+					k_montenegro = {
+						de_jure_liege = e_balkans
+					}
+				}
+			}
+		}
+	}
+	integrate_galicia_lodomeria_lothc = {
+		is_high_prio = yes
+		only_playable = yes
+		ai = no
+
+		potential = {
+			is_alternate_start = no
+			OR = {
+				has_landed_title = e_lothc
+				AND = {
+					top_liege = {
+						has_landed_title = e_lothc
+					}
+					tier = KING
+					has_landed_title = k_galicia_lodomeria
+				}
+			}
+			NOT = { has_global_flag = galicia_lodomeria_integrated_lothc }
+			religion = coronite
+			#independent = yes
+		}
+		allow = {
+			is_adult = yes
+			war = no
+			prestige = 3000
+			wealth = 1000
+			completely_controls = d_lviv
+			completely_controls = d_lesser_poland
+			completely_controls = d_bukovina
+			k_galicia_lodomeria = {
+				has_holder = no
+			}
+		}
+		effect = {
+			wealth = -1000
+
+			custom_tooltip = { text = integrate_galicia_lodomeria_TT }
+
+			set_global_flag = galicia_lodomeria_integrated_lothc
+
+			hidden_tooltip = {
+				k_galicia_lodomeria = {
+					show_scope_change = no
+					de_jure_liege = e_lothc
+					set_name = "Galicia-Lodomeria"
+					adjective = "Galician-Lodomerian"
+				}
+				d_lesser_poland = {
+					de_jure_liege = k_galicia_lodomeria
+				}
+				
+				d_bukovina  = {
+					de_jure_liege = k_galicia_lodomeria
+				}
+				
+				d_volyn = {
+					de_jure_liege = k_ukraine
+				}
+				d_zhytomyr = {
+					de_jure_liege = k_ukraine
+				}
+			}
 		}
 	}
 }
