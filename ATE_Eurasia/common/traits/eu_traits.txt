@@ -2070,3 +2070,61 @@ on_yatra = {
 	pilgrimage = yes    # Will need a regent, but can still be guardian to children
 	customizer = no
 }
+
+# Soleil Royal Caste System
+first_estate = {
+	# religious = yes
+	customizer = no
+	random = no
+
+	opposites = {
+		second_estate
+		third_estate
+	}
+
+	potential = {
+		religion = sun_king_cultist
+	}
+
+	caste_tier = 3
+
+	monthly_character_piety = 0.1
+}
+
+second_estate = {
+	# religious = yes
+	customizer = no
+	random = no
+
+	opposites = {
+		first_estate
+		third_estate
+	}
+
+	potential = {
+		religion = sun_king_cultist
+	}
+
+	caste_tier = 2
+
+	monthly_character_prestige = 0.1
+}
+
+third_estate = {
+	# religious = yes
+	customizer = no
+	random = no
+
+	opposites = {
+		first_estate
+		second_estate
+	}
+
+	potential = {
+		religion = sun_king_cultist
+	}
+
+	caste_tier = 1
+
+	monthly_character_wealth = 0.03
+}

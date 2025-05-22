@@ -3264,4 +3264,25 @@ spriteTypes = {
 		noRefCount = yes
 		effectFile = "gfx/FX/buttonstate_linear.lua"
 	}
+	spriteType = {
+		name = "GFX_trait_first_estate"
+		texturefile = "gfx/traits/first_estate.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_second_estate"
+		texturefile = "gfx/traits/second_estate.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_third_estate"
+		texturefile = "gfx/traits/third_estate.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
 }

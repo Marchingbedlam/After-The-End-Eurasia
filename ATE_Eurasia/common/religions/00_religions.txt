@@ -2466,6 +2466,13 @@ vernacular = {
 		can_retire_to_monastery = yes
 		priests_can_inherit = no
 		allow_rivermovement = yes
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_grant_claim = yes
+		uses_jizya_tax = yes
+		divine_blood = yes
+		castes = yes
+		caste_opinions = yes
 		
 		religious_clothing_head = 0
 		religious_clothing_priest = 1
