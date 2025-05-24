@@ -117,3 +117,21 @@ flowered = {
 	fertility = -50.0
 	customizer = no
 }
+knight = {
+	monthly_character_prestige = 0.1
+	martial = 1
+	sex_appeal_opinion = 5
+	church_opinion = 10
+	same_religion_opinion = 5
+	customizer = no
+	command_modifier = {
+		cavalry = 0.1
+	}
+	religious = yes
+	
+	male_compliment_adj = COMPL_CHIVALROUS
+	female_compliment_adj = COMPL_CHIVALROUS
+	female_insult = INSULT_SHE_KNIGHT
+	male_insult = INSULT_FALSE_KNIGHT
+	child_compliment = COMPL_KNIGHT
+}
