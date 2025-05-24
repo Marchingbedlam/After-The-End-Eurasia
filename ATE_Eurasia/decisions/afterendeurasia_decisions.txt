@@ -318,7 +318,10 @@ decisions = {
 		
 		allow = {
 			religion = sun_king_cultist
-			has_landed_title = k_france
+			OR = {
+				has_landed_title = k_france
+				has_landed_title = e_france
+			}
 			num_of_holy_sites = 3
 			piety = 150
 			wealth = 100
