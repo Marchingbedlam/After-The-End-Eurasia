@@ -885,4 +885,204 @@ targeted_decisions = {
 			}
 		}
 	}
+	become_second_estate = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 12
+		potential = {
+			is_playable = yes
+			is_adult = yes
+			religion = sun_king_cultist
+			OR = {
+				is_feudal = yes
+				is_tribal = yes
+				is_nomadic = yes
+			}
+			NOT = { trait = second_estate }
+		}
+		
+		allow = {
+			OR = {
+				trait = first_estate
+				piety = 200
+			}
+			OR = {
+				scaled_wealth = 6
+				AND = {
+					learning = 12
+					scaled_wealth = 3
+				}
+			}
+		}
+
+		effect = {
+			if = {
+				limit = { learning = 12 }
+				scaled_wealth = -3
+			}
+			if = {
+				limit = { NOT = { learning = 12 } }
+				scaled_wealth = -6
+			}
+			if = {
+				limit = { NOT = { trait = first_estate } }
+				piety = -200
+			}
+			
+			prestige = 50
+			add_trait = second_estate
+			any_spouse = {
+				limit = {
+					is_ruler = no
+					liege = { character = ROOT }
+					NOT = { trait = second_estate }
+				}
+				add_trait = second_estate
+			}
+			any_child = {
+				limit = {
+					is_ruler = no
+					liege = { character = ROOT }
+					NOT = { trait = second_estate }
+				}
+				add_trait = second_estate
+			}
+			hidden_tooltip = {
+				top_liege = {
+					any_realm_character = {
+						limit = {
+							religion = sun_king_cultist
+							is_adult = yes
+							NOT = { character = ROOT }
+							NOT = { trait = cynical }
+						}
+						opinion = {
+							modifier = opinion_changed_caste
+							who = ROOT
+							years = 100
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					ai = no
+				}
+				chronicle = {
+					entry = CHRONICLE_BECAME_SECOND_ESTATE
+					picture = GFX_evt_emissary_indo_aryan_group
+				}
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+			}
+		}
+	}
+	
+	become_third_estate = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 12
+		potential = {
+			is_playable = yes
+			is_adult = yes
+			religion = sun_king_cultist
+			OR = {
+				is_republic = yes
+				is_merchant_republic = yes
+			}
+			NOT = { trait = third_estate }
+		}
+		
+		allow = {
+			OR = {
+				trait = first_estate
+				piety = 200
+			}
+			OR = {
+				scaled_wealth = 6
+				AND = {
+					learning = 12
+					scaled_wealth = 3
+				}
+			}
+		}
+
+		effect = {
+			if = {
+				limit = { learning = 12 }
+				scaled_wealth = -3
+			}
+			if = {
+				limit = { NOT = { learning = 12 } }
+				scaled_wealth = -6
+			}
+			if = {
+				limit = { NOT = { trait = first_estate } }
+				piety = -200
+			}
+			
+			prestige = 50
+			add_trait = third_estate
+			any_spouse = {
+				limit = {
+					is_ruler = no
+					liege = { character = ROOT }
+					NOT = { trait = third_estate }
+				}
+				add_trait = third_estate
+			}
+			any_child = {
+				limit = {
+					is_ruler = no
+					liege = { character = ROOT }
+					NOT = { trait = third_estate }
+				}
+				add_trait = third_estate
+			}
+			hidden_tooltip = {
+				top_liege = {
+					any_realm_character = {
+						limit = {
+							religion = sun_king_cultist
+							is_adult = yes
+							NOT = { character = ROOT }
+							NOT = { trait = cynical }
+						}
+						opinion = {
+							modifier = opinion_changed_caste
+							who = ROOT
+							years = 100
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					ai = no
+				}
+				chronicle = {
+					entry = CHRONICLE_BECAME_THIRD_ESTATE
+					picture = GFX_evt_emissary_indo_aryan_group
+				}
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+			}
+		}
+	}
 }
