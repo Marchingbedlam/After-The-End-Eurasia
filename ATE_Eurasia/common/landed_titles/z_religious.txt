@@ -1941,3 +1941,29 @@ d_valinorist = {
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 
 }
+d_neoplatonist = {
+	color={ 15 15 15 }
+	color2={ 255 255 255 }
+	
+	capital = 120 # Athens
+	
+	title = "DIADOCHOS"
+	foa = "POPE_FOA"
+	short_name = yes
+
+	# Always exists
+	landless = yes
+	
+	# Controls a religion
+	controls_religion = neoplatonist
+	
+	religion = neoplatonist
+	
+	dignity = 200
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+
+}
