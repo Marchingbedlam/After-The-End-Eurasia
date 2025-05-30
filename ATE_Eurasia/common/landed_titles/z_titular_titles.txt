@@ -35,13 +35,26 @@ e_united_kingdom = {
 	}
 }
 
+e_spain = {
+	color={ 208 161 62 }
+	color2={ 164 13 19 }
+	
+	capital = 187 # Madrid
+	
+	dignity = 20 # Counted as having this many more counties than it does
+	
+	allow = {
+		always = no # Only created through special event
+	}
+}
+
 e_germany = {
 	color={ 77 93 83 }
 	color2={ 220 220 20 }
 	
 	title = kaiser
 
-	capital = 370 # Frankfurt
+	capital = 412 # Berlin
 	
 	dignity = 20 # Counted as having this many more counties than it does
 	

@@ -225,4 +225,81 @@ decisions = {
 			narrative_event = { id = anoa.3 }
 		}
 	}
+
+#######SPAIN##############
+	reform_spanish_empire = { #a nation once again!
+		is_high_prio = yes
+		only_playable = yes
+		ai = no
+
+		potential = {
+			is_alternate_start = no
+			NOT = {
+				has_game_rule = {
+					name = empire_decisions
+					value = off
+				}
+			}
+			NOT = { has_global_flag = spain_unified }
+			independent = yes
+			culture_group = iberian
+			capital_scope = { region = custom_old_spain }
+		}
+
+		allow = {
+			is_adult = yes
+			war = no
+			prestige = 1000
+			wealth = 1000
+			completely_controls = k_toledo
+			completely_controls = k_andalusia
+			completely_controls = k_catalonia
+			completely_controls = k_aragon
+			completely_controls = k_euskadi
+			completely_controls = k_castile
+			completely_controls = k_galicia
+		}
+
+		effect = {
+			wealth = -1000
+			if = {
+				limit = { has_nickname = no }
+				give_nickname = nick_the_restorer
+			}
+			activate_title = { title = e_spain status = yes }
+			primary_title = {
+				e_spain = {
+					grant_title = ROOT
+					copy_title_laws = PREV
+				}
+			}
+			custom_tooltip = { text = unify_spain_TT }
+
+			set_global_flag = spain_unified
+			
+			hidden_tooltip = {
+				k_toledo = {
+					de_jure_liege = e_spain
+				}
+				k_andalusia = {
+					de_jure_liege = e_spain
+				}
+				k_catalonia = {
+					de_jure_liege = e_spain
+				}
+				k_aragon = {
+					de_jure_liege = e_spain
+				}
+				k_euskadi = {
+					de_jure_liege = e_spain
+				}
+				k_castile = {
+					de_jure_liege = e_spain
+				}
+				k_galicia = {
+					de_jure_liege = e_spain
+				}
+			}
+		}
+	}
 }
