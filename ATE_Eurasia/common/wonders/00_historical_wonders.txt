@@ -4604,7 +4604,12 @@ wonder_seville_cathedral = {
 	}
 	active = {
 		ROOT = {
-			religion = penitant
+			OR = {
+				religion = penitant
+				religion = catholic
+				religion = apparitionist
+				religion = memento_mori
+			}
 		}
 	}
 	flags = {
