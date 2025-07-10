@@ -89,10 +89,6 @@ join_root_sufi_order_society = {
 		join_society = monastic_order_shiite
 	}
 	if = {
-		limit = { ROOT = { society_member_of = monastic_order_ibadi } }
-		join_society = monastic_order_ibadi
-	}
-	if = {
 		limit = { ROOT = { society_member_of = monastic_order_naqshbandi } }
 		join_society = monastic_order_naqshbandi
 	}
