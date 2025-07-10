@@ -245,15 +245,15 @@ character_event = {
 			prestige = -50
 			piety = -100
 			#religion_authority = { add_character_modifier = disgraced_philospher }
-			hidden_tooltip = {
-				ROOT = {
-					limit = { religion = neuhumanist }
-					any_realm_province = {
-						limit = { religion = neuhumanist }
-						add_province_modifier = { name = unenlightened_philospher duration = 365 }
-					}
-				}
-			}
+			# hidden_tooltip = {
+				# ROOT = {
+					# limit = { religion = neuhumanist }
+					# any_realm_province = {
+						# limit = { religion = neuhumanist }
+						# add_province_modifier = { name = unenlightened_philospher duration = 365 }
+					# }
+				# }
+			# }
 			ai_chance = {
 				factor = 5
 				modifier = { factor = 2 trait = cynical }
