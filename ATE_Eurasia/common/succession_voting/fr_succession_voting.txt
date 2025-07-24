@@ -984,13 +984,6 @@ nomadic_elective = {
 			FROM = { has_negative_congenital_trigger = yes }
 		}
 		additive_modifier = {
-			value = 10
-			NOT = { character = FROM } #Do not judge yourself.
-			this_is_warrior_culture_trigger = yes
-			localisation_key = tooltip_nomadic_vote_minor_title_martial
-			FROM = { has_minor_title_relating_to_martial_trigger = yes }
-		}
-		additive_modifier = {
 			value = 20
 			NOT = { character = FROM } #Do not judge yourself.
 			this_is_warrior_culture_trigger = yes
@@ -1064,7 +1057,7 @@ nomadic_elective = {
 			value = -10
 			NOT = { character = FROM } #Do not judge yourself.
 			localisation_key = tooltip_nomadic_vote_cannibal
-			FROM = { trait = cannibal_trait }
+			FROM = { trait = cannibal }
 		}
 		additive_modifier = {
 			value = -10

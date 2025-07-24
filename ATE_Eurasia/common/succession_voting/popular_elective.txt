@@ -273,38 +273,6 @@ popular_elective = {
 		}
 
 		#All the Traits
-		additive_modifier = {
-			value = 10
-			localisation_key = tooltip_feudal_elector_vote_legendary
-			NOT = { character = FROM } #Do not judge yourself.
-			FROM = {
-				z_legendary_class = yes
-			}
-		}
-		additive_modifier = { #Praised for being Deceitful
-			value = 10
-			localisation_key = tooltip_feudal_elector_vote_deceitful_positive
-			NOT = { character = FROM } #Do not judge yourself.
-			OR = {
-				is_evil_religion = yes
-			}
-			FROM = {
-				trait = deceitful
-			}
-		}
-		#Ruler is possessed and I'm a warlock, vote for his pick
-		additive_modifier = {
-			value = 10
-			localisation_key = tooltip_feudal_elector_pro_vote_ruler_possessed
-			FROM = { character = ROOT_FROMFROMFROM }
-			NOT = { character = FROM } #But not if it's me.
-			z_warlock = yes
-			FROMFROM = {
-				holder_scope = {
-					trait = possessed
-				}
-			}
-		}
 
 		# Traits
 		elector_candidate_traits_vote = yes

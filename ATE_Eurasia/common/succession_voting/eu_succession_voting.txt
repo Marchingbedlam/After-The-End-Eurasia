@@ -2236,7 +2236,7 @@ confederation_elective = {
 			NOT = { character = FROM } #Do not judge yourself.
 			OR = { 
 				trait = deceitful
-				trait = schemer
+				trait = master_schemer
 				trait = ambitious
 			}
 			FROM = { 
@@ -2295,7 +2295,7 @@ confederation_elective = {
 			}
 			FROM = { 
 				OR = { 
-					trait = seaking
+					trait = sea_king
 					trait = sea_queen
 				}
 			}
@@ -2310,7 +2310,7 @@ confederation_elective = {
 			}
 			FROM = { 
 				OR = { 
-					trait = seaking
+					trait = sea_king
 					trait = sea_queen
 				}
 			}
@@ -5789,7 +5789,7 @@ bureaucratic_elective = {
 			NOT = { character = FROM } #Do not judge yourself.
 			OR = { 
 				trait = deceitful
-				trait = schemer
+				trait = master_schemer
 				trait = ambitious
 			}
 			FROM = { 
@@ -5848,7 +5848,7 @@ bureaucratic_elective = {
 			}
 			FROM = { 
 				OR = { 
-					trait = seaking
+					trait = sea_king
 					trait = sea_queen
 				}
 			}
@@ -5863,7 +5863,7 @@ bureaucratic_elective = {
 			}
 			FROM = { 
 				OR = { 
-					trait = seaking
+					trait = sea_king
 					trait = sea_queen
 				}
 			}
@@ -9456,7 +9456,7 @@ imamate_elective = {
 			NOT = { character = FROM } #Do not judge yourself.
 			OR = { 
 				trait = deceitful
-				trait = schemer
+				trait = master_schemer
 				trait = ambitious
 			}
 			FROM = { 
