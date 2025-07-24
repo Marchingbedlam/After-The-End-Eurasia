@@ -3857,13 +3857,13 @@ old_world_cultist_group = {
 		color = { 0.96 0.0 0.0 }
 		interface_skin = { rust_cultist_interface hellenic_interface }
 
-		high_god_name = GOD_THE_WILL
+		high_god_name = GOD_VOLYA
 
 		god_names = {
-			GOD_THE_PEOPLE GOD_THE_WORKER GOD_THE_KOLKHOZNITSA
+			GOD_THE_WILL GOD_THE_WORKER_SAINTS GOD_THE_KOLKHOZNIKS
 		}
 		evil_god_names = {
-			GOD_THE_OLD GOD_THE_UNINVITED
+			GOD_THE_OLD_GODS GOD_THE_REACTION
 		}
 		scripture_name = THE_BOOK_OF_SAYINGS
 		priest_title = COMRADE
