@@ -345,6 +345,7 @@
 	trait=ambitious
 	trait=wroth
 	trait=craven
+	father=1501053
 	2615.8.6={birth=yes}
 	2711.7.7={death=yes}
 }
@@ -999,4 +1000,220 @@
 	2641.3.12={birth=yes}
 	2660.1.1={employer=1501000}
 	2680.1.1={death=yes}
+}
+
+1501053={
+	name="Brendan"
+	dynasty=15001010 #Murray
+	culture=irish
+	religion=catholic
+	trait="brave"
+	trait="ambitious"
+	trait="gregarious"
+	give_nickname=nick_the_brave
+	2576.11.8={birth=yes}
+	2633.4.11={death=yes}
+}
+
+1501054={
+	name="Anne"
+	dynasty=2059020 #Dekker
+	female=yes
+	culture=dutch
+	religion=neuhumanist
+	father=1958289
+	add_trait="quick"
+	add_trait="chaste"
+	2458.3.16={birth=yes}
+	2474.9.12={
+	    religion=catholic
+		dynasty=7534020
+	}
+	2524.4.18={death=yes}
+}
+
+1501067={
+	name="Ailbhe"
+	dynasty=7534020
+	culture=irish
+	religion=catholic
+	mother=1501054
+	add_trait="shy"
+	add_triat="erudite"
+	add_trait="kind"
+	add_trait="trusting"
+	2484.8.24={birth=yes}
+	2528.4.18={
+	   death={
+	      death_reason=death_murder_unknown
+		  killer=1501055
+	   }
+	}
+}
+
+1501055={
+	name="Dubhghall"
+	dynasty=7534020
+	culture=irish
+	religion=catholic
+	mother=1501054
+	add_trait="deceitful"
+	add_trait="quick"
+	add_trait="ambitious"
+	add_trait="shy"
+	add_trait="cancer"
+	2491.11.21={birth=yes}
+	2537.4.18={death={death_reason=death_trait}}
+}
+
+1501056={
+	name="Fearganainm"
+	dynasty=7534020
+	culture=irish
+	religion=catholic
+	father=1501055
+	add_trait="quick"
+	add_trait="kind"
+	add_trait="gregarious"
+	add_trait="patient"
+	add_trait="chaste"
+	add_trait="zealous"
+	give_nickname=nick_the_great
+	2512.5.5={birth=yes}
+	2589.2.7={death=yes}
+}
+
+1501057={
+	name="Maolcholm"
+	dynasty=7534020
+	culture=irish
+	religion=catholic
+	father=1501055
+	add_trait="content"
+	add_trait="trusting"
+	add_trait="is_fat"
+	add_trait="depressed"
+	father=1501056
+	2539.5.5={birth=yes}
+	2580.2.7={death={death_reason=death_trait}}
+}
+
+1501058={
+	name="Fearganainm"
+	dynasty=7534020
+	culture=irish
+	religion=catholic
+	father=1501057
+	add_trait="wroth"
+	add_trait="gregarious"
+	add_trait="chaste"
+	add_trait="tough_soldier"
+	2568.7.17={birth=yes}
+	2624.5.18={death=yes}
+}
+
+1501059={
+	name="Fearganainm"
+	dynasty=7534020
+	culture=irish
+	religion=catholic
+	father=1501058
+	2593.9.30={birth=yes}
+	2620.1.1={
+	    add_spouse=1901068
+	}
+	2687.5.18={death=yes}
+}
+
+1501060={
+	name="Fearganainm"
+	dynasty=7534020
+	culture=irish
+	religion=catholic
+	father=1501059
+	mother=1901068
+	add_trait="tough_soldier"
+	add_trait="chaste"
+	add_trait="zealous"
+	add_trait="patient"
+	add_trait="shy"
+	2628.1.24={birth=yes}
+	2657.1.1={
+	    add_spouse=1001200
+	}
+	2688.5.18={death=yes}
+}
+
+1501061={
+	name="Ailbhe"
+	dynasty=7534020
+	culture=irish
+	religion=catholic
+	father=1501059
+	mother=1901068
+	2630.5.12={birth=yes}
+	2652.1.1={
+	   add_spouse=1501062
+	}
+	2688.5.18={death=yes}
+}
+
+1501062={
+	name="Emily"
+	female=yes
+	dynasty=1607000 #Morrison
+	culture=norner
+	religion=calvinist
+	father=1501047
+	mother=1501048
+	2626.5.19={birth=yes}
+	2652.1.1={
+	    religion=catholic
+	}
+	2710.4.1={death=yes}
+}
+
+1501063={
+	name="Marcus"
+	dynasty=7534020
+	culture=irish
+	religion=catholic
+	father=1501061
+	mother=1501062
+	2655.7.19={birth=yes}
+	2688.5.18={death=yes}
+}
+
+1501064={
+	name="Sadhbh"
+	female=yes
+	dynasty=7534020
+	culture=irish
+	religion=catholic
+	father=1501061
+	mother=1501062
+	2659.6.22={birth=yes}
+	2688.5.18={death=yes}
+}
+
+1501065={
+	name="Maolcholm"
+	dynasty=7534020
+	culture=irish
+	religion=catholic
+	father=1501061
+	mother=1501062
+	2662.3.17={birth=yes}
+	2688.5.18={death=yes}
+}
+
+1501066={
+	name="Ailbhe"
+	dynasty=7534020
+	culture=irish
+	religion=catholic
+	father=1501060
+	mother=1001200
+	2660.8.14={birth=yes}
+	2688.5.18={death=yes}
 }

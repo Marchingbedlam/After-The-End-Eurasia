@@ -1,7 +1,21 @@
 2588.7.1={
 	liege=d_east_anglia
 }
-2651.6.8={
-	holder=1001014
+2658.1.1={
+	holder=1001088
+}
+2663.1.1={
+	holder=1001089
+}
+2664.2.26={
+	holder=1001090
+}
+2666.3.14={
+	holder=1001097
+	#effect = { 
+	  #c_1001097 = {
+	    #narrative_event = { id = jane_event.1 }
+	  #}
+    #}
 }
 
