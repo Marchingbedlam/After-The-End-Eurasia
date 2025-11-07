@@ -58,6 +58,7 @@ feudal_governments = {
 			NOT = { is_government_potential = diwan_government }
 			NOT = { is_government_potential = roman_imperial_government }
 			NOT = { is_government_potential = bureaucratic_government }
+			NOT = { is_government_potential = british_government }
 			NOT = { is_government_potential = order_government }
 			NOT = { is_government_potential = cenobitic_government }
 			NOT = { is_government_potential = confederation_government }
@@ -390,6 +391,7 @@ feudal_governments = {
 			diwan_government
 			theocratic_feudal_government
 			bureaucratic_government
+			british_government
 		}
 		free_revoke_on_tiers = {
 			duke
@@ -632,6 +634,7 @@ feudal_governments = {
 			ghazi_government
 			theocratic_feudal_government
 			bureaucratic_government
+			british_government
 		}
 		free_revoke_on_tiers = {
 			duke
@@ -761,6 +764,7 @@ feudal_governments = {
 			feudal_government
 			theocratic_feudal_government
 			bureaucratic_government
+			british_government
 		}
 		free_revoke_on_tiers = {
 			duke
@@ -818,6 +822,7 @@ feudal_governments = {
 			ghazi_government
 			theocratic_feudal_government
 			bureaucratic_government
+			british_government
 			diwan_government
 		}
 		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
@@ -864,6 +869,7 @@ feudal_governments = {
 		}
 		accepts_liege_governments = { # Gets the wrong religion modifier instead
 			bureaucratic_government
+			british_government
 			diwan_government
 			theocracy_government
 			feudal_government
@@ -901,6 +907,7 @@ feudal_governments = {
 		
 		vassal_call_to_arms  = {
 			bureaucratic_government
+			british_government
 			diwan_government
 			theocracy_government
 			feudal_government
@@ -926,6 +933,74 @@ feudal_governments = {
 		court_size_modifier = 10
 		#min_vassal_tax = 0.1
 		aggression = 0.5
+	}
+	british_government = {
+		preferred_holdings = { CASTLE }
+		allowed_holdings = { 
+			CASTLE
+			FORT
+			HOSPITAL
+		}
+		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
+			TRIBAL
+		}
+		free_revoke_on_tiers = {
+			duke
+		}
+		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
+			tribal_government
+			nomadic_tribal_government
+		}
+		frame_suffix = "_british"
+		title_prefix = "british_"
+		potential = {
+			OR = {
+				primary_title = {
+					title = k_britain
+				}
+				primary_title = {
+					title = e_united_kingdom
+				}
+				top_liege = {
+					government = british_government
+					OR = {
+					tier = COUNT
+					tier = DUKE
+					tier = KING
+					tier = EMPEROR
+					}
+				}
+				religion = glorian
+			}
+			is_patrician = no
+		}
+
+		color = { 189 50 89 }
+
+		barons_need_dynasty = yes
+		free_retract_vassalage = yes
+		marriage_ignore_religion = yes
+
+		#No free levies in offensive war
+
+		can_build_tribal = no
+
+		can_imprison_without_reason = no
+		can_revoke_without_reason = no
+
+		ignore_in_vassal_limit_calculation = {
+			tribal_government
+		}
+		capital_move_delay = 200
+
+		## Modifiers
+		court_size_modifier = 10
+		vassal_limit = 30
+		commander_limit = 5
+		character_modifier = {
+			diplomacy = 3
+			intrigue = 1
+		}
 	}
 #	swaraj_government = {
 #		preferred_holdings = { CASTLE CITY }
@@ -994,6 +1069,7 @@ feudal_governments = {
 		}
 		accepts_liege_governments = { # Gets the wrong religion modifier instead
 			bureaucratic_government
+			british_government
 			theocracy_government
 			feudal_government
 		}
