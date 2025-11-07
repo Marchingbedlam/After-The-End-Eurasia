@@ -1,0 +1,66 @@
+jane_noats_bloodline = {
+    light_infantry_morale = 0.05
+	monthly_character_piety = 0.2
+	monthly_character_prestige = 0.5
+	church_opinion = 5
+	vassal_opinion = 5
+	falconer_opinion = 5
+	command_modifier = {
+		religious_enemy = 0.2
+	}
+	inheritance = matrilineal
+	allow_bastards = yes
+	picture = GFX_bloodlines_symbol_lion
+	flags = { created_bloodline }
+	active = {
+		religion = catholic
+	}
+}
+
+windsor_bloodline = {
+    light_infantry_morale = 0.05
+	monthly_character_prestige = 0.4
+	british_opinion = 5
+	southerner_opinion = 5
+	westerner_opinion = 5
+	northerner_opinion = 5
+	lowlander_opinion = 5
+	ulsterman_opinion = 5
+	norner_opinion = 5
+	midlander_opinion = 5
+	scouse_opinion = 5
+	nynorn_opinion = 5
+	vassal_opinion = 5
+	glorian_opinion = -10
+	inheritance = patrilineal
+	allow_bastards = yes
+	picture = GFX_bloodlines_symbol_windsor
+	flags = { historical_bloodline }
+}
+
+howard_bloodline = {
+	monthly_character_prestige = 0.3
+	monthly_character_piety = 0.1
+	church_opinion = 5
+	catholic_opinion = 5
+	nun_opinion = 5
+	monk_opinion = 5
+	inheritance = patrilineal
+	allow_bastards = yes
+	picture = GFX_bloodlines_symbol_lion
+	flags = { historical_bloodline }
+	active = {
+		religion = catholic
+	}
+}
+
+stuart_bloodline = {
+	monthly_character_prestige = 0.4
+	vassal_opinion = 5
+	light_infantry_morale = 0.05
+	falconer_opinion=5
+	inheritance = patrilineal
+	allow_bastards = yes
+	picture = GFX_bloodlines_symbol_scotland
+	flags = { historical_bloodline }
+}
