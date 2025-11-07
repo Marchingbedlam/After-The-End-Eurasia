@@ -79,6 +79,30 @@ government_flavor = {
 		}
 	}
 }
+government_flavor = {
+	name = gov_british_state
+	graphics = GFX_uk_restored
+	priority = 5
+	trigger = {
+		government = british_government
+		OR = {
+		   has_landed_title = k_britain
+		   has_landed_title = e_great_britain
+		}
+	}
+}
+government_flavor = {
+	name = gov_british_vassal
+	graphics = GFX_glorian_bonfire
+	priority = 5
+	trigger = {
+		government = british_government
+		NOT = {
+		   has_landed_title = k_britain
+		   has_landed_title = e_great_britain
+		}
+	}
+}
 #government_flavor = {
 #	name = gov_swaraj
 #	graphics = GFX_evt_yoga_meditation
