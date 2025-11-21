@@ -203,7 +203,7 @@ e_misr = {
 	}
 	
 	k_cyrenaica = {
-		color={ 217 169 56 }
+		color={ 50 50 50 }
 		color2={ 255 255 255 }
 		
 		capital = 1082 # c_benghazi
@@ -326,6 +326,105 @@ e_misr = {
 				b_kafred_el_tawarsa = {}
 			}
 		}
+		d_kufra = {
+			color={ 225 149 194 }
+			color2={ 255 255 255 }
+			
+			capital = 2546 # Kufra
+			
+			c_jalu = {
+				color={ 182 156 164 }
+				color2={ 255 255 255 }
+				
+				b_jalu = {}
+				b_al_sawani = {}
+				b_jowfe = {}
+				b_awjilah = {}
+				b_jakharrah = {}
+				b_jakharrad = {}
+				b_messla = {}
+			}
+			c_siwa = { # 1432
+				color={ 122 99 118 }
+				color2={ 255 255 255 }
+				
+				b_shali_gadi = {}
+				b_siwa = {}
+				b_jabal_al_dakrur = {}
+				b_qarat_umm_al_sagheir = {}
+				b_aghurmi = {}
+				b_sitra = {}
+				b_ayn_al_ganbi = {}
+			}
+			c_kufra = {
+				color={ 252 124 198 }
+				color2={ 255 255 255 }
+				
+				b_al_jawf = {}
+				b_buzaymah = {}
+				b_tazirbu = {}
+				b_at_tallab = {}
+				b_rabyanah = {}
+				b_al_kufrah = {}
+				b_harat_zuwayyah = {}
+			}
+		}
+	}
+	k_egypt = {
+		color={ 204 166 0 }
+		color2={ 255 255 255 }
+		
+		capital = 1399 # c_al_qahirah
+		
+		naqshbandi = 700
+		
+		d_al_qahirah = {
+			color={ 247 229 246 }
+			color2={ 255 255 255 }
+			
+			capital = 1399 # c_al_qahirah
+			
+			c_al_qahirah = { # 1399
+				color={ 237 199 141 }
+				color2={ 255 255 255 }
+				
+				holy_site = sunni
+				holy_site = thelema
+				holy_site = an_nahar
+				
+				b_shubra_2 = {}
+				b_al_qahirah = {}
+				b_taj_al_jawame = {}
+				b_benha = {}
+				b_helwan = {}
+				b_muqattam = {}
+				b_rawdah = {}
+			}
+			c_al_jizah = { # 1401
+				color={ 230 242 220 }
+				color2={ 255 255 255 }
+				
+				b_dokki = {}
+				b_al_jizah = {}
+				b_bulaq = {}
+				b_al_warraq = {}
+				b_imbabah = {}
+				b_al_badrashayn = {}
+				b_al_ayyat = {}
+			}
+			c_atfih = { # 1400
+				color={ 235 189 255 }
+				color2={ 255 255 255 }
+				
+				b_as_saff = {}
+				b_atfih = {}
+				b_al_wadi_2 = {}
+				b_arab_al_maazah = {}
+				b_al_manshi = {}
+				b_arab_abu_said = {}
+				b_al_shurafa = {}
+			}
+		}
 		d_al_wadi_al_jadid = {
 			color={ 171 151 101 }
 			color2={ 255 255 255 }
@@ -379,105 +478,6 @@ e_misr = {
 				b_bir_saba = {}
 				b_abu_minqar = {}
 				b_abu_nus = {}
-			}
-			c_siwa = { # 1432
-				color={ 122 99 118 }
-				color2={ 255 255 255 }
-				
-				b_shali_gadi = {}
-				b_siwa = {}
-				b_jabal_al_dakrur = {}
-				b_qarat_umm_al_sagheir = {}
-				b_aghurmi = {}
-				b_sitra = {}
-				b_ayn_al_ganbi = {}
-			}
-		}
-		d_kufra = {
-			color={ 225 149 194 }
-			color2={ 255 255 255 }
-			
-			capital = 2546 # Kufra
-			
-			c_jalu = {
-				color={ 182 156 164 }
-				color2={ 255 255 255 }
-				
-				b_jalu = {}
-				b_al_sawani = {}
-				b_jowfe = {}
-				b_awjilah = {}
-				b_jakharrah = {}
-				b_jakharrad = {}
-				b_messla = {}
-			}
-			c_kufra = {
-				color={ 252 124 198 }
-				color2={ 255 255 255 }
-				
-				b_al_jawf = {}
-				b_buzaymah = {}
-				b_tazirbu = {}
-				b_at_tallab = {}
-				b_rabyanah = {}
-				b_al_kufrah = {}
-				b_harat_zuwayyah = {}
-			}
-		}
-	}
-	k_egypt = {
-		color={ 201 200 200 }
-		color2={ 255 255 255 }
-		
-		capital = 1399 # c_al_qahirah
-		
-		naqshbandi = 700
-		
-		d_al_qahirah = {
-			color={ 247 229 246 }
-			color2={ 255 255 255 }
-			
-			capital = 1399 # c_al_qahirah
-			
-			c_al_qahirah = { # 1399
-				color={ 237 199 141 }
-				color2={ 255 255 255 }
-				
-				holy_site = sunni
-				holy_site = thelema
-				holy_site = an_nahar
-				
-				b_shubra_2 = {}
-				b_al_qahirah = {}
-				b_taj_al_jawame = {}
-				b_benha = {}
-				b_helwan = {}
-				b_muqattam = {}
-				b_rawdah = {}
-			}
-			c_al_jizah = { # 1401
-				color={ 230 242 220 }
-				color2={ 255 255 255 }
-				
-				b_dokki = {}
-				b_al_jizah = {}
-				b_bulaq = {}
-				b_al_warraq = {}
-				b_imbabah = {}
-				b_al_badrashayn = {}
-				b_al_ayyat = {}
-			}
-			c_atfih = { # 1400
-				color={ 235 189 255 }
-				color2={ 255 255 255 }
-				
-				b_as_saff = {}
-				b_atfih = {}
-				b_al_wadi_2 = {}
-				b_arab_al_maazah = {}
-				b_al_manshi = {}
-				b_arab_abu_said = {}
-				b_al_shurafa = {}
 			}
 		}
 		d_al_bahr_al_ahmar = {

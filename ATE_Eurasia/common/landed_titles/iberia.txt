@@ -187,7 +187,7 @@ e_iberia = {
 		}
 	}
 	k_andalusia = {
-		color={ 212 200 67 }
+		color={ 25 127 73 }
 		color2={ 255 255 255 }
 		
 		capital = 220 # c_seville
@@ -207,7 +207,7 @@ e_iberia = {
 		galician = "Andalucía"
 		
 		d_seville = {
-			color={ 232 230 77 }
+			color={ 17 89 41 }
 			color2={ 255 255 255 }
 			
 			capital = 220 # c_seville
@@ -221,7 +221,7 @@ e_iberia = {
 			andalusian = "Sevilla"
 			
 			c_seville = { # 220
-				color={ 242 220 82 }
+				color={ 20 102 47 }
 				color2={ 255 255 255 }
 
 				holy_site = penitant
@@ -251,7 +251,7 @@ e_iberia = {
 				b_los_palacios_y_villafranca = {}
 			}
 			c_cordoba = { # 223
-				color={ 255 232 86 }
+				color={ 15 76 35 }
 				color2={ 255 255 255 }
 			
 				basque = "Kordoba"
@@ -275,7 +275,7 @@ e_iberia = {
 				b_baena = {}
 			}
 			c_huelva = { # 222
-				color={ 255 188 76 }
+				color={ 30 153 71 }
 				color2={ 255 255 255 }
 				
 				b_lepe = {}
@@ -287,7 +287,7 @@ e_iberia = {
 				b_ayamonte = {}
 			}
 			c_sierra_norte = { # 221
-				color={ 242 215 41 }
+				color={ 10 51 23 }
 				color2={ 255 255 255 }
 				
 				b_mairena_de_aljarafe = {}
@@ -300,7 +300,7 @@ e_iberia = {
 			}
 		}
 		d_cadiz = {
-			color={ 232 190 120 }
+			color={ 33 165 97 }
 			color2={ 255 255 255 }
 			
 			capital = 224 # c_cadiz
@@ -316,7 +316,7 @@ e_iberia = {
 			galician = "Cádiz"
 			
 			c_cadiz = { # 224
-				color={ 242 180 125 }
+				color={ 20 102 61 }
 				color2={ 255 255 255 }
 				
 				basque = "Karize"
@@ -348,7 +348,7 @@ e_iberia = {
 				b_puerto_real = {}
 			}
 			c_gibraltar = { # 225
-				color={ 242 172 60 }
+				color={ 25 127 76 }
 				color2={ 255 255 255 }
 				
 				b_westside = {}
@@ -361,13 +361,13 @@ e_iberia = {
 			}
 		}
 		d_granada = {
-			color={ 239 230 131 }
+			color={ 22 140 84 }
 			color2={ 255 255 255 }
 			
 			capital = 226 # c_granada
 			
 			c_granada = { # 226
-				color={ 239 220 136 }
+				color={ 15 153 107 }
 				color2={ 255 255 255 }
 				
 				b_motril = {}
@@ -379,7 +379,7 @@ e_iberia = {
 				b_loja = {}
 			}
 			c_almeria = { # 228
-				color={ 239 167 43 }
+				color={ 20 204 142 }
 				color2={ 255 255 255 }
 				
 				catalan = "Almeria"
@@ -393,7 +393,7 @@ e_iberia = {
 				b_huercal_overa = {}
 			}
 			c_jaen = { # 230
-				color={ 232 173 42 }
+				color={ 12 127 89 }
 				color2={ 255 255 255 }
 				
 				b_alcala_la_real = {}
@@ -405,7 +405,7 @@ e_iberia = {
 				b_bailen = {}
 			}
 			c_malaga = { # 227
-				color={ 239 121 105 }
+				color={ 22 229 160 }
 				color2={ 255 255 255 }
 				
 				catalan = "Màlaga"
@@ -419,7 +419,7 @@ e_iberia = {
 				b_benalmadena = {}
 			}
 			c_murcia = { # 229
-				color={ 239 141 95 }
+				color={ 10 102 71 }
 				color2={ 255 255 255 }
 				
 				catalan = "Múrcia"
@@ -1825,7 +1825,7 @@ k_galicia = {
 		}
 	}
 	k_portugal = {
-		color={ 242 38 45 }
+		color={ 45 79 153 }
 		color2={ 255 255 255 }
 		
 		dignity = 10 # One more county than de jure
@@ -1835,7 +1835,7 @@ k_galicia = {
 		catholic = 3000 # Santiago
 		
 		d_lisboa = {
-			color={ 193 21 5 }
+			color={ 27 64 137 }
 			color2={ 255 255 255 }
 
 			capital = 167 # Lisboa
@@ -1852,7 +1852,7 @@ k_galicia = {
 			galician = "Lisboa"
 		
 			c_lisboa = {
-				color={ 237 18 83 }
+				color={ 25 57 127 }
 				color2={ 255 255 255 }
 			
 				basque = "Lisboa"
@@ -1889,7 +1889,7 @@ k_galicia = {
 				b_odivelas = {}
 			}
 			c_peninsula_de_setubal = {
-				color={ 217 12 5 }
+				color={ 20 46 102 }
 				color2={ 255 255 255 }
 			
 				b_setubal = {}
@@ -1902,13 +1902,13 @@ k_galicia = {
 			}
 		}	
 		d_beja = {
-			color={ 182 8 5 }
+			color={ 49 109 140 }
 			color2={ 255 255 255 }
 			
 			capital = 169 # Beja
 			
 			c_beja = {
-				color={ 176 25 26 }
+				color={ 44 99 127 }
 				color2={ 255 255 255 }
 			
 				b_beja = {}
@@ -1920,7 +1920,7 @@ k_galicia = {
 				b_ferreira = {}
 			}
 			c_alentejo_litoral = {
-				color={ 190 68 105 }
+				color={ 62 139 178 }
 				color2={ 255 255 255 }
 			
 				b_santiago_do_cacem = {}
@@ -1932,7 +1932,7 @@ k_galicia = {
 				b_cercal = {}
 			}
 			c_evora = {
-				color={ 249 112 62 }
+				color={ 35 79 102 }
 				color2={ 255 255 255 }
 			
 				b_evora = {}
@@ -1944,7 +1944,7 @@ k_galicia = {
 				b_redondo = {}
 			}
 			c_santarem = {
-				color={ 218 14 32 }
+				color={ 71 159 204 }
 				color2={ 255 255 255 }
 				
 				holy_site = apparitionist
@@ -1969,13 +1969,13 @@ k_galicia = {
 			}
 		}
 		d_algarve = {
-			color={ 183 8 5 }
+			color={ 22 67 112 }
 			color2={ 255 255 255 }
 			
 			capital = 175 # Algarve
 			
 			c_algarve = {
-				color={ 247 111 59 }
+				color={ 24 73 122 }
 				color2={ 255 255 255 }
 				
 				b_faro = {}
@@ -1988,13 +1988,13 @@ k_galicia = {
 			}			
 		}
 		d_beira = {
-			color={ 180 6 39 }
+			color={ 40 40 102 }
 			color2={ 255 255 255 }
 			
 			capital = 179 # Coimbra
 			
 			c_leiria = {
-				color={ 218 61 26 }
+				color={ 51 51 127 }
 				color2={ 255 255 255 }
 			
 				holy_site = catholic
@@ -2008,7 +2008,7 @@ k_galicia = {
 				b_peniche = {}
 			}
 			c_castelo_branco = {
-				color={ 235 77 44 }
+				color={ 30 30 76 }
 				color2={ 255 255 255 }
 			
 				b_castelo_branco = {}
@@ -2020,7 +2020,7 @@ k_galicia = {
 				b_proenca_a_nova = {}
 			}
 			c_coimbra = {
-				color={ 185 98 88 }
+				color={ 61 61 153 }
 				color2={ 255 255 255 }
 				
 				castilian = "Coímbra"
@@ -2036,7 +2036,7 @@ k_galicia = {
 				b_lousa = {}
 			}
 			c_aveiro = {
-				color={ 196 66 11 }
+				color={ 20 20 51 }
 				color2={ 255 255 255 }
 			
 				b_santa_maria_da_feira = {}
@@ -2048,7 +2048,7 @@ k_galicia = {
 				b_ilhavo = {}
 			}
 			c_guarda = {
-				color={ 239 50 62 }
+				color={ 71 71 178 }
 				color2={ 255 255 255 }
 			
 				b_guarda = {}
@@ -2061,13 +2061,13 @@ k_galicia = {
 			}
 		}	
 		d_norte = {
-			color={ 236 73 30 }
+			color={ 45 63 153 }
 			color2={ 255 255 255 }
 			
 			capital = 182 # Porto
 		
 			c_porto = {
-				color={ 234 115 50 }
+				color={ 38 53 127 }
 				color2={ 255 255 255 }
 				
 				castilian = "Oporto"
@@ -2084,7 +2084,7 @@ k_galicia = {
 				b_paredes = {}
 			}	
 			c_vila_real = {
-				color={ 254 84 60 }
+				color={ 53 74 178 }
 				color2={ 255 255 255 }
 			
 				b_vila_real = {}
@@ -2096,7 +2096,7 @@ k_galicia = {
 				b_alijo = {}
 			}
 			c_braganca = {
-				color={ 226 138 94 }
+				color={ 30 42 102 }
 				color2={ 255 255 255 }
 				
 				castilian = "Braganza"
