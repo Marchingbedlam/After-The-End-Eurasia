@@ -1,0 +1,2251 @@
+8002001={ 
+	name="Octavianus Augustus"
+	occluded=yes
+	dynasty=7534021
+	religion=pagan
+	culture=roman
+	trait="brave"
+	trait="genius"
+	trait="legendary"
+	1.1.1={birth=yes}
+	14.1.1={death=yes}
+}
+
+8002002={ 
+	name="Tiberius"
+	occluded=yes
+	dynasty=7534021
+	religion=pagan
+	culture=roman
+	trait="cruel"
+	trait="legendary"
+	father=8002001
+	2.1.1={birth=yes}
+	37.1.1={death=yes}
+}
+
+8002003={ 
+	name="Caligula"
+	occluded=yes
+	dynasty=7534021
+	religion=pagan
+	culture=roman
+	trait="cruel"
+	trait="lunatic"
+	trait="legendary"
+	father=8002002
+	12.1.1={birth=yes}
+	41.1.1={
+	   death={
+	      death_reason=death_murder
+		  killer=8002004
+	   }
+	}
+}
+
+8002004={ 
+	name="Claudius"
+	occluded=yes
+	dynasty=7534021
+	religion=pagan
+	culture=roman
+	trait="hunchback"
+	trait="patient"
+	trait="legendary"
+	father=8002001
+	4.1.1={birth=yes}
+	54.1.1={death=yes}
+}
+
+8002005={ 
+	name="Brittanicus"
+	occluded=yes
+	dynasty=7534021
+	religion=pagan
+	culture=roman
+	trait="hunchback"
+	trait="patient"
+	trait="legendary"
+	father=8002004
+	41.1.1={birth=yes}
+	55.1.1={
+	    death={
+	      death_reason=death_execution
+		  killer=8002007
+	    }
+	}
+}
+
+8002006={ 
+	name="Octavia"
+	occluded=yes
+	female=yes
+	dynasty=7534021
+	religion=catholic
+	culture=roman
+	trait="chaste"
+	trait="kind"
+	trait="brave"
+	trait="legendary"
+	father=8002004
+	40.1.1={birth=yes}
+	62.1.1={
+	   death={
+	      death_reason=death_execution
+		  killer=8002007
+	   }
+	}
+}
+
+8002007={ 
+	name="Nero"
+	occluded=yes
+	dynasty=7534021
+	religion=pagan
+	culture=roman
+	trait="cruel"
+	trait="proud"
+	trait="legendary"
+	father=8002003
+	37.1.1={birth=yes}
+	68.1.1={
+	  death={
+	     death_reason=death_suicide
+	  }
+	}
+}
+
+8002008={ 
+	name="Vespasianus"
+	occluded=yes
+	dynasty=7534022
+	religion=pagan
+	culture=roman
+	trait="legendary"
+	9.1.1={birth=yes}
+	79.1.1={death=yes}
+}
+
+8002009={ 
+	name="Titus"
+	occluded=yes
+	dynasty=7534022
+	religion=pagan
+	culture=roman
+	father=8002008
+	trait="legendary"
+	39.1.1={birth=yes}
+	81.1.1={death=yes}
+}
+
+8002010={ 
+	name="Domitianus"
+	occluded=yes
+	dynasty=7534022
+	religion=pagan
+	culture=roman
+	father=8002008
+	trait="legendary"
+	51.1.1={birth=yes}
+	96.1.1={death=yes}
+}
+
+8002011={ 
+	name="Nerva"
+	occluded=yes
+	dynasty=7534023
+	religion=pagan
+	culture=roman
+	trait="legendary"
+	30.1.1={birth=yes}
+	98.1.1={death=yes}
+}
+
+8002012={ 
+	name="Traianus"
+	occluded=yes
+	dynasty=7534023
+	religion=pagan
+	culture=roman
+	father=8002011
+	trait="legendary"
+	53.1.1={birth=yes}
+	117.1.1={death=yes}
+}
+
+8002013={ 
+	name="Hadrianus"
+	occluded=yes
+	dynasty=7534023
+	religion=pagan
+	culture=roman
+	father=8002012
+	trait="legendary"
+	76.1.1={birth=yes}
+	138.1.1={death=yes}
+}
+
+8002014={ 
+	name="Antoninus Pius"
+	occluded=yes
+	dynasty=7534023
+	religion=pagan
+	culture=roman
+	father=8002013
+	trait="legendary"
+	96.1.1={birth=yes}
+	161.1.1={death=yes}
+}
+
+8002015={ 
+	name="Marcus Aurelius"
+	occluded=yes
+	dynasty=7534023
+	religion=pagan
+	culture=roman
+	father=8002014
+	trait="legendary"
+	121.1.1={birth=yes}
+	180.1.1={death=yes}
+}
+
+8002016={ 
+	name="Commodus"
+	occluded=yes
+	dynasty=7534023
+	religion=pagan
+	culture=roman
+	father=8002014
+	trait="legendary"
+	161.1.1={birth=yes}
+	192.1.1={
+	   death={
+	      death_reason=death_battle
+		  killer=8002017
+	   }
+	}
+}
+
+8002017={ 
+	name="Septimius"
+	occluded=yes
+	dynasty=7534024
+	religion=pagan
+	culture=roman
+	trait="legendary"
+	145.1.1={birth=yes}
+	211.1.1={death=yes}
+}
+
+8002018={ 
+	name="Geta"
+	occluded=yes
+	dynasty=7534024
+	religion=pagan
+	culture=roman
+	father=8002017
+	trait="legendary"
+	189.1.1={birth=yes}
+	212.1.1={
+	  death={
+	     death_reason=death_murder
+	     killer=8002019
+	  }
+	}
+}
+
+8002019={ 
+	name="Caracalla"
+	occluded=yes
+	dynasty=7534024
+	religion=pagan
+	culture=roman
+	father=8002017
+	trait="legendary"
+	188.1.1={birth=yes}
+	217.1.1={death=yes}
+}
+
+8002020={ 
+	name="Elagabalus"
+	occluded=yes
+	dynasty=7534024
+	religion=pagan
+	culture=roman
+	father=8002019
+	trait="legendary"
+	204.1.1={birth=yes}
+	222.1.1={
+	   death={
+	      death_reason=death_murder
+	   }
+	}
+}
+
+8002021={ 
+	name="Alexander"
+	occluded=yes
+	dynasty=7534024
+	religion=pagan
+	culture=roman
+	father=8002018
+	trait="legendary"
+	208.1.1={birth=yes}
+	235.1.1={
+	   death={
+	      death_reason=death_murder
+	   }
+	}
+}
+
+8002022={ 
+	name="Gordianus"
+	occluded=yes
+	dynasty=7534025
+	religion=pagan
+	culture=roman
+	trait="legendary"
+	192.1.1={birth=yes}
+	244.1.1={
+	   death={
+	      death_reason=death_battle
+		  killer=8002023
+	   }
+	}
+}
+
+8002023={ 
+	name="Philippus"
+	occluded=yes
+	dynasty=7534025
+	religion=pagan
+	culture=roman
+	trait="legendary"
+	father=8002022
+	210.1.1={birth=yes}
+	249.1.1={
+	   death={
+	      death_reason=death_battle
+		  killer=8002024
+	   }
+	}
+}
+
+8002024={ 
+	name="Decius"
+	occluded=yes
+	dynasty=7534027
+	religion=pagan
+	culture=roman
+	trait="legendary"
+	201.1.1={birth=yes}
+	268.1.1={death=yes}
+}
+
+8002025={ 
+	name="Claudius"
+	occluded=yes
+	dynasty=7534027
+	religion=pagan
+	culture=roman
+	father=8002024
+	trait="legendary"
+	224.1.1={birth=yes}
+	270.1.1={death=yes}
+}
+
+8002026={ 
+	name="Aurelianus"
+	occluded=yes
+	dynasty=7534027
+	religion=pagan
+	culture=roman
+	father=8002024
+	trait="legendary"
+	229.1.1={birth=yes}
+	275.1.1={death=yes}
+}
+
+8002027={ 
+	name="Diocletianus"
+	occluded=yes
+	dynasty=7534028
+	religion=pagan
+	culture=roman
+	trait="cruel"
+	trait="quick"
+	trait="zealous"
+	trait="legendary"
+	244.1.1={birth=yes}
+	305.1.1={death=yes}
+}
+
+8002028={ 
+	name="Maxentius"
+	occluded=yes
+	dynasty=7534028
+	religion=pagan
+	culture=roman
+	trait="cruel"
+	trait="quick"
+	trait="zealous"
+	trait="legendary"
+	father=8002027
+	280.1.1={birth=yes}
+	312.1.1={
+	   death={
+	       death_reason=death_battle
+		   killer=8002029
+	   } 
+	}
+}
+
+8002029={ 
+	name="Constantinus"
+	occluded=yes
+	dynasty=7534029
+	religion=catholic
+	culture=roman
+	trait="wroth"
+	trait="zealous"
+	trait="ambitious"
+	trait="legendary"
+	give_nickname=nick_the_great
+	272.1.1={birth=yes}
+	337.1.1={death=yes}
+}
+
+8002030={ 
+	name="Constantinus"
+	occluded=yes
+	dynasty=7534029
+	religion=catholic
+	culture=roman
+	trait="legendary"
+	father=8002029
+	316.1.1={birth=yes}
+	340.1.1={death=yes}
+}
+
+8002031={ 
+	name="Constantinus"
+	occluded=yes
+	dynasty=7534029
+	religion=catholic
+	culture=roman
+	trait="legendary"
+	father=8002029
+	317.1.1={birth=yes}
+	361.1.1={death=yes}
+}
+
+8002032={ 
+	name="Theodosius"
+	occluded=yes
+	dynasty=7534030
+	religion=catholic
+	culture=roman
+	trait="legendary"
+	give_nickname=nick_the_great
+	347.1.1={birth=yes}
+	395.1.1={death=yes}
+}
+
+8002033={ 
+	name="Honorius Arcadius"
+	occluded=yes
+	dynasty=7534030
+	religion=catholic
+	culture=roman
+	father=8002032
+	add_trait="slow"
+	trait="legendary"
+	377.1.1={birth=yes}
+	423.1.1={death=yes}
+}
+
+8002034={ 
+	name="Maiorianus"
+	occluded=yes
+	dynasty=7534030
+	religion=catholic
+	culture=roman
+	father=8002032
+	add_trait="brave"
+	add_trait="ambitious"
+	trait="legendary"
+    father=8002033
+	420.1.1={birth=yes}
+	461.1.1={
+	   death={
+	      death_reason=death_murder
+	   }
+	}
+}
+
+8002035={ 
+	name="Romulus"
+	occluded=yes
+	dynasty=7534030
+	religion=catholic
+	culture=roman
+	father=8002032
+	add_trait="brave"
+	add_trait="ambitious"
+	trait="legendary"
+    father=8002034
+	463.1.1={birth=yes}
+	476.1.1={
+	   death={
+	      death_reason=death_execution
+		  killer=8002036
+	   }
+	}
+}
+
+8002036={ 
+	name="Odoacer"
+	occluded=yes
+	dynasty=7534031
+	religion=catholic
+	culture=bavarian
+	give_nickname=nick_the_usurper
+	433.1.1={birth=yes}
+	493.1.1={death=yes}
+}
+
+8002037={ 
+	name="Theodoric"
+	occluded=yes
+	dynasty=7534031
+	religion=catholic
+	culture=bavarian
+	father=8002036
+	trait="legendary"
+	454.1.1={birth=yes}
+	526.1.1={death=yes}
+}
+
+8002038={ 
+	name="Iustinianus"
+	occluded=yes
+	dynasty=7534032
+	religion=catholic
+	culture=roman
+	add_trait="zealous"
+	add_trait="erudite"
+	add_trait="scholar"
+	add_trait="genius"
+	trait="legendary"
+	give_nickname=nick_the_great
+	483.1.1={birth=yes}
+	565.1.1={death=yes}
+}
+
+8002040={ 
+	name="Alexander"
+	occluded=yes
+	dynasty=7534032
+	religion=catholic
+	culture=roman
+	add_trait="quick"
+	add_trait="zealous"
+	add_trait="just"
+	add_trait="gregarious"
+	trait="legendary"
+	father=8002039
+	give_nickname=nick_the_just
+	518.1.1={birth=yes}
+	595.1.1={death=yes}
+}
+
+8002041={ 
+	name="Heraclius"
+	occluded=yes
+	dynasty=7534032
+	religion=catholic
+	culture=greek
+	add_trait="strategist"
+	trait="legendary"
+	father=8002040
+	574.1.1={birth=yes}
+	641.1.1={death=yes}
+}
+
+8002042={ 
+	name="Konstantinos"
+	occluded=yes
+	dynasty=7534032
+	religion=catholic
+	culture=greek
+	trait="legendary"
+	father=8002041
+	612.1.1={birth=yes}
+	685.1.1={death=yes}
+}
+
+8002043={ 
+	name="Iustinianus"
+	occluded=yes
+	dynasty=7534032
+	religion=catholic
+	culture=greek
+	father=8002042
+	trait="cruel"
+	trait="legendary"
+	669.1.1={birth=yes}
+	711.1.1={death=yes}
+}
+
+8002044={ 
+	name="Leon"
+	occluded=yes
+	dynasty=7534033
+	religion=iconoclast
+	culture=greek
+	trait="legendary"
+	680.1.1={birth=yes}
+	741.1.1={death=yes}
+}
+
+8002045={ 
+	name="Konstantinos"
+	occluded=yes
+	dynasty=7534033
+	religion=iconoclast
+	culture=greek
+	father=8002044
+	trait="legendary"
+	718.1.1={birth=yes}
+	775.1.1={death=yes}
+}
+
+8002046={ 
+	name="Leon"
+	occluded=yes
+	dynasty=7534033
+	religion=orthodox
+	culture=greek
+	trait="legendary"
+	father=8002045
+	750.1.1={birth=yes}
+	769.1.1={
+	   add_spouse=8002048
+	}
+	780.1.1={
+	   death={
+	       death_reason=death_health
+	   }
+	}
+}
+
+8002047={ 
+	name="Konstantinos"
+	occluded=yes
+	dynasty=7534033
+	religion=iconoclast
+	culture=greek
+	father=8002046
+	mother=8002048
+	trait="legendary"
+	trait="blinded"
+	771.1.1={birth=yes}
+	799.1.1={
+	   death={
+	       death_reason=death_dungeon
+		   killer=8002048
+	   }
+	}
+}
+
+8002048={ 
+	name="Irene"
+	female=yes
+	occluded=yes
+	religion=orthodox
+	culture=greek
+	trait="legendary"
+	752.1.1={birth=yes}
+	800.1.1={death=yes}
+}
+
+8002049={ 
+	name="Charles"
+	dynasty=7534034
+	occluded=yes
+	religion=catholic
+	culture=french
+	give_nickname=nick_the_great
+	trait="legendary"
+	742.1.1={birth=yes}
+	814.1.1={death=yes}
+}
+
+8002095={ 
+	name="Louis"
+	dynasty=7534034
+	occluded=yes
+	religion=catholic
+	culture=french
+	father=8002049
+	trait="legendary"
+	778.1.1={birth=yes}
+	840.1.1={death=yes}
+}
+
+8002096={ 
+	name="Lothar"
+	dynasty=7534034
+	occluded=yes
+	religion=catholic
+	culture=french
+	father=8002095
+	trait="legendary"
+	795.1.1={birth=yes}
+	855.1.1={death=yes}
+}
+
+8002097={ 
+	name="Charles"
+	dynasty=7534034
+	occluded=yes
+	religion=catholic
+	culture=french
+	father=8002095
+	trait="legendary"
+	823.1.1={birth=yes}
+	877.1.1={death=yes}
+}
+
+8002098={ 
+	name="Louis"
+	dynasty=7534034
+	occluded=yes
+	religion=catholic
+	culture=french
+	father=8002097
+	trait="legendary"
+	846.1.1={birth=yes}
+	879.1.1={death=yes}
+}
+
+8002099={ 
+	name="Louis"
+	dynasty=7534034
+	occluded=yes
+	religion=catholic
+	culture=french
+	father=8002098
+	trait="legendary"
+	863.1.1={birth=yes}
+	882.1.1={death=yes}
+}
+
+8002100={ 
+	name="Charles"
+	dynasty=7534034
+	occluded=yes
+	religion=catholic
+	culture=french
+	father=8002098
+	trait="is_fat"
+	trait="legendary"
+	879.1.1={birth=yes}
+	923.1.1={death=yes}
+}
+
+####################
+
+8002127={ 
+	name="Otto"
+	dynasty=7534053
+	occluded=yes
+	religion=catholic
+	culture=rhenish
+	trait="legendary"
+	give_nickname=nick_the_great
+	912.1.1={birth=yes}
+	973.1.1={death=yes}
+}
+
+8002128={ 
+	name="Otto"
+	dynasty=7534053
+	occluded=yes
+	religion=catholic
+	culture=rhenish
+	trait="legendary"
+	father=8002127
+	955.1.1={birth=yes}
+	983.1.1={death=yes}
+}
+
+8002129={ 
+	name="Otto"
+	dynasty=7534053
+	occluded=yes
+	religion=catholic
+	culture=rhenish
+	trait="legendary"
+	trait="ambitious"
+	father=8002128
+	980.1.1={birth=yes}
+	1002.1.1={death=yes}
+}
+
+8002130={ 
+	name="Heinrich"
+	dynasty=7534053
+	occluded=yes
+	religion=catholic
+	culture=rhenish
+	trait="legendary"
+	trait="saint"
+	father=8002131
+	give_nickname=nick_the_saint
+	978.1.1={birth=yes}
+	1024.1.1={death=yes}
+}
+
+8002131={ 
+	name="Heinrich"
+	dynasty=7534053
+	occluded=yes
+	religion=catholic
+	culture=rhenish
+	trait="legendary"
+	father=8002127
+	951.1.1={birth=yes}
+	995.1.1={death=yes}
+}
+
+8002132={ 
+	name="Friedrich"
+	dynasty=7534055
+	occluded=yes
+	religion=catholic
+	culture=german
+	trait="legendary"
+	1122.1.1={birth=yes}
+	1190.1.1={death=yes}
+}
+
+8002133={ 
+	name="Heinrich Lothar"
+	dynasty=7534054
+	occluded=yes
+	religion=catholic
+	culture=german
+	father=8002126
+	trait="legendary"
+	1075.1.1={birth=yes}
+	1152.1.1={death=yes}
+}
+
+8002134={ 
+	name="Friedrich"
+	dynasty=7534055
+	occluded=yes
+	religion=catholic
+	culture=german
+	trait="legendary"
+	father=8002132
+	1175.1.1={birth=yes}
+	1250.1.1={death=yes}
+}
+
+8002135={ 
+	name="Heinrich"
+	dynasty=7534056
+	occluded=yes
+	religion=catholic
+	culture=german
+	trait="legendary"
+	1275.1.1={birth=yes}
+	1313.1.1={death=yes}
+}
+
+8002136={ 
+	name="Johann"
+	dynasty=7534056
+	occluded=yes
+	religion=catholic
+	culture=german
+	trait="legendary"
+	trait="blinded"
+	father=8002135
+	1296.1.1={birth=yes}
+	1346.1.1={death=yes}
+}
+
+8002137={ 
+	name="Karl"
+	dynasty=7534056
+	occluded=yes
+	religion=catholic
+	culture=german
+	trait="legendary"
+	father=8002136
+	1316.1.1={birth=yes}
+	1378.1.1={death=yes}
+}
+
+8002138={ 
+	name="Wenzel"
+	dynasty=7534056
+	occluded=yes
+	religion=catholic
+	culture=german
+	trait="legendary"
+	father=8002137
+	1361.1.1={birth=yes}
+	1410.1.1={death=yes}
+}
+
+8002139={ 
+	name="Sigismund"
+	dynasty=7534056
+	occluded=yes
+	religion=catholic
+	culture=german
+	trait="legendary"
+	father=8002137
+	1368.1.1={birth=yes}
+	1437.1.1={death=yes}
+}
+
+8002140={ 
+	name="Elisabeth"
+	female=yes
+	dynasty=7534056
+	occluded=yes
+	religion=catholic
+	culture=german
+	trait="legendary"
+	father=8002139
+	1409.1.1={birth=yes}
+	1442.1.1={death=yes}
+}
+
+8002126={ 
+	name="Heinrich"
+	dynasty=7534054
+	occluded=yes
+	religion=catholic
+	culture=rhenish
+	trait="legendary"
+	trait="excommunicated"
+	give_nickname=nick_the_old
+	990.1.1={birth=yes}
+	1105.1.1={death=yes}
+}
+
+8002142={ 
+	name="Albrecht"
+	dynasty=7534050
+	occluded=yes
+	religion=catholic
+	culture=austrian
+	trait="legendary"
+	1397.1.1={birth=yes}
+	1429.1.1={
+	   add_spouse=8002140
+	}
+	1452.1.1={death=yes}
+}
+
+8002125={ 
+	name="Friedrich"
+	dynasty=7534050
+	occluded=yes
+	religion=catholic
+	culture=austrian
+	trait="legendary"
+	father=8002142
+	mother=8002140
+	1441.1.1={birth=yes}
+	1493.1.1={death=yes}
+}
+
+8002124={ 
+	name="Maximilian"
+	dynasty=7534050
+	occluded=yes
+	religion=catholic
+	culture=austrian
+	trait="legendary"
+	father=8002125
+	1459.1.1={birth=yes}
+	1519.1.1={death=yes}
+}
+
+8002123={ 
+	name="Philipp"
+	dynasty=7534050
+	occluded=yes
+	religion=catholic
+	culture=austrian
+	trait="legendary"
+	father=8002124
+	1478.1.1={birth=yes}
+	1499.1.1={
+	   add_spouse=1713053
+	}
+	1506.1.1={death=yes}
+}
+
+8002122={ 
+	name="Ferdinand"
+	dynasty=7534050
+	occluded=yes
+	religion=catholic
+	culture=austrian
+	trait="legendary"
+	father=8002123
+	mother=1713053
+	1503.1.1={birth=yes}
+	1564.1.1={death=yes}
+}
+
+8002121={ 
+	name="Rudolf"
+	dynasty=7534050
+	occluded=yes
+	religion=catholic
+	culture=austrian
+	trait="legendary"
+	father=8002122
+	1552.1.1={birth=yes}
+	1612.1.1={death=yes}
+}
+
+8002120={ 
+	name="Ferdinand"
+	dynasty=7534050
+	occluded=yes
+	religion=catholic
+	culture=austrian
+	trait="legendary"
+	father=8002121
+	1578.1.1={birth=yes}
+	1618.1.1={death=yes}
+}
+
+8002119={ 
+	name="Ferdinand"
+	dynasty=7534050
+	occluded=yes
+	religion=catholic
+	culture=austrian
+	trait="legendary"
+	father=8002120
+	1608.1.1={birth=yes}
+	1657.1.1={death=yes}
+}
+
+
+8002118={ 
+	name="Leopold"
+	dynasty=7534050
+	occluded=yes
+	religion=catholic
+	culture=austrian
+	trait="legendary"
+	father=8002119
+	1640.1.1={birth=yes}
+	1705.1.1={death=yes}
+}
+
+8002117={ 
+	name="Joseph Karl"
+	dynasty=7534050
+	occluded=yes
+	religion=catholic
+	culture=austrian
+	trait="legendary"
+	father=8002118
+	1678.1.1={birth=yes}
+	1745.1.1={death=yes}
+}
+
+8002101={ 
+	name="Maria Theresa"
+	dynasty=7534050
+	female=yes
+	occluded=yes
+	religion=catholic
+	culture=austrian
+	trait="legendary"
+	father=8002117
+	1717.1.1={birth=yes}
+	1780.1.1={death=yes}
+}
+
+8002102={ 
+	name="Joseph"
+	dynasty=7534050
+	occluded=yes
+	religion=catholic
+	culture=austrian
+	mother=8002101
+	trait="legendary"
+	1741.1.1={birth=yes}
+	1790.1.1={death=yes}
+}
+
+8002103={ 
+	name="Leopold"
+	dynasty=7534050
+	occluded=yes
+	religion=catholic
+	culture=austrian
+	mother=8002101
+	trait="legendary"
+	1747.1.1={birth=yes}
+	1792.1.1={death=yes}
+}
+
+8002104={ 
+	name="Franz"
+	dynasty=7534050
+	occluded=yes
+	religion=catholic
+	culture=austrian
+	father=8002103
+	trait="legendary"
+	1768.1.1={birth=yes}
+	1835.1.1={death=yes}
+}
+
+8002105={ 
+	name="Ferdinand"
+	dynasty=7534050
+	occluded=yes
+	religion=catholic
+	culture=austrian
+	father=8002104
+	trait="legendary"
+	1793.1.1={birth=yes}
+	1848.1.1={death=yes}
+}
+
+8002106={ 
+	name="Franz Joseph"
+	dynasty=7534050
+	occluded=yes
+	religion=catholic
+	culture=austrian
+	father=8002105
+	trait="legendary"
+	1830.1.1={birth=yes}
+	1916.1.1={death=yes}
+}
+
+8002107={ 
+	name="Rudolf"
+	dynasty=7534050
+	occluded=yes
+	religion=catholic
+	culture=austrian
+	father=8002106
+	trait="legendary"
+	1858.1.1={birth=yes}
+	1889.1.1={
+	   death={
+	      death_reason=death_suicide
+	   }
+	}
+}
+
+8002108={ 
+	name="Franz Ferdinand"
+	dynasty=7534050
+	occluded=yes
+	religion=catholic
+	culture=austrian
+	father=8002106
+	trait="legendary"
+	1863.1.1={birth=yes}
+	1914.1.1={
+	   death={
+	      death_reason=death_murder
+	   }
+	}
+}
+
+8002109={ 
+	name="Otto"
+	dynasty=7534050
+	occluded=yes
+	religion=catholic
+	culture=austrian
+	father=8002106
+	trait="legendary"
+	1865.1.1={birth=yes}
+	1906.1.1={death=yes}
+}
+
+8002110={ 
+	name="Karl"
+	dynasty=7534050
+	occluded=yes
+	religion=catholic
+	culture=austrian
+	father=8002109
+	trait="blessed"
+	trait="legendary"
+	1887.1.1={birth=yes}
+	1922.1.1={death=yes}
+}
+
+8002111={ 
+	name="Napulione"
+	dynasty=2009337
+	occluded=yes
+	religion=jacobin
+	culture=corsican
+	trait="legendary"
+	trait="genius"
+	trait="brilliant_strategist"
+	trait="strategist"
+	father=8002113
+	1769.1.1={birth=yes}
+	1815.6.18={
+	   death={
+	      death_reason=death_battle_duel
+		  killer=1001165
+	   }
+	}
+}
+
+8002112={ 
+	name="Napulione"
+	dynasty=2009337
+	occluded=yes
+	religion=jacobin
+	culture=corsican
+	trait="legendary"
+	father=8002111
+	1811.1.1={birth=yes}
+	1816.1.1={
+	   religion=catholic
+	}
+	1832.1.1={
+	   death={
+	      death_reason=death_health
+	   }
+	}
+}
+
+8002113={ 
+	name="Carlu"
+	dynasty=2009337
+	occluded=yes
+	religion=catholic
+	culture=corsican
+	trait="legendary"
+	father=8002111
+	1746.1.1={birth=yes}
+	1785.1.1={death=yes}
+}
+
+8002114={ 
+	name="Vitor-Emanuel"
+	dynasty=7534052
+	occluded=yes
+	religion=catholic
+	culture=piedmontese
+	trait="legendary"
+	trait="excommunicated"
+	1820.1.1={birth=yes}
+	1878.1.1={death=yes}
+}
+
+8002115={ 
+	name="Umbert"
+	dynasty=7534052
+	occluded=yes
+	religion=catholic
+	culture=piedmontese
+	trait="legendary"
+	father=8002114
+	1844.1.1={birth=yes}
+	1900.1.1={death=yes}
+}
+
+8002116={ 
+	name="Vittorio-Emanuele"
+	dynasty=7534052
+	occluded=yes
+	religion=catholic
+	culture=umbrian
+	trait="legendary"
+	father=8002115
+	1869.1.1={birth=yes}
+	1946.1.1={death=yes}
+}
+
+################
+
+8002050={ 
+	name="Francesco"
+	dynasty=7534035
+	religion=catholic
+	culture=umbrian
+	trait="celibate"
+	trait="shy"
+	trait="zealous"
+	give_nickname=nick_the_great
+	2279.5.19={birth=yes}
+	2322.11.29={death=yes}
+}
+
+8002051={ 
+	name="Ferdinando"
+	dynasty=7534035
+	religion=catholic
+	culture=umbrian
+	trait="celibate"
+	trait="shy"
+	trait="zealous"
+	give_nickname=nick_the_saint
+	father=8002050
+	2297.11.17={birth=yes}
+	2336.3.15={
+	   death={
+	      death_reason=death_health
+	   }
+	}
+	2584.1.1={
+	   add_trait="saint"
+	}
+}
+
+8002052={ 
+	name="Teodosio"
+	dynasty=7534035
+	religion=catholic
+	culture=umbrian
+	trait="wroth"
+	trait="gregarious"
+	trait="ambitious"
+	trait="strategist"
+	trait="honest"
+	father=8002050
+	2301.2.19={birth=yes}
+	2342.7.18={death=yes}
+}
+
+8002053={ 
+	name="Francesco"
+	dynasty=7534035
+	religion=catholic
+	culture=umbrian
+	trait="wroth"
+	trait="gregarious"
+	trait="ambitious"
+	trait="strategist"
+	trait="honest"
+	father=8002052
+	2338.5.22={birth=yes}
+	2360.7.18={
+	   death={
+	      death_reason=death_accident
+	   }
+	}
+}
+
+8002054={ 
+	name="Carlo"
+	dynasty=2029202 #Chigi
+	religion=catholic
+	culture=umbrian
+	trait="patient"
+	trait="honest"
+	trait="content"
+	trait="chaste"
+	trait="is_fat"
+	2294.6.22={birth=yes}
+	2363.1.28={death=yes}
+}
+
+8002055={ 
+	name="Paolo"
+	dynasty=7534035
+	religion=catholic
+	culture=umbrian
+	father=8002053
+	2360.10.14={birth=yes}
+	2388.1.28={
+	   death={
+	       death_reason=death_murder_secret
+		   killer=8002056
+	   }
+	}
+}
+
+8002056={ 
+	name="Gioacchino"
+	dynasty=7534035
+	religion=catholic
+	culture=umbrian
+	father=8002052
+	trait="deceitful"
+	trait="ambitious"
+	trait="drunkard"
+	trait="craven"
+	trait="shy"
+	2342.4.19={birth=yes}
+	2401.4.16={death=yes}
+}
+
+8002057={ 
+	name="Carlo"
+	dynasty=2029202 #Chigi
+	religion=catholic
+	culture=umbrian
+	trait="content"
+	trait="gregarious"
+	trait="administrator"
+	trait="kind"
+	trait="is_fat"
+	father=8002054
+	2339.7.14={birth=yes}
+	2363.12.14={
+	   death={
+	       death_reason=death_murder_secret
+		   killer=8002056
+	   }
+	}
+}
+
+8002058={ 
+	name="Francesco"
+	dynasty=7534035
+	religion=catholic
+	culture=umbrian
+	father=8002056
+	trait="ambitious"
+	trait="brave"
+	trait="poet"
+	trait="erudite"
+	trait="brilliant_strategist"
+	2368.8.15={birth=yes}
+	2390.11.18={
+	   death={
+	       death_reason=death_health
+	   } 
+	}
+}
+
+8002059={ 
+	name="Maddalena"
+	female=yes
+	dynasty=7534035
+	religion=catholic
+	culture=umbrian
+	father=8002058
+	trait="deceitful"
+	trait="cruel"
+	trait="ambitious"
+	trait="kinslayer"
+	2389.12.3={birth=yes}
+	2412.7.29={
+	   add_trait="nun"
+	}
+	2443.1.1={death=yes}
+}
+
+8002060={ 
+	name="Ferdinando"
+	dynasty=7534035
+	religion=catholic
+	culture=umbrian
+	father=8002055
+	trait="trusting"
+	trait="kind"
+	2387.5.26={birth=yes}
+	2408.8.10={
+	   add_spouse=8002059
+	}
+	2408.9.14={
+	   death={
+	       death_reason=death_murder
+		   killer=8002059
+	   } 
+	}
+}
+
+8002061={ 
+	name="Umberto"
+	dynasty=7534036
+	religion=catholic
+	culture=umbrian
+	trait="ambitious"
+	trait="erudite"
+	trait="patient"
+	trait="cancer"
+	2385.3.4={birth=yes}
+	2421.4.19={
+	   death={
+	       death_reason=death_trait
+	   } 
+	}
+}
+
+8002062={ 
+	name="Francesco"
+	dynasty=7534035
+	religion=catholic
+	culture=umbrian
+	father=8002058
+	trait="shy"
+	trait="chaste"
+	trait="humble"
+	trait="scholar"
+	trait="hunchback"
+	give_nickname=nick_the_hunchback
+	2392.9.19={birth=yes}
+	2451.10.9={death=yes}
+}
+
+8002063={ 
+	name="Salvatore"
+	dynasty=7534036
+	religion=catholic
+	culture=umbrian
+	father=8002061
+	trait="brilliant_strategist"
+	trait="proud"
+	trait="ambitious"
+	trait="duelist"
+	trait="patient"
+	2411.2.29={birth=yes}
+	2479.10.9={death=yes}
+}
+
+
+8002064={ 
+	name="Erased Emperor"
+	occluded=yes
+	dynasty=7534036
+	religion=catholic
+	culture=umbrian
+	father=8002063
+	trait="drunkard"
+	trait="cruel"
+	trait="gregarious"
+	trait="wroth"
+	2454.6.11={birth=yes}
+	2487.6.24={
+	   death={
+	      death_reason=death_murder_secret
+	   }
+	}
+}
+
+8002065={ 
+	name="Sabino"
+	dynasty=7534037
+	religion=catholic
+	culture=umbrian
+	trait="cruel"
+	trait="weak"
+	trait="erudite"
+	2410.9.16={birth=yes}
+	2490.1.14={
+	   death={
+	      death_reason=death_murder
+		  killer=8002066
+	   }
+	}
+}
+
+8002066={ 
+	name="Taddeo"
+	dynasty=7534038
+	religion=catholic
+	culture=umbrian
+	trait="tough_soldier"
+	trait="wroth"
+	trait="duelist"
+	trait="ambitious"
+	2472.12.20={birth=yes}
+	2491.9.29={
+	   death={
+	      death_reason=death_suicide
+	   }
+	}
+}
+
+8002067={ 
+	name="Leon"
+	dynasty=2034227
+	religion=catholic
+	culture=venetian
+	trait="gray_eminence"
+	trait="gregarious"
+	trait="quick"
+	trait="ambitious"
+	2461.4.2={birth=yes}
+	2498.12.4={
+	   death={
+	      death_reason=death_battle
+		  killer=1991100
+	   }
+	}
+}
+
+8002068={ 
+	name="Leon"
+	dynasty=2034227
+	religion=catholic
+	culture=umbrian
+	trait="slow"
+	trait="strong"
+	father=8002067
+	2472.12.20={birth=yes}
+	2499.12.5={
+	   death={
+	      death_reason=death_battle
+		  killer=8002069
+	   }
+	}
+}
+
+8002069={ 
+	name="Ivan"
+	dynasty=7534039
+	religion=catholic
+	culture=slovene
+	trait="ambitious"
+	trait="wroth"
+	trait="bastard"
+	trait="tough_soldier"
+	2472.12.20={birth=yes}
+	2492.1.1={
+	   add_spouse=8002070
+	}
+	2500.6.18={
+	   death={
+	      death_reason=death_murder_secret
+		  killer=8002070
+	   }
+	}
+}
+
+8002070={ 
+	name="Helena"
+	female=yes
+	religion=catholic
+	culture=slovene
+	trait="deceitful"
+	trait="cruel"
+	trait="ambitious"
+	trait="quick"
+	2473.3.14={birth=yes}
+	2500.8.2={
+	   death={
+	      death_reason=death_execution
+		  killer=8002072
+	   }
+	}
+}
+
+8002071={ 
+	name="Ivan"
+	dynasty=7534039
+	religion=catholic
+	culture=slovene
+	father=8002069
+	mother=8002069
+	2491.6.30={birth=yes}
+	2513.5.19={
+	   death={
+	      death_reason=death_accident
+	   }
+	}
+}
+
+8002072={ 
+	name="Nicodemo"
+	dynasty=7534040
+	religion=catholic
+	culture=umbrian
+	2475.3.14={birth=yes}
+	2510.4.14={
+	   death={
+	      death_reason=death_execution
+		  killer=8002071
+	   }
+	}
+}
+
+8002073={ 
+	name="Umberto"
+	dynasty=7534041
+	religion=catholic
+	culture=tuscan
+	2491.7.30={birth=yes}
+	2515.3.22={
+	   death={
+	      death_reason=death_battle
+		  killer=8002074
+	   }
+	}
+}
+
+8002074={ 
+	name="Gian"
+	dynasty=7534041
+	religion=catholic
+	culture=piedmontese
+	trait="tough_soldier"
+	trait="cruel"
+	trait="ambitious"
+	2482.8.14={birth=yes}
+	2516.6.2={
+	   death={
+	      death_reason=death_battle
+		  killer=8002075
+	   }
+	}
+}
+
+8002075={ 
+	name="Francesco"
+	dynasty=7534043
+	religion=catholic
+	culture=umbrian
+	trait="gray_eminence"
+	trait="shy"
+	trait="erudite"
+	trait="cancer"
+	2479.11.19={birth=yes}
+	2527.6.2={
+	   death={
+	      death_reason=death_trait
+	   }
+	}
+}
+
+8002076={ 
+	name="Francesco"
+	dynasty=7534043
+	religion=catholic
+	culture=umbrian
+	trait="tough_soldier"
+	trait="honest"
+	father=8002075
+	2499.11.19={birth=yes}
+	2528.6.2={
+	   death={
+	      death_reason=death_murder_secret
+		  killer=8002077
+	   }
+	}
+}
+
+8002077={ 
+	name="Paolo"
+	dynasty=7534038
+	religion=catholic
+	culture=umbrian
+	trait="deceitful"
+	trait="paranoid"
+	trait="lunatic"
+	father=8002066
+	trait="bastard"
+	2480.5.22={birth=yes}
+	2530.9.14={
+	   death={
+	      death_reason=death_suicide
+	   }
+	}
+}
+
+8002078={ 
+	name="Salvatore"
+	dynasty=7534038
+	religion=catholic
+	culture=umbrian
+	trait="deceitful"
+	trait="cruel"
+	father=8002066
+	trait="bastard"
+	2484.6.12={birth=yes}
+	2529.10.19={
+	   death={
+	      death_reason=death_battle_duel
+		  killer=8002079
+	   }
+	}
+}
+
+8002079={ 
+	name="Raffaele"
+	dynasty=7534038
+	religion=catholic
+	culture=umbrian
+	trait="strong"
+	trait="cruel"
+	trait="honest"
+	trait="brilliant_strategist"
+	father=8002077
+	2502.8.20={birth=yes}
+	2529.10.20={
+	   death={
+	      death_reason=death_accident
+	   }
+	}
+}
+
+8002080={ 
+	name="Raffaele"
+	dynasty=7534038
+	religion=catholic
+	culture=umbrian
+	father=8002079
+	trait="ill"
+	2528.12.29={birth=yes}
+	2535.7.16={
+	   death={
+	      death_reason=death_trait
+	   }
+	}
+}
+
+8002081={ 
+	name="Patrizio"
+	dynasty=7534038
+	religion=catholic
+	culture=umbrian
+	father=8002078
+	2504.6.18={birth=yes}
+	2533.10.18={
+	   death={
+	      death_reason=death_battle
+	   }
+	}
+}
+
+8002082={ 
+	name="Lipordo"
+	dynasty=2030082
+	religion=catholic
+	culture=neapolitan
+	trait="zealous"
+	trait="quick"
+	trait="honest"
+	trait="honorable"
+	trait="gregarious"
+	trait="erudite"
+	trait="patient"
+	give_nickname=nick_the_great
+	2510.6.18={birth=yes}
+	2551.9.22={
+	   death={
+	      death_reason=death_missing
+	   }
+	}
+}
+
+8002083={ 
+	name="Regency Council"
+	occluded=yes
+	religion=catholic
+	culture=umbrian
+	2551.9.22={birth=yes}
+	2555.5.5={
+	   death={
+	      death_reason=death_execution
+		  killer=8002084
+	   }
+	}
+}
+
+8002084={ 
+	name="Joann"
+	dynasty=7534044
+	religion=catholic
+	culture=lombard
+	trait="ambitious"
+	trait="drunkard"
+	trait="strategist"
+	2511.4.19={birth=yes}
+	2557.9.16={
+	   death={
+	      death_reason=death_drunkard
+	   }
+	}
+}
+
+8002085={ 
+	name="Carlo"
+	dynasty=7534044
+	religion=catholic
+	culture=lombard
+	trait="kind"
+	trait="zealous"
+	father=8002084
+	2540.4.19={birth=yes}
+	2557.10.19={
+	   death={
+	      death_reason=death_rabble
+	   }
+	}
+}
+
+8002086={ 
+	name="Tomas"
+	dynasty=7534044
+	religion=catholic
+	culture=lombard
+	father=8002084
+	2542.9.19={birth=yes}
+	2564.5.2={
+	   death={
+	      death_reason=death_murder
+	   }
+	}
+}
+
+8002087={ 
+	name="Tomas"
+	religion=catholic
+	culture=tuscan
+	2531.9.19={birth=yes}
+	2559.4.19={
+	   death={
+	      death_reason=death_battle
+		  killer=8002086
+	   }
+	}
+}
+
+8002088={ 
+	name="Ferdinando"
+	dynasty=7534045
+	religion=catholic
+	culture=umbrian
+	2508.11.22={birth=yes}
+	2570.2.3={
+	   death={
+	      death_reason=death_health
+	   }
+	}
+}
+
+8002089={ 
+	name="Umberto"
+	dynasty=7534045
+	religion=catholic
+	culture=umbrian
+	father=8002088
+	2540.3.12={birth=yes}
+	2575.9.19={
+	   death={
+	      death_reason=death_battle
+		  killer=8002090
+	   }
+	}
+}
+
+8002090={ 
+	name="Sabino"
+	dynasty=7534045
+	religion=catholic
+	culture=umbrian
+	trait="kinslayer"
+	trait="wroth"
+	trait="paranoid"
+	trait="posessed"
+	trait="cruel"
+	father=8002089
+	2543.4.6={birth=yes}
+	2578.11.29={
+	   death={
+	      death_reason=death_suicide
+	   }
+	}
+}
+
+8002091={ 
+	name="Zacobbe"
+	dynasty=7534049
+	religion=catholic
+	culture=sardinian
+	trait="bastard"
+	trait="cruel"
+	trait="one_eyed"
+	2535.8.12={birth=yes}
+	2581.4.22={
+	   death={
+	      death_reason=death_battle_duel
+		  killer=8002092
+	   }
+	}
+}
+
+8002092={ 
+	name="Poldo"
+	dynasty=2026172
+	religion=catholic
+	culture=piedmontese
+	trait="bastard"
+	trait="humble"
+	trait="content"
+	trait="zealous"
+	2549.4.22={birth=yes}
+	2584.4.22={
+	   death={
+	      death_reason=death_battle
+		  killer=8002094
+	   }
+	}
+}
+
+8002093={ 
+	name="Carlo"
+	dynasty=2026172
+	religion=catholic
+	culture=piedmontese
+	trait="humble"
+	trait="content"
+	trait="zealous"
+	trait="gregarious"
+	trait="kind"
+	trait="scholar"
+	father=8002092
+	2572.8.17={birth=yes}
+	2590.1.1={
+	   add_trait="monk"
+	}
+	2678.1.1={death=yes}
+}
+
+8002094={ 
+	name="Fabrisio"
+	dynasty=7534047
+	religion=catholic
+	culture=sardinian
+	trait="cruel"
+	trait="deceitful"
+	2538.11.12={birth=yes}
+	2589.4.20={
+	   death={
+	      death_reason=death_battle
+	   }
+	}
+}
+
+
+##########################################
+############# Polish Kingdom of Lazio ####
+##########################################
+
+8002141={ #Jan I, King of Lazio
+	name="Jan"
+	dynasty=7534089
+	culture=malopolan
+	religion=mariavite
+	trait="brilliant_strategist"
+	trait="cruel"
+	trait="zealous"
+	trait="ambitious"
+	trait="proud"
+	trait="chaste"
+	give_nickname=nick_the_usurper
+	father=8002148
+	2478.8.4={birth=yes}
+	2530.4.19={death=yes}
+}
+
+8002142={ #Jan II, King of Lazio
+	name="Jan"
+	dynasty=7534089
+	culture=malopolan
+	religion=mariavite
+	trait="erudite"
+	trait="shy"
+	father=8002141
+	2501.6.18={birth=yes}
+	2532.9.27={
+	   death={
+	      death_reason=death_murder
+	      killer=8002143
+	   }
+	}
+}
+
+8002143={
+	name="Aleksander"
+	dynasty=7534089
+	culture=malopolan
+	religion=mariavite
+	trait="cruel"
+	trait="ambitious"
+	trait="deceitful"
+	father=8002141
+	2504.9.22={birth=yes}
+	2532.9.27={
+	    add_trait="kinslayer"
+		add_trait="monk"
+		give_nickname=nick_the_kinslayer
+	} 
+	2540.9.14={death=yes}
+}
+
+8002144={
+	name="Tytus"
+	dynasty=7534089
+	culture=malopolan
+	religion=mariavite
+	trait="cynical"
+	trait="proud"
+	trait="honest"
+	trait="gregarious"
+	trait="greedy"
+	trait="cancer"
+	father=8002141
+	2507.11.9={birth=yes}
+	2544.9.14={
+		death={
+	      death_reason=death_trait
+	    }
+	}
+}
+
+8002145={
+	name="Jan"
+	dynasty=7534089
+	culture=malopolan
+	religion=mariavite
+	trait="ambitious"
+	trait="proud"
+	trait="tough_soldier"
+	trait="one_eyed"
+	father=8002144
+	2528.11.9={birth=yes}
+	2547.8.3={
+		death={
+	      death_reason=death_battle
+		  killer=8002082
+	    }
+	}
+}
+
+8002146={
+	name="Jakub"
+	dynasty=7534089
+	culture=malopolan
+	religion=mariavite
+	trait="honest"
+	trait="kind"
+	trait="zealous"
+	father=8002144
+	2532.12.6={birth=yes}
+	2547.9.14={
+	   religion="catholic"
+	}
+	2551.1.1={ #Enter to Benedictine Order
+	   add_trait="monk"
+	   add_trait="celibate"
+	}
+	2599.4.13={death=yes}
+}
+
+8002147={
+	name="Pawel"
+	dynasty=7534089
+	culture=malopolan
+	religion=mariavite
+	father=8002143
+	2525.12.6={birth=yes}
+	2539.7.16={
+	   death={
+	       death_reason=death_battle_duel
+		   killer=8002082
+	   }  
+	}
+}
+
+8002148={
+	name="Eugeniusz"
+	dynasty=7534089
+	culture=malopolan
+	religion=mariavite
+	trait="cynical"
+	trait="ambitious"
+	trait="deceitful"
+	trait="schemer"
+	trait="erudite"
+	2451.8.11={birth=yes}
+	2499.1.1={ #Joined to Monastery afer his son became mercenary
+	   add_trait="monk"
+	}
+	2508.7.13={
+	    name="Ioannes Paulus"
+	}
+	2514.11.27={death=yes}
+}
+
+8002149={
+	name="Jan Pawel"
+	culture=malopolan
+	religion=mariavite
+	2463.5.18={birth=yes}
+	2514.11.27={
+	    name="Victor"
+	}
+	2519.3.12={death=yes}
+}
+
+8002150={
+	name="Stefan"
+	dynasty=7534089
+	culture=malopolan
+	religion=mariavite
+	father=8002148
+	2480.5.8={birth=yes}
+	2500.1.1={
+	    add_trait="monk"
+	}
+	2519.3.12={
+	    name="Clemens"
+	}
+	2533.2.10={death=yes}
+}
+
+8002151={
+	name="Francesco"
+	culture=umbrian
+	religion=mariavite
+	2493.1.24={birth=yes}
+	2533.2.10={
+	    name="Victor"
+	}
+	2541.7.14={
+	   death={
+	       death_reason=death_murder_secret
+		   killer=8002152
+	   }
+	} 
+}
+
+8002152={
+	name="Patrizio"
+	culture=umbrian
+	religion=mariavite
+	trait="deceitful"
+	trait="ambitious"
+	2499.1.24={birth=yes}
+	2541.7.14={
+	    name="Victor"
+	}
+	2547.9.11={
+	   death={
+	       death_reason=death_suicide
+	   }
+	}
+}

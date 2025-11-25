@@ -380,7 +380,7 @@
 	name="Anri"
 	dynasty=2016220 #Vourc'h de la Rochejaquelein
 	culture=gallo
-	religion=sun_king_cultist
+	religion=constitutionalist
 	trait=skilled_tactician
 	trait=brave
 	trait=zealous
@@ -529,7 +529,7 @@
 	name="Maurice"
 	dynasty=2009221 #Ferry
 	culture=parisian
-	religion=jacobin
+	religion=constitutionalist
 	trait=zealous 
 	2605.8.19={birth=yes}
 	2680.1.1={death=yes}
@@ -3281,7 +3281,7 @@
 	name="Guy"
 	dynasty=2009234 #Roux
 	culture=parisian
-	religion=sun_king_cultist
+	religion=constitutionalist
 	diplomacy=1
 	martial=4
 	stewardship=5
@@ -3302,7 +3302,7 @@
 	female=yes
 	dynasty=2009235 #Lory
 	culture=parisian
-	religion=jacobin
+	religion=constitutionalist
 	diplomacy=3
 	martial=3
 	stewardship=2
@@ -3321,7 +3321,7 @@
 	name="François"
 	dynasty=2009234 #Roux
 	culture=parisian
-	religion=sun_king_cultist
+	religion=constitutionalist
 	diplomacy=3
 	martial=7
 	stewardship=5
@@ -3841,4 +3841,132 @@
 	give_nickname=nick_the_senan
 	2576.8.31={birth=yes}
 	2629.11.23={death=yes}
+}
+
+############Constitutionalist Pseudo-Popes
+
+1804234={
+	name="Adrian"
+	culture=parisian
+	religion=catholic
+	2448.5.11={birth=yes}
+	2498.4.12={
+	   name="Eugenius"
+	   religion=constitutionalist
+	}
+	2508.6.12={death=yes}
+}
+
+1804235={
+	name="Adrian"
+	culture=parisian
+	religion=jacobin
+	2468.4.19={birth=yes}
+	2508.6.12={
+	   name="Leo"
+	   religion=constitutionalist
+	}
+	2522.2.19={death=yes}
+}
+
+1804236={
+	name="Ada"
+	female=yes
+	culture=parisian
+	religion=constitutionalist
+	father=11804235
+	2494.7.11={birth=yes}
+	2522.2.19={
+	   name="Justa"
+	}
+	2558.3.11={death=yes}
+}
+
+1804237={
+	name="Pierre"
+	culture=parisian
+	religion=constitutionalist
+	2502.4.25={birth=yes}
+	2558.3.11={
+	   name="Maximilianus"
+	}
+	2564.8.15={death=yes}
+}
+
+1804238={
+	name="Damian"
+	culture=parisian
+	religion=constitutionalist
+	2530.11.28={birth=yes}
+	2564.8.15={
+	   name="Felix"
+	}
+	2569.12.28={
+	    death={
+		    death_reason=death_murder
+			killer=1804239
+		}
+	}
+}
+
+1804239={
+	name="Berenguela"
+	female=yes
+	culture=parisian
+	religion=constitutionalist
+	2534.12.16={birth=yes}
+	2569.12.28={
+	   name="Justa"
+	}
+	2581.9.4={death=yes}
+}
+
+1804240={
+	name="Teuric"
+	culture=occitan
+	religion=jacobin
+	2540.1.11={birth=yes}
+	2581.9.4={
+	   name="Martinus"
+	}
+	2610.7.29={death=yes}
+}
+
+1804241={
+	name="Abelard"
+	culture=occitan
+	religion=jacobin
+	2583.2.24={birth=yes}
+	2610.7.29={
+	   name="Xavierus"
+	}
+	2638.5.1={death=yes}
+}
+
+1804242={
+	name="Abelard"
+	culture=parisian
+	religion=constitutionalist
+	trait="deceitful"
+	trait="ambitious"
+	trait="deceitful"
+	trait="schemer"
+	2599.2.24={birth=yes}
+	2638.5.1={
+	   name="Ioannes Henricus"
+	}
+	2660.1.1={death=yes}
+}
+
+1804233={
+	name="Robert"
+	culture=parisian
+	religion=constitutionalist
+	trait=cynical
+	trait=drunkard
+	2624.11.16={birth=yes}
+	2662.9.14={
+	   name="Maximilianus"
+	}
+	2677.11.23={death=yes}
 }
