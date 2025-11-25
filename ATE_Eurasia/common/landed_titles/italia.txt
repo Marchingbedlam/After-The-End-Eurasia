@@ -1,22 +1,15 @@
 ###ÄNSI###
 
-e_italy = {
-	color={ 234 217 110 }
-	color2={ 255 255 255 }
-	
-	neapolitan = "Talia"
-	umbrian = "Italia"
-	tuscan = "Italia"
-	romagnol = "Itâglia"
-	arpitan = "Itali"
-	friulian = "Italie"
-	lombard = "Italia"
-	piedmontese = "Italià"
-	sicilian = "Italia"
-	sardinian = "Italia"
-	palatinate = "Idalje"
-	
+e_sanctum_imperium = {
+	color={ 181 89 80 }
+	color2={ 4 106 56 }
+
 	capital = 1117 # Rome
+	
+	title = "IMPERATOR"
+	title_female = "IMPERATOR_FEMALE"
+	
+	short_name = yes
 		
 	k_venetia = {
 		color={ 54 167 156 }

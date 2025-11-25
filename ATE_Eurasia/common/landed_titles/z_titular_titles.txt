@@ -298,6 +298,19 @@ e_india = {
 	}
 }
 
+e_roman_empire = {
+	color={ 189 0 0 }
+	color2={ 4 106 56 }
+
+	capital = 1117 # Rome
+
+	dignity = 100
+	
+	allow = {
+		always = no # Only created through special event
+	}
+}
+
 ### titular kingdoms ###
 
 k_benelux = {
@@ -457,6 +470,68 @@ k_sicilia = {
 	color2 = {255 255 255}
 	
 	capital = 1111 #Napoli
+	
+	allow = {
+		always = no # Only created through special event
+	}
+}
+k_sanctum_imperium = {
+	color={ 200 89 80 }
+	color2={ 4 106 56 }
+
+	capital = 1117 # Rome
+
+	dignity = 100
+	
+	title = "DEFENSOR_FIDEI"
+	title_female = "DEFENSOR_FIDEI_FEMALE"
+	
+	short_name = yes
+	
+	allow = {
+		always = no # Only created through special event
+	}
+}
+k_tuscany = {
+	color={ 222 186 25 }
+	color2={ 255 255 255 }
+			
+	capital = 1127 # Florence
+
+	rhenish="Toskana"
+	low_saxon="Toskana"
+	ossi="Toskana"
+	upper_saxon="Toskana"
+	bavarian="Tuskien"
+	swabian="Toskana"
+	austrian="Toskana"
+	luxembourger="Toskana"
+	schwyzer="Toskana"
+	neapolitan="Toscana"
+	umbrian="Toscana"
+	tuscan="Toscana"
+	sicilian="Tuscana"
+	venetian="Toscana"
+	romagnol="Tuschèna"
+	sardinian="Toscana"
+	friulian="Toscane"
+	ligurian="Toscann-a"
+	piedmontese="Toscan-a"
+	lombard="Toscana"
+	romansh="Toscana"
+	parisian="Toscane"
+	walloon="Toscane"
+	chti="Toscane"
+	arpitan="Toscâna"
+	occitan="Toscana"
+	provencal="Toscana"
+	palatinate="Toskana"
+		
+	title = "GRAND_DUKE"
+	title_female = "GRAND_DUKE_FEMALE"
+	title_prefix = GRAND_DUCHY_PREFIX
+	
+	dignity = 20 # Counted as having this many more counties than it does
 	
 	allow = {
 		always = no # Only created through special event
@@ -729,7 +804,7 @@ d_ossetia = {
 	dignity=10
 }
 k_kalmykia = {
-	color={ 229 186 57 }
+	color={ 114 188 144 }
 	color2={ 255 255 255 }
 		
 	capital = 898 #Elista
@@ -953,6 +1028,18 @@ d_epirus = {
 	greek = "Ípiros"
 	makedonian = "Ípiros"
 	
+	dignity = 10 # Counted as having this many more counties than it does
+	allow = {
+		always = no 
+	}
+}
+d_parma_piacenza_modena={
+	color={ 245 238 139 }
+	color2={ 255 255 255 }
+
+	capital = 1136 # Parma
+			
+				
 	dignity = 10 # Counted as having this many more counties than it does
 	allow = {
 		always = no 
