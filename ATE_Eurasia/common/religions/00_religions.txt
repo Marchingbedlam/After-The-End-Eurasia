@@ -1054,6 +1054,64 @@ christian = {
 		religious_clothing_priest = 1
 		#intermarry = catholic
 	}
+	constitutionalist = {
+		graphical_culture = westerngfx
+
+		icon = 41
+		heresy_icon = 42
+		
+		color = { 0.15 0.35 0.75 }
+		
+		interface_skin = { americanist_interface oldworld_interface }
+
+		crusade_name = LIBERATION_WAR
+		use_new_crusade = yes
+		crusade_cb = new_crusade
+		
+		scripture_name = THE_BIBLE
+		priest_title = PRIEST
+		
+		high_god_name = GOD_GOD
+		
+		parent = catholic
+		
+		god_names = {
+			GOD_GOD GOD_THE_LORD GOD_JESUS GOD_THE_BLESSED_VIRGIN GOD_MARIANNE GOD_LIBERTY GOD_EQUALITY GOD_FRATERNITY
+		}
+		
+		evil_god_names = {
+			SATAN LUCIFER LE_DIABLE GOD_TYRANNY GOD_THE_PERFIDIOUS
+		}
+		
+		allow_rivermovement = yes
+		feminist = yes
+		female_temple_holders = yes
+		priests_can_marry = yes
+		priests_can_inherit = yes
+		has_heir_designation = yes
+		investiture = yes
+		can_have_antipopes = no
+		can_excommunicate = no
+		can_grant_claim = no
+		can_call_crusade = no
+		can_retire_to_monastery = no
+		allow_rivermovement = yes
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+		intermarry = jacobin
+		intermarry = catholic
+		intermarry = penitant
+		intermarry = memento_mori
+		intermarry = neuhumanist
+		intermarry = lutheran
+		intermarry = calvinist
+		intermarry = free_church
+		intermarry = high_church
+		intermarry = valinorist
+		intermarry = glorian
+		intermarry = thelema
+	}
 	penitant = {
 		graphical_culture = westerngfx
 
@@ -3805,12 +3863,14 @@ old_world_cultist_group = {
 		priests_can_marry = yes
 		priests_can_inherit = yes
 		has_heir_designation = yes
+		can_call_crusade = yes
 		
 		religious_clothing_head = 11
 		religious_clothing_priest = 11
 		
 		intermarry = neuhumanist
 		intermarry = jacobin
+		intermarry = constitutionalist
 		
 		male_names = {
 			Agricola-jacobin 
