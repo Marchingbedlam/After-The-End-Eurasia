@@ -103,6 +103,38 @@ government_flavor = {
 		}
 	}
 }
+government_flavor = {
+	name = gov_roman_state
+	graphics = GFX_hre_triumph
+	priority = 5
+	trigger = {
+		government = italian_bureaucratic_government
+		OR = {
+		   has_landed_title = e_sanctum_imperium
+		   has_landed_title = k_sanctum_imperium
+		}
+	}
+}
+government_flavor = {
+	name = gov_roman_vassal
+	graphics = GFX_hre_remnant
+	priority = 5
+	trigger = {
+		government = italian_bureaucratic_government
+		NOT = {
+		   has_landed_title = e_sanctum_imperium
+		   has_landed_title = k_sanctum_imperium
+		}
+	}
+}
+government_flavor = {
+	name = gov_jacobin
+	graphics = GFX_evt_bastille_day
+	priority = 5
+	trigger = {
+		government = jacobin_government
+	}
+}
 #government_flavor = {
 #	name = gov_swaraj
 #	graphics = GFX_evt_yoga_meditation

@@ -47,6 +47,12 @@ feudal_governments = {
 					religion = jedinstvo
 				}
 			}
+			NOT = {
+			    OR = {
+				   	religion = jacobin
+					religion = constitutionalist
+				}
+			}
 			NAND = { #Is not a Tibetan Buddhist
 				culture_group = tibetan
 				religion_group = buddhist_group
@@ -59,6 +65,7 @@ feudal_governments = {
 			NOT = { is_government_potential = roman_imperial_government }
 			NOT = { is_government_potential = bureaucratic_government }
 			NOT = { is_government_potential = british_government }
+			NOT = { is_government_potential = italian_bureaucratic_government }
 			NOT = { is_government_potential = order_government }
 			NOT = { is_government_potential = cenobitic_government }
 			NOT = { is_government_potential = confederation_government }
@@ -173,6 +180,7 @@ feudal_governments = {
 			}
 			NOT = {	religion_group = muslim	}
 			NOT = { is_government_potential = roman_imperial_government }
+			NOT = { is_government_potential = italian_bureaucratic_government }
 			NOT = { is_government_potential = order_government }
 			OR = {
 				AND = { 
@@ -349,6 +357,7 @@ feudal_governments = {
 					}
 				}
 			}
+			NOT = { is_government_potential = italian_bureaucratic_government }
 			is_patrician = no
 		}
 		
@@ -695,6 +704,8 @@ feudal_governments = {
 			#has_law = succ_ghazi_elective
 			NOT = { is_government_potential = romanipen_government }
 			NOT = { is_government_potential = roman_imperial_government }
+			NOT = { is_government_potential = italian_bureaucratic_government }
+			NOT = { is_government_potential = british_government }
 			NOT = { is_government_potential = order_government }
 			#NOT = { is_government_potential = military_governorate }
 			#NOT = { is_government_potential = hetmanate_government }
@@ -973,6 +984,7 @@ feudal_governments = {
 				religion = glorian
 			}
 			is_patrician = no
+			NOT = { is_government_potential = italian_bureaucratic_government }
 		}
 
 		color = { 189 50 89 }
@@ -1000,6 +1012,74 @@ feudal_governments = {
 		character_modifier = {
 			diplomacy = 3
 			intrigue = 1
+		}
+	}
+	italian_bureaucratic_government = {
+		preferred_holdings = { CASTLE CITY }
+		allowed_holdings = { 
+			CASTLE
+			FORT
+			HOSPITAL
+		}
+		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
+			TRIBAL
+		}
+		free_revoke_on_tiers = {
+			duke
+		}
+		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
+			tribal_government
+			nomadic_tribal_government
+		}
+		frame_suffix = "_hre_imp"
+		title_prefix = "hre_"
+		potential = {
+			OR = {
+				primary_title = {
+					title = e_sanctum_imperium
+				}
+				primary_title = {
+					title = k_sanctum_imperium
+				}
+				top_liege = {
+					government = italian_bureaucratic_government
+					OR = {
+					tier = COUNT
+					tier = DUKE
+					tier = KING
+					tier = EMPEROR
+					}
+				}
+				has_government = italian_bureaucratic_government
+				de_jure_liege_or_above = e_sanctum_imperium
+			}
+			is_patrician = no
+		}
+
+		color = { 250 215 215 }
+
+		barons_need_dynasty = no
+		free_retract_vassalage = yes
+		marriage_ignore_religion = no
+
+		#No free levies in offensive war
+
+		can_build_tribal = no
+
+		can_imprison_without_reason = no
+		can_revoke_without_reason = no
+
+		ignore_in_vassal_limit_calculation = {
+			tribal_government
+		}
+		capital_move_delay = 200
+
+		## Modifiers
+		court_size_modifier = 10
+		commander_limit = 10
+		character_modifier = {
+			martial = 2
+			learning = 1
 		}
 	}
 #	swaraj_government = {
@@ -1107,6 +1187,66 @@ feudal_governments = {
 		free_retract_vassalage = yes
 
 		can_build_tribal = no
+		
+		ignore_in_vassal_limit_calculation = {
+			tribal_government
+			theocracy_government
+		}
+		capital_move_delay = 600
+		## Modifiers
+		court_size_modifier = 10
+	}
+	
+	jacobin_government = { 
+		preferred_holdings = { CASTLE }
+		allowed_holdings = { 
+			CASTLE 
+			CITY
+			FORT
+			HOSPITAL
+		}
+		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
+			TRIBAL
+		}
+		accepts_liege_governments = { # Gets the wrong religion modifier instead
+			bureaucratic_government
+			british_government
+			theocracy_government
+			feudal_government
+		}
+		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
+			tribal_government
+			nomadic_tribal_government
+		}
+		free_revoke_on_tiers = {
+		    count
+			baron
+			duke
+			king
+		}
+		frame_suffix = "_jacobin"
+		potential = {
+			OR = {
+				AND = {
+					OR = {	
+						religion = jacobin
+						religion = constitutionalist
+					}
+				}
+			}
+			NOT = { is_government_potential = roman_imperial_government }
+			NOT = { is_government_potential = order_government }
+			NOT = { is_government_potential = confederation_government }
+			is_patrician = no
+		}
+		
+		color = { 94 94 189 }
+		
+		uses_piety_for_law_change = yes
+		can_usurp_kingdoms_and_empires = no
+		can_grant_kingdoms_and_empires_to_other_government = no
+		can_be_granted_kingdoms_and_empires_by_other_government = no
+		free_retract_vassalage = yes
 		
 		ignore_in_vassal_limit_calculation = {
 			tribal_government
