@@ -1,0 +1,84 @@
+decisions = {
+	restore_hre = {
+		is_high_prio = yes
+		only_playable = yes
+		
+		potential = {
+			is_alternate_start = no
+			independent = yes
+			OR = {
+			    culture = umbrian
+				culture = venetian
+				culture = friulian
+				culture = romagnol
+				culture = lombard 
+				culture = piedmontese
+				culture = ligurian
+				culture = tuscan
+				culture = maltese
+				culture = neapolitan
+				culture = sicilian
+				culture = sardinian
+				culture = romansh
+				has_landed_title = k_sanctum_imperium
+			}
+			NOT = { tier = EMPEROR }
+			e_sanctum_imperium = {
+				has_holder = no
+			}
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			religion = catholic
+			NOT = { is_incapable = yes }
+			prestige = 1000
+			scaled_wealth = 1.0
+			war = no
+			primary_title = { lower_tier_than = KING }
+			custom_tooltip = {
+				text = hre_unify_italy_tooltip
+			    hidden_tooltip = {
+			  	    calc_true_if = {
+				      amount = 1
+			          completely_controls = k_alta_italia
+			          completely_controls = k_venice
+			          completely_controls = k_sardinia
+				      completely_controls = k_sicily
+					  completely_controls = k_naples
+					  completely_controls = k_centro
+			        }
+			    }
+			}
+		}
+		effect = {
+			activate_title = { title = e_sanctum_imperium status = yes }
+			primary_title = {
+				e_sanctum_imperium = {
+					grant_title = ROOT
+				}
+			}
+			scaled_wealth = -1.5
+			if = {
+				limit = { has_nickname = no }
+				give_nickname = nick_the_great
+			}
+			k_sanctum_imperium = {
+			    holder_scope = {
+			        set_defacto_liege = ROOT
+				}
+			}
+			k_sanctum_imperium = {
+				destroy_landed_title = THIS
+			}
+			activate_title = { title = k_sanctum_imperium status = no }
+			set_global_flag = hre_restored
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
