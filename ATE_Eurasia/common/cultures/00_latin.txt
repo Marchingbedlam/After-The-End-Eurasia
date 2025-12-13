@@ -332,7 +332,7 @@ latin = {
 			Sabiniano Sabino_Sabinus Sallustio Salvatore_Salvador Salvio Santo Saturnino Saverio_Xavier Scevola Scipione_Scipio Scribonio Sebastiano_Sebastian Sempronio Sergio_Sergius Servio_Servius Settimio_Septimus Severino_Severian Severo_Severus Silverio Silvestro_Sylvester Simmaco_Symmachus Simone_Simon Simplicio Siricio Sisinnio_Sisinnius Sisto_Sixtus Sotero Stauracio_Staurakios Stefano_Stephen Sulla Sulpiciano 
 			Tacito_Tacitus Taddeo_Thaddeus Tarpeio Tarquinio Telesforo Teodoro_Theodore Teodosio_Theodosius Terenzio_Terrence Terzo Tiberio_Tiberius Timoteo_Timothy Tito_Titus Tiziano Tommaso_Thomas Traiano_Trajan Tullio_Tullius 
 			Ugo_Hugh Ulisse_Odysseus Ulpio Umberto_Umberto Urbano_Urban Umbrio 
-			Valente_Valens Vittorio-Emanuele_Victor-Emmanuel Valentiniano Valentino_Valentine Valeriano_Valerian Valerio_Valerius Varo Vaticano Vespasiano_Vespasian Vigilio Vitellio Vincenzo_Vincent Virgilio_Virgil Vittore_Victor Vittorio_Victor Volusiano 
+			Valente_Valens Valentiniano Valentino_Valentine Valeriano_Valerian Valerio_Valerius Varo Vaticano Vespasiano_Vespasian Vigilio Vitellio Vincenzo_Vincent Virgilio_Virgil Vittore_Victor Vittorio_Victor Volusiano 
 			Zaccaria_Zachary Zefirino_Zephyrinus Zeno Zenone Zosimo 
 		}
 		female_names = {
@@ -507,7 +507,7 @@ latin = {
 			Ignassi_Ignatius 
 			Lissànder_Alexander Lois_Louis Lorens_Lawrence Luch_Luke Lucio_Lucius Ludvigh_Louis Luis_Louis Luss_Lucius 
 			March_Mark Mario_Marius Maté_Matthew Mauriss_Maurice Maurissi_Maurice Meco_Dominic Medeo_Amadeus Michel_Michael Milo_Camille Mò 
-			Nicolò_Nicholas Vitor-Emanuel_Victor-Emmanuel
+			Nicolò_Nicholas 
 			Odrigh Odon_Otto 
 			Pàul_Paul Pero_Peter 
 			Rafael_Raphael Rafé_Raphael Rens_Lawrence Ricard_Richard Robert Rof_Rudolf 
@@ -784,49 +784,5 @@ latin = {
 		pat_grm_name_chance = 20
 		mat_grm_name_chance = 40
 		mother_name_chance = 5
-	}
-	roman = {
-		graphical_cultures = { romangfx southerngfx trueoccitangfx occitangfx }
-		
-		color = { 0.8 0.2 0.2 }
-		
-		used_for_random = no
-		alternate_start = { has_alternate_start_parameter = { key = culture value = full_random } }
-
-		male_names = {
-			Aemilianus Aemilius Aetius Albinus Alexander_Alexander Anastasius_Anastasius Anicius Annius Antoninus Antonius_Antonius Arcadius Aurelianus Aurelius
-			Avitus Belisarius_Belisarius Britannicus Caecilius Caesar_Caesar Carinus Carus Cassius Claudius_Claudius Clementius Constans_Constans Constantinus_Constantine
-			Constantius_Constantius Cornelius_Cornelius Crassus Decimus Decius Diocletianus Domitianus Domitius Drusus Ennodius Fabianus Fabius Faustus Felix Flavianus Florianus
-			Gaius Galerius Gallienus Gallus Germanus_Germanus Gordianus Gracchus Gratianus Hadrianus_Adrian Herculius_Heracles Honorius Joannes_John Jovianus
-			Julianus_Julian Julius_Julius Julius-Caesar Junius Justinus_Justin Justinianus_Justinian Leo_Leo Leontius_Leontius Liberius Licinius Lucius Magnus_Magnus Marcellinus
-			Marcellus Marcianus Marcus_Marcus Marinus Marius Martinus Maximianus Maximinus Maximus_Maximus Nepotianus Nerva Numerianus Octavianus Octavius Otho
-			Paulinus Paulus_Paul Petronius Philippus_Philip Pompeius Pontianus Priscus Probus Publius Quintus Romanus_Roman Romulus Rufinus Rutilius Sabinianus
-			Saturninus Sempronius Septimius Sergius_Sergius Severinus Severus Sextus Symmachus_Symmachus Tacitus Theodosius_Theodosios Tiberius_Tiberius
-			Titius Titus Trajanus_Trajan Urbanus_Urban Valens Valentinianus Valerianus Valerius_Valerius Venantius Vespasianus Victor Victorinus Vigilius Vitalianus Volusianus
-		}
-		female_names = {
-			Aelia Agrippina Antonia_Antonia Antonina Aquilia Aurelia_Aurelia Caecilia Caesaris Candida Cassia Claudia_Claudia Clementia Constantia_Constantia
-			Constantina_Constantina Cornelia Crispina Dominica Domitiana Domna Domnina Drusilla Fausta Faustina Flacilla Flavia Fortunata Frontina Gaia Galeria
-			Gordiana Hadriana_Adriana Helvia Hilara Honoria Hortensia Julia_Julia Juliana_Juliana Junia Justa Justina_Justina Justiniana Licinia Livia Livilla Lucilla
-			Magnia Magnilla Marcella Marcia_Marcia Marciana Marina_Marine Martina_Martina Matrona Maxima Maximiana Messalina Minervina Minucia Modia Mustela
-			Octavia Palatina Paula_Paula Paulina_Paulina Petronella_Petronilla Petronia_Petronia Placidia Plautia Plautilla Pompeia Poppaea Praeiecta Publia Pulcheria_Pulcheria
-			Rusticiana Sabina Sallustia Salonina Salvianella Scantilla Serena Sergia Severa Severina Silvia_Silvia Spadusa Sulpicia Tarsilla Titiana Ulpia Valeria_Valeria
-			Verina Victoria Vigilantia Viviana_Viviana
-		}
-		from_dynasty_prefix = "of "
-
-		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
-		pat_grf_name_chance = 50
-		mat_grf_name_chance = 0
-		father_name_chance = 50
-		
-		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
-		pat_grm_name_chance = 50
-		mat_grm_name_chance = 50
-		mother_name_chance = 0
-		
-		disinherit_from_blinding = yes
-
-		modifier = default_culture_modifier
 	}
 }
