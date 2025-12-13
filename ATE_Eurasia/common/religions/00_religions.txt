@@ -720,7 +720,7 @@ pagan_group = {
 		intermarry = mariavite
 	}
 	nepmese = {
-		graphical_culture = norsegfx
+		graphical_culture = bongfx
 
 		icon = 32
 		heresy_icon = 34
@@ -1626,7 +1626,7 @@ christian = {
 		icon = 57
 		heresy_icon = 58
 		
-		color = { 0.5 0 0.5 }
+		color = { 140 56 140 }
 		
 		crusade_name = CRUSADE
 		scripture_name = THE_BIBLE
@@ -2780,7 +2780,7 @@ scholastic = {
 	}
 	
 	neuhumanist = {
-		graphical_culture = hellenicgfx
+		graphical_culture = westerngfx
 		secondary_event_pictures = westerngfx
 
 		icon = 88
@@ -3749,7 +3749,7 @@ old_world_cultist_group = {
 	interface_skin = { pagan_interface }
 	
 	jedinstvo = {
-		graphical_culture = pagangfx
+		graphical_culture = hellenicgfx
 
 		icon = 129
 		heresy_icon = 129

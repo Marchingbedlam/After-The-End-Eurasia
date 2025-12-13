@@ -195,7 +195,7 @@ objectTypes = {
 	### Hellenic shields (fallback to avoid them from using the pagan ones) ######################################################
 	EMFXActorType = {
 		name = "hellenicgfx_count_shield"
-		actorfile = "gfx\models\Shields\count_shield.xac"
+		actorfile = "gfx\models\Shields\Muslim_Tier_1.xac"
 		scale = 0.5f
 		use_animation = no
 		cull_distance = 550.0f
@@ -204,7 +204,7 @@ objectTypes = {
 	
 	EMFXActorType = {
 		name = "hellenicgfx_duke_shield"
-		actorfile = "gfx\models\Shields\duke_shield.xac"
+		actorfile = "gfx\models\Shields\Muslim_Tier_2.xac"
 		scale = 0.5f
 		use_animation = no
 		cull_distance = 550.0f
@@ -213,8 +213,8 @@ objectTypes = {
 	
 	EMFXActorType = {
 		name = "hellenicgfx_king_shield"
-		actorfile = "gfx\models\Shields\king_shield.xac"
-		scale = 0.5f
+		actorfile = "gfx\models\Shields\Muslim_Tier_3.xac"
+		scale = 0.4f
 		use_animation = no
 		cull_distance = 550.0f
 		scale_on_cull_distance = no
@@ -222,8 +222,8 @@ objectTypes = {
 	
 	EMFXActorType = {
 		name = "hellenicgfx_emperor_shield"
-		actorfile = "gfx\models\Shields\empire_shield.xac"
-		scale = 0.5f
+		actorfile = "gfx\models\Shields\Muslim_Tier_3.xac"
+		scale = 0.4f
 		use_animation = no
 		cull_distance = 550.0f
 		scale_on_cull_distance = no

@@ -1,7 +1,7 @@
 ###ÄNSI###
 
 e_yugoslavia = {
-	color={ 251 37 37 }
+	color={ 15 15 153 }
 	color2={ 255 255 255 }
 	capital = 1010 # Split I guess that while we have Yugoslavia ig we shouldn't use a historical capital of it
 	
@@ -19,7 +19,7 @@ e_yugoslavia = {
 		}
 	}
 	k_croatia = {
-		color={ 221 50 70 }
+		color={ 204 40 68 }
 		color2={ 255 255 255 }
 		capital = 1013 # Zagreb
 		
@@ -31,7 +31,7 @@ e_yugoslavia = {
 		dignity = 2 # Counted as having this many more counties than it does
 		
 		d_croatia = {
-			color={ 234 75 56 }
+			color={ 216 54 108 }
 			color2={ 255 255 255 }
 			
 			capital = 1005 # c_karlovac
@@ -40,7 +40,7 @@ e_yugoslavia = {
 			austrian = "Krowozien" 
 			
 			c_karlovac = {
-				color={ 214 98 75 }
+				color={ 204 51 101 }
 				color2={ 255 255 255 }
 				
 				b_karlovac = {}
@@ -53,7 +53,7 @@ e_yugoslavia = {
 				b_rakovica = {}
 			}
 			c_rijeka = {
-				color={ 175 64 41 }
+				color={ 178 44 89 }
 				color2={ 255 255 255 }
 				
 				b_rijeka = {}
@@ -65,7 +65,7 @@ e_yugoslavia = {
 				b_umag = {}
 			}
 			c_lika = {
-				color={ 196 84 46 }
+				color={ 229 57 114 }
 				color2={ 255 255 255 }
 				
 				b_gospic = {}
@@ -79,13 +79,13 @@ e_yugoslavia = {
 		}
 		
 		d_slavonia = {
-			color={ 234 95 156 }
+			color={ 216 75 75 }
 			color2={ 255 255 255 }
 			
 			capital = 1013 # Zagreb
 			
 			c_zagreb = {
-				color={ 230 90 150 }
+				color={ 229 80 80 }
 				color2={ 255 255 255 }
 				holy_site = jedinstvo
 				
@@ -99,7 +99,7 @@ e_yugoslavia = {
 			}
 			
 			c_varazdin = {
-				color={ 186 103 157 }
+				color={ 204 71 71 }
 				color2={ 255 255 255 }
 				
 				b_varazdin = {}
@@ -111,7 +111,7 @@ e_yugoslavia = {
 				b_ivanec = {}
 			}
 			c_bjelovar = {
-				color={ 180 100 132 }
+				color={ 255 89 89 }
 				color2={ 255 255 255 }
 				
 				b_bjelovar = {}
@@ -123,7 +123,7 @@ e_yugoslavia = {
 				b_garesnica = {}
 			}
 			c_brod = {
-				color={ 213 43 99 }
+				color={ 178 62 62 }
 				color2={ 255 255 255 }
 				
 				b_slavonski_brod = {}
@@ -135,7 +135,7 @@ e_yugoslavia = {
 				b_pakrac = {}
 			}
 			c_osijek_baranja = {
-				color={ 231 95 164 }
+				color={ 153 53 53 }
 				color2={ 255 255 255 }
 				
 				b_osijek = {}
@@ -149,13 +149,13 @@ e_yugoslavia = {
 		}
 		
 		d_dalmatia = {
-			color={ 134 50 176 }
+			color={ 163 32 54 }
 			color2={ 255 255 255 }
 			
 			capital = 1006 # Zadar
 			
 			c_zadar = {
-				color={ 241 49 171 }
+				color={ 178 35 71 }
 				color2={ 255 255 255 }
 				
 				b_zadar = {}
@@ -167,7 +167,7 @@ e_yugoslavia = {
 				b_vodice = {}
 			}
 			c_kvarnerska_ostrva = {
-				color={ 170 70 183 }
+				color={ 153 30 61 }
 				color2={ 255 255 255 }
 				
 				b_pag = {}
@@ -179,7 +179,7 @@ e_yugoslavia = {
 				b_cres = {}
 			}
 			c_split = {
-				color={ 135 44 150 }
+				color={ 204 40 81 }
 				color2={ 255 255 255 }
 				
 				b_split = {}
@@ -191,7 +191,7 @@ e_yugoslavia = {
 				b_vis = {}
 			}
 			c_dubrovnik = {
-				color={ 134 85 176 }
+				color={ 127 25 50 }
 				color2={ 255 255 255 }
 				
 				b_dubrovnik = {}
@@ -206,7 +206,7 @@ e_yugoslavia = {
 	}
 	
 	k_bosnia = {
-		color={ 30 70 220 }
+		color={ 23 158 97 }
 		color2={ 255 255 255 }
 		capital = 1395 # Sarajevo
 		
@@ -219,7 +219,7 @@ e_yugoslavia = {
 		austrian = "Bosnien" 
 		
 		d_krajina = {
-			color={ 51 76 249 }
+			color={ 38 191 114 }
 			color2={ 255 255 255 }
 			
 			capital = 1009 # Banja Luka
@@ -239,7 +239,7 @@ e_yugoslavia = {
 			}
 			
 			c_banja_luka = {
-				color={ 84 124 203 }
+				color={ 35 178 107 }
 				color2={ 255 255 255 }
 				
 				b_banja_luka = {}
@@ -251,7 +251,7 @@ e_yugoslavia = {
 				b_kozara = {}
 			}
 			c_livno = {
-				color={ 26 81 240 }
+				color={ 40 204 122 }
 				color2={ 255 255 255 }
 				
 				b_livno = {}
@@ -265,7 +265,7 @@ e_yugoslavia = {
 		}
 			
 		d_bosnia = {
-			color={ 50 76 170 }
+			color={ 12 127 89 }
 			color2={ 255 255 255 }
 			
 			capital = 1395 # Sarajevo
@@ -273,7 +273,7 @@ e_yugoslavia = {
 			bavarian = "Bosnien" 
 			austrian = "Bosnien" 
 			c_sarajevo = {
-				color={ 15 43 195 }
+				color={ 15 153 107 }
 				color2={ 255 255 255 }
 				holy_site = jedinstvo
 				
@@ -286,7 +286,7 @@ e_yugoslavia = {
 				b_rogatica = {}
 			}
 			c_zenica = {
-				color={ 52 40 254 }
+				color={ 10 102 71 }
 				color2={ 255 255 255 }
 				
 				b_zenica = {}
@@ -298,7 +298,7 @@ e_yugoslavia = {
 				b_zepce = {}
 			}
 			c_tuzla = {
-				color={ 29 98 182 }
+				color={ 17 178 124 }
 				color2={ 255 255 255 }
 				
 				b_tuzla = {}
@@ -310,7 +310,7 @@ e_yugoslavia = {
 				b_zvornik = {}
 			}
 			c_mostar = {
-				color={ 91 120 240 }
+				color={ 7 76 53 }
 				color2={ 255 255 255 }
 				holy_site = apparitionist
 				
@@ -331,7 +331,7 @@ e_yugoslavia = {
 	}
 	
 	k_slovenia = {
-		color={ 170 170 150 }
+		color={ 45 198 229 }
 		color2={ 180 120 50 }
 		capital = 1160 # Kranjska
 		
@@ -344,7 +344,7 @@ e_yugoslavia = {
 		austrian = "Slowenien" 
 		
 		d_slovenia = {
-			color={ 180 190 170 }
+			color={ 47 167 191 }
 			color2={ 255 255 255 }
 			capital = 1160
 
@@ -359,7 +359,7 @@ e_yugoslavia = {
 			schwyzer="Slowenien"
 			
 			c_ljubjana = {
-				color={ 206 187 196 }
+				color={ 51 178 204 }
 				color2={ 255 255 255 }
 
 				croatian="Kranjska"
@@ -482,7 +482,7 @@ e_yugoslavia = {
 			}
 			
 			c_novo_mesto = {
-				color={ 241 223 215 }
+				color={ 44 156 178 }
 				color2={ 255 255 255 }
 				
 				rhenish="Rudolfswerth"
@@ -513,7 +513,7 @@ e_yugoslavia = {
 			}
 			
 			c_maribor = {
-				color={ 201 241 216 }
+				color={ 57 200 229 }
 				color2={ 255 255 255 }
 				
 				rhenish="Marburg an der Drau"
@@ -572,7 +572,7 @@ e_yugoslavia = {
 			}
 			
 			c_gorizia = {
-				color={ 224 235 234 }
+				color={ 38 133 153 }
 				color2={ 255 255 255 }
 
 				slovene="Gorica"
@@ -694,7 +694,7 @@ e_yugoslavia = {
 	}
 	
 	k_serbia = {
-		color={ 213 218 216 }
+		color={ 60 53 153 }
 		color2={ 255 255 255 }
 		
 		capital = 1390 # c_belgrade
@@ -703,7 +703,7 @@ e_yugoslavia = {
 		austrian = "Serbien" 
 		
 		d_belgrade = {
-			color={ 223 254 226 }
+			color={ 40 40 114 }
 			color2={ 255 255 255 }
 			hungarian="Belgrád"
 			szekely="Belgrád"
@@ -711,7 +711,7 @@ e_yugoslavia = {
 			capital = 1390 # c_belgrade
 			
 			c_belgrade = { # 1390
-				color={ 183 244 231 }
+				color={ 44 44 127 }
 				color2={ 255 255 255 }
 				hungarian="Belgrád"
 				szekely="Belgrád"
@@ -735,7 +735,7 @@ e_yugoslavia = {
 				b_vozdovac = {}
 			}
 			c_machva = { # 1391
-				color={ 217 208 192 }
+				color={ 35 35 102 }
 				color2={ 255 255 255 }
 				hungarian="Macsó"
 				szekely="Macsó"
@@ -752,7 +752,7 @@ e_yugoslavia = {
 				b_gornji_milanovac = {}
 			}
 			c_raska = { # 1388
-				color={ 211 222 200 }
+				color={ 53 53 153 }
 				color2={ 255 255 255 }
 				
 				b_raska = {}
@@ -764,7 +764,7 @@ e_yugoslavia = {
 				b_tutin = {}
 			}
 			c_zlatibor = { # 1387
-				color={ 162 189 141 }
+				color={ 26 26 76 }
 				color2={ 255 255 255 }
 				
 				b_uzice = {}
@@ -780,13 +780,13 @@ e_yugoslavia = {
 			}
 		}
 		d_nis = {
-			color={ 214 249 247 }
+			color={ 74 53 178 }
 			color2={ 255 255 255 }
 			
 			capital = 1385 # c_nisava
 			
 			c_nisava = { # 1385
-				color={ 214 239 252 }
+				color={ 63 45 153 }
 				color2={ 255 255 255 }
 				
 				b_nis = {}
@@ -798,7 +798,7 @@ e_yugoslavia = {
 				b_sokobanja = {}
 			}
 			c_branichevo = { # 1389
-				color={ 191 188 158 }
+				color={ 85 61 204 }
 				color2={ 255 255 255 }
 				hungarian="Brancsó"
 				szekely="Brancsó"
@@ -812,7 +812,7 @@ e_yugoslavia = {
 				b_cuprija = {}
 			}
 			c_jablanica = { # 1386
-				color={ 209 168 181 }
+				color={ 53 38 127 }
 				color2={ 255 255 255 }
 				
 				b_leskovac = {}
@@ -825,7 +825,7 @@ e_yugoslavia = {
 			}
 		}
 		d_vojvodina = {
-			color={ 199 226 181 }
+			color={ 103 82 165 }
 			color2={ 255 255 255 }
 			hungarian="Vajdaság"
 			szekely="Vajdaság"
@@ -833,7 +833,7 @@ e_yugoslavia = {
 			capital = 1164 # c_bachka
 			
 			c_bachka = { # 1164
-				color={ 169 216 216 }
+				color={ 111 89 178 }
 				color2={ 255 255 255 }
 				hungarian="Bácska"
 				szekely="Bácska"
@@ -868,7 +868,7 @@ e_yugoslavia = {
 				}
 			}
 			c_banat = { # 1163
-				color={ 166 233 199 }
+				color={ 95 76 153 }
 				color2={ 255 255 255 }
 				hungarian="Torontál"
 				szekely="Torontál"

@@ -199,7 +199,7 @@ e_caucasia = {
 			}
 		}
 		d_shirvan = {
-			color={ 22 142 1536 }
+			color={ 22 142 136 }
 			color2={ 255 255 255 }
 			
 			capital = 1366 # c_lankaran
@@ -256,7 +256,7 @@ e_caucasia = {
 	}
 	
 	k_kuban = {
-		color={ 100 183 58 }
+		color={ 88 181 57 }
 		color2={ 255 255 255 }
 		
 		capital = 908 #Krasnodar
@@ -266,13 +266,13 @@ e_caucasia = {
 		georgian="Q'ubani"
 						
 		d_krasnodar = {
-			color={ 223 135 221 }
+			color={ 93 165 58 }
 			color2={ 255 255 255 }
 		
 			capital = 908 #Krasnodar
 			
 			c_krasnodar = {
-				color={ 165 86 217 }
+				color={ 101 178 62 }
 				color2={ 255 255 255 }
 				
 				b_krasnodar = {}
@@ -285,7 +285,7 @@ e_caucasia = {
 #				b_vyselki = {}
 			}
 			c_tikhoretsk = {
-				color={ 225 123 201 }
+				color={ 86 153 53 }
 				color2={ 255 255 255 }
 				
 				b_tikhoretsk = {}
@@ -297,7 +297,7 @@ e_caucasia = {
 				b_leningradskaya = {}
 			}
 			c_kropotkin = {
-				color={ 195 139 183 }
+				color={ 115 204 71 }
 				color2={ 255 255 255 }
 				
 				b_kropotkin = {}
@@ -309,7 +309,7 @@ e_caucasia = {
 				b_vostochnyi = {}
 			}
 			c_yeysk = {
-				color={ 187 141 241 }
+				color={ 72 127 44 }
 				color2={ 255 255 255 }
 				
 				b_yeysk = {}
@@ -322,13 +322,13 @@ e_caucasia = {
 			}
 		}
 		d_adygea = {
-			color={ 242 181 243 }
+			color={ 38 114 22 }
 			color2={ 255 255 255 }
 		
 			capital = 907 #Maykop
 			
 			c_armavir = {
-				color={ 201 158 235 }
+				color={ 42 127 25 }
 				color2={ 255 255 255 }
 				
 				holy_site = yazidi
@@ -342,7 +342,7 @@ e_caucasia = {
 				b_psebai = {}
 			}
 			c_maykop = {
-				color={ 165 124 205 }
+				color={ 34 102 20 }
 				color2={ 255 255 255 }
 				
 				b_maykop = {}
@@ -355,13 +355,13 @@ e_caucasia = {
 			}
 		}
 		d_chernomorye = {
-			color={ 185 95 181 }
+			color={ 128 216 65 }
 			color2={ 255 255 255 }
 		
 			capital = 604 #Novorossiysk
 			
 			c_novorossiysk = {
-				color={ 189 85 199 }
+				color={ 120 204 61 }
 				color2={ 255 255 255 }
 				
 				holy_site = kozachina
@@ -375,7 +375,7 @@ e_caucasia = {
 				b_dzhubga = {}
 			}
 			c_taman = {
-				color={ 213 50 226 }
+				color={ 135 229 68 }
 				color2={ 255 255 255 }
 				
 				b_anapa = {}
@@ -387,7 +387,7 @@ e_caucasia = {
 				b_sadki = {}
 			}
 			c_sochi = {
-				color={ 243 85 201 }
+				color={ 105 178 53 }
 				color2={ 255 255 255 }
 				
 				holy_site = nartist
@@ -562,7 +562,7 @@ e_caucasia = {
 		}
 	}
 	k_kavkaz = {
-		color={ 63 127 100 }
+		color={ 49 124 99 }
 		color2={ 255 255 255 }
 		
 		capital = 906 #Makhachkala
@@ -578,7 +578,7 @@ e_caucasia = {
 		kurdish="Qefqas"
 		
 		d_dagestan = {
-			color={ 220 195 181 }
+			color={ 49 165 117 }
 			color2={ 255 255 255 }
 		
 			capital = 906 #Makhachkala
@@ -600,7 +600,7 @@ e_caucasia = {
 			tat="Doghistu"
 			
 			c_makhachkala = {
-				color={ 198 200 135 }
+				color={ 45 153 108 }
 				color2={ 255 255 255 }
 				
 				azeri="Mahaçqala"
@@ -663,7 +663,7 @@ e_caucasia = {
 				b_semender = {}
 			}
 			c_derbent = {
-				color={ 154 152 121 }
+				color={ 53 178 126 }
 				color2={ 255 255 255 }
 				
 				azeri="Därbänd"
@@ -688,7 +688,7 @@ e_caucasia = {
 				b_akhty = {}
 			}
 			c_kizlyar = {
-				color={ 167 142 139 }
+				color={ 38 127 90 }
 				color2={ 255 255 255 }
 
 				azeri="Qizilyar"
@@ -717,7 +717,7 @@ e_caucasia = {
 				b_tsvetkovka = {}
 			}
 			c_nogay = {
-				color={ 224 133 139 }
+				color={ 61 204 144 }
 				color2={ 255 255 255 }
 
 				azeri="Noqay"
@@ -739,7 +739,7 @@ e_caucasia = {
 				b_leninaul = {}
 			}
 			c_levashi = {
-				color={ 138 116 41 }
+				color={ 30 102 72 }
 				color2={ 255 255 255 }
 
 				dargin="Lawasha"
@@ -754,7 +754,7 @@ e_caucasia = {
 				b_vachi = {}
 			}
 			c_khebda = {
-				color={ 155 113 86 }
+				color={ 68 229 162 }
 				color2={ 255 255 255 }
 
 				armenian="Xebda"
@@ -774,7 +774,7 @@ e_caucasia = {
 			}
 		}
 		d_chechnya = {
-			color={ 158 175 122 }
+			color={ 22 114 68 }
 			color2={ 255 255 255 }
 		
 			capital = 903 #Grozny
@@ -796,7 +796,7 @@ e_caucasia = {
 			kurdish="Çeçenistan"
 			
 			c_grozny = {
-				color={ 113 154 114 }
+				color={ 25 127 76 }
 				color2={ 255 255 255 }
 
 				azeri="Qrozni"
@@ -833,7 +833,7 @@ e_caucasia = {
 				b_tolstoy_yurt = {}
 			}
 			c_urus_martan = {
-				color={ 129 198 85 }
+				color={ 20 102 61 }
 				color2={ 255 255 255 }
 
 				nakh="Xalxa-Marta"
@@ -849,7 +849,7 @@ e_caucasia = {
 			}
 		}
 		d_kavkaz = {
-			color={ 158 162 99 }
+			color={ 76 191 162 }
 			color2={ 255 255 255 }
 		
 			capital = 914 #Vladikavkaz
@@ -865,7 +865,7 @@ e_caucasia = {
 			kurdish="Qefqas"
 			
 			c_ingushetia = {
-				color={ 151 149 87 }
+				color={ 71 178 151 }
 				color2={ 255 255 255 }
 
 				azeri="Inqushetiya"
@@ -891,7 +891,7 @@ e_caucasia = {
 				b_nesterovskaya = {}
 			}
 			c_vladikavkaz = {
-				color={ 164 188 82 }
+				color={ 81 204 173 }
 				color2={ 255 255 255 }
 
 				azeri="Vladiqafqaz"
@@ -923,7 +923,7 @@ e_caucasia = {
 				b_digora = {}
 			}
 			c_nalchik = {
-				color={ 135 123 79 }
+				color={ 61 153 130 }
 				color2={ 255 255 255 }
 
 				azeri="Nalçik"
@@ -956,7 +956,7 @@ e_caucasia = {
 				b_chegem = {}
 			}
 			c_cherkessk = {
-				color={ 125 159 125 }
+				color={ 91 229 195 }
 				color2={ 255 255 255 }
 
 				azeri="Çerkessk"
@@ -1309,7 +1309,7 @@ e_caucasia = {
 			}
 		}
 		d_imereti = {
-			color={ 143 34 61 }
+			color={ 114 34 61 }
 			color2={ 255 255 255 }
 			
 			capital = 2128 # c_imereti
