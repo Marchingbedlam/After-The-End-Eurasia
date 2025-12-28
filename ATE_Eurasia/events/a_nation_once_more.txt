@@ -129,6 +129,10 @@ narrative_event = {
 	desc = EVTDESC_lothc
 	picture = GFX_evt_bishop
 	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = coronite_crusades_unlocked
+	}
 	
 	option = {
 		name = EVTOPTA_lothc

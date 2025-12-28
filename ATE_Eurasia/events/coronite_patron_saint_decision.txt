@@ -17,19 +17,19 @@ character_event = {
 	option = {
 		name = "EVTOPTA_st_stephen"
 		add_character_modifier = { name = chosen_coronite_patron hidden = yes years = 3 }
-		add_character_modifier = { name = st_stephens_blessing years = 3 }
+		add_character_modifier = { name = st_stephens_blessing duration = -1 }
 		clr_character_flag = choosing_coronite_patron
 	}
 	option = {
 		name = "EVTOPTB_john_paul"
 		add_character_modifier = { name = chosen_coronite_patron hidden = yes years = 3 }
-		add_character_modifier = { name = st_john_pauls_blessing years = 3 }
+		add_character_modifier = { name = st_john_pauls_blessing duration = -1 }
 		clr_character_flag = choosing_coronite_patron
 	}
 	option = {
 		name = "EVTOPTC_blessed_virgin"
 		add_character_modifier = { name = chosen_coronite_patron hidden = yes years = 3 }
-		add_character_modifier = { name = blessed_virgins_blessing years = 3 }
+		add_character_modifier = { name = blessed_virgins_blessing duration = -1 }
 		clr_character_flag = choosing_coronite_patron
 	}
 	option = {
@@ -50,13 +50,13 @@ character_event = {
 	option = {
 		name = "EVTOPTA_st_ladislaus"
 		add_character_modifier = { name = chosen_coronite_patron hidden = yes years = 3 }
-		add_character_modifier = { name = st_ladislaus_blessing years = 3 }
+		add_character_modifier = { name = st_ladislaus_blessing duration = -1 }
 		clr_character_flag = choosing_coronite_patron
 	}
 	option = {
 		name = "EVTOPTB_st_zorard"
 		add_character_modifier = { name = chosen_coronite_patron hidden = yes years = 3 }
-		add_character_modifier = { name = st_zorards_blessing years = 3 }
+		add_character_modifier = { name = st_zorards_blessing duration = -1 }
 		clr_character_flag = choosing_coronite_patron
 	}
 	option = {

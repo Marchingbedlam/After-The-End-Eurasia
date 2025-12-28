@@ -87,6 +87,7 @@ e_visegrad = {
 				
 				holy_site = nepmese
 				holy_site = nepmese_reformed
+				holy_site = coronite
 				
 				b_varkeruelet = {}
 				b_szekesfehervar = {
@@ -215,6 +216,9 @@ e_visegrad = {
 			c_pest = { # 1170
 				color={ 234 64 129 }
 				color2={ 255 255 255 }
+
+
+				holy_site = coronite
 				
 				czech="Pešt"
 				moravian="Pešt"
@@ -344,6 +348,8 @@ e_visegrad = {
 				color={ 52 102 161 }
 				color2={ 255 255 255 }
 				
+				holy_site = coronite
+
 				rhenish="Komorn-Gran"
 				low_saxon="Komorn-Gran"
 				ossi="Komorn-Gran"
@@ -3753,6 +3759,8 @@ e_visegrad = {
 				color2={ 255 255 255 }
 				hungarian = "Pozsony"
 
+				holy_site = mariavite
+
 				b_bratislava = {
 					hungarian = "Pozsony"
 				}
@@ -3783,7 +3791,6 @@ e_visegrad = {
 				color={ 100 56 90 }
 				color2={ 255 255 255 }
 				hungarian = "Nyitra"
-				holy_site = mariavite
 
 				b_nitra = {
 					hungarian = "Nyitra"
@@ -5385,6 +5392,7 @@ e_visegrad = {
 				color={ 243 15 19 }
 				color2={ 255 255 255 }
 				holy_site = mariavite
+				holy_site = coronite
 
 				b_plock = {
 					pentarchy = mariavite

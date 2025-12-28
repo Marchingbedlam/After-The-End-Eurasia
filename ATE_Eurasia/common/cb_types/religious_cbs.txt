@@ -67,6 +67,13 @@ crusade = {
 						}
 					}
 					trigger_else_if = {
+						limit = { religion = coronite }
+						custom_tooltip = {
+							text = CTT_CORONITE_CRUSADES_UNLOCKED
+							has_global_flag = coronite_crusades_unlocked
+						}
+					}
+					trigger_else_if = {
 						limit = { religion_group = muslim }
 
 						custom_tooltip = {
