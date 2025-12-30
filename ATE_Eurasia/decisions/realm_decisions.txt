@@ -483,7 +483,7 @@ decisions = {
 					}
 				}
 			}
-			completely_controls = c_roma
+			completely_controls = c_rome
 			b_roma = {
 				custom_tooltip = {
 					text = mend_the_schism_holder_religion
@@ -557,7 +557,7 @@ decisions = {
 			}
 			any_realm_lord = { 
 				ai = yes
-				has_landed_title = c_roma 
+				has_landed_title = c_rome 
 			}
 			any_realm_lord = { 
 				ai = yes
@@ -566,7 +566,7 @@ decisions = {
 		}
 		allow = {
 			has_landed_title = e_roman_empire
-			any_realm_lord = { has_landed_title = c_roma }
+			any_realm_lord = { has_landed_title = c_rome }
 		}
 		effect = {
 			custom_tooltip = {

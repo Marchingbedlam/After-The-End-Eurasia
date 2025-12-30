@@ -48,7 +48,7 @@ character_event = {
 						OR = {
 							province_id = c_kent
 							province_id = c_koln
-							province_id = c_roma
+							province_id = c_rome
 							province_id = c_santiago
 						}
 					}
@@ -613,7 +613,7 @@ character_event = {
 
 						capital_scope = {
 							distance = {
-								where = c_roma
+								where = c_rome
 								value >= 400 # Longer journey
 							}
 						}

@@ -26,7 +26,7 @@ province_event = {
 		has_heresies = yes
 
 		NOR = {
-			province_id = c_roma
+			province_id = c_rome
 			province_id = c_thrake
 			province_id = c_mecca
 		}
@@ -644,7 +644,7 @@ province_event = {
 		owner = { is_heretic = no }
 
 		NOR = {
-			province_id = c_roma
+			province_id = c_rome
 			province_id = c_thrake
 			province_id = c_mecca
 		}
@@ -1253,7 +1253,7 @@ narrative_event = {
 					}
 				}
 
-				c_roma = {
+				c_rome = {
 					holder_scope = {
 						NOT = { religion_group = christian }
 					}
@@ -1379,7 +1379,7 @@ narrative_event = {
 					}
 				}
 
-				c_roma = {
+				c_rome = {
 					holder_scope = {
 						NOT = { religion_group = christian }
 					}
@@ -5736,7 +5736,7 @@ narrative_event = {
 	}
 }
 
-# THE START OF THE CHRISTIAN CRUSADES - 1090 AND JERUSALEM NOT CHRISTIAN
+# THE START OF THE CHRISTIAN CRUSADES - 2700 AND PARIS NOT CHRISTIAN
 narrative_event = {
 	id = 39660
 	title = EVTNAME39660
@@ -5756,7 +5756,7 @@ narrative_event = {
 
 	trigger = {
 		controls_religion = yes
-		year >= 1090
+		year >= 2700
 
 		NOR = {
 			has_alternate_start_parameter = {
@@ -5767,7 +5767,7 @@ narrative_event = {
 			has_global_flag = christian_crusades_unlocked
 		}
 
-		c_jerusalem = {
+		c_paris = {
 			holder_scope = {
 				top_liege = {
 					NOT = { religion_group = christian }
@@ -5798,100 +5798,6 @@ narrative_event = {
 	}
 }
 
-# THE START OF THE CHRISTIAN CRUSADES - BYZANTIUM FAILING
-narrative_event = {
-	id = 39661
-	title = EVTNAME39660
-	desc = EVTDESC39661
-	picture = GFX_evt_hagia_sofia
-	border = GFX_event_narrative_frame_religion
-
-	is_triggered_only = yes # on_yearly_pulse
-	major = yes
-	show_root = yes
-	hide_new = yes
-
-	only_playable = yes
-	religion = catholic
-	min_age = 16
-
-	trigger = {
-		controls_religion = yes
-		year >= 900
-
-		NOR = {
-			has_alternate_start_parameter = {
-				key = religion_names
-				value = random
-			}
-
-			has_global_flag = christian_crusades_unlocked
-		}
-
-		OR = {
-			e_byzantium = {
-				holder_scope = {
-					NOT = { religion_group = christian }
-				}
-			}
-
-			c_constantinopolis = {
-				holder_scope = {
-					top_liege = {
-						NOT = { religion_group = christian }
-					}
-				}
-			}
-
-			c_ancyra = {
-				holder_scope = {
-					top_liege = {
-						NOT = { religion_group = christian }
-					}
-				}
-			}
-
-			AND = {
-				c_atheniai = {
-					holder_scope = {
-						top_liege = {
-							NOT = { religion_group = christian }
-						}
-					}
-				}
-
-				c_korinthos = {
-					holder_scope = {
-						top_liege = {
-							NOT = { religion_group = christian }
-						}
-					}
-				}
-			}
-		}
-	}
-
-	major_trigger = {
-		ai = no
-	}
-
-	immediate = {
-		set_global_flag = christian_crusades_unlocked
-	}
-
-	option = {
-		name = {
-			text = EVTOPTA39660
-			trigger = { religion_group = christian }
-		}
-		name = {
-			text = EVTOPTB39660
-			trigger = {
-				NOT = { religion_group = christian }
-			}
-		}
-	}
-}
 
 # THE START OF THE CHRISTIAN CRUSADES - ROME HAS FALLEN
 narrative_event = {
@@ -5912,7 +5818,7 @@ narrative_event = {
 
 	trigger = {
 		controls_religion = yes
-		year >= 900
+		year >= 2666
 
 		NOR = {
 			has_alternate_start_parameter = {
@@ -5923,7 +5829,7 @@ narrative_event = {
 			has_global_flag = christian_crusades_unlocked
 		}
 
-		c_roma = {
+		c_rome = {
 			holder_scope= {
 				top_liege = {
 					OR = {
@@ -5976,7 +5882,7 @@ narrative_event = {
 
 	trigger = {
 		controls_religion = yes
-		year >= 900
+		year >= 2666
 
 		NOR = {
 			has_alternate_start_parameter = {
@@ -5988,7 +5894,7 @@ narrative_event = {
 		}
 
 		OR = {
-			c_provence = {
+			c_madrid = {
 				holder_scope = {
 					top_liege = {
 						NOT = { religion_group = christian }
@@ -6004,7 +5910,7 @@ narrative_event = {
 				}
 			}
 
-			c_paris = {
+			c_munich = {
 				holder_scope = {
 					top_liege = {
 						NOT = { religion_group = christian }
@@ -6012,7 +5918,7 @@ narrative_event = {
 				}
 			}
 
-			c_koln = {
+			c_plock = {
 				location = { religion_group = christian }
 
 				holder_scope = {
@@ -6022,7 +5928,7 @@ narrative_event = {
 				}
 			}
 
-			c_braunschweig = {
+			c_stuttgart = {
 				location = { religion_group = christian }
 
 				holder_scope = {
@@ -6052,7 +5958,7 @@ narrative_event = {
 	}
 }
 
-# THE START OF MUSLIM JIHADS - 1187 IF THERE IS STILL A CALIPH
+# THE START OF MUSLIM JIHADS - 2700 IF THERE IS STILL A CALIPH
 narrative_event = {
 	id = 39670
 	title = EVTNAME39670
@@ -6071,7 +5977,7 @@ narrative_event = {
 
 	trigger = {
 		controls_religion = yes
-		year >= 1187
+		year >= 2700
 
 		NOR = {
 			has_alternate_start_parameter = {
@@ -6105,7 +6011,7 @@ narrative_event = {
 	}
 }
 
-# THE START OF MUSLIM JIHADS - JERUSALEM HAS FALLEN
+# THE START OF MUSLIM JIHADS - CAIRO HAS FALLEN
 narrative_event = {
 	id = 39671
 	title = EVTNAME39670
@@ -6124,7 +6030,7 @@ narrative_event = {
 
 	trigger = {
 		controls_religion = yes
-		year >= 900
+		year >= 2666
 
 		NOR = {
 			has_alternate_start_parameter = {
@@ -6135,7 +6041,7 @@ narrative_event = {
 			has_global_flag = muslim_jihads_unlocked
 		}
 
-		c_jerusalem = {
+		c_al_qahirah = {
 			holder_scope = {
 				top_liege = {
 					NOT = { religion_group = muslim }
@@ -6185,7 +6091,7 @@ narrative_event = {
 
 	trigger = {
 		controls_religion = yes
-		year >= 900
+		year >= 2666
 
 		NOR = {
 			has_alternate_start_parameter = {
@@ -6246,7 +6152,7 @@ narrative_event = {
 
 	trigger = {
 		controls_religion = yes
-		year >= 900
+		year >= 2666
 
 		NOR = {
 			has_alternate_start_parameter = {
@@ -6261,7 +6167,10 @@ narrative_event = {
 			c_baghdad = {
 				holder_scope = {
 					top_liege = {
-						NOT = { religion_group = muslim }
+						NOR = { 
+							religion_group = muslim
+							religion = an_nahar
+						}
 					}
 				}
 			}
@@ -6269,94 +6178,21 @@ narrative_event = {
 			c_damascus = {
 				holder_scope = {
 					top_liege = {
-						NOT = { religion_group = muslim }
+						NOR = { 
+							religion_group = muslim
+							religion = an_nahar
+						}
 					}
 				}
 			}
 
-			c_cairo = {
+			c_istanbul = {
 				holder_scope = {
 					top_liege = {
-						NOT = { religion_group = muslim }
-					}
-				}
-			}
-		}
-	}
-
-	major_trigger = {
-		ai = no
-	}
-
-	immediate = {
-		set_global_flag = muslim_jihads_unlocked
-	}
-
-	option = {
-		name = {
-			text = EVTOPTA39670
-			trigger = { religion_group = muslim }
-		}
-		name = {
-			text = EVTOPTB39670
-			trigger = {
-				NOT = { religion_group = muslim }
-			}
-		}
-	}
-}
-
-# THE START OF MUSLIM JIHADS - AFRICA UNDER THREAT
-narrative_event = {
-	id = 39674
-	title = EVTNAME39670
-	desc = EVTDESC39674
-	picture = GFX_evt_desert
-	border = GFX_event_narrative_frame_religion
-
-	is_triggered_only = yes # on_yearly_pulse
-	major = yes
-	show_root = yes
-	hide_new = yes
-
-	only_playable = yes
-	religion_group = muslim
-	min_age = 16
-
-	trigger = {
-		controls_religion = yes
-		year >= 1000
-
-		NOT = {
-			has_alternate_start_parameter = {
-				key = religion_names
-				value = random
-			}
-
-			has_global_flag = muslim_jihads_unlocked
-		}
-
-		OR = {
-			c_marrakech = {
-				holder_scope = {
-					top_liege = {
-						NOT = { religion_group = muslim }
-					}
-				}
-			}
-
-			c_tunis = {
-				holder_scope = {
-					top_liege = {
-						NOT = { religion_group = muslim }
-					}
-				}
-			}
-
-			c_al_djazair = {
-				holder_scope = {
-					top_liege = {
-						NOT = { religion_group = muslim }
+						NOR = { 
+							religion_group = muslim
+							religion = an_nahar
+						}
 					}
 				}
 			}

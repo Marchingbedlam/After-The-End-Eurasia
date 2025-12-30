@@ -1735,7 +1735,7 @@ letter_event = {
 
 					religion = catholic
 
-					c_roma = {
+					c_rome = {
 						OR = {
 							holder_scope = {
 								character = FROM
@@ -3970,7 +3970,7 @@ letter_event = {
 		character_event = { id = HF.20300 } # Go to budget event
 
 		# First of all, if the Emperor has Rome, it is asked automatically as an additional gift
-		c_roma = {
+		c_rome = {
 			show_scope_change = no
 
 			if = {

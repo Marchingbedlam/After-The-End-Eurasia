@@ -32,7 +32,7 @@ decisions = {
 		allow = {
 			piety >= 1000
 
-			c_roma = {
+			c_rome = {
 				holder_scope = {
 					OR = {
 						character = ROOT
@@ -181,7 +181,7 @@ decisions = {
 				}
 			}
 
-			c_roma = {
+			c_rome = {
 				holder_scope = {
 					OR = {
 						character = ROOT
@@ -228,7 +228,7 @@ decisions = {
 
 				save_event_target_as = restored_pope
 
-				c_roma = {
+				c_rome = {
 					show_scope_change = no
 
 					grant_title = PREV
@@ -289,7 +289,7 @@ decisions = {
 
 			trigger = {
 				# AI will never take Rome province away from a player
-				c_roma = {
+				c_rome = {
 					holder_scope = {
 						NOR = {
 							ai = no

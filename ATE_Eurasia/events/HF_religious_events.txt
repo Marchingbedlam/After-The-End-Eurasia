@@ -3629,7 +3629,7 @@ narrative_event = {
 				}
 			}
 
-			c_roma = {
+			c_rome = {
 				location = {
 					if = { # If Rome is Christian, peasant revolt is inevitable
 						limit = { religion_group = christian }
@@ -4375,7 +4375,7 @@ narrative_event = {
 			piety = 750
 		}
 
-		c_roma = {
+		c_rome = {
 			show_scope_change = no
 
 			location = {
@@ -4391,7 +4391,7 @@ narrative_event = {
 		# Facilitate restoration for the AI by making it take over all owned holy sites
 		if = {
 			limit = {
-				c_roma = {
+				c_rome = {
 					location = {
 						top_liege = { character = FROM }
 
@@ -4413,7 +4413,7 @@ narrative_event = {
 			custom_tooltip = {
 				text = tooltip_rome_church_seized
 
-				c_roma = {
+				c_rome = {
 					location = {
 						random_province_holding = {
 							limit = {
@@ -5280,7 +5280,7 @@ character_event = {
 					held_under_PREV = yes
 
 					distance = {
-						where = c_roma
+						where = c_rome
 						distance < 300
 					}
 				}
@@ -5308,7 +5308,7 @@ character_event = {
 				}
 			}
 
-			c_roma = {
+			c_rome = {
 				location = {
 					province_event = {
 						id = HF.23121 # Embracing debauchery causes the Bacchants to reappear
