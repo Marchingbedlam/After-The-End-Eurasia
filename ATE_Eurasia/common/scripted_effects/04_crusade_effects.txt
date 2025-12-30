@@ -829,20 +829,11 @@ crusade_flavor_event_tombola_effect = {
 		# Guided by God or Alcohol
 		2 = {
 			trigger = {
-				NOR = {
-					has_character_flag = northern_crusade_flavor
+				NOT = {
 					has_character_flag = reconquista_flavor
 				}
-
+				
 				trigger_if = {
-					limit = { is_title_active = d_teutonic_order }
-					religion = d_teutonic_order
-				}
-				trigger_else_if = {
-					limit = { is_title_active = k_teutonic_state }
-					religion = k_teutonic_state
-				}
-				trigger_else_if = {
 					limit = { is_title_active = d_knights_templar }
 					religion = d_knights_templar
 				}

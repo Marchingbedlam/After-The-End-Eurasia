@@ -186,8 +186,8 @@ character_event = {
 			limit = {
 				OR = {
 					province_id = c_vestisland
-					province_id = c_west_connacht
-					province_id = c_innse_gall
+					province_id = c_mayo
+					province_id = c_outer_hebrides
 					province_id = c_cornwall
 					province_id = c_cornouaille
 					province_id = c_bordeaux
@@ -466,8 +466,8 @@ narrative_event = {
 				limit = {
 					OR = {
 						province_id = c_vestisland
-						province_id = c_west_connacht
-						province_id = c_innse_gall
+						province_id = c_mayo
+						province_id = c_outer_hebrides
 						province_id = c_cornwall
 					}
 				}
@@ -594,8 +594,8 @@ province_event = {
 			limit = {
 				OR = {
 					province_id = c_vestisland
-					province_id = c_west_connacht
-					province_id = c_innse_gall
+					province_id = c_mayo
+					province_id = c_outer_hebrides
 					province_id = c_cornwall
 					province_id = c_cornouaille
 					province_id = c_bordeaux
@@ -758,8 +758,8 @@ narrative_event = {
 				limit = {
 					OR = {
 						province_id = c_vestisland
-						province_id = c_west_connacht
-						province_id = c_innse_gall
+						province_id = c_mayo
+						province_id = c_outer_hebrides
 						province_id = c_cornwall
 					}
 				}
@@ -1368,7 +1368,7 @@ character_event = {
 	trigger = {
 		has_landed_title = e_aztec_empire
 		NOT = { has_global_flag = aztec_cairo }
-		completely_controls = c_cairo
+		completely_controls = c_al_qahirah
 	}
 
 	major_trigger = {

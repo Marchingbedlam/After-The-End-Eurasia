@@ -671,8 +671,6 @@ character_event = {
 							is_title_active = d_knights_templar
 							is_title_active = d_knights_hospitaller
 							is_title_active = d_holy_sepulchre
-							is_title_active = d_teutonic_order
-							is_title_active = k_teutonic_state
 						}
 					}
 					trigger_else_if = {
@@ -690,8 +688,6 @@ character_event = {
 							is_title_active = d_knights_templar
 							is_title_active = d_knights_hospitaller
 							is_title_active = d_holy_sepulchre
-							is_title_active = d_teutonic_order
-							is_title_active = k_teutonic_state
 						}
 					}
 					trigger_else_if = {
@@ -700,8 +696,6 @@ character_event = {
 						OR = {
 							is_title_active = d_knights_templar
 							is_title_active = d_knights_hospitaller
-							is_title_active = d_teutonic_order
-							is_title_active = k_teutonic_state
 						}
 					}
 					trigger_else_if = {
@@ -710,8 +704,6 @@ character_event = {
 						OR = {
 							is_title_active = d_knights_templar
 							is_title_active = d_knights_hospitaller
-							is_title_active = d_teutonic_order
-							is_title_active = k_teutonic_state
 						}
 					}
 					trigger_else_if = {
@@ -1280,35 +1272,6 @@ character_event = {
 
 					d_knights_templar = {
 						save_event_target_as = target_holy_order
-					}
-				}
-
-				1 = {
-					trigger = {
-						OR = {
-							is_title_active = d_teutonic_order
-							is_title_active = k_teutonic_state
-						}
-
-						OR = {
-							has_character_flag = pilgrimage_to_antioch
-							has_character_flag = pilgrimage_to_jerusalem
-							has_character_flag = pilgrimage_to_koln
-							has_character_flag = pilgrimage_to_rome
-						}
-					}
-
-					if = {
-						limit = { is_title_active = d_teutonic_order }
-
-						d_teutonic_order = {
-							save_event_target_as = target_holy_order
-						}
-					}
-					else = {
-						k_teutonic_state = {
-							save_event_target_as = target_holy_order
-						}
 					}
 				}
 

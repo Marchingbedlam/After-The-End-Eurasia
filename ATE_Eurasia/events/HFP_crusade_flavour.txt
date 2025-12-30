@@ -2389,32 +2389,6 @@ character_event = {
 
 			10 = {
 				trigger = {
-					is_title_active = d_teutonic_order
-					religion = d_teutonic_order
-				}
-
-				d_teutonic_order = {
-					holder_scope = {
-						save_event_target_as = decided_holy_order
-					}
-				}
-			}
-
-			10 = {
-				trigger = {
-					is_title_active = k_teutonic_state
-					religion = k_teutonic_state
-				}
-
-				k_teutonic_state = {
-					holder_scope = {
-						save_event_target_as = decided_holy_order
-					}
-				}
-			}
-
-			10 = {
-				trigger = {
 					is_title_active = d_livonian_order
 					religion = d_livonian_order
 				}

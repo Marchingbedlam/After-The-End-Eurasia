@@ -245,116 +245,6 @@ check_holy_order_donation_effect = {
 				}
 			}
 		}
-
-		if = { # Checking if it is a Duchy the Teutonics could be interested in
-			limit = {
-				# Duke tier
-				real_tier = DUKE
-
-				# Somewhere in the north
-				OR = {
-					region = world_europe_north
-					region = custom_eastern_baltic
-					region = custom_russia
-				}
-
-				# Checking that the Teutonics are active
-				is_title_active = d_teutonic_order
-				year >= 1150
-				NOT = { has_global_flag = teutons_asked_for_land }
-
-				d_teutonic_order = {
-					holder_scope = {
-						religion = ROOT # Checking that Root is the same religion as the Teutonics
-						is_landed = no # Checking that the Teutonics don't already have a Duchy
-
-						NOT = { # Checking that the Teutonics aren't already in a Northern Crusade
-							any_war = {
-								using_cb = northern_crusade_war
-							}
-						}
-					}
-				}
-
-				# Checking that ROOT owns the whole Duchy
-				ROOT = {
-					completely_controls = PREV
-					is_heretic = no
-					NOT = { has_character_flag = refused_to_give_land_to_teutonics }
-				}
-
-				# Checking that ROOT doesn't already own the associated Kingdom of that title
-				kingdom = {
-					trigger_if = {
-						limit = { has_holder = yes }
-						NOT = { holder = ROOT }
-					}
-				}
-
-				OR = {
-					# Is by water
-					any_direct_de_jure_vassal_title = {
-						location = {
-							is_coastal = yes
-						}
-
-						holder_scope = {
-							OR = {
-								character = FROM
-								is_vassal_or_below_of = FROM
-							}
-						}
-					}
-
-					# Is the neighbor to another Catholic realm
-					any_direct_de_jure_vassal_title = {
-						location = {
-							any_neighbor_province = {
-								OR = {
-									religion = ROOT
-
-									holder_scope = {
-										OR = {
-											religion = ROOT
-
-											any_liege = {
-												religion = ROOT
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-
-				# Is adjacent to infidels
-				any_direct_de_jure_vassal_title = {
-					location = {
-						any_neighbor_province = {
-							owner = {
-								OR = {
-									NOT = { religion_group = ROOT }
-
-									any_liege = {
-										NOT = { religion_group = ROOT }
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-
-			save_event_target_as = holy_order_potential_title
-
-			ROOT = {
-				letter_event = {
-					id = HFP.44006
-					days = 1
-				}
-			}
-		}
 	}
 }
 
@@ -468,20 +358,6 @@ setup_holy_order_religion_scopes = {
 		}
 
 		d_livonian_order = {
-			save_persistent_event_target = {
-				name = holy_order_religion
-				scope = catholic
-			}
-		}
-
-		d_teutonic_order = {
-			save_persistent_event_target = {
-				name = holy_order_religion
-				scope = catholic
-			}
-		}
-
-		k_teutonic_state = {
 			save_persistent_event_target = {
 				name = holy_order_religion
 				scope = catholic

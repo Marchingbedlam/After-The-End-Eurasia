@@ -1933,24 +1933,6 @@ narrative_event = {
 				}
 			}
 
-			d_teutonic_order = {
-				log = "Updated persistent holy order religion scope of the [This.GetFullName] to [From.GetName]"
-
-				save_persistent_event_target = {
-					name = holy_order_religion
-					scope = FROM
-				}
-			}
-
-			k_teutonic_state = {
-				log = "Updated persistent holy order religion scope of the [This.GetFullName] to [From.GetName]"
-
-				save_persistent_event_target = {
-					name = holy_order_religion
-					scope = FROM
-				}
-			}
-
 			d_knights_hospitaller = {
 				log = "Updated persistent holy order religion scope of the [This.GetFullName] to [From.GetName]"
 

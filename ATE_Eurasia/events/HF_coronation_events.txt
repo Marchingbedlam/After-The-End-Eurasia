@@ -867,8 +867,6 @@ letter_event = {
 					# Check if holy orders exist
 					OR = {
 						is_title_active = d_knights_templar
-						is_title_active = d_teutonic_order
-						is_title_active = k_teutonic_state
 						is_title_active = d_knights_hospitaller
 						is_title_active = d_knights_santiago
 						is_title_active = d_knights_calatrava
@@ -1964,8 +1962,6 @@ letter_event = {
 					# Check if holy orders exist
 					OR = {
 						is_title_active = d_knights_templar
-						is_title_active = d_teutonic_order
-						is_title_active = k_teutonic_state
 						is_title_active = d_knights_hospitaller
 						is_title_active = d_knights_santiago
 						is_title_active = d_knights_calatrava
@@ -2615,8 +2611,6 @@ letter_event = {
 
 				OR = {
 					has_landed_title = d_knights_templar
-					has_landed_title = d_teutonic_order
-					has_landed_title = k_teutonic_state
 					has_landed_title = d_knights_hospitaller
 					has_landed_title = d_knights_santiago
 					has_landed_title = d_knights_calatrava
@@ -4170,8 +4164,6 @@ letter_event = {
 
 				OR = {
 					has_landed_title = d_knights_templar
-					has_landed_title = d_teutonic_order
-					has_landed_title = k_teutonic_state
 					has_landed_title = d_knights_hospitaller
 					has_landed_title = d_knights_santiago
 					has_landed_title = d_knights_calatrava
@@ -4255,8 +4247,6 @@ letter_event = {
 
 					OR = {
 						has_landed_title = d_knights_templar
-						has_landed_title = d_teutonic_order
-						has_landed_title = k_teutonic_state
 						has_landed_title = d_knights_hospitaller
 						has_landed_title = d_knights_santiago
 						has_landed_title = d_knights_calatrava

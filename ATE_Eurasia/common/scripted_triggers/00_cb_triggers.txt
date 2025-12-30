@@ -23,10 +23,6 @@ can_attack_holy_order_trigger = {
 			PREV = { has_character_modifier = expelled_d_knights_hospitaller }
 		}
 		trigger_else_if = {
-			limit = { primary_title = { title = d_teutonic_order } }
-			PREV = { has_character_modifier = expelled_d_teutonic_order }
-		}
-		trigger_else_if = {
 			limit = { primary_title = { title = d_jomsvikings } }
 			PREV = { has_character_modifier = expelled_d_jomsvikings }
 		}
@@ -45,10 +41,6 @@ can_attack_holy_order_trigger = {
 		trigger_else_if = {
 			limit = { primary_title = { title = d_holy_sepulchre } }
 			PREV = { has_character_modifier = expelled_d_holy_sepulchre }
-		}
-		trigger_else_if = {
-			limit = { primary_title = { title = d_saint_anthony } }
-			PREV = { has_character_modifier = expelled_d_saint_anthony }
 		}
 		trigger_else_if = {
 			limit = { primary_title = { title = d_immortals } }
@@ -89,10 +81,6 @@ can_attack_holy_order_trigger = {
 		trigger_else_if = {
 			limit = { primary_title = { title = d_knights_calatrava } }
 			PREV = { has_character_modifier = expelled_d_knights_calatrava }
-		}
-		trigger_else_if = {
-			limit = { primary_title = { title = d_saint_addai } }
-			PREV = { has_character_modifier = expelled_d_saint_addai }
 		}
 		trigger_else = {
 			primary_title = { title = d_zun_warriors }

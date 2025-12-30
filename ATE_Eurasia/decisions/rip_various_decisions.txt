@@ -645,15 +645,6 @@ targeted_decisions = {
 			holy_order = yes
 			religion = FROM
 			is_adult = yes
-
-			NOR = {
-				has_landed_title = k_teutonic_state
-
-				AND = {
-					has_landed_title = d_teutonic_order
-					has_global_flag = northern_crusades_active
-				}
-			}
 		}
 
 		allow = {

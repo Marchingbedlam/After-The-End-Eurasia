@@ -618,74 +618,6 @@ narrative_event = {
 		}
 
 		activate_title = {
-			title = d_teutonic_order
-			status = yes
-		}
-
-		create_random_soldier = {
-			dynasty = none
-			random_traits = yes
-			religion = catholic
-		}
-
-		new_character = {
-			grant_title = d_teutonic_order
-			set_government_type = order_government
-		}
-
-		activate_title = {
-			title = d_saint_anthony
-			status = yes
-		}
-
-		create_character = {
-			random_traits = no
-			dynasty = random
-			religion = miaphysite
-			culture = ethiopian
-			female = no
-			age = 31
-			add_trait = brilliant_strategist
-			add_trait = zealous
-			add_trait = humble
-			add_trait = ambitious
-			add_trait = strategist
-			add_trait = holy_warrior
-		}
-
-		new_character = {
-			wealth = 500
-			grant_title = d_saint_anthony
-			set_government_type = order_government
-		}
-
-		activate_title = {
-			title = d_saint_addai
-			status = yes
-		}
-
-		create_character = {
-			random_traits = no
-			dynasty = random
-			religion = nestorian
-			culture = assyrian
-			female = no
-			age = 31
-			add_trait = brilliant_strategist
-			add_trait = zealous
-			add_trait = humble
-			add_trait = ambitious
-			add_trait = strategist
-			add_trait = holy_warrior
-		}
-
-		new_character = {
-			wealth = 500
-			grant_title = d_saint_addai
-			set_government_type = order_government
-		}
-
-		activate_title = {
 			title = d_bektashi
 			status = yes
 		}
@@ -949,16 +881,6 @@ character_event = {
 				adjective = ALT_HO_LOCATION_ADJ
 			}
 
-			d_teutonic_order = {
-				holder_scope = {
-					save_event_target_as = renaming_target
-				}
-
-				set_random_coa_effect = yes
-				set_name = ALT_HO_LOCATION
-				adjective = ALT_HO_LOCATION_ADJ
-			}
-
 			d_livonian_order = {
 				holder_scope = {
 					save_event_target_as = renaming_target
@@ -1028,16 +950,6 @@ character_event = {
 			d_miaphysite = {
 				set_random_coa_effect = yes
 			}
-
-			d_saint_anthony = {
-				holder_scope = {
-					save_event_target_as = renaming_target
-				}
-
-				set_random_coa_effect = yes
-				set_name = ALT_HO_LOCATION
-				adjective = ALT_HO_LOCATION_ADJ
-			}
 		}
 
 		if = {
@@ -1052,16 +964,6 @@ character_event = {
 
 			d_nestorian = {
 				set_random_coa_effect = yes
-			}
-
-			d_saint_addai = {
-				holder_scope = {
-					save_event_target_as = renaming_target
-				}
-
-				set_random_coa_effect = yes
-				set_name = ALT_HO_LOCATION
-				adjective = ALT_HO_LOCATION_ADJ
 			}
 		}
 
