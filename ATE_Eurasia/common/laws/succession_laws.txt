@@ -1458,10 +1458,10 @@ succession_laws = {
 		potential = {
 			OR ={
 				title = k_papal_state
-				#title = k_glorian
+				title = d_glorian
+				title = d_pravoslavie
 				#title = d_ivri
 				#title = d_shiite
-				#title = k_pravoslavie
 				#title = d_esztergom_primacy
 			}
 		}
@@ -1506,11 +1506,9 @@ succession_laws = {
 			}
 			NOR = { 
 				title = k_papal_state
-				#title = k_glorian
 				#title = d_ivri
 				#title = d_shiite
 				title = d_nizari
-				#title = k_pravoslavie
 				#title = d_esztergom_primacy
 			}
 			temporary = no
