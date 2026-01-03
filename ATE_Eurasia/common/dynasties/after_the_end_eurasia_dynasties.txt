@@ -50645,4 +50645,118 @@ coat_of_arms = {
 7534098 = { name = "de Gaulle" culture = parisian religion = jacobin used_for_random = no }
 7534099 = { name = "Przemyslid" culture = czech used_for_random = no }
 7534100 = { name = "z Podebrad" culture = czech used_for_random = no }
-7534101 = { name = "Jagiellon" culture = polish used_for_random = no }
+7534101 = { name = "Jagiellon" culture = polish used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 77
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7534102 = { name = "Pilsudski" culture = polish used_for_random = no }
+7534103 = { name = "Dyzma" culture = polish used_for_random = no }
+7534104 = { name = "Narutowicz" culture = polish used_for_random = no }
+7534105 = { name = "Sikorski" culture = polish used_for_random = no }
+7534106 = { name = "ar Grenier" culture = breton used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 68
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7534107 = { 
+    name = "Howard" culture = southerner used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 68
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+
+7534108 = { name = "Boleyn" culture = breton used_for_random = no }
+7534109 = { name = "Parr" culture = breton used_for_random = no}
+7534110 = { name = "Wokulski" culture = mazovian used_for_random = no}
+7534111 = { name = "Mindaugas" culture = lithuanian used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 77
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7534112 = { 
+    name = "Giedyminovièius" 
+	culture = lithuanian 
+	used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 77
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7534113 = { name = "Báthory" culture = hungarian used_for_random = no }
+7534114 = { name = "Vasa" culture = swedish used_for_random = no }
+7534115 = { name = "Sobieski" culture = polish used_for_random = no }
+7534116 = { name = "Poniatowski" culture = polish used_for_random = no }
+7534117 = { name = "d’Anjou" culture = french used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 54
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7534118 = { name = "Piast" culture = polish used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 78
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7534119 = { name = "Hunyadi" culture = hungarian used_for_random = no }

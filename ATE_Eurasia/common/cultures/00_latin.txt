@@ -785,4 +785,29 @@ latin = {
 		mat_grm_name_chance = 40
 		mother_name_chance = 5
 	}
+	
+	roman = {
+		graphical_cultures = { italiangfx southerngfx westerngfx }
+		
+		color = { 0.90 0.85 0.75 }
+
+		male_names = {
+		}
+		female_names = {
+		}
+		from_dynasty_prefix = "cum "
+		
+		used_for_random = no
+		allow_in_ruler_designer = no
+
+		modifier = default_culture_modifier
+
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 10
+		father_name_chance = 25
+		
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
 }

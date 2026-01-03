@@ -3970,3 +3970,49 @@
 	}
 	2677.11.23={death=yes}
 }
+
+1804271={
+	name="Frederig"
+	dynasty=7534106 #ar Grenier
+	culture=gallo
+	religion=jacobin
+	trait="thrifty_clerk"
+	trait="administrator"
+	trait="wroth"
+	trait="temperate"
+	trait="gregarious"
+	trait="honest"
+	trait="just"
+	trait="stubborn"
+	trait="patron_la_sociale"
+	diplomacy=5
+	martial=5
+	stewardship=10
+	intrigue=2
+	learning=8
+	2622.11.26={birth=yes}
+	2659.1.1={
+	    add_spouse=1804272
+	}
+	2700.1.1={death=yes}
+}
+
+1804272={
+	name="Oreli"
+	female=yes
+	culture=gallo
+	religion=jacobin
+	2631.7.14={birth=yes}
+	2700.1.1={death=yes}
+}
+
+1804273={
+	name="Frederig"
+	dynasty=7534106 #ar Grenier
+	culture=gallo
+	religion=jacobin
+	father=1804271
+	mother=1804272
+	2663.3.2={birth=yes}
+	2700.1.1={death=yes}
+}
