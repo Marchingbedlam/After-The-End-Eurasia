@@ -1,0 +1,493 @@
+namespace = pravoslavie
+
+character_event = {
+	id = pravoslavie.1
+	desc = EVTDESC_pravoslavie.1
+	picture = GFX_evt_russian_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_pravoslavie.1
+		piety = 20
+		character_event = { id = pravoslavie.2 days = 7 }
+	}
+	
+	option = { #It isn't for me
+		name = EVTOPTB_pravoslavie.1
+		ai_chance = { factor = 0 }
+		piety = -20
+	}
+}
+
+character_event = {
+	id = pravoslavie.2
+	desc = EVTDESC_pravoslavie.2
+	picture = GFX_evt_russian_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = { #Moscow or Kyiv
+		name = EVTOPTA_pravoslavie.2
+		trigger = {
+		   NOT = {
+				capital_scope = { province_id = c_moskva }
+				capital_scope = { province_id = c_kyiv }
+		   }
+		}
+		ai_chance = { factor = 35 }
+		character_event = { id = pravoslavie.3 }
+	}
+	
+	option = { #Go to Kyiv
+		name = EVTOPTB_pravoslavie.2
+		trigger = {
+		   NOT = {
+				capital_scope = { province_id = c_kyiv }
+		   }
+		   capital_scope = { province_id = c_moskva }
+		}
+		ai_chance = { factor = 35 }
+		character_event = { id = pravoslavie.6 }
+	}
+	
+	option = { #Go to Moscow
+		name = EVTOPTC_pravoslavie.2
+		trigger = {
+		   NOT = {
+				capital_scope = { province_id = c_moskva }
+		   }
+		   capital_scope = { province_id = c_kyiv }
+		}
+		ai_chance = { factor = 45 }
+		character_event = { id = pravoslavie.4 }
+	}
+	
+	option = { #Other Holy Place - Petrograd, Sevastopol, Kaliningrad
+		name = EVTOPTD_pravoslavie.2
+		ai_chance = { factor = 50 }
+		character_event = { id = pravoslavie.15 }
+	}
+	
+	option = { #Go to saint grave
+		name = EVTOPTE_pravoslavie.2
+		ai_chance = { factor = 5 }
+		character_event_event = { id = HF.41300 }
+	}
+}
+
+character_event = { #Moscow or Kyiv
+	id = pravoslavie.3
+	desc = EVTDESC_pravoslavie.3
+	picture = GFX_evt_russian_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = { #Moscow
+		name = EVTOPTA_pravoslavie.3
+	}
+	
+	option = { #It isn't for me
+		name = EVTOPTB_pravoslavie.3
+	}
+}
+
+character_event = { #Go to Moscow
+	id = pravoslavie.4
+	desc = EVTDESC_pravoslavie.4
+	picture = GFX_evt_russian_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_pravoslavie.4
+		hidden_tooltip = {
+			add_trait = on_pilgrimage
+			set_character_flag = good_pilgrimage
+			narrative_event = { id = pravoslavie.5 days = 30 }
+			if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_MOSCOW
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		    }
+		}
+		hidden_tooltip = {
+			random_list = {
+				10 = { character_event = { id = SoA.5031 days = 9 random = 10 } } # List that is always checked
+				10 = { character_event = { id = SoA.5032 days = 9 random = 10 } }
+				10 = { narrative_event = { id = SoA.5033 days = 9 random = 10 } }
+				10 = { character_event = { id = SoA.5034 days = 10 random = 10 } }
+				10 = { character_event = { id = SoA.5035 days = 8 random = 10 } }
+				10 = { character_event = { id = SoA.5036 days = 9 random = 10 } }
+				10 = { character_event = { id = SoA.5037 days = 10 random = 10 } }
+				10 = { character_event = { id = SoA.5038 days = 10 random = 10 } }
+				10 = { character_event = { id = SoA.5039 days = 8 random = 10 } }
+			}
+			random_list = {
+				10 = { character_event = { id = SoA.5031 days = 20 random = 10 } } # List that is always checked
+				10 = { character_event = { id = SoA.5032 days = 21 random = 10 } }
+				10 = { narrative_event = { id = SoA.5033 days = 20 random = 10 } }
+				10 = { character_event = { id = SoA.5034 days = 20 random = 10 } }
+				10 = { character_event = { id = SoA.5035 days = 19 random = 10 } }
+				10 = { character_event = { id = SoA.5036 days = 22 random = 10 } }
+				10 = { character_event = { id = SoA.5037 days = 21 random = 10 } }
+				10 = { character_event = { id = SoA.5038 days = 23 random = 10 } }
+				10 = { character_event = { id = SoA.5039 days = 20 random = 10 } }
+			}
+		}
+	}
+}
+
+narrative_event = { #Welcome in Moscow
+	id = pravoslavie.5
+	title = EVTNAME_pravoslavie.5
+	desc = EVTDESC_pravoslavie.5
+	picture = GFX_evt_moscow
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_pravoslavie.5
+		hidden_tooltip = { character_event = { id = pravoslavie.8 } }
+		hidden_tooltip = { character_event = { id = SoA.5055 days = 5 } }
+	}
+}
+
+character_event = { #Go to Kyiv
+	id = pravoslavie.6
+	desc = EVTDESC_pravoslavie.6
+	picture = GFX_evt_russian_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_pravoslavie.4
+		add_trait = on_pilgrimage
+		hidden_tooltip = {
+			add_trait = on_pilgrimage
+			set_character_flag = good_pilgrimage
+			narrative_event = { id = pravoslavie.7 days = 30 }
+			if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_KYIV
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		    }
+		}
+		hidden_tooltip = {
+			random_list = {
+				10 = { character_event = { id = SoA.5031 days = 9 random = 10 } } # List that is always checked
+				10 = { character_event = { id = SoA.5032 days = 9 random = 10 } }
+				10 = { narrative_event = { id = SoA.5033 days = 9 random = 10 } }
+				10 = { character_event = { id = SoA.5034 days = 10 random = 10 } }
+				10 = { character_event = { id = SoA.5035 days = 8 random = 10 } }
+				10 = { character_event = { id = SoA.5036 days = 9 random = 10 } }
+				10 = { character_event = { id = SoA.5037 days = 10 random = 10 } }
+				10 = { character_event = { id = SoA.5038 days = 10 random = 10 } }
+				10 = { character_event = { id = SoA.5039 days = 8 random = 10 } }
+			}
+			random_list = {
+				10 = { character_event = { id = SoA.5031 days = 20 random = 10 } } # List that is always checked
+				10 = { character_event = { id = SoA.5032 days = 21 random = 10 } }
+				10 = { narrative_event = { id = SoA.5033 days = 20 random = 10 } }
+				10 = { character_event = { id = SoA.5034 days = 20 random = 10 } }
+				10 = { character_event = { id = SoA.5035 days = 19 random = 10 } }
+				10 = { character_event = { id = SoA.5036 days = 22 random = 10 } }
+				10 = { character_event = { id = SoA.5037 days = 21 random = 10 } }
+				10 = { character_event = { id = SoA.5038 days = 23 random = 10 } }
+				10 = { character_event = { id = SoA.5039 days = 20 random = 10 } }
+			}
+		}
+	}
+}
+
+narrative_event = { #Welcome in Kyiv
+	id = pravoslavie.7
+	title = EVTNAME_pravoslavie.7
+	desc = EVTDESC_pravoslavie.7
+	picture = GFX_evt_kyiv
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_pravoslavie.12
+		hidden_tooltip = { character_event = { id = pravoslavie.8 } }
+		hidden_tooltip = { character_event = { id = SoA.5055 days = 5 } }
+	}
+}
+
+character_event = { 
+	id = pravoslavie.8
+	desc = EVTDESC_pravoslavie.8
+	picture = GFX_evt_russian_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_pravoslavie.8
+		if = {
+		   random_list = {
+		     10 = {
+			    ROOT = { change_martial = 1 }
+			 }
+			 5 = {
+			    ROOT = { change_martial = 2 }
+			 }
+			 85 = { } 
+		   }
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_pravoslavie.8
+		trigger = { NOT = { trait = celibate trait = eunuch } }
+		add_character_modifier = {
+			name = pravoslavie_ask_fertility
+			years = 10
+		}
+	}
+	
+	option = { 
+		name = EVTOPTC_pravoslavie.8
+		if = {
+		   random_list = {
+		     15 = {
+			    ROOT = { change_stewardship = 1 }
+			 }
+			 10 = {
+			    ROOT = { change_stewardship = 2 }
+			 }
+			 75 = { } 
+		   }
+		}
+	}
+	
+	option = {
+		name = EVTOPTD_pravoslavie.8
+		piety = 50
+		if = {
+		   limit = { NOT = { trait = humble } }
+		   random_list = {
+		     25 = {
+			    add_trait="humble"
+			 }
+			 75 = { } 
+		   }
+		}
+	}
+}
+
+character_event = { #Go to Kaliningrad
+	id = pravoslavie.9
+	desc = EVTDESC_pravoslavie.9
+	picture = GFX_evt_russian_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_pravoslavie.9
+		hidden_tooltip = {
+			add_trait = on_pilgrimage
+			set_character_flag = good_pilgrimage
+			narrative_event = { id = pravoslavie.10 days = 34 }
+			if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_KALININGRAD
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		    }
+		}
+		hidden_tooltip = {
+			random_list = {
+				10 = { character_event = { id = SoA.5031 days = 9 random = 10 } } # List that is always checked
+				10 = { character_event = { id = SoA.5032 days = 9 random = 10 } }
+				10 = { narrative_event = { id = SoA.5033 days = 9 random = 10 } }
+				10 = { character_event = { id = SoA.5034 days = 10 random = 10 } }
+				10 = { character_event = { id = SoA.5035 days = 8 random = 10 } }
+				10 = { character_event = { id = SoA.5036 days = 9 random = 10 } }
+				10 = { character_event = { id = SoA.5037 days = 10 random = 10 } }
+				10 = { character_event = { id = SoA.5038 days = 10 random = 10 } }
+				10 = { character_event = { id = SoA.5039 days = 8 random = 10 } }
+			}
+			random_list = {
+				10 = { character_event = { id = SoA.5031 days = 20 random = 10 } } # List that is always checked
+				10 = { character_event = { id = SoA.5032 days = 21 random = 10 } }
+				10 = { narrative_event = { id = SoA.5033 days = 20 random = 10 } }
+				10 = { character_event = { id = SoA.5034 days = 20 random = 10 } }
+				10 = { character_event = { id = SoA.5035 days = 19 random = 10 } }
+				10 = { character_event = { id = SoA.5036 days = 22 random = 10 } }
+				10 = { character_event = { id = SoA.5037 days = 21 random = 10 } }
+				10 = { character_event = { id = SoA.5038 days = 23 random = 10 } }
+				10 = { character_event = { id = SoA.5039 days = 20 random = 10 } }
+			}
+		}
+	}
+}
+
+narrative_event = { #Welcome in Kaliningrad
+	id = pravoslavie.10
+    title = EVTNAME_pravoslavie.10
+	desc = EVTDESC_pravoslavie.10
+	picture = GFX_evt_kaliningrad
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_pravoslavie.10
+		hidden_tooltip = { character_event = { id = pravoslavie.8 } }
+		hidden_tooltip = { character_event = { id = SoA.5055 days = 5 } }
+	}
+}
+
+character_event = { #Go to Petrograd
+	id = pravoslavie.11
+	desc = EVTDESC_pravoslavie.11
+	picture = GFX_evt_russian_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_pravoslavie.11
+		hidden_tooltip = {
+			add_trait = on_pilgrimage
+			set_character_flag = good_pilgrimage
+			narrative_event = { id = pravoslavie.12 days = 30 }
+			if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_PETROGRAD
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		    }
+		}
+		hidden_tooltip = {
+			random_list = {
+				10 = { character_event = { id = SoA.5031 days = 9 random = 10 } } # List that is always checked
+				10 = { character_event = { id = SoA.5032 days = 9 random = 10 } }
+				10 = { narrative_event = { id = SoA.5033 days = 9 random = 10 } }
+				10 = { character_event = { id = SoA.5034 days = 10 random = 10 } }
+				10 = { character_event = { id = SoA.5035 days = 8 random = 10 } }
+				10 = { character_event = { id = SoA.5036 days = 9 random = 10 } }
+				10 = { character_event = { id = SoA.5037 days = 10 random = 10 } }
+				10 = { character_event = { id = SoA.5038 days = 10 random = 10 } }
+				10 = { character_event = { id = SoA.5039 days = 8 random = 10 } }
+			}
+			random_list = {
+				10 = { character_event = { id = SoA.5031 days = 20 random = 10 } } # List that is always checked
+				10 = { character_event = { id = SoA.5032 days = 21 random = 10 } }
+				10 = { narrative_event = { id = SoA.5033 days = 20 random = 10 } }
+				10 = { character_event = { id = SoA.5034 days = 20 random = 10 } }
+				10 = { character_event = { id = SoA.5035 days = 19 random = 10 } }
+				10 = { character_event = { id = SoA.5036 days = 22 random = 10 } }
+				10 = { character_event = { id = SoA.5037 days = 21 random = 10 } }
+				10 = { character_event = { id = SoA.5038 days = 23 random = 10 } }
+				10 = { character_event = { id = SoA.5039 days = 20 random = 10 } }
+			}
+		}
+	}
+}
+
+narrative_event = { #Welcome in Petersburg
+	id = pravoslavie.12
+	title = EVTNAME_pravoslavie.12
+	desc = EVTDESC_pravoslavie.12
+	picture = GFX_evt_petersburg
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_pravoslavie.12
+		hidden_tooltip = { character_event = { id = pravoslavie.8 } }
+		hidden_tooltip = { character_event = { id = SoA.5055 days = 5 } }
+	}
+}
+
+character_event = { #Go to Sevastopol
+	id = pravoslavie.13
+	desc = EVTDESC_pravoslavie.13
+	picture = GFX_evt_russian_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_pravoslavie.13
+		hidden_tooltip = {
+			add_trait = on_pilgrimage
+			set_character_flag = good_pilgrimage
+			narrative_event = { id = pravoslavie.14 days = 30 }
+			if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_SEVASTOPOL
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		    }
+		}
+		hidden_tooltip = {
+			random_list = {
+				10 = { character_event = { id = SoA.5031 days = 9 random = 10 } } # List that is always checked
+				10 = { character_event = { id = SoA.5032 days = 9 random = 10 } }
+				10 = { narrative_event = { id = SoA.5033 days = 9 random = 10 } }
+				10 = { character_event = { id = SoA.5034 days = 10 random = 10 } }
+				10 = { character_event = { id = SoA.5035 days = 8 random = 10 } }
+				10 = { character_event = { id = SoA.5036 days = 9 random = 10 } }
+				10 = { character_event = { id = SoA.5037 days = 10 random = 10 } }
+				10 = { character_event = { id = SoA.5038 days = 10 random = 10 } }
+				10 = { character_event = { id = SoA.5039 days = 8 random = 10 } }
+			}
+			random_list = {
+				10 = { character_event = { id = SoA.5031 days = 20 random = 10 } } # List that is always checked
+				10 = { character_event = { id = SoA.5032 days = 21 random = 10 } }
+				10 = { narrative_event = { id = SoA.5033 days = 20 random = 10 } }
+				10 = { character_event = { id = SoA.5034 days = 20 random = 10 } }
+				10 = { character_event = { id = SoA.5035 days = 19 random = 10 } }
+				10 = { character_event = { id = SoA.5036 days = 22 random = 10 } }
+				10 = { character_event = { id = SoA.5037 days = 21 random = 10 } }
+				10 = { character_event = { id = SoA.5038 days = 23 random = 10 } }
+				10 = { character_event = { id = SoA.5039 days = 20 random = 10 } }
+			}
+		}
+	}
+}
+
+narrative_event = { #Welcome in Sevastopol
+	id = pravoslavie.14
+	title = EVTNAME_pravoslavie.14
+	desc = EVTDESC_pravoslavie.14
+	picture = GFX_evt_sevastopol
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_pravoslavie.14
+		hidden_tooltip = { character_event = { id = pravoslavie.8 } }
+		hidden_tooltip = { character_event = { id = SoA.5055 days = 5 } }
+	}
+}
+
+character_event = { 
+	id = pravoslavie.15
+	desc = EVTDESC_pravoslavie.15
+	picture = GFX_evt_russian_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = { #Petrograd
+		name = EVTOPTA_pravoslavie.15
+		character_event = { id = pravoslavie.11 }
+	}
+	
+	option = { #Kaliningrad
+		name = EVTOPTB_pravoslavie.15
+		character_event = { id = pravoslavie.9 }
+	}
+	
+	option = { #Sevastopol
+		name = EVTOPTC_pravoslavie.15
+		character_event = { id = pravoslavie.13 }
+	}
+}

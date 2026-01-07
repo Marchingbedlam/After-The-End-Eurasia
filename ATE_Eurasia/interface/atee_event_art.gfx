@@ -532,7 +532,27 @@ spriteTypes = {
 		allwaystransparent = yes
 	}
 	spriteType = {
-		name = "GFX_evt_theotokos"
+		name = "GFX_evt_kyiv"
+		texturefile = "gfx/event_pictures/kyiv.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_kaliningrad"
+		texturefile = "gfx/event_pictures/kaliningrad.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_petersburg"
+		texturefile = "gfx/event_pictures/petersburg.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_sevastopol"
+		texturefile = "gfx/event_pictures/sevastopol.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_russian_pilgrimage"
 		texturefile = "gfx/event_pictures/theotokos.dds"
 		allwaystransparent = yes
 	}
@@ -548,5 +568,9 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_evt_buddhist_contemplation"
 		texturefile = "gfx/event_pictures/buddhist_contemplation.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_moscow"
+		texturefile = "gfx/event_pictures/moscow.dds"
 	}
 }

@@ -1020,6 +1020,7 @@ decisions = {
 			}
 			is_playable = yes
 			religion_group = christian
+			NOT = { religion = pravoslavie }
 			NOT = { trait = pilgrim }
 			NOT = {
 				has_alternate_start_parameter = { key = religion_names value = random }
