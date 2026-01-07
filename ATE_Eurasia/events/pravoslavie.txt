@@ -17,6 +17,8 @@ character_event = {
 		name = EVTOPTB_pravoslavie.1
 		ai_chance = { factor = 0 }
 		piety = -20
+		clr_character_flag = activated_pilgrimage
+		clr_character_flag = do_not_disturb
 	}
 }
 
