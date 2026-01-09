@@ -50760,3 +50760,17 @@ coat_of_arms = {
 	}
 }
 7534119 = { name = "Hunyadi" culture = hungarian used_for_random = no }
+7534120 = { name = "Wadowicki" culture = polish used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 79
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
