@@ -271,7 +271,14 @@
 	trait=just
 	trait=kind
 	2620.9.21={birth=yes}
-	2700.8.13={death=yes}
+	2659.9.10={
+	   add_spouse=1001205
+	}
+	2665.10.19={
+	   death={
+	      death_reason=death_accident
+	   }
+	}
 }
 #1001014={
 	#name="Thomas"
@@ -812,7 +819,7 @@
 	name="Gordon"
 	dynasty=1801002 #Ganumaga
 	culture=scouse
-	religion=glorian
+	religion=high_church
 	martial=5
 	diplomacy=8
 	stewardship=2
@@ -1112,6 +1119,7 @@
 	trait=stubborn
 	trait=ambitious
 	trait=patient
+	trait=broad_anglican
 	2619.12.21={birth=yes}
 	2670.12.29={death=yes}
 }
@@ -1318,7 +1326,7 @@
 	name="Nigel"
 	dynasty=1801002 #Ganumaga
 	culture=northerner
-	religion=glorian
+	religion=high_church
 	father=1001049
 	mother=1001050
 	trait=zealous
@@ -1673,7 +1681,7 @@
 	female=yes
 	dynasty=7535005
 	culture=southerner
-	religion=catholic
+	religion=high_church
 	father=1001095
 	2619.1.1={birth=yes}
 	2677.1.1={death=yes}
@@ -1683,7 +1691,7 @@
 	female=yes
 	dynasty=7535005
 	culture=southerner
-	religion=catholic
+	religion=high_church
 	father=1001095
 	trait="pious"
 	trait="patient"
@@ -1698,7 +1706,7 @@
 	name="Pieter"
 	dynasty=7535005
 	culture=southerner
-	religion=catholic
+	religion=high_church
 	father=1001095
 	2627.1.1={birth=yes}
 	2677.1.1={death=yes}
@@ -1707,7 +1715,7 @@
 	name="Robert"
 	dynasty=7535005
 	culture=southerner
-	religion=catholic
+	religion=high_church
 	father=1001095
 	2639.1.1={birth=yes}
 	2677.1.1={death=yes}
@@ -3194,5 +3202,55 @@
 	religion=catholic
 	father=1001086
 	2627.1.1={birth=yes}
+	2687.1.1={death=yes}
+}
+
+1001204={
+	name="Richard"
+	culture=northerner
+	religion=high_church
+	trait="erudite"
+	trait="administrator"
+	trait="chaste"
+	trait="gregarious"
+	trait="midas_touched"
+	trait="high_anglican"
+	2621.4.19={birth=yes}
+	2664.1.1={
+		effect={give_minor_title=title_convocation_bishop}
+	}
+	2687.1.1={death=yes}
+}
+
+1001205={
+	name="Kate"
+	dynasty=7534130
+	female=yes
+	culture=southerner
+	religion=high_church
+	trait="scholarly_theologian"
+	trait="fair"
+	trait="quick"
+	trait="erudite"
+	trait="gregarious"
+	trait="patient"
+	trait="poet"
+	trait="broad_anglican"
+	2635.3.15={birth=yes}
+	2687.1.1={death=yes}
+}
+
+1001206={
+	name="Robert"
+	dynasty=7534131
+	culture=midlander
+	religion=glorian
+	trait="charismatic_negotiator"
+	trait="quick"
+	trait="gregarious"
+	trait="ambitious"
+	trait="cynical"
+	trait="patient"
+	2642.5.5={birth=yes}
 	2687.1.1={death=yes}
 }

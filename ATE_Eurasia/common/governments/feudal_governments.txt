@@ -1055,6 +1055,18 @@ feudal_governments = {
 			}
 			is_patrician = no
 		}
+		vassal_call_to_arms  = {
+			bureaucratic_government
+			british_government
+			diwan_government
+			feudal_government
+			ghazi_government
+			cenobitic_government
+			italian_bureaucratic_government
+		}
+		no_vassal_tax = {
+			theocracy_government
+		}
 
 		color = { 250 215 215 }
 
@@ -1198,7 +1210,7 @@ feudal_governments = {
 	}
 	
 	jacobin_government = { 
-		preferred_holdings = { CASTLE }
+		preferred_holdings = { CASTLE TEMPLE }
 		allowed_holdings = { 
 			CASTLE 
 			CITY

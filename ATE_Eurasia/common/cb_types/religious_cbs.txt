@@ -25,6 +25,12 @@ crusade = {
 			has_called_crusade = no
 			religion_authority >= 0.05
 			mercenary = no
+			
+			trigger_if = {
+				limit = {
+					religion = jacobin
+				}
+			}
 
 			trigger_if = {
 				limit = {
