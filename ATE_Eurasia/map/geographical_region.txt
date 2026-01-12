@@ -792,19 +792,19 @@ world_middle_east = {
 		world_middle_east_arabia world_middle_east_jerusalem
 	}
 }
-world_india = {
-	inclusive = yes
-	regions = {
-		world_india_deccan world_india_bengal world_india_rajastan
-	}
-}
+# world_india = {
+	# inclusive = yes
+	# regions = {
+		# world_india_deccan world_india_bengal world_india_rajastan
+	# }
+# }
 
-world_himalayas = {
-	inclusive = yes
-	duchies = {
-		d_lhasa d_yarlung d_shigatse d_nagchu d_sumparu d_bhutan d_purang d_ngari d_ladakh d_dege d_qamdo d_nyingchi d_kathmandu d_gorkha d_kashmir d_pamir d_uttaranchal d_qinghai d_nagormo d_nangqen
-	}
-}
+# world_himalayas = {
+	# inclusive = yes
+	# duchies = {
+		# d_lhasa d_yarlung d_shigatse d_nagchu d_sumparu d_bhutan d_purang d_ngari d_ladakh d_dege d_qamdo d_nyingchi d_kathmandu d_gorkha d_kashmir d_pamir d_uttaranchal d_qinghai d_nagormo d_nangqen
+	# }
+# }
 
 ###########################################################################
 # Custom Regions
@@ -868,19 +868,19 @@ custom_norwegian = {
 		d_iceland d_orkney d_vestlandet d_ostlandet d_trondelag d_jamtland d_finnmark
 	}
 }
-custom_scotland = {
-	duchies = {
-		d_the_isles d_galloway d_western_isles d_lothian d_albany d_moray
-	}
-}
-custom_historical_plague_free_zone = {
-	duchies = {
-		d_lombardia d_lesser_poland d_kuyavia d_mazovia d_yatviags d_turov d_volhynia d_iceland d_cherven_cities d_minsk
-	}
-	counties = {
-		c_valais c_schwyz c_alto_aragon c_urgell c_bearn c_faereyar c_lepiel c_orsha c_armagnac c_foix c_chur c_yatvyagi c_aukshayts c_kaliskie c_gnieznienskie
-	}
-}
+# custom_scotland = {
+	# duchies = {
+		# d_the_isles d_galloway d_western_isles d_lothian d_albany d_moray
+	# }
+# }
+# custom_historical_plague_free_zone = {
+	# duchies = {
+		# d_lombardia d_lesser_poland d_kuyavia d_mazovia d_yatviags d_turov d_volhynia d_iceland d_cherven_cities d_minsk
+	# }
+	# counties = {
+		# c_valais c_schwyz c_alto_aragon c_urgell c_bearn c_faereyar c_lepiel c_orsha c_armagnac c_foix c_chur c_yatvyagi c_aukshayts c_kaliskie c_gnieznienskie
+	# }
+# }
 custom_eastern_edge_of_map = {
 	counties = {
 		c_jiuquan c_fuqi c_delingha c_dege c_ejin c_samatata c_markam c_lingtsang c_gurvan_saikhan c_delgerkhangai c_tuul c_chikoi c_khilok c_uda

@@ -58,59 +58,6 @@ song = {
 			}
 		}
 	}
-}song = {
-	name = "finnish_polkka.ogg"
-	song_name = "Sakkijarven Polkka"
-	chance = {
-		factor = 3
-		modifier = {
-			factor = 0
-			NOT = {
-				culture = finnish
-			}
-		}
-	}
-}
-song = {
-	name = "Hall of the Mountain King.ogg"
-	song_name = "Hall of the Mountain King"
-	chance = {
-		factor = 2
-		modifier = {
-			factor = 0
-			NOT = {
-				religion = folketro
-			}
-		}
-	}
-}
-song = {
-	name = "fiddling_in_the_north.ogg"
-	song_name = "Malselvhalling"
-	chance = {
-		factor = 2
-		modifier = {
-			factor = 0
-			NOT = {
-				religion = folketro
-			}
-		}
-	}
-}
-song = {
-	name = "jamtland_folk.ogg"
-	song_name = "Jamtlandsk Brudmarsch"
-	chance = {
-		factor = 2
-		modifier = {
-			factor = 0
-			NOR = {
-				culture_group = scandinavian
-				culture_group = finnic
-				religion = folketro
-			}
-		}
-	}
 }
 song = {
 	name = "a_csitari_hegyek_alatt.ogg"
