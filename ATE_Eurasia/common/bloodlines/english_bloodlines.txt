@@ -64,3 +64,56 @@ stuart_bloodline = {
 	picture = GFX_bloodlines_symbol_scotland
 	flags = { historical_bloodline }
 }
+
+kate_parr_bloodline = {
+	monthly_character_prestige = 0.3
+	monthly_character_piety = 0.1
+	learning = 1
+	british_opinion = 5
+	southerner_opinion = 5
+	westerner_opinion = 5
+	northerner_opinion = 5
+	lowlander_opinion = 5
+	ulsterman_opinion = 5
+	norner_opinion = 5
+	midlander_opinion = 5
+	scouse_opinion = 5
+	nynorn_opinion = 5
+	high_church_opinion = 5
+	inheritance = patrilineal
+	allow_bastards = yes
+	picture = GFX_bloodlines_symbol_windsor
+	flags = { historical_bloodline }
+}
+
+fitzspatstone_bloodline = {
+	monthly_character_prestige = 0.3
+	monthly_character_piety = 0.5
+	diplomacy = 1
+	british_opinion = 5
+	southerner_opinion = 5
+	westerner_opinion = 5
+	northerner_opinion = 5
+	lowlander_opinion = 5
+	ulsterman_opinion = 5
+	norner_opinion = 5
+	midlander_opinion = 5
+	scouse_opinion = 5
+	nynorn_opinion = 5
+	glorian_opinion = 10
+	thelema_opinion = 5
+	valinorist_opinion = 5
+	high_church_opinion = -5
+	catholic_opinion = -5
+	inheritance = patrilineal
+	allow_bastards = yes
+	picture = GFX_bloodlines_symbol_windsor
+	flags = { historical_bloodline }
+	active = {
+	  OR = {
+		religion = valinorist
+		religion = thelema
+		religion = glorian
+	  }
+	}
+}

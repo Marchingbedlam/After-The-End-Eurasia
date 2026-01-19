@@ -1,0 +1,224 @@
+decisions = {
+    disallow_northern_authonomy ={
+		only_independent = yes
+		is_high_prio = yes
+		ai_check_interval = 24
+		
+		potential = {
+			is_playable = yes
+			is_random_world = no
+			has_landed_title = k_britain
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+			NOT = { has_global_flag = disallowed_northern_authonomy_uk }
+			any_tributary = {
+				has_landed_title = k_york
+			}
+		}	
+		allow = {
+			completely_controls = k_england
+			completely_controls = d_london
+			completely_controls = d_sussex
+			completely_controls = d_east_anglia
+			prestige = 1000
+			any_tributary = {
+				has_landed_title = k_york
+			}
+			k_york = {
+			  holder_scope = {
+			  	opinion = {
+					who = ROOT
+					value = 80
+				}
+			  }
+			}
+		}
+		effect = {
+			hidden_tooltip = {
+				narrative_event = { id = britain.106 }
+				set_global_flag = disallowed_northern_authonomy_uk
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	establish_uk = {
+		only_independent = yes
+		is_high_prio = yes
+		ai_check_interval = 24
+		
+		potential = {
+			is_playable = yes
+			is_random_world = no
+			religion = glorian
+			NOT = { has_global_flag = uk_restored }
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		allow = {
+			completely_controls = k_london
+			completely_controls = k_england
+			completely_controls = k_york
+			completely_controls = k_wales
+			completely_controls = k_scotland
+			completely_controls = k_ireland
+			piety = 1500
+		}
+		effect = {
+			set_global_flag = uk_restored
+			give_nickname = nick_gloriana
+			prestige = 500
+			piety = 500
+			hidden_tooltip = {
+				primary_title = {
+					e_united_kingdom = {
+						copy_title_laws = PREV
+						copy_title_history = e_britannia
+					}
+				}
+			}
+
+			custom_tooltip = {
+				text = create_united_kingdom_tt
+				grant_title_no_opinion = e_united_kingdom 
+			}
+			hidden_tooltip = {
+				k_london = {
+					de_jure_liege = e_united_kingdom
+				}
+				k_ireland = {
+					de_jure_liege = e_united_kingdom
+				}
+				k_york = {
+					de_jure_liege = e_united_kingdom
+				}
+				k_england = {
+					de_jure_liege = e_united_kingdom
+				}
+				k_wales = {
+					de_jure_liege = e_united_kingdom
+				}
+				k_scotland = {
+					de_jure_liege = e_united_kingdom
+				}
+				if = {
+					limit = {
+						is_title_active = d_glorian
+					}
+					d_glorian = {
+						holder_scope = {
+							ROOT = {
+								set_defacto_vassal = PREV
+							}
+						}
+					}
+				}
+			}
+					
+
+			hidden_tooltip = {
+				narrative_event = { id = britain.100 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	go_to_glorian_pilgrimage = {
+		only_playable = yes
+		ai_check_interval = 20
+		potential = {
+			has_dlc = "Sons of Abraham"
+			OR = {
+				NOT = { has_dlc = "Way of Life" }
+				has_focus = focus_theology
+				trait = zealous
+			}
+			is_playable = yes
+		    religion = glorian
+			NOT = { trait = pilgrim }
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		allow = {
+			war = no
+			in_command = no
+			conditional_tooltip = {
+				trigger = { has_character_modifier = coronation_request_cooldown }
+				custom_tooltip = {
+					text = TT_NOT_RECENTLY_ASKED_CORONATION
+					hidden_tooltip = { 
+						NOT = { has_character_modifier = coronation_request_cooldown } 
+					} 
+				} 
+			} 
+			custom_tooltip = {
+				text = UNOCCUPIED_DEMESNE_TITLE
+				hidden_tooltip = {
+					any_demesne_title = {
+						NOT = { higher_tier_than = count }
+						is_occupied = no
+					}
+				}
+			}
+			prisoner = no
+			NOT = { is_inaccessible_trigger = yes }
+			scaled_wealth = 0.2
+			age = 16
+			custom_tooltip = {
+				text = health_travel_condition
+				hidden_tooltip = {
+					NOT = {	trait = pregnant }
+					NOT = {	is_incapable = yes }
+					NOT = {	trait = blinded }
+					NOT = {	trait = has_tuberculosis }
+					NOT = {	trait = has_typhoid_fever }
+					NOT = {	trait = has_typhus }
+					NOT = {	trait = has_bubonic_plague }
+					NOT = {	trait = has_measles }
+					NOT = {	trait = has_small_pox }
+					NOT = {	trait = has_aztec_disease }
+				}
+			}
+			custom_tooltip = {
+				text = is_not_busy_trigger_tooltip
+				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+		}
+		effect = {
+			scaled_wealth = -0.2
+			set_character_flag = activated_pilgrimage
+			set_character_flag = do_not_disturb
+			hidden_tooltip = {
+				character_event = { 
+					id = britain.107
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0.1 
+			}
+			modifier = {
+				factor = 3
+				trait = zealous
+			}
+			modifier = {
+				factor = 0
+				NOT = { wealth = 200 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { age = 30 }
+			}
+		}
+	}
+}

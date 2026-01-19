@@ -672,6 +672,7 @@ succession_laws = {
 						is_vice_royalty = yes
 					}
 				}
+				government = british_government
 				AND = {
 					holder_scope = {
 						OR = {
@@ -819,7 +820,7 @@ succession_laws = {
 		dynasty_opinion = -5
 		vassal_opinion = 10
 		potential = {
-			NAND = { 
+			NAND = {
 				has_law = succ_byzantine_elective 
 				OR = { 
 					title = e_byzantium
@@ -872,6 +873,7 @@ succession_laws = {
 							is_vice_royalty = yes
 						}
 					}
+					government = british_government
 				}
 				NAND = {
 					government = cenobitic_government

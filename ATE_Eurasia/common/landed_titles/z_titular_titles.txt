@@ -331,6 +331,9 @@ k_britain = {
 
 	capital = 39 # Berkshire
 	
+	title = "LORD_PROTECTOR"
+	title_female = "LORD_PROTECTOR_FEM"
+	
 	dignity = 20 # Counted as having this many more counties than it does
 }
 
@@ -1045,6 +1048,24 @@ d_parma_piacenza_modena={
 		always = no 
 	}
 }
+d_arthurian_host = {
+	color={ 0 0 0 }
+	
+	capital = 48
+	
+	dignity = 1000 # Counted as having this many more counties than it does
+	
+	allow = {
+		dynasty = 7534134
+	}
+
+	title = king
+	landless = yes
+	primary = yes
+	can_be_claimed = no
+	can_be_usurped = no
+}
+
 ### Titular counties ###
 
 c_roman_patriarch = {

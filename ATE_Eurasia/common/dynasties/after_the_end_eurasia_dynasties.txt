@@ -50834,3 +50834,22 @@ coat_of_arms = {
 		}
 	}
 }
+7534132 = { name = "FitzOxford" culture = midlander used_for_random = no }
+7534133 = { name = "FitzPhilipp" culture = midlander used_for_random = no }
+7534134 = { name = "Pendragon" 
+    culture = westerner
+    religion=arthurian 
+	used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 70
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}

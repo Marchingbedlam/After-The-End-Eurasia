@@ -1621,4 +1621,14 @@ spriteTypes = {
 		name = "GFX_integrate_galicia_lodomeria_lothc"
 		textureFile = "gfx\\interface\\integrate_galicia_lodomeria.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_disallow_northern_authonomy"
+		textureFile = "gfx\\interface\\decision_destroy_york_aut.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_go_to_glorian_pilgrimage"
+		textureFile = "gfx\\interface\\decision_icon_christian_pilgrimage.dds"
+	}
 }

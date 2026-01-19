@@ -113,6 +113,7 @@ e_britannia = {
 				holy_site = nondescript_eastern
 				holy_site = valinorist
 				holy_site = roerichist
+				holy_site = arthurian
 		
 				manx= "Lunnin"
 				lowlander= "Lunnon"
@@ -284,6 +285,7 @@ e_britannia = {
 				color={ 241 115 65 }
 				color2={ 255 255 255 }
 				holy_site = high_church
+				holy_site = arthurian
 				
 				b_rochester = {}
 				b_maidstone = {}
@@ -369,6 +371,9 @@ e_britannia = {
 		piedmontese = "Anghiltèra"
 		romagnol = "Inghiltèra"
 		
+	    title = king
+	    title_female = queen
+		
 		capital = 39 # Berkshire
 		dignity = 15 # Counted as having this many more counties than it does
 		
@@ -396,6 +401,7 @@ e_britannia = {
 				
 				holy_site = glorian
 				holy_site = valinorist
+				holy_site = arthurian
 				
 				b_oxford = {}
 				b_banbury = {}
@@ -516,6 +522,7 @@ e_britannia = {
 				holy_site = insular
 				holy_site = free_church
 				holy_site = rastafarian
+				holy_site = arthurian
 				
 				b_taunton = {}
 				b_bridgwater = {}
@@ -683,6 +690,7 @@ e_britannia = {
 				color={ 255 80 5 }
 				color2={ 255 255 255 }
 				holy_site = high_church
+				holy_site = arthurian
 				
 				b_harrogate = {}
 				b_york = {}

@@ -135,6 +135,14 @@ government_flavor = {
 		government = jacobin_government
 	}
 }
+government_flavor = {
+	name = gov_communal
+	graphics = GFX_evt_bastille_day
+	priority = 5
+	trigger = {
+		government = communal_government
+	}
+}
 #government_flavor = {
 #	name = gov_swaraj
 #	graphics = GFX_evt_yoga_meditation

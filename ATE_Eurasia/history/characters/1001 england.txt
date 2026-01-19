@@ -463,7 +463,7 @@
 	name="Julian"
 	dynasty=1101005 #Brown
 	culture=westerner
-	religion=glorian
+	religion=thelema
 	martial=2
 	diplomacy=5
 	stewardship=3
@@ -1136,9 +1136,15 @@
 	trait=ambitious
 	trait=genius
 	trait=strategist
-	give_nickname=nick_the_purple_poet
+	give_nickname=nick_the_poet_of_the_albion
 	2429.5.18={birth=yes}
 	2460.1.1={name="Edwin"}
+	2561.1.1={
+		create_bloodline={
+			type=fitzspatstone_bloodline
+			has_dlc="Holy Fury"
+		}
+	}
 	2492.8.2={death=yes}
 }
 1001056={
@@ -1156,17 +1162,27 @@
 	culture=midlander
 	religion=glorian
 	father=1001056
+	trait="leper"
 	2491.11.22={birth=yes}
-	2571.1.1={death=yes}
+	2565.9.3={
+	   death={
+	      death_reason=death_trait
+	   }
+	}
 }
 1001058={
 	name="David"
 	dynasty=1701003 #FitzSpatstone
 	culture=midlander
 	religion=glorian
+	trait="leper"
 	father=1001057
 	2517.2.4={birth=yes}
-	2556.1.1={death=yes}
+	2565.8.29={
+	   death={
+	      death_reason=death_trait
+	   }
+	}
 }
 1001059={
 	name="Philip"
@@ -1267,6 +1283,9 @@
 	trait=gregarious
 	trait=authoritative
 	2624.4.24={birth=yes}
+	2647.1.1={
+	   add_spouse=1001215
+	}
 	2680.1.1={death=yes}
 }
 1001067={
@@ -1542,7 +1561,14 @@
 	religion=catholic
 	father=1001082
 	2499.1.1={birth=yes}
-	2572.1.1={death=yes}
+	2520.1.1={
+	   add_spouse=1001213
+	}
+	2566.3.1={
+	   death={
+	      death_reason=death_execution
+	   }
+	}
 }
 1001084={
 	name="Thomas"
@@ -1550,6 +1576,7 @@
 	culture=southerner
 	religion=catholic
 	father=1001083
+	mother=1001213
 	2530.1.1={birth=yes}
 	2592.1.1={death=yes}
 }
@@ -3216,9 +3243,6 @@
 	trait="midas_touched"
 	trait="high_anglican"
 	2621.4.19={birth=yes}
-	2664.1.1={
-		effect={give_minor_title=title_convocation_bishop}
-	}
 	2687.1.1={death=yes}
 }
 
@@ -3236,7 +3260,15 @@
 	trait="patient"
 	trait="poet"
 	trait="broad_anglican"
+	dna="cce000b0da0"
+	properties="c00d0d000"
 	2635.3.15={birth=yes}
+	2660.1.1={
+		create_bloodline={
+			type=kate_parr_bloodline
+			has_dlc="Holy Fury"
+		}
+	}
 	2687.1.1={death=yes}
 }
 
@@ -3251,6 +3283,154 @@
 	trait="ambitious"
 	trait="cynical"
 	trait="patient"
-	2642.5.5={birth=yes}
+	father=1001207
+	dna="00d000aacb0"
+    properties="cb0efk"
+	2642.6.1={birth=yes}
 	2687.1.1={death=yes}
+}
+
+1001207={
+	name="Charles"
+	dynasty=7534131
+	culture=midlander
+	religion=glorian
+	father=1001208
+	2603.8.27={birth=yes}
+	2660.1.1={death=yes}
+}
+
+1001208={
+	name="Archibald"
+	dynasty=7534131
+	culture=midlander
+	religion=glorian
+	trait="ambitious"
+	trait="quick"
+	trait="gregarious"
+	trait="deceitful"
+	trait="greedy"
+	father=1001210
+	2579.6.14={birth=yes}
+	2635.5.19={death=yes}
+}
+
+1001210={
+	name="Robert"
+	dynasty=7534131
+	culture=midlander
+	religion=glorian
+	father=1001058
+	trait="bastard"
+	2546.8.17={birth=yes}
+	2597.12.2={death=yes}
+}
+
+1001211={
+	name="Jane"
+	female=yes
+	dynasty=1701003 #FitzSpatstone
+	culture=midlander
+	religion=glorian
+	trait="cruel"
+	trait="ambitious"
+	trait="deceitful"
+	father=1001055
+	2461.8.25={birth=yes}
+	2495.9.17={
+	  death={
+	      death_reason=death_execution
+	      killer=1001056
+      }
+    }
+}
+
+1001212={
+	name="Christopher"
+	dynasty=7534132 
+	culture=westerner
+	religion=thelema
+	trait="ambitious"
+	trait="drunkard"
+	trait="deceitful"
+	trait="quick"
+	trait="cynical"
+	trait="gregarious"
+	trait="cruel"
+	2449.9.14={birth=yes}
+	2490.1.1={
+	   add_spouse=1001211
+	}
+	2495.9.17={
+	  death={
+	      death_reason=death_execution
+	      killer=1001056
+      }
+    }
+}
+
+1001213={
+	name="Jane"
+	female=yes
+	dynasty=7534132 
+	culture=midlander
+	religion=high_church
+	father=1001212
+	mother=1001211
+	2491.5.16={birth=yes}
+	2568.4.15={death=yes}
+}
+
+1001214={
+	name="Julian"
+	dynasty=7534133
+	culture=westerner
+	religion=glorian
+	trait="bastard"
+	trait="drunkard"
+	trait="ambitious"
+	trait="cruel"
+	father=1001058
+	give_nickname=nick_the_cruel
+	2538.1.1={birth=yes}
+	2568.4.14={
+	   death={
+	      death_reason=death_battle_duel
+		  killer=1001084
+	   }
+    }
+}
+
+1001215={
+	name="Alexandra"
+	female=yes
+	dynasty=7534131
+	culture=midlander
+	religion=glorian
+	father=1001208
+	2612.5.15={birth=yes}
+	2668.1.1={death=yes}
+}
+1001216={
+	name="Henry"
+	dynasty=1701003 #FitzSpatstone
+	culture=midlander
+	religion=glorian
+	father=1001066
+	mother=1001215
+	dna="cie000i0da0"
+	properties="ch00fk"
+	trait="brilliant_strategist"
+	trait="inspiring_leader"
+	trait="siege_leader"
+	trait="wroth"
+	trait="proud"
+	trait="paranoid"
+	trait="ambitious"
+	trait="gregarious"
+	2649.6.28={birth=yes}
+	2666.1.1={
+	   add_friend=1001027
+	}
+	2680.1.1={death=yes}
 }
