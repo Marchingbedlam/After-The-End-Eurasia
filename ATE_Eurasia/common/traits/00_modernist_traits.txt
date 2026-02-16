@@ -1,0 +1,86 @@
+alternativeviews = {
+	potential = {
+		religion = modernist
+	}
+	opposites = {
+		architecturalist
+		maneater
+		saudosism
+		veredite
+	}
+	
+	random = no 
+	religious = yes
+	religious_branch = modernist
+	customizer = no
+}
+architecturalist = {
+	potential = {
+		religion = modernist
+	}
+	opposites = {
+		alternativeviews
+		maneater
+		saudosism
+		veredite
+	}
+    
+    # Building benefits
+    build_time_modifier = -0.25
+    construction_time_modifier = -0.25
+    
+    random = no
+	religious = yes
+	religious_branch = modernist
+	customizer = no 
+}
+maneater = {
+	potential = {
+		religion = modernist
+	}
+	opposites = {
+		alternativeviews
+		architecturalist
+		saudosism
+		veredite
+	}
+
+	opposite_opinion = -5
+	
+	random = no 
+	religious = yes
+	religious_branch = modernist
+	customizer = no 
+}
+saudosism = {
+	potential = {
+		religion = modernist
+	}
+	opposites = {
+		alternativeviews
+		architecturalist
+		maneater
+		veredite
+	}
+	
+	random = no
+	religious = yes
+	religious_branch = modernist
+	customizer = no
+}
+veredite = {
+	potential = {
+		religion = modernist
+	}
+	opposites = {
+		alternativeviews
+		architecturalist
+		maneater
+		saudosism
+	}
+	
+	random = no
+	religious = yes
+	religious_branch = modernist
+	customizer = no
+}

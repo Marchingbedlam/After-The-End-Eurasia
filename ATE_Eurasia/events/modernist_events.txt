@@ -1,0 +1,1113 @@
+namespace = modernist
+
+character_event = {
+	id = modernist.1
+	desc = EVTDESC_modernist_1
+	picture = GFX_evt_open_book_hf
+	border = GFX_event_normal_frame_religion
+	religion = modernist
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_alternate_start_parameter = { key = religion_names value = random }
+		}
+	}
+	option = {
+		name = EVTOPTA_modernist_1
+		trigger = {
+			NOT = { has_trait = alternativeviews }
+		}
+		hidden_tooltip = {
+			remove_trait = saudosism
+			remove_trait = architecturalist
+			remove_trait = maneater
+			remove_trait = veredite
+		}
+		add_trait = alternativeviews
+		add_character_modifier = {
+			name = changed_modernist_school
+			duration = 1825
+		}
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 2	learning = 8 }
+			modifier = { factor = 2	trait = poet }
+		}
+	}
+	option = {
+		name = EVTOPTB_modernist_1
+		trigger = {
+			NOT = { has_trait = architecturalist }
+		}
+		hidden_tooltip = {
+			remove_trait = alternativeviews
+			remove_trait = saudosism
+			remove_trait = maneater
+			remove_trait = veredite
+		}
+		add_trait = architecturalist
+		add_character_modifier = {
+			name = changed_modernist_school
+			duration = 1825
+		}
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 2	trait = architect }
+			modifier = { factor = 2	trait = administrator }
+			modifier = { factor = 2	trait = gardener }
+		}
+	}
+	option = {
+		name = EVTOPTC_modernist_1
+		trigger = {
+			NOT = { has_trait = maneater }
+		}
+		hidden_tooltip = {
+			remove_trait = alternativeviews
+			remove_trait = architecturalist
+			remove_trait = saudosism
+			remove_trait = veredite
+		}
+		add_trait = maneater
+		add_character_modifier = {
+			name = changed_modernist_school
+			duration = 1825
+		}
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 2 trait = zealous }
+			modifier = { factor = 10 trait = cannibal_trait }
+		}
+	}
+	# option = {
+	# 	name = EVTOPTD_modernist_1
+	# 	trigger = {
+	# 		NOT = { has_trait = saudosism }
+	# 	}
+	# 	hidden_tooltip = {
+	# 		remove_trait = alternativeviews
+	# 		remove_trait = architecturalist
+	# 		remove_trait = maneater
+	# 		remove_trait = veredite
+	# 	}
+	# 	add_trait = saudosism
+	# 	add_character_modifier = {
+	# 		name = changed_modernist_school
+	# 		duration = 1825
+	# 	}
+	# 	ai_chance = {
+	# 		factor = 10
+	# 		modifier = { factor = 2 learning = 8 }
+	# 		}
+	# 	}
+	# option = {
+	# 	name = EVTOPTE_modernist_1
+	# 	trigger = {
+	# 		NOT = { has_trait = veredite }
+	# 	}
+	# 	hidden_tooltip = {
+	# 		remove_trait = alternativeviews
+	# 		remove_trait = architecturalist
+	# 		remove_trait = maneater
+	# 		remove_trait = saudosism
+	# 	}
+	# 	add_trait = veredite
+	# 	add_character_modifier = {
+	# 		name = changed_modernist_school
+	# 		duration = 1825
+	# 	}
+	# 	ai_chance = {
+	# 		factor = 10
+	# 		modifier = { factor = 2 learning = 8 }
+	# 		}
+	# 	}
+	option = {
+		name = EVTOPTF_modernist_1
+	}
+}
+
+character_event = {
+    id = modernist.100
+    title = EVTNAME_modernist_trait_reset
+    desc = EVTDESC_modernist_trait_reset
+    picture = GFX_evt_open_book_hf
+    border = GFX_event_normal_frame_religion
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = EVTOPT_modernist_reset_confirm
+        hidden_tooltip = {
+            character_event = { id = modernist.101 days = 2 }
+        }
+        ai_chance = { factor = 75 }
+    }
+    option = {
+        name = EVTOPT_modernist_reset_cancel
+        ai_chance = { factor = 25 }
+    }
+}
+
+character_event = {
+    id = modernist.101
+    title = EVTNAME_modernist_trait_reset_confirm
+    desc = EVTDESC_modernist_trait_reset_confirm
+    picture = GFX_evt_library
+    border = GFX_event_normal_frame_religion
+    is_triggered_only = yes
+    
+    hide_window = yes
+    
+    immediate = {
+        
+        # Remove all non-genetic, non-education traits
+        remove_trait = patient
+        remove_trait = impatient
+        remove_trait = kind
+        remove_trait = cruel
+        remove_trait = honest
+        remove_trait = deceitful
+        remove_trait = just
+        remove_trait = arbitrary
+        remove_trait = humble
+        remove_trait = proud
+        remove_trait = trusting
+        remove_trait = paranoid
+        remove_trait = forgiving
+        remove_trait = vengeful
+        remove_trait = cynical
+        remove_trait = zealous
+        remove_trait = gregarious
+        remove_trait = shy
+        remove_trait = ambitious
+        remove_trait = slothful
+        remove_trait = brave
+        remove_trait = craven
+        remove_trait = charitable
+        remove_trait = greedy
+        remove_trait = genius
+        remove_trait = quick
+        remove_trait = slow
+        remove_trait = poet
+        remove_trait = glutton
+        remove_trait = abstemious
+        remove_trait = temperate
+        remove_trait = drunkard
+        remove_trait = hedonist
+        remove_trait = saint
+        remove_trait = sinner
+        remove_trait = wroth
+        remove_trait = cheerful
+        remove_trait = content
+        remove_trait = stressed
+        remove_trait = depressed
+        remove_trait = homosexual
+        remove_trait = homosexual_secret
+        remove_trait = chaste
+        remove_trait = lustful
+        remove_trait = seducer
+        remove_trait = seductress
+        remove_trait = paranoid
+        remove_trait = imbecile
+        remove_trait = heretic
+        remove_trait = bastard
+        remove_trait = legitimized_bastard
+        remove_trait = infirm
+        remove_trait = inbred
+        remove_trait = cynical
+        remove_trait = compassionate
+        remove_trait = socially_awkward
+        remove_trait = fickle
+        remove_trait = gamer
+        remove_trait = hunter
+        remove_trait = falconer
+        remove_trait = strategist
+        remove_trait = duelist
+        remove_trait = gardener
+        remove_trait = mystic
+        remove_trait = scholar
+        remove_trait = architect
+        remove_trait = theologian
+        remove_trait = physician
+        remove_trait = administrator
+        remove_trait = schemer
+        remove_trait = seductress
+        remove_trait = seducer
+        remove_trait = witch
+        remove_trait = fair
+        remove_trait = ugly
+        remove_trait = strong
+        remove_trait = weak
+        remove_trait = lisp
+        remove_trait = stammer
+        remove_trait = club_foot
+        remove_trait = hunchback
+        remove_trait = harelip
+        remove_trait = eunuch
+        remove_trait = infertile
+        remove_trait = impotent
+        
+        # Random stat boost
+        random_list = {
+            25 = {
+                change_learning = 2
+                set_character_flag = gained_learning_boost
+            }
+            25 = {
+                change_diplomacy = 2
+                set_character_flag = gained_diplomacy_boost
+            }
+            25 = {
+                change_martial = 2
+                set_character_flag = gained_martial_boost
+            }
+            25 = {
+                change_stewardship = 2
+                set_character_flag = gained_stewardship_boost
+            }
+        }
+        
+        # Add cooldown
+        add_character_modifier = {
+            name = altered_views_cooldown
+            duration = 1825
+        }
+        
+        character_event = { id = modernist.102 days = 1 }
+    }
+    
+    option = {}
+}
+
+character_event = {
+    id = modernist.102
+    title = EVTNAME_modernist_trait_reset_result
+    desc = {
+        trigger = { has_character_flag = gained_learning_boost }
+        text = EVTDESC_modernist_trait_reset_learning
+    }
+    desc = {
+        trigger = { has_character_flag = gained_diplomacy_boost }
+        text = EVTDESC_modernist_trait_reset_diplomacy
+    }
+    desc = {
+        trigger = { has_character_flag = gained_martial_boost }
+        text = EVTDESC_modernist_trait_reset_martial
+    }
+    desc = {
+        trigger = { has_character_flag = gained_stewardship_boost }
+        text = EVTDESC_modernist_trait_reset_stewardship
+    }
+    picture = GFX_evt_open_book_hf
+    border = GFX_event_normal_frame_religion
+    
+    is_triggered_only = yes
+    
+    immediate = {
+        clr_character_flag = gained_learning_boost
+        clr_character_flag = gained_diplomacy_boost
+        clr_character_flag = gained_martial_boost
+        clr_character_flag = gained_stewardship_boost
+    }
+    
+    option = {
+        name = EVTOPT_modernist_trait_reset_complete
+    }
+}
+
+# ########################################
+# SPIRITUAL JOURNEY - OLD MASTERS QUEST
+# ########################################
+
+narrative_event = {
+    id = modernist.200
+    title = EVTNAME_modernist_journey_prep
+    desc = EVTDESC_modernist_journey_prep
+    picture = GFX_evt_pilgrims_epic_journey
+
+    is_triggered_only = yes
+
+    option = {
+        name = EVTOPT_modernist_journey_cancel
+        piety = -10
+        remove_trait = travelling
+    }
+    
+    option = {
+        name = EVTOPT_modernist_journey_humble
+        piety = 20
+        random_list = {
+            20 = { add_trait = humble }
+            10 = { add_trait = trusting }
+            70 = { }
+        }	
+        narrative_event = { id = modernist.201 days = 7 random = 10 }
+        ai_chance = { factor = 5 }
+    }
+    
+    option = {
+        name = EVTOPT_modernist_journey_supplies
+        trigger = { wealth = 10 }
+        prestige = 20
+        wealth = -10
+        set_character_flag = journey_supplies
+        random_list = {
+            20 = { add_trait = proud }
+            10 = { add_trait = shy }
+            70 = { }
+        }
+        narrative_event = { id = modernist.201 days = 12 random = 10 }
+        ai_chance = { factor = 10 }
+    }
+    
+    option = {
+        name = EVTOPT_modernist_journey_guides
+        trigger = { wealth = 25 }
+        prestige = 20
+        wealth = -25
+        set_character_flag = journey_guides
+        random = { chance = 20 add_trait = paranoid }
+        narrative_event = { id = modernist.201 days = 15 random = 10 }
+        ai_chance = { factor = 20 }
+    }
+}
+
+narrative_event = {
+    id = modernist.201
+    title = EVTNAME_modernist_journey_arrival
+    desc = EVTDESC_modernist_journey_arrival
+    picture = GFX_evt_library
+
+    is_triggered_only = yes
+    trigger = { trait = travelling }
+    immediate = {
+        set_character_flag = journey_at_archive
+    }
+    
+    option = {
+        name = EVTOPT_modernist_journey_enter
+        prestige = 20
+        narrative_event = { id = modernist.202 days = 2}
+    }
+}
+
+narrative_event = {
+    id = modernist.202
+    title = EVTNAME_modernist_communion
+    desc = EVTDESC_modernist_communion
+    picture = GFX_evt_library
+
+    is_triggered_only = yes
+    trigger = { trait = travelling }
+    immediate = {
+        add_trait = enlightened_modernist
+    }
+    
+    option = {
+        name = EVTOPT_modernist_prepare_ascent
+        piety = 20
+        narrative_event = { id = modernist.203 days = 2}
+    }
+}
+
+narrative_event = {
+    id = modernist.203
+    title = EVTNAME_modernist_ascent
+    desc = EVTDESC_modernist_ascent
+    picture = GFX_evt_library
+    
+    is_triggered_only = yes
+
+    option = {
+        name = EVTOPT_modernist_ascent_yes
+        add_character_modifier = { name = performing_ascent duration = -1 } 
+        character_event = { id = modernist.204}
+    }
+    option = {
+        name = EVTOPT_modernist_ascent_no
+        narrative_event = { id = modernist.220 days = 2}
+    }
+}
+
+character_event = {
+    id = modernist.204
+    hide_window = yes
+    is_triggered_only = yes
+    immediate = {
+        random_list = {
+            # Old Masters encounters
+            12 = { character_event = { id = modernist.300 } }
+            12 = { character_event = { id = modernist.301 } }
+            12 = { character_event = { id = modernist.302 } }
+            12 = { character_event = { id = modernist.303 } }
+            13 = { character_event = { id = modernist.304 } }
+            13 = { character_event = { id = modernist.305 } }
+            13 = { character_event = { id = modernist.306 } }
+            13 = { character_event = { id = modernist.307 } }
+        }
+    }
+}
+
+narrative_event = {
+    id = modernist.205
+    title = EVTNAME_modernist_revelation_ends
+    desc = EVTDESC_modernist_revelation_ends
+    picture = GFX_evt_library
+    is_triggered_only = yes
+
+    immediate = {
+        remove_character_modifier = performing_ascent
+        set_character_flag = revelation_received
+    }
+    option = {
+        name = EVTOPT_revelation_expression
+        trigger = {
+            OR = {
+                has_character_flag = met_oswald
+                has_character_flag = met_raul_seixas
+                has_character_flag = met_paulo_coelho
+            }
+        }
+        narrative_event = { id = modernist.206 }
+        ai_chance = { factor = 50 }
+    }
+    option = {
+        name = EVTOPT_revelation_consciousness
+        trigger = {
+            OR = {
+                has_character_flag = met_clarice
+                has_character_flag = met_mario
+                has_character_flag = met_rosa
+            }
+        }
+        narrative_event = { id = modernist.207 }
+        ai_chance = { factor = 50 }
+    }
+    option = {
+        name = EVTOPT_revelation_form
+        trigger = {
+            OR = {
+                has_character_flag = met_oscar
+                has_character_flag = met_amado
+            }
+        }
+        narrative_event = { id = modernist.208 }
+        ai_chance = { factor = 50 }
+    }
+}
+
+narrative_event = {
+    id = modernist.206
+    title = EVTNAME_revelation_expression
+    desc = EVTDESC_revelation_expression
+    picture = GFX_evt_library
+    is_triggered_only = yes
+
+    option = {
+        name = EVTOPT_embrace_expression
+        piety = 50
+        add_trait = patron_of_arts
+        change_learning = 1
+        change_diplomacy = 2
+        
+        random_list = {
+            20 = {add_trait = poet}
+            30 = {add_trait = just}
+            50 = {add_trait = gregarious}
+        }
+        
+        narrative_event = { id = modernist.220 days = 2 }
+    }
+    
+    option = {
+        name = EVTOPT_reject_revelation
+        prestige = 50
+        ai_chance = {
+            factor = 10
+            modifier = { factor = 2 trait = cynical }
+        }
+        narrative_event = { id = modernist.220 days = 2 }
+    }
+}
+
+narrative_event = {
+    id = modernist.207
+    title = EVTNAME_revelation_form
+    desc = EVTDESC_revelation_form
+    picture = GFX_evt_library
+    is_triggered_only = yes
+
+    option = {
+        name = EVTOPT_embrace_form
+        piety = 50
+        add_trait = visionary
+        change_learning = 2
+        change_stewardship = 1
+        random_list = {
+            20 = {add_trait = architect}
+            30 = {add_trait = administrator}
+            50 = {add_trait = patient}
+        }
+        
+        narrative_event = { id = modernist.220 days = 2 }
+    }
+    
+    option = {
+        name = EVTOPT_reject_revelation
+        prestige = 50
+        ai_chance = {
+            factor = 10
+            modifier = { factor = 2 trait = cynical }
+        }
+        narrative_event = { id = modernist.220 days = 2 }
+    }
+}
+
+narrative_event = {
+    id = modernist.208
+    title = EVTNAME_revelation_consciousness
+    desc = EVTDESC_revelation_consciousness
+    picture = GFX_evt_library
+    is_triggered_only = yes
+
+    option = {
+        name = EVTOPT_embrace_consciousness
+        piety = 50
+        add_trait = enlightened_modernist
+        change_martial = 2
+        change_stewardship = 1
+        random_list = {
+            20 = {add_trait = ambitious}
+            30 = {add_trait = brave}
+            50 = {add_trait = zealous}
+        }
+        
+        narrative_event = { id = modernist.220 days = 2 }
+    }
+    
+    option = {
+        name = EVTOPT_reject_revelation
+        prestige = 50
+        ai_chance = {
+            factor = 10
+            modifier = { factor = 2 trait = cynical }
+        }
+        narrative_event = { id = modernist.220 days = 2 }
+    }
+}
+
+# ************************* Final Results ************************
+
+narrative_event = {
+    id = modernist.220
+    title = EVTNAME_modernist_journey_complete
+    desc = EVTDESC_modernist_journey_complete
+    picture = GFX_evt_carriage
+    border = GFX_event_narrative_frame_religion
+    
+    is_triggered_only = yes
+    trigger = { trait = travelling }
+    immediate = {
+        character_event = { id = modernist.221 days = 2 }
+    }
+    
+    option = {
+        name = EVTOPT_modernist_journey_success
+        piety = 50
+        prestige = 50
+        add_trait = enlightened_modernist
+        remove_trait = travelling
+        if = {
+            limit = { higher_tier_than = BARON }
+        }
+    }
+}
+
+character_event = {
+    id = modernist.221
+    hide_window = yes
+    is_triggered_only = yes
+    
+    immediate = {
+        clr_character_flag = journey_supplies
+        clr_character_flag = journey_guides
+        clr_character_flag = journey_at_archive
+        clr_character_flag = revelation_received
+        clr_character_flag = met_oswald
+        clr_character_flag = met_raul_seixas
+        clr_character_flag = met_paulo_coelho
+        clr_character_flag = met_clarice
+        clr_character_flag = met_rosa
+        clr_character_flag = met_mario
+        clr_character_flag = met_oscar
+        clr_character_flag = met_amado
+        
+        add_character_modifier = {
+            name = spiritual_journey_cooldown
+            duration = 3650
+        }
+    }
+}
+
+# ************************* OLD MASTERS ENCOUNTERS - REVISED ************************
+
+character_event = {
+    id = modernist.300
+    title = EVTNAME_master_oswald
+    desc = EVTDESC_master_oswald
+    picture = GFX_evt_library
+    is_triggered_only = yes
+
+    immediate = {
+        set_character_flag = met_oswald
+    }
+    option = { 
+        name = OK
+        narrative_event = { id = modernist.205 days = 2 }
+    }	
+}
+
+character_event = {
+    id = modernist.301
+    title = EVTNAME_master_raul_seixas
+    desc = EVTDESC_master_raul_seixas
+    picture = GFX_evt_library
+    is_triggered_only = yes
+
+    immediate = {
+        set_character_flag = met_raul_seixas
+    }
+    option = { 
+        name = OK
+        narrative_event = { id = modernist.205 days = 2 }
+    }	
+}
+
+character_event = {
+    id = modernist.302
+    title = EVTNAME_master_paulo_coelho
+    desc = EVTDESC_master_paulo_coelho
+    picture = GFX_evt_library
+    is_triggered_only = yes
+
+    immediate = {
+        set_character_flag = met_paulo_coelho
+    }
+    option = { 
+        name = OK
+        narrative_event = { id = modernist.205 days = 2 }
+    }	
+}
+
+character_event = {
+    id = modernist.303
+    title = EVTNAME_master_clarice
+    desc = EVTDESC_master_clarice
+    picture = GFX_evt_library
+    is_triggered_only = yes
+
+    immediate = {
+        set_character_flag = met_clarice
+    }
+    option = { 
+        name = OK
+        narrative_event = { id = modernist.205 days = 2 }
+    }	
+}
+
+character_event = {
+    id = modernist.304
+    title = EVTNAME_master_rosa
+    desc = EVTDESC_master_rosa
+    picture = GFX_evt_library
+    is_triggered_only = yes
+
+    immediate = {
+        set_character_flag = met_rosa
+    }
+    option = { 
+        name = OK
+        narrative_event = { id = modernist.205 days = 2 }
+    }	
+}
+
+character_event = {
+    id = modernist.305
+    title = EVTNAME_master_mario
+    desc = EVTDESC_master_mario
+    picture = GFX_evt_library
+    is_triggered_only = yes
+
+    immediate = {
+        set_character_flag = met_mario
+    }
+    option = { 
+        name = OK
+        narrative_event = { id = modernist.205 days = 2 }
+    }	
+}
+
+character_event = {
+    id = modernist.306
+    title = EVTNAME_master_oscar
+    desc = EVTDESC_master_oscar
+    picture = GFX_evt_library
+    is_triggered_only = yes
+
+    immediate = {
+        set_character_flag = met_oscar
+    }
+    option = { 
+        name = OK
+        narrative_event = { id = modernist.205 days = 2 }
+    }	
+}
+
+character_event = {
+    id = modernist.307
+    title = EVTNAME_master_amado
+    desc = EVTDESC_master_amado
+    picture = GFX_evt_library
+    is_triggered_only = yes
+
+    immediate = {
+        set_character_flag = met_amado
+    }
+    option = { 
+        name = OK
+        narrative_event = { id = modernist.205 days = 2 }
+    }	
+}
+
+# ########################################
+# ANTHROPOPHAGITE/MANEATER SYSTEM
+# ########################################
+
+character_event = {
+    id = modernist.400
+    title = EVTNAME_anthropo_feast_prompt
+    desc = EVTDESC_anthropo_feast_prompt
+    picture = GFX_evt_feast
+    border = GFX_event_normal_frame_religion
+    
+    is_triggered_only = yes
+    trigger = {
+        trait = maneater
+        religion = modernist
+        prisoner = no
+        NOT = { trait = incapable }
+    }
+    
+    option = {
+        name = EVTOPT_anthropo_feast_now
+        trigger = {
+            any_courtier = {
+                prisoner = yes
+            }
+        }
+        hidden_tooltip = {
+            character_event = { id = modernist.401 }
+        }
+        ai_chance = {
+            factor = 50
+            modifier = { factor = 2 trait = cruel }
+            modifier = { factor = 2 trait = ambitious }
+            modifier = { factor = 0.5 trait = kind }
+        }
+    }
+    
+    option = {
+        name = EVTOPT_anthropo_feast_later
+    }
+}
+
+character_event = {
+    id = modernist.401
+    title = EVTNAME_anthropo_consume
+    desc = EVTDESC_anthropo_consume
+    picture = GFX_evt_feast
+    border = GFX_event_normal_frame_religion
+    
+    is_triggered_only = yes
+    hide_window = no
+    
+    immediate = {
+        random_courtier = {
+            limit = { prisoner = yes }
+            save_event_target_as = consumed_prisoner
+        }
+    }
+    
+    option = {
+        name = EVTOPT_anthropo_consume_confirm
+        trigger = { has_event_target = consumed_prisoner }
+        hidden_tooltip = {
+            event_target:consumed_prisoner = {
+                save_event_target_as = condemned_prisoner
+                character_event = { id = modernist.402 }
+            }
+        }
+    }
+    
+    option = {
+        name = EVTOPT_anthropo_consume_cancel
+    }
+}
+
+character_event = {
+    id = modernist.402
+    title = EVTNAME_anthropo_consumed
+    desc = EVTDESC_anthropo_consumed
+    picture = GFX_evt_feast
+    
+    is_triggered_only = yes
+    hide_window = yes
+    trigger = { prisoner = yes }
+    
+    immediate = {
+        FROM = {
+            # Track the culture of consumed prisoner
+            if = {
+                limit = { event_target:condemned_prisoner = { culture = FROM } }
+                set_character_flag = anthropo_same_culture
+            }
+            else = {
+                set_character_flag = anthropo_different_culture
+            }
+            
+            # Track the religion of consumed prisoner
+            if = {
+                limit = { event_target:condemned_prisoner = { religion = FROM } }
+                set_character_flag = anthropo_same_religion
+            }
+            else = {
+                set_character_flag = anthropo_different_religion
+            }
+            
+            # Add piety based on diversity of consumption
+            if = {
+                limit = { has_character_flag = anthropo_different_culture }
+                add_piety = 25
+                if = {
+                    limit = { has_character_flag = anthropo_different_religion }
+                    add_piety = 25
+                }
+            }
+            else_if = {
+                limit = { has_character_flag = anthropo_same_culture }
+                add_piety = 10
+            }
+            
+            character_event = { id = modernist.403 }
+        }
+        
+        death = {
+            death_reason = death_execution_eaten
+            killer = FROM
+        }
+    }
+    
+    option = {}
+}
+
+character_event = {
+    id = modernist.403
+    title = EVTNAME_anthropo_result
+    desc = {
+        trigger = {
+            has_character_flag = anthropo_different_culture
+            has_character_flag = anthropo_different_religion
+        }
+        text = EVTDESC_anthropo_result_both_different
+    }
+    desc = {
+        trigger = {
+            has_character_flag = anthropo_different_culture
+            NOT = { has_character_flag = anthropo_different_religion }
+        }
+        text = EVTDESC_anthropo_result_culture_different
+    }
+    desc = {
+        trigger = {
+            has_character_flag = anthropo_same_culture
+        }
+        text = EVTDESC_anthropo_result_same
+    }
+    picture = GFX_evt_feast
+    border = GFX_event_normal_frame_religion
+    
+    is_triggered_only = yes
+    
+    immediate = {
+        clr_character_flag = anthropo_same_culture
+        clr_character_flag = anthropo_different_culture
+        clr_character_flag = anthropo_same_religion
+        clr_character_flag = anthropo_different_religion
+    }
+    
+    option = {
+        name = EVTOPT_anthropo_result
+        prestige = 10
+    }
+}
+
+# ########################################
+# ARCHITECTURALIST HOLY SITE BONUSES
+# ########################################
+
+character_event = {
+    id = modernist.500
+    title = EVTNAME_architecturalist_holy_site
+    desc = EVTDESC_architecturalist_holy_site
+    picture = GFX_evt_library
+    
+    hide_window = yes
+    is_triggered_only = yes
+    
+    trigger = {
+        trait = architecturalist
+        religion = modernist
+        is_playable = yes
+        prisoner = no
+        NOT = { is_incapable = yes }
+    }
+    
+    immediate = {
+        # Count holy sites held
+        set_variable = { which = holy_sites_held which = 0 }
+        
+        any_realm_title = {
+            limit = {
+                is_holy_site = yes
+                religion = ROOT
+            }
+            ROOT = {
+                change_variable = { which = holy_sites_held value = 1 }
+            }
+        }
+        
+        # Apply bonuses based on number of holy sites
+        if = {
+            limit = { check_variable = { which = holy_sites_held value = 1 } }
+            character_event = { id = modernist.501 }
+        }
+        else_if = {
+            limit = { check_variable = { which = holy_sites_held value = 2 } }
+            character_event = { id = modernist.502 }
+        }
+        else_if = {
+            limit = { check_variable = { which = holy_sites_held value = 3 } }
+            character_event = { id = modernist.503 }
+        }
+        else_if = {
+            limit = { check_variable = { which = holy_sites_held value = 4 } }
+            character_event = { id = modernist.504 }
+        }
+        else_if = {
+            limit = { check_variable = { which = holy_sites_held value = 5 } }
+            character_event = { id = modernist.505 }
+        }
+    }
+    
+    option = {}
+}
+
+# 1 Holy Site
+character_event = {
+    id = modernist.501
+    title = EVTNAME_architecturalist_holy_site_1
+    desc = EVTDESC_architecturalist_holy_site_1
+    picture = GFX_evt_library
+    
+    is_triggered_only = yes
+    hide_window = yes
+    
+    immediate = {
+        add_character_modifier = {
+            name = architecturalist_holy_site_1
+            duration = 1825
+        }
+    }
+    
+    option = {}
+}
+
+# 2 Holy Sites
+character_event = {
+    id = modernist.502
+    title = EVTNAME_architecturalist_holy_site_2
+    desc = EVTDESC_architecturalist_holy_site_2
+    picture = GFX_evt_library
+    
+    is_triggered_only = yes
+    hide_window = yes
+    
+    immediate = {
+        add_character_modifier = {
+            name = architecturalist_holy_site_2
+            duration = 1825
+        }
+    }
+    
+    option = {}
+}
+
+# 3 Holy Sites
+character_event = {
+    id = modernist.503
+    title = EVTNAME_architecturalist_holy_site_3
+    desc = EVTDESC_architecturalist_holy_site_3
+    picture = GFX_evt_library
+    
+    is_triggered_only = yes
+    hide_window = yes
+    
+    immediate = {
+        add_character_modifier = {
+            name = architecturalist_holy_site_3
+            duration = 1825
+        }
+    }
+    
+    option = {}
+}
+
+# 4 Holy Sites
+character_event = {
+    id = modernist.504
+    title = EVTNAME_architecturalist_holy_site_4
+    desc = EVTDESC_architecturalist_holy_site_4
+    picture = GFX_evt_library
+    
+    is_triggered_only = yes
+    hide_window = yes
+    
+    immediate = {
+        add_character_modifier = {
+            name = architecturalist_holy_site_4
+            duration = 1825
+        }
+    }
+    
+    option = {}
+}
+
+# 5 Holy Sites
+character_event = {
+    id = modernist.505
+    title = EVTNAME_architecturalist_holy_site_5
+    desc = EVTDESC_architecturalist_holy_site_5
+    picture = GFX_evt_library
+    
+    is_triggered_only = yes
+    hide_window = yes
+    
+    immediate = {
+        add_character_modifier = {
+            name = architecturalist_holy_site_5
+            duration = 1825
+        }
+    }
+    
+    option = {}
+}

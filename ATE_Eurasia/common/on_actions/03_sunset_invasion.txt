@@ -1,7 +1,7 @@
 # Character scope
 on_yearly_pulse = {
 	events = {
-		SSI.105 # Aztecs Thrown Back Into the Sea
+		brazil_invasion.105 # Brazilians Thrown Back Into the Sea
 	}
 }
 
@@ -13,18 +13,18 @@ on_five_year_pulse = {
 	random_events = {
 		sunset_invasion = {
 			917 = 0
-			 83 = SSI.1
+			 83 = brazil_invasion.1
 		}
 
-		sunset_invasion_flavour_events = {
+		brazil_invasion_flavour_events = {
 			delay = 160
 
 			680 = 0
-			270 = SSI.30 # Aztecs Fight Incas
-			270 = SSI.31 # Aztecs Pacify Northern Plains
-			270 = SSI.35 # Food From the Americas
-			400 = SSI.70 # Aztecs Bring Syphilis
-			400 = SSI.71 # Aztecs Struck by Smallpox
+			270 = brazil_invasion.30 # Brazilians Fight Incas
+			270 = brazil_invasion.31 # Brazilians Pacify Northern Plains
+			270 = brazil_invasion.35 # Food From the Americas
+			400 = brazil_invasion.70 # Brazilians Bring Syphilis
+			400 = brazil_invasion.71 # Brazilians Struck by Smallpox
 		}
 	}
 }
@@ -33,7 +33,7 @@ on_five_year_pulse = {
 # FROM opponent army owner
 on_battle_lost_owner = {
 	events = {
-		SSI.105 # Aztecs Thrown Back Into the Sea
+		brazil_invasion.105 # Brazilians Thrown Back Into the Sea
 	}
 }
 
@@ -43,7 +43,7 @@ on_battle_lost_owner = {
 # new_character is owner of siege winner unit
 on_siege_over_loc_chars = {
 	random_events = {
-		400 = SSI.61 # Aztec sacrifice
+		400 = brazil_invasion.61 # Brazilian ritual cannibalism
 	}
 }
 
@@ -51,6 +51,6 @@ on_siege_over_loc_chars = {
 # ROOT is unlanded character
 on_unlanded = {
 	events = {
-		SSI.105 # Aztecs Thrown Back Into the Sea
+		brazil_invasion.105 # Brazilians Thrown Back Into the Sea
 	}
 }

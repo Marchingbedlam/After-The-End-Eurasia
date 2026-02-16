@@ -90,29 +90,29 @@ mongol_invasion = {
 }
 
 aztec_invasion = {
-	name = "RULE_AZTEC_INVASION"
+	name = "RULE_BRAZIL_INVASION"
 	dlc = "Sunset Invasion"
 	group = "RULE_GROUP_RAILROADING"
 	alt_start_default = off
 	option = {
 		name = historical
-		text = "RULE_AZTEC_13TH"
-		desc = "RULE_AZTEC_INVASION_HISTORICAL_DESC"
+		text = "RULE_BRAZIL_31ST"
+		desc = "RULE_BRAZIL_INVASION_HISTORICAL_DESC"
 	}
 	option = {
 		name = random
 		text = "RULE_OPTION_RANDOM"
-		desc = "RULE_AZTEC_INVASION_RANDOM_DESC"
+		desc = "RULE_BRAZIL_INVASION_RANDOM_DESC"
 	}
 	option = {
 		name = delayed_random
 		text = "RULE_OPTION_DELAYED_RANDOM"
-		desc = "RULE_AZTEC_INVASION_DELAYED_RANDOM_DESC"
+		desc = "RULE_BRAZIL_INVASION_DELAYED_RANDOM_DESC"
 	}
 	option = {
 		name = off
 		text = "RULE_OPTION_OFF"
-		desc = "RULE_AZTEC_INVASION_OFF_DESC"
+		desc = "RULE_BRAZIL_INVASION_OFF_DESC"
 	}
 }
 
@@ -1458,3 +1458,5 @@ court_limit_rule = {
 		desc = "RULE_COURT_LIMIT_OFF"
 	}
 }
+
+

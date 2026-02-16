@@ -2089,3 +2089,71 @@ culture = {
 		}
 	}
 }
+
+
+culture = {
+	religion = {
+		"modernist"
+	}
+
+	templates = { 
+		"coa_plain_pagan:1"
+		#"coa_party_per_fess:2"
+		#"coa_party_per_pale:2"
+		#"coa_party_per_cross:4"
+		#"coa_party_triangle:3"
+	}
+
+	color = {
+		{ 0 0 0 }		#0		Black
+		{ 255 255 255 } #1		White
+		{ 255 255 0 }	#2		Yellow
+		{ 241 219 24 }	#3		Gold
+		{ 206 20 44 } 	#4		Red #1
+		{ 200 16 46 }	#5		Red #2
+		{ 235 34 38 }	#6		Red #3
+		{ 0 154 73 }	#7		Green #1
+		{ 0 177 64 }	#8		Green #2
+		{ 1 33 105 }	#9		Blue #1
+		{ 0 94 184 }	#10		Blue #2
+		{ 1 41 92 }		#11		Blue #3
+		{ 7 90 170 }	#12		Blue #4
+		{ 185 207 237 }	#13		Pale blue-grey
+		{ 167 169 172 }	#14		Grey
+	}
+	
+	rebel_colors = { 3 5 7 }
+
+	banned_colors = 
+	{ 
+		{ 2 3 }						#0		
+		{ 4 5 6 }					#0		
+		{ 7 8 }						#0		
+		{ 9 10 11 12 }				#0		
+		{ 13 14 }					#0		
+		{ 1 13 14 }					#0		
+	}
+
+	emblem = {
+		file = "gfx\\coats_of_arms\\emblem_muslim.dds"
+		noOfFrames = 1
+	}
+
+	# WHEN ADDING NEW, ALWAYS ADD AT THE END
+	textures = {
+		texture = {
+			file = "gfx\\coats_of_arms\\pattern_modernist.tga"
+			size = { x = 10 y = 1 }
+			noOfFrames = 10
+			color = 3
+			emblem = no
+		}
+		texture = {
+			file = "gfx\\coats_of_arms\\CoAs_Modernist.tga"
+			size = { x = 10 y = 5 }
+			noOfFrames = 50
+			color = 0
+			random = no # Do not use for random CoAs
+		}
+	}
+}

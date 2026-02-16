@@ -1,0 +1,862 @@
+# Colonization events by Vivian - adaptaded by j00j
+
+namespace = playerbrazil
+
+# Brazil - Player Controlled
+character_event = {
+	id = playerbrazil.1
+	desc = player.brazil.1
+	picture = GFX_evt_aztec_explorers
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_landed_title = k_brazil_outpost
+		NOT = { has_global_flag = aztec_arrival }
+		NOT = { 
+			has_game_rule = {
+				name = playercol
+				value = customized
+			}
+		}
+	}
+	option = {
+		trigger = {
+			b_portimao = {
+				holder_scope = {
+					ai = yes #Culls AI colonizers.
+				}
+			}
+		}
+		c_algarve = { 
+			holder_scope = {
+				grant_title_no_opinion = b_portimao
+			}
+		}
+		destroy_landed_title = k_brazil_outpost
+		death = { death_reason = death_missing }
+	}
+	option = {
+		trigger = {
+			b_portimao = {
+				holder_scope = {
+					ai = no #Culls AI colonizers.
+				}
+			}
+		}
+		grant_title_no_opinion = c_algarve
+		set_global_flag = aztec_arrival
+		wealth = 2000
+		narrative_event = { id = playerbrazil.2 }
+		capital_scope = {
+			create_character = {
+				random_traits = yes
+				dynasty = none
+				religion = modernist
+				culture = brazilian
+				female = no
+				age = 30
+			}
+			new_character = {
+				spawn_unit = {
+					province = PREV
+						troops = {
+							light_infantry = { 1241 1241 }
+							heavy_infantry = { 1010 1010 }
+							light_cavalry = { 1337 1337 }
+							knights = { 1024 1024 }
+						}
+						attrition = 0.25
+					}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = none
+				religion = modernist
+				culture = brazilian
+				female = no
+				age = 30
+			}
+			new_character = {
+				spawn_unit = {
+					province = PREV
+						troops = {
+							light_infantry = { 620 620 }
+							heavy_infantry = { 500 500 }
+							light_cavalry = { 300 300 }
+							knights = { 200 200 }
+						}
+						attrition = 0.25
+					}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = none
+				religion = modernist
+				culture = amazonense
+				female = no
+				age = 30
+			}
+			new_character = {
+				spawn_unit = {
+					province = PREV
+						troops = {
+							light_infantry = { 620 620 }
+							heavy_infantry = { 500 500 }
+							light_cavalry = { 300 300 }
+							knights = { 200 200 }
+						}
+						attrition = 0.25
+					}
+			}
+		}
+	}
+}
+
+# Brazil Landing
+narrative_event = {
+	id = playerbrazil.2
+	title = playerbrazil_TITLE
+	desc = playerbrazil_DESC
+	major = yes
+	is_triggered_only = yes
+	hide_new = yes
+	
+	picture = "GFX_evt_aztec_arrival"
+	border = "GFX_event_narrative_frame_war"
+
+	option = {
+		name = playerbrazil2.optA
+		trigger = { NOT = { has_landed_title = k_brazil_outpost } }
+	}
+	
+	option = {
+		name = playerbrazil2.optB
+		trigger = { has_landed_title = k_brazil_outpost }
+		trigger = { has_landed_title = k_brazil_outpost }
+		set_global_flag = brazil_landing
+		military_techpoints = 2000
+		economy_techpoints = 2000
+		culture_techpoints = 2000
+	}
+}
+# Arrival of the Brazilians
+narrative_event = {
+	id = playerbrazil.3 
+	title = playerbrazil.3.name
+	desc = "playerbrazil.3.desc"
+	major = yes
+	is_triggered_only = yes
+	hide_new = yes
+	
+	picture = "GFX_evt_aztec_arrival"
+	border = "GFX_event_narrative_frame_war"
+	
+	only_playable = yes
+	
+	option = {
+		name = "OK"
+		trigger = {
+			has_landed_title = e_zoropa
+			culture_group = brazilian
+		}
+		set_global_flag = aztec_arrival
+		
+		wealth = 5000
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = modernist
+			culture = brazilian
+			female = no
+			age = 30
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = c_algarve
+				troops =
+				{
+					light_infantry = { 1241 1241 }
+					heavy_infantry = { 1010 1010 }
+					light_cavalry = { 1337 1337 }
+					knights = { 1024 1024 }
+				}
+				attrition = 0.25
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = modernist
+			culture = brazilian
+			female = no
+			age = 35
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = c_algarve
+				troops =
+				{
+					archers = { 1620 1620 }
+					light_infantry = { 1100 1100 }
+					heavy_infantry = { 1230 1230 }
+				}
+				attrition = 0.25
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = modernist
+			culture = amazonense
+			female = no
+			age = 39
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = c_algarve
+				troops =
+				{
+					archers = { 1620 1620 }
+					light_infantry = { 1100 1100 }
+					heavy_infantry = { 1230 1230 }
+				}
+				attrition = 0.25
+			}
+		}
+		
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = modernist
+			culture = brazilian
+			female = no
+			age = 30
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = c_algarve
+				troops =
+				{
+					archers = { 1620 1620 }
+					light_infantry = { 1100 1100 }
+					heavy_infantry = { 1230 1230 }
+				}
+				attrition = 0.25
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = modernist
+			culture = brazilian
+			female = no
+			age = 35
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = c_algarve
+				troops =
+				{
+					archers = { 1620 1620 }
+					light_infantry = { 1100 1100 }
+					heavy_infantry = { 1230 1230 }
+				}
+				attrition = 0.25
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = modernist
+			culture = amazonense
+			female = no
+			age = 39
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = c_algarve
+				troops =
+				{
+					archers = { 1620 1620 }
+					light_infantry = { 1100 1100 }
+					heavy_infantry = { 1230 1230 }
+				}
+				attrition = 0.25
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = modernist
+			culture = brazilian
+			female = no
+			age = 30
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = c_algarve
+				troops =
+				{
+					archers = { 1620 1620 }
+					light_infantry = { 1100 1100 }
+					heavy_infantry = { 1230 1230 }
+				}
+				attrition = 0.25
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = modernist
+			culture = brazilian
+			female = no
+			age = 35
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = c_algarve
+				troops =
+				{
+					archers = { 1620 1620 }
+					light_infantry = { 1100 1100 }
+					heavy_infantry = { 1230 1230 }
+				}
+				attrition = 0.25
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = modernist
+			culture = amazonense
+			female = no
+			age = 39
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = c_algarve
+				troops =
+				{
+					archers = { 1620 1620 }
+					light_infantry = { 1100 1100 }
+					heavy_infantry = { 1230 1230 }
+				}
+				attrition = 0.25
+			}
+		}
+		
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = modernist
+			culture = brazilian
+			female = no
+			age = 30
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 70 # Merrimack
+				troops =
+				{
+					archers = { 1620 1620 }
+					light_infantry = { 1100 1100 }
+					heavy_infantry = { 1230 1230 }
+				}
+				attrition = 0.25
+			}
+		}
+		
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = modernist
+			culture = brazilian
+			female = no
+			age = 35
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 70 # Merrimack
+				troops =
+				{
+					archers = { 1620 1620 }
+					light_infantry = { 1100 1100 }
+					heavy_infantry = { 1230 1230 }
+				}
+				attrition = 0.25
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = modernist
+			culture = amazonense
+			female = no
+			age = 39
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 70 # Merrimack
+				troops =
+				{
+					archers = { 1620 1620 }
+					light_infantry = { 1100 1100 }
+					heavy_infantry = { 1230 1230 }
+				}
+				attrition = 0.25
+			}
+		}
+		new_character = {
+			spawn_unit = {
+				province = 70 # Merrimack
+				troops =
+				{
+					archers = { 1620 1620 }
+					light_infantry = { 1100 1100 }
+					heavy_infantry = { 1230 1230 }
+				}
+				attrition = 0.25
+			}
+		}
+		
+ 
+		random = {
+			chance = 50
+
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = modernist
+				culture = brazilian
+				female = no
+				age = 30
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 47 # Hartford
+					troops =
+					{
+						light_cavalry = { 960 960 }
+						archers = { 1620 1620 }
+						light_infantry = { 1100 1100 }
+						heavy_infantry = { 1230 1230 }
+					}
+					attrition = 0.25
+				}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = modernist
+				culture = brazilian
+				female = no
+				age = 35
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 47 # Hartford
+					troops =
+					{
+						light_cavalry = { 960 960 }
+						archers = { 1620 1620 }
+						light_infantry = { 1100 1100 }
+						heavy_infantry = { 1230 1230 }
+					}
+					attrition = 0.25
+				}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = modernist
+				culture = amazonense
+				female = no
+				age = 39
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 47 # Hartford
+					troops =
+					{
+						light_cavalry = { 960 960 }
+						archers = { 1620 1620 }
+						light_infantry = { 1100 1100 }
+						heavy_infantry = { 1230 1230 }
+					}
+					attrition = 0.25
+				}
+			}
+		}
+		random = {
+			chance = 50
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = modernist
+				culture = brazilian
+				female = no
+				age = 39
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 47 # Hartford
+					troops =
+					{
+						light_cavalry = { 960 960 }
+						archers = { 1620 1620 }
+						light_infantry = { 1100 1100 }
+						heavy_infantry = { 1230 1230 }
+					}
+					attrition = 0.25
+				}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = modernist
+				culture = brazilian
+				female = no
+				age = 39
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 47 # Hartford
+					troops =
+					{
+						light_cavalry = { 960 960 }
+						archers = { 1620 1620 }
+						light_infantry = { 1100 1100 }
+						heavy_infantry = { 1230 1230 }
+					}
+					attrition = 0.25
+				}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = modernist
+				culture = amazonense
+				female = no
+				age = 39
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 47 # Hartford
+					troops =
+					{
+						light_cavalry = { 960 960 }
+						archers = { 1620 1620 }
+						light_infantry = { 1100 1100 }
+						heavy_infantry = { 1230 1230 }
+					}
+					attrition = 0.25
+				}
+			}
+		}
+		
+		# Some extra courtiers
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = modernist
+			culture = brazilian
+			female = no
+			age = 16
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = modernist
+			culture = brazilian
+			female = no
+			age = 18
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = modernist
+			culture = amazonense
+			female = no
+			age = 18
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = modernist
+			culture = brazilian
+			female = no
+			age = 20
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = modernist
+			culture = brazilian
+			female = no
+			age = 25
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = modernist
+			culture = amazonense
+			female = no
+			age = 26
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = modernist
+			culture = brazilian
+			female = no
+			age = 28
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = modernist
+			culture = brazilian
+			female = yes
+			age = 16
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = modernist
+			culture = amazonense
+			female = yes
+			age = 17
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = modernist
+			culture = brazilian
+			female = yes
+			age = 18
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = modernist
+			culture = brazilian
+			female = yes
+			age = 18
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = modernist
+			culture = amazonense
+			female = yes
+			age = 20
+		}
+	}
+	option = {
+		name = "Brazilians.2.optA"
+		trigger = {
+			religion = modernist
+			NOT = { has_landed_title = e_zoropoa }
+		}
+	}
+	option = {
+		name = "Brazilians.2.optB"
+		trigger = {
+			religion_group = christian
+			NOT = { has_landed_title = e_zoropoa }
+		}
+	}
+	option = {
+		name = "Brazilians.2.optC"
+		trigger = {
+			NOT = { religion_group = christian }
+			NOT = { religion = modernist }
+			NOT = { has_landed_title = e_zoropoa }
+		}
+	}
+}
+character_event = {
+	id = playerbrazil.5
+	desc = player.brit.1
+	picture = GFX_evt_aztec_explorers
+	hide_window = yes
+	
+	trigger = {
+		has_landed_title = k_brazil_outpost
+		NOT = { has_global_flag = aztec_arrival }
+		has_game_rule = {
+			name = playercol
+			value = customized
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		trigger = {
+			b_portimao = {
+				holder_scope = {
+					ai = yes #Culls AI colonizers.
+				}
+			}
+		}
+		c_algarve = { 
+			holder_scope = {
+				grant_title_no_opinion = b_portimao
+			}
+		}
+		set_global_flag = aztec_arrival
+		destroy_landed_title = k_brazil_outpost
+		death = { death_reason = death_vanished }
+	}
+	option = {
+		trigger = {
+			b_portimao = {
+				holder_scope = {
+					ai = no #Culls AI colonizers.
+				}
+			}
+		}
+		grant_title_no_opinion = c_algarve
+		set_global_flag = aztec_arrival
+		wealth = 2000
+		narrative_event = { id = playerbrazil.2 }
+		capital_scope = {
+			create_character = {
+				random_traits = yes
+				dynasty = none
+				religion = modernist
+				culture = brazilian
+				female = no
+				age = 30
+			}
+			new_character = {
+				spawn_unit = {
+					province = PREV
+						troops = {
+							light_infantry = { 1241 1241 }
+							heavy_infantry = { 1010 1010 }
+							light_cavalry = { 1337 1337 }
+							knights = { 1024 1024 }
+						}
+						attrition = 0.25
+					}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = none
+				religion = modernist
+				culture = brazilian
+				female = no
+				age = 30
+			}
+			new_character = {
+				spawn_unit = {
+					province = PREV
+						troops = {
+							light_infantry = { 620 620 }
+							heavy_infantry = { 500 500 }
+							light_cavalry = { 300 300 }
+							knights = { 200 200 }
+						}
+						attrition = 0.25
+					}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = none
+				religion = modernist
+				culture = amazonense
+				female = no
+				age = 30
+			}
+			new_character = {
+				spawn_unit = {
+					province = PREV
+						troops = {
+							light_infantry = { 620 620 }
+							heavy_infantry = { 500 500 }
+							light_cavalry = { 300 300 }
+							knights = { 200 200 }
+						}
+						attrition = 0.25
+				}
+			}
+		}
+	}
+}
+

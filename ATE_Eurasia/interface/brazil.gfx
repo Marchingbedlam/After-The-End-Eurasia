@@ -1,0 +1,37 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_trait_alternativeviews"
+		texturefile = "gfx/traits/alternativeviews.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_architecturalist"
+		texturefile = "gfx/traits/architecturalist.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_maneater"
+		texturefile = "gfx/traits/maneater.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_veredite"
+		texturefile = "gfx/traits/veredite.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_saudosism"
+		texturefile = "gfx/traits/saudosism.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+}

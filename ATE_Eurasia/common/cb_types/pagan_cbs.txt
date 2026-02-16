@@ -1000,7 +1000,8 @@ tribal_invasion = {
 								culture_group = altaic
 								culture_group = magyar
 								culture_group = mesoamerican
-							}
+									culture_group = brasileiro
+								}
 
 							OR = {
 								is_tribal = yes
@@ -1011,7 +1012,7 @@ tribal_invasion = {
 
 									OR = {
 										has_landed_title = e_mongol_empire
-										has_landed_title = e_aztec_empire
+										has_landed_title = e_zoropa
 									}
 								}
 							}
@@ -1021,7 +1022,10 @@ tribal_invasion = {
 								NOT = { religion_group = christian }
 							}
 							trigger_else = {
-								religion_group = pagan_group
+								OR = {
+									religion_group = pagan_group
+									has_landed_title = e_zoropa
+								}
 								NOT = { religion_group = FROM } # Should subjugate these instead
 							}
 						}
@@ -1179,7 +1183,7 @@ tribal_invasion = {
 				}
 
 				if = {
-					limit = { has_landed_title = e_aztec_empire }
+					limit = { has_landed_title = e_zoropa }
 
 					any_realm_province = {
 						limit = {
@@ -1191,8 +1195,8 @@ tribal_invasion = {
 							}
 						}
 
-						culture = nahua
-						religion = aztec_pagan
+						culture = brazilian
+						religion = modernist
 						clr_province_flag = aztec_explorers
 						clr_province_flag = aztec_second_wave
 					}
@@ -1369,7 +1373,7 @@ tribal_invasion = {
 					ROOT = {
 						OR = {
 							has_landed_title = e_mongol_empire
-							has_landed_title = e_aztec_empire
+							has_landed_title = e_zoropa
 						}
 					}
 				}
@@ -3124,3 +3128,4 @@ truebelievers_bid_for_independence = {
 		factor = 100
 	}
 }
+

@@ -2662,6 +2662,43 @@ scholastic = {
 	
 	interface_skin = { pagan_interface }
 
+	modernist = {
+		graphical_culture = hellenicgfx
+		secondary_event_pictures = westerngfx
+
+		icon = 38
+		heresy_icon = 38
+		
+		color = { 235 177 96 }
+		
+		interface_skin = { modernist_interface taoist_interface indian_interface muslim_interface }
+		
+		high_god_name = GOD_OLD_MASTERS
+		
+		god_names = {
+			GOD_NONADA GOD_MESTRE_ROSAS GOD_MESTRE_LISPECTOR GOD_MESTRE_COELHO GOD_MESTRE_MALFATTI GOD_MESTRE_OSWALDO GOD_MESTRE_TARSILA GOD_MESTRE_FREIRE GOD_MESTRE_RAMOS GOD_MESTRE_AMADO GOD_MESTRE_RAUL
+		}
+		
+		evil_god_names = {
+			GOD_IGNORANCE GOD_ADAM GOD_PARNASUDO GOD_FRANCESADA
+		}
+		
+		can_grant_divorce = yes
+		priests_can_inherit = yes
+		priests_can_marry = yes
+		allow_rivermovement = yes
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+		
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = MIMEOGRAPHED_TEXTS
+		priest_title = EXPOSITOR
+		piety_name = INNOVATION
+
+
+	}
+
 	glorian = {
 		graphical_culture = hellenicgfx
 		secondary_event_pictures = westerngfx

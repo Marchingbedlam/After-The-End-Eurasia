@@ -1,0 +1,21 @@
+bm_transatlantic = {
+	name = "bm_transatlantic"
+	desc = "bm_transatlantic_desc"
+	date = 2666.7.4
+	
+	custom_start = yes				## Choosing "Custom Start" will open this bookmark
+	picture = GFX_pick_era_image_1
+
+	selectable_character = {
+		id = 9000091 
+		age = 26
+		title = k_brazil_outpost 
+		title_name = BRAZIL_OUTPOST 
+		character = {
+			religion="modernist"
+			culture="brazilian"
+			#government = feudal_government
+			dynasty=1889999		
+		}
+	}
+}

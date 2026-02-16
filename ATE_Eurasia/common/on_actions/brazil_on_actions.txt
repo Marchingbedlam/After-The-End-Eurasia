@@ -1,0 +1,24 @@
+on_startup = {
+    events = {
+        modernist.1 # Choose Modernist Branch
+		playerbrazil.1 # Brazilian Invaders
+    }
+}
+on_five_year_pulse = {
+    events = {
+        modernist.500 # Architecturalist holy site bonuses
+    }
+}
+
+on_adulthood  = {
+	events = {
+		modernist.1
+	}
+}
+
+
+on_character_convert_religion = {
+	events = {
+		modernist.1
+	}
+}

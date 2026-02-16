@@ -1,0 +1,51 @@
+
+e_zoropa = {
+	color = { 255 204 0 }
+
+	color2= { 255 255 255 }
+
+	capital = 392 #Lisbon
+
+	culture = brazilian
+	religion = modernist
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	#tribe = yes
+
+	short_name = yes
+
+	allow = {
+		always = no
+	}
+
+}
+k_brazil_outpost = {
+	color = { 255 250 0 }
+
+	color2= { 255 255 255 }
+
+	capital = 392 #Lisbon
+
+	culture = brazilian
+	religion = modernist
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	#tribe = yes
+
+	short_name = yes
+
+	allow = {
+		always = no
+	}
+
+}

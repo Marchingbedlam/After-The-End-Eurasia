@@ -2742,6 +2742,33 @@ religious = {
 		attacker = {
 			show_scope_change = no
 
+			# Anthropofagian special effect
+			if = {
+				limit = {
+					trait = maneater
+				}
+
+				hidden_effect = {
+
+					# Loop over all titles taken in this CB
+					PREV = {
+						# Former holder of the title
+						any_vassal = {
+							limit = {
+								NOT = { religion = ROOT }
+							}
+
+							imprison = ROOT
+						}
+					}
+					
+					character_event = {
+						id = modernist.400
+						days = 1
+					}
+				}
+			}
+
 			if = { # Standard Holy War behaviour for Non-Muslims and Muslims fighting other Muslims
 				limit = {
 					ROOT = {
