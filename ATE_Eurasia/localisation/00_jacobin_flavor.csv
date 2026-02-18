@@ -48,7 +48,100 @@ reconquest_balc_desc;Undertake a large campaign to chase the heathens out of the
 CB_NAME;RECONQUEST_BRITTANY;Maquis War for Brittany;;;;;;;;;;;;;x
 WAR_NAME_RECONQUEST_BRITTANY;Maquis War to resist and reconquer Brittany from the tyrannic rule of [k_brittany.Holder.GetTitledName];;;;;;;;;;;;;x
 reconquest_brittany_desc;Undertake a large campaign to chase the heathens out of the kingdom of Brittany.;;;;;;;;;;;;;x
+EVTDESC_jacobin_1;Every Jacobin follower can choose a key figure from Jacobin mythology to focus on and took inspiration from for the rest of their life. This choice is crucial in a Jacobin follower's life, as it is irrevocable and defines the rest of their life.;;;;;;;;;;;;;x 
+EVTOPTA_jacobin_1;I will focus and took inspiration from Marianne;;;;;;;;;;;;;x
+EVTOPTB_jacobin_1;I will focus and took inspiration from the Emperor;;;;;;;;;;;;;x
+EVTOPTC_jacobin_1;I will focus and took inspiration from the General;;;;;;;;;;;;;x
 EVTDESC_jacobin_13;Your various actions and misdeeds have shown you aren't worthy of our Rightful Marianne's consideration. You have gained the tyrant trait.;;;;;;;;;;;;;x
 EVTOPTA_jacobin_13;Curses!;;;;;;;;;;;;;x
 EVTDESC_jacobin_14;Through comittment and self-questioning, you have rejected [ROOT.GetEvilGodName] and its sins. You are no longer a tyrant.;;;;;;;;;;;;;x
 EVTOPTA_jacobin_14;I knew Marianne was with me!;;;;;;;;;;;;;x
+EVTDESC_jacobin_15;I shall go to pilgrimage in one of the holy places of Jacobin Faith.;;;;;;;;;;;;;x
+EVTOPTA_jacobin_15;I will start making travel plans.;;;;;;;;;;;;;x
+EVTDESC_jacobin_16;There are a number of diffrent holy places that you could visit on your pilgrimage. All of them are considered as sacred by followers of jacobin faith - two of them: Paris and Marseille are considered to be most sacred among them, but other sites are also believed to be sacred.;;;;;;;;;;;;;x
+EVTOPTA_jacobin_16;I shall visit two most important french cities - Paris or Marseille;;;;;;;;;;;;;x
+EVTOPTB_jacobin_16;I shall visit Paris;;;;;;;;;;;;;x
+EVTOPTC_jacobin_16;I shall visit Marseille;;;;;;;;;;;;;x
+EVTOPTD_jacobin_16;I shall visit other holy sites;;;;;;;;;;;;;x
+EVTDESC_jacobin_17;Paris and Marseille are the two holiest cities, where, according to the Jacobins' beliefs, the ideals of liberty, equality and fraternity were created, which they profess to this day.;;;;;;;;;;;;;x
+EVTDESC_jacobin_18;Austerlitz, London, and Colombey les Deux Église are also holy cities, scarcely inferior to the dignity of Paris and Marseille, and to which the route is safer.;;;;;;;;;;;;;x
+EVTOPTA_jacobin_18;I shall visit Austerlitz - the place of the Emperor's greatest triumph;;;;;;;;;;;;;x
+EVTOPTB_jacobin_18;I shall visit London - the place of first tyrant execution;;;;;;;;;;;;;x
+EVTOPTC_jacobin_18;I shall visit Colombey les Deux Église - the hometown of the General;;;;;;;;;;;;;x 
+EVTDESC_jacobin_19;My things are packed, everything is in order. You say goodbye to your estate and go on an unforgotten pilgrimage to Paris – the place where the Bastille was destroyed and where the venerable Republic was founded...;;;;;;;;;;;;;;x
+EVTDESC_jacobin_20;My things are packed, everything is in order. You say goodbye to your estate and go on an unforgotten pilgrimage to Marseille – the second place where the Republic and the Revolution flourished. There, according to legend, the miraculous Marianne was born.;;;;;;;;;;;;;x
+EVTDESC_jacobin_21;My things are packed, everything is in order. You say goodbye to your estate and go on an unforgotten pilgrimage to Austerlitz – an inconspicuous town in Moravia, where the Emperor miraculously defeated the forces of perfidious tyrants.;;;;;;;;;;;;;x
+EVTDESC_jacobin_22;My things are packed, everything is in order. You say goodbye to your estate and go on an unforgotten pilgrimage to Colombey les Deux Église—the hometown of the General, who later saved the Republic from the forces of perfidy.;;;;;;;;;;;;;x
+EVTDESC_jacobin_23;My things are packed, everything is in order. You say goodbye to your estate and go to an unforgotten pilgrimage to London - the city where first tyrant king was behanded.;;;;;;;;;;;;;x
+EVTOPTA_jacobin_19;Time to go!;;;;;;;;;;;;;x
+EVTNAME_jacobin_24;Paris;;;;;;;;;;;;;x
+EVTDESC_jacobin_24;You reach Paris—the holy city. It was here, many years ago, that Marianne led the furious people of Paris against the perfidious king. It was here that the most important events in the history of the venerable Republic took place—here La Declaration was signed and here that many of Marianne's followers shed blood for the Republic. You pass the ruins of this venerable city—the ruins of the Eiffel Tower, built long before the Event, during the heyday of the Republic—past ancient temples and streets. Soon you reach the Panthéon—the most important place in Paris. You enter and feel the great Frenchmen buried here over the centuries gazing down upon you. You fall to your knees and listen intently to what Marianne expects of you...;;;;;;;;;;;;;x
+EVTOPTA_jacobin_24;Vive la République et Marianna!;;;;;;;;;;;;;x
+EVTNAME_jacobin_25;Marseille;;;;;;;;;;;;;x
+EVTDESC_jacobin_25;You reach Marseille – a vast port city unfolds before your eyes. Years ago, it was here that the most loyal legionnaires of the Republic and the Emperor were born, those who died for Marianne. Although Marseille today is not what it was before the Event, it is still a large and impressive city – it was also here that the Jacobins' most sacred anthem, La Marseillaise, was composed. You pass through successive streets and reach the market square – the place where sentences were announced and carried out in Marianne's name. There, you pause for a moment to pay homage to those who stood here and sang this venerable anthem for the first time.;;;;;;;;;;;;;x
+EVTOPTA_jacobin_25;Vive la République et Marianna!;;;;;;;;;;;;;x
+EVTNAME_jacobin_26;Austerlitz;;;;;;;;;;;;;x
+EVTDESC_jacobin_26;You reach Austerlitz – an inconspicuous town in Moravia. Today, it's a musty hole near Brno. You see a large field in the distance – there, many years ago, the Emperor defeated the forces of the perfidious Emperor of Austria and proved to him that the forces of Marianne's veneration were capable of resisting the perfidy of kings and tyrants. Then, after strolling through these sacred fields, where so much French blood was shed, you reach the Peace Monument – a large monument crowned with a cross. According to legend, this was the place from which the Emperor commanded his legions. Here, you pay him silent homage, singing "La Chant du Depart".;;;;;;;;;;;;;x
+EVTOPTA_jacobin_26;La victoire en chantant...!;;;;;;;;;;;;;x
+EVTNAME_jacobin_27;Colombey les Deux Église;;;;;;;;;;;;;x
+EVTDESC_jacobin_27;You arrive in Colombey les Deux Église, a modest village near Chaumont. To the casual German or English merchant, this town may not seem like much, but for a loyal follower of the General, it is the most important city, after Paris and Marseille. It was here, many years ago, that the General was born—the man who saved the Republic from the perfidious German tyrants. First, passing the town's modest houses, you stand before his monument—a large Cross of Lorraine, the symbol worn by legionnaires years ago. Then you visit his childhood home, known as La Boisserie, where he was born. Despite many years, it has not suffered much damage and is cared for by locals who fervently worship Marianne and the General. Soon, you enter the house to pay your respects, along with the others gathered there.;;;;;;;;;;;;;x
+EVTOPTA_jacobin_27;Général, nous sommes avec vous...;;;;;;;;;;;;;x
+EVTNAME_jacobin_28;London;;;;;;;;;;;;;x
+EVTDESC_jacobin_28;You arrive in London—the largest city in England and the ancient capital of this country. You see many old buildings—Westminster Abbey, Buckingham Palace, and others—but you are interested in only one place: the Banqueting House. It was in front of this house, many years ago, before the Emperor and the General began their wars, that the English, enlightened by Marianne, overthrew their tyrant king, Charles I, and guillotined him, according to legend. So you walk up to the house—there you see many people, both locals and visitors from all over the world. You approach to pay silent homage to Cromwell and his companions, who overthrew the perfidious tyranny of the Stuarts.;;;;;;;;;;;;;x
+EVTOPTA_jacobin_28;Vive la Cromwell!;;;;;;;;;;;;;x
+warrior_lodge_jacobin;Enfants de la Patrie;;;;;;;;;;;;;x
+warrior_lodge_jacobin_desc;Although the French fatherland has fallen, those who should protect it have not. The Enfants de la Partie, or "Children of the Fatherland," are precisely that—men of the sword, conspiring against the perfidious tyrants oppressing the fatherland, who will bring revolution and the ideals of liberty, equality, and fraternity to all of France.;;;;;;;;;;;;;x
+warrior_lodge_jacobin_rank_1_male;Cadette;;;;;;;;;;;;;x
+warrior_lodge_jacobin_rank_2_male;Soldat;;;;;;;;;;;;;x
+warrior_lodge_jacobin_rank_3_male;Officier;;;;;;;;;;;;;x
+warrior_lodge_jacobin_rank_4_male;Maréchal de France;;;;;;;;;;;;;x
+warrior_lodge_jacobin_rank_1_female;Cadette;;;;;;;;;;;;;x
+warrior_lodge_jacobin_rank_2_female;Soldat;;;;;;;;;;;;;x
+warrior_lodge_jacobin_rank_3_female;Officier;;;;;;;;;;;;;x
+warrior_lodge_jacobin_rank_4_female;Maréchal de France;;;;;;;;;;;;;x
+religion_openly_jacobin_trigger;Is follower of Marianne of friends of her followers.;;;;;;;;;;;;;x
+currency_name_warrior_lodge_jacobin;Patriotisme;;;;;;;;;;;;;x
+EVTDESC_jacobin_1;Each Jacobin follower may choose Marianne, the Emperor, or the General as their focus and inspiration, but they may only do so once, so choose carefully.;;;;;;;;;;;;;x
+EVTOPTA_jacobin_1;I will focus of Marianne, mother of France;;;;;;;;;;;;;x
+EVTOPTB_jacobin_1;I will focus of the Emperor, great conqueror of Europe;;;;;;;;;;;;;x
+EVTOPTC_jacobin_1;I will focus of the General, savior of fatherland;;;;;;;;;;;;;x
+go_to_jacobin_pilgrimage;Go to pilgrimage;;;;;;;;;;;;;x
+go_to_jacobin_pilgrimage_desc;Go to pilgrimage;;;;;;;;;;;;;x
+nick_the_jacobin_general;Le Général;;;;;;;;;;;;;x
+nick_the_jacobin_emperor;L'Empereur;;;;;;;;;;;;;x
+jacobin_government;Republican Bureaucracy;;;;;;;;;;;x
+jacobin_government_desc;The system of republican bureaucracy perpetuated by the Jacobins stems from the legacy of the pre-Event French Republic, which, as a unitary state, was divided into a series of administrative units: regions, departments, arrondissements, cantons, and communes. This system of government is characterized by a strict hierarchy at each administrative level and a lack of strict division between nobility and peasantry.;;;;;;;;;;;x
+k_jacobin;French Republic;;;;;;;;;;;x
+k_jacobin_adj;French;;;;;;;;;;;x
+PRESIDENT;Président;;;;;;;;;;;x
+gov_jacobin;Republican Administration;;;;;;;;;;;x
+constitutionalist;Gallican;;;;;;;;;;;x
+constitutionalist_DESC;The origins of the Gallican Church date back to the time before the Event, when French priests and bishops developed a belief that national customs were above universal canon law, and that the pope had a ruling voice only in matters of faith and morals, not in disciplinary matters. After the rise of Jacobinism, most Gallicans supported the Revolution. Although Gallicanism declined centuries before the Event, it was revived after the Event when the last bishop of Orleans, in communion with Rome and in agreement with the Jacobins, declared himself pope of a new, licensed church operating in Jacobin-controlled countries. Today, the Gallicans still maintain the supremacy of the council over the pope and express full support for the Jacobins' postulates.;;;;;;;;;;;x
+d_constitutionalist;Gallican Papacy;;;;;;;;;;;x
+WAR_NAME_JACOBIN_PRESIDENCY_WAR;War for Presidency;;;;;;;;;;;x
+jacobin_presidency_war;War for Presidency;;;;;;;;;;;x
+CB_NAME_JACOBIN_PRESIDENCY_WAR;War for Presidency;;;;;;;;;;;x
+WAR_NAME_JACOBIN_PRESIDENCY_WAR;War for Presidency;;;;;;;;;;;x
+jacobin_presidency_war_desc;The French president is weak, and his weakness demonstrates his inability to realize the ideals of liberty, equality, and fraternity. And if he is unable to realize these ideals, then he is a public enemy, an enemy of the revolution.;;;;;;;;;;;x
+JACOBIN_PRESIDENCY_VICTORY_TT;You become the new President of France, and your predecessor ends up on the guillotine.;;;;;;;;;;;x
+temple_baron_jacobin;Prétre;;;;;;;;;x
+temple_baron_jacobin_female;Prétresse;;;;;;;;;x
+temple_barony_of_jacobin;Maison of;;;;;;;;;x
+temple_count_jacobin;Grand Prétre;;;;;;;;x
+temple_count_jacobin;Grande Prétresse;;;;;;;;x
+temple_county_of_jacobin;Commune of;;;;;;;;;x
+temple_duke_jacobin;Archiprétre;;;;;;;;;x
+temple_duke_jacobin_female;Archiprétresse;;;;;;;;;x
+temple_duchy_of_jacobin;République des Mariannes of;;;;;;;;;x
+school_of_talleyrand;School of Talleyrand;;;;;;;;;x
+school_of_pascal;School of Pascal;;;;;;;;;x
+school_of_lamennais;School of Lamennais;;;;;;;;;x
+school_of_talleyrand_desc;This character follows the theological school of Charles-Maurice de Talleyrand, a Gallican saint and Doctor of the Church, whose theology emphasized pragmatism and good relations with non-Christian philosophers, who, according to his theology, held seeds of truth in their teachings. Charles-Maurice was renowned for serving as advisor and chancellor to the Emperor during the early years of the Revolution, a Jacobin hero who fought against the forces of perfidy.;;;;;;;;;x
+school_of_pascal_desc;This character follows the theological school of Blaise Pascal, a Gallican saint and Doctor of the Church, whose theology emphasized mysticism and a complete recognition of oneself as powerless against God's will. Among the Gallicans, this school is the furthest removed from orthodox Catholicism, emphasizing poverty of spirit and of the Church, as well as the conviction that we are but dust of the earth, and that all beautiful things, like the Republic, are transient and nothing compared to the "Divine Republic" that will come after the Parousia. Blaise Pascal is known for living in the times before the people, enlightened by Marianne, overthrew tyrannical kings, yet he opposed them with his pen and mouth.;;;;;;;;;x
+school_of_lamennais_desc;This character follows the theological school of Hugo Lamennais, a Gallican saint and Doctor of the Church. This school is characterized by a particular sympathy for Jacobin ideas. According to its members, it is dogma that all power comes from the people (other schools support this teaching, though they do not accord it the status of dogma), and the papacy was established by the First Lateran Council, it did not exist before, and its power was delegated to it by the Church. Lamennais is known for having been imprisoned for many years by the perfidious and tyrannical King Charles of Bourbon before the venerable Louis-Philippe personally released him, thanking him for his struggle on Marianne's behalf.;;;;;;;;;x
+change_gallican_branch;Choose Theological School;;;;;;;;;x
+change_gallican_branch_desc;Since the Gallican Church was established in France as a tolerated Christian church in the Jacobin states, three theological schools have developed which today dominate the theological and pastoral discourse among the Gallicans: the Talleyrand School, which emphasizes dialogue with the neuhumanist philosophies, the Pascal School, which emphasizes mysticism and dialogue with other Christian denominations, and the Lamennais School, which emphasizes the connection between Gallicanism and Jacobinism even more than the other schools.;;;;;;;;;x
+EVTDESC_jacobin.29;Since the Gallican Church was established in France as a tolerated Christian church in the Jacobin states, three theological schools have emerged, which today dominate theological and pastoral discourse among Gallicans. As a faithful Gallican, you can choose which school of thought you will follow.;;;;;;;;;x
+EVTOPTA_jacobin.29;I will follow School of Talleyrand;;;;;;;;;x
+EVTOPTB_jacobin.29;I will follow School of Pascal;;;;;;;;;x
+EVTOPTC_jacobin.29;I will follow School of Lamennais;;;;;;;;;x

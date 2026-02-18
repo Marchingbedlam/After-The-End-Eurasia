@@ -927,6 +927,55 @@ spriteTypes = {
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
+	spriteType = {
+		name = "GFX_trait_worker_saint_molotov"
+		texturefile = "gfx/traits/worker_saint_molotov.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_worker_saint_lenin"
+		texturefile = "gfx/traits/worker_saint_lenin.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_worker_saint_the_marshal"
+		texturefile = "gfx/traits/worker_saint_the_marshal.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_worker_saint_lysenko"
+		texturefile = "gfx/traits/worker_saint_lysenko.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_school_of_talleyrand"
+		texturefile = "gfx/traits/gallican_telleyrand.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_school_of_pascal"
+		texturefile = "gfx/traits/gallican_pascal.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_school_of_lamennais"
+		texturefile = "gfx/traits/gallican_lamennais.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
 	
 	#Ambitions
 	spriteType = {
@@ -1261,5 +1310,9 @@ spriteTypes = {
 			spriteType = {
 		name = "GFX_integrate_belarus"
 		texturefile = "gfx\\interface\\decision_icon_integrate_belarus.dds"
+	}
+	spriteType = {
+		name = "GFX_change_gallican_branch"
+		texturefile = "gfx\\interface\\decision_icon_tell_a_story_decision.dds"
 	}
 }
