@@ -2128,3 +2128,134 @@ third_estate = {
 
 	monthly_character_wealth = 0.03
 }
+
+worker_saint_lenin = {
+	opposites = {
+		worker_saint_molotov
+		worker_saint_the_marshal
+		worker_saint_lysenko
+	}
+	
+	stewardship = 1
+	monthly_character_piety = 0.20
+	
+	potential = { religion = proletcult }
+	religious_branch = proletcult
+	random = no 
+	religious = yes
+	ruler_designer_cost = 0
+}
+
+worker_saint_molotov = {
+	opposites = {
+		worker_saint_lenin
+		worker_saint_the_marshal
+		worker_saint_lysenko
+	}
+	
+	diplomacy = 1
+	monthly_character_piety = 0.20
+	
+	potential = { religion = proletcult }
+	religious_branch = proletcult
+	random = no 
+	religious = yes
+	ruler_designer_cost = 0
+}
+
+worker_saint_the_marshal = {
+	opposites = {
+		worker_saint_lenin
+		worker_saint_molotov
+		worker_saint_lysenko
+	}
+	
+	martial = 1
+	monthly_character_piety = 0.20
+	
+	potential = { religion = proletcult }
+	religious_branch = proletcult
+	random = no 
+	religious = yes
+	ruler_designer_cost = 0
+}
+
+worker_saint_lysenko = {
+	opposites = {
+		worker_saint_lenin
+		worker_saint_molotov
+		worker_saint_the_marshal
+	}
+	
+	learning = 1
+	monthly_character_piety = 0.20
+	
+	potential = { religion = proletcult }
+	religious_branch = proletcult
+	random = no 
+	religious = yes
+	ruler_designer_cost = 0
+}
+
+school_of_talleyrand = {
+	opposites = {
+		school_of_pascal
+		school_of_lamennais
+	}
+	
+	diplomacy = 1
+	neuhumanist_opinion = 5
+	thelema_opinion = 5
+	chronicler_opinion = 5
+	opposite_opinion = -5
+	monthly_character_piety = 0.20
+	
+	potential = { religion = constitutionalist }
+	religious_branch = constitutionalist
+	random = no 
+	religious = yes
+	ruler_designer_cost = 0
+}
+
+school_of_pascal = {
+	opposites = {
+		school_of_talleyrand
+		school_of_lamennais
+	}
+	
+	intrigue = 1
+	catholic_opinion = 5
+	mariavite_opinion = 5
+	coronite_opinion = 5
+	sun_king_cultist_opinion = 5
+	glorian_opinion = 5
+	poet_opinion = 5
+	opposite_opinion = -5
+	monthly_character_piety = 0.20
+	
+	potential = { religion = constitutionalist }
+	religious_branch = constitutionalist
+	random = no 
+	religious = yes
+	ruler_designer_cost = 0
+}
+
+school_of_lamennais = {
+	opposites = {
+		school_of_talleyrand
+		school_of_pascal
+	}
+	
+    learning = 1
+	jacobin_opinion = 5
+	proletcult_opinion = 5
+	jedinstvo_opinion = 5
+	opposite_opinion = -5
+	monthly_character_piety = 0.20
+	
+	potential = { religion = constitutionalist }
+	religious_branch = constitutionalist
+	random = no 
+	religious = yes
+	ruler_designer_cost = 0
+}

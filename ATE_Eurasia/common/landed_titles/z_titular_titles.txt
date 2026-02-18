@@ -311,6 +311,40 @@ e_roman_empire = {
 	}
 }
 
+e_austria = {
+	color={ 260 260 260 }
+	color2={ 255 255 255 }
+	
+	capital = 589 #Vienna
+	
+	rhenish="Österreich"
+	low_saxon="Österreich"
+	ossi="Österreich"
+	upper_saxon="Österreich"
+	bavarian="Östareich"
+	swabian="Eschtrych"
+	austrian="Österreich"
+	schwyzer="Eschtrych"
+	walloon="Otriche"
+	chti="Otriche"
+	parisian="Autriche"
+	slovene="Avstrija"
+	czech="Rakousko"
+	dutch="Oostenrijk"
+	flemish="Ôostnryk"
+    frisian="Eastenryk"
+	sorbian="Awstriska"
+	luxembourger="Éisträich"
+	arpitan="Ôtriche"
+	occitan="Àustria"
+	provencal="Ëustria"
+	palatinate="Eestraisch"
+	
+	allow = {
+		always = no # Only created through special event
+	}
+}
+
 ### titular kingdoms ###
 
 k_benelux = {

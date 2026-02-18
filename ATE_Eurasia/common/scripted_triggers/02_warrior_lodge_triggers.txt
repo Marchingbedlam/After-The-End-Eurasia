@@ -35,8 +35,11 @@ is_member_of_roots_warrior_lodge_trigger = {
 is_member_of_any_warrior_lodge_trigger = {
 	custom_tooltip = {
 		text = is_member_of_any_warrior_lodge_tt
-
-		society_member_of = warrior_lodge_glorian
+        OR = {
+		    society_member_of = warrior_lodge_glorian
+			society_member_of = warrior_lodge_jacobin
+			society_member_of = warrior_lodge_proletcult
+		}
 	}
 }
 
@@ -393,6 +396,36 @@ special_join_warrior_lodge_trigger = {
 					any_vassal = { religion_openly_glorian_trigger = yes }
 					any_liege = { religion_openly_glorian_trigger = yes }
 					any_neighbor_independent_ruler = { religion_openly_glorian_trigger = yes }
+				}
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				FROM = { is_society = warrior_lodge_jacobin }
+			}
+
+			custom_tooltip = {
+				text = has_liege_vassal_or_neighbor_of_jacobin_religion_tt
+
+				OR = {
+					any_vassal = { religion_openly_jacobin_trigger = yes }
+					any_liege = { religion_openly_jacobin_trigger = yes }
+					any_neighbor_independent_ruler = { religion_openly_jacobin_trigger = yes }
+				}
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				FROM = { is_society = warrior_lodge_proletcult }
+			}
+
+			custom_tooltip = {
+				text = has_liege_vassal_or_neighbor_of_proletcult_religion_tt
+
+				OR = {
+					any_vassal = { religion = proletcult }
+					any_liege = { religion = proletcult }
+					any_neighbor_independent_ruler = { religion = proletcult }
 				}
 			}
 		}

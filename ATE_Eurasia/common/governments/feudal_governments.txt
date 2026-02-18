@@ -1210,12 +1210,13 @@ feudal_governments = {
 	}
 	
 	jacobin_government = { 
-		preferred_holdings = { CASTLE TEMPLE }
+		preferred_holdings = { CASTLE }
 		allowed_holdings = { 
 			CASTLE 
 			CITY
 			FORT
 			HOSPITAL
+			TEMPLE
 		}
 		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
 			TRIBAL
@@ -1261,7 +1262,7 @@ feudal_governments = {
         can_build_tribal = no
 		feminist = yes
 		uses_jizya_tax = yes
-		allow_rivermovement = no
+		allow_rivermovement = yes
 		allow_looting = no
 		
 		ignore_in_vassal_limit_calculation = {

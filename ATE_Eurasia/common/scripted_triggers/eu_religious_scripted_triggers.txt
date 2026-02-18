@@ -14,3 +14,14 @@ religion_openly_glorian_trigger = {
 		}
 	}
 }
+religion_openly_jacobin_trigger = {
+	custom_tooltip = {
+		text = religion_openly_jacobin_trigger
+		hidden_trigger = {
+		  OR = {
+			 religion = jacobin
+			 religion = constitutionalist
+		  }
+		}
+	}
+}

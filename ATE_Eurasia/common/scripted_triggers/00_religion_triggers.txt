@@ -1053,6 +1053,28 @@ is_orthodox_secret_branch = {
 	}
 }
 
+is_pravoslavie_branch = {
+	OR = {
+		religion = pravoslavie
+		religion = dvoeverie
+	}
+}
+
+is_pravoslavie_true_branch = {
+	OR = {
+		true_religion = pravoslavie
+		true_religion = dvoeverie
+	}
+}
+
+is_pravoslavie_secret_branch = {
+	OR = {
+		secret_religion = pravoslavie
+		secret_religion = dvoeverie
+	}
+}
+
+
 is_miaphysite_branch = {
 	OR = {
 		religion = miaphysite

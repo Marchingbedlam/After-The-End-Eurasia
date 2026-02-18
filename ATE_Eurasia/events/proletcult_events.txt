@@ -1,0 +1,330 @@
+namespace = proletcult
+
+character_event = {
+	id = proletcult.1
+	desc = EVTDESC_proletcult1
+	picture = GFX_evt_workers_saints
+	religion = proletcult
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_proletcult1
+		ai_chance = {
+		    factor = 20
+		}
+		add_trait = worker_saint_lenin
+		piety = -50
+	}
+
+	option = {
+		name = EVTOPTB_proletcult1
+		ai_chance = {
+		    factor = 20
+		}
+		add_trait = worker_saint_molotov
+		piety = -50
+	}
+	
+	option = {
+		name = EVTOPTC_proletcult1
+		ai_chance = {
+		    factor = 20
+		}
+		add_trait = worker_saint_the_marshal
+		piety = -50
+	}
+	
+	option = {
+		name = EVTOPTD_proletcult1
+		ai_chance = {
+		    factor = 20
+		}
+		add_trait = worker_saint_lysenko
+		piety = -50
+	}
+}
+
+#Victory Day
+# Invitation Sent
+narrative_event = {
+	id = proletcult.2
+	title = EVTTITLE_proletcult2
+	desc = EVTDESC_proletcult2
+	picture = GFX_evt_victory_day
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_proletcult2
+		any_vassal = {
+			limit = {
+				religion = proletcult
+				prisoner = no
+				war = no
+				NOT = { trait = incapable }
+			}
+			character_event = { id = proletcult.3 days = 2 tooltip = EVTTOOLTIP_proletcult2 }
+		}
+		custom_tooltip = { text = victory_day_invitations_sent }
+		hidden_tooltip = { character_event = { id = proletcult.4 days = 2 } }
+		hidden_tooltip = { character_event = { id = proletcult.6 days = 10 } }
+
+	}
+}
+
+# Invitation Received
+character_event = {
+	id = proletcult.3
+	desc = EVTDESC_proletcult3
+	picture = GFX_evt_victory_day
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+
+	trigger = { NOT = { is_inaccessible_trigger = yes } }
+	
+	option = {
+		name = EVTOPTA_proletcult3
+		ai_chance = {
+			factor = 95
+			modifier = {
+				factor = 0
+				opinion = { who = ROOT value <= -20 }
+			}
+		}
+		custom_tooltip = { text = victory_day_accepted }
+		set_character_flag = attending_victory_day
+		set_character_flag = do_not_disturb
+		hidden_tooltip = { character_event = { id = proletcult.6 days = 8 } }
+		hidden_tooltip = { character_event = { id = proletcult.12 days = 20 } } # Safety catch flag clearing
+	}
+	option = {
+		name = EVTOPTB_proletcult3
+		ai_chance = {
+			factor = 5
+		}
+		FROM = {
+			opinion = {
+				modifier = opinion_refused_victory_day
+				who = ROOT
+			}
+		}
+		custom_tooltip = { text = victory_day_declined }
+		hidden_tooltip = {
+			FROM = { character_event = { id = proletcult.4 } }
+		}
+	}
+}
+
+# Invitation Refused
+character_event = {
+	id = proletcult.4
+	desc = EVTDESC_proletcult4
+	picture = GFX_evt_victory_day
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_proletcult4
+		opinion = {
+			modifier = opinion_refused_victory_day
+			who = FROM
+		}
+	}
+}
+
+# Victory  Day Begins
+character_event = {
+	id = proletcult.5
+	desc = EVTDESC_proletcult5
+	picture = GFX_evt_victory_day
+	
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			has_character_flag = holding_victory_day
+		}
+		name = EVTOPTA_proletcult5
+		character_event = { id = proletcult.7 days = 2 }
+		hidden_tooltip = {
+			random_list = {
+				30 = { character_event = { id = proletcult.6 days = 1 } } #Freeing the prisoners
+				20 = { character_event = { id = proletcult.10 days = 1 } } #Reconstrution of hanging out flags
+				20 = { character_event = { id = proletcult.11 days = 1 } } #Theatre Play About Lenin
+			}
+		}
+	}
+	option = {
+		trigger = {
+			has_character_flag = attending_victory_day
+		}
+		name = EVTOPTB_proletcult5
+		character_event = { id = proletcult.8 days = 2 }
+	}
+}
+
+# Freeing the prisoners?
+character_event = {
+	id = proletcult.6
+	desc = EVTDESC_proletcult6
+	picture = GFX_evt_victory_day
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_proletcult6
+		any_courtier = {
+			limit = {
+				prisoner = yes
+			}
+			count = 2
+			imprison = no
+		}
+		piety = 50
+		prestige = 50
+	}
+	option = {
+		name = EVTOPTB_proletcult6
+	}
+	option = {
+		trigger = {
+			trait = cruel
+			trait = impaler
+			trait = lunatic
+			trait = possessed
+		}
+		name = EVTOPTC_proletcult6
+		any_courtier = {
+			limit = {
+				prisoner = yes
+			}
+			count = 2	
+			death = {
+				death_reason = death_execution
+				killer = ROOT
+			}
+		}
+		piety = -50
+	}
+}
+
+# Bastille Day Ends (Host)
+character_event = {
+	id = proletcult.7
+	desc = EVTDESC_proletcult7
+	picture = GFX_evt_victory_day
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_proletcult7
+		any_vassal = {
+			limit = { has_character_flag = attending_victory_day }
+			opinion = {
+				modifier = opinion_victory_day
+				who = ROOT
+			}
+		}
+		hidden_tooltip = {
+			any_vassal = {
+				limit = { has_character_flag = attending_victory_day }
+				character_event = { id = proletcult.8 }
+			}
+		}
+		add_character_modifier = {
+			name = held_victory_day_timer
+			duration = 1825
+			hidden = yes
+		}
+		prestige = 100
+		piety = 100
+		clr_character_flag = holding_victory_day
+		clr_character_flag = do_not_disturb
+	}
+}
+
+# Bastille Day Ends (Guest)
+character_event = {
+	id = proletcult.8
+	desc = EVTDESC_proletcult8
+	picture = GFX_evt_victory_day
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_proletcult8
+		clr_character_flag = attending_victory_day
+		clr_character_flag = do_not_disturb
+	}
+}
+
+# Safety catch - clears character flags and modifiers
+character_event = {
+	id = proletcult.9
+
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		clr_character_flag = do_not_disturb
+		clr_character_flag = holding_victory_day
+		clr_character_flag = attending_victory_day
+	}
+}
+
+narrative_event = {
+	id = proletcult.10
+	title = EVTTITLE_proletcult10
+	desc = EVTDESC_proletcult10
+	picture = GFX_evt_victory_day
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_proletcult10
+		piety = 50 
+	}
+	
+	option = {
+		name = EVTOPTB_proletcult10
+		piety = 50 
+		prestige = 50
+		random_list = {
+			10 = { add_trait="drunkard" } 
+		}
+	}
+}
+
+narrative_event = {
+	id = proletcult.11
+	title = EVTTITLE_proletcult11
+	desc = EVTDESC_proletcult11
+	picture = GFX_evt_victory_day
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_proletcult11
+		prestige = 25
+		prestige = 25
+	}
+	
+	option = {
+		name = EVTOPTB_proletcult11
+		piety = 50 
+		random_list = {
+			20 = { add_trait="poet" } 
+		}
+	}
+}
