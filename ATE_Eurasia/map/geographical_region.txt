@@ -720,7 +720,7 @@ world_persia = {
 	inclusive = yes
 	duchies = {
 		#Persia minus Mesopotamia
-		d_khorasan d_mazandaran d_esfahan d_kerman d_fars d_hamadan d_tabriz d_azerbaijan d_baluchistan d_sistan d_kabul d_zabulistan d_khiva d_samarkand d_merv d_dihistan d_herat d_balkh d_khuttal d_gilan d_khozistan d_ferghana d_kurdistan d_jibal d_mafaza
+		d_khorasan d_mazandaran d_esfahan d_kerman d_fars d_hamadan d_tabriz d_azerbaijan d_baluchistan d_sistan d_kabul d_zabulistan d_khiva d_samarkand d_merv d_dihistan d_herat d_balkh d_khuttal d_gilan d_khozistan d_fergana d_kurdistan d_jibal d_mafaza
 	}
 }
 world_africa_north = {
@@ -750,7 +750,7 @@ world_africa = {
 }
 world_steppe_tarim = {
 	duchies = {
-		d_kashgar d_khotan d_karashar d_kumul
+		d_kashgar d_khotan d_kostanay d_kumul
 	}
 }
 world_steppe_west = {
@@ -758,7 +758,7 @@ world_steppe_west = {
 		#East Perm
 		d_perm d_yugra d_bashkirs
 		#Tartaria
-		d_itil d_sarkel d_yaik d_sibir d_kipchak d_kimak d_maris d_bulgar d_kazan d_cheremisa d_mordvins d_cherson d_crimea d_alania d_azov d_turkestan d_syr_darya d_wild_fields d_usturt d_emba d_caspian_steppe d_bandja d_atyrau d_aqtobe d_sakmara d_tobol d_ishim d_ubagan d_om d_vasyugan d_kazakh d_turgay
+		d_itil d_sarkel d_yaik d_sibir d_kipchak d_kimak d_maris d_bulgar d_kazan d_cheremisa d_mordvins d_cherson d_crimea d_alania d_azov d_turkestan d_tashkent d_wild_fields d_usturt d_emba d_caspian_steppe d_bandja d_atyrau d_aqtobe d_sakmara d_tobol d_ishim d_ubagan d_om d_vasyugan d_kazakh d_turgay
 		# Ural & Nenetsia
 		d_komi d_zavarot d_pechora d_zyriane d_votyaki d_ural 
 	}
@@ -768,10 +768,7 @@ world_steppe_west = {
 }
 world_steppe_east = {
 	duchies = {
-		d_zhetysu d_chuy d_kirghiz d_altay d_otuken d_khangai d_ikh_bogd d_ili d_beshbaliq d_abakan d_uvs d_kara_khorum d_baygal d_gobi_altay d_barkul d_juyan d_tarbagatai d_ob d_jiuquan
-	}
-	counties = {
-		c_kirghiz
+		d_zhetysu d_chuy d_bishkek d_naryn d_altay d_otuken d_khangai d_ikh_bogd d_ili d_abakan d_uvs d_kara_khorum d_baygal d_gobi_altay d_tarbagatai d_ob d_jiuquan
 	}
 }
 world_steppe = {
@@ -835,22 +832,22 @@ custom_england = {
 }
 custom_castillian = {
 	duchies = {
-		d_castilla d_asturias d_leon
+		d_castile d_asturias d_leon
 	}
 }
 custom_catalan = {
 	duchies = {
-		d_aragon d_barcelona d_valencia d_mallorca
+		d_alto_aragon d_bajo_aragon d_barcelona d_valencia d_balears
 	}
 }
 custom_andalusian = {
 	duchies = {
-		d_cordoba d_murcia d_granada d_sevilla d_badajoz d_toledo
+		d_seville d_granada d_extramadura d_la_mancha
 	}
 }
 custom_portuguese = {
 	duchies = {
-		d_galicia d_porto d_beja d_algarve 
+		d_galicia d_norte d_beja d_algarve 
 	}
 }
 custom_swedish = {
@@ -883,7 +880,7 @@ custom_norwegian = {
 # }
 custom_eastern_edge_of_map = {
 	counties = {
-		c_jiuquan c_fuqi c_delingha c_dege c_ejin c_samatata c_markam c_lingtsang c_gurvan_saikhan c_delgerkhangai c_tuul c_chikoi c_khilok c_uda
+		c_jiuquan c_delingha c_ejin
 	}
 }
 custom_chinese_invasion_target_region = {
@@ -897,7 +894,7 @@ custom_chinese_invasion_target_region = {
 
 custom_eastern_access = {
 	duchies = {
-		d_kumul d_karashar d_kashgar d_khotan d_ferghana d_samarkand d_syr_darya d_kirghiz d_juyan d_barkul d_beshbaliq
+		d_kumul d_kostanay d_kashgar d_khotan d_fergana d_samarkand d_tashkent d_bishkek d_naryn
 	}
 	regions = {
 		world_himalayas
@@ -912,13 +909,13 @@ custom_leon = {
 
 custom_galicia = {
 	duchies = {
-		d_galicia d_porto
+		d_galicia d_norte
 	}
 }
 
 custom_beja = {
 	duchies = {
-		d_beja d_algarve d_balata
+		d_beja d_algarve d_beira
 	}
 }
 
@@ -930,36 +927,36 @@ custom_granada = {
 
 custom_castille = {
 	duchies = {
-		d_castilla d_toledo
+		d_castile d_la_mancha
 	}
 }
 
 custom_aragon = {
 	duchies = {
-		d_aragon d_barcelona
+		d_alto_aragon d_bajo_aragon d_barcelona
 	}
 }
 
 custom_cordoba = {
 	duchies = {
-		d_cordoba d_badajoz
+		d_seville d_extramadura
 	}
 }
 
 custom_valencia = {
 	duchies = {
-		d_valencia d_murcia
+		d_valencia d_granada
 	}
 }
 
 custom_navarra = {
 	duchies = {
-		d_navarra
+		d_baskonia
 	}
 }
 
 custom_balearic = {
 	duchies = {
-		d_mallorca
+		d_balears
 	}
 }
