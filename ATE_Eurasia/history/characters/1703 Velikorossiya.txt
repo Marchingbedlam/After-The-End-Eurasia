@@ -2211,6 +2211,7 @@
 	trait=crowned_by_pope
 	trait=stressed
 	disallow_random_traits=yes
+	father=1703190
 	2647.2.12={birth=yes}
 	2704.1.1={death=yes}
 }
@@ -2225,7 +2226,8 @@
 	trait=familyperson
 	trait=organizer
 	disallow_random_traits=yes
-	2631.2.5={birth=yes}
+	father=1703191
+	2621.2.5={birth=yes}
 	2655.1.1={add_spouse=1703122}
 	2704.1.1={death=yes}
 }
@@ -2961,4 +2963,284 @@
 		add_claim = c_livny
 	}
 	2700.1.1={death=yes}
+}
+
+1703173={
+	name="Gleb"
+	culture=severyane
+	religion= proletcult
+	trait=deceitful
+	trait=strong
+	trait=brilliant_strategist
+	trait=brave
+	trait=gregarious
+	trait=drunkard
+	2624.1.1={birth=yes}
+	2700.1.1={death=yes}
+}
+
+1703174={
+	name="Vladimir"
+	dynasty=7534135
+	occluded=yes
+	culture=muscovite
+	religion=proletcult
+	trait="legendary"
+	disallow_random_traits=yes
+	1870.1.1={birth=yes}
+	1924.1.1={death=yes}
+}
+
+1703175={
+	name="Lev"
+	dynasty=7534136
+	occluded=yes
+	culture=muscovite
+	religion=proletcult
+	trait="legendary"
+	disallow_random_traits=yes
+	1879.1.1={birth=yes}
+	1956.1.1={death=yes}
+}
+
+1703176={
+	name="Nikita"
+	dynasty=7534137
+	occluded=yes
+	culture=ukrainian
+	religion=proletcult
+	trait="legendary"
+	disallow_random_traits=yes
+	1894.1.1={birth=yes}
+	1964.1.1={death=yes}
+}
+
+1703177={
+	name="Leonid"
+	dynasty=7534138
+	occluded=yes
+	culture=muscovite
+	religion=proletcult
+	trait="legendary"
+	trait="drunkard"
+	disallow_random_traits=yes
+	give_nickname=nick_the_drunkard
+	1906.1.1={birth=yes}
+	1980.1.1={death=yes}
+}
+
+1703178={
+	name="Proletarskiy Vozhd"
+	dynasty=7534139
+	occluded=yes
+	culture=muscovite
+	religion=proletcult
+	trait="legendary"
+	disallow_random_traits=yes
+	1937.1.1={birth=yes}
+	2000.1.1={death=yes}
+}
+
+1703179={
+	name="Nikolai"
+	dynasty=7534140
+	occluded=yes
+	culture=muscovite
+	religion=pravoslavie
+	trait="legendary"
+	trait="saint"
+	give_nickname=nick_the_martyr
+	disallow_random_traits=yes
+	father=1703180
+	1868.1.1={birth=yes}
+    1917.10.1={
+	   death={
+	      death_reason=death_execution
+		  killer=1703174
+	   }
+	}
+}
+
+1703180={
+	name="Alexander"
+	dynasty=7534140
+	occluded=yes
+	culture=muscovite
+	religion=pravoslavie
+	trait="legendary"
+	disallow_random_traits=yes
+	father=1703181
+	1830.1.1={birth=yes}
+    1894.1.1={
+	   death={
+	      death_reason=death_murder
+	   }
+	}
+}
+
+1703181={
+	name="Aleksandr"
+	dynasty=7534140
+	occluded=yes
+	culture=muscovite
+	religion=pravoslavie
+	trait="legendary"
+	disallow_random_traits=yes
+	father=1703182
+	1777.1.1={birth=yes}
+    1856.1.1={death=yes}
+}
+
+1703182={
+	name="Pavel"
+	dynasty=7534140
+	occluded=yes
+	culture=muscovite
+	religion=pravoslavie
+	trait="legendary"
+	trait="lunatic"
+	trait="legit_bastard"
+	disallow_random_traits=yes
+	mother=1703183
+	father=212647
+	1754.1.1={birth=yes}
+    1801.1.1={death=yes}
+}
+
+1703183={
+	name="Ekaterina"
+	female=yes
+	dynasty=7534140
+	occluded=yes
+	culture=muscovite
+	religion=pravoslavie
+	trait="legendary"
+	give_nickname=nick_the_great
+	father=1703184
+	disallow_random_traits=yes
+	1729.1.1={birth=yes}
+    1796.1.1={death=yes}
+}
+
+1703184={
+	name="Pyotr"
+	dynasty=7534140
+	occluded=yes
+	culture=muscovite
+	religion=pravoslavie
+	trait="legendary"
+	give_nickname=nick_the_great
+	disallow_random_traits=yes
+	father=1703185
+	1672.1.1={birth=yes}
+    1735.1.1={death=yes}
+}
+
+1703185={
+	name="Roman"
+	dynasty=7534140
+	occluded=yes
+	culture=muscovite
+	religion=pravoslavie
+	trait="legendary"
+	disallow_random_traits=yes
+	1596.1.1={birth=yes}
+    1682.1.1={death=yes}
+}
+
+1703186={
+	name="Dmitriy"
+	dynasty=7534113
+	occluded=yes
+	culture=muscovite
+	religion=pravoslavie
+	trait="legendary"
+	trait="bastard"
+	give_nickname=nick_the_usurper
+	father=212642
+	disallow_random_traits=yes
+	1582.1.1={birth=yes}
+    1610.1.1={
+	   death={
+	      death_reason=death_murder
+	   }
+	}
+}
+
+1703187={
+	name="Boris"
+	dynasty=7534141
+	occluded=yes
+	culture=muscovite
+	religion=pravoslavie
+	trait="legendary"
+	give_nickname=nick_the_usurper
+	disallow_random_traits=yes
+	1552.1.1={birth=yes}
+    1605.1.1={
+	   death={
+	      death_reason=death_murder
+		  killer=1703186
+	   }
+	}
+}
+
+1703188={
+	name="Ivan"
+	dynasty=7534142
+	occluded=yes
+	culture=muscovite
+	religion=pravoslavie
+	trait="legendary"
+	trait="cruel"
+	give_nickname=nick_the_cruel
+	disallow_random_traits=yes
+	1530.1.1={birth=yes}
+    1584.1.1={death=yes}
+}
+
+1703189={
+	name="Fyodor"
+	dynasty=7534142
+	occluded=yes
+	culture=muscovite
+	religion=pravoslavie
+	trait="legendary"
+	trait="kind"
+	disallow_random_traits=yes
+	father=1703188
+	1557.1.1={birth=yes}
+    1598.1.1={
+	   death={
+	      death_reason=death_murder
+		  killer=1703187
+	   }
+	}
+}
+
+1703190={
+	name="Dmitriy"
+	dynasty=1147231
+	culture=muscovite
+	religion=pravoslavie
+	trait="drunkard"
+	father=1703191
+	2619.4.14={birth=yes}
+    2650.1.1={
+	   death={
+	      death_reason=death_murder_secret
+	   }
+	}
+}
+
+1703191={
+	name="Semyon"
+	dynasty=1147231
+	culture=muscovite
+	religion=pravoslavie
+	trait="quick"
+	trait="kind"
+	trait="brave"
+	2584.5.2={birth=yes}
+    2640.10.19={death=yes}
 }

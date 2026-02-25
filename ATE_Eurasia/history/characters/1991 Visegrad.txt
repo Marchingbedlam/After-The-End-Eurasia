@@ -5760,3 +5760,868 @@
 	2646.11.12={birth=yes}
 	2680.1.1={death=yes}
 }
+
+#######Pre-Event Kings of Bohemia
+
+212611={
+	name="Przemyslaw Ottokar"
+	occluded=yes
+	dynasty=7534099
+	culture=czech
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	1155.1.1={birth=yes}
+	1230.1.1={death=yes}
+}
+
+212612={
+	name="Vaclav"
+	occluded=yes
+	dynasty=7534099
+	culture=czech
+	religion=catholic
+	trait="legendary"
+	father=212611
+	disallow_random_traits=yes
+	1205.1.1={birth=yes}
+	1253.1.1={death=yes}
+}
+
+212613={
+	name="Przemyslaw Ottokar"
+	occluded=yes
+	dynasty=7534099
+	culture=czech
+	religion=catholic
+	trait="legendary"
+	father=212612
+	disallow_random_traits=yes
+	1233.1.1={birth=yes}
+	1278.1.1={death=yes}
+}
+
+212614={
+	name="Vaclav"
+	occluded=yes
+	dynasty=7534099
+	culture=czech
+	religion=catholic
+	trait="legendary"
+	father=212613
+	disallow_random_traits=yes
+	1271.1.1={birth=yes}
+	1305.1.1={death=yes}
+}
+
+212615={
+	name="Vaclav"
+	occluded=yes
+	dynasty=7534099
+	culture=czech
+	religion=catholic
+	trait="legendary"
+	father=212614
+	disallow_random_traits=yes
+	1289.1.1={birth=yes}
+	1306.1.1={death=yes}
+}
+
+212616={
+	name="Jirí"
+	dynasty=7534100
+	occluded=yes
+	culture=czech
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	1420.1.1={birth=yes}
+	1471.1.1={death=yes}
+}
+
+212617={
+	name="Wladyslaw"
+	dynasty=7534101
+	occluded=yes
+	culture=malopolan
+	religion=catholic
+	trait="legendary"
+	father=212637
+	disallow_random_traits=yes
+	1456.1.1={birth=yes}
+	1516.1.1={death=yes}
+}
+
+212618={
+	name="Lajos"
+	dynasty=7534101
+	occluded=yes
+	culture=hungarian
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	father=212617
+	1506.1.1={birth=yes}
+	1526.1.1={
+	  death={
+	    death_reason=death_battle
+	  }
+	}
+}
+
+############Pre-Event Rulers of Poland
+
+212619={
+	name="Piast"
+	dynasty=7534118
+	occluded=yes
+	culture=wielkopolan
+	religion=nondescript_pagan
+	trait="legendary"
+	disallow_random_traits=yes
+	860.1.1={birth=yes}
+	925.1.1={death=yes}
+}
+
+212620={
+	name="Siemowit"
+	dynasty=7534118
+	occluded=yes
+	culture=wielkopolan
+	religion=nondescript_pagan
+	trait="legendary"
+	disallow_random_traits=yes
+	father=212619
+	896.1.1={birth=yes}
+	960.1.1={death=yes}
+}
+
+212621={
+	name="Mieszko"
+	dynasty=7534118
+	occluded=yes
+	culture=wielkopolan
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	father=212620
+	935.1.1={birth=yes}
+	992.1.1={death=yes}
+}
+
+212622={
+	name="Boleslaw"
+	dynasty=7534118
+	occluded=yes
+	culture=wielkopolan
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	father=212621
+	give_nickname=nick_the_brave
+	967.1.1={birth=yes}
+	1025.6.17={death=yes}
+}
+
+212623={
+	name="Kazimierz"
+	dynasty=7534118
+	occluded=yes
+	culture=wielkopolan
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	father=212622
+	1016.1.1={birth=yes}
+	1058.1.1={death=yes}
+}
+
+212624={
+	name="Boleslaw"
+	dynasty=7534118
+	occluded=yes
+	culture=wielkopolan
+	religion=catholic
+	trait="legendary"
+	trait="excommunicated"
+	disallow_random_traits=yes
+	father=212623
+	1042.1.1={birth=yes}
+	1081.1.1={
+	  death={
+	     death_reason=death_battle
+		 killer=212625
+	  }
+	}
+}
+
+212625={
+	name="Wladyslaw"
+	dynasty=7534118
+	occluded=yes
+	culture=malopolan
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	father=212623
+	1044.1.1={birth=yes}
+	1102.1.1={death=yes}
+}
+
+212626={
+	name="Boleslaw"
+	dynasty=7534118
+	occluded=yes
+	culture=malopolan
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	father=212625
+	1086.1.1={birth=yes}
+	1138.1.1={death=yes}
+}
+
+212627={
+	name="Rozbicie Dzielnicowe"
+	dynasty=7534118
+	occluded=yes
+	culture=malopolan
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	father=212626
+	1138.1.1={birth=yes}
+	1320.1.1={death=yes}
+}
+
+212628={
+	name="Przemyslaw"
+	occluded=yes
+	dynasty=7534118
+	occluded=yes
+	culture=wielkopolan
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	father=212627
+	1257.1.1={birth=yes}
+	1296.1.1={
+	  death={
+	    death_reason=death_murder
+	  }
+	}
+}
+
+212629={
+	name="Wladyslaw"
+	occluded=yes
+	dynasty=7534118
+	occluded=yes
+	culture=malopolan
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	father=212627
+	1261.1.1={birth=yes}
+	1333.1.1={death=yes}
+}
+
+212630={
+	name="Kazimierz"
+	occluded=yes
+	dynasty=7534118
+	occluded=yes
+	culture=malopolan
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	father=212629
+	1310.1.1={birth=yes}
+	1370.1.1={death=yes}
+}
+
+212631={
+	name="Elzbieta"
+	female=yes
+	occluded=yes
+	dynasty=7534118
+	occluded=yes
+	culture=malopolan
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	father=212629
+	1305.1.1={birth=yes}
+	1380.1.1={death=yes}
+}
+
+212632={
+	name="Louis"
+	dynasty=7534117
+	occluded=yes
+	culture=french
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	father=212660
+	mother=212631
+	1326.1.1={birth=yes}
+	1382.1.1={death=yes}
+}
+
+212633={
+	name="Mária"
+	female=yes
+	occluded=yes
+	dynasty=7534117
+	culture=hungarian
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	father=212632
+	1371.1.1={birth=yes}
+	1415.1.1={death=yes}
+}
+
+212634={
+	name="Jadwiga"
+	female=yes
+	occluded=yes
+	dynasty=7534117
+	culture=malopolan
+	religion=catholic
+	trait="legendary"
+	trait="saint"
+	disallow_random_traits=yes
+	father=212632
+	1373.1.1={birth=yes}
+	1399.1.1={death=yes}
+}
+
+212635={
+	name="Jogaila"
+	dynasty=7534112
+	occluded=yes
+	culture=lithuanian
+	religion=catholic
+	trait="legendary"
+	trait="saint"
+	disallow_random_traits=yes
+	1362.1.1={birth=yes}
+	1398.1.1={
+	   name="Wladyslaw"
+	   dynasty=7534101
+	   add_spouse=212634
+	   culture=malopolan
+	}
+	1434.1.1={death=yes}
+}
+
+212636={
+	name="Wladyslaw"
+	dynasty=7534101
+	occluded=yes
+	culture=malopolan
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	father=212635
+	1424.1.1={birth=yes}
+	1444.1.1={
+	  death={
+	    death_reason=death_battle
+	  }
+	}
+}
+
+212637={
+	name="Kazimierz"
+	dynasty=7534101
+	occluded=yes
+	culture=malopolan
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	father=212635
+	1427.1.1={birth=yes}
+	1492.1.1={death=yes}
+}
+
+212638={
+	name="Zygmunt"
+	dynasty=7534101
+	occluded=yes
+	culture=malopolan
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	father=212637
+	give_nickname=nick_the_old
+	1459.1.1={birth=yes}
+	1548.1.1={death=yes}
+}
+
+212639={
+	name="Kazimierz"
+	dynasty=7534101
+	occluded=yes
+	culture=malopolan
+	religion=catholic
+	trait="legendary"
+	trait="saint"
+	disallow_random_traits=yes
+	father=212637
+	give_nickname=nick_the_saint
+	1458.1.1={birth=yes}
+	1484.1.1={
+	  death={
+	    death_reason=death_health
+	  }
+	}
+}
+
+212640={
+	name="Zygmunt August"
+	dynasty=7534101
+	occluded=yes
+	culture=malopolan
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	father=212638
+	1520.1.1={birth=yes}
+	1572.1.1={death=yes}
+}
+
+212641={
+	name="Katarzyna"
+	female=yes
+	dynasty=7534101
+	occluded=yes
+	culture=malopolan
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	father=212638
+	1526.1.1={birth=yes}
+	1583.1.1={death=yes}
+}
+
+212642={
+	name="István"
+	dynasty=7534113
+	occluded=yes
+	culture=hungarian
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	1533.1.1={birth=yes}
+	1586.1.1={death=yes}
+}
+
+212643={
+	name="Zygmunt"
+	dynasty=7534114
+	occluded=yes
+	culture=swedish
+	religion=catholic
+	trait="legendary"
+	mother=212641
+	disallow_random_traits=yes
+	1566.1.1={birth=yes}
+	1632.1.1={death=yes}
+}
+
+212644={
+	name="Jan Kazimierz"
+	dynasty=7534114
+	occluded=yes
+	culture=mazovian
+	religion=catholic
+	trait="legendary"
+	father=212643
+	disallow_random_traits=yes
+	1609.1.1={birth=yes}
+	1672.1.1={death=yes}
+}
+
+212645={
+	name="Jan"
+	occluded=yes
+	dynasty=7534115
+	culture=swedish
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	give_nickname=nick_the_glorious
+	1629.1.1={birth=yes}
+	1696.1.1={death=yes}
+}
+
+212646={
+	name="Stanislaw"
+	occluded=yes
+	dynasty=7534122
+	culture=malopolan
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	1677.1.1={birth=yes}
+	1766.1.1={death=yes}
+}
+
+212647={
+	name="Stanislaw August"
+	occluded=yes
+	dynasty=7534116
+	culture=malopolan
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	1732.1.1={birth=yes}
+	1794.1.1={death=yes}
+}
+
+212648={
+	name="Józef"
+	occluded=yes
+	dynasty=7534116
+	culture=malopolan
+	religion=catholic
+	trait="legendary"
+	father=212647
+	disallow_random_traits=yes
+	1763.1.1={birth=yes}
+	1813.1.1={
+	  death={
+	    death_reason=death_battle
+	  }
+	}
+}
+
+212649={
+	name="Józef"
+	occluded=yes
+	dynasty=7534102
+	culture=mazovian
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	1867.1.1={birth=yes}
+	1935.1.1={death=yes}
+}
+
+212651={
+	name="Nikodem"
+	occluded=yes
+	dynasty=7534103
+	culture=mazovian
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	1889.1.1={birth=yes}
+	1926.1.5={
+	  death={
+	    death_reason=death_battle
+		killer=212649
+	  }
+	}
+}
+
+212652={
+	name="Edward"
+	occluded=yes
+	dynasty=7534102
+	culture=mazovian
+	religion=catholic
+	trait="legendary"
+	father=212649
+	disallow_random_traits=yes
+	give_nickname=nick_the_rydz_smigly
+	1886.1.1={birth=yes}
+	1939.9.17={
+	  death={
+	    death_reason=death_missing
+	  }
+	}
+}
+
+212653={
+	name="Wladyslaw"
+	occluded=yes
+	dynasty=7534105
+	culture=mazovian
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	1881.1.1={birth=yes}
+	1945.1.1={
+	  death={
+	    death_reason=death_murder
+		killer=1703175
+	  }
+	}
+}
+
+212655={
+	name="Komuna"
+	female=yes
+	occluded=yes
+	dynasty=7534126
+	culture=mazovian
+	religion=proletcult
+	trait="legendary"
+	disallow_random_traits=yes
+	1944.7.22={birth=yes}
+	1989.1.1={death=yes}
+}
+
+212659={
+	name="Lech"
+	occluded=yes
+	dynasty=7534128
+	culture=mazovian
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	1943.1.1={birth=yes}
+	2000.1.1={
+	   death={
+	     death_reason=death_missing
+	   }
+	}
+}
+
+##############Kings of Hungary
+
+212660={
+	name="Charles Robert"
+	dynasty=7534117
+	occluded=yes
+	culture=french
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	1288.1.1={birth=yes}
+	1324.1.1={
+	   add_spouse=212631
+	}
+	1342.1.1={death=yes}
+}
+
+212661={
+	name="János"
+	dynasty=7534119
+	occluded=yes
+	culture=hungarian
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	1387.1.1={birth=yes}
+	1490.1.1={death=yes}
+}
+
+212662={
+	name="István"
+	dynasty=7534129
+	occluded=yes
+	culture=hungarian
+	religion=catholic
+	trait="legendary"
+	trait="saint"
+	father=212663
+	disallow_random_traits=yes
+	975.1.1={birth=yes}
+	1038.8.15={death=yes}
+}
+
+212663={
+	name="Géza"
+	dynasty=7534129
+	occluded=yes
+	culture=hungarian
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	949.1.1={birth=yes}
+	997.1.1={death=yes}
+}
+
+212664={
+	name="Michael"
+	dynasty=7534129
+	occluded=yes
+	culture=hungarian
+	religion=catholic
+	trait="legendary"
+	father=212663
+	disallow_random_traits=yes
+	955.1.1={birth=yes}
+	990.8.1={death=yes}
+}
+
+212665={
+	name="András"
+	dynasty=7534129
+	occluded=yes
+	culture=hungarian
+	religion=catholic
+	trait="legendary"
+    father=212666
+	disallow_random_traits=yes
+	1265.1.1={birth=yes}
+	1301.1.1={death=yes}
+}
+
+212666={
+	name="László"
+	dynasty=7534129
+	occluded=yes
+	culture=hungarian
+	religion=catholic
+	trait="legendary"
+	father=212667
+	disallow_random_traits=yes
+	1239.1.1={birth=yes}
+	1290.1.1={
+	   death={
+	      death_reason=death_murder
+	   }
+	}
+}
+
+212667={
+	name="Béla"
+	dynasty=7534129
+	occluded=yes
+	culture=hungarian
+	religion=catholic
+	trait="legendary"
+	father=212668
+	disallow_random_traits=yes
+	1206.1.1={birth=yes}
+	1270.1.1={death=yes}
+}
+
+212668={
+	name="András"
+	dynasty=7534129
+	occluded=yes
+	culture=hungarian
+	religion=catholic
+	trait="legendary"
+	father=212669
+	disallow_random_traits=yes
+	1176.1.1={birth=yes}
+	1235.1.1={death=yes}
+}
+
+212669={
+	name="Béla"
+	dynasty=7534129
+	occluded=yes
+	culture=hungarian
+	religion=catholic
+	trait="legendary"
+	father=212670
+	disallow_random_traits=yes
+	1148.1.1={birth=yes}
+	1196.1.1={death=yes}
+}
+
+212670={
+	name="Géza"
+	dynasty=7534129
+	occluded=yes
+	culture=hungarian
+	religion=catholic
+	trait="legendary"
+	father=212671
+	disallow_random_traits=yes
+	1130.1.1={birth=yes}
+	1162.1.1={death=yes}
+}
+
+212671={
+	name="Béla"
+	dynasty=7534129
+	occluded=yes
+	culture=hungarian
+	religion=catholic
+	trait="legendary"
+	father=212672
+	disallow_random_traits=yes
+	1110.1.1={birth=yes}
+	1141.1.1={death=yes}
+}
+
+212672={
+	name="Koloman"
+	dynasty=7534129
+	occluded=yes
+	culture=hungarian
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	father=212674
+	1070.1.1={birth=yes}
+	1116.1.1={death=yes}
+}
+
+212673={
+	name="Béla"
+	dynasty=7534129
+	occluded=yes
+	culture=hungarian
+	religion=catholic
+	trait="legendary"
+	father=212664
+	disallow_random_traits=yes
+	1015.1.1={birth=yes}
+	1063.1.1={death=yes}
+}
+
+212674={
+	name="Géza"
+	dynasty=7534129
+	occluded=yes
+	culture=hungarian
+	religion=catholic
+	trait="legendary"
+	father=212673
+	disallow_random_traits=yes
+	1045.1.1={birth=yes}
+	1077.1.1={death=yes}
+}
+
+212675={
+	name="László"
+	dynasty=7534129
+	occluded=yes
+	culture=hungarian
+	religion=catholic
+	trait="legendary"
+	trait="saint"
+	father=212673
+	disallow_random_traits=yes
+	1048.1.1={birth=yes}
+	1095.1.1={death=yes}
+}
+
+############
+
+212676={
+	name="Stanislaw"
+	dynasty=7534110
+	occluded=yes
+	culture=mazovian
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	1832.1.1={birth=yes}
+	1879.1.1={
+	   death={
+	      death_reason=death_missing
+	   }
+	}
+}

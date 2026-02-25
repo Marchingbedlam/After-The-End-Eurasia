@@ -2000,6 +2000,7 @@ d_constitutionalist = {
 	capital = 1117 # Rome
 	
 	title = "POPE"
+	title_female = "POPE"
 	foa = "POPE_FOA"
 	short_name = yes
 	location_ruler_title = yes
@@ -2054,29 +2055,33 @@ d_constitutionalist = {
 		Victoria
 	}
 }
-d_alevi = {
-	color={ 105 139 40 }
-	color2={ 255 255 255 }
-	
-	capital = 317 # Tirana
-	
-	title = "DEDEBABA"
-	foa = "BABA_FOA"
-	short_name = yes
 
+d_proletcult = {
+	color={ 214 67 67 }
+	color2={ 220 220 0 }
+	
+	capital = 652 # Moscow
+	
+	title = "GENERAL_SECRETARY"
+	foa = "GENERAL_SECRETARY_FOA"
+	short_name = yes
+	location_ruler_title = yes
+	
 	# Always exists
 	landless = yes
 	
 	# Controls a religion
-	controls_religion = alevi
+	controls_religion = proletcult
 	
-	religion = alevi
-	
-	dignity = 200
+	religion = proletcult
 	
 	# Cannot be held as a secondary title
 	primary = yes
+
+	assimilate = no
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 
+	dignity = 200
+	
 }

@@ -460,8 +460,7 @@
 	name="Stanislas"
 	dynasty=2009217 #Carrépoint
 	culture=parisian
-	religion=jacobin
-	trait=patron_the_general
+	religion=constitutionalist
 	2632.10.20={birth=yes}
 	2657.1.1={add_spouse=1804043 
 	}
@@ -471,7 +470,7 @@
 	name="Robert"
 	dynasty=2009217 #Carrépoint
 	culture=parisian
-	religion=jacobin
+	religion=constitutionalist
 	father=1804041
 	mother=1804043
 	2661.4.2={birth=yes}
@@ -481,7 +480,7 @@
 	name="Marie"
 	female=yes
 	culture=parisian
-	religion=jacobin
+	religion=constitutionalist
 	2630.1.19={birth=yes}
 	2657.1.1={add_spouse=1804041}
 	2680.1.1={death=yes}
@@ -513,6 +512,7 @@
 	stewardship=4
 	intrigue=6
 	learning=5
+	father=1804277
 	2647.5.9={birth=yes}
 	2680.1.1={death=yes}
 }
@@ -522,6 +522,7 @@
 	culture=parisian
 	religion=jacobin
 	trait=poet 
+	father=1804276
 	2627.8.25={birth=yes}
 	2680.1.1={death=yes}
 }
@@ -3950,7 +3951,7 @@
 	trait="deceitful"
 	trait="ambitious"
 	trait="deceitful"
-	trait="schemer"
+	trait="master_schemer"
 	2599.2.24={birth=yes}
 	2638.5.1={
 	   name="Ioannes Henricus"
@@ -3958,18 +3959,407 @@
 	2660.1.1={death=yes}
 }
 
-1804233={
+1804275={
 	name="Robert"
+	dynasty=2009220 #de l'Etoile 
 	culture=parisian
 	religion=constitutionalist
 	trait=cynical
 	trait=drunkard
+	father=1804276
 	2624.11.16={birth=yes}
 	2662.9.14={
 	   name="Maximilianus"
 	}
 	2677.11.23={death=yes}
 }
+
+1804244={
+	name="Charles"
+	dynasty=7534098
+	occluded=yes
+	culture=parisian
+	religion=jacobin
+	trait="legendary"
+	trait="patron_the_general"
+	give_nickname=nick_the_jacobin_general
+	disallow_random_traits=yes
+	1890.1.1={birth=yes}
+	1970.1.1={death=yes}
+}
+
+1804245={
+	name="Troisieme République"
+	dynasty=7534095
+	occluded=yes
+	culture=parisian
+	religion=jacobin
+	trait="legendary"
+	father=1804246
+	disallow_random_traits=yes
+	1870.1.1={birth=yes}
+	1940.1.1={death=yes}
+}
+
+1804246={
+	name="Seconde République"
+	dynasty=7534095
+	occluded=yes
+	culture=parisian
+	religion=jacobin
+	trait="legendary"
+	disallow_random_traits=yes
+	1848.1.1={birth=yes}
+	1852.1.1={death=yes}
+}
+
+1804247={
+	name="Napoléon"
+	dynasty=2009337
+	occluded=yes
+	culture=parisian
+	religion=jacobin
+	trait="legendary"
+	father=1713059
+	disallow_random_traits=yes
+	1808.1.1={birth=yes}
+	1870.1.1={death=yes}
+}
+
+1804248={
+	name="Louis-Philippe"
+	dynasty=7534094
+	occluded=yes
+	culture=parisian
+	religion=constitutionalist
+	trait="legendary"
+	disallow_random_traits=yes
+	1773.1.1={birth=yes}
+	1848.1.1={death=yes}
+}
+
+1804249={
+	name="Maximilien"
+	dynasty=7534093
+	occluded=yes
+	culture=walloon
+	religion=jacobin
+	trait="legendary"
+	disallow_random_traits=yes
+	1758.1.1={birth=yes}
+	1799.1.1={death=yes}
+}
+
+1804250={
+	name="Charles Louis"
+	dynasty=7534096
+	occluded=yes
+	culture=parisian
+	religion=catholic
+	trait="legendary"
+	father=1804253
+	disallow_random_traits=yes
+	1757.1.1={birth=yes}
+	1830.1.1={ 
+	   death={
+	      death_reason=death_battle
+		  killer=1804238
+	   }
+	}
+}
+
+1804251={
+	name="Louis"
+	dynasty=7534096
+	occluded=yes
+	culture=parisian
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	give_nickname=nick_the_martyr
+	father=1804253
+	1754.1.1={birth=yes}
+	1789.7.14={
+	   death={
+	      death_reason=death_execution
+		  killer=1804249
+	   }
+	}
+}
+
+1804252={
+	name="Henri"
+	dynasty=7534096
+	occluded=yes
+	culture=parisian
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	father=1804250
+	1820.1.1={birth=yes}
+	1888.1.1={death=yes}
+}
+
+1804253={
+	name="Louis"
+	dynasty=7534096
+	occluded=yes
+	culture=parisian
+	religion=catholic
+	trait="legendary"
+	father=1804254
+	disallow_random_traits=yes
+	1682.1.1={birth=yes}
+	1764.1.1={death=yes}
+}
+
+1804254={
+	name="Louis"
+	dynasty=7534096
+	occluded=yes
+	culture=parisian
+	religion=catholic
+	trait="legendary"
+	give_nickname=nick_the_great
+	father=1804255
+	disallow_random_traits=yes
+	1638.1.1={birth=yes}
+	1715.1.1={death=yes}
+}
+
+1804255={
+	name="Henri"
+	dynasty=7534096
+	occluded=yes
+	culture=parisian
+	religion=catholic
+	trait="legendary"
+	give_nickname=nick_the_great
+	father=1804257
+	disallow_random_traits=yes
+	1553.1.1={birth=yes}
+	1640.1.1={death=yes}
+}
+
+1804256={
+	name="Charles"
+	dynasty=7534096
+	occluded=yes
+	culture=parisian
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	father=1804257
+	1544.1.1={birth=yes}
+	1589.1.1={death=yes}
+}
+
+1804257={
+	name="François"
+	dynasty=7534096
+	occluded=yes
+	culture=parisian
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	father=1804258
+	1494.1.1={birth=yes}
+	1560.1.1={death=yes}
+}
+
+1804258={
+	name="Louis"
+	dynasty=7534096
+	occluded=yes
+	culture=parisian
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	father=1804259
+	1452.1.1={birth=yes}
+	1515.1.1={death=yes}
+}
+
+1804259={
+	name="Charles"
+	dynasty=7534096
+	occluded=yes
+	culture=parisian
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	father=1804260
+	1403.1.1={birth=yes}
+	1561.1.1={death=yes}
+}
+
+1804260={
+	name="Charles"
+	dynasty=7534096
+	occluded=yes
+	culture=parisian
+	religion=catholic
+	trait="legendary"
+	trait="lunatic"
+	disallow_random_traits=yes
+	father=1804261
+	1338.1.1={birth=yes}
+	1422.1.1={death=yes}
+}
+
+1804261={
+	name="Jean"
+	dynasty=7534096
+	occluded=yes
+	culture=parisian
+	religion=catholic
+	trait="legendary"
+	father=1804262
+	disallow_random_traits=yes
+	1293.1.1={birth=yes}
+	1364.1.1={death=yes}
+}
+
+1804262={
+	name="Philippe"
+	dynasty=7534096
+	occluded=yes
+	culture=parisian
+	religion=catholic
+	trait="legendary"
+	trait="attractive"
+	father=1804264
+	disallow_random_traits=yes
+	1268.1.1={birth=yes}
+	1322.1.1={death=yes}
+}
+
+1804263={
+	name="Anne"
+	female=yes
+	dynasty=7534096
+	occluded=yes
+	culture=parisian
+	religion=catholic
+	trait="legendary"
+	trait="attractive"
+	father=1804262
+	disallow_random_traits=yes
+	1290.1.1={birth=yes}
+	1350.1.1={death=yes}
+}
+
+1804264={
+	name="Philippe"
+	dynasty=7534096
+	occluded=yes
+	culture=parisian
+	religion=catholic
+	trait="legendary"
+	father=1804265
+	disallow_random_traits=yes
+	1245.1.1={birth=yes}
+	1295.1.1={death=yes}
+}
+
+1804265={
+	name="Louis"
+	dynasty=7534096
+	occluded=yes
+	culture=parisian
+	religion=catholic
+	trait="legendary"
+	trait="saint"
+	give_nickname=nick_the_saint
+	father=1804266
+	disallow_random_traits=yes
+	1214.4.25={birth=yes}
+	1270.8.25={
+	   death={
+	       death_reason=death_poor_health
+	   }
+	}
+}
+
+1804266={
+	name="Louis"
+	dynasty=7534096
+	occluded=yes
+	culture=parisian
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	father=1804267
+	1187.1.1={birth=yes}
+	1226.11.8={death=yes}
+}
+
+1804267={
+	name="Philippe Auguste"
+	dynasty=7534096
+	occluded=yes
+	culture=parisian
+	religion=catholic
+	trait="legendary"
+	father=1804268
+	disallow_random_traits=yes
+	1120.1.1={birth=yes}
+	1223.1.1={death=yes}
+}
+
+1804268={
+	name="Louis"
+	dynasty=7534096
+	occluded=yes
+	culture=parisian
+	religion=catholic
+	trait="legendary"
+	father=1804269
+	disallow_random_traits=yes
+	1070.1.1={birth=yes}
+	1137.1.1={death=yes}
+}
+
+1804269={
+	name="Henri"
+	dynasty=7534096
+	occluded=yes
+	culture=parisian
+	religion=catholic
+	trait="legendary"
+	father=1804270
+	disallow_random_traits=yes
+	1008.1.1={birth=yes}
+	1108.1.1={death=yes}
+}
+
+1804270={
+	name="Robert"
+	dynasty=7534096
+	occluded=yes
+	culture=parisian
+	religion=catholic
+	trait="legendary"
+	father=1804274
+	disallow_random_traits=yes
+	972.1.1={birth=yes}
+	1031.1.1={death=yes}
+}
+
+1804274={
+	name="Bourbon"
+	dynasty=7534096
+	occluded=yes
+	culture=parisian
+	religion=catholic
+	trait="legendary"
+	trait="bastard"
+	father=8002100
+	disallow_random_traits=yes
+	920.1.1={birth=yes}
+	996.1.1={death=yes}
+}
+
 
 1804271={
 	name="Frederig"
@@ -4014,5 +4404,94 @@
 	father=1804271
 	mother=1804272
 	2663.3.2={birth=yes}
+	2700.1.1={death=yes}
+}
+
+1804276={
+	name="Charles"
+	dynasty=2009220 #de l'Etoile 
+	culture=parisian
+	religion=jacobin
+	trait=poet 
+	2599.4.4={birth=yes}
+	2659.11.29={death=yes}
+}
+
+1804277={
+	name="François"
+	dynasty=2009219 #Arbalèste 
+	culture=parisian
+	religion=jacobin
+	trait=patron_the_general
+	trait=brilliant_strategist
+	trait=gregarious
+	trait=attractive
+	trait=quick
+	trait=gregarious
+	trait=cynical
+	trait=sympathy_christendom
+	2608.9.17={birth=yes}
+	2650.7.14={
+	   death={
+	      death_reason=death_accident_fire
+	   }
+	}
+}
+
+1804278={
+	name="Napoléon"
+	dynasty=2009220 #de l'Etoile 
+	culture=parisian
+	religion=jacobin
+	father=1804275
+	trait="tough_soldier"
+	trait="patron_the_emperor"
+	trait="ambitious"
+	trait="brave"
+	trait="genius"
+	trait="attractive"
+	trait="dwarf"
+	trait="strategist"
+	trait="patient"
+	trait="proud"
+	trait="sympathy_christendom"
+	trait="twin"
+	learning=10
+	intrigue=10
+	stewardship=10
+	diplomacy=9
+	dna="a0icj0jcc00"
+	properties="pc0a0k"
+	2649.8.15={birth=yes}
+	2665.1.1={
+	   employer=1804046
+	}
+	2700.1.1={death=yes}
+}
+
+1804279={
+	name="Jeanne"
+	female=yes
+	dynasty=2009220 #de l'Etoile 
+	culture=parisian
+	religion=constitutionalist
+	secret_religion=catholic
+	father=1804275
+	trait="twin"
+	trait="attractive"
+	trait="quick"
+	trait="zealous"
+	trait="chaste"
+	trait="patient"
+	trait="kind"
+	trait="shy"
+	trait="midas_touched"
+	trait="school_of_pascal"
+	dna="c0jkj0jcac0"
+	properties="wd0c0k"
+	2649.8.15={birth=yes}
+	2665.1.1={
+	   employer=1804046
+	}
 	2700.1.1={death=yes}
 }

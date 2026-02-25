@@ -50639,9 +50639,21 @@ coat_of_arms = {
 7534092 = { name = "Lombardo" culture = umbrian used_for_random = no }
 7534093 = { name = "Robespierre" culture = parisian religion = jacobin used_for_random = no }
 7534094 = { name = "d'Orleans" culture = parisian religion = jacobin used_for_random = no }
-7534095 = { name = "Grevy" culture = parisian religion = jacobin used_for_random = no }
-7534096 = { name = "Clemenceau" culture = parisian religion = jacobin used_for_random = no }
-7534097 = { name = "Lebrun" culture = parisian religion = jacobin used_for_random = no }
+7534095 = { name = "" culture = parisian religion = jacobin used_for_random = no }
+7534096 = { name = "de Bourbon" culture = french used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 54
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 7534098 = { name = "de Gaulle" culture = parisian religion = jacobin used_for_random = no }
 7534099 = { name = "Przemyslid" culture = czech used_for_random = no }
 7534100 = { name = "z Podebrad" culture = czech used_for_random = no }
@@ -50661,7 +50673,6 @@ coat_of_arms = {
 }
 7534102 = { name = "Pilsudski" culture = polish used_for_random = no }
 7534103 = { name = "Dyzma" culture = polish used_for_random = no }
-7534104 = { name = "Narutowicz" culture = polish used_for_random = no }
 7534105 = { name = "Sikorski" culture = polish used_for_random = no }
 7534106 = { name = "ar Grenier" culture = breton used_for_random = no
 	coat_of_arms = {
@@ -50792,11 +50803,7 @@ coat_of_arms = {
 }
 7534121 = { name = "Lechita" culture = hungarian used_for_random = no }
 7534122 = { name = "Leszczynski" culture = malopolan used_for_random = no }
-7534123 = { name = "Mikolajczyk" culture = malopolan used_for_random = no }
-7534124 = { name = "Bierut" culture = malopolan used_for_random = no }
-7534125 = { name = "Gomulka" culture = malopolan used_for_random = no }
-7534126 = { name = "Gierek" culture = malopolan used_for_random = no }
-7534127 = { name = "Jaruzelski" culture = malopolan used_for_random = no }
+7534126 = { name = "" culture = malopolan used_for_random = no }
 7534128 = { name = "Walesa" culture = malopolan used_for_random = no }
 7534129 = { name = "Árpád" culture = hungarian used_for_random = no }
 7534130 = { 
@@ -50853,3 +50860,24 @@ coat_of_arms = {
 		}
 	}
 }
+7534135 = { name = "Lenin" culture = muscovite used_for_random = no }
+7534136 = { name = "Trotsky" culture = muscovite used_for_random = no }
+7534137 = { name = "Khrushchev" culture = muscovite used_for_random = no }
+7534138 = { name = "Brezhnev" culture = muscovite used_for_random = no }
+7534139 = { name = "" culture = muscovite used_for_random = no }
+7534140 = { name = "Romanov" culture = severyane used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 4
+			texture_internal = 42
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7534141 = { name = "Godunov" culture = muscovite used_for_random = no }
+7534142 = { name = "Rurikovich" culture = muscovite used_for_random = no }

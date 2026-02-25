@@ -1100,6 +1100,7 @@ christian = {
 		religious_clothing_head = 0
 		religious_clothing_priest = 1
 		intermarry = jacobin
+		intermarry = bonapartist
 		intermarry = catholic
 		intermarry = penitant
 		intermarry = memento_mori
@@ -1111,6 +1112,10 @@ christian = {
 		intermarry = valinorist
 		intermarry = glorian
 		intermarry = thelema
+		
+		character_modifier = {
+			jacobin_opinion = 10
+		}
 	}
 	apparitionist = {
 		graphical_culture = westerngfx
@@ -2539,6 +2544,7 @@ vernacular = {
 		intermarry = quinto
 		intermarry = catholic
 		intermarry = jacobin
+		intermarry = bonapartist
 	}
 	
 	chevalier = {
@@ -3875,7 +3881,7 @@ old_world_cultist_group = {
 		graphical_culture = hellenicgfx
 		
 		icon = 131
-		heresy_icon = 131
+		heresy_icon = 134
 		
 		color = { 0 0.25 0.85 }
 		
@@ -3905,7 +3911,7 @@ old_world_cultist_group = {
 		religious_clothing_priest = 11
 		
 		intermarry = neuhumanist
-		intermarry = jacobin
+		intermarry = bonapartist
 		intermarry = constitutionalist
 		
 		male_names = {
@@ -3943,6 +3949,10 @@ old_world_cultist_group = {
 			Union-jacobin 
 			Valmy-jacobin Vérité-jacobin Vertu-jacobin 
 		}
+		
+		character_modifier = {
+			constitutionalist_opinion = 10
+		}
 	}
 	proletcult = { 
 		graphical_culture = hellenicgfx
@@ -3964,13 +3974,15 @@ old_world_cultist_group = {
 		scripture_name = THE_BOOK_OF_SAYINGS
 		priest_title = COMRADE
 		
-		can_call_crusade = no
+		can_call_crusade = yes
 		priests_can_marry = yes
 		priests_can_inherit = no
 		female_temple_holders = yes
 		allow_rivermovement = yes
 		can_grant_claim = yes
-		can_grant_divorce = yes
+		can_grant_divorce = no
+		can_have_antipopes = yes
+		investiture = no
 		
 		religious_clothing_head = 18
 		religious_clothing_priest = 18
@@ -4289,6 +4301,7 @@ old_world_cultist_group = {
 		religious_clothing_priest = 11
 		
 		intermarry = jacobin
+		intermarry = bonapartist
 		intermarry = thelema
 		intermarry = glorian
 	}

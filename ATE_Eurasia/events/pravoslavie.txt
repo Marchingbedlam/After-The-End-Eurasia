@@ -87,10 +87,12 @@ character_event = { #Moscow or Kyiv
 	
 	option = { #Moscow
 		name = EVTOPTA_pravoslavie.3
+		character_event = { id = pravoslavie.4 }
 	}
 	
 	option = { #It isn't for me
 		name = EVTOPTB_pravoslavie.3
+		character_event = { id = pravoslavie.6 }
 	}
 }
 
@@ -117,26 +119,30 @@ character_event = { #Go to Moscow
 		}
 		hidden_tooltip = {
 			random_list = {
-				10 = { character_event = { id = SoA.5031 days = 9 random = 10 } } # List that is always checked
-				10 = { character_event = { id = SoA.5032 days = 9 random = 10 } }
+				5 = { character_event = { id = SoA.5031 days = 9 random = 5 } } # List that is always checked
+				5 = { character_event = { id = SoA.5032 days = 9 random = 5 } }
+				10 = { character_event = { id = pravoslavie.16 days = 10 random = 10 } }
 				10 = { narrative_event = { id = SoA.5033 days = 9 random = 10 } }
 				10 = { character_event = { id = SoA.5034 days = 10 random = 10 } }
 				10 = { character_event = { id = SoA.5035 days = 8 random = 10 } }
 				10 = { character_event = { id = SoA.5036 days = 9 random = 10 } }
 				10 = { character_event = { id = SoA.5037 days = 10 random = 10 } }
-				10 = { character_event = { id = SoA.5038 days = 10 random = 10 } }
-				10 = { character_event = { id = SoA.5039 days = 8 random = 10 } }
+				5 = { character_event = { id = SoA.5038 days = 10 random = 5 } }
+				5 = { character_event = { id = SoA.5039 days = 8 random = 5 } }
+				10 = { character_event = { id = pravoslavie.18 days = 11 random = 10 } }
 			}
 			random_list = {
-				10 = { character_event = { id = SoA.5031 days = 20 random = 10 } } # List that is always checked
-				10 = { character_event = { id = SoA.5032 days = 21 random = 10 } }
+				5 = { character_event = { id = SoA.5031 days = 18 random = 5 } } # List that is always checked
+				5 = { character_event = { id = SoA.5032 days = 19 random = 5 } }
+				10 = { character_event = { id = pravoslavie.16 days = 21 random = 10 } }
 				10 = { narrative_event = { id = SoA.5033 days = 20 random = 10 } }
 				10 = { character_event = { id = SoA.5034 days = 20 random = 10 } }
 				10 = { character_event = { id = SoA.5035 days = 19 random = 10 } }
 				10 = { character_event = { id = SoA.5036 days = 22 random = 10 } }
 				10 = { character_event = { id = SoA.5037 days = 21 random = 10 } }
-				10 = { character_event = { id = SoA.5038 days = 23 random = 10 } }
-				10 = { character_event = { id = SoA.5039 days = 20 random = 10 } }
+				5 = { character_event = { id = SoA.5038 days = 19 random = 5 } }
+				5 = { character_event = { id = SoA.5039 days = 18 random = 5 } }
+				10 = { character_event = { id = pravoslavie.18 days = 22 random = 10 } }
 			}
 		}
 	}
@@ -181,26 +187,30 @@ character_event = { #Go to Kyiv
 		}
 		hidden_tooltip = {
 			random_list = {
-				10 = { character_event = { id = SoA.5031 days = 9 random = 10 } } # List that is always checked
-				10 = { character_event = { id = SoA.5032 days = 9 random = 10 } }
+				5 = { character_event = { id = SoA.5031 days = 9 random = 5 } } # List that is always checked
+				5 = { character_event = { id = SoA.5032 days = 9 random = 5 } }
+				10 = { character_event = { id = pravoslavie.16 days = 10 random = 10 } }
 				10 = { narrative_event = { id = SoA.5033 days = 9 random = 10 } }
 				10 = { character_event = { id = SoA.5034 days = 10 random = 10 } }
 				10 = { character_event = { id = SoA.5035 days = 8 random = 10 } }
 				10 = { character_event = { id = SoA.5036 days = 9 random = 10 } }
 				10 = { character_event = { id = SoA.5037 days = 10 random = 10 } }
-				10 = { character_event = { id = SoA.5038 days = 10 random = 10 } }
-				10 = { character_event = { id = SoA.5039 days = 8 random = 10 } }
+				5 = { character_event = { id = SoA.5038 days = 10 random = 5 } }
+				5 = { character_event = { id = SoA.5039 days = 8 random = 5 } }
+				10 = { character_event = { id = pravoslavie.18 days = 11 random = 10 } }
 			}
 			random_list = {
-				10 = { character_event = { id = SoA.5031 days = 20 random = 10 } } # List that is always checked
-				10 = { character_event = { id = SoA.5032 days = 21 random = 10 } }
+				5 = { character_event = { id = SoA.5031 days = 18 random = 5 } } # List that is always checked
+				5 = { character_event = { id = SoA.5032 days = 19 random = 5 } }
+				10 = { character_event = { id = pravoslavie.16 days = 21 random = 10 } }
 				10 = { narrative_event = { id = SoA.5033 days = 20 random = 10 } }
 				10 = { character_event = { id = SoA.5034 days = 20 random = 10 } }
 				10 = { character_event = { id = SoA.5035 days = 19 random = 10 } }
 				10 = { character_event = { id = SoA.5036 days = 22 random = 10 } }
 				10 = { character_event = { id = SoA.5037 days = 21 random = 10 } }
-				10 = { character_event = { id = SoA.5038 days = 23 random = 10 } }
-				10 = { character_event = { id = SoA.5039 days = 20 random = 10 } }
+				5 = { character_event = { id = SoA.5038 days = 19 random = 5 } }
+				5 = { character_event = { id = SoA.5039 days = 18 random = 5 } }
+				10 = { character_event = { id = pravoslavie.18 days = 22 random = 10 } }
 			}
 		}
 	}
@@ -305,26 +315,30 @@ character_event = { #Go to Kaliningrad
 		}
 		hidden_tooltip = {
 			random_list = {
-				10 = { character_event = { id = SoA.5031 days = 9 random = 10 } } # List that is always checked
-				10 = { character_event = { id = SoA.5032 days = 9 random = 10 } }
+				5 = { character_event = { id = SoA.5031 days = 9 random = 5 } } # List that is always checked
+				5 = { character_event = { id = SoA.5032 days = 9 random = 5 } }
+				10 = { character_event = { id = pravoslavie.16 days = 10 random = 10 } }
 				10 = { narrative_event = { id = SoA.5033 days = 9 random = 10 } }
 				10 = { character_event = { id = SoA.5034 days = 10 random = 10 } }
 				10 = { character_event = { id = SoA.5035 days = 8 random = 10 } }
 				10 = { character_event = { id = SoA.5036 days = 9 random = 10 } }
 				10 = { character_event = { id = SoA.5037 days = 10 random = 10 } }
-				10 = { character_event = { id = SoA.5038 days = 10 random = 10 } }
-				10 = { character_event = { id = SoA.5039 days = 8 random = 10 } }
+				5 = { character_event = { id = SoA.5038 days = 10 random = 5 } }
+				5 = { character_event = { id = SoA.5039 days = 8 random = 5 } }
+				10 = { character_event = { id = pravoslavie.18 days = 11 random = 10 } }
 			}
 			random_list = {
-				10 = { character_event = { id = SoA.5031 days = 20 random = 10 } } # List that is always checked
-				10 = { character_event = { id = SoA.5032 days = 21 random = 10 } }
+				5 = { character_event = { id = SoA.5031 days = 18 random = 5 } } # List that is always checked
+				5 = { character_event = { id = SoA.5032 days = 19 random = 5 } }
+				10 = { character_event = { id = pravoslavie.16 days = 21 random = 10 } }
 				10 = { narrative_event = { id = SoA.5033 days = 20 random = 10 } }
 				10 = { character_event = { id = SoA.5034 days = 20 random = 10 } }
 				10 = { character_event = { id = SoA.5035 days = 19 random = 10 } }
 				10 = { character_event = { id = SoA.5036 days = 22 random = 10 } }
 				10 = { character_event = { id = SoA.5037 days = 21 random = 10 } }
-				10 = { character_event = { id = SoA.5038 days = 23 random = 10 } }
-				10 = { character_event = { id = SoA.5039 days = 20 random = 10 } }
+				5 = { character_event = { id = SoA.5038 days = 19 random = 5 } }
+				5 = { character_event = { id = SoA.5039 days = 18 random = 5 } }
+				10 = { character_event = { id = pravoslavie.18 days = 22 random = 10 } }
 			}
 		}
 	}
@@ -368,26 +382,30 @@ character_event = { #Go to Petrograd
 		}
 		hidden_tooltip = {
 			random_list = {
-				10 = { character_event = { id = SoA.5031 days = 9 random = 10 } } # List that is always checked
-				10 = { character_event = { id = SoA.5032 days = 9 random = 10 } }
+				5 = { character_event = { id = SoA.5031 days = 9 random = 5 } } # List that is always checked
+				5 = { character_event = { id = SoA.5032 days = 9 random = 5 } }
+				10 = { character_event = { id = pravoslavie.16 days = 10 random = 10 } }
 				10 = { narrative_event = { id = SoA.5033 days = 9 random = 10 } }
 				10 = { character_event = { id = SoA.5034 days = 10 random = 10 } }
 				10 = { character_event = { id = SoA.5035 days = 8 random = 10 } }
 				10 = { character_event = { id = SoA.5036 days = 9 random = 10 } }
 				10 = { character_event = { id = SoA.5037 days = 10 random = 10 } }
-				10 = { character_event = { id = SoA.5038 days = 10 random = 10 } }
-				10 = { character_event = { id = SoA.5039 days = 8 random = 10 } }
+				5 = { character_event = { id = SoA.5038 days = 10 random = 5 } }
+				5 = { character_event = { id = SoA.5039 days = 8 random = 5 } }
+				10 = { character_event = { id = pravoslavie.18 days = 11 random = 10 } }
 			}
 			random_list = {
-				10 = { character_event = { id = SoA.5031 days = 20 random = 10 } } # List that is always checked
-				10 = { character_event = { id = SoA.5032 days = 21 random = 10 } }
+				5 = { character_event = { id = SoA.5031 days = 18 random = 5 } } # List that is always checked
+				5 = { character_event = { id = SoA.5032 days = 19 random = 5 } }
+				10 = { character_event = { id = pravoslavie.16 days = 21 random = 10 } }
 				10 = { narrative_event = { id = SoA.5033 days = 20 random = 10 } }
 				10 = { character_event = { id = SoA.5034 days = 20 random = 10 } }
 				10 = { character_event = { id = SoA.5035 days = 19 random = 10 } }
 				10 = { character_event = { id = SoA.5036 days = 22 random = 10 } }
 				10 = { character_event = { id = SoA.5037 days = 21 random = 10 } }
-				10 = { character_event = { id = SoA.5038 days = 23 random = 10 } }
-				10 = { character_event = { id = SoA.5039 days = 20 random = 10 } }
+				5 = { character_event = { id = SoA.5038 days = 19 random = 5 } }
+				5 = { character_event = { id = SoA.5039 days = 18 random = 5 } }
+				10 = { character_event = { id = pravoslavie.18 days = 22 random = 10 } }
 			}
 		}
 	}
@@ -431,26 +449,30 @@ character_event = { #Go to Sevastopol
 		}
 		hidden_tooltip = {
 			random_list = {
-				10 = { character_event = { id = SoA.5031 days = 9 random = 10 } } # List that is always checked
-				10 = { character_event = { id = SoA.5032 days = 9 random = 10 } }
+				5 = { character_event = { id = SoA.5031 days = 9 random = 5 } } # List that is always checked
+				5 = { character_event = { id = SoA.5032 days = 9 random = 5 } }
+				10 = { character_event = { id = pravoslavie.16 days = 10 random = 10 } }
 				10 = { narrative_event = { id = SoA.5033 days = 9 random = 10 } }
 				10 = { character_event = { id = SoA.5034 days = 10 random = 10 } }
 				10 = { character_event = { id = SoA.5035 days = 8 random = 10 } }
 				10 = { character_event = { id = SoA.5036 days = 9 random = 10 } }
 				10 = { character_event = { id = SoA.5037 days = 10 random = 10 } }
-				10 = { character_event = { id = SoA.5038 days = 10 random = 10 } }
-				10 = { character_event = { id = SoA.5039 days = 8 random = 10 } }
+				5 = { character_event = { id = SoA.5038 days = 10 random = 5 } }
+				5 = { character_event = { id = SoA.5039 days = 8 random = 5 } }
+				10 = { character_event = { id = pravoslavie.18 days = 11 random = 10 } }
 			}
 			random_list = {
-				10 = { character_event = { id = SoA.5031 days = 20 random = 10 } } # List that is always checked
-				10 = { character_event = { id = SoA.5032 days = 21 random = 10 } }
+				5 = { character_event = { id = SoA.5031 days = 18 random = 5 } } # List that is always checked
+				5 = { character_event = { id = SoA.5032 days = 19 random = 5 } }
+				10 = { character_event = { id = pravoslavie.16 days = 21 random = 10 } }
 				10 = { narrative_event = { id = SoA.5033 days = 20 random = 10 } }
 				10 = { character_event = { id = SoA.5034 days = 20 random = 10 } }
 				10 = { character_event = { id = SoA.5035 days = 19 random = 10 } }
 				10 = { character_event = { id = SoA.5036 days = 22 random = 10 } }
 				10 = { character_event = { id = SoA.5037 days = 21 random = 10 } }
-				10 = { character_event = { id = SoA.5038 days = 23 random = 10 } }
-				10 = { character_event = { id = SoA.5039 days = 20 random = 10 } }
+				5 = { character_event = { id = SoA.5038 days = 19 random = 5 } }
+				5 = { character_event = { id = SoA.5039 days = 18 random = 5 } }
+				10 = { character_event = { id = pravoslavie.18 days = 22 random = 10 } }
 			}
 		}
 	}
@@ -491,5 +513,196 @@ character_event = {
 	option = { #Sevastopol
 		name = EVTOPTC_pravoslavie.15
 		character_event = { id = pravoslavie.13 }
+	}
+}
+
+character_event = { 
+	id = pravoslavie.16
+	name = EVTNAME_pravoslavie.16
+	desc = EVTDESC_pravoslavie.16
+	picture = GFX_evt_russian_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = { #Speak with him...
+		name = EVTOPTA_pravoslavie.16
+		ai_chance = { 
+		    factor = 50 
+			modifier = {
+				factor = -30
+				trait="zealous"
+			}
+			modifier = {
+				factor = -20
+				trait="pious"
+			}
+			modifier = {
+				factor = -15
+				trait="shy"
+			}
+			modifier = {
+				factor = -10
+				trait="slow"
+			}
+			modifier = {
+				factor = -80
+				trait="imbecile"
+			}
+			modifier = {
+				factor = 15
+				trait="gregarious"
+			}
+			modifier = {
+				factor = 10
+				trait="erudite"
+			}
+			modifier = {
+				factor = 10
+				trait="scholar"
+			}
+			modifier = {
+				factor = 10
+				trait="cynical"
+			}
+		}
+		wealth = -10
+		narrative_event = { id = pravoslavie.17 }
+	}
+	
+	option = { #No
+		name = EVTOPTB_pravoslavie.16
+		ai_chance = { 
+		    factor = 50 
+			modifier = {
+				factor = 30
+				trait="zealous"
+			}
+			modifier = {
+				factor = 20
+				trait="pious"
+			}
+			modifier = {
+				factor = 15
+				trait="shy"
+			}
+			modifier = {
+				factor = 10
+				trait="slow"
+			}
+			modifier = {
+				factor = 80
+				trait="imbecile"
+			}
+			modifier = {
+				factor = -15
+				trait="gregarious"
+			}
+			modifier = {
+				factor = -10
+				trait="erudite"
+			}
+			modifier = {
+				factor = -10
+				trait="scholar"
+			}
+			modifier = {
+				factor = -10
+				trait="cynical"
+			}
+		}
+		piety = 50
+	}
+}
+
+narrative_event = { 
+	id = pravoslavie.17
+	name = EVTNAME_pravoslavie.17
+	desc = EVTDESC_pravoslavie.17
+	picture = GFX_evt_russian_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_pravoslavie.17
+		piety=50
+	}
+	
+	option = { 
+		name = EVTOPTB_pravoslavie.17
+		secret_religion=orthodox
+	}
+}
+
+character_event = { 
+	id = pravoslavie.18
+	name = EVTNAME_pravoslavie.18
+	desc = EVTDESC_pravoslavie.18
+	picture = GFX_evt_russian_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_pravoslavie.17
+		ai_chance = {
+		    factor = 5
+			modifier = {
+				factor = 10
+				trait="zealous"
+			}
+			modifier = {
+				factor = 5
+				trait="pious"
+			}
+			modifier = {
+				factor = 5
+				trait="shy"
+			}
+			modifier = {
+				factor = 5
+				trait="chaste"
+			}
+			modifier = {
+				factor = 10
+				trait="celibate"
+			}
+			modifier = {
+				factor = 20
+				trait="depression"
+			}
+		}
+		piety = 2000
+		death = { death_reason = death_missing }
+	}
+	
+	option = { 
+		name = EVTOPTB_pravoslavie.17
+		ai_chance = {
+		    factor = 95
+			modifier = {
+				factor = -10
+				trait="zealous"
+			}
+			modifier = {
+				factor = -5
+				trait="pious"
+			}
+			modifier = {
+				factor = -5
+				trait="shy"
+			}
+			modifier = {
+				factor = -5
+				trait="chaste"
+			}
+			modifier = {
+				factor = -10
+				trait="celibate"
+			}
+			modifier = {
+				factor = -20
+				trait="depression"
+			}
+		}
+		piety=-25
 	}
 }

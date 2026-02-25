@@ -998,6 +998,8 @@ targeted_decisions = {
 				is_republic = yes
 				is_merchant_republic = yes
 			}
+			is_feudal = no
+			is_tribal = no
 			NOT = { trait = third_estate }
 		}
 		

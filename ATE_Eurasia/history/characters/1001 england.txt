@@ -1633,7 +1633,7 @@
 	2655.1.1={birth=yes}
 	2666.4.29={
 	      death = {
-		   death_reason=death_health
+		   death_reason=death_trait
 		}
 	}
 }
@@ -1648,7 +1648,7 @@
 	2657.1.1={birth=yes}
 	2666.5.6={
 	    death = {
-		   death_reason=death_health
+		   death_reason=death_trait
 		}
 	}
 }
@@ -1825,7 +1825,7 @@
 	531.1.1={birth=yes}
 	592.7.24={
 	    death={
-		   death_reason=death_depression
+		   death_reason=death_suicide
 		}
 	}
 }
@@ -1865,7 +1865,7 @@
 	565.1.1={birth=yes}
 	592.7.10={
 	    death={
-		   death_reason=death_health
+		   death_reason=death_poor_health
 		}
 	}
 }
@@ -2338,6 +2338,9 @@
 	1282.1.1={
 	    add_spouse=1901033
 	}
+	1310.1.1={
+	    add_spouse=1804263
+	}
 	1327.1.1={death=yes} 
 }
 
@@ -2349,6 +2352,7 @@
 	religion=catholic
 	add_trait="legendary"
 	father=1001168
+	mother=1804263
 	1312.1.1={birth=yes}
 	1377.1.1={death=yes} 
 }
@@ -2394,6 +2398,7 @@
 	religion=catholic
 	add_trait="legendary"
 	father=1001168
+	mother=1804263
 	1316.1.1={birth=yes}
 	1380.1.1={death=yes} 
 }
@@ -2538,7 +2543,7 @@
 	religion=high_church
 	father=1001181
 	add_trait="legendary"
-	add_trait="is_fat"
+	add_trait="fat"
 	1491.1.1={birth=yes}
 	1553.1.1={death=yes} 
 }
@@ -2903,7 +2908,7 @@
 	2239.2.16={birth=yes}
 	2265.8.12={
 	   death={
-	      death_reason=death_health
+	      death_reason=death_poor_health
 	   }
 	}
 }
@@ -2960,7 +2965,7 @@
 	2278.1.1={birth=yes}
 	2320.5.20={
 	   death={
-	      death_reason=death_health
+	      death_reason=death_poor_health
 	   }
 	}
 }
@@ -3232,7 +3237,7 @@
 	2687.1.1={death=yes}
 }
 
-1001204={
+1001217={
 	name="Richard"
 	culture=northerner
 	religion=high_church

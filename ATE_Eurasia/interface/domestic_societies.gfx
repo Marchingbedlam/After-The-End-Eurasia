@@ -793,6 +793,29 @@ spriteTypes = {
 		name = "GFX_society_currency_monastic_order_jain"
 		textureFile = "gfx\\interface\\societies\\society_currency_monastic_order_jain.dds"
 	}
+	
+	##### Monastic Order Pravoslavie #####
+
+	spriteType = {
+		name = "GFX_society_main_background_monastic_order_pravoslavie"
+		textureFile = "gfx\\interface\\societies\\society_bg_monastic_order_pravoslavie.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_small_monastic_order_pravoslavie"
+		textureFile = "gfx\\interface\\societies\\symbol_small_monastic_order_pravoslavie.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_society_portrait_ring_monastic_order_pravoslavie"
+		textureFile = "gfx\\interface\\societies\\portrait_ring_monastic_order_pravoslavie.dds"
+	}
+
+	spriteType = {
+		name = "GFX_society_portrait_ring_small_monastic_order_pravoslavie"
+		textureFile = "gfx\\interface\\societies\\portrait_ring_small_monastic_order_pravoslavie.dds"
+	}
 
 	##### Hermetics #####
 
@@ -967,6 +990,10 @@ spriteTypes = {
 		name = "GFX_society_main_background_warrior_lodge_hellenic"
 		textureFile = "gfx\\interface\\societies\\society_bg_olympian_champions.tga"
 	}
+	spriteType = {
+		name = "GFX_society_main_background_warrior_lodge_proletcult"
+		textureFile = "gfx\\interface\\societies\\society_bg_proletcult.tga"
+	}
 
 	#Expanded Background
 
@@ -1045,6 +1072,10 @@ spriteTypes = {
 		name = "GFX_society_portrait_ring_warrior_lodge_hellenic"
 		textureFile = "gfx\\interface\\societies\\portrait_ring_olympic_champions.tga"
 	}
+	spriteType = {
+		name = "GFX_society_portrait_ring_warrior_lodge_proletcult"
+		textureFile = "gfx\\interface\\societies\\portrait_ring_proletcult.tga"
+	}
 
 	#Small Ring
 
@@ -1083,6 +1114,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_society_portrait_ring_small_warrior_lodge_hellenic"
 		textureFile = "gfx\\interface\\societies\\portrait_ring_small_olympic_champions.tga"
+	}
+	spriteType = {
+		name = "GFX_society_portrait_ring_small_warrior_lodge_proletcult"
+		textureFile = "gfx\\interface\\societies\\portrait_ring_small_proletcult.tga"
 	}
 
 	#Icons
@@ -1130,6 +1165,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_icon_small_warrior_lodge_hellenic"
 		textureFile = "gfx\\interface\\societies\\symbol_small_olympic_champions.tga"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_icon_small_warrior_lodge_proletcult"
+		textureFile = "gfx\\interface\\societies\\symbol_small_proletcult.tga"
 		noOfFrames = 2
 	}
 
