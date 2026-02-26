@@ -816,6 +816,19 @@ spriteTypes = {
 		name = "GFX_society_portrait_ring_small_monastic_order_pravoslavie"
 		textureFile = "gfx\\interface\\societies\\portrait_ring_small_monastic_order_pravoslavie.dds"
 	}
+	
+	##### Monastic Order Mariavite #####
+
+	spriteType = {
+		name = "GFX_society_main_background_monastic_order_mariavite"
+		textureFile = "gfx\\interface\\societies\\society_bg_monastic_order_mariavite.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_small_monastic_order_mariavite"
+		textureFile = "gfx\\interface\\societies\\symbol_small_monastic_order_mariavite.dds"
+		noOfFrames = 2
+	}
 
 	##### Hermetics #####
 
@@ -994,6 +1007,10 @@ spriteTypes = {
 		name = "GFX_society_main_background_warrior_lodge_proletcult"
 		textureFile = "gfx\\interface\\societies\\society_bg_proletcult.tga"
 	}
+	spriteType = {
+		name = "GFX_society_main_background_warrior_lodge_neoplatonist"
+		textureFile = "gfx\\interface\\societies\\society_bg_neoplatonist.tga"
+	}
 
 	#Expanded Background
 
@@ -1171,6 +1188,10 @@ spriteTypes = {
 		name = "GFX_icon_small_warrior_lodge_proletcult"
 		textureFile = "gfx\\interface\\societies\\symbol_small_proletcult.tga"
 		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_icon_small_warrior_lodge_neoplatonist"
+		textureFile = "gfx\\interface\\societies\\symbol_small_neoplatonist.tga"
 	}
 
 	#Currency

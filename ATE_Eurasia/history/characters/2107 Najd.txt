@@ -1,4 +1,4 @@
-2107000={ #Duke of Riyad
+2107000={ #Arabian Sultan
 	name="Majdi"
 	dynasty=21007000 #Al-Saud
 	culture=najdi
@@ -10,13 +10,8 @@
 	trait=ambitious
 	trait=zealous
 	disallow_random_traits=yes
+	father=2107008
 	2638.9.21={birth=yes}
-	2650.1.1={
-		create_bloodline={
-			type=al_saud_bloodline
-			has_dlc="Holy Fury"
-		}
-	}
 	2680.1.1={death=yes}
 }
 2107001={ #Duke of Duwadmi
@@ -127,4 +122,141 @@
 	2648.9.13={birth=yes}
 	2649.1.1={culture=najdi}
 	2680.1.1={death=yes}
+}
+
+2107008={ 
+	name="Salman"
+	dynasty=21007000 #Al-Saud
+	culture=najdi
+	religion=ahl_as_salaf
+	trait=brilliant_strategist
+	trait=brave
+	trait=ambitious
+	trait=strong
+	trait=patient
+	trait=proud
+	father=2107009
+	2599.4.15={birth=yes}
+	2639.3.14={
+	  death={
+	   death_reason=death_battle
+	   killer=3603251
+	  }
+	}
+}
+
+2107009={ 
+	name="Muhammad"
+	dynasty=21007000 #Al-Saud
+	culture=najdi
+	religion=ahl_as_salaf
+	trait=drunkard
+	trait=erudite
+	trait=mystic
+	trait=midas_touched
+	trait=gregarious
+	trait=administrator
+	trait=kinslayer
+	give_nickname=nick_the_old
+	father=2107011
+	2551.7.2={birth=yes}
+	2632.9.22={death=yes}
+}
+
+2107010={ 
+	name="Majdi"
+	dynasty=21007000 #Al-Saud
+	culture=najdi
+	religion=ahl_as_salaf
+	trait=hunchback
+	trait=clubfooted
+	trait=poet
+	trait=wroth
+	trait=thrifty_clerk
+	give_nickname=nick_the_unready
+	father=2107009
+	2582.6.17={birth=yes}
+	2653.9.3={death=yes}
+}
+
+2107011={ 
+	name="Muhammad"
+	dynasty=21007000 #Al-Saud
+	culture=najdi
+	religion=ahl_as_salaf
+	trait=cruel
+	trait=ambitious
+	trait=tough_soldier
+	trait=zealous
+	trait=impaler
+	trait=paranoid
+	trait=kinslayer
+	father=2107012
+	2530.9.10={birth=yes}
+	2574.10.19={
+	   death={
+	      death_reason=death_execution
+		  killer=2107009
+	   }
+	}
+}
+
+2107012={ 
+	name="Ali"
+	dynasty=21007000 #Al-Saud
+	culture=najdi
+	religion=ahl_as_salaf
+	trait=midas_touched
+	trait=quick
+	trait=poet
+	trait=cynical
+	trait=patient
+	trait=stressed
+	trait=fair
+	trait=just
+	give_nickname=nick_the_great
+	father=2107013
+	2500.12.4={birth=yes}
+	2554.6.5={death=yes}
+}
+
+2107014={ 
+	name="Ali"
+	dynasty=21007000 #Al-Saud
+	culture=najdi
+	religion=ahl_as_salaf
+	trait=kind
+	trait=patient
+	trait=lunatic
+	trait=sympathy_christendom
+	trait=detached_priest
+	father=2107012
+	2522.4.12={birth=yes}
+	2559.6.5={
+	   death={
+	      death_reason=death_murder
+		  killer=2107011
+	   }
+	}
+}
+
+2107013={ 
+	name="Muhammad"
+	dynasty=21007000 #Al-Saud
+	culture=najdi
+	religion=ahl_as_salaf
+	trait=brilliant_strategist
+	trait=strong
+	trait=ambitious
+	trait=zealous
+	trait=strategist
+	give_nickname=nick_the_conqueror
+	2460.11.26={birth=yes}
+	2492.4.10={
+		create_bloodline={
+			type=al_saud_bloodline
+			has_dlc="Holy Fury"
+		}
+	}
+	2531.6.5={death=yes}
 }

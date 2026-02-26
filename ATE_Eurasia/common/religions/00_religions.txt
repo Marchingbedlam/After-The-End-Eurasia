@@ -1100,7 +1100,6 @@ christian = {
 		religious_clothing_head = 0
 		religious_clothing_priest = 1
 		intermarry = jacobin
-		intermarry = bonapartist
 		intermarry = catholic
 		intermarry = penitant
 		intermarry = memento_mori
@@ -1108,6 +1107,7 @@ christian = {
 		intermarry = lutheran
 		intermarry = calvinist
 		intermarry = free_church
+		intermarry = leveller
 		intermarry = high_church
 		intermarry = valinorist
 		intermarry = glorian
@@ -1449,6 +1449,7 @@ christian = {
 		
 		intermarry = lutheran
 		intermarry = free_church
+		intermarry = leveller
 	}
 	free_church = {
 		graphical_culture = westerngfx
@@ -1477,6 +1478,35 @@ christian = {
 		
 		intermarry = lutheran
 		intermarry = high_church
+		intermarry = leveller
+	}
+	leveller = {
+		graphical_culture = westerngfx
+		
+		icon = 71
+		heresy_icon = 72
+		
+		color = { 0.6 0.55 0.75 }
+		
+		parent = high_church
+		
+		crusade_name = CRUSADE
+		can_grant_divorce = yes
+		can_call_crusade = yes
+		female_temple_holders = yes
+		priests_can_marry = yes
+		priests_can_inherit = yes
+		allow_rivermovement = yes
+		feminist = yes
+		aggression = 1.5
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+		
+		intermarry = lutheran
+		intermarry = high_church
+		intermarry = proletcult
+		intermarry = jacobin
 	}
 	lutheran = {
 		graphical_culture = westerngfx
@@ -2077,6 +2107,7 @@ christian = {
 		intermarry = catholic
 		intermarry = reformed
 		intermarry = free_church
+		intermarry = leveller
 		intermarry = lutheran
 		intermarry = celeste
 	}
@@ -2118,6 +2149,7 @@ christian = {
 		intermarry = catholic
 		intermarry = reformed
 		intermarry = free_church
+		intermarry = leveller
 		intermarry = lutheran
 		intermarry = apostolic
 	}
@@ -2544,7 +2576,6 @@ vernacular = {
 		intermarry = quinto
 		intermarry = catholic
 		intermarry = jacobin
-		intermarry = bonapartist
 	}
 	
 	chevalier = {
@@ -2791,7 +2822,7 @@ scholastic = {
 		icon = 87
 		heresy_icon = 87
 		
-		color = { 15 15 15 }
+		color = { 99 44 235 }
 		
 		interface_skin = { taoist_interface indian_interface muslim_interface }
 		
@@ -3911,8 +3942,8 @@ old_world_cultist_group = {
 		religious_clothing_priest = 11
 		
 		intermarry = neuhumanist
-		intermarry = bonapartist
 		intermarry = constitutionalist
+		intermarry = leveller
 		
 		male_names = {
 			Agricola-jacobin 
@@ -3986,6 +4017,8 @@ old_world_cultist_group = {
 		
 		religious_clothing_head = 18
 		religious_clothing_priest = 18
+		
+		intermarry = leveller
 	}
 	an_nahar = {
 		graphical_culture = muslimgfx
@@ -4301,7 +4334,6 @@ old_world_cultist_group = {
 		religious_clothing_priest = 11
 		
 		intermarry = jacobin
-		intermarry = bonapartist
 		intermarry = thelema
 		intermarry = glorian
 	}

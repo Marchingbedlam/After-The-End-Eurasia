@@ -129,4 +129,8 @@ join_prev_monastic_order_society = {
 		limit = { PREV = { society_member_of = monastic_order_stoics } }
 		join_society = monastic_order_stoics
 	}
+	else_if = {
+		limit = { PREV = { society_member_of = monastic_order_mariavite } }
+		join_society = monastic_order_mariavite
+	}
 }

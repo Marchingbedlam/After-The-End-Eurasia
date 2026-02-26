@@ -50881,3 +50881,75 @@ coat_of_arms = {
 }
 7534141 = { name = "Godunov" culture = muscovite used_for_random = no }
 7534142 = { name = "Rurikovich" culture = muscovite used_for_random = no }
+7534143 = { name = "Kossuth" culture = hungarian used_for_random = no }
+7534144 = { name = "Apaya" 
+    culture = reunionnese
+	religion = jacobin
+	used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 72
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7534145 = { name = "Cadet" 
+    culture = reunionnese
+	religion = jacobin
+	used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 73
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7534146 = { 
+    name = "Trifonov" 
+    culture = bulgarian
+	religion = orthodox
+	used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 71
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7534147 = { 
+    name = "Bulgarski" 
+    culture = bulgarian
+	religion = orthodox
+	used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 71
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7534148 = { name = "Zivkov" culture = bulgarian used_for_random = no }

@@ -524,6 +524,9 @@
 	trait=poet 
 	father=1804276
 	2627.8.25={birth=yes}
+	2664.3.10={
+	   add_spouse=1804281
+	}
 	2680.1.1={death=yes}
 }
 1804047={
@@ -3951,7 +3954,7 @@
 	trait="deceitful"
 	trait="ambitious"
 	trait="deceitful"
-	trait="master_schemer"
+	trait="schemer"
 	2599.2.24={birth=yes}
 	2638.5.1={
 	   name="Ioannes Henricus"
@@ -4276,7 +4279,7 @@
 	1214.4.25={birth=yes}
 	1270.8.25={
 	   death={
-	       death_reason=death_poor_health
+	       death_reason=death_health
 	   }
 	}
 }
@@ -4493,5 +4496,112 @@
 	2665.1.1={
 	   employer=1804046
 	}
+	2700.1.1={death=yes}
+}
+
+1804281={
+	name="Bernadette"
+	female=yes
+	dynasty=7534144
+	culture=reunionnese
+	religion=jacobin
+	trait="fortune_builder"
+	trait="attractive"
+	trait="kind"
+	trait="diligent"
+	trait="charitable"
+	trait="humble"
+	trait="wroth"
+	trait="shy"
+	trait="trusting"
+	dna="cijjk0k00b0"
+	properties="0k0e0k"
+	2626.2.10={birth=yes}
+	2700.1.1={death=yes}
+}
+
+1804282={
+	name="Antoine"
+	dynasty=7534145
+	culture=reunionnese
+	religion=jacobin
+	trait="skilled_tactician"
+	trait="gregarious"
+	trait="brave"
+	trait="content"
+	trait="wroth"
+	trait="diligent"
+	trait="charitable"
+	dna="ajdhk0jc0b0"
+	properties="0i0a0k"
+	2624.1.1={birth=yes}
+	2652.1.1={
+	   add_spouse=1804281
+	}
+	2662.8.29={
+	   death={
+	      death_reason=death_accident
+	   }
+	}
+}
+
+1804283={
+	name="Amandine"
+	female=yes
+	dynasty=7534145
+	culture=reunionnese
+	religion=jacobin
+	trait="skilled_tactician"
+	trait="gregarious"
+	trait="brave"
+	trait="content"
+	trait="wroth"
+	trait="diligent"
+	trait="charitable"
+	father=1804282
+	mother=1804281
+	dna="00jkk0i00b0"
+	properties="0h0b0k"
+	2654.3.14={birth=yes}
+	2700.1.1={death=yes}
+}
+
+1804284={
+	name="Étienne"
+	dynasty=7534145
+	culture=reunionnese
+	religion=jacobin
+	trait="lefthanded"
+	trait="attractive"
+	trait="quick"
+	father=1804282
+	mother=1804281
+	dna="0dakk0000b0"
+	properties="0b0a0k"
+	2659.2.4={birth=yes}
+	2700.1.1={death=yes}
+}
+
+1804285={
+	name="Anthony"
+	dynasty=7534145
+	culture=reunionnese
+	religion=jacobin
+	father=1804282
+	mother=1804281
+	dna="0ijd00kc0b0"
+	properties="0h0edk"
+	2662.3.27={birth=yes}
+	2700.1.1={death=yes}
+}
+
+1804286={
+	name="Charles"
+	dynasty=2009220 #de l'Etoile 
+	culture=parisian
+	religion=jacobin
+	father=1804046
+	mother=1804281
+	2665.5.2={birth=yes}
 	2700.1.1={death=yes}
 }
