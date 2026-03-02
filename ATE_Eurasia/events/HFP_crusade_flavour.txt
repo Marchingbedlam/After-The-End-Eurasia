@@ -2335,18 +2335,6 @@ character_event = {
 
 	immediate = {
 		random_list = {
-			10 = {
-				trigger = {
-					is_title_active = d_knights_templar
-					religion = d_knights_templar
-				}
-
-				d_knights_templar = {
-					holder_scope = {
-						save_event_target_as = decided_holy_order
-					}
-				}
-			}
 
 			10 = {
 				trigger = {

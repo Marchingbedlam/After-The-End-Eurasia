@@ -602,22 +602,6 @@ narrative_event = {
 		}
 
 		activate_title = {
-			title = d_knights_templar
-			status = yes
-		}
-
-		create_random_soldier = {
-			dynasty = none
-			random_traits = yes
-			religion = catholic
-		}
-
-		new_character = {
-			grant_title = d_knights_templar
-			set_government_type = order_government
-		}
-
-		activate_title = {
 			title = d_bektashi
 			status = yes
 		}
@@ -869,16 +853,6 @@ character_event = {
 
 			k_papal_state = {
 				set_random_coa_effect = yes
-			}
-
-			d_knights_templar = {
-				holder_scope = {
-					save_event_target_as = renaming_target
-				}
-
-				set_random_coa_effect = yes
-				set_name = ALT_HO_LOCATION
-				adjective = ALT_HO_LOCATION_ADJ
 			}
 
 			d_livonian_order = {

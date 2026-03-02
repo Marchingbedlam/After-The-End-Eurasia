@@ -54,21 +54,18 @@ decisions = {
 			hidden_tooltip = {
 				narrative_event = { id = hindu.2 days = 5 }
 			}
-			revoke_allowed = {
-				always = no 
+		}
+		ai_will_do = {
+			factor = 1
+				
+			modifier = {
+				factor = 0
+				trait = craven
 			}
-			ai_will_do = {
-				factor = 1
 				
-				modifier = {
-					factor = 0
-					trait = craven
-				}
-				
-				modifier = {
-					factor = 0
-					NOT = { piety <= 600 }
-				}
+			modifier = {
+				factor = 0
+				NOT = { piety <= 600 }
 			}
 		}
 	}

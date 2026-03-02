@@ -834,10 +834,6 @@ crusade_flavor_event_tombola_effect = {
 				}
 				
 				trigger_if = {
-					limit = { is_title_active = d_knights_templar }
-					religion = d_knights_templar
-				}
-				trigger_else_if = {
 					limit = { is_title_active = d_livonian_order }
 					religion = d_livonian_order
 				}

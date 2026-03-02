@@ -350,12 +350,6 @@ setup_holy_order_religion_scopes = {
 		set_global_flag = setup_holy_order_religion_scopes
 
 		# Christian
-		d_knights_templar = {
-			save_persistent_event_target = {
-				name = holy_order_religion
-				scope = catholic
-			}
-		}
 
 		d_livonian_order = {
 			save_persistent_event_target = {

@@ -668,7 +668,6 @@ character_event = {
 						limit = { has_character_flag = pilgrimage_to_antioch }
 
 						OR = {
-							is_title_active = d_knights_templar
 							is_title_active = d_knights_hospitaller
 							is_title_active = d_holy_sepulchre
 						}
@@ -677,7 +676,6 @@ character_event = {
 						limit = { has_character_flag = pilgrimage_to_canterbury }
 
 						OR = {
-							is_title_active = d_knights_templar
 							is_title_active = d_knights_hospitaller
 						}
 					}
@@ -685,7 +683,6 @@ character_event = {
 						limit = { has_character_flag = pilgrimage_to_jerusalem }
 
 						OR = {
-							is_title_active = d_knights_templar
 							is_title_active = d_knights_hospitaller
 							is_title_active = d_holy_sepulchre
 						}
@@ -694,7 +691,6 @@ character_event = {
 						limit = { has_character_flag = pilgrimage_to_koln }
 
 						OR = {
-							is_title_active = d_knights_templar
 							is_title_active = d_knights_hospitaller
 						}
 					}
@@ -702,7 +698,6 @@ character_event = {
 						limit = { has_character_flag = pilgrimage_to_rome }
 
 						OR = {
-							is_title_active = d_knights_templar
 							is_title_active = d_knights_hospitaller
 						}
 					}
@@ -1257,24 +1252,6 @@ character_event = {
 			text = gain_friend
 
 			random_list = {
-				1 = {
-					trigger = {
-						is_title_active = d_knights_templar
-
-						OR = {
-							has_character_flag = pilgrimage_to_antioch
-							has_character_flag = pilgrimage_to_canterbury
-							has_character_flag = pilgrimage_to_jerusalem
-							has_character_flag = pilgrimage_to_koln
-							has_character_flag = pilgrimage_to_rome
-						}
-					}
-
-					d_knights_templar = {
-						save_event_target_as = target_holy_order
-					}
-				}
-
 				1 = {
 					trigger = {
 						is_title_active = d_knights_hospitaller

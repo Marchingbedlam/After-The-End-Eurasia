@@ -866,7 +866,6 @@ letter_event = {
 				trigger = {
 					# Check if holy orders exist
 					OR = {
-						is_title_active = d_knights_templar
 						is_title_active = d_knights_hospitaller
 						is_title_active = d_knights_santiago
 						is_title_active = d_knights_calatrava
@@ -1961,7 +1960,6 @@ letter_event = {
 				trigger = {
 					# Check if holy orders exist
 					OR = {
-						is_title_active = d_knights_templar
 						is_title_active = d_knights_hospitaller
 						is_title_active = d_knights_santiago
 						is_title_active = d_knights_calatrava
@@ -2610,7 +2608,6 @@ letter_event = {
 				religion = ROOT
 
 				OR = {
-					has_landed_title = d_knights_templar
 					has_landed_title = d_knights_hospitaller
 					has_landed_title = d_knights_santiago
 					has_landed_title = d_knights_calatrava
@@ -4163,7 +4160,6 @@ letter_event = {
 				religion = ROOT
 
 				OR = {
-					has_landed_title = d_knights_templar
 					has_landed_title = d_knights_hospitaller
 					has_landed_title = d_knights_santiago
 					has_landed_title = d_knights_calatrava
@@ -4246,7 +4242,6 @@ letter_event = {
 					religion = ROOT
 
 					OR = {
-						has_landed_title = d_knights_templar
 						has_landed_title = d_knights_hospitaller
 						has_landed_title = d_knights_santiago
 						has_landed_title = d_knights_calatrava

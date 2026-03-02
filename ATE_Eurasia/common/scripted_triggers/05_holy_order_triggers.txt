@@ -5,7 +5,6 @@ holy_order_check_active_trigger = {
 		limit = { is_catholic_branch = yes }
 
 		OR = {
-			is_title_active = d_knights_templar
 			is_title_active = d_knights_santiago
 			is_title_active = d_knights_calatrava
 			is_title_active = d_knights_hospitaller

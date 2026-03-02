@@ -672,7 +672,7 @@ succession_laws = {
 						is_vice_royalty = yes
 					}
 				}
-				government = british_government
+				holder_scope = { government = british_government }
 				AND = {
 					holder_scope = {
 						OR = {

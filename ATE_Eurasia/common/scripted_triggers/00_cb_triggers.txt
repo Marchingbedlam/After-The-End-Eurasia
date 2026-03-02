@@ -15,10 +15,6 @@ can_attack_holy_order_trigger = {
 		}
 
 		trigger_if = {
-			limit = { primary_title = { title = d_knights_templar } }
-			PREV = { has_character_modifier = expelled_d_knights_templar }
-		}
-		trigger_else_if = {
 			limit = { primary_title = { title = d_knights_hospitaller } }
 			PREV = { has_character_modifier = expelled_d_knights_hospitaller }
 		}
