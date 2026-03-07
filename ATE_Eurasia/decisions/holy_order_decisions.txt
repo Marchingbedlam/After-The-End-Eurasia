@@ -10,6 +10,141 @@
 
 decisions = {
 
+	borrow_money_knights_templar = {
+		ai_check_interval = 120
+
+		only_playable = yes
+
+		potential = {
+			has_dlc = "Sons of Abraham"
+			is_title_active = d_knights_templar
+			religion = d_knights_templar
+			is_nomadic = no
+
+			trigger_if = {
+				limit = { ai = yes }
+
+				independent = yes
+				higher_real_tier_than = COUNT
+			}
+
+			NOR = {
+				has_character_modifier = borrowed_from_knights_templar
+				has_character_modifier = expelled_d_knights_templar
+				government = order_government
+				is_liege_of = d_knights_templar
+			}
+		}
+
+		allow = {
+			d_knights_templar = {
+				holder_scope = {
+					wealth >= 300
+				}
+			}
+
+			NOT = { trait = excommunicated }
+			piety >= 100
+
+			custom_tooltip = {
+				text = knights_templar_loan_money_TT
+
+				reverse_opinion = {
+					who = d_knights_templar
+					value >= 25
+				}
+			}
+		}
+
+		effect = {
+			wealth = 300
+			piety = -100
+
+			add_character_modifier = {
+				name = borrowed_from_knights_templar
+				duration = -1
+				inherit = yes
+			}
+
+			d_knights_templar = {
+				show_scope_change = no
+
+				save_event_target_as = target_holy_order
+
+				holder_scope = {
+					show_scope_change = no
+
+					wealth = -300
+					save_event_target_as = target_grandmaster
+				}
+			}
+
+			letter_event = { id = SoA.1011 }
+		}
+
+		ai_will_do = {
+			factor = 0.5
+
+			trigger = {
+				wealth < 0
+			}
+		}
+	}
+
+	expel_the_knights_templar = {
+		ai = no
+
+		potential = {
+			independent = yes
+			higher_real_tier_than = DUKE
+			has_dlc = "Sons of Abraham"
+			is_title_active = d_knights_templar
+			religion = d_knights_templar
+			NOT = { has_character_modifier = expelled_d_knights_templar }
+
+			any_realm_province = {
+				held_under_PREV = yes
+
+				any_province_lord = {
+					OR = {
+						character = d_knights_templar
+						is_vassal_or_below_of = d_knights_templar
+					}
+				}
+			}
+		}
+
+		allow = {
+			piety >= 1000
+
+			custom_tooltip = {
+				text = expelling_holy_order_decision_tooltip
+				NOT = { has_character_flag = expel_the_knights_templar_check }
+			}
+		}
+
+		effect = {
+			set_character_flag = expel_the_knights_templar_check
+
+			d_knights_templar = {
+				save_event_target_as = target_holy_order
+
+				holder_scope = {
+					save_event_target_as = target_grandmaster
+				}
+			}
+
+			character_event = {
+				id = SoA.2990
+				tooltip = expelling_holy_order_decision_tooltip_b
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
 	expel_the_knights_hospitaller = {
 		ai = no
 
@@ -173,6 +308,108 @@ decisions = {
 
 		ai_will_do = {
 			factor = 0
+		}
+	}
+
+	donate_money_to_knights_templar = {
+		ai_check_interval = 80
+
+		only_playable = yes
+
+		potential = {
+			has_dlc = "Sons of Abraham"
+			is_title_active = d_knights_templar
+			religion = d_knights_templar
+
+			trigger_if = {
+				limit = { ai = yes }
+
+				wealth >= 600
+
+				trigger_if = {
+					limit = {
+						NOR = {
+							trait = zealous
+							trait = charitable
+						}
+					}
+
+					NOT = { trait = cynical }
+					piety < 300
+				}
+			}
+
+			NOR = {
+				government = order_government
+				has_character_modifier = expelled_d_knights_templar
+				is_liege_of = d_knights_templar
+			}
+
+			trigger_if = {
+				limit = {
+					OR = {
+						culture_group = iberian
+						culture_group = west_african
+						culture = berber
+						OR = { culture = gascon culture = occitan culture = provencal }
+					}
+				}
+
+				NOR = {
+					is_title_active = d_knights_calatrava
+					is_title_active = d_knights_santiago
+				}
+			}
+		}
+
+		allow = {
+			wealth >= 300
+
+			custom_tooltip = {
+				text = holy_order_donate_cooldown_tt
+				NOT = { has_character_modifier = donate_to_holy_order_cooldown }
+			}
+		}
+
+		effect = {
+			wealth = -300
+			piety = 100
+
+			if = {
+				limit = {
+					NOT = { has_character_modifier = donated_to_holy_order }
+				}
+
+				add_character_modifier = {
+					name = donated_to_holy_order
+					duration = -1
+				}
+			}
+
+			add_character_modifier = {
+				name = donate_to_holy_order_cooldown
+				years = 1
+				hidden = yes
+			}
+
+			d_knights_templar = {
+				show_scope_change = no
+
+				save_event_target_as = target_holy_order
+
+				holder_scope = {
+					show_scope_change = no
+
+					save_event_target_as = target_grandmaster
+					wealth = 300
+				}
+			}
+
+			letter_event = { id = SoA.1141 }
+		}
+
+		ai_will_do = {
+			factor = 0.5
 		}
 	}
 
@@ -948,6 +1185,105 @@ decisions = {
 
 		ai_will_do = {
 			factor = 0
+		}
+	}
+
+	vassalize_knights_templar = {
+		ai_check_interval = 60
+
+		is_high_prio = yes
+
+		only_playable = yes
+
+		potential = {
+			has_landed_title = k_jerusalem
+			has_dlc = "Sons of Abraham"
+			is_title_active = d_knights_templar
+			religion = d_knights_templar
+
+			NOR = {
+				has_character_modifier = expelled_d_knights_templar
+
+				reverse_has_opinion_modifier = {
+					name = opinion_unfit_ruler
+					who = d_knights_templar
+				}
+
+				has_alternate_start_parameter = {
+					key = religion_names
+					value = random
+				}
+			}
+
+			d_knights_templar = {
+				is_primary_holder_title = yes
+
+				holder_scope = {
+					independent = yes
+					num_of_count_titles < 3
+
+					NOR = {
+						vassal_of = ROOT
+						has_truce = ROOT
+						reverse_has_truce = ROOT
+					}
+				}
+			}
+		}
+
+		allow = {
+			independent = yes
+			NOT = { trait = excommunicated }
+			wealth >= 500
+
+			trigger_if = {
+				trigger = {
+					reverse_opinion = {
+						who = d_knights_templar
+						value = 25
+					}
+				}
+
+				custom_tooltip = {
+					text = vassalize_knights_templar_opinion_TT
+
+					always = no
+				}
+			}
+
+			custom_tooltip = {
+				text = only_one_vassalized_holy_order_TT
+
+				NOT = {
+					any_realm_lord = {
+						holy_order = yes
+					}
+				}
+			}
+		}
+
+		effect = {
+			wealth = -500
+
+			d_knights_templar = {
+				show_scope_change = no
+
+				save_event_target_as = target_holy_order
+
+				holder_scope = {
+					show_scope_change = no
+
+					wealth = 500
+					save_event_target_as = target_grandmaster
+					set_defacto_liege = ROOT
+				}
+			}
+
+			letter_event = { id = SoA.1016 }
+		}
+
+		ai_will_do = {
+			factor = 1
 		}
 	}
 
@@ -2314,11 +2650,13 @@ decisions = {
 
 					NOR = {
 						is_title_active = d_knights_hospitaller
+						is_title_active = d_knights_templar
 					}
 				}
 				trigger_else = {
 					NOR = {
 						is_title_active = d_knights_hospitaller
+						is_title_active = d_knights_templar
 					}
 				}
 			}
@@ -2476,11 +2814,13 @@ decisions = {
 
 					NOR = {
 						is_title_active = d_knights_hospitaller
+						is_title_active = d_knights_templar
 					}
 				}
 				trigger_else = {
 					NOR = {
 						is_title_active = d_knights_hospitaller
+						is_title_active = d_knights_templar
 					}
 				}
 			}

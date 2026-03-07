@@ -51,6 +51,7 @@ feudal_governments = {
 			    OR = {
 				   	religion = jacobin
 					religion = constitutionalist
+					religion = leveller
 				}
 			}
 			NAND = { #Is not a Tibetan Buddhist
@@ -992,8 +993,7 @@ feudal_governments = {
 		barons_need_dynasty = yes
 		free_retract_vassalage = yes
 		marriage_ignore_religion = yes
-
-		#No free levies in offensive war
+		free_levies_in_offensive_war = yes
 
 		can_build_tribal = no
 
@@ -1009,17 +1009,14 @@ feudal_governments = {
 		court_size_modifier = 10
 		vassal_limit = 30
 		commander_limit = 5
-		character_modifier = {
-			diplomacy = 3
-			intrigue = 1
-		}
 	}
 	italian_bureaucratic_government = {
-		preferred_holdings = { CASTLE CITY }
+		preferred_holdings = { CASTLE }
 		allowed_holdings = { 
 			CASTLE
 			FORT
 			HOSPITAL
+			CITY
 		}
 		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
 			TRIBAL
@@ -1054,15 +1051,6 @@ feudal_governments = {
 				de_jure_liege_or_above = e_sanctum_imperium
 			}
 			is_patrician = no
-		}
-		vassal_call_to_arms  = {
-			bureaucratic_government
-			british_government
-			diwan_government
-			feudal_government
-			ghazi_government
-			cenobitic_government
-			italian_bureaucratic_government
 		}
 		no_vassal_tax = {
 			theocracy_government
@@ -1178,6 +1166,7 @@ feudal_governments = {
 						religion = jedinstvo
 						religion = dukhovnye
 						religion = neotondrakian
+						religion = leveller
 					}
 					#higher_tier_than = BARON
 				}
@@ -1272,6 +1261,7 @@ feudal_governments = {
 		capital_move_delay = 600
 		## Modifiers
 		court_size_modifier = 10
+		commander_limit = 15
 	}
 	
 #	hetmanate_government = {

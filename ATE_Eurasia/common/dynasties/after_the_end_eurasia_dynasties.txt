@@ -50755,7 +50755,20 @@ coat_of_arms = {
 	}
 }
 7534113 = { name = "Báthory" culture = hungarian used_for_random = no }
-7534114 = { name = "Vasa" culture = swedish used_for_random = no }
+7534114 = { name = "Vasa" culture = swedish  used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 45
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 7534115 = { name = "Sobieski" culture = polish used_for_random = no }
 7534116 = { name = "Poniatowski" culture = polish used_for_random = no }
 7534117 = { name = "d’Anjou" culture = french used_for_random = no 
@@ -50953,3 +50966,38 @@ coat_of_arms = {
 	}
 }
 7534148 = { name = "Zivkov" culture = bulgarian used_for_random = no }
+7534149 = { name = "Bernadotte" culture = swedish used_for_random = no }
+7534150 = { name = "Wittelsbach" culture = greek used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 70
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7534151 = { name = "Sahajdacznyj" culture = ukrainian religion = kozachina used_for_random = no }
+7534152 = { name = "Khmelnytsky" culture = ukrainian religion = kozachina used_for_random = no }
+7534153 = { name = "Bohun" culture = ukrainian religion = kozachina used_for_random = no }
+7534154 = { name = "Mazepa" culture = ukrainian religion = kozachina used_for_random = no }
+7534155 = { name = "Skoropadsky" culture = ukrainian religion = kozachina used_for_random = no }
+7534156 = { name = "Holmes" culture = british 
+	used_for_random = no
+	coat_of_arms = { 
+		religion = nondescript_pagan
+		template = 1
+		layer = {
+			texture = 1
+			texture_internal = 13
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}

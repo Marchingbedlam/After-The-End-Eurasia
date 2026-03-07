@@ -1011,6 +1011,14 @@ spriteTypes = {
 		name = "GFX_society_main_background_warrior_lodge_neoplatonist"
 		textureFile = "gfx\\interface\\societies\\society_bg_neoplatonist.tga"
 	}
+	spriteType = {
+		name = "GFX_society_main_background_warrior_lodge_jacobin"
+		textureFile = "gfx\\interface\\societies\\society_bg_jacobin.tga"
+	}
+	spriteType = {
+		name = "GFX_society_main_background_warrior_lodge_kozachina"
+		textureFile = "gfx\\interface\\societies\\society_bg_cossacks.tga"
+	}
 
 	#Expanded Background
 
@@ -1192,6 +1200,17 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_icon_small_warrior_lodge_neoplatonist"
 		textureFile = "gfx\\interface\\societies\\symbol_small_neoplatonist.tga"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_icon_small_warrior_lodge_jacobin"
+		textureFile = "gfx\\interface\\societies\\symbol_small_jacobin.tga"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_icon_small_warrior_lodge_kozachina"
+		textureFile = "gfx\\interface\\societies\\symbol_small_cossacks.tga"
+		noOfFrames = 2
 	}
 
 	#Currency

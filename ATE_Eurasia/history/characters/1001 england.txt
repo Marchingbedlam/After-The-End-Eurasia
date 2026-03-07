@@ -324,7 +324,7 @@
 	name="William"
 	dynasty=1101002 #Fowler
 	culture=southerner
-	religion=thelema
+	religion=glorian
 	martial=3
 	diplomacy=5
 	stewardship=3
@@ -2543,7 +2543,7 @@
 	religion=high_church
 	father=1001181
 	add_trait="legendary"
-	add_trait="is_fat"
+	add_trait="fat"
 	1491.1.1={birth=yes}
 	1553.1.1={death=yes} 
 }
@@ -2956,7 +2956,7 @@
 	culture=westerner
 	religion=high_church
 	add_trait="content"
-	add_trait="is_fat"
+	add_trait="fat"
 	add_trait="patient"
 	add_trait="kind"
 	add_trait="gluttonous"
@@ -3237,7 +3237,7 @@
 	2687.1.1={death=yes}
 }
 
-1001217={
+1001204={
 	name="Richard"
 	culture=northerner
 	religion=high_church
@@ -3436,6 +3436,68 @@
 	2649.6.28={birth=yes}
 	2666.1.1={
 	   add_friend=1001027
+	}
+	2680.1.1={death=yes}
+}
+
+1001217={
+	name="Havelock"
+	dynasty=7534156 #Holmes
+	culture=southerner
+	religion=thelema
+	2590.1.1={birth=yes}
+	2642.5.10={death=yes}
+}
+
+1001218={
+	name="Sherlock"
+	dynasty=7534156 #Holmes
+	culture=southerner
+	religion=thelema
+	father=1001217
+	trait="elusive_shadow"
+	trait="genius"
+	trait="proud"
+	trait="chaste"
+	trait="duelist"
+	trait="schemer"
+	trait="drunkard"
+	2629.5.10={birth=yes}
+	2680.1.1={death=yes}
+}
+
+1001219={
+	name="Mycroft"
+	dynasty=7534156 #Holmes
+	culture=southerner
+	religion=glorian
+	father=1001217
+	trait="mastermind_theologian"
+	trait="quick"
+	trait="content"
+	trait="fat"
+	learning=15
+	2631.2.12={birth=yes}
+	2660.1.1={
+		effect={give_minor_title=title_minister}
+	}
+	2680.1.1={death=yes}
+}
+
+1001220={
+	name="Lucas"
+	culture=northerner
+	religion=high_church
+	trait="mastermind_theologian"
+	trait="patient"
+	trait="chaste"
+	trait="kind"
+	trait="poet"
+	trait="high_anglican"
+	trait="scholar"
+	2624.4.1={birth=yes}
+	2661.1.1={
+		effect={give_minor_title=title_convocation_bishop}
 	}
 	2680.1.1={death=yes}
 }

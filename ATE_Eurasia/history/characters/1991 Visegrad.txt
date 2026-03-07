@@ -1362,6 +1362,9 @@
 	mother=19911013
 	give_nickname=nick_the_culture
 	2373.3.7={birth=yes}
+	2400.1.1={
+	    add_spouse=1993252
+	}
 	2412.7.2={death={death_reason=death_murder killer=19911021}}
 }
 19911019={
@@ -1614,6 +1617,7 @@
 	intrigue=6
 	learning=3
 	father=19911018
+	mother=1993252
 	2401.3.7={birth=yes}
 	2457.11.27={death=yes}
 }
@@ -1635,6 +1639,7 @@
 	intrigue=4
 	learning=3
 	father=19911018
+	mother=1993252
 	2405.5.15={birth=yes}
 	2460.4.12={death={death_reason=death_battle killer=19911029}}
 }
@@ -1763,6 +1768,7 @@
 	intrigue=4
 	learning=7
 	father=19911018
+	mother=1993252
 	2410.5.4={birth=yes}
 	2444.11.24={religion=chronicler}
 	2475.10.27={death=yes}

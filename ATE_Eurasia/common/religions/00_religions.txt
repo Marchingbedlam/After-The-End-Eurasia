@@ -235,6 +235,8 @@ pagan_group = {
 		intermarry = quinto
 		intermarry = sjotru
 		intermarry = orthodox
+		intermarry = oldcalendarist
+		intermarry = antipalamite
 	}
 	jumic = {
 		graphical_culture = norsegfx
@@ -270,6 +272,8 @@ pagan_group = {
 		intermarry = quinto
 		intermarry = sjotru
 		intermarry = orthodox
+		intermarry = oldcalendarist
+		intermarry = antipalamite
 		
 	}
 	nartist_reformed = {
@@ -306,6 +310,8 @@ pagan_group = {
 		intermarry = quinto
 		intermarry = sjotru
 		intermarry = orthodox
+		intermarry = oldcalendarist
+		intermarry = antipalamite
 	}
 	nartist = {
 		graphical_culture = norsegfx
@@ -341,6 +347,8 @@ pagan_group = {
 		intermarry = quinto
 		intermarry = sjotru
 		intermarry = orthodox
+		intermarry = oldcalendarist
+		intermarry = antipalamite
 		
 	}
 	nenets_reformed = {
@@ -377,6 +385,8 @@ pagan_group = {
 		intermarry = quinto
 		intermarry = sjotru
 		intermarry = orthodox
+		intermarry = oldcalendarist
+		intermarry = antipalamite
 	}
 	nenets = {
 		graphical_culture = norsegfx
@@ -412,6 +422,8 @@ pagan_group = {
 		intermarry = quinto
 		intermarry = sjotru
 		intermarry = orthodox
+		intermarry = oldcalendarist
+		intermarry = antipalamite
 		
 	}
 	ak_jeng_reformed = {
@@ -715,6 +727,8 @@ pagan_group = {
 		hard_to_convert = yes
 		
 		intermarry = orthodox
+		intermarry = oldcalendarist
+		intermarry = antipalamite
 		intermarry = calvinist
 		intermarry = coronite
 		intermarry = mariavite
@@ -757,6 +771,8 @@ pagan_group = {
 		hard_to_convert = yes
 		
 		intermarry = orthodox
+		intermarry = oldcalendarist
+		intermarry = antipalamite
 		intermarry = calvinist
 		intermarry = coronite
 		intermarry = mariavite
@@ -1678,7 +1694,6 @@ christian = {
 		}
 		
 		autocephaly = yes
-		pentarchy = yes
 		can_excommunicate = yes
 		can_grant_divorce = yes
 		can_grant_invasion_cb = invasion
@@ -1689,6 +1704,92 @@ christian = {
 		
 		intermarry = kozachina
 		intermarry = angelchina
+		intermarry = oldcalendarist
+		intermarry = antipalamite
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+	}
+	oldcalendarist = {
+		graphical_culture = westerngfx
+
+		icon = 57
+		heresy_icon = 58
+		
+		parent = orthodox
+		
+		color = { 120 36 120 }
+		
+		crusade_name = CRUSADE
+		scripture_name = THE_BIBLE
+		priest_title = PRIEST
+		
+		high_god_name = GOD_GOD
+		
+		god_names = {
+			GOD_GOD GOD_THE_LORD GOD_JESUS GOD_THE_BLESSED_VIRGIN
+		}
+		
+		evil_god_names = {
+			SATAN LUCIFER THE_DEVIL
+		}
+		
+		autocephaly = yes
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_grant_invasion_cb = invasion
+		can_call_crusade = no
+		priests_can_inherit = no
+		
+		can_retire_to_monastery = yes
+		
+		intermarry = kozachina
+		intermarry = angelchina
+		intermarry = orthodox
+		intermarry = antipalamite
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+	}
+	antipalamite = {
+		graphical_culture = westerngfx
+
+		icon = 57
+		heresy_icon = 58
+		
+		color = { 180 96 180 }
+		
+		parent = orthodox
+		
+		crusade_name = CRUSADE
+		scripture_name = THE_BIBLE
+		priest_title = PRIEST
+		
+		high_god_name = GOD_GOD
+		
+		god_names = {
+			GOD_GOD GOD_THE_LORD GOD_JESUS GOD_THE_BLESSED_VIRGIN
+		}
+		
+		evil_god_names = {
+			SATAN LUCIFER THE_DEVIL
+		}
+		
+		autocephaly = yes
+		pentarchy = yes
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_grant_invasion_cb = invasion
+		can_call_crusade = no
+		priests_can_inherit = no
+		feminist = yes
+		
+		can_retire_to_monastery = yes
+		
+		intermarry = kozachina
+		intermarry = angelchina
+		intermarry = orthodox
+		intermarry = oldcalendarist
 		
 		religious_clothing_head = 2
 		religious_clothing_priest = 2
@@ -1831,6 +1932,8 @@ christian = {
 		
 		intermarry = catholic
 		intermarry = orthodox
+		intermarry = oldcalendarist
+		intermarry = antipalamite
 		intermarry = miaphysite
 		intermarry = druze
 
@@ -1870,6 +1973,8 @@ christian = {
 		
 		intermarry = catholic
 		intermarry = orthodox
+		intermarry = oldcalendarist
+		intermarry = antipalamite
 		intermarry = miaphysite
 
 	}
@@ -1915,6 +2020,8 @@ christian = {
 		intermarry = sun_king_cultist 
 		intermarry = quinto
 		intermarry = orthodox
+		intermarry = oldcalendarist
+		intermarry = antipalamite
 	}
 	miaphysite = {
 		graphical_culture = westerngfx
@@ -1952,6 +2059,8 @@ christian = {
 		
 		intermarry = catholic
 		intermarry = orthodox
+		intermarry = oldcalendarist
+		intermarry = antipalamite
 		intermarry = nestorian
 		intermarry = pentay
 	}
@@ -1993,6 +2102,8 @@ christian = {
 		
 		intermarry = catholic
 		intermarry = orthodox
+		intermarry = oldcalendarist
+		intermarry = antipalamite
 		intermarry = nestorian
 		intermarry = miaphysite
 		intermarry = neotondrakian
@@ -2065,7 +2176,7 @@ christian = {
 		religious_clothing_head = 2
 		religious_clothing_priest = 2
 		
-		intermarry = nondescript_eastern
+		intermarry = hindu
 		intermarry = barelvi
 		intermarry = nestorian
 	}
@@ -2187,7 +2298,7 @@ christian = {
 		religious_clothing_head = 2
 		religious_clothing_priest = 2
 		
-		intermarry = nondescript_eastern
+		intermarry = hindu
 		intermarry = barelvi
 		intermarry = nestorian
 	}
@@ -2226,7 +2337,7 @@ christian = {
 		religious_clothing_head = 2
 		religious_clothing_priest = 2
 		
-		intermarry = nondescript_eastern
+		intermarry = hindu
 		intermarry = barelvi
 		intermarry = nestorian
 	}
@@ -2245,7 +2356,7 @@ vernacular = {
 	color = { 0.2 0.8 0.8 }
 	
 	
-		ezharapallikal = {
+	ezharapallikal = {
 		graphical_culture = indiangfx
 		
 		icon = 67
@@ -2281,7 +2392,7 @@ vernacular = {
 		religious_clothing_head = 2
 		religious_clothing_priest = 2
 		
-		intermarry = nondescript_eastern
+		intermarry = hindu
 		intermarry = barelvi
 		intermarry = nestorian
 	}
@@ -2484,12 +2595,14 @@ vernacular = {
 		max_consorts = 3 
 		can_demand_religious_conversion = no
 		
-		religious_clothing_head = 3
-		religious_clothing_priest = 3
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
 		
 		intermarry = quinto
 		intermarry = sjotru
 		intermarry = orthodox
+		intermarry = oldcalendarist
+		intermarry = antipalamite
 		intermarry = angelchina
 	}
 	
@@ -2523,12 +2636,14 @@ vernacular = {
 		feminist = yes
 		can_demand_religious_conversion = no
 		
-		religious_clothing_head = 3
-		religious_clothing_priest = 3
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
 		
 		intermarry = quinto
 		intermarry = sjotru
 		intermarry = orthodox
+		intermarry = oldcalendarist
+		intermarry = antipalamite
 		intermarry = kozachina
 		intermarry = khanist
 	}
@@ -2650,6 +2765,8 @@ vernacular = {
 		religious_clothing_head = 2
 		religious_clothing_priest = 2
 		intermarry = orthodox
+		intermarry = oldcalendarist
+		intermarry = antipalamite
 	}
 	rastafarian = {
 		graphical_culture = africangfx
@@ -4906,7 +5023,7 @@ indian_group = { #Religions primarily from the Indian Subcontinent which don't f
 		priest_title = PUJARI
 		piety_name = KARMA
 		
-		intermarry = nondescript_eastern
+		intermarry = hindu
 		intermarry = jain
 		intermarry = sikh
 		intermarry = zoroastrian
@@ -4948,7 +5065,7 @@ indian_group = { #Religions primarily from the Indian Subcontinent which don't f
 		priest_title = PUJARI
 		piety_name = KARMA
 		
-		intermarry = nondescript_eastern
+		intermarry = hindu
 		intermarry = mantramarga
 		intermarry = jain
 		intermarry = sikh
@@ -5030,7 +5147,7 @@ indian_group = { #Religions primarily from the Indian Subcontinent which don't f
 		piety_name = PURITY
 		
 		intermarry = zoroastrian
-		intermarry = nondescript_eastern
+		intermarry = hindu
 	}
 	advaita = {   #Spiritual Hinduism centered around the Brahman
 		graphical_culture = indiangfx
@@ -5068,7 +5185,7 @@ indian_group = { #Religions primarily from the Indian Subcontinent which don't f
 		priest_title = PUJARI
 		piety_name = KARMA
 		
-		intermarry = nondescript_eastern
+		intermarry = hindu
 		intermarry = mantramarga
 		intermarry = jain
 		intermarry = sikh
