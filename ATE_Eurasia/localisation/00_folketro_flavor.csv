@@ -3,8 +3,6 @@
 
 ###########Folketro Decision Localization###########
 
-organize_the_nordic_priesthood;Organize the Nordic Priesthood;;;;;;;;;;;;;x
-organize_the_nordic_priesthood_desc;By gathering enough of the Folketro lands under your rule, you can unite the faithful under a great high priest, the Allsherjargode.;;;;;;;;;;;;;x
 become_allfader;Become Allfader;;;;;;;;;x
 become_allfader_desc;If powerful enough, a Ny Sed ruler may have the possibility to claim the religion for himself and bring the Ny Sed faith to a new era...;;;;;;;;;x
 change_folketro_branch;Change Folketro Branch;Changer de branche Folketro;Folketro Zweig Ändern;Cambiar de ramia Folketro;;;;;;;;;x
@@ -20,7 +18,7 @@ folketro_confirmation_custom_tooltip;Send out the invitations.;;;;;;;;;;;;;x
 ALLSHERJARGODE;Allsherjargode;;;;;;;;;;;;;x
 ALLFADER;Allfader;;;;;;;;;;;;;x
 ALLMODER;Allmoder;;;;;;;;;;;;;x
-GENERAL_SECRETARY;General Secretary;;;;;;;;;;;;;x
+ERKEBISKOP;Erkebiskop;;;;;;;;;;;;;x
 
 ###########Folketro Event Localization###########
 
@@ -46,3 +44,61 @@ TXT_change_folketro_branch;Choose the ancestors you wish to venerate!;;;;;;;;;;;
 EVTDESC_troll_5;The Folketro Faith has many figures that are worshipped to varying degrees by its most ardent believers. From the mysteries of the Hidden Folk to the reverance of the holy Apostles, your personal devotion to these spirits are paramount to being a devout Folketro adherence.;;;;;;;;;;;;;x
 EVTOPTA_troll_5;In the spirit of God Almighty I shall heed the word of his Holy Apostles!;;;;;;;;;;;;;x
 EVTOPTB_troll_5;Perhaps, I should look into [folketro.GetHighGodName] as to guard against Ragnarok...;;;;;;;;;;;;;x
+
+temple_baron_nysed;Gode;;;;;;;;;;;;;x
+temple_baron_nysed_female;Goda;;;;;;;;;;;;;x
+temple_count_nysed;Gode;;;;;;;;;;;;;x
+temple_count_nysed_female;Goda;;;;;;;;;;;;;x
+temple_duke_nysed;Gode;;;;;;;;;;;;;x
+temple_duke_nysed_demale;Goda;;;;;;;;;;;;;x
+temple_king_nysed;Gode;;;;;;;;;;;;;x
+temple_king_nysed_demale;Goda;;;;;;;;;;;;;x
+temple_barony_of_nysed;Tempel of;;;;;;;;;x
+
+temple_baron_fornsed;Pastor;;;;;;;;;;;;;x
+temple_baron_fornsed_female;Pastor;;;;;;;;;;;;;x
+temple_count_fornsed;Biskop;;;;;;;;;;;;;x
+temple_count_fornsed_female;Biskop;;;;;;;;;;;;;x
+temple_duke_fornsed;Erkebiskop;;;;;;;;;;;;;x
+temple_duke_fornsed_demale;Erkebiskop;;;;;;;;;;;;;x
+temple_barony_of_fornsed;Kirke of;;;;;;;;;x
+
+temple_baron_folketro;Gode;;;;;;;;;;;;;x
+temple_baron_folketro_female;Goda;;;;;;;;;;;;;x
+temple_count_folketro;Gode;;;;;;;;;;;;;x
+temple_count_folketro_female;Goda;;;;;;;;;;;;;x
+temple_duke_folketro;Gode;;;;;;;;;;;;;x
+temple_duke_folketro_demale;Goda;;;;;;;;;;;;;x
+temple_barony_of_folketro;Tempel of;;;;;;;;;x
+
+EVTDESC_confirmation_1;Your priest offers to help your son read and understand the Holy Scriptures, claiming that this is important before his planned confirmation. Tradition demands that you listen to him and allow him to teach your child the Bible.;;;;;;;;;;;;;x
+EVTOPTA_confirmation_1;Let him do his duty;;;;;;;;;;;;;x
+EVTOPTB_confirmation_1;I will teach my child myself;;;;;;;;;;;;;x
+EVTOPTC_confirmation_1;The child will learn on his own;;;;;;;;;;;;;x
+EVTDESC_confirmation_2;According to tradition, after the confirmation there is a reception for the guests - decide how much money you will spend on the ceremony related to celebrating the confirmation of your ward.;;;;;;;;;;;;;x
+EVTOPTA_confirmation_2;Feast will be rich;;;;;;;;;;;;;x
+EVTOPTB_confirmation_2;Modest feast is the best option;;;;;;;;;;;;;x
+EVTOPTC_confirmation_2;I will give as much as necessary for the feast;;;;;;;;;;;;;x
+EVTDESC_confirmation_3;Dear [ROOT.GetName], you are hereby solemnly invited to celebration of my ward's confirmation.;;;;;;;;;;;;;x
+EVTOPTA_confirmation_3;By [ROOT.Religion.GetRandomGodName], I will make sure to attend!;;;;;;;;;;;;;x
+EVTOPTB_confirmation_3;I do not have the time for such ridiculous celebrations.;;;;;;;;;;;;;x
+EVTDESC_confirmation_4;[FROM.GetName] has refused my invitation to celebration of my ward's confirmation, what a disgrace!;;;;;;;;;;;;;x
+EVTOPTA_confirmation_4;Curses!;;;;;;;;;;;;;x
+EVTDESC_confirmation_5;All the guests have gathered – the rite of confirmation of [Root.GetHerHim] can now be performed soon. The priest has already prepared the holy oil and is waiting in the temple to anoint the confirmation candidate. But before he want to half-officiall examine candidate to confirmation from biblical issues.;;;;;;;;;;;;;x
+EVTOPTA_confirmation_5;I hope it goes smoothly;;;;;;;;;;;;;x
+EVTOPTB_confirmation_5;May the holy apostles help this candidate;;;;;;;;;;;;;x
+EVTDESC_confirmation_6;The candidate answers the priest's questions with incredible skill. The priest is very pleased and praises the boy for his knowledge.;;;;;;;;;;;;;x
+EVTOPTA_confirmation_6;Now confirmation can took place...;;;;;;;;;;;;;x
+EVTDESC_confirmation_7;The candidate answers the priest's questions with some hesitation, but relatively correctly. The priest is satisfied, nods, and goes to prepare the rite.;;;;;;;;;;;;;x
+EVTDESC_confirmation_8;The candidate answers the priest's questions, and it's clear he hasn't learned much. The priest is dissatisfied, but he sighs and goes to the temple to prepare the rite.;;;;;;;;;;;;;x
+EVTOPTA_confirmation_8;Pathetic... but now confirmation can took place...;;;;;;;;;;;;;x
+EVTNAME_confirmation_9;Confirmation;;;;;;;;;;;;;x
+EVTDESC_confirmation_9;You enter the temple, and the confirmation candidate, [Root.GetHerHim], approaches, dressed in a white robe. The priest places his hands on the candidate's head and prays, asking for the gifts of wisdom, understanding, counsel, courage, piety, and knowledge. Afterward, he takes the holy oils and traces a sign on the candidate's forehead. Then he stands and announces that from this day forward, [Root.GetHerHim] is of age in the eyes of Heaven and is responsible for his sins with his soul. Everyone begins singing pious hymns. Soon, everyone leaves the temple, led by the newly confirmed, to celebrate his confirmation with a fine feast...;;;;;;;;;;;;;x
+EVTOPTA_confirmation_9;Now it is time for feast;;;;;;;;;;;;;x
+EVTDESC_confirmation_10;After leaving the temple, you go to a feast. There, for the rest of the day, you eat and drink to the health of the confirmed person, wishing them a light maturity and God's grace. When the feast ends, you say goodbye and go home.;;;;;;;;;;;;;x
+EVTOPTA_confirmation_10;Finally, it's time to return to everyday life...;;;;;;;;;;;;;x
+EVTOPTB_confirmation_10;Nice time;;;;;;;;;;;;;x
+EVTTOOLTIP_troll_8;[ROOT.GetName] is invited.;;;;;;;;;;;;;x
+confirmation_invitations_sent;Invite all the [folketro.GetName] and [fornsed.GetName] vassals in your realm;;;;;;;;;;;;;x
+confirmation_declined;[ROOT.GetName] declided your invitation;;;;;;;;;;;;;x
+confirmation_accepted;[ROOT.GetName] accepted your invitation;;;;;;;;;;;;;x

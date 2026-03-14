@@ -134,13 +134,13 @@ pagan_group = {
 		
 		color = { 20 123 123 }
 
-		high_god_name = GOD_THE_SEA
+		high_god_name = GOD_HUNDUFOLK
 
 		god_names = {
-			GOD_NJORD GOD_LEIF GOD_FATHER_RAVEN GOD_THE_SEA_MOTHER
+			GOD_HUNDUFOLK GOD_LANDVATTIR GOD_BUKOLLA
 		}
 		evil_god_names = {
-			KRAKEN THE_TROLLS THE_MOUNTAIN_WALKER
+			GOD_BERGBUAR GOD_KATLA THE_TROLLS GOD_ALFADROTTNING
 		}
 		
 		scripture_name = THE_SAGAS
@@ -170,13 +170,13 @@ pagan_group = {
 		
 		color = { 20 123 123 }
 
-		high_god_name = GOD_THE_SEA
+		high_god_name = GOD_HUNDUFOLK
 
 		god_names = {
-			GOD_NJORD GOD_LEIF GOD_FATHER_RAVEN GOD_THE_SEA_MOTHER
+			GOD_HUNDUFOLK GOD_LANDVATTIR GOD_BUKOLLA
 		}
 		evil_god_names = {
-			KRAKEN THE_TROLLS THE_MOUNTAIN_WALKER
+			GOD_BERGBUAR GOD_KATLA THE_TROLLS GOD_ALFADROTTNING
 		}
 		
 		scripture_name = THE_SAGAS
@@ -189,7 +189,8 @@ pagan_group = {
 		allow_rivermovement = yes 
 		seafarer = yes 
 		max_consorts = 3 
-		can_demand_religious_conversion = no
+		allow_viking_invasion = yes
+		
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
@@ -2431,6 +2432,7 @@ vernacular = {
 		can_call_crusade = yes
 		priests_can_inherit = no
 		allow_rivermovement = yes
+		allow_looting = yes
 		
 		religious_clothing_head = 0
 		religious_clothing_priest = 1
@@ -2478,6 +2480,7 @@ vernacular = {
 		can_call_crusade = no
 		feminist = yes 
 		female_temple_holders = yes
+		allow_looting = no
 		
 		religious_clothing_head = 0
 		religious_clothing_priest = 1
@@ -2519,6 +2522,7 @@ vernacular = {
 		
 		priests_can_inherit = no
 		allow_rivermovement = yes
+		allow_looting = yes
 		
 		religious_clothing_head = 0
 		religious_clothing_priest = 1

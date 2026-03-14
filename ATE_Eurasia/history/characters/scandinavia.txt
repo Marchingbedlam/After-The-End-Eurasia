@@ -104,7 +104,7 @@
 	name="Nukaka"
 	dynasty=2220641 #Qarsoq
 	culture=kalaaleq
-	religion=sjotru #placeholder
+	religion=lutheran
 	female=yes
 	diplomacy=5
 	martial=4
@@ -123,7 +123,7 @@
 	name="Nivineq"
 	dynasty=2220641 #Qarsoq
 	culture=kalaaleq
-	religion=sjotru
+	religion=lutheran
 	diplomacy=7
 	martial=4
 	stewardship=5
@@ -142,7 +142,7 @@
 	name="Eerik"
 	dynasty=2220642 #Eeriksen
 	culture=kalaaleq
-	religion=sjotru
+	religion=lutheran
 	diplomacy=4
 	martial=7
 	stewardship=7
@@ -161,7 +161,7 @@
 	name="Nanoq"
 	dynasty=2220642 #Eeriksen
 	culture=kalaaleq
-	religion=sjotru
+	religion=lutheran
 	diplomacy=6
 	martial=4
 	stewardship=2
@@ -181,7 +181,7 @@
 	name="Tammaq"
 	dynasty=2220642 #Eeriksen
 	culture=kalaaleq
-	religion=sjotru
+	religion=lutheran
 	female=yes
 	trait=tough_soldier
 	trait=honest
@@ -196,7 +196,7 @@
 	name="Paalusi"
 	dynasty=2220642 #Eeriksen
 	culture=kalaaleq
-	religion=sjotru
+	religion=lutheran
 	trait=slothful
 	trait=proud
 	trait=gluttonous
@@ -210,7 +210,7 @@
 	name="Agsile"
 	dynasty=2220641 #Qarsoq
 	culture=kalaaleq
-	religion=sjotru
+	religion=lutheran
 	diplomacy=7
 	martial=0
 	stewardship=4
@@ -229,7 +229,7 @@
 	name="Ujukku"
 	dynasty=2220641 #Qarsoq
 	culture=kalaaleq
-	religion=sjotru
+	religion=lutheran
 	father=1979006
 	2659.5.28={birth=yes}
 	2690.4.2={death=yes}
@@ -238,7 +238,7 @@
 	name="Qaaqqortooq"
 	dynasty=2220641 #Qarsoq
 	culture=kalaaleq
-	religion=sjotru
+	religion=lutheran
 	father=1979006
 	2661.10.20={birth=yes}
 	2690.4.2={death=yes}
@@ -1282,7 +1282,7 @@
 	name="Audun"
 	dynasty=2220061 #Linge 
 	culture=vestlending
-	religion=sjotru
+	religion=nysed
 	trait=grey_eminence
 	trait=gregarious
 	trait=brave
@@ -1296,7 +1296,7 @@
 	name="Max"
 	dynasty=2220061 #Linge 
 	culture=vestlending
-	religion=sjotru
+	religion=nysed
 	trait=willful
 	trait=fussy
 	disallow_random_traits=yes
@@ -1309,7 +1309,7 @@
 	name="Gunnar"
 	dynasty=2220061 #Linge 
 	culture=vestlending
-	religion=sjotru
+	religion=nysed
 	trait=rowdy
 	disallow_random_traits=yes 
 	father=8000098
@@ -1321,7 +1321,7 @@
 	name="Carl Gustav"
 	dynasty=2220061 #Linge 
 	culture=vestlending
-	religion=sjotru
+	religion=nysed
 	trait=curious
 	disallow_random_traits=yes
 	father=8000098
@@ -1623,12 +1623,11 @@
 	name="Dacke"
 	dynasty=2220181 
 	culture=gotalander
-	religion=folketro
+	religion=fornsed
 	trait=brilliant_strategist
 	trait=cruel
 	trait=zealous
 	trait=impaler
-	trait=apostle_cult
 	trait=wroth
 	2629.1.1={birth=yes}
 	2666.1.1={give_nickname=nick_the_liberator}
@@ -2325,8 +2324,7 @@
 	trait=attractive
 	trait=zealous
 	trait=shy
-	trait=apostle_cult
-	religion=folketro
+	religion=fornsed
 	trait=indulgent_wastrel
 	2641.1.1={birth=yes}
 	2670.1.1={death=yes}
@@ -4829,7 +4827,7 @@
 	name="Eidis"
 	dynasty=2502000 #Hansen
 	culture=nordlending
-	religion=sjotru
+	religion=nysed
 	trait=hiddenfolk_cult
 	trait=strong
 	trait=brawny
@@ -4841,7 +4839,7 @@
 	name="Boris"
 	dynasty=2225201 #Solem
 	culture=svalbarder
-	religion=sjotru
+	religion=nysed
 	trait=dutiful_cleric
 	trait=brawny
 	trait=wroth

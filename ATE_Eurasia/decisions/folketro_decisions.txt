@@ -34,52 +34,6 @@ become_allfader = {
 			factor = 1
 		}
 	}
-	organize_the_nordic_priesthood = {
-		only_playable = yes
-		is_high_prio = yes
-		ai_check_interval = 12
-		
-		potential = {
-			religion = folketro
-			d_folketro = { has_holder = no }
-			NOT = {
-				has_alternate_start_parameter = { key = religion_names value = random }
-			}
-			primary_title = { higher_tier_than = COUNT }
-		}
-		
-		allow = {
-			primary_title = { higher_tier_than = DUKE }
-			num_of_holy_sites = 3
-			piety = 500
-		}
-		
-		effect = {
-			wealth = -250
-			piety = -200
-			set_global_flag = allsherjargode_formed
-			activate_title = { title = d_folketro status = yes }
-			hidden_tooltip = {
-				create_random_priest = {
-					random_traits = yes
-					religion = ROOT
-					culture = ROOT
-					dynasty = random
-					female = no
-					age = 41
-				}
-				new_character = {
-					#character_event = { id = misc.3 } # Diversity
-					#character_event = { id = misc.4 } # Physique
-					d_folketro = { grant_title = PREV }
-					narrative_event = { id = troll.3 }
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
 }
 
 
@@ -118,6 +72,7 @@ targeted_decisions = {
 				has_character_flag = confirmed				
 			}
 			is_child_of = FROM
+			NOT = { has_character_flag = holding_confirmation }
 		}
 		allow = {
 			age = 12
@@ -144,8 +99,10 @@ targeted_decisions = {
 				text = folketro_confirmation_custom_tooltip
 				hidden_tooltip = {
 					set_character_flag = confirmed
+					set_character_flag = holding_confirmation
 					save_event_target_as = confirmation_target
 					FROM = { character_event = { id = troll.6 } }
+					FROM = { character_event = { id = troll.7 days = 1 } }
 				}
 			}
 		}

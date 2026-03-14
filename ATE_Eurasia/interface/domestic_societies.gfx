@@ -1019,6 +1019,10 @@ spriteTypes = {
 		name = "GFX_society_main_background_warrior_lodge_kozachina"
 		textureFile = "gfx\\interface\\societies\\society_bg_cossacks.tga"
 	}
+	spriteType = {
+		name = "GFX_society_main_background_warrior_lodge_folketro"
+		textureFile = "gfx\\interface\\societies\\society_bg_folketro.tga"
+	}
 
 	#Expanded Background
 
@@ -1101,6 +1105,10 @@ spriteTypes = {
 		name = "GFX_society_portrait_ring_warrior_lodge_proletcult"
 		textureFile = "gfx\\interface\\societies\\portrait_ring_proletcult.tga"
 	}
+	spriteType = {
+		name = "GFX_society_portrait_ring_warrior_lodge_folketro"
+		textureFile = "gfx\\interface\\societies\\portrait_ring_wolf_warriors.tga"
+	}
 
 	#Small Ring
 
@@ -1143,6 +1151,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_society_portrait_ring_small_warrior_lodge_proletcult"
 		textureFile = "gfx\\interface\\societies\\portrait_ring_small_proletcult.tga"
+	}
+	spriteType = {
+		name = "GFX_society_portrait_ring_small_warrior_lodge_folketro"
+		textureFile = "gfx\\interface\\societies\\portrait_ring_small_wolf_warriors.tga"
 	}
 
 	#Icons
@@ -1212,7 +1224,12 @@ spriteTypes = {
 		textureFile = "gfx\\interface\\societies\\symbol_small_cossacks.tga"
 		noOfFrames = 2
 	}
-
+	spriteType = {
+		name = "GFX_icon_small_warrior_lodge_folketro"
+		textureFile = "gfx\\interface\\societies\\symbol_small_folketro.tga"
+		noOfFrames = 2
+	}
+	
 	#Currency
 
 	spriteType = {

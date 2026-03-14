@@ -26,6 +26,9 @@ decisions = {
 			e_sanctum_imperium = {
 				has_holder = no
 			}
+			NOT = {
+			    has_landed_title = k_papal_state
+			}
 		}
 		allow = {
 			is_adult = yes
@@ -39,7 +42,7 @@ decisions = {
 				text = hre_unify_italy_tooltip
 			    hidden_tooltip = {
 			  	    calc_true_if = {
-				      amount = 1
+				      amount = 2
 			          completely_controls = k_alta_italia
 			          completely_controls = k_venice
 			          completely_controls = k_sardinia
