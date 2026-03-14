@@ -792,6 +792,7 @@
 	trait=legendary
 	occluded=yes
 	disallow_random_traits=yes
+	father=80003647
 	1845.12.24={birth=yes}
 	1913.3.18={death={death_reason=death_murder}}
 }
@@ -1697,4 +1698,57 @@
 		  killer=207228
 	   }
 	}
+}
+
+2072286={ 
+	name="Lazar"
+	religion=orthodox
+	culture=bulgarian
+	trait="bastard"
+	real_father=2072277
+	2612.6.14={birth=yes}
+	2649.7.1={
+	   death={
+	      death_reason=death_execution_hanging
+		  killer=2072113
+	   }
+	}
+}
+
+2072287={ 
+	name="Konstantin"
+	religion=catholic
+	culture=bulgarian
+	trait="adventurer"
+	trait="brave"
+	trait="attractive"
+	trait="quick"
+	trait="erudite"
+	trait="gregarious"
+	trait="tough_soldier"
+	trait="poet"
+	trait="musician"
+	trait="chaste"
+	trait="wroth"
+	dna="0ffba0cbdd0"
+	properties="0h0b0k"
+	father=2072286
+	2639.11.22={birth=yes}
+	2666.1.1={
+	   employer=1861074
+	}
+	2700.1.1={death=yes}
+}
+
+2072288={ 
+	name="Josip"
+	occluded=yes
+	dynasty=7534157 #Tito
+	culture=slovene
+	religion=jedinstvo
+	trait="legendary"
+	trait="poet"
+	disallow_random_traits=yes
+	1892.1.1={birth=yes}
+	1980.1.1={death=yes}
 }

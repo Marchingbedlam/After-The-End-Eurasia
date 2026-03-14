@@ -1056,3 +1056,38 @@
 	2626.12.1={birth=yes}
 	2683.4.12={death=yes}
 }
+1994153={
+	name="Carol Ferdinand"
+	occluded=yes
+	dynasty=7534158
+	culture=romanian
+	religion=orthodox
+	trait="legendary"
+	disallow_random_traits=yes
+	1865.1.1={birth=yes}
+	1927.1.1={death=yes}
+}
+1994154={
+	name="Carol"
+	occluded=yes
+	dynasty=7534158
+	culture=romanian
+	religion=orthodox
+	trait="legendary"
+	father=1994153
+	disallow_random_traits=yes
+	1893.1.1={birth=yes}
+	1940.1.1={death=yes}
+}
+1994155={
+	name="Mihai"
+	occluded=yes
+	dynasty=7534158
+	culture=romanian
+	religion=orthodox
+	trait="legendary"
+	father=1994154
+	disallow_random_traits=yes
+	1921.1.1={birth=yes}
+	2000.1.1={death=yes}
+}
