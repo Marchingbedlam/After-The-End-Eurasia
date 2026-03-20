@@ -4605,3 +4605,86 @@
 	2665.5.2={birth=yes}
 	2700.1.1={death=yes}
 }
+
+1804287={
+	name="Jacques-Yves"
+	dynasty=7534196 #Murat
+	culture=parisian
+	religion=jacobin
+	trait="strong"
+	trait="deceitful"
+	trait="ambitious"
+	trait="schemer"
+	trait="envious"
+	trait="patron_the_emperor"
+	2599.8.17={birth=yes}
+	2658.12.27={death=yes}
+}
+
+1804288={
+	name="Barthélémy"
+	dynasty=7534196 #Murat
+	culture=parisian
+	religion=jacobin
+	father=1804287
+	trait="midas_touched"
+	trait="kind"
+	trait="gregarious"
+	trait="falconer"
+	trait="content"
+	trait="administrator"
+	trait="familyperson"
+	trait="patron_the_emperor"
+	2620.9.10={birth=yes}
+	2700.1.1={death=yes}
+}
+
+1804289={
+	name="Joachim"
+	dynasty=7534196 #Murat
+	culture=parisian
+	religion=jacobin
+	father=1804288
+	trait="twin"
+	trait="patron_the_emperor"
+	2647.3.25={birth=yes}
+	2700.1.1={death=yes}
+}
+
+1804290={
+	name="Joséphine"
+	female=yes
+	dynasty=7534196 #Murat
+	culture=parisian
+	religion=jacobin
+	father=1804288
+	trait="attractive"
+	trait="authoritative"
+	trait="deceitful"
+	trait="twin"
+	trait="patron_the_emperor"
+	2647.3.25={birth=yes}
+	2700.1.1={death=yes}
+}
+
+1804291={
+	name="Vendémiaire"
+	dynasty=7534196 #Murat
+	culture=parisian
+	religion=jacobin
+	secret_religion=sun_king_cultist
+	father=1804287
+	trait="tough_soldier"
+	trait="strong"
+	trait="attractive"
+	trait="chaste"
+	trait="wroth"
+	trait="envious"
+	trait="drunkard"
+	trait="inspiring_leader"
+	trait="ambitious"
+	trait="brave"
+	trait="patron_the_emperor"
+	2624.2.28={birth=yes}
+	2700.1.1={death=yes}
+}

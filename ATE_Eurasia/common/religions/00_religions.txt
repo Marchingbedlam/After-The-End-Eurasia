@@ -2660,9 +2660,10 @@ vernacular = {
 		
 		color = { 0.86 0.67 0 }
 		
-		crusade_name = CRUSADE
-		use_new_crusade = yes
-		crusade_cb = new_crusade
+		crusade_name = SOLAR_CRUSADE
+		use_new_crusade = no #yes
+		crusade_cb = crusade
+		#crusade_cb = new_crusade
 		
 		scripture_name = LES_LOIS_FONDAMENTALES
 		priest_title = PRIEST
@@ -2683,6 +2684,7 @@ vernacular = {
 		can_excommunicate = yes
 		can_grant_divorce = yes
 		can_grant_claim = yes
+		can_call_crusade = yes
 		uses_jizya_tax = yes
 		castes = yes
 		caste_opinions = yes

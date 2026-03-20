@@ -244,3 +244,27 @@ d_ansar = {
 		religion = sunni
 	}
 }
+d_la_garde_nationale = {
+	color={ 10 88 104 }
+	color2={ 255 255 20 }
+	
+	capital = 1551
+	
+	title = "COMMANDER"
+	foa = "GRANDMASTER_FOA"
+	
+	culture = parisian
+	religion = jacobin
+
+	holy_order = yes
+	primary = yes 
+	landless = yes
+	monthly_income = 6
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_la_garde_nationale
+	
+	allow = {
+		religion = jacobin
+	}
+}

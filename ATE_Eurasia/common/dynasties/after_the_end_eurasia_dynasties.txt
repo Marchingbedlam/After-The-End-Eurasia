@@ -51052,3 +51052,21 @@ coat_of_arms = {
 7534193 = { name = "von Mecklenburg" culture = ossi used_for_random = no }
 7534194 = { name = "Harfagreatta" culture = norwegian used_for_random = no }
 7534195 = { name = "Landjarl" culture = norwegian used_for_random = no }
+7534196 = { 
+    name = "Murat" 
+    culture = parisian
+	religion = jacobin
+	used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 74
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
