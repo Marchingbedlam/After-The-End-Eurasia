@@ -778,7 +778,7 @@
 	name="Bela" 
 	dynasty=2926073 #Puci
 	culture=romani
-	religion=nepmese
+	religion=mariavite
 	trait=dutiful_cleric
 	trait=scarred
 	trait=one_eyed
@@ -792,12 +792,11 @@
 	name="Choli" 
 	dynasty=2926073 #Puci
 	culture=romani
-	religion=nepmese
+	religion=mariavite
 	trait=brilliant_strategist
 	trait=one_handed
 	trait=drunkard
 	trait=gregarious
-	trait=sympathy_christendom
 	father=199150
 	2601.1.22={birth=yes}
 	2630.9.9={add_spouse=199152}
@@ -807,7 +806,7 @@
 	name="Afrodita"
 	female=yes
 	culture=romani
-	religion=nepmese
+	religion=mariavite
 	trait=attractive
 	trait=kind
 	trait=mystic
@@ -884,7 +883,7 @@
 	name="Totoj" 
 	dynasty=2926073 #Puci
 	culture=romani
-	religion=nepmese
+	religion=mariavite
 	trait=skilled_tactician
 	trait=greedy
 	trait=trickster
@@ -898,7 +897,7 @@
 	name="Feke" 
 	dynasty=2926073 #Puci
 	culture=romani
-	religion=nepmese
+	religion=mariavite
 	trait=charitable
 	trait=patient
 	trait=cruel
@@ -914,7 +913,7 @@
 	female=yes
 	dynasty=2926073 #Puci
 	culture=romani
-	religion=nepmese
+	religion=mariavite
 	trait=quick
 	trait=patient
 	trait=deceitful
@@ -6226,12 +6225,13 @@
 }
 
 212643={
-	name="Zygmunt"
+	name="Sigismund"
 	dynasty=7534114
 	occluded=yes
 	culture=swedish
 	religion=catholic
 	trait="legendary"
+	father=80003644
 	mother=212641
 	disallow_random_traits=yes
 	1566.1.1={birth=yes}
