@@ -131,7 +131,7 @@ character_event = { #Branch decision
 		}
 	}
 	
-	option = { 
+	option = {
 		name = EVTOPTB_troll_5
 		hidden_tooltip = {
 			remove_trait = apostle_cult
@@ -145,7 +145,7 @@ character_event = { #Branch decision
 	}
 }
 
-character_event = { #training to read scripture: copiead straight from Bar Mitzvah, change as y'all wish
+character_event = {
 	id = troll.6
 	desc = EVTDESC_confirmation_1
 	picture = GFX_evt_church_council
@@ -165,6 +165,12 @@ character_event = { #training to read scripture: copiead straight from Bar Mitzv
 				NOT = { event_target:confirmation_target = { is_alive = yes } }
 			}
 			clr_event_target = confirmation_target
+		}
+		clr_character_flag = holding_confirmation
+		any_vassal = {
+		   limit = { has_character_flag = attending_confirmation }
+		   clr_character_flag = attending_confirmation
+		   clr_character_flag = do_not_disturb
 		}
 	}
 	
@@ -237,7 +243,470 @@ character_event = { #training to read scripture: copiead straight from Bar Mitzv
 			}
 		}
 	}
-	after={
-		#next events
+}
+
+character_event = {
+	id = troll.7
+	desc = EVTDESC_confirmation_2
+	picture = GFX_evt_feast
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		event_target:confirmation_target = { 
+			is_alive = yes
+		}
+	}
+
+	fail_trigger_effect = {
+		if = {
+			limit = {
+				NOT = { event_target:confirmation_target = { is_alive = yes } }
+			}
+			clr_event_target = confirmation_target
+		}
+		clr_character_flag = holding_confirmation
+		any_vassal = {
+		   limit = { has_character_flag = attending_confirmation }
+		   clr_character_flag = attending_confirmation
+		   clr_character_flag = do_not_disturb
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_confirmation_2
+		wealth = -50
+		any_vassal = {
+			limit = {
+				war = no
+				block_general_event_trigger = no
+				NOT = { has_character_modifier = holding_large_feast }
+				NOT = { has_character_modifier = holding_confirmation }
+				OR = {
+				   religion = folkestro
+				   religion = fornsed
+				}
+			}
+
+			character_event = {
+				id = troll.8
+				days = 1
+				tooltip = EVTTOOLTIP_troll_8
+			}
+		}
+		custom_tooltip = { text = confirmation_invitations_sent }
+		character_event = { id = troll.14 days = 14 }
+		set_character_flag = big_folkestro_feast
+	}
+	option = {
+		name = EVTOPTB_confirmation_2
+		wealth = -25
+		any_vassal = {
+			limit = {
+				war = no
+				block_general_event_trigger = no
+				NOT = { has_character_modifier = holding_large_feast }
+				NOT = { has_character_modifier = holding_confirmation }
+				OR = {
+				   religion = folkestro
+				   religion = fornsed
+				}
+			}
+
+			character_event = {
+				id = troll.8
+				days = 1
+				tooltip = EVTTOOLTIP_troll_8
+			}
+		}
+		custom_tooltip = { text = confirmation_invitations_sent }
+		character_event = { id = troll.14 days = 14 }
+		set_character_flag = moderate_folkestro_feast
+	}
+	option = {
+		name = EVTOPTC_confirmation_2
+		wealth = -10
+		any_vassal = {
+			limit = {
+			   OR = {
+				religion = folkestro
+				religion = fornsed
+			   }
+				prisoner = no
+				war = no
+				block_general_event_trigger = no
+				NOT = { has_character_modifier = holding_large_feast }
+				NOT = { has_character_modifier = holding_confirmation }
+				NOT = { trait = incapable }
+			}
+			character_event = { id = troll.8 days = 1 tooltip = EVTTOOLTIP_troll_8 }
+		}
+		custom_tooltip = { text = confirmation_invitations_sent }
+		character_event = { id = troll.14 days = 14 }
+		set_character_flag = small_folkestro_feast
+	}
+}
+
+character_event = {
+	id = troll.8
+	desc = EVTDESC_confirmation_3
+	picture = GFX_evt_church_council
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+
+	trigger = { NOT = { is_inaccessible_trigger = yes } }
+	
+	option = {
+		name = EVTOPTA_confirmation_3
+		ai_chance = {
+			factor = 95
+			modifier = {
+				factor = 0
+				opinion = { who = ROOT value <= -20 }
+			}
+		}
+		character_event = { id = troll.14 days = 13 }
+		custom_tooltip = { text = confirmation_accepted }
+		set_character_flag = attending_confirmation
+		set_character_flag = do_not_disturb
+	}
+	option = {
+		name = EVTOPTB_confirmation_3
+		ai_chance = {
+			factor = 5
+		}
+		FROM = {
+			opinion = {
+				modifier = opinion_refused_confirmation
+				who = ROOT
+			}
+		}
+		custom_tooltip = { text = confirmation_declined }
+		hidden_tooltip = {
+			FROM = { character_event = { id = troll.9 } }
+		}
+	}
+}
+
+character_event = {
+	id = troll.9
+	desc = EVTDESC_confirmation_4
+	picture = GFX_evt_church_council
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_confirmation_4
+		opinion = {
+			modifier = opinion_disappointed
+			who = FROM
+		}
+	}
+}
+
+character_event = {
+	id = troll.14
+	desc = EVTDESC_confirmation_5
+	picture = GFX_evt_church_council
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		event_target:confirmation_target = { 
+			is_alive = yes
+		}
+	}
+
+	fail_trigger_effect = {
+		if = {
+			limit = {
+				NOT = { event_target:confirmation_target = { is_alive = yes } }
+			}
+			clr_event_target = confirmation_target
+		}
+		clr_character_flag = holding_confirmation
+		any_vassal = {
+		   limit = { has_character_flag = attending_confirmation }
+		   clr_character_flag = attending_confirmation
+		   clr_character_flag = do_not_disturb
+		}
+	}
+	
+	
+	option = {
+		name = EVTOPTB_confirmation_5
+		if = {
+		  limit = { has_character_flag = holding_confirmation }
+		event_target:confirmation_target = {
+		    prestige = 10
+			piety = 10
+		}
+		}
+		if = { #Was learned
+		    limit = { event_target:confirmation_target = { OR = { has_character_flag = confirmation_studies trait = genius learning > 12 } } }
+			random_list = { 
+			60 = { #Neutral
+			  any_vassal = {
+			     limit = {
+				     has_character_flag = attending_confirmation
+				 }
+				 character_event = { id = troll.11 }
+			  }
+			  character_event = { id = troll.11 }
+			} 
+			30 = { #Good
+			   any_vassal = {
+			     limit = {
+				     has_character_flag = attending_confirmation
+				 }
+				  character_event = { id = troll.10 }
+			  }
+			  character_event = { id = troll.10 }
+			}
+			10 = { #Bad
+				any_vassal = {
+			     limit = {
+				     has_character_flag = attending_confirmation
+				 }
+				  character_event = { id = troll.12 }
+			  }
+			  character_event = { id = troll.12 }
+			}
+			}
+		}
+		if = { #Wasn't learned
+		    limit = { event_target:confirmation_target = { NOT = { has_character_flag = confirmation_studies trait = genius learning > 12 } } }
+			random_list = {
+			40 = { #Neutral
+			  any_vassal = {
+			     limit = {
+				     has_character_flag = attending_confirmation
+				 }
+				  character_event = { id = troll.11 }
+			  }
+			  character_event = { id = troll.11 }
+			} 
+			10 = { #Good
+			   any_vassal = {
+			     limit = {
+				     has_character_flag = attending_confirmation
+				 }
+				  character_event = { id = troll.10 }
+			  }
+			  character_event = { id = troll.10 }
+			}
+			40 = { #Bad
+				any_vassal = {
+			     limit = {
+				     has_character_flag = attending_confirmation
+				 }
+				  character_event = { id = troll.12 }
+			    }
+				character_event = { id = troll.12 }
+			}
+			}
+		}
+		if = {
+		   limit = { has_character_flag = attending_confirmation }
+		   piety = 10
+		}
+	}
+}
+
+character_event = { #Good reading
+	id = troll.10
+	desc = EVTDESC_confirmation_6
+	picture = GFX_evt_church_council
+	border = GFX_event_normal_frame_religion
+	
+	trigger = {
+		event_target:confirmation_target = { 
+			is_alive = yes
+		}
+	}
+
+	fail_trigger_effect = {
+		if = {
+			limit = {
+				NOT = { event_target:confirmation_target = { is_alive = yes } }
+			}
+			clr_event_target = confirmation_target
+		}
+		clr_character_flag = holding_confirmation
+		any_vassal = {
+		   limit = { has_character_flag = attending_confirmation }
+		   clr_character_flag = attending_confirmation
+		   clr_character_flag = do_not_disturb
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_confirmation_6
+		narrative_event = { id = troll.13 }
+	}
+}
+
+character_event = { #Neutral reading
+	id = troll.11
+	desc = EVTDESC_confirmation_7
+	picture = GFX_evt_church_council
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		event_target:confirmation_target = { 
+			is_alive = yes
+		}
+	}
+
+	fail_trigger_effect = {
+		if = {
+			limit = {
+				NOT = { event_target:confirmation_target = { is_alive = yes } }
+			}
+			clr_event_target = confirmation_target
+		}
+		clr_character_flag = holding_confirmation
+		any_vassal = {
+		   limit = { has_character_flag = attending_confirmation }
+		   clr_character_flag = attending_confirmation
+		   clr_character_flag = do_not_disturb
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_confirmation_6
+		narrative_event = {  id = troll.13 }
+	}
+}
+
+character_event = { #Bad reading
+	id = troll.12
+	desc = EVTDESC_confirmation_8
+	picture = GFX_evt_church_council
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		event_target:confirmation_target = { 
+			is_alive = yes
+		}
+	}
+
+	fail_trigger_effect = {
+		if = {
+			limit = {
+				NOT = { event_target:confirmation_target = { is_alive = yes } }
+			}
+			clr_event_target = confirmation_target
+		}
+		clr_character_flag = holding_confirmation
+		any_vassal = {
+		   limit = { has_character_flag = attending_confirmation }
+		   clr_character_flag = attending_confirmation
+		   clr_character_flag = do_not_disturb
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_confirmation_8
+		narrative_event = {  id = troll.13 }
+	}
+}
+
+narrative_event = { 
+	id = troll.13
+	title = EVTNAME_confirmation_9
+	desc = EVTDESC_confirmation_9
+	picture = GFX_evt_church_council
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		event_target:confirmation_target = { 
+			is_alive = yes
+		}
+	}
+
+	fail_trigger_effect = {
+		if = {
+			limit = {
+				NOT = { event_target:confirmation_target = { is_alive = yes } }
+			}
+			clr_event_target = confirmation_target
+		}
+		clr_character_flag = holding_confirmation
+		any_vassal = {
+		   limit = { has_character_flag = attending_confirmation }
+		   clr_character_flag = attending_confirmation
+		   clr_character_flag = do_not_disturb
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_confirmation_9
+		trigger = { has_character_flag = holding_confirmation }
+		character_event = { id = troll.15 }
+	}
+	
+	option = {
+		name = EVTOPTA_confirmation_9
+		trigger = { has_character_flag = attending_confirmation }
+		character_event = { id = troll.15 }
+	}
+}
+
+character_event = { 
+	id = troll.15
+	desc = EVTDESC_confirmation_10
+	picture = GFX_evt_feast
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_confirmation_10
+		trigger = { has_character_flag = holding_confirmation }
+		if = {
+		   limit = { has_character_flag = big_folkestro_feast }
+		   piety = 5
+		   prestige = 30
+		   clr_character_flag = big_folkestro_feast
+		}
+		if = {
+		   limit = { has_character_flag = moderate_folkestro_feast }
+		   piety = 30
+		   prestige = 10
+		   clr_character_flag = big_folkestro_feast
+		}
+		if = {
+		   limit = { has_character_flag = small_folkestro_feast }
+		   piety = 50
+		   prestige = -10
+		   clr_character_flag = big_folkestro_feast
+		}
+		if = {
+			limit = {
+				NOT = { event_target:confirmation_target = { is_alive = yes } }
+			}
+			clr_event_target = confirmation_target
+		}
+		clr_character_flag = holding_confirmation
+	}
+	
+	option = {
+		name = EVTOPTA_confirmation_10
+		trigger = { has_character_flag = attending_confirmation }
+		piety = 20
+		clr_character_flag = attending_confirmation
+		clr_character_flag = do_not_disturb
 	}
 }
