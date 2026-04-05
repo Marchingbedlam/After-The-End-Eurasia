@@ -55,7 +55,7 @@ decisions = {
 				}
 			}
 		}
-		ai_chance = {
+		ai_will_do = {
 			factor = 5
 			modifier = {
 				factor = 2
@@ -96,7 +96,7 @@ decisions = {
 				}
 			}
 		}
-		ai_chance = {
+		ai_will_do = {
 			factor = 5
 			modifier = {
 				factor = 2
@@ -136,7 +136,7 @@ decisions = {
             }
             custom_tooltip = { text = TXT_anthropophagite_feast }
         }
-        ai_chance = {
+        ai_will_do = {
             factor = 30
             modifier = { factor = 3 trait = cruel }
             modifier = { factor = 2 trait = ambitious }
