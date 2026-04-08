@@ -1336,7 +1336,7 @@ jacobin_presidency_war = {
 		  religion = jacobin
 		}
 		FROM = {
-			has_landed_title = k_jacobin
+			has_landed_title = e_jacobin
 		}
 	}
 
@@ -1345,7 +1345,7 @@ jacobin_presidency_war = {
 		   religion = jacobin
 		}
 		FROM = {
-			has_landed_title = k_jacobin
+			has_landed_title = e_jacobin
 		}
 	}
 
@@ -1353,7 +1353,7 @@ jacobin_presidency_war = {
 			attacker = {
 			    piety = 1000
 				prestige = 1000
-				gain_title = k_jacobin
+				gain_title = e_jacobin
 			}
 
 			defender = {

@@ -1023,6 +1023,10 @@ spriteTypes = {
 		name = "GFX_society_main_background_warrior_lodge_folketro"
 		textureFile = "gfx\\interface\\societies\\society_bg_folketro.tga"
 	}
+	spriteType = {
+		name = "GFX_society_main_background_warrior_lodge_sun_king_cultist"
+		textureFile = "gfx\\interface\\societies\\society_bg_sun_king_cultist.tga"
+	}
 
 	#Expanded Background
 
@@ -1109,6 +1113,10 @@ spriteTypes = {
 		name = "GFX_society_portrait_ring_warrior_lodge_folketro"
 		textureFile = "gfx\\interface\\societies\\portrait_ring_wolf_warriors.tga"
 	}
+	spriteType = {
+		name = "GFX_society_portrait_ring_warrior_lodge_sun_king_cultist"
+		textureFile = "gfx\\interface\\societies\\portrait_ring_monastic_order_benedictine.dds"
+	}
 
 	#Small Ring
 
@@ -1155,6 +1163,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_society_portrait_ring_small_warrior_lodge_folketro"
 		textureFile = "gfx\\interface\\societies\\portrait_ring_small_wolf_warriors.tga"
+	}
+	spriteType = {
+		name = "GFX_society_portrait_ring_small_warrior_lodge_sun_king_cultist"
+		textureFile = "gfx\\interface\\societies\\portrait_ring_small_monastic_order_benedictine.tga"
 	}
 
 	#Icons
@@ -1227,6 +1239,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_icon_small_warrior_lodge_folketro"
 		textureFile = "gfx\\interface\\societies\\symbol_small_folketro.tga"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_icon_small_warrior_lodge_sun_king_cultist"
+		textureFile = "gfx\\interface\\societies\\symbol_small_sun_king_cultist.tga"
 		noOfFrames = 2
 	}
 	

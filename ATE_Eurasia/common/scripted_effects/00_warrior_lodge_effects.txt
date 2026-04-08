@@ -42,6 +42,14 @@ join_prev_warrior_lodge_society_effect = {
 		limit = { PREV = { society_member_of = warrior_lodge_hellenic } }
 		join_society = warrior_lodge_hellenic
 	}
+	else_if = {
+		limit = { PREV = { society_member_of = warrior_lodge_folketro } }
+		join_society = warrior_lodge_folketro 
+	}
+	else_if = {
+		limit = { PREV = { society_member_of = warrior_lodge_sun_king_cultist } }
+		join_society = warrior_lodge_sun_king_cultist
+	}
 }
 
 give_this_warrior_lodge_religion_effect = { # Mostly for spawned characters

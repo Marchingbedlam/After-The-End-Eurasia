@@ -42,6 +42,7 @@ is_member_of_any_warrior_lodge_trigger = {
 			society_member_of = warrior_lodge_neoplatonist
 			society_member_of = warrior_lodge_kozachina
 			society_member_of = warrior_lodge_folketro
+			society_member_of = warrior_lodge_sun_king_cultist
 		}
 	}
 }
@@ -429,6 +430,51 @@ special_join_warrior_lodge_trigger = {
 					any_vassal = { religion = proletcult }
 					any_liege = { religion = proletcult }
 					any_neighbor_independent_ruler = { religion = proletcult }
+				}
+			}
+		}
+	    trigger_else_if = {
+			limit = {
+				FROM = { is_society = warrior_lodge_hellenic }
+			}
+
+			custom_tooltip = {
+				text = has_liege_vassal_or_neighbor_of_neoplatonist_religion_tt
+
+				OR = {
+					any_vassal = { religion = neoplatonist }
+					any_liege = { religion = neoplatonist }
+					any_neighbor_independent_ruler = { religion = neoplatonist }
+				}
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				FROM = { is_society = warrior_lodge_folketro }
+			}
+
+			custom_tooltip = {
+				text = has_liege_vassal_or_neighbor_of_neoplatonist_religion_tt
+
+				OR = {
+					any_vassal = { OR = { religion = neoplatonist religion = nysed religion = fornsed } }
+					any_liege = { OR = { religion = neoplatonist religion = nysed religion = fornsed } }
+					any_neighbor_independent_ruler = { OR = { religion = neoplatonist religion = nysed religion = fornsed } }
+				}
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				FROM = { is_society = warrior_lodge_sun_king_cultist }
+			}
+
+			custom_tooltip = {
+				text = has_liege_vassal_or_neighbor_of_neoplatonist_religion_tt
+
+				OR = {
+					any_vassal = { OR = { religion = sun_king_cultist religion = chevalier } }
+					any_liege = { OR = { religion = sun_king_cultist religion = chevalier } }
+					any_neighbor_independent_ruler = { OR = { religion = sun_king_cultist religion = chevalier } }
 				}
 			}
 		}
