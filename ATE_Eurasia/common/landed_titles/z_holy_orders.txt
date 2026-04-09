@@ -268,3 +268,26 @@ d_la_garde_nationale = {
 		religion = jacobin
 	}
 }
+d_order_of_the_star = {
+	color = { 160 160 160 }
+	color2 = { 255 255 255 }
+	
+	graphical_culture = holygfx
+	
+	capital = 1551
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+	
+	culture = parisian
+	religion = sun_king_cultist
+	
+	short_name = yes
+	landless = yes
+	holy_order = yes
+	primary = yes 
+	monthly_income = 6
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_order_of_the_star
+}

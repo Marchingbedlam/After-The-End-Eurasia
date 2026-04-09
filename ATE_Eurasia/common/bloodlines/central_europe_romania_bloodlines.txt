@@ -46,3 +46,17 @@ skoropadsky_blood = {
 		always = yes
 	}
 }
+
+first_king_of_bulgaria_blood = {
+	martial = 1
+	levy_reinforce_rate = 0.10
+	monthly_character_prestige = 0.10
+	bulgarian_opinion = 10
+	inheritance = patrilineal
+	allow_bastards = yes
+	picture = GFX_bloodlines_symbol_lion
+	flags = { created_bloodline }
+	active = {
+		culture = bulgarian
+	}
+}

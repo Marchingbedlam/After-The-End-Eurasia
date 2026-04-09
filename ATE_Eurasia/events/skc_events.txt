@@ -1416,3 +1416,47 @@ character_event = { #character rejected as a Worthy
 		}
 	}
 }
+
+narrative_event = {
+	id = skc.109
+	desc = EVTDESC_SKC_109
+	title = EVTTITLE_SKC_109
+	picture = GFX_evt_crusaders
+	border = GFX_event_narrative_frame_religion
+	portrait = event_target:portrait_target
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					character = FROM
+				}
+			}
+			d_order_of_the_star = {
+				holder_scope = {
+					save_event_target_as = portrait_target
+				}
+			}
+		}
+		else = {
+			save_event_target_as = portrait_target
+		}
+	}
+
+	option = {
+		name = EVTOPTA_SKC_109
+		trigger = {
+			religion_group = FROM
+		}
+	}
+
+	option = {
+		name = EVTOPTB_SKC_109
+		trigger = {
+			NOT = {
+				religion_group = FROM
+			}
+		}
+	}
+}

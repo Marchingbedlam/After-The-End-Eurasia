@@ -340,6 +340,80 @@ decisions = {
 			factor = 1
 		}
 	}
+	form_order_of_the_star = {
+		is_high_prio = yes
+		only_playable = yes
+		ai_check_interval = 60
+
+		potential = {
+		    d_order_of_the_star = {
+			    has_holder = no
+			}
+			religion = sun_king_cultist
+			has_landed_title = d_sun_king_cultist
+			independent = yes
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+
+		allow = {
+			war = no
+			piety = 800
+			wealth = 800
+			is_heretic = no
+			has_landed_title = d_sun_king_cultist
+			is_incapable = no
+		}
+
+		effect = {
+			wealth = -800
+			piety = -800
+
+			custom_tooltip = {
+				text = form_order_of_the_star_TT
+
+				create_random_soldier = {
+					female = no
+					random_traits = yes
+					dynasty = actually_culture
+					culture = ROOT
+					religion = ROOT
+					age = 35
+				}
+				new_character = {
+					set_government_type = order_government
+					add_trait = shrewd
+					add_trait = zealous
+					add_trait = diligent
+					add_trait = inspiring_leader
+					add_trait = organizer
+					add_trait = brilliant_strategist
+					grant_title_no_opinion = d_order_of_the_star
+					save_event_target_as = teutonic_hochmeister
+
+					opinion = {
+						name = opinion_formed_order
+						who = ROOT
+						years = 25
+					}
+					add_friend = ROOT
+					primary_title = {
+						holy_order_set_law_effect = yes
+					}
+				}
+			}
+
+			ROOT = {
+				narrative_event = { id = skc.109 }
+			}
+			any_playable_ruler = {
+				narrative_event = { id = skc.109 }
+			}
+
+			sound_effect = generic_click_01
+		}
+	}
 	select_jedinstvo_deity = {
 		is_high_prio = yes
 		

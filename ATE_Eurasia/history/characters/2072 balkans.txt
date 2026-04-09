@@ -1292,6 +1292,10 @@
 	2458.1.1={birth=yes}
 	2496.4.10={
 	    give_nickname=nick_the_liberator
+		create_bloodline={
+			type=first_king_of_bulgaria_blood
+			has_dlc="Holy Fury"
+		}
 	}
 	2503.1.1={
 	   add_trait="cancer"
