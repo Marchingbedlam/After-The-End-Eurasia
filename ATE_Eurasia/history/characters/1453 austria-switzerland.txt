@@ -191,7 +191,7 @@
 	name="Charles"
 	dynasty=2011001 #Zurbriggen
 	culture=arpitan
-	religion=catholic
+	religion=marcelianist
 	martial=6
 	diplomacy=3
 	stewardship=5
@@ -228,7 +228,7 @@
 	name="Marcél"
 	dynasty=2011003 #Bavaud
 	culture=arpitan
-	religion=catholic
+	religion=marcelianist
 	martial=6
 	diplomacy=3
 	stewardship=5
@@ -383,4 +383,16 @@
 	religion=calvinist
 	2572.7.9={birth=yes}
 	2623.3.14={death=yes}
+}
+1453024={
+	name="Gaspal"
+	culture=arpitan
+	religion=marcelianist
+	trait="dutiful_clerk"
+	trait="zealous"
+	trait="gregarious"
+	trait="groomed"
+	trait="ambitious"
+	2628.5.9={birth=yes}
+	2700.1.1={death=yes}
 }

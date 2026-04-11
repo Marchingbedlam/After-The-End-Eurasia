@@ -233,6 +233,7 @@ society_decisions = {
 				is_dharmic_monastic_member_trigger = yes
 				is_christian_monastic_member_trigger = yes
 				society_member_of = monastic_order_stoics
+				society_member_of = warrior_lodge_sun_king_cultist
 			}
 
 			society_rank >= 2
@@ -275,6 +276,7 @@ society_decisions = {
 				is_christian_monastic_member_trigger = yes
 				is_dharmic_monastic_member_trigger = yes
 				society_member_of = monastic_order_stoics
+				society_member_of = warrior_lodge_sun_king_cultist
 			}
 
 			society_rank >= 2
@@ -306,7 +308,12 @@ society_decisions = {
 		only_playable = yes
 
 		potential = {
-			is_monastic_member_trigger = yes
+		    OR = {
+			    is_monastic_member_trigger = yes
+				society_member_of = warrior_lodge_jacobin 
+				society_member_of = warrior_lodge_sun_king_cultist
+				society_member_of = warrior_lodge_glorian
+			}
 
 			OR = {
 				has_quest = quest_monastic_order_donate_to_charity
@@ -725,7 +732,11 @@ targeted_decisions = {
 
 		from_potential = {
 			has_dlc = "Mystics"
-			is_monastic_member_trigger = yes
+			OR = {
+			   is_monastic_member_trigger = yes
+			   society_member_of = warrior_lodge_jacobin
+			   society_member_of = warrior_lodge_sun_king_cultist
+			}
 			society_rank >= 3
 			is_incapable = no
 			has_virtue_trigger = yes

@@ -1758,6 +1758,7 @@
 	add_trait="legendary"
 	add_trait="wroth"
 	add_trait="cruel"
+	disallow_random_traits=yes
 	432.1.1={birth=yes}
 	476.6.4={
 	   death={
@@ -1775,6 +1776,7 @@
 	religion=catholic
 	add_trait="legendary"
 	add_trait="wroth"
+	disallow_random_traits=yes
 	449.1.1={birth=yes}
 	505.2.10={death=yes}
 }
@@ -1789,6 +1791,7 @@
 	add_trait="legendary"
 	add_trait="just"
 	add_trait="charitable"
+	disallow_random_traits=yes
 	490.1.1={birth=yes}
 	545.5.4={death=yes}
 }
@@ -1803,6 +1806,7 @@
 	add_trait="legendary"
 	add_trait="cruel"
 	add_trait="ambitious"
+	disallow_random_traits=yes
 	524.1.1={birth=yes}
 	545.5.4={
 	    death={
@@ -1822,6 +1826,7 @@
 	add_trait="legendary"
 	add_trait="cruel"
 	add_trait="ambitious"
+	disallow_random_traits=yes
 	531.1.1={birth=yes}
 	592.7.24={
 	    death={
@@ -1842,6 +1847,7 @@
 	add_trait="deceitful"
 	add_trait="ambitious"
 	add_trait="cruel"
+	disallow_random_traits=yes
 	562.1.1={birth=yes}
 	592.7.24={
 	    death={
@@ -1862,6 +1868,7 @@
 	add_trait="deceitful"
 	add_trait="ambitious"
 	add_trait="cruel"
+	disallow_random_traits=yes
 	565.1.1={birth=yes}
 	592.7.10={
 	    death={
@@ -1882,6 +1889,7 @@
 	add_trait="kind"
 	add_trait="patient"
 	add_trait="charitable"
+	disallow_random_traits=yes
 	570.1.1={birth=yes}
 	592.7.25={
 	    death={
@@ -1899,6 +1907,7 @@
 	religion=catholic
 	father=1001101
 	add_trait="legendary"
+	disallow_random_traits=yes
 	490.1.1={birth=yes}
 	546.5.4={death=yes}
 }
@@ -1911,6 +1920,7 @@
 	religion=catholic
 	father=1001108
 	add_trait="legendary"
+	disallow_random_traits=yes
 	510.1.1={birth=yes}
 	581.1.1={death=yes}
 }
@@ -1923,6 +1933,7 @@
 	religion=catholic
 	father=1001109
 	add_trait="legendary"
+	disallow_random_traits=yes
 	532.1.1={birth=yes}
 	592.7.22={death=yes}
 }
@@ -1935,6 +1946,7 @@
 	religion=catholic
 	father=1001110
 	add_trait="legendary"
+	disallow_random_traits=yes
 	555.1.1={birth=yes}
 	608.1.1={death=yes}
 }
@@ -1950,6 +1962,7 @@
 	add_trait="bastard"
 	add_trait="deceitful"
 	add_trait="ambitious"
+	disallow_random_traits=yes
 	557.1.1={birth=yes}
 	592.7.25={ 
 	   death={
@@ -1967,6 +1980,7 @@
 	religion=catholic
 	father=1001111
 	add_trait="legendary"
+	disallow_random_traits=yes
 	572.1.1={birth=yes}
 	610.1.1={
 	   add_spouse=1001136
@@ -1982,6 +1996,7 @@
 	religion=catholic
 	father=1001221
 	add_trait="legendary"
+	disallow_random_traits=yes
 	591.1.1={birth=yes}
 	612.1.1={
 	   death={
@@ -1996,6 +2011,7 @@
 	culture=breton
 	religion=catholic
 	add_trait="legendary"
+	disallow_random_traits=yes
 	592.1.1={birth=yes}
 	612.1.1={
 	   death={
@@ -2017,6 +2033,7 @@
 	add_trait="chaste"
 	add_trait="zealous"
 	add_trait="twin"
+	disallow_random_traits=yes
 	611.1.1={birth=yes}
 	728.1.1={death=yes} 
 }
@@ -2030,6 +2047,7 @@
 	father=1001135
 	add_trait="legendary"
 	add_trait="twin"
+	disallow_random_traits=yes
 	611.1.1={birth=yes}
 	684.1.1={death=yes} 
 }
@@ -2042,6 +2060,7 @@
 	religion=catholic
 	father=1001138
 	add_trait="legendary"
+	disallow_random_traits=yes
 	644.1.1={birth=yes}
 	698.1.1={death=yes} 
 }
@@ -2054,6 +2073,7 @@
 	religion=catholic
 	father=1001139
 	add_trait="legendary"
+	disallow_random_traits=yes
 	680.1.1={birth=yes}
 	724.1.1={death=yes} 
 }
@@ -2069,6 +2089,7 @@
 	add_trait="twin"
 	add_trait="wroth"
 	add_trait="ambitious"
+	disallow_random_traits=yes
 	702.1.2={birth=yes}
 	767.1.1={death=yes} 
 }
@@ -2084,6 +2105,7 @@
 	add_trait="twin"
 	add_trait="wroth"
 	add_trait="ambitious"
+	disallow_random_traits=yes
 	702.1.1={birth=yes}
 	732.1.1={
 	   death={
@@ -2101,6 +2123,7 @@
 	religion=catholic
 	add_trait="legendary"
 	add_trait="strong"
+	disallow_random_traits=yes
 	811.1.1={birth=yes}
 	880.1.1={death=yes} 
 }
@@ -2115,6 +2138,7 @@
 	add_trait="strong"
 	father=1001146
 	give_nickname=nick_the_great
+	disallow_random_traits=yes
 	855.1.1={birth=yes}
 	955.1.1={death=yes} 
 }
@@ -2127,6 +2151,7 @@
 	religion=catholic
 	add_trait="legendary"
 	father=1001147
+	disallow_random_traits=yes
 	890.1.1={birth=yes}
 	953.1.1={death=yes} 
 }
@@ -2139,6 +2164,7 @@
 	religion=catholic
 	add_trait="legendary"
 	father=1001148
+	disallow_random_traits=yes
 	921.1.1={birth=yes}
 	975.1.1={death=yes} 
 }
@@ -2153,6 +2179,7 @@
 	add_trait="saint"
 	father=1001149
 	give_nickname=nick_the_martyr
+	disallow_random_traits=yes
 	962.1.1={birth=yes}
 	978.1.1={
 	  death={
@@ -2170,6 +2197,7 @@
 	add_trait="legendary"
 	father=1001149
 	give_nickname=nick_the_unready
+	disallow_random_traits=yes
 	965.1.1={birth=yes}
 	1016.1.1={death=yes} 
 }
@@ -2184,6 +2212,7 @@
 	add_trait="saint"
 	father=1001151
 	give_nickname=nick_the_confessor
+	disallow_random_traits=yes
 	1002.1.1={birth=yes}
 	1066.1.1={death=yes} 
 }
@@ -2196,6 +2225,7 @@
 	religion=catholic
 	add_trait="legendary"
 	father=1001151
+	disallow_random_traits=yes
 	1004.1.1={birth=yes}
 	1059.1.1={death=yes} 
 }
@@ -2211,6 +2241,7 @@
 	add_trait="brilliant_strategist"
 	add_trait="inspiring_leader"
 	add_trait="legit_bastard"
+	disallow_random_traits=yes
 	father=1001153
 	give_nickname=nick_the_conqueror
 	1028.1.1={birth=yes}
@@ -2224,6 +2255,7 @@
 	culture=british
 	religion=catholic
 	add_trait="legendary"
+	disallow_random_traits=yes
 	father=1001154
 	1068.1.1={birth=yes}
 	1135.1.1={death=yes} 
@@ -2237,6 +2269,7 @@
 	religion=catholic
 	add_trait="legendary"
 	add_trait="quick"
+	disallow_random_traits=yes
 	father=1001155
 	1102.1.1={birth=yes}
 	1167.1.1={death=yes} 
@@ -2249,6 +2282,7 @@
 	culture=british
 	religion=catholic
 	add_trait="legendary"
+	disallow_random_traits=yes
 	mother=1001156
 	1133.1.1={birth=yes}
 	1189.1.1={death=yes} 
@@ -2261,6 +2295,7 @@
 	culture=british
 	religion=catholic
 	add_trait="legendary"
+	disallow_random_traits=yes
 	father=1001157
 	give_nickname=nick_the_lionheart
 	1157.1.1={birth=yes}
@@ -2278,6 +2313,7 @@
 	culture=british
 	religion=catholic
 	add_trait="legendary"
+	disallow_random_traits=yes
 	father=1001157
 	1166.1.1={birth=yes}
 	1215.1.1={
@@ -2294,6 +2330,7 @@
 	culture=british
 	religion=catholic
 	add_trait="legendary"
+	disallow_random_traits=yes
 	father=1001158
 	1180.1.1={birth=yes}
 	1245.1.1={death=yes} 
@@ -2306,6 +2343,7 @@
 	culture=british
 	religion=catholic
 	add_trait="legendary"
+	disallow_random_traits=yes
 	1181.1.1={birth=yes}
 	1201.1.1={
 	   add_spouse=1001160
@@ -2320,6 +2358,7 @@
 	culture=british
 	religion=catholic
 	add_trait="legendary"
+	disallow_random_traits=yes
 	father=1001161
 	mother=1001160
 	1229.1.1={birth=yes}
@@ -2327,17 +2366,15 @@
 }
 
 1001168={
-	name="Henry Stephen"
+	name="Stephen"
 	dynasty=7534008
 	occluded=yes
 	culture=british
 	religion=catholic
 	add_trait="legendary"
+	disallow_random_traits=yes
 	father=1001162
 	1263.1.1={birth=yes}
-	1282.1.1={
-	    add_spouse=1901033
-	}
 	1310.1.1={
 	    add_spouse=1804263
 	}
@@ -2345,12 +2382,13 @@
 }
 
 1001169={
-	name="Henry Edward"
+	name="Edward"
 	dynasty=7534008
 	occluded=yes
 	culture=british
 	religion=catholic
 	add_trait="legendary"
+	disallow_random_traits=yes
 	father=1001168
 	mother=1804263
 	1312.1.1={birth=yes}
@@ -2364,6 +2402,7 @@
 	culture=british
 	religion=catholic
 	add_trait="legendary"
+	disallow_random_traits=yes
 	father=1001169
 	1350.1.1={birth=yes}
 	1400.1.1={
@@ -2375,15 +2414,16 @@
 
 1001171={
 	name="Henry"
-	dynasty=7534008
+	dynasty=7534197
 	occluded=yes
 	culture=british
 	religion=catholic
 	add_trait="legendary"
 	add_trait="lunatic"
-	father=1001170
-	1381.1.1={birth=yes}
-	1431.1.1={
+	disallow_random_traits=yes
+	father=1001174
+	1421.1.1={birth=yes}
+	1471.1.1={
 	   death={
 	       death_reason=death_murder
 	   }
@@ -2391,61 +2431,91 @@
 }
 
 1001172={
-	name="Charles"
+	name="John"
 	dynasty=7534008
 	occluded=yes
 	culture=british
 	religion=catholic
 	add_trait="legendary"
+	disallow_random_traits=yes
 	father=1001168
 	mother=1804263
-	1316.1.1={birth=yes}
-	1380.1.1={death=yes} 
+	1340.1.1={birth=yes}
+	1399.1.1={death=yes} 
 }
 
 1001173={
-	name="Richard"
-	dynasty=7534008
+	name="Henry"
+	dynasty=7534197
 	occluded=yes
 	culture=british
 	religion=catholic
 	add_trait="legendary"
+	disallow_random_traits=yes
 	father=1001172
-	1341.1.1={birth=yes}
-	1403.1.1={death=yes} 
+	1367.1.1={birth=yes}
+	1413.1.1={death=yes} 
 }
 
 1001174={
-	name="Philip"
-	dynasty=7534008
+	name="Henry"
+	dynasty=7534197
 	occluded=yes
 	culture=british
 	religion=catholic
 	add_trait="legendary"
+	disallow_random_traits=yes
 	father=1001173
-	1370.1.1={birth=yes}
-	1434.1.1={death=yes} 
+	1387.1.1={birth=yes}
+	1422.1.1={death=yes} 
+}
+1001221={
+	name="Edmund"
+	dynasty=7534198
+	occluded=yes
+	culture=british
+	religion=catholic
+	add_trait="legendary"
+	disallow_random_traits=yes
+	father=1001168
+	mother=1804263
+	1341.1.1={birth=yes}
+	1402.1.1={death=yes} 
+}
+1001222={
+	name="Edward"
+	dynasty=7534198
+	occluded=yes
+	culture=british
+	religion=catholic
+	add_trait="legendary"
+	disallow_random_traits=yes
+	father=1001221
+	1373.1.1={birth=yes}
+	1415.1.1={death=yes} 
 }
 
 1001175={
 	name="Richard"
-	dynasty=7534008
+	dynasty=7534198
 	occluded=yes
 	culture=british
 	religion=catholic
 	add_trait="legendary"
-	father=1001174
+	disallow_random_traits=yes
+	father=1001222
 	1401.1.1={birth=yes}
 	1466.1.1={death=yes} 
 }
 
 1001176={ #Edward IV
 	name="Edward"
-	dynasty=7534008
+	dynasty=7534198
 	occluded=yes
 	culture=british
 	religion=catholic
 	add_trait="legendary"
+	disallow_random_traits=yes
 	father=1001175
 	1442.1.1={birth=yes}
 	1483.4.9={death=yes} 
@@ -2453,11 +2523,12 @@
 
 1001177={ #Edward V
 	name="Edward"
-	dynasty=7534008
+	dynasty=7534198
 	occluded=yes
 	culture=british
 	religion=catholic
 	add_trait="legendary"
+	disallow_random_traits=yes
 	father=1001176
 	1470.1.1={birth=yes}
 	1483.6.25={
@@ -2470,11 +2541,12 @@
 
 1001178={ 
 	name="Richard"
-	dynasty=7534008
+	dynasty=7534198
 	occluded=yes
 	culture=british
 	religion=catholic
 	add_trait="legendary"
+	disallow_random_traits=yes
 	father=1001176
 	1473.1.1={birth=yes}
 	1483.6.25={
@@ -2487,7 +2559,7 @@
 
 1001179={ 
 	name="Richard"
-	dynasty=7534008
+	dynasty=7534198
 	occluded=yes
 	culture=british
 	religion=catholic
@@ -2496,6 +2568,7 @@
 	add_trait="hunchback"
 	add_trait="deceitful"
 	add_trait="cruel"
+	disallow_random_traits=yes
 	father=1001175
 	1452.1.1={birth=yes}
 	1485.4.9={
@@ -2506,44 +2579,65 @@
 	}
 }
 
-1001180={ 
-	name="Edward"
-	dynasty=7534008
+1001223={
+	name="Elizabeth"
+	female=yes
+	dynasty=7534198
 	occluded=yes
 	culture=british
 	religion=catholic
-	give_nickname=nick_the_bastard
+	add_trait="legendary"
+	disallow_random_traits=yes
+	father=1001176
+	1466.1.1={birth=yes}
+	1503.1.1={death=yes} 
+}
+
+1001180={ 
+	name="Edward"
+	dynasty=7534197
+	occluded=yes
+	culture=british
+	religion=catholic
 	father=1001171
 	add_trait="legendary"
-	1423.1.1={birth=yes}
-	1456.10.1={
+	disallow_random_traits=yes
+	1453.1.1={birth=yes}
+	1471.5.4={
 	   death={
-	      death_reason=death_murder
+	      death_reason=death_execution
+		  killer=1001179
 	   }
 	}
 }
 
 1001181={ 
 	name="Henry"
-	dynasty=7534008
+	dynasty=7534199
 	occluded=yes
 	culture=british
 	religion=catholic
-	father=1001180
 	add_trait="legendary"
+	add_trait="bastard"
+	disallow_random_traits=yes
 	1457.1.1={birth=yes}
+	1486.1.1={
+	    add_spouse=1001223
+	}
 	1509.1.1={death=yes} 
 }
 
 1001182={ 
 	name="Henry"
-	dynasty=7534008
+	dynasty=7534199
 	occluded=yes
 	culture=british
 	religion=high_church
 	father=1001181
+	mother=1001223
 	add_trait="legendary"
 	add_trait="fat"
+	disallow_random_traits=yes
 	1491.1.1={birth=yes}
 	1553.1.1={death=yes} 
 }
@@ -2551,12 +2645,13 @@
 1001183={ 
 	name="Mary"
 	female=yes
-	dynasty=7534008
+	dynasty=7534199
 	occluded=yes
 	culture=british
 	religion=catholic
 	father=1001182
 	add_trait="legendary"
+	disallow_random_traits=yes
 	1516.1.1={birth=yes}
 	1558.1.1={death=yes} 
 }
@@ -2564,26 +2659,29 @@
 1001184={ 
 	name="Elizabeth"
 	female=yes
-	dynasty=7534008
+	dynasty=7534199
 	occluded=yes
 	culture=british
 	religion=high_church
 	father=1001182
 	add_trait="legendary"
 	add_trait="legit_bastard"
+	disallow_random_traits=yes
 	1533.1.1={birth=yes}
 	1603.1.1={death=yes} 
 }
 
 1001185={ 
-	name="Elizabeth"
+	name="Margaret"
 	female=yes
-	dynasty=7534008
+	dynasty=7534199
 	occluded=yes
 	culture=british
 	religion=catholic
 	father=1001181
+	mother=1001223
 	add_trait="legendary"
+	disallow_random_traits=yes
 	1504.1.1={birth=yes}
 	1558.1.1={death=yes} 
 }
@@ -2598,6 +2696,7 @@
 	father=1901038
 	mother=1001185
 	add_trait="legendary"
+	disallow_random_traits=yes
 	1542.1.1={birth=yes}
 	1587.1.1={
        death={
@@ -2615,6 +2714,7 @@
 	religion=high_church
 	mother=1001186
 	add_trait="legendary"
+	disallow_random_traits=yes
 	1566.1.1={birth=yes}
 	1625.1.1={death=yes} 
 }
@@ -2627,6 +2727,7 @@
 	religion=high_church
 	father=1001187
 	add_trait="legendary"
+	disallow_random_traits=yes
 	1600.1.1={birth=yes}
 	1649.1.30={
 	   death={
@@ -2644,6 +2745,7 @@
 	religion=high_church
 	father=1001188
 	add_trait="legendary"
+	disallow_random_traits=yes
 	1630.1.1={birth=yes}
 	1685.1.1={death=yes} 
 }
@@ -2656,6 +2758,7 @@
 	religion=catholic
 	father=1001188
 	add_trait="legendary"
+	disallow_random_traits=yes
 	1633.1.1={birth=yes}
 	1689.1.1={
 	   death={
@@ -2674,6 +2777,7 @@
 	religion=high_church
 	father=1001190
 	add_trait="legendary"
+	disallow_random_traits=yes
 	1665.1.1={birth=yes}
 	1685.1.1={
 	   add_spouse=1001192
@@ -2688,6 +2792,7 @@
 	culture=british
 	religion=free_church
 	add_trait="legendary"
+	disallow_random_traits=yes
 	1599.1.1={birth=yes}
 	1658.1.1={death=yes} 
 }
@@ -2699,6 +2804,7 @@
 	culture=british
 	religion=free_church
 	add_trait="legendary"
+	disallow_random_traits=yes
 	father=1001193
 	1626.1.1={birth=yes}
 	1658.12.9={
@@ -2718,6 +2824,7 @@
 	culture=lowlander
 	religion=high_church
 	add_trait="legendary"
+	disallow_random_traits=yes
 	1650.1.1={birth=yes}
 	1689.1.1={death=yes} 
 }
@@ -2731,6 +2838,7 @@
 	add_trait="legendary"
 	add_trait="wroth"
 	add_trait="slothful"
+	disallow_random_traits=yes
 	father=1001192
 	mother=1001191
 	1683.1.1={birth=yes}
@@ -2746,6 +2854,7 @@
 	add_trait="legendary"
 	add_trait="lunatic"
 	add_trait="kind"
+	disallow_random_traits=yes
 	father=1001167
 	give_nickname=nick_the_unready
 	1738.1.1={birth=yes}
@@ -2760,6 +2869,7 @@
 	religion=high_church
 	add_trait="legendary"
 	add_trait="proud"
+	disallow_random_traits=yes
 	father=1001166
 	1762.1.1={birth=yes}
 	1837.1.1={death=yes} 
@@ -2774,6 +2884,7 @@
 	religion=high_church
 	add_trait="legendary"
 	give_nickname=nick_the_great
+	disallow_random_traits=yes
 	father=1001165
 	1819.1.1={birth=yes}
 	1901.1.1={death=yes} 
@@ -2787,6 +2898,7 @@
 	religion=high_church
 	add_trait="legendary"
 	mother=1001164
+	disallow_random_traits=yes
 	1865.1.1={birth=yes}
 	1936.1.1={death=yes} 
 }
@@ -2799,6 +2911,7 @@
 	religion=high_church
 	add_trait="legendary"
 	father=1001163
+	disallow_random_traits=yes
 	1895.12.14={birth=yes}
 	1952.2.6={death=yes} 
 }
@@ -2812,6 +2925,7 @@
 	religion=high_church
 	add_trait="legendary"
 	father=1001145
+	disallow_random_traits=yes
 	1926.4.21={birth=yes}
 	1981.7.29={death=yes} 
 }
@@ -2828,6 +2942,7 @@
 	add_trait="fair"
 	add_trait="kind"
 	add_trait="brave"
+	disallow_random_traits=yes
 	1961.7.1={birth=yes}
 	2000.1.1={
 	   death={

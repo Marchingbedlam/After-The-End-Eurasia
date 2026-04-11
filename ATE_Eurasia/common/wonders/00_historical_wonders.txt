@@ -2639,22 +2639,24 @@ wonder_motherland_calls = {
 	model = wonder_statue
 	potential = {
 		trigger_if = {
-			limit = {
-				OR = {
-				culture_group = russian
-				culture_group = ruthenian
-				religion = proletcult
-				}
-			}
+		    religion = proletcult
+			#limit = {
+				#OR = {
+				#culture_group = russian
+				#culture_group = ruthenian
+				#religion = proletcult
+				#}
+			#}
 		}
 	}
 	active = {
 		ROOT = {
-			OR = {
-				culture_group = russian
-				culture_group = ruthenian
-				religion = proletcult
-			}
+		    religion = proletcult
+			#OR = {
+				#culture_group = russian
+				#culture_group = ruthenian
+				#religion = proletcult
+			#}
 		}
 	}
 	flags = {

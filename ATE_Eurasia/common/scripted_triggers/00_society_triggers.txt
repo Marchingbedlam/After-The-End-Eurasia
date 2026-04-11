@@ -50,8 +50,11 @@ has_society_currency_major_trigger = {
 is_devil_worshiper_trigger = {
 	custom_tooltip = {
 		text = IS_DEVIL_WORSHIPPER_TRIGGER
-
-		society_member_of = the_satanists
+		
+		OR = {
+		    society_member_of = the_satanists
+			society_member_of = third_romanist_conspiracy
+		}
 	}
 }
 

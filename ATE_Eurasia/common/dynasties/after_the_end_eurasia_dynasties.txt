@@ -51070,3 +51070,59 @@ coat_of_arms = {
 		}
 	}
 }
+7534197 = { 
+    name = "Lancaster"
+    culture = british
+	religion = jacobin
+	used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 75
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7534198 = { 
+    name = "York"
+    culture = british
+	religion = jacobin
+	used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 76
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7534199 = { 
+    name = "Tudor"
+    culture = british
+	religion = jacobin
+	used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 77
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7534200 = { name = "MacAilpín" culture = highlander used_for_random = no }
+7534201 = { name = "Dunkeld" culture = lowlander religion=catholic used_for_random = no }

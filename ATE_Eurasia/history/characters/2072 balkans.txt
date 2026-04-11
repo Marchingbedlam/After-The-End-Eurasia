@@ -1040,7 +1040,7 @@
 	2680.1.1={death=yes}
 }
 2072247={
-	name="Krastev"
+	name="Konstantin"
 	dynasty=2047202 #Tenev
 	religion=orthodox
 	culture=bulgarian
@@ -1051,6 +1051,7 @@
 	trait=duelist
 	trait=wroth
 	trait=cynical
+	father=2072290
 	2640.1.20={birth=yes}
 	2680.1.1={death=yes}
 }
@@ -1755,4 +1756,40 @@
 	disallow_random_traits=yes
 	1892.1.1={birth=yes}
 	1980.1.1={death=yes}
+}
+
+2072289={ 
+	name="Konstantin"
+	dynasty=2047202 #Tenev
+	religion=catholic
+	culture=bulgarian
+	trait="brilliant_strategist"
+	trait="wroth"
+	trait="ambitious"
+	trait="inspiring_leader"
+	trait="bastard"
+	father=2072267
+	2581.6.3={birth=yes}
+	2608.5.4={
+	   death={
+	      death_reason=death_execution
+		  killer=2072270
+	   }
+	}
+}
+
+2072290={ 
+	name="Krastev"
+	dynasty=2047202 #Tenev
+	religion=catholic
+	culture=bulgarian
+	trait="midas_touched"
+	trait="greedy"
+	trait="deceitful"
+	trait="shy"
+	trait="administrator"
+	father=2072289
+	2602.10.29={birth=yes}
+	2608.5.4={religion=orthodox}
+	2700.1.1={death=yes}
 }

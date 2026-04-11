@@ -4980,6 +4980,7 @@ warrior_lodge_jacobin = {
 		powers = {
 			warrior_lodge_inspire_warriors #Power: Inspire Warriors
 			warrior_lodge_war_sacrifice #Power: War Sacrifice
+			monastic_orders_teach_virtue
 		}
 	}
 
@@ -7897,6 +7898,8 @@ warrior_lodge_sun_king_cultist = {
 			warrior_lodge_reaver #Passive Power: Reaver
 			warrior_lodge_warrior_training #Power: Warrior Training
 			warrior_lodge_summon_commander #Power: Summon Commander
+			monastic_orders_go_celibate
+			monastic_orders_stop_celibate
 		}
 	}
 	

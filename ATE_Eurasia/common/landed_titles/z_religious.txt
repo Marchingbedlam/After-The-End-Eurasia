@@ -2078,3 +2078,30 @@ d_sjotru_reformed = {
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
+
+d_marcelianist = {
+	color={ 43 70 147 }
+	color2 = { 255 255 255 }
+	
+	capital = 472 #Econe
+	creation_requires_capital = no
+	
+	landless = yes
+	
+	title = "BISHOP_SUPERIOR"
+	foa = "ECUMENICAL_PATRIARCH_FOA"
+	short_name = yes
+	
+	#Controls a religion
+	controls_religion = marcelianist
+	
+	religion = marcelianist
+	
+	assimilate = no
+	
+	primary = no
+	
+	dignity = 200
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}

@@ -1163,8 +1163,8 @@ christian = {
 		can_grant_claim = yes
 		can_call_crusade = no
 		priests_can_inherit = no
-		female_temple_holders = yes
-		male_temple_holders = no
+		female_temple_holders = no
+		male_temple_holders = yes
 		feminist = yes
 		
 		can_retire_to_monastery = yes
@@ -1172,6 +1172,51 @@ christian = {
 		religious_clothing_head = 1
 		religious_clothing_priest = 1
 
+		intermarry = lutheran
+		intermarry = nonconformist
+	}
+	marcelianist = {
+		graphical_culture = westerngfx
+
+		icon = 41
+		heresy_icon = 42
+		
+		color = { 0.9 0.9 0.7 }
+
+		parent = catholic
+		
+		crusade_name = CRUSADE
+		scripture_name = THE_BIBLE
+		priest_title = PRIEST
+		
+		high_god_name = GOD_GOD
+		god_names = {
+			GOD_GOD GOD_THE_LORD GOD_JESUS GOD_THE_BLESSED_VIRGIN
+		}
+		
+		evil_god_names = {
+			SATAN LUCIFER THE_DEVIL SPIRIT_OF_THE_COUNCIL
+		}
+		
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_grant_invasion_cb = invasion
+		can_grant_claim = yes
+		can_call_crusade = yes
+		priests_can_inherit = no
+		male_temple_holders = yes
+		
+		can_retire_to_monastery = yes
+		
+		religious_clothing_head = 1
+		religious_clothing_priest = 1
+
+		intermarry = catholic
+		intermarry = apparitionist
+		intermarry = penitant
+		intermarry = sun_king_cultist
+		intermarry = reformed
+		intermarry = iconoclast
 		intermarry = lutheran
 		intermarry = nonconformist
 	}
@@ -2431,6 +2476,9 @@ vernacular = {
 		can_grant_claim = yes
 		can_call_crusade = yes
 		priests_can_inherit = no
+		priests_can_marry = yes
+		female_temple_holders = yes
+		male_temple_holders = yes
 		allow_rivermovement = yes
 		allow_looting = yes
 		
@@ -2480,9 +2528,10 @@ vernacular = {
 		can_call_crusade = no
 		feminist = yes 
 		female_temple_holders = yes
+		male_temple_holders = yes
 		allow_looting = no
 		
-		religious_clothing_head = 0
+		religious_clothing_head = 1
 		religious_clothing_priest = 1
 		intermarry = nysed
 		intermarry = folketro
@@ -2523,6 +2572,8 @@ vernacular = {
 		priests_can_inherit = no
 		allow_rivermovement = yes
 		allow_looting = yes
+		female_temple_holders = yes
+		male_temple_holders = yes
 		
 		religious_clothing_head = 0
 		religious_clothing_priest = 1

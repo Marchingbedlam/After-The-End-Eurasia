@@ -829,6 +829,34 @@ spriteTypes = {
 		textureFile = "gfx\\interface\\societies\\symbol_small_monastic_order_mariavite.dds"
 		noOfFrames = 2
 	}
+	
+	##### Carbonaries #####
+	
+	spriteType = {
+		name = "GFX_icon_small_third_romanist_conspiracy"
+		textureFile = "gfx\\interface\\societies\\symbol_small_third_romanist_conspiracy.tga"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_society_main_background_third_romanist_conspiracy"
+		textureFile = "gfx\\interface\\societies\\society_bg_third_romanist_conspiracy.tga"
+	}
+	spriteType = {
+		name = "GFX_society_currency_third_romanist_conspiracy"
+		textureFile = "gfx\\interface\\societies\\society_currency_the_vodunons.tga"
+	}
+	spriteType = {
+		name = "GFX_society_expansion_third_romanist_conspiracy"
+		textureFile = "gfx\\interface\\societies\\society_exp_bg_third_romanist_conspiracy.tga"
+	}
+	spriteType = {
+		name = "GFX_society_portrait_ring_third_romanist_conspiracy"
+		textureFile = "gfx\\interface\\societies\\portrait_ring_small_third_romanist_conspiracy.tga"
+	}
+	spriteType = {
+		name = "GFX_society_portrait_ring_third_romanist_conspiracy"
+		textureFile = "gfx\\interface\\societies\\portrait_ring_third_romanist_conspiracy.tga"
+	}
 
 	##### Hermetics #####
 
@@ -1114,6 +1142,10 @@ spriteTypes = {
 		textureFile = "gfx\\interface\\societies\\portrait_ring_wolf_warriors.tga"
 	}
 	spriteType = {
+		name = "GFX_society_portrait_ring_warrior_lodge_jacobin"
+		textureFile = "gfx\\interface\\societies\\portrait_ring_eagle_warriors.tga"
+	}
+	spriteType = {
 		name = "GFX_society_portrait_ring_warrior_lodge_sun_king_cultist"
 		textureFile = "gfx\\interface\\societies\\portrait_ring_monastic_order_benedictine.dds"
 	}
@@ -1159,6 +1191,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_society_portrait_ring_small_warrior_lodge_proletcult"
 		textureFile = "gfx\\interface\\societies\\portrait_ring_small_proletcult.tga"
+	}
+	spriteType = {
+		name = "GFX_society_portrait_ring_small_warrior_lodge_jacobin"
+		textureFile = "gfx\\interface\\societies\\portrait_ring_small_eagle_warriors.tga"
 	}
 	spriteType = {
 		name = "GFX_society_portrait_ring_small_warrior_lodge_folketro"
@@ -1283,6 +1319,22 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_society_currency_warrior_lodge_hellenic"
+		textureFile = "gfx\\interface\\societies\\society_currency_warriors.dds"
+	}
+	spriteType = {
+		name = "GFX_society_currency_warrior_lodge_jacobin"
+		textureFile = "gfx\\interface\\societies\\society_currency_warriors.dds"
+	}
+	spriteType = {
+		name = "GFX_society_currency_warrior_lodge_proletcult"
+		textureFile = "gfx\\interface\\societies\\society_currency_warriors.dds"
+	}
+	spriteType = {
+		name = "GFX_society_currency_warrior_lodge_solar_king_cultist"
+		textureFile = "gfx\\interface\\societies\\society_currency_warriors.dds"
+	}
+	spriteType = {
+		name = "GFX_society_currency_warrior_lodge_folketro"
 		textureFile = "gfx\\interface\\societies\\society_currency_warriors.dds"
 	}
 

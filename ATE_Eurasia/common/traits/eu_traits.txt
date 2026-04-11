@@ -2259,3 +2259,23 @@ school_of_lamennais = {
 	religious = yes
 	ruler_designer_cost = 0
 }
+
+jacobin_nun = {
+	religious = yes # Lost immediately on religion change
+	cannot_marry = yes
+	cannot_inherit = yes
+	customizer = no
+	random = no
+
+	potential = {
+		is_ruler = no
+		is_female = yes
+		religion = jacobin
+	}
+	
+	monthly_character_piety = 0.3
+	same_religion_opinion = 5
+	same_opinion = 10
+
+	female_compliment = COMPL_NUN
+}

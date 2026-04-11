@@ -355,6 +355,7 @@
 	add_trait="legendary"
 	add_trait="brave"
 	add_trait="ambitious"
+	disallow_random_traits=yes
 	1270.1.1={birth=yes}
 	1305.1.1={
 	   death={
@@ -371,6 +372,7 @@
 	culture=lowlander
 	religion=catholic
 	add_trait="legendary"
+	disallow_random_traits=yes
 	1274.1.1={birth=yes}
 	1329.1.1={death=yes}
 }
@@ -384,8 +386,9 @@
 	add_trait="legendary"
 	add_trait="kind"
 	add_trait="honest"
+	disallow_random_traits=yes
 	1001.1.1={birth=yes}
-	1340.8.14={
+	1040.8.14={
 	   death={
 	      death_reason=death_murder
 		  killer=1901021
@@ -401,6 +404,7 @@
 	add_trait="legendary"
 	add_trait="cruel"
 	add_trait="ambitious"
+	disallow_random_traits=yes
 	1018.1.1={birth=yes}
 	1057.1.1={
 	   death={
@@ -419,6 +423,7 @@
 	add_trait="legendary"
 	add_trait="kind"
 	father=1901020
+	disallow_random_traits=yes
 	1031.1.1={birth=yes}
 	1070.1.1={
 	    add_spouse=1901024
@@ -434,6 +439,7 @@
 	religion=catholic
 	add_trait="legendary"
 	father=1901020
+	disallow_random_traits=yes
 	1033.1.1={birth=yes}
 	1099.1.1={death=yes}
 }
@@ -449,6 +455,7 @@
 	add_trait="saint"
 	add_trait="zealous"
 	add_trait="kind"
+	disallow_random_traits=yes
 	father=1001152
 	1061.1.1={birth=yes}
 	1093.1.1={death=yes}
@@ -461,6 +468,7 @@
 	culture=nynorn
 	religion=catholic
 	add_trait="legendary"
+	disallow_random_traits=yes
 	father=1901022
 	mother=1901024
 	1074.1.1={birth=yes}
@@ -474,6 +482,7 @@
 	culture=nynorn
 	religion=catholic
 	add_trait="legendary"
+	disallow_random_traits=yes
 	father=1901022
 	mother=1901024
 	1078.1.1={birth=yes}
@@ -488,6 +497,7 @@
 	religion=catholic
 	add_trait="legendary"
 	add_trait="zealous"
+	disallow_random_traits=yes
 	father=1901022
 	mother=1901024
 	1084.1.1={birth=yes}
@@ -495,71 +505,27 @@
 }
 
 1901028={ 
-	name="Malcolm"
-	dynasty=7534016
+	name="Coinneach"
+	dynasty=7534200
 	occluded=yes
-	culture=nynorn
+	culture=highlander
 	religion=catholic
 	add_trait="legendary"
-	add_trait="chaste"
-	father=1901023
-	1088.1.1={birth=yes}
-	1165.1.1={death=yes}
-}
-
-1901029={ 
-	name="Donald"
-	dynasty=7534016
-	occluded=yes
-	culture=nynorn
-	religion=catholic
-	add_trait="legendary"
-	add_trait="chaste"
-	father=1901028
-	give_nickname=nick_the_lion
-	1136.1.1={birth=yes}
-	1214.1.1={death=yes}
-}
-
-1901030={ 
-	name="Alexander"
-	dynasty=7534016
-	occluded=yes
-	culture=nynorn
-	religion=catholic
-	add_trait="legendary"
-	father=1901029
-	1188.1.1={birth=yes}
-	1249.1.1={death=yes}
+	disallow_random_traits=yes
+	810.1.1={birth=yes}
+	858.2.8={death=yes}
 }
 
 1901031={ 
 	name="Alexander"
-	dynasty=7534016
+	dynasty=7534201
 	occluded=yes
 	culture=nynorn
 	religion=catholic
 	add_trait="legendary"
-	father=1901030
+	disallow_random_traits=yes
 	1241.1.1={birth=yes}
 	1286.1.1={death=yes}
-}
-
-1901033={ 
-	name="Ingburgh"
-	female=yes
-	dynasty=7534016
-	occluded=yes
-	culture=british
-	religion=catholic
-	add_trait="legendary"
-	father=1901031
-	1260.1.1={birth=yes}
-	1283.1.1={
-	   death={
-	      death_reason=death_childbirth
-	   }
-	}
 }
 
 1901032={ 
@@ -570,8 +536,8 @@
 	culture=british
 	religion=catholic
 	add_trait="legendary"
+	disallow_random_traits=yes
 	father=1001168
-	mother=1901033
 	1283.1.1={birth=yes}
 	1290.1.1={death=yes}
 }
@@ -583,6 +549,7 @@
 	culture=lowlander
 	religion=catholic
 	add_trait="legendary"
+	disallow_random_traits=yes
 	father=1901019
 	give_nickname=nick_the_old
 	1324.1.1={birth=yes}
@@ -596,6 +563,7 @@
 	culture=lowlander
 	religion=catholic
 	add_trait="legendary"
+	disallow_random_traits=yes
 	1394.1.1={birth=yes}
 	1460.1.1={death=yes}
 }
@@ -607,6 +575,7 @@
 	culture=lowlander
 	religion=catholic
 	add_trait="legendary"
+	disallow_random_traits=yes
 	father=1901035
 	1430.1.1={birth=yes}
 	1488.1.1={death=yes}
@@ -619,6 +588,7 @@
 	culture=lowlander
 	religion=catholic
 	add_trait="legendary"
+	disallow_random_traits=yes
 	father=1901036
 	1462.1.1={birth=yes}
 	1513.1.1={death=yes}
@@ -631,6 +601,7 @@
 	culture=lowlander
 	religion=catholic
 	add_trait="legendary"
+	disallow_random_traits=yes
 	father=1901036
 	1502.1.1={birth=yes}
 	1542.1.1={death=yes}

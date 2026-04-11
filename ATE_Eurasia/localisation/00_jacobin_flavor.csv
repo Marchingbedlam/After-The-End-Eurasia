@@ -124,13 +124,13 @@ WAR_NAME_JACOBIN_PRESIDENCY_WAR;War for Presidency;;;;;;;;;;;x
 jacobin_presidency_war_desc;The French president is weak, and his weakness demonstrates his inability to realize the ideals of liberty, equality, and fraternity. And if he is unable to realize these ideals, then he is a public enemy, an enemy of the revolution.;;;;;;;;;;;x
 JACOBIN_PRESIDENCY_VICTORY_TT;You become the new President of France, and your predecessor ends up on the guillotine.;;;;;;;;;;;x
 temple_baron_jacobin;Prétre;;;;;;;;;x
-temple_baron_jacobin_female;Prétresse;;;;;;;;;x
+temple_baron_female_jacobin;Prétresse;;;;;;;;;x
 temple_barony_of_jacobin;Maison of;;;;;;;;;x
 temple_count_jacobin;Grand Prétre;;;;;;;;x
-temple_count_jacobin;Grande Prétresse;;;;;;;;x
+temple_count_female_jacobin;Grande Prétresse;;;;;;;;x
 temple_county_of_jacobin;Commune of;;;;;;;;;x
 temple_duke_jacobin;Archiprétre;;;;;;;;;x
-temple_duke_jacobin_female;Archiprétresse;;;;;;;;;x
+temple_duke_female_jacobin;Archiprétresse;;;;;;;;;x
 temple_duchy_of_jacobin;République des Mariannes of;;;;;;;;;x
 school_of_talleyrand;School of Talleyrand;;;;;;;;;x
 school_of_pascal;School of Pascal;;;;;;;;;x
@@ -144,3 +144,7 @@ EVTDESC_jacobin.29;Since the Gallican Church was established in France as a tole
 EVTOPTA_jacobin.29;I will follow School of Talleyrand;;;;;;;;;x
 EVTOPTB_jacobin.29;I will follow School of Pascal;;;;;;;;;x
 EVTOPTC_jacobin.29;I will follow School of Lamennais;;;;;;;;;x
+jacobin_nun;Marianniste;;;;;;;;;x
+jacobin_nun_desc;This character is Marianniste - a woman dedicated to imitating Marianne and following the example of a virtuous revolutionary virgin who helps in preparing Maisons, teaching young people and performing other charitable functions related to helping the homeless.;;;;;;;;;x
+order_to_take_jacobin_vows;Order to became Marianniste;;;;;;;;;x
+order_to_take_jacobin_vows_desc;The Mariannistes are a respected group of women in the Jacobin religion, and perhaps this woman is predestined to join them and renounce married life to help in the temple, teach the youth, and help the poor.;;;;;;;;;x
