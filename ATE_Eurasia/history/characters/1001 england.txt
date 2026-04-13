@@ -1951,7 +1951,7 @@
 	608.1.1={death=yes}
 }
 
-1001221={
+1001224={
 	name="Edmund"
 	occluded=yes
 	dynasty=7534006
@@ -1994,7 +1994,7 @@
 	occluded=yes
 	culture=breton
 	religion=catholic
-	father=1001221
+	father=1001224
 	add_trait="legendary"
 	disallow_random_traits=yes
 	591.1.1={birth=yes}
@@ -2939,7 +2939,7 @@
 	religion=high_church
 	mother=1001144
 	add_trait="legendary"
-	add_trait="fair"
+	add_trait="attractive"
 	add_trait="kind"
 	add_trait="brave"
 	disallow_random_traits=yes
@@ -3373,7 +3373,7 @@
 	culture=southerner
 	religion=high_church
 	trait="scholarly_theologian"
-	trait="fair"
+	trait="attractive"
 	trait="quick"
 	trait="erudite"
 	trait="gregarious"
@@ -3575,7 +3575,7 @@
 	trait="proud"
 	trait="chaste"
 	trait="duelist"
-	trait="schemer"
+	trait="master_schemer"
 	trait="drunkard"
 	2629.5.10={birth=yes}
 	2680.1.1={death=yes}
@@ -3616,3 +3616,4 @@
 	}
 	2680.1.1={death=yes}
 }
+#don't use 1001224 its used already#
