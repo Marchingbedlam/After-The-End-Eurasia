@@ -1475,14 +1475,14 @@
 	give_nickname=nick_the_brave
 	father=2072269
 	mother=2072268
-	2562.11.15={birth=yes}
+	2560.11.15={birth=yes}
 	2584.1.1={
 	  add_spouse=2072271
 	}
 	2602.1.1={
 	  add_spouse=2072272
 	}
-	2618.7.28={death=yes}
+	2618.6.28={death=yes}
 }
 
 2072271={ 
@@ -1510,7 +1510,12 @@
 	culture=hungarian
 	father=1991104
 	2585.9.11={birth=yes}
-	2644.1.1={death=yes}
+	2618.9.16={
+	  death={
+	     death_reason=death_execution
+		 killer=2072273
+	  }
+	}
 }
 
 2072273={ 
@@ -1576,9 +1581,8 @@
 	dynasty=2047201 #Sratsimir
 	religion=orthodox
 	culture=bulgarian
-	mother=2072273
-	trait="legit_bastard"
-	2619.9.11={birth=yes}
+	father=2072277
+	2615.9.11={birth=yes}
 	2662.7.15={death=yes}
 }
 
@@ -1597,17 +1601,18 @@
 }
 
 2072277={ 
-	name="Konstantin"
+	name="Dimitar"
 	dynasty=2047201 #Sratsimir
 	religion=orthodox
 	culture=bulgarian
 	father=2072269
+	mother=2072268
 	trait="drunkard"
-	2570.4.16={birth=yes}
-	2615.6.14={
+	2562.4.16={birth=yes}
+	2615.5.22={
 	  death={
-	     death_reason=death_execution_hanging
-		 killer=2072270
+	     death_reason=death_execution
+		 killer=2072273
 	  }
 	}
 }
