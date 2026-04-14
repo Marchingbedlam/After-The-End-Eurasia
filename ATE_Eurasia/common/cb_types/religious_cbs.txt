@@ -117,9 +117,8 @@ crusade = {
 			trigger_if = {
 				limit = { has_global_flag = schism_mended }
 
-				NOR = {
+				NOT = {
 					religion = catholic
-					religion = fraticelli
 				}
 			}
 		}
@@ -696,9 +695,8 @@ new_crusade = {
 		trigger_if = {
 			limit = { has_global_flag = schism_mended }
 
-			NOR = {
+			NOT = {
 				religion = catholic
-				religion = fraticelli
 			}
 		}
 	}
@@ -2587,7 +2585,7 @@ religious = {
 					}
 
 					# Muslims fight amongst themselves
-					trigger_else_if = {
+					trigger_else = {
 						limit = { religion_group = muslim }
 						NOT = { religion = FROM }
 					}
