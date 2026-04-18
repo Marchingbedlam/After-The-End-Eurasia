@@ -15,7 +15,7 @@
 			add_claim=c_euboea
 		}
 	2680.1.1={death=yes}
-	}
+}
 2072002={
 	name="Medon"
 	dynasty=20072070
@@ -29,7 +29,7 @@
 	trait=ambitious
 		2648.6.9={birth=yes}
 	2680.1.1={death=yes}
-	}
+}
 2072003={
 	name="Mardochaios"
 	dynasty=1821000
@@ -65,7 +65,7 @@
 	mother=2072004
 		2630.11.9={birth=yes}
 	2680.1.1={death=yes}
-	}
+}
 2072006={
 	name="Isaak"
 	dynasty=1821000
@@ -1557,7 +1557,7 @@
 	father=2072270
 	mother=2072272
 	2608.4.11={ 
-	    birth="2608.4.11"
+	    birth=yes
 	 	effect = { 
 			c_2072277 = {
 				ROOT = { set_real_father = PREV }
@@ -1579,7 +1579,7 @@
 	father=2072270
 	mother=2072272
 	2612.6.14={ 
-	    birth="2612.6.14"
+	    birth=yes
 	 	effect = { 
 			c_2072277 = {
 				ROOT = { set_real_father = PREV }
