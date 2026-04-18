@@ -1288,8 +1288,14 @@
 	trait=patient
 	trait=chaste
 	trait=bastard
-	real_father=2202163
-	2458.1.1={birth=yes}
+	2458.4.19={ 
+	    birth="2458.4.19"
+	 	effect = { 
+			c_2202163 = {
+				ROOT = { set_real_father = PREV }
+			}
+		}
+	}
 	2496.4.10={
 	    give_nickname=nick_the_liberator
 		create_bloodline={
@@ -1550,8 +1556,14 @@
 	culture=bulgarian
 	father=2072270
 	mother=2072272
-	real_father=2072277
-	2608.4.11={birth=yes}
+	2608.4.11={ 
+	    birth="2608.4.11"
+	 	effect = { 
+			c_2072277 = {
+				ROOT = { set_real_father = PREV }
+			}
+		}
+	}
 	2618.10.22={
 	   death={
 	      death_reason=death_missing
@@ -1566,8 +1578,14 @@
 	culture=bulgarian
 	father=2072270
 	mother=2072272
-	real_father=2072277
-	2612.6.14={birth=yes}
+	2612.6.14={ 
+	    birth="2612.6.14"
+	 	effect = { 
+			c_2072277 = {
+				ROOT = { set_real_father = PREV }
+			}
+		}
+	}
 	2618.10.22={
 	   death={
 	      death_reason=death_missing
@@ -1714,7 +1732,6 @@
 	religion=orthodox
 	culture=bulgarian
 	trait="bastard"
-	real_father=2072277
 	2612.6.14={birth=yes}
 	2649.7.1={
 	   death={
