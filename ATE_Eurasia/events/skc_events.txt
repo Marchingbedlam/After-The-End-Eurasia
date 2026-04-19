@@ -1460,3 +1460,151 @@ narrative_event = {
 		}
 	}
 }
+
+################# Pilgrimage
+
+
+narrative_event = { 
+	id = skc.110
+	desc = EVTDESC_SKC_110
+	title = EVTTITLE_SKC_110
+	picture = GFX_evt_soleil_royal_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { #Vandee
+		name = EVTOPTA_SKC_110
+		set_character_flag = go_to_vandee_soleil
+		narrative_event = { id = skc.111 days = 7 }
+	}
+	
+	option = { #Paris
+		name = EVTOPTB_SKC_110
+		set_character_flag = go_to_paris_soleil
+		narrative_event = { id = skc.111 days = 7 }
+	}
+	
+	option = { #Reims
+		name = EVTOPTC_SKC_110
+		set_character_flag = go_to_reims_soleil
+		narrative_event = { id = skc.111 days = 7 }
+	}
+	
+	option = { #Aachen
+		name = EVTOPTD_SKC_110
+		set_character_flag = go_to_aachen_soleil
+		narrative_event = { id = skc.111 days = 7 }
+	}
+}
+
+narrative_event = { #Go to Paris
+	id = skc.111
+	title = EVTTITLE_SKC_110
+	desc = {
+		text = EVTDESC_SKC_111_PARIS
+		picture = GFX_evt_soleil_royal_pilgrimage
+		trigger = { 
+			has_character_flag = go_to_paris_soleil
+		}
+	}
+	desc = {
+		text = EVTDESC_SKC_111_VANDEE
+		picture = GFX_evt_soleil_royal_pilgrimage
+		trigger = { 
+			has_character_flag = go_to_vandee_soleil
+		}
+	}
+	desc = {
+		text = EVTDESC_SKC_111_REIMS
+		picture = GFX_evt_soleil_royal_pilgrimage
+		trigger = { 
+			has_character_flag = go_to_reims_soleil
+		}
+	}
+	desc = {
+		text = EVTDESC_SKC_111_AACHEN
+		picture = GFX_evt_soleil_royal_pilgrimage
+		trigger = { 
+			has_character_flag = go_to_aachen_soleil
+		}
+	}
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_SKC_111
+		hidden_tooltip = {
+			add_trait = on_pilgrimage
+			set_character_flag = good_pilgrimage
+			narrative_event = { id = skc.112 days = 30 }
+		}
+		hidden_tooltip = {
+			random_list = {
+				5 = { character_event = { id = SoA.5031 days = 9 random = 10 } } # List that is always checked
+				5 = { character_event = { id = SoA.5032 days = 9 random = 10 } }
+				10 = { narrative_event = { id = SoA.5033 days = 9 random = 10 } }
+				10 = { character_event = { id = SoA.5034 days = 10 random = 10 } }
+				10 = { character_event = { id = SoA.5035 days = 8 random = 10 } }
+				10 = { character_event = { id = SoA.5036 days = 9 random = 10 } }
+				10 = { character_event = { id = SoA.5037 days = 10 random = 10 } }
+				5 = { character_event = { id = SoA.5038 days = 10 random = 10 } }
+				5 = { character_event = { id = SoA.5039 days = 8 random = 10 } }
+			}
+			random_list = {
+				5 = { character_event = { id = SoA.5031 days = 18 random = 10 } } # List that is always checked
+				5 = { character_event = { id = SoA.5032 days = 19 random = 10 } }
+				10 = { narrative_event = { id = SoA.5033 days = 20 random = 10 } }
+				10 = { character_event = { id = SoA.5034 days = 20 random = 10 } }
+				10 = { character_event = { id = SoA.5035 days = 19 random = 10 } }
+				10 = { character_event = { id = SoA.5036 days = 22 random = 10 } }
+				10 = { character_event = { id = SoA.5037 days = 21 random = 10 } }
+				5 = { character_event = { id = SoA.5038 days = 19 random = 10 } }
+				5 = { character_event = { id = SoA.5039 days = 18 random = 10 } }
+			}
+		}
+	}
+}
+
+narrative_event = { #Welcome
+	id = skc.112
+	title = EVTTITLE_SKC_111
+	desc = {
+		text = EVTDESC_SKC_112_PARIS
+		picture = GFX_evt_paris
+		trigger = { 
+			has_character_flag = go_to_paris_soleil
+		}
+	}
+	desc = {
+		text = EVTDESC_SKC_112_VANDEE
+		picture = GFX_evt_vandee
+		trigger = { 
+			has_character_flag = go_to_vandee_soleil
+		}
+	}
+	desc = {
+		text = EVTDESC_SKC_112_REIMS
+		picture = GFX_evt_reims
+		trigger = { 
+			has_character_flag = go_to_reims_soleil
+		}
+	}
+	desc = {
+		text = EVTDESC_SKC_112_AACHEN
+		picture = GFX_evt_aachen
+		trigger = { 
+			has_character_flag = go_to_aachen_soleil
+		}
+	}
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_SKC_112
+		hidden_tooltip = { character_event = { id = SoA.5055 days = 7 } }
+		clr_character_flag = go_to_paris_soleil
+		clr_character_flag= go_to_reims_soleil
+		clr_character_flag = go_to_vandee_soleil
+		clr_character_flag = go_to_aachen_soleil
+	}
+}

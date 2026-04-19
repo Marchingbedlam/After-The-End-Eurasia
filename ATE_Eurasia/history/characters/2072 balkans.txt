@@ -15,7 +15,7 @@
 			add_claim=c_euboea
 		}
 	2680.1.1={death=yes}
-}
+	}
 2072002={
 	name="Medon"
 	dynasty=20072070
@@ -29,7 +29,7 @@
 	trait=ambitious
 		2648.6.9={birth=yes}
 	2680.1.1={death=yes}
-}
+	}
 2072003={
 	name="Mardochaios"
 	dynasty=1821000
@@ -65,7 +65,7 @@
 	mother=2072004
 		2630.11.9={birth=yes}
 	2680.1.1={death=yes}
-}
+	}
 2072006={
 	name="Isaak"
 	dynasty=1821000
@@ -1323,6 +1323,7 @@
 	trait=patient
 	trait=chaste
 	trait=zealous
+	trait=saint
 	father=2072261
 	give_nickname=nick_the_saint
 	2485.7.17={birth=yes}
@@ -1330,9 +1331,6 @@
 	   add_trait="monk"
 	}
 	2562.6.18={death=yes}
-	2593.1.1={
-	   add_trait="saint"
-	}
 }
 
 2072263={ #First Son - Main Line of Bulgar Dynasty
@@ -1394,7 +1392,7 @@
 	trait="content"
 	trait="deceitful"
 	father=2072263
-	2532.7.11={birth=yes}
+	2521.7.11={birth=yes}
 	2576.9.24={
 	   death={
 	      death_reason=death_accident
@@ -1456,7 +1454,7 @@
 	trait=proud
 	father=2072264
 	2541.7.19={birth=yes}
-	2561.1.1={
+	2559.1.1={
 	   add_spouse=2072268
 	}
 	2579.9.10={
@@ -1557,7 +1555,7 @@
 	father=2072270
 	mother=2072272
 	2608.4.11={ 
-	    birth=yes
+	    birth="2608.4.11"
 	 	effect = { 
 			c_2072277 = {
 				ROOT = { set_real_father = PREV }
@@ -1579,7 +1577,7 @@
 	father=2072270
 	mother=2072272
 	2612.6.14={ 
-	    birth=yes
+	    birth="2612.6.14"
 	 	effect = { 
 			c_2072277 = {
 				ROOT = { set_real_father = PREV }
