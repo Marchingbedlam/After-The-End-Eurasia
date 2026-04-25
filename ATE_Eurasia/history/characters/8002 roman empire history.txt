@@ -712,7 +712,7 @@
 	trait="legendary"
 	disallow_random_traits=yes
 	752.1.1={birth=yes}
-	800.1.1={death=yes}
+	802.1.1={death=yes}
 }
 
 8002049={ 
@@ -2360,4 +2360,360 @@
 	father=8002053
 	2358.11.28={birth=yes}
 	2399.8.3={death=yes}
+}
+
+######## Byzantine Emperors
+
+8002155={
+	name="Nikephoros"
+	occluded=yes
+	dynasty=7534208
+	religion=orthodox
+	culture=greek
+	trait="legendary"
+	disallow_random_traits=yes
+	765.1.1={birth=yes}
+	813.1.1={
+	  death={
+	    death_reason=death_murder
+		killer=8002156
+	  }
+	}
+}
+
+8002156={
+	name="Michalis"
+	occluded=yes
+	dynasty=7534209
+	religion=iconoclast
+	culture=greek
+	trait="legendary"
+	disallow_random_traits=yes
+	770.1.1={birth=yes}
+	829.1.1={death=yes}
+}
+
+8002157={
+	name="Theophilus"
+	occluded=yes
+	dynasty=7534209
+	religion=iconoclast
+	culture=greek
+	trait="legendary"
+	disallow_random_traits=yes
+	father=8002156
+	813.1.1={birth=yes}
+	842.1.1={death=yes}
+}
+
+8002158={
+	name="Michalis"
+	occluded=yes
+	dynasty=7534209
+	religion=orthodox
+	culture=greek
+	trait="legendary"
+	trait="drunkard"
+	disallow_random_traits=yes
+	father=8002157
+	839.1.1={birth=yes}
+	867.1.1={death=yes}
+}
+
+8002159={
+	name="Vasil"
+	occluded=yes
+	dynasty=7534210
+	religion=orthodox
+	culture=makedonian
+	trait="legendary"
+	disallow_random_traits=yes
+	811.1.1={birth=yes}
+	886.1.1={death=yes}
+}
+
+8002160={
+	name="Leon"
+	occluded=yes
+	dynasty=7534210
+	religion=orthodox
+	culture=makedonian
+	trait="legendary"
+	disallow_random_traits=yes
+	father=8002159
+	866.1.1={birth=yes}
+	913.1.1={death=yes}
+}
+
+8002161={
+	name="Konstantinos"
+	occluded=yes
+	dynasty=7534210
+	religion=orthodox
+	culture=greek
+	trait="legendary"
+	trait="bastard"
+	disallow_random_traits=yes
+	father=8002160
+	905.1.1={birth=yes}
+	963.1.1={death=yes}
+}
+
+8002162={
+	name="Nikephoros"
+	occluded=yes
+	dynasty=7534211
+	religion=orthodox
+	culture=greek
+	trait="legendary"
+	trait="saint"
+	disallow_random_traits=yes
+	912.1.1={birth=yes}
+	969.1.1={
+	  death={
+	     death_reason=death_murder
+		 killer=8002163
+	  }
+	}
+}
+
+8002163={
+	name="Ioannis"
+	occluded=yes
+	dynasty=7534212
+	religion=orthodox
+	culture=greek
+	trait="legendary"
+	disallow_random_traits=yes
+	925.1.1={birth=yes}
+	976.1.1={death=yes}
+}
+
+8002164={
+	name="Basil"
+	occluded=yes
+	dynasty=7534210
+	religion=orthodox
+	culture=greek
+	trait="legendary"
+	disallow_random_traits=yes
+	father=8002161
+	958.1.1={birth=yes}
+	1025.1.1={death=yes}
+}
+
+8002165={
+	name="Konstantinos"
+	occluded=yes
+	dynasty=7534210
+	religion=orthodox
+	culture=greek
+	trait="legendary"
+	disallow_random_traits=yes
+	father=8002161
+	960.1.1={birth=yes}
+	1028.1.1={death=yes}
+}
+
+8002166={
+	name="Theodora Zoe"
+	female=yes
+	occluded=yes
+	dynasty=7534210
+	religion=orthodox
+	culture=greek
+	trait="legendary"
+	disallow_random_traits=yes
+	father=8002165
+	978.1.1={birth=yes}
+	1059.1.1={death=yes}
+}
+
+8002167={
+	name="Konstantinos"
+	occluded=yes
+	dynasty=7534213
+	religion=orthodox
+	culture=greek
+	trait="legendary"
+	disallow_random_traits=yes
+	1000.1.1={birth=yes}
+	1081.1.1={death=yes}
+}
+
+8002168={
+	name="Alexis"
+	occluded=yes
+	dynasty=7534214
+	religion=orthodox
+	culture=greek
+	trait="legendary"
+	disallow_random_traits=yes
+	1048.1.1={birth=yes}
+	1118.1.1={death=yes}
+}
+
+8002169={
+	name="Ioannis"
+	occluded=yes
+	dynasty=7534214
+	religion=orthodox
+	culture=greek
+	trait="legendary"
+	disallow_random_traits=yes
+	father=8002168
+	1087.1.1={birth=yes}
+	1143.1.1={death=yes}
+}
+
+8002170={
+	name="Manouēl"
+	occluded=yes
+	dynasty=7534214
+	religion=orthodox
+	culture=greek
+	trait="legendary"
+	disallow_random_traits=yes
+	father=8002169
+	1118.1.1={birth=yes}
+	1185.1.1={death=yes}
+}
+
+8002171={
+	name="Isaák"
+	occluded=yes
+	dynasty=7534214
+	religion=orthodox
+	culture=greek
+	trait="legendary"
+	disallow_random_traits=yes
+	father=8002170
+	1156.1.1={birth=yes}
+	1203.1.1={
+	   death={
+	      death_reason=death_battle
+		  killer=8002172
+	   }
+	}
+}
+
+8002172={
+	name="Alexis"
+	occluded=yes
+	dynasty=7534214
+	religion=orthodox
+	culture=greek
+	trait="legendary"
+	disallow_random_traits=yes
+	father=8002171
+	1182.1.1={birth=yes}
+	1204.1.1={
+	   death={
+	      death_reason=death_murder
+	   }
+	}
+}
+
+8002173={
+	name="Theodoros"
+	occluded=yes
+	dynasty=7534215
+	religion=orthodox
+	culture=greek
+	trait="legendary"
+	disallow_random_traits=yes
+	1174.1.1={birth=yes}
+	1222.1.1={death=yes}
+}
+
+8002174={
+	name="Ioannis"
+	occluded=yes
+	dynasty=7534215
+	religion=orthodox
+	culture=greek
+	trait="legendary"
+	trait="saint"
+	disallow_random_traits=yes
+	father=8002173
+	1192.1.1={birth=yes}
+	1254.1.1={death=yes}
+}
+
+8002175={
+	name="Michalis"
+	occluded=yes
+	dynasty=7534216
+	religion=orthodox
+	culture=greek
+	trait="legendary"
+	disallow_random_traits=yes
+	father=8002173
+	1225.1.1={birth=yes}
+	1302.1.1={death=yes}
+}
+
+8002176={
+	name="Andronikos"
+	occluded=yes
+	dynasty=7534216
+	religion=orthodox
+	culture=greek
+	trait="legendary"
+	disallow_random_traits=yes
+	father=8002175
+	1270.1.1={birth=yes}
+	1341.1.1={death=yes}
+}
+
+8002177={
+	name="Ioannis"
+	occluded=yes
+	dynasty=7534216
+	religion=orthodox
+	culture=greek
+	trait="legendary"
+	disallow_random_traits=yes
+	father=8002176
+	1332.1.1={birth=yes}
+	1391.1.1={death=yes}
+}
+
+8002178={
+	name="Manouēl"
+	occluded=yes
+	dynasty=7534216
+	religion=orthodox
+	culture=greek
+	trait="legendary"
+	disallow_random_traits=yes
+	father=8002177
+	1350.1.1={birth=yes}
+	1425.1.1={death=yes}
+}
+
+8002179={
+	name="Konstantinos"
+	occluded=yes
+	dynasty=7534216
+	religion=orthodox
+	culture=greek
+	trait="legendary"
+	disallow_random_traits=yes
+	father=8002178
+	1405.1.1={birth=yes}
+	1453.1.1={death=yes}
+}
+
+8002180={
+	name="Ioannis"
+	occluded=yes
+	dynasty=7534217
+	religion=orthodox
+	culture=greek
+	trait="legendary"
+	trait="monk"
+	disallow_random_traits=yes
+	1295.1.1={birth=yes}
+	1383.1.1={death=yes}
 }

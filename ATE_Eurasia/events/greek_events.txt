@@ -1,0 +1,630 @@
+namespace = greek
+
+character_event = {
+	id = greek.1
+	desc = EVTDESC_greek_1
+	picture = GFX_evt_rundown_greek_temple
+	border = GFX_event_normal_frame_religion
+	religion = neoplatonist
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_greek_1
+		add_character_modifier = { name = neoplatonist_zeus duration = -1 }
+	}
+
+	option = {
+		name = EVTOPTB_greek_1
+		add_character_modifier = { name = neoplatonist_hera duration = -1 }
+	}
+	
+	option = {
+		name = EVTOPTC_greek_1
+		add_character_modifier = { name = neoplatonist_hermes duration = -1 }
+	}
+	
+	option = {
+		name = EVTOPTD_greek_1
+		character_event = { id = greek.2 }
+	}
+}
+
+character_event = {
+	id = greek.2
+	desc = EVTDESC_greek_1
+	picture = GFX_evt_rundown_greek_temple
+	border = GFX_event_normal_frame_religion
+	religion = neoplatonist
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_greek_2
+		add_character_modifier = { name = neoplatonist_apollo duration = -1 }
+	}
+
+	option = {
+		name = EVTOPTB_greek_2
+		add_character_modifier = { name = neoplatonist_hephaestus duration = -1 }
+	}
+	
+	option = {
+		name = EVTOPTC_greek_2
+		add_character_modifier = { name = neoplatonist_hades duration = -1 }
+	}
+	
+	option = {
+		name = EVTOPTD_greek_1
+		character_event = { id = greek.3 }
+	}
+}
+
+character_event = {
+	id = greek.3
+	desc = EVTDESC_greek_1
+	picture = GFX_evt_rundown_greek_temple
+	border = GFX_event_normal_frame_religion
+	religion = neoplatonist
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_greek_3
+		add_character_modifier = { name = neoplatonist_demeter duration = -1 }
+	}
+
+	option = {
+		name = EVTOPTB_greek_3
+		add_character_modifier = { name = neoplatonist_dionysus duration = -1 }
+	}
+	
+	option = {
+		name = EVTOPTC_greek_3
+		add_character_modifier = { name = neoplatonist_unknown_god duration = -1 }
+	}
+	
+	option = {
+		name = EVTOPTD_greek_1
+		character_event = { id = greek.4 }
+	}
+}
+
+character_event = {
+	id = greek.4
+	desc = EVTDESC_greek_1
+	picture = GFX_evt_rundown_greek_temple
+	border = GFX_event_normal_frame_religion
+	religion = neoplatonist
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_greek_4
+		add_character_modifier = { name = neoplatonist_athena duration = -1 }
+	}
+
+	option = {
+		name = EVTOPTB_greek_4
+		add_character_modifier = { name = neoplatonist_artemis duration = -1 }
+	}
+	
+	option = {
+		name = EVTOPTD_greek_1
+		character_event = { id = greek.1 }
+	}
+}
+
+narrative_event = {
+	id = greek.5
+	title = EVTNAME_greek_5
+	desc = EVTDESC_greek_5
+	picture = GFX_evt_rundown_greek_temple
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = EVTOPTA_greek_5
+		trigger = { has_landed_title = e_byzantium }
+	}
+}
+
+character_event = {
+	id = greek.6
+	desc = EVTDESC_greek_6
+	picture = GFX_evt_philosophers
+	is_triggered_only = yes
+	major = yes
+	
+	immediate = {
+	  	add_character_modifier = {
+			name = read_philisoph_timer
+			duration = 1825
+			hidden = yes
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_greek_6
+		random_list = {
+		   40 = {
+		      custom_tooltip = { text = reading_neoplaton_success }
+			  hidden_tooltip = { character_event = { id = greek.7 } }
+		   }
+		   40 = {
+		      custom_tooltip = { text = reading_neoplaton_normal }
+			  hidden_tooltip = { character_event = { id = greek.8 } }
+		   }
+		   20 = {
+		      custom_tooltip = { text = reading_neoplaton_fail }
+			  hidden_tooltip = { character_event = { id = greek.9 } }
+		   }
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_greek_6
+		random_list = {
+		   20 = {
+		      custom_tooltip = { text = reading_neoplaton_success }
+			  hidden_tooltip = { character_event = { id = greek.7 } }
+		   }
+		   50 = {
+		      custom_tooltip = { text = reading_neoplaton_normal }
+			  hidden_tooltip = { character_event = { id = greek.8 } }
+		   }
+		   30 = {
+		      custom_tooltip = { text = reading_neoplaton_fail }
+			  hidden_tooltip = { character_event = { id = greek.9 } }
+		   }
+		}
+	}
+	
+	option = {
+		name = EVTOPTC_greek_6
+		hidden_tooltip = {
+		random_list = {
+		   10 = {
+		     character_event = { id = greek.7 }
+		   }
+		   50 = {
+		     character_event = { id = greek.8 }
+		   }
+		   40 = {
+		     character_event = { id = greek.9 }
+		   }
+		}
+		}
+	}
+	
+	option = {
+		name = EVTOPTD_greek_6
+		random_list = {
+		   20 = {
+		      custom_tooltip = { text = reading_neoplaton_success }
+			  hidden_tooltip = { character_event = { id = greek.7 } character_event = { id = greek.10 } }
+		   }
+		   50 = {
+		      custom_tooltip = { text = reading_neoplaton_normal }
+			  hidden_tooltip = { character_event = { id = greek.8 } character_event = { id = greek.10 } }
+		   }
+		   30 = {
+		      custom_tooltip = { text = reading_neoplaton_fail }
+			  hidden_tooltip = { character_event = { id = greek.9 } }
+		   }
+		}
+		hidden_tooltip = {
+		   #character_event = { id = greek.10 }
+		}
+	}
+}
+
+character_event = {
+	id = greek.7
+	desc = EVTDESC_greek_7
+	picture = GFX_evt_philosophers
+	border = GFX_event_normal_frame_religion
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_greek_7
+		piety = 100
+		random_list = {
+		   30 = {
+		       ROOT = { 
+		         change_learning = 2
+			   }
+		   }
+		   40 = {
+		       ROOT = { 
+		         change_learning = 1
+			   }
+		   }
+		   30 = { }
+		}
+	}
+}
+
+character_event = {
+	id = greek.8
+	desc = EVTDESC_greek_8
+	picture = GFX_evt_philosophers
+	border = GFX_event_normal_frame_religion
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_greek_7
+		piety = 50
+		random_list = {
+		   10 = {
+		       ROOT = { 
+		         change_learning = 2
+			   }
+		   }
+		   30 = {
+		       ROOT = { 
+		         change_learning = 1
+			   }
+		   }
+		   60 = { }
+		}
+	}
+}
+
+character_event = {
+	id = greek.9
+	desc = EVTDESC_greek_9
+	picture = GFX_evt_philosophers
+	border = GFX_event_normal_frame_religion
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_greek_9
+		piety = -50
+		random_list = {
+		   10 = {
+		       ROOT = { 
+		         change_learning = -2
+			   }
+		   }
+		   30 = {
+		       ROOT = { 
+		         change_learning = -1
+			   }
+		   }
+		   60 = { }
+		}
+	}
+}
+
+character_event = {
+	id = greek.10
+	desc = EVTDESC_greek_10
+	picture = GFX_evt_philosophers
+	border = GFX_event_normal_frame_religion
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_greek_10
+		add_trait="sympathy_christendom"
+	}
+	
+	option = {
+		name = EVTOPTB_greek_10
+		piety = 10
+	}
+}
+
+character_event = {
+	id = greek.11
+	desc = EVTDESC_greek_11
+	picture = GFX_evt_greek_mysteries
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_greek_11
+		add_character_modifier = {
+			name = eleusian_mysteries
+			duration = 320
+			hidden = yes
+		}
+		narrative_event = { id = greek.12 days = 7 }
+	}
+}
+
+narrative_event = {
+	id = greek.12
+	title = EVTNAME_greek_12
+	desc = EVTDESC_greek_12
+	picture = GFX_evt_greek_mysteries
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_greek_12
+		narrative_event = { id = greek.13 days = 1 }
+	}
+}
+
+narrative_event = {
+	id = greek.13
+	title = EVTNAME_greek_13
+	desc = EVTDESC_greek_13
+	picture = GFX_evt_greek_mysteries
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_greek_13
+		ai_chance = { 
+		  factor = 1
+		  
+		}
+		narrative_event = { id = greek.14 days = 1 }
+	}
+	
+	option = {
+		name = EVTOPTB_greek_13
+		piety = -50
+		narrative_event = { id = greek.14 days = 1 }
+	}
+}
+
+narrative_event = {
+	id = greek.14
+	title = EVTNAME_greek_14
+	desc = EVTDESC_greek_14
+	picture = GFX_evt_greek_mysteries
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_greek_14
+		narrative_event = { id = greek.15 days = 1 }
+	}
+}
+
+narrative_event = {
+	id = greek.15
+	title = EVTNAME_greek_15
+	desc = EVTDESC_greek_15
+	picture = GFX_evt_greek_mysteries
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_greek_15
+		narrative_event = { id = greek.16 days = 1 }
+	}
+}
+
+narrative_event = {
+	id = greek.16
+	title = EVTNAME_greek_16
+	desc = EVTDESC_greek_16
+	picture = GFX_evt_greek_mysteries
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_greek_16
+		narrative_event = { id = greek.17 days = 1 }
+	}
+}
+
+narrative_event = {
+	id = greek.17
+	title = EVTNAME_greek_17
+	desc = EVTDESC_greek_17
+	picture = GFX_evt_greek_mysteries
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_greek_17
+		hidden_tooltip = {
+		  random_list = {
+		    99 = { narrative_event = { id = greek.20 } }
+			1 = { narrative_event = { id = greek.21 } }
+		  }
+		}
+	}
+	option = {
+		name = EVTOPTB_greek_17
+		ai_chance = {
+		   factor = 10
+		}
+		narrative_event = { id = greek.18 }
+	}
+	option = {
+		name = EVTOPTC_greek_17
+		trigger = {
+		   OR = {
+		      trait="genius"
+			  trait="quick"
+			  trait="deceitful"
+		   }
+		}
+		narrative_event = { id = greek.19 }
+	}
+}
+
+narrative_event = {
+	id = greek.18
+	title = EVTNAME_greek_18
+	desc = EVTDESC_greek_18
+	picture = GFX_evt_greek_mysteries
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_greek_18
+		piety=-300
+		random_list = {
+		   10 = { add_trait="cynical" }
+		   5 = { add_trait="sympathy_christendom" }
+		   5 = { add_trait="sympathy_islam" }
+		   5 = { add_trait="sympathy_judaism" }
+		   5 = { add_trait="sympathy_old_world_cults" }
+		   70 = { }
+		}
+		clr_character_flag = recent_minor_decision
+		clr_character_flag = do_not_disturb
+	}
+}
+
+narrative_event = {
+	id = greek.19
+	title = EVTNAME_greek_19
+	desc = EVTDESC_greek_19
+	picture = GFX_evt_greek_mysteries
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_greek_19
+		random_list = {
+		   20 = { add_trait="cynical" }
+		   20 = { add_trait="sympathy_christendom" }
+		   20 = { add_trait="sympathy_islam" }
+		   20 = { add_trait="sympathy_judaism" }
+		   20 = { add_trait="sympathy_old_world_cults" }
+		}
+		random_list = {
+		   50 = { }
+		   15 = { add_trait="depression" }
+		   35 = { add_trait="stressed" }
+		}
+		clr_character_flag = recent_minor_decision
+		clr_character_flag = do_not_disturb
+	}
+}
+
+narrative_event = {
+	id = greek.20
+	title = EVTNAME_greek_20
+	desc = EVTDESC_greek_20
+	picture = GFX_evt_greek_mysteries
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_greek_20
+		piety=300
+		clr_character_flag = recent_minor_decision
+		clr_character_flag = do_not_disturb
+	}
+}
+
+narrative_event = {
+	id = greek.21
+	title = EVTNAME_greek_20
+	desc = EVTDESC_greek_21
+	picture = GFX_evt_greek_mysteries
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_greek_21
+		piety=1000
+		death = { death_reason = death_during_eleusian_mysteria }
+	}
+}
+
+character_event = {
+	id = greek.22
+	desc = EVTDESC_greek_22
+	picture = GFX_evt_kourbania
+	is_triggered_only = yes
+	
+		
+	immediate = {
+	  	add_character_modifier = {
+			name = kourbania_timer
+			duration = 1825
+			hidden = yes
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_greek_22
+		wealth=-5
+		character_event = { id = greek.26 }
+	}
+	
+	option = {
+		name = EVTOPTB_greek_22
+		wealth=-10
+		character_event = { id = greek.25 }
+	}
+	
+	option = {
+		name = EVTOPTC_greek_22
+		wealth=-15
+		character_event = { id = greek.24 }
+	}
+	
+	option = {
+		name = EVTOPTD_greek_22
+		wealth=-20
+		character_event = { id = greek.23 }
+	}
+}
+
+character_event = {
+	id = greek.23
+	desc = EVTDESC_greek_23
+	picture = GFX_evt_kourbania
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_greek_23
+		piety=10
+	}
+}
+
+character_event = {
+	id = greek.24
+	desc = EVTDESC_greek_24
+	picture = GFX_evt_kourbania
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_greek_23
+		piety=20
+	}
+}
+
+character_event = {
+	id = greek.25
+	desc = EVTDESC_greek_25
+	picture = GFX_evt_kourbania
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_greek_23
+		piety=50
+	}
+}
+
+character_event = {
+	id = greek.26
+	desc = EVTDESC_greek_26
+	picture = GFX_evt_kourbania
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_greek_23
+		piety=80
+	}
+}

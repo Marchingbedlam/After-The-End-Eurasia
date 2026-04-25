@@ -1,0 +1,266 @@
+decisions = {
+	
+	restore_byzantine_empire = {
+	    ai=no
+		
+		potential = {
+			is_alternate_start = no
+			has_global_flag = iamtester
+			NOT = {
+				has_game_rule = {
+					name = empire_decisions
+					value = off
+				}
+			}
+			NOT = { has_global_flag = byzantium_unified }
+			OR = { 
+			   religion = orthodox
+			   religion = antipalamite
+			   religion = oldcalendarist
+			   religion = nekromante
+			   religion = neoplatonist
+			}
+			independent = yes
+			OR = { 
+			   culture_group = hellenic
+			   culture_group = south_slavic
+			}
+			is_playable = yes
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		allow = {
+			is_adult = yes
+			war = no
+			prestige = 1000
+			wealth = 1000
+			completely_controls = k_greece
+			completely_controls = k_ege
+			completely_controls = k_cyprus
+		}
+		
+		effect = {
+		    wealth = -1000
+			if = {
+				limit = { has_nickname = no }
+				give_nickname = nick_the_restorer
+			}
+			activate_title = { title = e_byzantium status = yes }
+			primary_title = {
+				e_byzantium = {
+					grant_title = ROOT
+					copy_title_laws = PREV
+				}
+			}
+			set_global_flag = byzantium_unified
+			hidden_tooltip = {
+				k_greece = {
+					de_jure_liege = e_byzantium
+				}
+				k_ege = {
+					de_jure_liege = e_byzantium
+				}
+				k_cyprus = {
+					de_jure_liege = e_byzantium
+				}
+			}
+			hidden_tooltip = {
+				e_balkans = {
+					destroy_landed_title = THIS
+				}
+			}
+			narrative_event = { id = greek.5 }		
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+	}
+	
+	#change_neoplatonist_branch = {
+		#ai = no
+		
+		#potential = {
+			#religion = neoplatonist
+			#is_playable = yes
+			#NOT = {
+				#has_alternate_start_parameter = { key = religion_names value = random }
+			#}
+		#}
+		
+		#allow = {
+			#religion = neoplatonist
+			#is_playable = yes
+			#piety = 50
+		#}
+		
+		#effect = {
+		    #piety = -50
+			#character_event = { id = greek.1 }		
+			#hidden_tooltip = {
+			   #remove_character_modifier = neoplatonist_artemis
+			   #remove_character_modifier = neoplatonist_athena
+			   #remove_character_modifier = neoplatonist_unknown_god
+			   #remove_character_modifier = neoplatonist_dionysus
+			   #remove_character_modifier = neoplatonist_demeter
+			   #remove_character_modifier = neoplatonist_hades
+			   #remove_character_modifier = neoplatonist_hephaestus
+			   #remove_character_modifier = neoplatonist_apollo
+			   #remove_character_modifier = neoplatonist_hermes
+			   #remove_character_modifier = neoplatonist_hera
+			   #remove_character_modifier = neoplatonist_zeus
+			#}
+		#}
+		
+		#revoke_allowed = {
+			#always = no
+		#}
+	#}
+		
+	read_philosoph = {
+		ai = no
+		
+		potential = {
+			religion = neoplatonist
+			is_playable = yes
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+			NOT = { has_character_modifier = read_philisoph_timer }
+		}
+		
+		allow = {
+			religion = neoplatonist
+			is_playable = yes
+			piety = 50
+		}
+		
+		effect = {
+			character_event = { id = greek.6 }		
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+	}
+	
+	celebrate_eleusinian_mysteries = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 3
+		potential = {
+			is_playable = yes
+			is_adult = yes
+			prisoner = no
+			religion = neoplatonist
+			NOT = { has_character_modifier = held_eleusinian_mysteries_timer }
+			NOT = { has_character_flag = holding_eleusinian_mysteries }
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		allow = {
+			war = no
+			custom_tooltip = {
+				text = UNOCCUPIED_DEMESNE_TITLE
+				hidden_tooltip = {
+					any_demesne_title = {
+						NOT = { higher_tier_than = count }
+						is_occupied = no
+					}
+				}
+			}
+			month = 1
+			NOT = { month = 3 }
+			wealth = 50
+			prisoner = no
+			NOT = { is_inaccessible_trigger = yes }
+			custom_tooltip = {
+				text = is_not_busy_trigger_tooltip
+				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+			NOT = { has_character_modifier = eleusian_mysteries_made }
+		}
+		effect = {
+			wealth = -50
+			set_character_flag = recent_minor_decision
+			set_character_flag = do_not_disturb
+			hidden_tooltip = { 
+					character_event = { id = greek.11 } 
+			}
+			if = {
+				limit = {
+					has_dlc = "Reapers"
+				}
+				custom_tooltip = {
+					text = capital_prospers_custom_tooltip
+					hidden_tooltip = {
+						capital_scope = {
+							change_variable = { which = prosperity_value value = 8 }
+						}
+					}
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOT = {
+					wealth = 300
+				}
+			}
+			modifier = {
+				factor = 0
+				trait = shy
+			}
+			modifier = {
+				factor = 0
+				NOT = { diplomacy = 10 }
+			}	
+			modifier = {
+				factor = 0
+				has_character_flag = recent_minor_decision
+				NOT = {
+					had_character_flag = {
+						flag = recent_minor_decision
+						days = 730
+					}
+				}
+			}
+		}
+	}
+	
+	make_kourbania = {
+		ai = no
+		
+		potential = {
+			religion = nekromante
+			is_playable = yes
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+			NOT = { has_character_modifier = kourbania_timer }
+		}
+		
+		allow = {
+			religion = nekromante
+			is_playable = yes
+			wealth=20
+		}
+		
+		effect = {
+			character_event = { id = greek.22 }		
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+	}
+}

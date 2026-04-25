@@ -1641,4 +1641,24 @@ spriteTypes = {
 		name = "GFX_celebrate_victory_day"
 		textureFile = "gfx\\interface\\decision_icon_change_workers_saint.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_change_neoplatonist_branch"
+		textureFile = "gfx\\interface\\decision_icon_neoplatonist_branch.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_celebrate_read_philosoph"
+		textureFile = "gfx\\interface\\decision_icon_build_observatory.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_change_become_solarque"
+		textureFile = "gfx\\interface\\become_solarque.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_celebrate_eleusinian_mysteries"
+		textureFile = "gfx\\interface\\decision_icon_invite_holy_ascetic.dds"
+	}
 }

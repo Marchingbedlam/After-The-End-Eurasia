@@ -1181,7 +1181,7 @@ christian = {
 		icon = 41
 		heresy_icon = 42
 		
-		color = { 0.9 0.9 0.7 }
+		color = { 0.8 0.8 0.9 }
 
 		parent = catholic
 		
@@ -3000,10 +3000,10 @@ scholastic = {
 		
 		interface_skin = { taoist_interface indian_interface muslim_interface }
 		
-		high_god_name = GOD_ZEUS
+		high_god_name = GOD_MONAD
 		
 		god_names = {
-			GOD_THE_FATHER GOD_POSEIDON GOD_HERA GOD_KRONOS GOD_PLUTO GOD_DIONYSOS GOD_APOLLO GOD_ARTEMIS GOD_ATHENA GOD_PLATO GOD_ZOROASTER
+		    GOD_MONAD GOD_THE_FATHER GOD_UNKNOWN_GOD GOD_ARETE GOD_PROMETHEUS GOD_APOLLO GOD_DIONYSOS GOD_DEMETER GOD_ATHENA GOD_ARTEMIS GOD_THANATOS GOD_PLATO GOD_ZOROASTER
 		}
 		
 		evil_god_names = {
@@ -3011,6 +3011,7 @@ scholastic = {
 		}
 		
 		can_grant_divorce = yes
+		female_temple_holders = yes
 		priests_can_inherit = yes
 		priests_can_marry = yes
 		allow_rivermovement = yes

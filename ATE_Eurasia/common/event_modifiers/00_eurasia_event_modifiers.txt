@@ -373,3 +373,85 @@ pravoslavie_ask_fertility = {
 held_victory_day_timer = {
 	icon = 11
 }
+read_philisoph_timer = {
+	icon = 11
+}
+eleusian_mysteries_made = {
+	icon = 11
+}
+kourbania_timer = {
+	icon = 11
+}
+neoplatonist_zeus = {
+	icon = 2
+	local_revolt_risk = -0.1
+	land_morale = 0.1
+	monthly_character_piety = 0.2
+}
+neoplatonist_hera = {
+	icon = 2
+	intrigue = 1
+	plot_power_modifier = 0.1
+	monthly_character_piety = 0.2
+}
+neoplatonist_hermes = {
+	icon = 2
+	local_tax_modifier = 0.05
+	city_tax_modifier = 0.01
+	monthly_character_piety = 0.2
+}
+neoplatonist_apollo = {
+	icon = 2
+	poet_opinion = 5
+	tech_growth_modifier_culture = 0.1
+	monthly_character_piety = 0.2
+}
+neoplatonist_hephaestus = {
+	icon = 2
+	hunchback_opinion = 5
+	dwarf_opinion = 5
+	inbred_opinion = 5
+	monthly_character_piety = 0.2
+}
+neoplatonist_hades = {
+	icon = 2
+	intrigue = 1
+	defensive_plot_power_modifier = 0.1
+	monthly_character_piety = 0.2
+}
+neoplatonist_demeter = {
+	icon = 2
+	stewardship = 1
+	health = 1
+	administrator_opinion = 5
+	monthly_character_piety = 0.2
+}
+neoplatonist_dionysus = {
+	icon = 2
+	fertility = 0.1
+	drunkard_opinion = 5
+	poet_opinion = 5
+	falconer_opinion = 5
+	monthly_character_piety = 0.2
+}
+neoplatonist_unknown_god = {
+	icon = 2
+	monthly_character_piety = 0.2
+	pagan_group_opinion = 10
+	christian_opinion = 5
+	zoroastrian_group_opinion = 5
+}
+neoplatonist_athena = {
+	icon = 2
+	martial = 1
+	land_morale = 0.20
+	combat_rating = 5
+	monthly_character_piety = 0.2
+}
+neoplatonist_artemis = {
+	icon = 2
+	global_revolt_risk = -0.1
+	city_tax_modifier = 0.05
+	falconer_opinion=10
+	monthly_character_piety = 0.2
+}
