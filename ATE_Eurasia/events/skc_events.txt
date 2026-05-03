@@ -1463,7 +1463,6 @@ narrative_event = {
 
 ################# Pilgrimage
 
-
 narrative_event = { 
 	id = skc.110
 	desc = EVTDESC_SKC_110
@@ -1540,26 +1539,26 @@ narrative_event = { #Go to Paris
 		}
 		hidden_tooltip = {
 			random_list = {
-				5 = { character_event = { id = SoA.5031 days = 9 random = 10 } } # List that is always checked
-				5 = { character_event = { id = SoA.5032 days = 9 random = 10 } }
-				10 = { narrative_event = { id = SoA.5033 days = 9 random = 10 } }
-				10 = { character_event = { id = SoA.5034 days = 10 random = 10 } }
-				10 = { character_event = { id = SoA.5035 days = 8 random = 10 } }
-				10 = { character_event = { id = SoA.5036 days = 9 random = 10 } }
-				10 = { character_event = { id = SoA.5037 days = 10 random = 10 } }
-				5 = { character_event = { id = SoA.5038 days = 10 random = 10 } }
-				5 = { character_event = { id = SoA.5039 days = 8 random = 10 } }
+				10 = { character_event = { id = skc.138 days = 9 random = 10 } } # List that is always checked
+				10 = { character_event = { id = skc.135 days = 9 random = 10 } }
+				10 = { narrative_event = { id = skc.129 days = 9 random = 10 } }
+				10 = { character_event = { id = skc.126 days = 10 random = 10 } }
+				10 = { character_event = { id = skc.125 days = 8 random = 10 } }
+				10 = { character_event = { id = skc.124 days = 9 random = 10 } }
+				10 = { character_event = { id = skc.123 days = 10 random = 10 } }
+				10 = { character_event = { id = skc.120 days = 10 random = 10 } }
+				10 = { character_event = { id = skc.113 days = 8 random = 10 } }
 			}
 			random_list = {
-				5 = { character_event = { id = SoA.5031 days = 18 random = 10 } } # List that is always checked
-				5 = { character_event = { id = SoA.5032 days = 19 random = 10 } }
-				10 = { narrative_event = { id = SoA.5033 days = 20 random = 10 } }
-				10 = { character_event = { id = SoA.5034 days = 20 random = 10 } }
-				10 = { character_event = { id = SoA.5035 days = 19 random = 10 } }
-				10 = { character_event = { id = SoA.5036 days = 22 random = 10 } }
-				10 = { character_event = { id = SoA.5037 days = 21 random = 10 } }
-				5 = { character_event = { id = SoA.5038 days = 19 random = 10 } }
-				5 = { character_event = { id = SoA.5039 days = 18 random = 10 } }
+				10 = { character_event = { id = skc.138 days = 18 random = 10 } } # List that is always checked
+				10 = { character_event = { id = skc.135 days = 19 random = 10 } }
+				10 = { narrative_event = { id = skc.129 days = 20 random = 10 } }
+				10 = { character_event = { id = skc.126 days = 20 random = 10 } }
+				10 = { character_event = { id = skc.125 days = 19 random = 10 } }
+				10 = { character_event = { id = skc.124 days = 22 random = 10 } }
+				10 = { character_event = { id = skc.123 days = 21 random = 10 } }
+				10 = { character_event = { id = skc.120 days = 19 random = 10 } }
+				10 = { character_event = { id = skc.113 days = 18 random = 10 } }
 			}
 		}
 	}
@@ -1606,5 +1605,764 @@ narrative_event = { #Welcome
 		clr_character_flag= go_to_reims_soleil
 		clr_character_flag = go_to_vandee_soleil
 		clr_character_flag = go_to_aachen_soleil
+	}
+}
+
+narrative_event = { 
+	id = skc.113
+	title = EVTTITLE_SKC_113
+	desc = EVTDESC_SKC_113
+	
+	picture = GFX_evt_soleil_royal_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { #Brave movement
+		name = EVTOPTA_SKC_113
+		trigger = {
+		  NOT = {
+		    diplomacy > 14
+			trait="grey_eminence"
+			trait="charismatic_negotiator"
+			trait="master_seductress"
+			trait="master_seducer"
+			trait="socializer"
+		  }
+		}
+		prestige=20
+		random_list = {
+		   10 = { add_trait="brave" }
+		   20 = { add_trait="honest" }
+		   70 = { }
+		}
+		hidden_tooltip = {
+		   character_event = { id = skc.114 }
+		   random_list = {
+		   	  30 = { narrative_event = { id = skc.115 days = 3200 } } #Fail and sad life
+		      25 = { narrative_event = { id = skc.116 days = 3200 } } #Fail, but better life
+			  25 = { narrative_event = { id = skc.117 days = 3200 } } #Success, but sad life
+			  10 = { narrative_event = { id = skc.118 days = 3200 } } #Success and better life
+			  10 = { }
+		   }
+		}
+	}
+	
+	option = { #Diplomatic movement
+		name = EVTOPTE_SKC_113
+		trigger = {
+		  OR = {
+		    diplomacy > 12
+			trait="grey_eminence"
+			trait="charismatic_negotiator"
+			trait="master_seductress"
+			trait="master_seducer"
+			trait="socializer"
+		  }
+		}
+		prestige=20
+		hidden_tooltip = {
+		   character_event = { id = skc.114 }
+		   if = {
+		    limit = { NOT = { diplomacy > 15 trait = "socializer" trait = "master_seducer" trait = "master_seductress" } }
+		   random_list = {
+		   	  15 = { narrative_event = { id = skc.115 days = 3200 } } #Fail and sad life
+		      20 = { narrative_event = { id = skc.116 days = 3200 } } #Fail, but better life
+			  25 = { narrative_event = { id = skc.117 days = 3200 } } #Success, but sad life
+			  25 = { narrative_event = { id = skc.118 days = 3200 } } #Success and better life
+			  10 = { }
+		   }
+		   }
+		   if = {
+		    limit = { OR = { diplomacy > 15 trait = "socializer" trait = "master_seducer" trait = "master_seductress" } }
+		   random_list = {
+		   	  10 = { narrative_event = { id = skc.115 days = 3200 } } #Fail and sad life
+		      10 = { narrative_event = { id = skc.116 days = 3200 } } #Fail, but better life
+			  35 = { narrative_event = { id = skc.117 days = 3200 } } #Success, but sad life
+			  35 = { narrative_event = { id = skc.118 days = 3200 } } #Success and better life
+			  10 = { }
+		   }
+		   }
+		}
+	}
+	
+	option = { #Join to me bro
+		name = EVTOPTB_SKC_113
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = no
+			age = 17
+			trait = shy
+			trait = kind
+			trait = honest
+			trait = poet
+			attributes = {
+				martial = 8
+				diplomacy = 8
+				stewardship = 8
+				intrigue = 2
+				learning = 8
+			}
+		}
+		new_character = {
+		   add_friend = ROOT
+		} 
+	}
+	
+	option = {  #Confession going
+		name = EVTOPTC_SKC_113
+		piety=20
+		random_list = {
+		  10 = { add_trait="zealous" }
+		  10 = { add_trait="pious" }
+		  80 = { }
+		}
+	    hidden_tooltip = {
+		   character_event = { id = skc.114 }
+		   	random_list = {
+		      20 = { narrative_event = { id = skc.116 days = 3200 } } #Fail, but better life
+			  20 = { narrative_event = { id = skc.117 days = 3200 } } #Success, but sad life
+			  20 = { narrative_event = { id = skc.118 days = 3200 } } #Success and better life
+			  40 = { narrative_event = { id = skc.119 days = 4400 } } #Became episcopal baron
+			  20 = { }
+		    }
+		}
+	}
+	
+	option = { #Nothing doing
+		name = EVTOPTD_SKC_113
+		trigger = {
+		    NOT = { trait="kind" }
+		}
+		piety=-20
+		random_list = {
+		   30 = { add_trait="selfish" }
+		   20 = { add_trait="envious" }
+		   20 = { add_trait="cynical" }
+		   10 = { add_trait="cruel" }
+		   20 = { }
+		}
+	}
+}
+
+character_event = { 
+	id = skc.114
+	desc = EVTDESC_SKC_114
+	picture = GFX_evt_soleil_royal_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_SKC_114
+		wealth=-15
+	}
+}
+
+narrative_event = { #Failure and sad life
+	id = skc.115
+	title = EVTTITLE_SKC_115
+	desc = EVTDESC_SKC_115
+	picture = GFX_evt_soleil_royal_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_SKC_115
+		hidden_tooltip = {
+		    piety=-1
+		}
+	}
+}
+
+narrative_event = { #Failure, but better life
+	id = skc.116
+	title = EVTTITLE_SKC_115
+	desc = EVTDESC_SKC_116
+	picture = GFX_evt_soleil_royal_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_SKC_116
+		prestige = -20
+		piety = 20
+	}
+}
+
+narrative_event = { #Success, but sad life
+	id = skc.117
+	title = EVTTITLE_SKC_115
+	desc = EVTDESC_SKC_117
+	picture = GFX_evt_soleil_royal_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_SKC_115
+		hidden_tooltip = {
+		    piety=-1
+		}
+	}
+}
+
+narrative_event = { #Success and better life
+	id = skc.118
+	title = EVTTITLE_SKC_115
+	desc = EVTDESC_SKC_118
+	picture = GFX_evt_soleil_royal_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_SKC_118
+		prestige = 20
+		piety = 20
+	}
+}
+
+narrative_event = { 
+    id = skc.119
+    title = EVTTITLE_SKC_115
+    desc = EVTDESC_SKC_119
+    picture = GFX_evt_soleil_royal_pilgrimage
+    
+    is_triggered_only = yes
+    
+    immediate = {
+    create_character = {
+        culture = ROOT
+        religion = ROOT
+        dynasty = no
+        female = no
+        age = 30
+		trait = mastermind_theologican
+        trait = first_estate
+		trait = monk
+		trait = physician
+        trait = zealous
+        trait = shy
+        trait = kind
+        trait = honest
+        trait = poet
+        trait = scholar
+        attributes = {
+            martial = 7
+            diplomacy = 7
+            stewardship = 7
+            intrigue = 2
+            learning = 10
+        }
+    }
+    }
+    
+    option = {
+        name = EVTOPTA_SKC_119
+        add_friend = event_target:new_character
+    }
+}
+
+character_event = { #Chapel of Saint Guinefort
+	id = skc.120
+	desc = EVTDESC_SKC_120
+	picture = GFX_evt_soleil_royal_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { #Go to chapel
+		name = EVTOPTA_SKC_120
+		piety = 20
+		prestige = -20
+		random_list = {
+		  20 = { add_trait="zealous" }
+		  15 = { add_trait="trusting" }
+		  10 = { add_trait="kind" }
+		  10 = { add_trait="gregarious" }
+		  10 = { add_trait="pious" }
+		  45 = { }
+		}
+		narrative_event = { id = skc.121 }
+	}
+	
+	option = { #Not go
+		name = EVTOPTB_SKC_120
+		piety = -20
+		prestige = 20
+		random_list = {
+		   35 = { add_trait="cynical"}
+		   15 = { add_trait="shy" }
+		   15 = { add_trait="slothful" }
+		   15 = { add_trait="proud" }
+		   20 = { }
+		}
+	}
+}
+
+narrative_event = { 
+	id = skc.121
+	title = EVTTITLE_SKC_121
+	desc = EVTDESC_SKC_121
+	picture = GFX_evt_saint_guineefort
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_SKC_121
+		narrative_event = { id = skc.122 }
+	}
+}
+
+narrative_event = { 
+	id = skc.122
+	title = EVTTITLE_SKC_121
+	desc = EVTDESC_SKC_122
+	picture = GFX_evt_saint_guineefort
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_SKC_122
+		piety = 40
+		random_list = {
+		   20 = { add_trait="falconer" }
+		   20 = { add_trait="poet" }
+		   60 = { }
+		}
+	}
+}
+
+character_event = { 
+	id = skc.123
+	desc = EVTDESC_SKC_123
+	picture = GFX_nine_worthies
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_SKC_123
+		piety = 20
+		random_list = {
+		   10 = { add_trait="poet" }
+		   10 = { add_trait="pious" }
+		   10 = { add_trait="brave" }
+		   10 = { add_trait="falconer" }
+		   10 = { add_trait="chaste" }
+		   50 = { }
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_SKC_123
+		piety = -20
+		prestige = 20
+	}
+}
+
+character_event = { 
+	id = skc.124
+	desc = EVTDESC_SKC_124
+	picture = GFX_evt_crusaders
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_SKC_124
+		prestige = 20
+		random_list = {
+		   20 = { add_trait="ambitious" }
+		   10 = { add_trait="brave" }
+		   10 = { ROOT = { change_martial = 1 } }
+		   10 = { add_trait="poet" }
+		   50 = { }
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_SKC_124
+		piety = 20
+		random_list = {
+		   20 = { add_trait="content" }
+		   10 = { add_trait="craven" }
+		   10 = { ROOT = { change_diplomacy = 1 } }
+		   10 = { add_trait="poet" }
+		   50 = { }
+		}
+	}
+}
+
+character_event = { 
+	id = skc.125
+	desc = EVTDESC_SKC_125
+	picture = GFX_evt_soleil_royal_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_125
+		prestige = 20
+		random_list = {
+		   40 = { add_trait= "wounded" }
+		   10 = { ROOT = { change_martial = 1 } }
+		   5 = { death = { death_reason = death_missing } }
+		   45 = { }
+		}
+	}
+}
+
+narrative_event = { 
+	id = skc.126
+	title = EVTTITLE_SKC_126
+	desc = EVTDESC_SKC_126
+	picture = GFX_evt_soleil_royal_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_126
+		narrative_event = { id = skc.127 }
+	}
+}
+
+narrative_event = { 
+	id = skc.127
+	title = EVTTITLE_SKC_127
+	desc = EVTDESC_SKC_127
+	picture = GFX_evt_soleil_royal_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_127
+		narrative_event = { id = skc.128 }
+	}
+}
+
+narrative_event = { 
+	id = skc.128
+	title = EVTTITLE_SKC_127
+	desc = EVTDESC_SKC_128
+	picture = GFX_evt_soleil_royal_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_128
+		piety = -10
+		prestige = 10
+	}
+	
+	option = { 
+		name = EVTOPTB_SKC_128
+		trigger = { ai = no }
+		piety = 1500
+		death = { death_reason = death_missing }
+	}
+}
+
+narrative_event = { 
+	id = skc.129
+	title = EVTTITLE_SKC_129
+	desc = EVTDESC_SKC_129
+	picture = GFX_evt_soleil_royal_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_129
+		piety = -10
+		prestige = 10
+		narrative_event = { id = skc.130 }
+	}
+	
+	option = { 
+		name = EVTOPTB_SKC_129
+		piety=-100
+		add_trait="cruel"
+	}
+}
+
+narrative_event = { 
+	id = skc.130
+	title = EVTTITLE_SKC_130
+	desc = EVTDESC_SKC_130
+	picture = GFX_evt_soleil_royal_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_130
+		hidden_tooltip = {
+		random_list = {
+		   10 = { narrative_event = { id = skc.131 } } #Both Parents live
+		   20 = { narrative_event = { id = skc.132 } } #Father lives
+		   30 = { narrative_event = { id = skc.133 } } #Mother lives
+		   40 = { narrative_event = { id = skc.134 } } #All of them are dead
+		}
+		}
+	}
+}
+
+narrative_event = { 
+	id = skc.131
+	title = EVTTITLE_SKC_131
+	desc = EVTDESC_SKC_131
+	picture = GFX_evt_soleil_royal_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_131
+		piety = 20
+		prestige = 20
+	}
+	
+	option = { 
+		name = EVTOPTB_SKC_131
+		wealth = -20
+		piety = 40
+		prestige = 40
+	}
+}
+
+narrative_event = { 
+	id = skc.132
+	title = EVTTITLE_SKC_131
+	desc = EVTDESC_SKC_132
+	picture = GFX_evt_soleil_royal_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_131
+		piety = 10
+		prestige = 10
+	}
+	
+	option = { 
+		name = EVTOPTB_SKC_131
+		wealth = -20
+		piety = 30
+		prestige = 30
+	}
+}
+
+narrative_event = { 
+	id = skc.133
+	title = EVTTITLE_SKC_131
+	desc = EVTDESC_SKC_133
+	picture = GFX_evt_soleil_royal_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_133
+		piety = 10
+		prestige = 10
+	}
+	
+	option = { 
+		name = EVTOPTB_SKC_133
+		wealth = -20
+		piety = 30
+		prestige = 30
+	}
+	
+	option = { #Generate characters
+		name = EVTOPTC_SKC_133
+		wealth = -30
+		piety = 100
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = yes
+			lowborn = yes
+			age = 40
+			trait = kind
+			trait = pious
+			trait = chaste
+			trait = wounded
+		}
+		new_character = {
+		   save_event_target_as = mother_of_children
+		}
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = yes
+			age = 10
+			lowborn = yes
+		}
+		new_character = {
+		   save_event_target_as = daughter_of_mother
+		}
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = no
+			age = 8
+			lowborn = yes
+		}
+		new_character = {
+		   save_event_target_as = son_of_mother
+		}
+		event_target:son_of_mother = {
+		   set_mother = event_target:mother_of_children
+		}
+		event_target:daughter_of_mother = {
+		   set_mother = event_target:mother_of_children
+		}
+	}
+}
+
+narrative_event = { 
+	id = skc.134
+	title = EVTTITLE_SKC_131
+	desc = EVTDESC_SKC_134
+	picture = GFX_evt_soleil_royal_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_134
+		piety = 10
+		prestige = 10
+	}
+	
+	option = { 
+		name = EVTOPTB_SKC_134
+		wealth = -20
+		piety = 30
+		prestige = 30
+	}
+	
+	option = { #Generate characters
+		name = EVTOPTC_SKC_134
+		wealth = -25
+		piety = 100
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = yes
+			age = 40
+			trait = kind
+			trait = pious
+			trait = chaste
+			trait = wounded
+			lowborn = yes
+		}
+		new_character = {
+		   save_event_target_as = mother_of_children
+		   	death = {
+				death_reason = death_murder
+			}
+		}
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = yes
+			age = 10
+			lowborn = yes
+		}
+		new_character = {
+		   save_event_target_as = daughter_of_mother
+		}
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = no
+			age = 8
+			lowborn = yes
+		}
+		new_character = {
+		   save_event_target_as = son_of_mother
+		}
+		event_target:son_of_mother = {
+		   set_mother = event_target:mother_of_children
+		}
+		event_target:daughter_of_mother = {
+		   set_mother = event_target:mother_of_children
+		}
+	}
+}
+
+character_event = { 
+	id = skc.135
+	desc = EVTDESC_SKC_135
+	picture = GFX_evt_soleil_royal_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { #Go to chapel
+		name = EVTOPTA_SKC_120
+		piety = 20
+		prestige = -20
+		random_list = {
+		  20 = { add_trait="zealous" }
+		  15 = { add_trait="trusting" }
+		  10 = { add_trait="kind" }
+		  10 = { add_trait="gregarious" }
+		  10 = { add_trait="pious" }
+		  45 = { }
+		}
+		narrative_event = { id = skc.136 }
+	}
+	
+	option = { #Not go
+		name = EVTOPTB_SKC_120
+		piety = -20
+		prestige = 20
+		random_list = {
+		   35 = { add_trait="cynical"}
+		   15 = { add_trait="shy" }
+		   15 = { add_trait="slothful" }
+		   15 = { add_trait="proud" }
+		   20 = { }
+		}
+	}
+}
+
+narrative_event = { 
+	id = skc.136
+	title = EVTTITLE_SKC_136
+	desc = EVTDESC_SKC_136
+	picture = GFX_evt_saint_louis_xvi
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_SKC_136
+		narrative_event = { id = skc.137 }
+	}
+}
+
+narrative_event = { 
+	id = skc.137
+	title = EVTTITLE_SKC_136
+	desc = EVTDESC_SKC_137
+	picture = GFX_evt_saint_louis_xvi
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_SKC_137
+		piety = 40
+		random_list = {
+		   20 = { add_trait="brave" }
+		   20 = { add_trait="poet" }
+		   60 = { }
+		}
+	}
+}
+
+character_event = { 
+	id = skc.138
+	desc = EVTDESC_SKC_138
+	picture = GFX_evt_soleil_royal_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_SKC_137
+		piety = 10
+		prestige = 10
 	}
 }
