@@ -2153,6 +2153,9 @@
 	give_nickname=nick_the_usurper
 	father=8002148
 	2478.8.4={birth=yes}
+	2513.1.1={
+	  add_spouse=1958212
+	}
 	2530.4.19={death=yes}
 }
 
@@ -2191,26 +2194,6 @@
 	2540.9.14={death=yes}
 }
 
-8002144={
-	name="Tytus"
-	dynasty=7534089
-	culture=malopolan
-	religion=mariavite
-	trait="cynical"
-	trait="proud"
-	trait="honest"
-	trait="gregarious"
-	trait="greedy"
-	trait="cancer"
-	father=8002141
-	2507.11.9={birth=yes}
-	2544.9.14={
-		death={
-	      death_reason=death_trait
-	    }
-	}
-}
-
 8002145={
 	name="Jan"
 	dynasty=7534089
@@ -2220,8 +2203,9 @@
 	trait="proud"
 	trait="tough_soldier"
 	trait="one_eyed"
-	father=8002144
-	2528.11.9={birth=yes}
+	father=8002141
+	mother=1958212
+	2518.11.9={birth=yes}
 	2547.8.3={
 		death={
 	      death_reason=death_battle
@@ -2238,8 +2222,9 @@
 	trait="honest"
 	trait="kind"
 	trait="zealous"
-	father=8002144
-	2532.12.6={birth=yes}
+	father=8002141
+	mother=1958212
+	2522.12.6={birth=yes}
 	2547.9.14={
 	   religion="catholic"
 	}
