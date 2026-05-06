@@ -5,7 +5,6 @@ decisions = {
 		
 		potential = {
 			is_alternate_start = no
-			has_global_flag = iamtester
 			NOT = {
 				has_game_rule = {
 					name = empire_decisions
