@@ -33,6 +33,7 @@
 	dynasty=2014061 #Elorza
 	culture=basque
 	religion=chevalier
+	father=1992959
 	2619.6.25={birth=yes}
 	2662.4.6={death=yes}
 }
@@ -1755,4 +1756,189 @@
 	culture=andalusian
 	2615.1.1={birth=yes}
 	2680.9.24={death=yes}
+}
+1992959={
+	name="Ibai"
+	dynasty=2014061 #Elorza
+	culture=basque
+	religion=chevalier
+	father=1992960
+	give_nickname=nick_the_great
+	trait="brilliant_strategist"
+	trait="strong"
+	trait="brave"
+	trait="shy"
+	trait="content"
+	trait="kind"
+	trait="zealous"
+	trait="giant"
+	2570.9.4={birth=yes}
+	2632.8.11={death=yes}
+}
+1992960={
+	name="Xabier"
+	dynasty=2014061 #Elorza
+	culture=basque
+	religion=chevalier
+	father=1992961
+	give_nickname=nick_the_old
+	trait="midas_touched"
+	trait="cynical"
+	trait="quick"
+	trait="administrator"
+	trait="gregarious"
+	2532.4.19={birth=yes}
+	2594.8.14={
+	   death={
+	      death_reason=death_murder_unknown
+	   }
+	}
+}
+1992961={
+	name="Xabier"
+	dynasty=2014061 #Elorza
+	culture=basque
+	religion=chevalier
+	give_nickname=nick_the_drunkard
+	trait="drunkard"
+	trait="chaste"
+	trait="gregarious"
+	trait="quick"
+	trait="hunchback"
+	father=1992962
+	2501.12.25={birth=yes}
+	2536.5.2={
+	   death={
+	      death_reason=death_drunkard
+	   }
+	}
+}
+1992962={
+	name="Xabier"
+	dynasty=2014061 #Elorza
+	culture=basque
+	religion=chevalier
+	give_nickname=nick_the_unready
+	trait="chaste"
+	trait="shy"
+	trait="quick"
+	trait="patient"
+	trait="familyperson"
+	mother=1992963
+	father=1992964
+	2480.8.14={birth=yes}
+	2514.1.27={
+	   death={
+	      death_reason=death_battle
+	   }
+	}
+}
+1992963={
+	name="Eba"
+	dynasty=7534219
+	female=yes
+	culture=basque
+	religion=catholic
+	trait="cynical"
+	trait="attractive"
+	trait="ambitious"
+	trait="administrator"
+	trait="brave"
+	trait="deceitful"
+	trait="charitable"
+	trait="schemer"
+	father=1992965
+	2453.4.11={birth=yes}
+	2525.8.17={death=yes}
+}
+1992964={
+	name="Jean"
+	dynasty=7534218
+	culture=parisian
+	religion=jacobin
+	trait="brilliant_strategist"
+	trait="attractive"
+	trait="strong"
+	trait="hunchback"
+	trait="giant"
+	trait="zealous"
+	trait="chaste"
+	trait="patient"
+	trait="diligent"
+	trait="trusting"
+	trait="brave"
+	trait="knight"
+	give_nickname=nick_le_bon_chevalier
+	2455.9.2={birth=yes}
+	2474.1.1={
+	    religion = sun_king_cultist
+	}
+	2475.1.1={
+	    religion=chevalier
+	}
+	2476.9.14={
+	   add_spouse=1992963
+	   create_bloodline={
+			type=le_bon_chevalier
+			has_dlc="Holy Fury"
+		}
+	}
+	2504.1.27={
+	   death={
+	      death_reason=death_battle
+	   }
+	}
+}
+1992965={
+	name="Xabier"
+	dynasty=7534219
+	culture=basque
+	religion=catholic
+	trait="patient"
+	trait="kind"
+	trait="chaste"
+	trait="gregarious"
+	trait="erudite"
+	trait="weak"
+	give_nickname=nick_the_wise
+	father=1992967
+	2414.3.29={birth=yes}
+	2571.6.14={
+	   death={
+	      death_reason=death_murder_unknown
+		  killer=1992963
+	   }
+	}
+}
+1992966={
+	name="Aimar"
+	dynasty=7534219
+	culture=basque
+	religion=catholic
+	trait="attractive"
+	trait="chaste"
+	trait="charitable"
+	trait="proud"
+	trait="cruel"
+	trait="ambitious"
+	trait="one_eyed"
+	trait="drunkard"
+	trait="duelist"
+	father=1992965
+	2449.6.11={birth=yes}
+	2476.9.14={
+	   death={
+	      death_reason=death_battle_duel
+		  killer=1992964
+	   }
+	}
+}
+1992967={
+	name="Sabin"
+	dynasty=7534219
+	culture=basque
+	religion=catholic
+	trait="legendary"
+	2365.2.33={birth=yes}
+	2430.6.14={death=yes}
 }

@@ -51210,3 +51210,31 @@ coat_of_arms = {
 		}
 	}
 }
+7534208 = { name = "Nikephoros" culture = greek used_for_random = no }
+7534209 = { name = "Amoraios" culture = greek used_for_random = no }
+7534210 = { name = "Makedónas" culture = makedonian used_for_random = no }
+7534211 = { name = "Phokas" culture = greek used_for_random = no }
+7534212 = { name = "Tzimiskes" culture = greek used_for_random = no }
+7534213 = { name = "Monomáchos" culture = greek used_for_random = no }
+7534214 = { name = "Komnenos" culture = greek used_for_random = no }
+7534215 = { name = "Lascaris" culture = greek used_for_random = no }
+7534216 = { name = "Palaiologos" culture = greek used_for_random = no }
+7534217 = { name = "Kantakouzenos" culture = greek used_for_random = no }
+7534218 = { name = "de Oise" culture = parisan used_for_random = no }
+7534219 = { name = "Luzárraga" culture = basque
+    culture = basque
+	religion = catholic
+	used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 78
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
