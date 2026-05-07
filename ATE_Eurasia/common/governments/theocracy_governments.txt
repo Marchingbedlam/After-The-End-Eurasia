@@ -30,6 +30,7 @@ theocracy_governments = {
 			is_patrician = no
 			NOT = { trait = heresiarch }
 			NOT = { has_landed_title = e_soyuz } 
+			NOT = { has_landed_title = e_byzantium } 
 			NAND = {
 				OR = {
 					religion = yazidi

@@ -1,7 +1,7 @@
 decisions = {
 	
 	restore_byzantine_empire = {
-	    ai=no
+		is_high_prio = yes
 		
 		potential = {
 			is_alternate_start = no
@@ -13,9 +13,8 @@ decisions = {
 			}
 			NOT = { has_global_flag = byzantium_unified }
 			OR = { 
-			   religion = orthodox
-			   religion = antipalamite
-			   religion = oldcalendarist
+			   religion_group = christian
+			   religion = neohellenic
 			   religion = nekromante
 			   religion = neoplatonist
 			}
@@ -23,6 +22,9 @@ decisions = {
 			OR = { 
 			   culture_group = hellenic
 			   culture_group = south_slavic
+			   religion = neohellenic
+			   religion = nekromante
+			   religion = neoplatonist
 			}
 			is_playable = yes
 			NOT = {
@@ -75,6 +77,10 @@ decisions = {
 		
 		revoke_allowed = {
 			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
 		}
 	}
 	
@@ -153,7 +159,10 @@ decisions = {
 			is_playable = yes
 			is_adult = yes
 			prisoner = no
-			religion = neoplatonist
+			OR = { 
+			    religion = neoplatonist
+				religion = neohellenic
+			}
 			NOT = { has_character_modifier = held_eleusinian_mysteries_timer }
 			NOT = { has_character_flag = holding_eleusinian_mysteries }
 			NOT = {

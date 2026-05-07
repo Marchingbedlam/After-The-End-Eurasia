@@ -1,0 +1,688 @@
+namespace = genesian
+
+character_event = { 
+	id = genesian.1
+	desc = EVTDESC_genesian_1
+	picture = GFX_evt_dziady
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_genesian_1
+		narrative_event = { id = genesian.2 days = 5 }
+		add_character_modifier = {
+			name = dziady_timer
+			duration = 365
+			hidden = yes
+		}
+	}
+}
+
+narrative_event = {
+	id = genesian.2
+	title = EVTNAME_genesian_2
+	desc = EVTDESC_genesian_2
+	picture = GFX_evt_dziady
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_genesian_1
+		narrative_event = { id = genesian.3 }
+	}
+}
+
+narrative_event = { 
+	id = genesian.3
+	title = EVTNAME_genesian_3
+	desc = EVTDESC_genesian_3
+	picture = GFX_evt_dziady
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_genesian_3
+		hidden_tooltip = {
+		   random_list = {
+		     60 = { character_event = { id = genesian.4 } } #Nothing extraordinary happens
+			 35 = { character_event = { id = genesian.5 } } #"Possession" of women
+			 5 = { character_event = { id = genesian.7 } } #Chapel fire
+		   }
+		}
+	}
+}
+
+character_event = {
+	id = genesian.4
+	desc = EVTDESC_genesian_4
+	picture = GFX_evt_dziady
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_genesian_4
+		piety=20
+		prestige=-20
+	}
+	
+	option = {
+		name = EVTOPTA_genesian_4
+		trigger = { NOT = { OR = { trait="pious" trait="zealous" } } }
+		piety=-20
+		prestige=20
+		random_list = {
+		   20 = { add_trait="cynical" }
+		   15 = { add_trait="ambitious" } 
+		   10 = { add_trait="honest" }
+		   55 = { } 
+		}
+	}
+}
+
+character_event = {
+	id = genesian.5
+	desc = EVTDESC_genesian_5
+	picture = GFX_evt_dziady
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_genesian_5
+		piety=20
+		prestige=20
+	}
+	
+	option = {
+		name = EVTOPTA_genesian_5
+		trigger = { NOT = { OR = { trait = pious trait = zealous } } }
+		piety=-20
+		prestige=20
+		random_list = {
+		   10 = { add_trait="cynical" }
+		   25 = { add_trait="ambitious" } 
+		   22 = { add_trait="honest" }
+		   1 = { add_trait="quick" }
+		   2 = { add_trait="genius" }
+		   40 = { } 
+		}
+	}
+}
+
+character_event = {
+	id = genesian.6
+	desc = EVTDESC_genesian_6
+	picture = GFX_evt_burning_house
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_genesian_6
+		random_list = {
+		   10 = { death = { death_reason = death_accident } }
+		   5 = { add_trait="incapable" }
+		   10 = { add_trait="maimed" }
+		   15 = { add_trait="wounded" }
+		   60 = { }
+		}
+	}
+}
+
+character_event = {
+	id = genesian.7
+	desc = EVTDESC_genesian_7
+	picture = GFX_evt_dziady
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_genesian_7
+		piety = 50
+		random_list = {
+		  10 = { add_trait="zealous" }
+		  10 = { add_trait="pious" }
+		  40 = { add_trait="poet" }
+		  40 = { }
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_genesian_7
+		prestige = 50
+		random_list = {
+		  10 = { add_trait="drunkard" }
+		  20 = { add_trait="gregarious" }
+		  20 = { add_trait="poet" }
+		  50 = { }
+		}
+	}
+}
+
+narrative_event = {
+	id = genesian.8
+	title = EVTNAME_genesian_8
+	desc = EVTDESC_genesian_8
+	picture = GFX_evt_dziady
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_genesian_8
+		piety=50
+		random_list = {
+		   10 = { add_trait="pious" }
+		   5 = { add_trait="zealous" }
+		   85 = { }
+		}
+		add_trait="on_pilgrimage"
+		hidden_tooltip = {
+			random_list = {
+				10 = { character_event = { id = SoA.5031 days = 15 random = 7 } }
+				10 = { character_event = { id = SoA.5032 days = 15 random = 7 } }
+				10 = { narrative_event = { id = SoA.5033 days = 15 random = 7 } }
+				10 = { character_event = { id = SoA.5034 days = 15 random = 7 } }
+				10 = { character_event = { id = SoA.5035 days = 15 random = 7 } }
+				10 = { character_event = { id = SoA.5036 days = 15 random = 7 } }
+				10 = { character_event = { id = SoA.5037 days = 15 random = 7 } }
+				10 = { character_event = { id = SoA.5038 days = 15 random = 7 } }
+				10 = { character_event = { id = SoA.5039 days = 15 random = 7 } }
+			}
+			narrative_event = { id = genesian.9 days = 21 }
+		}
+		set_character_flag = good_pilgrimage
+		set_character_flag = do_not_disturb
+	}
+	
+	option = {
+		name = EVTOPTB_genesian_8
+		piety=25
+		prestige=25
+		random_list = {
+		   10 = { add_trait="slothful" }
+		   90 = { }
+		}
+		add_trait="on_pilgrimage"
+		hidden_tooltip = {
+			random_list = {
+				10 = { character_event = { id = SoA.5031 days = 15 random = 7 } }
+				10 = { character_event = { id = SoA.5032 days = 15 random = 7 } }
+				10 = { narrative_event = { id = SoA.5033 days = 15 random = 7 } }
+				10 = { character_event = { id = SoA.5034 days = 15 random = 7 } }
+				10 = { character_event = { id = SoA.5035 days = 15 random = 7 } }
+				10 = { character_event = { id = SoA.5036 days = 15 random = 7 } }
+				10 = { character_event = { id = SoA.5037 days = 15 random = 7 } }
+				10 = { character_event = { id = SoA.5038 days = 15 random = 7 } }
+				10 = { character_event = { id = SoA.5039 days = 15 random = 7 } }
+			}
+			random_list = {
+				10 = { character_event = { id = SoA.5031 days = 25 random = 7 } }
+				10 = { character_event = { id = SoA.5032 days = 25 random = 7 } }
+				10 = { narrative_event = { id = SoA.5033 days = 25 random = 7 } }
+				10 = { character_event = { id = SoA.5034 days = 25 random = 7 } }
+				10 = { character_event = { id = SoA.5035 days = 25 random = 7 } }
+				10 = { character_event = { id = SoA.5036 days = 25 random = 7 } }
+				10 = { character_event = { id = SoA.5037 days = 25 random = 7 } }
+				10 = { character_event = { id = SoA.5038 days = 25 random = 7 } }
+				10 = { character_event = { id = SoA.5039 days = 25 random = 7 } }
+			}
+			narrative_event = { id = genesian.9 days = 35 }
+		}
+		set_character_flag = good_pilgrimage
+		set_character_flag = do_not_disturb
+	}
+	
+	option = {
+		name = EVTOPTC_genesian_8
+		piety=-25
+		prestige=50
+		random_list = {
+		   5 = { add_trait="slothful" }
+		   10 = { add_trait="craven" }
+		   85 = { }
+		}
+		add_trait="on_pilgrimage"
+		hidden_tooltip = {
+			random_list = {
+				10 = { character_event = { id = SoA.5031 days = 15 random = 7 } }
+				10 = { character_event = { id = SoA.5032 days = 15 random = 7 } }
+				10 = { narrative_event = { id = SoA.5033 days = 15 random = 7 } }
+				10 = { character_event = { id = SoA.5034 days = 15 random = 7 } }
+				10 = { character_event = { id = SoA.5035 days = 15 random = 7 } }
+				10 = { character_event = { id = SoA.5036 days = 15 random = 7 } }
+				10 = { character_event = { id = SoA.5037 days = 15 random = 7 } }
+				10 = { character_event = { id = SoA.5038 days = 15 random = 7 } }
+				10 = { character_event = { id = SoA.5039 days = 15 random = 7 } }
+			}
+			narrative_event = { id = genesian.9 days = 21 }
+		}
+		set_character_flag = good_pilgrimage
+		set_character_flag = do_not_disturb
+	}
+	
+	option = {
+		name = EVTOPTD_genesian_8
+		wealth=20
+		piety=-20
+	}
+}
+
+narrative_event = { 
+	id = genesian.9
+	title = EVTNAME_genesian_9
+	desc = EVTDESC_genesian_9
+	picture = GFX_evt_paris
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_genesian_9
+		piety = 50
+		narrative_event = { id = genesian.13 days = 1 }
+		random_list = {
+		    40 = { narrative_event = { id = genesian.10 days = 2 } } #Communion with Napoleon
+			30 = { narrative_event = { id = genesian.11 days = 2 } } #Scientism - what think about it
+			30 = { narrative_event = { id = genesian.12 days = 2 } } #Syncretism chance
+		}
+		character_event = { id = genesian.14 days = 3 }
+	}
+}
+
+narrative_event = { 
+	id = genesian.10
+	title = EVTNAME_genesian_10
+	desc = EVTDESC_genesian_10
+	picture = GFX_evt_paris
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_genesian_10
+		piety = 25
+		random_list = {
+		   15 = { add_trait="zealous" }
+		   20 = { add_trait="pious" }
+		   5 = { add_trait="lunatic" }
+		   60 = { }
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_genesian_10
+		piety = -25
+		prestige = 25
+		random_list = {
+		   30 = { add_trait="cynical" }
+		   70 = { }
+		}
+	}
+}
+
+narrative_event = { 
+	id = genesian.11
+	title = EVTNAME_genesian_11
+	desc = EVTDESC_genesian_11
+	picture = GFX_evt_paris
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_genesian_11
+		piety = 25
+		random_list = {
+		   10 = { add_trait="poet" }
+		   90 = { }
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_genesian_10
+		secret_religion = chronicler
+	}
+}
+
+narrative_event = { 
+	id = genesian.12
+	title = EVTNAME_genesian_12
+	desc = EVTDESC_genesian_12
+	picture = GFX_evt_paris
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_genesian_12
+		piety = 40
+	}
+	
+	option = {
+		name = EVTOPTB_genesian_12
+		add_trait="sympathy_christendom" #Christian Sympathy
+	}
+	
+	option = {
+		name = EVTOPTC_genesian_12
+		add_trait="sympathy_judaism" #Jewish Sympathy
+	}
+}
+
+narrative_event = { 
+	id = genesian.13
+	title = EVTNAME_genesian_13
+	desc = EVTDESC_genesian_13
+	picture = GFX_evt_paris
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_genesian_13
+		random_list = {
+		  5 = { add_trait="poet" }
+		  5 = { add_trait="zealous" }
+		  5 = { add_trait="pious" }
+		  5 = { add_trait="humble" }
+		  5 = { add_trait="chaste" }
+		  5 = { add_trait="content" }
+		  5 = { add_trait="ambitious" }
+		  5 = { add_trait="wroth" }
+		  5 = { add_trait="patient" }
+		  5 = { add_trait="shy" }
+		  5 = { add_trait="brave" }
+		  5 = { add_trait="falconer" }
+		  40 = { }
+		}
+	}
+}
+
+character_event = { 
+	id = genesian.14
+	desc = EVTDESC_genesian_14
+	picture = GFX_evt_dziady
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_genesian_14
+		character_event = { id = genesian.15 days = 12 }
+	}
+}
+
+character_event = { 
+	id = genesian.15
+	desc = EVTDESC_genesian_15
+	picture = GFX_evt_dziady
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_genesian_15
+		remove_trait="on_pilgrimage"
+		add_trait="pilgrim"
+		clr_character_flag = good_pilgrimage
+		clr_character_flag = do_not_disturb
+	}
+}
+
+character_event = { 
+	id = genesian.16
+	desc = EVTDESC_genesian_16
+	picture = GFX_evt_open_book_hf
+	
+	is_triggered_only = yes
+	
+	immediate = {
+	  	add_character_modifier = {
+			name = reading_bards_timer
+			duration = 1825
+			hidden = yes
+		}
+	}
+
+	option = { #Slowacki
+		name = EVTOPTA_genesian_16
+		set_character_flag = read_slovacki
+		narrative_event = { id = genesian.20 days = 1 }
+	}
+	option = { #Mickiewicz
+		name = EVTOPTB_genesian_16
+		set_character_flag = read_mickiewicz
+		narrative_event = { id = genesian.20 days = 1 }
+	}
+	option = { #Goethe
+		name = EVTOPTC_genesian_16
+		set_character_flag = read_goethe
+		narrative_event = { id = genesian.20 days = 1 }
+	}
+	option = { #Other
+		name = EVTOPTD_genesian_16
+		character_event = { id = genesian.17 }
+	}
+}
+
+character_event = { 
+	id = genesian.17
+	desc = EVTDESC_genesian_16
+	picture = GFX_evt_open_book_hf
+	
+	is_triggered_only = yes
+
+	option = { #Brothers Grimm
+		name = EVTOPTA_genesian_17
+		set_character_flag = read_grimms
+		narrative_event = { id = genesian.20 days = 1 }
+	}
+	option = { #Victor Hugo
+		name = EVTOPTB_genesian_17
+		set_character_flag = read_hugo
+		narrative_event = { id = genesian.20 days = 1 }
+	}
+	option = { #Balzac
+		name = EVTOPTC_genesian_17
+		set_character_flag = read_balzac
+		narrative_event = { id = genesian.20 days = 1 }
+	}
+	option = { #Other
+		name = EVTOPTD_genesian_16
+		character_event = { id = genesian.18 }
+	}
+}
+
+character_event = { 
+	id = genesian.18
+	desc = EVTDESC_genesian_16
+	picture = GFX_evt_open_book_hf
+	
+	is_triggered_only = yes
+
+	option = { #Dostoyevsky
+		name = EVTOPTA_genesian_18
+		set_character_flag = read_dostoyevsky
+		narrative_event = { id = genesian.20 days = 1 }
+	}
+	option = { #Lord Byron
+		name = EVTOPTB_genesian_18
+		set_character_flag = read_byron
+		narrative_event = { id = genesian.20 days = 1 }
+	}
+	option = { #Other
+		name = EVTOPTD_genesian_16
+	    character_event = { id = genesian.19 }
+	}
+}
+
+character_event = { 
+	id = genesian.19
+	desc = EVTDESC_genesian_16
+	picture = GFX_evt_open_book_hf
+	
+	is_triggered_only = yes
+
+	option = { #Kazimierz Tetmajer
+		name = EVTOPTB_genesian_19
+		set_character_flag = read_tetmajer
+		narrative_event = { id = genesian.20 days = 1 }
+	}
+	option = { #Herbert
+		name = EVTOPTC_genesian_19
+		set_character_flag = read_herbert
+		narrative_event = { id = genesian.20 days = 1 }
+	}
+	option = { #Other
+		name = EVTOPTD_genesian_16
+		character_event = { id = genesian.16 }
+	}
+}
+
+narrative_event = { 
+	id = genesian.20
+	title = EVTNAME_genesian_20
+	desc = {
+		text = EVTDESC_genesian_20_slowacki
+		picture = GFX_evt_open_book_hf
+		trigger = { 
+			has_character_flag = read_slovacki
+		}
+	}
+	desc = {
+		text = EVTDESC_genesian_20_mickiewicz
+		picture = GFX_evt_open_book_hf
+		trigger = { 
+			has_character_flag = read_dziady
+		}
+	}
+	desc = {
+		text = EVTDESC_genesian_20_goethe
+		picture = GFX_evt_open_book_hf
+		trigger = { 
+			has_character_flag = read_goethe
+		}
+	}
+	desc = {
+		text = EVTDESC_genesian_20_grimms
+		picture = GFX_evt_open_book_hf
+		trigger = { 
+			has_character_flag = read_grimms
+		}
+	}
+	desc = {
+		text = EVTDESC_genesian_20_balzac
+		picture = GFX_evt_open_book_hf
+		trigger = { 
+			has_character_flag = read_balzac
+		}
+	}
+	desc = {
+		text = EVTDESC_genesian_20_byron
+		picture = GFX_evt_open_book_hf
+		trigger = { 
+			has_character_flag = read_byron
+		}
+	}
+	desc = {
+		text = EVTDESC_genesian_20_dostoyevsky
+		picture = GFX_evt_open_book_hf
+		trigger = { 
+			has_character_flag = read_dostoyevsky
+		}
+	}
+	desc = {
+		text = EVTDESC_genesian_20_tetmajer
+		picture = GFX_evt_open_book_hf
+		trigger = { 
+			has_character_flag = read_tetmajer
+		}
+	}
+	desc = {
+		text = EVTDESC_genesian_20_herbert
+		picture = GFX_evt_open_book_hf
+		trigger = { 
+			has_character_flag = read_herbert
+		}
+	}
+	desc = {
+		text = EVTDESC_genesian_20_hugo
+		picture = GFX_evt_open_book_hf
+		trigger = { 
+			has_character_flag = read_hugo
+		}
+	}
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_genesian_20
+		hidden_tooltip = {
+		if = {
+		   limit = { OR = { learning > 15 trait="quick" trait="genius" } NOT = { trait="slow" trait="imbecile" } }
+		   60 = { character_event = { id = genesian.21 days = 8 } } #Success in reading
+		   35 = { character_event = { id = genesian.22 days = 8 } } #Neutrality in reading
+		   5 = { character_event = { id = genesian.23 days = 8 } } #Failure in reading
+		}
+		if = {
+		   limit = { NOT = { learning > 15 trait="quick" trait="genius" trait="slow" trait="imbecile" } }
+		   40 = { character_event = { id = genesian.21 days = 8 } } #Success in reading
+		   55 = { character_event = { id = genesian.22 days = 8 } } #Neutrality in reading
+		   10 = { character_event = { id = genesian.23 days = 8 } } #Failure in reading
+		}
+		if = {
+		   limit = { trait="slow" }
+		   30 = { character_event = { id = genesian.21 days = 8 } } #Success in reading
+		   50 = { character_event = { id = genesian.22 days = 8 } } #Neutrality in reading
+		   25 = { character_event = { id = genesian.23 days = 8 } } #Failure in reading
+		}
+		if = {
+		   limit = { trait="imbecile" }
+		   20 = { character_event = { id = genesian.21 days = 8 } } #Success in reading
+		   30 = { character_event = { id = genesian.22 days = 8 } } #Neutrality in reading
+		   55 = { character_event = { id = genesian.23 days = 8 } } #Failure in reading
+		}
+		}
+	}
+}
+
+character_event = { #Success in reading
+	id = genesian.21
+	desc = EVTDESC_genesian_21
+	picture = GFX_evt_open_book_hf
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_genesian_21
+		piety=100
+		random_list = {
+		   10 = { ROOT = { change_learning = 2 } } #+2 learning
+		   5 = { add_trait="poet" }
+		   35 = { ROOT = { change_learning = 1 } } #+1 learning
+		   50 = { }
+		}
+	}
+}
+
+character_event = { #Neutrality in reading
+	id = genesian.22
+	desc = EVTDESC_genesian_22
+	picture = GFX_evt_open_book_hf
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_genesian_22
+		piety=50
+		random_list = {
+		   5 = { add_trait="poet" }
+		   35 = { ROOT = { change_learning = 1 } } #+1 learning
+		   60 = { }
+		}
+	}
+}
+
+character_event = { #Failure in reading
+	id = genesian.23
+	desc = EVTDESC_genesian_22
+	picture = GFX_evt_open_book_hf
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_genesian_23
+		piety=-50
+	}
+}

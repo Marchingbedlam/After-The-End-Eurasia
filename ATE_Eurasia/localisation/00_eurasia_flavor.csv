@@ -194,6 +194,15 @@ warrior_lodge_folketro_rank_2_male;Kaptein;;;;;;;;;;;;;x
 warrior_lodge_folketro_rank_3_male;Oberst;;;;;;;;;;;;;x
 warrior_lodge_folketro_rank_4_male;Marskalk;;;;;;;;;;;;;x
 
+#Marcelianist Stuff
+organise_council_of_vatican_iii;Convene the Imperfect General Council;;;;;;;;;;;;;x
+organise_council_of_vatican_iii_desc;Since the Second Vatican Council, popes have been promulgating increasingly abhorrent errors. Over time, the idea arose unofficially among the rank-and-file Marcellinian clergy to convene an Imperfect General Council, which would declare the pope a heretic, forfeiting his office, and would then elect a new pope—one faithful to Tradition and a fervent devotee of Saint Marcel of France. Now that Rome is yours, you may convene this council...;;;;;;;;;;;;;x
+EVT_SSPX_PSEUDOCOUNCIL_NAME;Vatican Council III;;;;;;;;;;;;;x
+EVT_SSPX_PSEUDOCOUNCIL_DESC;After the Marcellinians occupied Rome, it was certain they would not surrender the city to the Pope. Instead, they convened a synod there, which declared, based on the opinion of certain theologians, an Imperfect General Council. This council, though schismatic like most Marcellinian acts, became even more schismatic towards the Pope when it declared the current pope a modernist and heretic who had ipso facto lost his office. The Marcellinians thus ended what they considered to be a continuing crisis in the Church and proclaimed the current bishop-superior of the Society of Saint Pius X, who took the name Pius, as the new pope. The exiled pope, declared a heretic by this synod, had already excommunicated all its participants.;;;;;;;;;;;;;x
+EVT_SSPX_PSEUDOCOUNCIL_OPTION_MARCEL;Modernism banished!;;;;;;;;;;;;;x
+EVT_SSPX_PSEUDOCOUNCIL_OPTION_CATHOLIC;Rogue Synod! Outrageous!;;;;;;;;;;;;;x
+EVT_SSPX_PSEUDOCOUNCIL_OPTION_OTHER;Interesting;;;;;;;;;;;;;x
+
 #Culture Merging Events
 
 EVTDESC_melting_pot_1;For as long as have ruled here, we Celts have entrusted the raising of our children to British nursemaids. Our first words would not be Gaelic but "British". As we grew up we learned to speak a tongue that was neither one nor the other. Now is this time to make this tongue our own so we may all communicate.;;;;;;;;;x

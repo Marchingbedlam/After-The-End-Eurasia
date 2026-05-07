@@ -311,6 +311,40 @@ e_roman_empire = {
 	}
 }
 
+e_byzantium = {
+	color={ 146 20 200 }
+	color2={ 4 106 56 }
+
+	capital = 143 # Istanbul
+
+	dignity = 100
+	
+	greek="Vasileía ton Romaíon"
+	makedonian="Vasileía ton Romaíon"
+	kypriot="Vasileía ton Romaíon"
+	serbian="Rimsko Carstvo"
+	croatian="Rimsko Carstvo"
+	macedonian="Rimska Imperija"
+	albanian="Perandoria Romake"
+	pomak="Rimska Imperiya"
+	bulgarian="Rimska Imperiya"
+	rumelian="Roma Imparatorlugu"
+	central_anatolian="Roma Imparatorlugu"
+	toros_mountain="Roma Imparatorlugu"
+	west_anatolian="Roma Imparatorlugu"
+	romioi="Roma Imparatorlugu"
+	black_sea="Roma Imparatorlugu"
+	
+	title = "IMPERATOR"
+	title_female = "IMPERATOR_FEMALE"
+	
+	controls_religion = neohellenic
+	
+	allow = {
+		always = no # Only created through special event
+	}
+}
+
 e_austria = {
 	color={ 260 260 260 }
 	color2={ 255 255 255 }
