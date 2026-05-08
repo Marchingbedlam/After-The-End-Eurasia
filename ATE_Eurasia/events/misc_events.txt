@@ -8,7 +8,7 @@ character_event = { #some weird ass old man offers you hash
 	
 	trigger = {
 		AND = {
-			min_age >= 16
+			max_age = 16
 			prisoner = no
 			has_landed_title = c_marseille
 		}
