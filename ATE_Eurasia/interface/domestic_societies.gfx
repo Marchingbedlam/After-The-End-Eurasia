@@ -1055,6 +1055,10 @@ spriteTypes = {
 		name = "GFX_society_main_background_warrior_lodge_sun_king_cultist"
 		textureFile = "gfx\\interface\\societies\\society_bg_sun_king_cultist.tga"
 	}
+	spriteType = {
+		name = "GFX_society_main_background_warrior_lodge_jedinstvo"
+		textureFile = "gfx\\interface\\societies\\society_bg_jedinstvo.tga"
+	}
 
 	#Expanded Background
 
@@ -1135,7 +1139,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_society_portrait_ring_warrior_lodge_proletcult"
-		textureFile = "gfx\\interface\\societies\\portrait_ring_proletcult.tga"
+		textureFile = "gfx\\interface\\societies\\portrait_ring_small_devil_worshipers.tga"
 	}
 	spriteType = {
 		name = "GFX_society_portrait_ring_warrior_lodge_neoplatonist"
@@ -1152,6 +1156,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_society_portrait_ring_warrior_lodge_sun_king_cultist"
 		textureFile = "gfx\\interface\\societies\\portrait_ring_monastic_order_benedictine.dds"
+	}
+	spriteType = {
+		name = "GFX_society_portrait_ring_warrior_lodge_jedinstvo"
+		textureFile = "gfx\\interface\\societies\\portrait_ring_wolf_warriors.tga"
 	}
 
 	#Small Ring
@@ -1194,7 +1202,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_society_portrait_ring_small_warrior_lodge_proletcult"
-		textureFile = "gfx\\interface\\societies\\portrait_ring_small_proletcult.tga"
+		textureFile = "gfx\\interface\\societies\\portrait_ring_small_devil_worshipers.tga"
 	}
 	spriteType = {
 		name = "GFX_society_portrait_ring_small_warrior_lodge_jacobin"
@@ -1211,6 +1219,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_society_portrait_ring_small_warrior_lodge_neoplatonist"
 		textureFile = "gfx\\interface\\societies\\portrait_ring_small_monastic_order_benedictine.tga"
+	}
+	spriteType = {
+		name = "GFX_society_portrait_ring_small_warrior_lodge_jedinstvo"
+		textureFile = "gfx\\interface\\societies\\portrait_ring_small_wolf_warriors.tga"
 	}
 
 	#Icons
@@ -1288,6 +1300,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_icon_small_warrior_lodge_sun_king_cultist"
 		textureFile = "gfx\\interface\\societies\\symbol_small_sun_king_cultist.tga"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_icon_small_warrior_lodge_jedinstvo"
+		textureFile = "gfx\\interface\\societies\\symbol_small_jedinstvo.tga"
 		noOfFrames = 2
 	}
 	

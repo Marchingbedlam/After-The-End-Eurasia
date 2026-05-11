@@ -2279,3 +2279,212 @@ jacobin_nun = {
 
 	female_compliment = COMPL_NUN
 }
+
+dvoeverie_holy_mary = {
+	opposites = {
+		dvoeverie_paraskeva_anastasia
+		dvoeverie_rasputin
+		dvoeverie_st_gyorgij_nevsky
+		dvoeverie_st_iliya
+		dvoeverie_st_nicholas
+		dvoeverie_st_vlasius
+		dvoeverie_tsar
+		dvoeverie_baba_matrona
+	}
+	diplomacy = 1
+	health = 0.5 
+	monthly_character_piety = 0.2
+	
+	ai_zeal = 10
+	
+	potential = { religion = dvoeverie }
+	religious_branch = dvoeverie
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+dvoeverie_paraskeva_anastasia = {
+	opposites = {
+		dvoeverie_holy_mary
+		dvoeverie_rasputin
+		dvoeverie_st_gyorgij_nevsky
+		dvoeverie_st_iliya
+		dvoeverie_st_nicholas
+		dvoeverie_st_vlasius
+		dvoeverie_tsar
+		dvoeverie_baba_matrona
+	}
+	diplomacy = 1
+	same_opinion = 5
+	opposite_opinion = 5
+	monthly_character_piety = 0.2
+	
+	ai_zeal = 10
+	
+	potential = { religion = dvoeverie }
+	religious_branch = dvoeverie
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+dvoeverie_rasputin = {
+	opposites = {
+		dvoeverie_holy_mary
+		dvoeverie_paraskeva_anastasia
+		dvoeverie_st_gyorgij_nevsky
+		dvoeverie_st_iliya
+		dvoeverie_st_nicholas
+		dvoeverie_st_vlasius
+		dvoeverie_tsar
+		dvoeverie_baba_matrona
+	}
+	intrigue = 1
+	mystic_opinion=5
+	plot_power_modifier = 0.05
+	opposite_opinion = -5
+	monthly_character_piety = 0.1
+	
+	ai_honor = -15
+	
+	potential = { religion = dvoeverie }
+	religious_branch = dvoeverie
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+dvoeverie_st_gyorgij_nevsky = {
+	opposites = {
+		dvoeverie_holy_mary
+		dvoeverie_paraskeva_anastasia
+		dvoeverie_rasputin
+		dvoeverie_st_iliya
+		dvoeverie_st_nicholas
+		dvoeverie_st_vlasius
+		dvoeverie_tsar
+		dvoeverie_baba_matrona
+	}
+	martial=1
+	same_opinion=5
+	monthly_character_piety = 0.2
+	
+	potential = { religion = dvoeverie }
+	religious_branch = dvoeverie
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+dvoeverie_st_iliya = {
+	opposites = {
+		dvoeverie_holy_mary
+		dvoeverie_paraskeva_anastasia
+		dvoeverie_rasputin
+		dvoeverie_st_gyorgij_nevsky
+		dvoeverie_st_nicholas
+		dvoeverie_st_vlasius
+		dvoeverie_tsar
+		dvoeverie_baba_matrona
+	}
+	learning = 1
+	monthly_character_piety = 0.2
+	
+	potential = { religion = dvoeverie }
+	religious_branch = dvoeverie
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+dvoeverie_st_nicholas = {
+	opposites = {
+		dvoeverie_holy_mary
+		dvoeverie_paraskeva_anastasia
+		dvoeverie_rasputin
+		dvoeverie_st_gyorgij_nevsky
+		dvoeverie_st_iliya
+		dvoeverie_st_vlasius
+		dvoeverie_tsar
+		dvoeverie_baba_matrona
+	}
+	diplomacy = 1
+	monthly_character_piety = 0.2
+	
+	potential = { religion = dvoeverie }
+	religious_branch = dvoeverie
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+dvoeverie_st_vlasius = {
+	opposites = {
+		dvoeverie_holy_mary
+		dvoeverie_paraskeva_anastasia
+		dvoeverie_rasputin
+		dvoeverie_st_gyorgij_nevsky
+		dvoeverie_st_iliya
+		dvoeverie_st_nicholas
+		dvoeverie_tsar
+		dvoeverie_baba_matrona
+	}
+	stewardship = 1
+	monthly_character_piety = 0.2
+	
+	potential = { religion = dvoeverie }
+	religious_branch = dvoeverie
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+dvoeverie_tsar = {
+	opposites = {
+		dvoeverie_holy_mary
+		dvoeverie_paraskeva_anastasia
+		dvoeverie_rasputin
+		dvoeverie_st_gyorgij_nevsky
+		dvoeverie_st_iliya
+		dvoeverie_st_nicholas
+		dvoeverie_st_vlasius
+		dvoeverie_baba_matrona
+	}
+	same_opinion=5
+	opposite_opinion=-10
+	monthly_character_piety = 0.2
+	
+	tolerates_vernacular = yes
+	
+	ai_honor = -15
+	
+	potential = { religion = dvoeverie }
+	religious_branch = dvoeverie
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+dvoeverie_baba_matrona = {
+	opposites = {
+		dvoeverie_holy_mary
+		dvoeverie_paraskeva_anastasia
+		dvoeverie_rasputin
+		dvoeverie_st_gyorgij_nevsky
+		dvoeverie_st_iliya
+		dvoeverie_st_nicholas
+		dvoeverie_st_vlasius
+		dvoeverie_tsar
+	}
+	proletcult_opinion = 10
+	monthly_character_piety = 0.2
+	
+	tolerates_old_world_cultist_group = yes
+	
+	potential = { religion = dvoeverie }
+	religious_branch = dvoeverie
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}

@@ -3225,25 +3225,34 @@ narrative_event = {
 	option = {
 		name = EVTOPTA_SPOMENIK_SERBIA
 		hidden_tooltip = {
-			#narrative_event = { id = days = 12 }
+			random_list = {
+			    100 = { }
+			}
+			narrative_event = { id = jedinstvo.46 days = 12 }
 		}
 	}
 	option = {
 		name = EVTOPTB_SPOMENIK_CROATIA
 		hidden_tooltip = {
-			#narrative_event = { id = days = 12 }
+			random_list = {
+			    100 = { }
+			}
+			narrative_event = { id = jedinstvo.42 days = 12 }
 		}
 	}
 	option = {
 		name = EVTOPTC_SPOMENIK_BOSNIA
 		hidden_tooltip = {
-			#narrative_event = { id = days = 12 }
+			random_list = {
+			    100 = { }
+			}
+			narrative_event = { id = jedinstvo.43 days = 12 }
 		}
 	}
 	option = {
 		name = EVTOPTD_SPOMENIK_INDECISION
 		hidden_tooltip = {
-			narrative_event = { id = jedinstvo.41 days = 2 }
+			narrative_event = { id = jedinstvo.41 }
 		}
 	}
 }
@@ -3259,13 +3268,19 @@ narrative_event = {
 	option = {
 		name = EVTOPTE_SPOMENIK_SLOVENIA
 		hidden_tooltip = {
-			#narrative_event = { id =  days = 12 }
+		    random_list = {
+			    100 = { }
+			}
+			narrative_event = { id = jedinstvo.44 days = 12 }
 		}
 	}
 	option = {
 		name = EVTOPTF_SPOMENIK_MONTENEGRO
 		hidden_tooltip = {
-			#narrative_event = { id = days = 12 }
+			random_list = {
+			    100 = { }
+			}
+			narrative_event = { id = jedinstvo.45 days = 12 }
 		}
 	}
 	option = {
@@ -3280,10 +3295,272 @@ narrative_event = {
 	option = {
 		name = EVTOPTD_SPOMENIK_INDECISION
 		hidden_tooltip = {
-			narrative_event = { id = jedinstvo.40 days = 2 }
+			narrative_event = { id = jedinstvo.40 }
 		}
 	}
 }
+
+narrative_event = {
+	id = jedinstvo.42
+	title = EVTTITLE_jedinstvo_42
+	desc = EVTDESC_jedinstvo_42
+	picture = GFX_workers_march
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_jedinstvo_46
+		character_event = { id = jedinstvo.47 days = 4 }
+	}
+}
+
+narrative_event = {
+	id = jedinstvo.43
+	title = EVTTITLE_jedinstvo_43
+	desc = EVTDESC_jedinstvo_43
+	picture = GFX_workers_march
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_jedinstvo_46
+		character_event = { id = jedinstvo.47 days = 4 }
+	}
+}
+
+narrative_event = {
+	id = jedinstvo.44
+	title = EVTTITLE_jedinstvo_44
+	desc = EVTDESC_jedinstvo_44
+	picture = GFX_workers_march
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_jedinstvo_46
+		character_event = { id = jedinstvo.47 days = 4 }
+	}
+}
+
+narrative_event = {
+	id = jedinstvo.45
+	title = EVTTITLE_jedinstvo_45
+	desc = EVTDESC_jedinstvo_45
+	picture = GFX_workers_march
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_jedinstvo_46
+		character_event = { id = jedinstvo.47 days = 4 }
+	}
+}
+
+narrative_event = {
+	id = jedinstvo.46
+	title = EVTTITLE_jedinstvo_46
+	desc = EVTDESC_jedinstvo_46
+	picture = GFX_workers_march
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_jedinstvo_46
+		character_event = { id = jedinstvo.47 days = 4 }
+	}
+}
+
+character_event = {
+    id = jedinstvo.47
+    desc = EVTDESCjedinstvo47
+    picture = GFX_evt_ot_river
+    border = GFX_event_normal_frame_religion
+    is_triggered_only = yes
+	
+    immediate = {
+        if = {
+            limit = { 
+                ai = no
+                NOT = { has_character_flag = achievement_pilgrim }
+            }
+            set_character_flag = achievement_pilgrim
+        }
+    }
+
+    option = {      
+        name = EVTOPTAjedinstvo26
+		piety=50
+        remove_trait = on_pilgrimage
+        add_trait = pilgrim
+        
+        hidden_effect = {
+            clr_character_flag = do_not_disturb
+            clr_character_flag = pilgrimage_to_canterbury
+            clr_character_flag = pilgrimage_to_jerusalem
+            clr_character_flag = pilgrimage_to_koln
+            clr_character_flag = pilgrimage_to_rome
+            clr_character_flag = pilgrimage_to_santiago
+            clr_character_flag = pilgrimage_to_constantinople
+            clr_character_flag = pilgrimage_to_axum
+            clr_character_flag = pilgrimage_to_antioch
+            clr_character_flag = abominable_pilgrimage
+            clr_character_flag = preparing_pilgrimage
+            clr_character_flag = activated_pilgrimage
+            clr_character_flag = cold_saintly_pilgrimage
+            clr_character_flag = mild_saintly_pilgrimage
+            clr_character_flag = exotic_saintly_pilgrimage
+            clr_character_flag = generic_saintly_pilgrimage
+        }
+    }
+}
+
+character_event = {
+	id = jedinstvo.60
+	desc = {
+		text = EVTDESC_jedinstvo_60A
+		picture = GFX_workers_march
+		trigger = { 
+		    culture = slovene
+		}
+	}
+	desc = {
+		text = EVTDESC_jedinstvo_60B
+		picture = GFX_workers_march
+		trigger = { 
+		    culture = croatian
+		}
+	}
+	desc = {
+		text = EVTDESC_jedinstvo_60C
+		picture = GFX_workers_march
+		trigger = { 
+		    culture = montenegrin
+		}
+	}
+	desc = {
+		text = EVTDESC_jedinstvo_60D
+		picture = GFX_workers_march
+		trigger = { 
+		    culture = serbian
+		}
+	}
+	desc = {
+		text = EVTDESC_jedinstvo_60E
+		picture = GFX_workers_march
+		trigger = { 
+		    culture = bosniak
+		}
+	}
+	desc = {
+		text = EVTDESC_jedinstvo_60F
+		picture = GFX_workers_march
+		trigger = { 
+		    NOT = {
+			   culture = slovene
+			   culture = croatian
+			   culture = montenegrin
+			   culture = serbian
+			   culture = bosniak
+			}
+		}
+	}
+	
+	immediate = {
+	  	add_character_modifier = {
+			name = jedinstvo_folk_feast_timer
+			duration = 364
+			hidden = yes
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_jedinstvo_60
+		narrative_event = { id = jedinstvo.61 days = 1 }
+	}
+}
+
+narrative_event = {
+	id = jedinstvo.61
+	name = EVTNAME_britain.61
+	desc = {
+		text = EVTDESC_jedinstvo_61A
+		picture = GFX_workers_march
+		trigger = { 
+		    culture = slovene
+		}
+	}
+	desc = {
+		text = EVTDESC_jedinstvo_61B
+		picture = GFX_workers_march
+		trigger = { 
+		    culture = croatian
+		}
+	}
+	desc = {
+		text = EVTDESC_jedinstvo_61C
+		picture = GFX_workers_march
+		trigger = { 
+		    culture = montenegrin
+		}
+	}
+	desc = {
+		text = EVTDESC_jedinstvo_61D
+		picture = GFX_workers_march
+		trigger = { 
+		    culture = serbian
+		}
+	}
+	desc = {
+		text = EVTDESC_jedinstvo_61E
+		picture = GFX_workers_march
+		trigger = { 
+		    culture = bosniak
+		}
+	}
+	desc = {
+		text = EVTDESC_jedinstvo_61F
+		picture = GFX_workers_march
+		trigger = { 
+		    NOT = {
+			   culture = slovene
+			   culture = croatian
+			   culture = montenegrin
+			   culture = serbian
+			   culture = bosniak
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_jedinstvo_61
+		piety=30
+		random_list = {
+		   5 = { add_trait="drunkard" }
+		   5 = { add_trait="gluttonous" }
+		   20 = { add_trait="gregarious" }
+		   20 = { add_trait="poet" }
+		   50 = { }
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_jedinstvo_61
+		piety=50
+		random_list = {
+		   10 = { add_trait="temperate" }
+		   20 = { add_trait="shy" }
+		   10 = { add_trait="craven" }
+		   10 = { add_trait="cynical" }
+		   50 = { }
+		}
+	}
+}
+
+
 #Setting up Heroic Burial Site in a province
 province_event = {
 	id = jedinstvo.99

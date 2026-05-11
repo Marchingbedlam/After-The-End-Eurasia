@@ -12,7 +12,10 @@ decisions = {
 				has_quest = quest_monastic_order_pilgrimage_christian
 			}
 			is_playable = yes
-		    religion = pravoslavie
+			OR = {
+		        religion = pravoslavie
+				religion = dvoeverie
+		    }
 			NOT = { trait = pilgrim }
 			NOT = {
 				has_alternate_start_parameter = { key = religion_names value = random }
@@ -98,4 +101,152 @@ decisions = {
 			}
 		}
 	}	
+	change_dvoeverie_branch = {
+		ai = no
+		is_high_prio = yes
+
+		potential = {
+			religion = dvoeverie
+			is_playable = yes
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+
+		allow = {
+			religion = dvoeverie
+			is_playable = yes
+			piety=50
+		}
+
+		effect = {
+		    piety=-50
+			hidden_tooltip = {
+				character_event = { id = pravoslavie.19 }				
+			}
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+	}
+	
+	create_dvoeverie_patriarchate = {
+		is_high_prio = yes
+		only_playable = no
+		ai_check_interval = 36
+		potential = {
+			is_playable = yes
+			independent = yes
+			has_dlc = "Sons of Abraham"
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+			religion = dvoeverie
+
+			controls_religion = no
+
+			b_hrista_spasitelya = {
+				holder_scope = {
+					OR = {
+						character = ROOT
+						is_liege_or_above = ROOT
+					}
+					AND = {
+						ROOT = { religion = dvoeverie }
+						d_dvoeverie = {
+							has_holder = no
+						}
+					}
+				}
+			}
+			NOT = { has_character_flag = dvoeverie_patriarchate_formed }
+		}
+		
+		effect = {
+			create_random_priest = {
+				random_traits = yes
+				dynasty = random
+				religion = dvoeverie
+				culture = ROOT
+				age = 60
+				health = 7
+				add_trait = zealous
+				add_trait = dvoeverie_holy_mary
+				attributes = {
+					learning = 14
+					diplomacy = 6
+					martial = 8
+					stewardship = 5
+					intrigue = 10
+				}
+			}
+			new_character = {
+				grant_title = d_dvoeverie
+				grant_title = b_hrista_spasitelya
+				wealth = 300
+				add_friend = ROOT
+			}
+			set_global_flag = dvoeverie_patriarchate_formed
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		
+	restore_russian_patriarchate = {
+		is_high_prio = yes
+		only_playable = no
+		ai_check_interval = 36
+		potential = {
+			is_playable = yes
+			independent = yes
+			has_dlc = "Sons of Abraham"
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+			OR = { 
+			   religion = pravoslavie
+			   AND = { 
+			       religion = dvoeverie
+				   has_global_flag = dvoeverie_patriarchate_formed
+			    }
+			}
+
+			controls_religion = no
+
+			b_hrista_spasitelya = {
+				holder_scope = {
+					OR = {
+						character = ROOT
+						is_liege_or_above = ROOT
+					}
+				}
+			}
+		}
+		
+		effect = {
+			if = {
+			 limit = { religion = dvoeverie }
+			 d_dvoeverie = {
+			  holder_scope = {
+				grant_title = b_hrista_spasitelya
+		      }
+			 }
+			}
+			if = {
+			 limit = { religion = pravoslavie }
+			 d_pravoslavie = {
+			  holder_scope = {
+				grant_title = b_hrista_spasitelya
+		      }
+			 }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

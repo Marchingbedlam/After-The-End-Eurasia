@@ -43,6 +43,7 @@ is_member_of_any_warrior_lodge_trigger = {
 			society_member_of = warrior_lodge_kozachina
 			society_member_of = warrior_lodge_folketro
 			society_member_of = warrior_lodge_sun_king_cultist
+			society_member_of = warrior_lodge_jedinstvo
 		}
 	}
 }
@@ -475,6 +476,21 @@ special_join_warrior_lodge_trigger = {
 					any_vassal = { OR = { religion = sun_king_cultist religion = chevalier } }
 					any_liege = { OR = { religion = sun_king_cultist religion = chevalier } }
 					any_neighbor_independent_ruler = { OR = { religion = sun_king_cultist religion = chevalier } }
+				}
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				FROM = { is_society = warrior_lodge_jedinstvo }
+			}
+
+			custom_tooltip = {
+				text = has_liege_vassal_or_neighbor_of_neoplatonist_religion_tt
+
+				OR = {
+					any_vassal = { religion = jedinstvo }
+					any_liege = { religion = jedinstvo }
+					any_neighbor_independent_ruler = { religion = jedinstvo }
 				}
 			}
 		}

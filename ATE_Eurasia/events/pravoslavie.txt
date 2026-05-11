@@ -151,8 +151,20 @@ character_event = { #Go to Moscow
 narrative_event = { #Welcome in Moscow
 	id = pravoslavie.5
 	title = EVTNAME_pravoslavie.5
-	desc = EVTDESC_pravoslavie.5
-	picture = GFX_evt_moscow
+	desc = {
+		text = EVTDESCA_pravoslavie.5
+		picture = GFX_evt_moscow
+		trigger = { 
+			religion = pravoslavie
+		}
+	}
+	desc = {
+		text = EVTDESCB_pravoslavie.5
+		picture = GFX_evt_moscow
+		trigger = { 
+			religion = dvoeverie
+		}
+	}
 
 	is_triggered_only = yes
 	
@@ -704,5 +716,89 @@ character_event = {
 			}
 		}
 		piety=-25
+	}
+}
+
+character_event = { 
+	id = pravoslavie.19
+	desc = EVTDESC_pravoslavie.19
+	picture = GFX_evt_russian_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_pravoslavie.19
+		add_trait="dvoeverie_holy_mary"
+	}
+	
+	option = { 
+		name = EVTOPTB_pravoslavie.19
+		add_trait="dvoeverie_st_nicholas"
+	}
+	
+	option = { 
+		name = EVTOPTC_pravoslavie.19
+		add_trait="dvoeverie_st_iliya"
+	}
+		
+	option = { 
+		name = EVTOPTD_pravoslavie.19
+		character_event = { id = pravoslavie.20 }
+	}
+}
+
+character_event = { 
+	id = pravoslavie.20
+	desc = EVTDESC_pravoslavie.19
+	picture = GFX_evt_russian_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_pravoslavie.20
+		add_trait="dvoeverie_paraskeva_anastasia"
+	}
+	
+	option = { 
+		name = EVTOPTB_pravoslavie.20
+		add_trait="dvoeverie_st_gyorgij_nevsky"
+	}
+	
+	option = { 
+		name = EVTOPTC_pravoslavie.20
+		add_trait="dvoeverie_st_vlasius"
+	}
+		
+	option = { 
+		name = EVTOPTD_pravoslavie.19
+		character_event = { id = pravoslavie.21 }
+	}
+}
+
+character_event = { 
+	id = pravoslavie.21
+	desc = EVTDESC_pravoslavie.19
+	picture = GFX_evt_russian_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_pravoslavie.21
+		add_trait="dvoeverie_tsar"
+	}
+	
+	option = { 
+		name = EVTOPTB_pravoslavie.21
+		add_trait="dvoeverie_rasputin"
+	}
+	
+	option = { 
+		name = EVTOPTC_pravoslavie.21
+		add_trait="dvoeverie_baba_matrona"
+	}
+		
+	option = { 
+		name = EVTOPTD_pravoslavie.19
+		character_event = { id = pravoslavie.19 }
 	}
 }

@@ -1,0 +1,202 @@
+namespace = christian
+
+narrative_event = {
+	id = christian.1
+	title = EVTNAME_christian_1
+	desc = EVTDESC_christian_1
+	picture = GFX_evt_open_book_hf
+	
+	is_triggered_only = yes
+
+	
+	option = {
+		name = EVTOPTA_christian_1
+		narrative_event = { id = christian.2 }
+		hidden_tooltip = { add_character_modifier = { name = practiced_lectio_divina years = 1 hidden = yes } }
+	}
+	option = {
+		name = EVTOPTB_christian_1
+		narrative_event = { id = christian.3 }
+		hidden_tooltip = { add_character_modifier = { name = practiced_lectio_divina years = 1 hidden = yes } }
+	}
+}
+
+narrative_event = { 
+	id = christian.2
+	title = EVTNAME_christian_2
+	desc = EVTDESC_christian_2
+	picture = GFX_evt_open_book_hf
+	
+	is_triggered_only = yes
+
+	
+	option = { 
+		name = EVTOPTA_christian_2
+		set_character_flag = lectio_divina_read_gospels
+		character_event = { id = christian.4 }
+	}
+	option = { 
+		name = EVTOPTB_christian_2
+		set_character_flag = lectio_divina_read_letters
+		character_event = { id = christian.4 }
+	}
+	option = { 
+		name = EVTOPTC_christian_2
+		set_character_flag = lectio_divina_acts_of_apostoles
+		character_event = { id = christian.4 }
+	}
+	option = { 
+		name = EVTOPTD_christian_2
+		set_character_flag = lectio_divina_book_of_revelation
+		character_event = { id = christian.4 }
+	}
+}
+
+narrative_event = {
+	id = christian.3
+	title = EVTNAME_christian_3
+	desc = EVTDESC_christian_3
+	picture = GFX_evt_open_book_hf
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_christian_3
+		set_character_flag = lectio_divina_torah
+		character_event = { id = christian.4 }
+	}
+	option = {
+		name = EVTOPTB_christian_3
+		set_character_flag = lectio_divina_historical
+		character_event = { id = christian.4 }
+	}
+	option = {
+		name = EVTOPTC_christian_3
+		set_character_flag = lectio_divina_wisdom
+		character_event = { id = christian.4 }
+	}
+	option = {
+		name = EVTOPTD_christian_3
+		set_character_flag = lectio_divina_prophetic
+		character_event = { id = christian.4 }
+	}
+}
+
+character_event = {
+	id = christian.4
+	title = EVTNAME_christian_4
+	desc = {
+		text = EVTDESC_lectio_divina_gospels
+		picture = GFX_evt_open_book_hf
+		trigger = { 
+			has_character_flag = lectio_divina_read_gospels
+		}
+	}
+	desc = {
+		text = EVTDESC_lectio_divina_letters
+		picture = GFX_evt_open_book_hf
+		trigger = { 
+			has_character_flag = lectio_divina_read_letters
+		}
+	}
+	desc = {
+		text = EVTDESC_lectio_divina_acts_of_apostoles
+		picture = GFX_evt_open_book_hf
+		trigger = { 
+			has_character_flag = lectio_divina_acts_of_apostoles
+		}
+	}
+	desc = {
+		text = EVTDESC_lectio_divina_book_of_revelation
+		picture = GFX_evt_open_book_hf
+		trigger = { 
+			has_character_flag = lectio_divina_book_of_revelation
+		}
+	}
+	desc = {
+		text = EVTDESC_lectio_divina_torah
+		picture = GFX_evt_open_book_hf
+		trigger = { 
+			has_character_flag = lectio_divina_torah
+		}
+	}
+	desc = {
+		text = EVTDESC_lectio_divina_historical
+		picture = GFX_evt_open_book_hf
+		trigger = { 
+			has_character_flag = lectio_divina_historical
+		}
+	}
+	desc = {
+		text = EVTDESC_lectio_divina_prophetic
+		picture = GFX_evt_open_book_hf
+		trigger = { 
+			has_character_flag = lectio_divina_prophetic
+		}
+	}
+	desc = {
+		text = EVTDESC_lectio_divina_wisdom
+		picture = GFX_evt_open_book_hf
+		trigger = { 
+			has_character_flag = lectio_divina_wisdom
+		}
+	}
+	
+	is_triggered_only = yes
+
+	
+	option = {
+		name = EVTOPTA_christian_4
+		character_event = { id = christian.5 }
+		clr_character_flag = lectio_divina_acts_of_apostoles
+		clr_character_flag = lectio_divina_book_of_revelation
+		clr_character_flag = lectio_divina_historical
+		clr_character_flag = lectio_divina_prophetic
+		clr_character_flag = lectio_divina_read_gospels
+		clr_character_flag = lectio_divina_read_letters
+		clr_character_flag = lectio_divina_torah
+		clr_character_flag = lectio_divina_wisdom
+	}
+}
+
+character_event = {
+	id = christian.5
+	title = EVTNAME_christian_5
+	desc = EVTDESC_christian_5
+	picture = GFX_evt_open_book_hf
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_christian_5
+		character_event = { id = christian.6 }
+	}
+}
+
+character_event = {
+	id = christian.6
+	title = EVTNAME_christian_6
+	desc = EVTDESC_christian_6
+	picture = GFX_evt_open_book_hf
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_christian_6
+		character_event = { id = christian.7 }
+	}
+}
+
+character_event = {
+	id = christian.10
+	title = EVTNAME_christian_7
+	desc = EVTDESC_christian_7
+	picture = GFX_evt_open_book_hf
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_christian_7
+		piety=30
+	}
+}

@@ -125,32 +125,83 @@ go_to_glorian_pilgrimage;Go on a pilgrimage;;;;;;;;;;;;;x
 go_to_glorian_pilgrimage_desc;While pilgrimages are not as popular among the Virgin Queen's followers as they are among Christians, there are those who faithfully make pilgrimages to places associated with the Imperial Crown and its legacy. You, too, could be one of them.;;;;;;;;;;;;;x
 EVTDESC_britain.107;I shall go to pilgrimage to seek Queen's grace in one of the holy places of british history.;;;;;;;;;;;;;x
 EVTOPTA_britain.107;I will start making travel plans.;;;;;;;;;;;;;x
+EVTNAME_britain.108;Pilgrimage;;;;;;;;;;;;;x
 EVTDESC_britain.108;There are a number of diffrent holy places that you could visit on your pilgrimage. All of them are considered most sacred in our Queen's eyes, but a somewhat closed destination might mean a safer journey.;;;;;;;;;;;;;x
-EVTOPTA_britain.108;I shall visit London;;;;;;;;;;;;;x
-EVTOPTB_britain.108;I shall visit Oxford;;;;;;;;;;;;;x
-EVTOPTC_britain.108;I shall visit Glastonbury;;;;;;;;;;;;;x
-EVTOPTD_britain.108;I shall visit Perth;;;;;;;;;;;;;x
-EVTOPTE_britain.108;I shall visit Calais;;;;;;;;;;;;;x
-EVTOPTF_britain.108;I shall visit London or Oxford;;;;;;;;;;;;;x
+EVTOPTA_britain.108;I will visit London;;;;;;;;;;;;;x
+EVTOPTB_britain.108;I will visit Oxford;;;;;;;;;;;;;x
+EVTOPTC_britain.108;I will visit London or Oxford;;;;;;;;;;;;;x
+EVTOPTD_britain.108;I will visit Calais, Glastonbury or Perth;;;;;;;;;;;;;x
+EVTOPTE_britain.108;I will visit some less known city deserving for my time;;;;;;;;;;;;;x
+EVTDESC_britain.109;I will visit Calais, Glastonbury or Perth;;;;;;;;;;;;;x
 EVTOPTA_britain.109;My journey begins!;;;;;;;;;;;;;x
-EVTDESC_britain.109;My things are packed, everything is in order. You say goodbye to your estate and go to unforgotten pilgrimage to London - former capital of glorious British Empire.;;;;;;;;;;;;;x
-EVTDESC_britain.110;My things are packed, everything is in order. You say goodbye to your estate and go to unforgotten pilgrimage to Oxford - city where spiritual salt of Virgin Queen's were produced.;;;;;;;;;;;;;x
-EVTDESC_britain.111;My things are packed, everything is in order. You say goodbye to your estate and go to unforgotten pilgrimage to Glastonbury Abbey - place where King Arthur were buried.;;;;;;;;;;;;;x
-EVTDESC_britain.112;My things are packed, everything is in order. You say goodbye to your estate and go to unforgotten pilgrimage to Perth - place where all kings of Scottish Land were crowned.;;;;;;;;;;;;;x
-EVTDESC_britain.113;My things are packed, everything is in order. You say goodbye to your estate and go to unforgotten pilgrimage to Calais - last bastion of Her Majesty Kingdom in France.;;;;;;;;;;;;;x
-EVTNAME_britain.114;London;;;;;;;;;;;;;x
-EVTDESC_britain.114;You reach London—the ancient capital of the Virgin Queen's great empire. In the distance, you see Westminster Abbey—where the greatest ceremonies in all of Albion once took place. But you continue on, passing streets filled with merchants, travelers, and the people of London themselves. And on you go, you see the former Houses of Parliament in the distance—today it's a ruin, but perhaps one day the Virgin Queen will return and rebuild it herself, casting it once more in gold, silver, and platinum, to make it a more magnificent house than ever, capable of housing all of Parliament and all those whom the Queen most delights. Soon, you reach the ruins of Parliament—people like you are already gathering there, eager to pay their respects to the Pearl of Albion.;;;;;;;;;;;x
-EVTNAME_britain.115;Oxford;;;;;;;;;;;;;x
-EVTDESC_britain.115;You reach Oxford—a monument to English culture and learning, the place where, many years ago, when London was threatened, Parliament met and enacted laws binding all of Albion. It was here that, over the years, great names and minds were forged to the glory of the Queen. You reach this city and see in the distance the old university—a forge of elites. You walk there, fight your way through crowds of locals, other pilgrims, and students, then reach the university and descend into the old university chapel to pay homage to the one to whom you made the pilgrimage.;;;;;;;;;;;x
-EVTNAME_britain.116;Glastonbury;;;;;;;;;;;;;x
-EVTDESC_britain.116;You arrive in Glastonbury, an old town near Somerset. This unassuming place for a foreigner is very important to the locals. You visit Glastonbury Priory, or rather its ruins. Among these ruins, you see countless candles lit by pilgrims and locals. Outsiders claim that one of England's kings destroyed this monastery centuries ago, but no devout follower of the Virgin Queen would ever believe it. Legends say that prayers were held here before the Event in honor of the Virgin Queen, and that the Knights of the Round Table swore allegiance to King Arthur, who was to be buried within the Abbey grounds. After visiting the old priory, you ascend to Glastonbury Tor, from where you can observe the entire town at a glance, just as the heroes of the Round Table did centuries ago.;;;;;;;;;;;x
-EVTNAME_britain.117;Perth;;;;;;;;;;;;;x
-EVTDESC_britain.117;You arrive in Perth, an ancient Scottish city. The city looks beautiful from afar, but for a devout worshipper of the Virgin Queen, something else is important—something permanent, not fleeting like beauty. You pass the inhabitants of Perth and walk a long way until you reach Scone Palace, the coronation site of Scotland's kings. You pass other visitors who also wanted to visit this ancient complex—soon you reach the place where the Scots moved the stone—and so you stand before one of the corridors and see it, the sacred stone of Scone on which every Scottish king was crowned.;;;;;;;;;;;;;x
-EVTNAME_britain.118;Calais;;;;;;;;;;;;;x
-EVTDESC_britain.118;You reach Calais—a city that for many years was a legacy of British genius and power, and one of the jewels of the British imperial crown. Although there are few traces of the Virgin Queen's former power left. In the distance, you see fishermen setting sail—who knows, perhaps they'll find debris from the crushed galleons of the demonic Great Armada, whose commanders were wizards and warriors of evil, who using their spells and illusionistic tricks, sought to kill the Virgin Queen and make Albion a living hell. But you don't wait for them to find anything—you head further, to the ruins of an ancient castle where the Queen's steward resided for many years, standing on the fringes of her vast empire, guarding the land of milk and water against the barbarians from the south and east, there to pay homage to him and your Queen.;;;;;;;;;;;x
-EVTOPTA_britain.114;Long live the Virgin Queen!;;;;;;;;;;;;;x
-EVTOPTA_britain.115;Long live the Virgin Queen!;;;;;;;;;;;;;x
-EVTOPTA_britain.116;Parsifal and Lohengrin, come with me here!;;;;;;;;;;;;;x
-EVTOPTA_britain.117;Kings of Beloved Scottish Land, I am with you!;;;;;;;;;;;;;x
-EVTOPTA_britain.118;Long live the Virgin Queen!;;;;;;;;;;;;;x
-EVTDESC_britain.119;London and Oxford are two holy cities for the followers of the Virgin Queen - now you must choose which one you want to go to.;;;;;;;;;;;;;x
+EVTDESC_britain_109_LONDON;My things are packed, everything is in order. I say goodbye to my estate and go to unforgotten pilgrimage to London - former capital of glorious British Empire.;;;;;;;;;;;;;x
+EVTDESC_britain_109_OXFORD;My things are packed, everything is in order. I say goodbye to my estate and go to unforgotten pilgrimage to Oxford - city where spiritual salt of Virgin Queen's were produced.;;;;;;;;;;;;;x
+EVTDESC_britain_109_GLASTONBURY;My things are packed, everything is in order. I say goodbye to my estate and go to unforgotten pilgrimage to Glastonbury Abbey - place where King Arthur were buried.;;;;;;;;;;;;;x
+EVTDESC_britain_109_PERTH;My things are packed, everything is in order. I say goodbye to my estate and go to unforgotten pilgrimage to Perth - place where all kings of Scottish Land were crowned.;;;;;;;;;;;;;x
+EVTDESC_britain_109_CALAIS;My things are packed, everything is in order. I say goodbye to my estate and go to unforgotten pilgrimage to Calais - last bastion of Her Majesty Kingdom in France.;;;;;;;;;;;;;x
+EVTDESC_britain_109_LEICESTER;My things are packed, everything is in order. I say goodbye to my estate and go to unforgotten pilgrimage to Leicester and equally unforgotten place which is next to it: Bosworth.;;;;;;;;;;;;;x
+EVTDESC_britain_109_STRATFORD;My things are packed, everything is in order. I say goodbye to my estate and go to unforgotten pilgrimage to Stratford, birthplace of William Shakespeare.;;;;;;;;;;;;;x
+EVTDESC_britain_109_TILBURY;My things are packed, everything is in order. I say goodbye to my estate and go to unforgotten pilgrimage to Tilbury, the place where the Virgin Queen gave a memorable speech to her soldiers before fighting the Great Armada.;;;;;;;;;;;;;x
+EVTNAME_LONDON;London;;;;;;;;;;;;;x
+EVTNAME_OXFORD;Oxford;;;;;;;;;;;;;x
+EVTNAME_PERTH;Perth;;;;;;;;;;;;;x
+EVTNAME_GLASTONBURY;Glastonbury;;;;;;;;;;;;;x
+EVTNAME_CALAIS;Calais;;;;;;;;;;;;;x
+EVTNAME_LEICESTER;Leicester;;;;;;;;;;;;;x
+EVTNAME_TILBURY;Tilbury;;;;;;;;;;;;;x
+EVTNAME_STRATFORD;Stratford-upon-Avon;;;;;;;;;;;;;x
+EVTDESC_britain_110_LONDON;You reach London, the ancient capital of the Virgin Queen's great empire. In the distance, you see Westminster Abbey—where the greatest ceremonies in all of Albion once took place. But you continue on, passing streets filled with merchants, travelers, and the people of London themselves. And on you go, you see the former Houses of Parliament in the distance—today it's a ruin, but perhaps one day the Virgin Queen will return and rebuild it herself, casting it once more in gold, silver, and platinum, to make it a more magnificent house than ever, capable of housing all of Parliament and all those whom the Queen most delights. Soon, you reach the ruins of Parliament—people like you are already gathering there, eager to pay their respects to the Pearl of Albion.;;;;;;;;;;;x
+EVTDESC_britain_110_OXFORD;You reach Oxford, A monument to English culture and learning, the place where, many years ago, when London was threatened, Parliament met and enacted laws binding all of Albion. It was here that, over the years, great names and minds were forged to the glory of the Queen. You reach this city and see in the distance the old university—a forge of elites. You walk there, fight your way through crowds of locals, other pilgrims, and students, then reach the university and descend into the old university chapel to pay homage to the one to whom you made the pilgrimage.;;;;;;;;;;;x
+EVTDESC_britain_110_GLASTONBURY;You arrive in Glastonbury, an old town near Somerset. This unassuming place for a foreigner is very important to the locals. You visit Glastonbury Priory, or rather its ruins. Among these ruins, you see countless candles lit by pilgrims and locals. Outsiders claim that one of England's kings destroyed this monastery centuries ago, but no devout follower of the Virgin Queen would ever believe it. Legends say that prayers were held here before the Event in honor of the Virgin Queen, and that the Knights of the Round Table swore allegiance to King Arthur, who was to be buried within the Abbey grounds. After visiting the old priory, you ascend to Glastonbury Tor, from where you can observe the entire town at a glance, just as the heroes of the Round Table did centuries ago.;;;;;;;;;;;x
+EVTDESC_britain_110_PERTH;You arrive in Perth, an ancient Scottish city. The city looks beautiful from afar, but for a devout worshipper of the Virgin Queen, something else is important—something permanent, not fleeting like beauty. You pass the inhabitants of Perth and walk a long way until you reach Scone Palace, the coronation site of Scotland's kings. You pass other visitors who also wanted to visit this ancient complex—soon you reach the place where the Scots moved the stone—and so you stand before one of the corridors and see it, the sacred stone of Scone on which every Scottish king was crowned.;;;;;;;;;;;;;x
+EVTDESC_britain_110_CALAIS;You reach Calais, city that for many years was a legacy of British genius and power, and one of the jewels of the British imperial crown. Although there are few traces of the Virgin Queen's former power left. In the distance, you see fishermen setting sail—who knows, perhaps they'll find debris from the crushed galleons of the demonic Great Armada, whose commanders were wizards and warriors of evil, who using their spells and illusionistic tricks, sought to kill the Virgin Queen and make Albion a living hell. But you don't wait for them to find anything—you head further, to the ruins of an ancient castle where the Queen's steward resided for many years, standing on the fringes of her vast empire, guarding the land of milk and water against the barbarians from the south and east, there to pay homage to him and your Queen.;;;;;;;;;;;x
+EVTDESC_britain_110_LEICESTER;You arrive in Leicester, city little known but rich in history. More famous is the field near the city, Bosworth Field, where many years ago, in the fateful year of 1485, Richmond defeated the usurper Richard III, a tyrant and murderer of his innocent nephews. On the way to Leicester, you pass this field and pay homage to those who fought for the Red Rose, before entering Leicester. You see the city's ancient buildings, and as you pass Leicester Cathedral, you see a statue of a man holding a sword in one hand and raising a crown in the other. Some say this statue represents King Robert Hood, others Henry VII. One thing is certain, this city fills you with an aura that no other city has ever possessed.;;;;;;;;;;;;;x
+EVTDESC_britain_110_TILBURY;You arrive at Tilbury. It was here, over 1,000 years ago, that Queen Gloriana gathered with her army to defend Albion from the demonic Great Armada and delivered her unforgettable speech, which instilled courage in the hearts of all gathered, so that not one of them faltered or faltered during the battle with the Spanish. You see this village and you don't see the glory, but you know it's there. Here, on this beaten earth, stood many thousands of brave Englishmen, ready to shed their blood for Albion.;;;;;;;;;;;;;x
+EVTDESC_britain_110_STRATFORD;You reach Stratford-upon-Avon, where, hundreds of years ago, the greatest bard of all time was born: William Shakespeare, who immortalized the wickedness of Richard III and Macbeth and portrayed the virtues of Henry VII and the Virgin Queen. You pass through the streets of this ancient city, seeing old buildings that recall the memorable times before the Event. You're glad you've come to this small but important town. You enter the old Holy Trinity Church, where, according to legend, Shakespeare's grave lies, and after a moment, you spot him. The statue of the Bard of Avon hasn't survived well, but the inscription has. You read it and it reads: "Stay, passenger, why goest thou by so fast? Read, if thou canst, whom envious death hath placed, Within this monument: Shakespeare, with whom, Quick nature died; whose name doth deck this tomb, Far more than cost, sith all that he hath writ, Leaves living art but page to serve his wit".;;;;;;;;;;;;;x
+EVTOPTA_britain.110;Nice I can be here;;;;;;;;;;;;;x
+EVTOPTA_britain_110A;Long live the Virgin Queen!;;;;;;;;;;;;;x
+EVTOPTA_britain_110B;Parsifal and Lohengrin, come with me here!;;;;;;;;;;;;;x
+EVTOPTA_britain_110C;Kings of Beloved Scottish Land, I am with you!;;;;;;;;;;;;;x
+EVTDESC_britain.111;London and Oxford are two holy cities for the followers of the Virgin Queen - now you must choose which one you want to go to.;;;;;;;;;;;;;x
+EVTDESC_britain.111;Long live the Virgin Queen!;;;;;;;;;;;;;x
+EVTOPTA_britain.111;Long live the Virgin Queen!;;;;;;;;;;;;;x
+EVTDESC_britain.112;You finally return home after this pilgrimage. You feel it has taught you some lessons, including a lesson in homesickness.;;;;;;;;;;;;;x
+EVTOPTA_britain.112;Everywhere is nice, but in home is nicest...;;;;;;;;;;;;;x
+EVTDESC_britain.113;In addition to the more famous places of pilgrimage such as London, Oxford, Calais, Glastonbury and Perth, there are others less frequented such as Leicester and nearby Bosworth, Tilbury and Stratford-upon-Avon, the hometown of Master Shakespeare.;;;;;;;;;;;;;x
+EVTOPTA_britain.113;I shall visit Bosworth and Leicester;;;;;;;;;;;;;x
+EVTOPTB_britain.113;I shall visit Tilbury;;;;;;;;;;;;;x
+EVTOPTC_britain.113;I shall visit Stratford-upon-Avon;;;;;;;;;;;;;x
+EVTDESC_britain.114;As a worshipper of the Virgin Queen, you can choose from other places important to her: the ancient Glastonbury Abbey where King Arthur was buried, Calais, a stronghold of the Crown, or Perth, the most important place for ancient Scottish kings.;;;;;;;;;;;;;x
+EVTOPTA_britain.114;I shall visit Glastonbury;;;;;;;;;;;;;x
+EVTOPTB_britain.114;I shall visit Perth;;;;;;;;;;;;;x
+EVTOPTC_britain.114;I shall visit Calais;;;;;;;;;;;;;x
+EVTDESC_britain_115;As you walk along a rather old, ancient road, you see two roadmen walking towards you.;;;;;;;;;;;;;x
+EVTDESC_britain.122;During your journey, you reach a provincial town. You hear from several people that a cricket tournament is taking place there, a team sport that has long been a common practice in Albion, strengthening bonds between people regardless of social class. The people you meet urge you to attend the match and perhaps even bet on one of the teams.;;;;;;;;;;;;;x
+EVTOPTA_britain.122;Go to the match;;;;;;;;;;;;;x
+EVTOPTB_britain.122;Go further;;;;;;;;;;;;;x
+EVTNAMEbritain_123;Cricket match;;;;;;;;;;;;;x
+EVTDESC_britain_123;You walk towards the pitch where a cricket match is about to take place. You enter the stands, where a heated debate is taking place. Some claim that the home team will win, having practiced all night and all day for this important match. Others claim that the guests team will win, having also caught up with the economy in terms of time devoted to practice. From a distance, you hear a man calling for bets on one team or the other.;;;;;;;;;;;;;x
+EVTOPTA_britain_123;Bet on the home team;;;;;;;;;;;;;x
+EVTOPTB_britain_123;Bet on the away team;;;;;;;;;;;;;x
+EVTOPTC_britain_123;I bet on noone;;;;;;;;;;;;;x
+EVTDESC_britain.124;Even though the team you bet on has a good chance of winning, they ultimately lose. You lose your bet and leave the stands with a loss.;;;;;;;;;;;;;x
+EVTOPTA_britain.124;Money gone down the drain;;;;;;;;;;;;;x
+EVTDESC_britain.125;Despite the high risk that the team you bet on will lose, you ultimately win. You win your bet and emerge from the stands with a profit.;;;;;;;;;;;;;x
+EVTOPTA_britain.125;Easy win;;;;;;;;;;;;;x
+EVTDESC_britain.126;You sit and watch the cricket match the entire match. When the home team wins, you leave rejoicing in their victory.;;;;;;;;;;;;;x
+EVTOPTA_britain.126;Nice match;;;;;;;;;;;;;x
+EVTDESC_britain.127;Along the way, you pass a troupe of musicians who have stopped nearby. They sing a long and captivating ballad about how Henry V set out for France with his soldiers and, on St. Crispin's Day, fought a battle against the French rebels for the glory of Albion and the Crown, which he won by drowning the greatest wicked men of France in blood. The lengthy ballad ends with a deathbed monologue from the king, in which he expresses regret that he was unable to finish the war against the treacherous Armagnacs and set out for the Holy Land.;;;;;;;;;;;;;x
+EVTOPTA_britain.127;It is truly a beautiful ballad about a great conqueror.;;;;;;;;;;;;;x
+EVTOPTB_britain.127;Nice rhymes, but don't sing this ballad to someone who's been to war.;;;;;;;;;;;;;x
+EVTDESC_britain_128;Passing by a certain village, you hear the peasants singing about poor princess, abandoned by her husband. You approach and sit nearby, listening to the song from afar. However, the peasants quickly notice you and order you to come closer.;;;;;;;;;;;;;x
+EVTOPTA_britain_128;Come over;;;;;;;;;;;;;x
+EVTOPTB_britain_128;Run away;;;;;;;;;;;;;x
+EVTNAMEbritain_129;Spanish Princess;;;;;;;;;;;;;x
+EVTDESC_britain_129;When the peasants hear that you are a pilgrim, they rejoice that there are still those who make pilgrimages for the glory of the Virgin Queen. They also tell you the legend of Catherine, about which they sang. Catherine was a Spanish princess, daughter of the greatest family of the south. She married Henry, son of the victor of Bosworth. She was a heroic queen who, while her husband was fighting the treacherous French, defended York from the invasion of the savage Scots. However, over the years, her husband, Henry VIII, abandoned her and exiled her to the Isle of Ely, where she died and went to eternal glory. When you finish listening to this story, you praise her as pious and wise. The next day, after spending the night with the peasants and learning a song in honor of Catherine, the peasants release you and promise to pray to [Root.Religion.GetRandomGodName] for a happy ending to your pilgrimage.;;;;;;;;;;;;;x
+EVTOPTA_britain_129;Nice people;;;;;;;;;;;;;x
+EVTDESC_britain_130;On the way to your destination, you encounter two Anglican pilgrims. You chat with them and after a moment, the topic turns to faith. After a while, you part ways, but the conversation leaves you wondering whether your Glorian faith is truly true and not Anglican.;;;;;;;;;;;;;x
+EVTOPTA_britain_130;Nonsense, Virgin Queen protect Albion, not Anglicanism...;;;;;;;;;;;;;x
+EVTOPTB_britain_130;Maybe they were right...;;;;;;;;;;;;;x
+EVTOPTC_britain_130;They were right, anglicanism is true british religion...;;;;;;;;;;;;;x
+EVTDESC_britain_131;In a town on the way to the destination of your pilgrimage, you encounter a traveling troupe of actors and, after paying a modest sum, you see one of their traditional English plays.;;;;;;;;;;;;;x
+EVTOPTA_britain_131;Nice show;;;;;;;;;;;;;x

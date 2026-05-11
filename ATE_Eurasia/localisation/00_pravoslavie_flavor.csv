@@ -5,7 +5,7 @@ go_to_pravoslavie_pilgrimage_desc;The faith of the Russian Orthodox Church permi
 EVTDESC_pravoslavie.1;I shall go to pilgrimage to seek God's grace in one of the holy places of Russian Orthodoxy;;;;;;;;;;;;;x
 EVTOPTA_pravoslavie.1;I will start making travel plans.;;;;;;;;;;;;;x
 EVTOPTB_pravoslavie.1;On the other hand, maybe there are other ways to seek grace of God...;;;;;;;;;;;;;x
-EVTDESC_pravoslavie.2;There are a number of diffrent holy places that you could visit on your pilgrimage. All of them are considered most sacred by the Russian Orthodox Church ruled by Patriarch of Moscow and Holy Synod, but a somewhat closed destination might mean a safer journey.;;;;;;;;;;;;;x
+EVTDESC_pravoslavie.2;There are a number of diffrent holy places that you could visit on your pilgrimage. All of them are considered most sacred by the Russian Orthodox Church, but a somewhat closed destination might mean a safer journey.;;;;;;;;;;;;;x
 EVTOPTA_pravoslavie.2;I will go to one of the hearts of russian orthodoxy, Moscow or Kyiv;;;;;;;;;;;;;x
 EVTOPTB_pravoslavie.2;I shall visit Kyiv;;;;;;;;;;;;;x
 EVTOPTC_pravoslavie.2;I shall visit Moscow;;;;;;;;;;;;;x
@@ -18,7 +18,8 @@ EVTDESC_pravoslavie.4;My things are packed, everything is in order. You say good
 EVTOPTA_pravoslavie.4;My journey begins!;;;;;;;;;;;;;x
 EVTDESC_pravoslavie.6;My things are packed, everything is in order. You say goodbye to your estate and go to unforgotten pilgrimage to Kyiv - place where first russian christians were baptised by missionaries from Second Rome.;;;;;;;;;;;;;x
 EVTNAME_pravoslavie.5;Moscow;;;;;;;;;;;;;x
-EVTDESC_pravoslavie.5;You've finally reached Moscow—the Third Rome, the last Rome, for there will be no fourth! Both then and now, Moscow is the heart of Russian Orthodoxy, where the Patriarch of Moscow and All Russia has his episcopal see. From afar, you see Saint Basil's Cathedral—the most magnificent church your eyes have ever seen. Along the way, you pass other churches, less beautiful, for Saint Basil's Cathedral has robbed them of their luster. Soon, you reach the Danilova Monastery and witness with your own eyes the Patriarch of Moscow and All Russia taking the Gospel and blessing the gathered pilgrims with it—you rush over and kneel to receive this blessing from him.;;;;;;;;;;;;;x
+EVTDESCA_pravoslavie.5;You've finally reached Moscow—the Third Rome, the last Rome, for there will be no fourth! Both then and now, Moscow is the heart of Russian Orthodoxy, where the Patriarch of Moscow and All Russia has his episcopal see. From afar, you see Saint Basil's Cathedral—the most magnificent church your eyes have ever seen. Along the way, you pass other churches, less beautiful, for Saint Basil's Cathedral has robbed them of their luster. Soon, you reach the Danilova Monastery and witness with your own eyes the Patriarch of Moscow and All Russia taking the Gospel and blessing the gathered pilgrims with it—you rush over and kneel to receive this blessing from him.;;;;;;;;;;;;;x
+EVTDESCB_pravoslavie.5;You've finally reached Moscow—the Third Rome, the last Rome, for there will be no fourth! Both then and now, Moscow is the heart of Russian Orthodoxy, where the Patriarch of Moscow and All Russia has his episcopal see. From afar, you see Saint Basil's Cathedral—the most magnificent church your eyes have ever seen. Along the way, you pass other churches, less beautiful, for Saint Basil's Cathedral has robbed them of their luster. Soon, you reach the Danilova Monastery, which is the oldest monastery in Moscow. You look at it and admire it as a testimony to the faith of your fathers.;;;;;;;;;;;;;x
 EVTOPTA_pravoslavie.5;Slava Bogu;;;;;;;;;;;;;x
 EVTNAME_pravoslavie.7;Kyiv;;;;;;;;;;;;;x
 EVTDESC_pravoslavie.7;Finally, you reach Kyiv – the cradle of all Rus', which you also consider the cradle of your church, place where first bishopic in Ruthenia was created. For hundreds of years, Kyiv held a leading role among Russian Orthodox Christians until the establishment of the Patriarchate in Moscow – yet even today, this city remains important to Russian Orthodoxy as the place where Rus' was baptized and where it was liberated from the errors of paganism. Soon after, you pass many churches in this city and reach the most important of them – St. Sophia's Cathedral, which, according to legend, existed even before Saint Vladimir's baptism, making it the oldest church in this part of the world. You enter and begin your silent pilgrim prayer...;;;;;;;;;;;;;xEVTOPTA_pravoslavie.7;Otche nash, sushchiy na nebesakh…;;;;;;;;;;;;;x
@@ -70,3 +71,38 @@ monastic_order_pravoslavie_rank_1_female;Little Sister;;;;;;;;;;;;;x
 monastic_order_pravoslavie_rank_2_female;Sister;;;;;;;;;;;;;x
 monastic_order_pravoslavie_rank_3_female;Mother;;;;;;;;;;;;;x
 monastic_order_pravoslavie_rank_4_female;Mother-Supervisor;;;;;;;;;;;;;x
+change_dvoeverie_branch;Choose your saint;;;;;;;;;;;;;x
+change_dvoeverie_branch_desc;Dvoeverie's followers have many saints they can especially honor and ask for various gifts from. You, as one of them, can also choose one of them and ask him in your prayers for your needs.;;;;;;;;;;;;;x
+create_dvoeverie_patriarchate;Install true Patriarch in Moskva;;;;;;;;;;;;;x
+create_dvoeverie_patriarchate_desc;For many years, the shepherd of the people was the Patriarch of Moscow, chosen from among the pious monks. After the Event, the Patriarchs abandoned tending their flocks and turned to intellectualism and centralism, ignoring local customs. Therefore, the Dvoeverie followers reject them, and you, as one of them, currently controlling Moscow, can establish a new, renewed Patriarchate.;;;;;;;;;;;;;x
+restore_russian_patriarchate;Restore Patriarch in Moskva;;;;;;;;;;;;;x
+restore_russian_patriarchate_desc;Our patriarch was deprived of his seat in Moscow as Patriarch of All Russia. But now we have Moscow back and can return him to his rightful seat.;;;;;;;;;;;;;x
+EVTDESC_pravoslavie.19;Dvoeverie's followers have many saints they can especially honor and ask for various gifts from. You, as one of them, can also choose one of them and ask him in your prayers for your needs.;;;;;;;;;;;;;x
+EVTOPTA_pravoslavie.19;Become a devotee of Bogoroditsa;;;;;;;;;;;;;x
+EVTOPTB_pravoslavie.19;Become a devotee of Saint Nikolay;;;;;;;;;;;;;x
+EVTOPTC_pravoslavie.19;Become a devotee of Saint Iliya;;;;;;;;;;;;;x
+EVTOPTD_pravoslavie.19;Look at other saints;;;;;;;;;;;;;x
+EVTOPTA_pravoslavie.20;Become a devotee of Saints Paraskeva and Anastasia;;;;;;;;;;;;;x
+EVTOPTB_pravoslavie.20;Become a devotee of Saint Gyorgij;;;;;;;;;;;;;x
+EVTOPTC_pravoslavie.20;Become a devotee of Saint Vlasiy;;;;;;;;;;;;;x
+EVTOPTA_pravoslavie.21;Become a devotee of the Tsar Martyr;;;;;;;;;;;;;x
+EVTOPTB_pravoslavie.21;Become a devotee of Rasputin;;;;;;;;;;;;;x
+EVTOPTC_pravoslavie.21;Become a devotee of Baba Matrona;;;;;;;;;;;;;x
+dvoeverie_baba_matrona;Baba Matrona;;;;;;;;;;;;;x
+dvoeverie_baba_matrona_desc;This character bestows a special veneration on Baba Matrona, an ascetic women who, years ago, allegedly had a vision and persuaded Soyuz leader Leon Trotsky to stay in Moscow by telling him that remaining in the capital of his ancestors would prevent Soyuz's defeat in the war against a murderous enemy.;;;;;;;;;;;;;x
+dvoeverie_holy_mary;Bogoroditsa;;;;;;;;;;;;;x
+dvoeverie_holy_mary_desc;This character bestows special veneration on Bogoroditsa, the mother of Jesus Christ, who, according to local Russian beliefs, is the patroness of women, women's work, women in childbirth, the protector from trouble, evil forces, misfortune and suffering.;;;;;;;;;;;;;x
+dvoeverie_paraskeva_anastasia;Saints Paraskeva and Anastasia;;;;;;;;;;;;;x
+dvoeverie_paraskeva_anastasia_desc;This character bestows special veneration on Saints Paraskeva of Iconium and Anastasia, who in local Russian beliefs personify Friday and Saturday. According to folk beliefs, the former is said to punish those who engage in activities forbidden on Friday, such as spinning, winding thread, and sewing.;;;;;;;;;;;;;x
+dvoeverie_rasputin;Rasputin the Seer;;;;;;;;;;;;;x
+dvoeverie_rasputin_desc;This character bestows special veneration on Rasputin the Seer, a pre-event mystic murdered by relatives of the last Russian Tsar Nicholas.;;;;;;;;;;;;;x
+dvoeverie_st_gyorgij_nevsky;Gyorgij Nevsky the Brave;;;;;;;;;;;;;x
+dvoeverie_st_gyorgij_nevsky_desc;This character bestows special veneration on Gyorgij Nevsky the Brave, patron saint of warriors, cattle, horses and agriculture, who died a martyr on the orders of the Roman persecutor of Christians Tsar Demianish.;;;;;;;;;;;;;x
+dvoeverie_st_iliya;Saint Iliya the Thunderer;;;;;;;;;;;;;x
+dvoeverie_st_iliya_desc;This character bestows special veneration on Saint Iliya the Thunderer, lord of thunder, heavenly fire, rain, and the patron of crops. Russians identify him with the biblical Elijah and believe that this saint constantly drives his chariot across the sky, with the sun being the wheel of this chariot. According to co-religionists of this character, at the end of the world, Elijah will descend to Earth and circle the world three times, warning of the Last Judgment (Orlov). He will come to Earth to die or accept martyrdom by beheading on the skin of a huge ox that grazes on seven mountains and drinks seven rivers of water. The prophet's shed blood will burn the earth.;;;;;;;;;;;;;x
+dvoeverie_st_nicholas;Saint Nikolay;;;;;;;;;;;;;x
+dvoeverie_st_nicholas_desc;This character bestows a special veneration on Saint Nicholas, according to the beliefs of the co-religionists of this character, the first among the saints who prayed so devoutly in church that the golden crown of precedence itself fell on his head.;;;;;;;;;;;;;x
+dvoeverie_st_vlasius;Saint Vlasiy of the Wilds;;;;;;;;;;;;;x
+dvoeverie_st_vlasius_desc;This character bestows special veneration on Saint Vlasius, patron saint of oxen and cattle.;;;;;;;;;;;;;x
+dvoeverie_tsar;The Tsar Martyr;;;;;;;;;;;;;x
+dvoeverie_tsar_desc;This character bestows special veneration on Tsar Nicholas II, who was martyred by proletarians during their revolt. He believes that Holy Rus is the true Kingdom of God on Earth, and that only the ancient Romanov family has the divine right to rule it, while the feudal lords who claim to rule lack the same divine authority as the ancient imperial and truly Roman family.;;;;;;;;;;;;;x

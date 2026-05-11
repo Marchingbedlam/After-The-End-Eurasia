@@ -983,6 +983,69 @@ spriteTypes = {
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
+	spriteType = {
+		name = "GFX_trait_dvoeverie_baba_matrona"
+		texturefile = "gfx/traits/dvoeverie_baba_matrona.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_dvoeverie_holy_mary"
+		texturefile = "gfx/traits/dvoeverie_holy_mary.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_dvoeverie_paraskeva_anastasia"
+		texturefile = "gfx/traits/dvoeverie_paraskeva_anastasia.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_dvoeverie_rasputin"
+		texturefile = "gfx/traits/dvoeverie_rasputin.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_dvoeverie_st_gyorgij_nevsky"
+		texturefile = "gfx/traits/dvoeverie_st_gyorgij_nevsky.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_dvoeverie_st_iliya"
+		texturefile = "gfx/traits/dvoeverie_st_iliya.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_dvoeverie_st_nicholas"
+		texturefile = "gfx/traits/dvoeverie_st_nicholas.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_dvoeverie_st_vlasius"
+		texturefile = "gfx/traits/dvoeverie_st_vlasius.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_dvoeverie_tsar"
+		texturefile = "gfx/traits/dvoeverie_tsar.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
 	
 	#Ambitions
 	spriteType = {
@@ -1310,16 +1373,52 @@ spriteTypes = {
 		texturefile = "gfx\\interface\\societies\\symbol_small_warrior_lodge_glorian.dds"
 		noOfFrames = 2
 	}
-		spriteType = {
+	spriteType = {
 		name = "GFX_integrate_borussia"
 		texturefile = "gfx\\interface\\decision_icon_integrate_borussia.dds"
 	}
-			spriteType = {
+	spriteType = {
 		name = "GFX_integrate_belarus"
 		texturefile = "gfx\\interface\\decision_icon_integrate_belarus.dds"
 	}
 	spriteType = {
 		name = "GFX_change_gallican_branch"
 		texturefile = "gfx\\interface\\decision_icon_tell_a_story_decision.dds"
+	}
+	spriteType = {
+		name = "GFX_celebrate_feast_of_tito"
+		texturefile = "gfx\\interface\\jedinstvo_pilgrimage.dds"
+	}
+	spriteType = {
+		name = "GFX_celebrate_feast_of_bojc"
+		texturefile = "gfx\\interface\\jedinstvo_pilgrimage.dds"
+	}
+	spriteType = {
+		name = "GFX_celebrate_feast_of_dora_pejacevic"
+		texturefile = "gfx\\interface\\jedinstvo_pilgrimage.dds"
+	}
+	spriteType = {
+		name = "GFX_celebrate_feast_of_milunka_savic"
+		texturefile = "gfx\\interface\\jedinstvo_pilgrimage.dds"
+	}
+	spriteType = {
+		name = "GFX_celebrate_feast_of_paulina_irby"
+		texturefile = "gfx\\interface\\jedinstvo_pilgrimage.dds"
+	}
+	spriteType = {
+		name = "GFX_celebrate_feast_of_elena_of_montenegro"
+		texturefile = "gfx\\interface\\jedinstvo_pilgrimage.dds"
+	}
+	spriteType = {
+		name = "GFX_practice_lectio_divina"
+		texturefile = "gfx\\interface\\decision_icon_do_penance.dds"
+	}
+	spriteType = {
+		name = "GFX_create_dvoeverie_patriarchate"
+		texturefile = "gfx\\interface\\russian_patriarchate.dds"
+	}
+	spriteType = {
+		name = "GFX_restore_russian_patriarchate"
+		texturefile = "gfx\\interface\\russian_patriarchate.dds"
 	}
 }

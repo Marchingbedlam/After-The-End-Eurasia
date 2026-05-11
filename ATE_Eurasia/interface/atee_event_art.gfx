@@ -666,7 +666,23 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/Saint-LouisXVI.dds"
 	}
 	spriteType = {
-		name = "GFX_evt_dziady"
-		texturefile = "gfx/event_pictures/Dziady.dds"
+		name = "GFX_evt_leicester"
+		texturefile = "gfx/event_pictures/leicester.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_stratford"
+		texturefile = "gfx/event_pictures/stratford.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_tilbury"
+		texturefile = "gfx/event_pictures/tilbury.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_catalina"
+		texturefile = "gfx/event_pictures/catalina.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_dvoeverie_woman"
+		texturefile = "gfx/event_pictures/dvoeverie_woman.dds"
 	}
 }

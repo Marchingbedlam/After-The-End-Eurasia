@@ -326,6 +326,7 @@ narrative_event = {
 			capital_scope = { province_id = c_oxfordshire }
 		}
 		ai_chance = { factor = 20 }
+		set_character_flag = go_to_london_pilgrimage_glorian
 		character_event = { id = britain.109 }
 	}
 	
@@ -335,11 +336,12 @@ narrative_event = {
 			capital_scope = { province_id = c_london }
 		}
 		ai_chance = { factor = 20 }
+		set_character_flag = go_to_oxford_pilgrimage_glorian
 		character_event = { id = britain.110 }
 	}
 	
 	option = { #Oxford or London
-		name = EVTOPTF_britain.108
+		name = EVTOPTC_britain.108
 		trigger = {
 		  NOT = {
 			capital_scope = { province_id = c_london }
@@ -347,167 +349,79 @@ narrative_event = {
 		  }
 		}
 		ai_chance = { factor = 20 }
-		#character_event = { id = britain.119 }
+		character_event = { id = britain.119 }
 	}
-	
-	option = { #Somerset
-		name = EVTOPTC_britain.108
-		trigger = {
-		   NOT = {
-				capital_scope = { province_id = c_somerset }
-		   }
-		}
-		ai_chance = { factor = 20 }
-		character_event = { id = britain.111 }
-	}
-	
-	option = { #Perth
+	option = { 
 		name = EVTOPTD_britain.108
-		trigger = {
-		   NOT = {
-				capital_scope = { province_id = c_perth }
-		   }
-		}
 		ai_chance = { factor = 20 }
-		character_event = { id = britain.112 }
+		character_event = { id = britain.114 }
 	}
-	
-	option = { #Calais
+	option = { 
 		name = EVTOPTE_britain.108
-		trigger = {
-		   NOT = {
-				capital_scope = { province_id = c_pas_de_calais }
-		   }
-		}
 		ai_chance = { factor = 20 }
 		character_event = { id = britain.113 }
 	}
 }
 
-character_event = { #Go to London
+character_event = { #Go to pilgrimage
 	id = britain.109
 	desc = EVTDESC_britain.109
-	picture = GFX_evt_glorian_pilgrimage
-
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTA_britain.109
-		hidden_tooltip = {
-			add_trait = on_pilgrimage
-			set_character_flag = good_pilgrimage
-			narrative_event = { id = LATER days = 28 }
-		}
-		hidden_tooltip = {
-			random_list = {
-				10 = { character_event = { id = SoA.5031 days = 14 random = 10 } } # List that is always checked
-				10 = { character_event = { id = SoA.5032 days = 17 random = 10 } }
-				10 = { narrative_event = { id = SoA.5033 days = 17 random = 10 } }
-				10 = { character_event = { id = SoA.5034 days = 13 random = 10 } }
-				10 = { character_event = { id = SoA.5035 days = 15 random = 10 } }
-				10 = { character_event = { id = SoA.5036 days = 21 random = 10 } }
-				10 = { character_event = { id = SoA.5037 days = 22 random = 10 } }
-				10 = { character_event = { id = SoA.5038 days = 18 random = 10 } }
-				10 = { character_event = { id = SoA.5039 days = 16 random = 10 } }
-			}
+	desc = {
+		text = EVTDESC_britain_109_LONDON
+		picture = GFX_evt_glorian_pilgrimage
+		trigger = { 
+			has_character_flag = go_to_london_pilgrimage_glorian
 		}
 	}
-}
-
-character_event = { #Go to Oxford
-	id = britain.110
-	desc = EVTDESC_britain.110
-	picture = GFX_evt_glorian_pilgrimage
-
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTA_britain.109
-		hidden_tooltip = {
-			add_trait = on_pilgrimage
-			set_character_flag = good_pilgrimage
-			narrative_event = { id = LATER days = 28 }
-		}
-		hidden_tooltip = {
-			random_list = {
-				10 = { character_event = { id = SoA.5031 days = 14 random = 10 } } # List that is always checked
-				10 = { character_event = { id = SoA.5032 days = 17 random = 10 } }
-				10 = { narrative_event = { id = SoA.5033 days = 17 random = 10 } }
-				10 = { character_event = { id = SoA.5034 days = 13 random = 10 } }
-				10 = { character_event = { id = SoA.5035 days = 15 random = 10 } }
-				10 = { character_event = { id = SoA.5036 days = 21 random = 10 } }
-				10 = { character_event = { id = SoA.5037 days = 22 random = 10 } }
-				10 = { character_event = { id = SoA.5038 days = 18 random = 10 } }
-				10 = { character_event = { id = SoA.5039 days = 16 random = 10 } }
-			}
+	desc = {
+		text = EVTDESC_britain_109_OXFORD
+		picture = GFX_evt_glorian_pilgrimage
+		trigger = { 
+			has_character_flag = go_to_oxford_pilgrimage_glorian
 		}
 	}
-}
-
-character_event = { #Go to Somerset
-	id = britain.111
-	desc = EVTDESC_britain.111
-	picture = GFX_evt_glorian_pilgrimage
-
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTA_britain.109
-		hidden_tooltip = {
-			add_trait = on_pilgrimage
-			set_character_flag = good_pilgrimage
-			narrative_event = { id = LATER days = 28 }
-		}
-		hidden_tooltip = {
-			random_list = {
-				10 = { character_event = { id = SoA.5031 days = 14 random = 10 } } # List that is always checked
-				10 = { character_event = { id = SoA.5032 days = 17 random = 10 } }
-				10 = { narrative_event = { id = SoA.5033 days = 17 random = 10 } }
-				10 = { character_event = { id = SoA.5034 days = 13 random = 10 } }
-				10 = { character_event = { id = SoA.5035 days = 15 random = 10 } }
-				10 = { character_event = { id = SoA.5036 days = 21 random = 10 } }
-				10 = { character_event = { id = SoA.5037 days = 22 random = 10 } }
-				10 = { character_event = { id = SoA.5038 days = 18 random = 10 } }
-				10 = { character_event = { id = SoA.5039 days = 16 random = 10 } }
-			}
+	desc = {
+		text = EVTDESC_britain_109_CALAIS
+		picture = GFX_evt_glorian_pilgrimage
+		trigger = { 
+			has_character_flag = go_to_calais_pilgrimage_glorian
 		}
 	}
-}
-
-character_event = { #Go to Perth
-	id = britain.112
-	desc = EVTDESC_britain.112
-	picture = GFX_evt_glorian_pilgrimage
-
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTA_britain.109
-		hidden_tooltip = {
-			add_trait = on_pilgrimage
-			set_character_flag = good_pilgrimage
-			narrative_event = { id = LATER days = 28 }
-		}
-		hidden_tooltip = {
-			random_list = {
-				10 = { character_event = { id = SoA.5031 days = 14 random = 10 } } # List that is always checked
-				10 = { character_event = { id = SoA.5032 days = 17 random = 10 } }
-				10 = { narrative_event = { id = SoA.5033 days = 17 random = 10 } }
-				10 = { character_event = { id = SoA.5034 days = 13 random = 10 } }
-				10 = { character_event = { id = SoA.5035 days = 15 random = 10 } }
-				10 = { character_event = { id = SoA.5036 days = 21 random = 10 } }
-				10 = { character_event = { id = SoA.5037 days = 22 random = 10 } }
-				10 = { character_event = { id = SoA.5038 days = 18 random = 10 } }
-				10 = { character_event = { id = SoA.5039 days = 16 random = 10 } }
-			}
+	desc = {
+		text = EVTDESC_britain_109_GLASTONBURY
+		picture = GFX_evt_glorian_pilgrimage
+		trigger = { 
+			has_character_flag = go_to_glastonbury_pilgrimage_glorian
 		}
 	}
-}
-
-character_event = { #Go to Calais
-	id = britain.113
-	desc = EVTDESC_britain.113
-	picture = GFX_evt_glorian_pilgrimage
+	desc = {
+		text = EVTDESC_britain_109_PERTH
+		picture = GFX_evt_glorian_pilgrimage
+		trigger = { 
+			has_character_flag = go_to_perth_pilgrimage_glorian
+		}
+	}
+	desc = {
+		text = EVTDESC_britain_109_LEICESTER
+		picture = GFX_evt_glorian_pilgrimage
+		trigger = { 
+			has_character_flag = go_to_leicester_and_bosworth_pilgrimage_glorian
+		}
+	}
+	desc = {
+		text = EVTDESC_britain_109_STRATFORD
+		picture = GFX_evt_glorian_pilgrimage
+		trigger = { 
+			has_character_flag = go_to_stratford_pilgrimage_glorian
+		}
+	}
+	desc = {
+		text = EVTDESC_britain_109_TILBURY
+		picture = GFX_evt_glorian_pilgrimage
+		trigger = { 
+			has_character_flag = go_to_tilbury_pilgrimage_glorian
+		}
+	}
 
 	is_triggered_only = yes
 	
@@ -516,108 +430,940 @@ character_event = { #Go to Calais
 		hidden_tooltip = {
 			add_trait = on_pilgrimage
 			set_character_flag = good_pilgrimage
-			narrative_event = { id = LATER days = 28 }
+			narrative_event = { id = britain.110 days = 35 }
 		}
 		hidden_tooltip = {
 			random_list = {
-				10 = { character_event = { id = SoA.5031 days = 14 random = 10 } } # List that is always checked
-				10 = { character_event = { id = SoA.5032 days = 17 random = 10 } }
-				10 = { narrative_event = { id = SoA.5033 days = 17 random = 10 } }
-				10 = { character_event = { id = SoA.5034 days = 13 random = 10 } }
-				10 = { character_event = { id = SoA.5035 days = 15 random = 10 } }
-				10 = { character_event = { id = SoA.5036 days = 21 random = 10 } }
-				10 = { character_event = { id = SoA.5037 days = 22 random = 10 } }
-				10 = { character_event = { id = SoA.5038 days = 18 random = 10 } }
+				10 = { character_event = { id = britain.115 days = 14 random = 10 } } # List that is always checked
+				10 = { character_event = { id = britain.116 days = 17 random = 10 } }
+				10 = { narrative_event = { id = britain.122 days = 17 random = 10 } }
+				10 = { character_event = { id = britain.127 days = 13 random = 10 } }
+				10 = { character_event = { id = britain.128 days = 15 random = 10 } }
+				10 = { character_event = { id = britain.130 days = 21 random = 10 } }
+				10 = { character_event = { id = britain.131 days = 22 random = 10 } }
+				10 = { character_event = { id = britain.132 days = 18 random = 10 } }
 				10 = { character_event = { id = SoA.5039 days = 16 random = 10 } }
+			}
+			random_list = {
+				10 = { character_event = { id = britain.115 days = 30 random = 10 } } # List that is always checked
+				10 = { character_event = { id = britain.116 days = 28 random = 10 } }
+				10 = { narrative_event = { id = britain.122 days = 27 random = 10 } }
+				10 = { character_event = { id = britain.127 days = 31 random = 10 } }
+				10 = { character_event = { id = britain.128 days = 33 random = 10 } }
+				10 = { character_event = { id = britain.130 days = 26 random = 10 } }
+				10 = { character_event = { id = britain.131 days = 29 random = 10 } }
+				10 = { character_event = { id = britain.132 days = 30 random = 10 } }
+				10 = { character_event = { id = SoA.5039 days = 30 random = 10 } }
 			}
 		}
 	}
 }
 
 narrative_event = { #Welcome in London
-	id = britain.114
-    title = EVTNAME_britain.114
-	desc = EVTDESC_britain.114
-	picture = GFX_evt_london
-
-	is_triggered_only = yes
-	
-	option = { 
-		name = EVTOPTA_britain.114
-		hidden_tooltip = { character_event = { id = SoA.5055 days = 5 } }
+	id = britain.110
+	title = {
+		text = EVTNAME_LONDON
+		trigger = { has_character_flag = go_to_london_pilgrimage_glorian }
 	}
-}
-
-narrative_event = { #Welcome in Oxford
-	id = britain.115
-    title = EVTNAME_britain.115
-	desc = EVTDESC_britain.115
-	picture = GFX_evt_oxford
-
-	is_triggered_only = yes
-	
-	option = { 
-		name = EVTOPTA_britain.115
-		hidden_tooltip = { character_event = { id = SoA.5055 days = 5 } }
+	title = {
+		text = EVTNAME_OXFORD
+		trigger = { has_character_flag = go_to_oxford_pilgrimage_glorian }
 	}
-}
-
-narrative_event = { #Welcome in Somerset
-	id = britain.116
-    title = EVTNAME_britain.116
-	desc = EVTDESC_britain.116
-	picture = GFX_evt_glastonbury
-
-	is_triggered_only = yes
-	
-	option = { 
-		name = EVTOPTA_britain.116
-		hidden_tooltip = { character_event = { id = SoA.5055 days = 5 } }
+	title = {
+		text = EVTNAME_PERTH
+		trigger = { has_character_flag = go_to_perth_pilgrimage_glorian }
 	}
-}
-
-narrative_event = { #Welcome in Perth
-	id = britain.117
-    title = EVTNAME_britain.117
-	desc = EVTDESC_britain.117
-	picture = GFX_evt_perth
-
-	is_triggered_only = yes
-	
-	option = { 
-		name = EVTOPTA_britain.117
-		hidden_tooltip = { character_event = { id = SoA.5055 days = 5 } }
+	title = {
+		text = EVTNAME_GLASTONBURY
+		trigger = { has_character_flag = go_to_glastonbury_pilgrimage_glorian }
 	}
-}
-
-narrative_event = { #Welcome in Calais
-	id = britain.118
-    title = EVTNAME_britain.118
-	desc = EVTDESC_britain.118
-	picture = GFX_evt_calais
+	title = {
+		text = EVTNAME_CALAIS
+		trigger = { has_character_flag = go_to_calais_pilgrimage_glorian }
+	}
+	title = {
+		text = EVTNAME_TILBURY
+		trigger = { has_character_flag = go_to_tilbury_pilgrimage_glorian }
+	}
+	title = {
+		text = EVTNAME_LEICESTER
+		trigger = { has_character_flag = go_to_leicester_and_bosworth_pilgrimage_glorian }
+	}
+	title = { 
+		text = EVTNAME_STRATFORD 
+		trigger = { has_character_flag = go_to_stratford_pilgrimage_glorian }
+	}
+	desc = {
+		text = EVTDESC_britain_110_LONDON
+		picture = GFX_evt_london
+		trigger = { 
+			has_character_flag = go_to_london_pilgrimage_glorian
+		}
+	}
+	desc = {
+		text = EVTDESC_britain_110_OXFORD
+		picture = GFX_evt_oxford
+		trigger = { 
+			has_character_flag = go_to_oxford_pilgrimage_glorian
+		}
+	}
+	desc = {
+		text = EVTDESC_britain_110_CALAIS
+		picture = GFX_evt_calais
+		trigger = { 
+			has_character_flag = go_to_calais_pilgrimage_glorian
+		}
+	}
+	desc = {
+		text = EVTDESC_britain_110_GLASTONBURY
+		picture = GFX_evt_glastonbury
+		trigger = { 
+			has_character_flag = go_to_glastonbury_pilgrimage_glorian
+		}
+	}
+	desc = {
+		text = EVTDESC_britain_110_PERTH
+		picture = GFX_evt_perth
+		trigger = { 
+			has_character_flag = go_to_perth_pilgrimage_glorian
+		}
+	}
+	desc = {
+		text = EVTDESC_britain_110_TILBURY
+		picture = GFX_evt_tilbury
+		trigger = { 
+			has_character_flag = go_to_tilbury_pilgrimage_glorian
+		}
+	}
+	desc = {
+		text = EVTDESC_britain_110_LEICESTER
+		picture = GFX_evt_leicester
+		trigger = { 
+			has_character_flag = go_to_leicester_and_bosworth_pilgrimage_glorian
+		}
+	}
+	desc = {
+		text = EVTDESC_britain_110_STRATFORD
+		picture = GFX_evt_stratford
+		trigger = { 
+			has_character_flag = go_to_stratford_pilgrimage_glorian
+		}
+	}
 
 	is_triggered_only = yes
 	
 	option = { 
-		name = EVTOPTA_britain.118
-		hidden_tooltip = { character_event = { id = SoA.5055 days = 5 } }
+		name = EVTOPTA_britain.110
+		hidden_tooltip = { character_event = { id = SoA.5055 days = 7 } }
+		clr_character_flag = go_to_calais_pilgrimage_glorian
+		clr_character_flag = go_to_glastonbury_pilgrimage_glorian
+		clr_character_flag = go_to_london_pilgrimage_glorian
+		clr_character_flag = go_to_oxford_pilgrimage_glorian
+		clr_character_flag = go_to_perth_pilgrimage_glorian
+		clr_character_flag = go_to_stratford_pilgrimage_glorian
+		clr_character_flag = go_to_leicester_and_bosworth_pilgrimage_glorian
+		clr_character_flag = go_to_tilbury_pilgrimage_glorian
+		clr_character_flag = activated_pilgrimage
+		clr_character_flag = do_not_disturb
 	}
 }
 
 character_event = { 
-	id = britain.119
-	desc = EVTDESC_britain.119
+	id = britain.111
+	desc = EVTDESC_britain.111
 	picture = GFX_evt_glorian_pilgrimage
 
 	is_triggered_only = yes
 	
 	option = { 
-		name = EVTOPTA_britain.108
+		name = EVTOPTA_britain.111
+		set_character_flag = go_to_london_pilgrimage_glorian
 		character_event = { id = britain.109 }
 	}
 	
 	option = { 
-		name = EVTOPTB_britain.108
-		character_event = { id = britain.110 }
+		name = EVTOPTB_britain.111
+		set_character_flag = go_to_oxford_pilgrimage_glorian
+		character_event = { id = britain.109 }
+	}
+}
+
+character_event = { #End of Pilgrimage
+	id = britain.112
+	desc = EVTDESC_britain.112
+	picture = GFX_evt_glorian_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_britain.112
+		hidden_tooltip = { character_event = { id = SoA.5055 days = 7 } }
+		clr_character_flag = go_to_leicester_and_bosworth_pilgrimage_glorian
+		clr_character_flag = go_to_stratford_pilgrimage_glorian
+		clr_character_flag = go_to_tilbury_pilgrimage_glorian
+		clr_character_flag = go_to_calais_pilgrimage_glorian
+		clr_character_flag = go_to_glastonbury_pilgrimage_glorian
+		clr_character_flag = go_to_london_pilgrimage_glorian
+		clr_character_flag = go_to_oxford_pilgrimage_glorian
+		clr_character_flag = go_to_perth_pilgrimage_glorian
+		clr_character_flag = activated_pilgrimage
+		clr_character_flag = do_not_disturb
+		remove_trait="on_pilgrimage"
+		add_trait = pilgrim
+		piety = 30
+	}
+}
+
+character_event = { #Less Popular cities
+	id = britain.113
+	desc = EVTDESC_britain.113
+	picture = GFX_evt_glorian_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_britain.113
+		trigger = {
+		   NOT = {
+				capital_scope = { province_id = c_leicestershire }
+		   }
+		}
+		ai_chance = { factor = 20 }
+		set_character_flag = go_to_leicester_and_bosworth_pilgrimage_glorian
+		character_event = { id = britain.109 }
+	}
+	
+	option = { 
+		name = EVTOPTB_britain.113
+		trigger = {
+		   NOT = {
+				capital_scope = { province_id = c_essex }
+		   }
+		}
+		ai_chance = { factor = 20 }
+		set_character_flag = go_to_tilbury_pilgrimage_glorian
+		character_event = { id = britain.109 }
+	}
+	
+	option = { 
+		name = EVTOPTC_britain.113
+		trigger = {
+		   NOT = {
+				capital_scope = { province_id = c_birmingham }
+		   }
+		}
+		ai_chance = { factor = 20 }
+		set_character_flag = go_to_stratford_pilgrimage_glorian
+		character_event = { id = britain.109 }
+	}
+}
+
+character_event = { #More Popular Names
+	id = britain.114
+	desc = EVTDESC_britain.114
+	picture = GFX_evt_glorian_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = { #Somerset
+		name = EVTOPTA_britain.114
+		trigger = {
+		   NOT = {
+				capital_scope = { province_id = c_somerset }
+		   }
+		}
+		ai_chance = { factor = 20 }
+		set_character_flag = go_to_glastonbury_pilgrimage_glorian
+		character_event = { id = britain.109 }
+	}
+	
+	option = { #Perth
+		name = EVTOPTB_britain.114
+		trigger = {
+		   NOT = {
+				capital_scope = { province_id = c_perth }
+		   }
+		}
+		ai_chance = { factor = 20 }
+		set_character_flag = go_to_perth_pilgrimage_glorian
+		character_event = { id = britain.109 }
+	}
+	
+	option = { #Calais
+		name = EVTOPTC_britain.114
+		trigger = {
+		   NOT = {
+				capital_scope = { province_id = c_pas_de_calais }
+		   }
+		}
+		ai_chance = { factor = 20 }
+		set_character_flag = go_to_calais_pilgrimage_glorian
+		character_event = { id = britain.109 }
+	}
+}
+
+character_event = { 
+	id = britain.115
+	desc = EVTDESC_britain_115
+	picture = GFX_evt_glorian_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_125
+		prestige = 20
+		random_list = {
+		   40 = { add_trait= "wounded" }
+		   10 = { ROOT = { change_martial = 1 } }
+		   10 = { death = { death_reason = death_missing } }
+		   40 = { }
+		}
+	}
+}
+
+narrative_event = { 
+	id = britain.116
+	title = EVTTITLE_SKC_129
+	desc = EVTDESC_SKC_129
+	picture = GFX_evt_glorian_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_129
+		piety = -10
+		prestige = 10
+		narrative_event = { id = britain.117 }
+	}
+	
+	option = { 
+		name = EVTOPTB_SKC_129
+		piety=-100
+		add_trait="cruel"
+	}
+}
+
+narrative_event = { 
+	id = britain.117
+	title = EVTTITLE_SKC_130
+	desc = EVTDESC_SKC_130
+	picture = GFX_evt_glorian_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_130
+		hidden_tooltip = {
+		random_list = {
+		   10 = { narrative_event = { id = britain.118 } } #Both Parents live
+		   20 = { narrative_event = { id = britain.119 } } #Father lives
+		   30 = { narrative_event = { id = britain.120 } } #Mother lives
+		   40 = { narrative_event = { id = britain.121 } } #All of them are dead
+		}
+		}
+	}
+}
+
+narrative_event = { 
+	id = britain.118
+	title = EVTTITLE_SKC_131
+	desc = EVTDESC_SKC_131
+	picture = GFX_evt_glorian_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_131
+		piety = 20
+		prestige = 20
+	}
+	
+	option = { 
+		name = EVTOPTB_SKC_131
+		wealth = -20
+		piety = 40
+		prestige = 40
+	}
+}
+
+narrative_event = { 
+	id = britain.119
+	title = EVTTITLE_SKC_131
+	desc = EVTDESC_SKC_132
+	picture = GFX_evt_glorian_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_131
+		piety = 10
+		prestige = 10
+	}
+	
+	option = { 
+		name = EVTOPTB_SKC_131
+		wealth = -20
+		piety = 30
+		prestige = 30
+	}
+}
+
+narrative_event = { 
+	id = britain.120
+	title = EVTTITLE_SKC_131
+	desc = EVTDESC_SKC_133
+	picture = GFX_evt_glorian_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_133
+		piety = 10
+		prestige = 10
+	}
+	
+	option = { 
+		name = EVTOPTB_SKC_133
+		wealth = -20
+		piety = 30
+		prestige = 30
+	}
+	
+	option = { #Generate characters
+		name = EVTOPTC_SKC_133
+		wealth = -30
+		piety = 100
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = yes
+			lowborn = yes
+			age = 40
+			trait = kind
+			trait = pious
+			trait = chaste
+			trait = wounded
+		}
+		new_character = {
+		   save_event_target_as = mother_of_children
+		}
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = yes
+			age = 10
+			lowborn = yes
+		}
+		new_character = {
+		   save_event_target_as = daughter_of_mother
+		}
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = no
+			age = 8
+			lowborn = yes
+		}
+		new_character = {
+		   save_event_target_as = son_of_mother
+		}
+		event_target:son_of_mother = {
+		   set_mother = event_target:mother_of_children
+		}
+		event_target:daughter_of_mother = {
+		   set_mother = event_target:mother_of_children
+		}
+	}
+}
+
+narrative_event = { 
+	id = britain.121
+	title = EVTTITLE_SKC_131
+	desc = EVTDESC_SKC_134
+	picture = GFX_evt_glorian_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_134
+		piety = 10
+		prestige = 10
+	}
+	
+	option = { 
+		name = EVTOPTB_SKC_134
+		wealth = -20
+		piety = 30
+		prestige = 30
+	}
+	
+	option = { #Generate characters
+		name = EVTOPTC_SKC_134
+		wealth = -25
+		piety = 100
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = yes
+			age = 40
+			trait = kind
+			trait = pious
+			trait = chaste
+			trait = wounded
+			lowborn = yes
+		}
+		new_character = {
+		   save_event_target_as = mother_of_children
+		   	death = {
+				death_reason = death_murder
+			}
+		}
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = yes
+			age = 10
+			lowborn = yes
+		}
+		new_character = {
+		   save_event_target_as = daughter_of_mother
+		}
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = no
+			age = 8
+			lowborn = yes
+		}
+		new_character = {
+		   save_event_target_as = son_of_mother
+		}
+		event_target:son_of_mother = {
+		   set_mother = event_target:mother_of_children
+		}
+		event_target:daughter_of_mother = {
+		   set_mother = event_target:mother_of_children
+		}
+	}
+}
+
+character_event = { 
+	id = britain.122
+	desc = EVTDESC_britain.122
+	picture = GFX_glorian_feast
+	
+	is_triggered_only = yes
+
+	option = { #Go to chapel
+		name = EVTOPTA_britain.122
+		random_list = {
+		   40 = { add_trait="gregarious" }
+		   60 = { }
+		}
+		narrative_event = { id = britain.123 }
+	}
+	
+	option = { #Not go
+		name = EVTOPTB_britain.122
+		piety = 20
+		prestige = -20
+		random_list = {
+		   10 = { add_trait="pious"}
+		   40 = { add_trait="shy" }
+		   50 = { }
+		}
+	}
+}
+
+narrative_event = { 
+	id = britain.123
+	title = EVTNAMEbritain_123
+	desc = EVTDESC_britain_123
+	picture = GFX_glorian_feast
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_britain_123
+		wealth = -5
+		hidden_tooltip = {
+		random_list = {
+		    50 = { character_event = { id = britain.124 } }
+			50 = { character_event = { id = britain.125 } }
+		}
+		}
+	}
+	
+	option = { 
+		name = EVTOPTB_britain_123
+		wealth = -5
+		hidden_tooltip = {
+		random_list = {
+		    50 = { character_event = { id = britain.124 } }
+			50 = { character_event = { id = britain.125 } }
+		}
+		}
+	}
+		
+	option = { 
+		name = EVTOPTC_britain_123
+		piety=5
+		character_event = { id = britain.126 }
+	}
+}
+
+character_event = { 
+	id = britain.124
+	desc = EVTDESC_britain.124
+	picture = GFX_glorian_feast
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_britain.124
+		random_list = {
+		   10 = { add_trait="stressed" }
+		   5 = { add_trait="wrath" }
+		   85 = { }
+		}
+	}
+}
+
+character_event = { 
+	id = britain.125
+	desc = EVTDESC_britain.125
+	picture = GFX_glorian_feast
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_britain.125
+		wealth = 10
+		random_list = {
+		   10 = { add_trait="ambitious" }
+		   5 = { add_trait="greedy" }
+		   85 = { }
+		}
+	}
+}
+
+character_event = { 
+	id = britain.126
+	desc = EVTDESC_britain.126
+	picture = GFX_glorian_feast
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_britain.125
+		piety = 10
+		random_list = {
+		   10 = { add_trait="content" }
+		   90 = { }
+		}
+	}
+}
+
+long_character_event = { 
+	id = britain.127
+	desc = EVTDESC_britain.127
+	picture = GFX_evt_glorian_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_britain.127
+		piety = 20
+		random_list = {
+		   10 = { add_trait="poet" }
+		   10 = { add_trait="brave" }
+		   10 = { add_trait="ambitious" }
+		   10 = { add_trait="gregarious" }
+		   10 = { add_trait="zealous" }
+		   50 = { }
+		}
+	}
+	
+	option = { 
+		name = EVTOPTB_britain.127
+		piety = -20
+		random_list = {
+		   10 = { add_trait="cynical" }
+		   10 = { add_trait="brave" }
+		   10 = { add_trait="honest" }
+		   70 = { }
+		}
+	}
+}
+
+character_event = { 
+	id = britain.128
+	desc = EVTDESC_britain_128
+	picture = GFX_evt_glorian_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_britain_128
+		piety = 20
+		narrative_event = { id = britain.129 }
+	}
+	
+	option = { 
+		name = EVTOPTB_britain_128
+		prestige = -20
+		random_list = {
+		   10 = { add_trait="craven" }
+		   10 = { add_trait="shy" }
+		   80 = { }
+		}
+	}
+}
+
+narrative_event = { 
+	id = britain.129
+	title = EVTNAMEbritain_129
+	desc = EVTDESC_britain_129
+	picture = GFX_evt_catalina
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_britain_129
+		piety=50
+		random_list = {
+		   10 = { add_trait="musician" }
+		   10 = { add_trait="poet" } 
+		   80 = { }
+		}
+	}
+}
+
+character_event = { 
+	id = britain.130
+	desc = EVTDESC_britain_130
+	picture = GFX_evt_glorian_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_britain_130
+		piety=25
+	}
+	
+	option = { 
+		name = EVTOPTB_britain_130
+		add_trait="sympathy_christendom"
+	}
+		
+	option = { 
+		name = EVTOPTC_britain_130
+		secret_religion=high_church
+	}
+}
+
+character_event = { 
+	id = britain.131
+	desc = EVTDESC_britain_131
+	picture = GFX_glorian_feast
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_britain_131
+		wealth=-5
+		piety=10
+	}
+}
+
+narrative_event = { 
+	id = britain.132
+	title = EVTTITLE_SKC_113
+	desc = EVTDESC_britain_132
+	
+	picture = GFX_evt_glorian_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { #Brave movement
+		name = EVTOPTA_SKC_113
+		trigger = {
+		  NOT = {
+		    diplomacy > 14
+			trait="grey_eminence"
+			trait="charismatic_negotiator"
+			trait="master_seductress"
+			trait="master_seducer"
+			trait="socializer"
+		  }
+		}
+		prestige=20
+		random_list = {
+		   10 = { add_trait="brave" }
+		   20 = { add_trait="honest" }
+		   70 = { }
+		}
+		hidden_tooltip = {
+		   character_event = { id = britain.133 }
+		   random_list = {
+		   	  30 = { narrative_event = { id = britain.134 days = 3200 } } #Fail and sad life
+		      25 = { narrative_event = { id = britain.135 days = 3200 } } #Fail, but better life
+			  25 = { narrative_event = { id = britain.136 days = 3200 } } #Success, but sad life
+			  10 = { narrative_event = { id = britain.137 days = 3200 } } #Success and better life
+			  10 = { }
+		   }
+		}
+	}
+	
+	option = { #Diplomatic movement
+		name = EVTOPTE_SKC_113
+		trigger = {
+		  OR = {
+		    diplomacy > 12
+			trait="grey_eminence"
+			trait="charismatic_negotiator"
+			trait="master_seductress"
+			trait="master_seducer"
+			trait="socializer"
+		  }
+		}
+		prestige=20
+		hidden_tooltip = {
+		   character_event = { id = britain.133 }
+		   if = {
+		    limit = { NOT = { diplomacy > 15 trait = "socializer" trait = "master_seducer" trait = "master_seductress" } }
+		   random_list = {
+		   	  15 = { narrative_event = { id = britain.134 days = 3200 } } #Fail and sad life
+		      20 = { narrative_event = { id = britain.135 days = 3200 } } #Fail, but better life
+			  25 = { narrative_event = { id = britain.136 days = 3200 } } #Success, but sad life
+			  25 = { narrative_event = { id = britain.137 days = 3200 } } #Success and better life
+			  10 = { }
+		   }
+		   }
+		   if = {
+		    limit = { OR = { diplomacy > 15 trait = "socializer" trait = "master_seducer" trait = "master_seductress" } }
+		   random_list = {
+		   	  10 = { narrative_event = { id = britain.134 days = 3200 } } #Fail and sad life
+		      10 = { narrative_event = { id = britain.135 days = 3200 } } #Fail, but better life
+			  35 = { narrative_event = { id = britain.136 days = 3200 } } #Success, but sad life
+			  35 = { narrative_event = { id = britain.137 days = 3200 } } #Success and better life
+			  10 = { }
+		   }
+		   }
+		}
+	}
+	
+	option = { #Join to me bro
+		name = EVTOPTB_SKC_113
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = no
+			age = 17
+			trait = shy
+			trait = kind
+			trait = honest
+			trait = poet
+			attributes = {
+				martial = 8
+				diplomacy = 8
+				stewardship = 8
+				intrigue = 2
+				learning = 8
+			}
+		}
+		new_character = {
+		   add_friend = ROOT
+		} 
+	}
+	
+	option = { #Nothing doing
+		name = EVTOPTD_SKC_113
+		trigger = {
+		    NOT = { trait="kind" }
+		}
+		piety=-20
+		random_list = {
+		   30 = { add_trait="selfish" }
+		   20 = { add_trait="envious" }
+		   20 = { add_trait="cynical" }
+		   10 = { add_trait="cruel" }
+		   20 = { }
+		}
+	}
+}
+
+character_event = { 
+	id = britain.133
+	desc = EVTDESC_SKC_114
+	picture = GFX_evt_glorian_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_SKC_114
+		wealth=-15
+	}
+}
+
+narrative_event = { #Failure and sad life
+	id = britain.134
+	title = EVTTITLE_SKC_115
+	desc = EVTDESC_SKC_115
+	picture = GFX_evt_glorian_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_SKC_115
+		hidden_tooltip = {
+		    piety=-1
+		}
+	}
+}
+
+narrative_event = { #Failure, but better life
+	id = britain.135
+	title = EVTTITLE_SKC_115
+	desc = EVTDESC_SKC_116
+	picture = GFX_evt_glorian_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_SKC_116
+		prestige = -20
+		piety = 20
+	}
+}
+
+narrative_event = { #Success, but sad life
+	id = britain.136
+	title = EVTTITLE_SKC_115
+	desc = EVTDESC_SKC_117
+	picture = GFX_evt_glorian_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_SKC_115
+		hidden_tooltip = {
+		    piety=-1
+		}
+	}
+}
+
+narrative_event = { #Success and better life
+	id = britain.137
+	title = EVTTITLE_SKC_115
+	desc = EVTDESC_SKC_118
+	picture = GFX_evt_glorian_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_SKC_118
+		prestige = 20
+		piety = 20
 	}
 }
