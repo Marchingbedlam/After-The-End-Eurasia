@@ -356,7 +356,7 @@ character_event = {
 	option = {
 		name = EVTOPTA_greek_11
 		add_character_modifier = {
-			name = eleusian_mysteries
+			name = eleusian_mysteries_made
 			duration = 320
 			hidden = yes
 		}
@@ -601,7 +601,7 @@ narrative_event = {
 		}
 		random_list = {
 		   50 = { }
-		   15 = { add_trait="depression" }
+		   15 = { add_trait="depressed" }
 		   35 = { add_trait="stressed" }
 		}
 		clr_character_flag = recent_minor_decision
@@ -658,7 +658,7 @@ narrative_event = {
 	option = {
 		name = EVTOPTA_greek_21
 		piety=1000
-		death = { death_reason = death_during_eleusian_mysteria }
+		death = { death_reason = death_pilgrimage }
 	}
 }
 

@@ -206,9 +206,9 @@ character_event = {
 			100 = {
 				trigger = {
 					OR = {
-						trait = rough_terrain_leader
-						trait = mountain_terrain_leader
-						trait = narrow_flank_leader
+						trait = rough_terrain_expert
+						trait = mountain_expert
+						trait = battlefield_terrain_master
 						trait = trickster
 					}
 				}
@@ -2814,7 +2814,7 @@ character_event = {
 					trait = kind
 					trait = patient
 					trait = temperate
-					trait = fair
+					trait = attractive
 					trait = pregnant
 				}
 			}
@@ -2868,7 +2868,7 @@ character_event = {
 					trait = greedy
 					trait = kind
 					trait = diligent
-					trait = fair
+					trait = attractive
 					trait = pregnant
 				}
 			}
@@ -3060,7 +3060,7 @@ character_event = {
 	}
 }
 
-#Become more like Blagoj - gain narrow_flank_leader
+#Become more like Blagoj - gain battlefield_terrain_master
 character_event = {
 	id = jedinstvo.35
 	desc = "EVTDESC_jedinstvo_35"
@@ -3070,7 +3070,7 @@ character_event = {
 	
 	trigger = {
 		has_character_modifier = jedinstvo_blagoj_strackoviski
-		NOT = { trait = narrow_flank_leader }
+		NOT = { trait = battlefield_terrain_master }
 	}
 	
 	mean_time_to_happen = {
@@ -3080,7 +3080,7 @@ character_event = {
 	option = {
 		name = EVTOPTA_jedinstvo_31
 		hidden_effect = {
-			add_trait = narrow_flank_leader
+			add_trait = battlefield_terrain_master
 			add_diplomacy = 1
 		}
 	}
