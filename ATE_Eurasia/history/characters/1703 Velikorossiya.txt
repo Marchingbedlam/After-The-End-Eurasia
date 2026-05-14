@@ -142,9 +142,8 @@
 	2697.12.25={death=yes}
 }
 1703008={
-	name="Lyudmila"
+	name="Semyon"
 	dynasty=1147001
-	female=yes
 	culture=muscovite
 	religion=pravoslavie
 	martial=5
@@ -157,7 +156,7 @@
 	trait=temperate
 	trait=duelist
 	trait=brave
-	2651.5.29={birth=yes}
+	2635.5.29={birth=yes}
 	2702.1.13={death=yes}
 }
 #1703009={
@@ -329,11 +328,12 @@
 }
 
 1703020={
-	name="Grigoriy"
+	name="Vsevolod"
 	dynasty=1585001
 	culture=chernyan
 	religion=dukhovnye
-	2604.1.5={birth=yes}
+	father=1703221
+	2599.1.5={birth=yes}
 	2658.9.3={death=yes}
 }
 
@@ -357,7 +357,9 @@
 	trait=scholarly_theologian
 	father=1703024
 	2625.7.5={birth=yes}
-	2660.1.1={add_spouse=1703026}
+	2644.1.1={
+	   add_spouse=1703026
+	}
 	2680.4.13={death=yes}
 }
 
@@ -369,6 +371,7 @@
 	trait=celibate
 	trait=zealous
 	trait=dutiful_cleric
+	trait=twin
 	father=1703025
 	2612.4.25={birth=yes}
 	2690.9.3={death=yes}
@@ -399,8 +402,8 @@
 	culture=muscovite
 	religion=pravoslavie
 	female=yes
-	2626.4.25={birth=yes}
-	2660.1.1={add_spouse=1703022}
+	father=1703192
+	2623.4.25={birth=yes}
 	2690.9.3={death=yes}
 }
 
@@ -415,7 +418,7 @@
 	trait=conscientious
 	father=1703022
 	mother=1703026
-	2642.8.12={birth=yes}
+	2645.8.12={birth=yes}
 	2690.9.3={death=yes}
 }
 
@@ -430,7 +433,7 @@
 	trait=playful
 	father=1703022
 	mother=1703026
-	2642.8.12={birth=yes}
+	2645.8.12={birth=yes}
 	2690.9.3={death=yes}
 }
 
@@ -3225,6 +3228,7 @@
 	religion=pravoslavie
 	trait="drunkard"
 	father=1703191
+	mother=1703220
 	2619.4.14={birth=yes}
     2650.1.1={
 	   death={
@@ -3242,5 +3246,621 @@
 	trait="kind"
 	trait="brave"
 	2584.5.2={birth=yes}
+	2606.1.1={
+	   add_spouse=1703220
+	}
     2640.10.19={death=yes}
+}
+
+1703192={
+	name="Andrey"
+	dynasty=1147007
+	culture=muscovite
+	religion=pravoslavie
+	trait="cynical"
+	trait="administrator"
+	trait="deceitful"
+	trait="stressed"
+	trait="shy"
+	trait="quick"
+	trait="ambitious"
+	trait="midas_touched"
+	2600.12.25={birth=yes}
+	2690.9.3={death=yes}
+}
+
+1703193={
+	name="Dmitriy"
+	dynasty=1147007
+	culture=muscovite
+	religion=pravoslavie
+	father=1703192
+	2631.5.2={birth=yes}
+	2651.1.1={
+	    add_spouse=1703194
+	}
+	2690.9.3={death=yes}
+}
+
+1703194={
+	name="Anna"
+	female=yes
+	culture=muscovite
+	religion=pravoslavie
+	2630.12.4={birth=yes}
+	2690.9.3={death=yes}
+}
+
+1703195={
+	name="Aleksandr"
+	dynasty=1147007
+	culture=muscovite
+	religion=pravoslavie
+	father=1703193
+	mother=1703194
+	trait="twin"
+	trait="genius"
+	2652.3.15={birth=yes}
+	2690.9.3={death=yes}
+}
+
+1703196={
+	name="Anna"
+	female=yes
+	dynasty=1147007
+	culture=muscovite
+	religion=pravoslavie
+	father=1703193
+	mother=1703194
+	trait="twin"
+	trait="quick"
+	trait="attractive"
+	2652.3.15={birth=yes}
+	2690.9.3={death=yes}
+}
+
+1703197={
+	name="Maxim"
+	dynasty=7534220
+	culture=muscovite
+	religion=pravoslavie
+	secret_religion=proletcult
+	father=1703198
+	trait="poet"
+	trait="erudite"
+	2650.3.28={birth=yes}
+	2690.9.3={death=yes}
+}
+
+1703198={
+	name="Aleksandr"
+	dynasty=7534220
+	culture=muscovite
+	religion=proletcult
+	2610.6.13={birth=yes}
+	2610.6.14={
+		create_bloodline={
+			type=gorky_bloodline
+			has_dlc="Holy Fury"
+		}
+	}
+	2659.10.25={death=yes}
+}
+
+1703199={
+	name="Pavel"
+	dynasty=7534222
+	culture=muscovite
+	religion=dvoeverie
+	trait="drunkard"
+	trait="strong"
+	trait="brilliant_strategist"
+	trait="gregarious"
+	trait="brave"
+	trait="ambitious"
+	trait="scarred_mid"
+	give_nickname=nick_the_brave
+	2639.4.22={birth=yes}
+	2690.10.25={death=yes}
+}
+
+1703200={
+	name="Platon"
+	dynasty=7534221
+	culture=muscovite
+	religion=dvoeverie
+	trait="erudite"
+	trait="pious"
+	trait="kind"
+	trait="gregarious"
+	trait="charitable"
+	trait="midas_touched"
+	2626.6.13={birth=yes}
+	2690.10.25={death=yes}
+}
+
+############Post-Event Tsars of Moscow
+
+1703201={
+	name="Ivan"
+	occluded=yes
+	dynasty=7534223
+	culture=muscovite
+	religion=orthodox
+	disallow_random_traits=yes
+	2260.1.1={birth=yes}
+	2340.1.1={death=yes}
+}
+
+1703202={
+	name="Ivan"
+	occluded=yes
+	dynasty=7534223
+	culture=muscovite
+	religion=orthodox
+	disallow_random_traits=yes
+	father=1703201
+	2305.1.1={birth=yes}
+	2363.10.19={death=yes}
+}
+
+1703203={
+	name="Konstantin"
+	dynasty=7534223
+	culture=muscovite
+	religion=orthodox
+	father=1703202
+	trait="brilliant_strategist"
+	trait="attractive"
+	trait="authoritative"
+	trait="brave"
+	trait="ambitious"
+	trait="kind"
+	trait="pious"
+	trait="saint"
+	give_nickname=nick_the_saint
+	2341.5.3={birth=yes}
+	2382.6.22={
+	  death={
+	     death_reason=death_battle
+		 killer=1703204
+	  }
+	}
+}
+
+1703204={
+	name="Aleksandr"
+	dynasty=7534223
+	culture=muscovite
+	religion=orthodox
+	father=1703202
+	trait="cruel"
+	trait="ambitious"
+	trait="gregarious"
+	trait="drunkard"
+	give_nickname=nick_the_usurper
+	2345.9.14={birth=yes}
+	2386.8.4={
+	  death={
+	     death_reason=death_battle
+		 killer=1703205
+	  }
+	}
+}
+
+1703205={
+	name="Semyon"
+	dynasty=7534223
+	culture=muscovite
+	religion=orthodox
+	father=1703203
+	2367.5.3={birth=yes}
+	2429.7.2={death=yes}
+}
+
+1703206={
+	name="Anton"
+	dynasty=7534223
+	culture=muscovite
+	religion=orthodox
+	father=1703205
+	2395.11.29={birth=yes}
+	2452.4.14={death=yes}
+}
+
+1703207={
+	name="Semyon"
+	dynasty=7534223
+	culture=muscovite
+	religion=orthodox
+	father=1703206
+	trait="kind"
+	trait="slow"
+	trait="gregarious"
+	trait="trusting"
+	trait="patient"
+	trait="chaste"
+	give_nickname=nick_the_unready
+	2420.8.23={birth=yes}
+	2458.1.21={
+	  death={
+	     death_reason=death_rabble
+	  }
+	}
+}
+
+1703208={
+	name="Grigoriy"
+	dynasty=7534224
+	culture=muscovite
+	religion=orthodox
+	trait="brilliant_strategist"
+	trait="strong"
+	trait="tall"
+	trait="adventurer"
+	trait="brave"
+	trait="one_eyed"
+	trait="gregarious"
+	give_nickname=nick_the_great
+	2437.5.1={birth=yes}
+	2494.12.29={death=yes}
+}
+
+1703209={
+	name="Ivan"
+	dynasty=7534224
+	culture=muscovite
+	religion=orthodox
+	father=1703208
+	2460.1.1={birth=yes}
+	2492.7.22={
+	   death={
+	      death_reason=death_accident
+	   }
+	}
+}
+
+1703210={
+	name="Konstantin"
+	dynasty=7534224
+	culture=muscovite
+	religion=orthodox
+	father=1703208
+	2464.1.1={birth=yes}
+	2496.4.29={
+	   death={
+	      death_reason=death_battle_duel
+		  killer=1703212
+	   }
+	}
+}
+
+1703211={
+	name="Anton"
+	dynasty=7534224
+	culture=muscovite
+	religion=orthodox
+	father=1703209
+	2487.11.12={birth=yes}
+	2500.6.24={
+	   death={
+	      death_reason=death_murder
+		  killer=1703213
+	   }
+	}
+}
+
+1703212={
+	name="Nikolai"
+	dynasty=7534225
+	culture=muscovite
+	religion=dove
+	trait="peasant_leader"
+	trait="zealous"
+	trait="lunatic"
+	trait="authoritative"
+	trait="quick"
+	2453.1.1={birth=yes}
+	2496.4.29={
+	   death={
+	      death_reason=death_battle_duel
+		  killer=1703210
+	   }
+	}
+}
+
+1703213={
+	name="Konstantin"
+	dynasty=7534224
+	culture=muscovite
+	religion=orthodox
+	father=1703210
+	trait="tough_soldier"
+	trait="hunchback"
+	trait="quick"
+	trait="shy"
+	trait="deceitful"
+	trait="authoritative"
+	2483.10.6={birth=yes}
+	2503.8.22={
+	   death={
+	      death_reason=death_murder
+		  killer=1703213
+	   }
+	}
+}
+
+1703214={
+	name="Aleksandr"
+	dynasty=7534226
+	culture=muscovite
+	#religion=gaponist
+	religion=pravoslavie
+	trait="detached_priest"
+	trait="gregarious"
+	trait="quick"
+	trait="ambitious"
+	trait="erudite"
+	trait="musician"
+	trait="cancer"
+	2461.8.13={birth=yes}
+	2503.8.22={
+		create_bloodline={
+			type=kerensky_bloodline
+			has_dlc="Holy Fury"
+		}
+	}
+	2504.5.2={
+	   death={
+	      death_reason=death_trait
+	   }
+	}
+}
+
+1703215={
+	name="Leonid"
+	dynasty=7534226
+	culture=muscovite
+	religion=pravoslavie
+	trait="midas_touched"
+	trait="patient"
+	trait="shy"
+	trait="administrator"
+	give_nickname=nick_the_old
+	father=1703214
+	2481.5.4={birth=yes}
+	2570.6.11={death=yes}
+}
+
+1703216={
+	name="Sergey"
+	dynasty=7534226
+	culture=muscovite
+	religion=pravoslavie
+	father=1703215
+	2515.4.22={birth=yes}
+	2568.6.11={death=yes}
+}
+
+1703217={
+	name="Ivan"
+	dynasty=7534226
+	culture=muscovite
+	religion=pravoslavie
+	father=1703216
+	2542.4.22={birth=yes}
+	2595.9.2={death=yes}
+}
+
+1703218={
+	name="Ivan"
+	dynasty=7534226
+	culture=muscovite
+	religion=pravoslavie
+	father=1703217
+	trait="cruel"
+	2570.6.2={birth=yes}
+	2598.1.26={
+	  death={
+	     death_reason=death_murder_unknown
+		 killer=1703219
+	  }
+	}
+}
+
+1703219={
+	name="Konstantin"
+	dynasty=7534226
+	culture=muscovite
+	religion=pravoslavie
+	father=1703217
+	trait="cruel"
+	2575.9.24={birth=yes}
+	2601.10.15={
+	  death={
+	     death_reason=death_murder
+		 killer=1703220
+	  }
+	}
+}
+
+1703220={
+	name="Ekaterina"
+	female=yes
+	dynasty=7534226
+	culture=muscovite
+	religion=pravoslavie
+	father=1703217
+	2580.12.5={birth=yes}
+	2658.10.4={death=yes}
+}
+
+1703221={
+	name="Grigoriy"
+	dynasty=1585001
+	culture=chernyan
+	religion=dukhovnye
+	2570.3.2={birth=yes}
+	2605.9.19={
+	   death={
+	     death_reason=death_murder
+		 killer=1703025
+	   }
+	}
+}
+
+1703222={
+	name="Irina"
+	female=yes
+	culture=pomor
+	religion=old_believer
+	trait="attractive"
+	trait="adventurer"
+	trait="peasant_leader"
+	trait="brave"
+	trait="cruel"
+	trait="ambitious"
+	trait="mystic"
+	trait="lunatic"
+	2584.9.11={birth=yes}
+	2605.9.16={
+	   death={
+	     death_reason=death_murder
+		 killer=1703025
+	   }
+	}
+}
+
+1703223={
+	name="Andrey"
+	dynasty=7534226
+	culture=muscovite
+	religion=pravoslavie
+	father=1703216
+	2550.9.14={birth=yes}
+	2598.10.14={
+	  death={
+	     death_reason=death_execution
+		 killer=1703219
+	  }
+	}
+}
+
+1703224={
+	name="Konstantin"
+	dynasty=7534226
+	culture=muscovite
+	religion=pravoslavie
+	father=1703223
+	2580.9.17={birth=yes}
+	2598.10.14={
+	  death={
+	     death_reason=death_execution
+		 killer=1703219
+	  }
+	}
+}
+
+1703225={
+	name="Aleksandr"
+	dynasty=7534226
+	culture=muscovite
+	religion=pravoslavie
+	father=1703223
+	trait="kind"
+	trait="patient"
+	trait="humble"
+	trait="content"
+	trait="shy"
+	trait="erudite"
+	trait="pious"
+	2589.10.27={birth=yes}
+	2640.1.1={
+	   add_trait="celibate"
+	}
+	2700.1.1={death=yes}
+}
+
+1703226={
+	name="Sergey"
+	dynasty=7534226
+	culture=muscovite
+	religion=pravoslavie
+	father=1703225
+	trait="midas_touched"
+	trait="administrator"
+	trait="pious"
+	trait="kind"
+	trait="diligent"
+	trait="honest"
+	2610.4.24={birth=yes}
+	2635.1.1={
+	   add_spouse=1703227
+	}
+	2700.1.1={death=yes}
+}
+
+1703227={
+	name="Svetlana"
+	female=yes
+	dynasty=1147006
+	culture=muscovite
+	religion=pravoslavie
+	trait=twin
+	trait="attractive"
+	father=1703025
+	2612.4.25={birth=yes}
+	2690.9.3={death=yes}
+}
+
+1703229={
+	name="Pavel"
+	dynasty=7534226
+	culture=muscovite
+	religion=pravoslavie
+	trait="tough_soldier"
+	trait="strong"
+	trait="tall"
+	trait="brave"
+	trait="ambitious"
+	trait="chaste"
+	father=1703226
+	mother=1703227
+	2637.10.26={birth=yes}
+	2700.1.1={death=yes}
+}
+
+1703228={
+	name="Aleksandr"
+	dynasty=7534226
+	culture=muscovite
+	religion=pravoslavie
+	father=1703226
+	mother=1703227
+	trait="detached_priest"
+	trait="erudite"
+	trait="shy"
+	trait="kind"
+	trait="ambitious"
+	2641.4.12={birth=yes}
+	2700.1.1={death=yes}
+}
+
+1703229={
+	name="Ekaterina"
+	female=yes
+	dynasty=7534226
+	culture=muscovite
+	religion=pravoslavie
+	trait="attractive"
+	trait="ambitious"
+	trait="deceitful"
+	trait="cynical"
+	trait="gregarious"
+	trait="cruel"
+	trait="schemer"
+	father=1703226
+	mother=1703227
+	2645.12.2={birth=yes}
+	2700.1.1={death=yes}
 }

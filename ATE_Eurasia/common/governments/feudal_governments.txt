@@ -65,6 +65,7 @@ feudal_governments = {
 			
 			NOT = { is_government_potential = diwan_government }
 			NOT = { is_government_potential = roman_imperial_government }
+			NOT = { is_government_potential = tsardom_government }
 			NOT = { is_government_potential = bureaucratic_government }
 			NOT = { is_government_potential = british_government }
 			NOT = { is_government_potential = italian_bureaucratic_government }
@@ -384,6 +385,86 @@ feudal_governments = {
 		
 		## Modifiers
 		court_size_modifier = 15
+	}
+	
+	tsardom_government = {
+		preferred_holdings = { CASTLE CITY TRIBAL }
+		allowed_holdings = {
+			CASTLE
+			CITY
+			FORT
+			HOSPITAL
+		}
+		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
+			TRIBAL
+		}
+		accepts_liege_governments = { # Gets the wrong religion modifier instead
+			feudal_government
+			republic_government
+			merchant_republic_government
+		}
+		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
+			tribal_government
+			nomadic_tribal_government
+		}
+		free_revoke_on_tiers = {
+		    count
+			baron
+			duke
+			king
+		}
+		frame_suffix = "_tsardom"
+		potential = {
+			OR = {
+				primary_title = {
+					title = k_moskva
+				}
+				primary_title = {
+					title = e_russia
+				}
+				top_liege = {
+					government = tsardom_government
+					OR = {
+					tier = COUNT
+					tier = DUKE
+					tier = KING
+					tier = EMPEROR
+					}
+					OR ={
+					   has_landed_title = e_russia
+					   has_landed_title = k_moskva
+					}
+				}
+				has_government = tsardom_government
+			}
+			is_patrician = no
+			NOT = { is_government_potential = communal_government }
+		}
+		
+		color = { 219 250 55 }
+
+		barons_need_dynasty = no
+
+		can_build_tribal = no
+		
+		ignore_in_vassal_limit_calculation = {
+			tribal_government
+			tsardom_government
+		}
+		
+		capital_move_delay = 2000
+		
+		can_usurp_kingdoms_and_empires = no
+		can_imprison_without_reason = no
+		can_create_empires = no
+		vassal_government_opinion_penalties = no
+		can_grant_kingdoms_and_empires_to_other_government = yes
+		can_grant_kingdoms_and_empires_to_other_government_group = yes
+		can_be_granted_kingdoms_and_empires_by_other_government = no
+		free_retract_vassalage = yes
+		## Modifiers
+		court_size_modifier = 15
+		commander_limit = 11
 	}
        
 	ghazi_government = {

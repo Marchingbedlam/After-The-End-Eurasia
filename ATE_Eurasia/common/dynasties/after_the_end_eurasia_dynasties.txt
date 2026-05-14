@@ -987,7 +987,7 @@
 		}
 	}
 }
-1147007 = { name = "Solntseva" culture = muscovite }
+1147007 = { name = "Solntsev" culture = muscovite }
 1147008 = { name = "Ignatov" culture = muscovite } 
 1147009 = { name = "Eliseev" culture = muscovite }
 1147010 = { name = "Demin" culture = muscovite }
@@ -51231,6 +51231,69 @@ coat_of_arms = {
 		layer = {
 			texture = 2
 			texture_internal = 78
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7534220 = { name = "Gorky" culture = muscovite used_for_random = no }
+7534221 = { name = "Shimpolev" culture = muscovite used_for_random = no }
+7534222 = { name = "Savrin" culture = muscovite used_for_random = no }
+7534223 = { 
+    name = "Kolchak"
+    culture = muscovite
+	religion = pravoslavie
+	used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 79
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7534224 = { 
+    name = "Aristovych" 
+    culture = muscovite
+	religion = pravoslavie
+	used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 82
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7534225 = {
+    name = "Dementiev" 
+    culture = muscovite
+	religion = pravoslavie
+	used_for_random = no
+}
+7534226 = { 
+    name = "Kerenskiy"
+    culture = muscovite
+	religion = pravoslavie
+	used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 80
 			emblem = 0
 			color = 0
 			color = 0

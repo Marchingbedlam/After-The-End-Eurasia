@@ -1,0 +1,53 @@
+russia_uniter_bloodline = {
+    martial=1
+	combat_rating = 5
+	command_modifier = {
+		religious_enemy = 0.2
+	}
+    proletcult_opinion=-10
+	dvoeverie_opinion=10
+    pravoslavie_opinion=5
+	neohellenic_opinion=5
+	monthly_character_prestige = 0.25
+	monthly_character_piety = 0.1
+	inheritance = patrilineal
+	allow_bastards = yes
+	picture = GFX_bloodlines_symbol_tsardom
+	flags = { created_bloodline bloodline_ambition bloodline_great_conquerors }
+	active = {
+	  NOT = { 
+	     OR = {
+		    religion = jacobin
+			religion = constitutionalist
+			religion = jedinstvo
+			religion = proletcult
+			religion = leveller
+		 }
+	  }
+	}
+}
+
+kerensky_bloodline = {
+    diplomacy=1
+	jacobin_opinion=5
+	glorian_opinion=5
+    proletcult_opinion=-5
+	monthly_character_prestige = 0.25
+	inheritance = patrilineal
+	allow_bastards = yes
+	picture = GFX_bloodlines_symbol_tsardom
+	flags = { historical_bloodline }
+}
+
+gorky_bloodline = {
+    learning=1
+	poet_opinion=5
+	jacobin_opinion=5
+    proletcult_opinion=10
+	monthly_character_prestige = 0.15
+	monthly_character_piety = 0.15
+	inheritance = patrilineal
+	allow_bastards = yes
+	picture = GFX_bloodlines_symbol_proletcult
+	flags = { historical_bloodline }
+}

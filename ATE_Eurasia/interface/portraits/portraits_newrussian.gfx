@@ -85,7 +85,7 @@ spriteTypes = {
 					portrait_culture = akmolensk
 					portrait_culture = kaliningradyets
 				}
-#				NOT = { portrait_government = theocracy_government }
+				NOT = { portrait_government = theocracy_government }
 			}
 		}
 		
@@ -100,7 +100,7 @@ spriteTypes = {
             "GFX_empty:c4"
 		}
 		
-		headgear_that_hides_hair = { }
+		headgear_that_hides_hair = { 0 1 2 3 4 6 9 }
 	}
 	
 	portraitType = { #Portraits - Female
@@ -124,7 +124,7 @@ spriteTypes = {
 					portrait_culture = akmolensk
 					portrait_culture = kaliningradyets
 				}
-#				NOT = { portrait_government = theocracy_government }
+				NOT = { portrait_government = theocracy_government }
 			}
 		}
 		
@@ -139,6 +139,6 @@ spriteTypes = {
             "GFX_empty:c4"
 		}
 		
-		headgear_that_hides_hair = {  }
+		headgear_that_hides_hair = { 7 }
 	}
 }

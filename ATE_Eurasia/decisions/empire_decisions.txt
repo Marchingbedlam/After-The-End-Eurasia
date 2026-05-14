@@ -415,6 +415,11 @@ decisions = {
 				has_landed_title = e_velikorossiya
 				has_landed_title = e_ural
 				has_landed_title = e_siberia
+				has_landed_title = k_moskva
+			}
+			OR = {
+			   has_landed_title = k_moskva
+			   k_moskva = { has_holder = no }
 			}
 		}
 		allow = {
@@ -424,17 +429,27 @@ decisions = {
 			prestige = 1000
 			scaled_wealth = 1.5
 			war = no
-			primary_title = { title = e_velikorossiya }
+			OR = { 
+			AND = { 
+			    primary_title = { title = e_velikorossiya }
+			    k_moskva = { has_holder = no }
+			}
+			AND = {
+			   primary_title = { title = k_moskva }
+			   completely_controls = e_velikorossiya
+			}
 			AND = {
 				has_landed_title = e_ural
 				has_landed_title = e_baltic
 				has_landed_title = e_visegrad
 				has_landed_title = e_ruthenia
 				has_landed_title = e_caucasia
+				k_moskva = { has_holder = no }
 			}
 			#when the trait is made for it
 			#has_trait = crowned_by_russian_pope
 			has_law = crown_authority_4
+		    }
 		}
 		effect = {
 			hidden_tooltip = {
@@ -450,6 +465,8 @@ decisions = {
 					de_jure_liege = e_russia
 				}
 			}
+			if = {
+			limit = { has_landed_title = k_moskva } 
 			primary_title = {
 				e_russia = {
 					grant_title = ROOT
@@ -457,57 +474,8 @@ decisions = {
 					copy_title_history = PREV
 				}
 			}
+			}
 			hidden_tooltip = { e_russia = { make_primary_title = yes } }
-			if = {
-				limit = {
-					OR = {
-						has_landed_title = e_velikorossiya
-						e_velikorossiya = { has_holder = no }
-					}
-				}
-				e_velikorossiya = { destroy_landed_title = THIS }
-				activate_title = { title = e_velikorossiya status = no }
-			}
-			if = {
-				limit = {
-					OR = {
-						has_landed_title = e_ural
-						e_ural = { has_holder = no }
-					}
-				}
-				e_ural = { destroy_landed_title = THIS }
-				activate_title = { title = e_ural status = no }
-			}
-			if = {
-				limit = {
-					OR = {
-						has_landed_title = e_ruthenia
-						e_ruthenia = { has_holder = no }
-					}
-				}
-				e_ruthenia = { destroy_landed_title = THIS }
-				activate_title = { title = e_ruthenia status = no }
-			}
-			if = {
-				limit = {
-					OR = {
-						has_landed_title = e_caucasia
-						e_caucasia = { has_holder = no }
-					}
-				}
-				e_caucasia = { destroy_landed_title = THIS }
-				activate_title = { title = e_caucasia status = no }
-			}
-			if = {
-				limit = {
-					OR = {
-						has_landed_title = e_baltic
-						e_baltic = { has_holder = no }
-					}
-				}
-				e_baltic = { destroy_landed_title = THIS }
-				activate_title = { title = e_baltic status = no }
-			}
 			k_latvia = {
 				de_jure_liege = e_russia
 			}
@@ -524,6 +492,9 @@ decisions = {
 			if = {
 				limit = { has_nickname = no }
 				give_nickname = nick_the_great
+			}
+			create_bloodline = {
+				type = russia_uniter_bloodline
 			}
 			set_global_flag = russia_formed
 		}

@@ -143,6 +143,37 @@ government_flavor = {
 		government = communal_government
 	}
 }
+government_flavor = {
+	name = gov_russian_empire
+	graphics = GFX_evt_form_russia
+	priority = 5
+	trigger = {
+		government = tsardom_government
+		has_landed_title = e_russia
+	}
+}
+government_flavor = {
+	name = gov_russian_moskva
+	graphics = GFX_evt_moskva_tsardom
+	priority = 5
+	trigger = {
+		government = tsardom_government
+		has_landed_title = k_moskva
+		NOT = { has_landed_title = e_russia }
+	}
+}
+government_flavor = {
+	name = gov_russian_administration
+	graphics = GFX_evt_russian_aristocracy
+	priority = 5
+	trigger = {
+		government = tsardom_government
+		NOT = {
+		   has_landed_title = e_russia
+		   has_landed_title = k_moskva
+		}
+	}
+}
 #government_flavor = {
 #	name = gov_swaraj
 #	graphics = GFX_evt_yoga_meditation

@@ -1,3 +1,4 @@
+proletcult_opinion;Proletcult Opinion;;;;;;;;;;;;;x
 change_workers_saint;Choose your Worker-Saint;;;;;;;;;;;;;x
 change_workers_saint_desc;For many years, Proletcultists have honored their leaders as workers' saints用eople who did much for workers and their brethren. You, as one of them, can also choose a saint whom you will especially honor and emulate.;;;;;;;;;;;;;x
 EVTDESC_proletcult1;For many years, Proletcultists have honored their leaders as workers' saints用eople who did much for workers and their brethren. You, as one of them, can also choose a saint whom you will especially honor and emulate.;;;;;;;;;;;;;x
@@ -26,9 +27,9 @@ warrior_lodge_proletcult_rank_3_female;Colonel;;;;;;;;;;;;;x
 warrior_lodge_proletcult_rank_4_female;Marshall;;;;;;;;;;;;;x
 currency_name_warrior_lodge_proletcult;Patriotism;;;;;;;;;;;;;x
 celebrate_victory_day;Celebrate Victory Day;;;;;;;;;;;;;x
-celebrate_victory_day_desc;Many years ago, Soyuz was threatened with complete annihilation at the hands of the cruel German horde, and only the courage of the Kolhozniki and the genius of the worker-saints saved Soyuz from collapse. Today is the time to start preparation to celebration of this special day in May on which the last legions of brown Germany were decimated, and the Soyuz warriors raised their banners and announced their victory to the world.;;;;;;;;;;;;;x
+celebrate_victory_day_desc;Many years ago, Russia was threatened with complete annihilation at the hands of the cruel German horde, and only the courage and suffering of russian soldiers, mothers and children saved Russia's existence. Today is the time to start preparation to celebration of this special day in May on which the last legions of brown Germany were decimated, and the russian warriors raised their banners and announced their victory to the world.;;;;;;;;;;;;;x
 EVTTITLE_proletcult2;Victory Day;;;;;;;;;;;;;x
-EVTDESC_proletcult2;Many years ago, when all of Russia was united by worker-saints and kolhozniki under the enlightened leadership of our leaders, a horde invaded Russian soil, led by a cruel generals who murdered everyone in his path and sought to raze all of Russia to the ground and transform it in his image. However, the Marshal, the incomparable hero of the Soviet Union, and his heroic legionnaires drove this horde back to the gates of Berlin. Today is the time to prepare for the celebrations that will commemorate this victory葉his Victory Day. The saint tradition dictates that this day should not be celebrated alone, but with other comrades, so you should send invitations to other comrades from your realm.;;;;;;;;;;;;;x
+EVTDESC_proletcult2;Many years ago, when all of Russia was united under the enlightened leadership of our leaders, a cruel horde invaded Russian soil, led by a cruel generals who murdered everyone in his path and sought to raze all of Russia to the ground and transform it in his image. However, the the heroic legionnaires of Russia drove this horde back to the gates of Berlin. Today is the time to prepare for the celebrations that will commemorate this victory葉his Victory Day. The saint tradition dictates that this day should not be celebrated alone, but with other friends, so you should send invitations to other comrades from your realm.;;;;;;;;;;;;;x
 EVTOPTA_proletcult2;Send out the invitations!;;;;;;;;;;;;;x
 EVTTOOLTIP_proletcult2;[ROOT.GetName] is invited.;;;;;;;;;;;;;x
 EVTDESC_proletcult3;Dear [ROOT.GetName], you are hereby solemnly invited to our glorious celebration of Victory Day.;;;;;;;;;;;;;x
@@ -36,28 +37,48 @@ EVTOPTA_proletcult3;By [ROOT.Religion.GetRandomGodName], I will make sure to att
 EVTOPTB_proletcult3;I do not have the time for such ridiculous celebrations.;;;;;;;;;;;;;x
 EVTDESC_proletcult4;[FROM.GetName] has refused my invitation to Victory Day, what a disgrace!;;;;;;;;;;;;;x
 EVTOPTA_proletcult4;Curses!;;;;;;;;;;;;;x
-EVTDESC_proletcult5;Once all the comrades have gathered in one place, nothing stands in the way of starting the solemn Victory Day celebrations.;;;;;;;;;;;;;x
-EVTOPTA_proletcult5;Long live the Will!;;;;;;;;;;;;;x
-EVTOPTB_proletcult5;Lovely!;;;;;;;;;;;;;x
-EVTDESC_proletcult6;The former masters of Soyuz sometimes granted amnesty to prisoners during times of crisis. Upon hearing of this tradition, prisoners send petitions for such amnesty from their cells, hoping that you will graciously allow them to spend Victory Day outside the prison walls as free and pardoned individuals.;;;;;;;;;;;;;x
-EVTOPTA_proletcult6;I will order an amnesty for selected prisoners;;;;;;;;;;;;;x
-EVTOPTB_proletcult6;I will leave the petition unanswered;;;;;;;;;;;;;x
-EVTOPTC_proletcult6;I will free them... from life...;;;;;;;;;;;;;x
-EVTDESC_proletcult7;The festivities are close to an end now. I am sure that all the rulers of this realm witnessed how well our Victory is remembered and celebrated in this realm.;;;;;;;;;;;;;x
-EVTOPTA_proletcult7;Long live the Will!;;;;;;;;;;;;;x
-EVTDESC_proletcult8;The festivities are coming to an end now. Our workers-saints will surely be pleased with how the feast was handled.;;;;;;;;;;;;;x
-EVTOPTA_proletcult8;A celebration that will be remembered for ages!;;;;;;;;;;;;;x
-opinion_refused_victory_day;Refused to Celebrate Victory Day;;;;;;;;;;;;;x
-opinion_victory_day;Celebrated Victory Day;;;;;;;;;;;;;x
-held_victory_day_timer;Celebrated Victory Day;;;;;;;;;;;;;x
-EVTTITLE_proletcult10;Hanging out the bannery;;;;;;;;;;;;;x
-EVTDESC_proletcult10;Some young people, having heard of an old tradition sometimes occurring during Victory Day celebrations, dressed in robes with a red star, found a suitable building, and reconstructed the older scene of the Red Banner being raised at the Brandeburg Gate in Berlin. The young people climbed to the very top and mounted the banner, singing: "Through storms, the sun of freedom shined on us, and Eternal-Living Lenin illuminated our path!" The crowd began cheering and scattering rose petals everywhere, singing after the young reenactors. Tavern keepers began serving alcohol at a bargain, almost free price, and the bars filled with many guests, even those who don't usually frequent them.;;;;;;;;;;;;;x
-EVTOPTA_proletcult10;Nice view;;;;;;;;;;;;;x
-EVTOPTB_proletcult10;Nice view, you have to drink to that;;;;;;;;;;;;;x
-EVTTITLE_proletcult11;Lenin's Spectacle;;;;;;;;;;;;x
-EVTDESC_proletcult11;A troupe has arrived in your city, and at the request of the local government, they have agreed to present a play about the life and death of the eternal-living Lenin. The actors perform phenomenally in the roles of the old, superstitious monks, the demonic butchers of Okhrana, and the tormented, humble worker-saints. Then, in subsequent acts, as Lenin overthrows the diabolical Old Gods under the inspiration of the Will, we see the transformation and desperation of the Will's enemies, as well as Lenin's triumph, culminating in his falling asleep after witnessing the full glory of the Soyuz and the collapse of his glorified body into the depths of the Baltic Sea, from where it will float, leaving the last followers of the Will in danger and, in everyone's opinion, inevitable doom. As the final scene ends, everyone applauds and cheers for some of the actors. Some of them begin to sing improvised verses in praise of the Worker-Saints.;;;;;;;;;;;;;x
-EVTOPTA_proletcult11;Beautiful sceptacle..;;;;;;;;;;;;;x
-EVTOPTB_proletcult11;I will join to spontanic poets...;;;;;;;;;;;;;x
-temple_baron_proletcult;District Secretary;;;;;;;;;x
-temple_barony_of_proletcult;Hall of;;;;;;;;;x
+EVTNAME_proletcult_5;Parade;;;;;;;;;;;;;x
+EVTDESC_proletcult_5;You're witnessing a Victory Day parade. Many warriors march through the city, singing songs of praise to long-dead warriors who fought against the German invaders. The soldiers move like clockwork, and each one displays strength and readiness to display the splendor of their master's armor. You're observing this parade from a grandstand, seeing it from above, not from below like most people. Even from this perspective, where you see them a bit like a herd of ants, they're impressive.;;;;;;;;;;;;;x
+EVTOPTA_proletcult5;Glory to our proud warriors;;;;;;;;;;;;;x
+EVTDESC_proletcult_6;Victory Day is over and you return to your estate after celebrating it, happy that you were able to spend this joyful holiday for all Russians in pleasant company.;;;;;;;;;;;;;x
+EVTOPTA_proletcult6;Nice;;;;;;;;;;;;;x
+EVTDESC_proletcult_7;Victory Day ends and you return to your duties, celebrating with joy that you were able to organize this joyful celebration.;;;;;;;;;;;;;x
+EVTOPTA_proletcult7;Nice;;;;;;;;;;;;;x
+inscenisation_of_reichstag_victory_day;watching a reenactment of the raising of the flag over the Reichstag...;;;;;;;;;;;;;x
+theatre_spectacle_victory_day;watching a theatre performance...;;;;;;;;;;;;;x
+siege_of_leningrad_ballade_victory_day;listening to a ballad about the siege of Leningrad...;;;;;;;;;;;;;x
+great_archers_ballade_victory_day;listening to the ballad of the great archers...;;;;;;;;;;;;;x
+aggressive_drunkards_victory_day;encounter aggressive drunks;;;;;;;;;;;;;x
+EVTNAME_proletcult_8;The Flag;;;;;;;;;x
+EVTDESC_proletcult_8;When the parade ends, you leave the grandstand and go into the city to see the entertainment. As is customary, the entire Victory Day is adorned with it. Along the way, you pass the tallest secular building in the city, stop, and see an ancient reenactment of the most important event. Two tall men dressed in armor hold a flag, which they then place on the building, and one of them recites a traditional poem about how Russian soldiers raised the banner of Mother Russia on the Reichstag, symbolizing the end of the brown tyranny on the Oder and Rhine. The people react with euphoria (as every year) to this reenactment, and as the actors leave, they shower them with gifts: you give them something in return.;;;;;;;;;x
+EVTOPTA_proletcult_8;Nice show;;;;;;;;;x
+EVTNAME_proletcult_9;Show;;;;;;;;;x
+EVTDESC_proletcult_9;When the parade ends, you leave the grandstand and head into town to see what entertainment is on offer. As is customary, the entire Victory Day celebration is peppered with entertainment. Along the way, you stumble upon a makeshift theater, decide to pay the entrance fee, and take a seat. A troupe of actors is presenting a play about the Great Patriotic War, lasting an hour or two. The story moves from news of the Brown Horde's attack to the final scene, where two soldiers display the Russian banner with great precision, keeping everyone on their toes. As the curtain falls, you conclude that the actors demonstrated remarkable acting skills and a keen sense of the day's atmosphere.;;;;;;;;;x
+EVTOPTA_proletcult_9;Nice show;;;;;;;;;x
+EVTOPTB_proletcult_9;I will give them extra donate;;;;;;;;;x
+EVTNAME_proletcult_10;Beautiful ballad;;;;;;;;;x
+EVTDESC_proletcult_10;When the parade ends, you leave the grandstand and go into the city to see what entertainment is on offer. As is customary, the entire Victory Day is adorned with it. Along the way, you encounter a troupe of musicians surrounded by a crowd. They sing a ballad about the siege of St. Petersburg, called Leningrad by the proletarians. They sing a long song about a mother's lament over the slaughter of her sons, about the city's rulers' outcry over the misery of their sons. The ballad leaves you grieving, but it ends on an optimistic note: there is hope, which is a virtue, even for these defenders.;;;;;;;;;x
+EVTOPTA_proletcult_10;Nice art;;;;;;;;;x
+EVTOPTB_proletcult_10;Maybe I should become a poet;;;;;;;;;x
+EVTOPTC_proletcult_10;Maybe I should become a musician;;;;;;;;;x
+EVTDESC_proletcult_11;When the parade ends, you leave the grandstand and go into the city to see what entertainment is on. As is customary, the entire Victory Day is filled with it. Along the way, you encounter a troupe of musicians surrounded by a crowd. They sing a ballad about archers like Lyudmila Pavlichenko and Vasily Zaitsev, who shot down many Germanic warriors with their bows. The ballad praises their deeds, emphasizes admiration for their achievements, and calls for ambition and courage equal to theirs, claiming that anyone can reach their heights.;;;;;;;;;x
+EVTOPTA_proletcult_11;Cool Ballad;;;;;;;;;x
+EVTOPTB_proletcult_11;Maybe I should become a poet;;;;;;;;;x
+EVTOPTC_proletcult_11;Maybe I should become a musician;;;;;;;;;x
+EVTNAME_proletcult_12;Do you have a problem?;;;;;;;;;x
+EVTDESC_proletcult_12;When the parade ends, you leave the grandstand and head into town to see what entertainment is on. As is customary, the entire Victory Day celebration is peppered with entertainment. But just as you're about to go see something worthwhile, someone calls out to you, asking if you have a problem. You turn around and see a couple of drunks with axes running towards you.;;;;;;;;;x
+EVTOPTA_proletcult_12;Oh no!;;;;;;;;;x
+temple_baron_proletcult;Comrade-Secretary;;;;;;;;;;;;;x
+temple_baron_female_proletcult;Comrade-Secretary;;;;;;;;;;;;;x
+temple_count_proletcult;Comrade-Commander;;;;;;;;;;;;;x
+temple_count_female_proletcult;Comrade-Commander;;;;;;;;;;;;;x
+temple_duke_proletcult;Comrade-President;;;;;;;;;;;;;x
+temple_duke_female_proletcult;Comrade-President;;;;;;;;;;;;;x
+temple_barony_of_proletcult;Workers' and Soldiers' Council of;;;;;;;;;x
+temple_barony_proletcult;Workers' and Soldiers' Council;;;;;;;;;x
+temple_county_of_proletcult;Workers' District of;;;;;;;;;x
+temple_county_proletcult;Workers' District;;;;;;;;;x
+temple_duchy_of_proletcult;Workers' Republic of;;;;;;;;;x
+temple_duchy_proletcult;Workers' Republic;;;;;;;;;x
 GENERAL_SECRETARY;General Secretary;;;;;;;;;x
+victory_day_invitations_sent;Invitations to the Victory Day celebration have been sent out;;;;;;;;;x

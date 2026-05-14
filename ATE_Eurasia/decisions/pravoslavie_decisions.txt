@@ -208,6 +208,7 @@ decisions = {
 			}
 			OR = { 
 			   religion = pravoslavie
+			   religion = old_believer
 			   AND = { 
 			       religion = dvoeverie
 				   has_global_flag = dvoeverie_patriarchate_formed
@@ -222,6 +223,11 @@ decisions = {
 						character = ROOT
 						is_liege_or_above = ROOT
 					}
+					NOT = {
+				       has_landed_title = d_dvoeverie
+					   has_landed_title = d_old_believer
+				       has_landed_title = d_pravoslavie
+				    }
 				}
 			}
 		}
@@ -240,6 +246,14 @@ decisions = {
 			 d_pravoslavie = {
 			  holder_scope = {
 				grant_title = b_hrista_spasitelya
+		      }
+			 }
+			}
+			if = {
+			 limit = { religion = old_believer }
+			 d_pravoslavie = {
+			  holder_scope = {
+				grant_title = d_old_believer
 		      }
 			 }
 			}
