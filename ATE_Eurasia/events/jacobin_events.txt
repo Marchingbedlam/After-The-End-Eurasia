@@ -582,7 +582,7 @@ character_event = {
 		character_event = { id = jacobin.19 }
 	}
 	
-	option = { #Other Holy Place - Austerlitz, Colombey les Deux Ã‰glise or London
+	option = { #Other Holy Place - Austerlitz, Colombey les Deux Église or London
 		name = EVTOPTD_jacobin_16
 		ai_chance = { factor = 50 }
 		character_event = { id = jacobin.18 }
@@ -619,7 +619,7 @@ character_event = {
 		character_event = { id = jacobin.21 }
 	}
 	
-	option = { #Colombey les Deux Ã‰glise
+	option = { #Colombey les Deux Église
 		name = EVTOPTB_jacobin_18
 		character_event = { id = jacobin.23 }
 	}
@@ -804,7 +804,7 @@ character_event = { #Go to London
 }
 
 
-character_event = { #Go to Colombey les Deux Ã‰glise
+character_event = { #Go to Colombey les Deux Église
 	id = jacobin.23
 	desc = EVTDESC_jacobin_23
 	picture = GFX_evt_jacobin_pilgrimage
@@ -889,7 +889,7 @@ narrative_event = { #Welcome in Austerlitz
 	}
 }
 
-narrative_event = { #Welcome in Colombey les Deux Ã‰glise
+narrative_event = { #Welcome in Colombey les Deux Église
 	id = jacobin.27
 	title = EVTNAME_jacobin_27
 	desc = EVTDESC_jacobin_27
@@ -1136,13 +1136,11 @@ long_character_event = {
 		piety = -20
 		wealth = -20
 		if = {
-		   limit = {
-		      has_character_flag = seeing_young_killer_execution
-			  random_list = {
-			    25 = { add_trait="cruel" }
+		   limit = { has_character_flag = seeing_young_killer_execution }
+           random_list = {
+                25 = { add_trait="cruel" }
 				25 = { add_trait="cynical" }
 				50 = { }
-			  }
 		   }
 		   custom_tooltip = { text = pardoned_young_killer_text }
 		   hidden_tooltip = {
@@ -2062,7 +2060,7 @@ character_event = {
 			  }
 		   }
 		   if = {
-		      limit = { OR = { trait="quick" AND = { learning = 10 learing < 20 } } }
+		      limit = { OR = { trait="quick" AND = { learning = 10 learning < 20 } } }
 			   random_list = {
 			    45 = { character_event = { id = jacobin.57 } }
 				55 = { character_event = { id = jacobin.56 } }
