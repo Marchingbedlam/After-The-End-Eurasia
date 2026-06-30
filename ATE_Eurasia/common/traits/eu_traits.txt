@@ -728,6 +728,119 @@ hiddenfolk_cult = {
 	religious = yes
 	ruler_designer_cost = 0
 }
+st_lucy = {
+	opposites = {
+		st_olav
+		st_peter
+	}
+	
+	monthly_character_piety = 0.5
+	diplomacy = 1
+	same_opinion = 5
+	dynasty_opinion = 5
+	
+	potential = { religion = fornsed }
+	religious_branch = fornsed
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+st_olav = {
+	opposites = {
+		st_lucy
+		st_peter
+	}
+	
+	monthly_character_piety = 0.25
+	monthly_character_prestige = 0.25
+	martial = 1
+	
+	potential = { religion = fornsed }
+	religious_branch = fornsed
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+nysed_elves = {
+	opposites = {
+		nysed_thor
+		nysed_wild_hunt
+		nysed_fiddler
+	}
+	learning = 1
+	poet_opinion = 5
+	monthly_character_piety = 0.20
+	
+	potential = { religion = nysed }
+	religious_branch = nysed
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+nysed_wild_hunt = {
+	opposites = {
+		nysed_elves
+		nysed_thor
+		nysed_fiddler
+	}
+	martial = 1
+	monthly_character_piety = 0.20
+	opposite_opinion = -10
+	
+	potential = { religion = nysed }
+	religious_branch = nysed
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+nysed_fiddler = {
+	opposites = {
+		nysed_elves
+		nysed_wild_hunt
+		nysed_thor
+	}
+	diplomacy = 1
+	poet_opinion = 5
+	musician_opinion = 5
+	monthly_character_piety = 0.20
+	
+	potential = { religion = nysed }
+	religious_branch = nysed
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+nysed_thor = {
+	opposites = {
+		nysed_elves
+		nysed_wild_hunt
+		nysed_fiddler
+	}
+	martial = 1
+	monthly_character_piety = 0.20
+	
+	potential = { religion = nysed }
+	religious_branch = nysed
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+st_peter = {
+	opposites = {
+		st_lucy
+		st_olav
+	}
+	
+	monthly_character_piety = 0.5
+	learning = 1
+	catholic_opinion = 5
+	
+	potential = { religion = fornsed }
+	religious_branch = fornsed
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
 latin_rite = {
 	opposites = {
 		byzantine_rite
@@ -2410,6 +2523,7 @@ dvoeverie_st_nicholas = {
 		dvoeverie_baba_matrona
 	}
 	diplomacy = 1
+	same_opinion=10
 	monthly_character_piety = 0.2
 	
 	potential = { religion = dvoeverie }
@@ -2451,8 +2565,9 @@ dvoeverie_tsar = {
 		dvoeverie_st_vlasius
 		dvoeverie_baba_matrona
 	}
-	same_opinion=5
+	same_opinion=10
 	opposite_opinion=-10
+	proletcult_opinion=-10
 	monthly_character_piety = 0.2
 	
 	tolerates_vernacular = yes
@@ -2484,6 +2599,181 @@ dvoeverie_baba_matrona = {
 	
 	potential = { religion = dvoeverie }
 	religious_branch = dvoeverie
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+pravoslavie_holy_mary = {
+	opposites = {
+		pravoslavie_st_nicholas
+		pravoslavie_st_dmitriy
+		pravoslavie_st_xenia_of_st_petersburg
+		pravoslavie_st_seraphim_of_sarov
+		pravoslavie_st_sergius_of_radonezh
+		pravoslavie_st_vladimir
+		pravoslavie_st_tichon_of_moscow
+	}
+	diplomacy = 1
+	health = 0.5 
+	monthly_character_piety = 0.2
+	
+	ai_zeal = 10
+	
+	potential = { religion = pravoslavie }
+	religious_branch = pravoslavie
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+pravoslavie_st_nicholas = {
+	opposites = {
+		pravoslavie_holy_mary
+		pravoslavie_st_dmitriy
+		pravoslavie_st_xenia_of_st_petersburg
+		pravoslavie_st_seraphim_of_sarov
+		pravoslavie_st_sergius_of_radonezh
+		pravoslavie_st_vladimir
+		pravoslavie_st_tichon_of_moscow
+	}
+	diplomacy = 1
+	same_opinion=10
+	monthly_character_piety = 0.2
+	
+	potential = { religion = pravoslavie }
+	religious_branch = pravoslavie
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+pravoslavie_st_dmitriy = {
+	opposites = {
+		pravoslavie_holy_mary
+		pravoslavie_st_nicholas
+		pravoslavie_st_xenia_of_st_petersburg
+		pravoslavie_st_seraphim_of_sarov
+		pravoslavie_st_sergius_of_radonezh
+		pravoslavie_st_vladimir
+		pravoslavie_st_tichon_of_moscow
+	}
+	health = 0.75
+	liege_opinion = 5
+	monthly_character_piety = 0.2
+	
+	potential = { religion = pravoslavie }
+	religious_branch = pravoslavie
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+pravoslavie_st_xenia_of_st_petersburg = {
+	opposites = {
+		pravoslavie_holy_mary
+		pravoslavie_st_nicholas
+		pravoslavie_st_dmitriy
+		pravoslavie_st_seraphim_of_sarov
+		pravoslavie_st_sergius_of_radonezh
+		pravoslavie_st_vladimir
+		pravoslavie_st_tichon_of_moscow
+	}
+	diplomacy = 1
+	same_opinion = 5
+	same_religion_opinion = 5
+	monthly_character_piety = 0.2
+	
+	ai_ambition = -10
+	
+	potential = { religion = pravoslavie }
+	religious_branch = pravoslavie
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+pravoslavie_st_seraphim_of_sarov = {
+	opposites = {
+		pravoslavie_holy_mary
+		pravoslavie_st_nicholas
+		pravoslavie_st_dmitriy
+		pravoslavie_st_xenia_of_st_petersburg
+		pravoslavie_st_sergius_of_radonezh
+		pravoslavie_st_vladimir
+		pravoslavie_st_tichon_of_moscow
+	}
+	learning = 1
+	falconer_opinion=10
+	monthly_character_piety = 0.2
+	
+	ai_ambition = -10
+	
+	potential = { religion = pravoslavie }
+	religious_branch = pravoslavie
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+pravoslavie_st_sergius_of_radonezh = {
+	opposites = {
+		pravoslavie_holy_mary
+		pravoslavie_st_nicholas
+		pravoslavie_st_dmitriy
+		pravoslavie_st_xenia_of_st_petersburg
+		pravoslavie_st_seraphim_of_sarov
+		pravoslavie_st_vladimir
+		pravoslavie_st_tichon_of_moscow
+	}
+	stewardship = 1
+	church_opinion = 5
+	monthly_character_piety = 0.2
+	
+	potential = { religion = pravoslavie }
+	religious_branch = pravoslavie
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+pravoslavie_st_vladimir = {
+	opposites = {
+		pravoslavie_holy_mary
+		pravoslavie_st_nicholas
+		pravoslavie_st_dmitriy
+		pravoslavie_st_xenia_of_st_petersburg
+		pravoslavie_st_seraphim_of_sarov
+		pravoslavie_st_sergius_of_radonezh
+		pravoslavie_st_tichon_of_moscow
+	}
+	martial = 1
+	global_tax_modifier = 0.10
+	monthly_character_piety = 0.2
+	
+	potential = { religion = pravoslavie }
+	religious_branch = pravoslavie
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+pravoslavie_st_tichon_of_moscow = {
+	opposites = {
+		pravoslavie_holy_mary
+		pravoslavie_st_nicholas
+		pravoslavie_st_dmitriy
+		pravoslavie_st_xenia_of_st_petersburg
+		pravoslavie_st_seraphim_of_sarov
+		pravoslavie_st_sergius_of_radonezh
+		pravoslavie_st_vladimir
+	}
+	learning = 1
+	religion_head_opinion = 5
+	monthly_character_piety = 0.2
+	
+	potential = { religion = pravoslavie }
+	religious_branch = pravoslavie
 	random = no 
 	religious = yes 
 	ruler_designer_cost = 0

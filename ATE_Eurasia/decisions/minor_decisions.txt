@@ -622,7 +622,10 @@ decisions = {
 			is_playable = yes
 			prisoner = no
 			is_adult = yes
-			religion_group = muslim
+			OR = {
+			   religion_group = muslim
+			   has_religion_feature = religion_feature_muslim_syncretism
+			}
 			NOT = { has_character_flag = ramadan }
 			NOT = { has_character_modifier = observed_ramadan }
 			NOT = { trait = on_hajj }
@@ -784,7 +787,10 @@ decisions = {
 			is_playable = yes
 			is_adult = yes
 			prisoner = no
-			religion_group = jewish_group
+			OR = { 
+			    religion_group = jewish_group
+				has_religion_feature = religion_feature_jewish_syncretism
+			}
 			NOT = { has_character_modifier = held_passover_timer }
 			NOT = {	has_character_flag = holding_passover }
 			NOT = {
@@ -1020,7 +1026,23 @@ decisions = {
 			}
 			is_playable = yes
 			religion_group = christian
-			NOT = { religion = pravoslavie }
+			NOT = { 
+			   religion = calvinist
+			   religion = iconoclast
+			   religion = oasite
+			   religion = insular
+			   trait = "low_anglican"
+			   trait = "broad_anglican"
+			   religion = free_church
+			   religion = leveller
+			   religion = seperatist
+			   religion = dukhovnye
+			   religion = dove
+			   religion = pravoslavie 
+			   religion = dvoeverie
+			   religion = apostolic
+			   religion = celeste
+			}
 			NOT = { trait = pilgrim }
 			NOT = {
 				has_alternate_start_parameter = { key = religion_names value = random }

@@ -642,30 +642,32 @@ character_event = { #Go to Paris
 		hidden_tooltip = {
 			add_trait = on_pilgrimage
 			set_character_flag = good_pilgrimage
-			narrative_event = { id = jacobin.24 days = 30 }
+			narrative_event = { id = jacobin.24 days = 35 }
 		}
 		hidden_tooltip = {
 			random_list = {
-				5 = { character_event = { id = SoA.5031 days = 9 random = 10 } } # List that is always checked
-				5 = { character_event = { id = SoA.5032 days = 9 random = 10 } }
-				10 = { narrative_event = { id = SoA.5033 days = 9 random = 10 } }
-				10 = { character_event = { id = SoA.5034 days = 10 random = 10 } }
-				10 = { character_event = { id = SoA.5035 days = 8 random = 10 } }
-				10 = { character_event = { id = SoA.5036 days = 9 random = 10 } }
-				10 = { character_event = { id = SoA.5037 days = 10 random = 10 } }
-				5 = { character_event = { id = SoA.5038 days = 10 random = 10 } }
-				5 = { character_event = { id = SoA.5039 days = 8 random = 10 } }
+				10 = { character_event = { id = jacobin.30 days = 9 random = 10 } } # List that is always checked
+				10 = { character_event = { id = jacobin.33 days = 9 random = 10 } }
+				10 = { narrative_event = { id = jacobin.35 days = 9 random = 10 } }
+				10 = { character_event = { id = jacobin.36 days = 10 random = 10 } }
+				10 = { character_event = { id = jacobin.42 days = 8 random = 10 } }
+				10 = { character_event = { id = jacobin.48 days = 9 random = 10 } }
+				10 = { character_event = { id = jacobin.49 days = 10 random = 10 } }
+				10 = { character_event = { id = jacobin.50 days = 10 random = 10 } }
+				10 = { character_event = { id = jacobin.54 days = 8 random = 10 } }
+				10 = { character_event = { id = jacobin.55 days = 8 random = 10 } }
 			}
 			random_list = {
-				5 = { character_event = { id = SoA.5031 days = 18 random = 10 } } # List that is always checked
-				5 = { character_event = { id = SoA.5032 days = 19 random = 10 } }
-				10 = { narrative_event = { id = SoA.5033 days = 20 random = 10 } }
-				10 = { character_event = { id = SoA.5034 days = 20 random = 10 } }
-				10 = { character_event = { id = SoA.5035 days = 19 random = 10 } }
-				10 = { character_event = { id = SoA.5036 days = 22 random = 10 } }
-				10 = { character_event = { id = SoA.5037 days = 21 random = 10 } }
-				5 = { character_event = { id = SoA.5038 days = 19 random = 10 } }
-				5 = { character_event = { id = SoA.5039 days = 18 random = 10 } }
+				10 = { character_event = { id = jacobin.30 days = 20 random = 10 } } # List that is always checked
+				10 = { character_event = { id = jacobin.33 days = 20 random = 10 } }
+				10 = { narrative_event = { id = jacobin.35 days = 20 random = 10 } }
+				10 = { character_event = { id = jacobin.36 days = 20 random = 10 } }
+				10 = { character_event = { id = jacobin.42 days = 20 random = 10 } }
+				10 = { character_event = { id = jacobin.48 days = 20 random = 10 } }
+				10 = { character_event = { id = jacobin.49 days = 20 random = 10 } }
+				10 = { character_event = { id = jacobin.50 days = 20 random = 10 } }
+				10 = { character_event = { id = jacobin.54 days = 20 random = 10 } }
+				10 = { character_event = { id = jacobin.55 days = 20 random = 10 } }
 			}
 		}
 	}
@@ -683,30 +685,32 @@ character_event = { #Go to Marseille
 		hidden_tooltip = {
 			add_trait = on_pilgrimage
 			set_character_flag = good_pilgrimage
-			narrative_event = { id = jacobin.25 days = 30 }
+			narrative_event = { id = jacobin.25 days = 35 }
 		}
 		hidden_tooltip = {
 			random_list = {
-				5 = { character_event = { id = SoA.5031 days = 9 random = 10 } } # List that is always checked
-				5 = { character_event = { id = SoA.5032 days = 9 random = 10 } }
-				10 = { narrative_event = { id = SoA.5033 days = 9 random = 10 } }
-				10 = { character_event = { id = SoA.5034 days = 10 random = 10 } }
-				10 = { character_event = { id = SoA.5035 days = 8 random = 10 } }
-				10 = { character_event = { id = SoA.5036 days = 9 random = 10 } }
-				10 = { character_event = { id = SoA.5037 days = 10 random = 10 } }
-				5 = { character_event = { id = SoA.5038 days = 10 random = 10 } }
-				5 = { character_event = { id = SoA.5039 days = 8 random = 10 } }
+				10 = { character_event = { id = jacobin.30 days = 9 random = 10 } } # List that is always checked
+				10 = { character_event = { id = jacobin.33 days = 9 random = 10 } }
+				10 = { narrative_event = { id = jacobin.35 days = 9 random = 10 } }
+				10 = { character_event = { id = jacobin.36 days = 10 random = 10 } }
+				10 = { character_event = { id = jacobin.42 days = 8 random = 10 } }
+				10 = { character_event = { id = jacobin.48 days = 9 random = 10 } }
+				10 = { character_event = { id = jacobin.49 days = 10 random = 10 } }
+				10 = { character_event = { id = jacobin.50 days = 10 random = 10 } }
+				10 = { character_event = { id = jacobin.54 days = 8 random = 10 } }
+				10 = { character_event = { id = jacobin.55 days = 8 random = 10 } }
 			}
 			random_list = {
-				5 = { character_event = { id = SoA.5031 days = 18 random = 10 } } # List that is always checked
-				5 = { character_event = { id = SoA.5032 days = 19 random = 10 } }
-				10 = { narrative_event = { id = SoA.5033 days = 20 random = 10 } }
-				10 = { character_event = { id = SoA.5034 days = 20 random = 10 } }
-				10 = { character_event = { id = SoA.5035 days = 19 random = 10 } }
-				10 = { character_event = { id = SoA.5036 days = 22 random = 10 } }
-				10 = { character_event = { id = SoA.5037 days = 21 random = 10 } }
-				5 = { character_event = { id = SoA.5038 days = 19 random = 10 } }
-				5 = { character_event = { id = SoA.5039 days = 18 random = 10 } }
+				10 = { character_event = { id = jacobin.30 days = 20 random = 10 } } # List that is always checked
+				10 = { character_event = { id = jacobin.33 days = 20 random = 10 } }
+				10 = { narrative_event = { id = jacobin.35 days = 20 random = 10 } }
+				10 = { character_event = { id = jacobin.36 days = 20 random = 10 } }
+				10 = { character_event = { id = jacobin.42 days = 20 random = 10 } }
+				10 = { character_event = { id = jacobin.48 days = 20 random = 10 } }
+				10 = { character_event = { id = jacobin.49 days = 20 random = 10 } }
+				10 = { character_event = { id = jacobin.50 days = 20 random = 10 } }
+				10 = { character_event = { id = jacobin.54 days = 20 random = 10 } }
+				10 = { character_event = { id = jacobin.55 days = 20 random = 10 } }
 			}
 		}
 	}
@@ -724,30 +728,32 @@ character_event = { #Go to Austerlitz
 		hidden_tooltip = {
 			add_trait = on_pilgrimage
 			set_character_flag = good_pilgrimage
-			narrative_event = { id = jacobin.26 days = 30 }
+			narrative_event = { id = jacobin.26 days = 35 }
 		}
 		hidden_tooltip = {
 			random_list = {
-				5 = { character_event = { id = SoA.5031 days = 9 random = 10 } } # List that is always checked
-				5 = { character_event = { id = SoA.5032 days = 9 random = 10 } }
-				10 = { narrative_event = { id = SoA.5033 days = 9 random = 10 } }
-				10 = { character_event = { id = SoA.5034 days = 10 random = 10 } }
-				10 = { character_event = { id = SoA.5035 days = 8 random = 10 } }
-				10 = { character_event = { id = SoA.5036 days = 9 random = 10 } }
-				10 = { character_event = { id = SoA.5037 days = 10 random = 10 } }
-				5 = { character_event = { id = SoA.5038 days = 10 random = 10 } }
-				5 = { character_event = { id = SoA.5039 days = 8 random = 10 } }
+				10 = { character_event = { id = jacobin.30 days = 9 random = 10 } } # List that is always checked
+				10 = { character_event = { id = jacobin.33 days = 9 random = 10 } }
+				10 = { narrative_event = { id = jacobin.35 days = 9 random = 10 } }
+				10 = { character_event = { id = jacobin.36 days = 10 random = 10 } }
+				10 = { character_event = { id = jacobin.42 days = 8 random = 10 } }
+				10 = { character_event = { id = jacobin.48 days = 9 random = 10 } }
+				10 = { character_event = { id = jacobin.49 days = 10 random = 10 } }
+				10 = { character_event = { id = jacobin.50 days = 10 random = 10 } }
+				10 = { character_event = { id = jacobin.54 days = 8 random = 10 } }
+				10 = { character_event = { id = jacobin.55 days = 8 random = 10 } }
 			}
 			random_list = {
-				5 = { character_event = { id = SoA.5031 days = 18 random = 10 } } # List that is always checked
-				5 = { character_event = { id = SoA.5032 days = 19 random = 10 } }
-				10 = { narrative_event = { id = SoA.5033 days = 20 random = 10 } }
-				10 = { character_event = { id = SoA.5034 days = 20 random = 10 } }
-				10 = { character_event = { id = SoA.5035 days = 19 random = 10 } }
-				10 = { character_event = { id = SoA.5036 days = 22 random = 10 } }
-				10 = { character_event = { id = SoA.5037 days = 21 random = 10 } }
-				5 = { character_event = { id = SoA.5038 days = 19 random = 10 } }
-				5 = { character_event = { id = SoA.5039 days = 18 random = 10 } }
+				10 = { character_event = { id = jacobin.30 days = 20 random = 10 } } # List that is always checked
+				10 = { character_event = { id = jacobin.33 days = 20 random = 10 } }
+				10 = { narrative_event = { id = jacobin.35 days = 20 random = 10 } }
+				10 = { character_event = { id = jacobin.36 days = 20 random = 10 } }
+				10 = { character_event = { id = jacobin.42 days = 20 random = 10 } }
+				10 = { character_event = { id = jacobin.48 days = 20 random = 10 } }
+				10 = { character_event = { id = jacobin.49 days = 20 random = 10 } }
+				10 = { character_event = { id = jacobin.50 days = 20 random = 10 } }
+				10 = { character_event = { id = jacobin.54 days = 20 random = 10 } }
+				10 = { character_event = { id = jacobin.55 days = 20 random = 10 } }
 			}
 		}
 	}
@@ -766,30 +772,32 @@ character_event = { #Go to London
 		hidden_tooltip = {
 			add_trait = on_pilgrimage
 			set_character_flag = good_pilgrimage
-			narrative_event = { id = jacobin.28 days = 30 }
+			narrative_event = { id = jacobin.28 days = 35 }
 		}
 		hidden_tooltip = {
 			random_list = {
-				5 = { character_event = { id = SoA.5031 days = 9 random = 10 } } # List that is always checked
-				5 = { character_event = { id = SoA.5032 days = 9 random = 10 } }
-				10 = { narrative_event = { id = SoA.5033 days = 9 random = 10 } }
-				10 = { character_event = { id = SoA.5034 days = 10 random = 10 } }
-				10 = { character_event = { id = SoA.5035 days = 8 random = 10 } }
-				10 = { character_event = { id = SoA.5036 days = 9 random = 10 } }
-				10 = { character_event = { id = SoA.5037 days = 10 random = 10 } }
-				5 = { character_event = { id = SoA.5038 days = 10 random = 10 } }
-				5 = { character_event = { id = SoA.5039 days = 8 random = 10 } }
+				10 = { character_event = { id = jacobin.30 days = 9 random = 10 } } # List that is always checked
+				10 = { character_event = { id = jacobin.33 days = 9 random = 10 } }
+				10 = { narrative_event = { id = jacobin.35 days = 9 random = 10 } }
+				10 = { character_event = { id = jacobin.36 days = 10 random = 10 } }
+				10 = { character_event = { id = jacobin.42 days = 8 random = 10 } }
+				10 = { character_event = { id = jacobin.48 days = 9 random = 10 } }
+				10 = { character_event = { id = jacobin.49 days = 10 random = 10 } }
+				10 = { character_event = { id = jacobin.50 days = 10 random = 10 } }
+				10 = { character_event = { id = jacobin.54 days = 8 random = 10 } }
+				10 = { character_event = { id = jacobin.55 days = 8 random = 10 } }
 			}
 			random_list = {
-				5 = { character_event = { id = SoA.5031 days = 18 random = 10 } } # List that is always checked
-				5 = { character_event = { id = SoA.5032 days = 19 random = 10 } }
-				10 = { narrative_event = { id = SoA.5033 days = 20 random = 10 } }
-				10 = { character_event = { id = SoA.5034 days = 20 random = 10 } }
-				10 = { character_event = { id = SoA.5035 days = 19 random = 10 } }
-				10 = { character_event = { id = SoA.5036 days = 22 random = 10 } }
-				10 = { character_event = { id = SoA.5037 days = 21 random = 10 } }
-				5 = { character_event = { id = SoA.5038 days = 19 random = 10 } }
-				5 = { character_event = { id = SoA.5039 days = 18 random = 10 } }
+				10 = { character_event = { id = jacobin.30 days = 20 random = 10 } } # List that is always checked
+				10 = { character_event = { id = jacobin.33 days = 20 random = 10 } }
+				10 = { narrative_event = { id = jacobin.35 days = 20 random = 10 } }
+				10 = { character_event = { id = jacobin.36 days = 20 random = 10 } }
+				10 = { character_event = { id = jacobin.42 days = 20 random = 10 } }
+				10 = { character_event = { id = jacobin.48 days = 20 random = 10 } }
+				10 = { character_event = { id = jacobin.49 days = 20 random = 10 } }
+				10 = { character_event = { id = jacobin.50 days = 20 random = 10 } }
+				10 = { character_event = { id = jacobin.54 days = 20 random = 10 } }
+				10 = { character_event = { id = jacobin.55 days = 20 random = 10 } }
 			}
 		}
 	}
@@ -808,30 +816,32 @@ character_event = { #Go to Colombey les Deux Église
 		hidden_tooltip = {
 			add_trait = on_pilgrimage
 			set_character_flag = good_pilgrimage
-			narrative_event = { id = jacobin.27 days = 30 }
+			narrative_event = { id = jacobin.27 days = 35 }
 		}
 		hidden_tooltip = {
 			random_list = {
-				5 = { character_event = { id = SoA.5031 days = 9 random = 10 } } # List that is always checked
-				5 = { character_event = { id = SoA.5032 days = 9 random = 10 } }
-				10 = { narrative_event = { id = SoA.5033 days = 9 random = 10 } }
-				10 = { character_event = { id = SoA.5034 days = 10 random = 10 } }
-				10 = { character_event = { id = SoA.5035 days = 8 random = 10 } }
-				10 = { character_event = { id = SoA.5036 days = 9 random = 10 } }
-				10 = { character_event = { id = SoA.5037 days = 10 random = 10 } }
-				5 = { character_event = { id = SoA.5038 days = 10 random = 10 } }
-				5 = { character_event = { id = SoA.5039 days = 8 random = 10 } }
+				10 = { character_event = { id = jacobin.30 days = 9 random = 10 } } # List that is always checked
+				10 = { character_event = { id = jacobin.33 days = 9 random = 10 } }
+				10 = { narrative_event = { id = jacobin.35 days = 9 random = 10 } }
+				10 = { character_event = { id = jacobin.36 days = 10 random = 10 } }
+				10 = { character_event = { id = jacobin.42 days = 8 random = 10 } }
+				10 = { character_event = { id = jacobin.48 days = 9 random = 10 } }
+				10 = { character_event = { id = jacobin.49 days = 10 random = 10 } }
+				10 = { character_event = { id = jacobin.50 days = 10 random = 10 } }
+				10 = { character_event = { id = jacobin.54 days = 8 random = 10 } }
+				10 = { character_event = { id = jacobin.55 days = 8 random = 10 } }
 			}
 			random_list = {
-				5 = { character_event = { id = SoA.5031 days = 18 random = 10 } } # List that is always checked
-				5 = { character_event = { id = SoA.5032 days = 19 random = 10 } }
-				10 = { narrative_event = { id = SoA.5033 days = 20 random = 10 } }
-				10 = { character_event = { id = SoA.5034 days = 20 random = 10 } }
-				10 = { character_event = { id = SoA.5035 days = 19 random = 10 } }
-				10 = { character_event = { id = SoA.5036 days = 22 random = 10 } }
-				10 = { character_event = { id = SoA.5037 days = 21 random = 10 } }
-				5 = { character_event = { id = SoA.5038 days = 19 random = 10 } }
-				5 = { character_event = { id = SoA.5039 days = 18 random = 10 } }
+				10 = { character_event = { id = jacobin.30 days = 20 random = 10 } } # List that is always checked
+				10 = { character_event = { id = jacobin.33 days = 20 random = 10 } }
+				10 = { narrative_event = { id = jacobin.35 days = 20 random = 10 } }
+				10 = { character_event = { id = jacobin.36 days = 20 random = 10 } }
+				10 = { character_event = { id = jacobin.42 days = 20 random = 10 } }
+				10 = { character_event = { id = jacobin.48 days = 20 random = 10 } }
+				10 = { character_event = { id = jacobin.49 days = 20 random = 10 } }
+				10 = { character_event = { id = jacobin.50 days = 20 random = 10 } }
+				10 = { character_event = { id = jacobin.54 days = 20 random = 10 } }
+				10 = { character_event = { id = jacobin.55 days = 20 random = 10 } }
 			}
 		}
 	}
@@ -934,5 +944,1164 @@ character_event = {
 	option = {
 		name = EVTOPTC_jacobin.29
 		add_trait = school_of_lamennais
+	}
+}
+
+character_event = {
+	id = jacobin.30
+	desc = EVTDESC_jacobin.30
+	picture = GFX_evt_jacobin_pilgrimage
+	border = GFX_event_normal_frame_religion
+	is_triggered_only = yes
+
+	option = { #Go to them
+		name = EVTOPTA_jacobin_30
+		piety = 20
+		prestige = -20
+		random_list = {
+		  20 = { add_trait="zealous" }
+		  15 = { add_trait="trusting" }
+		  10 = { add_trait="kind" }
+		  10 = { add_trait="gregarious" }
+		  10 = { add_trait="pious" }
+		  45 = { }
+		}
+		random_list = {
+		    80 = { narrative_event = { id = jacobin.31 } }
+			20 = { character_event = { id = jacobin.32 } }
+		}
+	}
+	
+	option = { #Not go
+		name = EVTOPTB_jacobin_30
+		piety = -20
+		prestige = 20
+		random_list = {
+		   35 = { add_trait="cynical"}
+		   15 = { add_trait="shy" }
+		   15 = { add_trait="slothful" }
+		   15 = { add_trait="proud" }
+		   20 = { }
+		}
+	}
+}
+
+narrative_event = { 
+	id = jacobin.31
+	title = EVTTITLE_jacobin_31
+	desc = EVTDESC_jacobin_31
+	picture = GFX_evt_vidocq
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_jacobin_31
+		piety = 20
+		random_list = {
+		  10 = { add_trait="deceitful" }
+		  10 = { ROOT = { change_intrigue = 1 } }
+		  80 = { }
+		}
+	}
+}
+
+character_event = { 
+	id = jacobin.32
+	desc = EVTDESC_jacobin_32
+	picture = GFX_evt_jacobin_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_jacobin_32
+		piety = 10
+		prestige = -10
+		random_list = {
+		  10 = { death = { death_reason = death_missing } }
+		  5 = { add_trait="incapable" }
+		  5 = { add_trait="one_eyed" }
+		  10 = { add_trait="maimed" }
+		  30 = { add_trait="wounded" }
+		  40 = { }
+		}
+	}
+}
+
+character_event = {
+	id = jacobin.33
+	desc = EVTDESC_jacobin_33
+	picture = GFX_evt_jacobin_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_jacobin_33
+		hidden_tooltip = {
+		  random_list = {
+			  20 = { set_character_flag = seeing_young_killer_execution }
+			  20 = { set_character_flag = seeing_christian_priest_execution }
+			  20 = { set_character_flag = seeing_thief_execution }
+			  20 = { set_character_flag = seeing_financial_scamer_execution }
+			  10 = { set_character_flag = seeing_innocent_lady_execution }
+			  10 = { set_character_flag = seeing_innocent_man_execution }
+		  }
+		}
+		character_event = { id = jacobin.34 }
+	}
+}
+
+long_character_event = {
+	id = jacobin.34
+	desc = {
+		text = EVTDESC_jacobin_34_young killer
+		picture = GFX_evt_jacobin_pilgrimage
+		trigger = { 
+			has_character_flag = seeing_young_killer_execution
+		}
+	}
+	desc = {
+		text = EVTDESC_jacobin_34_christian_priest
+		picture = GFX_evt_jacobin_pilgrimage
+		trigger = { 
+			has_character_flag = seeing_christian_priest_execution
+		}
+	}
+	desc = {
+		text = EVTDESC_jacobin_34_thief
+		picture = GFX_evt_jacobin_pilgrimage
+		trigger = { 
+			has_character_flag = seeing_thief_execution
+		}
+	}
+	desc = {
+		text = EVTDESC_jacobin_34_scamer
+		picture = GFX_evt_jacobin_pilgrimage
+		trigger = { 
+			has_character_flag = seeing_financial_scamer_execution
+		}
+	}
+	desc = {
+		text = EVTDESC_jacobin_34_lady
+		picture = GFX_evt_jacobin_pilgrimage
+		trigger = { 
+			has_character_flag = seeing_innocent_lady_execution
+		}
+	}
+	desc = {
+		text = EVTDESC_jacobin_34_men
+		picture = GFX_evt_jacobin_pilgrimage
+		trigger = { 
+			has_character_flag = seeing_innocent_man_execution
+		}
+	}
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_jacobin_34
+		piety = 20
+		if = {
+		   limit = {
+		     OR = {
+		      has_character_flag = seeing_young_killer_execution
+			  has_character_flag = seeing_thief_execution
+			  has_character_flag = seeing_financial_scamer_execution
+			 }
+		   }
+		   random_list = {
+		      10 = { add_trait="zealous" }
+			  10 = { add_trait="just" }
+			  10 = { add_trait="pious" }
+			  70 = { }
+		   } 
+		}
+		else = {
+		   	random_list = {
+		      10 = { add_trait="zealous" }
+			  10 = { add_trait="pious" }
+			  10 = { add_trait="cruel" }
+			  70 = { }
+		    } 
+		}  
+		clr_character_flag = seeing_innocent_man_execution
+		clr_character_flag = seeing_innocent_lady_execution
+		clr_character_flag = seeing_christian_priest_execution
+		clr_character_flag = seeing_young_killer_execution
+		clr_character_flag = seeing_thief_execution
+		clr_character_flag = seeing_financial_scamer_execution
+	}
+	
+	option = { #Save him/her
+		name = EVTOPTB_jacobin_34
+		piety = -20
+		wealth = -20
+		if = {
+		   limit = {
+		      has_character_flag = seeing_young_killer_execution
+			  random_list = {
+			    25 = { add_trait="cruel" }
+				25 = { add_trait="cynical" }
+				50 = { }
+			  }
+		   }
+		   custom_tooltip = { text = pardoned_young_killer_text }
+		   hidden_tooltip = {
+			    create_character = {
+			        culture = ROOT
+			        religion = ROOT
+			        female = yes
+			        lowborn = yes
+			        age = 25
+					trait = tough_soldier
+					trait = duelist
+					trait = wroth
+					trait = cruel
+					trait = wounded
+					attributes = {
+				         martial = 12
+			         }
+		        }
+			  }
+		}
+		if = {
+		   limit = {
+		      has_character_flag = seeing_christian_priest_execution
+			  random_list = {
+				25 = { add_trait="sympathy_christendom" }
+				15 = { add_trait="kind" }
+				50 = { }
+			  }
+		   }
+		}
+		if = {
+		   limit = {
+		      has_character_flag = seeing_thief_execution }
+			  random_list = {
+				55 = { add_trait="cynical" }
+				45 = { }
+			  }
+			  custom_tooltip = { text = pardoned_thief_text }
+			  hidden_tooltip = {
+			    create_character = {
+			        culture = ROOT
+			        religion = ROOT
+			        female = yes
+			        lowborn = yes
+			        age = 34
+					trait = tough_soldier
+					trait = wroth
+					trait = brave
+					trait = schemer
+					trait = deceitful
+					attributes = {
+				         martial = 10
+				         intrigue = 11
+			         }
+		        }
+			  }
+		}
+	    if = {
+		   limit = {
+		      has_character_flag = seeing_financial_scamer_execution }
+			  random_list = {
+			    25 = { add_trait="deceitful" }
+				30 = { add_trait="cynical" }
+				45 = { }
+			  }
+			  custom_tooltip = { text = pardoned_scamer_text }
+			  hidden_tooltip = {
+			    create_character = {
+			        culture = ROOT
+			        religion = ROOT
+			        female = yes
+			        lowborn = yes
+			        age = 36
+					trait = midas_touched
+					trait = administrator
+					trait = deceitful
+					attributes = {
+				         stewardship = 10
+				         intrigue = 11
+			         }
+		        }
+			  }
+        }
+		if = {
+		   limit = {
+		      has_character_flag = seeing_innocent_lady_execution
+			}
+			  random_list = {
+			    25 = { add_trait="kind" }
+				25 = { add_trait="just" }
+				50 = { }
+			  }
+			  custom_tooltip = { text = pardoned_lady_text }
+			  hidden_tooltip = {
+			    create_character = {
+			        culture = ROOT
+			        religion = ROOT
+			        female = yes
+			        lowborn = yes
+			        age = 19
+		        }
+				new_character = {
+		   	        add_friend = ROOT
+			    } 
+			  }  
+		}
+		if = {
+		   limit = {
+		      has_character_flag = seeing_innocent_man_execution }
+			  random_list = {
+			    25 = { add_trait="kind" }
+				25 = { add_trait="just" }
+				50 = { }
+			  }
+			  custom_tooltip = { text = pardoned_men_text }
+			  hidden_tooltip = {
+			    create_character = {
+			        culture = ROOT
+			        religion = ROOT
+			        female = no
+			        lowborn = yes
+			        age = 19
+		        }
+				new_character = {
+		   	        add_friend = ROOT
+			    } 
+			  }  
+	    }
+		clr_character_flag = seeing_innocent_man_execution
+		clr_character_flag = seeing_innocent_lady_execution
+		clr_character_flag = seeing_christian_priest_execution
+		clr_character_flag = seeing_young_killer_execution
+		clr_character_flag = seeing_thief_execution
+		clr_character_flag = seeing_financial_scamer_execution
+	}
+}
+
+long_character_event = {
+	id = jacobin.35
+	desc = EVTDESC_jacobin_35
+	picture = GFX_evt_jacobin_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_jacobin_35
+		piety=10
+		prestige=10
+		random_list = {
+			20 = { add_trait="brave" }
+			20 = { add_trait="ambitious" }
+			20 = { add_trait="proud" }
+			5 = { add_trait="zealous" }
+			5 = { add_trait="pious" }
+			30 = { }
+	    }
+	}
+	
+	option = {
+		name = EVTOPTB_jacobin_35
+		random_list = {
+			20 = { add_trait="kind" }
+			20 = { add_trait="content" }
+			20 = { add_trait="humble" }
+			10 = { add_trait="cynical" }
+			30 = { }
+		}
+	}
+}
+
+narrative_event = { 
+	id = jacobin.36
+	title = EVTTITLE_SKC_113
+	desc = EVTDESC_SKC_113
+	
+	picture = GFX_evt_jacobin_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { #Brave movement
+		name = EVTOPTA_SKC_113
+		trigger = {
+		  NOT = {
+		    diplomacy > 14
+			trait="grey_eminence"
+			trait="charismatic_negotiator"
+			trait="master_seductress"
+			trait="master_seducer"
+			trait="socializer"
+		  }
+		}
+		prestige=20
+		random_list = {
+		   10 = { add_trait="brave" }
+		   20 = { add_trait="honest" }
+		   70 = { }
+		}
+		hidden_tooltip = {
+		   character_event = { id = jacobin.37 }
+		   random_list = {
+		   	  30 = { narrative_event = { id = jacobin.38 days = 3200 } } #Fail and sad life
+		      25 = { narrative_event = { id = jacobin.39 days = 3200 } } #Fail, but better life
+			  25 = { narrative_event = { id = jacobin.40 days = 3200 } } #Success, but sad life
+			  10 = { narrative_event = { id = jacobin.41 days = 3200 } } #Success and better life
+			  10 = { }
+		   }
+		}
+	}
+	
+	option = { #Diplomatic movement
+		name = EVTOPTE_SKC_113
+		trigger = {
+		  OR = {
+		    diplomacy > 12
+			trait="grey_eminence"
+			trait="charismatic_negotiator"
+			trait="master_seductress"
+			trait="master_seducer"
+			trait="socializer"
+		  }
+		}
+		prestige=20
+		hidden_tooltip = {
+		   character_event = { id = jacobin.37 }
+		   if = {
+		    limit = { NOT = { diplomacy > 15 trait = "socializer" trait = "master_seducer" trait = "master_seductress" } }
+		   random_list = {
+		   	  15 = { narrative_event = { id = jacobin.38 days = 3200 } } #Fail and sad life
+		      20 = { narrative_event = { id = jacobin.39 days = 3200 } } #Fail, but better life
+			  25 = { narrative_event = { id = jacobin.40 days = 3200 } } #Success, but sad life
+			  25 = { narrative_event = { id = jacobin.41 days = 3200 } } #Success and better life
+			  10 = { }
+		   }
+		   }
+		   if = {
+		    limit = { OR = { diplomacy > 15 trait = "socializer" trait = "master_seducer" trait = "master_seductress" } }
+		   random_list = {
+		   	  10 = { narrative_event = { id = jacobin.38 days = 3200 } } #Fail and sad life
+		      10 = { narrative_event = { id = jacobin.39 days = 3200 } } #Fail, but better life
+			  35 = { narrative_event = { id = jacobin.40 days = 3200 } } #Success, but sad life
+			  35 = { narrative_event = { id = jacobin.41 days = 3200 } } #Success and better life
+			  10 = { }
+		   }
+		   }
+		}
+	}
+	
+	option = { #Join to me bro
+		name = EVTOPTB_SKC_113
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = no
+			age = 17
+			trait = shy
+			trait = kind
+			trait = honest
+			trait = poet
+			attributes = {
+				martial = 8
+				diplomacy = 8
+				stewardship = 8
+				intrigue = 2
+				learning = 8
+			}
+		}
+		new_character = {
+		   add_friend = ROOT
+		} 
+	}
+	
+	option = { #Nothing doing
+		name = EVTOPTD_SKC_113
+		trigger = {
+		    NOT = { trait="kind" }
+		}
+		piety=-20
+		random_list = {
+		   30 = { add_trait="selfish" }
+		   20 = { add_trait="envious" }
+		   20 = { add_trait="cynical" }
+		   10 = { add_trait="cruel" }
+		   20 = { }
+		}
+	}
+}
+
+character_event = { 
+	id = jacobin.37
+	desc = EVTDESC_SKC_114
+	picture = GFX_evt_jacobin_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_SKC_114
+		wealth=-15
+	}
+}
+
+narrative_event = { #Failure and sad life
+	id = jacobin.38
+	title = EVTTITLE_SKC_115
+	desc = EVTDESC_SKC_115
+	picture = GFX_evt_jacobin_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_SKC_115
+		hidden_tooltip = {
+		    piety=-1
+		}
+	}
+}
+
+narrative_event = { #Failure, but better life
+	id = jacobin.39
+	title = EVTTITLE_SKC_115
+	desc = EVTDESC_SKC_116
+	picture = GFX_evt_jacobin_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_SKC_116
+		prestige = -20
+		piety = 20
+	}
+}
+
+narrative_event = { #Success, but sad life
+	id = jacobin.40
+	title = EVTTITLE_SKC_115
+	desc = EVTDESC_SKC_117
+	picture = GFX_evt_jacobin_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_SKC_115
+		hidden_tooltip = {
+		    piety=-1
+		}
+	}
+}
+
+narrative_event = { #Success and better life
+	id = jacobin.41
+	title = EVTTITLE_SKC_115
+	desc = EVTDESC_SKC_118
+	picture = GFX_evt_jacobin_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_SKC_118
+		prestige = 20
+		piety = 20
+	}
+}
+
+narrative_event = { 
+	id = jacobin.42
+	title = EVTTITLE_SKC_129
+	desc = EVTDESC_SKC_129
+	picture = GFX_evt_jacobin_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_129
+		piety = -10
+		prestige = 10
+		narrative_event = { id = jacobin.43 }
+	}
+	
+	option = { 
+		name = EVTOPTB_SKC_129
+		piety=-100
+		add_trait="cruel"
+	}
+}
+
+narrative_event = { 
+	id = jacobin.43
+	title = EVTTITLE_SKC_130
+	desc = EVTDESC_SKC_130
+	picture = GFX_evt_jacobin_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_130
+		hidden_tooltip = {
+		random_list = {
+		   10 = { narrative_event = { id = jacobin.44 } } #Both Parents live
+		   20 = { narrative_event = { id = jacobin.45 } } #Father lives
+		   30 = { narrative_event = { id = jacobin.46 } } #Mother lives
+		   40 = { narrative_event = { id = jacobin.47 } } #All of them are dead
+		}
+		}
+	}
+}
+
+narrative_event = { 
+	id = jacobin.44
+	title = EVTTITLE_SKC_131
+	desc = EVTDESC_SKC_131
+	picture = GFX_evt_jacobin_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_131
+		piety = 20
+		prestige = 20
+	}
+	
+	option = { 
+		name = EVTOPTB_SKC_131
+		wealth = -20
+		piety = 40
+		prestige = 40
+	}
+}
+
+narrative_event = { 
+	id = jacobin.45
+	title = EVTTITLE_SKC_131
+	desc = EVTDESC_SKC_132
+	picture = GFX_evt_jacobin_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_131
+		piety = 10
+		prestige = 10
+	}
+	
+	option = { 
+		name = EVTOPTB_SKC_131
+		wealth = -20
+		piety = 30
+		prestige = 30
+	}
+}
+
+narrative_event = { 
+	id = jacobin.46
+	title = EVTTITLE_SKC_131
+	desc = EVTDESC_SKC_133
+	picture = GFX_evt_jacobin_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_133
+		piety = 10
+		prestige = 10
+	}
+	
+	option = { 
+		name = EVTOPTB_SKC_133
+		wealth = -20
+		piety = 30
+		prestige = 30
+	}
+	
+	option = { #Generate characters
+		name = EVTOPTC_SKC_133
+		wealth = -30
+		piety = 100
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = yes
+			lowborn = yes
+			age = 40
+			trait = kind
+			trait = pious
+			trait = chaste
+			trait = wounded
+		}
+		new_character = {
+		   save_event_target_as = mother_of_children
+		}
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = yes
+			age = 10
+			lowborn = yes
+		}
+		new_character = {
+		   save_event_target_as = daughter_of_mother
+		}
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = no
+			age = 8
+			lowborn = yes
+		}
+		new_character = {
+		   save_event_target_as = son_of_mother
+		}
+		event_target:son_of_mother = {
+		   set_mother = event_target:mother_of_children
+		}
+		event_target:daughter_of_mother = {
+		   set_mother = event_target:mother_of_children
+		}
+	}
+}
+
+narrative_event = { 
+	id = jacobin.47
+	title = EVTTITLE_SKC_131
+	desc = EVTDESC_SKC_134
+	picture = GFX_evt_jacobin_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_134
+		piety = 10
+		prestige = 10
+	}
+	
+	option = { 
+		name = EVTOPTB_SKC_134
+		wealth = -20
+		piety = 30
+		prestige = 30
+	}
+	
+	option = { #Generate characters
+		name = EVTOPTC_SKC_134
+		wealth = -25
+		piety = 100
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = yes
+			age = 40
+			trait = kind
+			trait = pious
+			trait = chaste
+			trait = wounded
+			lowborn = yes
+		}
+		new_character = {
+		   save_event_target_as = mother_of_children
+		   	death = {
+				death_reason = death_murder
+			}
+		}
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = yes
+			age = 10
+			lowborn = yes
+		}
+		new_character = {
+		   save_event_target_as = daughter_of_mother
+		}
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = no
+			age = 8
+			lowborn = yes
+		}
+		new_character = {
+		   save_event_target_as = son_of_mother
+		}
+		event_target:son_of_mother = {
+		   set_mother = event_target:mother_of_children
+		}
+		event_target:daughter_of_mother = {
+		   set_mother = event_target:mother_of_children
+		}
+	}
+}
+
+character_event = { 
+	id = jacobin.48
+	desc = EVTDESC_jacobin_48
+	picture = GFX_evt_jacobin_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_jacobin_48
+		piety=20
+	}
+	
+	option = { 
+		name = EVTOPTB_jacobin_48
+		if = {
+		   limit = { trait = patron_marianne }
+		   random_list = {
+		   25 = { remove_trait="patron_marianne" add_trait="patron_the_general" }
+		   25 = { remove_trait="patron_marianne" add_trait="patron_the_emperor" }
+		   25 = { remove_trait="patron_marianne" add_trait="patron_la_montagne" }
+		   25 = { remove_trait="patron_marianne" add_trait="patron_la_sociale" } 
+		   }
+		}
+		if = {
+		   limit = { trait = patron_the_emperor }
+		   random_list = {
+		   25 = { remove_trait="patron_the_emperor" add_trait="patron_the_general" }
+		   25 = { remove_trait="patron_the_emperor" add_trait="patron_marianne" }
+		   25 = { remove_trait="patron_the_emperor" add_trait="patron_la_montagne" }
+		   25 = { remove_trait="patron_the_emperor" add_trait="patron_la_sociale" } 
+		   }
+		}
+		if = {
+		   limit = { trait = patron_the_general }
+		   random_list = {
+		   25 = { remove_trait="patron_the_general" add_trait="patron_marianne" }
+		   25 = { remove_trait="patron_the_general" add_trait="patron_the_emperor" }
+		   25 = { remove_trait="patron_the_general" add_trait="patron_la_montagne" }
+		   25 = { remove_trait="patron_the_general" add_trait="patron_la_sociale" } 
+		   }
+		}
+		if = {
+		   limit = { trait = patron_la_montagne }
+		   random_list = {
+		   25 = { remove_trait="patron_la_montagne" add_trait="patron_marianne" }
+		   25 = { remove_trait="patron_la_montagne" add_trait="patron_the_emperor" }
+		   25 = { remove_trait="patron_la_montagne" add_trait="patron_the_general" }
+		   25 = { remove_trait="patron_la_montagne" add_trait="patron_la_sociale" } 
+		   }
+		}
+	    if = {
+		   limit = { trait = patron_la_sociale }
+		   random_list = {
+		   25 = { remove_trait="patron_la_sociale" add_trait="patron_marianne" }
+		   25 = { remove_trait="patron_la_sociale" add_trait="patron_the_emperor" }
+		   25 = { remove_trait="patron_la_sociale" add_trait="patron_la_montagne" }
+		   25 = { remove_trait="patron_la_sociale" add_trait="patron_the_general" } 
+		   }
+		}
+	}
+}
+
+character_event = { 
+	id = jacobin.49
+	desc = EVTDESC_SKC_125
+	picture = GFX_evt_jacobin_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_125
+		prestige = 20
+		random_list = {
+		   40 = { add_trait= "wounded" }
+		   10 = { ROOT = { change_martial = 1 } }
+		   10 = { death = { death_reason = death_missing } }
+		   40 = { }
+		}
+	}
+}
+
+character_event = { 
+	id = jacobin.50
+	desc = EVTDESC_jacobin_50
+	picture = GFX_evt_jacobin_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_jacobin_50
+		piety = 20
+		random_list = {
+		   10 = { death = { death_reason = death_missing } }
+		   10 = { add_trait="maimed" }
+		   50 = { add_trait="wounded" }
+		   30 = { }
+		}
+		narrative_event = { id = jacobin.51 }
+	}
+	
+	option = { 
+		name = EVTOPTB_jacobin_50
+		prestige = -10
+		piety = -20
+		random_list = {
+		   25 = { add_trait="craven" }
+		   25 = { add_trait="proud" }
+		   25 = { add_trait="cruel" }
+		   25 = { add_trait="selfish" }
+		}
+	}
+}
+
+narrative_event = { 
+	id = jacobin.51
+	title = EVTTITLE_jacobin_51
+	desc = EVTDESC_jacobin_51
+	picture = GFX_evt_jacobin_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_jacobin_51
+		if = {
+		  limit = { is_female = yes OR = { is_married = yes trait="celibate" } }
+		  set_character_flag = baron_proposition_of_marriage
+		}
+		if = {
+		  limit = { is_female = yes is_married = no }
+		  set_character_flag = baron_proposition_mustrefused_of_marriage
+		}
+		if = {
+		  limit = { is_female = no OR = { is_married = yes trait="celibate" trait="eunuch" } }
+		  set_character_flag = baroness_proposition_mustrefused_of_marriage
+		}
+		if = {
+		  limit = { is_female = no is_married = no NOT = { trait="celibate" trait="eunuch" } }
+		  set_character_flag = baroness_proposition_of_marriage
+		}
+		narrative_event = { id = jacobin.52 days = 1 }
+	}
+}
+
+narrative_event = { 
+	id = jacobin.52
+	title = EVTTITLE_jacobin_52
+	desc = {
+		text = EVTDESC_jacobin_52_A
+		picture = GFX_evt_jacobin_pilgrimage
+		trigger = { 
+			has_character_flag = baron_proposition_of_marriage
+		}
+	}
+	desc = {
+		text = EVTDESC_jacobin_52_B
+		picture = GFX_evt_jacobin_pilgrimage
+		trigger = { 
+			has_character_flag = baron_proposition_mustrefused_of_marriage
+		}
+	}
+	desc = {
+		text = EVTDESC_jacobin_52_C
+		picture = GFX_evt_jacobin_pilgrimage
+		trigger = { 
+			has_character_flag = baroness_proposition_mustrefused_of_marriage
+		}
+	}
+	desc = {
+		text = EVTDESC_jacobin_52_D
+		picture = GFX_evt_jacobin_pilgrimage
+		trigger = { 
+			has_character_flag = baroness_proposition_of_marriage
+		}
+	}
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_jacobin_52
+		trigger = {
+		  OR = {
+		    has_character_flag = baroness_proposition_mustrefused_of_marriage
+			has_character_flag = baron_proposition_mustrefused_of_marriage
+		  }
+		}
+		character_event = { id = jacobin.53 days = 1 }
+	}
+	
+	option = {
+		name = EVTOPTB_jacobin_52
+		trigger = {
+		  OR = {
+		    has_character_flag = baroness_proposition_of_marriage
+			has_character_flag = baron_proposition_of_marriage
+		  }
+		}
+		wealth = 100
+		if = {
+		limit = { has_character_flag = baroness_proposition_of_marriage }
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = yes
+			age = ROOT
+			lowborn = yes
+			trait=attractive
+			trait=quick
+			trait=honest
+			trait=brave
+		}
+		new_character = {
+		    add_spouse = ROOT
+		    add_lover = ROOT
+			wealth = 100
+		}
+		}
+		if = {
+		limit = { has_character_flag = baron_proposition_of_marriage }
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = no
+			age = ROOT
+			lowborn = yes
+			trait=attractive
+			trait=quick
+			trait=honest
+			trait=brave
+		}
+		new_character = {
+		    add_spouse = ROOT
+		    add_lover = ROOT
+			wealth = 100
+		}
+		}
+		character_event = { id = jacobin.53 days = 1 }
+	}
+	
+	option = {
+		name = EVTOPTC_jacobin_52
+		trigger = {
+		  OR = {
+		    has_character_flag = baroness_proposition_of_marriage
+			has_character_flag = baron_proposition_of_marriage
+		  }
+		}
+		prestige = -20
+		random_list={
+		   20 = { add_trait="chaste" }
+		   80 = { }
+		}
+		character_event = { id = jacobin.53 days = 1 }
+	}
+}
+
+character_event = { 
+	id = jacobin.53
+	desc = EVTDESC_jacobin_53
+	picture = GFX_evt_jacobin_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_jacobin_53
+		remove_trait="wounded"
+		clr_character_flag = baroness_proposition_mustrefused_of_marriage
+		clr_character_flag = baroness_proposition_of_marriage
+		clr_character_flag = baron_proposition_mustrefused_of_marriage
+		clr_character_flag = baron_proposition_of_marriage
+	}
+}
+
+long_character_event = { 
+	id = jacobin.54
+	desc = EVTDESC_jacobin_54
+	picture = GFX_evt_jacobin_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_jacobin_54
+		add_trait="sympathy_christendom"
+	}
+	
+	option = { 
+		name = EVTOPTB_jacobin_54
+		piety=20
+		add_trait="zealous"
+	}
+}
+
+character_event = { 
+	id = jacobin.55
+	desc = EVTDESC_jacobin_55
+	picture = GFX_evt_jacobin_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_jacobin_55
+		piety=10
+		wealth=-5
+	}
+	
+	option = { 
+		name = EVTOPTB_jacobin_55
+		prestige=10
+		wealth=-5
+		hidden_tooltip = {
+		   if = {
+		      limit = { trait="imbecile" learning < 6 }
+			  random_list = {
+			    90 = { character_event = { id = jacobin.57 } }
+				10 = { character_event = { id = jacobin.56 } }
+			  }
+		   }
+		   if = {
+		      limit = { trait="slow" learning < 10 }
+			   random_list = {
+			    80 = { character_event = { id = jacobin.57 } }
+				20 = { character_event = { id = jacobin.56 } }
+			  }
+		   }
+		   if = {
+		      limit = { NOT = { trait="imbecile" trait="slow" } learning < 10 }
+			   random_list = {
+			    55 = { character_event = { id = jacobin.57 } }
+				45 = { character_event = { id = jacobin.56 } }
+			  }
+		   }
+		   if = {
+		      limit = { OR = { trait="quick" AND = { learning = 10 learing < 20 } } }
+			   random_list = {
+			    45 = { character_event = { id = jacobin.57 } }
+				55 = { character_event = { id = jacobin.56 } }
+			  }
+		   }
+		   if = {
+		      limit = { OR = { trait="genius" learning = 20 } }
+			  random_list = {
+			    25 = { character_event = { id = jacobin.57 } }
+				75 = { character_event = { id = jacobin.56 } }
+			  }
+		   }
+		}
+	}
+}
+
+character_event = { 
+	id = jacobin.56
+	desc = EVTDESC_jacobin_56
+	picture = GFX_evt_jacobin_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_jacobin_56
+		wealth=10
+		prestige=10
+	}
+}
+
+character_event = { 
+	id = jacobin.57
+	desc = EVTDESC_jacobin_57
+	picture = GFX_evt_jacobin_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_jacobin_57
+		prestige=-15
 	}
 }

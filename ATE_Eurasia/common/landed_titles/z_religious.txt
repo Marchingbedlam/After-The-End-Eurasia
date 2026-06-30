@@ -263,6 +263,32 @@ d_pravoslavie = {
 
 
 }
+d_marcelianist = {
+	color={ 255 249 198 }
+	color2={ 220 220 0 }
+	
+	capital = 1117 # Rome
+	
+	title = "BISHOP_SUPERIOR"
+	foa = "POPE_FOA"
+	short_name = yes
+	location_ruler_title = yes
+	
+	# Always exists
+	landless = yes
+	
+	religion = marcelianist
+	controls_religion = marcelianist 
+	
+	# Cannot be held as a secondary title
+	primary = yes
+
+	assimilate = no
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+
+	dignity = 200
+}
 k_sspx_papacy = {
 	color={ 255 249 198 }
 	color2={ 220 220 0 }

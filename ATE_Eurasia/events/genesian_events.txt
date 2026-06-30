@@ -161,7 +161,7 @@ narrative_event = {
 	id = genesian.8
 	title = EVTNAME_genesian_8
 	desc = EVTDESC_genesian_8
-	picture = GFX_evt_dziady
+	picture = GFX_evt_genesian_pilgrimage
 	
 	is_triggered_only = yes
 
@@ -610,36 +610,28 @@ narrative_event = {
 		name = EVTOPTA_genesian_20
 		hidden_tooltip = {
 		if = {
-		   limit = { OR = { learning > 15 trait="quick" trait="genius" } NOR = { trait="slow" trait="imbecile" } }
-		   random_list = {
-				60 = { character_event = { id = genesian.21 days = 8 } } #Success in reading
-				35 = { character_event = { id = genesian.22 days = 8 } } #Neutrality in reading
-				5 = { character_event = { id = genesian.23 days = 8 } } #Failure in reading
-		   }
+		   limit = { OR = { learning > 15 trait="quick" trait="genius" } NOT = { trait="slow" trait="imbecile" } }
+		   60 = { character_event = { id = genesian.21 days = 8 } } #Success in reading
+		   35 = { character_event = { id = genesian.22 days = 8 } } #Neutrality in reading
+		   5 = { character_event = { id = genesian.23 days = 8 } } #Failure in reading
 		}
 		if = {
-		   limit = { NOR = { learning > 15 trait="quick" trait="genius" trait="slow" trait="imbecile" } }
-		   random_list = {
-				40 = { character_event = { id = genesian.21 days = 8 } } #Success in reading
-				55 = { character_event = { id = genesian.22 days = 8 } } #Neutrality in reading
-				10 = { character_event = { id = genesian.23 days = 8 } } #Failure in reading
-			}
+		   limit = { NOT = { learning > 15 trait="quick" trait="genius" trait="slow" trait="imbecile" } }
+		   40 = { character_event = { id = genesian.21 days = 8 } } #Success in reading
+		   55 = { character_event = { id = genesian.22 days = 8 } } #Neutrality in reading
+		   10 = { character_event = { id = genesian.23 days = 8 } } #Failure in reading
 		}
 		if = {
 		   limit = { trait="slow" }
-		   random_list = {
-				30 = { character_event = { id = genesian.21 days = 8 } } #Success in reading
-				50 = { character_event = { id = genesian.22 days = 8 } } #Neutrality in reading
-				25 = { character_event = { id = genesian.23 days = 8 } } #Failure in reading
-			}
+		   30 = { character_event = { id = genesian.21 days = 8 } } #Success in reading
+		   50 = { character_event = { id = genesian.22 days = 8 } } #Neutrality in reading
+		   25 = { character_event = { id = genesian.23 days = 8 } } #Failure in reading
 		}
 		if = {
 		   limit = { trait="imbecile" }
-		   random_list = {
-				20 = { character_event = { id = genesian.21 days = 8 } } #Success in reading
-				30 = { character_event = { id = genesian.22 days = 8 } } #Neutrality in reading
-				55 = { character_event = { id = genesian.23 days = 8 } } #Failure in reading
-			}
+		   20 = { character_event = { id = genesian.21 days = 8 } } #Success in reading
+		   30 = { character_event = { id = genesian.22 days = 8 } } #Neutrality in reading
+		   55 = { character_event = { id = genesian.23 days = 8 } } #Failure in reading
 		}
 		}
 	}

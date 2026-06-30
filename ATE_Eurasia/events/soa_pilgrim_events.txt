@@ -31,7 +31,6 @@ character_event = {
 		if = {
 			limit = {
 				OR = {
-					is_orthodox_branch = yes
 					is_nestorian_branch = yes
 					is_miaphysite_branch = yes
 				}
@@ -39,41 +38,68 @@ character_event = {
 
 			character_event = { id = SoA.5011 } # Jeru, Const, Antio, Axum
 		}
-		else_if = {
+		if = {
+		    limit = { is_orthodox_branch = yes }
+	
+			character_event = {
+				id = christian.14 # May choose destination
+				days = 4
+			}
+		}
+		if = {
 			limit = { is_catholic_branch = yes }
 
-			if = {
-				limit = {
-					capital_scope = {
-						OR = {
-							province_id = c_kent
-							province_id = c_koln
-							province_id = c_rome
-							province_id = c_santiago
-						}
-					}
-				}
-
-				character_event = {
-					id = SoA.5016 # Go to Jerusalem
-					days = 4
-				}
+			character_event = {
+				id = christian.8 # May choose destination
+				days = 4
 			}
-			else_if = {
-				limit = {
-					capital_scope = { province_id = c_jerusalem }
-				}
+		}
+		if = {
+			limit = { religion = lutheran }
 
-				character_event = {
-					id = SoA.5017 # Go to Rome
-					days = 4
-				}
+			character_event = {
+				id = christian.17 # May choose destination
+				days = 4
 			}
-			else = {
-				character_event = {
-					id = SoA.5018 # May choose destination
-					days = 4
-				}
+		}
+	    if = {
+			limit = { OR = { religion = penitant religion = mementomori } }
+
+			character_event = {
+				id = christian.20 # May choose destination
+				days = 4
+			}
+		}
+		if = {
+			limit = { is_mariavite_branch = yes NOT = { religion = coronite } }
+
+			character_event = {
+				id = christian.23 # May choose destination
+				days = 4
+			}
+		}
+		if = {
+			limit = { is_mariavite_branch = yes religion = coronite }
+
+			character_event = {
+				id = christian.26 # May choose destination
+				days = 4
+			}
+		}
+		if = {
+			limit = { religion = old_believer }
+
+			character_event = {
+				id = christian.29 # May choose destination
+				days = 4
+			}
+		}
+		if = {
+			limit = { religion = high_church }
+
+			character_event = {
+				id = christian.32 # May choose destination
+				days = 4
 			}
 		}
 	}

@@ -188,7 +188,7 @@ character_event = {
 }
 
 character_event = {
-	id = christian.10
+	id = christian.7
 	title = EVTNAME_christian_7
 	desc = EVTDESC_christian_7
 	picture = GFX_evt_open_book_hf
@@ -198,5 +198,1656 @@ character_event = {
 	option = {
 		name = EVTOPTA_christian_7
 		piety=30
+	}
+}
+
+character_event = {
+	id = christian.8
+	desc = EVTDESC_christian_8
+	picture = GFX_evt_open_book_hf
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_christian_7
+		piety=30
+	}
+}
+
+character_event = {
+	id = christian.9
+	desc = EVTDESC_christian_9
+	picture = GFX_evt_cathedral
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { #Two main holy sites
+		name = EVTOPTA_christian_9
+		piety=30
+		character_event = { id = christian.10 }
+	}
+	
+	option = { #Other mainsteam holy sites
+		name = EVTOPTB_christian_9
+		piety=30
+		character_event = { id = christian.11 }
+	}
+		
+	option = { #Other less known holy sites
+		name = EVTOPTC_christian_9
+		trigger = { has_global_flag = i_am_the_dev }
+		piety=30
+	}
+	
+	option = {
+		name = EVTOPTC_SOA_5018 # Find a Saintly Burial Site to visit
+
+		trigger = { has_dlc = "Holy Fury" }
+
+		character_event = {
+			id = HF.41300
+			days = 15
+		}
+	}
+}
+
+character_event = {
+	id = christian.10
+	desc = EVTDESC_christian_10
+	picture = GFX_evt_cathedral
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { #Rome
+		name = EVTOPTA_christian_10
+
+		set_character_flag = pilgrimage_to_rome
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_ROME
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+	
+	option = { #Holy Land
+		name = EVTOPTB_christian_10
+		set_character_flag = pilgrimage_to_jerusalem
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_JERUSALEM
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+}
+
+character_event = {
+	id = christian.11
+	desc = EVTDESC_christian_11
+	picture = GFX_evt_cathedral
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { #Fatima
+		name = EVTOPTA_christian_11
+
+		set_character_flag = pilgrimage_to_fatima
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_FATIMA
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+	
+	option = { #Lourdes
+		name = EVTOPTB_christian_11
+
+		set_character_flag = pilgrimage_to_lourdes
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_LOURDES
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+		
+	option = { #Altötting 
+		name = EVTOPTC_christian_11
+
+		set_character_flag = pilgrimage_to_munich
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_MUNICH
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+}
+
+character_event = {
+	id = christian.12
+	border = GFX_event_normal_frame_religion
+	desc = EVTDESC_christian_12
+
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_christian_12
+
+		hidden_effect = {
+			clr_character_flag = preparing_pilgrimage
+			add_trait = on_pilgrimage
+			set_character_flag = good_pilgrimage
+
+
+			# List that is always checked
+			random_list = {
+				10 = { character_event = { id = SoA.5031 days = 15 random = 7 } }
+				10 = { character_event = { id = SoA.5032 days = 15 random = 7 } }
+				10 = { narrative_event = { id = SoA.5033 days = 15 random = 7 } }
+				10 = { character_event = { id = SoA.5034 days = 15 random = 7 } }
+				10 = { character_event = { id = SoA.5035 days = 15 random = 7 } }
+				10 = { character_event = { id = SoA.5036 days = 15 random = 7 } }
+				10 = { character_event = { id = SoA.5037 days = 15 random = 7 } }
+				10 = { character_event = { id = SoA.5038 days = 15 random = 7 } }
+				10 = { character_event = { id = SoA.5039 days = 15 random = 7 } }
+			}
+			
+			random_list = {
+				10 = { character_event = { id = SoA.5026 days = 30 random = 2 } }
+				10 = { character_event = { id = SoA.5027 days = 30 random = 2 } }
+				10 = { narrative_event = { id = SoA.5028 days = 30 random = 2 } }
+				10 = { character_event = { id = SoA.5029 days = 30 random = 2 } }
+				10 = { character_event = { id = SoA.5030 days = 30 random = 2 } }
+				10 = { character_event = { id = SoA.5031 days = 30 random = 2 } }
+				10 = { character_event = { id = SoA.5032 days = 30 random = 2 } }
+				10 = { narrative_event = { id = SoA.5033 days = 30 random = 2 } }
+				10 = { character_event = { id = SoA.5034 days = 30 random = 2 } }
+				10 = { character_event = { id = SoA.5035 days = 30 random = 2 } }
+			}
+			
+			narrative_event = {
+				id = christian.13
+				days = 35
+			}
+		}
+	}
+}
+
+narrative_event = { #Welcome in London
+	id = christian.13
+	title = {
+		text = EVTNAME_ROME
+		trigger = { has_character_flag = pilgrimage_to_rome }
+	}
+	title = {
+		text = EVTNAME_FATIMA
+		trigger = { has_character_flag = pilgrimage_to_fatima }
+	}
+	title = {
+		text = EVTNAME_MUNICH
+		trigger = { has_character_flag = pilgrimage_to_munich }
+	}
+	title = {
+		text = EVTNAME_JERUSALEM
+		trigger = { has_character_flag = pilgrimage_to_jerusalem }
+	}
+	title = {
+		text = EVTNAME_NAZARETH
+		trigger = { has_character_flag = pilgrimage_to_nazareth }
+	}
+	title = {
+		text = EVTNAME_LOURDES
+		trigger = { has_character_flag = pilgrimage_to_lourdes }
+	}
+	title = {
+		text = EVTNAME_CANTERBURY
+		trigger = { has_character_flag = pilgrimage_to_canterbury }
+	}
+	title = {
+		text = EVTNAME_YORK
+		trigger = { has_character_flag = pilgrimage_to_york }
+	}
+	title = {
+		text = EVTNAME_CONSTANTINOPOLE
+		trigger = { has_character_flag = pilgrimage_to_constantinopole }
+	}
+	title = {
+		text = EVTNAME_MOUNT_ATHOS
+		trigger = { has_character_flag = pilgrimage_to_mount_athos }
+	}
+	title = {
+		text = EVTNAME_ARKHANGELSK
+		trigger = { has_character_flag = pilgrimage_to_arkhangelsk }
+	}
+	title = {
+		text = EVTNAME_CHARTRES
+		trigger = { has_character_flag = pilgrimage_to_chartres }
+	}
+	title = {
+		text = EVTNAME_ESZTEGROM
+		trigger = { has_character_flag = pilgrimage_to_esztegrom }
+	}
+	title = {
+		text = EVTNAME_JASNA_GORA
+		trigger = { has_character_flag = pilgrimage_to_jasna_gora }
+	}
+	title = {
+		text = EVTNAME_LUND
+		trigger = { has_character_flag = pilgrimage_to_lund }
+	}
+	title = {
+		text = EVTNAME_NITRA
+		trigger = { has_character_flag = pilgrimage_to_nitra }
+	}
+	title = {
+		text = EVTNAME_ORLEANS
+		trigger = { has_character_flag = pilgrimage_to_orleans }
+	}
+	title = {
+		text = EVTNAME_PLOCK
+		trigger = { has_character_flag = pilgrimage_to_plock }
+	}
+	title = {
+		text = EVTNAME_PUSTOZERSK
+		trigger = { has_character_flag = pilgrimage_to_pustozersk }
+	}
+	title = {
+		text = EVTNAME_RIGA
+		trigger = { has_character_flag = pilgrimage_to_riga }
+	}
+	title = {
+		text = EVTNAME_SARAGOSSA
+		trigger = { has_character_flag = pilgrimage_to_saragossa }
+	}
+	title = {
+		text = EVTNAME_SEVILLA
+		trigger = { has_character_flag = pilgrimage_to_sevilla }
+	}
+	title = {
+		text = EVTNAME_SZEKESFEHERVAR
+		trigger = { has_character_flag = pilgrimage_to_szekesfehervar }
+	}
+	title = {
+		text = EVTNAME_TURKU
+		trigger = { has_character_flag = pilgrimage_to_turku }
+	}
+	title = {
+		text = EVTNAME_UNTRECHT
+		trigger = { has_character_flag = pilgrimage_to_untrecht }
+	}
+	title = {
+		text = EVTNAME_VILNO
+		trigger = { has_character_flag = pilgrimage_to_vilnius }
+	}
+	title = {
+		text = EVTNAME_WADOWICE
+		trigger = { has_character_flag = pilgrimage_to_wadowice }
+	}
+	title = {
+		text = EVTNAME_WIACKOIE
+		trigger = { has_character_flag = pilgrimage_to_wiackoje }
+	}
+	title = {
+		text = EVTNAME_WITTENBERG
+		trigger = { has_character_flag = pilgrimage_to_wittenberg }
+	}
+	title = {
+		text = EVTNAME_KYIV
+		trigger = { has_character_flag = pilgrimage_to_kyiv }
+	}
+	title = {
+		text = EVTNAME_PEST
+		trigger = { has_character_flag = pilgrimage_to_pest }
+	}
+	title = {
+		text = EVTNAME_GLASTONBURY
+		trigger = { has_character_flag = pilgrimage_to_glastonbury }
+	}
+	title = {
+		text = EVTNAME_WESTMINSTER
+		trigger = { has_character_flag = pilgrimage_to_westminster }
+	}
+	title = {
+		text = EVTNAME_WALSINGHAM
+		trigger = { has_character_flag = pilgrimage_to_walsingham }
+	}
+	desc = {
+		text = EVTDESC_christian_13_ROME
+		picture = GFX_evt_rome
+		trigger = { 
+			has_character_flag = pilgrimage_to_rome
+		}
+	}
+	desc = {
+		text = EVTDESC_christian_13_JERUSALEM
+		picture = GFX_evt_jerusalem
+		trigger = { 
+			has_character_flag = pilgrimage_to_jerusalem
+		}
+	}
+	desc = {
+		text = EVTDESC_christian_13_LOURDES
+		picture = GFX_evt_lourdes
+		trigger = { 
+			has_character_flag = pilgrimage_to_lourdes
+		}
+	}
+	desc = {
+		text = EVTDESC_christian_13_MUNICH
+		picture = GFX_evt_munich
+		trigger = { 
+			has_character_flag = pilgrimage_to_munich
+		}
+	}
+	desc = {
+		text = EVTDESC_christian_13_FATIMA
+		picture = GFX_evt_fatima
+		trigger = { 
+			has_character_flag = pilgrimage_to_fatima
+		}
+	}
+	desc = {
+		text = EVTDESC_christian_13_NAZARETH
+		picture = GFX_evt_nazareth
+		trigger = { 
+			has_character_flag = pilgrimage_to_nazareth
+		}
+	}
+	desc = {
+		text = EVTDESC_christian_13_CANTERBURY
+		picture = GFX_evt_canterbury
+		trigger = { 
+			has_character_flag = pilgrimage_to_canterbury
+		}
+	}
+	desc = {
+		text = EVTDESC_christian_13_YORK
+		picture = GFX_evt_york
+		trigger = { 
+			has_character_flag = pilgrimage_to_york
+		}
+	}
+	desc = {
+		text = EVTDESC_christian_13_CONSTANTINOPOLE
+		picture = GFX_evt_constantinopole
+		trigger = { 
+			has_character_flag = pilgrimage_to_constantinopole
+		}
+	}
+	desc = {
+		text = EVTDESC_christian_13_MOUNT_ATHOS
+		picture = GFX_evt_mount_athos
+		trigger = { 
+			has_character_flag = pilgrimage_to_mount_athos
+		}
+	}
+	desc = {
+		text = EVTDESC_christian_13_ARKHANGELSK
+		picture = GFX_evt_mount_athos
+		trigger = { 
+			has_character_flag = pilgrimage_to_arkhangelsk
+		}
+	}
+	desc = {
+		text = EVTDESC_christian_13_CHARTRES
+		picture = GFX_evt_mount_athos
+		trigger = { 
+			has_character_flag = pilgrimage_to_chartres
+		}
+	}
+	desc = {
+		text = EVTDESC_christian_13_ESZTEGROM
+		picture = GFX_evt_mount_athos
+		trigger = { 
+			has_character_flag = pilgrimage_to_esztegrom
+		}
+	}
+	desc = {
+		text = EVTDESC_christian_13_JASNA_GORA
+		picture = GFX_evt_jasna_gora
+		trigger = { 
+			has_character_flag = pilgrimage_to_jasna_gora
+		}
+	}
+	desc = {
+		text = EVTDESC_christian_13_LUND
+		picture = GFX_evt_lund
+		trigger = { 
+			has_character_flag = pilgrimage_to_lund
+		}
+	}
+	desc = {
+		text = EVTDESC_christian_13_NITRA
+		picture = GFX_evt_lund
+		trigger = { 
+			has_character_flag = pilgrimage_to_nitra
+		}
+	}
+	desc = {
+		text = EVTDESC_christian_13_ORLEANS
+		picture = GFX_evt_lund
+		trigger = { 
+			has_character_flag = pilgrimage_to_orleans
+		}
+	}
+	desc = {
+		text = EVTDESC_christian_13_PLOCK
+		picture = GFX_evt_plock
+		trigger = { 
+			has_character_flag = pilgrimage_to_plock
+			religion = coronite
+		}
+	}
+	desc = {
+		text = EVTDESC_christian_13_PUSTOZERSK
+		picture = GFX_evt_pustozersk
+		trigger = { 
+			has_character_flag = pilgrimage_to_pustozersk
+		}
+	}
+	desc = {
+		text = EVTDESC_christian_13_RIGA
+		picture = GFX_evt_riga
+		trigger = { 
+			has_character_flag = pilgrimage_to_riga
+		}
+	}
+	desc = {
+		text = EVTDESC_christian_13_SARAGOSSA
+		picture = GFX_evt_saragossa
+		trigger = { 
+			has_character_flag = pilgrimage_to_saragossa
+		}
+	}
+	desc = {
+		text = EVTDESC_christian_13_SEVILLA
+		picture = GFX_evt_sevilla
+		trigger = { 
+			has_character_flag = pilgrimage_to_sevilla
+		}
+	}
+	desc = {
+		text = EVTDESC_christian_13_SZEKESFEHERVAR
+		picture = GFX_evt_szekesfehervar
+		trigger = { 
+			has_character_flag = pilgrimage_to_szekesfehervar
+		}
+	}
+	desc = {
+		text = EVTDESC_christian_13_TURKU
+		picture = GFX_evt_turku
+		trigger = { 
+			has_character_flag = pilgrimage_to_turku
+		}
+	}
+	desc = {
+		text = EVTDESC_christian_13_UNTRECHT
+		picture = GFX_evt_turku
+		trigger = { 
+			has_character_flag = pilgrimage_to_untrecht
+		}
+	}
+	desc = {
+		text = EVTDESC_christian_13_VILNO
+		picture = GFX_evt_vilno
+		trigger = { 
+			has_character_flag = pilgrimage_to_vilnius
+		}
+	}
+	desc = {
+		text = EVTDESC_christian_13_WADOWICE
+		picture = GFX_evt_wadowice
+		trigger = { 
+			has_character_flag = pilgrimage_to_wadowice
+		}
+	}
+	desc = {
+		text = EVTDESC_christian_13_WIACKOIE
+		picture = GFX_evt_wiackoje
+		trigger = { 
+			has_character_flag = pilgrimage_to_wiackoje
+		}
+	}
+	desc = {
+		text = EVTDESC_christian_13_WITTENBERG
+		picture = GFX_evt_wittenberg
+		trigger = { 
+			has_character_flag = pilgrimage_to_wittenberg
+		}
+	}
+	desc = {
+		text = EVTDESC_christian_13_KIEV
+		picture = GFX_evt_kyiv
+		trigger = { 
+			has_character_flag = pilgrimage_to_kyiv
+		}
+	}
+	desc = {
+		text = EVTDESC_christian_13_PEST
+		picture = GFX_evt_pest
+		trigger = { 
+			has_character_flag = pilgrimage_to_pest
+		}
+	}
+	desc = {
+		text = EVTDESC_christian_13_WALSINGHAM
+		picture = GFX_evt_walsingham
+		trigger = { 
+			has_character_flag = pilgrimage_to_walsingham
+		}
+	}
+	desc = {
+		text = EVTDESC_christian_13_WESTMINSTER
+		picture = GFX_evt_london
+		trigger = { 
+			has_character_flag = pilgrimage_to_westminster
+		}
+	}
+	desc = {
+		text = EVTDESC_christian_13_GLASTONBURY
+		picture = GFX_evt_glastonbury
+		trigger = { 
+			has_character_flag = pilgrimage_to_glastonbury
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_christian_113
+		hidden_tooltip = { character_event = { id = SoA.5055 days = 7 } }
+		clr_character_flag = pilgrimage_to_rome
+		clr_character_flag = pilgrimage_to_jerusalem
+		clr_character_flag = pilgrimage_to_lourdes
+		clr_character_flag = pilgrimage_to_fatima
+		clr_character_flag = pilgrimage_to_munich
+		clr_character_flag = pilgrimage_to_lund
+		clr_character_flag = pilgrimage_to_arkhangelsk
+		clr_character_flag = pilgrimage_to_canterbury
+		clr_character_flag = pilgrimage_to_chartres
+		clr_character_flag = pilgrimage_to_constantinopole
+		clr_character_flag = pilgrimage_to_esztegrom
+		clr_character_flag = pilgrimage_to_jasna_gora
+		clr_character_flag = pilgrimage_to_moscow
+		clr_character_flag = pilgrimage_to_mount_athos
+		clr_character_flag = pilgrimage_to_nazareth
+		clr_character_flag = pilgrimage_to_nitra
+		clr_character_flag = pilgrimage_to_orleans
+		clr_character_flag = pilgrimage_to_plock
+		clr_character_flag = pilgrimage_to_pustozersk
+		clr_character_flag = pilgrimage_to_riga
+		clr_character_flag = pilgrimage_to_saragossa
+		clr_character_flag = pilgrimage_to_sevilla
+		clr_character_flag = pilgrimage_to_szekesfehervar
+		clr_character_flag = pilgrimage_to_turku
+		clr_character_flag = pilgrimage_to_untrecht
+		clr_character_flag = pilgrimage_to_vilnius
+		clr_character_flag = pilgrimage_to_wadowice
+		clr_character_flag = pilgrimage_to_wiackoje
+		clr_character_flag = pilgrimage_to_wittenberg
+		clr_character_flag = pilgrimage_to_york
+		clr_character_flag = pilgrimage_to_pest
+		clr_character_flag = pilgrimage_to_kyiv
+		clr_character_flag = pilgrimage_to_westminster
+		clr_character_flag = pilgrimage_to_glastonbury
+		clr_character_flag = pilgrimage_to_walsingham
+		clr_character_flag = activated_pilgrimage
+		clr_character_flag = do_not_disturb
+	}
+}
+
+character_event = {
+	id = christian.14
+	desc = EVTDESC_christian_9
+	picture = GFX_evt_cathedral
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { #Two main holy sites
+		name = EVTOPTA_christian_14
+		piety=30
+		character_event = { id = christian.15 }
+	}
+	
+	option = { #Other mainsteam holy sites
+		name = EVTOPTB_christian_9
+		piety=30
+		character_event = { id = christian.16 }
+	}
+		
+	option = { #Other less known holy sites
+		name = EVTOPTC_christian_9
+		trigger = { has_global_flag = i_am_the_dev }
+		piety=30
+	}
+	
+	option = {
+		name = EVTOPTC_SOA_5018 # Find a Saintly Burial Site to visit
+
+		trigger = { has_dlc = "Holy Fury" }
+
+		character_event = {
+			id = HF.41300
+			days = 15
+		}
+	}
+}
+
+character_event = {
+	id = christian.15
+	desc = EVTDESC_christian_15
+	picture = GFX_evt_cathedral
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { #Constantinopole
+		name = EVTOPTA_christian_15
+
+		set_character_flag = pilgrimage_to_constantinopole
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_CONSTANTINOPOLE
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+	
+	option = { #Holy Land
+		name = EVTOPTB_christian_10
+		set_character_flag = pilgrimage_to_jerusalem
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_JERUSALEM
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+}
+
+character_event = {
+	id = christian.16
+	desc = EVTDESC_christian_11
+	picture = GFX_evt_cathedral
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { #Mount Athos
+		name = EVTOPTA_christian_16
+
+		set_character_flag = pilgrimage_to_mount_athos
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_MOUNT_ATHOS
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+	
+	option = { #Rome
+		name = EVTOPTB_christian_16
+
+		set_character_flag = pilgrimage_to_rome
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_ROME
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+		
+	option = { #Moscow 
+		name = EVTOPTC_christian_16
+
+		set_character_flag = pilgrimage_to_moscow
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_MOSCOW
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+}
+
+character_event = {
+	id = christian.17
+	desc = EVTDESC_christian_9
+	picture = GFX_evt_cathedral
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { #Two main holy sites
+		name = EVTOPTA_christian_17
+		piety=30
+		character_event = { id = christian.18 }
+	}
+	
+	option = { #Other mainsteam holy sites
+		name = EVTOPTB_christian_9
+		piety=30
+		character_event = { id = christian.19 }
+	}
+	
+	option = {
+		name = EVTOPTC_SOA_5018 # Find a Saintly Burial Site to visit
+
+		trigger = { has_dlc = "Holy Fury" }
+
+		character_event = {
+			id = HF.41300
+			days = 15
+		}
+	}
+}
+
+character_event = {
+	id = christian.18
+	desc = EVTDESC_christian_18
+	picture = GFX_evt_cathedral
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { #Wittenberg
+		name = EVTOPTA_christian_18
+
+		set_character_flag = pilgrimage_to_wittenberg
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_WITTENBERG
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+	
+	option = { 
+		name = EVTOPTB_christian_18
+		set_character_flag = pilgrimage_to_jerusalem
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_JERUSALEM
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+}
+
+character_event = {
+	id = christian.19
+	desc = EVTDESC_christian_11
+	picture = GFX_evt_cathedral
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { #Turku
+		name = EVTOPTA_christian_19
+
+		set_character_flag = pilgrimage_to_turku
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_TURKU
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+	
+	option = { #Lund
+		name = EVTOPTB_christian_19
+
+		set_character_flag = pilgrimage_to_lund
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_LUND
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+		
+	option = { #Riga
+		name = EVTOPTC_christian_19
+
+		set_character_flag = pilgrimage_to_riga
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_RIGA
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+}
+
+character_event = {
+	id = christian.20
+	desc = EVTDESC_christian_9
+	picture = GFX_evt_cathedral
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { #Two main holy sites
+		name = EVTOPTA_christian_9
+		piety=30
+		character_event = { id = christian.21 }
+	}
+	
+	option = { #Other mainsteam holy sites
+		name = EVTOPTB_christian_9
+		piety=30
+		character_event = { id = christian.22 }
+	}
+	
+	option = {
+		name = EVTOPTC_SOA_5018 # Find a Saintly Burial Site to visit
+
+		trigger = { has_dlc = "Holy Fury" }
+
+		character_event = {
+			id = HF.41300
+			days = 15
+		}
+	}
+}
+
+character_event = {
+	id = christian.21
+	desc = EVTDESC_christian_10
+	picture = GFX_evt_cathedral
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_christian_10
+
+		set_character_flag = pilgrimage_to_rome
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_ROME
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+	
+	option = { 
+		name = EVTOPTB_christian_10
+		set_character_flag = pilgrimage_to_jerusalem
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_JERUSALEM
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+}
+
+character_event = {
+	id = christian.22
+	desc = EVTDESC_christian_11
+	picture = GFX_evt_cathedral
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { #Sevilla
+		name = EVTOPTA_christian_22
+
+		set_character_flag = pilgrimage_to_sevilla
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_SEVILLA
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+	
+	option = { #Saragossa
+		name = EVTOPTB_christian_22
+
+		set_character_flag = pilgrimage_to_saragossa
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_SARAGOSSA
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+		
+	option = { #Fatima
+		name = EVTOPTC_christian_22
+
+		set_character_flag = pilgrimage_to_fatima
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_FATIMA
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+}
+
+character_event = {
+	id = christian.23
+	desc = EVTDESC_christian_9
+	picture = GFX_evt_cathedral
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { #Two main holy sites
+		name = EVTOPTA_christian_23
+		piety=30
+		character_event = { id = christian.24 }
+	}
+	
+	option = { #Other mainsteam holy sites
+		name = EVTOPTB_christian_9
+		piety=30
+		character_event = { id = christian.25 }
+	}
+	
+	option = {
+		name = EVTOPTC_SOA_5018 # Find a Saintly Burial Site to visit
+
+		trigger = { has_dlc = "Holy Fury" }
+
+		character_event = {
+			id = HF.41300
+			days = 15
+		}
+	}
+}
+
+character_event = {
+	id = christian.24
+	desc = EVTDESC_christian_24
+	picture = GFX_evt_cathedral
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_christian_24
+
+		set_character_flag = pilgrimage_to_nazareth
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_NAZARETH
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+	
+	option = { 
+		name = EVTOPTB_christian_24
+		set_character_flag = pilgrimage_to_jasna_gora
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_JASNA_GORA
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+}
+
+character_event = {
+	id = christian.25
+	desc = EVTDESC_christian_11
+	picture = GFX_evt_cathedral
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { #Plock
+		name = EVTOPTA_christian_25
+
+		set_character_flag = pilgrimage_to_plock
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_PLOCK
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+	
+	option = { #Untrecht
+		name = EVTOPTB_christian_25
+
+		set_character_flag = pilgrimage_to_untrecht
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_UNTRECHT
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+		
+	option = { #Nitra
+		name = EVTOPTC_christian_25
+
+		set_character_flag = pilgrimage_to_nitra
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_NITRA
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+}
+
+character_event = {
+	id = christian.26
+	desc = EVTDESC_christian_9
+	picture = GFX_evt_cathedral
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { #Two main holy sites
+		name = EVTOPTA_christian_26
+		piety=30
+		character_event = { id = christian.27 }
+	}
+	
+	option = { #Other mainsteam holy sites
+		name = EVTOPTB_christian_9
+		piety=30
+		character_event = { id = christian.28 }
+	}
+	
+	option = {
+		name = EVTOPTC_SOA_5018 # Find a Saintly Burial Site to visit
+
+		trigger = { has_dlc = "Holy Fury" }
+
+		character_event = {
+			id = HF.41300
+			days = 15
+		}
+	}
+}
+
+character_event = {
+	id = christian.27
+	desc = EVTDESC_christian_27
+	picture = GFX_evt_cathedral
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_christian_27
+
+		set_character_flag = pilgrimage_to_esztegrom
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_ESZTEGROM
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+	
+	option = { 
+		name = EVTOPTA_christian_24
+		set_character_flag = pilgrimage_to_nazareth
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_NAZARETH
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+}
+
+character_event = {
+	id = christian.28
+	desc = EVTDESC_christian_11
+	picture = GFX_evt_cathedral
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { #Pest
+		name = EVTOPTA_christian_28
+
+		set_character_flag = pilgrimage_to_pest
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_PEST
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+	
+	option = { #Szekesfehervar
+		name = EVTOPTB_christian_28
+
+		set_character_flag = pilgrimage_to_szekesfehervar
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_SZEKESFEHERVAR
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+		
+	option = { #Nitra
+		name = EVTOPTC_christian_25
+
+		set_character_flag = pilgrimage_to_nitra
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_NITRA
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+}
+
+character_event = {
+	id = christian.29
+	desc = EVTDESC_christian_9
+	picture = GFX_evt_cathedral
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { #Two main holy sites
+		name = EVTOPTA_christian_29
+		piety=30
+		character_event = { id = christian.30 }
+	}
+	
+	option = { #Other mainsteam holy sites
+		name = EVTOPTB_christian_9
+		piety=30
+		character_event = { id = christian.31 }
+	}
+	
+	option = {
+		name = EVTOPTC_SOA_5018 # Find a Saintly Burial Site to visit
+
+		trigger = { has_dlc = "Holy Fury" }
+
+		character_event = {
+			id = HF.41300
+			days = 15
+		}
+	}
+}
+
+character_event = {
+	id = christian.30
+	desc = EVTDESC_christian_30
+	picture = GFX_evt_cathedral
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { #Moscow
+		name = EVTOPTA_christian_30
+
+		set_character_flag = pilgrimage_to_moscow
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_MOSCOW
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+	
+	option = { #Kyiv
+		name = EVTOPTA_christian_30
+		set_character_flag = pilgrimage_to_kyiv
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_KYIV
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+}
+
+character_event = {
+	id = christian.31
+	desc = EVTDESC_christian_11
+	picture = GFX_evt_cathedral
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { #Wiackoje
+		name = EVTOPTA_christian_31
+
+		set_character_flag = pilgrimage_to_wiackoje
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_WIACKOJE
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+	
+	option = { #Pustozersk
+		name = EVTOPTB_christian_31
+
+		set_character_flag = pilgrimage_to_pustozersk
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_PUSTOZERSK
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+		
+	option = { #Arkhangelsk
+		name = EVTOPTC_christian_31
+
+		set_character_flag = pilgrimage_to_arkhangelsk
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_ARKHANGELSK
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+}
+
+character_event = {
+	id = christian.32
+	desc = EVTDESC_christian_9
+	picture = GFX_evt_cathedral
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { #Two main holy sites
+		name = EVTOPTA_christian_32
+		piety=30
+		character_event = { id = christian.33 }
+	}
+	
+	option = { #Other mainsteam holy sites
+		name = EVTOPTB_christian_9
+		piety=30
+		character_event = { id = christian.34 }
+	}
+	
+	option = {
+		name = EVTOPTC_SOA_5018 # Find a Saintly Burial Site to visit
+
+		trigger = { has_dlc = "Holy Fury" }
+
+		character_event = {
+			id = HF.41300
+			days = 15
+		}
+	}
+}
+
+character_event = {
+	id = christian.33
+	desc = EVTDESC_christian_33
+	picture = GFX_evt_cathedral
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { #Canterbury
+		name = EVTOPTA_christian_33
+
+		set_character_flag = pilgrimage_to_canterbury
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_CANTERBURY
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+	
+	option = { #York
+		name = EVTOPTB_christian_33
+		set_character_flag = pilgrimage_to_york
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_YORK
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+}
+
+character_event = {
+	id = christian.34
+	desc = EVTDESC_christian_11
+	picture = GFX_evt_cathedral
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { #Glastonbury
+		name = EVTOPTA_christian_34
+
+		set_character_flag = pilgrimage_to_glastonbury
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_GLASTONBURY
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+	
+	option = { #Walsingham
+		name = EVTOPTB_christian_34
+
+		set_character_flag = pilgrimage_to_walsingham
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_WALSINGHAM
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+		
+	option = { #Westminster
+		name = EVTOPTC_christian_34
+
+		set_character_flag = pilgrimage_to_westminster
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_WESTMINSTER
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
 	}
 }

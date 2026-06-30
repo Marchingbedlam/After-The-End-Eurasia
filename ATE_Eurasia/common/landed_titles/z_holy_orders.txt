@@ -291,3 +291,95 @@ d_order_of_the_star = {
 	
 	mercenary_type = d_order_of_the_star
 }
+d_order_of_st_george = {
+	color = { 180 25 26 }
+	color2 = { 255 255 255 }
+	
+	graphical_culture = holygfx
+	
+	capital = 27 # London
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+	
+	culture = southerner
+	religion = glorian
+	
+	short_name = yes
+	landless = yes
+	holy_order = yes
+	primary = yes 
+	monthly_income = 6
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_order_of_saint_george_composition
+}
+d_order_of_st_olav = {
+	color = { 180 25 26 }
+	color2 = { 255 255 255 }
+	
+	graphical_culture = holygfx
+	
+	capital = 27 # London
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+	
+	culture = ostlending
+	religion = folketro
+	
+	short_name = yes
+	landless = yes
+	holy_order = yes
+	primary = yes 
+	monthly_income = 6
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_order_of_saint_olav_composition
+}
+d_order_of_polar_star = {
+	color = { 180 25 26 }
+	color2 = { 255 255 255 }
+	
+	graphical_culture = holygfx
+	
+	capital = 494 # Uppland
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+	
+	culture = svealander
+	religion = folketro
+	
+	short_name = yes
+	landless = yes
+	holy_order = yes
+	primary = yes 
+	monthly_income = 6
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_order_of_polar_star_composition
+}
+d_order_of_elephant = {
+	color = { 180 25 26 }
+	color2 = { 255 255 255 }
+	
+	graphical_culture = holygfx
+	
+	capital = 389 # Sjaelland
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+	
+	culture = danish
+	religion = folketro
+	
+	short_name = yes
+	landless = yes
+	holy_order = yes
+	primary = yes 
+	monthly_income = 6
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_order_of_elephant_composition
+}

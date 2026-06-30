@@ -1300,10 +1300,10 @@ christian = {
 		
 		religious_clothing_head = 24
 		religious_clothing_priest = 24
-		#intermarry = catholic
+		intermarry = catholic
         #intermarry = insular
-        #intermarry = penitant
-        #intermarry = apparitionist
+        intermarry = penitant
+        intermarry = apparitionist
 	}	
 	
 	mariavite = {
@@ -2448,7 +2448,7 @@ vernacular = {
 	}
 
 	folketro = {
-		graphical_culture = westerngfx
+		graphical_culture = folketrogfx
 
 		icon = 75
 		heresy_icon = 76
@@ -2486,8 +2486,8 @@ vernacular = {
 		allow_rivermovement = yes
 		allow_looting = yes
 		
-		religious_clothing_head = 0
-		religious_clothing_priest = 1
+		religious_clothing_head = 20
+		religious_clothing_priest = 20
 		intermarry = fornsed
 		intermarry = nysed
 		intermarry = sun_king_cultist 
@@ -2536,7 +2536,7 @@ vernacular = {
 		allow_looting = no
 		
 		religious_clothing_head = 1
-		religious_clothing_priest = 1
+		religious_clothing_priest = 20
 		intermarry = nysed
 		intermarry = folketro
 		intermarry = lutheran 
@@ -2558,17 +2558,17 @@ vernacular = {
 		use_new_crusade = yes
 		crusade_cb = new_crusade
 		
-		scripture_name = THE_BIBLE
 		priest_title = FADER
+		scripture_name = THE_SAGAS
 		
 		high_god_name = GOD_THE_ALLFATHER
 		
 		god_names = {
-			GOD_LUSSI GOD_THE_ALLFATHER GOD_THE_FIDDLER GOD_THE_MOUNTAIN_KING THE_DEVIL GOD_FENRIR GOD_MODER_JORD GOD_THE_ELVES
+		   GOD_THE_ALLFATHER GOD_THOR GOD_THE_FIDDLER GOD_MODER_JORD THE_HIDDEN_FOLK GOD_THE_ELVES WILD_HUNT
 		}
 		
 		evil_god_names = {
-			GOD_LUSSI GOD_THE_FIDDLER GOD_THE_MOUNTAIN_KING THE_DEVIL GOD_FENRIR GOD_PESTA GOD_THE_ELVES GOD_MODER_JORD
+		   THE_DEVIL GOD_LUSSI THE_TROLLS GOD_THE_MOUNTAIN_KING KRAKEN GOD_FENRIR GOD_PESTA WILD_HUNT
 		}
 		
 		defensive_attrition = yes
@@ -2576,16 +2576,19 @@ vernacular = {
 		priests_can_inherit = no
 		allow_rivermovement = yes
 		allow_looting = yes
+		allow_viking_invasion = yes
 		female_temple_holders = yes
 		male_temple_holders = yes
 		
-		religious_clothing_head = 0
-		religious_clothing_priest = 1
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
 		
 		intermarry = folketro 
 		intermarry = fornsed 
 		intermarry = sun_king_cultist 
 		intermarry = quinto
+		intermarry = sjotru
+		intermarry = sjotru_reformed
 	}
 	
 	quinto = {
@@ -2662,6 +2665,11 @@ vernacular = {
 		intermarry = orthodox
 		intermarry = oldcalendarist
 		intermarry = antipalamite
+		intermarry = pravoslavie
+		intermarry = dvoeverie
+		intermarry = old_believer
+		intermarry = dove
+		intermarry = dukhovnye
 		intermarry = angelchina
 	}
 	
@@ -2703,6 +2711,11 @@ vernacular = {
 		intermarry = orthodox
 		intermarry = oldcalendarist
 		intermarry = antipalamite
+		intermarry = pravoslavie
+		intermarry = dvoeverie
+		intermarry = old_believer
+		intermarry = dove
+		intermarry = dukhovnye
 		intermarry = kozachina
 		intermarry = khanist
 	}
@@ -2812,7 +2825,7 @@ vernacular = {
 		high_god_name = CHRISTOS_DIAS
 		
 		god_names = {
-			KYRIOS GOD_THEOTOKOS ARIES KONSTANTINOS SAINT_POSEIDON SAINT_DEMETHER SAINT_PROMETHEUS SAINT_CICERO SAINT_ARISTOLE
+			KYRIOS GOD_THEOTOKOS ARIES KONSTANTINOS SAINT_POSEIDON SAINT_DEMETHER SAINT_PROMETHEUS SAINT_HERMES SAINT_CICERO SAINT_ARISTOLE
 		}
 		
 		evil_god_names = {
@@ -4032,6 +4045,35 @@ islamosyncretic = {
 		religious_clothing_head = 10
 		religious_clothing_priest = 10
 	}
+	
+	nazari = {
+		graphical_culture = muslimgfx
+		
+		icon = 81
+		heresy_icon = 83
+		
+		color = { 27 34 224 }
+		
+		high_god_name = GOD_ALLAH
+		
+		god_names = {
+			GOD_ALLAH NINTY_NINE_NAMED_GOD GOD_THE_GREATEST GOD_THE_MERCIFUL GOD_AL-KHIDR GOD_NASREDDIN GOD_BURAQ 
+		}
+		evil_god_names = {
+			GOD_SHAYTAN GOD_IBLIS GOD_GHADDAR YAJUJ_AND_MAJUJ GOD_GHUL
+		}
+		
+		scripture_name = THE_QURAN
+		priest_title = IMAM
+		crusade_name = JIHAD
+		uses_decadence = no
+		max_wives = 4
+		can_call_crusade = yes
+		can_grant_invasion_cb = yes
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+	}
 }
 
 old_world_cultist_group = {
@@ -4309,34 +4351,6 @@ old_world_cultist_group = {
 		uses_decadence = no
 		max_wives = 1
 		feminist = yes
-		can_call_crusade = yes
-		can_grant_invasion_cb = yes
-		
-		religious_clothing_head = 10
-		religious_clothing_priest = 10
-	}
-	nazari = {
-		graphical_culture = muslimgfx
-		
-		icon = 81
-		heresy_icon = 83
-		
-		color = { 27 34 224 }
-		
-		high_god_name = GOD_ALLAH
-		
-		god_names = {
-			GOD_ALLAH NINTY_NINE_NAMED_GOD GOD_THE_GREATEST GOD_THE_MERCIFUL GOD_AL-KHIDR GOD_NASREDDIN GOD_BURAQ 
-		}
-		evil_god_names = {
-			GOD_SHAYTAN GOD_IBLIS GOD_GHADDAR YAJUJ_AND_MAJUJ GOD_GHUL
-		}
-		
-		scripture_name = THE_QURAN
-		priest_title = IMAM
-		crusade_name = JIHAD
-		uses_decadence = no
-		max_wives = 4
 		can_call_crusade = yes
 		can_grant_invasion_cb = yes
 		

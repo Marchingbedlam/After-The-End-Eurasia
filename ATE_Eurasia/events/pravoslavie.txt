@@ -802,3 +802,82 @@ character_event = {
 		character_event = { id = pravoslavie.19 }
 	}
 }
+
+character_event = { 
+	id = pravoslavie.22
+	desc = EVTDESC_pravoslavie.22
+	picture = GFX_evt_russian_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_pravoslavie.19
+		add_trait="pravoslavie_holy_mary"
+	}
+	
+	option = { 
+		name = EVTOPTB_pravoslavie.19
+		add_trait="pravoslavie_st_nicholas"
+	}
+	
+	option = { 
+		name = EVTOPTC_pravoslavie.22
+		add_trait="pravoslavie_st_seraphim_of_sarov"
+	}
+		
+	option = { 
+		name = EVTOPTD_pravoslavie.19
+		character_event = { id = pravoslavie.23 }
+	}
+}
+
+character_event = { 
+	id = pravoslavie.23
+	desc = EVTDESC_pravoslavie.22
+	picture = GFX_evt_russian_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_pravoslavie.23
+		add_trait="pravoslavie_st_sergius_of_radonezh"
+	}
+	
+	option = { 
+		name = EVTOPTB_pravoslavie.23
+		add_trait="pravoslavie_st_tichon_of_moscow"
+	}
+	
+	option = { 
+		name = EVTOPTC_pravoslavie.23
+		add_trait="pravoslavie_st_xenia_of_st_petersburg"
+	}
+		
+	option = { 
+		name = EVTOPTD_pravoslavie.19
+		character_event = { id = pravoslavie.24 }
+	}
+}
+
+character_event = { 
+	id = pravoslavie.24
+	desc = EVTDESC_pravoslavie.22
+	picture = GFX_evt_russian_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_pravoslavie.24
+		add_trait="pravoslavie_st_dmitriy"
+	}
+	
+	option = { 
+		name = EVTOPTB_pravoslavie.24
+		add_trait="pravoslavie_st_vladimir"
+	}
+		
+	option = { 
+		name = EVTOPTD_pravoslavie.19
+		character_event = { id = pravoslavie.22 }
+	}
+}

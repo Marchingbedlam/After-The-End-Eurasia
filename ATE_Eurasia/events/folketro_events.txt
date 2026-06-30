@@ -283,7 +283,7 @@ character_event = {
 				NOT = { has_character_modifier = holding_large_feast }
 				NOT = { has_character_modifier = holding_confirmation }
 				OR = {
-				   religion = folketro
+				   religion = folkestro
 				   religion = fornsed
 				}
 			}
@@ -296,7 +296,7 @@ character_event = {
 		}
 		custom_tooltip = { text = confirmation_invitations_sent }
 		character_event = { id = troll.14 days = 14 }
-		set_character_flag = big_folketro_feast
+		set_character_flag = big_folkestro_feast
 	}
 	option = {
 		name = EVTOPTB_confirmation_2
@@ -308,7 +308,7 @@ character_event = {
 				NOT = { has_character_modifier = holding_large_feast }
 				NOT = { has_character_modifier = holding_confirmation }
 				OR = {
-				   religion = folketro
+				   religion = folkestro
 				   religion = fornsed
 				}
 			}
@@ -321,7 +321,7 @@ character_event = {
 		}
 		custom_tooltip = { text = confirmation_invitations_sent }
 		character_event = { id = troll.14 days = 14 }
-		set_character_flag = moderate_folketro_feast
+		set_character_flag = moderate_folkestro_feast
 	}
 	option = {
 		name = EVTOPTC_confirmation_2
@@ -329,7 +329,7 @@ character_event = {
 		any_vassal = {
 			limit = {
 			   OR = {
-				religion = folketro
+				religion = folkestro
 				religion = fornsed
 			   }
 				prisoner = no
@@ -343,7 +343,7 @@ character_event = {
 		}
 		custom_tooltip = { text = confirmation_invitations_sent }
 		character_event = { id = troll.14 days = 14 }
-		set_character_flag = small_folketro_feast
+		set_character_flag = small_folkestro_feast
 	}
 }
 
@@ -676,22 +676,22 @@ character_event = {
 		name = EVTOPTA_confirmation_10
 		trigger = { has_character_flag = holding_confirmation }
 		if = {
-		   limit = { has_character_flag = big_folketro_feast }
+		   limit = { has_character_flag = big_folkestro_feast }
 		   piety = 5
 		   prestige = 30
-		   clr_character_flag = big_folketro_feast
+		   clr_character_flag = big_folkestro_feast
 		}
 		if = {
-		   limit = { has_character_flag = moderate_folketro_feast }
+		   limit = { has_character_flag = moderate_folkestro_feast }
 		   piety = 30
 		   prestige = 10
-		   clr_character_flag = big_folketro_feast
+		   clr_character_flag = big_folkestro_feast
 		}
 		if = {
-		   limit = { has_character_flag = small_folketro_feast }
+		   limit = { has_character_flag = small_folkestro_feast }
 		   piety = 50
 		   prestige = -10
-		   clr_character_flag = big_folketro_feast
+		   clr_character_flag = big_folkestro_feast
 		}
 		if = {
 			limit = {
@@ -708,5 +708,1403 @@ character_event = {
 		piety = 20
 		clr_character_flag = attending_confirmation
 		clr_character_flag = do_not_disturb
+	}
+}
+
+character_event = { 
+	id = troll.16
+	desc = EVTDESC_troll_16
+	picture = GFX_evt_church_council
+	border = GFX_event_normal_frame_religion
+	religion = fornsed
+	
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_troll_16
+		add_trait="st_lucy"
+	}
+	
+	option = {
+		name = EVTOPTB_troll_16
+		add_trait="st_olav"
+	}
+	option = {
+		name = EVTOPTC_troll_16
+		add_trait="st_peter"
+	}
+}
+
+narrative_event = {
+	id = troll.17
+	title = EVTNAME_troll_17
+	desc = EVTDESC_troll_17
+	picture = GFX_evt_folketro_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_troll_17
+		piety = 20
+		character_event = { id = troll.18 days = 7 }
+	}
+	
+	option = { #It isn't for me
+		name = EVTOPTB_troll_17
+		ai_chance = { factor = 0 }
+		piety = -20
+		clr_character_flag = activated_pilgrimage
+		clr_character_flag = do_not_disturb
+	}
+}
+
+character_event = {
+	id = troll.18
+	desc = EVTDESC_troll_18
+	picture = GFX_evt_folketro_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = { #Lund or Nidaros
+		name = EVTOPTA_troll_18
+		trigger = {
+		   NOT = {
+				capital_scope = { province_id = c_scania } #Lund
+				capital_scope = { province_id = c_trondheim } #Nidaros
+		   }
+		}
+		ai_chance = { factor = 35 }
+		character_event = { id = troll.19 }
+	}
+	
+	option = { #Go to Lund
+		name = EVTOPTB_troll_18
+		trigger = {
+		   capital_scope = { province_id = c_trondheim } #Nidaros
+		}
+		ai_chance = { factor = 35 }
+		set_character_flag = go_to_folketro_pilgrimage_to_lund
+		character_event = { id = troll.21 }
+	}
+	
+	option = { #Go to Nidaros
+		name = EVTOPTC_troll_18
+		trigger = {
+		   capital_scope = { province_id = c_scania } #Lund
+		}
+		ai_chance = { factor = 45 }
+		set_character_flag = go_to_folketro_pilgrimage_to_nidaros
+		character_event = { id = troll.21 }
+	}
+	
+	option = { #Other Holy Place - Turku, Uspalla or Telemark
+		name = EVTOPTD_troll_18
+		ai_chance = { factor = 50 }
+		character_event = { id = troll.20 }
+	}
+}
+
+character_event = { #Lund or Nidaros
+	id = troll.19
+	desc = EVTDESC_troll_19
+	picture = GFX_evt_folketro_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = { #Lund
+		name = EVTOPTA_troll_19
+		set_character_flag = go_to_folketro_pilgrimage_to_lund
+		character_event = { id = troll.21 }
+	}
+	
+	option = { #Nidaros
+		name = EVTOPTB_troll_19
+		set_character_flag = go_to_folketro_pilgrimage_to_nidaros
+		character_event = { id = troll.21 }
+	}
+}
+
+character_event = { 
+	id = troll.20
+	desc = EVTDESC_troll_20
+	picture = GFX_evt_folketro_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = { #Telemark
+		name = EVTOPTA_troll_20
+		trigger = {
+		   NOT = { capital_scope = { province_id = c_telemark } }
+		}
+		set_character_flag = go_to_folketro_pilgrimage_to_telemark
+		character_event = { id = troll.21 }
+	}
+	
+	option = { #Turku
+		name = EVTOPTB_troll_20
+	    trigger = {
+		   NOT = { capital_scope = { province_id = c_turku } }
+		}
+		set_character_flag = go_to_folketro_pilgrimage_to_turku
+		character_event = { id = troll.21 }
+	}
+	
+	option = { #Upsalla
+		name = EVTOPTC_troll_20
+		trigger = {
+		   NOT = { capital_scope = { province_id = c_uppland } }
+		}
+		set_character_flag = go_to_folketro_pilgrimage_to_upsalla
+		character_event = { id = troll.21 }
+	}
+}
+
+character_event = { #Go to pilgriamge
+	id = troll.21
+	desc = EVTDESC_troll_21
+	picture = GFX_evt_folketro_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_troll_21
+		hidden_tooltip = {
+			add_trait = on_pilgrimage
+			set_character_flag = good_pilgrimage
+			narrative_event = { id = troll.22 days = 30 }
+		}
+		hidden_tooltip = {
+			random_list = {
+				10 = { character_event = { id = troll.23 days = 9 random = 10 } } # List that is always checked
+				10 = { character_event = { id = troll.24 days = 9 random = 10 } }
+				10 = { narrative_event = { id = troll.27 days = 9 random = 10 } }
+				10 = { character_event = { id = troll.28 days = 9 random = 10 } }
+				10 = { character_event = { id = troll.30 days = 8 random = 10 } }
+				10 = { character_event = { id = troll.36 days = 9 random = 10 } }
+				10 = { character_event = { id = troll.37 days = 9 random = 10 } }
+				10 = { character_event = { id = troll.38 days = 9 random = 10 } }
+				10 = { character_event = { id = troll.39 days = 8 random = 10 } }
+				10 = { character_event = { id = troll.44 days = 9 random = 10 } }
+			}
+			random_list = {
+				10 = { character_event = { id = troll.23 days = 18 random = 10 } } # List that is always checked
+				10 = { character_event = { id = troll.24 days = 19 random = 10 } }
+				10 = { narrative_event = { id = troll.27 days = 20 random = 10 } }
+				10 = { character_event = { id = troll.28 days = 20 random = 10 } }
+				10 = { character_event = { id = troll.30 days = 19 random = 10 } }
+				10 = { character_event = { id = troll.36 days = 22 random = 10 } }
+				10 = { character_event = { id = troll.37 days = 21 random = 10 } }
+				10 = { character_event = { id = troll.38 days = 19 random = 10 } }
+				10 = { character_event = { id = troll.39 days = 18 random = 10 } }
+				10 = { character_event = { id = troll.44 days = 18 random = 10 } }
+			}
+		}
+	}
+}
+
+narrative_event = { #Welcome
+	id = troll.22
+	title = EVTNAME_troll_22
+	desc = {
+		text = EVTDESC_troll_22_LUND
+		picture = GFX_evt_lund
+		trigger = { 
+			has_character_flag = go_to_folketro_pilgrimage_to_lund
+		}
+	}
+	desc = {
+		text = EVTDESC_troll_22_NIDAROS
+		picture = GFX_evt_nidaros
+		trigger = { 
+			has_character_flag = go_to_folketro_pilgrimage_to_nidaros
+		}
+	}
+	desc = {
+		text = EVTDESC_troll_22_TELEMARK
+		picture = GFX_evt_telemark
+		trigger = { 
+			has_character_flag = go_to_folketro_pilgrimage_to_telemark
+		}
+	}
+	desc = {
+		text = EVTDESC_troll_22_TURKU
+		picture = GFX_evt_turku
+		trigger = { 
+			has_character_flag = go_to_folketro_pilgrimage_to_turku
+		}
+	}
+	desc = {
+		text = EVTDESC_troll_22_UPSALLA
+		picture = GFX_evt_uppsala
+		trigger = { 
+			has_character_flag = go_to_folketro_pilgrimage_to_upsalla
+		}
+	}
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_troll_22
+		hidden_tooltip = { character_event = { id = SoA.5055 days = 7 } }
+		clr_character_flag = go_to_folketro_pilgrimage_to_lund
+		clr_character_flag= go_to_folketro_pilgrimage_to_nidaros
+		clr_character_flag = go_to_folketro_pilgrimage_to_telemark
+		clr_character_flag = go_to_folketro_pilgrimage_to_turku
+		clr_character_flag = go_to_folketro_pilgrimage_to_upsalla
+	}
+}
+
+character_event = { 
+	id = troll.23
+	desc = EVTDESC_troll_23
+	picture = GFX_evt_folketro_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_troll_23
+		piety=10
+		random_list = {
+		   25 = { add_trait="zealous" }
+		   10 = { add_trait="falconer" }
+		   65 = { }
+		}
+	}
+	
+	option = { 
+		name = EVTOPTB_troll_23
+	    piety=-10
+		prestige=10
+		random_list = {
+		   30 = { add_trait="cynical" }
+		   70 = { }
+		}
+	}
+}
+
+character_event = { 
+	id = troll.24
+	desc = EVTDESC_troll_24
+	picture = GFX_evt_folketro_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_troll_24
+		wealth=-10
+		piety=20
+		random_list = {
+		   20 = { add_trait="wounded" }
+		   80 = { }
+		}
+		random_list = {
+		  40 = { add_trait="charitable" }
+		  40 = { add_trait="diligent" }
+		  20 = { }
+		}
+	}
+	
+	option = { 
+		name = EVTOPTB_troll_24
+		wealth=-10
+		piety=10
+		random_list = {
+		  40 = { add_trait="charitable" }
+		  60 = { }
+		}
+	}
+	
+	option = { 
+		name = EVTOPTC_troll_24
+	    piety=10
+		random_list = {
+		   20 = { add_trait="wounded" }
+		   80 = { }
+		}
+		random_list = {
+		  40 = { add_trait="diligent" }
+		  60 = { }
+		}
+	}
+	
+	option = { 
+		name = EVTOPTD_troll_24
+	    piety-10
+		random_list = {
+		  50 = { add_trait="slothful" }
+		  50 = { }
+		}
+	}
+}
+
+character_event = { 
+	id = troll.25
+	desc = "Nothing important"
+	picture = GFX_evt_folketro_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Nothing"
+		piety=1
+	}
+}
+
+narrative_event = {
+	id = troll.26
+	title = EVTNAME_troll_26
+	desc = {
+		text = EVTDESC_troll_26_WILD_DUCK
+		picture = GFX_evt_folketro_pilgrimage
+		trigger = { 
+			has_character_flag = pilgrim_the_wild_duck
+		}
+	}
+	desc = {
+		text = EVTDESC_troll_26_ERASMUS
+		picture = GFX_evt_folketro_pilgrimage
+		trigger = { 
+			has_character_flag = pilgrim_erasmus_montanus
+		}
+	}
+	desc = {
+		text = EVTDESC_troll_26_PEER_GYNT
+		picture = GFX_evt_folketro_pilgrimage
+		trigger = { 
+			has_character_flag = pilgrim_peer_gynt
+		}
+	}
+	desc = {
+		text = EVTDESC_troll_26_MR_SLEEMAN
+		picture = GFX_evt_folketro_pilgrimage
+		trigger = { 
+			has_character_flag = pilgrim_mr_sleeman
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	
+	option = { 
+		name = EVTOPTA_troll_26
+		prestige=10
+		random_list = {
+		   25 = { add_trait="poet" }
+		   75 = { }
+		}
+		clr_character_flag = pilgrim_the_wild_duck
+		clr_character_flag = pilgrim_mr_sleeman
+		clr_character_flag = pilgrim_peer_gynt
+		clr_character_flag = pilgrim_erasmus_montanus
+	}
+}
+
+character_event = { 
+	id = troll.27
+	desc = EVTDESC_troll_25
+	picture = GFX_evt_folketro_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_troll_25
+		piety=10
+		hidden_tooltip = {
+		random_list = {
+		   25 = { set_character_flag = pilgrim_the_wild_duck }
+		   25 = { set_character_flag = pilgrim_mr_sleeman }
+		   25 = { set_character_flag = pilgrim_peer_gynt }
+		   25 = { set_character_flag = pilgrim_erasmus_montanus }
+		}
+		}
+		narrative_event = { id = troll.26 }
+	}
+	
+	option = { 
+		name = EVTOPTB_troll_25
+		prestige=10
+		random_list = {
+		   25 = { add_trait="greedy" }
+		   75 = { }
+		}
+	}
+}
+
+character_event = { 
+	id = troll.28
+	desc = EVTDESC_troll_28
+	picture = GFX_evt_folketro_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_troll_28
+		random_list = {
+		   10 = { death = { death_reason = death_missing } }
+		   20 = { add_trait="maimed" }
+		   30 = { add_trait="wounded" }
+		   40 = { }
+		}
+	}
+}
+
+character_event = {
+	id = troll.29
+	desc = EVTDESC_troll_29
+	picture = GFX_evt_folketro_pilgrimage
+	religion = nysed
+	
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+	}
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_troll_29
+		add_trait="nysed_thor"
+	}
+	
+	option = { 
+		name = EVTOPTB_troll_29
+		add_trait="nysed_elves"
+	}
+	
+	option = { 
+		name = EVTOPTC_troll_29
+		add_trait="nysed_fiddler"
+	}
+	
+	option = { 
+		name = EVTOPTD_troll_29
+		add_trait="nysed_wild_hunt"
+	}
+}
+
+narrative_event = { 
+	id = troll.30
+	title = EVTTITLE_SKC_129
+	desc = EVTDESC_SKC_129
+	picture = GFX_evt_folketro_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_129
+		piety = -10
+		prestige = 10
+		narrative_event = { id = troll.31 }
+	}
+	
+	option = { 
+		name = EVTOPTB_SKC_129
+		piety=-100
+		add_trait="cruel"
+	}
+}
+
+narrative_event = { 
+	id = troll.31
+	title = EVTTITLE_SKC_130
+	desc = EVTDESC_SKC_130
+	picture = GFX_evt_folketro_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_130
+		hidden_tooltip = {
+		random_list = {
+		   10 = { narrative_event = { id = troll.32 } } #Both Parents live
+		   20 = { narrative_event = { id = troll.33 } } #Father lives
+		   30 = { narrative_event = { id = troll.34 } } #Mother lives
+		   40 = { narrative_event = { id = troll.35 } } #All of them are dead
+		}
+		}
+	}
+}
+
+narrative_event = { 
+	id = troll.32
+	title = EVTTITLE_SKC_131
+	desc = EVTDESC_SKC_131
+	picture = GFX_evt_folketro_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_131
+		piety = 20
+		prestige = 20
+	}
+	
+	option = { 
+		name = EVTOPTB_SKC_131
+		wealth = -20
+		piety = 40
+		prestige = 40
+	}
+}
+
+narrative_event = { 
+	id = troll.33
+	title = EVTTITLE_SKC_131
+	desc = EVTDESC_SKC_132
+	picture = GFX_evt_folketro_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_131
+		piety = 10
+		prestige = 10
+	}
+	
+	option = { 
+		name = EVTOPTB_SKC_131
+		wealth = -20
+		piety = 30
+		prestige = 30
+	}
+}
+
+narrative_event = { 
+	id = troll.34
+	title = EVTTITLE_SKC_131
+	desc = EVTDESC_SKC_133
+	picture = GFX_evt_folketro_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_133
+		piety = 10
+		prestige = 10
+	}
+	
+	option = { 
+		name = EVTOPTB_SKC_133
+		wealth = -20
+		piety = 30
+		prestige = 30
+	}
+	
+	option = { #Generate characters
+		name = EVTOPTC_SKC_133
+		wealth = -30
+		piety = 100
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = yes
+			lowborn = yes
+			age = 40
+			trait = kind
+			trait = pious
+			trait = chaste
+			trait = wounded
+		}
+		new_character = {
+		   save_event_target_as = mother_of_children
+		}
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = yes
+			age = 10
+			lowborn = yes
+		}
+		new_character = {
+		   save_event_target_as = daughter_of_mother
+		}
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = no
+			age = 8
+			lowborn = yes
+		}
+		new_character = {
+		   save_event_target_as = son_of_mother
+		}
+		event_target:son_of_mother = {
+		   set_mother = event_target:mother_of_children
+		}
+		event_target:daughter_of_mother = {
+		   set_mother = event_target:mother_of_children
+		}
+	}
+}
+
+narrative_event = { 
+	id = troll.35
+	title = EVTTITLE_SKC_131
+	desc = EVTDESC_SKC_134
+	picture = GFX_evt_folketro_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_134
+		piety = 10
+		prestige = 10
+	}
+	
+	option = { 
+		name = EVTOPTB_SKC_134
+		wealth = -20
+		piety = 30
+		prestige = 30
+	}
+	
+	option = { #Generate characters
+		name = EVTOPTC_SKC_134
+		wealth = -25
+		piety = 100
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = yes
+			age = 40
+			trait = kind
+			trait = pious
+			trait = chaste
+			trait = wounded
+			lowborn = yes
+		}
+		new_character = {
+		   save_event_target_as = mother_of_children
+		   	death = {
+				death_reason = death_murder
+			}
+		}
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = yes
+			age = 10
+			lowborn = yes
+		}
+		new_character = {
+		   save_event_target_as = daughter_of_mother
+		}
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = no
+			age = 8
+			lowborn = yes
+		}
+		new_character = {
+		   save_event_target_as = son_of_mother
+		}
+		event_target:son_of_mother = {
+		   set_mother = event_target:mother_of_children
+		}
+		event_target:daughter_of_mother = {
+		   set_mother = event_target:mother_of_children
+		}
+	}
+}
+
+long_character_event = { #Meeting hulder
+	id = troll.36
+	desc = EVTDESC_troll_36
+	picture = GFX_evt_folketro_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { #Kill her!
+		name = EVTOPTA_troll_36
+		piety = 50
+		random_list = {
+		  45 = { add_trait="zealous" }
+		  25 = { add_trait="cruel" }
+		  30 = { }
+		}
+	}
+	
+	option = { #Left her
+		name = EVTOPTB_troll_36
+		piety=25
+		prestige=25
+	}
+	
+	option = {
+		name = EVTOPTC_troll_36
+		piety=-25
+		prestige = 50
+		random_list = {
+		   10 = { add_trait="kind" }
+		   30 = { add_trait="cynical" }
+		   60 = { }
+		}
+	}
+	
+	option = { 
+		name = EVTOPTD_troll_36
+		piety=-25
+		wealth=-10
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = yes
+			age = 18
+			learning=14
+			trait="physician"
+			trait="quick"
+			trait="attractive"
+			trait="kind"
+		}
+	}
+}
+
+character_event = { #Meeting pagans
+	id = troll.37
+	desc = EVTDESC_troll_37
+	picture = GFX_evt_folketro_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_troll_37
+		piety=-10
+		wealth=-5
+		secret_religion = nysed
+		if = {
+		   limit = { trait = apostle_cult }
+		   remove_trait="apostle_cult"
+		   add_trait="hiddenfolk_cult"
+		}
+	}
+	
+	option = { 
+		name = EVTOPTB_troll_37
+		piety=25
+	}
+	
+	option = { 
+		name = EVTOPTC_troll_37
+		piety=50
+		add_trait="zealous"
+		random_list = { 
+		  40 = { add_trait="brave" }
+		  60 = { }
+		}
+		random_list = {
+		  10 = { death = { death_reason = death_missing } }
+		  20 = { add_trait="maimed" }
+		  50 = { add_trait="wounded" }
+		  20 = { }
+		}
+	}
+}
+
+character_event = {
+	id = troll.38
+	desc = EVTDESC_troll_38
+	picture = GFX_evt_folketro_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_troll_38
+		piety=10
+	}
+	
+	option = { 
+		name = EVTOPTB_troll_38
+		trigger = { learning > 12 }
+		piety=50
+		random_list = {
+		   10 = { add_trait="poet" }
+		   10 = { add_trait="musician" }
+		   30 = { add_trait="gregarious" }
+		   50 = { }
+		} 
+	}
+}
+
+narrative_event = { 
+	id = troll.39
+	title = EVTTITLE_troll_39
+	desc = EVTDESC_troll_39
+	picture = GFX_evt_folketro_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_troll_39
+		prestige=30
+		random_list = {
+		   10 = { add_trait="brave" }
+		   90 = { }
+		}
+		hidden_tooltip = {
+		   random_list = {
+		      25 =  { character_event = { id = troll.40 } } #Old Artefact
+			  25 =  { character_event = { id = troll.41 } } #"Folketro/Fornsed is false"
+			  25 =  { character_event = { id = troll.42 } } #Meeting with bandits
+			  25 =  { character_event = { id = troll.43 } } #Meeting lost child
+		   }
+		}
+	}
+	
+	option = { 
+		name = EVTOPTB_troll_39
+		prestige=-50
+		random_list = {
+		  40 = { add_trait="craven" }
+		  60 = { }
+		}
+	}
+}
+
+
+character_event = {
+	id = troll.40
+	desc = EVTDESC_troll_40
+	picture = GFX_evt_folketro_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_troll_40
+		custom_tooltip = { text = EVTTROOLTIP_troll_40 }
+		hidden_tooltip = {
+		    random_list = { 
+			   20 = { add_artifact = ate_compass }
+			   20 = { add_artifact = ate_textbooks }
+			   20 = { add_artifact = ate_typewriter }
+			   20 = { add_artifact = ate_watch }
+			   20 = { add_artifact = ate_calculator }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = troll.41
+	desc = EVTDESC_troll_41
+	picture = GFX_evt_folketro_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_troll_41
+		piety=100
+		add_trait="zealous"
+		random_list = {
+		   25 = { add_trait="depressed" }
+		   75 = { }
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_troll_41
+		piety=-50
+		add_trait="cynical"
+		random_list = {
+		   25 = { add_trait="depressed" }
+		   75 = { }
+		}
+	}
+	
+	option = {
+		name = EVTOPTC_troll_41
+		secret_religion=lutheran
+	}
+}
+
+character_event = {
+	id = troll.42
+	desc = EVTDESC_troll_42
+	picture = GFX_evt_folketro_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_troll_42
+		random_list = {
+		   10 = { death = { death_reason = death_missing } }
+		   20 = { add_trait="maimed" }
+		   30 = { add_trait="wounded" }
+		   40 = { }
+		}
+	}
+}
+
+character_event = {
+	id = troll.43
+	desc = EVTDESC_troll_43
+	picture = GFX_evt_folketro_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_troll_43
+		piety=-25
+		random_list = {
+		  25 = { add_trait="cruel" }
+		  25 = { add_trait="greedy" }
+		  25 = { add_trait="cynical" }
+		  25 = { }
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_troll_43
+		piety=25
+		wealth=-10
+	}
+	
+	option = {
+		name = EVTOPTC_troll_43
+		piety=50
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			age = 5
+		}
+	}
+	
+	option = {
+		name = EVTOPTD_troll_43
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			dynasty = ROOT
+			age = 5
+			trait="bastard"
+		}
+		new_character = {
+		   set_father = ROOT
+		}
+	}
+}
+
+narrative_event = { 
+	id = troll.44
+	title = EVTTITLE_SKC_113
+	desc = EVTDESC_SKC_113
+	
+	picture = GFX_evt_folketro_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { #Brave movement
+		name = EVTOPTA_SKC_113
+		trigger = {
+		  NOT = {
+		    diplomacy > 14
+			trait="grey_eminence"
+			trait="charismatic_negotiator"
+			trait="master_seductress"
+			trait="master_seducer"
+			trait="socializer"
+		  }
+		}
+		prestige=20
+		random_list = {
+		   10 = { add_trait="brave" }
+		   20 = { add_trait="honest" }
+		   70 = { }
+		}
+		hidden_tooltip = {
+		   character_event = { id = troll.45 }
+		   random_list = {
+		   	  30 = { narrative_event = { id = troll.46 days = 3200 } } #Fail and sad life
+		      25 = { narrative_event = { id = troll.47 days = 3200 } } #Fail, but better life
+			  25 = { narrative_event = { id = troll.48 days = 3200 } } #Success, but sad life
+			  10 = { narrative_event = { id = troll.49 days = 3200 } } #Success and better life
+			  10 = { }
+		   }
+		}
+	}
+	
+	option = { #Diplomatic movement
+		name = EVTOPTE_SKC_113
+		trigger = {
+		  OR = {
+		    diplomacy > 12
+			trait="grey_eminence"
+			trait="charismatic_negotiator"
+			trait="master_seductress"
+			trait="master_seducer"
+			trait="socializer"
+		  }
+		}
+		prestige=20
+		hidden_tooltip = {
+		   character_event = { id = troll.45 }
+		   if = {
+		    limit = { NOT = { diplomacy > 15 trait = "socializer" trait = "master_seducer" trait = "master_seductress" } }
+		   random_list = {
+		   	  15 = { narrative_event = { id = troll.46 days = 3200 } } #Fail and sad life
+		      20 = { narrative_event = { id = troll.47 days = 3200 } } #Fail, but better life
+			  25 = { narrative_event = { id = troll.48 days = 3200 } } #Success, but sad life
+			  25 = { narrative_event = { id = troll.49 days = 3200 } } #Success and better life
+			  10 = { }
+		   }
+		   }
+		   if = {
+		    limit = { OR = { diplomacy > 15 trait = "socializer" trait = "master_seducer" trait = "master_seductress" } }
+		   random_list = {
+		   	  10 = { narrative_event = { id = troll.46 days = 3200 } } #Fail and sad life
+		      10 = { narrative_event = { id = troll.47 days = 3200 } } #Fail, but better life
+			  35 = { narrative_event = { id = troll.48 days = 3200 } } #Success, but sad life
+			  35 = { narrative_event = { id = troll.49 days = 3200 } } #Success and better life
+			  10 = { }
+		   }
+		   }
+		}
+	}
+	
+	option = { #Join to me bro
+		name = EVTOPTB_SKC_113
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = no
+			age = 17
+			trait = shy
+			trait = kind
+			trait = honest
+			trait = poet
+			attributes = {
+				martial = 8
+				diplomacy = 8
+				stewardship = 8
+				intrigue = 2
+				learning = 8
+			}
+		}
+		new_character = {
+		   add_friend = ROOT
+		} 
+	}
+	
+	option = { #Nothing doing
+		name = EVTOPTD_SKC_113
+		trigger = {
+		    NOT = { trait="kind" }
+		}
+		piety=-20
+		random_list = {
+		   30 = { add_trait="selfish" }
+		   20 = { add_trait="envious" }
+		   20 = { add_trait="cynical" }
+		   10 = { add_trait="cruel" }
+		   20 = { }
+		}
+	}
+}
+
+character_event = { 
+	id = troll.45
+	desc = EVTDESC_SKC_114
+	picture = GFX_evt_folketro_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_SKC_114
+		wealth=-15
+	}
+}
+
+narrative_event = { #Failure and sad life
+	id = troll.46
+	title = EVTTITLE_SKC_115
+	desc = EVTDESC_SKC_115
+	picture = GFX_evt_folketro_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_SKC_115
+		hidden_tooltip = {
+		    piety=-1
+		}
+	}
+}
+
+narrative_event = { #Failure, but better life
+	id = troll.47
+	title = EVTTITLE_SKC_115
+	desc = EVTDESC_SKC_116
+	picture = GFX_evt_folketro_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_SKC_116
+		prestige = -20
+		piety = 20
+	}
+}
+
+narrative_event = { #Success, but sad life
+	id = troll.48
+	title = EVTTITLE_SKC_115
+	desc = EVTDESC_SKC_117
+	picture = GFX_evt_folketro_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_SKC_115
+		hidden_tooltip = {
+		    piety=-1
+		}
+	}
+}
+
+narrative_event = { #Success and better life
+	id = troll.49
+	title = EVTTITLE_SKC_115
+	desc = EVTDESC_SKC_118
+	picture = GFX_evt_folketro_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_SKC_118
+		prestige = 20
+		piety = 20
+	}
+}
+
+narrative_event = { #Choice of St.Lucy
+	id = troll.50
+	title = EVTTITLE_lucys_day_1
+	desc = EVTDESC_lucys_day_1
+	picture = GFX_evt_st_lucy_folketro
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_lucys_day_1
+		narrative_event = { id = troll.51 }
+		hidden_tooltip = { add_character_modifier = { name = st_lucys_timer years = 1 hidden = yes } }
+	}
+	
+	option = {
+		name = EVTOPTB_lucys_day_1
+		random_courtier = {
+			limit = {
+				age > 8
+				age < 18
+				is_female = yes
+				is_married = no
+				has_children = no
+				is_inaccessible_trigger = no
+				ai = yes
+				religion = ROOT
+				dynasty = ROOT
+			}
+			piety=50
+			opinion = {
+			    modifier = opinion_disappointed
+			    who = FROM
+		    }
+		}
+		narrative_event = { id = troll.51 }
+		hidden_tooltip = { add_character_modifier = { name = st_lucys_timer years = 1 hidden = yes } }
+	}
+}
+
+narrative_event = { #Going around all buildings and singing
+	id = troll.51
+	title = EVTTITLE_lucys_day_2
+	desc = EVTDESC_lucys_day_2
+	picture = GFX_evt_st_lucy_folketro
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_lucys_day_2
+		piety=20
+		random_list = {
+		    25 = { 
+			   custom_tooltip = { text = troll_52_text_a }
+			   hidden_tooltip = {
+			       character_event = { id = troll.54 }
+			   }
+			}
+			25 = {
+			   custom_tooltip = { text = troll_52_text_b }
+			   hidden_tooltip = {
+			       character_event = { id = troll.55 }
+			   }
+			}
+			25 = {
+			   custom_tooltip = { text = troll_52_text_c }
+			   hidden_tooltip = {
+			       character_event = { id = troll.56 }
+			   }
+			}
+			25 = { 
+			   custom_tooltip = { text = troll_52_text_d }
+			   hidden_tooltip = {
+			       character_event = { id = troll.57 }
+			   }
+			}
+		}
+	}
+}
+
+narrative_event = { #Night Feast
+	id = troll.52
+	title = EVTTITLE_lucys_day_3
+	desc = EVTDESC_lucys_day_3
+	picture = GFX_evt_st_lucy_folketro
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_lucys_day_3
+		narrative_event = { id = troll.53 days = 1 }
+	}
+}
+
+narrative_event = { #Midnight: go to sleep
+	id = troll.53
+	title = EVTTITLE_lucys_day_4
+	desc = EVTDESC_lucys_day_4
+	picture = GFX_evt_st_lucy_folketro
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_lucys_day_4
+		prestige=25
+		piety=25
+		clr_character_flag = st_lucys_day
+		clr_character_flag = recent_minor_decision
+		clr_character_flag = do_not_disturb
+	}
+}
+
+character_event = {
+	id = troll.54
+	desc = EVTDESC_lucys_day_5
+	picture = GFX_evt_st_lucy_folketro
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_lucys_day_5
+		add_trait="musician"
+		narrative_event = { id = troll.52 }
+	}
+	
+	option = {
+		name = EVTOPTB_lucys_day_5
+		add_trait="poet"
+		narrative_event = { id = troll.52 days = 1 }
+	}
+	
+	option = {
+		name = EVTOPTC_lucys_day_5
+		prestige=50
+		narrative_event = { id = troll.52 days = 1 }
+	}
+}
+
+character_event = {
+	id = troll.55
+	desc = EVTDESC_lucys_day_6
+	picture = GFX_evt_st_lucy_folketro
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_lucys_day_6
+		prestige = 50
+		random_realm_lord = {
+			limit = {
+				is_adult = yes
+				is_incapable = no
+				is_inaccessible_trigger = no
+				ai = yes
+
+				NOR = {
+					is_lover = ROOT
+					is_friend = ROOT
+					is_child_of = ROOT
+				}
+			}
+			add_friend = ROOT
+		}
+		narrative_event = { id = troll.52 }
+	}
+}
+
+character_event = {
+	id = troll.56
+	desc = EVTDESC_lucys_day_7
+	picture = GFX_evt_st_lucy_folketro
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_lucys_day_7
+		if = {
+		   limit = { trait="pious" NOT = { trait="zealous" } }
+		   add_trait="zealous"
+		}
+		if = {
+		   limit = { trait="zealous" NOT = { trait="pious" } }
+		   add_trait="pious"
+		}
+		if = {
+		   limit = { trait="zealous" trait="pious" }
+		   piety=100
+		}
+		if = {
+		   limit = { NOT = { trait="zealous" trait="pious" } }
+		   add_trait="pious"
+		}
+		narrative_event = { id = troll.52 }
+	}
+}
+
+character_event = {
+	id = troll.57
+	desc = EVTDESC_lucys_day_8
+	picture = GFX_evt_st_lucy_folketro
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_lucys_day_8
+		piety=-50
+		random_list = {
+		  55 = { add_trait="greedy" }
+		  20 = { add_trait="cynical" }
+		  25 = { }
+		}
+		narrative_event = { id = troll.52 }
+	}
+	
+	option = {
+		name = EVTOPTB_lucys_day_8
+		piety=50
+		wealth=-15
+		random_list = {
+		  45 = { add_trait="charitable" }
+		  20 = { add_trait="kind" }
+		  35 = { }
+		}
+		narrative_event = { id = troll.52 }
 	}
 }

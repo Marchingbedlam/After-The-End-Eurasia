@@ -1008,48 +1008,51 @@ has_safe_secret_religion = {
 is_catholic_branch = {
 	OR = {
 		religion = catholic
+		religion = apparitionist
+		religion = constitutionalist
+		religion = marcelianist
 	}
 }
 
 is_catholic_true_branch = {
 	OR = {
 		true_religion = catholic
+		true_religion = apparitionist
+		true_religion = constitutionalist
+		true_religion = marcelianist
 	}
 }
 
 is_catholic_secret_branch = {
 	OR = {
 		secret_religion = catholic
+		secret_religion = apparitionist
+		secret_religion = constitutionalist
+		secret_religion = marcelianist
 	}
 }
 
 is_orthodox_branch = {
 	OR = {
 		religion = orthodox
-		religion = bogomilist
-		religion = iconoclast
-		religion = monothelite
-		religion = paulician
+		religion = oldcalendarist
+		religion = antipalamite
 	}
 }
 
 is_orthodox_true_branch = {
 	OR = {
 		true_religion = orthodox
-		true_religion = bogomilist
-		true_religion = iconoclast
-		true_religion = monothelite
-		true_religion = paulician
+		true_religion = oldcalendarist
+		true_religion = antipalamite
 	}
 }
 
 is_orthodox_secret_branch = {
 	OR = {
 		secret_religion = orthodox
-		secret_religion = bogomilist
-		secret_religion = iconoclast
-		secret_religion = monothelite
-		secret_religion = paulician
+		secret_religion = oldcalendarist
+		secret_religion = antipalamite
 	}
 }
 
@@ -1237,8 +1240,12 @@ is_unreformed_pagan_trigger = {
 religion_has_excommunication = {
 	OR = {
 		religion = catholic
-		religion = fraticelli
+		religion = apparitionist
+		religion = constitutionalist
+		religion = marcelianist
 		religion = orthodox
+		religion = oldcalendarist
+		religion = antipalamite
 		religion = miaphysite
 		religion = monophysite
 		religion = monothelite
@@ -1278,6 +1285,10 @@ is_antipope = {
 is_cardinal = {
 	OR = {
 		has_minor_title = title_cardinal
-		has_minor_title = title_fraticelli_cardinal
+		has_minor_title = title_convocation_bishop
+		has_minor_title = title_minister
+		has_minor_title = title_allamah
+		has_minor_title = title_archierus
+		has_minor_title = title_proletcult_member
 	}
 }

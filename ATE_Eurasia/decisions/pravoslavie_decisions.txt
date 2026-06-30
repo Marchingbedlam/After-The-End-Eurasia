@@ -101,6 +101,35 @@ decisions = {
 			}
 		}
 	}	
+	change_pravoslavie_branch = {
+		ai = no
+		is_high_prio = yes
+
+		potential = {
+			religion = pravoslavie
+			is_playable = yes
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+
+		allow = {
+			religion = pravoslavie
+			is_playable = yes
+			piety=50
+		}
+
+		effect = {
+		    piety=-50
+			hidden_tooltip = {
+				character_event = { id = pravoslavie.22 }				
+			}
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+	}
 	change_dvoeverie_branch = {
 		ai = no
 		is_high_prio = yes
@@ -160,7 +189,7 @@ decisions = {
 					}
 				}
 			}
-			NOT = { has_character_flag = dvoeverie_patriarchate_formed }
+			NOT = { has_global_flag = dvoeverie_patriarchate_formed }
 		}
 		
 		effect = {

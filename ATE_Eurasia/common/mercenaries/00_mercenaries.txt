@@ -71,6 +71,30 @@ d_order_of_the_star = {
 	light_cavalry = 700
 	knights = 750
 }
+d_order_of_saint_george_composition = {
+	levy_size = 1
+	archers = 400
+	light_cavalry = 300
+	knights = 800
+}
+d_order_of_polar_star_composition = {
+	levy_size = 1
+	light_infantry = 350
+	heavy_infantry = 200
+	light_cavalry = 700
+}
+d_order_of_saint_olav_composition = {
+	levy_size = 1
+	heavy_infantry = 600
+	light_cavalry = 200
+	knights = 400
+}
+d_order_of_elephant_composition = {
+	levy_size = 1
+	heavy_infantry = 300
+	light_cavalry = 600
+	knights = 300
+}
 ###VASSAL MERCENARIES
 d_lipka_guard_composition = {
 	levy_size = 1

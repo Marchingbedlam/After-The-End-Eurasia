@@ -53,6 +53,7 @@ feudal_governments = {
 					religion = constitutionalist
 					religion = leveller
 					religion = genesian
+					has_religion_feature = religion_feature_communal
 				}
 			}
 			NAND = { #Is not a Tibetan Buddhist
@@ -1250,6 +1251,7 @@ feudal_governments = {
 						religion = neotondrakian
 						religion = leveller
 						religion = genesian
+						has_religion_feature = religion_feature_communal
 					}
 					#higher_tier_than = BARON
 				}

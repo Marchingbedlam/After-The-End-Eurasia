@@ -447,54 +447,6 @@ decisions = {
 			}
 		}
 	}
-		
-	practice_lectio_divina = {
-		only_playable = no
-		ai_check_interval = 36
-		potential = {
-			is_playable = yes
-			has_dlc = "Sons of Abraham"
-			NOT = {
-				has_alternate_start_parameter = { key = religion_names value = random }
-			}
-			OR = {
-			   religion = catholic
-			   religion = marcelianist
-			   religion = apparitionist
-			   religion = penitente
-			   religion = mementomori
-			   religion = constitutionalist
-			   religion = mariavite
-			   religion = oasite
-			   religion = coronite
-			}
-		}
-		allow = {
-		   	OR = {
-			   religion = catholic
-			   religion = marcelianist
-			   religion = apparitionist
-			   religion = penitente
-			   religion = mementomori
-			   religion = constitutionalist
-			   religion = mariavite
-			   religion = oasite
-			   religion = coronite
-			}
-			NOT = { has_character_modifier = practiced_lectio_divina }
-			custom_tooltip = {
-				text = is_not_busy_trigger_tooltip
-				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
-			}
-		}
-		effect = {
-			narrative_event = { id = christian.1 }
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
 	
 	aid_harvest = {
 		only_playable = yes
