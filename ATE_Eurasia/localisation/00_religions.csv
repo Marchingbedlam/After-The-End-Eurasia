@@ -114,6 +114,9 @@ deobandi;Deobandi;;;;;;;;;;;;;x
 deobandi_DESC;Deobandi are a sect of the Hanafi School from the Indian Subcontinent which strongly believes in the doctrine of taqlid in lull of mujtahid. Because of this, study of scripture is highly valued among the Deobandi and learning is placed in equal importance to mysticism and revelation, since these are believed to have long since passed and only given to the prophets. Believing through careful examination of the word, one can dispell falsehood and blind faith. While they typically eschew traditional sufi practices of groups like the Barlevis they still highly regard the chanting of the names of God, as an auspicious and pious practice.;;;;;;;;;;;;;x
 temple_baron_deobandi;Mullah;;;;;;;;;;;;;x
 nondescript_muslim;Muslim;;;;;;;;;;;x
+religion_feature_muslim_syncretism;Muslim Syncretism;;;;;;;;;;;;;x
+religion_feature_muslim_syncretism_desc;For centuries, Muhammad's successors fought with undiminished zeal for their faith with fire and sword, perhaps this is a sign that they too hold the truth and that we should adopt some of their beliefs from them.;;;;;;;;;;;;;x
+tooltip_religion_muslim_syncretism;The pantheon of gods will be enriched, and some muslim customs will be available for followers of reformed religion.;;;;;;;;;;;;;x
 ####Jewish####
 jewish_group;Jewish;;;;;;;;;;;;;x
 haredi;Haredi;;;;;;;;;;;;;x
@@ -123,6 +126,9 @@ haskalah_DESC;The Haskalah (lit. Enlightenment) Movement first emerged before th
 haskalah_FEATURES;§Y*§! Homosexual Haskalah rulers are allowed to marry other homosexual characters.;;;;;;;;;;;;;x
 ivri;Ichud Ha'Ivrim;;;;;;;;;;;;;x
 ivri_DESC;Long ago the Jews of Israel were cast across the world by a great exile, greater even then the one described in the Torah. But it was said in the final throes of humanity before the event, the long exile was ended and all of Jews across their scattered communities and traditions returned to Israel to rebuild what was once lost. These are the origins for the people who now call themselves Ha'Ivrim. Standing in a precarious situation once more with the constant turmoil of squabbling warlords, they choose to rally behind the great tradition of debate and the persistent spirit of all Jews to face the challenges that have laid before them, with both the knowledge of Torah and of the outside world to guide them. No matter which rites or traditions they may follow, they are ultimately at the end striving to live by God's Commandments. A united people in faith to God Almighty, Kol Israel Arevim Ze Ba-Ze.;;;;;;;;;;;;;x
+religion_feature_jewish_syncretism;Jewish Syncretism;;;;;;;;;;;;;x
+religion_feature_jewish_syncretism_desc;For centuries, the Jews were a happy nation under the protection of their God, which is a sign that he too should be honored in our pantheon.;;;;;;;;;;;;;x
+tooltip_religion_feature_jewish_syncretism;The pantheon of gods will be enriched, and some jewish customs will be available for followers of reformed religions.;;;;;;;;;;;;;x
 ####Vernacular####
 vernacular;Vernacular;;;;;;;;;;;;;x
 sun_king_cultist;Soleil Royal;;;;;;;;;;;;;x
@@ -732,6 +738,9 @@ PREFERRED_PATRIARCH;Preferred Patriarkh;;;;;;;;;;;;;x
 title_archierus;Archierus;;;;;;;;;;;;;x
 expected_next_title_archierus;Expected Next Archierus;;;;;;;;;;;;;x
 best_candidate_title_archierus;Best Archierus Candidate;;;;;;;;;;;;;x
+title_archierus_dvoeverie;Archierus;;;;;;;;;;;;;x
+expected_next_title_archierus_dvoeverie;Expected Next Archierus;;;;;;;;;;;;;x
+best_candidate_title_archierus_dvoeverie;Best Archierus Candidate;;;;;;;;;;;;;x
 THE_HOLY_SYNOD;The Holy Synod;;;;;;;;;;;;;x
 GOD_OUR_LADY;Our Holy Lady the Virgin Mary;;;;;;;;;;;;;x
 BISHOP_SUPERIOR;Bishop-Superior;;;;;;;;;;;;;x
@@ -783,6 +792,7 @@ GOD_PESTA;Pesta;;;;;;;;;;;;;x
 FADER;Fader;;;;;;;;;;;;;x
 WILD_HUNT;Wild Hunt;;;;;;;;;;;;;x
 THE_HIDDEN_FOLK;The Hidden Folk;;;;;;;;;;;;;x
+GOD_THOR;Tor Med Hammeren;;;;;;;;;;;;;x
 ####Religion Flavor - Ruist####
 GOD_TIAN;Tian;;;;;;;;;;;;;x
 GOD_YUDI;Yudi;;;;;;;;;;;;;x
@@ -1043,6 +1053,7 @@ KONSTANTINOS;Saint Konstantinos;;;;;;;;;;;;;x
 SAINT_POSEIDON;Saint Poseidon;;;;;;;;;;;;;x
 SAINT_DEMETHER;Saint Demether;;;;;;;;;;;;;x
 SAINT_PROMETHEUS;Saint Prometheus;;;;;;;;;;;;;x
+SAINT_HERMES;Saint Hermes Trismegistus;;;;;;;;;;;;;x
 SAINT_CICERO;Saint Cicero;;;;;;;;;;;;;x
 SAINT_ARISTOLE;Saint Aristole;;;;;;;;;;;;;x
 ADIS;Adis;;;;;;;;;;;;;x

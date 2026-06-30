@@ -963,7 +963,7 @@
 	trait=legendary
 	disallow_random_traits=yes
 	1550.1.1={birth=yes}
-	1700.1.1={death=yes}
+	1665.1.1={death=yes}
 }
 1713056={
 	name="Carlos"
@@ -980,7 +980,7 @@
 	trait=legendary
 	disallow_random_traits=yes
 	1661.1.1={birth=yes}
-	1710.1.1={death=yes}
+	1700.1.1={death=yes}
 }
 1713057={
 	name="Felipe"
@@ -994,12 +994,13 @@
 	learning=8
 	occluded=yes
 	trait=legendary
+	father=1804254
 	disallow_random_traits=yes
-	1661.1.1={birth=yes}
-	1800.1.1={death=yes}
+	1683.1.1={birth=yes}
+	1746.1.1={death=yes}
 }
-1713058={
-	name="Fernando"
+1713097={
+	name="Carlos"
 	dynasty=2018209
 	culture=castilian
 	religion=catholic
@@ -1012,8 +1013,25 @@
 	father=1713057
 	trait=legendary
 	disallow_random_traits=yes
+	1730.1.1={birth=yes}
+	1808.1.1={death=yes}
+}
+1713058={
+	name="Fernando"
+	dynasty=2018209
+	culture=castilian
+	religion=catholic
+	martial=5
+	diplomacy=5
+	stewardship=8
+	intrigue=8
+	learning=8
+	occluded=yes
+	father=1713097
+	trait=legendary
+	disallow_random_traits=yes
 	1784.1.1={birth=yes}
-	1850.1.1={death=yes}
+	1833.1.1={death=yes}
 }
 1713059={
 	name="Joseph"
@@ -1050,8 +1068,9 @@
 	1860.1.1={death=yes}
 }
 1713061={
-	name="Restauración"
-	dynasty=2018211
+	name="Isabel"
+	female=yes
+	dynasty=2018209
 	culture=castilian
 	religion=catholic
 	martial=5
@@ -1062,8 +1081,33 @@
 	occluded=yes
 	trait=legendary
 	disallow_random_traits=yes
-	1870.1.1={birth=yes}
-	1930.1.1={death=yes}
+	father=1713058
+	1830.1.1={birth=yes}
+	1868.1.1={death=yes}
+}
+1713098={
+	name="Alfonso"
+	dynasty=2018209
+	culture=castilian
+	religion=catholic
+	occluded=yes
+	trait=legendary
+	disallow_random_traits=yes
+	mother=1713061
+	1857.1.1={birth=yes}
+	1885.1.1={death=yes}
+}
+1713099={
+	name="Alfonso"
+	dynasty=2018209
+	culture=castilian
+	religion=catholic
+	occluded=yes
+	trait=legendary
+	disallow_random_traits=yes
+	father=1713098
+	1885.1.1={birth=yes}
+	1941.1.1={death=yes}
 }
 1713062={
 	name="República"
@@ -1079,23 +1123,33 @@
 	occluded=yes
 	trait=legendary
 	disallow_random_traits=yes
+	father=1713060
 	1930.1.1={birth=yes}
 	1940.1.1={death=yes}
 }
-1713063={
-	name="Transición"
-	dynasty=2018211
+1713100={
+	name="Regencia"
+	dynasty=2018210
+	female=yes
 	culture=castilian
 	religion=catholic
-	martial=5
-	diplomacy=5
-	stewardship=8
-	intrigue=8
-	learning=8
 	occluded=yes
 	trait=legendary
 	disallow_random_traits=yes
-	1970.1.1={birth=yes}
+	father=1713062
+	1936.1.1={birth=yes}
+	1970.1.1={death=yes}
+}
+1713063={
+	name="Juan Carlos"
+	dynasty=2018209
+	culture=castilian
+	religion=catholic
+	occluded=yes
+	trait=legendary
+	disallow_random_traits=yes
+	father=1713099
+	1938.1.1={birth=yes}
 	1990.1.1={death=yes}
 }
 1713064={

@@ -1629,7 +1629,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_go_to_glorian_pilgrimage"
-		textureFile = "gfx\\interface\\decision_icon_christian_pilgrimage.dds"
+		textureFile = "gfx\\interface\\decision_icon_glorian_pilgrimage.dds"
 	}
 	
 	spriteType = {
@@ -1654,11 +1654,46 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_change_become_solarque"
-		textureFile = "gfx\\interface\\become_solarque.dds"
+		textureFile = "gfx\\interface\\decision_icon_become_solarque.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_celebrate_eleusinian_mysteries"
 		textureFile = "gfx\\interface\\decision_icon_invite_holy_ascetic.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_celebrate_eleusinian_mysteries"
+		textureFile = "gfx\\interface\\decision_icon_invite_holy_ascetic.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_go_to_jacobin_pilgrimage"
+		texturefile = "gfx\\interface\\switch_jacobin.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_change_gallican_branch"
+		texturefile = "gfx\\interface\\decision_icon_change_gallican_branch.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_go_to_soleil_pilgrimage"
+		texturefile = "gfx\\interface\\decision_icon_skc_pilgrimage.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_go_to_folketro_pilgrimage"
+		texturefile = "gfx\\interface\\switch_folketro.dds"
+	}
+
+	spriteType = {
+		name = "GFX_choose_fornsed_branch"
+		texturefile = "gfx\\interface\\switch_folketro.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_celebrate_st_lucy_day"
+		texturefile = "gfx\\interface\\decision_icon_st_lucy_day.dds"
 	}
 }

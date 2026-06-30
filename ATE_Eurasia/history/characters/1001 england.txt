@@ -1633,7 +1633,7 @@
 	2655.1.1={birth=yes}
 	2666.4.29={
 	      death = {
-		   death_reason=death_poor_health
+		   death_reason=death_health
 		}
 	}
 }
@@ -1648,7 +1648,7 @@
 	2657.1.1={birth=yes}
 	2666.5.6={
 	    death = {
-		   death_reason=death_poor_health
+		   death_reason=death_health
 		}
 	}
 }
@@ -1872,7 +1872,7 @@
 	565.1.1={birth=yes}
 	592.7.10={
 	    death={
-		   death_reason=death_poor_health
+		   death_reason=death_health
 		}
 	}
 }
@@ -3023,7 +3023,7 @@
 	2239.2.16={birth=yes}
 	2265.8.12={
 	   death={
-	      death_reason=death_poor_health
+	      death_reason=death_health
 	   }
 	}
 }
@@ -3080,7 +3080,7 @@
 	2278.1.1={birth=yes}
 	2320.5.20={
 	   death={
-	      death_reason=death_poor_health
+	      death_reason=death_health
 	   }
 	}
 }
@@ -3617,3 +3617,11 @@
 	2680.1.1={death=yes}
 }
 #don't use 1001224 its used already#
+
+1001225={
+	name="Thomas"
+	culture=southerner
+	religion=glorian
+	2610.6.4={birth=yes}
+	2680.1.1={death=yes}
+}

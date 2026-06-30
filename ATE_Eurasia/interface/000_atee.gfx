@@ -357,6 +357,55 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
+		name = "GFX_trait_st_lucy"
+		texturefile = "gfx/traits/st_lucy.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_st_olav"
+		texturefile = "gfx/traits/st_olav.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_st_peter"
+		texturefile = "gfx/traits/st_peter.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_nysed_elves"
+		texturefile = "gfx/traits/nysed_elves.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_nysed_fiddler"
+		texturefile = "gfx/traits/nysed_fiddler.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_nysed_thor"
+		texturefile = "gfx/traits/nysed_thor.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_nysed_wild_hunt"
+		texturefile = "gfx/traits/nysed_wild_hunt.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
 		name = "GFX_trait_latin_rite"
 		texturefile = "gfx/traits/latin_rite.dds"
 		noOfFrames = 1
@@ -1046,6 +1095,63 @@ spriteTypes = {
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
+	spriteType = {
+		name = "GFX_trait_pravoslavie_holy_mary"
+		texturefile = "gfx/traits/dvoeverie_holy_mary.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_pravoslavie_st_nicholas"
+		texturefile = "gfx/traits/dvoeverie_st_nicholas.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_pravoslavie_st_vladimir"
+		texturefile = "gfx/traits/pravoslavie_st_vladimir.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_pravoslavie_st_tichon_of_moscow"
+		texturefile = "gfx/traits/pravoslavie_st_tichon_of_moscow.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_pravoslavie_st_dmitriy"
+		texturefile = "gfx/traits/pravoslavie_st_dmitriy.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_pravoslavie_st_seraphim_of_sarov"
+		texturefile = "gfx/traits/pravoslavie_st_seraphim_of_sarov.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_pravoslavie_st_xenia_of_st_petersburg"
+		texturefile = "gfx/traits/pravoslavie_st_xenia_of_st_petersburg.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_pravoslavie_st_sergius_of_radonezh"
+		texturefile = "gfx/traits/pravoslavie_st_sergius_of_radonezh.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
 	
 	#Ambitions
 	spriteType = {

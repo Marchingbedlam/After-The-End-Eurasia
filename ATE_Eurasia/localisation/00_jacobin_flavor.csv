@@ -55,9 +55,9 @@ EVTDESC_jacobin_13;Your various actions and misdeeds have shown you aren't worth
 EVTOPTA_jacobin_13;Curses!;;;;;;;;;;;;;x
 EVTDESC_jacobin_14;Through comittment and self-questioning, you have rejected [ROOT.GetEvilGodName] and its sins. You are no longer a tyrant.;;;;;;;;;;;;;x
 EVTOPTA_jacobin_14;I knew Marianne was with me!;;;;;;;;;;;;;x
-EVTDESC_jacobin_15;I shall go to pilgrimage in one of the holy places of Jacobin Faith.;;;;;;;;;;;;;x
+EVTDESC_jacobin_15;I shall go to Pelerinage Citoyen in one of the holy places of Jacobin Faith.;;;;;;;;;;;;;x
 EVTOPTA_jacobin_15;I will start making travel plans.;;;;;;;;;;;;;x
-EVTDESC_jacobin_16;There are a number of diffrent holy places that you could visit on your pilgrimage. All of them are considered as sacred by followers of jacobin faith - two of them: Paris and Marseille are considered to be most sacred among them, but other sites are also believed to be sacred.;;;;;;;;;;;;;x
+EVTDESC_jacobin_16;There are a number of diffrent holy places that you could visit on your Pelerinage Citoyen. All of them are considered as sacred by followers of jacobin faith - two of them: Paris and Marseille are considered to be most sacred among them, but other sites are also believed to be sacred.;;;;;;;;;;;;;x
 EVTOPTA_jacobin_16;I shall visit two most important french cities - Paris or Marseille;;;;;;;;;;;;;x
 EVTOPTB_jacobin_16;I shall visit Paris;;;;;;;;;;;;;x
 EVTOPTC_jacobin_16;I shall visit Marseille;;;;;;;;;;;;;x
@@ -67,11 +67,11 @@ EVTDESC_jacobin_18;Austerlitz, London, and Colombey les Deux Église are also hol
 EVTOPTA_jacobin_18;I shall visit Austerlitz - the place of the Emperor's greatest triumph;;;;;;;;;;;;;x
 EVTOPTB_jacobin_18;I shall visit London - the place of first tyrant execution;;;;;;;;;;;;;x
 EVTOPTC_jacobin_18;I shall visit Colombey les Deux Église - the hometown of the General;;;;;;;;;;;;;x 
-EVTDESC_jacobin_19;My things are packed, everything is in order. You say goodbye to your estate and go on an unforgotten pilgrimage to Paris – the place where the Bastille was destroyed and where the venerable Republic was founded...;;;;;;;;;;;;;;x
-EVTDESC_jacobin_20;My things are packed, everything is in order. You say goodbye to your estate and go on an unforgotten pilgrimage to Marseille – the second place where the Republic and the Revolution flourished. There, according to legend, the miraculous Marianne was born.;;;;;;;;;;;;;x
-EVTDESC_jacobin_21;My things are packed, everything is in order. You say goodbye to your estate and go on an unforgotten pilgrimage to Austerlitz – an inconspicuous town in Moravia, where the Emperor miraculously defeated the forces of perfidious tyrants.;;;;;;;;;;;;;x
-EVTDESC_jacobin_22;My things are packed, everything is in order. You say goodbye to your estate and go on an unforgotten pilgrimage to Colombey les Deux Église—the hometown of the General, who later saved the Republic from the forces of perfidy.;;;;;;;;;;;;;x
-EVTDESC_jacobin_23;My things are packed, everything is in order. You say goodbye to your estate and go to an unforgotten pilgrimage to London - the city where first tyrant king was behanded.;;;;;;;;;;;;;x
+EVTDESC_jacobin_19;My things are packed, everything is in order. You say goodbye to your estate and go on an unforgotten Pelerinage Citoyen to Paris – the place where the Bastille was destroyed and where the venerable Republic was founded...;;;;;;;;;;;;;;x
+EVTDESC_jacobin_20;My things are packed, everything is in order. You say goodbye to your estate and go on an unforgotten Pelerinage Citoyen to Marseille – the second place where the Republic and the Revolution flourished. There, according to legend, the miraculous Marianne was born.;;;;;;;;;;;;;x
+EVTDESC_jacobin_21;My things are packed, everything is in order. You say goodbye to your estate and go on an unforgotten Pelerinage Citoyen to Austerlitz – an inconspicuous town in Moravia, where the Emperor miraculously defeated the forces of perfidious tyrants.;;;;;;;;;;;;;x
+EVTDESC_jacobin_22;My things are packed, everything is in order. You say goodbye to your estate and go on an unforgotten Pelerinage Citoyen to Colombey les Deux Église—the hometown of the General, who later saved the Republic from the forces of perfidy.;;;;;;;;;;;;;x
+EVTDESC_jacobin_23;My things are packed, everything is in order. You say goodbye to your estate and go to an unforgotten Pelerinage Citoyen to London - the city where first tyrant king was behanded.;;;;;;;;;;;;;x
 EVTOPTA_jacobin_19;Time to go!;;;;;;;;;;;;;x
 EVTNAME_jacobin_24;Paris;;;;;;;;;;;;;x
 EVTDESC_jacobin_24;You reach Paris—the holy city. It was here, many years ago, that Marianne led the furious people of Paris against the perfidious king. It was here that the most important events in the history of the venerable Republic took place—here La Declaration was signed and here that many of Marianne's followers shed blood for the Republic. You pass the ruins of this venerable city—the ruins of the Eiffel Tower, built long before the Event, during the heyday of the Republic—past ancient temples and streets. Soon you reach the Panthéon—the most important place in Paris. You enter and feel the great Frenchmen buried here over the centuries gazing down upon you. You fall to your knees and listen intently to what Marianne expects of you...;;;;;;;;;;;;;x
@@ -104,8 +104,8 @@ EVTDESC_jacobin_1;Each Jacobin follower may choose Marianne, the Emperor, or the
 EVTOPTA_jacobin_1;I will focus of Marianne, mother of France;;;;;;;;;;;;;x
 EVTOPTB_jacobin_1;I will focus of the Emperor, great conqueror of Europe;;;;;;;;;;;;;x
 EVTOPTC_jacobin_1;I will focus of the General, savior of fatherland;;;;;;;;;;;;;x
-go_to_jacobin_pilgrimage;Go to pilgrimage;;;;;;;;;;;;;x
-go_to_jacobin_pilgrimage_desc;Go to pilgrimage;;;;;;;;;;;;;x
+go_to_jacobin_pilgrimage;Go to Pelerinage Citoyen;;;;;;;;;;;;;x
+go_to_jacobin_pilgrimage_desc;Go to Pelerinage Citoyen;;;;;;;;;;;;;x
 nick_the_jacobin_general;Le Général;;;;;;;;;;;;;x
 nick_the_jacobin_emperor;L'Empereur;;;;;;;;;;;;;x
 jacobin_government;Republican Bureaucracy;;;;;;;;;;;x
@@ -148,3 +148,58 @@ jacobin_nun;Marianniste;;;;;;;;;x
 jacobin_nun_desc;This character is Marianniste - a woman dedicated to imitating Marianne and following the example of a virtuous revolutionary virgin who helps in preparing Maisons, teaching young people and performing other charitable functions related to helping the homeless.;;;;;;;;;x
 order_to_take_jacobin_vows;Order to became Marianniste;;;;;;;;;x
 order_to_take_jacobin_vows_desc;The Mariannistes are a respected group of women in the Jacobin religion, and perhaps this woman is predestined to join them and renounce married life to help in the temple, teach the youth, and help the poor.;;;;;;;;;x
+EVTDESC_jacobin.30;Walking past a village, you see a large group of peasants in the distance, cheerfully singing the ballad of the cunning Francois, who transformed from a wretch into a detective. This intriguing song stops you for a moment, and those in the distance hear you and call out to you to come over.;;;;;;;;;x
+EVTOPTA_jacobin_30;Come to them;;;;;;;;;x
+EVTOPTB_jacobin_30;Ignore them and walk away;;;;;;;;;x
+EVTTITLE_jacobin_31;Vautrin alias Vidocq;;;;;;;;;x
+EVTDESC_jacobin_31;You approach and see the villagers' brightly smiling faces. You sit down next to them, they offer you wine, and they begin to tell you a song about Vautrin, also known as Vidocq, who before the Event was an eternal scoundrel and vagabond. However, enlightened by Marianne, he fell in love with her and fought for her along with other admirers on the fields of glory against the perfidious tyrants who invaded France. He then founded the first detective agency in the world, revolutionizing the art of catching bandits and giving them what they deserve. As the villagers finish their song, you thank them, promise to pray to Marianne for them, and bid them farewell.;;;;;;;;;x
+EVTOPTA_jacobin_31;Nice story;;;;;;;;;x
+EVTDESC_jacobin_32;You approach and see the faces of the villagers more clearly. As you get closer, one of them, the drunkest one, throws a stone at you. The rest, encouraged, soon do the same, and you run away.;;;;;;;;;x
+EVTOPTA_jacobin_32;Drunken rabble;;;;;;;;;x
+EVTDESC_jacobin_33;Walking along the road, you enter the city. As you walk, one of the boys accosts you, inviting you to watch an execution that's about to take place. Without waiting for your opinion, the guy grabs you and leads you to the spot, as if you were the one about to be executed. After a moment, you arrive...;;;;;;;;;x
+EVTOPTA_jacobin_33;I don't know what I should say...;;;;;;;;;x
+EVTDESC_jacobin_34_young killer;A young man is being dragged to the gallows. The executioner's pronouncement indicates that he has been convicted of three murders. The crowd cheers widely, expressing both joy at his execution and hatred for him. A local official, who at first glance looks corrupt, watches from afar. The condemned man looks at him, then at the crowd, then at you, and he looks absolutely remorseless.;;;;;;;;;x
+EVTDESC_jacobin_34_christian_priest;A middle-aged man is dragged to the gallows. The executioner's pronouncement indicates that he has been convicted of preaching superstition, as Christianity is known in these parts. The crowd cheers widely, expressing both joy at his execution and hatred for him. A local official, who at first glance appears corrupt, watches from afar. The condemned man makes the sign of the cross and goes to receive the laurels of martyrdom.;;;;;;;;;x
+EVTDESC_jacobin_34_thief;A middle-aged man is dragged to the gallows. The executioner's pronouncement indicates that he has been convicted of grand larceny and robbery. The crowd cheers widely, expressing both joy at his execution and hatred for him. A local official, who at first glance appears corrupt, watches from afar. The condemned man spits on the guillotine and says something to the executioner, preparing for his end.;;;;;;;;;x
+EVTDESC_jacobin_34_scamer;A middle-aged man is dragged to the gallows. The executioner's pronouncement indicates that he has been convicted of major financial fraud and swindles. The crowd cheers widely, expressing both joy at his execution and hatred for him. A local official, who at first glance appears corrupt, watches from afar. The condemned man says nothing, awaiting his end.;;;;;;;;;x
+EVTDESC_jacobin_34_lady;A young woman is being dragged to the gallows, and the executioner's pronouncement indicates that he has been convicted of treason. The crowd is generally silent, but some behave as if they were at a theater rather than an execution. A local official, who at first glance appears corrupt, watches the spectacle from afar. The condemned woman weeps, professes her innocence, and begs for mercy, as if in disbelief that she will day today.;;;;;;;;;x
+EVTDESC_jacobin_34_men;A young man is being dragged to the gallows, and the executioner's pronouncement indicates that he has been convicted of treason. The crowd is generally silent, but some behave as if they were at a theater rather than an execution. A local official, who at first glance appears corrupt, watches the spectacle from afar. The condemned man weeps, professes his innocence, and begs for mercy, as if in disbelief that he will die today.;;;;;;;;;x
+EVTOPTA_jacobin_34;The judge's will is a holy will;;;;;;;;;x
+EVTOPTB_jacobin_34;Bribe a local official to grant a last-minute pardon;;;;;;;;;x
+pardoned_young_killer_text;A pardoned murderer joins your court.;;;;;;;;;x
+pardoned_thief_text;A pardoned thief joins your court.;;;;;;;;;x
+pardoned_scamer_text;A pardoned "non-standard businessman" joins your court.;;;;;;;;;x
+pardoned_lady_text;A pardoned young woman joins your court.;;;;;;;;;x
+pardoned_lady_text;A pardoned young man joins your court.;;;;;;;;;x
+EVTDESC_jacobin_35;On the way, you pass a troupe of singers playing ancient songs for the travelers. You listen as one of the pilgrims, singing an ancient song about the Emperor, who defended France in many wars for centuries, who conquered Egypt and Moscow before the perfidious forces of Albion and Russia defeated and killed him during his glorious battle at Waterloo, and whom the angels of Marianne took to their homes after his martyrdom. When the musicians finish, the pilgrims cheer.;;;;;;;;;x
+EVTOPTA_jacobin_35;This is a truly pious and praiseworthy song;;;;;;;;;x
+EVTOPTB_jacobin_35;This song is stupid, war and conquests aren't glorious;;;;;;;;;x
+EVTDESC_jacobin_48;Along the way, you witness a debate between two pilgrims, arguing for taking inspiration from a figure other than the one you draw inspiration from. While choosing such a figure is crucial in a Jacobin follower's life, as it is irrevocable and defines the rest of their life, there are sometimes instances when it's possible to change the figure one venerates.;;;;;;;;;x
+EVTOPTA_jacobin_48;The figure from which I draw inspiration is worthy of my loyalty;;;;;;;;;x
+EVTOPTB_jacobin_48;Maybe they are right...;;;;;;;;;x
+EVTDESC_jacobin_50;As you walk through the forest, you hear people screaming. You sense they are close and in danger.;;;;;;;;;x
+EVTOPTA_jacobin_50;Have your sword at the ready and go help them;;;;;;;;;x
+EVTOPTB_jacobin_50;They'll be fine, move on;;;;;;;;;x
+EVTTITLE_jacobin_51;Clash with bandits;;;;;;;;;x
+EVTDESC_jacobin_51;You arrive and see masked bandits attacking people, with trash cans scattered everywhere around the wagon. You join the fray and fight shoulder to shoulder with the hikers against the outlaws. The fight is short but deadly. Out of the corner of your eye, you see the deaths of two hikers and one bandit, and you fight like a madman yourself. A moment later, the bandits flee, and you look at your spontaneous allies, and they look at you: a few richly dressed men and a woman. Suddenly, you feel dizzy, you try to lean against the wagon, but you fall, losing touch with reality...;;;;;;;;;x
+EVTOPTA_jacobin_51;Oh, beloved Marianne...;;;;;;;;;x
+EVTTITLE_jacobin_52;Awakening and the Proposal;;;;;;;;;x
+EVTDESC_jacobin_52_A;You wake up to find a medic standing over you. He explains that the people you defended are the local elite, and because of their wealth, they could afford to hire a medic like him. After a moment, he tells you that one of these wealthy men, a widower, has something to tell you. You ask the medic to bring him to you. A moment later, the man arrives. He's quite handsome and your age. He tells you that when he saw you in combat, he fell in love with you, seeing you as a brave and beautiful woman. After a moment, he falls to his knees, pulls out a ring, and, to your surprise, proposes to you.;;;;;;;;;x
+EVTDESC_jacobin_52_B;You wake up to find a medic standing over you. He explains that the people you defended are the local elite, and because of their wealth, they could afford to hire a medic like him. After a moment, he tells you that one of these wealthy men, a widower, has something to tell you. You ask the medic to bring him to you. A moment later, the man arrives. He's quite handsome and your age. He tells you that when he saw you in combat, he fell in love with you, seeing you as a brave and beautiful woman. After a moment, he falls to his knees, pulls out a ring, and, to your surprise, proposes to you. But you know you'll have to reject this proposal.;;;;;;;;;x
+EVTDESC_jacobin_52_D;You wake up to find a medic standing over you. He explains that the people you defended are the local elite, and because of their wealth, they could afford to hire a medic like him. After a moment, he tells you that one of these wealthy men, a widow, has something to tell you. You ask the medic to bring him to you. A moment later, the woman arrives. She's quite pretty and your age. He tells you that when he saw you in battle, she fell in love with you, seeing you as an undoubtedly brave man. After a moment, he drops to his knees, pulls out a ring, and, to your surprise, proposes to you.;;;;;;;;;x
+EVTDESC_jacobin_52_D;You wake up to find a medic standing over you. He explains that the people you defended are the local elite, and because of their wealth, they could afford to hire a medic like him. After a moment, he tells you that one of these wealthy men, a widow, has something to tell you. You ask the medic to bring him to you. A moment later, the woman arrives. She's quite pretty and your age. He tells you that when he saw you in battle, she fell in love with you, seeing you as an undoubtedly brave man. After a moment, he drops to his knees, pulls out a ring, and, to your surprise, proposes to you. But you know you'll have to reject this proposal.;;;;;;;;;x
+EVTOPTA_jacobin_52;Refuse and explain why you cannot accept this proposal;;;;;;;;;x
+EVTOPTB_jacobin_52;Accept this proposal gladly;;;;;;;;;x
+EVTOPTC_jacobin_52;Refuse this proposal;;;;;;;;;x
+EVTDESC_jacobin_53;The next morning you're healed. You get up, thank the doctor, and continue on your way to your destination.;;;;;;;;;x
+EVTOPTA_jacobin_53;Nice;;;;;;;;;x
+EVTDESC_jacobin_54;On the way, you meet a pilgrim, and after a short conversation, he turns out to be not your brother in faith, but a Christian. You exchange a few small talk, until suddenly the topic of the Vendée comes up. The pilgrim tells you how, before the event, a local rebellion was brutally crushed and how women and children were massacred in that revolt. This story moves you, but on the other hand, your faith compels you to condemn those rebels.;;;;;;;;;x
+EVTOPTA_jacobin_54;I guess he's right after all.;;;;;;;;;x
+EVTOPTB_jacobin_54;Nonsense, perfidious tales of tyrants he tells me;;;;;;;;;x
+EVTDESC_jacobin_55;You reach a certain town and enter an inn, you see men playing dice, you consider whether to spend your meager sum on playing with them or go and have a weak beer and then move on.;;;;;;;;;x
+EVTOPTA_jacobin_55;Don't play, drink whatever you want and move on;;;;;;;;;x
+EVTOPTB_jacobin_55;Try your luck;;;;;;;;;x
+EVTDESC_jacobin_56;You win, your opponent gives you back what he bet, you get up happy and leave the inn with more money than you entered.;;;;;;;;;x
+EVTOPTA_jacobin_56;Nice;;;;;;;;;x
+EVTDESC_jacobin_57;You lose the game, you lose your money, the drunks laugh and you get up from the table and leave the tavern.;;;;;;;;;x
+EVTOPTA_jacobin_57;Oh no!;;;;;;;;;x

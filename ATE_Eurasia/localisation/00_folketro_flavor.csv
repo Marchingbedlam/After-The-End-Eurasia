@@ -46,13 +46,13 @@ EVTOPTA_troll_5;In the spirit of God Almighty I shall heed the word of his Holy 
 EVTOPTB_troll_5;Perhaps, I should look into [folketro.GetHighGodName] as to guard against Ragnarok...;;;;;;;;;;;;;x
 
 temple_baron_nysed;Gode;;;;;;;;;;;;;x
-temple_baron_female_fornsed;Goda;;;;;;;;;;;;;x
+temple_baron_female_nysed;Goda;;;;;;;;;;;;;x
 temple_count_nysed;Gode;;;;;;;;;;;;;x
-temple_count_female_fornsed;Goda;;;;;;;;;;;;;x
+temple_count_female_nysed;Goda;;;;;;;;;;;;;x
 temple_duke_nysed;Gode;;;;;;;;;;;;;x
-temple_duke_female_fornsed;Goda;;;;;;;;;;;;;x
+temple_duke_female_nysed;Goda;;;;;;;;;;;;;x
 temple_king_nysed;Gode;;;;;;;;;;;;;x
-temple_king_female_fornsed;Goda;;;;;;;;;;;;;x
+temple_king_female_nysed;Goda;;;;;;;;;;;;;x
 temple_barony_of_nysed;Tempel of;;;;;;;;;x
 
 temple_baron_fornsed;Pastor;;;;;;;;;;;;;x
@@ -63,12 +63,12 @@ temple_duke_fornsed;Erkebiskop;;;;;;;;;;;;;x
 temple_duke_female_fornsed;Erkebiskop;;;;;;;;;;;;;x
 temple_barony_of_fornsed;Kirke of;;;;;;;;;x
 
-temple_baron_folketro;Gode;;;;;;;;;;;;;x
-temple_baron_female_folketro;Goda;;;;;;;;;;;;;x
-temple_count_folketro;Gode;;;;;;;;;;;;;x
-temple_count_female_folketro;Goda;;;;;;;;;;;;;x
-temple_duke_folketro;Gode;;;;;;;;;;;;;x
-temple_duke_female_folketro;Goda;;;;;;;;;;;;;x
+temple_baron_folketro;Prest;;;;;;;;;;;;;x
+temple_baron_female_folketro;Prest;;;;;;;;;;;;;x
+temple_count_folketro;Prest;;;;;;;;;;;;;x
+temple_count_female_folketro;Prest;;;;;;;;;;;;;x
+temple_duke_folketro;Prest;;;;;;;;;;;;;x
+temple_duke_female_folketro;Prest;;;;;;;;;;;;;x
 temple_barony_of_folketro;Tempel of;;;;;;;;;x
 
 EVTDESC_confirmation_1;Your priest offers to help your son read and understand the Holy Scriptures, claiming that this is important before his planned confirmation. Tradition demands that you listen to him and allow him to teach your child the Bible.;;;;;;;;;;;;;x
@@ -102,3 +102,122 @@ EVTTOOLTIP_troll_8;[ROOT.GetName] is invited.;;;;;;;;;;;;;x
 confirmation_invitations_sent;Invite all the [folketro.GetName] and [fornsed.GetName] vassals in your realm;;;;;;;;;;;;;x
 confirmation_declined;[ROOT.GetName] declided your invitation;;;;;;;;;;;;;x
 confirmation_accepted;[ROOT.GetName] accepted your invitation;;;;;;;;;;;;;x
+choose_fornsed_branch;Choose your Apostole;;;;;;;;;;;;;x
+choose_fornsed_branch_desc;The Fornsed worship the Apostles, a group of saints who brought the gospel to Scandinavia (though they understand them differently than Christians). These men came to Denmark, Sweden, and Norway years ago, teaching their people, and to this day they play important roles on earth and in heaven. You as one of them can choose whose of them you will venerate.;;;;;;;;;;;;;x
+EVTDESC_troll_16;There were three apostles, and their fates varied, as did the people who honored them. Choose your patron saint wisely, because people focused on different things honor different saints among the followers of the fornsed.;;;;;;;;;;;;;x
+EVTOPTA_troll_16;I will venerate Sankta Lusia, blessed girl in white;;;;;;;;;;;;;x
+EVTOPTB_troll_16;I will venerate Sankt Olav, Eternal King of Norway;;;;;;;;;;;;;x
+EVTOPTC_troll_16;I will venerate Sankte Per, gatekeeper in heaven;;;;;;;;;;;;;x
+go_to_folketro_pilgrimage;Go on a pilgrimage;;;;;;;;;;;;;x
+go_to_folketro_pilgrimage_desc;For centuries, the spiritual heirs of the Apostles from all over the Nordic lands have made pilgrimages to holy temples and groves, seeking the help of God and his saints. As a worshipper of this ancient and popular Nordic Rite, you, like others before you, can make such a pilgrimage.;;;;;;;;;;;;;x
+EVTNAME_troll_17;Preparations;;;;;;;;;;;;;x
+EVTDESC_troll_17;A pilgrimage is a major event for a representative of Nordic Christianity and disciple of the Apostles. The pilgrimage aims to ask [Root.Religion.GetHighGodName] and his heroes for grace for themselves and their loved ones, and to pay him the homage he deserves. As a servant of God, you begin preparing for the pilgrimage, asking [Root.Religion.GetHighGodName] to protect you from forest demons, trolls, and other devilish creatures during your journey, as well as from common bandits and infidels. When you finish, you consider whether to begin your preparations or whether it might be better to postpone it for another time.;;;;;;;;;;;;;x
+EVTOPTA_troll_17;I took a decision and I will remain in it...;;;;;;;;;;;;;x
+EVTOPTB_troll_17;Maybe better time will be later...;;;;;;;;;;;;;x
+EVTDESC_troll_18;For centuries, worshippers of [Root.Religion.GetHighGodName] have been making pilgrimages to holy sites: ancient and primeval cities. You can choose from the most famous of these, such as Lund and Nidaros, as well as less pilgrim-heavy destinations like Telemark, Turku, and Uppsala.;;;;;;;;;;;;;x
+EVTOPTA_troll_18;I go to Lund or Nidaros;;;;;;;;;;;;;x
+EVTOPTB_troll_18;I go to Lund;;;;;;;;;;;;;x
+EVTOPTC_troll_18;I go to Nidaros;;;;;;;;;;;;;x
+EVTOPTD_troll_18;I go to less popular holy sites;;;;;;;;;;;;;x
+EVTDESC_troll_19;Lund and Nidaros are the two most famous places for the worshippers of the Norse Apostles, Lund being the cradle and first haven of the apostles and Nidaros where the viceroys of the Eternal King were crowned.;;;;;;;;;;;;;x
+EVTOPTA_troll_19;Go to Lund;;;;;;;;;;;;;x
+EVTOPTB_troll_19;Go to Nidaros;;;;;;;;;;;;;x
+EVTDESC_troll_20;Turku, Telemark, and Uppsala are other sacred places for the Norse successors of the Apostles, besides Nidaros and Lund. Each is famous for something different, and is just as sacred to you as these two most famous places.;;;;;;;;;;;;;x
+EVTOPTA_troll_20;Go to Telemark;;;;;;;;;;;;;x
+EVTOPTB_troll_20;Go to Turku;;;;;;;;;;;;;x
+EVTOPTC_troll_20;Go to Uppsala;;;;;;;;;;;;;x
+EVTDESC_troll_21;All the things necessary for your pious journey have been packed, you are setting out on your way to the holy place.;;;;;;;;;;;;;x
+EVTOPTA_troll_21;Let's go;;;;;;;;;;;;;x
+EVTNAME_troll_22;The end of the Pilgrimage;;;;;;;;;;;;;x
+EVTDESC_troll_22_LUND;You arrive in Lund, the cradle of biblical teaching in Scandinavia. It was here that the Apostles: Sankte Per, Sankta Lusia, and Sankt Olav, sent from the south, arrived, preaching the Gospel to the Vikings through various methods and means. When you reach this cradle of Scandinavia as you know it, you walk through the quiet streets of Lund, passing merchants and local townspeople, until you reach Lund Cathedral, the first church in Sweden, where the people first raised their voices in praise of [Root.Religion.GetHighGodName]. You cross the threshold of the church and, upon entering, see many believers and pilgrims: of both your own and foreign faiths. You walk closer, observing the architecture of this church, imagining how, years ago, poor pilgrims stood here, singing hymns about the value of life and a pious life. A moment later, you fall into prayer, praising [Root.Religion.GetHighGodName] for the adventure and the lesson this journey has taught you.;;;;;;;;;;;;;x
+EVTDESC_troll_22_NIDAROS;You arrive in Nidaros. According to legend, all of Sankt Olav's successors were to be crowned here by will of [Root.Religion.GetHighGodName] as vassals of the Eternal King. For centuries, this city was the spiritual center of the Kingdom of Sankt Olav, the incomparable and pious Eternal King of Norway. It was here that the crown jewels of the Norwegian kings were kept. Walking through this city, you pass merchants and other pilgrims, passing them as well as old houses and temples. After some time, you reach the pilgrim-laden Nidaros Cathedral, also known as Nidarosdomen. This cathedral is the place where many Norwegian kings were crowned, and where the miracle of unity was always present. You enter, the cathedral's splendor dazzles you, and you see what your brothers died for fighting the southern invaders, especially in nearby Narvik, where King Haakon bravely repelled the traitors. You approach closer, observing the stained glass windows and gazing at the altar, the place of sacrifice, feeling compelled to thank [Root.Religion.GetHighGodName] for having brought you here and for having had so many fascinating experiences.;;;;;;;;;;;;;x
+EVTDESC_troll_22_TURKU;You arrive in Turku, a place many Nordics have forgotten, where trolls vanish, yet Finnish and Sami demons appear. Turku, though on the outskirts, is important. It was here that the first temples in honor of [Root.Religion.GetHighGodName] in Finland were founded. It was here that the spiritual preacher Agricola, with the blessing of Gustav Vasa and his enlightened successors, worked to spread faith and combat trolls and other demons. Walking through Turku, you head towards the cathedral. Along the way, you pass merchants and other pilgrims. As you enter, you ponder what Agricola, the magician-priest, felt as he walked through the cathedral and performed holy rites. You walk deeper into the temple, and when you reach the altar, you stop and kneel in profound prayer in honor of [Root.Religion.GetHighGodName], in gratitude for his adventures and for surviving this pilgrimage.;;;;;;;;;;;;;x
+EVTDESC_troll_22_TELEMARK;You arrive in Telemark, a town in Norway famous for Heddal Stave Church, an ancient wooden temple built by five simple people: Raud Rigi, Stebbe Straand, Kjeik Sem, Grut Grene, and Vrang Stivi. While building it, they were accosted by a troll who demanded they remove the moon from the sky, shed their blood, or guess their name. He stated that without one of these actions, they would not complete the temple, and with his power, he did so. One of the builders went into the forest at night to pray, and Saint Lusia sang a song, revealing the troll's name to him. Upon hearing it, the troll fled, leaving behind a beautiful church. As you enter, you see old wooden columns and, beyond them, an altar decorated in folk style. Seeing it, you kneel and praise [Root.Religion.GetHighGodName] for reaching this place and for this great adventure.;;;;;;;;;;;;;x
+EVTDESC_troll_22_UPSALLA;You arrive in Uppsala, the spiritual center of Nordic folk religion in Sweden. For centuries, Uppsala's great metropolitans resided here, and many Swedish kings were crowned here, as successors to Saint Erik, King of Sweden and, according to legend, a descendant of Saint Olav. Gustav Vasa, the folk hero who drove out the Danish tyrant Christian II the Cruel, was also crowned here. From a distance, as you walk through the streets, you see the Grand Cathedral of Uppsala, the beating heart of Scandinavian evangelical teaching, and without hesitation, you head towards it. When you arrive, you understand why Swedish kings were crowned there in the past, for despite its age, the cathedral is as beautiful as you imagined from afar. You enter and walk towards the altar, and shortly after, you kneel in silent prayer to [Root.Religion.GetHighGodName] in gratitude for the adventure and the gift of reaching here.;;;;;;;;;;;;;x
+EVTOPTA_troll_22;Nice to be here;;;;;;;;;;;;;x
+EVTDESC_troll_23;As you pass by the forest, you encounter a group of young men dressed in chainmail and cheap armor, carrying axes and slightly rusty swords. They tell you they're searching for trolls to kill in the name of [Root.Religion.GetHighGodName], and although they haven't found any, they know they're somewhere here, lying in wait for devout worshippers of [Root.Religion.GetHighGodName].;;;;;;;;;;;;;x
+EVTOPTA_troll_23;Wish them luck and promise to pray for them;;;;;;;;;;;;;x
+EVTOPTB_troll_23;There are fools;;;;;;;;;;;;x
+EVTDESC_troll_24;You pass by a village and see villagers working and building something in the distance. As you get closer, someone tells you they're building a stave church, for the glory of [Root.Religion.GetHighGodName], and they could use some help.;;;;;;;;;;;;;x
+EVTOPTA_troll_24;Donate to them and help them build;;;;;;;;;;;;;x
+EVTOPTB_troll_24;Donate to them;;;;;;;;;;;;x
+EVTOPTC_troll_24;Help them build;;;;;;;;;;;;x
+EVTOPTD_troll_24;Do nothing and move on;;;;;;;;;;;;x
+EVTDESC_troll_25;Along the way, you come to a village where a traveling theater is playing. The villagers are thrilled at the prospect of seeing the performance, and one of them urges you to buy a ticket for the event.;;;;;;;;;;;;x
+EVTOPTA_troll_25;Maybe they'll show something interesting;;;;;;;;;;;;x
+EVTOPTB_troll_25;What a waste of money;;;;;;;;;;;;x
+EVTNAME_troll_26;Theatre Art;;;;;;;;;;;;x
+EVTDESC_troll_26_WILD_DUCK;You take your seat. The play the actors will present to you and the villagers today is "The Wild Duck," written by the mythical master Ibsen. Curious, you watch. The play tells the story of the Ekdal family, who, despite their poverty, are joyful, even though they live in lies. The idyll is shattered by Gregers Werle, an old friend of Hjalmar Ekdal, the family father, who reveals the premarital life of his wife, leading to family drama and the rejection of daughter by father. Werle, through his continued "advice," also drives his daughter to suicide. When the curtain falls, everyone is serious and experiencing their own catharsis, and you are with them.;;;;;;;;;;;;x
+EVTDESC_troll_26_ERASMUS;You take your seat. The play the actors will present to you and the villagers today is "Erasmus Montanus," written by the mythical master Holberg. Curious, you watch it. The play tells the story of provincial Rasmus Berg, who, as a result of his studies in Copenhagen, becomes overly self-righteous and takes the name Erasmus Montanus. When he returns from his studies, he is overly self-righteous and arrogant, and engages in an intellectual dispute over the shape of the earth with his fiancée's father, which leads to his plan to marry his beloved being in jeopardy. Ultimately, Erasmus is conscripted into the army by a trick, and, enticed by the promise of discharge and marriage, he tells the villagers what they want to hear: that the earth is flat. He ultimately marries his beloved, but his pride is crushed.;;;;;;;;;;;;x
+EVTDESC_troll_26_PEER_GYNT;You take your seat. The play the actors will present to you and the villagers today is "Peer Gynt," written by the mythical master Ibsen. Curious, you watch it. The play tells the story of the provincial Peer Gynt, a handsome and egotistical man, and Solveig, who falls in love with him. Gynt experiences many adventures throughout the play: he lives in the kingdom of the Trolls, travels to Cairo, where he is admitted to a madhouse, and on the way back, drowns a shipwrecked man so he can survive the sinking of his ship. The play ends with the death of Peer Gynt, who ultimately finds a kind of redemption.;;;;;;;;;;;;x
+EVTDESC_troll_26_MR_SLEEMAN;You take your seat. The play the actors will present to you and the villagers today is "Mr. Sleeman Is Coming," by the mythical master Bergman. You watch it with interest; the play unfolds in one place, a small room in a provincial homestead. Mina and Bina, old matrons, sit with their niece, Anne-Marie, awaiting the arrival of the titular Mr. Sleeman, an elderly tax collector to whom they have promised their niece's hand in marriage. Anne-Marie doesn't want the wedding and tries to persuade her aunts to change their minds, but the aunts are unconvinced. Finally, Mr. Sleeman arrives, and the curtain falls, leaving you and the others in a pessimistic mood.;;;;;;;;;;;;x
+EVTOPTA_troll_26;I spent my money well;;;;;;;;;;;;x
+EVTDESC_troll_28;While walking through the forest, suddenly out of nowhere several raiders jump out at you.;;;;;;;;;;;;x
+EVTOPTA_troll_28;Oh no!;;;;;;;;;;;;x
+choose_nysed_branch;Choose your cult;;;;;;;;;;;;x
+choose_nysed_branch_desc;Nysed followers worship various entities they consider supernatural. Some are elven cultists, others are cultists of Thor, still others are cultists of Fiddler, and even worshippers of the dreaded Wild Hunt are among them. As one of them, you can choose whom you will worship in your personal devotion.;;;;;;;;;;;;x
+EVTDESC_troll_29;Followers of Nysed worship various persons: some worship elves, others the friendly Fiddler, others the warlike Thor, and still others the dark Wild Hunt, much to the outrage of their fellow believers. As one of them, you can choose who will be central to your personal devotion.;;;;;;;;;;;;x
+EVTOPTA_troll_29;Thor will be my defender;;;;;;;;;;;;x
+EVTOPTB_troll_29;Elves will be a object of my cult;;;;;;;;;;;;x
+EVTOPTC_troll_29;Fiddler will be my teacher;;;;;;;;;;;;x
+EVTOPTD_troll_29;I will be a freind of Wild Hunt;;;;;;;;;;;;x
+EVTDESC_troll_36;As you walk through the village, you hear the villagers gossiping about a hulder, a seductive forest mermaid, prowling near their village. You continue your journey, and near the village, you encounter a girl gathering herbs. You talk to her about the beauty of the meadow, and over time, you turn to more religious topics. You soon realize that this girl may be a hulder, a demon hidden beneath the girl's beauty.;;;;;;;;;;;;x
+EVTOPTA_troll_36;Kill her;;;;;;;;;;;;x
+EVTOPTB_troll_36;Leave her alone;;;;;;;;;;;;x
+EVTOPTC_troll_36;Talk to her kindly, warn her and move on;;;;;;;;;;;;x
+EVTOPTD_troll_36;Invite her to your court;;;;;;;;;;;;x
+EVTDESC_troll_37;Along the way, in a forest clearing, you encounter some peasants sacrificing an animal on a stone. After a brief conversation, it turns out that through this sacrifice, they are paying homage to Odin, Allfather of all gods, and his descendants who were born or died at Ragnarok.;;;;;;;;;;;;x
+EVTOPTA_troll_37;Join them and make a sacrifice too;;;;;;;;;;;;x
+EVTOPTB_troll_37;Ignore them and move on;;;;;;;;;;;;x
+EVTOPTC_troll_37;Show them how blasphemers end up;;;;;;;;;;;;x
+EVTDESC_troll_38;You and other pilgrims stop at night and sit around a campfire. While you're roasting sausages on a stick, one of them, the oldest, begins to tell one of the stories about Askeladden, a type of man described by Norwegian priests, initially unable to work, who only gradually proves his worth, like an ugly duckling. This pious story takes everyone's breath away.;;;;;;;;;;;;x
+EVTOPTA_troll_38;Nice story;;;;;;;;;;;;x
+EVTOPTB_troll_38;Also tell them another story about Askeladden;;;;;;;;;;;;x
+EVTTITLE_troll_39;Ruins of the Parish;;;;;;;;;;;;x
+EVTDESC_troll_39;Walking through the forest, you see the outline of a temple in the distance, a ruined temple. As you get closer, you see its appearance and how well-preserved it is, though most of the stained glass windows have been smashed and the doors are missing. It's bright, and you feel compelled to enter, even though all you see is darkness.;;;;;;;;;;;;x
+EVTOPTA_troll_39;Come inside;;;;;;;;;;;;x
+EVTOPTB_troll_39;Go ahead and leave these ruins;;;;;;;;;;;;x
+EVTDESC_troll_40;Inside, this temple appears completely devastated, but you find a valuable artifact, a remnant of an old religious life presumably from before the Event.;;;;;;;;;;;;x
+EVTOPTA_troll_40;Thanks you [Root.Religion.GetHighGodName];;;;;;;;;;;;x
+EVTTROOLTIP_troll_40;You find an old artifact, a relic of a bygone era...;;;;;;;;;;;;x
+EVTDESC_troll_41;Inside, this temple seems completely devastated, yet you see some notes near the chancel, and when you approach you read them, they are old pre-event sermons that... contradict everything you believed in.;;;;;;;;;;;;x
+EVTOPTA_troll_41;These notes are calumnies, forgeries of the enemies of my faith!;;;;;;;;;;;;x
+EVTOPTB_troll_41;So faith is a lie!;;;;;;;;;;;;x
+EVTOPTC_troll_41;Well, the Lutherans rightly call us half-pagans;;;;;;;;;;;;x
+EVTDESC_troll_42;Inside, this temple seems completely devastated, but you don't look around too much because it turns out there are bandits inside who were waiting for people like you.;;;;;;;;;;;;x
+EVTOPTA_troll_42;Oh no! [Root.Religion.GetHighGodName] help me!;;;;;;;;;;;;x
+EVTDESC_troll_43;Inside, this temple appears utterly devastated. In the corner, you see a small child mumbling under his breath. There's blood on his clothes that's not his own, leading you to believe his parents are dead.;;;;;;;;;;;;x
+EVTOPTA_troll_43;Ignore him;;;;;;;;;;;;x
+EVTOPTB_troll_43;Give him some money and tell him about the nearest settlement;;;;;;;;;;;;x
+EVTOPTC_troll_43;Take him with you to your court;;;;;;;;;;;;x
+EVTOPTD_troll_43;Take him with you to your court...and adopt him;;;;;;;;;;;;x
+celebrate_st_lucy_day;Celebrate Saint Lucy's Day;;;;;;;;;;;;x
+celebrate_st_lucy_day_desc;Among Scandinavians, Saint Lucy's Day, a popular folk celebration, takes place in the first half of December. It commemorates Saint Lucy: for Christians, a fourth-century martyr, for the folketro and fornsed, an apostle who preached the Gospel in mythical times. On this day, a chosen girl takes on the role of Saint Lucy and, with a retinue of white-clad girls and men, travels through the city, visiting schools, shelters, and hospitals. Finally, traditional saffron buns and other dishes are eaten during a communal meal.;;;;;;;;;;;;x
+EVTTITLE_lucys_day_1;Saint Lucy;;;;;;;;;;;;x
+EVTDESC_lucys_day_1;According to an old Scandinavian tradition, the procession on Saint Lucy's Day is led by a girl who is meant to personify her. It's customary for her to have golden hair and be a young maiden. As the lord of the estate and a local authority, you can suggest someone from your own family, provided they meet the requirements. Such an honor would be a distinction and a great honor for her.;;;;;;;;;;;;x
+EVTOPTA_lucys_day_1;Give people a free hand in choosing a girl;;;;;;;;;;;;x
+EVTOPTB_lucys_day_1;Suggest your kinswomen as Saint Lucy;;;;;;;;;;;;x
+EVTTITLE_lucys_day_2;Procession;;;;;;;;;;;;x
+EVTDESC_lucys_day_2;You set off from a nearby temple. A girl dressed in white and wearing a crown made of candles and conifer branches leads the way, followed by other girls dressed in white and boys carrying lanterns. As the procession leaves, the sun is just emerging. You visit shelters, schools, and hospitals; children offer food to the patrons, and you, along with other adults, accompany and protect them.;;;;;;;;;;;;x
+troll_52_text_a;discovery of a passion for music and poetry;;;;;;;;;;;;x
+troll_52_text_b;making a new friend;;;;;;;;;;;;x
+troll_52_text_c;revival in faith;;;;;;;;;;;;x
+troll_52_text_d;encountering homeless people asking for alms.;;;;;;;;;;;;x
+EVTOPTA_lucys_day_2;Let's go!;;;;;;;;;;;;x
+EVTTITLE_lucys_day_3;Feast;;;;;;;;;;;;x
+EVTDESC_lucys_day_3;After a full day of procession, you treat yourself to traditional saffron buns. You return to your palace and set up a traditional feast, where you'll find even more saffron buns and other food befitting your status and wealth.;;;;;;;;;;;;x
+EVTOPTA_lucys_day_3;Let's have fun!;;;;;;;;;;;;x
+EVTTITLE_lucys_day_4;Night Prayer;;;;;;;;;;;;x
+EVTDESC_lucys_day_4;Around midnight, the feast ends. You rise from the table, thank everyone, and before leaving, you recite the Lord's Prayer together, thanking God for this day and praying that you may gather together again in this community next year for Saint Lucy's Day. Then you go to bed, but you also recite a short prayer of thanksgiving by your bedside.;;;;;;;;;;;;x
+EVTOPTA_lucys_day_4;I haven't slept for a long time, time to catch up...;;;;;;;;;;;;x
+EVTDESC_lucys_day_5;As you sing hymns during the procession, you feel the rhythm of the song about Saint Lucy settling into your own. Part of your mind tells you to become an artist...;;;;;;;;;;;;x
+EVTOPTA_lucys_day_5;I will become a great musician!;;;;;;;;;;;;x
+EVTOPTB_lucys_day_5;I will became a master of lyrics!;;;;;;;;;;;;x
+EVTOPTC_lucys_day_5;Nonsense, I am talentless;;;;;;;;;;;;x
+EVTDESC_lucys_day_6;During the procession you become friends with one of the participants.;;;;;;;;;;;;x
+EVTOPTA_lucys_day_6;Nice;;;;;;;;;;;;x
+EVTDESC_lucys_day_7;Walking in the procession and humming hymns in honor of Saint Lucy, you feel a greater fervor than usual, and you should definitely not extinguish this fervor, but add fire to it.;;;;;;;;;;;;x
+EVTOPTA_lucys_day_7;May my heart burn for the Lord!;;;;;;;;;;;;x
+EVTDESC_lucys_day_8;Walking in the procession you see a large gathering of beggars, seeing who you are they call you by name: "[Root.GetFirstName], [Root.GetFirstName], help us in our poverty";;;;;;;;;;;;x
+EVTOPTB_lucys_day_8;Give them alms;;;;;;;;;;;;x
+EVTOPTA_lucys_day_8;Refuse to give them alms;;;;;;;;;;;;x

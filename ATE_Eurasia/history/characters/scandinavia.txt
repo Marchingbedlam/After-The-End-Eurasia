@@ -334,7 +334,7 @@
 	name="Tyge"
 	dynasty=2223001 #Sønderborg
 	culture=danish
-	religion=folketro
+	religion=lutheran
 	father=8000005
 	2540.7.4={birth=yes}
 	2630.1.1={death=yes}
@@ -343,7 +343,7 @@
 	name="Christoffer"
 	dynasty=2223001 #Sønderborg
 	culture=danish
-	religion=folketro
+	religion=lutheran
 	father=8000007
 	2590.6.2={birth=yes}
 	2647.1.1={death=yes}
@@ -389,7 +389,7 @@
 	name="Ludvig"
 	dynasty=2223011 #Holberg
 	culture=danish
-	religion=folketro
+	religion=fornsed
 	trait=dutiful_cleric
 	trait=sympathy_christendom
 	trait=poet
@@ -1638,7 +1638,7 @@
 	name="Platon"
 	dynasty=2223001 #Sønderborg
 	culture=danish
-	religion=folketro
+	religion=lutheran
 	father=8000010
 	trait=underhanded_rogue
 	trait=ruthless
@@ -1652,7 +1652,7 @@
 	name="Mogens"
 	dynasty=2223001 #Sønderborg
 	culture=danish
-	religion=folketro
+	religion=lutheran
 	father=8000010
 	trait=grey_eminence
 	trait=gregarious
@@ -1667,7 +1667,7 @@
 	name="Preben"
 	dynasty=2223001 #Sønderborg
 	culture=danish
-	religion=folketro
+	religion=lutheran
 	father=8000009
 	trait=indulgent_wastrel
 	trait=fat
@@ -1681,7 +1681,7 @@
 	name="Tyge"
 	dynasty=2223001 #Sønderborg
 	culture=danish
-	religion=folketro
+	religion=lutheran
 	father=8000124
 	trait=tough_soldier
 	trait=hunter
@@ -1699,7 +1699,7 @@
 	dynasty=2223001 #Sønderborg
 	female=yes
 	culture=danish
-	religion=folketro
+	religion=lutheran
 	father=8000124
 	trait=tough_soldier
 	trait=duelist
@@ -1970,7 +1970,7 @@
 8000152={
 	name="Dan"
 	dynasty=2223005 #Danneskiold
-	father=8000151
+	father=8000150
 	culture=danish
 	religion=lutheran
 	2389.1.1={birth=yes}
@@ -2632,7 +2632,7 @@
 	mother=8000216
 	dynasty=2223011 #Holberg
 	culture=danish
-	religion=folketro
+	religion=fornsed
 	trait=playful
 	trait=attractive
 	trait=wroth
@@ -2646,7 +2646,7 @@
 	mother=8000216
 	dynasty=2223011 #Holberg
 	culture=danish
-	religion=folketro
+	religion=fornsed
 	trait=curious
 	2664.1.1={birth=yes}
 	2670.1.1={death=yes}
@@ -2914,7 +2914,7 @@
 
 8000243={
 	name="Ragnar"
-	father=8000245
+	mother=8000245
 	dynasty=2501005 #Bull
 	culture=icelander
 	religion=sjotru 
@@ -3793,7 +3793,7 @@
 
 80003533={
 	name="Turo"
- 	dynasty=2220810
+ 	dynasty=7534228
 	culture=finnish
 	religion=lutheran
 	trait=frail
@@ -4009,6 +4009,7 @@
 	dynasty=2220303 #Lademoen
 	culture=tronder
 	religion=folketro
+	father=8000082
 	2340.1.1={birth=yes}
 	2406.1.1={death=yes}
 }
@@ -4849,4 +4850,42 @@
 	disallow_random_traits=yes
 	2635.3.1={birth=yes}
 	2680.1.1={death=yes}
+}
+
+80003695={
+	name="Kaarle Kustaa"
+	dynasty=7534227 
+	occluded=yes
+	culture=finnish
+	religion=lutheran
+	trait=legendary
+	1867.6.4={birth=yes}
+	1960.1.1={death=yes}
+}
+80003696={
+	name="Valdemar"
+	dynasty=2223001 #Sønderborg
+	culture=danish
+	religion=folketro
+	secret_religion=neuhumanist
+	trait=brilliant_strategist
+	trait=legit_bastard
+	trait=hiddenfolk_cult
+	trait=just
+	trait=kind
+	trait=shrewd
+	trait=deceitful
+	trait=giant
+	trait=scarred_mid
+	martial=9
+	stewardship=2
+	intrigue=4
+	learning=10
+	diplomacy=8
+	father=8000009
+	dna="0hahc0bba00"
+	properties="ga0eek"
+	2637.4.19={birth=yes}
+	2658.1.1={add_claim=k_denmark}
+	2700.1.1={death=yes}
 }
