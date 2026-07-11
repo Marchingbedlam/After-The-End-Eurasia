@@ -17,6 +17,7 @@
 # has_plaguebringers_prerequisites
 # has_vodouns_prerequisites
 # has_bacchants_prerequisites
+# has_illuminati_prerequisites
 
 # has_assassins_prerequisites
 
@@ -115,6 +116,8 @@ has_satanists_prerequisites = {
 		religion_group = muslim
 		religion_group = zoroastrian_group
 		religion_group = jewish_group
+		religion_group = vernacular
+		religion_group = islamosyncretic
 		religion_openly_zun_or_reformed_trigger = yes
 	}
 }
@@ -149,17 +152,18 @@ has_vodouns_prerequisites = {
 	has_common_devilworship_prerequisites = yes
 }
 
-has_bacchants_prerequisites = {
+has_illuminati_prerequisites = {
 	has_common_devilworship_prerequisites = yes
 
 	OR = {
-		religion_openly_hellenic_or_reformed_trigger = yes
-		culture = roman # Historically fashionable thrill for bored patricians
-
-		AND = {
-			has_global_flag = flag_started_roman_renaissance
-			top_liege = { has_landed_title = e_roman_empire } # Historically a plague for the Empire
-		}
+       religion_group = scholastic
+	   religion_group = old_world_cultist_group
+	   religion = rastafarian
+	   religion = valinorist
+	   secret_religion_group = scholastic
+	   secret_religion_group = old_world_cultist_group
+	   secret_religion = rastafarian
+	   secret_religion = valinorist
 	}
 }
 

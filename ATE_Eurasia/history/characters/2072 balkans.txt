@@ -456,9 +456,8 @@
 	2680.1.1={death=yes}
 }
 2072200={
-	name="Simona"
+	name="Simeon"
 	dynasty=2047196 #Derzhanski
-	female=yes
 	religion=orthodox
 	culture=bulgarian
 	trait=erudite
@@ -518,10 +517,12 @@
 }
 2072204={
 	name="Sophia"
-	dynasty=2073037
+	dynasty=2050068#Karpoš
 	female=yes
 	religion=orthodox
 	culture=makedonian
+	religion=orthodox
+	father=2072238
 	2630.1.1={birth=yes}
 	2680.1.1={death=yes}
 }
@@ -791,7 +792,7 @@
 	trait=legendary
 	occluded=yes
 	disallow_random_traits=yes
-	father=80003647
+	father=80003702
 	1845.12.24={birth=yes}
 	1913.3.18={death={death_reason=death_murder}}
 }
@@ -916,7 +917,7 @@
 	trait=humble
 	disallow_random_traits=yes
 	2600.3.24={birth=yes}
-	2680.1.1={death=yes}
+	2658.5.14={death=yes}
 }
 2072239={
 	name="Filip"
@@ -1475,9 +1476,12 @@
 	trait=tough_soldier
 	trait=falconer
 	trait=strategist
+	trait=saint
 	give_nickname=nick_the_brave
 	father=2072269
 	mother=2072268
+	dna="affbg0bc000"
+	properties="pl000c00000000000000000000000000000000"
 	2560.11.15={birth=yes}
 	2584.1.1={
 	  add_spouse=2072271
@@ -1512,6 +1516,8 @@
 	religion=orthodox
 	culture=hungarian
 	father=1991104
+	dna="bbhbc0eaa00"
+	properties="ff0c0i00000000000000000000000000000000000"
 	2585.9.11={birth=yes}
 	2618.9.16={
 	  death={
@@ -1576,7 +1582,9 @@
 	culture=bulgarian
 	father=2072270
 	mother=2072272
-	2612.6.14={ 
+	dna="afgbi0bb000"
+	properties="ph0g0k00000000000000000000000000000000"
+	2612.6.14={
 	    birth="2612.6.14"
 	 	effect = { 
 			c_2072277 = {
@@ -1726,22 +1734,31 @@
 }
 
 2072286={ 
-	name="Lazar"
+	name="Dimitar"
+	dynasty=7534230
 	religion=orthodox
 	culture=bulgarian
-	trait="bastard"
+	trait="tough_soldier"
+	trait="attractive"
+	trait="brave"
+	trait="ambitious"
+	trait="temperate"
+	trait="wroth"
+	dna="afgbi0bb000"
+	properties="ph0g0k00000000000000000000000000000000"
 	2612.6.14={birth=yes}
-	2649.7.1={
+	2644.12.14={
 	   death={
 	      death_reason=death_execution_hanging
-		  killer=2072113
+		  killer=2072281
 	   }
 	}
 }
 
 2072287={ 
 	name="Konstantin"
-	religion=catholic
+	dynasty=7534230
+	religion=orthodox
 	culture=bulgarian
 	trait="adventurer"
 	trait="brave"
@@ -1758,6 +1775,7 @@
 	properties="0h0b0k"
 	father=2072286
 	2639.11.22={birth=yes}
+	2650.1.1={add_claim=c_vidin add_claim=k_bulgaria add_claim=d_sofia add_claim=c_sofia }
 	2666.1.1={
 	   employer=1861074
 	}

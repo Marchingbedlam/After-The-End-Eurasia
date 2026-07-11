@@ -1059,6 +1059,10 @@ spriteTypes = {
 		name = "GFX_society_main_background_warrior_lodge_jedinstvo"
 		textureFile = "gfx\\interface\\societies\\society_bg_jedinstvo.tga"
 	}
+	spriteType = {
+		name = "GFX_society_main_background_the_illuminati"
+		textureFile = "gfx\\interface\\societies\\society_bg_the_illuminati.tga"
+	}
 
 	#Expanded Background
 
@@ -1305,6 +1309,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_icon_small_warrior_lodge_jedinstvo"
 		textureFile = "gfx\\interface\\societies\\symbol_small_jedinstvo.tga"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_icon_small_the_illuminati"
+		textureFile = "gfx\\interface\\societies\\symbol_small_the_illuminati.tga"
 		noOfFrames = 2
 	}
 	

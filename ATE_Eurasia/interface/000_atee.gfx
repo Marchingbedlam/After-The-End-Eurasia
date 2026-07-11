@@ -1151,6 +1151,20 @@ spriteTypes = {
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
+	spriteType = {
+		name = "GFX_trait_genesian_faith_of_fathers"
+		texturefile = "gfx/traits/genesian_fathers.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+		spriteType = {
+		name = "GFX_trait_genesian_cult_of_nature"
+		texturefile = "gfx/traits/genesian_nature.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
 	
 	
 	#Ambitions
@@ -1526,5 +1540,21 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_restore_russian_patriarchate"
 		texturefile = "gfx\\interface\\russian_patriarchate.dds"
+	}
+	spriteType = {
+		name = "GFX_celebrate_dziady"
+		texturefile = "gfx\\interface\\decision_genesian.dds"
+	}
+	spriteType = {
+		name = "GFX_choose_genesian_branch"
+		texturefile = "gfx\\interface\\decision_genesian.dds"
+	}
+	spriteType = {
+		name = "GFX_go_to_genesian_pilgrimage"
+		texturefile = "gfx\\interface\\decision_genesian.dds"
+	}
+	spriteType = {
+		name = "GFX_read_bards"
+		texturefile = "gfx\\interface\\decision_genesian.dds"
 	}
 }

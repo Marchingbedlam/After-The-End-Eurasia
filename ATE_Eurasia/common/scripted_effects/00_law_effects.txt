@@ -309,3 +309,13 @@ increased_tribal_obligation_laws_effect = {
 		}
 	}
 }
+reimpostorite_dimitar_danielsin_effect = {
+	if = {
+		limit = { k_bulgaria = { holder_scope = { dynasty = 7534230 } } }
+		k_bulgaria = {
+		  holder_scope = {
+		     character_event = { id = greek.27 }
+		  }
+		}
+	}
+}

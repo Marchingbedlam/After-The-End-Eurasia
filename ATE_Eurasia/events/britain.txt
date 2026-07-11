@@ -1367,3 +1367,277 @@ narrative_event = { #Success and better life
 		piety = 20
 	}
 }
+
+################Remembrance Day
+
+character_event = {
+	id = britain.138
+	desc = EVTDESC_britain_138
+	picture = GFX_evt_remembrance_day
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_britain_138
+		any_vassal = {
+			limit = {
+			    OR = { 
+			       culture_group = britannic
+				   culture = irish
+				   culture = highlander
+				   culture = lowlander
+				   religion = glorian
+				}
+				prisoner = no
+				war = no
+				NOT = { trait = incapable }
+			}
+			character_event = { id = britain.139 days = 2 tooltip = EVTTOOLTIP_britain139 }
+		}
+		custom_tooltip = { text = remembrance_day_invitations_sent }
+		hidden_tooltip = { character_event = { id = britain.141 days = 5 } }
+		hidden_tooltip = {
+		add_character_modifier = {
+			name = rememberance_day_timer
+			duration = 360
+			hidden = yes
+		}
+		}
+	}
+}
+
+# Invitation Received
+character_event = {
+	id = britain.139
+	desc = EVTDESC_britain_139
+	picture = GFX_evt_remembrance_day
+	
+	is_triggered_only = yes
+
+	trigger = { NOT = { is_inaccessible_trigger = yes } }
+	
+	option = {
+		name = EVTOPTA_britain_139
+		ai_chance = {
+			factor = 95
+			modifier = {
+				factor = 0
+				opinion = { who = ROOT value <= -20 }
+			}
+		}
+		custom_tooltip = { text = remembrance_day_accepted }
+		set_character_flag = attending_remembrance_day
+		set_character_flag = do_not_disturb
+		hidden_tooltip = {
+		    add_character_modifier = {
+			   name = rememberance_day_timer
+			   duration = 360
+			   hidden = yes
+		    }
+		}
+		hidden_tooltip = { character_event = { id = proletcult.5 days = 3 } }
+	}
+	option = {
+		name = EVTOPTB_britain_139
+		ai_chance = {
+			factor = 5
+		}
+		FROM = {
+			opinion = {
+				modifier = opinion_refused_remembrance_day
+				who = ROOT
+			}
+		}
+		custom_tooltip = { text = remembrance_day_declined }
+		hidden_tooltip = {
+			FROM = { character_event = { id = britain.140 } }
+		}
+	}
+}
+
+# Invitation Refused
+character_event = {
+	id = britain.140
+	desc = EVTDESC_britain_140
+	picture = GFX_evt_remembrance_day
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_britain_140
+		opinion = {
+			modifier = opinion_refused_remembrance_day
+			who = FROM
+		}
+	}
+}
+
+narrative_event = {
+	id = britain.141
+	title = EVTNAME_britain_141
+	desc = EVTDESC_britain_141
+	picture = GFX_evt_remembrance_day
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_britain_141
+		random_list = {
+		   30 = {
+			  custom_tooltip = { text = remembrance_patriotic_play }
+			  narrative_event = { id = britain.144 }	   
+		   }
+		   30 = {
+		      custom_tooltip = { text = remembrance_meeting_with_veterans }
+			  narrative_event = { id = britain.145 } 
+		   }
+		   20 = {
+		   	  custom_tooltip = { text = remembrance_meeting_with_young }
+			  narrative_event = { id = britain.146 }
+		   }
+		   20 = {
+			  custom_tooltip = { text = remembrance_drunkards }
+			  narrative_event = { id = britain.147 }   
+		   }
+		}
+		if = {
+		   limit = { has_character_flag = attending_remembrance_day }
+		   character_event = { id = britain.142 days = 1 }
+		}
+	    else = { 
+		   character_event = { id = britain.143 days = 1 }
+		}
+	}
+}
+
+character_event = {
+	id = britain.142
+	desc = EVTDESC_britain_142
+	picture = GFX_evt_remembrance_day
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_britain_142
+		prestige = 50
+		if = {
+		   limit = { religion = glorian }
+		   piety = 50
+		}
+		clr_character_flag = attending_remembrance_day
+		clr_character_flag = rememberance_day
+		clr_character_flag = do_not_disturb
+	}
+}
+
+character_event = {
+	id = britain.143
+	desc = EVTDESC_britain_143
+	picture = GFX_evt_remembrance_day
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_britain_143
+		prestige = 100
+		if = {
+		   limit = { religion = glorian }
+		   piety = 100
+		}
+		clr_character_flag = do_not_disturb
+		clr_character_flag = rememberance_day
+		clr_character_flag = recent_minor_decision
+	}
+}
+
+long_character_event = {
+	id = britain.144
+	desc = EVTDESC_britain_144
+	picture = GFX_evt_remembrance_day
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_britain_144
+		wealth=-5
+		prestige=20
+		random_list = {
+		   10 = { add_trait="musician" }
+		   90 = { }
+		}
+	}
+}
+
+character_event = {
+	id = britain.145
+	desc = EVTDESC_britain_145
+	picture = GFX_evt_remembrance_day
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_britain_145
+		wealth=-10
+		prestige=50
+	}
+	
+	option = {
+		name = EVTOPTB_britain_145
+		prestige=-10
+	}
+	
+	option = {
+		name = EVTOPTC_britain_145
+		wealth=10
+		prestige=-100
+		add_trait="cruel"
+	}
+}
+
+character_event = {
+	id = britain.146
+	desc = EVTDESC_britain_146
+	picture = GFX_evt_remembrance_day
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_britain_146
+		prestige=20
+		random_list = {
+		   20 = { add_trait="trusting" }
+		   10 = { add_trait="honest" }
+		   10 = { add_trait="poet" }
+		   60 = { }
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_britain_146
+		random_list = {
+		  20 = { add_trait="cynical" }
+		  10 = { add_trait="deceitful" }
+		  70 = { } 
+		}
+	}
+}
+
+character_event = {
+	id = britain.147
+	desc = EVTDESC_britain_147
+	picture = GFX_evt_remembrance_day
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_britain_147
+		random_list = {
+		   10 = { death = { death_reason = death_rabble } }
+		   10 = { add_trait="maimed" }
+		   30 = { add_trait="wounded" }
+		   50 = { prestige=25 }
+		}
+	}
+}

@@ -1376,11 +1376,15 @@
 }
 1001073={
 	name="Andreth"
-	dynasty=0
+	dynasty=7534133
 	culture=westerner
 	female=yes
-	religion=valinorist
+	religion=glorian
+	father=1001227
 	2615.5.7={birth=yes}
+	2636.1.1={
+	   religion=valinorist
+	}
 	2662.1.2={death=yes}
 }
 1001074={
@@ -2227,7 +2231,7 @@
 	father=1001151
 	disallow_random_traits=yes
 	1004.1.1={birth=yes}
-	1059.1.1={death=yes} 
+	1062.1.1={death=yes} 
 }
 
 1001154={
@@ -3591,6 +3595,7 @@
 	trait="quick"
 	trait="content"
 	trait="fat"
+	trait="zealous"
 	learning=15
 	2631.2.12={birth=yes}
 	2660.1.1={
@@ -3624,4 +3629,59 @@
 	religion=glorian
 	2610.6.4={birth=yes}
 	2680.1.1={death=yes}
+}
+
+1001226={
+	name="Harold"
+	occluded=yes
+	dynasty=2335101
+	culture=westerner
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	1023.1.1={birth=yes}
+	1066.10.14={
+	   death={
+	      death_reason=death_battle
+		  killer=1001154
+	   }
+	}
+}
+1001230={
+	name="James"
+	dynasty=7534133
+	culture=westerner
+	religion=glorian
+	father=1001214
+	2564.1.1={birth=yes}
+	2634.9.22={death=yes}
+}
+1001227={
+	name="Christopher"
+	dynasty=7534133
+	culture=westerner
+	religion=glorian
+	father=1001230
+	2601.1.1={birth=yes}
+	2670.1.1={death=yes}
+}
+1001228={
+	name="Thomas"
+	dynasty=7534133
+	culture=westerner
+	religion=glorian
+	trait="twin"
+	father=1001227
+	2630.1.1={birth=yes}
+	2670.1.1={death=yes}
+}
+1001229={
+	name="James"
+	dynasty=7534133
+	culture=westerner
+	religion=glorian
+	trait="twin"
+	father=1001227
+	2630.1.1={birth=yes}
+	2670.1.1={death=yes}
 }

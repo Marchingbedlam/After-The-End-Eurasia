@@ -920,6 +920,35 @@ decisions = {
 			}
 		}
 	}
+	choose_genesian_branch = {
+		is_high_prio = yes
+		ai = no
+		
+		potential = {
+			religion = genesian
+			is_playable = yes
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		allow = {
+			religion = genesian
+			is_playable = yes
+			piety = 50
+		}
+		
+		effect = {
+		    piety = -50
+			hidden_tooltip = {
+				character_event = { id = genesian.45 }		
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+	}
 	celebrate_dziady = {
 	    is_high_prio = yes
 		only_playable = yes
@@ -961,8 +990,8 @@ decisions = {
 				text = is_not_busy_trigger_tooltip
 				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
 			}
-			month = 11
-			NOT = { month = 12 }
+			month = 10
+			NOT = { month = 11 }
 		}
 		effect = {
 			scaled_wealth = -0.2
@@ -1119,6 +1148,97 @@ decisions = {
 			factor = 0
 		}
 	}
+	celebrate_remembrance_day = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 3
+		potential = {
+			is_playable = yes
+			is_adult = yes
+			prisoner = no
+			OR = {
+			    culture_group = britannic
+				culture = irish
+				culture = highlander
+				culture = lowlander
+				religion = glorian
+			}
+			NOT = { has_character_modifier = rememberance_day_timer }
+			NOT = {	has_character_flag = rememberance_day }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+			month = 10
+			NOT = { month = 11 }
+		}
+		
+		allow = {
+			war = no
+			custom_tooltip = {
+				text = UNOCCUPIED_DEMESNE_TITLE
+				hidden_tooltip = {
+					any_demesne_title = {
+						NOT = { higher_tier_than = count }
+						is_occupied = no
+					}
+				}
+			}
+			month = 10
+			NOT = { month = 11 }
+			wealth = 50
+			prisoner = no
+			NOT = { is_inaccessible_trigger = yes }
+			custom_tooltip = {
+				text = is_not_busy_trigger_tooltip
+				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+		}
+		
+		effect = {
+			wealth = -50
+			set_character_flag = rememberance_day
+			set_character_flag = recent_minor_decision
+			set_character_flag = do_not_disturb
+			character_event = { id = britain.138 } 
+			if = {
+				limit = {
+					has_dlc = "Reapers"
+				}
+				custom_tooltip = {
+					text = capital_prospers_custom_tooltip
+					hidden_tooltip = {
+						capital_scope = {
+							change_variable = { which = prosperity_value value = 4 }
+						}
+					}
+				}
+			}
+		}
+			
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1	
+			modifier = {
+				factor = 0
+				NOT = {
+					wealth = 100
+				}
+			}
+			modifier = {
+				factor = 0
+				has_character_flag = recent_minor_decision
+				NOT = {
+					had_character_flag = {
+						flag = recent_minor_decision
+						days = 730
+					}
+				}
+			}
+		}
+	}
 	
 	celebrate_st_martin_day = {
 		only_playable = yes
@@ -1139,6 +1259,7 @@ decisions = {
 			}
 			month = 11
 			NOT = { month = 12 }
+			has_character_flag = iamtester
 		}
 		
 		allow = {
@@ -1215,6 +1336,46 @@ decisions = {
 					}
 				}
 			}
+		}
+	}
+	
+	legalize_dimitar_danielsin = {
+		only_playable = yes
+		is_high_prio = yes
+
+		potential = {
+			dynasty = 7534230
+			has_landed_title = k_bulgaria
+		}
+		allow = {
+			has_landed_title = k_bulgaria
+			war = no
+		}
+		effect = {
+	   hidden_tooltip = { 
+	      c_2072270 = { c_2072286 = { set_name = "Lazar" set_father = PREV dynasty=2047201 } } 
+		  c_2072272 = { c_2072286 = { set_mother = PREV } } 
+	   }
+	   c_2072286 = {
+			set_name = "Lazar"
+	   }
+	   any_character = {
+	    	limit = { dynasty = 7534230 }
+			dynasty=2047201
+			random_bloodline = {
+				limit = { has_bloodline_flag = bulgarian_impostor_bloodline }
+				add_bloodline_member = PREV
+			}
+	    }
+		c_2072275 = {
+		   dynasty = 7534230
+		   set_father = 0
+		   set_mother = 0
+		}
+		}
+		ai_check_interval = 3
+		ai_will_do = {
+			factor = 1000
 		}
 	}
 }

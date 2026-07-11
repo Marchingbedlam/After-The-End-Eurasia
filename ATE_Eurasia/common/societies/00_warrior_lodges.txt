@@ -6048,6 +6048,7 @@ warrior_lodge_neoplatonist = {
 		}
 		OR = {
 			religion = neoplatonist
+			religion = neohellenic
 			AND = {
 				custom_tooltip = {
 					text = society_has_at_least_10_members_tt
@@ -6069,6 +6070,7 @@ warrior_lodge_neoplatonist = {
 	show_society = {
 		OR = {
 			religion = neoplatonist
+			religion = neohellenic
 			AND = {
 				#You are of a religion that doesn't match *any* warrior lodge
 				has_religion_matching_available_warrior_lodge_trigger = no
@@ -6092,8 +6094,10 @@ warrior_lodge_neoplatonist = {
 	potential = { #if you change religion or become zealous while NOT pagan, you are kicked out
 		OR = {
 			religion = neoplatonist
+			religion = neohellenic
 			AND = {
 				NOT = { religion = neoplatonist }
+				NOT = { religion = neohellenic }
 				NOT = { trait = zealous }
 			}
 		}
@@ -6569,7 +6573,10 @@ warrior_lodge_neoplatonist = {
 		trigger = {
 			ai = yes
 			controls_religion = no
-			religion = neoplatonist
+			OR = {
+			   religion = neoplatonist
+			   religion = neohellenic
+			}
 			is_adult = yes
 			is_in_society = no
 			OR = {

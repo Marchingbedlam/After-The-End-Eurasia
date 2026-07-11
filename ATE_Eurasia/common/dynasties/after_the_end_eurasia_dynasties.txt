@@ -42491,7 +42491,7 @@ coat_of_arms = {
 	}
 }
 2335087 = { name = "Stenkil" culture = ostlending used_for_random = no }
-2335088 = { name = "Erik" culture = ostlending used_for_random = no
+2335088 = { name = "Erikid" culture = ostlending used_for_random = no
 	coat_of_arms = {
 		religion = nondescript_christian
 		template = 0
@@ -42505,7 +42505,7 @@ coat_of_arms = {
 		}
 	}
 }
-2335089 = { name = "Mecklenburg" culture = ostlending used_for_random=no
+2335089 = { name = "fra Pommern" culture = ostlending used_for_random=no
 	coat_of_arms = {
 		religion = nondescript_christian
 		template = 0
@@ -42665,8 +42665,8 @@ coat_of_arms = {
 		religion = nondescript_christian
 		template = 0
 		layer = {
-			texture = 5
-			texture_internal = 55
+			texture = 6
+			texture_internal = 26
 			emblem = 0
 			color = 0
 			color = 0
@@ -50530,7 +50530,20 @@ coat_of_arms = {
 	}
 }
 7534051 = { name = "Bonaparte" culture = french used_for_random = no }
-7534052 = { name = "di Savoia" culture = sardinian used_for_random = no }
+7534052 = { name = "di Savoia" culture = sardinian used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 28
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 7534053 = { name = "Ludolfing" culture = rhenish used_for_random = no }
 7534054 = { name = "Salian" culture = rhenish used_for_random = no }
 7534055 = { name = "Barbarossa" culture = german used_for_random = no }
@@ -50939,20 +50952,6 @@ coat_of_arms = {
 	}
 }
 7534113 = { name = "Báthory" culture = hungarian used_for_random = no }
-7534114 = { name = "Vasa" culture = swedish  used_for_random = no
-	coat_of_arms = {
-		religion = nondescript_christian
-		template = 0
-		layer = {
-			texture = 5
-			texture_internal = 45
-			emblem = 0
-			color = 0
-			color = 0
-			color = 0
-		}
-	}
-}
 7534115 = { name = "Sobieski" culture = polish used_for_random = no }
 7534116 = { name = "Poniatowski" culture = polish used_for_random = no }
 7534117 = { name = "d’Anjou" culture = french used_for_random = no 
@@ -51052,7 +51051,20 @@ coat_of_arms = {
 	}
 }
 7534132 = { name = "FitzOxford" culture = midlander used_for_random = no }
-7534133 = { name = "FitzPhilipp" culture = midlander used_for_random = no }
+7534133 = { name = "Churchill" culture = midlander used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 29
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 7534134 = { name = "Pendragon" 
     culture = westerner
     religion=arthurian 
@@ -51306,7 +51318,20 @@ coat_of_arms = {
 		}
 	}
 }
-7534158 = { name = "Românã" culture = romanian used_for_random = no }
+7534158 = { name = "Românã" culture = romanian used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 25
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 7534160 = { name = "Cadet" culture = reunionnese }
 7534161 = { name = "Payet" culture = reunionnese }
 7534162 = { name = "Grondin" culture = reunionnese }
@@ -51345,17 +51370,66 @@ coat_of_arms = {
 		}
 	}
 }
-7534185 = { name = "Legendarisk" culture = norwegian used_for_random = no }
 7534186 = { name = "Skjoldung" culture = danish used_for_random = no }
-7534187 = { name = "Tryggvasson" culture = norwegian used_for_random = no }
-7534188 = { name = "Estridsen" culture = danish used_for_random = no }
-7534189 = { name = "Estridsen" culture = danish used_for_random = no }
-7534190 = { name = "fra Pommern" culture = danish used_for_random = no }
-7534191 = { name = "Sverkersk" culture = swedish used_for_random = no }
-7534192 = { name = "Erikid" culture = swedish used_for_random = no }
-7534193 = { name = "von Mecklenburg" culture = ossi used_for_random = no }
-7534194 = { name = "Harfagreatta" culture = norwegian used_for_random = no }
-7534195 = { name = "Landjarl" culture = norwegian used_for_random = no }
+7534187 = { name = "Tryggvasson" culture = norwegian used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 34
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7534188 = { name = "Estridsen" culture = danish used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 35
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7534189 = { name = "Estridsen" culture = danish used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 35
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7534190 = { name = "Coburg" culture = danish used_for_random = no }
+7534191 = { name = "van Oranje-Nassau" culture = dutch used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 27
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7534194 = { name = "de Witt" culture = dutch used_for_random = no }
+7534195 = { name = "Ladejarl" culture = norwegian used_for_random = no }
 7534196 = { 
     name = "Murat" 
     culture = parisian
@@ -51658,4 +51732,41 @@ coat_of_arms = {
 			color = 0
 		}
 	}
+}
+7534230 = {  
+    name = "Danielsin" 
+	culture = bulgarian
+	used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 22
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7534231 = { name = "Yngling" culture = ostlending used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 55
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7534232 = {
+    name = "von Bismarck" 
+    culture = ossetian
+	religion = lutheran
+	used_for_random = no
 }

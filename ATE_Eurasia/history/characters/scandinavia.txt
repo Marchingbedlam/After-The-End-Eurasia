@@ -273,6 +273,13 @@
 	father=8000155
 	culture=danish
 	religion=lutheran
+	trait="mastermind_theologian"
+	trait="brave"
+	trait="ambitious"
+	trait="greedy"
+	trait="zealous"
+	trait="erudite"
+	give_nickname=nick_the_bloody
 	2482.8.5={birth=yes}
 	2531.1.1={death=yes}
 }
@@ -282,7 +289,19 @@
 	culture=danish
 	religion=folketro
 	father=8000000
+	trait="intricate_webweaver"
+	trait="hiddenfolk_cult"
+	trait="cynical"
+	trait="hunchback"
+	trait="quick"
+	trait="gregarious"
+	trait="deceitful"
 	2483.4.3={birth=yes}
+	2531.1.1={
+	    religion="fornsed"
+		remove_trait="hiddenfolk_cult"
+		add_trait="st_lucy"
+	}
 	2553.1.1={death={
 			death_reason=death_murder_drowning
 			killer=8000003
@@ -295,6 +314,12 @@
 	culture=danish
 	religion=lutheran
 	father=8000001
+	trait="fortune_builder"
+	trait="hunchback"
+	trait="quick"
+	trait="gregarious"
+	trait="kind"
+	trait="pious"
 	2502.6.5={birth=yes}
 	2568.1.1={death=yes}
 }
@@ -304,8 +329,14 @@
 	culture=danish
 	religion=lutheran
 	father=8000003
+	trait="tough_soldier"
+	trait="gluttonous"
+	trait="wroth"
+	trait="ambitious"
+	trait="cruel"
+	trait="erudite"
 	2523.4.3={birth=yes}
-		2569.1.1={
+	2569.1.1={
 		death={
 			death_reason=death_execution_flaying
 			killer=8000005
@@ -318,15 +349,26 @@
 	culture=danish
 	religion=lutheran
 	father=8000002
+	trait="midas_touched"
+	trait="quick"
+	trait="gregarious"
+	trait="kind"
 	2509.7.4={birth=yes}
 	2592.1.1={death=yes}
 }
 8000006={
-	name="Holger" #took advantage of Danish civil war, invaded
+	name="Holger" 
 	father=8000063
 	dynasty=2220179 #Skånske
 	culture=scanian
 	religion=folketro #maybe neonorse
+	trait="grey_eminence"
+	trait="apostle_cult"
+	trait="gregarious"
+	trait="cynical"
+	trait="ambitious"
+	trait="celibate"
+	give_nickname=nick_the_old
 	2520.4.3={birth=yes}
 	2610.1.1={death=yes}
 }
@@ -336,6 +378,11 @@
 	culture=danish
 	religion=lutheran
 	father=8000005
+	trait="mastermind_theologian"
+	trait="slow"
+	trait="content"
+	trait="kind"
+	trait="shy"
 	2540.7.4={birth=yes}
 	2630.1.1={death=yes}
 }
@@ -365,6 +412,9 @@
 	trait=just
 	trait=lustful
 	2590.6.2={birth=yes}
+	2624.1.1={
+	    add_spouse=80003710
+	}
 	2670.1.1={death=yes}
 }
 8000010={
@@ -383,6 +433,9 @@
 	trait=greedy
 	trait=honest
 	2600.4.15={birth=yes}
+	2621.1.1={
+	   add_spouse=80003712
+	}
 	2672.7.14={death=yes}
 }
 8000011={
@@ -638,7 +691,12 @@
 	learning=5
 	father=8000056
 	2375.1.1={birth=yes}
-	2420.1.1={death=yes}
+	2418.3.10={
+	  death={
+	     death_reason=death_battle_duel
+		 killer=8000152
+	  }
+	}
 }
 
 8000058={
@@ -1164,7 +1222,10 @@
 	learning=5
 	father=8000089
 	2475.1.1={birth=yes}
-	2513.1.1={death=yes}
+	2513.1.1={death={
+			death_reason=death_rabble
+		}
+	}
 }
 
 8000091={
@@ -1185,7 +1246,10 @@
 	father=8000089
 	2476.1.1={birth=yes}
 	2510.1.1={give_nickname=nick_the_wanderer}
-	2514.1.1={death=yes}
+	2514.1.1={death={
+			death_reason=death_murder
+		}
+	}
 }
 
 8000092={
@@ -1585,6 +1649,7 @@
 	trait=apostle_cult
 	trait=just
 	trait=gregarious
+	father=80003707
 	2644.1.1={birth=yes}
 	2670.1.1={death=yes}
 }
@@ -1640,6 +1705,7 @@
 	culture=danish
 	religion=lutheran
 	father=8000010
+	mother=80003712
 	trait=underhanded_rogue
 	trait=ruthless
 	trait=rude
@@ -1654,6 +1720,7 @@
 	culture=danish
 	religion=lutheran
 	father=8000010
+	mother=80003712
 	trait=grey_eminence
 	trait=gregarious
 	trait=kind
@@ -1669,11 +1736,15 @@
 	culture=danish
 	religion=lutheran
 	father=8000009
+	mother=80003710
 	trait=indulgent_wastrel
 	trait=fat
 	trait=proud
 	trait=dull
 	2626.6.2={birth=yes}
+	2648.1.1={
+	   add_spouse=80003711
+	}
 	2670.1.1={death=yes}
 }
 
@@ -1683,6 +1754,7 @@
 	culture=danish
 	religion=lutheran
 	father=8000124
+	mother=80003711
 	trait=tough_soldier
 	trait=hunter
 	trait=shy
@@ -1701,6 +1773,7 @@
 	culture=danish
 	religion=lutheran
 	father=8000124
+	mother=80003711
 	trait=tough_soldier
 	trait=duelist
 	trait=shrewd
@@ -1716,6 +1789,15 @@
 	dynasty=2220464 #Vigfors
 	culture=svealander
 	religion=folketro
+	trait="brilliant_strategist"
+	trait="hiddenfolk_cult"
+	trait="giant"
+	trait="strong"
+	trait="ambitious"
+	trait="charitable"
+	trait="cruel"
+	trait="brave"
+	give_nickname=nick_the_great
 	mother=8000127
 	2100.1.1={birth=yes}
 	2200.1.1={death=yes}
@@ -1727,6 +1809,14 @@
 	culture=svealander
 	religion=folketro
 	father=8000128
+	trait="midas_touched"
+	trait="apostle_cult"
+	trait="quick"
+	trait="is_fat"
+	trait="gluttonous"
+	trait="patient"
+	trait="just"
+	give_nickname=nick_the_good
 	2150.1.1={birth=yes}
 	2250.1.1={death=yes}
 }
@@ -1736,6 +1826,16 @@
 	dynasty=2220464 #Vigfors
 	culture=svealander
 	religion=folketro
+	trait="skilled_tactician"
+	trait="apostle_cult"
+	trait="attractive"
+	trait="proud"
+	trait="arbitrary"
+	trait="cruel"
+	trait="brave"
+	trait="berserker"
+	trait="scarred_mid"
+	give_nickname=nick_the_strong
 	father=8000129
 	2230.1.1={birth=yes}
 	2300.1.1={death=yes}
@@ -1747,6 +1847,10 @@
 	culture=svealander
 	religion=folketro
 	father=8000130
+	trait="grey_eminence"
+	trait="patient"
+	trait="paranoid"
+	trait="greedy"
 	2250.1.1={birth=yes}
 	2313.1.1={death=yes}
 }
@@ -1807,8 +1911,18 @@
 	culture=svealander
 	religion=folketro
 	father=8000136
+	trait="indulgent_wastrel"
+	trait="trusting"
+	trait="painter"
+	trait="poet"
+	trait="kind"
+	trait="chaste"
 	2394.1.1={birth=yes}
-	2412.1.1={death=yes}
+	2412.1.1={
+	   death={
+	      death_reason=death_execution_hanging
+	   }
+	}
 }
 
 8000138={
@@ -1858,6 +1972,11 @@
 	culture=svealander
 	religion=folketro
 	father=8000141
+	trait="elusive_shadow"
+	trait="apostle_cult"
+	trait="patient"
+	trait="ruthless"
+	trait="deceitful"
 	2395.1.1={birth=yes}
 	2414.1.1={give_nickname=nick_the_restorer}
 	2448.1.1={death=yes}
@@ -1870,6 +1989,9 @@
 	religion=folketro
 	trait=strong 
 	trait=skilled_tactician
+	trait=proud
+	trait=zealous
+	trait=hiddenfolk_cult
 	father=8000142
 	2421.1.1={birth=yes}
 	2484.1.1={death={
@@ -1930,6 +2052,11 @@
 	dynasty=2223005 #Danneskiold
 	father=8000146
 	trait=twin
+	trait=kind
+	trait=patient
+	trait=chaste
+	trait=pious
+	trait=shy
 	culture=danish
 	religion=lutheran
 	2300.1.1={birth=yes}
@@ -1973,14 +2100,30 @@
 	father=8000151
 	culture=danish
 	religion=lutheran
+	trait="lunatic"
+	trait="kind"
+	trait="wroth"
+	trait="chaste"
+	trait="gregarious"
+	trait="brave"
+	give_nickname=nick_the_fearless
 	2389.1.1={birth=yes}
-	2418.1.1={death=yes}
+	2409.1.1={
+	    add_spouse=80003706
+	}
+	2418.3.10={
+	death={
+	     death_reason=death_battle_duel
+		 killer=8000057
+	  }
+	}
 }
 
 8000153={
 	name="Ulrik"
 	dynasty=2223005 #Danneskiold
 	father=8000152
+	mother=80003706
 	culture=danish
 	religion=lutheran
 	2410.1.1={birth=yes}
@@ -2134,9 +2277,20 @@
 	dynasty=2220345 #Vasa
 	culture=svealander
 	religion=folketro
+	trait="intricate_webweaver"
+	trait="one_legged"
+	trait="ambitious"
+	trait="ruthless"
+	trait="cynical"
+	trait="apostle_cult"
 	father=8000143
 	2445.1.1={birth=yes}
-	2521.1.1={death=yes}
+	2488.1.1={
+	   death={
+	      death_reason=death_battle
+		  killer=8000183
+	   }
+	}
 }
 
 8000169={
@@ -2195,7 +2349,7 @@
 	culture=svealander
 	religion=folketro
 	father=8000173
-	2609.1.1={birth=yes}
+	2615.1.1={birth=yes}
 	2658.1.1={death=yes}
 }
 
@@ -2721,7 +2875,7 @@
 	disallow_random_traits=yes 
 	employer=8000073
 	2621.1.1={birth=yes}
-	2670.1.1={death=yes}
+	2655.2.5={death=yes}
 }
 
 8000226={
@@ -3744,16 +3898,19 @@
 }
 
 80003530={
-	name="Folke" #Duke of Finland
+	name="Folke" 
  	dynasty=2220347 #Stenhammar
 	culture=fennoswede
-	religion=folketro
+	religion=fornsed
 	trait=elusive_shadow
 	trait=master_schemer
-	trait=apostle_cult
+	trait=st_peter
 	trait=fat 
 	trait=ambitious 
 	2612.1.1={birth=yes}
+	2645.1.1={
+	   add_spouse=80003713
+	}
 	2650.1.1={give_nickname=nick_the_greater}
 	2660.1.1={
 		effect={
@@ -3764,7 +3921,7 @@
 }
 
 80003531={
-	name="Eero" #King of Finland
+	name="Eero" #President of Finland
  	dynasty=2220813
 	culture=finnish
 	religion=lutheran
@@ -3774,6 +3931,9 @@
 	trait=humble 
 	trait=giant
 	2643.1.1={birth=yes}
+	2664.1.1={
+	   add_spouse=80003719
+	}
 	2670.1.1={death=yes}
 }
 
@@ -3787,6 +3947,7 @@
 	trait=wroth 
 	trait=kind 
 	trait=just 
+	father=80003717
 	2631.1.1={birth=yes}
 	2670.1.1={death=yes}
 }
@@ -3801,7 +3962,7 @@
 	trait=quick 
 	trait=shy 
 	trait=cruel 
-	2638.1.1={birth=yes}
+	2645.1.1={birth=yes}
 	2670.1.1={death=yes}
 }
 
@@ -3829,6 +3990,7 @@
 	trait=proud 
 	trait=authoritative
 	trait=direct_leader
+	father=80003720
 	2633.1.1={birth=yes}
 	2670.1.1={death=yes}
 }
@@ -4129,7 +4291,7 @@
 	religion=folketro
 	dynasty=2335104
 	2577.1.1={birth=yes}
-	2614.1.1={death=yes}
+	2618.1.1={death=yes}
 }
 
 80003570={
@@ -4244,7 +4406,10 @@
 	culture=ostlending
 	religion=folketro
 	dynasty=2335104
-	2639.1.1={birth=yes}
+	2623.1.1={birth=yes}
+	2645.1.1={
+	   religion="calvinist"
+	}
 	2667.1.1={death=yes}
 }
 
@@ -4852,7 +5017,959 @@
 	2680.1.1={death=yes}
 }
 
+########## Pre-Kalmar Kings of Denmark
+
+80003634={
+	name="Regnar"
+	occluded=yes
+	dynasty=2335085
+	culture=danish
+	religion=nysed
+	trait=legendary
+	disallow_random_traits=yes
+	give_nickname=nick_lodbrok
+	820.1.1={birth=yes}
+	865.1.1={death=yes}
+}
+
+80003635={
+	name="Gorm"
+	occluded=yes
+	dynasty=2335095
+	culture=danish
+	religion=nysed
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003634
+	give_nickname=nick_the_old
+	850.1.1={birth=yes}
+	958.1.1={death=yes}
+}
+80003636={
+	name="Harald"
+	occluded=yes
+	dynasty=2335095
+	culture=danish
+	religion=catholic
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003635
+	give_nickname=nick_bluetooth
+	911.1.1={birth=yes}
+	987.1.1={death=yes}
+}
+80003637={
+	name="Svend"
+	occluded=yes
+	dynasty=2335095
+	culture=danish
+	religion=catholic
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003636
+	960.1.1={birth=yes}
+	1014.1.1={death=yes}
+}
+80003638={
+	name="Knud"
+	occluded=yes
+	dynasty=2335095
+	culture=danish
+	religion=catholic
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003637
+	give_nickname=nick_hardeknud
+	995.1.1={birth=yes}
+	1042.1.1={death=yes}
+}
+80003639={
+	name="Knud"
+	occluded=yes
+	dynasty=7534188
+	culture=danish
+	religion=catholic
+	trait=legendary
+	disallow_random_traits=yes
+	trait="saint"
+	give_nickname=nick_the_saint
+	1040.1.1={birth=yes}
+	1086.7.10={
+	   death={
+	       death_reason=death_murder
+	   }
+	}
+}
+80003640={
+	name="Valdemar"
+	occluded=yes
+	dynasty=7534189
+	culture=danish
+	religion=catholic
+	trait=legendary
+	disallow_random_traits=yes
+	give_nickname=nick_the_conqueror
+	1141.1.1={birth=yes}
+	1241.1.1={death=yes}
+}
+80003641={
+	name="Erik"
+	occluded=yes
+	dynasty=7534189
+	culture=danish
+	religion=catholic
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003640
+	1216.1.1={birth=yes}
+	1250.1.1={death=yes}
+}
+80003642={
+	name="Christoffer Abel"
+	occluded=yes
+	dynasty=7534189
+	culture=danish
+	religion=catholic
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003640
+	1218.1.1={birth=yes}
+	1286.1.1={death=yes}
+}
+80003643={
+	name="Erik"
+	occluded=yes
+	dynasty=7534189
+	culture=danish
+	religion=catholic
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003642
+	1249.1.1={birth=yes}
+	1319.1.1={death=yes}
+}
+80003644={
+	name="Christoffer"
+	occluded=yes
+	dynasty=7534189
+	culture=danish
+	religion=catholic
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003643
+	1276.1.1={birth=yes}
+	1332.1.1={death=yes}
+}
+80003645={
+	name="Valdemar"
+	occluded=yes
+	dynasty=7534189
+	culture=danish
+	religion=catholic
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003644
+	1320.1.1={birth=yes}
+	1375.1.1={death=yes}
+}
+80003646={
+	name="Margrete"
+	female=yes
+	occluded=yes
+	dynasty=7534189
+	culture=danish
+	religion=catholic
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003644
+	1353.1.1={birth=yes}
+	1412.1.1={death=yes}
+}
+
+########## Pre-Kalmar Kings of Sweden
+
+80003647={
+	name="Björn"
+	occluded=yes
+	dynasty=2335085
+	culture=swedish
+	religion=nysed
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003634
+	855.1.1={birth=yes}
+	970.1.1={death=yes}
+}
+
+80003648={
+	name="Erik"
+	occluded=yes
+	dynasty=2335085
+	culture=swedish
+	religion=nysed
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003647
+	give_nickname=nick_the_victorious
+	945.1.1={birth=yes}
+	995.1.1={death=yes}
+}
+
+80003649={
+	name="Olov"
+	occluded=yes
+	dynasty=2335085
+	culture=swedish
+	religion=catholic
+	trait=legendary
+	trait=saint
+	disallow_random_traits=yes
+	father=80003648
+	give_nickname=nick_the_saint
+	980.1.1={birth=yes}
+	1022.1.1={
+	   death={
+	      death_reason=death_murder
+	   }
+	}
+}
+
+80003650={
+	name="Sverker"
+	occluded=yes
+	dynasty=2335086
+	culture=swedish
+	religion=catholic
+	trait=legendary
+	disallow_random_traits=yes
+	1100.1.1={birth=yes}
+	1156.12.25={
+	   death={
+	      death_reason=death_murder
+	   }
+	}
+}
+
+80003651={
+	name="Erik"
+	occluded=yes
+	dynasty=2335088
+	culture=swedish
+	religion=catholic
+	trait=legendary
+	trait=saint
+	disallow_random_traits=yes
+	1125.1.1={birth=yes}
+	1160.3.18={
+	   death={
+	      death_reason=death_murder
+	   }
+	}
+}
+
+80003652={
+	name="Karl"
+	occluded=yes
+	dynasty=2335086
+	culture=swedish
+	religion=catholic
+	trait=legendary
+	trait=saint
+	disallow_random_traits=yes
+	father=80003650
+	1130.1.1={birth=yes}
+	1167.1.1={death=yes}
+}
+
+80003653={
+	name="Knut"
+	occluded=yes
+	dynasty=2335088
+	culture=swedish
+	religion=catholic
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003651
+	1140.1.1={birth=yes}
+	1196.1.1={death=yes}
+}
+
+80003654={
+	name="Erik"
+	occluded=yes
+	dynasty=2335088
+	culture=swedish
+	religion=catholic
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003653
+	1180.1.1={birth=yes}
+	1250.1.1={death=yes}
+}
+
+80003655={
+	name="Birger"
+	occluded=yes
+	dynasty=2335084
+	culture=swedish
+	religion=catholic
+	trait=legendary
+	disallow_random_traits=yes
+	1210.1.1={birth=yes}
+	1290.1.1={death=yes}
+}
+
+########## Pre-Kalmar Kings of Norway
+
+80003656={
+	name="Harald"
+	occluded=yes
+	dynasty=2335082
+	culture=norwegian
+	religion=nysed
+	trait=legendary
+	disallow_random_traits=yes
+	give_nickname=nick_fairhair
+	850.1.1={birth=yes}
+	932.1.1={death=yes}
+}
+
+80003657={
+	name="Håkon"
+	occluded=yes
+	dynasty=2335082
+	culture=norwegian
+	religion=catholic
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003656
+	905.1.1={birth=yes}
+	935.1.1={death=yes}
+}
+
+80003658={
+	name="Line of Sigurd Rise"
+	occluded=yes
+	dynasty=2335082
+	culture=norwegian
+	religion=catholic
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003657
+	932.1.1={birth=yes}
+	1100.1.1={death=yes}
+}
+
+80003659={
+	name="Håkon"
+	occluded=yes
+	dynasty=7534195
+	culture=norwegian
+	religion=nysed
+	trait=legendary
+	disallow_random_traits=yes
+	915.1.1={birth=yes}
+	995.1.1={death=yes}
+}
+
+80003660={
+	name="Olav"
+	occluded=yes
+	dynasty=7534187
+	culture=norwegian
+	religion=catholic
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003703
+	963.1.1={birth=yes}
+	1000.1.1={death=yes}
+}
+
+80003661={
+	name="Olav"
+	occluded=yes
+	dynasty=7534231
+	culture=norwegian
+	religion=catholic
+	trait=legendary
+	trait=saint
+	disallow_random_traits=yes
+	give_nickname=nick_the_holy
+	father=80003705
+	995.1.1={birth=yes}
+	1030.7.29={
+	   death={
+	      death_reason=death_battle
+	   } 
+	}
+}
+
+80003662={
+	name="Magnus"
+	occluded=yes
+	dynasty=7534231
+	culture=norwegian
+	religion=catholic
+	trait=legendary
+	trait=saint
+	disallow_random_traits=yes
+	give_nickname=nick_the_good
+	father=80003661
+	1024.1.1={birth=yes}
+	1047.1.1={death=yes}
+}
+
+80003663={
+	name="Harald"
+	occluded=yes
+	dynasty=2335082
+	culture=norwegian
+	religion=catholic
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003658
+	1014.1.1={birth=yes}
+	1066.1.1={
+	   death={
+	      death_reason=death_battle
+	   }
+	}
+}
+
+80003664={
+	name="Magnus"
+	occluded=yes
+	dynasty=2335082
+	culture=norwegian
+	religion=catholic
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003663
+	1060.1.1={birth=yes}
+	1103.1.1={
+	   death={
+	      death_reason=death_battle
+	   }
+	}
+}
+
+80003665={
+	name="Sigurd"
+	occluded=yes
+	dynasty=2335082
+	culture=norwegian
+	religion=catholic
+	trait=legendary
+	trait=crusader
+	disallow_random_traits=yes
+	father=80003664
+	1090.1.1={birth=yes}
+	1130.1.1={death=yes}
+}
+
+80003666={
+	name="Sigurd"
+	occluded=yes
+	dynasty=2335082
+	culture=norwegian
+	religion=catholic
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003665
+	1123.1.1={birth=yes}
+	1155.1.1={death=yes}
+}
+
+80003667={
+	name="Magnus"
+	occluded=yes
+	dynasty=2335100
+	culture=norwegian
+	religion=catholic
+	trait=legendar
+	disallow_random_traits=yes
+	father=80003665
+	1125.1.1={birth=yes}
+	1177.1.1={death=yes}
+}
+
+80003668={
+	name="Sverre"
+	occluded=yes
+	dynasty=2335083
+	culture=faroese
+	religion=catholic
+	trait=legendary
+	trait=bastard
+	disallow_random_traits=yes
+	father=80003666
+	1151.1.1={birth=yes}
+	1202.1.1={death=yes}
+}
+
+80003669={
+	name="Håkon"
+	occluded=yes
+	dynasty=2335083
+	culture=norwegian
+	religion=catholic
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003668
+	1182.1.1={birth=yes}
+	1204.1.1={death=yes}
+}
+
+80003670={
+	name="Håkon"
+	occluded=yes
+	dynasty=2335083
+	culture=norwegian
+	religion=catholic
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003669
+	give_nickname=nick_the_old
+	1204.1.1={birth=yes}
+	1263.1.1={death=yes}
+}
+
+80003671={
+	name="Magnus"
+	occluded=yes
+	dynasty=2335083
+	culture=norwegian
+	religion=catholic
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003670
+	1238.1.1={birth=yes}
+	1280.1.1={death=yes}
+}
+
+############### Kalmar Kings
+
+80003672={
+	name="Erik"
+	occluded=yes
+	dynasty=2335089
+	culture=odrzan
+	religion=catholic
+	trait=legendary
+	disallow_random_traits=yes
+	1382.1.1={birth=yes}
+	1448.1.1={death=yes}
+}
+
+80003673={
+	name="Natt"
+	female=yes
+	occluded=yes
+	dynasty=2335099
+	culture=norwegian
+	religion=folketro
+	trait=legendary
+	disallow_random_traits=yes
+	1397.1.1={birth=yes}
+	1814.1.1={death=yes}
+}
+
+80003674={
+	name="Christian"
+	occluded=yes
+	dynasty=2335099
+	culture=danish
+	religion=catholic
+	trait=legendary
+	disallow_random_traits=yes
+	mother=80003673
+	1426.1.1={birth=yes}
+	1481.1.1={death=yes}
+}
+
+80003675={
+	name="Hans"
+	occluded=yes
+	dynasty=2335099
+	culture=danish
+	religion=catholic
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003674
+	1455.1.1={birth=yes}
+	1513.1.1={death=yes}
+}
+
+80003676={
+	name="Christian"
+	occluded=yes
+	dynasty=2335099
+	culture=danish
+	religion=catholic
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003675
+	1481.1.1={birth=yes}
+	1559.1.1={death=yes}
+}
+
+80003677={
+	name="Frederik"
+	occluded=yes
+	dynasty=2335099
+	culture=danish
+	religion=catholic
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003674
+	1471.1.1={birth=yes}
+	1533.1.1={death=yes}
+}
+
+80003678={
+	name="Christian"
+	occluded=yes
+	dynasty=2335099
+	culture=danish
+	religion=lutheran
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003677
+	1503.1.1={birth=yes}
+	1559.1.1={death=yes}
+}
+
+80003679={
+	name="Christian Frederik"
+	occluded=yes
+	dynasty=2335099
+	culture=danish
+	religion=lutheran
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003678
+	1534.1.1={birth=yes}
+	1648.1.1={death=yes}
+}
+
+80003680={
+	name="Christian Frederik Enevalden"
+	occluded=yes
+	dynasty=2335099
+	culture=danish
+	religion=lutheran
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003679
+	1629.1.1={birth=yes}
+	1746.1.1={death=yes}
+}
+
+80003681={
+	name="Christian"
+	occluded=yes
+	dynasty=2335099
+	culture=danish
+	religion=lutheran
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003680
+	1739.1.1={birth=yes}
+	1808.1.1={death=yes}
+}
+
+80003682={
+	name="Frederik"
+	occluded=yes
+	dynasty=2335099
+	culture=danish
+	religion=lutheran
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003681
+	1768.1.1={birth=yes}
+	1839.1.1={death=yes}
+}
+
+80003683={
+	name="Christian Frederik"
+	occluded=yes
+	dynasty=2335099
+	culture=danish
+	religion=lutheran
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003682
+	1808.1.1={birth=yes}
+	1863.1.1={death=yes}
+}
+
+80003702={
+	name="Christian Frederik"
+	occluded=yes
+	dynasty=20072087
+	culture=danish
+	religion=lutheran
+	trait=legendary
+	disallow_random_traits=yes
+	1818.1.1={birth=yes}
+	1912.1.1={death=yes}
+}
+
+80003684={
+	name="Christian"
+	occluded=yes
+	dynasty=20072087
+	culture=danish
+	religion=lutheran
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003702
+	1870.1.1={birth=yes}
+	1947.1.1={death=yes}
+}
+
+80003685={
+	name="Håkon"
+	occluded=yes
+	dynasty=20072087
+	culture=norwegian
+	religion=lutheran
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003702
+	1872.1.1={birth=yes}
+	1957.1.1={death=yes}
+}
+
+80003686={
+	name="Charles Jean"
+	occluded=yes
+	dynasty=2335094
+	culture=parisian
+	religion=lutheran
+	trait=legendary
+	disallow_random_traits=yes
+	father=8002113
+	1773.1.1={birth=yes}
+	1859.1.1={death=yes}
+}
+
+80003687={
+	name="Oscar"
+	occluded=yes
+	dynasty=2335094
+	culture=parisian
+	religion=lutheran
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003686
+	1826.1.1={birth=yes}
+	1907.1.1={death=yes}
+}
+
+80003688={
+	name="Gustaf"
+	occluded=yes
+	dynasty=2335094
+	culture=parisian
+	religion=lutheran
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003687
+	1858.1.1={birth=yes}
+	1950.1.1={death=yes}
+}
+
+80003689={
+	name="Gustaf"
+	occluded=yes
+	dynasty=2335090
+	culture=swedish
+	religion=lutheran
+	trait=legendary
+	disallow_random_traits=yes
+	1496.1.1={birth=yes}
+	1560.1.1={death=yes}
+}
+
+80003690={
+	name="Johan"
+	occluded=yes
+	dynasty=2335090
+	culture=swedish
+	religion=lutheran
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003689
+	1537.1.1={birth=yes}
+	1563.1.1={
+	   add_spouse=212641
+	}
+	1592.1.1={death=yes}
+}
+
+80003691={
+	name="Gustaf"
+	occluded=yes
+	dynasty=2335090
+	culture=swedish
+	religion=lutheran
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003689
+	1550.1.1={birth=yes}
+	1632.1.1={death=yes}
+}
+
+80003692={
+	name="Kristina"
+	female=yes
+	occluded=yes
+	dynasty=2335090
+	culture=swedish
+	religion=catholic
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003691
+	1626.1.1={birth=yes}
+	1689.1.1={death=yes}
+}
+
+80003693={
+	name="Karl Gustaf"
+	occluded=yes
+	dynasty=2335091
+	culture=swedish
+	religion=lutheran
+	trait=legendary
+	disallow_random_traits=yes
+	1622.1.1={birth=yes}
+	1697.1.1={death=yes}
+}
+
+80003694={
+	name="Karl"
+	occluded=yes
+	dynasty=2335091
+	culture=swedish
+	religion=lutheran
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003693
+	1682.1.1={birth=yes}
+	1718.1.1={
+	   death={
+	      death_reason=death_battle
+	   }
+	}
+}
+
 80003695={
+	name="Ulrika Eleonora"
+	female=yes
+	occluded=yes
+	dynasty=2335091
+	culture=swedish
+	religion=lutheran
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003693
+	1688.1.1={birth=yes}
+	1741.1.1={death=yes}
+}
+
+80003696={
+	name="Frederik"
+	female=yes
+	occluded=yes
+	dynasty=2335092
+	culture=swedish
+	religion=lutheran
+	trait=legendary
+	disallow_random_traits=yes
+	1676.1.1={birth=yes}
+	1751.1.1={death=yes}
+}
+
+80003697={
+	name="Gustaf Adolf Frederik"
+	occluded=yes
+	dynasty=2335093
+	culture=swedish
+	religion=lutheran
+	trait=legendary
+	trait=is_fat
+	disallow_random_traits=yes
+	1720.1.1={birth=yes}
+	1792.1.1={death=yes}
+}
+
+80003698={
+	name="Gustaf Adolf"
+	occluded=yes
+	dynasty=2335093
+	culture=swedish
+	religion=lutheran
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003697
+	1768.1.1={birth=yes}
+	1809.1.1={death=yes}
+}
+
+80003699={
+	name="Karl"
+	occluded=yes
+	dynasty=2335093
+	culture=swedish
+	religion=lutheran
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003697
+	1770.1.1={birth=yes}
+	1818.1.1={death=yes}
+}
+
+80003705={
+	name="Line of Bjorn Farmann"
+	occluded=yes
+	dynasty=2335082
+	culture=norwegian
+	religion=catholic
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003657
+	932.1.1={birth=yes}
+	1100.1.1={death=yes}
+}
+
+80003703={
+	name="Line of Olav Geirstadaalf"
+	occluded=yes
+	dynasty=2335082
+	culture=norwegian
+	religion=catholic
+	trait=legendary
+	disallow_random_traits=yes
+	father=80003657
+	932.1.1={birth=yes}
+	1100.1.1={death=yes}
+}
+
+80003704={
+	name="Karl"
+	occluded=yes
+	dynasty=2335102
+	culture=swedish
+	religion=catholic
+	trait=legendary
+	disallow_random_traits=yes
+	1408.1.1={birth=yes}
+	1470.1.1={death=yes}
+}
+
+80003700={
 	name="Kaarle Kustaa"
 	dynasty=7534227 
 	occluded=yes
@@ -4862,7 +5979,7 @@
 	1867.6.4={birth=yes}
 	1960.1.1={death=yes}
 }
-80003696={
+80003701={
 	name="Valdemar"
 	dynasty=2223001 #Sønderborg
 	culture=danish
@@ -4888,4 +6005,227 @@
 	2637.4.19={birth=yes}
 	2658.1.1={add_claim=k_denmark}
 	2700.1.1={death=yes}
+}
+80003706={
+	name="Astrid"
+	female=yes
+	culture=danish
+	religion=lutheran
+	trait="attractive"
+	trait="authoritative"
+	trait="patient"
+	trait="shy"
+	trait="familyperson"
+	trait="cancer"
+	2388.1.1={birth=yes}
+	2424.1.1={
+	   death={
+	      death_reason=death_trait
+	   }
+	}
+}
+80003707={
+	name="Sigismund"
+	dynasty=2220346 #Swedenborg 
+	culture=svealander
+	religion=folketro
+	trait=tough_soldier
+	trait=apostle_cult
+	trait=attractive
+	trait=quick
+	trait=ambitious
+	trait=cynical
+	trait=authoritative
+	trait=sympathy_christendom
+	2610.1.1={birth=yes}
+	2664.1.1={death=yes}
+}
+80003708={
+	name="Jan"
+	dynasty=0
+	culture=finnish
+	religion=fornsed
+	trait="mastermind_theologian"
+	trait="sympathy_christendom"
+	trait="st_peter"
+	trait="quick"
+	trait="proud"
+	trait="kind"
+	trait="temperate"
+	trait="pious"
+	trait="erudite"
+	trait="painter"
+	give_nickname=nick_the_blessed
+	mother=80003521
+	dna="0dbeh0ac0b0"
+	properties="x00a0j00000000000000000000000000000000"
+	2515.1.1={birth=yes}
+	2542.1.1={
+	   death={
+	      death_reason=death_murder
+	   }
+	}
+}
+80003709={
+	name="Margaret"
+	female=yes
+	dynasty=2223001 #Sønderborg
+	culture=danish
+	religion=lutheran
+	father=8000010
+	mother=80003712
+	2624.6.24={birth=yes}
+	2672.7.14={death=yes}
+}
+80003710={
+	name="Rosa"
+	female=yes
+	father=80003551
+	dynasty=2220303 #Lademoen
+	culture=tronder
+	religion=fornsed
+	trait="grey_eminence"
+	trait="deceitful"
+	trait="shy"
+	trait="ambitious"
+	trait="cynical"
+	trait="master_schemer"
+	trait="st_olav"
+	2607.1.1={birth=yes}
+	2680.1.1={death=yes}
+}
+80003711={
+	name="Eli"
+	female=yes
+	father=8000177
+	dynasty=2220467 #af Lönneberg
+	culture=gotalander
+	religion=lutheran
+	trait="shy"
+	trait="kind"
+	trait="pious"
+	2625.1.1={birth=yes}
+	2680.1.1={death=yes}
+}
+80003712={
+	name="Vilhelmina"
+	female=yes
+	dynasty=2223082 #Gyldmark
+	culture=danish
+	religion=lutheran
+	father=8000156
+	2598.4.3={birth=yes}
+	2670.5.2={death=yes}
+}
+80003713={
+	name="Katja"
+	female=yes
+	culture=danish
+	religion=lutheran
+	trait="st_lucy"
+	trait="zealous"
+	trait="proud"
+	trait="ruthless"
+	2620.1.1={birth=yes}
+	2670.5.2={death=yes}
+}
+80003714={
+	name="Viktor" 
+ 	dynasty=2220347 #Stenhammar
+	culture=fennoswede
+	religion=fornsed
+	trait=st_olav
+	father=80003530
+	mother=80003713
+	2648.4.22={birth=yes}
+	2670.1.1={death=yes}
+}
+80003715={
+	name="Katja"
+	female=yes
+ 	dynasty=2220347 #Stenhammar
+	culture=fennoswede
+	religion=fornsed
+	trait=st_lucy
+	trait=kind
+	trait=chaste
+	trait=honest
+	father=80003530
+	mother=80003713
+	2652.8.11={birth=yes}
+	2670.1.1={death=yes}
+}
+80003716={
+	name="Stefan" 
+ 	dynasty=2220347 #Stenhammar
+	culture=fennoswede
+	religion=fornsed
+	trait=st_olav
+	father=80003530
+	mother=80003713
+	2656.7.7={birth=yes}
+	2670.1.1={death=yes}
+}
+80003717={
+	name="Jaska"
+ 	dynasty=2220815
+	culture=finnish
+	religion=lutheran
+	trait=strong
+	trait=giant
+	trait=kind
+	trait=gregarious
+	2599.1.1={birth=yes}
+	2655.1.1={death=yes}
+}
+80003718={
+	name="Jaska"
+ 	dynasty=2220815
+	culture=finnish
+	religion=lutheran
+	trait=mastermind_theologian
+	trait=hunchback
+	trait=kind
+	trait=pious
+	trait=erudite
+	father=80003717
+	give_nickname=nick_the_younger
+	2635.1.1={birth=yes}
+	2670.1.1={death=yes}
+}
+80003719={
+	name="Liisa"
+	female=yes
+ 	dynasty=2220815
+	culture=finnish
+	religion=lutheran
+	father=80003717
+	2640.1.1={birth=yes}
+	2670.1.1={death=yes}
+}
+80003720={
+	name="Siitäri"
+ 	dynasty=2220968
+	culture=karelian 
+	religion=lutheran
+	2597.1.1={birth=yes}
+	2645.1.1={death=yes}
+}
+80003521={
+	name="Jaska"
+ 	dynasty=2220968
+	culture=karelian 
+	religion=lutheran
+	father=80003720
+	2639.1.1={birth=yes}
+	2670.1.1={death=yes}
+}
+80003522={
+	name="Akseli"
+ 	dynasty=2220968
+	culture=karelian 
+	religion=lutheran
+	father=80003720
+	2643.1.1={birth=yes}
+	2670.1.1={death=yes}
 }

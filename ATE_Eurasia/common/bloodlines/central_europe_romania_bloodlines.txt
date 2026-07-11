@@ -55,7 +55,7 @@ first_king_of_bulgaria_blood = {
 	inheritance = patrilineal
 	allow_bastards = yes
 	picture = GFX_bloodlines_symbol_lion
-	flags = { created_bloodline }
+	flags = { created_bloodline historical_bloodline bulgarian_impostor_bloodline }
 	active = {
 		culture = bulgarian
 	}

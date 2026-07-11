@@ -55,20 +55,20 @@ bm_western_europe = {
 			dynasty=1949031
 		}
 	}
-	selectable_character = { #Georges Colonna-Walewski of Ile-de-France
-		id = 1804032
+	selectable_character = { #President Albert-René de l'Étoile
+		id = 1804046
 		age = 38
-		name = ERA_CHAR_NAME_1804032
-		title = d_ile_de_france
-		title_name = d_ile_de_france
+		name = ERA_CHAR_NAME_1804046
+		title = e_jacobin
+		title_name = e_jacobin
 		
 		character = {
-			dna = cfujxjluspq
-			properties = cl0emd000000000000000000000000000000000
+			dna = bbfhe0e0cb0
+			properties = 0g0bbk00000000000000000000000000000000
 			religion="jacobin"
 			culture="parisian"
-			government = merchant_republic_government
-			dynasty=2009215
+			government = jacobin_government
+			dynasty=2009220
 		}
 	}
 	selectable_character = { #Gionna Agnesi of Lumbardia
@@ -108,9 +108,9 @@ bm_eastern_europe = {
 		character = {
 			dna = qapdmzbciva
 			properties = adr0nc00000000000000000000000000000000
-			religion="mariavite"
+			religion="genesian"
 			culture="odrzan"
-			government = feudal_government
+			government = communal_government
 			dynasty=2124000
 		}
 	}
@@ -240,15 +240,15 @@ bm_the_muslim_world = {
 		id = 2107000
 		age = 27
 		name = ERA_CHAR_NAME_2107000
-		title = d_riyad
-		title_name = d_riyad
+		title = e_arabiyya
+		title_name = e_arabiyya
 		
 		character = {
 			dna = ocsvvdextmq
 			properties = mi0dmd000000000000000000000000000000000
 			religion="ahl_as_salaf"
 			culture="najdi"
-			government = ghazi_government
+			government = diwan_government
 			dynasty=21007000
 		}
 	}

@@ -705,6 +705,7 @@ apostle_cult = {
 	
 	monthly_character_piety = 0.5
 	diplomacy = 1
+	fornsed_opinion=5
 	
 	potential = { religion = folketro }
 	religious_branch = folketro
@@ -721,6 +722,7 @@ hiddenfolk_cult = {
 	
 	monthly_character_prestige = 1
 	martial = 1
+	nysed_opinion=5
 	
 	potential = { religion = folketro }
 	religious_branch = folketro
@@ -769,7 +771,7 @@ nysed_elves = {
 	}
 	learning = 1
 	poet_opinion = 5
-	monthly_character_piety = 0.20
+	monthly_character_piety = 0.50
 	
 	potential = { religion = nysed }
 	religious_branch = nysed
@@ -784,7 +786,8 @@ nysed_wild_hunt = {
 		nysed_fiddler
 	}
 	martial = 1
-	monthly_character_piety = 0.20
+	monthly_character_piety = 0.50
+	same_opinion = 10
 	opposite_opinion = -10
 	
 	potential = { religion = nysed }
@@ -802,7 +805,7 @@ nysed_fiddler = {
 	diplomacy = 1
 	poet_opinion = 5
 	musician_opinion = 5
-	monthly_character_piety = 0.20
+	monthly_character_piety = 0.50
 	
 	potential = { religion = nysed }
 	religious_branch = nysed
@@ -817,7 +820,7 @@ nysed_thor = {
 		nysed_fiddler
 	}
 	martial = 1
-	monthly_character_piety = 0.20
+	monthly_character_piety = 0.50
 	
 	potential = { religion = nysed }
 	religious_branch = nysed
@@ -2774,6 +2777,42 @@ pravoslavie_st_tichon_of_moscow = {
 	
 	potential = { religion = pravoslavie }
 	religious_branch = pravoslavie
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+genesian_faith_of_fathers = {
+	opposites = {
+		genesian_cult_of_nature
+	}
+	diplomacy = 1
+	christian_church_opinion = 5
+	folketro_opinion = 5
+	fornsed_opinion = 5
+	mariavite_opinion = 5
+	monthly_character_piety = 0.2
+	
+	potential = { religion = genesian }
+	religious_branch = genesian
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+genesian_cult_of_nature = {
+	opposites = {
+		genesian_faith_of_fathers
+	}
+	stewardship = 1
+	diplomacy = 1
+	pagan_opinion = 5
+	folketro_opinion = 5
+	nysed_opinion = 5
+	monthly_character_piety = 0.2
+	
+	potential = { religion = genesian }
+	religious_branch = genesian
 	random = no 
 	religious = yes 
 	ruler_designer_cost = 0

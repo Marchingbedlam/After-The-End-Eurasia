@@ -749,3 +749,39 @@ character_event = {
 		piety=80
 	}
 }
+
+character_event = { #Dimitar Danielsin Legacy
+	id = greek.27
+	desc = EVTDESC_greek_27
+	is_triggered_only = yes
+ 
+	only_rulers = yes
+ 
+	trigger = {
+		dynasty = 7534230
+	}
+
+	option = {
+	    name = EVTOPTA_greek_27
+	   hidden_tooltip = { 
+	      c_2072270 = { c_2072286 = { set_name = "Lazar" set_father = PREV dynasty=2047201 } } 
+		  c_2072272 = { c_2072286 = { set_mother = PREV } } 
+	   }
+	   c_2072286 = {
+			set_name = "Lazar"
+	   }
+	   any_character = {
+	    	limit = { dynasty = 7534230 }
+			dynasty=2047201
+			random_bloodline = {
+				limit = { has_bloodline_flag = bulgarian_impostor_bloodline }
+				add_bloodline_member = PREV
+			}
+	    }
+		c_2072275 = {
+		   dynasty = 7534230
+		   set_father = 0
+		   set_mother = 0
+		}
+	}
+}
