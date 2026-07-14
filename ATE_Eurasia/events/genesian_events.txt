@@ -842,7 +842,7 @@ character_event = {
 	
 	option = {
 		name = EVTOPTD_genesian_27
-	    piety-10
+	    piety = -10
 		random_list = {
 		  50 = { add_trait="slothful" }
 		  50 = { }
