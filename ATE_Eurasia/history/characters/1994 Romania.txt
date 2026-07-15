@@ -719,6 +719,9 @@
 		add_claim=e_romania
 		add_claim=k_dobruja
 	}
+	2652.1.1={
+	    add_spouse=1993274
+	}
 	2680.1.1={death=yes}
 }
 1994111={
@@ -770,6 +773,9 @@
 	2644.3.15={
 		add_claim=e_romania
 		add_claim=k_wallachia
+	}
+	2646.1.1={
+	    add_spouse=2072292
 	}
 	2680.1.1={death=yes}
 }
@@ -1090,4 +1096,59 @@
 	disallow_random_traits=yes
 	1921.1.1={birth=yes}
 	2000.1.1={death=yes}
+}
+
+1994156={
+	name="Dragan"
+	dynasty=2046103 #Dragescu
+	culture=romanian
+	religion=orthodox
+	trait=charismatic_negotiator
+	trait=hunchback
+	trait=quick
+	father=1994113
+	mother=2072292
+	2647.10.25={birth=yes}
+	2680.1.1={death=yes}
+}
+
+1994157={
+	name="Mihai"
+	dynasty=2046103 #Dragescu
+	culture=romanian
+	religion=orthodox
+	trait=charismatic_negotiator
+	trait=hunchback
+	trait=quick
+	trait=kind
+	trait=pious
+	trait=erudite
+	father=1994113
+	mother=2072292
+	2655.6.14={birth=yes}
+	2680.1.1={death=yes}
+}
+
+1994158={
+	name="Viviana"
+	female=yes
+	dynasty=2046103 #Dragescu
+	culture=romanian
+	religion=orthodox
+	trait=attractive
+	father=1994113
+	mother=2072292
+	2652.12.27={birth=yes}
+	2680.1.1={death=yes}
+}
+
+1994159={
+	name="Mihai"
+	dynasty=2046103 #Dragescu
+	culture=romanian
+	religion=orthodox
+	father=1994110
+	mother=1993274
+	2654.4.17={birth=yes}
+	2680.1.1={death=yes}
 }

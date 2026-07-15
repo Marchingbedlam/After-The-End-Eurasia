@@ -20,6 +20,11 @@ character_event = {
 		}
 		add_trait = worker_saint_lenin
 		piety = -50
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 2 diplomacy = 5 }
+			modifier = { factor = 2 intrigue = 5 }
+		}
 	}
 
 	option = {
@@ -29,6 +34,11 @@ character_event = {
 		}
 		add_trait = worker_saint_molotov
 		piety = -50
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 2 diplomacy = 5 }
+			modifier = { factor = 2 learning = 5 }
+		}
 	}
 	
 	option = {
@@ -38,6 +48,11 @@ character_event = {
 		}
 		add_trait = worker_saint_the_marshal
 		piety = -50
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 2 martial = 5 }
+			modifier = { factor = 2 stewardship = 5 }
+		}
 	}
 	
 	option = {
@@ -47,6 +62,11 @@ character_event = {
 		}
 		add_trait = worker_saint_lysenko
 		piety = -50
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 2 learning = 5 }
+			modifier = { factor = 2 stewardship = 5 }
+		}
 	}
 }
 

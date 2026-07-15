@@ -1243,15 +1243,23 @@ religion_has_excommunication = {
 		religion = apparitionist
 		religion = constitutionalist
 		religion = marcelianist
+		religion = penitant
+		religion = mariavite
+		religion = coronite
 		religion = orthodox
 		religion = oldcalendarist
 		religion = antipalamite
+		religion = old_believer
+		religion = pravoslavie
+		religion = dvoeverie
 		religion = miaphysite
 		religion = monophysite
 		religion = monothelite
 		religion = paulician
 		religion = nestorian
+		religion = apostolic
 		religion = yazidi
+		religion = fornsed
 	}
 }
 
@@ -1273,6 +1281,7 @@ religion_has_seven_virtue = {
 	}
 
 	religion_group = christian
+	
 }
 
 is_antipope = {
@@ -1290,5 +1299,6 @@ is_cardinal = {
 		has_minor_title = title_allamah
 		has_minor_title = title_archierus
 		has_minor_title = title_proletcult_member
+		has_minor_title = title_fornsed_elector
 	}
 }

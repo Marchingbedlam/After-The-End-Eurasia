@@ -2782,6 +2782,869 @@ pravoslavie_st_tichon_of_moscow = {
 	ruler_designer_cost = 0
 }
 
+orthodox_holy_mary = {
+	opposites = {
+		orthodox_st_nicholas
+		orthodox_paraskeva_anastasia
+		orthodox_constatine_the_great
+		orthodox_gregory_palamas
+		orthodox_photios
+		orthodox_saint_athanasius
+		orthodox_saint_basil_the_great
+		orthodox_saint_george
+		orthodox_saint_john_chrysostom
+		orthodox_st_cyril_and_methodius
+	}
+	diplomacy = 1
+	health = 0.5 
+	monthly_character_piety = 0.2
+	
+	ai_zeal = 10
+	
+	potential = { religion = orthodox }
+	religious_branch = orthodox
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+orthodox_st_nicholas = {
+	opposites = {
+		orthodox_holy_mary
+		orthodox_paraskeva_anastasia
+		orthodox_constatine_the_great
+		orthodox_gregory_palamas
+		orthodox_photios
+		orthodox_saint_athanasius
+		orthodox_saint_basil_the_great
+		orthodox_saint_george
+		orthodox_saint_john_chrysostom
+		orthodox_st_cyril_and_methodius
+	}
+	diplomacy = 1
+	same_opinion=10
+	monthly_character_piety = 0.2
+	
+	potential = { religion = orthodox }
+	religious_branch = orthodox
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+orthodox_paraskeva_anastasia = {
+	opposites = {
+		orthodox_holy_mary
+		orthodox_st_nicholas
+		orthodox_constatine_the_great
+		orthodox_gregory_palamas
+		orthodox_photios
+		orthodox_saint_athanasius
+		orthodox_saint_basil_the_great
+		orthodox_saint_george
+		orthodox_saint_john_chrysostom
+		orthodox_st_cyril_and_methodius
+	}
+	diplomacy = 1
+	same_opinion = 5
+	opposite_opinion = 5
+	monthly_character_piety = 0.2
+	
+	ai_zeal = 10
+	
+	potential = { religion = orthodox }
+	religious_branch = orthodox
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+orthodox_constatine_the_great = {
+	opposites = {
+		orthodox_holy_mary
+		orthodox_st_nicholas
+		orthodox_paraskeva_anastasia
+		orthodox_gregory_palamas
+		orthodox_photios
+		orthodox_saint_athanasius
+		orthodox_saint_basil_the_great
+		orthodox_saint_george
+		orthodox_saint_john_chrysostom
+		orthodox_st_cyril_and_methodius
+	}
+	martial = 1
+	vassal_opinion = 5
+	monthly_character_prestige = 0.1
+	monthly_character_piety = 0.1
+	
+	ai_ambition = 10
+	
+	potential = { religion = orthodox }
+	religious_branch = orthodox
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+orthodox_gregory_palamas = {
+	opposites = {
+		orthodox_holy_mary
+		orthodox_st_nicholas
+		orthodox_paraskeva_anastasia
+		orthodox_constatine_the_great
+		orthodox_photios
+		orthodox_saint_athanasius
+		orthodox_saint_basil_the_great
+		orthodox_saint_george
+		orthodox_saint_john_chrysostom
+		orthodox_st_cyril_and_methodius
+	}
+	learning = 1
+	same_opinion = 10
+	church_opinion = 5
+	antipalamite_opinion = -10
+	monthly_character_piety = 0.2
+	
+	potential = { religion = orthodox }
+	religious_branch = orthodox
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+orthodox_photios = {
+	opposites = {
+		orthodox_holy_mary
+		orthodox_st_nicholas
+		orthodox_paraskeva_anastasia
+		orthodox_constatine_the_great
+		orthodox_gregory_palamas
+		orthodox_saint_athanasius
+		orthodox_saint_basil_the_great
+		orthodox_saint_george
+		orthodox_saint_john_chrysostom
+		orthodox_st_cyril_and_methodius
+	}
+	learning = 1
+	same_opinion = 10
+	church_opinion = 5
+	erudite_opinion = 5
+	scholar_opinion = 5
+	neoplatonist_opinion = 5
+	catholic_opinion = -10
+	monthly_character_piety = 0.2
+	
+	ai_zeal = 10
+	
+	potential = { religion = orthodox }
+	religious_branch = orthodox
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+orthodox_saint_athanasius = {
+	opposites = {
+		orthodox_holy_mary
+		orthodox_st_nicholas
+		orthodox_paraskeva_anastasia
+		orthodox_constatine_the_great
+		orthodox_gregory_palamas
+		orthodox_photios
+		orthodox_saint_basil_the_great
+		orthodox_saint_george
+		orthodox_saint_john_chrysostom
+		orthodox_st_cyril_and_methodius
+	}
+	stewardship = 1
+	church_opinion = 5
+    build_time_modifier = -0.05
+    construction_time_modifier = -0.05
+	monthly_character_piety = 0.2
+	
+	potential = { religion = orthodox }
+	religious_branch = orthodox
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+orthodox_saint_basil_the_great = {
+	opposites = {
+		orthodox_holy_mary
+		orthodox_st_nicholas
+		orthodox_paraskeva_anastasia
+		orthodox_constatine_the_great
+		orthodox_gregory_palamas
+		orthodox_photios
+		orthodox_saint_athanasius
+		orthodox_saint_george
+		orthodox_saint_john_chrysostom
+		orthodox_st_cyril_and_methodius
+	}
+	diplomacy = 1
+	same_opinion = 10
+	church_opinion = 5
+	monthly_character_piety = 0.2
+	
+	potential = { religion = orthodox }
+	religious_branch = orthodox
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+orthodox_saint_george = {
+	opposites = {
+		orthodox_holy_mary
+		orthodox_st_nicholas
+		orthodox_paraskeva_anastasia
+		orthodox_constatine_the_great
+		orthodox_gregory_palamas
+		orthodox_photios
+		orthodox_saint_athanasius
+		orthodox_saint_basil_the_great
+		orthodox_saint_john_chrysostom
+		orthodox_st_cyril_and_methodius
+	}
+	martial = 1
+	combat_rating = 10
+	monthly_character_piety = 0.2
+	
+	potential = { religion = orthodox }
+	religious_branch = orthodox
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+orthodox_saint_john_chrysostom = {
+	opposites = {
+		orthodox_holy_mary
+		orthodox_st_nicholas
+		orthodox_paraskeva_anastasia
+		orthodox_constatine_the_great
+		orthodox_gregory_palamas
+		orthodox_photios
+		orthodox_saint_athanasius
+		orthodox_saint_basil_the_great
+		orthodox_saint_george
+		orthodox_st_cyril_and_methodius
+	}
+	diplomacy = 1
+	same_opinion = 5
+	same_religion_opinion = 5
+	cynical_opinion = -10
+	monthly_character_piety = 0.2
+	
+	potential = { religion = orthodox }
+	religious_branch = orthodox
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+orthodox_st_cyril_and_methodius = {
+	opposites = {
+		orthodox_holy_mary
+		orthodox_st_nicholas
+		orthodox_paraskeva_anastasia
+		orthodox_constatine_the_great
+		orthodox_gregory_palamas
+		orthodox_photios
+		orthodox_saint_athanasius
+		orthodox_saint_basil_the_great
+		orthodox_saint_george
+		orthodox_saint_john_chrysostom
+	}
+	diplomacy = 1
+	same_opinion = 5
+	west_slavic_group_opinion = 5
+	monthly_character_piety = 0.2
+	
+	potential = { religion = orthodox }
+	religious_branch = orthodox
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+oldcalendarist_holy_mary = {
+	opposites = {
+		oldcalendarist_st_nicholas
+		oldcalendarist_paraskeva_anastasia
+		oldcalendarist_constatine_the_great
+		oldcalendarist_gregory_palamas
+		oldcalendarist_photios
+		oldcalendarist_saint_athanasius
+		oldcalendarist_saint_basil_the_great
+		oldcalendarist_saint_george
+		oldcalendarist_saint_john_chrysostom
+		oldcalendarist_st_cyril_and_methodius
+	}
+	diplomacy = 1
+	health = 0.5 
+	monthly_character_piety = 0.2
+	
+	ai_zeal = 10
+	
+	potential = { religion = oldcalendarist }
+	religious_branch = oldcalendarist
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+oldcalendarist_st_nicholas = {
+	opposites = {
+		oldcalendarist_holy_mary
+		oldcalendarist_paraskeva_anastasia
+		oldcalendarist_constatine_the_great
+		oldcalendarist_gregory_palamas
+		oldcalendarist_photios
+		oldcalendarist_saint_athanasius
+		oldcalendarist_saint_basil_the_great
+		oldcalendarist_saint_george
+		oldcalendarist_saint_john_chrysostom
+		oldcalendarist_st_cyril_and_methodius
+	}
+	diplomacy = 1
+	same_opinion=10
+	monthly_character_piety = 0.2
+	
+	potential = { religion = oldcalendarist }
+	religious_branch = oldcalendarist
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+oldcalendarist_paraskeva_anastasia = {
+	opposites = {
+		oldcalendarist_holy_mary
+		oldcalendarist_st_nicholas
+		oldcalendarist_constatine_the_great
+		oldcalendarist_gregory_palamas
+		oldcalendarist_photios
+		oldcalendarist_saint_athanasius
+		oldcalendarist_saint_basil_the_great
+		oldcalendarist_saint_george
+		oldcalendarist_saint_john_chrysostom
+		oldcalendarist_st_cyril_and_methodius
+	}
+	diplomacy = 1
+	same_opinion = 5
+	opposite_opinion = 5
+	monthly_character_piety = 0.2
+	
+	ai_zeal = 10
+	
+	potential = { religion = oldcalendarist }
+	religious_branch = oldcalendarist
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+oldcalendarist_constatine_the_great = {
+	opposites = {
+		oldcalendarist_holy_mary
+		oldcalendarist_st_nicholas
+		oldcalendarist_paraskeva_anastasia
+		oldcalendarist_gregory_palamas
+		oldcalendarist_photios
+		oldcalendarist_saint_athanasius
+		oldcalendarist_saint_basil_the_great
+		oldcalendarist_saint_george
+		oldcalendarist_saint_john_chrysostom
+		oldcalendarist_st_cyril_and_methodius
+	}
+	martial = 1
+	vassal_opinion = 5
+	monthly_character_prestige = 0.1
+	monthly_character_piety = 0.1
+	
+	ai_ambition = 10
+	
+	potential = { religion = oldcalendarist }
+	religious_branch = oldcalendarist
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+oldcalendarist_gregory_palamas = {
+	opposites = {
+		oldcalendarist_holy_mary
+		oldcalendarist_st_nicholas
+		oldcalendarist_paraskeva_anastasia
+		oldcalendarist_constatine_the_great
+		oldcalendarist_photios
+		oldcalendarist_saint_athanasius
+		oldcalendarist_saint_basil_the_great
+		oldcalendarist_saint_george
+		oldcalendarist_saint_john_chrysostom
+		oldcalendarist_st_cyril_and_methodius
+	}
+	learning = 1
+	same_opinion = 10
+	church_opinion = 5
+	antipalamite_opinion = -10
+	monthly_character_piety = 0.2
+	
+	potential = { religion = oldcalendarist }
+	religious_branch = oldcalendarist
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+oldcalendarist_photios = {
+	opposites = {
+		oldcalendarist_holy_mary
+		oldcalendarist_st_nicholas
+		oldcalendarist_paraskeva_anastasia
+		oldcalendarist_constatine_the_great
+		oldcalendarist_gregory_palamas
+		oldcalendarist_saint_athanasius
+		oldcalendarist_saint_basil_the_great
+		oldcalendarist_saint_george
+		oldcalendarist_saint_john_chrysostom
+		oldcalendarist_st_cyril_and_methodius
+	}
+	learning = 1
+	same_opinion = 10
+	church_opinion = 5
+	erudite_opinion = 5
+	scholar_opinion = 5
+	neoplatonist_opinion = 5
+	catholic_opinion = -10
+	monthly_character_piety = 0.2
+	
+	ai_zeal = 10
+	
+	potential = { religion = oldcalendarist }
+	religious_branch = oldcalendarist
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+oldcalendarist_saint_athanasius = {
+	opposites = {
+		oldcalendarist_holy_mary
+		oldcalendarist_st_nicholas
+		oldcalendarist_paraskeva_anastasia
+		oldcalendarist_constatine_the_great
+		oldcalendarist_gregory_palamas
+		oldcalendarist_photios
+		oldcalendarist_saint_basil_the_great
+		oldcalendarist_saint_george
+		oldcalendarist_saint_john_chrysostom
+		oldcalendarist_st_cyril_and_methodius
+	}
+	stewardship = 1
+	church_opinion = 5
+    build_time_modifier = -0.05
+    construction_time_modifier = -0.05
+	monthly_character_piety = 0.2
+	
+	potential = { religion = oldcalendarist }
+	religious_branch = oldcalendarist
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+oldcalendarist_saint_basil_the_great = {
+	opposites = {
+		oldcalendarist_holy_mary
+		oldcalendarist_st_nicholas
+		oldcalendarist_paraskeva_anastasia
+		oldcalendarist_constatine_the_great
+		oldcalendarist_gregory_palamas
+		oldcalendarist_photios
+		oldcalendarist_saint_athanasius
+		oldcalendarist_saint_george
+		oldcalendarist_saint_john_chrysostom
+		oldcalendarist_st_cyril_and_methodius
+	}
+	diplomacy = 1
+	same_opinion = 10
+	church_opinion = 5
+	monthly_character_piety = 0.2
+	
+	potential = { religion = oldcalendarist }
+	religious_branch = oldcalendarist
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+oldcalendarist_saint_george = {
+	opposites = {
+		oldcalendarist_holy_mary
+		oldcalendarist_st_nicholas
+		oldcalendarist_paraskeva_anastasia
+		oldcalendarist_constatine_the_great
+		oldcalendarist_gregory_palamas
+		oldcalendarist_photios
+		oldcalendarist_saint_athanasius
+		oldcalendarist_saint_basil_the_great
+		oldcalendarist_saint_john_chrysostom
+		oldcalendarist_st_cyril_and_methodius
+	}
+	martial = 1
+	combat_rating = 10
+	monthly_character_piety = 0.2
+	
+	potential = { religion = oldcalendarist }
+	religious_branch = oldcalendarist
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+oldcalendarist_saint_john_chrysostom = {
+	opposites = {
+		oldcalendarist_holy_mary
+		oldcalendarist_st_nicholas
+		oldcalendarist_paraskeva_anastasia
+		oldcalendarist_constatine_the_great
+		oldcalendarist_gregory_palamas
+		oldcalendarist_photios
+		oldcalendarist_saint_athanasius
+		oldcalendarist_saint_basil_the_great
+		oldcalendarist_saint_george
+		oldcalendarist_st_cyril_and_methodius
+	}
+	diplomacy = 1
+	same_opinion = 5
+	same_religion_opinion = 5
+	cynical_opinion = -10
+	monthly_character_piety = 0.2
+	
+	potential = { religion = oldcalendarist }
+	religious_branch = oldcalendarist
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+oldcalendarist_st_cyril_and_methodius = {
+	opposites = {
+		oldcalendarist_holy_mary
+		oldcalendarist_st_nicholas
+		oldcalendarist_paraskeva_anastasia
+		oldcalendarist_constatine_the_great
+		oldcalendarist_gregory_palamas
+		oldcalendarist_photios
+		oldcalendarist_saint_athanasius
+		oldcalendarist_saint_basil_the_great
+		oldcalendarist_saint_george
+		oldcalendarist_saint_john_chrysostom
+	}
+	diplomacy = 1
+	same_opinion = 5
+	west_slavic_group_opinion = 5
+	south_slavic_group_opinion = 5
+	east_slavic_group_opinion = 5
+	monthly_character_piety = 0.2
+	
+	potential = { religion = oldcalendarist }
+	religious_branch = oldcalendarist
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+antipalamite_holy_mary = {
+	opposites = {
+		antipalamite_st_nicholas
+		antipalamite_paraskeva_anastasia
+		antipalamite_constatine_the_great
+		antipalamite_barlaam_of_seminara
+		antipalamite_photios
+		antipalamite_saint_athanasius
+		antipalamite_anna_of_savoy
+		antipalamite_saint_george
+		antipalamite_saint_john_chrysostom
+		antipalamite_st_cyril_and_methodius
+	}
+	diplomacy = 1
+	health = 0.5 
+	monthly_character_piety = 0.2
+	
+	ai_zeal = 10
+	
+	potential = { religion = antipalamite }
+	religious_branch = antipalamite
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+antipalamite_st_nicholas = {
+	opposites = {
+		antipalamite_holy_mary
+		antipalamite_paraskeva_anastasia
+		antipalamite_constatine_the_great
+		antipalamite_barlaam_of_seminara
+		antipalamite_photios
+		antipalamite_saint_athanasius
+		antipalamite_anna_of_savoy
+		antipalamite_saint_george
+		antipalamite_saint_john_chrysostom
+		antipalamite_st_cyril_and_methodius
+	}
+	diplomacy = 1
+	same_opinion=10
+	monthly_character_piety = 0.2
+	
+	potential = { religion = antipalamite }
+	religious_branch = antipalamite
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+antipalamite_paraskeva_anastasia = {
+	opposites = {
+		antipalamite_holy_mary
+		antipalamite_st_nicholas
+		antipalamite_constatine_the_great
+		antipalamite_barlaam_of_seminara
+		antipalamite_photios
+		antipalamite_saint_athanasius
+		antipalamite_anna_of_savoy
+		antipalamite_saint_george
+		antipalamite_saint_john_chrysostom
+		antipalamite_st_cyril_and_methodius
+	}
+	diplomacy = 1
+	same_opinion = 5
+	opposite_opinion = 5
+	monthly_character_piety = 0.2
+	
+	ai_zeal = 10
+	
+	potential = { religion = antipalamite }
+	religious_branch = antipalamite
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+antipalamite_constatine_the_great = {
+	opposites = {
+		antipalamite_holy_mary
+		antipalamite_st_nicholas
+		antipalamite_paraskeva_anastasia
+		antipalamite_barlaam_of_seminara
+		antipalamite_photios
+		antipalamite_saint_athanasius
+		antipalamite_anna_of_savoy
+		antipalamite_saint_george
+		antipalamite_saint_john_chrysostom
+		antipalamite_st_cyril_and_methodius
+	}
+	martial = 1
+	vassal_opinion = 5
+	monthly_character_prestige = 0.1
+	monthly_character_piety = 0.1
+	
+	ai_ambition = 10
+	
+	potential = { religion = antipalamite }
+	religious_branch = antipalamite
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+antipalamite_barlaam_of_seminara = {
+	opposites = {
+		antipalamite_holy_mary
+		antipalamite_st_nicholas
+		antipalamite_paraskeva_anastasia
+		antipalamite_constatine_the_great
+		antipalamite_photios
+		antipalamite_saint_athanasius
+		antipalamite_anna_of_savoy
+		antipalamite_saint_george
+		antipalamite_saint_john_chrysostom
+		antipalamite_st_cyril_and_methodius
+	}
+	learning = 1
+	same_opinion = 10
+	neoplatonist_opinion = 10
+	church_opinion = 5
+	orthodox_opinion = -10
+	monthly_character_piety = 0.2
+	
+	potential = { religion = antipalamite }
+	religious_branch = antipalamite
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+antipalamite_photios = {
+	opposites = {
+		antipalamite_holy_mary
+		antipalamite_st_nicholas
+		antipalamite_paraskeva_anastasia
+		antipalamite_constatine_the_great
+		antipalamite_barlaam_of_seminara
+		antipalamite_saint_athanasius
+		antipalamite_anna_of_savoy
+		antipalamite_saint_george
+		antipalamite_saint_john_chrysostom
+		antipalamite_st_cyril_and_methodius
+	}
+	learning = 1
+	same_opinion = 10
+	church_opinion = 5
+	erudite_opinion = 5
+	scholar_opinion = 5
+	neoplatonist_opinion = 5
+	catholic_opinion = -10
+	monthly_character_piety = 0.2
+	
+	ai_zeal = 10
+	
+	potential = { religion = antipalamite }
+	religious_branch = antipalamite
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+antipalamite_saint_athanasius = {
+	opposites = {
+		antipalamite_holy_mary
+		antipalamite_st_nicholas
+		antipalamite_paraskeva_anastasia
+		antipalamite_constatine_the_great
+		antipalamite_barlaam_of_seminara
+		antipalamite_photios
+		antipalamite_anna_of_savoy
+		antipalamite_saint_george
+		antipalamite_saint_john_chrysostom
+		antipalamite_st_cyril_and_methodius
+	}
+	stewardship = 1
+	church_opinion = 5
+    build_time_modifier = -0.05
+    construction_time_modifier = -0.05
+	monthly_character_piety = 0.2
+	
+	potential = { religion = antipalamite }
+	religious_branch = antipalamite
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+antipalamite_anna_of_savoy = {
+	opposites = {
+		antipalamite_holy_mary
+		antipalamite_st_nicholas
+		antipalamite_paraskeva_anastasia
+		antipalamite_constatine_the_great
+		antipalamite_barlaam_of_seminara
+		antipalamite_photios
+		antipalamite_saint_athanasius
+		antipalamite_saint_george
+		antipalamite_saint_john_chrysostom
+		antipalamite_st_cyril_and_methodius
+	}
+	diplomacy = 1
+	fertility = 0.1
+	monthly_character_piety = 0.2
+	
+	potential = { religion = antipalamite }
+	religious_branch = antipalamite
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+antipalamite_saint_george = {
+	opposites = {
+		antipalamite_holy_mary
+		antipalamite_st_nicholas
+		antipalamite_paraskeva_anastasia
+		antipalamite_constatine_the_great
+		antipalamite_barlaam_of_seminara
+		antipalamite_photios
+		antipalamite_saint_athanasius
+		antipalamite_anna_of_savoy
+		antipalamite_saint_john_chrysostom
+		antipalamite_st_cyril_and_methodius
+	}
+	martial = 1
+	combat_rating = 10
+	monthly_character_piety = 0.2
+	
+	potential = { religion = antipalamite }
+	religious_branch = antipalamite
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+antipalamite_saint_john_chrysostom = {
+	opposites = {
+		antipalamite_holy_mary
+		antipalamite_st_nicholas
+		antipalamite_paraskeva_anastasia
+		antipalamite_constatine_the_great
+		antipalamite_barlaam_of_seminara
+		antipalamite_photios
+		antipalamite_saint_athanasius
+		antipalamite_anna_of_savoy
+		antipalamite_saint_george
+		antipalamite_st_cyril_and_methodius
+	}
+	diplomacy = 1
+	same_opinion = 5
+	same_religion_opinion = 5
+	cynical_opinion = -10
+	monthly_character_piety = 0.2
+	
+	potential = { religion = antipalamite }
+	religious_branch = antipalamite
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+antipalamite_st_cyril_and_methodius = {
+	opposites = {
+		antipalamite_holy_mary
+		antipalamite_st_nicholas
+		antipalamite_paraskeva_anastasia
+		antipalamite_constatine_the_great
+		antipalamite_barlaam_of_seminara
+		antipalamite_photios
+		antipalamite_saint_athanasius
+		antipalamite_anna_of_savoy
+		antipalamite_saint_george
+		antipalamite_saint_john_chrysostom
+	}
+	diplomacy = 1
+	same_opinion = 5
+	west_slavic_group_opinion = 5
+	monthly_character_piety = 0.2
+	
+	potential = { religion = antipalamite }
+	religious_branch = antipalamite
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
 genesian_faith_of_fathers = {
 	opposites = {
 		genesian_cult_of_nature

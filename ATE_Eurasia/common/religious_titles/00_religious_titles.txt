@@ -347,3 +347,51 @@ title_allamah = {
 
 	 message = yes
 }
+
+title_fornsed_elector = {
+	religion = fornsed
+	can_elect_head = yes
+	revoke_allowed = no
+	
+	grant_limit = 6
+	
+	realm_in_name = no
+	show_as_title = yes
+	
+	opinion_effect = 20
+	dignity = 0.9
+	
+	monthly_salary = 0.1
+	monthly_prestige = 0.5
+	
+	allowed_to_grant = {
+		always = no
+	}
+	allow = {
+		religion = fornsed
+		is_theocracy = yes
+		k_fornsed = {
+			holder_scope = {
+				is_within_diplo_range = ROOT
+			}
+		}
+		
+		NOT = {
+			top_liege = {
+				any_vassal = {
+					any_claim = {
+						title = k_fornsed
+					}
+				}
+			}
+		}
+	}
+	
+	gain_effect = {
+	}
+	
+	lose_effect = {
+	}
+
+	message = yes
+}

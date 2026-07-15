@@ -1851,3 +1851,237 @@ character_event = {
 		}
 	}
 }
+
+character_event = { 
+	id = christian.35
+	desc = EVTDESC_christian_35
+	picture = GFX_evt_russian_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = { #Holy Mary
+		name = EVTOPTA_christian_35
+		if = {
+		   limit = { religion = orthodox }
+		   add_trait="orthodox_holy_mary"
+		}
+		if = {
+		   limit = { religion = oldcalendarist }
+		   add_trait="oldcalendarist_holy_mary"
+		}
+		if = {
+		   limit = { religion = antipalamite }
+		   add_trait="antipalamite_holy_mary"
+		}
+	}
+	
+	option = { #Saint Nicholas
+		name = EVTOPTB_christian_35
+		if = {
+		   limit = { religion = orthodox }
+		   add_trait="orthodox_st_nicholas"
+		}
+		if = {
+		   limit = { religion = oldcalendarist }
+		   add_trait="oldcalendarist_st_nicholas"
+		}
+		if = {
+		   limit = { religion = antipalamite }
+		   add_trait="antipalamite_st_nicholas"
+		}
+	}
+	
+	option = { #Saint Basil the Great
+		name = EVTOPTC_christian_35
+		trigger = { NOT = { religion = antipalamite } }
+		if = {
+		   limit = { religion = orthodox }
+		   add_trait="orthodox_saint_basil_the_great"
+		}
+		if = {
+		   limit = { religion = oldcalendarist }
+		   add_trait="oldcalendarist_saint_basil_the_great"
+		}
+	}
+	
+	option = { 
+		name = EVTOPTC_ANTIPALAMITE_christian_35
+		trigger = { religion = antipalamite }
+		add_trait="antipalamite_anna_of_savoy"
+	}
+		
+	option = { 
+		name = EVTOPTD_christian_35
+		character_event = { id = christian.36 }
+	}
+}
+
+character_event = { 
+	id = christian.36
+	desc = EVTDESC_christian_35
+	picture = GFX_evt_russian_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = { #Constantine the Great
+		name = EVTOPTA_christian_36
+		if = {
+		   limit = { religion = orthodox }
+		   add_trait="orthodox_constatine_the_great"
+		}
+		if = {
+		   limit = { religion = oldcalendarist }
+		   add_trait="oldcalendarist_constatine_the_great"
+		}
+		if = {
+		   limit = { religion = antipalamite }
+		   add_trait="antipalamite_constatine_the_great"
+		}
+	}
+	
+	option = { #Gregory Palamas
+		name = EVTOPTB_christian_36
+		trigger = { NOT = { religion = antipalamite } }
+		if = {
+		   limit = { religion = orthodox }
+		   add_trait="orthodox_gregory_palamas"
+		}
+		if = {
+		   limit = { religion = oldcalendarist }
+		   add_trait="oldcalendarist_gregory_palamas"
+		}
+	}
+	
+	option = { #Barlaam of Seminara
+		name = EVTOPTB_ANTIPALAMITE_christian_36
+		trigger = { religion = antipalamite }
+		add_trait="antipalamite_barlaam_of_seminara"
+	}
+	
+	option = { #Photius
+		name = EVTOPTC_christian_36
+		if = {
+		   limit = { religion = orthodox }
+		   add_trait="orthodox_photios"
+		}
+		if = {
+		   limit = { religion = oldcalendarist }
+		   add_trait="oldcalendarist_photios"
+		}
+		if = {
+		   limit = { religion = antipalamite }
+		   add_trait="antipalamite_photios"
+		}
+	}
+		
+	option = { 
+		name = EVTOPTD_christian_35
+		character_event = { id = christian.37 }
+	}
+}
+
+character_event = { 
+	id = christian.37
+	desc = EVTDESC_christian_35
+	picture = GFX_evt_russian_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = { #Saints Paraskeva and Anastasia
+		name = EVTOPTA_christian_37
+		if = {
+		   limit = { religion = orthodox }
+		   add_trait="orthodox_paraskeva_anastasia"
+		}
+		if = {
+		   limit = { religion = oldcalendarist }
+		   add_trait="oldcalendarist_paraskeva_anastasia"
+		}
+		if = {
+		   limit = { religion = antipalamite }
+		   add_trait="antipalamite_paraskeva_anastasia"
+		}
+	}
+	
+	option = { #Saints Cyril and Methodius
+		name = EVTOPTB_christian_37
+		if = {
+		   limit = { religion = orthodox }
+		   add_trait="orthodox_st_cyril_and_methodius"
+		}
+		if = {
+		   limit = { religion = oldcalendarist }
+		   add_trait="oldcalendarist_st_cyril_and_methodius"
+		}
+		if = {
+		   limit = { religion = antipalamite }
+		   add_trait="antipalamite_st_cyril_and_methodius"
+		}
+	}
+	
+	option = { #Saint George
+		name = EVTOPTC_christian_37
+		if = {
+		   limit = { religion = orthodox }
+		   add_trait="orthodox_saint_george"
+		}
+		if = {
+		   limit = { religion = oldcalendarist }
+		   add_trait="oldcalendarist_saint_george"
+		}
+		if = {
+		   limit = { religion = antipalamite }
+		   add_trait="antipalamite_saint_george"
+		}
+	}
+		
+	option = { 
+		name = EVTOPTD_christian_35
+		character_event = { id = christian.38 }
+	}
+}
+
+character_event = { 
+	id = christian.38
+	desc = EVTDESC_christian_35
+	picture = GFX_evt_russian_pilgrimage
+
+	is_triggered_only = yes
+	
+	option = { #Saint John Chrysostom
+		name = EVTOPTA_christian_38
+		if = {
+		   limit = { religion = orthodox }
+		   add_trait="orthodox_saint_john_chrysostom"
+		}
+		if = {
+		   limit = { religion = oldcalendarist }
+		   add_trait="oldcalendarist_saint_john_chrysostom"
+		}
+		if = {
+		   limit = { religion = antipalamite }
+		   add_trait="antipalamite_saint_john_chrysostom"
+		}
+	}
+	
+	option = { #Saint Athanasius the Athonite
+		name = EVTOPTB_christian_38
+		if = {
+		   limit = { religion = orthodox }
+		   add_trait="orthodox_saint_athanasius"
+		}
+		if = {
+		   limit = { religion = oldcalendarist }
+		   add_trait="oldcalendarist_saint_athanasius"
+		}
+		if = {
+		   limit = { religion = antipalamite }
+		   add_trait="antipalamite_saint_athanasius"
+		}
+	}
+		
+	option = { 
+		name = EVTOPTD_christian_35
+		character_event = { id = christian.35 }
+	}
+}

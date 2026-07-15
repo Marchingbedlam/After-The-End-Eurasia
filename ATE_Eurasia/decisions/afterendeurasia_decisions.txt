@@ -1378,6 +1378,43 @@ decisions = {
 			factor = 1000
 		}
 	}
+	
+	choose_saint_orthodoxy = {
+		ai = no
+		is_high_prio = yes
+		
+		potential = {
+			OR = {
+			    religion = orthodox
+				religion = oldcalendarist
+				religion = antipalamite
+			}
+			is_playable = yes
+			is_adult = yes
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		allow = {
+			OR = {
+			    religion = orthodox
+				religion = oldcalendarist
+				religion = antipalamite
+			}
+			is_playable = yes
+		}
+		
+		effect = {
+			hidden_tooltip = {
+				character_event = { id = christian.35 }		
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+	}
 }
 targeted_decisions = {						
 	navjote = {

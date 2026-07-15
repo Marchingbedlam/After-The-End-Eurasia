@@ -1152,13 +1152,244 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
+		name = "GFX_trait_orthodox_holy_mary"
+		texturefile = "gfx/traits/dvoeverie_holy_mary.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_orthodox_paraskeva_anastasia"
+		texturefile = "gfx/traits/dvoeverie_paraskeva_anastasia.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_orthodox_st_nicholas"
+		texturefile = "gfx/traits/dvoeverie_st_nicholas.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_orthodox_st_cyril_and_methodius"
+		texturefile = "gfx/traits/orthodox_st_cyril_and_methodius.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_orthodox_constatine_the_great"
+		texturefile = "gfx/traits/orthodox_constatine_the_great.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_orthodox_gregory_palamas"
+		texturefile = "gfx/traits/orthodox_gregory_palamas.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_orthodox_photios"
+		texturefile = "gfx/traits/orthodox_photios.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_orthodox_saint_athanasius"
+		texturefile = "gfx/traits/orthodox_saint_athanasius.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_orthodox_saint_basil_the_great"
+		texturefile = "gfx/traits/orthodox_saint_basil_the_great.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_orthodox_saint_john_chrysostom"
+		texturefile = "gfx/traits/orthodox_saint_john_chrysostom.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_orthodox_saint_george"
+		texturefile = "gfx/traits/orthodox_saint_george.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_oldcalendarist_holy_mary"
+		texturefile = "gfx/traits/dvoeverie_holy_mary.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_oldcalendarist_paraskeva_anastasia"
+		texturefile = "gfx/traits/dvoeverie_paraskeva_anastasia.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_oldcalendarist_st_nicholas"
+		texturefile = "gfx/traits/dvoeverie_st_nicholas.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_oldcalendarist_st_cyril_and_methodius"
+		texturefile = "gfx/traits/orthodox_st_cyril_and_methodius.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_oldcalendarist_constatine_the_great"
+		texturefile = "gfx/traits/orthodox_constatine_the_great.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_oldcalendarist_gregory_palamas"
+		texturefile = "gfx/traits/orthodox_gregory_palamas.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_oldcalendarist_photios"
+		texturefile = "gfx/traits/orthodox_photios.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_oldcalendarist_saint_athanasius"
+		texturefile = "gfx/traits/orthodox_saint_athanasius.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_oldcalendarist_saint_basil_the_great"
+		texturefile = "gfx/traits/orthodox_saint_basil_the_great.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_oldcalendarist_saint_john_chrysostom"
+		texturefile = "gfx/traits/orthodox_saint_john_chrysostom.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_oldcalendarist_saint_george"
+		texturefile = "gfx/traits/orthodox_saint_george.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_antipalamite_holy_mary"
+		texturefile = "gfx/traits/dvoeverie_holy_mary.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_antipalamite_paraskeva_anastasia"
+		texturefile = "gfx/traits/dvoeverie_paraskeva_anastasia.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_antipalamite_st_nicholas"
+		texturefile = "gfx/traits/dvoeverie_st_nicholas.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_antipalamite_st_cyril_and_methodius"
+		texturefile = "gfx/traits/orthodox_st_cyril_and_methodius.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_antipalamite_constatine_the_great"
+		texturefile = "gfx/traits/orthodox_constatine_the_great.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_antipalamite_barlaam_of_seminara"
+		texturefile = "gfx/traits/antipalamite_barlaam_of_seminara.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_antipalamite_photios"
+		texturefile = "gfx/traits/orthodox_photios.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_antipalamite_saint_athanasius"
+		texturefile = "gfx/traits/orthodox_saint_athanasius.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_antipalamite_anna_of_savoy"
+		texturefile = "gfx/traits/antipalamite_anna_of_savoy.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_antipalamite_saint_john_chrysostom"
+		texturefile = "gfx/traits/orthodox_saint_john_chrysostom.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_antipalamite_saint_george"
+		texturefile = "gfx/traits/orthodox_saint_george.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
 		name = "GFX_trait_genesian_faith_of_fathers"
 		texturefile = "gfx/traits/genesian_fathers.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
-		spriteType = {
+	spriteType = {
 		name = "GFX_trait_genesian_cult_of_nature"
 		texturefile = "gfx/traits/genesian_nature.tga"
 		noOfFrames = 1
