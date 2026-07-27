@@ -1542,7 +1542,7 @@
 	name="Heandarat"
 	dynasty=2220700 #Balto 
 	culture=sami
-	religion=lutheran
+	religion=dolososku
 	trait=flamboyant_schemer
 	trait=fat
 	trait=humble
@@ -1555,7 +1555,7 @@
 	name="Fretterat"
 	dynasty=2220701 #Luhkaar 
 	culture=sami
-	religion=lutheran
+	religion=dolososku
 	trait=dutiful_cleric
 	trait=brave
 	trait=trusting
@@ -1673,7 +1673,7 @@
 	name="Gállá"
 	dynasty=2220377
 	culture=sami
-	religion=lutheran
+	religion=dolososku
 	trait=tough_soldier
 	trait=just
 	trait=brave
@@ -3924,7 +3924,7 @@
 	name="Eero" #President of Finland
  	dynasty=2220813
 	culture=finnish
-	religion=lutheran
+	religion=liturginen
 	trait=brawny
 	trait=misguided_warrior
 	trait=gregarious
@@ -3941,7 +3941,7 @@
 	name="Samuli"
  	dynasty=2220815
 	culture=finnish
-	religion=lutheran
+	religion=laestadianist
 	trait=brawny
 	trait=thrifty_clerk
 	trait=wroth 
@@ -3956,12 +3956,13 @@
 	name="Turo"
  	dynasty=7534228
 	culture=finnish
-	religion=lutheran
+	religion=liturginen
 	trait=frail
 	trait=mastermind_theologian
 	trait=quick 
 	trait=shy 
 	trait=cruel 
+	father=80003739
 	2645.1.1={birth=yes}
 	2670.1.1={death=yes}
 }
@@ -3970,7 +3971,7 @@
 	name="Ahkejuoksa"
  	dynasty=2220741
 	culture=sami 
-	religion=lutheran
+	religion=dolososku
 	trait=envious
 	trait=one_eyed
 	trait=ambitious 
@@ -3984,7 +3985,7 @@
 	name="Siitäri"
  	dynasty=2220968
 	culture=karelian 
-	religion=lutheran
+	religion=old_believer
 	trait=tough_soldier
 	trait=greedy
 	trait=proud 
@@ -3999,7 +4000,7 @@
 	name="Urho"
  	dynasty=2220817
 	culture=finnish 
-	religion=lutheran
+	religion=laestadianist
 	trait=hunter 
 	trait=shy
 	trait=diligent 
@@ -4013,7 +4014,7 @@
 	name="Pekka"
  	dynasty=2220818
 	culture=finnish 
-	religion=lutheran
+	religion=dolososku
 	trait=erudite 
 	trait=envious
 	trait=underhanded_rogue 
@@ -4041,7 +4042,7 @@
 	name="Kaarle"
  	dynasty=2220819
 	culture=finnish 
-	religion=lutheran
+	religion=laestadianist
 	trait=flamboyant_schemer 
 	trait=kind
 	trait=honest 
@@ -4565,7 +4566,7 @@
 	name="Irene"
 	female=yes 
 	culture=finnish
-	religion=lutheran
+	religion=liturginen
 	employer=8000111
 	2624.1.1={birth=yes}
 	2670.1.1={death=yes}
@@ -4575,7 +4576,7 @@
 	name="Bjørn"
 	mother=80003596
 	culture=finnish
-	religion=lutheran
+	religion=liturginen
 	employer=8000111
 	2646.1.1={birth=yes}
 	2670.1.1={death=yes}
@@ -4586,7 +4587,7 @@
 	mother=80003596
 	female=yes 
 	culture=finnish
-	religion=lutheran
+	religion=liturginen
 	employer=8000111
 	2648.1.1={birth=yes}
 	2670.1.1={death=yes}
@@ -4596,7 +4597,7 @@
 	name="Leonhard"
 	mother=80003596
 	culture=finnish
-	religion=lutheran
+	religion=liturginen
 	employer=8000111
 	2650.1.1={birth=yes}
 	2670.1.1={death=yes}
@@ -4605,7 +4606,7 @@
 80003600={
 	name="Faravid"
 	culture=finnish
-	religion=lutheran
+	religion=liturginen
 	employer=8000111
 	2644.1.1={birth=yes}
 	2670.1.1={death=yes}
@@ -4614,7 +4615,7 @@
 80003601={
 	name="Torstein"
 	culture=finnish
-	religion=lutheran
+	religion=liturginen
 	employer=8000111
 	2634.1.1={birth=yes}
 	2670.1.1={death=yes}
@@ -6170,19 +6171,20 @@
 	name="Jaska"
  	dynasty=2220815
 	culture=finnish
-	religion=lutheran
+	religion=laestadianist
 	trait=strong
 	trait=giant
 	trait=kind
 	trait=gregarious
+	father=80003745
 	2599.1.1={birth=yes}
-	2655.1.1={death=yes}
+	2662.1.1={death=yes}
 }
 80003718={
 	name="Jaska"
  	dynasty=2220815
 	culture=finnish
-	religion=lutheran
+	religion=laestadianist
 	trait=mastermind_theologian
 	trait=hunchback
 	trait=kind
@@ -6198,7 +6200,7 @@
 	female=yes
  	dynasty=2220815
 	culture=finnish
-	religion=lutheran
+	religion=laestadianist
 	father=80003717
 	2640.1.1={birth=yes}
 	2670.1.1={death=yes}
@@ -6207,25 +6209,302 @@
 	name="Siitäri"
  	dynasty=2220968
 	culture=karelian 
-	religion=lutheran
+	religion=old_believer
+	father=80003731
 	2597.1.1={birth=yes}
 	2645.1.1={death=yes}
 }
-80003521={
+80003721={
 	name="Jaska"
  	dynasty=2220968
 	culture=karelian 
-	religion=lutheran
+	religion=old_believer
 	father=80003720
 	2639.1.1={birth=yes}
 	2670.1.1={death=yes}
 }
-80003522={
+80003722={
 	name="Akseli"
  	dynasty=2220968
 	culture=karelian 
-	religion=lutheran
+	religion=old_believer
 	father=80003720
 	2643.1.1={birth=yes}
 	2670.1.1={death=yes}
+}
+
+80003723={
+	name="Liisa" #the Monster
+	dynasty=7534233 #Akkainen
+	female=yes
+	mother=8000127
+	culture=finnish
+	religion=dolososku
+	trait=legendary
+	trait=brilliant_strategist
+	trait=strong
+	trait=ruthless
+	trait=ambitious
+	trait=hunchback
+	2100.1.1={birth=yes}
+	2100.1.1={give_nickname=nick_the_monster}
+	2140.1.1={death=yes}
+}
+
+80003724={
+	name="Kaarlo" #the Wise
+	dynasty=7534233 #Akkainen
+	mother=80003723
+	culture=finnish
+	religion=dolososku
+	trait=midas_touched
+	trait=sympathy_christendom
+	trait=gregarious
+	trait=kind
+	trait=administrator
+	give_nickname=nick_the_wise
+	2130.1.1={birth=yes}
+	2200.1.1={death=yes}
+}
+
+80003725={
+	name="Kyösti"
+	dynasty=7534233 #Akkainen
+	father=80003724
+	culture=finnish
+	religion=dolososku
+	give_nickname=nick_the_older
+	2170.1.1={birth=yes}
+	2250.1.1={death=yes}
+}
+
+80003726={
+	name="Kyösti"
+	dynasty=7534233 #Akkainen
+	father=80003725
+	culture=finnish
+	religion=dolososku
+	give_nickname=nick_the_younger
+	2215.1.1={birth=yes}
+	2273.1.1={death=yes}
+}
+
+80003727={
+	name="Raimo"
+	dynasty=7534233 #Akkainen
+	father=80003726
+	culture=finnish
+	religion=old_believer
+	trait="tough_soldier"
+	trait="brave"
+	trait="content"
+	trait="kind"
+	trait="wroth"
+	trait="honest"
+	trait="erudite"
+	trait="saint"
+	give_nickname=nick_the_saint
+	2240.1.1={birth=yes}
+	2281.1.1={
+	   death={
+	      death_reason=death_battle
+		  killer=8000084
+	   }
+	}
+}
+
+80003728={
+	name="Väinö"
+	dynasty=7534233 #Akkainen
+	father=80003726
+	culture=finnish
+	religion=dolososku
+	2246.1.1={birth=yes}
+	2294.1.1={death=yes}
+}
+
+80003729={
+	name="Verner"
+	dynasty=7534233 #Akkainen
+	father=80003728
+	culture=finnish
+	religion=laestadianist
+	trait="charismatic_negotiator"
+	trait="kind"
+	trait="honest"
+	trait="pious"
+	give_nickname=nick_the_pious
+	2275.1.1={birth=yes}
+	2314.1.1={death=yes}
+}
+
+80003730={
+	name="Kyösti"
+	dynasty=7534233 #Akkainen
+	father=80003729
+	culture=finnish
+	religion=laestadianist
+	trait="honest"
+	trait="wroth"
+	trait="ruthless"
+	trait="ambitious"
+	trait="drunkard"
+	2295.1.1={birth=yes}
+	2362.1.1={
+	   death={
+	      death_reason=death_battle
+		  killer=8000134
+	   }
+	}
+}
+
+80003731={
+	name="Karppa"
+ 	dynasty=2220968
+	culture=karelian 
+	religion=old_believer
+	father=80003732
+	2539.1.1={birth=yes}
+	2610.1.1={death=yes}
+}
+
+80003732={
+	name="Markki"
+ 	dynasty=2220968
+	culture=karelian 
+	religion=old_believer
+	father=80003733
+	2491.1.1={birth=yes}
+	2560.1.1={death=yes}
+}
+
+80003733={
+	name="Jaska"
+ 	dynasty=2220968
+	culture=karelian 
+	religion=old_believer
+	father=80003734
+	2449.1.1={birth=yes}
+	2510.1.1={death=yes}
+}
+
+80003734={
+	name="Akseli"
+ 	dynasty=2220968
+	culture=karelian 
+	religion=old_believer
+	father=80003735
+	2401.1.1={birth=yes}
+	2466.1.1={death=yes}
+}
+
+80003735={
+	name="Pavel"
+ 	dynasty=2220968
+	culture=karelian 
+	religion=old_believer
+	father=80003736
+	2353.1.1={birth=yes}
+	2424.1.1={death=yes}
+}
+
+80003736={
+	name="Erno"
+ 	dynasty=2220968
+	culture=karelian 
+	religion=old_believer
+	father=80003737
+	2310.1.1={birth=yes}
+	2359.1.1={death=yes}
+}
+
+80003737={
+	name="Kyösti"
+ 	dynasty=2220968
+	culture=finnish
+	religion=old_believer
+	father=80003727
+	2275.1.1={birth=yes}
+	2329.1.1={death=yes}
+}
+
+80003738={
+	name="General Council"
+	occluded=yes
+	culture=finnish
+	religion=laestadianist
+	disallow_random_traits=yes
+	2510.1.1={birth=yes}
+	2552.1.1={death=yes}
+}
+
+80003739={
+	name="Eero"
+ 	dynasty=7534228
+	culture=finnish
+	religion=liturginen
+	father=80003740
+	2598.1.1={birth=yes}
+	2661.1.1={death=yes}
+}
+
+80003740={
+	name="Kyösti"
+ 	dynasty=7534228
+	culture=finnish
+	religion=liturginen
+	father=80003741
+	2570.1.1={birth=yes}
+	2632.1.1={death=yes}
+}
+
+80003741={
+	name="Kustaa"
+ 	dynasty=7534228
+	culture=finnish
+	religion=liturginen
+	father=80003742
+	2537.1.1={birth=yes}
+	2594.1.1={death=yes}
+}
+
+80003742={
+	name="Akseli"
+ 	dynasty=7534228
+	culture=finnish
+	religion=laestadianist
+	father=80003743
+	2502.1.1={birth=yes}
+	2555.1.1={death=yes}
+}
+
+80003743={
+	name="Kaarlo Kustaa"
+ 	dynasty=7534228
+	culture=finnish
+    religion=laestadianist
+	2459.1.1={birth=yes}
+	2510.1.1={death=yes}
+}
+
+80003744={
+	name="Kustaa"
+	culture=finnish
+    religion=liturginen
+	trait="mastermind_theologian"
+	trait="pious"
+	trait="diligent"
+	trait="shy"
+	trait="erudite"
+	2612.1.1={birth=yes}
+	2700.1.1={death=yes}
+}
+
+80003745={
+	name="Eero"
+ 	dynasty=2220815
+	culture=finnish
+	religion=laestadianist
+	2559.1.1={birth=yes}
+	2616.1.1={death=yes}
 }
