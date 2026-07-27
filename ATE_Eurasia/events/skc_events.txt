@@ -1473,6 +1473,7 @@ narrative_event = {
 
 	option = { #Vandee
 		name = EVTOPTA_SKC_110
+		trigger = { religion = sun_king_cultist }
 		set_character_flag = go_to_vandee_soleil
 		narrative_event = { id = skc.111 days = 7 }
 	}
@@ -1485,6 +1486,7 @@ narrative_event = {
 	
 	option = { #Reims
 		name = EVTOPTC_SKC_110
+		trigger = { religion = sun_king_cultist }
 		set_character_flag = go_to_reims_soleil
 		narrative_event = { id = skc.111 days = 7 }
 	}
@@ -1492,6 +1494,20 @@ narrative_event = {
 	option = { #Aachen
 		name = EVTOPTD_SKC_110
 		set_character_flag = go_to_aachen_soleil
+		narrative_event = { id = skc.111 days = 7 }
+	}
+	
+	option = { #Glastonbury
+		name = EVTOPTE_SKC_110
+		trigger = { religion = chevalier }
+		set_character_flag = go_to_glastonbury_soleil
+		narrative_event = { id = skc.111 days = 7 }
+	}
+	
+	option = { #Roncevaux
+		name = EVTOPTF_SKC_110
+		trigger = { religion = chevalier }
+		set_character_flag = go_to_roncevaux_soleil
 		narrative_event = { id = skc.111 days = 7 }
 	}
 }
@@ -1525,6 +1541,20 @@ narrative_event = { #Go to Paris
 		picture = GFX_evt_soleil_royal_pilgrimage
 		trigger = { 
 			has_character_flag = go_to_aachen_soleil
+		}
+	}
+	desc = {
+		text = EVTDESC_SKC_111_RONCEVAUX
+		picture = GFX_evt_soleil_royal_pilgrimage
+		trigger = { 
+			has_character_flag = go_to_roncevaux_soleil
+		}
+	}
+	desc = {
+		text = EVTDESC_SKC_111_GLASTONBURY
+		picture = GFX_evt_soleil_royal_pilgrimage
+		trigger = { 
+			has_character_flag = go_to_glastonbury_soleil
 		}
 	}
 
@@ -1595,6 +1625,20 @@ narrative_event = { #Welcome
 			has_character_flag = go_to_aachen_soleil
 		}
 	}
+	desc = {
+		text = EVTDESC_SKC_112_GLASTONBURY
+		picture = GFX_evt_glastonbury
+		trigger = { 
+			has_character_flag = go_to_glastonbury_soleil
+		}
+	}
+	desc = {
+		text = EVTDESC_SKC_112_RONCEVAUX
+		picture = GFX_evt_roncevaux
+		trigger = { 
+			has_character_flag = go_to_roncevaux_soleil
+		}
+	}
 
 	is_triggered_only = yes
 	
@@ -1605,6 +1649,8 @@ narrative_event = { #Welcome
 		clr_character_flag= go_to_reims_soleil
 		clr_character_flag = go_to_vandee_soleil
 		clr_character_flag = go_to_aachen_soleil
+		clr_character_flag = go_to_glastonbury_soleil
+		clr_character_flag = go_to_roncevaux_soleil
 	}
 }
 

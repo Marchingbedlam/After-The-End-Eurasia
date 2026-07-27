@@ -964,7 +964,6 @@ e_baltic = {
 				latvian="Vilna"
 				
 				holy_site = haredi
-				holy_site = genesian
 				holy_site = mariavite
 				
 				b_ukmerge = {
@@ -2937,6 +2936,9 @@ e_baltic = {
 				
 				holy_site = lutheran
 				holy_site = folketro
+				holy_site = liturginen
+				holy_site = dolososku
+				holy_site = dolososku_reformed
 				
 				b_turunlinna = {}
 				b_turku = {}
@@ -3140,6 +3142,9 @@ e_baltic = {
 			c_ostrobothnia = {
 				color={ 65 70 190 }
 				color2={ 255 255 255 }
+				
+				holy_site = dolososku
+				holy_site = dolososku_reformed
 				
 				b_vaasa = {}
 				b_mustasaari = {}

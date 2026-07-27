@@ -600,7 +600,9 @@ religion_doctrine = {
 				has_selected_religion_feature = religion_feature_bon # Redundant Doctrine
 				has_selected_religion_feature = religion_feature_nepmese # Redundant Doctrine
 				has_selected_religion_feature = religion_feature_jumic # Redundant Doctrine
-				#has_selected_religion_feature = religion_feature_polyarniki # Redundant Doctrine
+				has_selected_religion_feature = religion_feature_polyarniki # Redundant Doctrine
+				has_selected_religion_feature = religion_feature_dolososku # Redundant Doctrine 
+				has_selected_religion_feature = religion_feature_vieja_gloria # Redundant Doctrine 
 				has_selected_religion_feature = religion_patriarchal # Incompatible
 				has_selected_religion_feature = religion_matriarchal # Incompatible
 			}
@@ -1142,7 +1144,7 @@ religion_doctrine = {
 				has_selected_religion_feature = religion_no_leader
 				has_selected_religion_feature = religion_feature_koyapunem
 				has_selected_religion_feature = religion_feature_nartist
-				#has_selected_religion_feature = religion_feature_polyarniki
+				has_selected_religion_feature = religion_feature_polyarniki
 				religion_group = christian #Random World redundancy.
 			}
 		}
@@ -1628,52 +1630,52 @@ religion_doctrine = {
 			factor = 50
 		}
 	}
-	#religion_feature_polyarniki = {
-	#	picture = GFX_religion_feature_polyarniki
-	#	potential = {
-	#		has_game_started = yes
-	#		religion = polyarniki_reformed
-	#		NOT = {
-	#			has_alternate_start_parameter = { key = religion_names value = random }
-	#		}
-	#	}
-	#	trigger = {
-	#		religion = polyarniki_reformed
-	#		NOR = { 
-	#			has_selected_religion_feature = religion_meritocratic
-	#			has_selected_religion_feature = religion_beatification
-	#			has_selected_religion_feature = religion_dogmatic
-	#		}
-	#	}
-	#	effect = {
-	#		custom_tooltip = { text = tooltip_religion_feature_beatification }
-	#		custom_tooltip = { text = tooltip_religion_feature_eldership }
-	#		custom_tooltip = { text = tooltip_religion_feature_hard_conversion }
-	#		custom_tooltip = { text = tooltip_religion_feature_eldership }
-	#		hidden_tooltip = { 
-	#			set_hard_to_convert = yes
-	#		}
-	#		custom_tooltip = { text = tooltip_religion_feature_dogmatic_1 }
-	#		custom_tooltip = { text = tooltip_religion_feature_crusade }
-	#		custom_tooltip = { text = tooltip_religion_feature_dogmatic_2 }
-	#		custom_tooltip = { text = tooltip_religion_feature_piety_same_religion_loss }
-	#		hidden_tooltip = { 
-	#			set_pacifist = no
-	#			set_peace_piety_gain = 0
-	#			set_raised_vassal_opinion_loss = yes
-	#			set_peace_prestige_loss = no
-	#			set_allow_looting = yes
-	#			set_hard_to_convert = yes
-	#			set_piety_loss_for_attacking_same_religion = yes
-	#			set_convert_other_groups = 0
-	#			set_convert_same_group = 2
-	#			set_ai_aggression = 1.5
-	#		}
-	#	}
-	#	ai_will_do = {
-	#		factor = 50
-	#	}
-	#}
+	religion_feature_polyarniki = {
+		picture = GFX_religion_feature_polyarniki
+		potential = {
+			has_game_started = yes
+			religion = polyarniki_reformed
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		trigger = {
+			religion = polyarniki_reformed
+			NOR = { 
+				has_selected_religion_feature = religion_meritocratic
+				has_selected_religion_feature = religion_beatification
+				has_selected_religion_feature = religion_dogmatic
+			}
+		}
+		effect = {
+			custom_tooltip = { text = tooltip_religion_feature_beatification }
+			custom_tooltip = { text = tooltip_religion_feature_eldership }
+			custom_tooltip = { text = tooltip_religion_feature_hard_conversion }
+			custom_tooltip = { text = tooltip_religion_feature_eldership }
+			hidden_tooltip = { 
+				set_hard_to_convert = yes
+			}
+			custom_tooltip = { text = tooltip_religion_feature_dogmatic_1 }
+			custom_tooltip = { text = tooltip_religion_feature_crusade }
+			custom_tooltip = { text = tooltip_religion_feature_dogmatic_2 }
+			custom_tooltip = { text = tooltip_religion_feature_piety_same_religion_loss }
+			hidden_tooltip = { 
+				set_pacifist = no
+				set_peace_piety_gain = 0
+				set_raised_vassal_opinion_loss = yes
+				set_peace_prestige_loss = no
+				set_allow_looting = yes
+				set_hard_to_convert = yes
+				set_piety_loss_for_attacking_same_religion = yes
+				set_convert_other_groups = 0
+				set_convert_same_group = 2
+				set_ai_aggression = 1.5
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
 	religion_feature_nenets = {
 		picture = GFX_religion_feature_nenets
 		potential = {
@@ -2044,6 +2046,81 @@ religion_doctrine = {
 			}
 		}
 	}
+	
+	religion_feature_dolososku = {
+		picture = GFX_religion_feature_dolososku
+		potential = {
+			has_game_started = yes
+			religion = dolososku_reformed
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		trigger = {
+			religion = dolososku_reformed
+			NOR = { 
+				has_selected_religion_feature = religion_patriarchal
+				has_selected_religion_feature = religion_matriarchal
+				has_selected_religion_feature = religion_holy_family
+			}
+		}
+		effect = {
+			custom_tooltip = { text = tooltip_religion_feature_stable }
+			custom_tooltip = { text = tooltip_religion_feature_meliorism } 
+			custom_tooltip = { text = tooltip_religion_feature_cognatic }
+			custom_tooltip = { text = tooltip_religion_feature_feminist }
+			hidden_tooltip = {
+				set_allows_matrilineal_marriage = yes
+				set_feminist = yes
+				set_women_can_take_consorts = yes
+				set_men_can_take_consorts = yes
+				set_female_temple_holders = yes
+				set_male_temple_holders = yes
+				set_short_reign_opinion_year_mult = 0
+				set_hard_to_convert = yes
+				#FROM = { any_demesne_title = { add_law = status_of_women_4 } } 
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	
+	religion_feature_vieja_gloria = {
+		picture = GFX_religion_feature_vieja_gloria
+		potential = {
+			has_game_started = yes
+			religion = vieja_gloria_reformed
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		trigger = {
+			religion = vieja_gloria_reformed
+			NOT = {
+				has_selected_religion_feature = religion_peaceful
+				has_selected_religion_feature = religion_feature_norse #Redundant
+				has_selected_religion_feature = religion_feature_aztec
+			}
+		}
+		effect = {
+			custom_tooltip = { text = tooltip_religion_feature_rivermovement }
+			custom_tooltip = { text = tooltip_religion_feature_ship_maintenance }
+			custom_tooltip = { text = tooltip_religion_feature_seafaring }
+			custom_tooltip = { text = tooltip_religion_feature_adventuring }
+			custom_tooltip = { text = tooltip_religion_feature_pirating }
+			hidden_tooltip = {
+			    enable_prepared_invasion = ROOT
+				set_seafaring = yes
+				set_allow_rivermovement = yes
+				set_allow_looting = yes
+				set_hard_to_convert = yes
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
 }
 
 religion_leadership = {
@@ -2089,6 +2166,7 @@ religion_leadership = {
 		trigger = {
 			NOT = {
 				has_selected_religion_feature = religion_feature_adi
+				religion = vieja_gloria_reformed
 			}
 		}
 		effect = {

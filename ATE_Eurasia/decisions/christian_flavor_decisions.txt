@@ -293,13 +293,14 @@ decisions = {
 			   religion = catholic
 			   religion = marcelianist
 			   religion = apparitionist
+			   religion = constitutionalist
 			   religion = penitente
 			   religion = mementomori
-			   religion = constitutionalist
 			   religion = mariavite
 			   religion = oasite
 			   religion = coronite
 			   religion = apostolic
+			   religion = liturginen
 			}
 		}
 		allow = {
@@ -307,13 +308,14 @@ decisions = {
 			   religion = catholic
 			   religion = marcelianist
 			   religion = apparitionist
+			   religion = constitutionalist
 			   religion = penitente
 			   religion = mementomori
-			   religion = constitutionalist
 			   religion = mariavite
 			   religion = oasite
 			   religion = coronite
 			   religion = apostolic
+			   religion = liturginen
 			}
 			NOT = { has_character_modifier = practiced_lectio_divina }
 			custom_tooltip = {

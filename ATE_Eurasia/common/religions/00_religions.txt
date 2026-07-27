@@ -848,53 +848,93 @@ pagan_group = {
 		religious_clothing_priest = 3
 		
 	}
-		polyarniki = { # Use for misc other pagans
-		graphical_culture = pagangfx
-		alternate_start = { always = no }
+	dolososku_reformed = {
+		graphical_culture = norsegfx
 
-		icon = 1
+		icon = 143
+		heresy_icon = 166
 		
-		color = { 0.7 0.0 0.0 }
-		
-		high_god_name = SNOW_TSARITSA
-		
+		color = { 30 125 42 }
+
+		high_god_name = GOD_BEAIVI
+
 		god_names = {
-			GOD_FIERY_BIRD GOD_WHITE_COW GOD_SNEGURKA
+			GOD_BEAIVI GOD_AHKKA GOD_HORAGALLI GOD_SIMO_HAYHA GOD_JOULOPUKKI GOD_SAUNATONTTU GOD_THE_ELVES
 		}
 		evil_god_names = {
-			BLACK_HORSE PALE_ONE GOD_BABA_YAGA
+			BIRO JOKITUUPPARI MAAHINEN THE_TROLLS
 		}
-		crusade_name = GREAT_HOLY_WAR
-		scripture_name = THE_LEGEND_OF_THE_SNOW_MAIDEN
-		priest_title = PRIEST
-		priests_can_marry = yes
+		
+		scripture_name = THE_LEGENDS
+		priest_title = SHAMAN
 		female_temple_holders = yes
-		max_consorts = 3
-		allow_looting = yes
-		defensive_attrition = yes
+		male_temple_holders = yes
+		priests_can_marry = yes
+		
+		allow_looting = yes 
+		allow_rivermovement = yes 
+		seafarer = yes 
+		max_consorts = 3 
+		can_demand_religious_conversion = yes
+		allow_in_ruler_designer = no
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
 		
-		allow_in_ruler_designer = no
-		
-		dislike_tribal_organization = yes
-		
-		dynamic_cult = no
-		secret_religion = no
-
-		intermarry = quinto
-		intermarry = nysed
-		intermarry = folketro
+		intermarry = sjotru_reformed
 		intermarry = sjotru
-
+		intermarry = polyarniki
+		intermarry = polyarniki_reformed
+		intermarry = nysed
+		intermarry = fornsed
+		intermarry = folketro
 	}
+	dolososku = {
+		graphical_culture = norsegfx
 
+		icon = 11
+		heresy_icon = 166
+		
+		color = { 10 95 22 }
+
+		high_god_name = GOD_BEAIVI
+
+		god_names = {
+			GOD_BEAIVI GOD_AHKKA GOD_HORAGALLI GOD_SIMO_HAYHA GOD_JOULOPUKKI GOD_SAUNATONTTU GOD_THE_ELVES
+		}
+		evil_god_names = {
+			BIRO JOKITUUPPARI MAAHINEN GOD_BABA_YAGA THE_TROLLS
+		}
+		
+		scripture_name = THE_LEGENDS
+		priest_title = SHAMAN
+		female_temple_holders = yes
+		male_temple_holders = yes
+		priests_can_marry = yes
+		reformed = dolososku_reformed
+		
+		allow_looting = yes 
+		allow_rivermovement = yes 
+		seafarer = yes 
+		max_consorts = 3 
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		intermarry = sjotru_reformed
+		intermarry = sjotru
+		intermarry = polyarniki
+		intermarry = polyarniki_reformed
+		intermarry = nysed
+		intermarry = fornsed
+		intermarry = folketro
+	}
 	polyarniki_reformed = { # Use for misc other pagans
 		graphical_culture = pagangfx
 		alternate_start = { always = no }
 
-		icon = 1
+		icon = 173
+		heresy_icon = 174
 		
 		color = { 0.8 0.0 0.0 }
 		
@@ -929,6 +969,121 @@ pagan_group = {
 		intermarry = nysed
 		intermarry = folketro
 		intermarry = sjotru
+	}
+	polyarniki = { # Use for misc other pagans
+		graphical_culture = pagangfx
+		alternate_start = { always = no }
+
+		icon = 172
+		heresy_icon = 174
+		
+		color = { 0.7 0.0 0.0 }
+		
+		high_god_name = SNOW_TSARITSA
+		
+		god_names = {
+			GOD_FIERY_BIRD GOD_WHITE_COW GOD_SNEGURKA
+		}
+		evil_god_names = {
+			BLACK_HORSE PALE_ONE GOD_BABA_YAGA
+		}
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGEND_OF_THE_SNOW_MAIDEN
+		priest_title = PRIEST
+		priests_can_marry = yes
+		female_temple_holders = yes
+		max_consorts = 3
+		allow_looting = yes
+		defensive_attrition = yes
+		reformed = polyarniki_reformed
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		dislike_tribal_organization = yes
+		
+		dynamic_cult = no
+		secret_religion = no
+
+		intermarry = quinto
+		intermarry = nysed
+		intermarry = folketro
+		intermarry = sjotru
+
+	}
+	
+	vieja_gloria_reformed = {
+		graphical_culture = pagangfx
+		
+		icon = 176
+		heresy_icon = 177
+		
+		color = { 233 170 67 }
+
+		high_god_name = GOD_REY_OF_CIELO
+
+		god_names = {
+			GOD_REY_OF_CIELO GOD_DIOS VIERGEN_DE_LA_ALMUDENA GOD_EL_CID GOD_SANTIAGO GOD_COLUMBUS GOD_EL_GRAN_CAPITAN GOD_AGUSTINA GOD_DUENDES GOD_LAS_MORAS_ENCANTADAS GOD_DON_PELAYO GOD_HERCULES GOD_LOS_REYES_CATOLICOS GOD_BLAS_DE_LEZO
+		}
+		evil_god_names = {
+			EL_DIABLO El_COCO EL_ARROPIERO PEPE_BOTELLA EL_REY_FELON LOS_MARTINICOS EL_HOMBRE_DEL_SACO
+		}
+		
+		scripture_name = THE_LEGENDS
+		priest_title = SHAMAN
+		female_temple_holders = yes
+		male_temple_holders = yes
+		priests_can_marry = yes
+		
+		allow_looting = yes 
+		allow_rivermovement = yes 
+		seafarer = yes 
+		max_consorts = 3 
+		can_demand_religious_conversion = yes
+		allow_in_ruler_designer = no
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		intermarry = sun_king_cultist
+		intermarry = chevalier
+		intermarry = quinto
+	}
+	vieja_gloria = {
+		graphical_culture = pagangfx
+
+		icon = 175
+		heresy_icon = 177
+		
+		color = { 200 138 42 }
+
+		high_god_name = GOD_REY_OF_CIELO
+
+		god_names = {
+			GOD_REY_OF_CIELO GOD_DIOS VIERGEN_DE_LA_ALMUDENA GOD_EL_CID GOD_SANTIAGO GOD_COLUMBUS GOD_EL_GRAN_CAPITAN GOD_AGUSTINA GOD_DUENDES GOD_LAS_MORAS_ENCANTADAS GOD_DON_PELAYO GOD_HERCULES GOD_LOS_REYES_CATOLICOS GOD_BLAS_DE_LEZO
+		}
+		evil_god_names = {
+			EL_DIABLO El_COCO EL_ARROPIERO PEPE_BOTELLA EL_REY_FELON LOS_MARTINICOS EL_HOMBRE_DEL_SACO
+		}
+		
+		scripture_name = THE_LEGENDS
+		priest_title = PRIEST
+		female_temple_holders = yes
+		male_temple_holders = yes
+		priests_can_marry = yes
+		reformed = vieja_gloria_reformed
+		allow_in_ruler_designer = no
+		
+		allow_looting = yes 
+		allow_rivermovement = yes 
+		max_consorts = 3 
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		intermarry = sun_king_cultist
+		intermarry = chevalier
+		intermarry = quinto
 	}
 }
 	
@@ -1716,6 +1871,111 @@ christian = {
 		
 		intermarry = lutheran
 		intermarry = insular
+	}
+	liturginen = {
+		graphical_culture = westerngfx
+		
+		icon = 170
+		heresy_icon = 171
+		
+		color = { 0.45 0.45 0.90 }
+				
+		crusade_name = CRUSADE
+		scripture_name = THE_BIBLE
+		priest_title = PRIEST
+
+		high_god_name = GOD_GOD
+		
+		god_names = {
+			GOD_GOD GOD_THE_LORD THE_HOLY_SPIRIT GOD_JESUS GOD_THE_BLESSED_VIRGIN
+		}
+		
+		evil_god_names = {
+			SATAN LUCIFER THE_DEVIL
+		}
+		
+		pacifist = yes # Makes the AI less likely to start wars, plots and factions
+		crusade_name = CRUSADE
+		can_grant_divorce = yes
+		can_call_crusade = no
+		female_temple_holders = no
+		priests_can_marry = yes
+		priests_can_inherit = yes
+		feminist = yes
+		allow_rivermovement = yes
+		peace_piety_gain = 1.0 #Gains 1 extra piety per month while at peace
+		aggression = 0.5 # AI aggression factor
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+		
+		intermarry = laestadianist
+		intermarry = lutheran
+		intermarry = seperatist
+		intermarry = laestadianist
+		intermarry = pravoslavie
+		intermarry = dvoeverie
+		intermarry = fornsed
+		intermarry = folketro
+		intermarry = calvinist
+		intermarry = iconoclast
+		intermarry = high_church
+		intermarry = free_church
+		intermarry = leveller
+		intermarry = catholic
+		intermarry = constitutionalist
+		intermarry = apparitionist
+		intermarry = marcelianist
+		intermarry = orthodox
+		intermarry = antipalamite
+		intermarry = oldcalendarist
+	}
+	laestadianist = {
+		graphical_culture = westerngfx
+		
+		icon = 170
+		heresy_icon = 171
+		
+		parent = liturginen
+		
+		high_god_name = GOD_GOD
+		
+		god_names = {
+			GOD_GOD GOD_THE_LORD THE_HOLY_SPIRIT GOD_JESUS
+		}
+		
+		evil_god_names = {
+			SATAN LUCIFER THE_DEVIL
+		}
+		
+		color = { 0.15 0.15 0.70 }
+		
+		crusade_name = CRUSADE
+		can_grant_divorce = yes
+		can_call_crusade = no
+		female_temple_holders = no
+		priests_can_marry = yes
+		priests_can_inherit = yes
+		allow_rivermovement = yes
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+		
+		intermarry = liturginen
+		intermarry = lutheran
+		intermarry = seperatist
+		intermarry = laestadianist
+		intermarry = pravoslavie
+		intermarry = dvoeverie
+		intermarry = fornsed
+		intermarry = folketro
+		intermarry = calvinist
+		intermarry = iconoclast
+		intermarry = high_church
+		intermarry = free_church
+		intermarry = leveller
+		intermarry = folketro
+		intermarry = fornsed
 	}
 	orthodox = {
 		graphical_culture = westerngfx
@@ -2781,7 +3041,7 @@ vernacular = {
 		use_new_crusade = yes
 		crusade_cb = new_crusade
 		
-		scripture_name = LES_LOIS_FONDAMENTALES
+		scripture_name = LIVRE_DES_CHEVALIERS
 		priest_title = PRIEST
 		
 		high_god_name = DIEU
@@ -2791,7 +3051,7 @@ vernacular = {
 		}
 		
 		evil_god_names = {
-			THE_USURPER SATAN GANELON MORDRED
+			SATAN LUCIFER LE_DIABLE THE_USURPER GANELON MORDRED
 		}
 		
 		can_retire_to_monastery = yes
@@ -2811,7 +3071,6 @@ vernacular = {
 
 		icon = 122
 		heresy_icon = 134
-		
 		
 		color = { 0.85 0.25 0.85 }
 		
@@ -3017,7 +3276,7 @@ scholastic = {
 		}
 		
 		evil_god_names = {
-			SATAN LUCIFER DEMON_MEPHISTO DEMON_WITCH DEMON_BALLADINE WILD_HUNT GOD_IGNORANCE
+			SATAN LUCIFER DEMON_MEPHISTO DEMON_WITCH DEMON_BALLADINE WILD_HUNT GOD_BABA_YAGA GOD_IGNORANCE
 		}
 		
 		can_grant_divorce = yes

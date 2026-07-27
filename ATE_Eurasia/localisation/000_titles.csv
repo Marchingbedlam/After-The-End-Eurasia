@@ -4895,8 +4895,6 @@ d_duwadmi_adj;Duwadmi;;;;;;;;;;;x
 d_duwadmi;Duwadmi;;;;;;;;;;;x
 d_dvina_adj;Dvina;;;;;;;;;;;x
 d_dvina;Dvina;;;;;;;;;;;x
-d_dvoeverie;Moskva;;;;;;;;;;;x
-d_dvoeverie_adj;Muscovite;;;;;;;;;;;x
 d_dyfed_adj;Dyfed;;;;;;;;;;;x
 d_dyfed;Dyfed;;;;;;;;;;;x
 d_dzerzhinsk_adj;Dzerzhinsky;;;;;;;;;;;x
@@ -4944,6 +4942,7 @@ d_finistere_adj;Finistérien;;;;;;;;;;;x
 d_finistere;Finistère;;;;;;;;;;;x
 d_flanders_adj;Flemish;;;;;;;;;;;x
 d_flanders;Flanders;;;;;;;;;;;x
+d_folketro;The Nordic Priesthood;;;;;;;;;;;x
 d_forge_committee_adj;Forge;;;;;;;;;;;x
 d_forge_committee;Forge Committee;;;;;;;;;;;x
 d_fradi_adj;Fradist;;;;;;;;;;;x
@@ -5095,14 +5094,6 @@ d_hexi_adj;Hexi;;;;;;;;;;;x
 d_hexi;Hexi;;;;;;;;;;;x
 d_high_church;Canterbury;;;;;;;;;;;;;x
 d_high_church_adj;Anglican;;;;;;;;;;;;;x
-d_yorkist_archbishop;York;;;;;;;;;;;;;x
-d_yorkist_archbishop_adj;Anglican;;;;;;;;;;;;;x
-d_st_andrew_archbishop;St.Andrew;;;;;;;;;;;;;x
-d_st_andrew_archbishop_adj;Anglican;;;;;;;;;;;;;x
-d_armagh_archbishop;Armagh;;;;;;;;;;;;;x
-d_armagh_archbishop_adj;Anglican;;;;;;;;;;;;;x
-d_st_thomas_archbishop;St.Thomas;;;;;;;;;;;;;x
-d_st_thomas_archbishop_adj;Anglican;;;;;;;;;;;;;x
 d_himachal_adj;Himachal;;;;;;;;;;;x
 d_himachal;Himachal;;;;;;;;;;;x
 d_hims_adj;Homsi;;;;;;;;;;;x
@@ -5678,18 +5669,14 @@ d_omsk_adj;Omsky;;;;;;;;;;;x
 d_omsk;Omsk;;;;;;;;;;;x
 d_opplandene_adj;Opplandene;;;;;;;;;;;x
 d_opplandene;Opplandene;;;;;;;;;;;x
-d_order_of_elephant;Order of the Elephant;;;;;;;;;;;x
 d_order_of_hema_adj;Hema;;;;;;;;;;;x
 d_order_of_hema;Order of Hema;;;;;;;;;;;x
 d_order_of_malta_adj;Maltese;;;;;;;;;;;x
 d_order_of_malta;Order of Malta;;;;;;;;;;;x
-d_order_of_polar_star;Order of the Polar Star;;;;;;;;;;;x
 d_order_of_saint_john_adj;St. John’s;;;;;;;;;;;x
 d_order_of_saint_john;Order of Saint John;;;;;;;;;;;x
-d_order_of_st_olav;Order of Saint Olav;;;;;;;;;;;x
 d_order_three_stars_adj;Tristar;;;;;;;;;;;x
 d_order_three_stars;Order of the Three Stars;;;;;;;;;;;x
-d_order_of_st_george;Order of Saint George;;;;;;;;;;;x
 d_orenburg_adj;Orenburger;;;;;;;;;;;x
 d_orenburg;Orenburg;;;;;;;;;;;x
 d_orleanais_adj;Orleanais;;;;;;;;;;;x
@@ -6275,15 +6262,12 @@ e_arabia_adj;Arabian;;;;;;;;;;;x
 e_arabia;Arabia;;;;;;;;;;;x
 e_arabiyya_adj;Arabiyyan;;;;;;;;;;;x
 e_arabiyya;Arabiyya;;;;;;;;;;;x
-e_austria;Austria;;;;;;;;;;;x
 e_balkans_adj;Balkanian;;;;;;;;;;;x
 e_balkans;Balkans;;;;;;;;;;;x
 e_baltic_adj;Baltic;;;;;;;;;;;x
 e_baltic;Baltic Empire;;;;;;;;;;;x
 e_bengal_adj;Bengal;;;;;;;;;;;x
 e_bengal;Bengal;;;;;;;;;;;x
-e_byzantium_adj;Roman;;;;;;;;;;;x
-e_byzantium;Eastern Roman Empire;;;;;;;;;;;x
 e_britannia_adj;British;;;;;;;;;;;x
 e_britannia;Britannia;;;;;;;;;;;x
 e_bulgaria_adj;Bulgarian;;;;;;;;;;;x
@@ -6545,7 +6529,8 @@ k_fergana_adj;Ferganam;;;;;;;;;;;x
 k_fergana;Fergana;;;;;;;;;;;x
 k_finland_adj;Finnish;;;;;;;;;;;x
 k_finland;Finland;;;;;;;;;;;x
-k_fornsed;The Nordic Church;;;;;;;;;;;x
+k_fornsed_adj;Fornsedfolk;;;;;;;;;;;x
+k_fornsed;Order of Fornsed;;;;;;;;;;;x
 k_france_adj;French;;;;;;;;;;;x
 k_france;France;;;;;;;;;;;x
 k_free_officers_revolt_adj;Officer;;;;;;;;;;;x
@@ -6741,8 +6726,6 @@ k_panjab_adj;Panjabi;;;;;;;;;;;x
 k_panjab;Panjab;;;;;;;;;;;x
 k_papal_state_adj;Papal;;;;;;;;;;;x
 k_papal_state;Papal States;;;;;;;;;;;x
-k_sspx_papacy_adj;Papal;;;;;;;;;;;x
-k_sspx_papacy;Papal States;;;;;;;;;;;x
 k_petrograd_adj;Petrograder;;;;;;;;;;;x
 k_petrograd;Petrograd;;;;;;;;;;;x
 k_phoenicia_adj;Phoenician;;;;;;;;;;;x
@@ -6753,8 +6736,8 @@ k_portugal_adj;Portugese;;;;;;;;;;;x
 k_portugal;Portugal;;;;;;;;;;;x
 k_povolzhye_adj;Volgan;;;;;;;;;;;x
 k_povolzhye;Povolzhye;;;;;;;;;;;x
-d_pravoslavie_adj;Muscovite;;;;;;;;;;;x
-d_pravoslavie;Moskva;;;;;;;;;;;x
+k_pravoslavie_adj;Muscovite;;;;;;;;;;;x
+k_pravoslavie;Moskva;;;;;;;;;;;x
 k_provence_adj;Provençal;;;;;;;;;;;x
 k_provence;Provence;;;;;;;;;;;x
 k_purvanchal_adj;Purvanchali;;;;;;;;;;;x
@@ -6873,8 +6856,21 @@ k_york_adj;Yorker;;;;;;;;;;;x
 k_york;York;;;;;;;;;;;x
 k_zaporizhia_adj;Zaporizhian;;;;;;;;;;;x
 k_zaporizhia;Zaporizhia;;;;;;;;;;;x
-d_proletcult;Party;;;;;;;;;;;;;x
-d_sjotru_reformed;Álfaskólinn;;;;;;;;;;;;;x
-d_la_garde_nationale;La Garde Nationale;;;;;;;;;;;;;x
-d_order_of_the_star;Ordre de l'Étoile;;;;;;;;;;;;;x
-d_marcelianist;Priestly Fraternity of Saint Pius X;;;;;;;;;;;;;x
+d_liturginen;Turku;;;;;;;;;;;x
+d_liturginen_adj;Turku;;;;;;;;;;;x
+d_dolososku_reformed;Dološosku High Priesthood;;;;;;;;;;;x
+d_dolososku_reformed_adj;Dološosku;;;;;;;;;;;x
+d_polyarniki_reformed;Polar Palace;;;;;;;;;;;x
+d_polyarniki_reformed_adj;Polar;;;;;;;;;;;x
+d_nenets_reformed;Nenets High Priesthood;;;;;;;;;;;x
+d_nenets_reformed_adj;Nenets;;;;;;;;;;;x
+d_jumic_reformed;Jumic High Priesthood;;;;;;;;;;;x
+d_jumic_reformed_adj;Jumic;;;;;;;;;;;x
+d_vieja_gloria_reformed;La Vieja Corte;;;;;;;;;;;x
+d_vieja_gloria_reformed_adj;Vieja glorian;;;;;;;;;;;x
+d_ak_jeng_reformed;Ak Jeng High Priesthood;;;;;;;;;;;x
+d_ak_jeng_reformed_adj;Ak Jeng;;;;;;;;;;;x
+d_khanist_reformed;Khanist High Priesthood;;;;;;;;;;;x
+d_khanist_reformed_adj;Khanist;;;;;;;;;;;x
+d_marcelianist;Priestly Fraternity of Saint Pius X;;;;;;;;;;;x
+d_marcelianist_adj;Marcelianist;;;;;;;;;;;x

@@ -11,15 +11,6 @@ e_velikorossiya = {
 		color2={ 255 255 255 }
 		
 		capital = 652 #Moskva
-		
-		allow = {
-			NOT = {
-				has_global_flag = russia_formed
-			}
-		}
-		
-		title = "TSAR"
-	    title_female = "TSAR_FEMALE"
 				
 		d_moskva = {
 			color={ 150 59 80 }
@@ -659,6 +650,9 @@ e_velikorossiya = {
 				holy_site = proletcult
 				holy_site = jibenyuanze
 				holy_site = roerichist
+				holy_site = liturginen
+				holy_site = dolososku
+				holy_site = dolososku_reformed
 				
 				b_petrograd = {}
 				b_kronstadt = {}
@@ -1664,6 +1658,8 @@ e_velikorossiya = {
 				holy_site = nenets
 				holy_site = nenets_reformed
 				holy_site = old_believer
+				holy_site = dolososku
+				holy_site = dolososku_reformed
 				
 				b_arkhangelsk = {}
 				b_povrakulskaya = {}

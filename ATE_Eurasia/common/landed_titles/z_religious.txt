@@ -105,7 +105,7 @@ k_papal_state = {
 		Nicolaus 
 		Paschalis Paulus Pelagius Pius 
 		Sarbelius Sergius Silvester Sixtus Stanislaus Stephanus 
-		Theodorus Thomas Titus 
+		Tertullianus Theodorus Thomas Titus 
 		Urbanus 
 		Victor 
 		Xavierus
@@ -157,8 +157,8 @@ k_fornsed = {
 	
 	landless = no
 	
-	title = "ERKEBISKOP"
-	title_female = "ERKEBISKOP"
+	title = "GENERAL_SECRETARY"
+	title_female = "GENERAL_SECRETARY"
 	foa = "FYLKIR_FOA"
 	location_ruler_title = yes 
 	
@@ -214,7 +214,6 @@ d_ivri = {
 
 
 }
-
 d_pravoslavie = {
 	color={ 183 60 155 }
 	color2={ 220 220 0 }
@@ -260,80 +259,55 @@ d_pravoslavie = {
 		Yuvenaliy 
 		Zosima 
 	}
-
-
 }
-d_marcelianist = {
-	color={ 255 249 198 }
+
+d_dvoeverie = {
+	color={ 183 60 155 }
 	color2={ 220 220 0 }
 	
-	capital = 1117 # Rome
+	capital = 652 # Moscow
 	
-	title = "BISHOP_SUPERIOR"
-	foa = "POPE_FOA"
-	short_name = yes
-	location_ruler_title = yes
+	title = "PATRIARCH_RUSSIAN"
+	title_prefix = "METROPOLITAN_OF"
 	
+	#location_ruler_title = yes
+
 	# Always exists
 	landless = yes
 	
-	religion = marcelianist
-	controls_religion = marcelianist 
+	# Controls a religion
+	controls_religion = pravoslavie
+	
+	religion = pravoslavie
+	
+	dignity = 200
 	
 	# Cannot be held as a secondary title
 	primary = yes
-
-	assimilate = no
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
-
-	dignity = 200
-}
-k_sspx_papacy = {
-	color={ 255 249 198 }
-	color2={ 220 220 0 }
 	
-	capital = 1117 # Rome
-	
-	title = "POPE"
-	foa = "POPE_FOA"
-	short_name = yes
-	location_ruler_title = yes
-	
-	# Always exists
-	landless = yes
-	
-	religion = marcelianist
-	
-	# Cannot be held as a secondary title
-	primary = yes
-
-	assimilate = no
-	
-	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
-
-	dignity = 200
-	
-	# Regnal names
-	male_names = {
-		Adalbertus Alexander Ambrosius Anastasius Anscharius Antonius Athanasius Augustinus 
-		Basilius Benedictus Bonifatius 
-		Caelestinus Callistus Christophorus Chrysostomus Clemens Constantinus Cyprianus 
-		Damasus Damianus Dominicus 
-		Eugenius 
-		Felix
-		Gregorius 
-		Hadrianus Hieronymus Hilarius 
-		Iannus Ianuarius Ignatius Innocentius Ioannes Iosephus Isidorus Iulius 
-		Leo Lucius Marcellus Martinus Maximilianus Michael 
-		Nicolaus 
-		Paschalis Paulus Pelagius Pius 
-		Sarbelius Sergius Silvester Sixtus Stephanus 
-		Theodorus Thomas Titus 
-		Urbanus 
-		Victor 
+	male_names = { 
+		Adrian Afanasiy Aleksandr Aleksiy Amvrosiy Anastasiy Antoniy Arseniy 
+		Daniil Dimitriy Dionisiy 
+		Efrem 
+		Feodosiy Feodor Feofan Feofilakt Filaret Filipp Fotiy 
+		Gavriil Georgiy Gerasim German Gerontiy Grigoriy 
+		Ieronim Ignatiy Ilarion Ioakim Ioann Ioannikiy Iona Ioasaf Iosif Isidor 
+		Kiprian Kirill Kliment Konstantin 
+		Luka 
+		Makariy Maksim Mark Matfey Mikhail 
+		Nikanor Nikifor Nikita Nikolay 
+		Onufriy 
+		Palladiy Pimen Platon Pyotr 
+		Serafim Sergiy Silvestr Simon Sofroniy Stefan 
+		Tikhon 
+		Veniamin Vikentiy Vitaliy Vladimir 
+		Yuvenaliy 
+		Zosima 
 	}
 }
+
 d_sun_king_cultist = {
 	color = { 255 255 33 }
 	color2={ 220 220 0 }
@@ -783,7 +757,7 @@ d_nepmese_reformed = {
 	capital = 1169 #Buda
 	creation_requires_capital = no
 	
-	landless = no
+	landless = yes
 	
 	title = "TALTOS_KING"
 	title_female = "TALTOS_QUEEN"
@@ -1653,7 +1627,7 @@ d_jagannath_reformed = {
 	capital = 2788 #Varanasi
 	creation_requires_capital = no
 	
-	landless = no
+	landless = yes
 	
 	title = "ACHARAYA"
 	title_female = "ACHARAYA"
@@ -2036,7 +2010,6 @@ d_constitutionalist = {
 	capital = 1117 # Rome
 	
 	title = "POPE"
-	title_female = "POPE"
 	foa = "POPE_FOA"
 	short_name = yes
 	location_ruler_title = yes
@@ -2073,7 +2046,7 @@ d_constitutionalist = {
 		Nicolaus 
 		Paschalis Paulus Pelagius
 		Sarbelius Sergius Silvester Sixtus Stanislaus Stephanus 
-		Theodorus Thomas Titus 
+		Tertullianus Theodorus Thomas Titus 
 		Urbanus 
 		Victor 
 		Xavierus
@@ -2092,54 +2065,55 @@ d_constitutionalist = {
 	}
 }
 
-d_proletcult = {
-	color={ 214 67 67 }
+d_liturginen = { 
+	color={ 67 88 210 }
 	color2={ 220 220 0 }
+
+	capital = 559
 	
-	capital = 652 # Moscow
-	
-	title = "GENERAL_SECRETARY"
-	foa = "GENERAL_SECRETARY_FOA"
-	short_name = yes
-	location_ruler_title = yes
+	title = "ARCHBISHOP"
+	title_female = "ARCHBISHOP"
+	foa = "ECUMENICAL_PATRIARCH_FOA"
+	title_prefix = "ARCHDIOCESE_OF"
 	
 	# Always exists
 	landless = yes
 	
 	# Controls a religion
-	controls_religion = proletcult
+	controls_religion = liturginen
 	
-	religion = proletcult
+	religion = liturginen
 	
 	# Cannot be held as a secondary title
 	primary = yes
-
-	assimilate = no
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
-
-	dignity = 200
-	
 }
 
-d_sjotru_reformed = {
-	color={ 43 70 147 }
+d_dolososku_reformed = {
+	color = { 91 145 92 }
 	color2 = { 255 255 255 }
 	
-	capital = 152 # Sunnlendingafjordungur
+	capital = 559
 	creation_requires_capital = no
 	
-	landless = no
+	landless = yes
 	
-	title = "ALLESHARJARGODI"
-	title_female = "ALLESHARJARGODI"
-	foa = "FYLKIR_FOA"
+	title = "VIISAIN"
+	title_female = "VIISAIN"
+	foa = "VIISAIN_FOA"
 	short_name = yes
 	
-	#Controls a religion
-	controls_religion = sjotru_reformed
+	allow = {
+		num_of_holy_sites = 3
+		piety = 150
+		wealth = 100
+	}
 	
-	religion = sjotru_reformed
+	#Controls a religion
+	controls_religion = dolososku_reformed
+	
+	religion = dolososku_reformed
 	
 	assimilate = no
 	
@@ -2150,49 +2124,236 @@ d_sjotru_reformed = {
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
 
-d_dvoeverie = {
-	color={ 183 60 155 }
-	color2={ 220 220 0 }
+d_polyarniki_reformed = {
+	color = { 57 122 123 }
+	color2 = { 255 255 255 }
 	
-	capital = 652 # Moscow
+	capital = 2301
+	creation_requires_capital = no
 	
-	title = "PATRIARCH_RUSSIAN"
-	title_prefix = "METROPOLITAN_OF"
+	landless = yes
 	
-	#location_ruler_title = yes
+	title = "SNOW_TSAREVICH"
+	title_female = "SNOW_TSAREVNA"
+	foa = "SNOW_TSAREVICH_FOA"
+	short_name = yes
+	
+	allow = {
+		num_of_holy_sites = 3
+		piety = 150
+		wealth = 100
+	}
+	
+	#Controls a religion
+	controls_religion = polyarniki_reformed
+	
+	religion = polyarniki_reformed
+	
+	assimilate = no
+	
+	primary = no
+	
+	dignity = 200
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
 
+d_jumic_reformed = {
+	color = { 144 44 26 }
+	color2 = { 255 255 255 }
+	
+	capital = 721
+	creation_requires_capital = no
+	
+	landless = yes
+	
+	title = "HIGHEST_PRIEST"
+	title_female = "HIGHEST_PRIEST_FEMALE"
+	foa = "HIGHEST_PRIEST_FOA"
+	short_name = yes
+	
+	allow = {
+		num_of_holy_sites = 3
+		piety = 150
+		wealth = 100
+	}
+	
+	#Controls a religion
+	controls_religion = jumic_reformed
+	
+	religion = jumic_reformed
+	
+	assimilate = no
+	
+	primary = no
+	
+	dignity = 200
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
+d_nenets_reformed = {
+	color = { 193 215 22 }
+	color2 = { 255 255 255 }
+	
+	capital = 671
+	creation_requires_capital = no
+	
+	landless = yes
+	
+	title = "HIGHEST_PRIEST"
+	title_female = "HIGHEST_PRIEST_FEMALE"
+	foa = "HIGHEST_PRIEST_FOA"
+	short_name = yes
+	
+	allow = {
+		num_of_holy_sites = 3
+		piety = 150
+		wealth = 100
+	}
+	
+	#Controls a religion
+	controls_religion = nenets_reformed
+	
+	religion = nenets_reformed
+	
+	assimilate = no
+	
+	primary = no
+	
+	dignity = 200
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
+d_ak_jeng_reformed = {
+	color = { 232 220 40 }
+	color2 = { 255 255 255 }
+	
+	capital = 727
+	creation_requires_capital = no
+	
+	landless = yes
+	
+	title = "HIGHEST_PRIEST"
+	title_female = "HIGHEST_PRIEST_FEMALE"
+	foa = "HIGHEST_PRIEST_FOA"
+	short_name = yes
+	
+	allow = {
+		num_of_holy_sites = 3
+		piety = 150
+		wealth = 100
+	}
+	
+	#Controls a religion
+	controls_religion = ak_jeng_reformed
+	
+	religion = ak_jeng_reformed
+	
+	assimilate = no
+	
+	primary = no
+	
+	dignity = 200
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
+d_khanist_reformed = {
+	color = { 192 180 15 }
+	color2 = { 255 255 255 }
+	
+	capital = 2928
+	creation_requires_capital = no
+	
+	landless = yes
+	
+	title = "HIGHEST_PRIEST"
+	title_female = "HIGHEST_PRIEST_FEMALE"
+	foa = "HIGHEST_PRIEST_FOA"
+	short_name = yes
+	
+	allow = {
+		num_of_holy_sites = 3
+		piety = 150
+		wealth = 100
+	}
+	
+	#Controls a religion
+	controls_religion = khanist_reformed
+	
+	religion = khanist_reformed
+	
+	assimilate = no
+	
+	primary = no
+	
+	dignity = 200
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
+d_vieja_gloria_reformed = {
+	color = { 250 145 50 }
+	color2 = { 255 255 255 }
+	
+	capital = 187
+	creation_requires_capital = no
+	
+	landless = yes
+	
+	title = "CATHOLIC_KING"
+	title_female = "CATHOLIC_KING_FEMALE"
+	foa = "CATHOLIC_KING_FOA"
+	short_name = yes
+	
+	allow = {
+		num_of_holy_sites = 3
+		piety = 150
+		wealth = 100
+	}
+	
+	#Controls a religion
+	controls_religion = vieja_gloria_reformed
+	
+	religion = vieja_gloria_reformed
+	
+	assimilate = no
+	
+	primary = no
+	
+	dignity = 200
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
+d_marcelianist = {
+	color = { 200 0 0 }
+	color2 = { 255 255 255 }
+	
+	capital = 472
+	creation_requires_capital = no
+	
+	title = "BISHOP_SUPERIOR"
+	title_female = "BISHOP_SUPERIOR"
+	foa = "POPE_FOA"
+	short_name = yes
+	
 	# Always exists
 	landless = yes
 	
 	# Controls a religion
-	controls_religion = dvoeverie
+	controls_religion = marcelianist
 	
-	religion = dvoeverie
-	
-	dignity = 200
+	religion = marcelianist
 	
 	# Cannot be held as a secondary title
 	primary = yes
+
+	assimilate = no
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
-	
-	male_names = { 
-		Adrian Afanasiy Aleksandr Aleksiy Amvrosiy Anastasiy Antoniy Arseniy 
-		Daniil Dimitriy Dionisiy 
-		Efrem 
-		Feodosiy Feodor Feofan Feofilakt Filaret Filipp Fotiy 
-		Gavriil Georgiy Gerasim German Gerontiy Grigoriy 
-		Ieronim Ignatiy Ilarion Ioakim Ioann Ioannikiy Iona Ioasaf Iosif Isidor 
-		Kiprian Kirill Kliment Konstantin 
-		Luka 
-		Makariy Maksim Mark Matfey Mikhail 
-		Nikanor Nikifor Nikita Nikolay 
-		Onufriy 
-		Palladiy Pimen Platon Pyotr 
-		Serafim Sergiy Silvestr Simon Sofroniy Stefan 
-		Tikhon 
-		Veniamin Vikentiy Vitaliy Vladimir 
-		Yuvenaliy 
-		Zosima 
-	}
+
+	dignity = 200
 }

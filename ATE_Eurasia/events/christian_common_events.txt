@@ -553,6 +553,14 @@ narrative_event = { #Welcome in London
 		text = EVTNAME_WALSINGHAM
 		trigger = { has_character_flag = pilgrimage_to_walsingham }
 	}
+	title = {
+		text = EVTNAME_PETERSBURG
+		trigger = { has_character_flag = pilgrimage_to_petersburg }
+	}
+	title = {
+		text = EVTNAME_UPPSALA
+		trigger = { has_character_flag = pilgrimage_to_uppsala }
+	}
 	desc = {
 		text = EVTDESC_christian_13_ROME
 		picture = GFX_evt_rome
@@ -792,6 +800,20 @@ narrative_event = { #Welcome in London
 			has_character_flag = pilgrimage_to_glastonbury
 		}
 	}
+	desc = {
+		text = EVTDESC_christian_13_PETERSBURG
+		picture = GFX_evt_petersburg
+		trigger = { 
+			has_character_flag = pilgrimage_to_petersburg
+		}
+	}
+	desc = {
+		text = EVTDESC_christian_13_UPPSALA
+		picture = GFX_evt_uppsala
+		trigger = { 
+			has_character_flag = pilgrimage_to_uppsala
+		}
+	}
 	
 	is_triggered_only = yes
 	
@@ -833,6 +855,8 @@ narrative_event = { #Welcome in London
 		clr_character_flag = pilgrimage_to_westminster
 		clr_character_flag = pilgrimage_to_glastonbury
 		clr_character_flag = pilgrimage_to_walsingham
+		clr_character_flag = pilgrimage_to_uppsala
+		clr_character_flag = pilgrimage_to_petersburg
 		clr_character_flag = activated_pilgrimage
 		clr_character_flag = do_not_disturb
 	}
@@ -1852,7 +1876,7 @@ character_event = {
 	}
 }
 
-character_event = { 
+character_event = {
 	id = christian.35
 	desc = EVTDESC_christian_35
 	picture = GFX_evt_russian_pilgrimage
@@ -2083,5 +2107,149 @@ character_event = {
 	option = { 
 		name = EVTOPTD_christian_35
 		character_event = { id = christian.35 }
+	}
+}
+
+character_event = { #Liturginen
+	id = christian.39
+	desc = EVTDESC_christian_9
+	picture = GFX_evt_cathedral
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { #Two main holy sites
+		name = EVTOPTA_christian_39
+		piety=30
+		character_event = { id = christian.40 }
+	}
+	
+	option = { #Other mainsteam holy sites
+		name = EVTOPTB_christian_9
+		piety=30
+		character_event = { id = christian.41 }
+	}
+	
+	option = {
+		name = EVTOPTC_SOA_5018 # Find a Saintly Burial Site to visit
+
+		trigger = { has_dlc = "Holy Fury" }
+
+		character_event = {
+			id = HF.41300
+			days = 15
+		}
+	}
+}
+
+character_event = {
+	id = christian.40
+	desc = EVTDESC_christian_40
+	picture = GFX_evt_cathedral
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { #Turku
+		name = EVTOPTA_christian_40
+
+		set_character_flag = pilgrimage_to_turku
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_TURKU
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+	
+	option = { #Jerusalem
+		name = EVTOPTB_christian_40
+		set_character_flag = pilgrimage_to_jerusalem
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_JERUSALEM
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+}
+
+character_event = {
+	id = christian.41
+	desc = EVTDESC_christian_11
+	picture = GFX_evt_cathedral
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { #Uppsala
+		name = EVTOPTA_christian_41
+
+		set_character_flag = pilgrimage_to_uppsala
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_UPPSALA
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+	
+	option = { #Lund
+		name = EVTOPTB_christian_19
+
+		set_character_flag = pilgrimage_to_lund
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_LUND
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
+	}
+		
+	option = { #Petersburg
+		name = EVTOPTC_christian_41
+
+		set_character_flag = pilgrimage_to_petersburg
+
+		character_event = {
+			id = christian.12
+			days = 15
+		}
+
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PILGRIMAGE_TO_PETERSBURG
+				picture = GFX_evt_pilgrims_epic_journey
+			}
+		}
 	}
 }

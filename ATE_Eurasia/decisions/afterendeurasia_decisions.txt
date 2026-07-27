@@ -838,7 +838,10 @@ decisions = {
 				society_member_of = warrior_lodge_sun_king_cultist
 			}
 			is_playable = yes
-		    religion = sun_king_cultist
+			OR = {
+		        religion = sun_king_cultist
+				religion = chevalier
+			}
 			NOT = { trait = pilgrim }
 			NOT = {
 				has_alternate_start_parameter = { key = religion_names value = random }
@@ -1251,6 +1254,23 @@ decisions = {
 			OR = {
 				religion = nepmese
 				religion = nepmese_reformed
+				AND = {
+				    culture = hungarian
+					OR = {
+					    religion = catholic
+						religion = apparitionist
+						religion = constitutionalist
+						religion = marcelianist
+						religion = high_church
+						religion = orthodox
+						religion = oldcalendarist
+						religion = antipalamite
+						religion = mariavite
+						religion = coronite
+						religion = oasite
+						religion = lutheran
+					}
+				}
 			}
 			NOT = { has_character_modifier = st_martins_timer }
 			NOT = {	has_character_flag = st_martins_day }
@@ -1290,7 +1310,7 @@ decisions = {
 			set_character_flag = recent_minor_decision
 			set_character_flag = do_not_disturb
 			custom_tooltip = {
-				text = TXT_st_patricks_day_decision
+				text = TXT_st_martins_day_decision
 				hidden_tooltip = { 
 					character_event = { id = nepmese.10 } 
 				}
