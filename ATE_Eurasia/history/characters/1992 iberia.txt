@@ -1980,7 +1980,7 @@
 	religion=vieja_gloria
 	father=1992968
 	2478.1.1={birth=yes}
-	2491.1.1={death=yes}
+	2524.1.1={death=yes}
 }
 
 1992970={
@@ -2300,7 +2300,7 @@
 	1600.1.1={death=yes}
 }
 
-1992956={
+1992988={
 	name="Silvestre"
 	dynasty=7534241
 	culture=nortenho
@@ -2313,12 +2313,12 @@
 	trait=content
 	2621.8.12={birth=yes}
 	2649.1.1={
-	   add_spouse=1992957
+	   add_spouse=1992989
 	}
 	2700.1.1={death=yes}
 }
 
-1992957={
+1992989={
 	name="Luísa"
 	female=yes
 	culture=nortenho
@@ -2327,25 +2327,25 @@
 	2700.1.1={death=yes}
 }
 
-1992958={
+1992990={
 	name="Luís"
 	dynasty=7534241
 	culture=nortenho
 	religion=catholic
-	father=1992956
-	mother=1992957
+	father=1992988
+	mother=1992989
 	2650.3.17={birth=yes}
 	2700.1.1={death=yes}
 }
 
-1992959={
+1992991={
 	name="Joana"
 	female=yes
 	dynasty=7534241
 	culture=nortenho
 	religion=catholic
-	father=1992956
-	mother=1992957
+	father=1992988
+	mother=1992989
 	trait="attractive"
 	2654.6.15={birth=yes}
 	2700.1.1={death=yes}
