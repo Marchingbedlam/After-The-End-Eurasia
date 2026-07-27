@@ -122,18 +122,19 @@
 	name="Alonso"
 	dynasty=2018060 #Carrasco
 	culture=castilian
-	religion=catholic
+	religion=vieja_gloria
 	martial=6
 	diplomacy=5
 	stewardship=8
 	intrigue=7
 	learning=4
+	trait=skilled_tactician
 	trait=proud
 	trait=greedy
 	trait=brave
-	trait=honorable
 	trait=authoritative
-	trait=skilled_tactician
+	mother=1992983
+	father=1992984
 	2623.4.1={birth=yes}
 	2680.1.1={death=yes}
 }
@@ -141,7 +142,7 @@
 	name="Alejandro"
 	dynasty=2018060 #Carrasco
 	culture=castilian
-	religion=catholic
+	religion=vieja_gloria
 	martial=8
 	diplomacy=9
 	stewardship=3
@@ -558,7 +559,7 @@
 	name="Fernando"
 	dynasty=2020034 #Benito
 	culture=castilian
-	religion=catholic
+	religion=vieja_gloria
 	martial=8
 	diplomacy=5
 	stewardship=7
@@ -727,6 +728,7 @@
 	stewardship=8
 	intrigue=7
 	learning=4
+	trait=legit_bastard
 	trait=fortune_builder
 	trait=authoritative
 	trait=brave
@@ -735,6 +737,7 @@
 	trait=genius
 	trait=architect
 	trait=poet
+	father=1992976
 	2630.8.22={birth=yes}
 	2680.1.1={death=yes}
 }
@@ -1941,4 +1944,409 @@
 	trait="legendary"
 	2365.2.23={birth=yes}
 	2430.6.14={death=yes}
+}
+
+##### Kings of Toledo
+
+1992968={
+	name="Diego"
+	dynasty=2018180 #Villanueva
+	culture=castilian
+	religion=vieja_gloria
+	trait="brilliant_strategist"
+	trait="peasant_leader"
+	trait="shy"
+	trait="just"
+	trait="zealous"
+	trait="brave"
+	trait="honorable"
+	give_nickname=nick_the_holy
+	2455.1.1={birth=yes}
+	2485.1.1={
+	   add_friend=1992972
+	}
+	2491.1.1={
+	   death={
+	      death_reason=death_battle
+	   }
+	}
+}
+
+1992969={
+	name="Nuria"
+	female=yes
+	dynasty=2018180 #Villanueva
+	culture=castilian
+	religion=vieja_gloria
+	father=1992968
+	2478.1.1={birth=yes}
+	2491.1.1={death=yes}
+}
+
+1992970={
+	name="Pedro"
+	dynasty=2018180 #Villanueva
+	culture=castilian
+	religion=vieja_gloria
+	father=1992968
+	trait="midas_touched"
+	trait="sympathy_christendom"
+	trait="kind"
+	trait="shy"
+	trait="erudite"
+	trait="content"
+	trait="painter"
+	2490.1.1={birth=yes}
+	2542.1.1={death=yes}
+}
+
+1992971={
+	name="Diego"
+	dynasty=2018180 #Villanueva
+	culture=castilian
+	religion=vieja_gloria
+	father=1992970
+	trait="tough_soldier"
+	trait="tall"
+	trait="ambitious"
+	trait="ruthless"
+	trait="honest"
+	give_nickname=nick_the_great
+	2525.1.1={birth=yes}
+	2588.1.1={death=yes}
+}
+
+1992972={
+	name="Diego"
+	dynasty=7534237
+	culture=castilian
+	religion=vieja_gloria
+	trait="tough_soldier"
+	trait="peasant_leader"
+	trait="sympathy_christendom"
+	trait="quick"
+	trait="hunchback"
+	trait="brave"
+	trait="ambitious"
+	trait="honorable"
+	2470.1.1={birth=yes}
+	2496.1.1={
+	   add_spouse=1992969
+	}
+	2527.1.1={death=yes}
+}
+
+1992973={
+	name="Diego"
+	dynasty=7534237
+	culture=castilian
+	religion=vieja_gloria
+	father=1992972
+	mother=1992969
+	trait="charismatic_negotiator"
+	trait="physician"
+	trait="weak"
+	trait="humble"
+	trait="kind"
+	trait="trusting"
+	trait="musician"
+	trait="saint"
+	give_nickname=nick_the_martyr
+	2499.1.1={birth=yes}
+	2428.1.1={
+	   religion=penitant
+	}
+	2529.6.24={
+	  death={
+	     death_reason=death_murder
+	  }
+	}
+}
+
+1992974={
+	name="Alonso"
+	dynasty=7534237
+	culture=castilian
+	religion=vieja_gloria
+	father=1992972
+	mother=1992969
+	trait="master_schemer"
+	trait="quick"
+	trait="gregarious"
+	trait="deceitful"
+	trait="hunchback"
+	trait="ruthless"
+	2503.1.1={birth=yes}
+	2428.1.1={
+	   religion=penitant
+	}
+	2529.6.24={
+	   add_trait="kinslayer"
+	   religion=vieja_gloria
+	}
+	2544.8.9={
+	  death={
+	     death_reason=death_battle_duel
+		 killer=1992971
+	  }
+	}
+}
+
+1992975={
+	name="Pedro"
+	dynasty=2018180 #Villanueva
+	culture=castilian
+	religion=vieja_gloria
+	father=1992971
+	trait="strong"
+	trait="gluttonous"
+	trait="kind"
+	trait="content"
+	trait="is_fat"
+	2556.1.1={birth=yes}
+	2597.1.1={
+	   death={
+	      death_reason=death_accident
+	   }
+	}
+}
+
+1992976={
+	name="Pedro"
+	dynasty=2018180 #Villanueva
+	culture=castilian
+	religion=vieja_gloria
+	father=1992975
+	trait="charismatic_negotiator"
+	trait="tall"
+	trait="poet"
+	trait="musician"
+	trait="attractive"
+	trait="brave"
+	trait="honest"
+	trait="gregarious"
+	2580.1.1={birth=yes}
+	2647.2.25={death=yes}
+}
+
+1992977={
+	name="Alejandro"
+	dynasty=2018180 #Villanueva
+	culture=castilian
+	religion=vieja_gloria
+	father=1992976
+	trait="slow"
+	trait="shy"
+	trait="cancer"
+	2602.1.1={birth=yes}
+	2640.1.1={
+	   death={
+	      death_reason=death_trait
+	   }
+	}
+}
+
+1992978={
+	name="Pedro"
+	dynasty=2018180 #Villanueva
+	culture=castilian
+	religion=vieja_gloria
+	father=1992977
+	trait="dutiful_cleric"
+	trait="wroth"
+	trait="just"
+	trait="honest"
+	trait="painter"
+	trait="erudite"
+	trait="honorable"
+	2629.1.1={birth=yes}
+	2652.1.1={
+	     religion=catholic
+	}
+	2666.5.2={
+	   death={
+	      death_reason=death_murder_unknown
+		  killer=1992300
+	   }
+	}
+}
+
+1992979={
+	name="Juana"
+	female=yes
+	dynasty=2018180 #Villanueva
+	culture=castilian
+	religion=catholic
+	father=1992978
+	trait="attractive"
+	2654.6.15={birth=yes}
+	2666.5.2={
+	   death={
+	      death_reason=death_murder_unknown
+		  killer=1992300
+	   }
+	}
+}
+
+1992980={
+	name="Pedro"
+	dynasty=2018180 #Villanueva
+	culture=castilian
+	religion=catholic
+	father=1992978
+	2657.10.24={birth=yes}
+	2666.5.2={
+	   death={
+	      death_reason=death_murder_unknown
+		  killer=1992300
+	   }
+	}
+}
+
+1992981={
+	name="Diego"
+	dynasty=2018180 #Villanueva
+	culture=castilian
+	religion=catholic
+	father=1992978
+	trait="twin"
+	2660.4.11={birth=yes}
+	2666.5.2={
+	   death={
+	      death_reason=death_murder_unknown
+		  killer=1992300
+	   }
+	}
+}
+
+1992982={
+	name="Marc"
+	dynasty=2018180 #Villanueva
+	culture=castilian
+	religion=catholic
+	father=1992978
+	trait="twin"
+	2660.4.11={birth=yes}
+	2666.5.2={
+	   death={
+	      death_reason=death_murder_unknown
+		  killer=1992300
+	   }
+	}
+}
+
+1992983={
+	name="Casandra"
+	female=yes
+	dynasty=2018180 #Villanueva
+	culture=castilian
+	religion=vieja_gloria
+	father=1992976
+	trait="detached_priest"
+	trait="attractive"
+	trait="shy"
+	trait="mystic"
+	trait="deceitful"
+	2600.1.1={birth=yes}
+	2690.1.1={death=yes}
+}
+
+1992984={
+	name="Alejandro"
+	dynasty=2018060 #Carrasco
+	culture=castilian
+	religion=vieja_gloria
+	2599.1.1={birth=yes}
+	2622.1.1={
+	   add_spouse=1992983
+	}
+	2657.4.14={death=yes}
+}
+
+1992985={
+	name="José"
+	occluded=yes
+	dynasty=7534238
+	culture=castilian
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	1950.1.1={birth=yes}
+	1990.1.1={death=yes}
+}
+
+1992986={
+	name="Emilio"
+	occluded=yes
+	dynasty=7534239
+	culture=castilian
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	1900.1.1={birth=yes}
+	1970.1.1={death=yes}
+}
+
+1992987={
+	name="Domingo"
+	occluded=yes
+	dynasty=7534240
+	culture=greek
+	religion=catholic
+	trait="legendary"
+	trait="painter"
+	disallow_random_traits=yes
+	1500.1.1={birth=yes}
+	1600.1.1={death=yes}
+}
+
+1992956={
+	name="Silvestre"
+	dynasty=7534241
+	culture=nortenho
+	religion=catholic
+	trait=indulgent_wastrel
+	trait=gregarious
+	trait=gluttonous
+	trait=patient
+	trait=pious
+	trait=content
+	2621.8.12={birth=yes}
+	2649.1.1={
+	   add_spouse=1992957
+	}
+	2700.1.1={death=yes}
+}
+
+1992957={
+	name="Luísa"
+	female=yes
+	culture=nortenho
+	religion=catholic
+	2620.4.5={birth=yes}
+	2700.1.1={death=yes}
+}
+
+1992958={
+	name="Luís"
+	dynasty=7534241
+	culture=nortenho
+	religion=catholic
+	father=1992956
+	mother=1992957
+	2650.3.17={birth=yes}
+	2700.1.1={death=yes}
+}
+
+1992959={
+	name="Joana"
+	female=yes
+	dynasty=7534241
+	culture=nortenho
+	religion=catholic
+	father=1992956
+	mother=1992957
+	trait="attractive"
+	2654.6.15={birth=yes}
+	2700.1.1={death=yes}
 }
