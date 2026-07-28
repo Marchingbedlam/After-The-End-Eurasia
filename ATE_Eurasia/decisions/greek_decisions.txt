@@ -5,12 +5,6 @@ decisions = {
 		
 		potential = {
 			is_alternate_start = no
-			NOT = {
-				has_game_rule = {
-					name = empire_decisions
-					value = off
-				}
-			}
 			NOT = { has_global_flag = byzantium_unified }
 			OR = { 
 			   religion_group = christian

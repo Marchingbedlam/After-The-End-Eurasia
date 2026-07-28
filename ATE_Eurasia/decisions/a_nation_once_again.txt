@@ -8,12 +8,6 @@ decisions = {
 
 		potential = {
 			is_alternate_start = no
-			NOT = {
-				has_game_rule = {
-					name = empire_decisions
-					value = off
-				}
-			}
 			NOT = { has_global_flag = germany_unified }
 			NOT = { religion = neuhumanist }
 			OR = {
@@ -96,12 +90,6 @@ decisions = {
 
 		potential = {
 			is_alternate_start = no
-			NOT = {
-				has_game_rule = {
-					name = empire_decisions
-					value = off
-				}
-			}
 			NOT = { has_global_flag = north_germany_unified }
 			NOT = { religion = neuhumanist }
 			independent = yes
@@ -164,12 +152,6 @@ decisions = {
 
 		potential = {
 			is_alternate_start = no
-			NOT = {
-				has_game_rule = {
-					name = empire_decisions
-					value = off
-				}
-			}
 			NOT = { has_global_flag = south_germany_unified }
 			NOT = { religion = neuhumanist }
 			independent = yes
@@ -234,12 +216,6 @@ decisions = {
 
 		potential = {
 			is_alternate_start = no
-			NOT = {
-				has_game_rule = {
-					name = empire_decisions
-					value = off
-				}
-			}
 			NOT = { has_global_flag = spain_unified }
 			independent = yes
 			culture_group = iberian

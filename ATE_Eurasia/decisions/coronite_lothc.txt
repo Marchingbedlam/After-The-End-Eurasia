@@ -6,12 +6,6 @@ decisions = {
 
 		potential = {
 			is_alternate_start = no
-			NOT = {
-				has_game_rule = {
-					name = empire_decisions
-					value = off
-				}
-			}
 			NOT = { has_global_flag = the_lands_of_the_holy_crown_unified }
 			religion = coronite
 			#independent = yes

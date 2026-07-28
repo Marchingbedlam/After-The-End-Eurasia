@@ -8,13 +8,7 @@ decisions = {
 
 		potential = {
 			is_alternate_start = no
-			NOT = {
-				has_game_rule = {
-					name = empire_decisions
-					value = off
-				}
-				has_global_flag = kazakhstan_formed
-			}
+			NOT = { has_global_flag = kazakhstan_formed }
 			independent = yes
 			OR = {
 				culture = kazakh

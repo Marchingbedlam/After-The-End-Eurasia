@@ -103,12 +103,6 @@ decisions = {
 
 		potential = {
 			is_alternate_start = no
-			NOT = {
-				has_game_rule = {
-					name = empire_decisions
-					value = off
-				}
-			}
 			NOT = { has_global_flag = kurdistan_unified }
 			independent = yes
 			culture = kurdish

@@ -721,7 +721,6 @@ pagan_group = {
 		female_temple_holders = yes
 		allow_in_ruler_designer = no
 		feminist = yes
-		allow_in_ruler_designer = no
 		can_demand_religious_conversion = yes
 		religious_clothing_head = 4
 		religious_clothing_priest = 4
@@ -1895,7 +1894,6 @@ christian = {
 		}
 		
 		pacifist = yes # Makes the AI less likely to start wars, plots and factions
-		crusade_name = CRUSADE
 		can_grant_divorce = yes
 		can_call_crusade = no
 		female_temple_holders = no
@@ -1912,7 +1910,6 @@ christian = {
 		intermarry = laestadianist
 		intermarry = lutheran
 		intermarry = seperatist
-		intermarry = laestadianist
 		intermarry = pravoslavie
 		intermarry = dvoeverie
 		intermarry = fornsed
@@ -1974,8 +1971,6 @@ christian = {
 		intermarry = high_church
 		intermarry = free_church
 		intermarry = leveller
-		intermarry = folketro
-		intermarry = fornsed
 	}
 	orthodox = {
 		graphical_culture = westerngfx
@@ -3097,7 +3092,6 @@ vernacular = {
 		can_grant_divorce = yes
 		can_grant_invasion_cb = yes
 		priests_can_marry = yes
-		priests_can_inherit = yes
 		allow_looting = yes
 		priests_can_inherit = no
 		allow_rivermovement = yes
@@ -3384,7 +3378,7 @@ scholastic = {
 		icon = 88
 		heresy_icon = 88
 		
-		color = { .0 .0 100 } #should be EU blue
+		color = { 10 78 154 } #should be EU blue
 		
 		interface_skin = { taoist_interface indian_interface muslim_interface }
 		

@@ -15,12 +15,6 @@ decisions = {
 					capital_scope = { region = custom_tunisia }
 				}
 			}
-			NOT = {
-				has_game_rule = {
-					name = empire_decisions
-					value = off
-				}
-			}
 			NOT = { has_global_flag = carthage_reborn }
 			independent = yes
 		}
@@ -161,12 +155,6 @@ decisions = {
 		potential = {
 			culture = lebneni
 			is_alternate_start = no
-			NOT = {
-				has_game_rule = {
-					name = empire_decisions
-					value = off
-				}
-			}
 			has_global_flag = carthage_reborn
 			NOT = { has_global_flag = phoenicia_restablish }
 			independent = yes
