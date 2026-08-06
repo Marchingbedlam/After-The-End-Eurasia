@@ -754,7 +754,7 @@
 	2537.3.1={death=yes}
 }
 2071061={
-	name="Mehrab"
+	name="Mahmud"
 	dynasty=2085101 #Baryalai
 	culture=pashtun
 	religion=naqshbandi
@@ -776,6 +776,7 @@
 	dynasty=2085101 #Baryalai
 	culture=pashtun
 	religion=naqshbandi
+	father=2071218
 	2539.4.23={birth=yes}
 	2589.4.25={death=yes}
 }
@@ -1957,12 +1958,13 @@
 	2579.8.19={death=yes}
 }
 2071167={
-	name="Shakar"
+	name="Zala"
 	female=yes
-	dynasty=0 
-	culture=hazara
+	dynasty=2085101 #Baryalai
+	culture=pashtun
 	religion=shiite
-	2530.3.1={birth=yes}
+	father=2071213
+	2528.3.1={birth=yes}
 	2574.2.8={death=yes}
 }
 2071168={
@@ -2363,4 +2365,220 @@
 	2660.11.20={add_spouse=2071007}
 	2660.11.20={effect={add_lover=2071007}}
 	2680.1.1={death=yes}
+}
+
+#### Ancient Kings of Afganistan
+2071205={
+	name="Amanullah"
+	occluded=yes
+	dynasty=2085101 #Baryalai
+	culture=pashtun
+	religion=ruhi
+	trait="legendary"
+	disallow_random_traits=yes
+	1890.1.1={birth=yes}
+	1930.1.1={death=yes}
+}
+2071206={
+	name="Muhammad Zeher"
+	occluded=yes
+	dynasty=2085101 #Baryalai
+	culture=pashtun
+	religion=ruhi
+	trait="legendary"
+	disallow_random_traits=yes
+	father=2071205
+	1920.1.1={birth=yes}
+	1978.1.1={
+	   death={
+	      death_reason=death_murder
+		  killer=2071207
+	   }
+	}
+}
+2071207={
+	name="Barbak"
+	occluded=yes
+	dynasty=7534245
+	culture=pashtun
+	religion=proletcult
+	trait="legendary"
+	trait="peasant_leader"
+	trait="bastard"
+	father=1703177
+	disallow_random_traits=yes
+	give_nickname=nick_the_evil
+	1940.1.1={birth=yes}
+	1990.1.1={
+	   death={
+	      death_reason=death_battle
+	   }
+	}
+}
+2071208={
+	name="Line of Muhammad Zeher"
+	occluded=yes
+	dynasty=2085101 #Baryalai
+	culture=pashtun
+	religion=ruhi
+	trait="legendary"
+	disallow_random_traits=yes
+	father=2071206
+	1970.1.1={birth=yes}
+	2450.1.1={death=yes}
+}
+2071209={
+	name="Muhammad"
+	dynasty=2085101 #Baryalai
+	culture=pashtun
+	religion=naqshbandi
+	father=2071208
+	give_nickname=nick_the_glorious
+	trait="brilliant_strategist"
+	trait="brave"
+	trait="strong"
+	trait="ambitious"
+	trait="zealous"
+	2414.8.19={birth=yes}
+	2457.5.24={
+	   death={
+	      death_reason=death_battle
+		  killer=2071136
+	   }
+	}
+}
+2071210={
+	name="Halima"
+	female=yes
+	dynasty=2085101 #Baryalai
+	culture=pashtun
+	religion=naqshbandi
+	father=20712094
+	trait="midas_touched"
+	trait="celibate"
+	trait="shy"
+	trait="quick"
+	trait="erudite"
+	give_nickname=nick_the_wise
+	2440.5.29={birth=yes}
+	2508.5.24={death=yes}
+}
+2071211={
+	name="Ali"
+	dynasty=2085101 #Baryalai
+	culture=pashtun
+	religion=naqshbandi
+	father=2071209
+	trait="tough_soldier"
+	trait="brave"
+	trait="ruthless"
+	trait="ambitious"
+	2446.4.12={birth=yes}
+	2516.12.5={death=yes}
+}
+2071212={
+	name="Arsalan"
+	dynasty=2085101 #Baryalai
+	culture=pashtun
+	religion=naqshbandi
+	father=2071211
+	trait="wroth"
+	trait="cruel"
+	trait="ambitious"
+	trait="brave"
+	trait="sympathy_indian"
+	2482.9.3={birth=yes}
+	2528.7.14={
+	   death={
+	      death_reason=death_murder_unknown
+		  killer=2071213
+	   }
+	}
+}
+2071213={
+	name="Muhammad"
+	dynasty=2085101 #Baryalai
+	culture=pashtun
+	religion=naqshbandi
+	father=2071211
+	trait="charismatic_negotiator"
+	trait="patient"
+	trait="gregarious"
+	trait="deceitful"
+	trait="ruthless"
+	trait="cynical"
+	trait="erudite"
+	give_nickname=nick_the_great
+	2490.5.26={birth=yes}
+	2562.6.22={death=yes}
+}
+2071214={
+	name="Mahmud"
+	dynasty=2085101 #Baryalai
+	culture=pashtun
+	religion=naqshbandi
+	father=2071213
+	2530.4.11={birth=yes}
+	2566.5.15={
+	    death={
+		   death_reason=death_murder
+		   killer=2071063
+		}
+	}
+}
+2071215={
+	name="Mahmud"
+	dynasty=2085101 #Baryalai
+	culture=pashtun
+	religion=naqshbandi
+	father=2071214
+	2552.6.22={birth=yes}
+	2566.5.15={
+	    death={
+		   death_reason=death_murder
+		   killer=2071063
+		}
+	}
+}
+2071216={
+	name="Muhammad"
+	dynasty=2085101 #Baryalai
+	culture=pashtun
+	religion=naqshbandi
+	father=2071214
+	2555.2.14={birth=yes}
+	2566.5.15={
+	    death={
+		   death_reason=death_murder
+		   killer=2071063
+		}
+	}
+}
+2071217={
+	name="Ali"
+	dynasty=2085101 #Baryalai
+	culture=pashtun
+	religion=naqshbandi
+	father=2071214
+	2559.7.26={birth=yes}
+	2566.5.15={
+	    death={
+		   death_reason=death_murder
+		   killer=2071063
+		}
+	}
+}
+2071218={
+	name="Muhammad"
+	dynasty=2085101 #Baryalai
+	culture=pashtun
+	religion=naqshbandi
+	father=2071212
+	2515.12.24={birth=yes}
+	2552.6.8={
+	    death={
+		   death_reason=death_murder_unknown
+		   killer=2071213
+		}
+	}
 }

@@ -401,7 +401,6 @@
 	2600.5.12={birth=yes}
 	2660.1.1={
 	  add_claim=e_sanctum_imperium
-	  add_claim=k_sanctum_imperium
 	}
 	2710.1.1={death=yes}
 }
@@ -1858,7 +1857,6 @@
 	2640.3.18={birth=yes}
 	2660.1.1={
 	  add_claim=e_sanctum_imperium
-	  add_claim=k_sanctum_imperium
 	}
 	2710.1.1={death=yes}
 }
@@ -2970,7 +2968,6 @@
 	2611.1.15={birth=yes}
 	2660.1.1={
 	  add_claim=e_sanctum_imperium
-	  add_claim=k_sanctum_imperium
 	}
 	2648.6.27={death=yes}
 }
@@ -3206,7 +3203,6 @@
 	2612.4.21={birth=yes}
 	2660.1.1={
 	  add_claim=e_sanctum_imperium
-	  add_claim=k_sanctum_imperium
 	}
 	2652.8.14={death=yes}
 }
@@ -3932,6 +3928,203 @@
 	culture=umbrian
 	religion=catholic
 	father=1861305
+	trait="midas_touched"
+	trait="attractive"
+	trait="patient"
+	trait="honest"
+	trait="gregarious"
+	trait="administrator"
 	2610.10.5={birth=yes}
+	2631.1.1={
+	   add_spouse=1861316
+	}
 	2670.1.1={death=yes}
+}
+
+1861316={
+	name="Anna"
+	female=yes
+	dynasty=2029202 #Chigi
+	culture=umbrian
+	religion=catholic
+	father=1861291
+	2609.8.15={birth=yes}
+	2670.1.1={death=yes}
+}
+
+1861317={
+	name="Bartolomeo"
+	dynasty=7534090
+	culture=umbrian
+	religion=catholic
+	trait="flamboyant_schemer"
+	trait="sympathy_old_world_cults"
+	trait="brave"
+	trait="wroth"
+	trait="ambitious"
+	trait="deceitful"
+	father=1861306
+	mother=1861316
+	2633.12.26={birth=yes}
+	2670.1.1={death=yes}
+}
+
+1861318={
+	name="Anna"
+	female=yes
+	dynasty=7534090
+	culture=umbrian
+	religion=catholic
+	father=1861306
+	mother=1861316
+	2638.10.14={birth=yes}
+	2670.1.1={death=yes}
+}
+
+1861319={
+	name="Ovidia"
+	female=yes
+	dynasty=7534090
+	culture=umbrian
+	religion=catholic
+	father=1861306
+	mother=1861316
+	2641.3.22={birth=yes}
+	2670.1.1={death=yes}
+}
+
+1861320={
+	name="Tommaso"
+	dynasty=7534090
+	culture=umbrian
+	religion=catholic
+	father=1861306
+	mother=1861316
+	trait="hunchback"
+	trait="poet"
+	trait="zealous"
+	trait="charitable"
+	trait="wroth"
+	trait="shy"
+	trait="erudite"
+	2646.11.12={birth=yes}
+	2670.1.1={death=yes}
+}
+
+
+######### Legendary Pre-Event rulers
+
+1861307={
+	name="Carlo Alberto"
+	occluded=yes
+	dynasty=7534052
+	culture=piedmontese
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	1798.1.1={birth=yes}
+	1849.1.1={death=yes}
+}
+
+1861308={
+	name="Charles"
+	occluded=yes
+	dynasty=7534117
+	culture=french
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	1226.3.1={birth=yes}
+	1285.1.1={death=yes}
+}
+
+1861309={
+	name="Robert"
+	occluded=yes
+	dynasty=7534117
+	culture=french
+	religion=catholic
+	father=1861308
+	trait="legendary"
+	give_nickname=nick_the_wise
+	disallow_random_traits=yes
+	1276.1.1={birth=yes}
+	1343.1.1={death=yes}
+}
+
+1861310={
+	name="Giuanna"
+	female=yes
+	occluded=yes
+	dynasty=7534117
+	culture=neapolitan
+	religion=catholic
+	father=1861309
+	trait="legendary"
+	disallow_random_traits=yes
+	1325.1.1={birth=yes}
+	1382.1.1={death=yes}
+}
+
+1861311={
+	name="Ferdinando"
+	occluded=yes
+	dynasty=7534242
+	culture=neapolitan
+	religion=catholic
+	father=1713057
+	trait="legendary"
+	disallow_random_traits=yes
+	1741.1.1={birth=yes}
+	1806.1.1={death=yes}
+}
+
+1861312={
+	name="Gioacchino"
+	occluded=yes
+	dynasty=7534243
+	culture=french
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	1768.1.1={birth=yes}
+	1815.1.1={death=yes}
+}
+
+1861313={
+	name="Francesco Ferdinando"
+	occluded=yes
+	dynasty=7534242
+	culture=neapolitan
+	religion=catholic
+	father=1861311
+	trait="legendary"
+	disallow_random_traits=yes
+	1777.1.1={birth=yes}
+	1859.1.1={death=yes}
+}
+
+1861314={
+	name="Francesco"
+	occluded=yes
+	dynasty=7534242
+	culture=neapolitan
+	religion=catholic
+	father=1861313
+	trait="legendary"
+	disallow_random_traits=yes
+	1826.1.1={birth=yes}
+	1861.1.1={death=yes}
+}
+
+1861315={
+	name="Franciscu"
+	occluded=yes
+	dynasty=7534244
+	culture=sicilian
+	religion=catholic
+	trait="legendary"
+	disallow_random_traits=yes
+	1875.1.1={birth=yes}
+	1925.1.1={death=yes}
 }

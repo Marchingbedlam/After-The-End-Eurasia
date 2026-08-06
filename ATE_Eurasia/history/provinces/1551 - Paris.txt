@@ -19,3 +19,12 @@ culture = parisian
 religion = jacobin
 
 #History
+
+1700.1.1 = {
+	build_wonder = wonder_parisian_pantheon
+}
+1800.1.1 = { 
+	set_wonder_stage = 2 
+	build_wonder_upgrade = upgrade_keeper_of_the_dead
+	build_wonder_upgrade = upgrade_statues_dead
+}

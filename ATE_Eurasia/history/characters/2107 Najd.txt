@@ -260,3 +260,249 @@
 	}
 	2531.6.5={death=yes}
 }
+
+2107015={ 
+	name="Muhammad"
+	dynasty=21007000 #Al-Saud
+	culture=najdi
+	religion=ahl_as_salaf
+	secret_religion=miaphysite
+	trait=midas_touched
+	trait=kind
+	trait=chaste
+	trait=shy
+	trait=erudite
+	trait=hunchback
+	father=2107008
+	2642.4.14={birth=yes}
+	2680.1.1={death=yes}
+}
+
+2107016={  
+	name="Muhammad"
+	dynasty=21007000 #Al-Saud
+	culture=najdi
+	religion=ahl_as_salaf
+	father=2107010
+	2610.6.26={birth=yes}
+	2638.1.1={
+	   add_spouse=2107017
+	}
+	2680.1.1={death=yes}
+}
+
+2107017={  
+	name="Abir"
+	female=yes
+	culture=najdi
+	religion=ahl_as_salaf
+	2616.4.11={birth=yes}
+	2680.1.1={death=yes}
+}
+
+2107018={  
+	name="Muhammad"
+	dynasty=21007000 #Al-Saud
+	culture=najdi
+	religion=ahl_as_salaf
+	father=2107016
+	mother=2107017
+	2640.5.11={birth=yes}
+	2680.1.1={death=yes}
+}
+
+2107019={  
+	name="Abir"
+	female=yes
+	dynasty=21007000 #Al-Saud
+	culture=najdi
+	religion=ahl_as_salaf
+	father=2107016
+	mother=2107017
+	2642.3.29={birth=yes}
+	2680.1.1={death=yes}
+}
+
+2107020={  
+	name="Majdi"
+	dynasty=21007000 #Al-Saud
+	culture=najdi
+	religion=ahl_as_salaf
+	father=2107016
+	mother=2107017
+	2645.12.15={birth=yes}
+	2680.1.1={death=yes}
+}
+
+######### Pre-Event Caliphs
+
+2107021={  
+	name="Abu Bakr"
+	dynasty=7534247
+	occluded=yes
+	culture=hijazi
+	religion=sunnah
+	disallow_random_traits=yes
+	573.1.1={birth=yes}
+	634.8.23={death=yes}
+}
+
+2107022={  
+	name="Umar"
+	dynasty=7534247
+	occluded=yes
+	culture=hijazi
+	religion=sunnah
+	disallow_random_traits=yes
+	584.1.1={birth=yes}
+	644.11.6={
+	   death={
+	     death_reason=death_murder
+	   }
+	}
+}
+
+2107023={  
+	name="Uthman"
+	dynasty=7534247
+	occluded=yes
+	culture=hijazi
+	religion=sunnah
+	disallow_random_traits=yes
+	579.1.1={birth=yes}
+	656.6.17={
+	   death={
+	     death_reason=death_murder
+	   }
+	}
+}
+
+2107024={  
+	name="Ali"
+	dynasty=7534247
+	occluded=yes
+	culture=hijazi
+	religion=sunnah
+	disallow_random_traits=yes
+	601.1.1={birth=yes}
+	661.1.28={
+	   death={
+	     death_reason=death_murder
+	   }
+	}
+}
+
+2107025={  
+	name="Mu'awiya"
+	dynasty=1956140
+	occluded=yes
+	culture=najdi
+	religion=sunnah
+	disallow_random_traits=yes
+	602.1.1={birth=yes}
+	680.4.29={death=yes}
+}
+
+2107026={  
+	name="Yazid"
+	dynasty=1956140
+	occluded=yes
+	culture=najdi
+	religion=sunnah
+	disallow_random_traits=yes
+	father=2107025
+	647.1.1={birth=yes}
+	683.11.11={
+	   death={
+	     death_reason=death_poor_health
+	   }
+	}
+}
+
+2107027={  
+	name="Mu'awiya Yazid Marwan"
+	dynasty=1956140
+	occluded=yes
+	culture=najdi
+	religion=sunnah
+	disallow_random_traits=yes
+	father=2107026
+	650.1.1={birth=yes}
+	750.8.6={
+	   death={
+	     death_reason=death_murder
+		 killer=2107027
+	   }
+	}
+}
+
+2107028={  
+	name="Harun Al-Rashid"
+	dynasty=7534246
+	occluded=yes
+	culture=furataini
+	religion=sunnah
+	disallow_random_traits=yes
+	743.1.1={birth=yes}
+	809.1.1={death=yes}
+}
+
+2107029={  
+	name="Al-Ma'mun"
+	dynasty=7534246
+	occluded=yes
+	culture=furataini
+	religion=sunnah
+	disallow_random_traits=yes
+	father=2107028
+	786.1.1={birth=yes}
+	900.1.1={death=yes}
+}
+
+2107030={  
+	name="Al-Muttaqi"
+	dynasty=7534246
+	occluded=yes
+	culture=furataini
+	religion=sunnah
+	disallow_random_traits=yes
+	father=2107029
+	878.1.1={birth=yes}
+	1000.1.1={death=yes}
+}
+
+2107031={  
+	name="Al-Kaim"
+	dynasty=7534246
+	occluded=yes
+	culture=furataini
+	religion=sunnah
+	disallow_random_traits=yes
+	father=2107030
+	987.1.1={birth=yes}
+	1100.1.1={death=yes}
+}
+
+2107032={  
+	name="Al-Mustanjid"
+	dynasty=7534246
+	occluded=yes
+	culture=furataini
+	religion=sunnah
+	disallow_random_traits=yes
+	father=2107031
+	1092.1.1={birth=yes}
+	1200.1.1={death=yes}
+}
+
+2107033={  
+	name="Al-Musta'sim"
+	dynasty=7534246
+	occluded=yes
+	culture=furataini
+	religion=sunnah
+	disallow_random_traits=yes
+	father=2107032
+	1192.1.1={birth=yes}
+	1258.1.1={death=yes}
+}

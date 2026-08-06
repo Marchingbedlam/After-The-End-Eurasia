@@ -405,7 +405,6 @@
 	religion=catholic
 	female=yes
 	trait=brilliant_strategist
-	trait=heresiarch
 	trait=zealous 
 	trait=holy_warrior
 	trait=inspiring_leader
@@ -419,6 +418,9 @@
 	learning=4
 	father=1992954
 	2641.5.30={birth=yes}
+	2658.1.1={
+	   add_spouse=1992992
+	}
 	2665.1.1={
 		effect={
 			spawn_unit={
@@ -1743,6 +1745,7 @@
 	intrigue=4
 	learning=4
 	mother=1992410
+	father=1992992
 	2660.5.30={birth=yes}
 	2680.9.24={death=yes}
 }
@@ -2349,4 +2352,27 @@
 	trait="attractive"
 	2654.6.15={birth=yes}
 	2700.1.1={death=yes}
+}
+
+1992992={
+	name="Pedro"
+	dynasty=2018060 #Carrasco
+	culture=castilian
+	religion=vieja_gloria
+	mother=1992983
+	father=1992984
+	trait="brilliant_strategist"
+	trait="strong"
+	trait="honorable"
+	trait="pious"
+	trait="patient"
+	trait="chaste"
+	trait="humble"
+	trait="brave"
+	2631.9.16={birth=yes}
+	2651.1.1={
+	   add_trait="adventurer"
+	   religion = catholic
+	}
+	2680.1.1={death=yes}
 }
