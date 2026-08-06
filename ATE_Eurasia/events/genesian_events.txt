@@ -1376,7 +1376,7 @@ character_event = {
 
 	option = { 
 		name = EVTOPTA_genesian_45
-		add_trait="genesian_fathers"
+		add_trait="genesian_faith_of_fathers"
 	}
 	
 	option = { 
@@ -1395,7 +1395,7 @@ character_event = {
 	
 	trigger = {
 	   NOR = {
-	      trait="genesian_fathers"
+	      trait="genesian_faith_of_fathers"
 		  trait="genesian_cult_of_nature"
 	   }
 	}
@@ -1403,7 +1403,7 @@ character_event = {
 	immediate = {
 		random_list = {
 			50 = {
-				add_trait = genesian_fathers
+				add_trait = genesian_faith_of_fathers
 			}
 			50 = {
 				add_trait = genesian_cult_of_nature

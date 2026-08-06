@@ -283,7 +283,7 @@ character_event = {
 				NOT = { has_character_modifier = holding_large_feast }
 				NOT = { has_character_modifier = holding_confirmation }
 				OR = {
-				   religion = folkestro
+				   religion = folketro
 				   religion = fornsed
 				}
 			}
@@ -296,7 +296,7 @@ character_event = {
 		}
 		custom_tooltip = { text = confirmation_invitations_sent }
 		character_event = { id = troll.14 days = 14 }
-		set_character_flag = big_folkestro_feast
+		set_character_flag = big_folketro_feast
 	}
 	option = {
 		name = EVTOPTB_confirmation_2
@@ -308,7 +308,7 @@ character_event = {
 				NOT = { has_character_modifier = holding_large_feast }
 				NOT = { has_character_modifier = holding_confirmation }
 				OR = {
-				   religion = folkestro
+				   religion = folketro
 				   religion = fornsed
 				}
 			}
@@ -321,7 +321,7 @@ character_event = {
 		}
 		custom_tooltip = { text = confirmation_invitations_sent }
 		character_event = { id = troll.14 days = 14 }
-		set_character_flag = moderate_folkestro_feast
+		set_character_flag = moderate_folketro_feast
 	}
 	option = {
 		name = EVTOPTC_confirmation_2
@@ -329,7 +329,7 @@ character_event = {
 		any_vassal = {
 			limit = {
 			   OR = {
-				religion = folkestro
+				religion = folketro
 				religion = fornsed
 			   }
 				prisoner = no
@@ -343,7 +343,7 @@ character_event = {
 		}
 		custom_tooltip = { text = confirmation_invitations_sent }
 		character_event = { id = troll.14 days = 14 }
-		set_character_flag = small_folkestro_feast
+		set_character_flag = small_folketro_feast
 	}
 }
 
@@ -676,22 +676,22 @@ character_event = {
 		name = EVTOPTA_confirmation_10
 		trigger = { has_character_flag = holding_confirmation }
 		if = {
-		   limit = { has_character_flag = big_folkestro_feast }
+		   limit = { has_character_flag = big_folketro_feast }
 		   piety = 5
 		   prestige = 30
-		   clr_character_flag = big_folkestro_feast
+		   clr_character_flag = big_folketro_feast
 		}
 		if = {
-		   limit = { has_character_flag = moderate_folkestro_feast }
+		   limit = { has_character_flag = moderate_folketro_feast }
 		   piety = 30
 		   prestige = 10
-		   clr_character_flag = big_folkestro_feast
+		   clr_character_flag = big_folketro_feast
 		}
 		if = {
-		   limit = { has_character_flag = small_folkestro_feast }
+		   limit = { has_character_flag = small_folketro_feast }
 		   piety = 50
 		   prestige = -10
-		   clr_character_flag = big_folkestro_feast
+		   clr_character_flag = big_folketro_feast
 		}
 		if = {
 			limit = {

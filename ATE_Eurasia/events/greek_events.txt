@@ -1613,7 +1613,7 @@ character_event = { #News after years: women is hanged
 	option = { 
 		name = EVTOPTA_greek_57
 		hidden_tooltip = {
-		   piety = 1
+		   prestige = 1
 		   piety = -1
 		}
 	}
@@ -1629,7 +1629,7 @@ character_event = { #News after years: women declared innocent, true crimer unkn
 	option = { 
 		name = EVTOPTA_greek_58
 		hidden_tooltip = {
-		   piety = 1
+		   prestige = 1
 		   piety = -1
 		}
 	}
@@ -1645,7 +1645,7 @@ character_event = { #News after years: true murder unknown
 	option = { 
 		name = EVTOPTA_greek_59
 		hidden_tooltip = {
-		   piety = 1
+		   prestige = 1
 		   piety = -1
 		}
 	}
@@ -1661,7 +1661,7 @@ character_event = { #News after years: true murder known
 	option = { 
 		name = EVTOPTA_greek_60
 		hidden_tooltip = {
-		   piety = 1
+		   prestige = 1
 		   piety = -1
 		}
 	}
