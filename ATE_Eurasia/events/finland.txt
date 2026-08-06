@@ -1,0 +1,259 @@
+namespace = finland
+
+long_character_event = {
+	id = finland.1
+	desc = EVTDESC_liturginen_1
+	picture = GFX_evt_open_book_hf
+	border = GFX_event_normal_frame_religion
+	religion = liturginen
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_liturginen_1
+		add_trait = school_of_st_bridget
+	}
+
+	option = {
+		name = EVTOPTB_liturginen_1
+		add_trait = school_of_agricola
+	}
+}
+
+character_event = {
+	id = finland.2
+	desc = EVTDESC_finland_2
+	picture = GFX_evt_open_book_hf
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_finland_2
+		any_vassal = {
+			limit = {
+			    religion = laestedianist
+				prisoner = no
+				war = no
+				NOT = { trait = incapable }
+			}
+			character_event = { id = finland.3 days = 2 tooltip = EVTTOOLTIP_finland_2 }
+		}
+		custom_tooltip = { text = summer_services_invitations_sent }
+		hidden_tooltip = { character_event = { id = finland.5 days = 10 } }
+		hidden_tooltip = {
+		add_character_modifier = {
+			name = summer_services_timer
+			duration = 360
+			hidden = yes
+		}
+		}
+	}
+}
+
+character_event = {
+	id = finland.3
+	desc = EVTDESC_finland_3
+	picture = GFX_evt_open_book_hf
+	
+	is_triggered_only = yes
+
+	trigger = { NOT = { is_inaccessible_trigger = yes } }
+	
+	option = {
+		name = EVTOPTA_finland_3
+		ai_chance = {
+			factor = 95
+			modifier = {
+				factor = 0
+				opinion = { who = ROOT value <= -20 }
+			}
+		}
+		custom_tooltip = { text = summer_services_accepted }
+		set_character_flag = attending_summer_services
+		set_character_flag = do_not_disturb
+		hidden_tooltip = {
+		    add_character_modifier = {
+			   name = summer_services_timer
+			   duration = 360
+			   hidden = yes
+		    }
+		}
+		hidden_tooltip = { character_event = { id = finland.5 days = 8 } }
+	}
+	option = {
+		name = EVTOPTB_finland_3
+		ai_chance = {
+			factor = 5
+		}
+		FROM = {
+			opinion = {
+				modifier = opinion_refused_summer_services
+				who = ROOT
+			}
+		}
+		piety=-50
+		custom_tooltip = { text = summer_services_declined }
+		hidden_tooltip = {
+			FROM = { character_event = { id = finland.4 } }
+		}
+	}
+}
+
+# Invitation Refused
+character_event = {
+	id = finland.4
+	desc = EVTDESC_finland_4
+	picture = GFX_evt_open_book_hf
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_finland_4
+		opinion = {
+			modifier = opinion_refused_summer_services
+			who = FROM
+		}
+	}
+}
+
+narrative_event = {
+	id = finland.5
+	title = EVTNAME_finland_5
+	desc = EVTDESC_finland_5
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_finland_5
+		#1st Day
+		if = { #Only Service
+		   limit = { age > 15 }
+		   character_event = { id = finland.8 days = 1 }
+		}
+		else = { #Service and Presentation
+		   character_event = { id = finland.9 days = 1 }
+		}
+		random_list = {
+		   25 = { } #Boring Sermon
+		   25 = { } #Fascinating Sermon
+		   10 = { } #Talented Poor Pastor
+		   10 = { } #Talented Poor Child
+		   5 = { } #Hidden Heretic
+		   5 = { } #Hidden Fornsed
+		   20 = { }
+		}
+		if = {
+		   limit = { has_character_flag = attending_summer_services }
+		   character_event = { id = finland.6 days = 5 }
+		}
+	    else = { 
+		   character_event = { id = finland.7 days = 5 }
+		}
+	}
+}
+
+character_event = {
+	id = finland.6
+	desc = EVTDESC_finland_6
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_finland_6
+		piety = 50
+		clr_character_flag = attending_summer_services
+		clr_character_flag = summer_services
+		clr_character_flag = do_not_disturb
+	}
+}
+
+character_event = {
+	id = finland.7
+	desc = EVTDESC_finland_7
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_finland_7
+		piety = 100
+		clr_character_flag = do_not_disturb
+		clr_character_flag = summer_services
+		clr_character_flag = recent_minor_decision
+	}
+}
+
+character_event = {
+	id = finland.8
+	desc = EVTDESC_finland_8
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_finland_8
+		piety = 20
+	}
+}
+
+character_event = {
+	id = finland.9
+	desc = EVTDESC_finland_9
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_finland_9
+		piety = 10
+		random_list = {
+		   25 = { add_trait="idolizer" }
+		   25 = { add_trait="timid" }
+		   10 = { add_trait="conscientious" }
+		   40 = { }
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_finland_9
+		piety = -10
+		random_list = {
+		   30 = { add_trait="playful" }
+		   10 = { add_trait="haughty" }
+		   20 = { add_trait="fussy" }
+		   20 = { add_trait="brooding" }
+		   20 = { }
+		}
+	}
+}
+
+character_event = {
+	id = finland.10
+	religion = liturginen
+	
+	ai = yes
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	   NOR = {
+	      trait="school_of_agricola"
+		  trait="school_of_st_bridget"
+	   }
+	}
+
+	immediate = {
+		random_list = {
+			50 = {
+				add_trait = "school_of_agricola"
+			}
+			50 = {
+				add_trait = "school_of_st_bridget"
+			}
+		}
+	}
+}

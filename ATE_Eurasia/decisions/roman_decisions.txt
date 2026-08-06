@@ -20,7 +20,6 @@ decisions = {
 				culture = sicilian
 				culture = sardinian
 				culture = romansh
-				has_landed_title = k_sanctum_imperium
 			}
 			NOT = { tier = EMPEROR }
 			e_sanctum_imperium = {
@@ -65,15 +64,6 @@ decisions = {
 				limit = { has_nickname = no }
 				give_nickname = nick_the_great
 			}
-			k_sanctum_imperium = {
-			    holder_scope = {
-			        set_defacto_liege = ROOT
-				}
-			}
-			k_sanctum_imperium = {
-				destroy_landed_title = THIS
-			}
-			activate_title = { title = k_sanctum_imperium status = no }
 			set_global_flag = hre_restored
 		}
 		revoke_allowed = {

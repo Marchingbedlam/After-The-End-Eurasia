@@ -2336,7 +2336,42 @@ character_event = {
 	option = {
 		name = EVTOPTA_SoA_5091
 
-		add_trait = pilgrim
+		if = {
+			limit = {
+				religion_group = christian
+			}
+            add_trait="pilgrim"
+		}
+		if = {
+			limit = {
+				religion = glorian
+			}
+            add_trait="glorian_pilgrim"
+		}
+		if = {
+			limit = {
+				OR = { religion = folketro religion = fornsed } 
+			}
+            add_trait="folketro_pilgrim"
+		}
+		if = {
+			limit = {
+				OR = { religion = sun_king_cultist religion = chevalier } 
+			}
+            add_trait="sun_king_cultist_pilgrim"
+		}
+		if = {
+			limit = {
+				religion = jacobin
+			}
+            add_trait="jacobin_pilgrim"
+		}
+		if = {
+			limit = {
+				religion = genesian
+			}
+            add_trait="genesian_pilgrim"
+		}
 		piety = 30
 	}
 }
@@ -2367,7 +2402,42 @@ character_event = {
 	option = {
 		name = EVTOPTA_SoA_5092
 
-		add_trait = pilgrim
+		if = {
+			limit = {
+				religion_group = christian
+			}
+            add_trait="pilgrim"
+		}
+		if = {
+			limit = {
+				religion = glorian
+			}
+            add_trait="glorian_pilgrim"
+		}
+		if = {
+			limit = {
+				OR = { religion = folketro religion = fornsed } 
+			}
+            add_trait="folketro_pilgrim"
+		}
+		if = {
+			limit = {
+				OR = { religion = sun_king_cultist religion = chevalier } 
+			}
+            add_trait="sun_king_cultist_pilgrim"
+		}
+		if = {
+			limit = {
+				religion = jacobin
+			}
+            add_trait="jacobin_pilgrim"
+		}
+		if = {
+			limit = {
+				religion = genesian
+			}
+            add_trait="genesian_pilgrim"
+		}
 		piety = -10
 
 		random = {
@@ -2403,7 +2473,42 @@ character_event = {
 	option = {
 		name = EVTOPTA_SoA_5093
 
-		add_trait = pilgrim
+		if = {
+			limit = {
+				religion_group = christian
+			}
+            add_trait="pilgrim"
+		}
+		if = {
+			limit = {
+				religion = glorian
+			}
+            add_trait="glorian_pilgrim"
+		}
+		if = {
+			limit = {
+				OR = { religion = folketro religion = fornsed } 
+			}
+            add_trait="folketro_pilgrim"
+		}
+		if = {
+			limit = {
+				OR = { religion = sun_king_cultist religion = chevalier } 
+			}
+            add_trait="sun_king_cultist_pilgrim"
+		}
+		if = {
+			limit = {
+				religion = jacobin
+			}
+            add_trait="jacobin_pilgrim"
+		}
+		if = {
+			limit = {
+				religion = genesian
+			}
+            add_trait="genesian_pilgrim"
+		}
 		piety = -100
 	}
 }

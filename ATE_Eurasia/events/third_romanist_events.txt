@@ -1,0 +1,85 @@
+namespace = thirdrome
+
+character_event = {
+	id = thirdrome.1
+	desc = EVTDESC_third_romanist_1
+	picture = GFX_evt_open_book_hf
+	border = GFX_event_normal_frame_religion
+	religion = third_romanist
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_third_romanist_1
+		add_trait = third_romanist_juvenist
+	}
+	
+	option = {
+		name = EVTOPTB_third_romanist_1
+		add_trait = third_romanist_actionist
+	}
+
+	option = {
+		name = EVTOPTC_third_romanist_1
+		add_trait = third_romanist_palladic
+	}
+	
+	option = {
+		name = EVTOPTD_third_romanist_1
+		add_trait = third_romanist_majoran
+	}
+}
+
+province_event = {
+	id = thirdrome.2
+	desc = EVTDESC_third_romanist_2
+	picture = GFX_evt_bishop
+	border = GFX_event_normal_frame_religion
+	
+	trigger = {
+		NOT = { religion = third_romanist }
+		k_third_romanist = { has_holder = yes }		
+		holder_scope = {
+			trait="immortal"
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = EVTOPTA_third_romanist_2
+		trigger = { holder_scope = { religion = third_romanist } }
+		religion = third_romanist
+	}
+	
+	option = {
+		name = EVTOPTB_third_romanist_2
+		trigger = { holder_scope = { NOT = { religion = third_romanist } } }
+		religion = third_romanist
+	}
+}
+
+character_event = {
+	id = thirdrome.3
+	desc = EVTDESC_third_romanist_3
+	border = GFX_event_normal_frame_religion
+	religion = third_romanist
+	is_triggered_only = yes
+	
+	trigger = {
+		society_member_of = third_romanist_conspiracy
+		NOT = { secret_religion = third_romanist }
+	}
+	
+	option = {
+		name = EVTOPTA_third_romanist_3
+		ROOT = { secret_religion = third_romanist }
+	}
+}

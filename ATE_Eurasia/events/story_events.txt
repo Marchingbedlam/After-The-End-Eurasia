@@ -597,3 +597,50 @@ letter_event = {
 		name = EVTOPTA_story8
 	}
 }
+
+narrative_event = {
+	id = story.12
+	title = title_story_12
+	is_triggered_only = yes
+	trigger = {
+		culture = castilian
+	}
+	desc = {
+		trigger = {
+			has_landed_title = k_toledo
+		}
+		text = DESCA_story_12
+	}
+	desc = {
+		trigger = {
+			has_landed_title = d_madrid
+		}
+		text = DESCB_story_12
+	}
+	desc = {
+		trigger = {
+			has_landed_title = d_extramadura
+		}
+		text = DESCC_story_12
+	}
+	desc = {
+		trigger = {
+			AND = {
+				NOR = {
+					has_landed_title = k_toledo
+					has_landed_title = d_madrid
+					has_landed_title = d_extramadura
+				}
+				culture = castilian
+			}
+		}
+		text = DESCD_story_12
+	}
+	
+	option = {
+		name = OPT_A_story_12
+		custom_tooltip = {
+			text = situation_in_toledo_TT
+		}
+	}
+}

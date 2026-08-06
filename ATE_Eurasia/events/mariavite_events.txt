@@ -50,7 +50,7 @@ character_event = { #choose how you wanna adore the eucharist
 			}
 		}
 	}
-	option = { #go into some mystic type of shit 
+	option = { #go into some mystic
 		name = EVTOPTB_mariavite_1
 		piety = 50
 		hidden_tooltip = {
@@ -143,7 +143,7 @@ character_event = { #you did well
 	}
 }
 
-character_event = { #you did shit
+character_event = { #you did it wrong
 	id = mariavite.3
 	desc = EVTDESC_mariavite_3
 	picture = GFX_evt_eucharist_adoration
@@ -151,7 +151,7 @@ character_event = { #you did shit
 	only_playable = yes
 	is_triggered_only = yes
 
-	option = { #fuck	
+	option = { 	
 		name = EVTOPTA_mariavite_3
 		piety = -50
 		prestige = -25
@@ -163,7 +163,7 @@ character_event = { #you did shit
 	}
 }
 
-character_event = { #you dont get it man
+character_event = { 
 	id = mariavite.4 
 	desc = EVTDESC_mariavite_4
 	picture = GFX_evt_eucharist_adoration
@@ -171,7 +171,7 @@ character_event = { #you dont get it man
 	only_playable = yes
 	is_triggered_only = yes
 
-	option = { #reeeeeee
+	option = { 
 		name = EVTOPTA_mariavite_4
 		piety = -100
 		prestige = -50
@@ -214,7 +214,7 @@ character_event = { #you start feeling weird, you stop bc you're scared
 	}
 }
 
-character_event = { #yay you connected with jesus
+character_event = { #you feel that you are connected with Jesus 
 	id = mariavite.6
 	desc = EVTDESC_mariavite_6
 	picture = GFX_evt_eucharist_adoration
@@ -238,7 +238,7 @@ character_event = { #yay you connected with jesus
 	}
 }
 
-character_event = { #holy shit jesus told you to beat the shit out of infidels
+character_event = { #you feel that you got a vision to fight with infidels
 	id = mariavite.7 
 	desc = EVTDESC_mariavite_7
 	picture = GFX_evt_eucharist_adoration

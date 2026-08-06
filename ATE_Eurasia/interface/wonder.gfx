@@ -1227,6 +1227,44 @@ spriteTypes = {
 		textureFile = "gfx\\interface\\wonder_interface\\wonder_strips\\wonder_stages_hagia_sophia_small.dds"
 		noOfFrames = 5
 	}
+	
+	#Mount Athos
+	spriteType = {
+		name = "GFX_wonder_strip_mount_athos_large"
+		textureFile = "gfx\\interface\\wonder_interface\\wonder_strips\\wonder_stages_mount_athos_large.dds"
+		noOfFrames = 5
+	}
+
+	spriteType = {
+		name = "GFX_wonder_strip_mount_athos_medium"
+		textureFile = "gfx\\interface\\wonder_interface\\wonder_strips\\wonder_stages_mount_athos_medium.dds"
+		noOfFrames = 5
+	}
+
+	spriteType = {
+		name = "GFX_wonder_strip_mount_athos_small"
+		textureFile = "gfx\\interface\\wonder_interface\\wonder_strips\\wonder_stages_mount_athos_small.dds"
+		noOfFrames = 5
+	}
+	
+	#Pantheon
+	spriteType = {
+		name = "GFX_wonder_parisian_pantheon_large"
+		textureFile = "gfx\\interface\\wonder_interface\\wonder_strips\\wonder_stages_pantheon_large.dds"
+		noOfFrames = 5
+	}
+
+	spriteType = {
+		name = "GFX_wonder_parisian_pantheon_medium"
+		textureFile = "gfx\\interface\\wonder_interface\\wonder_strips\\wonder_stages_pantheon_medium.dds"
+		noOfFrames = 5
+	}
+
+	spriteType = {
+		name = "GFX_wonder_parisian_pantheon_small"
+		textureFile = "gfx\\interface\\wonder_interface\\wonder_strips\\wonder_stages_pantheon_small.dds"
+		noOfFrames = 5
+	}
 
 	#############################
 	### Wonder background Images

@@ -1641,3 +1641,65 @@ character_event = {
 		}
 	}
 }
+
+character_event = {
+	id = britain.148
+	religion = high_church
+	
+	ai = yes
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	   NOR = {
+	      trait="high_anglican"
+		  trait="broad_anglican"
+		  trait="low_anglican"
+	   }
+	}
+
+	immediate = {
+		random_list = {
+			33 = {
+				add_trait = high_anglican
+			}
+			33 = {
+				add_trait = broad_anglican
+			}
+			33 = {
+				add_trait = low_anglican
+			}
+		}
+	}
+}
+
+character_event = {
+	id = britain.149
+	religion = free_church
+	
+	ai = yes
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	   NOR = {
+	      trait="quaker"
+		  trait="methodist"
+		  trait="baptist"
+	   }
+	}
+
+	immediate = {
+		random_list = {
+			33 = {
+				add_trait = quaker
+			}
+			33 = {
+				add_trait = methodist
+			}
+			33 = {
+				add_trait = baptist
+			}
+		}
+	}
+}

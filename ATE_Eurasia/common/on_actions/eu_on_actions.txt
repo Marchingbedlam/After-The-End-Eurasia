@@ -6,6 +6,7 @@ on_startup = {
 		story.4 #Romanian Successor States Opening Event
 		story.5 #Khalasa-Ahmadi Friendship Pact
 		story.9 #Dzungaria-China Friendship Pact
+		story.12 #Kingdom of Toledo (situation)
 		maintenance.2 #Rite Dispensing (Catholic)
 		maintenance.3 #School Dispensing (Ibadi)
 		maintenance.5 #Madhab Dispensing (Majlisi, Ahlus Salah, or Ahlus Sunnah)
@@ -17,6 +18,8 @@ on_startup = {
 		titlegiving.004 #PING_CATHOLICOS_PATRIARCH
 		capiroteiberia.122 #Event that gives penitentes their timer for doing penance
 		baptism_events.2
+		rupagan.2
+		thirdrome.3
 	}
 }
 on_yearly_pulse = {
@@ -77,6 +80,17 @@ on_adulthood = {
 		SUFI.4302 # Monastic Order education bonus purity effect
 		capiroteiberia.122 #Event that gives penitentes their timer for doing penance
 		baptism_events.2
+		finland.10 #Liturginen Branches
+		genesian.46 #Genesian Branches
+		troll.58 #Folketro Branches
+		troll.59 #Fornsed Branches
+		troll.60 #Nysed Branches
+		pravoslavie.28 #Old Believer Icons
+		pravoslavie.29 #Pravoslavie Icons
+		pravoslavie.30 #Dvoeverie Icons
+		britain.148 #Anglican Branches
+		britain.149 #Free Church Branches
+		nhevent.8 #Neuhumanist Branches
 	}
 }
 on_siege_over_winner = {
@@ -103,6 +117,19 @@ on_character_convert_religion = {
 		gov.014 #Checks Character is still eligible for MUSLIM governments
 		capiroteiberia.122 #Event that gives penitentes their timer for doing penance
 		baptism_events.2
+		pravoslavie.19 #Choice of Dvoeverie Saint
+		pravoslavie.22 #Choice of Pravoslavie Saint
+		pravoslavie.26 #Choice of Old Believer Saint
+		christian.35 #Choice of Orthodox/Oldcalendarist/Neo-Baarlamite Saints
+		genesian.45 #Genesian Branches
+		jacobin.29 #Gallican Branches
+		troll.5 #Folketro Branches
+		troll.16 #Fornsed Branches
+		troll.29 #Nysed Branches
+		proletcult.1 #Proletcult Branches
+		finland.1 #Liturginen Branches
+		britain.2 #Free Church Branches
+		britain.1 #Anglican Branches
 	}
 }
 
@@ -170,5 +197,11 @@ on_loot_settlement = {
 	events = {
 		baptism_events.3 #purificador counter
 		baptism_events.4
+	}
+}
+
+on_society_yearly_pulse = {
+	events = {
+	    thirdrome.3
 	}
 }

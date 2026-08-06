@@ -109,10 +109,7 @@ government_flavor = {
 	priority = 5
 	trigger = {
 		government = italian_bureaucratic_government
-		OR = {
-		   has_landed_title = e_sanctum_imperium
-		   has_landed_title = k_sanctum_imperium
-		}
+		has_landed_title = e_sanctum_imperium
 	}
 }
 government_flavor = {
@@ -123,7 +120,6 @@ government_flavor = {
 		government = italian_bureaucratic_government
 		NOT = {
 		   has_landed_title = e_sanctum_imperium
-		   has_landed_title = k_sanctum_imperium
 		}
 	}
 }

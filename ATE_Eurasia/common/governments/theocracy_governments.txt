@@ -48,6 +48,7 @@ theocracy_governments = {
 					religion = an_nahar
 					religion = valinorist
 					religion = jacobin
+					religion = third_romanist
 				}
 				controls_religion = yes
 			}
@@ -71,6 +72,7 @@ theocracy_governments = {
 				is_female = yes
 				religion_allows_male_temple_holders = yes
 			}
+			NOT = { religion = third_romanist }
 		}
 		
 		color = { 220 220 220 }

@@ -25,12 +25,6 @@ crusade = {
 			has_called_crusade = no
 			religion_authority >= 0.05
 			mercenary = no
-			
-			trigger_if = {
-				limit = {
-					religion = jacobin
-				}
-			}
 
 			trigger_if = {
 				limit = {
@@ -78,6 +72,13 @@ crusade = {
 						custom_tooltip = {
 							text = CTT_CORONITE_CRUSADES_UNLOCKED
 							has_global_flag = coronite_crusades_unlocked
+						}
+					}
+					trigger_else_if = {
+						limit = { religion = jacobin }
+						custom_tooltip = {
+							text = CTT_JACOBIN_CRUSADES_UNLOCKED
+							has_global_flag = jacobin_holy_wars_unlocked
 						}
 					}
 					trigger_else_if = {

@@ -1060,6 +1060,10 @@ spriteTypes = {
 		textureFile = "gfx\\interface\\societies\\society_bg_jedinstvo.tga"
 	}
 	spriteType = {
+		name = "GFX_society_main_background_warrior_lodge_vieja_gloria"
+		textureFile = "gfx\\interface\\societies\\society_bg_vieja_gloria.tga"
+	}
+	spriteType = {
 		name = "GFX_society_main_background_the_illuminati"
 		textureFile = "gfx\\interface\\societies\\society_bg_the_illuminati.tga"
 	}
@@ -1309,6 +1313,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_icon_small_warrior_lodge_jedinstvo"
 		textureFile = "gfx\\interface\\societies\\symbol_small_jedinstvo.tga"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_icon_small_warrior_lodge_vieja_gloria"
+		textureFile = "gfx\\interface\\societies\\symbol_small_vieja_gloria.tga"
 		noOfFrames = 2
 	}
 	spriteType = {

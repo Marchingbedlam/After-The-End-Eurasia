@@ -244,6 +244,7 @@ decisions={
 					   religion = oasite
 					   religion = high_church
 					   religion = apostolic
+					   religion = liturginen
 					}
 					OR = {
 					   culture = danish
@@ -266,6 +267,7 @@ decisions={
 				has_alternate_start_parameter = { key = religion_names value = random }
 			}
 			NOT = { has_character_modifier = st_lucys_timer }
+			NOT = { has_character_modifier = held_christmas_timer }
 			NOT = {	has_character_flag = st_lucys_day }
 		}
 		

@@ -721,6 +721,7 @@ pagan_group = {
 		female_temple_holders = yes
 		allow_in_ruler_designer = no
 		feminist = yes
+		allow_in_ruler_designer = no
 		can_demand_religious_conversion = yes
 		religious_clothing_head = 4
 		religious_clothing_priest = 4
@@ -1910,6 +1911,7 @@ christian = {
 		intermarry = laestadianist
 		intermarry = lutheran
 		intermarry = seperatist
+		intermarry = laestadianist
 		intermarry = pravoslavie
 		intermarry = dvoeverie
 		intermarry = fornsed
@@ -2007,6 +2009,8 @@ christian = {
 		intermarry = angelchina
 		intermarry = oldcalendarist
 		intermarry = antipalamite
+		intermarry = neohellenic
+		intermarry = allatist
 		
 		religious_clothing_head = 2
 		religious_clothing_priest = 2
@@ -2048,6 +2052,8 @@ christian = {
 		intermarry = angelchina
 		intermarry = orthodox
 		intermarry = antipalamite
+		intermarry = neohellenic
+		intermarry = allatist
 		
 		religious_clothing_head = 2
 		religious_clothing_priest = 2
@@ -2091,6 +2097,8 @@ christian = {
 		intermarry = angelchina
 		intermarry = orthodox
 		intermarry = oldcalendarist
+		intermarry = neohellenic
+		intermarry = allatist
 		
 		religious_clothing_head = 2
 		religious_clothing_priest = 2
@@ -2701,6 +2709,46 @@ vernacular = {
 		intermarry = barelvi
 		intermarry = nestorian
 	}
+	
+	nekromante = {
+		graphical_culture = westerngfx
+
+	    icon = 57
+		heresy_icon = 58
+		
+		parent = orthodox
+		
+		color = { 1 0.70 0 }
+		
+		crusade_name = CRUSADE
+		use_new_crusade = yes
+		crusade_cb = new_crusade
+		
+		scripture_name = THE_BIBLE
+		priest_title = PRIEST
+		
+		high_god_name = KYRIOS
+		
+		god_names = {
+			KYRIOS CYPRIAN_JUSTINA THE_VILY SAINT_GERMANOS GEORGE_OF_LYDDA SAINT_NICHOLAS_SOFIA
+		}
+		
+		evil_god_names = {
+			SATAN SHTRIGA KALLIKANTZAROI LAMIA
+		}
+		
+		can_retire_to_monastery = yes
+		priests_can_inherit = no
+		allow_rivermovement = yes
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+		intermarry = orthodox
+		intermarry = oldcalendarist
+		intermarry = antipalamite
+		intermarry = neohellenic
+		intermarry = allatist
+		intermarry = neoplatonist
+	}
 
 	folketro = {
 		graphical_culture = folketrogfx
@@ -3073,7 +3121,7 @@ vernacular = {
 		use_new_crusade = yes
 		crusade_cb = new_crusade
 		
-		scripture_name = THE_BIBLE
+		scripture_name = THEOAS
 		priest_title = PRIEST
 		
 		high_god_name = CHRISTOS_DIAS
@@ -3083,7 +3131,7 @@ vernacular = {
 		}
 		
 		evil_god_names = {
-			ADIS SATAN LUCIFER GOD_THANATOS GOD_DIONYSOS GOD_HADES APHRODITE PAN BAAL ISTHAR SHTRIGA KALLIKANTZAROI LAMIA
+			ADIS SATAN LUCIFER GOD_THANATOS GOD_DIONYSOS GOD_HADES APHRODITE BAAL THE_SATIRS THE_SIRENS KALLIKANTZAROI LAMIA
 		}
 		
 		can_call_crusade = yes
@@ -3092,6 +3140,7 @@ vernacular = {
 		can_grant_divorce = yes
 		can_grant_invasion_cb = yes
 		priests_can_marry = yes
+		priests_can_inherit = no
 		allow_looting = yes
 		priests_can_inherit = no
 		allow_rivermovement = yes
@@ -3102,43 +3151,71 @@ vernacular = {
 		intermarry = neoplatonist
 		intermarry = oldcalendarist
 		intermarry = antipalamite
+		intermarry = allatist
+		intermarry = neoplatonist
+		intermarry = third_romanist
 	}
-	nekromante = {
-		graphical_culture = westerngfx
+	allatist = {
+		graphical_culture = muslimgfx
 
 		icon = 122
 		heresy_icon = 134
 		
-		parent = neohellenic
+		color = { 0.65 0.91 0.65 }
 		
-		color = { 1 0.70 0 }
+		crusade_name = JIHAD
 		
-		crusade_name = CRUSADE
-		use_new_crusade = yes
-		crusade_cb = new_crusade
+		scripture_name = THE_LEGENDS
+        priest_title = IMAM
 		
-		scripture_name = THE_BIBLE
-		priest_title = PRIEST
-		
-		high_god_name = KYRIOS
+		high_god_name = CHRISTOS_DIAS
 		
 		god_names = {
-			KYRIOS CYPRIAN_JUSTINA THE_VILY SAINT_GERMANOS GEORGE_OF_LYDDA SAINT_NICHOLAS_SOFIA
+			GOD_ALLAH NINTY_NINE_NAMED_GOD GOD_THE_GREATEST GOD_THE_MERCIFUL GOD_THEOTOKOS ARIES ALLAT_APHRODITE GOD_MUHAMMAD GOD_ALI
 		}
 		
 		evil_god_names = {
-			SATAN SHTRIGA KALLIKANTZAROI LAMIA
+			ADIS GOD_IBLIS SATAN GOD_THANATOS GOD_HADES BAAL GOD_GHUL LAMIA THE_SATIRS THE_SIRENS
 		}
 		
+		parent = neohellenic
+		
+		feminist = yes
+		female_temple_holders = yes
+		male_temple_holders = yes
+		uses_decadence = yes
+		uses_jizya_tax = yes
+		priests_can_marry = yes
+		priests_can_inherit = no
+		allow_looting = yes
+		max_wives = 4
+		can_call_crusade = yes
+		can_grant_invasion_cb = yes
 		can_retire_to_monastery = yes
+		psc_marriage = no
 		priests_can_inherit = no
 		allow_rivermovement = yes
-		religious_clothing_head = 2
-		religious_clothing_priest = 2
+		
+		
+		religious_clothing_head = 5
+		religious_clothing_priest = 5
 		intermarry = orthodox
 		intermarry = neohellenic
+		intermarry = nekromante
+		intermarry = neoplatonist
 		intermarry = oldcalendarist
 		intermarry = antipalamite
+		intermarry = druze
+        intermarry = yazidi
+        intermarry = ahl_e_haqq
+        intermarry = alawi
+        intermarry = alevi
+        intermarry = nazari
+        intermarry = an_nahar
+        intermarry = ruhi
+		intermarry = naqshbandi
+		intermarry = neoplatonist
+		intermarry = third_romanist
 	}
 	rastafarian = {
 		graphical_culture = africangfx
@@ -3369,6 +3446,9 @@ scholastic = {
 		piety_name = DEVOTION
 		
 		intermarry = neohellenic
+		intermarry = allatist
+		intermarry = nekromante
+		intermarry = third_romanist
 	}
 	
 	neuhumanist = {
@@ -3406,6 +3486,7 @@ scholastic = {
 		priest_title = TEACHER
 		piety_name = ENLIGHTENMENT
 		
+		intermarry = third_romanist
 	}
 	roerichist = {
 		graphical_culture = indiangfx
@@ -3514,8 +3595,8 @@ muslim = {
 		allow_looting = yes
 		defensive_attrition = yes
 		
-		religious_clothing_head = 3
-		religious_clothing_priest = 3
+		religious_clothing_head = 5
+		religious_clothing_priest = 5
 		
 		allow_in_ruler_designer = no
 		
@@ -3557,8 +3638,8 @@ muslim = {
 		allow_rivermovement = yes
 		psc_marriage = no
 		
-		religious_clothing_head = 10
-		religious_clothing_priest = 10
+		religious_clothing_head = 5
+		religious_clothing_priest = 5
 		
 		intermarry = muslim
 	}
@@ -3590,11 +3671,12 @@ muslim = {
 		hard_to_convert=yes
 		psc_marriage = no
 		
-		religious_clothing_head = 10
-		religious_clothing_priest = 10
+		religious_clothing_head = 5
+		religious_clothing_priest = 5
 		
 		intermarry = neuhumanist
 		intermarry = muslim
+		intermarry = allatist
 	}
 	sunnah = {
 		graphical_culture = muslimgfx
@@ -3623,8 +3705,8 @@ muslim = {
 		allow_in_ruler_designer = no
 		psc_marriage = no
 		
-		religious_clothing_head = 10
-		religious_clothing_priest = 10
+		religious_clothing_head = 5
+		religious_clothing_priest = 5
 		
 		intermarry = muslim
 	}
@@ -3660,8 +3742,8 @@ muslim = {
 		can_call_crusade = no
 		can_grant_invasion_cb = yes
 		
-		religious_clothing_head = 10
-		religious_clothing_priest = 10
+		religious_clothing_head = 5
+		religious_clothing_priest = 5
 		
 		intermarry = muslim
 	}
@@ -3692,8 +3774,8 @@ muslim = {
 		uses_jizya_tax = yes
 		psc_marriage = no
 		
-		religious_clothing_head = 10
-		religious_clothing_priest = 10
+		religious_clothing_head = 5
+		religious_clothing_priest = 5
 		
 		intermarry = muslim
 	}
@@ -3724,8 +3806,8 @@ muslim = {
 		uses_jizya_tax = yes
 		psc_marriage = no
 		
-		religious_clothing_head = 10
-		religious_clothing_priest = 10
+		religious_clothing_head = 5
+		religious_clothing_priest = 5
 		
 		intermarry = muslim
 	}
@@ -3754,8 +3836,8 @@ muslim = {
 		can_call_crusade = yes
 		can_grant_invasion_cb = yes
 		uses_jizya_tax = yes
-		religious_clothing_head = 10
-		religious_clothing_priest = 10
+		religious_clothing_head = 5
+		religious_clothing_priest = 5
 		psc_marriage = no
 		
 		intermarry = muslim
@@ -3789,8 +3871,8 @@ muslim = {
 		uses_jizya_tax = yes
 		psc_marriage = no
 		
-		religious_clothing_head = 10
-		religious_clothing_priest = 10
+		religious_clothing_head = 5
+		religious_clothing_priest = 5
 		
 		intermarry = muslim
 	}
@@ -3822,8 +3904,8 @@ muslim = {
 		uses_jizya_tax = yes
 		psc_marriage = no
 		
-		religious_clothing_head = 10
-		religious_clothing_priest = 10
+		religious_clothing_head = 5
+		religious_clothing_priest = 5
 		
 		intermarry = muslim
 	}
@@ -3897,8 +3979,8 @@ muslim = {
 		can_grant_invasion_cb = yes
 		psc_marriage = no
 		
-		religious_clothing_head = 10
-		religious_clothing_priest = 10
+		religious_clothing_head = 5
+		religious_clothing_priest = 5
 		
 		intermarry = muslim
 	}
@@ -3928,8 +4010,8 @@ muslim = {
 		can_grant_invasion_cb = yes
 		psc_marriage = no
 		
-		religious_clothing_head = 10
-		religious_clothing_priest = 10
+		religious_clothing_head = 5
+		religious_clothing_priest = 5
 		
 		intermarry = muslim
 	}
@@ -3959,8 +4041,8 @@ muslim = {
 		can_grant_invasion_cb = yes
 		psc_marriage = no
 		
-		religious_clothing_head = 10
-		religious_clothing_priest = 10
+		religious_clothing_head = 5
+		religious_clothing_priest = 5
 		
 		intermarry = muslim
 	}
@@ -3990,8 +4072,8 @@ muslim = {
 		can_grant_invasion_cb = yes
 		psc_marriage = no
 		
-		religious_clothing_head = 10
-		religious_clothing_priest = 10
+		religious_clothing_head = 5
+		religious_clothing_priest = 5
 		
 		intermarry = muslim
 	}
@@ -4038,8 +4120,8 @@ muslim = {
 		can_grant_invasion_cb = yes
 		psc_marriage = no
 		
-		religious_clothing_head = 10
-		religious_clothing_priest = 10
+		religious_clothing_head = 5
+		religious_clothing_priest = 5
 		
 		intermarry = muslim
 	}
@@ -4174,7 +4256,7 @@ islamosyncretic = {
 		can_demand_religious_conversion = no
 		hard_to_convert = yes
 		
-		
+		intermarry = allatist
 	}
 	yazidi = {
 		graphical_culture = muslimgfx
@@ -4203,6 +4285,7 @@ islamosyncretic = {
 		hard_to_convert = yes
 		
 		intermarry = druze
+		intermarry = allatist
 			
 	}	
 	ahl_e_haqq = {
@@ -4233,6 +4316,7 @@ islamosyncretic = {
 		hard_to_convert = yes
 		
 		intermarry = druze
+		intermarry = allatist
 			
 	}
 	alawi = {
@@ -4261,6 +4345,7 @@ islamosyncretic = {
 		hard_to_convert = yes
 		
 		intermarry = druze
+		intermarry = allatist
 		
 		
 	}
@@ -4295,8 +4380,10 @@ islamosyncretic = {
 		psc_marriage = no
 		hard_to_convert=yes
 		
-		religious_clothing_head = 10
-		religious_clothing_priest = 10
+		religious_clothing_head = 5
+		religious_clothing_priest = 5
+		
+		intermarry = allatist
 	}
 	
 	nazari = {
@@ -4324,8 +4411,50 @@ islamosyncretic = {
 		can_call_crusade = yes
 		can_grant_invasion_cb = yes
 		
-		religious_clothing_head = 10
-		religious_clothing_priest = 10
+		religious_clothing_head = 5
+		religious_clothing_priest = 5
+		
+		intermarry = allatist
+	}
+	
+	zghamist = {
+		graphical_culture = muslimgfx
+		
+		icon = 179
+		heresy_icon = 179
+		
+		color = { 197 200 196 }
+		
+		high_god_name = GOD_ALLAH
+		
+		god_names = {
+			GOD_ALLAH NINTY_NINE_NAMED_GOD GOD_THE_GREATEST GOD_THE_MERCIFUL SANGE_SABUR SIMURGH SAINT_HUMAIRA SAINT_BIBINAGAR SAINT_MALALAI SAINT_KHASTAKHUMAR LION_OF_PENJSHIR GOD_MUHAMMAD GOD_ALI
+		}
+		evil_god_names = {
+			GOD_SHAYTAN GOD_IBLIS SHORAWI INGLIST ALMASTI
+		}
+		
+		scripture_name = THE_YELLOW_BOOK
+		priest_title = LURH_PORI
+		crusade_name = JIHAD
+		uses_decadence = no
+		pacifist = yes
+		male_temple_holders = yes
+		female_temple_holders = no
+		priests_can_marry = no
+		priests_can_inherit = no
+		max_wives = 1
+		attacking_same_religion_piety_loss = yes
+		psc_marriage = no
+		allow_in_ruler_designer = no
+		
+		can_call_crusade = no
+		can_grant_invasion_cb = no
+		
+		religious_clothing_head = 5
+		religious_clothing_priest = 5
+		
+		intermarry = allatist
 	}
 }
 
@@ -4609,6 +4738,8 @@ old_world_cultist_group = {
 		
 		religious_clothing_head = 10
 		religious_clothing_priest = 10
+		
+		intermarry = allatist
 	}
 	antaraveda = { 
 		graphical_culture = indiangfx
@@ -4903,6 +5034,47 @@ old_world_cultist_group = {
 		priest_title = PUJARI
 		piety_name = KARMA
 		
+	}
+	
+	third_romanist = {
+		graphical_culture = hellenicgfx
+		
+		icon = 178
+		heresy_icon = 178
+		
+		color = { 0.44 0.75 0.24 }
+		
+		interface_skin = { americanist_interface oldworld_interface }
+
+		crusade_name = CRUSADE
+		scripture_name = THE_LEGENDS
+		priest_title = JUDGE
+		piety_name = PATRIOTISM
+		
+		high_god_name = GOD_GOD
+		
+		god_names = { GOD_GOD GOD_MAZZINI GOD_GARIBALDI GOD_MACHIAVELLI GOD_MAJORIAN GOD_CLAUDIUS GOD_MARCUS_AURELIUS GOD_BRUTUS GOD_ITALIA GOD_REPUBLIC }
+		evil_god_names = { THE_DEVIL KING_OF_HELL FIRST_KING CALIGULA NERO BENITO }
+		
+		allow_rivermovement = yes
+		feminist = yes
+		female_temple_holders = yes
+		priests_can_marry = yes
+		priests_can_inherit = yes
+		can_call_crusade = yes
+		hard_to_convert = yes
+		has_heir_designation = yes
+		attacking_same_religion_piety_loss = yes
+		
+		religious_clothing_head = 11
+		religious_clothing_priest = 11
+		
+		allow_in_ruler_designer = no
+		
+		intermarry = neohellenic
+		intermarry = allatist
+		intermarry = neoplatonist
+		intermarry = neuhumanist
 	}
 }
 

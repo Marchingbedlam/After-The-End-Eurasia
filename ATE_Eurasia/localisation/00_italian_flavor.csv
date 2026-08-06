@@ -16,6 +16,36 @@ EVTOPTA_papal_3;Excellent.;;;;;;;;;;;x
 tooltip_elector_is_papist;Both the elector and candidate are papists.;;;;;;;;;;;x
 tooltip_elector_is_seculares;Both the elector and candidate are seculares.;;;;;;;;;;;x
 
+############## Third Romanism
+choose_third_romanist_branch;Choose your affiliation;;;;;;;;;;;;;x
+choose_third_romanist_branch_desc;Every follower of Third Romanism has their own affiliation, a group of followers of this religion that shares certain characteristics different from other groups. As a follower of this religion, you can also join one of these groups.;;;;;;;;;;;;;x
+EVTDESC_third_romanist_1;Each follower of Third Romanism has their own affiliation, a group of followers of this religion that shares certain characteristics distinct from other groups. Juvenalists are orthodox Third Romanists based on the writings of Mazzini the Prophet; Palladists are Cynics and Subjectivists drawn from Machiavelli; Actionists are worshippers of Hercules Garibaldi, a pre-event hero and warrior; and Majorians are cultists of the imperial side of ancient Rome and the unity of nations in the Mediterranean.;;;;;;;;;;;;;x
+EVTOPTA_third_romanist_1;Became Mazzini's most faithful follower;;;;;;;;;;;;;x
+EVTOPTB_third_romanist_1;Become Garibaldi's soldier;;;;;;;;;;;;;x
+EVTOPTC_third_romanist_1;Join the Prince's disciples;;;;;;;;;;;;;x
+EVTOPTD_third_romanist_1;Join the cultists of glorious Roman Republic;;;;;;;;;;;;;x
+
+EVTDESC_third_romanist_2;The words of the Prophet are quite persuasive. In province after province, the people have renounced their old religion in favor of liberty.;;;;;;;;;;;;;x
+EVTOPTA_third_romanist_2;Praise [Root.Holder.Religion.GetRandomGodName]!;;;;;;;;;;;;;x
+EVTOPTB_third_romanist_2;Mazzini-worshipping heathens;;;;;;;;;;;;;x
+
+third_romanist_conspiracy;The Carbonari Conspiracy;;;;;;;;;;;;;x
+third_romanist_conspiracy_desc;Long ago, Rome was ruled not by Christianity under the leadership of the Bishops of Rome, but by a religion few remember today, the religion of the Third Rome, not Papal or Caesarian Rome, but Folk Rome. Mazzini was a pre-event prophet of them. Bavarian King Albrecht defeated them and caused them to be forgotten, but rumors circulate that among Italy's elite there are still people dreaming of the Third Rome and plotting to restore it.;;;;;;;;;;;;;x
+third_romanist_conspiracy_rank_1_female;Novizio;;;;;;;;;;;;;x
+third_romanist_conspiracy_rank_1_male;Novizio;;;;;;;;;;;;;x
+third_romanist_conspiracy_rank_2_female;Cospiratore;;;;;;;;;;;;;x
+third_romanist_conspiracy_rank_2_male;Cospiratore;;;;;;;;;;;;;x
+third_romanist_conspiracy_rank_3_female;Capo;;;;;;;;;;;;;x
+third_romanist_conspiracy_rank_3_male;Capo;;;;;;;;;;;;;x
+third_romanist_conspiracy_rank_4_female;Testa;;;;;;;;;;;;;x
+third_romanist_conspiracy_rank_4_male;Testa;;;;;;;;;;;;;x
+currency_name_monastic_order_third_romanist;Patriottismo;;;;;;;;;;;;;x
+cause_local_peasant_revolt;Cause Peasant Revolt;;;;;;;;;;;;;x
+cause_local_peasant_revolt_desc;The Carbonari leaders have always had a knack for persuading the common folk to take up arms against their avaricious feudal lords. It's the same with you....;;;;;;;;;;;;;x
+cause_local_peasant_revolt_power_desc;Enables the decision to cause peasant revolt in some province, in exchange for [Root.Society.GetCurrencyName];;;;;;;;;;;;;x
+EVTDESC_third_romanist_3;Because you joined the Carbonari conspiracy, you became a true citizen of the Third Rome, the People's Rome. Believe in its faith and in no other than that which Mazzini passed on to your spiritual ancestors.;;;;;;;;;;;;;x
+EVTOPTA_third_romanist_3;Long live the Third Rome;;;;;;;;;;;;;x
+
 #### Rest of it ###
 e_sanctum_imperium;Sanctum Imperium Romanum;;;;;;;;;;;x
 IMPERATOR;Imperator;;;;;;;;;;;x
@@ -32,9 +62,6 @@ duchy_us_army_government;Prefecture;;;;;;;;;;;;;x
 duchy_of_us_army_government;Prefecture of;;;;;;;;;;;;;x
 gov_roman_state;Sacrum Romanum Imperium Nationis Italicae;;;;;;;;;;;;;x
 gov_roman_vassal;Imperial Administration;;;;;;;;;;;;;x
-k_sanctum_imperium;Sanctum Imperium Romanum;;;;;;;;;;;;;x
-DEFENSOR_FIDEI;Defensor Fidei et Imperii;;;;;;;;;;;;;x
-DEFENSOR_FIDEI_FEMALE;Defensora Fidei et Imperii;;;;;;;;;;;;;x
 GRAND_DUKE;Grand Duke;;;;;;;;;;;;;x
 GRAND_DUKE_FEMALE;Grand Duchess;;;;;;;;;;;;;x
 restore_hre;Ask the Pope for the Imperial Crown;;;;;;;;;;;;;x

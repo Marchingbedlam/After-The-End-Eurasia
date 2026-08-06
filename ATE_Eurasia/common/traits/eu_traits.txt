@@ -1676,7 +1676,6 @@ altan_urag = {
 	hazara_opinion = 5
 	monthly_character_prestige = 0.25
 	
-	random = no 
 	customizer = no 
 }
 
@@ -3678,4 +3677,363 @@ genesian_cult_of_nature = {
 	random = no 
 	religious = yes 
 	ruler_designer_cost = 0
+}
+
+school_of_st_bridget = {
+	opposites = {
+		school_of_agricola
+	}
+	diplomacy = 1
+	catholic_opinion = 5
+	marcelianist_opinion = 5
+	apparationist_opinion = 5
+	constitutionalist_opinion = 5
+	orthodox_opinion = 5
+	antipalamite_opinion = 5
+	oldcalendarist_opinion = 5
+	pravoslavie_opinion = 5
+	dvoeverie_opinion = 5
+	opposite_opinion = -5
+	
+	potential = { religion = liturginen }
+	religious_branch = liturginen
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+school_of_agricola = {
+	opposites = {
+		school_of_st_bridget
+	}
+	stewardship = 1
+	lutheran_opinion = 10
+	opposite_opinion = -5
+	
+	potential = { religion = liturginen }
+	religious_branch = liturginen
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+old_believer_holy_mary = {
+	opposites = {
+	    old_believer_st_nicholas
+		old_believer_ambrose
+		old_believer_avvakum
+		old_believer_feudosia_morozova
+		old_believer_monk_pavel
+		old_believer_st_vladimir
+		old_believer_st_dmitriy
+	}
+	diplomacy = 1
+	health = 0.5 
+	monthly_character_piety = 0.2
+	
+	ai_zeal = 10
+	
+	potential = { religion = old_believer }
+	religious_branch = old_believer
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+old_believer_st_nicholas = {
+	opposites = {
+	    old_believer_holy_mary
+		old_believer_avvakum
+		old_believer_monk_pavel
+		old_believer_feudosia_morozova
+		old_believer_ambrose
+		old_believer_st_dmitriy
+		old_believer_st_vladimir
+	}
+	diplomacy = 1
+	same_opinion=10
+	monthly_character_piety = 0.2
+	
+	potential = { religion = old_believer }
+	religious_branch = old_believer
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+ 
+old_believer_avvakum = {
+	opposites = {
+	    old_believer_holy_mary
+		old_believer_st_nicholas
+		old_believer_monk_pavel
+		old_believer_feudosia_morozova
+		old_believer_ambrose
+		old_believer_st_dmitriy
+		old_believer_st_vladimir
+	}
+	learning = 1
+	same_opinion = 5
+	same_religion_opinion = 5
+	monthly_character_piety = 0.2
+	
+	potential = { religion = old_believer }
+	religious_branch = old_believer
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+old_believer_feudosia_morozova = {
+	opposites = {
+	    old_believer_holy_mary
+		old_believer_st_nicholas
+		old_believer_monk_pavel
+		old_believer_avvakum
+		old_believer_ambrose
+		old_believer_st_dmitriy
+		old_believer_st_vladimir
+	}
+	stewardship = 1
+	fertility = 0.1
+	monthly_character_piety = 0.2
+	
+	potential = { religion = old_believer }
+	religious_branch = old_believer
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+old_believer_ambrose = {
+	opposites = {
+	    old_believer_holy_mary
+		old_believer_st_nicholas
+		old_believer_monk_pavel
+		old_believer_avvakum
+		old_believer_feudosia_morozova
+		old_believer_st_dmitriy
+		old_believer_st_vladimir
+	}
+	diplomacy = 1
+	bosniak_opinion=5
+	church_opinion = 5
+	monthly_character_piety = 0.2
+	
+	potential = { religion = old_believer }
+	religious_branch = old_believer
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+old_believer_monk_pavel = {
+	opposites = {
+	    old_believer_holy_mary
+		old_believer_st_nicholas
+		old_believer_ambrose
+		old_believer_avvakum
+		old_believer_feudosia_morozova
+		old_believer_st_dmitriy
+		old_believer_st_vladimir
+	}
+	intrigue = 1
+	same_opinion = 5
+	monthly_character_piety = 0.2
+	
+	ai_ambition = -10
+	
+	potential = { religion = old_believer }
+	religious_branch = old_believer
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+ 
+old_believer_st_dmitriy = {
+	opposites = {
+	    old_believer_holy_mary
+		old_believer_st_nicholas
+		old_believer_ambrose
+		old_believer_avvakum
+		old_believer_feudosia_morozova
+		old_believer_monk_pavel
+		old_believer_st_vladimir
+	}
+	health = 0.75
+	liege_opinion = 5
+	monthly_character_piety = 0.2
+	
+	potential = { religion = old_believer }
+	religious_branch = old_believer
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+old_believer_st_vladimir = {
+	opposites = {
+	    old_believer_holy_mary
+		old_believer_st_nicholas
+		old_believer_ambrose
+		old_believer_avvakum
+		old_believer_feudosia_morozova
+		old_believer_monk_pavel
+		old_believer_st_dmitriy
+	}
+	martial = 1
+	global_tax_modifier = 0.10
+	monthly_character_piety = 0.2
+	
+	potential = { religion = old_believer }
+	religious_branch = old_believer
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+third_romanist_majoran = {
+	opposites = {
+	    third_romanist_actionist
+		third_romanist_palladic
+		third_romanist_juvenist
+	}
+	stewardship = 1
+	monthly_character_piety = 0.2
+	
+	potential = { religion = third_romanist }
+	religious_branch = third_romanist
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+third_romanist_actionist = {
+	opposites = {
+	    third_romanist_majoran
+		third_romanist_palladic
+		third_romanist_juvenist
+	}
+	martial = 1
+	monthly_character_piety = 0.2
+	
+	potential = { religion = third_romanist }
+	religious_branch = third_romanist
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+third_romanist_palladic = {
+	opposites = {
+	    third_romanist_majoran
+		third_romanist_actionist
+		third_romanist_juvenist
+	}
+	intrigue = 1
+	church_opinion=-5
+	monthly_character_piety = 0.2
+	
+	potential = { religion = third_romanist }
+	religious_branch = third_romanist
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+third_romanist_juvenist = {
+	opposites = {
+	    third_romanist_majoran
+		third_romanist_actionist
+		third_romanist_palladic
+	}
+	learning = 1
+	church_opinion=10
+	monthly_character_piety = 0.2
+	
+	potential = { religion = third_romanist }
+	religious_branch = third_romanist
+	random = no 
+	religious = yes 
+	ruler_designer_cost = 0
+}
+
+neohellenic_pilgrim = { # Neohellenic who has completed a Pilgrimage
+	potential = {
+		religion = neohellenic
+	}
+
+	monthly_character_piety = 0.2
+	monthly_character_prestige = 0.2
+	same_opinion = 5
+	same_religion_opinion = 5
+
+	male_compliment = COMPL_PILGRIM
+	female_compliment = COMPL_PILGRIM
+}
+
+folketro_pilgrim = { # Folketro/Fornsed who has completed a Pilgrimage
+	potential = {
+	  OR = {
+		religion = fornsed
+		religion = folketro
+	  }
+	}
+
+	monthly_character_piety = 0.1
+	same_religion_opinion = 5
+	nysed_opinion = -5
+
+	male_compliment = COMPL_PILGRIM
+	female_compliment = COMPL_PILGRIM
+}
+
+glorian_pilgrim = { # Glorian who has completed a Pilgrimage
+	potential = {
+	  religion = glorian
+	}
+
+	monthly_character_piety = 0.1
+	same_religion_opinion = 5
+
+	male_compliment = COMPL_PILGRIM
+	female_compliment = COMPL_PILGRIM
+}
+
+sun_king_cultist_pilgrim = { # Soleil Royal/Chevalier who has completed a Pilgrimage
+	potential = {
+	  OR = { 
+	     religion = sun_king_cultist
+		 religion = chevalier
+      }
+	}
+
+	monthly_character_piety = 0.1
+	same_religion_opinion = 5
+
+	male_compliment = COMPL_PILGRIM
+	female_compliment = COMPL_PILGRIM
+}
+
+jacobin_pilgrim = { # Jacobin who has completed a Pilgrimage
+	potential = {
+	   religion = jacobin
+	}
+
+	monthly_character_piety = 0.1
+	same_religion_opinion = 5
+
+	male_compliment = COMPL_PILGRIM
+	female_compliment = COMPL_PILGRIM
+}
+
+genesian_pilgrim = { # Jacobin who has completed a Pilgrimage
+	potential = {
+	   religion = genesian
+	}
+
+	monthly_character_piety = 0.1
+	same_religion_opinion = 5
+
+	male_compliment = COMPL_PILGRIM
+	female_compliment = COMPL_PILGRIM
 }

@@ -476,3 +476,29 @@ st_patricks_timer = {
 practiced_lectio_divina = {
 	icon = 11
 }
+held_christmas_time = {
+	icon = 11
+}
+summer_services_timer = {
+	icon = 11
+}
+polyarniki_white_cow = {
+	icon = 2
+	intrigue = -3
+	martial = -2
+	stewardship = +3
+	diplomacy = +2
+	global_tax_modifier = 0.2
+	attack = -0.5
+	defence = 0.5
+}
+polyarniki_black_horse = {
+	icon = 2
+	intrigue = 3
+	martial = 2
+	stewardship = -3
+	diplomacy = -2
+	global_tax_modifier = -0.2
+	attack = 0.5
+	defence = -0.5
+}

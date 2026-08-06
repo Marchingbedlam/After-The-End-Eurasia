@@ -887,3 +887,246 @@ character_event = {
 		character_event = { id = pravoslavie.22 }
 	}
 }
+
+character_event = { 
+	id = pravoslavie.25
+	desc = EVTDESC_pravoslavie.25
+	picture = GFX_evt_russian_pilgrimage
+	religion = old_believer
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_pravoslavie.19
+		add_trait="old_believer_holy_mary"
+	}
+	
+	option = { 
+		name = EVTOPTB_pravoslavie.19
+		add_trait="old_believer_st_nicholas"
+	}
+	
+	option = { 
+		name = EVTOPTC_pravoslavie.25
+		add_trait="old_believer_avvakum"
+	}
+		
+	option = { 
+		name = EVTOPTD_pravoslavie.19
+		character_event = { id = pravoslavie.26 }
+	}
+}
+
+character_event = { 
+	id = pravoslavie.26
+	desc = EVTDESC_pravoslavie.25
+	picture = GFX_evt_russian_pilgrimage
+	religion = old_believer
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_pravoslavie.26
+		add_trait="old_believer_feudosia_morozova"
+	}
+	
+	option = { 
+		name = EVTOPTB_pravoslavie.26
+		add_trait="old_believer_ambrose"
+	}
+	
+	option = { 
+		name = EVTOPTC_pravoslavie.26
+		add_trait="old_believer_monk_pavel"
+	}
+		
+	option = { 
+		name = EVTOPTD_pravoslavie.19
+		character_event = { id = pravoslavie.27 }
+	}
+}
+
+character_event = { 
+	id = pravoslavie.27
+	desc = EVTDESC_pravoslavie.25
+	picture = GFX_evt_russian_pilgrimage
+	religion = old_believer
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_pravoslavie.24
+		add_trait="old_believer_st_vladimir"
+	}
+	
+	option = { 
+		name = EVTOPTB_pravoslavie.24
+		add_trait="old_believer_st_dmitriy"
+	}
+		
+	option = { 
+		name = EVTOPTD_pravoslavie.19
+		character_event = { id = pravoslavie.25 }
+	}
+}
+
+character_event = {
+	id = pravoslavie.28
+	hide_window = yes
+	religion = old_believer
+	ai = yes
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+		NOR = {
+			trait = old_believer_holy_mary
+			trait = old_believer_st_nicholas
+			trait = old_believer_ambrose
+			trait = old_believer_avvakum
+			trait = old_believer_feudosia_morozova
+			trait = old_believer_monk_pavel
+			trait = old_believer_st_dmitriy
+			trait = old_believer_st_vladimir
+		}
+	}
+	
+	immediate = {
+		random_list = {
+			16 = {
+				add_trait = old_believer_holy_mary
+			}
+			12 = {
+				add_trait = old_believer_st_nicholas
+			}
+			12 = {
+				add_trait = old_believer_ambrose
+			}
+			12 = {
+				add_trait = old_believer_avvakum
+			}
+			12 = {
+				add_trait = old_believer_feudosia_morozova
+			}
+			12 = {
+				add_trait = old_believer_monk_pavel
+			}
+			12 = {
+				add_trait = old_believer_st_dmitriy
+			}
+			12 = {
+				add_trait = old_believer_st_vladimir
+			}
+		}
+	}
+}
+
+character_event = {
+	id = pravoslavie.29
+	hide_window = yes
+	religion = pravoslavie
+	ai = yes
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+		NOR = {
+			trait = pravoslavie_holy_mary
+			trait = pravoslavie_st_nicholas
+			trait = pravoslavie_st_seraphim_of_sarov
+			trait = pravoslavie_st_sergius_of_radonezh
+			trait = pravoslavie_st_tichon_of_moscow
+			trait = pravoslavie_st_xenia_of_st_petersburg
+			trait = pravoslavie_st_dmitriy
+			trait = pravoslavie_st_vladimir
+		}
+	}
+	
+	immediate = {
+		random_list = {
+			16 = {
+				add_trait = pravoslavie_holy_mary
+			}
+			12 = {
+				add_trait = pravoslavie_st_nicholas
+			}
+			12 = {
+				add_trait = pravoslavie_st_seraphim_of_sarov
+			}
+			12 = {
+				add_trait = pravoslavie_st_sergius_of_radonezh
+			}
+			12 = {
+				add_trait = pravoslavie_st_tichon_of_moscow
+			}
+			12 = {
+				add_trait = pravoslavie_st_xenia_of_st_petersburg
+			}
+			12 = {
+				add_trait = pravoslavie_st_dmitriy
+			}
+			12 = {
+				add_trait = pravoslavie_st_vladimir
+			}
+		}
+	}
+}
+
+character_event = {
+	id = pravoslavie.30
+	hide_window = yes
+	religion = dvoeverie
+	ai = yes
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+		NOR = {
+			trait = dvoeverie_holy_mary
+        	trait = dvoeverie_holy_mary
+			trait = dvoeverie_paraskeva_anastasia
+			trait = dvoeverie_rasputin
+			trait = dvoeverie_st_gyorgij_nevsky
+			trait = dvoeverie_st_iliya
+			trait = dvoeverie_st_nicholas
+			trait = dvoeverie_st_vlasius
+			trait = dvoeverie_tsar
+			trait = dvoeverie_baba_matrona
+		}
+	}
+	
+	immediate = {
+		random_list = {
+			16 = {
+				add_trait = pravoslavie_holy_mary
+			}
+			12 = {
+				add_trait = pravoslavie_st_nicholas
+			}
+			12 = {
+				add_trait = pravoslavie_st_seraphim_of_sarov
+			}
+			12 = {
+				add_trait = pravoslavie_st_sergius_of_radonezh
+			}
+			12 = {
+				add_trait = pravoslavie_st_tichon_of_moscow
+			}
+			12 = {
+				add_trait = pravoslavie_st_xenia_of_st_petersburg
+			}
+			12 = {
+				add_trait = pravoslavie_st_dmitriy
+			}
+			12 = {
+				add_trait = pravoslavie_st_vladimir
+			}
+		}
+	}
+}

@@ -11657,7 +11657,7 @@ coat_of_arms = {
 1956137 = { name = "Zizi" culture = moroccan }
 1956138 = { name = "Ghouirgate" culture = moroccan }
 1956139 = { name = "al-Shaykhi" culture = moroccan }
-1956140 = { name = "Umayyad" culture = moroccan used_for_random = no }
+1956140 = { name = "Umayyad" culture = moroccan religion = nondescript_muslim  used_for_random = no }
 
 19650000 = { name = "Thulusdhoo" culture = maldivian used_for_random = no
 	coat_of_arms = { 
@@ -50752,8 +50752,40 @@ coat_of_arms = {
 	culture="roman"
 	religion="miaphysite"
 }
-7534089 = { name = "Rzymczyk" culture = malopolan used_for_random = no }
-7534090 = { name = "di Moravia" culture = umbrian used_for_random = no }
+7534089 = { name = "Rzymczyk"
+    culture = malopolan
+	religion = mariavite
+	used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 37
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7534090 = { name = "di Moravia"
+    culture = umbrian
+	religion = catholic
+	used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 36
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 7534091 = { name = "von Hohenberg" culture = austrian
 	coat_of_arms = {
 		religion = nondescript_christian
@@ -51826,7 +51858,20 @@ coat_of_arms = {
 		}
 	}
 }
-7534237 = { name = "Captero" religion = catholic culture = castilian used_for_random = no 
+7534237 = { name = "Lara" religion = catholic culture = castilian 	
+   used_for_random = no          
+   coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 33
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
 }
 7534238 = {
     name = "Bono" 
@@ -51852,3 +51897,69 @@ coat_of_arms = {
 	religion = catholic
 	used_for_random = no
 }
+7534242 = { name = "Re Burbone" culture = neapolitan used_for_random = no 
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 33
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7534243 = { 
+    name = "Murat" 
+    culture = parisian
+	religion = jacobin
+	used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 74
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7534244 = {
+    name = "Cuccia" 
+    culture = sicilian
+	religion = catholic
+	used_for_random = no
+}
+7534245 = {
+    name = "Karmal" 
+    culture = pashtun
+	religion = proletcult
+	used_for_random = no
+}
+7534246 = { name = "Abbasid" culture = moroccan religion = nondescript_muslim used_for_random = no }
+7534247 = { name = "Rashidun" culture = moroccan religion = nondescript_muslim  used_for_random = no }
+7534248 = { 
+    name = "Byron" 
+    culture = greek
+	religion = orthodox
+	used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 35
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7534248 = { name = "Zogu" culture = albanian used_for_random = no }
+7534249 = { name = "Hoxha" culture = albanian used_for_random = no }

@@ -139,12 +139,9 @@ decisions = {
 			set_character_flag = st_patricks_day
 			set_character_flag = recent_minor_decision
 			set_character_flag = do_not_disturb
-			hidden_tooltip = { character_event = { id = canada.39 days = 30 } } # Safety catch flag clearing
-			custom_tooltip = {
-				text = TXT_st_patricks_day_decision
-				hidden_tooltip = { 
-					character_event = { id = canada.30 } 
-				}
+			hidden_tooltip = { character_event = { id = insular.8 days = 30 } } # Safety catch flag clearing
+			hidden_tooltip = { 
+				character_event = { id = insular.1 } 
 			}
 			if = {
 				limit = {
@@ -1435,6 +1432,125 @@ decisions = {
 			always = no
 		}
 	}
+	
+	choose_liturginen_branch = {
+		ai = no
+		is_high_prio = yes
+		
+		potential = {
+			religion = liturginen
+			is_playable = yes
+			is_adult = yes
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		allow = {
+			religion = liturginen
+			is_playable = yes
+			piety=50
+		}
+		
+		effect = {
+		    piety=50
+			hidden_tooltip = {
+				character_event = { id = finland.1 }		
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+	}
+	
+	organise_summer_services = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 3
+		potential = {
+			is_playable = yes
+			is_adult = yes
+			prisoner = no
+			religion = laestedianist
+			NOT = { has_character_modifier = summer_services_timer }
+			NOT = {	has_character_flag = summer_services }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+			month = 5
+			NOT = { month = 9 }
+		}
+		
+		allow = {
+			war = no
+			custom_tooltip = {
+				text = UNOCCUPIED_DEMESNE_TITLE
+				hidden_tooltip = {
+					any_demesne_title = {
+						NOT = { higher_tier_than = count }
+						is_occupied = no
+					}
+				}
+			}
+			month = 5
+			NOT = { month = 9 }
+			wealth = 50
+			prisoner = no
+			NOT = { is_inaccessible_trigger = yes }
+			custom_tooltip = {
+				text = is_not_busy_trigger_tooltip
+				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+		}
+		
+		effect = {
+			wealth = -50
+			set_character_flag = summer_services
+			set_character_flag = recent_minor_decision
+			set_character_flag = do_not_disturb
+			character_event = { id = finland.1 } 
+			if = {
+				limit = {
+					has_dlc = "Reapers"
+					capital_scope = { religion = laestedianist }
+				}
+				custom_tooltip = {
+					text = capital_prospers_custom_tooltip
+					hidden_tooltip = {
+						capital_scope = {
+							change_variable = { which = prosperity_value value = 4 }
+						}
+					}
+				}
+			}
+		}
+			
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1	
+			modifier = {
+				factor = 0
+				NOT = {
+					wealth = 100
+				}
+			}
+			modifier = {
+				factor = 0
+				has_character_flag = recent_minor_decision
+				NOT = {
+					had_character_flag = {
+						flag = recent_minor_decision
+						days = 730
+					}
+				}
+			}
+		}
+	}
+
 }
 targeted_decisions = {						
 	navjote = {

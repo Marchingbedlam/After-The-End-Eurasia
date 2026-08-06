@@ -785,3 +785,914 @@ character_event = { #Dimitar Danielsin Legacy
 		}
 	}
 }
+
+narrative_event = {
+	id = greek.28
+	desc = EVTDESC_greek_28
+	title = EVTTITLE_greek_28
+	picture = GFX_evt_neohellenic_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { #Rome and Alexandria
+		name = EVTOPTA_greek_28
+		narrative_event = { id = greek.29 }
+	}
+	
+	option = { #More Greek Holy Sites
+		name = EVTOPTB_greek_28
+		narrative_event = { id = greek.30 }
+	}
+		
+	option = { #Resign
+		name = EVTOPTC_greek_28
+		piety = -50
+		prestige = -50
+	}
+}
+
+narrative_event = {
+	id = greek.29
+	desc = EVTDESC_greek_29
+	title = EVTTITLE_greek_28
+	picture = GFX_evt_neohellenic_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { #Rome
+		name = EVTOPTA_greek_29
+		set_character_flag = go_to_rome_neohellenic
+		character_event = { id = greek.31 days = 15 }
+	}
+	
+	option = { #Alexandria
+		name = EVTOPTB_greek_29
+		set_character_flag = go_to_alexandria_neohellenic
+		character_event = { id = greek.31 days = 15 }
+	}
+	
+	option = { 
+		name = EVTOPTD_greek_30
+		narrative_event = { id = greek.28 }
+	}
+}
+
+narrative_event = {
+	id = greek.30
+	desc = EVTDESC_greek_30
+	title = EVTTITLE_greek_28
+	picture = GFX_evt_neohellenic_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { #Athens
+		name = EVTOPTA_greek_30
+		set_character_flag = go_to_athens_neohellenic
+		character_event = { id = greek.31 days = 15 }
+	}
+	
+	option = { #Athos
+		name = EVTOPTB_greek_30
+		set_character_flag = go_to_athos_neohellenic
+		character_event = { id = greek.31 days = 15 }
+	}
+	
+	option = { #Constantinopole
+		name = EVTOPTC_greek_30
+		set_character_flag = go_to_constantinopole_neohellenic
+		character_event = { id = greek.31 days = 15 }
+	}
+	
+	option = { 
+		name = EVTOPTD_greek_30
+		narrative_event = { id = greek.28 }
+	}
+}
+
+character_event = {
+	id = greek.31
+    desc = EVTDESC_greek_31
+
+	is_triggered_only = yes
+	
+	picture = GFX_evt_neohellenic_pilgrimage
+	
+	option = { 
+		name = EVTOPTA_greek_31
+		hidden_tooltip = {
+			add_trait = travelling
+			set_character_flag = good_pilgrimage
+			narrative_event = { id = greek.32 days = 50 }
+		}
+		hidden_tooltip = {
+			random_list = {
+				10 = { character_event = { id = greek.34 days = 9 random = 10 } } # List that is always checked
+				10 = { character_event = { id = greek.35 days = 9 random = 10 } }
+				10 = { narrative_event = { id = greek.38 days = 9 random = 10 } }
+				10 = { character_event = { id = greek.39 days = 10 random = 10 } }
+				10 = { character_event = { id = greek.42 days = 8 random = 10 } }
+				10 = { character_event = { id = greek.43 days = 9 random = 10 } }
+				10 = { character_event = { id = greek.44 days = 10 random = 10 } }
+				10 = { character_event = { id = greek.45 days = 10 random = 10 } }
+				10 = { character_event = { id = greek.47 days = 8 random = 10 } }
+				10 = { character_event = { id = greek.61 days = 8 random = 10 } }
+			}
+			random_list = {
+				10 = { character_event = { id = greek.34 days = 28 random = 10 } } # List that is always checked
+				10 = { character_event = { id = greek.35 days = 29 random = 10 } }
+				10 = { narrative_event = { id = greek.38 days = 30 random = 10 } }
+				10 = { character_event = { id = greek.39 days = 30 random = 10 } }
+				10 = { character_event = { id = greek.42 days = 39 random = 10 } }
+				10 = { character_event = { id = greek.43 days = 28 random = 10 } }
+				10 = { character_event = { id = greek.44 days = 35 random = 10 } }
+				10 = { character_event = { id = greek.45 days = 36 random = 10 } }
+				10 = { character_event = { id = greek.47 days = 32 random = 10 } }
+				10 = { character_event = { id = greek.61 days = 32 random = 10 } }
+			}
+		}
+	}
+}
+
+narrative_event = { #Welcome
+	id = greek.32
+	title = EVTTITLE_greek_32
+	desc = {
+		text = EVTDESC_greek_32_ATHENS
+		picture = GFX_evt_athens
+		trigger = { 
+			has_character_flag = go_to_athens_neohellenic
+		}
+	}
+	desc = {
+		text = EVTDESC_greek_32_ALEXANDRIA
+		picture = GFX_evt_alexandria
+		trigger = { 
+			has_character_flag = go_to_alexandria_neohellenic
+		}
+	}
+	desc = {
+		text = EVTDESC_greek_32_ATHOS
+		picture = GFX_evt_mount_athos
+		trigger = { 
+			has_character_flag = go_to_athos_neohellenic
+		}
+	}
+	desc = {
+		text = EVTDESC_greek_32_ROME
+		picture = GFX_evt_rome
+		trigger = { 
+			has_character_flag = go_to_rome_neohellenic
+		}
+	}
+	desc = {
+		text = EVTDESC_greek_32_CONSTANTINOPOLE
+		picture = GFX_evt_constantinopole
+		trigger = { 
+			has_character_flag = go_to_constantinopole_neohellenic
+		}
+	}
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_greek_32
+		hidden_tooltip = { character_event = { id = greek.33 days = 10 } }
+		clr_character_flag = go_to_alexandria_neohellenic
+		clr_character_flag= go_to_athos_neohellenic
+		clr_character_flag = go_to_athens_neohellenic
+		clr_character_flag = go_to_constantinopole_neohellenic
+		clr_character_flag = go_to_rome_neohellenic
+	}
+}
+
+character_event = {
+	id = greek.33
+	desc = EVTDESC_greek_33
+	picture = GFX_evt_neohellenic_pilgrimage
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				ai = no
+				is_ironman = yes
+				NOT = { has_character_flag = achievement_pilgrim }
+			}
+
+			set_character_flag = achievement_pilgrim
+		}
+	}
+
+	option = {
+		name = EVTOPTA_greek_33
+		piety = 30
+		prestige = 30
+		
+		remove_trait = on_pilgrimage
+		add_trait = neohellenic_pilgrim
+	}
+}
+
+character_event = {
+	id = greek.34
+	desc = EVTDESC_greek_34
+	picture = GFX_evt_merchant_ship_at_sea_republic
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_greek_34
+		random_list = {
+		   15 = { death = { death_reason = death_missing } }
+		   15 = { add_trait="maimed" }
+		   40 = { add_trait="wounded" }
+		   30 = { }
+		}
+	}
+}
+
+character_event = {
+	id = greek.35
+	desc = EVTDESC_greek_35
+	picture = GFX_evt_neohellenic_pilgrimage
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_greek_35
+		piety = 50
+		prestige = -25
+		hidden_tooltip = {
+		   random_list = {
+		     95 = { character_event = { id = greek.36 days = 2 } }
+			 5 = { character_event = { id = greek.37 days = 2 } }
+		   }
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_greek_35
+		piety = 25
+		random_list = {
+		   25 = { add_trait="zealous" }
+		   25 = { add_trait="pious" }
+		   25 = { add_trait="trusting" }
+		   25 = { }
+		}
+	}
+	
+	option = {
+		name = EVTOPTC_greek_35
+		piety = -25
+		prestige = 25
+		random_list = {
+		   25 = { add_trait="cynical" }
+		   75 = { }
+		}
+	}
+}
+
+character_event = {
+	id = greek.36
+	desc = EVTDESC_greek_36
+	picture = GFX_evt_neohellenic_pilgrimage
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_greek_36
+		prestige = -25
+	}
+}
+
+character_event = {
+	id = greek.37
+	desc = EVTDESC_greek_37
+	picture = GFX_evt_neohellenic_pilgrimage
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_greek_37
+		prestige = 500
+		if = {
+		   limit = { has_nickname = no }
+		   give_nickname = nickname_satyres_killer
+		}
+	}
+}
+
+character_event = {
+	id = greek.38
+	desc = EVTDESC_greek_38
+	picture = GFX_evt_neohellenic_pilgrimage
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_greek_38
+		prestige = 100
+		change_martial = 1
+		random_list = {
+		   10 = { death = { death_reason = death_missing } }
+		   45 = { add_trait="maimed" }
+		   45 = { }
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_greek_38
+		prestige = -50
+		random_list = {
+		  30 = { add_trait="craven" }
+		  70 = { }
+		}
+	}
+}
+
+character_event = {
+	id = greek.39
+	desc = EVTDESC_greek_39
+	picture = GFX_evt_neohellenic_pilgrimage
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_greek_39
+		prestige = 10
+		piety = 10
+		narrative_event = { id = greek.40 }
+	}
+	
+	option = {
+		name = EVTOPTB_greek_38
+		prestige = -20
+		random_list = {
+		  40 = { add_trait="shy" }
+		  10 = { add_trait="craven" }
+		  50 = { }
+		}
+	}
+}
+
+narrative_event = {
+	id = greek.40
+	title = EVTTITLE_greek_40
+	desc = EVTDESC_greek_40
+	picture = GFX_evt_neohellenic_pilgrimage
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_greek_40
+		random_list = {
+		   10 = { add_trait="poet" }
+		   10 = { add_trait="musician" }
+		   20 = { add_trait="drunkard" }
+		   20 = { add_trait="gregarious" }
+		   40 = { }
+		}
+		character_event = { id = greek.41 days = 1 }
+	}
+}
+
+character_event = {
+	id = greek.41
+	desc = EVTDESC_greek_41
+	picture = GFX_evt_neohellenic_pilgrimage
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_greek_41
+		prestige = 20
+	}
+}
+
+character_event = {
+	id = greek.42
+	desc = EVTDESC_greek_42
+	picture = GFX_evt_neohellenic_pilgrimage
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_greek_42
+		piety = 20
+		random_list = {
+		   10 = { add_trait="zealous" }
+		   10 = { add_trait="pious" }
+		   10 = { add_trait="patient" }
+		   60 = { }
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_greek_42
+		prestige = 20
+		random_list = {
+		   20 = { add_trait="poet" }
+		   20 = { add_trait="musician" }
+		   60 = { }
+		}
+	}
+	
+	option = {
+		name = EVTOPTC_greek_42
+		hidden_tooltip = {
+		  random_list = { 
+			   10 = { add_artifact = ate_compass }
+			   10 = { add_artifact = ate_textbooks }
+			   10 = { add_artifact = ate_typewriter }
+			   10 = { add_artifact = ate_watch }
+			   10 = { add_artifact = ate_calculator }
+			   50 = { }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = greek.43
+	desc = EVTDESC_greek_43
+	picture = GFX_evt_neohellenic_pilgrimage
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_greek_43
+		piety = 50
+		random_list = {
+		   10 = { add_trait="zealous" }
+		   10 = { add_trait="pious" }
+		   10 = { add_trait="patient" }
+		   60 = { }
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_greek_43
+		prestige = 50
+		random_list = {
+		   40 = { add_trait="gregarious" }
+		   10 = { add_trait="kind" }
+		   50 = { }
+		}
+	}
+	
+	option = {
+		name = EVTOPTC_greek_43
+		piety = 500
+		add_trait="monk"
+		death = { death_reason = death_missing }
+	}
+}
+
+character_event = {
+	id = greek.44
+	desc = EVTDESC_greek_44
+	picture = GFX_evt_neohellenic_pilgrimage
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_greek_44
+		prestige = 25
+	}
+	
+	option = {
+		name = EVTOPTB_greek_44
+		prestige = 50
+		random_list = {
+		   10 = { wealth = 10 }
+		   20 = { wealth = 5 }
+		   40 = { }
+		   10 = { wealth = -5 }
+		   20 = { wealth = -10 }
+		}
+	}
+}
+
+character_event = {
+	id = greek.45
+	desc = EVTDESC_greek_45
+	picture = GFX_evt_neohellenic_pilgrimage
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_greek_45
+		wealth = -5
+		random_list = {
+		   20 = { set_character_flag = neohellenic_play_clouds } #The Clouds (Aristophanes, Comedy)
+		   20 = { set_character_flag = neohellenic_play_octavia } 
+		   20 = { set_character_flag = neohellenic_play_antigone }
+		   20 = { set_character_flag = neohellenic_play_sardanapal }
+		   20 = { set_character_flag = neohellenic_play_romeo_and_juliet } 
+		}
+		narrative_event = { id = greek.46 }
+	}
+	
+	option = {
+		name = EVTOPTB_greek_45
+		prestige = -25
+		piety = 25
+	}
+}
+
+narrative_event = {
+	id = greek.46
+	title = EVTTITLE_greek_46
+	desc = {
+		text = EVTDESC_greek_46_A
+		trigger = { 
+			has_character_flag = neohellenic_play_clouds
+		}
+	}
+	desc = {
+		text = EVTDESC_greek_46_C
+		trigger = { 
+			has_character_flag = neohellenic_play_octavia
+		}
+	}
+	desc = {
+		text = EVTDESC_greek_46_D
+		trigger = { 
+			has_character_flag = neohellenic_play_antigone
+		}
+	}
+	desc = {
+		text = EVTDESC_greek_46_E
+		trigger = { 
+			has_character_flag = neohellenic_play_sardanapal
+		}
+	}
+	desc = {
+		text = EVTDESC_greek_46_F
+		trigger = { 
+			has_character_flag = neohellenic_play_romeo_and_juliet
+		}
+	}
+	
+	picture = GFX_evt_neohellenic_pilgrimage
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_greek_46
+		prestige = 30
+		clr_character_flag = neohellenic_play_clouds
+		clr_character_flag = neohellenic_play_octavia
+		clr_character_flag = neohellenic_play_antigone
+		clr_character_flag = neohellenic_play_sardanapal
+		clr_character_flag = neohellenic_play_romeo_and_juliet
+	}
+}
+
+narrative_event = {
+	id = greek.47
+	title = EVTTITLE_greek_47
+	desc = EVTDESC_greek_47
+	picture = GFX_evt_merchant_ship_at_sea_republic
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_greek_47
+		add_trait="brave"
+		narrative_event = { id = greek.48 }
+	}
+	
+	option = {
+		name = EVTOPTB_greek_47
+		prestige = -20
+		piety = -20
+		random_list = {
+		  10 = { add_trait="craven" }
+		  20 = { add_trait="cynical" }
+		  70 = { }
+		}
+	}
+}
+
+
+narrative_event = {
+	id = greek.48
+	title = EVTTITLE_greek_48
+	desc = EVTDESC_greek_48
+	picture = GFX_evt_bandits
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_greek_48
+		random_list = {
+		   50 = {
+		       custom_tooltip = { text = EVTTROOLTIPA_greek_48 }
+			   character_event = { id = greek.49 }
+		   }
+		   15 = {
+		       custom_tooltip = { text = EVTTROOLTIPB_greek_48 }
+			   character_event = { id = greek.50 }
+		   }
+		   35 = {
+		       custom_tooltip = { text = EVTTROOLTIPC_greek_48 }
+			   character_event = { id = greek.51 }
+		   }
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_greek_48
+		character_event = { id = greek.52 }
+	}
+}
+
+character_event = {
+	id = greek.49
+	desc = EVTDESC_greek_49
+	picture = GFX_evt_bloody_tools
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_greek_49
+		character_event = { id = greek.54 }
+	}
+}
+
+long_character_event = {
+	id = greek.50
+	desc = EVTDESC_greek_50
+	picture = GFX_evt_bloody_tools
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_greek_49
+		set_character_flag = new_evidence_neohellenic_pil
+		character_event = { id = greek.54 }
+	}
+}
+
+character_event = {
+	id = greek.51
+	desc = EVTDESC_greek_51
+	picture = GFX_evt_bloody_tools
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_greek_51
+		character_event = { id = greek.54 }
+	}
+}
+
+long_character_event = {
+	id = greek.52
+	desc = EVTDESC_greek_52
+	picture = GFX_evt_wise_woman
+
+	is_triggered_only = yes
+
+	option = { #Ask for her relations with husband
+		name = EVTOPTA_greek_52
+		set_character_flag = lighthouse_crime_husband
+		character_event = { id = greek.53 }
+	}
+	
+	option = { #Ask for women
+		name = EVTOPTB_greek_52
+		set_character_flag = lighthouse_crime_women
+		character_event = { id = greek.53 }
+	}
+	
+	option = { #Ask for this "satyr"
+		name = EVTOPTC_greek_52
+		set_character_flag = lighthouse_crime_satyr
+		character_event = { id = greek.53 }
+	}
+	
+	option = { #I've no questions
+		name = EVTOPTD_greek_52
+		set_character_flag = lighthouse_crime_nothing
+		character_event = { id = greek.54 }
+	}
+}
+
+narrative_event = {
+	id = greek.53
+	title = EVTTITLE_greek_53
+	desc = {
+		text = EVTDESC_greek_53_A
+		trigger = { 
+			has_character_flag = lighthouse_crime_husband
+		}
+	}
+	desc = {
+		text = EVTDESC_greek_53_B
+		trigger = { 
+			has_character_flag = lighthouse_crime_women
+		}
+	}
+	desc = {
+		text = EVTDESC_greek_53_C
+		trigger = { 
+			has_character_flag = lighthouse_crime_satyr
+		}
+	}
+	
+	picture = GFX_evt_wise_woman
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_greek_53
+		clr_character_flag = lighthouse_crime_women
+		clr_character_flag = lighthouse_crime_husband
+		character_event = { id = greek.54 }
+	}
+}
+
+character_event = {
+	id = greek.54
+	desc = EVTDESC_greek_54
+	picture = GFX_evt_neohellenic_pilgrimage
+
+	is_triggered_only = yes
+
+	option = { #Arrest Women and deliver her to authorities
+		name = EVTOPTA_greek_54
+		prestige = 40
+		random_list = {
+		   10 = { add_trait="ruthless" }
+		   15 = { add_trait="just" }
+		   15 = { add_trait="wroth" }
+		   60 = { }
+		}
+		hidden_tooltip = {
+		   65 = { character_event = { id = greek.55 days = 310 } }
+		   35 = { character_event = { id = greek.58 days = 310 } }
+		}
+	}
+	
+	option = { #Go to city
+		name = EVTOPTB_greek_54
+		trigger = { OR = { has_character_flag = new_evidence_neohellenic_pil has_character_flag = lighthouse_crime_women } }
+		character_event = { id = greek.55 }
+	}
+	
+	option = { #Follow the satyr
+		name = EVTOPTC_greek_54
+		trigger = { has_character_flag = lighthouse_crime_satyr }
+		character_event = { id = greek.56 }
+	}
+	
+	option = { #There is nothing we can do
+		name = EVTOPTD_greek_54
+		piety = 25
+		prestige = -25
+		random_list = {
+		   40 = { add_trait="content" }
+		   40 = { add_trait="slothful" }
+		   20 = { }
+		}
+		hidden_tooltip = {
+		   15 = { character_event = { id = greek.55 days = 310 } }
+		   85 = { character_event = { id = greek.58 days = 310 } }
+		}
+	}
+}
+
+long_character_event = {
+	id = greek.55
+	desc = EVTDESC_greek_55
+	picture = GFX_evt_castle_construction
+
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_greek_55
+		prestige = 50
+		clr_character_flag = new_evidence_neohellenic_pil
+		clr_character_flag = lighthouse_crime_women
+		hidden_tooltip = {
+		   25 = { character_event = { id = greek.59 days = 310 } }
+		   75 = { character_event = { id = greek.60 days = 310 } }
+		}
+	}
+}
+
+long_character_event = {
+	id = greek.56
+	desc = EVTDESC_greek_56
+	picture = GFX_evt_bandits
+
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_greek_56
+		prestige = 50
+		clr_character_flag = lighthouse_crime_satyr
+		hidden_tooltip = {
+		   55 = { character_event = { id = greek.59 days = 310 } }
+		   45 = { character_event = { id = greek.60 days = 310 } }
+		}
+	}
+}
+
+character_event = { #News after years: women is hanged
+	id = greek.57
+	desc = EVTDESC_greek_57
+	picture = GFX_evt_died_executed_hanging
+
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_greek_57
+		hidden_tooltip = {
+		   piety = 1
+		   piety = -1
+		}
+	}
+}
+
+character_event = { #News after years: women declared innocent, true crimer unknown
+	id = greek.58
+	desc = EVTDESC_greek_58
+	picture = GFX_evt_scandal
+
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_greek_58
+		hidden_tooltip = {
+		   piety = 1
+		   piety = -1
+		}
+	}
+}
+
+character_event = { #News after years: true murder unknown
+	id = greek.59
+	desc = EVTDESC_greek_59
+	picture = GFX_evt_scandal
+
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_greek_59
+		hidden_tooltip = {
+		   piety = 1
+		   piety = -1
+		}
+	}
+}
+
+character_event = { #News after years: true murder known
+	id = greek.60
+	desc = EVTDESC_greek_60
+	picture = GFX_evt_died_executed_hanging
+
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_greek_60
+		hidden_tooltip = {
+		   piety = 1
+		   piety = -1
+		}
+	}
+}
+
+long_character_event = {
+	id = greek.61
+	desc = EVTDESC_greek_61
+	picture = GFX_evt_neohellenic_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_greek_61
+		piety=100
+		add_trait="zealous"
+		random_list = {
+		   20 = { add_trait="wroth" }
+		   80 = { }
+		} 
+	}
+	
+	option = {
+		name = EVTOPTB_greek_61
+		hidden_tooltip = {
+		   random_list = {
+		      30 = { secret_religion = orthodox }
+			  30 = { secret_religion = antipalamite }
+			  30 = { secret_religion = oldcalendarist }
+			  10 = { secret_religion = catholic }
+		   }
+		}
+	}
+}

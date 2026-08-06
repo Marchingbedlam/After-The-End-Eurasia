@@ -2103,3 +2103,124 @@ character_event = {
 		prestige=-15
 	}
 }
+
+narrative_event = {
+	id = jacobin.58
+	title = EVTNAME_jacobin_58
+	desc = EVTDESC_jacobin_58
+	picture = GFX_evt_bastille_day
+	border = GFX_event_narrative_frame_religion
+
+	is_triggered_only = yes # on_decade_pulse
+
+	major = yes
+	show_root = yes
+	hide_new = yes
+
+	only_playable = yes
+	religion = jacobin
+	min_age = 16
+
+	trigger = {
+		controls_religion = yes
+		year >= 2700
+
+		NOR = {
+			has_alternate_start_parameter = {
+				key = religion_names
+				value = random
+			}
+
+			has_global_flag = jacobin_holy_wars_unlocked
+		}
+
+		c_marseille = {
+			holder_scope = {
+				top_liege = {
+					NOT = { religion_group = christian }
+				}
+			}
+		}
+	}
+
+	major_trigger = {
+		ai = no
+	}
+
+	immediate = {
+		set_global_flag = jacobin_holy_wars_unlocked
+	}
+
+	option = {
+		name = {
+			text = EVTOPTA39660
+			trigger = { religion = jacobin }
+		}
+		name = {
+			text = EVTOPTB39660
+			trigger = {
+				NOT = { religion = jacobin }
+			}
+		}
+	}
+}
+
+narrative_event = {
+	id = jacobin.59
+	title = EVTNAME_jacobin_58
+	desc = EVTDESC_jacobin_59
+	picture = GFX_evt_bastille_day
+	border = GFX_event_narrative_frame_religion
+
+	is_triggered_only = yes # on_yearly_pulse
+	major = yes
+	show_root = yes
+	hide_new = yes
+
+	only_playable = yes
+	religion = jacobin
+	min_age = 16
+
+	trigger = {
+		controls_religion = yes
+		year >= 2666
+
+		NOR = {
+			has_alternate_start_parameter = {
+				key = religion_names
+				value = random
+			}
+
+			has_global_flag = jacobin_holy_wars_unlocked
+		}
+
+		c_paris = {
+			holder_scope= {
+				top_liege = {
+					NOT = { religion = jacobin }
+				}
+			}
+		}
+	}
+
+	major_trigger = {
+		ai = no
+	}
+
+	immediate = {
+		set_global_flag = jacobin_holy_wars_unlocked
+	}
+
+	option = {
+		name = {
+			text = EVTOPTA39660
+			trigger = { religion = jacobin }
+		}
+		name = {
+			text = EVTOPTB39660
+			trigger = {
+				NOT = { religion = jacobin }
+			}
+		}
+	}
+}

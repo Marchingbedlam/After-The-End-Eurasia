@@ -1396,7 +1396,146 @@ spriteTypes = {
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
-	
+	spriteType = {
+		name = "GFX_trait_school_of_st_bridget"
+		texturefile = "gfx/traits/school_of_st_bridget.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_school_of_agricola"
+		texturefile = "gfx/traits/school_of_agricola.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_old_believer_holy_mary"
+		texturefile = "gfx/traits/dvoeverie_holy_mary.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_old_believer_st_nicholas"
+		texturefile = "gfx/traits/dvoeverie_st_nicholas.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_old_believer_ambrose"
+		texturefile = "gfx/traits/old_believer_ambrose.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_old_believer_avvakum"
+		texturefile = "gfx/traits/old_believer_avvakum.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_old_believer_feudosia_morozova"
+		texturefile = "gfx/traits/old_believer_feudosia_morozova.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_old_believer_monk_pavel"
+		texturefile = "gfx/traits/old_believer_monk_pavel.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_old_believer_st_dmitriy"
+		texturefile = "gfx/traits/pravoslavie_st_dmitriy.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_old_believer_st_vladimir"
+		texturefile = "gfx/traits/pravoslavie_st_vladimir.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_third_romanist_actionist"
+		texturefile = "gfx/traits/third_romanist_actionist.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_third_romanist_majoran"
+		texturefile = "gfx/traits/third_romanist_majoran.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_third_romanist_palladic"
+		texturefile = "gfx/traits/third_romanist_palladic.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_third_romanist_juvenist"
+		texturefile = "gfx/traits/third_romanist_juvenist.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_jacobin_pilgrim"
+		texturefile = "gfx/traits/jacobin_pilgrim.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_folketro_pilgrim"
+		texturefile = "gfx/traits/folketro_pilgrim.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_neohellenic_pilgrim"
+		texturefile = "gfx/traits/neohellenic_pilgrim.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}	
+	spriteType = {
+		name = "GFX_trait_glorian_pilgrim"
+		texturefile = "gfx/traits/glorian_pilgrim.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}	
+	spriteType = {
+		name = "GFX_trait_sun_king_cultist_pilgrim"
+		texturefile = "gfx/traits/sun_king_cultist_pilgrim.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_genesian_pilgrim"
+		texturefile = "gfx/traits/genesian_pilgrim.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
 	
 	#Ambitions
 	spriteType = {
@@ -1787,5 +1926,29 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_read_bards"
 		texturefile = "gfx\\interface\\decision_genesian.dds"
+	}
+	spriteType = {
+		name = "GFX_celebrate_st_patricks_day"
+		texturefile = "gfx\\interface\\decision_icon_st_patricks.dds"
+	}
+	spriteType = {
+		name = "GFX_celebrate_christmas"
+		texturefile = "gfx\\interface\\decision_icon_christmas.dds"
+	}
+	spriteType = {
+		name = "GFX_change_old_believer_branch"
+		texturefile = "gfx\\interface\\decision_icon_choice_of_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_change_dvoeverie_branch"
+		texturefile = "gfx\\interface\\decision_icon_choice_of_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_change_pravoslavie_branch"
+		texturefile = "gfx\\interface\\decision_icon_choice_of_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_choose_saint_orthodoxy"
+		texturefile = "gfx\\interface\\decision_icon_choice_of_icon.dds"
 	}
 }

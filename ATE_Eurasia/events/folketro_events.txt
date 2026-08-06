@@ -2108,3 +2108,102 @@ character_event = {
 		narrative_event = { id = troll.52 }
 	}
 }
+
+character_event = {
+	id = troll.58
+	hide_window = yes
+	religion = folketro
+	ai = yes
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+		NOR = {
+			trait = hiddenfolk_cult
+			trait = apostle_cult
+		}
+	}
+	
+	immediate = {
+		random_list = {
+			50 = {
+				add_trait = hiddenfolk_cult
+			}
+			50 = {
+				add_trait = apostle_cult
+			}
+		}
+	}
+}
+
+character_event = {
+	id = troll.59
+	hide_window = yes
+	religion = fornsed
+	ai = yes
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+		NOR = {
+			trait = st_olav
+			trait = st_peter
+			trait = st_lucy
+		}
+	}
+	
+	immediate = {
+		random_list = {
+			33 = {
+				add_trait = st_olav
+			}
+			33 = {
+				add_trait = st_peter
+			}
+			33 = {
+				add_trait = st_lucy
+			}
+		}
+	}
+}
+
+character_event = {
+	id = troll.60
+	hide_window = yes
+	religion = nysed
+	ai = yes
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+		NOR = {
+			trait = nysed_elves
+			trait = nysed_fiddler
+			trait = nysed_thor
+			trait = nysed_wild_hunt
+		}
+	}
+	
+	immediate = {
+		random_list = {
+			25 = {
+				add_trait = nysed_elves
+			}
+			25 = {
+				add_trait = nysed_fiddler
+			}
+			25 = {
+				add_trait = nysed_thor
+			}
+			25 = {
+				add_trait = nysed_wild_hunt
+			}
+		}
+	}
+}

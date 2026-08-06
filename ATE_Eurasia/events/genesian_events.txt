@@ -1370,6 +1370,7 @@ character_event = {
 	id = genesian.45
 	desc = EVTDESC_genesian_45
 	picture = GFX_evt_genesian_pilgrimage
+	religion = genesian
 	
 	is_triggered_only = yes
 
@@ -1381,5 +1382,32 @@ character_event = {
 	option = { 
 		name = EVTOPTB_genesian_45
 		add_trait="genesian_cult_of_nature"
+	}
+}
+
+character_event = {
+	id = genesian.46
+	religion = genesian
+	
+	ai = yes
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	   NOR = {
+	      trait="genesian_fathers"
+		  trait="genesian_cult_of_nature"
+	   }
+	}
+
+	immediate = {
+		random_list = {
+			50 = {
+				add_trait = genesian_fathers
+			}
+			50 = {
+				add_trait = genesian_cult_of_nature
+			}
+		}
 	}
 }

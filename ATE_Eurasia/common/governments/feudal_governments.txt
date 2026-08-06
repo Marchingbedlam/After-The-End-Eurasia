@@ -31,6 +31,7 @@ feudal_governments = {
 				religion = gandhist
 				religion = kozachina
 				religion = angelchina
+				religion = third_romanist
 				has_religion_feature = religion_temporal_head
 				#AND = {
 				#	religion = norse_pagan_reformed
@@ -357,7 +358,6 @@ feudal_governments = {
 							title = e_byzantium
 							title = e_roman_empire
 						}
-						#has_law = succ_byzantine_elective
 					}
 				}
 			}
@@ -1117,9 +1117,6 @@ feudal_governments = {
 			OR = {
 				primary_title = {
 					title = e_sanctum_imperium
-				}
-				primary_title = {
-					title = k_sanctum_imperium
 				}
 				top_liege = {
 					government = italian_bureaucratic_government

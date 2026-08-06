@@ -546,23 +546,6 @@ k_sicilia = {
 		always = no # Only created through special event
 	}
 }
-k_sanctum_imperium = {
-	color={ 200 89 80 }
-	color2={ 4 106 56 }
-
-	capital = 1117 # Rome
-
-	dignity = 100
-	
-	title = "DEFENSOR_FIDEI"
-	title_female = "DEFENSOR_FIDEI_FEMALE"
-	
-	short_name = yes
-	
-	allow = {
-		always = no # Only created through special event
-	}
-}
 k_tuscany = {
 	color={ 222 186 25 }
 	color2={ 255 255 255 }

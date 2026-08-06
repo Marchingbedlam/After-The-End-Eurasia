@@ -3882,3 +3882,372 @@ monastic_order_mariavite = {
 		}
 	}
 }
+
+third_romanist_conspiracy = {
+	primary_attribute = intrigue
+	opinion_to_other_members = +5
+	opinion_to_pretenders = -40			# Pretenders is the opinion you have of people perceived/discovered to be in your society
+	opinion_to_perceived_members = -40	# Perceived is the opinion you have of people perceived/discovered to be of a society you're not part of
+	opinion_per_rank_above = +10
+	sound = devil_worshippers_interface
+	society_ranks_gfx = devil_ranks
+
+	criminal = yes
+	is_religious = yes
+	indestructible = yes
+	devil_worshipper = no
+	is_secret = yes
+	society_influence = no
+
+	non_interference = {
+		always = yes
+	}
+
+	active = {
+		has_dlc = "Mystics"
+		has_global_flag = testing
+	}
+
+	show_society = {
+		trigger_if = {
+			limit = {
+				NOT = { society_member_of = the_satanists }
+			}
+
+			is_adult = yes
+
+			OR = {
+			   culture = romansh
+			   culture = sardinian
+			   culture = sicilian
+			   culture = neapolitan
+			   culture = maltese
+			   culture = umbrian
+			   culture = tuscan
+			   culture = ligurian
+			   culture = piedmontese
+			   culture = lombard
+			   culture = romagnol
+			   culture = venetian
+			   culture = friulian
+			   secret_religion = third_romanist
+			}
+		}
+	}
+
+	can_join_society = {
+		trigger_if = {
+			limit = { ai = yes }
+
+			NOT = {
+				is_society_rank_full = {
+					society = monastic_order_dominican
+					rank = 1
+				}
+			}
+		}
+
+		trigger_if = {
+			limit = { has_character_flag = betrayed_third_romanist_conspiracy }
+
+			custom_tooltip = {
+				text = did_not_betray_society
+
+				NOT = { has_character_flag = betrayed_third_romanist_conspiracy }
+			}
+		}
+		trigger_else_if = {
+			limit = { has_character_flag = society_join_block }
+			always = no
+		}
+		trigger_else = {
+			OR = {
+			   culture = romansh
+			   culture = sardinian
+			   culture = sicilian
+			   culture = neapolitan
+			   culture = maltese
+			   culture = umbrian
+			   culture = tuscan
+			   culture = ligurian
+			   culture = piedmontese
+			   culture = lombard
+			   culture = romagnol
+			   culture = venetian
+			   culture = friulian
+			   secret_religion = third_romanist
+			}
+			is_adult = yes
+			prisoner = no
+			scaled_wealth >= 0.25
+		}
+	}
+
+	can_join_society = {
+		trigger_if = {
+			limit = { ai = yes }
+
+			NOT = {
+				is_society_rank_full = {
+					society = third_romanist_conspiracy
+					rank = 1
+				}
+			}
+		}
+
+		trigger_if = {
+			limit = { has_character_flag = society_join_block }
+			always = no
+		}
+		trigger_else = {
+			has_satanists_prerequisites = yes
+		}
+		NOT = { religion = third_romanist } 
+	}
+
+	potential = { # To remain in society
+	   NOT = { religion = third_romanist } 
+	}
+
+	society_rank = {
+		level = 1
+		limit = 100
+		startup_limit = 10
+
+		modifier = {
+			intrigue = 1
+			monthly_character_piety = -0.2
+			murder_plot_power_modifier = 0.1 # increased plotpower
+		}
+
+		custom_tooltip = monastic_order_education_power_tt
+		
+		decisions = {
+		   decision_abduct
+		   secret_religions_induct_child
+		   secret_religions_evoke_sympathy
+		}
+	}
+
+	society_rank = {
+		level = 2
+		limit = 50
+		startup_limit = 6
+
+		modifier = {
+			intrigue = 2
+			fertility = 0.05
+			monthly_character_piety = -0.3
+			build_cost_city_modifier = 0.25
+			murder_plot_power_modifier = 0.1 # increased plotpower
+		}
+
+		decisions = {
+			assassins_scare_ruler
+			warrior_lodge_warrior_training
+			secret_religions_induct_character
+		}
+	}
+
+	society_rank = {
+		level = 3
+		limit = 25
+		startup_limit = 3
+
+		modifier = {
+			monthly_character_piety = -0.35
+			intrigue = 3
+			fertility = 0.10
+			build_cost_city_modifier = 0.35
+			murder_plot_power_modifier = 0.2 # increased plotpower
+			plot_discovery_chance = 0.2
+		}
+
+		decisions = {
+			cause_local_peasant_revolt
+			warrior_lodge_war_sacrifice
+		}
+	}
+
+	society_rank = {
+		level = 4
+		limit = 5
+		startup_limit = 1
+
+		modifier = {
+			monthly_character_piety = -0.4
+			intrigue = 3
+			build_cost_city_modifier = 0.5
+			fertility = 0.15
+			murder_plot_power_modifier = 0.25 # increased plotpower
+			plot_discovery_chance = 0.3
+		}
+
+		decisions = {
+			sent_assasin_to_kill
+			cause_local_peasant_revolt
+		}
+	}
+
+	monthly_currency_gain = {
+		name = currency_name_monastic_order_third_romanist
+
+		per_attribute = {
+			name = intrigue
+			value = 0.5
+		}
+
+		has_trait = {
+			trait = ambitious
+			value = 5
+		}
+
+		has_trait = {
+			trait = populares
+			value = 4
+		}
+
+		has_trait = {
+			trait = shrewd
+			value = 3
+		}
+
+		has_trait = {
+			trait = master_schemer
+			value = 3
+		}
+		
+		has_trait = {
+			religion = jacobin
+			value = 3
+		}
+		
+		has_trait = {
+			trait = excommunicated
+			value = 2
+		}
+		
+		has_trait = {
+			trait = sympathy_old_world_cults
+			value = 2
+		}
+		
+		has_trait = {
+			trait = proud
+			value = 1
+		}
+
+		has_trait = {
+			trait = deceitful
+			value = 1
+		}
+		
+		has_trait = {
+			trait = cynical
+			value = 1
+		}
+				
+		has_trait = {
+			trait = posessed
+			value = 1
+		}
+		
+		has_trait = {
+			trait = lustful
+			value = 1
+		}
+		
+		has_trait = {
+			religion = chronicler
+			value = 1
+		}
+
+		society_rank = {
+			rank = 4
+			value = 10
+		}
+	}
+
+	member_score_per_attribute = 3
+	member_score_per_rank = 100
+
+	member_score = {
+		value = 10
+		
+		mult_modifier = {
+			factor = 1.3
+			trait = cynical
+		}
+
+		mult_modifier = {
+			factor = 1.3
+			trait = scholar
+		}
+
+		mult_modifier = {
+			factor = 1.3
+			trait = master_schemer
+		}
+
+		mult_modifier = {
+			factor = 1.2
+			trait = deceitful
+		}
+
+		mult_modifier = {
+			factor = 1.2
+			trait = diligent
+		}
+
+		mult_modifier = {
+			factor = 1.1
+			trait = proud
+		}
+
+		mult_modifier = {
+			factor = 1.1
+			trait = greedy
+		}
+
+		mult_modifier = {
+			factor = 1.1
+			trait = erudite
+		}
+	}
+
+	startup_populate = {
+		trigger = {
+			OR = {
+			   culture = romansh
+			   culture = sardinian
+			   culture = sicilian
+			   culture = neapolitan
+			   culture = maltese
+			   culture = umbrian
+			   culture = tuscan
+			   culture = ligurian
+			   culture = piedmontese
+			   culture = lombard
+			   culture = romagnol
+			   culture = venetian
+			   culture = friulian
+			}
+			is_adult = yes
+			lower_real_tier_than = KING
+			ai = yes
+			controls_religion = no
+			holy_order = no
+			mercenary = no
+			has_secret_religion = no
+			is_in_society = no
+            intrigue >= 12
+			NOT = {
+			   trait="zealous"
+			   trait="pious"
+			   trait="kind"
+			   trait="honest"
+			   trait="trusting"
+			}
+		}
+	}
+}

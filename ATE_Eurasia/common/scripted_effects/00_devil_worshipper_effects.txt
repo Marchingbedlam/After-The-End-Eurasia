@@ -620,7 +620,7 @@ join_from_devil_worshiper_society_effect = {
 			the_trollcrafters  = { ROOT = { join_society = the_trollcrafters } }
 			the_bacchants      = { ROOT = { join_society = the_bacchants } }
 			the_vodouns        = { ROOT = { join_society = the_vodouns } }
-			the_illuminati        = { ROOT = { join_society = the_illuminati } }
+			third_romanist_conspiracy        = { ROOT = { join_society = third_romanist_conspiracy } }
 		}
 	}
 }
@@ -726,8 +726,8 @@ join_prev_devil_worshiper_society_effect = {
 		join_society = the_vodouns
 	}
 	else_if = {
-		limit = { PREV = { society_member_of = the_illuminati } }
-		join_society = the_illuminati
+		limit = { PREV = { society_member_of = third_romanist_conspiracy } }
+		join_society = third_romanist_conspiracy
 	}
 }
 

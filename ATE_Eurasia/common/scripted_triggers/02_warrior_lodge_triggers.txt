@@ -455,12 +455,12 @@ special_join_warrior_lodge_trigger = {
 			}
 
 			custom_tooltip = {
-				text = has_liege_vassal_or_neighbor_of_neoplatonist_religion_tt
+				text = has_liege_vassal_or_neighbor_of_folketro_religion_tt
 
 				OR = {
-					any_vassal = { OR = { religion = neoplatonist religion = nysed religion = fornsed } }
-					any_liege = { OR = { religion = neoplatonist religion = nysed religion = fornsed } }
-					any_neighbor_independent_ruler = { OR = { religion = neoplatonist religion = nysed religion = fornsed } }
+					any_vassal = { OR = { religion = folketro religion = nysed religion = fornsed } }
+					any_liege = { OR = { religion = folketro religion = nysed religion = fornsed } }
+					any_neighbor_independent_ruler = { OR = { religion = folketro religion = nysed religion = fornsed } }
 				}
 			}
 		}
@@ -470,7 +470,7 @@ special_join_warrior_lodge_trigger = {
 			}
 
 			custom_tooltip = {
-				text = has_liege_vassal_or_neighbor_of_neoplatonist_religion_tt
+				text = has_liege_vassal_or_neighbor_of_sun_king_cultist_religion_tt
 
 				OR = {
 					any_vassal = { OR = { religion = sun_king_cultist religion = chevalier } }
@@ -481,11 +481,26 @@ special_join_warrior_lodge_trigger = {
 		}
 		trigger_else_if = {
 			limit = {
+				FROM = { is_society = warrior_lodge_vieja_gloria }
+			}
+
+			custom_tooltip = {
+				text = has_liege_vassal_or_neighbor_of_vieja_gloria_religion_tt
+
+				OR = {
+					any_vassal = { OR = { religion = vieja_gloria religion = vieja_gloria_reformed } }
+					any_liege = { OR = { religion = vieja_gloria religion = vieja_gloria_reformed } }
+					any_neighbor_independent_ruler = { OR = { religion = vieja_gloria religion = vieja_gloria_reformed } }
+				}
+			}
+		}
+		trigger_else_if = {
+			limit = {
 				FROM = { is_society = warrior_lodge_jedinstvo }
 			}
 
 			custom_tooltip = {
-				text = has_liege_vassal_or_neighbor_of_neoplatonist_religion_tt
+				text = has_liege_vassal_or_neighbor_of_jedinstvo_religion_tt
 
 				OR = {
 					any_vassal = { religion = jedinstvo }

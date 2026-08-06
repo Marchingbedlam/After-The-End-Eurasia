@@ -157,8 +157,8 @@ k_fornsed = {
 	
 	landless = no
 	
-	title = "GENERAL_SECRETARY"
-	title_female = "GENERAL_SECRETARY"
+	title = "ERKEBISKOP"
+	title_female = "ERKEBISKOP"
 	foa = "FYLKIR_FOA"
 	location_ruler_title = yes 
 	
@@ -276,9 +276,9 @@ d_dvoeverie = {
 	landless = yes
 	
 	# Controls a religion
-	controls_religion = pravoslavie
+	controls_religion = dvoeverie
 	
-	religion = pravoslavie
+	religion = dvoeverie
 	
 	dignity = 200
 	
@@ -2294,6 +2294,108 @@ d_khanist_reformed = {
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
 
+d_sarnaist_reformed = {
+	color = { 192 180 15 }
+	color2 = { 255 255 255 }
+	
+	capital = 2966
+	creation_requires_capital = no
+	
+	landless = yes
+	
+	title = "HIGHEST_PRIEST"
+	title_female = "HIGHEST_PRIEST_FEMALE"
+	foa = "HIGHEST_PRIEST_FOA"
+	short_name = yes
+	
+	allow = {
+		num_of_holy_sites = 3
+		piety = 150
+		wealth = 100
+	}
+	
+	#Controls a religion
+	controls_religion = sarnaist_reformed
+	
+	religion = sarnaist_reformed
+	
+	assimilate = no
+	
+	primary = no
+	
+	dignity = 200
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
+d_koyapunem_reformed = {
+	color = { 192 180 15 }
+	color2 = { 255 255 255 }
+	
+	capital = 2951
+	creation_requires_capital = no
+	
+	landless = yes
+	
+	title = "HIGHEST_PRIEST"
+	title_female = "HIGHEST_PRIEST_FEMALE"
+	foa = "HIGHEST_PRIEST_FOA"
+	short_name = yes
+	
+	allow = {
+		num_of_holy_sites = 3
+		piety = 150
+		wealth = 100
+	}
+	
+	#Controls a religion
+	controls_religion = koyapunem_reformed
+	
+	religion = koyapunem_reformed
+	
+	assimilate = no
+	
+	primary = no
+	
+	dignity = 200
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
+d_sjotru_reformed = {
+	color = { 250 145 50 }
+	color2 = { 255 255 255 }
+	
+	capital = 187
+	creation_requires_capital = no
+	
+	landless = yes
+	
+	title = "ALLESHARJARGODI"
+	title_female = "ALLESHARJARGODI"
+	foa = "ALLESHARJARGODI_FOA"
+	short_name = yes
+	
+	allow = {
+		num_of_holy_sites = 3
+		piety = 150
+		wealth = 100
+	}
+	
+	#Controls a religion
+	controls_religion = sjotru_reformed
+	
+	religion =sjotru_reformed
+	
+	assimilate = no
+	
+	primary = no
+	
+	dignity = 200
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
 d_vieja_gloria_reformed = {
 	color = { 250 145 50 }
 	color2 = { 255 255 255 }
@@ -2356,4 +2458,59 @@ d_marcelianist = {
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 
 	dignity = 200
+}
+
+d_proletcult = {
+	color = { 200 0 0 }
+	color2 = { 255 255 255 }
+	
+	capital = 664
+	creation_requires_capital = no
+	
+	title = "GENERAL_SECRETARY"
+	title_female = "GENERAL_SECRETARY"
+	foa = "POPE_FOA"
+	short_name = yes
+	
+	# Always exists
+	landless = yes
+	
+	# Controls a religion
+	controls_religion = proletcult
+	
+	religion = proletcult
+	
+	# Cannot be held as a secondary title
+	primary = yes
+
+	assimilate = no
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+
+	dignity = 200
+}
+
+k_third_romanist = {
+	color = { 75 146 55 }
+	color2={ 220 220 0 }
+	
+	capital = 1117 # Rome
+	creation_requires_capital = no
+	
+	landless = no
+	
+	title = "PRESIDENT"
+	title_female = "PRESIDENT"
+	#foa = "PRESIDENT_FOA"
+	short_name = yes
+	
+	controls_religion = third_romanist
+	
+	religion = third_romanist
+	
+	primary = no 
+	
+	dignity = 200
+
+	dynasty_title_names = no 
 }

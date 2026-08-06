@@ -112,6 +112,8 @@ e_sanctum_imperium = {
 				provencal="Venècia"
 				palatinate="Venedig"
 				
+				holy_site = third_romanist
+				
 				b_san_marco = {}
 				b_cannaregio = {
 					venetian="Canarégio"}
@@ -2301,31 +2303,61 @@ e_sanctum_imperium = {
 				
 				holy_site = neuhumanist
 				holy_site = chronicler
-				holy_site = catholic
-				holy_site = penitant
 				holy_site = sun_king_cultist
 				holy_site = quinto
 				holy_site = nasrani
 				holy_site = ezharapallikal
 				holy_site = neoplatonist
 				holy_site = americanist
-				holy_site = apostolic
-				holy_site = celeste
 				holy_site = modernist
 				holy_site = neohellenic
+				holy_site = third_romanist
 				holy_site = nondescript_pagan
+					
+				b_fiumicino = {}
+				b_guidonia = {}
+				b_tivoli = {}
+				b_anzio = {}
+				b_velletri = {}
+				b_civitavecchia = {}
+			}
+			c_vatican = {
+				color={ 234 196 146 }
+				color2={ 255 255 255 }
+				
+
+				rhenish="Vatikan"
+				low_saxon="Vatikan"
+				ossi="Vatikan"
+				upper_saxon="Vatikan"
+				bavarian="Vatikan"
+				swabian="Vatikan"
+				austrian="Vatikan"
+				schwyzer="Vatikan"
+				luxembourger="Vatikan"
+				neapolitan="Vaticano"
+				romagnol="Vaticano"
+				sardinian="Vaticano"
+				tuscan="Vaticano"
+				umbrian="Vaticano"
+				sicilian="Vaticano"
+				venetian="Vaticano"
+				ligurian="Vaticano"
+				piedmontese="Vaticano"
+				lombard="Vaticano"
+				romansh="Vaticano"
+				palatinate="Vatikan"
+				
+				holy_site = catholic
+				holy_site = penitant
+				holy_site = apostolic
+				holy_site = celeste
 				holy_site = nondescript_christian
 					
 				b_vatican = {
 					pentarchy = mariavite
 					pentarchy = penitant
 				}
-				b_guidonia = {}
-				b_fiumicino = {}
-				b_tivoli = {}
-				b_anzio = {}
-				b_velletri = {}
-				b_civitavecchia = {}
 			}
 			c_viterbo = {
 				color={ 242 202 160 }

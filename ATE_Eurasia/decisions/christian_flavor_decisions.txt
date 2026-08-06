@@ -300,7 +300,10 @@ decisions = {
 			   religion = oasite
 			   religion = coronite
 			   religion = apostolic
-			   religion = liturginen
+			   AND = {
+			       religion = liturginen
+				   trait="school_of_st_bridget"
+			   }
 			}
 		}
 		allow = {
@@ -309,7 +312,7 @@ decisions = {
 			   religion = marcelianist
 			   religion = apparitionist
 			   religion = constitutionalist
-			   religion = penitente
+			   religion = penitant
 			   religion = memento_mori
 			   religion = mariavite
 			   religion = oasite
@@ -329,6 +332,121 @@ decisions = {
 		
 		ai_will_do = {
 			factor = 0
+		}
+	}
+	
+	celebrate_christmas = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 6
+		potential = {
+			is_playable = yes
+			age = 16
+			prisoner = no
+			NOT = {
+			   religion = seperatist
+			   #religion = orthodox
+			   #religion = oldcalendarist
+			   #religion = antipalamite
+			   #religion = pravoslavie
+			   #religion = dvoeverie
+			   #religion = old_believer
+			   #religion = dukhovnye
+			   religion = dove
+			}
+			OR = {
+			   month = 11
+			   AND = {
+			     month = 0
+				 NOT = { month = 1 }
+			   }
+			}
+			NOT = { has_character_modifier = held_christmas_timer }
+			NOT = {	has_character_flag = holding_christmas }
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		allow = {
+			war = no
+			custom_tooltip = {
+				text = UNOCCUPIED_DEMESNE_TITLE
+				hidden_tooltip = {
+					any_demesne_title = {
+						NOT = { higher_tier_than = count }
+						is_occupied = no
+					}
+				}
+			}
+			OR = {
+			   AND = {
+			       month = 11
+				   AND = {
+				      NOT = { religion = oldcalendarist }
+					  NOT = { religion = pravoslavie }
+					  NOT = { religion = dvoeverie }
+					  NOT = { religion = old_believer }
+					  NOT = { religion = dukhovnye }
+				   }
+			   }
+			   AND = {
+			       month = 0
+				   NOT = { month = 1 }
+				   OR = {
+				      religion = oldcalendarist
+					  religion = pravoslavie
+					  religion = dvoeverie
+					  religion = old_believer
+					  religion = dukhovnye
+				   }
+			   }
+			}
+			wealth = 50
+			prisoner = no
+			NOT = { is_inaccessible_trigger = yes }
+			custom_tooltip = {
+				text = is_not_busy_trigger_tooltip
+				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+		}
+		effect = {
+			set_character_flag = celebrating_christmas
+			set_character_flag = recent_minor_decision
+			set_character_flag = do_not_disturb
+				hidden_tooltip = { 
+					narrative_event = { id = christian.42 } 
+				}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOT = {
+					wealth = 300
+				}
+			}
+			modifier = {
+				factor = 0
+				trait = shy
+			}
+			modifier = {
+				factor = 0
+				NOT = { diplomacy = 10 }
+			}	
+			modifier = {
+				factor = 0
+				has_character_flag = recent_minor_decision
+				NOT = {
+					had_character_flag = {
+						flag = recent_minor_decision
+						days = 730
+					}
+				}
+			}
 		}
 	}
 	

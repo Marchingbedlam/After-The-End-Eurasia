@@ -528,3 +528,38 @@ character_event = {
 			add_character_modifier = {name = philosophic_work_done months = 24}
 		}
 	}
+	
+character_event = {
+	id = nhevent.8
+	religion = neuhumanist
+	
+	ai = yes
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	   NOR = {
+	      trait="branch_idealism"
+		  trait="branch_realism"
+		  trait="branch_existentialism"
+		  trait="branch_romanticism"
+	   }
+	}
+
+	immediate = {
+		random_list = {
+			25 = {
+				add_trait = branch_idealism
+			}
+			25 = {
+				add_trait = branch_realism
+			}
+			25 = {
+				add_trait = branch_existentialism
+			}
+			25 = {
+				add_trait = branch_romanticism
+			}
+		}
+	}
+}

@@ -1,0 +1,63 @@
+decisions={
+
+	choose_third_romanist_branch = {
+		is_high_prio = yes
+		ai = no
+		
+		potential = {
+			religion = third_romanist
+			is_playable = yes
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		allow = {
+			religion = third_romanist
+			is_playable = yes
+			piety = 50
+		}
+		
+		effect = {
+		    piety = -50
+			hidden_tooltip = {
+				character_event = { id = thirdrome.1 }		
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+	}
+	
+}
+
+title_decisions = {
+	cause_local_peasant_revolt = {
+		only_playable = yes
+		ai = no
+
+		from_potential = {
+		    society_member_of = third_romanist_conspiracy
+			is_ruler = yes
+			ai = no
+			society_rank >= 3
+		}
+		potential = {
+			NOT = { society_member_of = third_romanist_conspiracy }
+		}
+
+		allow = {
+			FROM = {
+				society_currency >= 500
+			}
+		}
+
+		effect = {
+			change_society_currency = -500
+			location = {
+				province_event = { id = TOG.999 days = 7 }
+			}
+		}
+	}
+}

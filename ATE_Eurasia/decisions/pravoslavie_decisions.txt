@@ -159,6 +159,35 @@ decisions = {
 			always = no
 		}
 	}
+	change_old_believer_branch = {
+		ai = no
+		is_high_prio = yes
+
+		potential = {
+			religion = old_believer
+			is_playable = yes
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+
+		allow = {
+			religion = old_believer
+			is_playable = yes
+			piety=50
+		}
+
+		effect = {
+		    piety=-50
+			hidden_tooltip = {
+				character_event = { id = pravoslavie.25 }				
+			}
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+	}
 	
 	create_dvoeverie_patriarchate = {
 		is_high_prio = yes
