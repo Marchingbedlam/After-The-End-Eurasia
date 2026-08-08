@@ -568,6 +568,13 @@
 	dynasty=2073073
 	religion=orthodox
 	culture=makedonian
+	trait="charismatic_negotiator"
+	trait="quick"
+	trait="kind"
+	trait="patient"
+	trait="gregarious"
+	trait="erudite"
+	trait="saint"
 	2580.1.1={birth=yes}
 	2630.1.1={death=yes}
 }
@@ -642,6 +649,11 @@
 	religion=orthodox
 	culture=makedonian
 	trait=legendary
+	trait=brilliant_strategist
+	trait=brave
+	trait=ambitious
+	trait=crusader
+	trait=zealous
 	occluded=yes
 	father=2072214
 	2065.1.1={birth=yes}
@@ -664,6 +676,11 @@
 	religion=orthodox
 	culture=makedonian
 	trait=legendary
+	trait=falconer
+	trait=wroth
+	trait=envious
+	trait=gregarious
+	trait=craven
 	occluded=yes
 	father=2072215
 	2088.1.1={birth=yes}
@@ -680,6 +697,11 @@
 	religion=neohellenic
 	culture=greek
 	trait=peasant_leader
+	trait=strong
+	trait=brave
+	trait=ruthless
+	trait=cruel
+	trait=gregarious
 	trait=legendary
 	occluded=yes
 	2098.1.1={birth=yes}
@@ -1888,7 +1910,7 @@
 2072294={ 
 	name="Skendër"
 	occluded=yes
-	dynasty=7534248
+	dynasty=7534250
 	religion=alevi
 	culture=albanian
 	trait=legendary
@@ -1904,7 +1926,7 @@
 2072295={ 
 	name="Enver"
 	occluded=yes
-	dynasty=7534248
+	dynasty=7534249
 	religion=proletcult
 	culture=albanian
 	trait=legendary

@@ -141,6 +141,20 @@ EVTDESC_SoA_510;The eight long days of Passover are finally over and it has come
 EVTOPTA_SoA_510;"Come in and dine with us, [chametz_sale.GetFirstName]!";;;;;;;;;;;;;x
 
 ##########Shvil Israel Events###########
+EVTNAME_shvil_prep;Preparing for travel;;;;;;;;;;;;;x
+EVTDESC_shvil_prep;Traveling through Shvil Israel, the longest road traversing the Holy Land from north to south, passing through the cities of Tsfat, Tiberias, Jerusalem, and Hebron, all the way to the fortress of Masada, is an important journey for a follower of the Jewish faith. As a follower, you have the opportunity to complete it, but first you must choose whether to travel on foot, as your ancestors did for 40 years in the desert, or by caravan, which will save you effort and provide you with greater safety along the way.;;;;;;;;;;;;;x
+EVTOPT_shvil_prep_cancel;Give up traveling;;;;;;;;;;;;;x
+EVTOPT_shvil_prep_humble;Humbly walk on your own two feet;;;;;;;;;;;;;x
+EVTOPT_shvil_prep_carivan;Ride a caravan;;;;;;;;;;;;;x
+EVTNAME_shvil_israel_dan;Reaching Dan;;;;;;;;;;;;;x
+EVTDESC_shvil_israel_dan;No Jew knows the full history of this city, but ancient scriptures and traditions say it was the northernmost part of Israel, where pious Jews lived in a kind of monastery. Little information about this place has survived, but it is held in high esteem among pious Jews in the Holy Land.;;;;;;;;;;;;;x
+EVTOPT_shvil_israel_dan;[Root.Religion.GetHighGodName], will humanity ever know about this place?;;;;;;;;;;;;;x
+EVTNAME_shvil_israel_yavne;Reaching Yavne;;;;;;;;;;;;;x
+EVTDESC_shvil_israel_yavne;Yavne, it was here that centuries ago the rabbis established and organized the canon of holy books which Jews to this day consider inspired and refuse to call any book outside this canon that name.;;;;;;;;;;;;;x
+EVTOPT_shvil_israel_yavne;This city has seen great things;;;;;;;;;;;;;x
+EVTNAME_shvil_israel_tel_aviv;Reaching Tel Aviv;;;;;;;;;;;;;x
+EVTDESC_shvil_israel_tel_aviv;Tel Aviv, also called Jaffa, is where, according to rabbinical books, the capital of Israel was once located, and from here, according to the Bible, the prophet Jonah sailed on his way to Tarshish.;;;;;;;;;;;;;x
+EVTOPT_shvil_israel_tel_aviv;This is a beautiful and old city;;;;;;;;;;;;;x
 EVTNAME_shvil_israel_tsfat;Reaching Tsfat;;;;;;;;;;;;;x
 EVTDESC_shvil_israel_tsfat;Ever since the fall of the Temple, Tsfat has been a religious center for Jews. Here the great scholars of the kabbalah lived and wrote, and the "Shulchan Aroch" was written right here. Capital of the Galille, the city has seen many rises and falls, and has been a cultural center for jews for many centuries.;;;;;;;;;;;;;x
 EVTOPT_shvil_israel_tsfat;How beautiful is the city of Kabbala;;;;;;;;;;;;;x
@@ -150,6 +164,12 @@ EVTOPT_shvil_israel_tiberias;Were you real my kinneret, or was it only a dream?;
 EVTNAME_shvil_israel_jerusalem;Reaching Jerusalem;;;;;;;;;;;;;x
 EVTDESC_shvil_israel_jerusalem;Al-Quds, Yerushalayim, Tzion, the City of David and the Prophets. The city that has 70 names, but none can describe it truly. Her winding streets and high walls were ancient a millennium before the Event, packed into every corner of the Old City are treasures and holy places. Atop the temple mount gleams the golden enameled Dome of the Rock, nearby stands the Western Wall of the Temple, and a quarter mile away sprawls the pilgrim-packed halls and chapels of the Holy Sepulchre. She has borne herself through countless years of battle and bloodshed, under the sandaled feet of her inhabitants lay the bones of ancient warriors and kings, some from half the world away it is said. Her people pray that Jerusalem may survive as a monument to peace and tolerance in a world plunged back into an age of religious strife and war, a true "City of Peace.";;;;;;;;;;;;;x
 EVTOPT_shvil_israel_jerusalem;If I forget you, Jerusalem, let my right hand forget its skill!;;;;;;;;;;;;;x
+EVTNAME_shvil_israel_hebron;Reaching Hebron;;;;;;;;;;;;;x
+EVTDESC_shvil_israel_hebron;Reaching Hebron;;;;;;;;;;;;;x
+EVTOPT_shvil_israel_hebron;Hebron is where, according to Jewish tradition, Moses and other Jewish patriarchs were buried in the Cave of Machpelah. Abraham's Oak is also located here, and it was here that Abraham himself, whom God promised numerous descendants who would rule the Promised Land, once camped.;;;;;;;;;;;;;x
+EVTNAME_shvil_israel_masada;Reaching Masada;;;;;;;;;;;;;x
+EVTDESC_shvil_israel_masada;Masada, the ancient fortress built by the pious high priest Jonathan Maccabeus, later served as a stronghold for the Zealots who rebelled against Roman rule. Although Masada is now a ruin, it remains a symbol for your fellow believers of fighting for God to the last drop of blood, and some Jewish warriors still swear here today that Masada will never be conquered again. This is the end of your journey; you have reached its goal and achieved your goal.;;;;;;;;;;;;;x
+EVTOPT_shvil_success;Thank you, [Root.Religion.GetHighGodName];;;;;;;;;;;;;x
 
 #Yeshiva event chain
 EVTDESC_yeshiva_1;A New letter has arrived from the Rosh Yeshiva: you have been accepted as a student! Soon you will pack your bags and begin your studying under great scholars of Talmud.;;;;;;;;;;;;;x
