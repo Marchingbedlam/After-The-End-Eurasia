@@ -1305,8 +1305,9 @@ narrative_event = {
 			culture = ROOT
 			religion = ROOT
 			female = yes
-			lowborn = yes
+			dynasty = NONE
 			age = 40
+			random_traits = yes
 			trait = kind
 			trait = pious
 			trait = chaste
@@ -1320,7 +1321,8 @@ narrative_event = {
 			religion = ROOT
 			female = yes
 			age = 10
-			lowborn = yes
+			dynasty = NONE
+			random_traits = yes
 		}
 		new_character = {
 		   save_event_target_as = daughter_of_mother
@@ -1330,7 +1332,8 @@ narrative_event = {
 			religion = ROOT
 			female = no
 			age = 8
-			lowborn = yes
+			dynasty = NONE
+			random_traits = yes
 		}
 		new_character = {
 		   save_event_target_as = son_of_mother
@@ -1378,7 +1381,8 @@ narrative_event = {
 			trait = pious
 			trait = chaste
 			trait = wounded
-			lowborn = yes
+			random_traits = yes
+			dynasty = NONE
 		}
 		new_character = {
 		   save_event_target_as = mother_of_children
@@ -1391,7 +1395,8 @@ narrative_event = {
 			religion = ROOT
 			female = yes
 			age = 10
-			lowborn = yes
+			dynasty = NONE
+			random_traits = yes
 		}
 		new_character = {
 		   save_event_target_as = daughter_of_mother
@@ -1401,7 +1406,8 @@ narrative_event = {
 			religion = ROOT
 			female = no
 			age = 8
-			lowborn = yes
+			dynasty = NONE
+			random_traits = yes
 		}
 		new_character = {
 		   save_event_target_as = son_of_mother
@@ -1463,6 +1469,7 @@ long_character_event = { #Meeting hulder
 			trait="quick"
 			trait="attractive"
 			trait="kind"
+			random_traits = yes
 		}
 	}
 }
@@ -1673,6 +1680,7 @@ character_event = {
 			culture = ROOT
 			religion = ROOT
 			age = 5
+			random_traits = yes
 		}
 	}
 	
@@ -1684,6 +1692,7 @@ character_event = {
 			dynasty = ROOT
 			age = 5
 			trait="bastard"
+			random_traits = yes
 		}
 		new_character = {
 		   set_father = ROOT
@@ -1779,6 +1788,7 @@ narrative_event = {
 			trait = kind
 			trait = honest
 			trait = poet
+			random_traits = yes
 			attributes = {
 				martial = 8
 				diplomacy = 8

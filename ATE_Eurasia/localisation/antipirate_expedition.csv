@@ -1,0 +1,53 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;x
+anti_pirate_expedition;Organise Anti-Pirate Expedition;;;;;;;;;;;;;x
+anti_pirate_expedition_desc;In some religions, pirates are particularly stigmatized not only as enemies of humanity (hosti humani generis), but as the only kind of sinners who pollute the open seas. In some beliefs, pirates even strip themselves of their humanity through piracy, becoming demons incarnate. As a follower of a faith that particularly condemns this crime, you can organize an anti-piracy expedition, not only increasing the security of your domain but also gaining merit with [Root.Religion.GetHighGodName].;;;;;;;;;;;;;x
+antipirate_expedition_text;You begin preparations for an anti-pirate expedition.;;;;;;;;;;;;;x
+EVTDESC_antipirate_1;As the organizer of an anti-pirate expedition, you must determine not only its start date, but also its duration.;;;;;;;;;;;;;x
+EVTOPTA_antipirate_1;Organize a long expedition;;;;;;;;;;;;;x
+EVTOPTB_antipirate_1;Organize a medium-length expedition;;;;;;;;;;;;;x
+EVTOPTC_antipirate_1;Organize a short expedition;;;;;;;;;;;;;x
+short_expedition_text;Expedition will last one month;;;;;;;;;;;;;x
+long_expedition_text;Expedition will last six months;;;;;;;;;;;;;x
+normal_expedition_text;Expedition will last three months;;;;;;;;;;;;;x
+EVTDESC_antipirate_2;All preparations are finalized. Supplies for the expedition have been purchased, and the sailors have already said goodbye to their families. It's time to set out on a journey in which, as a just judge, you will defeat the enemies of humanity.;;;;;;;;;;;;;x
+EVTOPTA_antipirate_2;Oh, adventure!;;;;;;;;;;;;;x
+EVTDESC_antipirate_3;You reach shore and disembark from this ship, and the sailors greet their families after a long absence. The anti-piracy expedition is over.;;;;;;;;;;;;;x
+EVTOPTA_antipirate_3;Nice;;;;;;;;;;;;;x
+EVTDESC_antipirate_4;Captain! We see pirates on the horizon!;;;;;;;;;;;;;x
+EVTOPTA_antipirate_4;Attack!;;;;;;;;;;;;;x
+EVTOPTB_antipirate_4;Don't attack! Too Risky.;;;;;;;;;;;;;x
+EVTDESC_antipirate_5;You attack a pirate ship and engage them in combat. Now your life depends solely on what [Root.Religion.GetHighGodName] decrees.;;;;;;;;;;;;;x
+EVTOPTA_antipirate_5;[Root.Religion.GetHighGodName], save me!;;;;;;;;;;;;;x
+EVTDESC_antipirate_6;Your sailors report that they see a makeshift raft with survivors in the distance.;;;;;;;;;;;;;x
+EVTOPTA_antipirate_6;Rescue the castaways and take them to your court;;;;;;;;;;;;;x
+EVTOPTB_antipirate_6;Rescue the castaways and take them to the nearest port;;;;;;;;;;;;;x;
+EVTOPTC_antipirate_6;Ignore the raft;;;;;;;;;;;;;x
+EVTDESC_antipirate_7;While sailing, you see a ship without the flag of any country, but also without any signs that it is a pirate ship.;;;;;;;;;;;;;x
+EVTOPTA_antipirate_7;Exercise your right of visit and search;;;;;;;;;;;;;x
+EVTOPTB_antipirate_7;Ignore this ship;;;;;;;;;;;;;x
+antipirate_7_A;meeting common sailors;;;;;;;;;;;;;x
+antipirate_7_B;meeting smugglers;;;;;;;;;;;;;x
+antipirate_7_C;meeting masked pirates;;;;;;;;;;;;;x
+antipirate_7_D;meeting merchants from unknown kingdom;;;;;;;;;;;;;x
+EVTDESC_antipirate_8;You stop the ship and visit it. It turns out they're ordinary merchants traveling without a flag. You fine them and let them go.;;;;;;;;;;;;;x
+EVTOPTA_antipirate_8;Better a merchant than a pirate;;;;;;;;;;;;;x
+EVTDESC_antipirate_9;You stop the ship and visit it. At first, you think they're just ordinary merchants, but your men find goods hidden in secret places: some subject to high tariffs, others outright forbidden by many local laws. The captain offers to pay you a small "license fee" in exchange for letting them go.;;;;;;;;;;;;;x
+EVTOPTA_antipirate_9;Collect the "fee" and let them go;;;;;;;;;;;;;x
+EVTOPTB_antipirate_9;Arrest them and confiscate the ship.;;;;;;;;;;;;;x
+EVTDESC_antipirate_10;As you approach, the ship returns fire on its own ship. Now you know they are pirates after all, and a fight awaits.;;;;;;;;;;;;;x
+EVTDESC_antipirate_11;They appear to be merchants, but definitely from a country you don't know, a distant land. Because of this, you abandon your plans to fine them, especially since they're offering you such lucrative trade offers.;;;;;;;;;;;;;x
+EVTOPTA_antipirate_11;Buy some artifact from them;;;;;;;;;;;;;x
+EVTOPTB_antipirate_11;Offer one of them a job at your court;;;;;;;;;;;;;x
+EVTOPTC_antipirate_11;Let them go;;;;;;;;;;;;;x
+EVTDESC_antipirate_12;While sailing, you meet the captain of another ship, who tells you about a wrecked merchant galleon, whose cargo contained vast treasures, which washed ashore on a nearby shore. The sailors say it's a lie and that it's not worth wasting time searching for it.;;;;;;;;;;;;;x
+EVTOPTA_antipirate_12;Look for the treasure;;;;;;;;;;;;;x
+EVTOPTB_antipirate_12;Listen to the sailors;;;;;;;;;;;;;x
+antipirate_12_A;not finding anything;;;;;;;;;;;;;x
+antipirate_12_B;finding a little treasure;;;;;;;;;;;;;x
+antipirate_12_C;finding a big treasure;;;;;;;;;;;;;x
+EVTDESC_antipirate_13;After several days of searching, you find no trace of the treasure. It's possible that someone else took the treasure, or that the ship's captain made it up.;;;;;;;;;;;;;x
+EVTOPTA_antipirate_13;Oh no!;;;;;;;;;;;;;x
+EVTDESC_antipirate_14;After several days of searching, you find the treasure, proving to the crew that your sixth sense was right.;;;;;;;;;;;;;x
+EVTOPTA_antipirate_14;Nice;;;;;;;;;;;;;x
+EVTDESC_antipirate_15;A great storm is brewing. Crates (and sometimes people) are being thrown from one part of the ship to the other. You and the other sailors are hoping that nothing and no one will fall overboard during this terrible time.;;;;;;;;;;;;;x
+EVTOPTA_antipirate_15;[Root.Religion.GetHighGodName], save me and my ship!;;;;;;;;;;;;;x

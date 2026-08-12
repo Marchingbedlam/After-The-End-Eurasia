@@ -1,0 +1,626 @@
+namespace = antipirate
+
+character_event = {
+	id = antipirate.1	
+	desc = EVTDESC_antipirate_1
+	picture = GFX_evt_merchant_ship_at_sea_republic
+	is_triggered_only = yes
+	
+	immediate = {
+	  	add_character_modifier = {
+			name = antipirate_expedition_timer
+			duration = 1825
+			hidden = yes
+		}
+	}
+
+	option = { #Long Expedition
+		name = EVTOPTA_antipirate_1
+		wealth = -100
+		piety = 50
+		custom_tooltip = {
+				text = long_expedition_text
+				hidden_tooltip = {
+					character_event = { id = antipirate.2 days = 25 } 
+					set_character_flag = long_antipirate_expedition
+				}
+		}
+	}
+
+	option = { #Normal Expedition
+		name = EVTOPTB_antipirate_1
+		wealth = -50
+		piety = 25
+		custom_tooltip = {
+				text = normal_expedition_text
+				hidden_tooltip = {
+					character_event = { id = antipirate.2 days = 20 } 
+					set_character_flag = normal_antipirate_expedition
+				}
+		}
+	}
+
+	option = { #Short Expedition
+		name = EVTOPTC_antipirate_1
+		wealth = -25
+		piety = 10
+		custom_tooltip = {
+				text = short_expedition_text
+				hidden_tooltip = {
+					character_event = { id = antipirate.2 days = 15 } 
+					set_character_flag = short_antipirate_expedition
+				}
+		}
+	}
+}
+
+character_event = {
+	id = antipirate.2
+	desc = EVTDESC_antipirate_2
+	picture = GFX_evt_merchant_ship_at_sea_republic
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_antipirate_2
+		add_trait="travelling"
+		hidden_tooltip = {
+		if = {
+		  limit = { has_character_flag = long_antipirate_expedition }
+		  character_event = { id = antipirate.4 days = 10 } 
+		  random_list = { #Day 25
+		     20 = { character_event = { id = antipirate.6 days = 25 } }
+			 40 = { character_event = { id = antipirate.7 days = 25 } }
+			 25 = { character_event = { id = antipirate.15 days = 25 } }
+			 15 = { character_event = { id = antipirate.12 days = 25 } }
+		  }
+		  character_event = { id = antipirate.4 days = 40 } 
+		  random_list = { #Day 60
+		     20 = { character_event = { id = antipirate.6 days = 60 } }
+			 40 = { character_event = { id = antipirate.7 days = 60 } }
+			 25 = { character_event = { id = antipirate.15 days = 60 } }
+			 15 = { character_event = { id = antipirate.12 days = 60 } }
+		  }
+		  character_event = { id = antipirate.4 days = 80 } 
+		  random_list = { #Day 100
+		     20 = { character_event = { id = antipirate.6 days = 100 } }
+			 40 = { character_event = { id = antipirate.7 days = 100 } }
+			 25 = { character_event = { id = antipirate.15 days = 100 } }
+			 15 = { character_event = { id = antipirate.12 days = 100 } }
+		  }
+		  character_event = { id = antipirate.4 days = 120 } 
+		  random_list = { #Day 135
+		     20 = { character_event = { id = antipirate.6 days = 135 } }
+			 40 = { character_event = { id = antipirate.7 days = 135 } }
+			 25 = { character_event = { id = antipirate.15 days = 135 } }
+			 15 = { character_event = { id = antipirate.12 days = 135 } }
+		  }
+		  character_event = { id = antipirate.4 days = 150 } 
+		  random_list = { #Day 170
+		     20 = { character_event = { id = antipirate.6 days = 170 } }
+			 40 = { character_event = { id = antipirate.7 days = 170 } }
+			 25 = { character_event = { id = antipirate.15 days = 170 } }
+			 15 = { character_event = { id = antipirate.12 days = 170 } }
+		  }
+		  character_event = { id = antipirate.3 days = 190 } 
+		}
+		if = {
+		  limit = { has_character_flag = normal_antipirate_expedition }
+		  character_event = { id = antipirate.4 days = 10 } 
+		  random_list = { #Day 25
+		     20 = { character_event = { id = antipirate.6 days = 25 } }
+			 40 = { character_event = { id = antipirate.7 days = 25 } }
+			 25 = { character_event = { id = antipirate.15 days = 25 } }
+			 15 = { character_event = { id = antipirate.12 days = 25 } }
+		  }
+		  character_event = { id = antipirate.4 days = 40 } 
+		  random_list = { #Day 60
+		     20 = { character_event = { id = antipirate.6 days = 60 } }
+			 40 = { character_event = { id = antipirate.7 days = 60 } }
+			 25 = { character_event = { id = antipirate.15 days = 60 } }
+			 15 = { character_event = { id = antipirate.12 days = 60 } }
+		  }
+		  character_event = { id = antipirate.4 days = 80 } 
+		  character_event = { id = antipirate.3 days = 92 } 
+		}
+		if = {
+		  limit = { has_character_flag = short_antipirate_expedition }
+		  character_event = { id = antipirate.4 days = 10 } 
+		  random_list = { #Day 25
+		     20 = { character_event = { id = antipirate.6 days = 25 } }
+			 40 = { character_event = { id = antipirate.7 days = 25 } }
+			 25 = { character_event = { id = antipirate.15 days = 25 } }
+			 15 = { character_event = { id = antipirate.12 days = 25 } }
+		  }
+		  character_event = { id = antipirate.3 days = 33 } 
+		}
+		}
+	}
+}
+
+character_event = { #Return
+	id = antipirate.3
+	desc = EVTDESC_antipirate_3
+	picture = GFX_evt_merchant_ship_at_sea_republic
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_antipirate_3
+		remove_trait="travelling"
+		clr_character_flag = on_antipirate_expedition
+		clr_character_flag = do_not_disturb
+		clr_character_flag = long_antipirate_expedition
+		clr_character_flag = normal_antipirate_expedition
+		clr_character_flag = short_antipirate_expedition
+	}
+}
+
+character_event = { #Ships on the horizon
+	id = antipirate.4
+	desc = EVTDESC_antipirate_4
+	picture = GFX_evt_merchant_ship_at_sea_republic
+	is_triggered_only = yes
+
+	option = { #Attack
+		name = EVTOPTA_antipirate_4
+		hidden_tooltip = {
+		   random_list = {
+		      33 = {
+			     random_list = {
+				    5 = { set_character_flag = big_pirates_attack } #Big Pirates
+					80 = { set_character_flag = medium_pirates_attack } #Medium Pirates
+					15 = { set_character_flag = small_pirates_attack } #Small Pirates
+				 }
+			  }
+		      33 = {
+			     random_list = {
+				    30 = { set_character_flag = big_pirates_attack } #Big Pirates
+					50 = { set_character_flag = medium_pirates_attack } #Medium Pirates
+					20 = { set_character_flag = small_pirates_attack } #Small Pirates
+				 }
+			  }
+			  34 = {
+				 random_list = {
+				    40 = { set_character_flag = big_pirates_attack } #Big Pirates
+					20 = { set_character_flag = medium_pirates_attack } #Medium Pirates
+					40 = { set_character_flag = small_pirates_attack } #Small Pirates
+				 }  
+			  }
+		   }
+		   character_event = { id = antipirate.5 }
+		}
+	}
+	
+	option = { #Too Risky
+		name = EVTOPTB_antipirate_4
+		prestige = -50
+	    random_list = {
+		   50 = { add_trait="craven" }
+		   50 = { }
+		}
+	}
+}
+
+character_event = {
+	id = antipirate.5
+	desc = EVTDESC_antipirate_5
+	picture = GFX_evt_merchant_ship_at_sea_republic
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_antipirate_5
+		prestige = 50
+		if = {
+		  limit = { has_character_flag = big_pirates_attack }
+		  random_list = {
+		    25 = { death = { death_reason = death_missing } }
+			25 = { add_trait="maimed" wealth = 60 }
+			25 = { add_trait="wounded"  wealth = 60 }
+			25 = { wealth = 60 }
+		  }
+		}
+		if = {
+		  limit = { has_character_flag = medium_pirates_attack }
+		  random_list = {
+		    15 = { death = { death_reason = death_missing } }
+			10 = { add_trait="maimed" wealth = 30 }
+			25 = { add_trait="wounded" wealth = 30 }
+			50 = { wealth = 30 }
+		  }
+		}
+		if = {
+		  limit = { has_character_flag = small_pirates_attack }
+		  random_list = {
+		    10 = { death = { death_reason = death_missing } }
+			10 = { add_trait="maimed"  wealth = 10  }
+			30 = { add_trait="wounded"  wealth = 10  }
+			50 = { wealth = 10 }
+		  }
+		}
+		clr_character_flag = big_pirates_attack
+		clr_character_flag = medium_pirates_attack
+		clr_character_flag = small_pirates_attack
+	}
+}
+
+character_event = {
+	id = antipirate.6
+	desc = EVTDESC_antipirate_6
+	picture = GFX_evt_merchant_ship_at_sea_republic
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_antipirate_6
+		piety = 50
+		wealth = -20
+		random_list = {
+		   20 = { add_trait="charitable" }
+		   10 = { add_trait="gregarious" }
+		   70 = { }
+		}
+		hidden_tooltip = {
+		 random_list = {
+		   40 = { #Normal Women
+		      create_character = {
+			       random_traits = yes
+			       dynasty = NONE
+			       religion = ROOT
+			       culture = ROOT
+			       female = yes
+			       age = 22
+		      }
+		   }
+		   40 = { #Normal Men
+		      create_character = {
+			       random_traits = yes
+			       dynasty = NONE
+			       religion = ROOT
+			       culture = ROOT
+			       female = no
+			       age = 22
+		      }
+		   }
+		   5 = { #Quick Women
+			  create_character = {
+			       random_traits = yes
+			       dynasty = NONE
+			       religion = ROOT
+			       culture = ROOT
+			       female = yes
+			       age = 22
+				   trait="quick"
+		      }   
+		   }
+		   5 = { #Quick Male
+		   	   create_character = {
+			       random_traits = yes
+			       dynasty = NONE
+			       religion = ROOT
+			       culture = ROOT
+			       female = no
+			       age = 22
+				   trait="quick"
+		      }  
+		   }
+		   5 = { #Genius Male
+		   	   create_character = {
+			       random_traits = yes
+			       dynasty = NONE
+			       religion = ROOT
+			       culture = ROOT
+			       female = no
+			       age = 22
+				   trait="genius"
+		      }  
+		   }
+		   5 = { #Genius Female
+		      create_character = {
+			       random_traits = yes
+			       dynasty = NONE
+			       religion = ROOT
+			       culture = ROOT
+			       female = yes
+			       age = 22
+				   trait="genius"
+		      }  
+		   }
+		  }
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_antipirate_6
+		piety = 25
+		prestige = 25
+	}
+	
+	option = {
+		name = EVTOPTC_antipirate_6
+		piety = -50
+		random_list = {
+		  25 = { add_trait="greedy" }
+		  50 = { add_trait="cruel" }
+		  25 = { add_trait="ruthless" }
+		}
+	}
+}
+
+character_event = {
+	id = antipirate.7
+	desc = EVTDESC_antipirate_7
+	picture = GFX_evt_merchant_ship_at_sea_republic
+	is_triggered_only = yes
+
+	
+	option = {
+		name = EVTOPTA_antipirate_7
+		random_list = {
+		    40 = { #Noone interesting
+			  custom_tooltip = { text = antipirate_7_A }
+		      character_event = { id = antipirate.8 } 
+			}
+			30 = { #Smugglers
+			  custom_tooltip = { text = antipirate_7_B }
+		      character_event = { id = antipirate.9 } 
+			}
+			15 = { #Pirates!
+			  custom_tooltip = { text = antipirate_7_C }
+			  hidden_tooltip = {
+			     	50 = { set_character_flag = medium_pirates_attack } #Medium Pirates
+					50 = { set_character_flag = small_pirates_attack } #Small Pirates
+			  }
+		      character_event = { id = antipirate.10 } 
+			}
+			15 = { #Merchants from Far Kingdom
+			  custom_tooltip = { text = antipirate_7_D }
+		      character_event = { id = antipirate.11 } 
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_antipirate_6
+		prestige = -50
+	}
+}
+
+character_event = {
+	id = antipirate.8
+	desc = EVTDESC_antipirate_8
+	picture = GFX_evt_merchant_ship_at_sea_republic
+	is_triggered_only = yes
+
+	
+	option = {
+		name = EVTOPTA_antipirate_8
+		wealth = 10
+	}
+}
+
+character_event = {
+	id = antipirate.9
+	desc = EVTDESC_antipirate_9
+	picture = GFX_evt_merchant_ship_at_sea_republic
+	is_triggered_only = yes
+	
+	option = { #Take a bribe
+		name = EVTOPTA_antipirate_9
+		wealth = 10
+		prestige = -25
+		random_list = {
+		   90 = { add_trait="arbitrary" }
+		   10 = { }
+		}
+	}
+	
+	option = { #Arrest them!
+		name = EVTOPTB_antipirate_9
+		wealth = 50
+		prestige = 25
+		random_list = {
+		   20 = { add_trait="ruthless" }
+		   50 = { add_trait="just" }
+		   30 = { }
+		}
+	}
+}
+
+character_event = {
+	id = antipirate.10
+	desc = EVTDESC_antipirate_10
+	picture = GFX_evt_merchant_ship_at_sea_republic
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_antipirate_5
+		if = {
+		  limit = { has_character_flag = medium_pirates_attack }
+		  random_list = {
+		    15 = { death = { death_reason = death_missing } }
+			10 = { add_trait="maimed" wealth = 30 }
+			25 = { add_trait="wounded" wealth = 30 }
+			50 = { wealth = 30 }
+		  }
+		}
+		if = {
+		  limit = { has_character_flag = small_pirates_attack }
+		  random_list = {
+		    10 = { death = { death_reason = death_missing } }
+			10 = { add_trait="maimed"  wealth = 10  }
+			30 = { add_trait="wounded"  wealth = 10  }
+			50 = { wealth = 10 }
+		  }
+		}
+		clr_character_flag = medium_pirates_attack
+		clr_character_flag = small_pirates_attack
+	}
+}
+
+character_event = {
+	id = antipirate.11
+	desc = EVTDESC_antipirate_11
+	picture = GFX_evt_merchant_ship_at_sea_republic
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_antipirate_11
+		wealth = -25
+	}
+	
+	option = { 
+		name = EVTOPTB_antipirate_11
+		if = { #Americanist Merchants
+		   limit = { OR = { religion = glorian religion = valinorist religion = sun_king_cultist religion = chevalier} }
+		    create_character = {
+			       random_traits = yes
+			       dynasty = NONE
+			       religion = americanist
+			       culture = yankee
+			       female = yes
+			       age = 22
+		      }
+		}
+		if = { #Brasilian Merchants
+		   limit = { OR = { religion = quinto religion = vieja_gloria religion = vieja_gloria_reformed } }
+		   random_list = {
+		   70 = {
+		   create_character = {
+			       random_traits = yes
+			       dynasty = NONE
+			       religion = apostolic
+			       culture = brasilian
+			       female = yes
+			       age = 28
+				   trait="midas_touched"
+				   trait="poet"
+				   trait="architect"
+		   }
+		   }
+		   30 = {
+		   create_character = {
+			       random_traits = yes
+			       dynasty = NONE
+			       religion = modernist
+			       culture = brasilian
+			       female = yes
+			       age = 28
+				   trait="midas_touched"
+				   trait="poet"
+				   trait="architect"
+		   }
+		   }
+		   }
+		}
+	}
+	
+	option = { 
+		name = EVTOPTC_antipirate_11
+		hidden_tooltip = {
+		   prestige = -1
+		}
+	}
+}
+
+character_event = {
+	id = antipirate.12
+	desc = EVTDESC_antipirate_12
+	picture = GFX_evt_merchant_ship_at_sea_republic
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_antipirate_12
+		prestige = -50
+		random_list = {
+			60 = { #Nothing founded
+			  custom_tooltip = { text = antipirate_12_A }
+		      character_event = { id = antipirate.13 } 
+			}
+			25 = { #Founded small treasure
+			  custom_tooltip = { text = antipirate_12_B }
+			  set_character_flag = antipirate_small_traesure
+		      character_event = { id = antipirate.14 } 
+			}
+			15 = { #Founded big treasure
+			  custom_tooltip = { text = antipirate_12_C }
+			  set_character_flag = antipirate_big_traesure
+		      character_event = { id = antipirate.14 } 
+			}
+		}
+		random_list = {
+		   30 = { add_trait="trusting" }
+		   20 = { add_trait="ambitious" }
+		   50 = { }
+		}
+	}
+	
+	option = { 
+		name = EVTOPTB_antipirate_12
+		random_list = {
+		   30 = { add_trait="content" }
+		   20 = { add_trait="slothful" }
+		   50 = { }
+		}
+		hidden_tooltip = {
+		   prestige = 1
+		}
+	}
+}
+
+character_event = {
+	id = antipirate.13
+	desc = EVTDESC_antipirate_13
+	picture = GFX_evt_merchant_ship_at_sea_republic
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_antipirate_13
+		prestige = -50
+	}
+}
+
+
+character_event = {
+	id = antipirate.14
+	desc = EVTDESC_antipirate_14
+	picture = GFX_evt_merchant_ship_at_sea_republic
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_antipirate_14
+		if = {
+		   limit = { has_character_flag = antipirate_small_traesure }
+		   prestige = 50
+		   wealth = 30
+		   clr_character_flag = antipirate_small_traesure
+		}
+		if = {
+		   limit = { has_character_flag = antipirate_big_traesure }
+		   prestige = 50
+		   wealth = 100
+		   clr_character_flag = antipirate_big_traesure
+		}
+	}
+}
+
+character_event = {
+	id = antipirate.15
+	desc = EVTDESC_antipirate_15
+	picture = GFX_evt_merchant_ship_at_sea_republic
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_antipirate_15
+		random_list = {
+		    10 = { death = { death_reason = death_missing } }
+			30 = { add_trait="wounded" }
+			70 = { }
+		}
+		random_list = {
+		    20 = { }
+			20 = { wealth = -5 }
+			20 = { wealth = -10 }
+			20 = { wealth = -25 }
+			20 = { wealth = -50 }
+		}
+	}
+}
+

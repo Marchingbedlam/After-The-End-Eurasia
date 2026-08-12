@@ -62,22 +62,22 @@ targeted_decisions = {
 					#join_society = monastic_order_miaphysite
 				#}
 			#}
-			#if = {
-				#limit = { 
-					#is_in_society = no
-					#OR = {
-						#religion = insular
-						#AND = {
-							#is_heretic = no
-							#religion = insular_heresy
-						#}
-					#}
-				#}
-				#custom_tooltip = { text = cenobitic_tooltip_vows_monk_joins_society }
-				#hidden_tooltip = { 
-					#join_society = monastic_order_insular
-				#}
-			#}
+			if = {
+				limit = { 
+					is_in_society = no
+					OR = {
+						religion = insular
+						AND = {
+							is_heretic = no
+							religion = insular_heresy
+						}
+					}
+				}
+				custom_tooltip = { text = cenobitic_tooltip_vows_monk_joins_society }
+				hidden_tooltip = { 
+					join_society = monastic_order_insular
+				}
+			}
 			}
 	
 		ai_will_do = {
@@ -170,22 +170,22 @@ targeted_decisions = {
 					#join_society = monastic_order_miaphysite
 				#}
 			#}
-			#if = {
-				#limit = { 
-					#is_in_society = no
-					#OR = {
-						#religion = insular
-						#AND = {
-							#is_heretic = no
-							#religion = insular_heresy
-						#}
-					#}
-				#}
-				#custom_tooltip = { text = cenobitic_tooltip_vows_monk_joins_society }
-				#hidden_tooltip = { 
-					#join_society = monastic_order_insular
-				#}
-			#}
+			if = {
+				limit = { 
+					is_in_society = no
+					OR = {
+						religion = insular
+						AND = {
+							is_heretic = no
+							religion = insular_heresy
+						}
+					}
+				}
+				custom_tooltip = { text = cenobitic_tooltip_vows_monk_joins_society }
+				hidden_tooltip = { 
+					join_society = monastic_order_insular
+				}
+			}
 			}
 	
 		ai_will_do = {

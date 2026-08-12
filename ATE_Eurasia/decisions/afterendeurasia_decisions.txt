@@ -1550,7 +1550,90 @@ decisions = {
 			}
 		}
 	}
-
+	
+	anti_pirate_expedition = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 3
+		potential = {
+			is_playable = yes
+			is_adult = yes
+			prisoner = no
+			any_realm_province = {
+				is_coastal = yes
+			}
+			OR = {
+			   religion = glorian
+			   religion = quinto
+			   religion = valinorist
+			   religion = sun_king_cultist 
+			   religion = chevalier
+			   religion = vieja_gloria
+			   religion = vieja_gloria_reformed
+			}
+			NOT = {	has_character_flag = on_antipirate_expedition }
+			NOT = {	has_character_modifier = antipirate_expedition_timer }
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+			NOT = { government = pirate_government }
+		}
+		allow = {
+			war = no
+			custom_tooltip = {
+				text = UNOCCUPIED_DEMESNE_TITLE
+				hidden_tooltip = {
+					any_demesne_title = {
+						NOT = { higher_tier_than = count }
+						is_occupied = no
+					}
+				}
+			}
+			prisoner = no
+			NOT = { is_inaccessible_trigger = yes }
+			custom_tooltip = {
+				text = is_not_busy_trigger_tooltip
+				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+		}
+		effect = {
+			set_character_flag = on_antipirate_expedition
+			set_character_flag = do_not_disturb
+			custom_tooltip = {
+				text = antipirate_expedition_text
+				hidden_tooltip = {
+					character_event = { id = antipirate.1 days = 1 } 
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOT = {
+					wealth = 100
+				}
+			}
+			modifier = {
+				factor = 0
+				trait = craven
+			}	
+			modifier = {
+				factor = 0
+				has_character_flag = recent_minor_decision
+				NOT = {
+					had_character_flag = {
+						flag = recent_minor_decision
+						days = 730
+					}
+				}
+			}
+		}
+	} 
 }
 targeted_decisions = {						
 	navjote = {
