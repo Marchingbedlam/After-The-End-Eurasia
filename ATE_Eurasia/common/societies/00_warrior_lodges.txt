@@ -9068,7 +9068,8 @@ warrior_lodge_vieja_gloria = {
 			AND = {
 				NOT = { religion = vieja_gloria }
 				NOT = { religion = vieja_gloria_reformed }
-				NOT = { religion = nysed 				NOT = { trait = zealous }
+				NOT = { religion = nysed }
+				NOT = { trait = zealous }
 			}
 		}
 	}
