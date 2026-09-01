@@ -823,9 +823,6 @@ character_event = {
 		clr_character_flag = do_not_disturb
 		clr_character_flag = recent_minor_decision
 		set_character_flag = ashura_fast
-	}
-	
-	immediate = {
 		hidden_tooltip = { character_event = { id = islamate.25 days = 40 } }
 	}
 	
