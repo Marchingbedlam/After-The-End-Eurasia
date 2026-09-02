@@ -1613,3 +1613,30 @@ character_event = {
 		}
 	}
 }
+
+#Stop pilgrimage / Clears all flags if need be
+character_event = {
+    id = HF.41480
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+    	remove_trait = on_pilgrimage
+        clr_character_flag = do_not_disturb
+        clr_character_flag = pilgrimage_to_canterbury
+        clr_character_flag = pilgrimage_to_jerusalem
+        clr_character_flag = pilgrimage_to_koln
+        clr_character_flag = pilgrimage_to_rome
+        clr_character_flag = pilgrimage_to_santiago
+        clr_character_flag = pilgrimage_to_constantinople
+        clr_character_flag = pilgrimage_to_axum
+        clr_character_flag = pilgrimage_to_antioch
+        clr_character_flag = abominable_pilgrimage
+        clr_character_flag = preparing_pilgrimage
+        clr_character_flag = activated_pilgrimage
+        clr_character_flag = cold_saintly_pilgrimage
+        clr_character_flag = mild_saintly_pilgrimage
+        clr_character_flag = exotic_saintly_pilgrimage
+        clr_character_flag = generic_saintly_pilgrimage
+    }
+}

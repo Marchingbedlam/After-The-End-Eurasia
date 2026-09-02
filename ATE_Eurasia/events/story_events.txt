@@ -566,7 +566,7 @@ narrative_event = {
 		custom_tooltip = {
 			text = EVTOPTB_story6_TOOLTIP
 			FROM = {
-				letter_event = { id = story.12 days = 3 }
+				letter_event = { id = story.13 days = 3 }
 			}
 		}
 	}
@@ -587,7 +587,7 @@ letter_event = {
 
 #respone that declined the offer
 letter_event = {
-	id = story.12
+	id = story.13
 	desc = EVTDESC_Story8
 
 	is_triggered_only = yes

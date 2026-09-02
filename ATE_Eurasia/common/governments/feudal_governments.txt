@@ -42,20 +42,16 @@ feudal_governments = {
 				culture_group = rom
 				culture = pavee
 			}
-			NOT = { #Ain't a Communist derived religion
-				OR = {
-					religion = proletcult
-					religion = jedinstvo
-				}
+			NOR = { #Ain't a Communist derived religion
+				religion = proletcult
+				religion = jedinstvo
 			}
-			NOT = {
-			    OR = {
-				   	religion = jacobin
-					religion = constitutionalist
-					religion = leveller
-					religion = genesian
-					has_religion_feature = religion_feature_communal
-				}
+			NOR = {
+			    religion = jacobin
+				religion = constitutionalist
+				religion = leveller
+				religion = genesian
+				has_religion_feature = religion_feature_communal
 			}
 			NAND = { #Is not a Tibetan Buddhist
 				culture_group = tibetan
@@ -1240,18 +1236,13 @@ feudal_governments = {
 		frame_suffix = "_communal"
 		potential = {
 			OR = {
-				AND = {
-					OR = {	
-						religion = proletcult
-						religion = jedinstvo
-						religion = dukhovnye
-						religion = neotondrakian
-						religion = leveller
-						religion = genesian
-						has_religion_feature = religion_feature_communal
-					}
-					#higher_tier_than = BARON
-				}
+				religion = proletcult
+				religion = jedinstvo
+				religion = dukhovnye
+				religion = neotondrakian
+				religion = leveller
+				religion = genesian
+				has_religion_feature = religion_feature_communal
 			}
 			NOT = { is_government_potential = roman_imperial_government }
 			NOT = { is_government_potential = order_government }
