@@ -2378,7 +2378,7 @@ religious = {
 						}
 					}
 					# Muslims fight amongst themselves
-					trigger_else_if = {
+					trigger_if = {
 						limit = { religion_group = muslim }
 						NOR = {
 							religion = FROM
