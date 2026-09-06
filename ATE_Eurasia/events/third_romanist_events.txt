@@ -80,6 +80,6 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA_third_romanist_3
-		ROOT = { secret_religion = third_romanist }
+		ROOT = { set_secret_religion = third_romanist }
 	}
 }

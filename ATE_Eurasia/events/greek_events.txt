@@ -1688,10 +1688,10 @@ long_character_event = {
 		name = EVTOPTB_greek_61
 		hidden_tooltip = {
 		   random_list = {
-		      30 = { secret_religion = orthodox }
-			  30 = { secret_religion = antipalamite }
-			  30 = { secret_religion = oldcalendarist }
-			  10 = { secret_religion = catholic }
+		      30 = { set_secret_religion = orthodox }
+			  30 = { set_secret_religion = antipalamite }
+			  30 = { set_secret_religion = oldcalendarist }
+			  10 = { set_secret_religion = catholic }
 		   }
 		}
 	}

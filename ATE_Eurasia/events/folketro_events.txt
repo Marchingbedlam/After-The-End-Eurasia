@@ -1485,7 +1485,7 @@ character_event = { #Meeting pagans
 		name = EVTOPTA_troll_37
 		piety=-10
 		wealth=-5
-		secret_religion = nysed
+		set_secret_religion = nysed
 		if = {
 		   limit = { trait = apostle_cult }
 		   remove_trait="apostle_cult"
@@ -1627,7 +1627,7 @@ character_event = {
 	
 	option = {
 		name = EVTOPTC_troll_41
-		secret_religion=lutheran
+		set_secret_religion=lutheran
 	}
 }
 

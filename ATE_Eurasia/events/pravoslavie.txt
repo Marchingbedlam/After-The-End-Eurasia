@@ -74,7 +74,7 @@ character_event = {
 	option = { #Go to saint grave
 		name = EVTOPTE_pravoslavie.2
 		ai_chance = { factor = 5 }
-		character_event_event = { id = HF.41300 }
+		character_event = { id = HF.41300 }
 	}
 }
 
@@ -641,7 +641,7 @@ narrative_event = {
 	
 	option = { 
 		name = EVTOPTB_pravoslavie.17
-		secret_religion=orthodox
+		set_secret_religion=orthodox
 	}
 }
 
