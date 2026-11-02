@@ -386,20 +386,20 @@ bm_the_far_east = {
 			dynasty=1479080
 		}
 	}
-	selectable_character = { # Löntsen Aglen of Ü-Tsang
-		id = 1346011
-		age = 74
-		name = ERA_CHAR_NAME_1346011
-		title = k_u_tsang
-		title_name = k_u_tsang
+	selectable_character = { # Emperor Zhonnu of Tibet
+		id = 1346033
+		age = 30
+		name = ERA_CHAR_NAME_1346033
+		title = e_tibet
+		title_name = e_tibet
 		
 		character = {
-			dna = cbbbfgsgaqu
-			properties = ej000c0000000000000000c0000000000000000
-			religion="gelugpa"
-			culture="utsang"
+			dna = 0fcfd0e0000
+			properties = ob00j000000000000000000000000000000000
+			religion="ngocholugspa"
+			culture="kham"
 			government = theocratic_feudal_government
-			dynasty=7503005
+			dynasty=7500000
 		}
 	}
 	selectable_character = { # Bufang Han of Qinghai

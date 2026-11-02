@@ -450,7 +450,17 @@ decisions = {
 			is_playable = yes
 			age = 16
 			prisoner = no
-			religion = glorian
+			OR = {
+			    religion = thelema
+				religion = nysed
+				religion_group = pagan_group				
+			}
+			NOT = {
+			   religion = vieja_gloria_reformed
+			   religion = vieja_gloria
+			   religion = nepmese
+			   religion = nepmese_reformed
+			}
 			NOT = { has_character_modifier = held_blot_timer }
 			NOT = {	has_character_flag = holding_blot }
 			NOT = {
@@ -549,7 +559,12 @@ decisions = {
 			is_adult = yes
 			prisoner = no
 			OR = {
-				religion = valinorist
+			   religion_group = pagan_group
+			   religion = nysed
+			   AND = {
+			      religion=third_romanist
+				  trait="third_romanist_majoran"
+			   }
 			}
 		}
 

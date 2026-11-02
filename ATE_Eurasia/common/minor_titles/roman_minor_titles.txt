@@ -1,0 +1,152 @@
+title_senator = {
+	show_as_title = no
+	realm_in_name = yes
+	is_voter = yes
+	revoke_allowed = no
+	is_unique = yes
+	
+	dignity = 0.5
+	grant_limit = 10
+	
+	monthly_salary = 0.1
+	monthly_prestige = 0.5
+	
+	allowed_to_grant = {
+		has_landed_title = e_sanctum_imperium
+	}
+	
+	allowed_to_hold = {
+		age > 16
+	}
+	
+	revoke_trigger = {
+	}
+	
+	gain_effect = {
+	}
+	
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_roman_ombudsman = {
+	dignity = 0.100
+	is_high_prio = yes
+	realm_in_name = yes
+	attribute = learning
+	grant_limit = 1
+	opinion_effect = 10
+	
+	monthly_salary = 0.05
+	monthly_prestige = 0.3
+	
+	is_unique = yes
+	
+	allowed_to_hold = {
+		is_adult = yes
+		learning = 10
+		diplomacy = 10
+	}
+	
+	allowed_to_grant = {
+		independent = yes
+		has_landed_title = e_sanctum_imperium
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_member_of_high_council_of_the_judiciary = {
+	dignity = 0.05
+	realm_in_name = yes
+	grant_limit = 10
+	opinion_effect = 5
+	
+	monthly_salary = 0.01
+	monthly_prestige = 0.2
+	
+	is_unique = yes
+	
+	allowed_to_hold = {
+		is_adult = yes
+	}
+	
+	allowed_to_grant = {
+		independent = yes
+		has_landed_title = e_sanctum_imperium
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_praetor_urbanus= {
+	dignity = 0.05
+	is_unique = yes
+	attribute = learning
+	realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = 5
+	
+	monthly_salary = 0.01
+	monthly_prestige = 0.2
+	
+	is_unique = yes
+	
+	allowed_to_hold = {
+	    learning > 10
+	}
+	
+	allowed_to_grant = {
+		independent = yes
+		has_landed_title = e_sanctum_imperium
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_praetor_peregrinus = {
+	dignity = 0.05
+	is_unique = yes
+	attribute = learning
+	realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = 5
+	
+	monthly_salary = 0.01
+	monthly_prestige = 0.2
+	
+	is_unique = yes
+	
+	allowed_to_hold = { 
+	    learning > 10
+	}
+	
+	allowed_to_grant = {
+		independent = yes
+		has_landed_title = e_sanctum_imperium
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}

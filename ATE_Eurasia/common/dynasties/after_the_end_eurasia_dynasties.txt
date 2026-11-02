@@ -5710,7 +5710,7 @@
 		}
 	}
 }
-1801004 = { name = "Shaffer" culture = scouse}
+1801004 = { name = "Shaffer" culture = scouse }
 1801005 = { name = "Ableson" culture = scouse
 	coat_of_arms = {
 		religion = nondescript_christian
@@ -50328,7 +50328,7 @@ coat_of_arms = {
 		}
 	}
 }
-7534006 = { name = "Pendragon" culture = southerner religion=catholic used_for_random = no
+7534006 = { name = "Pendragon" culture = southerner used_for_random = no
 	coat_of_arms = {
 		religion = nondescript_christian
 		template = 0
@@ -51317,12 +51317,26 @@ coat_of_arms = {
 7534152 = { name = "Khmelnytsky" culture = ukrainian religion = kozachina used_for_random = no }
 7534153 = { name = "Bohun" culture = ukrainian religion = kozachina used_for_random = no }
 7534154 = { name = "Mazepa" culture = ukrainian religion = kozachina used_for_random = no }
-7534155 = { name = "Skoropadsky" culture = ukrainian religion = kozachina used_for_random = no }
+7534155 = { name = "Skoropadsky" culture = ukrainian religion = kozachina used_for_random = no
+	used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 40
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 7534156 = { name = "Holmes" culture = british 
 	used_for_random = no
 	coat_of_arms = { 
 		religion = nondescript_pagan
-		template = 1
+		template = 0
 		layer = {
 			texture = 1
 			texture_internal = 13
@@ -51865,7 +51879,7 @@ coat_of_arms = {
 		template = 0
 		layer = {
 			texture = 6
-			texture_internal = 33
+			texture_internal = 34
 			emblem = 0
 			color = 0
 			color = 0
@@ -51963,3 +51977,71 @@ coat_of_arms = {
 }
 7534249 = { name = "Hoxha" culture = albanian used_for_random = no }
 7534250 = { name = "Zogu" culture = albanian used_for_random = no }
+7534251 = { name = "de Valera" culture = irish used_for_random = no }
+7534252 = { name = "Moore" culture = irish used_for_random = no }
+7534253 = { name = "Boru" culture = irish used_for_random = no }
+7534254 = { name = "Ua Conchobair" culture = irish used_for_random = no }
+7534255 = { 
+    name = "Bradford" 
+    culture = northerner
+	used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 38
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7534256 = { 
+    name = "Neville" 
+    culture = northerner
+	used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 39
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7534257 = { name = "Gorloni" culture = umbrian religion = catholic used_for_random = no
+	used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 41
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7534258 = { name = "Di Gasperi" culture = umbrian religion = catholic used_for_random = no
+	used_for_random = no
+	coat_of_arms = {
+		religion = nondescript_christian
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 42
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}

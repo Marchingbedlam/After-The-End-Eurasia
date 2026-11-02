@@ -479,10 +479,16 @@ practiced_lectio_divina = {
 held_christmas_time = {
 	icon = 11
 }
+held_easter_timer = {
+	icon = 11
+}
 summer_services_timer = {
 	icon = 11
 }
 antipirate_expedition_timer = {
+	icon = 11
+}
+held_thanksgiving_timer = {
 	icon = 11
 }
 polyarniki_white_cow = {
@@ -504,4 +510,15 @@ polyarniki_black_horse = {
 	global_tax_modifier = -0.2
 	attack = 0.5
 	defence = -0.5
+}
+third_romanist_destroyed_jacobin_icons = {
+	icon = 50
+	monthly_character_piety = 0.1
+	jacobin_opinion = -10
+	church_opinion = 5
+}
+third_romanist_honoured_jacobin_icons = {
+	icon = 50
+	monthly_character_piety = 0.1
+	jacobin_opinion = 10
 }

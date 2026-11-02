@@ -2355,3 +2355,308 @@ jedinstvo_reclamation_cb = {
 		}
 	}
 }
+
+british_imperial_reconquest = {
+	name = CB_NAME_BRITISH_IMPERIAL
+	war_name = WAR_NAME_BRISTISH_IMPERIAL
+	sprite = 17
+	truce_days = 3650
+	sort_priority = 1900
+
+	is_permanent = yes
+	check_de_jure_tier = KING
+	allowed_to_target_tributaries = no
+
+	can_use_gui = {
+		check_if_crusader_trigger = yes
+	}
+
+	can_use = {
+		# Attacker
+		ROOT = { 
+		    religion = glorian
+			independent = yes
+			mercenary = no
+			NOT = { same_realm = FROM }
+		}
+
+		# Defender
+		FROM = {
+			NOR = { 
+			   religion = glorian
+			   has_landed_title = k_britain
+			   has_landed_title = e_united_kingdom
+			}
+		}
+	}
+
+	can_use_title = {
+		OR = { # TODO: replace with regions
+			de_jure_liege_or_above = k_wales
+			de_jure_liege_or_above = k_england
+			de_jure_liege_or_above = k_london
+			de_jure_liege_or_above = k_scotland
+			de_jure_liege_or_above = k_ireland
+		}
+	}
+
+	is_valid = {
+		# Attacker
+		ROOT = {
+			independent = yes
+			NOT = { same_realm = FROM }
+
+			religion = glorian 
+		}
+	}
+
+	on_add = {
+		fire_haruspicy_event_effect = yes
+		anger_china_effect = yes
+	}
+
+	on_success = {
+		attacker = {
+			show_scope_change = no
+
+			participation_scaled_prestige = 100
+		}
+
+		any_attacker = {
+			limit = { NOT = { character = attacker } }
+			hidden_effect = { participation_scaled_prestige = 100 }
+		}
+
+		defender = {
+			show_scope_change = no
+
+			prestige = -100
+		}
+	}
+
+	on_success_title = {
+		custom_tooltip = {
+			text = other_invasion_succ_tip
+
+			attacker = {
+				vassalize_or_take_under_title = {
+					title = PREV
+					enemy = defender
+					type = invasion
+				}
+			}
+		}
+
+		if = {
+			limit = { holder = defender }
+
+			usurp_title_only = {
+				target = attacker
+				type = invasion
+			}
+		}
+
+		hidden_effect = {
+			check_if_reconquista_finished_effect = yes
+
+			defender = {
+				landless_pope_effect = yes
+			}
+		}
+	}
+
+	on_fail = {
+		attacker = {
+			show_scope_change = no
+
+			prestige = -150
+		}
+	}
+
+	on_reverse_demand = {
+		attacker = {
+			show_scope_change = no
+
+			prestige = -200
+
+			transfer_scaled_wealth = {
+				to = defender
+				value = 4.0
+			}
+		}
+
+		defender = {
+			show_scope_change = no
+
+			participation_scaled_piety = 100
+			participation_scaled_prestige = 200
+
+			if = {
+				limit = { uses_decadence = yes }
+				participation_scaled_decadence = -10
+			}
+		}
+
+		any_defender = {
+			limit = { NOT = { character = defender } }
+
+			hidden_effect = {
+				participation_scaled_piety = 100
+				participation_scaled_prestige = 200
+
+				if = {
+					limit = { uses_decadence = yes }
+					participation_scaled_decadence = -10
+				}
+			}
+		}
+	}
+
+	attacker_ai_victory_worth = {
+		factor = -1 # always accept
+	}
+
+	attacker_ai_defeat_worth = {
+		factor = 100
+	}
+
+	defender_ai_victory_worth = {
+		factor = -1 # always accept
+	}
+
+	defender_ai_defeat_worth = {
+		factor = 100
+	}
+}
+
+demand_hre_coronation_war = {
+	name = CB_NAME_DEMAND_HRE
+	war_name = WAR_NAME_DEMAND_HRE
+	sprite = 17
+	truce_days = 3650
+	sort_priority = 1900
+
+	is_permanent = yes
+	check_de_jure_tier = KING
+	allow_whitepeace = no
+	allowed_to_target_tributaries = no
+
+	can_use_gui = {
+		check_if_crusader_trigger = yes
+	}
+
+	can_use = {
+	    has_character_flag = be_dev
+	}
+
+	can_use_title = {
+
+	}
+
+	is_valid = {
+		# Attacker
+		ROOT = {
+			religion = catholic
+			independent = yes
+		}
+		FROM = {
+		    has_landed_title = k_papal_state
+		}
+	}
+
+	on_success = {
+	    set_global_flag = hre_restored
+		remove_trait = excommunicated
+		attacker = {
+			show_scope_change = no
+
+			participation_scaled_prestige = 100
+			activate_title = { title = e_sanctum_imperium status = yes }
+		    primary_title = {
+			   e_sanctum_imperium = {
+				  grant_title = ROOT
+			   }
+		    }
+		}
+
+		any_attacker = {
+			limit = { NOT = { character = attacker } }
+			hidden_effect = { participation_scaled_prestige = 100 }
+		}
+
+		defender = {
+			show_scope_change = no
+
+			prestige = -500
+		}
+		
+		k_papal_state:holder_scope = {
+	      set_defacto_liege = e_sanctum_imperium:holder_scope
+	   }
+	}
+
+	on_reverse_demand = {
+		attacker = {
+			show_scope_change = no
+
+			piety = -500
+			prestige = -500
+
+			transfer_scaled_wealth = {
+				to = defender
+				value = 8.0
+			}
+			any_demesne_title = {
+				limit = {
+					higher_real_tier_than = DUKE
+					controls_religion = no
+					clan = no
+				}
+
+				destroy_landed_title = THIS
+			}
+		}
+
+		defender = {
+			show_scope_change = no
+
+			participation_scaled_piety = 100
+			participation_scaled_prestige = 200
+
+			if = {
+				limit = { uses_decadence = yes }
+				participation_scaled_decadence = -10
+			}
+		}
+
+		any_defender = {
+			limit = { NOT = { character = defender } }
+
+			hidden_effect = {
+				participation_scaled_piety = 100
+				participation_scaled_prestige = 200
+
+				if = {
+					limit = { uses_decadence = yes }
+					participation_scaled_decadence = -10
+				}
+			}
+		}
+	}
+
+	attacker_ai_victory_worth = {
+		factor = -1 # always accept
+	}
+
+	attacker_ai_defeat_worth = {
+		factor = 100
+	}
+
+	defender_ai_victory_worth = {
+		factor = -1 # always accept
+	}
+
+	defender_ai_defeat_worth = {
+		factor = 100
+	}
+}

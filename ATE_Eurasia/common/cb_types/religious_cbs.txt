@@ -75,13 +75,6 @@ crusade = {
 						}
 					}
 					trigger_else_if = {
-						limit = { religion = jacobin }
-						custom_tooltip = {
-							text = CTT_JACOBIN_CRUSADES_UNLOCKED
-							has_global_flag = jacobin_holy_wars_unlocked
-						}
-					}
-					trigger_else_if = {
 						limit = { religion_group = muslim }
 
 						custom_tooltip = {

@@ -12,39 +12,6 @@ napoleon_bloodline = {
 		always = yes
 	}
 }
-##Based off of Vanilla Sayoshant 
-
-glorian_king = {
-	monthly_character_piety = 1
-	church_opinion = 10
-	command_modifier = {
-		religious_enemy = 0.3
-	}
-	plot_power_modifier = 0.15
-	inheritance = patrilineal
-	allow_bastards = yes
-	picture = GFX_bloodlines_symbol_lion
-	flags = { created_bloodline }
-	active = {
-		religion = glorian
-	}
-}
-
-glorian_queen = {
-	monthly_character_piety = 1
-	church_opinion = 10
-	command_modifier = {
-		religious_enemy = 0.3
-	}
-	plot_power_modifier = 0.15
-	inheritance = matrilineal
-	allow_bastards = yes
-	picture = GFX_bloodlines_symbol_lion
-	flags = { created_bloodline }
-	active = {
-		religion = glorian
-	}
-}
 
 le_bon_chevalier = {
     martial = 1
@@ -77,5 +44,54 @@ bastard_bourbon = {
 	flags = { historical_bloodline }
 	active = {
 	  NOT = { religion = jacobin }
+	}
+}
+
+francimagni_bloodline = {
+	levy_reinforce_rate = 0.05
+	latin_opinion = 5
+	christian_opinion = 5
+	monthly_character_prestige = 0.25
+	monthly_character_piety = 0.25
+	bloodline_effect_great_heroes_appear = 1
+	inheritance = patrilineal
+	allow_bastards = yes
+	picture = GFX_bloodlines_symbol_roman
+	flags = { historical_bloodline }
+	active = {
+	  NOr = { religion = third_romanist religion = jacobin religion = jedinstvo religion = proletcult }
+	}
+}
+##Based off of Vanilla Sayoshant 
+
+glorian_king = {
+	monthly_character_piety = 1
+	church_opinion = 10
+	command_modifier = {
+		religious_enemy = 0.3
+	}
+	plot_power_modifier = 0.15
+	inheritance = patrilineal
+	allow_bastards = yes
+	picture = GFX_bloodlines_symbol_lion
+	flags = { created_bloodline }
+	active = {
+		religion = glorian
+	}
+}
+
+glorian_queen = {
+	monthly_character_piety = 1
+	church_opinion = 10
+	command_modifier = {
+		religious_enemy = 0.3
+	}
+	plot_power_modifier = 0.15
+	inheritance = matrilineal
+	allow_bastards = yes
+	picture = GFX_bloodlines_symbol_lion
+	flags = { created_bloodline }
+	active = {
+		religion = glorian
 	}
 }

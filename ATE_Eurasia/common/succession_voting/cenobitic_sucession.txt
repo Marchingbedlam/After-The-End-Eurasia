@@ -2,7 +2,8 @@
 
 cenobitic_elective = {
 	elector_selection = {
-		days = -5 		
+		days = 5
+        limit = { religion = ROOT }		
 		additive_modifier = { #Emperor is always an Elector.
 			value = 30
 			FROMFROM = { 
@@ -58,7 +59,7 @@ cenobitic_elective = {
 		}
 	}
 	elector_vote_strength = { 
-		days = 5 # 1 elector = 5 votes.
+		days = -5 # 1 elector = 5 votes.
 		additive_modifier = { #The Emperor's word is worth more than anybody else's by far.
 			value = 100
 			localisation_key = tooltip_imperial_vote_strength_emperor_influence
@@ -3655,7 +3656,8 @@ cenobitic_elective = {
 
 pachomial_elective = {
 	elector_selection = {
-		days = -5 		
+		days = 5		
+		limit = { religion = ROOT }		
 		additive_modifier = { #Emperor is always an Elector.
 			value = 30
 			FROMFROM = { 
@@ -3713,7 +3715,7 @@ pachomial_elective = {
 		}
 	}
 	elector_vote_strength = { 
-		days = 5 # 1 elector = 5 votes.
+		days = -5 # 1 elector = 5 votes.
 		additive_modifier = { #The Emperor's word is worth more than anybody else's by far.
 			value = 100
 			localisation_key = tooltip_imperial_vote_strength_emperor_influence

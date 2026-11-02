@@ -51,3 +51,14 @@ gorky_bloodline = {
 	picture = GFX_bloodlines_symbol_proletcult
 	flags = { historical_bloodline }
 }
+
+wangchuck = {#Blood of the Wangchucks (Kings of Bhutan)
+	monthly_character_prestige = 1
+	tibetan_opinion = 5
+	rime_opinion = 5
+	health = 0.5
+	inheritance = patrilineal
+	allow_bastards = yes
+	picture = GFX_bloodlines_symbol_wangchuck
+	flags = { historical_bloodline }
+}

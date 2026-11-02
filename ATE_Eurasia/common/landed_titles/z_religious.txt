@@ -1316,7 +1316,7 @@ d_kozachina = {
 	color = { 0.756 0.658 0.023 }
 	color2={ 220 220 0 }
 	
-	capital = 796 #Mariupol
+	capital = 794 #Zaporizhia
 	
 	caliphate = yes
 	
@@ -2513,4 +2513,53 @@ k_third_romanist = {
 	dignity = 200
 
 	dynasty_title_names = no 
+}
+
+d_americanist = {
+	color={ 192 192 192 }
+	color2={ 220 220 0 }
+	
+	capital = 27 # London
+	
+	title = "AMERICANIST_SECRETARY"
+	title_female = "AMERICANIST_SECRETARY"
+	foa = "PRIME_MINISTER_FOA"
+	
+	creation_requires_capital = no
+	
+	short_name = yes
+	
+	dignity = 200 # Counted as having this many more counties than it does
+	
+	# Controls a religion
+	controls_religion = americanist
+	
+	religion = americanist
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+
+}
+
+e_redcoat_dominion = { 
+	color = { 202 26 26 }
+
+	color2= { 255 255 255 }
+
+	capital = 27 # London
+
+	culture = british
+
+	title = "LORD_ADMIRAL"
+
+	# Always exists
+	landless = yes
+
+	#tribe = yes
+
+	short_name = yes
+
+	allow = {
+		always = no
+	}
+
 }

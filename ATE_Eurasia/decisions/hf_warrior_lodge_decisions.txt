@@ -719,6 +719,7 @@ targeted_decisions = {
 				limit = { is_landed = yes }
 				OR = {
 					has_tribal_or_nomadic_government_trigger = yes
+					FROM = { is_feudal = yes }
 					custom_tooltip = {
 						text = has_mission_to_recruit_tt
 						FROM = {
@@ -732,6 +733,7 @@ targeted_decisions = {
 				limit = { FROM = { is_landed = yes } }
 				OR = {
 					FROM = { has_tribal_or_nomadic_government_trigger = yes }
+					FROM = { is_feudal = yes }
 					custom_tooltip = {
 						text = has_mission_to_recruit_tt
 						FROM = {

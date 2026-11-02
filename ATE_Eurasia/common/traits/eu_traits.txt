@@ -3957,6 +3957,76 @@ third_romanist_juvenist = {
 	ruler_designer_cost = 0
 }
 
+kozachina_st_john = {
+	opposites = {
+		kozachina_st_demetrius
+		kozachina_st_george
+	}
+	
+	potential = {
+	   OR = {
+		   religion = kozachina
+		   religion = angelchina
+	   }
+	}
+	learning = 1
+	health = 0.5
+	same_opinion = 5
+	fertility = -0.1
+	
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+
+kozachina_st_demetrius = {
+	opposites = {
+		kozachina_st_john
+		kozachina_st_george
+	}
+	
+	potential = {
+	   OR = {
+		   religion = kozachina
+		   religion = angelchina
+	   }
+	}
+	stewardship = 1
+	same_opinion = 5
+	tax_income = 0.1
+	fertility = -0.1
+	
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+
+kozachina_st_george = {
+	opposites = {
+		kozachina_st_john
+		kozachina_st_demetrius
+	}
+	
+	potential = {
+	   OR = {
+		   religion = kozachina
+		   religion = angelchina
+	   }
+	}
+	martial = 1
+	same_opinion = 5
+	fertility = -0.1
+	
+	command_modifier = {
+		morale_offence = 0.2
+		morale_defence = 0.2
+	}
+	
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+
 neohellenic_pilgrim = { # Neohellenic who has completed a Pilgrimage
 	potential = {
 		religion = neohellenic
@@ -4026,13 +4096,42 @@ jacobin_pilgrim = { # Jacobin who has completed a Pilgrimage
 	female_compliment = COMPL_PILGRIM
 }
 
-genesian_pilgrim = { # Jacobin who has completed a Pilgrimage
+genesian_pilgrim = {
 	potential = {
 	   religion = genesian
 	}
 
 	monthly_character_piety = 0.1
 	same_religion_opinion = 5
+
+	male_compliment = COMPL_PILGRIM
+	female_compliment = COMPL_PILGRIM
+}
+
+third_romanist_pilgrim = { 
+	potential = {
+	   religion = third_romanist
+	}
+
+	monthly_character_piety = 0.2
+	monthly_character_prestige = 0.2
+	church_opinion = 10
+
+	male_compliment = COMPL_PILGRIM
+	female_compliment = COMPL_PILGRIM
+}
+
+kozachina_pilgrim = { 
+	potential = {
+	   OR = { 
+	      religion = kozachina
+		  religion = angelchina
+	   }
+	}
+
+	monthly_character_piety = 0.2
+	monthly_character_prestige = 0.2
+	church_opinion = 10
 
 	male_compliment = COMPL_PILGRIM
 	female_compliment = COMPL_PILGRIM

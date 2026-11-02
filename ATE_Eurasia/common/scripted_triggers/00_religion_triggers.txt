@@ -73,6 +73,15 @@
 # is_orthodox_branch
 # is_orthodox_true_branch
 # is_orthodox_secret_branch
+# is_pravoslavie_branch
+# is_pravoslavie_true_branch
+# is_pravoslavie_secret_branch
+# is_mariavite_branch
+# is_mariavite_true_branch
+# is_mariavite_secret_branch
+# is_insular_branch
+# is_insular_true_branch
+# is_insular_secret_branch
 # is_miaphysite_branch
 # is_miaphysite_true_branch
 # is_miaphysite_secret_branch
@@ -1098,6 +1107,24 @@ is_mariavite_secret_branch = {
 		secret_religion = mariavite
 		secret_religion = oasite
 		secret_religion = coronite
+	}
+}
+
+is_insular_branch = {
+	OR = {
+		religion = insular
+	}
+}
+
+is_insular_true_branch = {
+	OR = {
+		religion = insular
+	}
+}
+
+is_insular_secret_branch = {
+	OR = {
+		secret_religion = insular
 	}
 }
 

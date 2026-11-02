@@ -107,7 +107,7 @@ decisions = {
 			}
 			is_playable = yes
 		    religion = jacobin
-			NOT = { trait = pilgrim }
+			NOT = { trait = jacobin_pilgrim }
 			NOT = {
 				has_alternate_start_parameter = { key = religion_names value = random }
 			}

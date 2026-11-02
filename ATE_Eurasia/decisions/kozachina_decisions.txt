@@ -61,6 +61,171 @@ decisions = {
 			always = no
 		}
 	}
+	
+	choose_kozachina_saint = {
+		is_high_prio = yes
+		
+		potential = {
+			OR = {
+			   religion = kozachina
+			   religion = angelchina
+			}
+			is_playable = yes
+			is_adult = yes
+			NOR = {
+			   is_ruler = no
+			   is_female = yes
+			}
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		allow = {
+			OR = {
+			   religion = kozachina
+			   religion = angelchina
+			}
+			OR = {
+			   trait="zealous"
+			   trait="pious"
+			   society_member_of = warrior_lodge_kozachina
+			}
+			piety=50
+		}
+		
+		effect = {
+		    piety=50
+			hidden_tooltip = {
+				character_event = { id = cossack.4 }		
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0.1 
+			}
+			modifier = {
+				factor = 3
+				trait = zealous
+			}
+			modifier = {
+				factor = 1.5
+				trait = pious
+			}
+			modifier = {
+				factor = -3
+				trait = cynical
+			}
+		}
+	}
+	
+	go_to_kozachina_pilgrimage = {
+		only_playable = yes
+		ai_check_interval = 20
+		potential = {
+			has_dlc = "Sons of Abraham"
+			OR = {
+				NOT = { has_dlc = "Way of Life" }
+				has_focus = focus_theology
+				trait = zealous
+				trait = pious
+				trait = adventurer
+				society_member_of = warrior_lodge_kozachina
+			}
+			is_playable = yes
+			OR = {
+		        religion = kozachina
+				religion = angelchina
+			}
+			NOT = { trait = kozachina_pilgrim }
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+			has_global_flag = iamtesting
+		}
+		allow = {
+			war = no
+			in_command = no
+			NOT = { trait = excommunicated }
+			conditional_tooltip = {
+				trigger = { has_character_modifier = coronation_request_cooldown }
+				custom_tooltip = {
+					text = TT_NOT_RECENTLY_ASKED_CORONATION
+					hidden_tooltip = { 
+						NOT = { has_character_modifier = coronation_request_cooldown } 
+					} 
+				} 
+			} 
+			custom_tooltip = {
+				text = UNOCCUPIED_DEMESNE_TITLE
+				hidden_tooltip = {
+					any_demesne_title = {
+						NOT = { higher_tier_than = count }
+						is_occupied = no
+					}
+				}
+			}
+			prisoner = no
+			NOT = { is_inaccessible_trigger = yes }
+			scaled_wealth = 0.2
+			age = 16
+			custom_tooltip = {
+				text = health_travel_condition
+				hidden_tooltip = {
+					NOT = {	trait = pregnant }
+					NOT = {	is_incapable = yes }
+					NOT = {	trait = blinded }
+					NOT = {	trait = consumption }
+					NOT = {	trait = has_typhoid_fever }
+					NOT = {	trait = has_typhus }
+					NOT = {	trait = has_bubonic_plague }
+					NOT = {	trait = has_measles }
+					NOT = {	trait = has_small_pox }
+					NOT = {	trait = has_aztec_disease }
+				}
+			}
+			custom_tooltip = {
+				text = is_not_busy_trigger_tooltip
+				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+		}
+		effect = {
+			scaled_wealth = -0.2
+			set_character_flag = activated_pilgrimage
+			set_character_flag = do_not_disturb
+			hidden_tooltip = {
+				character_event = { 
+					id = cossack.5
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0.1 
+			}
+			modifier = {
+				factor = 3
+				trait = zealous
+			}
+			modifier = {
+				factor = 0
+				NOT = { wealth = 200 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { age = 30 }
+			}
+		}
+	}
 }
 
 

@@ -1,5 +1,96 @@
 decisions={
+	go_to_third_romanist_pilgrimage = {
+		only_playable = yes
+		ai_check_interval = 20
+		potential = {
+			has_dlc = "Sons of Abraham"
+			OR = {
+				trait = third_romanist_juvenist
+				trait = third_romanist_actionist
+			}
+			is_playable = yes
+			religion = third_romanist
+			NOT = { trait = third_romanist_pilgrim }
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		allow = {
+			war = no
+			in_command = no
+			NOT = { trait = excommunicated }
+			conditional_tooltip = {
+				trigger = { has_character_modifier = coronation_request_cooldown }
+				custom_tooltip = {
+					text = TT_NOT_RECENTLY_ASKED_CORONATION
+					hidden_tooltip = { 
+						NOT = { has_character_modifier = coronation_request_cooldown } 
+					} 
+				} 
+			} 
+			custom_tooltip = {
+				text = UNOCCUPIED_DEMESNE_TITLE
+				hidden_tooltip = {
+					any_demesne_title = {
+						NOT = { higher_tier_than = count }
+						is_occupied = no
+					}
+				}
+			}
+			prisoner = no
+			NOT = { is_inaccessible_trigger = yes }
+			scaled_wealth = 0.2
+			age = 16
+			custom_tooltip = {
+				text = health_travel_condition
+				hidden_tooltip = {
+					NOT = {	trait = pregnant }
+					NOT = {	is_incapable = yes }
+					NOT = {	trait = blinded }
+					NOT = {	trait = consumption }
+					NOT = {	trait = has_typhoid_fever }
+					NOT = {	trait = has_typhus }
+					NOT = {	trait = has_bubonic_plague }
+					NOT = {	trait = has_measles }
+					NOT = {	trait = has_small_pox }
+					NOT = {	trait = has_aztec_disease }
+				}
+			}
+			custom_tooltip = {
+				text = is_not_busy_trigger_tooltip
+				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+		}
+		effect = {
+			scaled_wealth = -0.2
+			set_character_flag = activated_pilgrimage
+			set_character_flag = do_not_disturb
+			hidden_tooltip = {
+				character_event = { 
+					id = thirdrome.5
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
 
+			modifier = {
+				factor = 0.1 
+			}
+			modifier = {
+				factor = 3
+				trait = zealous
+			}
+			modifier = {
+				factor = 0
+				NOT = { wealth = 200 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { age = 30 }
+			}
+		}
+	}
 	choose_third_romanist_branch = {
 		is_high_prio = yes
 		ai = no
@@ -29,7 +120,41 @@ decisions={
 			always = no
 		}
 	}
-	
+	majoran_sacrafice = {
+		ai = no
+		
+		potential = {
+			religion = third_romanist
+			trait="third_romanist_majoran"
+			is_playable = yes
+			NOT = { has_character_modifier = held_blot_timer }
+			NOT = { has_character_flag = held_majoran_sacrafice }
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		allow = {
+			religion = third_romanist
+			custom_tooltip = {
+				text = is_not_busy_trigger_tooltip
+				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+		}
+		
+		effect = {
+			set_character_flag = held_majoran_sacrafice
+			set_character_flag = do_not_disturb
+			set_character_flag = recent_minor_decision
+			hidden_tooltip = {
+				character_event = { id = thirdrome.29 }		
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+	}
 }
 
 title_decisions = {

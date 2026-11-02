@@ -2961,6 +2961,7 @@ vernacular = {
 		allow_rivermovement = yes 
 		max_consorts = 3 
 		can_demand_religious_conversion = no
+		can_retire_to_monastery = yes
 		
 		religious_clothing_head = 2
 		religious_clothing_priest = 2
@@ -3007,6 +3008,7 @@ vernacular = {
 		max_consorts = 3 
 		feminist = yes
 		can_demand_religious_conversion = no
+		can_retire_to_monastery = yes
 		
 		religious_clothing_head = 2
 		religious_clothing_priest = 2
@@ -4439,6 +4441,7 @@ islamosyncretic = {
 		scripture_name = THE_YELLOW_BOOK
 		priest_title = LURH_PORI
 		crusade_name = JIHAD
+		
 		uses_decadence = no
 		pacifist = yes
 		male_temple_holders = yes
@@ -4629,8 +4632,8 @@ old_world_cultist_group = {
 		has_heir_designation = yes
 		can_call_crusade = yes
 		
-		religious_clothing_head = 11
-		religious_clothing_priest = 11
+		religious_clothing_head = 25
+		religious_clothing_priest = 25
 		
 		intermarry = neuhumanist
 		intermarry = constitutionalist
@@ -4983,6 +4986,13 @@ old_world_cultist_group = {
 			THE_REDCOATS THE_TRAITOR THE_ILLUMINATI FASCISM COMMUNISM
 		}
 		
+	    male_names = {
+		    Filibuster Preamble Habeas Benzene Bessemer Stahlrich
+	    }
+	    female_names = {
+		    Justice Columbia Benefactia Emancipata Eleutheria Industria Interdicta Libertas Liberalitas Majority Nullabona Nongrata Precedenta Respublia Subpoena Vindicta Stahlhilda
+	    }
+		
 		#investiture = yes
 		can_excommunicate = yes
 		can_grant_claim = yes
@@ -4996,12 +5006,13 @@ old_world_cultist_group = {
 		
 		priests_can_marry = yes
 		
-		religious_clothing_head = 11
-		religious_clothing_priest = 11
+		religious_clothing_head = 26
+		religious_clothing_priest = 26
 		
 		intermarry = jacobin
 		intermarry = thelema
 		intermarry = glorian
+		intermarry = valinorist
 	}
 	masala = { #Jiyo Re Bahubali
 		graphical_culture = indiangfx 
@@ -5055,8 +5066,8 @@ old_world_cultist_group = {
 		
 		high_god_name = GOD_GOD
 		
-		god_names = { GOD_GOD GOD_MAZZINI GOD_GARIBALDI GOD_MACHIAVELLI GOD_MAJORIAN GOD_CLAUDIUS GOD_MARCUS_AURELIUS GOD_BRUTUS GOD_ITALIA GOD_REPUBLIC }
-		evil_god_names = { THE_DEVIL KING_OF_HELL FIRST_KING CALIGULA NERO BENITO }
+		god_names = { GOD_GOD GOD_MAZZINI GOD_GARIBALDI GOD_MACHIAVELLI GOD_DANTE GOD_CLAUDIUS GOD_MARCUS_AURELIUS GOD_BRUTUS GOD_ITALIA GOD_REPUBLIC }
+		evil_god_names = { THE_DEVIL AAMON KRAMPUS CALIGULA NERO BENITO }
 		
 		allow_rivermovement = yes
 		feminist = yes
