@@ -401,7 +401,7 @@
 	name="Frederick"
 	dynasty=10001061 #Webber
 	culture=german
-	religion=high_church
+	religion=catholic
 	martial=6
 	diplomacy=4
 	stewardship=3
@@ -812,7 +812,12 @@
 	trait=brave
 	trait=proud
 	trait=shy
-	2649.3.1={birth=yes}
+	father=1001220
+	mother=1001256
+	2645.3.1={birth=yes}
+	2665.1.1={
+	    add_spouse=1001237
+	}
 	2690.3.3={death=yes}
 }
 1001040={
@@ -964,7 +969,7 @@
 }
 1001047={
 	name="William"
-	dynasty=1601001 #Clarkson
+	dynasty=1601000 #Rendower
 	culture=northerner
 	religion=high_church
 	martial=4
@@ -973,12 +978,17 @@
 	intrigue=4
 	learning=5
 	trait=detached_priest
+	trait=hunchback
 	trait=shrewd
 	trait=socializer
 	trait=zealous
 	trait=just
 	trait=proud
-	2610.2.14={birth=yes}
+	father=1001238
+	2616.2.14={birth=yes}
+	2645.1.1={
+	   add_spouse=1001253
+	}
 	2678.3.12={death=yes}
 }
 1001048={
@@ -1039,7 +1049,7 @@
 }
 1001051={
 	name="John"
-	dynasty=1601002 #Lytton
+	dynasty=7534255
 	culture=northerner
 	religion=high_church
 	martial=3
@@ -1054,7 +1064,8 @@
 	trait=arbitrary
 	trait=kind
 	trait=proud
-	2637.1.1={birth=yes}
+	father=1001235
+	2634.6.17={birth=yes}
 	2700.4.2={death=yes}
 }
 1001052={
@@ -2754,7 +2765,7 @@
 	1685.1.1={death=yes} 
 }
 
-1001190={ 
+1001190={
 	name="James"
 	dynasty=7534009
 	occluded=yes
@@ -2764,10 +2775,9 @@
 	add_trait="legendary"
 	disallow_random_traits=yes
 	1633.1.1={birth=yes}
-	1689.1.1={
+	1691.1.1={
 	   death={
-	      death_reason=death_battle_duel
-		  killer=1001192
+	      death_reason=death_missing
 	   } 
 	}
 }
@@ -3606,6 +3616,7 @@
 
 1001220={
 	name="Lucas"
+	dynasty=1601000 #Rendower
 	culture=northerner
 	religion=high_church
 	trait="mastermind_theologian"
@@ -3615,7 +3626,11 @@
 	trait="poet"
 	trait="high_anglican"
 	trait="scholar"
+	father=1001238
 	2624.4.1={birth=yes}
+	2643.1.1={
+	    add_spouse=1001256
+	}
 	2661.1.1={
 		effect={give_minor_title=title_convocation_bishop}
 	}
@@ -3684,4 +3699,374 @@
 	father=1001227
 	2630.1.1={birth=yes}
 	2670.1.1={death=yes}
+}
+1001235={
+	name="Richard"
+	dynasty=7534255
+	culture=northerner
+	religion=high_church
+	father=1001231
+	2598.1.1={birth=yes}
+	2652.6.11={death=yes}
+}
+1001231={
+	name="Dwight"
+	dynasty=7534255
+	culture=northerner
+	religion=high_church
+	father=1001232
+	2560.1.1={birth=yes}
+	2608.9.14={
+	  death={
+	   death_reason=death_execution
+	   killer=1001240
+	  }
+	}
+}
+1001232={
+	name="Edward"
+	dynasty=7534255
+	culture=northerner
+	religion=high_church
+	father=1001233
+	2524.1.1={birth=yes}
+	2589.4.5={death=yes}
+}
+1001233={
+	name="John"
+	dynasty=7534255
+	culture=northerner
+	religion=high_church
+	father=1001234
+	2486.1.1={birth=yes}
+	2540.4.5={death=yes}
+}
+1001234={
+	name="Richard"
+	dynasty=7534255
+	culture=northerner
+	religion=high_church
+	trait="tough_soldier"
+	trait="broad_anglican"
+	trait="patient"
+	trait="chaste"
+	trait="honest"
+	trait="shy"
+	trait="erudite"
+	trait="pious"
+	father=1001055
+	2475.5.3={birth=yes}
+	2499.8.14={
+	   death={
+	     death_reason=death_battle
+		 killer=1001056
+	   }
+	}
+}
+1001236={
+	name="Edward"
+	dynasty=7534255
+	culture=northerner
+	religion=high_church
+	trait="flamboyant_schemer"
+	trait="hunchback"
+	trait="brave"
+	trait="ambitious"
+	trait="deceitful"
+	father=1001235
+	2637.8.3={birth=yes}
+	2700.4.2={death=yes}
+}
+1001237={
+	name="Mary"
+	female=yes
+	dynasty=7534255
+	culture=northerner
+	religion=high_church
+	trait="low_anglican"
+	trait="attractive"
+	trait="quick"
+	trait="kind"
+	trait="pious"
+	father=1001235
+	2644.8.11={birth=yes}
+	2700.4.2={death=yes}
+}
+
+1001238={
+	name="Edward"
+	dynasty=1601000 #Rendower
+	culture=northerner
+	religion=high_church
+	trait="midas_touched"
+	trait="low_anglican"
+	trait="patient"
+	trait="chaste"
+	trait="envious"
+	trait="deceitful"
+	trait="ruthless"
+	trait="administrator"
+	2592.6.12={birth=yes}
+	2663.3.21={death=yes}
+}
+
+1001239={
+	name="Diana"
+	female=yes
+	dynasty=7534256 #Neville
+	culture=scouse
+	religion=high_church
+	trait="high_anglican"
+	trait="attractive"
+	trait="kind"
+	trait="content"
+	trait="gregarious"
+	trait="selfish"
+	father=1001240
+	2605.4.2={birth=yes}
+	2633.8.19={
+	   death={
+	      death_reason=death_execution
+		  killer=1001238
+	   }
+	}
+}
+
+1001240={
+	name="Ralph"
+	dynasty=7534256 #Neville
+	culture=scouse
+	religion=high_church
+	trait="high_anglican"
+	father=1001241
+	2570.4.14={birth=yes}
+	2616.4.4={death=yes}
+}
+
+1001241={
+	name="Oswald"
+	dynasty=7534256 #Neville
+	culture=scouse
+	religion=high_church
+	trait="high_anglican"
+	father=1001242
+	2536.1.1={birth=yes}
+	2592.5.12={death=yes}
+}
+
+1001242={
+	name="Lionel"
+	dynasty=7534256 #Neville
+	culture=scouse
+	religion=high_church
+	trait="high_anglican"
+	father=1001243
+	2509.1.1={birth=yes}
+	2569.1.1={death=yes}
+}
+
+1001243={
+	name="Ralph"
+	dynasty=7534256 #Neville
+	culture=scouse
+	religion=high_church
+	trait="high_anglican"
+	father=1001244
+	2490.1.1={birth=yes}
+	2522.1.1={
+	   death={
+	      death_reason=death_battle
+		  killer=1001056
+	   }
+	}
+}
+
+1001244={
+	name="Ralph"
+	dynasty=7534256 #Neville
+	culture=scouse
+	religion=high_church
+	trait="high_anglican"
+	father=1001245
+	2470.1.1={birth=yes}
+	2510.1.1={
+	   death={
+	      death_reason=death_battle
+		  killer=1001056
+	   }
+	}
+}
+
+1001245={
+	name="Ralph"
+	dynasty=7534256 #Neville
+	culture=scouse
+	religion=high_church
+	trait="midas_touched"
+	trait="genius"
+	trait="high_anglican"
+	give_nickname=nick_the_great
+	2438.1.1={birth=yes}
+	2498.1.1={death=yes}
+}
+
+1001246={
+	name="Oswald"
+	dynasty=7534256 #Neville
+	culture=scouse
+	religion=high_church
+	trait="high_anglican"
+	father=1001241
+	2574.5.24={birth=yes}
+	2625.9.15={death=yes}
+}
+
+1001247={
+	name="Ralph"
+	dynasty=7534256 #Neville
+	culture=scouse
+	religion=high_church
+	trait="high_anglican"
+	father=1001246
+	2605.4.4={birth=yes}
+	2633.8.19={
+	   death={
+	      death_reason=death_execution
+		  killer=1001238
+	   }
+	}
+}
+
+1001248={
+	name="Diana"
+	female=yes
+	dynasty=7534256 #Neville
+	culture=scouse
+	religion=high_church
+	trait="high_anglican"
+	father=1001246
+	2608.7.15={birth=yes}
+	2633.8.19={
+	   death={
+	      death_reason=death_execution
+		  killer=1001238
+	   }
+	}
+}
+
+1001249={
+	name="Lionel"
+	dynasty=7534256 #Neville
+	culture=scouse
+	religion=high_church
+	trait="high_anglican"
+	father=1001241
+	2580.12.4={birth=yes}
+	2633.8.19={
+	   death={
+	      death_reason=death_execution
+		  killer=1001238
+	   }
+	}
+}
+
+1001250={
+	name="Ralph"
+	dynasty=7534256 #Neville
+	culture=scouse
+	religion=high_church
+	trait="high_anglican"
+	trait="twin"
+	father=1001249
+	2610.9.11={birth=yes}
+	2633.8.19={
+	   death={
+	      death_reason=death_execution
+		  killer=1001238
+	   }
+	}
+}
+
+1001251={
+	name="Lionel"
+	dynasty=7534256 #Neville
+	culture=scouse
+	religion=high_church
+	trait="high_anglican"
+	trait="twin"
+	father=1001249
+	2610.9.11={birth=yes}
+	2633.8.19={
+	   death={
+	      death_reason=death_execution
+		  killer=1001238
+	   }
+	}
+}
+
+1001252={
+	name="Isabela"
+	female=yes
+	dynasty=7534256 #Neville
+	culture=scouse
+	religion=high_church
+	trait="high_anglican"
+	father=1001249
+	2615.4.22={birth=yes}
+	2633.8.19={
+	   death={
+	      death_reason=death_execution
+		  killer=1001238
+	   }
+	}
+}
+
+1001253={
+	name="Isabela"
+	female=yes
+	dynasty=1801002 #Ganumaga
+	culture=scouse
+	religion=high_church
+	father=1001070
+	2627.1.1={birth=yes}
+	2689.12.26={death=yes}
+}
+
+1001254={
+	name="Edward"
+	dynasty=1601000 #Rendower
+	culture=northerner
+	religion=high_church
+	father=1001047
+	mother=1001253
+	trait="thrifty_clerk"
+	trait="slow"
+	trait="kind"
+	trait="chaste"
+	trait="trusting"
+	trait="honest"
+	trait="fat"
+	2646.5.15={birth=yes}
+	2689.12.26={death=yes}
+}
+
+1001255={
+	name="Diana"
+	female=yes
+	dynasty=1601000 #Rendower
+	culture=northerner
+	religion=high_church
+	father=1001047
+	mother=1001253
+	2649.8.12={birth=yes}
+	2689.12.26={death=yes}
+}
+
+1001256={
+	name="Naomi"
+	female=yes
+	culture=northerner
+	religion=high_church
+	2620.1.1={birth=yes}
+	2689.12.26={death=yes}
 }

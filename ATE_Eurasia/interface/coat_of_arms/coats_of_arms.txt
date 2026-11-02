@@ -292,7 +292,6 @@ culture = {  ##orthos and ortho adjacent
 culture = {  ##neohellenic adjacent
 	religion = {
 		"neohellenic"
-		"allatist"
 	}
 	
 	templates = { 
@@ -430,7 +429,7 @@ culture = {  ##proletcult adjacent
 		texture = {
 			file = "gfx\\coats_of_arms\\pattern_communist.tga"
 			size = { x = 10 y = 2 }
-			noOfFrames = 40
+			noOfFrames = 20
 			color = 3
 			emblem = no
 		}
@@ -510,7 +509,7 @@ culture = {  ##jedinstvo adjacent
 		texture = {
 			file = "gfx\\coats_of_arms\\pattern_communist.tga"
 			size = { x = 10 y = 2 }
-			noOfFrames = 40
+			noOfFrames = 20
 			color = 3
 			emblem = no
 		}
@@ -1442,7 +1441,6 @@ culture = {
 		"bahai"
 		"yazidi"
 		"ahl_e_haqq"
-		"zghamist"
 	}
 	
 	templates = { 

@@ -25,6 +25,7 @@
 	trait=gregarious
 	trait=just
 	trait=kind
+	father=1346036
 	2600.1.1={birth=yes}
 	2691.1.1={death=yes}
 }
@@ -132,6 +133,7 @@
 	trait=gregarious
 	trait=ill
 	trait=ambitious
+	mother=1346035
 	2639.1.1={birth=yes}
 	2691.1.1={death=yes}
 }
@@ -359,10 +361,8 @@
 	trait=ambitious
 	trait=falconer
 	trait=stubborn
-	trait=twin
 	father=1346034
-	mother=1346035
-	2636.1.1={birth=yes}
+	2639.1.1={birth=yes}
 	2691.1.1={death=yes}
 }
 
@@ -406,9 +406,9 @@
 	trait=falconer
 	trait=kind
 	trait=scarred_mid
-	trait=twin
 	father=1346034
-	mother=1346035
+	dna="0fcfd0e0000"
+	properties="ob00j000000000000000000000000000000000"
 	2636.1.1={birth=yes}
 	2691.1.1={death=yes}
 }
@@ -422,9 +422,9 @@
 	trait=ambitious
 	trait=falconer
 	trait=cruel
+	father=1346037
 	2615.1.1={birth=yes}
-	2635.1.1={add_spouse=1346035}
-	2651.1.1={death=yes}
+	2651.4.15={death=yes}
 }
 1346035={
 	name="Dro"
@@ -436,6 +436,46 @@
 	trait=grey_eminence
 	trait=gregarious
 	trait=kind
+	father=1346037
 	2615.1.1={birth=yes}
-	2645.1.1={death=yes}
+	2652.1.1={death=yes}
+}
+1346036={
+	name="Zanam"
+	dynasty=7500000 #Dalunpa
+	culture=kham
+	religion=ngocholugspa
+	trait=hunter
+	trait=ambitious
+	trait=falconer
+	trait=kind
+	father=1346038
+	2570.1.1={birth=yes}
+	2642.1.1={death=yes}
+}
+1346037={
+	name="Langdarma"
+	dynasty=7500000 #Dalunpa
+	culture=amdowa
+	religion=ngocholugspa
+	trait=hunter
+	trait=ambitious
+	trait=falconer
+	trait=stubborn
+	father=1346038
+	give_nickname=nick_the_great
+	2570.1.1={birth=yes}
+	2639.9.2={death=yes}
+}
+1346038={
+	name="Getong"
+	dynasty=7500000 #Dalunpa
+	culture=kham
+	religion=ngocholugspa
+	trait=hunter
+	trait=ambitious
+	trait=falconer
+	trait=kind
+	2540.1.1={birth=yes}
+	2590.1.1={death=yes}
 }

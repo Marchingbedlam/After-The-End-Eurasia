@@ -1033,7 +1033,8 @@ warrior_lodge_zun_rank_4_female;Heroine;Héroïne;Heldin;;Heroína;;;;;;;;;x
 warrior_lodge_zun_rank_4_male;Hero;Héros;Held;;Héroe;;;;;;;;;x
 warrior_lodge_zun_real;The Keepers of the Flame;Gardiens de la Flamme;Hüter der Flamme;;los Guardianes de la Llama;;;;;;;;x
 
-currency_name_hermetics;Esoteric Knowledge;Savoir ésotérique;Esoterisches Wissen;;Conocimiento esotérico;;;;;;;;;x
+currency_name_hermetics;Science;;;;;;;;;;;;x
+currency_name_asian_hermetics;Ethics;;;;;;;;;;;;x
 currency_name_monastic_order_stoics;Apatheia;Apatheia;Apatheia;;Apatheia;;;;;;;;x
 currency_name_monastic_order_benedictine;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
 currency_name_monastic_order_buddhist;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
@@ -1056,18 +1057,41 @@ currency_name_warrior_lodge_norse;Renown;Renommée;Bekanntheit;;Renombre;;;;;;;;;
 _rank_-1_female;Society Member;Membre sociétale;Zirkelmitglied;;Miembro de la sociedad;;;;;;;;;x
 _rank_-1_male;Society Member;Membre sociétal;Zirkelmitglied;;Miembro de la sociedad;;;;;;;;;x
 
-hermetics;the Hermetic Society;Hermétistes;Hermetische Gesellschaft;;la sociedad hermética;;;;;;;;;x
-hermetics_desc;Hermetics believe that there are deeply hidden secrets about this world that only the worthy can uncover. As a member of the Hermetics you will seek the truth in the stars and planets, through diligent experimentation, and by careful interpretation of ancient texts and symbols.;Les Hermétistes croient qu'il y a des secrets profondément enfouis à propos de ce monde qui méritent d'être découverts. En tant que membre des Hermétistes, vous chercherez la vérité dans les étoiles et les planètes, à travers l'expérimentation et l'interprétation minutieuse de textes et symboles anciens.;Hermetiker glauben, es gäbe tief verborgene Geheimnisse über diese Welt, die nur jemand entschleiern könne, der dieser Geheimnisse würdig sei. Als Mitglied der Hermetiker werdet Ihr durch unermüdliches Experimentieren und gewissenhafte Deutung antiker Texte und Symbole in den Sternen und Planeten nach der Wahrheit suchen.;;Los seguidores del hermetismo creen que existen secretos ocultos sobre este mundo que solo los dignos pueden descubrir. Como miembro de los herméticos, buscarás la verdad en las estrellas y en los planetas mediante una experimentación afanosa y una cuidada interpretación de los textos y símbolos antiguos.;;;;;;;;;x
+hermetics;Erasmus;;;;;;;;;;;;x
+hermetics_desc;Erasmus is a centuries-old scientific organization that, before the Event, united people of different faiths and nationalities into one community striving for justice and taking the humanist Erasmus of Rotterdam as its model.;;;;;;;;;;;;x
 hermetics_horoscope_cooldown_tooltip;Has NOT already had their horoscope examined\n;N'a pas déjà eu son horoscope étudié\n;Hatte noch KEINE Deutung des Horoskops\n;;Aún no han estudiado su horóscopo.\n;;;;;;;;;x
 hermetics_leader_desc;[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];;[GetSocietyLeaderDesc];;;;;;;;;x
-hermetics_rank_1_female;Neophyte;Néophyte;Neophyt;;Neófita;;;;;;;;;x
-hermetics_rank_1_male;Neophyte;Néophyte;Neophyt;;Neófito;;;;;;;;;x
-hermetics_rank_2_female;Initiate;Initiée;Novizin;;Iniciada;;;;;;;;;x
-hermetics_rank_2_male;Initiate;Initié;Novize;;Iniciado;;;;;;;;;x
-hermetics_rank_3_female;Adept;Adepte;Adeptin;;Adepta;;;;;;;;;x
-hermetics_rank_3_male;Adept;Adepte;Adept;;Adepto;;;;;;;;;x
-hermetics_rank_4_female;Maga;Mage;Magus;;Sabia;;;;;;;;;x
-hermetics_rank_4_male;Magus;Mage;Magus;;Sabio;;;;;;;;;x
+hermetics_rank_1_female;Graduate;;;;;;;;;;;;x
+hermetics_rank_2_female;Lecturer;;;;;;;;;;;;x
+hermetics_rank_3_female;Professor;;;;;;;;;;;;x
+hermetics_rank_4_female;Dean;;;;;;;;;;;;x
+hermetics_rank_1_male;Graduate;;;;;;;;;;;;x
+hermetics_rank_2_male;Lecturer;;;;;;;;;;;;x
+hermetics_rank_3_male;Professor;;;;;;;;;;;;x
+hermetics_rank_4_male;Dean;;;;;;;;;;;;x
+
+eastern_hermetics;The Schools of Learning;;;;;;;;;;;;x
+eastern_hermetics_desc;Since the Event, the revitalization of the Confucian School of Learning spread across Asia from China. They believe that the way things once was can be rediscovered by the well-educated and worthy among society. As a member of the Schools of Learning you will seek the truth in the by the rigorous application of ethics and diligent experimentation, and by careful interpretation of ancient texts and symbols.;;;;;;;;;;;;x
+eastern_hermetics_rank_1_female;Jìnshì;;;;;;;;;;;;x
+eastern_hermetics_rank_2_female;Tànhua;;;;;;;;;;;;x
+eastern_hermetics_rank_3_female;Bangyan;;;;;;;;;;;;x
+eastern_hermetics_rank_4_female;Zhuàngyuán;;;;;;;;;;;;x
+eastern_hermetics_rank_1_male;Jìnshì;;;;;;;;;;;;x
+eastern_hermetics_rank_2_male;Tànhua;;;;;;;;;;;;x
+eastern_hermetics_rank_3_male;Bangyan;;;;;;;;;;;;x
+eastern_hermetics_rank_4_male;Zhuàngyuán;;;;;;;;;;;;x
+
+african_hermetics;Bibliotheca Alexandrina;;;;;;;;;;;;x
+african_hermetics_desc;For centuries, the Bibliotheca Alexandrina was the repository of all knowledge from across the known world. However, after its destruction, some dedicated to the Truth continued its legacy through the teachings of Hypatia, Hermes Trismegistus, and other enlightened figures.;;;;;;;;;;;;x
+african_hermetics_rank_1_female;Adept;;;;;;;;;;;;x
+african_hermetics_rank_2_female;Philosopher;;;;;;;;;;;;x
+african_hermetics_rank_3_female;Teacher;;;;;;;;;;;;x
+african_hermetics_rank_4_female;Master;;;;;;;;;;;;x
+african_hermetics_rank_1_male;Adept;;;;;;;;;;;;x
+african_hermetics_rank_2_male;Philosopher;;;;;;;;;;;;x
+african_hermetics_rank_3_male;Teacher;;;;;;;;;;;;x
+african_hermetics_rank_4_male;Master;;;;;;;;;;;;x
+
 hermetics_scrying_cooldown_tooltip;NOT already carrying a premonition of things to come\n;Ne fait pas déjà une prémonition\n;hat KEINE Vorahnung der Dinge, die sich ereignen werden\n;;Aún no tiene una premonición sobre el futuro.\n;;;;;;;;;x
 hermetics_wrote_magnum_opus_cd_tooltip;§Y[Root.GetTitledFirstName]§! has not already written a Magnum Opus\n;[Root.Get_Le_TitledFirstNameJ] n'a pas déjà écrit un magnum opus\n;§Y[Root.GetTitledFirstName]§! hat noch nicht ein Magnum Opus geschrieben\n;;§Y[Root.GetTitledFirstName]§! aún no ha escrito una magnum opus.\n;;;;;;;;;x
 hermetics_wrote_magnum_opus_duplicate;Does NOT already own Magnum Opuses on all topics.\n;Ne possède pas déjà des magnum opus sur tous les sujets.\n;Ist NICHT in Besitz eines Magnum Opus in allen Wissensbereichen.\n;;Aún no posee magnum opus sobre todos los temas.\n;;;;;;;;;x

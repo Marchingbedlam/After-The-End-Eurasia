@@ -1387,11 +1387,19 @@
 	dynasty=7534035
 	religion=catholic
 	culture=umbrian
-	trait="celibate"
 	trait="shy"
 	trait="zealous"
+	trait="erudite"
+	trait="scholar"
+	trait="patient"
 	give_nickname=nick_the_great
 	2279.5.19={birth=yes}
+	2317.8.1={
+		create_bloodline={
+			type=francimagni_bloodline
+			has_dlc="Holy Fury"
+		}
+	}
 	2322.11.29={death=yes}
 }
 
@@ -1602,6 +1610,9 @@
 	trait="hunchback"
 	give_nickname=nick_the_hunchback
 	2392.9.19={birth=yes}
+	2423.7.11={ #Morganatical Marriage
+	    add_spouse=8002181
+	}
 	2451.10.9={death=yes}
 }
 
@@ -1754,7 +1765,7 @@
 	religion=catholic
 	culture=slovene
 	father=8002069
-	mother=8002069
+	mother=8002070
 	2491.6.30={birth=yes}
 	2513.5.19={
 	   death={
@@ -2702,4 +2713,20 @@
 	disallow_random_traits=yes
 	1295.1.1={birth=yes}
 	1383.1.1={death=yes}
+}
+
+8002181={
+	name="Orania"
+	female=yes
+	religion=catholic
+	culture=friulian
+	trait="ugly"
+	trait="genius"
+	trait="club
+	trait="kind"
+	trait="patient"
+	trait="content"
+	trait="pious"
+	2399.4.7={birth=yes}
+	2466.10.8={death=yes}
 }

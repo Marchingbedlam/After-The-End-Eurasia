@@ -16,10 +16,54 @@ EVTOPTA_papal_3;Excellent.;;;;;;;;;;;x
 tooltip_elector_is_papist;Both the elector and candidate are papists.;;;;;;;;;;;x
 tooltip_elector_is_seculares;Both the elector and candidate are seculares.;;;;;;;;;;;x
 
+#### Roman Empire ####
+e_sanctum_imperium;Sanctum Imperium Romanum;;;;;;;;;;;x
+IMPERATOR;Imperator;;;;;;;;;;;x
+IMPERATOR_FEMALE;Imperatora;;;;;;;;;;;x
+italian_bureaucratic_government;Roman Bureaucracy;;;;;;;;;;;x
+italian_bureaucratic_government_desc;The system of government in the Sanctum Imperium Romanum is based on a semi-feudal structure of society and the decisive role of the magistrates in enforcing the laws passed by the Emperor and the Senate.;;;;;;;;;;;x
+count_italian_bureaucratic_government;Subprefect;;;;;;;;;;;;;x
+count_female_italian_bureaucratic_government;Subprefecta;;;;;;;;;;;;;x
+county_us_italian_bureaucratic_government;Subprefecture;;;;;;;;;;;;;x
+county_of_italian_bureaucratic_government;Subprefecture of;;;;;;;;;;;;;x
+duke_us_army_government;Prefect;;;;;;;;;;;;;x
+duke_female_us_army_government;Prefecta;;;;;;;;;;;;;x
+duchy_us_army_government;Prefecture;;;;;;;;;;;;;x
+duchy_of_us_army_government;Prefecture of;;;;;;;;;;;;;x
+gov_roman_state;Sacrum Romanum Imperium Nationis Italicae;;;;;;;;;;;;;x
+gov_roman_vassal;Imperial Administration;;;;;;;;;;;;;x
+GRAND_DUKE;Grand Duke;;;;;;;;;;;;;x
+GRAND_DUKE_FEMALE;Grand Duchess;;;;;;;;;;;;;x
+restore_hre;Ask the Pope for the Imperial Crown;;;;;;;;;;;;;x
+restore_hre_desc;The crown of the Sanctum Imperium Romanum, a mighty empire whose history dates back to the generation of the first Christian martyrs, is empty and no one wears it. You, as the unifier of part of Italy, have sufficient standing to ask the Pope, the traditional custodian of the crown, for your coronation and to establish you as Emperor of All Italians.;;;;;;;;;;;;;x
+hre_unify_italy_tooltip;You must also completely control minimally three de iure kingdoms of Sanctum Imperium Romanum;;;;;;;;;;;;;x
+title_senator;Senator;;;;;;;;;;;;;x
+title_senator_desc;Senator;;;;;;;;;;;;;x
+succ_sanctum_imperium_elective;Roman Elective;;;;;;;;;;;;;x
+succ_sanctum_imperium_elective_desc;Roman Elective;;;;;;;;;;;;;x
+sanctum_imperium_elective;Roman Elective;;;;;;;;;;;;;x
+sanctum_imperium_elective_desc;Roman Elective;;;;;;;;;;;;;x
+EVTDESC_roman_2;The Holy Father has officially accepted your request and has today proclaimed you Emperor of the Holy Roman Empire, Protector of Italy, and Defensor Fidei.;;;;;;;;;;;x
+EVTOPTA_roman_2;Nice;;;;;;;;;;;x
+EVTDESC_roman_3;The Holy Father has officially rejected your request and declared you unworthy of the honor of being Roman Imperator.;;;;;;;;;;;x
+EVTOPTA_roman_3;Humbly accept his opinion;;;;;;;;;;;x
+EVTOPTB_roman_3;This means war!;;;;;;;;;;;x
+CB_NAME_DEMAND_HRE;War for the Imperial Crown;;;;;;;;;;;x
+WAR_NAME_DEMAND_HRE;War for the Imperial Crown;;;;;;;;;;;x
+title_roman_ombudsman;Defensor Civilis;;;;;;;;;;;x
+title_roman_ombudsman_desc;The Defensor Civilis, also known in Italian as the Difensore civico, is one of the most respected offices, established during the reign of Imperator Francesco IV the Hunchback. Its role is to protect the rights of the Imperator's subjects and to ensure that both their long-standing and newly granted privileges and rights are upheld.;;;;;;;;;;;x
+title_member_of_high_council_of_the_judiciary;Appointed Member of the High Council of the Judiciary;;;;;;;;;;;x
+title_member_of_high_council_of_the_judiciary_desc;The High Council of the Judiciary (Consiglio Superiore della Magistratura) is one of the oldest institutions in Italy, existing intermittently since the last decades before the Event. It is responsible for appointing judges throughout Italy. Two-thirds of the members are elected by the judges themselves, but the remaining one-third, or 10 people, are appointed by the Emperor at his discretion. Having an influence on the appointment of judges and ensuring the high quality of jurisprudence is a source of prestige for the members of the council.;;;;;;;;;;;x
+title_praetor_urbanus;Praetor Urbanus;;;;;;;;;;;;;x
+title_praetor_urbanus_desc;Praetor Urbanus is an imperial official who, by the Imperator's mandate, holds jurisdiction over civil disputes between citizens. He carries out his duties based on the Praetorian Edict—a document he himself issues, which defines the types of cases that may be brought before him and the procedures to be followed. In his rulings, he bases his decisions on the principles of equity and the provisions of the Praetorian Edict. While his role was once more significant, his importance has diminished since the introduction of a requirement for both parties to consent to proceedings before him.;;;;;;;;;;;;;x
+title_praetor_peregrinus;Praetor Peregrinus;;;;;;;;;;;;;x
+title_praetor_peregrinus_desc;Praetor Peregrinus is an imperial official who, by the Imperator's mandate, holds jurisdiction over disputes between citizens of the Empire and foreigners residing within its territory. In his actions, he is guided by the provisions set forth in his Praetorian Edict, which defines the specific procedures for such cases. Unlike in earlier times, the praetor no longer adjudicates all disputes of this nature; rather, he serves only as an appellate and extraordinary authority.;;;;;;;;;;;;;x
+
+
 ############## Third Romanism
 choose_third_romanist_branch;Choose your affiliation;;;;;;;;;;;;;x
 choose_third_romanist_branch_desc;Every follower of Third Romanism has their own affiliation, a group of followers of this religion that shares certain characteristics different from other groups. As a follower of this religion, you can also join one of these groups.;;;;;;;;;;;;;x
-EVTDESC_third_romanist_1;Each follower of Third Romanism has their own affiliation, a group of followers of this religion that shares certain characteristics distinct from other groups. Juvenalists are orthodox Third Romanists based on the writings of Mazzini the Prophet; Palladists are Cynics and Subjectivists drawn from Machiavelli; Actionists are worshippers of Hercules Garibaldi, a pre-event hero and warrior; and Majorians are cultists of the imperial side of ancient Rome and the unity of nations in the Mediterranean.;;;;;;;;;;;;;x
+EVTDESC_third_romanist_1;Each follower of Third Romanism has their own affiliation, a group of followers of this religion that shares certain characteristics distinct from other groups. Juvenalists are orthodox Third Romanists based on the writings of Mazzini the Prophet; Palladists are Cynics and Subjectivists drawn from Machiavelli, Actionists are worshippers of Hercules Garibaldi, a pre-event hero and warrior, and Majorians are cultists of the imperial side of ancient Rome and the unity of nations in the Mediterranean.;;;;;;;;;;;;;x
 EVTOPTA_third_romanist_1;Became Mazzini's most faithful follower;;;;;;;;;;;;;x
 EVTOPTB_third_romanist_1;Become Garibaldi's soldier;;;;;;;;;;;;;x
 EVTOPTC_third_romanist_1;Join the Prince's disciples;;;;;;;;;;;;;x
@@ -45,35 +89,73 @@ cause_local_peasant_revolt_desc;The Carbonari leaders have always had a knack fo
 cause_local_peasant_revolt_power_desc;Enables the decision to cause peasant revolt in some province, in exchange for [Root.Society.GetCurrencyName];;;;;;;;;;;;;x
 EVTDESC_third_romanist_3;Because you joined the Carbonari conspiracy, you became a true citizen of the Third Rome, the People's Rome. Believe in its faith and in no other than that which Mazzini passed on to your spiritual ancestors.;;;;;;;;;;;;;x
 EVTOPTA_third_romanist_3;Long live the Third Rome;;;;;;;;;;;;;x
-
-#### Rest of it ###
-e_sanctum_imperium;Sanctum Imperium Romanum;;;;;;;;;;;x
-IMPERATOR;Imperator;;;;;;;;;;;x
-IMPERATOR_FEMALE;Imperatora;;;;;;;;;;;x
-italian_bureaucratic_government;Roman Bureaucracy;;;;;;;;;;;x
-italian_bureaucratic_government_desc;The system of government in the Sanctum Imperium Romanum is based on a semi-feudal structure of society and the decisive role of the magistrates in enforcing the laws passed by the Emperor and the Senate.;;;;;;;;;;;x
-count_italian_bureaucratic_government;Subprefect;;;;;;;;;;;;;x
-count_female_italian_bureaucratic_government;Subprefecta;;;;;;;;;;;;;x
-county_us_italian_bureaucratic_government;Subprefecture;;;;;;;;;;;;;x
-county_of_italian_bureaucratic_government;Subprefecture of;;;;;;;;;;;;;x
-duke_us_army_government;Prefect;;;;;;;;;;;;;x
-duke_female_us_army_government;Prefecta;;;;;;;;;;;;;x
-duchy_us_army_government;Prefecture;;;;;;;;;;;;;x
-duchy_of_us_army_government;Prefecture of;;;;;;;;;;;;;x
-gov_roman_state;Sacrum Romanum Imperium Nationis Italicae;;;;;;;;;;;;;x
-gov_roman_vassal;Imperial Administration;;;;;;;;;;;;;x
-GRAND_DUKE;Grand Duke;;;;;;;;;;;;;x
-GRAND_DUKE_FEMALE;Grand Duchess;;;;;;;;;;;;;x
-restore_hre;Ask the Pope for the Imperial Crown;;;;;;;;;;;;;x
-restore_hre_desc;The crown of the Sanctum Imperium Romanum, a mighty empire whose history dates back to the generation of the first Christian martyrs, is empty and no one wears it. You, as the unifier of part of Italy, have sufficient standing to ask the Pope, the traditional custodian of the crown, for your coronation and to establish you as Emperor of All Italians.;;;;;;;;;;;;;x
-hre_unify_italy_tooltip;You must also completely control minimally three de iure kingdoms of Sanctum Imperium Romanum;;;;;;;;;;;;;x
-EVTNAME_sanctum_imperium.1;Imperium Romanum renovatum...;;;;;;;;;;;;;x
-EVTDESC_sanctum_imperium.1;Although it seemed that the Sanctum Imperium Romanum, the ancient empire that had existed since the time of Augustus, would never have another Emperor, today the interregnum ended. The new Emperor was solemnly crowned Roman Emperor today by the Pope in St. Peter's Basilica in Rome. The new Augustus was greeted with applause and cheers worthy of ancient emperors who returned from the wars in the East in a halo of triumph and brilliance.;;;;;;;;;;;;;x
-EVTOPTA_sanctum_imperium.1;Ave Caesar Augustus;;;;;;;;;;;;;x
-EVTOPTB_sanctum_imperium.1;Ave Me;;;;;;;;;;;;;x
-title_senator;Senator;;;;;;;;;;;;;x
-title_senator_desc;Senator;;;;;;;;;;;;;x
-succ_sanctum_imperium_elective;Roman Elective;;;;;;;;;;;;;x
-succ_sanctum_imperium_elective_desc;Roman Elective;;;;;;;;;;;;;x
-sanctum_imperium_elective;Roman Elective;;;;;;;;;;;;;x
-sanctum_imperium_elective_desc;Roman Elective;;;;;;;;;;;;;x
+go_to_third_romanist_pilgrimage;Go on Pellegrinaggio Patriottico;;;;;;;;;;;;;x
+go_to_third_romanist_pilgrimage_desc;Pellegrinaggio Patriottico means the Patriotic Pilgrimage, the pilgrimage of a patriot of the Third Rome to this Rome in order to pay homage to the Prophet Mazzini and Hercule Garibaldi, two great builders of the Third Rome, the People's Rome, which will this time be the Eternal Rome.;;;;;;;;;;;;;x
+EVTDESC_third_romanist_4;Pellegrinaggio patriottico heads where all roads lead, to Rome. Rome, the most magnificent city in the world. Now you begin preparations for this noble journey, which will last several days.;;;;;;;;;;;;;x
+EVTOPTA_third_romanist_4;Nice;;;;;;;;;;;;;x
+EVTDESC_third_romanist_5;Everything is packed, it's time to set off on the journey to Rome: the city of Mazzini, Garibaldi, the Divine Cladius and Marcus Aurelius, and many other people serving God.;;;;;;;;;;;;;x
+EVTOPTA_third_romanist_5;Ehi, avventura!;;;;;;;;;;;;;x
+EVTNAME_third_romanist_6;Rome;;;;;;;;;;;;;x
+EVTDESC_third_romanist_6;You reach Rome, the Eternal City. A city that, according to divine and human promises, will never fall and will endure forever as the eternal capital of freedom. This was foretold to him by all true prophecies. You pass through the gates of Rome, so dear to you. You pass by formerly Catholic temples that serve not what you consider superstition, reaction, and tyranny, but the oh-so-reasonable cult of the Third Rome. You pass the Colosseum, the playground of bloody tyrants, and reach the Roman Forum, the heart of republicanism. Here, free people decided the fate of Rome and here they will continue to decide. You kneel, kiss this sacred ground, and offer prayers to give thanks for the Prophet Mazzini and his teachings.;;;;;;;;;;;;;x
+EVTOPTA_third_romanist_6;Roma diu vivat!;;;;;;;;;;;;;x
+EVTDESC_third_romanist_7;You have returned to your realm, and can now proudly and sincerely say that you reached Rome and visited the holy places erected and maintained despite the Event by the will of God.;;;;;;;;;;;;;x
+EVTOPTA_third_romanist_7;Nice;;;;;;;;;;;;;x
+EVTDESC_third_romanist_8;You meet an old man sitting on a wall, carving two unicorns with a chisel, one with the inscription "Ferrari" and the other with the three letters "Lam" carved on it. He is humming a song about some Josca and at the same time thinking about how to achieve the best unicorn shape.;;;;;;;;;;;;;x
+EVTOPTA_third_romanist_8;Ask him about Joska;;;;;;;;;;;;;x
+EVTOPTB_third_romanist_8;Ask him about unicorns;;;;;;;;;;;;;x
+EVTOPTC_third_romanist_8;Don't talk to him;;;;;;;;;;;;;x
+EVTNAME_third_romanist_9;Joska in Russia;;;;;;;;;;;;;x
+EVTDESC_third_romanist_9;The man begins to tell you about Joska, a red-haired girl who agreed to be a medic in one of the legions sent to Russia by order of Emperor Vittorio Emmanuel, on the advice of Benito the Evil, to support the war against the Red Tsar. The trenches there were where many Italian soldiers spent time during the Second Great War, and Joska, under fire from Red arrows, would sneak from trench to trench carrying provisions and medicine, and sometimes running from trench to trench with a ciaramella flute or a tamburello drum to play for the tired soldiers to dance. The man even mentions a folk song about it, but he can't recall more than "Joska, Joska, Joska, jump over the trench!";;;;;;;;;;;;;x
+EVTOPTA_third_romanist_9;Brave folkloric girl;;;;;;;;;;;;;x
+EVTOPTB_third_romanist_9;She should be grazing sheep and milking cows, not going to war;;;;;;;;;;;;;x
+EVTNAME_third_romanist_10;Ferrari and Lamborghini;;;;;;;;;;;;;x
+EVTDESC_third_romanist_10;The man begins to tell you about Ferrari and Lamborghini, two unicorns with golden horns. They were the most expensive horses in all of Italy, bred by the Prophet Mazzini himself. In his old age, he began breeding horses in his stables until two horses unlike any other were born: the first, Mazzini named Ferrari after the city of Ferrara, and the second, Lamborghini, after his friend. Both horses quickly became so fast that Mazzini and his family would ride them from Naples to Venice and back in a single day. This became the source of their fame and the many offers, with wealthy men offering the equivalent of entire cities to buy them. The Prophet Mazzini never sold them, and in his will, he ordered them to be liberated and released into the forests, where for many years they ran, picking up lost children and killing escaping murderers and escaped prisoners, until they were never heard from again.;;;;;;;;;;;;;x
+EVTOPTA_third_romanist_10;Beautiful legend;;;;;;;;;;;;;x
+EVTOPTB_third_romanist_10;Folk nonsense;;;;;;;;;;;;;x
+EVTDESC_third_romanist_11;As you walk through the forest, you suddenly see several thugs walking towards you.;;;;;;;;;;;;;x
+EVTOPTA_third_romanist_11;God save me!;;;;;;;;;;;;;x
+EVTDESC_third_romanist_12;During your journey, you find icons associated with Jacobinism, the French religion of liberty and fraternity, which, unlike yours, worships not God but the Republic. Some of your co-religionists consider the Jacobins brothers, differing from us only in details, while others consider them apostates and pioneers not of true liberty, but of tyranny with the word "freedom" on its lips.;;;;;;;;;;;;;x
+EVTOPTA_third_romanist_12;Honor them;;;;;;;;;;;;;x
+EVTOPTB_third_romanist_12;Destroy them;;;;;;;;;;;;;x
+EVTOPTC_third_romanist_12;Sell them;;;;;;;;;;;;;x
+third_romanist_honoured_jacobin_icons;Honored Jacobin icons;;;;;;;;;;;;;x
+third_romanist_destroyed_jacobin_icons;Honored Jacobin icons;;;;;;;;;;;;;x
+EVTNAME_third_romanist_13;Mysterious Talented Mister;;;;;;;;;;;;;x
+EVTDESC_third_romanist_13;You stop at a village inn. As you sit down at the table and enjoy a simple dinner, a stranger approaches you and strikes up a conversation. You chat about nothing in particular, until you develop a tentative bond that lets you know this mysterious man has many talents. He suggests that you spend the rest of your pilgrimage together, as he, too, is heading to Rome, and you agree. When you finish eating, you leave together and travel the road together. On the way, however, he tells you that his mother recently died and that she told him her father's name. When he tells you, it turns out it's your father's name, meaning you're not strangers but brothers. When you tell him this, he seems a little surprised, but he's pleased, and asks you to invite him to yours as your courtier.;;;;;;;;;;;;;x
+EVTOPTA_third_romanist_13;Invite him to court and acknowledge him as your brother;;;;;;;;;;;;;x
+EVTOPTB_third_romanist_13;Invite him to court;;;;;;;;;;;;;x
+EVTOPTC_third_romanist_13;Give him some money;;;;;;;;;;;;;x
+EVTOPTD_third_romanist_13;Let your paths diverge;;;;;;;;;;;;;x
+EVTDESC_third_romanist_20;While wandering through one of the towns, you are accosted by a ragged man with balance problems who asks you for money for "rolls".;;;;;;;;;;;;;x
+EVTOPTA_third_romanist_20;Donate him;;;;;;;;;;;;;x
+EVTOPTB_third_romanist_20;Ignore him;;;;;;;;;;;;;x
+EVTOPTC_third_romanist_20;Give him money for an rental room and order him not to drink anymore;;;;;;;;;;;;;x
+EVTOPTD_third_romanist_20;Buy more "rolls" and drink with him;;;;;;;;;;;;;x
+EVTDESC_third_romanist_21;You are passing by a certain town and hear that a well-known and respected theater troupe has arrived.;;;;;;;;;;;;;x
+EVTOPTA_third_romanist_21;Leave the theater to the common people;;;;;;;;;;;;;x
+EVTOPTB_third_romanist_21;Buy a ticket to the spectacle;;;;;;;;;;;;;x
+EVTNAME_third_romanist_22;Spectacle;;;;;;;;;;;;;x
+EVTDESC_third_romanist_22_FIRST;You take your seat. The play the actors will present to you and others today is "La locandiera," written by the mythical master Goldoni. Curious, you watch it. This play tells the story of Mirandolina, a Florentine innkeeper, who is courted by two noblemen: the Marchese of Forlipopoli, a poor old nobleman, and the Conte of Albafiorita, a nouveau riche. She intends neither to marry, but at the same time wants to profit from their courtship. This equilibrium is broken by Ripafratta, who arrives in Florence despising women, which paradoxically causes Mirandolina to decide to make him fall in love with her, which she succeeds in doing. Soon, a quarrel breaks out between the landlady's two "older" suitors and Ripafratta, which leads to the landlady deciding to marry Fabrizio, a servant at the inn, and at the end of the play she appeals to men not to be deceived. When the curtain falls, some laugh, others are silent, and some mutter to themselves.;;;;;;;;;;;;;x
+EVTDESC_third_romanist_22_SECOND;You take your seat. The play the actors will present to you and others today is "Rome, Open City", written by the mythical master Rosselini. Curious, you watch it. The play tells the story of the time when Emperor Victor Emmanuel was under the influence of Benito the Cruel, a charlatan and warlord who seduced him with a lust for conquest and the restoration of Rome's former glory, divorced from philosophical values. The main characters are Luigi Ferraris, a follower of Mazzini, the Catholic priest Don Pietro, Francesco, and his fiancée Pina. While watching this work, you witness Pina's martyrdom at the hands of Germanic thugs, Francesco's torture and death, and the death of Don Pietro himself, who, at the end, prays and gazes in the distance at St. Peter's Basilica. Although the ending is sad, the fate of the wicked is no better either. Marina, who betrayed Mazzini's followers, faints and dies, and Ingrid, the Bavarian witch, takes her pearls and fur, allowing the devils to take her soul to hell. As the curtain falls, the audience erupts in emotion; some weep, others remain silent.;;;;;;;;;;;;;x
+EVTDESC_third_romanist_22_THIRD;You take your seat. The play the actors will present to you and other people today is "Quo Vadis", written by author whose name was lost in the mists of history. Curious, you watch it. The play tells the tragic love story of the pagan Marcus Vinicius for Lygia. Initially lustful and selfish, Marcus encounters obstacles on his way to his beloved. When the devilish Nero seizes her from her guardians and quietly sends her to him at night, the girl is rescued, and the young patrician sets out to search for her, encountering Christians. These Christians, led by Peter the Apostle, are hiding from the emperors' despotism and their persecution based on superstition. Over the course of the play, Marcus Vinicius gradually transforms into a Christian, sympathizing with the slaves. When Lygia is captured, Ursus, her faithful companion, and a giant kill an aurochs. Nero, compelled by the united will of those gathered in the Colosseum, pardons Lygia, who marries Vinicius and departs with him for Sicily. When the play ends, everyone applauds enthusiastically, celebrating the happy ending.;;;;;;;;;;;;;x
+EVTDESC_third_romanist_22_FOURTH;You take your seat. The play the actors will present to you and other people today is "Romeo and Juliet", written by the mythical master Shakespeare. Curious, you watch it. The play tells the story of a love story in Verona. There, Romeo Montague falls in love with Juliet Capulet, and the feeling is mutual. The two marry secretly despite their fathers' and mothers' feuds, and their union is blessed by the hieromonk Laurence. When Juliet's family decides to marry her to Paris, she buys and takes a potion that will temporarily lull her to appear dead. Romeo, unaware of this, believes Juliet is dead, buys poison and goes to the tomb, where he kills Paris and commits suicide. When Juliet awakens, she sees her beloved's body above her and also commits suicide. At the end of the play, the members of two families, seeing the bodies of their children, reconcile and end their great quarrel.;;;;;;;;;;;;;x
+EVTOPTA_third_romanist_22;Nice show;;;;;;;;;;;;;x
+EVTDESC_third_romanist_23;As you walk through the forest, you encounter villagers gathered around a makeshift wooden altar. They are led by the oldest-looking man, who holds a knife in one hand and a capon in the other. He recites formulas about the glory of ancient Rome and asks Heaven to intercede through the divine Claudius, to whom the assembled people are offering a sacrifice. When they notice you, a peasant suggests you buy a chicken from him and take it to the elder, so that you too can join in the sacrifice.;;;;;;;;;;;;;x
+EVTOPTA_third_romanist_23;Buy a chicken and join the sacrifice;;;;;;;;;;;;;x
+EVTOPTB_third_romanist_23;Watch the sacrifice;;;;;;;;;;;;;x
+EVTOPTC_third_romanist_23;Get away from these worshippers of superstition;;;;;;;;;;;;;x
+EVTDESC_third_romanist_24;Walking along a forest path, you meet a monk. He tells you he's also on a pilgrimage to Rome and invites you to taste his liqueur, which he carries with him. You agree, and the two of you spend some time talking. During the conversation, you see a slightly different image than the legends have told you: not of a greedy, acquisitive monk, but of a friend of the people who preaches the Gospel.;;;;;;;;;;;;;x
+EVTOPTA_third_romanist_24;Hmm, maybe they are right after all;;;;;;;;;;;;;x
+EVTOPTB_third_romanist_24;One swallow does not make a spring;;;;;;;;;;;;;x
+EVTOPTA_third_romanist_26;God, save me...;;;;;;;;;;;;;x
+majoran_sacrafice;Make a Sacrificium;;;;;;;;;;;;;x
+majoran_sacrafice_desc;The virgin goddess Italia, with her faithful sons, Divine Claudius and Divine Marcus Aurelius, demand sacrifices for their glory in exchange for the glory of the Third Rome and freedom for all humanity. As Majoranus, following the example of the great patricians and philosophers of the First Rome, perform the Sacrificium, an ancient and pure sacrifice for their glory.;;;;;;;;;;;;;x
+EVTDESC_third_romanist_29;As Pater Familias, you are also a household priest, offering your own sacrifice to the glory of Italy and its divine Caesars. So you hear the news among your courtiers and invite them to the Sacrificium.;;;;;;;;;;;;;x
+EVTOPTA_third_romanist_29;Dii facientes adiuvant;;;;;;;;;;;;;x
+EVTDESC_third_romanist_30;All the members of the household gather in the chapel. As the leader of the assembly, you take a knife and recite a prayer of thanksgiving over it in honor of Italia. What will you offer her today?;;;;;;;;;;;;;x
+EVTOPTA_third_romanist_30;A huge bull;;;;;;;;;;;;;x
+EVTOPTB_third_romanist_30;A bull;;;;;;;;;;;;;x
+EVTOPTC_third_romanist_30;A cow;;;;;;;;;;;;;x
+EVTOPTD_third_romanist_30;A goat;;;;;;;;;;;;;x
+EVTDESC_third_romanist_31;You make a blood sacrifice, killing the consecrated animal with a knife. The animal is then handed over to the cook to be prepared, and everyone gathered in the chapel partakes of the sacrificial offering, having first recited a prayer of thanksgiving in honor of Italia.;;;;;;;;;;;;;x
+EVTOPTA_third_romanist_31;Laudetur Italia!;;;;;;;;;;;;;x

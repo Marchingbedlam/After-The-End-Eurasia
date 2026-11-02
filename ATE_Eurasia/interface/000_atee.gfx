@@ -1536,6 +1536,34 @@ spriteTypes = {
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
+	spriteType = {
+		name = "GFX_trait_third_romanist_pilgrim"
+		texturefile = "gfx/traits/third_romanist_pilgrim.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_kozachina_st_george"
+		texturefile = "gfx/traits/kozachina_saint_george.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_kozachina_st_john"
+		texturefile = "gfx/traits/kozachina_saint_john.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_kozachina_st_demetrius"
+		texturefile = "gfx/traits/kozachina_saint_demetrios.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
 	
 	#Ambitions
 	spriteType = {
@@ -1954,5 +1982,17 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_anti_pirate_expedition"
 		texturefile = "gfx\\interface\\decision_icon_pirate.dds"
+	}
+    spriteType = {
+		name = "GFX_celebrate_thanksgiving"
+		texturefile = "gfx\\interface\\decision_icon_celebrate_thanksgiving.dds"
+	}
+	spriteType = {
+		name = "GFX_hold_bonfire"
+		texturefile = "gfx\\interface\\decision_icon_hold_bonfire.dds"
+	}
+	spriteType = {
+		name = "GFX_invasion_of_america"
+		texturefile = "gfx\\interface\\decision_icon_invasion_of_america.dds"
 	}
 }

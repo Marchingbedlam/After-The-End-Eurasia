@@ -830,7 +830,7 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 	
-	##### Monastic Order Mariavite #####
+	##### Monastic Order Insular #####
 
 	spriteType = {
 		name = "GFX_society_main_background_monastic_order_insular"
@@ -841,6 +841,11 @@ spriteTypes = {
 		name = "GFX_icon_small_monastic_order_insular"
 		textureFile = "gfx\\interface\\societies\\symbol_small_monastic_order_insular.dds"
 		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_society_portrait_ring_monastic_order_insular"
+		textureFile = "gfx\\interface\\societies\\portrait_ring_monastic_order_buddhist.dds"
 	}
 	
 	spriteType = {
@@ -917,6 +922,62 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_society_currency_hermetics"
 		textureFile = "gfx\\interface\\societies\\society_currency_hermetics.dds"
+	}
+	
+	##### African Hermetics #####
+
+	spriteType = {
+		name = "GFX_society_main_background_african_hermetics"
+		textureFile = "gfx\\interface\\societies\\society_bg_african_hermetics.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_small_african_hermetics"
+		textureFile = "gfx\\interface\\societies\\symbol_small_african_hermetics.dds"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_society_portrait_ring_african_hermetics"
+		textureFile = "gfx\\interface\\societies\\portrait_ring_devil_worshipers.dds"
+	}
+
+	spriteType = {
+		name = "GFX_society_portrait_ring_small_african_hermetics"
+		textureFile = "gfx\\interface\\societies\\portrait_ring_small_devil_worshipers.dds"
+	}
+
+	spriteType = {
+		name = "GFX_society_currency_african_hermetics"
+		textureFile = "gfx\\interface\\societies\\society_currency_devil_worshipers.dds"
+	}
+	
+	##### Eastern Hermetics #####
+
+	spriteType = {
+		name = "GFX_society_main_background_eastern_hermetics"
+		textureFile = "gfx\\interface\\societies\\society_bg_eastern_hermetics.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_eastern_hermetics"
+		textureFile = "gfx\\interface\\societies\\symbol_small_eastern_hermetics.dds"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_society_portrait_ring_eastern_hermetics"
+		textureFile = "gfx\\interface\\societies\\portrait_ring_monastic_order_buddhist.dds"
+	}
+
+	spriteType = {
+		name = "GFX_society_portrait_ring_small_eastern_hermetics"
+		textureFile = "gfx\\interface\\societies\\portrait_ring_small_monastic_order_buddhist.dds"
+	}
+
+	spriteType = {
+		name = "GFX_society_currency_eastern_hermetics"
+		textureFile = "gfx\\interface\\societies\\society_currency_monastic_order_buddhist.dds"
 	}
 
 	##### Stoics #####

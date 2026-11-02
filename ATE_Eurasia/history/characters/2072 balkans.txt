@@ -1457,7 +1457,7 @@
 	culture=bulgarian
 	father=2072266
 	2536.7.11={birth=yes}
-	2562.11.15={
+	2570.11.15={
 	   death={
 	      death_reason=death_childbirth
 	   }
@@ -1621,12 +1621,18 @@
 }
 
 2072278={ 
-	name="Konstantin"
+	name="Svetlozar"
 	dynasty=2047201 #Sratsimir
 	religion=orthodox
 	culture=bulgarian
 	father=2072277
-	2615.9.11={birth=yes}
+	mother=1993282
+	trait="mastermind_theologian"
+	trait="fat"
+	trait="shy"
+	trait="kind"
+	trait="content"
+	2606.6.11={birth=yes}
 	2662.7.15={death=yes}
 }
 
@@ -1652,8 +1658,11 @@
 	father=2072269
 	mother=2072268
 	trait="drunkard"
-	2562.4.16={birth=yes}
-	2615.5.22={
+	2570.11.15={birth=yes}
+	2594.1.1={
+	     add_spouse=1993282
+	}
+	2619.5.22={
 	  death={
 	     death_reason=death_execution
 		 killer=2072273

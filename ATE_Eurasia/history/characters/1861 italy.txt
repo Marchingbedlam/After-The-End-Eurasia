@@ -664,9 +664,8 @@
 	stewardship=7
 	intrigue=7
 	learning=6
+	father=1861323
 	2624.10.29={birth=yes}
-	2644.11.2={add_spouse=1861038
-	}
 	2680.1.1={death=yes}
 }
 1861038={
@@ -1639,6 +1638,8 @@
 	trait=lustful
 	father=1861195
 	2625.2.28={birth=yes}
+	2648.11.2={add_spouse=1861322
+	}
 	2680.1.1={death=yes}
 }
 1861089={
@@ -2365,6 +2366,7 @@
 	stewardship=8
 	intrigue=7
 	learning=5
+	father=1861316
 	2631.8.17={birth=yes}
 	2654.1.1={add_spouse=2202116}
 	2680.1.1={death=yes}
@@ -2441,6 +2443,7 @@
 	dynasty=2033229 #Crêuza
 	culture=ligurian
 	religion=catholic
+	father=1861341
 	2598.1.4={birth=yes}
 	2660.7.30={death=yes}
 }
@@ -2706,6 +2709,7 @@
 	dynasty=2029207 #del Grillo
 	culture=umbrian
 	religion=catholic
+	father=1861329
 	2601.5.31={birth=yes}
 	2658.3.9={death=yes}
 }
@@ -3201,9 +3205,6 @@
 	religion=catholic
 	father=1861291
 	2612.4.21={birth=yes}
-	2660.1.1={
-	  add_claim=e_sanctum_imperium
-	}
 	2652.8.14={death=yes}
 }
 1861231={
@@ -3811,7 +3812,12 @@
 	religion=catholic
 	father=1861295
 	2466.4.28={birth=yes}
-	2524.12.2={death=yes}
+	2508.7.13={
+	   death={
+	       death_reason=death_battle
+		   killer=8002141
+	   }
+	} 
 }
 1861295={
 	name="Eleuterio"
@@ -3888,6 +3894,7 @@
 	dynasty=2034227 #Morosini
 	culture=venetian
 	religion=catholic
+	father=1861303
 	2531.7.24={birth=yes}
 	2590.9.14={death=yes}
 }
@@ -3897,6 +3904,7 @@
 	dynasty=2034227 #Morosini
 	culture=venetian
 	religion=catholic
+	father=8002068
 	2495.5.19={birth=yes}
 	2559.4.26={death=yes}
 }
@@ -3936,12 +3944,12 @@
 	trait="administrator"
 	2610.10.5={birth=yes}
 	2631.1.1={
-	   add_spouse=1861316
+	   add_spouse=1861337
 	}
 	2670.1.1={death=yes}
 }
 
-1861316={
+1861337={
 	name="Anna"
 	female=yes
 	dynasty=2029202 #Chigi
@@ -3952,7 +3960,7 @@
 	2670.1.1={death=yes}
 }
 
-1861317={
+1861340={
 	name="Bartolomeo"
 	dynasty=7534090
 	culture=umbrian
@@ -3964,42 +3972,42 @@
 	trait="ambitious"
 	trait="deceitful"
 	father=1861306
-	mother=1861316
+	mother=1861337
 	2633.12.26={birth=yes}
 	2670.1.1={death=yes}
 }
 
-1861318={
+1861338={
 	name="Anna"
 	female=yes
 	dynasty=7534090
 	culture=umbrian
 	religion=catholic
 	father=1861306
-	mother=1861316
+	mother=1861337
 	2638.10.14={birth=yes}
 	2670.1.1={death=yes}
 }
 
-1861319={
+1861339={
 	name="Ovidia"
 	female=yes
 	dynasty=7534090
 	culture=umbrian
 	religion=catholic
 	father=1861306
-	mother=1861316
+	mother=1861337
 	2641.3.22={birth=yes}
 	2670.1.1={death=yes}
 }
 
-1861320={
+1861340={
 	name="Tommaso"
 	dynasty=7534090
 	culture=umbrian
 	religion=catholic
 	father=1861306
-	mother=1861316
+	mother=1861337
 	trait="hunchback"
 	trait="poet"
 	trait="zealous"
@@ -4127,4 +4135,306 @@
 	disallow_random_traits=yes
 	1875.1.1={birth=yes}
 	1925.1.1={death=yes}
+}
+
+1861316={
+	name="Zaccaia"
+	dynasty=2033232 #Usodimare
+	culture=ligurian
+	religion=catholic
+	trait=charismatic_negotiator
+	trait=weak
+	trait=quick
+	trait=ambitious
+	trait=greedy
+	trait=deceitful
+	trait=cynical
+	trait=erudite
+	diplomacy=10
+	martial=3
+	stewardship=9
+	intrigue=11
+	learning=10
+	father=1861316
+	2636.8.25={birth=yes}
+	2680.1.1={death=yes}
+}
+
+1861316={
+	name="Costante"
+	dynasty=2033232 #Usodimare
+	culture=ligurian
+	religion=catholic
+	father=1861317
+	2598.9.11={birth=yes}
+	2649.11.4={death=yes}
+}
+
+1861317={
+	name="Iacopo"
+	dynasty=2033232 #Usodimare
+	culture=ligurian
+	religion=catholic
+	father=1861318
+	2570.5.6={birth=yes}
+	2601.10.27={
+	   death={
+	      death_reason=death_poor_health
+	   }
+	}
+}
+
+1861318={
+	name="Costante"
+	dynasty=2033232 #Usodimare
+	culture=ligurian
+	religion=catholic
+	father=1861319
+	2536.9.5={birth=yes}
+	2580.8.28={
+	   death={
+	      death_reason=death_missing
+	   }
+	}
+}
+
+1861319={
+	name="Gian Batista"
+	dynasty=2033232 #Usodimare
+	culture=ligurian
+	religion=catholic
+	father=1861320
+	2490.6.21={birth=yes}
+	2559.5.22={death=yes}
+}
+
+1861320={
+	name="Paolo"
+	dynasty=2033232 #Usodimare
+	culture=ligurian
+	religion=catholic
+	father=1861321
+	2460.8.2={birth=yes}
+	2523.10.1={death=yes}
+}
+
+1861321={
+	name="Francesco"
+	dynasty=2033232 #Usodimare
+	culture=umbrian
+	religion=catholic
+	father=8002062
+	mother=8002181
+	2427.9.3={birth=yes}
+	2481.7.15={
+	   death={
+	      death_reason=death_execution
+		  killer=8002064
+	   }
+	}
+}
+
+1861322={
+	name="Amelia"
+	dynasty=2032260 #Guareschi
+	culture=romagnol
+	religion=catholic
+	female=yes
+	father=1861323
+	2627.5.11={birth=yes}
+	2680.1.1={death=yes}
+}
+
+1861323={
+	name="Carlo"
+	dynasty=2032260 #Guareschi
+	culture=romagnol
+	religion=catholic
+	father=1861324
+	2588.7.22={birth=yes}
+	2646.8.17={death=yes}
+}
+
+1861324={
+	name="Carlo"
+	dynasty=2032260 #Guareschi
+	culture=romagnol
+	religion=catholic
+	father=1861325
+	2550.10.4={birth=yes}
+	2617.7.11={death=yes}
+}
+
+1861325={
+	name="Tommaso"
+	dynasty=2032260 #Guareschi
+	culture=romagnol
+	religion=catholic
+	father=1861326
+	2521.7.11={birth=yes}
+	2572.3.25={death=yes}
+}
+
+1861326={
+	name="Camillo"
+	dynasty=2032260 #Guareschi
+	culture=romagnol
+	religion=catholic
+	father=1861327
+	2498.6.7={birth=yes}
+	2540.4.4={death=yes}
+}
+
+1861327={
+	name="Carlo"
+	dynasty=2032260 #Guareschi
+	culture=romagnol
+	religion=catholic
+	father=1861328
+	2460.8.18={birth=yes}
+	2519.7.6={death=yes}
+}
+
+1861328={
+	name="Carlo"
+	dynasty=2032260 #Guareschi
+	culture=romagnol
+	religion=catholic
+	father=1861043
+	trait="brilliant_strategist"
+	trait="strong"
+	trait="attractive"
+	trait="ambitious"
+	trait="wroth"
+	trait="chaste"
+	trait="gregarious"
+	trait="brave"
+	give_nickname=nick_the_great
+	father=8002062
+	mother=8002181
+	2429.11.12={birth=yes}
+	2481.10.9={
+	   death={
+	      death_reason=death_battle
+		  killer=8002064
+	   }
+	}
+}
+
+1861329={
+	name="Corvo"
+	dynasty=2029207 #del Grillo
+	culture=umbrian
+	religion=catholic
+	2554.9.18={birth=yes}
+	2614.8.11={death=yes}
+}
+
+1861330={
+	name="Francesco"
+	dynasty=7534257 #Gorloni
+	culture=umbrian
+	religion=catholic
+	father=1861331
+	trait="brilliant_strategist"
+	trait="chaste"
+	trait="patient"
+	trait="brave"
+	2470.4.2={birth=yes}
+	2508.7.13={
+	   death={
+	       death_reason=death_battle
+		   killer=8002141
+	   }
+	} 
+}
+
+1861331={
+	name="Aronne"
+	dynasty=7534257 #Gorloni
+	culture=umbrian
+	religion=catholic
+	father=8002062
+	mother=8002181
+	2432.8.11={birth=yes}
+	2485.8.11={death=yes}
+}
+
+1861332={
+	name="Senato Romano"
+	occluded=yes
+	culture=umbrian
+	religion=third_romanist
+	disallow_random_traits=yes
+	trait="legendary"
+	2000.1.1={birth=yes}
+	2273.5.1={death=yes}
+}
+
+1861333={
+	name="Bruto"
+	dynasty=7534258 #Di Gasperi
+	culture=umbrian
+	religion=catholic
+	trait="midas_touched"
+	trait="kind"
+	trait="gregarious"
+	trait="erudite"
+	trait="honest"
+	trait="saint"
+	2245.8.14={birth=yes}
+	2309.10.29={death=yes}
+}
+
+1861334={
+	name="Giovanni"
+	dynasty=7534258 #Di Gasperi
+	culture=umbrian
+	religion=catholic
+	father=1861333
+	2260.4.22={birth=yes}
+	2317.8.11={death=yes}
+}
+
+1861335={
+	name="Bruto"
+	dynasty=7534258 #Di Gasperi
+	culture=umbrian
+	religion=catholic
+	father=1861334
+	2291.9.11={birth=yes}
+	2334.6.7={death=yes}
+}
+
+1861336={
+	name="Alberto"
+	dynasty=7534258 #Di Gasperi
+	culture=umbrian
+	religion=catholic
+	father=1861335
+	2326.2.25={birth=yes}
+	2362.9.11={
+	   death={
+	      death_reason=death_murder_unknown
+	   }
+	}
+}
+
+1861341={
+	name="Ernesto"
+	dynasty=2033229 #Crêuza
+	culture=ligurian
+	religion=catholic
+	father=1861342
+	2564.9.2={birth=yes}
+	2627.5.11={death=yes}
+}
+
+1861342={
+	name="Napolion"
+	dynasty=2033229 #Crêuza
+	culture=ligurian
+	religion=catholic
+	2532.10.2={birth=yes}
+	2595.5.11={death=yes}
 }

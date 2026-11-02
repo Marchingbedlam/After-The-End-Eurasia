@@ -322,6 +322,7 @@
     trait=erudite
     trait=proud
     trait=diligent
+	father=3106029
     2636.1.1={birth=yes}
     2700.1.1={death=yes}
 }
@@ -470,4 +471,555 @@
 	trait=charitable
 	2626.1.1={birth=yes}
 	2691.1.1={death=yes}
+}
+
+3106007={ #Grand Legendary First Lord of Bhutan
+	name = "Ugyen"
+	dynasty=3104000 #Wangchuck
+	culture = ngalop
+	religion = rime
+	diplomacy = 12
+	martial = 12
+	intrigue = 8
+	stewardship = 10
+	learning = 8
+	trait = brilliant_strategist
+	trait = genius
+	trait = strong
+	trait = diligent
+	trait = just
+	trait = strategist
+	trait = shrewd
+	trait = brave
+	trait = gregarious
+	trait = legendary
+	occluded = yes
+	1862.2.3 = {
+		birth = yes
+		give_nickname = nick_the_magnificent
+		create_bloodline = {
+			type = wangchuck
+			
+		}
+	}
+	1926.8.5 = {
+		death = yes
+	}
+}
+3106008 = {#Jigme the Architect
+	name = "Jigme"
+	dynasty=3104000 #Wangchuck
+	father = 3106007
+	culture = ngalop
+	religion = rime
+	diplomacy = 12
+	martial = 8
+	intrigue = 15
+	stewardship = 8
+	learning = 8
+	trait = intricate_webweaver
+	trait = shrewd
+	trait = gregarious
+	trait = architect
+	trait = ambitious
+	trait = humble
+	trait = legendary
+	occluded = yes
+	1905.1.9 = {
+		birth = yes
+		give_nickname = nick_the_architect
+	}
+	1952.3.30 = {
+		death = yes
+	}
+}
+3106009 = {# Jigme Dorji the Lawgiver
+	name = "Jigme Dorji"
+	dynasty=3104000 #Wangchuck
+	father = 3106008
+	culture = ngalop
+	religion = rime
+	diplomacy = 15
+	martial = 8
+	intrigue = 8
+	stewardship = 12
+	learning = 10
+	trait = midas_touched
+	trait = quick
+	trait = diligent
+	trait = just
+	trait = gregarious
+	trait = charitable
+	trait = administrator
+	trait = legendary
+	occluded = yes
+	1929.4.2 = {
+		birth = yes
+		give_nickname = nick_the_lawgiver
+	}
+	1972.7.21 = {
+		death = yes
+	}
+}
+3106010 = {
+	name = "Jigme Singye"
+	dynasty=3104000 #Wangchuck
+	father = 3106009
+	culture = ngalop
+	religion = rime
+	diplomacy = 10
+	martial = 8
+	intrigue = 10
+	stewardship = 12
+	learning = 15
+	trait = mastermind_theologian
+	trait = zealous
+	trait = groomed
+	trait = shrewd
+	trait = gregarious
+	trait = humble
+	trait = erudite
+	trait = scholar
+	trait = legendary
+	occluded = yes
+	1955.2.3 = {
+		birth = yes
+		give_nickname = nick_the_educator
+	}
+	2020.8.5 = {
+		death = yes
+	}
+}
+3106011 = {
+	name = "Jigme Khesar Namgyel"
+	dynasty=3104000 #Wangchuck
+	father = 3106010
+	culture = ngalop
+	religion = rime
+	diplomacy = 10
+	martial = 8
+	intrigue = 10
+	stewardship = 12
+	learning = 15
+	trait = grey_eminence
+	trait = architect
+	trait = fair
+	trait = just
+	trait = kind
+	trait = gregarious
+	trait = diligent
+	trait = socializer
+	trait = patient
+	trait = charitable
+	trait = legendary
+	occluded = yes
+	1990.2.21 = {
+		birth = yes
+		give_nickname = nick_the_handsome
+	}
+	2078.6.6 = {
+		death = yes
+	}
+}
+
+3106012 = {
+	name = "Jigme Hemlal" #Nothing of note besides his sleeping habits
+	dynasty=3104000 #Wangchuck
+	father = 3106011
+	culture = ngalop
+	religion = rime
+	occluded = yes
+	trait = legendary
+	trait = indulgent_wastrel
+	trait =slothful
+	trait = shy
+	trait = trusting
+	disallow_random_traits=yes
+	2040.4.20 = {
+		birth = yes
+		give_nickname = nick_the_silent
+	}
+	2103.1.6 = {
+		death = yes
+	}
+}
+
+3106013 = {
+	name = "Jigme Palden" #A bookworm, perhaps he has read too much? He really liked LOTR
+	dynasty=3104000 #Wangchuck
+	father = 3106012
+	culture = ngalop
+	religion = rime
+	occluded = yes
+	trait = legendary
+	trait = scholarly_theologian
+	trait = ambitious
+	trait = cynical
+	trait = erudite
+	disallow_random_traits=yes
+	2066.11.2 = {
+		birth = yes
+		give_nickname = nick_the_bookish
+	}
+	2127.10.6 = {
+		death = yes
+	}
+}
+
+3106014 = {
+	name = "Jigme Kunga" #Reveler
+	dynasty=3104000 #Wangchuck
+	father = 3106013
+	culture = ngalop
+	religion = rime
+	occluded = yes
+	trait = legendary
+	trait = charismatic_negotiator
+	trait = gregarious
+	trait = arbitrary
+	trait = socializer
+	trait = lustful
+	trait = groomed
+	disallow_random_traits=yes
+	2090.2.2 = {
+		birth = yes
+		give_nickname = nick_the_merry
+	}
+	2159.1.1 = {
+		death = yes
+	}
+}
+
+3106015 = {
+	name = "Dechen" #Haughty Queen
+	dynasty=3104000 #Wangchuck
+	father = 3106014
+	female=yes
+	culture = ngalop
+	religion = rime
+	occluded = yes
+	trait = legendary
+	trait = intricate_webweaver
+	trait = gregarious
+	trait = fair
+	trait = kind
+	trait = diligent
+	trait = groomed
+	trait = shrewd
+	disallow_random_traits=yes
+	2128.5.12 = {
+		birth = yes
+		give_nickname = nick_the_fair
+	}
+	2199.12.2 = {
+		death = yes
+	}
+}
+
+3106016 = {
+	name = "Jigme Udumtsen" #Strong General Uniting the Kingdom of Bhutan to its Pre-Event Borders
+	dynasty=3104000 #Wangchuck
+	mother = 3106015
+	culture = ngalop
+	religion = rime
+	occluded = yes
+	trait = legendary
+	trait = brilliant_strategist
+	trait = robust
+	trait = fair
+	trait = duelist
+	trait = diligent
+	trait = brave
+	disallow_random_traits=yes
+	2152.7.10 = {
+		birth = yes
+		give_nickname = the_thunderbolt
+	}
+	2212.3.2 = {
+		death = yes
+	}
+}
+
+3106017 = {
+	name = "Jigme Raksita"
+	dynasty=3104000 #Wangchuck
+	father = 3106016
+	culture = ngalop
+	religion = rime
+	occluded = yes
+	trait = legendary
+	trait = midas_touched
+	trait = humble
+	trait = charitable
+	trait = content
+	trait = honest
+	trait = stubborn
+	disallow_random_traits=yes
+	2180.3.1 = {
+		birth = yes
+		give_nickname = nick_the_wealthy
+	}
+	2269.6.9 = {
+		death = yes
+	}
+}
+
+3106018 = {
+	name = "Jigme Aglen"
+	dynasty=3104000 #Wangchuck
+	father = 3106017
+	culture = ngalop
+	religion = rime
+	trait = dull
+	trait = cynical
+	trait = paranoid
+	trait = slothful
+	trait = indulgent_wastrel
+	disallow_random_traits=yes
+	2201.9.12 = {
+		birth = yes
+		give_nickname = nick_the_forgetful
+	}
+	2275.3.27 = {
+		death = yes
+	}
+}
+
+3106019 = {
+	name = "Jigme Isho"
+	dynasty=3104000 #Wangchuck
+	father = 3106018
+	culture = ngalop
+	religion = rime
+	trait = slow
+	trait = wroth
+	trait = honest
+	trait = slothful
+	trait = indulgent_wastrel
+	disallow_random_traits=yes
+	2240.7.13 = {
+		birth = yes
+		give_nickname = nick_the_unready
+	}
+	2320.2.14 = {
+		death = yes
+	}
+}
+
+3106020 = {
+	name = "Jigme Lek" #The Seducer
+	dynasty=3104000 #Wangchuck
+	father = 3106019
+	culture = ngalop
+	religion = rime
+	trait = "lustful"
+	trait = "groomed"
+	trait = "gregarious"
+	trait = "seducer"
+	trait = "flamboyant_schemer"
+	disallow_random_traits=yes
+	2275.8.1 = {
+		birth = yes
+		give_nickname = nick_the_seducer
+	}
+	2339.1.14 = {
+		death = yes
+	}
+}
+
+3106021 = {
+	name = "Jigme Selbar"
+	dynasty=3104000 #Wangchuck
+	father = 3106020
+	culture = ngalop
+	religion = rime
+	trait = kind
+	trait = just
+	trait = feeble
+	trait = erudite
+	disallow_random_traits = yes
+	2298.4.11 = {
+		birth = yes
+		give_nickname = nick_the_good
+	}
+	2367.4.20 = {
+		death = yes
+	}
+}
+
+3106022 = {
+	name = "Jigme Könchok" #He's weird and I guess that's okay
+	dynasty=3104000 #Wangchuck
+	father = 3106021
+	culture = ngalop
+	religion = rime
+	trait = cynical
+	trait = erudite
+	trait = shy
+	trait = chaste
+	trait = detached_priest
+	disallow_random_traits=yes
+	2327.5.16 = {
+		birth = yes
+		give_nickname = nick_the_strange
+	}
+	2388.2.5 = {
+		death = yes
+	}
+}
+
+3106023 = {
+	name = "Jigme Rapsel" #Athletic Chad
+	dynasty=3104000 #Wangchuck
+	father = 3106022
+	culture = ngalop
+	religion = rime
+	trait = fair
+	trait = strong
+	trait = gregarious
+	trait = hunter
+	trait = brave
+	trait = skilled_tactician
+	disallow_random_traits=yes
+	2356.8.21 = {
+		birth = yes
+		give_nickname = nick_the_broad_shouldered
+	}
+	2408.11.9 = {
+		death = yes
+	}
+}
+
+3106024 = {
+	name = "Yangchen" #The Warrior-Queen of Bhutan
+	dynasty=3104000 #Wangchuck
+	father = 3106023
+	female=yes
+	culture = ngalop
+	religion = rime
+	trait = fair
+	trait = strong
+	trait = gregarious
+	trait = hunter
+	trait = brave
+	trait = skilled_tactician
+	disallow_random_traits=yes
+	2381.7.19 = {
+		birth = yes
+		give_nickname = the_thunderbolt
+	}
+	2450.12.29 = {
+		death = yes
+	}
+}
+
+3106025 = {
+	name = "Jigme Mangban" #The Alchemist
+	dynasty=3104000 #Wangchuck
+	mother = 3106024
+	culture = ngalop
+	religion = rime
+	trait = lunatic
+	trait = mystic
+	trait = one_eyed
+	trait = genius
+	trait = uncouth
+	trait = diligent
+	trait = proud
+	trait = brave
+	trait = mastermind_theologian
+	disallow_random_traits=yes
+	2402.6.1 = {
+		birth = yes
+		give_nickname = nick_the_mad
+	}
+	2477.4.14 = {
+		death = yes
+	}
+}
+
+3106026 = {
+	name = "Jigme Gongru" #The Lazy
+	dynasty=3104000 #Wangchuck
+	father = 3106025
+	culture = ngalop
+	religion = rime
+	trait = cynical
+	trait = stubborn
+	trait = socializer
+	trait = shrewd
+	trait = gluttonous
+	trait = slothful
+	trait = lustful
+	trait = indulgent_wastrel
+	disallow_random_traits=yes
+	2433.9.21 = {
+		birth = yes
+		give_nickname = nick_the_drunkard
+	}
+	2485.5.8 = {
+		death = yes
+	}
+}
+
+3106027 = {
+	name = "Jigme Thönmi" #Hard worker who is trying to change things around Bhutan. But not much progress has been made
+	dynasty=3104000 #Wangchuck
+	father = 3106026
+	culture = ngalop
+	religion = rime
+	trait = administrator
+	trait = diligent
+	trait = patient
+	trait = ambitious
+	trait = honest
+	trait = charismatic_negotiator
+	disallow_random_traits=yes
+	2480.1.1 = {
+		birth = yes
+		give_nickname = nick_the_ambitious
+	}
+	2570.8.3 = {
+		death = yes
+	}
+}
+
+3106028 = {
+	name = "Jigme Namgyel"
+	dynasty=3104000 #Wangchuck
+	religion = rime
+	culture = ngalop
+	father = 3106027
+	trait = scholarly_theologian
+	trait = erudite
+	trait = kind
+	trait = content
+	trait = trusting
+	trait = gardener
+	trait = honest
+	trait = fair
+	2560.3.2 = {
+		birth = yes			
+	}
+	2625.4.14 = {
+		death = yes
+	}
+}
+
+3106029 = {
+	name = "Jigme Tashi"
+	dynasty=3104000 #Wangchuck
+	father = 3106028
+	religion = rime
+	culture = ngalop
+	trait = mastermind_theologian
+	trait = patient
+	trait = just
+	trait = shrewd
+	2600.1.1 = {
+		birth = yes
+	}
+	2651.9.25 = {
+		death = yes
+	}
 }
