@@ -6568,33 +6568,33 @@
 		factor = 1
 	}
 
-	# 1 = { # Templar special headgear
-		# factor = 100
+	1 = { # Templar special headgear
+		factor = 100
 
-		# hide_layers = { 12 = { } } # Hide layer 12 (disfigured masks) when this frame is picked
-		# hide_layers = { 5  = { } } # Hide layer 5 (headgear) when this frame is picked
-		# hide_layers = { 1  = { } } # Hide Hair
-		# hide_layers = { 3  = { } } # Hide Clothes
-		# hide_layers = { 18 = { } } # Hide layers with special crowns
-		# hide_layers = { 19 = { } } # Hide layers with special crowns
-		# hide_layers = { 31 = { } } # Veil overload
-		# hide_layers = { 32 = { } }
-		# hide_layers = { 33 = { } }
+		hide_layers = { 12 = { } } # Hide layer 12 (disfigured masks) when this frame is picked
+		hide_layers = { 5  = { } } # Hide layer 5 (headgear) when this frame is picked
+		hide_layers = { 1  = { } } # Hide Hair
+		hide_layers = { 3  = { } } # Hide Clothes
+		hide_layers = { 18 = { } } # Hide layers with special crowns
+		hide_layers = { 19 = { } } # Hide layers with special crowns
+		hide_layers = { 31 = { } } # Veil overload
+		hide_layers = { 32 = { } }
+		hide_layers = { 33 = { } }
 
-		# trigger = {
-			# OR = {
-				# has_landed_title = d_knights_templar
-				# liege = { has_landed_title = d_knights_templar }
-			# }
+		trigger = {
+			OR = {
+				has_landed_title = d_knights_templar
+				liege = { has_landed_title = d_knights_templar }
+			}
 
-			# in_command = yes
+			in_command = yes
 
-			# has_game_rule = {
-				# name = martial_headgear
-				# value = on
-			# }
-		# }
-	# }
+			has_game_rule = {
+				name = martial_headgear
+				value = on
+			}
+		}
+	}
 
 	2 = { # Crusader King helmet - Male
 		factor = 100
@@ -6654,67 +6654,67 @@
 		}
 	}
 
-	# 4 = { # Hospitaler special headgear
-		# factor = 100
-		# hide_layers = { 12 = { } } # Hide layer 12 (disfigured masks) when this frame is picked
-		# hide_layers = { 5  = { } } # Hide layer 5 (headgear) when this frame is picked
-		# hide_layers = { 1  = { } } # Hide Hair
-		# hide_layers = { 3  = { } } # Hide Clothes
-		# hide_layers = { 18 = { } } # Hide layers with special crowns
-		# hide_layers = { 19 = { } } # Hide layers with special crowns
-		# hide_layers = { 31 = { } } # Veil overload
-		# hide_layers = { 32 = { } }
-		# hide_layers = { 33 = { } }
+	4 = { # Hospitaler special headgear
+		factor = 100
+		hide_layers = { 12 = { } } # Hide layer 12 (disfigured masks) when this frame is picked
+		hide_layers = { 5  = { } } # Hide layer 5 (headgear) when this frame is picked
+		hide_layers = { 1  = { } } # Hide Hair
+		hide_layers = { 3  = { } } # Hide Clothes
+		hide_layers = { 18 = { } } # Hide layers with special crowns
+		hide_layers = { 19 = { } } # Hide layers with special crowns
+		hide_layers = { 31 = { } } # Veil overload
+		hide_layers = { 32 = { } }
+		hide_layers = { 33 = { } }
 
-		# trigger = {
-			# OR = {
-				# has_landed_title = d_knights_hospitaller
-				# liege = { has_landed_title = d_knights_hospitaller }
-			# }
+		trigger = {
+			OR = {
+				has_landed_title = d_order_of_malta
+				liege = { has_landed_title = d_order_of_malta }
+			}
 
-			# in_command = yes
+			in_command = yes
 
-			# has_game_rule = {
-				# name = martial_headgear
-				# value = on
-			# }
-		# }
-	# }
+			has_game_rule = {
+				name = martial_headgear
+				value = on
+			}
+		}
+	}
 
-	# 5 = { # Teuton special headgear
-		# factor = 100
+	5 = { # Teuton special headgear
+		factor = 100
 
-		# hide_layers = { 12 = { } } # Hide layer 12 (disfigured masks) when this frame is picked
-		# hide_layers = { 5  = { } } # Hide layer 5 (headgear) when this frame is picked
-		# hide_layers = { 1  = { } } # Hide Hair
-		# hide_layers = { 3  = { } } # Hide Clothes
-		# hide_layers = { 18 = { } } # Hide layers with special crowns
-		# hide_layers = { 19 = { } } # Hide layers with special crowns
-		# hide_layers = { 31 = { } } # Veil overload
-		# hide_layers = { 32 = { } }
-		# hide_layers = { 33 = { } }
+		hide_layers = { 12 = { } } # Hide layer 12 (disfigured masks) when this frame is picked
+		hide_layers = { 5  = { } } # Hide layer 5 (headgear) when this frame is picked
+		hide_layers = { 1  = { } } # Hide Hair
+		hide_layers = { 3  = { } } # Hide Clothes
+		hide_layers = { 18 = { } } # Hide layers with special crowns
+		hide_layers = { 19 = { } } # Hide layers with special crowns
+		hide_layers = { 31 = { } } # Veil overload
+		hide_layers = { 32 = { } }
+	    hide_layers = { 33 = { } }
 
-		# trigger = {
-			# OR = {
-				# has_landed_title = d_teutonic_order
-				# has_landed_title = k_teutonic_state
+		trigger = {
+			OR = {
+				has_landed_title = d_teutonic_order
+				has_landed_title = k_teutonic_state
 
-				# liege = {
-					# OR = {
-						# has_landed_title = d_teutonic_order
-						# has_landed_title = k_teutonic_state
-					# }
-				# }
-			# }
+				liege = {
+					OR = {
+						has_landed_title = d_teutonic_order
+						has_landed_title = k_teutonic_state
+					}
+				}
+			}
 
-			# in_command = yes
+			in_command = yes
 
-			# has_game_rule = {
-				# name = martial_headgear
-				# value = on
-			# }
-		# }
-	# }
+			has_game_rule = {
+				name = martial_headgear
+				value = on
+			}
+		}
+	}
 
 	6 = { # Wearable Winged Helmet
 		factor = 100
@@ -6743,40 +6743,40 @@
 		}
 	}
 
-	# 7 = {  # Calatrava/Santiago special headgear
-		# factor = 100
+	7 = {  # Calatrava/Santiago special headgear
+		factor = 100
 
-		# hide_layers = { 12 = { } } # Hide layer 12 (disfigured masks) when this frame is picked
-		# hide_layers = { 5  = { } } # Hide layer 5 (headgear) when this frame is picked
-		# hide_layers = { 1  = { } } # Hide Hair
-		# hide_layers = { 3  = { } } # Hide Clothes
-		# hide_layers = { 18 = { } } # Hide layers with special crowns
-		# hide_layers = { 19 = { } } # Hide layers with special crowns
-		# hide_layers = { 31 = { } } # Veil overload
-		# hide_layers = { 32 = { } }
-		# hide_layers = { 33 = { } }
+		hide_layers = { 12 = { } } # Hide layer 12 (disfigured masks) when this frame is picked
+		hide_layers = { 5  = { } } # Hide layer 5 (headgear) when this frame is picked
+		hide_layers = { 1  = { } } # Hide Hair
+		hide_layers = { 3  = { } } # Hide Clothes
+		hide_layers = { 18 = { } } # Hide layers with special crowns
+		hide_layers = { 19 = { } } # Hide layers with special crowns
+		hide_layers = { 31 = { } } # Veil overload
+		hide_layers = { 32 = { } }
+		hide_layers = { 33 = { } }
 
-		# trigger = {
-			# OR = {
-				# has_landed_title = d_knights_santiago
-				# has_landed_title = d_knights_calatrava
+		trigger = {
+			OR = {
+				has_landed_title = d_knights_santiago
+				has_landed_title = d_knights_calatrava
 
-				# liege = {
-					# OR = {
-						# has_landed_title = d_knights_santiago
-						# has_landed_title = d_knights_calatrava
-					# }
-				# }
-			# }
+				liege = {
+					OR = {
+						has_landed_title = d_knights_santiago
+						has_landed_title = d_knights_calatrava
+					}
+				}
+			}
 
-			# in_command = yes
+			in_command = yes
 
-			# has_game_rule = {
-				# name = martial_headgear
-				# value = on
-			# }
-		# }
-	# }
+			has_game_rule = {
+				name = martial_headgear
+				value = on
+			}
+		}
+	}
 
 	8 = { # Wearable Wrapped Helmet
 		factor = 100
@@ -6805,33 +6805,33 @@
 		}
 	}
 
-	# 9 = { # Livonian special headgear
-		# factor = 100
+	9 = { # Livonian special headgear
+		factor = 100
 
-		# hide_layers = { 12 = { } } # Hide layer 12 (disfigured masks) when this frame is picked
-		# hide_layers = { 5  = { } } # Hide layer 5 (headgear) when this frame is picked
-		# hide_layers = { 1  = { } } # Hide Hair
-		# hide_layers = { 3  = { } } # Hide Clothes
-		# hide_layers = { 18 = { } } # Hide layers with special crowns
-		# hide_layers = { 19 = { } } # Hide layers with special crowns
-		# hide_layers = { 31 = { } } # Veil overload
-		# hide_layers = { 32 = { } }
-		# hide_layers = { 33 = { } }
+		hide_layers = { 12 = { } } # Hide layer 12 (disfigured masks) when this frame is picked
+		hide_layers = { 5  = { } } # Hide layer 5 (headgear) when this frame is picked
+		hide_layers = { 1  = { } } # Hide Hair
+		hide_layers = { 3  = { } } # Hide Clothes
+		hide_layers = { 18 = { } } # Hide layers with special crowns
+		hide_layers = { 19 = { } } # Hide layers with special crowns
+		hide_layers = { 31 = { } } # Veil overload
+		hide_layers = { 32 = { } }
+		hide_layers = { 33 = { } }
 
-		# trigger = {
-			# OR = {
-				# has_landed_title = d_livonian_order
-				# liege = { has_landed_title = d_livonian_order }
-			# }
+		trigger = {
+			OR = {
+				has_landed_title = d_livonian_order
+				liege = { has_landed_title = d_livonian_order }
+			}
 
-			# in_command = yes
+			in_command = yes
 
-			# has_game_rule = {
-				# name = martial_headgear
-				# value = on
-			# }
-		# }
-	# }
+			has_game_rule = {
+				name = martial_headgear
+				value = on
+			}
+		}
+	}
 	10 = { # Unicorn headgear
 		factor = 100
 
