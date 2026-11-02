@@ -1,6 +1,10 @@
 #####################################################################
 #		Cossack Event Reference Numbers for Ease of Reference		#
 #	x cossack.1 - cossack.3 : Intercession of the Theotokos			#
+#	x cossack.4 : Saint Branch                           			#
+#	x cossack.5 - cossack.7 : Pilgrimage Main Events                #
+#	x cossack.8 - cossack.10 : Unique Places Events                 #
+#	x cossack.11 - cossack.X : Pilgrimage Random Events                #
 ##################################################################### 
 namespace = cossack
 
@@ -44,5 +48,576 @@ narrative_event = {
 	
 	option = {
 		name = EVTOPTA_COSSACK_3
+	}
+}
+
+character_event = {
+	id = cossack.4
+	desc = EVTDESC_COSSACK_4
+	picture = GFX_evt_theotokos
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_COSSACK_4
+		add_trait="kozachina_st_john"
+	}
+	
+	option = {
+		name = EVTOPTB_COSSACK_4
+		add_trait="kozachina_st_demetrius"
+	}
+	
+	option = {
+		name = EVTOPTC_COSSACK_4
+		add_trait="kozachina_st_george"
+	}
+}
+
+narrative_event = { 
+	id = cossack.5
+	desc = EVTDESC_COSSACK_5
+	title = EVTTITLE_COSSACK_5
+	picture = GFX_evt_kozachina_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { #Kyiv
+		name = EVTOPTA_COSSACK_5
+		set_character_flag = go_to_kyiv_kozachina
+		narrative_event = { id = cossack.6 days = 7 }
+	}
+	
+	option = { #Tsargard
+		name = EVTOPTB_COSSACK_5
+		set_character_flag = go_to_constantinopole_kozachina
+		narrative_event = { id = cossack.6 days = 7 }
+	}
+	
+	option = { #Zaporizhzhia
+		name = EVTOPTC_COSSACK_5
+		set_character_flag = go_to_zaporizhzhia_kozachina
+		narrative_event = { id = cossack.6 days = 7 }
+	}
+	
+	option = { #Nope
+		name = EVTOPTD_COSSACK_5
+		piety = -50
+		prestige = -50
+	}
+}
+
+narrative_event = { #Go to pilgrimage
+	id = cossack.6
+	title = EVTTITLE_COSSACK_6
+	desc = {
+		text = EVTDESC_COSSACK_6_KIY
+		picture = GFX_evt_kozachina_pilgrimage
+		trigger = { 
+			has_character_flag = go_to_kyiv_kozachina
+		}
+	}
+	desc = {
+		text = EVTDESC_COSSACK_6_CON
+		picture = GFX_evt_kozachina_pilgrimage
+		trigger = { 
+			has_character_flag = go_to_constantinopole_kozachina
+		}
+	}
+	desc = {
+		text = EVTDESC_COSSACK_6_ZAP
+		picture = GFX_evt_kozachina_pilgrimage
+		trigger = { 
+			has_character_flag = go_to_zaporizhzhia_kozachina
+		}
+	}
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_COSSACK_6
+		hidden_tooltip = {
+			add_trait = on_pilgrimage
+			set_character_flag = good_pilgrimage
+			narrative_event = { id = cossack.7 days = 35 }
+		}
+		hidden_tooltip = {
+			random_list = {
+				10 = { character_event = { id = cossack.11 days = 12 random = 4 } }
+				10 = { character_event = { id = cossack.12 days = 12 random = 4 } }
+				10 = { character_event = { id = cossack.17 days = 12 random = 4 } }
+				10 = { character_event = { id = SoA.5029 days = 12 random = 4 } }
+				10 = { character_event = { id = SoA.5030 days = 12 random = 4 } }
+				10 = { character_event = { id = SoA.5031 days = 12 random = 4 } }
+				10 = { character_event = { id = SoA.5032 days = 12 random = 4 } }
+				10 = { character_event = { id = SoA.5033 days = 12 random = 4 } }
+				10 = { character_event = { id = SoA.5034 days = 12 random = 4 } }
+				10 = { character_event = { id = SoA.5035 days = 12 random = 4 } }
+			}
+			random_list = {
+				10 = { character_event = { id = cossack.11 days = 25 random = 4 } }
+				10 = { character_event = { id = cossack.12 days = 25 random = 4 } }
+				10 = { character_event = { id = cossack.17 days = 25 random = 4 } }
+				10 = { character_event = { id = SoA.5029 days = 25 random = 4 } }
+				10 = { character_event = { id = SoA.5030 days = 25 random = 4 } }
+				10 = { character_event = { id = SoA.5031 days = 25 random = 4 } }
+				10 = { character_event = { id = SoA.5032 days = 25 random = 4 } }
+				10 = { character_event = { id = SoA.5033 days = 25 random = 4 } }
+				10 = { character_event = { id = SoA.5034 days = 25 random = 4 } }
+				10 = { character_event = { id = SoA.5035 days = 25 random = 4 } }
+			}
+		}
+	}
+}
+
+narrative_event = { #Welcome
+	id = cossack.7
+	title = EVTTITLE_COSSACK_7
+	desc = {
+		text = EVTDESC_COSSACK_7_ZAPORIZHZHI
+		picture = GFX_evt_zaporizhzhia
+		trigger = { 
+			has_character_flag = go_to_zaporizhzhia_kozachina
+		}
+	}
+	desc = {
+		text = EVTDESC_COSSACK_7_CONSTANTINOPOLE
+		picture = GFX_evt_constantinopole
+		trigger = { 
+			has_character_flag = go_to_constantinopole_kozachina
+		}
+	}
+	desc = {
+		text = EVTDESC_COSSACK_7_KYIV
+		picture = GFX_evt_kyiv
+		trigger = {
+			has_character_flag = go_to_kyiv_kozachina
+		}
+	}
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_COSSACK_7
+		hidden_tooltip = { 
+		    character_event = { id = SoA.5055 days = 7 }
+		    if = {
+		         limit = { has_character_flag = go_to_constantinopole_kozachina NOT = { trait = "kozachina_st_george } }
+		         character_event = { id = cossack.8 days = 1 }
+		    }
+		    if = {
+		         limit = { has_character_flag = go_to_zaporizhzhia_kozachina }
+		         character_event = { id = cossack.10 days = 1 }
+		    }
+		    if = {
+		         limit = { has_character_flag = go_to_kyiv_kozachina }
+		         character_event = { id = cossack.9 days = 1 }
+		    }
+			clr_character_flag = go_to_constantinopole_kozachina
+		    clr_character_flag= go_to_zaporizhzhia_kozachina
+		    clr_character_flag = go_to_kyiv_kozachina
+		}
+	}
+}
+
+character_event = {
+	id = cossack.8
+	desc = EVTDESC_COSSACK_8
+	picture = GFX_evt_theotokos
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_COSSACK_8
+		piety=25
+		prestige=25
+		add_trait="kozachina_st_george"
+	}
+	
+	option = {
+		name = EVTOPTB_COSSACK_8
+		trigger = {
+		   OR = { trait="kozachina_st_demetrius" trait="kozachina_st_john" }
+		}
+		piety=10
+		prestige=-10
+	}
+	
+	option = {
+		name = EVTOPTC_COSSACK_8
+		trigger = {
+		   NOR = { trait="kozachina_st_demetrius" trait="kozachina_st_john" }
+		}
+		piety=-25
+		prestige=-25
+	}
+}
+
+character_event = {
+	id = cossack.9
+	desc = EVTDESC_COSSACK_9
+	picture = GFX_evt_kyiv
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_COSSACK_9
+		prestige=50
+		change_martial = 1
+	}
+	
+	option = {
+		name = EVTOPTB_COSSACK_9
+		piety=50
+		change_learning = 1
+	}
+	
+	option = {
+		name = EVTOPTC_COSSACK_9
+		piety=-25
+		prestige=25
+		random_list= {
+		   20 = { add_trait="gregarious" }
+		   40 = { add_trait="drunkard" }
+		   40 = { }
+		}
+	}
+}
+
+character_event = {
+	id = cossack.10
+	desc = EVTDESC_COSSACK_10
+	picture = GFX_evt_zaporizhzhia
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_COSSACK_10
+		if = {
+		   limit = { religion = kozachina }
+		   set_secret_religion = angelchina
+		}
+		if = {
+		   limit = { religion = angelchina }
+		   set_secret_religion = kozachina
+		}
+	}
+	
+	option = { 
+		name = EVTOPTB_COSSACK_10
+		prestige=50
+		random_list = {
+		   15 = { add_trait="cynical" }
+		   85 = { }
+		}
+	}
+	
+	option = { 
+		name = EVTOPTC_COSSACK_10
+		piety=50
+		random_list = {
+		   25 = { add_trait="zealous" }
+		   75 = { }
+		}
+	}
+}
+
+character_event = {
+	id = cossack.11
+	desc = EVTDESC_COSSACK_11
+	picture = GFX_evt_kozachina_pilgrimage
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_COSSACK_11
+		prestige = 20
+		random_list = {
+		   30 = { add_trait= "wounded" }
+		   10 = { ROOT = { change_martial = 1 } }
+		   15 = { death = { death_reason = death_missing } }
+		   45 = { }
+		}
+	}
+}
+
+character_event = {
+	id = cossack.12
+	desc = EVTDESC_COSSACK_12
+	picture = GFX_evt_kozachina_pilgrimage
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_COSSACK_12
+		prestige=50
+		hidden_tooltip = {
+		  random_list = {
+		    25 = { #Bad
+			   random_list = {
+			      35 = { character_event = { id = cossack.13 days = 1 } } #Unmerciful feudal
+				  35 = { character_event = { id = cossack.14 days = 1 } } #Random feudal
+				  20 = { character_event = { id = cossack.15 days = 1 } } #Normal loot
+				  10 = { character_event = { id = cossack.16 days = 1 } } #Very good loot
+			   }
+			}
+		    25 = { #Very Baad
+			   random_list = {
+			      50 = { character_event = { id = cossack.13 days = 1 } } #Unmerciful feudal
+				  30 = { character_event = { id = cossack.14 days = 1 } } #Random feudal
+				  15 = { character_event = { id = cossack.15 days = 1 } } #Normal loot
+				  5 = { character_event = { id = cossack.16 days = 1 } } #Very good loot
+			   }
+			}
+			25 = { #Good
+			   random_list = {
+			      20 = { character_event = { id = cossack.13 days = 1 } } #Unmerciful feudal
+				  30 = { character_event = { id = cossack.14 days = 1 } } #Random feudal
+				  35 = { character_event = { id = cossack.15 days = 1 } } #Normal loot
+				  15 = { character_event = { id = cossack.16 days = 1 } } #Very good loot
+			   }
+			}
+			25 = { #Very Good
+			   random_list = {
+			      15 = { character_event = { id = cossack.13 days = 1 } } #Unmerciful feudal
+				  20 = { character_event = { id = cossack.14 days = 1 } } #Random feudal
+				  40 = { character_event = { id = cossack.15 days = 1 } } #Normal loot
+				  25 = { character_event = { id = cossack.16 days = 1 } } #Very good loot
+			   }
+			}
+		  }
+		}
+	}
+	
+	option = { 
+		name = EVTOPTA_COSSACK_12
+		piety = 50
+	}
+}
+
+character_event = {
+	id = cossack.13
+	desc = EVTDESC_COSSACK_13
+	picture = GFX_evt_kozachina_pilgrimage
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_COSSACK_13
+		piety = -100
+		prestige = -100
+		death = { death_reason = death_execution_hanging }
+	}
+}
+
+character_event = {
+	id = cossack.14
+	desc = EVTDESC_COSSACK_14
+	picture = GFX_evt_kozachina_pilgrimage
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_COSSACK_14
+		prestige=200
+		death = { death_reason = death_execution_hanging }
+	}
+	
+	option = { 
+		name = EVTOPTB_COSSACK_14
+		prestige = -150
+		if = {
+		   limit = { real_tier = COUNT }
+		   wealth = -60
+		}
+		if = {
+		   limit = { real_tier = DUKE }
+		   wealth = -100
+		}
+		if = {
+		   limit = { real_tier = KING }
+		   wealth = -180
+		}
+		if = {
+		   limit = { real_tier = EMPEROR }
+		   wealth = -300
+		}
+	}
+}
+
+character_event = {
+	id = cossack.15
+	desc = EVTDESC_COSSACK_15
+	picture = GFX_evt_kozachina_pilgrimage
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_COSSACK_15
+		prestige=100
+		wealth=40
+	}
+}
+
+character_event = {
+	id = cossack.16
+	desc = EVTDESC_COSSACK_16
+	picture = GFX_evt_kozachina_pilgrimage
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_COSSACK_15
+		prestige=150
+		wealth=70
+	}
+}
+
+narrative_event = {
+	id = cossack.17
+	title = EVTTITLE_COSSACK_17
+	desc = EVTDESC_COSSACK_17
+	picture = GFX_evt_kozachina_pilgrimage
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_COSSACK_17
+		wealth=-10
+		piety=50
+		hidden_tooltip = {
+		  random_list = {
+		     33 = { character_event = { id = cossack.18 days = 3 } } #Monk Friend
+			 33 = { character_event = { id = cossack.19 days = 3 } } #Depression/Stress Out
+			 34 = { character_event = { id = cossack.20 days = 3 } } #Piety only
+		  }
+		}
+	}
+	
+	option = { 
+		name = EVTOPTB_COSSACK_17
+		prestige=50
+	}
+}
+
+character_event = {
+	id = cossack.18
+	desc = EVTDESC_COSSACK_18
+	picture = GFX_evt_st_bede_teaches
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_COSSACK_18
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = yes
+			dynasty = NONE
+			age = 50
+			trait = kozachina_st_john
+			trait = monk
+			trait = physician
+			trait = pious
+			trait = kind
+			learning = 12
+			random_traits = yes
+		}
+		new_character = {
+		   add_friend = ROOT
+		}
+	}
+}
+
+character_event = {
+	id = cossack.19
+	desc = EVTDESC_COSSACK_19
+	picture = GFX_evt_st_bede_teaches
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_COSSACK_18
+		piety=25
+		if = {
+		   limit = { trait="stressed"}
+		   random_list = {
+		      70 = { remove_trait="stressed" }
+			  30 = { }
+		   }
+		}
+		if = {
+		   limit = { trait="depressed"}
+	       random_list = {
+		      40 = { remove_trait="depressed" }
+			  60 = { }
+		   }
+		}
+		if = {
+		   limit = { trait="lunatic"}
+	       random_list = {
+		      15 = { remove_trait="lunatic" }
+			  85 = { }
+		   }
+		}
+	}
+}
+
+character_event = {
+	id = cossack.20
+	desc = EVTDESC_COSSACK_20
+	picture = GFX_evt_st_bede_teaches
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_COSSACK_18
+		piety=100
+	}
+}
+
+character_event = {
+	id = cossack.21
+	desc = EVTDESC_COSSACK_21
+	picture = GFX_evt_kozachina_pilgrimage
+	is_triggered_only = yes
+	
+	option = { #Immortal Hetman
+		name = EVTOPTA_COSSACK_21
+		narrative_event = { id = cossack.22 }
+	}
+	
+	option = { #Bohun
+		name = EVTOPTB_COSSACK_21
+		narrative_event = { id = cossack.23 }
+	}
+	
+	option = { #NO
+		name = EVTOPTC_COSSACK_21
+		prestige=50
+		random_list = {
+		   20 = { add_trait="shy" }
+		   15 = { add_trait="wroth" }
+		   10 = { add_trait="cynical" }
+		   55 = { }
+		}
+	}
+}
+
+narrative_event = {
+	id = cossack.22
+	title = EVTTITLE_COSSACK_22
+	desc = EVTDESC_COSSACK_22
+	picture = GFX_evt_kozachina_pilgrimage
+	is_triggered_only = yes
+
+	option = { #Nice Story
+		name = EVTOPTA_COSSACK_22
+	}
+	
+	option = { #Stupid Story
+		name = EVTOPTB_COSSACK_22
+	}
+}
+
+narrative_event = {
+	id = cossack.23
+	title = EVTTITLE_COSSACK_23
+	desc = EVTDESC_COSSACK_23
+	picture = GFX_evt_kozachina_pilgrimage
+	is_triggered_only = yes
+
+	option = { #Nice Story about Good Man
+		name = EVTOPTA_COSSACK_23
+	}
+	
+	option = { #Stupid Story
+		name = EVTOPTA_COSSACK_23
 	}
 }

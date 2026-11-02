@@ -479,7 +479,7 @@ character_event = {
 			       age = 22
 		      }
 		}
-		if = { #Brasilian Merchants
+		if = { #Brazilian Merchants
 		   limit = { OR = { religion = quinto religion = vieja_gloria religion = vieja_gloria_reformed } }
 		   random_list = {
 		   70 = {
@@ -487,7 +487,7 @@ character_event = {
 			       random_traits = yes
 			       dynasty = NONE
 			       religion = apostolic
-			       culture = brasilian
+			       culture = brazilian
 			       female = yes
 			       age = 28
 				   trait="midas_touched"
@@ -500,7 +500,7 @@ character_event = {
 			       random_traits = yes
 			       dynasty = NONE
 			       religion = modernist
-			       culture = brasilian
+			       culture = brazilian
 			       female = yes
 			       age = 28
 				   trait="midas_touched"

@@ -83,3 +83,1107 @@ character_event = {
 		ROOT = { set_secret_religion = third_romanist }
 	}
 }
+
+character_event = {
+	id = thirdrome.4
+	desc = EVTDESC_third_romanist_4
+	picture = GFX_evt_third_romanist_pilgrimage
+	religion = third_romanist
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_third_romanist_4
+		character_event = { id = thirdrome.4 days = 10 }
+	}
+}
+
+character_event = {
+	id = thirdrome.5
+	desc = EVTDESC_third_romanist_5
+	picture = GFX_evt_third_romanist_pilgrimage
+	religion = third_romanist
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_third_romanist_5
+		add_trait = on_pilgrimage
+		set_character_flag = good_pilgrimage
+	    narrative_event = { id = thirdrome.6 days = 32 }
+		hidden_tooltip = {
+		    random_list = {
+			    10 = { character_event = { id = thirdrome.8 days = 10 random = 5 } } 
+				10 = { character_event = { id = thirdrome.11 days = 10 random = 5 } } 
+				10 = { character_event = { id = thirdrome.12 days = 10 random = 5 } } 
+				10 = { character_event = { id = thirdrome.13 days = 10 random = 5 } } 
+				10 = { character_event = { id = thirdrome.14 days = 10 random = 5 } } 
+				10 = { character_event = { id = thirdrome.20 days = 10 random = 5 } } 			
+				10 = { character_event = { id = thirdrome.21 days = 10 random = 5 } } 
+				10 = { character_event = { id = thirdrome.23 days = 10 random = 5 } } 
+				10 = { character_event = { id = thirdrome.24 days = 10 random = 5 } } 
+				10 = { character_event = { id = thirdrome.25 days = 10 random = 5 } } 
+			}
+		    random_list = {
+			    10 = { character_event = { id = thirdrome.8 days = 24 random = 5 } } 
+				10 = { character_event = { id = thirdrome.11 days = 24 random = 5 } } 
+				10 = { character_event = { id = thirdrome.12 days = 24 random = 5 } } 
+				10 = { character_event = { id = thirdrome.13 days = 24 random = 5 } } 
+				10 = { character_event = { id = thirdrome.14 days = 24 random = 5 } } 
+				10 = { character_event = { id = thirdrome.20 days = 24 random = 5 } } 
+				10 = { character_event = { id = thirdrome.21 days = 24 random = 5 } } 
+				10 = { character_event = { id = thirdrome.23 days = 24 random = 5 } } 
+				10 = { character_event = { id = thirdrome.24 days = 24 random = 5 } } 
+				10 = { character_event = { id = thirdrome.25 days = 24 random = 5 } } 
+			}
+		}
+	}
+}
+
+narrative_event = {
+	id = thirdrome.6
+	title = EVTNAME_third_romanist_6
+	desc = EVTDESC_third_romanist_6
+	picture = GFX_evt_rome
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_third_romanist_6
+		narrative_event = { id = thirdrome.7 days = 8 }
+	}
+}
+
+character_event = {
+	id = thirdrome.7
+	desc = EVTDESC_third_romanist_7
+	picture = GFX_evt_third_romanist_pilgrimage
+	is_triggered_only = yes
+
+	immediate = {
+		character_event = { id = SoA.5999 } # Clean-up
+
+		if = {
+			limit = {
+				ai = no
+				is_ironman = yes
+				NOT = { has_character_flag = achievement_pilgrim }
+			}
+
+			set_character_flag = achievement_pilgrim
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_third_romanist_7
+		piety=500
+		add_trait="third_romanist_pilgrim"
+	}
+}
+
+character_event = {
+	id = thirdrome.8
+	desc = EVTDESC_third_romanist_8
+	picture = GFX_evt_mysterious_person
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_third_romanist_8
+		piety=50
+		narrative_event = { id = thirdrome.9 }
+	}
+	
+	option = {
+		name = EVTOPTB_third_romanist_8
+		narrative_event = { id = thirdrome.10 }
+	}
+	
+	option = {
+		name = EVTOPTC_third_romanist_8
+		prestige=50
+		random_list = {
+		   20 = { add_trait="rude" }
+		   20 = { add_trait="proud" }
+		   10 = { add_trait="shy" }
+		   50 = { }
+		}
+	}
+}
+
+narrative_event = {
+	id = thirdrome.9
+	title = EVTNAME_third_romanist_9
+	desc = EVTDESC_third_romanist_9
+	picture = GFX_snowforest_day
+	is_triggered_only = yes
+
+	option = { #Nice History
+		name = EVTOPTA_third_romanist_9
+		piety = 25
+		random_list = {
+		   10 = { add_trait="trusting" }
+		   20 = { add_trait="pious" }
+		   10 = { add_trait="zealous" }
+		   60 = { }
+		}
+	}
+	
+	option = { #Hahahha
+		name = EVTOPTB_third_romanist_9
+		piety=-25
+		random_list = {
+		   20 = {  ROOT = { change_learning = 1 } }
+		   20 = { add_trait="cynical" }
+		   10 = { add_trait="socializer" }
+		   50 = { }
+		}
+	}
+}
+
+narrative_event = {
+	id = thirdrome.10
+	title = EVTNAME_third_romanist_10
+	desc = EVTDESC_third_romanist_10
+	picture = GFX_evt_horse_friend
+	is_triggered_only = yes
+
+	option = { #Sad History
+		name = EVTOPTA_third_romanist_10
+		piety = 25
+		random_list = {
+		   10 = { add_trait="patient" }
+		   40 = { add_trait="pious" }
+		   20 = { add_trait="zealous" }
+		   30 = { }
+		}
+	}
+	
+	option = { #Hahahha
+		name = EVTOPTB_third_romanist_10
+		piety=-50
+		random_list = {
+		   40 = { add_trait="cynical" }
+		   35 = { add_trait="rude" }
+		   15 = { add_trait="deceitful" }
+		   10 = { }
+		}
+	}
+}
+
+character_event = {
+	id = thirdrome.11
+	desc = EVTDESC_third_romanist_11
+	picture = GFX_evt_third_romanist_pilgrimage
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_third_romanist_11
+		random_list = {
+		   10 = { death = { death_reason = death_missing } }
+		   20 = { add_trait="maimed" }
+		   30 = { add_trait="wounded" }
+		   40 = { }
+		}
+	}
+}
+
+character_event = {
+	id = thirdrome.12
+	desc = EVTDESC_third_romanist_12
+	picture = GFX_evt_third_romanist_pilgrimage
+	is_triggered_only = yes
+
+	option = { #Honour them 
+		name = EVTOPTA_third_romanist_12
+		piety=25
+		add_character_modifier = {
+			name = third_romanist_honoured_jacobin_icons
+			years = 10
+		}
+	}
+	
+	option = { #Destroy them
+		name = EVTOPTB_third_romanist_12
+		piety = 40
+		add_character_modifier = {
+			name = third_romanist_destroyed_jacobin_icons
+			years = 10
+		}
+	}
+	
+	option = { #Sell them 
+		name = EVTOPTC_third_romanist_12
+		wealth = 10
+		piety = -10 
+		random_list = {
+		   10 = { add_trait="cynical" }
+		   20 = {  ROOT = { change_stewardship = 1 } }
+		   20 = {  ROOT = { change_diplomacy = 1 } }
+		   50 = { }
+		}
+	}
+}
+
+narrative_event = { 
+	id = thirdrome.14
+	title = EVTTITLE_SKC_129
+	desc = EVTDESC_SKC_129
+	picture = GFX_evt_third_romanist_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_129
+		piety = -10
+		prestige = 10
+		narrative_event = { id = thirdrome.15 }
+	}
+	
+	option = { 
+		name = EVTOPTB_SKC_129
+		piety=-100
+		add_trait="cruel"
+	}
+}
+
+narrative_event = { 
+	id = thirdrome.15
+	title = EVTTITLE_SKC_130
+	desc = EVTDESC_SKC_130
+	picture = GFX_evt_third_romanist_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_130
+		hidden_tooltip = {
+		random_list = {
+		   10 = { narrative_event = { id = thirdrome.16 } } #Both Parents live
+		   20 = { narrative_event = { id = thirdrome.17 } } #Father lives
+		   30 = { narrative_event = { id = thirdrome.18 } } #Mother lives
+		   40 = { narrative_event = { id = thirdrome.19 } } #All of them are dead
+		}
+		}
+	}
+}
+
+narrative_event = { 
+	id = thirdrome.16
+	title = EVTTITLE_SKC_131
+	desc = EVTDESC_SKC_131
+	picture = GFX_evt_third_romanist_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_131
+		piety = 20
+		prestige = 20
+	}
+	
+	option = { 
+		name = EVTOPTB_SKC_131
+		wealth = -20
+		piety = 40
+		prestige = 40
+	}
+}
+
+narrative_event = { 
+	id = thirdrome.17
+	title = EVTTITLE_SKC_131
+	desc = EVTDESC_SKC_132
+	picture = GFX_evt_third_romanist_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_131
+		piety = 10
+		prestige = 10
+	}
+	
+	option = { 
+		name = EVTOPTB_SKC_131
+		wealth = -20
+		piety = 30
+		prestige = 30
+	}
+}
+
+narrative_event = { 
+	id = thirdrome.18
+	title = EVTTITLE_SKC_131
+	desc = EVTDESC_SKC_133
+	picture = GFX_evt_third_romanist_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_133
+		piety = 10
+		prestige = 10
+	}
+	
+	option = { 
+		name = EVTOPTB_SKC_133
+		wealth = -20
+		piety = 30
+		prestige = 30
+	}
+	
+	option = { #Generate characters
+		name = EVTOPTC_SKC_133
+		wealth = -30
+		piety = 100
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = yes
+			dynasty = NONE
+			age = 40
+			random_traits = yes
+			trait = kind
+			trait = pious
+			trait = chaste
+			trait = wounded
+		}
+		new_character = {
+		   save_event_target_as = mother_of_children
+		}
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = yes
+			age = 10
+			dynasty = NONE
+			random_traits = yes
+		}
+		new_character = {
+		   save_event_target_as = daughter_of_mother
+		}
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = no
+			age = 8
+			dynasty = NONE
+			random_traits = yes
+		}
+		new_character = {
+		   save_event_target_as = son_of_mother
+		}
+		event_target:son_of_mother = {
+		   set_mother = event_target:mother_of_children
+		}
+		event_target:daughter_of_mother = {
+		   set_mother = event_target:mother_of_children
+		}
+	}
+}
+
+narrative_event = { 
+	id = thirdrome.19
+	title = EVTTITLE_SKC_131
+	desc = EVTDESC_SKC_134
+	picture = GFX_evt_third_romanist_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_SKC_134
+		piety = 10
+		prestige = 10
+	}
+	
+	option = { 
+		name = EVTOPTB_SKC_134
+		wealth = -20
+		piety = 30
+		prestige = 30
+	}
+	
+	option = { #Generate characters
+		name = EVTOPTC_SKC_134
+		wealth = -25
+		piety = 100
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = yes
+			age = 40
+			trait = kind
+			trait = pious
+			trait = chaste
+			trait = wounded
+			random_traits = yes
+			dynasty = NONE
+		}
+		new_character = {
+		   save_event_target_as = mother_of_children
+		   	death = {
+				death_reason = death_murder
+			}
+		}
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = yes
+			age = 10
+			dynasty = NONE
+			random_traits = yes
+		}
+		new_character = {
+		   save_event_target_as = daughter_of_mother
+		}
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = no
+			age = 8
+			dynasty = NONE
+			random_traits = yes
+		}
+		new_character = {
+		   save_event_target_as = son_of_mother
+		}
+		event_target:son_of_mother = {
+		   set_mother = event_target:mother_of_children
+		}
+		event_target:daughter_of_mother = {
+		   set_mother = event_target:mother_of_children
+		}
+	}
+}
+
+character_event = {
+	id = thirdrome.20
+	desc = EVTDESC_third_romanist_20
+	picture = GFX_evt_third_romanist_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_third_romanist_20
+		wealth = -5
+		piety = 20
+		prestige = -20
+		add_trait="trusting"
+	}
+	
+	option = { 
+		name = EVTOPTB_third_romanist_20
+		prestige = 50
+		random_list = {
+		   40 = { add_trait="proud" }
+		   50 = { add_trait="just" }
+		   10 = { add_trait="shy" }
+		}
+	}
+	
+	option = { 
+		name = EVTOPTC_third_romanist_20
+		wealth = -10
+		piety = 50
+		random_list = {
+		   40 = { add_trait="charitable" }
+		   50 = { add_trait="just" }
+		   10 = { add_trait="kind" }
+		}
+	}
+	
+	option = {
+		name = EVTOPTD_third_romanist_20
+		wealth = -10
+		prestige = -25
+		piety = -25
+		random_list = {
+		   25 = { add_trait="drunkard" }
+		   50 = { add_trait="gregarious" }
+		   25 = { }
+		}
+	}
+}
+
+character_event = {
+	id = thirdrome.21
+	desc = EVTDESC_third_romanist_21
+	picture = GFX_evt_third_romanist_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_third_romanist_21
+		piety=20
+		random_list = {
+		   10 = { add_trait="shy" }
+		   10 = { add_trait="greedy" }
+		   80 = { }
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_third_romanist_21
+		wealth = -5
+		prestige=20
+		hidden_tooltip = {
+		random_list = {
+		   25 = { set_character_flag = lalocandiera } #La locandiera, Carlo Goldoni (Comedy)
+		   25 = { set_character_flag = romeopencity } #"Rome, Open City" by Roberto Rosselini (Tragedy)
+		   25 = { set_character_flag = quovadis } #Quo Vadis, unknown (fictional)
+		   25 = { set_character_flag = italianromeoandjuliet } #Romeo and Juliet, Shakespeare (Tragedy)
+		}
+		narrative_event = { id = thirdrome.22 }
+		}
+	}
+}
+
+narrative_event = {
+	id = thirdrome.22
+	title = EVTNAME_third_romanist_22
+	desc = {
+		text = EVTDESC_third_romanist_22_FIRST
+		picture = GFX_evt_third_romanist_pilgrimage
+		trigger = { 
+			has_character_flag = lalocandiera
+		}
+	}
+	desc = {
+		text = EVTDESC_third_romanist_22_SECOND
+		picture = GFX_evt_third_romanist_pilgrimage
+		trigger = { 
+			has_character_flag = romeopencity
+		}
+	}
+	desc = {
+		text = EVTDESC_third_romanist_22_THIRD
+		picture = GFX_evt_third_romanist_pilgrimage
+		trigger = { 
+			has_character_flag = quovadis
+		}
+	}
+	desc = {
+		text = EVTDESC_third_romanist_22_FOURTH
+		picture = GFX_evt_third_romanist_pilgrimage
+		trigger = { 
+			has_character_flag = italianromeoandjuliet
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	
+	option = { 
+		name = EVTOPTA_third_romanist_22
+		prestige=10
+		random_list = {
+		   25 = { add_trait="poet" }
+		   75 = { }
+		}
+		clr_character_flag = lalocandiera
+		clr_character_flag = romeopencity
+		clr_character_flag = ilservitore
+		clr_character_flag = italianromeoandjuliet
+	}
+}
+
+long_character_event = {
+	id = thirdrome.23
+	desc = EVTDESC_third_romanist_23
+	picture = GFX_evt_third_romanist_pilgrimage
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTA_third_romanist_23
+		wealth=-5
+		prestige=25
+		add_trait="third_romanist_majoran"
+	}
+	
+	option = {
+		name = EVTOPTB_third_romanist_23
+		piety=-10
+		prestige=10
+	}
+	
+	option = {
+		name = EVTOPTC_third_romanist_23
+		piety=50
+		random_list = {
+		  25 = { add_trait="zealous" }
+		  75 = { }
+		}
+	}
+}
+
+long_character_event = { 
+	id = thirdrome.24
+	desc = EVTDESC_third_romanist_24
+	picture = GFX_evt_third_romanist_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_third_romanist_24
+		add_trait="sympathy_christendom"
+	}
+	
+	option = { 
+		name = EVTOPTB_third_romanist_24
+		piety=20
+	}
+}
+
+character_event = { 
+	id = thirdrome.25
+	desc = EVTDESC_jacobin_50
+	picture = GFX_evt_third_romanist_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_jacobin_50
+		piety = 20
+		random_list = {
+		   10 = { death = { death_reason = death_missing } }
+		   10 = { add_trait="maimed" }
+		   50 = { add_trait="wounded" }
+		   30 = { }
+		}
+		narrative_event = { id = thirdrome.26 }
+	}
+	
+	option = { 
+		name = EVTOPTB_jacobin_50
+		prestige = -10
+		piety = -20
+		random_list = {
+		   25 = { add_trait="craven" }
+		   25 = { add_trait="proud" }
+		   25 = { add_trait="cruel" }
+		   25 = { add_trait="selfish" }
+		}
+	}
+}
+
+narrative_event = { 
+	id = thirdrome.26
+	title = EVTTITLE_jacobin_51
+	desc = EVTDESC_jacobin_51
+	picture = GFX_evt_third_romanist_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_third_romanist_26
+		if = {
+		  limit = { is_female = yes OR = { is_married = yes trait="celibate" } }
+		  set_character_flag = baron_proposition_of_marriage
+		}
+		if = {
+		  limit = { is_female = yes is_married = no }
+		  set_character_flag = baron_proposition_mustrefused_of_marriage
+		}
+		if = {
+		  limit = { is_female = no OR = { is_married = yes trait="celibate" trait="eunuch" } }
+		  set_character_flag = baroness_proposition_mustrefused_of_marriage
+		}
+		if = {
+		  limit = { is_female = no is_married = no NOT = { trait="celibate" trait="eunuch" } }
+		  set_character_flag = baroness_proposition_of_marriage
+		}
+		narrative_event = { id = thirdrome.27 days = 1 }
+	}
+}
+
+narrative_event = { 
+	id = thirdrome.27
+	title = EVTTITLE_jacobin_52
+	desc = {
+		text = EVTDESC_jacobin_52_A
+		picture = GFX_evt_third_romanist_pilgrimage
+		trigger = { 
+			has_character_flag = baron_proposition_of_marriage
+		}
+	}
+	desc = {
+		text = EVTDESC_jacobin_52_B
+		picture = GFX_evt_third_romanist_pilgrimage
+		trigger = { 
+			has_character_flag = baron_proposition_mustrefused_of_marriage
+		}
+	}
+	desc = {
+		text = EVTDESC_jacobin_52_C
+		picture = GFX_evt_third_romanist_pilgrimage
+		trigger = { 
+			has_character_flag = baroness_proposition_mustrefused_of_marriage
+		}
+	}
+	desc = {
+		text = EVTDESC_jacobin_52_D
+		picture = GFX_evt_third_romanist_pilgrimage
+		trigger = { 
+			has_character_flag = baroness_proposition_of_marriage
+		}
+	}
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_jacobin_52
+		trigger = {
+		  OR = {
+		    has_character_flag = baroness_proposition_mustrefused_of_marriage
+			has_character_flag = baron_proposition_mustrefused_of_marriage
+		  }
+		}
+		character_event = { id = thirdrome.28 days = 1 }
+	}
+	
+	option = {
+		name = EVTOPTB_jacobin_52
+		trigger = {
+		  OR = {
+		    has_character_flag = baroness_proposition_of_marriage
+			has_character_flag = baron_proposition_of_marriage
+		  }
+		}
+		wealth = 100
+		if = {
+		limit = { has_character_flag = baroness_proposition_of_marriage }
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = yes
+			age = 30
+			dynasty = NONE
+			trait=third_romanist_juvenist
+			trait=attractive
+			trait=quick
+			trait=honest
+			trait=brave
+			random_traits = yes
+		}
+		new_character = {
+		    add_spouse = ROOT
+		    add_lover = ROOT
+			wealth = 100
+		}
+		}
+		if = {
+		limit = { has_character_flag = baron_proposition_of_marriage }
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			female = no
+			age = 30
+			dynasty = NONE
+			trait=third_romanist_juvenist
+			trait=attractive
+			trait=quick
+			trait=honest
+			trait=brave
+			random_traits = yes
+		}
+		new_character = {
+		    add_spouse = ROOT
+		    add_lover = ROOT
+			wealth = 100
+		}
+		}
+		character_event = { id = thirdrome.28 days = 1 }
+	}
+	
+	option = {
+		name = EVTOPTC_jacobin_52
+		trigger = {
+		  OR = {
+		    has_character_flag = baroness_proposition_of_marriage
+			has_character_flag = baron_proposition_of_marriage
+		  }
+		}
+		prestige = -20
+		random_list={
+		   20 = { add_trait="chaste" }
+		   80 = { }
+		}
+		character_event = { id = thirdrome.28 days = 1 }
+	}
+}
+
+character_event = { 
+	id = thirdrome.28
+	desc = EVTDESC_jacobin_53
+	picture = GFX_evt_jacobin_pilgrimage
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_jacobin_53
+		remove_trait="wounded"
+		clr_character_flag = baroness_proposition_mustrefused_of_marriage
+		clr_character_flag = baroness_proposition_of_marriage
+		clr_character_flag = baron_proposition_mustrefused_of_marriage
+		clr_character_flag = baron_proposition_of_marriage
+	}
+}
+
+character_event = { 
+	id = thirdrome.29
+	desc = EVTDESC_third_romanist_29
+	picture = GFX_evt_rundown_greek_temple
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_third_romanist_29
+		any_courtier = {
+		    limit = {
+			   trait="third_romanist_majoran"
+			   age > 10
+			}
+			set_character_flag = attending_majoran_sacrafice
+		    set_character_flag = do_not_disturb
+		}
+		add_character_modifier = {
+			name = held_blot_timer
+			years = 5
+			hidden = yes
+		}
+		character_event = { id = thirdrome.30 days = 3 }
+	}
+}
+
+character_event = { 
+	id = thirdrome.30
+	desc = EVTDESC_third_romanist_30
+	picture = GFX_evt_rundown_greek_temple
+	
+	is_triggered_only = yes
+
+	option = { #Huge Bull
+		name = EVTOPTA_third_romanist_30
+		wealth=-50
+		piety=200
+		set_character_flag = majoran_sacrafice_1
+		character_event = { id = thirdrome.31 }
+	}
+	
+	option = { #Bull
+		name = EVTOPTB_third_romanist_30
+		wealth=-35
+		piety=100
+		set_character_flag = majoran_sacrafice_2
+		character_event = { id = thirdrome.31 }
+		any_courtier = {
+		    limit = {
+			   has_character_flag = attending_majoran_sacrafice
+			}
+			piety = 50
+		}
+	}
+	
+	option = { #Cow
+		name = EVTOPTC_third_romanist_30
+		wealth=-20
+		piety=40
+		set_character_flag = majoran_sacrafice_3
+		character_event = { id = thirdrome.31 }
+		any_courtier = {
+		    limit = {
+			   has_character_flag = attending_majoran_sacrafice
+			}
+			piety = 20
+		}
+	}
+	
+	option = { #Goat
+		name = EVTOPTD_third_romanist_30
+		wealth=-10
+		piety=20
+		set_character_flag = majoran_sacrafice_4
+		character_event = { id = thirdrome.31 }
+		any_courtier = {
+		    limit = {
+			   has_character_flag = attending_majoran_sacrafice
+			}
+			piety = 10
+		}
+	}
+}
+
+character_event = { 
+	id = thirdrome.31
+	desc = EVTDESC_third_romanist_31
+	picture = GFX_evt_rundown_greek_temple
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_third_romanist_31
+		if = {
+		  limit = { has_character_flag = majoran_sacrafice_1 }
+		  any_courtier = {
+		    limit = {
+			   has_character_flag = attending_majoran_sacrafice
+			}
+			piety = 100
+			clr_character_flag = attending_majoran_sacrafice
+			clr_character_flag = do_not_disturb
+		  }
+		  clr_character_flag = majoran_sacrafice_1
+		}
+		if = {
+		  limit = { has_character_flag = majoran_sacrafice_2 }
+		  	any_courtier = {
+		    limit = {
+			   has_character_flag = attending_majoran_sacrafice
+			}
+			piety = 50
+			clr_character_flag = attending_majoran_sacrafice
+			clr_character_flag = do_not_disturb
+		  }
+		  clr_character_flag = majoran_sacrafice_2
+		}
+		if = {
+		  limit = { has_character_flag = majoran_sacrafice_3 }
+		  any_courtier = {
+		    limit = {
+			   has_character_flag = attending_majoran_sacrafice
+			}
+			piety = 20
+			clr_character_flag = attending_majoran_sacrafice
+			clr_character_flag = do_not_disturb
+		   }
+		   clr_character_flag = majoran_sacrafice_3
+		}
+		if = {
+		  limit = { has_character_flag = majoran_sacrafice_4 }
+		  	any_courtier = {
+		    limit = {
+			   has_character_flag = attending_majoran_sacrafice
+			}
+			piety = 10
+			clr_character_flag = attending_majoran_sacrafice
+			clr_character_flag = do_not_disturb
+		   }
+		   clr_character_flag = majoran_sacrafice_4
+		}
+		clr_character_flag = do_not_disturb
+		clr_character_flag = held_majoran_sacrafice
+		clr_character_flag = recent_minor_decision
+	}
+}
+
+narrative_event = { #Taken here because not worked if was in right way
+	id = thirdrome.13
+	title = EVTNAME_third_romanist_13
+	desc = EVTDESC_third_romanist_13
+	picture = GFX_evt_third_romanist_pilgrimage
+	is_triggered_only = yes
+
+	#option = { #Adopt him as bastard brother
+		#name = EVTOPTA_third_romanist_13
+		#wealth = -30
+		#prestige = 50
+		#hidden_tooltip = {
+		  #if = {
+			#limit = { NOT = { ROOT = { father = 0 } } }
+			#ROOT = {
+				#father = {
+					#save_event_target_as = fake_father_of_ripley
+				#}
+			#}
+
+			#create_character = {
+				#culture = ROOT
+				#religion = ROOT
+				#dynasty = event_target:fake_father_of_ripley
+				#age = ROOT
+				#random_traits = yes
+				#trait = elusive_shadow
+				#trait = bastard
+				#trait = attractive
+				#trait = quick
+				#trait = ruthless
+				#trait = schemer
+				#trait = third_romanist_palladic
+			#}
+			#new_character = {
+				#set_father = event_target:fake_father_of_ripley
+				#set_dynasty = event_target:fake_father_of_ripley
+			#}
+	     #}
+		 #else = {
+			#create_character = {
+			    #name="Unknown Father"
+				#culture = ROOT
+				#religion = ROOT
+				#dynasty = ROOT
+				#age = 120
+				#random_traits = no
+				#trait = legendary
+			#}
+			#new_character = {
+			    #save_event_target_as = fake_father_of_ripley
+			#}
+			#ROOT = {
+			    #set_father = event_target:fake_father_of_ripley
+			#}
+			#create_character = {
+				#culture = ROOT
+				#religion = ROOT
+				#dynasty = event_target:fake_father_of_ripley
+				#age = ROOT
+				#random_traits = yes
+				#trait = elusive_shadow
+				#trait = bastard
+				#trait = attractive
+				#trait = quick
+				#trait = ruthless
+				#trait = schemer
+				#trait = third_romanist_palladic
+			#}
+			#new_character = {
+				#set_father = event_target:fake_father_of_ripley
+				#set_dynasty = event_target:fake_father_of_ripley
+			#}
+		 #}
+		#}
+	#}
+	
+	option = { #Invite him to court
+		name = EVTOPTB_third_romanist_13
+		wealth = -30
+		prestige = 50
+		create_character = {
+			culture = ROOT
+			religion = ROOT
+			dynasty = NONE
+			age = ROOT
+			random_traits = yes
+			trait = elusive_shadow
+			trait = bastard
+			trait = attractive
+			trait = quick 
+			trait = ruthless
+			trait = schemer
+			trait = third_romanist_palladic
+		}
+	}
+	
+	option = { #Give him cash
+		name = EVTOPTC_third_romanist_13
+		wealth = -20
+		prestige = 25
+	}
+	
+	option = { #Go away
+		name = EVTOPTD_third_romanist_13
+		prestige = -25
+		random_list = {
+		   20 = { add_trait="shy" }
+		   30 = { add_trait="selfish" }
+		   50 = { }
+		}
+	}
+}

@@ -314,7 +314,7 @@ character_event = {
 
 narrative_event = {
 	id = britain.108
-	name = EVTNAME_britain.108
+	title = EVTNAME_britain.108
 	desc = EVTDESC_britain.108
 	picture = GFX_evt_glorian_pilgrimage
 
@@ -349,7 +349,7 @@ narrative_event = {
 		  }
 		}
 		ai_chance = { factor = 20 }
-		character_event = { id = britain.119 }
+		character_event = { id = britain.111 }
 	}
 	option = { 
 		name = EVTOPTD_britain.108
@@ -1708,5 +1708,128 @@ character_event = {
 				add_trait = baptist
 			}
 		}
+	}
+}
+
+character_event = {
+	id = britain.150
+	desc = EVTDESCbritain_150
+	picture = GFX_evt_tilbury
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_britain_150
+		custom_tooltip = { text = tooltip_nominate_redcoats_commander }
+		set_global_flag = nominate_redcoats_commander
+		set_global_flag = invasion_of_america_flag
+		character_event = { id = britain.151 days = 400 }
+	}
+}
+
+character_event = {
+	id = britain.151
+	
+	ai = yes
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+		   limit = {
+		       k_britain = { has_holder = no }
+			   e_united_kingdom = { has_holder = no }
+		   }
+		   clr_global_flag = invasion_of_america_flag
+		   clr_global_flag = nominate_redcoats_commander
+		}
+		if = { #Ready
+		   limit = {
+		   any_character = {
+		       has_minor_title = title_lord_admiral_of_redcoats
+		   }
+		   }
+		   narrative_event = { id = britain.152 }
+		}
+		if = { #Ready
+		   limit = { 
+		   NOT = {
+		   any_character = {
+		       has_minor_title = title_lord_admiral_of_redcoats
+		   }
+		   }
+		   }
+		   if = {
+		      limit = { e_united_kingdom = { has_holder = yes } }
+		      e_united_kingdom = {
+			   holder_scope = { 
+			   narrative_event = { id = britain.151 days = 200 }
+			  }
+			  }
+		   }
+		   else = {
+		      k_britain = {
+			   holder_scope = { 
+			   narrative_event = { id = britain.151 days = 200 }
+			  }
+			  }
+		   }
+		}
+	}
+}
+
+narrative_event = {
+	id = britain.152
+	title = EVTNAMEbritain_152
+	desc = EVTDESCbritain_152
+	picture = GFX_evt_tilbury
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		any_character = {
+		   limit = { has_minor_title = title_lord_admiral_of_redcoats }
+		   gain_title = e_redcoat_dominion
+		   prestige = 5000
+		   piety = 5000
+		   add_friend = ROOT
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_britain_152
+		piety = 500
+		any_character = {
+			limit = { 
+				has_landed_title = e_redcoat_dominion
+			}
+			tooltip = { show_portrait = yes }
+		}
+		hidden_tooltip = {
+		   e_redcoat_dominion = {
+		      holder_scope = {
+			     death = { death_reason = death_went_to_america }
+			  }
+		   }
+		   activate_title = { status = no title = e_redcoat_dominion }
+		   e_redcoat_dominion = { destroy_landed_title = THIS }
+		}
+		clr_global_flag = nominate_redcoats_commander
+		character_event = { id = britain.153 days = 390 }
+	}
+}
+
+narrative_event = {
+	id = britain.153
+	title = EVTNAMEbritain_153
+	desc = EVTDESCbritain_153
+	picture = GFX_evt_tilbury
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_britain_152
+		prestige = 1000
+		character_event = { id = britain.154 days = 750 }
 	}
 }

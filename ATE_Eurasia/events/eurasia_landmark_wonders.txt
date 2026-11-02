@@ -459,6 +459,33 @@ character_event = {
 		2905 = {
 			add_province_modifier = { name = landmark_mehrangarh duration = -1 }
 			}
+		1037 = {
+			add_province_modifier = { name = landmark_prague_castle duration = -1 }
+		}
+		1037 = {
+			add_province_modifier = { name = landmark_charles_bridge duration = -1 }
+		}
+		1037 = {
+			add_province_modifier = { name = landmark_u_fleku duration = -1 }
+		}
+		1339 = {
+			add_province_modifier = { name = landmark_palace_of_culture_and_science duration = -1 }
+		}
+		1339 = {
+			add_province_modifier = { name = landmark_belweder duration = -1 }
+		}
+		1335 = {
+			add_province_modifier = { name = landmark_wawel duration = -1 }
+		}
+		1551 = {
+			add_province_modifier = { name = landmark_eiffel_tower duration = -1 }
+		}
+		27 = {
+			add_province_modifier = { name = landmark_buckingham_palace duration = -1 }
+		}
+		27 = {
+			add_province_modifier = { name = landmark_tower_of_london duration = -1 }
+		}
 		set_global_flag = landmarks_set
 	}
 }

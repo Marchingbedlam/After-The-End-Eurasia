@@ -383,15 +383,55 @@ character_event = {
 
 			# List that is always checked
 			random_list = {
-				10 = { character_event = { id = SoA.5031 days = 15 random = 7 } }
-				10 = { character_event = { id = SoA.5032 days = 15 random = 7 } }
-				10 = { narrative_event = { id = SoA.5033 days = 15 random = 7 } }
-				10 = { character_event = { id = SoA.5034 days = 15 random = 7 } }
-				10 = { character_event = { id = SoA.5035 days = 15 random = 7 } }
-				10 = { character_event = { id = SoA.5036 days = 15 random = 7 } }
-				10 = { character_event = { id = SoA.5037 days = 15 random = 7 } }
-				10 = { character_event = { id = SoA.5038 days = 15 random = 7 } }
-				10 = { character_event = { id = SoA.5039 days = 15 random = 7 } }
+				10 = { character_event = { id = SoA.5026 days = 15 random = 4 } }
+				10 = { character_event = { id = SoA.5027 days = 15 random = 4 } }
+				10 = { narrative_event = { id = SoA.5028 days = 15 random = 4 } }
+				10 = { character_event = { id = SoA.5029 days = 15 random = 4 } }
+				10 = { character_event = { id = SoA.5030 days = 15 random = 4 } }
+				9 = { character_event = { id = SoA.5031 days = 15 random = 4 } }
+				9 = { character_event = { id = SoA.5032 days = 15 random = 4 } }
+				9 = { narrative_event = { id = SoA.5033 days = 15 random = 4 } }
+				9 = { character_event = { id = SoA.5034 days = 15 random = 4 } }
+				9 = { character_event = { id = SoA.5035 days = 15 random = 4 } }
+				5 = { character_event = { id = christian.48 days = 15 random = 4 } }
+			}
+			
+			if = { #Meeting with Neohellenics
+			   limit = {
+			       OR = {
+				      has_character_flag = pilgrimage_to_mount_athos
+					  has_character_flag = pilgrimage_to_constantinopole
+					  has_character_flag = pilgrimage_to_rome
+				   }
+				   any_character = {
+				       religion = neohellenic
+				   }
+			   }
+			   random_list = {
+			      25 = {
+				     character_event = { id = christian.54 days = 25 random = 2 }
+				  }
+				  75 = { }
+			   }
+			}
+			
+			if = { #Meeting with Folketro
+			   limit = {
+			       OR = {
+				      has_character_flag = pilgrimage_to_lund
+					  has_character_flag = pilgrimage_to_uppsala
+					  has_character_flag = pilgrimage_to_turku
+				   }
+				   any_character = {
+				       religion = folketro
+				   }
+			   }
+			   random_list = {
+			      20 = {
+				     character_event = { id = christian.55 days = 25 random = 2 }
+				  }
+				  80 = { }
+			   }
 			}
 			
 			random_list = {
@@ -400,11 +440,12 @@ character_event = {
 				10 = { narrative_event = { id = SoA.5028 days = 30 random = 2 } }
 				10 = { character_event = { id = SoA.5029 days = 30 random = 2 } }
 				10 = { character_event = { id = SoA.5030 days = 30 random = 2 } }
-				10 = { character_event = { id = SoA.5031 days = 30 random = 2 } }
-				10 = { character_event = { id = SoA.5032 days = 30 random = 2 } }
-				10 = { narrative_event = { id = SoA.5033 days = 30 random = 2 } }
-				10 = { character_event = { id = SoA.5034 days = 30 random = 2 } }
-				10 = { character_event = { id = SoA.5035 days = 30 random = 2 } }
+				9 = { character_event = { id = SoA.5031 days = 30 random = 2 } }
+				9 = { character_event = { id = SoA.5032 days = 30 random = 2 } }
+				9 = { narrative_event = { id = SoA.5033 days = 30 random = 2 } }
+				9 = { character_event = { id = SoA.5034 days = 30 random = 2 } }
+				9 = { character_event = { id = SoA.5035 days = 30 random = 2 } }
+				5 = { character_event = { id = christian.48 days = 30 random = 2 } }
 			}
 			
 			narrative_event = {
@@ -2467,5 +2508,193 @@ character_event = {
 		clr_character_flag = do_not_disturb
 		clr_character_flag = celebrating_christmas
 		clr_character_flag = recent_minor_decision
+	}
+}
+
+############ Pilgrimage new random event
+
+character_event = {
+	id = christian.48
+	desc = EVTDESC_christian_48
+	picture = GFX_evt_pilgrims_epic_journey
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_christian_48
+		character_event = { id = christian.49 }
+	}
+	
+	option = {
+		name = EVTOPTB_christian_48
+		random_list = {
+		   30 = { add_trait="zealous" }
+		   30 = { add_trait="shy" }
+		   40 = { add_trat="rude" }
+		}
+	}
+}
+
+character_event = {
+	id = christian.49
+	desc = EVTDESC_christian_49
+	picture = GFX_evt_st_bede_teaches
+	
+	is_triggered_only = yes
+	
+	option = { #Speak about theology
+		name = EVTOPTA_christian_49
+		piety=25
+		hidden_tooltip = {
+		random_list = {
+		    50 = { character_event = { id = christian.50 } }
+			50 = { character_event = { id = christian.51 } }
+		}
+		}
+	}
+	
+	option = { #Speak about life
+		name = EVTOPTB_christian_49
+		prestige = 25
+		hidden_tooltip = {
+		random_list = {
+		    50 = { character_event = { id = christian.52 } }
+			50 = { character_event = { id = christian.53 } }
+		}
+		}
+	}
+}
+
+character_event = {
+	id = christian.50
+	desc = EVTDESC_christian_50
+	picture = GFX_evt_st_bede_teaches
+	
+	is_triggered_only = yes
+	
+	option = { #Speak about theology
+		name = EVTOPTA_christian_50
+		change_learning = 1
+		add_trait="cynical"
+	}
+	
+	option = { #Speak about life
+		name = EVTOPTB_christian_50
+		change_learning = 1
+		add_trait="zealous"
+	}
+}
+
+character_event = {
+	id = christian.51
+	desc = EVTDESC_christian_51
+	picture = GFX_evt_st_bede_teaches
+	
+	is_triggered_only = yes
+	
+	option = { #Speak about theology
+		name = EVTOPTA_christian_51
+		add_trait="cynical"
+		add_trait="deceitful"
+	}
+	
+	option = { #Speak about life
+		name = EVTOPTB_christian_51
+		change_learning = 1
+		add_trait="zealous"
+		add_trait="diligent"
+	}
+}
+
+character_event = {
+	id = christian.52
+	desc = EVTDESC_christian_52
+	
+	is_triggered_only = yes
+	
+	option = { #Speak about theology
+		name = EVTOPTA_christian_52
+		random_list = {
+		   10 = { add_trait="drunkard" }
+		   30 = { add_trait="gregarious" }
+		   60 = { }
+		}
+	}
+}
+
+character_event = {
+	id = christian.53
+	desc = EVTDESC_christian_53
+	picture = GFX_evt_st_bede_teaches
+	
+	is_triggered_only = yes
+	
+	option = { #I like more art
+		name = EVTOPTA_christian_53
+		random_list = {
+		   10 = { add_trait="poet" }
+		   10 = { add_trait="falconer" }
+		   10 = { add_trait="musician" }
+		   10 = { add_trait="painter" }
+		   60 = { }
+		}
+	}
+	
+	option = { #I like more science
+		name = EVTOPTB_christian_53
+		random_list = {
+		   33 = { change_stewardship = 1 }
+		   33 = { change_martial = 1 }
+		   33 = { change_learning = 1 }
+		   0 = { }
+		}
+	}
+}
+
+character_event = { #Meeting with Neohellenics
+	id = christian.54
+	desc = EVTDESC_christian_54
+	picture = GFX_evt_neohellenic_pilgrimage
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_christian_54
+		piety = 50
+	}
+	
+	option = {
+		name = EVTOPTB_christian_54
+		add_trait="sympathy_vernacular"
+	}
+	
+	option = {
+		name = EVTOPTC_christian_54
+		piety = -50
+		set_secret_religion = neohellenic 
+	}
+}
+
+character_event = { #Meeting with Folketro
+	id = christian.55
+	desc = EVTDESC_christian_55
+	picture = GFX_evt_folketro_pilgrimage
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_christian_54
+		piety = 50
+	}
+	
+	option = {
+		name = EVTOPTB_christian_54
+		add_trait="sympathy_vernacular"
+	}
+	
+	option = {
+		name = EVTOPTC_christian_54
+		piety = -50
+		set_secret_religion = folketro
 	}
 }

@@ -1,0 +1,204 @@
+namespace = americanist
+
+character_event = {
+	id = americanist.1
+	desc = EVTDESC_america_pilgrim_100
+	picture = GFX_evt_feast
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_america_pilgrim_100
+		any_vassal = {
+			limit = {
+				religion = americanist
+				age = 16
+				prisoner = no
+				war = no
+				NOT = { is_incapable = yes }
+			}
+			character_event = { id = americanist.2 days = 2 tooltip = EVTTOOLTIP_america_pilgrim_101 }
+		}
+		custom_tooltip = { text = thanksgiving_invitations_sent }
+		hidden_tooltip = { character_event = { id = americanist.4 days = 10 } }
+		hidden_tooltip = { character_event = { id = americanist.5 days = 12 } }
+	}
+}
+
+# Invitation Received
+character_event = {
+	id = americanist.2
+	desc = EVTDESC_america_pilgrim_101
+	picture = GFX_evt_feast
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+
+	trigger = { NOT = { is_inaccessible_trigger = yes } }
+	
+	option = {
+		name = EVTOPTA_america_pilgrim_101
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0
+				NOT = {
+					opinion = {
+						who = ROOT
+						value = -20
+					}
+				}
+			}
+		}
+		custom_tooltip = { text = thanksgiving_accepted }
+		set_character_flag = attending_thanksgiving
+		set_character_flag = do_not_disturb
+		hidden_tooltip = { character_event = { id = americanist.4 days = 8 } }
+		hidden_tooltip = { character_event = { id = americanist.7 days = 20 } } # Safety catch flag clearing
+	}
+	option = {
+		name = EVTOPTB_america_pilgrim_101
+		ai_chance = {
+			factor = 20
+		}
+		FROM = {
+			opinion = {
+				modifier = opinion_dislike
+				who = ROOT
+				years = 2
+			}
+		}
+		custom_tooltip = { text = thanksgiving_declined }
+		hidden_tooltip = {
+			FROM = { character_event = { id = americanist.3 } }
+		}
+	}
+}
+
+# Invitation Refused
+character_event = {
+	id = americanist.3
+	desc = EVTDESC_america_pilgrim_102
+	picture = GFX_evt_feast
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_america_pilgrim_102
+		opinion = {
+			modifier = opinion_dislike
+			who = FROM
+			years = 2
+		}
+	}
+}
+
+# Thanksgiving Feast Begins
+character_event = {
+	id = americanist.4
+	desc = EVTDESC_america_pilgrim_103
+	picture = GFX_evt_feast
+	border = GFX_event_normal_frame_religion
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_america_pilgrim_103
+		gain_weight_small_effect = yes
+	}
+}
+
+# Thanksgiving Feast Ends (Host)
+character_event = {
+	id = americanist.5
+	desc = EVTDESC_america_pilgrim_104
+	picture = GFX_evt_feast
+	border = GFX_event_normal_frame_religion
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = {
+			text = EVTOPTA_america_pilgrim_104
+			trigger = {
+				NOT = { religion = jacobin }
+			}
+		}
+		any_vassal = {
+			limit = { has_character_flag = attending_thanksgiving }
+			opinion = {
+				modifier = opinion_enjoyed_feast
+				who = ROOT
+				years = 2
+			}
+		}
+		hidden_tooltip = {
+			any_vassal = {
+				limit = { has_character_flag = attending_thanksgiving }
+				character_event = { id = americanist.6 }
+			}
+		}
+		add_character_modifier = {
+			name = held_thanksgiving_timer
+			duration = 1095
+			hidden = yes
+		}
+		prestige = 75
+		piety = 75
+		clr_character_flag = holding_thanksgiving
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_minor_decision
+	}
+}
+
+# Thanksgiving Feast Ends (Guest)
+character_event = {
+	id = americanist.6
+	desc = EVTDESC_america_pilgrim_105
+	picture = GFX_evt_feast
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = {
+			text = EVTOPTA_america_pilgrim_104
+			trigger = {
+				NOT = { religion = libertarian }
+			}
+		}
+		name = {
+			text = EVTOPTB_america_pilgrim_104
+			trigger = {
+				religion = libertarian
+			}
+		}
+		clr_character_flag = attending_thanksgiving
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_minor_decision
+	}
+}
+
+# Safety catch - clears character flags and modifiers
+character_event = {
+	id = americanist.7
+
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_minor_decision
+		clr_character_flag = holding_thanksgiving
+		clr_character_flag = attending_thanksgiving
+	}
+}

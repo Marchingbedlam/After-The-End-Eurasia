@@ -3730,7 +3730,14 @@ letter_event = {
 
 	is_triggered_only = yes # monastic_orders_donate_to_charity, mnm_monastic_order_decisions.txt
 
-	trigger = { is_monastic_member_trigger = yes }
+	trigger = { 
+	   OR = {
+	    is_monastic_member_trigger = yes
+		society_member_of = warrior_lodge_jacobin 
+		society_member_of = warrior_lodge_sun_king_cultist
+		society_member_of = warrior_lodge_glorian
+	   }
+	}
 
 	option = {
 		name = EVTOPT_MNM_4014

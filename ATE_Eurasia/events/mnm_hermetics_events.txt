@@ -31,7 +31,11 @@ letter_event = {
 	is_triggered_only = yes # on_character_ask_to_join_society
 
 	trigger = {
-		FROM = { is_society = hermetics }
+		OR = {
+		    FROM = { is_society = hermetics }
+			FROM = { is_society = eastern_hermetics }
+			FROM = { is_society = african_hermetics }
+		}
 	}
 
 	immediate = {
@@ -71,8 +75,18 @@ letter_event = {
 
 	option = {
 		name = EVTOPTA_MNM_100
-
-		join_society = hermetics
+        if = {
+		    limit = { FROM = { is_society = hermetics } }
+		    join_society = hermetics
+		}
+		if = {
+		    limit = { FROM = { is_society = eastern_hermetics } }
+		    join_society = eastern_hermetics
+		}
+		if = {
+		    limit = { FROM = { is_society = african_hermetics } }
+		    join_society = african_hermetics
+		}
 		clr_character_flag = society_join_block
 	}
 }
